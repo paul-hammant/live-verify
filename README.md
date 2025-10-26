@@ -1,21 +1,48 @@
-# OCR-to-Hash Verification System
+# OCR-to-Hash Claim Verification System
 
 **Proof of concept** implementing the approach described in: [OCR-to-Hash: A Simple Audit Trail for Physical Documents](https://paulhammant.com/2023/01/17/ocr-to-hash-simple-audit-trail-for-physical-documents/)
 
-A **100% client-side** web app that uses phone camera OCR to verify physical documents via SHA-256 hash validation against URLs printed on the documents themselves.
+A **100% client-side** web app that uses phone camera OCR to verify printed claims via SHA-256 hash validation against URLs printed on the documents themselves.
 
 **Works on GitHub Pages** - No server needed!
 
-## What It Does
+## What is a Claim?
+
+A **claim** is any assertion printed on a physical document that can be independently verified:
+
+- A till (cash register) receipt claims a transaction occurred at a specific time and amount
+- An academic certificate claims a degree was awarded to a named individual
+- An employment letter claims someone worked at a company during specific dates
+- A safety certification claims a product meets certain standards
+- A medical license claims authorization to practice (or revocation thereof)
+
+## How It Works
 
 1. Scans printed documents with phone camera (OCR via Tesseract.js)
 2. Extracts verification URL from the document
 3. Normalizes text (removes extra spaces, etc.)
-4. Computes SHA-256 hash
+4. Computes SHA-256 hash of the claim
 5. Checks if hash matches the URL printed on the document
 6. Shows ✅ green "VERIFIED" or ❌ red "FAILS VERIFICATION" overlay
 
-## Example Document
+The system allows anyone to verify these printed claims without requiring access to the issuer's internal databases.
+
+## Example: Point-of-Sale Receipt
+
+A till (cash register) receipt is a **claim** that:
+- A sale was completed
+- Payment was received for specific items
+- The transaction occurred at a specific date/time
+- The merchant accepted the payment
+
+The holder of the receipt may be:
+- The customer who paid (proof of purchase for warranty/returns)
+- An employee expensing the transaction (proof for reimbursement)
+- An auditor verifying the merchant's records
+
+By printing a `verify:` URL on the receipt, the merchant allows anyone to verify the claim's authenticity without revealing the merchant's internal transaction database. The same receipt cannot be expensed twice because the hash is unique to that exact transaction.
+
+## Example: Safety Certification
 
 A physical document with registration marks containing:
 ```
@@ -29,10 +56,10 @@ tie behind, neck loop, spunbond
 polypropylene, splash resistant
 sterile, double wrapped.
 
-https://intertek.com/certifications/e6200e...
+verify:intertek.com/certifications
 ```
 
-The app verifies the hash in the URL matches the SHA-256 of the normalized text above it.
+The app verifies the hash computed from the normalized text matches the verification endpoint controlled by Intertek.
 
 ## Quick Start
 
