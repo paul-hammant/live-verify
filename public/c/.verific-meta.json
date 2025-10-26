@@ -1,0 +1,11 @@
+{
+  "issuer": "Paul Hammant (Verific Demo)",
+  "claimType": "Academic certification from Unseen University",
+  "tesseract": {
+    "lang": "eng",
+    "psm": 6,
+    "oem": 1,
+    "tessedit_char_whitelist": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0-9 .,-/:()\"'-",
+    "preserve_interword_spaces": "1"
+  }
+}

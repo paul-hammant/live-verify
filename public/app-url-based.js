@@ -426,7 +426,77 @@ captureBtn.addEventListener('click', async () => {
 
         // Verify against the full URL
         updateStatus('🌐', 'Verifying against claimed URL...', '#ed8936');
-        await verifyAgainstClaimedUrl(fullVerificationUrl, hash);
+        const verifyResult = await verifyAgainstClaimedUrl(fullVerificationUrl, hash);
+
+        // If 404, try fetching .verific-meta.json and retry with optimized OCR
+        if (verifyResult.status === 404) {
+            console.log('Got 404, attempting to fetch .verific-meta.json for optimized OCR retry...');
+            updateStatus('🔍', 'Fetching OCR optimization settings...', '#ed8936');
+
+            const meta = await fetchVerificMeta(baseUrl);
+
+            if (meta && meta.tesseract) {
+                console.log('Found .verific-meta.json, retrying OCR with optimized settings:', meta.tesseract);
+                debugLog('Retrying OCR with domain-specific settings...');
+
+                // Retry OCR with optimized Tesseract settings
+                updateStatus('🔄', 'Retrying OCR with optimized settings...', '#ed8936');
+
+                const orientations = [
+                    { rotation: 0, canvas: cropped },
+                    { rotation: 90, canvas: rotateCanvas(cropped, 90) },
+                    { rotation: 270, canvas: rotateCanvas(cropped, 270) },
+                    { rotation: 180, canvas: rotateCanvas(cropped, 180) }
+                ];
+
+                let retryBestResult = null;
+                let retryBestConfidence = 0;
+                let retryBestRotation = 0;
+
+                for (const { rotation, canvas } of orientations) {
+                    try {
+                        const result = await Tesseract.recognize(canvas.toDataURL(), meta.tesseract.lang || 'eng', meta.tesseract);
+                        const confidence = result.data.confidence || 0;
+                        debugLog(`Retry ${rotation}°: confidence ${confidence.toFixed(1)}`);
+
+                        if (confidence > retryBestConfidence) {
+                            retryBestConfidence = confidence;
+                            retryBestResult = result;
+                            retryBestRotation = rotation;
+                        }
+                    } catch (e) {
+                        debugLog(`Retry ${rotation}° failed: ${e.message}`);
+                    }
+                }
+
+                if (retryBestResult) {
+                    debugLog(`Retry best: ${retryBestRotation}° (conf: ${retryBestConfidence.toFixed(1)})`);
+
+                    // Re-process with new OCR result
+                    const retryRawText = retryBestResult.data.text;
+                    console.log('Retry OCR Text:', retryRawText);
+
+                    const { url: retryBaseUrl, urlLineIndex: retryUrlLineIndex } = extractVerificationUrl(retryRawText);
+                    const retryCertText = extractCertText(retryRawText, retryUrlLineIndex);
+                    const retryNormalized = normalizeText(retryCertText);
+                    const retryHash = await sha256(retryNormalized);
+
+                    console.log('Retry SHA-256 Hash:', retryHash);
+                    hashValue.textContent = retryHash;
+
+                    const retryFullUrl = buildVerificationUrl(retryBaseUrl, retryHash);
+                    console.log('Retry Verification URL:', retryFullUrl);
+
+                    // Try verification again
+                    updateStatus('🌐', 'Verifying with retry hash...', '#ed8936');
+                    await verifyAgainstClaimedUrl(retryFullUrl, retryHash);
+                } else {
+                    console.log('Retry OCR also failed at all orientations');
+                }
+            } else {
+                console.log('No .verific-meta.json found or no tesseract settings');
+            }
+        }
 
         progressBar.style.display = 'none';
         updateStatus('✅', 'Verification complete - tap Stop Camera to capture again', '#48bb78');
@@ -443,10 +513,10 @@ captureBtn.addEventListener('click', async () => {
     }
 });
 
-// rotateCanvas(), extractVerificationUrl(), extractCertText(), hashMatchesUrl(), buildVerificationUrl() are loaded from app-logic.js
+// rotateCanvas(), extractVerificationUrl(), extractCertText(), hashMatchesUrl(), buildVerificationUrl(), fetchVerificMeta() are loaded from app-logic.js
 // normalizeText() and sha256() are loaded from normalize.js
 
-// Verify against the claimed URL
+// Verify against the claimed URL (returns status code for retry logic)
 async function verifyAgainstClaimedUrl(claimedUrl, computedHash) {
     verificationResult.style.display = 'block';
 
@@ -462,7 +532,7 @@ async function verifyAgainstClaimedUrl(claimedUrl, computedHash) {
 
         // Show visual overlay on video
         showOverlay('red', 'FAILS VERIFICATION');
-        return;
+        return { status: 'HASH_MISMATCH' };
     }
 
     verificationUrl.textContent = `Claimed URL: ${claimedUrl}`;
@@ -477,7 +547,7 @@ async function verifyAgainstClaimedUrl(claimedUrl, computedHash) {
             verificationStatus.classList.add('not-found');
             console.log(`Verification failed: HTTP ${response.status}`);
             showOverlay('red', 'FAILS VERIFICATION');
-            return;
+            return { status: response.status };
         }
 
         // Read response body
@@ -491,13 +561,14 @@ async function verifyAgainstClaimedUrl(claimedUrl, computedHash) {
             verificationStatus.classList.add('not-found');
             console.log(`Verification failed: response status is "${status}"`);
             showOverlay('red', status);
-            return;
+            return { status: 'NOT_OK', body: status };
         }
 
         // Success: 200 status + "OK" in body
         verificationStatus.textContent = '✅ VERIFIED - Certification confirmed';
         verificationStatus.classList.add('verified');
         showOverlay('green', 'VERIFIED');
+        return { status: 200, body: 'OK' };
 
     } catch (error) {
         // Network error or CORS issue
@@ -505,6 +576,7 @@ async function verifyAgainstClaimedUrl(claimedUrl, computedHash) {
         verificationStatus.textContent = `❌ CANNOT VERIFY - Network error or CORS restriction`;
         verificationStatus.classList.add('not-found');
         showOverlay('red', 'FAILS VERIFICATION');
+        return { status: 'NETWORK_ERROR', error };
     }
 }
 

@@ -66,10 +66,27 @@ To create verifiable documents:
 1. Generate certification text
 2. Normalize it (Unicode normalization + whitespace rules - see NORMALIZATION.md)
 3. Compute SHA-256 hash
-4. Print text within registration marks + URL with hash: `https://your-org.com/c/{HASH}`
-5. Host verification endpoint returning HTTP 200 + "OK" for valid hashes
+4. Print text within registration marks + base URL: `verify:your-org.com/c` (use Courier New font)
+5. Host verification endpoint at `https://your-org.com/c/{HASH}` returning HTTP 200 + "OK" for valid hashes
+6. Optional: Host `.verific-meta.json` at `https://your-org.com/c/.verific-meta.json` with OCR optimization settings
 
-See `build-hashes.js` for hash generation helper.
+The `.verific-meta.json` file can improve OCR accuracy by providing Tesseract.js configuration:
+
+```json
+{
+  "issuer": "Your Organization Name",
+  "claimType": "Employment verification",
+  "tesseract": {
+    "lang": "eng",
+    "psm": 6,
+    "oem": 1,
+    "tessedit_char_whitelist": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0-9 .,-/:()",
+    "preserve_interword_spaces": "1"
+  }
+}
+```
+
+The app will automatically fetch this file and use the Tesseract settings if initial OCR fails (404 response).
 
 ## Documented Use Cases (Prior Art / Patent Spoiling)
 

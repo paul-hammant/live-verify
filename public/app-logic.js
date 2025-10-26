@@ -135,6 +135,33 @@ function hashMatchesUrl(claimedUrl, computedHash) {
     return claimedUrl.includes(computedHash);
 }
 
+/**
+ * Fetch .verific-meta.json from the base URL
+ * @param {string} baseUrl - Base URL (verify: or https://)
+ * @returns {Promise<Object|null>} - Metadata object or null if not found
+ */
+async function fetchVerificMeta(baseUrl) {
+    try {
+        // Convert verify: to https:// if needed
+        let httpsBase = baseUrl;
+        if (baseUrl.toLowerCase().startsWith('verify:')) {
+            httpsBase = `https://${baseUrl.substring(7)}`;
+        }
+
+        // Fetch .verific-meta.json
+        const metaUrl = `${httpsBase}/.verific-meta.json`;
+        const response = await fetch(metaUrl);
+
+        if (response.status === 200) {
+            return await response.json();
+        }
+        return null;
+    } catch (error) {
+        console.log('Could not fetch .verific-meta.json:', error.message);
+        return null;
+    }
+}
+
 // Export for Node.js testing (doesn't affect browser usage)
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = {
@@ -142,6 +169,7 @@ if (typeof module !== 'undefined' && module.exports) {
         extractVerificationUrl,
         extractCertText,
         hashMatchesUrl,
-        buildVerificationUrl
+        buildVerificationUrl,
+        fetchVerificMeta
     };
 }

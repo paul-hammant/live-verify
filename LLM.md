@@ -54,7 +54,9 @@ verific/
 │   │   ├── bachelor-thaumatology.html
 │   │   ├── master-applied-anthropics.html
 │   │   └── doctorate-high-energy-magic.html
-│   ├── c/{hash}/index.html          # Static verification endpoints (200 + "OK")
+│   ├── c/
+│   │   ├── .verific-meta.json       # OCR optimization metadata (optional)
+│   │   └── {hash}/index.html        # Static verification endpoints (200 + "OK")
 │   └── hashes.json                  # Hash database metadata
 │
 ├── build-hashes.js                  # Build tool: generates hash database
@@ -210,6 +212,33 @@ Documents print base URLs using the `verify:` scheme instead of `https://`:
 - App converts to: `https://paul-hammant.github.io/verific/c/{hash}`
 
 This is cleaner on the document (shorter, no protocol noise) while still being clear it's for verification.
+
+**OCR Optimization Metadata (`.verific-meta.json`):**
+
+Issuers can optionally provide OCR optimization hints at the base URL by hosting a `.verific-meta.json` file:
+
+```json
+{
+  "issuer": "Google LLC",
+  "claimType": "Prior or current full-time employment",
+  "tesseract": {
+    "lang": "eng",
+    "psm": 6,
+    "oem": 1,
+    "tessedit_char_whitelist": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0-9 .,-/:()",
+    "preserve_interword_spaces": "1"
+  }
+}
+```
+
+If the app finds this file at `https://example.com/c/.verific-meta.json`, it can use the Tesseract settings to improve OCR accuracy:
+- `lang`: OCR language model (e.g., "eng", "eng+fra")
+- `psm`: Page segmentation mode (6 = uniform block of text)
+- `oem`: OCR engine mode (1 = LSTM neural net only)
+- `tessedit_char_whitelist`: Allowed characters (reduces false positives)
+- `preserve_interword_spaces`: Keeps spaces between words intact
+
+This is particularly useful for specialized documents with known character sets (e.g., employment letters won't have `@#$%^&*`).
 
 **Full verification requires these checks:**
 
@@ -448,11 +477,15 @@ Click the app title to see build timestamp.
 2. **Normalize it** using same rules (Unicode + whitespace)
 3. **Compute SHA-256 hash**
 4. **Create base URL for printing**: `verify:your-org.com/c`
-5. **Print text + registration marks + base URL** on document
+5. **Print text + registration marks + base URL** on document (use Courier New font for verify: URL)
 6. **Host endpoint** at `https://your-org.com/c/{hash}` returning:
    - HTTP 200 status
    - Body containing "OK" (or "REVOKED" to fail verification)
    - CORS header: `Access-Control-Allow-Origin: *`
+7. **Optional: Host `.verific-meta.json`** at `https://your-org.com/c/.verific-meta.json` with:
+   - Issuer name and claim type
+   - Tesseract OCR optimization settings
+   - Character whitelist specific to your document type
 
 Note: The document shows `verify:your-org.com/c` but the app converts this to `https://your-org.com/c/{hash}` when fetching.
 
