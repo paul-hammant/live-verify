@@ -14,17 +14,17 @@ This is a **100% client-side web application** for verifying physical documents 
 ### 2. URL-Based Verification (Not Local Database)
 The document itself contains:
 - Certification text within black square registration marks
-- Verification URL printed below the text (e.g., `https://paul-hammant.github.io/verific/c`)
+- Verification base URL printed below the text (e.g., `verify:paul-hammant.github.io/verific/c`)
 
 The app:
 1. Uses **OpenCV.js** to detect the black square registration marks
 2. Crops to the rectangle defined by the marks
 3. Tries **multi-orientation OCR** (0°, 90°, 270°, 180°) and picks the best result
-4. Extracts the URL from the last line of OCR text
+4. Extracts the base URL from the last line of OCR text (accepts `verify:` or `https://` prefix)
 5. Removes URL line from certification text
 6. Normalizes remaining text (Unicode normalization + whitespace rules)
 7. Computes SHA-256 hash
-8. **Checks if computed hash appears in the claimed URL**
+8. **Builds full verification URL** by converting `verify:` to `https://` and appending the hash
 9. Fetches the URL and verifies HTTP 200 + "OK" in response
 10. Shows green "VERIFIED" or red "FAILS VERIFICATION" overlay on camera
 
@@ -203,9 +203,25 @@ Falls back to canvas capture from video element if ImageCapture not supported.
 
 ### Verification Logic
 
-**Full verification requires all three checks:**
+**The `verify:` URL scheme:**
+
+Documents print base URLs using the `verify:` scheme instead of `https://`:
+- Printed on document: `verify:paul-hammant.github.io/verific/c`
+- App converts to: `https://paul-hammant.github.io/verific/c/{hash}`
+
+This is cleaner on the document (shorter, no protocol noise) while still being clear it's for verification.
+
+**Full verification requires these checks:**
 
 ```javascript
+// Extract base URL (verify: or https://)
+const { url: baseUrl, urlLineIndex } = extractVerificationUrl(rawText);
+
+// Build full URL with hash
+const fullVerificationUrl = buildVerificationUrl(baseUrl, hash);
+// If baseUrl = "verify:example.com/c", result = "https://example.com/c/{hash}"
+// If baseUrl = "https://example.com/c", result = "https://example.com/c/{hash}"
+
 async function verifyAgainstClaimedUrl(claimedUrl, computedHash) {
     // Check 1: Hash in URL
     if (!hashMatchesUrl(claimedUrl, computedHash)) {
@@ -223,7 +239,9 @@ async function verifyAgainstClaimedUrl(claimedUrl, computedHash) {
 
     const body = await response.text();
     if (!body.includes('OK')) {
-        showOverlay('red', 'FAILS VERIFICATION');
+        // Show actual status (e.g., "REVOKED")
+        const status = body.trim().toUpperCase().substring(0, 50);
+        showOverlay('red', status);
         return;
     }
 
@@ -234,7 +252,7 @@ async function verifyAgainstClaimedUrl(claimedUrl, computedHash) {
 
 ## Test Coverage
 
-### Unit Tests (Jest) - 59 tests
+### Unit Tests (Jest) - 68 tests
 
 **ocr-hash.test.js (30 tests):**
 - Text normalization (whitespace, Unicode characters)
@@ -242,11 +260,12 @@ async function verifyAgainstClaimedUrl(claimedUrl, computedHash) {
 - Registration mark positioning
 - Full verification flow
 
-**app-logic.test.js (29 tests):**
+**app-logic.test.js (38 tests):**
 - Canvas rotation (0°, 90°, 180°, 270°, negative angles)
-- URL extraction (space removal, validation)
+- URL extraction (space removal, validation, verify: and https:// prefixes)
 - Certification text extraction
 - Hash matching logic
+- buildVerificationUrl (converts verify: to https:// with hash appended)
 
 **cv-geometry.test.js:**
 - Corner ordering
@@ -421,19 +440,21 @@ Click the app title to see build timestamp.
 5. **Simple deployment**: Just push to GitHub
 6. **Transparent**: All code visible, no black boxes
 7. **Scalable**: Each org hosts their own verification endpoints
-8. **Testable**: 59 unit tests + 16 E2E tests, all production code tested
+8. **Testable**: 68 unit tests + 16 E2E tests, all production code tested
 
 ## How Certification Agencies Use This
 
 1. **Generate certification text**
 2. **Normalize it** using same rules (Unicode + whitespace)
 3. **Compute SHA-256 hash**
-4. **Create verification URL**: `https://your-org.com/c`
-5. **Print text + registration marks + URL** on document
+4. **Create base URL for printing**: `verify:your-org.com/c`
+5. **Print text + registration marks + base URL** on document
 6. **Host endpoint** at `https://your-org.com/c/{hash}` returning:
    - HTTP 200 status
-   - Body containing "OK"
+   - Body containing "OK" (or "REVOKED" to fail verification)
    - CORS header: `Access-Control-Allow-Origin: *`
+
+Note: The document shows `verify:your-org.com/c` but the app converts this to `https://your-org.com/c/{hash}` when fetching.
 
 ## Trust Model
 
@@ -454,8 +475,7 @@ The app verifies:
 ### Quick Start
 ```bash
 npm install
-npm test                    # Should see 59 + 16 tests pass
-node build-hashes.js        # Regenerate hash database
+npm test                    # Should see 68 + 16 tests pass
 ```
 
 ### Key Files to Review

@@ -420,8 +420,8 @@ captureBtn.addEventListener('click', async () => {
         hashValue.textContent = hash;
         hashResult.style.display = 'block';
 
-        // Build full verification URL by appending hash to base URL
-        const fullVerificationUrl = `${baseUrl}/${hash}`;
+        // Build full verification URL (converts verify: to https:// and appends hash)
+        const fullVerificationUrl = buildVerificationUrl(baseUrl, hash);
         console.log('Full Verification URL:', fullVerificationUrl);
 
         // Verify against the full URL
@@ -443,7 +443,7 @@ captureBtn.addEventListener('click', async () => {
     }
 });
 
-// rotateCanvas(), extractVerificationUrl(), extractCertText(), hashMatchesUrl() are loaded from app-logic.js
+// rotateCanvas(), extractVerificationUrl(), extractCertText(), hashMatchesUrl(), buildVerificationUrl() are loaded from app-logic.js
 // normalizeText() and sha256() are loaded from normalize.js
 
 // Verify against the claimed URL

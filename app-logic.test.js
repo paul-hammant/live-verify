@@ -44,7 +44,8 @@ const {
     rotateCanvas,
     extractVerificationUrl,
     extractCertText,
-    hashMatchesUrl
+    hashMatchesUrl,
+    buildVerificationUrl
 } = require('./public/app-logic.js');
 
 describe('App Logic - Pure Functions', () => {
@@ -161,12 +162,12 @@ https://example.com
             expect(() => extractVerificationUrl(rawText)).toThrow('No text found in image');
         });
 
-        it('should throw error if last line does not start with https', () => {
+        it('should throw error if last line does not start with https or verify:', () => {
             const rawText = `Certification text
 This is not a URL`;
 
             expect(() => extractVerificationUrl(rawText))
-                .toThrow('Bottom line inside the marks must be a verification URL starting with https');
+                .toThrow('Bottom line inside the marks must be a verification URL starting with verify: or https');
         });
 
         it('should accept HTTPS in any case', () => {
@@ -182,7 +183,32 @@ HTTPS://EXAMPLE.COM`;
 http://example.com`;
 
             expect(() => extractVerificationUrl(rawText))
-                .toThrow('Bottom line inside the marks must be a verification URL starting with https');
+                .toThrow('Bottom line inside the marks must be a verification URL starting with verify: or https');
+        });
+
+        it('should accept verify: URLs', () => {
+            const rawText = `Certification text
+verify:paul-hammant.github.io/verific/c`;
+
+            const result = extractVerificationUrl(rawText);
+            expect(result.url).toBe('verify:paul-hammant.github.io/verific/c');
+            expect(result.urlLineIndex).toBe(1);
+        });
+
+        it('should remove spaces from verify: URL', () => {
+            const rawText = `Text
+v e r i f y : e x a m p l e . c o m / v e r i f i c`;
+
+            const result = extractVerificationUrl(rawText);
+            expect(result.url).toBe('verify:example.com/verific');
+        });
+
+        it('should accept VERIFY: in any case', () => {
+            const rawText = `Text
+VERIFY:EXAMPLE.COM/PATH`;
+
+            const result = extractVerificationUrl(rawText);
+            expect(result.url).toBe('VERIFY:EXAMPLE.COM/PATH');
         });
     });
 
@@ -270,6 +296,46 @@ https://example.com`;
             const upperHash = hash.toUpperCase();
             const url = `https://example.com/c/${hash}`;
             expect(hashMatchesUrl(url, upperHash)).toBe(false);
+        });
+    });
+
+    describe('buildVerificationUrl', () => {
+        const hash = '09d1e6765c2dbd833e5a1f4770d9f0c9368224f7b1aed34de7a3bd5bf4d1f031';
+
+        it('should convert verify: to https:// and append hash', () => {
+            const baseUrl = 'verify:paul-hammant.github.io/verific/c';
+            const result = buildVerificationUrl(baseUrl, hash);
+            expect(result).toBe(`https://paul-hammant.github.io/verific/c/${hash}`);
+        });
+
+        it('should handle https:// URLs by appending hash', () => {
+            const baseUrl = 'https://example.com/verify';
+            const result = buildVerificationUrl(baseUrl, hash);
+            expect(result).toBe(`https://example.com/verify/${hash}`);
+        });
+
+        it('should handle VERIFY: in uppercase', () => {
+            const baseUrl = 'VERIFY:example.com/path';
+            const result = buildVerificationUrl(baseUrl, hash);
+            expect(result).toBe(`https://example.com/path/${hash}`);
+        });
+
+        it('should handle verify: with mixed case', () => {
+            const baseUrl = 'VeRiFy:example.com/path';
+            const result = buildVerificationUrl(baseUrl, hash);
+            expect(result).toBe(`https://example.com/path/${hash}`);
+        });
+
+        it('should preserve case in domain and path', () => {
+            const baseUrl = 'verify:Example.COM/VeRiFiC';
+            const result = buildVerificationUrl(baseUrl, hash);
+            expect(result).toBe(`https://Example.COM/VeRiFiC/${hash}`);
+        });
+
+        it('should handle verify: without trailing slash', () => {
+            const baseUrl = 'verify:example.com';
+            const result = buildVerificationUrl(baseUrl, hash);
+            expect(result).toBe(`https://example.com/${hash}`);
         });
     });
 });

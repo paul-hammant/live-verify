@@ -70,7 +70,25 @@ Thesis: "On the Malleability of L-Space"
 5. Blank lines removed
 6. No trailing newline
 
-## 5. SHA-256 Hash Computation
+## 5. Verification URL Handling
+
+The last line of the OCR text is treated as the verification base URL. It can use either:
+
+- **`verify:` scheme** (preferred for printed documents): `verify:paul-hammant.github.io/verific/c`
+- **`https://` scheme** (legacy support): `https://paul-hammant.github.io/verific/c`
+
+The app converts the base URL to a full HTTPS URL with the hash appended:
+```javascript
+// If base URL is "verify:example.com/c"
+// Result: "https://example.com/c/{hash}"
+
+// If base URL is "https://example.com/c"
+// Result: "https://example.com/c/{hash}"
+```
+
+The `verify:` scheme is shorter on printed documents and makes it clear the URL is for verification purposes.
+
+## 6. SHA-256 Hash Computation
 
 After normalization, the SHA-256 hash is computed with these parameters:
 
@@ -96,9 +114,8 @@ const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');  /
 
 The code is implemented in:
 - **Production** (public/normalize.js) - text normalization and hashing for the live webapp
-- **Production** (public/app-logic.js) - pure functions for URL extraction, text processing, and canvas rotation
-- **Build tool** (build-hashes.js) - Node.js script for creating the hash database
+- **Production** (public/app-logic.js) - pure functions for URL extraction, text processing, canvas rotation, and verify: to https:// conversion
 - **Tests** (ocr-hash.test.js) - tests normalize.js (30 tests)
-- **Tests** (app-logic.test.js) - tests app-logic.js (29 tests)
+- **Tests** (app-logic.test.js) - tests app-logic.js (38 tests, including buildVerificationUrl)
 
-All tests validate the production browser code to ensure correctness. The build tool mirrors the same normalization logic to pre-compute hashes for the database.
+All tests validate the production browser code to ensure correctness.

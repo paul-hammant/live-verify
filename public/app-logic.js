@@ -50,10 +50,10 @@ function rotateCanvas(sourceCanvas, degrees) {
 
 /**
  * Extract verification URL from OCR raw text
- * Expects URL to be the last non-empty line starting with "https"
+ * Expects URL to be the last non-empty line starting with "verify:" or "https"
  * @param {string} rawText - Raw OCR text
- * @returns {{url: string, urlLineIndex: number}} - Extracted URL and its line index
- * @throws {Error} If no text found or last line doesn't start with https
+ * @returns {{url: string, urlLineIndex: number}} - Extracted base URL and its line index
+ * @throws {Error} If no text found or last line doesn't start with verify: or https
  */
 function extractVerificationUrl(rawText) {
     const rawLines = rawText.split('\n').map(l => l.trim());
@@ -75,16 +75,34 @@ function extractVerificationUrl(rawText) {
 
     // Remove ALL spaces from the URL line (OCR often adds errant spaces)
     const lastNoSpaces = lastNonEmpty.replace(/\s+/g, '');
+    const lowerUrl = lastNoSpaces.toLowerCase();
 
-    // Check if line begins with https (that's unique enough)
-    if (!lastNoSpaces.toLowerCase().startsWith('https')) {
-        throw new Error('Bottom line inside the marks must be a verification URL starting with https');
+    // Check if line begins with verify: or https
+    if (!lowerUrl.startsWith('verify:') && !lowerUrl.startsWith('https')) {
+        throw new Error('Bottom line inside the marks must be a verification URL starting with verify: or https');
     }
 
     return {
         url: lastNoSpaces,
         urlLineIndex: lastNonEmptyIndex
     };
+}
+
+/**
+ * Convert verify: URL to https:// URL with hash appended
+ * @param {string} baseUrl - Base URL (either "verify:example.com/path" or "https://example.com/path")
+ * @param {string} hash - SHA-256 hash to append
+ * @returns {string} - Full HTTPS verification URL
+ */
+function buildVerificationUrl(baseUrl, hash) {
+    // If it starts with verify:, convert to https://
+    if (baseUrl.toLowerCase().startsWith('verify:')) {
+        const withoutPrefix = baseUrl.substring(7); // Remove "verify:"
+        return `https://${withoutPrefix}/${hash}`;
+    }
+
+    // Otherwise assume it's already https:// format
+    return `${baseUrl}/${hash}`;
 }
 
 /**
@@ -123,6 +141,7 @@ if (typeof module !== 'undefined' && module.exports) {
         rotateCanvas,
         extractVerificationUrl,
         extractCertText,
-        hashMatchesUrl
+        hashMatchesUrl,
+        buildVerificationUrl
     };
 }
