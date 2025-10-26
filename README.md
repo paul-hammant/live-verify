@@ -97,12 +97,47 @@ To create verifiable documents:
 5. Host verification endpoint at `https://your-org.com/c/{HASH}` returning HTTP 200 + "OK" for valid hashes
 6. Optional: Host `.verific-meta.json` at `https://your-org.com/c/.verific-meta.json` with OCR optimization settings
 
-The `.verific-meta.json` file can improve OCR accuracy by providing Tesseract.js configuration:
+The `.verific-meta.json` file can improve OCR accuracy by providing Tesseract.js configuration and establish authority relationships:
 
 ```json
 {
   "issuer": "Your Organization Name",
   "claimType": "Employment verification",
+  "parentAuthorities": [
+    "https://accreditation-body.org/members/your-org",
+    "https://regulatory-agency.gov/licensed/your-org"
+  ],
+  "responseTypes": {
+    "OK": {
+      "class": "affirming",
+      "text": "This claim is verified and authentic",
+      "link": "https://your-org.com/verification-info"
+    },
+    "REVOKED": {
+      "class": "denying",
+      "text": "This credential has been revoked",
+      "link": "https://your-org.com/revocation-policy.html"
+    },
+    "SUPERSEDED": {
+      "class": "denying",
+      "text": "This document has been replaced by a newer version",
+      "link": "https://your-org.com/verification-updates.html"
+    }
+  },
+  "retentionLaws": [
+    {
+      "jurisdiction": "European Union",
+      "law": "GDPR Article 5(1)(e)",
+      "link": "https://gdpr-info.eu/art-5-gdpr/",
+      "summary": "Personal data kept no longer than necessary; verification data retained only if strictly necessary for legal compliance"
+    },
+    {
+      "jurisdiction": "United States",
+      "law": "Your State Privacy Act",
+      "link": "https://state.gov/privacy-act",
+      "summary": "Verification records retained for 7 years for audit purposes; may be disclosed to government agencies under subpoena"
+    }
+  ],
   "tesseract": {
     "lang": "eng",
     "psm": 6,
@@ -113,13 +148,302 @@ The `.verific-meta.json` file can improve OCR accuracy by providing Tesseract.js
 }
 ```
 
+"SUPERSEDED" would not link to a replacement SHA-256 URL that'd have "OK", nor would HTTP's 302 do the same. The point is the requester should already know the the plain-text that would culminate in a verification looup.
+
+**Fields:**
+- `issuer` (optional) - Name of the issuing organization
+- `claimType` (optional) - Type of claim (e.g., "degree", "license", "certification")
+- `parentAuthorities` (optional) - Array of URLs linking to parent/accrediting organizations that authorize this issuer
+- `responseTypes` (optional) - Dictionary defining possible response statuses beyond "OK", each with:
+  - `class` - Either "affirming" or "denying" (determines UI color/icon)
+  - `text` - Human-readable explanation of what this status means
+  - `link` - URL to a page with more information about this status
+- `retentionLaws` (optional) - Array of governing laws/regulations for data retention and sharing, each with:
+  - `jurisdiction` - Geographic region or legal system (e.g., "European Union", "California", "Japan")
+  - `law` - Name/citation of the specific law or regulation
+  - `link` - URL to the official text or authoritative explanation
+  - `summary` - Plain-language explanation of retention period and sharing constraints
+- `tesseract` (optional) - Tesseract.js configuration for improved OCR accuracy
+
 The app will automatically fetch this file and use the Tesseract settings if initial OCR fails (404 response).
 
-## Documented Use Cases (Prior Art / Patent Spoiling)
+**Parent Authorities Examples:**
 
-This section documents all known and anticipated applications of OCR-to-hash verification of physical documents to establish prior art and prevent future patent trolling. Any combination of these techniques with OCR, hashing, computer vision registration marks, URL-based verification, and normalization is hereby disclosed as of **January 2025**.
+The `parentAuthorities` field establishes a chain of trust through simple URL links (no PKI required):
+
+- **University degree** → Accreditation body (e.g., regional accreditor's member list)
+- **Medical license** → State medical board registry
+- **Professional certification** → Certifying organization's approved training providers list
+- **Food safety cert** → Health department's licensed facilities page
+- **Product certification** → Standards body's certified labs directory
+
+Example for a university: See [github.com/paul-hammant/verific/blob/main/public/c/.verific-meta.json](https://github.com/paul-hammant/verific/blob/main/public/c/.verific-meta.json
+
+**Why This Matters:**
+
+Europe's GDPR's has a vague "if strictly necessary" clause, but many jurisdictions have specific, concrete retention periods and explicit rules about:
+
+- **Retention duration**: How long the issuer must/may keep the data (e.g., 4 years, 7 years, 10 years, indefinitely)
+- **Mandatory sharing**: Who the data **must** be shared with (government agencies, regulators, auditors)
+- **Permissible sharing**: Who the data **may** be shared with (background check companies, other employers, researchers)
+- **Prohibited sharing**: What the data **cannot** be used for (e.g., "will not be sold to marketers and alike")
+
+The `retentionLaws` field makes these rules transparent to the person whose data is being verified.
+
+### Hash Storage vs Full-Text Storage: Legal Implications
+
+Companies storing aspects of the data behind verifications. 
+
+**Storing the SHA-256 hash alone** (without the underlying text) is technically easy but **practically useless**:
+
+- The hash proves nothing without the ability to verify it (i.e., without storing the original text). 
+- You cannot reconstruct the original claim from the hash. Well, not without literal magic.
+- There is no value in a database of orphaned hashes
+
+**Storing the claim text** (with or without the hash) is what organizations actually do, and **retention/sharing laws apply to this stored text**, not the hash. The laws existed and applied before this idea to verify claims using a SHA-256 system.
+
+### Worked Example: Recruitment Portal
+
+**Scenario:** A candidate submits their CV/resume to a recruitment portal, which includes:
+
+- Degree certificate from Edinburgh University (First-class honours) - verified via OCR-to-hash
+- Employment letter from Microsoft - verified via OCR-to-hash
+
+**What the recruitment portal stores:**
+
+1. ✅ The full CV/resume text (including qualification and employment claims)
+2. ✅ Maybe the SHA-256 hashes from the verified documents
+3. ✅ The verification base URLs that proved the claims are authentic. At least with the SHA-256 they do.  The text to verification sequence could be redone at any stage of course.
+
+**Legal permissions - What the portal CAN do:**
+- ✅ Store the CV/resume (candidate gave consent when submitting)
+- ✅ Share the CV/resume with specific clients (the hiring company) cos the applicant was applyfor for a job through the portal - their entire purpose for uploading their CV/resume.
+- ✅ Show verified status: "Degree verified ✓" and "Employment verified ✓" Both back to the candidate and to the prospective employer.
+
+**Legal constraints - What the portal CANNOT do:**
+- ❌ Share the CV/resume with Palantir Technologies (for example) no consent/legitimate interest.
+- ❌ Sell the CV data to marketing companies
+- ❌ Keep the CV indefinitely after the candidate withdraws consent (GDPR Article 17)
+
+**Initial client conversation:**
+
+Portal: "We have a matching candidate who graduated Edinburgh University
+         with First-class honours (verified ✓) and is currently working
+         at Microsoft (verified ✓). Are you interested in seeing their
+         full CV?"
+
+Client: "Yes, send over their details."
+
+Portal: Shares the full CV. With or without verification proof - the client could or perhaps should redo the same verifications.
+
+**What "verified ✓" means:**
+
+- The candidate submitted physical documents (degree certificate, employment letter), OR scans there of OR the already-extracted and normalized text from the same.
+- If physical scans, the portal scanned them using OCR-to-hash verification "OK" vs 404 response, etc
+- The issuing organizations (Edinburgh University, Microsoft) confirmed authenticity via HTTP 200 + "OK" and that gets noted "claims made in CV all verified"
+
+**Key insight:** The retention laws govern **the underlying text** (the CV, the degree claim, the employment history, the financial services contract/transaction), not the hash. The hash is merely a cryptographic proof that helps verify authenticity, but the legal obligations attach to the personal data being stored and shared.
+
+## Charges for Verification: The Bloomberg Model
+
+Organizations hosting verification endpoints may charge for verification lookups, similar to how Bloomberg charges for financial data queries. This creates a sustainable business model while maintaining verification integrity.
+
+### How It Works
+
+**Traditional caching breaks the model:**
+-
+- If verifiers cache "hash X = OK" responses, they only pay once
+- The issuing organization loses recurring revenue
+- There's no incentive to maintain the verification infrastructure
+
+**Bloomberg-style non-caching enforcement:**
+- Each verification lookup is a fresh API call
+- The issuer can track usage and charge accordingly
+- Prevents free-riding through cached responses
+
+### Technical Implementation
+
+**Rate limiting and authentication:**
+```
+GET https://university.edu/verify/{HASH}
+Headers:
+  Authorization: Bearer {API_KEY}
+  X-Verifier-ID: RecruitCorp-12345
+```
+
+**Pricing models:**
+- **Per-verification**: $0.001 per hash lookup
+- **Monthly subscription**: Unlimited verifications for $500/month
+- **Volume tiers**: Bulk discounts for high-volume verifiers
+
+**Anti-caching measures:**
+
+```json
+{
+  "hash": "09d1e6765c2dbd833e5a1f4770d9f0c9...",
+  "status": "OK",
+  "verified_at": "2025-01-26T14:30:00Z",
+  "cache_control": "no-store, no-cache, must-revalidate",
+  "pricing": {
+    "cost": 0.10,
+    "currency": "USD",
+    "remaining_quota": 950
+  }
+}
+```
+
+### Why Organizations Would Pay
+
+**1. Legal liability protection:**
+- Hiring someone with a fake degree → Lawsuit
+- Cost of verification ($0.10) << Cost of hiring fraud ($50,000+ settlement)
+
+**2. Competitive advantage:**
+- "All candidates verified ✓" becomes a selling point
+- Clients trust verified claims over unverified ones
+
+**3. Required by regulation:**
+- Healthcare: Must verify medical licenses before hiring
+- Finance: Must verify certifications (CFA, CPA) before client-facing roles
+- Education: Must verify teaching credentials
+
+**4. Insurance discounts:**
+- Employment practices liability insurance (EPLI) premiums reduced if using verified hiring
+
+### Real-World Example: Medical License Verification
+
+State Medical Board pricing. Maybe higher than the 10 cents of Universities.
+
+**Who pays:**
+- Hospitals verifying new hires: $1,000/month subscription
+- Background check companies: Annual enterprise license
+- Patients verifying their doctor: one free a year, maybe 
+
+As technology systems, these would have rate limiting and abuse prevention.
+
+### Economic Sustainability
+
+**Why this model works:**
+
+1. **Issuers get recurring revenue** for maintaining verification infrastructure
+2. **Verifiers get some legal protection** and competitive advantage
+3. **Subjects (graduates, license holders) get free lookups** to verify their own credentials. And expanded GDPR would guarantee that. Expanded if not already covering similar scenarios.
+4. **Public good maintained** while preventing tragedy of the commons
+
+Perhaps resource not found (404) is always free, even if rate limit and anti-abuse technologies are always activated.
+
+**Example: University degree verification**
+- University maintains verification endpoint: $50,000/year (servers, staff)
+- 10,000 verifications/year × $0.50 = $5,000 revenue
+- Break-even requires higher volume OR higher per-verification price
+- Solution: Tiered pricing + enterprise contracts with major employers
+
+### Integration with .verific-meta.json
+
+Organizations can publish their price guide in the metadata:
+
+```json
+{
+  "issuer": "Unseen University",
+  "verification_pricing": {
+    "public_free_tier": {
+      "rate_limit": "1 per month per IP address",
+      "description": "Free for individuals verifying their own credentials"
+    },
+    "commercial_tier": {
+      "cost": 0.10,
+      "currency": "USD",
+      "token-setup": "https://unseen-university.api-gateways.salesforce.com",
+      "description": "Has volume discounts"
+    }
+  },
+  "retentionLaws": [ ... ]
+}
+```
+
+### Bloomberg Comparison
+
+**Bloomberg Terminal model:**
+- $24,000/year per user
+- Access to real-time financial data
+- No caching allowed - data must be re-fetched?
+- Enforced through technical and legal means. TODO and whistleblower incentive?
+
+**OCR-to-hash verification model:**
+- $500-$10,000/year depending on volume
+- Access to real-time credential verification
+- No caching allowed - must verify fresh each time
+- Enforced through API rate limiting and terms of service
+
+**Key difference:** Bloomberg provides *data*, verification provides *attestation* in a much smaller payload. The value of each comparatively is perhaps eternally debatable.
+
+## Server-Side Implementation Costs
+
+Organizations hosting verification endpoints can use serverless infrastructure to minimize costs while charging for verifications.
+
+### Example: Cloudflare-based Architecture
+
+A typical implementation using Cloudflare's edge platform:
+
+**Architecture:**
+1. **Cloudflare Workers** - Edge compute to handle incoming GET requests for `/{HASH}`
+2. **Cloudflare R2** - Object storage containing the hash → status mapping (e.g., `09d1e6765c2d...` → `OK`)
+3. **Stripe** (optional) - Usage metering and billing for commercial API users
+
+**Cost breakdown per million verifications:**
+
+| Component                                            | Cost per million GETs | Notes                                    |
+|------------------------------------------------------|-----------------------|------------------------------------------|
+| [R2](https://developers.cloudflare.com/r2/) read ops | $0.36                 | Object storage lookups (negligible)      |
+| [Worker](https://workers.cloudflare.com/) exec       | $5.00                 | Edge compute execution (main cost)       |
+| [Stripe](https://stripe.com/) usage reporting        | ≈ $0.01               | Metering API calls (if batched)          |
+| **Total infrastructure cost**                        | **≈ $5.37 / million** | **~$0.0000054 per verification**         |
+
+**Margin analysis:**
+
+If charging **$0.10 per verification**:
+- Infrastructure cost: $0.0000054
+- Revenue: $0.10
+- **Margin: ~99.99%** ($0.09999946 profit per verification)
+
+If charging **$0.50 per verification** (medical licenses):
+- Infrastructure cost: $0.0000054
+- Revenue: $0.50
+- **Margin: ~99.999%** ($0.49999946 profit per verification)
+
+**Implications:**
+
+1. **Premium entities can charge substantially** - Infrastructure costs are negligible compared to the value of legal attestation
+2. **Many organizations will offer free verification** - The marginal cost is so low that providing free public verification is sustainable
+3. **Tiered pricing makes sense** - Free tier for individuals (10/month), paid tier for commercial bulk verification
+4. **Cost of doing business** - For public institutions (universities, medical boards), free verification is a rounding error in their IT budget
+
+**Why organizations might still charge:**
+
+- **Revenue generation** - Even at $0.10/verification, 1 million lookups = $100,000 revenue vs $5.37 costs
+- **Abuse prevention** - Charging deters bulk scraping and frivolous lookups
+- **Service quality** - Paid tiers get faster response times, SLA guarantees, bulk APIs
+- **Regulatory funding** - Medical boards and licensing agencies can use verification fees to fund operations
+
+**Free vs Paid decision factors:**
+
+Organizations like universities may offer **free verification** because:
+
+- Brand reputation ("We stand behind our degrees")
+- Alumni relations (helps graduates get jobs) and they [often go on to donate back to the uni](https://wonkhe.com/blogs/what-alumni-donations-can-tell-us-about-the-relationship-between-students-and-their-universities/)
+- Marginal cost is trivial ($5.37 per million accesses)
+
+Organizations like medical boards may **charge** because:
+- Legal liability protection is worth paying for
+- High-frequency commercial users (hospitals, staffing agencies) can afford it
+- Revenue helps fund regulatory oversight
+
+## Possible Use Cases
+
+This section documents all known and anticipated applications of OCR-to-hash verification of physical documents. Any combination of these techniques with OCR, hashing, computer vision registration marks, URL-based verification, and normalization is hereby disclosed as of **January 2025**.
 
 ### Product Certifications & Compliance
+ 
 - **Safety certifications** (electrical, fire, structural, chemical)
 - **Medical device certifications** (FDA, CE marking, ISO 13485)
 - **Food safety certifications** (HACCP, organic, kosher, halal, vegetarian, vegan)

@@ -622,9 +622,36 @@ async function verifyAgainstClaimedUrl(claimedUrl, computedHash) {
         if (!body.includes('OK')) {
             // Show the actual status from the server (e.g., "REVOKED")
             const status = body.trim().toUpperCase().substring(0, 50); // Limit to 50 chars
-            verificationStatus.textContent = `❌ ${status}`;
-            verificationStatus.classList.add('not-found');
+
+            // Try to fetch .verific-meta.json to get custom responseTypes
+            const meta = await fetchVerificMeta(currentBaseUrl);
+            let statusText = `❌ ${status}`;
+            let statusClass = 'not-found';
+            let learnMoreLink = null;
+
+            if (meta && meta.responseTypes && meta.responseTypes[status]) {
+                const responseType = meta.responseTypes[status];
+                statusText = responseType.class === 'affirming' ? `✅ ${responseType.text}` : `❌ ${responseType.text}`;
+                statusClass = responseType.class === 'affirming' ? 'verified' : 'not-found';
+                learnMoreLink = responseType.link;
+                console.log(`Using custom response type from .verific-meta.json: ${status}`);
+            }
+
+            verificationStatus.textContent = statusText;
+            verificationStatus.classList.add(statusClass);
             console.log(`Verification failed: response status is "${status}"`);
+
+            // Add "Learn more" link if available
+            if (learnMoreLink) {
+                const learnMore = document.createElement('a');
+                learnMore.href = learnMoreLink;
+                learnMore.target = '_blank';
+                learnMore.textContent = ' Learn more →';
+                learnMore.style.marginLeft = '10px';
+                learnMore.style.color = '#667eea';
+                learnMore.style.textDecoration = 'none';
+                verificationStatus.appendChild(learnMore);
+            }
 
             // Show the tabs again if they were hidden (user may want to edit)
             textResult.style.display = 'block';
