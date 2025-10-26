@@ -50,42 +50,34 @@ function rotateCanvas(sourceCanvas, degrees) {
 
 /**
  * Extract verification URL from OCR raw text
- * Expects URL to be the last non-empty line starting with "verify:" or "https"
+ * Scans from bottom to top to find verify: or https line, discarding OCR garbage below it
  * @param {string} rawText - Raw OCR text
  * @returns {{url: string, urlLineIndex: number}} - Extracted base URL and its line index
- * @throws {Error} If no text found or last line doesn't start with verify: or https
+ * @throws {Error} If no text found or no verify:/https line found
  */
 function extractVerificationUrl(rawText) {
     const rawLines = rawText.split('\n').map(l => l.trim());
 
-    // Find the index of the last non-empty line
-    let lastNonEmptyIndex = -1;
+    // Scan from bottom to top to find the verify: or https line
+    // Everything below it is likely OCR garbage from dust/artifacts
     for (let i = rawLines.length - 1; i >= 0; i--) {
-        if (rawLines[i]) {
-            lastNonEmptyIndex = i;
-            break;
+        const line = rawLines[i];
+        if (!line) continue; // Skip empty lines
+
+        // Remove ALL spaces from the line (OCR often adds errant spaces)
+        const lineNoSpaces = line.replace(/\s+/g, '');
+        const lowerLine = lineNoSpaces.toLowerCase();
+
+        // Check if this line starts with verify: or https
+        if (lowerLine.startsWith('verify:') || lowerLine.startsWith('https')) {
+            return {
+                url: lineNoSpaces,
+                urlLineIndex: i
+            };
         }
     }
 
-    if (lastNonEmptyIndex === -1) {
-        throw new Error('No text found in image');
-    }
-
-    const lastNonEmpty = rawLines[lastNonEmptyIndex];
-
-    // Remove ALL spaces from the URL line (OCR often adds errant spaces)
-    const lastNoSpaces = lastNonEmpty.replace(/\s+/g, '');
-    const lowerUrl = lastNoSpaces.toLowerCase();
-
-    // Check if line begins with verify: or https
-    if (!lowerUrl.startsWith('verify:') && !lowerUrl.startsWith('https')) {
-        throw new Error('Bottom line inside the marks must be a verification URL starting with verify: or https');
-    }
-
-    return {
-        url: lastNoSpaces,
-        urlLineIndex: lastNonEmptyIndex
-    };
+    throw new Error('No verification URL found (looking for verify: or https)');
 }
 
 /**

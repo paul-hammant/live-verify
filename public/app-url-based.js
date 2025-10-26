@@ -66,6 +66,7 @@ const captureResolutionEl = document.getElementById('captureResolution');
 
 let stream = null;
 let deviceOrientation = { alpha: 0, beta: 0, gamma: 0 };
+let currentBaseUrl = null; // Store base URL for re-verification when user edits normalized text
 
 // Debug console for mobile
 const debugConsole = document.getElementById('debugConsole');
@@ -134,16 +135,22 @@ async function startStreamWithConstraintsSequence() {
 document.querySelectorAll('.tab-btn').forEach(btn => {
     btn.addEventListener('click', () => {
         const tabName = btn.dataset.tab;
-
-        // Remove active class from all buttons and panes
-        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-        document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
-
-        // Add active class to clicked button and corresponding pane
-        btn.classList.add('active');
-        document.getElementById(`tab-${tabName}`).classList.add('active');
+        switchToTab(tabName);
     });
 });
+
+// Helper function to switch tabs
+function switchToTab(tabName) {
+    // Remove active class from all buttons and panes
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+
+    // Add active class to clicked button and corresponding pane
+    const btn = document.querySelector(`[data-tab="${tabName}"]`);
+    if (btn) btn.classList.add('active');
+    const pane = document.getElementById(`tab-${tabName}`);
+    if (pane) pane.classList.add('active');
+}
 
 // Update status indicator
 function updateStatus(icon, text, color = '#4a5568') {
@@ -256,6 +263,10 @@ stopCameraBtn.addEventListener('click', () => {
     verificationResult.style.display = 'none';
     debugConsole.style.display = 'none';
 
+    // Reset normalized text editor flag
+    normalizedTextEditorSetup = false;
+    currentBaseUrl = null;
+
     resetCameraUI();
 });
 
@@ -264,16 +275,17 @@ captureBtn.addEventListener('click', async () => {
     try {
         captureBtn.style.display = 'none'; // Hide button during processing
 
+        // Reset normalized text editor for new capture
+        normalizedTextEditorSetup = false;
+        currentBaseUrl = null;
+
         // Hide previous results and reset to cropped image tab
         textResult.style.display = 'none';
         hashResult.style.display = 'none';
         verificationResult.style.display = 'none';
 
-        // Reset tabs to show captured image first
-        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-        document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
-        document.querySelector('[data-tab="captured"]').classList.add('active');
-        document.getElementById('tab-captured').classList.add('active');
+        // Start at captured image tab (will advance as pipeline progresses)
+        switchToTab('captured');
 
         // Capture the image FIRST (shutter action)
         updateStatus('📸', 'Capturing...', '#667eea');
@@ -392,11 +404,13 @@ captureBtn.addEventListener('click', async () => {
         const rawText = bestResult.data.text;
         console.log('Raw OCR Text:', rawText);
 
-        // Display extracted text
+        // Display extracted text and switch to extracted tab
         extractedText.textContent = rawText;
+        switchToTab('extracted');
 
         // Extract verification URL (using app-logic.js)
         const { url: baseUrl, urlLineIndex } = extractVerificationUrl(rawText);
+        currentBaseUrl = baseUrl; // Store for re-verification when user edits normalized text
         debugLog(`Base URL: ${baseUrl.substring(0, 40)}...`);
         console.log('Base URL:', baseUrl);
 
@@ -410,7 +424,9 @@ captureBtn.addEventListener('click', async () => {
         debugLog(`Normalized: ${normalized.length} chars`);
         console.log('Normalized Text:', normalized);
 
-        normalizedText.textContent = normalized;
+        // Display normalized text and switch to normalized tab
+        normalizedText.value = normalized;
+        switchToTab('normalized');
 
         // Generate SHA-256 hash
         updateStatus('🔐', 'Generating hash...', '#ed8936');
@@ -504,6 +520,9 @@ captureBtn.addEventListener('click', async () => {
         // Scroll to bottom to show verification result
         verificationResult.scrollIntoView({ behavior: 'smooth', block: 'end' });
 
+        // Enable manual editing of normalized text with auto re-verification
+        setupNormalizedTextEditor();
+
     } catch (error) {
         console.error('Error processing image:', error);
         progressBar.style.display = 'none';
@@ -515,6 +534,45 @@ captureBtn.addEventListener('click', async () => {
 
 // rotateCanvas(), extractVerificationUrl(), extractCertText(), hashMatchesUrl(), buildVerificationUrl(), fetchVerificMeta() are loaded from app-logic.js
 // normalizeText() and sha256() are loaded from normalize.js
+
+// Setup event listener for manual editing of normalized text
+let normalizedTextEditorSetup = false; // Track if event listener already added
+function setupNormalizedTextEditor() {
+    // Only set up once per capture to avoid duplicate listeners
+    if (normalizedTextEditorSetup) return;
+    normalizedTextEditorSetup = true;
+
+    let debounceTimer = null;
+
+    normalizedText.addEventListener('input', async () => {
+        // Debounce to avoid re-verifying on every keystroke
+        clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(async () => {
+            try {
+                const editedText = normalizedText.value;
+                console.log('User edited normalized text, re-hashing and re-verifying...');
+
+                // Generate new SHA-256 hash
+                const hash = await sha256(editedText);
+                console.log('New SHA-256 Hash:', hash);
+                hashValue.textContent = hash;
+
+                // Build full verification URL
+                if (currentBaseUrl) {
+                    const fullVerificationUrl = buildVerificationUrl(currentBaseUrl, hash);
+                    console.log('New Verification URL:', fullVerificationUrl);
+
+                    // Re-verify
+                    await verifyAgainstClaimedUrl(fullVerificationUrl, hash);
+                } else {
+                    console.warn('No base URL available for re-verification');
+                }
+            } catch (error) {
+                console.error('Error re-verifying edited text:', error);
+            }
+        }, 500); // Wait 500ms after user stops typing
+    });
+}
 
 // Verify against the claimed URL (returns status code for retry logic)
 async function verifyAgainstClaimedUrl(claimedUrl, computedHash) {
@@ -529,6 +587,9 @@ async function verifyAgainstClaimedUrl(claimedUrl, computedHash) {
         verificationUrl.textContent = '';
         verificationStatus.classList.add('not-found');
         console.log('Hash mismatch: computed hash not in claimed URL');
+
+        // Show the tabs again if they were hidden (user may want to edit)
+        textResult.style.display = 'block';
 
         // Show visual overlay on video
         showOverlay('red', 'FAILS VERIFICATION');
@@ -546,6 +607,10 @@ async function verifyAgainstClaimedUrl(claimedUrl, computedHash) {
             verificationStatus.textContent = `❌ NOT FOUND - URL returned status ${response.status}`;
             verificationStatus.classList.add('not-found');
             console.log(`Verification failed: HTTP ${response.status}`);
+
+            // Show the tabs again if they were hidden (user may want to edit)
+            textResult.style.display = 'block';
+
             showOverlay('red', 'FAILS VERIFICATION');
             return { status: response.status };
         }
@@ -560,6 +625,10 @@ async function verifyAgainstClaimedUrl(claimedUrl, computedHash) {
             verificationStatus.textContent = `❌ ${status}`;
             verificationStatus.classList.add('not-found');
             console.log(`Verification failed: response status is "${status}"`);
+
+            // Show the tabs again if they were hidden (user may want to edit)
+            textResult.style.display = 'block';
+
             showOverlay('red', status);
             return { status: 'NOT_OK', body: status };
         }
@@ -568,6 +637,10 @@ async function verifyAgainstClaimedUrl(claimedUrl, computedHash) {
         verificationStatus.textContent = '✅ VERIFIED - Certification confirmed';
         verificationStatus.classList.add('verified');
         showOverlay('green', 'VERIFIED');
+
+        // Hide the multi-tab div when verification succeeds
+        textResult.style.display = 'none';
+
         return { status: 200, body: 'OK' };
 
     } catch (error) {
@@ -575,6 +648,10 @@ async function verifyAgainstClaimedUrl(claimedUrl, computedHash) {
         console.error('Could not fetch URL:', error);
         verificationStatus.textContent = `❌ CANNOT VERIFY - Network error or CORS restriction`;
         verificationStatus.classList.add('not-found');
+
+        // Show the tabs again if they were hidden (user may want to edit)
+        textResult.style.display = 'block';
+
         showOverlay('red', 'FAILS VERIFICATION');
         return { status: 'NETWORK_ERROR', error };
     }

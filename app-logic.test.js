@@ -154,12 +154,12 @@ https://example.com
 
         it('should throw error if no text found', () => {
             const rawText = '';
-            expect(() => extractVerificationUrl(rawText)).toThrow('No text found in image');
+            expect(() => extractVerificationUrl(rawText)).toThrow('No verification URL found (looking for verify: or https)');
         });
 
         it('should throw error if only whitespace', () => {
             const rawText = '   \n  \n  ';
-            expect(() => extractVerificationUrl(rawText)).toThrow('No text found in image');
+            expect(() => extractVerificationUrl(rawText)).toThrow('No verification URL found (looking for verify: or https)');
         });
 
         it('should throw error if last line does not start with https or verify:', () => {
@@ -167,7 +167,7 @@ https://example.com
 This is not a URL`;
 
             expect(() => extractVerificationUrl(rawText))
-                .toThrow('Bottom line inside the marks must be a verification URL starting with verify: or https');
+                .toThrow('No verification URL found (looking for verify: or https)');
         });
 
         it('should accept HTTPS in any case', () => {
@@ -183,7 +183,7 @@ HTTPS://EXAMPLE.COM`;
 http://example.com`;
 
             expect(() => extractVerificationUrl(rawText))
-                .toThrow('Bottom line inside the marks must be a verification URL starting with verify: or https');
+                .toThrow('No verification URL found (looking for verify: or https)');
         });
 
         it('should accept verify: URLs', () => {
@@ -209,6 +209,22 @@ VERIFY:EXAMPLE.COM/PATH`;
 
             const result = extractVerificationUrl(rawText);
             expect(result.url).toBe('VERIFY:EXAMPLE.COM/PATH');
+        });
+
+        it('should discard OCR garbage below verify: line (real-world example)', () => {
+            const rawText = `Unseen University |
+Ankh-Morpork
+Bachelor of Thaumatology
+Awarded to: Ponder Stibbons
+Date: Grune 23, A.M. 2024
+Archchancellor: Mustrum Ridcully
+Registrar: Rincewind (Wizzard)
+verify:paul-hammant.github.io/verific/c
+ee a SE AA i Aa A A Re Xe NE Ne ea`;
+
+            const result = extractVerificationUrl(rawText);
+            expect(result.url).toBe('verify:paul-hammant.github.io/verific/c');
+            expect(result.urlLineIndex).toBe(7);
         });
     });
 
