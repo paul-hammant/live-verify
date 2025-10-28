@@ -74,7 +74,7 @@ Employment and education verification on a CV/resume are an ideal use case for O
 
 Key criteria: Personal claim with an expectation of privacy in the public record. Each is one-off. A need to be cheaply verifiable for decades.
 
-**What's printed on the CV:**
+**What would be on the CV:**
 
 ```
 ┌─────────────────────────────────┐
@@ -82,14 +82,14 @@ Key criteria: Personal claim with an expectation of privacy in the public record
 │  Edinburgh University           │
 │  Bachelor of Computer Science   │
 │  First Class Honours            │
-│  Awarded: June 2020             │
+│  Awarded: July 2020             │
 │  To: Tim Berners-Lee, Junior    │
 │  verify:degrees.ed.ac.uk        │
 │                                 │
 └─────────────────────────────────┘
 ```
 
-**Critical detail:** The **hash is NOT printed** on the CV. Only the base URL appears.
+The **hash is NOT printed** on the CV. It's a function of all the other text so it would be impossible to do so. Only the base URL appears.  As it happens the above fits a templater that mal-intending groups could brute-force "Tim Berners-Lee Junior" is replaceable for other names toward a SHA-256 calc and a HTTP-GET on degrees.ed.ac.uk. Someone could quickly write Python to test thousands a second (notwithstanding rate limits).  If these facts were valuable enough a reference number would be inserted too, or maybe random chars that are OCR-able (for something that's way more valuable than "I've a degree").
 
 **Interview workflow:**
 
@@ -126,8 +126,6 @@ All share the key criteria: personal claims with privacy expectations, one-off d
 
 ### Why QR Codes FAIL for Resume/CVs
 
-TODO: shorten
-
 **1. Professionalism / Visual Clutter**
 
 A CV might have 5-10 verifiable claims:
@@ -145,27 +143,13 @@ The interviewer can't read "Edinburgh University First Class Honours" by looking
 
 QR codes must contain either a link to the same claim on an authentic site, or the entire claim with a larger amount of pixels needed and a means to double check that with a remote service run by the degree issuing authority (the Uni/college). Do you have to log in to that site to see the same details? Log in after someone registering an account of set of accounts to use, perhaps. This all has a common challenge: how to guarantee the larger data collection isn't scrapeable.
 
-**3. Tampering**
+**3. Tampering / Forging**
 
-- Easy to print a QR code that points to `https://fake-university.com/fake-endpoint`
-- With OCR-to-hash, the text must match the hash computation
-- Can't fake "Edinburgh University" text and have it verify against MIT's endpoint, or vice versa
-
-**4. Format Evolution**
-
-- If university changes URL structure, all CVs with hardcoded QR URLs break
-- With OCR-to-hash, the base URL can change (re-print CV), but old CVs still work if university maintains redirects
-- Better yet: candidate keeps "official transcript letter" with verification marks; can reprint CV as needed
-
-**5. Multiple Claims**
-
-- Each claim needs independent verification (one might be revoked while others valid)
-- QR approach: 5 ugly QR codes
-- OCR approach: 5 bordered sections with readable text, each with their own `verify:` line
+It is easy to deploy a QR code that points to `https://fake-edinburgh-university.com/degrees/some/plausable/path/to/certiciate.html` and the user clicking on the link to take you to that URL might miss that the domain is inauthentic however well styled the content is.
 
 ## The MedPro PPE Case: Anti-Tampering for B2B Certifications
 
-The MedPro fraud case (£122m UK government PPE contract, fake Intertek certifications) demonstrates OCR-to-hash's strength in **preventing issuer impersonation** rather than protecting privacy.
+The MedPro fraud case (£122m UK government PPE contract, fake Intertek certification) demonstrates OCR-to-hash's strength in **preventing issuer impersonation** rather than protecting privacy.
 
 Key criteria: Produce/company have no expectation of privacy. Many thousands in production run. Certification ahead of bulk shipment - that needs to be verifiable for years.
 
