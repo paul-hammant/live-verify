@@ -489,6 +489,52 @@ Click the app title to see build timestamp.
 
 Note: The document shows `verify:your-org.com/c` but the app converts this to `https://your-org.com/c/{hash}` when fetching.
 
+## Development Guidelines
+
+### No Defensive Coding for Dependencies
+
+This project enforces a **fail-loudly** philosophy for dependencies. We DO NOT use defensive coding patterns like:
+
+```javascript
+// ❌ BAD - Silent fallbacks
+try {
+    const psl = require('psl');
+} catch (e) {
+    console.warn('psl not available, using fallback');
+}
+
+// ❌ BAD - typeof checks
+if (typeof require !== 'undefined') {
+    const psl = require('psl');
+}
+
+// ❌ BAD - || fallbacks
+const psl = window.psl || require('psl');
+```
+
+Instead, dependencies MUST be available or the app fails:
+
+```javascript
+// ✅ GOOD - Fail loudly if psl not available
+const psl = (typeof window !== 'undefined' && window.psl) || require('psl');
+```
+
+**Why:**
+- Silent failures in production are worse than loud failures in development
+- Missing dependencies should be caught during build/test, not in production
+- Defensive fallbacks hide configuration problems
+
+**How we enforce this:**
+- ESLint rules (`eslint.config.js`) forbid defensive patterns
+- Run `npm run lint` to check for violations
+- CI should fail if linting fails
+
+**How we handle browser vs Node.js:**
+- Browser: Load from CDN (see `<script>` tags in `index.html`)
+- Node.js tests: `npm install` provides dependencies
+- Both environments get the same code - no fallbacks
+
+
 ## Trust Model
 
 The app verifies:

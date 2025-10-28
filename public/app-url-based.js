@@ -596,7 +596,13 @@ async function verifyAgainstClaimedUrl(claimedUrl, computedHash) {
         return { status: 'HASH_MISMATCH' };
     }
 
-    verificationUrl.textContent = `Claimed URL: ${claimedUrl}`;
+    // Extract domain/authority for display
+    // Uses extractDomainAuthority() from domain-authority.js
+    // In browser: falls back to full hostname (psl library not bundled)
+    // In tests: uses psl library to strip subdomains correctly
+    const authority = extractDomainAuthority(claimedUrl);
+
+    verificationUrl.innerHTML = `Verifying with: <strong>${authority}</strong><br><small style="color: #718096;">${claimedUrl}</small>`;
 
     // Fetch the URL and verify response
     try {
@@ -661,9 +667,9 @@ async function verifyAgainstClaimedUrl(claimedUrl, computedHash) {
         }
 
         // Success: 200 status + "OK" in body
-        verificationStatus.textContent = '✅ VERIFIED - Certification confirmed';
+        verificationStatus.innerHTML = `✅ VERIFIED<br><small style="font-size: 0.9rem; font-weight: normal;">Confirmed by: <strong>${authority}</strong></small>`;
         verificationStatus.classList.add('verified');
-        showOverlay('green', 'VERIFIED');
+        showOverlay('green', `VERIFIED by ${authority}`);
 
         // Hide the multi-tab div when verification succeeds
         textResult.style.display = 'none';

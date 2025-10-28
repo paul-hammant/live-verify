@@ -1,0 +1,75 @@
+/*
+    Copyright (C) 2025, Paul Hammant
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as
+    published by the Free Software Foundation, either version 3 of the
+    License, or (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
+// Import psl library - MUST be available or this will fail
+// In browser: loaded from CDN (see index.html <script> tag)
+// In Node.js tests: available via npm install
+const psl = (typeof window !== 'undefined' && window.psl) || require('psl');
+
+/**
+ * Extract the registrable domain (domain + public suffix) from a URL.
+ * This strips off subdomains to show the core domain authority.
+ * Examples:
+ * - degrees.ed.ac.uk → ed.ac.uk (strips "degrees" subdomain)
+ * - edinburgh.ac.uk--___dir.github.io → github.io (strips GitHub Pages subdomain)
+ * - foobar.com.br → foobar.com.br (preserves country-code TLD)
+ * - api.example.com → example.com (strips "api" subdomain)
+ *
+ * Uses the Public Suffix List to correctly identify registrable domains
+ * across different TLD patterns (.com, .co.uk, .ac.uk, .com.br, etc.)
+ *
+ * @param {string} url - The URL to extract domain from
+ * @returns {string} The registrable domain that should be displayed to the user
+ * @throws {Error} If URL is invalid
+ */
+function extractDomainAuthority(url) {
+    const urlObj = new URL(url); // Throws on invalid URL - let it fail loudly
+    const hostname = urlObj.hostname;
+
+    // Handle IP addresses - return as-is
+    if (/^(\d{1,3}\.){3}\d{1,3}$/.test(hostname)) {
+        return hostname;
+    }
+
+    const parsed = psl.parse(hostname);
+
+    // psl.parse returns an object with:
+    // - domain: the registrable domain (e.g., "ed.ac.uk", "example.com")
+    // - subdomain: any subdomain parts (e.g., "degrees", "www")
+    // - listed: whether the TLD is in the public suffix list
+    //
+    // Special handling for GitHub Pages and similar services:
+    // *.github.io is in the public suffix list, so myproject.github.io
+    // is treated as a "registrable domain" by psl.
+    // But we want to show just "github.io" as the authority.
+    if (parsed.domain && parsed.domain.endsWith('.github.io')) {
+        return 'github.io';
+    }
+
+    // For other cases, return the registrable domain
+    if (parsed.domain) {
+        return parsed.domain;
+    }
+
+    // Fallback for localhost and other special cases
+    return hostname;
+}
+
+// Export for both Node.js (CommonJS) and browser (bundled)
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = { extractDomainAuthority };
+}

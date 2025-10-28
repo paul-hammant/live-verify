@@ -39,7 +39,13 @@ A **claim** is any assertion printed on a physical document  (or up on a screen)
 4. Computes SHA-256 hash of the claim (one-way hash - important concept): `fb92e9f3086212ed68adbec9e9b32767a378cdd198b9d58b34f3c8718dbb9afe`
 5. Checks the hash on the website indicated - https://example.com/hashes/fb92e9f3086212ed68adbec9e9b32767a378cdd198b9d58b34f3c8718dbb9afe is the one for the above
 6. That URL existing and perhaps a text or JSON payload of "OK" is confirmation that the claim is verified.
-6. Shows ✅ green "VERIFIED" or ❌ red "FAILS VERIFICATION" overlay or other affordance
+7. Shows ✅ green "VERIFIED" or ❌ red "FAILS VERIFICATION" overlay or other affordance
+
+**Critical transparency requirement:** The verification app MUST clearly display which domain/authority verified the claim. Not just "VERIFIED" but "VERIFIED by degrees.ed.ac.uk" or "VERIFIED by intertek.com". This is essential for trust - users need to see immediately who is vouching for the claim.
+
+**Domain complexity:** Domains vary globally - `ed.ac.uk` is a domain (UK academic), `degrees.ed.ac.uk` is a subdomain (different authority), `foobar.com.br` is a domain (Brazil), `example.co.uk` is a domain. The verifying authority should be displayed as the full hostname from the verification URL (e.g., `degrees.ed.ac.uk`, not truncated to `ed.ac.uk`).
+
+**Optional identity standard:** A future standard like `https://www.ed.ac.uk/~shortWhoIsThisPlainText` could provide human-readable authority information, but for now, showing the full hostname provides basic transparency about who is performing the verification.
 
 The system allows anyone to verify these printed claims without requiring access to the issuer's internal databases.  It will work if you're scanning the same on a laptop/tablet or bigger screen, though you risk [moiré patterns](https://en.wikipedia.org/wiki/Moir%C3%A9_pattern).
 

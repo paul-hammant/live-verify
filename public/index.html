@@ -23,6 +23,7 @@
     <title>Verific: OCR to hash verifier</title>
     <link rel="stylesheet" href="styles.css">
     <script src='https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/psl@1.15.0/dist/psl.umd.cjs'></script>
     <script>
       window.cvReady = new Promise(resolve => {
         window.__onCvReady = resolve;
@@ -127,6 +128,7 @@
     <script src="cv/detectSquares.js"></script>
     <script src="normalize.js"></script>
     <script src="app-logic.js"></script>
+    <script src="domain-authority.js"></script>
     <script src="app-url-based.js"></script>
 </body>
 </html>

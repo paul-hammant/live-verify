@@ -4,7 +4,8 @@ module.exports = {
     '**/ocr-hash.test.js',
     '**/cv-geometry.test.js',
     '**/detectSquares.node.test.js',
-    '**/app-logic.test.js'
+    '**/app-logic.test.js',
+    '**/domain-authority.test.js'
   ],
   testPathIgnorePatterns: [
     '/node_modules/',

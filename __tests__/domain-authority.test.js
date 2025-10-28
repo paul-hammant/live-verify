@@ -1,0 +1,166 @@
+/*
+    Copyright (C) 2025, Paul Hammant
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as
+    published by the Free Software Foundation, either version 3 of the
+    License, or (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
+const { extractDomainAuthority } = require('../public/domain-authority.js');
+
+describe('extractDomainAuthority', () => {
+    describe('GitHub Pages subdomain patterns', () => {
+        test('should strip inauthentic edinburgh uni URL/domaion (subdomain) to show github.io', () => {
+            expect(extractDomainAuthority('https://edinburgh.ac.uk--___dir.github.io/verify/abc123'))
+                .toBe('github.io');
+        });
+
+        test('should strip simple GitHub Pages subdomai as no legit verification system would be utilizing GH-P or aliken', () => {
+            expect(extractDomainAuthority('https://myproject.github.io/path'))
+                .toBe('github.io');
+        });
+
+        test('should strip complex GitHub Pages subdomain', () => {
+            expect(extractDomainAuthority('https://org-repo--branch.github.io'))
+                .toBe('github.io');
+        });
+    });
+
+    describe('UK academic domains (.ac.uk)', () => {
+        test('should strip subdomain to show ed.ac.uk', () => {
+            expect(extractDomainAuthority('https://degrees.ed.ac.uk/verify/hash123'))
+                .toBe('ed.ac.uk');
+        });
+
+        test('should preserve root UK academic domain', () => {
+            expect(extractDomainAuthority('https://ed.ac.uk/verify'))
+                .toBe('ed.ac.uk');
+        });
+
+        test('should strip deep subdomain to show registrable domain', () => {
+            expect(extractDomainAuthority('https://api.degrees.ed.ac.uk/verify'))
+                .toBe('ed.ac.uk');
+        });
+    });
+
+    describe('Country-code TLDs', () => {
+        test('should handle Brazilian domain (.com.br)', () => {
+            expect(extractDomainAuthority('https://foobar.com.br/certify'))
+                .toBe('foobar.com.br');
+        });
+
+        test('should handle UK commercial domain (.co.uk)', () => {
+            expect(extractDomainAuthority('https://example.co.uk/verify'))
+                .toBe('example.co.uk');
+        });
+
+        test('should handle Australian domain (.com.au)', () => {
+            expect(extractDomainAuthority('https://example.com.au/verify'))
+                .toBe('example.com.au');
+        });
+
+        test('should strip subdomain of country-code TLD', () => {
+            expect(extractDomainAuthority('https://api.example.co.uk/verify'))
+                .toBe('example.co.uk');
+        });
+    });
+
+    describe('Standard domains', () => {
+        test('should handle simple .com domain', () => {
+            expect(extractDomainAuthority('https://intertek.com/certifications/hash'))
+                .toBe('intertek.com');
+        });
+
+        test('should handle .edu domain', () => {
+            expect(extractDomainAuthority('https://mit.edu/degrees/verify'))
+                .toBe('mit.edu');
+        });
+
+        test('should strip subdomain of standard domain', () => {
+            expect(extractDomainAuthority('https://api.example.com/verify'))
+                .toBe('example.com');
+        });
+
+        test('should strip www subdomain', () => {
+            expect(extractDomainAuthority('https://www.example.com/verify'))
+                .toBe('example.com');
+        });
+    });
+
+    describe('Edge cases', () => {
+        test('should handle localhost', () => {
+            expect(extractDomainAuthority('http://localhost:8000/verify'))
+                .toBe('localhost');
+        });
+
+        test('should handle IP address', () => {
+            expect(extractDomainAuthority('http://192.168.1.1/verify'))
+                .toBe('192.168.1.1');
+        });
+
+        test('should handle domain with port', () => {
+            expect(extractDomainAuthority('https://example.com:8443/verify'))
+                .toBe('example.com');
+        });
+
+        test('should strip deeply nested subdomain', () => {
+            expect(extractDomainAuthority('https://a.b.c.d.example.com/verify'))
+                .toBe('example.com');
+        });
+
+        test('should handle URL with query parameters', () => {
+            expect(extractDomainAuthority('https://example.com/verify?hash=abc123'))
+                .toBe('example.com');
+        });
+
+        test('should handle URL with fragment', () => {
+            expect(extractDomainAuthority('https://example.com/verify#section'))
+                .toBe('example.com');
+        });
+
+        test('should throw on invalid URL', () => {
+            expect(() => extractDomainAuthority('not-a-valid-url'))
+                .toThrow();
+        });
+    });
+
+    describe('Real-world certification bodies', () => {
+        test('should handle Intertek domain', () => {
+            expect(extractDomainAuthority('https://intertek.com/certifications/abc123'))
+                .toBe('intertek.com');
+        });
+
+        test('should strip subdomain of Intertek', () => {
+            expect(extractDomainAuthority('https://certifications.intertek.com/verify/abc123'))
+                .toBe('intertek.com');
+        });
+
+        test('should strip university subdomain', () => {
+            expect(extractDomainAuthority('https://registrar.stanford.edu/verify'))
+                .toBe('stanford.edu');
+        });
+    });
+
+    describe('verify: to https:// conversion scenarios', () => {
+        test('should handle URL after verify: conversion', () => {
+            // After converting "verify:ed.ac.uk/degrees" to "https://ed.ac.uk/degrees/hash"
+            expect(extractDomainAuthority('https://ed.ac.uk/degrees/abc123'))
+                .toBe('ed.ac.uk');
+        });
+
+        test('should strip subdomain after verify: conversion', () => {
+            // After converting "verify:degrees.ed.ac.uk" to "https://degrees.ed.ac.uk/hash"
+            expect(extractDomainAuthority('https://degrees.ed.ac.uk/abc123'))
+                .toBe('ed.ac.uk');
+        });
+    });
+});
