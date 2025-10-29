@@ -519,6 +519,87 @@ For detailed analysis of pricing models, implementation costs, the Bloomberg-sty
 
 This section documents all known and anticipated applications of OCR-to-hash verification of physical documents. Any combination of these techniques with OCR, hashing, computer vision registration marks, URL-based verification, and normalization is hereby disclosed as of **January 2025**.
 
+### Additional Business & Commerce
+
+| Use Case                                           | Volume vs Till Receipts | Retention Period                | Personal Data                                                  | OCR-to-hash vs QR code |
+|----------------------------------------------------|-------------------------|---------------------------------|----------------------------------------------------------------|--------------------|
+| Master service agreements and SOWs                 | Medium                  | Contract term + 7-10 years      | Parties, signatories                                           | **OCR-to-hash strong case:** Per-page hashes stop post-signature edits; change orders verifiable. |
+| Purchase orders and delivery notes                 | Large                   | Fiscal year + 7 years           | Buyer/seller, order IDs                                       | **OCR-to-hash:** Three-way match evidence; tamper-evident GRNs/packing slips. |
+| Board resolutions and written consents             | Small                   | Permanent                       | Directors, resolution text                                     | **OCR-to-hash:** Law firms host; diligence-ready without public registries. |
+| Escrow and closing statements (M&A/real estate)    | Small                   | Permanent/transaction life      | Parties, settlement figures                                    | **OCR-to-hash:** Verifiable closing packets without revealing contents. |
+| Non-disclosure agreements                          | Large                   | Term + survival period          | Parties, scope                                                | **OCR-to-hash:** Version-locked NDAs across counterparties; no QR clutter. |
+| Franchise agreements and disclosure documents      | Small                   | Term + statutory retention      | Franchisor/franchisee, state addenda                          | **OCR-to-hash:** Ensures latest FDD/addenda in multi-state contexts. |
+
+### Additional Manufacturing & Supply Chain
+
+| Use Case                                               | Volume vs Till Receipts | Retention Period                   | Personal Data                                         | OCR-to-hash vs QR code |
+|--------------------------------------------------------|-------------------------|------------------------------------|-------------------------------------------------------|--------------------|
+| Bills of lading and sea waybills (short-form page)     | Medium                  | Shipment + 7-10 years              | Shipper/consignee names, ports, vessel               | **OCR-to-hash strong case:** Front-page critical fields verifiable at terminals. |
+| Certificates of origin and preferential tariff docs     | Medium                  | Shipment + 7-10 years              | Exporter, origin criteria, chamber of commerce       | **OCR-to-hash:** Brokers/customs verify without exposing line items. |
+| Dangerous goods declarations (IMO/ICAO short-form)      | Small                   | Shipment + 5-10 years              | Shipper name, UN numbers, class                      | **OCR-to-hash:** Port/airport safety checks; tamper-evident declarations. |
+| Weight tickets and scale calibration                    | Medium                  | Shipment + 3-7 years               | Scale ID, operator                                   | **OCR-to-hash:** Roadside verification by enforcement; prevents altered tickets. |
+
+### Additional Product Certifications & Compliance
+
+| Use Case                                                                      | Volume vs Till Receipts | Retention Period                     | Personal Data                                          | OCR-to-hash vs QR code |
+|-------------------------------------------------------------------------------|-------------------------|--------------------------------------|--------------------------------------------------------|--------------------|
+| Manufacturer self-declarations of conformity (DoC)                            | Small                   | Product lifecycle (5-15 years)       | Manufacturer, model/part numbers, standards           | **OCR-to-hash:** Human-readable DoC; domain binding verifies issuer; tamper-evident vs QR redirects. |
+| Calibration certificates (instruments, test rigs)                             | Medium                  | 3-10 years (audit cycles)            | Device ID, technician, facility                       | **OCR-to-hash:** Field verification by auditors; integrity without exposing readings. |
+| Hazardous materials SDS summary sheets                                        | Medium                  | Active use + 30 years                | Product, hazard classes, contact                      | **OCR-to-hash:** Onsite binders verifiable where QR scans are impractical. |
+
+### Additional Professional & Educational Qualifications
+
+| Use Case                                           | Volume vs Till Receipts | Retention Period                | Personal Data                                                  | OCR-to-hash vs QR code |
+|----------------------------------------------------|-------------------------|---------------------------------|----------------------------------------------------------------|--------------------|
+| Bar admission and good-standing letters            | Very Small              | Current + 2-5 years             | Attorney name, bar number, jurisdiction                       | **OCR-to-hash:** Courts/agencies verify instantly; deters forged standing letters. |
+| Teaching reciprocity/compact credentials           | Very Small              | License term                     | Teacher name, license IDs across states/provinces             | **OCR-to-hash:** Multi-state portability; state boards host endpoints. |
+| Registrar/residency status letters                 | Medium                  | 1-4 years                        | Student name, status, term                                    | **OCR-to-hash:** Employers/insurers verify eligibility letters without portals. |
+
+### Additional Financial Crime & Compliance
+
+| Use Case                                           | Volume vs Till Receipts | Retention Period                | Personal Data                                                  | OCR-to-hash vs QR code |
+|----------------------------------------------------|-------------------------|---------------------------------|----------------------------------------------------------------|--------------------|
+| Sanctions/restricted party screening attestations  | Large                   | 5-7 years                       | Company, screening date/time, dataset versions                 | **OCR-to-hash:** Link attestations to shipments/deals; tamper-evident without exposing lists. |
+| Bank proof-of-funds letters                         | Medium                  | 1 year (time-bound)             | Account holder name (no numbers)                               | **OCR-to-hash strong case:** Real estate/private placements; prevents forged PoF letters. |
+
+### Additional Insurance and Claims
+
+| Use Case                                               | Volume vs Till Receipts | Retention Period                   | Personal Data                                         | OCR-to-hash vs QR code |
+|--------------------------------------------------------|-------------------------|------------------------------------|-------------------------------------------------------|--------------------|
+| Surety bonds and performance guarantees                | Small                   | Bond term + 10 years               | Contractor name, project, bond number                 | **OCR-to-hash strong case:** Owners verify instantly; deters fake bonds. |
+| Claims correspondence and EOBs                         | Large                   | Claim term + 7-10 years            | Claimant, provider                                    | **OCR-to-hash:** Prevents tampering in appeals; field verification by auditors. |
+| Vehicle registrations and inspection reports           | Large                   | Registration cycle + 3-7 years     | Owner name, VIN                                       | **OCR-to-hash:** Roadside verification without backend queries; paper remains human-readable. |
+| Contractor licensing and bonding certificates          | Medium                  | License term + 7 years             | Contractor, license number, bond                       | **OCR-to-hash:** Bid compliance checks; tamper-evident field copies. |
+| Film completion bonds (additional)                     | Very Small              | Film lifecycle + 10 years          | Producer, bond amount, guarantor                       | **OCR-to-hash strong case:** Financing due diligence; deters forged bonds. |
+| Protection & Indemnity (P&I) club certificates         | Small                   | Policy term + 10-20 years          | Vessel, owner, IMO number                              | **OCR-to-hash strong case:** Port state control verification; prevents fake P&I. |
+| Independent adjuster field inspection reports          | Medium                  | Claim term + 10 years              | Adjuster, claimant, property/vehicle details           | **OCR-to-hash strong case:** Tamper-evident assessments; firm domain binding. |
+| Chain-of-custody forms                                 | Medium                  | Claim term + 10 years              | Claimant, handler, timestamps                          | **OCR-to-hash:** Prevents alteration of custody steps. |
+
+### Immigration, Civic, and Elections
+
+| Use Case                                               | Volume vs Till Receipts | Retention Period                   | Personal Data                                         | OCR-to-hash vs QR code |
+|--------------------------------------------------------|-------------------------|------------------------------------|-------------------------------------------------------|--------------------|
+| Consular letters and attestations                      | Small                   | Case + 5-10 years                  | Applicant name, case identifiers                      | **OCR-to-hash:** Embassy/consulate domain binding; prevents forged letters. |
+| Visa fee receipts and biometrics appointments           | Large                   | 3-7 years                          | Applicant name, receipt IDs                           | **OCR-to-hash:** Deters duplicate-fee fraud; kiosk/desk verification. |
+| Voter registration confirmations                        | Medium                  | Election cycle + 2-4 years         | Voter name, precinct                                 | **OCR-to-hash:** Election offices host; quick precinct verification. |
+| Poll worker appointment and training completion         | Medium                  | Election cycle + 2-4 years         | Worker name, training ID                              | **OCR-to-hash:** Onsite verification by supervisors; deters impersonation. |
+| Ballot chain-of-custody transfer forms                  | Small                   | Election cycle + 2-4 years         | Custodians, timestamps                                | **OCR-to-hash:** Per-transfer page verification; prevents substitution/tampering. |
+| Global Entry/Trusted Traveler support letters (short)   | Medium                  | 5 years                            | Member name, KTN                                     | **OCR-to-hash:** Field verification; privacy-preserving short-form text. |
+
+### Real Estate and Land Records
+
+| Use Case                                               | Volume vs Till Receipts | Retention Period                   | Personal Data                                         | OCR-to-hash vs QR code |
+|--------------------------------------------------------|-------------------------|------------------------------------|-------------------------------------------------------|--------------------|
+| Recording page abstracts (short-form)                   | Small                   | Permanent                          | Parties, instrument references                        | **OCR-to-hash:** Verifiable abstracts for long instruments; recorder hosts endpoint. |
+| HOA bylaws and rule revisions                           | Small                   | Permanent                          | HOA name, community                                   | **OCR-to-hash:** Current-version verification for disputes; no portal needed. |
+
+### Technology and Software
+
+| Use Case                                               | Volume vs Till Receipts | Retention Period                   | Personal Data                                         | OCR-to-hash vs QR code |
+|--------------------------------------------------------|-------------------------|------------------------------------|-------------------------------------------------------|--------------------|
+| SBOM attestation pages                                 | Small                   | Release lifecycle + 3-7 years      | Project, version                                      | **OCR-to-hash:** Release docs remain human-readable; cryptographic authenticity. |
+| Open source license compliance notices                  | Small                   | Release lifecycle + 3-7 years      | OEM, package list                                     | **OCR-to-hash:** Shipment-included notices verifiable offline; avoids QR redirection risks. |
+
 ### Product Certifications & Compliance
 
 | Use Case                                                                      | Volume vs Till Receipts | Retention Period                     | Personal Data                                          | OCR-to-hash vs QR code |
@@ -1825,6 +1906,73 @@ Infrastructure cost: ~$5 per million verifications (Cloudflare example).
 - **No central authority** - Each organization runs their own verification endpoint
 
 However, OCR accuracy may vary by language. Tesseract.js supports 100+ languages, but on-device AI models (2026+) will be even better.
+
+## Alternatives
+
+Established
+
+- PKI + digital signatures: X.509, PAdES/XAdES/CAdES for signed PDFs, CMS/PKCS#7. Very strong cryptographic authenticity, but requires issuer key management, user tooling, and often
+  heavyweight workflows.
+- PAdES: https://www.etsi.org/deliver/etsi_en/319100_319199/31914201/02.02.01_60/en_31914201v020201p.pdf
+- XAdES: https://www.etsi.org/technologies/xades
+- CAdES/CMS/PKCS#7: https://datatracker.ietf.org/doc/html/rfc5652
+- Barcodes/QR codes: GS1 (EAN/UPC/Datamatrix), PDF417 (IDs), QR for URLs. Great for high-volume machine reading; weak on human readability and often opaque (redirect risk).
+- Holograms and security printing: Microtext, UV inks, guilloches, foils. Physical anti-counterfeiting; costly, not cryptographic, still forgeable.
+- Tamper-evident seals and envelopes: Physical integrity indicators; not content-authenticating.
+- Time-stamping authorities (RFC 3161): Cryptographic time anchors; often paired with signatures.
+- RFC 3161: https://datatracker.ietf.org/doc/html/rfc3161
+- Certificate transparency/audit logs: Public logs for digital cert issuance; adjacent assurance for web trust.
+- Smartcards/ePassports (ICAO 9303): NFC + signed data groups; strong cryptographic identity at borders; requires hardware readers.
+- ICAO Doc 9303: https://www.icao.int/publications/pages/publication.aspx?docnum=9303
+- eIDAS/US ESIGN/UETA e-signature platforms: DocuSign/Adobe Sign; legal enforceability + audit trails; vendor lock-in and account-based verification.
+- eIDAS Regulation: https://digital-strategy.ec.europa.eu/en/policies/eidas-regulation
+- ESIGN (US): https://www.govinfo.gov/content/pkg/PLAW-106publ229/pdf/PLAW-106publ229.pdf
+- UETA (US uniform act): https://www.uniformlaws.org/committees/community-home?CommunityKey=2c04b76c-2b7d-4399-bf7b-38f8a6d44a3a
+
+Emerging/Scaling
+
+- Hash anchoring (public/managed): Independent timestamping and tamper evidence at scale by anchoring Merkle roots or event digests to durable ledgers.
+- Guardtime KSI (Keyless Signature Infrastructure): https://guardtime.com/
+  - National-scale deployments and government endorsements (e.g., Estonia); high-assurance integrity for records.
+  - Aggregates document hashes into Merkle trees with independent, verifiable calendars.
+  - No private signing keys per document; verification does not depend on issuer keys.
+  - Predictable costs and strong evidentiary posture for long-term audit trails.
+  - Operational model note: KSI runs with a small, centrally operated node set and a non-competitive validator market; acceptable where participating parties are cooperative and aligned (e.g., public-sector or consortium contexts), but distinct from open, permissionless consensus where there can be intense competition and speculative incentives to extract value from mere record exchange in the history‑retaining Merkle tree.
+- Hedera Hashgraph (HCS): https://hedera.com/ (Hedera Consensus Service topics for append-only attestations; high throughput, predictable fees, council governance)
+- Ethereum/Polygon anchoring: https://ethereum.org/en/developers/docs/ (calldata/Merkle roots; broad tooling; variable fees; privacy via hash-only)
+- Hyperledger notary/consortium: https://www.hyperledger.org/ (Fabric/Corda-style notary services; permissioned governance; enterprise controls)
+- Managed services (e.g., Guardtime KSI, OriginStamp): https://guardtime.com/ | https://originstamp.com/ (outsourced anchoring with SLAs; integration APIs)
+- W3C Verifiable Credentials + DIDs: Issuer-signed, holder-presented claims; selective disclosure and decentralized identifiers. Browser wallet adoption still maturing.
+- W3C VC Data Model: https://www.w3.org/TR/vc-data-model-2.0/
+- W3C Decentralized Identifiers (DIDs): https://www.w3.org/TR/did-core/
+- Selective disclosure signatures (BBS+, SD-JWT, zk-SNARKs): Prove predicates over claims without revealing raw data. Early but promising for privacy-preserving verification.
+- BBS+ (draft): https://identity.foundation/bbs-signature/draft-irtf-cfrg-bbs-signatures.html
+- SD-JWT (IETF): https://datatracker.ietf.org/doc/html/draft-ietf-oauth-selective-disclosure-jwt
+- SBOM attestation and supply-chain sigs: Sigstore/cosign, in-toto attestations, SLSA—cryptographically signed metadata for software artifacts; patterns extend to docs.
+- Sigstore/cosign: https://www.sigstore.dev/
+- in-toto: https://in-toto.io/
+- SLSA: https://slsa.dev/
+- On-device AI OCR + doc understanding: Phone NPUs enabling robust, private OCR for ornate documents; enables OCR-to-hash on harder layouts.
+- Apple ML/Apple Intelligence (overview): https://machinelearning.apple.com/
+- Google on-device Gemini (overview): https://blog.google/technology/ai/google-gemini-update/
+- NFC-secured labels: Tamper-detect and cryptographically signed NFC tags (NXP NTAG, EAL-certified chips). Strong anti-clone; requires NFC readers and key infrastructure.
+- NXP NTAG secure offerings: https://www.nxp.com/products/rfid-nfc/nfc-hf/ntag-for-tags-labels-and-papers:MC_53451
+
+### Versus OCR-to-hash
+
+Where OCR-to-hash fits
+- Human-readable, issuer-controlled, zero PII leakage (hash only), web-native, low-cost (static hosting), works with print flows, no keys for end users.
+
+Best-of-both hybrids
+- OCR-to-hash + timestamp anchoring (RFC 3161 or blockchain Merkle roots) for independent time/immutability.
+- OCR-to-hash + verifiable credentials for cryptographic signatures alongside human-friendly print.
+- OCR-to-hash + QR/NFC for speed while retaining a human-verifiable pathway.
+
+When to choose what
+- High legal weight/non-repudiation: Use digital signatures (PAdES) and/or VCs; add OCR-to-hash for human inspection and offline fallback.
+- High-volume scanning/operations: Use QR/barcodes; add OCR-to-hash to keep a human-verifiable pathway and reduce redirect spoofing.
+- Field verification with privacy: OCR-to-hash shines—no PII transmission, works with phone camera, issuer hosts a simple “OK/REVOKED” endpoint.
+- Anti-clone physical goods: NFC-secured labels or serialized barcodes; optionally pair with printed OCR-to-hash declarations for paperwork.
 
 ## Get Started
 
