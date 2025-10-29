@@ -41,9 +41,9 @@ Key criteria: Business transaction with no privacy expectation. One-off transact
 
 1. Employee scans receipt with phone app
 2. App OCRs full receipt text (items, subtotal, VAT/sales tax, total, date, transaction ID)
-3. App normalizes text, computes hash: `a7f3e92b...`
+3. App normalizes text (see [Technical_Concepts.md: Text Normalization](Technical_Concepts.md#text-normalization)), computes hash: `a7f3e92b...` using SHA-256 (see [Technical_Concepts.md: Hash Algorithms](Technical_Concepts.md#hash-algorithms))
 4. App verifies receipt exists: `GET https://rx.starbucks.com/a7f3e92b...`
-5. Starbucks server responds: **200 OK + "OK"** (receipt is valid)
+5. Starbucks server responds: **200 OK + "OK"** (receipt is valid) - see [Technical_Concepts.md: Response Formats](Technical_Concepts.md#response-formats)
 6. Employee submits expense claim with verified hash
 7. Finance department sees "✓ Verified against Starbucks"
 
@@ -141,179 +141,234 @@ The simple GET verification above only confirms the receipt exists. To prevent d
 
 ### Deployment Models for Receipt Verification
 
-The basic OCR-to-hash verification (GET request confirms receipt exists) is straightforward, but **preventing duplicate expense claims** requires additional infrastructure. Here are the practical deployment models:
+The basic OCR-to-hash verification (GET request confirms receipt exists) is straightforward, but **preventing duplicate expense claims** requires additional infrastructure. Three practical deployment models:
 
-### Employer-Only Tracking, or vendor managing expenses for that employer
-
-**How it works:**
-- Merchant hosts verification endpoint: `GET https://rx.starbucks.com/{hash}` → 200 OK
+**Model A: Employer-Only Tracking**
 - Employer's expense system maintains internal database of claimed receipt hashes
-- First claim: Hash stored in employer's database after merchant stores linkback:
+- Merchant hosts verification: `GET https://rx.starbucks.com/{hash}` → 200 OK
+- First claim: Hash stored in employer's database
+- Second claim from same employee: Rejected immediately (duplicate)
+- **Pros:** Simple, no third-party dependencies, employer controls data
+- **Cons:** Only prevents duplicates within single employer (consultancy can bill multiple clients for same receipt)
+- **Use case:** Small/medium businesses with in-house expense systems
 
-  ```bash
-  # Expensify (say they are running expenses for MSFT) registers the claim on the receipt after the employee files expenses.
-  POST https://rx.starbucks.com/{hash}/claim
-  Body: {
-    "claimingSystem": "https://expensify.microsoft.com/receipts",
-  }
-  → 202 Accepted + "Claimant stored"
+**Model B: Third-Party Clearinghouse (Recommended)**
+- ExpenseClear.com receives hash from POS systems when transaction occurs
+- First employee to claim hash registers with clearinghouse
+- Second attempt from any company: Clearinghouse returns "Already claimed"
+- **Pros:** Prevents cross-company fraud (consultancies billing multiple clients), no employer infrastructure needed
+- **Cons:** Third-party dependency, clearinghouse must be trusted
+- **Use case:** Large enterprises, consultancies, expense management platforms (Expensify, Concur)
 
-  ```
-- Second claim from SAME domain: Rejected immediately
-- Second claim from DIFFERENT domain: **Allowed, but logged for audit**
+**Model C: Government Tax Registry**
+- POS systems submit receipt hashes to tax authority (HMRC, IRS) in real-time
+- Government tracks all VAT/sales tax collected (audit trail)
+- Government flags duplicate expense claims across all companies
+- **Pros:** Tax fraud prevention, long-term archive beyond company bankruptcy, universal coverage
+- **Cons:** Government surveillance, privacy concerns, regulatory requirement needed
+- **Existing examples:** Sweden's digital cash registers (2010), Italy's electronic invoicing, Estonia's KSI blockchain
+- **Use case:** Countries with strong tax compliance infrastructure
 
-### Another scenario: Consultancy fraud (say WorksThought Inc - WT)
+**Consultancy fraud scenario (Model B or C needed):**
+- WorksThought Inc. bills Google £9 for receipt (hash `a7f3e92b...`)
+- WorksThought bills Amazon £9 for same receipt (hash `a7f3e92b...`)
+- Without clearinghouse/government: Fraud undetected (each client sees one claim)
+- With clearinghouse/government: Second claim flagged, fraud detected immediately
+- **Impact:** Prevents cross-client double-expensing (£1.3bn annual UK fraud)
 
-WorksThought consults to Google and Microsoft in a city that has both.
-
-If Microsoft doesn't manage expenses for WorksThought staff, legitimately WT registers claims with merchants. But unscrupulously could bill multiple clients for the same expense:
-
-```
-Invoice to Google: £9 (receipt hash a7f3e92b...)
-Invoice to Amazon: £9 (receipt hash a7f3e92b... - same receipt!)
-WorksThought pockets extra £9
-```
-
-**Merchant's record shows only one claim:**
-```json
-{
-  "hash": "a7f3e92b...",
-  "claims": [
-    {
-      "claimant": "https://expenses.WorksThought.com/receipts",
-      "claimed_at": "2025-01-27T14:30:00Z"
-    }
-  ]
-}
-```
-
-**No red flag at Starbucks** - they only see one legitimate claim.
-
-**Auditor review (periodic, not real-time):**
-
-Like "hedge fund administrators" detecting possible Ponzi schemes on behalf of hedge fund investors, an independent auditor cross-checks:
-1. **Merchant records** (what WT claimed from Starbucks)
-2. **Client invoices** (what WT billed to Google and Amazon)
-
-```bash
-
-# Auditor queries clients' expense systems
-GET https://expenses.google.com/api/invoices?vendor=WorksThought&since=2025-01-01
-GET https://expenses.amazon.com/api/invoices?vendor=WorksThought&since=2025-01-01
-
-# Auditor extracts receipt hashes from both invoices
-# Finds: Hash a7f3e92b... appears on BOTH Google and Amazon invoices
-
-# Cross-check with Starbucks
-GET https://rx.starbucks.com/a7f3e92b.../claims
-→ Shows: Only claimed once by WorksThought.com
-
-# FRAUD DETECTED:
-# - TW claimed £9 once from Starbucks
-# - TW billed £9 to Google
-# - TW billed £9 to Amazon (same hash!)
-# - TW received £18 for one £9 expense
-```
-After each of Amazon and Google asking WT who their expense auditor was at the time of signing
-their contract. they register themselves with that auditor.
-
-the auditor contacts Google AND Amazon directly (bypassing WorksThought) for a batch
-pickup of expenses claimed. Then the correlation is done, and exceptions fed back to them. Likely
-WT pays a fine. Maybe worst case there's a civil case. Most likely there is none of those ever as
-the class of fraud dissappears.
-
-**Audit would likely be retrospective:** It doesn't really need to be real-time. Auditor reviews weekly or monthly, flags anomalies, contacts affected clients. Even months-old fraud detection has value for:
-- No doubt there are 2x clawback provisions in contracts
-- Criminal fraud prosecution (7-year statute of limitations) are a possibility if it goes beyond occasional, but this class of fraud disappears, and likely the nation-state moves this to civil from criminal because of this self defense mechanism.
-- Termination of consultancy agreements
-- Reputation damage / blacklisting
-
-**Pros:**
-- No coordination between merchants needed
-- No third-party dependencies (unless using external auditor as consultancies would likely need to)
-- Employer has full control over their expense data
-- Expense fraud diminishes
-- Audit trail enables retrospective fraud detection
-
-**Cons:**
-- Each employer maintains some infrastructure for this, or has to outsource
-- Cross-client fraud requires auditor function (not automatic blocking)
-- Legitimate multi-project claims may be flagged (requires investigation)
-
-**Use case:** Small/medium businesses with in-house expense systems, consultancies with multiple clients
-
-### More authoritarian model: Government-Mandated Registry
-
-**Regulatory requirement:**
-```
-HMRC (UK) IRS (USA) regulation: All businesses with >£100K/$100K annual revenue
-must publish receipt hashes for VAT/sales tax audit purposes.
-```
-
-**Dual-endpoint architecture:**
-
-1. **Public merchant endpoint**:
-   ```bash
-   GET https://rx.starbucks.com/a7f3e92b...
-   → 200 OK + "OK"
-   ```
-
-2. **Government tax registry** (for audit):
-   ```bash
-   # POS submits to tax authority (UK example with VAT)
-   POST https://expenses.hmrc.gov.uk
-   Headers: Authorization: Bearer {GOV_GATEWAY_TAX_ID_TOKEN}
-   Body: {
-     "hash": "https://rx.starbucks.com/a7f3e92b...",
-     "subtotal": 7.50,
-     "accountingRef": "HB/e/433/1235",
-     "vat_amount": 1.50,
-     "vat_rate": 0.20,
-     "timestamp": "2025-01-27T09:45:23Z"
-   }
-   → 202 Accepted
-
-   # US example with sales tax
-   POST https://itin-exps.irs.gov
-   Headers: Authorization: Bearer {ITIN_ACC_ACCESS_TOKEN}
-   Body: {
-     "hash": "https://rx.starbucks.com/a7f3e92b...",
-     "subtotal": 10.00,
-     "accountingRef": 288177322,
-     "sales_tax_amount": 0.85,
-     "sales_tax_rate": 0.085,
-     "timestamp": "2025-01-27T14:30:00Z"
-   }
-   → 202 Accepted
-   ```
-The system would need to allow have some state management - expens filed, paid, and perhaps even reimbursed if applicable.
-
-**Benefits:**
-- **Tax audit trail:** Government tracks all VAT/sales tax collected
-- **Fraud detection:** Merchant can't under-report tax (hash proves amount charged)
-- **Duplicate prevention:** Government flags multiple expense claims for same receipt
-- **Long-term archive:** Government maintains records beyond company bankruptcy
-
-**Existing examples:**
-- 
-- **Sweden's Kontrollenheten:** Digital cash registers required since 2010
-- **Italy's electronic invoicing:** All B2B/B2C invoices submitted to Agenzia delle Entrate
-- **Estonia's KSI blockchain:** Government records secured by hash-based verification
-
-### Bankruptcy & Archive Handling
-
-**Problem:** Merchant goes bankrupt, verification endpoint dies. Solution: government picks up data to serve (read only)
-
-```bash
-# While merchant alive
-GET https://rx.starbucks.com/{hash} → 200 OK
-
-# After bankruptcy
-GET https://rx.starbucks.com/{hash} → 404
-# Fallback to government archive
-GET https://archived-receipts-as-went-bust-in-2028.hmrc.gov.uk/starbucks.com/{hash} → 200 OK
-```
-- Government maintains archived hashes for bankrupt companies
+**Bankruptcy handling:**
+- Merchant goes bankrupt → verification endpoint dies
+- Government archive takes over: `https://archived-receipts.hmrc.gov.uk/starbucks.com/{hash}`
 - Retention: 7 years (tax audit statute of limitations)
-- Only accessible after company's domain expires
+
+---
+
+## Pricing Model: Who Pays for Verification?
+
+**Core principle:** Receipt verification benefits multiple parties (employers, merchants, tax authorities). Cost should be distributed across beneficiaries, with ultra-low marginal cost. See [Verification_Charges.md](Verification_Charges.md) for ethical framework.
+
+### Infrastructure Costs
+
+**Marginal cost per verification:** ~$0.000001 (one cent per 10,000 verifications)
+
+**Example for Starbucks (20,000 stores globally):**
+- 100M receipts/year globally
+- Each receipt verified 0-2 times (employees expense, employers audit, tax authorities check)
+- Total verifications: 50M-200M/year
+- Infrastructure cost: $50-200/year (Cloudflare Workers, serverless hosting)
+- **Rounding error** compared to POS infrastructure ($millions/year)
+
+### Tier 1: Merchants (Issuers)
+
+**Cost to merchant:** Near-zero infrastructure cost (~$100-500/year)
+
+**Why merchants should host verification:**
+- **Already compensated:** Transaction fees (2-3% credit card fees) cover all costs
+- **Reduces disputes:** "I never bought this" claims resolved instantly
+- **B2B customer value:** Business customers prefer merchants with verifiable receipts
+- **Tax compliance:** Required for VAT/sales tax audit trail (may become mandatory)
+- **Competitive advantage:** Early adopters attract corporate customers
+
+**Starbucks perspective:**
+- Serves 100M customers/year, many are business travelers/employees
+- Infrastructure: $500/year (serverless endpoint)
+- Benefit: Reduces receipt disputes, builds trust with corporate accounts
+- **ROI:** Even preventing 10 disputes/year at $50 staff time each = $500 saved
+
+**Implementation:**
+- POS system generates hash when printing receipt
+- Hash stored in cloud database (DynamoDB, PostgreSQL)
+- Verification endpoint: `https://rx.starbucks.com/{hash}` → 200 OK
+- Marginal cost per transaction: $0.000001 (negligible)
+
+### Tier 2: Employees (Claimants)
+
+**Cost to employee:** FREE
+
+**Why free for employees:**
+- Employees already paid for goods/services (transaction complete)
+- Verification benefits employer (fraud prevention), not employee
+- Charging employees creates friction (reduces adoption)
+- Public interest in reducing expense fraud (£1.3bn annual UK fraud)
+
+**Employee value:**
+- Proves expenses are legitimate (can't be falsely accused)
+- No need to keep paper receipts (digital verification sufficient)
+- Faster expense reimbursement (automated verification, no manual audit)
+
+### Tier 3: Employers (Verifiers)
+
+**Free tier (small businesses, individuals):**
+- **Cost:** FREE for 1-100 verifications/month
+- **Use case:** Small businesses, individual expense verification
+- **Access:** Web app (scan receipt, verify against merchant)
+
+**Paid tier (medium/large employers):**
+- **Cost:** $50-500/month for unlimited verifications
+- **Use case:** Companies with 50+ employees, expense management platforms (Expensify, Concur)
+- **Features:**
+  - API access for bulk verification
+  - Integration with expense management systems
+  - Duplicate claim detection (internal database)
+  - Audit trail for compliance (SOX, HMRC, IRS)
+  - SLA guarantees (99.9% uptime)
+
+**Why charge employers:**
+- Employers derive huge value (prevents £1.3bn annual UK fraud)
+- Cost per verification ($0.01-0.10) far lower than manual audit ($15-30 staff time)
+- Legal liability protection (cryptographic proof of verification)
+- Reduces fraud losses (typical company loses 5% of revenue to expense fraud)
+
+**ROI calculation (500-person company):**
+- 500 employees × 10 receipts/month = 5,000 receipts/month
+- Traditional manual audit: 10% spot-check × $15 labor = $7,500/month
+- OCR-to-hash paid tier: $500/month unlimited verifications
+- **Savings:** $7,000/month ($84,000/year)
+- Plus: Detects duplicate claims that manual audit misses (additional savings)
+
+### Tier 4: Third-Party Clearinghouses
+
+**Business model:** Clearinghouse (ExpenseClear.com) prevents cross-company duplicate claiming
+
+**Revenue sources:**
+1. **Employer subscriptions:** $500-$5,000/year per company
+   - Large enterprises: $5,000/year (unlimited employees, API access)
+   - Medium businesses: $1,000/year (up to 500 employees)
+   - Small businesses: FREE (up to 50 employees, supported by large customer revenue)
+
+2. **POS integration fees:** $1,000-$10,000 one-time per merchant chain
+   - Starbucks pays $10,000 to integrate POS → clearinghouse
+   - One-time engineering cost, amortized over years
+   - Clearinghouse provides SDK/API for easy integration
+
+**Clearinghouse value proposition:**
+- Prevents consultancy fraud (billing multiple clients for same receipt)
+- No infrastructure burden on individual employers
+- Universal coverage (detects duplicates across all participating companies)
+- Audit trail for tax authorities (HMRC, IRS can query clearinghouse)
+
+**Cost justification (large enterprise):**
+- 10,000 employees
+- 5% expense fraud rate (industry average) × $50M annual expenses = $2.5M fraud/year
+- Clearinghouse subscription: $5,000/year
+- **ROI:** Even reducing fraud by 1% = $500K saved = 100x ROI
+
+### Tier 5: Government Tax Authorities (Model C)
+
+**Cost to government:** $1M-10M initial infrastructure, $100K-1M/year operations
+
+**Why government might fund this:**
+- **Tax fraud prevention:** Ensures all VAT/sales tax properly reported ($10bn+ annual UK tax gap)
+- **Audit efficiency:** Instant verification vs manual audit (thousands of staff hours saved)
+- **Long-term archive:** Maintains receipt records beyond company bankruptcy
+- **Economic benefit:** Reduces expense fraud across entire economy (£1.3bn/year UK)
+
+**Revenue model (if government charges):**
+- **Merchants:** $500-$5,000/year per chain (sliding scale by transaction volume)
+- **Employers:** FREE for individuals/small businesses, $100-1,000/year for large enterprises
+- **Goal:** Cost recovery, not profit (public service)
+
+**Real-world examples:**
+- **Sweden:** Government-mandated digital cash registers (2010) - funded by tax revenue
+- **Italy:** Electronic invoicing system - free for businesses, government-funded
+- **Estonia:** KSI blockchain verification - government public service
+
+**UK Government ROI:**
+- £10bn annual tax gap (underreported VAT/sales tax)
+- Receipt verification infrastructure: £10M initial + £1M/year
+- Even recovering 1% of tax gap (£100M/year) = 100x ROI
+- Plus: Reduces expense fraud (£1.3bn/year) across UK economy
+
+### Cost Comparison: OCR-to-Hash vs Traditional Methods
+
+| Verification Method | Time | Cost (Employer) | Fraud Detection Rate |
+|---------------------|------|-----------------|----------------------|
+| **Manual spot check (10%)** | 5 min/receipt | $15-30 (staff time) | 60% (only checks sampled receipts) |
+| **Full manual audit** | 5 min/receipt | $15-30 per receipt | 85% (time-consuming, misses duplicates across employees) |
+| **No verification (trust employees)** | 0 sec | $0 | 0% (expense fraud = £1.3bn/year UK) |
+| **OCR-to-hash (this system)** | 10 sec/receipt | $0 (free tier) / $0.01 (paid tier) | 99%+ (cryptographic, detects duplicates instantly) |
+
+**Employer perspective:**
+- 500 employees × 10 receipts/month = 5,000 receipts/month
+- Manual audit cost: 10% × 500 receipts × $20 = $10,000/month
+- OCR-to-hash cost: $500/month (paid tier) = **$9,500/month savings**
+- Plus: Detects cross-employee duplicate claims that manual audit misses
+
+### Revenue Model Options for Clearinghouses
+
+**Option A: Freemium (Recommended)**
+- Free for small businesses (1-50 employees)
+- Paid for medium/large enterprises ($500-$5,000/year)
+- POS integration fees from merchants ($1,000-$10,000 one-time)
+- **Outcome:** Wide adoption, revenue from those deriving most value
+
+**Option B: Employer-Only Fees**
+- Merchants integrate for free (public good, anti-fraud)
+- Employers pay per verification ($0.10-0.50 per receipt)
+- Large enterprises negotiate unlimited plans
+- **Outcome:** Merchants adopt easily, employers pay for fraud prevention
+
+**Option C: Government-Funded (Model C)**
+- Government mandates clearinghouse or runs it directly
+- Free for all participants (merchants, employers, employees)
+- Funded by tax revenue (justification: reduces £1.3bn fraud + £10bn tax gap)
+- **Outcome:** Universal coverage, no adoption friction
+
+**Most likely:** Hybrid of A + C - Private clearinghouses (freemium) in countries without government systems, government-funded in countries with strong tax compliance infrastructure (Sweden, Italy, Estonia model).
+
+---
+
+## Related Documentation
+
+**Technical implementation details:**
+- [Technical_Concepts.md](Technical_Concepts.md) - Text normalization (critical for thermal receipts with varied OCR), hash algorithms, response formats
+- [NORMALIZATION.md](NORMALIZATION.md) - Detailed text normalization rules for consistent hashing across different OCR engines
+
+**Business model & pricing:**
+- [Verification_Charges.md](Verification_Charges.md) - Ethical framework for who pays (multi-party beneficiary model)
+
+**Related use cases:**
+- [Use_Case-Voting_Proof.md](Use_Case-Voting_Proof.md) - Similar clearinghouse model (independent auditor)
+- [Use_Case-Product_Labeling.md](Use_Case-Product_Labeling.md) - B2B verification with tax compliance angle
+- [Use_Case-Educational_Degrees.md](Use_Case-Educational_Degrees.md) - Anti-double-dipping principle (different from receipt verification where multiple parties benefit)
 
