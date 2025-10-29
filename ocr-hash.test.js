@@ -146,6 +146,46 @@ Line 2
 Line 3`;
       expect(normalizeText(input)).toBe(expected);
     });
+
+    it('should remove leading tilde (OCR artifact from borders)', () => {
+      const input = '~ Ankh-Morpork';
+      const expected = 'Ankh-Morpork';
+      expect(normalizeText(input)).toBe(expected);
+    });
+
+    it('should handle real-world example with tilde prefix', () => {
+      const input = `Unseen University
+~ Ankh-Morpork
+Bachelor of Thaumatology
+Awarded to: Ponder Stibbons`;
+      const expected = `Unseen University
+Ankh-Morpork
+Bachelor of Thaumatology
+Awarded to: Ponder Stibbons`;
+      expect(normalizeText(input)).toBe(expected);
+    });
+
+    it('should remove various border artifact characters', () => {
+      const testCases = [
+        { input: '| Line', expected: 'Line' },
+        { input: '~ Line', expected: 'Line' },
+        { input: '` Line', expected: 'Line' },
+        { input: '^ Line', expected: 'Line' },
+        { input: '* Line', expected: 'Line' },
+        { input: '# Line', expected: 'Line' },
+        { input: '+ Line', expected: 'Line' },
+        { input: '= Line', expected: 'Line' },
+        { input: '_ Line', expected: 'Line' },
+        { input: '[ Line', expected: 'Line' },
+        { input: '] Line', expected: 'Line' },
+        { input: 'Line |', expected: 'Line' },
+        { input: 'Line ~', expected: 'Line' },
+      ];
+
+      testCases.forEach(({ input, expected }) => {
+        expect(normalizeText(input)).toBe(expected);
+      });
+    });
   });
 
   describe('SHA-256 Hashing', () => {

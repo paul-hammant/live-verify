@@ -37,12 +37,15 @@ function normalizeText(text) {
     const normalizedLines = lines.map(line => {
         // Remove leading spaces
         line = line.replace(/^\s+/, '');
-        // Remove leading pipes (OCR artifacts from vertical lines/borders)
-        line = line.replace(/^\|+\s*/, '');
+        // Remove leading border artifacts (OCR from registration marks/borders)
+        // Common characters: | ~ ` ^ * # + = _ \ / [ ] { }
+        // Examples: "| text", "~ text", "|| text", "| | text"
+        line = line.replace(/^[|~`^*#+=/\\_\[\]{}]+\s*/, '');
         // Remove trailing spaces
         line = line.replace(/\s+$/, '');
-        // Remove trailing pipes (OCR artifacts from vertical lines/borders)
-        line = line.replace(/\s*\|+$/, '');
+        // Remove trailing border artifacts (OCR from registration marks/borders)
+        // Examples: "text |", "text ~", "text ||", "text | |"
+        line = line.replace(/\s*[|~`^*#+=/\\_\[\]{}]+$/, '');
         // Collapse multiple spaces into single space
         line = line.replace(/\s+/g, ' ');
         return line;

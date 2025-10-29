@@ -243,7 +243,7 @@ startCameraBtn.addEventListener('click', async () => {
         captureBtn.style.display = 'flex';
         captureBtn.disabled = false;
         stopCameraBtn.disabled = false;
-        retakeBtn.style.display = '';
+        retakeBtn.style.display = 'none'; // Hide retake until after capture
 
         updateStatus('✅', 'Camera active - fill the frame; marks just off-screen', '#48bb78');
     } catch (error) {
@@ -556,7 +556,7 @@ captureBtn.addEventListener('click', async () => {
         }
 
         progressBar.style.display = 'none';
-        updateStatus('✅', 'Verification complete - tap Retake to scan another', '#48bb78');
+        updateStatus('✅', 'Verification complete', '#48bb78');
 
         // Show Retake button after successful capture
         retakeBtn.style.display = '';
@@ -780,6 +780,16 @@ function showOverlay(color, text) {
 
     ctx.fillStyle = color === 'green' ? '#22543d' : '#742a2a';
     ctx.fillText(text, overlay.width / 2, overlay.height / 2);
+
+    // Add disclaimer for verified messages
+    if (color === 'green') {
+        ctx.font = '18px Arial';
+        ctx.shadowBlur = 5;
+        ctx.shadowOffsetX = 2;
+        ctx.shadowOffsetY = 2;
+        ctx.fillStyle = '#22543d';
+        ctx.fillText('Screencaps of this verified message are not proof of anything', overlay.width / 2, overlay.height / 2 + 60);
+    }
 
     // Clear overlay after 3 seconds
     setTimeout(() => {

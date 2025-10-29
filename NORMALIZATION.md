@@ -30,9 +30,13 @@ OCR often produces Unicode variants of standard ASCII characters. These are norm
 After Unicode character normalization, each line is processed:
 
 1. **Remove leading whitespace** - All spaces and tabs at the start of the line are removed
-2. **Remove leading pipes** - Leading pipe characters (`|`) and any whitespace after them are removed (OCR artifacts from vertical lines/borders)
+2. **Remove leading border artifacts** - Leading non-alphanumeric characters (from OCR of registration marks/borders) and any whitespace after them are removed
+   - Removed characters: `|` `~` `` ` `` `^` `*` `#` `+` `=` `/` `_` `\` `[` `]` `{` `}`
+   - Examples: `"| text"` → `"text"`, `"~ text"` → `"text"`, `"|| text"` → `"text"`
 3. **Remove trailing whitespace** - All spaces and tabs at the end of the line are removed
-4. **Remove trailing pipes** - Trailing pipe characters (`|`) and any whitespace before them are removed (OCR artifacts from vertical lines/borders)
+4. **Remove trailing border artifacts** - Trailing non-alphanumeric characters (from OCR of registration marks/borders) and any whitespace before them are removed
+   - Same character set as leading artifacts
+   - Examples: `"text |"` → `"text"`, `"text ~"` → `"text"`, `"text ||"` → `"text"`
 5. **Collapse multiple spaces** - Any sequence of 2+ spaces is replaced with a single space
 
 ## 3. Blank Line Removal
@@ -51,7 +55,7 @@ After line normalization:
 ### Input (with OCR errors):
 ```
   Unseen University
-
+~ Ankh-Morpork
 | College of High Energy Magic |
 
 | Thesis: "On the Malleability of L–Space" |
@@ -60,6 +64,7 @@ After line normalization:
 ### After normalization:
 ```
 Unseen University
+Ankh-Morpork
 College of High Energy Magic
 Thesis: "On the Malleability of L-Space"
 ```
@@ -68,9 +73,9 @@ Thesis: "On the Malleability of L-Space"
 1. Curly quotes `"` `"` → straight quotes `"`
 2. En dash `–` → hyphen `-`
 3. Leading spaces removed from each line
-4. Leading pipes `|` removed
+4. Leading border artifacts removed (`~`, `|`)
 5. Trailing spaces removed from each line
-6. Trailing pipes `|` removed
+6. Trailing border artifacts removed (`|`)
 7. Blank lines removed
 8. No trailing newline
 

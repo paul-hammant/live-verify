@@ -225,6 +225,19 @@ main {
     font-weight: 500;
 }
 
+/* Capture info diagnostics - smaller and less prominent */
+#captureInfo {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#captureInfo .status-text {
+    font-size: 0.75rem;
+    color: #718096;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
 .progress-bar {
     position: relative;
     height: 50px;
