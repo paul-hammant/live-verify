@@ -1,21 +1,18 @@
 module.exports = {
   testEnvironment: 'node',
   testMatch: [
-    '**/ocr-hash.test.js',
-    '**/cv-geometry.test.js',
-    '**/detectSquares.node.test.js',
-    '**/app-logic.test.js',
-    '**/domain-authority.test.js',
-    '**/ui-state-machine.test.js'
+    '**/__tests__/**/*.test.js'
   ],
   testPathIgnorePatterns: [
     '/node_modules/',
     '/e2e/',
     '/_site/',
-    '/test-results/'
+    '/test-results/',
+    'ocr-hash-image.test.js' // Requires 'sharp' package - excluded for now
   ],
   collectCoverageFrom: [
-    '*.js',
+    'public/**/*.js',
+    '!public/cv/opencv.js',
     '!jest.config.js',
     '!webpack.config.js'
   ]

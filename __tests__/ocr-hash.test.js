@@ -15,7 +15,7 @@
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-const { normalizeText, sha256 } = require('./public/normalize.js');
+const { normalizeText, sha256 } = require('../public/normalize.js');
 
 describe('OCR Hash Verification', () => {
   describe('Text Normalization', () => {

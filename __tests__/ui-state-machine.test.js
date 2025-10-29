@@ -31,26 +31,26 @@ describe('UI State Machine - Code Analysis', () => {
 
     beforeAll(() => {
         // Load the actual app code
-        appCode = fs.readFileSync(path.join(__dirname, 'public', 'app-url-based.js'), 'utf8');
+        appCode = fs.readFileSync(path.join(__dirname, '..', 'public', 'app-url-based.js'), 'utf8');
     });
 
     describe('Initial state in HTML', () => {
         it('HTML should have retake button hidden by default', () => {
-            const html = fs.readFileSync(path.join(__dirname, 'public', 'index.html'), 'utf8');
+            const html = fs.readFileSync(path.join(__dirname, '..', 'public', 'index.html'), 'utf8');
 
             // Retake button should have style="display: none;" in HTML
             expect(html).toMatch(/<button[^>]*id="retakeBtn"[^>]*style="display:\s*none;"/);
         });
 
         it('HTML should have capture button hidden by default', () => {
-            const html = fs.readFileSync(path.join(__dirname, 'public', 'index.html'), 'utf8');
+            const html = fs.readFileSync(path.join(__dirname, '..', 'public', 'index.html'), 'utf8');
 
             // Capture button should have style="display: none;" in HTML
             expect(html).toMatch(/<button[^>]*id="captureBtn"[^>]*style="display:\s*none;"/);
         });
 
         it('HTML should have stop camera button disabled by default', () => {
-            const html = fs.readFileSync(path.join(__dirname, 'public', 'index.html'), 'utf8');
+            const html = fs.readFileSync(path.join(__dirname, '..', 'public', 'index.html'), 'utf8');
 
             // Stop camera button should be disabled
             expect(html).toMatch(/<button[^>]*id="stopCamera"[^>]*disabled/);

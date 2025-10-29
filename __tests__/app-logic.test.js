@@ -46,7 +46,7 @@ const {
     extractCertText,
     hashMatchesUrl,
     buildVerificationUrl
-} = require('./public/app-logic.js');
+} = require('../public/app-logic.js');
 
 describe('App Logic - Pure Functions', () => {
     describe('rotateCanvas', () => {
