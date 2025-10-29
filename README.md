@@ -45,6 +45,10 @@ Verifying printed claims today is broken:
 5. Click "Capture & Verify"
 6. See ✅ **VERIFIED by paul-hammant.github.io** or ❌ **FAILS VERIFICATION**
 
+Note: no serious production verification deployment of this technology would rest on `github.io`. I am only doing so 
+because I am demonstrating how this works and GH-P is convenient, free, and static (proving the server-side can be almost absent) 
+You'd see "VERIFIED BY bankofamerica.com' and alike for real prod deployments.
+
 ## What is a Claim?
 
 A **claim** is any assertion that could be forged, altered, or reused fraudulently:
@@ -75,6 +79,8 @@ Many more use cases documented below.
 │                                 │
 └─────────────────────────────────┘
 ```
+
+Another day, we'll see if we can't get this working without a black border.
 
 **Variable element:** Each verifiable document needs something unique - a date/time, person's name, serial number, transaction ID, or other changing value. This ensures each certificate has a unique hash and prevents reuse of the same verification across different claims or brute force guessing of valid hashes.
 
@@ -113,21 +119,21 @@ Read about one way hash functions on [Wikipedia](https://en.wikipedia.org/wiki/C
 
 ## OCR Limitations: What Works Today vs Future Needs
 
-**Current OCR technology (Tesseract.js v5) works reliably with:**
+**Current OCR technology (Tesseract.js v5)**
 
-| Document Type                     | OCR Feasibility     | Why                                                                    |
-|-----------------------------------|---------------------|------------------------------------------------------------------------|
-| ✅ CV/resume text claims           | **Works now**       | Plain fonts (Arial, Times), simple layout, no decorations              |
-| ✅ Employment verification letters | **Works now**       | Business letter format, standard fonts, clean layout                   |
-| ✅ Till receipts                   | **Works now**       | Monospace fonts, structured format, thermal printing                   |
-| ✅ Medical license wallet cards    | **Works now**       | Small but usually plain text, standard government fonts                |
-| ✅ Simple certificates             | **Works now**       | If designed with OCR in mind - plain borders, standard fonts           |
-| 🟡 Government IDs                 | **Mixed results**   | Machine-readable zones work, but photos/holograms interfere            |
-| ❌ Ornate degree certificates      | **Needs tech leap** | Decorative fonts, calligraphy, seals, signatures, embossing, gold foil |
-| ❌ Art authenticity certificates   | **Needs tech leap** | Fancy typography, gallery branding, artistic layouts                   |
-| ❌ Historical documents            | **Needs tech leap** | Aged paper, faded ink, handwriting, non-standard fonts                 |
+| Document Type                     | OCR Feasibility      | Why                                                                    |
+|-----------------------------------|----------------------|------------------------------------------------------------------------|
+| ✅ CV/resume text claims           | **Works now**        | Plain fonts (Arial, Times), simple layout, no decorations              |
+| ✅ Employment verification letters | **Works now**        | Business letter format, standard fonts, clean layout                   |
+| ✅ Till receipts                   | **Works now**        | Monospace fonts, structured format, thermal printing                   |
+| ✅ Medical license wallet cards    | **Works now**        | Small but usually plain text, standard government fonts                |
+| ✅ Simple certificates             | **Works now**        | If designed with OCR in mind - plain borders, standard fonts           |
+| 🟡 Government IDs                 | **Could work maybe** | Can a text section be made that's separate to the photo/hologram       |
+| ❌ Ornate degree certificates      | **Needs tech leap**  | Decorative fonts, calligraphy, seals, signatures, embossing, gold foil |
+| ❌ Art authenticity certificates   | **Needs tech leap**  | Fancy typography, gallery branding, artistic layouts                   |
+| ❌ Historical documents            | **Needs tech leap**  | Aged paper, faded ink, handwriting, non-standard fonts                 |
 
-**The ornate certificate problem:**
+### The ornate certificate problem
 
 Traditional university degrees, professional certifications, and art certificates are designed for **human prestige**, not machine readability:
 - Gothic/blackletter fonts for institution names
