@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Harold Finch</title>
+    <link rel="stylesheet" href="cv_style.css">
+</head>
+<body>
+    <div id="app">
+        <header class="cv-header">
+            <h1 id="name"></h1>
+            <div class="contact-details">
+                <span id="address"></span>
+                <span id="phone"></span>
+                <span id="email"></span>
+            </div>
+        </header>
+
+        <main class="cv-main">
+            <section class="statement">
+                <div id="personal-statement"></div>
+            </section>
+
+            <section class="skills-section" id="skills-container">
+                <!-- Skills will be rendered here -->
+            </section>
+
+            <div class="two-column">
+                <aside class="education-section">
+                    <h2>Education</h2>
+                    <div id="education-list"></div>
+                    <h2>Awards</h2>
+                    <div id="awards-list"></div>
+                </aside>
+
+                <section class="employment-section">
+                    <h2>Work Experience</h2>
+                    <div id="employment-list"></div>
+                </section>
+            </div>
+
+            <!-- Full-width employment continuation -->
+            <div id="employment-breakout"></div>
+
+            <section class="certificates-section">
+                <h2>Certificates</h2>
+                <div id="certificates-list"></div>
+            </section>
+
+            <section class="volunteer-section">
+                <h2>Volunteer Experience</h2>
+                <div id="volunteer-list"></div>
+            </section>
+
+            <section class="publications-section">
+                <h2>Publications</h2>
+                <div id="publications-list"></div>
+            </section>
+
+            <section class="projects-section">
+                <h2>Projects</h2>
+                <div id="projects-list"></div>
+            </section>
+
+            <section class="languages-section">
+                <h2>Languages</h2>
+                <div id="languages-list"></div>
+            </section>
+
+            <section class="interests-section">
+                <h2>Interests</h2>
+                <div id="interests-list"></div>
+            </section>
+
+            <section class="references-section">
+                <h2>References</h2>
+                <div id="references-list"></div>
+            </section>
+        </main>
+
+        <div class="controls">
+            <button id="print-btn" title="Print CV">🖨️</button>
+            <button id="toggle-edit" title="Toggle Edit Mode">✏️</button>
+        </div>
+    </div>
+
+    <script type="application/json" id="cv-data-json">
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Harold Finch",
+    "label": "Chief Technology Officer & AI Research Pioneer",
+    "email": "h.finch@icttechnologies.com",
+    "phone": "212-555-0142",
+    "url": "https://www.icttechnologies.com",
+    "summary": "Senior Software Architect and AI Research Pioneer with extensive experience in machine learning systems, distributed computing, and privacy-preserving technologies. Proven track record in algorithmic development, data architecture, and predictive analytics across enterprise and research environments. Expert in large-scale data processing, pattern recognition algorithms, and secure computing systems with deep knowledge of computational theory and mathematical modeling. Committed to advancing artificial intelligence while maintaining ethical standards and privacy protection.",
+    "location": {
+      "address": "Upper West Side",
+      "postalCode": "10024",
+      "city": "New York",
+      "countryCode": "US",
+      "region": "New York"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "haroldfinch",
+        "url": "https://linkedin.com/in/haroldfinch"
+      },
+      {
+        "network": "GitHub",
+        "username": "hfinch",
+        "url": "https://github.com/hfinch"
+      },
+      {
+        "network": "ORCID",
+        "username": "0000-0002-1234-5678",
+        "url": "https://orcid.org/0000-0002-1234-5678"
+      },
+      {
+        "network": "Google Scholar",
+        "username": "hfinch",
+        "url": "https://scholar.google.com/citations?user=hfinch"
+      },
+      {
+        "network": "ACM",
+        "username": "hfinch",
+        "url": "https://dl.acm.org/profile/hfinch"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "ICT Technologies",
+      "position": "Chief Technology Officer",
+      "url": "https://www.admin-solutions.com",
+      "startDate": "2010-01",
+      "endDate": "",
+      "summary": "Leading technology strategy and advanced research initiatives, focusing on next-generation AI systems and privacy-preserving computational methods.",
+      "highlights": [
+        "Developed proprietary machine learning algorithms improving prediction accuracy by 300%",
+        "Architected distributed computing systems processing petabytes of data daily",
+        "Led team of 50+ engineers and researchers in cutting-edge AI development",
+        "Created privacy-first data analysis frameworks adopted industry-wide",
+        "Published 25+ peer-reviewed papers in top-tier computer science journals"
+      ]
+    },
+    {
+      "name": "IFT Software Solutions",
+      "position": "Senior Software Architect",
+      "url": "https://www.admin-solutions.com",
+      "startDate": "1995-03",
+      "endDate": "2009-12",
+      "summary": "Designing and implementing large-scale software systems with focus on data processing, algorithmic optimization, and system reliability.",
+      "highlights": [
+        "Architected mission-critical systems handling millions of transactions daily",
+        "Developed innovative algorithms for real-time data pattern recognition",
+        "Led digital transformation initiatives for Fortune 500 clients",
+        "Created fault-tolerant distributed systems with 99.99% uptime",
+        "Mentored 100+ junior developers and established best practices framework"
+      ]
+    },
+    {
+      "name": "Advanced Computing Research Institute",
+      "position": "Principal Research Scientist",
+      "url": "https://www.admin-solutions.com",
+      "startDate": "1985-08",
+      "endDate": "1995-02",
+      "summary": "Conducting fundamental research in artificial intelligence, machine learning, and computational theory with applications to real-world problems.",
+      "highlights": [
+        "Pioneered machine learning techniques for predictive modeling and forecasting",
+        "Developed mathematical frameworks for complex data analysis problems",
+        "Collaborated with international research teams on AI safety and ethics",
+        "Secured $15M+ in research funding from government and private sources",
+        "Established AI research lab that became industry standard for ethical AI development"
+      ]
+    },
+    {
+      "name": "MIT Computer Science Laboratory",
+      "position": "Research Associate",
+      "url": "https://www.admin-solutions.com",
+      "startDate": "1982-06",
+      "endDate": "1985-07",
+      "summary": "Graduate research focusing on machine learning algorithms, data structures, and computational complexity theory.",
+      "highlights": [
+        "Developed novel algorithms for large-scale data processing and analysis",
+        "Published foundational research papers in machine learning theory",
+        "Collaborated with faculty on government-funded AI research projects",
+        "Taught undergraduate courses in computer science and mathematics",
+        "Received graduate research excellence award three consecutive years"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Digital Privacy Rights Foundation",
+      "position": "Board Member & Technology Advisor",
+      "url": "https://www.privacyrights.org",
+      "startDate": "2005-01",
+      "endDate": "",
+      "summary": "Advocating for digital privacy rights and ethical technology development, researching implications of AI and data collection on society.",
+      "highlights": [
+        "Developed privacy-preserving technology standards adopted globally",
+        "Advised on legislation protecting individual privacy in digital age",
+        "Promoted responsible technology use and digital rights protection",
+        "Educated public on privacy implications of emerging technologies"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Massachusetts Institute of Technology",
+      "url": "https://www.mit.edu",
+      "area": "Computer Science with AI and Machine Learning",
+      "studyType": "Doctor of Philosophy",
+      "startDate": "1980",
+      "endDate": "1985",
+      "score": "Summa Cum Laude",
+      "courses": [
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Computational Theory",
+        "Advanced Algorithms"
+      ]
+    },
+    {
+      "institution": "Harvard University",
+      "url": "https://www.harvard.edu",
+      "area": "Applied Mathematics with Statistical Analysis",
+      "studyType": "Master of Science",
+      "startDate": "1978",
+      "endDate": "1980",
+      "score": "Magna Cum Laude",
+      "courses": [
+        "Statistical Analysis",
+        "Computational Theory",
+        "Algorithmic Optimization",
+        "Mathematical Modeling"
+      ]
+    },
+    {
+      "institution": "Massachusetts Institute of Technology",
+      "url": "https://www.mit.edu",
+      "area": "Computer Science with Mathematics",
+      "studyType": "Bachelor of Science",
+      "startDate": "1974",
+      "endDate": "1978",
+      "score": "Phi Beta Kappa, Youngest Graduate in Class History",
+      "courses": [
+        "Computer Science Fundamentals",
+        "Advanced Mathematics",
+        "Logic and Computation",
+        "Discrete Mathematics"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Turing Award Nominee",
+      "date": "2015",
+      "awarder": "ACM",
+      "summary": "Nominated for the ACM Turing Award for groundbreaking contributions to machine learning and predictive analytics systems that revolutionized data processing capabilities"
+    },
+    {
+      "title": "Privacy Technology Pioneer Award",
+      "date": "2005",
+      "awarder": "Privacy Technology Foundation",
+      "summary": "For developing privacy-preserving data analysis methods that protect individual privacy while enabling insights"
+    },
+    {
+      "title": "IEEE Fellow",
+      "date": "1995",
+      "awarder": "IEEE",
+      "summary": "Elected for exceptional contributions to artificial intelligence research and the development of advanced computational algorithms"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Ph.D. Computer Science",
+      "date": "1985",
+      "issuer": "Massachusetts Institute of Technology",
+      "url": "https://www.mit.edu"
+    },
+    {
+      "name": "IEEE Fellow",
+      "date": "1995",
+      "issuer": "Institute of Electrical and Electronics Engineers",
+      "url": "https://www.ieee.org"
+    },
+    {
+      "name": "ACM Distinguished Scientist",
+      "date": "2000",
+      "issuer": "Association for Computing Machinery",
+      "url": "https://www.acm.org"
+    }
+  ],
+  "publications": [
+    {
+      "name": "Predictive Models for Large-Scale Data Analysis",
+      "publisher": "MIT Press",
+      "releaseDate": "1985-05",
+      "url": "https://mitpress.mit.edu",
+      "summary": "Doctoral dissertation outlining advanced machine learning techniques for processing and analyzing massive datasets"
+    },
+    {
+      "name": "Privacy-Preserving Data Mining Techniques",
+      "publisher": "ACM Transactions on Database Systems",
+      "releaseDate": "2005-03",
+      "url": "https://dl.acm.org",
+      "summary": "Comprehensive framework for analyzing data while protecting individual privacy through mathematical guarantees"
+    },
+    {
+      "name": "Algorithmic Optimization in Distributed Systems",
+      "publisher": "Journal of Computer Science",
+      "releaseDate": "1998-11",
+      "url": "https://jcs.org",
+      "summary": "Novel approaches to optimizing algorithms in large-scale distributed computing environments"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming Languages",
+      "level": "Expert",
+      "keywords": ["Python", "C++", "Java", "JavaScript", "LISP", "Haskell", "Assembly", "MATLAB", "R", "Scala"]
+    },
+    {
+      "name": "AI & Machine Learning",
+      "level": "Expert",
+      "keywords": ["Neural Networks", "Deep Learning", "Predictive Analytics", "Pattern Recognition", "NLP", "Computer Vision"]
+    },
+    {
+      "name": "Frameworks & Tools",
+      "level": "Expert",
+      "keywords": ["TensorFlow", "PyTorch", "Apache Spark", "Hadoop", "Kafka", "Redis", "Elasticsearch", "Qt"]
+    },
+    {
+      "name": "Databases",
+      "level": "Expert",
+      "keywords": ["PostgreSQL", "MongoDB", "Neo4j", "Cassandra", "InfluxDB", "Oracle", "Time Series DB"]
+    },
+    {
+      "name": "Cloud & Infrastructure",
+      "level": "Expert",
+      "keywords": ["AWS", "Private Cloud Architecture", "Distributed Computing", "Edge Computing", "Kubernetes"]
+    },
+    {
+      "name": "Security & Privacy",
+      "level": "Expert",
+      "keywords": ["Cryptography", "Privacy Engineering", "Secure Multi-Party Computation", "Differential Privacy"]
+    },
+    {
+      "name": "Development Tools",
+      "level": "Expert",
+      "keywords": ["Git", "Docker", "Jenkins", "Terraform", "Ansible", "UNIX/Linux", "Mathematical Modeling"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native"
+    },
+    {
+      "language": "French",
+      "fluency": "Fluent"
+    },
+    {
+      "language": "German",
+      "fluency": "Fluent"
+    },
+    {
+      "language": "Mandarin",
+      "fluency": "Conversational"
+    },
+    {
+      "language": "Latin",
+      "fluency": "Academic"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Classical Literature & Philosophy",
+      "keywords": ["Classical literature", "Philosophical works", "Moral philosophy", "Ethics", "Literary discussion groups"]
+    },
+    {
+      "name": "Advanced Mathematics & Logic",
+      "keywords": ["Pure mathematics", "Formal logic", "Computational theory", "Mathematical proofs", "Academic conferences"]
+    },
+    {
+      "name": "Classical Music & Opera",
+      "keywords": ["Bach", "Mozart", "Wagner", "Rare recordings", "Music theory", "Composition"]
+    },
+    {
+      "name": "Rare Book Collecting",
+      "keywords": ["Mathematical texts", "Computer science publications", "Logic", "Computation", "Artificial intelligence"]
+    },
+    {
+      "name": "Urban Wildlife Observation",
+      "keywords": ["Urban wildlife behavior", "Bird migration patterns", "Citizen science", "Conservation efforts"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Privacy-Preserving Analytics Platform",
+      "description": "Revolutionary data analysis system that maintains individual privacy while enabling powerful insights",
+      "highlights": [
+        "Industry-first implementation of differential privacy at scale",
+        "Adopted by major tech companies for user data analysis",
+        "Processed over 1 billion records while maintaining privacy guarantees"
+      ],
+      "keywords": ["Privacy", "Data Analysis", "Machine Learning"],
+      "startDate": "2005",
+      "endDate": "2010",
+      "url": "https://www.privacyplatform.com",
+      "roles": ["Lead Architect", "Principal Developer"],
+      "entity": "ICT Technologies",
+      "type": "application"
+    },
+    {
+      "name": "Predictive Analytics Engine",
+      "description": "Advanced machine learning system for large-scale predictive modeling and forecasting",
+      "highlights": [
+        "300% improvement in prediction accuracy over existing systems",
+        "Real-time processing of streaming data at petabyte scale",
+        "Deployed across multiple industries for critical decision making"
+      ],
+      "keywords": ["Machine Learning", "Predictive Analytics", "Big Data"],
+      "startDate": "2010",
+      "endDate": "2015",
+      "url": "https://www.predictiveengine.com",
+      "roles": ["Chief Architect", "Research Lead"],
+      "entity": "ICT Technologies",
+      "type": "application"
+    }
+  ],
+  "references": [
+    {
+      "name": "Dr. Margaret Chen",
+      "reference": "Harold was an exceptional doctoral student whose dissertation on machine learning algorithms was groundbreaking. His analytical thinking and innovative approaches to complex problems make him a remarkable researcher and colleague."
+    },
+    {
+      "name": "Prof. David Sterling",
+      "reference": "Harold's mathematical expertise and computational skills are unparalleled. His work on predictive systems and data analysis has contributed significantly to our understanding of complex algorithmic behavior."
+    },
+    {
+      "name": "Dr. Sarah Martinez",
+      "reference": "As a member of our board, Harold has consistently demonstrated strategic vision and technical excellence. His work on surveillance systems and privacy protection represents the highest standards of ethical technology development."
+    },
+    {
+      "name": "Prof. William Thompson",
+      "reference": "Harold's dedication to research and his mentorship of junior colleagues have been invaluable to our institute. His work on artificial intelligence and machine learning continues to push the boundaries of what's possible."
+    }
+  ]
+}
+    </script>
+    
+    <script src="cv_app.js"></script>
+</body>
+</html>

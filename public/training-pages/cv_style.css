@@ -1,0 +1,1004 @@
+/* CSS Variables for theming */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --accent-color: #3498db;
+    --text-color: #555;
+    --bg-color: #f8f9fa;
+    --white: #ffffff;
+    --border-color: #e1e8ed;
+    --shadow: 0 2px 10px rgba(0,0,0,0.1);
+    --max-width: 1000px;
+    --border-radius: 8px;
+}
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background: var(--bg-color);
+    font-size: 16px;
+}
+
+/* Main container */
+#app {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 20px;
+    background: var(--white);
+    box-shadow: var(--shadow);
+    border-radius: var(--border-radius);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Header section */
+.cv-header {
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 3px solid var(--accent-color);
+    margin-bottom: 30px;
+}
+
+.cv-header h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 300;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    letter-spacing: -1px;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    font-size: 0.95rem;
+    color: var(--secondary-color);
+}
+
+.contact-details span {
+    position: relative;
+}
+
+.contact-details span:not(:last-child)::after {
+    content: '•';
+    position: absolute;
+    right: -18px;
+    color: var(--accent-color);
+}
+
+/* Statement section */
+.statement {
+    margin-bottom: 30px;
+}
+
+.statement div {
+    background: #f8f9fa;
+    padding: 25px;
+    border-left: 4px solid var(--accent-color);
+    border-radius: var(--border-radius);
+    font-size: 1.1rem;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+/* Skills Section */
+.skills-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #fff;
+    border-radius: var(--border-radius);
+}
+
+.skills-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 10px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.skill-category {
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    transition: transform 0.2s ease;
+}
+
+.skill-category:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.skill-category-title {
+    color: var(--accent-color);
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.skills-list {
+    color: var(--text-color);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* Two column layout */
+.two-column {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+/* Section headers */
+h2 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--accent-color);
+    font-weight: 400;
+}
+
+/* Education section */
+.education-item {
+    margin-bottom: 25px;
+    padding: 20px;
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.education-item:hover {
+    box-shadow: var(--shadow);
+    transform: translateY(-2px);
+}
+
+
+
+.qual-content {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.qual-establishment {
+    font-style: italic;
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+}
+
+/* Achievements section */
+.achievement-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    transition: all 0.3s ease;
+}
+
+.achievement-item:hover {
+    box-shadow: var(--shadow);
+    transform: translateY(-1px);
+}
+
+.achievement-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 8px;
+}
+
+.achievement-description {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--text-color);
+}
+
+/* Employment section */
+
+/* Full-width employment container outside two-column layout */
+#employment-breakout {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#employment-breakout .employment-item {
+    margin-left: 0;
+    max-width: none;
+}
+
+/* Employment continuation indicator */
+.employment-continuation {
+    font-size: 0.85rem;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+    padding: 8px 15px;
+    background: #f8f9fa;
+    border-left: 3px solid var(--accent-color);
+    border-radius: 4px;
+    font-style: italic;
+}
+
+
+.employment-item {
+    margin-bottom: 25px;
+    padding: 20px;
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+
+.employment-item.single-position {
+    margin-left: 0;
+    padding: 25px;
+}
+
+.employment-item:hover {
+    box-shadow: var(--shadow);
+    transform: translateY(-2px);
+}
+
+
+/* Single position styling */
+.single-position-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+.position-name {
+    color: var(--primary-color);
+}
+
+.company-name {
+    color: var(--accent-color);
+}
+
+
+.job-dates {
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+    float: right;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.job-description {
+    margin: 15px 0;
+    line-height: 1.6;
+}
+
+.achievements {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.achievements li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.achievements li::before {
+    content: '▶';
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+    font-size: 0.8rem;
+}
+
+/* New sections styling */
+.certificates-section,
+.volunteer-section,
+.publications-section,
+.projects-section,
+.languages-section,
+.interests-section,
+.references-section {
+    margin-bottom: 30px;
+}
+
+/* Publication items */
+.publication-item {
+    margin-bottom: 25px;
+    padding: 20px;
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    transition: all 0.3s ease;
+}
+
+.publication-item:hover {
+    box-shadow: var(--shadow);
+    transform: translateY(-2px);
+}
+
+.publication-meta {
+    font-style: italic;
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.publication-summary {
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+/* Project items */
+.project-item {
+    margin-bottom: 25px;
+    padding: 20px;
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    transition: all 0.3s ease;
+}
+
+.project-item:hover {
+    box-shadow: var(--shadow);
+    transform: translateY(-2px);
+}
+
+.project-description {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.project-roles,
+.project-keywords {
+    margin: 10px 0;
+    font-size: 0.9rem;
+}
+
+.project-keywords {
+    color: var(--secondary-color);
+}
+
+/* Interest items */
+.interest-item {
+    margin-bottom: 20px;
+}
+
+.interest-item h3 {
+    font-size: 1.1rem;
+    color: var(--accent-color);
+    margin-bottom: 8px;
+}
+
+.interest-keywords {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Languages list */
+.languages-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.languages-list li {
+    padding: 10px;
+    background: #f8f9fa;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+
+/* Links styling */
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+/* Company name links in employment */
+.company-name {
+    color: var(--accent-color);
+    font-weight: inherit;
+}
+
+.company-name:hover {
+    color: var(--primary-color);
+}
+
+/* Email links in achievements */
+.achievements a {
+    font-weight: 500;
+}
+
+/* External link indicator */
+a[target="_blank"]:not([href^="mailto:"]):after {
+    content: " ↗";
+    font-size: 0.8em;
+    opacity: 0.7;
+}
+
+/* Certificates section - three column card layout */
+#certificates-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: -5px;
+}
+
+.certificate-item {
+    flex: 0 0 calc(33.333% - 15px);
+    padding: 12px 15px;
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.certificate-item:hover {
+    box-shadow: var(--shadow);
+    transform: translateY(-2px);
+}
+
+.certificate-name {
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.certificate-details {
+    list-style: none;
+    font-size: 0.85rem;
+    color: var(--secondary-color);
+    line-height: 1.4;
+}
+
+.certificate-details li {
+    margin-bottom: 3px;
+}
+
+/* References section - two column layout */
+#references-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: -5px;
+}
+
+.reference-item {
+    flex: 0 0 calc(50% - 15px);
+    padding: 12px 15px;
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    box-sizing: border-box;
+}
+
+.reference-name {
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.reference-details {
+    list-style: none;
+    font-size: 0.85rem;
+    color: var(--secondary-color);
+    line-height: 1.4;
+}
+
+.reference-details li {
+    margin-bottom: 3px;
+}
+
+/* Controls */
+.controls {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.controls button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background: var(--accent-color);
+    color: var(--white);
+    cursor: pointer;
+    font-size: 1.2rem;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+}
+
+.controls button:hover {
+    background: var(--primary-color);
+    transform: scale(1.1);
+}
+
+#download-pdf-btn {
+    background: #27ae60;
+    font-size: 1.3rem;
+}
+
+#download-pdf-btn:hover {
+    background: #229954;
+    transform: scale(1.1);
+}
+
+/* Edit mode styles */
+.edit-mode .education-item,
+.edit-mode .employment-item,
+.edit-mode .achievement-item,
+.edit-mode .publication-item,
+.edit-mode .project-item,
+.edit-mode .interest-item {
+    border: 2px dashed var(--accent-color);
+    position: relative;
+    padding-right: 50px;
+    margin-bottom: 10px;
+}
+
+.edit-mode .education-item .toggle-btn,
+.edit-mode .employment-item .toggle-btn,
+.edit-mode .achievement-item .toggle-btn,
+.edit-mode .publication-item .toggle-btn,
+.edit-mode .project-item .toggle-btn,
+.edit-mode .interest-item .toggle-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.edit-mode .education-item .toggle-btn:hover,
+.edit-mode .employment-item .toggle-btn:hover,
+.edit-mode .achievement-item .toggle-btn:hover,
+.edit-mode .publication-item .toggle-btn:hover,
+.edit-mode .project-item .toggle-btn:hover,
+.edit-mode .interest-item .toggle-btn:hover {
+    background: var(--primary-color);
+    transform: scale(1.1);
+}
+
+.education-item.hidden,
+.employment-item.hidden,
+.achievement-item.hidden,
+.publication-item.hidden,
+.project-item.hidden {
+    background: #f9f9f9;
+    border: 2px dashed #ccc;
+    min-height: auto;
+    padding: 15px 50px 15px 15px;
+}
+
+.interest-item.hidden {
+    background: transparent;
+    border: none;
+    min-height: auto;
+    padding: 4px 50px 4px 0;
+    opacity: 0.6;
+}
+
+.education-item.hidden .qual-content,
+.education-item.hidden .achievement-description,
+.employment-item.hidden .job-description,
+.employment-item.hidden .achievements,
+.achievement-item.hidden .achievement-description,
+.publication-item.hidden .publication-summary,
+.project-item.hidden .project-description,
+.project-item.hidden .achievements,
+.interest-item.hidden .interest-keywords {
+    display: none;
+}
+
+.education-item.hidden .qual-content::after,
+.employment-item.hidden .job-description::after,
+.achievement-item.hidden .achievement-description::after,
+.publication-item.hidden .publication-summary::after,
+.project-item.hidden .project-description::after {
+    content: 'Collapsed: click + to expand';
+    color: #888;
+    font-style: italic;
+    font-size: 0.9rem;
+    display: block;
+    margin-top: 8px;
+}
+
+.education-item.hidden::after,
+.employment-item.hidden::after,
+.achievement-item.hidden::after,
+.publication-item.hidden::after,
+.project-item.hidden::after,
+.interest-item.hidden::after {
+    content: ' (collapsed)';
+    color: #888;
+    font-style: italic;
+    font-size: 0.8rem;
+    display: inline;
+    margin-top: 0;
+}
+
+
+/* Tablet styles */
+@media (max-width: 1024px) {
+    #app {
+        margin: 15px;
+        padding: 20px;
+    }
+    
+    .two-column {
+        gap: 30px;
+    }
+    
+    .contact-details {
+        gap: 20px;
+    }
+}
+
+/* Mobile tablet styles */
+@media (max-width: 768px) {
+    #app {
+        margin: 10px;
+        padding: 15px;
+    }
+    
+    .cv-header {
+        padding: 30px 15px;
+    }
+    
+    .cv-header h1 {
+        font-size: clamp(2rem, 8vw, 3rem);
+    }
+    
+    .two-column {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .contact-details {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .contact-details span::after {
+        display: none;
+    }
+    
+    .statement div {
+        padding: 20px;
+        font-size: 1rem;
+    }
+    
+    .job-dates {
+        float: none;
+        display: block;
+        margin-top: 5px;
+        font-size: 0.85rem;
+    }
+    
+    
+    .single-position-title {
+        font-size: 1.1rem;
+        line-height: 1.5;
+    }
+    
+    
+    #certificates-list {
+        flex-direction: column;
+    }
+    
+    .certificate-item {
+        flex: 0 0 100%;
+        margin-bottom: 10px;
+    }
+    
+    #references-list {
+        flex-direction: column;
+    }
+    
+    .reference-item {
+        flex: 0 0 100%;
+        margin-bottom: 10px;
+    }
+    
+    .controls {
+        position: static;
+        transform: none;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 25px;
+    }
+    
+    .controls button {
+        width: 45px;
+        height: 45px;
+        font-size: 1.1rem;
+    }
+    
+}
+
+/* Phone styles */
+@media (max-width: 480px) {
+    #app {
+        margin: 8px;
+        padding: 12px;
+    }
+    
+    .cv-header {
+        padding: 25px 10px;
+    }
+    
+    .cv-header h1 {
+        font-size: clamp(1.8rem, 9vw, 2.5rem);
+        margin-bottom: 12px;
+    }
+    
+    .contact-details {
+        font-size: 0.9rem;
+    }
+    
+    .statement div {
+        padding: 15px;
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+    
+    .two-column {
+        gap: 20px;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+    
+    .education-item,
+    .employment-item {
+        padding: 12px;
+        margin-bottom: 15px;
+    }
+    
+    
+    .single-position-title {
+        font-size: 1rem;
+    }
+    
+    
+    .job-description {
+        margin: 10px 0;
+        font-size: 0.9rem;
+    }
+    
+    .achievements {
+        margin-top: 10px;
+    }
+    
+    .achievements li {
+        font-size: 0.9rem;
+        margin-bottom: 6px;
+    }
+    
+    
+    
+    .certificate-item,
+    .reference-item {
+        padding: 15px;
+    }
+    
+    .controls {
+        margin-top: 20px;
+    }
+    
+    .controls button {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+}
+
+/* Print styles */
+@media print {
+    body {
+        background: white;
+        font-size: 12pt;
+        line-height: 1.4;
+    }
+    
+    #app {
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
+        max-width: none;
+    }
+    
+    .controls {
+        display: none;
+    }
+    
+    /* Hide toggle buttons in print */
+    .toggle-btn {
+        display: none !important;
+    }
+    
+    
+    /* For other hidden items, show abbreviated version */
+    .education-item.hidden .qual-content::after,
+    .employment-item.hidden .job-description::after,
+    .achievement-item.hidden .achievement-description::after {
+        content: " [Hidden in edit mode]";
+        font-style: italic;
+        color: #666;
+    }
+    
+    .education-item.hidden,
+    .employment-item.hidden,
+    .achievement-item.hidden {
+        opacity: 0.6;
+    }
+    
+    .cv-header {
+        padding: 20px 0;
+        margin-bottom: 20px;
+    }
+    
+    .cv-header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .statement div {
+        background: transparent;
+        border: 1px solid #ccc;
+        padding: 15px;
+    }
+    
+    .two-column {
+        grid-template-columns: 1fr 2fr;
+        gap: 20px;
+    }
+    
+    .education-item,
+    .employment-item {
+        border: 1px solid #ddd;
+        margin-bottom: 15px;
+        padding: 15px;
+        background: transparent;
+        break-inside: avoid;
+    }
+    
+    .education-item:hover,
+    .employment-item:hover {
+        transform: none;
+        box-shadow: none;
+    }
+    
+    h2 {
+        color: black;
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+    }
+    
+    .skills-section {
+        page-break-inside: avoid;
+        margin-bottom: 20px;
+    }
+    
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    .skill-category {
+        border: 1px solid #ddd;
+        break-inside: avoid;
+        padding: 10px;
+    }
+    
+    .skill-category:hover {
+        transform: none;
+        box-shadow: none;
+    }
+    
+    
+    .references-section {
+        padding-top: 20px;
+    }
+    
+    .certificate-item,
+    .reference-item {
+        border: 1px solid #ddd;
+        background: transparent;
+    }
+
+    /* Print styles for links */
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+    
+    /* Replace link text with cleaner format: hide original text, show "Type: URL" */
+    a[target="_blank"][rel="noopener noreferrer"]:not([href^="mailto:"]):not([href^="tel:"]) {
+        font-size: 0;
+        text-indent: -9999px;
+    }
+    
+    a[target="_blank"][rel="noopener noreferrer"]:not([href^="mailto:"]):not([href^="tel:"]):after {
+        font-size: 0.9rem;
+        color: #666;
+        font-style: normal;
+        display: inline !important;
+        text-indent: 0;
+        content: "Link: " attr(href);
+    }
+    
+    /* More specific content based on context - projects */
+    .project-item a[target="_blank"][rel="noopener noreferrer"]:after {
+        content: "Project: " attr(href);
+    }
+    
+    /* Publications */
+    .publication-item a[target="_blank"][rel="noopener noreferrer"]:after {
+        content: "Publication: " attr(href);
+    }
+    
+    /* Certificates */
+    .certificate-item a[target="_blank"][rel="noopener noreferrer"]:after {
+        content: "Certificate: " attr(href);
+    }
+    
+    /* Hide external link arrows for other links (like LinkedIn, GitHub profiles) */
+    .contact-details a[target="_blank"]:after,
+    a[target="_blank"]:not([rel="noopener noreferrer"]):after {
+        display: none;
+    }
+}
