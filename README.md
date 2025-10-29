@@ -1,5 +1,8 @@
 # OCR-to-Hash Claim Verification System
 
+![Jest and Playwright tests, then deploy to GitHub Pages](https://github.com/paul-hammant/verific/actions/workflows/deploy.yml/badge.svg)
+![License](https://img.shields.io/badge/license-AGPL--3.0-blue)
+
 **Proof of concept** implementing the approach described in: [OCR-to-Hash: A Simple Audit Trail for Physical Documents](https://paulhammant.com/2023/01/17/ocr-to-hash-simple-audit-trail-for-physical-documents/)
 
 ## The Problem
@@ -9,7 +12,7 @@ Verifying printed claims today is broken:
 - **❌ Calling organizations** - Slow, manual, business hours only, privacy-invasive
 - **❌ Uploading to verification portals** - Cloud storage, data breach risk, vendor lock-in
 - **❌ QR codes** - Hide what they verify, visual clutter, privacy-destroying (encoded data or public registries)
-- **❌ Cloud OCR services** - Send your PII to third parties (Google, AWS, Azure)
+- **❌ Have to user cloud services** - Send your PII to third vendors who you're forced to trust have impregnable systems and are above board.
 - **❌ Fake credentials** - Forged degrees, photoshopped receipts, counterfeit certifications cost billions annually
 
 **Specific pain points:**
@@ -37,7 +40,7 @@ Verifying printed claims today is broken:
 **Try it now:**
 1. Visit **[https://paul-hammant.github.io/verific/](https://paul-hammant.github.io/verific/)** on your phone
 2. Click "Start Camera"
-3. Point at a [training page](public/training-pages/bachelor-thaumatology.html) displayed on your computer screen
+3. Print a [training page](public/training-pages/bachelor-thaumatology.html) for the app to snap (or display the same on your computer screen).
 4. Align the black registration marks in your phone's viewfinder
 5. Click "Capture & Verify"
 6. See ✅ **VERIFIED by paul-hammant.github.io** or ❌ **FAILS VERIFICATION**
@@ -57,6 +60,7 @@ Many more use cases documented below.
 
 ## How It Works
 
+```
 ┌─────────────────────────────────┐  ← Black border registration marks
 │                                 │    for computer vision detection
 │  Some text or other that is     │
@@ -70,6 +74,7 @@ Many more use cases documented below.
 │  verify:example.com/hashes      │  ← Verification URL
 │                                 │
 └─────────────────────────────────┘
+```
 
 **Variable element:** Each verifiable document needs something unique - a date/time, person's name, serial number, transaction ID, or other changing value. This ensures each certificate has a unique hash and prevents reuse of the same verification across different claims or brute force guessing of valid hashes.
 
@@ -110,17 +115,17 @@ Read about one way hash functions on [Wikipedia](https://en.wikipedia.org/wiki/C
 
 **Current OCR technology (Tesseract.js v5) works reliably with:**
 
-| Document Type | OCR Feasibility | Why |
-|---------------|-----------------|-----|
-| ✅ CV/resume text claims | **Works now** | Plain fonts (Arial, Times), simple layout, no decorations |
-| ✅ Employment verification letters | **Works now** | Business letter format, standard fonts, clean layout |
-| ✅ Till receipts | **Works now** | Monospace fonts, structured format, thermal printing |
-| ✅ Medical license wallet cards | **Works now** | Small but usually plain text, standard government fonts |
-| ✅ Simple certificates | **Works now** | If designed with OCR in mind - plain borders, standard fonts |
-| 🟡 Government IDs | **Mixed results** | Machine-readable zones work, but photos/holograms interfere |
-| ❌ Ornate degree certificates | **Needs tech leap** | Decorative fonts, calligraphy, seals, signatures, embossing, gold foil |
-| ❌ Art authenticity certificates | **Needs tech leap** | Fancy typography, gallery branding, artistic layouts |
-| ❌ Historical documents | **Needs tech leap** | Aged paper, faded ink, handwriting, non-standard fonts |
+| Document Type                     | OCR Feasibility     | Why                                                                    |
+|-----------------------------------|---------------------|------------------------------------------------------------------------|
+| ✅ CV/resume text claims           | **Works now**       | Plain fonts (Arial, Times), simple layout, no decorations              |
+| ✅ Employment verification letters | **Works now**       | Business letter format, standard fonts, clean layout                   |
+| ✅ Till receipts                   | **Works now**       | Monospace fonts, structured format, thermal printing                   |
+| ✅ Medical license wallet cards    | **Works now**       | Small but usually plain text, standard government fonts                |
+| ✅ Simple certificates             | **Works now**       | If designed with OCR in mind - plain borders, standard fonts           |
+| 🟡 Government IDs                 | **Mixed results**   | Machine-readable zones work, but photos/holograms interfere            |
+| ❌ Ornate degree certificates      | **Needs tech leap** | Decorative fonts, calligraphy, seals, signatures, embossing, gold foil |
+| ❌ Art authenticity certificates   | **Needs tech leap** | Fancy typography, gallery branding, artistic layouts                   |
+| ❌ Historical documents            | **Needs tech leap** | Aged paper, faded ink, handwriting, non-standard fonts                 |
 
 **The ornate certificate problem:**
 
@@ -251,7 +256,7 @@ OCR-to-hash verification offers a **fundamentally different privacy model:**
 
 ## When OCR-to-Hash Verification Excels (vs QR Codes)
 
-In short, if the claim is aimed at humans reading it and is printed on paper (or could be), it might be a candidate for non-blockchain tech.
+In short, if the claim is aimed at humans reading it and is printed on paper (or could be), it might be a candidate for this **non-blockchain** tech.
 
 **Detailed use cases:** The following six scenarios demonstrate specific advantages of OCR-to-hash verification in real-world applications:
 
@@ -270,26 +275,26 @@ QR and bar codes are much better for machine reading and might suit routing situ
 
 **OCR-to-Hash is BEST when:**
 
-| Criterion | Why It Matters | CV Example |
-|-----------|----------------|------------|
-| Human readability primary | Document is for humans first, verification is secondary | Interviewer reads "First Class Honours", verifies if suspicious |
-| Professional appearance | Visual clutter unacceptable | CV must look polished, not technical |
-| Multiple independent claims | Each claim verified separately | Degree + 3 employers + 2 certs = 6 verifications |
-| Privacy-preserving | Hash should NOT be publicly visible | No public registry of "who graduated where" |
-| Authorized verification only | Only parties with physical doc should verify | Only interviewer with CV in hand can verify |
-| Formal certificate format | Ornate, bordered, human-readable | Matches existing certificate design patterns |
-| Text already exists | Not adding verification to existing system, verification IS the text | The degree claim is the text itself |
+| Criterion                    | Why It Matters                                                       | CV Example                                                      |
+|------------------------------|----------------------------------------------------------------------|-----------------------------------------------------------------|
+| Human readability primary    | Document is for humans first, verification is secondary              | Interviewer reads "First Class Honours", verifies if suspicious |
+| Professional appearance      | Visual clutter unacceptable                                          | CV must look polished, not technical                            |
+| Multiple independent claims  | Each claim verified separately                                       | Degree + 3 employers + 2 certs = 6 verifications                |
+| Privacy-preserving           | Hash should NOT be publicly visible                                  | No public registry of "who graduated where"                     |
+| Authorized verification only | Only parties with physical doc should verify                         | Only interviewer with CV in hand can verify                     |
+| Formal certificate format    | Ornate, bordered, human-readable                                     | Matches existing certificate design patterns                    |
+| Text already exists          | Not adding verification to existing system, verification IS the text | The degree claim is the text itself                             |
 
 **QR Code is BEST when:**
 
-| Criterion | Why It Matters | Counter-example |
-|-----------|----------------|-----------------|
-| Machine processing primary | Humans don't need to read it | Shipping labels, inventory tags |
-| Space constrained | Label too small for registration marks + text | Specimen tubes, tiny product labels |
-| Speed critical | Instant scan, no OCR processing time | Boarding passes, event tickets |
-| Already machine-focused | Document already uses barcodes | Retail receipts, package tracking |
-| Real-time status | QR points to live page with current status | Product recall page (status changes) |
-| Public verification expected | Anyone should be able to verify | Authenticity tags on luxury goods |
+| Criterion                    | Why It Matters                                | Counter-example                      |
+|------------------------------|-----------------------------------------------|--------------------------------------|
+| Machine processing primary   | Humans don't need to read it                  | Shipping labels, inventory tags      |
+| Space constrained            | Label too small for registration marks + text | Specimen tubes, tiny product labels  |
+| Speed critical               | Instant scan, no OCR processing time          | Boarding passes, event tickets       |
+| Already machine-focused      | Document already uses barcodes                | Retail receipts, package tracking    |
+| Real-time status             | QR points to live page with current status    | Product recall page (status changes) |
+| Public verification expected | Anyone should be able to verify               | Authenticity tags on luxury goods    |
 
 ## The Dividing Line
 
