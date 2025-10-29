@@ -154,20 +154,20 @@ https://example.com
 
         it('should throw error if no text found', () => {
             const rawText = '';
-            expect(() => extractVerificationUrl(rawText)).toThrow('No verification URL found (looking for verify: or https)');
+            expect(() => extractVerificationUrl(rawText)).toThrow('No verification URL found (looking for verify:, vfy:, or https)');
         });
 
         it('should throw error if only whitespace', () => {
             const rawText = '   \n  \n  ';
-            expect(() => extractVerificationUrl(rawText)).toThrow('No verification URL found (looking for verify: or https)');
+            expect(() => extractVerificationUrl(rawText)).toThrow('No verification URL found (looking for verify:, vfy:, or https)');
         });
 
-        it('should throw error if last line does not start with https or verify:', () => {
+        it('should throw error if last line does not start with https, verify:, or vfy:', () => {
             const rawText = `Certification text
 This is not a URL`;
 
             expect(() => extractVerificationUrl(rawText))
-                .toThrow('No verification URL found (looking for verify: or https)');
+                .toThrow('No verification URL found (looking for verify:, vfy:, or https)');
         });
 
         it('should accept HTTPS in any case', () => {
@@ -183,7 +183,7 @@ HTTPS://EXAMPLE.COM`;
 http://example.com`;
 
             expect(() => extractVerificationUrl(rawText))
-                .toThrow('No verification URL found (looking for verify: or https)');
+                .toThrow('No verification URL found (looking for verify:, vfy:, or https)');
         });
 
         it('should accept verify: URLs', () => {
@@ -225,6 +225,52 @@ ee a SE AA i Aa A A Re Xe NE Ne ea`;
             const result = extractVerificationUrl(rawText);
             expect(result.url).toBe('verify:paul-hammant.github.io/verific/c');
             expect(result.urlLineIndex).toBe(7);
+        });
+
+        // vfy: prefix tests (shortened alternative to verify:)
+        it('should accept vfy: URLs', () => {
+            const rawText = `Certification text
+vfy:paul-hammant.github.io/verific/c`;
+
+            const result = extractVerificationUrl(rawText);
+            expect(result.url).toBe('vfy:paul-hammant.github.io/verific/c');
+            expect(result.urlLineIndex).toBe(1);
+        });
+
+        it('should remove spaces from vfy: URL', () => {
+            const rawText = `Text
+v f y : e x a m p l e . c o m / v e r i f i c`;
+
+            const result = extractVerificationUrl(rawText);
+            expect(result.url).toBe('vfy:example.com/verific');
+        });
+
+        it('should accept VFY: in any case', () => {
+            const rawText = `Text
+VFY:EXAMPLE.COM/PATH`;
+
+            const result = extractVerificationUrl(rawText);
+            expect(result.url).toBe('VFY:EXAMPLE.COM/PATH');
+        });
+
+        it('should accept vfy: in mixed case', () => {
+            const rawText = `Text
+VfY:example.com/path`;
+
+            const result = extractVerificationUrl(rawText);
+            expect(result.url).toBe('VfY:example.com/path');
+        });
+
+        it('should discard OCR garbage below vfy: line', () => {
+            const rawText = `Unseen University
+Bachelor of Thaumatology
+Awarded to: Ponder Stibbons
+vfy:paul-hammant.github.io/verific/c
+random OCR garbage text`;
+
+            const result = extractVerificationUrl(rawText);
+            expect(result.url).toBe('vfy:paul-hammant.github.io/verific/c');
+            expect(result.urlLineIndex).toBe(3);
         });
     });
 
@@ -352,6 +398,51 @@ https://example.com`;
             const baseUrl = 'verify:example.com';
             const result = buildVerificationUrl(baseUrl, hash);
             expect(result).toBe(`https://example.com/${hash}`);
+        });
+
+        // vfy: prefix tests
+        it('should convert vfy: to https:// and append hash', () => {
+            const baseUrl = 'vfy:paul-hammant.github.io/verific/c';
+            const result = buildVerificationUrl(baseUrl, hash);
+            expect(result).toBe(`https://paul-hammant.github.io/verific/c/${hash}`);
+        });
+
+        it('should handle VFY: in uppercase', () => {
+            const baseUrl = 'VFY:example.com/path';
+            const result = buildVerificationUrl(baseUrl, hash);
+            expect(result).toBe(`https://example.com/path/${hash}`);
+        });
+
+        it('should handle vfy: with mixed case', () => {
+            const baseUrl = 'VfY:example.com/path';
+            const result = buildVerificationUrl(baseUrl, hash);
+            expect(result).toBe(`https://example.com/path/${hash}`);
+        });
+
+        it('should preserve case in domain and path for vfy:', () => {
+            const baseUrl = 'vfy:Example.COM/VeRiFiC';
+            const result = buildVerificationUrl(baseUrl, hash);
+            expect(result).toBe(`https://Example.COM/VeRiFiC/${hash}`);
+        });
+
+        it('should handle vfy: without trailing slash', () => {
+            const baseUrl = 'vfy:example.com';
+            const result = buildVerificationUrl(baseUrl, hash);
+            expect(result).toBe(`https://example.com/${hash}`);
+        });
+
+        it('should correctly remove exactly 4 characters from vfy: prefix', () => {
+            // vfy: is 4 characters, verify: is 7 characters
+            const vfyUrl = 'vfy:domain.com/path';
+            const verifyUrl = 'verify:domain.com/path';
+
+            const vfyResult = buildVerificationUrl(vfyUrl, hash);
+            const verifyResult = buildVerificationUrl(verifyUrl, hash);
+
+            // Both should produce the same https URL
+            expect(vfyResult).toBe(`https://domain.com/path/${hash}`);
+            expect(verifyResult).toBe(`https://domain.com/path/${hash}`);
+            expect(vfyResult).toBe(verifyResult);
         });
     });
 });

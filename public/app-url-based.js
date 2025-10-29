@@ -286,6 +286,12 @@ retakeBtn.addEventListener('click', () => {
     normalizedTextEditorSetup = false;
     currentBaseUrl = null;
 
+    // Show camera section again (in case it was hidden after successful verification)
+    document.querySelector('.camera-section').style.display = '';
+
+    // Reset button text back to "Retake"
+    retakeBtn.textContent = 'Retake';
+
     // Clear the frozen viewfinder overlay to show live camera feed again
     const overlayCtx = overlay.getContext('2d');
     overlayCtx.clearRect(0, 0, overlay.width, overlay.height);
@@ -725,8 +731,12 @@ async function verifyAgainstClaimedUrl(claimedUrl, computedHash) {
         verificationStatus.classList.add('verified');
         showOverlay('green', `VERIFIED by ${authority}`);
 
-        // Hide the multi-tab div when verification succeeds
+        // Hide the camera viewfinder and multi-tab div when verification succeeds
+        document.querySelector('.camera-section').style.display = 'none';
         textResult.style.display = 'none';
+
+        // Change "Retake" to "Verify Another"
+        retakeBtn.textContent = 'Verify Another';
 
         return { status: 200, body: 'OK' };
 

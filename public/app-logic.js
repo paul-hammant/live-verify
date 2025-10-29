@@ -68,8 +68,8 @@ function extractVerificationUrl(rawText) {
         const lineNoSpaces = line.replace(/\s+/g, '');
         const lowerLine = lineNoSpaces.toLowerCase();
 
-        // Check if this line starts with verify: or https
-        if (lowerLine.startsWith('verify:') || lowerLine.startsWith('https')) {
+        // Check if this line starts with verify:, vfy:, or https
+        if (lowerLine.startsWith('verify:') || lowerLine.startsWith('vfy:') || lowerLine.startsWith('https')) {
             return {
                 url: lineNoSpaces,
                 urlLineIndex: i
@@ -77,19 +77,27 @@ function extractVerificationUrl(rawText) {
         }
     }
 
-    throw new Error('No verification URL found (looking for verify: or https)');
+    throw new Error('No verification URL found (looking for verify:, vfy:, or https)');
 }
 
 /**
- * Convert verify: URL to https:// URL with hash appended
- * @param {string} baseUrl - Base URL (either "verify:example.com/path" or "https://example.com/path")
+ * Convert verify: or vfy: URL to https:// URL with hash appended
+ * @param {string} baseUrl - Base URL (either "verify:example.com/path", "vfy:example.com/path", or "https://example.com/path")
  * @param {string} hash - SHA-256 hash to append
  * @returns {string} - Full HTTPS verification URL
  */
 function buildVerificationUrl(baseUrl, hash) {
+    const lowerBase = baseUrl.toLowerCase();
+
     // If it starts with verify:, convert to https://
-    if (baseUrl.toLowerCase().startsWith('verify:')) {
+    if (lowerBase.startsWith('verify:')) {
         const withoutPrefix = baseUrl.substring(7); // Remove "verify:"
+        return `https://${withoutPrefix}/${hash}`;
+    }
+
+    // If it starts with vfy:, convert to https://
+    if (lowerBase.startsWith('vfy:')) {
+        const withoutPrefix = baseUrl.substring(4); // Remove "vfy:"
         return `https://${withoutPrefix}/${hash}`;
     }
 
@@ -107,6 +115,7 @@ function extractCertText(rawText, urlLineIndex) {
     const rawLines = rawText.split('\n').map(l => l.trim());
 
     // Get certification text - everything before the URL line
+    // The verify:/vfy: line is NOT included in what gets hashed (normalized text)
     const certLines = rawLines.slice(0, urlLineIndex);
 
     // Remove trailing blank lines
@@ -129,15 +138,19 @@ function hashMatchesUrl(claimedUrl, computedHash) {
 
 /**
  * Fetch .verific-meta.json from the base URL
- * @param {string} baseUrl - Base URL (verify: or https://)
+ * @param {string} baseUrl - Base URL (verify:, vfy:, or https://)
  * @returns {Promise<Object|null>} - Metadata object or null if not found
  */
 async function fetchVerificMeta(baseUrl) {
     try {
-        // Convert verify: to https:// if needed
+        // Convert verify: or vfy: to https:// if needed
         let httpsBase = baseUrl;
-        if (baseUrl.toLowerCase().startsWith('verify:')) {
+        const lowerBase = baseUrl.toLowerCase();
+
+        if (lowerBase.startsWith('verify:')) {
             httpsBase = `https://${baseUrl.substring(7)}`;
+        } else if (lowerBase.startsWith('vfy:')) {
+            httpsBase = `https://${baseUrl.substring(4)}`;
         }
 
         // Fetch .verific-meta.json
