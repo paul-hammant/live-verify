@@ -61,6 +61,8 @@ const copyHashBtn = document.getElementById('copyHash');
 const verificationResult = document.getElementById('verificationResult');
 const verificationStatus = document.getElementById('verificationStatus');
 const verificationUrl = document.getElementById('verificationUrl');
+const verificationDisclaimer = document.getElementById('verificationDisclaimer');
+const verifyAnotherBtn = document.getElementById('verifyAnotherBtn');
 // Capture info elements (for user-facing diagnostics)
 const captureInfo = document.getElementById('captureInfo');
 const captureMethodEl = document.getElementById('captureMethod');
@@ -291,6 +293,35 @@ retakeBtn.addEventListener('click', () => {
 
     // Reset button text back to "Retake"
     retakeBtn.textContent = 'Retake';
+
+    // Clear the frozen viewfinder overlay to show live camera feed again
+    const overlayCtx = overlay.getContext('2d');
+    overlayCtx.clearRect(0, 0, overlay.width, overlay.height);
+
+    // Show capture button again
+    captureBtn.style.display = 'flex';
+    captureBtn.disabled = false;
+    retakeBtn.style.display = 'none';
+
+    updateStatus('✅', 'Camera active - fill the frame; marks just off-screen', '#48bb78');
+});
+
+// Verify Another button - same behavior as Retake
+verifyAnotherBtn.addEventListener('click', () => {
+    // Hide results
+    textResult.style.display = 'none';
+    hashResult.style.display = 'none';
+    verificationResult.style.display = 'none';
+    verificationDisclaimer.style.display = 'none';
+    verifyAnotherBtn.style.display = 'none';
+    debugConsole.style.display = 'none';
+
+    // Reset normalized text editor flag
+    normalizedTextEditorSetup = false;
+    currentBaseUrl = null;
+
+    // Show camera section again
+    document.querySelector('.camera-section').style.display = '';
 
     // Clear the frozen viewfinder overlay to show live camera feed again
     const overlayCtx = overlay.getContext('2d');
@@ -588,7 +619,8 @@ captureBtn.addEventListener('click', async () => {
         // Also log to debug console
         debugLog(`ERROR: ${error.message || error}`);
 
-        // Don't show button - user needs to stop/restart camera
+        // Show Retake button so user can try again
+        retakeBtn.style.display = '';
     }
 });
 
@@ -735,8 +767,9 @@ async function verifyAgainstClaimedUrl(claimedUrl, computedHash) {
         document.querySelector('.camera-section').style.display = 'none';
         textResult.style.display = 'none';
 
-        // Change "Retake" to "Verify Another"
-        retakeBtn.textContent = 'Verify Another';
+        // Show disclaimer and "Verify Another" button
+        verificationDisclaimer.style.display = 'block';
+        verifyAnotherBtn.style.display = 'inline-block';
 
         return { status: 200, body: 'OK' };
 

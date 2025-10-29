@@ -5,7 +5,8 @@ module.exports = {
     '**/cv-geometry.test.js',
     '**/detectSquares.node.test.js',
     '**/app-logic.test.js',
-    '**/domain-authority.test.js'
+    '**/domain-authority.test.js',
+    '**/ui-state-machine.test.js'
   ],
   testPathIgnorePatterns: [
     '/node_modules/',

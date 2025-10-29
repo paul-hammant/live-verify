@@ -20,8 +20,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verific: OCR to hash verifier</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>State Machine Test Harness - Verific</title>
+    <link rel="stylesheet" href="../public/styles.css">
     <script src='https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js'></script>
     <script src='https://unpkg.com/psl@1.15.0/dist/psl.umd.cjs'></script>
     <script>
@@ -34,9 +34,8 @@
 <body>
     <div class="container">
         <header>
-            <h1 id="appTitle">Verific: OCR to hash verifier</h1>
-            <p>Scan text within registration marks to verify authenticity</p>
-            <div id="buildTimestamp" style="display: none; font-size: 0.8rem; margin-top: 10px; opacity: 0.8;"></div>
+            <h1>State Machine Test Harness</h1>
+            <p>For testing state transitions in Playwright E2E tests</p>
         </header>
 
         <main>
@@ -89,7 +88,6 @@
                         </div>
                         <div class="tab-pane" id="tab-normalized">
                             <textarea id="normalizedText" rows="10" style="width: 100%; font-family: monospace; padding: 10px; border: 1px solid #e2e8f0; border-radius: 4px;"></textarea>
-                            <p style="margin-top: 10px; font-size: 0.9rem; color: #666;">You can edit the text above to fix OCR errors. Hash will automatically recalculate.</p>
                         </div>
                     </div>
                 </div>
@@ -115,30 +113,17 @@
         </main>
 
         <footer>
-            <details>
-                <summary>How it works</summary>
-                <ol>
-                    <li>Position the registration marks around the text you want to verify</li>
-                    <li>Capture the image - OCR extracts the text</li>
-                    <li>Text is normalized (trim spaces, collapse whitespace)</li>
-                    <li>SHA-256 hash is computed</li>
-                    <li>Hash is verified against the certification server</li>
-                </ol>
-            </details>
-            <p style="margin-top: 15px; text-align: center; font-size: 0.9rem; color: #666;">
-                <a href="https://paul-hammant.github.io/verific/training-pages/" target="_blank" style="color: #667eea; text-decoration: none;">Training Pages</a> ·
-                <a href="https://paul-hammant.github.io/verific/test-normalization.html" target="_blank" style="color: #667eea; text-decoration: none;">Test Page</a> ·
-                <a href="https://github.com/paul-hammant/verific/tree/main/public" target="_blank" style="color: #667eea; text-decoration: none;">View Source Code</a> ·
-                Licensed under AGPL-3.0-or-later
+            <p style="text-align: center; font-size: 0.9rem; color: #666;">
+                State Machine Test Harness for E2E Testing
             </p>
         </footer>
     </div>
 
-    <script src="cv/geometry.js"></script>
-    <script src="cv/detectSquares.js"></script>
-    <script src="normalize.js"></script>
-    <script src="app-logic.js"></script>
-    <script src="domain-authority.js"></script>
-    <script src="app-url-based.js"></script>
+    <script src="../public/cv/geometry.js"></script>
+    <script src="../public/cv/detectSquares.js"></script>
+    <script src="../public/normalize.js"></script>
+    <script src="../public/app-logic.js"></script>
+    <script src="../public/domain-authority.js"></script>
+    <script src="../public/app-url-based.js"></script>
 </body>
 </html>
