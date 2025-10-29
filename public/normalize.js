@@ -37,8 +37,12 @@ function normalizeText(text) {
     const normalizedLines = lines.map(line => {
         // Remove leading spaces
         line = line.replace(/^\s+/, '');
+        // Remove leading pipes (OCR artifacts from vertical lines/borders)
+        line = line.replace(/^\|+\s*/, '');
         // Remove trailing spaces
         line = line.replace(/\s+$/, '');
+        // Remove trailing pipes (OCR artifacts from vertical lines/borders)
+        line = line.replace(/\s*\|+$/, '');
         // Collapse multiple spaces into single space
         line = line.replace(/\s+/g, ' ');
         return line;

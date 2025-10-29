@@ -18,7 +18,7 @@
 // Import psl library - MUST be available or this will fail
 // In browser: loaded from CDN (see index.html <script> tag)
 // In Node.js tests: available via npm install
-const psl = (typeof window !== 'undefined' && window.psl) || require('psl');
+const psl = typeof require !== 'undefined' ? require('psl') : window.psl;
 
 /**
  * Extract the registrable domain (domain + public suffix) from a URL.

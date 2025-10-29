@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>PSL Test Harness</title>
+  <!-- Load psl from unpkg.com (same as production) -->
+  <script src='https://unpkg.com/psl@1.15.0/dist/psl.umd.cjs'></script>
+  <script>
+    // Create promise that resolves when psl is ready
+    window.pslReady = new Promise((resolve, reject) => {
+      // Check if psl is already available
+      if (typeof window.psl !== 'undefined') {
+        resolve();
+      } else {
+        // Wait for DOMContentLoaded and check again
+        window.addEventListener('DOMContentLoaded', () => {
+          if (typeof window.psl !== 'undefined') {
+            resolve();
+          } else {
+            reject(new Error('psl library not loaded from CDN'));
+          }
+        });
+
+        // Set a timeout in case it never loads
+        setTimeout(() => {
+          if (typeof window.psl === 'undefined') {
+            reject(new Error('psl library loading timeout'));
+          }
+        }, 5000);
+      }
+    });
+  </script>
+  <!-- Load the domain-authority.js code -->
+  <script src="../public/domain-authority.js"></script>
+</head>
+<body>
+  <h1>PSL Test Harness</h1>
+  <script>
+    window.waitForPsl = () => window.pslReady;
+
+    // Expose test function that checks if psl is available
+    window.testPslAvailability = () => {
+      return {
+        pslExists: typeof window.psl !== 'undefined',
+        pslParse: typeof window.psl?.parse === 'function',
+        extractDomainAuthorityExists: typeof extractDomainAuthority === 'function'
+      };
+    };
+
+    // Expose the actual function for testing
+    window.testExtractDomainAuthority = (url) => {
+      try {
+        return {
+          success: true,
+          result: extractDomainAuthority(url)
+        };
+      } catch (error) {
+        return {
+          success: false,
+          error: error.message
+        };
+      }
+    };
+  </script>
+</body>
+</html>

@@ -327,6 +327,9 @@ main {
     margin-bottom: 10px;
     border: 1px solid #e2e8f0;
     font-size: 0.85rem;
+    user-select: text;
+    -webkit-user-select: text;
+    cursor: text;
 }
 
 .verification-status {

@@ -30,8 +30,10 @@ OCR often produces Unicode variants of standard ASCII characters. These are norm
 After Unicode character normalization, each line is processed:
 
 1. **Remove leading whitespace** - All spaces and tabs at the start of the line are removed
-2. **Remove trailing whitespace** - All spaces and tabs at the end of the line are removed
-3. **Collapse multiple spaces** - Any sequence of 2+ spaces is replaced with a single space
+2. **Remove leading pipes** - Leading pipe characters (`|`) and any whitespace after them are removed (OCR artifacts from vertical lines/borders)
+3. **Remove trailing whitespace** - All spaces and tabs at the end of the line are removed
+4. **Remove trailing pipes** - Trailing pipe characters (`|`) and any whitespace before them are removed (OCR artifacts from vertical lines/borders)
+5. **Collapse multiple spaces** - Any sequence of 2+ spaces is replaced with a single space
 
 ## 3. Blank Line Removal
 
@@ -50,9 +52,9 @@ After line normalization:
 ```
   Unseen University
 
-  College of High Energy Magic
+| College of High Energy Magic |
 
-  Thesis: "On the Malleability of L–Space"
+| Thesis: "On the Malleability of L–Space" |
 ```
 
 ### After normalization:
@@ -66,9 +68,11 @@ Thesis: "On the Malleability of L-Space"
 1. Curly quotes `"` `"` → straight quotes `"`
 2. En dash `–` → hyphen `-`
 3. Leading spaces removed from each line
-4. Trailing spaces removed from each line
-5. Blank lines removed
-6. No trailing newline
+4. Leading pipes `|` removed
+5. Trailing spaces removed from each line
+6. Trailing pipes `|` removed
+7. Blank lines removed
+8. No trailing newline
 
 ## 5. Verification URL Handling
 
@@ -115,7 +119,7 @@ const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');  /
 The code is implemented in:
 - **Production** (public/normalize.js) - text normalization and hashing for the live webapp
 - **Production** (public/app-logic.js) - pure functions for URL extraction, text processing, canvas rotation, and verify: to https:// conversion
-- **Tests** (ocr-hash.test.js) - tests normalize.js (30 tests)
+- **Tests** (ocr-hash.test.js) - tests normalize.js (40 tests, including leading/trailing pipe removal)
 - **Tests** (app-logic.test.js) - tests app-logic.js (38 tests, including buildVerificationUrl)
 
 All tests validate the production browser code to ensure correctness.

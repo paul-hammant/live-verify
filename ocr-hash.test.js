@@ -80,6 +80,72 @@ describe('OCR Hash Verification', () => {
       const expected = 'To be continued...';
       expect(normalizeText(input)).toBe(expected);
     });
+
+    it('should remove leading pipes (OCR artifacts)', () => {
+      const input = '| Hello World';
+      const expected = 'Hello World';
+      expect(normalizeText(input)).toBe(expected);
+    });
+
+    it('should remove multiple leading pipes', () => {
+      const input = '|| Hello World';
+      const expected = 'Hello World';
+      expect(normalizeText(input)).toBe(expected);
+    });
+
+    it('should remove leading pipes with spaces after them', () => {
+      const input = '|  Hello World';
+      const expected = 'Hello World';
+      expect(normalizeText(input)).toBe(expected);
+    });
+
+    it('should handle multi-line text with leading pipes', () => {
+      const input = `| Awarded to: Ponder Stibbons
+| verify:paul-hammant.github.io/verific/c`;
+      const expected = `Awarded to: Ponder Stibbons
+verify:paul-hammant.github.io/verific/c`;
+      expect(normalizeText(input)).toBe(expected);
+    });
+
+    it('should preserve pipes that are not at the start of lines', () => {
+      const input = 'Hello | World';
+      const expected = 'Hello | World';
+      expect(normalizeText(input)).toBe(expected);
+    });
+
+    it('should remove trailing pipes (OCR artifacts)', () => {
+      const input = 'Hello World |';
+      const expected = 'Hello World';
+      expect(normalizeText(input)).toBe(expected);
+    });
+
+    it('should remove multiple trailing pipes', () => {
+      const input = 'Hello World ||';
+      const expected = 'Hello World';
+      expect(normalizeText(input)).toBe(expected);
+    });
+
+    it('should remove trailing pipes with spaces before them', () => {
+      const input = 'Hello World  |';
+      const expected = 'Hello World';
+      expect(normalizeText(input)).toBe(expected);
+    });
+
+    it('should remove both leading and trailing pipes', () => {
+      const input = '| Hello World |';
+      const expected = 'Hello World';
+      expect(normalizeText(input)).toBe(expected);
+    });
+
+    it('should handle multi-line text with leading and trailing pipes', () => {
+      const input = `| Line 1 |
+| Line 2 |
+| Line 3 |`;
+      const expected = `Line 1
+Line 2
+Line 3`;
+      expect(normalizeText(input)).toBe(expected);
+    });
   });
 
   describe('SHA-256 Hashing', () => {

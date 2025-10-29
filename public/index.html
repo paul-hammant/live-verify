@@ -23,7 +23,7 @@
     <title>Verific: OCR to hash verifier</title>
     <link rel="stylesheet" href="styles.css">
     <script src='https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js'></script>
-    <script src='https://cdn.jsdelivr.net/npm/psl@1.15.0/dist/psl.umd.cjs'></script>
+    <script src='https://unpkg.com/psl@1.15.0/dist/psl.umd.cjs'></script>
     <script>
       window.cvReady = new Promise(resolve => {
         window.__onCvReady = resolve;
@@ -50,6 +50,7 @@
 
                 <div class="controls">
                     <button id="startCamera" class="btn btn-primary">Enable Camera</button>
+                    <button id="retakeBtn" class="btn btn-primary" style="display: none;">Retake</button>
                     <button id="stopCamera" class="btn btn-secondary" disabled>Stop Camera</button>
                 </div>
             </div>
@@ -78,7 +79,10 @@
                     <div class="tab-content">
                         <div class="tab-pane active" id="tab-captured">
                             <img id="croppedImage" style="max-width: 100%; border: 1px solid #e2e8f0; border-radius: 8px;" />
-                            <button id="copyImage" class="btn btn-small" style="margin-top: 15px;">📋 Copy Image to Clipboard</button>
+                            <div style="margin-top: 15px;">
+                                <button id="copyImage" class="btn btn-small">📋 Copy Image to Clipboard</button>
+                                <button id="downloadImage" class="btn btn-small" style="display: none; margin-left: 10px;">💾 Download Image</button>
+                            </div>
                         </div>
                         <div class="tab-pane" id="tab-extracted">
                             <pre id="extractedText"></pre>

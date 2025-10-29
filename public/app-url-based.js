@@ -20,6 +20,7 @@ const video = document.getElementById('video');
 const overlay = document.getElementById('overlay');
 const startCameraBtn = document.getElementById('startCamera');
 const captureBtn = document.getElementById('captureBtn');
+const retakeBtn = document.getElementById('retakeBtn');
 const stopCameraBtn = document.getElementById('stopCamera');
 const statusIndicator = document.getElementById('statusIndicator');
 const progressBar = document.getElementById('progressBar');
@@ -31,7 +32,7 @@ const buildTimestamp = document.getElementById('buildTimestamp');
 
 appTitle.style.cursor = 'pointer';
 appTitle.addEventListener('click', () => {
-    // Format timestamp to be human-friendly and local
+    // Format timestamp to be human-friendly and local with timezone
     const date = new Date(BUILD_TIMESTAMP);
     const formatted = date.toLocaleString(undefined, {
         year: 'numeric',
@@ -39,7 +40,8 @@ appTitle.addEventListener('click', () => {
         day: 'numeric',
         hour: 'numeric',
         minute: '2-digit',
-        hour12: true
+        hour12: true,
+        timeZoneName: 'short'
     });
     buildTimestamp.textContent = `Build: ${formatted}`;
     buildTimestamp.style.display = 'block';
@@ -165,6 +167,7 @@ function resetCameraUI() {
     startCameraBtn.disabled = false;
     captureBtn.style.display = 'none';
     captureBtn.disabled = true;
+    retakeBtn.style.display = 'none';
     stopCameraBtn.disabled = true;
     updateStatus('📷', 'Ready to scan', '#4a5568');
 }
@@ -240,6 +243,7 @@ startCameraBtn.addEventListener('click', async () => {
         captureBtn.style.display = 'flex';
         captureBtn.disabled = false;
         stopCameraBtn.disabled = false;
+        retakeBtn.style.display = '';
 
         updateStatus('✅', 'Camera active - fill the frame; marks just off-screen', '#48bb78');
     } catch (error) {
@@ -268,6 +272,30 @@ stopCameraBtn.addEventListener('click', () => {
     currentBaseUrl = null;
 
     resetCameraUI();
+});
+
+// Retake button - clear results and show capture button again
+retakeBtn.addEventListener('click', () => {
+    // Hide results
+    textResult.style.display = 'none';
+    hashResult.style.display = 'none';
+    verificationResult.style.display = 'none';
+    debugConsole.style.display = 'none';
+
+    // Reset normalized text editor flag
+    normalizedTextEditorSetup = false;
+    currentBaseUrl = null;
+
+    // Clear the frozen viewfinder overlay to show live camera feed again
+    const overlayCtx = overlay.getContext('2d');
+    overlayCtx.clearRect(0, 0, overlay.width, overlay.height);
+
+    // Show capture button again
+    captureBtn.style.display = 'flex';
+    captureBtn.disabled = false;
+    retakeBtn.style.display = 'none';
+
+    updateStatus('✅', 'Camera active - fill the frame; marks just off-screen', '#48bb78');
 });
 
 // Capture and process
@@ -325,6 +353,13 @@ captureBtn.addEventListener('click', async () => {
         captureInfo.style.display = 'block';
         captureMethodEl.textContent = `Capture method: ${usedMethod}`;
         captureResolutionEl.textContent = `Resolution: ${canvas.width} x ${canvas.height}`;
+
+        // Freeze the viewfinder by drawing the captured image onto the overlay canvas
+        overlay.width = video.clientWidth;
+        overlay.height = video.clientHeight;
+        const overlayCtx = overlay.getContext('2d');
+        overlayCtx.clearRect(0, 0, overlay.width, overlay.height);
+        overlayCtx.drawImage(canvas, 0, 0, overlay.width, overlay.height);
 
         // NOW show processing status and progress bar
         updateStatus('⏳', 'Processing...', '#ed8936');
@@ -515,7 +550,10 @@ captureBtn.addEventListener('click', async () => {
         }
 
         progressBar.style.display = 'none';
-        updateStatus('✅', 'Verification complete - tap Stop Camera to capture again', '#48bb78');
+        updateStatus('✅', 'Verification complete - tap Retake to scan another', '#48bb78');
+
+        // Show Retake button after successful capture
+        retakeBtn.style.display = '';
 
         // Scroll to bottom to show verification result
         verificationResult.scrollIntoView({ behavior: 'smooth', block: 'end' });
@@ -526,8 +564,24 @@ captureBtn.addEventListener('click', async () => {
     } catch (error) {
         console.error('Error processing image:', error);
         progressBar.style.display = 'none';
-        updateStatus('❌', 'Processing failed: ' + error.message, '#f56565');
-        alert(error.message);
+
+        // Build detailed error message for debugging
+        let errorDetails = `${error.message || error}`;
+        if (error.stack) {
+            errorDetails += `\n\nStack trace:\n${error.stack}`;
+        }
+        if (error.name) {
+            errorDetails = `${error.name}: ${errorDetails}`;
+        }
+
+        updateStatus('❌', 'Processing failed: ' + (error.message || error), '#f56565');
+
+        // Show detailed error in alert for debugging
+        alert(`Processing failed:\n\n${errorDetails}\n\nCheck browser console for more details.`);
+
+        // Also log to debug console
+        debugLog(`ERROR: ${error.message || error}`);
+
         // Don't show button - user needs to stop/restart camera
     }
 });
@@ -725,21 +779,20 @@ function showOverlay(color, text) {
 
 // Copy hash to clipboard
 copyHashBtn.addEventListener('click', async () => {
-    try {
-        await navigator.clipboard.writeText(hashValue.textContent);
-        const originalText = copyHashBtn.textContent;
-        copyHashBtn.textContent = 'Copied!';
-        setTimeout(() => {
-            copyHashBtn.textContent = originalText;
-        }, 2000);
-    } catch (error) {
-        console.error('Failed to copy:', error);
-        alert('Failed to copy hash to clipboard');
-    }
+    const hashText = hashValue.textContent;
+    await navigator.clipboard.writeText(hashText);
+
+    const originalText = copyHashBtn.textContent;
+    copyHashBtn.textContent = 'Copied!';
+    setTimeout(() => {
+        copyHashBtn.textContent = originalText;
+    }, 2000);
 });
 
 // Copy image to clipboard
 const copyImageBtn = document.getElementById('copyImage');
+const downloadImageBtn = document.getElementById('downloadImage');
+
 copyImageBtn.addEventListener('click', async () => {
     try {
         const img = document.getElementById('croppedImage');
@@ -762,6 +815,29 @@ copyImageBtn.addEventListener('click', async () => {
         }, 2000);
     } catch (error) {
         console.error('Failed to copy image:', error);
-        alert('Failed to copy image to clipboard. Try downloading instead.');
+        // Show download button as fallback
+        downloadImageBtn.style.display = 'inline-block';
+        copyImageBtn.textContent = '❌ Clipboard Failed';
     }
+});
+
+// Download image button (shown when clipboard fails)
+downloadImageBtn.addEventListener('click', () => {
+    const img = document.getElementById('croppedImage');
+
+    // Create a temporary link element to trigger download
+    const link = document.createElement('a');
+    link.href = img.src; // This is already a data URL from canvas
+    link.download = `verific-capture-${Date.now()}.png`;
+
+    // Append to body, click, and remove (needed for Firefox)
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    const originalText = downloadImageBtn.textContent;
+    downloadImageBtn.textContent = '✓ Downloaded!';
+    setTimeout(() => {
+        downloadImageBtn.textContent = originalText;
+    }, 2000);
 });
