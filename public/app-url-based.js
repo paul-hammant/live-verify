@@ -411,10 +411,15 @@ captureBtn.addEventListener('click', async () => {
         const detection = await window.detectSquaresFromCanvas(canvas);
 
         if (!detection.ok) {
-            // Show the full captured image even if detection failed
+            // Expected failure: user needs to adjust framing
+            // Show the full captured image so user can see what was captured
             croppedImage.src = canvas.toDataURL();
             textResult.style.display = 'block';
-            throw new Error('Could not detect framing rectangle; adjust framing and retry.');
+
+            progressBar.style.display = 'none';
+            updateStatus('❌', 'Could not detect framing rectangle - adjust framing and retry', '#f56565');
+            retakeBtn.style.display = '';
+            return; // Early return, not an exception
         }
 
         let cropped = detection.croppedCanvas;
@@ -459,7 +464,15 @@ captureBtn.addEventListener('click', async () => {
         }
 
         if (!bestResult) {
-            throw new Error('OCR failed at all orientations');
+            // Expected failure: OCR couldn't extract text at any rotation
+            // Show the cropped image so user can see what was captured
+            croppedImage.src = cropped.toDataURL();
+            textResult.style.display = 'block';
+
+            progressBar.style.display = 'none';
+            updateStatus('❌', 'OCR could not extract text - try better lighting or focus', '#f56565');
+            retakeBtn.style.display = '';
+            return; // Early return, not an exception
         }
 
         debugLog(`Best: ${bestRotation}° (conf: ${bestConfidence.toFixed(1)})`);
@@ -482,6 +495,22 @@ captureBtn.addEventListener('click', async () => {
 
         // Extract verification URL (using app-logic.js)
         const { url: baseUrl, urlLineIndex } = extractVerificationUrl(rawText);
+
+        if (!baseUrl) {
+            // Expected failure: No verification URL found in OCR text
+            croppedImage.src = cropped.toDataURL();
+            textResult.style.display = 'block';
+
+            // Show the extracted text so user can see what was captured
+            extractedText.textContent = rawText;
+            switchToTab('extracted');
+
+            progressBar.style.display = 'none';
+            updateStatus('❌', 'No verification URL found in text - check content and retry', '#f56565');
+            retakeBtn.style.display = '';
+            return; // Early return, not an exception
+        }
+
         currentBaseUrl = baseUrl; // Store for re-verification when user edits normalized text
         debugLog(`Base URL: ${baseUrl.substring(0, 40)}...`);
         console.log('Base URL:', baseUrl);

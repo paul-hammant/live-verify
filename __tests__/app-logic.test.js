@@ -152,22 +152,27 @@ https://example.com
             expect(result.urlLineIndex).toBe(1);
         });
 
-        it('should throw error if no text found', () => {
+        it('should return null if no text found', () => {
             const rawText = '';
-            expect(() => extractVerificationUrl(rawText)).toThrow('No verification URL found (looking for verify:, vfy:, or https)');
+            const result = extractVerificationUrl(rawText);
+            expect(result.url).toBeNull();
+            expect(result.urlLineIndex).toBe(-1);
         });
 
-        it('should throw error if only whitespace', () => {
+        it('should return null if only whitespace', () => {
             const rawText = '   \n  \n  ';
-            expect(() => extractVerificationUrl(rawText)).toThrow('No verification URL found (looking for verify:, vfy:, or https)');
+            const result = extractVerificationUrl(rawText);
+            expect(result.url).toBeNull();
+            expect(result.urlLineIndex).toBe(-1);
         });
 
-        it('should throw error if last line does not start with https, verify:, or vfy:', () => {
+        it('should return null if last line does not start with https, verify:, or vfy:', () => {
             const rawText = `Certification text
 This is not a URL`;
 
-            expect(() => extractVerificationUrl(rawText))
-                .toThrow('No verification URL found (looking for verify:, vfy:, or https)');
+            const result = extractVerificationUrl(rawText);
+            expect(result.url).toBeNull();
+            expect(result.urlLineIndex).toBe(-1);
         });
 
         it('should accept HTTPS in any case', () => {
@@ -178,12 +183,13 @@ HTTPS://EXAMPLE.COM`;
             expect(result.url).toBe('HTTPS://EXAMPLE.COM');
         });
 
-        it('should handle http (not https) and throw error', () => {
+        it('should return null for http (not https)', () => {
             const rawText = `Text
 http://example.com`;
 
-            expect(() => extractVerificationUrl(rawText))
-                .toThrow('No verification URL found (looking for verify:, vfy:, or https)');
+            const result = extractVerificationUrl(rawText);
+            expect(result.url).toBeNull();
+            expect(result.urlLineIndex).toBe(-1);
         });
 
         it('should accept verify: URLs', () => {

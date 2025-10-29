@@ -52,8 +52,7 @@ function rotateCanvas(sourceCanvas, degrees) {
  * Extract verification URL from OCR raw text
  * Scans from bottom to top to find verify: or https line, discarding OCR garbage below it
  * @param {string} rawText - Raw OCR text
- * @returns {{url: string, urlLineIndex: number}} - Extracted base URL and its line index
- * @throws {Error} If no text found or no verify:/https line found
+ * @returns {{url: string|null, urlLineIndex: number}} - Extracted base URL and its line index, or {url: null, urlLineIndex: -1} if not found
  */
 function extractVerificationUrl(rawText) {
     const rawLines = rawText.split('\n').map(l => l.trim());
@@ -77,7 +76,11 @@ function extractVerificationUrl(rawText) {
         }
     }
 
-    throw new Error('No verification URL found (looking for verify:, vfy:, or https)');
+    // Expected failure: no verification URL found in OCR text
+    return {
+        url: null,
+        urlLineIndex: -1
+    };
 }
 
 /**

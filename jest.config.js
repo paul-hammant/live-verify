@@ -7,8 +7,7 @@ module.exports = {
     '/node_modules/',
     '/e2e/',
     '/_site/',
-    '/test-results/',
-    'ocr-hash-image.test.js' // Requires 'sharp' package - excluded for now
+    '/test-results/'
   ],
   collectCoverageFrom: [
     'public/**/*.js',

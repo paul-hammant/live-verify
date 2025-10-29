@@ -5,7 +5,7 @@ This app now works **100% client-side** - no server needed! Perfect for GitHub P
 ## How It Works
 
 - **No backend server** - all verification happens in the browser
-- **No JSON files** - hashes are hardcoded directly in `app.js`
+- **No JSON files** - hashes are hardcoded directly in `cv_app.js`
 - **No database** - just a JavaScript object
 - **Works offline** - after initial page load
 - **Pure static files** - HTML, CSS, JS
@@ -51,7 +51,7 @@ verific/
 ├── public/          ← GitHub Pages serves this
 │   ├── index.html
 │   ├── styles.css
-│   └── app.js
+│   └── cv_app.js
 ├── build-hashes.js  ← Build script (not deployed)
 ├── server.js        ← Not needed for GitHub Pages
 └── README.md
@@ -71,7 +71,7 @@ Then structure is:
 verific/
 ├── index.html       ← GitHub Pages serves from root
 ├── styles.css
-├── app.js
+├── cv_app.js
 ├── build-hashes.js
 └── README.md
 ```
@@ -95,11 +95,11 @@ When you want to add more certifications:
    node build-hashes.js
    ```
 
-3. **Copy the output** from `public/hashes.json` into `HASH_DATABASE` in `public/app.js`
+3. **Copy the output** from `public/hashes.json` into `HASH_DATABASE` in `public/cv_app.js`
 
 4. **Commit and push**:
    ```bash
-   git add public/app.js
+   git add public/cv_app.js
    git commit -m "Add new certification hashes"
    git push
    ```

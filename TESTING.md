@@ -42,7 +42,7 @@ The test suite (`ocr-hash.test.js`) validates:
 - Different text produces different hashes
 - Normalized text produces consistent hashes
 
-### 3. Intertek Certification (from ocr-hash2.png)
+### 3. Intertek Certification Test Case
 
 **Original Text:**
 ```

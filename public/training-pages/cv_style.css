@@ -1001,4 +1001,143 @@ a[target="_blank"]:not([href^="mailto:"]):after {
     a[target="_blank"]:not([rel="noopener noreferrer"]):after {
         display: none;
     }
+
+    /* Hide credential overlay in print */
+    .credential-overlay {
+        display: none !important;
+    }
+}
+
+/* Credential Overlay Styles */
+.credential-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: none;
+}
+
+.overlay-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+
+.overlay-content {
+    position: relative;
+    width: 90%;
+    height: 90%;
+    max-width: 1200px;
+    max-height: 900px;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-overlay {
+    display: none;
+}
+
+.credential-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: white;
+    border: 10px solid black;
+    border-radius: 0;
+    overflow-y: auto;
+    padding: 60px;
+}
+
+/* Registration marks - hidden since we use border on card */
+.registration-mark {
+    display: none;
+}
+
+/* Credential content styles - plain text for OCR scanning */
+.credential-content {
+    padding: 40px;
+    font-family: monospace;
+    font-size: 36px;
+    line-height: 1.8;
+    color: black;
+    white-space: pre-wrap;
+    text-align: left;
+}
+
+/* Responsive overlay styles */
+@media (max-width: 768px) {
+    .credential-card {
+        padding: 40px 30px;
+    }
+
+    .credential-content {
+        padding: 30px;
+        font-size: 30px;
+    }
+
+    .registration-mark {
+        width: 40px;
+        height: 40px;
+        border-width: 8px;
+    }
+
+    .registration-mark.top-left,
+    .registration-mark.top-right {
+        top: 10px;
+    }
+
+    .registration-mark.bottom-left,
+    .registration-mark.bottom-right {
+        bottom: 10px;
+    }
+
+    .registration-mark.top-left,
+    .registration-mark.bottom-left {
+        left: 10px;
+    }
+
+    .registration-mark.top-right,
+    .registration-mark.bottom-right {
+        right: 10px;
+    }
+
+    .close-overlay {
+        top: -10px;
+        right: -10px;
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .overlay-content {
+        width: 95%;
+        height: 95%;
+    }
+
+    .credential-card {
+        padding: 30px 20px;
+    }
+
+    .credential-content {
+        padding: 20px;
+        font-size: 27px;
+    }
+
+    .registration-mark {
+        width: 30px;
+        height: 30px;
+        border-width: 6px;
+    }
 }

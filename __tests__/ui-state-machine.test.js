@@ -186,11 +186,11 @@ describe('UI State Machine - Code Analysis', () => {
     });
 
     describe('State transitions count', () => {
-        it('should have exactly 2 places that show retake button', () => {
+        it('should have exactly 5 places that show retake button', () => {
             // Count occurrences of retakeBtn.style.display = ''
             const matches = appCode.match(/retakeBtn\.style\.display = ''/g);
             expect(matches).not.toBeNull();
-            expect(matches.length).toBe(2); // Line 562 (success), line 592 (error)
+            expect(matches.length).toBe(5); // Detection failure, OCR failure, No URL, Success, Error catch
         });
 
         it('should have exactly 4 places that hide retake button', () => {

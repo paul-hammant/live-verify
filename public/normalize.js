@@ -46,6 +46,10 @@ function normalizeText(text) {
         // Remove trailing border artifacts (OCR from registration marks/borders)
         // Examples: "text |", "text ~", "text ||", "text | |"
         line = line.replace(/\s*[|~`^*#+=/\\_\[\]{}]+$/, '');
+        // Remove trailing single lowercase letter (OCR artifact)
+        // Examples: "John Doe a", "Company Name b" -> "John Doe", "Company Name"
+        // Preserves uppercase like "Appendix A", "Grade A" which are likely meaningful
+        line = line.replace(/\s+[a-z]$/, '');
         // Collapse multiple spaces into single space
         line = line.replace(/\s+/g, ' ');
         return line;

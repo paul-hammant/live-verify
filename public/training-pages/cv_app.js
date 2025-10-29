@@ -702,10 +702,10 @@ function renderInterests() {
 function renderReferences() {
     const container = document.getElementById('references-list');
     const section = document.querySelector('.references-section');
-    
+
     if (!container) return;
     container.innerHTML = '';
-    
+
     // Check if references exist and have content
     if (!cvData.references || cvData.references.length === 0) {
         // Hide the entire references section if no references
@@ -714,26 +714,100 @@ function renderReferences() {
         }
         return;
     }
-    
+
     // Show the section if it was previously hidden
     if (section) {
         section.style.display = 'block';
     }
-    
+
     cvData.references.forEach(reference => {
         const referenceItem = document.createElement('div');
         referenceItem.className = 'reference-item';
-        
+
         referenceItem.innerHTML = `
             <div class="reference-name">${reference.name}</div>
             <div class="reference-details">${parseMarkdown(reference.reference, true)}</div>
         `;
-        
+
         container.appendChild(referenceItem);
     });
 }
 
+function initializeCredentialOverlay() {
+    const overlay = document.getElementById('credential-overlay');
+    const closeBtn = document.getElementById('close-overlay');
+    const overlayBackground = overlay.querySelector('.overlay-background');
+    const credentialText = document.getElementById('credential-text');
+
+    // Function to hide overlay
+    function hideOverlay() {
+        overlay.style.display = 'none';
+        // Restore body scrolling
+        document.body.style.overflow = '';
+    }
+
+    // Helper function to show overlay for any section
+    function showOverlayForSection(section, index) {
+        const item = cvData[section][index];
+
+        // Check if this item has verifiable data
+        if (!item || !item.verifiable || item.verifiable.length === 0) {
+            console.log('No verifiable data for this item');
+            return;
+        }
+
+        // Populate overlay with plain text (one line per item)
+        credentialText.textContent = item.verifiable.join('\n');
+
+        overlay.style.display = 'flex';
+        // Prevent body scrolling when overlay is open
+        document.body.style.overflow = 'hidden';
+    }
+
+    // Click anywhere to close overlay
+    overlay.addEventListener('click', hideOverlay);
+
+    // Escape key handler
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && overlay.style.display === 'flex') {
+            hideOverlay();
+        }
+    });
+
+    // Add click handlers to education and work items
+    // Use event delegation to handle dynamically rendered items
+    document.addEventListener('click', function(e) {
+        // Don't trigger overlay in edit mode when clicking toggle button
+        if (editMode && e.target.classList.contains('toggle-btn')) {
+            return;
+        }
+
+        // Check if clicked element is an education item or inside one
+        const educationItem = e.target.closest('.education-item');
+        if (educationItem) {
+            const index = parseInt(educationItem.dataset.index);
+            if (!isNaN(index) && cvData.education[index]) {
+                showOverlayForSection('education', index);
+            }
+            return;
+        }
+
+        // Check if clicked element is an employment item or inside one
+        const employmentItem = e.target.closest('.employment-item');
+        if (employmentItem) {
+            const index = parseInt(employmentItem.dataset.index);
+            if (!isNaN(index) && cvData.work[index]) {
+                showOverlayForSection('work', index);
+            }
+            return;
+        }
+    });
+}
+
 function initializeEventListeners() {
+    // Initialize credential overlay listeners
+    initializeCredentialOverlay();
+
     // Print button
     document.getElementById('print-btn').addEventListener('click', function() {
         window.print();
