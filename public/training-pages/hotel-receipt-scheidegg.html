@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Receipt - Grosse Scheidegg</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background: #f5f5f5;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .receipt-container {
+            width: 350px;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .bordered-content {
+            border: 2px solid black;
+            padding: 15px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 0;
+        }
+        .header p {
+            margin: 2px 0;
+            font-size: 14px;
+        }
+        .info, .footer-info {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        .items {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .item {
+            display: flex;
+        }
+        .item .qty {
+            width: 30px;
+        }
+        .item .desc {
+            flex-grow: 1;
+        }
+        .item .price {
+            width: 60px;
+            text-align: right;
+        }
+        .item .total-price {
+            width: 60px;
+            text-align: right;
+        }
+        .total {
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 18px;
+            text-align: right;
+            border-top: 1px solid black;
+            padding-top: 10px;
+        }
+        .total span {
+            margin-right: 20px;
+        }
+        .tax-info, .misc-info {
+            font-size: 14px;
+            margin-top: 15px;
+        }
+        .server-info {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .contact-info {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .verify-url {
+            margin-top: 20px;
+            text-align: center;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="receipt-container">
+        <div class="header">
+            <h1>Berghotel</h1>
+            <h1>Grosse Scheidegg</h1>
+            <p>3818 Grindelwald</p>
+            <p>Familie R. Müller</p>
+        </div>
+
+        <div class="bordered-content">
+            <div class="info">
+                <span>Rech. Nr. 4572</span>
+                <span>30.07.2007/13:29:17</span>
+            </div>
+            <div class="info" style="margin-bottom: 20px;">
+                <span>Bar</span>
+                <span>Tisch 7/01</span>
+            </div>
+
+            <div class="items">
+                <div class="item">
+                    <span class="qty">2x</span>
+                    <span class="desc">Latte Macchiato à 4.50</span>
+                    <span class="price">CHF</span>
+                    <span class="total-price">9.00</span>
+                </div>
+                <div class="item">
+                    <span class="qty">1x</span>
+                    <span class="desc">Gloki à 5.00</span>
+                    <span class="price">CHF</span>
+                    <span class="total-price">5.00</span>
+                </div>
+                <div class="item">
+                    <span class="qty">1x</span>
+                    <span class="desc">Schweinschnitzel à 22.00</span>
+                    <span class="price">CHF</span>
+                    <span class="total-price">22.00</span>
+                </div>
+                <div class="item">
+                    <span class="qty">1x</span>
+                    <span class="desc">Chässpätzli à 18.50</span>
+                    <span class="price">CHF</span>
+                    <span class="total-price">18.50</span>
+                </div>
+            </div>
+
+            <div class="total">
+                <span>Total: CHF</span>
+                <span>54.50</span>
+            </div>
+
+            <div class="tax-info">
+                <p>Incl. 7.6% MwSt 54.50 CHF: 3.85</p>
+            </div>
+
+            <div class="misc-info">
+                <p>Entspricht in Euro 36.33 EUR</p>
+            </div>
+
+            <div class="verify-url">
+                vfy:rcpt.bergwelt-grindelwald.com
+            </div>
+        </div>
+
+        <div class="server-info">
+            <p>Es bediente Sie: Ursula</p>
+        </div>
+
+        <div class="contact-info">
+            <p>MwSt Nr.: 430 234</p>
+            <p>Tel.: 033 853 67 16</p>
+            <p>Fax.: 033 853 67 19</p>
+            <p>E-mail: grossescheidegg@bluewin.ch</p>
+        </div>
+    </div>
+</body>
+</html>
