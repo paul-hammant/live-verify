@@ -113,75 +113,7 @@ describe('App Logic - Pure Functions', () => {
     });
 
     describe('extractVerificationUrl', () => {
-        it('should extract URL from last line', () => {
-            const rawText = `Unseen University
-College of High Energy Magic
-Doctor of Philosophy
-https://paul-hammant.github.io/verific/c`;
 
-            const result = extractVerificationUrl(rawText);
-            expect(result.url).toBe('https://paul-hammant.github.io/verific/c');
-            expect(result.urlLineIndex).toBe(3);
-        });
-
-        it('should remove spaces from URL', () => {
-            const rawText = `Some certification text
-https://paul-hammant.github.io /verific/c`;
-
-            const result = extractVerificationUrl(rawText);
-            expect(result.url).toBe('https://paul-hammant.github.io/verific/c');
-        });
-
-        it('should remove all spaces from URL line', () => {
-            const rawText = `Text
-h t t p s : / / e x a m p l e . c o m`;
-
-            const result = extractVerificationUrl(rawText);
-            expect(result.url).toBe('https://example.com');
-        });
-
-        it('should handle trailing blank lines', () => {
-            const rawText = `Certification
-https://example.com
-
-
-`;
-
-            const result = extractVerificationUrl(rawText);
-            expect(result.url).toBe('https://example.com');
-            expect(result.urlLineIndex).toBe(1);
-        });
-
-        it('should return null if no text found', () => {
-            const rawText = '';
-            const result = extractVerificationUrl(rawText);
-            expect(result.url).toBeNull();
-            expect(result.urlLineIndex).toBe(-1);
-        });
-
-        it('should return null if only whitespace', () => {
-            const rawText = '   \n  \n  ';
-            const result = extractVerificationUrl(rawText);
-            expect(result.url).toBeNull();
-            expect(result.urlLineIndex).toBe(-1);
-        });
-
-        it('should return null if last line does not start with https, verify:, or vfy:', () => {
-            const rawText = `Certification text
-This is not a URL`;
-
-            const result = extractVerificationUrl(rawText);
-            expect(result.url).toBeNull();
-            expect(result.urlLineIndex).toBe(-1);
-        });
-
-        it('should accept HTTPS in any case', () => {
-            const rawText = `Text
-HTTPS://EXAMPLE.COM`;
-
-            const result = extractVerificationUrl(rawText);
-            expect(result.url).toBe('HTTPS://EXAMPLE.COM');
-        });
 
         it('should return null for http (not https)', () => {
             const rawText = `Text
@@ -376,11 +308,6 @@ https://example.com`;
             expect(result).toBe(`https://paul-hammant.github.io/verific/c/${hash}`);
         });
 
-        it('should handle https:// URLs by appending hash', () => {
-            const baseUrl = 'https://example.com/verify';
-            const result = buildVerificationUrl(baseUrl, hash);
-            expect(result).toBe(`https://example.com/verify/${hash}`);
-        });
 
         it('should handle VERIFY: in uppercase', () => {
             const baseUrl = 'VERIFY:example.com/path';

@@ -57,7 +57,7 @@ function rotateCanvas(sourceCanvas, degrees) {
 function extractVerificationUrl(rawText) {
     const rawLines = rawText.split('\n').map(l => l.trim());
 
-    // Scan from bottom to top to find the verify: or https line
+    // Scan from bottom to top to find the verify: or vfy: line
     // Everything below it is likely OCR garbage from dust/artifacts
     for (let i = rawLines.length - 1; i >= 0; i--) {
         const line = rawLines[i];
@@ -67,8 +67,8 @@ function extractVerificationUrl(rawText) {
         const lineNoSpaces = line.replace(/\s+/g, '');
         const lowerLine = lineNoSpaces.toLowerCase();
 
-        // Check if this line starts with verify:, vfy:, or https
-        if (lowerLine.startsWith('verify:') || lowerLine.startsWith('vfy:') || lowerLine.startsWith('https')) {
+        // Check if this line starts with verify: or vfy:
+        if (lowerLine.startsWith('verify:') || lowerLine.startsWith('vfy:')) {
             return {
                 url: lineNoSpaces,
                 urlLineIndex: i
@@ -104,8 +104,8 @@ function buildVerificationUrl(baseUrl, hash) {
         return `https://${withoutPrefix}/${hash}`;
     }
 
-    // Otherwise assume it's already https:// format
-    return `${baseUrl}/${hash}`;
+    // This should not be reached if extractVerificationUrl is working correctly
+    throw new Error('Invalid base URL format. Must start with verify: or vfy:');
 }
 
 /**

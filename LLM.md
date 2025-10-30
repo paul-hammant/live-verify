@@ -44,7 +44,7 @@ verific/
 │   ├── styles.css                   # Responsive design, mobile-first
 │   ├── normalize.js                 # Text normalization + SHA-256 (TESTED)
 │   ├── app-logic.js                 # Pure functions for URL extraction, rotation (TESTED)
-│   ├── app-url-based.js             # Main app logic (camera, OCR, verification)
+│   ├── verific-app.js             # Main app logic (camera, OCR, verification)
 │   ├── test-normalization.html      # Interactive test page for normalization
 │   ├── cv/
 │   │   ├── geometry.js              # OpenCV geometry utilities (TESTED)
@@ -95,10 +95,10 @@ verific/
 **Step 1: Unicode Character Normalization**
 ```javascript
 // Normalize Unicode characters that OCR might produce
-text = text.replace(/[\u201C\u201D\u201E]/g, '"');  // Curly double quotes → straight
-text = text.replace(/[\u2018\u2019]/g, "'");        // Curly single quotes → straight
-text = text.replace(/[\u00AB\u00BB]/g, '"');        // Angle quotes → straight double
-text = text.replace(/[\u2013\u2014]/g, '-');        // En/em dash → hyphen
+text = text.replace(/[“”„]/g, '"');  // Curly double quotes → straight
+text = text.replace(/[‘’]/g, "'");        // Curly single quotes → straight
+text = text.replace(/[«»]/g, '"');        // Angle quotes → straight double
+text = text.replace(/[–—]/g, '-');        // En/em dash → hyphen
 text = text.replace(/\u00A0/g, ' ');                // Non-breaking space → space
 text = text.replace(/\u2026/g, '...');              // Ellipsis → three periods
 ```
@@ -369,7 +369,7 @@ node build-hashes.js
 Creates:
 - `public/hashes.json` - Metadata for all hashes
 - `public/c/{hash}/index.html` - Verification endpoints
-- Updates build timestamp in `public/app-url-based.js`
+- Updates build timestamp in `public/verific-app.js`
 
 ### Generate Training Pages
 
@@ -442,7 +442,7 @@ Click the app title to see build timestamp.
 
 ### Test Coverage Expansion
 - Added `app-logic.test.js` (29 tests) for pure functions
-- Extracted testable logic from `app-url-based.js`
+- Extracted testable logic from `verific-app.js`
 - All production browser code now tested (except DOM/API-dependent code)
 
 ### Documentation Updates
@@ -451,7 +451,7 @@ Click the app title to see build timestamp.
 
 ### Code Deduplication
 - Created `public/normalize.js` as single source of truth
-- Removed duplicate normalization from `app-url-based.js` and test pages
+- Removed duplicate normalization from `verific-app.js` and test pages
 - Build tool mirrors the same logic
 
 ## Known Limitations
@@ -562,7 +562,7 @@ npm test                    # Should see 68 + 16 tests pass
 ```
 
 ### Key Files to Review
-- `public/app-url-based.js` - Main app logic
+- `public/verific-app.js` - Main app logic
 - `public/normalize.js` - Normalization (tested)
 - `public/app-logic.js` - Pure functions (tested)
 - `public/cv/detectSquares.js` - Computer vision
