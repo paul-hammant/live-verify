@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burrito Shop Receipt - Chipotle</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background: #f5f5f5;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .receipt-container {
+            width: 320px;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .bordered-content {
+            border: 2px solid black;
+            padding: 15px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 0;
+        }
+        .header p {
+            margin: 2px 0;
+            font-size: 13px;
+        }
+        .info {
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+        .items {
+            margin-top: 15px;
+            font-size: 13px;
+        }
+        .item {
+            margin-bottom: 10px;
+        }
+        .item-main {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+        }
+        .item-detail {
+            font-size: 11px;
+            margin-left: 10px;
+            color: #555;
+        }
+        .subtotal {
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+        }
+        .tax {
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            margin-top: 5px;
+        }
+        .total {
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 16px;
+            border-top: 1px solid black;
+            padding-top: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .verify-url {
+            margin-top: 15px;
+            text-align: center;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+        .footer-info {
+            margin-top: 20px;
+            font-size: 12px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="receipt-container">
+        <div class="header">
+            <h1>CHIPOTLE</h1>
+            <p>1420 5th Ave</p>
+            <p>Seattle, WA 98101</p>
+        </div>
+
+        <div class="bordered-content">
+            <div class="info">
+                <p>Order #2847</p>
+                <p>01/19/2025 12:18 PM</p>
+                <p>Register: 3</p>
+            </div>
+
+            <div class="items">
+                <div class="item">
+                    <div class="item-main">
+                        <span>Chicken Burrito Bowl</span>
+                        <span>$9.25</span>
+                    </div>
+                    <div class="item-detail">+ Brown Rice, Black Beans</div>
+                    <div class="item-detail">+ Fajita Veggies, Mild Salsa</div>
+                    <div class="item-detail">+ Sour Cream, Cheese</div>
+                </div>
+                <div class="item">
+                    <div class="item-main">
+                        <span>Chips & Guacamole</span>
+                        <span>$4.45</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subtotal">
+                <span>Subtotal:</span>
+                <span>$13.70</span>
+            </div>
+
+            <div class="tax">
+                <span>Tax (10.1%):</span>
+                <span>$1.38</span>
+            </div>
+
+            <div class="total">
+                <span>TOTAL:</span>
+                <span>$15.08</span>
+            </div>
+
+            <div class="verify-url">
+                vfy:receipts.chipotle.com/v
+            </div>
+        </div>
+
+        <div class="footer-info">
+            <p>Cashier: Miguel R.</p>
+            <p>Store #2847</p>
+            <p>Thank you!</p>
+        </div>
+    </div>
+</body>
+</html>

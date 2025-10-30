@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics Receipt - Currys</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background: #f5f5f5;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .receipt-container {
+            width: 380px;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .bordered-content {
+            border: 2px solid black;
+            padding: 15px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+        }
+        .header p {
+            margin: 2px 0;
+            font-size: 13px;
+        }
+        .info {
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+        .items {
+            margin-top: 15px;
+            font-size: 13px;
+        }
+        .item {
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 1px dotted #ccc;
+        }
+        .item-line {
+            display: flex;
+            justify-content: space-between;
+        }
+        .item-desc {
+            font-size: 11px;
+            color: #555;
+            margin-top: 2px;
+        }
+        .subtotal {
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+        }
+        .vat {
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            margin-top: 5px;
+        }
+        .total {
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 18px;
+            border-top: 2px solid black;
+            padding-top: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .verify-url {
+            margin-top: 20px;
+            text-align: center;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+        .footer-info {
+            margin-top: 20px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="receipt-container">
+        <div class="header">
+            <h1>CURRYS</h1>
+            <p>Westfield Shopping Centre</p>
+            <p>London W12 7GF</p>
+        </div>
+
+        <div class="bordered-content">
+            <div class="info">
+                <p>Receipt No: 8472-2841-9374</p>
+                <p>Date: 19/01/2025 14:23</p>
+                <p>Store: 0847 Westfield</p>
+            </div>
+
+            <div class="items">
+                <div class="item">
+                    <div class="item-line">
+                        <span>Dell XPS 13 Laptop</span>
+                        <span>£749.00</span>
+                    </div>
+                    <div class="item-desc">SKU: DELLXPS13-I5-512</div>
+                </div>
+                <div class="item">
+                    <div class="item-line">
+                        <span>Logitech MX Master 3S</span>
+                        <span>£89.99</span>
+                    </div>
+                    <div class="item-desc">SKU: LOG-MX3S-BLK</div>
+                </div>
+                <div class="item">
+                    <div class="item-line">
+                        <span>2-Year Care Plan</span>
+                        <span>£79.00</span>
+                    </div>
+                    <div class="item-desc">Coverage: Accidental Damage</div>
+                </div>
+            </div>
+
+            <div class="subtotal">
+                <span>Subtotal:</span>
+                <span>£917.99</span>
+            </div>
+
+            <div class="vat">
+                <span>VAT @ 20%:</span>
+                <span>£153.00</span>
+            </div>
+
+            <div class="total">
+                <span>TOTAL:</span>
+                <span>£847.99</span>
+            </div>
+
+            <div class="verify-url">
+                vfy:verify.currys.co.uk/r
+            </div>
+        </div>
+
+        <div class="footer-info">
+            <p>Returns accepted within 21 days with receipt</p>
+            <p>Associate: James K. (ID: 4729)</p>
+            <p>VAT No: GB 674 8821 91</p>
+            <p>Phone: 0344 561 1234</p>
+        </div>
+    </div>
+</body>
+</html>

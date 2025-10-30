@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop Receipt - Costa Coffee</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background: #f5f5f5;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .receipt-container {
+            width: 320px;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .bordered-content {
+            border: 2px solid black;
+            padding: 15px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            font-size: 22px;
+            font-weight: bold;
+            margin: 0;
+        }
+        .header p {
+            margin: 2px 0;
+            font-size: 13px;
+        }
+        .info {
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+        .items {
+            margin-top: 15px;
+            font-size: 13px;
+        }
+        .item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+        .total {
+            margin-top: 15px;
+            font-weight: bold;
+            font-size: 16px;
+            border-top: 1px solid black;
+            padding-top: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .tax-info {
+            font-size: 12px;
+            margin-top: 10px;
+        }
+        .verify-url {
+            margin-top: 15px;
+            text-align: center;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+        .footer-info {
+            margin-top: 20px;
+            font-size: 12px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="receipt-container">
+        <div class="header">
+            <h1>COSTA COFFEE</h1>
+            <p>12 High Street</p>
+            <p>Cambridge CB2 3PQ</p>
+        </div>
+
+        <div class="bordered-content">
+            <div class="info">
+                <p>Receipt: 00284719</p>
+                <p>Date: 18/01/2025 09:42</p>
+            </div>
+
+            <div class="items">
+                <div class="item">
+                    <span>Flat White (Large)</span>
+                    <span>£3.65</span>
+                </div>
+                <div class="item">
+                    <span>Cappuccino (Regular)</span>
+                    <span>£3.25</span>
+                </div>
+                <div class="item">
+                    <span>Chocolate Twist</span>
+                    <span>£1.55</span>
+                </div>
+            </div>
+
+            <div class="total">
+                <span>TOTAL:</span>
+                <span>£8.45</span>
+            </div>
+
+            <div class="tax-info">
+                <p>VAT @ 20%: £1.41</p>
+            </div>
+
+            <div class="verify-url">
+                vfy:receipts.costa.co.uk/v
+            </div>
+        </div>
+
+        <div class="footer-info">
+            <p>Served by: Emma</p>
+            <p>VAT No: GB 232 4156 42</p>
+            <p>Thank you for your visit!</p>
+        </div>
+    </div>
+</body>
+</html>

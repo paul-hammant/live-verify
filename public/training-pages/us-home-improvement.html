@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Improvement Receipt - Home Depot</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background: #f5f5f5;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .receipt-container {
+            width: 400px;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .bordered-content {
+            border: 2px solid black;
+            padding: 15px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+        }
+        .header p {
+            margin: 2px 0;
+            font-size: 13px;
+        }
+        .info {
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+        .items {
+            margin-top: 15px;
+            font-size: 13px;
+        }
+        .item {
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 1px dotted #ccc;
+        }
+        .item-line {
+            display: flex;
+            justify-content: space-between;
+        }
+        .item-desc {
+            font-size: 11px;
+            color: #555;
+            margin-top: 2px;
+        }
+        .item-sku {
+            font-size: 11px;
+            color: #777;
+        }
+        .subtotal {
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+        }
+        .tax {
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            margin-top: 5px;
+        }
+        .total {
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 18px;
+            border-top: 2px solid black;
+            padding-top: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .payment {
+            margin-top: 15px;
+            font-size: 13px;
+        }
+        .verify-url {
+            margin-top: 20px;
+            text-align: center;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+        .footer-info {
+            margin-top: 20px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="receipt-container">
+        <div class="header">
+            <h1>THE HOME DEPOT</h1>
+            <p>3400 SE 82nd Avenue</p>
+            <p>Portland, OR 97266</p>
+        </div>
+
+        <div class="bordered-content">
+            <div class="info">
+                <p>Receipt: 9482-7361-4829-3847</p>
+                <p>Date: 01/20/2025 10:47 AM</p>
+                <p>Store: #4729 Portland SE</p>
+            </div>
+
+            <div class="items">
+                <div class="item">
+                    <div class="item-line">
+                        <span>DEWALT 20V Combo Kit (5-Tool)</span>
+                        <span>$499.00</span>
+                    </div>
+                    <div class="item-desc">DCK521D2 - 20V MAX Lithium Ion</div>
+                    <div class="item-sku">SKU: 1004837291</div>
+                </div>
+                <div class="item">
+                    <div class="item-line">
+                        <span>2x4x8 Pressure Treated Lumber (Qty: 12)</span>
+                        <span>$84.48</span>
+                    </div>
+                    <div class="item-sku">SKU: 1000066233 @ $7.04 ea</div>
+                </div>
+                <div class="item">
+                    <div class="item-line">
+                        <span>Deck Screws 3" (5lb Box)</span>
+                        <span>$34.97</span>
+                    </div>
+                    <div class="item-desc">GRK R4 Multi-Purpose</div>
+                    <div class="item-sku">SKU: 1003848729</div>
+                </div>
+                <div class="item">
+                    <div class="item-line">
+                        <span>Olympic Maximum Stain (Gal, Cedar)</span>
+                        <span>$42.98</span>
+                    </div>
+                    <div class="item-sku">SKU: 1000574829</div>
+                </div>
+                <div class="item">
+                    <div class="item-line">
+                        <span>3" Paint Brush (Pro Grade)</span>
+                        <span>$18.97</span>
+                    </div>
+                    <div class="item-sku">SKU: 1002947382</div>
+                </div>
+            </div>
+
+            <div class="subtotal">
+                <span>Subtotal:</span>
+                <span>$680.40</span>
+            </div>
+
+            <div class="tax">
+                <span>Sales Tax (0.0%):</span>
+                <span>$0.00</span>
+            </div>
+
+            <div class="total">
+                <span>TOTAL:</span>
+                <span>$680.40</span>
+            </div>
+
+            <div class="payment">
+                <p>VISA ending in 8472: $680.40</p>
+            </div>
+
+            <div class="verify-url">
+                vfy:receipts.homedepot.com/v
+            </div>
+        </div>
+
+        <div class="footer-info">
+            <p>Returns: 90 days with receipt</p>
+            <p>Power tools: 90-day satisfaction guarantee</p>
+            <p>Associate: Chris M. (ID: HD47291)</p>
+            <p>Questions? 1-800-HOME-DEPOT</p>
+        </div>
+    </div>
+</body>
+</html>
