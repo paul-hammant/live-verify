@@ -67,6 +67,11 @@ const testCases = [
         description: 'UK Coffee Shop receipt (£8.45)'
     },
     {
+        screenshot: 'uk-corner-shop.png',
+        expectedHash: '',
+        description: 'UK Corner Shop receipt (£4.85)'
+    },
+    {
         screenshot: 'uk-electronics-store.png',
         expectedHash: '9b06b8cec89c0a4ce80ac1e64063ec7ae9533079b45c994aadbfe190ab0406c3',
         description: 'UK Electronics Store receipt (£847.99)'

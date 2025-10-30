@@ -65,6 +65,11 @@ const testCases = [
         description: 'UK Coffee Shop receipt (£8.45, rotated 265°)'
     },
     {
+        screenshot: 'uk-corner-shop-rotated-265.png',
+        expectedHash: '',
+        description: 'UK Corner Shop receipt (£4.85, rotated 265°)'
+    },
+    {
         screenshot: 'uk-electronics-store-rotated-265.png',
         expectedHash: '9b06b8cec89c0a4ce80ac1e64063ec7ae9533079b45c994aadbfe190ab0406c3',
         description: 'UK Electronics Store receipt (£847.99, rotated 265°)'
@@ -114,6 +119,11 @@ const testCases = [
         screenshot: 'uk-coffee-shop-rotated-175.png',
         expectedHash: 'cb6e761f3a90513b526ffb903e9be30ddac89bb6672d0ad3bda028abeaf46c67',
         description: 'UK Coffee Shop receipt (£8.45, rotated 175°)'
+    },
+    {
+        screenshot: 'uk-corner-shop-rotated-175.png',
+        expectedHash: '',
+        description: 'UK Corner Shop receipt (£4.85, rotated 175°)'
     },
     {
         screenshot: 'uk-electronics-store-rotated-175.png',
@@ -166,6 +176,11 @@ const testCases = [
         screenshot: 'uk-coffee-shop-rotated-85.png',
         expectedHash: 'cb6e761f3a90513b526ffb903e9be30ddac89bb6672d0ad3bda028abeaf46c67',
         description: 'UK Coffee Shop receipt (£8.45, rotated 85°)'
+    },
+    {
+        screenshot: 'uk-corner-shop-rotated-85.png',
+        expectedHash: '',
+        description: 'UK Corner Shop receipt (£4.85, rotated 85°)'
     },
     {
         screenshot: 'uk-electronics-store-rotated-85.png',
