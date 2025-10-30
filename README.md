@@ -75,7 +75,7 @@ Many more use cases documented below.
 │  are dates or numbers or some   │
 │  non predictable in here too    │
 │  <something variable here>      │
-│  verify:example.com/hashes      │  ← Verification URL
+│  verify:example.com/hashes      │  ← Verification URL (also accepts vfy:)
 │                                 │
 └─────────────────────────────────┘
 ```
@@ -100,7 +100,7 @@ Each page's text (including page number) creates a unique hash. You can verify p
 
 1. Scans printed documents with phone camera to detect the registration marks
 2. OCR that text (via Tesseract.js for example)
-2. Extracts verification URL from the document (`verify:` changed to `https://`)
+2. Extracts verification URL from the document (`verify:` or `vfy:` changed to `https://`)
 3. Normalizes other text (removes extra spaces, etc.)
 4. Computes SHA-256 hash of the claim (one-way hash - important concept): `fb92e9f3086212ed68adbec9e9b32767a378cdd198b9d58b34f3c8718dbb9afe`
 5. Checks the hash on the website indicated - https://example.com/hashes/fb92e9f3086212ed68adbec9e9b32767a378cdd198b9d58b34f3c8718dbb9afe is the one for the above
@@ -118,6 +118,10 @@ The system allows anyone to verify these printed claims without requiring access
 Read about one way hash functions on [Wikipedia](https://en.wikipedia.org/wiki/Cryptographic_hash_function)
 
 ## OCR Limitations: What Works Today vs Future Needs
+
+## Rationale
+
+- I want to use my choice of Verification App to verify the item you are showing me, not yours. Vendors should not force a single proprietary verifier; open, URL-based verification lets anyone use a trusted app of their choosing.
 
 **Current OCR technology (Tesseract.js v5)**
 

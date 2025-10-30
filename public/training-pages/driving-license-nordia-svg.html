@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nordia Driving License - SVG Training Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .instructions {
+            background: #e3f2fd;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border-left: 4px solid #2196f3;
+        }
+
+        .instructions h2 {
+            color: #1976d2;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .instructions ol {
+            margin-left: 20px;
+            line-height: 1.8;
+        }
+
+        .license-svg-wrapper {
+            width: 100%;
+            max-width: 600px;
+            margin: 30px auto;
+        }
+
+        svg {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .info {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 30px;
+            border-left: 4px solid #ffc107;
+        }
+
+        .info strong {
+            color: #856404;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+                background: white;
+            }
+            .container {
+                max-width: 100%;
+                padding: 0;
+                box-shadow: none;
+            }
+            .instructions, .info {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>DRIVING LICENCE</h1>
+
+        <div class="instructions">
+            <h2>📱 How to Use This Training Page</h2>
+            <ol>
+                <li>Open the <a href="https://paul-hammant.github.io/verific/" target="_blank">Verific webapp</a> on your phone</li>
+                <li>Display this page on your computer screen, or print it on white cardstock</li>
+                <li>Use your phone camera to scan the license card below</li>
+                <li>Align the black border on your phone to frame the license details</li>
+                <li>Click "Capture & Verify" to verify the license</li>
+                <li><strong>Note:</strong> The black-bordered region contains only the verifiable data fields and verification URL</li>
+            </ol>
+        </div>
+
+        <div class="license-svg-wrapper">
+            <!-- ID-1 card aspect ratio ~85.6 x 53.98 mm (1.585:1). Use 856x540 canvas for crispness. -->
+            <svg viewBox="0 0 856 540" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+                <defs>
+                    <!-- Background gradient -->
+                    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#e8f4f8;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#d4e9f0;stop-opacity:1" />
+                    </linearGradient>
+
+                    <!-- Watermark pattern -->
+                    <pattern id="watermark" x="0" y="0" width="150" height="150" patternUnits="userSpaceOnUse">
+                        <text x="75" y="75" font-size="40" font-weight="bold"
+                              fill="#f0f8ff" opacity="0.08" text-anchor="middle"
+                              transform="rotate(-45 75 75)">NORDIA</text>
+                    </pattern>
+
+                    <!-- Geometric pattern -->
+                    <pattern id="geo" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+                        <line x1="0" y1="0" x2="100" y2="100" stroke="#b3d9ff" stroke-width="0.5" opacity="0.3"/>
+                        <line x1="100" y1="0" x2="0" y2="100" stroke="#b3d9ff" stroke-width="0.5" opacity="0.3"/>
+                        <circle cx="50" cy="50" r="2" fill="#b3d9ff" opacity="0.2"/>
+                    </pattern>
+                </defs>
+
+                <!-- Card background -->
+                <rect width="856" height="540" fill="url(#bgGradient)"/>
+                <rect width="856" height="540" fill="url(#geo)"/>
+                <rect width="856" height="540" fill="url(#watermark)"/>
+
+                <!-- Security line patterns removed to avoid faint horizontals -->
+
+                <!-- ===== HEADER SECTION (above black border) ===== -->
+                <!-- Flag top-left -->
+                <g transform="translate(22, 18)")>
+                    <rect width="44" height="34" fill="none" stroke="#333" stroke-width="1"/>
+                    <rect width="14.66" height="34" fill="#0052CC"/>
+                    <rect x="14.66" width="29.34" height="34" fill="#FFD700"/>
+                </g>
+
+                <!-- Title -->
+                <text x="360" y="48" font-size="28" font-weight="bold" text-anchor="middle" fill="#1a1a1a">DRIVING LICENCE</text>
+                <text x="360" y="68" font-size="12" text-anchor="middle" fill="#1a1a1a">NORDIA • ISSUED 2023</text>
+
+                <!-- Validity badge top-right -->
+                <g transform="translate(800, 18)">
+                    <text x="0" y="18" font-size="12" font-weight="bold" text-anchor="end" fill="#1a1a1a">Valid</text>
+                    <text x="0" y="38" font-size="16" font-weight="bold" text-anchor="end" fill="#1a1a1a">2031</text>
+                </g>
+
+                <!-- Photo placeholder (left side, OUTSIDE border) -->
+                <image x="36" y="96" width="150" height="200"
+                       href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/A_man_having_an_idea_before_the_light_bulp.jpg/500px-A_man_having_an_idea_before_the_light_bulp.jpg"
+                       preserveAspectRatio="xMidYMid slice"/>
+                <rect x="36" y="96" width="150" height="200" fill="none" stroke="#8f9aa3" stroke-width="1"/>
+                <rect x="35" y="95" width="152" height="202" rx="6" ry="6" fill="none" stroke="#cfd8dc" stroke-width="2" opacity="0.9"/>
+
+                <!-- ===== REGISTRATION MARKS (black border) ===== -->
+                <!-- OCR box compact layout for ID-1 aspect; created a gap from the photo -->
+                <rect x="200" y="90" width="524" height="300" fill="none" stroke="black" stroke-width="4"/>
+
+                <!-- ===== SCANNABLE SECTION (inside black border) ===== -->
+                <!-- Single column of key-value pairs -->
+                <!-- Table-like alignment: monospace values, consistent rows -->
+                <g font-size="16" font-family="Courier New" fill="#1a1a1a">
+                    <text x="232" y="120" font-weight="bold">Licence No.:</text>
+                    <text x="372" y="120">DL-NL-847629</text>
+
+                    <text x="232" y="145" font-weight="bold">Surname:</text>
+                    <text x="372" y="145">Bergström</text>
+
+                    <text x="232" y="170" font-weight="bold">Given Names:</text>
+                    <text x="372" y="170">Karin</text>
+
+                    <text x="232" y="195" font-weight="bold">Date of Birth:</text>
+                    <text x="372" y="195">15 MAR 1987</text>
+
+                    <text x="232" y="220" font-weight="bold">Address:</text>
+                    <text x="372" y="220">Hafjord 42, Nordia</text>
+
+                    <text x="232" y="245" font-weight="bold">Sex:</text>
+                    <text x="372" y="245">F</text>
+
+                    <text x="232" y="270" font-weight="bold">Issued:</text>
+                    <text x="372" y="270">22 JUN 2023</text>
+
+                    <text x="232" y="295" font-weight="bold">Expires:</text>
+                    <text x="372" y="295">21 JUN 2031</text>
+
+                    <text x="232" y="318" font-weight="bold">Permitted:</text>
+                    <text x="372" y="318">AM, A1, A, B, C</text>
+                </g>
+
+                <!-- Verification URL inside OCR black box; raised to reduce unused bottom space -->
+                <text x="498" y="344" font-size="16" font-weight="bold" font-family="Courier New" text-anchor="middle" fill="#1a1a1a">vfy:drv-lic.gov.na/c</text>
+
+                <!-- Verification blurb (RHS, vertical) -->
+                <g transform="translate(774, 243) rotate(-90)">
+                    <text x="0" y="0" text-anchor="middle" font-size="13" font-family="Arial" fill="#666">
+                        <tspan>For verification, use the Verific app at:</tspan>
+                        <tspan x="0" dy="16" font-weight="bold">paul-hammant.github.io/verific</tspan>
+                        <tspan x="0" dy="18">You may not trust other tools. The result</tspan>
+                        <tspan x="0" dy="16">is a simple status like VALID.</tspan>
+                    </text>
+                </g>
+
+                <!-- Signature -->
+                <text x="36" y="450" font-size="10" font-family="Arial" fill="#333">Signature:</text>
+                <path d="M 36 480 L 186 480" stroke="#333" stroke-width="1"/>
+                <text x="111" y="475" font-size="24" font-family="cursive" fill="#000080" text-anchor="middle">Karin Bergström</text>
+
+                <!-- Organ Donor -->
+                <g transform="translate(740, 440)">
+                    <rect x="0" y="0" width="80" height="40" rx="5" fill="#D32F2F"/>
+                    <text x="40" y="25" font-size="16" font-weight="bold" fill="white" text-anchor="middle">DONOR ❤️</text>
+                </g>
+
+                <!-- ===== Blurb (below OCR box) ===== -->
+                <text x="472" y="420" font-size="9" font-family="Arial" fill="#333" text-anchor="middle">
+                    <tspan x="472" dy="0">This licence is the property of the issuing Authority (Nordia Transport Authority, Driver Licensing Division • NLTD) and must be produced on demand to</tspan>
+                    <tspan x="472" dy="12">Police or Transport Officers. If found, please return to: PO Box 1201, Hafjord, Nordia. Tampering with or altering this card is an offence.</tspan>
+                </text>
+
+                <!-- Bottom footer (non-OCR, larger, uses full width) -->
+                <g font-family="Arial" fill="#334" opacity="0.95">
+                    <text x="28" y="516" font-size="12">Nordia Transport Authority • NLTD • Licence No. DL-NL-847629</text>
+                    <text x="828" y="516" font-size="12" text-anchor="end">See back for emergency info and security features</text>
+                </g>
+
+                <!-- Categories section (RHS) removed; moved inside OCR block -->
+            </svg>
+        </div>
+
+        <div class="info">
+            <strong>ℹ️ About This Document:</strong> This is a fictional Nordia driving license created for testing the Verific document verification system. The black-bordered region contains only the verifiable text data that OCR will extract, normalize, and hash for verification.
+        </div>
+    </div>
+</body>
+</html>

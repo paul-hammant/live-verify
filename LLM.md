@@ -205,13 +205,17 @@ Falls back to canvas capture from video element if ImageCapture not supported.
 
 ### Verification Logic
 
-**The `verify:` URL scheme:**
+**Verification URL schemes: `verify:` and `vfy:`**
 
-Documents print base URLs using the `verify:` scheme instead of `https://`:
-- Printed on document: `verify:paul-hammant.github.io/verific/c`
-- App converts to: `https://paul-hammant.github.io/verific/c/{hash}`
+Documents should print base URLs using either the long `verify:` scheme or the short `vfy:` alias instead of `https://`:
+- Example (long): `verify:paul-hammant.github.io/verific/c`
+- Example (short): `vfy:paul-hammant.github.io/verific/c`
 
-This is cleaner on the document (shorter, no protocol noise) while still being clear it's for verification.
+The app converts either form to `https://` and appends the computed hash:
+- `verify:example.com/c` → `https://example.com/c/{hash}`
+- `vfy:example.com/c` → `https://example.com/c/{hash}`
+
+This keeps printed documents concise while remaining explicit that the URL is for verification.
 
 **OCR Optimization Metadata (`.verific-meta.json`):**
 
