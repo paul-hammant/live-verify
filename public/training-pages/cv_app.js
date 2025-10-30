@@ -813,13 +813,13 @@ function initializeEventListeners() {
         window.print();
     });
     
-    // Download PDF button - with CDN library support
+    // Download as Image button
     const downloadBtn = document.createElement('button');
-    downloadBtn.id = 'download-pdf-btn';
-    downloadBtn.title = `Download ${docType} as PDF`;
-    downloadBtn.innerHTML = '📄';
+    downloadBtn.id = 'download-image-btn';
+    downloadBtn.title = `Download ${docType} as Image`;
+    downloadBtn.innerHTML = '🖼️'; // Image icon
     downloadBtn.addEventListener('click', function() {
-        downloadPDF();
+        downloadImage();
     });
     
     // Add download button next to print button
@@ -1010,67 +1010,59 @@ function adaptDocumentLanguage() {
     });
 }
 
-// PDF Download functionality with dynamic library loading
-function downloadPDF() {
+// Image Download functionality with dynamic library loading
+function downloadImage() {
     const basics = cvData.basics;
     const filename = `${basics.name.replace(/\s+/g, '_')}_${docType}`;
-    
-    // Check if libraries are already available (try both naming conventions)
-    const jsPDFAvailable = typeof jsPDF !== 'undefined' || typeof window.jspdf !== 'undefined';
+
+    // Check if html2canvas is available
     const html2canvasAvailable = typeof html2canvas !== 'undefined';
-    
-    if (html2canvasAvailable && jsPDFAvailable) {
-        generatePDFWithLibraries(filename);
+
+    if (html2canvasAvailable) {
+        generateImage(filename);
     } else {
-        // Dynamically load the required libraries
-        loadPDFLibraries().then(() => {
-            generatePDFWithLibraries(filename);
+        // Dynamically load the required library
+        loadHtml2CanvasLibrary().then(() => {
+            generateImage(filename);
         }).catch(error => {
-            console.error('Failed to load PDF libraries:', error);
-            // Fallback to browser print dialog
-            const message = `PDF libraries failed to load. Using browser print:\n\n` +
-                           `1. The print dialog will open\n` +
-                           `2. Change "Destination" to "Save as PDF"\n` +
-                           `3. Click "Save"`;
-            alert(message);
-            window.print();
+            console.error('Failed to load html2canvas library:', error);
+            alert('Image generation library failed to load. Please try again.');
         });
     }
 }
 
-// Function to dynamically load PDF generation libraries
-function loadPDFLibraries() {
+// Function to dynamically load html2canvas library
+function loadHtml2CanvasLibrary() {
     return new Promise((resolve, reject) => {
         // Check if already loading or loaded
-        if (window.pdfLibrariesLoading) {
+        if (window.html2canvasLoading) {
             // Wait for existing load to complete
             setTimeout(() => {
-                if (typeof html2canvas !== 'undefined' && (typeof jsPDF !== 'undefined' || typeof window.jspdf !== 'undefined')) {
+                if (typeof html2canvas !== 'undefined') {
                     resolve();
                 } else {
-                    reject(new Error('Libraries still loading'));
+                    reject(new Error('html2canvas still loading'));
                 }
             }, 1000);
             return;
         }
-        
-        window.pdfLibrariesLoading = true;
-        
+
+        window.html2canvasLoading = true;
+
         // Show loading indicator
-        showLoadingIndicator('Loading PDF libraries...');
-        
+        showLoadingIndicator('Loading image library...');
+
         let html2canvasLoaded = typeof html2canvas !== 'undefined';
-        let jsPDFLoaded = typeof jsPDF !== 'undefined' || typeof window.jspdf !== 'undefined';
-        
+
         function checkComplete() {
-            if (html2canvasLoaded && jsPDFLoaded) {
+            if (html2canvasLoaded) {
                 hideLoadingIndicator();
-                window.pdfLibrariesLoading = false;
-                // Small delay to ensure libraries are fully initialized
+                window.html2canvasLoading = false;
+                // Small delay to ensure library is fully initialized
                 setTimeout(resolve, 100);
             }
         }
-        
+
         // Load html2canvas if needed
         if (!html2canvasLoaded) {
             const html2canvasScript = document.createElement('script');
@@ -1081,34 +1073,14 @@ function loadPDFLibraries() {
             };
             html2canvasScript.onerror = () => {
                 hideLoadingIndicator();
-                window.pdfLibrariesLoading = false;
+                window.html2canvasLoading = false;
                 reject(new Error('Failed to load html2canvas'));
             };
             document.head.appendChild(html2canvasScript);
         }
-        
-        // Load jsPDF if needed
-        if (!jsPDFLoaded) {
-            const jsPDFScript = document.createElement('script');
-            jsPDFScript.src = 'https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js';
-            jsPDFScript.onload = () => {
-                jsPDFLoaded = true;
-                // jsPDF loads as window.jspdf when loaded dynamically
-                if (typeof window.jspdf !== 'undefined' && !window.jsPDF) {
-                    window.jsPDF = window.jspdf; // Create alias for consistency
-                }
-                checkComplete();
-            };
-            jsPDFScript.onerror = () => {
-                hideLoadingIndicator();
-                window.pdfLibrariesLoading = false;
-                reject(new Error('Failed to load jsPDF'));
-            };
-            document.head.appendChild(jsPDFScript);
-        }
-        
-        // If both already loaded, resolve immediately
-        if (html2canvasLoaded && jsPDFLoaded) {
+
+        // If already loaded, resolve immediately
+        if (html2canvasLoaded) {
             checkComplete();
         }
     });
@@ -1139,7 +1111,7 @@ function showLoadingIndicator(message) {
         </div>
     `;
     document.body.appendChild(indicator);
-    
+
     // Add loading animation CSS
     if (!document.getElementById('loading-animation-styles')) {
         const loadingStyles = document.createElement('style');
@@ -1163,154 +1135,36 @@ function hideLoadingIndicator() {
     }
 }
 
-function generatePDFWithLibraries(filename) {
-    // Hide controls during PDF generation
+function generateImage(filename) {
+    // Hide controls during image generation
     const controls = document.querySelector('.controls');
     if (controls) controls.style.display = 'none';
-    
-    // Get the app element
+
     const appElement = document.getElementById('app');
-    
-    // Determine page format based on document type
-    const pageFormat = isResume ? 'letter' : 'a4';
-    const pageDimensions = isResume 
-        ? { width: 215.9, height: 279.4, dpiWidth: 816, dpiHeight: 1056 } // US Letter in mm and pixels at 96 DPI
-        : { width: 210, height: 297, dpiWidth: 794, dpiHeight: 1123 };     // A4 in mm and pixels at 96 DPI
-    
-    // Configure html2canvas for high quality capture
+
     const options = {
         scale: 2, // Higher resolution
         useCORS: true,
         allowTaint: true,
         backgroundColor: '#ffffff',
-        windowWidth: pageDimensions.dpiWidth,
-        windowHeight: pageDimensions.dpiHeight,
-        width: appElement.scrollWidth,
-        height: appElement.scrollHeight
     };
-    
+
     html2canvas(appElement, options).then(canvas => {
         // Restore controls
         if (controls) controls.style.display = 'flex';
-        
-        // Handle different jsPDF loading methods (CDN vs dynamic)
-        let PDFConstructor;
-        if (typeof jsPDF !== 'undefined' && jsPDF.jsPDF) {
-            PDFConstructor = jsPDF.jsPDF;
-        } else if (typeof window.jspdf !== 'undefined') {
-            PDFConstructor = window.jspdf.jsPDF;
-        } else {
-            throw new Error('jsPDF library not properly loaded');
-        }
-        
-        const pdf = new PDFConstructor({
-            orientation: 'portrait',
-            unit: 'mm',
-            format: pageFormat,
-            compress: true
-        });
-        
-        // Page dimensions in mm based on document type
-        const pageWidth = pageDimensions.width;
-        const pageHeight = pageDimensions.height;
-        const margin = 10; // 10mm margins
-        const contentWidth = pageWidth - (2 * margin);
-        const contentHeight = pageHeight - (2 * margin);
-        
-        // Calculate scaling to fit width
-        const imgWidth = canvas.width;
-        const imgHeight = canvas.height;
-        const scale = contentWidth / (imgWidth / (options.scale * 3.78)); // Convert pixels to mm (assuming 96 DPI)
-        
-        // Calculate how many pages we need
-        const scaledHeight = (imgHeight / (options.scale * 3.78)) * scale;
-        const totalPages = Math.ceil(scaledHeight / contentHeight);
-        
-        // Generate each page
-        for (let page = 0; page < totalPages; page++) {
-            if (page > 0) {
-                pdf.addPage();
-            }
-            
-            // Calculate the portion of image to show on this page
-            const sourceY = page * (contentHeight / scale) * options.scale * 3.78;
-            const sourceHeight = Math.min(
-                (contentHeight / scale) * options.scale * 3.78,
-                imgHeight - sourceY
-            );
-            
-            // Create a temporary canvas for this page's content
-            const pageCanvas = document.createElement('canvas');
-            pageCanvas.width = imgWidth;
-            pageCanvas.height = sourceHeight;
-            const pageCtx = pageCanvas.getContext('2d');
-            
-            // Draw the portion of the image for this page
-            pageCtx.drawImage(
-                canvas,
-                0, sourceY, imgWidth, sourceHeight,
-                0, 0, imgWidth, sourceHeight
-            );
-            
-            // Add this page's content to the PDF
-            const pageData = pageCanvas.toDataURL('image/png');
-            pdf.addImage(
-                pageData, 'PNG',
-                margin, margin,
-                contentWidth, (sourceHeight / (options.scale * 3.78)) * scale
-            );
-        }
-        
-        // Save the PDF
-        pdf.save(`${filename}.pdf`);
+
+        const link = document.createElement('a');
+        link.href = canvas.toDataURL('image/png');
+        link.download = `${filename}.png`;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+
     }).catch(error => {
         if (controls) controls.style.display = 'flex';
-        console.error('PDF generation failed:', error);
-        // Try reloading libraries once more before giving up
-        if (!window.pdfLibrariesReloaded) {
-            window.pdfLibrariesReloaded = true;
-            console.log('Retrying PDF generation with library reload...');
-            downloadPDF();
-        } else {
-            alert('PDF generation failed after retry. Please try again or use the print button.');
-        }
+        console.error('Image generation failed:', error);
+        alert('Image generation failed. Please try again.');
     });
-}
-
-function generateBasicPDF(filename) {
-    // Basic jsPDF without html2canvas (text-only)
-    let PDFConstructor;
-    if (typeof jsPDF !== 'undefined' && jsPDF.jsPDF) {
-        PDFConstructor = jsPDF.jsPDF;
-    } else if (typeof window.jspdf !== 'undefined') {
-        PDFConstructor = window.jspdf.jsPDF;
-    } else {
-        console.error('jsPDF not available for basic PDF generation');
-        window.print();
-        return;
-    }
-    
-    const pdf = new PDFConstructor();
-    
-    // Add basic text content
-    const basics = cvData.basics;
-    pdf.setFontSize(20);
-    pdf.text(basics.name, 20, 30);
-    
-    pdf.setFontSize(12);
-    let y = 50;
-    
-    // Add contact info
-    pdf.text(`Email: ${basics.email}`, 20, y);
-    y += 10;
-    pdf.text(`Phone: ${basics.phone}`, 20, y);
-    y += 20;
-    
-    // Add note about limited functionality
-    pdf.setFontSize(10);
-    pdf.text('Note: This is a basic PDF. For full formatting, include html2canvas CDN.', 20, y);
-    
-    pdf.save(`${filename}.pdf`);
 }
 
 // Export functionality for potential future use
@@ -1323,5 +1177,5 @@ window.CVApp = {
     print: function() {
         document.getElementById('print-btn').click();
     },
-    downloadPDF: downloadPDF
+    downloadImage: downloadImage
 };
