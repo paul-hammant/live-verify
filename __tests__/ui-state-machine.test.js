@@ -121,13 +121,14 @@ describe('UI State Machine - Code Analysis', () => {
 
             const handlerCode = captureHandler[0];
 
-            // Extract the catch block
-            const catchBlock = handlerCode.match(/catch\s*\([^)]*\)\s*\{[\s\S]*?\n    \}/);
+            // Extract the main catch block (the one that handles the top-level try-catch)
+            // Look for the catch block that contains the error handling code
+            const catchBlock = handlerCode.match(/catch\s*\(error\)\s*\{[\s\S]*?retakeBtn\.style\.display[\s\S]*?\n    \}/);
             expect(catchBlock).not.toBeNull();
 
             const catchCode = catchBlock[0];
 
-            // Verify retakeBtn is shown in error handler (line 592 - bug fix)
+            // Verify retakeBtn is shown in error handler (line 661 after refactoring)
             expect(catchCode).toMatch(/retakeBtn\.style\.display = ''/);
 
             // Should NOT have the old comment that said user needs to stop/restart
@@ -137,7 +138,8 @@ describe('UI State Machine - Code Analysis', () => {
         it('error handler should make retake button visible, not hidden', () => {
             const captureHandler = appCode.match(/captureBtn\.addEventListener\('click',[\s\S]*?\n\}\);/);
             const handlerCode = captureHandler[0];
-            const catchBlock = handlerCode.match(/catch\s*\([^)]*\)\s*\{[\s\S]*?\n    \}/);
+            // Extract the main catch block that handles errors
+            const catchBlock = handlerCode.match(/catch\s*\(error\)\s*\{[\s\S]*?retakeBtn\.style\.display[\s\S]*?\n    \}/);
             const catchCode = catchBlock[0];
 
             // After error, retakeBtn must be visible (empty string, not 'none')

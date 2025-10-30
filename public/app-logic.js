@@ -67,10 +67,23 @@ function extractVerificationUrl(rawText) {
         const lineNoSpaces = line.replace(/\s+/g, '');
         const lowerLine = lineNoSpaces.toLowerCase();
 
-        // Check if this line starts with verify: or vfy:
-        if (lowerLine.startsWith('verify:') || lowerLine.startsWith('vfy:')) {
+        // Check if this line starts with verify: or vfy: (with OCR tolerance)
+        // OCR often confuses: V/v, f/t, i/l/1, so we check multiple patterns
+        if (lowerLine.startsWith('verify:') || lowerLine.startsWith('vfy:') ||
+            lowerLine.startsWith('verity:') || lowerLine.startsWith('vty:') ||
+            lowerLine.startsWith('verily:') || lowerLine.startsWith('veryfy:')) {
+            // Normalize common OCR errors in the prefix
+            let normalizedUrl = lineNoSpaces;
+            const lowerUrl = normalizedUrl.toLowerCase();
+
+            if (lowerUrl.startsWith('verity:') || lowerUrl.startsWith('vty:') ||
+                lowerUrl.startsWith('verily:') || lowerUrl.startsWith('veryfy:')) {
+                // Replace the corrupted prefix with correct 'vfy:'
+                normalizedUrl = 'vfy:' + normalizedUrl.substring(normalizedUrl.indexOf(':') + 1);
+            }
+
             return {
-                url: lineNoSpaces,
+                url: normalizedUrl,
                 urlLineIndex: i
             };
         }

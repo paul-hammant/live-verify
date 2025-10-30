@@ -335,6 +335,253 @@ verifyAnotherBtn.addEventListener('click', () => {
     updateStatus('✅', 'Camera active - fill the frame; marks just off-screen', '#48bb78');
 });
 
+// Core processing function - extracted for testability
+// Processes a canvas through the full OCR-to-hash verification pipeline
+async function processImageCanvas(canvas, captureMethod = 'Unknown') {
+    // Update capture diagnostics visible to user
+    captureInfo.style.display = 'block';
+    captureMethodEl.textContent = `Capture method: ${captureMethod}`;
+    captureResolutionEl.textContent = `Resolution: ${canvas.width} x ${canvas.height}`;
+
+    // Freeze the viewfinder by drawing the captured image onto the overlay canvas (if video exists)
+    if (video && video.clientWidth > 0) {
+        overlay.width = video.clientWidth;
+        overlay.height = video.clientHeight;
+        const overlayCtx = overlay.getContext('2d');
+        overlayCtx.clearRect(0, 0, overlay.width, overlay.height);
+        overlayCtx.drawImage(canvas, 0, 0, overlay.width, overlay.height);
+    }
+
+    // NOW show processing status and progress bar
+    updateStatus('⏳', 'Processing...', '#ed8936');
+    progressBar.style.display = 'block';
+
+    // Scroll to the processing section
+    progressBar.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+    // Run OpenCV-based detection (always-on, no silent fallback)
+    updateStatus('🧭', 'Detecting registration square...', '#ed8936');
+    await (window.cvReady || Promise.reject(new Error('Computer vision not ready')));
+    const detection = await window.detectSquaresFromCanvas(canvas);
+
+    if (!detection.ok) {
+        // Expected failure: user needs to adjust framing
+        // Show the full captured image so user can see what was captured
+        croppedImage.src = canvas.toDataURL();
+        textResult.style.display = 'block';
+
+        progressBar.style.display = 'none';
+        updateStatus('❌', 'Could not detect framing rectangle - adjust framing and retry', '#f56565');
+        retakeBtn.style.display = '';
+        return; // Early return, not an exception
+    }
+
+    let cropped = detection.croppedCanvas;
+
+    // Try OCR at multiple orientations and pick the best one
+    // Order by likelihood: 0° most common, 90°/270° sideways, 180° very unlikely
+    updateStatus('🔄', 'Detecting text orientation...', '#ed8936');
+    debugLog('Trying orientations (0°, 90°, 270°, 180°)...');
+
+    const orientations = [
+        { rotation: 0, canvas: cropped },
+        { rotation: 90, canvas: rotateCanvas(cropped, 90) },
+        { rotation: 270, canvas: rotateCanvas(cropped, 270) },
+        { rotation: 180, canvas: rotateCanvas(cropped, 180) }
+    ];
+
+    let bestResult = null;
+    let bestConfidence = 0;
+    let bestRotation = 0;
+
+    for (const { rotation, canvas } of orientations) {
+        try {
+            const result = await Tesseract.recognize(canvas.toDataURL(), 'eng', {
+                logger: m => {
+                    if (m.status === 'recognizing text') {
+                        debugLog(`OCR ${rotation}°: ${Math.round(m.progress * 100)}%`);
+                    }
+                }
+            });
+
+            const confidence = result.data.confidence || 0;
+            debugLog(`${rotation}°: confidence ${confidence.toFixed(1)}`);
+
+            if (confidence > bestConfidence) {
+                bestConfidence = confidence;
+                bestResult = result;
+                bestRotation = rotation;
+            }
+        } catch (e) {
+            debugLog(`${rotation}° failed: ${e.message}`);
+        }
+    }
+
+    if (!bestResult) {
+        // Expected failure: OCR couldn't extract text at any rotation
+        // Show the cropped image so user can see what was captured
+        croppedImage.src = cropped.toDataURL();
+        textResult.style.display = 'block';
+
+        progressBar.style.display = 'none';
+        updateStatus('❌', 'OCR could not extract text - try better lighting or focus', '#f56565');
+        retakeBtn.style.display = '';
+        return; // Early return, not an exception
+    }
+
+    debugLog(`Best: ${bestRotation}° (conf: ${bestConfidence.toFixed(1)})`);
+
+    // Use the best orientation
+    if (bestRotation !== 0) {
+        cropped = rotateCanvas(cropped, bestRotation);
+    }
+
+    // Display the correctly oriented cropped image
+    croppedImage.src = cropped.toDataURL();
+    textResult.style.display = 'block';
+
+    const rawText = bestResult.data.text;
+    console.log('Raw OCR Text:', rawText);
+
+    // Display extracted text and switch to extracted tab
+    extractedText.textContent = rawText;
+    switchToTab('extracted');
+
+    // Extract verification URL (using app-logic.js)
+    const { url: baseUrl, urlLineIndex } = extractVerificationUrl(rawText);
+
+    if (!baseUrl) {
+        // Expected failure: No verification URL found in OCR text
+        croppedImage.src = cropped.toDataURL();
+        textResult.style.display = 'block';
+
+        // Show the extracted text so user can see what was captured
+        extractedText.textContent = rawText;
+        switchToTab('extracted');
+
+        progressBar.style.display = 'none';
+        updateStatus('❌', 'No verification URL found in text - check content and retry', '#f56565');
+        retakeBtn.style.display = '';
+        return; // Early return, not an exception
+    }
+
+    currentBaseUrl = baseUrl; // Store for re-verification when user edits normalized text
+    debugLog(`Base URL: ${baseUrl.substring(0, 40)}...`);
+    console.log('Base URL:', baseUrl);
+
+    // Extract certification text (using app-logic.js)
+    const certText = extractCertText(rawText, urlLineIndex);
+    debugLog(`Cert text: ${certText.substring(0, 50)}...`);
+
+    // Normalize text according to the rules
+    updateStatus('🔧', 'Normalizing text...', '#ed8936');
+    const normalized = normalizeText(certText);
+    debugLog(`Normalized: ${normalized.length} chars`);
+    console.log('Normalized Text:', normalized);
+
+    // Display normalized text and switch to normalized tab
+    normalizedText.value = normalized;
+    switchToTab('normalized');
+
+    // Generate SHA-256 hash
+    updateStatus('🔐', 'Generating hash...', '#ed8936');
+    const hash = await sha256(normalized);
+    console.log('SHA-256 Hash:', hash);
+
+    hashValue.textContent = hash;
+    hashResult.style.display = 'block';
+
+    // Build full verification URL (converts verify: to https:// and appends hash)
+    const fullVerificationUrl = buildVerificationUrl(baseUrl, hash);
+    console.log('Full Verification URL:', fullVerificationUrl);
+
+    // Verify against the full URL
+    updateStatus('🌐', 'Verifying against claimed URL...', '#ed8936');
+    const verifyResult = await verifyAgainstClaimedUrl(fullVerificationUrl, hash);
+
+    // If 404, try fetching .verific-meta.json and retry with optimized OCR
+    if (verifyResult.status === 404) {
+        console.log('Got 404, attempting to fetch .verific-meta.json for optimized OCR retry...');
+        updateStatus('🔍', 'Fetching OCR optimization settings...', '#ed8936');
+
+        const meta = await fetchVerificMeta(baseUrl);
+
+        if (meta && meta.tesseract) {
+            console.log('Found .verific-meta.json, retrying OCR with optimized settings:', meta.tesseract);
+            debugLog('Retrying OCR with domain-specific settings...');
+
+            // Retry OCR with optimized Tesseract settings
+            updateStatus('🔄', 'Retrying OCR with optimized settings...', '#ed8936');
+
+            const orientations = [
+                { rotation: 0, canvas: cropped },
+                { rotation: 90, canvas: rotateCanvas(cropped, 90) },
+                { rotation: 270, canvas: rotateCanvas(cropped, 270) },
+                { rotation: 180, canvas: rotateCanvas(cropped, 180) }
+            ];
+
+            let retryBestResult = null;
+            let retryBestConfidence = 0;
+            let retryBestRotation = 0;
+
+            for (const { rotation, canvas } of orientations) {
+                try {
+                    const result = await Tesseract.recognize(canvas.toDataURL(), meta.tesseract.lang || 'eng', meta.tesseract);
+                    const confidence = result.data.confidence || 0;
+                    debugLog(`Retry ${rotation}°: confidence ${confidence.toFixed(1)}`);
+
+                    if (confidence > retryBestConfidence) {
+                        retryBestConfidence = confidence;
+                        retryBestResult = result;
+                        retryBestRotation = rotation;
+                    }
+                } catch (e) {
+                    debugLog(`Retry ${rotation}° failed: ${e.message}`);
+                }
+            }
+
+            if (retryBestResult) {
+                debugLog(`Retry best: ${retryBestRotation}° (conf: ${retryBestConfidence.toFixed(1)})`);
+
+                // Re-process with new OCR result
+                const retryRawText = retryBestResult.data.text;
+                console.log('Retry OCR Text:', retryRawText);
+
+                const { url: retryBaseUrl, urlLineIndex: retryUrlLineIndex } = extractVerificationUrl(retryRawText);
+                const retryCertText = extractCertText(retryRawText, retryUrlLineIndex);
+                const retryNormalized = normalizeText(retryCertText);
+                const retryHash = await sha256(retryNormalized);
+
+                console.log('Retry SHA-256 Hash:', retryHash);
+                hashValue.textContent = retryHash;
+
+                const retryFullUrl = buildVerificationUrl(retryBaseUrl, retryHash);
+                console.log('Retry Verification URL:', retryFullUrl);
+
+                // Try verification again
+                updateStatus('🌐', 'Verifying with retry hash...', '#ed8936');
+                await verifyAgainstClaimedUrl(retryFullUrl, retryHash);
+            } else {
+                console.log('Retry OCR also failed at all orientations');
+            }
+        } else {
+            console.log('No .verific-meta.json found or no tesseract settings');
+        }
+    }
+
+    progressBar.style.display = 'none';
+    updateStatus('✅', 'Verification complete', '#48bb78');
+
+    // Show Retake button after successful capture
+    retakeBtn.style.display = '';
+
+    // Scroll to bottom to show verification result
+    verificationResult.scrollIntoView({ behavior: 'smooth', block: 'end' });
+
+    // Enable manual editing of normalized text with auto re-verification
+    setupNormalizedTextEditor();
+}
+
 // Capture and process
 captureBtn.addEventListener('click', async () => {
     try {
@@ -386,246 +633,8 @@ captureBtn.addEventListener('click', async () => {
             ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
         }
 
-        // Update capture diagnostics visible to user
-        captureInfo.style.display = 'block';
-        captureMethodEl.textContent = `Capture method: ${usedMethod}`;
-        captureResolutionEl.textContent = `Resolution: ${canvas.width} x ${canvas.height}`;
-
-        // Freeze the viewfinder by drawing the captured image onto the overlay canvas
-        overlay.width = video.clientWidth;
-        overlay.height = video.clientHeight;
-        const overlayCtx = overlay.getContext('2d');
-        overlayCtx.clearRect(0, 0, overlay.width, overlay.height);
-        overlayCtx.drawImage(canvas, 0, 0, overlay.width, overlay.height);
-
-        // NOW show processing status and progress bar
-        updateStatus('⏳', 'Processing...', '#ed8936');
-        progressBar.style.display = 'block';
-
-        // Scroll to the processing section
-        progressBar.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-
-        // Run OpenCV-based detection (always-on, no silent fallback)
-        updateStatus('🧭', 'Detecting registration square...', '#ed8936');
-        await (window.cvReady || Promise.reject(new Error('Computer vision not ready')));
-        const detection = await window.detectSquaresFromCanvas(canvas);
-
-        if (!detection.ok) {
-            // Expected failure: user needs to adjust framing
-            // Show the full captured image so user can see what was captured
-            croppedImage.src = canvas.toDataURL();
-            textResult.style.display = 'block';
-
-            progressBar.style.display = 'none';
-            updateStatus('❌', 'Could not detect framing rectangle - adjust framing and retry', '#f56565');
-            retakeBtn.style.display = '';
-            return; // Early return, not an exception
-        }
-
-        let cropped = detection.croppedCanvas;
-
-        // Try OCR at multiple orientations and pick the best one
-        // Order by likelihood: 0° most common, 90°/270° sideways, 180° very unlikely
-        updateStatus('🔄', 'Detecting text orientation...', '#ed8936');
-        debugLog('Trying orientations (0°, 90°, 270°, 180°)...');
-
-        const orientations = [
-            { rotation: 0, canvas: cropped },
-            { rotation: 90, canvas: rotateCanvas(cropped, 90) },
-            { rotation: 270, canvas: rotateCanvas(cropped, 270) },
-            { rotation: 180, canvas: rotateCanvas(cropped, 180) }
-        ];
-
-        let bestResult = null;
-        let bestConfidence = 0;
-        let bestRotation = 0;
-
-        for (const { rotation, canvas } of orientations) {
-            try {
-                const result = await Tesseract.recognize(canvas.toDataURL(), 'eng', {
-                    logger: m => {
-                        if (m.status === 'recognizing text') {
-                            debugLog(`OCR ${rotation}°: ${Math.round(m.progress * 100)}%`);
-                        }
-                    }
-                });
-
-                const confidence = result.data.confidence || 0;
-                debugLog(`${rotation}°: confidence ${confidence.toFixed(1)}`);
-
-                if (confidence > bestConfidence) {
-                    bestConfidence = confidence;
-                    bestResult = result;
-                    bestRotation = rotation;
-                }
-            } catch (e) {
-                debugLog(`${rotation}° failed: ${e.message}`);
-            }
-        }
-
-        if (!bestResult) {
-            // Expected failure: OCR couldn't extract text at any rotation
-            // Show the cropped image so user can see what was captured
-            croppedImage.src = cropped.toDataURL();
-            textResult.style.display = 'block';
-
-            progressBar.style.display = 'none';
-            updateStatus('❌', 'OCR could not extract text - try better lighting or focus', '#f56565');
-            retakeBtn.style.display = '';
-            return; // Early return, not an exception
-        }
-
-        debugLog(`Best: ${bestRotation}° (conf: ${bestConfidence.toFixed(1)})`);
-
-        // Use the best orientation
-        if (bestRotation !== 0) {
-            cropped = rotateCanvas(cropped, bestRotation);
-        }
-
-        // Display the correctly oriented cropped image
-        croppedImage.src = cropped.toDataURL();
-        textResult.style.display = 'block';
-
-        const rawText = bestResult.data.text;
-        console.log('Raw OCR Text:', rawText);
-
-        // Display extracted text and switch to extracted tab
-        extractedText.textContent = rawText;
-        switchToTab('extracted');
-
-        // Extract verification URL (using app-logic.js)
-        const { url: baseUrl, urlLineIndex } = extractVerificationUrl(rawText);
-
-        if (!baseUrl) {
-            // Expected failure: No verification URL found in OCR text
-            croppedImage.src = cropped.toDataURL();
-            textResult.style.display = 'block';
-
-            // Show the extracted text so user can see what was captured
-            extractedText.textContent = rawText;
-            switchToTab('extracted');
-
-            progressBar.style.display = 'none';
-            updateStatus('❌', 'No verification URL found in text - check content and retry', '#f56565');
-            retakeBtn.style.display = '';
-            return; // Early return, not an exception
-        }
-
-        currentBaseUrl = baseUrl; // Store for re-verification when user edits normalized text
-        debugLog(`Base URL: ${baseUrl.substring(0, 40)}...`);
-        console.log('Base URL:', baseUrl);
-
-        // Extract certification text (using app-logic.js)
-        const certText = extractCertText(rawText, urlLineIndex);
-        debugLog(`Cert text: ${certText.substring(0, 50)}...`);
-
-        // Normalize text according to the rules
-        updateStatus('🔧', 'Normalizing text...', '#ed8936');
-        const normalized = normalizeText(certText);
-        debugLog(`Normalized: ${normalized.length} chars`);
-        console.log('Normalized Text:', normalized);
-
-        // Display normalized text and switch to normalized tab
-        normalizedText.value = normalized;
-        switchToTab('normalized');
-
-        // Generate SHA-256 hash
-        updateStatus('🔐', 'Generating hash...', '#ed8936');
-        const hash = await sha256(normalized);
-        console.log('SHA-256 Hash:', hash);
-
-        hashValue.textContent = hash;
-        hashResult.style.display = 'block';
-
-        // Build full verification URL (converts verify: to https:// and appends hash)
-        const fullVerificationUrl = buildVerificationUrl(baseUrl, hash);
-        console.log('Full Verification URL:', fullVerificationUrl);
-
-        // Verify against the full URL
-        updateStatus('🌐', 'Verifying against claimed URL...', '#ed8936');
-        const verifyResult = await verifyAgainstClaimedUrl(fullVerificationUrl, hash);
-
-        // If 404, try fetching .verific-meta.json and retry with optimized OCR
-        if (verifyResult.status === 404) {
-            console.log('Got 404, attempting to fetch .verific-meta.json for optimized OCR retry...');
-            updateStatus('🔍', 'Fetching OCR optimization settings...', '#ed8936');
-
-            const meta = await fetchVerificMeta(baseUrl);
-
-            if (meta && meta.tesseract) {
-                console.log('Found .verific-meta.json, retrying OCR with optimized settings:', meta.tesseract);
-                debugLog('Retrying OCR with domain-specific settings...');
-
-                // Retry OCR with optimized Tesseract settings
-                updateStatus('🔄', 'Retrying OCR with optimized settings...', '#ed8936');
-
-                const orientations = [
-                    { rotation: 0, canvas: cropped },
-                    { rotation: 90, canvas: rotateCanvas(cropped, 90) },
-                    { rotation: 270, canvas: rotateCanvas(cropped, 270) },
-                    { rotation: 180, canvas: rotateCanvas(cropped, 180) }
-                ];
-
-                let retryBestResult = null;
-                let retryBestConfidence = 0;
-                let retryBestRotation = 0;
-
-                for (const { rotation, canvas } of orientations) {
-                    try {
-                        const result = await Tesseract.recognize(canvas.toDataURL(), meta.tesseract.lang || 'eng', meta.tesseract);
-                        const confidence = result.data.confidence || 0;
-                        debugLog(`Retry ${rotation}°: confidence ${confidence.toFixed(1)}`);
-
-                        if (confidence > retryBestConfidence) {
-                            retryBestConfidence = confidence;
-                            retryBestResult = result;
-                            retryBestRotation = rotation;
-                        }
-                    } catch (e) {
-                        debugLog(`Retry ${rotation}° failed: ${e.message}`);
-                    }
-                }
-
-                if (retryBestResult) {
-                    debugLog(`Retry best: ${retryBestRotation}° (conf: ${retryBestConfidence.toFixed(1)})`);
-
-                    // Re-process with new OCR result
-                    const retryRawText = retryBestResult.data.text;
-                    console.log('Retry OCR Text:', retryRawText);
-
-                    const { url: retryBaseUrl, urlLineIndex: retryUrlLineIndex } = extractVerificationUrl(retryRawText);
-                    const retryCertText = extractCertText(retryRawText, retryUrlLineIndex);
-                    const retryNormalized = normalizeText(retryCertText);
-                    const retryHash = await sha256(retryNormalized);
-
-                    console.log('Retry SHA-256 Hash:', retryHash);
-                    hashValue.textContent = retryHash;
-
-                    const retryFullUrl = buildVerificationUrl(retryBaseUrl, retryHash);
-                    console.log('Retry Verification URL:', retryFullUrl);
-
-                    // Try verification again
-                    updateStatus('🌐', 'Verifying with retry hash...', '#ed8936');
-                    await verifyAgainstClaimedUrl(retryFullUrl, retryHash);
-                } else {
-                    console.log('Retry OCR also failed at all orientations');
-                }
-            } else {
-                console.log('No .verific-meta.json found or no tesseract settings');
-            }
-        }
-
-        progressBar.style.display = 'none';
-        updateStatus('✅', 'Verification complete', '#48bb78');
-
-        // Show Retake button after successful capture
-        retakeBtn.style.display = '';
-
-        // Scroll to bottom to show verification result
-        verificationResult.scrollIntoView({ behavior: 'smooth', block: 'end' });
-
-        // Enable manual editing of normalized text with auto re-verification
-        setupNormalizedTextEditor();
+        // Call the extracted processing function
+        await processImageCanvas(canvas, usedMethod);
 
     } catch (error) {
         console.error('Error processing image:', error);
@@ -923,3 +932,91 @@ downloadImageBtn.addEventListener('click', () => {
         downloadImageBtn.textContent = originalText;
     }, 2000);
 });
+
+// ============================================================================
+// TEST HOOK: Expose verification pipeline for automated testing
+// ============================================================================
+// This function allows E2E tests to inject images directly into the pipeline
+// without requiring camera access. It uses the same processImageCanvas function
+// that production code uses, eliminating code duplication.
+//
+// Parameters:
+//   canvas: HTMLCanvasElement containing the image to verify
+//   options: {
+//     mockVerification: boolean - if true, skips HTTP verification and expects expectedHash
+//     expectedHash: string - hash to compare against (only used when mockVerification=true)
+//   }
+window.testVerifyFromCanvas = async function(canvas, options = {}) {
+    try {
+        console.log('[TEST HOOK] Starting verification from provided canvas', options);
+
+        // Reset state before processing (same as capture button does)
+        normalizedTextEditorSetup = false;
+        currentBaseUrl = null;
+        textResult.style.display = 'none';
+        hashResult.style.display = 'none';
+        verificationResult.style.display = 'none';
+        switchToTab('captured');
+
+        // If mockVerification enabled, temporarily override verifyAgainstClaimedUrl
+        let originalVerify = null;
+        if (options.mockVerification && options.expectedHash) {
+            console.log('[TEST HOOK] Mock verification enabled, expecting hash:', options.expectedHash);
+            originalVerify = window.verifyAgainstClaimedUrl;
+
+            // Mock the verification function
+            window.verifyAgainstClaimedUrl = async function(claimedUrl, computedHash) {
+                console.log('[TEST HOOK MOCK] Comparing hashes:', { computed: computedHash, expected: options.expectedHash });
+
+                // Compare computed hash with expected hash
+                const matches = computedHash === options.expectedHash;
+
+                // Update UI to show mock verification result
+                verificationResult.style.display = 'block';
+                verificationStatus.className = 'verification-status';
+                verificationUrl.innerHTML = `Mock verification: <strong>${claimedUrl}</strong>`;
+
+                if (matches) {
+                    verificationStatus.textContent = '✅ MOCK VERIFIED - Hash matches expected';
+                    verificationStatus.classList.add('verified');
+                    return { status: 200, body: 'OK', mocked: true };
+                } else {
+                    verificationStatus.textContent = `❌ MOCK FAILED - Hash mismatch (expected: ${options.expectedHash.substring(0, 16)}...)`;
+                    verificationStatus.classList.add('not-found');
+                    return { status: 'HASH_MISMATCH', mocked: true };
+                }
+            };
+        }
+
+        try {
+            // Use the same processing pipeline as production code
+            await processImageCanvas(canvas, 'Test Hook');
+
+            // Return success with key extracted values for test assertions
+            return {
+                success: true,
+                rawText: extractedText.textContent,
+                normalized: normalizedText.value,
+                hash: hashValue.textContent,
+                baseUrl: currentBaseUrl,
+                hashMatches: options.mockVerification ? (hashValue.textContent === options.expectedHash) : undefined,
+                // Note: Full verification results are in the DOM, tests can inspect them
+            };
+        } finally {
+            // Restore original verification function if it was mocked
+            if (originalVerify) {
+                console.log('[TEST HOOK] Restoring original verifyAgainstClaimedUrl');
+                window.verifyAgainstClaimedUrl = originalVerify;
+            }
+        }
+
+    } catch (error) {
+        console.error('[TEST HOOK] Error:', error);
+        return {
+            success: false,
+            error: error.name || 'EXCEPTION',
+            message: error.message || String(error),
+            stack: error.stack
+        };
+    }
+};

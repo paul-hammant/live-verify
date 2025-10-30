@@ -19,13 +19,28 @@ screenshot_page() {
     echo "📸 Screenshotting: ${html_file} -> ${output_name}.png"
 
     cd "${SCREENSHOTS_DIR}"
-    firefox -headless -screenshot "file://${PAGES_DIR}/${html_file}"
+    # Use 4K resolution (3840x2160) with 3x device scaling for better OCR quality
+    # This effectively gives us 11520x6480 rendering quality for crisp text
+    firefox -headless --window-size=3840,2160 --force-device-scale-factor=3 -screenshot "file://${PAGES_DIR}/${html_file}"
 
     # Trim whitespace and add 20px border
     convert screenshot.png -trim -bordercolor white -border 20 "${output_name}.png"
     rm screenshot.png
 
     echo "✅ Saved: ${SCREENSHOTS_DIR}/${output_name}.png"
+
+    # Create rotated versions (85, 175, 265 degrees - off by 5° from 90°, 180°, 270°)
+    echo "🔄 Rotating: ${output_name}.png -> ${output_name}-rotated-85.png (85° - off 90°)"
+    convert "${output_name}.png" -rotate 85 "${output_name}-rotated-85.png"
+    echo "✅ Saved: ${SCREENSHOTS_DIR}/${output_name}-rotated-85.png"
+
+    echo "🔄 Rotating: ${output_name}.png -> ${output_name}-rotated-175.png (175° - off 180°)"
+    convert "${output_name}.png" -rotate 175 "${output_name}-rotated-175.png"
+    echo "✅ Saved: ${SCREENSHOTS_DIR}/${output_name}-rotated-175.png"
+
+    echo "🔄 Rotating: ${output_name}.png -> ${output_name}-rotated-265.png (265° - off 270°)"
+    convert "${output_name}.png" -rotate 265 "${output_name}-rotated-265.png"
+    echo "✅ Saved: ${SCREENSHOTS_DIR}/${output_name}-rotated-265.png"
 }
 
 echo "Starting screenshot generation..."

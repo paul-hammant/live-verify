@@ -3,7 +3,76 @@
 ## Running Tests
 
 ```bash
-npm test
+npm test              # All tests (unit + E2E)
+npm run test:unit     # Jest only (fast)
+npm run test:e2e      # Playwright only (slow, includes OCR)
+```
+
+### Screenshot Verification Tests (E2E)
+
+The E2E test suite includes automated screenshot verification tests that exercise the entire pipeline from image → detection → OCR → normalization → hash → verification.
+
+**Prerequisites:**
+- ImageMagick installed (`sudo apt install imagemagick`)
+- Screenshots generated from training pages
+
+**Generate screenshots:**
+```bash
+cd public/training-pages
+chmod +x screenshot-training-pages.sh
+./screenshot-training-pages.sh
+```
+
+This creates trimmed screenshots in `test/fixtures/screenshots/` that are used by Playwright tests.
+
+**Run screenshot verification tests:**
+```bash
+# Option 1: Generate screenshots + run tests (recommended)
+# This script handles starting/stopping the server automatically
+chmod +x test-screenshots.sh
+./test-screenshots.sh
+
+# Option 2: Manual testing (for debugging)
+# Start server in one terminal:
+cd public && python3 -m http.server 8000
+
+# Run tests in another terminal:
+npm run test:e2e -- screenshot-verification
+```
+
+**Prerequisites for E2E tests:**
+- Local HTTP server running on port 8000 (script handles this automatically)
+- Screenshots generated in `test/fixtures/screenshots/`
+
+**What it tests:**
+- Registration mark detection on real rendered pages
+- Multi-orientation OCR (0°, 90°, 180°, 270°)
+- Text normalization accuracy
+- Hash computation matches expected values
+- Verification status (200/OK or REVOKED/NOT_OK)
+
+**Test cases:**
+1. Bachelor of Thaumatology (2 formats)
+2. Master of Applied Anthropics
+3. Doctorate in High Energy Magic
+4. Medical License (REVOKED) - tests failure case
+5. Driving License (SVG-based)
+6. Hotel Receipt
+
+**Design for Testability:**
+
+The app exposes a test hook `window.testVerifyFromCanvas()` that allows E2E tests to inject images directly into the verification pipeline without requiring camera access. This is clearly marked in `public/verific-app.js` and doesn't interfere with production code.
+
+```javascript
+// In test:
+const result = await page.evaluate(async (base64) => {
+    // Create canvas from image
+    const canvas = createCanvasFromBase64(base64);
+    // Run full pipeline
+    return await window.testVerifyFromCanvas(canvas);
+}, screenshotBase64);
+
+// Returns: { success, hash, verificationStatus, ... }
 ```
 
 Fixtures
