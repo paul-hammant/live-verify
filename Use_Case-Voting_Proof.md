@@ -555,7 +555,7 @@ OCR handles English + Spanish hybrid text (Tesseract multilanguage mode).
 - [Verification_Charges.md](Verification_Charges.md) - Ethical framework for who pays (public good funded by government)
 
 **Related use cases:**
-- [Use_Case-Sales_Recepts.md](Use_Case-Sales_Recepts.md) - Similar clearinghouse/auditor model (independent third-party verification)
+- [Use_Case-Sales_Receipts.md](Use_Case-Sales_Receipts.md) - Similar clearinghouse/auditor model (independent third-party verification)
 - [Use_Case-Educational_Degrees.md](Use_Case-Educational_Degrees.md) - Privacy-preserving verification (ballot secrecy vs credential verification)
 - [Use_Case-Government_IDs.md](Use_Case-Government_IDs.md) - Government-issued documents with verification (similar trust model)
 

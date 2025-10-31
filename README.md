@@ -312,7 +312,7 @@ In short, if the claim is aimed at humans reading it and is printed on paper (or
 
 2. **[B2B Product Certifications](Use_Case-Product_Labeling.md)** - Preventing supplier impersonation fraud (MedPro/Intertek case)
 
-3. **[Receipt Verification](Use_Case-Sales_Recepts.md)** - Eliminating duplicate expense claims across employers
+3. **[Receipt Verification](Use_Case-Sales_Receipts.md)** - Eliminating duplicate expense claims across employers
    <img src="https://paul-hammant.github.io/verific/screenshots/uk-coffee-shop.png" width="150"> <img src="https://paul-hammant.github.io/verific/screenshots/us-burrito-shop.png" width="150"> <img src="https://paul-hammant.github.io/verific/screenshots/hotel-receipt-scheidegg.png" width="150"> <img src="https://paul-hammant.github.io/verific/screenshots/us-home-improvement.png" width="150">
 
 4. **[Medical Licenses](Use_Case-Medical_License.md)** - Revocable credentials with domain-binding security
@@ -2045,7 +2045,7 @@ When to choose what
 
 **Questions or feedback?**
 - Open an [issue on GitHub](https://github.com/paul-hammant/verific/issues)
-- Read the detailed use cases: [Education](Use_Case-Educational_Degrees.md), [Medical Licenses](Use_Case-Medical_License.md), [Receipts](Use_Case-Sales_Recepts.md), [Product Certs](Use_Case-Product_Labeling.md), [Government IDs](Use_Case-Government_IDs.md), [Voting](Use_Case-Voting_Proof.md)
+- Read the detailed use cases: [Education](Use_Case-Educational_Degrees.md), [Medical Licenses](Use_Case-Medical_License.md), [Receipts](Use_Case-Sales_Receipts.md), [Product Certs](Use_Case-Product_Labeling.md), [Government IDs](Use_Case-Government_IDs.md), [Voting](Use_Case-Voting_Proof.md)
 
 ## License
 

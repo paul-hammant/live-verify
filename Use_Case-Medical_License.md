@@ -355,7 +355,7 @@ GET https://mbc.ca.gov/licenses/fake_hash_value...
 - **Educational Degrees** ([Use_Case-Educational_Degrees.md](Use_Case-Educational_Degrees.md)) - Professional credentials, but medical licenses can be revoked
 
 **Different from:**
-- **Receipts** ([Use_Case-Sales_Recepts.md](Use_Case-Sales_Recepts.md)) - No revocation, no photo, high-volume
+- **Receipts** ([Use_Case-Sales_Receipts.md](Use_Case-Sales_Receipts.md)) - No revocation, no photo, high-volume
 - **Product Certifications** ([Use_Case-Product_Labeling.md](Use_Case-Product_Labeling.md)) - B2B verification, no photo, anti-impersonation focus
 
 **Key distinction:** Medical licenses require **real-time status checks** (suspensions happen mid-career) unlike static credentials (degrees don't get "revoked" retroactively).

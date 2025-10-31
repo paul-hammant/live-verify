@@ -21,7 +21,7 @@ E2E tests reference base screenshots from this directory. Rotated variants are k
 ## Usage
 
 These screenshots can be:
-- Embedded in documentation (e.g., Use_Case-Sales_Recepts.md)
+- Embedded in documentation (e.g., Use_Case-Sales_Receipts.md)
 - Linked from the web: `https://paul-hammant.github.io/verific/screenshots/uk-coffee-shop.png`
 - Used for demos and presentations
 

@@ -398,7 +398,7 @@ Tot  : $  .67      ← Partial readability
 3. **Photo archive** - Store high-resolution photo alongside hash
 4. **Longer retention** - Restaurant keeps hash valid for 7+ years even if receipt fades
 
-See [Use_Case-Sales_Recepts.md](Use_Case-Sales_Recepts.md) lines 106-124.
+See [Use_Case-Sales_Receipts.md](Use_Case-Sales_Receipts.md) lines 106-124.
 
 ### Future: On-Device AI (2026+)
 

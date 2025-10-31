@@ -507,4 +507,4 @@ GET https://dmv.ca.gov/dl/{computed_hash}
 - [Use_Case-Medical_License.md](Use_Case-Medical_License.md) - Similar government-issued credential with SUSPENDED/REVOKED status codes
 - [Use_Case-Product_Labeling.md](Use_Case-Product_Labeling.md) - Domain binding example (Intertek vs. fake certifiers)
 - [Use_Case-Voting_Proof.md](Use_Case-Voting_Proof.md) - Similar independent auditor model (E&Y verifies ballots, not government)
-- [Use_Case-Sales_Recepts.md](Use_Case-Sales_Recepts.md) - Commercial verification (employers verify receipts, similar to hotels verifying IDs)
+- [Use_Case-Sales_Receipts.md](Use_Case-Sales_Receipts.md) - Commercial verification (employers verify receipts, similar to hotels verifying IDs)
