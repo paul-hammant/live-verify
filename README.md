@@ -317,10 +317,19 @@ In short, if the claim is aimed at humans reading it and is printed on paper (or
 **Detailed use cases:** The following six scenarios demonstrate specific advantages of OCR-to-hash verification in real-world applications:
 
 1. **[Education Credentials](Use_Case-Educational_Degrees.md)** - degree/etc verification with privacy-preserving public registries
+   <img src="https://paul-hammant.github.io/verific/screenshots/bachelor-thaumatology.png" width="200"> <img src="https://paul-hammant.github.io/verific/screenshots/master-applied-anthropics.png" width="200"> <img src="https://paul-hammant.github.io/verific/screenshots/doctorate-high-energy-magic.png" width="200">
+
 2. **[B2B Product Certifications](Use_Case-Product_Labeling.md)** - Preventing supplier impersonation fraud (MedPro/Intertek case)
+
 3. **[Receipt Verification](Use_Case-Sales_Recepts.md)** - Eliminating duplicate expense claims across employers
+   <img src="https://paul-hammant.github.io/verific/screenshots/uk-coffee-shop.png" width="150"> <img src="https://paul-hammant.github.io/verific/screenshots/us-burrito-shop.png" width="150"> <img src="https://paul-hammant.github.io/verific/screenshots/hotel-receipt-scheidegg.png" width="150"> <img src="https://paul-hammant.github.io/verific/screenshots/us-home-improvement.png" width="150">
+
 4. **[Medical Licenses](Use_Case-Medical_License.md)** - Revocable credentials with domain-binding security
+   <img src="https://paul-hammant.github.io/verific/screenshots/medical-license-revoked.png" width="200">
+
 5. **[Government ID Verification](Use_Case-Government_IDs.md)** - Cryptographic checks on plain text aspects (hotel checkin, traffic stop, entering a pub/bar)
+   <img src="https://paul-hammant.github.io/verific/screenshots/driving-license-nordia-svg.png" width="250">
+
 6. **[Voting Ballot Proof](Use_Case-Voting_Proof.md)** - Verifiable vote counting with independent auditor confirmation
 
 There are more potential OCR-to-Hash uses listed below.
