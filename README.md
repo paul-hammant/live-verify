@@ -80,6 +80,54 @@ Many more use cases documented below.
 └─────────────────────────────────┘
 ```
 
+### Verification Pipeline
+
+```mermaid
+flowchart TD
+    Start([User captures<br/>document image]) --> Detect[Detect registration marks<br/>using OpenCV]
+    Detect --> Transform[Apply perspective transform<br/>to straighten document<br/>handles off-angles like 85°/175°/265°]
+    Transform --> Extract[Extract bordered region]
+    Extract --> TryAllRotations[Try OCR at ALL 4 rotations:<br/>0°, 90°, 180°, 270°<br/>Tesseract.js on each]
+    TryAllRotations --> CompareConfidence[Compare OCR confidence scores<br/>Pick rotation with highest confidence]
+    CompareConfidence --> CheckConfidence{Best confidence<br/>good enough?}
+    CheckConfidence -->|No - OCR failed all rotations| ShowOCRError[❌ OCR could not extract text<br/>Try better lighting/focus]
+    ShowOCRError --> End([End])
+    CheckConfidence -->|Yes| UseRotation[Use best rotation]
+    UseRotation --> ParseVerify[Parse verify:domain.com/path from OCR text]
+    ParseVerify --> FetchMeta[Fetch https://domain.com/.verific-meta.json<br/>for normalization hints]
+    FetchMeta --> Normalize[Normalize text:<br/>- Strip leading/trailing spaces<br/>- Collapse multiple spaces<br/>- Remove verify: line<br/>- Apply domain-specific rules]
+    Normalize --> Hash[Compute SHA-256 hash<br/>of normalized text]
+    Hash --> BuildURL[Build verification URL:<br/>https://domain.com/path/hash]
+    BuildURL --> Verify[HTTP GET request<br/>to verification URL]
+    Verify --> CheckHTTP{HTTP status?}
+    CheckHTTP -->|404 Not Found| ShowNotFound[❌ FAILS VERIFICATION<br/>Hash not in database]
+    CheckHTTP -->|Network Error| ShowError[⚠️ VERIFICATION ERROR<br/>Cannot reach server]
+    CheckHTTP -->|200 OK| CheckBody{Response body?}
+    CheckBody -->|Contains 'OK'| ShowVerified[✅ VERIFIED<br/>by domain.com]
+    CheckBody -->|REVOKED| ShowRevoked[❌ REVOKED<br/>by domain.com]
+    CheckBody -->|SUSPENDED| ShowSuspended[❌ SUSPENDED<br/>by domain.com]
+    CheckBody -->|Other status| ShowOtherStatus[❌ Status from server<br/>e.g., EXPIRED, CANCELLED]
+    ShowVerified --> End
+    ShowNotFound --> End
+    ShowRevoked --> End
+    ShowSuspended --> End
+    ShowOtherStatus --> End
+    ShowError --> End
+
+    style Start fill:#e1f5e1
+    style End fill:#ffe1e1
+    style ShowVerified fill:#90EE90
+    style ShowNotFound fill:#FFB6C1
+    style ShowRevoked fill:#FFB6C1
+    style ShowSuspended fill:#FFD700
+    style ShowOtherStatus fill:#FFB6C1
+    style ShowError fill:#FFD700
+    style Hash fill:#87CEEB
+    style Normalize fill:#DDA0DD
+    style Transform fill:#B8860B
+    style TryAllRotations fill:#DDA0DD
+```
+
 Another day, we'll see if we can't get this working without a black border.
 
 **Variable element:** Each verifiable document needs something unique - a date/time, person's name, serial number, transaction ID, or other changing value. This ensures each certificate has a unique hash and prevents reuse of the same verification across different claims or brute force guessing of valid hashes.
@@ -1875,6 +1923,32 @@ Future enhancement: Organizations could publish signed hash databases that you d
 - Faster (milliseconds vs seconds/minutes for blockchain confirmation)
 
 Blockchain adds complexity without solving a real problem here. The trust anchor is the organization's domain name (backed by DNS/HTTPS infrastructure), not a blockchain.
+
+### What about existing verification technologies? What's novel here?
+
+**Prior art comparison:**
+
+While various technologies verify documents, OCR-to-hash combines elements in a novel way:
+
+- **Estonia's KSI blockchain** - Verifies digital documents in databases, not OCR from printed physical documents. Documents are born-digital in government systems.
+- **QR codes** - Encode data (opaque to humans), don't use human-readable text as the verification input. Can't read/audit what you're verifying.
+- **Blockchain timestamping** - Documents are digital files, not OCR'd from paper. Requires on-chain transactions and fees.
+- **Standard document hashing** - Hashes digital PDFs/files, doesn't include the physical-to-digital OCR bridge or the `verify:` scheme.
+- **Cloud OCR verification services** - Require uploading sensitive documents to third parties (privacy violation). Vendor lock-in.
+
+**What makes OCR-to-hash different:**
+
+The complete system integration is novel:
+1. **Registration marks** → Computer vision detects document boundaries on printed paper
+2. **OCR** → Extract human-readable text from physical documents (Tesseract.js client-side)
+3. **Normalization** → Apply consistent text cleanup rules (space removal, etc.)
+4. **Hash** → Compute SHA-256 from normalized text
+5. **`verify:domain.com/path` scheme** → Human-readable pseudo-URL that indicates verification authority
+6. **HTTP verification** → Simple 200/404 response (no blockchain, no fees)
+
+This bridges the physical-to-digital gap while maintaining human readability and privacy. The `verify:` scheme is particularly important - it's visible on the printed document, readable by humans ("verified by edinburgh.ac.uk"), and parsable by software.
+
+**No single prior art system does all of this** - especially the OCR bridge from printed physical documents with human-readable verification paths.
 
 ### Is this free to use?
 
