@@ -33,8 +33,24 @@ jobs:
       - name: Install Playwright browsers
         run: npx playwright install --with-deps
 
+      - name: Start local server
+        run: |
+          cd public
+          python3 -m http.server 8000 &
+          echo $! > /tmp/server.pid
+          cd ..
+          # Wait for server to be ready
+          sleep 2
+
       - name: Run tests
         run: npm test
+
+      - name: Stop local server
+        if: always()
+        run: |
+          if [ -f /tmp/server.pid ]; then
+            kill $(cat /tmp/server.pid) || true
+          fi
 
   build:
     needs: test

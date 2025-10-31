@@ -934,89 +934,44 @@ downloadImageBtn.addEventListener('click', () => {
 });
 
 // ============================================================================
-// TEST HOOK: Expose verification pipeline for automated testing
+// TESTABILITY SEAMS: Expose core functions for automated testing
 // ============================================================================
-// This function allows E2E tests to inject images directly into the pipeline
-// without requiring camera access. It uses the same processImageCanvas function
-// that production code uses, eliminating code duplication.
+// Following "Design for Testability" principles (Kent Beck, Mockito-style):
+// - Production code exposes clean seams (public API)
+// - Test code orchestrates mocking/setup in test files (not here)
+// - Zero test-specific logic in production bundle
 //
-// Parameters:
-//   canvas: HTMLCanvasElement containing the image to verify
-//   options: {
-//     mockVerification: boolean - if true, skips HTTP verification and expects expectedHash
-//     expectedHash: string - hash to compare against (only used when mockVerification=true)
-//   }
-window.testVerifyFromCanvas = async function(canvas, options = {}) {
-    try {
-        console.log('[TEST HOOK] Starting verification from provided canvas', options);
+// This is similar to Java's interface-based mocking, but leverages JavaScript's
+// dynamic nature to allow test code to swap implementations as needed.
+window.verificApp = {
+    // Core pipeline function - same code path as production
+    processImageCanvas,
 
-        // Reset state before processing (same as capture button does)
+    // Verification function - can be overridden by tests (Mockito-style)
+    verifyAgainstClaimedUrl,
+
+    // State accessor for test assertions (read-only view of internal state)
+    getState: () => ({
+        rawText: extractedText.textContent,
+        normalized: normalizedText.value,
+        hash: hashValue.textContent,
+        baseUrl: currentBaseUrl
+    }),
+
+    // UI reset function - needed to prepare for test runs
+    resetForTest: () => {
         normalizedTextEditorSetup = false;
         currentBaseUrl = null;
         textResult.style.display = 'none';
         hashResult.style.display = 'none';
         verificationResult.style.display = 'none';
         switchToTab('captured');
+    },
 
-        // If mockVerification enabled, temporarily override verifyAgainstClaimedUrl
-        let originalVerify = null;
-        if (options.mockVerification && options.expectedHash) {
-            console.log('[TEST HOOK] Mock verification enabled, expecting hash:', options.expectedHash);
-            originalVerify = window.verifyAgainstClaimedUrl;
-
-            // Mock the verification function
-            window.verifyAgainstClaimedUrl = async function(claimedUrl, computedHash) {
-                console.log('[TEST HOOK MOCK] Comparing hashes:', { computed: computedHash, expected: options.expectedHash });
-
-                // Compare computed hash with expected hash
-                const matches = computedHash === options.expectedHash;
-
-                // Update UI to show mock verification result
-                verificationResult.style.display = 'block';
-                verificationStatus.className = 'verification-status';
-                verificationUrl.innerHTML = `Mock verification: <strong>${claimedUrl}</strong>`;
-
-                if (matches) {
-                    verificationStatus.textContent = '✅ MOCK VERIFIED - Hash matches expected';
-                    verificationStatus.classList.add('verified');
-                    return { status: 200, body: 'OK', mocked: true };
-                } else {
-                    verificationStatus.textContent = `❌ MOCK FAILED - Hash mismatch (expected: ${options.expectedHash.substring(0, 16)}...)`;
-                    verificationStatus.classList.add('not-found');
-                    return { status: 'HASH_MISMATCH', mocked: true };
-                }
-            };
-        }
-
-        try {
-            // Use the same processing pipeline as production code
-            await processImageCanvas(canvas, 'Test Hook');
-
-            // Return success with key extracted values for test assertions
-            return {
-                success: true,
-                rawText: extractedText.textContent,
-                normalized: normalizedText.value,
-                hash: hashValue.textContent,
-                baseUrl: currentBaseUrl,
-                hashMatches: options.mockVerification ? (hashValue.textContent === options.expectedHash) : undefined,
-                // Note: Full verification results are in the DOM, tests can inspect them
-            };
-        } finally {
-            // Restore original verification function if it was mocked
-            if (originalVerify) {
-                console.log('[TEST HOOK] Restoring original verifyAgainstClaimedUrl');
-                window.verifyAgainstClaimedUrl = originalVerify;
-            }
-        }
-
-    } catch (error) {
-        console.error('[TEST HOOK] Error:', error);
-        return {
-            success: false,
-            error: error.name || 'EXCEPTION',
-            message: error.message || String(error),
-            stack: error.stack
-        };
+    // UI state accessors for verification assertions
+    verification: {
+        get status() { return verificationStatus; },
+        get result() { return verificationResult; },
+        get url() { return verificationUrl; }
     }
 };

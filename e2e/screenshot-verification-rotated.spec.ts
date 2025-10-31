@@ -18,6 +18,7 @@
 import { test, expect } from '@playwright/test';
 import * as fs from 'fs';
 import * as path from 'path';
+import { testVerifyFromBase64 } from './test-helpers.js';
 
 // Configure longer timeout for these tests (OCR can be slow)
 test.setTimeout(120000); // 2 minutes per test
@@ -228,19 +229,19 @@ test.describe('Screenshot Verification Pipeline - Rotated Images', () => {
         });
         console.log('Scripts loaded:', scriptsLoaded.length);
 
-        // Wait for OpenCV and Tesseract to load with better error reporting
-        console.log('Waiting for OpenCV, Tesseract, and test hook to load...');
+        // Wait for OpenCV, Tesseract, and app seams to load with better error reporting
+        console.log('Waiting for OpenCV, Tesseract, and verificApp seams to load...');
         try {
             await page.waitForFunction(() => {
                 const ready = {
                     cvReady: !!window.cvReady,
                     tesseract: !!window.Tesseract,
-                    testHook: typeof window.testVerifyFromCanvas === 'function'
+                    appSeams: !!window.verificApp && typeof window.verificApp.processImageCanvas === 'function'
                 };
-                if (!ready.cvReady || !ready.tesseract || !ready.testHook) {
+                if (!ready.cvReady || !ready.tesseract || !ready.appSeams) {
                     console.log('Waiting for dependencies:', ready);
                 }
-                return ready.cvReady && ready.tesseract && ready.testHook;
+                return ready.cvReady && ready.tesseract && ready.appSeams;
             }, { timeout: 90000 }); // OpenCV + Tesseract can take time to load
             console.log('✅ All dependencies loaded');
         } catch (e) {
@@ -249,7 +250,7 @@ test.describe('Screenshot Verification Pipeline - Rotated Images', () => {
                 return {
                     cvReady: !!window.cvReady,
                     tesseract: !!window.Tesseract,
-                    testHook: typeof window.testVerifyFromCanvas === 'function',
+                    appSeams: !!window.verificApp,
                     scripts: Array.from(document.querySelectorAll('script[src]')).map(s => (s as HTMLScriptElement).src)
                 };
             });
@@ -272,28 +273,8 @@ test.describe('Screenshot Verification Pipeline - Rotated Images', () => {
             const screenshotBuffer = fs.readFileSync(screenshotPath);
             const screenshotBase64 = screenshotBuffer.toString('base64');
 
-            // Inject screenshot into page and run verification pipeline
-            const result = await page.evaluate(async ({ base64Image, expectedHash }) => {
-                // Create canvas from base64 image
-                const img = new Image();
-                await new Promise((resolve, reject) => {
-                    img.onload = resolve;
-                    img.onerror = reject;
-                    img.src = `data:image/png;base64,${base64Image}`;
-                });
-
-                const canvas = document.createElement('canvas');
-                canvas.width = img.width;
-                canvas.height = img.height;
-                const ctx = canvas.getContext('2d');
-                ctx.drawImage(img, 0, 0);
-
-                // Run verification pipeline using test hook with mock verification
-                return await window.testVerifyFromCanvas(canvas, {
-                    mockVerification: true,
-                    expectedHash: expectedHash
-                });
-            }, { base64Image: screenshotBase64, expectedHash: testCase.expectedHash });
+            // Run verification pipeline using test helper
+            const result = await testVerifyFromBase64(page, screenshotBase64, testCase.expectedHash);
 
             // Log result for debugging
             console.log(`[${testCase.description}]`, result);
