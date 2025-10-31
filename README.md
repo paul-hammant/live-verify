@@ -144,15 +144,6 @@ Page 3: Transactions 11-20              verify:chase.com/stmt
 ```
 Each page's text (including page number) creates a unique hash. You can verify page 2 independently without possessing pages 1 and 3. Prevents "page substitution attacks" where attacker swaps pages from different statements.
 
-1. Scans printed documents with phone camera to detect the registration marks
-2. OCR that text (via Tesseract.js for example)
-2. Extracts verification URL from the document (`verify:` or `vfy:` changed to `https://`)
-3. Normalizes other text (removes extra spaces, etc.)
-4. Computes SHA-256 hash of the claim (one-way hash - important concept): `fb92e9f3086212ed68adbec9e9b32767a378cdd198b9d58b34f3c8718dbb9afe`
-5. Checks the hash on the website indicated - https://example.com/hashes/fb92e9f3086212ed68adbec9e9b32767a378cdd198b9d58b34f3c8718dbb9afe is the one for the above
-6. That URL existing and perhaps a text or JSON payload of "OK" is confirmation that the claim is verified.
-7. Shows ✅ green "VERIFIED" or ❌ red "FAILS VERIFICATION" overlay or other affordance
-
 **Critical transparency requirement:** The verification app MUST clearly display which domain/authority verified the claim. Not just "VERIFIED" but "VERIFIED by degrees.ed.ac.uk" or "VERIFIED by intertek.com". This is essential for trust - users need to see immediately who is vouching for the claim.
 
 **Domain complexity:** Domains vary globally - `ed.ac.uk` is a domain (UK academic), `degrees.ed.ac.uk` is a subdomain (different authority), `foobar.com.br` is a domain (Brazil), `example.co.uk` is a domain. The verifying authority should be displayed as the full hostname from the verification URL (e.g., `degrees.ed.ac.uk`, not truncated to `ed.ac.uk`).
@@ -1683,35 +1674,13 @@ Airline tickets, hotel reservations, car rentals, travel insurance, frequent fly
 
 ### Gambling & Betting
 
-**⚠️ IMPORTANT JURISDICTIONAL CAVEAT:** OCR-to-hash verification for gambling documents only works in jurisdictions with **strong regulatory enforcement** where operators face severe penalties (license revocation, criminal charges) for deleting bet records. In weakly-regulated or self-regulated jurisdictions, operators can delete hash databases and claim "no record of that bet" - OCR-to-hash provides **no protection** in these environments.
+**⚠️ JURISDICTIONAL CAVEAT:** OCR-to-hash only works where regulators enforce strict record retention with severe penalties for tampering (license revocation, criminal charges). In weakly-regulated jurisdictions, operators can delete bet records freely—OCR-to-hash provides **no protection**.
 
-**Regulatory Tier 1: Strong Enforcement (OCR-to-hash can work)**
-- **UK:** UK Gambling Commission (UKGC) - mandatory record retention, license revocation for tampering, criminal prosecution for fraud
-- **Nevada (USA):** Nevada Gaming Control Board - strict casino record-keeping requirements, severe penalties
-- **New Jersey (USA):** Division of Gaming Enforcement - online gambling oversight, mandatory audit trails
-- **Malta:** Malta Gaming Authority (MGA) - EU-regulated online gambling licensing, strong enforcement
-- **Gibraltar:** Gibraltar Gambling Commissioner - strict licensing requirements, regulatory oversight
-- **Isle of Man:** Isle of Man Gambling Supervision Commission - well-regulated online gambling jurisdiction
+**Tier 1 (Strong):** UK (UKGC), Nevada/New Jersey (USA), Malta (MGA), Gibraltar, Isle of Man
+**Tier 2 (Moderate):** Curacao, Antigua, Kahnawake—lighter enforcement, limited protection
+**Tier 3 (No Protection):** Costa Rica, Vanuatu, Belize, Panama, unregulated offshore—operators can delete records at will
 
-**Regulatory Tier 2: Moderate Enforcement (OCR-to-hash provides limited protection)**
-- **Curacao:** Curacao eGaming - popular online gambling license, but lighter enforcement
-- **Antigua & Barbuda:** Directorate of Offshore Gaming - established jurisdiction, moderate oversight
-- **Kahnawake (Canada):** Kahnawake Gaming Commission - First Nations territory, self-regulated
-
-**Regulatory Tier 3: "You're On Your Own" Jurisdictions (OCR-to-hash provides NO protection)**
-
-**⚠️ WARNING:** In these jurisdictions, operators can delete bet records with minimal consequences. OCR-to-hash verification is **ineffective** because operators control the hash database and face little/no enforcement for tampering.
-
-- **Costa Rica:** No gambling regulation - businesses only need data processing license, zero oversight of betting records
-- **Vanuatu:** Minimal gambling oversight, no record retention enforcement
-- **Belize:** Light regulation, limited enforcement capability
-- **Panama:** Gaming licenses available but limited regulatory oversight
-- **Philippines (PAGCOR offshore):** Offshore licenses with light supervision
-- **Many unregulated offshore jurisdictions:** Operators can claim any jurisdiction with no actual presence
-
-**Peer-to-peer betting with third-party escrow:** OCR-to-hash can work if independent clearinghouse (not the operator) maintains bet hash registry and settles disputes.
-
-**Blockchain-based betting:** If bet hashes recorded on public blockchain (Ethereum, etc.), operator cannot delete records - immutable verification.
+**Alternatives that work:** (1) Peer-to-peer betting with independent third-party escrow maintaining hash database, or (2) Blockchain-based betting (Augur, Polymarket) with immutable on-chain records.
 
 | Use Case                                                   | Volume vs Till Receipts | Retention Period                    | Personal Data                                                                      | OCR-to-hash applicability                                                                                                                                                                                                                                                                         |
 |------------------------------------------------------------|-------------------------|-------------------------------------|------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1885,25 +1854,11 @@ See the full [QR Code comparison](#decision-criteria-ocr-to-hash-vs-qr-code) for
 
 ### Why client-side? Why not use cloud OCR APIs?
 
-**Privacy.** Cloud OCR services (Google Cloud Vision, AWS Textract, Azure Computer Vision) require uploading your document images to third-party servers:
-
-- Your degree certificate (name, DOB, university, honors)
-- Your medical license (license number, photo, specialization)
-- Your passport (photo, DOB, address, nationality)
-- Your salary receipt (employer, amount, location, transaction details)
-
-All that PII flows across networks, gets stored in API logs, subject to subpoenas. OCR-to-hash processes everything **on your phone** - images never leave the device. See [Privacy-First Architecture](#privacy-first-architecture-why-client-side-ocr-matters).
+**Privacy.** Cloud OCR services expose your sensitive documents to third-party servers. See [Privacy-First Architecture](#privacy-first-architecture-why-client-side-ocr-matters) for complete details on why images never leave your phone.
 
 ### Will this work with ornate degree certificates?
 
-**Not yet.** Current OCR (Tesseract.js) works great for plain text (receipts, business letters, wallet cards) but struggles with decorative fonts, seals, and embossing on traditional university diplomas.
-
-**Solutions:**
-1. **Short-form claims** - Universities can support both the ornate wall certificate AND a plain-text CV claim. Both verify the same degree. See [Degree_Certificate_Dual_Hash.md](Degree_Certificate_Dual_Hash.md).
-2. **On-device AI (2026+)** - Apple Intelligence, Google Gemini, Samsung Galaxy AI will handle ornate documents while still keeping everything on-device. See [Privacy-First Architecture](#privacy-first-architecture-why-client-side-ocr-matters).
-3. **Manual text entry** - For now, you can type the text instead of using OCR (loses convenience but maintains verification).
-
-See [OCR Limitations](#ocr-limitations-what-works-today-vs-future-needs) for full details.
+**Not yet.** Current OCR struggles with decorative fonts, seals, and embossing on traditional university diplomas. See [OCR Limitations](#ocr-limitations-what-works-today-vs-future-needs) for complete details on current limitations and future solutions including short-form claims, on-device AI (2026+), and manual text entry options.
 
 ### How does this prevent fake receipts/degrees/licenses?
 
