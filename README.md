@@ -91,36 +91,34 @@ flowchart TD
     TryAllRotations --> CompareConfidence[Compare OCR confidence scores<br/>Pick rotation with highest confidence]
     CompareConfidence --> CheckConfidence{Best confidence<br/>good enough?}
     CheckConfidence -->|No - OCR failed all rotations| ShowOCRError[❌ OCR could not extract text<br/>Try better lighting/focus]
-    ShowOCRError --> End([End])
+    ShowOCRError --> Start
     CheckConfidence -->|Yes| UseRotation[Use best rotation]
     UseRotation --> ParseVerify[Parse verify:domain.com/path from OCR text]
     ParseVerify --> FetchMeta[Fetch https://domain.com/.verific-meta.json<br/>for normalization hints]
     FetchMeta --> Normalize[Normalize text:<br/>- Strip leading/trailing spaces<br/>- Collapse multiple spaces<br/>- Remove verify: line<br/>- Apply domain-specific rules]
     Normalize --> Hash[Compute SHA-256 hash<br/>of normalized text]
     Hash --> BuildURL[Build verification URL:<br/>https://domain.com/path/hash]
-    BuildURL --> Verify[HTTP GET request<br/>to verification URL]
+
+    MetaURL[("https://domain.com/.verific-meta.json<br/>(normalization rules, custom status text)")] -.->|fetched earlier| FetchMeta
+    VerifyURL[("https://domain.com/path/hash<br/>(verification endpoint)")] -.->|HTTP GET| Verify
+
+    BuildURL --> Verify[HTTP GET request to verification URL<br/>static webserver or dynamic endpoint]
     Verify --> CheckHTTP{HTTP status?}
-    CheckHTTP -->|404 Not Found| ShowNotFound[❌ FAILS VERIFICATION<br/>Hash not in database]
+    CheckHTTP -->|404 Not Found| ShowNotFound[❌ FAILS VERIFICATION<br/>Hash not in database<br/>Re-frame and try again]
+    ShowNotFound --> Start
     CheckHTTP -->|Network Error| ShowError[⚠️ VERIFICATION ERROR<br/>Cannot reach server]
     CheckHTTP -->|200 OK| CheckBody{Response body?}
-    CheckBody -->|Contains 'OK'| ShowVerified[✅ VERIFIED<br/>by domain.com]
-    CheckBody -->|REVOKED| ShowRevoked[❌ REVOKED<br/>by domain.com]
-    CheckBody -->|SUSPENDED| ShowSuspended[❌ SUSPENDED<br/>by domain.com]
-    CheckBody -->|Other status| ShowOtherStatus[❌ Status from server<br/>e.g., EXPIRED, CANCELLED]
-    ShowVerified --> End
-    ShowNotFound --> End
-    ShowRevoked --> End
-    ShowSuspended --> End
-    ShowOtherStatus --> End
+    CheckBody -->|"OK" exact match<br/>or JSON status: OK/VERIFIED| ShowVerified[✅ VERIFIED<br/>by domain.com]
+    CheckBody -->|Plain text or JSON<br/>other status| ShowNotOK[❌ Status from server<br/>REVOKED/SUSPENDED/EXPIRED/etc.]
+    ShowVerified --> End([End])
+    ShowNotOK --> End
     ShowError --> End
 
     style Start fill:#e1f5e1
     style End fill:#ffe1e1
     style ShowVerified fill:#90EE90
     style ShowNotFound fill:#FFB6C1
-    style ShowRevoked fill:#FFB6C1
-    style ShowSuspended fill:#FFD700
-    style ShowOtherStatus fill:#FFB6C1
+    style ShowNotOK fill:#FFB6C1
     style ShowError fill:#FFD700
     style Hash fill:#87CEEB
     style Normalize fill:#DDA0DD

@@ -753,27 +753,48 @@ async function verifyAgainstClaimedUrl(claimedUrl, computedHash) {
 
         // Read response body
         const body = await response.text();
+        const trimmedBody = body.trim();
 
-        // Check body contains "OK"
-        if (!body.includes('OK')) {
+        // Check for exact "OK" or try parsing as JSON
+        let isVerified = false;
+        let statusText = null;
+
+        if (trimmedBody === 'OK') {
+            isVerified = true;
+        } else {
+            // Try parsing as JSON for structured response
+            try {
+                const json = JSON.parse(trimmedBody);
+                if (json.status === 'OK' || json.status === 'VERIFIED') {
+                    isVerified = true;
+                } else {
+                    statusText = json.status || json.message || trimmedBody;
+                }
+            } catch (e) {
+                // Not JSON, treat as plain text status
+                statusText = trimmedBody.toUpperCase().substring(0, 50);
+            }
+        }
+
+        if (!isVerified) {
             // Show the actual status from the server (e.g., "REVOKED")
-            const status = body.trim().toUpperCase().substring(0, 50); // Limit to 50 chars
+            const status = statusText;
 
             // Try to fetch .verific-meta.json to get custom responseTypes
             const meta = await fetchVerificMeta(currentBaseUrl);
-            let statusText = `❌ ${status}`;
+            let displayText = `❌ ${status}`;
             let statusClass = 'not-found';
             let learnMoreLink = null;
 
             if (meta && meta.responseTypes && meta.responseTypes[status]) {
                 const responseType = meta.responseTypes[status];
-                statusText = responseType.class === 'affirming' ? `✅ ${responseType.text}` : `❌ ${responseType.text}`;
+                displayText = responseType.class === 'affirming' ? `✅ ${responseType.text}` : `❌ ${responseType.text}`;
                 statusClass = responseType.class === 'affirming' ? 'verified' : 'not-found';
                 learnMoreLink = responseType.link;
                 console.log(`Using custom response type from .verific-meta.json: ${status}`);
             }
 
-            verificationStatus.textContent = statusText;
+            verificationStatus.textContent = displayText;
             verificationStatus.classList.add(statusClass);
             console.log(`Verification failed: response status is "${status}"`);
 

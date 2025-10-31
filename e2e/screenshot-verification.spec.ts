@@ -150,7 +150,8 @@ test.describe('Screenshot Verification Pipeline', () => {
 
     for (const testCase of testCases) {
         test(`should verify ${testCase.description}`, async ({ page }) => {
-            const screenshotPath = path.join(__dirname, '../test/fixtures/screenshots', testCase.screenshot);
+            // Base screenshots are in public/screenshots/ (shared with documentation)
+            const screenshotPath = path.join(__dirname, '../public/screenshots', testCase.screenshot);
 
             // Check if screenshot exists
             if (!fs.existsSync(screenshotPath)) {

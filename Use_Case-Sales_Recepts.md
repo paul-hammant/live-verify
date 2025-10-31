@@ -5,6 +5,30 @@ Expense fraud costs UK businesses [£1.3 billion annually](https://www.expensein
 
 Key criteria: Business transaction with no privacy expectation. One-off transaction. Needs verifiable for tax/audit period (7 years). Hash must be unique to prevent duplicate claims.
 
+### Example Receipts (HTML Mockups)
+
+You can test the verification system with these example receipt mockups (HTML representations of paper receipts):
+
+**UK Receipts:**
+- [UK Coffee Shop](https://paul-hammant.github.io/verific/training-pages/uk-coffee-shop.html) - £8.45 coffee and pastry receipt
+- [UK Corner Shop](https://paul-hammant.github.io/verific/training-pages/uk-corner-shop.html) - £4.85 convenience store receipt (compact format)
+- [UK Electronics Store](https://paul-hammant.github.io/verific/training-pages/uk-electronics-store.html) - £847.99 laptop purchase
+
+**US Receipts:**
+- [US Burrito Shop](https://paul-hammant.github.io/verific/training-pages/us-burrito-shop.html) - $15.08 burrito meal
+- [US Home Improvement](https://paul-hammant.github.io/verific/training-pages/us-home-improvement.html) - $680.40 building supplies
+
+**Hotel Receipt:**
+- [Hotel Scheidegg (Switzerland)](https://paul-hammant.github.io/verific/training-pages/hotel-receipt-scheidegg.html) - Multi-night hotel stay with itemized charges
+
+**Note:** These are HTML mockups designed to look like printed receipts. They demonstrate the OCR-to-hash verification system with working `verify:` URLs. You can scan these with the [Verific web app](https://paul-hammant.github.io/verific/) by displaying them on one device and scanning with another, or by printing them.
+
+**Example receipt screenshot:**
+
+<img src="public/screenshots/us-home-improvement.png" alt="US Home Improvement receipt showing $680.40 total with verify: URL" width="300">
+
+*US Home Improvement receipt - $680.40 building supplies purchase with OCR-to-hash verification*
+
 ### The Receipt: Where OCR-to-Hash Prevents Fraud
 
 **What's printed on the receipt:**
