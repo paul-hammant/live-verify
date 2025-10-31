@@ -184,6 +184,15 @@ test.describe('Screenshot Verification Pipeline', () => {
                 expect(result.hash).toMatch(/^[0-9a-f]{64}$/);
             } else {
                 // Normal mode: assert hash matches expected
+                if (result.hash !== testCase.expectedHash) {
+                    // Hash mismatch - show normalized text for debugging
+                    console.log(`❌ HASH MISMATCH for ${testCase.description}:`);
+                    console.log(`   Expected: '${testCase.expectedHash}'`);
+                    console.log(`   Received: '${result.hash}'`);
+                    console.log(`📄 NORMALIZED TEXT:`);
+                    console.log(result.normalized);
+                    console.log('---');
+                }
                 expect(result.hash).toBe(testCase.expectedHash);
                 // Assert mock verification confirmed the match
                 expect(result.hashMatches).toBe(true);
