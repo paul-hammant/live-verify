@@ -1,7 +1,7 @@
 
-## Point-of-Sale Receipt Case: Preventing Double-Expensing
+## Point-of-Sale Receipt Case: Preventing Expense Fraud
 
-Expense fraud costs UK businesses [£1.3 billion annually](https://www.expensein.com/blog/expense-fraud/). OCR-to-hash prevents double-expensing by making each receipt's text cryptographically verifiable and uniquely claimable.
+Expense fraud costs UK businesses [£1.3 billion annually](https://www.expensein.com/blog/expense-fraud/). Common fraud types include duplicate claims, receipt tampering (amount inflation), complete forgery, and tax manipulation. OCR-to-hash prevents all these by making each receipt's text cryptographically verifiable, tamper-evident, and uniquely identifiable.
 
 Key criteria: Business transaction with no privacy expectation. One-off transaction. Needs verifiable for tax/audit period (7 years). Hash must be unique to prevent duplicate claims.
 
@@ -19,41 +19,52 @@ You can test the verification system with these example receipt mockups (HTML re
 - [US Home Improvement](https://paul-hammant.github.io/verific/training-pages/us-home-improvement.html) - $680.40 building supplies
 
 **Hotel Receipt:**
-- [Hotel Scheidegg (Switzerland)](https://paul-hammant.github.io/verific/training-pages/hotel-receipt-scheidegg.html) - Multi-night hotel stay with itemized charges
+- [Hotel Scheidegg (Switzerland)](https://paul-hammant.github.io/verific/training-pages/hotel-receipt-scheidegg.html) - CHF 54.50 restaurant/bar charges
 
 **Note:** These are HTML mockups designed to look like printed receipts. They demonstrate the OCR-to-hash verification system with working `verify:` URLs. You can scan these with the [Verific web app](https://paul-hammant.github.io/verific/) by displaying them on one device and scanning with another, or by printing them.
 
-**Example receipt screenshot:**
+**Example receipt screenshots:**
 
-<img src="public/screenshots/us-home-improvement.png" alt="US Home Improvement receipt showing $680.40 total with verify: URL" width="300">
+<div style="display: flex; flex-wrap: wrap; gap: 20px; margin: 20px 0;">
+  <div>
+    <img src="https://paul-hammant.github.io/verific/screenshots/uk-coffee-shop.png" alt="UK Coffee Shop receipt" width="250">
+    <p><em>UK Coffee Shop - £8.45</em></p>
+  </div>
+  <div>
+    <img src="https://paul-hammant.github.io/verific/screenshots/us-burrito-shop.png" alt="US Burrito Shop receipt" width="250">
+    <p><em>US Burrito Shop - $15.08</em></p>
+  </div>
+  <div>
+    <img src="https://paul-hammant.github.io/verific/screenshots/hotel-receipt-scheidegg.png" alt="Hotel Scheidegg receipt" width="250">
+    <p><em>Hotel Scheidegg - CHF 54.50</em></p>
+  </div>
+</div>
 
-*US Home Improvement receipt - $680.40 building supplies purchase with OCR-to-hash verification*
+<div style="display: flex; flex-wrap: wrap; gap: 20px; margin: 20px 0;">
+  <div>
+    <img src="https://paul-hammant.github.io/verific/screenshots/uk-electronics-store.png" alt="UK Electronics Store receipt" width="250">
+    <p><em>UK Electronics Store - £847.99</em></p>
+  </div>
+  <div>
+    <img src="https://paul-hammant.github.io/verific/screenshots/us-home-improvement.png" alt="US Home Improvement receipt" width="250">
+    <p><em>US Home Improvement - $680.40</em></p>
+  </div>
+  <div>
+    <img src="https://paul-hammant.github.io/verific/screenshots/uk-corner-shop.png" alt="UK Corner Shop receipt" width="250">
+    <p><em>UK Corner Shop - £4.85</em></p>
+  </div>
+</div>
 
 ### The Receipt: Where OCR-to-Hash Prevents Fraud
 
-**What's printed on the receipt:**
+**What's printed on a receipt (typical elements):**
+- Merchant name, location, date/time
+- Itemized purchases with prices
+- Subtotal, tax (VAT/sales tax), total
+- Transaction ID or receipt number
+- **verify:domain.com/path** URL (OCR-to-hash verification line)
 
-```
-┌─────────────────────────────┐
-│ Starbucks Coffee            │
-│ 123 Main St, Edinburgh      │
-│ 27 Jan 2025    09:45:23     │
-│                             │
-│ Latte         £4.50         │
-│ Croissant     £3.00         │
-│ ─────────────────           │
-│ Subtotal      £7.50         │
-│ VAT (20%)     £1.50         │
-│ ─────────────────           │
-│ Total         £9.00         │
-│                             │
-│ Card: ****1234              │
-│ Txn: #STB-EDI-45829         │
-│ VAT Reg: GB123456789        │
-│                             │
-│ verify:starbucks.com/tx     │
-└─────────────────────────────┘
-```
+All these elements (except the verify: line itself) contribute to the hash, making each receipt cryptographically unique.
 
 **Critical details:**
 - The **transaction details make the hash unique**: Date, time, items, total, VAT/sales tax, transaction ID all contribute to the hash
@@ -87,13 +98,32 @@ The simple GET verification above only confirms the receipt exists. To prevent d
 - Second attempt → clearinghouse returns "Already claimed"
 - See "Deployment Models" section below for details
 
-**Why this prevents fraud:**
+**Types of expense fraud prevented:**
 
-- **Unique hash per transaction:** Can't forge a different transaction with same hash (timestamp + transaction ID ensure uniqueness)
-- **Tamper-evident:** Change "£7.50" to "£75.00" → different hash → verification fails
-- **Tax tampering detected:** Can't under-report VAT/sales tax amount without changing hash
-- **Photocopies detected:** Same text → same hash → duplicate claim caught (if using clearinghouse or internal tracking)
-- **Domain binding:** Receipt text must verify against claimed merchant's actual domain
+**1. Receipt Tampering / Amount Inflation**
+- Change "£7.50" to "£75.00" → different hash → verification fails
+- Alter item quantities, add extra items → hash mismatch
+- Cannot modify any text within registration marks without detection
+
+**2. Complete Forgery / Fake Receipts**
+- Create entirely fake receipt → hash won't verify against real merchant domain
+- Even if fake receipt includes verify: URL, merchant won't have that hash in database
+- Domain binding ensures receipt must verify against claimed merchant's actual domain
+
+**3. Duplicate Claims (Photocopying)**
+- Same text → same hash → duplicate claim caught (if using clearinghouse or internal tracking)
+- Employee can't submit same receipt to multiple employers (Model B clearinghouse)
+- Consultancies can't bill multiple clients for same expense (Model B/C needed)
+
+**4. Tax Fraud / VAT Tampering**
+- Tax amount is in the hash → can't under-report VAT/sales tax
+- Government can verify all VAT was correctly reported
+- Prevents tax evasion through receipt manipulation
+
+**5. Receipt Substitution**
+- Can't claim personal expense as business expense → hash won't match business transaction
+- Timestamp + transaction ID ensure each receipt is uniquely tied to specific purchase
+- Cannot swap receipts between transactions
 
 ### Why QR Codes FAIL for Receipt Verification
 
