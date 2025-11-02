@@ -1,0 +1,11 @@
+{
+  "description": "Example .verific-meta.json for hotel receipts with Swiss Franc formatting",
+  "charNormalization": "éèêë→e àáâä→a ìíîï→i òóôö→o ùúûü→u ñ→n ç→c",
+  "ocrNormalizationRules": [
+    {
+      "pattern": "CHF\\s+(\\d)",
+      "replacement": "CHF$1",
+      "description": "Remove space between CHF currency code and amount (HTML tab renders as thin space, OCR inconsistent)"
+    }
+  ]
+}

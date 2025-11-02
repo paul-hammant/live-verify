@@ -20,8 +20,70 @@
  * Used by both the main app and test pages
  */
 
+/**
+ * Apply document-specific normalization rules from .verific-meta.json
+ * This allows document issuers to define character substitutions and regex patterns
+ * @param {string} text - Text to normalize
+ * @param {Object} metadata - Metadata from .verific-meta.json (optional)
+ * @returns {string} Normalized text with document-specific rules applied
+ */
+function applyDocSpecificNorm(text, metadata) {
+    if (!metadata) {
+        return text;
+    }
+
+    // Import the document-specific normalization module if available
+    if (typeof require !== 'undefined') {
+        try {
+            const docNorm = require('./doc-specific-normalization.js');
+            return docNorm.applyDocumentSpecificNormalization(text, metadata);
+        } catch (e) {
+            // Module not available in browser, fallback to inline implementation
+        }
+    }
+
+    // Browser fallback: inline implementation
+    let result = text;
+
+    // 1. Apply character normalization (compact notation: "éèêë→e àáâä→a")
+    if (metadata.charNormalization) {
+        const groups = metadata.charNormalization.trim().split(/\s+/);
+        for (const group of groups) {
+            const parts = group.split('→');
+            if (parts.length === 2 && parts[1].length === 1) {
+                const sourceChars = parts[0];
+                const targetChar = parts[1];
+                for (const sourceChar of sourceChars) {
+                    const regex = new RegExp(sourceChar.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g');
+                    result = result.replace(regex, targetChar);
+                }
+            }
+        }
+    }
+
+    // 2. Apply OCR normalization rules (regex patterns)
+    if (metadata.ocrNormalizationRules && Array.isArray(metadata.ocrNormalizationRules)) {
+        for (const rule of metadata.ocrNormalizationRules) {
+            if (rule.pattern && rule.replacement) {
+                try {
+                    const regex = new RegExp(rule.pattern, 'g');
+                    result = result.replace(regex, rule.replacement);
+                } catch (e) {
+                    console.error(`Invalid regex pattern: ${rule.pattern}`, e);
+                }
+            }
+        }
+    }
+
+    return result;
+}
+
 // Text normalization function (as per the document rules)
-function normalizeText(text) {
+function normalizeText(text, metadata = null) {
+    // Apply document-specific normalization FIRST (before standard normalization)
+    // This ensures user-typed text gets the same treatment as OCR text
+    text = applyDocSpecificNorm(text, metadata);
+
     // Normalize Unicode characters that OCR might produce
     text = text.replace(/[\u201C\u201D\u201E]/g, '"');  // Curly double quotes → straight
     text = text.replace(/[\u2018\u2019]/g, "'");        // Curly single quotes → straight
@@ -81,5 +143,5 @@ function sha256(text) {
 
 // Export for Node.js testing (doesn't affect browser usage)
 if (typeof module !== 'undefined' && module.exports) {
-    module.exports = { normalizeText, sha256 };
+    module.exports = { normalizeText, sha256, applyDocSpecificNorm };
 }

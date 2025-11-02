@@ -36,13 +36,16 @@ function scoreSquareCandidate(candidate, imgW, imgH) {
 
 function selectRegistrationCorners(candidates, imgW, imgH) {
   if (!candidates || candidates.length===0) return null;
-  let best = null, bestScore = -1;
+  let best = null, bestScore = -1, bestAngle = 0;
   for (const c of candidates) {
-    if (c.length!==4) continue;
-    const s = scoreSquareCandidate(c, imgW, imgH);
-    if (s>bestScore) { bestScore=s; best=c; }
+    // Handle both old format (array of points) and new format (object with points and angle)
+    const points = c.points || c;
+    const angle = c.angle || 0;
+    if (points.length!==4) continue;
+    const s = scoreSquareCandidate(points, imgW, imgH);
+    if (s>bestScore) { bestScore=s; best=points; bestAngle=angle; }
   }
-  return best ? orderCorners(best) : null;
+  return best ? {points: orderCorners(best), angle: bestAngle} : null;
 }
 
 window.cvGeometry = { orderCorners, scoreSquareCandidate, selectRegistrationCorners };

@@ -20,7 +20,7 @@ async function loadAndOcr(page, pngPath: string) {
 
   const buf = fs.readFileSync(pngPath);
   const dataUrl = 'data:image/png;base64,' + buf.toString('base64');
-  return await page.evaluate(async (dataUrl) => {
+  const result = await page.evaluate(async (dataUrl) => {
     const img = new Image();
     await new Promise((res, rej) => { img.onload = res; img.onerror = rej; (img as any).src = dataUrl; });
     const canvas = document.createElement('canvas');
@@ -30,9 +30,104 @@ async function loadAndOcr(page, pngPath: string) {
     const det = await (window as any).detectSquaresFromCanvas(canvas);
     if (!det.ok) return { ok:false };
     const cropped = det.croppedCanvas;
-    const { data: { text } } = await (window as any).Tesseract.recognize(cropped.toDataURL(), 'eng');
-    return { ok:true, text };
+
+    // Try OCR at all 4 rotations to debug which one is being chosen
+    const rotations = [0, 90, 180, 270];
+    const rotationResults = [];
+
+    for (const angle of rotations) {
+      // Rotate canvas
+      const rotatedCanvas = document.createElement('canvas');
+      const rotatedCtx = rotatedCanvas.getContext('2d')!;
+
+      if (angle === 0) {
+        rotatedCanvas.width = cropped.width;
+        rotatedCanvas.height = cropped.height;
+        rotatedCtx.drawImage(cropped, 0, 0);
+      } else if (angle === 90) {
+        rotatedCanvas.width = cropped.height;
+        rotatedCanvas.height = cropped.width;
+        rotatedCtx.translate(rotatedCanvas.width, 0);
+        rotatedCtx.rotate(Math.PI / 2);
+        rotatedCtx.drawImage(cropped, 0, 0);
+      } else if (angle === 180) {
+        rotatedCanvas.width = cropped.width;
+        rotatedCanvas.height = cropped.height;
+        rotatedCtx.translate(rotatedCanvas.width, rotatedCanvas.height);
+        rotatedCtx.rotate(Math.PI);
+        rotatedCtx.drawImage(cropped, 0, 0);
+      } else if (angle === 270) {
+        rotatedCanvas.width = cropped.height;
+        rotatedCanvas.height = cropped.width;
+        rotatedCtx.translate(0, rotatedCanvas.height);
+        rotatedCtx.rotate(-Math.PI / 2);
+        rotatedCtx.drawImage(cropped, 0, 0);
+      }
+
+      const { data } = await (window as any).Tesseract.recognize(rotatedCanvas.toDataURL(), 'eng');
+      rotationResults.push({
+        angle,
+        text: data.text,
+        confidence: data.confidence,
+        imageData: rotatedCanvas.toDataURL()
+      });
+    }
+
+    // Find best confidence
+    const best = rotationResults.reduce((a, b) => a.confidence > b.confidence ? a : b);
+
+    return {
+      ok: true,
+      text: best.text,
+      croppedImageData: cropped.toDataURL(),
+      rotationResults,
+      chosenRotation: best.angle,
+      chosenConfidence: best.confidence
+    };
   }, dataUrl);
+
+  // Save cropped image and all rotation attempts for debugging
+  if (result.ok) {
+    const basename = path.basename(pngPath, '.png');
+    const tmpDir = path.join(__dirname, '../tmp');
+    fs.mkdirSync(tmpDir, { recursive: true });
+
+    // Save original cropped image
+    if (result.croppedImageData) {
+      const base64Data = result.croppedImageData.replace(/^data:image\/\w+;base64,/, '');
+      const buffer = Buffer.from(base64Data, 'base64');
+      const outputPath = path.join(tmpDir, `cropped-cv-ocr-${basename}.png`);
+      fs.writeFileSync(outputPath, buffer);
+      console.log(`💾 Saved cropped image to ${outputPath}`);
+    }
+
+    // Save all 4 rotation attempts
+    if (result.rotationResults) {
+      console.log(`\n🔄 OCR Rotation Results for ${basename}:`);
+
+      // Save confidence scores summary
+      const confidenceSummary = result.rotationResults.map(rot =>
+        `${rot.angle}°: confidence=${rot.confidence.toFixed(2)} ${rot.angle === result.chosenRotation ? '✅ CHOSEN' : ''}`
+      ).join('\n');
+      const confidencePath = path.join(tmpDir, `cropped-cv-ocr-${basename}-confidence.txt`);
+      fs.writeFileSync(confidencePath, confidenceSummary, 'utf-8');
+
+      for (const rot of result.rotationResults) {
+        const base64Data = rot.imageData.replace(/^data:image\/\w+;base64,/, '');
+        const buffer = Buffer.from(base64Data, 'base64');
+        const outputPath = path.join(tmpDir, `cropped-cv-ocr-${basename}-rot${rot.angle}.png`);
+        fs.writeFileSync(outputPath, buffer);
+
+        // Save text output
+        const textOutputPath = path.join(tmpDir, `cropped-cv-ocr-${basename}-rot${rot.angle}.txt`);
+        fs.writeFileSync(textOutputPath, rot.text, 'utf-8');
+
+        console.log(`  ${rot.angle}°: confidence=${rot.confidence.toFixed(2)} text="${rot.text.substring(0, 50)}..." ${rot.angle === result.chosenRotation ? '✅ CHOSEN' : ''}`);
+      }
+    }
+  }
+
+  return result;
 }
 
 test.describe('OCR of cropped region (browser)', () => {

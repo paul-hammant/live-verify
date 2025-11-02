@@ -18,31 +18,23 @@
         }
 
         .container {
-            max-width: 900px;
+            max-width: 1200px;
             margin: 0 auto;
             background: white;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            /*padding: 40px;*/
+            /*border-radius: 8px;*/
+            
         }
-
-
-
-
-
-
 
         .license-svg-wrapper {
             width: 100%;
-            max-width: 600px;
+            max-width: 1100px;
             margin: 30px auto;
         }
 
         svg {
             width: 100%;
             height: auto;
-            border: 1px solid #ddd;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
 
 
@@ -57,7 +49,7 @@
             .container {
                 max-width: 100%;
                 padding: 0;
-                box-shadow: none;
+                
             }
             .instructions, .info {
                 display: none;
@@ -67,18 +59,6 @@
 </head>
 <body>
     <div class="container">
-        <div class="instructions">
-            <h2>📱 How to Use This Training Page</h2>
-            <ol>
-                <li>Open the <a href="https://paul-hammant.github.io/verific/" target="_blank">Verific webapp</a> on your phone</li>
-                <li>Display this page on your computer screen, or print it on white cardstock</li>
-                <li>Use your phone camera to scan the license card below</li>
-                <li>Align the black border on your phone to frame the license details</li>
-                <li>Click "Capture & Verify" to verify the license</li>
-                <li><strong>Note:</strong> The black-bordered region contains only the verifiable data fields and verification URL</li>
-            </ol>
-        </div>
-
         <div class="license-svg-wrapper">
             <!-- ID-1 card aspect ratio ~85.6 x 53.98 mm (1.585:1). Use 856x540 canvas for crispness. -->
             <svg viewBox="0 0 856 540" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
@@ -112,13 +92,6 @@
                 <!-- Security line patterns removed to avoid faint horizontals -->
 
                 <!-- ===== HEADER SECTION (above black border) ===== -->
-                <!-- Flag top-left -->
-                <g transform="translate(22, 18)")>
-                    <rect width="44" height="34" fill="none" stroke="#333" stroke-width="1"/>
-                    <rect width="44" height="34" fill="none" stroke="#333" stroke-width="1"/>
-                    <rect width="14.66" height="34" fill="#0052CC"/>
-                    <rect x="14.66" width="29.34" height="34" fill="#FFD700"/>
-                </g>
 
                 <!-- Title -->
                 <text x="360" y="48" font-size="36" font-weight="bold" text-anchor="middle" fill="#1a1a1a">DRIVING LICENCE</text>
@@ -134,8 +107,6 @@
                 <image x="36" y="96" width="150" height="200"
                        href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/A_man_having_an_idea_before_the_light_bulp.jpg/500px-A_man_having_an_idea_before_the_light_bulp.jpg"
                        preserveAspectRatio="xMidYMid slice"/>
-                <rect x="36" y="96" width="150" height="200" fill="none" stroke="#8f9aa3" stroke-width="1"/>
-                <rect x="35" y="95" width="152" height="202" rx="6" ry="6" fill="none" stroke="#cfd8dc" stroke-width="2" opacity="0.9"/>
 
                 <!-- ===== REGISTRATION MARKS (black border) ===== -->
                 <!-- OCR box compact layout for ID-1 aspect; created a gap from the photo -->
@@ -191,12 +162,6 @@
                 <path d="M 36 480 L 186 480" stroke="#333" stroke-width="1"/>
                 <text x="111" y="475" font-size="24" font-family="cursive" fill="#000080" text-anchor="middle">Karin Bergström</text>
 
-                <!-- Organ Donor -->
-                <g transform="translate(740, 440)">
-                    <rect x="0" y="0" width="80" height="40" rx="5" fill="#D32F2F"/>
-                    <text x="40" y="25" font-size="16" font-weight="bold" fill="white" text-anchor="middle">DONOR ❤️</text>
-                </g>
-
                 <!-- ===== Blurb (below OCR box) ===== -->
                 <text x="412" y="420" font-size="9" font-family="Arial" fill="#333" text-anchor="middle">
                     <tspan x="412" dy="0">This licence is the property of the issuing Authority (Nordia Transport Authority, Driver Licensing Division • NLTD) and must be produced on demand to</tspan>
@@ -211,10 +176,6 @@
 
                 <!-- Categories section (RHS) removed; moved inside OCR block -->
             </svg>
-        </div>
-
-        <div class="placeholder-text">
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
         </div>
     </div>
 </body>

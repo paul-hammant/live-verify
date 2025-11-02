@@ -25,8 +25,8 @@ screenshot_page() {
     # This effectively gives us 11520x6480 rendering quality for crisp text
     firefox -headless --window-size=3840,2160 --force-device-scale-factor=3 -screenshot "file://${PAGES_DIR}/${html_file}"
 
-    # Trim whitespace and add 20px border
-    convert screenshot.png -trim -bordercolor white -border 20 "${output_name}.png"
+    # Trim whitespace and add 50px border (registration marks need space from edges)
+    convert screenshot.png -trim -bordercolor white -border 50 "${output_name}.png"
     rm screenshot.png
 
     echo "✅ Saved: ${PUBLIC_SCREENSHOTS_DIR}/${output_name}.png"
@@ -35,15 +35,15 @@ screenshot_page() {
     # Note: Base screenshots are in public/screenshots/, only rotated variants go here
     cd "${TEST_SCREENSHOTS_DIR}"
     echo "🔄 Rotating: ${output_name}.png -> ${output_name}-rotated-85.png (85° - off 90°)"
-    convert "${PUBLIC_SCREENSHOTS_DIR}/${output_name}.png" -rotate 85 "${output_name}-rotated-85.png"
+    convert "${PUBLIC_SCREENSHOTS_DIR}/${output_name}.png" -background white -rotate 85 -bordercolor white -border 20 "${output_name}-rotated-85.png"
     echo "✅ Saved: ${TEST_SCREENSHOTS_DIR}/${output_name}-rotated-85.png"
 
     echo "🔄 Rotating: ${output_name}.png -> ${output_name}-rotated-175.png (175° - off 180°)"
-    convert "${PUBLIC_SCREENSHOTS_DIR}/${output_name}.png" -rotate 175 "${output_name}-rotated-175.png"
+    convert "${PUBLIC_SCREENSHOTS_DIR}/${output_name}.png" -background white -rotate 175 -bordercolor white -border 20 "${output_name}-rotated-175.png"
     echo "✅ Saved: ${TEST_SCREENSHOTS_DIR}/${output_name}-rotated-175.png"
 
     echo "🔄 Rotating: ${output_name}.png -> ${output_name}-rotated-265.png (265° - off 270°)"
-    convert "${PUBLIC_SCREENSHOTS_DIR}/${output_name}.png" -rotate 265 "${output_name}-rotated-265.png"
+    convert "${PUBLIC_SCREENSHOTS_DIR}/${output_name}.png" -background white -rotate 265 -bordercolor white -border 20 "${output_name}-rotated-265.png"
     echo "✅ Saved: ${TEST_SCREENSHOTS_DIR}/${output_name}-rotated-265.png"
 }
 

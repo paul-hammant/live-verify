@@ -55,7 +55,7 @@ verific/
 │   │   ├── master-applied-anthropics.html
 │   │   └── doctorate-high-energy-magic.html
 │   ├── c/
-│   │   ├── .verific-meta.json       # OCR optimization metadata (optional)
+│   │   ├── .verific-meta.json       # Document normalization rules + OCR settings (optional)
 │   │   └── {hash}/index.html        # Static verification endpoints (200 + "OK")
 │   └── hashes.json                  # Hash database metadata
 │
@@ -217,14 +217,21 @@ The app converts either form to `https://` and appends the computed hash:
 
 This keeps printed documents concise while remaining explicit that the URL is for verification.
 
-**OCR Optimization Metadata (`.verific-meta.json`):**
+**Document-Specific Normalization (`.verific-meta.json`):**
 
-Issuers can optionally provide OCR optimization hints at the base URL by hosting a `.verific-meta.json` file:
+Issuers can optionally provide document-specific normalization rules and OCR optimization hints at the base URL by hosting a `.verific-meta.json` file:
 
 ```json
 {
-  "issuer": "Google LLC",
-  "claimType": "Prior or current full-time employment",
+  "description": "Example .verific-meta.json for hotel receipts with Swiss Franc formatting",
+  "charNormalization": "éèêë→e àáâä→a ìíîï→i òóôö→o ùúûü→u ñ→n ç→c",
+  "ocrNormalizationRules": [
+    {
+      "pattern": "CHF\\s+(\\d)",
+      "replacement": "CHF$1",
+      "description": "Remove space between CHF currency code and amount"
+    }
+  ],
   "tesseract": {
     "lang": "eng",
     "psm": 6,
@@ -235,14 +242,27 @@ Issuers can optionally provide OCR optimization hints at the base URL by hosting
 }
 ```
 
-If the app finds this file at `https://example.com/c/.verific-meta.json`, it can use the Tesseract settings to improve OCR accuracy:
+If the app finds this file at `https://example.com/c/.verific-meta.json`, it applies the rules in this order:
+
+**1. Text Normalization Rules (applied before standard normalization):**
+- `charNormalization`: Compact notation for character mappings (e.g., `éèêë→e` means é→e, è→e, ê→e, ë→e)
+  - Use cases: Diacritic removal, known OCR misreads
+  - Example: Swiss hotel receipts where `Chéasspätzli` should normalize to `Cheasspatzli`
+- `ocrNormalizationRules`: Regex-based structural cleanup (applied after character normalization)
+  - Use cases: Whitespace from HTML rendering, date formatting artifacts
+  - Example: `CHF\s+(\d)` → `CHF$1` removes spaces between currency code and amount
+
+**2. OCR Optimization (optional Tesseract settings):**
 - `lang`: OCR language model (e.g., "eng", "eng+fra")
 - `psm`: Page segmentation mode (6 = uniform block of text)
 - `oem`: OCR engine mode (1 = LSTM neural net only)
 - `tessedit_char_whitelist`: Allowed characters (reduces false positives)
 - `preserve_interword_spaces`: Keeps spaces between words intact
 
-This is particularly useful for specialized documents with known character sets (e.g., employment letters won't have `@#$%^&*`).
+This is particularly useful for:
+- Documents with diacritics or special characters that need consistent normalization
+- Receipt formats with known whitespace issues (e.g., HTML tabs rendering as spaces)
+- Specialized documents with known character sets (e.g., employment letters won't have `@#$%^&*`)
 
 **Full verification requires these checks:**
 
@@ -487,9 +507,9 @@ Click the app title to see build timestamp.
    - Body containing "OK" (or "REVOKED" to fail verification)
    - CORS header: `Access-Control-Allow-Origin: *`
 7. **Optional: Host `.verific-meta.json`** at `https://your-org.com/c/.verific-meta.json` with:
-   - Issuer name and claim type
-   - Tesseract OCR optimization settings
-   - Character whitelist specific to your document type
+   - Document-specific normalization rules (`charNormalization` for diacritics, `ocrNormalizationRules` for regex cleanup)
+   - Optional Tesseract OCR optimization settings
+   - Character whitelist specific to your document type (in `tesseract` section)
 
 Note: The document shows `verify:your-org.com/c` but the app converts this to `https://your-org.com/c/{hash}` when fetching.
 

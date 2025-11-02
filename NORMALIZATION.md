@@ -2,7 +2,61 @@
 
 Before computing the SHA-256 hash of certification text, the following normalization steps are applied **in this order**:
 
-## 1. Unicode Character Normalization
+## 1. Document-Specific Normalization (Optional)
+
+If a `.verific-meta.json` file exists at the verification URL path, it may define additional normalization rules specific to that document type. These rules are applied **before** the standard normalization steps below.
+
+### Schema
+
+```json
+{
+  "charNormalization": "éèêë→e àáâä→a ìíîï→i òóôö→o ùúûü→u ñ→n ç→c ß→B",
+  "ocrNormalizationRules": [
+    {
+      "pattern": "CHF\\s+(\\d)",
+      "replacement": "CHF$1",
+      "description": "Remove space between currency and amount"
+    }
+  ]
+}
+```
+
+### Character Normalization
+
+**Compact notation for single-character mappings:**
+- Format: `sourceChars→targetChar` (space-separated groups)
+- Example: `éèêë→e` means: é→e, è→e, ê→e, ë→e
+- **Use cases:**
+  - Diacritic removal: `é→e`, `ñ→n`, `ç→c`
+  - Known OCR misreads: `ß→B` (if Tesseract consistently misreads ß as B)
+- **NOT for:**
+  - Multi-character expansions: `ö→oe` (language-specific, not universal)
+  - Numeral replacements: `0→O`, `1→l` (numerals must remain as-is)
+
+### OCR Normalization Rules
+
+**Regex-based rules for structural/formatting cleanup:**
+- Applied after character normalization
+- Supports backreferences: `$1`, `$2`, etc.
+- **Use cases:**
+  - Whitespace from HTML rendering: `CHF\s+(\d)` → `CHF$1`
+  - Date formatting artifacts: `(\d+)\s+/\s+(\d+)` → `$1/$2`
+- **NOT for:**
+  - Word-specific replacements
+  - Proper nouns or domain vocabulary
+
+### Fetching Rules
+
+When OCR extracts `vfy:rcpts.domain.com/hotel/abc123`:
+1. Client converts to: `https://rcpts.domain.com/hotel/.verific-meta.json`
+2. Fetches metadata file (if it exists)
+3. Applies `charNormalization` rules first
+4. Applies `ocrNormalizationRules` second
+5. Proceeds to standard normalization steps below
+
+If `.verific-meta.json` is not found or fetch fails, standard normalization is used without document-specific rules.
+
+## 2. Unicode Character Normalization
 
 OCR often produces Unicode variants of standard ASCII characters. These are normalized first:
 
@@ -25,7 +79,7 @@ OCR often produces Unicode variants of standard ASCII characters. These are norm
 ### Ellipsis
 - **Horizontal ellipsis** (`…` U+2026) → `...` (three periods)
 
-## 2. Line-by-Line Normalization
+## 3. Line-by-Line Normalization
 
 After Unicode character normalization, each line is processed:
 
@@ -39,13 +93,13 @@ After Unicode character normalization, each line is processed:
    - Examples: `"text |"` → `"text"`, `"text ~"` → `"text"`, `"text ||"` → `"text"`
 5. **Collapse multiple spaces** - Any sequence of 2+ spaces is replaced with a single space
 
-## 3. Blank Line Removal
+## 4. Blank Line Removal
 
 After line normalization:
 
 - **Remove all blank lines** - Any line that is empty (length 0) after trimming is removed
 
-## 4. Final Assembly
+## 5. Final Assembly
 
 - Lines are joined with newline characters (`\n` U+000A)
 - **No trailing newline** is added to the final text
@@ -79,7 +133,7 @@ Thesis: "On the Malleability of L-Space"
 7. Blank lines removed
 8. No trailing newline
 
-## 5. Verification URL Handling
+## 6. Verification URL Handling
 
 The last line of the OCR text is treated as the verification base URL. It can use either:
 
@@ -97,7 +151,7 @@ The app converts the base URL to a full HTTPS URL with the hash appended:
 
 The `verify:` scheme is shorter on printed documents and makes it clear the URL is for verification purposes.
 
-## 6. SHA-256 Hash Computation
+## 7. SHA-256 Hash Computation
 
 After normalization, the SHA-256 hash is computed with these parameters:
 

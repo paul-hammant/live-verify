@@ -21,9 +21,21 @@
  * @param {Page} page - Playwright page object
  * @param {string} base64Image - Base64-encoded image data
  * @param {string} expectedHash - Expected hash for mock comparison (empty string for discovery mode)
+ * @param {Object} injectedVerificMeta - Optional .verific-meta.json to inject (for OCR normalization testing)
  * @returns {Promise<Object>} Test result with success, extracted values, etc.
  */
-export async function testVerifyFromBase64(page, base64Image, expectedHash) {
+export async function testVerifyFromBase64(page, base64Image, expectedHash, injectedVerificMeta = null) {
+    // Mock .verific-meta.json fetch if provided (Design for Testability: mock at network layer)
+    if (injectedVerificMeta) {
+        await page.route('**/.verific-meta.json', async route => {
+            await route.fulfill({
+                status: 200,
+                contentType: 'application/json',
+                body: JSON.stringify(injectedVerificMeta)
+            });
+        });
+    }
+
     return await page.evaluate(async ({ base64Image, expectedHash }) => {
         try {
             // Create canvas from base64 image
@@ -73,15 +85,17 @@ export async function testVerifyFromBase64(page, base64Image, expectedHash) {
                 // Run the pipeline using production code
                 await app.processImageCanvas(canvas, 'Test');
 
-                // Get state and return for assertions
+                // Get state and return for assertions (including cropped image)
                 const state = app.getState();
+                const croppedImg = document.getElementById('croppedImage');
                 return {
                     success: true,
                     rawText: state.rawText,
                     normalized: state.normalized,
                     hash: state.hash,
                     baseUrl: state.baseUrl,
-                    hashMatches: expectedHash ? (state.hash === expectedHash) : undefined
+                    hashMatches: expectedHash ? (state.hash === expectedHash) : undefined,
+                    croppedImageData: croppedImg ? croppedImg.src : null
                 };
             } finally {
                 // Restore original function (cleanup after mock)

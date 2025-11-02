@@ -1,5 +1,103 @@
 # TODO
 
+## Browser Native Verification API
+
+**Critical for Real-World Deployment**: Verific's security model fundamentally requires browser-native implementation. A JavaScript library bundled with an app cannot provide authentic verification.
+
+### The Problem
+- JS libraries can be modified by malicious apps
+- Users cannot trust verification results from app-bundled code
+- Authentic verification requires OS/browser-level trust anchors
+
+### The Solution: Browser Native API
+Lobby major browser vendors (Google, Apple, Microsoft, Mozilla) to implement native verification APIs:
+
+```javascript
+// Proposed Browser API
+const result = await navigator.verification.verify(imageBlob, {
+  expectedDomain: 'paul-hammant.github.io',
+  allowedIssuers: ['unseen-u.discworld']
+});
+
+// Browser performs:
+// 1. OCR extraction (using OS-level OCR)
+// 2. Hash computation (in trusted browser code)
+// 3. Verification against claimed URL (with certificate validation)
+// 4. Returns cryptographically signed result
+```
+
+### Why Browser Vendors Should Care
+- **Anti-fraud**: Combat fake receipts, certifications, licenses
+- **Privacy**: Verification without uploading documents to servers
+- **Accessibility**: On-device verification for offline/poor connectivity
+- **Standards**: Could become W3C standard like WebAuthn
+
+### Implementation Path
+1. **W3C Proposal**: Draft spec for Web Verification API
+2. **Origin Trial**: Partner with Chrome team for origin trial
+3. **Cross-Browser**: Apple (WebKit), Mozilla (Gecko), Microsoft (Edge)
+4. **Fallback**: Verific.js as polyfill until native support available
+
+### Files to Create
+- `docs/browser-api-proposal.md` - Detailed API specification
+- `docs/vendor-pitch.md` - Pitch deck for browser vendors
+- `docs/security-model.md` - Why JS libraries can't provide authentic verification
+
+### Related Work
+- WebAuthn (authentication standard)
+- Credential Management API
+- Payment Request API (similar trust model requirements)
+
+## OCR Character Normalization for Hash Consistency
+
+The `.verific-meta.json` standard should be extended to support configurable character normalization rules to ensure consistent SHA-256 hashes despite OCR imperfections.
+
+### Problem
+Tesseract OCR sometimes fails to correctly recognize special characters like umlauts:
+- `ö` → `o`
+- `ü` → `u`
+- `ä` → `a`
+- etc.
+
+This causes hash mismatches even when the document content is semantically correct.
+
+### Proposed Solution
+Add a new optional field to `public/c/.verific-meta.json`:
+
+```json
+{
+  "ocrNormalization": {
+    "ö": "o",
+    "ü": "u",
+    "ä": "a",
+    "Ö": "O",
+    "Ü": "U",
+    "Ä": "A",
+    "é": "e",
+    "è": "e",
+    "ê": "e"
+  }
+}
+```
+
+### Implementation
+- Apply these normalization rules **before** SHA-256 hashing
+- Document issuers can define which character substitutions should be considered equivalent for verification purposes
+- This allows issuers to acknowledge OCR limitations while maintaining verification integrity
+- Default: no normalization (strict character matching)
+
+### Example Use Case
+For the Nordia driving license with "Bergström":
+- OCR extracts: "Bergstrom"
+- Normalization rule: `ö` → `o`
+- Both "Bergström" and "Bergstrom" produce the same hash after normalization
+- Verification succeeds despite OCR imperfection
+
+### Files to Modify
+- `public/c/.verific-meta.json` - Add schema documentation
+- `public/verific-app.js` - Apply normalization before hashing
+- Documentation - Explain the feature and when to use it
+
 ## Receipt Status Support
 
 **Goal:** Support additional receipt statuses beyond OK/REVOKED

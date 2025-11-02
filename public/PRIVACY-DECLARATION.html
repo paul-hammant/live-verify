@@ -1,0 +1,303 @@
+<!--
+    Copyright (C) 2025, Paul Hammant
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as
+    published by the Free Software Foundation, either version 3 of the
+    License, or (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Declaration - Verific</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .privacy-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+        }
+        h1 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 2rem;
+        }
+        h2 {
+            color: #764ba2;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 8px;
+        }
+        h3 {
+            color: #667eea;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        .tagline {
+            color: #666;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+        .section {
+            margin-bottom: 25px;
+        }
+        .highlight {
+            background-color: #e8f5e9;
+            border-left: 4px solid #4caf50;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .warning {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        ul, ol {
+            margin: 10px 0;
+            padding-left: 30px;
+        }
+        li {
+            margin: 8px 0;
+            line-height: 1.6;
+        }
+        code {
+            background-color: #f5f5f5;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        .footer-links {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            text-align: center;
+        }
+        .footer-links a {
+            color: #667eea;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid #e0e0e0;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f5f5f5;
+            font-weight: 600;
+            color: #667eea;
+        }
+        tr:nth-child(even) {
+            background-color: #fafafa;
+        }
+    </style>
+</head>
+<body>
+    <div class="privacy-container">
+        <h1>Privacy Declaration</h1>
+        <p class="tagline">Verific: OCR to hash verifier</p>
+
+        <div class="highlight">
+            <strong>TL;DR:</strong> Verific runs entirely in your browser. Your scanned documents never leave your device. The app only makes minimal HTTP GET requests to verify hashes against public certification servers.
+        </div>
+
+        <div class="section">
+            <h2>What Verific Does</h2>
+            <p>Verific is a browser-based application that scans text within registration marks, computes a cryptographic hash, and verifies it against a certification server. The entire OCR and hashing process happens <strong>locally in your browser</strong>.</p>
+        </div>
+
+        <div class="section">
+            <h2>Data Processing: 100% Local</h2>
+            <p>All sensitive operations occur entirely within your browser:</p>
+            <ul>
+                <li><strong>Camera access:</strong> Uses browser MediaStream API - video stays on your device</li>
+                <li><strong>OCR text extraction:</strong> Performed locally using Tesseract.js WebAssembly</li>
+                <li><strong>Image processing:</strong> OpenCV.js processes images entirely in-browser</li>
+                <li><strong>Text normalization:</strong> Character mapping happens client-side in JavaScript</li>
+                <li><strong>SHA-256 hashing:</strong> Computed locally using browser's SubtleCrypto API</li>
+            </ul>
+
+            <div class="highlight">
+                <strong>Your document images and extracted text NEVER leave your device.</strong> They are never uploaded, transmitted, or stored on any server.
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Network Requests: What Gets Sent</h2>
+            <p>Verific makes only two types of HTTP GET requests during the verification process:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Request Type</th>
+                        <th>Purpose</th>
+                        <th>Data Sent</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Metadata Request</strong></td>
+                        <td>Fetch OCR normalization rules for a domain</td>
+                        <td>None (simple GET)</td>
+                        <td><code>GET https://example.com/.verific-meta.json</code></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Hash Verification</strong></td>
+                        <td>Verify computed hash exists on certification server</td>
+                        <td>SHA-256 hash only (no document content)</td>
+                        <td><code>GET https://example.com/c/abc123...xyz</code></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>What is NOT sent:</h3>
+            <ul>
+                <li>Document images or photos</li>
+                <li>Extracted OCR text (raw or normalized)</li>
+                <li>Camera feed or video frames</li>
+                <li>Personal information or identifiers</li>
+                <li>Geolocation data</li>
+                <li>Device fingerprints</li>
+            </ul>
+
+            <div class="warning">
+                <strong>Important:</strong> The SHA-256 hash sent during verification is a cryptographic one-way function. It is mathematically infeasible to reverse-engineer the original document text from the hash. The hash alone reveals nothing about your document's content.
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Third-Party Resources</h2>
+            <p>Verific loads the following libraries from CDNs to provide functionality:</p>
+            <ul>
+                <li><strong>Tesseract.js</strong> (cdn.jsdelivr.net) - OCR engine for text extraction</li>
+                <li><strong>OpenCV.js</strong> (docs.opencv.org) - Computer vision for image processing</li>
+                <li><strong>PSL (Public Suffix List)</strong> (unpkg.com) - Domain parsing for security</li>
+            </ul>
+            <p>These libraries are loaded over HTTPS and execute entirely within your browser's JavaScript sandbox. They do not transmit data back to their CDN providers.</p>
+        </div>
+
+        <div class="section">
+            <h2>What Verific Does NOT Do</h2>
+            <div class="highlight">
+                <ul style="margin: 0;">
+                    <li><strong>Does NOT store scans:</strong> No images or text are saved, cached, or persisted</li>
+                    <li><strong>Does NOT upload documents:</strong> Your scanned content never leaves your browser</li>
+                    <li><strong>Does NOT track users:</strong> No analytics, cookies, or tracking scripts</li>
+                    <li><strong>Does NOT collect personal data:</strong> No registration, accounts, or PII collection</li>
+                    <li><strong>Does NOT use external APIs for OCR:</strong> All text extraction is local</li>
+                    <li><strong>Does NOT transmit to third parties:</strong> Only connects to user-specified verification domains</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Data Retention</h2>
+            <p>Verific has <strong>zero data retention</strong>:</p>
+            <ul>
+                <li>Images exist only in browser memory during active scanning sessions</li>
+                <li>Extracted text is discarded when you close the browser tab</li>
+                <li>No localStorage, sessionStorage, IndexedDB, or cookies are used</li>
+                <li>Camera access is released when you stop the camera or close the tab</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Browser Permissions</h2>
+            <p>Verific requests the following browser permissions:</p>
+            <ul>
+                <li><strong>Camera access:</strong> Required to capture document images (you must explicitly grant this)</li>
+                <li><strong>Clipboard write:</strong> Used when you click "Copy Hash" or "Copy Image" buttons (optional)</li>
+            </ul>
+            <p>You can revoke these permissions at any time through your browser settings.</p>
+        </div>
+
+        <div class="section">
+            <h2>Open Source Transparency</h2>
+            <p>Verific is fully open source under the <strong>AGPL-3.0-or-later</strong> license. You can:</p>
+            <ul>
+                <li>Inspect the complete source code on <a href="https://github.com/paul-hammant/verific" target="_blank">GitHub</a></li>
+                <li>Verify that no data is being exfiltrated</li>
+                <li>Run your own instance on localhost or private servers</li>
+                <li>Audit the code to confirm this privacy declaration</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Verification Server Privacy</h2>
+            <p>When you scan a document, Verific connects to the domain specified in the document's verification URL (e.g., <code>verify:example.com/path</code>). The privacy practices of that certification server are:</p>
+            <ul>
+                <li><strong>Not controlled by Verific</strong> - Each organization runs their own server</li>
+                <li><strong>May log HTTP requests</strong> - Standard web server behavior (IP address, timestamp, user agent)</li>
+                <li><strong>Receive only the hash</strong> - No document content is ever transmitted</li>
+            </ul>
+            <p>For questions about a specific verification server's privacy practices, contact the organization that issued the document.</p>
+        </div>
+
+        <div class="section">
+            <h2>Security Considerations</h2>
+            <p>While Verific protects your privacy, users should be aware:</p>
+            <ul>
+                <li><strong>HTTPS required:</strong> Verification URLs are automatically upgraded to HTTPS to prevent interception</li>
+                <li><strong>No server-side trust:</strong> Verific trusts the certification server specified in the document URL</li>
+                <li><strong>Client-side only:</strong> Security depends on your browser's integrity and isolation</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Questions or Concerns?</h2>
+            <p>If you have questions about this privacy declaration or how Verific handles your data:</p>
+            <ul>
+                <li>Review the <a href="https://github.com/paul-hammant/verific/tree/main/public" target="_blank">source code</a> for complete transparency</li>
+                <li>Open an issue on <a href="https://github.com/paul-hammant/verific/issues" target="_blank">GitHub</a></li>
+                <li>Contact the project maintainer: Paul Hammant</li>
+            </ul>
+        </div>
+
+        <div class="footer-links">
+            <a href="index.html">Back to Verific App</a> ·
+            <a href="https://github.com/paul-hammant/verific" target="_blank">View on GitHub</a> ·
+            <a href="training-pages/" target="_blank">Training Pages</a>
+        </div>
+
+        <p style="text-align: center; margin-top: 30px; color: #999; font-size: 0.85rem;">
+            Last updated: January 2025
+        </p>
+    </div>
+</body>
+</html>

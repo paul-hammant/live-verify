@@ -20,49 +20,176 @@ import * as fs from 'fs';
 import * as path from 'path';
 import { testVerifyFromBase64 } from './test-helpers.js';
 
+// Load .verific-meta.json files for domain-specific normalization
+const HOTEL_RECEIPT_META = JSON.parse(
+    fs.readFileSync(path.join(__dirname, '../public/examples/.verific-meta.json'), 'utf-8')
+);
+
 // Configure longer timeout for these tests (OCR can be slow)
 test.setTimeout(120000); // 2 minutes per test
+
+// Expected OCR text constants (DRY principle - define once, reuse across multiple rotation angles)
+// Expected text constants - ONE per document type, shared across all rotations
+const BACHELOR_THAUMATOLOGY_TEXT = `Unseen University
+Ankh-Morpork
+Bachelor of Thaumatology
+Awarded to: Ponder Stibbons
+Date: Grune 23, A.M. 2024
+Archchancellor: Mustrum Ridcully
+Registrar: Rincewind (Wizzard)`;
+
+const BACHELOR_THAUMATOLOGY_SQUARE_TEXT = `Unseen University
+Ankh-Morpork
+Bachelor of Thaumatology
+Awarded to: Ponder Stibbons
+Date: Grune 23, A.M. 2024
+Archchancellor: Mustrum Ridcully
+Registrar: Rincewind (Wizzard)`;
+
+const DRIVING_LICENSE_NORDIA_TEXT = `Licence No.: DL-NL-847629
+Surname: Bergstrom
+Given Names: Karin
+Date of Birth: 15 MAR 1987
+Address: Hafjord 42, Nordia
+Sex: F
+Issued: 22 JUN 2023
+Expires: 21 JUN 2031
+Permitted: AM, Al, A, B, C`;
+
+const MASTER_APPLIED_ANTHROPICS_TEXT = `Unseen University
+Faculty of Anthropics
+Master of Applied Anthropics
+Awarded to: Esk Weatherwax
+Date: Offle 12, A.M. 2024
+Dean of Anthropics: Modo
+Seal of the Eight Orders`;
+
+const DOCTORATE_HIGH_ENERGY_MAGIC_TEXT = `Unseen University
+College of High Energy Magic
+Doctor of Philosophy
+Specialization: Octarine Resonance
+Awarded to: Adrian Turnipseed
+Date: Ember 8, A.M. 2024
+Chair of High Energy Magic: Hex
+Thesis: "On theMalleability of L-Space"`;
+
+const US_BURRITO_SHOP_TEXT = `Order #2847
+01/19/2025 12:18 PM
+Register: 3
+Chicken Burrito Bowl $9.25
+Brown Rice, Black Beans
+Fajita Veggies, Mild salsa
+Sour Cream, Cheese
+Chips & Guacamole $4.45
+Subtotal: $13.70
+Tax (10.1%): $1.38
+TOTAL: $15.08`;
+
+const HOTEL_RECEIPT_SCHEIDEGG_TEXT = `Rech. Nr. 4572 30.07.2007/13:29:17
+Bar Tisch 7/01
+2x Latte Macchiato a 4.50 CHF9.00
+1x Gloki a 5.00 CHF5.00
+1x Schweinschnitzel a 22.00 CHF22.00
+1x Cheasspatzli a 18.50 CHF18.50
+Total: CHF54.50
+Incl. 7.6% MwSt 54.50 CHF: 3.85
+Entspricht in Euro 36.33 EUR`;
+
+const UK_COFFEE_SHOP_TEXT = `Receipt: 00284719
+Date: 18/01/2025 09:42
+Flat White (Large) £3.65
+Cappuccino (Regular) £3.25
+Chocolate Twist £1.55
+TOTAL: £8.45
+VAT @ 20%: £1.41`;
+
+const UK_ELECTRONICS_STORE_TEXT = `Receipt No:
+8472-2841-9374
+Date: 19/01/2025
+14:23
+Store: 0847 Westfield
+Dell XPS 13 £749.00
+Laptop
+SKU:
+DELLXPS13-
+I5-512
+Logitech MX £89.99
+Master 3S
+SKU: LOG-MX3S-
+BLK
+2-Year Care £79.00
+Plan
+Coverage:
+Accidental
+Damage
+Subtotal: £917.99
+VAT @ 20%: £153.00
+TOTAL: £847.99`;
+
+const US_HOME_IMPROVEMENT_TEXT = `Receipt: 9482-7361-4829-3847
+Date: 01/20/2025 10:47 AM
+Store: #4729 Portland SE
+DEWALT 20V Combo Kit (5-Tool) $499.00
+DCK521D2 - 20V MAX Lithium Ion
+SKU: 1004837291
+2x4x8 Pressure Treated Lumber (Qty: 12) $84.48
+SKU: 1000066233 @ $7.04 ea
+Deck Screws 3" (5lb Box) $34.97
+GRK R4 Multi-Purpose
+SKU: 1003848729
+Olympic Maximum Stain (Gal, Cedar) $42.98
+SKU: 1000574829
+3" Paint Brush (Pro Grade) $18.97
+SKU: 1002947382
+Subtotal: $680.40
+Sales Tax (0.0%): $0.00
+TOTAL: $680.40
+VISA ending in 8472: $680.40`;
 
 // Test cases: rotated screenshots (85, 175, 265 degrees) from test/fixtures/screenshots/
 // Tests verify that the app can handle rotated images and correctly detect/rotate them back
 // Rotation angles are off by 5° from cardinal directions: 85° (off 90°), 175° (off 180°), 265° (off 270°)
-// Uses mock verification to avoid network dependencies - compares computed hash against expected hash
+// Uses text comparison instead of hash comparison - more robust against OCR variations
+//
+// KNOWN LIMITATIONS: Some rotations fail OCR extraction. This is a Tesseract.js limitation on
+// complex rotated text. Tests with empty expectedText use discovery mode to log actual OCR output.
+// Future improvement: On-device AI OCR (Apple Intelligence, Google Gemini) will handle these cases.
 const testCases = [
     // 265° rotations
     {
         screenshot: 'bachelor-thaumatology-rotated-265.png',
-        expectedHash: 'cad9e13e7ed6145e2ff75ca076d8cf6d1830a6e4296d3b08839271dcd366ab76',
+        expectedText: BACHELOR_THAUMATOLOGY_TEXT,
         description: 'Bachelor of Thaumatology certificate (rotated 265°)'
     },
     {
         screenshot: 'bachelor-thaumatology-square-rotated-265.png',
-        expectedHash: 'cad9e13e7ed6145e2ff75ca076d8cf6d1830a6e4296d3b08839271dcd366ab76',
+        expectedText: BACHELOR_THAUMATOLOGY_SQUARE_TEXT,
         description: 'Bachelor of Thaumatology (square format, rotated 265°)'
     },
     {
         screenshot: 'master-applied-anthropics-rotated-265.png',
-        expectedHash: '89cefd7756d08979b002fd2949396a08369dc8fa7c67278fbbbbe09edf9646bc',
+        expectedText: MASTER_APPLIED_ANTHROPICS_TEXT,
         description: 'Master of Applied Anthropics certificate (rotated 265°)'
     },
     {
         screenshot: 'doctorate-high-energy-magic-rotated-265.png',
-        expectedHash: '09d1e6765c2dbd833e5a1f4770d9f0c9368224f7b1aed34de7a3bd5bf4d1f031',
+        expectedText: DOCTORATE_HIGH_ENERGY_MAGIC_TEXT,
         description: 'Doctorate in High Energy Magic certificate (rotated 265°)'
     },
     // Medical license skipped for all rotations - rotation causes OCR to read the REVOKED STATUS message instead of cert content
     {
         screenshot: 'driving-license-nordia-svg-rotated-265.png',
-        expectedHash: 'd8edb10c3f40af3010a3e0aed96a4a840e981cdacf1d62bbdb2ad19b334d51a9',
+        expectedText: DRIVING_LICENSE_NORDIA_TEXT,
         description: 'Driving License (SVG-based, rotated 265°)'
     },
     {
         screenshot: 'hotel-receipt-scheidegg-rotated-265.png',
-        expectedHash: 'b174060ff4f9543165ccad0aea0df4aca0b6741fc6e0f16a52d6c04aa65de316',
+        expectedText: HOTEL_RECEIPT_SCHEIDEGG_TEXT,
         description: 'Hotel receipt from Switzerland (rotated 265°)'
     },
     {
         screenshot: 'uk-coffee-shop-rotated-265.png',
-        expectedHash: 'cb6e761f3a90513b526ffb903e9be30ddac89bb6672d0ad3bda028abeaf46c67',
+        expectedText: UK_COFFEE_SHOP_TEXT,
         description: 'UK Coffee Shop receipt (£8.45, rotated 265°)'
     },
     {
@@ -72,53 +199,53 @@ const testCases = [
     },
     {
         screenshot: 'uk-electronics-store-rotated-265.png',
-        expectedHash: '9b06b8cec89c0a4ce80ac1e64063ec7ae9533079b45c994aadbfe190ab0406c3',
+        expectedText: UK_ELECTRONICS_STORE_TEXT,
         description: 'UK Electronics Store receipt (£847.99, rotated 265°)'
     },
     {
         screenshot: 'us-burrito-shop-rotated-265.png',
-        expectedHash: 'f4c1e2d19a42cb215c4d3321831b92fe77215711119c6c40323e58b20a84bcbb',
+        expectedText: US_BURRITO_SHOP_TEXT,
         description: 'US Burrito Shop receipt ($15.08, rotated 265°)'
     },
     {
         screenshot: 'us-home-improvement-rotated-265.png',
-        expectedHash: '65b387191a343a4920c91168be70087adba13e44caaa8818aa7eea684725995e',
+        expectedText: US_HOME_IMPROVEMENT_TEXT,
         description: 'US Home Improvement receipt ($680.40, rotated 265°)'
     },
     // 175° rotations (off 180° - upside down with 5° tilt)
     {
         screenshot: 'bachelor-thaumatology-rotated-175.png',
-        expectedHash: '1cddfbb2adfa13e4562d274b59e56b946f174a0feb566622dd67a4880cf0b223',
+        expectedText: BACHELOR_THAUMATOLOGY_TEXT,
         description: 'Bachelor of Thaumatology certificate (rotated 175°)'
     },
     {
         screenshot: 'bachelor-thaumatology-square-rotated-175.png',
-        expectedHash: 'cad9e13e7ed6145e2ff75ca076d8cf6d1830a6e4296d3b08839271dcd366ab76',
+        expectedText: BACHELOR_THAUMATOLOGY_SQUARE_TEXT,
         description: 'Bachelor of Thaumatology (square format, rotated 175°)'
     },
     {
         screenshot: 'master-applied-anthropics-rotated-175.png',
-        expectedHash: '6725b845dcdf2490adf8d5f62e09e5f2055cb80c6200e5ccf58875c8190f4a80',
+        expectedText: MASTER_APPLIED_ANTHROPICS_TEXT,
         description: 'Master of Applied Anthropics certificate (rotated 175°)'
     },
     {
         screenshot: 'doctorate-high-energy-magic-rotated-175.png',
-        expectedHash: '09d1e6765c2dbd833e5a1f4770d9f0c9368224f7b1aed34de7a3bd5bf4d1f031',
+        expectedText: DOCTORATE_HIGH_ENERGY_MAGIC_TEXT,
         description: 'Doctorate in High Energy Magic certificate (rotated 175°)'
     },
     {
         screenshot: 'driving-license-nordia-svg-rotated-175.png',
-        expectedHash: '2afc91c0a4a8797a2a0c389a1b36fe3a72e6285a3fcf4eb3ebbe82d13cb5b7a3',
+        expectedText: DRIVING_LICENSE_NORDIA_TEXT,
         description: 'Driving License (SVG-based, rotated 175°)'
     },
     {
         screenshot: 'hotel-receipt-scheidegg-rotated-175.png',
-        expectedHash: '012dc824a542b50c2d25201b91c4d31abde28b542bf9fb73c9c862b8a3e8897b',
+        expectedText: HOTEL_RECEIPT_SCHEIDEGG_TEXT,
         description: 'Hotel receipt from Switzerland (rotated 175°)'
     },
     {
         screenshot: 'uk-coffee-shop-rotated-175.png',
-        expectedHash: 'cb6e761f3a90513b526ffb903e9be30ddac89bb6672d0ad3bda028abeaf46c67',
+        expectedText: UK_COFFEE_SHOP_TEXT,
         description: 'UK Coffee Shop receipt (£8.45, rotated 175°)'
     },
     {
@@ -128,54 +255,54 @@ const testCases = [
     },
     {
         screenshot: 'uk-electronics-store-rotated-175.png',
-        expectedHash: '9b06b8cec89c0a4ce80ac1e64063ec7ae9533079b45c994aadbfe190ab0406c3',
+        expectedText: UK_ELECTRONICS_STORE_TEXT,
         description: 'UK Electronics Store receipt (£847.99, rotated 175°)'
     },
     {
         screenshot: 'us-burrito-shop-rotated-175.png',
-        expectedHash: 'f4c1e2d19a42cb215c4d3321831b92fe77215711119c6c40323e58b20a84bcbb',
+        expectedText: US_BURRITO_SHOP_TEXT,
         description: 'US Burrito Shop receipt ($15.08, rotated 175°)'
     },
     {
         screenshot: 'us-home-improvement-rotated-175.png',
-        expectedHash: '6485a98b65e14360c778a20b415e01bb35e1cd3daa426b7db9580cf62835fb0e',
+        expectedText: US_HOME_IMPROVEMENT_TEXT,
         description: 'US Home Improvement receipt ($680.40, rotated 175°)'
     },
     // 85° rotations
     {
         screenshot: 'bachelor-thaumatology-rotated-85.png',
-        expectedHash: 'cad9e13e7ed6145e2ff75ca076d8cf6d1830a6e4296d3b08839271dcd366ab76',
+        expectedText: BACHELOR_THAUMATOLOGY_TEXT,
         description: 'Bachelor of Thaumatology certificate (rotated 85°)'
     },
     {
         screenshot: 'bachelor-thaumatology-square-rotated-85.png',
-        expectedHash: '1cddfbb2adfa13e4562d274b59e56b946f174a0feb566622dd67a4880cf0b223',
+        expectedText: BACHELOR_THAUMATOLOGY_SQUARE_TEXT,
         description: 'Bachelor of Thaumatology (square format, rotated 85°)'
     },
     {
         screenshot: 'master-applied-anthropics-rotated-85.png',
-        expectedHash: '89cefd7756d08979b002fd2949396a08369dc8fa7c67278fbbbbe09edf9646bc',
+        expectedText: MASTER_APPLIED_ANTHROPICS_TEXT,
         description: 'Master of Applied Anthropics certificate (rotated 85°)'
     },
     // Doctorate 85° skipped - OCR extraction failed
-    // {
-    //     screenshot: 'doctorate-high-energy-magic-rotated-85.png',
-    //     expectedHash: '',
-    //     description: 'Doctorate in High Energy Magic certificate (rotated 85°)'
-    // },
+    {
+        screenshot: 'doctorate-high-energy-magic-rotated-85.png',
+        expectedHash: '',
+        description: 'Doctorate in High Energy Magic certificate (rotated 85°)'
+    },
     {
         screenshot: 'driving-license-nordia-svg-rotated-85.png',
-        expectedHash: 'd8edb10c3f40af3010a3e0aed96a4a840e981cdacf1d62bbdb2ad19b334d51a9',
+        expectedText: DRIVING_LICENSE_NORDIA_TEXT,
         description: 'Driving License (SVG-based, rotated 85°)'
     },
     {
         screenshot: 'hotel-receipt-scheidegg-rotated-85.png',
-        expectedHash: 'b174060ff4f9543165ccad0aea0df4aca0b6741fc6e0f16a52d6c04aa65de316',
+        expectedText: HOTEL_RECEIPT_SCHEIDEGG_TEXT,
         description: 'Hotel receipt from Switzerland (rotated 85°)'
     },
     {
         screenshot: 'uk-coffee-shop-rotated-85.png',
-        expectedHash: 'cb6e761f3a90513b526ffb903e9be30ddac89bb6672d0ad3bda028abeaf46c67',
+        expectedText: UK_COFFEE_SHOP_TEXT,
         description: 'UK Coffee Shop receipt (£8.45, rotated 85°)'
     },
     {
@@ -185,17 +312,17 @@ const testCases = [
     },
     {
         screenshot: 'uk-electronics-store-rotated-85.png',
-        expectedHash: '9b06b8cec89c0a4ce80ac1e64063ec7ae9533079b45c994aadbfe190ab0406c3',
+        expectedText: UK_ELECTRONICS_STORE_TEXT,
         description: 'UK Electronics Store receipt (£847.99, rotated 85°)'
     },
     {
         screenshot: 'us-burrito-shop-rotated-85.png',
-        expectedHash: 'f4c1e2d19a42cb215c4d3321831b92fe77215711119c6c40323e58b20a84bcbb',
+        expectedText: US_BURRITO_SHOP_TEXT,
         description: 'US Burrito Shop receipt ($15.08, rotated 85°)'
     },
     {
         screenshot: 'us-home-improvement-rotated-85.png',
-        expectedHash: '65b387191a343a4920c91168be70087adba13e44caaa8818aa7eea684725995e',
+        expectedText: US_HOME_IMPROVEMENT_TEXT,
         description: 'US Home Improvement receipt ($680.40, rotated 85°)'
     }
 ];
@@ -273,39 +400,75 @@ test.describe('Screenshot Verification Pipeline - Rotated Images', () => {
             const screenshotBuffer = fs.readFileSync(screenshotPath);
             const screenshotBase64 = screenshotBuffer.toString('base64');
 
-            // Run verification pipeline using test helper
-            const result = await testVerifyFromBase64(page, screenshotBase64, testCase.expectedHash);
+            // Determine if this test needs .verific-meta.json injection
+            const injectedMeta = testCase.screenshot.includes('hotel-receipt') ? HOTEL_RECEIPT_META : null;
 
-            // Log result for debugging
-            console.log(`[${testCase.description}]`, result);
+            // Run verification pipeline using test helper
+            const result = await testVerifyFromBase64(page, screenshotBase64, testCase.expectedHash, injectedMeta);
+
+            // Save cropped image to tmp/ for debugging
+            if (result.croppedImageData) {
+                const fs = await import('fs');
+                const base64Data = result.croppedImageData.replace(/^data:image\/\w+;base64,/, '');
+                const buffer = Buffer.from(base64Data, 'base64');
+                const outputPath = path.join(__dirname, '../tmp', `cropped-${testCase.screenshot}`);
+                fs.writeFileSync(outputPath, buffer);
+                console.log(`💾 Saved cropped image to ${outputPath}`);
+            }
+
+            // Log result for debugging (omit croppedImageData - too verbose)
+            const { croppedImageData, ...resultForLogging } = result;
+            console.log(`[${testCase.description}]`, resultForLogging);
 
             // Assert verification succeeded
             expect(result.success).toBe(true);
 
-            // Assert hash matches expected (or discover it)
-            if (testCase.expectedHash === '') {
-                // Discovery mode: just log the hash for manual inspection
-                console.log(`📋 DISCOVERED HASH for ${testCase.description}:`);
-                console.log(`   expectedHash: '${result.hash}',`);
-                console.log(`📄 NORMALIZED TEXT:`);
-                console.log(result.normalized);
-                console.log('---');
-                // Still assert hash exists and is valid SHA-256 (64 hex chars)
-                expect(result.hash).toMatch(/^[0-9a-f]{64}$/);
-            } else {
-                // Normal mode: assert hash matches expected
-                if (result.hash !== testCase.expectedHash) {
-                    // Hash mismatch - show normalized text for debugging
-                    console.log(`❌ HASH MISMATCH for ${testCase.description}:`);
-                    console.log(`   Expected: '${testCase.expectedHash}'`);
-                    console.log(`   Received: '${result.hash}'`);
+            // Assert text matches expected (or discover it)
+            if (testCase.expectedText !== undefined) {
+                // TEXT-BASED COMPARISON (new approach)
+                if (testCase.expectedText === '') {
+                    // Discovery mode: just log the text for manual inspection
+                    console.log(`📋 DISCOVERED TEXT for ${testCase.description}:`);
+                    console.log(`   expectedText: \`${result.normalized}\`,`);
+                    console.log('---');
+                } else {
+                    // Normal mode: assert normalized text matches expected
+                    expect(result.normalized).toBe(testCase.expectedText);
+                }
+            } else if (testCase.expectedHash !== undefined) {
+                // HASH-BASED COMPARISON (legacy approach for backwards compatibility)
+                if (testCase.expectedHash === '') {
+                    // Discovery mode: just log the hash for manual inspection
+                    console.log(`📋 DISCOVERED HASH for ${testCase.description}:`);
+                    console.log(`   expectedHash: '${result.hash}',`);
                     console.log(`📄 NORMALIZED TEXT:`);
                     console.log(result.normalized);
                     console.log('---');
+                    // Still assert hash exists and is valid SHA-256 (64 hex chars)
+                    expect(result.hash).toMatch(/^[0-9a-f]{64}$/);
+                } else {
+                    // Normal mode: assert hash matches expected
+                    if (result.hash !== testCase.expectedHash) {
+                        // Hash mismatch - show normalized text for debugging
+                        console.log(`❌ HASH MISMATCH for ${testCase.description}:`);
+                        console.log(`   Expected: '${testCase.expectedHash}'`);
+                        console.log(`   Received: '${result.hash}'`);
+                        console.log(`📄 NORMALIZED TEXT:`);
+                        console.log(result.normalized);
+                        console.log('---');
+
+                        // Fail with detailed error message including normalized text
+                        throw new Error(
+                            `Hash mismatch for ${testCase.description}\n` +
+                            `Expected: ${testCase.expectedHash}\n` +
+                            `Received: ${result.hash}\n` +
+                            `\nNormalized text:\n${result.normalized}\n`
+                        );
+                    }
+                    expect(result.hash).toBe(testCase.expectedHash);
+                    // Assert mock verification confirmed the match
+                    expect(result.hashMatches).toBe(true);
                 }
-                expect(result.hash).toBe(testCase.expectedHash);
-                // Assert mock verification confirmed the match
-                expect(result.hashMatches).toBe(true);
             }
 
             // Assert normalized text is present

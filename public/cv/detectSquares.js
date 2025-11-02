@@ -45,7 +45,10 @@
             const y = approx.intPtr(j,0)[1];
             pts.push({x,y});
           }
-          candidates.push(pts);
+          // Calculate skew angle using minAreaRect
+          const rotatedRect = cv.minAreaRect(c);
+          const angle = rotatedRect.angle;
+          candidates.push({points: pts, angle: angle});
         }
       }
       approx.delete(); c.delete();
@@ -73,21 +76,79 @@
     return dst;
   }
 
+  function deskewCanvas(canvas, angle) {
+    // Rotate canvas to remove skew while preserving source resolution
+    // OpenCV minAreaRect returns angle in range [-90, 0]
+    // Normalize to get rotation needed to align to horizontal
+    let rotationAngle = angle;
+    if (angle < -45) {
+      rotationAngle = 90 + angle;
+    }
+
+    const rad = -rotationAngle * Math.PI / 180;
+    const cos = Math.abs(Math.cos(rad));
+    const sin = Math.abs(Math.sin(rad));
+
+    // Preserve original resolution by using source dimensions
+    const srcWidth = canvas.width;
+    const srcHeight = canvas.height;
+    const newWidth = Math.round(srcWidth * cos + srcHeight * sin);
+    const newHeight = Math.round(srcWidth * sin + srcHeight * cos);
+
+    const deskewed = document.createElement('canvas');
+    deskewed.width = newWidth;
+    deskewed.height = newHeight;
+    const ctx = deskewed.getContext('2d');
+
+    ctx.translate(newWidth / 2, newHeight / 2);
+    ctx.rotate(rad);
+    ctx.drawImage(canvas, -srcWidth / 2, -srcHeight / 2, srcWidth, srcHeight);
+
+    return deskewed;
+  }
+
   async function detectSquaresFromCanvas(canvas, opts={}) {
     await ensureCvReady();
-    const src = matFromCanvas(canvas);
+    let src = matFromCanvas(canvas);
     try {
       const candidates = findSquareCandidates(src, opts);
       const best = window.cvGeometry.selectRegistrationCorners(candidates, src.cols, src.rows);
       if (!best) {
         return { ok:false, error:'No registration square detected', candidates };
       }
-      const warped = warpToTightRect(src, best);
+
+      // Check if rectangle is axis-aligned (no actual skew despite minAreaRect angle)
+      const [tl, tr, br, bl] = window.cvGeometry.orderCorners(best.points);
+      const topHorizontal = Math.abs(tl.y - tr.y) < 2;
+      const bottomHorizontal = Math.abs(bl.y - br.y) < 2;
+      const leftVertical = Math.abs(tl.x - bl.x) < 2;
+      const rightVertical = Math.abs(tr.x - br.x) < 2;
+      const isAxisAligned = topHorizontal && bottomHorizontal && leftVertical && rightVertical;
+
+      // Deskew if significant angle detected AND not already axis-aligned
+      const skewAngle = best.angle;
+      if (Math.abs(skewAngle) > 0.5 && !isAxisAligned) {
+        const processedCanvas = deskewCanvas(canvas, skewAngle);
+        // Re-detect on deskewed image
+        src.delete();
+        src = matFromCanvas(processedCanvas);
+        const deskewedCandidates = findSquareCandidates(src, opts);
+        const deskewedBest = window.cvGeometry.selectRegistrationCorners(deskewedCandidates, src.cols, src.rows);
+        if (deskewedBest) {
+          const warped = warpToTightRect(src, deskewedBest.points);
+          const outCanvas = document.createElement('canvas');
+          cv.imshow(outCanvas, warped);
+          warped.delete();
+          return { ok:true, corners: deskewedBest.points, skewAngle: skewAngle, croppedCanvas: outCanvas, candidates: deskewedCandidates };
+        }
+      }
+
+      const warped = warpToTightRect(src, best.points);
       // Convert to canvas
       const outCanvas = document.createElement('canvas');
       cv.imshow(outCanvas, warped);
       warped.delete();
-      return { ok:true, corners: best, croppedCanvas: outCanvas, candidates };
+      return { ok:true, corners: best.points, skewAngle: skewAngle, croppedCanvas: outCanvas, candidates };
     } finally {
       src.delete();
     }
