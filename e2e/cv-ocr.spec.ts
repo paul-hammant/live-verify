@@ -15,7 +15,7 @@ function listPairs(dir: string): { png: string; txt: string | null }[] {
 
 async function loadAndOcr(page, pngPath: string) {
   await page.goto('file://' + path.resolve('e2e/cv-harness.html'));
-  await page.addScriptTag({ url: 'https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js' });
+  await page.addScriptTag({ url: 'https://cdn.jsdelivr.net/npm/tesseract.js@6/dist/tesseract.min.js' });
   await page.evaluate(() => (window as any).waitForCv());
 
   const buf = fs.readFileSync(pngPath);

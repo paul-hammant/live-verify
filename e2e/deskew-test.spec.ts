@@ -25,11 +25,11 @@ test.setTimeout(120000); // 2 minutes per test
 
 // Expected text for assertions
 const DRIVING_LICENSE_TEXT = `Licence No.: DL-NL-847629
-surname: Bergstrom
+Surname: Bergstrom
 Given Names: Karin
 Date of Birth: 15 MAR 1987
 Address: Hafjord 42, Nordia
-sex: F
+Sex: F
 Issued: 22 JUN 2023
 Expires: 21 JUN 2031
 Permitted: AM, Al, A, B, C`;

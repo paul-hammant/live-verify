@@ -93,11 +93,11 @@ Authority: Guild of Doctors and Barber-Surgeons`
         expectedHash: 'de34645330665a634d061e10b8368302f5d2745c0722f19b5d3b5418b326749a',
         description: 'Driving License (SVG-based)',
         expectedText: `Licence No.: DL-NL-847629
-surname: Bergstrom
+Surname: Bergstrom
 Given Names: Karin
 Date of Birth: 15 MAR 1987
 Address: Hafjord 42, Nordia
-sex: F
+Sex: F
 Issued: 22 JUN 2023
 Expires: 21 JUN 2031
 Permitted: AM, Al, A, B, C`
