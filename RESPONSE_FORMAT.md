@@ -55,31 +55,33 @@ Or:
 }
 ```
 
-**Not Verified with details:**
+**Not Verified (realistic - minimal response):**
+```json
+{
+  "status": "REVOKED"
+}
+```
+
+```json
+{
+  "status": "SUSPENDED"
+}
+```
+
+```json
+{
+  "status": "EXPIRED"
+}
+```
+
+**Not Verified (theoretical - with optional details):**
+
+Organizations *could* include additional fields, but in practice they rarely would due to privacy concerns, legal liability, and simplicity:
+
 ```json
 {
   "status": "REVOKED",
-  "message": "License revoked on 2025-01-15",
-  "revokedDate": "2025-01-15",
-  "reason": "Disciplinary action"
-}
-```
-
-```json
-{
-  "status": "SUSPENDED",
-  "message": "Temporarily suspended pending review",
-  "suspendedDate": "2025-10-01",
-  "reviewDate": "2025-11-01"
-}
-```
-
-```json
-{
-  "status": "EXPIRED",
-  "message": "Certificate expired on 2024-12-31",
-  "expiryDate": "2024-12-31",
-  "renewalUrl": "https://example.com/renew"
+  "message": "License revoked - contact board for details"
 }
 ```
 
@@ -87,9 +89,9 @@ Or:
 - Client parses JSON and checks `json.status` field
 - `status: "OK"` or `status: "VERIFIED"` → Verification succeeds
 - Any other status → Verification fails
-- `message` field (optional) provides human-readable details
-- Additional fields can provide metadata (dates, URLs, etc.), but they are optionals too.
-- If JSON parsing fails, treat as plain text maybe.
+- Additional fields (message, dates, URLs) are theoretically possible but unlikely in practice
+- Most organizations will just return the status alone
+- If JSON parsing fails, treat as plain text
 
 ### 3. Custom Status Display (.verific-meta.json)
 
@@ -165,18 +167,17 @@ As it happens on GitHub-Pages, example 1 is really [https://paul-hammant.github.
 }
 ```
 
-Or with verification metadata (information added **after** the degree was awarded):
+**Important:** In practice, most responses are just:
 ```json
 {
-  "status": "OK",
-  "verifiedAt": "2025-10-31T14:23:00Z",
-  "verificationCount": 142
+  "status": "OK"
 }
 ```
 
-**Important:** The response should ONLY contain:
-- Verification status (`"OK"`, `"REVOKED"`, etc.)
-- Post-issuance metadata (revocation dates, verification timestamps, etc.)
+Organizations *could* include verification metadata (timestamp, count), but this is rare due to:
+- Privacy concerns (who's checking and when)
+- Database load (tracking every verification)
+- Simplicity (static files can't track counts)
 
 **Do NOT include the original claim data** (degree type, graduate name, honors, etc.) - that information is already in the document being verified. The hash already proves the document content is authentic. The response only indicates whether the issuer still affirms that hash.
 
@@ -184,32 +185,38 @@ Or with verification metadata (information added **after** the degree was awarde
 
 **URL:** `https://medicalboard.gov/licenses/verify/xyz789...`
 
-**Response:**
+**Response (realistic):**
 ```json
 {
-  "status": "REVOKED",
-  "message": "License revoked 2024-06-15 due to malpractice finding",
-  "revokedDate": "2024-06-15",
-  "caseNumber": "2024-ML-4291",
-  "boardDecisionUrl": "https://medicalboard.gov/decisions/2024-ML-4291"
+  "status": "REVOKED"
 }
 ```
 
-**Display:** `❌ REVOKED - License revoked 2024-06-15 due to malpractice finding`
+**Display:** `❌ REVOKED by medicalboard.gov`
+
+**Why minimal?** Medical boards typically:
+- Protect privacy of disciplinary details
+- Direct inquiries to official channels (phone, mail)
+- Avoid legal liability from public disclosure
+- Keep responses simple and uniform
 
 ### Example 4: Suspended Driver's License
 
 **URL:** `https://dmv.state.gov/licenses/verify/dl123...`
 
-**Response:**
+**Response (realistic):**
 ```json
 {
-  "status": "SUSPENDED",
-  "message": "Suspended until 2025-12-01 - Unpaid traffic violations",
-  "suspensionEnd": "2025-12-01",
-  "reinstateUrl": "https://dmv.state.gov/reinstate"
+  "status": "SUSPENDED"
 }
 ```
+
+**Display:** `❌ SUSPENDED by dmv.state.gov`
+
+**Why minimal?** Government agencies:
+- Cannot disclose reasons without proper authorization
+- Refer details to official DMV inquiries
+- Uniform responses for all suspension types
 
 ## HTTP Status Codes
 
@@ -233,7 +240,7 @@ Or with verification metadata (information added **after** the degree was awarde
 4. Doctor can verify license: `GET /verify/hash` → `200 OK` + `"OK"`
 5. Later: Malpractice finding, license **revoked** (2024-06-15)
 6. Database record updated: `hash → REVOKED`
-7. Doctor's document still exists, but verification shows: `200 OK` + `{"status": "REVOKED", "revokedDate": "2024-06-15"}`
+7. Doctor's document still exists, but verification shows: `200 OK` + `{"status": "REVOKED"}`
 
 **Scenario 2: License denied during initial application**
 1. Applicant applies for medical license
@@ -252,11 +259,12 @@ Or with verification metadata (information added **after** the degree was awarde
 ## Best Practices
 
 1. **Keep it simple:** Plain text `"OK"` is sufficient for most use cases
-2. **Use JSON for metadata:** If you want to include dates, reasons, etc.
-3. **Short status codes:** Keep statuses ≤50 chars for mobile display
-4. **CORS headers:** Enable CORS for verification endpoints (public data)
-5. **Cache headers:** Use appropriate cache headers (immutable hashes can be cached forever)
-6. **Response time:** Aim for <100ms response time (static files are ideal)
+2. **Minimal responses:** Just return the status - avoid including detailed metadata (dates, reasons, case numbers)
+3. **Privacy first:** Don't disclose sensitive information in public verification responses
+4. **Short status codes:** Keep statuses ≤50 chars for mobile display
+5. **CORS headers:** Enable CORS for verification endpoints (public data)
+6. **Cache headers:** Use appropriate cache headers (immutable hashes can be cached forever)
+7. **Response time:** Aim for <100ms response time (static files are ideal)
 
 ## Anti-Patterns
 
@@ -284,6 +292,18 @@ body.includes("OK")  // ❌
 // Good: Exact match
 body.trim() === "OK"  // ✅
 ```
+
+❌ **Don't include detailed revocation information:**
+```json
+{
+  "status": "REVOKED",
+  "revokedDate": "2024-06-15",
+  "reason": "Malpractice finding",
+  "caseNumber": "2024-ML-4291",
+  "boardDecisionUrl": "https://medicalboard.gov/decisions/2024-ML-4291"
+}
+```
+This exposes private disciplinary details. Just return `{"status": "REVOKED"}` and direct inquiries to official channels.
 
 ## Content-Type Headers
 

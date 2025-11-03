@@ -3,10 +3,9 @@
 ![Jest and Playwright tests, then deploy to GitHub Pages](https://github.com/paul-hammant/verific/actions/workflows/deploy.yml/badge.svg)
 ![License](https://img.shields.io/badge/license-AGPL--3.0-blue)
 
-**Proof of concept** implementing the approach described in: 
-[OCR-to-Hash: A Simple Audit Trail for Physical Documents](https://paulhammant.com/2023/01/17/ocr-to-hash-simple-audit-trail-for-physical-documents/). 
-For now this is using Tesseract for OCR, and OpenCV for registration marker detection and de-skew for inperfect holding of the camera. In a couple
-of years, the entire implementation will leverage on-device AI.
+**Proof of concept** implementing the approach described in:
+[OCR-to-Hash: A Simple Audit Trail for Physical Documents](https://paulhammant.com/2023/01/17/ocr-to-hash-simple-audit-trail-for-physical-documents/).
+For now this is using Tesseract for OCR, and OpenCV for registration marker detection and de-skew for imperfect holding of the camera. iOS's **Live Text** feature (Camera app, iOS 15+) already has the core OCR capability - it just needs a few enhancements to recognize `verify:` URLs, normalize text, and compute hashes on-device. The technology is much closer to mainstream adoption than it might appear.
 
 **⚠️ Project Status:** Incomplete because of imperfect OCR. I've a bug in Tesseract.js (actually two different alternates to Tesseract C++ made 
 available for web/JavasScript via WASM) that is not in the most recent C++ version. [See proof](https://github.com/paul-hammant/verific/issues/1). 
@@ -39,6 +38,10 @@ So expense fraud is a real thing, and verifying printed/scanned claims (like sal
 ## The Solution
 
 **Example:** Four colleagues have lunch at In-N-Out Burger. One person pays, scans the receipt with their phone to verify it's authentic (not photoshopped, not altered), then submits it for expense reimbursement. Later, their company's expense system asks: *"Who attended? What percentage is billable to client projects? What percentage is reimbursable vs. company-paid?"* None of that detail concerns In-N-Out Burger - they just confirm: *"Yes, this receipt is authentic. Transaction occurred at this time, this amount, this location."* The receipt's SHA-256 hash has been verified. The company handles attribution, allocation, and approval internally.
+
+![](https://paul-hammant.github.io/verific/screenshots/hotel-receipt-scheidegg.png)
+
+See that "verify:" line ... we'll come back to that.
 
 **This is OCR-to-hash verification:** A **100% client-side** web app that uses phone camera OCR to verify printed claims via SHA-256 hash validation against URLs printed on the documents themselves.
 
@@ -79,21 +82,7 @@ Many more use cases documented below.
 
 ## How It Works
 
-```
-┌─────────────────────────────────┐  ← Black border registration marks
-│                                 │    for computer vision detection
-│  Some text or other that is     │
-│  important to various parties   │
-│  is accurate, and that          │
-│  importance could be said to    │
-│  be valuable. Likely there      │
-│  are dates or numbers or some   │
-│  non predictable in here too    │
-│  <something variable here>      │
-│  verify:example.com/hashes      │  ← Verification URL (also accepts vfy:)
-│                                 │
-└─────────────────────────────────┘
-```
+Is the "verify:" line in the receipt that is the clue to OCR that verification can happen:
 
 ### Verification Pipeline
 
@@ -204,7 +193,7 @@ Traditional university degrees, professional certifications, and art certificate
 
 **Practical solutions today:**
 
-1. **Short-form claims** - The same credential can have TWO valid hashes (long-form ornate + short-form plain). See **[Degree_Certificate_Dual_Hash.md](Degree_Certificate_Dual_Hash.md)** for detailed explanation of how universities can support both ornate wall certificates AND OCR-friendly CV claims.
+1. **Multi-representation claims** - The same credential can have MULTIPLE valid hashes (long-form, medium-form, short-form, etc.). See **[Multi_Representation_Verification.md](Multi_Representation_Verification.md)** for detailed explanation of how universities can support ornate wall certificates AND OCR-friendly CV claims AND social media profiles - unlimited representations of the same legal fact.
 
 2. **OCR-optimized originals** - Organizations can print certificates with:
    - Registration marks around a plain-text verification box
@@ -251,6 +240,14 @@ Modern phones already have neural processing units (NPUs) running sophisticated 
 - **Google on-device Gemini** (Pixel 9+, Tensor G4 chip) - multimodal AI including OCR
 - **Samsung Galaxy AI** (S24+, Snapdragon 8 Gen 3) - on-device vision processing
 - **Qualcomm AI Engine** - NPUs in most modern Android phones
+
+**iOS Live Text is already 90% there:** iPhone users (iOS 15+, released 2021) already have **Live Text** built into the Camera app - point your camera at any text and iOS extracts it instantly, on-device. For OCR-to-hash verification, we just need a few enhancements:
+- Recognize `verify:` URLs in extracted text and trigger verification flow
+- Apply text normalization rules (not just raw extraction)
+- Compute SHA-256 hash on-device (Web Crypto API already available)
+- Navigate to verification URL and display result
+
+**The core OCR capability is already shipped and working on hundreds of millions of iPhones.** The "AI tweaks" needed are incremental feature additions, not fundamental technology development. Android's Lens feature offers similar capabilities.
 
 **These on-device AI models can:**
 - Match or exceed cloud OCR quality (GPT-4 Vision, Claude 3.5 Sonnet level)
@@ -322,21 +319,21 @@ In short, if the claim is aimed at humans reading it and is printed on paper (or
 
 **Detailed use cases:** The following six scenarios demonstrate specific advantages of OCR-to-hash verification in real-world applications:
 
-1. **[Education Credentials](Use_Case-Educational_Degrees.md)** - degree/etc verification with privacy-preserving public registries
+1. **[Education Credentials](Use_Cases/Educational_Degrees.md)** - degree/etc verification with privacy-preserving public registries
    <img src="https://paul-hammant.github.io/verific/screenshots/bachelor-thaumatology.png" width="200"> <img src="https://paul-hammant.github.io/verific/screenshots/master-applied-anthropics.png" width="200"> <img src="https://paul-hammant.github.io/verific/screenshots/doctorate-high-energy-magic.png" width="200">
 
-2. **[B2B Product Certifications](Use_Case-Product_Labeling.md)** - Preventing supplier impersonation fraud (MedPro/Intertek case)
+2. **[B2B Product Certifications](Use_Cases/Product_Labeling.md)** - Preventing supplier impersonation fraud (MedPro/Intertek case)
 
-3. **[Receipt Verification](Use_Case-Sales_Receipts.md)** - Eliminating duplicate expense claims across employers
+3. **[Receipt Verification](Use_Cases/Sales_Receipts.md)** - Eliminating duplicate expense claims across employers
    <img src="https://paul-hammant.github.io/verific/screenshots/uk-coffee-shop.png" width="150"> <img src="https://paul-hammant.github.io/verific/screenshots/us-burrito-shop.png" width="150"> <img src="https://paul-hammant.github.io/verific/screenshots/hotel-receipt-scheidegg.png" width="150"> <img src="https://paul-hammant.github.io/verific/screenshots/us-home-improvement.png" width="150">
 
-4. **[Medical Licenses](Use_Case-Medical_License.md)** - Revocable credentials with domain-binding security
+4. **[Medical Licenses](Use_Cases/Medical_License.md)** - Revocable credentials with domain-binding security
    <img src="https://paul-hammant.github.io/verific/screenshots/medical-license-revoked.png" width="200">
 
-5. **[Government ID Verification](Use_Case-Government_IDs.md)** - Cryptographic checks on plain text aspects (hotel checkin, traffic stop, entering a pub/bar)
+5. **[Government ID Verification](Use_Cases/Government_IDs.md)** - Cryptographic checks on plain text aspects (hotel checkin, traffic stop, entering a pub/bar)
    <img src="https://paul-hammant.github.io/verific/screenshots/driving-license-nordia-svg.png" width="250">
 
-6. **[Voting Ballot Proof](Use_Case-Voting_Proof.md)** - Verifiable vote counting with independent auditor confirmation
+6. **[Voting Ballot Proof](Use_Cases/Voting_Proof.md)** - Verifiable vote counting with independent auditor confirmation
 
 There are more potential OCR-to-Hash uses listed below.
 
@@ -698,7 +695,7 @@ This section documents all known and anticipated applications of OCR-to-hash ver
 
 | Use Case                                                                  | Volume vs Till Receipts | Retention Period                     | Personal Data                                                       | OCR-to-hash vs QR code |
 |---------------------------------------------------------------------------|-------------------------|--------------------------------------|---------------------------------------------------------------------|--------------------|
-| Academic degrees (bachelor's, master's, doctorate, certificates)          | Small                   | Permanent (institutional records)    | Graduate name, date, degree field, honors                           | **OCR-to-hash strong case:** Privacy-preserving (hash not printed). Professional appearance (no QR clutter). Already detailed as CV/Education Credentials case. **Note:** Ornate degree certificates require short-form plain-text claims - see [Degree_Certificate_Dual_Hash.md](Degree_Certificate_Dual_Hash.md) for dual-hash approach. |
+| Academic degrees (bachelor's, master's, doctorate, certificates)          | Small                   | Permanent (institutional records)    | Graduate name, date, degree field, honors                           | **OCR-to-hash strong case:** Privacy-preserving (hash not printed). Professional appearance (no QR clutter). Already detailed as CV/Education Credentials case. **Note:** Ornate degree certificates can have multiple representations - see [Multi_Representation_Verification.md](Multi_Representation_Verification.md) for multi-representation approach (ornate certificate, CV claim, LinkedIn profile, etc.). |
 | Professional licenses (medical, legal, engineering, teaching) - revocable | Very Small              | Permanent (may show REVOKED status)  | Licensee name, license number, specialization, disciplinary history | **OCR-to-hash strong case:** Revocable status (SUSPENDED, REVOKED). Domain binding. Already detailed as Medical Licenses case. Wallet card format. |
 | Continuing education credits (CME, CLE, CPE)                              | Small                   | 3-7 years (renewal cycles)           | Professional name, course completion, credits earned                | **OCR-to-hash:** Certificate format. Professional appearance. Verification for license renewal. |
 | Vocational certifications (trade skills, technical training)              | Very Small              | 5-10 years (certification validity)  | Trainee name, skill area, certifying body                           | **OCR-to-hash:** Employment verification. Human-readable credentials. Domain binding verifies certifying body. |
@@ -1857,12 +1854,11 @@ See TESTING.md for details.
 
 - **Technical_Concepts.md** - Shared technical explanations: registration marks (computer vision), text normalization, domain binding, hash algorithms (SHA-256 vs SHA-512), response formats, photo encoding, OCR challenges
 - **NORMALIZATION.md** - Detailed text normalization specification that would be interesting to other implementations
-- **Degree_Certificate_Dual_Hash.md** - How universities can support both ornate wall certificates AND OCR-friendly CV claims with dual-hash approach
+- **Multi_Representation_Verification.md** - How one legal claim can have unlimited text representations (ornate certificate, CV claim, LinkedIn profile, etc.), each with its own SHA-256 hash, all verifying the same underlying fact
 - **Verification_Charges.md** - Business models for free vs paid verification, Bloomberg approach, freemium, ethical frameworks
 - **LLM.md** - Complete project context for AI assistants
 - **BUILDING.md** - Build instructions
 - **TESTING.md** - Test documentation
-- **GITHUB_PAGES.md** - Deployment guide
 
 ## Frequently Asked Questions (FAQ)
 
@@ -1946,7 +1942,7 @@ This bridges the physical-to-digital gap while maintaining human readability and
 
 **Yes.** Instead of returning "OK", the verification endpoint can return "REVOKED" or "SUSPENDED". The app shows ❌ red "REVOKED by xyz.org" instead of green "VERIFIED". See [Technical_Concepts.md: Response Formats](Technical_Concepts.md#response-formats) for all status codes.
 
-Medical licenses, professional certifications, security clearances - anything that can be revoked can use this status. See [Use_Case-Medical_License.md](Use_Case-Medical_License.md).
+Medical licenses, professional certifications, security clearances - anything that can be revoked can use this status. See [Use_Cases/Medical_License.md](Use_Cases/Medical_License.md).
 
 ### What if I lose the physical document?
 
@@ -2069,7 +2065,7 @@ When to choose what
 
 **Questions or feedback?**
 - Open an [issue on GitHub](https://github.com/paul-hammant/verific/issues)
-- Read the detailed use cases: [Education](Use_Case-Educational_Degrees.md), [Medical Licenses](Use_Case-Medical_License.md), [Receipts](Use_Case-Sales_Receipts.md), [Product Certs](Use_Case-Product_Labeling.md), [Government IDs](Use_Case-Government_IDs.md), [Voting](Use_Case-Voting_Proof.md)
+- Read the detailed use cases: [Education](Use_Cases/Educational_Degrees.md), [Medical Licenses](Use_Cases/Medical_License.md), [Receipts](Use_Cases/Sales_Receipts.md), [Product Certs](Use_Cases/Product_Labeling.md), [Government IDs](Use_Cases/Government_IDs.md), [Voting](Use_Cases/Voting_Proof.md)
 
 ## License
 

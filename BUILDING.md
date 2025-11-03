@@ -1,13 +1,11 @@
 # Building and Testing
 
-This project is a static web app plus Jest tests. Browser CV uses OpenCV.js (WASM) from a CDN; Node tests use native bindings via `@u4/opencv4nodejs` for image-based detection.
-
-Goal: CI should not compile OpenCV. To achieve this, CI uses system packages so `@u4/opencv4nodejs` links without running its own build.
+This is a **100% client-side static web app**. No backend server, no database, no native bindings.
 
 ## Prerequisites
 
 - Node.js 18+ and npm
-- For Node detection tests locally, install OpenCV dev libs or run a one-time bundled build (see below).
+- That's it!
 
 ## Install
 
@@ -15,77 +13,214 @@ Goal: CI should not compile OpenCV. To achieve this, CI uses system packages so 
 npm install
 ```
 
-If `@u4/opencv4nodejs` fails to load with “No build found… you should launch opencv-build-npm once”, choose ONE of the following:
+This installs:
+- Jest for unit tests
+- Playwright for E2E tests
+- Development tools (ESLint, etc.)
 
-### Option A: Use system OpenCV (recommended for CI)
-
-- Ubuntu/Debian:
-  ```bash
-  sudo apt-get update
-  sudo apt-get install -y libopencv-dev
-  rm -rf node_modules package-lock.json
-  npm install
-  ```
-
-- macOS (Homebrew):
-  ```bash
-  brew update && brew install opencv
-  rm -rf node_modules package-lock.json
-  npm install
-  ```
-
-This avoids compiling OpenCV and keeps CI fast and deterministic.
-
-### Option B: Local bundled build (developers only)
-
-If you do not wish to install OpenCV system-wide, you can build the vendored copy once:
-
-```bash
-npx opencv-build-npm
-```
-
-This downloads and compiles OpenCV inside `node_modules`. It can take several minutes and requires build tools (cmake, make, C++ compiler, Python).
-
-### One-time smooth setup (Debian/Ubuntu)
-
-If you want a single command to get native tests working locally on Debian/Ubuntu:
-
-```bash
-npm run setup:node-cv
-```
-
-This will:
-- Install system deps (build-essential, cmake, pkg-config, libopencv-dev)
-- Export PKG_CONFIG_PATH for pkg-config discovery
-- Run the local OpenCV build for the binding
-- Reinstall node modules and verify the binding loads
+**Note:** OpenCV.js and Tesseract.js are loaded from CDN in the browser. No compilation needed.
 
 ## Tests
 
 ```bash
-npm test
+npm test              # All tests (unit + E2E)
+npm run test:unit     # Jest only (fast)
+npm run test:e2e      # Playwright only (requires local server)
 ```
 
-- Pure logic tests run fast.
-- Node CV tests look for PNG fixtures under `test/fixtures/`:
-  - `should-detect-*.png` — must contain a clear registration square
-  - `should-not-detect-*.png` — must not contain a proper square
-  - If no fixtures are present, those cases are skipped.
+### Test Structure
 
-## GitHub Actions Guidance
+**Unit tests** (`__tests__/` directory):
+- Text normalization
+- SHA-256 hashing
+- URL extraction and validation
+- Canvas rotation
+- Pure functions
 
-In CI, prefer system packages and avoid building OpenCV. Example steps (Ubuntu):
+**E2E tests** (`e2e/` directory):
+- Registration mark detection (using OpenCV.js in browser)
+- OCR integration (using Tesseract.js in browser)
+- Full verification workflow
+- Screenshot verification with real training pages
 
-```yaml
-- name: Install OpenCV
-  run: |
-    sudo apt-get update
-    sudo apt-get install -y libopencv-dev
+### Running E2E Tests Locally
 
-- name: Install deps and run tests
-  run: |
-    npm ci
-    npm test
+E2E tests require a local HTTP server:
+
+```bash
+# Terminal 1: Start server
+cd public
+python3 -m http.server 8000
+
+# Terminal 2: Run E2E tests
+npm run test:e2e
 ```
 
-Do NOT run `opencv-build-npm` in CI unless you specifically need a custom OpenCV build; it increases build times significantly and may introduce variability.
+Or use the npm script:
+```bash
+npm run serve   # Starts server on port 8000
+```
+
+## Linting
+
+```bash
+npm run lint        # Check for issues
+npm run lint:fix    # Auto-fix issues
+```
+
+## Local Development
+
+```bash
+# Serve the app locally
+cd public
+python3 -m http.server 8000
+
+# Visit http://localhost:8000
+```
+
+**Note:** Camera access requires HTTPS. For local testing:
+- `localhost` is treated as secure by browsers (camera will work)
+- Deploy to GitHub Pages for mobile testing (automatic HTTPS)
+
+## GitHub Actions CI/CD
+
+The workflow (`.github/workflows/deploy.yml`) does:
+
+1. **Test job:**
+   - `npm ci` - Install dependencies
+   - `npx playwright install --with-deps` - Install browser binaries
+   - Start local HTTP server on port 8000
+   - `npm test` - Run all tests (Jest + Playwright)
+   - Stop server
+
+2. **Build job:**
+   - Upload `public/` folder as artifact
+
+3. **Deploy job:**
+   - Deploy artifact to GitHub Pages
+
+**No OpenCV compilation, no native bindings, no system libraries needed.**
+
+## Build Scripts
+
+### Generate Hash Database
+
+```bash
+node build-hashes.js
+```
+
+Creates:
+- `public/hashes.json` - Metadata for all hashes
+- `public/c/{hash}/index.html` - Verification endpoints
+
+### Generate Training Pages
+
+```bash
+node generate-training-pages.js
+```
+
+Creates HTML training certificates for testing.
+
+## File Structure
+
+```
+verific/
+├── public/                   # Static files (deploy this to GitHub Pages)
+│   ├── index.html            # Camera UI
+│   ├── verific-app.js        # Main app logic
+│   ├── normalize.js          # Text normalization + SHA-256
+│   ├── app-logic.js          # Pure functions (URL extraction, rotation)
+│   ├── cv/
+│   │   ├── detectSquares.js  # Registration mark detection (uses OpenCV.js)
+│   │   └── geometry.js       # Geometry utilities
+│   ├── training-pages/       # Test certificates
+│   └── c/                    # Verification endpoints
+│       └── {hash}/index.html # Static "OK" responses
+│
+├── __tests__/                # Jest unit tests
+│   ├── ocr-hash.test.js
+│   ├── app-logic.test.js
+│   ├── doc-specific-normalization.test.js
+│   └── ...
+│
+├── e2e/                      # Playwright E2E tests
+│   ├── cv-detect.spec.ts
+│   ├── cv-ocr.spec.ts
+│   ├── screenshot-verification.spec.ts
+│   └── ...
+│
+├── test/fixtures/            # Test images and expected outputs
+│   └── screenshots/          # Training page screenshots
+│
+└── .github/workflows/
+    └── deploy.yml            # CI/CD pipeline
+```
+
+## Dependencies Explained
+
+### Runtime (loaded from CDN in browser)
+- **OpenCV.js 4.x** - Computer vision for registration mark detection (~8MB WASM)
+- **Tesseract.js v6** - OCR engine (~2MB WASM)
+- **Web Crypto API** - Built-in SHA-256 (no library needed)
+
+### Development (npm install)
+- **Jest 29** - Unit testing framework
+- **Playwright** - E2E testing (headless browsers)
+- **jsdom** - DOM environment for Jest tests
+- **ESLint** - Code linting
+
+### NOT Used
+- ~~Native OpenCV bindings~~ (OpenCV.js is pure WASM)
+- ~~Node.js server~~ (static files only)
+- ~~Database~~ (verification URLs point to static files)
+- ~~Build tools~~ (no compilation, no bundling required)
+
+## Deployment Options
+
+### GitHub Pages (current)
+1. Push to main/master branch
+2. GitHub Actions runs tests
+3. Deploys `public/` folder automatically
+4. Live at: `https://paul-hammant.github.io/verific/`
+
+### Other Static Hosts
+- **Netlify**: Drag & drop `public/` folder
+- **Vercel**: Connect GitHub repo
+- **Cloudflare Pages**: Similar to GitHub Pages
+- **Surge.sh**: `surge public/`
+
+All are free and work identically - just static file hosting.
+
+## Troubleshooting
+
+### Tests fail with "connection refused"
+Start the local server first:
+```bash
+cd public && python3 -m http.server 8000
+```
+
+### Playwright browsers not installed
+```bash
+npx playwright install --with-deps
+```
+
+### Camera not working locally
+- Use `localhost` (not `127.0.0.1` or LAN IP) - browsers treat it as secure
+- Or deploy to GitHub Pages for automatic HTTPS
+
+### npm test hangs
+Check if port 8000 is already in use:
+```bash
+lsof -i :8000
+kill <PID>
+```
+
+## Architecture Benefits
+
+1. **No compilation** - Just HTML/CSS/JS
+2. **No backend** - Static files only
+3. **No database** - Verification URLs are static
+4. **Privacy-first** - All OCR happens in browser (images never leave device)
+5. **Free hosting** - GitHub Pages, Netlify, etc.
+6. **Fast CI** - No OpenCV compilation, tests run in ~2 minutes
+7. **Easy deployment** - Just push to GitHub

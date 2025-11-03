@@ -11,6 +11,7 @@ This document explains technical concepts referenced across multiple use case do
 5. [Response Formats](#response-formats)
 6. [Photo Encoding](#photo-encoding)
 7. [OCR Challenges](#ocr-challenges)
+8. [Deployment Architecture](#deployment-architecture-air-gapped-originals-public-hashes)
 
 ---
 
@@ -415,6 +416,291 @@ See [README.md: Privacy-First Architecture](README.md#privacy-first-architecture
 
 ---
 
+## Deployment Architecture: Air-Gapped Originals, Public Hashes
+
+**Critical principle for organizations:** The hash database should be completely separate from the original credential data.
+
+### The Security Model
+
+**What's sensitive (private tier - secure zone):**
+- Original credential records (graduate names, degree details, photos)
+- Student information systems, medical license databases
+- Personally identifiable information (PII)
+- Application data, correspondence, supporting documents
+
+**What's public (public-facing tier - verification service):**
+- Just the hashes and their verification status (OK/REVOKED)
+- No names, no details, no PII
+- Hash reveals nothing about the document content (one-way function)
+
+**12-factor / cloud-native perspective:**
+- Verification service: stateless, auto-scaling, treats hash database as attached resource (backing service)
+- Hash database: managed service (DynamoDB, Cloud SQL, etc.) or static storage (S3, Cloud Storage)
+- Config: environment variables for database connection strings
+- Security: VPC/security groups, IAM roles, not traditional "DMZ"
+
+### Production Architecture
+
+**Recommended deployment pattern:**
+
+```
+┌─────────────────────────────────────────┐
+│  PRIVATE TIER (Secure Zone)            │
+│  • Air-gapped or VPC-isolated          │
+│  • No public internet access           │
+│                                         │
+│  ┌─────────────────────────────────┐   │
+│  │ Original Records Database       │   │
+│  │ • Graduate names, details       │   │
+│  │ • Degree types, honors, dates   │   │
+│  │ • Photos, signatures            │   │
+│  └─────────────────────────────────┘   │
+│              │                          │
+│              │ Hash generation          │
+│              │ (batch or real-time)     │
+│              ▼                          │
+│  ┌─────────────────────────────────┐   │
+│  │ Hash Generator                  │   │
+│  │ • Reads original records        │   │
+│  │ • Applies normalization         │   │
+│  │ • Computes SHA-256 hashes       │   │
+│  │ • Generates static files OR     │   │
+│  │ • Syncs to verification database│   │
+│  └─────────────────────────────────┘   │
+│              │                          │
+└──────────────┼──────────────────────────┘
+               │ One-way transfer
+               │ (hashes only, no PII)
+               ▼
+┌─────────────────────────────────────────┐
+│  PUBLIC-FACING TIER                    │
+│  • Exposed to internet                 │
+│  • Stateless, auto-scaling             │
+│                                         │
+│  ┌─────────────────────────────────┐   │
+│  │ Verification Data Store         │   │
+│  │ (Backing Service)               │   │
+│  │ • Static files (S3/CDN) OR      │   │
+│  │ • Database (DynamoDB, Cloud SQL)│   │
+│  │ • {hash} → status only          │   │
+│  │ • No names, no PII              │   │
+│  └─────────────────────────────────┘   │
+│              │                          │
+│              │ HTTPS requests           │
+│              ▼                          │
+│  ┌─────────────────────────────────┐   │
+│  │ Verification Service            │   │
+│  │ • Stateless (12-factor)         │   │
+│  │ • Static server OR serverless   │   │
+│  │ • Config via environment vars   │   │
+│  │ • Public internet access        │   │
+│  └─────────────────────────────────┘   │
+└─────────────────────────────────────────┘
+```
+
+### Why This Matters
+
+**If the hash database is compromised:**
+- Attacker gets a list of SHA-256 hashes
+- Hashes are one-way (cannot reverse to get names/details)
+- No PII exposed, no privacy breach
+- Worst case: Attacker knows "these credentials exist" but not who they belong to
+
+**If the original records database is compromised:**
+- This is a serious breach (PII exposed)
+- But: Air-gapping makes this much harder to achieve
+- The hash database remains unaffected (different system)
+
+### Deployment Option 1: Static Files
+
+**Simple, scalable, zero database vulnerabilities:**
+
+Generate static files in the secure zone, transfer to DMZ:
+
+```bash
+# In secure zone, run once per day/week:
+./generate-hashes.sh
+
+# Creates:
+# public/c/abc123.../index.html  → "OK"
+# public/c/def456.../index.html  → "OK"
+# public/c/xyz789.../index.html  → "REVOKED"
+
+# Transfer to public-facing tier (one-way sync):
+rsync -av --delete public/ public-server:/var/www/degrees/
+# Or: aws s3 sync public/ s3://degrees-bucket/
+
+# Public server just serves static files - no database, no queries
+```
+
+**Benefits:**
+- No database in public tier (nothing to query, nothing to steal)
+- Infinitely scalable (CDN can cache everything)
+- No SQL injection, no database vulnerabilities
+- Can't be compromised to modify statuses (read-only filesystem / object storage)
+- Cheap to host (GitHub Pages, Cloudflare Pages, S3 + CloudFront, Cloud Storage + CDN)
+
+### Hash Updates: One-Way Flow
+
+**When a credential status changes (revoked, suspended):**
+
+1. **Private tier:** Update status in original records database
+2. **Private tier:** Regenerate affected hash file(s)
+3. **Transfer:** Push updated static files to public tier
+4. **Public tier:** Overwrite old files (or blue/green deployment)
+
+**Never:** Allow public tier to query back into private tier
+**Never:** Store PII in public-facing services
+**Never:** Allow public internet to reach secure zone
+
+### Example: University Degree Verification
+
+**University of Edinburgh deploys like this:**
+
+**Private tier (internal network, VPC-isolated):**
+- Student records database (Oracle, PostgreSQL, whatever)
+- Alumni data, graduation dates, honors, photos
+- Generate hashes nightly: `cron: 0 2 * * * /usr/local/bin/generate-degree-hashes.sh`
+- Creates 50,000 static files (one per graduate)
+- Transfers to public tier via one-way sync (rsync, S3 sync, etc.)
+
+**Public-facing tier (degrees.ed.ac.uk):**
+- Static hosting (Nginx, Apache, S3+CloudFront, Cloud Storage+CDN)
+- 50,000 tiny files: `/c/{hash}/index.html` containing "OK"
+- If student's degree is revoked: file contents change to `{"status": "REVOKED"}`
+- No database, no application server, no state (12-factor backing service pattern)
+
+### Cost and Scale
+
+**Static file approach scales incredibly well:**
+
+- **10,000 graduates:** 10,000 tiny files (~50 bytes each = 500 KB total)
+- **100,000 graduates:** 100,000 files (~5 MB total)
+- **1,000,000 graduates:** 1M files (~50 MB total)
+
+**Hosting cost:** $0 (GitHub Pages) to $1-5/month (Cloudflare, AWS S3)
+
+**Performance:** CDN caches everything, sub-10ms response times globally
+
+### Deployment Option 2: Dynamic Database
+
+**Sophisticated, flexible, real-time updates:**
+
+Many organizations prefer a database in the DMZ for dynamic queries:
+
+```
+DMZ:
+  ┌─────────────────────────┐
+  │ Read-Only Hash Database │
+  │ • PostgreSQL, DynamoDB  │
+  │ • Hash → Status lookup  │
+  │ • No PII, just hashes   │
+  └─────────────────────────┘
+           │
+           ▼
+  ┌─────────────────────────┐
+  │ Serverless Function     │
+  │ • AWS Lambda            │
+  │ • Cloudflare Workers    │
+  │ • Queries hash database │
+  └─────────────────────────┘
+```
+
+**Advantages of dynamic approach:**
+- **Real-time updates:** Revoke a credential, instant effect (no file regeneration)
+- **Scale:** Millions of credentials without filesystem limits
+- **Flexibility:** Complex queries (e.g., "all credentials issued in 2024")
+- **Analytics:** Track verification counts, geographic patterns, peak times
+- **Metadata:** Return dynamic info (last verified timestamp, verification count)
+- **Standards:** Many organizations already have database expertise/infrastructure
+- **Granular control:** Per-hash access logging, rate limiting, abuse detection
+
+**Tradeoffs vs static:**
+- Need to secure database (SQL injection, access control, etc.)
+- Slightly higher hosting cost ($10-50/month vs $0-5/month)
+- More complex infrastructure (database + application server/serverless)
+- Database is a target (though still only contains hashes, no PII)
+
+**Critical security rule (same as static):**
+- Database in DMZ contains **only hashes + statuses**
+- No PII, no names, no details
+- Air-gapped secure zone generates the data
+- One-way flow: secure zone → DMZ (never reverse)
+
+**Popular serverless stacks for dynamic approach:**
+- **AWS:** DynamoDB (hash table) + Lambda (API) + CloudFront (CDN)
+- **Google Cloud:** Firestore + Cloud Functions + Cloud CDN
+- **Azure:** Cosmos DB + Azure Functions + Front Door
+- **Cloudflare:** Workers KV (edge database) + Workers (serverless)
+
+These architectures auto-scale, have built-in security, and cost pennies per million requests.
+
+### Choosing Between Static and Dynamic
+
+**Both approaches are valid.** Choose based on your needs:
+
+| Factor | Static Files | Dynamic Database |
+|--------|-------------|------------------|
+| **Simplicity** | ✅ Extremely simple | ⚠️ More complex |
+| **Cost** | ✅ $0-5/month | ⚠️ $10-50/month |
+| **Scale** | ✅ Up to ~1M files | ✅ Unlimited |
+| **Update speed** | ⚠️ Batch (hourly/daily) | ✅ Real-time |
+| **Security surface** | ✅ Read-only files | ⚠️ Database to secure |
+| **CDN caching** | ✅ Perfect for CDN | ⚠️ Cache invalidation needed |
+| **Analytics** | ❌ No tracking | ✅ Full analytics |
+| **Expertise needed** | ✅ Basic web hosting | ⚠️ Database + app server |
+| **Failure modes** | ✅ Few moving parts | ⚠️ DB/app can fail |
+
+**Common choices:**
+- **Universities:** Static (simple, cheap, sufficient for daily/weekly updates)
+- **Medical boards:** Dynamic (real-time revocations critical)
+- **Government DMVs:** Dynamic (millions of licenses, frequent updates)
+- **Small certifiers:** Static (hundreds of certs, rarely revoked)
+- **Financial institutions:** Dynamic (analytics, audit trails, compliance)
+
+**Hybrid approach (best of both):**
+
+Some sophisticated organizations use both:
+
+```
+Secure Zone:
+  └─> Generate hashes
+       ├─> Push to static CDN (fast, global, cached)
+       └─> Sync to database (analytics, real-time admin)
+
+Public queries:
+  └─> CDN serves static files (99% of traffic, cached)
+
+Admin/analytics:
+  └─> Database API (real-time stats, not public)
+```
+
+This gives CDN speed + database flexibility without exposing the database to public traffic.
+
+### Disaster Recovery
+
+**If DMZ is completely destroyed:**
+1. Original records are safe (air-gapped)
+2. Regenerate all hashes from secure zone
+3. Redeploy to new DMZ infrastructure
+4. Back online within hours
+
+**If secure zone is compromised (worst case):**
+1. Hash database in DMZ continues serving (verification still works)
+2. Restore secure zone from backups
+3. Investigate breach, revoke affected credentials
+4. Regenerate hashes, push updates to DMZ
+
+### Summary: Separation of Concerns
+
+**Original documents:** Never lose these. Air-gapped, backed up, secured.
+
+**Hash database:** Can be public-facing, static files, cheaply hosted. If stolen, reveals nothing (hashes are one-way).
+
+**The magic:** Public can verify credentials without ever accessing the private data. Universities, medical boards, governments can offer instant verification without exposing student/patient/citizen records.
+
+---
+
 ## Summary
 
 **Key takeaways:**
@@ -423,9 +709,10 @@ See [README.md: Privacy-First Architecture](README.md#privacy-first-architecture
 2. **Normalization** - Ensures consistent hashing despite OCR variations
 3. **Domain binding** - Verification text specifies trusted authority, prevents impersonation
 4. **Hash algorithms** - SHA-256 default, SHA-512 for high-security (passports)
-5. **Response formats** - Simple "OK" or rich JSON with status/photo/metadata
+5. **Response formats** - Simple "OK" or rich JSON with status/photo/metadata (keep minimal in practice)
 6. **Photo encoding** - Base64 prevents enumeration, preserves privacy
 7. **OCR challenges** - Works great for plain text today, on-device AI will handle ornate documents soon
+8. **Deployment architecture** - Air-gap original records, publish only hashes to DMZ/public; static files ideal
 
 **For implementation details:**
 - Text normalization rules: [NORMALIZATION.md](NORMALIZATION.md)
@@ -434,6 +721,6 @@ See [README.md: Privacy-First Architecture](README.md#privacy-first-architecture
 - Domain authority extraction: [public/domain-authority.js](public/domain-authority.js)
 
 **Related documentation:**
-- [Degree_Certificate_Dual_Hash.md](Degree_Certificate_Dual_Hash.md) - How universities support ornate + plain-text claims
+- [Multi_Representation_Verification.md](Multi_Representation_Verification.md) - How one legal claim can have unlimited text representations
 - [Verification_Charges.md](Verification_Charges.md) - Business models for free vs paid verification
 - [LLM.md](LLM.md) - Complete project context for AI assistants

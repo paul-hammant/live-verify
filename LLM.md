@@ -84,7 +84,6 @@ verific/
 ├── TESTING.md                       # Test documentation
 ├── NORMALIZATION.md                 # Detailed normalization rules
 ├── BUILDING.md                      # Build instructions
-├── GITHUB_PAGES.md                  # Deployment guide
 └── LLM.md                           # This file
 ```
 

@@ -4,10 +4,24 @@ Organizations hosting verification endpoints must decide whether to offer verifi
 
 ## Overview
 
-The marginal cost of serving hash verification requests is extremely low (≈$0.000005 per verification using serverless infrastructure), but organizations face strategic decisions about pricing that go beyond pure infrastructure costs. The choice depends on:
+The marginal cost of serving hash verification requests is extremely low (≈$0.000005 per verification using serverless infrastructure), but organizations face strategic decisions about pricing that go beyond pure infrastructure costs.
+
+**Reality check:** Most credentials will offer **free verification** because:
+- Universities, governments, medical boards already collected payment for issuance (charging again = "double-dipping")
+- Infrastructure cost is trivial ($0.27/year for a typical university with 50K verifications)
+- Public mission, brand reputation, and stakeholder relations outweigh minimal potential revenue
+- Ethical principle: **If you charged for the credential, don't charge again for proving it exists**
+
+**Paid verification** makes sense for a **minority of cases**:
+- Commercial verification services (no credential issued)
+- B2B certifications where verifier (not subject) gets value
+- High-volume commercial users willing to pay for convenience
+
+The choice depends on:
 
 - Organizational mission (public service vs commercial entity)
 - User base (individuals vs commercial verifiers)
+- Whether payment was already collected for credential issuance
 - Verification volume and abuse risk
 - Revenue needs and business model
 - Legal and regulatory context
@@ -535,10 +549,23 @@ The ethical line: **If you charged for the credential, don't charge again for pr
 
 ## Conclusion
 
-The choice between free and paid verification depends on organizational mission, user base, and revenue needs. The extremely low marginal cost ($0.000005 per verification) means that:
+**Most credentials will be verified for free.** The combination of trivial infrastructure costs ($0.000005 per verification), ethical concerns about "double-dipping," and public mission alignment means that universities, governments, medical boards, and most credential issuers will offer free verification.
 
-- **Public institutions can easily offer free verification** as part of their mission
-- **Commercial entities can charge substantial fees** with minimal infrastructure costs
-- **Hybrid models work well** to balance accessibility and sustainability
+**The majority case: FREE**
+- Universities (already paid via tuition)
+- Government IDs (public service mission)
+- Medical/professional licenses (public safety, already paid license fees)
+- Product certifications (manufacturer already paid testing fees)
+- Cost is negligible ($0.27/year for typical university)
 
-Organizations should consider their strategic goals, stakeholder needs, and revenue requirements when deciding on a pricing model. The technical implementation (serverless architecture) makes both models viable from a cost perspective.
+**The minority case: PAID**
+- Commercial verification services (The Work Number, HireRight)
+- B2B certifications where commercial verifiers get the value
+- Freemium models for abuse prevention (free for individuals, paid for bulk commercial use)
+
+The extremely low marginal cost means both models are technically viable, but **ethical and practical considerations strongly favor free verification** for the vast majority of credentials. Organizations that charged for credential issuance should not charge again for verification—that's double-dipping.
+
+Paid models make sense primarily when:
+1. No payment was collected for issuance (employment letters, birth certificates)
+2. Commercial users (not credential holders) are the verifiers
+3. Verification service itself is the product being sold

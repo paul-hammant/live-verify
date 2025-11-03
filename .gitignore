@@ -5,4 +5,7 @@ node_modules/
 npm-debug.log*
 _site/
 test-results/
+test-images/
+test-verifications/
+*.traineddata
 .idea/

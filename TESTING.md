@@ -1,5 +1,36 @@
 # Testing Guide
 
+## Test Directory Structure
+
+This project uses the standard Jest + Playwright test organization pattern:
+
+```
+__tests__/              # Jest unit tests (*.test.js)
+├── app-logic.test.js
+├── cv-geometry.test.js
+├── doc-specific-normalization.test.js
+├── domain-authority.test.js
+├── normalize-trailing-artifacts.test.js
+├── ocr-hash.test.js
+└── ui-state-machine.test.js
+
+e2e/                    # Playwright E2E tests (*.spec.ts)
+├── cv-detect.spec.ts
+├── cv-ocr.spec.ts
+├── deskew-test.spec.ts
+├── screenshot-verification.spec.ts
+└── ...
+
+test/fixtures/          # Shared test fixtures
+├── should-detect/      # Images with registration marks
+├── should-not-detect/  # Images without marks
+└── screenshots/        # Training page screenshots (committed)
+
+test-results/           # Playwright output (gitignored)
+```
+
+This structure is idiomatic and recommended by both Jest and Playwright documentation.
+
 ## Running Tests
 
 ```bash
@@ -27,12 +58,6 @@ This creates trimmed screenshots in `test/fixtures/screenshots/` that are used b
 
 **Run screenshot verification tests:**
 ```bash
-# Option 1: Generate screenshots + run tests (recommended)
-# This script handles starting/stopping the server automatically
-chmod +x test-screenshots.sh
-./test-screenshots.sh
-
-# Option 2: Manual testing (for debugging)
 # Start server in one terminal:
 cd public && python3 -m http.server 8000
 
@@ -40,9 +65,7 @@ cd public && python3 -m http.server 8000
 npm run test:e2e -- screenshot-verification
 ```
 
-**Prerequisites for E2E tests:**
-- Local HTTP server running on port 8000 (script handles this automatically)
-- Screenshots generated in `test/fixtures/screenshots/`
+**Note:** Screenshot fixtures are already committed in `test/fixtures/screenshots/`. You only need to regenerate them if you modify training pages.
 
 **What it tests:**
 - Registration mark detection on real rendered pages
@@ -61,40 +84,18 @@ npm run test:e2e -- screenshot-verification
 
 **Design for Testability:**
 
-The app exposes a test hook `window.testVerifyFromCanvas()` that allows E2E tests to inject images directly into the verification pipeline without requiring camera access. This is clearly marked in `public/verific-app.js` and doesn't interfere with production code.
+The app exposes test seams via `window.verificApp.processImageCanvas()` that allows E2E tests to inject images directly into the verification pipeline without requiring camera access. See `e2e/test-helpers.js` for usage.
 
-```javascript
-// In test:
-const result = await page.evaluate(async (base64) => {
-    // Create canvas from image
-    const canvas = createCanvasFromBase64(base64);
-    // Run full pipeline
-    return await window.testVerifyFromCanvas(canvas);
-}, screenshotBase64);
-
-// Returns: { success, hash, verificationStatus, ... }
-```
-
-Fixtures
-- PNG fixtures and matching .txt files under `test/fixtures/` are checked in.
-- .txt must contain normalized inside text only:
+**Fixtures:**
+- PNG fixtures and matching .txt files under `test/fixtures/` are checked in
+- Fixture naming conventions:
+  - `should-detect/` - Images with clear registration marks
+  - `should-not-detect/` - Images without registration marks
+  - `screenshots/` - Training page screenshots (committed)
+- .txt files must contain normalized text only:
   - Per line: trim leading/trailing whitespace and collapse internal spaces to one
   - Preserve line breaks
-- Contributions welcome via PRs; no generator is required.
-
-### Node OpenCV tests
-
-This repo uses `@u4/opencv4nodejs@5.6.0` for Node-based detection tests. It requires OpenCV installed or prebuilt binaries according to that package's documentation.
-
-If installation fails, either:
-- Install OpenCV system-wide (e.g., Ubuntu: `sudo apt-get install -y libopencv-dev`), or
-- Use the prebuilt binary route described in `@u4/opencv4nodejs` README.
-
-Add PNG fixtures under `test/fixtures/`:
-- `should-detect-*.png` — images with a clear registration square
-- `should-not-detect-*.png` — images without a proper square
-
-The test suite auto-skips a case if its fixtures are not found.
+- Contributions welcome via PRs; no generator is required
 
 ## Test Coverage
 

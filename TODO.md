@@ -48,159 +48,86 @@ const result = await navigator.verification.verify(imageBlob, {
 - Credential Management API
 - Payment Request API (similar trust model requirements)
 
-## OCR Character Normalization for Hash Consistency
+## ✅ OCR Character Normalization for Hash Consistency
 
-The `.verific-meta.json` standard should be extended to support configurable character normalization rules to ensure consistent SHA-256 hashes despite OCR imperfections.
+**Status: COMPLETED** - Implemented and documented
 
-### Problem
-Tesseract OCR sometimes fails to correctly recognize special characters like umlauts:
-- `ö` → `o`
-- `ü` → `u`
-- `ä` → `a`
-- etc.
+### What Was Built
+Character normalization via `.verific-meta.json` to ensure consistent SHA-256 hashes despite OCR imperfections with special characters (umlauts, accents, etc.).
 
-This causes hash mismatches even when the document content is semantically correct.
+### Implementation
+- **Implemented in:** `public/doc-specific-normalization.js` and `public/normalize.js`
+- **Configuration:** `charNormalization` field in `.verific-meta.json`
+- **Syntax:** Compact notation `"éèêë→e àáâä→a ìíîï→i òóôö→o ùúûü→u ñ→n ç→c"`
+- **Example:** `public/examples/.verific-meta.json` (Swiss hotel receipts with diacritics)
+- **Documentation:** LLM.md:220-263
 
-### Proposed Solution
-Add a new optional field to `public/c/.verific-meta.json`:
-
+### How It Works
 ```json
 {
-  "ocrNormalization": {
-    "ö": "o",
-    "ü": "u",
-    "ä": "a",
-    "Ö": "O",
-    "Ü": "U",
-    "Ä": "A",
-    "é": "e",
-    "è": "e",
-    "ê": "e"
-  }
+  "charNormalization": "éèêë→e àáâä→a ìíîï→i òóôö→o ùúûü→u ñ→n ç→c"
 }
 ```
 
+Applied before SHA-256 hashing, allowing issuers to define which character substitutions should be considered equivalent for verification purposes.
+
+## ✅ Receipt Status Support
+
+**Status: COMPLETED** - Core functionality implemented and documented
+
+### What Was Built
+Custom response types via `responseTypes` in `.verific-meta.json`, supporting arbitrary statuses beyond OK/REVOKED.
+
 ### Implementation
-- Apply these normalization rules **before** SHA-256 hashing
-- Document issuers can define which character substitutions should be considered equivalent for verification purposes
-- This allows issuers to acknowledge OCR limitations while maintaining verification integrity
-- Default: no normalization (strict character matching)
+- **Implemented in:** `public/verific-app.js` (verification response handling)
+- **Configuration:** `responseTypes` field in `.verific-meta.json`
+- **Example:** `public/c/.verific-meta.json` (OK/GRADUATED/REVOKED statuses)
+- **Documentation:** Technical_Concepts.md:194-260
 
-### Example Use Case
-For the Nordia driving license with "Bergström":
-- OCR extracts: "Bergstrom"
-- Normalization rule: `ö` → `o`
-- Both "Bergström" and "Bergstrom" produce the same hash after normalization
-- Verification succeeds despite OCR imperfection
-
-### Files to Modify
-- `public/c/.verific-meta.json` - Add schema documentation
-- `public/verific-app.js` - Apply normalization before hashing
-- Documentation - Explain the feature and when to use it
-
-## Receipt Status Support
-
-**Goal:** Support additional receipt statuses beyond OK/REVOKED
-
-Currently, the verification system primarily handles:
-- `OK` - Document is valid (green checkmark)
-- `REVOKED` - Document has been revoked (red X)
-- Custom response types via `.verific-meta.json`
-
-### Proposed Receipt-Specific Statuses
-
-Receipts could have various statuses that affect their validity:
-
-1. **REFUNDED** - Receipt was valid but purchase was refunded
-   - Should show as verified-but-refunded (orange/yellow indicator?)
-   - Useful for tracking return history
-
-2. **PAYMENT_CANCELED** - Payment was cancelled before completion
-   - Should show as invalid (red)
-   - Different from fraud - legitimate cancellation
-
-3. **DISPUTED** - Payment is under dispute/chargeback
-   - Should show as warning status (yellow)
-   - Neither fully valid nor fully invalid
-
-4. **EXPIRED** - Receipt/warranty expired
-   - Time-based validity
-   - Useful for warranty claims, return windows
-
-5. **VOID** - Transaction was voided
-   - Similar to PAYMENT_CANCELED but for completed transactions
-   - Should show as invalid (red)
-
-### Implementation Approach
-
-The `.verific-meta.json` mechanism (already implemented in `verifyAgainstClaimedUrl()` around line 762-796) supports custom response types:
-
-```javascript
+### How It Works
+```json
 {
   "responseTypes": {
     "REFUNDED": {
-      "class": "warning",  // or new class "refunded"
+      "class": "warning",
       "text": "Receipt Valid - Purchase Refunded",
       "link": "https://example.com/refund-policy"
     },
-    "PAYMENT_CANCELED": {
-      "class": "not-found",
-      "text": "Payment Cancelled",
-      "link": "https://example.com/cancelled-orders"
-    },
-    "DISPUTED": {
-      "class": "warning",
-      "text": "Payment Under Dispute",
-      "link": "https://example.com/disputes"
+    "GRADUATED": {
+      "class": "affirming",
+      "text": "Student successfully graduated",
+      "link": "https://unseen-u.discworld/explanations/Graduated.html"
     }
   }
 }
 ```
 
-### Tasks
+Supports arbitrary statuses with custom CSS classes, display text, and optional documentation links.
 
-- [ ] Design UI indicators for different receipt statuses
-  - Currently have: `verified` (green), `not-found` (red)
-  - Add: `warning` (yellow/orange), `refunded` (blue?), `expired` (gray?)
+---
 
-- [ ] Update CSS in `public/index.html` for new status classes
-  - `.verification-status.warning` - yellow/orange styling
-  - `.verification-status.refunded` - blue styling
-  - `.verification-status.expired` - gray styling
+## Enhancements (Future Work)
 
-- [ ] Create example receipts with different statuses in training pages
+### Receipt Status Visual Enhancements
+
+The responseTypes mechanism is working, but could benefit from more polished UI examples:
+
+**Potential additions:**
+- [ ] More CSS status classes (currently has `affirming`, `denying`, `warning`)
+  - Add: `refunded` (blue), `expired` (gray), `disputed` (yellow)
+- [ ] Training page examples showing different receipt statuses
   - Refunded receipt example
   - Cancelled payment example
   - Disputed transaction example
-
-- [ ] Add `.verific-meta.json` examples to documentation
-  - Show how merchants can define custom response types
-  - Document the `class`, `text`, and `link` fields
-
-- [ ] Consider adding status icons/emojis
-  - ✅ OK
-  - ❌ REVOKED / PAYMENT_CANCELED / VOID
-  - ⚠️ DISPUTED
+- [ ] Status icon/emoji conventions
+  - ✅ OK/GRADUATED
+  - ❌ REVOKED/VOID
+  - ⚠️ DISPUTED/WARNING
   - 🔄 REFUNDED
   - ⏰ EXPIRED
+- [ ] E2E tests for various receipt statuses
 
-- [ ] Update E2E tests to cover various receipt statuses
-  - Test with mock verification for different status responses
-  - Verify correct UI rendering for each status
-
-### Related Files
-
-- `public/verific-app.js:762-796` - Custom response type handling
-- `public/index.html` - CSS for verification status classes
-- `public/training-pages/*.html` - Example documents
-- `e2e/screenshot-verification.spec.ts` - E2E tests
-
-### Notes
-
-The current implementation already supports this via `.verific-meta.json` - just need to:
-1. Document it better
-2. Create visual examples
-3. Add more CSS classes for different status types
-4. Create training examples
-
-This would make the system much more useful for real-world receipt verification scenarios where transactions can have various lifecycle states.
+**Related files:**
+- `public/index.html` - Add more CSS classes
+- `public/training-pages/*.html` - Add more status examples
+- `e2e/screenshot-verification.spec.ts` - Add status coverage

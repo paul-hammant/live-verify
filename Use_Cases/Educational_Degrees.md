@@ -127,7 +127,7 @@ Note ebe51417c7a506ee09763e055590858568b841f238cb6462818709cfbfebbdca is the SHA
 
 All share the key criteria: personal claims with privacy expectations, one-off documents, need for long-term verifiability (decades), and hash-not-printed verification.
 
-**Note on ornate degree certificates:** Traditional university diplomas with decorative fonts, seals, and embossing are difficult for current OCR technology to read. See [Degree_Certificate_Dual_Hash.md](Degree_Certificate_Dual_Hash.md) for how universities can support both ornate wall certificates AND plain-text CV claims - both verify the same degree.
+**Note on ornate degree certificates:** Traditional university diplomas with decorative fonts, seals, and embossing are difficult for current OCR technology to read. See [Multi_Representation_Verification.md](../Multi_Representation_Verification.md) for how universities can support ornate wall certificates AND plain-text CV claims AND LinkedIn profiles - unlimited representations of the same degree.
 
 ---
 
@@ -693,7 +693,7 @@ https://alumni.ed.ac.uk/verify-credentials
 **Technical implementation details:**
 - [Technical_Concepts.md](Technical_Concepts.md) - Registration marks, text normalization, domain binding, hash algorithms, response formats, photo encoding, OCR challenges
 - [NORMALIZATION.md](NORMALIZATION.md) - Detailed text normalization rules for consistent hashing
-- [Degree_Certificate_Dual_Hash.md](Degree_Certificate_Dual_Hash.md) - How universities support ornate certificates AND plain-text CV claims
+- [Multi_Representation_Verification.md](../Multi_Representation_Verification.md) - How universities support unlimited text representations of the same degree
 
 **Business model & pricing:**
 - [Verification_Charges.md](Verification_Charges.md) - Ethical framework for who pays for verification (anti-double-dipping principle)
