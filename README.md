@@ -1622,7 +1622,7 @@ The domain authority determines whether the verification is meaningful. A govern
 
 | Use Case                                                   | Volume vs Till Receipts | Retention Period                    | Personal Data                                                                      | OCR-to-hash vs QR code                                                                                                                                                                                                                                                                         |
 |------------------------------------------------------------|-------------------------|-------------------------------------|------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Home service provider verification (plumber/electrician)   | Large                   | Service + 1-3 years (liability)     | Tradesperson name, photo, license number, company, complaints history              | **OCR-to-hash strong case:** Woman alone at home verifies tradesperson credentials before letting them in. Domain binding verifies government trade licensing authority (e.g., competent-person-schemes.gov.uk) or established marketplace (checkatrade.com, trustmark.org.uk). Real-time verification shows tradesperson photo, license status, complaint history. Verifier can display "Share this service appointment with [emergency contact]" prompt with programmatic redirect to safety notification. Prevents unlicensed/fake tradesperson fraud. Critical safety for vulnerable people at home. |
+| Home service provider verification (plumber/electrician)   | Large                   | Service + 3-7 years (liability/tax) | Tradesperson name, photo, license number, company, complaints history              | **OCR-to-hash strong case:** Woman alone at home verifies tradesperson credentials before letting them in. Domain binding verifies government trade licensing authority (e.g., competent-person-schemes.gov.uk) or established marketplace (checkatrade.com, trustmark.org.uk). Real-time verification shows tradesperson photo, license status, complaint history. **Critical dual purpose:** (1) Safety - prevents unlicensed/fake tradesperson fraud targeting vulnerable people at home. (2) **Accountability/tax compliance** - verifier response (`.verific-meta-data.json`) can suggest programmatic redirects: "Store this verified tradesperson information for your records" and "Register this visit and work with [insurance company/warranty service/tax authority]". Creates paper trail for insurance claims, warranty documentation, and discourages cash-in-hand tax evasion (tradesperson knows visit is documented). Protects homeowners and promotes legitimate trade practices. |
 | Healthcare home visit worker verification                  | Medium                  | Visit + 3-7 years (care records)    | Worker name, photo, professional license, agency, background check date            | **OCR-to-hash strong case:** Elderly or vulnerable person verifies home health aide, nurse, or care worker credentials before admitting to home. Domain binding verifies government healthcare authority (e.g., nhs.uk/care-workers, state nursing board) or regulated care agency. Real-time verification shows worker photo, professional license status, DBS/background check date. Verifier can display "Log this care visit with [care coordinator]" prompt. Prevents unlicensed care worker fraud, elder abuse risk. Critical safety for vulnerable populations. |
 | Childcare provider verification (nanny/babysitter)         | Medium                  | Care period + 3-7 years             | Provider name, photo, qualifications, DBS check, references, first aid cert        | **OCR-to-hash strong case:** Parent verifies nanny/babysitter credentials, background check, first aid certification before leaving child in their care. Domain binding verifies government childcare regulator (e.g., ofsted.gov.uk) or established childcare platform (care.com, sittercity.com). Real-time verification shows provider photo, DBS/background check date, qualifications (early childhood education), first aid certification, references. Verifier can display "Register this childcare session" prompt. Prevents unlicensed childcare provider fraud. Critical child safety. |
 | Delivery driver verification (vulnerable recipients)       | Very Large              | Delivery + 30 days (disputes)       | Driver name, photo, vehicle details, package tracking, delivery company            | **OCR-to-hash strong case:** Elderly person or woman alone verifies delivery driver credentials before opening door. Domain binding verifies delivery company (amazon.com/delivery-verify, ups.com, fedex.com). Real-time verification shows driver photo, vehicle details (make/color/plate), package tracking number confirming expected delivery. Verifier can display "This is your expected delivery for package #123456" confirmation. Prevents fake delivery driver scams (common fraud targeting elderly). Critical safety for vulnerable people at home. |
@@ -1648,6 +1648,7 @@ The domain authority determines whether the verification is meaningful. A govern
 5. **Prevents impersonation fraud:** Fake tradespeople, unlicensed care workers, fake delivery drivers, fake real estate agents commonly target vulnerable populations - OCR-to-hash with government/platform domain binding prevents credential forgery
 6. **High-stakes vulnerability:** Unlike document fraud (financial loss), personal safety fraud can result in home invasion, elder abuse, child endangerment, assault, theft - verification failure has severe physical safety consequences
 7. **Offline OCR preserves privacy:** Vulnerable people don't have to upload ID photos or personal documents to cloud services - OCR happens on-device, only hash sent to verification authority
+8. **Dual-purpose accountability (tradespeople):** Beyond safety, verification creates paper trail for tax compliance, insurance claims, warranty documentation - `.verific-meta-data.json` response can suggest "Store verified credentials" and "Register this visit/work with [insurance/tax authority]" via programmatic redirects. Discourages cash-in-hand tax evasion (tradesperson knows visit is documented), protects homeowners with documented work history, promotes legitimate trade practices
 
 **Real-world safety fraud examples:**
 
@@ -1671,6 +1672,67 @@ The domain authority determines whether the verification is meaningful. A govern
 - **USA:** State professional licensing boards (nursing, childcare, real estate), background check requirements (FCRA), sector-specific regulations, Law enforcement identification standards, Building code enforcement credentials, Federal credentials (USPS, CBP, ICE - 100-mile border zone enforcement), Immigration enforcement accountability
 - **EU:** Professional qualifications directives, childcare regulations, tourism licensing by member state, Border agency credentials (Frontex, national border police), Utility worker identification requirements
 - **International:** Police identification standards (INTERPOL guidelines), Immigration officer credentials (border agencies), Utility worker safety regulations
+
+**Example `.verific-meta.json` for tradesperson accountability:**
+
+The verification authority (e.g., competent-person-schemes.gov.uk, checkatrade.com) can include programmatic action suggestions in their `.verific-meta.json` response to encourage work registration and create paper trails:
+
+```json
+{
+  "issuer": "UK Competent Person Schemes",
+  "claimType": "Tradesperson license",
+  "responseTypes": {
+    "OK": {
+      "class": "affirming",
+      "text": "This tradesperson is verified and licensed",
+      "link": "https://competent-person-schemes.gov.uk/verify",
+      "actionSuggestions": [
+        {
+          "action": "store",
+          "text": "Store this tradesperson's verified credentials for your records",
+          "description": "Save verified information for insurance claims, warranty documentation, and future reference"
+        },
+        {
+          "action": "register",
+          "text": "Register this visit and work scope",
+          "description": "Document this service visit for tax records, insurance claims, and warranty purposes",
+          "redirectUrl": "https://hmrc.gov.uk/register-home-improvement",
+          "redirectParams": {
+            "tradesperson": "{tradesperson_name}",
+            "license": "{license_number}",
+            "date": "{verification_timestamp}",
+            "homeowner": "{user_id_optional}"
+          }
+        },
+        {
+          "action": "notify",
+          "text": "Share service appointment with emergency contact",
+          "description": "Safety notification: send tradesperson details to trusted contact",
+          "redirectUrl": "https://safety-notification-service.com/log-visit"
+        }
+      ]
+    }
+  }
+}
+```
+
+**How this works:**
+
+1. **Safety first:** Homeowner verifies tradesperson credentials before letting them in (photo verification, license status, complaint history)
+2. **Store verified info:** Verifier app suggests storing the verified tradesperson details for records (insurance claims, warranty, future reference)
+3. **Register visit/work:** App offers programmatic redirect to register the visit with insurance company, tax authority (HMRC for home improvements), or warranty service
+4. **Paper trail created:** Visit is now documented - discourages cash-in-hand tax evasion (tradesperson knows visit is logged), protects homeowner with documented work history, enables insurance claims, creates warranty trail
+5. **Emergency contact notification:** Optional safety feature sends tradesperson details to trusted contact (separate from work registration)
+
+**Benefits:**
+
+- **Tax compliance:** Tradesperson knows visit is documented, discourages "cash-in-hand" arrangements avoiding VAT/income tax
+- **Insurance claims:** Homeowner has verified record of who performed work, when, for insurance/warranty claims
+- **Warranty documentation:** Creates paper trail for warranty claims on installation/repair work
+- **Consumer protection:** Documented relationship with licensed tradesperson protects homeowner in disputes
+- **Legitimate trade promotion:** Registered, tax-compliant tradespeople benefit from verification system, incentivizes professional practices
+
+**Privacy note:** The `redirectParams` can be optional - homeowner chooses whether to actually register the visit. The verification itself doesn't send data to tax authorities; the `.verific-meta.json` response merely *suggests* registration as an option via programmatic redirect.
 
 ### Scientific & Research
 
