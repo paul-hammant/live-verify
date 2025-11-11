@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Opportunity - OCR Verification</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: white;
+        }
+        .container {
+            max-width: 650px;
+            margin: 0 auto;
+        }
+        .back-link {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            margin-bottom: 32px;
+            font-weight: 500;
+            opacity: 0.9;
+        }
+        .back-link:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+        .badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 24px;
+            backdrop-filter: blur(10px);
+        }
+        h1 {
+            font-size: 2em;
+            font-weight: 700;
+            margin-bottom: 32px;
+            line-height: 1.3;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+        .section {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            padding: 28px;
+            border-radius: 12px;
+            margin-bottom: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .section h2 {
+            font-size: 1.3em;
+            font-weight: 600;
+            margin-bottom: 16px;
+            letter-spacing: 0.5px;
+        }
+        .section p {
+            font-size: 1em;
+            line-height: 1.7;
+            opacity: 0.95;
+            margin-bottom: 12px;
+        }
+        .section p:last-child {
+            margin-bottom: 0;
+        }
+        .stat-box {
+            background: white;
+            color: #2c3e50;
+            padding: 24px 28px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            margin-bottom: 24px;
+            line-height: 1.7;
+        }
+        .stat-box strong {
+            color: #667eea;
+            font-size: 1.1em;
+        }
+        .use-cases {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin: 16px 0;
+        }
+        .use-case {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 12px 16px;
+            border-radius: 8px;
+            font-size: 0.9em;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+        .cta-box {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .cta {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 18px 48px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1em;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transition: transform 0.2s, box-shadow 0.2s;
+            margin: 8px;
+        }
+        .cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+        }
+        .cta.secondary {
+            background: rgba(255, 255, 255, 0.25);
+            color: white;
+            backdrop-filter: blur(10px);
+        }
+        .cta.secondary:hover {
+            background: rgba(255, 255, 255, 0.35);
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.6em;
+            }
+            .section {
+                padding: 20px;
+            }
+            .use-cases {
+                grid-template-columns: 1fr;
+            }
+            .cta {
+                padding: 14px 32px;
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← Back</a>
+
+        <div class="badge">THE OPPORTUNITY</div>
+
+        <h1>515+ Use Cases.<br>Zero Infrastructure Required.</h1>
+
+        <div class="stat-box">
+            <p><strong>8 billion smartphones</strong> already have OCR built-in. The verification layer is the missing piece that unlocks instant trust for physical documents—without blockchain, without apps, without QR codes.</p>
+        </div>
+
+        <div class="section">
+            <h2>Market Scope</h2>
+            <p>Every printed document that needs verification becomes instantly verifiable:</p>
+            <div class="use-cases">
+                <div class="use-case">Medical licenses</div>
+                <div class="use-case">Work visas & green cards</div>
+                <div class="use-case">University degrees</div>
+                <div class="use-case">Insurance certificates</div>
+                <div class="use-case">Product certifications</div>
+                <div class="use-case">Bills of lading</div>
+                <div class="use-case">Purchase orders</div>
+                <div class="use-case">Inspection reports</div>
+            </div>
+            <p style="margin-top: 16px;">From immigration documents at borders to supply chain certifications at ports—<strong>515+ documented use cases</strong> spanning every major industry.</p>
+        </div>
+
+        <div class="section">
+            <h2>Why Now?</h2>
+            <p><strong>Apple and Google will inevitably integrate this.</strong> They already have the OCR infrastructure. Adding verification prevents fraud, protects users, and positions them as gatekeepers of digital trust.</p>
+            <p>The question isn't <em>if</em> they'll integrate OCR-to-hash verification—it's <em>when</em>. And who builds the infrastructure they'll verify against.</p>
+        </div>
+
+        <div class="section">
+            <h2>The Window</h2>
+            <p>Before Apple and Google build their own verification endpoints, there's an opportunity to become the authoritative verification layer—the infrastructure that government agencies, universities, hospitals, and enterprises use to host their document hashes.</p>
+            <p>First mover advantage means domain authority, network effects, and becoming the default standard before the platforms commoditize verification.</p>
+        </div>
+
+        <div class="section">
+            <h2>Technical Foundation</h2>
+            <p>This isn't vaporware. The proof-of-concept demonstrates the complete flow:</p>
+            <p>✓ Client-side OCR (privacy-preserving)<br>
+            ✓ SHA-256 hashing with normalization<br>
+            ✓ Domain-binding for issuer verification<br>
+            ✓ Works with existing infrastructure</p>
+            <p style="margin-top: 12px;">The hard work is done. What's needed now is enterprise deployment, security hardening, and market penetration before platform integration forces commoditization.</p>
+        </div>
+
+        <div class="cta-box">
+            <a href="https://github.com/paul-hammant/verific" class="cta">View Technical Documentation</a>
+            <a href="https://paul-hammant.github.io/verific/index.html" class="cta secondary">See Working Demo</a>
+        </div>
+    </div>
+</body>
+</html>
