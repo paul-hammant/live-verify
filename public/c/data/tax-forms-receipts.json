@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Financial & Legal Documents",
+    "title": "Tax forms and receipts",
+    "volume": "Medium",
+    "retention": "7-10 years (audit statute)",
+    "personalDataVerified": "Taxpayer name, tax ID/SSN, tax year, income amounts, deductions, filing date, preparer information",
+    "personalDataVisible": "Filing status (filed/amended). Link to tax authority or preparer system (IRS auditors and tax preparers, requires authentication)",
+    "rationale": "Tax fraud prevention through verifiable tax documentation. Already detailed in receipt verification use cases. Domain binding to tax preparer or IRS ensures authenticity. Critical for audit defense where tax records must be proven legitimate. Prevents tampering with income and deduction amounts. Taxpayers verify tax records during IRS audits."
+  }
+]

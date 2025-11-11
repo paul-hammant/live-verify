@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Actuarial & Insurance Mathematics",
+    "title": "Loss reserve opinions (property/casualty insurance)",
+    "volume": "Very Small",
+    "retention": "7-15 years (claims settlement)",
+    "personalDataVerified": "Actuary name, insurance company, reserve ranges, loss development assumptions, actuarial opinion",
+    "personalDataVisible": "Link to state insurance regulator system (insurance department examiners, requires authentication)",
+    "rationale": "Prevents fraudulent loss reserves enabling insurer insolvency. Domain binding verifies credentialed actuary (FCAS, ACAS). State regulatory compliance for annual statements. Multi-billion dollar claim liabilities. Protects policyholders from insurer failure due to inadequate reserves. Critical for property/casualty insurers where reserve adequacy determines solvency."
+  }
+]

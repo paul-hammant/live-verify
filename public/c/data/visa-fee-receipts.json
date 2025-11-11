@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Immigration & Civic Documents",
+    "title": "Visa fee receipts and biometrics appointments",
+    "volume": "Large",
+    "retention": "3-7 years",
+    "personalDataVerified": "Applicant name, receipt number, fee amount, payment date, appointment date/time (if applicable), visa category",
+    "personalDataVisible": "Appointment completion status (if biometrics completed). Link to visa application system (consular officers and biometrics center staff, requires authentication)",
+    "rationale": "Deters duplicate-fee fraud in visa application process. Kiosk and desk verification at biometrics centers and consular interviews. Applicants verify payment without requiring online account access. Domain binding to government visa payment processors prevents fake receipts. Critical for high-volume visa processing where fee verification must be quick and reliable."
+  }
+]

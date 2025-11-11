@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Banking & Financial Services",
+    "title": "KYC proof of address documents (utility/phone/credit card bills)",
+    "volume": "Large",
+    "retention": "5-10 years post-relationship",
+    "personalDataVerified": "Customer name, address, account number, billing period, service provider name",
+    "personalDataVisible": "Link to service provider system (financial institutions and compliance officers, requires authentication)",
+    "rationale": "Proves current residence for account opening and identity verification. Domain binding verifies utility company, telecom, or credit card issuer. Prevents fake bills easily forged via Photoshop. Common KYC requirement alongside government ID. Works for both printed statements and PDFs. Regulatory compliance (BSA, CDD rules). Privacy-preserving without cloud upload of full billing statement."
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Financial & Legal Documents",
+    "title": "Property deeds and title documents",
+    "volume": "Small",
+    "retention": "Permanent (chain of title)",
+    "personalDataVerified": "Grantor name, grantee name, property legal description, recording date, recording number, county/jurisdiction",
+    "personalDataVisible": "Lien status (if liens recorded). Superseded date (if deed superseded by later conveyance). Link to county recorder system (public access for basic info, authenticated access for full chain of title)",
+    "rationale": "Prevents property fraud and forged deeds. Chain of title verification for real estate transactions. Permanent legal records maintained by county recorders. Human-readable legal descriptions critical for property boundaries. Domain binding to county recorder offices ensures authenticity."
+  }
+]

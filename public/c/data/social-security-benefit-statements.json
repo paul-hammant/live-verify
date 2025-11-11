@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Actuarial & Insurance Mathematics",
+    "title": "Social Security benefit statements",
+    "volume": "Small",
+    "retention": "7-10 years (retirement planning)",
+    "personalDataVerified": "Worker name, SSN (masked), earnings history, projected benefit amounts, retirement age scenarios",
+    "personalDataVisible": "Link to SSA system (workers and financial planners, requires authentication)",
+    "rationale": "Prevents fake Social Security statements used for loan fraud and retirement planning. Domain binding verifies SSA (ssa.gov). Government forms suitable for OCR verification. Retirement planning reliance. Loan applications sometimes require SS statements. Multi-page benefit statements with earnings history benefit from per-page verification to prevent altering historical earnings records."
+  }
+]

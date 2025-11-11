@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Actuarial & Insurance Mathematics",
+    "title": "Life insurance reserve certifications",
+    "volume": "Very Small",
+    "retention": "7-30 years (policy lifetime)",
+    "personalDataVerified": "Actuary name, insurance company, reserve amounts, mortality assumptions, actuarial opinion signature",
+    "personalDataVisible": "Link to state insurance regulator system (insurance department examiners, requires authentication)",
+    "rationale": "Prevents fraudulent reserve reports enabling insolvency fraud. Domain binding verifies credentialed actuary. State insurance regulators require actuarial certification. Multi-billion dollar policy liabilities. Policyholder protection from insurer failure. NAIC Model Audit Rule requires Actuarial Opinion of Reserves (AOR). Critical for insurance solvency regulation."
+  }
+]

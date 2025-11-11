@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Notary Services",
+    "title": "Apostille certifications (Hague Convention)",
+    "volume": "Medium-Small",
+    "retention": "Document lifetime + permanent",
+    "personalDataVerified": "Document holder, issuing authority (Secretary of State), apostille certificate number, destination country, underlying document details, apostille seal, issue date",
+    "personalDataVisible": "Apostille verification status. Link to Secretary of State authentication system (foreign governments and consulates, requires authentication)",
+    "rationale": "Prevents fake apostilles in international document authentication. Domain binding verifies Secretary of State or competent authority. Hague Convention compliance for cross-border document recognition. Prevents international fraud in visa applications, foreign adoptions, business registrations. Multi-page documents (apostille plus underlying document) benefit from per-page verification. Critical for international legal proceedings where apostilles prove document authenticity across borders."
+  }
+]

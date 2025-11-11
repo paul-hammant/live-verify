@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Actuarial & Insurance Mathematics",
+    "title": "Actuarial audit opinions (peer review)",
+    "volume": "Very Small",
+    "retention": "7-15 years (professional standards)",
+    "personalDataVerified": "Reviewing actuary name, original actuary name, audit findings, ASOP compliance assessment",
+    "personalDataVisible": "Link to actuarial firm system (original actuaries and regulators, requires authentication)",
+    "rationale": "Prevents fabricated peer review reports for actuarial work. Domain binding verifies credentialed reviewing actuary. Actuarial Standards of Practice (ASOP) compliance verification. Professional liability protection. State regulatory requirements for certain actuarial opinions. Critical for actuarial accountability where peer review ensures professional standards."
+  }
+]

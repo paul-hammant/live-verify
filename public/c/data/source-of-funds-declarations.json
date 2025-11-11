@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Banking & Financial Services",
+    "title": "Source of funds/wealth declarations",
+    "volume": "Small",
+    "retention": "5-10 years post-relationship",
+    "personalDataVerified": "Customer name, income sources, asset origins, employment history, supporting documentation references",
+    "personalDataVisible": "Link to financial institution compliance system (AML officers and auditors, requires authentication)",
+    "rationale": "Employment letters, tax returns, and sale agreements verify wealth origin. Domain binding verifies each source (employer, tax authority, notary). Prevents money laundering via fake wealth sources. AML compliance for high-value accounts and transactions. Critical for enhanced due diligence where source of funds must be proven legitimate."
+  }
+]

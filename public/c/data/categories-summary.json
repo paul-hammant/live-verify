@@ -1,0 +1,252 @@
+{
+  "categories": [
+    {
+      "name": "Actuarial & Insurance Mathematics",
+      "count": 14,
+      "files": [
+        "pension-actuarial-valuations",
+        "life-insurance-reserve-certifications",
+        "annuity-pricing-certifications",
+        "mortality-morbidity-tables",
+        "loss-reserve-opinions",
+        "social-security-benefit-statements",
+        "disability-benefit-calculations",
+        "workers-comp-reserve-certifications",
+        "erisa-compliance-audit-reports",
+        "health-insurance-rate-filings",
+        "reinsurance-treaty-opinions",
+        "ltc-insurance-reserve-certifications",
+        "catastrophe-modeling-pml-reports",
+        "actuarial-audit-opinions"
+      ]
+    },
+    {
+      "name": "Automotive & Transportation",
+      "count": 1,
+      "files": [
+        "vehicle-registrations"
+      ]
+    },
+    {
+      "name": "Banking & Financial Services",
+      "count": 10,
+      "files": [
+        "kyc-identity-verification",
+        "kyc-proof-of-address",
+        "beneficial-ownership-declarations",
+        "source-of-funds-declarations",
+        "sanctions-compliance-certificates",
+        "suspicious-activity-reports-internal",
+        "currency-transaction-reports",
+        "wire-transfer-documentation",
+        "broker-dealer-licenses",
+        "investment-advisor-certifications"
+      ]
+    },
+    {
+      "name": "Commercial Lines Insurance",
+      "count": 5,
+      "files": [
+        "commercial-general-liability",
+        "certificates-of-insurance-contractors",
+        "professional-liability-eo",
+        "workers-comp-certificates",
+        "commercial-auto-insurance"
+      ]
+    },
+    {
+      "name": "Consumer & Retail",
+      "count": 1,
+      "files": [
+        "warranty-documents"
+      ]
+    },
+    {
+      "name": "Entertainment & Media",
+      "count": 1,
+      "files": [
+        "film-completion-bonds"
+      ]
+    },
+    {
+      "name": "Financial & Legal Documents",
+      "count": 11,
+      "files": [
+        "proof-of-funds-letters",
+        "property-deeds",
+        "stock-certificates",
+        "notarized-documents",
+        "promissory-notes",
+        "affidavits-sworn-statements",
+        "power-of-attorney",
+        "wills-estate-documents",
+        "probate-documents",
+        "tax-forms-receipts",
+        "audit-reports-financial-statements"
+      ]
+    },
+    {
+      "name": "Immigration & Civic Documents",
+      "count": 9,
+      "files": [
+        "green-cards-i551",
+        "work-visas-h1b",
+        "employment-authorization-ead",
+        "voter-registration",
+        "consular-letters-attestations",
+        "visa-fee-receipts",
+        "poll-worker-training",
+        "ballot-chain-of-custody",
+        "global-entry-letters"
+      ]
+    },
+    {
+      "name": "Insurance & Risk Management",
+      "count": 6,
+      "files": [
+        "surety-bonds",
+        "claims-correspondence-eobs",
+        "independent-adjuster-reports",
+        "chain-of-custody-forms",
+        "insurance-policy-documents",
+        "insurance-claims-adjuster-reports"
+      ]
+    },
+    {
+      "name": "Manufacturing & Supply Chain",
+      "count": 3,
+      "files": [
+        "quality-control-inspection-reports",
+        "calibration-certificates",
+        "material-test-reports"
+      ]
+    },
+    {
+      "name": "Maritime & Shipping",
+      "count": 1,
+      "files": [
+        "protection-indemnity-certificates"
+      ]
+    },
+    {
+      "name": "Mortgage & Lending",
+      "count": 6,
+      "files": [
+        "mortgage-employment-verification",
+        "mortgage-income-verification",
+        "bank-statements-loan-applications",
+        "cashiers-checks-money-orders",
+        "proof-of-funds-letters-transactions",
+        "third-party-verification-letters"
+      ]
+    },
+    {
+      "name": "Notary Services",
+      "count": 16,
+      "files": [
+        "notary-acknowledgments",
+        "notary-jurats",
+        "notary-certified-copies",
+        "apostille-certifications",
+        "notary-oaths-affirmations",
+        "notary-protests",
+        "notary-signature-witnessing",
+        "notary-copy-certifications",
+        "notarial-wills",
+        "travel-consent-letters",
+        "advance-healthcare-directives",
+        "corporate-resolutions-board-minutes",
+        "fingerprint-certifications",
+        "certified-translations",
+        "remote-online-notarizations",
+        "safe-deposit-box-access-logs"
+      ]
+    },
+    {
+      "name": "Personal Lines Insurance",
+      "count": 9,
+      "files": [
+        "auto-insurance-policies",
+        "auto-insurance-id-cards",
+        "homeowners-renters-insurance",
+        "life-insurance-policies",
+        "life-insurance-claims",
+        "health-insurance-policies-sbc",
+        "health-insurance-eobs",
+        "disability-insurance-policies",
+        "umbrella-liability-policies"
+      ]
+    },
+    {
+      "name": "Product Certifications & Compliance",
+      "count": 5,
+      "files": [
+        "medical-device-certifications",
+        "food-safety-certifications",
+        "safety-certifications",
+        "environmental-certifications",
+        "fair-trade-certifications"
+      ]
+    },
+    {
+      "name": "Professional & Educational Qualifications",
+      "count": 10,
+      "files": [
+        "professional-licenses",
+        "university-degrees",
+        "continuing-education-credits",
+        "vocational-certifications",
+        "industry-certifications",
+        "training-completion-certificates",
+        "apprenticeship-internship-completion",
+        "language-proficiency-certificates",
+        "educational-institution-accreditation",
+        "course-transcripts"
+      ]
+    },
+    {
+      "name": "Professional & Regulatory Compliance",
+      "count": 1,
+      "files": [
+        "contractor-licensing-bonding"
+      ]
+    },
+    {
+      "name": "Real Estate & Property",
+      "count": 2,
+      "files": [
+        "recording-page-abstracts",
+        "hoa-bylaws-revisions"
+      ]
+    },
+    {
+      "name": "Supply Chain & Logistics",
+      "count": 3,
+      "files": [
+        "bills-of-lading",
+        "certificates-of-origin",
+        "warehouse-receipts"
+      ]
+    },
+    {
+      "name": "Technology & Software",
+      "count": 2,
+      "files": [
+        "sbom-attestation-pages",
+        "open-source-license-notices"
+      ]
+    },
+    {
+      "name": "Trade Finance & International Commerce",
+      "count": 4,
+      "files": [
+        "letters-of-credit",
+        "trade-finance-bills-of-lading",
+        "trade-finance-certificates-of-origin",
+        "trade-finance-commercial-invoices"
+      ]
+    }
+  ],
+  "totalCategories": 21,
+  "totalUseCases": 120
+}

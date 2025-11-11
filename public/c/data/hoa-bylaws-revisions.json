@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Real Estate & Property",
+    "title": "HOA bylaws and rule revisions",
+    "volume": "Small",
+    "retention": "Permanent",
+    "personalDataVerified": "HOA name, community name, bylaw/rule title, adoption date, board approval date, revision number",
+    "personalDataVisible": "Current version status (active/superseded). Link to HOA management system (homeowners and property managers, requires authentication)",
+    "rationale": "Current-version verification for HOA disputes without requiring portal access. Homeowners verify they have latest bylaws and rules. Domain binding to HOA or management company prevents forged rule changes. Critical for governance disputes where version control of bylaws is essential. No dedicated portal infrastructure needed."
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Actuarial & Insurance Mathematics",
+    "title": "Catastrophe modeling and PML reports",
+    "volume": "Very Small",
+    "retention": "5-10 years (capital planning)",
+    "personalDataVerified": "Actuary/modeler name, insurance company, PML (Probable Maximum Loss) estimates, catastrophe scenarios",
+    "personalDataVisible": "Link to catastrophe modeling firm system (insurers and rating agencies, requires authentication)",
+    "rationale": "Domain binding verifies catastrophe modeling firm (RMS, AIR Worldwide, CoreLogic) or credentialed actuary. Multi-billion dollar capital requirements for insurers. Regulatory compliance (AM Best, S&P ratings). Prevents underestimation of catastrophe risk exposing insurer to insolvency. Critical for property insurers in catastrophe-prone areas."
+  }
+]

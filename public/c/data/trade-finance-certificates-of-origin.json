@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Trade Finance & International Commerce",
+    "title": "Trade finance: Certificates of origin",
+    "volume": "Small",
+    "retention": "7-10 years (customs/trade disputes)",
+    "personalDataVerified": "Exporter name, importer name, goods description, origin country, chamber of commerce certification, certificate number",
+    "personalDataVisible": "Link to chamber of commerce system (customs authorities and importers, requires authentication)",
+    "rationale": "Prevents fake origin certificates used for tariff evasion and trade agreement abuse. Domain binding verifies chamber of commerce. Customs clearance verification for import duties. Preferential trade agreement compliance (NAFTA/USMCA, EU FTAs). Anti-dumping enforcement. Critical for international trade where origin determines tariff rates and eligibility for preferential treatment."
+  }
+]

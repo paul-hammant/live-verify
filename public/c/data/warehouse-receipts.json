@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Supply Chain & Logistics",
+    "title": "Warehouse receipts and inventory records",
+    "volume": "Medium-Small",
+    "retention": "3-7 years (financial audit)",
+    "personalDataVerified": "Warehouse operator name, receipt number, depositor name, commodity description, quantity, warehouse location, receipt date",
+    "personalDataVisible": "Release status (if goods released). Lien status (if warehouse lien exists). Link to warehouse management system (depositor and authorized banks for collateral verification, requires authentication)",
+    "rationale": "Field verification for agricultural commodities and stored goods. Prevents fraudulent warehouse receipts used as loan collateral. Domain binding to licensed warehouses. Critical for commodity financing where warehouse receipts are negotiable documents of title."
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Actuarial & Insurance Mathematics",
+    "title": "Workers' compensation reserve certifications",
+    "volume": "Small",
+    "retention": "10-20 years (claim lifetime)",
+    "personalDataVerified": "Actuary name, employer name, jurisdiction, reserve amounts, claim development patterns",
+    "personalDataVisible": "Link to state workers' comp authority system (insurance regulators and employers, requires authentication)",
+    "rationale": "Prevents fraudulent workers' comp reserves enabling employer underfunding. Domain binding verifies credentialed actuary. State regulatory compliance for workers' comp carriers. Long claim tails including lifetime medical benefits. Injured worker protection from inadequate reserves. Critical for workers' comp where reserve adequacy protects injured workers' future benefits."
+  }
+]

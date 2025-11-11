@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Personal Lines Insurance",
+    "title": "Auto insurance ID cards (proof of insurance)",
+    "volume": "Large",
+    "retention": "6-12 months (card validity)",
+    "personalDataVerified": "Policyholder name, vehicle VIN, policy number, coverage dates, insurer name",
+    "personalDataVisible": "Policy status (active/expired/cancelled). Link to insurer system (police and DMV, requires authentication)",
+    "rationale": "Prevents fake insurance cards at traffic stops, accidents, and vehicle registration. Domain binding verifies insurer. Real-time verification by police and DMV. Short card lifetime (6 months typical). Uninsured motorist fraud costs $14 billion annually in USA. Critical for law enforcement where insurance card fraud enables uninsured driving."
+  }
+]

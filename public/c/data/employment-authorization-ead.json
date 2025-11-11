@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Immigration & Civic Documents",
+    "title": "Employment Authorization Documents (EAD, I-766)",
+    "volume": "Medium",
+    "retention": "1-2 years (renewal cycle)",
+    "personalDataVerified": "Name, photo, A-number, work authorization category, valid from-to dates, card number",
+    "personalDataVisible": "Photo (when verified, matching the photo on the card). Expiration status. Revocation date (if revoked). Link to USCIS systems (US government officials and employers for I-9 verification, requires login)",
+    "rationale": "I-9 verification; prevents fake EADs; USCIS domain binding. Common for DACA recipients, asylum applicants, and others awaiting permanent status. Frequent renewals make digital verification critical. Cardholders don't need to carry physical EAD reducing loss risk."
+  }
+]

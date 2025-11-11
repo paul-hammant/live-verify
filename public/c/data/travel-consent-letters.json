@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Notary Services",
+    "title": "Travel consent letters (minor children)",
+    "volume": "Medium",
+    "retention": "Travel + 7-10 years",
+    "personalDataVerified": "Parent/guardian names, child name, child date of birth, travel destination, travel dates, notary name, notary commission number, notary seal, consent date",
+    "personalDataVisible": "Notary commission status (active/expired/revoked). Link to state notary database (border officials and airline staff, requires authentication)",
+    "rationale": "Prevents fake travel consent to combat child abduction. Domain binding verifies notary commission. Border crossing verification at international borders. Prevents child abduction through fraudulent parental consent. International travel requirement for minors traveling without both parents. Parental consent authentication for airlines and immigration officials. Critical for child safety where consent proves parental authorization for travel."
+  }
+]

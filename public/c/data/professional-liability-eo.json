@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Commercial Lines Insurance",
+    "title": "Professional liability/E&O insurance policies",
+    "volume": "Small",
+    "retention": "Policy term + 10-20 years (claims)",
+    "personalDataVerified": "Professional name/firm, coverage limits, retroactive date, claims-made terms, premium",
+    "personalDataVisible": "Policy status (active/cancelled). Link to insurer system (clients and regulators, requires authentication)",
+    "rationale": "Prevents fake E&O policies in professional services fraud. Domain binding verifies insurer. Long claims tail for claims-made policies. Prevents malpractice coverage fraud. Client verification before engaging professionals. Critical for professional services where E&O verification protects clients from uninsured malpractice exposure."
+  }
+]

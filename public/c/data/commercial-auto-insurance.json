@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Commercial Lines Insurance",
+    "title": "Commercial auto insurance policies and certificates",
+    "volume": "Medium",
+    "retention": "Policy term + 7 years",
+    "personalDataVerified": "Business name, vehicles/VINs, drivers, coverage limits, hired/non-owned auto coverage",
+    "personalDataVisible": "Policy status (active/cancelled). Link to insurer system (certificate holders and DMV, requires authentication)",
+    "rationale": "Prevents fake commercial auto insurance in fleet fraud and contractor fraud. Domain binding verifies insurer. High liability limits ($1M+ typical). DOT compliance verification for commercial vehicles. Critical for fleet management where commercial auto verification prevents accidents with uninsured commercial vehicles."
+  }
+]

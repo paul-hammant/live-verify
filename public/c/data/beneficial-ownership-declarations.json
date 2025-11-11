@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Banking & Financial Services",
+    "title": "Beneficial ownership declarations",
+    "volume": "Small",
+    "retention": "5-10 years post-relationship",
+    "personalDataVerified": "UBO (Ultimate Beneficial Owner) names, ownership percentages, corporate structure, control relationships",
+    "personalDataVisible": "Link to corporate registry system (financial institutions and regulatory authorities, requires authentication)",
+    "rationale": "Corporate registry verification for shell company prevention. Domain binding verifies registry authority. Prevents shell company fraud and ownership obfuscation. Regulatory compliance (FinCEN CDD Rule, EU AML directives). Human-readable corporate structure documentation. Critical for AML where beneficial ownership transparency prevents money laundering through complex corporate structures."
+  }
+]

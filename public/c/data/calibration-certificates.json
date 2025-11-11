@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Manufacturing & Supply Chain",
+    "title": "Calibration certificates for instruments",
+    "volume": "Small",
+    "retention": "5-10 years (re-calibration cycle)",
+    "personalDataVerified": "Technician name, lab certification number, instrument ID, calibration date, next calibration due date, calibration standards used",
+    "personalDataVisible": "Calibration status (current/expired/due). Link to calibration lab system (regulatory inspectors and quality managers, requires authentication)",
+    "rationale": "Certificate format suitable for scientific and medical equipment verification. Regulatory compliance for FDA, ISO, and industry standards. Domain binding verifies legitimate calibration laboratory. Critical for regulated industries where equipment calibration records must be verified during audits. Prevents fake calibration certificates."
+  }
+]

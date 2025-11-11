@@ -7,10 +7,28 @@
       "preview": "Permanent resident cards"
     },
     {
+      "id": "work-visas-h1b",
+      "name": "Work Visas (H-1B, L-1, O-1)",
+      "count": 1,
+      "preview": "Work authorization and I-94 records"
+    },
+    {
+      "id": "professional-licenses",
+      "name": "Professional Licenses",
+      "count": 1,
+      "preview": "Medical, legal, engineering, teaching"
+    },
+    {
       "id": "medical-device-certifications",
       "name": "Medical Device Certifications",
       "count": 1,
       "preview": "FDA, CE marking, ISO 13485"
+    },
+    {
+      "id": "food-safety-certifications",
+      "name": "Food Safety Certifications",
+      "count": 1,
+      "preview": "HACCP, organic, kosher, halal, vegan"
     },
     {
       "id": "bills-of-lading",
@@ -19,18 +37,690 @@
       "preview": "Sea waybills (short-form page)"
     },
     {
+      "id": "surety-bonds",
+      "name": "Surety Bonds",
+      "count": 1,
+      "preview": "Performance guarantees"
+    },
+    {
       "id": "proof-of-funds-letters",
       "name": "Proof of Funds Letters",
       "count": 1,
       "preview": "Bank verification letters"
     },
     {
+      "id": "property-deeds",
+      "name": "Property Deeds",
+      "count": 1,
+      "preview": "Title documents and chain of title"
+    },
+    {
       "id": "university-degrees",
       "name": "University Degrees",
       "count": 1,
       "preview": "Degrees and transcripts"
+    },
+    {
+      "id": "employment-authorization-ead",
+      "name": "Employment Authorization (EAD)",
+      "count": 1,
+      "preview": "I-766 work authorization documents"
+    },
+    {
+      "id": "continuing-education-credits",
+      "name": "Continuing Education Credits",
+      "count": 1,
+      "preview": "CME, CLE, CPE certificates"
+    },
+    {
+      "id": "certificates-of-origin",
+      "name": "Certificates of Origin",
+      "count": 1,
+      "preview": "Preferential tariff documents"
+    },
+    {
+      "id": "stock-certificates",
+      "name": "Stock Certificates",
+      "count": 1,
+      "preview": "Share transfer documents"
+    },
+    {
+      "id": "vehicle-registrations",
+      "name": "Vehicle Registrations",
+      "count": 1,
+      "preview": "Inspection reports and DMV docs"
+    },
+    {
+      "id": "notarized-documents",
+      "name": "Notarized Documents",
+      "count": 1,
+      "preview": "Attestations and sworn statements"
+    },
+    {
+      "id": "safety-certifications",
+      "name": "Safety Certifications",
+      "count": 1,
+      "preview": "Electrical, fire, structural, chemical"
+    },
+    {
+      "id": "voter-registration",
+      "name": "Voter Registration",
+      "count": 1,
+      "preview": "Registration confirmations"
+    },
+    {
+      "id": "warehouse-receipts",
+      "name": "Warehouse Receipts",
+      "count": 1,
+      "preview": "Inventory and commodity storage"
+    },
+    {
+      "id": "warranty-documents",
+      "name": "Warranty Documents",
+      "count": 1,
+      "preview": "Service agreements and coverage"
+    },
+    {
+      "id": "claims-correspondence-eobs",
+      "name": "Claims Correspondence and EOBs",
+      "count": 1,
+      "preview": "Insurance claim documents and explanations"
+    },
+    {
+      "id": "contractor-licensing-bonding",
+      "name": "Contractor Licensing & Bonding",
+      "count": 1,
+      "preview": "Construction license and bond certificates"
+    },
+    {
+      "id": "film-completion-bonds",
+      "name": "Film Completion Bonds",
+      "count": 1,
+      "preview": "Production guarantee certificates"
+    },
+    {
+      "id": "protection-indemnity-certificates",
+      "name": "Protection & Indemnity Certificates",
+      "count": 1,
+      "preview": "Maritime liability insurance"
+    },
+    {
+      "id": "independent-adjuster-reports",
+      "name": "Independent Adjuster Reports",
+      "count": 1,
+      "preview": "Field inspection damage assessments"
+    },
+    {
+      "id": "chain-of-custody-forms",
+      "name": "Chain-of-Custody Forms",
+      "count": 1,
+      "preview": "Claims evidence tracking"
+    },
+    {
+      "id": "consular-letters-attestations",
+      "name": "Consular Letters & Attestations",
+      "count": 1,
+      "preview": "Embassy and consulate documents"
+    },
+    {
+      "id": "visa-fee-receipts",
+      "name": "Visa Fee Receipts",
+      "count": 1,
+      "preview": "Payment and biometrics appointments"
+    },
+    {
+      "id": "poll-worker-training",
+      "name": "Poll Worker Training",
+      "count": 1,
+      "preview": "Election worker certifications"
+    },
+    {
+      "id": "ballot-chain-of-custody",
+      "name": "Ballot Chain-of-Custody",
+      "count": 1,
+      "preview": "Election ballot transfer forms"
+    },
+    {
+      "id": "global-entry-letters",
+      "name": "Global Entry/Trusted Traveler Letters",
+      "count": 1,
+      "preview": "CBP trusted traveler support documents"
+    },
+    {
+      "id": "recording-page-abstracts",
+      "name": "Recording Page Abstracts",
+      "count": 1,
+      "preview": "Short-form real estate recording summaries"
+    },
+    {
+      "id": "hoa-bylaws-revisions",
+      "name": "HOA Bylaws and Rule Revisions",
+      "count": 1,
+      "preview": "Homeowner association governance documents"
+    },
+    {
+      "id": "sbom-attestation-pages",
+      "name": "SBOM Attestation Pages",
+      "count": 1,
+      "preview": "Software bill of materials verification"
+    },
+    {
+      "id": "open-source-license-notices",
+      "name": "Open Source License Notices",
+      "count": 1,
+      "preview": "GPL and open source compliance documentation"
+    },
+    {
+      "id": "environmental-certifications",
+      "name": "Environmental Certifications",
+      "count": 1,
+      "preview": "Energy Star, LEED, carbon neutral"
+    },
+    {
+      "id": "fair-trade-certifications",
+      "name": "Fair Trade Certifications",
+      "count": 1,
+      "preview": "Ethical sourcing and fair trade verification"
+    },
+    {
+      "id": "vocational-certifications",
+      "name": "Vocational Certifications",
+      "count": 1,
+      "preview": "Trade skills and technical training"
+    },
+    {
+      "id": "industry-certifications",
+      "name": "Industry Certifications",
+      "count": 1,
+      "preview": "IT, finance, construction credentials"
+    },
+    {
+      "id": "training-completion-certificates",
+      "name": "Training Completion Certificates",
+      "count": 1,
+      "preview": "Safety, compliance, skills training"
+    },
+    {
+      "id": "apprenticeship-internship-completion",
+      "name": "Apprenticeship & Internship Completion",
+      "count": 1,
+      "preview": "Career development and employment verification"
+    },
+    {
+      "id": "language-proficiency-certificates",
+      "name": "Language Proficiency Certificates",
+      "count": 1,
+      "preview": "TOEFL, IELTS, and standardized tests"
+    },
+    {
+      "id": "educational-institution-accreditation",
+      "name": "Educational Institution Accreditation",
+      "count": 1,
+      "preview": "School and university legitimacy verification"
+    },
+    {
+      "id": "course-transcripts",
+      "name": "Course Transcripts",
+      "count": 1,
+      "preview": "Academic records and grade verification"
+    },
+    {
+      "id": "quality-control-inspection-reports",
+      "name": "Quality Control Inspection Reports",
+      "count": 1,
+      "preview": "Product testing and warranty documentation"
+    },
+    {
+      "id": "calibration-certificates",
+      "name": "Calibration Certificates",
+      "count": 1,
+      "preview": "Scientific and medical equipment verification"
+    },
+    {
+      "id": "material-test-reports",
+      "name": "Material Test Reports",
+      "count": 1,
+      "preview": "Chemical composition and strength analysis"
+    },
+    {
+      "id": "promissory-notes",
+      "name": "Promissory Notes",
+      "count": 1,
+      "preview": "Loan documents and payment agreements"
+    },
+    {
+      "id": "affidavits-sworn-statements",
+      "name": "Affidavits & Sworn Statements",
+      "count": 1,
+      "preview": "Legal testimony and court documents"
+    },
+    {
+      "id": "power-of-attorney",
+      "name": "Power of Attorney",
+      "count": 1,
+      "preview": "Legal authority delegation documents"
+    },
+    {
+      "id": "wills-estate-documents",
+      "name": "Wills and Estate Documents",
+      "count": 1,
+      "preview": "Testamentary documents with SUPERSEDED status"
+    },
+    {
+      "id": "probate-documents",
+      "name": "Probate Documents",
+      "count": 1,
+      "preview": "Court-issued estate proceedings"
+    },
+    {
+      "id": "tax-forms-receipts",
+      "name": "Tax Forms and Receipts",
+      "count": 1,
+      "preview": "Tax documentation and audit defense"
+    },
+    {
+      "id": "audit-reports-financial-statements",
+      "name": "Audit Reports & Financial Statements",
+      "count": 1,
+      "preview": "Professional audit opinions and compliance"
+    },
+    {
+      "id": "notary-acknowledgments",
+      "name": "Notary Acknowledgments",
+      "count": 1,
+      "preview": "Real estate deeds and powers of attorney"
+    },
+    {
+      "id": "notary-jurats",
+      "name": "Notary Jurats",
+      "count": 1,
+      "preview": "Sworn statements and depositions"
+    },
+    {
+      "id": "notary-certified-copies",
+      "name": "Notary Certified Copies",
+      "count": 1,
+      "preview": "Birth certificates, passports, diplomas"
+    },
+    {
+      "id": "apostille-certifications",
+      "name": "Apostille Certifications",
+      "count": 1,
+      "preview": "Hague Convention international authentication"
+    },
+    {
+      "id": "notary-oaths-affirmations",
+      "name": "Notary Oaths & Affirmations",
+      "count": 1,
+      "preview": "Court testimony and government applications"
+    },
+    {
+      "id": "notary-protests",
+      "name": "Notary Protests",
+      "count": 1,
+      "preview": "Dishonored checks and promissory notes"
+    },
+    {
+      "id": "notary-signature-witnessing",
+      "name": "Notary Signature Witnessing",
+      "count": 1,
+      "preview": "Contracts, agreements, wills"
+    },
+    {
+      "id": "notary-copy-certifications",
+      "name": "Notary Copy Certifications",
+      "count": 1,
+      "preview": "True copy attestations for business records"
+    },
+    {
+      "id": "notarial-wills",
+      "name": "Notarial Wills",
+      "count": 1,
+      "preview": "Holographic and statutory wills"
+    },
+    {
+      "id": "travel-consent-letters",
+      "name": "Travel Consent Letters",
+      "count": 1,
+      "preview": "Minor children international travel"
+    },
+    {
+      "id": "advance-healthcare-directives",
+      "name": "Advance Healthcare Directives",
+      "count": 1,
+      "preview": "Notarized living wills and medical wishes"
+    },
+    {
+      "id": "corporate-resolutions-board-minutes",
+      "name": "Corporate Resolutions & Board Minutes",
+      "count": 1,
+      "preview": "Corporate authority verification"
+    },
+    {
+      "id": "fingerprint-certifications",
+      "name": "Fingerprint Certifications",
+      "count": 1,
+      "preview": "Background checks and security clearances"
+    },
+    {
+      "id": "certified-translations",
+      "name": "Certified Translations",
+      "count": 1,
+      "preview": "Immigration and legal document translations"
+    },
+    {
+      "id": "remote-online-notarizations",
+      "name": "Remote Online Notarizations (RON)",
+      "count": 1,
+      "preview": "Electronic notarization platform"
+    },
+    {
+      "id": "safe-deposit-box-access-logs",
+      "name": "Safe Deposit Box Access Logs",
+      "count": 1,
+      "preview": "Bank witness verification records"
+    },
+    {
+      "id": "kyc-identity-verification",
+      "name": "KYC Identity Verification",
+      "count": 1,
+      "preview": "Bank account opening identity documents"
+    },
+    {
+      "id": "kyc-proof-of-address",
+      "name": "KYC Proof of Address",
+      "count": 1,
+      "preview": "Utility, phone, credit card bills"
+    },
+    {
+      "id": "beneficial-ownership-declarations",
+      "name": "Beneficial Ownership Declarations",
+      "count": 1,
+      "preview": "Corporate UBO and structure documentation"
+    },
+    {
+      "id": "source-of-funds-declarations",
+      "name": "Source of Funds/Wealth Declarations",
+      "count": 1,
+      "preview": "AML wealth origin verification"
+    },
+    {
+      "id": "sanctions-compliance-certificates",
+      "name": "Sanctions Compliance Certificates",
+      "count": 1,
+      "preview": "OFAC/UN sanctions screening records"
+    },
+    {
+      "id": "suspicious-activity-reports-internal",
+      "name": "Suspicious Activity Reports (Internal)",
+      "count": 1,
+      "preview": "SAR filing internal documentation"
+    },
+    {
+      "id": "currency-transaction-reports",
+      "name": "Currency Transaction Reports (CTRs)",
+      "count": 1,
+      "preview": "Customer copies of large cash transactions"
+    },
+    {
+      "id": "wire-transfer-documentation",
+      "name": "Wire Transfer Documentation",
+      "count": 1,
+      "preview": "International transfer records and audit trail"
+    },
+    {
+      "id": "broker-dealer-licenses",
+      "name": "Broker-Dealer Licenses",
+      "count": 1,
+      "preview": "FINRA registrations with revocation status"
+    },
+    {
+      "id": "investment-advisor-certifications",
+      "name": "Investment Advisor Certifications",
+      "count": 1,
+      "preview": "RIA/IAR SEC and state registrations"
+    },
+    {
+      "id": "letters-of-credit",
+      "name": "Letters of Credit",
+      "count": 1,
+      "preview": "Trade finance payment guarantees"
+    },
+    {
+      "id": "trade-finance-bills-of-lading",
+      "name": "Trade Finance Bills of Lading",
+      "count": 1,
+      "preview": "Cargo shipping title documents"
+    },
+    {
+      "id": "trade-finance-certificates-of-origin",
+      "name": "Trade Finance Certificates of Origin",
+      "count": 1,
+      "preview": "Customs and preferential tariff documents"
+    },
+    {
+      "id": "trade-finance-commercial-invoices",
+      "name": "Trade Finance Commercial Invoices",
+      "count": 1,
+      "preview": "International trade transaction invoices"
+    },
+    {
+      "id": "insurance-policy-documents",
+      "name": "Insurance Policy Documents",
+      "count": 1,
+      "preview": "General insurance coverage policies"
+    },
+    {
+      "id": "insurance-claims-adjuster-reports",
+      "name": "Insurance Claims Adjuster Reports",
+      "count": 1,
+      "preview": "Damage assessment and inspection reports"
+    },
+    {
+      "id": "mortgage-employment-verification",
+      "name": "Mortgage Employment Verification",
+      "count": 1,
+      "preview": "Income verification letters for loans"
+    },
+    {
+      "id": "mortgage-income-verification",
+      "name": "Mortgage Income Verification",
+      "count": 1,
+      "preview": "W-2 and pay stub documentation"
+    },
+    {
+      "id": "bank-statements-loan-applications",
+      "name": "Bank Statements for Loan Applications",
+      "count": 1,
+      "preview": "Asset verification for lending"
+    },
+    {
+      "id": "cashiers-checks-money-orders",
+      "name": "Cashier's Checks and Money Orders",
+      "count": 1,
+      "preview": "Guaranteed payment instruments"
+    },
+    {
+      "id": "proof-of-funds-letters-transactions",
+      "name": "Proof of Funds Letters",
+      "count": 1,
+      "preview": "Real estate and business transaction verification"
+    },
+    {
+      "id": "third-party-verification-letters",
+      "name": "Third-Party Verification Letters",
+      "count": 1,
+      "preview": "Employment, income, asset verifications"
+    },
+    {
+      "id": "pension-actuarial-valuations",
+      "name": "Pension Actuarial Valuations",
+      "count": 1,
+      "preview": "ERISA plan funding reports"
+    },
+    {
+      "id": "life-insurance-reserve-certifications",
+      "name": "Life Insurance Reserve Certifications",
+      "count": 1,
+      "preview": "Actuarial reserve opinions"
+    },
+    {
+      "id": "annuity-pricing-certifications",
+      "name": "Annuity Pricing Certifications",
+      "count": 1,
+      "preview": "Actuarial rate and pricing opinions"
+    },
+    {
+      "id": "mortality-morbidity-tables",
+      "name": "Mortality and Morbidity Tables",
+      "count": 1,
+      "preview": "Industry standard actuarial tables"
+    },
+    {
+      "id": "loss-reserve-opinions",
+      "name": "Loss Reserve Opinions",
+      "count": 1,
+      "preview": "Property/casualty reserve certifications"
+    },
+    {
+      "id": "social-security-benefit-statements",
+      "name": "Social Security Benefit Statements",
+      "count": 1,
+      "preview": "SSA retirement planning documents"
+    },
+    {
+      "id": "disability-benefit-calculations",
+      "name": "Disability Benefit Calculations",
+      "count": 1,
+      "preview": "Disability insurance benefit determinations"
+    },
+    {
+      "id": "workers-comp-reserve-certifications",
+      "name": "Workers' Comp Reserve Certifications",
+      "count": 1,
+      "preview": "Workers' compensation actuarial opinions"
+    },
+    {
+      "id": "erisa-compliance-audit-reports",
+      "name": "ERISA Compliance and Audit Reports",
+      "count": 1,
+      "preview": "DOL pension plan compliance"
+    },
+    {
+      "id": "health-insurance-rate-filings",
+      "name": "Health Insurance Rate Filings",
+      "count": 1,
+      "preview": "State rate approval certifications"
+    },
+    {
+      "id": "reinsurance-treaty-opinions",
+      "name": "Reinsurance Treaty Opinions",
+      "count": 1,
+      "preview": "Actuarial reinsurance pricing"
+    },
+    {
+      "id": "ltc-insurance-reserve-certifications",
+      "name": "Long-Term Care Reserve Certifications",
+      "count": 1,
+      "preview": "LTC insurance actuarial opinions"
+    },
+    {
+      "id": "catastrophe-modeling-pml-reports",
+      "name": "Catastrophe Modeling PML Reports",
+      "count": 1,
+      "preview": "Probable maximum loss estimates"
+    },
+    {
+      "id": "actuarial-audit-opinions",
+      "name": "Actuarial Audit Opinions",
+      "count": 1,
+      "preview": "Peer review and ASOP compliance"
+    },
+    {
+      "id": "auto-insurance-policies",
+      "name": "Auto Insurance Policies",
+      "count": 1,
+      "preview": "Vehicle coverage declarations"
+    },
+    {
+      "id": "auto-insurance-id-cards",
+      "name": "Auto Insurance ID Cards",
+      "count": 1,
+      "preview": "Proof of insurance for traffic stops"
+    },
+    {
+      "id": "homeowners-renters-insurance",
+      "name": "Homeowners/Renters Insurance",
+      "count": 1,
+      "preview": "Property coverage policies"
+    },
+    {
+      "id": "life-insurance-policies",
+      "name": "Life Insurance Policies",
+      "count": 1,
+      "preview": "Term, whole, universal life coverage"
+    },
+    {
+      "id": "life-insurance-claims",
+      "name": "Life Insurance Claims",
+      "count": 1,
+      "preview": "Death benefit applications"
+    },
+    {
+      "id": "health-insurance-policies-sbc",
+      "name": "Health Insurance Policies & SBC",
+      "count": 1,
+      "preview": "Medical coverage and ACA summaries"
+    },
+    {
+      "id": "health-insurance-eobs",
+      "name": "Health Insurance EOBs",
+      "count": 1,
+      "preview": "Explanation of Benefits statements"
+    },
+    {
+      "id": "disability-insurance-policies",
+      "name": "Disability Insurance Policies",
+      "count": 1,
+      "preview": "Individual disability income coverage"
+    },
+    {
+      "id": "umbrella-liability-policies",
+      "name": "Umbrella/Excess Liability Policies",
+      "count": 1,
+      "preview": "High-limit excess liability coverage"
+    },
+    {
+      "id": "commercial-general-liability",
+      "name": "Commercial General Liability",
+      "count": 1,
+      "preview": "CGL policies for businesses"
+    },
+    {
+      "id": "certificates-of-insurance-contractors",
+      "name": "Certificates of Insurance (Contractors)",
+      "count": 1,
+      "preview": "COI verification for vendors"
+    },
+    {
+      "id": "professional-liability-eo",
+      "name": "Professional Liability/E&O",
+      "count": 1,
+      "preview": "Errors and omissions insurance"
+    },
+    {
+      "id": "workers-comp-certificates",
+      "name": "Workers' Comp Certificates",
+      "count": 1,
+      "preview": "Employer workers' compensation coverage"
+    },
+    {
+      "id": "commercial-auto-insurance",
+      "name": "Commercial Auto Insurance",
+      "count": 1,
+      "preview": "Fleet and business vehicle coverage"
     }
   ],
-  "totalUseCases": 5,
-  "totalCategories": 5
+  "totalUseCases": 120,
+  "totalCategories": 120
 }

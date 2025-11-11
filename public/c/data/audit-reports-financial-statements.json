@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Financial & Legal Documents",
+    "title": "Audit reports and financial statements",
+    "volume": "Small",
+    "retention": "7-10 years (regulatory)",
+    "personalDataVerified": "Company name, company officers, auditor name, audit firm, audit date, financial figures, audit opinion",
+    "personalDataVisible": "Audit opinion (unqualified/qualified/adverse). Link to audit firm system (investors and regulatory agencies, requires authentication)",
+    "rationale": "Formal report format for regulatory compliance (SEC, banking regulators). Domain binding verifies auditor legitimacy and prevents fake audit reports. Critical for investors and lenders who rely on audited financial statements. Prevents financial statement fraud and accounting manipulation. Public companies and regulated entities require verifiable audit reports."
+  }
+]

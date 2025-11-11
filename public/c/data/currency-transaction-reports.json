@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Banking & Financial Services",
+    "title": "Currency Transaction Reports (CTRs) - customer copies",
+    "volume": "Small",
+    "retention": "5 years (IRS requirement)",
+    "personalDataVerified": "Customer name, transaction amount, transaction date, financial institution name, CTR filing confirmation",
+    "personalDataVisible": "Link to financial institution system (IRS and customer, requires authentication)",
+    "rationale": "Customer receives verifiable copy of CTR filing for large cash transactions. Domain binding verifies financial institution. Tamper-evident transaction record. IRS Bank Secrecy Act compliance. Prevents disputes over reported amounts. Critical for cash-intensive businesses where CTR filings must be documented. Customers verify accurate reporting of their cash transactions."
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Financial & Legal Documents",
+    "title": "Power of attorney documents",
+    "volume": "Small",
+    "retention": "Duration + 10 years",
+    "personalDataVerified": "Principal name, agent name, scope of authority, effective date, expiration date (if applicable), witness names, notarization details",
+    "personalDataVisible": "Revocation status (if revoked). Link to attorney or notary system (financial institutions and healthcare providers, requires authentication)",
+    "rationale": "Legal authority verification for financial and healthcare decisions. Prevents forgery of power of attorney documents. Human-readable terms are critical for understanding scope of authority. Domain binding to notary or attorney ensures authenticity. Critical for elder care and estate planning where POA documents grant significant legal authority. Banks and hospitals verify agent authority."
+  }
+]

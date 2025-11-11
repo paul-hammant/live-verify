@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Real Estate & Property",
+    "title": "Recording page abstracts (short-form)",
+    "volume": "Small",
+    "retention": "Permanent",
+    "personalDataVerified": "Parties (grantor/grantee), instrument type, recording date, instrument number, legal description reference, recorder's office",
+    "personalDataVisible": "Link to county recorder system (title companies and attorneys, requires authentication for full instrument)",
+    "rationale": "Verifiable abstracts for long real estate instruments. Recorder hosts verification endpoint with domain binding to county. Short-form abstracts provide key details without requiring full document access. Critical for title research where abstractors need to verify recording information. No portal infrastructure needed for basic verification."
+  }
+]

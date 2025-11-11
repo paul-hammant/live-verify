@@ -291,13 +291,9 @@
             </div>
         </div>
 
-        <div class="filters">
+        <div class="filters" id="filtersContainer">
             <button class="filter-chip active" data-category="all">All</button>
-            <button class="filter-chip" data-category="Green Cards (I-551, USA)">Green Cards (I-551)</button>
-            <button class="filter-chip" data-category="Medical Device Certifications">Medical Device Certs</button>
-            <button class="filter-chip" data-category="Bills of Lading">Bills of Lading</button>
-            <button class="filter-chip" data-category="Proof of Funds Letters">Proof of Funds</button>
-            <button class="filter-chip" data-category="University Degrees">University Degrees</button>
+            <!-- Filters dynamically generated -->
         </div>
 
         <div class="categories-grid" id="categoriesGrid"></div>
@@ -313,26 +309,47 @@
 
     <script>
         // Data loaded from JSON files
-        let manifest = null;
-        const categoryDataCache = {}; // Cache loaded category data
+        let categoriesSummary = null;
+        const categoryDataCache = {}; // Cache loaded full category data
+        const useCaseFileCache = {}; // Cache individual use case files
 
-        // Load manifest on startup
-        async function loadManifest() {
-            const response = await fetch('data/manifest.json');
-            manifest = await response.json();
-            return manifest;
+        // Load categories summary (lightweight, pre-aggregated) - ONE HTTP REQUEST
+        async function loadCategoriesSummary() {
+            const response = await fetch('data/categories-summary.json');
+            categoriesSummary = await response.json();
+            return categoriesSummary;
         }
 
-        // Load category data on demand
-        async function loadCategoryData(categoryId) {
-            if (categoryDataCache[categoryId]) {
-                return categoryDataCache[categoryId];
+        // Load a specific use case file on demand
+        async function loadUseCaseFile(fileId) {
+            if (useCaseFileCache[fileId]) {
+                return useCaseFileCache[fileId];
             }
 
-            const response = await fetch(`data/${categoryId}.json`);
+            const response = await fetch(`data/${fileId}.json`);
             const data = await response.json();
-            categoryDataCache[categoryId] = data;
+            useCaseFileCache[fileId] = data;
             return data;
+        }
+
+        // Load all use cases for a specific category (on demand when clicking)
+        async function loadCategoryData(categoryName) {
+            if (categoryDataCache[categoryName]) {
+                return categoryDataCache[categoryName];
+            }
+
+            const category = categoriesSummary.categories.find(c => c.name === categoryName);
+            if (!category) return [];
+
+            // Load all files for this category
+            const useCases = [];
+            for (const fileId of category.files) {
+                const fileData = await loadUseCaseFile(fileId);
+                useCases.push(...fileData);
+            }
+
+            categoryDataCache[categoryName] = useCases;
+            return useCases;
         }
 
         // Animated counter
@@ -353,14 +370,45 @@
             }, 16);
         }
 
+        // Render filter chips dynamically
+        function renderFilters() {
+            const container = document.getElementById('filtersContainer');
+            const categories = categoriesSummary.categories;
+
+            // Clear existing filters except "All"
+            container.innerHTML = '<button class="filter-chip active" data-category="all">All</button>';
+
+            // Add filter for each category
+            categories.forEach(category => {
+                const chip = document.createElement('button');
+                chip.className = 'filter-chip';
+                chip.dataset.category = category.name;
+                chip.textContent = category.name;
+                chip.addEventListener('click', () => {
+                    document.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
+                    chip.classList.add('active');
+                    renderCategories(category.name);
+                });
+                container.appendChild(chip);
+            });
+
+            // Re-attach "All" button handler
+            container.querySelector('[data-category="all"]').addEventListener('click', () => {
+                document.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
+                container.querySelector('[data-category="all"]').classList.add('active');
+                renderCategories('all');
+            });
+        }
+
         // Render category cards
         function renderCategories(filterCategory = 'all') {
             const grid = document.getElementById('categoriesGrid');
             grid.innerHTML = '';
 
-            if (!manifest) return;
+            if (!categoriesSummary) return;
 
-            manifest.categories.forEach((category, index) => {
+            let index = 0;
+            categoriesSummary.categories.forEach((category) => {
                 if (filterCategory !== 'all' && category.name !== filterCategory) return;
 
                 const card = document.createElement('div');
@@ -368,20 +416,21 @@
                 card.innerHTML = `
                     <div class="category-name">${category.name}</div>
                     <div class="category-count">${category.count}</div>
-                    <div class="category-preview">${category.preview}</div>
+                    <div class="category-preview">${category.count} use case${category.count !== 1 ? 's' : ''}</div>
                 `;
-                card.onclick = () => openDialog(category.id, category.name);
+                card.onclick = () => openDialog(category.name);
                 grid.appendChild(card);
 
                 // Stagger reveal animation
                 setTimeout(() => {
                     card.classList.add('visible');
-                }, index * 100);
+                }, index * 50);
+                index++;
             });
         }
 
-        // Open dialog with category details
-        async function openDialog(categoryId, categoryName) {
+        // Open dialog with category details (loads data on demand)
+        async function openDialog(categoryName) {
             const dialog = document.getElementById('categoryDialog');
             const title = document.getElementById('dialogTitle');
             const content = document.getElementById('dialogContent');
@@ -391,8 +440,8 @@
             content.innerHTML = '<div style="text-align: center; padding: 40px; color: #6c757d;">Loading...</div>';
             dialog.showModal();
 
-            // Load category data
-            const useCases = await loadCategoryData(categoryId);
+            // Load use cases for this category on demand
+            const useCases = await loadCategoryData(categoryName);
 
             title.textContent = `${categoryName} (${useCases.length})`;
 
@@ -428,8 +477,8 @@
                 </div>
             `).join('');
 
-            // Update URL hash
-            window.location.hash = categoryId;
+            // Update URL hash with category name (URL encoded)
+            window.location.hash = encodeURIComponent(categoryName);
         }
 
         function closeDialog() {
@@ -440,23 +489,14 @@
 
         // Handle hash changes
         async function handleHashChange() {
-            const hash = window.location.hash.substring(1);
-            if (hash && manifest) {
-                const category = manifest.categories.find(c => c.id === hash);
+            const hash = decodeURIComponent(window.location.hash.substring(1));
+            if (hash && categoriesSummary) {
+                const category = categoriesSummary.categories.find(c => c.name === hash);
                 if (category) {
-                    await openDialog(category.id, category.name);
+                    await openDialog(hash);
                 }
             }
         }
-
-        // Filter handling
-        document.querySelectorAll('.filter-chip').forEach(chip => {
-            chip.addEventListener('click', () => {
-                document.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
-                chip.classList.add('active');
-                renderCategories(chip.dataset.category);
-            });
-        });
 
         // Close dialog on backdrop click
         document.getElementById('categoryDialog').addEventListener('click', (e) => {
@@ -474,15 +514,18 @@
 
         // Initialize
         document.addEventListener('DOMContentLoaded', async () => {
-            // Load manifest data
-            await loadManifest();
+            // Load categories summary (one lightweight file)
+            await loadCategoriesSummary();
 
-            // Update stat counters with manifest data
-            document.querySelector('[data-target="515"]').dataset.target = manifest.totalUseCases;
-            document.querySelector('[data-target="12"]').dataset.target = manifest.totalCategories;
+            // Update stat counters
+            document.querySelector('[data-target="515"]').dataset.target = categoriesSummary.totalUseCases;
+            document.querySelector('[data-target="12"]').dataset.target = categoriesSummary.totalCategories;
 
             // Animate counters
             document.querySelectorAll('.stat-number').forEach(animateCounter);
+
+            // Render dynamic filter chips
+            renderFilters();
 
             // Render categories
             renderCategories();

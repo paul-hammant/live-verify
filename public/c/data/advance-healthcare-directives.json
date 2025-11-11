@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Notary Services",
+    "title": "Advance healthcare directives (notarized living wills)",
+    "volume": "Small",
+    "retention": "Permanent (end-of-life care)",
+    "personalDataVerified": "Patient name, medical wishes, healthcare proxy, witness names, notary name, notary commission number, notary seal, directive date",
+    "personalDataVisible": "Notary commission status (active/expired/revoked). Revocation status (if revoked by patient). Link to state notary database (hospitals and healthcare providers, requires authentication)",
+    "rationale": "Prevents forged healthcare directives that could override patient wishes. Domain binding verifies notary commission. End-of-life decisions require authenticated advance directives. Hospital verification before implementing life-sustaining treatment decisions. Permanent legal records for medical decision-making. Prevents family disputes over patient care wishes. Critical for healthcare where directives determine life-or-death medical decisions."
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Immigration & Civic Documents",
+    "title": "Voter registration confirmations",
+    "volume": "Medium",
+    "retention": "Election cycle + 2-4 years",
+    "personalDataVerified": "Voter name, address, precinct number, registration date, voter ID number (if applicable), jurisdiction",
+    "personalDataVisible": "Registration status (active/inactive/pending). Link to county/state election office system (election officials and poll workers, requires authentication)",
+    "rationale": "Election offices host verification. Quick precinct verification for poll workers. Prevents voter registration fraud. Domain binding to county election offices. Voters can verify registration status without calling election office. Poll workers verify eligibility at voting locations."
+  }
+]

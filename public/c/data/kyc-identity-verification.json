@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Banking & Financial Services",
+    "title": "KYC identity verification documents",
+    "volume": "Medium",
+    "retention": "5-10 years post-relationship",
+    "personalDataVerified": "Customer name, date of birth, address, ID numbers, nationality, PEP (Politically Exposed Person) status",
+    "personalDataVisible": "Account status (active/closed). Link to financial institution KYC system (compliance officers and auditors, requires authentication)",
+    "rationale": "Prevents fake identity documents for account opening. Domain binding verifies document issuer (government, notary). Bank scans government ID and verifies cryptographically. Tamper-evident verification. Regulatory compliance (Bank Secrecy Act, Customer Due Diligence rules). Privacy-preserving without cloud upload of sensitive documents. Critical for AML/KYC where identity fraud enables money laundering."
+  }
+]

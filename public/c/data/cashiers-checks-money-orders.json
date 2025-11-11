@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Mortgage & Lending",
+    "title": "Cashier's checks and money orders",
+    "volume": "Medium-Small",
+    "retention": "3-7 years (payment disputes)",
+    "personalDataVerified": "Payee name, payment amount, issuing institution name, check/order number, issue date",
+    "personalDataVisible": "Check status (honored/dishonored/cancelled). Link to issuing bank system (payees and merchants, requires authentication)",
+    "rationale": "Prevents fake cashier's checks which are common in fraud schemes. Domain binding verifies issuing bank. Real-time verification before accepting payment prevents overpayment scams. Prevents check fraud where fake cashiers check clears initially then reverses days later exposing victim to loss. Critical for high-value transactions where cashier's check fraud causes significant losses."
+  }
+]

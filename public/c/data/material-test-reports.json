@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Manufacturing & Supply Chain",
+    "title": "Material test reports (chemical composition, strength)",
+    "volume": "Small",
+    "retention": "10-30 years (structural integrity)",
+    "personalDataVerified": "Test engineer name, lab technician name, approver name, material specification, test date, test results, batch/heat number",
+    "personalDataVisible": "Specification compliance status (pass/fail). Link to testing laboratory system (structural engineers and building inspectors, requires authentication)",
+    "rationale": "Long-term structural safety requires permanent test records. Report format with domain binding verifies testing lab legitimacy. Critical for construction and aerospace where material properties must be verified decades after installation. Prevents tampering with structural material certifications. Building inspectors verify material compliance for safety."
+  }
+]

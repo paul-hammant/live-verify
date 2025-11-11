@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Immigration & Civic Documents",
+    "title": "Consular letters and attestations",
+    "volume": "Small",
+    "retention": "Case + 5-10 years",
+    "personalDataVerified": "Applicant name, case number, consular officer signature, embassy/consulate location, attestation date, document purpose",
+    "personalDataVisible": "Verification status (if letter verified by receiving authority). Link to consular system (immigration officials and authorized government agencies, requires authentication)",
+    "rationale": "Embassy and consulate domain binding prevents forged consular letters. Critical for visa applications and immigration proceedings where consular attestations are required. Receiving authorities verify authenticity without contacting embassy. Prevents tampering with consular documents after issuance."
+  }
+]

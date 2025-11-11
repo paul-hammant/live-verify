@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Professional & Educational Qualifications",
+    "title": "Accreditation of educational institutions",
+    "volume": "Tiny",
+    "retention": "Permanent (institutional status)",
+    "personalDataVerified": "Institution name, accreditor name, accreditation status, accreditation date, reaccreditation date, programs accredited",
+    "personalDataVisible": "Accreditation status (active/probation/revoked). Link to accrediting body system (students and government agencies, requires authentication)",
+    "rationale": "Domain binding verifies legitimate accreditor and prevents diploma mills. Public trust in educational institutions requires verifiable accreditation. Displayed certificates in schools demonstrate legitimacy to prospective students. Critical for student financial aid where federal funding requires accreditation verification. Prevents fraudulent degree programs."
+  }
+]
