@@ -1537,6 +1537,7 @@ Airline tickets, hotel reservations, car rentals, travel insurance, frequent fly
 | Car rental final receipts and fuel charges                 | Large                   | Rental + 3-7 years (expense/audit)  | Renter name, vehicle, rental charges, fuel charges, mileage, total, taxes          | **OCR-to-hash strong case:** Prevents altered rental receipts (inflated fuel charges, mileage fees). Domain binding verifies rental company. Expense claim verification. Prevents fuel charge fraud. Tax documentation.                                                                       |
 | Car rental damage reports and inspection photos            | Medium                  | Rental + 7-10 years (liability)     | Renter name, vehicle VIN, damage description, pre/post-rental photos, charges      | **OCR-to-hash strong case:** Prevents altered damage reports (rental company claiming pre-existing damage). Domain binding verifies rental company. Prevents damage fraud. Liability dispute evidence. **Multi-page:** Damage reports with photos are multi-page.                             |
 | Ride-sharing receipts (Uber, Lyft, taxi)                   | Very Large              | Ride + 1-3 years (expense/tax)      | Rider name, driver, pickup/dropoff, route, fare, tip, payment method               | **OCR-to-hash strong case:** Prevents fake ride receipts (expense fraud). Domain binding verifies platform (Uber, Lyft). Expense claim verification. Business mileage tax deduction. Prevents fare dispute fraud.                                                                             |
+| Private hire/taxi driver verification cards (female safety) | Large                   | License term + 1-3 years (incidents) | Driver name, photo, license number, vehicle details, licensing authority           | **OCR-to-hash strong case:** Female safety - verify driver credentials before entering vehicle late at night. Domain binding verifies licensing authority (e.g., private-hire.tfl.gov.uk). Real-time verification shows driver photo. Prevents fake driver credentials. Verifier can display "Register your ride with this driver" prompt with programmatic redirect to safety registration service. Deters impersonation fraud. Critical safety feature for vulnerable passengers. |
 | Parking receipts and validation tickets                    | Very Large              | Parking + 1-3 years (expense)       | Location, entry/exit time, parking fee, payment method, validation                 | **OCR-to-hash strong case:** Prevents fake parking receipts (expense fraud). Domain binding verifies parking operator. Expense claim verification. Prevents inflated parking fee claims. Validation stamp verification.                                                                       |
 | Toll road receipts and electronic toll statements          | Large                   | Toll + 3-7 years (expense/audit)    | Vehicle/account, toll location, date/time, toll amount, transponder/license plate  | **OCR-to-hash strong case:** Prevents fake toll receipts. Domain binding verifies toll authority (E-ZPass, FasTrak, SunPass). Expense claim verification. Prevents toll evasion claims. Rental car toll charge documentation.                                                                 |
 
@@ -1604,6 +1605,171 @@ Airline tickets, hotel reservations, car rentals, travel insurance, frequent fly
 | Use Case                            | Volume vs Till Receipts | Retention Period                  | Personal Data                              | OCR-to-hash vs QR code |
 |-------------------------------------|-------------------------|-----------------------------------|--------------------------------------------|--------------------|
 | Raffle tickets and contest entries  | Medium-Small            | 3-7 years (legal/tax compliance)  | Entrant name, contact info, entry details  | **OCR-to-hash strong case:** Prevents fake winning tickets, duplicate entries. Domain binding verifies legitimate contest operator. Tickets need human readability. Tamper-evident for prize claims. |
+
+### Personal Safety & In-Home Service Verification
+
+**Critical trust requirement for safety use cases:** The person seeking safety assurance must FIRST ask themselves: *"Do I trust this domain/authority to stand behind this verification?"* **before** scanning the card. This pre-verification trust assessment is the foundational safety check. For example:
+
+- ✅ **tfl.gov.uk** (Transport for London government authority) - trusted for taxi/private hire driver verification
+- ✅ **nhs.uk** (National Health Service) - trusted for healthcare worker verification
+- ✅ **ofsted.gov.uk** (UK education regulator) - trusted for childcare provider verification
+- ⚠️ **freds-trusted-carers.com** (random private company) - NOT inherently trusted unless the firm has spent considerable time building name-brand trust in the public eye, and even then it's a weak second to an official multi-supplier government vetting authority
+- ✅ **checkatrade.com** (established marketplace with verification) - moderately trusted if brand recognition exists
+
+The domain authority determines whether the verification is meaningful. A government licensing authority, established platform with public accountability, or well-known regulated marketplace provides legitimate safety assurance. An unknown private company domain does not, regardless of technical verification success.
+
+**Why this matters for vulnerable people:** Women alone at night, elderly people at home, solo travelers, and parents vetting childcare providers are making split-second safety decisions. If the verify domain is `random-drivers-inc.com`, the verification is worthless - anyone can host a verification endpoint. Government licensing authorities, established platforms, and regulated marketplaces are the gold standard because they have legal accountability, public oversight, and reputational consequences for verification failures.
+
+| Use Case                                                   | Volume vs Till Receipts | Retention Period                    | Personal Data                                                                      | OCR-to-hash vs QR code                                                                                                                                                                                                                                                                         |
+|------------------------------------------------------------|-------------------------|-------------------------------------|------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Home service provider verification (plumber/electrician)   | Large                   | Service + 3-7 years (liability/tax) | Tradesperson name, photo, license number, company, complaints history              | **OCR-to-hash strong case:** Woman alone at home verifies tradesperson credentials before letting them in. Domain binding verifies government trade licensing authority (e.g., competent-person-schemes.gov.uk) or established marketplace (checkatrade.com, trustmark.org.uk). Real-time verification shows tradesperson photo, license status, complaint history. **Critical dual purpose:** (1) Safety - prevents unlicensed/fake tradesperson fraud targeting vulnerable people at home. (2) **Accountability/tax compliance** - verifier response (`.verific-meta-data.json`) can suggest programmatic redirects: "Store this verified tradesperson information for your records" and "Register this visit and work with [insurance company/warranty service/tax authority]". Creates paper trail for insurance claims, warranty documentation, and discourages cash-in-hand tax evasion (tradesperson knows visit is documented). Protects homeowners and promotes legitimate trade practices. |
+| Healthcare home visit worker verification                  | Medium                  | Visit + 3-7 years (care records)    | Worker name, photo, professional license, agency, background check date            | **OCR-to-hash strong case:** Elderly or vulnerable person verifies home health aide, nurse, or care worker credentials before admitting to home. Domain binding verifies government healthcare authority (e.g., nhs.uk/care-workers, state nursing board) or regulated care agency. Real-time verification shows worker photo, professional license status, DBS/background check date. Verifier can display "Log this care visit with [care coordinator]" prompt. Prevents unlicensed care worker fraud, elder abuse risk. Critical safety for vulnerable populations. |
+| Childcare provider verification (nanny/babysitter)         | Medium                  | Care period + 3-7 years             | Provider name, photo, qualifications, DBS check, references, first aid cert        | **OCR-to-hash strong case:** Parent verifies nanny/babysitter credentials, background check, first aid certification before leaving child in their care. Domain binding verifies government childcare regulator (e.g., ofsted.gov.uk) or established childcare platform (care.com, sittercity.com). Real-time verification shows provider photo, DBS/background check date, qualifications (early childhood education), first aid certification, references. Verifier can display "Register this childcare session" prompt. Prevents unlicensed childcare provider fraud. Critical child safety. |
+| Delivery driver verification (vulnerable recipients)       | Very Large              | Delivery + 30 days (disputes)       | Driver name, photo, vehicle details, package tracking, delivery company            | **OCR-to-hash strong case:** Elderly person or woman alone verifies delivery driver credentials before opening door. Domain binding verifies delivery company (amazon.com/delivery-verify, ups.com, fedex.com). Real-time verification shows driver photo, vehicle details (make/color/plate), package tracking number confirming expected delivery. Verifier can display "This is your expected delivery for package #123456" confirmation. Prevents fake delivery driver scams (common fraud targeting elderly). Critical safety for vulnerable people at home. |
+| Real estate showing agent verification                     | Medium                  | Showing + 1-3 years (liability)     | Agent name, photo, license number, brokerage, license status                       | **OCR-to-hash strong case:** Person (often woman) verifies real estate agent credentials before viewing property alone in unfamiliar location. Domain binding verifies state real estate commission or established platform (realtor.com, zillow.com/agents). Real-time verification shows agent photo, active license status, brokerage affiliation. Verifier can display "Share your showing location with [emergency contact]" prompt with programmatic redirect to safety notification (sends showing address + agent details to emergency contact). Prevents fake agent fraud, personal safety risk. |
+| Hotel/vacation rental staff verification                   | Large                   | Stay + 1-3 years (incident records) | Staff name, photo, role, property affiliation, employee ID                         | **OCR-to-hash strong case:** Guest verifies room service staff, maintenance worker, or Airbnb host credentials before admitting to hotel room/rental. Domain binding verifies hotel chain (hilton.com/staff-verify, marriott.com) or vacation rental platform (airbnb.com/host-verify, vrbo.com). Real-time verification shows staff photo, role (housekeeping/maintenance/host), property affiliation confirmation. Verifier can display "Log this service request" prompt. Prevents impersonation fraud (fake staff entering rooms). Critical safety for solo travelers, women traveling alone. |
+| Personal trainer/fitness instructor verification           | Medium                  | Training period + 1-3 years         | Trainer name, photo, certifications, background check, insurance, gym affiliation  | **OCR-to-hash strong case:** Client (often woman) verifies personal trainer credentials before one-on-one session in private/semi-private setting. Domain binding verifies fitness certification registry (usreps.org, nasm.org, ace.org) or gym/studio (equinox.com/trainers, ymca.org). Real-time verification shows trainer photo, active certifications (CPR/AED, personal training), background check date, liability insurance, gym affiliation. Verifier can display "Register this training session" prompt. Prevents unlicensed/fake trainer fraud, personal safety risk during private sessions. |
+| Tour guide verification (solo travelers)                   | Large                   | Tour + 1-3 years                    | Guide name, photo, license number, tour company, language skills                   | **OCR-to-hash strong case:** Solo traveler (often woman) verifies tour guide credentials in unfamiliar location before departing on tour. Domain binding verifies government tourism authority (tourism-board.gov) or established tour company (viator.com, getyourguide.com). Real-time verification shows guide photo, active license, tour company affiliation, languages spoken. Verifier can display "Share your tour details with [emergency contact]" prompt with programmatic redirect (sends tour itinerary + guide details to emergency contact). Prevents unlicensed/fake guide fraud, personal safety risk in unfamiliar destinations. Critical safety for solo travelers. |
+| Building/safety inspector verification (home/business)     | Medium                  | Inspection + 3-7 years (compliance) | Inspector name, photo, badge number, jurisdiction, inspection authority            | **OCR-to-hash strong case:** Property owner verifies building inspector, fire inspector, health inspector credentials before granting property access. Domain binding verifies government inspection authority (city.gov/inspectors, county.gov/code-enforcement, health-dept.gov). Real-time verification shows inspector photo, badge number, jurisdiction, inspection authority. Prevents fake inspector scams (criminals posing as inspectors to case properties for burglary, extortion scams demanding "immediate violation fines"). Critical for business owners, homeowners. Government employees should carry verifiable credentials. |
+| Police officer verification (traffic stops, home visits)   | Very Large              | Encounter + 1-3 years (accountability) | Officer name, photo, badge number, precinct/station, department                    | **OCR-to-hash strong case:** Citizen verifies police officer credentials during traffic stop (especially unmarked vehicle, plain clothes officer) or responding to home. Domain binding verifies police department (police.gov, sheriff.gov, state-police.gov). Real-time verification shows officer photo, badge number, precinct/station, department affiliation. Prevents fake police officer scams (criminals impersonating officers for robbery, assault, extortion). Critical public safety - citizens have right to verify officer credentials, especially women alone, nighttime encounters, unmarked vehicles. Enhances police accountability and public trust. **Note:** Verification should not require providing personal data to scan - officer presents credential, citizen verifies independently. |
+| Parking enforcement officer verification                   | Large                   | Encounter + 1-3 years               | Officer name, photo, badge number, jurisdiction, parking authority                 | **OCR-to-hash strong case:** Driver verifies parking enforcement officer credentials when ticketed or before paying on-street "fine". Domain binding verifies parking authority (city.gov/parking, parking-authority.gov). Real-time verification shows officer photo, badge number, jurisdiction. Prevents fake parking officer scams (criminals posing as parking officers to collect fraudulent "fines" in cash). Common fraud in tourist areas, city centers. |
+| Immigration officer verification (internal checkpoints, enforcement) | Medium       | Encounter + 1-3 years               | Officer name, photo, badge number, agency, credential number                       | **OCR-to-hash strong case:** Person verifies immigration officer credentials at internal checkpoints (100-mile border zone - affects 2/3 of US population), ICE home visits, workplace raids, or plainclothes officer encounters. Domain binding verifies government agency (cbp.gov, ice.gov, border-agency.gov). Real-time verification shows officer photo, badge number, agency affiliation, credential number. Prevents fake immigration officer extortion scams (criminals impersonating ICE/CBP to extort money from immigrants, threaten deportation unless "fines" paid). Critical for immigrant communities targeted by fraud. **Note:** This is for unexpected enforcement encounters, NOT official airport/port-of-entry immigration where context makes officer legitimacy clear. Enhances accountability for legitimate immigration enforcement. |
+| Utility worker verification (gas/electric/water)           | Large                   | Service + 1-3 years (access records) | Worker name, photo, employee ID, utility company, service area                     | **OCR-to-hash strong case:** Homeowner verifies utility worker credentials before granting property access for meter reading, service work, inspections. Domain binding verifies utility company (gas-company.com, electric-utility.com, water-dept.gov). Real-time verification shows worker photo, employee ID, utility affiliation, service area. Prevents fake utility worker scams (criminals posing as utility workers to gain property access for burglary, assault). Common fraud targeting elderly, vulnerable homeowners. |
+| Postal/courier worker verification (suspicious packages)   | Very Large              | Delivery + 30 days                  | Worker name, photo, employee ID, postal service, delivery route                    | **OCR-to-hash strong case:** Recipient verifies postal worker or courier credentials for unexpected/suspicious packages. Domain binding verifies postal service (usps.gov, royalmail.com) or courier company (ups.com, fedex.com, dhl.com). Real-time verification shows worker photo, employee ID, delivery route. Prevents fake postal worker scams, package theft. Critical for vulnerable populations who may be targeted with fraudulent deliveries or extortion attempts. |
+| Social services worker verification (home visits)          | Medium                  | Visit + 3-7 years (case records)    | Worker name, photo, agency ID, department, supervisor contact                      | **OCR-to-hash strong case:** Family verifies social services worker, child protective services worker, welfare officer credentials before admitting to home. Domain binding verifies government social services department (social-services.gov, child-services.gov). Real-time verification shows worker photo, agency ID, department affiliation, supervisor contact. Prevents fake social worker scams (criminals impersonating social workers to gain property access, kidnapping attempts). Critical child safety, family protection. Enhances accountability for legitimate social workers. |
+| Meter reader/surveyor verification (property access)       | Large                   | Visit + 1-3 years (access records)  | Worker name, photo, employee ID, company, purpose of visit                         | **OCR-to-hash strong case:** Property owner verifies meter reader, land surveyor, appraiser credentials before granting property access. Domain binding verifies utility company, surveying firm, appraisal company, or government agency. Real-time verification shows worker photo, employee ID, company affiliation, purpose of visit. Prevents property access scams (fake surveyors casing properties for burglary). |
+
+**Why personal safety use cases need OCR-to-hash:**
+
+1. **Split-second safety decisions:** Vulnerable people (women alone, elderly, solo travelers, parents) need instant credential verification before admitting strangers to personal spaces (home, hotel room, vehicle) or being alone with service providers
+2. **Domain authority trust is foundational:** The verify domain must be a trusted government licensing authority, established regulated platform, or well-known marketplace - random private company domains provide no safety assurance regardless of technical verification
+3. **Photo verification critical:** Real-time display of credential holder's photo enables visual confirmation that person at door/vehicle matches official credentials
+4. **Emergency contact integration:** Verifier can offer "Share this interaction with [emergency contact]" prompts with programmatic redirects to safety notification services (sends service provider details + location to trusted contact)
+5. **Prevents impersonation fraud:** Fake tradespeople, unlicensed care workers, fake delivery drivers, fake real estate agents commonly target vulnerable populations - OCR-to-hash with government/platform domain binding prevents credential forgery
+6. **High-stakes vulnerability:** Unlike document fraud (financial loss), personal safety fraud can result in home invasion, elder abuse, child endangerment, assault, theft - verification failure has severe physical safety consequences
+7. **Offline OCR preserves privacy:** Vulnerable people don't have to upload ID photos or personal documents to cloud services - OCR happens on-device, only hash sent to verification authority
+8. **Dual-purpose accountability (tradespeople):** Beyond safety, verification creates paper trail for tax compliance, insurance claims, warranty documentation - `.verific-meta-data.json` response can suggest "Store verified credentials" and "Register this visit/work with [insurance/tax authority]" via programmatic redirects. Discourages cash-in-hand tax evasion (tradesperson knows visit is documented), protects homeowners with documented work history, promotes legitimate trade practices
+
+**Real-world safety fraud examples:**
+
+- **Fake tradesperson home invasion:** Criminals pose as plumbers/electricians to gain entry to homes, target elderly victims for theft or worse (common fraud in UK, USA)
+- **Unlicensed care worker elder abuse:** Fake home health aides exploit elderly patients, financial exploitation and physical abuse (billions in annual elder fraud)
+- **Fake delivery driver package theft + home invasion:** Criminals pose as Amazon/UPS drivers to steal packages or gain entry for burglary
+- **Fake real estate agent assault:** Criminals pose as agents to lure victims to vacant properties for robbery/assault (documented cases USA, Canada, Australia)
+- **Fake hotel staff room invasion:** Criminals pose as hotel maintenance/room service to gain entry to guest rooms for theft/assault
+- **Unlicensed childcare provider endangerment:** Fake nannies/babysitters without background checks, training, or credentials endanger children
+- **Fake tour guide scams:** Unlicensed guides abandon tourists, steal belongings, or lead them to dangerous locations
+- **Fake building inspector extortion:** Criminals pose as code enforcement/fire inspectors, demand "immediate violation fines" paid in cash or gift cards (common fraud targeting small businesses, elderly homeowners)
+- **Fake police officer robbery:** Criminals impersonate police officers during traffic stops to rob victims, especially on rural roads, nighttime, unmarked vehicles (documented cases worldwide)
+- **Fake immigration officer extortion:** Criminals impersonate ICE/CBP officers to extort money from immigrants, threaten deportation unless "fines" paid immediately, particularly at internal checkpoints or targeting immigrant communities (common fraud exploiting fear of immigration enforcement)
+- **Fake utility worker burglary:** Criminals pose as gas/electric workers to gain property access, case homes for later burglary or commit immediate theft (common fraud targeting elderly)
+- **Fake social worker kidnapping attempts:** Criminals impersonate child protective services to gain access to homes, attempt child abduction (documented cases USA, Europe)
+- **Fake parking officer cash scams:** Criminals pose as parking enforcement, collect fraudulent "on-the-spot fines" in cash from tourists unfamiliar with local parking laws
+
+**Regulatory frameworks:**
+
+- **UK:** TfL private hire licensing, Ofsted childcare regulation, Competent Person Schemes (tradesperson licensing), CQC care worker regulation, Police identification requirements, Local authority inspector credentials
+- **USA:** State professional licensing boards (nursing, childcare, real estate), background check requirements (FCRA), sector-specific regulations, Law enforcement identification standards, Building code enforcement credentials, Federal credentials (USPS, CBP, ICE - 100-mile border zone enforcement), Immigration enforcement accountability
+- **EU:** Professional qualifications directives, childcare regulations, tourism licensing by member state, Border agency credentials (Frontex, national border police), Utility worker identification requirements
+- **International:** Police identification standards (INTERPOL guidelines), Immigration officer credentials (border agencies), Utility worker safety regulations
+
+**Example `.verific-meta.json` for tradesperson accountability:**
+
+The verification authority (e.g., competent-person-schemes.gov.uk, checkatrade.com) can include programmatic action suggestions in their `.verific-meta.json` response to encourage work registration and create paper trails:
+
+```json
+{
+  "issuer": "UK Competent Person Schemes",
+  "claimType": "Tradesperson license",
+  "responseTypes": {
+    "OK": {
+      "class": "affirming",
+      "text": "This tradesperson is verified and licensed",
+      "link": "https://competent-person-schemes.gov.uk/verify",
+      "actionSuggestions": [
+        {
+          "action": "store",
+          "text": "Store this tradesperson's verified credentials for your records",
+          "description": "Save verified information for insurance claims, warranty documentation, and future reference"
+        },
+        {
+          "action": "register",
+          "text": "Register this visit and work scope",
+          "description": "Document this service visit for tax records, insurance claims, and warranty purposes",
+          "redirectUrl": "https://hmrc.gov.uk/register-home-improvement",
+          "redirectParams": {
+            "tradesperson": "{tradesperson_name}",
+            "license": "{license_number}",
+            "date": "{verification_timestamp}",
+            "homeowner": "{user_id_optional}"
+          }
+        },
+        {
+          "action": "notify",
+          "text": "Share service appointment with emergency contact",
+          "description": "Safety notification: send tradesperson details to trusted contact",
+          "redirectUrl": "https://safety-notification-service.com/log-visit"
+        }
+      ]
+    }
+  }
+}
+```
+
+**How this works:**
+
+1. **Safety first:** Homeowner verifies tradesperson credentials before letting them in (photo verification, license status, complaint history)
+2. **Store verified info:** Verifier app suggests storing the verified tradesperson details for records (insurance claims, warranty, future reference)
+3. **Register visit/work:** App offers programmatic redirect to register the visit with insurance company, tax authority (HMRC for home improvements), or warranty service
+4. **Paper trail created:** Visit is now documented - discourages cash-in-hand tax evasion (tradesperson knows visit is logged), protects homeowner with documented work history, enables insurance claims, creates warranty trail
+5. **Emergency contact notification:** Optional safety feature sends tradesperson details to trusted contact (separate from work registration)
+
+**Benefits:**
+
+- **Tax compliance:** Tradesperson knows visit is documented, discourages "cash-in-hand" arrangements avoiding VAT/income tax
+- **Insurance claims:** Homeowner has verified record of who performed work, when, for insurance/warranty claims
+- **Warranty documentation:** Creates paper trail for warranty claims on installation/repair work
+- **Consumer protection:** Documented relationship with licensed tradesperson protects homeowner in disputes
+- **Legitimate trade promotion:** Registered, tax-compliant tradespeople benefit from verification system, incentivizes professional practices
+
+**Privacy note:** The `redirectParams` can be optional - homeowner chooses whether to actually register the visit. The verification itself doesn't send data to tax authorities; the `.verific-meta.json` response merely *suggests* registration as an option via programmatic redirect.
+
+**Critical privacy asymmetry: Workers vs. Citizens**
+
+There is an important distinction between verifying **people in working/service capacity** versus **citizens just trying to live their lives:**
+
+**Verifying WORKERS/SERVICE PROVIDERS (photo verification + action suggestions appropriate):**
+- Tradesperson entering your home
+- Care worker visiting elderly patient
+- Taxi/private hire driver
+- Delivery driver at your door
+- Police officer at traffic stop
+- Building inspector on your property
+- Real estate agent showing property
+- Personal trainer in private session
+
+**Why photo + actions are appropriate:** These people are in a professional capacity, entering your personal space or exercising authority. You have a legitimate safety interest in verifying their identity and credentials. Photo verification is essential for safety. Action suggestions (register visit, notify emergency contact) enhance safety and accountability.
+
+**Verifying CITIZENS (privacy after verification - minimal data retention):**
+- Hotel guest being checked in
+- Passenger in taxi/private hire vehicle
+- Person at immigration checkpoint (if citizen chooses to verify officer, but officer verifying citizen's ID)
+- Citizen during traffic stop (officer may verify citizen ID, but citizen wants privacy)
+- Customer entering age-restricted venue
+
+**Why privacy matters:** Citizens using services or encountering authority figures should have the option for privacy AFTER verification completes. Their photo should not be retained/displayed unnecessarily. No suggested action tracking/logging beyond what's legally required. Verification confirms legitimacy (e.g., "this citizen has valid ID for age-restricted purchase") but doesn't create surveillance trail.
+
+**The asymmetry:**
+- **Woman verifying taxi driver:** ✅ Driver's photo shown to her, "Register your ride with this driver" suggestion appropriate (her safety)
+- **Taxi driver verifying passenger ID (if required):** ⚠️ Passenger may want privacy after verification - no photo retention, no tracking beyond trip record
+
+- **Homeowner verifying tradesperson:** ✅ Tradesperson's photo shown, "Register this visit" suggestion appropriate (safety + accountability)
+- **Tradesperson verifying homeowner payment/identity:** ⚠️ Homeowner may want privacy - verification confirms payment but no unnecessary data retention
+
+- **Citizen verifying police officer credentials:** ✅ Officer's photo shown, badge verified (accountability, especially for unmarked vehicle/plain clothes)
+- **Police officer verifying citizen ID:** ⚠️ Citizen may want privacy beyond legal requirements - verification confirms identity but citizen controls whether encounter is logged/tracked beyond official records
+
+**Design principle:** When the verification is of someone in a **working capacity** for **safety purposes**, photo verification and action suggestions enhance safety and accountability. When the verification is of a **citizen just trying to live their life**, privacy after verification should be respected - verification confirms legitimacy without creating unnecessary surveillance.
 
 ### Scientific & Research
 
