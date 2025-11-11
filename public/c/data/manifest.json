@@ -1,0 +1,36 @@
+{
+  "categories": [
+    {
+      "id": "green-cards-i551",
+      "name": "Green Cards (I-551, USA)",
+      "count": 1,
+      "preview": "Permanent resident cards"
+    },
+    {
+      "id": "medical-device-certifications",
+      "name": "Medical Device Certifications",
+      "count": 1,
+      "preview": "FDA, CE marking, ISO 13485"
+    },
+    {
+      "id": "bills-of-lading",
+      "name": "Bills of Lading",
+      "count": 1,
+      "preview": "Sea waybills (short-form page)"
+    },
+    {
+      "id": "proof-of-funds-letters",
+      "name": "Proof of Funds Letters",
+      "count": 1,
+      "preview": "Bank verification letters"
+    },
+    {
+      "id": "university-degrees",
+      "name": "University Degrees",
+      "count": 1,
+      "preview": "Degrees and transcripts"
+    }
+  ],
+  "totalUseCases": 5,
+  "totalCategories": 5
+}

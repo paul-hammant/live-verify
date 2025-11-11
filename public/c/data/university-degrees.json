@@ -1,0 +1,10 @@
+[
+  {
+    "title": "University degrees and transcripts",
+    "volume": "Large",
+    "retention": "Permanent",
+    "personalDataVerified": "Student name, degree title, major/field of study, graduation date, university name, honors/distinctions",
+    "personalDataVisible": "Revocation date (if revoked). Link to university registrar system (authorized requesters with graduate consent, requires login)",
+    "rationale": "Prevents diploma mills and credential fraud. Instant verification for employers and graduate schools. Graduates don't need to request official transcripts for every application, reducing administrative burden and cost while maintaining document authenticity."
+  }
+]
