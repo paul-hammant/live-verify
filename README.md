@@ -1734,6 +1734,43 @@ The verification authority (e.g., competent-person-schemes.gov.uk, checkatrade.c
 
 **Privacy note:** The `redirectParams` can be optional - homeowner chooses whether to actually register the visit. The verification itself doesn't send data to tax authorities; the `.verific-meta.json` response merely *suggests* registration as an option via programmatic redirect.
 
+**Critical privacy asymmetry: Workers vs. Citizens**
+
+There is an important distinction between verifying **people in working/service capacity** versus **citizens just trying to live their lives:**
+
+**Verifying WORKERS/SERVICE PROVIDERS (photo verification + action suggestions appropriate):**
+- Tradesperson entering your home
+- Care worker visiting elderly patient
+- Taxi/private hire driver
+- Delivery driver at your door
+- Police officer at traffic stop
+- Building inspector on your property
+- Real estate agent showing property
+- Personal trainer in private session
+
+**Why photo + actions are appropriate:** These people are in a professional capacity, entering your personal space or exercising authority. You have a legitimate safety interest in verifying their identity and credentials. Photo verification is essential for safety. Action suggestions (register visit, notify emergency contact) enhance safety and accountability.
+
+**Verifying CITIZENS (privacy after verification - minimal data retention):**
+- Hotel guest being checked in
+- Passenger in taxi/private hire vehicle
+- Person at immigration checkpoint (if citizen chooses to verify officer, but officer verifying citizen's ID)
+- Citizen during traffic stop (officer may verify citizen ID, but citizen wants privacy)
+- Customer entering age-restricted venue
+
+**Why privacy matters:** Citizens using services or encountering authority figures should have the option for privacy AFTER verification completes. Their photo should not be retained/displayed unnecessarily. No suggested action tracking/logging beyond what's legally required. Verification confirms legitimacy (e.g., "this citizen has valid ID for age-restricted purchase") but doesn't create surveillance trail.
+
+**The asymmetry:**
+- **Woman verifying taxi driver:** ✅ Driver's photo shown to her, "Register your ride with this driver" suggestion appropriate (her safety)
+- **Taxi driver verifying passenger ID (if required):** ⚠️ Passenger may want privacy after verification - no photo retention, no tracking beyond trip record
+
+- **Homeowner verifying tradesperson:** ✅ Tradesperson's photo shown, "Register this visit" suggestion appropriate (safety + accountability)
+- **Tradesperson verifying homeowner payment/identity:** ⚠️ Homeowner may want privacy - verification confirms payment but no unnecessary data retention
+
+- **Citizen verifying police officer credentials:** ✅ Officer's photo shown, badge verified (accountability, especially for unmarked vehicle/plain clothes)
+- **Police officer verifying citizen ID:** ⚠️ Citizen may want privacy beyond legal requirements - verification confirms identity but citizen controls whether encounter is logged/tracked beyond official records
+
+**Design principle:** When the verification is of someone in a **working capacity** for **safety purposes**, photo verification and action suggestions enhance safety and accountability. When the verification is of a **citizen just trying to live their life**, privacy after verification should be respected - verification confirms legitimacy without creating unnecessary surveillance.
+
 ### Scientific & Research
 
 | Use Case                                      | Volume vs Till Receipts | Retention Period                   | Personal Data                                                       | OCR-to-hash vs QR code |
