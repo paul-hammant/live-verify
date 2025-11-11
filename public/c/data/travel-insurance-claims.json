@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Travel & Hospitality",
+    "title": "Travel insurance claim forms and settlement letters",
+    "volume": "Medium",
+    "retention": "Claim + 7-10 years",
+    "dataVerified": "Claimant name, policy number, claim details, settlement amount, insurer",
+    "dataVisibleAfterVerification": "Claim status (approved/settled/denied). Link to insurer system (claimant only, requires authentication)",
+    "rationale": "Prevents altered claim settlements. Domain binding verifies insurer. Claim payment verification. Prevents double-claim fraud. Tax documentation (claim proceeds)."
+  }
+]

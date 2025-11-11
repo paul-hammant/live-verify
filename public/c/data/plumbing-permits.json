@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Construction & Property Permits",
+    "title": "Plumbing permits",
+    "volume": "Medium",
+    "retention": "Permanent (building records)",
+    "dataVerified": "Licensed plumber, property address, plumbing work scope, inspection",
+    "dataVisibleAfterVerification": "Permit status (issued/final inspection passed). Link to building department system (plumbers and public, requires authentication)",
+    "rationale": "Prevents unlicensed plumbing work. Domain binding verifies plumbing inspector. Health code compliance. Prevents water damage liability. Cross-connection control."
+  }
+]

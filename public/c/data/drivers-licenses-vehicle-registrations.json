@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Government & Civic Documents",
+    "title": "Driver's licenses and vehicle registrations",
+    "volume": "Medium-Small",
+    "retention": "5-10 years (renewal cycles)",
+    "dataVerified": "Name, DOB, address, photo, vehicle VIN, license plate",
+    "dataVisibleAfterVerification": "License/registration status (valid/expired/suspended). Link to DMV system (law enforcement and authorized parties, requires authentication)",
+    "rationale": "Police/hotels/bars verify authenticity. Barcode + OCR-to-hash complement each other. Prevents fake IDs. Uses SHA-512 to prevent brute-force enumeration."
+  }
+]

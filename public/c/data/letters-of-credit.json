@@ -4,8 +4,8 @@
     "title": "Trade finance: Letters of credit",
     "volume": "Small",
     "retention": "7-10 years (transaction lifecycle)",
-    "personalDataVerified": "Issuing bank name, beneficiary name, credit amount, payment terms, expiry date, required documents list",
-    "personalDataVisible": "Credit status (active/expired/drawn). Link to issuing bank system (beneficiary and advising banks, requires authentication)",
+    "dataVerified": "Issuing bank name, beneficiary name, credit amount, payment terms, expiry date, required documents list",
+    "dataVisibleAfterVerification": "Credit status (active/expired/drawn). Link to issuing bank system (beneficiary and advising banks, requires authentication)",
     "rationale": "Prevents forged letters of credit in international trade. Domain binding verifies issuing bank legitimacy. High-value international trade transactions. Tamper-evident payment terms prevent fraud. UCP 600 (Uniform Customs and Practice) compliance. Prevents trade-based money laundering. Critical for exporters where LC authenticity guarantees payment from foreign buyers."
   }
 ]

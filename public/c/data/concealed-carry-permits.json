@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Professional & Occupational Licenses",
+    "title": "Concealed carry permits (CCW/CHL)",
+    "volume": "Medium",
+    "retention": "Permit validity (1-5 years)",
+    "dataVerified": "Permit holder name, DOB, photo, permit number, issuing authority",
+    "dataVisibleAfterVerification": "Permit status (active/expired/revoked). Link to issuing authority system (law enforcement only, requires authentication)",
+    "rationale": "Prevents fake CCW permits. Domain binding verifies issuing authority (sheriff, state police). Law enforcement verification. Reciprocity verification (interstate). Uses SHA-512 (government ID privacy)."
+  }
+]

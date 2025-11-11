@@ -4,8 +4,8 @@
     "title": "Quality control inspection reports",
     "volume": "Medium-Small",
     "retention": "5-15 years (warranty/liability)",
-    "personalDataVerified": "Inspector name, QA manager name, facility location, inspection date, product batch, test results, pass/fail status",
-    "personalDataVisible": "Corrective action status (if defects found). Link to manufacturer quality system (warranty claims and regulatory inspectors, requires authentication)",
+    "dataVerified": "Inspector name, QA manager name, facility location, inspection date, product batch, test results, pass/fail status",
+    "dataVisibleAfterVerification": "Corrective action status (if defects found). Link to manufacturer quality system (warranty claims and regulatory inspectors, requires authentication)",
     "rationale": "Full report format needs human readability for warranty claims and product liability. Domain binding verifies manufacturer legitimacy. Customers verify quality inspection without requiring manufacturer backend access. Critical for product warranty disputes where inspection reports prove quality control compliance. Prevents tampering with inspection results."
   }
 ]

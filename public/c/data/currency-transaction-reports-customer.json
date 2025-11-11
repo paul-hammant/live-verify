@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Financial Crime & Compliance",
+    "title": "Currency Transaction Reports (CTRs) - customer copies",
+    "volume": "Small",
+    "retention": "5 years (IRS requirement)",
+    "dataVerified": "Customer name, transaction amount, date, financial institution",
+    "dataVisibleAfterVerification": "CTR status (filed/documented). Link to financial institution system (customer and IRS, requires authentication)",
+    "rationale": "Customer receives verifiable copy of CTR filing. Domain binding verifies financial institution. Tamper-evident transaction record. IRS BSA compliance. Prevents disputes over reported amounts."
+  }
+]

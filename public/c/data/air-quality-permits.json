@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Environmental & Natural Resource Permits",
+    "title": "Air quality permits (Title V, synthetic minor)",
+    "volume": "Small",
+    "retention": "5 years (permit term)",
+    "dataVerified": "Facility name, owner, emission sources, limits, monitoring, air quality agency",
+    "dataVisibleAfterVerification": "Permit status (active/expired/revoked). Link to EPA/state air quality system (enforcement and public, requires authentication)",
+    "rationale": "Prevents fake air permits. Domain binding verifies EPA/state air quality. Clean Air Act compliance. Prevents air pollution violations. High fines ($37K-$93K per day violations)."
+  }
+]

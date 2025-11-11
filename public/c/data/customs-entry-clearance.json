@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Logistics & Transportation",
+    "title": "Customs entry documents and clearance certificates",
+    "volume": "Large",
+    "retention": "7-10 years (customs audit)",
+    "dataVerified": "Importer, customs broker, entry number, duty/tax paid, goods classification",
+    "dataVisibleAfterVerification": "Entry status (cleared/examined/audited). Link to customs broker/authority system (importer and customs, requires authentication)",
+    "rationale": "Prevents altered customs entries (duty evasion). Domain binding verifies customs broker/authority. Audit trail for customs compliance. Prevents post-clearance entry manipulation."
+  }
+]

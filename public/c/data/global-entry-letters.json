@@ -4,8 +4,8 @@
     "title": "Global Entry/Trusted Traveler support letters (short)",
     "volume": "Medium",
     "retention": "5 years",
-    "personalDataVerified": "Member name, Known Traveler Number (KTN), program type, membership status, issue date",
-    "personalDataVisible": "Membership status (active/suspended/revoked). Link to CBP Trusted Traveler Programs system (CBP officers and TSA PreCheck verification, requires authentication)",
+    "dataVerified": "Member name, Known Traveler Number (KTN), program type, membership status, issue date",
+    "dataVisibleAfterVerification": "Membership status (active/suspended/revoked). Link to CBP Trusted Traveler Programs system (CBP officers and TSA PreCheck verification, requires authentication)",
     "rationale": "Field verification at border crossings and airports. Privacy-preserving short-form text suitable for travelers. Domain binding to CBP ensures authenticity. Travelers can provide verification of membership status without carrying membership card. Critical for expedited processing where officers need to verify trusted traveler status quickly."
   }
 ]

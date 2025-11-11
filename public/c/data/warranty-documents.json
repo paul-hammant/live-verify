@@ -4,8 +4,8 @@
     "title": "Warranty documents and service agreements",
     "volume": "Medium",
     "retention": "Product lifetime + 3-10 years",
-    "personalDataVerified": "Customer name, product serial number, purchase date, warranty period, retailer/manufacturer name, warranty terms",
-    "personalDataVisible": "Warranty claim status (if claim filed). Service history summary (if repairs performed). Link to manufacturer warranty system (authorized service centers and customer support, requires authentication)",
+    "dataVerified": "Customer name, product serial number, purchase date, warranty period, retailer/manufacturer name, warranty terms",
+    "dataVisibleAfterVerification": "Warranty claim status (if claim filed). Service history summary (if repairs performed). Link to manufacturer warranty system (authorized service centers and customer support, requires authentication)",
     "rationale": "Consumer-facing document. Human-readable terms important. Prevents tampering with warranty dates and coverage. Customers don't need to keep paper warranty cards. Service centers verify coverage instantly. Domain binding to manufacturer prevents fake warranty documents."
   }
 ]

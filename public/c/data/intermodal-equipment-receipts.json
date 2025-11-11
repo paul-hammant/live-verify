@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Logistics & Transportation",
+    "title": "Intermodal equipment receipts (EIR)",
+    "volume": "Large",
+    "retention": "Equipment return + 7 years",
+    "dataVerified": "Carrier, container/chassis number, equipment condition, damage notation",
+    "dataVisibleAfterVerification": "Equipment status (issued/returned). Link to terminal operator/carrier system (carriers and terminals, requires authentication)",
+    "rationale": "Prevents altered equipment damage notation (equipment interchange fraud). Domain binding verifies terminal operator/carrier. Damage responsibility documentation. Prevents fraudulent damage claims."
+  }
+]

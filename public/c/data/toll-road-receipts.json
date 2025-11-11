@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Travel & Hospitality",
+    "title": "Toll road receipts and electronic toll statements",
+    "volume": "Large",
+    "retention": "Toll + 3-7 years (expense/audit)",
+    "dataVerified": "Vehicle/account, toll location, date/time, toll amount, transponder/license plate",
+    "dataVisibleAfterVerification": "Toll status (paid/outstanding). Link to toll authority system (account holder and accounting, requires authentication)",
+    "rationale": "Prevents fake toll receipts. Domain binding verifies toll authority (E-ZPass, FasTrak, SunPass). Expense claim verification. Prevents toll evasion claims. Rental car toll charge documentation."
+  }
+]

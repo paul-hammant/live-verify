@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Real Estate & Property",
+    "title": "Homeowners insurance declarations page",
+    "volume": "Small",
+    "retention": "Policy term + 7 years (claims)",
+    "dataVerified": "Insured name, property address, coverage amounts, deductibles, agent",
+    "dataVisibleAfterVerification": "Policy status (active/valid). Link to insurance company system (insured and lender, requires authentication)",
+    "rationale": "Domain binding verifies insurance company. Prevents fake insurance certificates. Certificate format suitable for OCR. Mortgage lender verification. Claims documentation."
+  }
+]

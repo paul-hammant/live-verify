@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Travel & Hospitality",
+    "title": "Shore excursion receipts and tour booking confirmations",
+    "volume": "Large",
+    "retention": "Excursion + 1-3 years",
+    "dataVerified": "Passenger name, excursion details, tour operator, date, price, booking reference",
+    "dataVisibleAfterVerification": "Booking status (confirmed/completed/cancelled). Link to tour operator/cruise system (passenger only, requires authentication)",
+    "rationale": "Prevents fake shore excursion receipts. Domain binding verifies tour operator/cruise line. Expense claim verification. Cancellation refund documentation. Liability evidence."
+  }
+]

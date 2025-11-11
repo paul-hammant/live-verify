@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Charitable & Non-Profit",
+    "title": "Charity rating certificates",
+    "volume": "Tiny",
+    "retention": "3-5 years (rating validity)",
+    "dataVerified": "Organization name, rating body, financial metrics, leadership",
+    "dataVisibleAfterVerification": "Rating status (current/expired). Link to rating agency system (public and charity, may require authentication)",
+    "rationale": "Domain binding verifies rating agency (Charity Navigator, GiveWell, etc.). Certificate format suitable for OCR. Donor due diligence."
+  }
+]

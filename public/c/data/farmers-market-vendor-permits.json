@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Food & Beverage Permits",
+    "title": "Farmers market vendor permits",
+    "volume": "Large",
+    "retention": "Season/year validity",
+    "dataVerified": "Vendor name, products sold, market location, booth number",
+    "dataVisibleAfterVerification": "Vendor status (active/expired). Link to market operator/city system (market managers and public, requires authentication)",
+    "rationale": "Domain binding verifies market operator/city. Vendor eligibility verification (local producer requirements). Product type restrictions. Booth assignment verification."
+  }
+]

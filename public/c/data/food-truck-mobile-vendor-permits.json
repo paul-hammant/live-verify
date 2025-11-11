@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Food & Beverage Permits",
+    "title": "Food truck and mobile vendor permits",
+    "volume": "Large",
+    "retention": "Permit validity (seasonal/annual)",
+    "dataVerified": "Operator name, vehicle ID, permitted locations, health permit, route",
+    "dataVisibleAfterVerification": "Permit status (active/expired). Link to health department/city system (enforcement and public, requires authentication)",
+    "rationale": "Prevents fake food truck permits. Domain binding verifies health department/city. Location restriction enforcement. Health inspection verification. Prevents unpermitted vending."
+  }
+]

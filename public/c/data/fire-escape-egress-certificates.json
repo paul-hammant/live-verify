@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Safety Inspection Certificates",
+    "title": "Fire escape and egress inspection certificates",
+    "volume": "Medium",
+    "retention": "1-5 years (inspection cycle)",
+    "dataVerified": "Building address, fire escape location, inspector, inspection date, structural integrity",
+    "dataVisibleAfterVerification": "Inspection status (passed/conditional). Link to structural engineer/building inspector system (building owners and enforcement, requires authentication)",
+    "rationale": "Prevents fake fire escape certificates. Domain binding verifies structural engineer/building inspector. Life safety critical. Building code compliance. Prevents fire escape collapse liability."
+  }
+]

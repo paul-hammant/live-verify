@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Logistics & Transportation",
+    "title": "Bonded warehouse entry and exit documents",
+    "volume": "Medium",
+    "retention": "7-10 years (customs compliance)",
+    "dataVerified": "Importer, bonded warehouse, customs entry, goods in/out, duty deferral",
+    "dataVisibleAfterVerification": "Warehouse status (in-bond/released). Link to bonded warehouse operator system (importer and customs, requires authentication)",
+    "rationale": "Prevents bonded warehouse fraud (removing goods without duty payment). Domain binding verifies bonded warehouse operator. Customs compliance. Duty deferral verification. CBP audit trail."
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Immigration & Visa Documents",
+    "title": "ESTA (Electronic System for Travel Authorization) approvals",
+    "volume": "Large",
+    "retention": "2 years (ESTA validity)",
+    "dataVerified": "Full name, passport number, nationality, DOB, travel details, approval number",
+    "dataVisibleAfterVerification": "ESTA status (approved/denied/expired). Link to DHS/CBP system (airlines and border control, requires authentication)",
+    "rationale": "Prevents fake ESTA approvals. Domain binding verifies DHS/CBP (cbp.gov). Required for VWP travel to USA. Printable approval confirmation. Airline verification at check-in. Border crossing documentation. Uses SHA-512 (government ID privacy)."
+  }
+]

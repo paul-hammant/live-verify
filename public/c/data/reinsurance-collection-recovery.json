@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Insurance & Risk Management",
+    "title": "Reinsurance collection and recovery documentation",
+    "volume": "Small",
+    "retention": "Collection + 10 years",
+    "dataVerified": "Ceding company, reinsurer, claim details, reinsurer payment, collection status",
+    "dataVisibleAfterVerification": "Recovery status (pending/received). Link to ceding company/reinsurer system (authorized parties, requires authentication)",
+    "rationale": "Prevents fabricated recovery documentation. Domain binding verifies reinsurer/ceding company. Multi-million dollar recoveries. Prevents double-collection fraud. Reinsurance receivables audit trail. Solvency monitoring."
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Immigration & Visa Documents",
+    "title": "Advance parole and re-entry permits",
+    "volume": "Medium",
+    "retention": "Permit validity + 7 years",
+    "dataVerified": "Full name, DOB, nationality, permit type, validity period, I-131 receipt number",
+    "dataVisibleAfterVerification": "Parole status (valid/used/expired). Link to USCIS system (border control and applicant, requires authentication)",
+    "rationale": "Prevents fake advance parole. Domain binding verifies USCIS. Travel authorization for pending AOS. Re-entry documentation. CBP inspection verification. Green card applicant travel. Uses SHA-512 (government ID privacy)."
+  }
+]

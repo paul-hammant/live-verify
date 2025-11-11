@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Travel & Hospitality",
+    "title": "Car rental agreements and reservation confirmations",
+    "volume": "Large",
+    "retention": "Rental + 3-7 years (liability)",
+    "dataVerified": "Renter name, vehicle, pickup/return locations, dates, rate, insurance coverage",
+    "dataVisibleAfterVerification": "Rental status (active/completed/disputed). Link to rental company system (renter and company, requires authentication)",
+    "rationale": "Prevents altered rental agreements (changing insurance coverage, damage waiver). Domain binding verifies rental company. Liability documentation. Damage claim evidence. Expense claim verification. Multi-page: Rental agreements multi-page with terms."
+  }
+]

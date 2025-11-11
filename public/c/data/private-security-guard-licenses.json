@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Professional & Occupational Licenses",
+    "title": "Private security and armed guard licenses",
+    "volume": "Medium-Small",
+    "retention": "2-5 years (license term)",
+    "dataVerified": "Licensee name, DOB, license number, weapons qualification, issuing authority",
+    "dataVisibleAfterVerification": "License status (active/expired/revoked). Link to state licensing board system (employers and clients, requires authentication)",
+    "rationale": "Prevents fake security licenses. Domain binding verifies state licensing board. Employment eligibility verification. Prevents unauthorized security services. Client verification."
+  }
+]

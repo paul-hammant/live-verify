@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Professional & Occupational Licenses",
+    "title": "Towing and vehicle recovery permits",
+    "volume": "Medium-Small",
+    "retention": "1-3 years (permit term)",
+    "dataVerified": "Company name, owner, tow truck IDs, service area, issuing authority",
+    "dataVisibleAfterVerification": "Permit status (active/expired/revoked). Link to police/DOT system (law enforcement and consumers, requires authentication)",
+    "rationale": "Prevents fake tow permits. Domain binding verifies police/DOT. Predatory towing prevention. Police rotation list verification. Consumer protection from tow scams."
+  }
+]

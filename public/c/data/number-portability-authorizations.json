@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Telecommunications",
+    "title": "Number portability authorizations",
+    "volume": "Medium-Small",
+    "retention": "3-7 years (regulatory compliance)",
+    "dataVerified": "Customer name, phone number, previous/new carrier, authorization date",
+    "dataVisibleAfterVerification": "Portability status (authorized/completed). Link to carrier system (customer and regulators, requires authentication)",
+    "rationale": "Domain binding verifies carrier. Standard forms suitable for OCR. Prevents unauthorized number porting. Regulatory compliance. Fraud prevention."
+  }
+]

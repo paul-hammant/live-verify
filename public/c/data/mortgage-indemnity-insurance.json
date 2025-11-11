@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Insurance & Risk Management",
+    "title": "Mortgage indemnity insurance (lender's mortgage insurance)",
+    "volume": "Medium-Small",
+    "retention": "Mortgage term (15-30 years)",
+    "dataVerified": "Lender, borrower, property address, loan-to-value, coverage amount",
+    "dataVisibleAfterVerification": "Policy status (active/cancelled). Link to mortgage insurer system (lenders and authorized parties, requires authentication)",
+    "rationale": "Prevents fake mortgage indemnity insurance. Domain binding verifies mortgage insurer (Genworth, MGIC, Radian). High LTV loans (>80%). Lender protection from borrower default. Housing crisis losses ($50bn 2008-2012)."
+  }
+]

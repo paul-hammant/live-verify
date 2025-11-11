@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Real Estate & Property",
+    "title": "Pest inspection certificates",
+    "volume": "Small",
+    "retention": "3-7 years (warranty/liability)",
+    "dataVerified": "Inspector name, property owner/address, treatment details",
+    "dataVisibleAfterVerification": "Inspection status (clear/treated). Link to pest control company system (owner and buyers, requires authentication)",
+    "rationale": "Domain binding verifies pest control company. Certificate format suitable for OCR. Warranty verification. Liability records."
+  }
+]

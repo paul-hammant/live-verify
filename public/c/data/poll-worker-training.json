@@ -4,8 +4,8 @@
     "title": "Poll worker appointment and training completion",
     "volume": "Medium",
     "retention": "Election cycle + 2-4 years",
-    "personalDataVerified": "Worker name, training completion date, precinct assignment, certification number, election office jurisdiction",
-    "personalDataVisible": "Assignment status (if worker assigned to polling location). Link to election office system (election supervisors and poll site coordinators, requires authentication)",
+    "dataVerified": "Worker name, training completion date, precinct assignment, certification number, election office jurisdiction",
+    "dataVisibleAfterVerification": "Assignment status (if worker assigned to polling location). Link to election office system (election supervisors and poll site coordinators, requires authentication)",
     "rationale": "Onsite verification by election supervisors at polling locations. Deters poll worker impersonation on election day. Domain binding to county election offices ensures training certificates are legitimate. Critical for election security where poll worker credentials must be verified quickly before polls open."
   }
 ]

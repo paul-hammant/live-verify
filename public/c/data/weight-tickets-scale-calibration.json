@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Manufacturing & Supply Chain",
+    "title": "Weight tickets and scale calibration",
+    "volume": "Medium",
+    "retention": "Shipment + 3-7 years",
+    "dataVerified": "Scale ID, operator",
+    "dataVisibleAfterVerification": "Weight status (verified/certified). Link to scale operator system (enforcement and shippers, requires authentication)",
+    "rationale": "Roadside verification by enforcement. Prevents altered tickets. Domain binding verifies scale operator."
+  }
+]

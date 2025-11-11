@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Sports & Athletics",
+    "title": "Tournament brackets and standings",
+    "volume": "Small",
+    "retention": "5-20 years (records/history)",
+    "dataVerified": "Participant names, teams, rankings, tournament details",
+    "dataVisibleAfterVerification": "Tournament status (completed/verified). Link to tournament organizer system (public and participants, may require authentication)",
+    "rationale": "Domain binding verifies tournament organizer. Printed brackets suitable for OCR. Prevents result tampering. Permanent competition records."
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Food & Beverage Permits",
+    "title": "Catering permits and temporary food facility licenses",
+    "volume": "Medium",
+    "retention": "Event + 1-3 years",
+    "dataVerified": "Caterer name, event location, date, food service scope, health inspection",
+    "dataVisibleAfterVerification": "Permit status (issued/expired). Link to health department system (event organizers and public, requires authentication)",
+    "rationale": "Prevents fake catering permits. Domain binding verifies health department. Event-specific authorization. Prevents foodborne illness liability. Public health protection."
+  }
+]

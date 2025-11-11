@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Real Estate & Property",
+    "title": "Right-of-way documents",
+    "volume": "Tiny",
+    "retention": "Permanent (access rights)",
+    "dataVerified": "Property owner, beneficiary, property address, access rights",
+    "dataVisibleAfterVerification": "Right-of-way status (recorded/active). Link to county recorder system (owner and public, may require authentication)",
+    "rationale": "Domain binding verifies county recorder. Permanent access rights records. Legal document format suitable for OCR. Prevents access disputes."
+  }
+]

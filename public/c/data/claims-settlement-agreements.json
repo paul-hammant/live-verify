@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Insurance & Risk Management",
+    "title": "Claims settlement agreements and releases",
+    "volume": "Medium-Small",
+    "retention": "Settlement + 10-20 years",
+    "dataVerified": "Claimant name, insurer, settlement amount, release terms, attorney details",
+    "dataVisibleAfterVerification": "Settlement status (executed). Link to insurer/law firm system (authorized parties, requires authentication)",
+    "rationale": "Prevents altered settlement agreements (changing payment amounts post-signature). Domain binding verifies insurer/law firm. Legal contract. Prevents reopening settled claims. Audit trail for bad faith litigation."
+  }
+]

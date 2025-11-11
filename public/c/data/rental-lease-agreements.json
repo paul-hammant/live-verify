@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Real Estate & Property",
+    "title": "Rental agreements and lease contracts",
+    "volume": "Medium-Small",
+    "retention": "7-10 years post-termination",
+    "dataVerified": "Landlord name, tenant name, addresses, rent amount, terms",
+    "dataVisibleAfterVerification": "Lease status (active/terminated). Link to landlord/property manager system (parties only, requires authentication)",
+    "rationale": "Domain binding verifies landlord/property manager. Standard contracts suitable for OCR. Dispute resolution. Tenant protection."
+  }
+]

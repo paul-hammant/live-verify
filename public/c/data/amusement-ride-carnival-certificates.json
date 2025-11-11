@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Safety Inspection Certificates",
+    "title": "Amusement ride and carnival inspection certificates",
+    "volume": "Medium",
+    "retention": "Seasonal/annual (before operation)",
+    "dataVerified": "Ride name, owner, inspector name, inspection date, mechanical/safety test results",
+    "dataVisibleAfterVerification": "Inspection status (passed/failed). Link to state inspector system (public and enforcement, requires authentication)",
+    "rationale": "Prevents fake ride certificates. Domain binding verifies state inspector. Public safety critical. Prevents uninspected ride operation. ASTM F770 compliance. Criminal penalties for operation without inspection."
+  }
+]

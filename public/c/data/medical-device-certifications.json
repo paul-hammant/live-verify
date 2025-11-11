@@ -4,8 +4,8 @@
     "title": "Medical device certifications (FDA, CE marking, ISO 13485)",
     "volume": "Very Small",
     "retention": "10-30 years (regulatory requirement)",
-    "personalDataVerified": "Manufacturer name, facility location, certification body, certificate number, expiration date",
-    "personalDataVisible": "Recalled date (if recalled). Link to FDA press release (if recalled, public). Link to audit system (FDA inspectors and notified bodies only, requires login)",
+    "dataVerified": "Manufacturer name, facility location, certification body, certificate number, expiration date",
+    "dataVisibleAfterVerification": "Recalled date (if recalled). Link to FDA press release (if recalled, public). Link to audit system (FDA inspectors and notified bodies only, requires login)",
     "rationale": "Prevents MedPro-style fraud. Domain binding verifies legitimate certification body. High-stakes regulatory compliance. Medical device manufacturers don't need to carry physical certificates to customer sites while maintaining instant verifiability."
   }
 ]

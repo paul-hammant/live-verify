@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Personal Safety & Service Verification",
+    "title": "Personal trainer/fitness instructor verification",
+    "volume": "Medium",
+    "retention": "Training period + 1-3 years",
+    "dataVerified": "Trainer name, photo, certifications, background check, insurance, gym affiliation",
+    "dataVisibleAfterVerification": "Certification status (active/verified). Real-time verification shows trainer photo, active certifications (CPR/AED, personal training), background check date, liability insurance, gym affiliation. Link to fitness certification registry or gym/studio system. Verifier can display 'Register this training session' prompt",
+    "rationale": "Client (often woman) verifies personal trainer credentials before one-on-one session in private/semi-private setting. Domain binding verifies fitness certification registry (usreps.org, nasm.org, ace.org) or gym/studio (equinox.com/trainers, ymca.org). Prevents unlicensed/fake trainer fraud, personal safety risk during private sessions."
+  }
+]

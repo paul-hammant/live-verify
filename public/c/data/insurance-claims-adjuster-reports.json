@@ -4,8 +4,8 @@
     "title": "Insurance claims adjuster reports",
     "volume": "Small",
     "retention": "Claim term + 7-10 years",
-    "personalDataVerified": "Claimant name, adjuster name, adjuster license, damage assessment, claim amount, inspection date, photos",
-    "personalDataVisible": "Claim status (if claim resolved). Link to adjusting firm system (insurance carriers and SIU investigators, requires authentication)",
+    "dataVerified": "Claimant name, adjuster name, adjuster license, damage assessment, claim amount, inspection date, photos",
+    "dataVisibleAfterVerification": "Claim status (if claim resolved). Link to adjusting firm system (insurance carriers and SIU investigators, requires authentication)",
     "rationale": "Prevents forged adjuster reports enabling inflated claims. Domain binding verifies adjusting firm legitimacy. Tamper-evident damage assessment documentation. Fraud investigation by Special Investigations Unit. Audit trail for claim handling. Critical for claim disputes where adjuster findings determine settlement amounts."
   }
 ]

@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Insurance & Risk Management",
+    "title": "Aggregate deductible and retrospective rating documentation",
+    "volume": "Small",
+    "retention": "Policy term + 10 years",
+    "dataVerified": "Insured/ceding company, aggregate deductible, loss development, retrospective premium",
+    "dataVisibleAfterVerification": "Calculation status (finalized). Link to insurer/reinsurer system (authorized parties, requires authentication)",
+    "rationale": "Domain binding verifies insurer/reinsurer. Prevents fraudulent aggregate calculations. Multi-million dollar premium adjustments. Large commercial risk retrospective rating. Self-insured retention verification."
+  }
+]

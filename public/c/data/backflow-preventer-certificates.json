@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Safety Inspection Certificates",
+    "title": "Backflow preventer inspection certificates",
+    "volume": "Large",
+    "retention": "1 year (annual inspection)",
+    "dataVerified": "Property address, backflow device ID, inspector/company, test results, compliance",
+    "dataVisibleAfterVerification": "Test status (passed/failed). Link to certified tester system (water utilities and enforcement, requires authentication)",
+    "rationale": "Prevents fake backflow certificates. Domain binding verifies certified tester. Drinking water contamination prevention. EPA Safe Drinking Water Act compliance. Water utility requirement."
+  }
+]

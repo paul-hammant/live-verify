@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Government & Civic Documents",
+    "title": "Passports and visa documents",
+    "volume": "Medium-Small",
+    "retention": "10-20 years (security)",
+    "dataVerified": "Full name, DOB, nationality, photo, biometrics, travel history",
+    "dataVisibleAfterVerification": "Document status (valid/expired/revoked). Link to issuing country system (border control and authorized parties, requires authentication)",
+    "rationale": "Hotel clerks/police/border agents verify authenticity. Machine-readable zone + OCR-to-hash complement each other. Prevents fake passports. Uses SHA-512 to prevent brute-force enumeration."
+  }
+]

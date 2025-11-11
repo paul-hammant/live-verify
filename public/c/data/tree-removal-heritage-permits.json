@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Environmental & Natural Resource Permits",
+    "title": "Tree removal and heritage tree permits",
+    "volume": "Medium-Small",
+    "retention": "Permit + permanent (urban forestry)",
+    "dataVerified": "Property owner, address, tree species, diameter, removal justification, city",
+    "dataVisibleAfterVerification": "Permit status (issued/completed). Link to urban forestry/planning department system (enforcement and public, requires authentication)",
+    "rationale": "Prevents unauthorized tree removal. Domain binding verifies urban forestry/planning department. Tree preservation ordinance compliance. Prevents heritage tree destruction. Replacement tree requirements."
+  }
+]

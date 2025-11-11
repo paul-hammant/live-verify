@@ -4,8 +4,8 @@
     "title": "Stock certificates and share transfer documents",
     "volume": "Small",
     "retention": "Permanent (ownership records)",
-    "personalDataVerified": "Shareholder name, number of shares, certificate number, company name, issue date, transfer agent, CUSIP number",
-    "personalDataVisible": "Cancellation status (if certificate cancelled). Transfer date (if transferred). Link to transfer agent system (registered shareholders and company officials, requires authentication)",
+    "dataVerified": "Shareholder name, number of shares, certificate number, company name, issue date, transfer agent, CUSIP number",
+    "dataVisibleAfterVerification": "Cancellation status (if certificate cancelled). Transfer date (if transferred). Link to transfer agent system (registered shareholders and company officials, requires authentication)",
     "rationale": "Ornate certificate format. High-value assets. Prevents forgery. Domain binding verifies legitimate issuer and transfer agent. Critical for private company share transfers and estate settlements. Physical certificates can remain in safe deposit boxes while verification happens digitally."
   }
 ]

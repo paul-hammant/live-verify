@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Manufacturing & Supply Chain",
+    "title": "Dangerous goods declarations (IMO/ICAO short-form)",
+    "volume": "Small",
+    "retention": "Shipment + 5-10 years",
+    "dataVerified": "Shipper name, UN numbers, class",
+    "dataVisibleAfterVerification": "Declaration status (accepted/verified). Link to shipper system (port/airport and carriers, requires authentication)",
+    "rationale": "Port/airport safety checks. Tamper-evident declarations. Domain binding verifies shipper."
+  }
+]

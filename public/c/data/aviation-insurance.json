@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Insurance & Risk Management",
+    "title": "Aviation insurance policies and certificates",
+    "volume": "Small",
+    "retention": "Policy term + 10-20 years",
+    "dataVerified": "Aircraft owner/operator, aircraft N-number, hull value, liability limits, insurer",
+    "dataVisibleAfterVerification": "Policy status (active/cancelled). Link to insurer system (FAA and authorized parties, requires authentication)",
+    "rationale": "Prevents fake aviation insurance. Domain binding verifies insurer. FAA compliance. Very high hull values ($500K-$100M+). Airport landing rights verification. Extremely high liability limits ($100M+ typical for commercial aircraft)."
+  }
+]

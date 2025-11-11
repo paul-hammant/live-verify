@@ -4,8 +4,8 @@
     "title": "Life insurance claims and death benefit applications",
     "volume": "Small",
     "retention": "7-10 years post-claim",
-    "personalDataVerified": "Deceased name, beneficiary names, death certificate details, claim amount, policy details",
-    "personalDataVisible": "Claim status (pending/paid/denied). Link to insurer claims system (beneficiaries and executors, requires authentication)",
+    "dataVerified": "Deceased name, beneficiary names, death certificate details, claim amount, policy details",
+    "dataVisibleAfterVerification": "Claim status (pending/paid/denied). Link to insurer claims system (beneficiaries and executors, requires authentication)",
     "rationale": "Prevents fraudulent death claims and fake beneficiary claims. Domain binding verifies insurer and funeral home. High-value claims ($100K-$1M+ typical). Prevents beneficiary fraud where non-beneficiaries attempt to claim. Estate settlement verification. Critical for life insurance where death claim fraud includes faked deaths and fraudulent beneficiary documentation."
   }
 ]

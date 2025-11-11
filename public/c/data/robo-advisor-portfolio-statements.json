@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Banking & Financial Services",
+    "title": "Robo-advisor portfolio statements (Betterment, Wealthfront)",
+    "volume": "Small",
+    "retention": "7-10 years (regulatory)",
+    "dataVerified": "Account holder, portfolio value, holdings, performance, advisor",
+    "dataVisibleAfterVerification": "Account status (active/closed). Link to robo-advisor system (regulators and authorized parties, requires authentication)",
+    "rationale": "Prevents fake portfolio statements (Madoff scenario). Domain binding verifies robo-advisor. Tamper-evident account balance. Regulatory compliance (SEC RIA requirements). Tax reporting accuracy. Investor protection."
+  }
+]

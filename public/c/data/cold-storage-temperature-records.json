@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Logistics & Transportation",
+    "title": "Cold storage and temperature-controlled shipping records",
+    "volume": "Medium",
+    "retention": "Shipment + 7-10 years",
+    "dataVerified": "Shipper, carrier, consignee, temperature range, monitoring records",
+    "dataVisibleAfterVerification": "Temperature status (compliant/excursion). Link to cold chain operator system (parties and regulators, requires authentication)",
+    "rationale": "Prevents temperature excursion fraud (spoiled goods). Domain binding verifies cold chain operator. Food safety compliance (FDA, FSMA). Pharmaceutical GDP compliance. Liability documentation."
+  }
+]

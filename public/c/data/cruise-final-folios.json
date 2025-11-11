@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Travel & Hospitality",
+    "title": "Cruise final folios and onboard account statements",
+    "volume": "Large",
+    "retention": "Voyage + 3-7 years (expense)",
+    "dataVerified": "Passenger name, cabin, itemized onboard charges, drinks, excursions, tips, total",
+    "dataVisibleAfterVerification": "Folio status (settled/disputed). Link to cruise line system (passenger and accounting, requires authentication)",
+    "rationale": "Prevents altered cruise folios (onboard charge disputes). Domain binding verifies cruise line. Expense claim verification. Prevents charge dispute fraud. Multi-page: Cruise folios multi-page with itemized daily charges."
+  }
+]

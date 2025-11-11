@@ -4,8 +4,8 @@
     "title": "Work visas (H-1B, L-1, O-1, etc.) and I-94 records",
     "volume": "Medium",
     "retention": "Visa validity period",
-    "personalDataVerified": "Name, visa type, expiration date, employer, passport number",
-    "personalDataVisible": "Photo (when verified, matching the photo on the visa). Expiration date alteration detection. Revocation date (if revoked). Link to DHS systems (US government officials only, requires login)",
+    "dataVerified": "Name, visa type, expiration date, employer, passport number",
+    "dataVisibleAfterVerification": "Photo (when verified, matching the photo on the visa). Expiration date alteration detection. Revocation date (if revoked). Link to DHS systems (US government officials only, requires login)",
     "rationale": "I-9 compliance; prevents altered expiration dates; DHS domain binding. Foreign workers can verify status without carrying physical visa documents, reducing risk while traveling domestically."
   }
 ]

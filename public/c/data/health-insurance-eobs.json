@@ -4,8 +4,8 @@
     "title": "Health insurance Explanation of Benefits (EOB)",
     "volume": "Large",
     "retention": "7-10 years (tax/audit)",
-    "personalDataVerified": "Patient name, provider name, services rendered, charges, insurance payment, patient responsibility",
-    "personalDataVisible": "Link to insurer system (patients and providers, requires authentication)",
+    "dataVerified": "Patient name, provider name, services rendered, charges, insurance payment, patient responsibility",
+    "dataVisibleAfterVerification": "Link to insurer system (patients and providers, requires authentication)",
     "rationale": "Prevents fraudulent EOBs for FSA/HSA fraud and tax deduction fraud. Domain binding verifies insurer. Tax deduction verification for medical expenses. Prevents billing disputes through tamper-evident records. Multi-page EOBs benefit from per-page verification to prevent claim alteration. Critical for tax compliance where medical expense deductions require documentation."
   }
 ]

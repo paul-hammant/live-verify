@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Sports & Athletics",
+    "title": "Coaching certifications and qualifications",
+    "volume": "Very Small",
+    "retention": "5-10 years (certification validity)",
+    "dataVerified": "Coach name, certification level, sport, certifying body",
+    "dataVisibleAfterVerification": "Certification status (active/valid). Link to certifying body system (coach and employers, requires authentication)",
+    "rationale": "Domain binding verifies certifying body. Prevents fake coaching credentials. Certificate format suitable for OCR. Youth safety verification."
+  }
+]

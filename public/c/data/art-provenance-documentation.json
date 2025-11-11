@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Art & Collectibles",
+    "title": "Provenance documentation and ownership history",
+    "volume": "Very Small",
+    "retention": "Permanent (chain of title)",
+    "dataVerified": "Previous owners, dealers, auction houses, transfer dates",
+    "dataVisibleAfterVerification": "Provenance status (verified/complete). Link to auction house/gallery system (owner and art market, may require authentication)",
+    "rationale": "Chain of title for artwork. Prevents fabricated provenance. Domain binding verifies auction houses/galleries. Permanent ownership records. Critical for art market integrity."
+  }
+]

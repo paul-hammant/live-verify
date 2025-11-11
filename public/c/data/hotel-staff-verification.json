@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Personal Safety & Service Verification",
+    "title": "Hotel/vacation rental staff verification",
+    "volume": "Large",
+    "retention": "Stay + 1-3 years (incident records)",
+    "dataVerified": "Staff name, photo, role, property affiliation, employee ID",
+    "dataVisibleAfterVerification": "Employee status (verified/active). Real-time verification shows staff photo, role (housekeeping/maintenance/host), property affiliation confirmation. Link to hotel chain or vacation rental platform system. Verifier can display 'Log this service request' prompt",
+    "rationale": "Guest verifies room service staff, maintenance worker, or Airbnb host credentials before admitting to hotel room/rental. Domain binding verifies hotel chain (hilton.com/staff-verify, marriott.com) or vacation rental platform (airbnb.com/host-verify, vrbo.com). Prevents impersonation fraud (fake staff entering rooms). Critical safety for solo travelers, women traveling alone."
+  }
+]

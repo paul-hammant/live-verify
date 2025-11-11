@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Immigration & Visa Documents",
+    "title": "Visa extension and change of status approvals",
+    "volume": "Medium",
+    "retention": "Approval + 10 years",
+    "dataVerified": "Full name, passport number, current status, new status/extension, approval date, receipt number",
+    "dataVisibleAfterVerification": "Extension/change status (approved/pending/denied). Link to USCIS system (employers and applicant, requires authentication)",
+    "rationale": "Prevents fake extension/change approvals. Domain binding verifies USCIS (uscis.gov). Work authorization continuation. Stay compliance verification. I-539/I-129 approval documentation. Uses SHA-512 (government ID privacy)."
+  }
+]

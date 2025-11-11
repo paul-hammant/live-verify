@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Scientific & Research",
+    "title": "Clinical trial enrollment and consent",
+    "volume": "Very Small",
+    "retention": "25-30 years (FDA requirement)",
+    "dataVerified": "Participant name (coded), investigator, trial ID, consent details",
+    "dataVisibleAfterVerification": "Consent status (verified/active/withdrawn). Link to trial sponsor system (investigators and regulators, requires authentication)",
+    "rationale": "FDA regulatory compliance. Domain binding verifies trial sponsor. Prevents fabricated consent forms. Long retention requirement. Human subject protection. Uses SHA-512 (medical privacy)."
+  }
+]

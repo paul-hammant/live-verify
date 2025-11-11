@@ -4,8 +4,8 @@
     "title": "Green cards (I-551 permanent resident cards, USA)",
     "volume": "Medium",
     "retention": "10 years (renewal cycle)",
-    "personalDataVerified": "Name, Sex, A-number, DOB, date valid from-to",
-    "personalDataVisible": "Photo (when verified, matching the photo on the card). Revocation date (if revoked). Superseded date (if superseded). Link to USCIS systems (US government officials only, requires login)",
+    "dataVerified": "Name, Sex, A-number, DOB, date valid from-to",
+    "dataVisibleAfterVerification": "Photo (when verified, matching the photo on the card). Revocation date (if revoked). Superseded date (if superseded). Link to USCIS systems (US government officials only, requires login)",
     "rationale": "I-9 employment verification; prevents fake green cards; USCIS domain binding. Holders don't need to carry the physical card permanently, reducing theft risk and loss concerns while maintaining verification capability."
   }
 ]

@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Banking & Financial Services",
+    "title": "Dynamic discounting confirmations",
+    "volume": "Medium-Small",
+    "retention": "3-7 years (payment disputes)",
+    "dataVerified": "Supplier, buyer, invoice amount, discount rate, early payment date",
+    "dataVisibleAfterVerification": "Discount status (applied/paid). Link to buyer/platform system (parties and auditors, requires authentication)",
+    "rationale": "Tamper-evident discount terms. Domain binding verifies buyer/platform. Prevents payment disputes. Supply chain finance transparency. Supplier cash flow verification."
+  }
+]

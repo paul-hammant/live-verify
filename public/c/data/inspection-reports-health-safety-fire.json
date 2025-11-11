@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Government & Civic Documents",
+    "title": "Inspection reports (health, safety, fire)",
+    "volume": "Small",
+    "retention": "5-15 years (enforcement)",
+    "dataVerified": "Inspector name, facility owner, violations, corrective actions",
+    "dataVisibleAfterVerification": "Inspection status (passed/failed/pending). Link to inspector/agency system (facility owners and public, requires authentication)",
+    "rationale": "Domain binding verifies inspector/agency. Tamper-evident enforcement records. Report format suitable for OCR. Public safety."
+  }
+]

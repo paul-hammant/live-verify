@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Commercial Lines Insurance",
+    "title": "Directors & Officers (D&O) liability policies",
+    "volume": "Small",
+    "retention": "Policy term + 10-20 years (claims)",
+    "dataVerified": "Company name, directors/officers, coverage limits, exclusions, retroactive date",
+    "dataVisibleAfterVerification": "Policy status (active/cancelled). Link to insurer system (shareholders and authorized parties, requires authentication)",
+    "rationale": "Prevents fake D&O policies (securities fraud, shareholder disputes). Domain binding verifies insurer. Very long claims tail. High-value coverage ($10M-$100M+ typical). IPO/M&A verification."
+  }
+]

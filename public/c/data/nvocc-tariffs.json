@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Logistics & Transportation",
+    "title": "NVOCC (Non-Vessel Operating Common Carrier) tariffs",
+    "volume": "Small",
+    "retention": "Tariff validity + 7 years",
+    "dataVerified": "NVOCC, origin/destination, freight rates, service terms",
+    "dataVisibleAfterVerification": "Tariff status (filed/active). Link to NVOCC system (customers and FMC, requires authentication)",
+    "rationale": "FMC (Federal Maritime Commission) tariff filing requirement. Domain binding verifies NVOCC. Prevents unauthorized tariff changes. Rate dispute documentation. Service contract verification."
+  }
+]

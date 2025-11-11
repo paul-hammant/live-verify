@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Art & Collectibles",
+    "title": "Auction records and sale documents",
+    "volume": "Very Small",
+    "retention": "Permanent (price history)",
+    "dataVerified": "Buyer/seller names (may be anonymized), auction house, hammer price",
+    "dataVisibleAfterVerification": "Sale status (verified/completed). Link to auction house system (parties and art market, may require authentication)",
+    "rationale": "Domain binding verifies auction house (Christie's, Sotheby's, etc.). Prevents fake sale records. Formal documents suitable for OCR. Permanent price history."
+  }
+]

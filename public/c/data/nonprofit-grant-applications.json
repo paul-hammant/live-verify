@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Charitable & Non-Profit",
+    "title": "Grant applications and awards",
+    "volume": "Very Small",
+    "retention": "7-10 years (financial audit)",
+    "dataVerified": "Applicant organization, officers, grant amount, funder, project details",
+    "dataVisibleAfterVerification": "Grant status (awarded/active/closed). Link to funding organization system (grantee and auditors, requires authentication)",
+    "rationale": "Domain binding verifies funding organization. Formal documents suitable for OCR. Financial audit trail. Prevents fake grant awards."
+  }
+]

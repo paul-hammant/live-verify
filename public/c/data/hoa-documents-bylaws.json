@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Real Estate & Property",
+    "title": "HOA documents and bylaws",
+    "volume": "Tiny",
+    "retention": "Permanent (governance)",
+    "dataVerified": "HOA board members, property owners (if detailed), community name",
+    "dataVisibleAfterVerification": "Document status (current/amended). Link to HOA system (residents and board, requires authentication)",
+    "rationale": "Domain binding verifies HOA. Legal document format suitable for OCR. Permanent governance records. Covenant enforcement."
+  }
+]

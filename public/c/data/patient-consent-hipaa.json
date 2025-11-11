@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Healthcare & Medical Records",
+    "title": "Patient consent forms and HIPAA authorizations",
+    "volume": "Medium",
+    "retention": "7-10 years post-treatment",
+    "dataVerified": "Patient name, DOB, authorized parties, consent scope",
+    "dataVisibleAfterVerification": "Consent status (active/revoked). Link to healthcare provider system (authorized parties, requires authentication)",
+    "rationale": "Legal/medical consent. Tamper-evident. Human-readable terms critical."
+  }
+]

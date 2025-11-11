@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Personal Safety & Service Verification",
+    "title": "Home service provider verification (plumber/electrician)",
+    "volume": "Large",
+    "retention": "Service + 3-7 years (liability/tax)",
+    "dataVerified": "Tradesperson name, photo, license number, company, complaints history",
+    "dataVisibleAfterVerification": "License status (active/verified). Real-time verification shows tradesperson photo, license status, complaint history. Link to government trade licensing authority or established marketplace system. Verifier response can suggest programmatic redirects: 'Store this verified tradesperson information for your records' and 'Register this visit and work with insurance/warranty/tax authority'",
+    "rationale": "Woman alone at home verifies tradesperson credentials before letting them in. Domain binding verifies government trade licensing authority (e.g., competent-person-schemes.gov.uk) or established marketplace (checkatrade.com, trustmark.org.uk). Critical dual purpose: (1) Safety - prevents unlicensed/fake tradesperson fraud targeting vulnerable people at home. (2) Accountability/tax compliance - creates paper trail for insurance claims, warranty documentation, and discourages cash-in-hand tax evasion (tradesperson knows visit is documented). Protects homeowners and promotes legitimate trade practices."
+  }
+]

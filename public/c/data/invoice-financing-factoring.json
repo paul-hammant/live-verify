@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Banking & Financial Services",
+    "title": "Invoice financing/factoring confirmations",
+    "volume": "Small",
+    "retention": "Invoice term + 7-10 years",
+    "dataVerified": "Seller, buyer, invoice amount, advance rate, fees, factor",
+    "dataVisibleAfterVerification": "Financing status (active/paid). Link to factoring company system (parties and auditors, requires authentication)",
+    "rationale": "Prevents invoice fraud (double-financing same invoice). Domain binding verifies factoring company. Tamper-evident advance terms. Prevents duplicate invoice submissions. Supply chain finance integrity. Working capital verification."
+  }
+]

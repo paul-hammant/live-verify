@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Immigration & Visa Documents",
+    "title": "Sponsorship affidavits (I-864)",
+    "volume": "Medium",
+    "retention": "Until citizenship or 40 qualifying work quarters",
+    "dataVerified": "Sponsor name/signature, beneficiary name, income documentation, household size",
+    "dataVisibleAfterVerification": "Sponsorship status (active/terminated). Link to USCIS system (USCIS and benefit agencies, requires authentication)",
+    "rationale": "Prevents fake affidavits of support. Domain binding verifies sponsor/USCIS. Green card sponsorship requirement. Public charge prevention. Enforceable contract. Prevents sponsorship fraud. Uses SHA-512 (financial privacy)."
+  }
+]

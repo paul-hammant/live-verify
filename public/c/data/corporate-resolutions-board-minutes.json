@@ -4,8 +4,8 @@
     "title": "Corporate resolutions and board minutes",
     "volume": "Medium-Small",
     "retention": "7-10 years (corporate records)",
-    "personalDataVerified": "Corporation name, corporate officers, board resolution text, vote results, notary name, notary commission number, notary seal, resolution date",
-    "personalDataVisible": "Notary commission status (active/expired/revoked). Link to state notary database (banks and business partners, requires authentication)",
+    "dataVerified": "Corporation name, corporate officers, board resolution text, vote results, notary name, notary commission number, notary seal, resolution date",
+    "dataVisibleAfterVerification": "Notary commission status (active/expired/revoked). Link to state notary database (banks and business partners, requires authentication)",
     "rationale": "Prevents forged corporate resolutions for unauthorized actions. Domain binding verifies notary commission. Bank account opening requires notarized corporate resolutions. Real estate transactions need authenticated corporate authority. Corporate authority verification for major business decisions. Prevents unauthorized resolutions that could bind corporation to contracts. Critical for corporate governance where resolutions prove board authorization for significant actions."
   }
 ]

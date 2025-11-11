@@ -4,8 +4,8 @@
     "title": "SBOM attestation pages",
     "volume": "Small",
     "retention": "Release lifecycle + 3-7 years",
-    "personalDataVerified": "Project name, version number, release date, component list, dependency versions, attestation signature",
-    "personalDataVisible": "Vulnerability status (if critical CVEs found in components). Link to project repository or security system (security teams and compliance officers, requires authentication)",
+    "dataVerified": "Project name, version number, release date, component list, dependency versions, attestation signature",
+    "dataVisibleAfterVerification": "Vulnerability status (if critical CVEs found in components). Link to project repository or security system (security teams and compliance officers, requires authentication)",
     "rationale": "Release documentation remains human-readable with cryptographic authenticity. Software Bill of Materials verification for supply chain security. Domain binding to software vendor or repository. Critical for software compliance where SBOM attestations prove component provenance. Customers verify software composition without backend access."
   }
 ]

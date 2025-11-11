@@ -4,8 +4,8 @@
     "title": "Mortgage income verification (W-2, pay stubs)",
     "volume": "Medium-Small",
     "retention": "7-10 years (loan term + disputes)",
-    "personalDataVerified": "Borrower name, employer name, gross income, tax withholdings, YTD (year-to-date) earnings, pay period",
-    "personalDataVisible": "Link to employer/payroll provider system (lenders and verification services, requires authentication)",
+    "dataVerified": "Borrower name, employer name, gross income, tax withholdings, YTD (year-to-date) earnings, pay period",
+    "dataVisibleAfterVerification": "Link to employer/payroll provider system (lenders and verification services, requires authentication)",
     "rationale": "Prevents fake pay stubs which are a massive mortgage fraud vector easily forged via Photoshop. Domain binding verifies employer or payroll provider. Tamper-evident income documentation for underwriting. Prevents stated income fraud. DTI (debt-to-income) ratio verification. Critical for mortgage lending where income verification prevents loan defaults from inflated income claims."
   }
 ]

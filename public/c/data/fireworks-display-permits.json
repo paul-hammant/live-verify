@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Event & Temporary Use Permits",
+    "title": "Fireworks display permits",
+    "volume": "Small",
+    "retention": "Event + 7 years (liability)",
+    "dataVerified": "Pyrotechnician name, license, event location, safety plan, insurance, fire dept",
+    "dataVisibleAfterVerification": "Permit status (issued/completed). Link to fire marshal system (enforcement and public, requires authentication)",
+    "rationale": "Prevents fake fireworks permits. Domain binding verifies fire marshal. Licensed pyrotechnician verification. High liability risk. Prevents illegal fireworks displays. Public safety critical."
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Energy & Utilities",
+    "title": "Renewable energy certificates (RECs)",
+    "volume": "Small",
+    "retention": "3-7 years (compliance/trading)",
+    "dataVerified": "Generator name, REC purchaser, MWh details, certification body",
+    "dataVisibleAfterVerification": "REC status (valid/retired). Link to certification body system (purchaser and regulators, requires authentication)",
+    "rationale": "Domain binding verifies certification body. Prevents double-counting RECs. Certificate format suitable for OCR. Regulatory compliance and trading."
+  }
+]

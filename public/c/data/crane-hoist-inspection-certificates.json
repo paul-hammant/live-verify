@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Safety Inspection Certificates",
+    "title": "Crane and hoist inspection certificates",
+    "volume": "Medium-Small",
+    "retention": "1 year (annual inspection)",
+    "dataVerified": "Equipment ID, crane capacity, inspector/company, inspection date, load test results",
+    "dataVisibleAfterVerification": "Inspection status (passed/failed). Link to certified inspector system (contractors and OSHA, requires authentication)",
+    "rationale": "Prevents fake crane certificates. Domain binding verifies certified inspector. OSHA 1926.1400 compliance. Prevents crane collapse/death. Construction site posting requirement. Criminal penalties for uninspected operation."
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Immigration & Visa Documents",
+    "title": "Biometric appointment confirmations",
+    "volume": "Medium",
+    "retention": "Appointment + 5 years",
+    "dataVerified": "Full name, case number, appointment date/time/location, ASC location",
+    "dataVisibleAfterVerification": "Biometric status (scheduled/completed). Link to USCIS system (applicant only, requires authentication)",
+    "rationale": "Prevents fake biometric notices. Domain binding verifies USCIS. Application processing requirement. ASC attendance proof. Case timeline documentation. Prevents appointment fraud."
+  }
+]

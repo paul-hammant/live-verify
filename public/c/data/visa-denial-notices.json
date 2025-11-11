@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Immigration & Visa Documents",
+    "title": "Visa denial notices",
+    "volume": "Small",
+    "retention": "Denial + 10 years (reapplication)",
+    "dataVerified": "Full name, case number, denial reason/INA section, denial date, consular officer",
+    "dataVisibleAfterVerification": "Denial status (confirmed). Link to embassy/USCIS system (applicant and immigration attorneys, requires authentication)",
+    "rationale": "Prevents fake denial notices. Domain binding verifies embassy/USCIS. Appeal/waiver documentation. 214(b)/221(g) verification. Reapplication planning. Prevents denial fraud. Uses SHA-512 (privacy)."
+  }
+]

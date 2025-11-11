@@ -4,8 +4,8 @@
     "title": "Continuing education credits (CME, CLE, CPE)",
     "volume": "Small",
     "retention": "3-7 years (renewal cycles)",
-    "personalDataVerified": "Professional name, license number, course title, provider name, credit hours, completion date, certificate number",
-    "personalDataVisible": "Link to provider verification system (licensing boards and employers, requires authentication for full details)",
+    "dataVerified": "Professional name, license number, course title, provider name, credit hours, completion date, certificate number",
+    "dataVisibleAfterVerification": "Link to provider verification system (licensing boards and employers, requires authentication for full details)",
     "rationale": "Certificate format. Professional appearance. Verification for license renewal. Prevents fake CE credits for medical, legal, and accounting professionals. Domain binding verifies legitimate education providers. Professionals can verify credits without requesting duplicate certificates."
   }
 ]

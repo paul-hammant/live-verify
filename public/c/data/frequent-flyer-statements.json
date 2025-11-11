@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Travel & Hospitality",
+    "title": "Frequent flyer statements and mileage balance confirmations",
+    "volume": "Medium",
+    "retention": "Statement period + 3-7 years",
+    "dataVerified": "Member name, account number, mileage balance, tier status, activity history",
+    "dataVisibleAfterVerification": "Account status (active/current balance). Link to airline loyalty system (member only, requires authentication)",
+    "rationale": "Prevents fake frequent flyer statements (selling miles fraud). Domain binding verifies airline/loyalty program. Account balance verification. Prevents mileage theft claims. Tax reporting for business mileage."
+  }
+]

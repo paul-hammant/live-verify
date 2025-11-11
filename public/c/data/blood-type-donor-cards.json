@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Healthcare & Medical Records",
+    "title": "Blood type and donor cards",
+    "volume": "Medium-Small",
+    "retention": "Lifetime (transfusion safety)",
+    "dataVerified": "Donor/patient name, DOB, blood type, screening results",
+    "dataVisibleAfterVerification": "Blood type status (verified). Link to blood bank/healthcare system (emergency responders and healthcare providers, requires authentication)",
+    "rationale": "Wallet card format. Emergency medical use. Prevents fake blood type cards."
+  }
+]

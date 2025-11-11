@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Travel & Hospitality",
+    "title": "Resort fees and mandatory hotel charge disclosures",
+    "volume": "Large",
+    "retention": "Stay + 3-7 years",
+    "dataVerified": "Guest name, hotel, resort fee amount, disclosure date, itemized services",
+    "dataVisibleAfterVerification": "Disclosure status (verified). Link to hotel system (guest and regulators, requires authentication)",
+    "rationale": "Prevents undisclosed resort fees (consumer protection). Domain binding verifies hotel. FTC disclosure requirement compliance. Prevents resort fee fraud. Charge dispute documentation."
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Travel & Hospitality",
+    "title": "Car rental final receipts and fuel charges",
+    "volume": "Large",
+    "retention": "Rental + 3-7 years (expense/audit)",
+    "dataVerified": "Renter name, vehicle, rental charges, fuel charges, mileage, total, taxes",
+    "dataVisibleAfterVerification": "Receipt status (final/disputed). Link to rental company system (renter and accounting, requires authentication)",
+    "rationale": "Prevents altered rental receipts (inflated fuel charges, mileage fees). Domain binding verifies rental company. Expense claim verification. Prevents fuel charge fraud. Tax documentation."
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Travel & Hospitality",
+    "title": "Travel insurance policies and coverage confirmations",
+    "volume": "Medium",
+    "retention": "Trip + 5-10 years (claims)",
+    "dataVerified": "Insured traveler names, trip details, coverage amounts, policy number, insurer",
+    "dataVisibleAfterVerification": "Policy status (active/expired/claimed). Link to insurer system (policyholder only, requires authentication)",
+    "rationale": "Prevents fake travel insurance. Domain binding verifies insurer. Coverage verification for trip cancellation/interruption/medical. Claim documentation. Multi-page: Travel insurance policies multi-page with terms."
+  }
+]

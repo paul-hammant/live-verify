@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Banking & Financial Services",
+    "title": "Cross-border payment receipts (Wise, Remitly, Xoom)",
+    "volume": "Medium",
+    "retention": "5-7 years (compliance/disputes)",
+    "dataVerified": "Sender, recipient, amount, fees, exchange rate, transfer ID",
+    "dataVisibleAfterVerification": "Transfer status (completed). Link to transfer service system (parties and regulators, requires authentication)",
+    "rationale": "Prevents altered cross-border payment receipts. Domain binding verifies transfer service. Tamper-evident fee/exchange rate disclosure. Consumer protection. Regulatory compliance (EU PSD2, US state money transmitter laws)."
+  }
+]

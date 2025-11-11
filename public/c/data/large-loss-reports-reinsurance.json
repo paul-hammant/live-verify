@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Insurance & Risk Management",
+    "title": "Large loss reports (to reinsurers)",
+    "volume": "Small",
+    "retention": "Claim lifetime + 10 years",
+    "dataVerified": "Insurer, reinsurer, claim details, reserves, loss development, catastrophe info",
+    "dataVisibleAfterVerification": "Report status (submitted). Link to ceding company system (reinsurers and authorized parties, requires authentication)",
+    "rationale": "Prevents fabricated large loss reports. Domain binding verifies ceding company. Multi-million dollar claim notifications. Reinsurer verification. Treaty compliance. Prevents late reporting fraud. Multi-page: Large loss reports are detailed multi-page documents."
+  }
+]

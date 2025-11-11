@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Real Estate & Property",
+    "title": "Flood elevation certificates (FEMA)",
+    "volume": "Very Small",
+    "retention": "Permanent (flood insurance)",
+    "dataVerified": "Property owner, address, surveyor, elevation data, FEMA zone",
+    "dataVisibleAfterVerification": "Certificate status (valid/current). Link to licensed surveyor system (owner and insurance, requires authentication)",
+    "rationale": "Prevents fraudulent elevation certificates. Domain binding verifies licensed surveyor. FEMA forms suitable for OCR. Permanent flood risk records. Required for flood insurance. Prevents insurance fraud."
+  }
+]

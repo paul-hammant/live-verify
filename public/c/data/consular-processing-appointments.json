@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Immigration & Visa Documents",
+    "title": "Consular processing appointments",
+    "volume": "Medium",
+    "retention": "Appointment + 5 years",
+    "dataVerified": "Full name, case number, NVC case number, appointment date/time/location, embassy/consulate",
+    "dataVisibleAfterVerification": "Appointment status (scheduled/completed/administrative processing). Link to NVC/embassy system (applicant only, requires authentication)",
+    "rationale": "Prevents fake consular appointments. Domain binding verifies embassy/NVC. Immigrant visa interview proof. Case status verification. DS-260 processing documentation. Prevents appointment fraud."
+  }
+]

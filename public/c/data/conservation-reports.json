@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Art & Collectibles",
+    "title": "Conservation reports and restoration history",
+    "volume": "Very Small",
+    "retention": "Permanent (artwork care)",
+    "dataVerified": "Conservator name, owner, treatment details, facility",
+    "dataVisibleAfterVerification": "Conservation status (completed/documented). Link to conservator system (owner and art market, may require authentication)",
+    "rationale": "Domain binding verifies conservator credentials. Tamper-evident treatment history. Technical reports suitable for OCR. Permanent artwork care records."
+  }
+]

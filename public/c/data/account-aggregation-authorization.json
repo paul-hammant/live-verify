@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Banking & Financial Services",
+    "title": "Account aggregation authorization certificates",
+    "volume": "Medium",
+    "retention": "1-3 years (service duration)",
+    "dataVerified": "Customer name, aggregated accounts, third-party service, permissions",
+    "dataVisibleAfterVerification": "Authorization status (active/revoked). Link to aggregator system (banks and authorized parties, requires authentication)",
+    "rationale": "Prevents unauthorized account aggregation. Domain binding verifies aggregator (Plaid, Yodlee, Finicity). Tamper-evident authorization scope. API access audit trail. Consumer protection."
+  }
+]

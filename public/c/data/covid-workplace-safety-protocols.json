@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Mandatory Workplace Postings",
+    "title": "COVID-19 workplace safety protocols and vaccination",
+    "volume": "Large",
+    "retention": "Policy period + 3-5 years",
+    "dataVerified": "Employer safety protocols, vaccination policy, testing requirements",
+    "dataVisibleAfterVerification": "Policy version (current). Link to employer/health department system (employees and enforcement, requires authentication)",
+    "rationale": "Prevents fake COVID safety postings. Domain binding verifies employer/health department. OSHA ETS compliance (100+ employees). Employee notification. Workplace outbreak prevention."
+  }
+]

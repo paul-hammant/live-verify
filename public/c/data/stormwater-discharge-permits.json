@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Environmental & Natural Resource Permits",
+    "title": "Stormwater discharge permits (NPDES)",
+    "volume": "Small",
+    "retention": "5 years (permit term)",
+    "dataVerified": "Permit holder, facility, discharge points, monitoring requirements, EPA/state",
+    "dataVisibleAfterVerification": "Permit status (active/expired/revoked). Link to EPA/state water quality agency system (enforcement and public, requires authentication)",
+    "rationale": "Prevents fake discharge permits. Domain binding verifies EPA/state water quality agency. Clean Water Act compliance. Prevents water pollution violations. High fines ($25K-$50K per day violations)."
+  }
+]

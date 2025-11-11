@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Safety Inspection Certificates",
+    "title": "Fire alarm and sprinkler system inspection certificates",
+    "volume": "Large",
+    "retention": "1 year (annual inspection)",
+    "dataVerified": "Building address, system type, inspector/company, inspection date, test results",
+    "dataVisibleAfterVerification": "Inspection status (passed/failed). Link to fire protection company system (fire marshal and enforcement, requires authentication)",
+    "rationale": "Prevents fake fire system certificates. Domain binding verifies fire protection company. NFPA 25/72 compliance. Fire marshal verification. Building occupancy requirement. Prevents life safety fraud."
+  }
+]

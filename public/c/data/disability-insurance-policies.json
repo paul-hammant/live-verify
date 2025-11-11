@@ -4,8 +4,8 @@
     "title": "Disability insurance policies (individual)",
     "volume": "Small",
     "retention": "Policy lifetime + 10 years",
-    "personalDataVerified": "Insured name, occupation, benefit amount, elimination period, benefit period, premium",
-    "personalDataVisible": "Policy status (active/lapsed). Link to insurer system (policyholders and claims, requires authentication)",
+    "dataVerified": "Insured name, occupation, benefit amount, elimination period, benefit period, premium",
+    "dataVisibleAfterVerification": "Policy status (active/lapsed). Link to insurer system (policyholders and claims, requires authentication)",
     "rationale": "Prevents forged disability policies in claims fraud. Domain binding verifies insurer. Long policy lifetime for individual disability coverage. High-value claims ($50K-$500K+ total). Prevents policy fraud where claimants misrepresent coverage terms. Critical for income protection where policy authenticity determines benefit eligibility."
   }
 ]

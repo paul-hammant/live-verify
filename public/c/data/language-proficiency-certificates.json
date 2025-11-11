@@ -4,8 +4,8 @@
     "title": "Language proficiency certificates (TOEFL, IELTS)",
     "volume": "Very Small",
     "retention": "2-5 years (test validity)",
-    "personalDataVerified": "Test taker name, test date, test center, overall score, section scores (reading, writing, listening, speaking), test type",
-    "personalDataVisible": "Test validity status (valid/expired). Link to testing organization system (university admissions and immigration officials, requires authentication)",
+    "dataVerified": "Test taker name, test date, test center, overall score, section scores (reading, writing, listening, speaking), test type",
+    "dataVisibleAfterVerification": "Test validity status (valid/expired). Link to testing organization system (university admissions and immigration officials, requires authentication)",
     "rationale": "University admissions verification for international students. Standardized certificate format from testing organizations (ETS, IDP, British Council). Privacy-preserving verification without exposing full test details. Domain binding to official testing organizations prevents fake certificates. Critical for immigration and university admissions where language proficiency must be proven."
   }
 ]

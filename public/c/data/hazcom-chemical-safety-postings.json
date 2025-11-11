@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Mandatory Workplace Postings",
+    "title": "Hazard Communication (HazCom/GHS) and chemical safety",
+    "volume": "Medium",
+    "retention": "Current SDS version",
+    "dataVerified": "Workplace chemical inventory, safety data sheets, emergency contacts",
+    "dataVisibleAfterVerification": "SDS status (current/updated). Link to chemical manufacturer system (employees and OSHA, requires authentication)",
+    "rationale": "Prevents fake safety data sheets. Domain binding verifies chemical manufacturer. OSHA HazCom Standard compliance. Employee right-to-know. Prevents chemical exposure deaths/injuries."
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Insurance & Risk Management",
+    "title": "Jewelers block insurance (stock, transit, exhibitions)",
+    "volume": "Small",
+    "retention": "Policy term + 10 years",
+    "dataVerified": "Jeweler/owner, inventory value, transit details, vault/safe requirements",
+    "dataVisibleAfterVerification": "Policy status (active/cancelled). Link to insurer system (authorized parties, requires authentication)",
+    "rationale": "Prevents fake jewelers block insurance. Domain binding verifies insurer. High inventory values ($10M-$500M for major jewelers). Security requirements verification. Trade show exhibition coverage. Consignment insurance."
+  }
+]

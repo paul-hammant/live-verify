@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Environmental & Natural Resource Permits",
+    "title": "Hazardous waste generator permits",
+    "volume": "Small",
+    "retention": "Permit term + 30 years (RCRA)",
+    "dataVerified": "Generator name, EPA ID number, waste types, quantities, disposal, EPA/state",
+    "dataVisibleAfterVerification": "Permit status (active/expired/revoked). Link to EPA/state hazmat agency system (enforcement and authorized parties, requires authentication)",
+    "rationale": "Prevents fake hazmat permits. Domain binding verifies EPA/state hazmat agency. RCRA compliance. Prevents illegal dumping. Criminal prosecution for violations. Long retention for liability."
+  }
+]

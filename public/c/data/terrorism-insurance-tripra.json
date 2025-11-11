@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Insurance & Risk Management",
+    "title": "Terrorism insurance and TRIPRA coverage",
+    "volume": "Small",
+    "retention": "Policy term + 10 years",
+    "dataVerified": "Insured property, location, terrorism coverage limit, TRIPRA certification",
+    "dataVisibleAfterVerification": "Policy status (active/cancelled). Link to insurer system (lenders and authorized parties, requires authentication)",
+    "rationale": "Prevents fake terrorism insurance. Domain binding verifies insurer. Terrorism Risk Insurance Program Reauthorization Act (TRIPRA) compliance. High-value commercial properties ($100M+ typical). Lender requirements for major properties."
+  }
+]

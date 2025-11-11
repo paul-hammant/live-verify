@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Retail & Consumer Protection",
+    "title": "Raffle tickets and contest entries",
+    "volume": "Medium",
+    "retention": "3-7 years (legal/tax compliance)",
+    "dataVerified": "Entrant name, contact info, entry details",
+    "dataVisibleAfterVerification": "Entry status (valid/winner). Link to contest operator system (public or entrant, may require authentication)",
+    "rationale": "Prevents fake winning tickets, duplicate entries. Domain binding verifies legitimate contest operator. Tickets need human readability. Tamper-evident for prize claims."
+  }
+]

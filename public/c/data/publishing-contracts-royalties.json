@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Media & Publishing",
+    "title": "Publishing contracts and royalty statements",
+    "volume": "Very Small",
+    "retention": "7-20 years (contract term + disputes)",
+    "dataVerified": "Author/artist name, publisher, payment amounts, contract terms",
+    "dataVisibleAfterVerification": "Contract status (active/fulfilled). Link to publisher system (author and auditors, requires authentication)",
+    "rationale": "Domain binding verifies publisher. Contracts suitable for OCR. Dispute resolution. Royalty audit trail. Tamper-evident payment records."
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Insurance & Risk Management",
+    "title": "Claims notifications to reinsurers (large loss notices)",
+    "volume": "Small",
+    "retention": "Claim lifetime + 10 years",
+    "dataVerified": "Ceding company, reinsurer, claim details, estimated ultimate loss, treaty reference",
+    "dataVisibleAfterVerification": "Notification status (submitted/acknowledged). Link to ceding company system (reinsurers and auditors, requires authentication)",
+    "rationale": "Prevents late claims notifications (treaty violations). Domain binding verifies ceding company. Time-sensitive reporting requirements (30-90 days typical). Multi-million dollar claim notifications. Reinsurer recovery verification."
+  }
+]

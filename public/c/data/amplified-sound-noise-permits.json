@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Event & Temporary Use Permits",
+    "title": "Amplified sound and noise variance permits",
+    "volume": "Medium",
+    "retention": "Permit period + 1-3 years",
+    "dataVerified": "Permit holder, location, hours, sound levels, event type",
+    "dataVisibleAfterVerification": "Permit status (active/expired). Link to city noise control system (enforcement and public, requires authentication)",
+    "rationale": "Domain binding verifies city noise control. Noise ordinance variance verification. Prevents noise violation fines. Event compliance monitoring."
+  }
+]

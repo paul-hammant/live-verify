@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Logistics & Transportation",
+    "title": "Commercial invoices for customs clearance",
+    "volume": "Large",
+    "retention": "7-10 years (customs audit)",
+    "dataVerified": "Exporter, importer, consignee, goods description, HS codes, declared value",
+    "dataVisibleAfterVerification": "Invoice status (cleared/audited). Link to exporter system (importer and customs, requires authentication)",
+    "rationale": "Prevents customs fraud (undervalued goods). Domain binding verifies exporter. Customs audit trail. Prevents tariff evasion. Anti-dumping duty compliance. Multi-page: Commercial invoices often multi-page - per-page verification prevents altering item values."
+  }
+]

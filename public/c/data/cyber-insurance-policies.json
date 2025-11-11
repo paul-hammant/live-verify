@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Commercial Lines Insurance",
+    "title": "Cyber insurance policies and breach response documentation",
+    "volume": "Small",
+    "retention": "Policy term + 10 years (claims)",
+    "dataVerified": "Insured business, coverage limits, breach response costs, forensic investigation",
+    "dataVisibleAfterVerification": "Policy status (active/cancelled). Link to insurer system (authorized parties, requires authentication)",
+    "rationale": "Prevents fake cyber insurance (post-breach fraud). Domain binding verifies insurer. High-value claims ($500K-$10M+ typical). Breach notification requirements. Forensic investigation verification. Multi-page: Forensic reports multi-page."
+  }
+]

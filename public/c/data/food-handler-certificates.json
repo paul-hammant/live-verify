@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Food & Beverage Permits",
+    "title": "Food handler certificates and food safety manager cards",
+    "volume": "Very Large",
+    "retention": "3-5 years (certification validity)",
+    "dataVerified": "Certificate holder name, DOB, certification number, issuing authority",
+    "dataVisibleAfterVerification": "Certification status (active/expired). Link to certifying body system (employers and enforcement, requires authentication)",
+    "rationale": "Prevents fake food handler certificates. Domain binding verifies certifying body (ServSafe, NRFSP). Employment eligibility (required for food service). Prevents public health violations. Employer verification."
+  }
+]

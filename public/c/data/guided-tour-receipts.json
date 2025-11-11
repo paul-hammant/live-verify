@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Travel & Hospitality",
+    "title": "Guided tour receipts and activity booking confirmations",
+    "volume": "Large",
+    "retention": "Tour + 1-3 years",
+    "dataVerified": "Participant name, tour/activity, date, operator, price, meeting point",
+    "dataVisibleAfterVerification": "Tour status (confirmed/completed/cancelled). Link to tour operator system (participant only, requires authentication)",
+    "rationale": "Domain binding verifies tour operator. Expense claim verification. Cancellation refund documentation. Liability waiver verification."
+  }
+]

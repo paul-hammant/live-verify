@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Banking & Financial Services",
+    "title": "Open Banking consent forms (PSD2, FDX, CDR)",
+    "volume": "Medium",
+    "retention": "1-2 years (consent validity)",
+    "dataVerified": "Customer name, account access scope, third-party app, expiration",
+    "dataVisibleAfterVerification": "Consent status (active/revoked). Link to bank and third-party systems (regulators and parties, requires authentication)",
+    "rationale": "Tamper-evident consent records. Domain binding verifies bank + third-party. Regulatory compliance (EU PSD2, UK CMA Order, AU CDR). Prevents unauthorized account access. GDPR/privacy compliance. Consent revocation audit trail."
+  }
+]

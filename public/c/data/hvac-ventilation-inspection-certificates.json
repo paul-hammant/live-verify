@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Safety Inspection Certificates",
+    "title": "HVAC and ventilation inspection certificates",
+    "volume": "Medium",
+    "retention": "1-3 years (inspection cycle)",
+    "dataVerified": "Building address, HVAC system details, inspector, air quality test results",
+    "dataVisibleAfterVerification": "Inspection status (passed/conditional). Link to inspector system (building owners and enforcement, requires authentication)",
+    "rationale": "Prevents fake HVAC certificates. Domain binding verifies inspector. Indoor air quality compliance. ASHRAE standards. COVID-19 ventilation verification. Energy code compliance."
+  }
+]

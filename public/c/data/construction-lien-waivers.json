@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Real Estate & Property",
+    "title": "Construction lien waivers (conditional/unconditional)",
+    "volume": "Small",
+    "retention": "7-10 years (payment verification)",
+    "dataVerified": "Contractor name, property owner, property address, payment amount, project",
+    "dataVisibleAfterVerification": "Waiver status (executed/verified). Link to contractor/general contractor system (owner and lenders, requires authentication)",
+    "rationale": "Prevents fraudulent lien waivers. Domain binding verifies contractor/general contractor. Protects property owners from mechanics liens. Prevents payment fraud. Critical for construction projects."
+  }
+]

@@ -4,8 +4,8 @@
     "title": "Insurance policy documents",
     "volume": "Medium-Small",
     "retention": "Policy term + 7-10 years",
-    "personalDataVerified": "Policyholder name, policy number, coverage amounts, coverage terms, insurer name, effective dates, premium amount",
-    "personalDataVisible": "Policy status (active/cancelled/lapsed). Link to insurer policy system (policyholders and third parties, requires authentication)",
+    "dataVerified": "Policyholder name, policy number, coverage amounts, coverage terms, insurer name, effective dates, premium amount",
+    "dataVisibleAfterVerification": "Policy status (active/cancelled/lapsed). Link to insurer policy system (policyholders and third parties, requires authentication)",
     "rationale": "Prevents fake insurance policies used in mortgage fraud and contractor fraud. Domain binding verifies insurer legitimacy. Tamper-evident coverage terms prevent policy alteration. Certificate of insurance verification for third parties. Prevents coverage inflation in loan applications. Critical for lenders and contractors who rely on insurance verification."
   }
 ]

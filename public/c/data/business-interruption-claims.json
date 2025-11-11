@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Commercial Lines Insurance",
+    "title": "Business interruption insurance claims documentation",
+    "volume": "Small",
+    "retention": "Claim term + 10 years",
+    "dataVerified": "Business name, interruption period, lost revenue, extra expenses, adjuster report",
+    "dataVisibleAfterVerification": "Claim status (open/closed). Link to insurer system (authorized parties, requires authentication)",
+    "rationale": "Prevents fraudulent business interruption claims (common post-disaster fraud). Domain binding verifies adjuster/forensic accountant. High-value claims ($100K-$10M+). COVID-19 claim disputes. Multi-page: Forensic accounting reports multi-page."
+  }
+]

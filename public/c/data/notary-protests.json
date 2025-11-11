@@ -4,8 +4,8 @@
     "title": "Protests (negotiable instruments - checks, promissory notes)",
     "volume": "Small",
     "retention": "7-10 years (commercial law)",
-    "personalDataVerified": "Instrument details (check/note number), payee name, protest reason (dishonored/non-payment), notary certification, notary name, notary commission, protest date",
-    "personalDataVisible": "Notary commission status (active/expired/revoked). Link to state notary database (banks and attorneys, requires authentication)",
+    "dataVerified": "Instrument details (check/note number), payee name, protest reason (dishonored/non-payment), notary certification, notary name, notary commission, protest date",
+    "dataVisibleAfterVerification": "Notary commission status (active/expired/revoked). Link to state notary database (banks and attorneys, requires authentication)",
     "rationale": "Prevents forged protests on dishonored negotiable instruments. Domain binding verifies notary commission. UCC Article 3 compliance for commercial law. Dishonored check documentation for collection proceedings. Commercial liability establishment. Prevents payment fraud through tamper-evident protest certificates. Critical for commercial transactions where protests establish legal notice of dishonor."
   }
 ]

@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Immigration & Visa Documents",
+    "title": "Border crossing receipts (I-94, entry/exit records)",
+    "volume": "Large",
+    "retention": "Travel + 5-10 years (immigration)",
+    "dataVerified": "Full name, passport number, entry/exit dates, port of entry, admission class",
+    "dataVisibleAfterVerification": "Entry/exit status (verified). Link to CBP/immigration authority system (immigration and employers, requires authentication)",
+    "rationale": "Prevents fake I-94 records. Domain binding verifies CBP/immigration authority. Overstay prevention. Visa compliance verification. Employment eligibility documentation. International student status verification."
+  }
+]

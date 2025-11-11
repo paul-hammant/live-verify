@@ -4,8 +4,8 @@
     "title": "Oaths and affirmations",
     "volume": "Large",
     "retention": "7-20 years (legal validity)",
-    "personalDataVerified": "Affiant name, oath text, notary name, notary commission number, oath administration date, notary seal, purpose of oath",
-    "personalDataVisible": "Notary commission status (active/expired/revoked). Link to state notary database (government agencies and courts, requires authentication)",
+    "dataVerified": "Affiant name, oath text, notary name, notary commission number, oath administration date, notary seal, purpose of oath",
+    "dataVisibleAfterVerification": "Notary commission status (active/expired/revoked). Link to state notary database (government agencies and courts, requires authentication)",
     "rationale": "Prevents forged oaths for government applications and court proceedings. Domain binding verifies notary commission. Court testimony requires authenticated oaths. Government applications (security clearances) require sworn statements. Security clearance affidavits must be verifiably notarized. Witness oaths in legal proceedings. Prevents fraud in sworn government documents."
   }
 ]

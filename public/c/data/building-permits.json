@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Construction & Property Permits",
+    "title": "Building permits (residential, commercial, industrial)",
+    "volume": "Medium",
+    "retention": "Permanent (building records)",
+    "dataVerified": "Permit holder, contractor, property address, construction details, approved plans",
+    "dataVisibleAfterVerification": "Permit status (issued/expired/revoked). Link to building department system (contractors and public, requires authentication)",
+    "rationale": "Prevents fake building permits. Domain binding verifies building department. Construction site posting requirement. Code enforcement verification. Permanent building records. Prevents unpermitted construction fraud."
+  }
+]

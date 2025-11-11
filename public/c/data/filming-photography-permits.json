@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Event & Temporary Use Permits",
+    "title": "Filming and photography permits (public property)",
+    "volume": "Medium",
+    "retention": "Filming period + 3-7 years",
+    "dataVerified": "Production company, shoot location, dates, traffic control, insurance",
+    "dataVisibleAfterVerification": "Permit status (issued/completed). Link to film office/city system (enforcement and public, requires authentication)",
+    "rationale": "Prevents fake filming permits. Domain binding verifies film office/city. Location fee payment verification. Liability insurance verification. Prevents unauthorized commercial filming."
+  }
+]

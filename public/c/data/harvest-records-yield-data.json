@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Agriculture & Food",
+    "title": "Harvest records and yield data",
+    "volume": "Medium-Small",
+    "retention": "5-10 years (crop insurance/audit)",
+    "dataVerified": "Farm owner/operator, field location, harvest crew",
+    "dataVisibleAfterVerification": "Record status (verified/filed). Link to farm operator system (owner and insurance/auditors, requires authentication)",
+    "rationale": "Domain binding verifies farm operator. Standard forms suitable for OCR. Crop insurance claims. Government audit trail."
+  }
+]

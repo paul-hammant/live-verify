@@ -4,8 +4,8 @@
     "title": "Wire transfer documentation",
     "volume": "Medium-Small",
     "retention": "5-10 years (audit trail)",
-    "personalDataVerified": "Sender name, recipient name, transfer amount, originator bank, beneficiary bank, transfer purpose, transfer date",
-    "personalDataVisible": "Transfer status (completed/cancelled). Link to financial institution wire system (compliance officers and auditors, requires authentication)",
+    "dataVerified": "Sender name, recipient name, transfer amount, originator bank, beneficiary bank, transfer purpose, transfer date",
+    "dataVisibleAfterVerification": "Transfer status (completed/cancelled). Link to financial institution wire system (compliance officers and auditors, requires authentication)",
     "rationale": "Tamper-evident wire transfer records for audit trail. Domain binding verifies sending bank. Prevents alteration of transfer details after execution. AML compliance including Travel Rule requirements. Audit trail for regulators examining suspicious transactions. Critical for high-value international transfers where wire fraud and money laundering risks are significant."
   }
 ]

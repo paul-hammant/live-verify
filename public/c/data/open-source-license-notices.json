@@ -4,8 +4,8 @@
     "title": "Open source license compliance notices",
     "volume": "Small",
     "retention": "Release lifecycle + 3-7 years",
-    "personalDataVerified": "OEM name, product name, package list, license types, version numbers, copyright holders",
-    "personalDataVisible": "Link to detailed SPDX or license repository (legal teams and open source compliance officers, requires authentication)",
+    "dataVerified": "OEM name, product name, package list, license types, version numbers, copyright holders",
+    "dataVisibleAfterVerification": "Link to detailed SPDX or license repository (legal teams and open source compliance officers, requires authentication)",
     "rationale": "Shipment-included license notices verifiable offline without QR code redirection risks. Avoids privacy concerns of QR codes linking to tracking systems. Domain binding to manufacturer ensures authentic license compliance. Critical for GPL and open source compliance where notices must accompany distributed software. Human-readable format suitable for printed documentation."
   }
 ]

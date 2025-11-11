@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Art & Collectibles",
+    "title": "Certificates of authenticity for artwork",
+    "volume": "Small",
+    "retention": "Permanent (art market)",
+    "dataVerified": "Artist name, owner name, gallery/dealer, certificate issuer",
+    "dataVisibleAfterVerification": "Authenticity status (verified/current). Link to gallery/artist estate system (owner and art market, may require authentication)",
+    "rationale": "Prevents art forgery and fake certificates. Domain binding verifies gallery/artist estate. High-value market. Permanent provenance. OCR challenge: Many art certificates use decorative typography - may require OCR-optimized design or short-form claims."
+  }
+]

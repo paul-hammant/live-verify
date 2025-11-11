@@ -4,8 +4,8 @@
     "title": "Proof of funds letters (real estate, business transactions)",
     "volume": "Small",
     "retention": "3-7 years (transaction period)",
-    "personalDataVerified": "Party name, account balance, bank officer signature, verification date, bank name and contact",
-    "personalDataVisible": "Link to financial institution system (sellers and escrow companies, requires authentication)",
+    "dataVerified": "Party name, account balance, bank officer signature, verification date, bank name and contact",
+    "dataVisibleAfterVerification": "Link to financial institution system (sellers and escrow companies, requires authentication)",
     "rationale": "Prevents fake proof of funds letters in real estate and business deal fraud. Domain binding verifies financial institution. Tamper-evident financial capacity documentation. Prevents wire fraud schemes where buyers misrepresent available funds. Critical for real estate transactions where sellers require proof buyer can complete purchase."
   }
 ]

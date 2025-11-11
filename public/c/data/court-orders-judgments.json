@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Government & Civic Documents",
+    "title": "Court orders and judgments",
+    "volume": "Small",
+    "retention": "Permanent (legal precedent)",
+    "dataVerified": "Party names, case details, judgment terms, court jurisdiction",
+    "dataVisibleAfterVerification": "Judgment status (final/appealed). Link to court system (parties and public, requires authentication)",
+    "rationale": "Prevents forged court orders. Domain binding verifies court jurisdiction. Tamper-evident legal authority. Permanent legal precedent."
+  }
+]

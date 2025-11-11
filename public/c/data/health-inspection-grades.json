@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Food & Beverage Permits",
+    "title": "Health inspection grades and scores (NYC A/B/C, LA county)",
+    "volume": "Very Large",
+    "retention": "3 years (inspection history)",
+    "dataVerified": "Restaurant name, inspection date, violations, grade/score, health department",
+    "dataVisibleAfterVerification": "Current grade/score (A/B/C or numeric). Link to health department system (public access)",
+    "rationale": "Prevents fake health grades (restaurants posting fake \"A\" grades). Domain binding verifies health department. Mandatory public posting (NYC \"Grade Pending\" cards, LA county numeric scores 90-100). Customer right-to-know. Prevents grade fraud. Online verification portal integration."
+  }
+]

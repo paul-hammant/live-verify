@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Financial Crime & Compliance",
+    "title": "Sanctions/restricted party screening attestations",
+    "volume": "Large",
+    "retention": "5-7 years",
+    "dataVerified": "Company, screening date/time, dataset versions",
+    "dataVisibleAfterVerification": "Screening status (cleared/verified). Link to company compliance system (auditors and regulators, requires authentication)",
+    "rationale": "Link attestations to shipments/deals. Tamper-evident without exposing lists. Domain binding verifies company."
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Banking & Financial Services",
+    "title": "Chargeback documentation and dispute records",
+    "volume": "Medium-Small",
+    "retention": "3-7 years (dispute resolution)",
+    "dataVerified": "Merchant, customer, transaction details, chargeback reason, evidence",
+    "dataVisibleAfterVerification": "Dispute status (open/resolved). Link to processor/bank system (parties and card networks, requires authentication)",
+    "rationale": "Prevents forged chargeback evidence. Domain binding verifies processor/bank. Tamper-evident dispute record. Merchant protection (fraudulent chargebacks). Card network compliance (Visa/MC dispute rules). Audit trail for appeals."
+  }
+]

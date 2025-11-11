@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Immigration & Visa Documents",
+    "title": "Immigration medical exam results (I-693)",
+    "volume": "Medium",
+    "retention": "Application + 7 years",
+    "dataVerified": "Full name, DOB, civil surgeon name/signature, vaccination records, exam date",
+    "dataVisibleAfterVerification": "Medical clearance status (passed/issues). Link to civil surgeon verification system (USCIS only, requires authentication)",
+    "rationale": "Prevents fake medical exams. Domain binding verifies USCIS-authorized civil surgeon. Green card requirement. Sealed envelope integrity. Vaccination compliance. Prevents medical exam fraud. Uses SHA-512 (medical privacy)."
+  }
+]

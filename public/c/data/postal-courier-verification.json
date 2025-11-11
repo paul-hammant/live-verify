@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Personal Safety & Service Verification",
+    "title": "Postal/courier worker verification (suspicious packages)",
+    "volume": "Very Large",
+    "retention": "Delivery + 30 days",
+    "dataVerified": "Worker name, photo, employee ID, postal service, delivery route",
+    "dataVisibleAfterVerification": "Worker status (active/verified). Real-time verification shows worker photo, employee ID, delivery route. Link to postal service or courier company system",
+    "rationale": "Recipient verifies postal worker or courier credentials for unexpected/suspicious packages. Domain binding verifies postal service (usps.gov, royalmail.com) or courier company (ups.com, fedex.com, dhl.com). Prevents fake postal worker scams, package theft. Critical for vulnerable populations who may be targeted with fraudulent deliveries or extortion attempts."
+  }
+]

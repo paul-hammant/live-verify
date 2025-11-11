@@ -4,8 +4,8 @@
     "title": "Course transcripts and grade verification",
     "volume": "Medium-Small",
     "retention": "Permanent (academic records)",
-    "personalDataVerified": "Student name, student ID, courses taken, grades, enrollment dates, degree program, institution name",
-    "personalDataVisible": "Enrollment status (if currently enrolled). Degree conferral date (if degree awarded). Link to registrar system (receiving universities and employers, requires authentication)",
+    "dataVerified": "Student name, student ID, courses taken, grades, enrollment dates, degree program, institution name",
+    "dataVisibleAfterVerification": "Enrollment status (if currently enrolled). Degree conferral date (if degree awarded). Link to registrar system (receiving universities and employers, requires authentication)",
     "rationale": "University transfer verification and graduate school applications. Privacy-preserving verification protects student academic records. Similar to degree verification pattern with domain binding to university registrar. Prevents transcript fraud and grade tampering. Critical for academic transfers where course credits must be verified without exposing full academic history."
   }
 ]

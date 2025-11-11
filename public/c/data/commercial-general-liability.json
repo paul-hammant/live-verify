@@ -4,8 +4,8 @@
     "title": "Commercial general liability (CGL) policies",
     "volume": "Medium-Small",
     "retention": "Policy term + 10 years",
-    "personalDataVerified": "Business name, insured parties, coverage limits, operations description, premium",
-    "personalDataVisible": "Policy status (active/cancelled). Link to insurer system (certificate holders and brokers, requires authentication)",
+    "dataVerified": "Business name, insured parties, coverage limits, operations description, premium",
+    "dataVisibleAfterVerification": "Policy status (active/cancelled). Link to insurer system (certificate holders and brokers, requires authentication)",
     "rationale": "Prevents fake CGL policies in contractor fraud. Domain binding verifies insurer. Certificate of insurance verification by project owners. Prevents coverage inflation in bids. Contractor fraud where businesses hire uninsured contractors creates massive liability exposure. Critical for risk management where CGL verification protects against uninsured contractor liability."
   }
 ]

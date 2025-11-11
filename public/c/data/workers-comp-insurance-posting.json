@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Mandatory Workplace Postings",
+    "title": "Workers' compensation insurance posting",
+    "volume": "Very Large",
+    "retention": "Current policy year",
+    "dataVerified": "Insurance carrier name, policy number, employer name, claim contact info",
+    "dataVisibleAfterVerification": "Policy status (active/expired). Link to insurance carrier system (employees and enforcement, requires authentication)",
+    "rationale": "Prevents fake workers' comp postings. Domain binding verifies insurance carrier. State posting requirement. Injury claim notification. Prevents uninsured employer fraud. Employee protection."
+  }
+]

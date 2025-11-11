@@ -4,8 +4,8 @@
     "title": "Industry certifications (IT, finance, construction)",
     "volume": "Small",
     "retention": "3-10 years (renewal cycles)",
-    "personalDataVerified": "Certificate holder name, certification ID, specialization, issuing organization, certification date, expiration date",
-    "personalDataVisible": "Certification status (active/expired/suspended). CPE/CE credits (if applicable). Link to certification body registry (employers and verification services, requires authentication)",
+    "dataVerified": "Certificate holder name, certification ID, specialization, issuing organization, certification date, expiration date",
+    "dataVisibleAfterVerification": "Certification status (active/expired/suspended). CPE/CE credits (if applicable). Link to certification body registry (employers and verification services, requires authentication)",
     "rationale": "Similar to professional license and CV credentials use case. Professional appearance for resumes and LinkedIn profiles. Prevents fake IT certifications (like fake AWS, Cisco, PMP credentials). Domain binding to certification bodies (CompTIA, PMI, CFA Institute, etc.). Employers verify credentials without calling certification body."
   }
 ]

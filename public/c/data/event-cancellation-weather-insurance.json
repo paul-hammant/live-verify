@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Insurance & Risk Management",
+    "title": "Event cancellation and weather insurance",
+    "volume": "Very Small",
+    "retention": "Event date + 7 years",
+    "dataVerified": "Event organizer, event details, coverage amount, covered perils, insurer",
+    "dataVisibleAfterVerification": "Policy status (active/cancelled). Link to insurer system (authorized parties, requires authentication)",
+    "rationale": "Domain binding verifies insurer. High-value events ($100K-$10M+ coverage typical). Prevents fake event insurance (post-cancellation fraud). Weather trigger verification."
+  }
+]

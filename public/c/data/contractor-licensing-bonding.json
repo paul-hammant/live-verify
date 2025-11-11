@@ -4,8 +4,8 @@
     "title": "Contractor licensing and bonding certificates",
     "volume": "Medium",
     "retention": "License term + 7 years",
-    "personalDataVerified": "Contractor name, license number, bond number, bond amount, issuing authority, expiration date",
-    "personalDataVisible": "Revocation status (if license revoked). Bond claim status (if bond claim filed). Link to licensing board system (building inspectors and procurement officers, requires authentication)",
+    "dataVerified": "Contractor name, license number, bond number, bond amount, issuing authority, expiration date",
+    "dataVisibleAfterVerification": "Revocation status (if license revoked). Bond claim status (if bond claim filed). Link to licensing board system (building inspectors and procurement officers, requires authentication)",
     "rationale": "Bid compliance checks for construction projects. Tamper-evident field copies for procurement verification. Homeowners verify contractor credentials before signing contracts. Domain binding to state licensing boards prevents fake licenses. Critical for public works bidding where bonding certificates must be verified."
   }
 ]

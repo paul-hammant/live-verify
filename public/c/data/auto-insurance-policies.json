@@ -4,8 +4,8 @@
     "title": "Auto insurance policies and declarations pages",
     "volume": "Medium",
     "retention": "Policy term + 7 years (claims)",
-    "personalDataVerified": "Policyholder name, address, VIN, named drivers, coverage limits, deductibles, premium",
-    "personalDataVisible": "Policy status (active/cancelled). Link to insurer policy system (policyholders and third parties, requires authentication)",
+    "dataVerified": "Policyholder name, address, VIN, named drivers, coverage limits, deductibles, premium",
+    "dataVisibleAfterVerification": "Policy status (active/cancelled). Link to insurer policy system (policyholders and third parties, requires authentication)",
     "rationale": "Prevents fake auto insurance common in uninsured motorist fraud. Domain binding verifies insurer legitimacy. State regulatory compliance (SR-22 verification for high-risk drivers). Prevents coverage inflation in accidents. Multi-page declarations and policy terms benefit from per-page verification. Critical for traffic enforcement where police verify insurance at stops and accidents."
   }
 ]

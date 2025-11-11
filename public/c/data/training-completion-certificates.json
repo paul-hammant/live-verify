@@ -4,8 +4,8 @@
     "title": "Training completion certificates (safety, compliance, skills)",
     "volume": "Small",
     "retention": "5-10 years (regulatory requirement)",
-    "personalDataVerified": "Trainee name, employer name, training course title, training date, instructor name, hours completed",
-    "personalDataVisible": "Expiration status (if renewal required). Link to training provider system (employers and regulatory inspectors, requires authentication)",
+    "dataVerified": "Trainee name, employer name, training course title, training date, instructor name, hours completed",
+    "dataVisibleAfterVerification": "Expiration status (if renewal required). Link to training provider system (employers and regulatory inspectors, requires authentication)",
     "rationale": "Regulatory compliance verification for workplace safety and compliance training. Employer verification of employee training records. Human-readable certificate format suitable for workplace display. Domain binding to training provider prevents fake certificates. Critical for OSHA and industry compliance where training records must be verified during inspections."
   }
 ]

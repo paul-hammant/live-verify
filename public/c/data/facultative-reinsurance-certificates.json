@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Insurance & Risk Management",
+    "title": "Facultative reinsurance certificates",
+    "volume": "Medium-Small",
+    "retention": "Policy term + 10-20 years",
+    "dataVerified": "Ceding company, reinsurer, individual risk details, coverage terms, facultative premium",
+    "dataVisibleAfterVerification": "Certificate status (active/expired). Link to reinsurer system (ceding company and authorized parties, requires authentication)",
+    "rationale": "Prevents fake facultative certificates (claiming reinsurance that doesn't exist). Domain binding verifies reinsurer. High-value individual risks ($10M-$1B+ typical). Large property/casualty placements. Jumbo risk verification."
+  }
+]

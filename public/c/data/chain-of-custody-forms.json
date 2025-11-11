@@ -4,8 +4,8 @@
     "title": "Chain-of-custody forms",
     "volume": "Medium",
     "retention": "Claim term + 10 years",
-    "personalDataVerified": "Claimant name, claim number, item description, handler names, transfer timestamps, custody locations",
-    "personalDataVisible": "Final disposition status (if custody chain completed). Link to claims system (claims adjusters and legal counsel, requires authentication)",
+    "dataVerified": "Claimant name, claim number, item description, handler names, transfer timestamps, custody locations",
+    "dataVisibleAfterVerification": "Final disposition status (if custody chain completed). Link to claims system (claims adjusters and legal counsel, requires authentication)",
     "rationale": "Prevents alteration of custody transfer steps for claims evidence. Each custody transfer is independently verifiable. Critical for high-value claims where evidence chain must be proven intact. Domain binding to insurance carrier or third-party administrator ensures authenticity of custody documentation."
   }
 ]

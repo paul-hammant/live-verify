@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Government & Civic Documents",
+    "title": "Birth certificates and death certificates",
+    "volume": "Small",
+    "retention": "Permanent (vital records)",
+    "dataVerified": "Name, DOB/DOD, parents, place of birth/death",
+    "dataVisibleAfterVerification": "Certificate status (issued). Link to vital records office system (authorized parties, requires authentication)",
+    "rationale": "Prevents identity fraud, fake birth certificates for fraudulent documents. Domain binding verifies issuing jurisdiction. Ornate certificate format benefits from OCR. Permanent vital records."
+  }
+]

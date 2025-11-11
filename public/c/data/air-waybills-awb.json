@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Logistics & Transportation",
+    "title": "Air waybills (AWB) - IATA standard",
+    "volume": "Large",
+    "retention": "7-10 years (proof of shipment)",
+    "dataVerified": "Shipper, consignee, airline, flight details, cargo description, value",
+    "dataVisibleAfterVerification": "AWB status (issued/delivered). Link to airline/freight forwarder system (parties and customs, requires authentication)",
+    "rationale": "Prevents altered cargo details. Domain binding verifies airline/freight forwarder. IATA compliance. High-value cargo ($10K-$10M+ typical). Customs clearance documentation. Multi-page: AWB multi-page with packing details."
+  }
+]

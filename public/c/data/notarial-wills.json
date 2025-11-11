@@ -4,8 +4,8 @@
     "title": "Notarial wills (holographic wills, statutory wills)",
     "volume": "Small",
     "retention": "Permanent (estate records)",
-    "personalDataVerified": "Testator name, will provisions, witness names, notary name, notary commission number, notary certification, notary seal, execution date",
-    "personalDataVisible": "Notary commission status (active/expired/revoked). Link to state notary database (probate courts and executors, requires authentication)",
+    "dataVerified": "Testator name, will provisions, witness names, notary name, notary commission number, notary certification, notary seal, execution date",
+    "dataVisibleAfterVerification": "Notary commission status (active/expired/revoked). Link to state notary database (probate courts and executors, requires authentication)",
     "rationale": "Prevents forged wills in estate disputes. Domain binding verifies notary commission legitimacy. Estate disputes require verifiable will execution. Permanent legal records for testamentary documents. Will execution requirements vary by state - notarization proves compliance. Multi-page wills benefit from per-page verification to prevent page substitution attacks. Critical for estate planning where will validity determines asset distribution."
   }
 ]

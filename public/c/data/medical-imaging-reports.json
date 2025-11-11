@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Healthcare & Medical Records",
+    "title": "Medical imaging reports (X-ray, MRI, CT scan)",
+    "volume": "Medium",
+    "retention": "10-30 years (diagnostic history)",
+    "dataVerified": "Patient name, DOB, imaging findings, radiologist name",
+    "dataVisibleAfterVerification": "Report status (finalized). Link to radiology system (healthcare providers and patient, requires authentication)",
+    "rationale": "Medical report format. Domain binding verifies radiologist/facility."
+  }
+]

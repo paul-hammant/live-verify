@@ -4,8 +4,8 @@
     "title": "Probate documents and estate proceedings",
     "volume": "Small",
     "retention": "Permanent (estate records)",
-    "personalDataVerified": "Deceased name, executor name, heirs, court jurisdiction, case number, asset inventory, probate order date, judge name",
-    "personalDataVisible": "Estate status (open/closed). Link to probate court system (heirs and attorneys, requires authentication)",
+    "dataVerified": "Deceased name, executor name, heirs, court jurisdiction, case number, asset inventory, probate order date, judge name",
+    "dataVisibleAfterVerification": "Estate status (open/closed). Link to probate court system (heirs and attorneys, requires authentication)",
     "rationale": "Court-issued probate orders require permanent legal records. Domain binding verifies court jurisdiction and prevents forged estate documents. Estate disputes can last decades requiring verifiable records. Human-readable court orders essential for legal proceedings. Prevents fraudulent probate claims and estate fraud. Executors and heirs verify court orders without requiring court backend access."
   }
 ]

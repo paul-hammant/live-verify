@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Insurance & Risk Management",
+    "title": "Salvage and subrogation documentation",
+    "volume": "Medium-Small",
+    "retention": "Subrogation case + 7-10 years",
+    "dataVerified": "Insurer, claimant, at-fault party, salvage value, subrogation recovery",
+    "dataVisibleAfterVerification": "Recovery status (open/closed). Link to insurer system (authorized parties, requires authentication)",
+    "rationale": "Prevents fraudulent salvage valuations. Domain binding verifies salvage company/insurer. Prevents double-recovery fraud (claimant gets payment + keeps salvage). Subrogation recovery audit trail."
+  }
+]

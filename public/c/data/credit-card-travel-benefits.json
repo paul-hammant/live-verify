@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Travel & Hospitality",
+    "title": "Credit card travel benefits and coverage confirmations",
+    "volume": "Small",
+    "retention": "Trip + 3-7 years",
+    "dataVerified": "Cardholder name, trip charged to card, coverage details, card issuer",
+    "dataVisibleAfterVerification": "Coverage status (active/applicable). Link to card issuer system (cardholder only, requires authentication)",
+    "rationale": "Domain binding verifies card issuer. Credit card travel insurance coverage verification. Trip delay/baggage delay benefit claims. Rental car collision damage waiver documentation."
+  }
+]

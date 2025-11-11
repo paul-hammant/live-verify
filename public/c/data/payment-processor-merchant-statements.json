@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Banking & Financial Services",
+    "title": "Payment processor merchant statements (Stripe, PayPal, Square)",
+    "volume": "Medium",
+    "retention": "7-10 years (tax/disputes)",
+    "dataVerified": "Merchant name, transaction volume, fees, payouts, chargebacks",
+    "dataVisibleAfterVerification": "Statement status (final). Link to processor system (merchants and tax authorities, requires authentication)",
+    "rationale": "Tamper-evident payout records. Domain binding verifies processor. Tax reporting accuracy (1099-K). Chargeback documentation. Merchant disputes. Fee transparency. Audit trail for tax authorities."
+  }
+]

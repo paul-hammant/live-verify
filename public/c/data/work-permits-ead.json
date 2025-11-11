@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Immigration & Visa Documents",
+    "title": "Work permits and employment authorization documents (EAD)",
+    "volume": "Medium",
+    "retention": "Work authorization + 7-10 years",
+    "dataVerified": "Full name, DOB, nationality, employer, work authorization category, expiration",
+    "dataVisibleAfterVerification": "Work authorization status (valid/expired). Link to immigration authority system (employers and enforcement, requires authentication)",
+    "rationale": "Prevents fake work permits. Domain binding verifies immigration authority (USCIS, UKVI, etc.). Employer I-9 verification. Prevents unauthorized employment. H-1B, L-1, EAD documentation. Uses SHA-512 (government ID privacy)."
+  }
+]

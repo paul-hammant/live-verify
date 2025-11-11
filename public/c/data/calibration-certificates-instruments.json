@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Product Certifications & Compliance",
+    "title": "Calibration certificates (instruments, test rigs)",
+    "volume": "Medium",
+    "retention": "3-10 years (audit cycles)",
+    "dataVerified": "Device ID, technician, facility",
+    "dataVisibleAfterVerification": "Calibration status (valid/expired). Link to calibration facility system (device owner and auditors, requires authentication)",
+    "rationale": "Field verification by auditors. Integrity without exposing readings. Domain binding verifies calibration facility."
+  }
+]

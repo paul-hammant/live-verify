@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Safety Inspection Certificates",
+    "title": "Tank and underground storage tank (UST) inspection certificates",
+    "volume": "Medium",
+    "retention": "1-5 years (EPA/state requirements)",
+    "dataVerified": "Facility address, tank ID, inspector, inspection date, leak detection test results",
+    "dataVisibleAfterVerification": "Inspection status (compliant/non-compliant). Link to certified inspector system (EPA/state and facility owners, requires authentication)",
+    "rationale": "Prevents fake UST certificates. Domain binding verifies certified inspector. EPA 40 CFR 280 compliance. Groundwater contamination prevention. Environmental liability ($millions in cleanup costs)."
+  }
+]

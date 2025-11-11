@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Insurance & Risk Management",
+    "title": "Bloodstock insurance (racehorses, breeding stock)",
+    "volume": "Very Small",
+    "retention": "Horse lifetime (15-25 years)",
+    "dataVerified": "Owner, horse name/registration, value, use (racing/breeding), mortality coverage",
+    "dataVisibleAfterVerification": "Policy status (active/claimed). Link to Lloyd's/insurer system (owners and authorized parties, requires authentication)",
+    "rationale": "Prevents fake bloodstock insurance. Domain binding verifies Lloyd's syndicate/specialist. Very high values ($1M-$70M for champion racehorses). Mortality, infertility, loss of use coverage. Syndicate ownership verification. Breeding rights valuation."
+  }
+]

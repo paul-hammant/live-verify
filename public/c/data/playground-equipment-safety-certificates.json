@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Safety Inspection Certificates",
+    "title": "Playground equipment safety inspection certificates",
+    "volume": "Medium",
+    "retention": "1 year (annual inspection)",
+    "dataVerified": "Playground location, equipment inventory, inspector, inspection date, safety compliance",
+    "dataVisibleAfterVerification": "Inspection status (passed/conditional). Link to certified inspector system (parks departments and public, requires authentication)",
+    "rationale": "Prevents fake playground certificates. Domain binding verifies certified inspector (CPSI). ASTM F1487/CPSC guidelines compliance. Prevents child injury liability. Parks department requirement."
+  }
+]
