@@ -66,10 +66,23 @@
             color: #495057;
             font-weight: 500;
         }
-        .icons {
-            font-size: 1.8em;
-            margin: 16px 0;
-            letter-spacing: 8px;
+        .verification-lines {
+            margin: 20px 0 16px 0;
+            font-size: 1.1em;
+        }
+        .verification-lines div {
+            margin: 8px 0;
+        }
+        .verification-lines .icon {
+            font-size: 1.3em;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+        .note {
+            font-size: 0.75em;
+            color: #6c757d;
+            margin-top: 16px;
+            line-height: 1.5;
         }
         .impact {
             background: rgba(255, 255, 255, 0.15);
@@ -133,8 +146,11 @@
 
         <div class="vision-box">
             <p>When Apple and Google integrate OCR-to-hash verification into their camera apps, tapping a <span class="verify-example">verify:</span> link will automatically verify the textual claim made in camera's viewfinder—instantly showing:</p>
-            <div class="icons">✅ ❌</div>
-            <p><strong>VERIFIED</strong> or <strong>FAILS VERIFICATION</strong></p>
+            <div class="verification-lines">
+                <div><span class="icon">✅</span><strong>VERIFIED</strong></div>
+                <div><span class="icon">❌</span><strong>FAILS VERIFICATION</strong></div>
+            </div>
+            <p class="note">Note: Imagine uscis.gov as a domain hosting verifications instead of paul-hammant.github.io (static/free demo of tech)</p>
         </div>
 
         <div class="impact">
