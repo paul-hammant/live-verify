@@ -46,15 +46,8 @@
       ]
     },
     {
-      "name": "Automotive & Transportation",
-      "count": 1,
-      "files": [
-        "vehicle-registrations"
-      ]
-    },
-    {
       "name": "Banking & Financial Services",
-      "count": 32,
+      "count": 39,
       "files": [
         "account-aggregation-authorization",
         "automated-rebalancing-confirmations",
@@ -66,6 +59,7 @@
         "cross-border-payment-receipts",
         "crowdfunding-investment-confirmations",
         "currency-transaction-reports",
+        "currency-transaction-reports-customer",
         "dynamic-discounting-confirmations",
         "equity-crowdfunding-certificates",
         "gig-economy-payout-receipts",
@@ -73,6 +67,7 @@
         "invoice-financing-factoring",
         "kyc-identity-verification",
         "kyc-proof-of-address",
+        "letters-of-credit",
         "mobile-money-receipts",
         "neobank-account-opening",
         "open-banking-consent-forms",
@@ -85,8 +80,13 @@
         "robo-advisor-portfolio-statements",
         "safe-agreements",
         "sanctions-compliance-certificates",
+        "sanctions-screening-attestations",
         "source-of-funds-declarations",
+        "source-of-funds-wealth-declarations",
         "suspicious-activity-reports-internal",
+        "trade-finance-bills-of-lading",
+        "trade-finance-certificates-of-origin",
+        "trade-finance-commercial-invoices",
         "wire-transfer-documentation"
       ]
     },
@@ -143,13 +143,6 @@
       ]
     },
     {
-      "name": "Consumer & Retail",
-      "count": 1,
-      "files": [
-        "warranty-documents"
-      ]
-    },
-    {
       "name": "Energy & Utilities",
       "count": 4,
       "files": [
@@ -157,13 +150,6 @@
         "energy-audits-efficiency-ratings",
         "renewable-energy-certificates",
         "solar-panel-efficiency-certificates"
-      ]
-    },
-    {
-      "name": "Entertainment & Media",
-      "count": 1,
-      "files": [
-        "film-completion-bonds"
       ]
     },
     {
@@ -206,15 +192,6 @@
         "stock-certificates",
         "tax-forms-receipts",
         "wills-estate-documents"
-      ]
-    },
-    {
-      "name": "Financial Crime & Compliance",
-      "count": 3,
-      "files": [
-        "currency-transaction-reports-customer",
-        "sanctions-screening-attestations",
-        "source-of-funds-wealth-declarations"
       ]
     },
     {
@@ -262,40 +239,34 @@
       ]
     },
     {
-      "name": "Immigration & Civic Documents",
-      "count": 9,
-      "files": [
-        "ballot-chain-of-custody",
-        "consular-letters-attestations",
-        "employment-authorization-ead",
-        "global-entry-letters",
-        "green-cards-i551",
-        "poll-worker-training",
-        "visa-fee-receipts",
-        "voter-registration",
-        "work-visas-h1b"
-      ]
-    },
-    {
       "name": "Immigration & Visa Documents",
-      "count": 16,
+      "count": 25,
       "files": [
         "advance-parole-reentry-permits",
+        "ballot-chain-of-custody",
         "biometric-appointment-confirmations",
         "border-crossing-receipts-i94",
         "citizenship-naturalization-certificates",
+        "consular-letters-attestations",
         "consular-processing-appointments",
+        "employment-authorization-ead",
         "esta-travel-authorization",
+        "global-entry-letters",
+        "green-cards-i551",
         "immigration-interview-notices",
         "immigration-medical-exam-results",
         "permanent-residence-cards",
+        "poll-worker-training",
         "refugee-asylee-travel-documents",
         "sponsorship-affidavits-i864",
         "student-visas-f1-j1",
         "visa-approval-notices-stamps",
         "visa-denial-notices",
         "visa-extension-change-of-status",
-        "work-permits-ead"
+        "visa-fee-receipts",
+        "voter-registration",
+        "work-permits-ead",
+        "work-visas-h1b"
       ]
     },
     {
@@ -353,12 +324,15 @@
     },
     {
       "name": "Logistics & Transportation",
-      "count": 28,
+      "count": 42,
       "files": [
         "air-waybills-awb",
         "ata-carnets",
         "auto-transport-damage-reports",
+        "bills-of-lading",
         "bonded-warehouse-documents",
+        "calibration-certificates",
+        "certificates-of-origin",
         "certificates-of-origin-trade",
         "cmr-consignment-notes",
         "cold-storage-temperature-records",
@@ -367,22 +341,33 @@
         "container-shipping-instructions",
         "customs-entry-clearance",
         "dangerous-goods-declarations-air",
+        "dangerous-goods-declarations-imo-icao",
         "dangerous-goods-transport-road",
         "delivery-orders-cargo-release",
         "freight-bills-carrier-invoices",
+        "freight-demurrage-defense",
         "freight-forwarder-insurance",
         "house-air-waybills-hawb",
         "intermodal-equipment-receipts",
         "inventory-reports-stock-certificates",
+        "marine-hull-machinery",
+        "material-test-reports",
         "nvocc-tariffs",
         "ocean-bills-of-lading",
         "packing-lists-shipping-manifests",
+        "pi-club-certificates",
         "proof-of-delivery-pod",
+        "protection-indemnity-certificates",
+        "quality-control-inspection-reports",
         "rail-waybills-shipping-orders",
         "sea-waybills",
         "tachograph-records-driver-logs",
         "vehicle-inspection-reports-dot",
-        "warehouse-receipts-storage"
+        "vehicle-registrations",
+        "war-risk-piracy-insurance",
+        "warehouse-receipts",
+        "warehouse-receipts-storage",
+        "weight-tickets-scale-calibration"
       ]
     },
     {
@@ -406,48 +391,15 @@
       ]
     },
     {
-      "name": "Manufacturing & Supply Chain",
-      "count": 5,
-      "files": [
-        "calibration-certificates",
-        "dangerous-goods-declarations-imo-icao",
-        "material-test-reports",
-        "quality-control-inspection-reports",
-        "weight-tickets-scale-calibration"
-      ]
-    },
-    {
-      "name": "Maritime & Shipping",
-      "count": 5,
-      "files": [
-        "freight-demurrage-defense",
-        "marine-hull-machinery",
-        "pi-club-certificates",
-        "protection-indemnity-certificates",
-        "war-risk-piracy-insurance"
-      ]
-    },
-    {
       "name": "Media & Publishing",
-      "count": 5,
+      "count": 6,
       "files": [
         "copyright-registrations",
         "fact-checking-verification",
+        "film-completion-bonds",
         "manuscript-versions-edit-history",
         "photo-credits-image-licensing",
         "publishing-contracts-royalties"
-      ]
-    },
-    {
-      "name": "Mortgage & Lending",
-      "count": 6,
-      "files": [
-        "bank-statements-loan-applications",
-        "cashiers-checks-money-orders",
-        "mortgage-employment-verification",
-        "mortgage-income-verification",
-        "proof-of-funds-letters-transactions",
-        "third-party-verification-letters"
       ]
     },
     {
@@ -550,10 +502,11 @@
     },
     {
       "name": "Professional & Occupational Licenses",
-      "count": 10,
+      "count": 11,
       "files": [
         "alarm-installer-monitoring-licenses",
         "concealed-carry-permits",
+        "contractor-licensing-bonding",
         "cosmetology-barber-licenses",
         "firearms-dealer-ffl-licenses",
         "locksmith-licenses",
@@ -565,19 +518,14 @@
       ]
     },
     {
-      "name": "Professional & Regulatory Compliance",
-      "count": 1,
-      "files": [
-        "contractor-licensing-bonding"
-      ]
-    },
-    {
       "name": "Real Estate & Property",
-      "count": 29,
+      "count": 35,
       "files": [
         "1031-exchange-documentation",
         "asbestos-hazmat-inspection",
+        "bank-statements-loan-applications",
         "builder-warranties",
+        "cashiers-checks-money-orders",
         "condo-townhouse-disclosures",
         "construction-lien-waivers",
         "easement-agreements",
@@ -590,8 +538,11 @@
         "homeowners-insurance-declarations",
         "land-surveys",
         "lead-paint-disclosure",
+        "mortgage-employment-verification",
+        "mortgage-income-verification",
         "mortgage-satisfaction-lien-release",
         "pest-inspection-certificates",
+        "proof-of-funds-letters-transactions",
         "property-appraisals-valuations",
         "property-condition-disclosures",
         "property-deeds",
@@ -601,6 +552,7 @@
         "right-of-way-documents",
         "settlement-statements",
         "soil-geotechnical-reports",
+        "third-party-verification-letters",
         "title-insurance-policies",
         "wetlands-delineation-reports",
         "zoning-land-use-documents"
@@ -608,9 +560,10 @@
     },
     {
       "name": "Retail & Consumer Protection",
-      "count": 1,
+      "count": 2,
       "files": [
-        "raffle-tickets-contest-entries"
+        "raffle-tickets-contest-entries",
+        "warranty-documents"
       ]
     },
     {
@@ -660,15 +613,6 @@
       ]
     },
     {
-      "name": "Supply Chain & Logistics",
-      "count": 3,
-      "files": [
-        "bills-of-lading",
-        "certificates-of-origin",
-        "warehouse-receipts"
-      ]
-    },
-    {
       "name": "Technology & Software",
       "count": 2,
       "files": [
@@ -683,16 +627,6 @@
         "network-coverage-maps",
         "number-portability-authorizations",
         "telecom-service-agreements"
-      ]
-    },
-    {
-      "name": "Trade Finance & International Commerce",
-      "count": 4,
-      "files": [
-        "letters-of-credit",
-        "trade-finance-bills-of-lading",
-        "trade-finance-certificates-of-origin",
-        "trade-finance-commercial-invoices"
       ]
     },
     {
@@ -737,6 +671,6 @@
       ]
     }
   ],
-  "totalCategories": 45,
+  "totalCategories": 34,
   "totalUseCases": 466
 }

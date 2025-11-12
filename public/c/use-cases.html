@@ -278,7 +278,7 @@
 
         <div class="hero">
             <div class="badge">COMPREHENSIVE MARKET</div>
-            <h1>515+ Use Cases</h1>
+            <h1 id="heroTitle">Loading Use Cases...</h1>
             <div class="hero-stats">
                 <div class="stat">
                     <span class="stat-number" data-target="515">0</span>
@@ -516,6 +516,10 @@
         document.addEventListener('DOMContentLoaded', async () => {
             // Load categories summary (one lightweight file)
             await loadCategoriesSummary();
+
+            // Update hero title and page title
+            document.getElementById('heroTitle').textContent = 'Use Cases';
+            document.title = `${categoriesSummary.totalUseCases} Use Cases - OCR Verification`;
 
             // Update stat counters
             document.querySelector('[data-target="515"]').dataset.target = categoriesSummary.totalUseCases;
