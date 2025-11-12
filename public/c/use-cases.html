@@ -75,33 +75,6 @@
             opacity: 0.9;
             margin-top: 4px;
         }
-        .filters {
-            display: flex;
-            gap: 12px;
-            margin-bottom: 32px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .filter-chip {
-            background: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(10px);
-            border: 2px solid rgba(255, 255, 255, 0.3);
-            color: white;
-            padding: 10px 20px;
-            border-radius: 24px;
-            cursor: pointer;
-            font-weight: 500;
-            transition: all 0.3s ease;
-        }
-        .filter-chip:hover {
-            background: rgba(255, 255, 255, 0.3);
-            transform: translateY(-2px);
-        }
-        .filter-chip.active {
-            background: white;
-            color: #667eea;
-            border-color: white;
-        }
         .categories-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -291,11 +264,6 @@
             </div>
         </div>
 
-        <div class="filters" id="filtersContainer">
-            <button class="filter-chip active" data-category="all">All</button>
-            <!-- Filters dynamically generated -->
-        </div>
-
         <div class="categories-grid" id="categoriesGrid"></div>
     </div>
 
@@ -370,38 +338,8 @@
             }, 16);
         }
 
-        // Render filter chips dynamically
-        function renderFilters() {
-            const container = document.getElementById('filtersContainer');
-            const categories = categoriesSummary.categories;
-
-            // Clear existing filters except "All"
-            container.innerHTML = '<button class="filter-chip active" data-category="all">All</button>';
-
-            // Add filter for each category
-            categories.forEach(category => {
-                const chip = document.createElement('button');
-                chip.className = 'filter-chip';
-                chip.dataset.category = category.name;
-                chip.textContent = category.name;
-                chip.addEventListener('click', () => {
-                    document.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
-                    chip.classList.add('active');
-                    renderCategories(category.name);
-                });
-                container.appendChild(chip);
-            });
-
-            // Re-attach "All" button handler
-            container.querySelector('[data-category="all"]').addEventListener('click', () => {
-                document.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
-                container.querySelector('[data-category="all"]').classList.add('active');
-                renderCategories('all');
-            });
-        }
-
         // Render category cards
-        function renderCategories(filterCategory = 'all') {
+        function renderCategories() {
             const grid = document.getElementById('categoriesGrid');
             grid.innerHTML = '';
 
@@ -409,8 +347,6 @@
 
             let index = 0;
             categoriesSummary.categories.forEach((category) => {
-                if (filterCategory !== 'all' && category.name !== filterCategory) return;
-
                 const card = document.createElement('div');
                 card.className = 'category-card';
                 card.innerHTML = `
@@ -527,9 +463,6 @@
 
             // Animate counters
             document.querySelectorAll('.stat-number').forEach(animateCounter);
-
-            // Render dynamic filter chips
-            renderFilters();
 
             // Render categories
             renderCategories();
