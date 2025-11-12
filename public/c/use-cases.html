@@ -117,6 +117,34 @@
             opacity: 0.85;
             line-height: 1.5;
         }
+        @keyframes dialogSlideIn {
+            from {
+                opacity: 0;
+                transform: translate(-50%, -50%) scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1);
+            }
+        }
+        @keyframes dialogSlideOut {
+            from {
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1);
+            }
+            to {
+                opacity: 0;
+                transform: translate(-50%, -50%) scale(0.9);
+            }
+        }
+        @keyframes backdropFadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
         dialog {
             border: none;
             border-radius: 20px;
@@ -132,10 +160,18 @@
             left: 50%;
             transform: translate(-50%, -50%);
             margin: 0;
+            opacity: 0;
+        }
+        dialog[open] {
+            animation: dialogSlideIn 0.3s ease-out forwards;
+        }
+        dialog.closing {
+            animation: dialogSlideOut 0.3s ease-out forwards;
         }
         dialog::backdrop {
             backdrop-filter: blur(8px);
             background: rgba(0,0,0,0.5);
+            animation: backdropFadeIn 0.3s ease-out;
         }
         .dialog-header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -418,9 +454,17 @@
         }
 
         function closeDialog() {
-            document.getElementById('categoryDialog').close();
-            // Clear URL hash
-            history.pushState(null, null, ' ');
+            const dialog = document.getElementById('categoryDialog');
+            // Add closing class to trigger exit animation
+            dialog.classList.add('closing');
+
+            // Wait for animation to complete before actually closing
+            setTimeout(() => {
+                dialog.classList.remove('closing');
+                dialog.close();
+                // Clear URL hash
+                history.pushState(null, null, ' ');
+            }, 300); // Match animation duration
         }
 
         // Handle hash changes
@@ -441,11 +485,10 @@
             }
         });
 
-        // Handle dialog close (including ESC key)
-        document.getElementById('categoryDialog').addEventListener('close', () => {
-            if (window.location.hash) {
-                history.pushState(null, null, ' ');
-            }
+        // Prevent default close behavior and use our animated version
+        document.getElementById('categoryDialog').addEventListener('cancel', (e) => {
+            e.preventDefault();
+            closeDialog();
         });
 
         // Initialize
