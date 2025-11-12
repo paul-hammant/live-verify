@@ -75,6 +75,83 @@
             opacity: 0.9;
             margin-top: 4px;
         }
+        .search-container {
+            max-width: 600px;
+            margin: 0 auto 40px;
+        }
+        .search-box {
+            position: relative;
+        }
+        .search-input {
+            width: 100%;
+            padding: 16px 50px 16px 20px;
+            font-size: 1em;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 30px;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .search-input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+        .search-input:focus {
+            outline: none;
+            background: rgba(255, 255, 255, 0.25);
+            border-color: white;
+        }
+        .search-icon {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.2em;
+            opacity: 0.7;
+            pointer-events: none;
+        }
+        .search-results {
+            margin-top: 20px;
+            display: none;
+        }
+        .search-results.active {
+            display: block;
+        }
+        .search-result-item {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            padding: 16px 20px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .search-result-item:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateX(4px);
+        }
+        .search-result-title {
+            font-weight: 600;
+            font-size: 1.1em;
+            margin-bottom: 6px;
+        }
+        .search-result-category {
+            font-size: 0.85em;
+            opacity: 0.8;
+            margin-bottom: 8px;
+        }
+        .search-result-snippet {
+            font-size: 0.9em;
+            opacity: 0.9;
+            line-height: 1.4;
+        }
+        .search-stats {
+            text-align: center;
+            opacity: 0.9;
+            margin-bottom: 16px;
+            font-size: 0.95em;
+        }
         .categories-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -110,12 +187,6 @@
             font-size: 2em;
             font-weight: 700;
             opacity: 0.9;
-        }
-        .category-preview {
-            margin-top: 12px;
-            font-size: 0.9em;
-            opacity: 0.85;
-            line-height: 1.5;
         }
         @keyframes dialogSlideIn {
             from {
@@ -312,6 +383,20 @@
             </div>
         </div>
 
+        <div class="search-container">
+            <div class="search-box">
+                <input
+                    type="text"
+                    class="search-input"
+                    id="searchInput"
+                    placeholder="Search use cases... (e.g., mortgage, insurance, employment)"
+                    autocomplete="off"
+                />
+                <span class="search-icon">🔍</span>
+            </div>
+            <div class="search-results" id="searchResults"></div>
+        </div>
+
         <div class="categories-grid" id="categoriesGrid"></div>
     </div>
 
@@ -326,6 +411,7 @@
     <script>
         // Data loaded from JSON files
         let categoriesSummary = null;
+        let searchIndex = null;
         const categoryDataCache = {}; // Cache loaded full category data
         const useCaseFileCache = {}; // Cache individual use case files
 
@@ -334,6 +420,13 @@
             const response = await fetch('data/categories-summary.json');
             categoriesSummary = await response.json();
             return categoriesSummary;
+        }
+
+        // Load search index
+        async function loadSearchIndex() {
+            const response = await fetch('data/search-index.json');
+            searchIndex = await response.json();
+            return searchIndex;
         }
 
         // Load a specific use case file on demand
@@ -400,7 +493,6 @@
                 card.innerHTML = `
                     <div class="category-name">${category.name}</div>
                     <div class="category-count">${category.count}</div>
-                    <div class="category-preview">${category.count} use case${category.count !== 1 ? 's' : ''}</div>
                 `;
                 card.onclick = () => openDialog(category.name);
                 grid.appendChild(card);
@@ -501,6 +593,95 @@
             window.location.hash = encodeURIComponent(categoryName);
         }
 
+        // Perform search
+        function performSearch(query) {
+            if (!query || query.trim().length < 2) {
+                document.getElementById('searchResults').classList.remove('active');
+                document.getElementById('categoriesGrid').style.display = 'grid';
+                return;
+            }
+
+            const terms = query.toLowerCase().split(/\s+/).filter(t => t.length > 2);
+            if (terms.length === 0) {
+                document.getElementById('searchResults').classList.remove('active');
+                document.getElementById('categoriesGrid').style.display = 'grid';
+                return;
+            }
+
+            // Find matching documents for each term
+            const documentScores = {};
+            terms.forEach(term => {
+                const matches = searchIndex.index[term] || [];
+                matches.forEach(fileId => {
+                    documentScores[fileId] = (documentScores[fileId] || 0) + 1;
+                });
+            });
+
+            // Sort by score (number of matching terms)
+            const results = Object.entries(documentScores)
+                .sort(([, a], [, b]) => b - a)
+                .slice(0, 20) // Show top 20 results
+                .map(([fileId]) => ({
+                    fileId,
+                    ...searchIndex.documents[fileId]
+                }));
+
+            // Render results
+            renderSearchResults(results, query);
+        }
+
+        // Render search results
+        function renderSearchResults(results, query) {
+            const resultsContainer = document.getElementById('searchResults');
+            const categoriesGrid = document.getElementById('categoriesGrid');
+
+            if (results.length === 0) {
+                resultsContainer.innerHTML = '<div class="search-stats">No results found</div>';
+                resultsContainer.classList.add('active');
+                categoriesGrid.style.display = 'none';
+                return;
+            }
+
+            let html = `<div class="search-stats">Found ${results.length} result${results.length !== 1 ? 's' : ''} for "${query}"</div>`;
+
+            results.forEach(result => {
+                html += `
+                    <div class="search-result-item" data-file-id="${result.fileId}">
+                        <div class="search-result-title">${result.title}</div>
+                        <div class="search-result-category">${result.category}</div>
+                        <div class="search-result-snippet">${result.snippet}...</div>
+                    </div>
+                `;
+            });
+
+            resultsContainer.innerHTML = html;
+            resultsContainer.classList.add('active');
+            categoriesGrid.style.display = 'none';
+
+            // Add click handlers to search results
+            resultsContainer.querySelectorAll('.search-result-item').forEach(item => {
+                item.addEventListener('click', async () => {
+                    const fileId = item.dataset.fileId;
+                    const useCase = await loadUseCaseFile(fileId);
+                    if (useCase && useCase.length > 0) {
+                        // Open the category dialog with this single use case
+                        openSingleUseCase(useCase[0]);
+                    }
+                });
+            });
+        }
+
+        // Open dialog with a single use case (from search)
+        function openSingleUseCase(useCase) {
+            const dialog = document.getElementById('categoryDialog');
+            const title = document.getElementById('dialogTitle');
+            const content = document.getElementById('dialogContent');
+
+            title.textContent = useCase.category;
+            content.innerHTML = renderUseCaseItem(useCase);
+            dialog.showModal();
+        }
+
         function closeDialog() {
             const dialog = document.getElementById('categoryDialog');
             // Add closing class to trigger exit animation
@@ -544,6 +725,9 @@
             // Load categories summary (one lightweight file)
             await loadCategoriesSummary();
 
+            // Load search index
+            await loadSearchIndex();
+
             // Update hero title and page title
             document.getElementById('heroTitle').textContent = 'Use Cases';
             document.title = `${categoriesSummary.totalUseCases} Use Cases - OCR Verification`;
@@ -557,6 +741,12 @@
 
             // Render categories
             renderCategories();
+
+            // Wire up search input
+            const searchInput = document.getElementById('searchInput');
+            searchInput.addEventListener('input', (e) => {
+                performSearch(e.target.value);
+            });
 
             // Handle initial hash
             await handleHashChange();
