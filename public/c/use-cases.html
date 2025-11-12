@@ -208,12 +208,24 @@
             overflow-y: auto;
             max-height: calc(85vh - 100px);
         }
+        @keyframes useCaseSlideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
         .use-case-item {
             border-left: 4px solid #667eea;
             background: #f8f9fa;
             padding: 20px;
             margin-bottom: 20px;
             border-radius: 8px;
+            opacity: 0;
+            animation: useCaseSlideIn 0.3s ease-out forwards;
         }
         .use-case-item:last-child {
             margin-bottom: 0;
@@ -401,23 +413,9 @@
             });
         }
 
-        // Open dialog with category details (loads data on demand)
-        async function openDialog(categoryName) {
-            const dialog = document.getElementById('categoryDialog');
-            const title = document.getElementById('dialogTitle');
-            const content = document.getElementById('dialogContent');
-
-            // Show loading state
-            title.textContent = `${categoryName}`;
-            content.innerHTML = '<div style="text-align: center; padding: 40px; color: #6c757d;">Loading...</div>';
-            dialog.showModal();
-
-            // Load use cases for this category on demand
-            const useCases = await loadCategoryData(categoryName);
-
-            title.textContent = `${categoryName} (${useCases.length})`;
-
-            content.innerHTML = useCases.map(useCase => `
+        // Render a single use case item
+        function renderUseCaseItem(useCase) {
+            return `
                 <div class="use-case-item">
                     <div class="use-case-title">${useCase.title}</div>
                     <div class="use-case-meta">
@@ -447,7 +445,57 @@
                         ${useCase.rationale}
                     </div>
                 </div>
-            `).join('');
+            `;
+        }
+
+        // Open dialog with category details (loads data on demand)
+        async function openDialog(categoryName) {
+            const dialog = document.getElementById('categoryDialog');
+            const title = document.getElementById('dialogTitle');
+            const content = document.getElementById('dialogContent');
+
+            // Check if already cached
+            if (categoryDataCache[categoryName]) {
+                // If cached, show all at once
+                title.textContent = `${categoryName}`;
+                content.innerHTML = '';
+                dialog.showModal();
+
+                const useCases = categoryDataCache[categoryName];
+                content.innerHTML = useCases.map(renderUseCaseItem).join('');
+                title.textContent = `${categoryName} (${useCases.length})`;
+                window.location.hash = encodeURIComponent(categoryName);
+                return;
+            }
+
+            // Open dialog immediately with empty content
+            title.textContent = `${categoryName}`;
+            content.innerHTML = '';
+            dialog.showModal();
+
+            const category = categoriesSummary.categories.find(c => c.name === categoryName);
+            if (!category) return;
+
+            // Load and render use cases incrementally
+            const allUseCases = [];
+            let loadedCount = 0;
+
+            for (const fileId of category.files) {
+                const fileData = await loadUseCaseFile(fileId);
+                allUseCases.push(...fileData);
+
+                // Append each use case to the content as it loads
+                fileData.forEach(useCase => {
+                    const itemHTML = renderUseCaseItem(useCase);
+                    content.insertAdjacentHTML('beforeend', itemHTML);
+                    loadedCount++;
+                    // Update title with current count
+                    title.textContent = `${categoryName} (${loadedCount})`;
+                });
+            }
+
+            // Cache the complete result
+            categoryDataCache[categoryName] = allUseCases;
 
             // Update URL hash with category name (URL encoded)
             window.location.hash = encodeURIComponent(categoryName);
