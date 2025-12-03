@@ -16,7 +16,7 @@
 */
 
 /**
- * Document-specific text normalization rules from .verific-meta.json
+ * Document-specific text normalization rules from .verification-meta.json
  *
  * Supports two types of normalization:
  * 1. charNormalization: Compact notation for single-character mappings
@@ -126,7 +126,7 @@ function applyOcrNormalizationRules(text, rules) {
  * Apply all document-specific normalization rules
  *
  * @param {string} text - Input text
- * @param {Object} metadata - Parsed .verific-meta.json content
+ * @param {Object} metadata - Parsed .verification-meta.json content
  * @returns {string} - Normalized text
  */
 function applyDocumentSpecificNormalization(text, metadata) {
@@ -151,17 +151,17 @@ function applyDocumentSpecificNormalization(text, metadata) {
 }
 
 /**
- * Fetch .verific-meta.json from a base URL
+ * Fetch .verification-meta.json from a base URL
  *
  * @param {string} baseUrl - Base URL (e.g., "https://example.com/receipts/hotel")
  * @returns {Promise<Object|null>} - Parsed metadata or null if not found
  */
 async function fetchMetadata(baseUrl) {
     try {
-        // Construct metadata URL by appending /.verific-meta.json
+        // Construct metadata URL by appending /.verification-meta.json
         const metadataUrl = baseUrl.endsWith('/')
-            ? `${baseUrl}.verific-meta.json`
-            : `${baseUrl}/.verific-meta.json`;
+            ? `${baseUrl}.verification-meta.json`
+            : `${baseUrl}/.verification-meta.json`;
 
         const response = await fetch(metadataUrl);
 

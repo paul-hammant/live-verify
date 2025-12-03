@@ -84,7 +84,7 @@ npm run test:e2e -- screenshot-verification
 
 **Design for Testability:**
 
-The app exposes test seams via `window.verificApp.processImageCanvas()` that allows E2E tests to inject images directly into the verification pipeline without requiring camera access. See `e2e/test-helpers.js` for usage.
+The app exposes test seams via `window.liveVerifyApp.processImageCanvas()` that allows E2E tests to inject images directly into the verification pipeline without requiring camera access. See `e2e/test-helpers.js` for usage.
 
 **Fixtures:**
 - PNG fixtures and matching .txt files under `test/fixtures/` are checked in

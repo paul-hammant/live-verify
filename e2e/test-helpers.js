@@ -4,7 +4,7 @@
     This file contains test-specific orchestration logic that was previously
     embedded in production code. Following "Design for Testability" principles:
 
-    - Production code (verific-app.js) exposes clean seams via window.verificApp
+    - Production code (live-verify-app.js) exposes clean seams via window.liveVerifyApp
     - Test code (this file) handles mocking, setup, and orchestration
     - Zero test logic ships in production bundle
 
@@ -21,17 +21,17 @@
  * @param {Page} page - Playwright page object
  * @param {string} base64Image - Base64-encoded image data
  * @param {string} expectedHash - Expected hash for mock comparison (empty string for discovery mode)
- * @param {Object} injectedVerificMeta - Optional .verific-meta.json to inject (for OCR normalization testing)
+ * @param {Object} injectedVerifcationMeta - Optional .verification-meta.json to inject (for OCR normalization testing)
  * @returns {Promise<Object>} Test result with success, extracted values, etc.
  */
-export async function testVerifyFromBase64(page, base64Image, expectedHash, injectedVerificMeta = null) {
-    // Mock .verific-meta.json fetch if provided (Design for Testability: mock at network layer)
-    if (injectedVerificMeta) {
-        await page.route('**/.verific-meta.json', async route => {
+export async function testVerifyFromBase64(page, base64Image, expectedHash, injectedVerificationMeta = null) {
+    // Mock .verification-meta.json fetch if provided (Design for Testability: mock at network layer)
+    if (injectedVerificationMeta) {
+        await page.route('**/.verification-meta.json', async route => {
             await route.fulfill({
                 status: 200,
                 contentType: 'application/json',
-                body: JSON.stringify(injectedVerificMeta)
+                body: JSON.stringify(injectedVerificationMeta)
             });
         });
     }
@@ -52,8 +52,8 @@ export async function testVerifyFromBase64(page, base64Image, expectedHash, inje
             const ctx = canvas.getContext('2d');
             ctx.drawImage(img, 0, 0);
 
-            // TEST ORCHESTRATION: Use verificApp seams to run pipeline with mocked verification
-            const app = window.verificApp;
+            // TEST ORCHESTRATION: Use liveVerifyApp seams to run pipeline with mocked verification
+            const app = window.liveVerifyApp;
 
             // Reset UI state
             app.resetForTest();

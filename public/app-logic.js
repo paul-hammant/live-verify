@@ -153,7 +153,7 @@ function hashMatchesUrl(claimedUrl, computedHash) {
 }
 
 /**
- * Fetch .verific-meta.json from the base URL
+ * Fetch .verification-meta.json from the base URL
  * @param {string} baseUrl - Base URL (verify:, vfy:, or https://)
  * @returns {Promise<Object|null>} - Metadata object or null if not found
  */
@@ -169,8 +169,8 @@ async function fetchVerificMeta(baseUrl) {
             httpsBase = `https://${baseUrl.substring(4)}`;
         }
 
-        // Fetch .verific-meta.json
-        const metaUrl = `${httpsBase}/.verific-meta.json`;
+        // Fetch .verification-meta.json
+        const metaUrl = `${httpsBase}/.verification-meta.json`;
         const response = await fetch(metaUrl);
 
         if (response.status === 200) {
@@ -178,7 +178,7 @@ async function fetchVerificMeta(baseUrl) {
         }
         return null;
     } catch (error) {
-        console.log('Could not fetch .verific-meta.json:', error.message);
+        console.log('Could not fetch .verification-meta.json:', error.message);
         return null;
     }
 }

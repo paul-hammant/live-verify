@@ -36,7 +36,7 @@ test.describe('PSL library integration in browser', () => {
 
   test('should extract domain from GitHub Pages URL', async ({ page }) => {
     const result = await page.evaluate(() =>
-      window.testExtractDomainAuthority('https://paul-hammant.github.io/verific/c')
+      window.testExtractDomainAuthority('https://paul-hammant.github.io/live-verify/c')
     );
 
     expect(result.success).toBe(true);

@@ -101,9 +101,9 @@ describe('OCR Hash Verification', () => {
 
     it('should handle multi-line text with leading pipes', () => {
       const input = `| Awarded to: Ponder Stibbons
-| verify:paul-hammant.github.io/verific/c`;
+| verify:paul-hammant.github.io/live-verify/c`;
       const expected = `Awarded to: Ponder Stibbons
-verify:paul-hammant.github.io/verific/c`;
+verify:paul-hammant.github.io/live-verify/c`;
       expect(normalizeText(input)).toBe(expected);
     });
 

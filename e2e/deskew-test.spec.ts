@@ -38,8 +38,8 @@ Permitted: AM, Al, A, B, C`;
 // 1. Deskew (using OpenCV only) detects ~-5° angle → rotates by ~+5° → image is now at 180° (upside down but straight)
 // 2. Tesseract tries OCR at 0°, 90°, 270°, 180° on that deskewed image
 // 3. Tesseract finds best confidence at 180° rotation
-// 4. Our code rotates the cropped canvas by 180° (verific-app.js line 436): cropped = rotateCanvas(cropped, 180)
-// 5. The rotated canvas is saved to croppedImage.src (verific-app.js line 440)
+// 4. Our code rotates the cropped canvas by 180° (live-verify-app.js line 436): cropped = rotateCanvas(cropped, 180)
+// 5. The rotated canvas is saved to croppedImage.src (live-verify-app.js line 440)
 // 6. Test keeps the text from the most confident rotation of #2 (the 180° OCR result) and the rotated image from #4
 
 test.describe('Deskewing Functionality', () => {
@@ -56,12 +56,12 @@ test.describe('Deskewing Functionality', () => {
         await page.goto('http://localhost:8000/', { waitUntil: 'networkidle', timeout: 30000 });
 
         // Wait for dependencies
-        console.log('Waiting for OpenCV, Tesseract, and verificApp seams to load...');
+        console.log('Waiting for OpenCV, Tesseract, and liveVerifyApp seams to load...');
         await page.waitForFunction(() => {
             const ready = {
                 cvReady: !!window.cvReady,
                 tesseract: !!window.Tesseract,
-                appSeams: !!window.verificApp && typeof window.verificApp.processImageCanvas === 'function'
+                appSeams: !!window.liveVerifyApp && typeof window.liveVerifyApp.processImageCanvas === 'function'
             };
             return ready.cvReady && ready.tesseract && ready.appSeams;
         }, { timeout: 90000 });

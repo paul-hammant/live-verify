@@ -14,7 +14,7 @@ This is a **100% client-side web application** for verifying physical documents 
 ### 2. URL-Based Verification (Not Local Database)
 The document itself contains:
 - Certification text within black square registration marks
-- Verification base URL printed below the text (e.g., `verify:paul-hammant.github.io/verific/c`)
+- Verification base URL printed below the text (e.g., `verify:paul-hammant.github.io/live-verify/c`)
 
 The app:
 1. Uses **OpenCV.js** to detect the black square registration marks
@@ -38,13 +38,13 @@ The app:
 ## File Structure
 
 ```
-verific/
+live-verify/
 ├── public/                          # Deploy this folder to GitHub Pages
 │   ├── index.html                   # Camera UI with registration marks overlay
 │   ├── styles.css                   # Responsive design, mobile-first
 │   ├── normalize.js                 # Text normalization + SHA-256 (TESTED)
 │   ├── app-logic.js                 # Pure functions for URL extraction, rotation (TESTED)
-│   ├── verific-app.js             # Main app logic (camera, OCR, verification)
+│   ├── live-verify-app.js             # Main app logic (camera, OCR, verification)
 │   ├── test-normalization.html      # Interactive test page for normalization
 │   ├── cv/
 │   │   ├── geometry.js              # OpenCV geometry utilities (TESTED)
@@ -55,7 +55,7 @@ verific/
 │   │   ├── master-applied-anthropics.html
 │   │   └── doctorate-high-energy-magic.html
 │   ├── c/
-│   │   ├── .verific-meta.json       # Document normalization rules + OCR settings (optional)
+│   │   ├── .verification-meta.json       # Document normalization rules + OCR settings (optional)
 │   │   └── {hash}/index.html        # Static verification endpoints (200 + "OK")
 │   └── hashes.json                  # Hash database metadata
 │
@@ -207,8 +207,8 @@ Falls back to canvas capture from video element if ImageCapture not supported.
 **Verification URL schemes: `verify:` and `vfy:`**
 
 Documents should print base URLs using either the long `verify:` scheme or the short `vfy:` alias instead of `https://`:
-- Example (long): `verify:paul-hammant.github.io/verific/c`
-- Example (short): `vfy:paul-hammant.github.io/verific/c`
+- Example (long): `verify:paul-hammant.github.io/live-verify/c`
+- Example (short): `vfy:paul-hammant.github.io/live-verify/c`
 
 The app converts either form to `https://` and appends the computed hash:
 - `verify:example.com/c` → `https://example.com/c/{hash}`
@@ -216,13 +216,13 @@ The app converts either form to `https://` and appends the computed hash:
 
 This keeps printed documents concise while remaining explicit that the URL is for verification.
 
-**Document-Specific Normalization (`.verific-meta.json`):**
+**Document-Specific Normalization (`.verification-meta.json`):**
 
-Issuers can optionally provide document-specific normalization rules and OCR optimization hints at the base URL by hosting a `.verific-meta.json` file:
+Issuers can optionally provide document-specific normalization rules and OCR optimization hints at the base URL by hosting a `.verification-meta.json` file:
 
 ```json
 {
-  "description": "Example .verific-meta.json for hotel receipts with Swiss Franc formatting",
+  "description": "Example .verification-meta.json for hotel receipts with Swiss Franc formatting",
   "charNormalization": "éèêë→e àáâä→a ìíîï→i òóôö→o ùúûü→u ñ→n ç→c",
   "ocrNormalizationRules": [
     {
@@ -241,7 +241,7 @@ Issuers can optionally provide document-specific normalization rules and OCR opt
 }
 ```
 
-If the app finds this file at `https://example.com/c/.verific-meta.json`, it applies the rules in this order:
+If the app finds this file at `https://example.com/c/.verification-meta.json`, it applies the rules in this order:
 
 **1. Text Normalization Rules (applied before standard normalization):**
 - `charNormalization`: Compact notation for character mappings (e.g., `éèêë→e` means é→e, è→e, ê→e, ë→e)
@@ -388,7 +388,7 @@ node build-hashes.js
 Creates:
 - `public/hashes.json` - Metadata for all hashes
 - `public/c/{hash}/index.html` - Verification endpoints
-- Updates build timestamp in `public/verific-app.js`
+- Updates build timestamp in `public/live-verify-app.js`
 
 ### Generate Training Pages
 
@@ -403,7 +403,7 @@ Creates HTML pages for the three training certificates.
 ### GitHub Pages (Current)
 1. Push to GitHub
 2. GitHub Actions runs tests
-3. Deploys `public/` folder to `https://paul-hammant.github.io/verific/`
+3. Deploys `public/` folder to `https://paul-hammant.github.io/live-verify/`
 
 ### Local Testing
 ```bash
@@ -461,7 +461,7 @@ Click the app title to see build timestamp.
 
 ### Test Coverage Expansion
 - Added `app-logic.test.js` (29 tests) for pure functions
-- Extracted testable logic from `verific-app.js`
+- Extracted testable logic from `live-verify-app.js`
 - All production browser code now tested (except DOM/API-dependent code)
 
 ### Documentation Updates
@@ -470,7 +470,7 @@ Click the app title to see build timestamp.
 
 ### Code Deduplication
 - Created `public/normalize.js` as single source of truth
-- Removed duplicate normalization from `verific-app.js` and test pages
+- Removed duplicate normalization from `live-verify-app.js` and test pages
 - Build tool mirrors the same logic
 
 ## Known Limitations
@@ -505,7 +505,7 @@ Click the app title to see build timestamp.
    - HTTP 200 status
    - Body containing "OK" (or "REVOKED" to fail verification)
    - CORS header: `Access-Control-Allow-Origin: *`
-7. **Optional: Host `.verific-meta.json`** at `https://your-org.com/c/.verific-meta.json` with:
+7. **Optional: Host `.verification-meta.json`** at `https://your-org.com/c/.verification-meta.json` with:
    - Document-specific normalization rules (`charNormalization` for diacritics, `ocrNormalizationRules` for regex cleanup)
    - Optional Tesseract OCR optimization settings
    - Character whitelist specific to your document type (in `tesseract` section)
@@ -581,7 +581,7 @@ npm test                    # Should see 68 + 16 tests pass
 ```
 
 ### Key Files to Review
-- `public/verific-app.js` - Main app logic
+- `public/live-verify-app.js` - Main app logic
 - `public/normalize.js` - Normalization (tested)
 - `public/app-logic.js` - Pure functions (tested)
 - `public/cv/detectSquares.js` - Computer vision

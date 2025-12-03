@@ -53,13 +53,13 @@ const result = await navigator.verification.verify(imageBlob, {
 **Status: COMPLETED** - Implemented and documented
 
 ### What Was Built
-Character normalization via `.verific-meta.json` to ensure consistent SHA-256 hashes despite OCR imperfections with special characters (umlauts, accents, etc.).
+Character normalization via `.verification-meta.json` to ensure consistent SHA-256 hashes despite OCR imperfections with special characters (umlauts, accents, etc.).
 
 ### Implementation
 - **Implemented in:** `public/doc-specific-normalization.js` and `public/normalize.js`
-- **Configuration:** `charNormalization` field in `.verific-meta.json`
+- **Configuration:** `charNormalization` field in `.verification-meta.json`
 - **Syntax:** Compact notation `"éèêë→e àáâä→a ìíîï→i òóôö→o ùúûü→u ñ→n ç→c"`
-- **Example:** `public/examples/.verific-meta.json` (Swiss hotel receipts with diacritics)
+- **Example:** `public/examples/.verification-meta.json` (Swiss hotel receipts with diacritics)
 - **Documentation:** LLM.md:220-263
 
 ### How It Works
@@ -76,12 +76,12 @@ Applied before SHA-256 hashing, allowing issuers to define which character subst
 **Status: COMPLETED** - Core functionality implemented and documented
 
 ### What Was Built
-Custom response types via `responseTypes` in `.verific-meta.json`, supporting arbitrary statuses beyond OK/REVOKED.
+Custom response types via `responseTypes` in `.verification-meta.json`, supporting arbitrary statuses beyond OK/REVOKED.
 
 ### Implementation
-- **Implemented in:** `public/verific-app.js` (verification response handling)
-- **Configuration:** `responseTypes` field in `.verific-meta.json`
-- **Example:** `public/c/.verific-meta.json` (OK/GRADUATED/REVOKED statuses)
+- **Implemented in:** `public/live-verify-app.js` (verification response handling)
+- **Configuration:** `responseTypes` field in `.verification-meta.json`
+- **Example:** `public/c/.verification-meta.json` (OK/GRADUATED/REVOKED statuses)
 - **Documentation:** Technical_Concepts.md:194-260
 
 ### How It Works

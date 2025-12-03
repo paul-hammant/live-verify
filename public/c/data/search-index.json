@@ -22652,7 +22652,7 @@
     "builder-warranties": {
       "title": "Builder warranties (new construction)",
       "category": "Real Estate & Property",
-      "snippet": "Prevents forged builder warranties. Domain binding verifies builder/warranty company. Long warranty periods (10-year structural). Defect claim verific"
+      "snippet": "Prevents forged builder warranties. Domain binding verifies builder/warranty company. Long warranty periods (10-year structural). Defect claim verification"
     },
     "builders-risk-insurance": {
       "title": "Builders risk insurance policies",
@@ -23732,7 +23732,7 @@
     "mortgage-employment-verification": {
       "title": "Mortgage employment verification letters",
       "category": "Real Estate & Property",
-      "snippet": "Prevents fake employment letters which are a massive mortgage fraud vector. Domain binding verifies employer legitimacy. Tamper-evident income verific"
+      "snippet": "Prevents fake employment letters which are a massive mortgage fraud vector. Domain binding verifies employer legitimacy. Tamper-evident income verification"
     },
     "mortgage-income-verification": {
       "title": "Mortgage income verification (W-2, pay stubs)",

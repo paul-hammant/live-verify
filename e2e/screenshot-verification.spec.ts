@@ -223,13 +223,13 @@ test.describe('Screenshot Verification Pipeline', () => {
         console.log('Scripts loaded:', scriptsLoaded.length);
 
         // Wait for OpenCV, Tesseract, and app seams to load with better error reporting
-        console.log('Waiting for OpenCV, Tesseract, and verificApp seams to load...');
+        console.log('Waiting for OpenCV, Tesseract, and liveVerifyApp seams to load...');
         try {
             await page.waitForFunction(() => {
                 const ready = {
                     cvReady: !!window.cvReady,
                     tesseract: !!window.Tesseract,
-                    appSeams: !!window.verificApp && typeof window.verificApp.processImageCanvas === 'function'
+                    appSeams: !!window.liveVerifyApp && typeof window.liveVerifyApp.processImageCanvas === 'function'
                 };
                 if (!ready.cvReady || !ready.tesseract || !ready.appSeams) {
                     console.log('Waiting for dependencies:', ready);
@@ -243,7 +243,7 @@ test.describe('Screenshot Verification Pipeline', () => {
                 return {
                     cvReady: !!window.cvReady,
                     tesseract: !!window.Tesseract,
-                    appSeams: !!window.verificApp,
+                    appSeams: !!window.liveVerifyApp,
                     scripts: Array.from(document.querySelectorAll('script[src]')).map(s => (s as HTMLScriptElement).src)
                 };
             });

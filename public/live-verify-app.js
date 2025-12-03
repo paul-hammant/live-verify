@@ -473,10 +473,10 @@ async function processImageCanvas(canvas, captureMethod = 'Unknown') {
     const certText = extractCertText(rawText, urlLineIndex);
     debugLog(`Cert text: ${certText.substring(0, 50)}...`);
 
-    // Fetch .verific-meta.json for OCR normalization rules (if available)
+    // Fetch .verification-meta.json for OCR normalization rules (if available)
     const meta = await fetchVerificMeta(baseUrl);
     if (meta) {
-        console.log('Using normalization rules from .verific-meta.json:', meta);
+        console.log('Using normalization rules from .verification-meta.json:', meta);
     }
 
     // Normalize text according to the rules
@@ -505,15 +505,15 @@ async function processImageCanvas(canvas, captureMethod = 'Unknown') {
     updateStatus('🌐', 'Verifying against claimed URL...', '#ed8936');
     const verifyResult = await verifyAgainstClaimedUrl(fullVerificationUrl, hash);
 
-    // If 404, try fetching .verific-meta.json and retry with optimized OCR
+    // If 404, try fetching .verification-meta.json and retry with optimized OCR
     if (verifyResult.status === 404) {
-        console.log('Got 404, attempting to fetch .verific-meta.json for optimized OCR retry...');
+        console.log('Got 404, attempting to fetch .verification-meta.json for optimized OCR retry...');
         updateStatus('🔍', 'Fetching OCR optimization settings...', '#ed8936');
 
         const meta = await fetchVerificMeta(baseUrl);
 
         if (meta && meta.tesseract) {
-            console.log('Found .verific-meta.json, retrying OCR with optimized settings:', meta.tesseract);
+            console.log('Found .verification-meta.json, retrying OCR with optimized settings:', meta.tesseract);
             debugLog('Retrying OCR with domain-specific settings...');
 
             // Retry OCR with optimized Tesseract settings
@@ -571,7 +571,7 @@ async function processImageCanvas(canvas, captureMethod = 'Unknown') {
                 console.log('Retry OCR also failed at all orientations');
             }
         } else {
-            console.log('No .verific-meta.json found or no tesseract settings');
+            console.log('No .verification-meta.json found or no tesseract settings');
         }
     }
 
@@ -786,7 +786,7 @@ async function verifyAgainstClaimedUrl(claimedUrl, computedHash) {
             // Show the actual status from the server (e.g., "REVOKED")
             const status = statusText;
 
-            // Try to fetch .verific-meta.json to get custom responseTypes
+            // Try to fetch .verification-meta.json to get custom responseTypes
             const meta = await fetchVerificMeta(currentBaseUrl);
             let displayText = `❌ ${status}`;
             let statusClass = 'not-found';
@@ -797,7 +797,7 @@ async function verifyAgainstClaimedUrl(claimedUrl, computedHash) {
                 displayText = responseType.class === 'affirming' ? `✅ ${responseType.text}` : `❌ ${responseType.text}`;
                 statusClass = responseType.class === 'affirming' ? 'verified' : 'not-found';
                 learnMoreLink = responseType.link;
-                console.log(`Using custom response type from .verific-meta.json: ${status}`);
+                console.log(`Using custom response type from .verification-meta.json: ${status}`);
             }
 
             verificationStatus.textContent = displayText;
@@ -946,7 +946,7 @@ downloadImageBtn.addEventListener('click', () => {
     // Create a temporary link element to trigger download
     const link = document.createElement('a');
     link.href = img.src; // This is already a data URL from canvas
-    link.download = `verific-capture-${Date.now()}.png`;
+    link.download = `live-verify-capture-${Date.now()}.png`;
 
     // Append to body, click, and remove (needed for Firefox)
     document.body.appendChild(link);
@@ -970,7 +970,7 @@ downloadImageBtn.addEventListener('click', () => {
 //
 // This is similar to Java's interface-based mocking, but leverages JavaScript's
 // dynamic nature to allow test code to swap implementations as needed.
-window.verificApp = {
+window.liveVerifyApp = {
     // Core pipeline function - same code path as production
     processImageCanvas,
 

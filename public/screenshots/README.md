@@ -1,6 +1,6 @@
 # Training Page Screenshots
 
-This directory contains screenshots of the verific training pages, generated for documentation and demo purposes.
+This directory contains screenshots of the live-verify training pages, generated for documentation and demo purposes.
 
 ## Generation
 
@@ -22,7 +22,7 @@ E2E tests reference base screenshots from this directory. Rotated variants are k
 
 These screenshots can be:
 - Embedded in documentation (e.g., Use_Case-Sales_Receipts.md)
-- Linked from the web: `https://paul-hammant.github.io/verific/screenshots/uk-coffee-shop.png`
+- Linked from the web: `https://paul-hammant.github.io/live-verify/screenshots/uk-coffee-shop.png`
 - Used for demos and presentations
 
 ## File Naming

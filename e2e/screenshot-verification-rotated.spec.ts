@@ -20,9 +20,9 @@ import * as fs from 'fs';
 import * as path from 'path';
 import { testVerifyFromBase64 } from './test-helpers.js';
 
-// Load .verific-meta.json files for domain-specific normalization
+// Load .verification-meta.json files for domain-specific normalization
 const HOTEL_RECEIPT_META = JSON.parse(
-    fs.readFileSync(path.join(__dirname, '../public/examples/.verific-meta.json'), 'utf-8')
+    fs.readFileSync(path.join(__dirname, '../public/examples/.verification-meta.json'), 'utf-8')
 );
 
 // Configure longer timeout for these tests (OCR can be slow)
@@ -373,13 +373,13 @@ test.describe('Screenshot Verification Pipeline - Rotated Images', () => {
         console.log('Scripts loaded:', scriptsLoaded.length);
 
         // Wait for OpenCV, Tesseract, and app seams to load with better error reporting
-        console.log('Waiting for OpenCV, Tesseract, and verificApp seams to load...');
+        console.log('Waiting for OpenCV, Tesseract, and liveVerifyApp seams to load...');
         try {
             await page.waitForFunction(() => {
                 const ready = {
                     cvReady: !!window.cvReady,
                     tesseract: !!window.Tesseract,
-                    appSeams: !!window.verificApp && typeof window.verificApp.processImageCanvas === 'function'
+                    appSeams: !!window.liveVerifyApp && typeof window.liveVerifyApp.processImageCanvas === 'function'
                 };
                 if (!ready.cvReady || !ready.tesseract || !ready.appSeams) {
                     console.log('Waiting for dependencies:', ready);
@@ -393,7 +393,7 @@ test.describe('Screenshot Verification Pipeline - Rotated Images', () => {
                 return {
                     cvReady: !!window.cvReady,
                     tesseract: !!window.Tesseract,
-                    appSeams: !!window.verificApp,
+                    appSeams: !!window.liveVerifyApp,
                     scripts: Array.from(document.querySelectorAll('script[src]')).map(s => (s as HTMLScriptElement).src)
                 };
             });
@@ -417,7 +417,7 @@ test.describe('Screenshot Verification Pipeline - Rotated Images', () => {
             const screenshotBuffer = fs.readFileSync(screenshotPath);
             const screenshotBase64 = screenshotBuffer.toString('base64');
 
-            // Determine if this test needs .verific-meta.json injection
+            // Determine if this test needs .verification-meta.json injection
             const injectedMeta = testCase.screenshot.includes('hotel-receipt') ? HOTEL_RECEIPT_META : null;
 
             // Run verification pipeline using test helper

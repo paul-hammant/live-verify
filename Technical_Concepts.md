@@ -247,9 +247,9 @@ See [Use_Case-Medical_License.md](Use_Case-Medical_License.md) for detailed JSON
 
 ### Extended Response with Metadata
 
-**Using `.verific-meta.json` configuration:**
+**Using `.verification-meta.json` configuration:**
 
-Organizations can host `https://example.com/c/.verific-meta.json` to define custom response types:
+Organizations can host `https://example.com/c/.verification-meta.json` to define custom response types:
 
 ```json
 {
@@ -268,7 +268,7 @@ Organizations can host `https://example.com/c/.verific-meta.json` to define cust
 }
 ```
 
-See [README.md: For Organizations Creating Verifiable Documents](README.md#for-organizations-creating-verifiable-documents) for complete `.verific-meta.json` specification.
+See [README.md: For Organizations Creating Verifiable Documents](README.md#for-organizations-creating-verifiable-documents) for complete `.verification-meta.json` specification.
 
 ---
 

@@ -31,7 +31,7 @@ describe('UI State Machine - Code Analysis', () => {
 
     beforeAll(() => {
         // Load the actual app code
-        appCode = fs.readFileSync(path.join(__dirname, '..', 'public', 'verific-app.js'), 'utf8');
+        appCode = fs.readFileSync(path.join(__dirname, '..', 'public', 'live-verify-app.js'), 'utf8');
     });
 
     describe('Initial state in HTML', () => {

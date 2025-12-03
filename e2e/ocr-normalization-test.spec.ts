@@ -37,12 +37,12 @@ test.describe('OCR Character Normalization', () => {
         await page.goto('http://localhost:8000/', { waitUntil: 'networkidle', timeout: 30000 });
 
         // Wait for dependencies
-        console.log('Waiting for OpenCV, Tesseract, and verificApp seams to load...');
+        console.log('Waiting for OpenCV, Tesseract, and liveVerifyApp seams to load...');
         await page.waitForFunction(() => {
             const ready = {
                 cvReady: !!window.cvReady,
                 tesseract: !!window.Tesseract,
-                appSeams: !!window.verificApp && typeof window.verificApp.processImageCanvas === 'function'
+                appSeams: !!window.liveVerifyApp && typeof window.liveVerifyApp.processImageCanvas === 'function'
             };
             return ready.cvReady && ready.tesseract && ready.appSeams;
         }, { timeout: 90000 });
@@ -56,10 +56,10 @@ test.describe('OCR Character Normalization', () => {
         const screenshotBuffer = fs.readFileSync(screenshotPath);
         const screenshotBase64 = screenshotBuffer.toString('base64');
 
-        // Inject OCR normalization rules from .verific-meta.json
+        // Inject OCR normalization rules from .verification-meta.json
         // Note: OCR may misread German umlauts as other accented characters
         const injectedMeta = {
-            "description": "Test .verific-meta.json for hotel receipts with Swiss Franc formatting",
+            "description": "Test .verification-meta.json for hotel receipts with Swiss Franc formatting",
             "charNormalization": "éèêë→e àáâä→a ìíîï→i òóôö→o ùúûü→u ñ→n ç→c",
             "ocrNormalizationRules": [
                 {

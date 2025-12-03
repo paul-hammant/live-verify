@@ -124,10 +124,10 @@ Creates HTML training certificates for testing.
 ## File Structure
 
 ```
-verific/
+live-verify/
 ├── public/                   # Static files (deploy this to GitHub Pages)
 │   ├── index.html            # Camera UI
-│   ├── verific-app.js        # Main app logic
+│   ├── live-verify-app.js        # Main app logic
 │   ├── normalize.js          # Text normalization + SHA-256
 │   ├── app-logic.js          # Pure functions (URL extraction, rotation)
 │   ├── cv/
@@ -181,7 +181,7 @@ verific/
 1. Push to main/master branch
 2. GitHub Actions runs tests
 3. Deploys `public/` folder automatically
-4. Live at: `https://paul-hammant.github.io/verific/`
+4. Live at: `https://paul-hammant.github.io/live-verify/`
 
 ### Other Static Hosts
 - **Netlify**: Drag & drop `public/` folder

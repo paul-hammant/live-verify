@@ -169,7 +169,7 @@ This preserves the test logic while preventing CI failures.
 
 ## Related Issues
 
-- [Tesseract.js Issue #1](https://github.com/paul-hammant/verific/issues/1) - OCR accuracy lower than native Tesseract C++
+- [Tesseract.js Issue #1](https://github.com/paul-hammant/live-verify/issues/1) - OCR accuracy lower than native Tesseract C++
 - See `TESSERACT_BUG_REPORT.md` for detailed C++ vs WASM comparison
 
 ---
