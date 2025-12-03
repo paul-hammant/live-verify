@@ -135,7 +135,7 @@ verify:paul-hammant.github.io/live-verify/c`;
 
         it('should remove spaces from verify: URL', () => {
             const rawText = `Text
-v e r i f y : e x a m p l e . c o m / v e r i f i c`;
+v e r i f y : e x a m p l e . c o m / v e r i f i c a t i o n`;
 
             const result = extractVerificationUrl(rawText);
             expect(result.url).toBe('verify:example.com/verification');
@@ -177,7 +177,7 @@ vfy:paul-hammant.github.io/live-verify/c`;
 
         it('should remove spaces from vfy: URL', () => {
             const rawText = `Text
-v f y : e x a m p l e . c o m / v e r i f i c`;
+v f y : e x a m p l e . c o m / v e r i f i c a t i o n`;
 
             const result = extractVerificationUrl(rawText);
             expect(result.url).toBe('vfy:example.com/verification');
@@ -322,9 +322,9 @@ https://example.com`;
         });
 
         it('should preserve case in domain and path', () => {
-            const baseUrl = 'verify:Example.COM/VeRiFiC';
+            const baseUrl = 'verify:Example.COM/VeRiFiCation';
             const result = buildVerificationUrl(baseUrl, hash);
-            expect(result).toBe(`https://Example.COM/VeRiFiC/${hash}`);
+            expect(result).toBe(`https://Example.COM/VeRiFiCation/${hash}`);
         });
 
         it('should handle verify: without trailing slash', () => {
@@ -353,9 +353,9 @@ https://example.com`;
         });
 
         it('should preserve case in domain and path for vfy:', () => {
-            const baseUrl = 'vfy:Example.COM/VeRiFiC';
+            const baseUrl = 'vfy:Example.COM/VeRiFiCation';
             const result = buildVerificationUrl(baseUrl, hash);
-            expect(result).toBe(`https://Example.COM/VeRiFiC/${hash}`);
+            expect(result).toBe(`https://Example.COM/VeRiFiCation/${hash}`);
         });
 
         it('should handle vfy: without trailing slash', () => {
