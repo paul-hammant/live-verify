@@ -1,5 +1,5 @@
 {
-  "issuer": "Paul Hammant (Verific Demo)",
+  "issuer": "Paul Hammant (Live Verify Demo)",
   "claimType": "Academic certification from Unseen University",
   "parentAuthorities": [
     "https://en.wikipedia.org/wiki/Unseen_University",

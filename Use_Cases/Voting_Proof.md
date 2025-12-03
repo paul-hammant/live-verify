@@ -45,7 +45,7 @@ Key criteria: Democratic process requiring voter confidence. One-off transaction
 6. App normalizes text (see [Technical_Concepts.md: Text Normalization](Technical_Concepts.md#text-normalization)), computes hash using SHA-256 (see [Technical_Concepts.md: Hash Algorithms](Technical_Concepts.md#hash-algorithms))
 7. App builds URL: `https://election-50.ey.com/{computed_hash}`
 8. Independent auditor (E&Y) responds with verification status "✓ YOUR VOTE WAS COUNTED" (see [Technical_Concepts.md: Response Formats](Technical_Concepts.md#response-formats))
-9. Voter sees that in Verific app.
+9. Voter sees that in Live Verify app.
 
 → Voter sees red "404 not found - please flatten your vote chit and scan again"
 

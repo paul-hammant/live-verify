@@ -214,7 +214,7 @@ The university's verification database stores **ALL** hashes for Jane's degree:
    verify:degrees.ed.ac.uk/c
    ```
 
-3. **HR manager scans the CV claim with Verific app:**
+3. **HR manager scans the CV claim with Live Verify app:**
    - Phone camera OCR extracts plain text easily (95%+ accuracy)
    - App normalizes text: `"BSc Computer Science (First Class)\nUniversity of Edinburgh, 2018\nJane Elizabeth Smith"`
    - Computes SHA-256: `789ghi012jkl...`
@@ -239,7 +239,7 @@ The university's verification database stores **ALL** hashes for Jane's degree:
    Registrar: Dr. Sarah Cunningham-Burley
    ```
 
-4. **Verific app:**
+4. **Live Verify app:**
    - User types text manually (no OCR)
    - App normalizes text
    - Computes SHA-256: `abc123def456...`

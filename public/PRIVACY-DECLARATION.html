@@ -130,15 +130,15 @@
 <body>
     <div class="privacy-container">
         <h1>Privacy Declaration</h1>
-        <p class="tagline">Verific: OCR to hash verifier</p>
+        <p class="tagline">Live Verify: OCR to hash verifier</p>
 
         <div class="highlight">
-            <strong>TL;DR:</strong> Verific runs entirely in your browser. Your scanned documents never leave your device. The app only makes minimal HTTP GET requests to verify hashes against public certification servers.
+            <strong>TL;DR:</strong> Live Verify runs entirely in your browser. Your scanned documents never leave your device. The app only makes minimal HTTP GET requests to verify hashes against public certification servers.
         </div>
 
         <div class="section">
-            <h2>What Verific Does</h2>
-            <p>Verific is a browser-based application that scans text within registration marks, computes a cryptographic hash, and verifies it against a certification server. The entire OCR and hashing process happens <strong>locally in your browser</strong>.</p>
+            <h2>What Live Verify Does</h2>
+            <p>Live Verify is a browser-based application that scans text within registration marks, computes a cryptographic hash, and verifies it against a certification server. The entire OCR and hashing process happens <strong>locally in your browser</strong>.</p>
         </div>
 
         <div class="section">
@@ -159,7 +159,7 @@
 
         <div class="section">
             <h2>Network Requests: What Gets Sent</h2>
-            <p>Verific makes only two types of HTTP GET requests during the verification process:</p>
+            <p>Live Verify makes only two types of HTTP GET requests during the verification process:</p>
 
             <table>
                 <thead>
@@ -203,7 +203,7 @@
 
         <div class="section">
             <h2>Third-Party Resources</h2>
-            <p>Verific loads the following libraries from CDNs to provide functionality:</p>
+            <p>Live Verify loads the following libraries from CDNs to provide functionality:</p>
             <ul>
                 <li><strong>Tesseract.js</strong> (cdn.jsdelivr.net) - OCR engine for text extraction</li>
                 <li><strong>OpenCV.js</strong> (docs.opencv.org) - Computer vision for image processing</li>
@@ -213,7 +213,7 @@
         </div>
 
         <div class="section">
-            <h2>What Verific Does NOT Do</h2>
+            <h2>What Live Verify Does NOT Do</h2>
             <div class="highlight">
                 <ul style="margin: 0;">
                     <li><strong>Does NOT store scans:</strong> No images or text are saved, cached, or persisted</li>
@@ -228,7 +228,7 @@
 
         <div class="section">
             <h2>Data Retention</h2>
-            <p>Verific has <strong>zero data retention</strong>:</p>
+            <p>Live Verify has <strong>zero data retention</strong>:</p>
             <ul>
                 <li>Images exist only in browser memory during active scanning sessions</li>
                 <li>Extracted text is discarded when you close the browser tab</li>
@@ -239,7 +239,7 @@
 
         <div class="section">
             <h2>Browser Permissions</h2>
-            <p>Verific requests the following browser permissions:</p>
+            <p>Live Verify requests the following browser permissions:</p>
             <ul>
                 <li><strong>Camera access:</strong> Required to capture document images (you must explicitly grant this)</li>
                 <li><strong>Clipboard write:</strong> Used when you click "Copy Hash" or "Copy Image" buttons (optional)</li>
@@ -260,9 +260,9 @@
 
         <div class="section">
             <h2>Verification Server Privacy</h2>
-            <p>When you scan a document, Verific connects to the domain specified in the document's verification URL (e.g., <code>verify:example.com/path</code>). The privacy practices of that certification server are:</p>
+            <p>When you scan a document, Live Verify connects to the domain specified in the document's verification URL (e.g., <code>verify:example.com/path</code>). The privacy practices of that certification server are:</p>
             <ul>
-                <li><strong>Not controlled by Live Verific</strong> - Each organization runs their own server</li>
+                <li><strong>Not controlled by Live Live Verify</strong> - Each organization runs their own server</li>
                 <li><strong>May log HTTP requests</strong> - Standard web server behavior (IP address, timestamp, user agent)</li>
                 <li><strong>Receive only the hash</strong> - No document content is ever transmitted</li>
             </ul>
@@ -271,17 +271,17 @@
 
         <div class="section">
             <h2>Security Considerations</h2>
-            <p>While Verific protects your privacy, users should be aware:</p>
+            <p>While Live Verify protects your privacy, users should be aware:</p>
             <ul>
                 <li><strong>HTTPS required:</strong> Verification URLs are automatically upgraded to HTTPS to prevent interception</li>
-                <li><strong>No server-side trust:</strong> Verific trusts the certification server specified in the document URL</li>
+                <li><strong>No server-side trust:</strong> Live Verify trusts the certification server specified in the document URL</li>
                 <li><strong>Client-side only:</strong> Security depends on your browser's integrity and isolation</li>
             </ul>
         </div>
 
         <div class="section">
             <h2>Questions or Concerns?</h2>
-            <p>If you have questions about this privacy declaration or how Verific handles your data:</p>
+            <p>If you have questions about this privacy declaration or how Live Verify handles your data:</p>
             <ul>
                 <li>Review the <a href="https://github.com/paul-hammant/live-verify/tree/main/public" target="_blank">source code</a> for complete transparency</li>
                 <li>Open an issue on <a href="https://github.com/paul-hammant/live-verify/issues" target="_blank">GitHub</a></li>
@@ -290,7 +290,7 @@
         </div>
 
         <div class="footer-links">
-            <a href="index.html">Back to Verific App</a> ·
+            <a href="index.html">Back to Live Verify App</a> ·
             <a href="https://github.com/paul-hammant/live-verify" target="_blank">View on GitHub</a> ·
             <a href="training-pages/" target="_blank">Training Pages</a>
         </div>

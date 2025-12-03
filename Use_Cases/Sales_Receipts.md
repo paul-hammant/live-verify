@@ -21,7 +21,7 @@ You can test the verification system with these example receipt mockups (HTML re
 **Hotel Receipt:**
 - [Hotel Scheidegg (Switzerland)](https://paul-hammant.github.io/live-verify/training-pages/hotel-receipt-scheidegg.html) - CHF 54.50 restaurant/bar charges
 
-**Note:** These are HTML mockups designed to look like printed receipts. They demonstrate the OCR-to-hash verification system with working `verify:` URLs. You can scan these with the [Verific web app](https://paul-hammant.github.io/live-verify/) by displaying them on one device and scanning with another, or by printing them.
+**Note:** These are HTML mockups designed to look like printed receipts. They demonstrate the OCR-to-hash verification system with working `verify:` URLs. You can scan these with the [Live Verify web app](https://paul-hammant.github.io/live-verify/) by displaying them on one device and scanning with another, or by printing them.
 
 **Example receipt screenshots:**
 
