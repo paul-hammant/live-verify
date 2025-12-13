@@ -68,6 +68,15 @@ const captureInfo = document.getElementById('captureInfo');
 const captureMethodEl = document.getElementById('captureMethod');
 const captureResolutionEl = document.getElementById('captureResolution');
 
+// Camera-native overlay elements
+const successOverlay = document.getElementById('successOverlay');
+const successDomain = document.getElementById('successDomain');
+const failureOverlay = document.getElementById('failureOverlay');
+const failureReason = document.getElementById('failureReason');
+const processingOverlay = document.getElementById('processingOverlay');
+const processingText = document.getElementById('processingText');
+const resultsSection = document.querySelector('.results-section');
+
 let stream = null;
 let deviceOrientation = { alpha: 0, beta: 0, gamma: 0 };
 let currentBaseUrl = null; // Store base URL for re-verification when user edits normalized text
@@ -83,6 +92,75 @@ function debugLog(msg) {
     debugConsole.style.display = 'block';
     console.log(msg); // Also log to real console
 }
+
+// ============================================================================
+// Camera-native overlay functions
+// ============================================================================
+
+function showProcessingOverlay(text) {
+    processingText.textContent = text;
+    processingOverlay.style.display = 'flex';
+    successOverlay.style.display = 'none';
+    failureOverlay.style.display = 'none';
+}
+
+function hideProcessingOverlay() {
+    processingOverlay.style.display = 'none';
+}
+
+function showSuccessOverlay(domain) {
+    hideProcessingOverlay();
+    successDomain.textContent = domain;
+    successOverlay.style.display = 'flex';
+    failureOverlay.style.display = 'none';
+
+    // Hide results section on success
+    resultsSection.classList.remove('show-failure');
+}
+
+function showFailureOverlay(reason) {
+    hideProcessingOverlay();
+    failureReason.textContent = reason;
+    failureOverlay.style.display = 'flex';
+    successOverlay.style.display = 'none';
+}
+
+function hideAllOverlays() {
+    processingOverlay.style.display = 'none';
+    successOverlay.style.display = 'none';
+    failureOverlay.style.display = 'none';
+    resultsSection.classList.remove('show-failure');
+}
+
+// Success overlay tap handler - dismiss and return to camera
+successOverlay.addEventListener('click', () => {
+    hideAllOverlays();
+
+    // Reset for next scan
+    normalizedTextEditorSetup = false;
+    currentBaseUrl = null;
+
+    // Clear the frozen viewfinder
+    const overlayCtx = overlay.getContext('2d');
+    overlayCtx.clearRect(0, 0, overlay.width, overlay.height);
+
+    // Show camera section and capture button
+    document.querySelector('.camera-section').style.display = '';
+    captureBtn.style.display = 'flex';
+    captureBtn.disabled = false;
+    retakeBtn.style.display = 'none';
+});
+
+// Failure overlay tap handler - show details panel
+failureOverlay.addEventListener('click', () => {
+    failureOverlay.style.display = 'none';
+
+    // Show the failure details panel
+    resultsSection.classList.add('show-failure');
+
+    // Show retake button
+    retakeBtn.style.display = '';
+});
 
 async function startStreamWithConstraintsSequence() {
     const attempts = [
@@ -263,7 +341,8 @@ stopCameraBtn.addEventListener('click', () => {
         stream = null;
     }
 
-    // Hide results when stopping camera
+    // Hide all overlays and results
+    hideAllOverlays();
     textResult.style.display = 'none';
     hashResult.style.display = 'none';
     verificationResult.style.display = 'none';
@@ -278,7 +357,8 @@ stopCameraBtn.addEventListener('click', () => {
 
 // Retake button - clear results and show capture button again
 retakeBtn.addEventListener('click', () => {
-    // Hide results
+    // Hide all overlays and results
+    hideAllOverlays();
     textResult.style.display = 'none';
     hashResult.style.display = 'none';
     verificationResult.style.display = 'none';
@@ -288,13 +368,10 @@ retakeBtn.addEventListener('click', () => {
     normalizedTextEditorSetup = false;
     currentBaseUrl = null;
 
-    // Show camera section again (in case it was hidden after successful verification)
+    // Show camera section again
     document.querySelector('.camera-section').style.display = '';
 
-    // Reset button text back to "Retake"
-    retakeBtn.textContent = 'Retake';
-
-    // Clear the frozen viewfinder overlay to show live camera feed again
+    // Clear the frozen viewfinder overlay
     const overlayCtx = overlay.getContext('2d');
     overlayCtx.clearRect(0, 0, overlay.width, overlay.height);
 
@@ -302,13 +379,12 @@ retakeBtn.addEventListener('click', () => {
     captureBtn.style.display = 'flex';
     captureBtn.disabled = false;
     retakeBtn.style.display = 'none';
-
-    updateStatus('✅', 'Camera active - fill the frame; marks just off-screen', '#48bb78');
 });
 
 // Verify Another button - same behavior as Retake
 verifyAnotherBtn.addEventListener('click', () => {
-    // Hide results
+    // Hide all overlays and results
+    hideAllOverlays();
     textResult.style.display = 'none';
     hashResult.style.display = 'none';
     verificationResult.style.display = 'none';
@@ -323,7 +399,7 @@ verifyAnotherBtn.addEventListener('click', () => {
     // Show camera section again
     document.querySelector('.camera-section').style.display = '';
 
-    // Clear the frozen viewfinder overlay to show live camera feed again
+    // Clear the frozen viewfinder overlay
     const overlayCtx = overlay.getContext('2d');
     overlayCtx.clearRect(0, 0, overlay.width, overlay.height);
 
@@ -331,8 +407,6 @@ verifyAnotherBtn.addEventListener('click', () => {
     captureBtn.style.display = 'flex';
     captureBtn.disabled = false;
     retakeBtn.style.display = 'none';
-
-    updateStatus('✅', 'Camera active - fill the frame; marks just off-screen', '#48bb78');
 });
 
 // Core processing function - extracted for testability
@@ -352,27 +426,19 @@ async function processImageCanvas(canvas, captureMethod = 'Unknown') {
         overlayCtx.drawImage(canvas, 0, 0, overlay.width, overlay.height);
     }
 
-    // NOW show processing status and progress bar
-    updateStatus('⏳', 'Processing...', '#ed8936');
-    progressBar.style.display = 'block';
-
-    // Scroll to the processing section
-    progressBar.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    // Show processing overlay (camera-native UX)
+    showProcessingOverlay('Detecting...');
 
     // Run OpenCV-based detection (always-on, no silent fallback)
-    updateStatus('🧭', 'Detecting registration square...', '#ed8936');
     await (window.cvReady || Promise.reject(new Error('Computer vision not ready')));
     const detection = await window.detectSquaresFromCanvas(canvas);
 
     if (!detection.ok) {
         // Expected failure: user needs to adjust framing
-        // Show the full captured image so user can see what was captured
         croppedImage.src = canvas.toDataURL();
         textResult.style.display = 'block';
 
-        progressBar.style.display = 'none';
-        updateStatus('❌', 'Could not detect framing rectangle - adjust framing and retry', '#f56565');
-        retakeBtn.style.display = '';
+        showFailureOverlay('No registration marks found');
         return; // Early return, not an exception
     }
 
@@ -380,7 +446,7 @@ async function processImageCanvas(canvas, captureMethod = 'Unknown') {
 
     // Try OCR at multiple orientations and pick the best one
     // Order by likelihood: 0° most common, 90°/270° sideways, 180° very unlikely
-    updateStatus('🔄', 'Detecting text orientation...', '#ed8936');
+    showProcessingOverlay('Reading text...');
     debugLog('Trying orientations (0°, 90°, 270°, 180°)...');
 
     const orientations = [
@@ -419,13 +485,10 @@ async function processImageCanvas(canvas, captureMethod = 'Unknown') {
 
     if (!bestResult) {
         // Expected failure: OCR couldn't extract text at any rotation
-        // Show the cropped image so user can see what was captured
         croppedImage.src = cropped.toDataURL();
         textResult.style.display = 'block';
 
-        progressBar.style.display = 'none';
-        updateStatus('❌', 'OCR could not extract text - try better lighting or focus', '#f56565');
-        retakeBtn.style.display = '';
+        showFailureOverlay('Could not read text');
         return; // Early return, not an exception
     }
 
@@ -454,14 +517,10 @@ async function processImageCanvas(canvas, captureMethod = 'Unknown') {
         // Expected failure: No verification URL found in OCR text
         croppedImage.src = cropped.toDataURL();
         textResult.style.display = 'block';
-
-        // Show the extracted text so user can see what was captured
         extractedText.textContent = rawText;
         switchToTab('extracted');
 
-        progressBar.style.display = 'none';
-        updateStatus('❌', 'No verification URL found in text - check content and retry', '#f56565');
-        retakeBtn.style.display = '';
+        showFailureOverlay('No verification URL found');
         return; // Early return, not an exception
     }
 
@@ -480,7 +539,7 @@ async function processImageCanvas(canvas, captureMethod = 'Unknown') {
     }
 
     // Normalize text according to the rules
-    updateStatus('🔧', 'Normalizing text...', '#ed8936');
+    showProcessingOverlay('Normalizing...');
     const normalized = normalizeText(certText, meta);
     debugLog(`Normalized: ${normalized.length} chars`);
     console.log('Normalized Text:', normalized);
@@ -490,7 +549,7 @@ async function processImageCanvas(canvas, captureMethod = 'Unknown') {
     switchToTab('normalized');
 
     // Generate SHA-256 hash
-    updateStatus('🔐', 'Generating hash...', '#ed8936');
+    showProcessingOverlay('Verifying...');
     const hash = await sha256(normalized);
     console.log('SHA-256 Hash:', hash);
 
@@ -502,13 +561,12 @@ async function processImageCanvas(canvas, captureMethod = 'Unknown') {
     console.log('Full Verification URL:', fullVerificationUrl);
 
     // Verify against the full URL
-    updateStatus('🌐', 'Verifying against claimed URL...', '#ed8936');
     const verifyResult = await verifyAgainstClaimedUrl(fullVerificationUrl, hash);
 
     // If 404, try fetching .verification-meta.json and retry with optimized OCR
     if (verifyResult.status === 404) {
         console.log('Got 404, attempting to fetch .verification-meta.json for optimized OCR retry...');
-        updateStatus('🔍', 'Fetching OCR optimization settings...', '#ed8936');
+        showProcessingOverlay('Retrying...');
 
         const meta = await fetchVerificMeta(baseUrl);
 
@@ -517,7 +575,6 @@ async function processImageCanvas(canvas, captureMethod = 'Unknown') {
             debugLog('Retrying OCR with domain-specific settings...');
 
             // Retry OCR with optimized Tesseract settings
-            updateStatus('🔄', 'Retrying OCR with optimized settings...', '#ed8936');
 
             const orientations = [
                 { rotation: 0, canvas: cropped },
@@ -565,7 +622,6 @@ async function processImageCanvas(canvas, captureMethod = 'Unknown') {
                 console.log('Retry Verification URL:', retryFullUrl);
 
                 // Try verification again
-                updateStatus('🌐', 'Verifying with retry hash...', '#ed8936');
                 await verifyAgainstClaimedUrl(retryFullUrl, retryHash);
             } else {
                 console.log('Retry OCR also failed at all orientations');
@@ -575,16 +631,10 @@ async function processImageCanvas(canvas, captureMethod = 'Unknown') {
         }
     }
 
-    progressBar.style.display = 'none';
-    updateStatus('✅', 'Verification complete', '#48bb78');
+    // Hide processing overlay (success/failure overlay already shown by verifyAgainstClaimedUrl)
+    hideProcessingOverlay();
 
-    // Show Retake button after successful capture
-    retakeBtn.style.display = '';
-
-    // Scroll to bottom to show verification result
-    verificationResult.scrollIntoView({ behavior: 'smooth', block: 'end' });
-
-    // Enable manual editing of normalized text with auto re-verification
+    // Enable manual editing of normalized text with auto re-verification (for failure cases)
     setupNormalizedTextEditor();
 }
 
@@ -644,27 +694,13 @@ captureBtn.addEventListener('click', async () => {
 
     } catch (error) {
         console.error('Error processing image:', error);
-        progressBar.style.display = 'none';
+        hideProcessingOverlay();
 
-        // Build detailed error message for debugging
-        let errorDetails = `${error.message || error}`;
-        if (error.stack) {
-            errorDetails += `\n\nStack trace:\n${error.stack}`;
-        }
-        if (error.name) {
-            errorDetails = `${error.name}: ${errorDetails}`;
-        }
-
-        updateStatus('❌', 'Processing failed: ' + (error.message || error), '#f56565');
-
-        // Show detailed error in alert for debugging
-        alert(`Processing failed:\n\n${errorDetails}\n\nCheck browser console for more details.`);
-
-        // Also log to debug console
+        // Log error
         debugLog(`ERROR: ${error.message || error}`);
 
-        // Show Retake button so user can try again
-        retakeBtn.style.display = '';
+        // Show failure overlay with error
+        showFailureOverlay('Processing error');
     }
 });
 
@@ -712,33 +748,25 @@ function setupNormalizedTextEditor() {
 
 // Verify against the claimed URL (returns status code for retry logic)
 async function verifyAgainstClaimedUrl(claimedUrl, computedHash) {
+    // Prepare results section (hidden until failure tap)
     verificationResult.style.display = 'block';
-
-    // Clear previous status classes
     verificationStatus.className = 'verification-status';
 
     // Check if the URL contains the hash (using app-logic.js)
     if (!hashMatchesUrl(claimedUrl, computedHash)) {
-        verificationStatus.textContent = `❌ Hash not found at claimed URL: ${claimedUrl}`;
-        verificationUrl.textContent = '';
+        verificationStatus.textContent = `Hash not found at claimed URL`;
+        verificationUrl.textContent = claimedUrl;
         verificationStatus.classList.add('not-found');
         console.log('Hash mismatch: computed hash not in claimed URL');
 
-        // Show the tabs again if they were hidden (user may want to edit)
         textResult.style.display = 'block';
-
-        // Show visual overlay on video
-        showOverlay('red', 'FAILS VERIFICATION');
+        showFailureOverlay('Hash mismatch');
         return { status: 'HASH_MISMATCH' };
     }
 
     // Extract domain/authority for display
-    // Uses extractDomainAuthority() from domain-authority.js
-    // In browser: falls back to full hostname (psl library not bundled)
-    // In tests: uses psl library to strip subdomains correctly
     const authority = extractDomainAuthority(claimedUrl);
-
-    verificationUrl.innerHTML = `Verifying with: <strong>${authority}</strong><br><small style="color: #718096;">${claimedUrl}</small>`;
+    verificationUrl.innerHTML = `<small style="color: rgba(255,255,255,0.6);">${claimedUrl}</small>`;
 
     // Fetch the URL and verify response
     try {
@@ -746,14 +774,12 @@ async function verifyAgainstClaimedUrl(claimedUrl, computedHash) {
 
         // Check for 200 status
         if (response.status !== 200) {
-            verificationStatus.textContent = `❌ NOT FOUND - URL returned status ${response.status}`;
+            verificationStatus.textContent = `URL returned status ${response.status}`;
             verificationStatus.classList.add('not-found');
             console.log(`Verification failed: HTTP ${response.status}`);
 
-            // Show the tabs again if they were hidden (user may want to edit)
             textResult.style.display = 'block';
-
-            showOverlay('red', 'FAILS VERIFICATION');
+            showFailureOverlay(`Not found (${response.status})`);
             return { status: response.status };
         }
 
@@ -788,66 +814,41 @@ async function verifyAgainstClaimedUrl(claimedUrl, computedHash) {
 
             // Try to fetch .verification-meta.json to get custom responseTypes
             const meta = await fetchVerificMeta(currentBaseUrl);
-            let displayText = `❌ ${status}`;
+            let displayText = status;
             let statusClass = 'not-found';
-            let learnMoreLink = null;
 
             if (meta && meta.responseTypes && meta.responseTypes[status]) {
                 const responseType = meta.responseTypes[status];
-                displayText = responseType.class === 'affirming' ? `✅ ${responseType.text}` : `❌ ${responseType.text}`;
+                displayText = responseType.text || status;
                 statusClass = responseType.class === 'affirming' ? 'verified' : 'not-found';
-                learnMoreLink = responseType.link;
-                console.log(`Using custom response type from .verification-meta.json: ${status}`);
             }
 
             verificationStatus.textContent = displayText;
             verificationStatus.classList.add(statusClass);
             console.log(`Verification failed: response status is "${status}"`);
 
-            // Add "Learn more" link if available
-            if (learnMoreLink) {
-                const learnMore = document.createElement('a');
-                learnMore.href = learnMoreLink;
-                learnMore.target = '_blank';
-                learnMore.textContent = ' Learn more →';
-                learnMore.style.marginLeft = '10px';
-                learnMore.style.color = '#667eea';
-                learnMore.style.textDecoration = 'none';
-                verificationStatus.appendChild(learnMore);
-            }
-
-            // Show the tabs again if they were hidden (user may want to edit)
             textResult.style.display = 'block';
-
-            showOverlay('red', status);
+            showFailureOverlay(displayText);
             return { status: 'NOT_OK', body: status };
         }
 
         // Success: 200 status + "OK" in body
-        verificationStatus.innerHTML = `✅ VERIFIED<br><small style="font-size: 0.9rem; font-weight: normal;">Confirmed by: <strong>${authority}</strong></small>`;
+        verificationStatus.innerHTML = `Verified by ${authority}`;
         verificationStatus.classList.add('verified');
-        showOverlay('green', `VERIFIED by ${authority}`);
 
-        // Hide the camera viewfinder and multi-tab div when verification succeeds
-        document.querySelector('.camera-section').style.display = 'none';
-        textResult.style.display = 'none';
-
-        // Show disclaimer and "Verify Another" button
-        verificationDisclaimer.style.display = 'block';
-        verifyAnotherBtn.style.display = 'inline-block';
+        // Show camera-native success overlay
+        showSuccessOverlay(authority);
 
         return { status: 200, body: 'OK' };
 
     } catch (error) {
         // Network error or CORS issue
         console.error('Could not fetch URL:', error);
-        verificationStatus.textContent = `❌ CANNOT VERIFY - Network error or CORS restriction`;
+        verificationStatus.textContent = `Network error or CORS restriction`;
         verificationStatus.classList.add('not-found');
 
-        // Show the tabs again if they were hidden (user may want to edit)
         textResult.style.display = 'block';
-
-        showOverlay('red', 'FAILS VERIFICATION');
+        showFailureOverlay('Network error');
         return { status: 'NETWORK_ERROR', error };
     }
 }
