@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Source of Funds Declaration - Elbonian National Bank</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @page {
+            size: A4;
+            margin: 20mm;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+        }
+
+        .letterhead {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #333;
+            page-break-inside: avoid;
+        }
+
+        .letterhead h1 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        .letterhead .branch {
+            font-style: italic;
+            color: #555;
+        }
+
+        .letter-section {
+            margin: 25px 0;
+            line-height: 1.7;
+            page-break-inside: avoid;
+        }
+
+        .letter-section p {
+            margin-bottom: 12px;
+        }
+
+        .salutation {
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .certification-box {
+            position: relative;
+            padding: 40px;
+            background: white;
+            margin: 30px 0;
+            page-break-inside: avoid;
+        }
+
+        .registration-marks {
+            position: absolute;
+            top: 8%;
+            left: 2%;
+            right: 10%;
+            bottom: 5%;
+            border: 3px solid black;
+            pointer-events: none;
+        }
+
+        .cert-content {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .cert-content span {
+            display: block;
+            white-space: nowrap;
+        }
+
+        .cert-content .header {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 10px;
+            padding-top: 15px;
+        }
+
+        .cert-content .subheader {
+            font-style: italic;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .cert-content .section {
+            margin-top: 12px;
+        }
+
+        .cert-content .signature {
+            margin-top: 20px;
+            font-style: italic;
+        }
+
+        @media (max-width: 600px) {
+            .cert-content {
+                font-size: 14px;
+            }
+        }
+
+        .verify-url {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 14px;
+            color: black;
+            word-break: break-all;
+        }
+
+        .demo-note {
+            font-size: 12px;
+            color: #666;
+            text-align: center;
+            margin: 15px 0;
+        }
+
+        .demo-note code {
+            background: #f0f0f0;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 11px;
+        }
+
+        .licensing-section {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f9f9f9;
+            border-left: 4px solid #333;
+            page-break-inside: avoid;
+        }
+
+        .licensing-section h3 {
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .licensing-section p {
+            font-size: 13px;
+            line-height: 1.6;
+            color: #444;
+        }
+
+        .signature-block {
+            margin-top: 40px;
+            page-break-inside: avoid;
+        }
+
+        .signature-squiggle {
+            display: block;
+            margin: 10px 0;
+        }
+
+        .signature-block .sig-line {
+            margin-top: 10px;
+            border-top: 1px solid #333;
+            width: 250px;
+            padding-top: 5px;
+            font-size: 13px;
+        }
+
+        .legal-footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ccc;
+            font-size: 11px;
+            color: #555;
+            line-height: 1.5;
+            page-break-inside: avoid;
+        }
+
+        .legal-footer ul {
+            margin: 10px 0 10px 20px;
+        }
+
+        .legal-footer li {
+            margin-bottom: 5px;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="letterhead">
+            <h1>Elbonian Happy Bank</h1>
+            <div class="branch">Mudfordshire Branch, Republic of Elbonia</div>
+        </div>
+
+        <div class="letter-section">
+            <p class="salutation">To Whom It May Concern,</p>
+
+            <p>Please find below our Source of Funds declaration for Mr. Bogdan Krovavyy-Oligarkh, issued in accordance with the <strong>new international standard</strong> for claims verification. The bordered section may be authenticated by scanning with any compatible verification application. As required by the standard, we will revoke this declaration immediately should circumstances change, but without redirecting to a superseding document.</p>
+        </div>
+
+        <div class="certification-box verification-opportunity">
+            <div class="registration-marks"></div>
+
+            <div class="cert-content">
+                <span class="header">Elbonian Happy Bank</span>
+                <span class="subheader">Mudfordshire Branch, Republic of Elbonia</span>
+                <span>Source of Funds Declaration</span>
+                <span class="section">Client: Mr. Bogdan Krovavyy-Oligarkh</span>
+                <span>Passport: ELB-2847193-X</span>
+                <span>Account: EHB-7744-2931-0058</span>
+                <span class="section">Total Assets Declared: USD 47,000,000</span>
+                <span>Primary Source: Family Agricultural Holdings</span>
+                <span>Secondary Source: Strategic Minerals Export</span>
+                <span>Tertiary Source: State Enterprise Privatisation</span>
+                <span class="section">We confirm funds are legitimate.</span>
+                <span>No connection to sanctioned persons.</span>
+                <span class="signature">Chief Compliance Officer: V. Suspichenko</span>
+                <span>Date: 15 November 2024</span>
+                <span>Ref: EHB/KYC/2024/8847</span>
+            </div>
+
+            <div class="verify-url">verify:paul-hammant.github.io/live-verify/c</div>
+        </div>
+
+        <p class="demo-note"><em>(The above would be <strong><code>verify:happy.bank.elbonia/claims/</code></strong> if all this were real rather than demonstrated on GitHub by Paul.<br> Paul cannot actually buy .elbonia domains anyway)</em></p>
+
+        <div class="licensing-section">
+            <h3>Regulatory Status of Issuing Institution</h3>
+            <p>Elbonian Happy Bank (Licence No. CBE/1991/0047) is authorised by the Central Bank of Elbonia to issue Source of Funds declarations. Current licensing status and permitted activities may be verified at:</p>
+            <p><a href="#">https://central-bank.elbonia/institutions/elbonian-happy-bank</a></p>
+        </div>
+
+        <div class="legal-footer">
+            <p><strong>Notice to All Holders of This Document</strong></p>
+            <p>This Source of Funds declaration is issued for a specific regulatory purpose. All parties in possession of this document, including the subject named herein, bear the following responsibilities:</p>
+            <ul>
+                <li>This declaration may only be used for the purpose for which it was issued and must not be altered, reproduced for other purposes, or presented out of context.</li>
+                <li>Recipients must verify the declaration using the verification URL before reliance.</li>
+                <li>The subject of this declaration is responsible for notifying Elbonian Happy Bank of any material change in circumstances that would affect the accuracy of the statements herein.</li>
+                <li>Elbonian Happy Bank reserves the right to revoke this declaration at any time by updating the verification endpoint status.</li>
+            </ul>
+            <p>These restrictions do not apply where disclosure is compelled by court order, legal process, regulatory requirement, or statutory reporting obligations including anti-money laundering provisions. Recipients of legal requests to discover this document should take reasonable steps to verify the legitimacy of the requesting party before disclosure; where such requests are themselves issued using the new international standard for claims verification, recipients should authenticate them accordingly.</p>
+            <p>Unauthorised use or misrepresentation of this document may constitute an offence under Elbonian financial regulations and applicable international law.</p>
+        </div>
+
+        <div class="signature-block">
+            <p>Should you require any additional information regarding this client or this declaration, please contact me or the International Client Services department I am head of.</p>
+
+            <p>Yours faithfully,</p>
+
+            <svg class="signature-squiggle" width="200" height="55" viewBox="0 0 200 55">
+                <!-- Y-ish: two strokes down meeting, then tail -->
+                <path d="M8,8 C12,18 18,22 25,28 M42,6 C38,14 32,22 25,28 C20,35 18,48 22,52"
+                      stroke="#1a1a6e" stroke-width="2" fill="none" stroke-linecap="round"/>
+                <!-- squiggle connecting to P -->
+                <path d="M22,52 C35,48 50,42 65,38 S85,32 95,28"
+                      stroke="#1a1a6e" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+                <!-- P-ish: tall stem with loopy top -->
+                <path d="M95,45 C93,35 92,20 95,10 C100,8 115,6 118,14 C121,22 112,28 95,28"
+                      stroke="#1a1a6e" stroke-width="2" fill="none" stroke-linecap="round"/>
+                <!-- trailing flourish -->
+                <path d="M95,45 C110,48 130,44 150,38 S170,30 185,35"
+                      stroke="#1a1a6e" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            </svg>
+
+            <div class="sig-line">
+                Dr. Yevgeny Propuskayev<br>
+                Head of International Client Services<br>
+                Elbonian Happy Bank (formerly Happy Credit Union of Elbonia)
+            </div>
+        </div>
+    </div>
+</body>
+</html>
