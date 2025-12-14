@@ -40,7 +40,7 @@ The app:
 ```
 live-verify/
 ├── public/                          # Deploy this folder to GitHub Pages
-│   ├── index.html                   # Camera UI with registration marks overlay
+│   ├── camera-app/index.html        # Camera UI with registration marks overlay
 │   ├── styles.css                   # Responsive design, mobile-first
 │   ├── normalize.js                 # Text normalization + SHA-256 (TESTED)
 │   ├── app-logic.js                 # Pure functions for URL extraction, rotation (TESTED)

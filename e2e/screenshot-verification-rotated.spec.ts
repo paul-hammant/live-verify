@@ -357,8 +357,8 @@ test.describe('Screenshot Verification Pipeline - Rotated Images', () => {
         });
 
         // Start local server or navigate to deployed app
-        console.log('Navigating to http://localhost:8000/ (ensure server is running!)');
-        await page.goto('http://localhost:8000/', { waitUntil: 'networkidle', timeout: 30000 });
+        console.log('Navigating to http://localhost:8000/camera-app/ (ensure server is running!)');
+        await page.goto('http://localhost:8000/camera-app/', { waitUntil: 'networkidle', timeout: 30000 });
 
         // Wait for page to fully load
         await page.waitForLoadState('domcontentloaded');

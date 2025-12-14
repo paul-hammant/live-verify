@@ -33,8 +33,8 @@ test.describe('OCR Character Normalization', () => {
         });
 
         // Start local server
-        console.log('Navigating to http://localhost:8000/ (ensure server is running!)');
-        await page.goto('http://localhost:8000/', { waitUntil: 'networkidle', timeout: 30000 });
+        console.log('Navigating to http://localhost:8000/camera-app/ (ensure server is running!)');
+        await page.goto('http://localhost:8000/camera-app/', { waitUntil: 'networkidle', timeout: 30000 });
 
         // Wait for dependencies
         console.log('Waiting for OpenCV, Tesseract, and liveVerifyApp seams to load...');

@@ -126,7 +126,7 @@ Creates HTML training certificates for testing.
 ```
 live-verify/
 ├── public/                   # Static files (deploy this to GitHub Pages)
-│   ├── index.html            # Camera UI
+│   ├── camera-app/index.html # Camera UI
 │   ├── live-verify-app.js        # Main app logic
 │   ├── normalize.js          # Text normalization + SHA-256
 │   ├── app-logic.js          # Pure functions (URL extraction, rotation)

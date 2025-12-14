@@ -128,6 +128,6 @@ The responseTypes mechanism is working, but could benefit from more polished UI 
 - [ ] E2E tests for various receipt statuses
 
 **Related files:**
-- `public/index.html` - Add more CSS classes
+- `public/camera-app/index.html` - Add more CSS classes
 - `public/training-pages/*.html` - Add more status examples
 - `e2e/screenshot-verification.spec.ts` - Add status coverage
