@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Actuarial & Insurance Mathematics",
+    "title": "Reinsurance treaty actuarial opinions",
+    "volume": "Very Small",
+    "retention": "7-20 years (treaty term)",
+    "dataVerified": "Actuary name, ceding company, reinsurer, treaty terms, pricing assumptions, coverage limits",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents fraudulent reinsurance pricing enabling insurer insolvency. Domain binding verifies credentialed actuary. Multi-billion dollar risk transfers between insurers. International reinsurance market. Protects ceding company from inadequate coverage. Critical for catastrophe reinsurance where pricing determines insurer solvency after major disasters."
+  }
+]

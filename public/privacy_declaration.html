@@ -1,0 +1,394 @@
+<!--
+    Copyright (C) 2025, Paul Hammant
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as
+    published by the Free Software Foundation, either version 3 of the
+    License, or (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Declaration - Live Verify</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        html, body {
+            height: auto;
+            overflow-y: auto;
+        }
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            display: block;
+        }
+        .privacy-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+            padding: 40px;
+            color: #1f2a37;
+        }
+        .breadcrumbs {
+            font-size: 0.9em;
+            margin-bottom: 18px;
+            color: #475569;
+        }
+        .breadcrumbs a {
+            color: #475569;
+            text-decoration: none;
+        }
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }
+        .breadcrumbs .sep {
+            margin: 0 8px;
+            opacity: 0.7;
+        }
+        h1 {
+            color: #1f2a37;
+            margin-bottom: 10px;
+            font-size: 2rem;
+        }
+        h2 {
+            color: #1f2a37;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 8px;
+        }
+        h3 {
+            color: #1f2a37;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        .tagline {
+            color: #666;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+        .section {
+            margin-bottom: 25px;
+        }
+        .highlight {
+            background-color: #e8f5e9;
+            border-left: 4px solid #4caf50;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .warning {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        ul, ol {
+            margin: 10px 0;
+            padding-left: 30px;
+        }
+        li {
+            margin: 8px 0;
+            line-height: 1.6;
+        }
+        code {
+            background-color: #f5f5f5;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        .footer-links {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            text-align: center;
+        }
+        .footer-links a {
+            color: #667eea;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid #e0e0e0;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f5f5f5;
+            font-weight: 600;
+            color: #667eea;
+        }
+        tr:nth-child(even) {
+            background-color: #fafafa;
+        }
+    </style>
+</head>
+<body>
+    <div class="privacy-container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <a href="index.html">Home</a><span class="sep">›</span><span>Privacy Declaration</span>
+        </nav>
+        <h1>Privacy Declaration</h1>
+        <p class="tagline">Live Verify: OCR to hash verifier</p>
+
+        <div class="highlight">
+            <strong>TL;DR:</strong> For this prototype, Live Verify runs entirely in your browser—OCR, normalization, and hashing stay on-device. During verification, the only network calls are minimal HTTP GET requests to check hashes against certification servers (plus the initial download of the JS libraries listed below).<br><br>We expect the same multi-step flow to be embedded directly into iOS and Android camera apps (alongside Live Text / Camera Text) with the same on-device privacy posture.
+        </div>
+
+	        <div class="section">
+	            <h2>What Live Verify Does</h2>
+	            <p>
+	                For now, Live Verify is a proof-of-concept browser-based application that scans text within registration marks, computes a cryptographic hash,
+	                and verifies it against a certification server. The entire OCR and hashing process happens <strong>locally in your browser</strong>. Over time, the same
+	                multi-step flow could be embedded directly into iOS and Android camera apps.
+	            </p>
+	            <div class="warning">
+	                <strong>Future native camera apps:</strong> iOS and Android would likely use platform OCR and image processing rather than browser-based
+	                Tesseract/OpenCV. The steps stay the same (OCR → normalize → SHA‑256 → GET hash), but should be faster and more reliable—while keeping the same
+	                on-device privacy posture.
+	            </div>
+	        </div>
+
+	        <div class="section">
+	            <h2>Data Processing: 100% Local</h2>
+	            <p>In this demo / proof-of-concept, all sensitive operations occur entirely within your browser. When these same multi-step features land directly in iOS and Android camera apps, the privacy model should remain the same: on-device and private.</p>
+	            <ul>
+	                <li><strong>Camera access:</strong> Uses browser MediaStream API - you tap to take a picture, which is not saved to your photos and discarded soon after</li>
+	                <li><strong>OCR text extraction:</strong> Performed locally using <a href="https://github.com/tesseract-ocr" target="_blank">Tesseract OCR</a> (open source)</li>
+	                <li><strong>Image processing:</strong> <a href="https://opencv.org/" target="_blank">OpenCV</a> (open source) snips out a rectangle from a larger image - entirely in the browser</li>
+	                <li><strong>Text normalization:</strong> Character mapping happens in the browser page (JavaScript in the web page)</li>
+	                <li><strong>SHA-256 hashing:</strong> Computed locally using browser's built-in <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto" target="_blank">SubtleCrypto API</a></li>
+	            </ul>
+	            <p>
+	                <strong>Future native camera apps:</strong> When this verification flow is embedded into iOS and Android camera apps, the underlying implementation will likely use
+	                platform OCR and image processing (not browser-based Tesseract/OpenCV). The steps stay the same (OCR → normalize → SHA‑256 → GET hash), but should be faster and
+	                more reliable—while keeping the same on-device privacy posture.
+	            </p>
+
+	            <div class="highlight">
+	                <strong>Summary:</strong> Your document images and extracted text never leave your device to complete verification. They are not uploaded to any cloud OCR service and are not transmitted to certification servers.
+	                <div style="margin-top: 10px;">
+	                    Note: the person holding the document is still trusting the verifier (the person using the app) to handle any local copies responsibly. A production deployment could be configured to retain some details locally (or in an approved system) if authorized and legally required.
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Verifier roles, logging, and retention</h2>
+            <p>Verification involves two distinct roles:</p>
+            <ul>
+                <li><strong>Document holder:</strong> The person presenting the claim. e.g., an ID card or printed (or on screen) credential.</li>
+                <li><strong>Verifier/operator:</strong> The person using an OCR-to-hash app to check it (e.g., a door-person, hotel clerk, employer, bank clerk, law enforcement and many more). The operator is going to hand the ID or printed item back to the document holder after processing it.</li>
+            </ul>
+            <p>
+                This prototype is designed to verify without sending document images or plain text off-device. However, a verifier may still have operational and legal obligations
+                about what they do with the information that becomes visible during verification.
+            </p>
+            <ul>
+                <li><strong>Example (nightclub door-person):</strong> An authorized ID-checking app might log the person’s name, ID number, age-check outcome, and entry timestamp to support safety and incident investigation.</li>
+	                <li><strong>Example (law enforcement):</strong> Officers may have access to deeper government systems (e.g., DMV/immigration databases) for in-depth checks beyond what a public hash lookup can provide; logging and retention may be longer, governed by local policy and statute.</li>
+                <li><strong>Retention:</strong> Some deployments may purge such logs after a year; financially important or regulated contexts may retain longer.</li>
+            </ul>
+            <p>
+                It’s also worth noting that parts of the developing world are moving toward fully electronic IDs. In those contexts, a phone tap plus NFC-based ID exchange may become the primary flow,
+                and can be faster than OCR. OCR-to-hash can remain a privacy-preserving fallback for printed documents, screenshots, or situations where NFC is unavailable.
+            </p>
+            <p>
+                These retention choices are about verifier policy and legal compliance—not about the hash verification protocol. The protocol minimizes what needs to be transmitted,
+                but it cannot remove the verifier’s responsibility to handle any locally visible or stored data appropriately.
+            </p>
+        </div>
+
+	        <div class="section">
+	            <h2>Network Requests: What Gets Sent</h2>
+	            <p>Live Verify makes only two types of HTTP GET requests during the verification process:</p>
+	            <div class="warning">
+	                <strong>Future native camera apps:</strong> the verification network behavior can stay the same (a minimal GET to the issuer domain), while removing browser-demo specifics
+	                like downloading OCR/image-processing libraries from third-party CDNs.
+	            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Request Type</th>
+                        <th>Purpose</th>
+                        <th>Data Sent</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Metadata Request</strong></td>
+                        <td>Fetch OCR normalization rules for a domain</td>
+                        <td>None (simple GET)</td>
+                        <td><code>GET https://example.com/.verification-meta.json</code></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Hash Verification</strong></td>
+                        <td>Verify computed hash exists on certification server</td>
+                        <td>SHA-256 hash only (no document content)</td>
+                        <td><code>GET https://example.com/c/abc123...xyz</code></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>What is NOT sent:</h3>
+            <ul>
+                <li>Document images or photos</li>
+                <li>Extracted OCR text (raw or normalized)</li>
+                <li>Camera feed or video frames</li>
+                <li>Personal information or identifiers</li>
+                <li>Geolocation data</li>
+                <li>Device fingerprints</li>
+            </ul>
+
+            <div class="warning">
+                <strong>Important:</strong> The SHA-256 hash sent during verification is a cryptographic one-way function. It is mathematically infeasible to reverse-engineer the original document text from the hash. The hash alone reveals nothing about your document's content.
+            </div>
+            <p>
+                Learn more about the science behind one-way hashing and why such hashes are safe to host publicly (without login) at
+                <a href="one-way-hash.html" target="_blank" rel="noreferrer noopener">one-way-hash.html</a>. At the same time, issuers obviously remain responsible for protecting the plain text documents that underlie those hashes—think PCI-class data separation, strict access control, and logging—so that anyone who could reverse the process still needs the same level of controls you'd expect for any sensitive record.
+            </p>
+        </div>
+
+	        <div class="section">
+	            <h2>Third-Party Resources</h2>
+	            <p>Live Verify loads the following libraries from CDNs to provide functionality:</p>
+	            <div class="warning">
+	                <strong>Future native camera apps:</strong> platform camera apps would use built-in OCR and vision stacks and would not need to load these browser libraries over the network
+	                at runtime.
+	            </div>
+	            <ul>
+	                <li><strong>Tesseract.js</strong> (cdn.jsdelivr.net) - OCR engine for text extraction</li>
+	                <li><strong>OpenCV.js</strong> (docs.opencv.org) - Computer vision for image processing</li>
+	                <li><strong>PSL (Public Suffix List)</strong> (unpkg.com) - Domain parsing for security</li>
+            </ul>
+            <p>These libraries are loaded over HTTPS and execute entirely within your browser's JavaScript sandbox. They do not need to transmit your document images or extracted text anywhere to function. If you want to minimize third-party network dependencies and supply-chain trust, you can self-host these assets.</p>
+        </div>
+
+        <div class="section">
+            <h2>What Live Verify Does NOT Do</h2>
+            <div class="highlight">
+                <ul style="margin: 0;">
+                    <li><strong>Does NOT store scans:</strong> No images or text are saved, cached, or persisted</li>
+                    <li><strong>Does NOT upload documents:</strong> Your scanned content never leaves your browser</li>
+                    <li><strong>Does NOT track users:</strong> No analytics, cookies, or tracking scripts</li>
+                    <li><strong>Does NOT collect personal data:</strong> No registration, accounts, or PII collection</li>
+                    <li><strong>Does NOT use external APIs for OCR:</strong> All text extraction is local</li>
+                    <li><strong>Does NOT send document content to third parties:</strong> This prototype loads JS libraries from CDNs, but verification sends only a hash to the issuer domain</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Data Retention</h2>
+            <p>Live Verify has <strong>zero data retention</strong>:</p>
+            <ul>
+                <li>Images exist only in browser memory during active scanning sessions</li>
+                <li>Extracted text is discarded when you close the browser tab</li>
+                <li>No localStorage, sessionStorage, IndexedDB, or cookies are used</li>
+                <li>Camera access is released when you stop the camera or close the tab</li>
+            </ul>
+        </div>
+
+	        <div class="section">
+	            <h2>Browser Permissions</h2>
+	            <p>Live Verify requests the following browser permissions:</p>
+	            <div class="warning">
+	                <strong>Future native camera apps:</strong> permissions would be handled by the OS (camera permission in Settings), and the “clipboard” concept may not apply at all.
+	            </div>
+	            <ul>
+	                <li><strong>Camera access:</strong> Required to capture document images (you must explicitly grant this)</li>
+	                <li><strong>Clipboard write:</strong> Used when you click "Copy Hash" or "Copy Image" buttons (optional)</li>
+	            </ul>
+            <p>
+                When you close the tab, the page can no longer access your camera. Your browser may remember your allow/deny choice for this site until you change it (some browsers offer
+                “allow once” / session-only permissions, and some may automatically reset unused permissions after a period of time). You can always review or revoke permissions in your
+                browser’s site settings.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Open Source Transparency</h2>
+            <p>Live Verify is fully open source under the <strong>AGPL-3.0-or-later</strong> license. You can:</p>
+            <ul>
+                <li>Inspect the complete source code on <a href="https://github.com/paul-hammant/live-verify" target="_blank">GitHub</a></li>
+                <li>Verify that no data is being exfiltrated</li>
+                <li>Run your own instance on localhost or private servers</li>
+                <li>Audit the code to confirm this privacy declaration</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Verification Server Privacy</h2>
+            <p>When you scan a document, Live Verify connects to the domain specified in the document's verification URL (e.g., <code>verify:example.com/path</code>). The privacy practices of that certification server are:</p>
+            <ul>
+                <li><strong>Not controlled by Live Verify</strong> - Each organization runs their own server</li>
+                <li><strong>May log HTTP requests</strong> - Standard web server behavior (IP address, timestamp, user agent)</li>
+                <li><strong>Receive only the hash</strong> - No document content is ever transmitted</li>
+            </ul>
+            <p>
+                Even though only a hash is sent, logging can still create privacy risk: if a national authority (or any operator) controls or monitors the verification domain, it could log hash lookups and infer that your ID was likely presented to a particular verifier at a particular time—e.g., a hotel chain that serves Nepalese cities and tourist locations—and therefore that you are likely (or that someone using a stolen copy of your ID) in Nepal.
+                This is not a weakness in hashing; it’s ordinary web request metadata. If that risk matters in your context, issuers can mitigate it with careful server-side logging policies, legal controls, and—where appropriate—privacy-preserving proxying or aggregation.
+            </p>
+            <p>For questions about a specific verification server's privacy practices, contact the organization that issued the document.</p>
+        </div>
+
+        <div class="section">
+            <h2>Security Considerations</h2>
+            <p>While Live Verify protects your privacy, users should be aware:</p>
+            <ul>
+                <li><strong>HTTPS required:</strong> Verification URLs are automatically upgraded to HTTPS to prevent interception</li>
+                <li><strong>No server-side trust:</strong> Live Verify trusts the certification server specified in the document URL</li>
+                <li><strong>Client-side only:</strong> Security depends on your browser's integrity and isolation</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Questions or Concerns?</h2>
+            <p>If you have questions about this privacy declaration or how Live Verify handles your data:</p>
+            <ul>
+                <li>Review the <a href="https://github.com/paul-hammant/live-verify/tree/main/public" target="_blank">source code</a> for complete transparency</li>
+                <li>Open an issue on <a href="https://github.com/paul-hammant/live-verify/issues" target="_blank">GitHub</a></li>
+                <li>Contact the project maintainer: Paul Hammant</li>
+            </ul>
+        </div>
+
+        <div class="footer-links">
+            <a href="camera-app/">Back to Live Verify App</a> ·
+            <a href="https://github.com/paul-hammant/live-verify" target="_blank">View on GitHub</a> ·
+            <a href="training-pages/" target="_blank">Training Pages</a>
+        </div>
+
+        <p style="text-align: center; margin-top: 30px; color: #999; font-size: 0.85rem;">
+            Last updated: January 2025
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Agriculture & Food",
+    "title": "Livestock health certificates and pedigrees",
+    "volume": "Small",
+    "retention": "Animal lifetime + 5-10 years",
+    "dataVerified": "Breeder name, owner name, veterinarian, farm location",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents fake pedigrees, health certificates. Domain binding verifies veterinarian/breed registry. High-value breeding stock. Long retention. International trade verification."
+  }
+]

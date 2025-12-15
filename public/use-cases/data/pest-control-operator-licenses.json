@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Professional & Occupational Licenses",
+    "title": "Pest control operator licenses",
+    "volume": "Medium-Small",
+    "retention": "1-3 years (license term)",
+    "dataVerified": "Licensee name, business name, license categories, insurance, issuing authority",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents unlicensed pest control. Domain binding verifies state department of agriculture. Pesticide application compliance. Consumer protection. Liability insurance verification."
+  }
+]

@@ -95,35 +95,40 @@ Organizations *could* include additional fields, but in practice they rarely wou
 
 ### 3. Custom Status Display (.verification-meta.json)
 
-Organizations can optionally define custom display text for status codes in `.verification-meta.json`:
+Organizations can optionally define custom display text so the camera overlay speaks the customer’s language. The `text` value can be as short as “Valid ID” or as long as “Licensed R.N in Texas and states listed on nursecompact.com”.
 
 ```json
 {
   "responseTypes": {
-    "REVOKED": {
-      "text": "License Revoked - Contact Board",
-      "class": "not-found",
-      "link": "https://medicalboard.gov/revocations"
+    "VERIFIED": {
+      "text": "Valid ID—government domain currently attests to the card text",
+      "class": "affirming"
     },
-    "SUSPENDED": {
-      "text": "Temporarily Suspended",
-      "class": "warning",
-      "link": "https://medicalboard.gov/suspensions"
+    "AWARDED": {
+      "text": "Awarded—diploma verified",
+      "class": "affirming"
     },
-    "PROBATION": {
-      "text": "Active - Under Probation",
+    "LICENSED": {
+      "text": "Licensed R.N in Texas and states listed on Nurse Compact website https://nursecompact.com",
       "class": "affirming",
-      "link": "https://medicalboard.gov/probation-info"
+      "link": "https://nursecompact.com"
+    },
+    "REVOKED": {
+      "text": "License revoked—contact board for details",
+      "class": "not-found"
     }
   }
 }
 ```
 
 **Rules:**
-- `text`: Display text shown to user
-- `class`: `"affirming"` (green checkmark) or `"not-found"` (red X) or `"warning"` (yellow)
-- `link`: Optional URL for "Learn more" link
-- Falls back to default display if status not found in responseTypes
+- `text`: Display text shown to the user when the response code matches.
+- `class`: `"affirming"` (green check), `"not-found"` (red X), or `"warning"` (yellow triangle).
+- `link`: Optional “Learn more” URL for longer explanations.
+- Falls back to the default “Claim Verified”/“Denied” text if the response code is missing.
+
+### Real-world example
+Texas has been running Operation Nightingale against fake nursing IDs; the board publishes details at https://www.bon.texas.gov/Operation_Nightingale_Main.asp.html. Use your `.verification-meta.json` to return a status like `"LICENSED"` with `"text": "Licensed R.N in Texas and Nurse Compact states (see https://www.bon.texas.gov/Operation_Nightingale_Main.asp.html)"` so frontline staff see the same warning plus the trusted domain that attests to the credential.
 
 ## Response Decision Tree
 

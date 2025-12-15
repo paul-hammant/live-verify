@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Real Estate & Property",
+    "title": "1031 exchange documentation",
+    "volume": "Very Small",
+    "retention": "7-10 years (IRS audit)",
+    "dataVerified": "Exchanger name, relinquished/replacement properties, intermediary, tax deferral amounts",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents fraudulent 1031 exchanges. Domain binding verifies qualified intermediary. IRS audit trail. Tax compliance. High-value transactions ($500K+ typical)."
+  }
+]

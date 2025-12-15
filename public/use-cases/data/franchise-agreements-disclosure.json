@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Business & Commerce",
+    "title": "Franchise agreements and disclosure documents",
+    "volume": "Small",
+    "retention": "Term + statutory retention",
+    "dataVerified": "Franchisor/franchisee, state addenda",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Ensures latest FDD/addenda in multi-state contexts. Domain binding verifies franchisor."
+  }
+]

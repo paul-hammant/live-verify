@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Media & Publishing",
+    "title": "Copyright registrations and assignments",
+    "volume": "Very Small",
+    "retention": "Permanent (IP rights)",
+    "dataVerified": "Copyright holder name, creator, registration details, jurisdiction",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents fake copyright registrations. Domain binding verifies copyright office (US Copyright Office, etc.). Official documents suitable for OCR. Permanent IP rights. High-value legal protection."
+  }
+]

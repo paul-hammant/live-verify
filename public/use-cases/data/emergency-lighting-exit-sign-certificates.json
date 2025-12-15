@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Safety Inspection Certificates",
+    "title": "Emergency lighting and exit sign inspection certificates",
+    "volume": "Large",
+    "retention": "1 year (annual inspection)",
+    "dataVerified": "Building address, fixture count, inspector, inspection date, battery test results",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents fake emergency lighting certificates. Domain binding verifies inspector. Building code compliance. Occupancy requirement. Prevents life safety violations. Monthly testing documentation."
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Safety Inspection Certificates",
+    "title": "Fire extinguisher inspection tags",
+    "volume": "Very Large",
+    "retention": "1 year (annual inspection)",
+    "dataVerified": "Location, extinguisher serial, inspector/company, inspection date, next due date",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents fake inspection tags. Domain binding verifies fire equipment company. NFPA 10 compliance. Fire code enforcement verification. Prevents expired extinguisher use. Building occupancy requirement."
+  }
+]

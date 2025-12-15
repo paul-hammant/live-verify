@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Retail & Consumer Protection",
+    "title": "Raffle tickets and contest entries",
+    "volume": "Medium",
+    "retention": "3-7 years (legal/tax compliance)",
+    "dataVerified": "Entrant name, contact info, entry details",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents fake winning tickets, duplicate entries. Domain binding verifies legitimate contest operator. Tickets need human readability. Tamper-evident for prize claims."
+  }
+]

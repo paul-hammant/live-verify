@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Banking & Financial Services",
+    "title": "Automated rebalancing confirmations",
+    "volume": "Medium-Small",
+    "retention": "7-10 years (audit trail)",
+    "dataVerified": "Account holder, trades executed, tax-loss harvesting, fees",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Tamper-evident rebalancing records. Domain binding verifies robo-advisor. Tax-loss harvesting documentation (IRS wash-sale rules). Fee transparency. Regulatory audit trail."
+  }
+]

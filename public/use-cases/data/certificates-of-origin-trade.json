@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Logistics & Transportation",
+    "title": "Certificates of origin (preferential/non-preferential)",
+    "volume": "Medium",
+    "retention": "7-10 years (customs audit)",
+    "dataVerified": "Exporter, importer, goods description, origin country, certifying authority",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents fake certificates of origin (tariff fraud). Domain binding verifies chamber of commerce/issuing authority. Free trade agreement compliance (USMCA, EU FTA). Preferential duty rates. Prevents origin fraud."
+  }
+]

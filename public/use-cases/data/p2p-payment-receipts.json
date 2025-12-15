@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Banking & Financial Services",
+    "title": "P2P payment transaction receipts (Venmo, Zelle, Cash App)",
+    "volume": "Medium-Large",
+    "retention": "3-7 years (tax/disputes)",
+    "dataVerified": "Sender, recipient, amount, payment description, timestamp",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents P2P payment disputes (\"I never received payment\"). Domain binding verifies payment platform. Tamper-evident transaction record. Tax reporting for business transactions. Split payment verification (shared expenses, group purchases)."
+  }
+]

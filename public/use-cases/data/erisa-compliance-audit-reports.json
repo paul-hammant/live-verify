@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Actuarial & Insurance Mathematics",
+    "title": "ERISA compliance and audit reports",
+    "volume": "Very Small",
+    "retention": "7-10 years (DOL audit)",
+    "dataVerified": "Plan actuary name, plan sponsor, compliance status, funding requirements, plan year",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents fabricated ERISA compliance reports. Domain binding verifies enrolled actuary (EA) credentials. DOL/IRS audit trail for employee benefit plans. Multi-billion dollar pension plans. Participant protection under ERISA. Criminal penalties for false statements to DOL. Critical for qualified plans where ERISA compliance is legally mandated."
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Professional & Occupational Licenses",
+    "title": "Cosmetology and barber licenses",
+    "volume": "Large",
+    "retention": "1-2 years (renewal)",
+    "dataVerified": "Licensee name, license number, specialty, issuing state board",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents fake cosmetology licenses. Domain binding verifies state board. Salon employment verification. Health/sanitation compliance. Consumer protection."
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Travel & Hospitality",
+    "title": "Online travel agency (OTA) booking confirmations",
+    "volume": "Very Large",
+    "retention": "Travel + 1-3 years",
+    "dataVerified": "Traveler name, booking details, OTA booking reference, supplier confirmation",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents fake OTA bookings (scam booking sites). Domain binding verifies OTA (Booking.com, Expedia, Priceline). Supplier verification. Prevents booking modification fraud."
+  }
+]

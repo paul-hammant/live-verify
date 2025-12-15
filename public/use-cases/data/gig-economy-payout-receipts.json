@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Banking & Financial Services",
+    "title": "Gig economy payout receipts (Uber, Lyft, DoorDash driver payouts)",
+    "volume": "Large",
+    "retention": "3-7 years (tax reporting)",
+    "dataVerified": "Driver/worker name, earnings, fees, tips, mileage, payment date",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents payout disputes. Domain binding verifies gig platform. Tamper-evident earnings record. Tax reporting (1099-NEC/K). Prevents platform manipulation of earnings. Worker protection. Mileage deduction documentation."
+  }
+]

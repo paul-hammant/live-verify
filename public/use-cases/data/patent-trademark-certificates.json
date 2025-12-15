@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Government & Civic Documents",
+    "title": "Patent and trademark certificates",
+    "volume": "Very Small",
+    "retention": "20 years (patent) / Permanent (trademark)",
+    "dataVerified": "Inventor/owner name, application details, claims",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "High-value intellectual property. Prevents fake patent certificates. Domain binding verifies patent office (USPTO, EPO, etc.). Ornate certificate format suitable for OCR."
+  }
+]

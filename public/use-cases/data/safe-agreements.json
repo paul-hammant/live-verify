@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Banking & Financial Services",
+    "title": "SAFE agreements (Simple Agreement for Future Equity)",
+    "volume": "Very Small",
+    "retention": "Permanent (convertible security)",
+    "dataVerified": "Investor name, company, investment amount, valuation cap, discount",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents fake SAFE agreements (startup fraud). Domain binding verifies startup/platform. Tamper-evident investment terms. Conversion event verification. Cap table integrity. High-value convertible securities."
+  }
+]

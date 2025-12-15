@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Professional & Occupational Licenses",
+    "title": "Firearms dealer (FFL) and gun shop licenses",
+    "volume": "Small",
+    "retention": "3 years (license term)",
+    "dataVerified": "Licensee name, business name, address, FFL number, license type",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents fake FFL licenses. Domain binding verifies ATF (atf.gov). High-stakes firearms regulation. Prevents illegal firearms sales. ATF inspection verification. Criminal penalties for violations."
+  }
+]

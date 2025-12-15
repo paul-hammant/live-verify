@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Personal Lines Insurance",
+    "title": "Life insurance policies (term, whole, universal)",
+    "volume": "Small",
+    "retention": "Policy lifetime (50+ years)",
+    "dataVerified": "Insured name, date of birth, beneficiaries, coverage amount, premium, underwriting class, policy date",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents forged life insurance policies. Domain binding verifies insurer. Extremely long policy lifetime (decades). Beneficiary verification at death. Estate planning reliance. Multi-page policy with riders benefits from per-page verification to prevent tampering with beneficiary designations or coverage amounts. Critical for estate settlement where policy authenticity determines death benefit payment."
+  }
+]

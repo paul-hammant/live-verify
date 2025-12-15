@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Banking & Financial Services",
+    "title": "Equity crowdfunding certificates (StartEngine, Wefunder, Republic)",
+    "volume": "Very Small",
+    "retention": "Permanent (securities holding)",
+    "dataVerified": "Investor name, company, share amount, valuation, investment date",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents fake equity certificates. Domain binding verifies crowdfunding platform. Tamper-evident ownership record. SEC Regulation CF/A+ compliance. Shareholder cap table integrity. High-value securities. Permanent ownership proof."
+  }
+]

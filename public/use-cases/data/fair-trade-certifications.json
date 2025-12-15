@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Product Certifications & Compliance",
+    "title": "Fair trade and ethical sourcing certifications",
+    "volume": "Very Small",
+    "retention": "3-7 years (audit cycles)",
+    "dataVerified": "Producer cooperative name, farmer groups, certification body, product type, certification date, audit date",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Consumer verification of fair trade claims in retail settings. Domain binding prevents fake fair trade certifications and greenwashing. Transparency for ethical consumers who want to verify claims. Critical for premium products where fair trade certification justifies higher prices. Prevents fraudulent use of fair trade marks."
+  }
+]

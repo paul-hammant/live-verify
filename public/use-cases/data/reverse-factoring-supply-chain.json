@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Banking & Financial Services",
+    "title": "Reverse factoring (supply chain finance) documentation",
+    "volume": "Small",
+    "retention": "7-10 years (audit trail)",
+    "dataVerified": "Supplier, buyer, intermediary bank, invoice amount, payment terms",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents supply chain finance fraud. Domain binding verifies financial institution. Tamper-evident payment guarantee. Trade finance integrity. Prevents duplicate financing."
+  }
+]

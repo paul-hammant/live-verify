@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Financial & Legal Documents",
+    "title": "Wills and estate documents (may return SUPERSEDED)",
+    "volume": "Small",
+    "retention": "Permanent (estate records)",
+    "dataVerified": "Testator name, beneficiaries, executor name, asset details, witness signatures, will date, revision number (if applicable)",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "SUPERSEDED status critical for updated wills - prevents execution of outdated wills. Prevents forgery of testamentary documents. Estate disputes require verifiable will authenticity. Human-readable format essential for legal interpretation. Multi-page wills benefit from per-page hash verification to prevent page substitution attacks. Witness signature blocks particularly benefit from OCR-to-hash verification. Domain binding to attorney or court ensures authenticity."
+  }
+]

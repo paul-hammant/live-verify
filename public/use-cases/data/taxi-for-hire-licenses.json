@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Professional & Occupational Licenses",
+    "title": "Taxi and for-hire vehicle licenses (medallions)",
+    "volume": "Medium",
+    "retention": "License term (annual/perpetual)",
+    "dataVerified": "Driver name, vehicle ID, license number, company, issuing authority",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents fake taxi licenses. Domain binding verifies TLC/taxi commission. High-value medallions ($100K-$1M in some cities). Passenger safety verification. Insurance compliance."
+  }
+]

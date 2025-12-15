@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Insurance & Risk Management",
+    "title": "Reinsurance arbitration awards and dispute resolutions",
+    "volume": "Tiny",
+    "retention": "Permanent (legal precedent)",
+    "dataVerified": "Parties, arbitrators, dispute details, award amount, findings",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents altered arbitration awards. Domain binding verifies arbitration panel/ARIAS. Multi-million dollar disputes. Legal precedent for future disputes. Final and binding resolution. International reinsurance market disputes."
+  }
+]

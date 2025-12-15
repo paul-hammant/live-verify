@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Event & Temporary Use Permits",
+    "title": "Special event permits (festivals, concerts, parades)",
+    "volume": "Medium",
+    "retention": "Event + 3-7 years (liability)",
+    "dataVerified": "Organizer, event details, location, attendance, alcohol service, police/fire/EMS",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents fake event permits. Domain binding verifies city/county. Public safety verification (police/fire approval). Liability insurance requirement. Prevents unpermitted large gatherings. Noise ordinance compliance."
+  }
+]

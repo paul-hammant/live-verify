@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Insurance & Risk Management",
+    "title": "Claims diary and reserve change documentation",
+    "volume": "Medium",
+    "retention": "Claim lifetime + 7 years",
+    "dataVerified": "Adjuster name, claim number, reserve amount, reserve changes, diary notes",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Domain binding verifies insurer/adjuster. Audit trail for reserve changes. Regulatory compliance (state insurance departments). Prevents backdating reserve changes. Claim handling documentation."
+  }
+]

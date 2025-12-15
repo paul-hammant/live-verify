@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Actuarial & Insurance Mathematics",
+    "title": "Disability insurance benefit calculations",
+    "volume": "Small",
+    "retention": "Policy term + 7 years (claims)",
+    "dataVerified": "Actuary name, claimant name (if individual), disability assumptions, benefit amounts, benefit period",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents fraudulent disability benefit calculations. Domain binding verifies insurance company or actuary. High-value long-term claims ($50K-$500K+ total payouts). Prevents benefit inflation fraud. Consumer protection for disabled policyholders. Critical for disability insurance where benefit calculations determine lifetime income replacement."
+  }
+]

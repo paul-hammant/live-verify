@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Professional & Educational Qualifications",
+    "title": "Bar admission and good-standing letters",
+    "volume": "Very Small",
+    "retention": "Current + 2-5 years",
+    "dataVerified": "Attorney name, bar number, jurisdiction",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Courts/agencies verify instantly. Deters forged standing letters. Domain binding verifies state bar."
+  }
+]

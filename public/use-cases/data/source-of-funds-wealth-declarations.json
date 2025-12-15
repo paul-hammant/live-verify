@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Banking & Financial Services",
+    "title": "Source of funds/wealth declarations",
+    "volume": "Small",
+    "retention": "5-10 years post-relationship",
+    "dataVerified": "Customer name, income sources, asset origins, employment history",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Employment letters, tax returns, sale agreements verify wealth origin. Domain binding verifies each source (employer, tax authority, notary). Prevents money laundering via fake wealth sources. AML compliance."
+  }
+]

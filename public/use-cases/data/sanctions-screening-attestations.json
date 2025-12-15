@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Banking & Financial Services",
+    "title": "Sanctions/restricted party screening attestations",
+    "volume": "Large",
+    "retention": "5-7 years",
+    "dataVerified": "Company, screening date/time, dataset versions",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Link attestations to shipments/deals. Tamper-evident without exposing lists. Domain binding verifies company."
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Business & Commerce",
+    "title": "Escrow and closing statements (M&A/real estate)",
+    "volume": "Small",
+    "retention": "Permanent/transaction life",
+    "dataVerified": "Parties, settlement figures",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Verifiable closing packets without revealing contents. Domain binding verifies escrow agent. High-value M&A transactions."
+  }
+]

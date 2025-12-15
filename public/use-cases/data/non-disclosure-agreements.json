@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Business & Commerce",
+    "title": "Non-disclosure agreements",
+    "volume": "Large",
+    "retention": "Term + survival period",
+    "dataVerified": "Parties, scope",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Version-locked NDAs across counterparties. No QR clutter. Domain binding verifies parties."
+  }
+]

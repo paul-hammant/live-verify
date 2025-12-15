@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Healthcare & Medical Records",
+    "title": "Allergy and medical alert cards",
+    "volume": "Medium-Small",
+    "retention": "Lifetime (emergency care)",
+    "dataVerified": "Patient name, DOB, allergies, emergency contacts",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Emergency response. Wallet cards must be human-readable. Life-saving information."
+  }
+]

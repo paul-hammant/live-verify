@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Food & Beverage Permits",
+    "title": "Liquor licenses (on-premises, off-premises, catering)",
+    "volume": "Medium-Small",
+    "retention": "License term (1-3 years)",
+    "dataVerified": "Licensee name, business name, address, license type, capacity, hours",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents fake liquor licenses. Domain binding verifies ABC/liquor control board. High-value licenses ($10K-$500K+ value). Public display requirement. Prevents illegal alcohol sales. Transfer/sale verification."
+  }
+]

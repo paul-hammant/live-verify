@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Insurance & Risk Management",
+    "title": "Total loss valuations and actual cash value (ACV) reports",
+    "volume": "Medium",
+    "retention": "Claim term + 7 years",
+    "dataVerified": "Vehicle/property details, market value, depreciation, ACV calculation, valuation source",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents inflated total loss valuations. Domain binding verifies valuation service (NADA, Kelley Blue Book, CoreLogic). Prevents overpayment fraud. Standardized valuation reports suitable for OCR."
+  }
+]

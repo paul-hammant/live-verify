@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Scientific & Research",
+    "title": "Data sharing agreements and material transfer",
+    "volume": "Very Small",
+    "retention": "7-20 years (IP/legal)",
+    "dataVerified": "Sharing parties, researchers, material descriptions",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Domain binding verifies institutions. Tamper-evident IP agreements. Legal document format suitable for OCR. Long retention for disputes."
+  }
+]

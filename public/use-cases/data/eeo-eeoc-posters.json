@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Mandatory Workplace Postings",
+    "title": "Equal Employment Opportunity (EEO/EEOC) posters",
+    "volume": "Very Large",
+    "retention": "Current version",
+    "dataVerified": "None (informational), EEOC contact, discrimination complaint process",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents fake EEO posters. Domain binding verifies EEOC (eeoc.gov). Federal posting requirement (employers with 15+ employees). Employee rights notification. Discrimination complaint access."
+  }
+]

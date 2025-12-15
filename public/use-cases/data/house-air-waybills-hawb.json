@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Logistics & Transportation",
+    "title": "House air waybills (HAWB) - freight forwarder issued",
+    "volume": "Large",
+    "retention": "7-10 years (freight forwarder liability)",
+    "dataVerified": "Freight forwarder, shipper, consignee, cargo consolidation details",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents fake HAWB (freight forwarder fraud). Domain binding verifies freight forwarder. Consolidated cargo verification. Freight forwarder liability documentation. Letter of credit compliance."
+  }
+]

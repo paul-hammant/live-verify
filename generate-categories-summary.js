@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const dataDir = path.join(__dirname, 'public', 'c', 'data');
+const dataDir = path.join(__dirname, 'public', 'use-cases', 'data');
 const outputFile = path.join(dataDir, 'categories-summary.json');
 
 // Read all JSON files in the data directory

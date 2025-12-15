@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Mandatory Workplace Postings",
+    "title": "OSHA workplace safety posters (Job Safety and Health)",
+    "volume": "Very Large",
+    "retention": "Current year (annual updates)",
+    "dataVerified": "None (informational poster), OSHA contact info",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents fake OSHA posters. Domain binding verifies DOL/OSHA (dol.gov). Federal posting requirement (all employers). OSHA inspection verification. Employee rights notification. $15,625 penalty per violation for missing/fake poster."
+  }
+]

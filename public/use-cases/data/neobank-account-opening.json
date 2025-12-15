@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Banking & Financial Services",
+    "title": "Neo-bank/Challenger bank account opening documents",
+    "volume": "Medium",
+    "retention": "5-10 years post-relationship",
+    "dataVerified": "Customer name, DOB, address, ID verification, source of funds",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Remote identity proofing for online-only banks (Chime, Revolut, N26, Monzo, Starling). Domain binding verifies neo-bank. Prevents fake ID fraud. Regulatory compliance (same KYC/AML as traditional banks). Privacy-preserving (no cloud upload of ID scans)."
+  }
+]

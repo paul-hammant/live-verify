@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Logistics & Transportation",
+    "title": "Container shipping instructions and booking confirmations",
+    "volume": "Large",
+    "retention": "Shipment + 3-7 years",
+    "dataVerified": "Shipper, booking party, container details, vessel, sailing schedule",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Domain binding verifies shipping line/NVOCC. Prevents booking fraud. Container slot allocation verification. Demurrage/detention dispute documentation."
+  }
+]

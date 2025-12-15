@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Personal Safety & Service Verification",
+    "title": "Delivery driver verification (vulnerable recipients)",
+    "volume": "Very Large",
+    "retention": "Delivery + 30 days (disputes)",
+    "dataVerified": "Driver name, photo, vehicle details, package tracking, delivery company",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Elderly person or woman alone verifies delivery driver credentials before opening door. Domain binding verifies delivery company (amazon.com/delivery-verify, ups.com, fedex.com). Prevents fake delivery driver scams (common fraud targeting elderly). Critical safety for vulnerable people at home."
+  }
+]

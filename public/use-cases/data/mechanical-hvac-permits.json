@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Construction & Property Permits",
+    "title": "Mechanical/HVAC permits",
+    "volume": "Medium",
+    "retention": "Permanent (building records)",
+    "dataVerified": "HVAC contractor, property address, equipment specs, energy compliance",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents unlicensed HVAC work. Domain binding verifies mechanical inspector. Energy code compliance. Refrigerant handling certification. Equipment warranty verification."
+  }
+]

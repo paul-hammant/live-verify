@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Insurance & Risk Management",
+    "title": "Commutation agreements (early treaty termination)",
+    "volume": "Tiny",
+    "retention": "Permanent (treaty closure)",
+    "dataVerified": "Ceding company, reinsurer, commutation payment, reserves released, treaty terms",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents forged commutation agreements. Domain binding verifies both parties. Final settlement of all obligations. Multi-million to billion dollar settlements. Permanent treaty closure. Prevents future claims disputes."
+  }
+]

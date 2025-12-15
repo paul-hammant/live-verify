@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use Cases - OCR Verification</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: white;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .back-link {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            margin-bottom: 32px;
+            font-weight: 500;
+            opacity: 0.9;
+        }
+        .back-link:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+        .breadcrumbs {
+            display: inline-block;
+            font-size: 0.9em;
+            opacity: 0.9;
+            margin-bottom: 22px;
+        }
+        .breadcrumbs a {
+            color: white;
+            text-decoration: none;
+        }
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }
+        .breadcrumbs .sep {
+            margin: 0 8px;
+            opacity: 0.7;
+        }
+        .hero {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+        .badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 24px;
+            backdrop-filter: blur(10px);
+        }
+        h1 {
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-bottom: 16px;
+            line-height: 1.2;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 24px;
+        }
+        .stat {
+            text-align: center;
+        }
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: 700;
+            display: block;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+        .stat-label {
+            font-size: 0.9em;
+            opacity: 0.9;
+            margin-top: 4px;
+        }
+        .hero-lede {
+            font-size: 1.05em;
+            line-height: 1.7;
+            opacity: 0.95;
+            margin-bottom: 28px;
+            max-width: 640px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .story-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 24px;
+        }
+        .story-nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 14px;
+            border-radius: 999px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            font-size: 0.9em;
+            transition: background 0.2s, color 0.2s;
+        }
+        .story-nav a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        .story-section {
+            margin-bottom: 32px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 28px;
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+        }
+        .story-section h2 {
+            font-size: 1.5em;
+            margin-bottom: 12px;
+        }
+        .diagram {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 16px;
+            margin-top: 18px;
+        }
+        .diagram-step {
+            display: flex;
+            gap: 12px;
+            background: rgba(255, 255, 255, 0.12);
+            padding: 14px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+        .step-number {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+        }
+        .example-box {
+            margin-top: 18px;
+            padding: 14px;
+            background: rgba(0, 0, 0, 0.35);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .example-box code {
+            display: inline-block;
+            margin: 6px 0;
+            font-size: 0.95em;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 32px;
+        }
+        .info-card {
+            background: rgba(255, 255, 255, 0.12);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            border-radius: 14px;
+            padding: 22px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+        }
+        .info-card h3 {
+            margin-bottom: 12px;
+            font-size: 1.1em;
+        }
+        .info-card ul {
+            list-style: disc;
+            margin-left: 18px;
+            opacity: 0.95;
+            line-height: 1.6;
+        }
+        .explore-heading {
+            margin-bottom: 16px;
+            text-align: center;
+        }
+        .explore-heading h2 {
+            font-size: 1.6em;
+            margin-bottom: 6px;
+        }
+        .explore-heading p {
+            opacity: 0.8;
+        }
+        .search-container {
+            max-width: 600px;
+            margin: 0 auto 40px;
+        }
+        .search-box {
+            position: relative;
+        }
+        .search-input {
+            width: 100%;
+            padding: 16px 50px 16px 20px;
+            font-size: 1em;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 30px;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .search-input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+        .search-input:focus {
+            outline: none;
+            background: rgba(255, 255, 255, 0.25);
+            border-color: white;
+        }
+        .search-icon {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.2em;
+            opacity: 0.7;
+            pointer-events: none;
+        }
+        .search-results {
+            margin-top: 20px;
+            display: none;
+        }
+        .search-results.active {
+            display: block;
+        }
+        .search-result-item {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            padding: 16px 20px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .search-result-item:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateX(4px);
+        }
+        .search-result-title {
+            font-weight: 600;
+            font-size: 1.1em;
+            margin-bottom: 6px;
+        }
+        .search-result-category {
+            font-size: 0.85em;
+            opacity: 0.8;
+            margin-bottom: 8px;
+        }
+        .search-result-snippet {
+            font-size: 0.9em;
+            opacity: 0.9;
+            line-height: 1.4;
+        }
+        .search-stats {
+            text-align: center;
+            opacity: 0.9;
+            margin-bottom: 16px;
+            font-size: 0.95em;
+        }
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .category-card {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 16px;
+            padding: 24px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        .category-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .category-card:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+        }
+        .category-name {
+            font-size: 1.3em;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .category-count {
+            font-size: 2em;
+            font-weight: 700;
+            opacity: 0.9;
+        }
+        @keyframes dialogSlideIn {
+            from {
+                opacity: 0;
+                transform: translate(-50%, -50%) scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1);
+            }
+        }
+        @keyframes dialogSlideOut {
+            from {
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1);
+            }
+            to {
+                opacity: 0;
+                transform: translate(-50%, -50%) scale(0.9);
+            }
+        }
+        @keyframes backdropFadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        dialog {
+            border: none;
+            border-radius: 20px;
+            padding: 0;
+            max-width: 800px;
+            width: 90vw;
+            max-height: 85vh;
+            background: white;
+            color: #2c3e50;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            opacity: 0;
+        }
+        dialog[open] {
+            animation: dialogSlideIn 0.3s ease-out forwards;
+        }
+        dialog.closing {
+            animation: dialogSlideOut 0.3s ease-out forwards;
+        }
+        dialog::backdrop {
+            backdrop-filter: blur(8px);
+            background: rgba(0,0,0,0.5);
+            animation: backdropFadeIn 0.3s ease-out;
+        }
+        .dialog-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 24px 32px;
+            border-radius: 20px 20px 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .dialog-title {
+            font-size: 1.5em;
+            font-weight: 700;
+        }
+        .close-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            font-size: 1.5em;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+        }
+        .close-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+        .dialog-content {
+            padding: 32px;
+            overflow-y: auto;
+            max-height: calc(85vh - 100px);
+        }
+        @keyframes useCaseSlideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        .use-case-item {
+            border-left: 4px solid #667eea;
+            background: #f8f9fa;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            opacity: 0;
+            animation: useCaseSlideIn 0.3s ease-out forwards;
+        }
+        .use-case-item:last-child {
+            margin-bottom: 0;
+        }
+        .use-case-title {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 12px;
+        }
+        .use-case-meta {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+            margin-bottom: 12px;
+            font-size: 0.9em;
+        }
+        .use-case-frames {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+        .frame {
+            background: white;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 14px;
+        }
+        .frame-title {
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+        .frame-body {
+            color: #495057;
+            line-height: 1.5;
+        }
+        details.ops-details {
+            background: #ffffff;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 12px 14px;
+            margin: 12px 0;
+        }
+        details.ops-details summary {
+            cursor: pointer;
+            font-weight: 700;
+            color: #667eea;
+            list-style: none;
+        }
+        details.ops-details summary::-webkit-details-marker {
+            display: none;
+        }
+        details.ops-details summary::before {
+            content: "▸";
+            display: inline-block;
+            margin-right: 8px;
+            transform: translateY(-1px);
+        }
+        details.ops-details[open] summary::before {
+            content: "▾";
+        }
+        .ops-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+        .example-link {
+            margin-top: 12px;
+        }
+        .example-link a {
+            color: #667eea;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .example-link a:hover {
+            text-decoration: underline;
+        }
+        .meta-item {
+            display: flex;
+            flex-direction: column;
+        }
+        .meta-label {
+            font-weight: 600;
+            color: #6c757d;
+            font-size: 0.85em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+        .meta-value {
+            color: #495057;
+        }
+        .use-case-rationale {
+            background: white;
+            padding: 16px;
+            border-radius: 6px;
+            margin-top: 12px;
+            line-height: 1.6;
+        }
+        .rationale-label {
+            font-weight: 600;
+            color: #667eea;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            .hero-stats {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .stat-number {
+                font-size: 2em;
+            }
+            .categories-grid {
+                grid-template-columns: 1fr;
+            }
+            .dialog-content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <a href="../index.html">Home</a><span class="sep">›</span><a href="../opportunity.html">Opportunity</a><span class="sep">›</span><span>Use Cases</span>
+        </nav>
+
+        <div class="hero">
+        <div class="badge">COMPREHENSIVE MARKET</div>
+        <h1 id="heroTitle">Use cases for issuer-attested verification</h1>
+        <p class="hero-lede">
+            Live Verify turns a printed claim into a trustable handshake: snap the document, OCR locally, hash it, and confirm the issuer domain still serves that hash.
+            Think of it as a trust primitive for the physical world: readable text that can also be checked.
+        </p>
+        <div class="hero-stats">
+            <div class="stat">
+                <span class="stat-number" data-stat="useCases" data-target="0">0</span>
+                <div class="stat-label">Use Cases</div>
+            </div>
+            <div class="stat">
+                <span class="stat-number" data-stat="categories" data-target="0">0</span>
+                <div class="stat-label">Industries</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="story-nav">
+        <a href="#how">How it works</a>
+        <a href="#trust">What “Verified” means</a>
+        <a href="#userPrivacy">Privacy model</a>
+        <a href="#use-cases">Explore use cases</a>
+    </div>
+
+    <div class="story-section" id="how">
+        <h2>Snap → OCR → hash → check</h2>
+        <p>
+            Documents carry a <code>verify:</code> line that points to the issuer’s domain. Live Verify automates the rest: capture, OCR, normalization rules, SHA-256, then GET the issuer URL with the hash. The app flashes “Claim Verified” only if that domain currently vows to that exact text hash.
+        </p>
+        <div class="diagram">
+            <div class="diagram-step">
+                <span class="step-number">1</span>
+                <div>
+                    <strong>Snap</strong><br>
+                    Use the camera app to frame the verification mark.
+                </div>
+            </div>
+            <div class="diagram-step">
+                <span class="step-number">2</span>
+                <div>
+                    <strong>OCR + normalize</strong><br>
+                    Text is normalized on-device (rules only) before hashing.
+                </div>
+            </div>
+            <div class="diagram-step">
+                <span class="step-number">3</span>
+                <div>
+                    <strong>SHA-256</strong><br>
+                    Hash the normalized text, not the image.
+                </div>
+            </div>
+	            <div class="diagram-step">
+	                <span class="step-number">4</span>
+	                <div>
+	                    <strong>Verify</strong><br>
+	                    GET <code>https://issuer.example.com/claims/&lt;sha256&gt;</code>; 404 = not found, 200 = status returned (OK / REVOKED / etc.).
+	                </div>
+	            </div>
+        </div>
+        <div class="example-box">
+            <strong>Example verification line:</strong><br>
+            <code>verify:issuer.example.com/claims</code>
+                ... implies a lookup at ...<br>
+            <code>https://issuer.example.com/claims/&lt;sha256&gt;</code><br>
+	            The phone trusts the domain only if the hash matches and the issuer returns an affirming status (e.g., “OK”). Status meanings can be described in <code>.verification-meta.json</code>.
+	        </div>
+	    </div>
+
+    <div class="info-grid">
+        <div class="info-card" id="trust">
+            <h3>What “Verified” means</h3>
+            <ul>
+                <li>The issuer domain now attests to the same exact normalized text hash.</li>
+                <li>The issuer stands by the claim while it remains “OK”; if they don’t, they change it (e.g., “REVOKED”) or delete the record entirely.</li>
+                <li>You decide whether that domain is an authority for the claim.</li>
+                <li>Look out for lookalike/typosquatted domains: verifiers should see the domain clearly before trusting it.</li>
+            </ul>
+            <h3 style="margin-top: 18px;">Verifications are revocable</h3>
+            <p style="margin: 0;">
+                <strong>Revocation is part of trust.</strong> If an ID is stolen, a license suspended, or a credential withdrawn, the issuer can change the response so verifiers stop treating the printed claim as current.
+                Some issuers may return an operational instruction, e.g. <code>Stolen ID — please retain/cut in half and contact &lt;policy URL&gt; (quoting reference Nnnnnnn)</code>.
+            </p>
+        </div>
+        <div class="info-card" id="sovereignty">
+            <h3>Sovereign, no gatekeeper</h3>
+            <p>
+                Issuers keep authority by publishing from their own domains, and verifiers choose what they trust.
+                There’s no single global registry to control access—at the cheapest end, a static web server can host the hash lookups.
+            </p>
+            <p>
+                The result is anti-fraud without friction: the familiar camera flow becomes “Snap → Verified / Denied” at the point of use.
+            </p>
+        </div>
+        <div class="info-card" id="userPrivacy">
+            <h3>Privacy</h3>
+            <p>
+                OCR, normalization, and SHA-256 run entirely on-device, and the only outbound call is the hash lookup. Learn why one-way hashes are safe to publish via our
+                <a href="../one-way-hash.html" target="_blank" rel="noreferrer noopener">one-way hash explainer</a> and see the full protocol in the
+                <a href="../privacy_declaration.html" target="_blank" rel="noreferrer noopener">Privacy Declaration</a>.
+            </p>
+        </div>
+    </div>
+
+        <div class="explore-heading" id="use-cases">
+        <h2>Explore use cases</h2>
+        <p>Search the catalog or browse categories to see how Live Verify meets fraud, compliance, and operational needs across industries.</p>
+    </div>
+
+        <div class="search-container">
+            <div class="search-box">
+                <input
+                    type="text"
+                    class="search-input"
+                    id="searchInput"
+                    placeholder="Search use cases... (e.g., mortgage, insurance, employment)"
+                    autocomplete="off"
+                />
+                <span class="search-icon">🔍</span>
+            </div>
+            <div class="search-results" id="searchResults"></div>
+        </div>
+
+        <div class="categories-grid" id="categoriesGrid"></div>
+    </div>
+
+    <dialog id="categoryDialog">
+        <div class="dialog-header">
+            <h2 class="dialog-title" id="dialogTitle"></h2>
+            <button class="close-btn" onclick="closeDialog()">×</button>
+        </div>
+        <div class="dialog-content" id="dialogContent"></div>
+    </dialog>
+
+    <script>
+        // Data loaded from JSON files
+        let categoriesSummary = null;
+        let searchIndex = null;
+        const categoryDataCache = {}; // Cache loaded full category data
+        const useCaseFileCache = {}; // Cache individual use case files
+
+        // Load categories summary (lightweight, pre-aggregated) - ONE HTTP REQUEST
+        async function loadCategoriesSummary() {
+            const response = await fetch('data/categories-summary.json');
+            categoriesSummary = await response.json();
+            return categoriesSummary;
+        }
+
+        // Load search index
+        async function loadSearchIndex() {
+            const response = await fetch('data/search-index.json');
+            searchIndex = await response.json();
+            return searchIndex;
+        }
+
+        // Load a specific use case file on demand
+        async function loadUseCaseFile(fileId) {
+            if (useCaseFileCache[fileId]) {
+                return useCaseFileCache[fileId];
+            }
+
+            const response = await fetch(`data/${fileId}.json`);
+            const data = await response.json();
+            useCaseFileCache[fileId] = data;
+            return data;
+        }
+
+        // Load all use cases for a specific category (on demand when clicking)
+        async function loadCategoryData(categoryName) {
+            if (categoryDataCache[categoryName]) {
+                return categoryDataCache[categoryName];
+            }
+
+            const category = categoriesSummary.categories.find(c => c.name === categoryName);
+            if (!category) return [];
+
+            // Load all files for this category
+            const useCases = [];
+            for (const fileId of category.files) {
+                const fileData = await loadUseCaseFile(fileId);
+                useCases.push(...fileData);
+            }
+
+            categoryDataCache[categoryName] = useCases;
+            return useCases;
+        }
+
+        // Animated counter
+        function animateCounter(element) {
+            const target = parseInt(element.dataset.target);
+            const duration = 2000;
+            const step = target / (duration / 16);
+            let current = 0;
+
+            const timer = setInterval(() => {
+                current += step;
+                if (current >= target) {
+                    element.textContent = target;
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.floor(current);
+                }
+            }, 16);
+        }
+
+        // Render category cards
+        function renderCategories() {
+            const grid = document.getElementById('categoriesGrid');
+            grid.innerHTML = '';
+
+            if (!categoriesSummary) return;
+
+            let index = 0;
+            categoriesSummary.categories.forEach((category) => {
+                const card = document.createElement('div');
+                card.className = 'category-card';
+                card.innerHTML = `
+                    <div class="category-name">${category.name}</div>
+                    <div class="category-count">${category.count}</div>
+                `;
+                card.onclick = () => openDialog(category.name);
+                grid.appendChild(card);
+
+                // Stagger reveal animation
+                setTimeout(() => {
+                    card.classList.add('visible');
+                }, index * 50);
+                index++;
+            });
+        }
+
+        // Render a single use case item
+        function renderUseCaseItem(useCase) {
+            const exampleLink = useCase.exampleDocument
+                ? `<p class="example-link">Need a sample document? <a href="${useCase.exampleDocument.url}" target="_blank" rel="noreferrer noopener">${useCase.exampleDocument.label}</a></p>`
+                : '';
+            return `
+                <div class="use-case-item">
+                    <div class="use-case-title">${useCase.title}</div>
+                    <div class="use-case-frames">
+                        <div class="frame">
+                            <div class="frame-title">Claim (hashed)</div>
+                            <div class="frame-body">${useCase.dataVerified}</div>
+                        </div>
+                        <div class="frame">
+                            <div class="frame-title">Issuer Attests</div>
+                            <div class="frame-body">
+                                The issuer domain stands by the claim by returning “OK” (or another status like “REVOKED”) for the claim hash. Status text can be customized via
+                                <code>.verification-meta.json</code>.
+                            </div>
+                        </div>
+                        <div class="frame">
+                            <div class="frame-title">Verifier Checks</div>
+                            <div class="frame-body">On-device OCR → normalization rules → SHA-256 → GET the issuer URL for that hash → display status.</div>
+                        </div>
+                    </div>
+                    <details class="ops-details">
+                        <summary>Ops details</summary>
+                        <div class="ops-grid">
+                            <div class="meta-item">
+                                <span class="meta-label">Volume</span>
+                                <span class="meta-value">${useCase.volume}</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Retention Period</span>
+                                <span class="meta-value">${useCase.retention}</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Verifier Sees</span>
+                                <span class="meta-value">${useCase.dataVisibleAfterVerification}</span>
+                            </div>
+                        </div>
+                    </details>
+                    <div class="use-case-rationale">
+                        <div class="rationale-label">💡 Why OCR-to-Hash</div>
+                        ${useCase.rationale}
+                    </div>
+                    ${exampleLink}
+                </div>
+            `;
+        }
+
+        // Open dialog with category details (loads data on demand)
+        async function openDialog(categoryName) {
+            const dialog = document.getElementById('categoryDialog');
+            const title = document.getElementById('dialogTitle');
+            const content = document.getElementById('dialogContent');
+
+            // Check if already cached
+            if (categoryDataCache[categoryName]) {
+                // If cached, show all at once
+                title.textContent = `${categoryName}`;
+                content.innerHTML = '';
+                dialog.showModal();
+
+                const useCases = categoryDataCache[categoryName];
+                content.innerHTML = useCases.map(renderUseCaseItem).join('');
+                title.textContent = `${categoryName} (${useCases.length})`;
+                window.location.hash = encodeURIComponent(categoryName);
+                return;
+            }
+
+            // Open dialog immediately with empty content
+            title.textContent = `${categoryName}`;
+            content.innerHTML = '';
+            dialog.showModal();
+
+            const category = categoriesSummary.categories.find(c => c.name === categoryName);
+            if (!category) return;
+
+            // Load and render use cases incrementally
+            const allUseCases = [];
+            let loadedCount = 0;
+
+            for (const fileId of category.files) {
+                const fileData = await loadUseCaseFile(fileId);
+                allUseCases.push(...fileData);
+
+                // Append each use case to the content as it loads
+                fileData.forEach(useCase => {
+                    const itemHTML = renderUseCaseItem(useCase);
+                    content.insertAdjacentHTML('beforeend', itemHTML);
+                    loadedCount++;
+                    // Update title with current count
+                    title.textContent = `${categoryName} (${loadedCount})`;
+                });
+            }
+
+            // Cache the complete result
+            categoryDataCache[categoryName] = allUseCases;
+
+            // Update URL hash with category name (URL encoded)
+            window.location.hash = encodeURIComponent(categoryName);
+        }
+
+        // Perform search
+        function performSearch(query) {
+            if (!query || query.trim().length < 2) {
+                document.getElementById('searchResults').classList.remove('active');
+                document.getElementById('categoriesGrid').style.display = 'grid';
+                return;
+            }
+
+            const terms = query.toLowerCase().split(/\s+/).filter(t => t.length > 2);
+            if (terms.length === 0) {
+                document.getElementById('searchResults').classList.remove('active');
+                document.getElementById('categoriesGrid').style.display = 'grid';
+                return;
+            }
+
+            // Find matching documents for each term
+            const documentScores = {};
+            terms.forEach(term => {
+                const matches = searchIndex.index[term] || [];
+                matches.forEach(fileId => {
+                    documentScores[fileId] = (documentScores[fileId] || 0) + 1;
+                });
+            });
+
+            // Sort by score (number of matching terms)
+            const results = Object.entries(documentScores)
+                .sort(([, a], [, b]) => b - a)
+                .slice(0, 20) // Show top 20 results
+                .map(([fileId]) => ({
+                    fileId,
+                    ...searchIndex.documents[fileId]
+                }));
+
+            // Render results
+            renderSearchResults(results, query);
+        }
+
+        // Render search results
+        function renderSearchResults(results, query) {
+            const resultsContainer = document.getElementById('searchResults');
+            const categoriesGrid = document.getElementById('categoriesGrid');
+
+            if (results.length === 0) {
+                resultsContainer.innerHTML = '<div class="search-stats">No results found</div>';
+                resultsContainer.classList.add('active');
+                categoriesGrid.style.display = 'none';
+                return;
+            }
+
+            let html = `<div class="search-stats">Found ${results.length} result${results.length !== 1 ? 's' : ''} for "${query}"</div>`;
+
+            results.forEach(result => {
+                html += `
+                    <div class="search-result-item" data-file-id="${result.fileId}">
+                        <div class="search-result-title">${result.title}</div>
+                        <div class="search-result-category">${result.category}</div>
+                        <div class="search-result-snippet">${result.snippet}...</div>
+                    </div>
+                `;
+            });
+
+            resultsContainer.innerHTML = html;
+            resultsContainer.classList.add('active');
+            categoriesGrid.style.display = 'none';
+
+            // Add click handlers to search results
+            resultsContainer.querySelectorAll('.search-result-item').forEach(item => {
+                item.addEventListener('click', async () => {
+                    const fileId = item.dataset.fileId;
+                    const useCase = await loadUseCaseFile(fileId);
+                    if (useCase && useCase.length > 0) {
+                        // Open the category dialog with this single use case
+                        openSingleUseCase(useCase[0]);
+                    }
+                });
+            });
+        }
+
+        // Open dialog with a single use case (from search)
+        function openSingleUseCase(useCase) {
+            const dialog = document.getElementById('categoryDialog');
+            const title = document.getElementById('dialogTitle');
+            const content = document.getElementById('dialogContent');
+
+            title.textContent = useCase.category;
+            content.innerHTML = renderUseCaseItem(useCase);
+            dialog.showModal();
+        }
+
+        function closeDialog() {
+            const dialog = document.getElementById('categoryDialog');
+            // Add closing class to trigger exit animation
+            dialog.classList.add('closing');
+
+            // Wait for animation to complete before actually closing
+            setTimeout(() => {
+                dialog.classList.remove('closing');
+                dialog.close();
+                // Clear URL hash
+                history.pushState(null, null, ' ');
+            }, 300); // Match animation duration
+        }
+
+        // Handle hash changes
+        async function handleHashChange() {
+            const hash = decodeURIComponent(window.location.hash.substring(1));
+            if (hash && categoriesSummary) {
+                const category = categoriesSummary.categories.find(c => c.name === hash);
+                if (category) {
+                    await openDialog(hash);
+                }
+            }
+        }
+
+        // Close dialog on backdrop click
+        document.getElementById('categoryDialog').addEventListener('click', (e) => {
+            if (e.target.tagName === 'DIALOG') {
+                closeDialog();
+            }
+        });
+
+        // Prevent default close behavior and use our animated version
+        document.getElementById('categoryDialog').addEventListener('cancel', (e) => {
+            e.preventDefault();
+            closeDialog();
+        });
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', async () => {
+            // Load categories summary (one lightweight file)
+            await loadCategoriesSummary();
+
+            // Load search index
+            await loadSearchIndex();
+
+            // Update hero title and page title
+            document.getElementById('heroTitle').textContent = 'Use Cases';
+            document.title = `${categoriesSummary.totalUseCases} Use Cases - OCR Verification`;
+
+            // Update stat counters
+            document.querySelector('[data-stat="useCases"]').dataset.target = categoriesSummary.totalUseCases;
+            document.querySelector('[data-stat="categories"]').dataset.target = categoriesSummary.totalCategories;
+
+            // Animate counters
+            document.querySelectorAll('.stat-number').forEach(animateCounter);
+
+            // Render categories
+            renderCategories();
+
+            // Wire up search input
+            const searchInput = document.getElementById('searchInput');
+            searchInput.addEventListener('input', (e) => {
+                performSearch(e.target.value);
+            });
+
+            // Handle initial hash
+            await handleHashChange();
+
+            // Listen for hash changes
+            window.addEventListener('hashchange', handleHashChange);
+        });
+    </script>
+</body>
+</html>

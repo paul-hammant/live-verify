@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Real Estate & Property",
+    "title": "Asbestos and hazmat inspection reports",
+    "volume": "Very Small",
+    "retention": "20-30 years (building lifetime)",
+    "dataVerified": "Property owner, inspector name/license, property address, findings, abatement recommendations",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents fabricated clean asbestos reports. Domain binding verifies licensed inspector. High liability risk. Long retention for building lifetime. Buyer/tenant protection."
+  }
+]

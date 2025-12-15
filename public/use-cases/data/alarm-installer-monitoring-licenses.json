@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Professional & Occupational Licenses",
+    "title": "Alarm installer and monitoring licenses",
+    "volume": "Small",
+    "retention": "1-3 years (license term)",
+    "dataVerified": "Licensee name, business name, license number, monitoring station, issuing authority",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents fake alarm company licenses. Domain binding verifies state licensing board. Police dispatch verification. False alarm fee enforcement. Consumer protection."
+  }
+]

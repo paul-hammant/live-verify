@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Agriculture & Food",
+    "title": "Seed certification and variety registration",
+    "volume": "Very Small",
+    "retention": "5-20 years (variety tracking)",
+    "dataVerified": "Seed producer name, certifier, variety breeder, field location",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Domain binding verifies seed certifier. Prevents fake seed certifications. Certificate format suitable for OCR. Variety tracking and IP protection."
+  }
+]

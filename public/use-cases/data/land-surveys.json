@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Real Estate & Property",
+    "title": "Land surveys (boundary, topographic, ALTA/NSPS)",
+    "volume": "Very Small",
+    "retention": "Permanent (property records)",
+    "dataVerified": "Property owner, surveyor name/license, property address, legal description",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents forged surveys. Domain binding verifies licensed surveyor. Permanent property boundary records. Critical for boundary disputes. Prevents encroachment fraud. Multi-page: Survey plats may be multi-page - each page can verify independently."
+  }
+]

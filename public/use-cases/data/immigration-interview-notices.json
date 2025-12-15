@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Immigration & Visa Documents",
+    "title": "Immigration interview appointment notices",
+    "volume": "Medium",
+    "retention": "Appointment + 5 years",
+    "dataVerified": "Full name, case number, appointment date/time/location, case type",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents fake appointment notices. Domain binding verifies USCIS/NVC. Interview attendance proof. Case status verification. Prevents appointment fraud. Naturalization/AOS interview documentation."
+  }
+]

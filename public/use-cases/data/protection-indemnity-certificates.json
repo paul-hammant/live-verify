@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Logistics & Transportation",
+    "title": "Protection & Indemnity (P&I) club certificates",
+    "volume": "Small",
+    "retention": "Policy term + 10-20 years",
+    "dataVerified": "Vessel name, vessel owner, IMO number, P&I club name, certificate number, coverage amount, policy period",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Port state control verification of maritime liability insurance. Prevents fake P&I certificates for substandard vessels. Domain binding to legitimate P&I clubs. Critical for maritime safety where port authorities must verify P&I coverage before allowing vessels to enter port. Vessels carry certificates for inspection without requiring online lookups."
+  }
+]

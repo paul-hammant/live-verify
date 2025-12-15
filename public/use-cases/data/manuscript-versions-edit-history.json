@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Media & Publishing",
+    "title": "Manuscript versions and edit history",
+    "volume": "Very Small",
+    "retention": "5-10 years (publication records)",
+    "dataVerified": "Author name, editor names, version dates, publisher",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Domain binding verifies publisher. Documents suitable for OCR. Publication records. Plagiarism disputes. Version control."
+  }
+]

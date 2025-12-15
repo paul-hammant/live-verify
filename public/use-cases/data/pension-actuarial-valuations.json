@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Actuarial & Insurance Mathematics",
+    "title": "Pension plan actuarial valuation reports",
+    "volume": "Very Small",
+    "retention": "7-30 years (ERISA/plan lifetime)",
+    "dataVerified": "Plan actuary name, plan sponsor, participant demographics (aggregated), pension liabilities, funding status",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents fabricated pension funding reports enabling underfunding fraud. Domain binding verifies credentialed actuary (FSA, EA, FIA). ERISA compliance for qualified pension plans. Multi-billion dollar pension obligations. IRS audit trail. Prevents underfunding fraud that threatens retiree benefits. Multi-page valuation reports benefit from per-page verification to prevent tampering with assumptions or results."
+  }
+]

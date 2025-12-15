@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Event & Temporary Use Permits",
+    "title": "Temporary outdoor dining and parklet permits",
+    "volume": "Medium",
+    "retention": "Permit season + 3-5 years",
+    "dataVerified": "Restaurant name, location, seating area, barriers, ADA compliance, health dept",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents unpermitted parklets. Domain binding verifies planning/public works. ADA compliance verification. Health permit verification. Prevents sidewalk obstruction violations."
+  }
+]

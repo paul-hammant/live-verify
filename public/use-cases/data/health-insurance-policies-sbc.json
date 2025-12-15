@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Personal Lines Insurance",
+    "title": "Health insurance policies and summary of benefits (SBC)",
+    "volume": "Medium",
+    "retention": "Policy term + 7 years",
+    "dataVerified": "Policyholder name, dependents, coverage details, deductibles, copays, network providers",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents fake health insurance in employment verification and medical care. Domain binding verifies insurer. ACA Summary of Benefits and Coverage standardized format. Prevents coverage misrepresentation to providers. Multi-page SBC documents benefit from per-page verification. Critical for healthcare providers who verify insurance before providing expensive medical care."
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Real Estate & Property",
+    "title": "Bank statements for loan applications",
+    "volume": "Medium",
+    "retention": "7-10 years (loan term + disputes)",
+    "dataVerified": "Account holder name, account number (masked), transaction history, account balances, bank name, statement period",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents fake bank statements easily forged via Photoshop. Domain binding verifies financial institution. Tamper-evident asset verification for loan approval. Prevents asset fraud where borrowers inflate account balances. Reserves and liquidity verification. Multi-page statements benefit from per-page hash verification to prevent page substitution attacks (swapping pages from different months or accounts). Critical for lending where asset verification prevents fraud."
+  }
+]

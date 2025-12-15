@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Real Estate & Property",
+    "title": "Zoning and land use documents",
+    "volume": "Very Small",
+    "retention": "Permanent (land records)",
+    "dataVerified": "Property owner, address, zoning classification, jurisdiction",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Domain binding verifies government authority. Official documents suitable for OCR. Permanent land records. Development rights."
+  }
+]

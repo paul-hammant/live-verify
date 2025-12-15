@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Logistics & Transportation",
+    "title": "Vehicle inspection reports (DOT, annual safety)",
+    "volume": "Medium",
+    "retention": "5-10 years (safety compliance)",
+    "dataVerified": "Inspector name, vehicle owner, VIN, inspection station, safety findings",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Domain binding verifies inspection station. Prevents fake inspection certificates. DOT compliance (commercial vehicles). State registration requirements. Safety compliance."
+  }
+]

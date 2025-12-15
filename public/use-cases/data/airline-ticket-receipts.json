@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Travel & Hospitality",
+    "title": "Airline ticket receipts and e-ticket confirmations",
+    "volume": "Very Large",
+    "retention": "Flight + 1-3 years (refund/audit)",
+    "dataVerified": "Passenger name, flight details, ticket number, fare, booking reference",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "OCR-to-hash for receipt/refund verification. Domain binding verifies airline. E-ticket receipt verification for expense claims, refunds, fare disputes. Prevents altered ticket receipts (inflated expense claims). QR code may be better for boarding passes which need instant scan speed."
+  }
+]

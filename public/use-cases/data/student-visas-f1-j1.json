@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Immigration & Visa Documents",
+    "title": "Student visas and F-1/J-1 status documents",
+    "volume": "Medium",
+    "retention": "Study period + 7 years",
+    "dataVerified": "Full name, DOB, nationality, school/program, SEVIS number, study authorization period",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents fake student visas. Domain binding verifies SEVIS/DHS. School enrollment verification. Work authorization (CPT/OPT). Prevents student visa fraud. F-1/J-1 compliance verification. For privacy, issuers can add a random salt line to raise entropy and defeat guessing attacks."
+  }
+]

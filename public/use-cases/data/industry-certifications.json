@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Professional & Educational Qualifications",
+    "title": "Industry certifications (IT, finance, construction)",
+    "volume": "Small",
+    "retention": "3-10 years (renewal cycles)",
+    "dataVerified": "Certificate holder name, certification ID, specialization, issuing organization, certification date, expiration date",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Similar to professional license and CV credentials use case. Professional appearance for resumes and LinkedIn profiles. Prevents fake IT certifications (like fake AWS, Cisco, PMP credentials). Domain binding to certification bodies (CompTIA, PMI, CFA Institute, etc.). Employers verify credentials without calling certification body."
+  }
+]

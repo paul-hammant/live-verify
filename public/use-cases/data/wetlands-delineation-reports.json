@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Real Estate & Property",
+    "title": "Wetlands delineation reports",
+    "volume": "Very Small",
+    "retention": "Permanent (environmental compliance)",
+    "dataVerified": "Property owner, environmental consultant, site address, wetland boundaries",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents fraudulent wetland reports. Domain binding verifies certified consultant. Regulatory compliance (Clean Water Act). Permanent environmental records. Development permit verification."
+  }
+]

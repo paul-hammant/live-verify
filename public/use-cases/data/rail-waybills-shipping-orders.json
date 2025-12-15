@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Logistics & Transportation",
+    "title": "Rail waybills and shipping orders",
+    "volume": "Medium-Large",
+    "retention": "7-10 years (proof of shipment)",
+    "dataVerified": "Shipper, consignee, railway, car number, cargo description",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents altered cargo details. Domain binding verifies railway company. Intermodal shipping verification. Cross-border rail freight (USA/Canada/Mexico, EU)."
+  }
+]

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One-way Hashes & Privacy</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 0 20px 40px;
+            background: #0a1225;
+            color: #f4f6fb;
+        }
+        header {
+            padding: 40px 0 20px;
+            text-align: center;
+        }
+        .breadcrumbs {
+            font-size: 0.95em;
+            opacity: 0.9;
+            text-align: left;
+            max-width: 900px;
+            margin: 0 auto 14px;
+        }
+        .breadcrumbs a {
+            color: #8dc6ff;
+            text-decoration: none;
+        }
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }
+        .breadcrumbs .sep {
+            margin: 0 8px;
+            opacity: 0.7;
+        }
+        header h1 {
+            font-size: 2.4em;
+            margin-bottom: 8px;
+        }
+        header p {
+            opacity: 0.8;
+            max-width: 640px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.04);
+            border-radius: 18px;
+            padding: 36px;
+            box-shadow: 0 20px 40px rgba(4, 10, 34, 0.6);
+        }
+        section + section {
+            margin-top: 32px;
+        }
+        h2 {
+            margin-bottom: 12px;
+            color: #c4d7ff;
+        }
+        ul {
+            padding-left: 22px;
+            line-height: 1.8;
+        }
+        a {
+            color: #8dc6ff;
+        }
+        p {
+            line-height: 1.7;
+            opacity: 0.95;
+        }
+        code, pre {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        }
+        code.big-number {
+            overflow-wrap: anywhere;
+            word-break: break-word;
+            white-space: normal;
+        }
+        pre {
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.16);
+            border-radius: 12px;
+            padding: 14px 16px;
+            overflow: auto;
+            color: #e9eefb;
+        }
+        .pill {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 999px;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            background: rgba(255, 255, 255, 0.06);
+            font-size: 0.9em;
+            margin-right: 8px;
+            margin-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 12px;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+        th, td {
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            padding: 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background: rgba(255, 255, 255, 0.06);
+            color: #c4d7ff;
+        }
+        .cta-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 24px;
+        }
+        .cta {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 22px;
+            border-radius: 999px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            text-decoration: none;
+            color: white;
+            background: rgba(255, 255, 255, 0.05);
+            transition: background 0.2s;
+        }
+        .cta:hover {
+            background: rgba(255, 255, 255, 0.12);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <a href="index.html">Home</a><span class="sep">›</span><span>One-way Hash</span>
+        </nav>
+        <div class="badge" style="display:inline-block;background:#1c2b53;padding:6px 14px;border-radius:12px;font-size:0.85em;">PRIVACY NOTES</div>
+        <h1>One-way hashes stay safe in public</h1>
+        <p>Live Verify relies on a simple idea: you can safely publish a list of SHA-256 hashes on a public web server, because a hash is a one-way “fingerprint” of the original content—useful for matching, useless for reading.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>What a one-way hash is</h2>
+            <p>
+                SHA-256 turns an arbitrary input (text, image bytes, a PDF file) into a fixed 256-bit output. If the input changes by even one character,
+                the output changes completely. The important property here is <strong>one-wayness</strong>: given only the hash, you can’t realistically recover the input.
+            </p>
+            <div class="pill">Deterministic</div>
+            <div class="pill">Collision-resistant</div>
+            <div class="pill">Preimage-resistant</div>
+        </section>
+
+        <section>
+            <h2>Examples</h2>
+            <p>These examples are for exact UTF‑8 byte sequences (no newline). They are easy to verify locally.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Input</th>
+                        <th>SHA-256</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>hello</code></td>
+                        <td><code>2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>hello world</code></td>
+                        <td><code>b94d27b9934d3e08a52e52d7da7dabfac484efe37a5380ee9088f7ace2efcde9</code></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.gutenberg.org/cache/epub/10/pg10.txt" target="_blank" rel="noreferrer noopener"><code>pg10.txt</code></a> (Project Gutenberg “King James Bible” plain text)</td>
+                        <td><code>2623a56935731e3628e86114f5e776a14b6f61225c5c29791f31e40ff6e6774e</code></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="note" style="margin-top: 12px;">
+                Hashing works the same way for PDFs or any other file type: SHA-256 is over the <em>file bytes</em>. Two “King James Bible” files from different sources (or in different formats)
+                will almost certainly have different hashes because their bytes differ (line endings, metadata, fonts, layout, etc.). To hash a specific file you have on disk:
+            </p>
+            <pre><code>sha256sum king-james-bible.pdf</code></pre>
+        </section>
+
+        <section>
+            <h2>Why publishing hashes is safe</h2>
+            <ul>
+                <li>An SHA-256 hash is 256-bit, so brute forcing arbitrary inputs requires on the order of 2 to-the-power-of 256 attempts (≈ <code class="big-number">115,792,089,237,316,195,423,570,985,008,687,907,853,269,984,665,640,564,039,457,584,007,913,129,639,936</code> possibilities).</li>
+                <li>Issuers publish only hashes and a small status (“OK”, “Valid ID”, “Awarded”, etc.)—not the document text.</li>
+                <li>Anyone who already has the original can recompute the hash to verify it matches; outsiders can’t read the original from the hash.</li>
+            </ul>
+            <p>
+                To translate that giant number into something human-readable: it’s roughly <strong>10<sup>77</sup></strong> (a 1 followed by ~77 zeros).
+                Even if you imagined all data centers on Earth doing SHA-256 guesses all day, every day, the time-to-crack is still absurd:
+            </p>
+            <ul>
+                <li>At <strong>1 trillion</strong> guesses/sec (10<sup>12</sup>): about <strong>3×10<sup>57</sup></strong> years.</li>
+                <li>At <strong>1 quintillion</strong> guesses/sec (10<sup>18</sup>): about <strong>3×10<sup>51</sup></strong> years.</li>
+            </ul>
+            <p>
+                For comparison, even if you measure time from <strong>1 AD</strong> (roughly two thousand years), these estimates are still on the order of
+                <strong>10<sup>48</sup></strong> to <strong>10<sup>54</sup></strong> times longer. These are not “marketing numbers”; they’re the implication of a 256-bit one-way function.
+            </p>
+            <p>
+                And even in the fantasy scenario where someone could run guesses for “billion‑billion‑billion” years and eventually find <em>some</em> bytes that match a target SHA‑256,
+                those bytes would almost certainly be meaningless noise, not a human-readable document. The chance of stumbling onto the exact original PDF/text bytes is vanishingly small.
+            </p>
+            <p>
+                Caveat: this gets <em>less</em> impossible when the attacker already knows most of the structure and many of the fields are predictable. If a credential format is fixed and
+                the remaining unknowns come from a small set (low entropy), an attacker can guess those unknowns and hash each guess. That is why adding an issuer-generated random “salt line”
+                (see “Adding unpredictability”) is a simple and effective defense: it enlarges the search space so guessing attacks become impractical again.
+            </p>
+            <p>
+                One subtle point: people sometimes mix up two different kinds of attacks—<em>collisions</em> and <em>reversing</em>.
+                A collision means “two different inputs produce the same hash”. Reversing (more precisely, a <em>preimage</em>) means “given a specific hash, find any input that produces it”.
+                Live Verify relies on preimage resistance: if you only know the hash, you still can’t feasibly invent bytes that match it.
+            </p>
+        </section>
+
+        <section>
+            <h2>SHA‑1: a prior historical hashing algorithm</h2>
+            <p>
+                SHA‑1 was a widely used hash function for many years (software downloads, file integrity checks, and more). Back then, it was considered strong enough.
+            </p>
+            <p>
+                In 2017, researchers publicly demonstrated a practical SHA‑1 <em>collision</em> by producing <strong>two different PDF files</strong> with the <strong>same SHA‑1 hash</strong>
+                (the “SHAttered” demonstration). That matters because if collisions are feasible, the hash stops being a reliable fingerprint for integrity and authenticity workflows.
+            </p>
+            <p>
+                The industry response was to move to newer, stronger hashes—most commonly <strong>SHA‑256</strong> (part of the SHA‑2 family). Live Verify uses SHA‑256 because it’s widely deployed,
+                fast, and (today) has no known practical collision or “reverse-the-hash” attacks.
+            </p>
+        </section>
+
+        <section>
+            <h2>Issuer obligations</h2>
+            <p>
+                Hashes can be public, but the underlying documents and registries should be treated as sensitive systems. In the era of constant breaches,
+                issuers should assume strong obligations for the plain text that would produce the hashes—think PCI-class separation and stringency
+                (see <a href="https://www.pcisecuritystandards.org/standards/pci-dss/" target="_blank" rel="noreferrer noopener">PCI DSS</a>).
+            </p>
+            <ul>
+                <li>Store plain-text documents behind strong access controls and logging.</li>
+                <li>Segment hashing services from customer-facing endpoints so no single attacker can pivot.</li>
+                <li>Monitor for anomalies or repeated hash lookups that suggest credential harvesting.</li>
+            </ul>
+            <p>
+                For very high-value credentials, some issuers may choose a stronger operational model: keep the plain-text registry in an internal environment (even air-gapped),
+                and publish only a one-way feed of hashes outward on a schedule. That way, the public verification endpoint never has direct access back to the sensitive source records.
+            </p>
+            <p>
+                Important caveat: hashes are not encryption. If the thing you hash is too short or too predictable, attackers can sometimes guess it.
+                For example, if the input space is “very small” (common phrases, short IDs, a tiny set of templates), an attacker can hash guesses and look for matches.
+            </p>
+        </section>
+
+        <section>
+            <h2>Low-entropy inputs and “guessing attacks”</h2>
+            <p>
+                The one-way property protects you when the underlying content has high “entropy” (lots of unpredictable variation).
+                It is weaker when the content is short or highly guessable. This is why issuers must think about what is being hashed:
+            </p>
+            <ul>
+                <li><strong>Good:</strong> Rich documents where the exact text varies significantly per person (many fields, many combinations).</li>
+                <li><strong>Risky:</strong> Tiny claims with only a few possible values (e.g., “Over 18: YES/NO” with no other context).</li>
+            </ul>
+            <p>
+                If a document falls into the “risky” bucket, issuers can add unpredictability so there’s no small guessable space to brute force.
+            </p>
+            <p>See the “Elvis Aaron Presley” sample credential below for what that can look like in practice.</p>
+        </section>
+
+        <section>
+            <h2>Adding unpredictability (a random salt line)</h2>
+            <p>
+                A simple hardening technique is to include a random, issuer-generated salt line as part of the hashed text—something like:
+                <code>random chars: so3iewf 8fhs rwef</code>.
+                This makes guessing attacks impractical because an attacker would need to guess the salt too.
+            </p>
+            <ul>
+                <li>The salt line must be printed (or otherwise present) so the verifier can OCR it and include it in the hash.</li>
+                <li>The salt should be generated securely and be long enough to be unguessable.</li>
+                <li>In Live Verify terms: it becomes part of the normalized text that is hashed, so the issuer must store the corresponding hash.</li>
+            </ul>
+            <p>Example (carriage returns shown as new lines; this is the kind of plain text that would be normalized and hashed):</p>
+            <pre><code>Elvis Aaron Presley
+DOB: 1935-01-08
+State: TN
+DL#: P1234567
+Expires: 1960-01-08
+random chars: so3iewf 8fhs rwef</code></pre>
+        </section>
+
+        <section>
+            <h2>One-way hash + verification workflow</h2>
+            <p>
+                The phone app (or future camera app) performs OCR + normalization → SHA-256 locally, then requests <code>https://issuer.example.com/c/&lt;hash&gt;</code>.
+                The issuer hosts a simple response (often static): “OK”, “Valid ID”, “Awarded”, “Denied”, etc. Because the hash is intended to be public, no login is required for lookups;
+                HTTPS still protects the request in transit.
+            </p>
+        </section>
+
+        <div class="cta-row">
+            <a class="cta" href="privacy_declaration.html">Read Privacy Declaration</a>
+            <a class="cta" href="use-cases/">Explore Use Cases</a>
+        </div>
+    </main>
+</body>
+</html>

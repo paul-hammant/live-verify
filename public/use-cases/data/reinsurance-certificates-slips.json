@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Insurance & Risk Management",
+    "title": "Reinsurance certificates and slips (treaty and facultative)",
+    "volume": "Small",
+    "retention": "Treaty/fac term + 10 years",
+    "dataVerified": "Ceding company, reinsurer, coverage terms, layers, premium, effective dates",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents forged reinsurance slips. Domain binding verifies reinsurer/broker. Multi-billion dollar risk transfers. London/Bermuda market standard. Syndicate verification (Lloyd's). Prevents unauthorized reinsurance placements."
+  }
+]

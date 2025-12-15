@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Insurance & Risk Management",
+    "title": "Expert witness reports (engineering, medical, forensic)",
+    "volume": "Small",
+    "retention": "Litigation + 10-20 years",
+    "dataVerified": "Expert name/credentials, claim details, opinions, methodology, compensation",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents fabricated expert reports. Domain binding verifies expert credentials/firm. High-stakes litigation. Large claim disputes ($100K-$10M+). Prevents opinion tampering. Multi-page: Expert reports are lengthy technical documents - per-page verification."
+  }
+]

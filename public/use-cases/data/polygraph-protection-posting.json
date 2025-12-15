@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Mandatory Workplace Postings",
+    "title": "Polygraph Protection Act posting",
+    "volume": "Large",
+    "retention": "Current version",
+    "dataVerified": "None (informational), DOL contact, employee rights against lie detector tests",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Domain binding verifies DOL. Federal posting requirement. Employee rights protection. Prevents illegal polygraph use."
+  }
+]

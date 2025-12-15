@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Insurance & Risk Management",
+    "title": "Prize indemnity insurance (contests, hole-in-one, sweepstakes)",
+    "volume": "Very Small",
+    "retention": "Contest period + 7 years",
+    "dataVerified": "Contest sponsor, prize details, odds, coverage amount, insurer",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents fake prize indemnity insurance. Domain binding verifies Lloyd's syndicate/specialist. High-value prizes ($1M hole-in-one, $1bn sweepstakes). Contest sponsor verification. Prevents sponsor from avoiding large prize payments."
+  }
+]

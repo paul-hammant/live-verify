@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Actuarial & Insurance Mathematics",
+    "title": "Annuity pricing and rate certifications",
+    "volume": "Very Small",
+    "retention": "7-30 years (contract lifetime)",
+    "dataVerified": "Actuary name, insurance company, pricing assumptions, mortality/interest rates, annuity type",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents fraudulent annuity pricing enabling mis-selling. Domain binding verifies credentialed actuary. Contract lifetime retention for long-dated products. Consumer protection from mispriced products. High-value products ($100K+ typical). State insurance department oversight for rate approval. Critical for annuity purchasers where pricing determines retirement income."
+  }
+]

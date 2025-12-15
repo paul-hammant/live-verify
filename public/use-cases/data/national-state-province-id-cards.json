@@ -1,0 +1,15 @@
+[
+  {
+    "category": "Identity & Access Verification",
+    "title": "National / state / province ID cards",
+    "volume": "Large (daily across hospitality, events, retail, transport)",
+    "retention": "Short-term (<48h) for front-line checks, long-term audit logs retained by institutions",
+    "dataVerified": "ID card number, issuing authority domain (vfy: or verify:), expiration date, hologram/serial integrity statements",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Hotels, bouncers, car rentals, and transit workers already see ID cards but often can't trust the card is still valid or authentic. Flashing 'Claim Verified' for issuer-attested IDs lets them confirm the government domain currently vouches for that particular card text. This protects against simple forgeries without forcing staff to learn complex verification portals.",
+    "exampleDocument": {
+      "url": "../training-pages/driving-license-nordia-svg.html",
+      "label": "Nordic driving license training page"
+    }
+  }
+]

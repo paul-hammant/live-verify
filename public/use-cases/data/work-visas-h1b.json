@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Immigration & Visa Documents",
+    "title": "Work visas (H-1B, L-1, O-1, etc.) and I-94 records",
+    "volume": "Medium",
+    "retention": "Visa validity period",
+    "dataVerified": "Name, visa type, expiration date, employer, passport number",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "I-9 compliance; prevents altered expiration dates; DHS domain binding. Foreign workers can verify status without carrying physical visa documents, reducing risk while traveling domestically."
+  }
+]

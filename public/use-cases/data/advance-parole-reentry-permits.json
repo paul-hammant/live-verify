@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Immigration & Visa Documents",
+    "title": "Advance parole and re-entry permits",
+    "volume": "Medium",
+    "retention": "Permit validity + 7 years",
+    "dataVerified": "Full name, DOB, nationality, permit type, validity period, I-131 receipt number",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents fake advance parole. Domain binding verifies USCIS. Travel authorization for pending AOS. Re-entry documentation. CBP inspection verification. Green card applicant travel. For privacy, issuers can add a random salt line to raise entropy and defeat guessing attacks."
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Healthcare & Medical Records",
+    "title": "Vaccination records and immunization cards",
+    "volume": "Medium-Small",
+    "retention": "Lifetime (public health)",
+    "dataVerified": "Patient name, DOB, vaccine type, lot number, administrator",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Wallet card format. Prevents fake vaccination cards. International travel verification. School enrollment. Lifetime records."
+  }
+]

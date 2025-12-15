@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Logistics & Transportation",
+    "title": "Bills of lading and sea waybills (short-form page)",
+    "volume": "Medium",
+    "retention": "Shipment + 7-10 years",
+    "dataVerified": "Shipper/consignee names, origin/destination ports, vessel name, booking number, container numbers",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Front-page critical fields verifiable at terminals. Prevents document fraud in shipping. Port inspectors can verify authenticity without accessing commercial cargo details unless authorized."
+  }
+]

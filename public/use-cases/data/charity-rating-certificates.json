@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Charitable & Non-Profit",
+    "title": "Charity rating certificates",
+    "volume": "Tiny",
+    "retention": "3-5 years (rating validity)",
+    "dataVerified": "Organization name, rating body, financial metrics, leadership",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Domain binding verifies rating agency (Charity Navigator, GiveWell, etc.). Certificate format suitable for OCR. Donor due diligence."
+  }
+]

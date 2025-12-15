@@ -9,6 +9,7 @@
     "test": "npm run test:unit && npm run test:e2e",
     "test:unit": "jest",
     "test:e2e": "playwright test",
+    "generate:saas-leads": "node generate-saas-leads.js",
     "build": "webpack",
     "serve": "cd public && python3 -m http.server 8000",
     "lint": "eslint public/**/*.js __tests__/**/*.js",

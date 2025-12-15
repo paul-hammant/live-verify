@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Logistics & Transportation",
+    "title": "Warehouse receipts and storage agreements",
+    "volume": "Medium",
+    "retention": "Storage period + 7-10 years",
+    "dataVerified": "Depositor, warehouse operator, goods description, storage location, fees",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Negotiable warehouse receipts are documents of title. Domain binding verifies warehouse operator. Prevents fake warehouse receipts (collateral fraud). Lender verification for inventory financing. Multi-page: Receipts may be multi-page - per-page verification."
+  }
+]

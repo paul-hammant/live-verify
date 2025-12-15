@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Scientific & Research",
+    "title": "Ethical approval (IRB, IACUC) documents",
+    "volume": "Very Small",
+    "retention": "7-30 years (regulatory compliance)",
+    "dataVerified": "Researcher names, study participants (anonymized), protocol details",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "High-stakes human/animal subject protection. Domain binding verifies IRB/IACUC authority. Prevents fabricated ethical approvals. Long regulatory retention."
+  }
+]

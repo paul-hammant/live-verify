@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Banking & Financial Services",
+    "title": "Remittance transfer confirmations (Western Union, MoneyGram)",
+    "volume": "Medium",
+    "retention": "5-7 years (compliance/disputes)",
+    "dataVerified": "Sender, recipient, amount, fees, exchange rate, MTCN/reference",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents fake remittance receipts (common fraud in immigrant communities). Domain binding verifies remittance provider. Tamper-evident transfer proof. Regulatory compliance (Dodd-Frank 1073, CFPB Remittance Rule). Recipient verification before pickup."
+  }
+]

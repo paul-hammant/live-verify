@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Banking & Financial Services",
+    "title": "Suspicious Activity Reports (SARs) - internal documentation",
+    "volume": "Very Small",
+    "retention": "5-7 years (regulatory requirement)",
+    "dataVerified": "Subject names, transaction details, suspicion basis, filing date, compliance officer",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Internal compliance records documenting SAR filing decisions (not the filed SARs themselves which are confidential to FinCEN). Domain binding verifies compliance department. Tamper-evident internal audit trail. Proves SAR filing occurred for regulatory examinations. Critical for BSA compliance where financial institutions must maintain records of suspicious activity detection and reporting."
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Logistics & Transportation",
+    "title": "ATA Carnets (temporary import/export)",
+    "volume": "Small",
+    "retention": "Carnet validity + 7 years",
+    "dataVerified": "Carnet holder, goods description, destination countries, customs authorities",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents fake ATA Carnets (temporary import fraud). Domain binding verifies issuing chamber/customs. International trade show equipment. Prevents permanent import of temporary goods. World Customs Organization (WCO) compliance."
+  }
+]

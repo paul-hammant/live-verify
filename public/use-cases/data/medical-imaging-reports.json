@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Healthcare & Medical Records",
+    "title": "Medical imaging reports (X-ray, MRI, CT scan)",
+    "volume": "Medium",
+    "retention": "10-30 years (diagnostic history)",
+    "dataVerified": "Patient name, DOB, imaging findings, radiologist name",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Medical report format. Domain binding verifies radiologist/facility."
+  }
+]

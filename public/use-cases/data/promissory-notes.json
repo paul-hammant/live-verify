@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Financial & Legal Documents",
+    "title": "Promissory notes and loan documents",
+    "volume": "Medium-Small",
+    "retention": "Loan term + 7-10 years",
+    "dataVerified": "Borrower name, lender name, loan amount, interest rate, payment terms, collateral description, loan date",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Legal document format requires human-readable terms. Prevents tampering with loan terms and interest rates. Domain binding to lender prevents forged promissory notes. Critical for loan disputes where original loan terms must be proven. Borrowers verify loan documentation without requiring lender backend access."
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Professional & Educational Qualifications",
+    "title": "Training completion certificates (safety, compliance, skills)",
+    "volume": "Small",
+    "retention": "5-10 years (regulatory requirement)",
+    "dataVerified": "Trainee name, employer name, training course title, training date, instructor name, hours completed",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Regulatory compliance verification for workplace safety and compliance training. Employer verification of employee training records. Human-readable certificate format suitable for workplace display. Domain binding to training provider prevents fake certificates. Critical for OSHA and industry compliance where training records must be verified during inspections."
+  }
+]

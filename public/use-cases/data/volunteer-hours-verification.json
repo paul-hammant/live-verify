@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Charitable & Non-Profit",
+    "title": "Volunteer hours verification",
+    "volume": "Medium-Small",
+    "retention": "3-7 years (employment verification)",
+    "dataVerified": "Volunteer name, hours worked, supervisor, organization, activities",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Domain binding verifies organization. Certificate format suitable for OCR. Employment/school applications. Court-ordered community service verification."
+  }
+]

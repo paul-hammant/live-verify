@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Event & Temporary Use Permits",
+    "title": "Block party and street closure permits",
+    "volume": "Medium",
+    "retention": "Event + 1-3 years",
+    "dataVerified": "Organizer name, address, street closure area, date/hours, neighbors' consent",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Domain binding verifies city/public works. Traffic control verification. Neighbor notification requirements. Prevents unauthorized street closures."
+  }
+]

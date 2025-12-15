@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Healthcare & Medical Records",
+    "title": "Living wills and advance directives",
+    "volume": "Very Small",
+    "retention": "Permanent (end-of-life care)",
+    "dataVerified": "Patient name, DOB, medical wishes, appointed decision-maker, witnesses",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Critical end-of-life decisions. Prevents forged advance directives. Domain binding verifies issuing authority (notary, healthcare system). Human-readable wishes essential. Permanent legal records. Multi-page: Full living wills may be multi-page - per-page verification prevents tampering."
+  }
+]

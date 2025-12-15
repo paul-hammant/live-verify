@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Notary Services",
+    "title": "Document translations (certified translations)",
+    "volume": "Medium",
+    "retention": "Translation purpose + 7-10 years",
+    "dataVerified": "Translator name, translator credentials, original document language, translated document, notary certification, notary name, notary commission number, notary seal, translation date",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents fake certified translations for immigration and legal proceedings. Domain binding verifies translator and notary legitimacy. Immigration applications (USCIS) require certified translations of foreign documents. Court proceedings accept only certified translations as evidence. Legal document translation for international contracts. Prevents translation fraud in visa applications. Multi-page documents require per-page certification. Critical for immigration where translation accuracy and authenticity are verified."
+  }
+]

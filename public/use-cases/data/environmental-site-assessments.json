@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Real Estate & Property",
+    "title": "Environmental site assessments (Phase I, Phase II)",
+    "volume": "Very Small",
+    "retention": "7-20 years (liability protection)",
+    "dataVerified": "Property owner, environmental consultant, site address, contamination findings",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents fabricated clean site reports. Domain binding verifies environmental consultant. High liability risk. Long retention for CERCLA/Superfund protection. Multi-page: ESA reports are multi-page - each page can have verify line. Prevents page substitution attacks (hiding contamination findings)."
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Immigration & Visa Documents",
+    "title": "Ballot chain-of-custody transfer forms",
+    "volume": "Small",
+    "retention": "Election cycle + 2-4 years",
+    "dataVerified": "Custodian names, transfer timestamps, ballot container seals, precinct number, number of ballots, transfer location",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Per-transfer page verification prevents ballot substitution or tampering. Each custody transfer in chain is independently verifiable. Domain binding to county election offices ensures custody forms are authentic. Critical for election integrity where ballot chain-of-custody must be proven unbroken. Observers and officials verify custody without requiring backend system access."
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Travel & Hospitality",
+    "title": "Hotel loyalty program statements and point balances",
+    "volume": "Medium",
+    "retention": "Statement period + 3-7 years",
+    "dataVerified": "Member name, account number, point balance, tier status, stay history",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents fake loyalty statements. Domain binding verifies hotel chain (Marriott Bonvoy, Hilton Honors, IHG). Point balance verification. Prevents point theft claims. Status match documentation."
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Real Estate & Property",
+    "title": "Property tax assessments",
+    "volume": "Medium-Small",
+    "retention": "7-10 years (tax appeals)",
+    "dataVerified": "Property owner name, address, assessed value, jurisdiction",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Domain binding verifies tax authority. Government forms suitable for OCR. Tax appeal records. Assessment verification."
+  }
+]

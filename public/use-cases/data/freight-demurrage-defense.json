@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Logistics & Transportation",
+    "title": "Freight, demurrage & defense (FD&D) insurance",
+    "volume": "Small",
+    "retention": "Policy term + 10 years",
+    "dataVerified": "Shipowner, vessel, FD&D insurer, dispute coverage, legal defense limits",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Domain binding verifies FD&D insurer. Charter party disputes. Legal defense coverage. Maritime arbitration financing. Protects against demurrage claims."
+  }
+]

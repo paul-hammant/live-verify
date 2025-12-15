@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Real Estate & Property",
+    "title": "Builder warranties (new construction)",
+    "volume": "Very Small",
+    "retention": "10-20 years (warranty period)",
+    "dataVerified": "Builder name, homeowner, property address, warranty terms, coverage",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents forged builder warranties. Domain binding verifies builder/warranty company. Long warranty periods (10-year structural). Defect claim verification. Transferable to subsequent owners."
+  }
+]

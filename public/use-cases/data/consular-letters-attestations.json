@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Immigration & Visa Documents",
+    "title": "Consular letters and attestations",
+    "volume": "Small",
+    "retention": "Case + 5-10 years",
+    "dataVerified": "Applicant name, case number, consular officer signature, embassy/consulate location, attestation date, document purpose",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Embassy and consulate domain binding prevents forged consular letters. Critical for visa applications and immigration proceedings where consular attestations are required. Receiving authorities verify authenticity without contacting embassy. Prevents tampering with consular documents after issuance."
+  }
+]

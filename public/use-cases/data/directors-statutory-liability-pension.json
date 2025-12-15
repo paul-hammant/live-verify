@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Insurance & Risk Management",
+    "title": "Directors' statutory liability (pension trustee liability)",
+    "volume": "Very Small",
+    "retention": "Policy term + 20 years (claims tail)",
+    "dataVerified": "Company, pension trustees, ERISA fiduciary liability, coverage limits",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents fake pension trustee liability insurance. Domain binding verifies insurer. ERISA Section 409 fiduciary breach coverage. Multi-billion dollar pension plans. Long claims tail. Trustee protection from participant lawsuits."
+  }
+]

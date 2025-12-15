@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Charitable & Non-Profit",
+    "title": "501(c)(3) status documentation",
+    "volume": "Tiny",
+    "retention": "Permanent (legal status)",
+    "dataVerified": "Organization name, officers, board members, EIN, IRS determination",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents fake charities. Domain binding verifies IRS/tax authority. IRS letters suitable for OCR. Permanent legal status. Donor verification. Similar to donation receipts anti-impersonation pattern."
+  }
+]

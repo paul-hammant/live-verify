@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Logistics & Transportation",
+    "title": "Warehouse receipts and inventory records",
+    "volume": "Medium-Small",
+    "retention": "3-7 years (financial audit)",
+    "dataVerified": "Warehouse operator name, receipt number, depositor name, commodity description, quantity, warehouse location, receipt date",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Field verification for agricultural commodities and stored goods. Prevents fraudulent warehouse receipts used as loan collateral. Domain binding to licensed warehouses. Critical for commodity financing where warehouse receipts are negotiable documents of title."
+  }
+]

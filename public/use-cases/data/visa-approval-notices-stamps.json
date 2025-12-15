@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Immigration & Visa Documents",
+    "title": "Visa approval notices and visa stamps",
+    "volume": "Medium",
+    "retention": "Visa validity + 5-10 years",
+    "dataVerified": "Full name, passport number, visa type, validity period, issuing authority",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents fake visa approvals. Domain binding verifies embassy/consulate. Border entry requirement. Work authorization verification. Prevents visa fraud. Multi-page: Visa approval notices multi-page with terms."
+  }
+]

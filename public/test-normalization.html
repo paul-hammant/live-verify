@@ -26,6 +26,22 @@
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
             overflow: hidden;
         }
+        .breadcrumbs {
+            font-size: 0.9em;
+            color: #475569;
+            margin-bottom: 18px;
+        }
+        .breadcrumbs a {
+            color: #475569;
+            text-decoration: none;
+        }
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }
+        .breadcrumbs .sep {
+            margin: 0 8px;
+            opacity: 0.7;
+        }
 
         header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -194,6 +210,11 @@
 </head>
 <body>
     <div class="container">
+        <div style="padding: 18px 30px 0;">
+            <nav class="breadcrumbs" aria-label="Breadcrumb">
+                <a href="index.html">Home</a><span class="sep">›</span><span>Normalization Test</span>
+            </nav>
+        </div>
         <header>
             <h1>Text Normalization Test</h1>
             <p>Test the normalization rules used for hash generation</p>

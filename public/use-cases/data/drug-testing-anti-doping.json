@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Sports & Athletics",
+    "title": "Drug testing (anti-doping) certificates",
+    "volume": "Very Small",
+    "retention": "10-20 years (WADA requirements)",
+    "dataVerified": "Athlete name, DOB, test date, sample ID, testing authority",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "WADA compliance. Domain binding verifies testing authority. Prevents fabricated clean tests. Regulatory forms suitable for OCR. Athlete eligibility verification. Long retention. For privacy, issuers can add a random salt line to raise entropy and defeat guessing attacks."
+  }
+]

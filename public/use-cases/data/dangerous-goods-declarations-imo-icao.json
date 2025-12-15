@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Logistics & Transportation",
+    "title": "Dangerous goods declarations (IMO/ICAO short-form)",
+    "volume": "Small",
+    "retention": "Shipment + 5-10 years",
+    "dataVerified": "Shipper name, UN numbers, class",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Port/airport safety checks. Tamper-evident declarations. Domain binding verifies shipper."
+  }
+]

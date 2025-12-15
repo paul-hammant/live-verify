@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Healthcare & Medical Records",
+    "title": "Lab test results and pathology reports",
+    "volume": "Medium",
+    "retention": "10-30 years (medical necessity)",
+    "dataVerified": "Patient name, DOB, test results, ordering physician, lab technician",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Medical reports need human readability. Privacy-preserving. Domain binding verifies lab. Long-term records."
+  }
+]

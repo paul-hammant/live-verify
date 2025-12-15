@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Art & Collectibles",
+    "title": "Artist signatures and stamps",
+    "volume": "Very Small",
+    "retention": "Permanent (authenticity)",
+    "dataVerified": "Artist name, signature authenticator, verification date",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Domain binding verifies authentication expert. Prevents fake authentication certificates. Human-readable format. Permanent authenticity records."
+  }
+]

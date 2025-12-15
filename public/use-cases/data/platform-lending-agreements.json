@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Banking & Financial Services",
+    "title": "Platform lending agreements (Amazon Lending, Shopify Capital)",
+    "volume": "Small",
+    "retention": "Loan term + 7-10 years",
+    "dataVerified": "Merchant name, loan amount, repayment terms, platform, collateral",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents fake lending agreements. Domain binding verifies platform. Tamper-evident loan terms. Prevents merchant fraud. Revenue-based financing verification. Default/collection documentation. Regulatory compliance."
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Professional & Occupational Licenses",
+    "title": "Massage therapy licenses",
+    "volume": "Medium",
+    "retention": "1-2 years (renewal)",
+    "dataVerified": "Therapist name, license number, certifications, issuing authority",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents fake massage licenses. Domain binding verifies state licensing board. Prevents unlicensed practice. Human trafficking prevention (illicit massage parlors). Consumer protection."
+  }
+]

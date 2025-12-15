@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Agriculture & Food",
+    "title": "Soil test results and amendments",
+    "volume": "Small",
+    "retention": "5-10 years (nutrient management)",
+    "dataVerified": "Farm owner, lab name, field location, recommendations",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Domain binding verifies testing lab. Lab report format suitable for OCR. Nutrient management plans. Environmental compliance."
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Professional & Occupational Licenses",
+    "title": "Contractor licensing and bonding certificates",
+    "volume": "Medium",
+    "retention": "License term + 7 years",
+    "dataVerified": "Contractor name, license number, bond number, bond amount, issuing authority, expiration date",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Bid compliance checks for construction projects. Tamper-evident field copies for procurement verification. Homeowners verify contractor credentials before signing contracts. Domain binding to state licensing boards prevents fake licenses. Critical for public works bidding where bonding certificates must be verified."
+  }
+]

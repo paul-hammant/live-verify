@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Real Estate & Property",
+    "title": "Soil and geotechnical reports",
+    "volume": "Very Small",
+    "retention": "20-30 years (building lifetime)",
+    "dataVerified": "Property owner, geotechnical engineer, site address, soil conditions, recommendations",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Domain binding verifies licensed geotechnical engineer. Technical reports suitable for OCR. Foundation design verification. Long retention for building lifetime."
+  }
+]

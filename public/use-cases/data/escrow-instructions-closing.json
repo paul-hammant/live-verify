@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Real Estate & Property",
+    "title": "Escrow instructions and closing documents",
+    "volume": "Very Small",
+    "retention": "7-10 years (transaction disputes)",
+    "dataVerified": "Buyer/seller names, escrow officer, lender, property address, instructions",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Domain binding verifies escrow company. Formal documents suitable for OCR. Transaction dispute resolution. Wire fraud prevention."
+  }
+]

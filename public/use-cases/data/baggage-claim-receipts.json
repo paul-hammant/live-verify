@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Travel & Hospitality",
+    "title": "Baggage claim receipts and delayed baggage reports",
+    "volume": "Large",
+    "retention": "Claim resolution + 3-7 years",
+    "dataVerified": "Passenger name, baggage tag numbers, flight details, claim amount, airline",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents altered baggage claim amounts. Domain binding verifies airline. Montreal Convention liability limits. Prevents inflated claim fraud. Baggage delay compensation documentation (EU261 regulation)."
+  }
+]

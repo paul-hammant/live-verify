@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Mandatory Workplace Postings",
+    "title": "Right to request lactation accommodation posting",
+    "volume": "Large",
+    "retention": "Current version",
+    "dataVerified": "None (informational), employer lactation policy, request process",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Domain binding verifies employer/state agency. State posting requirement (varies by state). Employee rights notification. Prevents discrimination."
+  }
+]

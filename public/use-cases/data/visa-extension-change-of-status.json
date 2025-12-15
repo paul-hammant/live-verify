@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Immigration & Visa Documents",
+    "title": "Visa extension and change of status approvals",
+    "volume": "Medium",
+    "retention": "Approval + 10 years",
+    "dataVerified": "Full name, passport number, current status, new status/extension, approval date, receipt number",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents fake extension/change approvals. Domain binding verifies USCIS (uscis.gov). Work authorization continuation. Stay compliance verification. I-539/I-129 approval documentation. For privacy, issuers can add a random salt line to raise entropy and defeat guessing attacks."
+  }
+]

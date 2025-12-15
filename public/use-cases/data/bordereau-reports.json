@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Insurance & Risk Management",
+    "title": "Bordereau reports (premium and claims bordereaux)",
+    "volume": "Small",
+    "retention": "Treaty term + 10 years",
+    "dataVerified": "Ceding company, reinsurer, policy details, premiums, claims, commissions",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents fabricated bordereaux (enables premium/claims fraud). Domain binding verifies ceding company. Multi-million dollar premium remittances. Treaty compliance. Quarterly/monthly reporting requirement. Multi-page: Bordereaux are detailed spreadsheet-format multi-page reports."
+  }
+]

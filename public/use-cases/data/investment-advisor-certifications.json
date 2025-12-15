@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Banking & Financial Services",
+    "title": "Investment advisor certifications (RIA, IAR)",
+    "volume": "Very Small",
+    "retention": "Permanent (may show REVOKED status)",
+    "dataVerified": "Advisor name, SEC/state registration number, ADV filing date, firm name, disciplinary history summary",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Revocable credentials for investment advisors. Domain binding verifies SEC/state regulator. Prevents fake advisor credentials in investment fraud. Investor protection and client due diligence. Investment Adviser Public Disclosure (IAPD) integration. Critical for investor protection where advisor verification prevents fraud by unregistered or disciplined advisors."
+  }
+]

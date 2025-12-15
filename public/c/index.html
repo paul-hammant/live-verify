@@ -24,6 +24,22 @@
             max-width: 500px;
             text-align: center;
         }
+        .breadcrumbs {
+            font-size: 0.9em;
+            opacity: 0.9;
+            margin-bottom: 18px;
+        }
+        .breadcrumbs a {
+            color: white;
+            text-decoration: none;
+        }
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }
+        .breadcrumbs .sep {
+            margin: 0 8px;
+            opacity: 0.7;
+        }
         .badge {
             display: inline-block;
             background: rgba(255, 255, 255, 0.2);
@@ -140,12 +156,15 @@
 </head>
 <body>
     <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <a href="../index.html">Home</a><span class="sep">›</span><span>Future Vision</span>
+        </nav>
         <div class="badge">FUTURE VISION</div>
 
-        <h1>The Next Evolution of Mobile Trust</h1>
+        <h1>A Plausible Next Step for Mobile Trust</h1>
 
         <div class="vision-box">
-            <p>When Apple and Google integrate OCR-to-hash verification into their camera apps, tapping a <span class="verify-example">verify:</span> link will automatically verify the textual claim made in camera's viewfinder—instantly showing:</p>
+            <p>If Apple and Google integrate OCR-to-hash verification into their camera apps, recognizing a <span class="verify-example">verify:</span> line in the viewfinder could automatically check the claim and show:</p>
             <div class="verification-lines">
                 <div><span class="icon">✅</span><strong>VERIFIED</strong></div>
                 <div><span class="icon">❌</span><strong>FAILS VERIFICATION</strong></div>
@@ -154,16 +173,17 @@
         </div>
 
         <div class="impact">
-            <h2>Why This is Inevitable</h2>
-            <p>Billions of smartphones already have OCR built-in. Quick trust verification for human eyes is the missing layer. Apple and Google will inevitably integrate this to combat fraud, protect users, to faciliate a larger privacy-protecting verification ecosystem.</p>
+            <h2>Why this could become a camera feature</h2>
+            <p>Billions of smartphones already ship OCR. A privacy-preserving “Verified / Denied” overlay is a plausible next step: it reduces fraud while keeping the verification flow inside the camera app. It’s not guaranteed—but it fits the direction platforms already took with Live Text and on-device ML.</p>
+            <p class="note">Note: scanning from screens can introduce moiré patterns; higher-capability OCR (as used by platform camera apps) can improve reliability.</p>
         </div>
 
         <div class="impact">
             <h2>Market Impact</h2>
-            <p>Every receipt, license, certificate, and credential on earth becomes instantly verifiable. A multi-trillion dollar trust infrastructure—zero blockchain, zero apps to download.</p>
+            <p>A large slice of everyday verification can become faster and more private: receipts, licenses, permits, certificates, and credentials checked on the spot, without phone calls or portal uploads. The issuer-side infrastructure can be as simple as hash lookups; the commercial opportunity is in integrations, governance, and operations.</p>
         </div>
 
-        <a href="details.html" class="cta">Read More →</a>
+        <a href="../opportunity.html" class="cta">Read More →</a>
     </div>
 </body>
 </html>

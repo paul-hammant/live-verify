@@ -23,8 +23,27 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="theme-color" content="#000000">
-    <title>Live Verify</title>
+    <title>Live Verify prototype</title>
     <link rel="stylesheet" href="../styles.css">
+    <style>
+        .breadcrumbs {
+            font-size: 0.9rem;
+            opacity: 0.85;
+            margin: 8px 0 14px;
+        }
+        .breadcrumbs a {
+            color: #94a3b8;
+            text-decoration: none;
+        }
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }
+        .breadcrumbs .sep {
+            margin: 0 8px;
+            opacity: 0.7;
+            color: #94a3b8;
+        }
+    </style>
     <script src='https://cdn.jsdelivr.net/npm/tesseract.js@6/dist/tesseract.min.js'></script>
     <script src='https://unpkg.com/psl@1.15.0/dist/psl.umd.cjs'></script>
     <script>
@@ -36,6 +55,9 @@
 </head>
 <body>
     <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <a href="../index.html">Home</a><span class="sep">›</span><span>Camera App (Prototype)</span>
+        </nav>
         <header>
             <h1 id="appTitle">Live Verify</h1>
             <p>(simulation of potential change to iPhone and Android camera app)</p>
@@ -156,7 +178,7 @@
             </details>
             <p>
                 <a href="../training-pages/">Training</a> ·
-                <a href="../PRIVACY-DECLARATION.html">Privacy</a> ·
+                <a href="../privacy_declaration.html">Privacy</a> ·
                 <a href="https://github.com/paul-hammant/live-verify" target="_blank">Source</a>
             </p>
         </footer>

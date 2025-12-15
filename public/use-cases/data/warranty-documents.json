@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Retail & Consumer Protection",
+    "title": "Warranty documents and service agreements",
+    "volume": "Medium",
+    "retention": "Product lifetime + 3-10 years",
+    "dataVerified": "Customer name, product serial number, purchase date, warranty period, retailer/manufacturer name, warranty terms",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Consumer-facing document. Human-readable terms important. Prevents tampering with warranty dates and coverage. Customers don't need to keep paper warranty cards. Service centers verify coverage instantly. Domain binding to manufacturer prevents fake warranty documents."
+  }
+]

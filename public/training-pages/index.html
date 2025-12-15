@@ -25,6 +25,22 @@
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
+        .breadcrumbs {
+            font-size: 0.9em;
+            color: #475569;
+            margin-bottom: 18px;
+        }
+        .breadcrumbs a {
+            color: #475569;
+            text-decoration: none;
+        }
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }
+        .breadcrumbs .sep {
+            margin: 0 8px;
+            opacity: 0.7;
+        }
 
         h1 {
             color: #333;
@@ -114,6 +130,9 @@
 </head>
 <body>
     <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <a href="../index.html">Home</a><span class="sep">›</span><span>Training Pages</span>
+        </nav>
         <h1>Live Verify Training Pages</h1>
         <p class="subtitle">Certificates & Receipts for Testing</p>
 

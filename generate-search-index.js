@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const DATA_DIR = './public/c/data';
+const DATA_DIR = './public/use-cases/data';
 const OUTPUT_FILE = path.join(DATA_DIR, 'search-index.json');
 
 // Common stopwords to exclude from search index

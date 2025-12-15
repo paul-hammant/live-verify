@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Sports & Athletics",
+    "title": "Equipment certifications (safety, performance)",
+    "volume": "Very Small",
+    "retention": "Product lifetime (5-15 years)",
+    "dataVerified": "Manufacturer, certifying body, equipment specifications",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Domain binding verifies certification body. Prevents fake safety certifications. Certificate format suitable for OCR. Athlete safety. Competition legality."
+  }
+]

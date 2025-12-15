@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Commercial Lines Insurance",
+    "title": "Product liability insurance policies",
+    "volume": "Small",
+    "retention": "Policy term + 20-30 years (claims)",
+    "dataVerified": "Manufacturer name, products covered, coverage limits, retroactive date",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents fake product liability insurance. Domain binding verifies insurer. Extremely long claims tail (products harm consumers decades later). High-value claims. Distributor verification."
+  }
+]

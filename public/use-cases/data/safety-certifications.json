@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Product Certifications & Compliance",
+    "title": "Safety certifications (electrical, fire, structural, chemical)",
+    "volume": "Small",
+    "retention": "7-30 years (product lifecycle)",
+    "dataVerified": "Manufacturer name, facility location, inspector ID, certification body, certificate number, standards met (UL, NFPA, ASTM, etc.), issue date, expiration date",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Domain binding prevents fake certifying bodies. Human-readable certificate format. Tamper-evident. Critical for electrical products, building materials, chemical safety. Regulators and fire marshals can verify instantly. Prevents sale of uncertified dangerous products."
+  }
+]

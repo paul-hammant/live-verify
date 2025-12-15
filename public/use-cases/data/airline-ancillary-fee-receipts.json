@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Travel & Hospitality",
+    "title": "Airline ancillary fee receipts (baggage, seat selection)",
+    "volume": "Very Large",
+    "retention": "Flight + 1-3 years",
+    "dataVerified": "Passenger name, flight, ancillary service, fee amount, payment confirmation",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents altered ancillary fee receipts. Domain binding verifies airline. Expense claim verification. Prevents fee dispute fraud. Baggage fee, seat fee, wifi fee documentation."
+  }
+]

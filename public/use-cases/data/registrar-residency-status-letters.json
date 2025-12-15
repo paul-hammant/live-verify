@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Professional & Educational Qualifications",
+    "title": "Registrar/residency status letters",
+    "volume": "Medium",
+    "retention": "1-4 years",
+    "dataVerified": "Student name, status, term",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Employers/insurers verify eligibility letters without portals. Domain binding verifies university."
+  }
+]

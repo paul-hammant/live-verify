@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Travel & Hospitality",
+    "title": "Private hire/taxi driver verification cards (female safety)",
+    "volume": "Large",
+    "retention": "License term + 1-3 years (incidents)",
+    "dataVerified": "Driver name, photo, license number, vehicle details, licensing authority",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Female safety - verify driver credentials before entering vehicle late at night. Domain binding verifies licensing authority (e.g., private-hire.tfl.gov.uk). Real-time verification shows driver photo. Prevents fake driver credentials. Deters impersonation fraud. Critical safety feature for vulnerable passengers."
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Personal Lines Insurance",
+    "title": "Life insurance claims and death benefit applications",
+    "volume": "Small",
+    "retention": "7-10 years post-claim",
+    "dataVerified": "Deceased name, beneficiary names, death certificate details, claim amount, policy details",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder text (e.g., \"Valid ID\" or \"Denied\").",
+    "rationale": "Prevents fraudulent death claims and fake beneficiary claims. Domain binding verifies insurer and funeral home. High-value claims ($100K-$1M+ typical). Prevents beneficiary fraud where non-beneficiaries attempt to claim. Estate settlement verification. Critical for life insurance where death claim fraud includes faked deaths and fraudulent beneficiary documentation."
+  }
+]
