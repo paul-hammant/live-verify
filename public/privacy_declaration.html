@@ -154,8 +154,12 @@
         <nav class="breadcrumbs" aria-label="Breadcrumb">
             <a href="index.html">Home</a><span class="sep">›</span><span>Privacy Declaration</span>
         </nav>
-        <h1>Privacy Declaration</h1>
-        <p class="tagline">Live Verify: OCR to hash verifier</p>
+	        <h1>Privacy Declaration</h1>
+	        <p class="tagline">Live Verify: OCR to hash verifier</p>
+	        <p data-slogan-root style="margin: 0 0 26px;">
+	            Live Verify: the next logical step up from <span data-slogan-platform>the iPhone's</span> <span data-slogan-term>Live Text</span>.
+	            <button type="button" data-slogan-toggle></button>
+	        </p>
 
         <div class="highlight">
             <strong>TL;DR:</strong> For this prototype, Live Verify runs entirely in your browser—OCR, normalization, and hashing stay on-device. During verification, the only network calls are minimal HTTP GET requests to check hashes against certification servers (plus the initial download of the JS libraries listed below).<br><br>We expect the same multi-step flow to be embedded directly into iOS and Android camera apps (alongside Live Text / Camera Text) with the same on-device privacy posture.
@@ -386,9 +390,10 @@
             <a href="training-pages/" target="_blank">Training Pages</a>
         </div>
 
-        <p style="text-align: center; margin-top: 30px; color: #999; font-size: 0.85rem;">
-            Last updated: January 2025
-        </p>
-    </div>
-</body>
-</html>
+	        <p style="text-align: center; margin-top: 30px; color: #999; font-size: 0.85rem;">
+	            Last updated: January 2025
+	        </p>
+	    </div>
+	    <script src="slogan.js" defer></script>
+	</body>
+	</html>

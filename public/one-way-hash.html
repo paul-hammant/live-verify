@@ -141,10 +141,13 @@
         <nav class="breadcrumbs" aria-label="Breadcrumb">
             <a href="index.html">Home</a><span class="sep">›</span><span>One-way Hash</span>
         </nav>
-        <div class="badge" style="display:inline-block;background:#1c2b53;padding:6px 14px;border-radius:12px;font-size:0.85em;">PRIVACY NOTES</div>
-        <h1>One-way hashes stay safe in public</h1>
-        <p>Live Verify relies on a simple idea: you can safely publish a list of SHA-256 hashes on a public web server, because a hash is a one-way “fingerprint” of the original content—useful for matching, useless for reading.</p>
-    </header>
+	        <h1>One-way hashes stay safe in public</h1>
+	        <p>Live Verify relies on a simple idea: you can safely publish a list of SHA-256 hashes on a public web server, because a hash is a one-way “fingerprint” of the original content—useful for matching, useless for reading.</p>
+	        <p data-slogan-root style="margin-top: 14px;">
+	            Live Verify: the next logical step up from <span data-slogan-platform>the iPhone's</span> <span data-slogan-term>Live Text</span>.
+	            <button type="button" data-slogan-toggle></button>
+	        </p>
+	    </header>
 
     <main>
         <section>
@@ -178,16 +181,20 @@
                         <td><code>b94d27b9934d3e08a52e52d7da7dabfac484efe37a5380ee9088f7ace2efcde9</code></td>
                     </tr>
                     <tr>
-                        <td><a href="https://www.gutenberg.org/cache/epub/10/pg10.txt" target="_blank" rel="noreferrer noopener"><code>pg10.txt</code></a> (Project Gutenberg “King James Bible” plain text)</td>
+                        <td><a href="https://www.gutenberg.org/cache/epub/10/pg10.txt" target="_blank" rel="noreferrer noopener">pg10.txt</a> (Project Gutenberg “King James Bible” plain text)</td>
                         <td><code>2623a56935731e3628e86114f5e776a14b6f61225c5c29791f31e40ff6e6774e</code></td>
                     </tr>
                 </tbody>
             </table>
             <p class="note" style="margin-top: 12px;">
                 Hashing works the same way for PDFs or any other file type: SHA-256 is over the <em>file bytes</em>. Two “King James Bible” files from different sources (or in different formats)
-                will almost certainly have different hashes because their bytes differ (line endings, metadata, fonts, layout, etc.). To hash a specific file you have on disk:
+                will almost certainly have different hashes because their bytes differ (line endings, metadata, fonts, layout, etc.). To hash a specific file you have locally:
             </p>
-            <pre><code>sha256sum king-james-bible.pdf</code></pre>
+            <pre><code>
+                 # This is for Mac, Linux, and Windows via WSL
+                 # Project Gutenberg “King James Bible” in plain text 
+                 sha256sum pg10.txt
+            </code></pre>
         </section>
 
         <section>
@@ -216,7 +223,7 @@
             <p>
                 Caveat: this gets <em>less</em> impossible when the attacker already knows most of the structure and many of the fields are predictable. If a credential format is fixed and
                 the remaining unknowns come from a small set (low entropy), an attacker can guess those unknowns and hash each guess. That is why adding an issuer-generated random “salt line”
-                (see “Adding unpredictability”) is a simple and effective defense: it enlarges the search space so guessing attacks become impractical again.
+                (see “Adding unpredictability” below) is a simple and effective defense: it enlarges the search space so guessing attacks become impractical again.
             </p>
             <p>
                 One subtle point: people sometimes mix up two different kinds of attacks—<em>collisions</em> and <em>reversing</em>.
@@ -290,13 +297,16 @@
                 <li>The salt should be generated securely and be long enough to be unguessable.</li>
                 <li>In Live Verify terms: it becomes part of the normalized text that is hashed, so the issuer must store the corresponding hash.</li>
             </ul>
-            <p>Example (carriage returns shown as new lines; this is the kind of plain text that would be normalized and hashed):</p>
+            <p>Example (carriage returns shown as new lines). This is the kind of plain text that would be normalized and hashed:</p>
             <pre><code>Elvis Aaron Presley
 DOB: 1935-01-08
 State: TN
 DL#: P1234567
 Expires: 1960-01-08
 random chars: so3iewf 8fhs rwef</code></pre>
+
+        <p>Without that last line of random chars, the regular structure of the name/DOB/State/DL/expiry could be more guessable with a brute-force attack. The value of the knowledge "oh look, Elvis has a suspended Tennessee driving license" is questionable though.</p>
+
         </section>
 
         <section>
@@ -308,10 +318,11 @@ random chars: so3iewf 8fhs rwef</code></pre>
             </p>
         </section>
 
-        <div class="cta-row">
-            <a class="cta" href="privacy_declaration.html">Read Privacy Declaration</a>
-            <a class="cta" href="use-cases/">Explore Use Cases</a>
-        </div>
-    </main>
-</body>
-</html>
+	        <div class="cta-row">
+	            <a class="cta" href="privacy_declaration.html">Read Privacy Declaration</a>
+	            <a class="cta" href="use-cases/">Explore Use Cases</a>
+	        </div>
+	    </main>
+	    <script src="slogan.js" defer></script>
+	</body>
+	</html>

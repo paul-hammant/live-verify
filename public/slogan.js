@@ -17,7 +17,7 @@
                 border: 0;
                 padding: 0;
                 margin-left: 10px;
-                color: rgba(255, 255, 255, 0.95);
+                color: inherit;
                 text-decoration: underline;
                 cursor: pointer;
                 font-size: 0.85em;
@@ -33,6 +33,7 @@
     function wire(root) {
         const termEl = root.querySelector('[data-slogan-term]');
         if (!termEl) return;
+        const platformEl = root.querySelector('[data-slogan-platform]');
 
         let toggleEl = root.querySelector('[data-slogan-toggle]');
         if (!toggleEl) {
@@ -47,12 +48,14 @@
         function render() {
             if (state === 'google_lens') {
                 termEl.textContent = 'Google Lens';
-                toggleEl.textContent = 'iOS: Live Text';
-                toggleEl.setAttribute('aria-label', 'Switch slogan term to Live Text');
+                if (platformEl) platformEl.textContent = "Android's";
+                toggleEl.textContent = '<iPhone: Live Text>';
+                toggleEl.setAttribute('aria-label', 'Switch slogan term to iPhone Live Text');
             } else {
                 termEl.textContent = 'Live Text';
-                toggleEl.textContent = 'Android: Google Lens';
-                toggleEl.setAttribute('aria-label', 'Switch slogan term to Google Lens');
+                if (platformEl) platformEl.textContent = "the iPhone's";
+                toggleEl.textContent = '<Android: Google Lens>';
+                toggleEl.setAttribute('aria-label', 'Switch slogan term to Android Google Lens');
             }
         }
 
@@ -66,4 +69,3 @@
 
     roots.forEach(wire);
 })();
-

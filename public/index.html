@@ -223,7 +223,7 @@
 	        <div class="badge">LIVE VERIFY</div>
 	        <h1>Verify printed claims from the issuer’s domain.</h1>
 	        <p data-slogan-root>
-	            Live Verify: the next logical step up from <span data-slogan-term>Live Text</span>.
+	            Live Verify: the next logical step up from <span data-slogan-platform>the iPhone's</span> <span data-slogan-term>Live Text</span>.
 	            <button type="button" data-slogan-toggle></button>
 	        </p>
 	        <p class="lede">
@@ -255,7 +255,7 @@
         <div class="story-grid">
             <div class="card" id="userExperience">
                 <h2>What the user sees</h2>
-                <p>The camera app keeps the flow simple: “Snap” to capture the document, then it either overlays “Claim Verified” (with issuer/domain shown) or “Denied” if the hash check fails.</p>
+                <p>The camera app keeps the flow simple: “Snap” to capture the document, then it either overlays “Claim Verified” (or synonym) with issuer/domain shown, or Denied/Revoked, or "Not found"  if the hash check fails to match a URL with a 200 response.</p>
                 <ul class="user-list">
                     <li>Snap—frame the registration marks, tap to capture.</li>
                     <li>Verified or Denied—an overlay tells you the outcome instantly.</li>
@@ -267,15 +267,15 @@
                     loading="lazy"
                 />
                 <p class="demo-caption">
-                    Example: verification result for the
-                    <a href="training-pages/elbonian-source-of-funds.html" target="_blank" rel="noreferrer noopener">Elbonian Source of Funds training page</a>, in the demo web-app (not the Camera app that would need the same technology upgrade).
-                    <br>
+                    Example above is verification result for the
+                    <a href="training-pages/elbonian-source-of-funds.html" target="_blank" rel="noreferrer noopener">Elbonian Source of Funds training page</a>, in the demo web-app (not the Camera app that would need the same technology upgrade). This screenshot is showing debug info too, which would not be there for a production version of the technologies
+                    <br><br>
                     In a real deployment, the overlay would show <code>happy.bank.elbonia</code>, rather than <code>paul-hammant.github.io</code> - <code>top level .elbonia</code> is fictional, so nobody at all can buy those domains.
                 </p>
             </div>
             <div class="card" id="implementation">
                 <h2>Implementation</h2>
-                <p>Snap → OCR → normalize (rules) → SHA-256 → <code>GET</code> issuer URL → “Claim Verified” / Denied.</p>
+                <p>Snap → OCR → normalize (rules) → SHA-256 → <code>GET</code> issuer URL → Claim verified or denied.</p>
                 <p class="note">
                     Documents carry a <code>verify:</code> line pointing at the issuer’s domain, e.g.
                     <code>verify:issuer.example.com/claims</code><br>
@@ -322,7 +322,7 @@
                 <li><strong>Verified</strong> means: the domain in the <code>verify:</code> line currently attests to the hash for the extracted text.</li>
                 <li>It is <strong>not</strong> “ground truth”: the issuer can be wrong, malicious, or out-of-date.</li>
                 <li>The human decides whether that domain is an authority for the claim in question.</li>
-                <li>Look out for lookalike/typosquatted domains: the domain should be shown prominently so the human can judge it.</li>
+                <li>Look out for lookalike/typosquatted domains: while much of verification is automated <strong>the domain should be shown prominently</strong> for humans to judge or not as part of a "trust or don't trust" decision.</li>
             </ul>
             <h2 style="margin-top: 18px;">Verifications are revocable</h2>
             <p class="note" style="margin-top: 8px;">
