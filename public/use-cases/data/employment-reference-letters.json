@@ -1,0 +1,16 @@
+[
+  {
+    "category": "Employment & HR",
+    "title": "Employment reference letters (HR verification)",
+    "volume": "Medium",
+    "retention": "1-7 years (hiring + disputes)",
+    "dataVerified": "Employee name, employer name, job title/role, dates employed, (optional) eligibility-for-rehire flag, reference issuer name/title, contact details, reference ID",
+    "dataVisibleAfterVerification": "Shows the issuer domain and the responder status text (e.g., \"OK\", \"REVOKED\", \"NOT_FOUND\").",
+    "rationale": "Prospective employers and background-check providers waste time confirming references via phone/email and are exposed to forged letters. Domain binding verifies the employer’s domain and makes references machine-checkable at point of use. Revocation allows a reference to be withdrawn or corrected (e.g., issued in error). These letters can be short-form and OCR-friendly compared to full HR files.\n\nA reference can also be embedded inside a CV/resume (or appended as separate pages): a “collapsed” interactive CV can expand a specific verified reference on tap, while print defaults to all references expanded."
+    ,
+    "exampleDocument": {
+      "label": "Example interactive CV/resume with expandable sections",
+      "url": "https://paulhammant.com/files/paul_hammant_techie_cv"
+    }
+  }
+]

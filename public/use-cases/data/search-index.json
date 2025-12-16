@@ -412,6 +412,7 @@
       "educational-institution-accreditation",
       "elevator-inspection-certificates",
       "employment-authorization-ead",
+      "employment-reference-letters",
       "energy-audits-efficiency-ratings",
       "environmental-certifications",
       "equity-crowdfunding-certificates",
@@ -853,6 +854,7 @@
       "emergency-evacuation-maps",
       "emergency-lighting-exit-sign-certificates",
       "employment-authorization-ead",
+      "employment-reference-letters",
       "endangered-species-take-permits",
       "energy-audits-efficiency-ratings",
       "environmental-certifications",
@@ -1322,6 +1324,7 @@
       "emergency-evacuation-maps",
       "emergency-lighting-exit-sign-certificates",
       "employment-authorization-ead",
+      "employment-reference-letters",
       "endangered-species-take-permits",
       "energy-audits-efficiency-ratings",
       "environmental-certifications",
@@ -1791,6 +1794,7 @@
       "emergency-evacuation-maps",
       "emergency-lighting-exit-sign-certificates",
       "employment-authorization-ead",
+      "employment-reference-letters",
       "endangered-species-take-permits",
       "energy-audits-efficiency-ratings",
       "environmental-certifications",
@@ -2260,6 +2264,7 @@
       "emergency-evacuation-maps",
       "emergency-lighting-exit-sign-certificates",
       "employment-authorization-ead",
+      "employment-reference-letters",
       "endangered-species-take-permits",
       "energy-audits-efficiency-ratings",
       "environmental-certifications",
@@ -4219,6 +4224,7 @@
       "airline-compensation-letters",
       "bar-admission-good-standing",
       "consular-letters-attestations",
+      "employment-reference-letters",
       "global-entry-letters",
       "letters-of-credit",
       "mortgage-employment-verification",
@@ -5940,6 +5946,7 @@
       "course-transcripts",
       "cruise-booking-confirmations",
       "employment-authorization-ead",
+      "employment-reference-letters",
       "filming-photography-permits",
       "homeowners-renters-insurance",
       "hotel-reservation-confirmations",
@@ -5972,6 +5979,7 @@
       "court-orders-judgments",
       "disability-insurance-policies",
       "easement-agreements",
+      "employment-reference-letters",
       "film-completion-bonds",
       "hoa-bylaws-revisions",
       "independent-adjuster-reports",
@@ -6477,6 +6485,7 @@
       "credit-card-travel-benefits",
       "delivery-driver-verification",
       "discharge-summaries-care-plans",
+      "employment-reference-letters",
       "energy-audits-efficiency-ratings",
       "esta-travel-authorization",
       "ethical-approval-irb-iacuc",
@@ -7341,6 +7350,7 @@
       "citizenship-naturalization-certificates",
       "consular-processing-appointments",
       "course-transcripts",
+      "employment-reference-letters",
       "esta-travel-authorization",
       "immigration-interview-notices",
       "immigration-medical-exam-results",
@@ -7653,6 +7663,7 @@
       "continuing-education-credits",
       "drivers-licenses-vehicle-registrations",
       "drug-testing-anti-doping",
+      "employment-reference-letters",
       "environmental-site-assessments",
       "esta-travel-authorization",
       "food-safety-certifications",
@@ -8530,6 +8541,7 @@
       "air-quality-permits",
       "art-provenance-documentation",
       "continuing-education-credits",
+      "employment-reference-letters",
       "film-completion-bonds",
       "hoa-bylaws-revisions",
       "international-title-insurance",
@@ -9617,6 +9629,7 @@
     "reference": [
       "airline-ticket-receipts",
       "claims-notifications-reinsurers",
+      "employment-reference-letters",
       "hotel-cancellation-confirmations",
       "hotel-reservation-confirmations",
       "ota-booking-confirmations",
@@ -9862,6 +9875,7 @@
       "athletic-records-timing-results",
       "biometric-appointment-confirmations",
       "consular-processing-appointments",
+      "employment-reference-letters",
       "immigration-interview-notices",
       "parking-receipts-validation",
       "remote-online-notarizations",
@@ -10238,6 +10252,7 @@
       "block-party-street-closure-permits",
       "blood-type-donor-cards",
       "bloodstock-insurance",
+      "employment-reference-letters",
       "fair-trade-certifications",
       "filming-photography-permits",
       "fire-extinguisher-inspection-tags",
@@ -11100,6 +11115,7 @@
       "cosmetology-barber-licenses",
       "eeo-eeoc-posters",
       "employment-authorization-ead",
+      "employment-reference-letters",
       "fingerprint-certifications",
       "food-handler-certificates",
       "green-cards-i551",
@@ -11117,6 +11133,7 @@
     ],
     "job": [
       "apprenticeship-internship-completion",
+      "employment-reference-letters",
       "mortgage-employment-verification",
       "osha-workplace-safety-posters",
       "vocational-certifications"
@@ -11353,6 +11370,7 @@
       "art-certificates-of-authenticity",
       "bills-of-lading",
       "dangerous-goods-declarations-imo-icao",
+      "employment-reference-letters",
       "global-entry-letters",
       "recording-page-abstracts"
     ],
@@ -12908,6 +12926,7 @@
     ],
     "via": [
       "bank-statements-loan-applications",
+      "employment-reference-letters",
       "kyc-proof-of-address",
       "mortgage-income-verification",
       "source-of-funds-declarations",
@@ -15206,6 +15225,7 @@
     ],
     "references": [
       "childcare-provider-verification",
+      "employment-reference-letters",
       "source-of-funds-declarations",
       "travel-agency-invoices"
     ],
@@ -15324,6 +15344,7 @@
     "providers": [
       "claims-correspondence-eobs",
       "continuing-education-credits",
+      "employment-reference-letters",
       "health-insurance-policies-sbc"
     ],
     "calling": [
@@ -15711,6 +15732,7 @@
     ],
     "all": [
       "commutation-agreements",
+      "employment-reference-letters",
       "mortality-morbidity-tables",
       "osha-workplace-safety-posters",
       "safe-deposit-box-access-logs"
@@ -16407,6 +16429,7 @@
     ],
     "employer": [
       "covid-workplace-safety-protocols",
+      "employment-reference-letters",
       "fidelity-bonds",
       "food-handler-certificates",
       "lactation-accommodation-posting",
@@ -16439,6 +16462,7 @@
     "employee": [
       "covid-workplace-safety-protocols",
       "eeo-eeoc-posters",
+      "employment-reference-letters",
       "erisa-compliance-audit-reports",
       "federal-minimum-wage-labor-posters",
       "fidelity-bonds",
@@ -16817,6 +16841,7 @@
     "contact": [
       "dangerous-goods-declarations-air",
       "eeo-eeoc-posters",
+      "employment-reference-letters",
       "federal-minimum-wage-labor-posters",
       "fmla-posters",
       "hazardous-materials-sds-sheets",
@@ -17261,7 +17286,8 @@
       "educational-institution-accreditation"
     ],
     "prospective": [
-      "educational-institution-accreditation"
+      "educational-institution-accreditation",
+      "employment-reference-letters"
     ],
     "students": [
       "educational-institution-accreditation",
@@ -17335,6 +17361,7 @@
     ],
     "employers": [
       "eeo-eeoc-posters",
+      "employment-reference-letters",
       "fmla-posters",
       "industry-certifications",
       "osha-workplace-safety-posters",
@@ -17359,7 +17386,8 @@
       "elevator-inspection-certificates"
     ],
     "inside": [
-      "elevator-inspection-certificates"
+      "elevator-inspection-certificates",
+      "employment-reference-letters"
     ],
     "a17": [
       "elevator-inspection-certificates",
@@ -17522,6 +17550,147 @@
       "proof-of-funds-letters",
       "university-degrees",
       "work-visas-h1b"
+    ],
+    "role": [
+      "employment-reference-letters",
+      "hotel-staff-verification"
+    ],
+    "employed": [
+      "employment-reference-letters"
+    ],
+    "optional": [
+      "employment-reference-letters"
+    ],
+    "eligibility-for-rehire": [
+      "employment-reference-letters"
+    ],
+    "flag": [
+      "employment-reference-letters"
+    ],
+    "revoked": [
+      "employment-reference-letters",
+      "professional-licenses"
+    ],
+    "not_found": [
+      "employment-reference-letters"
+    ],
+    "background-check": [
+      "employment-reference-letters"
+    ],
+    "waste": [
+      "employment-reference-letters",
+      "hazardous-waste-generator-permits"
+    ],
+    "confirming": [
+      "employment-reference-letters"
+    ],
+    "phone": [
+      "employment-reference-letters",
+      "kyc-proof-of-address",
+      "mobile-money-receipts",
+      "number-portability-authorizations"
+    ],
+    "email": [
+      "employment-reference-letters"
+    ],
+    "exposed": [
+      "employment-reference-letters",
+      "kyc-identity-verification"
+    ],
+    "makes": [
+      "employment-reference-letters"
+    ],
+    "machine-checkable": [
+      "employment-reference-letters"
+    ],
+    "point": [
+      "employment-reference-letters",
+      "food-safety-certifications",
+      "guided-tour-receipts",
+      "hotel-loyalty-program-statements"
+    ],
+    "revocation": [
+      "employment-reference-letters",
+      "open-banking-consent-forms"
+    ],
+    "allows": [
+      "employment-reference-letters"
+    ],
+    "withdrawn": [
+      "employment-reference-letters"
+    ],
+    "corrected": [
+      "employment-reference-letters"
+    ],
+    "issued": [
+      "employment-reference-letters",
+      "house-air-waybills-hawb"
+    ],
+    "error": [
+      "employment-reference-letters"
+    ],
+    "these": [
+      "employment-reference-letters"
+    ],
+    "ocr-friendly": [
+      "employment-reference-letters"
+    ],
+    "compared": [
+      "employment-reference-letters"
+    ],
+    "files": [
+      "employment-reference-letters"
+    ],
+    "also": [
+      "employment-reference-letters"
+    ],
+    "embedded": [
+      "employment-reference-letters"
+    ],
+    "resume": [
+      "employment-reference-letters"
+    ],
+    "appended": [
+      "employment-reference-letters"
+    ],
+    "separate": [
+      "employment-reference-letters",
+      "war-risk-piracy-insurance"
+    ],
+    "collapsed": [
+      "employment-reference-letters"
+    ],
+    "interactive": [
+      "employment-reference-letters"
+    ],
+    "expand": [
+      "employment-reference-letters"
+    ],
+    "specific": [
+      "employment-reference-letters"
+    ],
+    "tap": [
+      "employment-reference-letters"
+    ],
+    "while": [
+      "employment-reference-letters",
+      "green-cards-i551",
+      "medical-device-certifications",
+      "professional-licenses",
+      "proof-of-funds-letters",
+      "stock-certificates",
+      "university-degrees",
+      "work-visas-h1b"
+    ],
+    "print": [
+      "employment-reference-letters"
+    ],
+    "defaults": [
+      "employment-reference-letters",
+      "mortgage-income-verification"
+    ],
+    "expanded": [
+      "employment-reference-letters"
     ],
     "endangered": [
       "endangered-species-take-permits"
@@ -18306,11 +18475,6 @@
       "industry-certifications",
       "safety-certifications"
     ],
-    "point": [
-      "food-safety-certifications",
-      "guided-tour-receipts",
-      "hotel-loyalty-program-statements"
-    ],
     "restaurants": [
       "food-safety-certifications",
       "food-service-establishment-licenses",
@@ -18581,15 +18745,6 @@
       "green-cards-i551",
       "open-source-license-notices"
     ],
-    "while": [
-      "green-cards-i551",
-      "medical-device-certifications",
-      "professional-licenses",
-      "proof-of-funds-letters",
-      "stock-certificates",
-      "university-degrees",
-      "work-visas-h1b"
-    ],
     "maintaining": [
       "green-cards-i551",
       "medical-device-certifications",
@@ -18661,9 +18816,6 @@
       "safety-certifications",
       "sports-equipment-certifications",
       "warranty-documents"
-    ],
-    "waste": [
-      "hazardous-waste-generator-permits"
     ],
     "generator": [
       "hazardous-waste-generator-permits",
@@ -19113,9 +19265,6 @@
       "hotel-staff-verification",
       "national-state-province-id-cards"
     ],
-    "role": [
-      "hotel-staff-verification"
-    ],
     "maintenance": [
       "hotel-staff-verification"
     ],
@@ -19165,9 +19314,6 @@
       "hotel-upgrade-confirmations"
     ],
     "hawb": [
-      "house-air-waybills-hawb"
-    ],
-    "issued": [
       "house-air-waybills-hawb"
     ],
     "consolidation": [
@@ -19486,9 +19632,6 @@
     "politically": [
       "kyc-identity-verification"
     ],
-    "exposed": [
-      "kyc-identity-verification"
-    ],
     "cryptographically": [
       "kyc-identity-verification"
     ],
@@ -19501,11 +19644,6 @@
       "kyc-identity-verification",
       "kyc-proof-of-address",
       "neobank-account-opening"
-    ],
-    "phone": [
-      "kyc-proof-of-address",
-      "mobile-money-receipts",
-      "number-portability-authorizations"
     ],
     "current": [
       "kyc-proof-of-address",
@@ -20189,9 +20327,6 @@
     "debt-to-income": [
       "mortgage-income-verification"
     ],
-    "defaults": [
-      "mortgage-income-verification"
-    ],
     "indemnity": [
       "mortgage-indemnity-insurance",
       "pi-club-certificates",
@@ -20708,9 +20843,6 @@
       "open-banking-consent-forms"
     ],
     "gdpr": [
-      "open-banking-consent-forms"
-    ],
-    "revocation": [
       "open-banking-consent-forms"
     ],
     "technology": [
@@ -21332,9 +21464,6 @@
       "teaching-reciprocity-credentials"
     ],
     "profession": [
-      "professional-licenses"
-    ],
-    "revoked": [
       "professional-licenses"
     ],
     "reduces": [
@@ -22673,9 +22802,6 @@
     "hormuz": [
       "war-risk-piracy-insurance"
     ],
-    "separate": [
-      "war-risk-piracy-insurance"
-    ],
     "voyage-specific": [
       "war-risk-piracy-insurance"
     ],
@@ -23597,6 +23723,11 @@
       "title": "Employment Authorization Documents (EAD, I-766)",
       "category": "Immigration & Visa Documents",
       "snippet": "I-9 verification; prevents fake EADs; USCIS domain binding. Common for DACA recipients, asylum applicants, and others awaiting permanent status. Frequ"
+    },
+    "employment-reference-letters": {
+      "title": "Employment reference letters (HR verification)",
+      "category": "Employment & HR",
+      "snippet": "Prospective employers and background-check providers waste time confirming references via phone/email and are exposed to forged letters. Domain bindin"
     },
     "endangered-species-take-permits": {
       "title": "Endangered species take permits (ESA Section 10)",
@@ -25174,6 +25305,6 @@
       "snippet": "Domain binding verifies government authority. Official documents suitable for OCR. Permanent land records. Development rights."
     }
   },
-  "totalDocuments": 467,
-  "totalTerms": 3153
+  "totalDocuments": 468,
+  "totalTerms": 3182
 }

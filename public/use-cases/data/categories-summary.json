@@ -143,6 +143,13 @@
       ]
     },
     {
+      "name": "Employment & HR",
+      "count": 1,
+      "files": [
+        "employment-reference-letters"
+      ]
+    },
+    {
       "name": "Energy & Utilities",
       "count": 4,
       "files": [
@@ -678,6 +685,6 @@
       ]
     }
   ],
-  "totalCategories": 35,
-  "totalUseCases": 467
+  "totalCategories": 36,
+  "totalUseCases": 468
 }
