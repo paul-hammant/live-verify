@@ -4,6 +4,13 @@
 
 This is a **100% client-side web application** for verifying physical documents using computer vision, OCR, text normalization, and SHA-256 hashing. It implements the concept from Paul Hammant's blog post: [OCR-to-Hash: A Simple Audit Trail for Physical Documents](https://paulhammant.com/2023/01/17/ocr-to-hash-simple-audit-trail-for-physical-documents/).
 
+**Current focus:** Camera-based document verification (documents with printed verification lines and registration marks)
+
+**Future modes:** See [VERIFICATION-MODES.md](./VERIFICATION-MODES.md) for:
+- Web-based text selection verification (verify quoted text from web pages)
+- Real-time document streaming verification
+- Batch systematic hash receipt verification
+
 ## Key Design Decisions
 
 ### 1. No Backend Server Required
