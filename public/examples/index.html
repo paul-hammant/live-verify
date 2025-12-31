@@ -1,0 +1,338 @@
+<!--
+    Copyright (C) 2025, Paul Hammant
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as
+    published by the Free Software Foundation, either version 3 of the
+    License, or (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Selection Verification - Live Verify</title>
+    <script src='https://unpkg.com/psl@1.15.0/dist/psl.umd.cjs'></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f5f5f5;
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+        }
+
+        .breadcrumbs {
+            font-size: 0.9em;
+            color: #475569;
+            margin-bottom: 18px;
+        }
+
+        .breadcrumbs a {
+            color: #475569;
+            text-decoration: none;
+        }
+
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }
+
+        .breadcrumbs .sep {
+            margin: 0 8px;
+            opacity: 0.7;
+        }
+
+        h1 {
+            color: #1a1a2e;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+
+        .intro-box {
+            background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%);
+            padding: 24px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            border-left: 4px solid #5c6bc0;
+        }
+
+        .intro-box h2 {
+            color: #3949ab;
+            margin-bottom: 12px;
+            font-size: 1.2rem;
+        }
+
+        .intro-box p {
+            color: #37474f;
+        }
+
+        .how-to {
+            background: #fff8e1;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border-left: 4px solid #ffa000;
+        }
+
+        .how-to h3 {
+            color: #f57c00;
+            margin-bottom: 10px;
+        }
+
+        .how-to ol {
+            padding-left: 20px;
+            color: #5d4037;
+        }
+
+        .how-to li {
+            margin-bottom: 8px;
+        }
+
+        .example-section {
+            margin-bottom: 40px;
+        }
+
+        .example-section h3 {
+            color: #333;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .verifiable-claim {
+            background: #fafafa;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre-wrap;
+            line-height: 1.8;
+            user-select: text;
+            cursor: text;
+        }
+
+        .verifiable-claim:hover {
+            border-color: #4CAF50;
+            box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.1);
+        }
+
+        .claim-label {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-family: sans-serif;
+            margin-bottom: 12px;
+        }
+
+        .claim-label.valid {
+            background: #4CAF50;
+        }
+
+        .claim-label.revoked {
+            background: #f44336;
+        }
+
+        .claim-label.not-registered {
+            background: #9e9e9e;
+        }
+
+        .note {
+            background: #e8f5e9;
+            padding: 16px;
+            border-radius: 8px;
+            margin-top: 20px;
+            color: #2e7d32;
+            font-size: 0.95rem;
+        }
+
+        .note strong {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .future-vision {
+            background: linear-gradient(135deg, #f3e5f5 0%, #e1f5fe 100%);
+            padding: 24px;
+            border-radius: 12px;
+            margin-top: 40px;
+        }
+
+        .future-vision h3 {
+            color: #6a1b9a;
+            margin-bottom: 12px;
+        }
+
+        .future-vision p {
+            color: #4a148c;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            text-align: center;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <a href="../index.html">Home</a><span class="sep">›</span><span>Text Selection Verification</span>
+        </nav>
+
+        <h1>Text Selection Verification</h1>
+        <p class="subtitle">Simulating browser-native claim verification via right-click</p>
+
+        <div class="intro-box">
+            <h2>What is this?</h2>
+            <p>This page demonstrates <strong>Mode 2: Web-Based Text Selection Verification</strong> from the OCR-to-Hash verification system. Instead of using a camera to scan printed documents, you select text directly on web pages and verify it against the issuer's endpoint.</p>
+            <p style="margin-top: 10px;">This simulates what browsers could do natively in the future: recognize <code>verify:</code> URLs in selected text and offer a "Verify" option in the context menu.</p>
+        </div>
+
+        <div class="how-to">
+            <h3>How to Use</h3>
+            <ol>
+                <li><strong>Select</strong> any text block below (including the <code>verify:</code> or <code>vfy:</code> line at the end)</li>
+                <li><strong>Click</strong> the green "Verify" button that appears</li>
+                <li><strong>See</strong> the verification result in the browser chrome bar at the top</li>
+                <li><strong>Click</strong> the result bar to expand and see the normalized text and hash</li>
+            </ol>
+        </div>
+
+        <div class="example-section">
+            <h3>Example 1: Valid University Degree</h3>
+            <span class="claim-label valid">Should verify as OK</span>
+            <div class="verifiable-claim">UNSEEN UNIVERSITY
+Ankh-Morpork, The Discworld
+
+This is to certify that
+
+PONDER STIBBONS
+
+has been admitted to the degree of
+
+BACHELOR OF THAUMATOLOGY
+
+with all rights and privileges thereunto pertaining
+
+Granted this 15th day of Grune, Year of the Prawn
+
+Archchancellor Mustrum Ridcully
+
+verify:paul-hammant.github.io/live-verify/c</div>
+        </div>
+
+        <div class="example-section">
+            <h3>Example 2: Revoked Medical License</h3>
+            <span class="claim-label revoked">Should verify as REVOKED</span>
+            <div class="verifiable-claim">ANKH-MORPORK GUILD OF BARBER-SURGEONS
+
+LICENSE TO PRACTICE MEDICINE
+
+License No: AM-MED-1623-ML
+
+This certifies that
+
+DR. MOSSY LAWN
+
+of Elm Street, Ankh-Morpork
+
+Is hereby licensed to practice medicine, surgery,
+and related healing arts within the city limits.
+
+Issued: 1st Offle, Year of the Engaging Sloth
+Valid Until: Revoked
+
+Guild Master: Dr. John Hicks
+
+verify:paul-hammant.github.io/live-verify/c</div>
+        </div>
+
+        <div class="example-section">
+            <h3>Example 3: Coffee Shop Receipt (UK)</h3>
+            <span class="claim-label valid">Should verify as OK</span>
+            <div class="verifiable-claim">Receipt: 00284719
+Date: 18/01/2025 09:42
+Flat White (Large)           £3.65
+Cappuccino (Regular)         £3.25
+Chocolate Twist              £1.55
+TOTAL:                       £8.45
+VAT @ 20%: £1.41
+vfy:r.costa.co.uk</div>
+        </div>
+
+        <div class="example-section">
+            <h3>Example 4: Not Registered (Will Fail)</h3>
+            <span class="claim-label not-registered">Should fail verification (404)</span>
+            <div class="verifiable-claim">This is a fake claim that has never been
+registered with any verification endpoint.
+
+The hash computed from this text will not
+be found at the verification URL.
+
+verify:paul-hammant.github.io/live-verify/c</div>
+        </div>
+
+        <div class="note">
+            <strong>Privacy Note:</strong>
+            All processing happens locally in your browser. The only network request made is the final hash lookup to the issuer's endpoint. The issuer never sees the original text - only the SHA-256 hash.
+        </div>
+
+        <div class="future-vision">
+            <h3>Future: Native Browser Support</h3>
+            <p>Imagine this built into Chrome, Safari, and Firefox: select any text containing a <code>verify:</code> URL, right-click, and see "Verify Claim" in the context menu. The verification result appears in the browser's trusted UI (address bar area), not in the page itself - preventing fake "Verified" badges from malicious pages.</p>
+            <p style="margin-top: 10px;">This page simulates that experience. The green bar at the top acts as the browser chrome where verification results would appear in a native implementation.</p>
+        </div>
+
+        <footer>
+            <p>Part of the <a href="https://paul-hammant.github.io/live-verify/">Live Verify</a> project</p>
+            <p style="margin-top: 5px;"><a href="../camera-app/">Camera App</a> · <a href="../training-pages/">Training Pages</a> · <a href="https://github.com/paul-hammant/live-verify">Source</a></p>
+        </footer>
+    </div>
+
+    <!-- Load verification dependencies -->
+    <script src="../normalize.js"></script>
+    <script src="../app-logic.js"></script>
+    <script src="../domain-authority.js"></script>
+    <script src="../text-selection-verify.js"></script>
+</body>
+</html>

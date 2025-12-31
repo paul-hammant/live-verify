@@ -1,0 +1,469 @@
+/*
+    Copyright (C) 2025, Paul Hammant
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as
+    published by the Free Software Foundation, either version 3 of the
+    License, or (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
+/**
+ * Text Selection Verification - Simulates browser-native "Verify" context menu action
+ *
+ * This script adds text-selection verification capability to web pages.
+ * When users select text ending with a verify:/vfy: URL, they can right-click
+ * to verify the claim against the issuer's endpoint.
+ *
+ * Required dependencies (loaded before this script):
+ * - normalize.js (normalizeText, sha256)
+ * - app-logic.js (extractVerificationUrl, extractCertText, buildVerificationUrl)
+ * - domain-authority.js (optional, for getVerificationAuthority)
+ */
+
+(function() {
+    'use strict';
+
+    // Create verification UI elements
+    let verifyButton = null;
+    let resultModal = null;
+    let currentSelection = '';
+
+    /**
+     * Initialize the text selection verification feature
+     */
+    function init() {
+        createVerifyButton();
+        createResultModal();
+        attachEventListeners();
+    }
+
+    /**
+     * Create the floating "Verify" button that appears near text selections
+     */
+    function createVerifyButton() {
+        verifyButton = document.createElement('button');
+        verifyButton.id = 'tsv-verify-btn';
+        verifyButton.innerHTML = '&#x2713; Verify';
+        verifyButton.style.cssText = `
+            position: fixed;
+            display: none;
+            padding: 8px 16px;
+            background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            z-index: 999999;
+            transition: transform 0.1s, box-shadow 0.1s;
+        `;
+        verifyButton.addEventListener('mouseenter', () => {
+            verifyButton.style.transform = 'scale(1.05)';
+            verifyButton.style.boxShadow = '0 6px 16px rgba(0,0,0,0.4)';
+        });
+        verifyButton.addEventListener('mouseleave', () => {
+            verifyButton.style.transform = 'scale(1)';
+            verifyButton.style.boxShadow = '0 4px 12px rgba(0,0,0,0.3)';
+        });
+        verifyButton.addEventListener('click', handleVerifyClick);
+        document.body.appendChild(verifyButton);
+    }
+
+    /**
+     * Create the result modal (browser chrome-style, outside content area)
+     */
+    function createResultModal() {
+        resultModal = document.createElement('div');
+        resultModal.id = 'tsv-result-modal';
+        resultModal.style.cssText = `
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: none;
+            background: #1a1a2e;
+            color: white;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            z-index: 9999999;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+        `;
+        resultModal.innerHTML = `
+            <div id="tsv-modal-header" style="
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 12px 20px;
+                border-bottom: 1px solid #333;
+            ">
+                <div style="display: flex; align-items: center; gap: 12px;">
+                    <span id="tsv-status-icon" style="font-size: 24px;"></span>
+                    <div>
+                        <div id="tsv-status-text" style="font-weight: 600; font-size: 16px;"></div>
+                        <div id="tsv-domain" style="font-size: 13px; opacity: 0.8;"></div>
+                    </div>
+                </div>
+                <button id="tsv-close-btn" style="
+                    background: none;
+                    border: none;
+                    color: white;
+                    font-size: 24px;
+                    cursor: pointer;
+                    padding: 4px 8px;
+                    opacity: 0.7;
+                    transition: opacity 0.2s;
+                ">&times;</button>
+            </div>
+            <div id="tsv-modal-details" style="
+                display: none;
+                padding: 16px 20px;
+                background: #16213e;
+                font-size: 13px;
+                max-height: 200px;
+                overflow-y: auto;
+            ">
+                <div style="margin-bottom: 12px;">
+                    <strong style="color: #888;">Normalized Text:</strong>
+                    <pre id="tsv-normalized-text" style="
+                        margin: 8px 0 0 0;
+                        padding: 12px;
+                        background: #0f0f23;
+                        border-radius: 4px;
+                        white-space: pre-wrap;
+                        word-break: break-all;
+                        font-size: 12px;
+                        max-height: 100px;
+                        overflow-y: auto;
+                    "></pre>
+                </div>
+                <div>
+                    <strong style="color: #888;">SHA-256 Hash:</strong>
+                    <code id="tsv-hash" style="
+                        display: block;
+                        margin-top: 8px;
+                        padding: 8px 12px;
+                        background: #0f0f23;
+                        border-radius: 4px;
+                        font-size: 11px;
+                        word-break: break-all;
+                    "></code>
+                </div>
+            </div>
+        `;
+        document.body.appendChild(resultModal);
+
+        // Close button handler
+        resultModal.querySelector('#tsv-close-btn').addEventListener('click', hideResultModal);
+        resultModal.querySelector('#tsv-close-btn').addEventListener('mouseenter', (e) => {
+            e.target.style.opacity = '1';
+        });
+        resultModal.querySelector('#tsv-close-btn').addEventListener('mouseleave', (e) => {
+            e.target.style.opacity = '0.7';
+        });
+
+        // Toggle details on header click
+        resultModal.querySelector('#tsv-modal-header').addEventListener('click', (e) => {
+            if (e.target.id !== 'tsv-close-btn') {
+                const details = resultModal.querySelector('#tsv-modal-details');
+                details.style.display = details.style.display === 'none' ? 'block' : 'none';
+            }
+        });
+    }
+
+    /**
+     * Attach event listeners for text selection
+     */
+    function attachEventListeners() {
+        document.addEventListener('mouseup', handleMouseUp);
+        document.addEventListener('mousedown', handleMouseDown);
+        document.addEventListener('keyup', handleKeyUp);
+
+        // Also support context menu (right-click)
+        document.addEventListener('contextmenu', handleContextMenu);
+    }
+
+    /**
+     * Handle mouse up - check for text selection
+     */
+    function handleMouseUp(e) {
+        // Small delay to let selection finalize
+        setTimeout(() => {
+            const selection = window.getSelection();
+            const selectedText = selection.toString().trim();
+
+            if (selectedText.length > 10 && hasVerificationUrl(selectedText)) {
+                currentSelection = selectedText;
+                showVerifyButton(e.clientX, e.clientY);
+            } else {
+                hideVerifyButton();
+            }
+        }, 10);
+    }
+
+    /**
+     * Handle mouse down - hide button if clicking outside
+     */
+    function handleMouseDown(e) {
+        if (e.target !== verifyButton && !verifyButton.contains(e.target)) {
+            hideVerifyButton();
+        }
+    }
+
+    /**
+     * Handle keyboard selection (Shift+arrow keys, Ctrl+A, etc.)
+     */
+    function handleKeyUp(e) {
+        // Check for selection-related keys
+        if (e.shiftKey || e.ctrlKey || e.metaKey) {
+            const selection = window.getSelection();
+            const selectedText = selection.toString().trim();
+
+            if (selectedText.length > 10 && hasVerificationUrl(selectedText)) {
+                currentSelection = selectedText;
+                // Position near the end of selection
+                const range = selection.getRangeAt(0);
+                const rect = range.getBoundingClientRect();
+                showVerifyButton(rect.right, rect.bottom);
+            }
+        }
+    }
+
+    /**
+     * Handle context menu - add verify option if text selected
+     */
+    function handleContextMenu(e) {
+        const selection = window.getSelection();
+        const selectedText = selection.toString().trim();
+
+        if (selectedText.length > 10 && hasVerificationUrl(selectedText)) {
+            currentSelection = selectedText;
+            showVerifyButton(e.clientX, e.clientY);
+        }
+    }
+
+    /**
+     * Check if text contains a verification URL (verify: or vfy:)
+     */
+    function hasVerificationUrl(text) {
+        const lowerText = text.toLowerCase();
+        return lowerText.includes('verify:') || lowerText.includes('vfy:');
+    }
+
+    /**
+     * Show the verify button near the specified position
+     */
+    function showVerifyButton(x, y) {
+        verifyButton.style.display = 'block';
+
+        // Position button, keeping it within viewport
+        const btnRect = verifyButton.getBoundingClientRect();
+        const maxX = window.innerWidth - btnRect.width - 10;
+        const maxY = window.innerHeight - btnRect.height - 10;
+
+        verifyButton.style.left = Math.min(x + 10, maxX) + 'px';
+        verifyButton.style.top = Math.min(y + 10, maxY) + 'px';
+    }
+
+    /**
+     * Hide the verify button
+     */
+    function hideVerifyButton() {
+        verifyButton.style.display = 'none';
+    }
+
+    /**
+     * Handle verify button click
+     */
+    async function handleVerifyClick(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        hideVerifyButton();
+
+        if (!currentSelection) {
+            showResult('error', 'No text selected', '', '', '');
+            return;
+        }
+
+        showResult('loading', 'Verifying...', '', '', '');
+
+        try {
+            await performVerification(currentSelection);
+        } catch (error) {
+            console.error('Verification error:', error);
+            showResult('error', 'Verification Error', error.message, '', '');
+        }
+    }
+
+    /**
+     * Perform the verification process
+     */
+    async function performVerification(text) {
+        // Step 1: Extract verification URL from the text
+        const { url: baseUrl, urlLineIndex } = extractVerificationUrl(text);
+
+        if (!baseUrl) {
+            showResult('error', 'No Verification URL Found',
+                'Selected text must end with a verify: or vfy: URL', '', '');
+            return;
+        }
+
+        // Step 2: Extract the certification text (everything before the URL line)
+        const certText = extractCertText(text, urlLineIndex);
+
+        if (!certText.trim()) {
+            showResult('error', 'No Content to Verify',
+                'Selected text must contain content before the verification URL', '', '');
+            return;
+        }
+
+        // Step 3: Try to fetch .verification-meta.json for document-specific normalization
+        let metadata = null;
+        try {
+            metadata = await fetchVerificMeta(baseUrl);
+        } catch (e) {
+            // Metadata is optional, continue without it
+        }
+
+        // Step 4: Normalize the text
+        const normalizedText = normalizeText(certText, metadata);
+
+        // Step 5: Compute SHA-256 hash
+        const hash = await sha256(normalizedText);
+
+        // Step 6: Build verification URL
+        const verificationUrl = buildVerificationUrl(baseUrl, hash);
+
+        // Step 7: Extract domain for display
+        let domain = '';
+        try {
+            const urlObj = new URL(verificationUrl);
+            domain = urlObj.hostname;
+
+            // Use domain authority if available
+            if (typeof extractDomainAuthority === 'function') {
+                domain = extractDomainAuthority(verificationUrl);
+            }
+        } catch (e) {
+            domain = baseUrl;
+        }
+
+        // Step 8: Perform verification fetch
+        try {
+            const response = await fetch(verificationUrl, {
+                method: 'GET',
+                mode: 'cors'
+            });
+
+            if (response.status === 200) {
+                const body = await response.text();
+                const trimmedBody = body.trim().toUpperCase();
+
+                if (trimmedBody === 'OK' || trimmedBody.includes('OK')) {
+                    showResult('verified', 'VERIFIED', `by ${domain}`, normalizedText, hash);
+                } else {
+                    // Show the actual status from the response (e.g., REVOKED)
+                    showResult('denied', trimmedBody || 'UNKNOWN STATUS',
+                        `from ${domain}`, normalizedText, hash);
+                }
+            } else if (response.status === 404) {
+                showResult('failed', 'NOT FOUND',
+                    `Hash not registered at ${domain}`, normalizedText, hash);
+            } else {
+                showResult('failed', `HTTP ${response.status}`,
+                    `Unexpected response from ${domain}`, normalizedText, hash);
+            }
+        } catch (error) {
+            if (error.name === 'TypeError' && error.message.includes('Failed to fetch')) {
+                showResult('error', 'CANNOT VERIFY',
+                    `Network error or CORS restriction for ${domain}`, normalizedText, hash);
+            } else {
+                throw error;
+            }
+        }
+    }
+
+    /**
+     * Show verification result in the modal
+     */
+    function showResult(type, status, detail, normalizedText, hash) {
+        const statusIcon = resultModal.querySelector('#tsv-status-icon');
+        const statusText = resultModal.querySelector('#tsv-status-text');
+        const domainEl = resultModal.querySelector('#tsv-domain');
+        const normalizedEl = resultModal.querySelector('#tsv-normalized-text');
+        const hashEl = resultModal.querySelector('#tsv-hash');
+        const header = resultModal.querySelector('#tsv-modal-header');
+        const details = resultModal.querySelector('#tsv-modal-details');
+
+        // Set content
+        statusText.textContent = status;
+        domainEl.textContent = detail;
+        normalizedEl.textContent = normalizedText || '';
+        hashEl.textContent = hash || '';
+
+        // Style based on type
+        switch (type) {
+            case 'verified':
+                statusIcon.textContent = '\u2713';
+                header.style.background = 'linear-gradient(135deg, #2e7d32 0%, #1b5e20 100%)';
+                break;
+            case 'denied':
+                statusIcon.textContent = '\u2717';
+                header.style.background = 'linear-gradient(135deg, #c62828 0%, #b71c1c 100%)';
+                break;
+            case 'failed':
+                statusIcon.textContent = '\u2717';
+                header.style.background = 'linear-gradient(135deg, #d32f2f 0%, #c62828 100%)';
+                break;
+            case 'error':
+                statusIcon.textContent = '\u26A0';
+                header.style.background = 'linear-gradient(135deg, #f57c00 0%, #e65100 100%)';
+                break;
+            case 'loading':
+                statusIcon.textContent = '\u23F3';
+                header.style.background = 'linear-gradient(135deg, #1976d2 0%, #1565c0 100%)';
+                break;
+        }
+
+        // Show/hide details section
+        details.style.display = normalizedText ? 'none' : 'none'; // Start hidden, click to expand
+
+        // Show modal
+        resultModal.style.display = 'block';
+
+        // Auto-hide after 8 seconds for success, keep for errors
+        if (type === 'verified') {
+            setTimeout(hideResultModal, 8000);
+        }
+    }
+
+    /**
+     * Hide the result modal
+     */
+    function hideResultModal() {
+        resultModal.style.display = 'none';
+    }
+
+    // Initialize when DOM is ready
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+
+    // Expose for testing/debugging
+    window.textSelectionVerify = {
+        performVerification,
+        hideResultModal
+    };
+
+})();
