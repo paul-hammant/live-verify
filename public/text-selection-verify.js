@@ -106,9 +106,9 @@
                 padding: 12px 20px;
                 border-bottom: 1px solid #333;
             ">
-                <div style="display: flex; align-items: center; gap: 12px;">
-                    <span id="tsv-status-icon" style="font-size: 24px;"></span>
-                    <div>
+                <div style="display: flex; align-items: center; gap: 16px;">
+                    <span id="tsv-status-icon" style="font-size: 32px; line-height: 1; display: flex; align-items: center; justify-content: center;"></span>
+                    <div style="flex: 1;">
                         <div id="tsv-status-text" style="font-weight: 600; font-size: 16px;"></div>
                         <div id="tsv-domain" style="font-size: 13px; opacity: 0.8;"></div>
                     </div>
@@ -123,6 +123,17 @@
                     opacity: 0.7;
                     transition: opacity 0.2s;
                 ">&times;</button>
+            </div>
+            <div id="tsv-modal-disclaimer" style="
+                display: none;
+                padding: 12px 20px;
+                background: rgba(72, 187, 120, 0.15);
+                border-bottom: 1px solid #333;
+                font-size: 12px;
+                color: #48bb78;
+                font-style: italic;
+            ">
+                Screencaps of this verified message are not proof of anything
             </div>
             <div id="tsv-modal-details" style="
                 display: none;
@@ -429,6 +440,7 @@
         const hashEl = resultModal.querySelector('#tsv-hash');
         const header = resultModal.querySelector('#tsv-modal-header');
         const details = resultModal.querySelector('#tsv-modal-details');
+        const disclaimer = resultModal.querySelector('#tsv-modal-disclaimer');
 
         // Set content
         statusText.textContent = status;
@@ -440,23 +452,38 @@
         switch (type) {
             case 'verified':
                 statusIcon.textContent = '\u2713';
-                header.style.background = 'linear-gradient(135deg, #2e7d32 0%, #1b5e20 100%)';
+                statusIcon.style.fontSize = '40px';
+                statusIcon.style.color = '#fff';
+                // Match camera app's green color scheme
+                header.style.background = 'linear-gradient(135deg, #48bb78 0%, #38a169 100%)';
+                statusText.style.fontSize = '20px';
+                statusText.style.fontWeight = '700';
+                statusText.style.letterSpacing = '0.5px';
+                disclaimer.style.display = 'block';
                 break;
             case 'denied':
                 statusIcon.textContent = '\u2717';
                 header.style.background = 'linear-gradient(135deg, #c62828 0%, #b71c1c 100%)';
+                statusText.style.fontSize = '16px';
+                disclaimer.style.display = 'none';
                 break;
             case 'failed':
                 statusIcon.textContent = '\u2717';
                 header.style.background = 'linear-gradient(135deg, #d32f2f 0%, #c62828 100%)';
+                statusText.style.fontSize = '16px';
+                disclaimer.style.display = 'none';
                 break;
             case 'error':
                 statusIcon.textContent = '\u26A0';
                 header.style.background = 'linear-gradient(135deg, #f57c00 0%, #e65100 100%)';
+                statusText.style.fontSize = '16px';
+                disclaimer.style.display = 'none';
                 break;
             case 'loading':
                 statusIcon.textContent = '\u23F3';
                 header.style.background = 'linear-gradient(135deg, #1976d2 0%, #1565c0 100%)';
+                statusText.style.fontSize = '16px';
+                disclaimer.style.display = 'none';
                 break;
         }
 
