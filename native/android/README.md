@@ -32,6 +32,19 @@ Pipeline:
 - Install on device/emulator: `./gradlew :app:installDebug`
 - Instrumented tests (device/emulator): `./gradlew :app:connectedDebugAndroidTest`
 
+### Installing to a specific device (when an emulator is also running)
+
+By default, `:app:installDebug` installs to **all** connected, compatible devices. If you only see an emulator in the output, your phone is not visible to `adb` yet (often because USB debugging isn’t enabled, or you haven’t accepted the RSA prompt).
+
+To target the Galaxy J5 explicitly:
+
+- Find the device serial: `adb devices -l`
+- Build the APK: `./gradlew :app:assembleDebug`
+- Install to the J5:
+  - `adb -s <J5_SERIAL> install -r app/build/outputs/apk/debug/app-debug.apk`
+
+To avoid installing to the emulator, stop it (example): `adb -s emulator-5554 emu kill`
+
 ## Notes
 
 - This first cut does **not** implement registration-mark detection + perspective correction (the web demo uses OpenCV for that).
