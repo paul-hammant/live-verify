@@ -173,3 +173,219 @@ Document why the retention period matters:
 - Statute of limitations
 - Business/audit cycle
 - Permanent records (vital records, property, credentials)
+
+## Writing Effective Use Case Descriptions
+
+### Second-Party Use Section
+
+Focus on how the document **subject** (the person named in the document) benefits from verification. Examples:
+
+- **Self-verification:** "I received this diploma, is it genuine?" (student/graduate)
+- **Proof of status:** "I need to prove my license is valid" (professional holding credential)
+- **Insurance/liability:** "I want verified records of this transaction for my protection" (transaction party)
+- **Estate/financial planning:** "I need to verify my ownership documents are authentic" (property/asset owner)
+- **Dispute resolution:** "I'm disputing a claim and need to verify my original documents" (contract party)
+
+**Key insight:** The second party often wants verification for their own peace of mind, legal protection, or to support their own claims to third parties.
+
+### Third-Party Use Section
+
+Organize stakeholders by **decision-making function**, not just title. Common categories:
+
+**Financial/Lending Decisions**
+- Banks, mortgage lenders, credit institutions
+- Insurers, underwriters
+- Investment platforms, crowdfunding platforms
+- Verify creditworthiness, fraud risk, asset valuation
+
+**Regulatory/Compliance**
+- Government agencies, regulators
+- Tax authorities, customs
+- Professional licensing boards
+- Verify legal compliance, tax liability, credential validity
+
+**Employment/Credential Verification**
+- Employers, HR departments
+- Educational institutions, credentialing bodies
+- Security clearance authorities
+- Verify qualifications, background, authorization
+
+**Professional Services**
+- Lawyers, accountants, advisors
+- Real estate professionals, title companies
+- Insurance professionals, claims adjusters
+- Verify facts, authenticity, damage, claims basis
+
+**Commerce/Transaction**
+- Buyers, sellers, auction houses
+- Freight forwarders, customs brokers
+- Retailers, e-commerce platforms
+- Verify ownership, condition, compliance, authenticity
+
+**Healthcare/Insurance**
+- Hospitals, clinics, insurance companies
+- Clinical trial sponsors, pharmaceutical companies
+- Health departments, public health authorities
+- Verify medical facts, treatment authorization, trial compliance
+
+### Fraud Pattern Categories
+
+When describing "The [Document Type] Fraud Problem," consider these patterns:
+
+**Structural Fraud**
+- **Fabrication:** Entirely fake documents created from scratch
+- **Alteration:** Genuine documents with modified text, dates, amounts, names
+- **Page substitution:** In multi-page documents, swapping pages from different documents
+- **Partial forgery:** Genuine document template with forged signatures or certifications
+
+**Attribution Fraud**
+- **Impersonation:** Fake document falsely claiming to be from legitimate issuer
+- **Authority misrepresentation:** Document falsely claiming higher authority or broader scope
+- **Counterfeit authority:** Fake credentials, licenses, or authority documents
+- **Delegated fraud:** Unauthorized person signing in official capacity
+
+**Temporal Fraud**
+- **Expired/revoked documents:** Presenting invalid documents as current
+- **Backdating:** Antedating documents to appear created earlier
+- **Forward dating:** Postdating to appear newer or avoid expiration
+- **Sequence violations:** Violating required timing (e.g., expiration before renewal)
+
+**Value/Scope Fraud**
+- **Quantity inflation:** Overstating numbers, volumes, or quantities
+- **Qualification inflation:** Claiming higher credentials or certifications than issued
+- **Scope expansion:** Stretching authorized uses beyond permission
+- **Category misclassification:** Presenting document as different, more valuable type
+
+**Authority/Legitimacy Fraud**
+- **Fake issuer:** Document from entirely fraudulent organization
+- **Rogue issuer:** Legitimate issuer acting outside authority or against regulations
+- **Chain-of-custody fraud:** Documents presented by unauthorized intermediary
+- **Verification endpoint fraud:** Fake verification responses from impostor domains
+
+**Document-Specific Patterns**
+
+Different document types face category-specific fraud:
+
+- **Travel documents:** Fake passports, visa fraud, status misrepresentation
+- **Medical records:** Fabricated diagnoses, altered prescriptions, fake test results
+- **Financial/tax:** False income claims, fabricated transactions, altered amounts
+- **Real estate:** Title fraud, forged deeds, false ownership claims
+- **Shipping/cargo:** Fake bills of lading, cargo theft, misdeclaration
+- **Insurance:** False claims, fabricated losses, agent misrepresentation
+- **Professional licenses:** Credential inflation, fake education, unauthorized practice
+
+### Status Indication Patterns
+
+Different document categories typically support different statuses. Common patterns:
+
+**Standard Statuses** (apply to most documents)
+- **Valid** — Document verified and current
+- **Expired** — Document has reached end of validity period
+- **Revoked** — Document has been actively cancelled/withdrawn
+- **Superseded** — A newer version issued (ownership change, renewal, update)
+
+**Financial/Insurance Documents**
+- **Paid** or **Settled** — Claim/transaction completed
+- **Disputed** — Under investigation or dispute
+- **Suspended** — Temporarily inactive (premium non-payment, etc.)
+- **Cancelled** — Active revocation (different from natural expiration)
+
+**Professional/Credential Documents**
+- **Suspended** — Temporarily inactive (due to investigation, non-renewal, etc.)
+- **Probationary** — Valid but under conditions or supervision
+- **Restricted** — Valid but with limitations
+- **Contested** — Authenticity or validity under dispute
+
+**Legal/Court Documents**
+- **Stayed** — Execution paused pending appeal
+- **Appealed** — Under appellate review
+- **Dismissed** — Vacated or overturned
+- **Satisfied** — Judgment paid/fulfilled
+
+**Medical/Healthcare Documents**
+- **Updated** — Newer version available (prior version superseded)
+- **Withdrawn** — Provider withdrew/disavows document
+- **Amended** — Original document modified with addendum
+
+### Merging Related Document Types
+
+Sometimes multiple JSON files represent related subtypes of a single overarching category. Consider merging when:
+
+1. **Same issuer:** Same authority issues both document types
+2. **Same subject:** Person/entity is the beneficiary in both
+3. **Same fraud risk:** Both face identical fraud patterns
+4. **Same verification use case:** Third parties verify both for same decision
+
+Example merges:
+- "Car rental damage report" + "car rental agreement" → "Car rental documents"
+- "Bank statement" + "Bank account opening" → "Bank account documents"
+- "Airline ticket receipt" + "Airline upgrade confirmation" → "Airline booking documents"
+- "Employment reference letter" + "Employment verification letter" → "Employment verification documents"
+
+Keep separate when document types serve fundamentally different purposes or audiences.
+
+### Writing Clear Use Case Scenarios
+
+Good use case scenario format:
+
+```markdown
+**[Scenario Title - Action Verb + Object]:** [1-2 sentence description]
+```
+
+**Strong examples:**
+- "**Account Opening Verification:** Bank verifies employment history on mortgage application."
+- "**Credential Verification at Checkpoint:** Security officer scans professional license during background check."
+- "**Insurance Claims Investigation:** Claims adjuster verifies damage report matches original inspection."
+
+**Weak examples:**
+- "Verify documents" (too vague)
+- "Uses for third parties" (not a use case)
+- "Could be used in business" (not specific)
+
+Each scenario should answer: **Who** (stakeholder) **does what** (action) **with** (document) **for why** (business purpose).
+
+### Domain-Specific Structuring
+
+Organize Third-Party stakeholders based on **document domain**:
+
+**Legal/Compliance Domains:**
+- Law enforcement / prosecutors
+- Courts / judges
+- Government regulators
+- Compliance officers / risk management
+
+**Financial/Business Domains:**
+- Lenders / underwriters / investors
+- Insurers / claims adjusters
+- Accountants / auditors
+- Tax authorities
+
+**Healthcare Domains:**
+- Hospitals / clinics / providers
+- Insurance companies (health)
+- Regulatory bodies (FDA, DEA, etc.)
+- Public health authorities
+
+**Travel/Immigration Domains:**
+- Immigration authorities
+- Border agents / customs
+- Airlines / travel providers
+- Visa sponsors / employers
+
+**Real Estate Domains:**
+- Real estate agents / brokers
+- Title companies / escrow
+- Lenders / appraisers
+- County recorders / assessors
+
+**Supply Chain Domains:**
+- Freight forwarders / carriers
+- Customs brokers
+- Insurers / loss adjusters
+- Port authorities / customs
+
+**Education Domains:**
+- Employers / HR
+- Graduate schools / universities
+- Licensing boards
+- Credential verification services
