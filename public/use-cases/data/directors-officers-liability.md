@@ -1,9 +1,11 @@
-# Directors & Officers (D&O) liability policies
-
-**Category:** Commercial Lines Insurance
-**Volume:** Small
-**Retention:** Policy term + 10-20 years (claims)
-
+---
+title: "Directors & Officers (D&O) liability policies"
+category: "Commercial Lines Insurance"
+volume: "Small"
+retention: "Policy term + 10-20 years (claims)"
+slug: "directors-officers-liability"
+tags: ["directors", "officers", "liability", "commercial", "lines", "insurance"]
+---
 ## Data Verified
 
 Company name, directors/officers, coverage limits, exclusions, retroactive date

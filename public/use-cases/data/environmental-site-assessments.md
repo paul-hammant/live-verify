@@ -1,9 +1,11 @@
-# Environmental Site Assessments (Phase I and Phase II)
-
-**Category:** Real Estate & Property
-**Volume:** Very Small
-**Retention:** 7-20 years (CERCLA/Superfund liability protection)
-
+---
+title: "Environmental Site Assessments (Phase I and Phase II)"
+category: "Real Estate & Property"
+volume: "Very Small"
+retention: "7-20 years (CERCLA/Superfund liability protection)"
+slug: "environmental-site-assessments"
+tags: ["environmental", "site", "assessments", "real", "estate", "property"]
+---
 ## Data Verified
 
 Property owner, environmental consultant name and credentials, site address and legal description, assessment type (Phase I or Phase II), assessment date, contamination findings or "no recognized environmental conditions" statement, recommendations, limitations and data gaps, consultant's signature.

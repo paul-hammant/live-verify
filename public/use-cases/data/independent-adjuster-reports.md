@@ -1,9 +1,11 @@
-# Independent adjuster field inspection reports
-
-**Category:** Insurance & Risk Management
-**Volume:** Medium
-**Retention:** Claim term + 10 years
-
+---
+title: "Independent adjuster field inspection reports"
+category: "Insurance & Risk Management"
+volume: "Medium"
+retention: "Claim term + 10 years"
+slug: "independent-adjuster-reports"
+tags: ["independent", "adjuster", "reports", "insurance", "risk", "management"]
+---
 ## Data Verified
 
 Adjuster name, adjuster license number, claimant name, property address, vehicle VIN (if applicable), inspection date, damage assessment

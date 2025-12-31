@@ -1,9 +1,11 @@
-# Workers' compensation insurance certificates
-
-**Category:** Commercial Lines Insurance
-**Volume:** Medium
-**Retention:** Policy term + 7-10 years
-
+---
+title: "Workers' compensation insurance certificates"
+category: "Commercial Lines Insurance"
+volume: "Medium"
+retention: "Policy term + 7-10 years"
+slug: "workers-comp-certificates"
+tags: ["workers", "comp", "certificates", "commercial", "lines", "insurance"]
+---
 ## Data Verified
 
 Employer name, coverage state, policy number, effective dates, insurer name

@@ -1,9 +1,11 @@
-# Cruise final folios and onboard account statements
-
-**Category:** Travel & Hospitality
-**Volume:** Large
-**Retention:** Voyage + 3-7 years (expense)
-
+---
+title: "Cruise final folios and onboard account statements"
+category: "Travel & Hospitality"
+volume: "Large"
+retention: "Voyage + 3-7 years (expense)"
+slug: "cruise-final-folios"
+tags: ["cruise", "final", "folios", "travel", "hospitality"]
+---
 ## Data Verified
 
 Passenger name, cabin, itemized onboard charges, drinks, excursions, tips, total

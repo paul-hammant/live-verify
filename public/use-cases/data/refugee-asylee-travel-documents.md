@@ -1,9 +1,11 @@
-# Travel documents for refugees and asylees
-
-**Category:** Immigration & Visa Documents
-**Volume:** Small
-**Retention:** Document validity + permanent
-
+---
+title: "Travel documents for refugees and asylees"
+category: "Immigration & Visa Documents"
+volume: "Small"
+retention: "Document validity + permanent"
+slug: "refugee-asylee-travel-documents"
+tags: ["refugee", "asylee", "travel", "documents", "immigration", "visa"]
+---
 ## Data Verified
 
 Full name, DOB, nationality, refugee/asylee status, document number, validity period

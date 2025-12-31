@@ -1,9 +1,11 @@
-# Mortgage indemnity insurance (lender's mortgage insurance)
-
-**Category:** Insurance & Risk Management
-**Volume:** Small
-**Retention:** Mortgage term (15-30 years)
-
+---
+title: "Mortgage indemnity insurance (lender's mortgage insurance)"
+category: "Insurance & Risk Management"
+volume: "Small"
+retention: "Mortgage term (15-30 years)"
+slug: "mortgage-indemnity-insurance"
+tags: ["mortgage", "indemnity", "insurance", "risk", "management"]
+---
 ## Data Verified
 
 Lender, borrower, property address, loan-to-value, coverage amount

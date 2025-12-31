@@ -1,9 +1,11 @@
-# Stormwater discharge permits (NPDES)
-
-**Category:** Environmental & Natural Resource Permits
-**Volume:** Small
-**Retention:** 5 years (permit term)
-
+---
+title: "Stormwater discharge permits (NPDES)"
+category: "Environmental & Natural Resource Permits"
+volume: "Small"
+retention: "5 years (permit term)"
+slug: "stormwater-discharge-permits"
+tags: ["stormwater", "discharge", "permits", "environmental", "natural", "resource"]
+---
 ## Data Verified
 
 Permit holder, facility, discharge points, monitoring requirements, EPA/state

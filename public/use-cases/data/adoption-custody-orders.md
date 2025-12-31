@@ -1,9 +1,11 @@
-# Adoption Papers and Custody Orders
-
-**Category:** Government & Civic Documents
-**Volume:** Very Small
-**Retention:** Permanent (legal guardianship)
-
+---
+title: "Adoption Papers and Custody Orders"
+category: "Government & Civic Documents"
+volume: "Very Small"
+retention: "Permanent (legal guardianship)"
+slug: "adoption-custody-orders"
+tags: ["adoption", "custody", "orders", "government", "civic", "documents"]
+---
 ## Data Verified
 
 Child's name (original and adopted name if changed), child's date of birth, adoptive parent(s) names, biological parent(s) names (where applicable), court name and jurisdiction, case number, judge name, order type (adoption decree, custody order, guardianship), order date, effective date, any conditions or restrictions.

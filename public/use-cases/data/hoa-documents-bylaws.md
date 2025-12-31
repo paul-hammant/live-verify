@@ -1,9 +1,11 @@
-# HOA documents and bylaws
-
-**Category:** Real Estate & Property
-**Volume:** Tiny
-**Retention:** Permanent (governance)
-
+---
+title: "HOA documents and bylaws"
+category: "Real Estate & Property"
+volume: "Tiny"
+retention: "Permanent (governance)"
+slug: "hoa-documents-bylaws"
+tags: ["documents", "bylaws", "real", "estate", "property"]
+---
 ## Data Verified
 
 HOA board members, property owners (if detailed), community name

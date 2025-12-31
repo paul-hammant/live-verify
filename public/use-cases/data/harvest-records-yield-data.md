@@ -1,9 +1,11 @@
-# Harvest records and yield data
-
-**Category:** Agriculture & Food
-**Volume:** Small
-**Retention:** 5-10 years (crop insurance/audit)
-
+---
+title: "Harvest records and yield data"
+category: "Agriculture & Food"
+volume: "Small"
+retention: "5-10 years (crop insurance/audit)"
+slug: "harvest-records-yield-data"
+tags: ["harvest", "records", "yield", "data", "agriculture", "food"]
+---
 ## Data Verified
 
 Farm owner/operator, field location, harvest crew

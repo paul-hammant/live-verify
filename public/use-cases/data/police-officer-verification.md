@@ -1,9 +1,11 @@
-# Police officer verification (traffic stops, home visits)
-
-**Category:** Personal Safety & Service Verification
-**Volume:** Very Large
-**Retention:** Encounter + 1-3 years (accountability)
-
+---
+title: "Police officer verification (traffic stops, home visits)"
+category: "Personal Safety & Service Verification"
+volume: "Very Large"
+retention: "Encounter + 1-3 years (accountability)"
+slug: "police-officer-verification"
+tags: ["police", "officer", "verification", "personal", "safety", "service"]
+---
 ## Data Verified
 
 Officer name, photo, badge number, precinct/station, department

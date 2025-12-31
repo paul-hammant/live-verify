@@ -1,9 +1,11 @@
-# Travel vouchers and credits (future travel credits)
-
-**Category:** Travel & Hospitality
-**Volume:** Large
-**Retention:** Expiration date + 3-7 years
-
+---
+title: "Travel vouchers and credits (future travel credits)"
+category: "Travel & Hospitality"
+volume: "Large"
+retention: "Expiration date + 3-7 years"
+slug: "travel-vouchers-credits"
+tags: ["travel", "vouchers", "credits", "hospitality"]
+---
 ## Data Verified
 
 Traveler name, voucher amount, expiration date, issuing provider, voucher code

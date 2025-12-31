@@ -1,9 +1,11 @@
-# Airline compensation letters (EU261, delay/cancellation)
-
-**Category:** Travel & Hospitality
-**Volume:** Medium
-**Retention:** Compensation + 3-7 years
-
+---
+title: "Airline compensation letters (EU261, delay/cancellation)"
+category: "Travel & Hospitality"
+volume: "Medium"
+retention: "Compensation + 3-7 years"
+slug: "airline-compensation-letters"
+tags: ["airline", "compensation", "letters", "travel", "hospitality"]
+---
 ## Data Verified
 
 Passenger name, flight details, delay/cancellation reason, compensation amount

@@ -1,9 +1,11 @@
-# Patent and Trademark Certificates
-
-**Category:** Government & Civic Documents
-**Volume:** Very Small
-**Retention:** 20 years (patents) / Permanent (trademarks with renewal)
-
+---
+title: "Patent and Trademark Certificates"
+category: "Government & Civic Documents"
+volume: "Very Small"
+retention: "20 years (patents) / Permanent (trademarks with renewal)"
+slug: "patent-trademark-certificates"
+tags: ["patent", "trademark", "certificates", "government", "civic", "documents"]
+---
 ## Data Verified
 
 **Patents:** Patent number, inventor name(s), assignee/owner name, application date, issue date, title of invention, patent type (utility, design, plant), jurisdiction, expiration date, claims (key claims or claim count).

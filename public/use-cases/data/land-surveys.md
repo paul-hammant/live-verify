@@ -1,9 +1,11 @@
-# Land Surveys
-
-**Category:** Real Estate & Property
-**Volume:** Very Small
-**Retention:** Permanent (property records)
-
+---
+title: "Land Surveys"
+category: "Real Estate & Property"
+volume: "Very Small"
+retention: "Permanent (property records)"
+slug: "land-surveys"
+tags: ["land", "surveys", "real", "estate", "property"]
+---
 ## Data Verified
 
 Property owner name, surveyor name and license number, property address, legal description (metes and bounds, lot/block, or parcel number), survey date, survey type, corner monuments and markers, boundary dimensions, easements and encroachments, flood zone determination (if included), certification statement, surveyor's seal and signature.

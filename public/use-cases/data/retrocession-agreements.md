@@ -1,9 +1,11 @@
-# Retrocession agreements and documentation
-
-**Category:** Insurance & Risk Management
-**Volume:** Tiny
-**Retention:** Retro term + 10-20 years
-
+---
+title: "Retrocession agreements and documentation"
+category: "Insurance & Risk Management"
+volume: "Tiny"
+retention: "Retro term + 10-20 years"
+slug: "retrocession-agreements"
+tags: ["retrocession", "agreements", "insurance", "risk", "management"]
+---
 ## Data Verified
 
 Reinsurer, retrocessionaire, coverage terms, layers, risk details

@@ -1,9 +1,11 @@
-# Employment Reference Letters
-
-**Category:** Employment & HR
-**Volume:** Medium
-**Retention:** 1-7 years (hiring cycle plus potential disputes)
-
+---
+title: "Employment Reference Letters"
+category: "Employment & HR"
+volume: "Medium"
+retention: "1-7 years (hiring cycle plus potential disputes)"
+slug: "employment-reference-letters"
+tags: ["employment", "reference", "letters"]
+---
 ## Data Verified
 
 Employee name, employer name (company), job title/role, dates of employment (start and end), reference issuer name and title, contact details, reference ID number, and optionally: eligibility-for-rehire flag, performance summary, reason for departure.

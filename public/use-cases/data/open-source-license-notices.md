@@ -1,9 +1,11 @@
-# Open source license compliance notices
-
-**Category:** Technology & Software
-**Volume:** Small
-**Retention:** Release lifecycle + 3-7 years
-
+---
+title: "Open source license compliance notices"
+category: "Technology & Software"
+volume: "Small"
+retention: "Release lifecycle + 3-7 years"
+slug: "open-source-license-notices"
+tags: ["open", "source", "license", "notices", "technology", "software"]
+---
 ## Data Verified
 
 OEM name, product name, package list, license types, version numbers, copyright holders

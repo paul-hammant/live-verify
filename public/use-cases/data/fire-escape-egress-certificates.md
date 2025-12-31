@@ -1,9 +1,11 @@
-# Fire escape and egress inspection certificates
-
-**Category:** Safety Inspection Certificates
-**Volume:** Medium
-**Retention:** 1-5 years (inspection cycle)
-
+---
+title: "Fire escape and egress inspection certificates"
+category: "Safety Inspection Certificates"
+volume: "Medium"
+retention: "1-5 years (inspection cycle)"
+slug: "fire-escape-egress-certificates"
+tags: ["fire", "escape", "egress", "certificates", "safety", "inspection"]
+---
 ## Data Verified
 
 Building address, fire escape location, inspector, inspection date, structural integrity

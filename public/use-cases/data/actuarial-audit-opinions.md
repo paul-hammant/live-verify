@@ -1,9 +1,11 @@
-# Actuarial audit opinions (peer review)
-
-**Category:** Actuarial & Insurance Mathematics
-**Volume:** Very Small
-**Retention:** 7-15 years (professional standards)
-
+---
+title: "Actuarial audit opinions (peer review)"
+category: "Actuarial & Insurance Mathematics"
+volume: "Very Small"
+retention: "7-15 years (professional standards)"
+slug: "actuarial-audit-opinions"
+tags: ["actuarial", "audit", "opinions", "insurance", "mathematics"]
+---
 ## Data Verified
 
 Reviewing actuary name, original actuary name, audit findings, ASOP compliance assessment

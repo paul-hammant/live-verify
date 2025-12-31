@@ -1,9 +1,11 @@
-# Kidnap & ransom (K&R) insurance policies
-
-**Category:** Insurance & Risk Management
-**Volume:** Tiny
-**Retention:** Policy term + 10 years
-
+---
+title: "Kidnap & ransom (K&R) insurance policies"
+category: "Insurance & Risk Management"
+volume: "Tiny"
+retention: "Policy term + 10 years"
+slug: "kidnap-ransom-insurance"
+tags: ["kidnap", "ransom", "insurance", "risk", "management"]
+---
 ## Data Verified
 
 Insured organization, covered individuals, ransom limit, response team, insurer

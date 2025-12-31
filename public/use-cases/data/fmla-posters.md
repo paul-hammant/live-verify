@@ -1,9 +1,11 @@
-# Family and Medical Leave Act (FMLA) posters
-
-**Category:** Mandatory Workplace Postings
-**Volume:** Very Large
-**Retention:** Current version
-
+---
+title: "Family and Medical Leave Act (FMLA) posters"
+category: "Mandatory Workplace Postings"
+volume: "Very Large"
+retention: "Current version"
+slug: "fmla-posters"
+tags: ["fmla", "posters", "mandatory", "workplace", "postings"]
+---
 ## Data Verified
 
 None (informational), FMLA eligibility, DOL Wage and Hour contact

@@ -1,9 +1,11 @@
-# Corporate resolutions and board minutes
-
-**Category:** Notary Services
-**Volume:** Small
-**Retention:** 7-10 years (corporate records)
-
+---
+title: "Corporate resolutions and board minutes"
+category: "Notary Services"
+volume: "Small"
+retention: "7-10 years (corporate records)"
+slug: "corporate-resolutions-board-minutes"
+tags: ["corporate", "resolutions", "board", "minutes", "notary", "services"]
+---
 ## Data Verified
 
 Corporation name, corporate officers, board resolution text, vote results, notary name, notary commission number, notary seal, resolution date

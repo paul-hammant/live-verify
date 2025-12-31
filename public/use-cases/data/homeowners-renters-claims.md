@@ -1,9 +1,11 @@
-# Homeowners/renters claims documentation
-
-**Category:** Personal Lines Insurance
-**Volume:** Medium
-**Retention:** Claim term + 7-10 years
-
+---
+title: "Homeowners/renters claims documentation"
+category: "Personal Lines Insurance"
+volume: "Medium"
+retention: "Claim term + 7-10 years"
+slug: "homeowners-renters-claims"
+tags: ["homeowners", "renters", "claims", "personal", "lines", "insurance"]
+---
 ## Data Verified
 
 Claimant name, property address, loss details, estimate, adjuster report

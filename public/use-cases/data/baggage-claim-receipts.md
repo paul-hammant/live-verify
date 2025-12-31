@@ -1,9 +1,11 @@
-# Baggage claim receipts and delayed baggage reports
-
-**Category:** Travel & Hospitality
-**Volume:** Large
-**Retention:** Claim resolution + 3-7 years
-
+---
+title: "Baggage claim receipts and delayed baggage reports"
+category: "Travel & Hospitality"
+volume: "Large"
+retention: "Claim resolution + 3-7 years"
+slug: "baggage-claim-receipts"
+tags: ["baggage", "claim", "receipts", "travel", "hospitality"]
+---
 ## Data Verified
 
 Passenger name, baggage tag numbers, flight details, claim amount, airline

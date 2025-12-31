@@ -1,9 +1,11 @@
-# Bank proof-of-funds letters
-
-**Category:** Financial & Legal Documents
-**Volume:** Medium
-**Retention:** 1 year (time-bound)
-
+---
+title: "Bank proof-of-funds letters"
+category: "Financial & Legal Documents"
+volume: "Medium"
+retention: "1 year (time-bound)"
+slug: "proof-of-funds-letters"
+tags: ["proof", "funds", "letters", "financial", "legal", "documents"]
+---
 ## Data Verified
 
 Account holder name, issuing bank, letter date, expiration date, reference number, account balance range (if disclosed in letter)

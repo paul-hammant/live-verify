@@ -1,9 +1,11 @@
-# Broker-dealer licenses and registrations
-
-**Category:** Banking & Financial Services
-**Volume:** Very Small
-**Retention:** Permanent (may show REVOKED status)
-
+---
+title: "Broker-dealer licenses and registrations"
+category: "Banking & Financial Services"
+volume: "Very Small"
+retention: "Permanent (may show REVOKED status)"
+slug: "broker-dealer-licenses"
+tags: ["broker", "dealer", "licenses", "banking", "financial", "services"]
+---
 ## Data Verified
 
 Licensee name, FINRA CRD number, registration date, firm affiliation, disciplinary history summary

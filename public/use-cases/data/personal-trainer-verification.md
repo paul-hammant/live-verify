@@ -1,9 +1,11 @@
-# Personal trainer/fitness instructor verification
-
-**Category:** Personal Safety & Service Verification
-**Volume:** Medium
-**Retention:** Training period + 1-3 years
-
+---
+title: "Personal trainer/fitness instructor verification"
+category: "Personal Safety & Service Verification"
+volume: "Medium"
+retention: "Training period + 1-3 years"
+slug: "personal-trainer-verification"
+tags: ["personal", "trainer", "verification", "safety", "service"]
+---
 ## Data Verified
 
 Trainer name, photo, certifications, background check, insurance, gym affiliation

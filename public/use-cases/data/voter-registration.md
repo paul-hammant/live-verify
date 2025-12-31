@@ -1,9 +1,11 @@
-# Voter registration confirmations
-
-**Category:** Immigration & Visa Documents
-**Volume:** Medium
-**Retention:** Election cycle + 2-4 years
-
+---
+title: "Voter registration confirmations"
+category: "Immigration & Visa Documents"
+volume: "Medium"
+retention: "Election cycle + 2-4 years"
+slug: "voter-registration"
+tags: ["voter", "registration", "immigration", "visa", "documents"]
+---
 ## Data Verified
 
 Voter name, address, precinct number, registration date, voter ID number (if applicable), jurisdiction

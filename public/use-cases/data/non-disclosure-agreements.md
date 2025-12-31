@@ -1,9 +1,11 @@
-# Non-disclosure agreements
-
-**Category:** Business & Commerce
-**Volume:** Large
-**Retention:** Term + survival period
-
+---
+title: "Non-disclosure agreements"
+category: "Business & Commerce"
+volume: "Large"
+retention: "Term + survival period"
+slug: "non-disclosure-agreements"
+tags: ["disclosure", "agreements", "business", "commerce"]
+---
 ## Data Verified
 
 Parties, scope

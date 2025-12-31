@@ -1,9 +1,11 @@
-# Disability insurance benefit calculations
-
-**Category:** Actuarial & Insurance Mathematics
-**Volume:** Small
-**Retention:** Policy term + 7 years (claims)
-
+---
+title: "Disability insurance benefit calculations"
+category: "Actuarial & Insurance Mathematics"
+volume: "Small"
+retention: "Policy term + 7 years (claims)"
+slug: "disability-benefit-calculations"
+tags: ["disability", "benefit", "calculations", "actuarial", "insurance", "mathematics"]
+---
 ## Data Verified
 
 Actuary name, claimant name (if individual), disability assumptions, benefit amounts, benefit period

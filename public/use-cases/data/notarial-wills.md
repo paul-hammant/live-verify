@@ -1,9 +1,11 @@
-# Notarial wills (holographic wills, statutory wills)
-
-**Category:** Notary Services
-**Volume:** Small
-**Retention:** Permanent (estate records)
-
+---
+title: "Notarial wills (holographic wills, statutory wills)"
+category: "Notary Services"
+volume: "Small"
+retention: "Permanent (estate records)"
+slug: "notarial-wills"
+tags: ["notarial", "wills", "notary", "services"]
+---
 ## Data Verified
 
 Testator name, will provisions, witness names, notary name, notary commission number, notary certification, notary seal, execution date

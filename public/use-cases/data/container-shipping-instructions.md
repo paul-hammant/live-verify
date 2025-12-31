@@ -1,9 +1,11 @@
-# Container shipping instructions and booking confirmations
-
-**Category:** Logistics & Transportation
-**Volume:** Large
-**Retention:** Shipment + 3-7 years
-
+---
+title: "Container shipping instructions and booking confirmations"
+category: "Logistics & Transportation"
+volume: "Large"
+retention: "Shipment + 3-7 years"
+slug: "container-shipping-instructions"
+tags: ["container", "shipping", "instructions", "logistics", "transportation"]
+---
 ## Data Verified
 
 Shipper, booking party, container details, vessel, sailing schedule

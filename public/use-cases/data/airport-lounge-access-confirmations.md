@@ -1,9 +1,11 @@
-# Airport lounge access confirmations
-
-**Category:** Travel & Hospitality
-**Volume:** Large
-**Retention:** Visit + 1-3 years
-
+---
+title: "Airport lounge access confirmations"
+category: "Travel & Hospitality"
+volume: "Large"
+retention: "Visit + 1-3 years"
+slug: "airport-lounge-access-confirmations"
+tags: ["airport", "lounge", "access", "confirmations", "travel", "hospitality"]
+---
 ## Data Verified
 
 Member name, lounge location, access date/time, membership program/day pass

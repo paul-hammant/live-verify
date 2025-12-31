@@ -1,9 +1,11 @@
-# Business interruption insurance claims documentation
-
-**Category:** Commercial Lines Insurance
-**Volume:** Small
-**Retention:** Claim term + 10 years
-
+---
+title: "Business interruption insurance claims documentation"
+category: "Commercial Lines Insurance"
+volume: "Small"
+retention: "Claim term + 10 years"
+slug: "business-interruption-claims"
+tags: ["business", "interruption", "claims", "commercial", "lines", "insurance"]
+---
 ## Data Verified
 
 Business name, interruption period, lost revenue, extra expenses, adjuster report

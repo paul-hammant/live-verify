@@ -1,9 +1,11 @@
-# Publishing contracts and royalty statements
-
-**Category:** Media & Publishing
-**Volume:** Very Small
-**Retention:** 7-20 years (contract term + disputes)
-
+---
+title: "Publishing contracts and royalty statements"
+category: "Media & Publishing"
+volume: "Very Small"
+retention: "7-20 years (contract term + disputes)"
+slug: "publishing-contracts-royalties"
+tags: ["publishing", "contracts", "royalties", "media"]
+---
 ## Data Verified
 
 Author/artist name, publisher, payment amounts, contract terms

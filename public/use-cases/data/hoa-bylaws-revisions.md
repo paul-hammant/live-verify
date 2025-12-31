@@ -1,9 +1,11 @@
-# HOA bylaws and rule revisions
-
-**Category:** Real Estate & Property
-**Volume:** Small
-**Retention:** Permanent
-
+---
+title: "HOA bylaws and rule revisions"
+category: "Real Estate & Property"
+volume: "Small"
+retention: "Permanent"
+slug: "hoa-bylaws-revisions"
+tags: ["bylaws", "revisions", "real", "estate", "property"]
+---
 ## Data Verified
 
 HOA name, community name, bylaw/rule title, adoption date, board approval date, revision number

@@ -1,9 +1,11 @@
-# Zoning and land use documents
-
-**Category:** Real Estate & Property
-**Volume:** Very Small
-**Retention:** Permanent (land records)
-
+---
+title: "Zoning and land use documents"
+category: "Real Estate & Property"
+volume: "Very Small"
+retention: "Permanent (land records)"
+slug: "zoning-land-use-documents"
+tags: ["zoning", "land", "documents", "real", "estate", "property"]
+---
 ## Data Verified
 
 Property owner, address, zoning classification, jurisdiction

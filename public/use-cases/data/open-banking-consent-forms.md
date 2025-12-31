@@ -1,9 +1,11 @@
-# Open Banking consent forms (PSD2, FDX, CDR)
-
-**Category:** Banking & Financial Services
-**Volume:** Medium
-**Retention:** 1-2 years (consent validity)
-
+---
+title: "Open Banking consent forms (PSD2, FDX, CDR)"
+category: "Banking & Financial Services"
+volume: "Medium"
+retention: "1-2 years (consent validity)"
+slug: "open-banking-consent-forms"
+tags: ["open", "banking", "consent", "forms", "financial", "services"]
+---
 ## Data Verified
 
 Customer name, account access scope, third-party app, expiration

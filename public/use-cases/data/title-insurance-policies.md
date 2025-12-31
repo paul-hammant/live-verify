@@ -1,9 +1,11 @@
-# Title insurance policies
-
-**Category:** Real Estate & Property
-**Volume:** Very Small
-**Retention:** Permanent (chain of title)
-
+---
+title: "Title insurance policies"
+category: "Real Estate & Property"
+volume: "Very Small"
+retention: "Permanent (chain of title)"
+slug: "title-insurance-policies"
+tags: ["title", "insurance", "policies", "real", "estate", "property"]
+---
 ## Data Verified
 
 Property owner, address, policy number, title company, encumbrances

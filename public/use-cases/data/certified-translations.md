@@ -1,9 +1,11 @@
-# Document translations (certified translations)
-
-**Category:** Notary Services
-**Volume:** Medium
-**Retention:** Translation purpose + 7-10 years
-
+---
+title: "Document translations (certified translations)"
+category: "Notary Services"
+volume: "Medium"
+retention: "Translation purpose + 7-10 years"
+slug: "certified-translations"
+tags: ["certified", "translations", "notary", "services"]
+---
 ## Data Verified
 
 Translator name, translator credentials, original document language, translated document, notary certification, notary name, notary commission number, notary seal, translation date

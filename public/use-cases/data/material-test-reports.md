@@ -1,9 +1,11 @@
-# Material test reports (chemical composition, strength)
-
-**Category:** Logistics & Transportation
-**Volume:** Small
-**Retention:** 10-30 years (structural integrity)
-
+---
+title: "Material test reports (chemical composition, strength)"
+category: "Logistics & Transportation"
+volume: "Small"
+retention: "10-30 years (structural integrity)"
+slug: "material-test-reports"
+tags: ["material", "test", "reports", "logistics", "transportation"]
+---
 ## Data Verified
 
 Test engineer name, lab technician name, approver name, material specification, test date, test results, batch/heat number

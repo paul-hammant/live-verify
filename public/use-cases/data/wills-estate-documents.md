@@ -1,9 +1,11 @@
-# Wills and Estate Documents
-
-**Category:** Financial & Legal Documents
-**Volume:** Small
-**Retention:** Permanent (estate records)
-
+---
+title: "Wills and Estate Documents"
+category: "Financial & Legal Documents"
+volume: "Small"
+retention: "Permanent (estate records)"
+slug: "wills-estate-documents"
+tags: ["wills", "estate", "documents", "financial", "legal"]
+---
 ## Data Verified
 
 Testator name, beneficiary names, executor/personal representative name, asset descriptions, specific bequests, residuary clauses, witness names and signatures, will execution date, revision/codicil number (if applicable), attorney or notary information.

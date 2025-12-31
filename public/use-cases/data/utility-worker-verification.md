@@ -1,9 +1,11 @@
-# Utility worker verification (gas/electric/water)
-
-**Category:** Personal Safety & Service Verification
-**Volume:** Large
-**Retention:** Service + 1-3 years (access records)
-
+---
+title: "Utility worker verification (gas/electric/water)"
+category: "Personal Safety & Service Verification"
+volume: "Large"
+retention: "Service + 1-3 years (access records)"
+slug: "utility-worker-verification"
+tags: ["utility", "worker", "verification", "personal", "safety", "service"]
+---
 ## Data Verified
 
 Worker name, photo, employee ID, utility company, service area

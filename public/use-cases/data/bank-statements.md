@@ -1,9 +1,11 @@
-# Bank Statements
-
-**Category:** Finance
-**Volume:** Medium
-**Retention:** 7-10 years (loan term + disputes)
-
+---
+title: "Bank Statements"
+category: "Finance"
+volume: "Medium"
+retention: "7-10 years (loan term + disputes)"
+slug: "bank-statements"
+tags: ["bank", "statements", "finance"]
+---
 ## Data Verified
 
 Account holder name, account number (masked), transaction history, account balances, bank name, statement period.
@@ -100,7 +102,6 @@ Once a bank computes its merkle root, several options exist for making it tamper
 
 **Practical Considerations**
 
-- **Volume:** Large banks issue millions of statements monthly. Merkle trees make this manageable; raw hash lists do not.
-- **Latency:** Real-time submission isn't required. Daily or weekly batch submissions suffice for regulatory purposes.
+- - **Latency:** Real-time submission isn't required. Daily or weekly batch submissions suffice for regulatory purposes.
 - **Privacy:** Merkle trees allow proving inclusion without revealing siblings. Banks can demonstrate a statement was issued without exposing other customers' data.
 - **Revocation:** If a statement is later found to be erroneous, the bank cannot alter the merkle tree. Instead, they issue a correction and submit a new hash. The original erroneous statement remains in the record—which is the point.

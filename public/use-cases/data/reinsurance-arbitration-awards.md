@@ -1,9 +1,11 @@
-# Reinsurance arbitration awards and dispute resolutions
-
-**Category:** Insurance & Risk Management
-**Volume:** Tiny
-**Retention:** Permanent (legal precedent)
-
+---
+title: "Reinsurance arbitration awards and dispute resolutions"
+category: "Insurance & Risk Management"
+volume: "Tiny"
+retention: "Permanent (legal precedent)"
+slug: "reinsurance-arbitration-awards"
+tags: ["reinsurance", "arbitration", "awards", "insurance", "risk", "management"]
+---
 ## Data Verified
 
 Parties, arbitrators, dispute details, award amount, findings

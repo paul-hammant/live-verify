@@ -1,9 +1,11 @@
-# Food Safety Certifications
-
-**Category:** Product Certifications & Compliance
-**Volume:** Small
-**Retention:** 2-7 years (audit cycles, regulatory requirements)
-
+---
+title: "Food Safety Certifications"
+category: "Product Certifications & Compliance"
+volume: "Small"
+retention: "2-7 years (audit cycles, regulatory requirements)"
+slug: "food-safety-certifications"
+tags: ["food", "safety", "certifications", "product", "compliance"]
+---
 ## Data Verified
 
 Producer/facility name and address, certification body name, certificate number, certification type/standard, scope of certification (products, processes, facilities), issue date, expiration date, audit date, any conditions or limitations.

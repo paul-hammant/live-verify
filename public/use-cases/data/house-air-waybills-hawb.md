@@ -1,9 +1,11 @@
-# House air waybills (HAWB) - freight forwarder issued
-
-**Category:** Logistics & Transportation
-**Volume:** Large
-**Retention:** 7-10 years (freight forwarder liability)
-
+---
+title: "House air waybills (HAWB) - freight forwarder issued"
+category: "Logistics & Transportation"
+volume: "Large"
+retention: "7-10 years (freight forwarder liability)"
+slug: "house-air-waybills-hawb"
+tags: ["house", "waybills", "hawb", "logistics", "transportation"]
+---
 ## Data Verified
 
 Freight forwarder, shipper, consignee, cargo consolidation details

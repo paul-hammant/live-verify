@@ -1,9 +1,11 @@
-# Visa extension and change of status approvals
-
-**Category:** Immigration & Visa Documents
-**Volume:** Medium
-**Retention:** Approval + 10 years
-
+---
+title: "Visa extension and change of status approvals"
+category: "Immigration & Visa Documents"
+volume: "Medium"
+retention: "Approval + 10 years"
+slug: "visa-extension-change-of-status"
+tags: ["visa", "extension", "change", "status", "immigration", "documents"]
+---
 ## Data Verified
 
 Full name, passport number, current status, new status/extension, approval date, receipt number

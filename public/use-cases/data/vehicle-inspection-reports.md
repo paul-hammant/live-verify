@@ -1,9 +1,11 @@
-# Vehicle Inspection Reports
-
-**Category:** Logistics & Transportation
-**Volume:** Medium
-**Retention:** 5-10 years (safety compliance, registration requirements)
-
+---
+title: "Vehicle Inspection Reports"
+category: "Logistics & Transportation"
+volume: "Medium"
+retention: "5-10 years (safety compliance, registration requirements)"
+slug: "vehicle-inspection-reports"
+tags: ["vehicle", "inspection", "reports", "logistics", "transportation"]
+---
 ## Data Verified
 
 Vehicle identification number (VIN), license plate number, vehicle owner/operator name, vehicle make/model/year, odometer reading, inspection station name and number, inspector name and certification number, inspection date, expiration date, inspection type, pass/fail result, deficiencies noted (if any), emissions test results (if applicable).

@@ -1,9 +1,11 @@
-# Environmental liability and pollution insurance
-
-**Category:** Commercial Lines Insurance
-**Volume:** Small
-**Retention:** Policy term + 30+ years (claims)
-
+---
+title: "Environmental liability and pollution insurance"
+category: "Commercial Lines Insurance"
+volume: "Small"
+retention: "Policy term + 30+ years (claims)"
+slug: "environmental-liability-pollution"
+tags: ["environmental", "liability", "pollution", "commercial", "lines", "insurance"]
+---
 ## Data Verified
 
 Insured business, site locations, pollution coverage, cleanup costs, limits

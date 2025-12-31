@@ -1,9 +1,11 @@
-# Temporary outdoor dining and parklet permits
-
-**Category:** Event & Temporary Use Permits
-**Volume:** Medium
-**Retention:** Permit season + 3-5 years
-
+---
+title: "Temporary outdoor dining and parklet permits"
+category: "Event & Temporary Use Permits"
+volume: "Medium"
+retention: "Permit season + 3-5 years"
+slug: "outdoor-dining-parklet-permits"
+tags: ["outdoor", "dining", "parklet", "permits", "event", "temporary"]
+---
 ## Data Verified
 
 Restaurant name, location, seating area, barriers, ADA compliance, health dept

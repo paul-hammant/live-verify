@@ -1,9 +1,11 @@
-# Terrorism insurance and TRIPRA coverage
-
-**Category:** Insurance & Risk Management
-**Volume:** Small
-**Retention:** Policy term + 10 years
-
+---
+title: "Terrorism insurance and TRIPRA coverage"
+category: "Insurance & Risk Management"
+volume: "Small"
+retention: "Policy term + 10 years"
+slug: "terrorism-insurance-tripra"
+tags: ["terrorism", "insurance", "tripra", "risk", "management"]
+---
 ## Data Verified
 
 Insured property, location, terrorism coverage limit, TRIPRA certification

@@ -1,9 +1,11 @@
-# Weight tickets and scale calibration
-
-**Category:** Logistics & Transportation
-**Volume:** Medium
-**Retention:** Shipment + 3-7 years
-
+---
+title: "Weight tickets and scale calibration"
+category: "Logistics & Transportation"
+volume: "Medium"
+retention: "Shipment + 3-7 years"
+slug: "weight-tickets-scale-calibration"
+tags: ["weight", "tickets", "scale", "calibration", "logistics", "transportation"]
+---
 ## Data Verified
 
 Scale ID, operator

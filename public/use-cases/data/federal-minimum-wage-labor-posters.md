@@ -1,9 +1,11 @@
-# Federal minimum wage and labor law posters
-
-**Category:** Mandatory Workplace Postings
-**Volume:** Very Large
-**Retention:** Current year (annual updates)
-
+---
+title: "Federal minimum wage and labor law posters"
+category: "Mandatory Workplace Postings"
+volume: "Very Large"
+retention: "Current year (annual updates)"
+slug: "federal-minimum-wage-labor-posters"
+tags: ["federal", "minimum", "wage", "labor", "posters", "mandatory", "workplace", "postings"]
+---
 ## Data Verified
 
 None (informational poster), minimum wage rate, DOL contact

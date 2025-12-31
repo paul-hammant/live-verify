@@ -1,9 +1,11 @@
-# Fact-checking verification and sources
-
-**Category:** Media & Publishing
-**Volume:** Very Small
-**Retention:** 3-10 years (journalistic integrity)
-
+---
+title: "Fact-checking verification and sources"
+category: "Media & Publishing"
+volume: "Very Small"
+retention: "3-10 years (journalistic integrity)"
+slug: "fact-checking-verification"
+tags: ["fact", "checking", "verification", "media", "publishing"]
+---
 ## Data Verified
 
 Fact-checker name, reporter, sources (may be confidential), publication

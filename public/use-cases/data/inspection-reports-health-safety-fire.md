@@ -1,9 +1,11 @@
-# Inspection reports (health, safety, fire)
-
-**Category:** Government & Civic Documents
-**Volume:** Small
-**Retention:** 5-15 years (enforcement)
-
+---
+title: "Inspection reports (health, safety, fire)"
+category: "Government & Civic Documents"
+volume: "Small"
+retention: "5-15 years (enforcement)"
+slug: "inspection-reports-health-safety-fire"
+tags: ["inspection", "reports", "health", "safety", "fire", "government", "civic", "documents"]
+---
 ## Data Verified
 
 Inspector name, facility owner, violations, corrective actions

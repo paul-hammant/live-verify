@@ -1,9 +1,11 @@
-# Medical imaging reports (X-ray, MRI, CT scan)
-
-**Category:** Healthcare & Medical Records
-**Volume:** Medium
-**Retention:** 10-30 years (diagnostic history)
-
+---
+title: "Medical imaging reports (X-ray, MRI, CT scan)"
+category: "Healthcare & Medical Records"
+volume: "Medium"
+retention: "10-30 years (diagnostic history)"
+slug: "medical-imaging-reports"
+tags: ["medical", "imaging", "reports", "healthcare", "records"]
+---
 ## Data Verified
 
 Patient name, DOB, imaging findings, radiologist name

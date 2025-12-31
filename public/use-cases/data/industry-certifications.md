@@ -1,9 +1,11 @@
-# Industry certifications (IT, finance, construction)
-
-**Category:** Professional & Educational Qualifications
-**Volume:** Small
-**Retention:** 3-10 years (renewal cycles)
-
+---
+title: "Industry certifications (IT, finance, construction)"
+category: "Professional & Educational Qualifications"
+volume: "Small"
+retention: "3-10 years (renewal cycles)"
+slug: "industry-certifications"
+tags: ["industry", "certifications", "professional", "educational", "qualifications"]
+---
 ## Data Verified
 
 Certificate holder name, certification ID, specialization, issuing organization, certification date, expiration date

@@ -1,9 +1,11 @@
-# Upgrade confirmations and paid upgrade receipts
-
-**Category:** Travel & Hospitality
-**Volume:** Medium
-**Retention:** Flight + 1-3 years
-
+---
+title: "Upgrade confirmations and paid upgrade receipts"
+category: "Travel & Hospitality"
+volume: "Medium"
+retention: "Flight + 1-3 years"
+slug: "airline-upgrade-confirmations"
+tags: ["airline", "upgrade", "confirmations", "travel", "hospitality"]
+---
 ## Data Verified
 
 Passenger name, original ticket, upgrade class, upgrade fee, confirmation

@@ -1,9 +1,11 @@
-# Farmers market vendor permits
-
-**Category:** Food & Beverage Permits
-**Volume:** Large
-**Retention:** Season/year validity
-
+---
+title: "Farmers market vendor permits"
+category: "Food & Beverage Permits"
+volume: "Large"
+retention: "Season/year validity"
+slug: "farmers-market-vendor-permits"
+tags: ["farmers", "market", "vendor", "permits", "food", "beverage"]
+---
 ## Data Verified
 
 Vendor name, products sold, market location, booth number

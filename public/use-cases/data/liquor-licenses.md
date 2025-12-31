@@ -1,9 +1,11 @@
-# Liquor Licenses
-
-**Category:** Food & Beverage Permits
-**Volume:** Medium-Small
-**Retention:** License term (1-3 years)
-
+---
+title: "Liquor Licenses"
+category: "Food & Beverage Permits"
+volume: "Medium-Small"
+retention: "License term (1-3 years)"
+slug: "liquor-licenses"
+tags: ["liquor", "licenses", "food", "beverage", "permits"]
+---
 ## Data Verified
 
 Licensee name (individual or entity), business name (DBA), premises address, license type, license number, license class, authorized hours, seating/occupancy capacity, issuing authority (ABC board, liquor control), issue date, expiration date, any restrictions or conditions.

@@ -1,9 +1,11 @@
-# Property tax assessments
-
-**Category:** Real Estate & Property
-**Volume:** Small
-**Retention:** 7-10 years (tax appeals)
-
+---
+title: "Property tax assessments"
+category: "Real Estate & Property"
+volume: "Small"
+retention: "7-10 years (tax appeals)"
+slug: "property-tax-assessments"
+tags: ["property", "assessments", "real", "estate"]
+---
 ## Data Verified
 
 Property owner name, address, assessed value, jurisdiction

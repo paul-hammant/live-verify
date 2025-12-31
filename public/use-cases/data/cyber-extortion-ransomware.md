@@ -1,9 +1,11 @@
-# Cyber extortion and ransomware insurance
-
-**Category:** Insurance & Risk Management
-**Volume:** Small
-**Retention:** Policy term + 7 years
-
+---
+title: "Cyber extortion and ransomware insurance"
+category: "Insurance & Risk Management"
+volume: "Small"
+retention: "Policy term + 7 years"
+slug: "cyber-extortion-ransomware"
+tags: ["cyber", "extortion", "ransomware", "insurance", "risk", "management"]
+---
 ## Data Verified
 
 Insured company, extortion coverage limit, ransom negotiation, incident response

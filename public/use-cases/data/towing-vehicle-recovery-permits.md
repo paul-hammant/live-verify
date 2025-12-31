@@ -1,9 +1,11 @@
-# Towing and vehicle recovery permits
-
-**Category:** Professional & Occupational Licenses
-**Volume:** Small
-**Retention:** 1-3 years (permit term)
-
+---
+title: "Towing and vehicle recovery permits"
+category: "Professional & Occupational Licenses"
+volume: "Small"
+retention: "1-3 years (permit term)"
+slug: "towing-vehicle-recovery-permits"
+tags: ["towing", "vehicle", "recovery", "permits", "professional", "occupational", "licenses"]
+---
 ## Data Verified
 
 Company name, owner, tow truck IDs, service area, issuing authority

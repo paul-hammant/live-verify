@@ -1,9 +1,11 @@
-# Immigration interview appointment notices
-
-**Category:** Immigration & Visa Documents
-**Volume:** Medium
-**Retention:** Appointment + 5 years
-
+---
+title: "Immigration interview appointment notices"
+category: "Immigration & Visa Documents"
+volume: "Medium"
+retention: "Appointment + 5 years"
+slug: "immigration-interview-notices"
+tags: ["immigration", "interview", "notices", "visa", "documents"]
+---
 ## Data Verified
 
 Full name, case number, appointment date/time/location, case type

@@ -1,9 +1,11 @@
-# Property condition disclosures (seller)
-
-**Category:** Real Estate & Property
-**Volume:** Small
-**Retention:** 7-10 years (transaction disputes)
-
+---
+title: "Property condition disclosures (seller)"
+category: "Real Estate & Property"
+volume: "Small"
+retention: "7-10 years (transaction disputes)"
+slug: "property-condition-disclosures"
+tags: ["property", "condition", "disclosures", "real", "estate"]
+---
 ## Data Verified
 
 Seller name, buyer name, property address, condition details, defects

@@ -1,9 +1,11 @@
-# Wetlands fill and mitigation permits (404 permits)
-
-**Category:** Environmental & Natural Resource Permits
-**Volume:** Small
-**Retention:** Permanent (environmental records)
-
+---
+title: "Wetlands fill and mitigation permits (404 permits)"
+category: "Environmental & Natural Resource Permits"
+volume: "Small"
+retention: "Permanent (environmental records)"
+slug: "wetlands-fill-mitigation-permits"
+tags: ["wetlands", "fill", "mitigation", "permits", "environmental", "natural", "resource"]
+---
 ## Data Verified
 
 Applicant, property, wetland impacts, mitigation plan, USACE/EPA

@@ -1,9 +1,11 @@
-# Escrow Instructions and Closing Documents
-
-**Category:** Real Estate & Property
-**Volume:** Very Small (per transaction, but high value)
-**Retention:** 7-10 years (transaction disputes, title claims)
-
+---
+title: "Escrow Instructions and Closing Documents"
+category: "Real Estate & Property"
+volume: "Very Small (per transaction, but high value)"
+retention: "7-10 years (transaction disputes, title claims)"
+slug: "escrow-closing-documents"
+tags: ["escrow", "closing", "documents", "real", "estate", "property"]
+---
 ## Data Verified
 
 Buyer name(s), seller name(s), property address and legal description, escrow officer name, escrow company, escrow number, lender name, purchase price, earnest money amount, closing date, wire instructions, contingencies, prorations, closing costs allocation.

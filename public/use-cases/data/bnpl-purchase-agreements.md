@@ -1,9 +1,11 @@
-# Buy Now Pay Later (BNPL) purchase agreements (Affirm, Klarna)
-
-**Category:** Banking & Financial Services
-**Volume:** Medium-Large
-**Retention:** Purchase term + 3-7 years
-
+---
+title: "Buy Now Pay Later (BNPL) purchase agreements (Affirm, Klarna)"
+category: "Banking & Financial Services"
+volume: "Medium-Large"
+retention: "Purchase term + 3-7 years"
+slug: "bnpl-purchase-agreements"
+tags: ["bnpl", "purchase", "agreements", "banking", "financial", "services"]
+---
 ## Data Verified
 
 Buyer name, merchant, purchase amount, payment schedule, terms

@@ -1,9 +1,11 @@
-# Remote online notarizations (RON)
-
-**Category:** Notary Services
-**Volume:** Large
-**Retention:** 10 years (state retention laws)
-
+---
+title: "Remote online notarizations (RON)"
+category: "Notary Services"
+volume: "Large"
+retention: "10 years (state retention laws)"
+slug: "remote-online-notarizations"
+tags: ["remote", "online", "notarizations", "notary", "services"]
+---
 ## Data Verified
 
 Signer name, video session ID, notary name, notary commission number, electronic journal entry, document type, session date/time, RON platform name

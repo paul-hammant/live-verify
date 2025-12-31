@@ -1,9 +1,11 @@
-# Guided tour receipts and activity booking confirmations
-
-**Category:** Travel & Hospitality
-**Volume:** Large
-**Retention:** Tour + 1-3 years
-
+---
+title: "Guided tour receipts and activity booking confirmations"
+category: "Travel & Hospitality"
+volume: "Large"
+retention: "Tour + 1-3 years"
+slug: "guided-tour-receipts"
+tags: ["guided", "tour", "receipts", "travel", "hospitality"]
+---
 ## Data Verified
 
 Participant name, tour/activity, date, operator, price, meeting point

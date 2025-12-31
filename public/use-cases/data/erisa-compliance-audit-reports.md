@@ -1,9 +1,11 @@
-# ERISA compliance and audit reports
-
-**Category:** Actuarial & Insurance Mathematics
-**Volume:** Very Small
-**Retention:** 7-10 years (DOL audit)
-
+---
+title: "ERISA compliance and audit reports"
+category: "Actuarial & Insurance Mathematics"
+volume: "Very Small"
+retention: "7-10 years (DOL audit)"
+slug: "erisa-compliance-audit-reports"
+tags: ["erisa", "compliance", "audit", "reports", "actuarial", "insurance", "mathematics"]
+---
 ## Data Verified
 
 Plan actuary name, plan sponsor, compliance status, funding requirements, plan year

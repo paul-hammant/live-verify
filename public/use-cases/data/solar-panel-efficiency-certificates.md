@@ -1,9 +1,11 @@
-# Solar panel efficiency certificates
-
-**Category:** Energy & Utilities
-**Volume:** Very Small
-**Retention:** 20-30 years (system lifetime)
-
+---
+title: "Solar panel efficiency certificates"
+category: "Energy & Utilities"
+volume: "Very Small"
+retention: "20-30 years (system lifetime)"
+slug: "solar-panel-efficiency-certificates"
+tags: ["solar", "panel", "efficiency", "certificates", "energy", "utilities"]
+---
 ## Data Verified
 
 System owner name, address, installer, panel specifications

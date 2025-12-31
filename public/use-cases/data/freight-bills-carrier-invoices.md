@@ -1,9 +1,11 @@
-# Freight bills and carrier invoices
-
-**Category:** Logistics & Transportation
-**Volume:** Large
-**Retention:** 7-10 years (payment/audit)
-
+---
+title: "Freight bills and carrier invoices"
+category: "Logistics & Transportation"
+volume: "Large"
+retention: "7-10 years (payment/audit)"
+slug: "freight-bills-carrier-invoices"
+tags: ["freight", "bills", "carrier", "invoices", "logistics", "transportation"]
+---
 ## Data Verified
 
 Shipper, carrier, freight charges, fuel surcharges, accessorial charges

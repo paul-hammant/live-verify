@@ -1,9 +1,11 @@
-# Soil test results and amendments
-
-**Category:** Agriculture & Food
-**Volume:** Small
-**Retention:** 5-10 years (nutrient management)
-
+---
+title: "Soil test results and amendments"
+category: "Agriculture & Food"
+volume: "Small"
+retention: "5-10 years (nutrient management)"
+slug: "soil-test-results"
+tags: ["soil", "test", "results", "agriculture", "food"]
+---
 ## Data Verified
 
 Farm owner, lab name, field location, recommendations

@@ -1,9 +1,11 @@
-# Travel agency booking invoices and itinerary confirmations
-
-**Category:** Travel & Hospitality
-**Volume:** Large
-**Retention:** Travel + 3-7 years (liability)
-
+---
+title: "Travel agency booking invoices and itinerary confirmations"
+category: "Travel & Hospitality"
+volume: "Large"
+retention: "Travel + 3-7 years (liability)"
+slug: "travel-agency-invoices"
+tags: ["travel", "agency", "invoices", "hospitality"]
+---
 ## Data Verified
 
 Traveler names, full itinerary, booking references, prices, agency, commission

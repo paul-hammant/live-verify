@@ -1,9 +1,11 @@
-# Trade finance: Certificates of origin
-
-**Category:** Banking & Financial Services
-**Volume:** Small
-**Retention:** 7-10 years (customs/trade disputes)
-
+---
+title: "Trade finance: Certificates of origin"
+category: "Banking & Financial Services"
+volume: "Small"
+retention: "7-10 years (customs/trade disputes)"
+slug: "trade-finance-certificates-of-origin"
+tags: ["trade", "finance", "certificates", "origin", "banking", "financial", "services"]
+---
 ## Data Verified
 
 Exporter name, importer name, goods description, origin country, chamber of commerce certification, certificate number

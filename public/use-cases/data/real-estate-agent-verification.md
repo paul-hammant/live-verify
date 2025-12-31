@@ -1,9 +1,11 @@
-# Real estate showing agent verification
-
-**Category:** Personal Safety & Service Verification
-**Volume:** Medium
-**Retention:** Showing + 1-3 years (liability)
-
+---
+title: "Real estate showing agent verification"
+category: "Personal Safety & Service Verification"
+volume: "Medium"
+retention: "Showing + 1-3 years (liability)"
+slug: "real-estate-agent-verification"
+tags: ["real", "estate", "agent", "verification", "personal", "safety", "service"]
+---
 ## Data Verified
 
 Agent name, photo, license number, brokerage, license status

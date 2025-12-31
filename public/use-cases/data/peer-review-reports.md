@@ -1,9 +1,11 @@
-# Peer review reports and journal submissions
-
-**Category:** Scientific & Research
-**Volume:** Very Small
-**Retention:** 5-10 years (publication records)
-
+---
+title: "Peer review reports and journal submissions"
+category: "Scientific & Research"
+volume: "Very Small"
+retention: "5-10 years (publication records)"
+slug: "peer-review-reports"
+tags: ["peer", "review", "reports", "scientific", "research"]
+---
 ## Data Verified
 
 Author names, reviewer names (if disclosed), affiliations

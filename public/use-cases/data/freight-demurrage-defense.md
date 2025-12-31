@@ -1,9 +1,11 @@
-# Freight, demurrage & defense (FD&D) insurance
-
-**Category:** Logistics & Transportation
-**Volume:** Small
-**Retention:** Policy term + 10 years
-
+---
+title: "Freight, demurrage & defense (FD&D) insurance"
+category: "Logistics & Transportation"
+volume: "Small"
+retention: "Policy term + 10 years"
+slug: "freight-demurrage-defense"
+tags: ["freight", "demurrage", "defense", "logistics", "transportation"]
+---
 ## Data Verified
 
 Shipowner, vessel, FD&D insurer, dispute coverage, legal defense limits

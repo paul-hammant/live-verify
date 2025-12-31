@@ -1,9 +1,11 @@
-# COVID-19 workplace safety protocols and vaccination
-
-**Category:** Mandatory Workplace Postings
-**Volume:** Large
-**Retention:** Policy period + 3-5 years
-
+---
+title: "COVID-19 workplace safety protocols and vaccination"
+category: "Mandatory Workplace Postings"
+volume: "Large"
+retention: "Policy period + 3-5 years"
+slug: "covid-workplace-safety-protocols"
+tags: ["covid", "workplace", "safety", "protocols", "mandatory", "postings"]
+---
 ## Data Verified
 
 Employer safety protocols, vaccination policy, testing requirements

@@ -1,9 +1,11 @@
-# Electrical permits and certificates
-
-**Category:** Construction & Property Permits
-**Volume:** Medium
-**Retention:** Permanent (building records)
-
+---
+title: "Electrical permits and certificates"
+category: "Construction & Property Permits"
+volume: "Medium"
+retention: "Permanent (building records)"
+slug: "electrical-permits"
+tags: ["electrical", "permits", "construction", "property"]
+---
 ## Data Verified
 
 Licensed electrician, property address, electrical work scope, inspection

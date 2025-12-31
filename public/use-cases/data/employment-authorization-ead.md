@@ -1,9 +1,11 @@
-# Employment Authorization Documents (EAD, I-766)
-
-**Category:** Immigration & Visa Documents
-**Volume:** Medium
-**Retention:** 1-2 years (renewal cycle)
-
+---
+title: "Employment Authorization Documents (EAD, I-766)"
+category: "Immigration & Visa Documents"
+volume: "Medium"
+retention: "1-2 years (renewal cycle)"
+slug: "employment-authorization-ead"
+tags: ["employment", "authorization", "immigration", "visa", "documents"]
+---
 ## Data Verified
 
 Name, photo, A-number, work authorization category, valid from-to dates, card number

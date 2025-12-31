@@ -1,9 +1,11 @@
-# Data sharing agreements and material transfer
-
-**Category:** Scientific & Research
-**Volume:** Very Small
-**Retention:** 7-20 years (IP/legal)
-
+---
+title: "Data sharing agreements and material transfer"
+category: "Scientific & Research"
+volume: "Very Small"
+retention: "7-20 years (IP/legal)"
+slug: "data-sharing-agreements"
+tags: ["data", "sharing", "agreements", "scientific", "research"]
+---
 ## Data Verified
 
 Sharing parties, researchers, material descriptions

@@ -1,9 +1,11 @@
-# Mortality and morbidity table certifications
-
-**Category:** Actuarial & Insurance Mathematics
-**Volume:** Tiny
-**Retention:** Permanent (industry standards)
-
+---
+title: "Mortality and morbidity table certifications"
+category: "Actuarial & Insurance Mathematics"
+volume: "Tiny"
+retention: "Permanent (industry standards)"
+slug: "mortality-morbidity-tables"
+tags: ["mortality", "morbidity", "tables", "actuarial", "insurance", "mathematics"]
+---
 ## Data Verified
 
 Actuary name, certifying body (Society of Actuaries, AAA), table version, population basis, effective date

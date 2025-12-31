@@ -1,9 +1,11 @@
-# Hazardous materials SDS summary sheets
-
-**Category:** Product Certifications & Compliance
-**Volume:** Medium
-**Retention:** Active use + 30 years
-
+---
+title: "Hazardous materials SDS summary sheets"
+category: "Product Certifications & Compliance"
+volume: "Medium"
+retention: "Active use + 30 years"
+slug: "hazardous-materials-sds-sheets"
+tags: ["hazardous", "materials", "sheets", "product", "certifications", "compliance"]
+---
 ## Data Verified
 
 Product, hazard classes, contact

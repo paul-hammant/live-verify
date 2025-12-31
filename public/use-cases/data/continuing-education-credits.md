@@ -1,9 +1,11 @@
-# Continuing education credits (CME, CLE, CPE)
-
-**Category:** Professional & Educational Qualifications
-**Volume:** Small
-**Retention:** 3-7 years (renewal cycles)
-
+---
+title: "Continuing education credits (CME, CLE, CPE)"
+category: "Professional & Educational Qualifications"
+volume: "Small"
+retention: "3-7 years (renewal cycles)"
+slug: "continuing-education-credits"
+tags: ["continuing", "education", "credits", "professional", "educational", "qualifications"]
+---
 ## Data Verified
 
 Professional name, license number, course title, provider name, credit hours, completion date, certificate number

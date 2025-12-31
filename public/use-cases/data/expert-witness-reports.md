@@ -1,9 +1,11 @@
-# Expert Witness Reports
-
-**Category:** Insurance & Risk Management / Legal
-**Volume:** Small
-**Retention:** Litigation lifecycle plus 10-20 years (appeals, malpractice)
-
+---
+title: "Expert Witness Reports"
+category: "Insurance & Risk Management / Legal"
+volume: "Small"
+retention: "Litigation lifecycle plus 10-20 years (appeals, malpractice)"
+slug: "expert-witness-reports"
+tags: ["expert", "witness", "reports", "insurance", "risk", "management", "legal"]
+---
 ## Data Verified
 
 Expert name and credentials, retaining party, case reference, report date, subject matter, opinions and conclusions, methodology used, materials reviewed, compensation disclosure, expert's signature, any amendments or supplemental reports.

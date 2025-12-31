@@ -1,9 +1,11 @@
-# Massage therapy licenses
-
-**Category:** Professional & Occupational Licenses
-**Volume:** Medium
-**Retention:** 1-2 years (renewal)
-
+---
+title: "Massage therapy licenses"
+category: "Professional & Occupational Licenses"
+volume: "Medium"
+retention: "1-2 years (renewal)"
+slug: "massage-therapy-licenses"
+tags: ["massage", "therapy", "licenses", "professional", "occupational"]
+---
 ## Data Verified
 
 Therapist name, license number, certifications, issuing authority

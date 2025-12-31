@@ -1,9 +1,11 @@
-# Homeowners insurance declarations page
-
-**Category:** Real Estate & Property
-**Volume:** Small
-**Retention:** Policy term + 7 years (claims)
-
+---
+title: "Homeowners insurance declarations page"
+category: "Real Estate & Property"
+volume: "Small"
+retention: "Policy term + 7 years (claims)"
+slug: "homeowners-insurance-declarations"
+tags: ["homeowners", "insurance", "declarations", "real", "estate", "property"]
+---
 ## Data Verified
 
 Insured name, property address, coverage amounts, deductibles, agent

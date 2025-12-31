@@ -1,9 +1,11 @@
-# Appraisals and valuations
-
-**Category:** Art & Collectibles
-**Volume:** Small
-**Retention:** 5-10 years (insurance/tax)
-
+---
+title: "Appraisals and valuations"
+category: "Art & Collectibles"
+volume: "Small"
+retention: "5-10 years (insurance/tax)"
+slug: "art-appraisals-valuations"
+tags: ["appraisals", "valuations", "collectibles"]
+---
 ## Data Verified
 
 Appraiser name, owner name, artwork details, valuation

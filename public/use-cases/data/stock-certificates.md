@@ -1,9 +1,11 @@
-# Stock Certificates and Share Transfer Documents
-
-**Category:** Financial & Legal Documents
-**Volume:** Small
-**Retention:** Permanent (ownership records)
-
+---
+title: "Stock Certificates and Share Transfer Documents"
+category: "Financial & Legal Documents"
+volume: "Small"
+retention: "Permanent (ownership records)"
+slug: "stock-certificates"
+tags: ["stock", "certificates", "financial", "legal", "documents"]
+---
 ## Data Verified
 
 Shareholder name, number of shares, share class, certificate number, company name and jurisdiction, issue date, par value (if any), transfer agent name, CUSIP/ISIN number, authorized signatures, any restrictive legends, transfer endorsements.

@@ -1,9 +1,11 @@
-# Polygraph Protection Act posting
-
-**Category:** Mandatory Workplace Postings
-**Volume:** Large
-**Retention:** Current version
-
+---
+title: "Polygraph Protection Act posting"
+category: "Mandatory Workplace Postings"
+volume: "Large"
+retention: "Current version"
+slug: "polygraph-protection-posting"
+tags: ["polygraph", "protection", "posting", "mandatory", "workplace", "postings"]
+---
 ## Data Verified
 
 None (informational), DOL contact, employee rights against lie detector tests

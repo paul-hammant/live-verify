@@ -1,9 +1,11 @@
-# Land surveys and property boundaries
-
-**Category:** Government & Civic Documents
-**Volume:** Small
-**Retention:** Permanent (property rights)
-
+---
+title: "Land surveys and property boundaries"
+category: "Government & Civic Documents"
+volume: "Small"
+retention: "Permanent (property rights)"
+slug: "land-surveys-property-boundaries"
+tags: ["land", "surveys", "property", "boundaries", "government", "civic", "documents"]
+---
 ## Data Verified
 
 Surveyor name, property owner, legal descriptions, boundaries

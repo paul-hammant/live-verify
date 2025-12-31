@@ -1,9 +1,11 @@
-# Tax forms and receipts
-
-**Category:** Financial & Legal Documents
-**Volume:** Medium
-**Retention:** 7-10 years (audit statute)
-
+---
+title: "Tax forms and receipts"
+category: "Financial & Legal Documents"
+volume: "Medium"
+retention: "7-10 years (audit statute)"
+slug: "tax-forms-receipts"
+tags: ["forms", "receipts", "financial", "legal", "documents"]
+---
 ## Data Verified
 
 Taxpayer name, tax ID/SSN, tax year, income amounts, deductions, filing date, preparer information

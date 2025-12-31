@@ -1,9 +1,11 @@
-# Shore excursion receipts and tour booking confirmations
-
-**Category:** Travel & Hospitality
-**Volume:** Large
-**Retention:** Excursion + 1-3 years
-
+---
+title: "Shore excursion receipts and tour booking confirmations"
+category: "Travel & Hospitality"
+volume: "Large"
+retention: "Excursion + 1-3 years"
+slug: "shore-excursion-receipts"
+tags: ["shore", "excursion", "receipts", "travel", "hospitality"]
+---
 ## Data Verified
 
 Passenger name, excursion details, tour operator, date, price, booking reference

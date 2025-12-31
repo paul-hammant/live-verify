@@ -1,9 +1,11 @@
-# Vacation rental agreements (Airbnb, VRBO)
-
-**Category:** Travel & Hospitality
-**Volume:** Large
-**Retention:** Stay + 3-7 years (dispute/tax)
-
+---
+title: "Vacation rental agreements (Airbnb, VRBO)"
+category: "Travel & Hospitality"
+volume: "Large"
+retention: "Stay + 3-7 years (dispute/tax)"
+slug: "vacation-rental-agreements"
+tags: ["vacation", "rental", "agreements", "travel", "hospitality"]
+---
 ## Data Verified
 
 Guest/host names, property address, dates, nightly rate, cleaning fee, total

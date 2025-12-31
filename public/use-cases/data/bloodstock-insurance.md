@@ -1,9 +1,11 @@
-# Bloodstock insurance (racehorses, breeding stock)
-
-**Category:** Insurance & Risk Management
-**Volume:** Very Small
-**Retention:** Horse lifetime (15-25 years)
-
+---
+title: "Bloodstock insurance (racehorses, breeding stock)"
+category: "Insurance & Risk Management"
+volume: "Very Small"
+retention: "Horse lifetime (15-25 years)"
+slug: "bloodstock-insurance"
+tags: ["bloodstock", "insurance", "risk", "management"]
+---
 ## Data Verified
 
 Owner, horse name/registration, value, use (racing/breeding), mortality coverage

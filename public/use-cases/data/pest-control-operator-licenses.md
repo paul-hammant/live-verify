@@ -1,9 +1,11 @@
-# Pest control operator licenses
-
-**Category:** Professional & Occupational Licenses
-**Volume:** Small
-**Retention:** 1-3 years (license term)
-
+---
+title: "Pest control operator licenses"
+category: "Professional & Occupational Licenses"
+volume: "Small"
+retention: "1-3 years (license term)"
+slug: "pest-control-operator-licenses"
+tags: ["pest", "control", "operator", "licenses", "professional", "occupational"]
+---
 ## Data Verified
 
 Licensee name, business name, license categories, insurance, issuing authority

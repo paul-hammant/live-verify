@@ -1,9 +1,11 @@
-# Emergency evacuation maps and procedures
-
-**Category:** Mandatory Workplace Postings
-**Volume:** Very Large
-**Retention:** Current building layout
-
+---
+title: "Emergency evacuation maps and procedures"
+category: "Mandatory Workplace Postings"
+volume: "Very Large"
+retention: "Current building layout"
+slug: "emergency-evacuation-maps"
+tags: ["emergency", "evacuation", "maps", "mandatory", "workplace", "postings"]
+---
 ## Data Verified
 
 Building floor plan, exit routes, assembly points, emergency contacts

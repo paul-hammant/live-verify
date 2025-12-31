@@ -1,9 +1,11 @@
-# Plumbing permits
-
-**Category:** Construction & Property Permits
-**Volume:** Medium
-**Retention:** Permanent (building records)
-
+---
+title: "Plumbing permits"
+category: "Construction & Property Permits"
+volume: "Medium"
+retention: "Permanent (building records)"
+slug: "plumbing-permits"
+tags: ["plumbing", "permits", "construction", "property"]
+---
 ## Data Verified
 
 Licensed plumber, property address, plumbing work scope, inspection

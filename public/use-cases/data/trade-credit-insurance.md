@@ -1,9 +1,11 @@
-# Trade credit insurance policies
-
-**Category:** Insurance & Risk Management
-**Volume:** Small
-**Retention:** Policy term + 7-10 years
-
+---
+title: "Trade credit insurance policies"
+category: "Insurance & Risk Management"
+volume: "Small"
+retention: "Policy term + 7-10 years"
+slug: "trade-credit-insurance"
+tags: ["trade", "credit", "insurance", "risk", "management"]
+---
 ## Data Verified
 
 Insured seller, buyer creditworthiness, coverage limits, credit terms

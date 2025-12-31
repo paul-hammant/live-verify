@@ -1,9 +1,11 @@
-# Equipment certifications (safety, performance)
-
-**Category:** Sports & Athletics
-**Volume:** Very Small
-**Retention:** Product lifetime (5-15 years)
-
+---
+title: "Equipment certifications (safety, performance)"
+category: "Sports & Athletics"
+volume: "Very Small"
+retention: "Product lifetime (5-15 years)"
+slug: "sports-equipment-certifications"
+tags: ["sports", "equipment", "certifications", "athletics"]
+---
 ## Data Verified
 
 Manufacturer, certifying body, equipment specifications

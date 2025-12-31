@@ -1,9 +1,11 @@
-# Biometric appointment confirmations
-
-**Category:** Immigration & Visa Documents
-**Volume:** Medium
-**Retention:** Appointment + 5 years
-
+---
+title: "Biometric appointment confirmations"
+category: "Immigration & Visa Documents"
+volume: "Medium"
+retention: "Appointment + 5 years"
+slug: "biometric-appointment-confirmations"
+tags: ["biometric", "appointment", "confirmations", "immigration", "visa", "documents"]
+---
 ## Data Verified
 
 Full name, case number, appointment date/time/location, ASC location

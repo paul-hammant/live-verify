@@ -1,9 +1,11 @@
-# Reinsurance collection and recovery documentation
-
-**Category:** Insurance & Risk Management
-**Volume:** Small
-**Retention:** Collection + 10 years
-
+---
+title: "Reinsurance collection and recovery documentation"
+category: "Insurance & Risk Management"
+volume: "Small"
+retention: "Collection + 10 years"
+slug: "reinsurance-collection-recovery"
+tags: ["reinsurance", "collection", "recovery", "insurance", "risk", "management"]
+---
 ## Data Verified
 
 Ceding company, reinsurer, claim details, reinsurer payment, collection status

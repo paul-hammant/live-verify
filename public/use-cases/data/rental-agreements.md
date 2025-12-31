@@ -1,9 +1,11 @@
-# Rental Agreements and Documentation
-
-**Category:** Travel & Hospitality / Equipment & Services
-**Volume:** Large
-**Retention:** Rental period plus 3-10 years (liability, disputes, tax)
-
+---
+title: "Rental Agreements and Documentation"
+category: "Travel & Hospitality / Equipment & Services"
+volume: "Large"
+retention: "Rental period plus 3-10 years (liability, disputes, tax)"
+slug: "rental-agreements"
+tags: ["rental", "agreements", "travel", "hospitality", "equipment", "services"]
+---
 ## Data Verified
 
 **Rental Agreement:** Renter name, rental company, item description (vehicle VIN, equipment serial number), pickup/return locations and dates, rental rate and fees, insurance/damage waiver coverage, deposit amount, authorized drivers/users, mileage/usage limits, fuel/consumables policy.

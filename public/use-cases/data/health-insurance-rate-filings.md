@@ -1,9 +1,11 @@
-# Health insurance rate filing certifications
-
-**Category:** Actuarial & Insurance Mathematics
-**Volume:** Very Small
-**Retention:** 5-10 years (rate approval)
-
+---
+title: "Health insurance rate filing certifications"
+category: "Actuarial & Insurance Mathematics"
+volume: "Very Small"
+retention: "5-10 years (rate approval)"
+slug: "health-insurance-rate-filings"
+tags: ["health", "insurance", "rate", "filings", "actuarial", "mathematics"]
+---
 ## Data Verified
 
 Actuary name, insurer, rate increases, medical cost trends, MLR compliance, filing details

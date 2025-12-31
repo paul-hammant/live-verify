@@ -1,9 +1,11 @@
-# Temporary and Short-Term Insurance
-
-**Category:** Personal Lines Insurance / Emerging Insurance
-**Volume:** Medium-Large (growing rapidly)
-**Retention:** Coverage period plus 5-10 years (claims)
-
+---
+title: "Temporary and Short-Term Insurance"
+category: "Personal Lines Insurance / Emerging Insurance"
+volume: "Medium-Large (growing rapidly)"
+retention: "Coverage period plus 5-10 years (claims)"
+slug: "temporary-short-term-insurance"
+tags: ["temporary", "short", "term", "insurance", "personal", "lines", "emerging"]
+---
 ## Data Verified
 
 Insured name, coverage type, covered item (vehicle, person, event, property), coverage dates and times, policy/certificate number, insurer name, coverage limits, premium paid, any exclusions or conditions.

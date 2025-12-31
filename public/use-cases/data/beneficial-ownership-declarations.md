@@ -1,9 +1,11 @@
-# Beneficial ownership declarations
-
-**Category:** Banking & Financial Services
-**Volume:** Small
-**Retention:** 5-10 years post-relationship
-
+---
+title: "Beneficial ownership declarations"
+category: "Banking & Financial Services"
+volume: "Small"
+retention: "5-10 years post-relationship"
+slug: "beneficial-ownership-declarations"
+tags: ["beneficial", "ownership", "declarations", "banking", "financial", "services"]
+---
 ## Data Verified
 
 UBO (Ultimate Beneficial Owner) names, ownership percentages, corporate structure, control relationships

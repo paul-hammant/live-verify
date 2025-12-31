@@ -1,9 +1,11 @@
-# OSHA workplace safety posters (Job Safety and Health)
-
-**Category:** Mandatory Workplace Postings
-**Volume:** Very Large
-**Retention:** Current year (annual updates)
-
+---
+title: "OSHA workplace safety posters (Job Safety and Health)"
+category: "Mandatory Workplace Postings"
+volume: "Very Large"
+retention: "Current year (annual updates)"
+slug: "osha-workplace-safety-posters"
+tags: ["osha", "workplace", "safety", "posters", "mandatory", "postings"]
+---
 ## Data Verified
 
 None (informational poster), OSHA contact info

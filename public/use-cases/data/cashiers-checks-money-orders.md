@@ -1,9 +1,11 @@
-# Cashier's checks and money orders
-
-**Category:** Real Estate & Property
-**Volume:** Small
-**Retention:** 3-7 years (payment disputes)
-
+---
+title: "Cashier's checks and money orders"
+category: "Real Estate & Property"
+volume: "Small"
+retention: "3-7 years (payment disputes)"
+slug: "cashiers-checks-money-orders"
+tags: ["cashiers", "checks", "money", "orders", "real", "estate", "property"]
+---
 ## Data Verified
 
 Payee name, payment amount, issuing institution name, check/order number, issue date

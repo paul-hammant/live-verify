@@ -1,9 +1,11 @@
-# Crowdfunding investment confirmations (Kickstarter, Indiegogo)
-
-**Category:** Banking & Financial Services
-**Volume:** Small
-**Retention:** 3-7 years (fulfillment disputes)
-
+---
+title: "Crowdfunding investment confirmations (Kickstarter, Indiegogo)"
+category: "Banking & Financial Services"
+volume: "Small"
+retention: "3-7 years (fulfillment disputes)"
+slug: "crowdfunding-investment-confirmations"
+tags: ["crowdfunding", "investment", "confirmations", "banking", "financial", "services"]
+---
 ## Data Verified
 
 Backer name, project, pledge amount, reward tier, delivery estimate

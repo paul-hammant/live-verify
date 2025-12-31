@@ -1,9 +1,11 @@
-# Air quality permits (Title V, synthetic minor)
-
-**Category:** Environmental & Natural Resource Permits
-**Volume:** Small
-**Retention:** 5 years (permit term)
-
+---
+title: "Air quality permits (Title V, synthetic minor)"
+category: "Environmental & Natural Resource Permits"
+volume: "Small"
+retention: "5 years (permit term)"
+slug: "air-quality-permits"
+tags: ["quality", "permits", "environmental", "natural", "resource"]
+---
 ## Data Verified
 
 Facility name, owner, emission sources, limits, monitoring, air quality agency

@@ -1,9 +1,11 @@
-# Structured settlement agreements and annuity contracts
-
-**Category:** Insurance & Risk Management
-**Volume:** Very Small
-**Retention:** Claimant lifetime (50+ years)
-
+---
+title: "Structured settlement agreements and annuity contracts"
+category: "Insurance & Risk Management"
+volume: "Very Small"
+retention: "Claimant lifetime (50+ years)"
+slug: "structured-settlement-agreements"
+tags: ["structured", "settlement", "agreements", "insurance", "risk", "management"]
+---
 ## Data Verified
 
 Claimant name, annuity issuer, payment schedule, present value, settlement details

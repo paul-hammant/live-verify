@@ -1,9 +1,11 @@
-# Amusement ride and carnival inspection certificates
-
-**Category:** Safety Inspection Certificates
-**Volume:** Medium
-**Retention:** Seasonal/annual (before operation)
-
+---
+title: "Amusement ride and carnival inspection certificates"
+category: "Safety Inspection Certificates"
+volume: "Medium"
+retention: "Seasonal/annual (before operation)"
+slug: "amusement-ride-carnival-certificates"
+tags: ["amusement", "ride", "carnival", "certificates", "safety", "inspection"]
+---
 ## Data Verified
 
 Ride name, owner, inspector name, inspection date, mechanical/safety test results

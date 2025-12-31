@@ -1,9 +1,11 @@
-# Demolition permits
-
-**Category:** Construction & Property Permits
-**Volume:** Small
-**Retention:** Permanent (property records)
-
+---
+title: "Demolition permits"
+category: "Construction & Property Permits"
+volume: "Small"
+retention: "Permanent (property records)"
+slug: "demolition-permits"
+tags: ["demolition", "permits", "construction", "property"]
+---
 ## Data Verified
 
 Permit holder, property address, demolition scope, asbestos abatement

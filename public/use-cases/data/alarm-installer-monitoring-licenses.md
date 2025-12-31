@@ -1,9 +1,11 @@
-# Alarm installer and monitoring licenses
-
-**Category:** Professional & Occupational Licenses
-**Volume:** Small
-**Retention:** 1-3 years (license term)
-
+---
+title: "Alarm installer and monitoring licenses"
+category: "Professional & Occupational Licenses"
+volume: "Small"
+retention: "1-3 years (license term)"
+slug: "alarm-installer-monitoring-licenses"
+tags: ["alarm", "installer", "monitoring", "licenses", "professional", "occupational"]
+---
 ## Data Verified
 
 Licensee name, business name, license number, monitoring station, issuing authority

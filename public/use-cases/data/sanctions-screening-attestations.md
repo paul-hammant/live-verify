@@ -1,9 +1,11 @@
-# Sanctions/restricted party screening attestations
-
-**Category:** Banking & Financial Services
-**Volume:** Large
-**Retention:** 5-7 years
-
+---
+title: "Sanctions/restricted party screening attestations"
+category: "Banking & Financial Services"
+volume: "Large"
+retention: "5-7 years"
+slug: "sanctions-screening-attestations"
+tags: ["sanctions", "screening", "attestations", "banking", "financial", "services"]
+---
 ## Data Verified
 
 Company, screening date/time, dataset versions

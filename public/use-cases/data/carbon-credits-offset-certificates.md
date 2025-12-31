@@ -1,9 +1,11 @@
-# Carbon Credits and Offset Certificates
-
-**Category:** Energy & Utilities
-**Volume:** Very Small (per certificate, but rapidly growing market)
-**Retention:** 7-20 years (carbon accounting, regulatory compliance)
-
+---
+title: "Carbon Credits and Offset Certificates"
+category: "Energy & Utilities"
+volume: "Very Small (per certificate, but rapidly growing market)"
+retention: "7-20 years (carbon accounting, regulatory compliance)"
+slug: "carbon-credits-offset-certificates"
+tags: ["carbon", "credits", "offset", "certificates", "energy", "utilities"]
+---
 ## Data Verified
 
 Credit issuer/registry name, credit holder/purchaser name, project name and location, project type (renewable energy, forestry, methane capture, etc.), vintage year, quantity (tonnes CO2 equivalent), serial number range, verification body name, issuance date, retirement date (if retired), certification standard (Verra, Gold Standard, ACR, CAR, etc.).

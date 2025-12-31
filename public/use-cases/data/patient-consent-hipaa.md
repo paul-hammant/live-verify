@@ -1,9 +1,11 @@
-# Patient consent forms and HIPAA authorizations
-
-**Category:** Healthcare & Medical Records
-**Volume:** Medium
-**Retention:** 7-10 years post-treatment
-
+---
+title: "Patient consent forms and HIPAA authorizations"
+category: "Healthcare & Medical Records"
+volume: "Medium"
+retention: "7-10 years post-treatment"
+slug: "patient-consent-hipaa"
+tags: ["patient", "consent", "hipaa", "healthcare", "medical", "records"]
+---
 ## Data Verified
 
 Patient name, DOB, authorized parties, consent scope

@@ -1,9 +1,11 @@
-# Professional Licenses
-
-**Category:** Professional & Educational Qualifications
-**Volume:** Very Small (per license, but millions of licensed professionals)
-**Retention:** Permanent (verification response may show REVOKED, EXPIRED, or SUSPENDED status)
-
+---
+title: "Professional Licenses"
+category: "Professional & Educational Qualifications"
+volume: "Very Small (per license, but millions of licensed professionals)"
+retention: "Permanent (verification response may show REVOKED, EXPIRED, or SUSPENDED status)"
+slug: "professional-licenses"
+tags: ["professional", "licenses", "educational", "qualifications"]
+---
 ## Data Verified
 
 Licensee name, license number, profession/specialization, issue date, expiration date, issuing jurisdiction, license type (full, provisional, restricted), any endorsements or specializations.

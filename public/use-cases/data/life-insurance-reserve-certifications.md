@@ -1,9 +1,11 @@
-# Life insurance reserve certifications
-
-**Category:** Actuarial & Insurance Mathematics
-**Volume:** Very Small
-**Retention:** 7-30 years (policy lifetime)
-
+---
+title: "Life insurance reserve certifications"
+category: "Actuarial & Insurance Mathematics"
+volume: "Very Small"
+retention: "7-30 years (policy lifetime)"
+slug: "life-insurance-reserve-certifications"
+tags: ["life", "insurance", "reserve", "certifications", "actuarial", "mathematics"]
+---
 ## Data Verified
 
 Actuary name, insurance company, reserve amounts, mortality assumptions, actuarial opinion signature

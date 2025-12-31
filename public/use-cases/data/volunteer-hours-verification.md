@@ -1,9 +1,11 @@
-# Volunteer hours verification
-
-**Category:** Charitable & Non-Profit
-**Volume:** Small
-**Retention:** 3-7 years (employment verification)
-
+---
+title: "Volunteer hours verification"
+category: "Charitable & Non-Profit"
+volume: "Small"
+retention: "3-7 years (employment verification)"
+slug: "volunteer-hours-verification"
+tags: ["volunteer", "hours", "verification", "charitable", "non-profit"]
+---
 ## Data Verified
 
 Volunteer name, hours worked, supervisor, organization, activities

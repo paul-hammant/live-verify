@@ -1,9 +1,11 @@
-# Parking enforcement officer verification
-
-**Category:** Personal Safety & Service Verification
-**Volume:** Large
-**Retention:** Encounter + 1-3 years
-
+---
+title: "Parking enforcement officer verification"
+category: "Personal Safety & Service Verification"
+volume: "Large"
+retention: "Encounter + 1-3 years"
+slug: "parking-enforcement-verification"
+tags: ["parking", "enforcement", "verification", "personal", "safety", "service"]
+---
 ## Data Verified
 
 Officer name, photo, badge number, jurisdiction, parking authority

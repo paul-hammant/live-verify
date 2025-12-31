@@ -1,9 +1,11 @@
-# Meter reader/surveyor verification (property access)
-
-**Category:** Personal Safety & Service Verification
-**Volume:** Large
-**Retention:** Visit + 1-3 years (access records)
-
+---
+title: "Meter reader/surveyor verification (property access)"
+category: "Personal Safety & Service Verification"
+volume: "Large"
+retention: "Visit + 1-3 years (access records)"
+slug: "meter-reader-surveyor-verification"
+tags: ["meter", "reader", "surveyor", "verification", "personal", "safety", "service"]
+---
 ## Data Verified
 
 Worker name, photo, employee ID, company, purpose of visit

@@ -1,9 +1,11 @@
-# Third-party verification letters (employment, income, assets)
-
-**Category:** Real Estate & Property
-**Volume:** Small
-**Retention:** 5-10 years (transaction + audit)
-
+---
+title: "Third-party verification letters (employment, income, assets)"
+category: "Real Estate & Property"
+volume: "Small"
+retention: "5-10 years (transaction + audit)"
+slug: "third-party-verification-letters"
+tags: ["third", "party", "verification", "letters", "real", "estate", "property"]
+---
 ## Data Verified
 
 Subject name, verified information details, verifier credentials, verification date, verification service name

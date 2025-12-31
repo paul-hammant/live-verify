@@ -1,9 +1,11 @@
-# Block party and street closure permits
-
-**Category:** Event & Temporary Use Permits
-**Volume:** Medium
-**Retention:** Event + 1-3 years
-
+---
+title: "Block party and street closure permits"
+category: "Event & Temporary Use Permits"
+volume: "Medium"
+retention: "Event + 1-3 years"
+slug: "block-party-street-closure-permits"
+tags: ["block", "party", "street", "closure", "permits", "event", "temporary"]
+---
 ## Data Verified
 
 Organizer name, address, street closure area, date/hours, neighbors' consent

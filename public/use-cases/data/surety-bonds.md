@@ -1,9 +1,11 @@
-# Surety Bonds and Performance Guarantees
-
-**Category:** Insurance & Risk Management
-**Volume:** Small
-**Retention:** Bond term plus 10 years (claims, disputes)
-
+---
+title: "Surety Bonds and Performance Guarantees"
+category: "Insurance & Risk Management"
+volume: "Small"
+retention: "Bond term plus 10 years (claims, disputes)"
+slug: "surety-bonds"
+tags: ["surety", "bonds", "insurance", "risk", "management"]
+---
 ## Data Verified
 
 Principal (contractor/obligor) name, obligee (project owner/beneficiary) name, surety company name, bond number, bond type, penal sum (bond amount), project name and location, effective date, expiration date (if any), conditions and limitations.

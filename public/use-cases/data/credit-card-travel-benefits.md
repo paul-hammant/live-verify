@@ -1,9 +1,11 @@
-# Credit card travel benefits and coverage confirmations
-
-**Category:** Travel & Hospitality
-**Volume:** Small
-**Retention:** Trip + 3-7 years
-
+---
+title: "Credit card travel benefits and coverage confirmations"
+category: "Travel & Hospitality"
+volume: "Small"
+retention: "Trip + 3-7 years"
+slug: "credit-card-travel-benefits"
+tags: ["credit", "card", "travel", "benefits", "hospitality"]
+---
 ## Data Verified
 
 Cardholder name, trip charged to card, coverage details, card issuer

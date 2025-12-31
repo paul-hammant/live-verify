@@ -1,9 +1,11 @@
-# Lab notebooks and experimental data
-
-**Category:** Scientific & Research
-**Volume:** Small
-**Retention:** 7-30 years (research integrity)
-
+---
+title: "Lab notebooks and experimental data"
+category: "Scientific & Research"
+volume: "Small"
+retention: "7-30 years (research integrity)"
+slug: "lab-notebooks-experimental-data"
+tags: ["notebooks", "experimental", "data", "scientific", "research"]
+---
 ## Data Verified
 
 Researcher names, lab PI, collaborators, notebook IDs

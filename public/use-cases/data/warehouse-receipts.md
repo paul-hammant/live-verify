@@ -1,9 +1,11 @@
-# Warehouse Receipts and Inventory Records
-
-**Category:** Logistics & Transportation / Commodity Finance
-**Volume:** Medium-Small
-**Retention:** 3-7 years (financial audit, loan lifecycle)
-
+---
+title: "Warehouse Receipts and Inventory Records"
+category: "Logistics & Transportation / Commodity Finance"
+volume: "Medium-Small"
+retention: "3-7 years (financial audit, loan lifecycle)"
+slug: "warehouse-receipts"
+tags: ["warehouse", "receipts", "logistics", "transportation", "commodity", "finance"]
+---
 ## Data Verified
 
 Warehouse operator name and license number, receipt number, depositor/owner name, commodity description (type, grade, quality), quantity (weight, volume, count), warehouse location and bin/lot number, receipt date, storage terms, any liens or encumbrances noted.

@@ -1,9 +1,11 @@
-# Flood elevation certificates (FEMA)
-
-**Category:** Real Estate & Property
-**Volume:** Very Small
-**Retention:** Permanent (flood insurance)
-
+---
+title: "Flood elevation certificates (FEMA)"
+category: "Real Estate & Property"
+volume: "Very Small"
+retention: "Permanent (flood insurance)"
+slug: "flood-elevation-certificates"
+tags: ["flood", "elevation", "certificates", "real", "estate", "property"]
+---
 ## Data Verified
 
 Property owner, address, surveyor, elevation data, FEMA zone

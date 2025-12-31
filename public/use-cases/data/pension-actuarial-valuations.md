@@ -1,9 +1,11 @@
-# Pension plan actuarial valuation reports
-
-**Category:** Actuarial & Insurance Mathematics
-**Volume:** Very Small
-**Retention:** 7-30 years (ERISA/plan lifetime)
-
+---
+title: "Pension plan actuarial valuation reports"
+category: "Actuarial & Insurance Mathematics"
+volume: "Very Small"
+retention: "7-30 years (ERISA/plan lifetime)"
+slug: "pension-actuarial-valuations"
+tags: ["pension", "actuarial", "valuations", "insurance", "mathematics"]
+---
 ## Data Verified
 
 Plan actuary name, plan sponsor, participant demographics (aggregated), pension liabilities, funding status

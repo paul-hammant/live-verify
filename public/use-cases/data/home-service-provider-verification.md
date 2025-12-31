@@ -1,9 +1,11 @@
-# Home service provider verification (plumber/electrician)
-
-**Category:** Personal Safety & Service Verification
-**Volume:** Large
-**Retention:** Service + 3-7 years (liability/tax)
-
+---
+title: "Home service provider verification (plumber/electrician)"
+category: "Personal Safety & Service Verification"
+volume: "Large"
+retention: "Service + 3-7 years (liability/tax)"
+slug: "home-service-provider-verification"
+tags: ["home", "service", "provider", "verification", "personal", "safety"]
+---
 ## Data Verified
 
 Tradesperson name, photo, license number, company, complaints history

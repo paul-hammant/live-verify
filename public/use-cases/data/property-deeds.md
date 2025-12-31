@@ -1,9 +1,11 @@
-# Property Deeds
-
-**Category:** Real Estate & Property
-**Volume:** Tiny (per transaction, but millions recorded annually)
-**Retention:** Permanent (ownership records)
-
+---
+title: "Property Deeds"
+category: "Real Estate & Property"
+volume: "Tiny (per transaction, but millions recorded annually)"
+retention: "Permanent (ownership records)"
+slug: "property-deeds"
+tags: ["property", "deeds", "real", "estate"]
+---
 ## Data Verified
 
 Grantor name (seller), grantee name (buyer), property address, legal description (metes and bounds, lot/block, or parcel number), consideration amount, notary acknowledgment, recording information (book/page or document number), deed type (warranty, quitclaim, grant, special warranty).

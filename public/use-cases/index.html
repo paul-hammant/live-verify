@@ -535,6 +535,73 @@
             align-items: center;
             gap: 8px;
         }
+        .use-case-snippet {
+            font-size: 0.95em;
+            color: #495057;
+            line-height: 1.5;
+            margin: 12px 0;
+        }
+        .view-details-btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9em;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+        .view-details-btn:hover {
+            background: #5568d3;
+        }
+        .markdown-content {
+            line-height: 1.7;
+        }
+        .markdown-content h2 {
+            color: #2c3e50;
+            font-size: 1.4em;
+            margin: 24px 0 12px 0;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #667eea;
+        }
+        .markdown-content h3 {
+            color: #2c3e50;
+            font-size: 1.15em;
+            margin: 20px 0 10px 0;
+        }
+        .markdown-content h4 {
+            color: #495057;
+            font-size: 1em;
+            margin: 16px 0 8px 0;
+        }
+        .markdown-content p {
+            margin: 12px 0;
+            color: #495057;
+        }
+        .markdown-content ul {
+            margin: 12px 0 12px 24px;
+            color: #495057;
+        }
+        .markdown-content li {
+            margin: 6px 0;
+        }
+        .markdown-content code {
+            background: #f1f3f5;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        .markdown-content pre {
+            background: #f8f9fa;
+            padding: 16px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 12px 0;
+        }
+        .markdown-content a {
+            color: #667eea;
+        }
         @media (max-width: 768px) {
             h1 {
                 font-size: 1.8em;
@@ -701,56 +768,19 @@
     </dialog>
 
     <script>
-        // Data loaded from JSON files
-        let categoriesSummary = null;
-        let searchIndex = null;
-        const categoryDataCache = {}; // Cache loaded full category data
-        const useCaseFileCache = {}; // Cache individual use case files
+        // Data loaded from index.json (pre-generated, committed)
+        let indexData = null;
 
-        // Load categories summary (lightweight, pre-aggregated) - ONE HTTP REQUEST
-        async function loadCategoriesSummary() {
-            const response = await fetch('data/categories-summary.json');
-            categoriesSummary = await response.json();
-            return categoriesSummary;
+        // Load the main index
+        async function loadIndex() {
+            const response = await fetch('data/index.json');
+            indexData = await response.json();
+            return indexData;
         }
 
-        // Load search index
-        async function loadSearchIndex() {
-            const response = await fetch('data/search-index.json');
-            searchIndex = await response.json();
-            return searchIndex;
-        }
-
-        // Load a specific use case file on demand
-        async function loadUseCaseFile(fileId) {
-            if (useCaseFileCache[fileId]) {
-                return useCaseFileCache[fileId];
-            }
-
-            const response = await fetch(`data/${fileId}.json`);
-            const data = await response.json();
-            useCaseFileCache[fileId] = data;
-            return data;
-        }
-
-        // Load all use cases for a specific category (on demand when clicking)
-        async function loadCategoryData(categoryName) {
-            if (categoryDataCache[categoryName]) {
-                return categoryDataCache[categoryName];
-            }
-
-            const category = categoriesSummary.categories.find(c => c.name === categoryName);
-            if (!category) return [];
-
-            // Load all files for this category
-            const useCases = [];
-            for (const fileId of category.files) {
-                const fileData = await loadUseCaseFile(fileId);
-                useCases.push(...fileData);
-            }
-
-            categoryDataCache[categoryName] = useCases;
-            return useCases;
+        // Get use cases for a category
+        function getUseCasesForCategory(categoryName) {
+            return indexData.useCases.filter(uc => uc.category === categoryName);
         }
 
         // Animated counter
@@ -776,10 +806,10 @@
             const grid = document.getElementById('categoriesGrid');
             grid.innerHTML = '';
 
-            if (!categoriesSummary) return;
+            if (!indexData) return;
 
-            let index = 0;
-            categoriesSummary.categories.forEach((category) => {
+            let cardIndex = 0;
+            indexData.categoriesList.forEach((category) => {
                 const card = document.createElement('div');
                 card.className = 'category-card';
                 card.innerHTML = `
@@ -792,112 +822,46 @@
                 // Stagger reveal animation
                 setTimeout(() => {
                     card.classList.add('visible');
-                }, index * 50);
-                index++;
+                }, cardIndex * 50);
+                cardIndex++;
             });
         }
 
-        // Render a single use case item
-        function renderUseCaseItem(useCase) {
-            const exampleLink = useCase.exampleDocument
-                ? `<p class="example-link">Need a sample document? <a href="${useCase.exampleDocument.url}" target="_blank" rel="noreferrer noopener">${useCase.exampleDocument.label}</a></p>`
-                : '';
+        // Render a single use case item (summary card with link to Jekyll page)
+        function renderUseCaseCard(useCase) {
             return `
-                <div class="use-case-item">
+                <div class="use-case-item" data-slug="${useCase.slug}">
                     <div class="use-case-title">${useCase.title}</div>
-                    <div class="use-case-frames">
-                        <div class="frame">
-                            <div class="frame-title">Claim (hashed)</div>
-                            <div class="frame-body">${useCase.dataVerified}</div>
+                    <div class="use-case-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Volume</span>
+                            <span class="meta-value">${useCase.volume || 'Not specified'}</span>
                         </div>
-                        <div class="frame">
-                            <div class="frame-title">Issuer Attests</div>
-                            <div class="frame-body">
-                                The issuer domain stands by the claim by returning “OK” (or another status like “REVOKED”) for the claim hash. Status text can be customized via
-                                <code>.verification-meta.json</code>.
-                            </div>
-                        </div>
-                        <div class="frame">
-                            <div class="frame-title">Verifier Checks</div>
-                            <div class="frame-body">On-device OCR → normalization rules → SHA-256 → GET the issuer URL for that hash → display status.</div>
+                        <div class="meta-item">
+                            <span class="meta-label">Retention</span>
+                            <span class="meta-value">${useCase.retention || 'Not specified'}</span>
                         </div>
                     </div>
-                    <details class="ops-details">
-                        <summary>Ops details</summary>
-                        <div class="ops-grid">
-                            <div class="meta-item">
-                                <span class="meta-label">Volume</span>
-                                <span class="meta-value">${useCase.volume}</span>
-                            </div>
-                            <div class="meta-item">
-                                <span class="meta-label">Retention Period</span>
-                                <span class="meta-value">${useCase.retention}</span>
-                            </div>
-                            <div class="meta-item">
-                                <span class="meta-label">Verifier Sees</span>
-                                <span class="meta-value">${useCase.dataVisibleAfterVerification}</span>
-                            </div>
-                        </div>
-                    </details>
-                    <div class="use-case-rationale">
-                        <div class="rationale-label">💡 Why OCR-to-Hash</div>
-                        ${useCase.rationale}
-                    </div>
-                    ${exampleLink}
+                    ${useCase.snippet ? `<p class="use-case-snippet">${useCase.snippet}</p>` : ''}
+                    <a class="view-details-btn" href="data/${useCase.slug}.html">View Details</a>
                 </div>
             `;
         }
 
-        // Open dialog with category details (loads data on demand)
+        // Open dialog with category details
         async function openDialog(categoryName) {
             const dialog = document.getElementById('categoryDialog');
             const title = document.getElementById('dialogTitle');
             const content = document.getElementById('dialogContent');
 
-            // Check if already cached
-            if (categoryDataCache[categoryName]) {
-                // If cached, show all at once
-                title.textContent = `${categoryName}`;
-                content.innerHTML = '';
-                dialog.showModal();
+            // Get use cases for this category from the index
+            const useCases = getUseCasesForCategory(categoryName);
 
-                const useCases = categoryDataCache[categoryName];
-                content.innerHTML = useCases.map(renderUseCaseItem).join('');
-                title.textContent = `${categoryName} (${useCases.length})`;
-                window.location.hash = encodeURIComponent(categoryName);
-                return;
-            }
-
-            // Open dialog immediately with empty content
-            title.textContent = `${categoryName}`;
-            content.innerHTML = '';
+            title.textContent = `${categoryName} (${useCases.length})`;
+            content.innerHTML = useCases.map(renderUseCaseCard).join('');
             dialog.showModal();
 
-            const category = categoriesSummary.categories.find(c => c.name === categoryName);
-            if (!category) return;
-
-            // Load and render use cases incrementally
-            const allUseCases = [];
-            let loadedCount = 0;
-
-            for (const fileId of category.files) {
-                const fileData = await loadUseCaseFile(fileId);
-                allUseCases.push(...fileData);
-
-                // Append each use case to the content as it loads
-                fileData.forEach(useCase => {
-                    const itemHTML = renderUseCaseItem(useCase);
-                    content.insertAdjacentHTML('beforeend', itemHTML);
-                    loadedCount++;
-                    // Update title with current count
-                    title.textContent = `${categoryName} (${loadedCount})`;
-                });
-            }
-
-            // Cache the complete result
-            categoryDataCache[categoryName] = allUseCases;
-
-            // Update URL hash with category name (URL encoded)
+            // Update URL hash
             window.location.hash = encodeURIComponent(categoryName);
         }
 
@@ -909,30 +873,35 @@
                 return;
             }
 
-            const terms = query.toLowerCase().split(/\s+/).filter(t => t.length > 2);
+            const terms = query.toLowerCase().split(/\s+/).filter(t => t.length > 1);
             if (terms.length === 0) {
                 document.getElementById('searchResults').classList.remove('active');
                 document.getElementById('categoriesGrid').style.display = 'grid';
                 return;
             }
 
-            // Find matching documents for each term
-            const documentScores = {};
-            terms.forEach(term => {
-                const matches = searchIndex.index[term] || [];
-                matches.forEach(fileId => {
-                    documentScores[fileId] = (documentScores[fileId] || 0) + 1;
-                });
-            });
+            // Search through use cases
+            const results = indexData.useCases
+                .map(uc => {
+                    // Score based on matches in title, category, tags, and snippet
+                    let score = 0;
+                    const searchText = [
+                        uc.title,
+                        uc.category,
+                        uc.snippet,
+                        ...(uc.tags || [])
+                    ].join(' ').toLowerCase();
 
-            // Sort by score (number of matching terms)
-            const results = Object.entries(documentScores)
-                .sort(([, a], [, b]) => b - a)
-                .slice(0, 20) // Show top 20 results
-                .map(([fileId]) => ({
-                    fileId,
-                    ...searchIndex.documents[fileId]
-                }));
+                    terms.forEach(term => {
+                        if (searchText.includes(term)) score++;
+                        if (uc.title.toLowerCase().includes(term)) score += 2; // Boost title matches
+                    });
+
+                    return { ...uc, score };
+                })
+                .filter(uc => uc.score > 0)
+                .sort((a, b) => b.score - a.score)
+                .slice(0, 20);
 
             // Render results
             renderSearchResults(results, query);
@@ -954,10 +923,10 @@
 
             results.forEach(result => {
                 html += `
-                    <div class="search-result-item" data-file-id="${result.fileId}">
+                    <div class="search-result-item" data-slug="${result.slug}">
                         <div class="search-result-title">${result.title}</div>
                         <div class="search-result-category">${result.category}</div>
-                        <div class="search-result-snippet">${result.snippet}...</div>
+                        <div class="search-result-snippet">${result.snippet || ''}...</div>
                     </div>
                 `;
             });
@@ -969,25 +938,10 @@
             // Add click handlers to search results
             resultsContainer.querySelectorAll('.search-result-item').forEach(item => {
                 item.addEventListener('click', async () => {
-                    const fileId = item.dataset.fileId;
-                    const useCase = await loadUseCaseFile(fileId);
-                    if (useCase && useCase.length > 0) {
-                        // Open the category dialog with this single use case
-                        openSingleUseCase(useCase[0]);
-                    }
+                    const slug = item.dataset.slug;
+                    viewUseCase(slug);
                 });
             });
-        }
-
-        // Open dialog with a single use case (from search)
-        function openSingleUseCase(useCase) {
-            const dialog = document.getElementById('categoryDialog');
-            const title = document.getElementById('dialogTitle');
-            const content = document.getElementById('dialogContent');
-
-            title.textContent = useCase.category;
-            content.innerHTML = renderUseCaseItem(useCase);
-            dialog.showModal();
         }
 
         function closeDialog() {
@@ -1007,11 +961,19 @@
         // Handle hash changes
         async function handleHashChange() {
             const hash = decodeURIComponent(window.location.hash.substring(1));
-            if (hash && categoriesSummary) {
-                const category = categoriesSummary.categories.find(c => c.name === hash);
-                if (category) {
-                    await openDialog(hash);
-                }
+            if (!hash || !indexData) return;
+
+            // Check if it's a use case link (uc:slug)
+            if (hash.startsWith('uc:')) {
+                const slug = hash.substring(3);
+                await viewUseCase(slug);
+                return;
+            }
+
+            // Otherwise, treat as category name
+            const category = indexData.categoriesList.find(c => c.name === hash);
+            if (category) {
+                await openDialog(hash);
             }
         }
 
@@ -1030,19 +992,16 @@
 
         // Initialize
         document.addEventListener('DOMContentLoaded', async () => {
-            // Load categories summary (one lightweight file)
-            await loadCategoriesSummary();
-
-            // Load search index
-            await loadSearchIndex();
+            // Load the index
+            await loadIndex();
 
             // Update hero title and page title
             document.getElementById('heroTitle').textContent = 'Use Cases';
-            document.title = `${categoriesSummary.totalUseCases} Use Cases - OCR Verification`;
+            document.title = `${indexData.totalUseCases} Use Cases - OCR Verification`;
 
             // Update stat counters
-            document.querySelector('[data-stat="useCases"]').dataset.target = categoriesSummary.totalUseCases;
-            document.querySelector('[data-stat="categories"]').dataset.target = categoriesSummary.totalCategories;
+            document.querySelector('[data-stat="useCases"]').dataset.target = indexData.totalUseCases;
+            document.querySelector('[data-stat="categories"]').dataset.target = indexData.totalCategories;
 
             // Animate counters
             document.querySelectorAll('.stat-number').forEach(animateCounter);

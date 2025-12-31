@@ -1,9 +1,11 @@
-# Affidavits and Sworn Statements
-
-**Category:** Financial & Legal Documents
-**Volume:** Small
-**Retention:** 10-30 years (legal proceedings)
-
+---
+title: "Affidavits and Sworn Statements"
+category: "Financial & Legal Documents"
+volume: "Small"
+retention: "10-30 years (legal proceedings)"
+slug: "affidavits-sworn-statements"
+tags: ["affidavits", "sworn", "statements", "financial", "legal", "documents"]
+---
 ## Data Verified
 
 Affiant name, affiant address, statement date, jurisdiction (venue), specific statements of fact, signature, notary name, notary commission number, notarization date, any exhibits or attachments referenced.

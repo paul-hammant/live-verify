@@ -1,9 +1,11 @@
-# Registrar/residency status letters
-
-**Category:** Professional & Educational Qualifications
-**Volume:** Medium
-**Retention:** 1-4 years
-
+---
+title: "Registrar/residency status letters"
+category: "Professional & Educational Qualifications"
+volume: "Medium"
+retention: "1-4 years"
+slug: "registrar-residency-status-letters"
+tags: ["registrar", "residency", "status", "letters", "professional", "educational", "qualifications"]
+---
 ## Data Verified
 
 Student name, status, term

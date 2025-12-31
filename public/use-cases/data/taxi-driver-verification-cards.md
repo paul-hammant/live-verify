@@ -1,9 +1,11 @@
-# Private hire/taxi driver verification cards (female safety)
-
-**Category:** Travel & Hospitality
-**Volume:** Large
-**Retention:** License term + 1-3 years (incidents)
-
+---
+title: "Private hire/taxi driver verification cards (female safety)"
+category: "Travel & Hospitality"
+volume: "Large"
+retention: "License term + 1-3 years (incidents)"
+slug: "taxi-driver-verification-cards"
+tags: ["taxi", "driver", "verification", "cards", "travel", "hospitality"]
+---
 ## Data Verified
 
 Driver name, photo, license number, vehicle details, licensing authority

@@ -1,9 +1,11 @@
-# Special event permits (festivals, concerts, parades)
-
-**Category:** Event & Temporary Use Permits
-**Volume:** Medium
-**Retention:** Event + 3-7 years (liability)
-
+---
+title: "Special event permits (festivals, concerts, parades)"
+category: "Event & Temporary Use Permits"
+volume: "Medium"
+retention: "Event + 3-7 years (liability)"
+slug: "special-event-permits"
+tags: ["special", "event", "permits", "temporary"]
+---
 ## Data Verified
 
 Organizer, event details, location, attendance, alcohol service, police/fire/EMS

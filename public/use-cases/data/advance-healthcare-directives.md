@@ -1,9 +1,11 @@
-# Advance Healthcare Directives
-
-**Category:** Healthcare / Notary Services
-**Volume:** Small
-**Retention:** Permanent (end-of-life care)
-
+---
+title: "Advance Healthcare Directives"
+category: "Healthcare / Notary Services"
+volume: "Small"
+retention: "Permanent (end-of-life care)"
+slug: "advance-healthcare-directives"
+tags: ["advance", "healthcare", "directives", "notary", "services"]
+---
 ## Data Verified
 
 Patient/principal name, date of birth, healthcare agent (proxy) name and contact information, alternate agents, specific medical treatment preferences, life-sustaining treatment wishes, organ donation preferences, witness names and signatures, notary name and commission number (where required), directive date, any revocations or amendments.

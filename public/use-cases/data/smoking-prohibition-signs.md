@@ -1,9 +1,11 @@
-# Smoking/vaping prohibition and designated area signs
-
-**Category:** Mandatory Workplace Postings
-**Volume:** Very Large
-**Retention:** Current policy
-
+---
+title: "Smoking/vaping prohibition and designated area signs"
+category: "Mandatory Workplace Postings"
+volume: "Very Large"
+retention: "Current policy"
+slug: "smoking-prohibition-signs"
+tags: ["smoking", "prohibition", "signs", "mandatory", "workplace", "postings"]
+---
 ## Data Verified
 
 None (regulatory sign), smoking policy, designated areas

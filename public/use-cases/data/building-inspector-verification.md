@@ -1,9 +1,11 @@
-# Building/safety inspector verification (home/business)
-
-**Category:** Personal Safety & Service Verification
-**Volume:** Medium
-**Retention:** Inspection + 3-7 years (compliance)
-
+---
+title: "Building/safety inspector verification (home/business)"
+category: "Personal Safety & Service Verification"
+volume: "Medium"
+retention: "Inspection + 3-7 years (compliance)"
+slug: "building-inspector-verification"
+tags: ["building", "inspector", "verification", "personal", "safety", "service"]
+---
 ## Data Verified
 
 Inspector name, photo, badge number, jurisdiction, inspection authority

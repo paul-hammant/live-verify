@@ -1,9 +1,11 @@
-# Safety certifications (electrical, fire, structural, chemical)
-
-**Category:** Product Certifications & Compliance
-**Volume:** Small
-**Retention:** 7-30 years (product lifecycle)
-
+---
+title: "Safety certifications (electrical, fire, structural, chemical)"
+category: "Product Certifications & Compliance"
+volume: "Small"
+retention: "7-30 years (product lifecycle)"
+slug: "safety-certifications"
+tags: ["safety", "certifications", "product", "compliance"]
+---
 ## Data Verified
 
 Manufacturer name, facility location, inspector ID, certification body, certificate number, standards met (UL, NFPA, ASTM, etc.), issue date, expiration date

@@ -1,9 +1,11 @@
-# Asbestos and hazmat inspection reports
-
-**Category:** Real Estate & Property
-**Volume:** Very Small
-**Retention:** 20-30 years (building lifetime)
-
+---
+title: "Asbestos and hazmat inspection reports"
+category: "Real Estate & Property"
+volume: "Very Small"
+retention: "20-30 years (building lifetime)"
+slug: "asbestos-hazmat-inspection"
+tags: ["asbestos", "hazmat", "inspection", "real", "estate", "property"]
+---
 ## Data Verified
 
 Property owner, inspector name/license, property address, findings, abatement recommendations

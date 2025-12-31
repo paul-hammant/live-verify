@@ -1,9 +1,11 @@
-# Accreditation of educational institutions
-
-**Category:** Professional & Educational Qualifications
-**Volume:** Tiny
-**Retention:** Permanent (institutional status)
-
+---
+title: "Accreditation of educational institutions"
+category: "Professional & Educational Qualifications"
+volume: "Tiny"
+retention: "Permanent (institutional status)"
+slug: "educational-institution-accreditation"
+tags: ["educational", "institution", "accreditation", "professional", "qualifications"]
+---
 ## Data Verified
 
 Institution name, accreditor name, accreditation status, accreditation date, reaccreditation date, programs accredited

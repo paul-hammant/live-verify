@@ -1,9 +1,11 @@
-# National / state / province ID cards
-
-**Category:** Identity & Access Verification
-**Volume:** Large (daily across hospitality, events, retail, transport)
-**Retention:** Short-term (<48h) for front-line checks, long-term audit logs retained by institutions
-
+---
+title: "National / state / province ID cards"
+category: "Identity & Access Verification"
+volume: "Large (daily across hospitality, events, retail, transport)"
+retention: "Short-term (<48h) for front-line checks, long-term audit logs retained by institutions"
+slug: "national-state-province-id-cards"
+tags: ["national", "state", "province", "cards", "identity", "access", "verification"]
+---
 ## Data Verified
 
 ID card number, issuing authority domain (vfy: or verify:), expiration date, hologram/serial integrity statements

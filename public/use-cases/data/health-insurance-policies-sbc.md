@@ -1,9 +1,11 @@
-# Health insurance policies and summary of benefits (SBC)
-
-**Category:** Personal Lines Insurance
-**Volume:** Medium
-**Retention:** Policy term + 7 years
-
+---
+title: "Health insurance policies and summary of benefits (SBC)"
+category: "Personal Lines Insurance"
+volume: "Medium"
+retention: "Policy term + 7 years"
+slug: "health-insurance-policies-sbc"
+tags: ["health", "insurance", "policies", "personal", "lines"]
+---
 ## Data Verified
 
 Policyholder name, dependents, coverage details, deductibles, copays, network providers

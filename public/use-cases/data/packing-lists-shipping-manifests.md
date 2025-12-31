@@ -1,9 +1,11 @@
-# Packing lists and shipping manifests
-
-**Category:** Logistics & Transportation
-**Volume:** Large
-**Retention:** 7-10 years (customs/legal)
-
+---
+title: "Packing lists and shipping manifests"
+category: "Logistics & Transportation"
+volume: "Large"
+retention: "7-10 years (customs/legal)"
+slug: "packing-lists-shipping-manifests"
+tags: ["packing", "lists", "shipping", "manifests", "logistics", "transportation"]
+---
 ## Data Verified
 
 Shipper, consignee, detailed cargo list, quantities, weights, dimensions

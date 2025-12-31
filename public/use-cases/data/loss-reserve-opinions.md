@@ -1,9 +1,11 @@
-# Loss reserve opinions (property/casualty insurance)
-
-**Category:** Actuarial & Insurance Mathematics
-**Volume:** Very Small
-**Retention:** 7-15 years (claims settlement)
-
+---
+title: "Loss reserve opinions (property/casualty insurance)"
+category: "Actuarial & Insurance Mathematics"
+volume: "Very Small"
+retention: "7-15 years (claims settlement)"
+slug: "loss-reserve-opinions"
+tags: ["loss", "reserve", "opinions", "actuarial", "insurance", "mathematics"]
+---
 ## Data Verified
 
 Actuary name, insurance company, reserve ranges, loss development assumptions, actuarial opinion

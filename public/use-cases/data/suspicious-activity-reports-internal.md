@@ -1,9 +1,11 @@
-# Suspicious Activity Reports (SARs) - internal documentation
-
-**Category:** Banking & Financial Services
-**Volume:** Very Small
-**Retention:** 5-7 years (regulatory requirement)
-
+---
+title: "Suspicious Activity Reports (SARs) - internal documentation"
+category: "Banking & Financial Services"
+volume: "Very Small"
+retention: "5-7 years (regulatory requirement)"
+slug: "suspicious-activity-reports-internal"
+tags: ["suspicious", "activity", "reports", "internal", "banking", "financial", "services"]
+---
 ## Data Verified
 
 Subject names, transaction details, suspicion basis, filing date, compliance officer

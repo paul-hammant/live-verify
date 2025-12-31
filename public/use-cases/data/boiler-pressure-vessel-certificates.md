@@ -1,9 +1,11 @@
-# Boiler and pressure vessel inspection certificates
-
-**Category:** Safety Inspection Certificates
-**Volume:** Medium
-**Retention:** 1-3 years (inspection cycle)
-
+---
+title: "Boiler and pressure vessel inspection certificates"
+category: "Safety Inspection Certificates"
+volume: "Medium"
+retention: "1-3 years (inspection cycle)"
+slug: "boiler-pressure-vessel-certificates"
+tags: ["boiler", "pressure", "vessel", "certificates", "safety", "inspection"]
+---
 ## Data Verified
 
 Facility address, boiler ID, inspector name/license, pressure rating, inspection date

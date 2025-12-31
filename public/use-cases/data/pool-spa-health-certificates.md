@@ -1,9 +1,11 @@
-# Pool and spa health inspection certificates
-
-**Category:** Safety Inspection Certificates
-**Volume:** Large
-**Retention:** 1 year (seasonal/annual)
-
+---
+title: "Pool and spa health inspection certificates"
+category: "Safety Inspection Certificates"
+volume: "Large"
+retention: "1 year (seasonal/annual)"
+slug: "pool-spa-health-certificates"
+tags: ["pool", "health", "certificates", "safety", "inspection"]
+---
 ## Data Verified
 
 Facility name, pool ID, health inspector, inspection date, chemical/safety compliance

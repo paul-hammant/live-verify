@@ -1,9 +1,11 @@
-# Currency Transaction Reports (CTRs) - customer copies
-
-**Category:** Banking & Financial Services
-**Volume:** Small
-**Retention:** 5 years (IRS requirement)
-
+---
+title: "Currency Transaction Reports (CTRs) - customer copies"
+category: "Banking & Financial Services"
+volume: "Small"
+retention: "5 years (IRS requirement)"
+slug: "currency-transaction-reports"
+tags: ["currency", "transaction", "reports", "banking", "financial", "services"]
+---
 ## Data Verified
 
 Customer name, transaction amount, transaction date, financial institution name, CTR filing confirmation

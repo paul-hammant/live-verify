@@ -1,9 +1,11 @@
-# Health insurance Explanation of Benefits (EOB)
-
-**Category:** Personal Lines Insurance
-**Volume:** Large
-**Retention:** 7-10 years (tax/audit)
-
+---
+title: "Health insurance Explanation of Benefits (EOB)"
+category: "Personal Lines Insurance"
+volume: "Large"
+retention: "7-10 years (tax/audit)"
+slug: "health-insurance-eobs"
+tags: ["health", "insurance", "eobs", "personal", "lines"]
+---
 ## Data Verified
 
 Patient name, provider name, services rendered, charges, insurance payment, patient responsibility

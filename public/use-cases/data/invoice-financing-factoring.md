@@ -1,9 +1,11 @@
-# Invoice financing/factoring confirmations
-
-**Category:** Banking & Financial Services
-**Volume:** Small
-**Retention:** Invoice term + 7-10 years
-
+---
+title: "Invoice financing/factoring confirmations"
+category: "Banking & Financial Services"
+volume: "Small"
+retention: "Invoice term + 7-10 years"
+slug: "invoice-financing-factoring"
+tags: ["invoice", "financing", "factoring", "banking", "financial", "services"]
+---
 ## Data Verified
 
 Seller, buyer, invoice amount, advance rate, fees, factor

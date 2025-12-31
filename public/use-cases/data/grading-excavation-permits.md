@@ -1,9 +1,11 @@
-# Grading and excavation permits
-
-**Category:** Construction & Property Permits
-**Volume:** Small
-**Retention:** Permanent (property records)
-
+---
+title: "Grading and excavation permits"
+category: "Construction & Property Permits"
+volume: "Small"
+retention: "Permanent (property records)"
+slug: "grading-excavation-permits"
+tags: ["grading", "excavation", "permits", "construction", "property"]
+---
 ## Data Verified
 
 Permit holder, property address, grading scope, erosion control plan

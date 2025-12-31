@@ -1,9 +1,11 @@
-# Mechanical/HVAC permits
-
-**Category:** Construction & Property Permits
-**Volume:** Medium
-**Retention:** Permanent (building records)
-
+---
+title: "Mechanical/HVAC permits"
+category: "Construction & Property Permits"
+volume: "Medium"
+retention: "Permanent (building records)"
+slug: "mechanical-hvac-permits"
+tags: ["mechanical", "hvac", "permits", "construction", "property"]
+---
 ## Data Verified
 
 HVAC contractor, property address, equipment specs, energy compliance

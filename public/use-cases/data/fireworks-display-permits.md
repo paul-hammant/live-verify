@@ -1,9 +1,11 @@
-# Fireworks display permits
-
-**Category:** Event & Temporary Use Permits
-**Volume:** Small
-**Retention:** Event + 7 years (liability)
-
+---
+title: "Fireworks display permits"
+category: "Event & Temporary Use Permits"
+volume: "Small"
+retention: "Event + 7 years (liability)"
+slug: "fireworks-display-permits"
+tags: ["fireworks", "display", "permits", "event", "temporary"]
+---
 ## Data Verified
 
 Pyrotechnician name, license, event location, safety plan, insurance, fire dept

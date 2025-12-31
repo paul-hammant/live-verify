@@ -1,9 +1,11 @@
-# Auto transport damage inspection reports
-
-**Category:** Logistics & Transportation
-**Volume:** Medium
-**Retention:** Transport + 7 years
-
+---
+title: "Auto transport damage inspection reports"
+category: "Logistics & Transportation"
+volume: "Medium"
+retention: "Transport + 7 years"
+slug: "auto-transport-damage-reports"
+tags: ["auto", "transport", "damage", "reports", "logistics", "transportation"]
+---
 ## Data Verified
 
 Carrier, vehicle VIN, pre-transport condition, damage notation, photos

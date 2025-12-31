@@ -1,9 +1,11 @@
-# Hazardous waste generator permits
-
-**Category:** Environmental & Natural Resource Permits
-**Volume:** Small
-**Retention:** Permit term + 30 years (RCRA)
-
+---
+title: "Hazardous waste generator permits"
+category: "Environmental & Natural Resource Permits"
+volume: "Small"
+retention: "Permit term + 30 years (RCRA)"
+slug: "hazardous-waste-generator-permits"
+tags: ["hazardous", "waste", "generator", "permits", "environmental", "natural", "resource"]
+---
 ## Data Verified
 
 Generator name, EPA ID number, waste types, quantities, disposal, EPA/state

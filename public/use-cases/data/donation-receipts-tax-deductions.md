@@ -1,9 +1,11 @@
-# Donation receipts for tax deductions
-
-**Category:** Charitable & Non-Profit
-**Volume:** Medium
-**Retention:** 7-10 years (tax audit)
-
+---
+title: "Donation receipts for tax deductions"
+category: "Charitable & Non-Profit"
+volume: "Medium"
+retention: "7-10 years (tax audit)"
+slug: "donation-receipts-tax-deductions"
+tags: ["donation", "receipts", "deductions", "charitable", "non-profit"]
+---
 ## Data Verified
 
 Donor name, address, donation amount, tax ID, charity name

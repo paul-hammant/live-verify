@@ -1,9 +1,11 @@
-# Tour guide verification (solo travelers)
-
-**Category:** Personal Safety & Service Verification
-**Volume:** Large
-**Retention:** Tour + 1-3 years
-
+---
+title: "Tour guide verification (solo travelers)"
+category: "Personal Safety & Service Verification"
+volume: "Large"
+retention: "Tour + 1-3 years"
+slug: "tour-guide-verification"
+tags: ["tour", "guide", "verification", "personal", "safety", "service"]
+---
 ## Data Verified
 
 Guide name, photo, license number, tour company, language skills

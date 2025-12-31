@@ -1,9 +1,11 @@
-# Pesticide application logs
-
-**Category:** Agriculture & Food
-**Volume:** Small
-**Retention:** 5-10 years (environmental compliance)
-
+---
+title: "Pesticide application logs"
+category: "Agriculture & Food"
+volume: "Small"
+retention: "5-10 years (environmental compliance)"
+slug: "pesticide-application-logs"
+tags: ["pesticide", "application", "logs", "agriculture", "food"]
+---
 ## Data Verified
 
 Applicator name/license, farm owner, field location, chemicals used

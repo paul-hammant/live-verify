@@ -1,9 +1,11 @@
-# SAFE agreements (Simple Agreement for Future Equity)
-
-**Category:** Banking & Financial Services
-**Volume:** Very Small
-**Retention:** Permanent (convertible security)
-
+---
+title: "SAFE agreements (Simple Agreement for Future Equity)"
+category: "Banking & Financial Services"
+volume: "Very Small"
+retention: "Permanent (convertible security)"
+slug: "safe-agreements"
+tags: ["safe", "agreements", "banking", "financial", "services"]
+---
 ## Data Verified
 
 Investor name, company, investment amount, valuation cap, discount

@@ -1,9 +1,11 @@
-# Agricultural crop-hail insurance
-
-**Category:** Insurance & Risk Management
-**Volume:** Small
-**Retention:** Growing season + 7 years
-
+---
+title: "Agricultural crop-hail insurance"
+category: "Insurance & Risk Management"
+volume: "Small"
+retention: "Growing season + 7 years"
+slug: "crop-hail-insurance"
+tags: ["crop", "hail", "insurance", "risk", "management"]
+---
 ## Data Verified
 
 Farm owner, crop type, acreage, coverage per acre, deductible

@@ -1,9 +1,11 @@
-# Commutation agreements (early treaty termination)
-
-**Category:** Insurance & Risk Management
-**Volume:** Tiny
-**Retention:** Permanent (treaty closure)
-
+---
+title: "Commutation agreements (early treaty termination)"
+category: "Insurance & Risk Management"
+volume: "Tiny"
+retention: "Permanent (treaty closure)"
+slug: "commutation-agreements"
+tags: ["commutation", "agreements", "insurance", "risk", "management"]
+---
 ## Data Verified
 
 Ceding company, reinsurer, commutation payment, reserves released, treaty terms

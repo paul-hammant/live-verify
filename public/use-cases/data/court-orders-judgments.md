@@ -1,9 +1,11 @@
-# Court Orders and Judgments
-
-**Category:** Government & Civic Documents
-**Volume:** Small
-**Retention:** Permanent (legal precedent, enforcement)
-
+---
+title: "Court Orders and Judgments"
+category: "Government & Civic Documents"
+volume: "Small"
+retention: "Permanent (legal precedent, enforcement)"
+slug: "court-orders-judgments"
+tags: ["court", "orders", "judgments", "government", "civic", "documents"]
+---
 ## Data Verified
 
 Case number, court name and jurisdiction, party names (plaintiff/defendant, petitioner/respondent), judge name, order/judgment type, date issued, specific terms and directives, filing stamps, clerk certification.

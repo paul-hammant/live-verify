@@ -1,9 +1,11 @@
-# Claims notifications to reinsurers (large loss notices)
-
-**Category:** Insurance & Risk Management
-**Volume:** Small
-**Retention:** Claim lifetime + 10 years
-
+---
+title: "Claims notifications to reinsurers (large loss notices)"
+category: "Insurance & Risk Management"
+volume: "Small"
+retention: "Claim lifetime + 10 years"
+slug: "claims-notifications-reinsurers"
+tags: ["claims", "notifications", "reinsurers", "insurance", "risk", "management"]
+---
 ## Data Verified
 
 Ceding company, reinsurer, claim details, estimated ultimate loss, treaty reference

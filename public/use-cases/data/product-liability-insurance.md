@@ -1,9 +1,11 @@
-# Product liability insurance policies
-
-**Category:** Commercial Lines Insurance
-**Volume:** Small
-**Retention:** Policy term + 20-30 years (claims)
-
+---
+title: "Product liability insurance policies"
+category: "Commercial Lines Insurance"
+volume: "Small"
+retention: "Policy term + 20-30 years (claims)"
+slug: "product-liability-insurance"
+tags: ["product", "liability", "insurance", "commercial", "lines"]
+---
 ## Data Verified
 
 Manufacturer name, products covered, coverage limits, retroactive date

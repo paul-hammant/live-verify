@@ -1,9 +1,11 @@
-# Health inspection grades and scores (NYC A/B/C, LA county)
-
-**Category:** Food & Beverage Permits
-**Volume:** Very Large
-**Retention:** 3 years (inspection history)
-
+---
+title: "Health inspection grades and scores (NYC A/B/C, LA county)"
+category: "Food & Beverage Permits"
+volume: "Very Large"
+retention: "3 years (inspection history)"
+slug: "health-inspection-grades"
+tags: ["health", "inspection", "grades", "food", "beverage", "permits"]
+---
 ## Data Verified
 
 Restaurant name, inspection date, violations, grade/score, health department

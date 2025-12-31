@@ -1,9 +1,11 @@
-# Apprenticeship and internship completion
-
-**Category:** Professional & Educational Qualifications
-**Volume:** Very Small
-**Retention:** 7-10 years (employment verification)
-
+---
+title: "Apprenticeship and internship completion"
+category: "Professional & Educational Qualifications"
+volume: "Very Small"
+retention: "7-10 years (employment verification)"
+slug: "apprenticeship-internship-completion"
+tags: ["apprenticeship", "internship", "completion", "professional", "educational", "qualifications"]
+---
 ## Data Verified
 
 Apprentice name, sponsor organization, start date, completion date, supervisor name, skill area

@@ -1,9 +1,11 @@
-# Postal/courier worker verification (suspicious packages)
-
-**Category:** Personal Safety & Service Verification
-**Volume:** Very Large
-**Retention:** Delivery + 30 days
-
+---
+title: "Postal/courier worker verification (suspicious packages)"
+category: "Personal Safety & Service Verification"
+volume: "Very Large"
+retention: "Delivery + 30 days"
+slug: "postal-courier-verification"
+tags: ["postal", "courier", "verification", "personal", "safety", "service"]
+---
 ## Data Verified
 
 Worker name, photo, employee ID, postal service, delivery route

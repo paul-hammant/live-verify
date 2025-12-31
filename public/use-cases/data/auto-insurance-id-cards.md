@@ -1,9 +1,11 @@
-# Auto insurance ID cards (proof of insurance)
-
-**Category:** Personal Lines Insurance
-**Volume:** Large
-**Retention:** 6-12 months (card validity)
-
+---
+title: "Auto insurance ID cards (proof of insurance)"
+category: "Personal Lines Insurance"
+volume: "Large"
+retention: "6-12 months (card validity)"
+slug: "auto-insurance-id-cards"
+tags: ["auto", "insurance", "cards", "personal", "lines"]
+---
 ## Data Verified
 
 Policyholder name, vehicle VIN, policy number, coverage dates, insurer name

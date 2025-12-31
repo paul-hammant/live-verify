@@ -1,9 +1,11 @@
-# Locksmith licenses
-
-**Category:** Professional & Occupational Licenses
-**Volume:** Small
-**Retention:** 1-3 years (license term)
-
+---
+title: "Locksmith licenses"
+category: "Professional & Occupational Licenses"
+volume: "Small"
+retention: "1-3 years (license term)"
+slug: "locksmith-licenses"
+tags: ["locksmith", "licenses", "professional", "occupational"]
+---
 ## Data Verified
 
 Licensee name, business name, license number, bonding, issuing authority

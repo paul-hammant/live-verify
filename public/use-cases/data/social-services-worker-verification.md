@@ -1,9 +1,11 @@
-# Social services worker verification (home visits)
-
-**Category:** Personal Safety & Service Verification
-**Volume:** Medium
-**Retention:** Visit + 3-7 years (case records)
-
+---
+title: "Social services worker verification (home visits)"
+category: "Personal Safety & Service Verification"
+volume: "Medium"
+retention: "Visit + 3-7 years (case records)"
+slug: "social-services-worker-verification"
+tags: ["social", "services", "worker", "verification", "personal", "safety", "service"]
+---
 ## Data Verified
 
 Worker name, photo, agency ID, department, supervisor contact

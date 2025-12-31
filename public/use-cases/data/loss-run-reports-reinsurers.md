@@ -1,9 +1,11 @@
-# Loss run reports to reinsurers
-
-**Category:** Insurance & Risk Management
-**Volume:** Small
-**Retention:** Treaty term + 10 years
-
+---
+title: "Loss run reports to reinsurers"
+category: "Insurance & Risk Management"
+volume: "Small"
+retention: "Treaty term + 10 years"
+slug: "loss-run-reports-reinsurers"
+tags: ["loss", "reports", "reinsurers", "insurance", "risk", "management"]
+---
 ## Data Verified
 
 Ceding company, reinsurer, individual claim details, reserves, payments, development

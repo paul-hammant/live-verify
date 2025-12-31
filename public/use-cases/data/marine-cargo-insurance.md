@@ -1,9 +1,11 @@
-# Marine cargo insurance certificates
-
-**Category:** Insurance & Risk Management
-**Volume:** Small
-**Retention:** Transit period + 7-10 years
-
+---
+title: "Marine cargo insurance certificates"
+category: "Insurance & Risk Management"
+volume: "Small"
+retention: "Transit period + 7-10 years"
+slug: "marine-cargo-insurance"
+tags: ["marine", "cargo", "insurance", "risk", "management"]
+---
 ## Data Verified
 
 Shipper, consignee, cargo description, value, voyage details, insurer

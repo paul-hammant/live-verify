@@ -1,9 +1,11 @@
-# Travel insurance claim forms and settlement letters
-
-**Category:** Travel & Hospitality
-**Volume:** Medium
-**Retention:** Claim + 7-10 years
-
+---
+title: "Travel insurance claim forms and settlement letters"
+category: "Travel & Hospitality"
+volume: "Medium"
+retention: "Claim + 7-10 years"
+slug: "travel-insurance-claims"
+tags: ["travel", "insurance", "claims", "hospitality"]
+---
 ## Data Verified
 
 Claimant name, policy number, claim details, settlement amount, insurer

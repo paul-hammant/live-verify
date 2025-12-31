@@ -1,9 +1,11 @@
-# Hazard Communication (HazCom/GHS) and chemical safety
-
-**Category:** Mandatory Workplace Postings
-**Volume:** Medium
-**Retention:** Current SDS version
-
+---
+title: "Hazard Communication (HazCom/GHS) and chemical safety"
+category: "Mandatory Workplace Postings"
+volume: "Medium"
+retention: "Current SDS version"
+slug: "hazcom-chemical-safety-postings"
+tags: ["hazcom", "chemical", "safety", "postings", "mandatory", "workplace"]
+---
 ## Data Verified
 
 Workplace chemical inventory, safety data sheets, emergency contacts

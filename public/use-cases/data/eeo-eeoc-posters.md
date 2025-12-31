@@ -1,9 +1,11 @@
-# Equal Employment Opportunity (EEO/EEOC) posters
-
-**Category:** Mandatory Workplace Postings
-**Volume:** Very Large
-**Retention:** Current version
-
+---
+title: "Equal Employment Opportunity (EEO/EEOC) posters"
+category: "Mandatory Workplace Postings"
+volume: "Very Large"
+retention: "Current version"
+slug: "eeo-eeoc-posters"
+tags: ["eeoc", "posters", "mandatory", "workplace", "postings"]
+---
 ## Data Verified
 
 None (informational), EEOC contact, discrimination complaint process

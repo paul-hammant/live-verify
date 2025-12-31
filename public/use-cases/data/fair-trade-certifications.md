@@ -1,9 +1,11 @@
-# Fair trade and ethical sourcing certifications
-
-**Category:** Product Certifications & Compliance
-**Volume:** Very Small
-**Retention:** 3-7 years (audit cycles)
-
+---
+title: "Fair trade and ethical sourcing certifications"
+category: "Product Certifications & Compliance"
+volume: "Very Small"
+retention: "3-7 years (audit cycles)"
+slug: "fair-trade-certifications"
+tags: ["fair", "trade", "certifications", "product", "compliance"]
+---
 ## Data Verified
 
 Producer cooperative name, farmer groups, certification body, product type, certification date, audit date

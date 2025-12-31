@@ -1,9 +1,11 @@
-# Escrow instructions and closing documents
-
-**Category:** Real Estate & Property
-**Volume:** Very Small
-**Retention:** 7-10 years (transaction disputes)
-
+---
+title: "Escrow instructions and closing documents"
+category: "Real Estate & Property"
+volume: "Very Small"
+retention: "7-10 years (transaction disputes)"
+slug: "escrow-instructions-closing"
+tags: ["escrow", "instructions", "closing", "real", "estate", "property"]
+---
 ## Data Verified
 
 Buyer/seller names, escrow officer, lender, property address, instructions

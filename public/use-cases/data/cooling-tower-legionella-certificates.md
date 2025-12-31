@@ -1,9 +1,11 @@
-# Cooling tower and Legionella testing certificates
-
-**Category:** Safety Inspection Certificates
-**Volume:** Small
-**Retention:** 1 year (annual testing)
-
+---
+title: "Cooling tower and Legionella testing certificates"
+category: "Safety Inspection Certificates"
+volume: "Small"
+retention: "1 year (annual testing)"
+slug: "cooling-tower-legionella-certificates"
+tags: ["cooling", "tower", "legionella", "certificates", "safety", "inspection"]
+---
 ## Data Verified
 
 Building address, tower ID, testing company, test date, Legionella results

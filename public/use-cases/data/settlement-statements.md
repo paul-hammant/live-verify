@@ -1,9 +1,11 @@
-# Settlement statements (HUD-1, ALTA)
-
-**Category:** Real Estate & Property
-**Volume:** Very Small
-**Retention:** 7-10 years (tax/legal)
-
+---
+title: "Settlement statements (HUD-1, ALTA)"
+category: "Real Estate & Property"
+volume: "Very Small"
+retention: "7-10 years (tax/legal)"
+slug: "settlement-statements"
+tags: ["settlement", "statements", "real", "estate", "property"]
+---
 ## Data Verified
 
 Buyer/seller names, addresses, lender, settlement agent, transaction amounts

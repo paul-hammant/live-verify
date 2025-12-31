@@ -1,9 +1,11 @@
-# HVAC and ventilation inspection certificates
-
-**Category:** Safety Inspection Certificates
-**Volume:** Medium
-**Retention:** 1-3 years (inspection cycle)
-
+---
+title: "HVAC and ventilation inspection certificates"
+category: "Safety Inspection Certificates"
+volume: "Medium"
+retention: "1-3 years (inspection cycle)"
+slug: "hvac-ventilation-inspection-certificates"
+tags: ["hvac", "ventilation", "inspection", "certificates", "safety"]
+---
 ## Data Verified
 
 Building address, HVAC system details, inspector, air quality test results

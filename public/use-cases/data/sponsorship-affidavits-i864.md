@@ -1,9 +1,11 @@
-# Sponsorship affidavits (I-864)
-
-**Category:** Immigration & Visa Documents
-**Volume:** Medium
-**Retention:** Until citizenship or 40 qualifying work quarters
-
+---
+title: "Sponsorship affidavits (I-864)"
+category: "Immigration & Visa Documents"
+volume: "Medium"
+retention: "Until citizenship or 40 qualifying work quarters"
+slug: "sponsorship-affidavits-i864"
+tags: ["sponsorship", "affidavits", "i864", "immigration", "visa", "documents"]
+---
 ## Data Verified
 
 Sponsor name/signature, beneficiary name, income documentation, household size

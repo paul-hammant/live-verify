@@ -1,9 +1,11 @@
-# Poll worker appointment and training completion
-
-**Category:** Immigration & Visa Documents
-**Volume:** Medium
-**Retention:** Election cycle + 2-4 years
-
+---
+title: "Poll worker appointment and training completion"
+category: "Immigration & Visa Documents"
+volume: "Medium"
+retention: "Election cycle + 2-4 years"
+slug: "poll-worker-training"
+tags: ["poll", "worker", "training", "immigration", "visa", "documents"]
+---
 ## Data Verified
 
 Worker name, training completion date, precinct assignment, certification number, election office jurisdiction

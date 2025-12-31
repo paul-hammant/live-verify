@@ -1,9 +1,11 @@
-# Airline ancillary fee receipts (baggage, seat selection)
-
-**Category:** Travel & Hospitality
-**Volume:** Very Large
-**Retention:** Flight + 1-3 years
-
+---
+title: "Airline ancillary fee receipts (baggage, seat selection)"
+category: "Travel & Hospitality"
+volume: "Very Large"
+retention: "Flight + 1-3 years"
+slug: "airline-ancillary-fee-receipts"
+tags: ["airline", "ancillary", "receipts", "travel", "hospitality"]
+---
 ## Data Verified
 
 Passenger name, flight, ancillary service, fee amount, payment confirmation

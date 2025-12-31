@@ -1,9 +1,11 @@
-# Dangerous goods declarations for air cargo (DGR)
-
-**Category:** Logistics & Transportation
-**Volume:** Small
-**Retention:** 7-30 years (safety/liability)
-
+---
+title: "Dangerous goods declarations for air cargo (DGR)"
+category: "Logistics & Transportation"
+volume: "Small"
+retention: "7-30 years (safety/liability)"
+slug: "dangerous-goods-declarations-air"
+tags: ["dangerous", "goods", "declarations", "logistics", "transportation"]
+---
 ## Data Verified
 
 Shipper, airline, consignee, hazmat classification, packing group, emergency contact

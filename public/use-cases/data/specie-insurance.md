@@ -1,9 +1,11 @@
-# Specie insurance (fine art, jewels, precious metals in transit)
-
-**Category:** Insurance & Risk Management
-**Volume:** Small
-**Retention:** Transit + 7-10 years
-
+---
+title: "Specie insurance (fine art, jewels, precious metals in transit)"
+category: "Insurance & Risk Management"
+volume: "Small"
+retention: "Transit + 7-10 years"
+slug: "specie-insurance"
+tags: ["specie", "insurance", "risk", "management"]
+---
 ## Data Verified
 
 Owner, goods description, value, route, security measures, insurer

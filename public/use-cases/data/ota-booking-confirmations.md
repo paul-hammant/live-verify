@@ -1,9 +1,11 @@
-# Online travel agency (OTA) booking confirmations
-
-**Category:** Travel & Hospitality
-**Volume:** Very Large
-**Retention:** Travel + 1-3 years
-
+---
+title: "Online travel agency (OTA) booking confirmations"
+category: "Travel & Hospitality"
+volume: "Very Large"
+retention: "Travel + 1-3 years"
+slug: "ota-booking-confirmations"
+tags: ["booking", "confirmations", "travel", "hospitality"]
+---
 ## Data Verified
 
 Traveler name, booking details, OTA booking reference, supplier confirmation

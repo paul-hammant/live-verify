@@ -1,9 +1,11 @@
-# KYC proof of address documents (utility/phone/credit card bills)
-
-**Category:** Banking & Financial Services
-**Volume:** Large
-**Retention:** 5-10 years post-relationship
-
+---
+title: "KYC proof of address documents (utility/phone/credit card bills)"
+category: "Banking & Financial Services"
+volume: "Large"
+retention: "5-10 years post-relationship"
+slug: "kyc-proof-of-address"
+tags: ["proof", "address", "banking", "financial", "services"]
+---
 ## Data Verified
 
 Customer name, address, account number, billing period, service provider name

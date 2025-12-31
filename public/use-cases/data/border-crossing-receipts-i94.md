@@ -1,9 +1,11 @@
-# Border crossing receipts (I-94, entry/exit records)
-
-**Category:** Immigration & Visa Documents
-**Volume:** Large
-**Retention:** Travel + 5-10 years (immigration)
-
+---
+title: "Border crossing receipts (I-94, entry/exit records)"
+category: "Immigration & Visa Documents"
+volume: "Large"
+retention: "Travel + 5-10 years (immigration)"
+slug: "border-crossing-receipts-i94"
+tags: ["border", "crossing", "receipts", "immigration", "visa", "documents"]
+---
 ## Data Verified
 
 Full name, passport number, entry/exit dates, port of entry, admission class

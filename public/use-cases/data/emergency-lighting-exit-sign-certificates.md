@@ -1,9 +1,11 @@
-# Emergency lighting and exit sign inspection certificates
-
-**Category:** Safety Inspection Certificates
-**Volume:** Large
-**Retention:** 1 year (annual inspection)
-
+---
+title: "Emergency lighting and exit sign inspection certificates"
+category: "Safety Inspection Certificates"
+volume: "Large"
+retention: "1 year (annual inspection)"
+slug: "emergency-lighting-exit-sign-certificates"
+tags: ["emergency", "lighting", "exit", "sign", "certificates", "safety", "inspection"]
+---
 ## Data Verified
 
 Building address, fixture count, inspector, inspection date, battery test results

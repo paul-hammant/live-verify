@@ -1,9 +1,11 @@
-# Protection & Indemnity (P&I) club certificates
-
-**Category:** Logistics & Transportation
-**Volume:** Small
-**Retention:** Policy term + 20 years (claims tail)
-
+---
+title: "Protection & Indemnity (P&I) club certificates"
+category: "Logistics & Transportation"
+volume: "Small"
+retention: "Policy term + 20 years (claims tail)"
+slug: "pi-club-certificates"
+tags: ["club", "certificates", "logistics", "transportation"]
+---
 ## Data Verified
 
 Shipowner, vessel IMO, P&I club, tonnage limit, pollution coverage

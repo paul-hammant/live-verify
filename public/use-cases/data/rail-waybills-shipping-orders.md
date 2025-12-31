@@ -1,9 +1,11 @@
-# Rail waybills and shipping orders
-
-**Category:** Logistics & Transportation
-**Volume:** Medium-Large
-**Retention:** 7-10 years (proof of shipment)
-
+---
+title: "Rail waybills and shipping orders"
+category: "Logistics & Transportation"
+volume: "Medium-Large"
+retention: "7-10 years (proof of shipment)"
+slug: "rail-waybills-shipping-orders"
+tags: ["rail", "waybills", "shipping", "orders", "logistics", "transportation"]
+---
 ## Data Verified
 
 Shipper, consignee, railway, car number, cargo description

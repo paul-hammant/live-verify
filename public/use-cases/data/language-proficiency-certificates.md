@@ -1,9 +1,11 @@
-# Language proficiency certificates (TOEFL, IELTS)
-
-**Category:** Professional & Educational Qualifications
-**Volume:** Very Small
-**Retention:** 2-5 years (test validity)
-
+---
+title: "Language proficiency certificates (TOEFL, IELTS)"
+category: "Professional & Educational Qualifications"
+volume: "Very Small"
+retention: "2-5 years (test validity)"
+slug: "language-proficiency-certificates"
+tags: ["language", "proficiency", "certificates", "professional", "educational", "qualifications"]
+---
 ## Data Verified
 
 Test taker name, test date, test center, overall score, section scores (reading, writing, listening, speaking), test type

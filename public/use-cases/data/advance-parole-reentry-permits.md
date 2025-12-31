@@ -1,9 +1,11 @@
-# Advance parole and re-entry permits
-
-**Category:** Immigration & Visa Documents
-**Volume:** Medium
-**Retention:** Permit validity + 7 years
-
+---
+title: "Advance parole and re-entry permits"
+category: "Immigration & Visa Documents"
+volume: "Medium"
+retention: "Permit validity + 7 years"
+slug: "advance-parole-reentry-permits"
+tags: ["advance", "parole", "reentry", "permits", "immigration", "visa", "documents"]
+---
 ## Data Verified
 
 Full name, DOB, nationality, permit type, validity period, I-131 receipt number

@@ -1,9 +1,11 @@
-# Fingerprint certifications (background checks)
-
-**Category:** Notary Services
-**Volume:** Large
-**Retention:** Background check + 3-7 years
-
+---
+title: "Fingerprint certifications (background checks)"
+category: "Notary Services"
+volume: "Large"
+retention: "Background check + 3-7 years"
+slug: "fingerprint-certifications"
+tags: ["fingerprint", "certifications", "notary", "services"]
+---
 ## Data Verified
 
 Applicant name, fingerprint card number, notary certification, purpose (FBI, employment, licensing), notary name, notary commission number, notary seal, certification date

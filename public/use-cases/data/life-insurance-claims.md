@@ -1,9 +1,11 @@
-# Life insurance claims and death benefit applications
-
-**Category:** Personal Lines Insurance
-**Volume:** Small
-**Retention:** 7-10 years post-claim
-
+---
+title: "Life insurance claims and death benefit applications"
+category: "Personal Lines Insurance"
+volume: "Small"
+retention: "7-10 years post-claim"
+slug: "life-insurance-claims"
+tags: ["life", "insurance", "claims", "personal", "lines"]
+---
 ## Data Verified
 
 Deceased name, beneficiary names, death certificate details, claim amount, policy details

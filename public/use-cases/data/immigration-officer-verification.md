@@ -1,9 +1,11 @@
-# Immigration officer verification (internal checkpoints, enforcement)
-
-**Category:** Personal Safety & Service Verification
-**Volume:** Medium
-**Retention:** Encounter + 1-3 years
-
+---
+title: "Immigration officer verification (internal checkpoints, enforcement)"
+category: "Personal Safety & Service Verification"
+volume: "Medium"
+retention: "Encounter + 1-3 years"
+slug: "immigration-officer-verification"
+tags: ["immigration", "officer", "verification", "personal", "safety", "service"]
+---
 ## Data Verified
 
 Officer name, photo, badge number, agency, credential number

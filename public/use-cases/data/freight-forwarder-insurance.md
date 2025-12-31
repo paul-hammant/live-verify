@@ -1,9 +1,11 @@
-# Freight forwarder liability insurance certificates
-
-**Category:** Logistics & Transportation
-**Volume:** Medium
-**Retention:** Shipment + 7-10 years
-
+---
+title: "Freight forwarder liability insurance certificates"
+category: "Logistics & Transportation"
+volume: "Medium"
+retention: "Shipment + 7-10 years"
+slug: "freight-forwarder-insurance"
+tags: ["freight", "forwarder", "insurance", "logistics", "transportation"]
+---
 ## Data Verified
 
 Freight forwarder, insurance company, coverage limits, cargo types

@@ -1,9 +1,11 @@
-# Private security and armed guard licenses
-
-**Category:** Professional & Occupational Licenses
-**Volume:** Small
-**Retention:** 2-5 years (license term)
-
+---
+title: "Private security and armed guard licenses"
+category: "Professional & Occupational Licenses"
+volume: "Small"
+retention: "2-5 years (license term)"
+slug: "private-security-guard-licenses"
+tags: ["private", "security", "guard", "licenses", "professional", "occupational"]
+---
 ## Data Verified
 
 Licensee name, DOB, license number, weapons qualification, issuing authority

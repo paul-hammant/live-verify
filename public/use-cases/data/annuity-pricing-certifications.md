@@ -1,9 +1,11 @@
-# Annuity pricing and rate certifications
-
-**Category:** Actuarial & Insurance Mathematics
-**Volume:** Very Small
-**Retention:** 7-30 years (contract lifetime)
-
+---
+title: "Annuity pricing and rate certifications"
+category: "Actuarial & Insurance Mathematics"
+volume: "Very Small"
+retention: "7-30 years (contract lifetime)"
+slug: "annuity-pricing-certifications"
+tags: ["annuity", "pricing", "certifications", "actuarial", "insurance", "mathematics"]
+---
 ## Data Verified
 
 Actuary name, insurance company, pricing assumptions, mortality/interest rates, annuity type

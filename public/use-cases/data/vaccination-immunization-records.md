@@ -1,9 +1,11 @@
-# Vaccination and Immunization Records
-
-**Category:** Healthcare & Medical Records
-**Volume:** Medium-Small
-**Retention:** Lifetime (public health records)
-
+---
+title: "Vaccination and Immunization Records"
+category: "Healthcare & Medical Records"
+volume: "Medium-Small"
+retention: "Lifetime (public health records)"
+slug: "vaccination-immunization-records"
+tags: ["vaccination", "immunization", "records", "healthcare", "medical"]
+---
 ## Data Verified
 
 Patient name, date of birth, vaccine name/type, vaccine manufacturer, lot number, dose number (for multi-dose series), administration date, administering provider name and facility, next dose due date (if applicable), contraindications or exemptions.

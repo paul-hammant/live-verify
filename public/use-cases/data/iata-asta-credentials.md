@@ -1,9 +1,11 @@
-# IATA/ASTA travel agent credentials and commission statements
-
-**Category:** Travel & Hospitality
-**Volume:** Small
-**Retention:** Statement period + 7 years
-
+---
+title: "IATA/ASTA travel agent credentials and commission statements"
+category: "Travel & Hospitality"
+volume: "Small"
+retention: "Statement period + 7 years"
+slug: "iata-asta-credentials"
+tags: ["iata", "asta", "credentials", "travel", "hospitality"]
+---
 ## Data Verified
 
 Agency name, IATA/ASTA number, commission amounts, supplier, period

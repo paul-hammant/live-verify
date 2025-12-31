@@ -1,9 +1,11 @@
-# Photo credits and image licensing
-
-**Category:** Media & Publishing
-**Volume:** Small
-**Retention:** 5-20 years (license duration)
-
+---
+title: "Photo credits and image licensing"
+category: "Media & Publishing"
+volume: "Small"
+retention: "5-20 years (license duration)"
+slug: "photo-credits-image-licensing"
+tags: ["photo", "credits", "image", "licensing", "media", "publishing"]
+---
 ## Data Verified
 
 Photographer name, licensee, usage rights, payment details

@@ -1,9 +1,11 @@
-# Dangerous goods declarations (IMO/ICAO short-form)
-
-**Category:** Logistics & Transportation
-**Volume:** Small
-**Retention:** Shipment + 5-10 years
-
+---
+title: "Dangerous goods declarations (IMO/ICAO short-form)"
+category: "Logistics & Transportation"
+volume: "Small"
+retention: "Shipment + 5-10 years"
+slug: "dangerous-goods-declarations-imo-icao"
+tags: ["dangerous", "goods", "declarations", "icao", "logistics", "transportation"]
+---
 ## Data Verified
 
 Shipper name, UN numbers, class

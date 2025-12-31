@@ -1,9 +1,11 @@
-# Passports and Visa Documents
-
-**Category:** Government & Civic Documents
-**Volume:** Medium-Small
-**Retention:** 10-20 years (security requirements)
-
+---
+title: "Passports and Visa Documents"
+category: "Government & Civic Documents"
+volume: "Medium-Small"
+retention: "10-20 years (security requirements)"
+slug: "passports-visa-documents"
+tags: ["passports", "visa", "documents", "government", "civic"]
+---
 ## Data Verified
 
 Full name, date of birth, nationality, passport/visa number, issue and expiry dates, issuing authority, visa type and conditions. The machine-readable zone (MRZ) contains structured data that complements the human-readable text.

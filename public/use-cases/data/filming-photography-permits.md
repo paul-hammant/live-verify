@@ -1,9 +1,11 @@
-# Filming and photography permits (public property)
-
-**Category:** Event & Temporary Use Permits
-**Volume:** Medium
-**Retention:** Filming period + 3-7 years
-
+---
+title: "Filming and photography permits (public property)"
+category: "Event & Temporary Use Permits"
+volume: "Medium"
+retention: "Filming period + 3-7 years"
+slug: "filming-photography-permits"
+tags: ["filming", "photography", "permits", "event", "temporary"]
+---
 ## Data Verified
 
 Production company, shoot location, dates, traffic control, insurance

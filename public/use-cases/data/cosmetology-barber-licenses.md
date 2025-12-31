@@ -1,9 +1,11 @@
-# Cosmetology and barber licenses
-
-**Category:** Professional & Occupational Licenses
-**Volume:** Large
-**Retention:** 1-2 years (renewal)
-
+---
+title: "Cosmetology and barber licenses"
+category: "Professional & Occupational Licenses"
+volume: "Large"
+retention: "1-2 years (renewal)"
+slug: "cosmetology-barber-licenses"
+tags: ["cosmetology", "barber", "licenses", "professional", "occupational"]
+---
 ## Data Verified
 
 Licensee name, license number, specialty, issuing state board

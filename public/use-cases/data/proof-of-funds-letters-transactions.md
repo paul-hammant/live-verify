@@ -1,9 +1,11 @@
-# Proof of funds letters (real estate, business transactions)
-
-**Category:** Real Estate & Property
-**Volume:** Small
-**Retention:** 3-7 years (transaction period)
-
+---
+title: "Proof of funds letters (real estate, business transactions)"
+category: "Real Estate & Property"
+volume: "Small"
+retention: "3-7 years (transaction period)"
+slug: "proof-of-funds-letters-transactions"
+tags: ["proof", "funds", "letters", "transactions", "real", "estate", "property"]
+---
 ## Data Verified
 
 Party name, account balance, bank officer signature, verification date, bank name and contact

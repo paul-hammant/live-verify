@@ -1,9 +1,11 @@
-# Workers' compensation reserve certifications
-
-**Category:** Actuarial & Insurance Mathematics
-**Volume:** Small
-**Retention:** 10-20 years (claim lifetime)
-
+---
+title: "Workers' compensation reserve certifications"
+category: "Actuarial & Insurance Mathematics"
+volume: "Small"
+retention: "10-20 years (claim lifetime)"
+slug: "workers-comp-reserve-certifications"
+tags: ["workers", "comp", "reserve", "certifications", "actuarial", "insurance", "mathematics"]
+---
 ## Data Verified
 
 Actuary name, employer name, jurisdiction, reserve amounts, claim development patterns

@@ -1,9 +1,11 @@
-# Street vending and sidewalk merchandise permits
-
-**Category:** Event & Temporary Use Permits
-**Volume:** Large
-**Retention:** Permit validity (annual)
-
+---
+title: "Street vending and sidewalk merchandise permits"
+category: "Event & Temporary Use Permits"
+volume: "Large"
+retention: "Permit validity (annual)"
+slug: "street-vending-sidewalk-permits"
+tags: ["street", "vending", "sidewalk", "permits", "event", "temporary"]
+---
 ## Data Verified
 
 Vendor name, location, products, hours, health/business license

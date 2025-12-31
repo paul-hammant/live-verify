@@ -1,9 +1,11 @@
-# Fire extinguisher inspection tags
-
-**Category:** Safety Inspection Certificates
-**Volume:** Very Large
-**Retention:** 1 year (annual inspection)
-
+---
+title: "Fire extinguisher inspection tags"
+category: "Safety Inspection Certificates"
+volume: "Very Large"
+retention: "1 year (annual inspection)"
+slug: "fire-extinguisher-inspection-tags"
+tags: ["fire", "extinguisher", "inspection", "tags", "safety", "certificates"]
+---
 ## Data Verified
 
 Location, extinguisher serial, inspector/company, inspection date, next due date

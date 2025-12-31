@@ -1,9 +1,11 @@
-# Power of Attorney Documents
-
-**Category:** Financial & Legal Documents
-**Volume:** Small
-**Retention:** Duration of authority plus 10 years (potential disputes)
-
+---
+title: "Power of Attorney Documents"
+category: "Financial & Legal Documents"
+volume: "Small"
+retention: "Duration of authority plus 10 years (potential disputes)"
+slug: "power-of-attorney"
+tags: ["power", "attorney", "financial", "legal", "documents"]
+---
 ## Data Verified
 
 Principal name (person granting authority), agent/attorney-in-fact name, scope of authority (general, limited, specific powers), effective date, expiration date (if any), springing conditions (if any), witness names, notarization details (notary name, commission, date), any limitations or restrictions.

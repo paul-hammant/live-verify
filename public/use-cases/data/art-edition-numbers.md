@@ -1,9 +1,11 @@
-# Edition numbers for prints and sculptures
-
-**Category:** Art & Collectibles
-**Volume:** Very Small
-**Retention:** Permanent (edition tracking)
-
+---
+title: "Edition numbers for prints and sculptures"
+category: "Art & Collectibles"
+volume: "Very Small"
+retention: "Permanent (edition tracking)"
+slug: "art-edition-numbers"
+tags: ["edition", "numbers", "collectibles"]
+---
 ## Data Verified
 
 Artist name, publisher, owner, edition details

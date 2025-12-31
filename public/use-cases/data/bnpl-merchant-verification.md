@@ -1,9 +1,11 @@
-# BNPL merchant verification certificates
-
-**Category:** Banking & Financial Services
-**Volume:** Small
-**Retention:** 3-7 years (merchant relationship)
-
+---
+title: "BNPL merchant verification certificates"
+category: "Banking & Financial Services"
+volume: "Small"
+retention: "3-7 years (merchant relationship)"
+slug: "bnpl-merchant-verification"
+tags: ["bnpl", "merchant", "verification", "banking", "financial", "services"]
+---
 ## Data Verified
 
 Merchant name, business details, BNPL provider, approval date

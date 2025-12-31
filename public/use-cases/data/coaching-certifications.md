@@ -1,9 +1,11 @@
-# Coaching certifications and qualifications
-
-**Category:** Sports & Athletics
-**Volume:** Very Small
-**Retention:** 5-10 years (certification validity)
-
+---
+title: "Coaching certifications and qualifications"
+category: "Sports & Athletics"
+volume: "Very Small"
+retention: "5-10 years (certification validity)"
+slug: "coaching-certifications"
+tags: ["coaching", "certifications", "sports", "athletics"]
+---
 ## Data Verified
 
 Coach name, certification level, sport, certifying body

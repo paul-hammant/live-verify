@@ -1,9 +1,11 @@
-# Certificates of origin (preferential/non-preferential)
-
-**Category:** Logistics & Transportation
-**Volume:** Medium
-**Retention:** 7-10 years (customs audit)
-
+---
+title: "Certificates of origin (preferential/non-preferential)"
+category: "Logistics & Transportation"
+volume: "Medium"
+retention: "7-10 years (customs audit)"
+slug: "certificates-of-origin-trade"
+tags: ["certificates", "origin", "trade", "logistics", "transportation"]
+---
 ## Data Verified
 
 Exporter, importer, goods description, origin country, certifying authority

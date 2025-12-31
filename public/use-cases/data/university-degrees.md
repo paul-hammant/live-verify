@@ -1,9 +1,11 @@
-# University Degrees and Transcripts
-
-**Category:** Professional & Educational Qualifications
-**Volume:** Large
-**Retention:** Permanent
-
+---
+title: "University Degrees and Transcripts"
+category: "Professional & Educational Qualifications"
+volume: "Large"
+retention: "Permanent"
+slug: "university-degrees"
+tags: ["university", "degrees", "professional", "educational", "qualifications"]
+---
 ## Data Verified
 
 Student name, degree title, major/field of study, graduation date, university name, honors/distinctions, GPA (if included), course listings (for transcripts).

@@ -1,9 +1,11 @@
-# Consular letters and attestations
-
-**Category:** Immigration & Visa Documents
-**Volume:** Small
-**Retention:** Case + 5-10 years
-
+---
+title: "Consular letters and attestations"
+category: "Immigration & Visa Documents"
+volume: "Small"
+retention: "Case + 5-10 years"
+slug: "consular-letters-attestations"
+tags: ["consular", "letters", "attestations", "immigration", "visa", "documents"]
+---
 ## Data Verified
 
 Applicant name, case number, consular officer signature, embassy/consulate location, attestation date, document purpose

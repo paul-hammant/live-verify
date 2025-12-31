@@ -1,9 +1,11 @@
-# Tree removal and heritage tree permits
-
-**Category:** Environmental & Natural Resource Permits
-**Volume:** Small
-**Retention:** Permit + permanent (urban forestry)
-
+---
+title: "Tree removal and heritage tree permits"
+category: "Environmental & Natural Resource Permits"
+volume: "Small"
+retention: "Permit + permanent (urban forestry)"
+slug: "tree-removal-heritage-permits"
+tags: ["tree", "removal", "heritage", "permits", "environmental", "natural", "resource"]
+---
 ## Data Verified
 
 Property owner, address, tree species, diameter, removal justification, city

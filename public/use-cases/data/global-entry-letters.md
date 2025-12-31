@@ -1,9 +1,11 @@
-# Global Entry/Trusted Traveler support letters (short)
-
-**Category:** Immigration & Visa Documents
-**Volume:** Medium
-**Retention:** 5 years
-
+---
+title: "Global Entry/Trusted Traveler support letters (short)"
+category: "Immigration & Visa Documents"
+volume: "Medium"
+retention: "5 years"
+slug: "global-entry-letters"
+tags: ["global", "entry", "letters", "immigration", "visa", "documents"]
+---
 ## Data Verified
 
 Member name, Known Traveler Number (KTN), program type, membership status, issue date

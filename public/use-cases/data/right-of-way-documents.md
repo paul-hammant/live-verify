@@ -1,9 +1,11 @@
-# Right-of-way documents
-
-**Category:** Real Estate & Property
-**Volume:** Tiny
-**Retention:** Permanent (access rights)
-
+---
+title: "Right-of-way documents"
+category: "Real Estate & Property"
+volume: "Tiny"
+retention: "Permanent (access rights)"
+slug: "right-of-way-documents"
+tags: ["right", "documents", "real", "estate", "property"]
+---
 ## Data Verified
 
 Property owner, beneficiary, property address, access rights

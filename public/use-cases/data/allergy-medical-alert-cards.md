@@ -1,9 +1,11 @@
-# Allergy and medical alert cards
-
-**Category:** Healthcare & Medical Records
-**Volume:** Small
-**Retention:** Lifetime (emergency care)
-
+---
+title: "Allergy and medical alert cards"
+category: "Healthcare & Medical Records"
+volume: "Small"
+retention: "Lifetime (emergency care)"
+slug: "allergy-medical-alert-cards"
+tags: ["allergy", "medical", "alert", "cards", "healthcare", "records"]
+---
 ## Data Verified
 
 Patient name, DOB, allergies, emergency contacts

@@ -1,9 +1,11 @@
-# Airline refund confirmations and credit memos
-
-**Category:** Travel & Hospitality
-**Volume:** Large
-**Retention:** Refund + 3-7 years (financial audit)
-
+---
+title: "Airline refund confirmations and credit memos"
+category: "Travel & Hospitality"
+volume: "Large"
+retention: "Refund + 3-7 years (financial audit)"
+slug: "airline-refund-confirmations"
+tags: ["airline", "refund", "confirmations", "travel", "hospitality"]
+---
 ## Data Verified
 
 Passenger name, original ticket, refund amount, credit memo number, airline

@@ -1,9 +1,11 @@
-# Endangered species take permits (ESA Section 10)
-
-**Category:** Environmental & Natural Resource Permits
-**Volume:** Tiny
-**Retention:** Permit term + permanent
-
+---
+title: "Endangered species take permits (ESA Section 10)"
+category: "Environmental & Natural Resource Permits"
+volume: "Tiny"
+retention: "Permit term + permanent"
+slug: "endangered-species-take-permits"
+tags: ["endangered", "species", "take", "permits", "environmental", "natural", "resource"]
+---
 ## Data Verified
 
 Permit holder, species, take authorization, mitigation, USFWS/NOAA

@@ -1,9 +1,11 @@
-# Purchase orders and delivery notes
-
-**Category:** Business & Commerce
-**Volume:** Large
-**Retention:** Fiscal year + 7 years
-
+---
+title: "Purchase orders and delivery notes"
+category: "Business & Commerce"
+volume: "Large"
+retention: "Fiscal year + 7 years"
+slug: "purchase-orders-delivery-notes"
+tags: ["purchase", "orders", "delivery", "notes", "business", "commerce"]
+---
 ## Data Verified
 
 Buyer/seller, order IDs

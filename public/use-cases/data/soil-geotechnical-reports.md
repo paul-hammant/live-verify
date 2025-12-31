@@ -1,9 +1,11 @@
-# Soil and geotechnical reports
-
-**Category:** Real Estate & Property
-**Volume:** Very Small
-**Retention:** 20-30 years (building lifetime)
-
+---
+title: "Soil and geotechnical reports"
+category: "Real Estate & Property"
+volume: "Very Small"
+retention: "20-30 years (building lifetime)"
+slug: "soil-geotechnical-reports"
+tags: ["soil", "geotechnical", "reports", "real", "estate", "property"]
+---
 ## Data Verified
 
 Property owner, geotechnical engineer, site address, soil conditions, recommendations

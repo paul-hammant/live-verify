@@ -1,9 +1,11 @@
-# Employee Rights under NLRA (unionization) poster
-
-**Category:** Mandatory Workplace Postings
-**Volume:** Very Large
-**Retention:** Current version
-
+---
+title: "Employee Rights under NLRA (unionization) poster"
+category: "Mandatory Workplace Postings"
+volume: "Very Large"
+retention: "Current version"
+slug: "nlra-unionization-poster"
+tags: ["nlra", "unionization", "poster", "mandatory", "workplace", "postings"]
+---
 ## Data Verified
 
 None (informational), NLRB contact, union organizing rights

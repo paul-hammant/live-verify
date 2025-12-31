@@ -1,9 +1,11 @@
-# Satellite insurance (launch, in-orbit, third-party liability)
-
-**Category:** Insurance & Risk Management
-**Volume:** Tiny
-**Retention:** Satellite lifetime (15-20 years)
-
+---
+title: "Satellite insurance (launch, in-orbit, third-party liability)"
+category: "Insurance & Risk Management"
+volume: "Tiny"
+retention: "Satellite lifetime (15-20 years)"
+slug: "satellite-insurance"
+tags: ["satellite", "insurance", "risk", "management"]
+---
 ## Data Verified
 
 Satellite owner/operator, launch details, in-orbit value, liability limits

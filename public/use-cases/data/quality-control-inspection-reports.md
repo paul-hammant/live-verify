@@ -1,9 +1,11 @@
-# Quality control inspection reports
-
-**Category:** Logistics & Transportation
-**Volume:** Small
-**Retention:** 5-15 years (warranty/liability)
-
+---
+title: "Quality control inspection reports"
+category: "Logistics & Transportation"
+volume: "Small"
+retention: "5-15 years (warranty/liability)"
+slug: "quality-control-inspection-reports"
+tags: ["quality", "control", "inspection", "reports", "logistics", "transportation"]
+---
 ## Data Verified
 
 Inspector name, QA manager name, facility location, inspection date, product batch, test results, pass/fail status

@@ -1,9 +1,11 @@
-# Playground equipment safety inspection certificates
-
-**Category:** Safety Inspection Certificates
-**Volume:** Medium
-**Retention:** 1 year (annual inspection)
-
+---
+title: "Playground equipment safety inspection certificates"
+category: "Safety Inspection Certificates"
+volume: "Medium"
+retention: "1 year (annual inspection)"
+slug: "playground-equipment-safety-certificates"
+tags: ["playground", "equipment", "safety", "certificates", "inspection"]
+---
 ## Data Verified
 
 Playground location, equipment inventory, inspector, inspection date, safety compliance

@@ -1,9 +1,11 @@
-# ESTA (Electronic System for Travel Authorization) approvals
-
-**Category:** Immigration & Visa Documents
-**Volume:** Large
-**Retention:** 2 years (ESTA validity)
-
+---
+title: "ESTA (Electronic System for Travel Authorization) approvals"
+category: "Immigration & Visa Documents"
+volume: "Large"
+retention: "2 years (ESTA validity)"
+slug: "esta-travel-authorization"
+tags: ["esta", "travel", "authorization", "immigration", "visa", "documents"]
+---
 ## Data Verified
 
 Full name, passport number, nationality, DOB, travel details, approval number

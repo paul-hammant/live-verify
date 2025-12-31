@@ -1,9 +1,11 @@
-# Certificates of origin and preferential tariff documents
-
-**Category:** Logistics & Transportation
-**Volume:** Medium
-**Retention:** Shipment + 7-10 years
-
+---
+title: "Certificates of origin and preferential tariff documents"
+category: "Logistics & Transportation"
+volume: "Medium"
+retention: "Shipment + 7-10 years"
+slug: "certificates-of-origin"
+tags: ["certificates", "origin", "logistics", "transportation"]
+---
 ## Data Verified
 
 Exporter name, country of origin, product description, HS codes, certificate number, chamber of commerce stamp, issue date

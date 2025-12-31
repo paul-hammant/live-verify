@@ -1,9 +1,11 @@
-# Robo-advisor portfolio statements (Betterment, Wealthfront)
-
-**Category:** Banking & Financial Services
-**Volume:** Small
-**Retention:** 7-10 years (regulatory)
-
+---
+title: "Robo-advisor portfolio statements (Betterment, Wealthfront)"
+category: "Banking & Financial Services"
+volume: "Small"
+retention: "7-10 years (regulatory)"
+slug: "robo-advisor-portfolio-statements"
+tags: ["robo", "advisor", "portfolio", "statements", "banking", "financial", "services"]
+---
 ## Data Verified
 
 Account holder, portfolio value, holdings, performance, advisor

@@ -1,9 +1,11 @@
-# Unemployment insurance posting
-
-**Category:** Mandatory Workplace Postings
-**Volume:** Large
-**Retention:** Current year
-
+---
+title: "Unemployment insurance posting"
+category: "Mandatory Workplace Postings"
+volume: "Large"
+retention: "Current year"
+slug: "unemployment-insurance-posting"
+tags: ["unemployment", "insurance", "posting", "mandatory", "workplace", "postings"]
+---
 ## Data Verified
 
 State unemployment office contact, claim process, employer account number

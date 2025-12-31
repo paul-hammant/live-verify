@@ -1,9 +1,11 @@
-# Umbrella/excess liability policies
-
-**Category:** Personal Lines Insurance
-**Volume:** Small
-**Retention:** Policy term + 10 years
-
+---
+title: "Umbrella/excess liability policies"
+category: "Personal Lines Insurance"
+volume: "Small"
+retention: "Policy term + 10 years"
+slug: "umbrella-liability-policies"
+tags: ["umbrella", "liability", "policies", "personal", "lines", "insurance"]
+---
 ## Data Verified
 
 Policyholder name, underlying policies, excess coverage limits, premium, effective dates

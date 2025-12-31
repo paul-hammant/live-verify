@@ -1,9 +1,11 @@
-# Environmental certifications (Energy Star, LEED, carbon neutral)
-
-**Category:** Product Certifications & Compliance
-**Volume:** Very Small
-**Retention:** 5-10 years (certification validity)
-
+---
+title: "Environmental certifications (Energy Star, LEED, carbon neutral)"
+category: "Product Certifications & Compliance"
+volume: "Very Small"
+retention: "5-10 years (certification validity)"
+slug: "environmental-certifications"
+tags: ["environmental", "certifications", "product", "compliance"]
+---
 ## Data Verified
 
 Building owner, facility manager, auditor name, certification type, certification level, issue date, expiration date

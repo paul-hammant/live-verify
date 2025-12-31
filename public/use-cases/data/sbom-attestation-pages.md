@@ -1,9 +1,11 @@
-# SBOM attestation pages
-
-**Category:** Technology & Software
-**Volume:** Small
-**Retention:** Release lifecycle + 3-7 years
-
+---
+title: "SBOM attestation pages"
+category: "Technology & Software"
+volume: "Small"
+retention: "Release lifecycle + 3-7 years"
+slug: "sbom-attestation-pages"
+tags: ["sbom", "attestation", "pages", "technology", "software"]
+---
 ## Data Verified
 
 Project name, version number, release date, component list, dependency versions, attestation signature

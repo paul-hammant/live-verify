@@ -1,9 +1,11 @@
-# Chain-of-custody forms
-
-**Category:** Insurance & Risk Management
-**Volume:** Medium
-**Retention:** Claim term + 10 years
-
+---
+title: "Chain-of-custody forms"
+category: "Insurance & Risk Management"
+volume: "Medium"
+retention: "Claim term + 10 years"
+slug: "chain-of-custody-forms"
+tags: ["chain", "custody", "forms", "insurance", "risk", "management"]
+---
 ## Data Verified
 
 Claimant name, claim number, item description, handler names, transfer timestamps, custody locations

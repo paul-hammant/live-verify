@@ -1,9 +1,11 @@
-# Warranty documents and service agreements
-
-**Category:** Retail & Consumer Protection
-**Volume:** Medium
-**Retention:** Product lifetime + 3-10 years
-
+---
+title: "Warranty documents and service agreements"
+category: "Retail & Consumer Protection"
+volume: "Medium"
+retention: "Product lifetime + 3-10 years"
+slug: "warranty-documents"
+tags: ["warranty", "documents", "retail", "consumer", "protection"]
+---
 ## Data Verified
 
 Customer name, product serial number, purchase date, warranty period, retailer/manufacturer name, warranty terms

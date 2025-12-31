@@ -1,9 +1,11 @@
-# Contractor Licensing and Bonding Certificates
-
-**Category:** Professional & Occupational Licenses
-**Volume:** Medium
-**Retention:** License term + 7 years
-
+---
+title: "Contractor Licensing and Bonding Certificates"
+category: "Professional & Occupational Licenses"
+volume: "Medium"
+retention: "License term + 7 years"
+slug: "contractor-licensing-bonding"
+tags: ["contractor", "licensing", "bonding", "professional", "occupational", "licenses"]
+---
 ## Data Verified
 
 Contractor name (individual or company), license number, license classification/type, bond number, bond amount, surety company, issuing state/authority, issue date, expiration date, qualifying individual (if applicable), workers' compensation policy information.

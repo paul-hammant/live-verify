@@ -1,9 +1,11 @@
-# Delivery driver verification (vulnerable recipients)
-
-**Category:** Personal Safety & Service Verification
-**Volume:** Very Large
-**Retention:** Delivery + 30 days (disputes)
-
+---
+title: "Delivery driver verification (vulnerable recipients)"
+category: "Personal Safety & Service Verification"
+volume: "Very Large"
+retention: "Delivery + 30 days (disputes)"
+slug: "delivery-driver-verification"
+tags: ["delivery", "driver", "verification", "personal", "safety", "service"]
+---
 ## Data Verified
 
 Driver name, photo, vehicle details, package tracking, delivery company

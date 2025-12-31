@@ -1,9 +1,11 @@
-# Raffle tickets and contest entries
-
-**Category:** Retail & Consumer Protection
-**Volume:** Medium
-**Retention:** 3-7 years (legal/tax compliance)
-
+---
+title: "Raffle tickets and contest entries"
+category: "Retail & Consumer Protection"
+volume: "Medium"
+retention: "3-7 years (legal/tax compliance)"
+slug: "raffle-tickets-contest-entries"
+tags: ["raffle", "tickets", "contest", "entries", "retail", "consumer", "protection"]
+---
 ## Data Verified
 
 Entrant name, contact info, entry details

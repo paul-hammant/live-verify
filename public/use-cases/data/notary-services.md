@@ -1,9 +1,11 @@
-# Notary Public Services
-
-**Category:** Notary Services
-**Volume:** Large (aggregate across all notarial acts)
-**Retention:** Varies by act type (7 years to permanent)
-
+---
+title: "Notary Public Services"
+category: "Notary Services"
+volume: "Large (aggregate across all notarial acts)"
+retention: "Varies by act type (7 years to permanent)"
+slug: "notary-services"
+tags: ["notary", "services"]
+---
 Notary publics serve as impartial witnesses and authentication officials for a wide range of legal documents. Nearly every notarial act is an ideal candidate for OCR-to-hash verification—the notary's name, commission number, jurisdiction, and notarization date are text elements captured in the verification line.
 
 **Note on Notary Seals:** The traditional embossed or inked notary seal is a visual/physical security feature, not OCR-readable text. The seal remains on the document as anti-forgery protection, but the verification line captures the textual data elements (notary name, commission number, expiration, jurisdiction) rather than the seal image itself.
@@ -23,7 +25,6 @@ Notary publics serve as impartial witnesses and authentication officials for a w
 
 **Data Verified:** Signer name, date of birth, notary name, notary commission number, commission expiration, jurisdiction, document type, acknowledgment date.
 
-**Retention:** Permanent (real estate and legal records)
 
 **Fraud Prevention:** Deed fraud costs billions annually. Forged acknowledgments enable property theft. Verification prevents fake notarizations on fraudulent deeds.
 
@@ -40,7 +41,6 @@ Notary publics serve as impartial witnesses and authentication officials for a w
 
 **Data Verified:** Affiant name, date of birth, notary name, notary commission number, commission expiration, jurisdiction, jurat date.
 
-**Retention:** 7-20 years (legal proceedings)
 
 **Fraud Prevention:** Prevents forged sworn statements that could be used in litigation. Protects affiants from having statements altered after signing.
 
@@ -57,7 +57,6 @@ Notary publics serve as impartial witnesses and authentication officials for a w
 
 **Data Verified:** Document holder name, original document description, notary name, notary commission number, commission expiration, jurisdiction, certification date.
 
-**Retention:** Copy purpose + 7-10 years
 
 **Fraud Prevention:** Prevents submission of altered copies in official proceedings. Certified copy fraud can enable identity theft and credential fraud.
 
@@ -76,7 +75,6 @@ Notary publics serve as impartial witnesses and authentication officials for a w
 
 **Data Verified:** Person's name, notary name, notary commission number, commission expiration, jurisdiction, administration date.
 
-**Retention:** 7-20 years (legal validity)
 
 **Fraud Prevention:** Establishes legally binding commitment to truthfulness. Verification confirms oath was properly administered.
 
@@ -93,7 +91,6 @@ Notary publics serve as impartial witnesses and authentication officials for a w
 
 **Data Verified:** Signer name, witness name (if separate), notary name, notary commission number, commission expiration, jurisdiction, document type, witnessing date.
 
-**Retention:** Document lifetime + 10-20 years
 
 **Fraud Prevention:** Will contests often hinge on whether execution was proper. Verified witness certifications prove valid execution.
 
@@ -109,7 +106,6 @@ Notary publics serve as impartial witnesses and authentication officials for a w
 
 **Data Verified:** Instrument details (check/note number, amount), payee name, protest reason (dishonored/non-payment), notary name, notary commission number, commission expiration, jurisdiction, protest date.
 
-**Retention:** 7-10 years (commercial law, UCC)
 
 **Fraud Prevention:** Establishes legal notice of dishonor under UCC Article 3. Critical for commercial collection proceedings.
 
@@ -252,7 +248,6 @@ Record-keeping requirements:
 
 **Entry Contents:** Date, type of act, signer name, ID type, document type.
 
-**Retention:** Typically 7-10 years after commission expires.
 
 **Thumbprints:** Some states require signer thumbprints.
 

@@ -1,9 +1,11 @@
-# Discharge summaries and care plans
-
-**Category:** Healthcare & Medical Records
-**Volume:** Small
-**Retention:** 10-30 years (medical records)
-
+---
+title: "Discharge summaries and care plans"
+category: "Healthcare & Medical Records"
+volume: "Small"
+retention: "10-30 years (medical records)"
+slug: "discharge-summaries-care-plans"
+tags: ["discharge", "summaries", "care", "plans", "healthcare", "medical", "records"]
+---
 ## Data Verified
 
 Patient name, DOB, treatment details, care team, medications

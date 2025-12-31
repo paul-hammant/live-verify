@@ -1,9 +1,11 @@
-# Reinsurance treaty actuarial opinions
-
-**Category:** Actuarial & Insurance Mathematics
-**Volume:** Very Small
-**Retention:** 7-20 years (treaty term)
-
+---
+title: "Reinsurance treaty actuarial opinions"
+category: "Actuarial & Insurance Mathematics"
+volume: "Very Small"
+retention: "7-20 years (treaty term)"
+slug: "reinsurance-treaty-opinions"
+tags: ["reinsurance", "treaty", "opinions", "actuarial", "insurance", "mathematics"]
+---
 ## Data Verified
 
 Actuary name, ceding company, reinsurer, treaty terms, pricing assumptions, coverage limits

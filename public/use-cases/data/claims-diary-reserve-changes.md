@@ -1,9 +1,11 @@
-# Claims diary and reserve change documentation
-
-**Category:** Insurance & Risk Management
-**Volume:** Medium
-**Retention:** Claim lifetime + 7 years
-
+---
+title: "Claims diary and reserve change documentation"
+category: "Insurance & Risk Management"
+volume: "Medium"
+retention: "Claim lifetime + 7 years"
+slug: "claims-diary-reserve-changes"
+tags: ["claims", "diary", "reserve", "changes", "insurance", "risk", "management"]
+---
 ## Data Verified
 
 Adjuster name, claim number, reserve amount, reserve changes, diary notes

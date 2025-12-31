@@ -1,9 +1,11 @@
-# Medical device implant cards (pacemakers, stents)
-
-**Category:** Healthcare & Medical Records
-**Volume:** Small
-**Retention:** Lifetime (device tracking)
-
+---
+title: "Medical device implant cards (pacemakers, stents)"
+category: "Healthcare & Medical Records"
+volume: "Small"
+retention: "Lifetime (device tracking)"
+slug: "medical-device-implant-cards"
+tags: ["medical", "device", "implant", "cards", "healthcare", "records"]
+---
 ## Data Verified
 
 Patient name, DOB, device serial, implanting surgeon, hospital

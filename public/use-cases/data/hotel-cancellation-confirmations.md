@@ -1,9 +1,11 @@
-# Hotel cancellation confirmations and refund receipts
-
-**Category:** Travel & Hospitality
-**Volume:** Large
-**Retention:** Cancellation + 3-7 years
-
+---
+title: "Hotel cancellation confirmations and refund receipts"
+category: "Travel & Hospitality"
+volume: "Large"
+retention: "Cancellation + 3-7 years"
+slug: "hotel-cancellation-confirmations"
+tags: ["hotel", "cancellation", "confirmations", "travel", "hospitality"]
+---
 ## Data Verified
 
 Guest name, booking reference, cancellation date, refund amount, cancellation policy

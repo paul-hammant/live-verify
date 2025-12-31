@@ -1,9 +1,11 @@
-# Marriage and Divorce Documents
-
-**Category:** Government & Civic Documents
-**Volume:** Small
-**Retention:** Permanent (legal status)
-
+---
+title: "Marriage and Divorce Documents"
+category: "Government & Civic Documents"
+volume: "Small"
+retention: "Permanent (legal status)"
+slug: "marriage-divorce-documents"
+tags: ["marriage", "divorce", "documents", "government", "civic"]
+---
 ## Data Verified
 
 **Marriage Documents:** Spouse names, dates of birth, marriage date, officiant name, witness names, county/jurisdiction, license number, certificate number.

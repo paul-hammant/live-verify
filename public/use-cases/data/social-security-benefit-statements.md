@@ -1,9 +1,11 @@
-# Social Security benefit statements
-
-**Category:** Actuarial & Insurance Mathematics
-**Volume:** Small
-**Retention:** 7-10 years (retirement planning)
-
+---
+title: "Social Security benefit statements"
+category: "Actuarial & Insurance Mathematics"
+volume: "Small"
+retention: "7-10 years (retirement planning)"
+slug: "social-security-benefit-statements"
+tags: ["social", "security", "benefit", "statements", "actuarial", "insurance", "mathematics"]
+---
 ## Data Verified
 
 Worker name, SSN (masked), earnings history, projected benefit amounts, retirement age scenarios

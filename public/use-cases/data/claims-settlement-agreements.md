@@ -1,9 +1,11 @@
-# Claims settlement agreements and releases
-
-**Category:** Insurance & Risk Management
-**Volume:** Small
-**Retention:** Settlement + 10-20 years
-
+---
+title: "Claims settlement agreements and releases"
+category: "Insurance & Risk Management"
+volume: "Small"
+retention: "Settlement + 10-20 years"
+slug: "claims-settlement-agreements"
+tags: ["claims", "settlement", "agreements", "insurance", "risk", "management"]
+---
 ## Data Verified
 
 Claimant name, insurer, settlement amount, release terms, attorney details

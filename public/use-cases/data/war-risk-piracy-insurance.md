@@ -1,9 +1,11 @@
-# War risk and piracy insurance certificates
-
-**Category:** Logistics & Transportation
-**Volume:** Small
-**Retention:** Voyage + 7 years
-
+---
+title: "War risk and piracy insurance certificates"
+category: "Logistics & Transportation"
+volume: "Small"
+retention: "Voyage + 7 years"
+slug: "war-risk-piracy-insurance"
+tags: ["risk", "piracy", "insurance", "logistics", "transportation"]
+---
 ## Data Verified
 
 Vessel owner, vessel IMO, covered war zones, piracy areas, premium, insurer

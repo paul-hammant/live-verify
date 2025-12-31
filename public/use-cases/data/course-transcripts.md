@@ -1,9 +1,11 @@
-# Course transcripts and grade verification
-
-**Category:** Professional & Educational Qualifications
-**Volume:** Small
-**Retention:** Permanent (academic records)
-
+---
+title: "Course transcripts and grade verification"
+category: "Professional & Educational Qualifications"
+volume: "Small"
+retention: "Permanent (academic records)"
+slug: "course-transcripts"
+tags: ["course", "transcripts", "professional", "educational", "qualifications"]
+---
 ## Data Verified
 
 Student name, student ID, courses taken, grades, enrollment dates, degree program, institution name

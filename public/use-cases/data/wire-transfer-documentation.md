@@ -1,9 +1,11 @@
-# Wire Transfer Documentation
-
-**Category:** Banking & Financial Services
-**Volume:** Medium-Small
-**Retention:** 5-10 years (audit trail, regulatory requirements)
-
+---
+title: "Wire Transfer Documentation"
+category: "Banking & Financial Services"
+volume: "Medium-Small"
+retention: "5-10 years (audit trail, regulatory requirements)"
+slug: "wire-transfer-documentation"
+tags: ["wire", "transfer", "documentation", "banking", "financial", "services"]
+---
 ## Data Verified
 
 Sender/originator name and account, recipient/beneficiary name and account, transfer amount and currency, originating bank name and routing/SWIFT code, beneficiary bank name and routing/SWIFT code, transfer reference number, transfer date and time, purpose of payment, correspondent bank chain (if applicable).

@@ -1,9 +1,11 @@
-# Artist signatures and stamps
-
-**Category:** Art & Collectibles
-**Volume:** Very Small
-**Retention:** Permanent (authenticity)
-
+---
+title: "Artist signatures and stamps"
+category: "Art & Collectibles"
+volume: "Very Small"
+retention: "Permanent (authenticity)"
+slug: "artist-signatures-stamps"
+tags: ["artist", "signatures", "stamps", "collectibles"]
+---
 ## Data Verified
 
 Artist name, signature authenticator, verification date

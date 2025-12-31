@@ -1,9 +1,11 @@
-# KYC identity verification documents
-
-**Category:** Banking & Financial Services
-**Volume:** Medium
-**Retention:** 5-10 years post-relationship
-
+---
+title: "KYC identity verification documents"
+category: "Banking & Financial Services"
+volume: "Medium"
+retention: "5-10 years post-relationship"
+slug: "kyc-identity-verification"
+tags: ["identity", "verification", "banking", "financial", "services"]
+---
 ## Data Verified
 
 Customer name, date of birth, address, ID numbers, nationality, PEP (Politically Exposed Person) status

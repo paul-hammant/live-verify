@@ -1,9 +1,11 @@
-# Seed certification and variety registration
-
-**Category:** Agriculture & Food
-**Volume:** Very Small
-**Retention:** 5-20 years (variety tracking)
-
+---
+title: "Seed certification and variety registration"
+category: "Agriculture & Food"
+volume: "Very Small"
+retention: "5-20 years (variety tracking)"
+slug: "seed-certification"
+tags: ["seed", "certification", "agriculture", "food"]
+---
 ## Data Verified
 
 Seed producer name, certifier, variety breeder, field location

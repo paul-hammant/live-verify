@@ -1,9 +1,11 @@
-# Resort fees and mandatory hotel charge disclosures
-
-**Category:** Travel & Hospitality
-**Volume:** Large
-**Retention:** Stay + 3-7 years
-
+---
+title: "Resort fees and mandatory hotel charge disclosures"
+category: "Travel & Hospitality"
+volume: "Large"
+retention: "Stay + 3-7 years"
+slug: "resort-fees-mandatory-charges"
+tags: ["resort", "fees", "mandatory", "charges", "travel", "hospitality"]
+---
 ## Data Verified
 
 Guest name, hotel, resort fee amount, disclosure date, itemized services

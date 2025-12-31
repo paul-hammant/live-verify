@@ -1,9 +1,11 @@
-# Salvage and subrogation documentation
-
-**Category:** Insurance & Risk Management
-**Volume:** Small
-**Retention:** Subrogation case + 7-10 years
-
+---
+title: "Salvage and subrogation documentation"
+category: "Insurance & Risk Management"
+volume: "Small"
+retention: "Subrogation case + 7-10 years"
+slug: "salvage-subrogation-documentation"
+tags: ["salvage", "subrogation", "documentation", "insurance", "risk", "management"]
+---
 ## Data Verified
 
 Insurer, claimant, at-fault party, salvage value, subrogation recovery

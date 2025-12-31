@@ -1,9 +1,11 @@
-# Certificates of Authenticity for Artwork
-
-**Category:** Art & Collectibles
-**Volume:** Small
-**Retention:** Permanent (art market provenance)
-
+---
+title: "Certificates of Authenticity for Artwork"
+category: "Art & Collectibles"
+volume: "Small"
+retention: "Permanent (art market provenance)"
+slug: "art-certificates-of-authenticity"
+tags: ["certificates", "authenticity", "collectibles"]
+---
 ## Data Verified
 
 Artist name, artwork title, medium and materials, dimensions, creation date or period, edition information (for prints/multiples), certificate issuer identity, issuer relationship to artist (gallery, estate, foundation, catalogue raisonné author), owner name (current or at issuance), unique identifiers, provenance summary, condition notes at issuance.

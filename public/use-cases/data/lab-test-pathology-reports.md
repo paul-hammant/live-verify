@@ -1,9 +1,11 @@
-# Lab Test Results and Pathology Reports
-
-**Category:** Healthcare & Medical Records
-**Volume:** Medium
-**Retention:** 10-30 years (medical necessity, varies by jurisdiction and test type)
-
+---
+title: "Lab Test Results and Pathology Reports"
+category: "Healthcare & Medical Records"
+volume: "Medium"
+retention: "10-30 years (medical necessity, varies by jurisdiction and test type)"
+slug: "lab-test-pathology-reports"
+tags: ["test", "pathology", "reports", "healthcare", "medical", "records"]
+---
 ## Data Verified
 
 Patient name, date of birth, specimen collection date, test names and results, reference ranges, ordering physician name, performing laboratory name, pathologist signature (for pathology reports), lab accreditation numbers.

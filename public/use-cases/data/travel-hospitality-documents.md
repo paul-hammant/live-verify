@@ -1,9 +1,11 @@
-# Travel and Hospitality Documents
-
-**Category:** Travel & Hospitality
-**Volume:** Very Large (aggregate)
-**Retention:** Varies by document type (1-10 years)
-
+---
+title: "Travel and Hospitality Documents"
+category: "Travel & Hospitality"
+volume: "Very Large (aggregate)"
+retention: "Varies by document type (1-10 years)"
+slug: "travel-hospitality-documents"
+tags: ["travel", "hospitality", "documents"]
+---
 Travel documents present unique verification challenges: high volume, international use, multiple intermediaries (OTAs, travel agents), and significant fraud exposure. OCR-to-hash verification helps travelers, employers, and insurers confirm document authenticity.
 
 ## Document Types
@@ -14,7 +16,6 @@ Travel documents present unique verification challenges: high volume, internatio
 
 **Data Verified:** Guest name, hotel name and address, check-in/check-out dates, room type, rate (prepaid or pay-at-hotel), booking reference number, cancellation policy, OTA or direct booking indicator.
 
-**Retention:** Stay + 1-3 years
 
 **Fraud Problem:** Fake booking sites create fraudulent confirmations for non-existent properties or rooms that don't exist. Travelers arrive to find no reservation or a scam property.
 
@@ -26,7 +27,6 @@ Travel documents present unique verification challenges: high volume, internatio
 
 **Data Verified:** Guest name, hotel name, dates of stay, room charges, taxes, incidentals (minibar, parking, meals), total amount, payment method, folio number.
 
-**Retention:** Stay + 3-7 years (tax/expense audit)
 
 **Multi-Page:** Hotel folios are often multi-page with itemized daily charges. Per-page verification prevents charge insertion or removal.
 
@@ -40,7 +40,6 @@ Travel documents present unique verification challenges: high volume, internatio
 
 **Data Verified:** Passenger name (as on ID), flight numbers, routes, dates, ticket number, fare breakdown, taxes, booking reference (PNR), issuing airline or agent.
 
-**Retention:** Flight + 1-3 years (refund/audit)
 
 **Fraud Problem:** Altered ticket receipts inflate travel expense claims. Fake tickets used for visa applications to show "proof" of travel plans.
 
@@ -54,7 +53,6 @@ Travel documents present unique verification challenges: high volume, internatio
 
 **Data Verified:** Passenger names, ship name, cruise line, sailing date, itinerary (ports), cabin number and category, fare paid, booking reference, dining preferences.
 
-**Retention:** Voyage + 3-7 years (liability, Athens Convention)
 
 **Multi-Page:** Cruise contracts are lengthy with terms, conditions, and liability waivers.
 
@@ -68,7 +66,6 @@ Travel documents present unique verification challenges: high volume, internatio
 
 **Data Verified:** Insured traveler names, trip dates and destination, coverage types (cancellation, medical, evacuation), coverage limits, policy number, insurer name, premium paid.
 
-**Retention:** Trip + 5-10 years (claims)
 
 **Multi-Page:** Travel insurance policies include detailed terms, exclusions, and claims procedures.
 
@@ -82,7 +79,6 @@ Travel documents present unique verification challenges: high volume, internatio
 
 **Data Verified:** Parent/guardian names, child name and date of birth, travel destination, travel dates, accompanying adult (if any), notary name and commission, consent date.
 
-**Retention:** Travel + 7-10 years
 
 **Critical Safety Document:** Prevents child abduction through fraudulent consent. Border officials verify parental authorization.
 

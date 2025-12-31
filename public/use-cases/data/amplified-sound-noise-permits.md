@@ -1,9 +1,11 @@
-# Amplified sound and noise variance permits
-
-**Category:** Event & Temporary Use Permits
-**Volume:** Medium
-**Retention:** Permit period + 1-3 years
-
+---
+title: "Amplified sound and noise variance permits"
+category: "Event & Temporary Use Permits"
+volume: "Medium"
+retention: "Permit period + 1-3 years"
+slug: "amplified-sound-noise-permits"
+tags: ["amplified", "sound", "noise", "permits", "event", "temporary"]
+---
 ## Data Verified
 
 Permit holder, location, hours, sound levels, event type

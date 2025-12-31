@@ -1,9 +1,11 @@
-# Reinsurance certificates and slips (treaty and facultative)
-
-**Category:** Insurance & Risk Management
-**Volume:** Small
-**Retention:** Treaty/fac term + 10 years
-
+---
+title: "Reinsurance certificates and slips (treaty and facultative)"
+category: "Insurance & Risk Management"
+volume: "Small"
+retention: "Treaty/fac term + 10 years"
+slug: "reinsurance-certificates-slips"
+tags: ["reinsurance", "certificates", "slips", "insurance", "risk", "management"]
+---
 ## Data Verified
 
 Ceding company, reinsurer, coverage terms, layers, premium, effective dates

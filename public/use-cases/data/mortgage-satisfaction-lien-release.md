@@ -1,9 +1,11 @@
-# Mortgage satisfaction and lien release
-
-**Category:** Real Estate & Property
-**Volume:** Very Small
-**Retention:** Permanent (clear title)
-
+---
+title: "Mortgage satisfaction and lien release"
+category: "Real Estate & Property"
+volume: "Very Small"
+retention: "Permanent (clear title)"
+slug: "mortgage-satisfaction-lien-release"
+tags: ["mortgage", "satisfaction", "lien", "release", "real", "estate", "property"]
+---
 ## Data Verified
 
 Borrower name, lender, property address, loan account, release date

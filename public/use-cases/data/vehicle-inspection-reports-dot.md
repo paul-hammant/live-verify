@@ -1,9 +1,11 @@
-# Vehicle inspection reports (DOT, annual safety)
-
-**Category:** Logistics & Transportation
-**Volume:** Medium
-**Retention:** 5-10 years (safety compliance)
-
+---
+title: "Vehicle inspection reports (DOT, annual safety)"
+category: "Logistics & Transportation"
+volume: "Medium"
+retention: "5-10 years (safety compliance)"
+slug: "vehicle-inspection-reports-dot"
+tags: ["vehicle", "inspection", "reports", "logistics", "transportation"]
+---
 ## Data Verified
 
 Inspector name, vehicle owner, VIN, inspection station, safety findings

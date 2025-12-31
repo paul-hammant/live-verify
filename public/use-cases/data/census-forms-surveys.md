@@ -1,9 +1,11 @@
-# Census forms and surveys
-
-**Category:** Government & Civic Documents
-**Volume:** Medium-Small (census decade)
-**Retention:** Permanent (historical records)
-
+---
+title: "Census forms and surveys"
+category: "Government & Civic Documents"
+volume: "Medium-Small (census decade)"
+retention: "Permanent (historical records)"
+slug: "census-forms-surveys"
+tags: ["census", "forms", "surveys", "government", "civic", "documents"]
+---
 ## Data Verified
 
 Household names, ages, occupations, addresses

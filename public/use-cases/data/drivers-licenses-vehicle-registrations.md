@@ -1,9 +1,11 @@
-# Driver's Licenses and Vehicle Registrations
-
-**Category:** Government & Civic Documents
-**Volume:** Medium-Small
-**Retention:** 5-10 years (renewal cycles)
-
+---
+title: "Driver's Licenses and Vehicle Registrations"
+category: "Government & Civic Documents"
+volume: "Medium-Small"
+retention: "5-10 years (renewal cycles)"
+slug: "drivers-licenses-vehicle-registrations"
+tags: ["drivers", "licenses", "vehicle", "registrations", "government", "civic", "documents"]
+---
 ## Data Verified
 
 **Driver's License:** Full name, date of birth, address, license number, license class, endorsements, restrictions, expiration date, issue date, photo (reference), signature, organ donor status.

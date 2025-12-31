@@ -1,9 +1,11 @@
-# Travel package booking confirmations (all-inclusive)
-
-**Category:** Travel & Hospitality
-**Volume:** Medium
-**Retention:** Travel + 3-7 years (liability)
-
+---
+title: "Travel package booking confirmations (all-inclusive)"
+category: "Travel & Hospitality"
+volume: "Medium"
+retention: "Travel + 3-7 years (liability)"
+slug: "travel-package-bookings"
+tags: ["travel", "package", "bookings", "hospitality"]
+---
 ## Data Verified
 
 Traveler names, destination, dates, inclusions, price, tour operator, booking ref

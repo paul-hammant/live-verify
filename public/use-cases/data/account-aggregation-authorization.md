@@ -1,9 +1,11 @@
-# Account aggregation authorization certificates
-
-**Category:** Banking & Financial Services
-**Volume:** Medium
-**Retention:** 1-3 years (service duration)
-
+---
+title: "Account aggregation authorization certificates"
+category: "Banking & Financial Services"
+volume: "Medium"
+retention: "1-3 years (service duration)"
+slug: "account-aggregation-authorization"
+tags: ["account", "aggregation", "authorization", "banking", "financial", "services"]
+---
 ## Data Verified
 
 Customer name, aggregated accounts, third-party service, permissions

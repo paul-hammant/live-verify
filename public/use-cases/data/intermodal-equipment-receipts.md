@@ -1,9 +1,11 @@
-# Intermodal equipment receipts (EIR)
-
-**Category:** Logistics & Transportation
-**Volume:** Large
-**Retention:** Equipment return + 7 years
-
+---
+title: "Intermodal equipment receipts (EIR)"
+category: "Logistics & Transportation"
+volume: "Large"
+retention: "Equipment return + 7 years"
+slug: "intermodal-equipment-receipts"
+tags: ["intermodal", "equipment", "receipts", "logistics", "transportation"]
+---
 ## Data Verified
 
 Carrier, container/chassis number, equipment condition, damage notation

@@ -1,9 +1,11 @@
-# Commercial general liability (CGL) policies
-
-**Category:** Commercial Lines Insurance
-**Volume:** Small
-**Retention:** Policy term + 10 years
-
+---
+title: "Commercial general liability (CGL) policies"
+category: "Commercial Lines Insurance"
+volume: "Small"
+retention: "Policy term + 10 years"
+slug: "commercial-general-liability"
+tags: ["commercial", "general", "liability", "lines", "insurance"]
+---
 ## Data Verified
 
 Business name, insured parties, coverage limits, operations description, premium

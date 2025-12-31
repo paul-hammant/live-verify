@@ -1,9 +1,11 @@
-# Homeowners/renters insurance policies
-
-**Category:** Personal Lines Insurance
-**Volume:** Small
-**Retention:** Policy term + 10 years (claims)
-
+---
+title: "Homeowners/renters insurance policies"
+category: "Personal Lines Insurance"
+volume: "Small"
+retention: "Policy term + 10 years (claims)"
+slug: "homeowners-renters-insurance"
+tags: ["homeowners", "renters", "insurance", "personal", "lines"]
+---
 ## Data Verified
 
 Policyholder name, property address, coverage amounts, deductibles, premium, effective dates

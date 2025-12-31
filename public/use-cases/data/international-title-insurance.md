@@ -1,9 +1,11 @@
-# Title insurance for international transactions
-
-**Category:** Insurance & Risk Management
-**Volume:** Very Small
-**Retention:** Permanent (chain of title)
-
+---
+title: "Title insurance for international transactions"
+category: "Insurance & Risk Management"
+volume: "Very Small"
+retention: "Permanent (chain of title)"
+slug: "international-title-insurance"
+tags: ["international", "title", "insurance", "risk", "management"]
+---
 ## Data Verified
 
 Property owner, country, title insurer, coverage amount, jurisdictional risks

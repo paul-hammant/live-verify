@@ -1,9 +1,11 @@
-# International motor insurance (Green Card)
-
-**Category:** Personal Lines Insurance
-**Volume:** Small
-**Retention:** Trip duration + 1 year
-
+---
+title: "International motor insurance (Green Card)"
+category: "Personal Lines Insurance"
+volume: "Small"
+retention: "Trip duration + 1 year"
+slug: "green-card-motor-insurance"
+tags: ["green", "card", "motor", "insurance", "personal", "lines"]
+---
 ## Data Verified
 
 Policyholder name, vehicle, covered countries, insurer, policy number

@@ -1,9 +1,11 @@
-# Tachograph records and driver logbooks (ELD/AOBRD)
-
-**Category:** Logistics & Transportation
-**Volume:** Large
-**Retention:** 6 months - 3 years (DOT/FMCSA)
-
+---
+title: "Tachograph records and driver logbooks (ELD/AOBRD)"
+category: "Logistics & Transportation"
+volume: "Large"
+retention: "6 months - 3 years (DOT/FMCSA)"
+slug: "tachograph-records-driver-logs"
+tags: ["tachograph", "records", "driver", "logs", "logistics", "transportation"]
+---
 ## Data Verified
 
 Driver name, carrier, vehicle, hours of service, driving time, rest periods

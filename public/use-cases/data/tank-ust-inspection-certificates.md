@@ -1,9 +1,11 @@
-# Tank and underground storage tank (UST) inspection certificates
-
-**Category:** Safety Inspection Certificates
-**Volume:** Medium
-**Retention:** 1-5 years (EPA/state requirements)
-
+---
+title: "Tank and underground storage tank (UST) inspection certificates"
+category: "Safety Inspection Certificates"
+volume: "Medium"
+retention: "1-5 years (EPA/state requirements)"
+slug: "tank-ust-inspection-certificates"
+tags: ["tank", "inspection", "certificates", "safety"]
+---
 ## Data Verified
 
 Facility address, tank ID, inspector, inspection date, leak detection test results

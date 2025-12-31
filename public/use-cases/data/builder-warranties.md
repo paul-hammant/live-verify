@@ -1,9 +1,11 @@
-# Builder warranties (new construction)
-
-**Category:** Real Estate & Property
-**Volume:** Very Small
-**Retention:** 10-20 years (warranty period)
-
+---
+title: "Builder warranties (new construction)"
+category: "Real Estate & Property"
+volume: "Very Small"
+retention: "10-20 years (warranty period)"
+slug: "builder-warranties"
+tags: ["builder", "warranties", "real", "estate", "property"]
+---
 ## Data Verified
 
 Builder name, homeowner, property address, warranty terms, coverage

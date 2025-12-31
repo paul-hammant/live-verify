@@ -1,9 +1,11 @@
-# Construction lien waivers (conditional/unconditional)
-
-**Category:** Real Estate & Property
-**Volume:** Small
-**Retention:** 7-10 years (payment verification)
-
+---
+title: "Construction lien waivers (conditional/unconditional)"
+category: "Real Estate & Property"
+volume: "Small"
+retention: "7-10 years (payment verification)"
+slug: "construction-lien-waivers"
+tags: ["construction", "lien", "waivers", "real", "estate", "property"]
+---
 ## Data Verified
 
 Contractor name, property owner, property address, payment amount, project

@@ -1,9 +1,11 @@
-# Aggregate deductible and retrospective rating documentation
-
-**Category:** Insurance & Risk Management
-**Volume:** Small
-**Retention:** Policy term + 10 years
-
+---
+title: "Aggregate deductible and retrospective rating documentation"
+category: "Insurance & Risk Management"
+volume: "Small"
+retention: "Policy term + 10 years"
+slug: "aggregate-deductible-retrospective"
+tags: ["aggregate", "deductible", "retrospective", "insurance", "risk", "management"]
+---
 ## Data Verified
 
 Insured/ceding company, aggregate deductible, loss development, retrospective premium

@@ -1,9 +1,11 @@
-# Workers' compensation insurance posting
-
-**Category:** Mandatory Workplace Postings
-**Volume:** Very Large
-**Retention:** Current policy year
-
+---
+title: "Workers' compensation insurance posting"
+category: "Mandatory Workplace Postings"
+volume: "Very Large"
+retention: "Current policy year"
+slug: "workers-comp-insurance-posting"
+tags: ["workers", "comp", "insurance", "posting", "mandatory", "workplace", "postings"]
+---
 ## Data Verified
 
 Insurance carrier name, policy number, employer name, claim contact info

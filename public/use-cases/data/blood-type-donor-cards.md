@@ -1,9 +1,11 @@
-# Blood type and donor cards
-
-**Category:** Healthcare & Medical Records
-**Volume:** Small
-**Retention:** Lifetime (transfusion safety)
-
+---
+title: "Blood type and donor cards"
+category: "Healthcare & Medical Records"
+volume: "Small"
+retention: "Lifetime (transfusion safety)"
+slug: "blood-type-donor-cards"
+tags: ["blood", "type", "donor", "cards", "healthcare", "medical", "records"]
+---
 ## Data Verified
 
 Donor/patient name, DOB, blood type, screening results

@@ -1,9 +1,11 @@
-# Commercial invoices for customs clearance
-
-**Category:** Logistics & Transportation
-**Volume:** Large
-**Retention:** 7-10 years (customs audit)
-
+---
+title: "Commercial invoices for customs clearance"
+category: "Logistics & Transportation"
+volume: "Large"
+retention: "7-10 years (customs audit)"
+slug: "commercial-invoices-customs"
+tags: ["commercial", "invoices", "customs", "logistics", "transportation"]
+---
 ## Data Verified
 
 Exporter, importer, consignee, goods description, HS codes, declared value

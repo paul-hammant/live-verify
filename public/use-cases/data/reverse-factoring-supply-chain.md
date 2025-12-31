@@ -1,9 +1,11 @@
-# Reverse factoring (supply chain finance) documentation
-
-**Category:** Banking & Financial Services
-**Volume:** Small
-**Retention:** 7-10 years (audit trail)
-
+---
+title: "Reverse factoring (supply chain finance) documentation"
+category: "Banking & Financial Services"
+volume: "Small"
+retention: "7-10 years (audit trail)"
+slug: "reverse-factoring-supply-chain"
+tags: ["reverse", "factoring", "supply", "chain", "banking", "financial", "services"]
+---
 ## Data Verified
 
 Supplier, buyer, intermediary bank, invoice amount, payment terms

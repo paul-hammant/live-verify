@@ -1,9 +1,11 @@
-# Chargeback documentation and dispute records
-
-**Category:** Banking & Financial Services
-**Volume:** Small
-**Retention:** 3-7 years (dispute resolution)
-
+---
+title: "Chargeback documentation and dispute records"
+category: "Banking & Financial Services"
+volume: "Small"
+retention: "3-7 years (dispute resolution)"
+slug: "chargeback-documentation"
+tags: ["chargeback", "documentation", "banking", "financial", "services"]
+---
 ## Data Verified
 
 Merchant, customer, transaction details, chargeback reason, evidence

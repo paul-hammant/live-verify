@@ -1,9 +1,11 @@
-# Bar admission and good-standing letters
-
-**Category:** Professional & Educational Qualifications
-**Volume:** Very Small
-**Retention:** Current + 2-5 years
-
+---
+title: "Bar admission and good-standing letters"
+category: "Professional & Educational Qualifications"
+volume: "Very Small"
+retention: "Current + 2-5 years"
+slug: "bar-admission-good-standing"
+tags: ["admission", "good", "standing", "professional", "educational", "qualifications"]
+---
 ## Data Verified
 
 Attorney name, bar number, jurisdiction

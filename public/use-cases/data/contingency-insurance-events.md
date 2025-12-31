@@ -1,9 +1,11 @@
-# Contingency insurance (event cancellation, non-appearance)
-
-**Category:** Insurance & Risk Management
-**Volume:** Small
-**Retention:** Event + 7 years
-
+---
+title: "Contingency insurance (event cancellation, non-appearance)"
+category: "Insurance & Risk Management"
+volume: "Small"
+retention: "Event + 7 years"
+slug: "contingency-insurance-events"
+tags: ["contingency", "insurance", "events", "risk", "management"]
+---
 ## Data Verified
 
 Event organizer, performer, coverage trigger, coverage amount, insurer

@@ -1,9 +1,11 @@
-# Energy audits and efficiency ratings
-
-**Category:** Energy & Utilities
-**Volume:** Very Small
-**Retention:** 5-10 years (improvement tracking)
-
+---
+title: "Energy audits and efficiency ratings"
+category: "Energy & Utilities"
+volume: "Very Small"
+retention: "5-10 years (improvement tracking)"
+slug: "energy-audits-efficiency-ratings"
+tags: ["energy", "audits", "efficiency", "ratings", "utilities"]
+---
 ## Data Verified
 
 Property owner, auditor name, facility details, recommendations

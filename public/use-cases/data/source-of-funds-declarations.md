@@ -1,9 +1,11 @@
-# Source of funds/wealth declarations
-
-**Category:** Banking & Financial Services
-**Volume:** Small
-**Retention:** 5-10 years post-relationship
-
+---
+title: "Source of funds/wealth declarations"
+category: "Banking & Financial Services"
+volume: "Small"
+retention: "5-10 years post-relationship"
+slug: "source-of-funds-declarations"
+tags: ["source", "funds", "declarations", "banking", "financial", "services"]
+---
 ## Data Verified
 
 Customer name, income sources, asset origins, employment history, supporting documentation references

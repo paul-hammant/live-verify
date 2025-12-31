@@ -1,9 +1,11 @@
-# Livestock health certificates and pedigrees
-
-**Category:** Agriculture & Food
-**Volume:** Small
-**Retention:** Animal lifetime + 5-10 years
-
+---
+title: "Livestock health certificates and pedigrees"
+category: "Agriculture & Food"
+volume: "Small"
+retention: "Animal lifetime + 5-10 years"
+slug: "livestock-health-certificates"
+tags: ["livestock", "health", "certificates", "agriculture", "food"]
+---
 ## Data Verified
 
 Breeder name, owner name, veterinarian, farm location

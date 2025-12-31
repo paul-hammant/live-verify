@@ -1,9 +1,11 @@
-# Proof of delivery (POD) and delivery receipts
-
-**Category:** Logistics & Transportation
-**Volume:** Very Large
-**Retention:** Delivery + 3-7 years
-
+---
+title: "Proof of delivery (POD) and delivery receipts"
+category: "Logistics & Transportation"
+volume: "Very Large"
+retention: "Delivery + 3-7 years"
+slug: "proof-of-delivery-pod"
+tags: ["proof", "delivery", "logistics", "transportation"]
+---
 ## Data Verified
 
 Carrier, consignee, delivery address, signature/photo proof, timestamp

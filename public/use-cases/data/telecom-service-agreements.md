@@ -1,9 +1,11 @@
-# Service agreements and SLAs
-
-**Category:** Telecommunications
-**Volume:** Medium
-**Retention:** 7-10 years (contract disputes)
-
+---
+title: "Service agreements and SLAs"
+category: "Telecommunications"
+volume: "Medium"
+retention: "7-10 years (contract disputes)"
+slug: "telecom-service-agreements"
+tags: ["telecom", "service", "agreements", "telecommunications"]
+---
 ## Data Verified
 
 Customer name, address, account number, service terms, pricing

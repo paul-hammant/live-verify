@@ -1,9 +1,11 @@
-# Manufacturer self-declarations of conformity (DoC)
-
-**Category:** Product Certifications & Compliance
-**Volume:** Small
-**Retention:** Product lifecycle (5-15 years)
-
+---
+title: "Manufacturer self-declarations of conformity (DoC)"
+category: "Product Certifications & Compliance"
+volume: "Small"
+retention: "Product lifecycle (5-15 years)"
+slug: "manufacturer-declarations-of-conformity"
+tags: ["manufacturer", "declarations", "conformity", "product", "certifications", "compliance"]
+---
 ## Data Verified
 
 Manufacturer, model/part numbers, standards

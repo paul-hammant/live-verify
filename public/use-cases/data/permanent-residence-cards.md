@@ -1,9 +1,11 @@
-# Permanent residence cards (Green Card, ILR, PR)
-
-**Category:** Immigration & Visa Documents
-**Volume:** Small
-**Retention:** 10 years (card validity) + permanent
-
+---
+title: "Permanent residence cards (Green Card, ILR, PR)"
+category: "Immigration & Visa Documents"
+volume: "Small"
+retention: "10 years (card validity) + permanent"
+slug: "permanent-residence-cards"
+tags: ["permanent", "residence", "cards", "immigration", "visa", "documents"]
+---
 ## Data Verified
 
 Full name, DOB, nationality, residence status, card number, biometrics

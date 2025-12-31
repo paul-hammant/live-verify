@@ -1,9 +1,11 @@
-# Crane and hoist inspection certificates
-
-**Category:** Safety Inspection Certificates
-**Volume:** Small
-**Retention:** 1 year (annual inspection)
-
+---
+title: "Crane and hoist inspection certificates"
+category: "Safety Inspection Certificates"
+volume: "Small"
+retention: "1 year (annual inspection)"
+slug: "crane-hoist-inspection-certificates"
+tags: ["crane", "hoist", "inspection", "certificates", "safety"]
+---
 ## Data Verified
 
 Equipment ID, crane capacity, inspector/company, inspection date, load test results

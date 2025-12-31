@@ -1,9 +1,11 @@
-# Scouting reports and player statistics
-
-**Category:** Sports & Athletics
-**Volume:** Very Small
-**Retention:** 5-15 years (player development)
-
+---
+title: "Scouting reports and player statistics"
+category: "Sports & Athletics"
+volume: "Very Small"
+retention: "5-15 years (player development)"
+slug: "scouting-reports-player-stats"
+tags: ["scouting", "reports", "player", "stats", "sports", "athletics"]
+---
 ## Data Verified
 
 Player name, DOB, scout name, performance metrics, team

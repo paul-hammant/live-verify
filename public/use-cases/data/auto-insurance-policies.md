@@ -1,9 +1,11 @@
-# Auto insurance policies and declarations pages
-
-**Category:** Personal Lines Insurance
-**Volume:** Medium
-**Retention:** Policy term + 7 years (claims)
-
+---
+title: "Auto insurance policies and declarations pages"
+category: "Personal Lines Insurance"
+volume: "Medium"
+retention: "Policy term + 7 years (claims)"
+slug: "auto-insurance-policies"
+tags: ["auto", "insurance", "policies", "personal", "lines"]
+---
 ## Data Verified
 
 Policyholder name, address, VIN, named drivers, coverage limits, deductibles, premium

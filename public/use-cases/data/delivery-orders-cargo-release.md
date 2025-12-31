@@ -1,9 +1,11 @@
-# Delivery orders and cargo release documents
-
-**Category:** Logistics & Transportation
-**Volume:** Large
-**Retention:** Delivery + 3-7 years
-
+---
+title: "Delivery orders and cargo release documents"
+category: "Logistics & Transportation"
+volume: "Large"
+retention: "Delivery + 3-7 years"
+slug: "delivery-orders-cargo-release"
+tags: ["delivery", "orders", "cargo", "release", "logistics", "transportation"]
+---
 ## Data Verified
 
 Consignee, carrier, cargo description, release authorization

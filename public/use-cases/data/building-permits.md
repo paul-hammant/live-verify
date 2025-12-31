@@ -1,9 +1,11 @@
-# Building Permits
-
-**Category:** Construction & Property Permits
-**Volume:** Medium
-**Retention:** Permanent (building records)
-
+---
+title: "Building Permits"
+category: "Construction & Property Permits"
+volume: "Medium"
+retention: "Permanent (building records)"
+slug: "building-permits"
+tags: ["building", "permits", "construction", "property"]
+---
 ## Data Verified
 
 Permit number, permit type (new construction, renovation, demolition, electrical, plumbing, mechanical), property address and parcel number, property owner name, contractor name and license number, project description, scope of work, valuation, issue date, expiration date, approved plans reference, required inspections, special conditions.

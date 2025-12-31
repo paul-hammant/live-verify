@@ -1,9 +1,11 @@
-# Bills of Lading
-
-**Category:** Logistics & Transportation
-**Volume:** Medium
-**Retention:** Shipment completion plus 7-10 years (disputes, customs audits)
-
+---
+title: "Bills of Lading"
+category: "Logistics & Transportation"
+volume: "Medium"
+retention: "Shipment completion plus 7-10 years (disputes, customs audits)"
+slug: "bills-of-lading"
+tags: ["bills", "lading", "logistics", "transportation"]
+---
 ## Data Verified
 
 Shipper name and address, consignee name and address, notify party, origin port/location, destination port/location, vessel name and voyage number, booking number, container numbers, seal numbers, cargo description, gross weight, package count, freight terms (prepaid/collect), B/L number.

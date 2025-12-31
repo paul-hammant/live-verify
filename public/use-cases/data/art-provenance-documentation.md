@@ -1,9 +1,11 @@
-# Provenance documentation and ownership history
-
-**Category:** Art & Collectibles
-**Volume:** Very Small
-**Retention:** Permanent (chain of title)
-
+---
+title: "Provenance documentation and ownership history"
+category: "Art & Collectibles"
+volume: "Very Small"
+retention: "Permanent (chain of title)"
+slug: "art-provenance-documentation"
+tags: ["provenance", "documentation", "collectibles"]
+---
 ## Data Verified
 
 Previous owners, dealers, auction houses, transfer dates

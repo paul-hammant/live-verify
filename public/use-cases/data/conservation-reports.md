@@ -1,9 +1,11 @@
-# Conservation reports and restoration history
-
-**Category:** Art & Collectibles
-**Volume:** Very Small
-**Retention:** Permanent (artwork care)
-
+---
+title: "Conservation reports and restoration history"
+category: "Art & Collectibles"
+volume: "Very Small"
+retention: "Permanent (artwork care)"
+slug: "conservation-reports"
+tags: ["conservation", "reports", "collectibles"]
+---
 ## Data Verified
 
 Conservator name, owner, treatment details, facility

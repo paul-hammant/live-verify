@@ -1,9 +1,11 @@
-# Wetlands delineation reports
-
-**Category:** Real Estate & Property
-**Volume:** Very Small
-**Retention:** Permanent (environmental compliance)
-
+---
+title: "Wetlands delineation reports"
+category: "Real Estate & Property"
+volume: "Very Small"
+retention: "Permanent (environmental compliance)"
+slug: "wetlands-delineation-reports"
+tags: ["wetlands", "delineation", "reports", "real", "estate", "property"]
+---
 ## Data Verified
 
 Property owner, environmental consultant, site address, wetland boundaries

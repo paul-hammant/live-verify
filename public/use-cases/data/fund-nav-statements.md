@@ -1,9 +1,11 @@
-# Fund NAV Statements and Capital Account Statements
-
-**Category:** Investment & Wealth Management
-**Volume:** Medium (daily for many funds, monthly/quarterly for others)
-**Retention:** 7-10 years (tax, audit, dispute resolution)
-
+---
+title: "Fund NAV Statements and Capital Account Statements"
+category: "Investment & Wealth Management"
+volume: "Medium (daily for many funds, monthly/quarterly for others)"
+retention: "7-10 years (tax, audit, dispute resolution)"
+slug: "fund-nav-statements"
+tags: ["fund", "statements", "investment", "wealth", "management"]
+---
 ## Data Verified
 
 Fund name, fund administrator name, investor name, account/investor ID, statement date, NAV per share/unit, shares/units held, capital account value, period performance, management fee, performance fee (if applicable), any redemption or subscription activity.

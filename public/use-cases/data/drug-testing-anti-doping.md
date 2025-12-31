@@ -1,9 +1,11 @@
-# Drug testing (anti-doping) certificates
-
-**Category:** Sports & Athletics
-**Volume:** Very Small
-**Retention:** 10-20 years (WADA requirements)
-
+---
+title: "Drug testing (anti-doping) certificates"
+category: "Sports & Athletics"
+volume: "Very Small"
+retention: "10-20 years (WADA requirements)"
+slug: "drug-testing-anti-doping"
+tags: ["drug", "testing", "anti", "doping", "sports", "athletics"]
+---
 ## Data Verified
 
 Athlete name, DOB, test date, sample ID, testing authority

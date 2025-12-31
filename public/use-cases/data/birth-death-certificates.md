@@ -1,9 +1,11 @@
-# Birth and Death Certificates
-
-**Category:** Government & Civic Documents
-**Volume:** Small (per certificate, but billions exist globally)
-**Retention:** Permanent (vital records)
-
+---
+title: "Birth and Death Certificates"
+category: "Government & Civic Documents"
+volume: "Small (per certificate, but billions exist globally)"
+retention: "Permanent (vital records)"
+slug: "birth-death-certificates"
+tags: ["birth", "death", "certificates", "government", "civic", "documents"]
+---
 ## Data Verified
 
 **Birth Certificates:** Name, date of birth, place of birth, parents' names, registration number, issuing jurisdiction.

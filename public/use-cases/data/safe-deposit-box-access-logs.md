@@ -1,9 +1,11 @@
-# Safe deposit box access logs
-
-**Category:** Notary Services
-**Volume:** Small
-**Retention:** Access + 7-10 years
-
+---
+title: "Safe deposit box access logs"
+category: "Notary Services"
+volume: "Small"
+retention: "Access + 7-10 years"
+slug: "safe-deposit-box-access-logs"
+tags: ["safe", "deposit", "access", "logs", "notary", "services"]
+---
 ## Data Verified
 
 Box holder name, box number, access date/time, witness name (notary or bank officer), access purpose, notary/officer signature

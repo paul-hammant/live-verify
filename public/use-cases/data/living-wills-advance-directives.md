@@ -1,9 +1,11 @@
-# Living wills and advance directives
-
-**Category:** Healthcare & Medical Records
-**Volume:** Very Small
-**Retention:** Permanent (end-of-life care)
-
+---
+title: "Living wills and advance directives"
+category: "Healthcare & Medical Records"
+volume: "Very Small"
+retention: "Permanent (end-of-life care)"
+slug: "living-wills-advance-directives"
+tags: ["living", "wills", "advance", "directives", "healthcare", "medical", "records"]
+---
 ## Data Verified
 
 Patient name, DOB, medical wishes, appointed decision-maker, witnesses

@@ -1,9 +1,11 @@
-# Total loss valuations and actual cash value (ACV) reports
-
-**Category:** Insurance & Risk Management
-**Volume:** Medium
-**Retention:** Claim term + 7 years
-
+---
+title: "Total loss valuations and actual cash value (ACV) reports"
+category: "Insurance & Risk Management"
+volume: "Medium"
+retention: "Claim term + 7 years"
+slug: "total-loss-valuations-acv"
+tags: ["total", "loss", "valuations", "insurance", "risk", "management"]
+---
 ## Data Verified
 
 Vehicle/property details, market value, depreciation, ACV calculation, valuation source

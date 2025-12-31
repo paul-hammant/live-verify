@@ -1,9 +1,11 @@
-# Firearms dealer (FFL) and gun shop licenses
-
-**Category:** Professional & Occupational Licenses
-**Volume:** Small
-**Retention:** 3 years (license term)
-
+---
+title: "Firearms dealer (FFL) and gun shop licenses"
+category: "Professional & Occupational Licenses"
+volume: "Small"
+retention: "3 years (license term)"
+slug: "firearms-dealer-ffl-licenses"
+tags: ["firearms", "dealer", "licenses", "professional", "occupational"]
+---
 ## Data Verified
 
 Licensee name, business name, address, FFL number, license type

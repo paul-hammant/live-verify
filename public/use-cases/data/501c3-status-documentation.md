@@ -1,9 +1,11 @@
-# 501(c)(3) status documentation
-
-**Category:** Charitable & Non-Profit
-**Volume:** Tiny
-**Retention:** Permanent (legal status)
-
+---
+title: "501(c)(3) status documentation"
+category: "Charitable & Non-Profit"
+volume: "Tiny"
+retention: "Permanent (legal status)"
+slug: "501c3-status-documentation"
+tags: ["501c3", "status", "documentation", "charitable", "non-profit"]
+---
 ## Data Verified
 
 Organization name, officers, board members, EIN, IRS determination

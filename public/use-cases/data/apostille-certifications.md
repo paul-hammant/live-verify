@@ -1,9 +1,11 @@
-# Apostille certifications (Hague Convention)
-
-**Category:** Notary Services
-**Volume:** Small
-**Retention:** Document lifetime + permanent
-
+---
+title: "Apostille certifications (Hague Convention)"
+category: "Notary Services"
+volume: "Small"
+retention: "Document lifetime + permanent"
+slug: "apostille-certifications"
+tags: ["apostille", "certifications", "notary", "services"]
+---
 ## Data Verified
 
 Document holder, issuing authority (Secretary of State), apostille certificate number, destination country, underlying document details, apostille seal, issue date

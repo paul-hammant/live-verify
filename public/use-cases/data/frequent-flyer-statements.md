@@ -1,9 +1,11 @@
-# Frequent flyer statements and mileage balance confirmations
-
-**Category:** Travel & Hospitality
-**Volume:** Medium
-**Retention:** Statement period + 3-7 years
-
+---
+title: "Frequent flyer statements and mileage balance confirmations"
+category: "Travel & Hospitality"
+volume: "Medium"
+retention: "Statement period + 3-7 years"
+slug: "frequent-flyer-statements"
+tags: ["frequent", "flyer", "statements", "travel", "hospitality"]
+---
 ## Data Verified
 
 Member name, account number, mileage balance, tier status, activity history

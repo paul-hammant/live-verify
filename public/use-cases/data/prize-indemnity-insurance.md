@@ -1,9 +1,11 @@
-# Prize indemnity insurance (contests, hole-in-one, sweepstakes)
-
-**Category:** Insurance & Risk Management
-**Volume:** Very Small
-**Retention:** Contest period + 7 years
-
+---
+title: "Prize indemnity insurance (contests, hole-in-one, sweepstakes)"
+category: "Insurance & Risk Management"
+volume: "Very Small"
+retention: "Contest period + 7 years"
+slug: "prize-indemnity-insurance"
+tags: ["prize", "indemnity", "insurance", "risk", "management"]
+---
 ## Data Verified
 
 Contest sponsor, prize details, odds, coverage amount, insurer

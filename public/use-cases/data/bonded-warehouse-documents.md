@@ -1,9 +1,11 @@
-# Bonded warehouse entry and exit documents
-
-**Category:** Logistics & Transportation
-**Volume:** Medium
-**Retention:** 7-10 years (customs compliance)
-
+---
+title: "Bonded warehouse entry and exit documents"
+category: "Logistics & Transportation"
+volume: "Medium"
+retention: "7-10 years (customs compliance)"
+slug: "bonded-warehouse-documents"
+tags: ["bonded", "warehouse", "documents", "logistics", "transportation"]
+---
 ## Data Verified
 
 Importer, bonded warehouse, customs entry, goods in/out, duty deferral

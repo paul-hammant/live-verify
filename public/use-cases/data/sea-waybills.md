@@ -1,9 +1,11 @@
-# Sea waybills (non-negotiable B/L)
-
-**Category:** Logistics & Transportation
-**Volume:** Large
-**Retention:** 7-10 years (proof of shipment)
-
+---
+title: "Sea waybills (non-negotiable B/L)"
+category: "Logistics & Transportation"
+volume: "Large"
+retention: "7-10 years (proof of shipment)"
+slug: "sea-waybills"
+tags: ["waybills", "logistics", "transportation"]
+---
 ## Data Verified
 
 Shipper, consignee, carrier, vessel, cargo description

@@ -1,9 +1,11 @@
-# Marine hull & machinery insurance policies
-
-**Category:** Logistics & Transportation
-**Volume:** Small
-**Retention:** Vessel lifetime + 10 years
-
+---
+title: "Marine hull & machinery insurance policies"
+category: "Logistics & Transportation"
+volume: "Small"
+retention: "Vessel lifetime + 10 years"
+slug: "marine-hull-machinery"
+tags: ["marine", "hull", "machinery", "logistics", "transportation"]
+---
 ## Data Verified
 
 Vessel owner, vessel IMO number, hull value, coverage terms, classification society

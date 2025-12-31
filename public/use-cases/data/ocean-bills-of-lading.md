@@ -1,9 +1,11 @@
-# Ocean bills of lading (B/L) - negotiable/non-negotiable
-
-**Category:** Logistics & Transportation
-**Volume:** Large
-**Retention:** 7-10 years (legal title)
-
+---
+title: "Ocean bills of lading (B/L) - negotiable/non-negotiable"
+category: "Logistics & Transportation"
+volume: "Large"
+retention: "7-10 years (legal title)"
+slug: "ocean-bills-of-lading"
+tags: ["ocean", "bills", "lading", "logistics", "transportation"]
+---
 ## Data Verified
 
 Shipper, consignee, notify party, carrier, vessel, cargo description, value

@@ -1,9 +1,11 @@
-# Grant applications and awards
-
-**Category:** Charitable & Non-Profit
-**Volume:** Very Small
-**Retention:** 7-10 years (financial audit)
-
+---
+title: "Grant applications and awards"
+category: "Charitable & Non-Profit"
+volume: "Very Small"
+retention: "7-10 years (financial audit)"
+slug: "nonprofit-grant-applications"
+tags: ["nonprofit", "grant", "applications", "charitable", "non-profit"]
+---
 ## Data Verified
 
 Applicant organization, officers, grant amount, funder, project details

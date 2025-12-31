@@ -1,9 +1,11 @@
-# Clinical Trial Enrollment and Consent Documents
-
-**Category:** Scientific & Research
-**Volume:** Very Small (per document, but thousands of trials globally)
-**Retention:** 25-30 years (FDA regulatory requirement)
-
+---
+title: "Clinical Trial Enrollment and Consent Documents"
+category: "Scientific & Research"
+volume: "Very Small (per document, but thousands of trials globally)"
+retention: "25-30 years (FDA regulatory requirement)"
+slug: "clinical-trial-documents"
+tags: ["clinical", "trial", "documents", "scientific", "research"]
+---
 ## Data Verified
 
 Participant identifier (coded/pseudonymized), investigator name and site, trial identifier (NCT number, protocol number), sponsor name, consent form version and date, date of consent, witness information (if required), any amendments or re-consents, eligibility confirmation.

@@ -1,9 +1,11 @@
-# Ballot chain-of-custody transfer forms
-
-**Category:** Immigration & Visa Documents
-**Volume:** Small
-**Retention:** Election cycle + 2-4 years
-
+---
+title: "Ballot chain-of-custody transfer forms"
+category: "Immigration & Visa Documents"
+volume: "Small"
+retention: "Election cycle + 2-4 years"
+slug: "ballot-chain-of-custody"
+tags: ["ballot", "chain", "custody", "immigration", "visa", "documents"]
+---
 ## Data Verified
 
 Custodian names, transfer timestamps, ballot container seals, precinct number, number of ballots, transfer location

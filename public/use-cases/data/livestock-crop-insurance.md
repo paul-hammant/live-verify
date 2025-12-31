@@ -1,9 +1,11 @@
-# Livestock/crop insurance policies
-
-**Category:** Insurance & Risk Management
-**Volume:** Small
-**Retention:** Policy term + 7-10 years
-
+---
+title: "Livestock/crop insurance policies"
+category: "Insurance & Risk Management"
+volume: "Small"
+retention: "Policy term + 7-10 years"
+slug: "livestock-crop-insurance"
+tags: ["livestock", "crop", "insurance", "risk", "management"]
+---
 ## Data Verified
 
 Farm owner, livestock/crop type, coverage amount, peril coverage, insurer

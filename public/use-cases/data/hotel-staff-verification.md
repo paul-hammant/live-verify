@@ -1,9 +1,11 @@
-# Hotel/vacation rental staff verification
-
-**Category:** Personal Safety & Service Verification
-**Volume:** Large
-**Retention:** Stay + 1-3 years (incident records)
-
+---
+title: "Hotel/vacation rental staff verification"
+category: "Personal Safety & Service Verification"
+volume: "Large"
+retention: "Stay + 1-3 years (incident records)"
+slug: "hotel-staff-verification"
+tags: ["hotel", "staff", "verification", "personal", "safety", "service"]
+---
 ## Data Verified
 
 Staff name, photo, role, property affiliation, employee ID

@@ -1,9 +1,11 @@
-# Letters of Credit
-
-**Category:** Banking & Financial Services
-**Volume:** Small (but high-value transactions)
-**Retention:** 7-10 years (transaction lifecycle plus disputes)
-
+---
+title: "Letters of Credit"
+category: "Banking & Financial Services"
+volume: "Small (but high-value transactions)"
+retention: "7-10 years (transaction lifecycle plus disputes)"
+slug: "letters-of-credit"
+tags: ["letters", "credit", "banking", "financial", "services"]
+---
 ## Data Verified
 
 Issuing bank name and address, beneficiary (seller/exporter) name, applicant (buyer/importer) name, credit amount and currency, payment terms (sight, usance, deferred), expiry date, required documents list, shipping terms, port of loading/discharge, goods description, LC number.

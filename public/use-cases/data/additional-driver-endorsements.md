@@ -1,9 +1,11 @@
-# Additional driver endorsements and cover notes
-
-**Category:** Personal Lines Insurance
-**Volume:** Medium
-**Retention:** Endorsement validity period
-
+---
+title: "Additional driver endorsements and cover notes"
+category: "Personal Lines Insurance"
+volume: "Medium"
+retention: "Endorsement validity period"
+slug: "additional-driver-endorsements"
+tags: ["additional", "driver", "endorsements", "personal", "lines", "insurance"]
+---
 ## Data Verified
 
 Policyholder name, additional driver name/license, vehicle, effective dates

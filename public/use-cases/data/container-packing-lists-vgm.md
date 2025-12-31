@@ -1,9 +1,11 @@
-# Container packing lists and weight certificates (VGM)
-
-**Category:** Logistics & Transportation
-**Volume:** Large
-**Retention:** Shipment + 7 years
-
+---
+title: "Container packing lists and weight certificates (VGM)"
+category: "Logistics & Transportation"
+volume: "Large"
+retention: "Shipment + 7 years"
+slug: "container-packing-lists-vgm"
+tags: ["container", "packing", "lists", "logistics", "transportation"]
+---
 ## Data Verified
 
 Shipper, packer, container number, cargo weight, packing details

@@ -1,9 +1,11 @@
-# Directors' statutory liability (pension trustee liability)
-
-**Category:** Insurance & Risk Management
-**Volume:** Very Small
-**Retention:** Policy term + 20 years (claims tail)
-
+---
+title: "Directors' statutory liability (pension trustee liability)"
+category: "Insurance & Risk Management"
+volume: "Very Small"
+retention: "Policy term + 20 years (claims tail)"
+slug: "directors-statutory-liability-pension"
+tags: ["directors", "statutory", "liability", "pension", "insurance", "risk", "management"]
+---
 ## Data Verified
 
 Company, pension trustees, ERISA fiduciary liability, coverage limits

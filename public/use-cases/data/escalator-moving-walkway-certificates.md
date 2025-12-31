@@ -1,9 +1,11 @@
-# Escalator and moving walkway inspection certificates
-
-**Category:** Safety Inspection Certificates
-**Volume:** Medium
-**Retention:** 1-3 years (inspection cycle)
-
+---
+title: "Escalator and moving walkway inspection certificates"
+category: "Safety Inspection Certificates"
+volume: "Medium"
+retention: "1-3 years (inspection cycle)"
+slug: "escalator-moving-walkway-certificates"
+tags: ["escalator", "moving", "walkway", "certificates", "safety", "inspection"]
+---
 ## Data Verified
 
 Building address, equipment ID, inspector name, inspection date, safety compliance

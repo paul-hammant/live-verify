@@ -1,9 +1,11 @@
-# Training completion certificates (safety, compliance, skills)
-
-**Category:** Professional & Educational Qualifications
-**Volume:** Small
-**Retention:** 5-10 years (regulatory requirement)
-
+---
+title: "Training completion certificates (safety, compliance, skills)"
+category: "Professional & Educational Qualifications"
+volume: "Small"
+retention: "5-10 years (regulatory requirement)"
+slug: "training-completion-certificates"
+tags: ["training", "completion", "certificates", "professional", "educational", "qualifications"]
+---
 ## Data Verified
 
 Trainee name, employer name, training course title, training date, instructor name, hours completed

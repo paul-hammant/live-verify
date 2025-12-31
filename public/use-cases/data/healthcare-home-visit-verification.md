@@ -1,9 +1,11 @@
-# Healthcare home visit worker verification
-
-**Category:** Personal Safety & Service Verification
-**Volume:** Medium
-**Retention:** Visit + 3-7 years (care records)
-
+---
+title: "Healthcare home visit worker verification"
+category: "Personal Safety & Service Verification"
+volume: "Medium"
+retention: "Visit + 3-7 years (care records)"
+slug: "healthcare-home-visit-verification"
+tags: ["healthcare", "home", "visit", "verification", "personal", "safety", "service"]
+---
 ## Data Verified
 
 Worker name, photo, professional license, agency, background check date

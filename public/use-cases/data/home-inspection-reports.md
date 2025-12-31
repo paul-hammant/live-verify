@@ -1,9 +1,11 @@
-# Home Inspection Reports
-
-**Category:** Real Estate & Property
-**Volume:** Small
-**Retention:** 5-10 years (transaction records, liability protection)
-
+---
+title: "Home Inspection Reports"
+category: "Real Estate & Property"
+volume: "Small"
+retention: "5-10 years (transaction records, liability protection)"
+slug: "home-inspection-reports"
+tags: ["home", "inspection", "reports", "real", "estate", "property"]
+---
 ## Data Verified
 
 Inspector name and license number, buyer name, seller name (if disclosed), property address, inspection date, report date, property type, systems and components inspected, findings and deficiencies, recommendations, limitations, inspector's signature.

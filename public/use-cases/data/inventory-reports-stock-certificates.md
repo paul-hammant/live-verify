@@ -1,9 +1,11 @@
-# Inventory reports and stock certificates
-
-**Category:** Logistics & Transportation
-**Volume:** Medium
-**Retention:** Reporting period + 7 years
-
+---
+title: "Inventory reports and stock certificates"
+category: "Logistics & Transportation"
+volume: "Medium"
+retention: "Reporting period + 7 years"
+slug: "inventory-reports-stock-certificates"
+tags: ["inventory", "reports", "stock", "certificates", "logistics", "transportation"]
+---
 ## Data Verified
 
 Warehouse operator, depositor, inventory quantities, lot numbers, valuation

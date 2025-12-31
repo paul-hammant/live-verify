@@ -1,9 +1,11 @@
-# Recording page abstracts (short-form)
-
-**Category:** Real Estate & Property
-**Volume:** Small
-**Retention:** Permanent
-
+---
+title: "Recording page abstracts (short-form)"
+category: "Real Estate & Property"
+volume: "Small"
+retention: "Permanent"
+slug: "recording-page-abstracts"
+tags: ["recording", "page", "abstracts", "real", "estate", "property"]
+---
 ## Data Verified
 
 Parties (grantor/grantee), instrument type, recording date, instrument number, legal description reference, recorder's office

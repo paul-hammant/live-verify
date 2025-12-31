@@ -1,9 +1,11 @@
-# Calibration Certificates
-
-**Category:** Product Certifications & Compliance
-**Volume:** Small
-**Retention:** 5-10 years (regulatory requirements, re-calibration cycles)
-
+---
+title: "Calibration Certificates"
+category: "Product Certifications & Compliance"
+volume: "Small"
+retention: "5-10 years (regulatory requirements, re-calibration cycles)"
+slug: "calibration-certificates"
+tags: ["calibration", "certificates", "product", "certifications", "compliance"]
+---
 ## Data Verified
 
 Instrument identification (make, model, serial number), calibration laboratory name and accreditation number, technician name and certification, calibration date, next calibration due date, calibration standards used (with traceability), measurement results, pass/fail status, environmental conditions during calibration, any adjustments made, uncertainty statements.

@@ -1,9 +1,11 @@
-# Certificates of insurance (COI) for contractors/vendors
-
-**Category:** Commercial Lines Insurance
-**Volume:** Large
-**Retention:** Contract term + 3-7 years
-
+---
+title: "Certificates of insurance (COI) for contractors/vendors"
+category: "Commercial Lines Insurance"
+volume: "Large"
+retention: "Contract term + 3-7 years"
+slug: "certificates-of-insurance-contractors"
+tags: ["certificates", "insurance", "contractors", "commercial", "lines"]
+---
 ## Data Verified
 
 Certificate holder, insured contractor, coverage types/limits, policy numbers, effective dates

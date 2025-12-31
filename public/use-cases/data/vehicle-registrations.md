@@ -1,9 +1,11 @@
-# Vehicle registrations and inspection reports
-
-**Category:** Logistics & Transportation
-**Volume:** Large
-**Retention:** Registration cycle + 3-7 years
-
+---
+title: "Vehicle registrations and inspection reports"
+category: "Logistics & Transportation"
+volume: "Large"
+retention: "Registration cycle + 3-7 years"
+slug: "vehicle-registrations"
+tags: ["vehicle", "registrations", "logistics", "transportation"]
+---
 ## Data Verified
 
 Owner name, VIN, license plate number, vehicle make/model/year, registration expiration date, jurisdiction

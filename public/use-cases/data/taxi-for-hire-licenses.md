@@ -1,9 +1,11 @@
-# Taxi and for-hire vehicle licenses (medallions)
-
-**Category:** Professional & Occupational Licenses
-**Volume:** Medium
-**Retention:** License term (annual/perpetual)
-
+---
+title: "Taxi and for-hire vehicle licenses (medallions)"
+category: "Professional & Occupational Licenses"
+volume: "Medium"
+retention: "License term (annual/perpetual)"
+slug: "taxi-for-hire-licenses"
+tags: ["taxi", "hire", "licenses", "professional", "occupational"]
+---
 ## Data Verified
 
 Driver name, vehicle ID, license number, company, issuing authority

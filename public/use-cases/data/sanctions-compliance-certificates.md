@@ -1,9 +1,11 @@
-# Sanctions compliance certificates
-
-**Category:** Banking & Financial Services
-**Volume:** Very Small
-**Retention:** 7-10 years (audit trail)
-
+---
+title: "Sanctions compliance certificates"
+category: "Banking & Financial Services"
+volume: "Very Small"
+retention: "7-10 years (audit trail)"
+slug: "sanctions-compliance-certificates"
+tags: ["sanctions", "compliance", "certificates", "banking", "financial", "services"]
+---
 ## Data Verified
 
 Screened party name, screening date, OFAC/UN sanctions list version, compliance officer name, screening results

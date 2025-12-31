@@ -1,9 +1,11 @@
-# Board resolutions and written consents
-
-**Category:** Business & Commerce
-**Volume:** Small
-**Retention:** Permanent
-
+---
+title: "Board resolutions and written consents"
+category: "Business & Commerce"
+volume: "Small"
+retention: "Permanent"
+slug: "board-resolutions-written-consents"
+tags: ["board", "resolutions", "written", "consents", "business", "commerce"]
+---
 ## Data Verified
 
 Directors, resolution text

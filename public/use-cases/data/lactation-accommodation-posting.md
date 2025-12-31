@@ -1,9 +1,11 @@
-# Right to request lactation accommodation posting
-
-**Category:** Mandatory Workplace Postings
-**Volume:** Large
-**Retention:** Current version
-
+---
+title: "Right to request lactation accommodation posting"
+category: "Mandatory Workplace Postings"
+volume: "Large"
+retention: "Current version"
+slug: "lactation-accommodation-posting"
+tags: ["lactation", "accommodation", "posting", "mandatory", "workplace", "postings"]
+---
 ## Data Verified
 
 None (informational), employer lactation policy, request process

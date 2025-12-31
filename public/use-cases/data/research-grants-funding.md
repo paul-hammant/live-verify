@@ -1,9 +1,11 @@
-# Research grants and funding awards
-
-**Category:** Scientific & Research
-**Volume:** Very Small
-**Retention:** 7-10 years (financial audit)
-
+---
+title: "Research grants and funding awards"
+category: "Scientific & Research"
+volume: "Very Small"
+retention: "7-10 years (financial audit)"
+slug: "research-grants-funding"
+tags: ["research", "grants", "funding", "scientific"]
+---
 ## Data Verified
 
 PI name, co-investigators, institution, budget details

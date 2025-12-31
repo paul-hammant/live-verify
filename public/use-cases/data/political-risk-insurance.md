@@ -1,9 +1,11 @@
-# Political risk insurance policies
-
-**Category:** Insurance & Risk Management
-**Volume:** Very Small
-**Retention:** Policy term + 20 years
-
+---
+title: "Political risk insurance policies"
+category: "Insurance & Risk Management"
+volume: "Very Small"
+retention: "Policy term + 20 years"
+slug: "political-risk-insurance"
+tags: ["political", "risk", "insurance", "management"]
+---
 ## Data Verified
 
 Investor/company, host country, coverage (expropriation, political violence), limits

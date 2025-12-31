@@ -1,9 +1,11 @@
-# Vocational certifications (trade skills, technical training)
-
-**Category:** Professional & Educational Qualifications
-**Volume:** Very Small
-**Retention:** 5-10 years (certification validity)
-
+---
+title: "Vocational certifications (trade skills, technical training)"
+category: "Professional & Educational Qualifications"
+volume: "Very Small"
+retention: "5-10 years (certification validity)"
+slug: "vocational-certifications"
+tags: ["vocational", "certifications", "professional", "educational", "qualifications"]
+---
 ## Data Verified
 
 Trainee name, skill area, certifying body, certification date, credential number, competency level

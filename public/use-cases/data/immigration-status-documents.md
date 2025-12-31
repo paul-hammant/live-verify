@@ -1,9 +1,11 @@
-# Immigration Status Documents
-
-**Category:** Immigration & Visa Documents
-**Volume:** Medium (aggregate)
-**Retention:** Varies by document type (visa validity to permanent)
-
+---
+title: "Immigration Status Documents"
+category: "Immigration & Visa Documents"
+volume: "Medium (aggregate)"
+retention: "Varies by document type (visa validity to permanent)"
+slug: "immigration-status-documents"
+tags: ["immigration", "status", "documents", "visa"]
+---
 Immigration documents determine legal status, work authorization, and residency rights. Verification is critical for employers (I-9 compliance), educational institutions, government agencies, and the individuals themselves. Privacy salt is particularly important for these sensitive documents.
 
 ## Document Types
@@ -14,7 +16,6 @@ Immigration documents determine legal status, work authorization, and residency 
 
 **Data Verified:** Full name, sex, Alien registration number (A-number), date of birth, card validity dates (from-to), country of birth, resident since date.
 
-**Retention:** 10 years (renewal cycle)
 
 **Physical Card Considerations:** Holders don't need to carry the physical card at all times for domestic travel. OCR-to-hash verification reduces the need to carry the original while maintaining proof of status.
 
@@ -26,7 +27,6 @@ Immigration documents determine legal status, work authorization, and residency 
 
 **Data Verified:** Full name, date of birth, country of origin/former nationality, naturalization date, certificate number, issuing USCIS office.
 
-**Retention:** Permanent (citizenship proof)
 
 **Document Types:**
 - **N-550/N-570:** Certificate of Naturalization (for those who naturalized)
@@ -42,7 +42,6 @@ Immigration documents determine legal status, work authorization, and residency 
 
 **Data Verified:** Full name, visa type/classification, passport number, employer name, validity period, I-94 admission number.
 
-**Retention:** Visa validity period + I-9 retention
 
 **Visa Categories:**
 - **H-1B:** Specialty occupation (requires bachelor's degree)
@@ -59,7 +58,6 @@ Immigration documents determine legal status, work authorization, and residency 
 
 **Data Verified:** Full name, date of birth, nationality, school/program name, SEVIS ID number, program dates, visa validity.
 
-**Retention:** Study period + 7 years
 
 **Related Documents:**
 - **I-20:** Certificate of Eligibility for F-1 status
@@ -74,7 +72,6 @@ Immigration documents determine legal status, work authorization, and residency 
 
 **Data Verified:** Full name, date of birth, photo reference, A-number, category code, validity dates, USCIS receipt number.
 
-**Retention:** Work authorization period + I-9 retention
 
 **Who Gets EADs:**
 - Asylum applicants and asylees
@@ -92,7 +89,6 @@ Immigration documents determine legal status, work authorization, and residency 
 
 **Data Verified:** Full name, passport number, visa type, validity period, issuing post/authority, annotation number.
 
-**Retention:** Visa validity + 5-10 years
 
 **Document Types:**
 - **Visa Stamp:** Affixed to passport at consulate
@@ -108,7 +104,6 @@ Immigration documents determine legal status, work authorization, and residency 
 
 **Data Verified:** Full name, passport number, nationality, admission date, admission class, admitted until date, I-94 number.
 
-**Retention:** Immigration record + 7 years
 
 **Electronic I-94:** Since 2013, I-94 is typically electronic for air/sea arrivals, printable from CBP website. Land border crossings may still receive paper I-94.
 

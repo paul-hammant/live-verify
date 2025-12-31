@@ -1,9 +1,11 @@
-# Insurance claims adjuster reports
-
-**Category:** Insurance & Risk Management
-**Volume:** Small
-**Retention:** Claim term + 7-10 years
-
+---
+title: "Insurance claims adjuster reports"
+category: "Insurance & Risk Management"
+volume: "Small"
+retention: "Claim term + 7-10 years"
+slug: "insurance-claims-adjuster-reports"
+tags: ["insurance", "claims", "adjuster", "reports", "risk", "management"]
+---
 ## Data Verified
 
 Claimant name, adjuster name, adjuster license, damage assessment, claim amount, inspection date, photos

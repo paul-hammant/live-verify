@@ -1,9 +1,11 @@
-# Insurance Policy Documents
-
-**Category:** Insurance & Risk Management
-**Volume:** Medium-Small
-**Retention:** Policy term plus 7-10 years (claims runoff period)
-
+---
+title: "Insurance Policy Documents"
+category: "Insurance & Risk Management"
+volume: "Medium-Small"
+retention: "Policy term plus 7-10 years (claims runoff period)"
+slug: "insurance-policy-documents"
+tags: ["insurance", "policy", "documents", "risk", "management"]
+---
 ## Data Verified
 
 Policyholder name, policy number, insurer name, coverage type (liability, property, auto, health, life), coverage amounts and limits, deductibles, effective and expiration dates, premium amount, named insureds and additional insureds, covered property or vehicles, endorsements and exclusions.

@@ -1,9 +1,11 @@
-# Customs entry documents and clearance certificates
-
-**Category:** Logistics & Transportation
-**Volume:** Large
-**Retention:** 7-10 years (customs audit)
-
+---
+title: "Customs entry documents and clearance certificates"
+category: "Logistics & Transportation"
+volume: "Large"
+retention: "7-10 years (customs audit)"
+slug: "customs-entry-clearance"
+tags: ["customs", "entry", "clearance", "logistics", "transportation"]
+---
 ## Data Verified
 
 Importer, customs broker, entry number, duty/tax paid, goods classification

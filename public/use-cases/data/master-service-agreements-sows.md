@@ -1,9 +1,11 @@
-# Master service agreements and SOWs
-
-**Category:** Business & Commerce
-**Volume:** Medium
-**Retention:** Contract term + 7-10 years
-
+---
+title: "Master service agreements and SOWs"
+category: "Business & Commerce"
+volume: "Medium"
+retention: "Contract term + 7-10 years"
+slug: "master-service-agreements-sows"
+tags: ["master", "service", "agreements", "sows", "business", "commerce"]
+---
 ## Data Verified
 
 Parties, signatories

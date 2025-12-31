@@ -1,9 +1,11 @@
-# Large loss reports (to reinsurers)
-
-**Category:** Insurance & Risk Management
-**Volume:** Small
-**Retention:** Claim lifetime + 10 years
-
+---
+title: "Large loss reports (to reinsurers)"
+category: "Insurance & Risk Management"
+volume: "Small"
+retention: "Claim lifetime + 10 years"
+slug: "large-loss-reports-reinsurance"
+tags: ["large", "loss", "reports", "reinsurance", "insurance", "risk", "management"]
+---
 ## Data Verified
 
 Insurer, reinsurer, claim details, reserves, loss development, catastrophe info

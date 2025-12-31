@@ -1,9 +1,11 @@
-# Proof of loss forms (sworn statements)
-
-**Category:** Insurance & Risk Management
-**Volume:** Medium
-**Retention:** Claim term + 7-10 years
-
+---
+title: "Proof of loss forms (sworn statements)"
+category: "Insurance & Risk Management"
+volume: "Medium"
+retention: "Claim term + 7-10 years"
+slug: "proof-of-loss-forms"
+tags: ["proof", "loss", "forms", "insurance", "risk", "management"]
+---
 ## Data Verified
 
 Claimant name, policy number, loss details, claimed amount, sworn statement

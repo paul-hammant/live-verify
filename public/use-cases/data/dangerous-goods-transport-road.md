@@ -1,9 +1,11 @@
-# Dangerous goods transport documents (ADR/DOT)
-
-**Category:** Logistics & Transportation
-**Volume:** Small
-**Retention:** 7-30 years (safety/liability)
-
+---
+title: "Dangerous goods transport documents (ADR/DOT)"
+category: "Logistics & Transportation"
+volume: "Small"
+retention: "7-30 years (safety/liability)"
+slug: "dangerous-goods-transport-road"
+tags: ["dangerous", "goods", "transport", "road", "logistics", "transportation"]
+---
 ## Data Verified
 
 Shipper, carrier, consignee, hazmat UN number, packing group, emergency info

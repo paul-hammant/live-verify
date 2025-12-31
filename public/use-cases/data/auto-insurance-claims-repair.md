@@ -1,9 +1,11 @@
-# Auto insurance claims and repair estimates
-
-**Category:** Personal Lines Insurance
-**Volume:** Medium
-**Retention:** Claim term + 7 years
-
+---
+title: "Auto insurance claims and repair estimates"
+category: "Personal Lines Insurance"
+volume: "Medium"
+retention: "Claim term + 7 years"
+slug: "auto-insurance-claims-repair"
+tags: ["auto", "insurance", "claims", "repair", "personal", "lines"]
+---
 ## Data Verified
 
 Claimant name, vehicle VIN, accident details, repair estimate, adjuster

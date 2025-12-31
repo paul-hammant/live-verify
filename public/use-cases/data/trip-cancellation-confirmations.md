@@ -1,9 +1,11 @@
-# Trip cancellation confirmations and refund vouchers
-
-**Category:** Travel & Hospitality
-**Volume:** Large
-**Retention:** Cancellation + 3-7 years
-
+---
+title: "Trip cancellation confirmations and refund vouchers"
+category: "Travel & Hospitality"
+volume: "Large"
+retention: "Cancellation + 3-7 years"
+slug: "trip-cancellation-confirmations"
+tags: ["trip", "cancellation", "confirmations", "travel", "hospitality"]
+---
 ## Data Verified
 
 Traveler name, trip details, cancellation reason, refund amount, travel provider

@@ -1,9 +1,11 @@
-# Ride-sharing receipts (Uber, Lyft, taxi)
-
-**Category:** Travel & Hospitality
-**Volume:** Very Large
-**Retention:** Ride + 1-3 years (expense/tax)
-
+---
+title: "Ride-sharing receipts (Uber, Lyft, taxi)"
+category: "Travel & Hospitality"
+volume: "Very Large"
+retention: "Ride + 1-3 years (expense/tax)"
+slug: "ride-sharing-receipts"
+tags: ["ride", "sharing", "receipts", "travel", "hospitality"]
+---
 ## Data Verified
 
 Rider name, driver, pickup/dropoff, route, fare, tip, payment method

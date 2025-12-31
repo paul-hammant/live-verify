@@ -1,9 +1,11 @@
-# Facultative reinsurance certificates
-
-**Category:** Insurance & Risk Management
-**Volume:** Small
-**Retention:** Policy term + 10-20 years
-
+---
+title: "Facultative reinsurance certificates"
+category: "Insurance & Risk Management"
+volume: "Small"
+retention: "Policy term + 10-20 years"
+slug: "facultative-reinsurance-certificates"
+tags: ["facultative", "reinsurance", "certificates", "insurance", "risk", "management"]
+---
 ## Data Verified
 
 Ceding company, reinsurer, individual risk details, coverage terms, facultative premium

@@ -1,9 +1,11 @@
-# Investment advisor certifications (RIA, IAR)
-
-**Category:** Banking & Financial Services
-**Volume:** Very Small
-**Retention:** Permanent (may show REVOKED status)
-
+---
+title: "Investment advisor certifications (RIA, IAR)"
+category: "Banking & Financial Services"
+volume: "Very Small"
+retention: "Permanent (may show REVOKED status)"
+slug: "investment-advisor-certifications"
+tags: ["investment", "advisor", "certifications", "banking", "financial", "services"]
+---
 ## Data Verified
 
 Advisor name, SEC/state registration number, ADV filing date, firm name, disciplinary history summary

@@ -1,9 +1,11 @@
-# Disability insurance policies (individual)
-
-**Category:** Personal Lines Insurance
-**Volume:** Small
-**Retention:** Policy lifetime + 10 years
-
+---
+title: "Disability insurance policies (individual)"
+category: "Personal Lines Insurance"
+volume: "Small"
+retention: "Policy lifetime + 10 years"
+slug: "disability-insurance-policies"
+tags: ["disability", "insurance", "policies", "personal", "lines"]
+---
 ## Data Verified
 
 Insured name, occupation, benefit amount, elimination period, benefit period, premium

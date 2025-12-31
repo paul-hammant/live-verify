@@ -1,9 +1,11 @@
-# Network coverage maps and guarantees
-
-**Category:** Telecommunications
-**Volume:** Very Small
-**Retention:** 3-5 years (service claims)
-
+---
+title: "Network coverage maps and guarantees"
+category: "Telecommunications"
+volume: "Very Small"
+retention: "3-5 years (service claims)"
+slug: "network-coverage-maps"
+tags: ["network", "coverage", "maps", "telecommunications"]
+---
 ## Data Verified
 
 Provider name, coverage area (minimal personal data)

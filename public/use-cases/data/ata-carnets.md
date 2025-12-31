@@ -1,9 +1,11 @@
-# ATA Carnets (temporary import/export)
-
-**Category:** Logistics & Transportation
-**Volume:** Small
-**Retention:** Carnet validity + 7 years
-
+---
+title: "ATA Carnets (temporary import/export)"
+category: "Logistics & Transportation"
+volume: "Small"
+retention: "Carnet validity + 7 years"
+slug: "ata-carnets"
+tags: ["carnets", "logistics", "transportation"]
+---
 ## Data Verified
 
 Carnet holder, goods description, destination countries, customs authorities

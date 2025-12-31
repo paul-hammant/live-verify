@@ -1,9 +1,11 @@
-# Visa denial notices
-
-**Category:** Immigration & Visa Documents
-**Volume:** Small
-**Retention:** Denial + 10 years (reapplication)
-
+---
+title: "Visa denial notices"
+category: "Immigration & Visa Documents"
+volume: "Small"
+retention: "Denial + 10 years (reapplication)"
+slug: "visa-denial-notices"
+tags: ["visa", "denial", "notices", "immigration", "documents"]
+---
 ## Data Verified
 
 Full name, case number, denial reason/INA section, denial date, consular officer

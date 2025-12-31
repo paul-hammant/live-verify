@@ -1,9 +1,11 @@
-# Jewelers block insurance (stock, transit, exhibitions)
-
-**Category:** Insurance & Risk Management
-**Volume:** Small
-**Retention:** Policy term + 10 years
-
+---
+title: "Jewelers block insurance (stock, transit, exhibitions)"
+category: "Insurance & Risk Management"
+volume: "Small"
+retention: "Policy term + 10 years"
+slug: "jewelers-block-insurance"
+tags: ["jewelers", "block", "insurance", "risk", "management"]
+---
 ## Data Verified
 
 Jeweler/owner, inventory value, transit details, vault/safe requirements

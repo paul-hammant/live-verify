@@ -1,9 +1,11 @@
-# Trade finance: Commercial invoices
-
-**Category:** Banking & Financial Services
-**Volume:** Medium
-**Retention:** 7-10 years (tax/customs audit)
-
+---
+title: "Trade finance: Commercial invoices"
+category: "Banking & Financial Services"
+volume: "Medium"
+retention: "7-10 years (tax/customs audit)"
+slug: "trade-finance-commercial-invoices"
+tags: ["trade", "finance", "commercial", "invoices", "banking", "financial", "services"]
+---
 ## Data Verified
 
 Exporter name, importer name, goods description, invoice value, Incoterms, payment terms, invoice date

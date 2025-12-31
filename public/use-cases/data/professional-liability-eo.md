@@ -1,9 +1,11 @@
-# Professional liability/E&O insurance policies
-
-**Category:** Commercial Lines Insurance
-**Volume:** Small
-**Retention:** Policy term + 10-20 years (claims)
-
+---
+title: "Professional liability/E&O insurance policies"
+category: "Commercial Lines Insurance"
+volume: "Small"
+retention: "Policy term + 10-20 years (claims)"
+slug: "professional-liability-eo"
+tags: ["professional", "liability", "commercial", "lines", "insurance"]
+---
 ## Data Verified
 
 Professional name/firm, coverage limits, retroactive date, claims-made terms, premium

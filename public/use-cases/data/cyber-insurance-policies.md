@@ -1,9 +1,11 @@
-# Cyber insurance policies and breach response documentation
-
-**Category:** Commercial Lines Insurance
-**Volume:** Small
-**Retention:** Policy term + 10 years (claims)
-
+---
+title: "Cyber insurance policies and breach response documentation"
+category: "Commercial Lines Insurance"
+volume: "Small"
+retention: "Policy term + 10 years (claims)"
+slug: "cyber-insurance-policies"
+tags: ["cyber", "insurance", "policies", "commercial", "lines"]
+---
 ## Data Verified
 
 Insured business, coverage limits, breach response costs, forensic investigation

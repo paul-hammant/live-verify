@@ -1,9 +1,11 @@
-# Charity rating certificates
-
-**Category:** Charitable & Non-Profit
-**Volume:** Tiny
-**Retention:** 3-5 years (rating validity)
-
+---
+title: "Charity rating certificates"
+category: "Charitable & Non-Profit"
+volume: "Tiny"
+retention: "3-5 years (rating validity)"
+slug: "charity-rating-certificates"
+tags: ["charity", "rating", "certificates", "charitable", "non-profit"]
+---
 ## Data Verified
 
 Organization name, rating body, financial metrics, leadership

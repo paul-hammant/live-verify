@@ -1,9 +1,11 @@
-# Farm subsidy documentation
-
-**Category:** Agriculture & Food
-**Volume:** Small
-**Retention:** 7-10 years (government audit)
-
+---
+title: "Farm subsidy documentation"
+category: "Agriculture & Food"
+volume: "Small"
+retention: "7-10 years (government audit)"
+slug: "farm-subsidy-documentation"
+tags: ["farm", "subsidy", "documentation", "agriculture", "food"]
+---
 ## Data Verified
 
 Farm owner name, tax ID, subsidy program, payment amounts

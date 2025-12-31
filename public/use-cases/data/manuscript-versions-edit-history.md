@@ -1,9 +1,11 @@
-# Manuscript versions and edit history
-
-**Category:** Media & Publishing
-**Volume:** Very Small
-**Retention:** 5-10 years (publication records)
-
+---
+title: "Manuscript versions and edit history"
+category: "Media & Publishing"
+volume: "Very Small"
+retention: "5-10 years (publication records)"
+slug: "manuscript-versions-edit-history"
+tags: ["manuscript", "versions", "edit", "history", "media", "publishing"]
+---
 ## Data Verified
 
 Author name, editor names, version dates, publisher

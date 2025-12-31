@@ -1,9 +1,11 @@
-# Automated rebalancing confirmations
-
-**Category:** Banking & Financial Services
-**Volume:** Small
-**Retention:** 7-10 years (audit trail)
-
+---
+title: "Automated rebalancing confirmations"
+category: "Banking & Financial Services"
+volume: "Small"
+retention: "7-10 years (audit trail)"
+slug: "automated-rebalancing-confirmations"
+tags: ["automated", "rebalancing", "confirmations", "banking", "financial", "services"]
+---
 ## Data Verified
 
 Account holder, trades executed, tax-loss harvesting, fees

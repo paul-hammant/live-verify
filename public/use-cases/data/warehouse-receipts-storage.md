@@ -1,9 +1,11 @@
-# Warehouse receipts and storage agreements
-
-**Category:** Logistics & Transportation
-**Volume:** Medium
-**Retention:** Storage period + 7-10 years
-
+---
+title: "Warehouse receipts and storage agreements"
+category: "Logistics & Transportation"
+volume: "Medium"
+retention: "Storage period + 7-10 years"
+slug: "warehouse-receipts-storage"
+tags: ["warehouse", "receipts", "storage", "logistics", "transportation"]
+---
 ## Data Verified
 
 Depositor, warehouse operator, goods description, storage location, fees

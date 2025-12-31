@@ -1,9 +1,11 @@
-# Food truck and mobile vendor permits
-
-**Category:** Food & Beverage Permits
-**Volume:** Large
-**Retention:** Permit validity (seasonal/annual)
-
+---
+title: "Food truck and mobile vendor permits"
+category: "Food & Beverage Permits"
+volume: "Large"
+retention: "Permit validity (seasonal/annual)"
+slug: "food-truck-mobile-vendor-permits"
+tags: ["food", "truck", "mobile", "vendor", "permits", "beverage"]
+---
 ## Data Verified
 
 Operator name, vehicle ID, permitted locations, health permit, route

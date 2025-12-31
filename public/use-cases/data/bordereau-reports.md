@@ -1,9 +1,11 @@
-# Bordereau reports (premium and claims bordereaux)
-
-**Category:** Insurance & Risk Management
-**Volume:** Small
-**Retention:** Treaty term + 10 years
-
+---
+title: "Bordereau reports (premium and claims bordereaux)"
+category: "Insurance & Risk Management"
+volume: "Small"
+retention: "Treaty term + 10 years"
+slug: "bordereau-reports"
+tags: ["bordereau", "reports", "insurance", "risk", "management"]
+---
 ## Data Verified
 
 Ceding company, reinsurer, policy details, premiums, claims, commissions

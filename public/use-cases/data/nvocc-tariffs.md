@@ -1,9 +1,11 @@
-# NVOCC (Non-Vessel Operating Common Carrier) tariffs
-
-**Category:** Logistics & Transportation
-**Volume:** Small
-**Retention:** Tariff validity + 7 years
-
+---
+title: "NVOCC (Non-Vessel Operating Common Carrier) tariffs"
+category: "Logistics & Transportation"
+volume: "Small"
+retention: "Tariff validity + 7 years"
+slug: "nvocc-tariffs"
+tags: ["nvocc", "tariffs", "logistics", "transportation"]
+---
 ## Data Verified
 
 NVOCC, origin/destination, freight rates, service terms

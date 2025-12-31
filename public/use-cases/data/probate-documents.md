@@ -1,9 +1,11 @@
-# Probate documents and estate proceedings
-
-**Category:** Financial & Legal Documents
-**Volume:** Small
-**Retention:** Permanent (estate records)
-
+---
+title: "Probate documents and estate proceedings"
+category: "Financial & Legal Documents"
+volume: "Small"
+retention: "Permanent (estate records)"
+slug: "probate-documents"
+tags: ["probate", "documents", "financial", "legal"]
+---
 ## Data Verified
 
 Deceased name, executor name, heirs, court jurisdiction, case number, asset inventory, probate order date, judge name

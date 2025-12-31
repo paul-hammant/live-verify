@@ -1,9 +1,11 @@
-# Rental agreements and lease contracts
-
-**Category:** Real Estate & Property
-**Volume:** Small
-**Retention:** 7-10 years post-termination
-
+---
+title: "Rental agreements and lease contracts"
+category: "Real Estate & Property"
+volume: "Small"
+retention: "7-10 years post-termination"
+slug: "rental-lease-agreements"
+tags: ["rental", "lease", "agreements", "real", "estate", "property"]
+---
 ## Data Verified
 
 Landlord name, tenant name, addresses, rent amount, terms

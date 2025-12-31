@@ -1,9 +1,11 @@
-# Catering permits and temporary food facility licenses
-
-**Category:** Food & Beverage Permits
-**Volume:** Medium
-**Retention:** Event + 1-3 years
-
+---
+title: "Catering permits and temporary food facility licenses"
+category: "Food & Beverage Permits"
+volume: "Medium"
+retention: "Event + 1-3 years"
+slug: "catering-permits-temporary-food"
+tags: ["catering", "permits", "temporary", "food", "beverage"]
+---
 ## Data Verified
 
 Caterer name, event location, date, food service scope, health inspection

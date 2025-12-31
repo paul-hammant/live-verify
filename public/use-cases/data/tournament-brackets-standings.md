@@ -1,9 +1,11 @@
-# Tournament brackets and standings
-
-**Category:** Sports & Athletics
-**Volume:** Small
-**Retention:** 5-20 years (records/history)
-
+---
+title: "Tournament brackets and standings"
+category: "Sports & Athletics"
+volume: "Small"
+retention: "5-20 years (records/history)"
+slug: "tournament-brackets-standings"
+tags: ["tournament", "brackets", "standings", "sports", "athletics"]
+---
 ## Data Verified
 
 Participant names, teams, rankings, tournament details

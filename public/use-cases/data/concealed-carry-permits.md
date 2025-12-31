@@ -1,9 +1,11 @@
-# Concealed carry permits (CCW/CHL)
-
-**Category:** Professional & Occupational Licenses
-**Volume:** Medium
-**Retention:** Permit validity (1-5 years)
-
+---
+title: "Concealed carry permits (CCW/CHL)"
+category: "Professional & Occupational Licenses"
+volume: "Medium"
+retention: "Permit validity (1-5 years)"
+slug: "concealed-carry-permits"
+tags: ["concealed", "carry", "permits", "professional", "occupational", "licenses"]
+---
 ## Data Verified
 
 Permit holder name, DOB, photo, permit number, issuing authority

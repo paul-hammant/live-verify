@@ -1,9 +1,11 @@
-# Mortgage employment verification letters
-
-**Category:** Real Estate & Property
-**Volume:** Small
-**Retention:** 7-10 years (loan term + disputes)
-
+---
+title: "Mortgage employment verification letters"
+category: "Real Estate & Property"
+volume: "Small"
+retention: "7-10 years (loan term + disputes)"
+slug: "mortgage-employment-verification"
+tags: ["mortgage", "employment", "verification", "real", "estate", "property"]
+---
 ## Data Verified
 
 Borrower name, employer name, job title, salary/income, employment dates, HR contact information

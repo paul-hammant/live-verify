@@ -1,9 +1,11 @@
-# Notarized Documents and Attestations
-
-**Category:** Financial & Legal Documents
-**Volume:** Medium-Small
-**Retention:** 7-20 years (legal validity, notary journal requirements)
-
+---
+title: "Notarized Documents and Attestations"
+category: "Financial & Legal Documents"
+volume: "Medium-Small"
+retention: "7-20 years (legal validity, notary journal requirements)"
+slug: "notarized-documents"
+tags: ["notarized", "documents", "financial", "legal"]
+---
 ## Data Verified
 
 Signatory name(s), notary public name, notary commission number, notary commission expiration date, notary seal/stamp details, notarization date, jurisdiction (state/county), document type being notarized, notarial act type (acknowledgment, jurat, oath, copy certification), venue (where notarization occurred).

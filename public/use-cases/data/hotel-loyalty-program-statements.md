@@ -1,9 +1,11 @@
-# Hotel loyalty program statements and point balances
-
-**Category:** Travel & Hospitality
-**Volume:** Medium
-**Retention:** Statement period + 3-7 years
-
+---
+title: "Hotel loyalty program statements and point balances"
+category: "Travel & Hospitality"
+volume: "Medium"
+retention: "Statement period + 3-7 years"
+slug: "hotel-loyalty-program-statements"
+tags: ["hotel", "loyalty", "program", "statements", "travel", "hospitality"]
+---
 ## Data Verified
 
 Member name, account number, point balance, tier status, stay history

@@ -1,9 +1,11 @@
-# 1031 exchange documentation
-
-**Category:** Real Estate & Property
-**Volume:** Very Small
-**Retention:** 7-10 years (IRS audit)
-
+---
+title: "1031 exchange documentation"
+category: "Real Estate & Property"
+volume: "Very Small"
+retention: "7-10 years (IRS audit)"
+slug: "1031-exchange-documentation"
+tags: ["1031", "exchange", "documentation", "real", "estate", "property"]
+---
 ## Data Verified
 
 Exchanger name, relinquished/replacement properties, intermediary, tax deferral amounts

@@ -1,9 +1,11 @@
-# Well drilling and water extraction permits
-
-**Category:** Environmental & Natural Resource Permits
-**Volume:** Small
-**Retention:** Permit term + permanent
-
+---
+title: "Well drilling and water extraction permits"
+category: "Environmental & Natural Resource Permits"
+volume: "Small"
+retention: "Permit term + permanent"
+slug: "well-drilling-water-extraction-permits"
+tags: ["well", "drilling", "water", "extraction", "permits", "environmental", "natural", "resource"]
+---
 ## Data Verified
 
 Permit holder, well location, depth, pumping rate, water rights, state engineer

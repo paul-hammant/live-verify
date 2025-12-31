@@ -1,9 +1,11 @@
-# Event cancellation and weather insurance
-
-**Category:** Insurance & Risk Management
-**Volume:** Very Small
-**Retention:** Event date + 7 years
-
+---
+title: "Event cancellation and weather insurance"
+category: "Insurance & Risk Management"
+volume: "Very Small"
+retention: "Event date + 7 years"
+slug: "event-cancellation-weather-insurance"
+tags: ["event", "cancellation", "weather", "insurance", "risk", "management"]
+---
 ## Data Verified
 
 Event organizer, event details, coverage amount, covered perils, insurer

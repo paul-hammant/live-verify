@@ -1,9 +1,11 @@
-# Safety Inspection Certificates
-
-**Category:** Safety Inspection Certificates
-**Volume:** Large (aggregate)
-**Retention:** 1-3 years (inspection cycles)
-
+---
+title: "Safety Inspection Certificates"
+category: "Safety Inspection Certificates"
+volume: "Large (aggregate)"
+retention: "1-3 years (inspection cycles)"
+slug: "safety-inspection-certificates"
+tags: ["safety", "inspection", "certificates"]
+---
 Building safety systems require regular inspection and certification. These certificates are often publicly displayed and represent critical life-safety compliance. Verification prevents fraudulent certificates that could mask dangerous conditions.
 
 ## Document Types
@@ -14,7 +16,6 @@ Building safety systems require regular inspection and certification. These cert
 
 **Data Verified:** Building address, elevator identification number, elevator type (passenger, freight, hydraulic, traction), inspector name and license number, inspection date, next inspection due, any deficiencies noted, maximum capacity.
 
-**Retention:** 1-3 years (annual inspection typical)
 
 **Public Display:** Required to be posted inside elevator car in most jurisdictions.
 
@@ -28,7 +29,6 @@ Building safety systems require regular inspection and certification. These cert
 
 **Data Verified:** Building address, system type, control panel information, inspector/company name and license, inspection date, test results for all devices, deficiencies, next inspection due.
 
-**Retention:** 1 year (annual inspection)
 
 **Standards Compliance:** NFPA 72 (National Fire Alarm Code).
 
@@ -40,7 +40,6 @@ Building safety systems require regular inspection and certification. These cert
 
 **Data Verified:** Building address, system type (wet, dry, pre-action, deluge), riser locations, inspector/company name and license, inspection date, flow test results, deficiencies.
 
-**Retention:** 1 year (annual inspection)
 
 **Standards Compliance:** NFPA 25 (Inspection, Testing, and Maintenance of Water-Based Fire Protection Systems).
 
@@ -52,7 +51,6 @@ Building safety systems require regular inspection and certification. These cert
 
 **Data Verified:** Extinguisher type and size, location, inspector name/company, inspection date, service performed (inspection, maintenance, hydrostatic test).
 
-**Retention:** 1 year (annual inspection, 6-year maintenance, 12-year hydrostatic)
 
 **Standards Compliance:** NFPA 10 (Standard for Portable Fire Extinguishers).
 
@@ -62,7 +60,6 @@ Building safety systems require regular inspection and certification. These cert
 
 **Data Verified:** Building address, equipment identification, equipment type, operating pressure, inspector name and commission, inspection date, next inspection due.
 
-**Retention:** 1-2 years (varies by jurisdiction)
 
 **Standards Compliance:** ASME Boiler and Pressure Vessel Code, National Board Inspection Code.
 
@@ -72,7 +69,6 @@ Building safety systems require regular inspection and certification. These cert
 
 **Data Verified:** Building address, number of units tested, battery backup duration, inspector name, inspection date, deficiencies.
 
-**Retention:** 1 year
 
 **Testing Requirements:** Monthly 30-second test, annual 90-minute test.
 

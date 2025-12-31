@@ -1,9 +1,11 @@
-# Life Insurance Policies
-
-**Category:** Personal Lines Insurance
-**Volume:** Small
-**Retention:** Policy lifetime (50+ years)
-
+---
+title: "Life Insurance Policies"
+category: "Personal Lines Insurance"
+volume: "Small"
+retention: "Policy lifetime (50+ years)"
+slug: "life-insurance-policies"
+tags: ["life", "insurance", "policies", "personal", "lines"]
+---
 ## Data Verified
 
 Insured name, date of birth, policy number, policy type, face amount (death benefit), premium amount and frequency, beneficiary names and designations, policy date and effective date, underwriting class, any riders or endorsements, cash value provisions (for permanent policies), insurer name.

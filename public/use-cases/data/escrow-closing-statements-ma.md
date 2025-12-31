@@ -1,9 +1,11 @@
-# Escrow and closing statements (M&A/real estate)
-
-**Category:** Business & Commerce
-**Volume:** Small
-**Retention:** Permanent/transaction life
-
+---
+title: "Escrow and closing statements (M&A/real estate)"
+category: "Business & Commerce"
+volume: "Small"
+retention: "Permanent/transaction life"
+slug: "escrow-closing-statements-ma"
+tags: ["escrow", "closing", "statements", "business", "commerce"]
+---
 ## Data Verified
 
 Parties, settlement figures

@@ -1,9 +1,11 @@
-# Ethical approval (IRB, IACUC) documents
-
-**Category:** Scientific & Research
-**Volume:** Very Small
-**Retention:** 7-30 years (regulatory compliance)
-
+---
+title: "Ethical approval (IRB, IACUC) documents"
+category: "Scientific & Research"
+volume: "Very Small"
+retention: "7-30 years (regulatory compliance)"
+slug: "ethical-approval-irb-iacuc"
+tags: ["ethical", "approval", "iacuc", "scientific", "research"]
+---
 ## Data Verified
 
 Researcher names, study participants (anonymized), protocol details

@@ -1,9 +1,11 @@
-# Catastrophe claims batch reports
-
-**Category:** Insurance & Risk Management
-**Volume:** Small
-**Retention:** CAT event + 10 years
-
+---
+title: "Catastrophe claims batch reports"
+category: "Insurance & Risk Management"
+volume: "Small"
+retention: "CAT event + 10 years"
+slug: "catastrophe-claims-batch-reports"
+tags: ["catastrophe", "claims", "batch", "reports", "insurance", "risk", "management"]
+---
 ## Data Verified
 
 Insurer, catastrophe code, affected policies, claim counts, estimated losses

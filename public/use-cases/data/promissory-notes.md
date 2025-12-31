@@ -1,9 +1,11 @@
-# Promissory Notes and Loan Documents
-
-**Category:** Financial & Legal Documents
-**Volume:** Medium-Small
-**Retention:** Loan term + 7-10 years
-
+---
+title: "Promissory Notes and Loan Documents"
+category: "Financial & Legal Documents"
+volume: "Medium-Small"
+retention: "Loan term + 7-10 years"
+slug: "promissory-notes"
+tags: ["promissory", "notes", "financial", "legal", "documents"]
+---
 ## Data Verified
 
 Borrower name, lender name, principal amount, interest rate, payment terms (amount, frequency, due date), loan date, maturity date, collateral description (if secured), default provisions, prepayment terms, signatures, any endorsements.

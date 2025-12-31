@@ -1,9 +1,11 @@
-# Number portability authorizations
-
-**Category:** Telecommunications
-**Volume:** Small
-**Retention:** 3-7 years (regulatory compliance)
-
+---
+title: "Number portability authorizations"
+category: "Telecommunications"
+volume: "Small"
+retention: "3-7 years (regulatory compliance)"
+slug: "number-portability-authorizations"
+tags: ["number", "portability", "authorizations", "telecommunications"]
+---
 ## Data Verified
 
 Customer name, phone number, previous/new carrier, authorization date

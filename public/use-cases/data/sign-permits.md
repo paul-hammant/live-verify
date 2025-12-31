@@ -1,9 +1,11 @@
-# Sign permits (commercial signage)
-
-**Category:** Construction & Property Permits
-**Volume:** Small
-**Retention:** Permit validity + 10 years
-
+---
+title: "Sign permits (commercial signage)"
+category: "Construction & Property Permits"
+volume: "Small"
+retention: "Permit validity + 10 years"
+slug: "sign-permits"
+tags: ["sign", "permits", "construction", "property"]
+---
 ## Data Verified
 
 Business name, property address, sign dimensions, electrical details

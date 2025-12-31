@@ -1,9 +1,11 @@
-# Food service establishment licenses (restaurants, cafes)
-
-**Category:** Food & Beverage Permits
-**Volume:** Medium
-**Retention:** 1 year (annual renewal)
-
+---
+title: "Food service establishment licenses (restaurants, cafes)"
+category: "Food & Beverage Permits"
+volume: "Medium"
+retention: "1 year (annual renewal)"
+slug: "food-service-establishment-licenses"
+tags: ["food", "service", "establishment", "licenses", "beverage", "permits"]
+---
 ## Data Verified
 
 Business name, owner, address, health permit number, seating capacity

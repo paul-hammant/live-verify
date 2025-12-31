@@ -1,9 +1,11 @@
-# Medical Device Certifications
-
-**Category:** Product Certifications & Compliance
-**Volume:** Very Small (per certificate, but thousands of devices globally)
-**Retention:** 10-30 years (regulatory requirements, product liability)
-
+---
+title: "Medical Device Certifications"
+category: "Product Certifications & Compliance"
+volume: "Very Small (per certificate, but thousands of devices globally)"
+retention: "10-30 years (regulatory requirements, product liability)"
+slug: "medical-device-certifications"
+tags: ["medical", "device", "certifications", "product", "compliance"]
+---
 ## Data Verified
 
 Manufacturer name and address, facility location, certification body (notified body) name, certificate number, device classification, device description/model numbers, applicable standards (ISO 13485, IEC 60601, etc.), certification scope, issue date, expiration date, regulatory pathway (510(k), PMA, CE marking, etc.).

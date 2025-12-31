@@ -1,9 +1,11 @@
-# Cold storage and temperature-controlled shipping records
-
-**Category:** Logistics & Transportation
-**Volume:** Medium
-**Retention:** Shipment + 7-10 years
-
+---
+title: "Cold storage and temperature-controlled shipping records"
+category: "Logistics & Transportation"
+volume: "Medium"
+retention: "Shipment + 7-10 years"
+slug: "cold-storage-temperature-records"
+tags: ["cold", "storage", "temperature", "records", "logistics", "transportation"]
+---
 ## Data Verified
 
 Shipper, carrier, consignee, temperature range, monitoring records

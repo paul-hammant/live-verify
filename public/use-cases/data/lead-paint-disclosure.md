@@ -1,9 +1,11 @@
-# Lead paint disclosure (pre-1978 properties)
-
-**Category:** Real Estate & Property
-**Volume:** Very Small
-**Retention:** 3-7 years (EPA requirement)
-
+---
+title: "Lead paint disclosure (pre-1978 properties)"
+category: "Real Estate & Property"
+volume: "Very Small"
+retention: "3-7 years (EPA requirement)"
+slug: "lead-paint-disclosure"
+tags: ["lead", "paint", "disclosure", "real", "estate", "property"]
+---
 ## Data Verified
 
 Seller/landlord name, property address, disclosure details, acknowledgment

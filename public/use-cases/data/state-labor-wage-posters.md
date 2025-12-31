@@ -1,9 +1,11 @@
-# State labor law and wage posters
-
-**Category:** Mandatory Workplace Postings
-**Volume:** Very Large
-**Retention:** Current year (annual updates)
-
+---
+title: "State labor law and wage posters"
+category: "Mandatory Workplace Postings"
+volume: "Very Large"
+retention: "Current year (annual updates)"
+slug: "state-labor-wage-posters"
+tags: ["state", "labor", "wage", "posters", "mandatory", "workplace", "postings"]
+---
 ## Data Verified
 
 None (informational), state minimum wage, labor department contact

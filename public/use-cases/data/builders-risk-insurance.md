@@ -1,9 +1,11 @@
-# Builders risk insurance policies
-
-**Category:** Insurance & Risk Management
-**Volume:** Small
-**Retention:** Construction period + 7-10 years
-
+---
+title: "Builders risk insurance policies"
+category: "Insurance & Risk Management"
+volume: "Small"
+retention: "Construction period + 7-10 years"
+slug: "builders-risk-insurance"
+tags: ["builders", "risk", "insurance", "management"]
+---
 ## Data Verified
 
 Project owner, contractor, project address, coverage amount, construction details

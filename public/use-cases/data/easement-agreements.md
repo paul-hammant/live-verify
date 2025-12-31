@@ -1,9 +1,11 @@
-# Easement agreements and grants
-
-**Category:** Real Estate & Property
-**Volume:** Tiny
-**Retention:** Permanent (property encumbrance)
-
+---
+title: "Easement agreements and grants"
+category: "Real Estate & Property"
+volume: "Tiny"
+retention: "Permanent (property encumbrance)"
+slug: "easement-agreements"
+tags: ["easement", "agreements", "real", "estate", "property"]
+---
 ## Data Verified
 
 Property owner, easement holder, property address, legal description, terms

@@ -1,9 +1,11 @@
-# Fine art insurance (all-risk, nail-to-nail exhibition)
-
-**Category:** Insurance & Risk Management
-**Volume:** Small
-**Retention:** Policy term / exhibition + 10 years
-
+---
+title: "Fine art insurance (all-risk, nail-to-nail exhibition)"
+category: "Insurance & Risk Management"
+volume: "Small"
+retention: "Policy term / exhibition + 10 years"
+slug: "fine-art-insurance"
+tags: ["fine", "insurance", "risk", "management"]
+---
 ## Data Verified
 
 Owner, artwork details, valuation, exhibition locations, transit route

@@ -1,9 +1,11 @@
-# Teaching reciprocity/compact credentials
-
-**Category:** Professional & Educational Qualifications
-**Volume:** Very Small
-**Retention:** License term
-
+---
+title: "Teaching reciprocity/compact credentials"
+category: "Professional & Educational Qualifications"
+volume: "Very Small"
+retention: "License term"
+slug: "teaching-reciprocity-credentials"
+tags: ["teaching", "reciprocity", "credentials", "professional", "educational", "qualifications"]
+---
 ## Data Verified
 
 Teacher name, license IDs across states/provinces

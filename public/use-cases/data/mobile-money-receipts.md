@@ -1,9 +1,11 @@
-# Mobile money transaction receipts (M-Pesa, GCash, bKash)
-
-**Category:** Banking & Financial Services
-**Volume:** Large
-**Retention:** 3-7 years (tax/disputes)
-
+---
+title: "Mobile money transaction receipts (M-Pesa, GCash, bKash)"
+category: "Banking & Financial Services"
+volume: "Large"
+retention: "3-7 years (tax/disputes)"
+slug: "mobile-money-receipts"
+tags: ["mobile", "money", "receipts", "banking", "financial", "services"]
+---
 ## Data Verified
 
 Sender, recipient, phone numbers, amount, transaction ID, agent location

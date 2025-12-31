@@ -1,9 +1,11 @@
-# Renewable energy certificates (RECs)
-
-**Category:** Energy & Utilities
-**Volume:** Small
-**Retention:** 3-7 years (compliance/trading)
-
+---
+title: "Renewable energy certificates (RECs)"
+category: "Energy & Utilities"
+volume: "Small"
+retention: "3-7 years (compliance/trading)"
+slug: "renewable-energy-certificates"
+tags: ["renewable", "energy", "certificates", "utilities"]
+---
 ## Data Verified
 
 Generator name, REC purchaser, MWh details, certification body

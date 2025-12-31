@@ -1,9 +1,11 @@
-# Commercial auto insurance policies and certificates
-
-**Category:** Commercial Lines Insurance
-**Volume:** Medium
-**Retention:** Policy term + 7 years
-
+---
+title: "Commercial auto insurance policies and certificates"
+category: "Commercial Lines Insurance"
+volume: "Medium"
+retention: "Policy term + 7 years"
+slug: "commercial-auto-insurance"
+tags: ["commercial", "auto", "insurance", "lines"]
+---
 ## Data Verified
 
 Business name, vehicles/VINs, drivers, coverage limits, hired/non-owned auto coverage

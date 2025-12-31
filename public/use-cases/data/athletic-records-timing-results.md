@@ -1,9 +1,11 @@
-# Athletic Records and Timing Results
-
-**Category:** Sports & Athletics
-**Volume:** Small
-**Retention:** Permanent (sports history and records)
-
+---
+title: "Athletic Records and Timing Results"
+category: "Sports & Athletics"
+volume: "Small"
+retention: "Permanent (sports history and records)"
+slug: "athletic-records-timing-results"
+tags: ["athletic", "records", "timing", "results", "sports", "athletics"]
+---
 ## Data Verified
 
 Athlete name, date of birth, nationality, event name and discipline, time/distance/score achieved, competition name and location, competition date, competition level (local/national/world), timing authority or federation, officials' names, conditions (wind speed, altitude for relevant events), equipment verification status, any record designations.

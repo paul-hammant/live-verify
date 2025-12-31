@@ -1,9 +1,11 @@
-# Aviation insurance policies and certificates
-
-**Category:** Insurance & Risk Management
-**Volume:** Small
-**Retention:** Policy term + 10-20 years
-
+---
+title: "Aviation insurance policies and certificates"
+category: "Insurance & Risk Management"
+volume: "Small"
+retention: "Policy term + 10-20 years"
+slug: "aviation-insurance"
+tags: ["aviation", "insurance", "risk", "management"]
+---
 ## Data Verified
 
 Aircraft owner/operator, aircraft N-number, hull value, liability limits, insurer

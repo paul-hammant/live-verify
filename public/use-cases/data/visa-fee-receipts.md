@@ -1,9 +1,11 @@
-# Visa fee receipts and biometrics appointments
-
-**Category:** Immigration & Visa Documents
-**Volume:** Large
-**Retention:** 3-7 years
-
+---
+title: "Visa fee receipts and biometrics appointments"
+category: "Immigration & Visa Documents"
+volume: "Large"
+retention: "3-7 years"
+slug: "visa-fee-receipts"
+tags: ["visa", "receipts", "immigration", "documents"]
+---
 ## Data Verified
 
 Applicant name, receipt number, fee amount, payment date, appointment date/time (if applicable), visa category

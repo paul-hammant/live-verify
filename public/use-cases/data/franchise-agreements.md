@@ -1,9 +1,11 @@
-# Franchise Agreements and Disclosure Documents
-
-**Category:** Business & Commerce
-**Volume:** Small
-**Retention:** Term plus statutory retention (often 7+ years)
-
+---
+title: "Franchise Agreements and Disclosure Documents"
+category: "Business & Commerce"
+volume: "Small"
+retention: "Term plus statutory retention (often 7+ years)"
+slug: "franchise-agreements"
+tags: ["franchise", "agreements", "business", "commerce"]
+---
 ## Data Verified
 
 Franchisor name and corporate details, franchisee name, franchise location/territory, initial franchise fee, ongoing royalty structure, term and renewal rights, territorial rights, Franchise Disclosure Document (FDD) receipt confirmation, state-specific addenda, effective dates.

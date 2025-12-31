@@ -1,9 +1,11 @@
-# Gig economy payout receipts (Uber, Lyft, DoorDash driver payouts)
-
-**Category:** Banking & Financial Services
-**Volume:** Large
-**Retention:** 3-7 years (tax reporting)
-
+---
+title: "Gig economy payout receipts (Uber, Lyft, DoorDash driver payouts)"
+category: "Banking & Financial Services"
+volume: "Large"
+retention: "3-7 years (tax reporting)"
+slug: "gig-economy-payout-receipts"
+tags: ["economy", "payout", "receipts", "banking", "financial", "services"]
+---
 ## Data Verified
 
 Driver/worker name, earnings, fees, tips, mileage, payment date

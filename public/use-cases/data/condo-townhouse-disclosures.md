@@ -1,9 +1,11 @@
-# Condominium/townhouse disclosure statements
-
-**Category:** Real Estate & Property
-**Volume:** Very Small
-**Retention:** 7-10 years (transaction records)
-
+---
+title: "Condominium/townhouse disclosure statements"
+category: "Real Estate & Property"
+volume: "Very Small"
+retention: "7-10 years (transaction records)"
+slug: "condo-townhouse-disclosures"
+tags: ["condo", "townhouse", "disclosures", "real", "estate", "property"]
+---
 ## Data Verified
 
 Seller name, buyer name, HOA details, special assessments, property address

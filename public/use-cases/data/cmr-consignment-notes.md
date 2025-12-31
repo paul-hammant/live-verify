@@ -1,9 +1,11 @@
-# CMR consignment notes (international road freight)
-
-**Category:** Logistics & Transportation
-**Volume:** Large
-**Retention:** 7-10 years (carrier liability)
-
+---
+title: "CMR consignment notes (international road freight)"
+category: "Logistics & Transportation"
+volume: "Large"
+retention: "7-10 years (carrier liability)"
+slug: "cmr-consignment-notes"
+tags: ["consignment", "notes", "logistics", "transportation"]
+---
 ## Data Verified
 
 Consignor, consignee, carrier, goods description, delivery location

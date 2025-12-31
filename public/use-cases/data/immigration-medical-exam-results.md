@@ -1,9 +1,11 @@
-# Immigration medical exam results (I-693)
-
-**Category:** Immigration & Visa Documents
-**Volume:** Medium
-**Retention:** Application + 7 years
-
+---
+title: "Immigration medical exam results (I-693)"
+category: "Immigration & Visa Documents"
+volume: "Medium"
+retention: "Application + 7 years"
+slug: "immigration-medical-exam-results"
+tags: ["immigration", "medical", "exam", "results", "visa", "documents"]
+---
 ## Data Verified
 
 Full name, DOB, civil surgeon name/signature, vaccination records, exam date

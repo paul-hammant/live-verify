@@ -1,9 +1,11 @@
-# Childcare provider verification (nanny/babysitter)
-
-**Category:** Personal Safety & Service Verification
-**Volume:** Medium
-**Retention:** Care period + 3-7 years
-
+---
+title: "Childcare provider verification (nanny/babysitter)"
+category: "Personal Safety & Service Verification"
+volume: "Medium"
+retention: "Care period + 3-7 years"
+slug: "childcare-provider-verification"
+tags: ["childcare", "provider", "verification", "personal", "safety", "service"]
+---
 ## Data Verified
 
 Provider name, photo, qualifications, DBS check, references, first aid cert

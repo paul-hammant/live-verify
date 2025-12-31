@@ -1,9 +1,11 @@
-# Payment processor merchant statements (Stripe, PayPal, Square)
-
-**Category:** Banking & Financial Services
-**Volume:** Medium
-**Retention:** 7-10 years (tax/disputes)
-
+---
+title: "Payment processor merchant statements (Stripe, PayPal, Square)"
+category: "Banking & Financial Services"
+volume: "Medium"
+retention: "7-10 years (tax/disputes)"
+slug: "payment-processor-merchant-statements"
+tags: ["payment", "processor", "merchant", "statements", "banking", "financial", "services"]
+---
 ## Data Verified
 
 Merchant name, transaction volume, fees, payouts, chargebacks

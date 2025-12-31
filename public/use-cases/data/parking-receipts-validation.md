@@ -1,9 +1,11 @@
-# Parking receipts and validation tickets
-
-**Category:** Travel & Hospitality
-**Volume:** Very Large
-**Retention:** Parking + 1-3 years (expense)
-
+---
+title: "Parking receipts and validation tickets"
+category: "Travel & Hospitality"
+volume: "Very Large"
+retention: "Parking + 1-3 years (expense)"
+slug: "parking-receipts-validation"
+tags: ["parking", "receipts", "validation", "travel", "hospitality"]
+---
 ## Data Verified
 
 Location, entry/exit time, parking fee, payment method, validation

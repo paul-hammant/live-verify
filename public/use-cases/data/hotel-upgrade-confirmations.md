@@ -1,9 +1,11 @@
-# Hotel upgrade confirmations and suite upgrade receipts
-
-**Category:** Travel & Hospitality
-**Volume:** Medium
-**Retention:** Stay + 1-3 years
-
+---
+title: "Hotel upgrade confirmations and suite upgrade receipts"
+category: "Travel & Hospitality"
+volume: "Medium"
+retention: "Stay + 1-3 years"
+slug: "hotel-upgrade-confirmations"
+tags: ["hotel", "upgrade", "confirmations", "travel", "hospitality"]
+---
 ## Data Verified
 
 Guest name, original room, upgraded room, upgrade fee (if paid), confirmation

@@ -1,9 +1,11 @@
-# Catastrophe modeling and PML reports
-
-**Category:** Actuarial & Insurance Mathematics
-**Volume:** Very Small
-**Retention:** 5-10 years (capital planning)
-
+---
+title: "Catastrophe modeling and PML reports"
+category: "Actuarial & Insurance Mathematics"
+volume: "Very Small"
+retention: "5-10 years (capital planning)"
+slug: "catastrophe-modeling-pml-reports"
+tags: ["catastrophe", "modeling", "reports", "actuarial", "insurance", "mathematics"]
+---
 ## Data Verified
 
 Actuary/modeler name, insurance company, PML (Probable Maximum Loss) estimates, catastrophe scenarios

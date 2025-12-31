@@ -1,9 +1,11 @@
-# Auction records and sale documents
-
-**Category:** Art & Collectibles
-**Volume:** Very Small
-**Retention:** Permanent (price history)
-
+---
+title: "Auction records and sale documents"
+category: "Art & Collectibles"
+volume: "Very Small"
+retention: "Permanent (price history)"
+slug: "auction-records-sale-documents"
+tags: ["auction", "records", "sale", "documents", "collectibles"]
+---
 ## Data Verified
 
 Buyer/seller names (may be anonymized), auction house, hammer price

@@ -1,9 +1,11 @@
-# Food handler certificates and food safety manager cards
-
-**Category:** Food & Beverage Permits
-**Volume:** Very Large
-**Retention:** 3-5 years (certification validity)
-
+---
+title: "Food handler certificates and food safety manager cards"
+category: "Food & Beverage Permits"
+volume: "Very Large"
+retention: "3-5 years (certification validity)"
+slug: "food-handler-certificates"
+tags: ["food", "handler", "certificates", "beverage", "permits"]
+---
 ## Data Verified
 
 Certificate holder name, DOB, certification number, issuing authority

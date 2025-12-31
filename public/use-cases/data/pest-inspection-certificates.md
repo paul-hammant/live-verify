@@ -1,9 +1,11 @@
-# Pest inspection certificates
-
-**Category:** Real Estate & Property
-**Volume:** Small
-**Retention:** 3-7 years (warranty/liability)
-
+---
+title: "Pest inspection certificates"
+category: "Real Estate & Property"
+volume: "Small"
+retention: "3-7 years (warranty/liability)"
+slug: "pest-inspection-certificates"
+tags: ["pest", "inspection", "certificates", "real", "estate", "property"]
+---
 ## Data Verified
 
 Inspector name, property owner/address, treatment details

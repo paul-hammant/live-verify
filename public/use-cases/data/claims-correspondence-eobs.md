@@ -1,9 +1,11 @@
-# Claims correspondence and EOBs
-
-**Category:** Insurance & Risk Management
-**Volume:** Large
-**Retention:** Claim term + 7-10 years
-
+---
+title: "Claims correspondence and EOBs"
+category: "Insurance & Risk Management"
+volume: "Large"
+retention: "Claim term + 7-10 years"
+slug: "claims-correspondence-eobs"
+tags: ["claims", "correspondence", "eobs", "insurance", "risk", "management"]
+---
 ## Data Verified
 
 Claimant name, provider name, claim number, service date, claim amount

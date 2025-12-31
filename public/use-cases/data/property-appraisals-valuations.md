@@ -1,9 +1,11 @@
-# Property appraisals and valuations
-
-**Category:** Real Estate & Property
-**Volume:** Small
-**Retention:** 5-10 years (financing/tax)
-
+---
+title: "Property appraisals and valuations"
+category: "Real Estate & Property"
+volume: "Small"
+retention: "5-10 years (financing/tax)"
+slug: "property-appraisals-valuations"
+tags: ["property", "appraisals", "valuations", "real", "estate"]
+---
 ## Data Verified
 
 Appraiser name, property owner, address, valuation details

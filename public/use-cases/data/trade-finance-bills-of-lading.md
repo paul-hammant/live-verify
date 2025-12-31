@@ -1,9 +1,11 @@
-# Trade finance: Bills of lading
-
-**Category:** Banking & Financial Services
-**Volume:** Small
-**Retention:** 7-10 years (shipment + disputes)
-
+---
+title: "Trade finance: Bills of lading"
+category: "Banking & Financial Services"
+volume: "Small"
+retention: "7-10 years (shipment + disputes)"
+slug: "trade-finance-bills-of-lading"
+tags: ["trade", "finance", "bills", "lading", "banking", "financial", "services"]
+---
 ## Data Verified
 
 Shipper name, consignee name, carrier name, goods description, port of loading, port of discharge, B/L number

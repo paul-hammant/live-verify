@@ -1,9 +1,11 @@
-# Dynamic discounting confirmations
-
-**Category:** Banking & Financial Services
-**Volume:** Small
-**Retention:** 3-7 years (payment disputes)
-
+---
+title: "Dynamic discounting confirmations"
+category: "Banking & Financial Services"
+volume: "Small"
+retention: "3-7 years (payment disputes)"
+slug: "dynamic-discounting-confirmations"
+tags: ["dynamic", "discounting", "confirmations", "banking", "financial", "services"]
+---
 ## Data Verified
 
 Supplier, buyer, invoice amount, discount rate, early payment date

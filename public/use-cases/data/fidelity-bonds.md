@@ -1,9 +1,11 @@
-# Fidelity bonds and employee dishonesty coverage
-
-**Category:** Insurance & Risk Management
-**Volume:** Small
-**Retention:** Policy term + 10 years
-
+---
+title: "Fidelity bonds and employee dishonesty coverage"
+category: "Insurance & Risk Management"
+volume: "Small"
+retention: "Policy term + 10 years"
+slug: "fidelity-bonds"
+tags: ["fidelity", "bonds", "insurance", "risk", "management"]
+---
 ## Data Verified
 
 Employer name, bonded employees, coverage amount, surety company

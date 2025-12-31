@@ -1,9 +1,11 @@
-# Copyright registrations and assignments
-
-**Category:** Media & Publishing
-**Volume:** Very Small
-**Retention:** Permanent (IP rights)
-
+---
+title: "Copyright registrations and assignments"
+category: "Media & Publishing"
+volume: "Very Small"
+retention: "Permanent (IP rights)"
+slug: "copyright-registrations"
+tags: ["copyright", "registrations", "media", "publishing"]
+---
 ## Data Verified
 
 Copyright holder name, creator, registration details, jurisdiction
