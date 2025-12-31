@@ -290,16 +290,19 @@
         hideVerifyButton();
 
         if (!currentSelection) {
+            console.warn('[TSV] Verify button clicked but no selection');
             showResult('error', 'No text selected', '', '', '');
             return;
         }
 
+        console.log('[TSV] Verify button clicked. Starting verification process...');
+        console.log('[TSV] Selected text length:', currentSelection.length, 'chars');
         showResult('loading', 'Verifying...', '', '', '');
 
         try {
             await performVerification(currentSelection);
         } catch (error) {
-            console.error('Verification error:', error);
+            console.error('[TSV] Verification error:', error);
             showResult('error', 'Verification Error', error.message, '', '');
         }
     }
@@ -312,36 +315,49 @@
         const { url: baseUrl, urlLineIndex } = extractVerificationUrl(text);
 
         if (!baseUrl) {
+            console.warn('[TSV] No verification URL found in selected text');
             showResult('error', 'No Verification URL Found',
                 'Selected text must end with a verify: or vfy: URL', '', '');
             return;
         }
 
+        console.log('[TSV] Extracted base URL:', baseUrl, 'at line', urlLineIndex);
+
         // Step 2: Extract the certification text (everything before the URL line)
         const certText = extractCertText(text, urlLineIndex);
 
         if (!certText.trim()) {
+            console.warn('[TSV] No certification text found');
             showResult('error', 'No Content to Verify',
                 'Selected text must contain content before the verification URL', '', '');
             return;
         }
 
+        console.log('[TSV] Extracted cert text:', certText.substring(0, 50) + '...');
+
         // Step 3: Try to fetch .verification-meta.json for document-specific normalization
         let metadata = null;
         try {
             metadata = await fetchVerificMeta(baseUrl);
+            if (metadata) {
+                console.log('[TSV] Loaded document-specific metadata');
+            }
         } catch (e) {
             // Metadata is optional, continue without it
+            console.log('[TSV] No metadata file found (optional)');
         }
 
         // Step 4: Normalize the text
         const normalizedText = normalizeText(certText, metadata);
+        console.log('[TSV] Normalized text:', normalizedText.substring(0, 50) + '...');
 
         // Step 5: Compute SHA-256 hash
         const hash = await sha256(normalizedText);
+        console.log('[TSV] Computed SHA-256 hash:', hash);
 
         // Step 6: Build verification URL
         const verificationUrl = buildVerificationUrl(baseUrl, hash);
+        console.log('[TSV] Verification URL:', verificationUrl);
 
         // Step 7: Extract domain for display
         let domain = '';
@@ -357,32 +373,42 @@
             domain = baseUrl;
         }
 
-        // Step 8: Perform verification fetch
+        // Step 8: Perform verification fetch (REAL HTTP verification)
+        console.log('[TSV] Starting HTTP verification fetch...');
         try {
             const response = await fetch(verificationUrl, {
                 method: 'GET',
                 mode: 'cors'
             });
 
+            console.log('[TSV] Verification endpoint returned HTTP', response.status);
+
             if (response.status === 200) {
                 const body = await response.text();
                 const trimmedBody = body.trim().toUpperCase();
 
+                console.log('[TSV] Response body:', trimmedBody);
+
                 if (trimmedBody === 'OK' || trimmedBody.includes('OK')) {
+                    console.log('[TSV] ✓ VERIFICATION SUCCESSFUL - hash matches and endpoint confirmed');
                     showResult('verified', 'VERIFIED', `by ${domain}`, normalizedText, hash);
                 } else {
                     // Show the actual status from the response (e.g., REVOKED)
+                    console.log('[TSV] ✗ VERIFICATION FAILED - endpoint returned non-OK status');
                     showResult('denied', trimmedBody || 'UNKNOWN STATUS',
                         `from ${domain}`, normalizedText, hash);
                 }
             } else if (response.status === 404) {
+                console.log('[TSV] ✗ VERIFICATION FAILED - hash endpoint not found (404)');
                 showResult('failed', 'NOT FOUND',
                     `Hash not registered at ${domain}`, normalizedText, hash);
             } else {
+                console.log('[TSV] ✗ VERIFICATION FAILED - unexpected HTTP status');
                 showResult('failed', `HTTP ${response.status}`,
                     `Unexpected response from ${domain}`, normalizedText, hash);
             }
         } catch (error) {
+            console.error('[TSV] Verification error:', error);
             if (error.name === 'TypeError' && error.message.includes('Failed to fetch')) {
                 showResult('error', 'CANNOT VERIFY',
                     `Network error or CORS restriction for ${domain}`, normalizedText, hash);
