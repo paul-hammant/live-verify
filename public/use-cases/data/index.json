@@ -1,8 +1,8 @@
 {
-  "generated": "2026-01-01T10:37:26.644Z",
-  "totalUseCases": 451,
+  "generated": "2026-01-01T11:20:26.719Z",
+  "totalUseCases": 452,
   "categories": {
-    "Real Estate & Property": 35,
+    "Real Estate & Property": 36,
     "Charitable & Non-Profit": 5,
     "Banking & Payments": 12,
     "Actuarial & Insurance Mathematics": 13,
@@ -2371,6 +2371,21 @@
         "certificates",
         "safety",
         "inspection"
+      ]
+    },
+    {
+      "slug": "escrow-account-statements",
+      "title": "Escrow Account Statements",
+      "category": "Real Estate & Property",
+      "volume": "Large",
+      "retention": "7 years (tax records), life of loan",
+      "snippet": "Account holder name, property address, statement date, opening balance, closing balance, itemized disbursements (property tax, homeowners insurance, PMI, flood insurance), deposits from monthly paymen",
+      "tags": [
+        "escrow",
+        "mortgage",
+        "insurance",
+        "property-tax",
+        "statements"
       ]
     },
     {
@@ -6951,7 +6966,7 @@
   "categoriesList": [
     {
       "name": "Real Estate & Property",
-      "count": 35
+      "count": 36
     },
     {
       "name": "Travel & Hospitality",

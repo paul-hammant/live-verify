@@ -122,6 +122,8 @@ retention: "7 years"
 
 **Workflow:** Edit .md files → run `node scripts/migrate-use-cases.js` → index.json updated.
 
+**Important:** Always run `node scripts/migrate-use-cases.js` before committing changes to use-cases. The generated `index.json` must be kept in sync with the .md files.
+
 **Categories:** 40 categories. Large ones split (Insurance→Specialty/Claims/Bonds, Logistics→Shipping/Customs/Warehouse/Fleet, Banking→Payments/Compliance/Trade/Fintech).
 
 ## Core Logic
