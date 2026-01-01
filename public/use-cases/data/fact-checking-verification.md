@@ -7,13 +7,13 @@ slug: "fact-checking-verification"
 tags: ["fact", "checking", "verification", "media", "publishing"]
 ---
 
-<div id="dp-article" style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #ccc; background: #fffef8;">
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #ccc; background: #fffef8;">
   <div style="background: #1a1a2e; color: white; padding: 12px 20px; text-align: center;">
     <div style="font-size: 2.2em; font-weight: bold; letter-spacing: 3px; font-family: 'Times New Roman', serif;">THE DAILY PLANET</div>
     <div style="font-size: 0.85em; margin-top: 4px; opacity: 0.8;">METROPOLIS • Truth, Justice, and Verified Facts</div>
   </div>
   <div style="padding: 20px 24px;">
-    <h2 style="font-size: 1.6em; margin: 0 0 8px 0; line-height: 1.2;"><span id="dp-bracket-start" style="display: inline-block; max-width: 0; overflow: hidden; color: #c00; font-weight: bold; font-size: inherit; vertical-align: text-top; transition: max-width 0.15s;">[</span>LexCorp Tower Fire: 47 Rescued, No Casualties</h2>
+    <h2 style="font-size: 1.6em; margin: 0 0 8px 0; line-height: 1.2;"><span data-bracket="start" data-for="daily-planet">[</span>LexCorp Tower Fire: 47 Rescued, No Casualties</h2>
     <div style="font-size: 0.9em; color: #666; margin-bottom: 16px;">
       By <strong>Lois Lane</strong> | Metro Desk | December 15, 2025
     </div>
@@ -21,12 +21,10 @@ tags: ["fact", "checking", "verification", "media", "publishing"]
       A fire broke out on the 38th floor of LexCorp Tower yesterday evening, prompting the evacuation of 47 employees. Metropolis Fire Department responded within 4 minutes of the initial alarm at 6:47 PM.
     </p>
     <p style="line-height: 1.6; margin-bottom: 12px;">
-      "All personnel were evacuated safely," said Fire Chief Marcus Stone. "The sprinkler system contained the blaze until our units arrived."<span id="dp-bracket-end" style="display: inline-block; max-width: 0; overflow: hidden; color: #c00; font-weight: bold; font-size: inherit; vertical-align: text-bottom; transition: max-width 0.15s;">]</span>
+      "All personnel were evacuated safely," said Fire Chief Marcus Stone. "The sprinkler system contained the blaze until our units arrived."<span data-bracket="end" data-for="daily-planet">]</span>
     </p>
-    <div id="dp-verify" style="border-top: 1px dashed #999; margin-top: 16px; padding-top: 12px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; cursor: pointer; transition: color 0.15s;"
-      title="Demo only: we don't own fctchkrs.ca so we can't&#10;place a SHA256 there to make this a working example"
-      onmouseover="document.getElementById('dp-bracket-start').style.maxWidth='1em'; document.getElementById('dp-bracket-end').style.maxWidth='1em'; this.style.color='#c00';"
-      onmouseout="document.getElementById('dp-bracket-start').style.maxWidth='0'; document.getElementById('dp-bracket-end').style.maxWidth='0'; this.style.color='#555';">
+    <div data-verify-line="daily-planet" style="border-top: 1px dashed #999; margin-top: 16px; padding-top: 12px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555;"
+      title="Demo only: we don't own fctchkrs.ca so we can't&#10;place a SHA256 there to make this a working example">
       verify:fctchkrs.ca/d-planet
     </div>
   </div>

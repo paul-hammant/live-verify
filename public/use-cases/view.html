@@ -143,6 +143,30 @@
         .registration-marks {
             /* Visual indicator for registration marks */
         }
+
+        /* Verify hover effect brackets */
+        [data-bracket] {
+            display: inline-block;
+            max-width: 0;
+            overflow: hidden;
+            color: #c00;
+            font-weight: bold;
+            font-size: inherit;
+            transition: max-width 0.15s;
+        }
+        [data-bracket="start"] {
+            vertical-align: text-top;
+        }
+        [data-bracket="end"] {
+            vertical-align: text-bottom;
+        }
+        [data-verify-line] {
+            cursor: pointer;
+            transition: color 0.15s;
+        }
+        [data-verify-line]:hover {
+            color: #c00 !important;
+        }
     </style>
 </head>
 <body>
@@ -155,6 +179,26 @@
     </div>
 
     <script>
+        // Initialize hover effects for verify line examples
+        function initVerifyHover() {
+            document.querySelectorAll('[data-verify-line]').forEach(verifyLine => {
+                const group = verifyLine.dataset.verifyLine;
+                const startBracket = document.querySelector(`[data-bracket="start"][data-for="${group}"]`);
+                const endBracket = document.querySelector(`[data-bracket="end"][data-for="${group}"]`);
+
+                if (startBracket && endBracket) {
+                    verifyLine.addEventListener('mouseover', () => {
+                        startBracket.style.maxWidth = '1em';
+                        endBracket.style.maxWidth = '1em';
+                    });
+                    verifyLine.addEventListener('mouseout', () => {
+                        startBracket.style.maxWidth = '0';
+                        endBracket.style.maxWidth = '0';
+                    });
+                }
+            });
+        }
+
         // Get the document slug from URL
         const params = new URLSearchParams(window.location.search);
         const slug = params.get('doc');
@@ -220,6 +264,9 @@
                     const contentEl = document.getElementById('content');
                     contentEl.classList.remove('loading');
                     contentEl.innerHTML = html;
+
+                    // Initialize verify hover effects
+                    initVerifyHover();
                 })
                 .catch(error => {
                     document.getElementById('content').innerHTML =
