@@ -1,150 +1,107 @@
 ---
-title: "Family and Medical Leave Act (FMLA) posters"
+title: "Family and Medical Leave Act (FMLA) Posters"
 category: "Mandatory Workplace Postings"
 volume: "Very Large"
 retention: "Current version"
 slug: "fmla-posters"
-tags: ["fmla", "posters", "mandatory", "workplace", "postings"]
+tags: ["fmla", "labor-law", "workplace-rights", "parental-leave", "medical-leave", "mandatory-posting", "department-of-labor", "compliance"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 3px solid #002d62; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="background: #002d62; color: #fff; padding: 20px; text-align: center; display: flex; align-items: center; justify-content: center;">
+    <div style="font-size: 2em; margin-right: 15px;">🏥</div>
+    <div>
+      <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">YOUR RIGHTS UNDER THE FMLA</h2>
+      <div style="font-size: 0.85em; opacity: 0.9;">FAMILY AND MEDICAL LEAVE ACT</div>
+    </div>
+  </div>
+
+  <div style="padding: 30px;">
+    <h3 style="margin-top: 0; color: #002d62; font-size: 1.1em; border-bottom: 2px solid #002d62; padding-bottom: 5px;">LEAVE ENTITLEMENTS</h3>
+    
+    <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
+      <p>Eligible employees can take up to <strong>12 weeks</strong> of unpaid, job-protected leave in a 12-month period for:</p>
+      <ul style="margin: 10px 0; padding-left: 20px;">
+        <li>The birth of a child or placement of a child for adoption.</li>
+        <li>To care for a spouse, child, or parent with a serious health condition.</li>
+        <li>A serious health condition that makes the employee unable to work.</li>
+      </ul>
+
+      <p style="margin-top: 20px;"><strong>Employer:</strong> <span data-bracket="start" data-for="fmla">]</span>Acme Global Hub, Inc.<br>
+      <strong>Poster Version:</strong> 2026-FMLA-V1</p>
+    </div>
+
+    <div style="margin-top: 25px; padding: 10px; background: #f0f4f8; border: 1px solid #d1d9e6; font-size: 0.8em; color: #002d62; font-style: italic; text-align: center;">
+      Verified compliant with DOL WHD Section 109 requirements. Scan to view latest eligibility rules or report a leave denial.
+    </div>
+
+    <div data-verify-line="fmla" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: DOL doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:dol.gov/fmla/v/2026-V1 <span data-bracket="end" data-for="fmla">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-None (informational), FMLA eligibility, DOL Wage and Hour contact
+Poster version ID (e.g., 2026-V1), issuing authority (DOL Wage & Hour), mandatory entitlement text (12 weeks), eligibility criteria (1,250 hours/year), employer name (if custom), effective date of latest federal amendment.
 
-**Privacy Salt:** Sensitive personal information requires random salt in verification lines to prevent hash enumeration.
+**Document Types:**
+- **FMLA Employee Rights Poster:** Mandatory breakroom display.
+- **Notice of Eligibility (WH-381):** Issued to an individual employee.
+- **Designation Notice (WH-382):** Formally approving/denying leave.
+- **Medical Certification:** (Linked hash) proving health condition.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`dol.gov`) and current regulation status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Current** — Poster contains the latest mandatory federal rights text.
+- **Outdated** — **ALERT:** The law has been amended; employer must replace the poster.
+- **Informational** — Specific to military family leave or other sub-types.
+- **Invalid** — Unofficial text detected.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Employer (HR Director)** benefits from verification.
 
-**Medical Records:** Verify health documents for personal medical records.
+**Compliance Audit Defense:** Proving to a DOL investigator that the company is meeting its "Notice Obligations" under 29 CFR § 825.300. A verified hash on the breakroom poster prevents the $110+ per-day fine for failure to post current rights.
 
-**Provider Presentation:** Share verified results with other healthcare providers.
-
-**Insurance Claims:** Support health insurance claims with verified documentation.
-
-**Compliance Requirements:** Meet employer or school health documentation requirements.
-
-**Legal Matters:** Provide verified health records for disability, litigation, or family matters.
+**Remote Worker Compliance:** Providing a verified link to the FMLA poster in the corporate "Hand-Book" app, ensuring that remote workers have access to the same verified info as on-site staff.
 
 ## Third-Party Use
 
-**Regulators and Oversight Bodies**
+**Employees**
+**Rights Verification:** A worker who is being told "You only get 2 weeks" can scan the breakroom poster. "Verified by dol.gov" provides them with the legal proof that they are actually entitled to 12 weeks, empowering them to challenge bad-faith management.
 
-Regulatory compliance and oversight:
+**Department of Labor (WHD) Inspectors**
+**Rapid Inspection:** An inspector can walk through a call center and scan every mandatory poster in 60 seconds. "Verified by dol.gov" proves the company isn't using "Legacy Paper" to hide new employee benefits.
 
-**Systematic Hash Receipt:** Receive hashes in bulk for regulatory oversight.
-
-**Audit Verification:** Verify documents during routine or targeted audits.
-
-**Compliance Monitoring:** Monitor issuer compliance with documentation requirements.
-
-**Investigation Support:** Verify documents during fraud or compliance investigations.
-
-**Consumer Protection:** Verify consumer-facing documents for protection enforcement.
-
-**Employers**
-
-Hiring and compliance verification:
-
-**Pre-Employment Screening:** Verify credentials during hiring process.
-
-**I-9 Compliance:** Verify work authorization and identity documents.
-
-**Credential Verification:** Confirm professional licenses and certifications.
-
-**Health Requirements:** Verify health-related documentation for workplace safety.
-
-**Background Checks:** Integrate verification into background check processes.
-
-**Insurance Companies**
-
-Underwriting and claims processing:
-
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Healthcare Providers**
-
-Medical care and coordination:
-
-**Medical History:** Verify patient-provided medical records and test results.
-
-**Treatment Planning:** Confirm diagnostic results for treatment decisions.
-
-**Specialist Referrals:** Validate records when coordinating care.
-
-**Insurance Authorization:** Verify coverage and authorization documents.
-
-**Compliance Requirements:** Confirm vaccination and health screening records.
+**Employment Lawyers**
+**Evidence:** In a "Wrongful Termination" lawsuit, verifying exactly what was posted on the company's bulletin board at the time of the dispute.
 
 ## Verification Architecture
 
-**The Family and Medical Leave Act (FMLA) posters Fraud Problem**
+**The "Rights Hiding" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Entitlement Editing:** A manager editing the PDF to change "12 weeks" to "4 weeks" to discourage employees from taking extended leave.
+- **Old Versioning:** Keeping a 2010 version of the poster up to hide new protections for same-sex spouses or military caregivers.
+- **Fake Notices:** Creating fake "Designation Notices" to trick employees into thinking their FMLA leave was denied by the government.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**U.S. Department of Labor (WHD):** (The primary authority).
+**Third-Party HR Platforms:** (e.g., Zenefits, Gusto - hosting the hashes).
+**Labor Law Compliance Firms.**
 
-**Hospitals and Health Systems:** Major healthcare providers and hospital networks.
+## Competition vs. Subscription Poster Services
 
-**Clinical Laboratories:** Reference labs and hospital-based laboratories.
+| Feature | OCR-to-Hash | Annual Subscription Service | Federal Government Website |
+| :--- | :--- | :--- | :--- |
+| **Integrity** | **Cryptographic.** Protects every sentence. | **Brand-Bound.** Trust the vendor logo. | **High.** But manual. |
+| **Freshness** | **Real-time.** Shows if outdated today. | **Laggy.** Depends on mail cycles. | **Live.** |
+| **Cost** | **Free.** (Marginal hosting). | **High.** $100-$300/year per site. | **Free.** |
+| **User Access** | **High.** Instant scan for workers. | **None.** For employees. | **Slow.** Requires manual search. |
 
-**Medical Clinics:** Physician practices and specialty clinics.
-
-**Public Health Departments:** Government health agencies for certifications.
-
-**System Integration**
-
-Healthcare verification connects to clinical systems:
-
-**EHR Systems:** Electronic health record systems generate verification hashes.
-
-**Lab Information Systems:** Laboratory systems create verification for results.
-
-**Health Information Exchanges:** Regional HIEs facilitate verification.
-
-**FHIR Standards:** HL7 FHIR could incorporate verification endpoints.
-
-**Privacy Considerations**
-
-Sensitive personal information requires special handling:
-
-**Privacy Salt:** Random salt added to verification lines prevents hash enumeration attacks.
-
-**Minimum Disclosure:** Verification response reveals only necessary information.
-
-**Access Controls:** Verification endpoints implement appropriate access restrictions.
-
-**Audit Logging:** Verification attempts logged for security and compliance.
-
-## Rationale
-
-Prevents fake FMLA posters. Domain binding verifies DOL. Federal posting requirement (employers with 50+ employees). Employee leave rights. $110 penalty per violation.
+**Why OCR wins here:** The "Legal Shield." Labor laws change suddenly. A subscription service might take 3 weeks to mail a new poster. OCR-to-hash tells the employer **today** that their poster is outdated, allowing them to print a new one instantly and avoid a $110/day fine that could have accrued during the mail delay.

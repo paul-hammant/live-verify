@@ -1,125 +1,119 @@
 ---
-title: "Delivery orders and cargo release documents"
+title: "Delivery Orders and Cargo Release"
 category: "Shipping & Freight"
 volume: "Large"
 retention: "Delivery + 3-7 years"
 slug: "delivery-orders-cargo-release"
-tags: ["delivery", "orders", "cargo", "release", "logistics", "transportation"]
+tags: ["logistics", "shipping", "port-authority", "cargo-release", "delivery-order", "warehousing", "terminal-operations"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 1px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <div style="background: #002d62; color: #fff; padding: 10px; display: flex; justify-content: space-between; align-items: center;">
+    <div style="font-weight: bold; font-size: 1.2em;">EXPEDITORS INTERNATIONAL</div>
+    <div style="font-size: 0.8em; text-align: right;">Ref #: <span data-bracket="start" data-for="cargo">]</span>DO-2026-992288</div>
+  </div>
+
+  <div style="padding: 15px; font-size: 0.85em;">
+    <h2 style="text-align: center; margin: 0 0 15px 0; font-size: 1.3em; text-decoration: underline;">DELIVERY ORDER</h2>
+
+    <div style="display: flex; border-bottom: 1px solid #000; padding-bottom: 10px; margin-bottom: 15px;">
+      <div style="width: 50%; border-right: 1px solid #000; padding-right: 10px;">
+        <strong>To: Terminal Operator</strong><br>
+        Port of Long Beach, Pier J<br>
+        Long Beach, CA
+      </div>
+      <div style="width: 50%; padding-left: 10px;">
+        <strong>Consignee / Deliver to:</strong><br>
+        Global Retail distribution, LLC<br>
+        Ontario, CA
+      </div>
+    </div>
+
+    <div style="background: #f9f9f9; padding: 10px; border: 1px solid #ccc; margin-bottom: 15px;">
+      <p>Please deliver the following goods to the bearer of this order:</p>
+      <strong>Container #:</strong> MSKU-998877-6<br>
+      <strong>B/L No:</strong> MAE-44221100<br>
+      <strong>Cargo:</strong> 42 Pallets: Consumer Electronics
+    </div>
+
+    <div style="display: flex; justify-content: space-between; align-items: flex-end;">
+      <div>
+        <strong>Carrier / Broker Signature:</strong><br>
+        <em>Jane Q. Broker</em><br>
+        March 15, 2026
+      </div>
+      <div style="text-align: right;">
+        <div style="border: 2px solid #002d62; display: inline-block; padding: 5px; font-weight: bold; color: #002d62;">FREIGHT PREPAID<br>CUSTOMS CLEARED</div>
+      </div>
+    </div>
+
+    <div data-verify-line="cargo" style="border-top: 1px dashed #999; margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #555; text-align: center;"
+      title="Demo only: Broker/Carrier doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:expeditors.com/do/v/992288 <span data-bracket="end" data-for="cargo">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Consignee, carrier, cargo description, release authorization
+Delivery Order (DO) number, Consignee name, Trucking company (if specified), Container ID, Bill of Lading (B/L) number, Port Terminal ID, freight payment status, customs clearance status, expiration date (Last Free Day), issuing broker/carrier.
+
+**Document Types:**
+- **Delivery Order (DO):** Authorization to release cargo from the terminal.
+- **Steamship Line Release:** Proving the ocean freight is paid.
+- **Customs Release:** (Form 3461) Proving the government has released the goods.
+- **Gate Pass:** Handed to the driver for physical exit.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (the Customs Broker or Carrier) and the release standing.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Released** — All holds cleared; cargo authorized for pickup.
+- **Freight Hold** — **ALERT:** Ocean freight not yet paid; do not release.
+- **Customs Hold** — Government has blocked the release.
+- **Picked Up** — Cargo has already left the terminal (fraud detection).
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+**The Trucker (Driver)** benefits from verification.
 
-**Shipment Tracking:** Verify documentation matches actual shipment.
+**Terminal Access:** Proving to the gate clerk that the "Delivery Order" on their tablet is 100% authentic and that all freight/customs hurdles are cleared. This prevents the driver from being "Turned Away" at the gate, which saves hours of idling and fuel.
 
-**Customs Clearance:** Present verified documents to customs authorities.
-
-**Payment Verification:** Confirm charges match agreed terms.
-
-**Dispute Prevention:** Maintain verified records for potential disputes.
-
-**Insurance Claims:** Provide verified documentation for cargo claims.
+**Liability Protection:** Confirming the "Last Free Day" is verified, ensuring the trucker won't be hit with unexpected "Demurrage" charges at the gate.
 
 ## Third-Party Use
 
-**Insurance Companies**
+**Terminal Operators (Stevedores)**
+**Anti-Theft:** Cargo theft via "Fictitious Pickup" is a billion-dollar problem. Thieves use forged paper DOs to trick gate clerks into releasing containers. OCR-to-hash allows the clerk to verify the order against the broker's domain, stopping the theft at the gate.
 
-Underwriting and claims processing:
+**Customs Brokers**
+**Supply Chain Visibility:** Remotely monitoring the "Verified Status" of their issued DOs to see exactly when the cargo was picked up by the trucker.
 
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Customs and Border Authorities**
-
-International trade compliance:
-
-**Import Clearance:** Verify shipping documents for customs clearance.
-
-**Duty Assessment:** Validate commercial invoices and declarations.
-
-**Trade Compliance:** Confirm certificates of origin and trade documents.
-
-**Security Screening:** Verify cargo documentation for security.
-
-**Export Controls:** Validate export documentation and licenses.
-
-**Freight Forwarders and Carriers**
-
-Logistics and transportation:
-
-**Shipment Acceptance:** Verify documents before accepting cargo.
-
-**Carrier Handoffs:** Validate documentation at transfer points.
-
-**Liability Determination:** Reference verified documents for claims.
-
-**Route Planning:** Confirm documentation for transit requirements.
-
-**Delivery Confirmation:** Verify documents at final delivery.
+**Marine Insurers**
+**Risk Mitigation:** Ensuring that high-value cargo is only released to verified, authorized carriers.
 
 ## Verification Architecture
 
-**The Delivery orders and cargo release documents Fraud Problem**
+**The "Fake Release" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Cargo Misrepresentation:** False descriptions of goods being shipped
-- **Duplicate Bills:** Creating multiple originals for fraud
-- **Document Mismatch:** Documents that don't match actual cargo
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Ghost Pickups:** Thieves creating a fake "Delivery Order" for a $200,000 container of electronics, posing as a legitimate trucking company.
+- **Hold Removal:** Editing a PDF to remove a "Freight Hold" or "Customs Hold" notation to trick the terminal into releasing cargo before payment.
+- **Date Alteration:** Changing the "Last Free Day" to avoid paying storage fees to the terminal.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Customs Brokers:** (e.g., Expeditors, Flexport, K+N).
+**Steamship Lines:** (e.g., Maersk, MSC).
+**Terminal Operating Systems (TOS).**
 
-**Carriers:** Shipping lines, airlines, trucking companies, and railroads.
+## Competition vs. Port Community Systems (PCS)
 
-**Freight Forwarders:** International freight forwarders and NVOCCs.
+| Feature | OCR-to-Hash | Port Portal / PCS | Paper Delivery Order |
+| :--- | :--- | :--- | :--- |
+| **Trust Anchor** | **Domain-Bound.** Bound to the Broker. | **System-Bound.** Trust the Port's IT. | **Zero.** Easily forged. |
+| **User Access** | **Universal.** Any trucker with a phone. | **Restricted.** Requires complex EDI/Portal logins. | **Instant.** |
+| **Integrity** | **Binds Content.** Proves the *Container #*. | **Data-Only.** Doesn't protect the paper. | **Vulnerable.** |
+| **Offline Proof** | **Strong.** The paper is the anchor. | **None.** Requires server access. | **Medium.** |
 
-**Customs Brokers:** Licensed customs brokers for trade documentation.
-
-**Port Authorities:** Port operators for terminal and cargo documents.
-
-**System Integration**
-
-Shipping verification integrates with trade systems:
-
-**EDI Standards:** Electronic data interchange for trade documents (EDIFACT, X12).
-
-**Port Community Systems:** Port system integration for cargo documentation.
-
-**Customs Systems:** Integration with ACE, ABI, and customs clearance platforms.
-
-**Carrier Systems:** Shipping line and freight forwarder system integration.
-
-## Rationale
-
-Prevents unauthorized cargo release. Domain binding verifies carrier/terminal operator. Prevents cargo theft (releasing to wrong party). Port terminal verification.
+**Why OCR wins here:** The "Gate Clerk" reality. Gate operations are high-pressure and fast. Clerks often handle hundreds of trucks an hour. They don't have time to cross-reference multiple slow portals. OCR-to-hash turns the **Trucker's Document** into a live, high-speed trust token that provides "Port-Grade" security in seconds.

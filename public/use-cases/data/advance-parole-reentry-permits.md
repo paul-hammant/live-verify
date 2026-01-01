@@ -1,157 +1,111 @@
 ---
-title: "Advance parole and re-entry permits"
+title: "Advance Parole and Re-Entry Permits"
 category: "Immigration & Visa Documents"
 volume: "Medium"
 retention: "Permit validity + 7 years"
 slug: "advance-parole-reentry-permits"
-tags: ["advance", "parole", "reentry", "permits", "immigration", "visa", "documents"]
+tags: ["advance", "parole", "reentry", "permits", "immigration", "visa", "uscis"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fdfdfd; padding: 0;">
+  <div style="background: #eef; padding: 15px; border-bottom: 1px solid #ccc; display: flex; align-items: center;">
+    <div style="width: 50px; height: 50px; background: #ccc; border-radius: 50%; margin-right: 15px; display: flex; align-items: center; justify-content: center; font-size: 0.8em; text-align: center;">[Seal]</div>
+    <div>
+      <div style="font-weight: bold; font-size: 1.1em;">Department of Homeland Security</div>
+      <div style="font-size: 0.9em;">U.S. Citizenship and Immigration Services</div>
+    </div>
+  </div>
+
+  <div style="padding: 25px;">
+    <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+      <div style="border: 1px solid #000; padding: 5px 10px; font-weight: bold;">I-512L</div>
+      <div style="font-family: monospace;">A# 123-456-789</div>
+    </div>
+
+    <h2 style="text-align: center; font-size: 1.3em; margin-bottom: 20px;">AUTHORIZATION FOR PAROLE OF AN ALIEN<br>INTO THE UNITED STATES</h2>
+
+    <div style="display: flex; margin-bottom: 20px;">
+      <div style="width: 100px; height: 120px; background: #eee; margin-right: 20px; display: flex; align-items: center; justify-content: center; color: #777;">[Photo]</div>
+      <div style="font-size: 0.95em; line-height: 1.5; color: #333;">
+        <p><strong>Name:</strong> <span data-bracket="start" data-for="parole">]</span>JUAN VALDEZ<br>
+        <strong>Date of Birth:</strong> 05/05/1980<br>
+        <strong>Country of Birth:</strong> COLOMBIA</p>
+        <p><strong>Date of Issuance:</strong> JAN 15, 2026<br>
+        <strong>Valid Until:</strong> JAN 14, 2027</p>
+      </div>
+    </div>
+
+    <p style="font-size: 0.9em; text-align: justify;">Presentation of this authorization will permit the above named alien to seek parole at a port of entry. Officer at POE: Please endorse below.</p>
+
+    <div data-verify-line="parole" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: USCIS doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:uscis.gov/v/i512/x9y8z7 <span data-bracket="end" data-for="parole">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Full name, DOB, nationality, permit type, validity period, I-131 receipt number
+Full name, Alien Registration Number (A-Number), date of birth, country of birth, permit type (Advance Parole vs Re-Entry Permit), validity dates, photograph (via hash of photo data or photo ID), restrictions.
 
-**Permit Types:** Various permit subtypes may exist depending on jurisdiction and specific use.
+**Document Types:**
+- **I-512L:** Advance Parole (paper document).
+- **I-327:** Re-Entry Permit (passport-style booklet).
+- **Refugee Travel Document:** (I-571).
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`uscis.gov`) and the document status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-- **Suspended** - Permit temporarily suspended
-- **Pending** - Permit application pending approval
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Valid** — Document was issued and is currently valid.
+- **Revoked** — The underlying application (e.g., I-485) was denied, invalidating the parole document.
+- **Lost/Stolen** — Document reported missing.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Applicant** (traveler) benefits from verification.
 
-**Legitimacy Confirmation:** After obtaining permit, verify it was properly issued and recorded.
+**Airline Boarding:** The biggest anxiety for Advance Parole holders is being denied boarding in a foreign country because the airline staff doesn't recognize the paper document. A verifiable link allowing staff to see "VALID" on `uscis.gov` provides the confidence needed to issue the boarding pass.
 
-**Compliance Display:** Maintain verified permit for posting requirements.
-
-**Scope Verification:** Confirm permitted activities match intended use.
-
-**Expiration Tracking:** Monitor permit status to avoid lapses.
-
-**Record Keeping:** Maintain verified documentation for audits and compliance.
+**Employer I-9:** Proving work authorization (parole documents can sometimes be used for I-9 purposes).
 
 ## Third-Party Use
 
-**Lenders and Financial Institutions**
+**Airlines (Foreign Airports)**
 
-Credit underwriting and risk assessment:
+**Carrier Sanctions:** Airlines are fined heavily for bringing passengers with invalid documents. They are risk-averse. Verifying the parole document instantly prevents wrongful denial of boarding.
 
-**Loan Underwriting:** Verify financial and property documents during loan applications.
+**Social Security Administration**
 
-**Collateral Verification:** Confirm documentation for secured lending.
+**Benefit Eligibility:** Verifying status for SSN issuance or benefits.
 
-**Credit Decisions:** Validate income, employment, and asset documentation.
+**State DMVs**
 
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Insurance Companies**
-
-Underwriting and claims processing:
-
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
-
-**Government Agencies**
-
-Compliance enforcement and administration:
-
-**Inspection Verification:** Field agents verify permits and licenses at sites.
-
-**Enforcement Actions:** Confirm documentation before enforcement.
-
-**Benefit Eligibility:** Verify supporting documents for benefits administration.
-
-**Compliance Audits:** Audit documentation for regulatory compliance.
-
-**Interagency Coordination:** Share verified documents across agencies.
-
-**Real Estate Professionals**
-
-Property transactions and due diligence:
-
-**Purchase Due Diligence:** Verify property documents during transactions.
-
-**Listing Preparation:** Confirm permits and documentation for listings.
-
-**Disclosure Compliance:** Validate required disclosures and permits.
-
-**Title Research:** Verify property documents for title clearance.
-
-**Appraisal Support:** Confirm documented improvements and permits.
+**Driver's Licenses:** States require proof of legal presence. Verifying I-512 documents helps issue Real ID-compliant licenses.
 
 ## Verification Architecture
 
-**The Advance parole and re-entry permits Fraud Problem**
+**The Parole Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Permit Sharing:** Using one property's permit for work at another location
-- **Scope Expansion:** Expanding permitted activities beyond authorization
-- **Contractor Fraud:** Claiming permits that were never obtained
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Photo Substitution:** Replacing the photo on the paper I-512L with a lookalike.
+- **Expired Documents:** Altering the "Valid Until" date to extend travel windows.
+- **Revoked Status:** Using a parole document after the underlying Green Card application has been denied (which voids the parole), but the physical paper wasn't surrendered.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**USCIS:** The sole issuer.
 
-**Government Entities:** Counties, cities, and special districts maintain property records.
+**Privacy Salt:** Critical for immigration documents. The hash must be salted to prevent enumeration of A-Numbers.
 
-**Title Companies:** Title insurers and escrow companies for transaction documents.
+## Competition vs. Central Databases (CBP)
 
-**Lending Institutions:** Banks and mortgage companies for loan documents.
+| Feature | OCR-to-Hash | CBP Systems (TECS) |
+| :--- | :--- | :--- |
+| **User Access** | **Public/Restricted.** Can be opened to Airlines/DMVs via URL. | **Internal Only.** Only CBP officers at the border have access. |
+| **Airline Check-in** | **Feasible.** Check-in agent can scan the paper. | **Impossible.** Agent in Frankfurt cannot query US DHS databases directly. |
+| **Physical Security** | **Tamper-Evident.** Hash protects the printed dates/names. | **None.** The paper itself has weak security features compared to a passport. |
+| **Cost** | **Low.** Standard web infrastructure. | **High.** Secure leased lines/VPNs required for database access. |
 
-**Appraisal Firms:** Licensed appraisers for property valuations.
+**Why OCR wins here:** It extends the "Edge of the Network" to the airline check-in desk in a foreign country. It bridges the gap between the secure US database and the insecure physical world where the traveler actually encounters checkpoints.
 
-**System Integration**
-
-Real estate verification connects to property systems:
-
-**Recording Systems:** County recorder systems for property document registration.
-
-**MLS Integration:** Multiple listing services for property documentation.
-
-**Title Plants:** Title companies maintain verification for title searches.
-
-**E-Recording:** Electronic recording systems generate verification at recording.
-
-## Rationale
-
-Prevents fake advance parole. Domain binding verifies USCIS. Travel authorization for pending AOS. Re-entry documentation. CBP inspection verification. Green card applicant travel. For privacy, issuers can add a random salt line to raise entropy and defeat guessing attacks.

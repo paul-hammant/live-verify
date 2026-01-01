@@ -1,150 +1,113 @@
 ---
-title: "Border crossing receipts (I-94, entry/exit records)"
+title: "Border Crossing Receipts (I-94)"
 category: "Immigration & Visa Documents"
 volume: "Large"
 retention: "Travel + 5-10 years (immigration)"
 slug: "border-crossing-receipts-i94"
-tags: ["border", "crossing", "receipts", "immigration", "visa", "documents"]
+tags: ["immigration", "i-94", "visa", "cbp", "border-crossing", "entry-record", "employment-eligibility"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <div style="background: #002d62; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
+    <div>
+      <div style="font-weight: bold; font-size: 1.1em;">U.S. CUSTOMS AND BORDER PROTECTION</div>
+      <div style="font-size: 0.8em;">Electronic I-94 Admission Record</div>
+    </div>
+    <div style="width: 40px; height: 40px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #002d62; font-weight: bold; font-size: 0.7em; text-align: center;">CBP</div>
+  </div>
+
+  <div style="padding: 25px;">
+    <div style="text-align: center; margin-bottom: 20px;">
+      <h2 style="margin: 0; font-size: 1.3em;">ADMISSION (I-94) RECORD NUMBER</h2>
+      <div style="font-size: 1.5em; font-weight: bold; margin-top: 5px; color: #002d62;"><span data-bracket="start" data-for="i94">]</span>998877665 42</div>
+    </div>
+
+    <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+      <p><strong>Most Recent Admission:</strong> March 15, 2026<br>
+      <strong>Class of Admission:</strong> H-1B<br>
+      <strong>Admit Until Date:</strong> March 14, 2029</p>
+
+      <div style="border-top: 1px solid #eee; padding-top: 10px; margin-top: 10px;">
+        <strong>Family Name:</strong> DOE<br>
+        <strong>First (Given) Name:</strong> JOHN<br>
+        <strong>Birth Date:</strong> 05/05/1985<br>
+        <strong>Passport Number:</strong> ********1234
+      </div>
+    </div>
+
+    <div style="margin-top: 25px; padding: 10px; background: #f9f9f9; border: 1px solid #eee; font-size: 0.8em; color: #555;">
+      This record is a printout of the official electronic I-94 admission record maintained by DHS.
+    </div>
+
+    <div data-verify-line="i94" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: CBP doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:cbp.gov/i94/v/99887766542 <span data-bracket="end" data-for="i94">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Full name, passport number, entry/exit dates, port of entry, admission class
+Admission (I-94) Record Number, full name, date of birth, passport number, country of issuance, class of admission (e.g., B-1, F-1, H-1B), date of entry, "Admit Until" date.
 
-**Privacy Salt:** Sensitive personal information requires random salt in verification lines to prevent hash enumeration.
+**Document Types:**
+- **Electronic I-94 Printout:** The standard proof of legal entry.
+- **Paper I-94 (White/Green):** Issued at land borders or in rare cases.
+- **I-94A:** For certain classes of admission.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`cbp.gov`) and current admission status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Valid** — Traveler is currently in legal status.
+- **Overstay** — "Admit Until" date has passed without extension.
+- **Departed** — Traveler has left the U.S. (record closed).
+- **Adjusted** — Status has changed (e.g., to Permanent Resident).
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Traveler** (Non-citizen) benefits from verification.
 
-**Status Confirmation:** Verify immigration documents after receipt from authorities.
+**Employment (I-9):** Proving to a new employer that they are legally authorized to work in H-1B or L-1 status. A verified I-94 printout provides the HR manager with confidence that the PDF hasn't been altered.
 
-**Employment Authorization:** Confirm work authorization for I-9 compliance.
+**Driver's License:** DMVs require proof of legal presence. Verification bypasses the frequent "SAVE" database delays by providing a direct link to the CBP record.
 
-**Travel Planning:** Verify travel document validity before international trips.
-
-**Status Changes:** Confirm application outcomes and new status.
-
-**Family Petitions:** Provide verified status for dependent applications.
+**SSN Application:** Proving legal status to the Social Security Administration for number issuance.
 
 ## Third-Party Use
 
-**Employers**
+**Employers (HR Departments)**
+**Compliance:** Ensuring they don't hire someone with an expired or fake I-94, which avoids massive federal fines. Verification allows for "Zero-Trust" onboarding of foreign nationals.
 
-Hiring and compliance verification:
+**Universities (DSOs)**
+**Student Monitoring:** International Student Offices (DSOs) verify the I-94s of thousands of students every semester to maintain SEVIS compliance.
 
-**Pre-Employment Screening:** Verify credentials during hiring process.
-
-**I-9 Compliance:** Verify work authorization and identity documents.
-
-**Credential Verification:** Confirm professional licenses and certifications.
-
-**Health Requirements:** Verify health-related documentation for workplace safety.
-
-**Background Checks:** Integrate verification into background check processes.
-
-**Government Agencies**
-
-Compliance enforcement and administration:
-
-**Inspection Verification:** Field agents verify permits and licenses at sites.
-
-**Enforcement Actions:** Confirm documentation before enforcement.
-
-**Benefit Eligibility:** Verify supporting documents for benefits administration.
-
-**Compliance Audits:** Audit documentation for regulatory compliance.
-
-**Interagency Coordination:** Share verified documents across agencies.
-
-**Healthcare Providers**
-
-Medical care and coordination:
-
-**Medical History:** Verify patient-provided medical records and test results.
-
-**Treatment Planning:** Confirm diagnostic results for treatment decisions.
-
-**Specialist Referrals:** Validate records when coordinating care.
-
-**Insurance Authorization:** Verify coverage and authorization documents.
-
-**Compliance Requirements:** Confirm vaccination and health screening records.
-
-**Educational Institutions**
-
-Admissions and enrollment:
-
-**Transfer Credits:** Verify transcripts for transfer credit evaluation.
-
-**Graduate Admissions:** Validate undergraduate credentials for graduate programs.
-
-**Professional Programs:** Confirm prerequisite credentials for professional schools.
-
-**International Students:** Verify foreign credentials for admissions and visa support.
-
-**Scholarship Awards:** Validate academic credentials for scholarship eligibility.
+**Banks / Mortgage Lenders**
+**Legal Presence:** Verifying that a borrower is legally present in the U.S. for the duration of a loan or to comply with KYC/AML regulations.
 
 ## Verification Architecture
 
-**The Border crossing receipts (I-94, entry/exit records) Fraud Problem**
+**The "I-94 Alteration" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Date Extension:** Changing the "Admit Until" date from 2024 to 2026 in a PDF editor to hide an overstay.
+- **Class Swapping:** Changing a "B-2" (Tourist - No Work) to an "H-1B" (Work Authorized) to get a job.
+- **Record Fabrication:** Creating a fake I-94 number for a person who entered the country illegally.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**U.S. Customs and Border Protection (CBP):** The primary issuer.
+**DHS SAVE System:** (The backend database).
 
-**USCIS:** U.S. Citizenship and Immigration Services for immigration documents.
+**Privacy Salt:** Essential. I-94 numbers and names are highly sensitive. The hash must be salted to prevent status enumeration.
 
-**DOS:** Department of State for passports and consular documents.
+## Competition vs. DHS SAVE System
 
-**CBP:** Customs and Border Protection for entry/exit documentation.
+| Feature | OCR-to-Hash | DHS SAVE System | Paper Printout |
+| :--- | :--- | :--- | :--- |
+| **Accessibility** | **Open.** Any employer or bank can verify. | **Restricted.** Only Gov agencies and some employers have access. | **Manual.** |
+| **Speed** | **Instant.** Scan the paper. | **Slow.** Often takes 3-10 days for "Manual Verification" step. | **Instant.** |
+| **Trust** | **Cryptographic.** Bound to `cbp.gov`. | **High.** Direct DB access. | **Low.** Easily faked. |
+| **Integration** | **Web-Native.** Easy to add to onboarding apps. | **Heavy.** Requires complex API integration and federal vetting. | **None.** |
 
-**Foreign Governments:** International authorities for foreign-issued documents.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-**Privacy Considerations**
-
-Sensitive personal information requires special handling:
-
-**Privacy Salt:** Random salt added to verification lines prevents hash enumeration attacks.
-
-**Minimum Disclosure:** Verification response reveals only necessary information.
-
-**Access Controls:** Verification endpoints implement appropriate access restrictions.
-
-**Audit Logging:** Verification attempts logged for security and compliance.
-
-## Rationale
-
-Prevents fake I-94 records. Domain binding verifies CBP/immigration authority. Overstay prevention. Visa compliance verification. Employment eligibility documentation. International student status verification.
+**Why OCR wins here:** The "Employer Gap." Most small businesses do not have access to the DHS SAVE system. They are forced to trust a piece of paper provided by the employee. OCR-to-hash allows **every employer** to have "Government-Grade" trust in the I-94 record without needing a federal contract.

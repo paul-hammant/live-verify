@@ -4,274 +4,111 @@ category: "Construction & Property Permits"
 volume: "Medium"
 retention: "Permanent (building records)"
 slug: "building-permits"
-tags: ["building", "permits", "construction", "property"]
+tags: ["construction", "building-permit", "city-planning", "inspection", "contractor", "home-improvement"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 3px solid #fbc02d; background: #fffde7; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="background: #fbc02d; color: #000; padding: 15px; text-align: center;">
+    <h2 style="margin: 0; text-transform: uppercase;">CITY OF MIAMI</h2>
+    <div style="font-size: 0.9em; font-weight: bold;">BUILDING DEPARTMENT</div>
+  </div>
+
+  <div style="padding: 25px;">
+    <div style="text-align: center; border-bottom: 2px solid #fbc02d; padding-bottom: 10px; margin-bottom: 20px;">
+      <h3 style="margin: 0; color: #333;">BUILDING PERMIT</h3>
+      <div style="font-size: 1.2em; font-weight: bold; margin-top: 5px;">Permit #: BLD-2026-9928</div>
+    </div>
+
+    <div style="font-size: 0.95em; line-height: 1.5; color: #333;">
+      <p><strong>Address:</strong> <span data-bracket="start" data-for="permit">]</span>4500 Ocean Drive, Miami, FL 33139<br>
+      <strong>Owner:</strong> Sarah Connor</p>
+
+      <p><strong>Description:</strong> Construction of 20'x40' In-ground Swimming Pool and Perimeter Fence.</p>
+
+      <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr>
+          <td style="border: 1px solid #fbc02d; padding: 8px;"><strong>Contractor:</strong></td>
+          <td style="border: 1px solid #fbc02d; padding: 8px;">Aqua-Safe Pools (Lic #9982)</td>
+        </tr>
+        <tr>
+          <td style="border: 1px solid #fbc02d; padding: 8px;"><strong>Valuation:</strong></td>
+          <td style="border: 1px solid #fbc02d; padding: 8px;">$ 85,000.00</td>
+        </tr>
+        <tr>
+          <td style="border: 1px solid #fbc02d; padding: 8px;"><strong>Issued:</strong></td>
+          <td style="border: 1px solid #fbc02d; padding: 8px;">March 15, 2026</td>
+        </tr>
+      </table>
+
+      <p style="font-size: 0.8em; font-style: italic; color: #555;">
+        MUST BE POSTED IN A CONSPICUOUS LOCATION VISIBLE FROM THE STREET.
+      </p>
+    </div>
+
+    <div data-verify-line="permit" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: City of Miami doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:miamigov.com/permits/v/BLD9928 <span data-bracket="end" data-for="permit">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Permit number, permit type (new construction, renovation, demolition, electrical, plumbing, mechanical), property address and parcel number, property owner name, contractor name and license number, project description, scope of work, valuation, issue date, expiration date, approved plans reference, required inspections, special conditions.
+Property address, permit number, permit type (New/Renovate/Demo), project description, contractor name/license, project valuation, issuance date, expiration date, key inspection milestones.
 
-**Permit Types:**
-- **Building Permits:** Structural work, new construction, major renovations
-- **Electrical Permits:** Electrical system work
-- **Plumbing Permits:** Plumbing and gas piping
-- **Mechanical Permits:** HVAC systems
-- **Demolition Permits:** Structure demolition
-- **Grading Permits:** Site grading and excavation
-- **Special Use Permits:** Conditional uses
-
-**Site Posting Requirement:** Many jurisdictions require permits to be posted at construction sites. Verification allows anyone passing a site to confirm the displayed permit is genuine.
+**Document Types:**
+- **Building Permit Card:** The yellow/orange card posted at the site.
+- **Certificate of Occupancy (CO):** Final proof that building is safe to inhabit.
+- **Phased Approval Notice:** For large-scale projects (Foundation, Shell, Finish).
 
 ## Data Visible After Verification
 
-Shows the issuer domain (the building department or permitting authority) and the responder text.
+Shows the issuer domain (`miamigov.com`, `nyc.gov`) and current permit status.
 
 **Status Indications:**
-- **Active** - Permit is valid and work may proceed
-- **Expired** - Permit validity period has lapsed
-- **Finaled** - All inspections passed, work complete
-- **Suspended** - Permit suspended pending compliance
-- **Revoked** - Permit revoked for violations
-- **Voided** - Permit cancelled (project not started)
+- **Active** — Work authorized; inspections pending.
+- **Finaled** — All work complete; inspections passed.
+- **Expired** — Work must stop; renewal required.
+- **Red Tagged** — Stop Work Order issued due to violation.
 
-**Inspection Status:** Verification may indicate inspection status: "Active - 3 of 7 inspections passed" or "Final inspection pending."
+## Second-Party Use
 
-## Second-Party Use (Permit Holder Verifying Their Own Permits)
+The **Property Owner** or **General Contractor** benefits from verification.
 
-Property owners and contractors benefit from verification.
+**Payment Draws:** Proving to a lender that the permit is "Active" and "In Good Standing" before they release the next $100,000 construction draw.
 
-**Permit Authenticity:** After receiving permits, holders verify they're genuine and correctly recorded.
-
-**Scope Confirmation:** Permit holders verify permitted scope matches their project plans.
-
-**Expiration Tracking:** Before expiration, holders verify permit status.
-
-**Inspection Scheduling:** Verify inspection requirements before scheduling.
-
-**Compliance Documentation:** Maintain verified permit records for compliance files.
+**Resale Due Diligence:** When selling a home with a recent renovation, the owner provides a "Verified Finaled" status to the buyer, proving the work was legal and inspected.
 
 ## Third-Party Use
 
-**Building Inspectors and Code Enforcement**
+**Neighbors / Concerned Citizens**
+**Neighborhood Integrity:** If a massive addition is being built next door, a neighbor can scan the posted permit. "Verified by City" ensures the work isn't an illegal, unpermitted project that might damage their own property.
 
-Inspection and compliance:
+**Mortgage Lenders**
+**Asset Protection:** Verifying that the building being used as collateral for a $1M loan was constructed with all valid permits and has a legitimate "Certificate of Occupancy."
 
-**Field Verification:** Inspectors arriving at sites verify posted permits are genuine.
-
-**Scope Verification:** Inspectors confirm work being done matches permitted scope.
-
-**Stop Work Orders:** Before issuing stop work, inspectors verify permit status.
-
-**Complaint Investigation:** When investigating complaints, inspectors verify what's permitted.
-
-**Contractors and Subcontractors**
-
-Project coordination:
-
-**Job Site Verification:** Contractors verify permits are in place before starting work.
-
-**Subcontractor Protection:** Subs verify the GC has obtained required permits.
-
-**Lien Rights:** Permit verification supports mechanics lien claims.
-
-**License Compliance:** Verify they're listed as permitted contractor.
-
-**Real Estate Professionals**
-
-Property transactions:
-
-**Due Diligence:** Buyers verify permitted improvements match actual construction.
-
-**Disclosure Support:** Sellers document permitted work.
-
-**Unpermitted Work Detection:** Verification reveals what was and wasn't permitted.
-
-**Title Issues:** Unpermitted work can cloud title or affect insurability.
-
-**Appraisers:** Verify permitted square footage and improvements.
-
-**Lenders and Insurance**
-
-Risk assessment:
-
-**Construction Loans:** Lenders verify permits before disbursing construction draws.
-
-**Homeowners Insurance:** Insurers may verify permitted work for coverage.
-
-**Property Insurance:** Commercial property coverage may depend on permitted occupancy.
-
-**Appraisal Support:** Appraisers verify permitted improvements.
-
-**Neighbors and Community**
-
-Transparency:
-
-**Adjacent Property Owners:** Neighbors verify scope of nearby construction.
-
-**Community Groups:** Verify projects match approved plans.
-
-**NIMBY Concerns:** Verification confirms projects are within permitted scope.
-
-**Code Violation Reporting:** Basis for reporting suspected violations.
-
-**Utility Companies**
-
-Service provision:
-
-**Connection Permits:** Utilities verify permits before connecting new service.
-
-**Electrical Service:** Electric utilities verify electrical permits.
-
-**Gas Service:** Gas utilities verify plumbing permits for gas work.
-
-**Meter Installation:** Verify permits before installing meters.
+**Insurance Companies**
+**Premium Accuracy:** Ensuring that the square footage and use-type of the building match the city's verified records. Unpermitted additions are often excluded from coverage.
 
 ## Verification Architecture
 
-**The Permit Fraud Problem**
+**The "Street-Side" Fraud Problem**
 
-Unpermitted construction is common and costly:
+- **Fake Postings:** Using a color printer to create a fake "Building Permit" to stop neighbors from calling 311 on an illegal construction project.
+- **Scope Creep:** Obtaining a permit for a "Minor Kitchen Remodel" but using the paper to hide a massive structural addition.
+- **Expired Permits:** Leaving a 2023 permit card in the window to hide that the 2026 work is being done without a current permit.
 
-- **Fake Permits:** Fraudulent permit documents posted at sites
-- **Altered Permits:** Genuine permits with modified scope or expiration
-- **Expired Permits:** Continuing work under expired permits
-- **Permit Sharing:** Using one property's permit for work at another
-- **Contractor Fraud:** Contractors claiming permits they haven't obtained
-- **Scope Creep:** Work exceeding permitted scope
+**Issuer Types**
 
-OCR-to-hash addresses fake and altered permits. Verification confirms permits are genuine and current. Scope compliance requires comparing actual work to permitted plans.
+**Municipal Building Departments:** (e.g., LA Building & Safety, Chicago Dept of Buildings).
+**Third-Party Inspectors:** (In some jurisdictions).
 
-**Building Departments as Issuers**
+## Competition vs. Public Records Search
 
-Local government permitting:
+| Feature | OCR-to-Hash | Public GIS/Permit Map | Paper Permit Card |
+| :--- | :--- | :--- | :--- |
+| **Field Access** | **Instant.** Scan the paper in the window. | **Difficult.** Maps are often slow, require specific addresses, and are hard to navigate on mobile. | **Instant.** |
+| **Trust** | **High.** Bound to the City's domain. | **Medium.** Easy to confuse with third-party sites. | **Zero.** Easily faked. |
+| **Integrity** | **Binds Content.** Proves the *Description* matches. | **General.** Often just says "Active" without the project scope details. | **Vulnerable.** |
 
-**Municipal Building Departments:** Cities issue permits for their jurisdiction.
-
-**County Building Departments:** Counties cover unincorporated areas.
-
-**State Agencies:** Some states handle certain permits (e.g., state fire marshal).
-
-**Special Districts:** Some areas have special permitting authorities.
-
-Each jurisdiction operates its own permitting system and could provide verification endpoints.
-
-**Permit System Integration**
-
-Many jurisdictions use commercial permit systems:
-
-**Accela:** Widely used government software platform.
-
-**Tyler Munis/Incode:** Municipal management systems with permitting.
-
-**OpenGov:** Cloud-based government technology.
-
-**SmartGov:** Permit management software.
-
-These systems could generate verification hashes at permit issuance, enabling standardized verification across jurisdictions.
-
-**Inspection Workflow**
-
-Permits require inspections:
-
-**Scheduled Inspections:** Foundation, framing, rough electrical/plumbing/mechanical, final.
-
-**Inspection Results:** Pass, fail, partial.
-
-**Re-Inspection:** Failed inspections require correction and re-inspection.
-
-**Certificate of Occupancy:** Final inspection leads to CO issuance.
-
-Verification should indicate inspection progress and results.
-
-**Contractor License Verification**
-
-Permits connect to contractor licensing:
-
-**Licensed Contractors:** Many permits require licensed contractors.
-
-**License Verification:** Permit verification could link to contractor license status.
-
-**Workers Comp/Insurance:** Contractors must maintain coverage.
-
-**Disciplinary Actions:** License suspensions affect permit validity.
-
-**Plan Review and Approved Plans**
-
-Permits reference approved plans:
-
-**Plan Check:** Plans reviewed before permit issuance.
-
-**Approved Plan Set:** Stamped plans become part of permit.
-
-**Plan Revisions:** Changes require revised approval.
-
-**As-Built Drawings:** Final drawings documenting actual construction.
-
-Verification confirms the permit exists; plan compliance requires comparing work to approved plans.
-
-**Expiration and Extension**
-
-Permits have limited validity:
-
-**Standard Validity:** Typically 6 months to 2 years.
-
-**Extension Requests:** Extensions available before expiration.
-
-**Work Progress Requirements:** Some permits require demonstrated progress.
-
-**Abandonment:** Inactive permits may be voided.
-
-Verification must reflect current expiration status.
-
-**Certificate of Occupancy**
-
-Final step in permit process:
-
-**CO Issuance:** Building department issues CO after final inspection.
-
-**Temporary CO:** Partial occupancy while work continues.
-
-**Change of Use:** New occupancy type requires new CO.
-
-**CO Verification:** Buyers and tenants verify CO status.
-
-CO is a separate document from the permit but closely related—verification might cover both.
-
-**Historic Districts and Special Requirements**
-
-Some areas have additional requirements:
-
-**Historic Preservation:** Historic district review before permits.
-
-**Coastal Development:** Coastal commission permits.
-
-**Environmental Review:** CEQA/NEPA for larger projects.
-
-**HOA Approval:** Some areas require HOA approval before permits.
-
-Verification should indicate any special approvals required or obtained.
-
-**Multi-Permit Projects**
-
-Large projects require multiple permits:
-
-**Master Permit:** Overall project permit.
-
-**Trade Permits:** Separate electrical, plumbing, mechanical permits.
-
-**Phased Projects:** Permits for each construction phase.
-
-**Permit Bundles:** Verification might cover related permit sets.
-
-**Cross-Jurisdictional Issues**
-
-Some projects span jurisdictions:
-
-**City/County Boundaries:** Projects crossing boundaries need multiple permits.
-
-**State Preemption:** Some permits (e.g., accessibility) have state oversight.
-
-**Federal Requirements:** Federal buildings have different permitting.
-
-**Tribal Lands:** Tribal sovereignty affects permitting.
-
-Verification must specify which jurisdiction issued the permit being verified.
+**Why OCR wins here:** The "Walking the Block" scenario. Neighbors and inspectors encounter construction in the physical world. OCR-to-hash turns the **Physical Artifact** (the permit card) into a **Digital Portal** to the city's latest data, closing the information gap between the sidewalk and the server.

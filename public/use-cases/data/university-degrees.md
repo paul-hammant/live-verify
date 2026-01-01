@@ -1,138 +1,37 @@
 ---
-title: "University Degrees and Transcripts"
+title: "University Degrees & Transcripts"
 category: "Professional & Educational Qualifications"
 volume: "Large"
 retention: "Permanent"
 slug: "university-degrees"
-tags: ["university", "degrees", "professional", "educational", "qualifications"]
+tags: ["education", "degrees", "diploma", "transcripts", "hiring", "background-check"]
 ---
-## Data Verified
 
-Student name, degree title, major/field of study, graduation date, university name, honors/distinctions, GPA (if included), course listings (for transcripts).
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Old English Text MT', serif; border: 10px solid #d4af37; padding: 40px; text-align: center;">
+  <h1 style="margin-bottom: 30px;">University of Cambridge</h1>
+  <p style="font-family: 'Times New Roman'; font-size: 1.2em;">This is to certify that</p>
+  <h2 style="font-family: 'Arial'; margin: 20px 0;">Sarah J. Connor</h2>
+  <p style="font-family: 'Times New Roman'; font-size: 1.2em;">has been admitted to the degree of</p>
+  <h3 style="margin: 20px 0;">Master of Science in Artificial Intelligence</h3>
+  <p style="font-size: 0.9em;">Class I (Distinction) • July 15, 2024</p>
 
-For multi-page transcripts, there would be one verification per page.
-
-**Scanning Considerations:** Transcripts with dense course listings and small fonts may benefit from flatbed scanning rather than phone cameras. Degree certificates with ornate designs, seals, and signatures are typically single-page and camera-friendly.
-
-### Example Degree Certificate
-
-<div class="example-document" style="text-align: center; border: 3px solid #1a365d; padding: 30px; background: linear-gradient(to bottom, #fffff8, #f7f7f0); font-family: Georgia, serif;">
-  <div style="font-size: 0.9em; letter-spacing: 2px; color: #666; margin-bottom: 8px;">THE REGENTS OF</div>
-  <div style="font-size: 1.6em; font-weight: bold; color: #1a365d; margin-bottom: 16px;">UNIVERSITY OF CALIFORNIA, BERKELEY</div>
-  <div style="font-size: 0.95em; color: #444; margin-bottom: 20px;">On the recommendation of the Faculty of the College of Letters and Science<br>have conferred upon</div>
-  <div style="font-size: 1.4em; font-style: italic; color: #2d3748; margin-bottom: 16px;">Alexandra Marie Chen</div>
-  <div style="font-size: 0.95em; color: #444; margin-bottom: 8px;">the degree of</div>
-  <div style="font-size: 1.3em; font-weight: bold; color: #1a365d; margin-bottom: 8px;">BACHELOR OF SCIENCE</div>
-  <div style="font-size: 1em; color: #444; margin-bottom: 20px;">in Computer Science<br><em>with High Distinction</em></div>
-  <div style="font-size: 0.85em; color: #666; margin-bottom: 24px;">Given at Berkeley, California, this fifteenth day of May, 2024</div>
-  <div style="border-top: 1px dashed #999; padding-top: 16px; margin-top: 16px;">
-    <code style="font-size: 0.85em; background: #e8e8e0; padding: 4px 8px;">verify:registrar.berkeley.edu/c</code>
+  <div style="margin-top: 40px; font-size: 0.7em; font-family: sans-serif; color: #666;">
+    verify:degrees.cam.ac.uk/check
   </div>
 </div>
 
-The `verify:` URL at the bottom would resolve to the university registrar's verification endpoint. When scanned, the app computes the SHA-256 hash of the normalized certificate text and checks it against `https://registrar.berkeley.edu/c/{hash}`.
+## Data Verified
+**Student Name**, **Degree Title**, **Classification** (Honors/GPA), **Graduation Date**, **Major/Minor**, **University Seal**.
 
 ## Data Visible After Verification
-
-Shows the issuer domain (the university) and the responder text (e.g., "Verified" or "Denied").
-
-**Public Ledger Link:** The verification response may include a link to the credential's entry in a consortium ledger. Universities participating in shared verification networks can demonstrate that a degree was issued as part of a graduating class cohort, not fabricated as an isolated record.
-
-## Second-Party Use (Graduate Verifying Their Own Credentials)
-
-Graduates benefit from being able to verify credentials they hold.
-
-**Diploma Mill Detection:** Graduates from legitimate institutions can prove their degree is real when employers or licensing boards question unfamiliar university names. The verification URL points to an .edu domain or recognized institution, not a fly-by-night operation.
-
-**Damaged or Aged Documents:** Physical degrees fade, get water-damaged, or are lost in moves. A graduate can verify that their weathered document still matches what the university issued, or identify if a replacement certificate is authentic.
-
-**International Use:** When using credentials abroad, graduates can demonstrate authenticity without waiting for slow apostille processes. The verification provides immediate confirmation while official channels complete.
-
-**Personal Records:** Graduates maintaining career portfolios can verify their archived copies remain authentic, useful when applying for senior positions decades after graduation.
+**Status:** `AWARDED`, `REVOKED` (rare, for plagiarism), `WITHHELD` (fees unpaid).
 
 ## Third-Party Use
-
-**Employers Verifying Candidate Credentials**
-
-The primary external use case is employment background checks:
-
-**Prevents Credential Fraud:** Fake degrees are trivially easy to create—diploma mills sell them openly. Verification through the university's domain confirms the institution actually conferred the degree.
-
-**Instant Verification:** Traditional verification requires contacting registrars, paying fees, and waiting days or weeks. OCR-to-hash verification is immediate, reducing time-to-hire.
-
-**Domain Binding:** The verification URL binds the credential to the university's domain. A fraudster cannot create a convincing "Harvard degree" without controlling harvard.edu's verification endpoint.
-
-**Bulk Hiring:** Organizations hiring many graduates (consulting firms, large employers) can verify credentials at scale without overwhelming university registrar offices.
-
-**Graduate Schools and Professional Programs**
-
-Admissions offices verifying applicant credentials:
-
-**Prerequisite Verification:** Graduate programs can confirm applicants hold the undergraduate degrees they claim, with the correct major and graduation date.
-
-**GPA Confirmation:** For programs with GPA thresholds, transcript verification confirms the stated GPA matches what the institution recorded.
-
-**Transfer Credit:** When accepting transfer credits, institutions can verify the sending institution actually awarded those courses and grades.
-
-**Professional Licensing Boards**
-
-Medical boards, bar associations, engineering societies, and teaching credential offices:
-
-**Educational Requirements:** Professional licenses require specific degrees. Boards can verify applicants hold required credentials before issuing licenses to practice.
-
-**Ongoing Verification:** Some professions require periodic re-verification. OCR-to-hash enables efficient batch verification of practitioner credentials.
-
-**Cross-Jurisdictional Recognition:** When professionals move between states or countries, licensing bodies can verify foreign credentials without lengthy international verification processes.
-
-**Immigration Authorities**
-
-Visa and immigration processing:
-
-**Skilled Worker Visas:** H-1B, skilled worker, and points-based immigration systems require educational credentials. Immigration officers can verify degrees are genuine.
-
-**Student Visa Transitions:** When students transition from student visas to work authorization, immigration can verify the claimed degree was actually conferred.
-
-**Credential Evaluation Services:** Organizations like WES that evaluate foreign credentials can verify source documents before issuing equivalency assessments.
+**Employers:** Instant screening of applicants (no more waiting 2 weeks for clearinghouses).
+**Immigration:** Visa officers verify qualifications for skilled worker visas.
+**Universities:** Verify pre-requisite degrees for post-grad admissions.
 
 ## Verification Architecture
-
-**The Diploma Mill Problem**
-
-Credential fraud operates at multiple levels:
-
-- **Complete Fabrication:** Entirely fake universities with professional-looking websites
-- **Degree Mills:** "Universities" that grant degrees for payment without meaningful study
-- **Impersonation:** Using another person's legitimate degree
-- **Alteration:** Modifying dates, honors, or degree titles on legitimate documents
-
-OCR-to-hash addresses fabrication, mills, and alteration. The verification URL must resolve to a domain the issuing institution controls. Diploma mills could theoretically set up verification endpoints, but domain reputation and registry checks (is this an accredited .edu?) provide additional signals.
-
-**Consortium Approaches**
-
-Rather than each university operating independent verification, several models exist:
-
-**National Student Clearinghouse (US Model):** A central nonprofit that receives enrollment and graduation data from participating institutions. Could serve as a verification endpoint aggregator—universities submit hashes, Clearinghouse provides unified verification infrastructure.
-
-**Government Registries:** Some countries maintain national degree registries (India's National Academic Depository, for example). These could host verification endpoints for all recognized institutions.
-
-**University Consortiums:** Groups like the Big Ten, Ivy League, or Russell Group could operate shared verification infrastructure, reducing per-institution costs while maintaining institutional control.
-
-**Blockchain Experiments:** MIT, University of Melbourne, and others have experimented with blockchain-based credentials. The OCR-to-hash approach is complementary—the printed document can reference a verification URL that checks against blockchain-anchored hashes.
-
-**Revocation and Updates**
-
-Unlike bank statements (which are point-in-time records), academic credentials can be revoked:
-
-- **Academic Misconduct:** Degrees rescinded for plagiarism, cheating, or fraud discovered after graduation
-- **Administrative Error:** Degrees awarded in error and subsequently withdrawn
-- **Institutional Closure:** When institutions close, credential verification must continue
-
-The verification response should clearly indicate status: "Verified," "Revoked," or "Institution Closed—Contact [successor organization]." Revocation dates and reasons may optionally be included.
-
-**Transcript Considerations**
-
-Transcripts present additional challenges:
-
-- **Multi-Page Documents:** Course listings may span many pages. Per-page verification prevents page substitution (swapping in better grades from a different semester).
-- **Cumulative vs. Term:** Students may have multiple transcript versions (each semester vs. final cumulative). Each version should be independently verifiable.
-- **Unofficial vs. Official:** The distinction matters less with OCR-to-hash—if the hash verifies, the content is what the university issued regardless of paper stock or "official" stamps.
+**The Fraud:** Diploma Mills and Photoshop.
+**The Fix:** Domain binding to `.ac.uk`, `.edu`, etc. A fake degree from "Cambridge University" (fake site) won't verify against `cam.ac.uk`.
+**Privacy:** The hash reveals nothing. Only the person holding the degree can prove they have it.

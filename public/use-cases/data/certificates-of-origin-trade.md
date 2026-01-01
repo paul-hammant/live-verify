@@ -1,124 +1,119 @@
 ---
-title: "Certificates of origin (preferential/non-preferential)"
+title: "Certificates of Origin (International Trade)"
 category: "Customs & Trade Compliance"
 volume: "Medium"
 retention: "7-10 years (customs audit)"
 slug: "certificates-of-origin-trade"
-tags: ["certificates", "origin", "trade", "logistics", "transportation"]
+tags: ["customs", "international-trade", "tariff", "chamber-of-commerce", "logistics", "export-import"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 2px solid #000; background: #fff; padding: 0;">
+  <div style="background: #000; color: #fff; padding: 10px; display: flex; justify-content: space-between; align-items: center;">
+    <div style="font-weight: bold; font-size: 1.1em;">GREATER LONDON CHAMBER OF COMMERCE</div>
+    <div style="font-size: 0.8em;">Electronic Certificate ID: 9988776655</div>
+  </div>
+
+  <div style="padding: 20px;">
+    <h2 style="text-align: center; margin: 0 0 20px 0; font-size: 1.3em; text-decoration: underline;">CERTIFICATE OF ORIGIN</h2>
+
+    <div style="font-size: 0.85em; line-height: 1.5; color: #333;">
+      <div style="display: flex; border-bottom: 1px solid #000; padding-bottom: 10px; margin-bottom: 15px;">
+        <div style="width: 50%; border-right: 1px solid #000; padding-right: 10px;">
+          <strong>1. Exporter:</strong><br>
+          <span data-bracket="start" data-for="origin">]</span>British Precision Gear, Ltd.<br>
+          Sheffield, United Kingdom
+        </div>
+        <div style="width: 50%; padding-left: 10px;">
+          <strong>2. Consignee:</strong><br>
+          Tokyo Robotics, Inc.<br>
+          Tokyo, Japan
+        </div>
+      </div>
+
+      <p><strong>3. Country of Origin:</strong> UNITED KINGDOM</p>
+      
+      <p><strong>4. Description of Goods:</strong><br>
+      High-Precision CNC Lathe Gears (HS Code: 8483.40)</p>
+
+      <div style="margin-top: 20px; display: flex; justify-content: space-between; align-items: flex-end;">
+        <div style="width: 45%; border: 1px solid #000; padding: 10px; text-align: center; font-size: 0.7em;">
+          <strong>CHAMBER CERTIFICATION</strong><br>
+          <br>
+          Certified on: March 15, 2026<br>
+          Authorized Signature
+        </div>
+        <div style="width: 40%; text-align: right;">
+          <div style="width: 80px; height: 80px; border: 2px solid #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; margin-left: auto;">OFFICIAL<br>STAMP</div>
+        </div>
+      </div>
+    </div>
+
+    <div data-verify-line="origin" style="border-top: 1px dashed #999; margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: Chamber doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:londonchamber.org.uk/v/9988776655 <span data-bracket="end" data-for="origin">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Exporter, importer, goods description, origin country, certifying authority
+Exporter name, Consignee name, specific Country of Origin, detailed description of goods, Harmonized System (HS) Codes, quantity/weight, Certificate ID number, certifying authority (Chamber), date of certification.
 
-**Certificate Variations:** Multiple certificate types or levels may exist.
+**Document Types:**
+- **Preferential CO:** Used for Free Trade Agreements (e.g., USMCA, CPTPP) to get 0% duty.
+- **Non-Preferential CO:** Used for general trade/quota monitoring.
+- **Self-Certification:** Form filled out by the exporter (requires domain binding to the company).
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`londonchamber.org.uk`, `uschamber.com`) and current validity.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Verified** — Certificate is legitimate and recorded in the Chamber's ledger.
+- **Revoked** — Exporter found to have misrepresented origin; certificate cancelled.
+- **Amended** — Original certificate updated (e.g., due to quantity correction).
+- **Invalid** — Serial number mismatch.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Exporter** benefits from verification.
 
-**Authenticity Confirmation:** Verify certificate after receipt to confirm it's genuine.
+**Fast Customs Clearance:** Proving to Japanese Customs that the gears are truly "UK Origin." Verification prevents the goods from being held at the port for 2 weeks while customs waits for a physical letter from the London Chamber.
 
-**Credential Display:** Present verified credentials to employers or clients.
-
-**Professional Development:** Track verified certifications for career advancement.
-
-**Compliance Documentation:** Maintain verified certificates for regulatory requirements.
-
-**Renewal Planning:** Monitor certification status to avoid expiration.
+**Tariff Savings:** Proving eligibility for preferential tariff rates. For a $1M shipment, a verified CO can save the importer $50,000 in duties instantly.
 
 ## Third-Party Use
 
-**Insurance Companies**
+**Customs Authorities (Foreign)**
+**Anti-Fraud Enforcement:** Customs sees thousands of "Certificates of Origin." Many are fake, used to hide that goods actually came from a high-tariff country (e.g., China). Scanning the verification link instantly proves the Chamber of Commerce actually vouches for the origin claim.
 
-Underwriting and claims processing:
+**Freight Forwarders**
+**Risk Management:** Verifying the CO before loading the ship to ensure they won't be fined for "Origin Fraud" at the destination.
 
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Customs and Border Authorities**
-
-International trade compliance:
-
-**Import Clearance:** Verify shipping documents for customs clearance.
-
-**Duty Assessment:** Validate commercial invoices and declarations.
-
-**Trade Compliance:** Confirm certificates of origin and trade documents.
-
-**Security Screening:** Verify cargo documentation for security.
-
-**Export Controls:** Validate export documentation and licenses.
-
-**Freight Forwarders and Carriers**
-
-Logistics and transportation:
-
-**Shipment Acceptance:** Verify documents before accepting cargo.
-
-**Carrier Handoffs:** Validate documentation at transfer points.
-
-**Liability Determination:** Reference verified documents for claims.
-
-**Route Planning:** Confirm documentation for transit requirements.
-
-**Delivery Confirmation:** Verify documents at final delivery.
+**Trade Finance Banks**
+**Documentary Compliance:** Banks paying out on Letters of Credit verify the CO to ensure it hasn't been altered to bypass trade sanctions or quotas.
 
 ## Verification Architecture
 
-**The Certificates of origin (preferential/non-preferential) Fraud Problem**
+**The "Origin Laundering" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Transshipment Fraud:** Shipping goods from a high-tariff country to a low-tariff country (e.g., China -> Vietnam), then creating a fake "Vietnam Origin" certificate to enter the US duty-free.
+- **HS Code Tampering:** Editing the HS code on the paper CO to a category with lower taxes.
+- **Fabricated Chambers:** Creating fake "Chamber of Commerce" websites and domains to "verify" fake documents.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Chambers of Commerce:** (Primary issuers for Non-Preferential COs).
+**Government Ministries:** (e.g., Ministry of Trade).
+**Customs Agencies:** (e.g., CBP, HMRC).
 
-**Primary Issuers:** Organizations with direct authority to issue these documents.
+## Competition vs. eCO (Electronic Registry)
 
-**Licensed Professionals:** Professionals authorized to create and certify documents.
+| Feature | OCR-to-Hash | eCO Registry (ICC) | Paper Certificate |
+| :--- | :--- | :--- | :--- |
+| **Field Access** | **Instant.** Scan the paper at the border. | **Difficult.** Requires customs officers to have specific registry logins. | **Instant.** |
+| **Trust Anchor** | **Domain-Bound.** Trust the local Chamber. | **Centralized.** Trust the ICC global platform. | **Visual.** Very easy to forge stamps. |
+| **Connectivity** | **Strong.** Works even if the global ICC hub is down. | **Fragile.** Single point of failure. | **Offline.** |
+| **Integrity** | **Binds Content.** Proves the *Country* matches. | **Data-Only.** Doesn't verify the actual paper. | **Zero.** |
 
-**Government Agencies:** Federal, state, or local agencies with jurisdiction.
-
-**Industry Bodies:** Trade associations and professional organizations.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Prevents fake certificates of origin (tariff fraud). Domain binding verifies chamber of commerce/issuing authority. Free trade agreement compliance (USMCA, EU FTA). Preferential duty rates. Prevents origin fraud.
+**Why OCR wins here:** Decentralization. International trade is built on thousands of local Chambers of Commerce. It is impossible to get every small chamber in the world on a single "Global IT Platform." OCR-to-hash allows every chamber to remain independent while providing a **universal digital overlay** for their paper certificates.

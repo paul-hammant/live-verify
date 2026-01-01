@@ -1,94 +1,115 @@
 ---
-title: "Energy audits and efficiency ratings"
+title: "Energy Audits and Efficiency Ratings"
 category: "Energy & Utilities"
 volume: "Very Small"
 retention: "5-10 years (improvement tracking)"
 slug: "energy-audits-efficiency-ratings"
-tags: ["energy", "audits", "efficiency", "ratings", "utilities"]
+tags: ["energy-audit", "energy-efficiency", "green-building", "hvac-efficiency", "utility-rebates", "esg-reporting", "hers-rating"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #2e7d32; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="background: #2e7d32; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+    <div>
+      <div style="font-weight: bold; font-size: 1.2em;">SUSTAINABLE BUILDINGS DEPT.</div>
+      <div style="font-size: 0.8em;">Official Energy Efficiency Rating</div>
+    </div>
+    <div style="text-align: right;">
+      <div style="font-size: 0.8em;">Rating ID: EER-2026-9922</div>
+    </div>
+  </div>
+
+  <div style="padding: 25px;">
+    <h3 style="margin-top: 0; color: #2e7d32; border-bottom: 2px solid #2e7d32; padding-bottom: 5px;">ENERGY PERFORMANCE CERTIFICATE (EPC)</h3>
+
+    <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
+      <p><strong>Property:</strong> <span data-bracket="start" data-for="energy">]</span>4500 Skyline Blvd, Unit 402, Austin, TX 78701<br>
+      <strong>Asset Type:</strong> Commercial Office (Class A)</p>
+
+      <div style="display: flex; align-items: center; justify-content: center; margin: 20px 0;">
+        <div style="width: 100px; height: 100px; border-radius: 50%; border: 8px solid #2e7d32; display: flex; align-items: center; justify-content: center; font-size: 2em; font-weight: bold; color: #2e7d32;">A</div>
+        <div style="margin-left: 20px;">
+          <div style="font-weight: bold;">RATING: EXCELLENT</div>
+          <div style="font-size: 0.8em;">Carbon Intensity: 12.4 kgCO2/m&sup2;</div>
+        </div>
+      </div>
+
+      <p><strong>Certified Auditor:</strong> Dr. Aris Vrettos (RESNET #9982)<br>
+      <strong>Audit Date:</strong> March 15, 2026</p>
+    </div>
+
+    <div style="margin-top: 25px; padding: 10px; background: #f1f8e9; border: 1px solid #c5e1a5; font-size: 0.8em; color: #33691e; font-style: italic; text-align: center;">
+      This rating is a verified record of energy use intensity (EUI) and insulation R-values.
+    </div>
+
+    <div data-verify-line="energy" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: Energy Dept doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:city-energy.gov/ratings/v/EER9922 <span data-bracket="end" data-for="energy">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Property owner, auditor name, facility details, recommendations
+Property address, asset type, numerical efficiency score (e.g., HERS index), carbon intensity (kgCO2/m²), primary HVAC efficiency ratings, auditor name/accreditation, date of audit, expiration date of rating.
+
+**Document Types:**
+- **Energy Performance Certificate (EPC):** Mandatory for sales/leases in the EU/UK.
+- **HERS Rating Certificate:** Home Energy Rating System (US standard).
+- **Utility Rebate Application:** Verified proof of efficiency upgrade.
+- **Blower Door Test Report:** Proving airtightness for building codes.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`energy.gov`, `resnet.us`, `epa.gov`) and rating status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Current** — Rating matches the auditor's latest certified run.
+- **Outdated** — Building has been remodeled or audit is > 10 years old.
+- **In-Progress** — Auditor has performed site-visit; final data pending.
+- **Disputed** — Occupant has reported energy use inconsistent with rating.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Property Owner / Developer** benefits from verification.
 
-**Document Authenticity:** Verify received documents are genuine and properly issued.
+**Lease Negotiations:** Proving to a "Fortune 500" tenant that the office has a "Verified A-Rating." Major companies now have "Net Zero" mandates and won't sign a lease without verified energy proof.
 
-**Third-Party Presentation:** Provide verified documentation when required.
+**Utility Rebates:** Proving to a utility company (e.g., PG&E or Con Edison) that a high-efficiency HVAC system was actually installed and verified, triggering a $5,000+ rebate instantly.
 
-**Compliance Requirements:** Meet regulatory or contractual documentation requirements.
-
-**Record Keeping:** Maintain verified records for future reference or audits.
-
-**Dispute Prevention:** Establish authenticity to prevent future challenges.
+**Mortgage Discounts:** Qualifying for "Green Mortgages" (lower APR) by providing verified energy efficiency proof to the lender.
 
 ## Third-Party Use
 
-**Auditors and Compliance Officers**
+**Commercial Tenants**
+**Operational Costs:** Before signing a 10-year lease, a tenant scans the EPC in the lobby. "Verified by City Energy" ensures they won't be hit with a $50,000/year "Energy Surprise" due to a fake rating.
 
-Internal and external audits:
+**Mortgage Lenders**
+**Collateral Quality:** Lenders for commercial property verify the EPC to ensure the asset remains compliant with emerging "Carbon Tax" or "Building Performance Standard" laws.
 
-**Financial Audits:** Verify documents during financial statement audits.
-
-**Compliance Audits:** Validate documentation for regulatory compliance.
-
-**Internal Controls:** Test document authenticity in control assessments.
-
-**Fraud Investigations:** Verify documents in fraud examinations.
-
-**Third-Party Audits:** Validate vendor and partner documentation.
+**Municipal Code Enforcement**
+**Compliance:** Verifying that a new building meets the "Energy Code" promises made during the permitting phase.
 
 ## Verification Architecture
 
-**The Energy audits and efficiency ratings Fraud Problem**
+**The "Greenwashing" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Score Inflation:** Editing a "C-Rating" to read "A-Rating" on a PDF to attract higher rents.
+- **Auditor Impersonation:** Creating a fake report on the letterhead of a reputable energy firm like Stantec or AECOM.
+- **Reuse Fraud:** Using an old report for a neighboring building to hide that the current building has outdated insulation.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Accrediting Bodies:** (e.g., RESNET, BPI).
+**Government Agencies:** (e.g., UK MHCLG for EPCs).
+**Utility Companies.**
 
-**Primary Issuers:** Organizations with direct authority to issue these documents.
+## Competition vs. Central Databases (Energy Star)
 
-**Licensed Professionals:** Professionals authorized to create and certify documents.
+| Feature | OCR-to-Hash | Portfolio Manager (EPA) | Scanned PDF Report |
+| :--- | :--- | :--- | :--- |
+| **Trust Anchor** | **Domain-Bound.** Bound to the Auditor/Gov. | **Database.** Direct from source. | **Zero.** Easily forged. |
+| **Integrity** | **Binds Details.** Protects the Carbon Intensity. | **Data-Only.** Doesn't verify the paper. | **Vulnerable.** |
+| **Speed** | **Instant.** Scan the paper in the lobby. | **Slow.** Requires property ID and manual lookup. | **Instant.** |
+| **Accessibility** | **Open.** Any tenant or buyer can verify. | **Difficult.** Portals often require owner permission. | **Universal.** |
 
-**Government Agencies:** Federal, state, or local agencies with jurisdiction.
-
-**Industry Bodies:** Trade associations and professional organizations.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Domain binding verifies certified auditor. Report format suitable for OCR. Energy efficiency compliance. Rebate/incentive verification.
+**Why OCR wins here:** The "Lobby Entrance" reality. EPCs are often posted in building lobbies. A prospective tenant or visitor wants to trust that rating *now*. OCR-to-hash turns the **Physical Rating Poster** into a live, trusted digital link, ensuring the building's "Green" status is a cryptographically verified fact.

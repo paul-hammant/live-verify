@@ -1,157 +1,119 @@
 ---
-title: "Air quality permits (Title V, synthetic minor)"
+title: "Air Quality Permits (Title V)"
 category: "Environmental & Natural Resource Permits"
 volume: "Small"
 retention: "5 years (permit term)"
 slug: "air-quality-permits"
-tags: ["quality", "permits", "environmental", "natural", "resource"]
+tags: ["air", "quality", "permit", "environmental", "epa", "title-v"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #2e7d32; background: #f1f8e9; padding: 0;">
+  <div style="background: #2e7d32; color: #fff; padding: 15px; text-align: center;">
+    <h3 style="margin: 0;">STATE OF CALIFORNIA</h3>
+    <div style="font-size: 0.9em;">AIR RESOURCES BOARD</div>
+  </div>
+
+  <div style="padding: 25px;">
+    <div style="text-align: center; border-bottom: 2px solid #2e7d32; padding-bottom: 10px; margin-bottom: 20px;">
+      <h2 style="margin: 0; color: #1b5e20;">PERMIT TO OPERATE</h2>
+      <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;">Number: P-2026-9988-TV</div>
+    </div>
+
+    <div style="font-size: 0.95em; line-height: 1.5; color: #333;">
+      <p><strong>Issued To:</strong> <span data-bracket="start" data-for="air">]</span>Apex Manufacturing Corp.<br>
+      <strong>Location:</strong> 4500 Industrial Way, Oakland, CA<br>
+      <strong>Facility ID:</strong> 44552</p>
+
+      <p><strong>Equipment Description:</strong><br>
+      Gas Turbine Generator, 50 MW, Natural Gas Fired<br>
+      Unit ID: GT-1</p>
+
+      <p><strong>Emission Limits:</strong><br>
+      NOx: 2.5 ppmv @ 15% O2<br>
+      CO: 6.0 ppmv @ 15% O2</p>
+
+      <p><strong>Effective Date:</strong> January 1, 2026<br>
+      <strong>Expiration Date:</strong> December 31, 2030</p>
+    </div>
+
+    <div style="margin-top: 30px; display: flex; align-items: center;">
+      <div style="width: 60px; height: 60px; border-radius: 50%; border: 2px solid #2e7d32; display: flex; align-items: center; justify-content: center; color: #2e7d32; font-weight: bold; font-size: 0.8em; transform: rotate(-15deg);">SEAL</div>
+      <div style="margin-left: 15px; font-size: 0.9em;">
+        <strong>Authorized Signature:</strong><br>
+        <em>Sarah Connor</em><br>
+        Air Pollution Control Officer
+      </div>
+    </div>
+
+    <div data-verify-line="air" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: EPA/State agencies don't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:arb.ca.gov/permits/v/x9y8z7 <span data-bracket="end" data-for="air">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Facility name, owner, emission sources, limits, monitoring, air quality agency
+Facility name, location address, equipment description (emission units), emission limits (NOx, SOx, PM), monitoring requirements, effective/expiration dates, responsible official.
 
-**Permit Types:** Various permit subtypes may exist depending on jurisdiction and specific use.
+**Document Types:**
+- **Title V Operating Permit:** Federal Clean Air Act permit for major sources.
+- **Synthetic Minor Permit:** State permit limiting emissions to avoid Title V.
+- **Construction Permit (PSD/NSR):** Authorization to build new sources.
+- **Notice of Violation (NOV):** Enforcement document (verification confirms authenticity of penalty).
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (e.g., `arb.ca.gov` or `epa.gov`) and current status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-- **Suspended** - Permit temporarily suspended
-- **Pending** - Permit application pending approval
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Active** — Permit is valid and facility is authorized to operate.
+- **Expired** — Facility is operating without a permit (violation).
+- **Revoked** — Permit pulled due to non-compliance.
+- **Under Review** — Renewal application pending (permit shield may apply).
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Facility Owner/Operator** benefits from verification.
 
-**Legitimacy Confirmation:** After obtaining permit, verify it was properly issued and recorded.
+**Inspection Readiness:** When an inspector arrives, the facility manager can present the verified permit on a tablet or paper posted on the wall. The inspector can instantly verify it matches the agency's database without calling headquarters.
 
-**Compliance Display:** Maintain verified permit for posting requirements.
+**Community Trust:** Posting verified permits online or on fence-lines allows neighbors to verify the facility's authorized limits, building trust.
 
-**Scope Verification:** Confirm permitted activities match intended use.
-
-**Expiration Tracking:** Monitor permit status to avoid lapses.
-
-**Record Keeping:** Maintain verified documentation for audits and compliance.
+**Lender Due Diligence:** Proving to a bank financing an expansion that all environmental permits are in place and valid.
 
 ## Third-Party Use
 
-**Lenders and Financial Institutions**
+**Environmental Inspectors**
+**Field Verification:** Inspectors can verify permits posted at remote sites (e.g., portable rock crushers or oil/gas wells) where internet access to the central database might be spotty, but the hash on the paper allows for offline-ready verification if the app caches the keys/data (future state).
 
-Credit underwriting and risk assessment:
+**Insurance Underwriters**
+**Pollution Liability:** Insurers need to verify that a facility is permitted and compliant before writing environmental liability policies.
 
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Insurance Companies**
-
-Underwriting and claims processing:
-
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
-
-**Government Agencies**
-
-Compliance enforcement and administration:
-
-**Inspection Verification:** Field agents verify permits and licenses at sites.
-
-**Enforcement Actions:** Confirm documentation before enforcement.
-
-**Benefit Eligibility:** Verify supporting documents for benefits administration.
-
-**Compliance Audits:** Audit documentation for regulatory compliance.
-
-**Interagency Coordination:** Share verified documents across agencies.
-
-**Real Estate Professionals**
-
-Property transactions and due diligence:
-
-**Purchase Due Diligence:** Verify property documents during transactions.
-
-**Listing Preparation:** Confirm permits and documentation for listings.
-
-**Disclosure Compliance:** Validate required disclosures and permits.
-
-**Title Research:** Verify property documents for title clearance.
-
-**Appraisal Support:** Confirm documented improvements and permits.
+**Supply Chain Auditors**
+**Sustainability Compliance:** Big tech/retail companies auditing their suppliers can verify that factories hold valid air quality permits, ensuring "Green Supply Chain" compliance.
 
 ## Verification Architecture
 
-**The Air quality permits (Title V, synthetic minor) Fraud Problem**
+**The "Fake Permit" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Permit Sharing:** Using one property's permit for work at another location
-- **Scope Expansion:** Expanding permitted activities beyond authorization
-- **Contractor Fraud:** Claiming permits that were never obtained
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Expired Posting:** Facilities posting an old, expired permit in the breakroom to fool employees or casual inspectors.
+- **Forgery:** Editing the emission limits on a PDF permit to appear stricter than they are (e.g., changing 25 ppm NOx to 5 ppm) to win a contract requiring "green" manufacturing.
+- **Impersonation:** Creating a fake permit for an illegal operation (e.g., unlicensed waste incineration).
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**State Environmental Agencies:** (e.g., CARB, TCEQ, NYDEC)
+**Local Air Districts:** (e.g., South Coast AQMD)
+**EPA:** For federal permits on tribal lands etc.
 
-**Government Entities:** Counties, cities, and special districts maintain property records.
+## Competition vs. Public Databases
 
-**Title Companies:** Title insurers and escrow companies for transaction documents.
+| Feature | OCR-to-Hash | Public Database Search |
+| :--- | :--- | :--- |
+| **Field Access** | **Instant.** Scan the posted paper. | **Slow.** Need to know the URL, search by ID, scroll through results. |
+| **Specificity** | **Exact.** Verifies *this specific document* and its limits. | **General.** Database might just say "Active" without showing the specific conditions/limits of the permit. |
+| **Offline Proof** | **Strong.** The paper itself is the artifact. | **None.** No internet = no verification. |
+| **Spoofing** | **Hard.** Cryptographically bound. | **Easy.** A fake paper permit can list a real permit number found in the database. Only OCR-to-Hash proves the *paper content* matches the record. |
 
-**Lending Institutions:** Banks and mortgage companies for loan documents.
-
-**Appraisal Firms:** Licensed appraisers for property valuations.
-
-**System Integration**
-
-Real estate verification connects to property systems:
-
-**Recording Systems:** County recorder systems for property document registration.
-
-**MLS Integration:** Multiple listing services for property documentation.
-
-**Title Plants:** Title companies maintain verification for title searches.
-
-**E-Recording:** Electronic recording systems generate verification at recording.
-
-## Rationale
-
-Prevents fake air permits. Domain binding verifies EPA/state air quality. Clean Air Act compliance. Prevents air pollution violations. High fines ($37K-$93K per day violations).
+**Why OCR wins here:** Environmental permits are often physically posted on machines or walls in industrial settings. Scanning the posted document is the natural workflow for an inspector walking the floor, rather than typing permit numbers into a laptop.

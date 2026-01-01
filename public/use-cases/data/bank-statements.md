@@ -4,104 +4,126 @@ category: "Banking & Payments"
 volume: "Medium"
 retention: "7-10 years (loan term + disputes)"
 slug: "bank-statements"
-tags: ["bank", "statements", "finance"]
+tags: ["bank", "statement", "finance", "mortgage", "kyc", "aml"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <div style="background: #004a99; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+    <div>
+      <div style="font-weight: bold; font-size: 1.2em;">CHASE 🟦</div>
+      <div style="font-size: 0.8em;">JPMorgan Chase Bank, N.A.</div>
+    </div>
+    <div style="text-align: right;">
+      <div style="font-size: 0.9em;">Page 1 of 4</div>
+    </div>
+  </div>
+
+  <div style="padding: 30px;">
+    <div style="display: flex; justify-content: space-between; margin-bottom: 30px;">
+      <div>
+        <strong>Account Holder:</strong><br>
+        <span data-bracket="start" data-for="bank">]</span><strong>WAYNE ENTERPRISES, INC.</strong><br>
+        1007 Mountain Drive<br>
+        Gotham City, NY 10001
+      </div>
+      <div style="text-align: right;">
+        <strong>Account Number:</strong><br>
+        ****-****-9982<br>
+        <strong>Period:</strong> Mar 01 - Mar 31, 2026
+      </div>
+    </div>
+
+    <h3 style="border-bottom: 2px solid #004a99; padding-bottom: 5px;">ACCOUNT SUMMARY</h3>
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
+      <tr>
+        <td style="padding: 8px 0;">Beginning Balance</td>
+        <td style="text-align: right;">$ 1,250,000.42</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px 0;">Deposits and Additions</td>
+        <td style="text-align: right;">$ 450,000.00</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px 0;">Withdrawals and Debits</td>
+        <td style="text-align: right;">-$ 200,000.00</td>
+      </tr>
+      <tr style="font-weight: bold; border-top: 1px solid #004a99;">
+        <td style="padding: 8px 0;">ENDING BALANCE</td>
+        <td style="text-align: right;">$ 1,500,000.42</td>
+      </tr>
+    </table>
+
+    <div style="font-size: 0.8em; color: #555; font-style: italic;">
+      Verification protects every line of this statement. Alteration of balances is a federal crime.
+    </div>
+
+    <div data-verify-line="bank" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: Chase doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:chase.com/statements/v/x9y8z7 <span data-bracket="end" data-for="bank">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Account holder name, account number (masked), transaction history, account balances, bank name, statement period.
+Account holder name, account number (masked), ending balance, total deposits, total withdrawals, statement date range, issuing branch/entity.
 
-For a multi-page statement, there would be one verification per page.
-
-**Scanning Considerations:** Bank statements often contain dense transaction tables with many lines of small text. A phone camera may struggle with OCR accuracy on such documents. Flatbed scanners or roller-fed document scanners produce higher-resolution, evenly-lit images that yield more reliable OCR results. For high-volume or archival verification, dedicated scanning hardware is preferable to camera-based capture.
+**Document Types:**
+- **Monthly Account Statement:** Standard retail/commercial proof.
+- **Verification of Deposit (VOD):** 1-page summary for lenders.
+- **Transaction Receipt:** For high-value wires or transfers.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Verified" or "Denied").
+Shows the issuer domain (`chase.com`, `wellsfargo.com`) and the account standing.
 
-**Public Ledger Link:** The verification response may include a link to the statement's entry in a public ledger (merkle tree or blockchain). This provides proof that the hash was committed as part of a larger batch—the statement is not an isolated record the bank could later deny issuing. The ledger entry shows when the hash was submitted, which batch it belongs to, and the merkle proof path to the root. This makes repudiation difficult: the bank cannot claim "we never issued that statement" when the hash is anchored in a timestamped, independently-witnessed structure.
+**Status Indications:**
+- **Verified** — Statement content matches the bank's snapshot.
+- **Amended** — A correction was issued for this period.
+- **Inactive** — Account has been closed since this statement was issued.
 
-## Second-Party Use (Customer Verifying Their Own Statements)
+## Second-Party Use
 
-Customers benefit from being able to verify statements they receive from their bank.
+The **Bank Customer** benefits from verification.
 
-**Phishing Detection:** Customers receive fake bank statements via email or post as part of phishing attacks. Verification confirms a statement actually came from their bank, not a scammer impersonating them.
+**Mortgage Applications:** Proving to a lender that the $1.5M balance isn't a "Photoshopped PDF" but is a verified asset. This speeds up the "Pre-Approval" process significantly.
 
-**Detecting Unauthorized Alterations:** If a statement has been intercepted and modified (e.g., by a dishonest family member or business partner), verification will fail. The customer knows the document in their hands matches what the bank issued.
+**Business Partnerships:** Proving financial liquidity to a new supplier or partner without giving them direct login access to the bank account.
 
-**Archival Confidence:** When storing statements for tax or legal purposes, customers can verify years later that their archived copy remains authentic and unaltered.
+**Dispute Resolution:** If a transaction is "missing" from the bank's internal record later, the verified statement serves as cryptographic proof of what the bank previously attested to.
 
-**Dispute Evidence:** In disputes with the bank ("you charged me twice" or "my balance was different"), the customer has cryptographic proof of what the bank actually stated. Neither party can claim the document was altered.
+## Third-Party Use
 
-**Estate and Inheritance:** Executors and beneficiaries can verify statements from deceased relatives are genuine, not fabricated by other parties claiming assets.
+**Mortgage Lenders / Underwriters**
+**Asset Verification:** Lenders currently use manual "bank login" scrapers (like Plaid) which many users find invasive. OCR-to-hash allows the user to simply send a PDF/Paper statement that the lender can trust without needing the user's password.
 
-**Shared Account Oversight:** Joint account holders or business partners can independently verify statements match what the bank issued, preventing one party from presenting doctored figures.
+**Regulators (The Fed / FDIC)**
+**Systemic Audit:** Regulators receiving a feed of statement hashes can verify that the bank isn't "running two sets of books" (i.e., telling the customer they have $1M but telling the regulator they only have $100k).
 
-## Third-Party Use 
+**M&A Due Diligence**
+**Liquidity Verification:** Buyers in a corporate acquisition can instantly verify the target company's cash-on-hand claims by scanning recent statements.
 
-**Lenders Verifying Bank Statements**
+## Verification Architecture
 
-The primary external use case is lenders verifying statements during loan applications:
+**The "Photoshopped Balance" Fraud Problem**
 
-**Prevents Forgery:** Bank statements are easily forged via Photoshop. Verification through the issuing bank's domain confirms authenticity at the source.
+- **Balance Inflation:** Changing a $5,000 balance to $50,000 to qualify for a loan.
+- **Transaction Deletion:** Removing a large "Gambling Withdrawal" or "IRS Penalty" from the statement before sending it to a landlord.
+- **Fabricated Statements:** Using a realistic-looking template to create a statement for a non-existent account at a real bank.
 
-**Asset Verification:** Tamper-evident verification prevents borrowers from inflating account balances to qualify for larger loans.
+**Issuer Types**
 
-**Domain Binding:** The verification URL binds the document to the financial institution's domain, so forgers cannot create convincing fakes without controlling the bank's verification endpoint.
+**Retail Banks:** (Chase, BofA, HSBC).
+**Neobanks:** (Revolut, Monzo, Chime).
+**Brokerage Firms:** (Schwab, Fidelity).
 
-**Multi-Page Protection:** Per-page hash verification prevents page substitution attacks where fraudsters swap pages from different months or accounts to construct a misleading financial picture.
+## Competition vs. Open Banking (Plaid/Finicity)
 
-**Reserves and Liquidity:** Lenders can verify that stated reserves and liquidity positions are accurate, critical for commercial lending decisions.
+| Feature | OCR-to-Hash | Open Banking (Plaid) | Paper / Scanned PDF |
+| :--- | :--- | :--- | :--- |
+| **Privacy** | **High.** No passwords shared. No data scraping. | **Low.** Requires bank password; scrapes full history. | **Medium.** But untrusted. |
+| **Integrity** | **Cryptographic.** Every line is protected. | **High.** Direct API access. | **Zero.** Easily edited. |
+| **User Control** | **High.** User chooses which statement to share. | **Low.** Once linked, the app has continuous access. | **High.** |
+| **Interoperability** | **Universal.** Works for any bank with a domain. | **Limited.** Only works for banks on the Plaid network. | **Manual.** |
 
-This is a high-value verification use case where fraud prevention directly impacts lending risk.
-
-**Government and Central Bank Oversight**
-
-Beyond individual document verification, central banks and financial regulators benefit from receiving a continuous feed of all statement hashes issued by banks under their jurisdiction.
-
-**Systemic Monitoring (Federal Reserve, Bank of England, ECB):** A real-time feed of hashes allows central banks to monitor statement issuance volume and patterns across the banking system. Anomalies—sudden spikes, unusual timing, or gaps—can signal problems before they become crises.
-
-**FDIC Compensation Claims:** When a bank fails and depositors claim compensation, the FDIC can verify the exact statements issued to each customer. No disputes about account balances or transaction history—the hash proves what the bank attested to.
-
-**Bank Examination and Solvency:** Regulators can cross-reference the hash feed against bank-reported figures. If a bank claims to have issued statements showing X total in deposits, the hash volume and metadata should match. Discrepancies indicate bookkeeping problems or fraud.
-
-**Anti-Money Laundering:** Suspicious activity reports can be correlated with statement issuance. The hash feed provides an independent record that statements were actually issued (not backdated or fabricated) at specific times.
-
-**Consumer Protection Enforcement:** When investigating consumer complaints about hidden fees or altered terms, regulators can verify exactly what the bank stated on the customer's statement. Banks cannot claim "the customer received different information."
-
-**Audit Trail for Investigations:** During fraud investigations or bank failures, the complete hash feed provides a tamper-evident timeline of every statement the bank ever issued. This is far more reliable than trusting the bank's own records, which may have been altered.
-
-**Cross-Border Coordination:** International regulators can share hash feeds to track cross-border banking activity and verify that statements issued in one jurisdiction match claims made in another.
-
-## Hash Submission Architecture
-
-When banks submit statement hashes to regulators, several architectural choices exist beyond simple lists.
-
-**What Gets Hashed**
-
-Beyond the statement text itself, banks may hash additional metadata: account holder name, account number, statement date, branch identifier, and internal reference numbers. This creates a richer audit trail where each hash commits to both the visible document and its banking system context.
-
-**Merkle Trees vs Raw Lists**
-
-Rather than submitting individual hashes, banks can organize them into merkle trees:
-
-- **Efficiency:** A single root hash commits to thousands of statements. Regulators store one value but can verify any individual statement.
-- **Selective Disclosure:** Banks can prove a specific statement exists in the tree without revealing other statements. Useful for responding to subpoenas or audits targeting specific accounts.
-- **Temporal Batching:** Daily or hourly merkle roots create a verifiable timeline. "All statements issued on Tuesday" is provable from a single root.
-
-**Trust Models for the Merkle Root**
-
-Once a bank computes its merkle root, several options exist for making it tamper-evident:
-
-**Public Blockchain (Bitcoin, Ethereum):** The root hash is published to a distributed ledger with byzantine fault tolerance. No single party can alter history. Overkill for most regulatory purposes, but provides maximum independence from both bank and regulator. Estonia's KSI blockchain demonstrates this approach at national scale.
-
-**Private Merkle Tree with Regulator Custody:** The bank submits roots directly to the central bank or FDIC. Simpler infrastructure, but the regulator must be trusted not to collude with the bank to alter records. Adequate when the regulator is the primary consumer of the audit trail.
-
-**Third-Party Witness (E&Y, Deloitte, KPMG):** An accounting firm receives and timestamps all merkle roots from participating banks. The firm serves as an independent witness—neither the bank nor the regulator can unilaterally alter the record. This mirrors existing audit relationships and may integrate naturally with annual examinations. The witness publishes periodic "super-roots" that commit to all banks' submissions.
-
-**Hybrid Approaches:** A bank might submit to both a regulator and a third-party witness, with the witness periodically anchoring their accumulated roots to a public blockchain. This provides layered assurance: fast verification through the regulator, independent verification through the witness, and ultimate immutability through the blockchain.
-
-**Practical Considerations**
-
-- - **Latency:** Real-time submission isn't required. Daily or weekly batch submissions suffice for regulatory purposes.
-- **Privacy:** Merkle trees allow proving inclusion without revealing siblings. Banks can demonstrate a statement was issued without exposing other customers' data.
-- **Revocation:** If a statement is later found to be erroneous, the bank cannot alter the merkle tree. Instead, they issue a correction and submit a new hash. The original erroneous statement remains in the record—which is the point.
+**Why OCR wins here:** Trust without Intrusion. Many high-net-worth individuals and privacy-conscious users refuse to give their bank passwords to third-party "scrapers." OCR-to-hash provides the **same level of trust** as an API, but preserves the user's security and privacy.

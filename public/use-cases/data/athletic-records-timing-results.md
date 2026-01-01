@@ -4,286 +4,106 @@ category: "Sports & Athletics"
 volume: "Small"
 retention: "Permanent (sports history and records)"
 slug: "athletic-records-timing-results"
-tags: ["athletic", "records", "timing", "results", "sports", "athletics"]
+tags: ["sports", "athletics", "timing", "records", "ratification", "olympics"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 5px solid #003366; background: #fff; padding: 0; position: relative;">
+  <div style="background: #003366; color: #fff; padding: 20px; text-align: center;">
+    <h2 style="margin: 0; letter-spacing: 2px;">WORLD ATHLETICS</h2>
+    <div style="font-size: 0.9em; margin-top: 5px;">OFFICIAL RECORD RATIFICATION</div>
+  </div>
+
+  <div style="padding: 40px; text-align: center;">
+    <div style="font-size: 1.1em; color: #666; margin-bottom: 10px;">This is to certify that</div>
+    <div style="font-size: 2em; font-weight: bold; color: #003366; margin-bottom: 20px;"><span data-bracket="start" data-for="record">]</span>USAIN BOLT</div>
+    <div style="font-size: 1.1em; color: #666; margin-bottom: 10px;">achieved a new World Record in the</div>
+    <div style="font-size: 1.5em; font-weight: bold; margin-bottom: 20px;">MEN'S 100 METRES</div>
+
+    <div style="background: #f0f4f8; padding: 20px; border-radius: 8px; margin: 20px 0;">
+      <div style="font-size: 3em; font-weight: bold; color: #d32f2f;">9.58s</div>
+      <div style="font-size: 0.9em; color: #555; margin-top: 5px;">Wind: +0.9 m/s | Reaction: 0.146s</div>
+    </div>
+
+    <div style="font-size: 0.95em; color: #333; line-height: 1.6;">
+      <strong>Competition:</strong> 12th IAAF World Championships<br>
+      <strong>Location:</strong> Berlin, Germany<br>
+      <strong>Date:</strong> 16 August 2009
+    </div>
+
+    <div style="margin-top: 40px; display: flex; justify-content: space-around;">
+      <div style="width: 45%; border-top: 1px solid #000; padding-top: 5px; font-size: 0.8em;">Technical Delegate</div>
+      <div style="width: 45%; border-top: 1px solid #000; padding-top: 5px; font-size: 0.8em;">Chief Timing Official</div>
+    </div>
+
+    <div data-verify-line="record" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+      title="Demo only: World Athletics doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:worldathletics.org/records/v/BERLIN-958 <span data-bracket="end" data-for="record">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Athlete name, date of birth, nationality, event name and discipline, time/distance/score achieved, competition name and location, competition date, competition level (local/national/world), timing authority or federation, officials' names, conditions (wind speed, altitude for relevant events), equipment verification status, any record designations.
+Athlete name, event discipline (e.g., 100m, Marathon), time/distance achieved (to 1/1000th precision), wind speed, reaction time, venue, date of performance, timing system used (FAT vs Chip), ratification status.
 
 **Document Types:**
-- **Official Results Certificates:** Competition results documentation
-- **Record Certificates:** Recognition of record-breaking performances
-- **Timing Slips:** Official timing system output
-- **Performance Verification Letters:** Federation confirmation of performances
-- **Ranking Certificates:** Position in national/world rankings
-- **Age Group Records:** Age-graded performance documentation
-- **Personal Best Certificates:** Athlete's career-best recognition
-
-**Precision Requirements:** Athletic timing can be to 1/100th or 1/1000th of a second. OCR must accurately capture these precise measurements—a misread "1" vs "7" could falsely claim a world record.
+- **Record Ratification Certificate:** Final legal proof of a world/national record.
+- **Timing Slip:** Printed instantly at the finish line for local meets.
+- **Doping Control Receipt:** Linking the performance to a clean test (hash-binding).
+- **Course Certification:** Proving a marathon route was actually the claimed distance.
 
 ## Data Visible After Verification
 
-Shows the issuer domain (the federation, timing authority, or competition organizer) and the responder text.
+Shows the issuer domain (`worldathletics.org`, `ncaa.org`) and the current standing.
 
 **Status Indications:**
-- **Verified** - Performance confirmed in federation records
-- **Ratified** - Record officially ratified by governing body
-- **Pending Ratification** - Record awaiting official confirmation
-- **Invalidated** - Performance disqualified (doping, technical violation)
-- **Superseded** - Record has since been broken
+- **Ratified** — Performance is official and in the record books.
+- **Pending** — Waiting for doping control clearance or technical review.
+- **Invalidated** — Disqualified (e.g., doping violation found later).
+- **Former Record** — Performance was a record but has since been broken.
 
-**Record Status:** Verification indicates record standing: "Verified - Current World Record" or "Verified - Former World Record (broken [date])."
+## Second-Party Use
 
-## Second-Party Use (Athlete Verifying Their Own Results)
+The **Athlete** benefits from verification.
 
-Athletes benefit from verification.
+**Sponsorship Contracts:** Proving to Nike or Adidas that a claimed "Personal Best" or "World Ranking" is official, triggering performance bonuses in their contract.
 
-**Result Authenticity:** Verify official results match actual performance.
+**College Recruiting:** High school athletes providing verified "Verified by State Federation" times to college coaches, distinguishing them from unverified "hand-timed" claims.
 
-**Qualification Documentation:** Verify performances for championship qualification.
-
-**Scholarship Applications:** Provide verified results to college recruiters.
-
-**Sponsorship Proposals:** Share verified records with potential sponsors.
-
-**Career Documentation:** Maintain verified record of competitive career.
+**Olympic Entry:** Proving they have met the "Olympic Qualifying Standard" at a sanctioned meet.
 
 ## Third-Party Use
 
-**Sports Federations**
+**College Coaches / Scouts**
+**Talent Identification:** Coaches scan thousands of athlete profiles. Verification allows them to instantly trust times from remote, unknown competitions without calling meet directors.
 
-Governing body administration:
+**Anti-Doping Agencies (WADA)**
+**Performance Analysis:** Linking "sudden performance spikes" to verified timing data to target testing more effectively.
 
-**Record Ratification:** Verify performances before ratifying records.
-
-**Ranking Compilation:** Verify results for national/world rankings.
-
-**Championship Qualification:** Verify qualifying performances.
-
-**Historical Records:** Maintain verified record books.
-
-**Anti-Doping Coordination:** Link performances to testing records.
-
-**Competition Organizers**
-
-Event management:
-
-**Entry Verification:** Verify seed times/performances for seeding.
-
-**Qualification Standards:** Verify athletes meet entry standards.
-
-**Results Validation:** Cross-check submitted results for accuracy.
-
-**Prize Money Distribution:** Verify performances for prize allocation.
-
-**College and University Programs**
-
-Athletic recruitment:
-
-**NCAA Verification:** Verify performances for eligibility and recruitment.
-
-**Scholarship Decisions:** Verify claimed performances before offering scholarships.
-
-**Transfer Eligibility:** Verify performances when athletes transfer.
-
-**Academic-Athletic Records:** Document student-athlete achievements.
-
-**Olympic and Paralympic Committees**
-
-Elite competition:
-
-**Olympic Qualification:** Verify qualifying performances for Games selection.
-
-**Paralympic Classification:** Verify performances within classification.
-
-**Selection Panels:** Provide verified results for team selection decisions.
-
-**Historical Archives:** Maintain verified Olympic/Paralympic records.
-
-**Media and Journalists**
-
-Sports reporting:
-
-**Record Verification:** Verify claims before reporting records.
-
-**Historical Research:** Access verified historical performances.
-
-**Athlete Profiles:** Confirm career statistics.
-
-**Fact-Checking:** Verify claims in interviews and press releases.
-
-**Sponsors and Agents**
-
-Commercial relationships:
-
-**Athlete Valuation:** Verify performances for sponsorship negotiations.
-
-**Contract Compliance:** Verify performance bonuses earned.
-
-**Marketing Claims:** Verify claims used in advertising.
-
-**Insurance and Litigation**
-
-Sports-related claims:
-
-**Injury Claims:** Verify pre-injury performance levels.
-
-**Career Loss Calculations:** Document earning potential from verified performances.
-
-**Disability Assessments:** Compare post-injury to verified pre-injury performance.
-
-**Doping Litigation:** Verify performances in anti-doping proceedings.
+**Sports Media / Broadcasters**
+**Fact Checking:** Instantly verifying "World Lead" claims during a live broadcast by scanning the official results sheet.
 
 ## Verification Architecture
 
-**The Athletic Record Fraud Problem**
+**The "Fake Fast" Fraud Problem**
 
-Fabricated athletic credentials undermine sport integrity:
+- **Hand-Timing Fraud:** Claiming a 10.2s 100m time (hand-timed) as if it were a 10.2s FAT (Fully Automatic Timing) time.
+- **Course Cutting:** In marathons, cutting corners or using a relay runner but claiming the full distance.
+- **Wind-Aided Records:** Presenting a record set with +4.0 m/s wind (illegal) as a "Wind-Legal" record.
+- **Age-Class Fraud:** Adults competing in youth categories to win scholarships.
 
-- **Invented Records:** Entirely fabricated performance claims
-- **Altered Times/Distances:** Genuine results with improved numbers
-- **Competition Fraud:** Results from non-existent competitions
-- **Timing Manipulation:** Tampered timing equipment or documentation
-- **Age Fraud:** Performances attributed to wrong age category
-- **Impersonation:** Another athlete's results claimed as own
+**Issuer Types**
 
-OCR-to-hash addresses fabrication and alteration. Federation database cross-reference confirms performance authenticity.
+**Governing Bodies:** (World Athletics, FINA, FIFA).
+**Timing Companies:** (Omega, Seiko, Swiss Timing).
+**Race Platforms:** (Athletic.net, RunSignUp).
 
-**Timing Authorities and Federations as Issuers**
+## Competition vs. Result Databases
 
-Multiple organizations verify athletic performances:
+| Feature | OCR-to-Hash | Online Results (Athletic.net) | Photo-Finish (Visual) |
+| :--- | :--- | :--- | :--- |
+| **Trust** | **Cryptographic.** Bound to the Federation domain. | **Social.** Relies on the meet director uploading correctly. | **Forensic.** Requires expert eyes to interpret. |
+| **Integrity** | **Binds Performance.** Proves the *result* matches the *athlete*. | **Database.** Prone to data entry errors or "Ghost Results." | **Static.** Just an image of the finish line. |
+| **Speed** | **Instant.** Scan the bib or certificate. | **Variable.** Meet results can take days to appear online. | **Slow.** Requires access to specialized software. |
 
-**World Athletics:** International track and field federation.
-
-**National Federations:** USA Track & Field, British Athletics, etc.
-
-**Timing Companies:** Swiss Timing, Omega, TAG Heuer.
-
-**Event Organizers:** Major marathon organizers, championship hosts.
-
-**Age-Group Organizations:** Masters Athletics, youth federations.
-
-Each operates verification endpoints for performances under their jurisdiction.
-
-**Timing Technology Integration**
-
-Modern timing systems:
-
-**Fully Automatic Timing (FAT):** Photo-finish camera systems.
-
-**Transponder Timing:** Chip timing for road races.
-
-**Hand Timing:** Manual timing with specified corrections.
-
-**GPS/Motion Capture:** Emerging technologies for some events.
-
-**Wind Gauges:** Automatic wind measurement for sprints/jumps.
-
-Verification could indicate timing method: "Verified - FAT timing, wind legal (+1.2 m/s)."
-
-**Record Ratification Process**
-
-Records require formal ratification:
-
-**Technical Requirements:** Certified equipment, officials, facilities.
-
-**Anti-Doping Compliance:** Clean doping test required.
-
-**Wind Legal:** Within permitted wind assistance limits.
-
-**Documentation:** Official forms and submissions.
-
-**Review Period:** Time for challenges or additional verification.
-
-Verification status distinguishes "pending ratification" from "ratified."
-
-**Performance Conditions**
-
-Context affecting performances:
-
-**Altitude:** High-altitude performances (aided for some events).
-
-**Wind:** Assistance or resistance in sprints and jumps.
-
-**Temperature:** Extreme conditions affecting performance.
-
-**Course Certification:** Verified distance for road races.
-
-**Equipment:** Approved equipment specifications.
-
-Verification may note conditions: "Verified - altitude-assisted (2,240m), not eligible for sea-level record."
-
-**Anti-Doping Integration**
-
-Clean sport verification:
-
-**Testing Records:** Performances linked to doping control.
-
-**Biological Passport:** Longitudinal monitoring data.
-
-**Whereabouts Compliance:** Availability for out-of-competition testing.
-
-**Retroactive Analysis:** Stored samples can be retested.
-
-**Sanctions:** Performances during sanction periods invalidated.
-
-Record verification should indicate doping status: "Verified - Performance subsequently invalidated (anti-doping violation 2024)."
-
-**Age-Group and Masters Records**
-
-Age-graded competitions:
-
-**Age Verification:** Birth date confirmation for age categories.
-
-**Age-Grading:** Performance adjusted for age.
-
-**Masters Records:** 5-year age brackets from 35+.
-
-**Youth Records:** U18, U20, U23 categories.
-
-**Age Fraud Prevention:** Verification against birth records.
-
-Verification confirms age category: "Verified - M55-59 American Record."
-
-**Team Events and Relays**
-
-Multi-athlete performances:
-
-**Relay Teams:** All four runners' identities and splits.
-
-**Team Championships:** Aggregate scoring verification.
-
-**Substitution Rules:** Compliance with heats/finals rules.
-
-**Split Times:** Individual leg times in relays.
-
-Verification covers all team members: "Verified - 4x100m relay: [names], total time [time]."
-
-**Historical Records and Digitization**
-
-Pre-electronic era documentation:
-
-**Archival Records:** Historical performance documentation.
-
-**Digitization Projects:** Converting paper records to verifiable digital.
-
-**Standards Evolution:** Different eras had different technical standards.
-
-**Record Progression:** Tracking how records improved over time.
-
-Older records may have qualification notes: "Verified - Historical record (hand-timed, pre-FAT era)."
-
-**Paralympic and Disability Sport**
-
-Classification considerations:
-
-**Classification Status:** Athlete's disability classification.
-
-**Classification-Specific Records:** Records within classification.
-
-**Review Processes:** Classification can be reviewed.
-
-**Protest Procedures:** Classification protests and appeals.
-
-Verification indicates classification: "Verified - T54 World Record (wheelchair racing)."
-
+**Why OCR wins here:** Athletic results are decentralized. Thousands of local meets happen every weekend. OCR-to-hash allows a kid in a rural high school to carry a "Token of Proof" from their local timing company that is as trustworthy as an Olympic final result, bridging the gap between the field and the recruiters.

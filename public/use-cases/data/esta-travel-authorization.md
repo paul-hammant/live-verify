@@ -1,150 +1,110 @@
 ---
-title: "ESTA (Electronic System for Travel Authorization) approvals"
+title: "ESTA Travel Authorizations"
 category: "Immigration & Visa Documents"
-volume: "Large"
+volume: "Very Large"
 retention: "2 years (ESTA validity)"
 slug: "esta-travel-authorization"
-tags: ["esta", "travel", "authorization", "immigration", "visa", "documents"]
+tags: ["immigration", "esta", "visa-waiver-program", "cbp", "travel-authorization", "international-travel", "border-security"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <div style="background: #002d62; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
+    <div>
+      <div style="font-weight: bold; font-size: 1.1em;">U.S. CUSTOMS AND BORDER PROTECTION</div>
+      <div style="font-size: 0.8em;">ESTA (Electronic System for Travel Authorization)</div>
+    </div>
+    <div style="width: 40px; height: 40px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #002d62; font-weight: bold; font-size: 0.7em; text-align: center;">CBP</div>
+  </div>
+
+  <div style="padding: 25px;">
+    <div style="text-align: center; margin-bottom: 20px;">
+      <h2 style="margin: 0; font-size: 1.3em;">AUTHORIZATION APPROVED</h2>
+      <div style="font-size: 1.5em; font-weight: bold; margin-top: 5px; color: #2e7d32;">APPLICATION #: <span data-bracket="start" data-for="esta">]</span>9988776655</div>
+    </div>
+
+    <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+      <p><strong>Applicant:</strong> JOHN JACOB DOE<br>
+      <strong>Birth Date:</strong> 05/15/1985<br>
+      <strong>Citizenship:</strong> UNITED KINGDOM</p>
+
+      <div style="border-top: 1px solid #eee; padding-top: 10px; margin-top: 10px;">
+        <strong>Passport Number:</strong> ********1234<br>
+        <strong>Issuance Date:</strong> March 15, 2026<br>
+        <strong>Expiration Date:</strong> March 14, 2028
+      </div>
+    </div>
+
+    <div style="margin-top: 25px; padding: 10px; background: #f9f9f9; border: 1px solid #eee; font-size: 0.8em; color: #555;">
+      <strong>Note:</strong> Your travel authorization is valid for two years or until your passport expires, whichever comes first.
+    </div>
+
+    <div data-verify-line="esta" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: CBP doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:esta.cbp.dhs.gov/v/9988776655 <span data-bracket="end" data-for="esta">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Full name, passport number, nationality, DOB, travel details, approval number
+Application number, full name, date of birth, passport number, country of citizenship, authorization status (Approved/Pending), issuance date, expiration date.
 
-**Privacy Salt:** Sensitive personal information requires random salt in verification lines to prevent hash enumeration.
+**Document Types:**
+- **ESTA Approval Printout:** The standard PDF for travelers.
+- **Group Application Summary:** For families traveling together.
+- **Status Change Notice:** Proving an old authorization was cancelled.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`cbp.dhs.gov`) and current travel standing.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Approved** — Traveler is authorized to board a carrier to the U.S.
+- **Cancelled** — Authorization retracted (e.g., due to visa ineligibility).
+- **Expired** — The 2-year validity period has ended.
+- **Pending** — Under manual review (usually resolved in 72 hours).
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Traveler (Citizen of VWP Country)** benefits from verification.
 
-**Status Confirmation:** Verify immigration documents after receipt from authorities.
+**Airline Boarding:** Proving to an airline check-in agent in London or Tokyo that the paper printout isn't a "Fake Approval." Airlines are fined heavily for boarding passengers without valid ESTAs; a verified hash prevents the "Denied Boarding" nightmare caused by system lag or clerical errors.
 
-**Employment Authorization:** Confirm work authorization for I-9 compliance.
-
-**Travel Planning:** Verify travel document validity before international trips.
-
-**Status Changes:** Confirm application outcomes and new status.
-
-**Family Petitions:** Provide verified status for dependent applications.
+**Hotel Check-In:** Proving legal entry status to a foreign hotel or car rental agency that requires proof of authorized stay.
 
 ## Third-Party Use
 
-**Employers**
+**Airlines (International Carriers)**
+**Liability Mitigation:** Instantly confirming the ESTA status of a passenger during check-in. OCR-to-hash connects the airline directly to the CBP record, bypassing the need for manual data entry into the APIS system.
 
-Hiring and compliance verification:
+**Embassies / Consulates**
+**Secondary Vetting:** Verifying the prior travel history of a visa applicant who previously traveled under the Visa Waiver Program (ESTA).
 
-**Pre-Employment Screening:** Verify credentials during hiring process.
-
-**I-9 Compliance:** Verify work authorization and identity documents.
-
-**Credential Verification:** Confirm professional licenses and certifications.
-
-**Health Requirements:** Verify health-related documentation for workplace safety.
-
-**Background Checks:** Integrate verification into background check processes.
-
-**Government Agencies**
-
-Compliance enforcement and administration:
-
-**Inspection Verification:** Field agents verify permits and licenses at sites.
-
-**Enforcement Actions:** Confirm documentation before enforcement.
-
-**Benefit Eligibility:** Verify supporting documents for benefits administration.
-
-**Compliance Audits:** Audit documentation for regulatory compliance.
-
-**Interagency Coordination:** Share verified documents across agencies.
-
-**Healthcare Providers**
-
-Medical care and coordination:
-
-**Medical History:** Verify patient-provided medical records and test results.
-
-**Treatment Planning:** Confirm diagnostic results for treatment decisions.
-
-**Specialist Referrals:** Validate records when coordinating care.
-
-**Insurance Authorization:** Verify coverage and authorization documents.
-
-**Compliance Requirements:** Confirm vaccination and health screening records.
-
-**Educational Institutions**
-
-Admissions and enrollment:
-
-**Transfer Credits:** Verify transcripts for transfer credit evaluation.
-
-**Graduate Admissions:** Validate undergraduate credentials for graduate programs.
-
-**Professional Programs:** Confirm prerequisite credentials for professional schools.
-
-**International Students:** Verify foreign credentials for admissions and visa support.
-
-**Scholarship Awards:** Validate academic credentials for scholarship eligibility.
+**Private Security / Event Organizers**
+**Guest Vetting:** Ensuring that international VIP guests have verified, legal entry status for high-security events.
 
 ## Verification Architecture
 
-**The ESTA (Electronic System for Travel Authorization) approvals Fraud Problem**
+**The "Fake Approval" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Fabricated PDFs:** Scammers creating fake "ESTA Approved" letters for people who are ineligible (e.g., due to a criminal record or travel to a restricted country).
+- **Date Alteration:** Editing the "Expiration Date" on a 2024 approval to make it look like it's valid for a 2026 trip.
+- **Passport Swapping:** Editing the name or passport number on a valid approval to match a different person.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**U.S. Customs and Border Protection (CBP):** The sole issuer.
+**DHS SAVE System:** (The backend cross-reference).
 
-**USCIS:** U.S. Citizenship and Immigration Services for immigration documents.
+**Privacy Salt:** Critical. Passport numbers and names are highly sensitive. The hash must be salted to prevent "Guess-and-Check" attacks to find specific travelers.
 
-**DOS:** Department of State for passports and consular documents.
+## Competition vs. CBP Online Status Check
 
-**CBP:** Customs and Border Protection for entry/exit documentation.
+| Feature | OCR-to-Hash | ESTA Official Website | Scanned PDF / Printout |
+| :--- | :--- | :--- | :--- |
+| **Integrity** | **Binds Identity.** Binds Passport to Status. | **High.** Direct DB access. | **Zero.** Easily forged. |
+| **Speed** | **Instant.** 5-second scan at check-in. | **Slow.** Requires typing Application # or Passport # + DOB. | **Instant.** |
+| **Trust** | **Cryptographic.** Bound to `cbp.dhs.gov`. | **High.** But prone to phishing sites. | **Low.** Easily faked. |
+| **Hardware** | **Universal.** Any smartphone camera. | **Technical.** Requires laptop/stable 5G. | **Visual.** |
 
-**Foreign Governments:** International authorities for foreign-issued documents.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-**Privacy Considerations**
-
-Sensitive personal information requires special handling:
-
-**Privacy Salt:** Random salt added to verification lines prevents hash enumeration attacks.
-
-**Minimum Disclosure:** Verification response reveals only necessary information.
-
-**Access Controls:** Verification endpoints implement appropriate access restrictions.
-
-**Audit Logging:** Verification attempts logged for security and compliance.
-
-## Rationale
-
-Prevents fake ESTA approvals. Domain binding verifies DHS/CBP (cbp.gov). Required for VWP travel to USA. Printable approval confirmation. Airline verification at check-in. Border crossing documentation. For privacy, issuers can add a random salt line to raise entropy and defeat guessing attacks.
+**Why OCR wins here:** The "Airport Counter" reality. Check-in agents are under extreme time pressure. They don't have time to type 10-digit application numbers and 9-digit passport numbers into a website for every passenger. OCR-to-hash turns the **Physical Printout** into a live, high-speed digital key, ensuring safety and efficiency in global travel.

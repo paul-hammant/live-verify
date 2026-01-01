@@ -4,255 +4,124 @@ category: "Government & Civic Documents"
 volume: "Very Small"
 retention: "Permanent (legal guardianship)"
 slug: "adoption-custody-orders"
-tags: ["adoption", "custody", "orders", "government", "civic", "documents"]
+tags: ["adoption", "custody", "orders", "court", "family", "law"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 2px 2px 10px rgba(0,0,0,0.1);">
+  <div style="text-align: center; margin-bottom: 30px;">
+    <div style="font-weight: bold; font-size: 1.2em; text-transform: uppercase;">In the Circuit Court of Cook County, Illinois</div>
+    <div style="font-size: 1em; margin-top: 5px;">County Department, Domestic Relations Division</div>
+  </div>
+
+  <div style="display: flex; justify-content: space-between; margin-bottom: 30px;">
+    <div>
+      <strong>In re the Marriage of:</strong><br><br>
+      JANE DOE, Petitioner,<br>
+      and<br>
+      JOHN DOE, Respondent.
+    </div>
+    <div style="text-align: right;">
+      <br>
+      <strong>Case No.</strong> 2025-D-092341<br>
+      <strong>Calendar:</strong> 42<br>
+    </div>
+  </div>
+
+  <h3 style="text-align: center; text-decoration: underline; text-transform: uppercase;">Final Allocation Judgment of Parental Responsibilities</h3>
+
+  <div style="font-size: 0.95em; line-height: 1.6; text-align: justify;">
+    <p>This cause coming to be heard for entry of a Final Allocation Judgment, the Court finds:</p>
+    <p>1. The parties have agreed to a Parenting Plan regarding the minor child, <span data-bracket="start" data-for="custody">]</span><strong>MICHAEL DOE (DOB: 05/12/2018)</strong>.</p>
+    <p>2. <strong>Decision-Making:</strong> The Petitioner (Mother) shall have sole decision-making responsibility for education and healthcare.</p>
+    <p>3. <strong>Parenting Time:</strong> The Respondent (Father) shall have parenting time every other weekend from Friday 5:00 PM to Sunday 5:00 PM.</p>
+    
+    <p><strong>IT IS ORDERED</strong> that the Parenting Plan attached hereto is incorporated by reference.</p>
+  </div>
+
+  <div style="margin-top: 50px; display: flex; justify-content: space-between; align-items: flex-end;">
+    <div style="border-top: 1px solid #000; width: 40%; text-align: center; padding-top: 5px;">
+      Hon. Judge Susan Miller<br>
+      <span style="font-size: 0.8em;">OCT 12 2025</span>
+    </div>
+    <div style="width: 40%; text-align: right;">
+      <div style="border: 2px solid #000; display: inline-block; padding: 10px; transform: rotate(-10deg); color: #000; font-weight: bold; opacity: 0.7;">
+        ENTERED<br>
+        CLERK OF COURT
+      </div>
+    </div>
+  </div>
+
+  <div data-verify-line="custody" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+      title="Demo only: Court doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:cookcountycourt.org/orders/v/a1b2c3 <span data-bracket="end" data-for="custody">]</span>
+  </div>
+</div>
+
 ## Data Verified
 
-Child's name (original and adopted name if changed), child's date of birth, adoptive parent(s) names, biological parent(s) names (where applicable), court name and jurisdiction, case number, judge name, order type (adoption decree, custody order, guardianship), order date, effective date, any conditions or restrictions.
+Child's name, parents' names, court jurisdiction, case number, judge name, order type (custody, adoption, visitation), effective date, key restrictions (e.g., "no international travel").
 
 **Document Types:**
-- **Adoption Decrees:** Final court order establishing legal parent-child relationship
-- **Interlocutory Orders:** Preliminary adoption orders before finalization
-- **Custody Orders:** Court orders establishing physical and legal custody
-- **Guardianship Orders:** Court-appointed guardianship of minors
-- **Termination of Parental Rights:** Orders ending biological parent rights
-- **Visitation Orders:** Court-ordered visitation schedules
-- **Modification Orders:** Changes to existing custody arrangements
-- **International Adoption Documentation:** Hague Convention and intercountry adoption papers
+- **Adoption Decree:** Finalizing legal parentage.
+- **Allocation Judgment:** Modern term for "custody order" detailing decision-making and parenting time.
+- **Order of Protection:** Restraining orders affecting custody.
+- **Letters of Guardianship:** For non-parent legal guardians.
 
-**Privacy and Salt:** Given the sensitive nature of child welfare documents, these should include random salt lines to prevent any attempt to identify children through hash enumeration.
+**Privacy and Salt:** Given the extreme sensitivity of child records, the hash MUST use a high-entropy random salt (printed on the document) to prevent "brute force guessing" of hashes to find children's names.
 
 ## Data Visible After Verification
 
-Shows the issuer domain (the court) and the responder text.
+Shows the issuer domain (e.g., `cookcountycourt.org`) and the order status.
 
 **Status Indications:**
-- **Valid** - Order is current and in effect
-- **Modified** - Superseded by subsequent order
-- **Appealed** - Order under appeal
-- **Vacated** - Order has been vacated
-- **Expired** - Temporary order has expired
+- **Valid** — Order is current and the latest on file.
+- **Modified** — Superseded by a more recent court order (critical for custody disputes).
+- **Vacated** — Order is no longer in effect.
 
-**Privacy-Preserving Response:** Verification confirms the order exists in court records without revealing sensitive details about the child or family circumstances to unauthorized parties.
+## Second-Party Use
 
-## Second-Party Use (Parents Verifying Their Own Orders)
+The **Custodial Parent** or **Adoptive Parent** benefits from verification.
 
-Adoptive and custodial parents benefit from verification.
+**School Enrollment:** Proving to a school registrar that they have the sole authority to enroll the child and designate emergency contacts.
 
-**Order Authenticity:** After receiving court documents, verify they're genuine.
+**International Travel:** Proving to border agents (CBP) that they have the sole right to travel with the child, or that the other parent has consented (preventing international abduction accusations).
 
-**School Enrollment:** Verify custody orders for school registration.
-
-**Medical Authorization:** Verify guardianship for medical consent.
-
-**Travel Documentation:** Verify custody orders when traveling with children.
-
-**Insurance and Benefits:** Verify adoption for dependent coverage.
+**Healthcare Decisions:** Proving to a hospital that they have decision-making power for the child's surgery.
 
 ## Third-Party Use
 
-**Schools and Educational Institutions**
+**Schools**
+**Enrollment Integrity:** Schools often face "parent wars" where one parent tries to override the other's instructions. A verified, current court order definitively settles who has decision-making power.
 
-Student enrollment:
+**Doctors and Hospitals**
+**Consent Validity:** Before performing non-emergency procedures, doctors need to know if the presenting parent actually has the legal right to consent, especially in divorced families.
 
-**Enrollment Authorization:** Verify who can enroll child in school.
+**Police**
+**Domestic Disputes:** When called to a "custody dispute" at a handover location, police are often shown conflicting paper orders by shouting parents. Scanning the QR/text to see "Status: MODIFIED - See Order dated Nov 2025" allows officers to enforce the *current* order instantly.
 
-**Pickup Authorization:** Verify custody for pickup permissions.
-
-**Record Access:** Verify who can access educational records.
-
-**Emergency Contacts:** Verify authorized contacts.
-
-**Healthcare Providers**
-
-Medical treatment:
-
-**Consent Authority:** Verify who can consent to medical treatment.
-
-**Medical Records:** Verify who can access child's medical records.
-
-**Emergency Treatment:** Verify custody in emergency situations.
-
-**Insurance Verification:** Confirm coverage under custodial parent.
-
-**Government Agencies**
-
-Benefits and services:
-
-**Social Security:** Verify adoption for dependent benefits.
-
-**Immigration:** Verify adoption for citizenship purposes.
-
-**Child Welfare:** Verify custody in protection investigations.
-
-**Benefits Eligibility:** Determine eligibility for family services.
-
-**Airlines and Travel**
-
-Travel authorization:
-
-**Unaccompanied Minors:** Verify custody for travel consent.
-
-**International Travel:** Verify authority for child passport applications.
-
-**Custody Disputes:** Verify custody when parents dispute travel.
-
-**Amber Alert Prevention:** Confirm legitimate custody.
-
-**Law Enforcement**
-
-Child safety:
-
-**Custody Disputes:** Verify current custody during disputes.
-
-**Missing Children:** Verify custody in missing child situations.
-
-**Welfare Checks:** Confirm guardianship during investigations.
-
-**Enforcement Actions:** Verify custody for order enforcement.
-
-**Attorneys**
-
-Family law matters:
-
-**Modification Proceedings:** Verify current orders before filing modifications.
-
-**Enforcement Actions:** Verify orders before contempt proceedings.
-
-**Interstate Matters:** UCCJEA jurisdiction verification.
-
-**Estate Planning:** Verify custody for guardian designations.
+**Passport Agencies**
+**Passport Issuance:** The State Department requires proof of sole custody or two-parent consent. Verification prevents one parent from fraudulently obtaining a passport for a child.
 
 ## Verification Architecture
 
-**The Custody Document Fraud Problem**
+**The Custody Fraud Problem**
 
-Fraudulent custody documents enable child endangerment:
+- **Outdated Orders:** The most common issue. A parent presents the 2023 order giving them full custody, hiding the 2025 order that switched custody to the other parent.
+- **Forgery:** Photoshop is easily used to remove "Supervised Visitation Only" restrictions.
+- **Jurisdiction Shopping:** Presenting an order from another state that has been superseded by the home state's court.
 
-- **Forged Custody Orders:** Fake court orders claiming custody
-- **Altered Orders:** Genuine orders with modified custody terms
-- **Outdated Orders:** Superseded orders presented as current
-- **Jurisdiction Shopping:** Orders from wrong jurisdiction
-- **Impersonation:** Documents falsely attributed to courts
-- **International Abduction:** Fake documents facilitating child abduction
+**Issuer Types**
 
-OCR-to-hash addresses forgery and alteration. Court record cross-reference confirms order authenticity.
+**Circuit/Family Courts:** The primary issuers.
+**Probate Courts:** For guardianships.
 
-**Courts as Issuers**
+## Competition vs. Certified Copies
 
-Family courts issue custody documents:
+| Feature | OCR-to-Hash | Certified Copy (Raised Seal) |
+| :--- | :--- | :--- |
+| **Freshness** | **Real-time.** Can indicate if the order was modified yesterday. | **Static.** Only proves the order existed *on the day the copy was printed*. |
+| **Accessibility** | **Instant.** Police/Schools can verify on the spot. | **Slow.** Requires calling the court clerk (often impossible) to check validity. |
+| **Cost** | **Low.** Self-service. | **High.** Certified copies cost money and require trips to the courthouse. |
+| **Tamper Proofing** | **Cryptographic.** Hash breaks if text changes. | **Physical.** Raised seals are hard to forge but not impossible; colored paper can be photocopied. |
 
-**State Family Courts:** State-level custody jurisdiction.
-
-**Juvenile Courts:** Child welfare and dependency matters.
-
-**Probate Courts:** Guardianship in some jurisdictions.
-
-**Tribal Courts:** Custody matters under ICWA.
-
-**Foreign Courts:** International adoption and custody.
-
-Each court maintains verification endpoints for orders in their records.
-
-**Uniform Child Custody Jurisdiction**
-
-Interstate custody coordination:
-
-**UCCJEA:** Uniform Child Custody Jurisdiction and Enforcement Act.
-
-**Home State:** State with jurisdiction over custody matters.
-
-**Exclusive Continuing Jurisdiction:** Which court can modify orders.
-
-**Emergency Jurisdiction:** Temporary orders for child safety.
-
-Verification indicates jurisdiction: "Verified - [State] has continuing jurisdiction."
-
-**Adoption Finalization**
-
-Adoption decree requirements:
-
-**Consent:** Biological parent consent or termination.
-
-**Home Study:** Social worker investigation.
-
-**Waiting Period:** Most states require waiting period.
-
-**Sealed Records:** Original birth certificate sealed upon adoption.
-
-**New Birth Certificate:** Amended certificate issued.
-
-Verification confirms finalization status: "Verified - Final Adoption Decree."
-
-**Indian Child Welfare Act**
-
-Special protections:
-
-**ICWA Applicability:** Applies to custody of Native American children.
-
-**Tribal Notification:** Required notification to tribes.
-
-**Placement Preferences:** Priority placement with tribal families.
-
-**Active Efforts:** Higher standard for termination of parental rights.
-
-Verification should indicate ICWA compliance where applicable.
-
-**International Adoption**
-
-Cross-border considerations:
-
-**Hague Convention:** Convention on Intercountry Adoption.
-
-**Central Authorities:** Government agencies overseeing international adoption.
-
-**Immigration Requirements:** IR-3, IR-4 visa categories.
-
-**Readoption:** Some parents readopt in US courts.
-
-**Apostille:** Authentication for foreign documents.
-
-International adoption documents may require multi-country verification.
-
-**Modification and Enforcement**
-
-Custody orders change:
-
-**Substantial Change:** Modification requires changed circumstances.
-
-**Best Interest Standard:** Child's best interest governs.
-
-**Relocation:** Special rules for custodial parent relocation.
-
-**Contempt:** Enforcement of custody violations.
-
-Verification should indicate if order has been modified: "Current order as of [date]."
-
-**Emergency Orders**
-
-Urgent custody situations:
-
-**Temporary Emergency Custody:** Immediate protection orders.
-
-**Ex Parte Orders:** Orders without hearing in emergencies.
-
-**Protective Orders:** Domestic violence protection.
-
-**Duration:** Emergency orders typically short-term.
-
-Verification distinguishes emergency from permanent orders.
-
-**Grandparent and Third-Party Rights**
-
-Non-parent custody:
-
-**Grandparent Visitation:** State laws vary widely.
-
-**Third-Party Custody:** Non-parents awarded custody.
-
-**De Facto Parent:** Recognition of functional parenting.
-
-**Psychological Parent:** Attachment-based custody claims.
-
-Verification confirms the type of custody arrangement: "Verified - Grandparent Visitation Order."
-
+**Why OCR wins here:** The "freshness" problem is massive in family law. A paper "Certified Copy" from 6 months ago is dangerous because it doesn't show that the judge stripped custody last week. A live verification link to the court record prevents the enforcement of stale/dangerous orders.

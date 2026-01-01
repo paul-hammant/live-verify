@@ -1,125 +1,124 @@
 ---
-title: "Directors & Officers (D&O) liability policies"
+title: "Directors & Officers (D&O) Liability Policies"
 category: "Commercial Lines Insurance"
 volume: "Small"
 retention: "Policy term + 10-20 years (claims)"
 slug: "directors-officers-liability"
-tags: ["directors", "officers", "liability", "commercial", "lines", "insurance"]
+tags: ["d-and-o-insurance", "executive-liability", "securities-litigation", "corporate-governance", "ipo-insurance", "risk-management", "commercial-insurance"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Helvetica', Arial, sans-serif; border: 2px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+  <div style="background: #000; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+    <div>
+      <div style="font-weight: bold; font-size: 1.2em;">CHUBB SPECIALTY INSURANCE</div>
+      <div style="font-size: 0.8em; opacity: 0.8;">Executive Protection Portfolio&reg;</div>
+    </div>
+    <div style="text-align: right;">
+      <div style="font-size: 0.8em;">Policy #: DO-998877-26</div>
+    </div>
+  </div>
+
+  <div style="padding: 30px;">
+    <h2 style="text-align: center; color: #000; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">D&O Policy Declarations</h2>
+
+    <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
+      <p><strong>Insured Organization:</strong> <span data-bracket="start" data-for="do-pol">]</span>Globochem Worldwide, Inc.<br>
+      <strong>Jurisdiction:</strong> Delaware, USA</p>
+
+      <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: #f5f5f5; border-bottom: 2px solid #000;">
+          <th style="text-align: left; padding: 8px;">Coverage Layer</th>
+          <th style="text-align: right; padding: 8px;">Limit of Liability</th>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border-bottom: 1px solid #eee;">Side A (Individual D&O)</td>
+          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 25,000,000</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border-bottom: 1px solid #eee;">Side B (Corp. Reimbursement)</td>
+          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 25,000,000</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border-bottom: 1px solid #eee;">Side C (Entity Securities)</td>
+          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 25,000,000</td>
+        </tr>
+      </table>
+
+      <p style="margin-top: 20px;"><strong>Policy Period:</strong> Jan 01, 2026 to Jan 01, 2027<br>
+      <strong>Retroactive Date:</strong> Jan 01, 2015</p>
+    </div>
+
+    <div style="margin-top: 30px; border: 1px solid #ccc; padding: 10px; font-size: 0.8em; color: #555; background: #fafafa;">
+      <strong>Notice:</strong> This is a Claims-Made and Reported policy. Coverage only applies to claims first made against the insured during the policy period.
+    </div>
+
+    <div data-verify-line="do-pol" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: Chubb doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:chubb.com/do/v/DO998877 <span data-bracket="end" data-for="do-pol">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Company name, directors/officers, coverage limits, exclusions, retroactive date
+Insured company name, specific coverage limits (Side A/B/C), retention (deductible) amounts, policy period, retroactive date (critical for prior acts), exclusion endorsements (e.g., "Pending Litigation Exclusion"), issuing carrier.
+
+**Document Types:**
+- **Policy Declarations:** The 1-page executive summary.
+- **Binder:** Proving coverage is in force during an IPO or M&A deal.
+- **Run-Off / Tail Policy:** Proving 6 years of future coverage for retired directors.
+- **Side A DIC (Difference in Conditions):** Essential protection for individuals.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`chubb.com`, `aig.com`, `marsh.com`) and policy status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **In Force** — Premium paid; policy active.
+- **Cancelled** — Coverage terminated (high-risk for directors).
+- **Exhausted** — **ALERT:** Limits have been entirely used up by other claims.
+- **In-Litigation** — Coverage is being disputed between the board and the insurer.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Board Director** or **Corporate Officer** benefits from verification.
 
-**Record Verification:** Confirm financial documents match expectations.
+**Personal Protection:** A director can scan the company's D&O certificate to ensure it's "Verified Active" and the "Side A" limit is actually $25M. This prevents directors from relying on "Ghost Insurance" provided by a dishonest CFO to hide a cash-flow crisis.
 
-**Tax Preparation:** Provide verified documentation for tax filing.
-
-**Audit Support:** Maintain verified records for potential audits.
-
-**Dispute Resolution:** Use verified documents to resolve discrepancies.
-
-**Loan Applications:** Present verified financial documentation to lenders.
+**Resignation/Retirement:** Ensuring that the "Tail Coverage" (Run-off) promised upon leaving the company is verified and in force for the next 6 years.
 
 ## Third-Party Use
 
-**Regulators and Oversight Bodies**
+**M&A Buyers / Acquirers**
+**Legacy Liability:** In a corporate acquisition, the buyer needs to verify the "Retroactive Date" and "Limits" of the seller's historical D&O policies. OCR-to-hash ensures the seller isn't "Editing" their history to hide past litigation risks.
 
-Regulatory compliance and oversight:
+**Investment Banks / Underwriters**
+**IPO Due Diligence:** Ensuring that the "Executive Liability" claims made in the S-1 filing are backed by verified insurance policies.
 
-**Systematic Hash Receipt:** Receive hashes in bulk for regulatory oversight.
-
-**Audit Verification:** Verify documents during routine or targeted audits.
-
-**Compliance Monitoring:** Monitor issuer compliance with documentation requirements.
-
-**Investigation Support:** Verify documents during fraud or compliance investigations.
-
-**Consumer Protection:** Verify consumer-facing documents for protection enforcement.
-
-**Lenders and Financial Institutions**
-
-Credit underwriting and risk assessment:
-
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
+**Shareholder Plaintiffs' Attorneys**
+**Settlement Negotiation:** Verifying the "Side C" limits available to pay out a class-action settlement.
 
 ## Verification Architecture
 
-**The Directors & Officers (D&O) liability policies Fraud Problem**
+**The "Executive Deception" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Income Inflation:** Inflating income or assets on financial documents
-- **Photoshop Fraud:** Digital manipulation of statements and documents
-- **Shell Company Documents:** Documents from fake or shell entities
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Retroactive Backdating:** Editing a "Retroactive Date" from 2025 back to 2015 to hide that the company was uninsured during a period of illegal activity.
+- **Limit Inflation:** A private company editing a $1M "Small Business" policy to read $50M to attract a high-profile board member.
+- **Exclusion Erasure:** Deleting the page showing a "Regulatory Investigation Exclusion" before sending the policy to a potential investor.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Specialty Carriers:** (Chubb, Beazley, AIG, Travelers).
+**Executive Liability Brokers:** (Marsh, Aon, WTW).
+**Legal Data Rooms:** (Intralinks, Merrill).
 
-**Banks and Credit Unions:** Depository institutions for account documents.
+## Competition vs. Broker Confirmation
 
-**Investment Firms:** Brokerage and investment management firms.
+| Feature | OCR-to-Hash | Manual Broker Letter | Data Room PDF |
+| :--- | :--- | :--- | :--- |
+| **Integrity** | **Cryptographic.** Binds every limit and date. | **Subjective.** Relies on the broker's clerk. | **Zero.** Easily forged. |
+| **Speed** | **Instant.** Scan the paper in the boardroom. | **Slow.** Takes 3-5 days to get a "Confirmation Letter." | **Instant.** |
+| **Trust Anchor** | **Domain-Bound.** Bound to the Carrier. | **Human.** Prone to social engineering. | **Vulnerable.** |
+| **Archival** | **Permanent.** Durable for 20-year tail. | **Ephemeral.** Brokers go out of business. | **Vulnerable.** |
 
-**Insurance Companies:** Insurers for policy and claims documents.
-
-**Accounting Firms:** CPAs and audit firms for financial statements.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Prevents fake D&O policies (securities fraud, shareholder disputes). Domain binding verifies insurer. Very long claims tail. High-value coverage ($10M-$100M+ typical). IPO/M&A verification.
+**Why OCR wins here:** The "Claims-Made" Reality. D&O claims often hit 10 years after the policy was written. By then, the original broker may be gone and the IT systems migrated. OCR-to-hash turns the **Static Paper Record** into an immutable link to the carrier's ledger, protecting directors long after they've left the company.

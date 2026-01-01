@@ -1,150 +1,105 @@
 ---
-title: "Federal minimum wage and labor law posters"
+title: "Federal Minimum Wage and Labor Law Posters"
 category: "Mandatory Workplace Postings"
 volume: "Very Large"
-retention: "Current year (annual updates)"
+retention: "Current version (annual updates)"
 slug: "federal-minimum-wage-labor-posters"
-tags: ["federal", "minimum", "wage", "labor", "posters", "mandatory", "workplace", "postings"]
+tags: ["minimum-wage", "labor-law", "flsa", "department-of-labor", "mandatory-posting", "employee-rights", "wage-and-hour"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 3px solid #002d62; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="background: #002d62; color: #fff; padding: 20px; text-align: center; display: flex; align-items: center; justify-content: center;">
+    <div style="font-size: 2em; margin-right: 15px;">💵</div>
+    <div>
+      <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">FEDERAL MINIMUM WAGE</h2>
+      <div style="font-size: 0.85em; opacity: 0.9;">UNITED STATES DEPARTMENT OF LABOR</div>
+    </div>
+  </div>
+
+  <div style="padding: 30px;">
+    <div style="text-align: center; margin-bottom: 25px;">
+      <div style="font-size: 3.5em; font-weight: bold; color: #002d62;">$ 7.25</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin-top: -10px;">PER HOUR</div>
+      <div style="font-size: 0.8em; color: #666; margin-top: 5px;">Effective July 24, 2009 (Current as of 2026)</div>
+    </div>
+
+    <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
+      <p><strong>Overtime Pay:</strong> At least 1.5 times the regular rate of pay for all hours worked over 40 in a workweek.</p>
+      <p><strong>Child Labor:</strong> An employee must be at least 16 years old to work in most non-farm jobs.</p>
+      <p><strong>Tip Credit:</strong> <span data-bracket="start" data-for="wage">]</span>Employers of "tipped employees" must pay a cash wage of at least $2.13 per hour.</p>
+    </div>
+
+    <div style="margin-top: 25px; padding: 10px; background: #f0f4f8; border: 1px solid #d1d9e6; font-size: 0.8em; color: #002d62; font-style: italic; text-align: center;">
+      Verified compliant with Fair Labor Standards Act (FLSA). Scan to view state-specific minimums or report a wage theft violation.
+    </div>
+
+    <div data-verify-line="wage" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: DOL doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:dol.gov/posters/v/FLSA-2026-A <span data-bracket="end" data-for="wage">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-None (informational poster), minimum wage rate, DOL contact
+Poster version ID (e.g., FLSA-2026), current federal minimum wage rate, tipped wage minimum, overtime eligibility rules, child labor restriction summary, issuing authority (DOL Wage & Hour Division), effective date of latest update.
 
-**Privacy Salt:** Sensitive personal information requires random salt in verification lines to prevent hash enumeration.
+**Document Types:**
+- **FLSA Minimum Wage Poster:** The primary mandatory notice.
+- **FMLA Notice:** Family and Medical Leave Act rights.
+- **EPPA Notice:** Employee Polygraph Protection Act.
+- **Service Contract Act (SCA):** For federal contractors.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`dol.gov`) and current regulatory status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Current** — Poster contains the latest federally mandated rates and text.
+- **Outdated** — **ALERT:** A new rate or legal rule has been issued; replace poster.
+- **Informational** — For specific contract types (e.g., Davis-Bacon wages).
+- **Invalid** — Unofficial or fabricated text found.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Employer** benefits from verification.
 
-**Medical Records:** Verify health documents for personal medical records.
+**Audit Protection:** Proving to a Wage & Hour Division inspector during a site visit that the breakroom poster is the **Verified Latest Version**. This avoids the standard $1,100 per-violation penalty for "Outdated Labor Law Postings."
 
-**Provider Presentation:** Share verified results with other healthcare providers.
-
-**Insurance Claims:** Support health insurance claims with verified documentation.
-
-**Compliance Requirements:** Meet employer or school health documentation requirements.
-
-**Legal Matters:** Provide verified health records for disability, litigation, or family matters.
+**Multi-State Compliance:** For companies with offices in 20 states, using verified hashes to track which sites have the correct Federal vs State posters in place from a central dashboard.
 
 ## Third-Party Use
 
-**Regulators and Oversight Bodies**
+**Employees**
+**Wage Theft Prevention:** A worker can scan the poster to verify that the "Tipped Credit" or "Overtime" rules listed match the official federal record. Verification prevents a dishonest manager from "Editing" the poster to trick immigrant or low-wage workers into accepting lower pay.
 
-Regulatory compliance and oversight:
+**Labor Law Auditors**
+**Rapid Inspection:** An auditor can walk through a restaurant and scan 5 different posters in 2 minutes. "Verified by dol.gov" proves the company is meeting its notification duties without the auditor needing to read the fine print.
 
-**Systematic Hash Receipt:** Receive hashes in bulk for regulatory oversight.
-
-**Audit Verification:** Verify documents during routine or targeted audits.
-
-**Compliance Monitoring:** Monitor issuer compliance with documentation requirements.
-
-**Investigation Support:** Verify documents during fraud or compliance investigations.
-
-**Consumer Protection:** Verify consumer-facing documents for protection enforcement.
-
-**Employers**
-
-Hiring and compliance verification:
-
-**Pre-Employment Screening:** Verify credentials during hiring process.
-
-**I-9 Compliance:** Verify work authorization and identity documents.
-
-**Credential Verification:** Confirm professional licenses and certifications.
-
-**Health Requirements:** Verify health-related documentation for workplace safety.
-
-**Background Checks:** Integrate verification into background check processes.
-
-**Insurance Companies**
-
-Underwriting and claims processing:
-
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Healthcare Providers**
-
-Medical care and coordination:
-
-**Medical History:** Verify patient-provided medical records and test results.
-
-**Treatment Planning:** Confirm diagnostic results for treatment decisions.
-
-**Specialist Referrals:** Validate records when coordinating care.
-
-**Insurance Authorization:** Verify coverage and authorization documents.
-
-**Compliance Requirements:** Confirm vaccination and health screening records.
+**Union Representatives**
+**Worker Education:** Ensuring that management is providing verified, accurate information about federal rights to the workforce.
 
 ## Verification Architecture
 
-**The Federal minimum wage and labor law posters Fraud Problem**
+**The "Wage Deception" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Rate Tampering:** A manager editing the "Tipped Wage" from $2.13 to $1.50 on a PDF to steal from servers.
+- **Outdated Postings:** Keeping a 10-year-old poster up to avoid informing employees about new "Sick Leave" or "Overtime" protections.
+- **Compliance Scams:** Private "Poster Salesman" scaring businesses into buying $200 laminated posters that are actually fake or free from the government.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**U.S. Department of Labor (DOL).**
+**State Labor Departments.**
+**Federal Contractor Agencies.**
 
-**Hospitals and Health Systems:** Major healthcare providers and hospital networks.
+## Competition vs. Subscription Poster Services
 
-**Clinical Laboratories:** Reference labs and hospital-based laboratories.
+| Feature | OCR-to-Hash | Subscription Service (J.J. Keller) | Government PDF |
+| :--- | :--- | :--- | :--- |
+| **Cost** | **Free.** (Marginal hosting). | **High.** $150+/year per site. | **Free.** |
+| **Integrity** | **Cryptographic.** Binds the text. | **Brand-Bound.** | **Zero.** Easily forged. |
+| **Freshness** | **Real-time.** Shows if outdated today. | **Laggy.** Depends on shipping a new poster. | **None.** |
+| **Accessibility** | **High.** Mobile scan for employees. | **None.** For employees. | **Visual.** |
 
-**Medical Clinics:** Physician practices and specialty clinics.
-
-**Public Health Departments:** Government health agencies for certifications.
-
-**System Integration**
-
-Healthcare verification connects to clinical systems:
-
-**EHR Systems:** Electronic health record systems generate verification hashes.
-
-**Lab Information Systems:** Laboratory systems create verification for results.
-
-**Health Information Exchanges:** Regional HIEs facilitate verification.
-
-**FHIR Standards:** HL7 FHIR could incorporate verification endpoints.
-
-**Privacy Considerations**
-
-Sensitive personal information requires special handling:
-
-**Privacy Salt:** Random salt added to verification lines prevents hash enumeration attacks.
-
-**Minimum Disclosure:** Verification response reveals only necessary information.
-
-**Access Controls:** Verification endpoints implement appropriate access restrictions.
-
-**Audit Logging:** Verification attempts logged for security and compliance.
-
-## Rationale
-
-Prevents fake wage posters (understating minimum wage). Domain binding verifies DOL. Federal posting requirement. Wage and Hour Division enforcement. Employee rights protection. $1,100 penalty per violation.
+**Why OCR wins here:** The "Compliance Shakedown." Small businesses spend millions every year on "Labor Law Poster Subscriptions" because they are afraid of missing an update. OCR-to-hash turns the **One-Time Government Printout** into a dynamic tool that tells the employer *exactly* when it needs to be replaced, saving the business money while providing better protection for workers.

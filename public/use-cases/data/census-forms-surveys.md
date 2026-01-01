@@ -1,94 +1,110 @@
 ---
-title: "Census forms and surveys"
+title: "Census Forms and Surveys"
 category: "Government & Civic Documents"
 volume: "Medium-Small (census decade)"
 retention: "Permanent (historical records)"
 slug: "census-forms-surveys"
-tags: ["census", "forms", "surveys", "government", "civic", "documents"]
+tags: ["census", "demographics", "government-survey", "data-integrity", "vital-records", "genealogy"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="background: #000; color: #fff; padding: 15px; text-align: center;">
+    <div style="font-weight: bold; font-size: 1.2em;">UNITED STATES CENSUS BUREAU</div>
+    <div style="font-size: 0.8em;">Official Household Receipt</div>
+  </div>
+
+  <div style="padding: 30px;">
+    <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+      <div>
+        <strong>Census Year:</strong> 2026<br>
+        <strong>Form:</strong> D-1 (Household)
+      </div>
+      <div style="text-align: right;">
+        <strong>Confirmation #:</strong><br>
+        <span data-bracket="start" data-for="census">]</span>9988-7766-5544
+      </div>
+    </div>
+
+    <div style="font-size: 0.9em; line-height: 1.6; color: #333; border: 1px solid #ccc; padding: 15px; background: #f9f9f9;">
+      <p>Thank you for completing the 2026 Census. Your submission has been received and verified.</p>
+      
+      <p><strong>Household Address:</strong><br>
+      123 Maple Street, Anytown, USA</p>
+
+      <p><strong>Household Count:</strong> 4 Persons</p>
+      <p><strong>Submission Date:</strong> April 1, 2026</p>
+    </div>
+
+    <div style="margin-top: 20px; font-size: 0.75em; color: #777; font-style: italic;">
+      Verification of this receipt does not expose PII (Personally Identifiable Information). It confirms the submission exists in the National Archives.
+    </div>
+
+    <div data-verify-line="census" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: Census Bureau doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:census.gov/verify/v/998877665544 <span data-bracket="end" data-for="census">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Household names, ages, occupations, addresses
+Census year, household confirmation number, geographic area (Census Tract), household count, date of submission, enumerator ID (if applicable), completion status.
+
+**Document Types:**
+- **Census Household Receipt:** Printed or digital proof of participation.
+- **Enumerator Badge:** For door-to-door officials.
+- **Historical Census Extract:** Certified copy of a record from 72+ years ago.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`census.gov`) and the submission standing.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Verified** — Record exists and matches the national registry.
+- **In-Progress** — Submission received but requires clarification.
+- **Historical** — Record released to the National Archives (NARA).
+- **Invalid** — Confirmation number not found.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Resident / Head of Household** benefits from verification.
 
-**Document Authenticity:** Verify received documents are genuine and properly issued.
+**Compliance Proof:** In jurisdictions where census participation is mandatory by law, the verified receipt proves the household has fulfilled its legal duty, preventing fines or repeat visits from enumerators.
 
-**Third-Party Presentation:** Provide verified documentation when required.
-
-**Compliance Requirements:** Meet regulatory or contractual documentation requirements.
-
-**Record Keeping:** Maintain verified records for future reference or audits.
-
-**Dispute Prevention:** Establish authenticity to prevent future challenges.
+**Address Verification:** Proving to a local school district or utility company that they were a resident at a specific address on "Census Day" using a verified government record.
 
 ## Third-Party Use
 
-**Auditors and Compliance Officers**
+**The National Archives (NARA)**
+**Data Preservation:** Ensuring that the digital archives of census data match the original physical submissions. OCR-to-hash creates a permanent link between the "Persistent Paper" and the "Digital Archive."
 
-Internal and external audits:
+**Local School Districts**
+**Planning:** Using verified household count aggregates to plan for future classroom and bus route requirements.
 
-**Financial Audits:** Verify documents during financial statement audits.
-
-**Compliance Audits:** Validate documentation for regulatory compliance.
-
-**Internal Controls:** Test document authenticity in control assessments.
-
-**Fraud Investigations:** Verify documents in fraud examinations.
-
-**Third-Party Audits:** Validate vendor and partner documentation.
+**Genealogists / Historians**
+**Record Integrity:** Verifying that a scanned historical census record (e.g., from 1950) is an authentic, non-altered document from the government files.
 
 ## Verification Architecture
 
-**The Census forms and surveys Fraud Problem**
+**The "Data Skew" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Participation Avoidance:** Creating a fake "Confirmation Receipt" to stop enumerators from knocking on the door.
+- **Household Padding:** Altering a receipt to show *more* people in a household to qualify for higher local benefits or larger grants.
+- **Enumerator Fraud:** A lazy enumerator fabricating household submissions to meet their daily quota.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**National Statistical Agencies:** (e.g., U.S. Census Bureau, Statistics Canada).
+**National Archives:** (Managing long-term historical data).
 
-**Primary Issuers:** Organizations with direct authority to issue these documents.
+**Privacy Salt:** Critical. Census data is protected by strict privacy laws (e.g., Title 13 in the USA). The hash must be salted to ensure that a third party cannot "brute force" the names or addresses of residents.
 
-**Licensed Professionals:** Professionals authorized to create and certify documents.
+## Competition vs. Direct Database (Title 13)
 
-**Government Agencies:** Federal, state, or local agencies with jurisdiction.
+| Feature | OCR-to-Hash | Census Internal DB | Scanned Image (Ancestry) |
+| :--- | :--- | :--- | :--- |
+| **Privacy** | **High.** Hash proves *participation* without revealing *PII*. | **Restricted.** Access prohibited by federal law for 72 years. | **Zero.** Everything is visible once the 72-year rule passes. |
+| **Trust** | **Cryptographic.** Bound to `census.gov`. | **High.** Direct from the source. | **Medium.** Prone to digital "Cleanup" errors. |
+| **Integrity** | **Binds Content.** Proves the *Count* hasn't changed. | **High.** | **Vulnerable.** |
 
-**Industry Bodies:** Trade associations and professional organizations.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Permanent historical records. Domain binding verifies census authority. Standard forms suitable for OCR. Data integrity for demographic research.
+**Why OCR wins here:** The "Participation Proof" without "Content Leakage." Citizens need to prove they participated without necessarily showing the government their income or family details to a third party (like a landlord). OCR-to-hash allows for a "Verified Participation" token that respects the constitutional privacy of the census.

@@ -1,96 +1,107 @@
 ---
-title: "Data sharing agreements and material transfer"
+title: "Data Sharing Agreements (DSA)"
 category: "Scientific & Research"
 volume: "Very Small"
 retention: "7-20 years (IP/legal)"
 slug: "data-sharing-agreements"
-tags: ["data", "sharing", "agreements", "scientific", "research"]
+tags: ["data-governance", "dsa", "research-agreement", "gdpr-compliance", "privacy-policy", "academic-collaboration", "legal-contract"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+  <div style="text-align: center; margin-bottom: 30px; border-bottom: 2px solid #000; padding-bottom: 10px;">
+    <div style="font-weight: bold; font-size: 1.2em;">DATA SHARING & USE AGREEMENT</div>
+    <div style="font-size: 0.9em; margin-top: 5px;">OXFORD UNIVERSITY - RESEARCH SERVICES</div>
+  </div>
+
+  <div style="font-size: 1em; line-height: 1.6; color: #333; text-align: justify;">
+    <p>This Agreement governs the transfer of Data from the <strong>Provider:</strong> Oxford University to the <strong>Recipient:</strong> <span data-bracket="start" data-for="dsa">]</span>Stanford Medical Research Center.</p>
+
+    <p><strong>Dataset ID:</strong> OX-BIO-2026-992 (Genomic Sequences)<br>
+    <strong>Authorized Use:</strong> Cancer Research Initiative only.<br>
+    <strong>Restrictions:</strong> No re-identification; No third-party transfer.</p>
+
+    <p><strong>Execution Date:</strong> March 15, 2026<br>
+    <strong>Termination Date:</strong> March 14, 2031</p>
+  </div>
+
+  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+    <div style="width: 45%;">
+      <div style="border-top: 1px solid #000; padding-top: 5px; font-style: italic;">Prof. Albus Dumbledore</div>
+      <div style="font-size: 0.8em; color: #777;">Authorized Signatory (Oxford)</div>
+    </div>
+    <div style="width: 45%; text-align: right;">
+      <div style="width: 80px; height: 80px; border: 2px solid #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; margin-left: auto;">RESEARCH<br>OFFICE</div>
+    </div>
+  </div>
+
+  <div data-verify-line="dsa" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+      title="Demo only: University doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:ox.ac.uk/legal/v/OX-BIO-992 <span data-bracket="end" data-for="dsa">]</span>
+  </div>
+</div>
+
 ## Data Verified
 
-Sharing parties, researchers, material descriptions
+Provider institution name, Recipient institution name, Dataset ID/Title, specific Authorized Use (Scope), execution date, termination/expiration date, data protection status (e.g., GDPR compliant), authorized signatories.
 
-**Multi-Page Handling:** Documents may span multiple pages. Per-page verification prevents page substitution attacks.
+**Document Types:**
+- **Data Sharing Agreement (DSA):** The primary legal contract.
+- **Material Transfer Agreement (MTA):** For biological/physical samples.
+- **Data Use Certification (DUC):** For individual researchers.
+- **Privacy Impact Assessment (PIA):** (Linked hash) proving risk review.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`ox.ac.uk`, `stanford.edu`) and agreement status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Active** — Agreement is fully executed and in effect.
+- **Expired** — Data use period has ended; data must be destroyed.
+- **Revoked** — Permission pulled due to a security breach or misuse.
+- **Amended** — Replaced by a newer version (e.g., scope expanded).
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Data Recipient** (Researcher) benefits from verification.
 
-**Document Authenticity:** Verify received documents are genuine and properly issued.
+**Grant Funding:** Proving to a funding agency (e.g., NIH or Wellcome Trust) that they have "Verified Legal Access" to the necessary dataset. This prevents delays in grant disbursement.
 
-**Third-Party Presentation:** Provide verified documentation when required.
-
-**Compliance Requirements:** Meet regulatory or contractual documentation requirements.
-
-**Record Keeping:** Maintain verified records for future reference or audits.
-
-**Dispute Prevention:** Establish authenticity to prevent future challenges.
+**Publication Integrity:** Providing a verified link to the DSA in a published paper, proving the research was conducted under an official, institutional agreement.
 
 ## Third-Party Use
 
-**Auditors and Compliance Officers**
+**University Compliance Officers**
+**Portfolio Audit:** Instantly verifying that all outgoing datasets are covered by active, non-expired agreements. OCR-to-hash allows for a "Digital Census" of physical/PDF legal files.
 
-Internal and external audits:
+**GDPR / Privacy Regulators**
+**Chain of Custody:** If a data breach occurs, regulators can verify the "Authorized Use" and "Restrictions" of the original agreement to determine which party is liable.
 
-**Financial Audits:** Verify documents during financial statement audits.
-
-**Compliance Audits:** Validate documentation for regulatory compliance.
-
-**Internal Controls:** Test document authenticity in control assessments.
-
-**Fraud Investigations:** Verify documents in fraud examinations.
-
-**Third-Party Audits:** Validate vendor and partner documentation.
+**Collaborating Journals**
+**Ethical Review:** Ensuring that the authors of a study had the legal right to use the data before publishing the results.
 
 ## Verification Architecture
 
-**The Data sharing agreements and material transfer Fraud Problem**
+**The "Data Misuse" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Scope Creep:** A researcher having a DSA for "Diabetes Research" but using the data for "Insurance Modeling" (a common ethics violation).
+- **Unauthorized Transfers:** A recipient sharing the data with a third-party company without the provider's knowledge.
+- **Fabricated DSAs:** Creating a fake agreement PDF to bypass institutional IRB (Ethics Board) review.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Universities / Research Institutes:** (Oxford, Stanford, Max Planck).
+**Medical Centers / Biobanks.**
+**Tech Platforms:** (e.g., Vivli, Sage Bionetworks - who host shared data).
 
-**Primary Issuers:** Organizations with direct authority to issue these documents.
+**Privacy Salt:** Highly critical. DSAs often involve sensitive health or genetic data labels. The hash must be salted to prevent "Guess-and-Check" searches for specific clinical trial involvements.
 
-**Licensed Professionals:** Professionals authorized to create and certify documents.
+## Competition vs. CLM Systems (Ironclad)
 
-**Government Agencies:** Federal, state, or local agencies with jurisdiction.
+| Feature | OCR-to-Hash | CLM (Contract Lifecycle Mgmt) | Scanned PDF |
+| :--- | :--- | :--- | :--- |
+| **Trust Anchor** | **Domain-Bound.** Bound to the University. | **System-Bound.** Trust the CLM vendor. | **Zero.** Easily forged. |
+| **Interoperability** | **Universal.** PDFs work across institutions. | **Low.** Hard to verify if you don't use the same CLM. | **Universal.** |
+| **Integrity** | **Binds Scope.** Protects the "Authorized Use" text. | **Data-Only.** | **Vulnerable.** |
+| **Cost** | **Low.** Standard web infra. | **Very High.** Enterprise software fees. | **None.** |
 
-**Industry Bodies:** Trade associations and professional organizations.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Domain binding verifies institutions. Tamper-evident IP agreements. Legal document format suitable for OCR. Long retention for disputes.
+**Why OCR wins here:** The "Institutional Handoff." Oxford uses one system, Stanford uses another. They don't want to grant each other access to their private legal systems. OCR-to-hash turns the **Final Signed PDF** into a portable, verifiable artifact that works across the "Institutional Divide" without any software integration.

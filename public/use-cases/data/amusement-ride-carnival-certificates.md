@@ -1,96 +1,104 @@
 ---
-title: "Amusement ride and carnival inspection certificates"
+title: "Amusement Ride and Carnival Inspection Certificates"
 category: "Safety Inspection Certificates"
 volume: "Medium"
 retention: "Seasonal/annual (before operation)"
 slug: "amusement-ride-carnival-certificates"
-tags: ["amusement", "ride", "carnival", "certificates", "safety", "inspection"]
+tags: ["amusement", "ride", "carnival", "inspection", "safety", "certificate", "state"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 4px solid #f57f17; background: #fff; padding: 0;">
+  <div style="background: #f57f17; color: #fff; padding: 15px; text-align: center;">
+    <h2 style="margin: 0;">DEPARTMENT OF LABOR & INDUSTRY</h2>
+    <div style="font-size: 0.9em;">AMUSEMENT RIDE SAFETY DIVISION</div>
+  </div>
+
+  <div style="padding: 25px;">
+    <div style="text-align: center; border-bottom: 2px solid #f57f17; padding-bottom: 10px; margin-bottom: 20px;">
+      <h3 style="margin: 0; color: #e65100;">CERTIFICATE OF OPERATION</h3>
+      <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;">Permit #: AR-2026-55442</div>
+    </div>
+
+    <div style="font-size: 0.95em; line-height: 1.5; color: #333;">
+      <p><strong>Ride Name:</strong> <span data-bracket="start" data-for="ride">]</span>THE VOMIT COMET (Tilt-A-Whirl)<br>
+      <strong>Serial Number:</strong> TW-1998-004<br>
+      <strong>Owner:</strong> Carny Corp Amusements, LLC</p>
+
+      <p><strong>Inspection Date:</strong> May 15, 2026<br>
+      <strong>Location:</strong> State Fairgrounds, Lot C</p>
+
+      <p><strong>Inspector:</strong> Michael J. Fox (Lic #998)<br>
+      <strong>Result:</strong> PASSED (Class A)</p>
+
+      <div style="background: #e0f2f1; padding: 10px; border-radius: 4px; margin-top: 15px; text-align: center; font-weight: bold; color: #004d40;">
+        AUTHORIZED FOR PUBLIC OPERATION<br>
+        Expires: October 31, 2026
+      </div>
+    </div>
+
+    <div data-verify-line="ride" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: State Labor Dept doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:dli.state.pa.us/rides/v/x9y8z7 <span data-bracket="end" data-for="ride">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Ride name, owner, inspector name, inspection date, mechanical/safety test results
+Ride name, serial number (VIN equivalent), owner/operator, inspection date, inspector name/license, location of inspection, result (Pass/Conditional), expiration date.
 
-**Certificate Variations:** Multiple certificate types or levels may exist.
+**Document Types:**
+- **Certificate of Operation:** The "sticker" posted on the ride booth.
+- **Daily Inspection Log:** The clipboard checklist signed by the operator every morning.
+- **NDT Report:** Non-Destructive Testing report (X-ray/Ultrasound of metal stress) required annually.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`dli.state.pa.us`, `labor.mo.gov`) and current status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Active** — Ride is safe and permitted.
+- **Red Tagged** — Operation prohibited due to safety violation.
+- **Expired** — Inspection overdue.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Carnival Operator** benefits from verification.
 
-**Authenticity Confirmation:** Verify certificate after receipt to confirm it's genuine.
+**Efficiency:** When moving to a new town, the local Fire Marshal/Code Enforcement needs to see permits. Instead of digging through a filing cabinet in the office trailer, the operator points to the verified sticker on the ticket booth.
 
-**Credential Display:** Present verified credentials to employers or clients.
-
-**Professional Development:** Track verified certifications for career advancement.
-
-**Compliance Documentation:** Maintain verified certificates for regulatory requirements.
-
-**Renewal Planning:** Monitor certification status to avoid expiration.
+**Insurance Compliance:** Proving to the liability insurer that every ride was inspected on schedule, preventing claim denial if an accident occurs.
 
 ## Third-Party Use
 
-**Auditors and Compliance Officers**
+**Parents / Riders**
+**Peace of Mind:** Before putting their child on a "sketchy looking" ride at a traveling carnival, a parent can scan the sticker. Seeing "VERIFIED: Inspected 3 days ago by State of Ohio" reduces anxiety compared to a faded, unreadable paper.
 
-Internal and external audits:
+**State Inspectors**
+**Audit Trail:** State inspectors can walk the midway scanning stickers to ensure no "Red Tagged" rides are operating. If a ride was tagged yesterday in County A, the inspector in County B will see that status instantly.
 
-**Financial Audits:** Verify documents during financial statement audits.
-
-**Compliance Audits:** Validate documentation for regulatory compliance.
-
-**Internal Controls:** Test document authenticity in control assessments.
-
-**Fraud Investigations:** Verify documents in fraud examinations.
-
-**Third-Party Audits:** Validate vendor and partner documentation.
+**Fairgrounds Management**
+**Liability Shield:** The Fair Board requires all vendors to be inspected. Scanning the certificates creates a digital audit trail proving due diligence was performed.
 
 ## Verification Architecture
 
-**The Amusement ride and carnival inspection certificates Fraud Problem**
+**The "Carnival" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Sticker Swapping:** Taking a valid sticker from a safe "Kiddie Car" ride and sticking it on the unsafe "Roller Coaster" to hide its expired status.
+- **Forgery:** Photocopying last year's sticker and changing the date with a marker.
+- **Jurisdiction Hopping:** A ride fails inspection in State A, so the operator drives across the border to State B and operates illegally without reinspection.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**State Department of Labor/Public Safety:** Most states regulate rides.
+**Third-Party Inspectors:** (NAARSO certified) private inspectors hired by the state or insurance company.
 
-**Primary Issuers:** Organizations with direct authority to issue these documents.
+## Competition vs. QR Stickers
 
-**Licensed Professionals:** Professionals authorized to create and certify documents.
+| Feature | OCR-to-Hash | Simple QR Sticker |
+| :--- | :--- | :--- |
+| **Tamper Evidence** | **High.** The hash protects the *Ride Name* and *Serial Number* printed on the sticker. | **Low.** If you peel a generic QR sticker off Ride A and put it on Ride B, the QR scan just says "Valid Permit." It doesn't inherently link to the *machine* unless the user carefully checks the serial number. |
+| **Readability** | **High.** Humans can read the date/inspector name. | **Zero.** Humans can't read a QR code without a phone. |
+| **Durability** | **Medium.** Text persists even if the QR code is scratched. | **Low.** Scratched QR codes are useless. |
 
-**Government Agencies:** Federal, state, or local agencies with jurisdiction.
-
-**Industry Bodies:** Trade associations and professional organizations.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Prevents fake ride certificates. Domain binding verifies state inspector. Public safety critical. Prevents uninspected ride operation. ASTM F770 compliance. Criminal penalties for operation without inspection.
+**Why OCR wins here:** Traveling carnivals are rough environments. Stickers get sun-bleached, scratched, and rained on. Human-readable text (backed by OCR verification) is more robust than a fragile 2D barcode. Also, proving that *this specific sticker* belongs to *this specific serial number* is crucial to prevent sticker swapping.

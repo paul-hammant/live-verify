@@ -10,3 +10,4 @@ test-images/
 test-verifications/
 *.traineddata
 .idea/
+all_source*.txt

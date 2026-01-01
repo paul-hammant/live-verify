@@ -1,122 +1,109 @@
 ---
-title: "Airline refund confirmations and credit memos"
+title: "Airline Refund Confirmations"
 category: "Travel & Hospitality"
 volume: "Large"
 retention: "Refund + 3-7 years (financial audit)"
 slug: "airline-refund-confirmations"
-tags: ["airline", "refund", "confirmations", "travel", "hospitality"]
+tags: ["airline", "refund", "credit", "memo", "travel", "finance", "audit"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 30px;">
+  <div style="border-bottom: 2px solid #d32f2f; padding-bottom: 10px; margin-bottom: 20px;">
+    <div style="font-weight: bold; font-size: 1.2em; color: #d32f2f;">LUFTHANSA</div>
+    <div style="font-size: 0.9em;">Passenger Receipt - REFUND</div>
+  </div>
+
+  <div style="font-size: 0.9em; line-height: 1.5; color: #333;">
+    <p><strong>Passenger:</strong> <span data-bracket="start" data-for="refund">]</span>HANS MULLER<br>
+    <strong>Original Ticket:</strong> 220-1234567890<br>
+    <strong>Refund Document:</strong> 220-9988776655</p>
+
+    <table style="width: 100%; margin-top: 15px; border-collapse: collapse;">
+      <tr>
+        <td style="padding: 5px 0;">Base Fare Refund:</td>
+        <td style="text-align: right;">EUR 2,500.00</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px 0;">Taxes/Fees Refund:</td>
+        <td style="text-align: right;">EUR 450.00</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px 0;">Cancellation Penalty:</td>
+        <td style="text-align: right;">- EUR 200.00</td>
+      </tr>
+      <tr style="border-top: 1px solid #000; font-weight: bold;">
+        <td style="padding: 5px 0;">TOTAL REFUND:</td>
+        <td style="text-align: right;">EUR 2,750.00</td>
+      </tr>
+    </table>
+
+    <p style="margin-top: 20px;"><strong>Form of Payment:</strong><br>
+    Credited to Mastercard ending 5544<br>
+    Date: 20 March 2026</p>
+  </div>
+
+  <div data-verify-line="refund" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: Airline doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:lufthansa.com/refunds/v/x9y8z7 <span data-bracket="end" data-for="refund">]</span>
+  </div>
+</div>
+
 ## Data Verified
 
-Passenger name, original ticket, refund amount, credit memo number, airline
+Passenger name, original ticket number, refund document number (Credit Memo), refund amount, currency, penalty applied, original form of payment credited, date processed.
+
+**Document Types:**
+- **Passenger Receipt (Refund):** Standard notification to passenger.
+- **Agency Credit Memo (ACM):** Issued to travel agents.
+- **Electronic Miscellaneous Document (EMD):** For ancillary refunds.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`lufthansa.com`) and refund status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Refunded** — Funds released to payment processor.
+- **Pending** — Approved but not yet transmitted.
+- **Reversed** — Refund cancellation (e.g., if passenger decided to keep the ticket).
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Passenger** or **Travel Agent** benefits from verification.
 
-**Document Authenticity:** Verify received documents are genuine and properly issued.
+**Chargeback Defense:** Proving to a credit card company that a refund was *not* issued yet (or was insufficient), justifying a dispute.
 
-**Third-Party Presentation:** Provide verified documentation when required.
-
-**Compliance Requirements:** Meet regulatory or contractual documentation requirements.
-
-**Record Keeping:** Maintain verified records for future reference or audits.
-
-**Dispute Prevention:** Establish authenticity to prevent future challenges.
+**Reimbursement Correction:** Proving to an employer exactly how much was refunded so the correct amount can be returned to the company.
 
 ## Third-Party Use
 
-**Insurance Companies**
+**Corporate Finance / Audit**
+**"Buy and Cancel" Fraud:** An employee buys a refundable Business Class ticket ($5k), expenses it, gets reimbursed. Then they cancel the ticket, get the refund to their personal card. The company is out $5k.
+**Solution:** Auditors require verification of the ticket status. If the status is "REFUNDED" or "VOID," the employee must repay the company.
 
-Underwriting and claims processing:
+**Travel Management Companies (TMCs)**
+**Commission Reconciliation:** Ensuring the airline refunded the correct amount including/excluding agent commissions.
 
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Customs and Border Authorities**
-
-International trade compliance:
-
-**Import Clearance:** Verify shipping documents for customs clearance.
-
-**Duty Assessment:** Validate commercial invoices and declarations.
-
-**Trade Compliance:** Confirm certificates of origin and trade documents.
-
-**Security Screening:** Verify cargo documentation for security.
-
-**Export Controls:** Validate export documentation and licenses.
-
-**Freight Forwarders and Carriers**
-
-Logistics and transportation:
-
-**Shipment Acceptance:** Verify documents before accepting cargo.
-
-**Carrier Handoffs:** Validate documentation at transfer points.
-
-**Liability Determination:** Reference verified documents for claims.
-
-**Route Planning:** Confirm documentation for transit requirements.
-
-**Delivery Confirmation:** Verify documents at final delivery.
+**Tax Authorities**
+**VAT Reclamation:** If a ticket was refunded, the input VAT cannot be claimed. Verification ensures tax filings match reality.
 
 ## Verification Architecture
 
-**The Airline refund confirmations and credit memos Fraud Problem**
+**The "Phantom Ticket" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Photoshop:** Taking a real receipt for a flown flight and editing it to look like a refund (or vice versa).
+- **Hidden Refunds:** Employees banking on the fact that Finance doesn't have visibility into their personal credit card refunds.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Airlines:** (Lufthansa, Air France, Emirates, etc.)
+**IATA BSP:** (Bank Settlement Plan) which processes agent refunds.
 
-**Primary Issuers:** Organizations with direct authority to issue these documents.
+## Competition vs. Credit Card Statements
 
-**Licensed Professionals:** Professionals authorized to create and certify documents.
+| Feature | OCR-to-Hash | Credit Card Statement |
+| :--- | :--- | :--- |
+| **Detail** | **High.** Shows breakdown of tax vs fare vs penalty. | **Low.** Just shows "LUFTHANSA CR EUR 2750". |
+| **Privacy** | **High.** Reveals only this transaction. | **Low.** Employee must share full bank statement (revealing personal spending) to prove the refund. |
+| **Timeliness** | **Instant.** Available as soon as airline processes. | **Slow.** Refunds can take 3-10 days to appear on statements. |
 
-**Government Agencies:** Federal, state, or local agencies with jurisdiction.
-
-**Industry Bodies:** Trade associations and professional organizations.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Prevents fake refund confirmations. Domain binding verifies airline. Accounting audit trail. Prevents double-refund fraud. Credit card chargeback documentation.
+**Why OCR wins here:** Privacy. Employees hate sharing their personal bank statements with Finance to prove a negative (or a positive). A verified document from the airline allows them to prove the refund details without exposing their entire financial life.

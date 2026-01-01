@@ -1,157 +1,105 @@
 ---
-title: "Block party and street closure permits"
+title: "Block Party and Street Closure Permits"
 category: "Event & Temporary Use Permits"
 volume: "Medium"
 retention: "Event + 1-3 years"
 slug: "block-party-street-closure-permits"
-tags: ["block", "party", "street", "closure", "permits", "event", "temporary"]
+tags: ["block-party", "street-closure", "event", "permit", "city", "public-works", "neighbors"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #ff9800; background: #fff; padding: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <div style="background: #ff9800; color: #fff; padding: 15px; text-align: center;">
+    <h2 style="margin: 0; text-transform: uppercase;">CITY OF SAN FRANCISCO</h2>
+    <div style="font-size: 0.9em;">DEPARTMENT OF PUBLIC WORKS (SFDPW)</div>
+  </div>
+
+  <div style="padding: 25px;">
+    <div style="text-align: center; border-bottom: 2px solid #ff9800; padding-bottom: 10px; margin-bottom: 20px;">
+      <h3 style="margin: 0; color: #e65100;">STREET CLOSURE PERMIT</h3>
+      <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;">Permit #: 2026-BLK-9922</div>
+    </div>
+
+    <div style="font-size: 0.95em; line-height: 1.5; color: #333;">
+      <p><strong>Organizer:</strong> <span data-bracket="start" data-for="block">]</span>CHRIS MILLER<br>
+      <strong>Location:</strong> 24th Street (between Mission and Valencia)<br>
+      <strong>Event:</strong> Annual Summer Block Party</p>
+
+      <div style="background: #fff3e0; border: 1px solid #ffe0b2; padding: 10px; margin: 15px 0;">
+        <p><strong>Date:</strong> Saturday, July 4, 2026<br>
+        <strong>Hours:</strong> 10:00 AM to 8:00 PM</p>
+        <p><strong>Closure Scope:</strong> Full street closure. No through traffic. Pedestrian access maintained.</p>
+      </div>
+
+      <p style="font-size: 0.8em; color: #555;"><strong>Conditions:</strong> Barriers must be City-approved. No amplified sound after 7 PM without separate variance. Neighbors notified 14 days prior.</p>
+    </div>
+
+    <div data-verify-line="block" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: SFDPW doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:sfpublicworks.org/events/v/2026-9922 <span data-bracket="end" data-for="block">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Organizer name, address, street closure area, date/hours, neighbors' consent
+Organizer name, street closure boundaries (block by block), event name, date, start/end time, closure type (Full/Partial), neighbors' consent confirmation, permit conditions.
 
-**Permit Types:** Various permit subtypes may exist depending on jurisdiction and specific use.
+**Document Types:**
+- **Temporary Street Closure Permit:** For parties and events.
+- **Construction Encroachment Permit:** For dumpsters or scaffolding.
+- **Utility Excavation Permit:** For street repairs.
+- **Special Event Permit:** For large-scale festivals/parades.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`sfpublicworks.org`, `nyc.gov`) and current status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-- **Suspended** - Permit temporarily suspended
-- **Pending** - Permit application pending approval
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Approved** — Permit is active and street is legally authorized for closure.
+- **Expired** — Event has passed.
+- **Revoked** — Permit pulled (e.g., due to safety violation or incomplete insurance).
+- **Denied** — Application rejected.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Event Organizer** benefits from verification.
 
-**Legitimacy Confirmation:** After obtaining permit, verify it was properly issued and recorded.
+**Traffic Control:** Proving to a delivery truck driver or an angry motorist that they have the legal right to block the street. A verified permit from the city domain is much more authoritative than a plain piece of paper.
 
-**Compliance Display:** Maintain verified permit for posting requirements.
-
-**Scope Verification:** Confirm permitted activities match intended use.
-
-**Expiration Tracking:** Monitor permit status to avoid lapses.
-
-**Record Keeping:** Maintain verified documentation for audits and compliance.
+**Vendor Management:** Showing food truck vendors and bouncy-house companies that the permit is "Verified Approved," so they don't fear being fined when they set up.
 
 ## Third-Party Use
 
-**Lenders and Financial Institutions**
+**Neighbors / Residents**
+**Civic Transparency:** Scanning the permit posted on the street corner to see if the party was supposed to end at 8 PM or 10 PM. Verification prevents the "re-written" permit where an organizer changes the hours with a pen.
 
-Credit underwriting and risk assessment:
-
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
+**Police / Parking Enforcement**
+**Fast Adjudication:** Officers responding to complaints can instantly verify if the closure is legal. If no verified permit exists, they can order the street cleared immediately.
 
 **Insurance Companies**
-
-Underwriting and claims processing:
-
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
-
-**Government Agencies**
-
-Compliance enforcement and administration:
-
-**Inspection Verification:** Field agents verify permits and licenses at sites.
-
-**Enforcement Actions:** Confirm documentation before enforcement.
-
-**Benefit Eligibility:** Verify supporting documents for benefits administration.
-
-**Compliance Audits:** Audit documentation for regulatory compliance.
-
-**Interagency Coordination:** Share verified documents across agencies.
-
-**Real Estate Professionals**
-
-Property transactions and due diligence:
-
-**Purchase Due Diligence:** Verify property documents during transactions.
-
-**Listing Preparation:** Confirm permits and documentation for listings.
-
-**Disclosure Compliance:** Validate required disclosures and permits.
-
-**Title Research:** Verify property documents for title clearance.
-
-**Appraisal Support:** Confirm documented improvements and permits.
+**Liability Verification:** Ensuring the event host actually obtained the mandatory city permit, which is often a condition of the event's liability insurance.
 
 ## Verification Architecture
 
-**The Block party and street closure permits Fraud Problem**
+**The "Street Squatting" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Permit Sharing:** Using one property's permit for work at another location
-- **Scope Expansion:** Expanding permitted activities beyond authorization
-- **Contractor Fraud:** Claiming permits that were never obtained
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Date Tampering:** Taking a real permit from last year and editing the date to "Today" to block the street without paying the city fees.
+- **Scope Expansion:** A permit issued for 1 block being "re-written" to cover 3 blocks.
+- **Fake Permits:** Creating a realistic-looking "City Permit" PDF for an unauthorized protest or illegal commercial event.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Department of Public Works (DPW):** Primary managers of the "Public Right of Way."
+**City Transportation Depts (DOT):** (e.g., SFMTA, LADOT).
+**Police Departments:** (In some jurisdictions).
 
-**Government Entities:** Counties, cities, and special districts maintain property records.
+## Competition vs. Public Map Databases
 
-**Title Companies:** Title insurers and escrow companies for transaction documents.
+| Feature | OCR-to-Hash | City "Active Permits" Map | Paper Permit |
+| :--- | :--- | :--- | :--- |
+| **Field Access** | **Instant.** Scan the paper on the barrier. | **Difficult.** Maps are often buggy on mobile and hard to zoom to a specific block. | **Instant.** |
+| **Specificity** | **Exact.** Shows specific hours and conditions. | **Low.** Maps often just show a pin with "Event." | **High.** But untrusted. |
+| **Offline Proof** | **Strong.** The paper is the anchor. | **None.** Requires high-bandwidth map loading. | **Medium.** |
+| **Trust** | **High.** Bound to the City's domain. | **Medium.** Easy to confuse with third-party apps like Waze. | **Zero.** Easily forged. |
 
-**Lending Institutions:** Banks and mortgage companies for loan documents.
-
-**Appraisal Firms:** Licensed appraisers for property valuations.
-
-**System Integration**
-
-Real estate verification connects to property systems:
-
-**Recording Systems:** County recorder systems for property document registration.
-
-**MLS Integration:** Multiple listing services for property documentation.
-
-**Title Plants:** Title companies maintain verification for title searches.
-
-**E-Recording:** Electronic recording systems generate verification at recording.
-
-## Rationale
-
-Domain binding verifies city/public works. Traffic control verification. Neighbor notification requirements. Prevents unauthorized street closures.
+**Why OCR wins here:** The "Barrier Moment." When a motorist is arguing with a block party volunteer at a barricade, neither wants to navigate a complex city GIS map on their phone. A self-verifying permit posted *on the barrier* provides the instant "Truth" needed to resolve the conflict.

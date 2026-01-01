@@ -1,220 +1,110 @@
 ---
-title: "Food Safety Certifications"
+title: "Food Safety and Dietary Certifications"
 category: "Product Certifications & Compliance"
 volume: "Small"
-retention: "2-7 years (audit cycles, regulatory requirements)"
+retention: "2-7 years (audit cycles)"
 slug: "food-safety-certifications"
-tags: ["food", "safety", "certifications", "product", "compliance"]
+tags: ["food-safety", "haccp", "sqf", "brcgs", "organic-certification", "kosher-halal", "supply-chain-transparency", "gfsi"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="background: #000; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+    <div>
+      <div style="font-weight: bold; font-size: 1.2em;">SQF INSTITUTE</div>
+      <div style="font-size: 0.8em; opacity: 0.8;">Food Safety Code for Manufacturing</div>
+    </div>
+    <div style="text-align: right;">
+      <div style="font-size: 0.8em;">Edition 9.0</div>
+    </div>
+  </div>
+
+  <div style="padding: 30px; text-align: center;">
+    <h2 style="margin: 0; color: #333; font-size: 1.4em;">CERTIFICATE OF REGISTRATION</h2>
+    
+    <div style="font-size: 1.1em; line-height: 1.6; color: #333; margin: 25px 0;">
+      This is to certify that<br>
+      <span data-bracket="start" data-for="food-safe">]</span><strong>APEX FOOD PROCESSING, LLC</strong><br>
+      123 Industrial Way, Chicago, IL 60601
+    </div>
+
+    <div style="background: #f9f9f9; padding: 15px; border: 1px solid #eee; margin-bottom: 25px; text-align: left; font-size: 0.9em;">
+      <strong>Scope:</strong> Processing of Perishable Prepared Foods (Ready-to-Eat).<br>
+      <strong>Audit Rating:</strong> EXCELLENT (98/100)<br>
+      <strong>Certification Body:</strong> SCS Global Services
+    </div>
+
+    <div style="font-size: 0.8em; color: #777;">
+      <strong>Certificate #:</strong> SQF-99228877<br>
+      <strong>Valid Until:</strong> March 15, 2027
+    </div>
+
+    <div data-verify-line="food-safe" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: SQF doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:sqfi.com/v/SQF99228877 <span data-bracket="end" data-for="food-safe">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Producer/facility name and address, certification body name, certificate number, certification type/standard, scope of certification (products, processes, facilities), issue date, expiration date, audit date, any conditions or limitations.
+Facility name, premises address, certification standard (e.g., SQF, BRCGS, HACCP), audit score/rating, scope of certification (e.g., "Dairy" vs "Dry Goods"), certification body name, issuance date, expiration date, serial number.
 
-**Certification Types:**
-- **Food Safety Management:** HACCP, SQF, BRC, FSSC 22000, IFS
-- **Organic:** USDA Organic, EU Organic, various national organic standards
-- **Religious Dietary:** Kosher (OU, OK, Star-K, etc.), Halal (various certifying bodies)
-- **Dietary Lifestyle:** Vegetarian, Vegan, Gluten-Free
-- **Sustainability:** Fair Trade, Rainforest Alliance, Marine Stewardship Council
-- **Regional/Origin:** PDO, PGI, geographical indications
-
-**Display Contexts:** Food safety certificates are displayed in restaurants, food processing facilities, retail locations, and on product packaging. Verification allows consumers and inspectors to confirm displayed certificates are genuine.
+**Document Types:**
+- **GFSI Audit Certificate:** The gold standard for global manufacturing.
+- **Organic Integrity Certificate:** Proving USDA/EU Organic status.
+- **Kosher / Halal Certification:** Proving religious dietary compliance.
+- **Pesticide-Free Attestation:** (Linked hash) from a 3rd party lab.
 
 ## Data Visible After Verification
 
-Shows the issuer domain (the certification body) and the responder text.
+Shows the issuer domain (`sqfi.com`, `brcgs.com`, `scsglobalservices.com`) and current standing.
 
 **Status Indications:**
-- **Certified** - Certification is current and in good standing
-- **Expired** - Certification has lapsed
-- **Suspended** - Certification temporarily inactive pending corrective action or re-audit
-- **Withdrawn** - Certification revoked due to non-compliance
-- **Scope Change** - Certification valid but scope has been modified
+- **Certified** — Facility passed audit and is in good standing.
+- **Suspended** — **ALERT:** Critical safety failure detected; certification paused.
+- **Recalled** — Certificate voided due to fraud or systemic contamination.
+- **Expiring Soon** — Re-audit window is open.
 
-**Public Ledger Link:** Certification bodies often maintain public directories. The verification response may link to the facility's entry in the certifier's public registry.
+## Second-Party Use
 
-## Second-Party Use (Producer Verifying Their Own Certificates)
+The **Manufacturer / Processor** benefits from verification.
 
-Food producers benefit from verifying their certifications.
+**Retailer Onboarding:** Proving to a major retailer (e.g., Costco or Whole Foods) that the facility meets their "Tier 1 Food Safety" requirements. A verified hash from the standard body domain prevents the 2-week delay of manual audit verification.
 
-**Certificate Authenticity:** After receiving certificates from auditors, producers verify they're genuine and correctly recorded.
-
-**Renewal Tracking:** Producers verify certificate status as expiration approaches.
-
-**Scope Confirmation:** Producers verify the certificate covers the specific products or processes they're marketing.
-
-**Supply Chain Communication:** Producers provide verified certificates to buyers, retailers, and distributors.
-
-**Multi-Site Operations:** Companies with multiple facilities verify each site's certification status.
+**Brand Protection:** Displaying the "Verified SQF" badge on B2B marketing materials, ensuring that potential partners trust the facility's hygiene standards without needing a physical site-visit.
 
 ## Third-Party Use
 
-**Retailers and Distributors**
+**Retail Procurement Teams**
+**Supply Chain Integrity:** Instantly verifying the safety certificates of 500+ suppliers. OCR-to-hash allows procurement platforms to automatically flag suppliers with "Suspended" or "Expired" certificates, preventing contaminated food from reaching store shelves.
 
-Supply chain verification:
+**Consumers (Labels)**
+**Trust Check:** Scanning a QR code on a pack of "Verified Halal" or "Verified Organic" food. "Verified by OU Kosher" provides instant, cryptographic assurance that the label isn't just a marketing fabrication.
 
-**Vendor Qualification:** Before adding suppliers, retailers verify their food safety certifications.
-
-**Private Label Requirements:** Retailers requiring suppliers to meet specific standards (SQF, BRC) verify compliance.
-
-**Organic Verification:** Retailers selling organic products verify supplier organic certifications.
-
-**Ongoing Monitoring:** Retailers periodically re-verify supplier certifications.
-
-**Food Service and Restaurants**
-
-Ingredient sourcing:
-
-**Supplier Verification:** Restaurants can verify ingredient suppliers hold claimed certifications.
-
-**Menu Claims:** Restaurants making menu claims (organic, halal, kosher) verify supplier certifications support those claims.
-
-**Customer Transparency:** Restaurants can allow customers to verify displayed certificates.
-
-**Franchise Compliance:** Franchise systems can verify franchisee supplier certifications.
-
-**Consumers**
-
-Point-of-purchase verification:
-
-**Label Verification:** Consumers can verify that organic, kosher, halal, or other labels on products are backed by genuine certifications.
-
-**Restaurant Verification:** Diners can verify restaurant-displayed certificates (health grades, kosher certifications).
-
-**Dietary Compliance:** Consumers with religious or health-related dietary requirements can verify claims.
-
-**Trust Building:** Verification builds consumer confidence in certification claims.
-
-**Regulatory Agencies**
-
-Food safety enforcement:
-
-**Import Verification:** FDA, USDA, and customs can verify certifications on imported foods.
-
-**Inspection Support:** Health inspectors can verify displayed certificates during inspections.
-
-**Outbreak Investigation:** During foodborne illness outbreaks, investigators verify facility certifications.
-
-**Market Surveillance:** Regulators can verify products making certification claims.
-
-**Certification Bodies**
-
-Ecosystem integrity:
-
-**Fraud Detection:** Bodies can detect certificates falsely attributed to them.
-
-**Mutual Recognition:** When accepting certificates from partner organizations, bodies verify authenticity.
-
-**Transfer Audits:** When facilities change certifiers, the new body verifies prior certification.
-
-**Insurance and Liability**
-
-Risk management:
-
-**Product Liability:** Insurers can verify food producers hold appropriate certifications.
-
-**Recall Coverage:** Recall insurance underwriting may require certification verification.
-
-**Supply Chain Insurance:** Coverage for supply chain disruptions may depend on supplier certifications.
+**Insurance Companies**
+**Recall Coverage:** Underwriters verify food safety scores to price "Product Recall" policies. A verified 98/100 rating leads to lower premiums than an unverified "Pass."
 
 ## Verification Architecture
 
-**The Certification Fraud Problem**
+**The "Dirty Secret" Fraud Problem**
 
-Food certification fraud is economically motivated:
+- **Certificate Forgery:** A facility that failed its audit creating a fake "Passing" PDF to keep their contract with a major retailer.
+- **Scope Misrepresentation:** Taking a certificate for "Dry Legumes" and using it to sell "High-Risk Prepared Salads" to trick a buyer.
+- **Status Concealment:** Hiding that a certificate was "Suspended" yesterday after an E. coli outbreak.
 
-- **Fabricated Certificates:** Fake certificates claiming non-existent audits
-- **Altered Certificates:** Genuine certificates with modified scope or dates
-- **Counterfeit Logos:** Using certification marks without authorization
-- **Scope Misrepresentation:** Claiming certification covers products or facilities it doesn't
-- **Expired Certificates:** Continuing to claim certification after expiration
+**Issuer Types**
 
-OCR-to-hash addresses fabrication and alteration. Logo abuse requires trademark enforcement. Scope verification requires understanding what the certificate actually covers.
+**Scheme Owners:** (SQF Institute, BRCGS, FSSC 22000).
+**Certification Bodies:** (SCS Global, NSF International).
+**National Agriculture Depts:** (USDA, EU Commissions).
 
-**Certification Bodies as Issuers**
+## Competition vs. Private Portals (ReposiTrak)
 
-Multiple bodies certify to each standard:
+| Feature | OCR-to-Hash | Supplier Portals (ReposiTrak) | Scanned PDF |
+| :--- | :--- | :--- | :--- |
+| **User Access** | **Universal.** Any retailer/buyer can verify. | **Restricted.** Requires all parties to pay for the portal. | **Instant.** |
+| **Trust Anchor** | **Domain-Bound.** Bound to the Auditor. | **System-Bound.** Trust the portal vendor. | **Zero.** Easily forged. |
+| **Interoperability** | **High.** Works across 100+ different cert bodies. | **Low.** Hard to export "Trust" to other systems. | **Universal.** |
+| **Integrity** | **Binds Content.** Protects the audit score. | **Data-Only.** | **Vulnerable.** |
 
-**GFSI-Benchmarked Schemes:** SQF, BRC, FSSC 22000, and IFS are certified by accredited certification bodies (CBs). Each CB would operate verification endpoints.
-
-**Organic Certifiers:** USDA accredits organic certifying agents. Each agent maintains records and could verify their certificates.
-
-**Religious Certifiers:** Kosher agencies (Orthodox Union, OK Kosher, Star-K) and halal certification bodies each control their own certification processes.
-
-**Scheme Owners:** Scheme owners (SQF Institute, BRCGS, etc.) might coordinate verification across accredited CBs.
-
-**GFSI and Scheme Owner Coordination**
-
-The Global Food Safety Initiative provides framework:
-
-**Benchmarked Schemes:** GFSI recognizes schemes meeting its benchmarks. Could coordinate verification standards.
-
-**Certification Body Accreditation:** CBs are accredited by accreditation bodies (ANAB, UKAS, etc.). Accreditation status could be verified alongside certificates.
-
-**Audit Reports:** Beyond certificates, detailed audit reports exist. These are typically confidential but could support verification.
-
-**Mutual Recognition:** GFSI-recognized schemes have mutual recognition. Verification standards could be harmonized.
-
-**Religious Certification Considerations**
-
-Kosher and halal certifications have unique characteristics:
-
-**Multiple Authorities:** No single global kosher or halal authority exists. Each certifying body has its own standards and verification systems.
-
-**Supervision Models:** Some certifications require ongoing supervision (mashgiach for kosher, halal supervisors), not just audits.
-
-**Consumer Trust:** Religious consumers often recognize specific certification symbols. Verification confirms the symbol is legitimately applied.
-
-**Stringency Levels:** Different kosher certifications have different stringency levels (chalav yisrael, glatt, etc.). Verification should indicate the specific certification granted.
-
-**Supply Chain Integration**
-
-Food supply chains are complex:
-
-**Ingredient Traceability:** Final products use certified ingredients. Verification could cascade through the supply chain.
-
-**Co-Manufacturing:** Products made by co-manufacturers need certification verification.
-
-**Private Label:** Retailers selling private label products need supplier certification verification.
-
-**Food Service Distribution:** Broadline distributors (Sysco, US Foods) supply thousands of products. Verification at scale requires automation.
-
-**Consumer-Facing Verification**
-
-Making verification accessible to consumers:
-
-**QR Codes on Packaging:** Products could include QR codes linking to certificate verification.
-
-**Restaurant Display Codes:** Posted certificates could include verification QR codes.
-
-**Mobile Apps:** Consumer apps could scan products and verify certification claims.
-
-**Retailer Integration:** Retailer apps could show verification status for products.
-
-**Menu Claims:** Restaurant menus making claims (organic wine, halal meat) could link to verification.
-
-**Geographical Indications and Origin**
-
-Protected origin designations:
-
-**PDO/PGI (EU):** Protected Designation of Origin and Protected Geographical Indication.
-
-**Country of Origin:** Claims about production location.
-
-**Regional Specialties:** Champagne, Parmigiano-Reggiano, and other protected names.
-
-These certifications protect against fraud by verifying products genuinely come from claimed origins with claimed production methods.
-
-**Audit Cycle Timing**
-
-Certifications have audit cycles:
-
-**Annual Audits:** Most GFSI-benchmarked schemes require annual audits.
-
-**Unannounced Audits:** Some schemes include unannounced audits.
-
-**Recertification:** Full recertification typically every 3 years.
-
-**Surveillance Audits:** Interim audits between full recertifications.
-
-Verification should reflect current certification status, accounting for audit timing and any interim findings.
+**Why OCR wins here:** The "Supply Chain Web." A manufacturer might have 10 different customers, each using a different compliance portal. OCR-to-hash turns the **Standard PDF Certificate** into a "Universal Trust Link" that works across every portal, every app, and every border without redundant manual entry.

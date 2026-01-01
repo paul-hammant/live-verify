@@ -1,127 +1,110 @@
 ---
-title: "Investment advisor certifications (RIA, IAR)"
+title: "Investment Advisor Certifications (RIA, IAR)"
 category: "Investment & Fintech"
 volume: "Very Small"
 retention: "Permanent (may show REVOKED status)"
 slug: "investment-advisor-certifications"
-tags: ["investment", "advisor", "certifications", "banking", "financial", "services"]
+tags: ["ria", "iar", "investment-advisor", "sec-registered", "fiduciary", "wealth-management", "compliance-audit", "iapd"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 4px solid #002d62; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="background: #002d62; color: #fff; padding: 20px; text-align: center; display: flex; align-items: center; justify-content: center;">
+    <div style="font-size: 1.5em; margin-right: 15px;">🏛️</div>
+    <div>
+      <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">REGISTERED INVESTMENT ADVISER</h2>
+      <div style="font-size: 0.8em; opacity: 0.8;">U.S. SECURITIES AND EXCHANGE COMMISSION</div>
+    </div>
+  </div>
+
+  <div style="padding: 25px; display: flex;">
+    <div style="width: 100px; margin-right: 20px;">
+      <div style="width: 100px; height: 125px; background: #eee; border: 1px solid #ccc; display: flex; align-items: center; justify-content: center; color: #777; border-radius: 4px;">[PHOTO ID]</div>
+    </div>
+    <div style="flex-grow: 1;">
+      <h3 style="margin: 0; color: #002d62;">REPRESENTATIVE CREDENTIAL</h3>
+      <div style="font-size: 1.1em; font-weight: bold; margin: 5px 0;"><span data-bracket="start" data-for="advisor">]</span>SARAH J. MILLER</div>
+      
+      <div style="font-size: 0.9em; color: #333; line-height: 1.4;">
+        <strong>Individual CRD #:</strong> 9922887<br>
+        <strong>Firm:</strong> Miller Wealth Management, LLC<br>
+        <strong>Status:</strong> REGISTERED / ACTIVE
+      </div>
+    </div>
+  </div>
+
+  <div style="padding: 0 25px 25px 25px;">
+    <div style="background: #f9f9f9; border: 1px solid #eee; padding: 10px; font-size: 0.85em; color: #555;">
+      <strong>Fiduciary Status:</strong> This representative is a fiduciary under the Investment Advisers Act of 1940. Last ADV filing: Jan 15, 2026.
+    </div>
+    <div data-verify-line="advisor" style="border-top: 1px dashed #999; margin-top: 15px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+      title="Demo only: SEC/FINRA doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:adviserinfo.sec.gov/v/9922887 <span data-bracket="end" data-for="advisor">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Advisor name, SEC/state registration number, ADV filing date, firm name, disciplinary history summary
+Representative name, photo (hash), Individual CRD number, Firm CRD number, registration status (Registered/Suspended/Barred), jurisdictions of authority, ADV Part 2B (Brochure Supplement) status, date of last filing, disciplinary disclosure flag.
 
-**Certificate Variations:** Multiple certificate types or levels may exist.
+**Document Types:**
+- **IAR Credential Card:** Carried by the advisor.
+- **ADV Part 2B Extract:** The mandatory "Advisor Biography" disclosure.
+- **SEC Registration Certificate:** For the RIA firm's office.
+- **Client Service Agreement:** (Linked hash) for legal onboarding.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`sec.gov`, `finra.org`) and current regulatory standing.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Registered** — Representative is authorized to provide investment advice for a fee.
+- **Barred** — **ALERT:** Permanently prohibited from the industry.
+- **Suspended** — Temporarily restricted (dates and reasons verified).
+- **Inactive** — No longer affiliated with a registered firm.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Investment Advisor (IAR)** benefits from verification.
 
-**Authenticity Confirmation:** Verify certificate after receipt to confirm it's genuine.
+**Trust Building:** Proving to a potential high-net-worth client that they are a "Verified Fiduciary" and not an unlicensed "Guru" or a "Barred Broker." The client can scan the badge during an initial meeting to see the "Active" status directly from the SEC domain.
 
-**Credential Display:** Present verified credentials to employers or clients.
-
-**Professional Development:** Track verified certifications for career advancement.
-
-**Compliance Documentation:** Maintain verified certificates for regulatory requirements.
-
-**Renewal Planning:** Monitor certification status to avoid expiration.
+**Institutional Onboarding:** Proving to a major custodian bank (e.g., Schwab or Fidelity) that their individual credentials are verified and current, speeding up the "Trading Authority" setup.
 
 ## Third-Party Use
 
-**Regulators and Oversight Bodies**
+**Retail Investors (Consumers)**
+**Fraud Prevention:** Before handing over life savings, an investor can verify the advisor's credentials. This stops "Affinity Fraud" where scammers pose as legitimate advisors to target specific religious or professional communities.
 
-Regulatory compliance and oversight:
+**Compliance Departments (CCOs)**
+**Oversight:** Ensuring that every advisor in a large firm is actually keeping their filings current. OCR-to-hash allows for **automated credential auditing** across thousands of employees.
 
-**Systematic Hash Receipt:** Receive hashes in bulk for regulatory oversight.
-
-**Audit Verification:** Verify documents during routine or targeted audits.
-
-**Compliance Monitoring:** Monitor issuer compliance with documentation requirements.
-
-**Investigation Support:** Verify documents during fraud or compliance investigations.
-
-**Consumer Protection:** Verify consumer-facing documents for protection enforcement.
-
-**Lenders and Financial Institutions**
-
-Credit underwriting and risk assessment:
-
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
+**Referral Platforms**
+**Merchant Vetting:** Ensuring that only verified, non-barred advisors are being recommended to users on financial lead-gen platforms.
 
 ## Verification Architecture
 
-**The Investment advisor certifications (RIA, IAR) Fraud Problem**
+**The "Fake Fiduciary" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Income Inflation:** Inflating income or assets on financial documents
-- **Photoshop Fraud:** Digital manipulation of statements and documents
-- **Shell Company Documents:** Documents from fake or shell entities
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Ghost Credentials:** A barred advisor using their old, unexpired "SEC Registration" wall certificate to lure in victims.
+- **ADV Falsification:** Editing the mandatory "ADV Brochure" to remove mention of a prior felony conviction or a regulatory fine.
+- **Identity Swapping:** Using a real person's CRD number but editing the photo on the "Representative Card."
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**U.S. Securities and Exchange Commission (SEC).**
+**FINRA:** (Managing the IAPD database).
+**State Securities Regulators.**
 
-**Banks and Credit Unions:** Depository institutions for account documents.
+**Privacy Salt:** Critical. CRD numbers and names are public, but the hash must be salted to prevent "Mass Scraping" of the advisor database by marketers or scammers.
 
-**Investment Firms:** Brokerage and investment management firms.
+## Competition vs. SEC Advisor Search (IAPD)
 
-**Insurance Companies:** Insurers for policy and claims documents.
+| Feature | OCR-to-Hash | IAPD / BrokerCheck (Web) | Scanned PDF Brochure |
+| :--- | :--- | :--- | :--- |
+| **Trust Anchor** | **Domain-Bound.** Bound to `sec.gov`. | **Database.** Direct from source. | **Zero.** Easily forged. |
+| **Integrity** | **Binds Identity.** Proves *Who* is at the desk. | **Vague.** Hard to prove the person in front of you is the person in the DB. | **None.** |
+| **Speed** | **Instant.** 5-second scan. | **Slow.** Requires typing names/CRDs and navigating Gov UI. | **N/A.** |
+| **Hardware** | **Universal.** Any smartphone camera. | **Technical.** Requires laptop/dedicated search. | **Visual.** |
 
-**Accounting Firms:** CPAs and audit firms for financial statements.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Revocable credentials for investment advisors. Domain binding verifies SEC/state regulator. Prevents fake advisor credentials in investment fraud. Investor protection and client due diligence. Investment Adviser Public Disclosure (IAPD) integration. Critical for investor protection where advisor verification prevents fraud by unregistered or disciplined advisors.
+**Why OCR wins here:** The "Meeting Moment." Trust is established in the first 5 minutes of a meeting. Clients are often too polite to type a person's ID into a government website while they are sitting there. OCR-to-hash turns the **Advisor's Business Card** or **Wall Certificate** into a live, high-speed trust anchor, making "Fiduciary Duty" a verified fact in seconds.

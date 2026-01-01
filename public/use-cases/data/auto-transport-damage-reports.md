@@ -1,124 +1,116 @@
 ---
-title: "Auto transport damage inspection reports"
+title: "Auto Transport Damage Inspection Reports"
 category: "Vehicle & Fleet"
 volume: "Medium"
 retention: "Transport + 7 years"
 slug: "auto-transport-damage-reports"
-tags: ["auto", "transport", "damage", "reports", "logistics", "transportation"]
+tags: ["auto", "transport", "logistics", "damage", "inspection", "car-shipping", "bill-of-lading"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <div style="background: #333; color: #fff; padding: 15px; display: flex; justify-content: space-between; align-items: center;">
+    <div>
+      <div style="font-weight: bold; font-size: 1.1em;">RELIABLE CAR CARRIERS, INC.</div>
+      <div style="font-size: 0.8em;">MC #123456 | DOT #998877</div>
+    </div>
+    <div style="text-align: right;">
+      <div style="font-size: 0.8em;">Order #: RCC-2026-992</div>
+    </div>
+  </div>
+
+  <div style="padding: 25px;">
+    <h3 style="margin-top: 0; color: #333; border-bottom: 2px solid #333; padding-bottom: 5px;">VEHICLE INSPECTION REPORT (BOL)</h3>
+
+    <div style="font-size: 0.9em; line-height: 1.5; color: #333;">
+      <p><strong>Vehicle:</strong> <span data-bracket="start" data-for="damage">]</span>2025 Porsche 911 GT3<br>
+      <strong>VIN:</strong> WP0AC2A9...5544<br>
+      <strong>Condition:</strong> Pre-Transport</p>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; margin: 20px 0;">
+        <div style="width: 45%; border: 1px solid #ccc; padding: 10px; text-align: center;">
+          <div style="font-weight: bold; margin-bottom: 5px;">ORIGIN</div>
+          Los Angeles, CA<br>
+          MAR 15, 2026<br>
+          <span style="color: #2e7d32; font-weight: bold;">[NO DAMAGE]</span>
+        </div>
+        <div style="font-size: 1.5em; color: #999;">&rarr;</div>
+        <div style="width: 45%; border: 1px solid #ccc; padding: 10px; text-align: center;">
+          <div style="font-weight: bold; margin-bottom: 5px;">DESTINATION</div>
+          Miami, FL<br>
+          MAR 20, 2026<br>
+          <span style="color: #c62828; font-weight: bold;">[PENDING]</span>
+        </div>
+      </div>
+
+      <p><strong>Damage Notations (Origin):</strong><br>
+      Clean - no scratches, chips, or dents noted at time of pickup.</p>
+    </div>
+
+    <div data-verify-line="damage" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: Carrier doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:reliable-carriers.com/bol/v/RCC992 <span data-bracket="end" data-for="damage">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Carrier, vehicle VIN, pre-transport condition, damage notation, photos
+Carrier DOT/MC number, vehicle VIN, pickup/delivery locations, timestamps, detailed damage codes (scratches, dents, chips), driver name, customer signature.
 
-**Multi-Page Handling:** Documents may span multiple pages. Per-page verification prevents page substitution attacks.
+**Document Types:**
+- **Electronic Bill of Lading (eBOL):** The primary transport contract.
+- **Delivery Receipt:** Final sign-off showing new damage.
+- **Damage Claim Form:** Filed after delivery for hidden issues.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (the Auto Transport Carrier) and the report status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Origin Signed** — Pickup condition is locked.
+- **Delivered** — Transport complete; final inspection filed.
+- **Claim Active** — Customer has reported damage; under investigation.
+- **Void** — Order cancelled or re-issued.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Vehicle Owner** (or Dealer) benefits from verification.
 
-**Document Authenticity:** Verify received documents are genuine and properly issued.
+**Insurance Claims:** Proving to their own insurance company that the "dent in the hood" was NOT present at pickup in LA, but IS present on the Miami delivery receipt. A verified origin report prevents the carrier from claiming "it was like that when we got it."
 
-**Third-Party Presentation:** Provide verified documentation when required.
-
-**Compliance Requirements:** Meet regulatory or contractual documentation requirements.
-
-**Record Keeping:** Maintain verified records for future reference or audits.
-
-**Dispute Prevention:** Establish authenticity to prevent future challenges.
+**Remote Purchase:** A buyer in Miami buying a car from a dealer in LA can verify the driver's pickup report to ensure the dealer didn't ship a damaged car.
 
 ## Third-Party Use
 
-**Insurance Companies**
+**Cargo Insurers**
+**Liability Allocation:** When a $200,000 car arrives damaged, the insurer needs to know exactly when the damage occurred. Verification prevents the carrier from "editing" the pickup report after the damage happens to make it look like pre-existing condition.
 
-Underwriting and claims processing:
+**Used Car Dealers**
+**Inventory Audit:** Verifying that incoming shipments match the condition reports from the transport company, ensuring no hidden transport damage is passed on to the retail customer.
 
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Customs and Border Authorities**
-
-International trade compliance:
-
-**Import Clearance:** Verify shipping documents for customs clearance.
-
-**Duty Assessment:** Validate commercial invoices and declarations.
-
-**Trade Compliance:** Confirm certificates of origin and trade documents.
-
-**Security Screening:** Verify cargo documentation for security.
-
-**Export Controls:** Validate export documentation and licenses.
-
-**Freight Forwarders and Carriers**
-
-Logistics and transportation:
-
-**Shipment Acceptance:** Verify documents before accepting cargo.
-
-**Carrier Handoffs:** Validate documentation at transfer points.
-
-**Liability Determination:** Reference verified documents for claims.
-
-**Route Planning:** Confirm documentation for transit requirements.
-
-**Delivery Confirmation:** Verify documents at final delivery.
+**Fleet Managers**
+**Driver Oversight:** Ensuring drivers are performing honest inspections and not skipping steps or fabricating "clean" reports to speed up their route.
 
 ## Verification Architecture
 
-**The Auto transport damage inspection reports Fraud Problem**
+**The "Pre-Existing" Damage Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Report Editing:** Drivers taking a clean car, scratching it, and then editing the "Origin" PDF to add a "Scratch" notation to avoid a claim.
+- **Signature Forgery:** Using a digital image of a customer's signature from a previous move on a new, damaged shipment.
+- **Photo Tampering:** Replacing inspection photos with older, cleaner photos of the same vehicle model.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Auto Transport Carriers:** (Reliable Carriers, Horseless Carriage).
+**Broker Platforms:** (Central Dispatch, ShipCarsNow).
+**Inspection Apps:** (SuperDispatch, Car-Arrive).
 
-**Primary Issuers:** Organizations with direct authority to issue these documents.
+## Competition vs. Central Portals
 
-**Licensed Professionals:** Professionals authorized to create and certify documents.
+| Feature | OCR-to-Hash | SuperDispatch / Carrier Portal | Paper Carbon Copy |
+| :--- | :--- | :--- | :--- |
+| **Field Access** | **Universal.** Scan the paper/tablet. | **Restricted.** Requires app login usually for drivers only. | **Instant.** |
+| **Integrity** | **Cryptographic.** Binds the origin state. | **Database-Bound.** Relies on the portal not being "corrected" later. | **Zero.** Easily forged. |
+| **Sharing** | **Easy.** Share the PDF/Link with any insurer. | **Hard.** Requires "Exporting" reports or giving portal access. | **Manual.** |
 
-**Government Agencies:** Federal, state, or local agencies with jurisdiction.
-
-**Industry Bodies:** Trade associations and professional organizations.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Prevents altered damage reports (transport damage fraud). Domain binding verifies auto transport carrier. Pre-existing damage documentation. Prevents fraudulent damage claims. Multi-page: Inspection reports with photos are multi-page.
+**Why OCR wins here:** The "Handoff Moment." Inspections happen in driveways and parking lots. The customer needs a trusted snapshot of the car's state *right now*. OCR-to-hash turns that paper/digital sign-off into an immutable anchor that prevents "After-the-fact" editing of damage records.

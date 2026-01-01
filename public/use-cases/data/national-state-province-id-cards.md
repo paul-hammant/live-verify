@@ -1,94 +1,107 @@
 ---
-title: "National / state / province ID cards"
+title: "National and State ID Cards"
 category: "Government & Civic Documents"
-volume: "Large (daily across hospitality, events, retail, transport)"
-retention: "Short-term (<48h) for front-line checks, long-term audit logs retained by institutions"
+volume: "Very Large"
+retention: "5-10 years (renewal cycles)"
 slug: "national-state-province-id-cards"
-tags: ["national", "state", "province", "cards", "identity", "access", "verification"]
+tags: ["national-id", "state-id", "provincial-id", "identity-verification", "kyc", "fraud-prevention", "government-id", "real-id"]
 ---
+
+<div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+  <div style="background: #002d62; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
+    <div>
+      <div style="font-weight: bold; font-size: 1.1em;">PROVINCE OF ONTARIO</div>
+      <div style="font-size: 0.8em;">PHOTO IDENTIFICATION CARD</div>
+    </div>
+    <div style="font-size: 1.5em;">🏛️</div>
+  </div>
+
+  <div style="padding: 20px; display: flex;">
+    <div style="width: 100px; margin-right: 15px;">
+      <div style="width: 100px; height: 125px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #777;">[PHOTO]</div>
+    </div>
+    <div style="flex-grow: 1;">
+      <div style="font-size: 1.1em; font-weight: bold; margin: 0 0 5px 0;"><span data-bracket="start" data-for="nat-id">]</span>SMITH, JANE M.</div>
+      <div style="font-size: 0.85em; color: #333; line-height: 1.4;">
+        <strong>ID #:</strong> 9988-7766-5544<br>
+        <strong>DOB:</strong> 1985-07-20<br>
+        <strong>Sex:</strong> F  |  <strong>Ht:</strong> 5'07"<br>
+        <strong>Expires:</strong> 2028-07-20
+      </div>
+    </div>
+  </div>
+
+  <div style="padding: 0 20px 20px 20px;">
+    <div style="font-size: 0.8em; font-weight: bold; color: #002d62; text-align: center; margin-bottom: 5px;">MINISTRY OF TRANSPORTATION</div>
+    <div data-verify-line="nat-id" style="border-top: 1px dashed #999; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+      title="Demo only: Ontario MTO doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:mto.gov.on.ca/v/9988776655 <span data-bracket="end" data-for="nat-id">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-ID card number, issuing authority domain (vfy: or verify:), expiration date, hologram/serial integrity statements
+Full name, date of birth, residential address, unique ID number, sex, physical descriptors (Height/Eye Color), photo (via hash), document serial number, issuing authority, effective/expiration dates.
+
+**Document Types:**
+- **State/Provincial ID:** For non-drivers.
+- **National ID Card:** Standard in many countries (e.g., EU, Singapore).
+- **Public Service Card:** Proving eligibility for welfare/health services.
+- **Tribal ID:** Issued by sovereign indigenous nations.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`mto.gov.on.ca`, `gov.uk`, `singpass.gov.sg`) and current identity standing.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Valid** — Identity is verified and current in the government registry.
+- **Stolen/Lost** — **ALERT:** Bearer has reported this physical card missing.
+- **Superseded** — A newer ID card version exists for this person.
+- **Revoked** — Identity credentials terminated (e.g., due to fraud discovery).
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Named Individual** benefits from verification.
 
-**Document Authenticity:** Verify received documents are genuine and properly issued.
+**Age Verification:** Proving to a bouncer or retailer that their "July 20, 1985" birthdate isn't a "Fake ID" modification. Verification against the government domain removes the merchant's fear of "Underage Sales" fines.
 
-**Third-Party Presentation:** Provide verified documentation when required.
-
-**Compliance Requirements:** Meet regulatory or contractual documentation requirements.
-
-**Record Keeping:** Maintain verified records for future reference or audits.
-
-**Dispute Prevention:** Establish authenticity to prevent future challenges.
+**KYC Onboarding:** Proving their identity to an online bank or crypto exchange without needing to wait for a 24-hour "Manual Review" of a high-res photo. A verified hash allows for instant, cryptographic trust.
 
 ## Third-Party Use
 
-**Auditors and Compliance Officers**
+**Hospitality / Alcohol Retailers**
+**Bouncer Efficiency:** Instantly confirming that a "Novice Fake" ID isn't authentic. Standard fakes look perfect to the eye; OCR-to-hash connects the bouncer directly to the government source in seconds.
 
-Internal and external audits:
+**Landlords / Property Managers**
+**Identity Vetting:** Ensuring that a rental applicant is exactly who they claim to be, reducing "Synthetic Identity" fraud in the housing market.
 
-**Financial Audits:** Verify documents during financial statement audits.
-
-**Compliance Audits:** Validate documentation for regulatory compliance.
-
-**Internal Controls:** Test document authenticity in control assessments.
-
-**Fraud Investigations:** Verify documents in fraud examinations.
-
-**Third-Party Audits:** Validate vendor and partner documentation.
+**Financial Institutions**
+**Digital KYC:** Verifying the authenticity of a government ID during remote account opening, satisfying AML/CDD requirements without hardware scanners.
 
 ## Verification Architecture
 
-**The National / state / province ID cards Fraud Problem**
+**The "Fake ID" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Birthdate Tampering:** Minors using high-end printers to change their birth year on a valid ID to buy alcohol or enter venues.
+- **Identity Theft:** Using a stolen ID but editing the name or photo on the card.
+- **Status Faking:** Presenting a "Valid" paper ID for an identity that has been "Revoked" or "Flagged" by the government for fraud.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**National Ministries of Interior:** (e.g., in Germany, Spain, Singapore).
+**State/Provincial Governments:** (e.g., Ontario, California, Texas).
+**Tribal Authorities.**
 
-**Primary Issuers:** Organizations with direct authority to issue these documents.
+**Privacy Salt:** ABSOLUTELY CRITICAL. National identity data is the most sensitive data a government holds. The hash MUST be salted to prevent "Mass Mapping" of the population by hackers or foreign intelligence.
 
-**Licensed Professionals:** Professionals authorized to create and certify documents.
+## Competition vs. NFC Chip Readers
 
-**Government Agencies:** Federal, state, or local agencies with jurisdiction.
+| Feature | OCR-to-Hash | NFC (eID / Chip) | Scanned PDF / Image |
+| :--- | :--- | :--- | :--- |
+| **Integrity** | **Cryptographic.** Binds photo to status. | **High.** Binds digital keys. | **Zero.** Easily forged. |
+| **Trust Anchor** | **Domain-Bound.** Bound to the Gov. | **Key-Bound.** Trust the PKI. | **Visual.** |
+| **Hardware** | **Universal.** Any smartphone camera. | **Restricted.** Requires NFC-enabled phones. |
+| **Adoption** | **High.** Works for cards without chips. | **Low.** Many US/Canada IDs lack chips. |
 
-**Industry Bodies:** Trade associations and professional organizations.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Hotels, bouncers, car rentals, and transit workers already see ID cards but often can't trust the card is still valid or authentic. Flashing 'Claim Verified' for issuer-attested IDs lets them confirm the government domain currently vouches for that particular card text. This protects against simple forgeries without forcing staff to learn complex verification portals.
+**Why OCR wins here:** The "Technology Gap." While high-end EU IDs have NFC chips, many state and provincial IDs in North America are still just "Smart Paper." OCR-to-hash turn these **Low-Tech Cards** into live digital credentials, providing "Chip-Level" trust to billions of people without the cost of a hardware upgrade.

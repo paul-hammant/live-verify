@@ -1,122 +1,108 @@
 ---
-title: "IATA/ASTA travel agent credentials and commission statements"
+title: "IATA and ASTA Travel Agent Credentials"
 category: "Travel & Hospitality"
 volume: "Small"
 retention: "Statement period + 7 years"
 slug: "iata-asta-credentials"
-tags: ["iata", "asta", "credentials", "travel", "hospitality"]
+tags: ["iata-accredited", "asta-member", "travel-agency-credentials", "commission-verification", "travel-industry-standards", "agency-audit", "iata-numeric-code"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 4px solid #002d62; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="background: #002d62; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+    <div style="font-weight: bold; font-size: 1.2em;">IATA ACCREDITED AGENCY</div>
+    <div style="width: 50px; height: 50px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #002d62; font-weight: bold; font-size: 0.8em;">IATA</div>
+  </div>
+
+  <div style="padding: 30px;">
+    <div style="text-align: center; border-bottom: 2px solid #002d62; padding-bottom: 10px; margin-bottom: 20px;">
+      <h3 style="margin: 0; color: #002d62;">CERTIFICATE OF ACCREDITATION</h3>
+      <div style="font-size: 1.2em; font-weight: bold; margin-top: 5px;">Numeric Code: <span data-bracket="start" data-for="iata">]</span>99-8-2288 7</div>
+    </div>
+
+    <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+      <p>This certifies that <strong>Apex Global Travel, LLC</strong> is a Passenger Sales Agent in good standing, authorized to issue tickets on behalf of IATA member airlines.</p>
+      
+      <div style="background: #f0f4f8; border: 1px solid #d1d9e6; padding: 15px; margin: 15px 0; border-radius: 4px;">
+        <strong>Agency Location:</strong> 123 Main St, Boston, MA 02108<br>
+        <strong>Status:</strong> ACTIVE / FULL ACCREDITATION<br>
+        <strong>Last Financial Review:</strong> March 01, 2026
+      </div>
+
+      <p><strong>Effective Date:</strong> January 01, 2026<br>
+      <strong>Annual Review Date:</strong> January 01, 2027</p>
+    </div>
+
+    <div style="margin-top: 25px; border: 1px solid #ccc; padding: 10px; font-size: 0.8em; color: #555; background: #fafafa; font-style: italic; text-align: center;">
+      This credential confirms the agency meets IATA's rigorous financial and professional standards.
+    </div>
+
+    <div data-verify-line="iata" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: IATA doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:iata.org/check-a-code/v/99822887 <span data-bracket="end" data-for="iata">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Agency name, IATA/ASTA number, commission amounts, supplier, period
+Agency name, IATA Numeric Code (8-digit), ASTA membership number, physical address, accreditation status (Full/GoLite/GoStandard), financial security status (e.g., Bonded/Verified Assets), authorized signatory, effective/expiration dates.
+
+**Document Types:**
+- **IATA Accreditation Certificate:** The high-trust "Wall License."
+- **Agency Status Form:** Proving current financial health to airlines.
+- **BSP (Billing & Settlement Plan) Summary:** Verified commission report.
+- **ASTA Membership Seal:** Proving professional ethical standards.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`iata.org`, `asta.org`) and current agency standing.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Active** — Agency is fully authorized to issue tickets and collect commissions.
+- **Suspended** — **ALERT:** Default on payments or safety violation found.
+- **Terminated** — Accreditation revoked; no ticketing authority.
+- **Expired** — Annual financial review or fee overdue.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Travel Agency Owner** benefits from verification.
 
-**Document Authenticity:** Verify received documents are genuine and properly issued.
+**Airline Negotiations:** Proving to a new airline partner (e.g., Emirates or Singapore Air) that their "IATA 8-digit Code" is verified and in good standing. This allows for immediate "Ticketing Authority" setup without waiting for weeks of manual paperwork.
 
-**Third-Party Presentation:** Provide verified documentation when required.
-
-**Compliance Requirements:** Meet regulatory or contractual documentation requirements.
-
-**Record Keeping:** Maintain verified records for future reference or audits.
-
-**Dispute Prevention:** Establish authenticity to prevent future challenges.
+**Customer Trust:** Posting the verified IATA/ASTA badge on the agency's website. High-end corporate clients won't book multi-million dollar travel contracts without seeing verified proof of professional standing.
 
 ## Third-Party Use
 
-**Insurance Companies**
+**Airlines / Carriers**
+**Agency Vetting:** Instantly verifying the "Financial Health" of an agency before allowing them into the Billing & Settlement Plan (BSP). Verification prevents "Ghost Agencies" from issuing millions in tickets and defaulting on payments.
 
-Underwriting and claims processing:
+**Travel Tech Platforms (Saber / Amadeus)**
+**GDS Onboarding:** Automatically verifying the IATA credentials of a new agency before granting access to the Global Distribution System (GDS).
 
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Customs and Border Authorities**
-
-International trade compliance:
-
-**Import Clearance:** Verify shipping documents for customs clearance.
-
-**Duty Assessment:** Validate commercial invoices and declarations.
-
-**Trade Compliance:** Confirm certificates of origin and trade documents.
-
-**Security Screening:** Verify cargo documentation for security.
-
-**Export Controls:** Validate export documentation and licenses.
-
-**Freight Forwarders and Carriers**
-
-Logistics and transportation:
-
-**Shipment Acceptance:** Verify documents before accepting cargo.
-
-**Carrier Handoffs:** Validate documentation at transfer points.
-
-**Liability Determination:** Reference verified documents for claims.
-
-**Route Planning:** Confirm documentation for transit requirements.
-
-**Delivery Confirmation:** Verify documents at final delivery.
+**Consumer Protection Agencies**
+**Fraud Detection:** Verifying that a "Discount Travel" website is actually a member of ASTA, protecting consumers from "Vapor-Vacation" scams.
 
 ## Verification Architecture
 
-**The IATA/ASTA travel agent credentials and commission statements Fraud Problem**
+**The "Ghost Agency" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Code Borrowing:** An un-accredited sub-agent using a larger agency's IATA number illegally. Verification of the *Address/Name Hash* prevents this.
+- **Status Falsification:** Editing a "Suspended" notice to read "Active" to trick an airline into extending credit.
+- **Fabricated Certificates:** Using a realistic-looking template to create a fake "IATA Accredited" certificate for a phishing website.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**International Air Transport Association (IATA):** (The primary global authority).
+**American Society of Travel Advisors (ASTA).**
+**National Travel Associations:** (e.g., ABTA in the UK).
 
-**Primary Issuers:** Organizations with direct authority to issue these documents.
+## Competition vs. IATA Check-a-Code
 
-**Licensed Professionals:** Professionals authorized to create and certify documents.
+| Feature | OCR-to-Hash | IATA Check-a-Code (Web) | Scanned PDF |
+| :--- | :--- | :--- | :--- |
+| **Trust Anchor** | **Domain-Bound.** Bound to IATA. | **Database.** Direct from source. | **Zero.** Easily forged. |
+| **Speed** | **Instant.** 5-second scan. | **Slow.** Requires typing 8 digits and solving CAPTCHAs. | **Instant.** |
+| **Integrity** | **Binds Details.** Protects the Financial Tier. | **Data-Only.** Doesn't verify the paper. | **Vulnerable.** |
+| **User Access** | **Universal.** Any airline/buyer can verify. | **Public.** But often limited to 1 query at a time. | **Universal.** |
 
-**Government Agencies:** Federal, state, or local agencies with jurisdiction.
-
-**Industry Bodies:** Trade associations and professional organizations.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Domain binding verifies IATA/ASTA. Commission verification. Fraud prevention (fake travel agencies). Agent credential verification.
+**Why OCR wins here:** The "Agency Handoff." Travel agents work via PDFs and paper certificates when talking to airlines and hotels. OCR-to-hash turns the **Physical Credential** into a live, high-speed digital dashboard, providing the same level of trust as a manual IATA database search in a fraction of the time.

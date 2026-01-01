@@ -1,122 +1,116 @@
 ---
-title: "Airline ancillary fee receipts (baggage, seat selection)"
+title: "Airline Ancillary Fee Receipts"
 category: "Travel & Hospitality"
 volume: "Very Large"
 retention: "Flight + 1-3 years"
 slug: "airline-ancillary-fee-receipts"
-tags: ["airline", "ancillary", "receipts", "travel", "hospitality"]
+tags: ["airline", "receipt", "baggage", "wifi", "seat", "expense", "ancillary"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', monospace; border: 1px dashed #999; background: #fff; padding: 20px;">
+  <div style="text-align: center; margin-bottom: 20px;">
+    <strong>DELTA AIR LINES</strong><br>
+    ELECTRONIC RECEIPT<br>
+    ---------------------------------
+  </div>
+
+  <div style="font-size: 0.9em; line-height: 1.4;">
+    <p><strong>Passenger:</strong> <span data-bracket="start" data-for="receipt">]</span>JOHN DOE<br>
+    <strong>Ticket #:</strong> 006-2345678901<br>
+    <strong>Date:</strong> 15MAR26</p>
+
+    <p><strong>Itinerary:</strong><br>
+    DL123 JFK-LHR</p>
+
+    <p><strong>Ancillary Services:</strong></p>
+    <table style="width: 100%; font-size: 1em;">
+      <tr>
+        <td>1st Checked Bag</td>
+        <td style="text-align: right;">$ 35.00</td>
+      </tr>
+      <tr>
+        <td>Comfort+ Upgrade</td>
+        <td style="text-align: right;">$ 79.00</td>
+      </tr>
+      <tr>
+        <td>In-Flight Wi-Fi</td>
+        <td style="text-align: right;">$ 10.00</td>
+      </tr>
+      <tr>
+        <td style="border-top: 1px dashed #000;"><strong>TOTAL PAID</strong></td>
+        <td style="text-align: right; border-top: 1px dashed #000;"><strong>$ 124.00</strong></td>
+      </tr>
+    </table>
+
+    <p><strong>Payment:</strong><br>
+    Visa ending in 1234<br>
+    Auth: 998877</p>
+  </div>
+
+  <div data-verify-line="receipt" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: Airline doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:delta.com/receipts/v/x9y8z7 <span data-bracket="end" data-for="receipt">]</span>
+  </div>
+</div>
+
 ## Data Verified
 
-Passenger name, flight, ancillary service, fee amount, payment confirmation
+Passenger name, ticket number, flight details, specific service types (baggage, seat, wifi, meal), fee amounts, total paid, payment method (last 4 digits).
+
+**Document Types:**
+- **Baggage Receipt:** Issued at check-in kiosk or drop desk.
+- **Seat Upgrade Receipt:** Issued at gate or online.
+- **In-Flight Purchase Receipt:** Emailed or printed for food/wifi.
+- **Lounge Access Receipt:** Day pass purchase.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`delta.com`) and the receipt details.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Valid** — Receipt matches airline records.
+- **Refunded** — The fee was refunded (e.g., if the bag was lost or wifi didn't work), invalidating the expense claim.
+- **Void** — Transaction cancelled.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Business Traveler** benefits from verification.
 
-**Document Authenticity:** Verify received documents are genuine and properly issued.
+**Expense Reimbursement:** Proving to their employer that the $79 "Comfort+" charge was for a seat upgrade (policy compliant) and not for an in-flight cocktail (policy violation).
 
-**Third-Party Presentation:** Provide verified documentation when required.
-
-**Compliance Requirements:** Meet regulatory or contractual documentation requirements.
-
-**Record Keeping:** Maintain verified records for future reference or audits.
-
-**Dispute Prevention:** Establish authenticity to prevent future challenges.
+**Tax Deductions:** Self-employed individuals keeping rock-solid audit trails for business travel expenses.
 
 ## Third-Party Use
 
-**Insurance Companies**
+**Corporate Expense Platforms (Concur, Expensify)**
+**Automatic Audit:** The platform can scan the receipt hash to confirm validity, flagging duplicates or fakes automatically. "Verified by Delta" adds a trust layer above standard OCR.
 
-Underwriting and claims processing:
+**Employers / Finance Teams**
+**Fraud Detection:** Employees sometimes use "receipt generator" websites to create fake baggage receipts for $50/trip. Verification stops this immediately because the fake receipt won't exist in the airline's database.
 
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Customs and Border Authorities**
-
-International trade compliance:
-
-**Import Clearance:** Verify shipping documents for customs clearance.
-
-**Duty Assessment:** Validate commercial invoices and declarations.
-
-**Trade Compliance:** Confirm certificates of origin and trade documents.
-
-**Security Screening:** Verify cargo documentation for security.
-
-**Export Controls:** Validate export documentation and licenses.
-
-**Freight Forwarders and Carriers**
-
-Logistics and transportation:
-
-**Shipment Acceptance:** Verify documents before accepting cargo.
-
-**Carrier Handoffs:** Validate documentation at transfer points.
-
-**Liability Determination:** Reference verified documents for claims.
-
-**Route Planning:** Confirm documentation for transit requirements.
-
-**Delivery Confirmation:** Verify documents at final delivery.
+**Tax Authorities (IRS/HMRC)**
+**Audit Compliance:** Verifying that "travel expenses" were actually incurred and not just fabricated for deductions.
 
 ## Verification Architecture
 
-**The Airline ancillary fee receipts (baggage, seat selection) Fraud Problem**
+**The "Fake Expense" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Receipt Generators:** Websites that generate realistic-looking receipts for any airline.
+- **Double Dipping:** Submitting the same receipt to two different employers (e.g., for a consultant working two jobs).
+- **Refund Fraud:** Buying a refundable ticket/service, printing the receipt, claiming the expense, then cancelling/refunding the service. Verification reveals the "Refunded" status.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Airlines:** (Delta, AA, United, BA, etc.)
+**Service Providers:** (Gogo Inflight, Clear, LoungeBuddy)
 
-**Primary Issuers:** Organizations with direct authority to issue these documents.
+## Competition vs. Corporate Cards
 
-**Licensed Professionals:** Professionals authorized to create and certify documents.
+| Feature | OCR-to-Hash | Corporate Card Feed |
+| :--- | :--- | :--- |
+| **Granularity** | **High.** Shows exactly *what* was bought (Wifi vs Alcohol). | **Low.** Often just shows "DELTA AIR LINES $15.00". |
+| **Coverage** | **Universal.** Works for personal cards used for business. | **Limited.** Only works if the employee uses the mandatory corporate card. |
+| **Immediacy** | **Instant.** Scan receipt immediately. | **Laggy.** Card feeds can take days to sync. |
+| **Cash/Kiosk** | **Yes.** Covers kiosk prints. | **No.** Misses cash or non-integrated payments. |
 
-**Government Agencies:** Federal, state, or local agencies with jurisdiction.
-
-**Industry Bodies:** Trade associations and professional organizations.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Prevents altered ancillary fee receipts. Domain binding verifies airline. Expense claim verification. Prevents fee dispute fraud. Baggage fee, seat fee, wifi fee documentation.
+**Why OCR wins here:** While Level 3 credit card data tries to provide line-item detail, it is notoriously unreliable for travel ancillary fees. A verified receipt provides the definitive "Itemized" proof required by strict expense policies.

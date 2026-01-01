@@ -1,129 +1,107 @@
 ---
-title: "Auto insurance ID cards (proof of insurance)"
+title: "Auto Insurance ID Cards"
 category: "Personal Lines Insurance"
 volume: "Large"
 retention: "6-12 months (card validity)"
 slug: "auto-insurance-id-cards"
-tags: ["auto", "insurance", "cards", "personal", "lines"]
+tags: ["auto", "insurance", "card", "proof-of-insurance", "real-id", "compliance"]
 ---
+
+<div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 1px solid #000; background: #fff; padding: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
+  <div style="background: #000; color: #fff; padding: 10px; display: flex; justify-content: space-between; align-items: center;">
+    <div style="font-weight: bold;">GEICO</div>
+    <div style="font-size: 0.8em;">AUTO INSURANCE ID CARD</div>
+  </div>
+
+  <div style="padding: 15px;">
+    <div style="display: flex; justify-content: space-between; font-size: 0.8em; margin-bottom: 10px;">
+      <div>
+        <strong>Policy Number:</strong><br>
+        9988-77-66
+      </div>
+      <div style="text-align: right;">
+        <strong>NAIC Code:</strong><br>
+        22063
+      </div>
+    </div>
+
+    <div style="font-size: 0.9em; line-height: 1.4; color: #333;">
+      <p><strong>Insured:</strong> <span data-bracket="start" data-for="ins">]</span>RICHARD "DICK" GRAYSON<br>
+      <strong>Vehicle:</strong> 2025 Gotham Motors Bat-Sedan<br>
+      <strong>VIN:</strong> 1G6AX57L9RJ123456</p>
+
+      <p><strong>Effective Date:</strong> JAN 01, 2026<br>
+      <strong>Expiration Date:</strong> JUL 01, 2026</p>
+    </div>
+
+    <div style="font-size: 0.7em; color: #777; margin-top: 10px; border-top: 1px solid #eee; padding-top: 5px;">
+      This card is for information only. Refer to your policy for actual coverage.
+    </div>
+
+    <div data-verify-line="ins" style="border-top: 1px dashed #999; margin-top: 15px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.7em; color: #555; text-align: center;"
+      title="Demo only: Geico doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:geico.com/v/99887766 <span data-bracket="end" data-for="ins">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Policyholder name, vehicle VIN, policy number, coverage dates, insurer name
+Insured name, policy number, NAIC code, VIN (Full), vehicle year/make/model, effective date, expiration date, issuing carrier.
 
-**Policy Forms:** Different policy forms and endorsements may apply.
+**Document Types:**
+- **Standard ID Card:** Paper or digital wallet.
+- **Binder:** Temporary 30-day proof for new purchases.
+- **SR-22 / FR-44:** High-risk financial responsibility filings.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`geico.com`, `statefarm.com`) and real-time coverage status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-- **Cancelled** - Policy cancelled before expiration
-- **Non-Renewed** - Policy expired and not renewed
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Active** — Policy is currently in force.
+- **Cancelled** — Policy terminated (e.g., for non-payment) *even if the card isn't expired*.
+- **Pending Renewal** — Policy about to expire but payment found.
+- **Lapsed** — No coverage.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Policyholder** benefits from verification.
 
-**Proof of Coverage:** Verify coverage is active when needed for compliance or access.
+**Roadside Verification:** When pulled over, showing a "Verified Active" status to a police officer prevents the car from being impounded if the officer suspects the paper card is fake.
 
-**Claims Support:** Confirm policy details when filing claims.
-
-**Coverage Confirmation:** Verify coverage terms match expectations after purchase.
-
-**Third-Party Presentation:** Provide verified proof to landlords, lenders, or employers.
-
-**Renewal Verification:** Confirm renewal was processed and coverage continues.
+**Registration / DMV:** Providing verified proof of insurance to the DMV during tag renewal, bypassing the need for manual database checks which often fail due to VIN typos.
 
 ## Third-Party Use
 
-**Regulators and Oversight Bodies**
+**Police Officers**
+**Traffic Stops:** Instantly confirming that the policy wasn't cancelled yesterday. Standard paper cards are easily forged or kept after cancellation. Verification provides the "Live Status" necessary for public safety.
 
-Regulatory compliance and oversight:
+**Rental Car Agencies**
+**Liability Transfer:** Verifying that the customer's personal policy actually covers rental cars (Collision Damage Waiver bypass).
 
-**Systematic Hash Receipt:** Receive hashes in bulk for regulatory oversight.
-
-**Audit Verification:** Verify documents during routine or targeted audits.
-
-**Compliance Monitoring:** Monitor issuer compliance with documentation requirements.
-
-**Investigation Support:** Verify documents during fraud or compliance investigations.
-
-**Consumer Protection:** Verify consumer-facing documents for protection enforcement.
-
-**Lenders and Financial Institutions**
-
-Credit underwriting and risk assessment:
-
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
+**Car Dealerships**
+**Off-Lot Authorization:** Verifying insurance before letting a buyer drive a new $50,000 car off the lot.
 
 ## Verification Architecture
 
-**The Auto insurance ID cards (proof of insurance) Fraud Problem**
+**The "Ghost Policy" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Coverage Inflation:** Inflating coverage limits or adding non-existent coverage
-- **Backdating:** Creating policies with false effective dates
-- **Ghost Policies:** Fabricated policies from non-existent insurers
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Buy and Cancel:** The most common fraud. A driver buys a policy, prints the card, then cancels the policy for a full refund. They carry the "valid" paper card for 6 months to fool police.
+- **VIN Tampering:** Changing the VIN on an old card to match a new, uninsured car.
+- **Identity Swapping:** Editing the name on a friend's insurance card.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Insurance Carriers:** (Geico, Progressive, State Farm, etc.)
+**State DMVs:** (As the oversight body).
 
-**Banks and Credit Unions:** Depository institutions for account documents.
+## Competition vs. DMV Databases (ALIR/IIVS)
 
-**Investment Firms:** Brokerage and investment management firms.
+| Feature | OCR-to-Hash | DMV Central DB (IIVS) | Paper Card |
+| :--- | :--- | :--- | :--- |
+| **Freshness** | **Real-time.** Queries the insurer directly. | **Laggy.** Often 24-72 hours behind. | **Static.** |
+| **Availability** | **Universal.** Works across state lines. | **Siloed.** CA police can't easily check NY DMV database. | **Manual.** |
+| **Accessibility** | **Open.** Dealers and Rental agents can verify. | **Restricted.** Only Police/DMV have access. | **Zero.** |
 
-**Insurance Companies:** Insurers for policy and claims documents.
-
-**Accounting Firms:** CPAs and audit firms for financial statements.
-
-**System Integration**
-
-Insurance verification integrates with industry systems:
-
-**Policy Administration Systems:** Core insurance systems generate verification hashes at policy issuance.
-
-**ACORD Standards:** Insurance industry data standards could include verification fields.
-
-**State Insurance Databases:** Regulators maintain databases for systematic hash receipt.
-
-**Agent Portals:** Insurance agents access verification for client service.
-
-## Rationale
-
-Prevents fake insurance cards at traffic stops, accidents, and vehicle registration. Domain binding verifies insurer. Real-time verification by police and DMV. Short card lifetime (6 months typical). Uninsured motorist fraud costs $14 billion annually in USA. Critical for law enforcement where insurance card fraud enables uninsured driving.
+**Why OCR wins here:** Portability. If a New York driver is pulled over in Florida, the Florida officer might not have access to the NY DMV's internal database. But they can *always* verify `geico.com` via the web. OCR-to-hash turns the ID card into a cross-border, real-time "Coverage Token."

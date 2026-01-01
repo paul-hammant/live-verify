@@ -1,125 +1,111 @@
 ---
-title: "KYC identity verification documents"
+title: "KYC Identity Verification Documents"
 category: "Financial Compliance"
 volume: "Medium"
 retention: "5-10 years post-relationship"
 slug: "kyc-identity-verification"
-tags: ["identity", "verification", "banking", "financial", "services"]
+tags: ["kyc", "aml", "identity-verification", "bank-onboarding", "customer-due-diligence", "financial-crime", "digital-id"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1); overflow: hidden;">
+  <div style="background: #002d62; color: #fff; padding: 20px; display: flex; align-items: center; justify-content: space-between;">
+    <div>
+      <div style="font-weight: bold; font-size: 1.1em;">REVOLUT BANK</div>
+      <div style="font-size: 0.8em; opacity: 0.8;">Customer Onboarding & Identity Vetting</div>
+    </div>
+    <div style="font-size: 1.5em;">🏦</div>
+  </div>
+
+  <div style="padding: 25px; display: flex;">
+    <div style="width: 120px; margin-right: 20px;">
+      <div style="width: 120px; height: 150px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #777;">[PHOTO]</div>
+    </div>
+    <div style="flex-grow: 1;">
+      <h3 style="margin: 0; color: #002d62;">VERIFIED CUSTOMER PROFILE</h3>
+      <div style="font-size: 1.1em; font-weight: bold; margin: 10px 0;"><span data-bracket="start" data-for="kyc-id">]</span>DOE, JOHN JACOB</div>
+      
+      <div style="font-size: 0.9em; color: #333; line-height: 1.5;">
+        <strong>Document:</strong> US Passport #*******1234<br>
+        <strong>DOB:</strong> May 15, 1985<br>
+        <strong>PEP Status:</strong> CLEAR (Non-Political)<br>
+        <strong>Sanctions:</strong> CLEAR (OFAC/HMT)
+      </div>
+    </div>
+  </div>
+
+  <div style="padding: 0 25px 25px 25px;">
+    <div style="background: #f9f9f9; border: 1px solid #eee; padding: 10px; font-size: 0.85em; color: #555;">
+      <strong>Bank Attestation:</strong> This identity has been verified against government databases and biometric liveness checks. Profile ID: REV-99228877.
+    </div>
+    <div data-verify-line="kyc-id" style="border-top: 1px dashed #999; margin-top: 15px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+      title="Demo only: Revolut doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:revolut.com/compliance/v/99228877 <span data-bracket="end" data-for="kyc-id">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Customer name, date of birth, address, ID numbers, nationality, PEP (Politically Exposed Person) status
+Full name, date of birth, residential address, primary ID number (Passport/SSN), nationality, PEP (Politically Exposed Person) status, adverse media flag, sanctions list status (OFAC/EU), biometric liveness confirmation, date of onboarding.
+
+**Document Types:**
+- **KYC Passport/ID Extract:** Summary of the primary ID check.
+- **Proof of Address Summary:** (Linked hash) for utility/bill verification.
+- **Selfie Liveness Certificate:** Proving the user was physically present.
+- **W-8BEN / W-9 Form:** (Linked hash) for tax identity.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`revolut.com`, `chase.com`, `coinbase.com`) and current compliance standing.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Verified** — Identity is current and background checks are clear.
+- **Restricted** — **ALERT:** Identity verified but account limited due to risk.
+- **Suspended** — Potential fraud or expired ID; re-verification required.
+- **Blacklisted** — Associated with known criminal activity.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Bank Customer** benefits from verification.
 
-**Record Verification:** Confirm financial documents match expectations.
+**Fast Onboarding:** Proving to a second financial institution (e.g., a mortgage lender or a crypto exchange) that they have already passed a rigorous "Bank-Grade" KYC check at a tier-1 institution. This prevents the "2-week wait" for redundant document processing.
 
-**Tax Preparation:** Provide verified documentation for tax filing.
-
-**Audit Support:** Maintain verified records for potential audits.
-
-**Dispute Resolution:** Use verified documents to resolve discrepancies.
-
-**Loan Applications:** Present verified financial documentation to lenders.
+**Identity Protection:** Proving their verified status to a third party (like a high-end landlord) without handing over a full copy of their private Passport or SSN card. The verified hash acts as a "Privacy Shield."
 
 ## Third-Party Use
 
-**Regulators and Oversight Bodies**
+**Mortgage Lenders / Neobanks**
+**Reciprocal KYC:** Instantly verifying the identity claims of an applicant by scanning the hash from their primary bank. This allows for "One-Click Onboarding" across the financial ecosystem.
 
-Regulatory compliance and oversight:
+**FinCEN / Regulators**
+**Compliance Audit:** During a bank examination, federal auditors can scan random customer files. "Verified by Revolut" ensures the bank isn't "Ghosting" their KYC duties by maintaining fake or un-vetted accounts.
 
-**Systematic Hash Receipt:** Receive hashes in bulk for regulatory oversight.
-
-**Audit Verification:** Verify documents during routine or targeted audits.
-
-**Compliance Monitoring:** Monitor issuer compliance with documentation requirements.
-
-**Investigation Support:** Verify documents during fraud or compliance investigations.
-
-**Consumer Protection:** Verify consumer-facing documents for protection enforcement.
-
-**Lenders and Financial Institutions**
-
-Credit underwriting and risk assessment:
-
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
+**Crypto Exchanges**
+**Fiat Gateway:** Verifying the source identity of a user before allowing large-scale crypto-to-fiat transfers.
 
 ## Verification Architecture
 
-**The KYC identity verification documents Fraud Problem**
+**The "Synthetic Identity" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Income Inflation:** Inflating income or assets on financial documents
-- **Photoshop Fraud:** Digital manipulation of statements and documents
-- **Shell Company Documents:** Documents from fake or shell entities
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Identity Fabrication:** Using a mix of real and fake data to create a "Synthetic Person" who doesn't exist. Verification against the bank domain prevents this.
+- **Photo Substitution:** Using a stolen ID number but editing the photo on the PDF to match the fraudster.
+- **Revocation Hiding:** A user whose account was closed for money laundering yesterday using their old "Verified" paper summary to open a new account today.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Retail Banks.**
+**Digital Wallets / Neobanks.**
+**KYC Service Providers:** (e.g., Onfido, Jumio, Persona - hosting the hashes).
 
-**Banks and Credit Unions:** Depository institutions for account documents.
+**Privacy Salt:** ABSOLUTELY CRITICAL. Identity data is the ultimate target for hackers. The hash MUST be salted to prevent "Brute Force" searching of the entire bank population.
 
-**Investment Firms:** Brokerage and investment management firms.
+## Competition vs. ID Verification APIs (Onfido)
 
-**Insurance Companies:** Insurers for policy and claims documents.
+| Feature | OCR-to-Hash | KYC API (Jumio/Onfido) | Scanned PDF ID |
+| :--- | :--- | :--- | :--- |
+| **User Privacy** | **High.** User shares only the *Vetted Profile*. | **Low.** Requires uploading raw ID photos to the cloud. | **High.** |
+| **Trust Anchor** | **Domain-Bound.** Bound to the Bank. | **System-Bound.** Trust the vendor. | **Zero.** Easily forged. |
+| **Interoperability** | **High.** Works across all banks. | **Low.** Every bank uses a different API vendor. | **Universal.** |
+| **Speed** | **Instant.** 5-second scan. | **Slow.** Requires 30-120 seconds for AI processing. | **N/A.** |
 
-**Accounting Firms:** CPAs and audit firms for financial statements.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Prevents fake identity documents for account opening. Domain binding verifies document issuer (government, notary). Bank scans government ID and verifies cryptographically. Tamper-evident verification. Regulatory compliance (Bank Secrecy Act, Customer Due Diligence rules). Privacy-preserving without cloud upload of sensitive documents. Critical for AML/KYC where identity fraud enables money laundering.
+**Why OCR wins here:** The "Privacy Paradox." Banks don't want to store raw ID photos forever because of liability. Users don't want to upload them to 10 different sites. OCR-to-hash turns the **Vetted Result** into a portable, cryptographically trusted asset that carries the bank's "Authority" without the bank's "Data Liability."

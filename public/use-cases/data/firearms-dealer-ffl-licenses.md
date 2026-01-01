@@ -1,157 +1,115 @@
 ---
-title: "Firearms dealer (FFL) and gun shop licenses"
+title: "Firearms Dealer (FFL) Licenses"
 category: "Professional & Occupational Licenses"
 volume: "Small"
 retention: "3 years (license term)"
 slug: "firearms-dealer-ffl-licenses"
-tags: ["firearms", "dealer", "licenses", "professional", "occupational"]
+tags: ["ffl", "atf", "gun-shop-license", "firearms-dealer", "second-amendment", "public-safety", "compliance", "federal-firearms-license"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 3px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+  <div style="background: #000; color: #fff; padding: 15px; text-align: center; display: flex; align-items: center; justify-content: center;">
+    <div style="font-size: 1.5em; margin-right: 15px;">⚖️</div>
+    <div>
+      <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">FEDERAL FIREARMS LICENSE</h2>
+      <div style="font-size: 0.8em; opacity: 0.8;">U.S. DEPT OF JUSTICE • BUREAU OF ALCOHOL, TOBACCO, FIREARMS AND EXPLOSIVES</div>
+    </div>
+  </div>
+
+  <div style="padding: 25px;">
+    <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
+      <h3 style="margin: 0; color: #333;">LICENSE NUMBER: <span data-bracket="start" data-for="ffl">]</span>9-99-887-01-2C-99228</h3>
+    </div>
+
+    <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+      <p><strong>Licensee Name:</strong> MILLER ARMS & SPORTING GOODS, LLC<br>
+      <strong>Premises Address:</strong> 123 Main St, Springfield, IL 62701</p>
+
+      <div style="background: #f5f5f5; border: 1px solid #ddd; padding: 10px; margin: 15px 0;">
+        <p><strong>Type of License:</strong> 01 - DEALER IN FIREARMS OTHER THAN DESTRUCTIVE DEVICES</p>
+        <p><strong>Expiration Date:</strong> March 15, 2027</p>
+      </div>
+
+      <p style="font-size: 0.8em; color: #555;">The licensee is authorized to transport, ship, and receive firearms in interstate or foreign commerce during the period specified above.</p>
+    </div>
+
+    <div style="margin-top: 30px; display: flex; justify-content: space-between; align-items: flex-end;">
+      <div>
+        <div style="border-top: 1px solid #000; width: 200px; padding-top: 5px; font-style: italic;">Special Agent in Charge</div>
+      </div>
+      <div style="text-align: right;">
+        <div style="width: 80px; height: 80px; border: 2px solid #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; text-align: center;">OFFICIAL<br>ATF<br>SEAL</div>
+      </div>
+    </div>
+
+    <div data-verify-line="ffl" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: ATF doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:atf.gov/fflezcheck/v/99988701 <span data-bracket="end" data-for="ffl">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Licensee name, business name, address, FFL number, license type
+Licensee name, trade name (DBA), premises address, mailing address, FFL number (full 15-digit), license type (01-11), expiration date, responsible person ID, issuing ATF region.
 
-**Permit Types:** Various permit subtypes may exist depending on jurisdiction and specific use.
+**Document Types:**
+- **Federal Firearms License (FFL):** The primary paper license for the shop wall.
+- **FFL Extract:** For shipping to other dealers.
+- **SOT Certificate:** Special Occupational Taxpayer (for silencers/machine guns).
+- **ATF Inspection Report:** (Linked hash) proving a successful compliance audit.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`atf.gov`) and current regulatory standing.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-- **Suspended** - Permit temporarily suspended
-- **Pending** - Permit application pending approval
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Active** — License is valid; dealer is authorized to trade.
+- **Suspended** — Temporary restriction (e.g., due to record-keeping errors).
+- **Revoked** — Permanently barred from firearms trade (High-risk).
+- **Expired** — Renewal application not received.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **FFL Holder (Gun Shop Owner)** benefits from verification.
 
-**Legitimacy Confirmation:** After obtaining permit, verify it was properly issued and recorded.
+**Interstate Shipping:** Proving to a different dealer in another state that their FFL is "Verified Active." This is a mandatory requirement before shipping any firearm across state lines. A verified hash replaces the "Manual FFL EzCheck" website lookup, reducing friction in the $30B firearms market.
 
-**Compliance Display:** Maintain verified permit for posting requirements.
-
-**Scope Verification:** Confirm permitted activities match intended use.
-
-**Expiration Tracking:** Monitor permit status to avoid lapses.
-
-**Record Keeping:** Maintain verified documentation for audits and compliance.
+**Lender / Banking:** Proving to a high-risk payment processor or bank that the business is a verified, federally licensed entity, preventing account freezes.
 
 ## Third-Party Use
 
-**Employers**
+**Law Enforcement (ATF / State Police)**
+**Audit Efficiency:** During a surprise ATF inspection, the agent can scan the wall license. "Verified by ATF.gov" ensures the shop isn't using a "Homemade License" to hide an illegal operation.
 
-Hiring and compliance verification:
+**Private Gun Sellers (Private Citizens)**
+**Person-to-Person Transfers:** Before shipping a rifle to a dealer for a buyer, a citizen can verify the dealer's FFL hash. This ensures they aren't mailing a weapon to a "Fake Dealer" or a felon with a color printer.
 
-**Pre-Employment Screening:** Verify credentials during hiring process.
-
-**I-9 Compliance:** Verify work authorization and identity documents.
-
-**Credential Verification:** Confirm professional licenses and certifications.
-
-**Health Requirements:** Verify health-related documentation for workplace safety.
-
-**Background Checks:** Integrate verification into background check processes.
-
-**Insurance Companies**
-
-Underwriting and claims processing:
-
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Government Agencies**
-
-Compliance enforcement and administration:
-
-**Inspection Verification:** Field agents verify permits and licenses at sites.
-
-**Enforcement Actions:** Confirm documentation before enforcement.
-
-**Benefit Eligibility:** Verify supporting documents for benefits administration.
-
-**Compliance Audits:** Audit documentation for regulatory compliance.
-
-**Interagency Coordination:** Share verified documents across agencies.
-
-**Real Estate Professionals**
-
-Property transactions and due diligence:
-
-**Purchase Due Diligence:** Verify property documents during transactions.
-
-**Listing Preparation:** Confirm permits and documentation for listings.
-
-**Disclosure Compliance:** Validate required disclosures and permits.
-
-**Title Research:** Verify property documents for title clearance.
-
-**Appraisal Support:** Confirm documented improvements and permits.
-
-**Professional Licensing Boards**
-
-Licensing and credentialing:
-
-**License Applications:** Verify educational and training credentials.
-
-**Continuing Education:** Validate CE credits for license renewal.
-
-**Reciprocity Requests:** Verify out-of-state licenses for reciprocal licensing.
-
-**Disciplinary Proceedings:** Confirm credential claims in investigations.
-
-**Specialization Certification:** Verify prerequisites for specialty certification.
+**Shipping Carriers (FedEx / UPS)**
+**Authorization:** Verifying the FFL status of a shipper before accepting hazardous/regulated firearms cargo for transport.
 
 ## Verification Architecture
 
-**The Firearms dealer (FFL) and gun shop licenses Fraud Problem**
+**The "Phantom Dealer" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Permit Sharing:** Using one property's permit for work at another location
-- **Scope Expansion:** Expanding permitted activities beyond authorization
-- **Contractor Fraud:** Claiming permits that were never obtained
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Ghost Licenses:** Felons creating fake FFL documents to trick online sellers into shipping guns directly to their homes.
+- **Expired Display:** A dealer whose license was revoked for "Straw Purchasing" continuing to use their unexpired paper license to trade illegally.
+- **Address Swapping:** Taking a valid FFL for a secure shop and using it to run an illegal warehouse at a different, un-vetted location.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Bureau of Alcohol, Tobacco, Firearms and Explosives (ATF):** The sole federal issuer.
+**State Departments of Public Safety:** (In states with secondary licensing).
 
-**Municipal Authorities:** City and county agencies issuing local permits.
+**Privacy Salt:** Highly critical. FFL data is protected by various federal laws (e.g., Tiahrt Amendment). The hash must be salted to prevent "Mass Mapping" of all gun shops in a state by bad actors.
 
-**State Agencies:** State-level licensing and permitting bodies.
+## Competition vs. ATF FFL EzCheck
 
-**Federal Regulators:** Federal agencies for specialized permits.
+| Feature | OCR-to-Hash | FFL EzCheck (Web) | Paper License |
+| :--- | :--- | :--- | :--- |
+| **Trust Anchor** | **Domain-Bound.** Bound to `atf.gov`. | **Database.** Direct from source. | **Zero.** Easily forged. |
+| **Speed** | **Instant.** 5-second scan. | **Slow.** Requires typing 15 digits into a web form. | **Instant.** |
+| **Integrity** | **Binds Photo/Signer.** Protects every word. | **Data-Only.** Doesn't verify the paper. | **Vulnerable.** |
+| **Mobile Use** | **High.** Built for phones. | **Low.** Web form is hard to use on mobile. | **High.** |
 
-**Professional Boards:** State licensing boards for professional credentials.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Prevents fake FFL licenses. Domain binding verifies ATF (atf.gov). High-stakes firearms regulation. Prevents illegal firearms sales. ATF inspection verification. Criminal penalties for violations.
+**Why OCR wins here:** The "Shipping Counter" reality. Gun owners and dealers are often at shipping docks or gun shows where they need to verify credentials *now*. OCR-to-hash turns the **Physical License** into a live, high-speed digital credential, bringing federal-level security to the point of transfer.

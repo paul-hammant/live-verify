@@ -1,129 +1,122 @@
 ---
-title: "Cyber insurance policies and breach response documentation"
+title: "Cyber Insurance Policies and Breach Response"
 category: "Commercial Lines Insurance"
 volume: "Small"
 retention: "Policy term + 10 years (claims)"
 slug: "cyber-insurance-policies"
-tags: ["cyber", "insurance", "policies", "commercial", "lines"]
+tags: ["cyber-insurance", "breach-response", "forensic-investigation", "privacy-liability", "incident-response", "risk-management", "security-compliance"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+  <div style="background: #000; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+    <div>
+      <div style="font-weight: bold; font-size: 1.2em;">AIG SPECIALTY INSURANCE</div>
+      <div style="font-size: 0.8em; opacity: 0.8;">CyberEdge&reg; Policy Declarations</div>
+    </div>
+    <div style="text-align: right;">
+      <div style="font-size: 0.8em;">Policy #: CE-99228877-26</div>
+    </div>
+  </div>
+
+  <div style="padding: 30px;">
+    <h2 style="text-align: center; color: #000; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Certificate of Cyber Coverage</h2>
+
+    <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
+      <p><strong>Named Insured:</strong> <span data-bracket="start" data-for="cyber-pol">]</span>Waystar Royco Digital, LLC<br>
+      <strong>Industry:</strong> Media & Technology Services</p>
+
+      <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: #f5f5f5; border-bottom: 2px solid #000;">
+          <th style="text-align: left; padding: 8px;">Coverage Module</th>
+          <th style="text-align: right; padding: 8px;">Limit per Event</th>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border-bottom: 1px solid #eee;">Privacy & Network Security Liability</td>
+          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 10,000,000</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border-bottom: 1px solid #eee;">Incident Response & Forensics</td>
+          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 2,000,000</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border-bottom: 1px solid #eee;">Cyber Extortion (Ransomware)</td>
+          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 5,000,000</td>
+        </tr>
+      </table>
+
+      <p style="margin-top: 20px;"><strong>Policy Period:</strong> March 01, 2026 to March 01, 2027</p>
+    </div>
+
+    <div style="margin-top: 30px; border: 1px solid #ccc; padding: 10px; font-size: 0.8em; color: #555; background: #fafafa;">
+      <strong>Security Attestation:</strong> Insured warrants that Multi-Factor Authentication (MFA) is active on all remote access points.
+    </div>
+
+    <div data-verify-line="cyber-pol" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: AIG doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:aig.com/cyber/v/CE99228877 <span data-bracket="end" data-for="cyber-pol">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Insured business, coverage limits, breach response costs, forensic investigation
+Named insured, industry class code, specific coverage module limits (Liability, Response, Extortion), business interruption daily limit, effective/expiration dates, security warrants (e.g., "MFA active"), issuing carrier.
 
-**Policy Forms:** Different policy forms and endorsements may apply.
+**Document Types:**
+- **Policy Declarations:** The 1-page summary required by partners.
+- **Forensic Case Report:** Summary of a verified breach investigation.
+- **Remediation Certification:** Proving that security gaps were fixed post-breach.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`aetna.com`, `chubb.com`, `aig.com`) and current policy status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-- **Cancelled** - Policy cancelled before expiration
-- **Non-Renewed** - Policy expired and not renewed
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Active** — Premium paid; coverage in force.
+- **Restricted** — Coverage limited due to safety/security non-compliance.
+- **Cancelled** — Policy terminated (e.g., for misrepresentation of security posture).
+- **Claim Active** — Incident response currently being funded.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Insured Business** benefits from verification.
 
-**Proof of Coverage:** Verify coverage is active when needed for compliance or access.
+**Contractual Compliance:** Proving to a large enterprise client (e.g., Apple or Walmart) that the business has the mandatory $10M cyber liability policy required to be an authorized vendor. A verified certificate prevents the client from rejecting the vendor due to "Paperwork Uncertainty."
 
-**Claims Support:** Confirm policy details when filing claims.
-
-**Coverage Confirmation:** Verify coverage terms match expectations after purchase.
-
-**Third-Party Presentation:** Provide verified proof to landlords, lenders, or employers.
-
-**Renewal Verification:** Confirm renewal was processed and coverage continues.
+**M&A Due Diligence:** Providing verified proof of cyber insurance history to a buyer, ensuring there are no undisclosed breaches or pending claims that could devalue the acquisition.
 
 ## Third-Party Use
 
-**Regulators and Oversight Bodies**
+**Enterprise Procurement Teams**
+**Vendor Vetting:** Procurement officers scan the COI/Dec Page of every vendor who has access to their data. "Verified by AIG" ensures the vendor isn't using a "Photoshopped" high-limit policy to hide their actual low-limit coverage.
 
-Regulatory compliance and oversight:
+**Banks / Lenders**
+**Loan Compliance:** Verifying that a tech-heavy borrower has adequate cyber insurance to survive a ransomware attack, protecting the bank's repayment source.
 
-**Systematic Hash Receipt:** Receive hashes in bulk for regulatory oversight.
-
-**Audit Verification:** Verify documents during routine or targeted audits.
-
-**Compliance Monitoring:** Monitor issuer compliance with documentation requirements.
-
-**Investigation Support:** Verify documents during fraud or compliance investigations.
-
-**Consumer Protection:** Verify consumer-facing documents for protection enforcement.
-
-**Lenders and Financial Institutions**
-
-Credit underwriting and risk assessment:
-
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
+**Regulators (State Insurance Depts)**
+**Market Oversight:** Ensuring carriers are accurately reporting their "Cyber Exposure" totals by verifying the hashes of issued policies.
 
 ## Verification Architecture
 
-**The Cyber insurance policies and breach response documentation Fraud Problem**
+**The "MFA Misrepresentation" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Coverage Inflation:** Inflating coverage limits or adding non-existent coverage
-- **Backdating:** Creating policies with false effective dates
-- **Ghost Policies:** Fabricated policies from non-existent insurers
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Warrant Falsification:** A company editing their policy PDF to hide the fact that the insurer *excluded* coverage because the company didn't have MFA.
+- **Ghost Policies:** Buying a policy, printing the papers, then cancelling it immediately to bypass vendor security requirements.
+- **Limit Inflation:** Changing a $1M "Incident Response" limit to $10M to win a prestigious tech contract.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Global Cyber Carriers:** (AIG, Beazley, Chubb, Travelers).
+**Cyber Insurtechs:** (Coalition, At-Bay, Corvus).
+**Managed Security Service Providers (MSSPs):** (Who often co-sign the security warrants).
 
-**Banks and Credit Unions:** Depository institutions for account documents.
+## Competition vs. Automated Security Scans (Bitsight)
 
-**Investment Firms:** Brokerage and investment management firms.
+| Feature | OCR-to-Hash | Security Rating (Bitsight/SecurityScorecard) | Scanned PDF |
+| :--- | :--- | :--- | :--- |
+| **Integrity** | **Binds the Financials.** Proves the *Money* exists. | **Binds the Tech.** Measures the *Security Score*. | **Zero.** Easily forged. |
+| **Trust Anchor** | **Domain-Bound.** Bound to the Insurer. | **Platform-Bound.** Trust the scanner algorithm. | **Visual.** |
+| **Context** | **Legal.** Shows the actual contract limits. | **Predictive.** Guesses the risk from the outside. | **Full.** |
+| **Freshness** | **Real-time.** Queries the carrier's live file. | **Weekly/Monthly.** Scans take time to refresh. | **Static.** |
 
-**Insurance Companies:** Insurers for policy and claims documents.
-
-**Accounting Firms:** CPAs and audit firms for financial statements.
-
-**System Integration**
-
-Insurance verification integrates with industry systems:
-
-**Policy Administration Systems:** Core insurance systems generate verification hashes at policy issuance.
-
-**ACORD Standards:** Insurance industry data standards could include verification fields.
-
-**State Insurance Databases:** Regulators maintain databases for systematic hash receipt.
-
-**Agent Portals:** Insurance agents access verification for client service.
-
-## Rationale
-
-Prevents fake cyber insurance (post-breach fraud). Domain binding verifies insurer. High-value claims ($500K-$10M+ typical). Breach notification requirements. Forensic investigation verification. Multi-page: Forensic reports multi-page.
+**Why OCR wins here:** The "Contractual Reality." A Bitsight score says a company *looks* safe. A verified insurance policy says the company *is backed by $10M in cash* if they aren't safe. OCR-to-hash turns the **Financial Contract** into a verifiable digital artifact that is much more important for legal liability than a technical "Security Score."

@@ -1,150 +1,111 @@
 ---
-title: "Medical device implant cards (pacemakers, stents)"
+title: "Medical Device Implant Cards"
 category: "Healthcare & Medical Records"
 volume: "Small"
 retention: "Lifetime (device tracking)"
 slug: "medical-device-implant-cards"
-tags: ["medical", "device", "implant", "cards", "healthcare", "records"]
+tags: ["medical-implant", "pacemaker-card", "joint-replacement", "udi-tracking", "patient-safety", "surgical-history", "healthcare-logistics"]
 ---
+
+<div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+  <div style="background: #004a99; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
+    <div style="font-weight: bold; font-size: 1.1em;">MEDTRONIC</div>
+    <div style="font-size: 0.8em; font-weight: bold; text-transform: uppercase;">Medical Device ID Card</div>
+  </div>
+
+  <div style="padding: 20px;">
+    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px;">
+      <div style="font-size: 0.9em; line-height: 1.4; color: #333;">
+        <strong>Patient Name:</strong><br>
+        <span data-bracket="start" data-for="implant">]</span><strong>JOHN JACOB DOE</strong><br>
+        <strong>DOB:</strong> 05/15/1985
+      </div>
+      <div style="text-align: center; border: 2px solid #004a99; padding: 5px 10px; border-radius: 8px;">
+        <div style="font-size: 0.6em; color: #004a99; font-weight: bold;">UDI-DI</div>
+        <div style="font-size: 0.8em; font-weight: bold; color: #004a99;">00843123456789</div>
+      </div>
+    </div>
+
+    <div style="font-size: 0.85em; color: #555; border-top: 1px solid #eee; padding-top: 10px;">
+      <strong>Device:</strong> Percept™ PC Deep Brain Stimulator<br>
+      <strong>Serial #:</strong> ABC99228877<br>
+      <strong>Implant Date:</strong> March 15, 2026<br>
+      <strong>Hospital:</strong> Mayo Clinic, MN
+    </div>
+
+    <div style="margin-top: 15px; font-size: 0.7em; line-height: 1.3; color: #777; font-style: italic;">
+      This card contains critical information for MRI safety and emergency medical treatment.
+    </div>
+
+    <div data-verify-line="implant" style="border-top: 1px dashed #999; margin-top: 15px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+      title="Demo only: Medtronic doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:medtronic.com/implants/v/ABC99228877 <span data-bracket="end" data-for="implant">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Patient name, DOB, device serial, implanting surgeon, hospital
+Patient name, date of birth, device serial number, UDI (Unique Device Identifier), implanting surgeon name, hospital/facility ID, date of implantation, MRI safety status (e.g., "MRI Conditional"), issuing manufacturer name.
 
-**Privacy Salt:** Sensitive personal information requires random salt in verification lines to prevent hash enumeration.
+**Document Types:**
+- **Patient Implant Card:** Carried in the wallet for life.
+- **Surgical Implant Log:** (Linked hash) from the hospital's EMR.
+- **Device Registration Confirmation:** Proving the warranty is active.
+- **Recall Notice:** (Linked hash) proving the specific serial number status.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`medtronic.com`, `bostonscientific.com`, `stryker.com`) and current device standing.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Verified** — Device record matches the manufacturer's secure ledger.
+- **Recall Active** — **ALERT:** This specific serial number is subject to a mandatory safety recall.
+- **Battery Alert** — (For active devices) End-of-service warning verified.
+- **Invalid** — Serial number or patient data mismatch.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Patient (Implant Recipient)** benefits from verification.
 
-**Medical Records:** Verify health documents for personal medical records.
+**MRI Safety:** Proving to a radiologist that their deep brain stimulator or pacemaker is "Verified MRI Conditional." Radiologists are extremely risk-averse; a verified hash from the manufacturer provides the immediate confidence needed to proceed with a life-saving scan without waiting for a manual phone call to the manufacturer's tech support.
 
-**Provider Presentation:** Share verified results with other healthcare providers.
-
-**Insurance Claims:** Support health insurance claims with verified documentation.
-
-**Compliance Requirements:** Meet employer or school health documentation requirements.
-
-**Legal Matters:** Provide verified health records for disability, litigation, or family matters.
+**Emergency Care:** Proving their device details to an ER doctor in a foreign city or hospital, ensuring they don't receive treatments (like defibrillation or electrocautery) that could damage the implant.
 
 ## Third-Party Use
 
-**Regulators and Oversight Bodies**
+**Radiology Departments (MRI/CT)**
+**Safety Triage:** Instantly verifying the "MRI Conditionality" of a patient's implant. OCR-to-hash connects the tech directly to the manufacturer's safety database, bypassing the "Manual Model Lookup" bottleneck.
 
-Regulatory compliance and oversight:
+**Airport Security (TSA)**
+**Expedited Screening:** Verifying the "Implant Status" of a traveler who cannot go through a standard metal detector, reducing the friction of a manual pat-down.
 
-**Systematic Hash Receipt:** Receive hashes in bulk for regulatory oversight.
-
-**Audit Verification:** Verify documents during routine or targeted audits.
-
-**Compliance Monitoring:** Monitor issuer compliance with documentation requirements.
-
-**Investigation Support:** Verify documents during fraud or compliance investigations.
-
-**Consumer Protection:** Verify consumer-facing documents for protection enforcement.
-
-**Employers**
-
-Hiring and compliance verification:
-
-**Pre-Employment Screening:** Verify credentials during hiring process.
-
-**I-9 Compliance:** Verify work authorization and identity documents.
-
-**Credential Verification:** Confirm professional licenses and certifications.
-
-**Health Requirements:** Verify health-related documentation for workplace safety.
-
-**Background Checks:** Integrate verification into background check processes.
-
-**Insurance Companies**
-
-Underwriting and claims processing:
-
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Healthcare Providers**
-
-Medical care and coordination:
-
-**Medical History:** Verify patient-provided medical records and test results.
-
-**Treatment Planning:** Confirm diagnostic results for treatment decisions.
-
-**Specialist Referrals:** Validate records when coordinating care.
-
-**Insurance Authorization:** Verify coverage and authorization documents.
-
-**Compliance Requirements:** Confirm vaccination and health screening records.
+**Medical Device Manufacturers**
+**Post-Market Surveillance:** Ensuring 100% accurate tracking of high-risk implants throughout the patient's lifetime for recall and safety monitoring.
 
 ## Verification Architecture
 
-**The Medical device implant cards (pacemakers, stents) Fraud Problem**
+**The "Serial Swap" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Recall Hiding:** A manufacturer or clinic attempting to hide that a specific serial number is part of a defective batch. Verification shows the "Recall Active" flag instantly.
+- **Component Forgery:** Creating a fake card for a non-existent or un-vetted implant to justify a medical insurance claim.
+- **Status Misrepresentation:** Editing a card to say "MRI Safe" when the device is actually "MRI Unsafe."
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Medical Device Manufacturers:** (Medtronic, Boston Scientific, Stryker).
+**Hospitals & Surgical Centers.**
+**Global UDI Databases:** (e.g., GUDID - hosting the master device hashes).
 
-**Hospitals and Health Systems:** Major healthcare providers and hospital networks.
+**Privacy Salt:** Critical. Implant data is highly sensitive health info. The hash MUST be salted to prevent "Mass Scraping" of patient identities linked to specific expensive medical devices.
 
-**Clinical Laboratories:** Reference labs and hospital-based laboratories.
+## Competition vs. UDI Barcodes
 
-**Medical Clinics:** Physician practices and specialty clinics.
+| Feature | OCR-to-Hash | GS1 / UDI Barcode | Physical Implant Card |
+| :--- | :--- | :--- | :--- |
+| **Trust Anchor** | **Domain-Bound.** Bound to the Manufacturer. | **Self-Contained.** Trust the data *on* the sticker. | **Zero.** Easily forged. |
+| **Freshness** | **Real-time.** Shows if recalled *today*. | **Static.** Only shows what was printed years ago. | **Static.** |
+| **Integrity** | **Cryptographic.** Binds the *Serial #*. | **Medium.** Easy to clone a barcode. | **Vulnerable.** |
+| **Hardware** | **Universal.** Any smartphone camera. | **Specialized.** Requires 2D barcode scanners. | **Visual.** |
 
-**Public Health Departments:** Government health agencies for certifications.
-
-**System Integration**
-
-Healthcare verification connects to clinical systems:
-
-**EHR Systems:** Electronic health record systems generate verification hashes.
-
-**Lab Information Systems:** Laboratory systems create verification for results.
-
-**Health Information Exchanges:** Regional HIEs facilitate verification.
-
-**FHIR Standards:** HL7 FHIR could incorporate verification endpoints.
-
-**Privacy Considerations**
-
-Sensitive personal information requires special handling:
-
-**Privacy Salt:** Random salt added to verification lines prevents hash enumeration attacks.
-
-**Minimum Disclosure:** Verification response reveals only necessary information.
-
-**Access Controls:** Verification endpoints implement appropriate access restrictions.
-
-**Audit Logging:** Verification attempts logged for security and compliance.
-
-## Rationale
-
-Lifetime critical device tracking. Emergency medical verification. Wallet card format. Prevents fake implant cards.
+**Why OCR wins here:** The "Wallet Reality." Patients carry a card, not a barcode scanner. While the *box* has a UDI barcode, the *patient* only has the paper card. OCR-to-hash turn that **Wallet Card** into a live safety portal, bringing "UDI-level" security to the patient's everyday life.

@@ -1,122 +1,114 @@
 ---
-title: "Upgrade confirmations and paid upgrade receipts"
+title: "Airline Upgrade Confirmations"
 category: "Travel & Hospitality"
 volume: "Medium"
 retention: "Flight + 1-3 years"
 slug: "airline-upgrade-confirmations"
-tags: ["airline", "upgrade", "confirmations", "travel", "hospitality"]
+tags: ["airline", "upgrade", "receipt", "business-class", "expense", "travel"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0;">
+  <div style="background: #000040; color: #fff; padding: 20px; text-align: center;">
+    <h3 style="margin: 0;">UNITED AIRLINES</h3>
+    <div style="font-size: 0.9em; margin-top: 5px;">UPGRADE CONFIRMATION</div>
+  </div>
+
+  <div style="padding: 30px;">
+    <div style="display: flex; justify-content: space-between; margin-bottom: 20px; font-size: 0.9em;">
+      <div>
+        <strong>Confirmation:</strong> L7XK9B<br>
+        <strong>Ticket:</strong> 016-29384756
+      </div>
+      <div style="text-align: right;">
+        <strong>Date:</strong> 12 SEP 2026
+      </div>
+    </div>
+
+    <div style="font-size: 1.1em; line-height: 1.5; color: #333; border-bottom: 1px solid #ccc; padding-bottom: 20px; margin-bottom: 20px;">
+      <p><strong>Passenger:</strong> <span data-bracket="start" data-for="upgrade">]</span>SARAH CONNOR</p>
+      <p><strong>Flight:</strong> UA 926 (SFO to FRA)<br>
+      <strong>Upgrade:</strong> Economy &rarr; Polaris Business</p>
+      
+      <p><strong>Payment Summary:</strong></p>
+      <table style="width: 100%;">
+        <tr>
+          <td>Cash Co-Pay:</td>
+          <td style="text-align: right;">$ 550.00</td>
+        </tr>
+        <tr>
+          <td>Miles Redemeed:</td>
+          <td style="text-align: right;">20,000 Miles</td>
+        </tr>
+      </table>
+    </div>
+
+    <div style="font-size: 0.9em; color: #555;">
+      <strong>Upgrade Status:</strong> CONFIRMED<br>
+      <strong>Seat:</strong> 12A
+    </div>
+
+    <div data-verify-line="upgrade" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: Airline doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:united.com/receipts/v/x9y8z7 <span data-bracket="end" data-for="upgrade">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Passenger name, original ticket, upgrade class, upgrade fee, confirmation
+Passenger name, original ticket number, confirmation code, flight details, from/to class of service, cash payment amount, miles redeemed, date of transaction.
+
+**Document Types:**
+- **Cash Upgrade Receipt:** Paid fully in cash/card at check-in.
+- **Mileage Upgrade Award:** Receipt showing miles + co-pay.
+- **Complimentary Upgrade Notice:** Elite status upgrade (usually $0 value).
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`united.com`) and the upgrade validity.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Confirmed** — Upgrade was processed and paid.
+- **Refunded** — Passenger cancelled or was downgraded (e.g., equipment swap).
+- **Waitlisted** — Request made but not yet cleared (not a valid receipt for expense yet).
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Business Traveler** benefits from verification.
 
-**Document Authenticity:** Verify received documents are genuine and properly issued.
+**Expense Justification:** Proving to an employer that the $550 charge was for a *policy-compliant* upgrade (e.g., "flights over 8 hours") and not an unauthorized splurge.
 
-**Third-Party Presentation:** Provide verified documentation when required.
-
-**Compliance Requirements:** Meet regulatory or contractual documentation requirements.
-
-**Record Keeping:** Maintain verified records for future reference or audits.
-
-**Dispute Prevention:** Establish authenticity to prevent future challenges.
+**Tax Records:** Differentiating between business expenses (the cash co-pay) and personal costs (using personal miles), which can be complex for tax deductions.
 
 ## Third-Party Use
 
-**Insurance Companies**
+**Corporate Finance / Auditors**
+**Policy Compliance:** Companies often have strict rules: "We pay for Economy, you can upgrade with your own points." A receipt showing "$5,000" for a Business Class ticket looks suspicious. A verified receipt showing "Economy Fare + $0 Upgrade (Miles)" clarifies that the company only paid for the base fare.
 
-Underwriting and claims processing:
+**Project Clients**
+**Billable Expenses:** Consultants billing travel to clients need indisputable proof of costs. Clients often reject "Business Class" invoices. A verified receipt showing the breakdown (Base Fare vs Upgrade) allows the consultant to bill the Base Fare to the client while absorbing the upgrade cost personally.
 
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Customs and Border Authorities**
-
-International trade compliance:
-
-**Import Clearance:** Verify shipping documents for customs clearance.
-
-**Duty Assessment:** Validate commercial invoices and declarations.
-
-**Trade Compliance:** Confirm certificates of origin and trade documents.
-
-**Security Screening:** Verify cargo documentation for security.
-
-**Export Controls:** Validate export documentation and licenses.
-
-**Freight Forwarders and Carriers**
-
-Logistics and transportation:
-
-**Shipment Acceptance:** Verify documents before accepting cargo.
-
-**Carrier Handoffs:** Validate documentation at transfer points.
-
-**Liability Determination:** Reference verified documents for claims.
-
-**Route Planning:** Confirm documentation for transit requirements.
-
-**Delivery Confirmation:** Verify documents at final delivery.
+**Travel Management Companies (TMCs)**
+**Spend Tracking:** Ensuring that "invisible" spend (upgrades bought directly from the airline app, bypassing the TMC) is captured in total travel cost reporting.
 
 ## Verification Architecture
 
-**The Upgrade confirmations and paid upgrade receipts Fraud Problem**
+**The "Fake Upgrade" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Photoshop:** Editing an Economy receipt to look like a Business Class ticket to claim a higher reimbursement.
+- **Refund Schemes:** Buying a fully refundable First Class ticket, printing the receipt, expensing it, then refunding it and flying Economy. Verification reveals the "Refunded" status.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Airlines:** (United, American, Delta, Emirates, etc.)
+**Upgrade Auctions:** (Plusgrade) third-party platforms used by many airlines for bidding on upgrades.
 
-**Primary Issuers:** Organizations with direct authority to issue these documents.
+## Competition vs. Credit Card Statements
 
-**Licensed Professionals:** Professionals authorized to create and certify documents.
+| Feature | OCR-to-Hash | Credit Card Statement |
+| :--- | :--- | :--- |
+| **Granularity** | **High.** Shows "Upgrade SFO-LHR" distinct from "Baggage". | **Low.** Just shows "UNITED AIRLINES $550". |
+| **Context** | **Full.** Shows Class of Service (Economy -> Business). | **None.** No flight details or class info. |
+| **Mileage Info** | **Yes.** Shows miles burned (crucial for value calculations). | **No.** Only shows cash. |
 
-**Government Agencies:** Federal, state, or local agencies with jurisdiction.
-
-**Industry Bodies:** Trade associations and professional organizations.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Domain binding verifies airline. Prevents fake upgrade confirmations. Expense claim verification. Prevents upgrade fee disputes.
+**Why OCR wins here:** Credit card statements are too vague for strict corporate travel policies. They prove *payment* but not *product*. A verified receipt proves exactly *what* was purchased, preventing policy violations disguised as generic airline charges.

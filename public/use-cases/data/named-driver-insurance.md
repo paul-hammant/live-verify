@@ -1,129 +1,113 @@
 ---
-title: "Named driver insurance policies and certificates"
+title: "Named Driver Insurance Certificates"
 category: "Personal Lines Insurance"
 volume: "Medium"
 retention: "Policy term (1 year typical)"
 slug: "named-driver-insurance"
-tags: ["named", "driver", "insurance", "personal", "lines"]
+tags: ["car-insurance", "named-driver", "policy-endorsement", "additional-driver", "telematics-insurance", "uninsured-motorist", "insurance-fraud"]
 ---
+
+<div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #000; background: #fff; padding: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
+  <div style="background: #000; color: #fff; padding: 10px; display: flex; justify-content: space-between; align-items: center;">
+    <div style="font-weight: bold;">ADMIRAL</div>
+    <div style="font-size: 0.8em;">CERTIFICATE OF MOTOR INSURANCE</div>
+  </div>
+
+  <div style="padding: 15px;">
+    <div style="display: flex; justify-content: space-between; font-size: 0.8em; margin-bottom: 10px;">
+      <div>
+        <strong>Policy Number:</strong><br>
+        ADM-99887766
+      </div>
+      <div style="text-align: right;">
+        <strong>Vehicle:</strong><br>
+        LV26 ABC (Mini Cooper)
+      </div>
+    </div>
+
+    <div style="font-size: 0.9em; line-height: 1.4; color: #333; background: #f9f9f9; padding: 10px; border: 1px solid #eee;">
+      <p style="margin-top: 0;"><strong>PERSONS ENTITLED TO DRIVE:</strong></p>
+      <ul style="margin: 0; padding-left: 20px;">
+        <li>John Jacob Doe (Policyholder)</li>
+        <li><span data-bracket="start" data-for="driver">]</span><strong>Sarah Jane Smith</strong> (Named Driver)</li>
+      </ul>
+    </div>
+
+    <div style="font-size: 0.8em; margin-top: 10px;">
+      <strong>Effective Date:</strong> 15 MAR 2026<br>
+      <strong>Expiration Date:</strong> 14 MAR 2027
+    </div>
+
+    <div style="font-size: 0.7em; color: #777; margin-top: 10px; border-top: 1px solid #eee; padding-top: 5px;">
+      This document provides evidence that the persons named are insured to drive the specified vehicle.
+    </div>
+
+    <div data-verify-line="driver" style="border-top: 1px dashed #999; margin-top: 15px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.7em; color: #555; text-align: center;"
+      title="Demo only: Admiral doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:admiral.com/check/v/99887766 <span data-bracket="end" data-for="driver">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Policyholder name, named drivers (with license details), vehicle, coverage, insurer
+Policyholder name, specific Named Driver names, driver's license numbers (redacted), vehicle registration (License Plate), policy number, effective/expiration dates, coverage type (Comprehensive/3rd Party), issuing carrier.
 
-**Policy Forms:** Different policy forms and endorsements may apply.
+**Document Types:**
+- **Certificate of Motor Insurance:** The primary legal proof in the UK/EU.
+- **Named Driver Endorsement:** Proving an addition to a standard US policy.
+- **Learner Driver Permit Insurance:** For supervised practice.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`admiral.com`, `directline.com`, `geico.com`) and real-time coverage status for the specific driver.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-- **Cancelled** - Policy cancelled before expiration
-- **Non-Renewed** - Policy expired and not renewed
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Authorized** — The named driver is currently covered for the specified vehicle.
+- **Excluded** — **ALERT:** This driver has been specifically removed from the policy.
+- **Cancelled** — Policy terminated for all drivers.
+- **Pending Payment** — Coverage active but subject to premium clearance.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Named Driver** benefits from verification.
 
-**Proof of Coverage:** Verify coverage is active when needed for compliance or access.
+**Roadside Verification:** When stopped by police or involved in an accident, proving they are legally authorized to drive. Standard paper certificates are easily edited; a verified hash from the insurer provides "Court-Grade" trust that the person behind the wheel is actually on the policy.
 
-**Claims Support:** Confirm policy details when filing claims.
-
-**Coverage Confirmation:** Verify coverage terms match expectations after purchase.
-
-**Third-Party Presentation:** Provide verified proof to landlords, lenders, or employers.
-
-**Renewal Verification:** Confirm renewal was processed and coverage continues.
+**Rental / Car Sharing:** Proving to a car-share platform or a friend that they have verified liability coverage before borrowing a vehicle.
 
 ## Third-Party Use
 
-**Regulators and Oversight Bodies**
+**Law Enforcement (Roadside)**
+**Frontline Enforcement:** Instantly confirming that a young driver hasn't been "added" to a parent's policy using Photoshop. "Verified by Admiral" stops "Fronting Fraud" where high-risk drivers hide on low-risk policies using fake paperwork.
 
-Regulatory compliance and oversight:
+**Car Owners (Lenders)**
+**Risk Management:** A car owner can verify that a friend or family member is actually on their policy before handing over the keys for a weekend trip.
 
-**Systematic Hash Receipt:** Receive hashes in bulk for regulatory oversight.
-
-**Audit Verification:** Verify documents during routine or targeted audits.
-
-**Compliance Monitoring:** Monitor issuer compliance with documentation requirements.
-
-**Investigation Support:** Verify documents during fraud or compliance investigations.
-
-**Consumer Protection:** Verify consumer-facing documents for protection enforcement.
-
-**Lenders and Financial Institutions**
-
-Credit underwriting and risk assessment:
-
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
+**Insurance Special Investigative Units (SIU)**
+**Fraud Detection:** Identifying patterns of "Phantom Drivers" where policies are altered to add drivers only *after* an accident occurs.
 
 ## Verification Architecture
 
-**The Named driver insurance policies and certificates Fraud Problem**
+**The "Insurance Fronting" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Coverage Inflation:** Inflating coverage limits or adding non-existent coverage
-- **Backdating:** Creating policies with false effective dates
-- **Ghost Policies:** Fabricated policies from non-existent insurers
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Identity Swapping:** A high-risk driver (e.g., a teen with a DUI) editing a parent's policy PDF to add their name as a "Named Driver" without the parent or insurer knowing.
+- **Status Faking:** Showing an old "Active" paper for a driver who was excluded from the policy 3 months ago due to a bad driving record.
+- **Buy and Cancel:** Printing a 1-year certificate, then cancelling the policy 2 days later.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Retail Auto Insurers.**
+**Telematics Platforms:** (e.g., Root, Metromile - hosting live driver hashes).
+**National Motor Insurance Databases:** (e.g., UK's MID).
 
-**Banks and Credit Unions:** Depository institutions for account documents.
+## Competition vs. National Databases (MID)
 
-**Investment Firms:** Brokerage and investment management firms.
+| Feature | OCR-to-Hash | MID / National DB (UK) | Paper Certificate |
+| :--- | :--- | :--- | :--- |
+| **Driver Specificity** | **High.** Verifies *who* is covered. | **Low.** Often only shows if the *car* is insured. | **Vulnerable.** |
+| **Trust Anchor** | **Domain-Bound.** Bound to the Carrier. | **Gov-Bound.** | **Zero.** Easily forged. |
+| **Speed** | **Instant.** 5-second scan. | **Slow.** Requires specialized police terminal access. | **Instant.** |
+| **User Access** | **Open.** Any citizen or car owner can verify. | **Restricted.** Usually only for Police/DVLA. | **Universal.** |
 
-**Insurance Companies:** Insurers for policy and claims documents.
-
-**Accounting Firms:** CPAs and audit firms for financial statements.
-
-**System Integration**
-
-Insurance verification integrates with industry systems:
-
-**Policy Administration Systems:** Core insurance systems generate verification hashes at policy issuance.
-
-**ACORD Standards:** Insurance industry data standards could include verification fields.
-
-**State Insurance Databases:** Regulators maintain databases for systematic hash receipt.
-
-**Agent Portals:** Insurance agents access verification for client service.
-
-## Rationale
-
-Prevents unlisted driver fraud (claiming named driver status when not on policy). Domain binding verifies insurer. Police verification at accidents. UK/EU common (named driver policies cheaper than any driver policies). Prevents fronting fraud (parent lists as main driver, child actually drives).
+**Why OCR wins here:** The "Driver Specificity" gap. Many national databases only track the *vehicle*. They don't list the 4 different named drivers. OCR-to-hash allows a car owner to prove that a **specific person** is covered, which is the most common point of failure in car-accident liability disputes.

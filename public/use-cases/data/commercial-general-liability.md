@@ -1,125 +1,118 @@
 ---
-title: "Commercial general liability (CGL) policies"
+title: "Commercial General Liability (CGL) Policies"
 category: "Commercial Lines Insurance"
-volume: "Small"
+volume: "Large"
 retention: "Policy term + 10 years"
 slug: "commercial-general-liability"
-tags: ["commercial", "general", "liability", "lines", "insurance"]
+tags: ["cgl", "insurance-policy", "liability", "contractor-insurance", "risk-management", "commercial-insurance"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #1a237e; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+  <div style="background: #1a237e; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+    <div>
+      <div style="font-weight: bold; font-size: 1.2em;">THE TRAVELERS COMPANIES</div>
+      <div style="font-size: 0.8em;">Commercial General Liability</div>
+    </div>
+    <div style="text-align: right;">
+      <div style="font-size: 0.8em;">Policy #: CGL-99887766-26</div>
+    </div>
+  </div>
+
+  <div style="padding: 30px;">
+    <h2 style="text-align: center; color: #1a237e; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Policy Declarations</h2>
+
+    <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
+      <p><strong>Named Insured:</strong> <span data-bracket="start" data-for="cgl">]</span>Heavy Haulers Construction, Inc.<br>
+      <strong>Business Description:</strong> Structural Steel Erection</p>
+
+      <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: #f0f4f8; border-bottom: 2px solid #1a237e;">
+          <th style="text-align: left; padding: 8px;">Coverage Limits</th>
+          <th style="text-align: right; padding: 8px;">Amount</th>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border-bottom: 1px solid #eee;">Each Occurrence</td>
+          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 2,000,000</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border-bottom: 1px solid #eee;">General Aggregate</td>
+          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 4,000,000</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border-bottom: 1px solid #eee;">Products-Completed Ops</td>
+          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 4,000,000</td>
+        </tr>
+      </table>
+
+      <p style="margin-top: 20px;"><strong>Policy Period:</strong> March 01, 2026 to March 01, 2027</p>
+    </div>
+
+    <div data-verify-line="cgl" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: Travelers doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:travelers.com/policy/v/CGL99887766 <span data-bracket="end" data-for="cgl">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Business name, insured parties, coverage limits, operations description, premium
+Named insured, business description (Class Code), coverage limits (Occurrence/Aggregate), policy number, effective/expiration dates, deductible amount, issuing carrier.
+
+**Document Types:**
+- **Policy Declarations Page:** The 1-page summary of coverage.
+- **Binder:** Temporary 30-day proof of coverage.
+- **Endorsement Schedule:** Listing specific changes (e.g., adding a project).
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`travelers.com`, `chubb.com`) and current policy status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **In Force** — Policy is active and premiums paid.
+- **Cancelled** — Coverage has been terminated (often due to non-payment or high claims).
+- **Lapsed** — Renewal was not processed.
+- **Pending Audit** — Coverage active but final premium subject to payroll audit.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Business Owner** (Contractor) benefits from verification.
 
-**Record Verification:** Confirm financial documents match expectations.
+**Contract Awards:** Proving to a potential client that the company actually has the $2M/$4M limits required for a massive project. A verified "Dec Page" prevents the competitor from undercutting by using fake or cheaper, low-limit insurance.
 
-**Tax Preparation:** Provide verified documentation for tax filing.
-
-**Audit Support:** Maintain verified records for potential audits.
-
-**Dispute Resolution:** Use verified documents to resolve discrepancies.
-
-**Loan Applications:** Present verified financial documentation to lenders.
+**Lease Negotiations:** Proving to a commercial landlord that the business meets the liability insurance requirements of the lease agreement.
 
 ## Third-Party Use
 
-**Regulators and Oversight Bodies**
+**General Contractors (GCs)**
+**Subcontractor Compliance:** Ensuring that every sub on the job-site is fully insured. Verification prevents the "Buy and Cancel" fraud where a sub buys a policy to get on-site and then cancels it immediately.
 
-Regulatory compliance and oversight:
+**Lenders / Banks**
+**Risk Mitigation:** Verifying the CGL coverage of commercial borrowers to ensure they won't be bankrupted by a single lawsuit, which protects the lender's loan.
 
-**Systematic Hash Receipt:** Receive hashes in bulk for regulatory oversight.
-
-**Audit Verification:** Verify documents during routine or targeted audits.
-
-**Compliance Monitoring:** Monitor issuer compliance with documentation requirements.
-
-**Investigation Support:** Verify documents during fraud or compliance investigations.
-
-**Consumer Protection:** Verify consumer-facing documents for protection enforcement.
-
-**Lenders and Financial Institutions**
-
-Credit underwriting and risk assessment:
-
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
+**Event Venues**
+**Vendor Management:** Verifying the liability insurance of caterers, decorators, and performers before they set up on the property.
 
 ## Verification Architecture
 
-**The Commercial general liability (CGL) policies Fraud Problem**
+**The "Fake Limit" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Income Inflation:** Inflating income or assets on financial documents
-- **Photoshop Fraud:** Digital manipulation of statements and documents
-- **Shell Company Documents:** Documents from fake or shell entities
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Ghost Policies:** Buying a policy, printing the papers, then cancelling it for a refund.
+- **Limit Inflation:** Editing a $500k policy to read $2M to win a contract.
+- **Class Code Fraud:** Claiming to be a "Florist" (low risk) to get a cheap rate, but showing a "Verified" looking paper to work as a "Steel Erector" (high risk).
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Commercial Carriers:** (Travelers, Chubb, Zurich, Hartford).
+**Managing General Agents (MGAs).**
+**Self-Insured Groups.**
 
-**Banks and Credit Unions:** Depository institutions for account documents.
+## Competition vs. Broker Confirmation Calls
 
-**Investment Firms:** Brokerage and investment management firms.
+| Feature | OCR-to-Hash | Manual Broker Call | Scanned PDF |
+| :--- | :--- | :--- | :--- |
+| **Trust Anchor** | **Domain-Bound.** Bound to the Carrier. | **Human.** Relies on the broker's assistant answering honestly. | **Zero.** Easily forged. |
+| **Speed** | **Instant.** 5-second scan. | **Slow.** Often takes 24-48 hours for a return call. | **Instant.** |
+| **Availability** | **24/7.** Works on weekends/holidays. | **Business Hours Only.** | **Universal.** |
+| **Integrity** | **Cryptographic.** Binds every digit. | **Vague.** "Yes, they have a policy." | **Vulnerable.** |
 
-**Insurance Companies:** Insurers for policy and claims documents.
-
-**Accounting Firms:** CPAs and audit firms for financial statements.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Prevents fake CGL policies in contractor fraud. Domain binding verifies insurer. Certificate of insurance verification by project owners. Prevents coverage inflation in bids. Contractor fraud where businesses hire uninsured contractors creates massive liability exposure. Critical for risk management where CGL verification protects against uninsured contractor liability.
+**Why OCR wins here:** The "Site Entrance" reality. A subcontractor arrives at a job-site on a Saturday morning. The GC's office is closed. The Sub's broker is closed. OCR-to-hash allows the site foreman to verify the Sub's insurance **on the spot**, allowing work to proceed safely and legally without delays.

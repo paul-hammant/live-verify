@@ -1,125 +1,120 @@
 ---
-title: "Homeowners/renters claims documentation"
+title: "Homeowners and Renters Claims"
 category: "Personal Lines Insurance"
 volume: "Medium"
 retention: "Claim term + 7-10 years"
 slug: "homeowners-renters-claims"
-tags: ["homeowners", "renters", "claims", "personal", "lines", "insurance"]
+tags: ["property-claim", "homeowners-insurance", "renters-insurance", "damage-estimate", "adjuster-report", "restoration-audit", "fraud-prevention"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <div style="background: #d32f2f; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+    <div>
+      <div style="font-weight: bold; font-size: 1.2em;">ALLSTATE INSURANCE</div>
+      <div style="font-size: 0.8em;">Property Claims Services</div>
+    </div>
+    <div style="text-align: right;">
+      <div style="font-size: 0.8em;">Claim #: 99228877-PROP</div>
+    </div>
+  </div>
+
+  <div style="padding: 25px;">
+    <h3 style="margin-top: 0; color: #d32f2f; border-bottom: 2px solid #d32f2f; padding-bottom: 5px;">REPAIR ESTIMATE & PROOF OF LOSS</h3>
+
+    <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
+      <p><strong>Insured:</strong> <span data-bracket="start" data-for="prop-claim">]</span>SARAH J. DOE<br>
+      <strong>Property:</strong> 123 Maple St, Anytown, USA</p>
+
+      <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: #f5f5f5; border-bottom: 1px solid #d32f2f;">
+          <th style="text-align: left; padding: 8px;">Damage Category</th>
+          <th style="text-align: right; padding: 8px;">Estimated RCV</th>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border-bottom: 1px solid #eee;">Dwelling (Water Damage - Kitchen)</td>
+          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 12,450.00</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border-bottom: 1px solid #eee;">Personal Property (Electronics)</td>
+          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 2,100.00</td>
+        </tr>
+        <tr style="font-weight: bold; background: #ffebee;">
+          <td style="padding: 8px;">NET CLAIM TOTAL:</td>
+          <td style="text-align: right; padding: 8px;">$ 14,550.00</td>
+        </tr>
+      </table>
+
+      <p style="margin-top: 20px;"><strong>Adjuster:</strong> Robert Miller (ID #992)<br>
+      <strong>Restoration Firm:</strong> ServePro of Anytown (Verified)</p>
+    </div>
+
+    <div data-verify-line="prop-claim" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: Allstate doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:allstate.com/claims/v/99228877 <span data-bracket="end" data-for="prop-claim">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Claimant name, property address, loss details, estimate, adjuster report
+Insured name, property address, Claim ID, estimated Replacement Cost Value (RCV), Actual Cash Value (ACV), deductible amount, adjuster name/ID, restoration contractor name, date of loss, date of estimate.
+
+**Document Types:**
+- **Adjuster's Estimate:** Detailed line-items (Xactimate output).
+- **Proof of Loss:** Final signed attestation of damages.
+- **Certificate of Completion:** Signed by the owner post-repair.
+- **Contents Inventory:** Verified list of destroyed items.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`allstate.com`, `libertymutual.com`) and current claim standing.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Approved** — Estimate matches the carrier's system; funds authorized.
+- **Supplemented** — **ALERT:** A newer estimate #2 exists; this version is void.
+- **Paid** — Funds have been issued to the insured/contractor.
+- **Closed** — Claim file completed and liability discharged.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Homeowner / Renter** benefits from verification.
 
-**Record Verification:** Confirm financial documents match expectations.
+**Contractor Oversight:** Proving to a restoration company (e.g., ServePro) exactly what the insurance company agreed to pay for (e.g., "Hardwood replacement" vs "Laminate"). Verification prevents "Bait and Switch" where a contractor charges the insurer for high-end materials but installs cheap ones.
 
-**Tax Preparation:** Provide verified documentation for tax filing.
-
-**Audit Support:** Maintain verified records for potential audits.
-
-**Dispute Resolution:** Use verified documents to resolve discrepancies.
-
-**Loan Applications:** Present verified financial documentation to lenders.
+**Mortgage Compliance:** Proving to a lender that the insurance funds are being used for verified repairs to protect the bank's collateral.
 
 ## Third-Party Use
 
-**Regulators and Oversight Bodies**
+**Restoration Contractors**
+**Payment Assurance:** Before starting a $14,000 kitchen tear-down, the contractor scans the adjuster's estimate. "Verified by Allstate" gives them the confidence that the funds are actually authorized and they won't be left with an unpaid bill.
 
-Regulatory compliance and oversight:
+**Secondary Buyers (Real Estate)**
+**CLUE Report Integrity:** A buyer can verify the history of past claims on a house. OCR-to-hash ensures the seller isn't "Hiding" a $50,000 mold claim by providing a fake, low-value repair receipt.
 
-**Systematic Hash Receipt:** Receive hashes in bulk for regulatory oversight.
-
-**Audit Verification:** Verify documents during routine or targeted audits.
-
-**Compliance Monitoring:** Monitor issuer compliance with documentation requirements.
-
-**Investigation Support:** Verify documents during fraud or compliance investigations.
-
-**Consumer Protection:** Verify consumer-facing documents for protection enforcement.
-
-**Lenders and Financial Institutions**
-
-Credit underwriting and risk assessment:
-
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
+**Special Investigative Units (SIU)**
+**Fraud Detection:** Instantly identifying "Estimate Padding" where a dishonest contractor or policyholder edits the PDF to add $5,000 in non-existent damage.
 
 ## Verification Architecture
 
-**The Homeowners/renters claims documentation Fraud Problem**
+**The "Disaster Padding" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Income Inflation:** Inflating income or assets on financial documents
-- **Photoshop Fraud:** Digital manipulation of statements and documents
-- **Shell Company Documents:** Documents from fake or shell entities
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **RCV Inflation:** Editing a $1,200 TV claim to read $12,000 on the contents list.
+- **Supplement Forgery:** Creating a fake "Supplement #1" PDF to get extra cash for "Hidden Damage" that doesn't exist.
+- **Photo Recycling:** Using photos of a fire from a different house to claim a loss on an insured property.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Primary Insurers:** (Allstate, State Farm, USAA).
+**Independent Adjusting Firms:** (e.g., Crawford & Co, Eberl).
+**Estimating Software:** (e.g., Xactimate/Verisk - hosting the underlying data hashes).
 
-**Banks and Credit Unions:** Depository institutions for account documents.
+## Competition vs. CLUE Reports (LexisNexis)
 
-**Investment Firms:** Brokerage and investment management firms.
+| Feature | OCR-to-Hash | CLUE Report (LexisNexis) | Scanned PDF Estimate |
+| :--- | :--- | :--- | :--- |
+| **Granularity** | **High.** Shows line-item repairs. | **Low.** Often just says "Water Loss - $14k." | **High.** But untrusted. |
+| **Speed** | **Real-time.** Available as soon as approved. | **Laggy.** Updates take 30-90 days. | **Instant.** |
+| **Trust Anchor** | **Domain-Bound.** Bound to the Insurer. | **Data-Bound.** Trust the aggregator. | **Zero.** Easily forged. |
+| **Interoperability** | **Universal.** Works for any contractor. | **Restricted.** Requires expensive data access. | **Universal.** |
 
-**Insurance Companies:** Insurers for policy and claims documents.
-
-**Accounting Firms:** CPAs and audit firms for financial statements.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Prevents fraudulent claims (arson, inflated losses). Domain binding verifies adjuster/restoration company. Tamper-evident damage estimates. SIU fraud investigation. Multi-page: Adjuster reports, contractor estimates multi-page.
+**Why OCR wins here:** Detail and Immediacy. A CLUE report is a historical summary. But a **Restoration Contractor** needs the specific, verified details of *this* claim *today* to start work. OCR-to-hash turns the **Static Estimate** into a live, trusted clinical link that bridges the gap between the insurer and the construction crew.

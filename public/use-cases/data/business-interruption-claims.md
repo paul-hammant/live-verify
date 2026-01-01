@@ -1,129 +1,125 @@
 ---
-title: "Business interruption insurance claims documentation"
+title: "Business Interruption Insurance Claims"
 category: "Commercial Lines Insurance"
 volume: "Small"
 retention: "Claim term + 10 years"
 slug: "business-interruption-claims"
-tags: ["business", "interruption", "claims", "commercial", "lines", "insurance"]
+tags: ["business-interruption", "commercial-insurance", "claims", "lost-revenue", "forensic-accounting", "disaster-recovery"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #1a237e; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+  <div style="background: #1a237e; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+    <div>
+      <div style="font-weight: bold; font-size: 1.2em;">LIBERTY MUTUAL</div>
+      <div style="font-size: 0.8em;">Commercial Property Claims</div>
+    </div>
+    <div style="text-align: right;">
+      <div style="font-size: 0.8em;">Claim #: BI-99228877-26</div>
+    </div>
+  </div>
+
+  <div style="padding: 30px;">
+    <h3 style="margin-top: 0; color: #1a237e; border-bottom: 2px solid #1a237e; padding-bottom: 5px;">BUSINESS INTERRUPTION ADJUSTMENT SUMMARY</h3>
+
+    <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
+      <p><strong>Insured:</strong> <span data-bracket="start" data-for="bi-claim">]</span>The Grande Cafe & Bistro, LLC<br>
+      <strong>Location:</strong> 123 Main St, New Orleans, LA<br>
+      <strong>Incident Date:</strong> August 29, 2025 (Hurricane Damage)</p>
+
+      <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: #f5f5f5; border-bottom: 1px solid #1a237e;">
+          <th style="text-align: left; padding: 8px;">Calculation Element</th>
+          <th style="text-align: right; padding: 8px;">Adjusted Amount</th>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border-bottom: 1px solid #eee;">Lost Net Income (Period: 60 Days)</td>
+          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 142,500.00</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border-bottom: 1px solid #eee;">Continuing Normal Expenses</td>
+          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 45,000.00</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border-bottom: 1px solid #eee;">Extra Expense (Equipment Rental)</td>
+          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 12,000.00</td>
+        </tr>
+        <tr style="font-weight: bold; font-size: 1.1em; background: #e8eaf6;">
+          <td style="padding: 8px;">TOTAL ADJUSTED CLAIM:</td>
+          <td style="text-align: right; padding: 8px;">$ 199,500.00</td>
+        </tr>
+      </table>
+
+      <p style="margin-top: 20px;"><strong>Forensic Accountant:</strong> Baker Tilly US, LLP<br>
+      <strong>Status:</strong> FINAL ADJUDICATION</p>
+    </div>
+
+    <div data-verify-line="bi-claim" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: Liberty Mutual doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:libertymutual.com/claims/v/BI992288 <span data-bracket="end" data-for="bi-claim">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Business name, interruption period, lost revenue, extra expenses, adjuster report
+Insured entity name, incident date, period of restoration (days), adjusted lost net income, adjusted continuing expenses, extra expenses authorized, total claim payout, forensic accounting firm name, Claim ID.
 
-**Policy Forms:** Different policy forms and endorsements may apply.
+**Document Types:**
+- **BI Adjustment Summary:** The final bill/payout calculation.
+- **Forensic Accounting Report:** Detailed analysis of tax returns and receipts.
+- **Proof of Loss:** Final signed release for payment.
+- **Extra Expense Authorization:** Interim approval for urgent costs.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (the Insurance Carrier) and the claim status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-- **Cancelled** - Policy cancelled before expiration
-- **Non-Renewed** - Policy expired and not renewed
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Approved/Final** — Calculation is verified and payment authorized.
+- **Supplemental** — This summary has been updated by a later adjustment.
+- **In-Litigation** — Claim amount is being formally disputed.
+- **Paid** — Funds have been transmitted to the insured.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Business Owner** benefits from verification.
 
-**Proof of Coverage:** Verify coverage is active when needed for compliance or access.
+**SBA Loan Applications:** Proving to the Small Business Administration (SBA) that their insurance claim was adjusted at $199,500, which helps in calculating the correct amount for a low-interest disaster loan (preventing "Double Dipping" or "Under-funding").
 
-**Claims Support:** Confirm policy details when filing claims.
-
-**Coverage Confirmation:** Verify coverage terms match expectations after purchase.
-
-**Third-Party Presentation:** Provide verified proof to landlords, lenders, or employers.
-
-**Renewal Verification:** Confirm renewal was processed and coverage continues.
+**Lienholder Notice:** Proving to a landlord or equipment lessor that the insurance company is paying for "Continuing Expenses," ensuring the business isn't evicted while they wait for repairs to finish.
 
 ## Third-Party Use
 
-**Regulators and Oversight Bodies**
+**Lenders (Banks)**
+**Cash Flow Analysis:** If a business is applying for a line of credit post-disaster, the bank needs to see verified proof of the insurance recovery amount to model the company's future liquidity.
 
-Regulatory compliance and oversight:
+**Tax Authorities (IRS)**
+**Taxable Income Audit:** Business interruption payouts for "Lost Profits" are generally taxable. Verification ensures the business reports the same amount to the IRS that they received from the insurer.
 
-**Systematic Hash Receipt:** Receive hashes in bulk for regulatory oversight.
-
-**Audit Verification:** Verify documents during routine or targeted audits.
-
-**Compliance Monitoring:** Monitor issuer compliance with documentation requirements.
-
-**Investigation Support:** Verify documents during fraud or compliance investigations.
-
-**Consumer Protection:** Verify consumer-facing documents for protection enforcement.
-
-**Lenders and Financial Institutions**
-
-Credit underwriting and risk assessment:
-
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
+**M&A Buyers**
+**Due Diligence:** A buyer of a business that recently suffered a disaster needs to verify the "Insurance Recovery" claims to ensure there are no hidden liabilities or uncollected claims.
 
 ## Verification Architecture
 
-**The Business interruption insurance claims documentation Fraud Problem**
+**The "Disaster Profit" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Coverage Inflation:** Inflating coverage limits or adding non-existent coverage
-- **Backdating:** Creating policies with false effective dates
-- **Ghost Policies:** Fabricated policies from non-existent insurers
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Revenue Inflation:** Editing old tax returns or POS reports to make the "Lost Revenue" look higher than it was.
+- **Fabricated Expenses:** Creating fake invoices for "Extra Equipment Rental" to get more cash from the insurer.
+- **Report Forgery:** Shady adjusters/accountants creating fake "Adjustment Summaries" to trick lenders into thinking a massive insurance payout is coming.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Commercial Insurance Carriers:** (Liberty Mutual, Chubb, AIG, Travelers).
+**Forensic Accounting Firms:** (Baker Tilly, Meaden & Moore).
+**Independent Adjusting Firms.**
 
-**Banks and Credit Unions:** Depository institutions for account documents.
+## Competition vs. Forensic Audits
 
-**Investment Firms:** Brokerage and investment management firms.
+| Feature | OCR-to-Hash | Manual Forensic Audit | Scanned PDF |
+| :--- | :--- | :--- | :--- |
+| **Trust Anchor** | **Domain-Bound.** Bound to the Insurer. | **Credential-Bound.** Trust the CPA. | **Zero.** Easily forged. |
+| **Speed** | **Instant.** Scan the summary. | **Slow.** Takes weeks/months to audit books. | **Instant.** |
+| **Cost** | **Low.** Standard web infra. | **High.** CPA fees can be $500+/hour. | **None.** |
+| **Integrity** | **Binds Result.** Proves the final number. | **Binds Process.** Verifies the data. | **Vulnerable.** |
 
-**Insurance Companies:** Insurers for policy and claims documents.
-
-**Accounting Firms:** CPAs and audit firms for financial statements.
-
-**System Integration**
-
-Insurance verification integrates with industry systems:
-
-**Policy Administration Systems:** Core insurance systems generate verification hashes at policy issuance.
-
-**ACORD Standards:** Insurance industry data standards could include verification fields.
-
-**State Insurance Databases:** Regulators maintain databases for systematic hash receipt.
-
-**Agent Portals:** Insurance agents access verification for client service.
-
-## Rationale
-
-Prevents fraudulent business interruption claims (common post-disaster fraud). Domain binding verifies adjuster/forensic accountant. High-value claims ($100K-$10M+). COVID-19 claim disputes. Multi-page: Forensic accounting reports multi-page.
+**Why OCR wins here:** The "Post-Audit Gap." A forensic accountant spends 3 months auditing a business to arrive at a $199,500 figure. OCR-to-hash **protects that final result**. It ensures that the massive effort put into the audit isn't wasted by a fraudster changing a single digit in the final PDF before sending it to a bank or the government.

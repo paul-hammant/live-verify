@@ -1,171 +1,103 @@
 ---
-title: "Broker-dealer licenses and registrations"
+title: "Broker-Dealer Licenses and Registrations"
 category: "Investment & Fintech"
 volume: "Very Small"
 retention: "Permanent (may show REVOKED status)"
 slug: "broker-dealer-licenses"
-tags: ["broker", "dealer", "licenses", "banking", "financial", "services"]
+tags: ["finra", "sec", "broker-dealer", "investment-advisor", "series-7", "brokercheck", "compliance"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 4px solid #002d62; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="background: #002d62; color: #fff; padding: 20px; text-align: center;">
+    <h2 style="margin: 0; font-size: 1.3em; letter-spacing: 1px;">CERTIFICATE OF REGISTRATION</h2>
+    <div style="font-size: 0.8em; margin-top: 5px;">FINANCIAL INDUSTRY REGULATORY AUTHORITY (FINRA)</div>
+  </div>
+
+  <div style="padding: 25px; display: flex;">
+    <div style="width: 100px; margin-right: 20px;">
+      <div style="width: 100px; height: 125px; background: #eee; display: flex; align-items: center; justify-content: center; color: #777; border: 1px solid #ccc;">[Photo]</div>
+    </div>
+    <div style="flex-grow: 1;">
+      <h3 style="margin-top: 0; color: #002d62; font-size: 1.2em;">REGISTERED REPRESENTATIVE</h3>
+      
+      <div style="font-size: 0.95em; line-height: 1.5; color: #333;">
+        <p><strong>Individual:</strong> <span data-bracket="start" data-for="broker">]</span>JORDAN BELFORT<br>
+        <strong>CRD Number:</strong> 9988776<br>
+        <strong>Firm:</strong> Stratton Oakmont, Inc.</p>
+
+        <p><strong>Status:</strong> REGISTERED<br>
+        <strong>Examinations:</strong> Series 7, Series 63</p>
+        
+        <p style="font-size: 0.8em; margin-top: 10px;">This individual is authorized to engage in the sale of securities products.</p>
+      </div>
+    </div>
+  </div>
+
+  <div data-verify-line="broker" style="border-top: 1px dashed #999; margin-top: 10px; padding: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center; background: #f9f9f9;"
+      title="Demo only: FINRA doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:finra.org/brokercheck/v/9988776 <span data-bracket="end" data-for="broker">]</span>
+  </div>
+</div>
+
 ## Data Verified
 
-Licensee name, FINRA CRD number, registration date, firm affiliation, disciplinary history summary
+Representative name, CRD (Central Registration Depository) number, current firm affiliation, registration status (Active/Suspended/Barred), examination history (Series 7, 63, 24), disciplinary disclosures flag, date of issuance.
 
-**Permit Types:** Various permit subtypes may exist depending on jurisdiction and specific use.
+**Document Types:**
+- **Registration Certificate:** Wall-hung proof of firm registration.
+- **Representative ID Card:** For face-to-face client meetings.
+- **Disciplinary Summary:** Detailed list of past "Regulator Alerts."
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`finra.org`, `sec.gov`) and current regulatory standing.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-- **Suspended** - Permit temporarily suspended
-- **Pending** - Permit application pending approval
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Registered** — Individual is authorized to sell securities.
+- **Barred** — Permanently prohibited from the industry.
+- **Suspended** — Temporarily prohibited (dates provided).
+- **Inactive** — Not currently affiliated with a firm.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Broker / Representative** benefits from verification.
 
-**Legitimacy Confirmation:** After obtaining permit, verify it was properly issued and recorded.
+**Client Trust:** Proving to a potential high-net-worth investor that they are a "Verified Registered Rep" and not an impostor. The client can scan the badge during an initial meeting to see the "Active" status directly from FINRA.
 
-**Compliance Display:** Maintain verified permit for posting requirements.
-
-**Scope Verification:** Confirm permitted activities match intended use.
-
-**Expiration Tracking:** Monitor permit status to avoid lapses.
-
-**Record Keeping:** Maintain verified documentation for audits and compliance.
+**License Portability:** Speeding up the onboarding process when moving to a new firm by providing a verified record of their exams and clean disciplinary history.
 
 ## Third-Party Use
 
-**Regulators and Oversight Bodies**
+**Retail Investors (Consumers)**
+**Fraud Prevention:** Before handing over a life-savings check, an investor can verify the broker's credentials. This stops "affinity fraud" where scammers pose as brokers to target specific communities.
 
-Regulatory compliance and oversight:
+**Compliance Departments**
+**Due Diligence:** Recruiting teams at major firms (e.g., Morgan Stanley, Merrill) can instantly verify the "Series 7" claims of a new hire by scanning their previous registration certificate.
 
-**Systematic Hash Receipt:** Receive hashes in bulk for regulatory oversight.
-
-**Audit Verification:** Verify documents during routine or targeted audits.
-
-**Compliance Monitoring:** Monitor issuer compliance with documentation requirements.
-
-**Investigation Support:** Verify documents during fraud or compliance investigations.
-
-**Consumer Protection:** Verify consumer-facing documents for protection enforcement.
-
-**Lenders and Financial Institutions**
-
-Credit underwriting and risk assessment:
-
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Insurance Companies**
-
-Underwriting and claims processing:
-
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
-
-**Government Agencies**
-
-Compliance enforcement and administration:
-
-**Inspection Verification:** Field agents verify permits and licenses at sites.
-
-**Enforcement Actions:** Confirm documentation before enforcement.
-
-**Benefit Eligibility:** Verify supporting documents for benefits administration.
-
-**Compliance Audits:** Audit documentation for regulatory compliance.
-
-**Interagency Coordination:** Share verified documents across agencies.
-
-**Real Estate Professionals**
-
-Property transactions and due diligence:
-
-**Purchase Due Diligence:** Verify property documents during transactions.
-
-**Listing Preparation:** Confirm permits and documentation for listings.
-
-**Disclosure Compliance:** Validate required disclosures and permits.
-
-**Title Research:** Verify property documents for title clearance.
-
-**Appraisal Support:** Confirm documented improvements and permits.
+**Lenders / Banks**
+**Authorized Signers:** Verifying that the person signing a corporate brokerage resolution has the regulatory authority to do so.
 
 ## Verification Architecture
 
-**The Broker-dealer licenses and registrations Fraud Problem**
+**The "Barred Broker" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Permit Sharing:** Using one property's permit for work at another location
-- **Scope Expansion:** Expanding permitted activities beyond authorization
-- **Contractor Fraud:** Claiming permits that were never obtained
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Ghost Credentials:** A broker who was barred for stealing client funds continuing to use their old, unexpired "Registration Certificate" to lure in new victims.
+- **Firm Impersonation:** Using the name of a real, famous firm (e.g., Goldman Sachs) on a fake certificate to legitimize a Ponzi scheme.
+- **Disciplinary Hiding:** Editing a PDF summary to remove "Customer Complaints" or "Regulatory Fines."
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**FINRA:** (The primary self-regulatory organization).
+**SEC:** (Federal oversight).
+**State Securities Regulators:** (e.g., NASAA members).
 
-**Banks and Credit Unions:** Depository institutions for account documents.
+## Competition vs. FINRA BrokerCheck (Search)
 
-**Investment Firms:** Brokerage and investment management firms.
+| Feature | OCR-to-Hash | BrokerCheck Website | Paper Certificate |
+| :--- | :--- | :--- |
+| **Integrity** | **Binds Identity.** Proves *this* person is the one. | **Live.** Shows status *today*. | **Static.** Easily forged. |
+| **User Experience** | **Seamless.** Scan the badge/paper. | **Hard.** Ask for CRD #, type it, find the right name. | **Manual.** |
+| **Trust** | **Domain-Bound.** Bound to `finra.org`. | **High.** Direct DB access. | **Medium.** |
+| **Disclosures** | **Active Alert.** Can highlight a BARRED status in red. | **Deep.** Requires reading long PDF reports. | **Hidden.** |
 
-**Insurance Companies:** Insurers for policy and claims documents.
-
-**Accounting Firms:** CPAs and audit firms for financial statements.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Revocable status tracking for broker credentials. Domain binding verifies FINRA/SEC legitimacy. Prevents fake broker credentials in investment fraud. Investor protection through verification. BrokerCheck integration for public lookup. Wallet card format for client meetings. Critical for investor protection where broker credential verification prevents fraud by barred individuals.
+**Why OCR wins here:** The "Meeting Moment." Investors are often too polite or embarrassed to ask for a broker's CRD number and look them up on a laptop during a meeting. OCR-to-hash turns the broker's business card or wall certificate into a **low-friction trust anchor** that the client can scan discreetly.

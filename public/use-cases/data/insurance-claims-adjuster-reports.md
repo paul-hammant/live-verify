@@ -1,131 +1,111 @@
 ---
-title: "Insurance claims adjuster reports"
+title: "Insurance Claims Adjuster Reports"
 category: "Insurance Claims & Operations"
-volume: "Small"
-retention: "Claim term + 7-10 years"
+volume: "Medium"
+retention: "Claim term + 10 years"
 slug: "insurance-claims-adjuster-reports"
-tags: ["insurance", "claims", "adjuster", "reports", "risk", "management"]
+tags: ["claims-adjudication", "damage-assessment", "insurance-adjuster", "claims-audit", "liability-report", "settlement-evidence", "xactimate-verified"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #0d47a1; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <div style="background: #0d47a1; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+    <div>
+      <div style="font-weight: bold; font-size: 1.2em;">PROGRESSIVE INSURANCE</div>
+      <div style="font-size: 0.8em; opacity: 0.8;">Central Claims Adjudication Unit</div>
+    </div>
+    <div style="text-align: right;">
+      <div style="font-size: 0.8em;">Claim #: 99228877-ADJ</div>
+    </div>
+  </div>
+
+  <div style="padding: 25px;">
+    <h3 style="margin-top: 0; color: #0d47a1; border-bottom: 2px solid #0d47a1; padding-bottom: 5px;">ADJUSTER'S PRELIMINARY DAMAGE ASSESSMENT</h3>
+
+    <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+      <p><strong>Insured:</strong> <span data-bracket="start" data-for="adjuster">]</span>Sarah J. Doe (Policy ...9982)<br>
+      <strong>Risk:</strong> 2025 Tesla Model 3 (VIN ...5544)</p>
+
+      <div style="background: #f0f4f8; border: 1px solid #d1d9e6; padding: 15px; margin: 15px 0; border-radius: 4px;">
+        <p><strong>Adjusted Loss Amount (ACV):</strong> $ 12,450.00</p>
+        <p><strong>Deductible Applied:</strong> $ 500.00<br>
+        <strong>Net Settlement Estimate:</strong> $ 11,950.00</p>
+      </div>
+
+      <p><strong>Adjuster Name:</strong> Michael J. Miller (ID #992)<br>
+      <strong>Inspection Date:</strong> March 15, 2026</p>
+    </div>
+
+    <div style="margin-top: 30px; border: 1px solid #ccc; padding: 10px; font-size: 0.8em; color: #555; background: #fafafa; font-style: italic;">
+      This assessment reflects the carrier's verified position on liability and damages as of the date above.
+    </div>
+
+    <div data-verify-line="adjuster" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: Progressive doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:progressive.com/claims/v/99228877ADJ <span data-bracket="end" data-for="adjuster">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Claimant name, adjuster name, adjuster license, damage assessment, claim amount, inspection date, photos
+Insured name, policy number, Claim ID, adjusted loss amount (ACV/RCV), deductible amount, net settlement estimate, adjuster name/ID, inspection date, cause of loss code, issuance timestamp.
 
-**Policy Forms:** Different policy forms and endorsements may apply.
-
-**Multi-Page Handling:** Documents may span multiple pages. Per-page verification prevents page substitution attacks.
+**Document Types:**
+- **Preliminary Assessment:** The first field estimate.
+- **Supplemental Report:** For hidden damage found mid-repair.
+- **Liability Determination:** Formal letter stating who was at fault.
+- **Salvage Evaluation:** For total loss vehicles/properties.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`progressive.com`, `geico.com`) and current claim status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-- **Cancelled** - Policy cancelled before expiration
-- **Non-Renewed** - Policy expired and not renewed
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Approved** — Estimate matches the carrier's final adjudication.
+- **Paid** — Funds have been issued to the insured or vendor.
+- **Supplemented** — **ALERT:** A newer version of this report exists.
+- **Denied** — Coverage rejected (reason code verified).
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Policyholder (Insured)** benefits from verification.
 
-**Proof of Coverage:** Verify coverage is active when needed for compliance or access.
+**Body Shop / Contractor Negotiations:** Proving to a repair shop exactly what the insurance company has agreed to pay. Verification stops the shop from claiming "The insurance didn't cover the bumper" when the verified report says they did.
 
-**Claims Support:** Confirm policy details when filing claims.
-
-**Coverage Confirmation:** Verify coverage terms match expectations after purchase.
-
-**Third-Party Presentation:** Provide verified proof to landlords, lenders, or employers.
-
-**Renewal Verification:** Confirm renewal was processed and coverage continues.
+**Car Sale / Trade-in:** Providing a verified, un-altered "Damage History" to a buyer or dealer, proving the $12,000 repair was for cosmetic damage and not structural frame issues.
 
 ## Third-Party Use
 
-**Regulators and Oversight Bodies**
+**Repair Vendors (Body Shops / Electricians)**
+**Payment Assurance:** Before starting work, the vendor scans the adjuster's hash. "Verified by Progressive" gives them the confidence that the funds are actually authorized and they won't be left with a denied supplement later.
 
-Regulatory compliance and oversight:
+**Subrogation Specialists**
+**Liability Recovery:** Verifying the at-fault party's adjuster report to ensure the legal recovery amount matches the verified field assessment.
 
-**Systematic Hash Receipt:** Receive hashes in bulk for regulatory oversight.
-
-**Audit Verification:** Verify documents during routine or targeted audits.
-
-**Compliance Monitoring:** Monitor issuer compliance with documentation requirements.
-
-**Investigation Support:** Verify documents during fraud or compliance investigations.
-
-**Consumer Protection:** Verify consumer-facing documents for protection enforcement.
-
-**Lenders and Financial Institutions**
-
-Credit underwriting and risk assessment:
-
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
+**Used Car Markets (CARFAX)**
+**History Integrity:** Ensuring that the "Accident History" reported by the owner matches the verified insurance company record, stopping the "PDF Scrubbing" of past high-value claims.
 
 ## Verification Architecture
 
-**The Insurance claims adjuster reports Fraud Problem**
+**The "Estimate Padding" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Coverage Inflation:** Inflating coverage limits or adding non-existent coverage
-- **Backdating:** Creating policies with false effective dates
-- **Ghost Policies:** Fabricated policies from non-existent insurers
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Supplement Forgery:** A shop creating a fake "Adjuster Approval" for $2,000 in extra parts that were never authorized.
+- **Deductible Deception:** A shop editing the PDF to hide that the owner has a $1,000 deductible, attempting to "waive" it by over-charging the insurer.
+- **Identity Theft:** Using a real adjuster's name and license # on a fake "Passing" report for a total-loss vehicle.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Primary Carriers:** (Progressive, State Farm, Allstate).
+**Adjusting Software:** (e.g., CCC One, Mitchell, Xactimate - hosting the data hashes).
+**Independent Adjusting Firms.**
 
-**Banks and Credit Unions:** Depository institutions for account documents.
+## Competition vs. Claims Dashboards
 
-**Investment Firms:** Brokerage and investment management firms.
+| Feature | OCR-to-Hash | Carrier Mobile App | Scanned PDF Report |
+| :--- | :--- | :--- | :--- |
+| **User Control** | **High.** Share only the *Assessment*. | **Low.** App access reveals *full* account history. | **High.** |
+| **Trust Anchor** | **Domain-Bound.** Bound to the Carrier. | **System-Bound.** | **Zero.** Easily forged. |
+| **Interoperability** | **High.** Verified PDF works for any body shop. | **Siloed.** | **Universal.** |
+| **Persistence** | **High.** Remains verifiable after claim closes. | **Low.** Past claims often hidden in old menus. | **Vulnerable.** |
 
-**Insurance Companies:** Insurers for policy and claims documents.
-
-**Accounting Firms:** CPAs and audit firms for financial statements.
-
-**System Integration**
-
-Insurance verification integrates with industry systems:
-
-**Policy Administration Systems:** Core insurance systems generate verification hashes at policy issuance.
-
-**ACORD Standards:** Insurance industry data standards could include verification fields.
-
-**State Insurance Databases:** Regulators maintain databases for systematic hash receipt.
-
-**Agent Portals:** Insurance agents access verification for client service.
-
-## Rationale
-
-Prevents forged adjuster reports enabling inflated claims. Domain binding verifies adjusting firm legitimacy. Tamper-evident damage assessment documentation. Fraud investigation by Special Investigations Unit. Audit trail for claim handling. Critical for claim disputes where adjuster findings determine settlement amounts.
+**Why OCR wins here:** The "Counter Reality." Decisions about repairs happen at the body shop or kitchen table. Vendors and buyers don't have logins to the carrier's private claims system. OCR-to-hash turns the **Static PDF Report** into a live digital checkpoint, ensuring the "Source of Truth" moves with the document.

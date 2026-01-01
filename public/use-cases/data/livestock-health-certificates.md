@@ -1,152 +1,112 @@
 ---
-title: "Livestock health certificates and pedigrees"
+title: "Livestock Health Certificates and Pedigrees"
 category: "Agriculture & Food"
 volume: "Small"
 retention: "Animal lifetime + 5-10 years"
 slug: "livestock-health-certificates"
-tags: ["livestock", "health", "certificates", "agriculture", "food"]
+tags: ["livestock-health", "cvi-certificate", "veterinary-inspection", "usda-aphis", "breed-pedigree", "horse-racing", "cattle-trade", "animal-welfare"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="background: #1b5e20; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+    <div>
+      <div style="font-weight: bold; font-size: 1.1em;">VETERINARY HEALTH CERTIFICATE</div>
+      <div style="font-size: 0.8em;">Certificate of Veterinary Inspection (CVI)</div>
+    </div>
+    <div style="width: 40px; height: 40px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #1b5e20; font-weight: bold; font-size: 0.7em;">USDA</div>
+  </div>
+
+  <div style="padding: 25px;">
+    <div style="text-align: center; border-bottom: 2px solid #1b5e20; padding-bottom: 10px; margin-bottom: 20px;">
+      <h3 style="margin: 0; color: #1b5e20;">OFFICIAL SHIPMENT AUTHORIZATION</h3>
+      <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;">Serial #: <span data-bracket="start" data-for="animal">]</span>CVI-2026-992288</div>
+    </div>
+
+    <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+      <p><strong>Consignor:</strong> Miller Quarter Horses, LLC (Texas)<br>
+      <strong>Consignee:</strong> Blue Ribbon Equestrian, Inc. (Florida)</p>
+
+      <div style="background: #f1f8e9; border: 1px solid #c5e1a5; padding: 15px; margin: 15px 0; border-radius: 4px;">
+        <p><strong>Animal ID:</strong> "Midnight Runner" (Microchip: 992...288)<br>
+        <strong>Species:</strong> Equine / Stallion</p>
+        <p><strong>Health Tests:</strong> Coggins: NEGATIVE (Lab #9982)<br>
+        <strong>Vaccinations:</strong> EEE/WEE, West Nile, Rabies (Current)</p>
+      </div>
+
+      <p><strong>Accredited Vet:</strong> Dr. Leslie Thompkins, DVM (Lic #9982)<br>
+      <strong>Inspection Date:</strong> March 15, 2026</p>
+    </div>
+
+    <div data-verify-line="animal" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: State Vet Office doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:tahc.texas.gov/cvi/v/992288 <span data-bracket="end" data-for="animal">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Breeder name, owner name, veterinarian, farm location
+Animal unique ID (Microchip/Tag), Consignor/Consignee names, Species/Breed, Gender, Age, specific disease test results (e.g., Coggins for horses, TB for cattle), vaccination history, accredited veterinarian name/license, date of inspection, origin/destination premises.
 
-**Certificate Variations:** Multiple certificate types or levels may exist.
-
-**Privacy Salt:** Sensitive personal information requires random salt in verification lines to prevent hash enumeration.
+**Document Types:**
+- **Certificate of Veterinary Inspection (CVI):** Mandatory for interstate/international move.
+- **Breed Pedigree / Registration:** Proving lineage and value.
+- **Equine Infectious Anemia (Coggins) Lab Report:** Essential for horse travel.
+- **Import/Export Health Certificate:** (Form 7001 equivalent).
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`tahc.texas.gov`, `usda.gov`, `aqha.com`) and current health/legal standing.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Certified** — Health certificate matches the state vet's official digital filing.
+- **Quarantined** — **ALERT:** Disease detected at origin; movement prohibited.
+- **Expired** — CVIs are typically only valid for 30 days.
+- **Verified Pedigree** — Lineage confirmed by the breed registry database.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Animal Owner / Shipper** benefits from verification.
 
-**Authenticity Confirmation:** Verify certificate after receipt to confirm it's genuine.
+**Interstate Transport:** Proving to a State Police or Ag-Inspector at a roadside checkpoint that the 10 horses in the trailer have verified "Negative Coggins" and active CVIs. This prevents the truck from being impounded or the animals being forced into a 14-day mandatory quarantine.
 
-**Credential Display:** Present verified credentials to employers or clients.
-
-**Professional Development:** Track verified certifications for career advancement.
-
-**Compliance Documentation:** Maintain verified certificates for regulatory requirements.
-
-**Renewal Planning:** Monitor certification status to avoid expiration.
+**Auction Sales:** Proving to potential buyers at a high-value cattle or horse auction that the animal's "Verified Health" and "Pedigree" aren't fabricated. A verified hash from the breed registry increases the sale price by ensuring the bloodline is real.
 
 ## Third-Party Use
 
-**Regulators and Oversight Bodies**
+**Roadside Ag-Inspectors (CBP / State Troopers)**
+**Disease Control:** Instantly verifying the health status of animals at the border. OCR-to-hash allows the officer to focus on trucks with unverified or "Forged" paper, stopping outbreaks of Foot-and-Mouth or Avian Flu before they spread.
 
-Regulatory compliance and oversight:
+**Equine / Bovine Buyers**
+**Due Diligence:** Verifying the "Soundness" and "Lineage" of an animal before wiring $100,000+.
 
-**Systematic Hash Receipt:** Receive hashes in bulk for regulatory oversight.
-
-**Audit Verification:** Verify documents during routine or targeted audits.
-
-**Compliance Monitoring:** Monitor issuer compliance with documentation requirements.
-
-**Investigation Support:** Verify documents during fraud or compliance investigations.
-
-**Consumer Protection:** Verify consumer-facing documents for protection enforcement.
-
-**Employers**
-
-Hiring and compliance verification:
-
-**Pre-Employment Screening:** Verify credentials during hiring process.
-
-**I-9 Compliance:** Verify work authorization and identity documents.
-
-**Credential Verification:** Confirm professional licenses and certifications.
-
-**Health Requirements:** Verify health-related documentation for workplace safety.
-
-**Background Checks:** Integrate verification into background check processes.
-
-**Insurance Companies**
-
-Underwriting and claims processing:
-
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Healthcare Providers**
-
-Medical care and coordination:
-
-**Medical History:** Verify patient-provided medical records and test results.
-
-**Treatment Planning:** Confirm diagnostic results for treatment decisions.
-
-**Specialist Referrals:** Validate records when coordinating care.
-
-**Insurance Authorization:** Verify coverage and authorization documents.
-
-**Compliance Requirements:** Confirm vaccination and health screening records.
+**Show Organizers**
+**Entry Vetting:** Ensuring that all 500 horses at a national show have verified vaccinations, protecting the entire population from contagious outbreaks.
 
 ## Verification Architecture
 
-**The Livestock health certificates and pedigrees Fraud Problem**
+**The "Biosecurity" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Certificate Forgery:** Using a color printer to create a "Clean CVI" for a sick horse to sneak it into a prestigious show or across a state line.
+- **Microchip Swapping:** Claiming a health certificate belongs to a healthy animal when the person is actually shipping a sick one. Verification of the *Microchip ID Hash* prevents this.
+- **Pedigree Padding:** Fabricating a lineage to sell a "Grade" horse as a "Thoroughbred" for 10x the price.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**State Veterinarian Offices.**
+**USDA APHIS.**
+**Breed Registries:** (e.g., AQHA, The Jockey Club, American Angus Assoc).
+**Electronic CVI Platforms:** (e.g., GlobalVetLink - hosting the hashes).
 
-**Hospitals and Health Systems:** Major healthcare providers and hospital networks.
+**Privacy Salt:** Critical. Livestock owner names and farm locations are sensitive. The hash must be salted to prevent "Cattle Rustling" groups from mapping high-value herds.
 
-**Clinical Laboratories:** Reference labs and hospital-based laboratories.
+## Competition vs. Electronic CVI (GlobalVetLink)
 
-**Medical Clinics:** Physician practices and specialty clinics.
+| Feature | OCR-to-Hash | eCVI Platforms (GVL) | Paper CVI Form |
+| :--- | :--- | :--- | :--- |
+| **Trust Anchor** | **Domain-Bound.** Bound to the State Vet. | **System-Bound.** Trust the vendor. | **Zero.** Easily forged. |
+| **Field Access** | **Instant.** Scan the paper at the border. | **Difficult.** Requires inspectors to have specific app logins. | **Instant.** |
+| **Adoption** | **High.** Works with existing paper workflows. | **Medium.** Requires all vets to use the same software. | **Universal.** |
+| **Integrity** | **Binds Microchip.** Protects the data. | **Data-Only.** | **Vulnerable.** |
 
-**Public Health Departments:** Government health agencies for certifications.
-
-**System Integration**
-
-Healthcare verification connects to clinical systems:
-
-**EHR Systems:** Electronic health record systems generate verification hashes.
-
-**Lab Information Systems:** Laboratory systems create verification for results.
-
-**Health Information Exchanges:** Regional HIEs facilitate verification.
-
-**FHIR Standards:** HL7 FHIR could incorporate verification endpoints.
-
-**Privacy Considerations**
-
-Sensitive personal information requires special handling:
-
-**Privacy Salt:** Random salt added to verification lines prevents hash enumeration attacks.
-
-**Minimum Disclosure:** Verification response reveals only necessary information.
-
-**Access Controls:** Verification endpoints implement appropriate access restrictions.
-
-**Audit Logging:** Verification attempts logged for security and compliance.
-
-## Rationale
-
-Prevents fake pedigrees, health certificates. Domain binding verifies veterinarian/breed registry. High-value breeding stock. Long retention. International trade verification.
+**Why OCR wins here:** The "Roadside Realities." Border inspectors work in booths with limited time. They don't have logins to 15 different private veterinary platforms. OCR-to-hash turn the **Mandatory Paper Certificate** into a universal digital bridge, bringing "Blockchain-level" biosecurity to the physical checkpoint.

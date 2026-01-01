@@ -1,157 +1,102 @@
 ---
-title: "Catering permits and temporary food facility licenses"
+title: "Catering and Temporary Food Permits"
 category: "Food & Beverage Permits"
 volume: "Medium"
 retention: "Event + 1-3 years"
 slug: "catering-permits-temporary-food"
-tags: ["catering", "permits", "temporary", "food", "beverage"]
+tags: ["food-safety", "catering", "temporary-food-facility", "health-department", "event-permit", "public-health"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #2e7d32; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="background: #2e7d32; color: #fff; padding: 15px; text-align: center;">
+    <h2 style="margin: 0; text-transform: uppercase;">LOS ANGELES COUNTY</h2>
+    <div style="font-size: 0.9em;">DEPARTMENT OF PUBLIC HEALTH</div>
+  </div>
+
+  <div style="padding: 25px;">
+    <div style="text-align: center; border-bottom: 2px solid #2e7d32; padding-bottom: 10px; margin-bottom: 20px;">
+      <h3 style="margin: 0; color: #1b5e20;">TEMPORARY FOOD FACILITY PERMIT</h3>
+      <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;">Permit #: TFF-2026-0992</div>
+    </div>
+
+    <div style="font-size: 0.95em; line-height: 1.5; color: #333;">
+      <p><strong>Caterer:</strong> <span data-bracket="start" data-for="food">]</span>Big Kahuna Burgers, LLC<br>
+      <strong>Health Permit #:</strong> PR-99228-A</p>
+
+      <div style="background: #f1f8e9; border: 1px solid #c5e1a5; padding: 10px; margin: 15px 0;">
+        <p><strong>Event:</strong> Coachella Valley Music Festival<br>
+        <strong>Location:</strong> Empire Polo Club, Indio, CA</p>
+        <p><strong>Valid Dates:</strong> April 10, 2026 to April 19, 2026</p>
+      </div>
+
+      <p style="font-size: 0.8em; color: #555;"><strong>Authorized Scope:</strong> On-site cooking, hot/cold holding of meat, poultry, and dairy. Potentially Hazardous Foods (PHF) approved.</p>
+    </div>
+
+    <div data-verify-line="food" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: LA County Health doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:publichealth.lacounty.gov/v/TFF0992 <span data-bracket="end" data-for="food">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Caterer name, event location, date, food service scope, health inspection
+Caterer name, annual health permit number, event name, exact event location, effective/expiration dates, authorized food handling scope (e.g., "Pre-packaged only" vs "On-site cooking"), health inspector ID.
 
-**Permit Types:** Various permit subtypes may exist depending on jurisdiction and specific use.
+**Document Types:**
+- **Temporary Food Facility (TFF) Permit:** For events lasting < 25 days.
+- **Catering Authorization:** Allowing a restaurant to serve off-site.
+- **Health Grade Card:** (A/B/C) issued specifically for the event booth.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`lacounty.gov`, `nyc.gov`) and current permit status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-- **Suspended** - Permit temporarily suspended
-- **Pending** - Permit application pending approval
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Active** — Permit is valid; health inspection passed.
+- **Suspended** — Critical health violation found; must stop serving.
+- **Expired** — Date of event has passed.
+- **Under Review** — Initial application filed; final inspection pending.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Caterer / Food Vendor** benefits from verification.
 
-**Legitimacy Confirmation:** After obtaining permit, verify it was properly issued and recorded.
+**Vendor Onboarding:** Proving to a festival organizer (e.g., Coachella or SXSW) that they have a valid, verified health permit. This avoids the risk of the festival being shut down by the county due to one unlicensed vendor.
 
-**Compliance Display:** Maintain verified permit for posting requirements.
-
-**Scope Verification:** Confirm permitted activities match intended use.
-
-**Expiration Tracking:** Monitor permit status to avoid lapses.
-
-**Record Keeping:** Maintain verified documentation for audits and compliance.
+**Customer Trust:** Posting the verified permit on the side of the food booth. Customers can scan it to see that "Big Kahuna Burgers" is a legitimate, inspected entity, reducing fears of food poisoning at large public events.
 
 ## Third-Party Use
 
-**Lenders and Financial Institutions**
+**Health Inspectors (Field)**
+**Rapid Triage:** During a massive festival with 500 vendors, an inspector can scan the permits while walking. "Verified by County" allows the inspector to focus their time on the booths without verified permits or those with "Suspended" status.
 
-Credit underwriting and risk assessment:
+**Event Organizers (Promoters)**
+**Liability Shield:** Ensuring 100% compliance across all vendors. Verifying every permit hash creates a digital audit trail proving the organizer did their due diligence.
 
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Insurance Companies**
-
-Underwriting and claims processing:
-
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
-
-**Government Agencies**
-
-Compliance enforcement and administration:
-
-**Inspection Verification:** Field agents verify permits and licenses at sites.
-
-**Enforcement Actions:** Confirm documentation before enforcement.
-
-**Benefit Eligibility:** Verify supporting documents for benefits administration.
-
-**Compliance Audits:** Audit documentation for regulatory compliance.
-
-**Interagency Coordination:** Share verified documents across agencies.
-
-**Real Estate Professionals**
-
-Property transactions and due diligence:
-
-**Purchase Due Diligence:** Verify property documents during transactions.
-
-**Listing Preparation:** Confirm permits and documentation for listings.
-
-**Disclosure Compliance:** Validate required disclosures and permits.
-
-**Title Research:** Verify property documents for title clearance.
-
-**Appraisal Support:** Confirm documented improvements and permits.
+**Insurance Underwriters**
+**Event Coverage:** Verifying that all food vendors are permitted before binding the event's liability insurance.
 
 ## Verification Architecture
 
-**The Catering permits and temporary food facility licenses Fraud Problem**
+**The "Street Food" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Permit Sharing:** Using one property's permit for work at another location
-- **Scope Expansion:** Expanding permitted activities beyond authorization
-- **Contractor Fraud:** Claiming permits that were never obtained
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Permit Swapping:** A vendor with a valid permit for a "Smoothie Booth" letting their cousin use a copy of that permit for an uninspected "Raw Oyster" booth.
+- **Date Forgery:** Altering a permit from last year's festival to avoid the $200 permit fee for this year.
+- **Fabricated Scope:** Editing a "Pre-packaged Only" permit to allow "On-site Grilling" to avoid the stricter equipment requirements.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**County Health Departments:** (The primary regulating authority).
+**City Finance Depts:** (In some cities that combine health/business licensing).
 
-**Government Entities:** Counties, cities, and special districts maintain property records.
+## Competition vs. Public Health Lists
 
-**Title Companies:** Title insurers and escrow companies for transaction documents.
+| Feature | OCR-to-Hash | Public Health Website | Paper Permit Card |
+| :--- | :--- | :--- | :--- |
+| **Field Access** | **Instant.** Scan the booth window. | **Difficult.** County websites are often un-optimized for mobile and hard to search by "Event Name." | **Instant.** |
+| **Integrity** | **Binds Scope.** Protects the "Cooking Method." | **General.** Often just says "Active" without the booth-specific limits. | **Zero.** Easily forged. |
+| **Offline Proof** | **Strong.** The paper is the anchor. | **None.** Requires high-speed data. | **Medium.** |
+| **Trust** | **High.** Bound to the County domain. | **Medium.** Prone to phishing clones. | **Zero.** |
 
-**Lending Institutions:** Banks and mortgage companies for loan documents.
-
-**Appraisal Firms:** Licensed appraisers for property valuations.
-
-**System Integration**
-
-Real estate verification connects to property systems:
-
-**Recording Systems:** County recorder systems for property document registration.
-
-**MLS Integration:** Multiple listing services for property documentation.
-
-**Title Plants:** Title companies maintain verification for title searches.
-
-**E-Recording:** Electronic recording systems generate verification at recording.
-
-## Rationale
-
-Prevents fake catering permits. Domain binding verifies health department. Event-specific authorization. Prevents foodborne illness liability. Public health protection.
+**Why OCR wins here:** The "Festival Ground" reality. Cell service at Coachella is notoriously bad due to 100,000 people on one tower. OCR-to-hash turns the **Paper Permit** (which is always there) into a trusted digital proof that can be verified with minimal data, protecting public health in high-density environments.

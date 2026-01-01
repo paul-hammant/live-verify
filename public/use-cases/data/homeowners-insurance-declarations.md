@@ -1,171 +1,129 @@
 ---
-title: "Homeowners insurance declarations page"
+title: "Homeowners Insurance Declarations Page"
 category: "Real Estate & Property"
-volume: "Small"
-retention: "Policy term + 7 years (claims)"
+volume: "Large"
+retention: "Policy term + 7 years (claims, mortgage audits)"
 slug: "homeowners-insurance-declarations"
-tags: ["homeowners", "insurance", "declarations", "real", "estate", "property"]
+tags: ["homeowners-insurance", "dec-page", "mortgage-compliance", "dwelling-coverage", "hazard-insurance", "escrow-audit", "real-estate-closing"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #007bff; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <div style="background: #007bff; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+    <div>
+      <div style="font-weight: bold; font-size: 1.2em;">STATE FARM 🔴</div>
+      <div style="font-size: 0.8em; opacity: 0.9;">Homeowners Policy Declarations</div>
+    </div>
+    <div style="text-align: right;">
+      <div style="font-size: 0.8em;">Policy #: 99-BC-9922-8</div>
+    </div>
+  </div>
+
+  <div style="padding: 25px;">
+    <div style="display: flex; justify-content: space-between; margin-bottom: 25px;">
+      <div>
+        <strong>Insured:</strong><br>
+        <span data-bracket="start" data-for="ho-dec">]</span><strong>JANE A. DOE</strong><br>
+        123 Maple Street<br>
+        Anytown, USA 12345
+      </div>
+      <div style="text-align: right;">
+        <strong>Policy Period:</strong><br>
+        Jan 01, 2026 - Jan 01, 2027<br>
+        <strong>Form:</strong> HO-3 (Special)
+      </div>
+    </div>
+
+    <h3 style="border-bottom: 2px solid #007bff; padding-bottom: 5px; color: #007bff;">COVERAGES & LIMITS</h3>
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px; font-size: 0.9em;">
+      <tr>
+        <td style="padding: 8px 0;"><strong>A. Dwelling</strong></td>
+        <td style="text-align: right;">$ 450,000.00</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px 0;"><strong>C. Personal Property</strong></td>
+        <td style="text-align: right;">$ 225,000.00</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px 0;"><strong>L. Personal Liability</strong></td>
+        <td style="text-align: right;">$ 300,000.00</td>
+      </tr>
+      <tr style="border-top: 1px solid #ddd;">
+        <td style="padding: 8px 0;">Deductible (All Perils)</td>
+        <td style="text-align: right;">$ 1,000.00</td>
+      </tr>
+    </table>
+
+    <div style="font-size: 0.85em; color: #555;">
+      <strong>Mortgagee:</strong> Bank of America, N.A. (ISAOA/ATIMA) • Loan #88776655
+    </div>
+
+    <div data-verify-line="ho-dec" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: State Farm doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:statefarm.com/policy/v/99BC99228 <span data-bracket="end" data-for="ho-dec">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Insured name, property address, coverage amounts, deductibles, agent
+Named insured, property address, dwelling limit (Coverage A), personal property limit (Coverage C), liability limit, deductible amount, policy form (HO-3/HO-5), effective/expiration dates, Mortgagee Clause (Lienholder info), issuing carrier.
 
-**Policy Forms:** Different policy forms and endorsements may apply.
+**Document Types:**
+- **Declarations Page (Dec Page):** The primary 1-2 page summary.
+- **Binder:** Temporary proof for new home closings.
+- **Evidence of Property Insurance:** Specifically for lenders.
+- **Endorsement Schedule:** Listing specific riders (e.g., jewelry/flood).
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`statefarm.com`, `geico.com`) and current policy standing.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-- **Cancelled** - Policy cancelled before expiration
-- **Non-Renewed** - Policy expired and not renewed
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **In Force** — Premium paid; policy active.
+- **Pending Cancellation** — **ALERT:** Notice sent for non-payment.
+- **Expired** — Coverage ended; no renewal found.
+- **Amended** — A revised Dec Page exists (e.g., due to a limit increase).
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Homeowner (Insured)** benefits from verification.
 
-**Proof of Coverage:** Verify coverage is active when needed for compliance or access.
+**Escrow Audit Defense:** Proving to a mortgage servicer that the premium amount on the "Dec Page" is the **Verified Correct Amount**. This prevents the servicer from "Shorting" the escrow account or over-charging the homeowner based on an outdated or misread PDF.
 
-**Claims Support:** Confirm policy details when filing claims.
-
-**Coverage Confirmation:** Verify coverage terms match expectations after purchase.
-
-**Third-Party Presentation:** Provide verified proof to landlords, lenders, or employers.
-
-**Renewal Verification:** Confirm renewal was processed and coverage continues.
+**Claim Substantiation:** Proving the exact coverage limits at the time of a loss, ensuring the adjuster can't "Misinterpret" the paper policy to lower a payout.
 
 ## Third-Party Use
 
-**Regulators and Oversight Bodies**
+**Mortgage Lenders / Servicers**
+**Force-Placed Insurance Prevention:** Lenders currently spend millions manually calling brokers to verify that a policy hasn't lapsed. OCR-to-hash allows for **automated continuous monitoring**. If a policy is cancelled, the hash status updates instantly, allowing the lender to notify the borrower *before* force-placing expensive insurance.
 
-Regulatory compliance and oversight:
+**Real Estate Closing Agents**
+**Clear to Close:** Instantly verifying that the buyer's new policy meets the lender's "Replacement Cost" requirements during the high-pressure 24 hours before a closing.
 
-**Systematic Hash Receipt:** Receive hashes in bulk for regulatory oversight.
-
-**Audit Verification:** Verify documents during routine or targeted audits.
-
-**Compliance Monitoring:** Monitor issuer compliance with documentation requirements.
-
-**Investigation Support:** Verify documents during fraud or compliance investigations.
-
-**Consumer Protection:** Verify consumer-facing documents for protection enforcement.
-
-**Lenders and Financial Institutions**
-
-Credit underwriting and risk assessment:
-
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Insurance Companies**
-
-Underwriting and claims processing:
-
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
-
-**Government Agencies**
-
-Compliance enforcement and administration:
-
-**Inspection Verification:** Field agents verify permits and licenses at sites.
-
-**Enforcement Actions:** Confirm documentation before enforcement.
-
-**Benefit Eligibility:** Verify supporting documents for benefits administration.
-
-**Compliance Audits:** Audit documentation for regulatory compliance.
-
-**Interagency Coordination:** Share verified documents across agencies.
-
-**Real Estate Professionals**
-
-Property transactions and due diligence:
-
-**Purchase Due Diligence:** Verify property documents during transactions.
-
-**Listing Preparation:** Confirm permits and documentation for listings.
-
-**Disclosure Compliance:** Validate required disclosures and permits.
-
-**Title Research:** Verify property documents for title clearance.
-
-**Appraisal Support:** Confirm documented improvements and permits.
+**Home Service Contractors**
+**Liability Check:** Verifying a client's "Personal Liability" limit before performing high-risk work (e.g., large tree removal) on the property.
 
 ## Verification Architecture
 
-**The Homeowners insurance declarations page Fraud Problem**
+**The "Mortgage Fraud" Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Coverage Inflation:** Inflating coverage limits or adding non-existent coverage
-- **Backdating:** Creating policies with false effective dates
-- **Ghost Policies:** Fabricated policies from non-existent insurers
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Ghost Policies:** Buying a policy to get the "Dec Page" needed for a loan closing, then immediately cancelling it for a refund.
+- **Limit Inflation:** Editing a $250k policy to read $500k to meet a lender's loan-to-value (LTV) requirements.
+- **Mortgagee Erasure:** Removing the bank's name from the "Mortgagee Clause" to prevent the bank from receiving a claim check.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Direct Carriers:** (State Farm, Allstate, Geico).
+**Agency Networks:** (Hosting verified hashes for local agents).
+**Insurtech Platforms:** (Lemonade, Hippo).
 
-**Government Entities:** Counties, cities, and special districts maintain property records.
+## Competition vs. Broker Portals
 
-**Title Companies:** Title insurers and escrow companies for transaction documents.
+| Feature | OCR-to-Hash | Broker Portal | Scanned PDF / Paper |
+| :--- | :--- | :--- | :--- |
+| **Integrity** | **Cryptographic.** Binds the *Address* to the *Limit*. | **System-Bound.** | **Zero.** Easily forged. |
+| **Interoperability** | **Universal.** Works across all carriers. | **Siloed.** Hard to aggregate 50 different logins. | **Universal.** |
+| **Freshness** | **Real-time.** Shows if cancelled *today*. | **Laggy.** Often 24-48 hours behind. | **Static.** |
+| **Audit-ability** | **High.** Digital trail for regulators. | **Low.** Internal only. | **Manual.** |
 
-**Lending Institutions:** Banks and mortgage companies for loan documents.
-
-**Appraisal Firms:** Licensed appraisers for property valuations.
-
-**System Integration**
-
-Insurance verification integrates with industry systems:
-
-**Policy Administration Systems:** Core insurance systems generate verification hashes at policy issuance.
-
-**ACORD Standards:** Insurance industry data standards could include verification fields.
-
-**State Insurance Databases:** Regulators maintain databases for systematic hash receipt.
-
-**Agent Portals:** Insurance agents access verification for client service.
-
-## Rationale
-
-Domain binding verifies insurance company. Prevents fake insurance certificates. Certificate format suitable for OCR. Mortgage lender verification. Claims documentation.
+**Why OCR wins here:** The "Handoff Gap." Insurance is a private contract, but it's a **Public Requirement** for the mortgage industry. OCR-to-hash turns the **Private Policy** into a portable, cryptographically trusted asset that can be safely shared with banks and lawyers without exposing the homeowner's full medical or financial history.

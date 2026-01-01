@@ -1,215 +1,131 @@
 ---
-title: "Bills of Lading"
+title: "Bills of Lading (Ocean/Multimodal)"
 category: "Shipping & Freight"
-volume: "Medium"
+volume: "Large"
 retention: "Shipment completion plus 7-10 years (disputes, customs audits)"
 slug: "bills-of-lading"
-tags: ["bills", "lading", "logistics", "transportation"]
+tags: ["shipping", "logistics", "maritime", "trade-finance", "bill-of-lading", "bol", "cargo"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 1px solid #000; background: #fff; padding: 0;">
+  <div style="background: #002d62; color: #fff; padding: 10px; display: flex; justify-content: space-between; align-items: center;">
+    <div style="font-weight: bold; font-size: 1.2em;">MAERSK LINE</div>
+    <div style="font-size: 0.8em; text-align: right;">B/L No: <span data-bracket="start" data-for="bol">]</span>MAE-9988776655</div>
+  </div>
+
+  <div style="padding: 10px; font-size: 0.8em;">
+    <div style="display: flex; border-bottom: 1px solid #000;">
+      <div style="width: 50%; border-right: 1px solid #000; padding: 5px;">
+        <strong>Shipper:</strong><br>
+        Global Coffee Exporters<br>
+        Santos, Brazil
+      </div>
+      <div style="width: 50%; padding: 5px;">
+        <strong>Consignee:</strong><br>
+        Artisan Roasters Corp.<br>
+        Brooklyn, NY, USA
+      </div>
+    </div>
+
+    <div style="display: flex; border-bottom: 1px solid #000; background: #f9f9f9;">
+      <div style="width: 33%; border-right: 1px solid #000; padding: 5px;">
+        <strong>Vessel:</strong><br>
+        MAERSK MC-KINNEY
+      </div>
+      <div style="width: 33%; border-right: 1px solid #000; padding: 5px;">
+        <strong>Port of Loading:</strong><br>
+        SANTOS, BRAZIL
+      </div>
+      <div style="width: 34%; padding: 5px;">
+        <strong>Port of Discharge:</strong><br>
+        NEW YORK, USA
+      </div>
+    </div>
+
+    <table style="width: 100%; border-collapse: collapse; margin-top: 5px;">
+      <tr style="border-bottom: 1px solid #000;">
+        <th style="text-align: left; padding: 2px;">Container No.</th>
+        <th style="text-align: left; padding: 2px;">Description</th>
+        <th style="text-align: right; padding: 2px;">Weight (KG)</th>
+      </tr>
+      <tr>
+        <td style="padding: 2px;">MSKU 123456-7</td>
+        <td style="padding: 2px;">200 BAGS ARABICA COFFEE</td>
+        <td style="text-align: right; padding: 2px;">12,000.00</td>
+      </tr>
+    </table>
+
+    <div style="margin-top: 15px; border-top: 1px solid #000; padding-top: 5px; font-style: italic;">
+      RECEIVED by the Carrier the Goods as specified above in apparent good order and condition.
+    </div>
+
+    <div data-verify-line="bol" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #555; text-align: center;"
+      title="Demo only: Maersk doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:maersk.com/bl/v/9988776655 <span data-bracket="end" data-for="bol">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Shipper name and address, consignee name and address, notify party, origin port/location, destination port/location, vessel name and voyage number, booking number, container numbers, seal numbers, cargo description, gross weight, package count, freight terms (prepaid/collect), B/L number.
+B/L Number, shipper, consignee, vessel name, voyage number, port of loading/discharge, container numbers, seal numbers, cargo description, gross weight, date of loading (shipped on board).
 
-**Document Types:** Several B/L variants exist:
-- **Master Bill of Lading (MBL):** Issued by ocean carriers for container shipments
-- **House Bill of Lading (HBL):** Issued by freight forwarders for consolidated shipments
-- **Sea Waybill:** Non-negotiable alternative to B/L
-- **Multimodal/Combined Transport:** Covers multiple transport modes
-
-**Scanning Considerations:** The front page of a B/L contains the critical routing and cargo information in standardized layouts. Port terminals and customs offices can verify this page quickly. Detailed cargo manifests on subsequent pages may require flatbed scanning.
+**Document Types:**
+- **Original Bill of Lading (OBL):** Negotiable document of title.
+- **Sea Waybill:** Non-negotiable; for trusted parties.
+- **House B/L:** Issued by a freight forwarder (NVOCC).
+- **Switch B/L:** Re-issued in transit for trade secrecy.
 
 ## Data Visible After Verification
 
-Shows the issuer domain (the carrier or forwarder) and the responder text.
+Shows the issuer domain (the Carrier or Forwarder) and current shipment status.
 
 **Status Indications:**
-- **Verified** - B/L is genuine and current
-- **Surrendered** - Original B/L has been surrendered for cargo release
-- **Amended** - B/L has been amended; later version exists
-- **Switch B/L Issued** - Original replaced with a switch B/L
-- **Telex Released** - Original surrendered electronically; cargo released at destination
+- **Issued** — Document created; cargo received.
+- **Shipped on Board** — Cargo physically on the vessel.
+- **Surrendered** — OBL returned to carrier for release.
+- **Released** — Cargo handed over at destination.
+- **Void** — Replaced by a Switch B/L or cancelled.
 
-**Public Ledger Link:** The verification response may link to the B/L's position in a shipping platform or carrier's manifest, demonstrating the shipment exists within the carrier's operational records.
+## Second-Party Use
 
-## Second-Party Use (Shipper Verifying Their Own B/L)
+The **Shipper** or **Exporter** benefits from verification.
 
-Shippers benefit from verifying bills of lading they receive.
+**Trade Finance (L/C):** Proving to a bank that the B/L being presented for payment under a Letter of Credit is authentic and hasn't been altered (e.g., changing the "Shipped on Board" date to meet a deadline).
 
-**Document Authenticity:** After cargo is loaded, shippers receive B/Ls from carriers or forwarders. Verification confirms these are genuine.
-
-**Terms Verification:** Shippers can verify B/L terms match the booking—correct ports, cargo description, container numbers.
-
-**Letter of Credit Compliance:** When payment requires documentary compliance, shippers verify B/Ls meet L/C requirements before presentation.
-
-**Insurance Documentation:** Cargo insurance claims require authentic B/Ls. Verification before shipping creates audit trail.
-
-**Freight Disputes:** If freight charge disputes arise, shippers have verified evidence of original terms.
+**Payment Assurance:** A buyer in NYC can verify the B/L provided by the Brazilian seller to ensure the goods are actually on a Maersk ship before wiring the final balance.
 
 ## Third-Party Use
 
-**Consignees and Importers**
+**Banks (Trade Finance)**
+**Collateral Verification:** Negotiable B/Ls are documents of title (they represent the cargo). Banks taking B/Ls as security need to verify they are real and not "Phantom B/Ls" created by fraudsters.
 
-Cargo receipt:
-
-**Authenticity Before Payment:** Importers paying against documents (D/P terms) verify B/Ls before releasing payment to shippers.
-
-**Cargo Release:** Consignees presenting B/Ls for cargo pickup can verify they hold genuine documents.
-
-**Customs Clearance:** Customs brokers acting for consignees verify B/Ls match carrier records.
-
-**Damage Claims:** If cargo arrives damaged, verified B/Ls document what the carrier received.
-
-**Banks and Trade Finance**
-
-Documentary collections and letters of credit:
-
-**Document Examination:** Banks examining documents under L/Cs verify B/L authenticity before paying.
-
-**Title Document:** Negotiable B/Ls are documents of title. Banks taking B/Ls as security verify they're genuine.
-
-**Discrepancy Review:** When alleged discrepancies arise, banks verify the original B/L terms.
-
-**Trade Finance Platforms:** Platforms processing trade documents integrate B/L verification.
-
-**Port Terminals and Warehouses**
-
-Cargo handling:
-
-**Release Authorization:** Terminals releasing cargo verify the B/L presented matches their records.
-
-**Delivery Order Issuance:** Before issuing delivery orders, terminals verify B/L authenticity.
-
-**Container Tracking:** Terminal operators can verify container movements against B/L documentation.
-
-**Warehouse Receipts:** Bonded warehouses receiving cargo verify B/Ls before accepting custody.
+**Port Terminals**
+**Release Authorization:** Before releasing a $50,000 container to a trucker, the terminal clerk scans the B/L. "Verified by Maersk" prevents "fictitious pickup" where thieves use fake paper docs to steal cargo.
 
 **Customs Authorities**
-
-Trade compliance:
-
-**Import Declaration:** Customs verifies B/L authenticity when processing import entries.
-
-**Valuation:** B/L terms (freight prepaid/collect) affect dutiable value calculations.
-
-**Origin Verification:** B/L routing supports origin claims for preferential duty rates.
-
-**Manifest Matching:** Customs matches B/Ls against advance manifest filings.
-
-**Marine Insurance**
-
-Cargo coverage:
-
-**Coverage Attachment:** Marine insurance attaches when cargo is loaded. B/L is evidence of loading.
-
-**Claims Documentation:** Cargo claims require authentic B/Ls documenting shipment details.
-
-**Subrogation:** Insurers pursuing subrogation against carriers verify B/L terms.
-
-**General Average:** In general average situations, cargo interests prove their position via verified B/Ls.
-
-**Freight Forwarders**
-
-Logistics coordination:
-
-**Master B/L Verification:** Forwarders issuing house B/Ls verify the underlying master B/L.
-
-**Carrier Relations:** Forwarders verify B/Ls received from carriers before issuing house documents.
-
-**Consolidation Documentation:** LCL (less than container load) shipments require matching multiple house B/Ls to a master B/L.
+**Enforcement:** Verifying that the weight and description on the B/L match the import manifest, catching smuggling or tax evasion.
 
 ## Verification Architecture
 
-**The B/L Fraud Problem**
+**The "Phantom Cargo" Fraud Problem**
 
-Bill of lading fraud is a significant trade risk:
+- **Fabricated B/Ls:** Creating high-quality fakes of Maersk/MSC documents for cargo that doesn't exist, used to defraud banks out of millions in "financing."
+- **Ante-Dating:** Changing the date on the B/L from June 5th to June 1st to comply with a Letter of Credit that expired on the 2nd.
+- **Switch B/L Abuse:** Using a fake switch B/L to redirect cargo to a different port for theft.
 
-- **Fabricated B/Ls:** Entirely fake documents claiming non-existent shipments
-- **Ante-Dated B/Ls:** B/Ls with false loading dates to meet L/C deadlines
-- **Claused vs. Clean:** Altering damage notations (clausing) to appear clean
-- **Quantity Fraud:** B/Ls showing more cargo than actually loaded
-- **Multiple Originals Fraud:** Issuing more than the stated set of originals
-- **Switch B/L Fraud:** Illegitimate switch B/Ls to redirect cargo
+**Issuer Types**
 
-OCR-to-hash addresses fabrication and alteration. Ante-dating and quantity fraud require verification against carrier loading records. Original set control is a separate document management challenge.
+**Ocean Carriers:** (Maersk, MSC, Hapag-Lloyd).
+**NVOCCs:** (DHL, Kuehne+Nagel).
+**Maritime Platforms:** (TradeLens, GSBN).
 
-**Carriers and Forwarders as Issuers**
+## Competition vs. Electronic B/L (eBL)
 
-Different parties issue different B/L types:
+| Feature | OCR-to-Hash | eBL Platform (Bolero/WAVE) | Paper BOL |
+| :--- | :--- | :--- | :--- |
+| **Connectivity** | **Offline-Ready.** Proves the paper at the gate. | **Fragile.** Requires all parties to be on the same platform. | **Manual.** Relies on watermarks. |
+| **Trust** | **Domain-Bound.** Trust the Carrier directly. | **Closed Loop.** Trust the platform provider. | **Visual.** Very easy to forge. |
+| **Interoperability** | **Universal.** Works for any carrier with a domain. | **Siloed.** Bolero users can't easily talk to WAVE users. | **Universal.** |
 
-**Ocean Carriers:** Maersk, MSC, CMA CGM, and other carriers issue master B/Ls. They have operational systems that could generate verification hashes.
-
-**NVOCCs and Freight Forwarders:** Issue house B/Ls against carrier master B/Ls. Forwarder verification endpoints confirm house B/L authenticity.
-
-**Multimodal Operators:** Issue combined transport documents covering multiple modes.
-
-**Carrier Alliances:** Alliance partners (2M, Ocean Alliance, THE Alliance) might coordinate verification infrastructure.
-
-**Shipping Platform Integration**
-
-Digital shipping platforms are transforming B/L handling:
-
-**TradeLens:** Maersk/IBM platform tracking shipments across carriers. Could integrate B/L verification.
-
-**GSBN (Global Shipping Business Network):** Carrier consortium for digital documentation.
-
-**DCSA (Digital Container Shipping Association):** Industry standards for electronic B/Ls.
-
-**Bolero and essDOCS:** Electronic B/L platforms with legal frameworks for digital documents.
-
-These platforms handle electronic B/Ls; OCR-to-hash provides verification for paper B/Ls that still predominate in many trades.
-
-**Original B/L Sets**
-
-Negotiable B/Ls are issued in sets of originals (typically 3/3):
-
-**Original Control:** All originals must be surrendered for cargo release. Verification should indicate how many originals exist and their status.
-
-**Presentation:** When one original is presented, others become void. Verification can indicate "Original presented/surrendered."
-
-**Lost Originals:** Letter of indemnity procedures for lost originals. Verification can confirm whether originals remain outstanding.
-
-**Telex Release and Electronic B/L**
-
-Alternatives to physical original B/Ls:
-
-**Telex Release:** Shipper surrenders originals at origin; carrier telexes destination to release without original presentation. Verification shows "Telex Released."
-
-**Sea Waybill:** Non-negotiable from issuance. Named consignee receives cargo without presenting originals.
-
-**Electronic B/L:** Legal frameworks (CMI Rules, Bolero, essDOCS) enable electronic negotiable documents. Verification transitions from document-level to transaction-level.
-
-**Switch B/L Considerations**
-
-Switch B/Ls replace originals in transit:
-
-**Legitimate Use:** Traders using switch B/Ls to hide origin or maintain confidentiality of trade relationships.
-
-**Verification Chain:** Both original and switch B/L should be verifiable. Verification response should indicate "Replaced by switch B/L [number]" or "Switch B/L replacing [original number]."
-
-**Fraud Risk:** Switch B/L abuse for cargo misdirection. Verification helps detect unauthorized switches.
-
-**Port and Terminal Integration**
-
-Verification at cargo handling points:
-
-**Gate Operations:** Terminals verify B/Ls when truckers arrive for pickup.
-
-**Vessel Operations:** Stevedores verify B/Ls against cargo manifests during loading.
-
-**Customs Inspections:** Inspectors verify B/Ls during physical examinations.
-
-**Free Trade Zones:** FTZ operators verify B/Ls for zone admission.
-
-Real-time verification at these points prevents fraudulent cargo release.
-
-**Multimodal Considerations**
-
-When shipments involve multiple transport modes:
-
-**Combined Transport B/L:** Single document covering ocean, rail, and truck segments. Verification confirms the entire routing.
-
-**Transshipment Points:** At transshipment, verification confirms cargo is authorized to continue.
-
-**Inland Carriers:** Trucking companies and railroads receiving cargo from ports can verify the B/L authorizing inland movement.
-
-**Intermodal Equipment:** Verification can be tied to container and chassis interchange.
+**Why OCR wins here:** The "Platform War." The shipping industry is currently fighting over 5 different eBL standards. OCR-to-hash bypasses the war by providing a **universal digital overlay** for the one thing everyone already uses: the paper (or PDF) Bill of Lading.

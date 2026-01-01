@@ -1,122 +1,129 @@
 ---
-title: "Cruise final folios and onboard account statements"
+title: "Cruise Final Folios and Statements"
 category: "Travel & Hospitality"
 volume: "Large"
 retention: "Voyage + 3-7 years (expense)"
 slug: "cruise-final-folios"
-tags: ["cruise", "final", "folios", "travel", "hospitality"]
+tags: ["cruise", "folio", "onboard-account", "travel-expense", "vacation-receipt", "carnival", "royal-caribbean"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="background: #1a237e; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+    <div>
+      <div style="font-weight: bold; font-size: 1.2em;">ROYAL CARIBBEAN INTERNATIONAL</div>
+      <div style="font-size: 0.8em;">Final Guest Folio - <em>Wonder of the Seas</em></div>
+    </div>
+    <div style="text-align: right;">
+      <div style="font-size: 0.8em;">Folio #: 99228877-X</div>
+    </div>
+  </div>
+
+  <div style="padding: 25px;">
+    <div style="display: flex; justify-content: space-between; font-size: 0.9em; margin-bottom: 20px; color: #555;">
+      <div>
+        <strong>Guest:</strong> <span data-bracket="start" data-for="cruise">]</span>SARAH J. DOE<br>
+        <strong>Stateroom:</strong> 12504 (Deck 12)
+      </div>
+      <div style="text-align: right;">
+        <strong>Voyage Dates:</strong> Mar 08 - Mar 15, 2026<br>
+        <strong>Reservation:</strong> L7XK9B
+      </div>
+    </div>
+
+    <table style="width: 100%; border-collapse: collapse; font-size: 0.85em;">
+      <tr style="border-bottom: 2px solid #1a237e; background: #f5f5f5;">
+        <th style="padding: 5px; text-align: left;">Description</th>
+        <th style="padding: 5px; text-align: right;">Amount</th>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border-bottom: 1px solid #eee;">Internet Package - VOOM (Unlimited)</td>
+        <td style="text-align: right; padding: 5px;">$ 142.50</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border-bottom: 1px solid #eee;">Onboard Gratuities (Pre-paid)</td>
+        <td style="text-align: right; padding: 5px;">$ 112.00</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border-bottom: 1px solid #eee;">Chops Grille (Specialty Dining)</td>
+        <td style="text-align: right; padding: 5px;">$ 55.00</td>
+      </tr>
+      <tr style="font-weight: bold; font-size: 1.1em;">
+        <td style="padding: 5px;">TOTAL ONBOARD CHARGES:</td>
+        <td style="text-align: right; padding: 5px;">$ 309.50</td>
+      </tr>
+    </table>
+
+    <p style="margin-top: 20px; font-size: 0.8em; color: #555; font-style: italic;">
+      This statement reflects all settled charges as of the date of disembarkation.
+    </p>
+
+    <div data-verify-line="cruise" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+      title="Demo only: Royal Caribbean doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:royalcaribbean.com/folios/v/99228877 <span data-bracket="end" data-for="cruise">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Passenger name, cabin, itemized onboard charges, drinks, excursions, tips, total
+Passenger name, reservation ID, ship name, voyage dates, stateroom number, itemized charges (Internet, Gratuities, Drinks, Excursions), total settled amount, payment method (last 4 digits).
+
+**Document Types:**
+- **Final Guest Folio:** Delivered under the door on the last morning.
+- **Interim Statement:** For mid-cruise budget checks.
+- **Shore Excursion Receipt:** Proving participation in a specific tour.
+- **VAT / Tax Invoice:** For European cruises requiring tax documentation.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`royalcaribbean.com`, `carnival.com`) and folio status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Settled** — Account paid in full; disembarkation authorized.
+- **Refunded** — A credit was issued post-cruise (e.g., for a missed port).
+- **Disputed** — Passenger has formally challenged a charge.
+- **Amended** — A revised folio exists (e.g., after a post-cruise correction).
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Cruise Guest** benefits from verification.
 
-**Document Authenticity:** Verify received documents are genuine and properly issued.
+**Business Expense Reimbursement:** Proving to an employer that the $142.50 charge for "Internet Package" was a verified business cost and not a series of cocktails. Verification separates "Work Expenses" from "Personal Luxury" on a complex multi-page folio.
 
-**Third-Party Presentation:** Provide verified documentation when required.
-
-**Compliance Requirements:** Meet regulatory or contractual documentation requirements.
-
-**Record Keeping:** Maintain verified records for future reference or audits.
-
-**Dispute Prevention:** Establish authenticity to prevent future challenges.
+**Tax Compliance:** Differentiating between non-deductible personal travel and deductible business components (e.g., a "Seminar at Sea" registration fee) using verified, non-alterable line items.
 
 ## Third-Party Use
 
-**Insurance Companies**
+**Corporate Expense Platforms (SAP Concur / Expensify)**
+**Automatic Audit:** The platform can scan the folio hash to instantly validate line items against the cruise line's official ledger, flagging "Photoshopped" upgrades or deleted personal charges.
 
-Underwriting and claims processing:
+**Travel Insurers**
+**Claim Substantiation:** If a passenger falls ill and needs to prove they didn't consume their "Pre-paid Excursions," the verified folio provides proof of credit or lack thereof from the cruise line.
 
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Customs and Border Authorities**
-
-International trade compliance:
-
-**Import Clearance:** Verify shipping documents for customs clearance.
-
-**Duty Assessment:** Validate commercial invoices and declarations.
-
-**Trade Compliance:** Confirm certificates of origin and trade documents.
-
-**Security Screening:** Verify cargo documentation for security.
-
-**Export Controls:** Validate export documentation and licenses.
-
-**Freight Forwarders and Carriers**
-
-Logistics and transportation:
-
-**Shipment Acceptance:** Verify documents before accepting cargo.
-
-**Carrier Handoffs:** Validate documentation at transfer points.
-
-**Liability Determination:** Reference verified documents for claims.
-
-**Route Planning:** Confirm documentation for transit requirements.
-
-**Delivery Confirmation:** Verify documents at final delivery.
+**Banks (Credit Card Disputes)**
+**Resolution:** Instantly verifying the "Final Settled Amount" during a "Double-Charge" dispute, bypassing the 30-day manual evidence cycle.
 
 ## Verification Architecture
 
-**The Cruise final folios and onboard account statements Fraud Problem**
+**The "Folio Scrubbing" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Personal Charge Deletion:** Employees editing their cruise folio to "delete" the Casino and Bar charges before sending it to Finance for reimbursement of the Internet and Gratuities.
+- **Fabricated Credits:** Adding a fake "Onboard Credit" to a receipt to get cash back from an insurance claim.
+- **Reservation Theft:** Using a template to create a fake folio for a trip the traveler never actually took to claim business travel deductions.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Cruise Lines:** (Royal Caribbean, Carnival, NCL, MSC).
+**River Cruise Operators:** (Viking, AmaWaterways).
+**Onboard Payment Systems:** (e.g., OceanMedallion).
 
-**Primary Issuers:** Organizations with direct authority to issue these documents.
+## Competition vs. Credit Card Statements
 
-**Licensed Professionals:** Professionals authorized to create and certify documents.
+| Feature | OCR-to-Hash | Credit Card Statement | Scanned PDF Folio |
+| :--- | :--- | :--- | :--- |
+| **Granularity** | **High.** Shows specific items (Wifi vs Alcohol). | **Zero.** Just shows "CARNIVAL CRUISES $1,200". | **High.** But untrusted. |
+| **Integrity** | **Cryptographic.** Binds every line item. | **High.** But lacks detail. | **Zero.** Easily edited. |
+| **Privacy** | **Selective.** Share only the verified extract. | **Low.** Exposes all other personal spending on the card. | **Vulnerable.** |
+| **Freshness** | **Instant.** Verified at disembarkation. | **Laggy.** Charges often aggregate at the end. | **Static.** |
 
-**Government Agencies:** Federal, state, or local agencies with jurisdiction.
-
-**Industry Bodies:** Trade associations and professional organizations.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Prevents altered cruise folios (onboard charge disputes). Domain binding verifies cruise line. Expense claim verification. Prevents charge dispute fraud. Multi-page: Cruise folios multi-page with itemized daily charges.
+**Why OCR wins here:** The "Scrubbing" problem. Corporate finance departments hate cruise folios because they are 10 pages long and full of personal "fun" spending. OCR-to-hash allows an employee to provide a **Verified Extract** of just the business items, giving the company 100% trust without the employee needing to share their "Bar Tab" with their boss.

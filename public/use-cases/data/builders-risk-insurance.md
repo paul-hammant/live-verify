@@ -1,129 +1,123 @@
 ---
-title: "Builders risk insurance policies"
+title: "Builders Risk Insurance Policies"
 category: "Specialty Insurance"
 volume: "Small"
 retention: "Construction period + 7-10 years"
 slug: "builders-risk-insurance"
-tags: ["builders", "risk", "insurance", "management"]
+tags: ["construction", "insurance", "builders-risk", "contractor", "real-estate-development", "risk-management"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Helvetica', sans-serif; border: 2px solid #1565c0; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <div style="background: #1565c0; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+    <div>
+      <div style="font-weight: bold; font-size: 1.2em;">ZURICH NORTH AMERICA</div>
+      <div style="font-size: 0.8em;">Construction Specialty Underwriters</div>
+    </div>
+    <div style="text-align: right;">
+      <div style="font-size: 0.8em;">Policy #: BRI-99228877-26</div>
+    </div>
+  </div>
+
+  <div style="padding: 30px;">
+    <h2 style="text-align: center; color: #1565c0; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Builders Risk Certificate</h2>
+
+    <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
+      <p><strong>Project Name:</strong> <span data-bracket="start" data-for="build">]</span>Liberty High School Addition<br>
+      <strong>Location:</strong> 4500 Skyline Blvd, Austin, TX</p>
+
+      <p><strong>Project Owner:</strong> Austin Independent School District<br>
+      <strong>General Contractor:</strong> Skyline Builders Group, LLC</p>
+
+      <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: #f1f8ff; border-bottom: 2px solid #1565c0;">
+          <th style="text-align: left; padding: 8px;">Limit Description</th>
+          <th style="text-align: right; padding: 8px;">Amount</th>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border-bottom: 1px solid #eee;">Total Completed Value</td>
+          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 42,500,000</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border-bottom: 1px solid #eee;">Theft of Materials</td>
+          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 500,000</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border-bottom: 1px solid #eee;">Flood / Windstorm</td>
+          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">Full Project Value</td>
+        </tr>
+      </table>
+
+      <p style="margin-top: 20px;"><strong>Construction Term:</strong> March 01, 2026 to September 30, 2027</p>
+    </div>
+
+    <div style="margin-top: 30px; border: 1px solid #ffccbc; padding: 10px; font-size: 0.8em; color: #d84315; background: #fff5f2;">
+      <strong>Security Notice:</strong> Coverage automatically terminates upon substantial completion or occupancy.
+    </div>
+
+    <div data-verify-line="build" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: Zurich doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:zurichna.com/construction/v/BRI992288 <span data-bracket="end" data-for="build">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Project owner, contractor, project address, coverage amount, construction details
+Project name, exact site address, General Contractor (GC) name, project owner name, Total Completed Value (TCV), construction start/end dates, specific peril sub-limits (Theft, Flood, Transit), issuing carrier.
 
-**Policy Forms:** Different policy forms and endorsements may apply.
+**Document Types:**
+- **Builders Risk Certificate (COI):** Provided to the project owner and lenders.
+- **Reporting Form:** Monthly updates on construction value.
+- **Evidence of Property Insurance:** For high-value equipment on site.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`zurichna.com`, `travelers.com`) and current policy standing.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-- **Cancelled** - Policy cancelled before expiration
-- **Non-Renewed** - Policy expired and not renewed
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **In Force** — Premium paid; project covered.
+- **Terminated** — Project completed; coverage ceased.
+- **Suspended** — Safety stop-work order from underwriter.
+- **Cancelled** — Policy terminated due to non-payment or site abandonment.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **General Contractor (GC)** benefits from verification.
 
-**Proof of Coverage:** Verify coverage is active when needed for compliance or access.
+**Payment Draws:** Proving to the Project Owner and Bank that the $42M project remains fully insured before they release the next multimillion-dollar progress payment.
 
-**Claims Support:** Confirm policy details when filing claims.
-
-**Coverage Confirmation:** Verify coverage terms match expectations after purchase.
-
-**Third-Party Presentation:** Provide verified proof to landlords, lenders, or employers.
-
-**Renewal Verification:** Confirm renewal was processed and coverage continues.
+**Permit Approval:** Providing verified proof of insurance to the City Building Department to obtain or maintain construction permits.
 
 ## Third-Party Use
 
-**Regulators and Oversight Bodies**
+**Construction Lenders (Banks)**
+**Collateral Monitoring:** Builders risk is the only protection for the bank's collateral (the half-built building). Verification ensures the GC didn't quietly cancel the policy to save money while spending the bank's loan funds.
 
-Regulatory compliance and oversight:
+**Project Owners (Clients)**
+**Risk Transfer:** Ensuring that if the project burns down at 50% completion, the GC's insurance will actually cover the replacement cost, preventing a total loss for the owner.
 
-**Systematic Hash Receipt:** Receive hashes in bulk for regulatory oversight.
-
-**Audit Verification:** Verify documents during routine or targeted audits.
-
-**Compliance Monitoring:** Monitor issuer compliance with documentation requirements.
-
-**Investigation Support:** Verify documents during fraud or compliance investigations.
-
-**Consumer Protection:** Verify consumer-facing documents for protection enforcement.
-
-**Lenders and Financial Institutions**
-
-Credit underwriting and risk assessment:
-
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
+**Equipment Lessors**
+**Theft Coverage:** Companies renting cranes/scaffolding verify that their equipment is covered under the project's "Theft of Materials" or "Off-Site Storage" endorsements.
 
 ## Verification Architecture
 
-**The Builders risk insurance policies Fraud Problem**
+**The "Construction Gap" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Coverage Inflation:** Inflating coverage limits or adding non-existent coverage
-- **Backdating:** Creating policies with false effective dates
-- **Ghost Policies:** Fabricated policies from non-existent insurers
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Project Swapping:** Using one valid certificate for a "Safe" suburban project to cover a "High-Risk" urban high-rise.
+- **Value Deflation:** Declaring a $10M value to the insurer (to get a cheap rate) but showing a $40M certificate to the bank.
+- **Hidden Cancellation:** Keeping the paper certificate on the job-site trailer wall after the policy was cancelled for non-payment 3 months ago.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Construction Underwriters:** (Zurich, Travelers, AIG, AXA XL).
+**MGA Specialists:** (e.g., Victor, RT Specialty).
 
-**Banks and Credit Unions:** Depository institutions for account documents.
+## Competition vs. Project Management Software (Procore)
 
-**Investment Firms:** Brokerage and investment management firms.
+| Feature | OCR-to-Hash | Procore / Autodesk Build | Scanned PDF |
+| :--- | :--- | :--- | :--- |
+| **Trust Anchor** | **Domain-Bound.** Bound to the Insurer. | **System-Bound.** Relies on the GC uploading correctly. | **Zero.** Easily forged. |
+| **Freshness** | **Real-time.** Queries the carrier's live file. | **Static.** Relies on the last manual update. | **Manual.** |
+| **Interoperability** | **Universal.** Works for any bank/owner. | **Siloed.** Only works for people on that specific project. | **Universal.** |
 
-**Insurance Companies:** Insurers for policy and claims documents.
-
-**Accounting Firms:** CPAs and audit firms for financial statements.
-
-**System Integration**
-
-Insurance verification integrates with industry systems:
-
-**Policy Administration Systems:** Core insurance systems generate verification hashes at policy issuance.
-
-**ACORD Standards:** Insurance industry data standards could include verification fields.
-
-**State Insurance Databases:** Regulators maintain databases for systematic hash receipt.
-
-**Agent Portals:** Insurance agents access verification for client service.
-
-## Rationale
-
-Prevents fake builders risk insurance. Domain binding verifies insurer. Lender requirement for construction loans. High project values ($500K-$100M+). Course of construction verification.
+**Why OCR wins here:** The "Independent Truth." Project management software like Procore is a "Self-Reporting" system—it only shows what the GC uploads. OCR-to-hash provides an **independent digital verification** from the Insurer's domain, ensuring the GC's claims match the Underwriter's reality.

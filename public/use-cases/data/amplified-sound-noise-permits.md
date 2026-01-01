@@ -1,157 +1,120 @@
 ---
-title: "Amplified sound and noise variance permits"
+title: "Amplified Sound and Noise Variance Permits"
 category: "Event & Temporary Use Permits"
 volume: "Medium"
 retention: "Permit period + 1-3 years"
 slug: "amplified-sound-noise-permits"
-tags: ["amplified", "sound", "noise", "permits", "event", "temporary"]
+tags: ["amplified", "sound", "noise", "permit", "event", "city", "ordinance"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 3px solid #000; background: #fff; padding: 0;">
+  <div style="background: #000; color: #fff; padding: 15px; text-align: center;">
+    <h2 style="margin: 0; text-transform: uppercase;">CITY OF AUSTIN</h2>
+    <div style="font-size: 0.9em;">MUSIC & ENTERTAINMENT DIVISION</div>
+  </div>
+
+  <div style="padding: 25px;">
+    <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
+      <h3 style="margin: 0;">OUTDOOR MUSIC VENUE PERMIT</h3>
+      <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;">Permit #: OMV-2026-0492</div>
+    </div>
+
+    <div style="font-size: 0.95em; line-height: 1.5; color: #333;">
+      <p><strong>Venue:</strong> <span data-bracket="start" data-for="sound">]</span>THE VELVET LOUNGE<br>
+      <strong>Address:</strong> 600 Red River St<br>
+      <strong>Responsible Party:</strong> Jane Doe</p>
+
+      <div style="background: #eee; border: 1px solid #ccc; padding: 10px; margin: 15px 0;">
+        <strong>APPROVED SOUND LIMITS:</strong>
+        <table style="width: 100%; margin-top: 5px;">
+          <tr>
+            <td>Mon-Thu:</td>
+            <td>85 dBa until 10:00 PM</td>
+          </tr>
+          <tr>
+            <td>Fri-Sat:</td>
+            <td>85 dBa until 12:00 AM</td>
+          </tr>
+          <tr>
+            <td>Sunday:</td>
+            <td>85 dBa until 10:00 PM</td>
+          </tr>
+        </table>
+      </div>
+
+      <p><strong>Expiration Date:</strong> December 31, 2026</p>
+      
+      <p style="font-size: 0.8em; font-style: italic;">
+        Must be posted in a conspicuous location visible from the public right-of-way.
+      </p>
+    </div>
+
+    <div data-verify-line="sound" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: City doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:austintexas.gov/sound/v/x9y8z7 <span data-bracket="end" data-for="sound">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Permit holder, location, hours, sound levels, event type
+Venue name, address, responsible party, decibel limits (dBa), cutoff times (curfew), expiration date, special conditions (e.g., "acoustic only").
 
-**Permit Types:** Various permit subtypes may exist depending on jurisdiction and specific use.
+**Document Types:**
+- **Outdoor Music Venue Permit:** Annual permit for bars/clubs.
+- **Temporary Sound Permit:** For one-off events (block parties, festivals).
+- **Construction Noise Variance:** Allowing construction outside standard hours.
+- **Filming Permit:** Including noise variances for generators/pyrotechnics.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`austintexas.gov`) and current status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-- **Suspended** - Permit temporarily suspended
-- **Pending** - Permit application pending approval
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Active** — Permit is valid.
+- **Suspended** — Permit pulled due to repeated violations.
+- **Expired** — Venue is operating without a permit.
+- **Revoked** — Permanently cancelled.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Venue Owner** or **Event Promoter** benefits from verification.
 
-**Legitimacy Confirmation:** After obtaining permit, verify it was properly issued and recorded.
+**Police Interactions:** When police arrive due to a noise complaint at 11 PM, the owner can point to the verified permit showing they are legally allowed to play until midnight. This prevents erroneous shutdowns.
 
-**Compliance Display:** Maintain verified permit for posting requirements.
-
-**Scope Verification:** Confirm permitted activities match intended use.
-
-**Expiration Tracking:** Monitor permit status to avoid lapses.
-
-**Record Keeping:** Maintain verified documentation for audits and compliance.
+**Neighbor Relations:** Posting the verified permit (with limits) demonstrates compliance and transparency to the neighborhood association.
 
 ## Third-Party Use
 
-**Lenders and Financial Institutions**
+**Police / Code Enforcement**
+**Field Adjudication:** Officers responding to "noise complaints" can instantly verify if the venue is actually violating its permit conditions. If the permit says "85 dBa until midnight" and it's 11 PM and 80 dBa, the officer knows *no violation* is occurring without needing to call the permit office (which is closed at night).
 
-Credit underwriting and risk assessment:
+**Neighborhood Associations**
+**Crowdsourced Compliance:** Residents can scan the permit posted outside the venue to see what the *actual* allowed hours are. If the venue claims "We can play till 2 AM" but the verified permit says "12 AM", the residents have proof.
 
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Insurance Companies**
-
-Underwriting and claims processing:
-
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
-
-**Government Agencies**
-
-Compliance enforcement and administration:
-
-**Inspection Verification:** Field agents verify permits and licenses at sites.
-
-**Enforcement Actions:** Confirm documentation before enforcement.
-
-**Benefit Eligibility:** Verify supporting documents for benefits administration.
-
-**Compliance Audits:** Audit documentation for regulatory compliance.
-
-**Interagency Coordination:** Share verified documents across agencies.
-
-**Real Estate Professionals**
-
-Property transactions and due diligence:
-
-**Purchase Due Diligence:** Verify property documents during transactions.
-
-**Listing Preparation:** Confirm permits and documentation for listings.
-
-**Disclosure Compliance:** Validate required disclosures and permits.
-
-**Title Research:** Verify property documents for title clearance.
-
-**Appraisal Support:** Confirm documented improvements and permits.
+**Event Insurers**
+**Liability:** Insurers verify that the event has all necessary permits before coverage binds. Operating without a sound permit could void liability coverage.
 
 ## Verification Architecture
 
-**The Amplified sound and noise variance permits Fraud Problem**
+**The "Fake Permit" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Permit Sharing:** Using one property's permit for work at another location
-- **Scope Expansion:** Expanding permitted activities beyond authorization
-- **Contractor Fraud:** Claiming permits that were never obtained
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Photoshop:** Editing the "End Time" from 10 PM to 12 AM on the PDF permit to play longer.
+- **Expired Permits:** Leaving last year's permit in the window.
+- **Forgery:** Creating a fake permit for an illegal rave or block party to fool patrol officers.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**City Governments:** (Austin Music Office, NYPD, etc.)
+**Environmental Health Departments:** (Handling noise control in some cities)
 
-**Government Entities:** Counties, cities, and special districts maintain property records.
+## Competition vs. Public Databases
 
-**Title Companies:** Title insurers and escrow companies for transaction documents.
+| Feature | OCR-to-Hash | City Website Lookup |
+| :--- | :--- | :--- |
+| **Nighttime Access** | **Instant.** Scan the paper on the door. | **Difficult.** City websites are often clunky on mobile; finding a specific permit at 2 AM is hard. |
+| **Specificity** | **High.** Shows specific decibel limits/hours. | **Low.** Often just says "Active Permit" without details. |
+| **Offline Proof** | **Strong.** The paper is the artifact. | **None.** Requires internet. |
+| **Trust** | **High.** Cryptographically bound to the city domain. | **Medium.** Easy to spoof a URL if not careful. |
 
-**Lending Institutions:** Banks and mortgage companies for loan documents.
-
-**Appraisal Firms:** Licensed appraisers for property valuations.
-
-**System Integration**
-
-Real estate verification connects to property systems:
-
-**Recording Systems:** County recorder systems for property document registration.
-
-**MLS Integration:** Multiple listing services for property documentation.
-
-**Title Plants:** Title companies maintain verification for title searches.
-
-**E-Recording:** Electronic recording systems generate verification at recording.
-
-## Rationale
-
-Domain binding verifies city noise control. Noise ordinance variance verification. Prevents noise violation fines. Event compliance monitoring.
+**Why OCR wins here:** Noise disputes happen at night and on weekends when city offices are closed. A self-verifying document posted on the venue door solves the information asymmetry between the Venue, the Police, and the Neighbors instantly.

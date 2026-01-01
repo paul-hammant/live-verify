@@ -1,129 +1,124 @@
 ---
-title: "Homeowners/renters insurance policies"
+title: "Homeowners and Renters Insurance Policies"
 category: "Personal Lines Insurance"
-volume: "Small"
-retention: "Policy term + 10 years (claims)"
+volume: "Medium"
+retention: "Policy lifetime + 10 years"
 slug: "homeowners-renters-insurance"
-tags: ["homeowners", "renters", "insurance", "personal", "lines"]
+tags: ["homeowners-insurance", "renters-insurance", "property-casualty", "hazard-insurance", "condo-insurance", "mortgage-compliance", "risk-management"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Helvetica', Arial, sans-serif; border: 2px solid #003366; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <div style="background: #003366; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+    <div>
+      <div style="font-weight: bold; font-size: 1.2em;">LIBERTY MUTUAL</div>
+      <div style="font-size: 0.8em; opacity: 0.9;">Home & Tenant Protection Policy</div>
+    </div>
+    <div style="text-align: right;">
+      <div style="font-size: 0.8em;">Policy #: HO-99228877-26</div>
+    </div>
+  </div>
+
+  <div style="padding: 25px;">
+    <h2 style="text-align: center; color: #003366; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Insurance Declarations</h2>
+
+    <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
+      <p><strong>Named Insured:</strong> <span data-bracket="start" data-for="ho-pol">]</span>Sarah Jane Smith<br>
+      <strong>Location:</strong> 4500 Skyline Blvd, Unit 12A, Austin, TX</p>
+
+      <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: #f0f4f8; border-bottom: 2px solid #003366;">
+          <th style="text-align: left; padding: 8px;">Coverage Description</th>
+          <th style="text-align: right; padding: 8px;">Limit</th>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border-bottom: 1px solid #eee;">A. Dwelling</td>
+          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 350,000.00</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border-bottom: 1px solid #eee;">C. Personal Property</td>
+          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 175,000.00</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border-bottom: 1px solid #eee;">L. Personal Liability (Each Occurrence)</td>
+          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 500,000.00</td>
+        </tr>
+      </table>
+
+      <p style="margin-top: 20px;"><strong>Policy Period:</strong> March 01, 2026 to March 01, 2027<br>
+      <strong>Annual Premium:</strong> $ 1,242.00</p>
+    </div>
+
+    <div style="margin-top: 30px; border: 1px solid #ccc; padding: 10px; font-size: 0.8em; color: #555; background: #fafafa;">
+      <strong>Mortgagee:</strong> Wells Fargo Bank, N.A. (ISAOA/ATIMA) • Loan #99887766
+    </div>
+
+    <div data-verify-line="ho-pol" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: Liberty Mutual doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:libertymutual.com/policy/v/HO99228877 <span data-bracket="end" data-for="ho-pol">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Policyholder name, property address, coverage amounts, deductibles, premium, effective dates
+Named insured, property address, dwelling limit (Cov A), personal property limit (Cov C), liability limit, deductible amount, policy form (HO-3, HO-4, HO-6), effective/expiration dates, Mortgagee/Lienholder name, issuing carrier.
 
-**Policy Forms:** Different policy forms and endorsements may apply.
+**Document Types:**
+- **Declarations Page:** The primary summary for lenders and owners.
+- **HO-4 Tenant Policy:** Specifically for renters (no dwelling cover).
+- **HO-6 Unit-Owner Policy:** Specifically for condominiums.
+- **Evidence of Property Insurance:** Formal proof for bank files.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`libertymutual.com`, `statefarm.com`, `lemonade.com`) and current policy standing.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-- **Cancelled** - Policy cancelled before expiration
-- **Non-Renewed** - Policy expired and not renewed
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **In Force** — Premium paid; policy is active.
+- **Pending Cancellation** — **ALERT:** Notice sent due to non-payment or high risk.
+- **Expired** — Term ended; no active coverage found.
+- **Amended** — A newer version of the Dec Page exists.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Homeowner / Renter** benefits from verification.
 
-**Proof of Coverage:** Verify coverage is active when needed for compliance or access.
+**Escrow Management:** Proving to a mortgage servicer that the premium on the "Dec Page" is verified authentic. This prevents the servicer from "Over-collecting" for escrow or accidentally triggering "Force-placed" insurance due to a misread PDF.
 
-**Claims Support:** Confirm policy details when filing claims.
-
-**Coverage Confirmation:** Verify coverage terms match expectations after purchase.
-
-**Third-Party Presentation:** Provide verified proof to landlords, lenders, or employers.
-
-**Renewal Verification:** Confirm renewal was processed and coverage continues.
+**Lease Requirements:** Proving to a landlord that the renter's liability insurance meets the $500k requirement of the lease agreement.
 
 ## Third-Party Use
 
-**Regulators and Oversight Bodies**
+**Mortgage Lenders / Servicers**
+**Collateral Protection:** Verifying that the $350k dwelling coverage is verified active and that the bank is correctly listed as "Mortgagee." OCR-to-hash allows for **automated annual audits** of thousands of borrower policies without manual data entry.
 
-Regulatory compliance and oversight:
+**Real Estate Closing Agents**
+**Clear-to-Close:** Instantly verifying the insurance status of a new homebuyer in the final 24 hours before a closing, ensuring the lender's funding requirements are met.
 
-**Systematic Hash Receipt:** Receive hashes in bulk for regulatory oversight.
-
-**Audit Verification:** Verify documents during routine or targeted audits.
-
-**Compliance Monitoring:** Monitor issuer compliance with documentation requirements.
-
-**Investigation Support:** Verify documents during fraud or compliance investigations.
-
-**Consumer Protection:** Verify consumer-facing documents for protection enforcement.
-
-**Lenders and Financial Institutions**
-
-Credit underwriting and risk assessment:
-
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
+**Property Managers**
+**Liability Tracking:** Ensuring every tenant in a large complex has verified, active insurance to cover damage to the building.
 
 ## Verification Architecture
 
-**The Homeowners/renters insurance policies Fraud Problem**
+**The "Mortgage Fraud" Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Coverage Inflation:** Inflating coverage limits or adding non-existent coverage
-- **Backdating:** Creating policies with false effective dates
-- **Ghost Policies:** Fabricated policies from non-existent insurers
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Buy and Cancel:** Buying a policy to get the "Dec Page" for a loan closing, then immediately cancelling it for a refund. Verification shows the "Cancelled" status instantly.
+- **Limit Inflation:** Editing a $100k policy PDF to read $400k to meet a lender's loan-to-value (LTV) rules.
+- **Lienholder Erasure:** Removing the bank's name from the policy to prevent the bank from receiving a payout check after a fire.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**National Carriers:** (State Farm, Allstate, Liberty Mutual).
+**Direct-to-Consumer Insurtechs:** (Lemonade, Hippo, Kin).
+**State Insurance Pools:** (e.g., California FAIR Plan).
 
-**Banks and Credit Unions:** Depository institutions for account documents.
+## Competition vs. ACORD Data Feeds
 
-**Investment Firms:** Brokerage and investment management firms.
+| Feature | OCR-to-Hash | ACORD Data Pool (IVANS) | Scanned PDF |
+| :--- | :--- | :--- | :--- |
+| **Integrity** | **Cryptographic.** Binds the *Address* to the *Limit*. | **Data-Only.** Doesn't verify the actual paper doc. | **Zero.** Easily forged. |
+| **Interoperability** | **Universal.** Works across all carriers. | **Limited.** Only for agencies on the IVANS network. | **Universal.** |
+| **Freshness** | **Real-time.** Shows if cancelled *today*. | **Laggy.** Often 24-48 hours behind. | **Static.** |
+| **User Control** | **High.** Homeowner shares only what is needed. | **Low.** Lenders see the full data stream. | **High.** |
 
-**Insurance Companies:** Insurers for policy and claims documents.
-
-**Accounting Firms:** CPAs and audit firms for financial statements.
-
-**System Integration**
-
-Insurance verification integrates with industry systems:
-
-**Policy Administration Systems:** Core insurance systems generate verification hashes at policy issuance.
-
-**ACORD Standards:** Insurance industry data standards could include verification fields.
-
-**State Insurance Databases:** Regulators maintain databases for systematic hash receipt.
-
-**Agent Portals:** Insurance agents access verification for client service.
-
-## Rationale
-
-Prevents fake homeowners insurance in mortgage fraud. Domain binding verifies insurer. Mortgage lender verification for forced-place insurance decisions. Prevents coverage inflation. Multi-page declarations and endorsements benefit from per-page verification. Critical for mortgage lending where insurance verification protects lender's collateral.
+**Why OCR wins here:** The "Closing Table" reality. In a real estate deal, trust must move between a Buyer, a Seller, a Bank, and a Title Co. They don't all share the same API. OCR-to-hash turns the **Paper Document** into a portable, cryptographically trusted link that bridges the gap between the insurer and the closing table.

@@ -1,150 +1,109 @@
 ---
-title: "Immigration medical exam results (I-693)"
+title: "Immigration Medical Exam Results (I-693)"
 category: "Immigration & Visa Documents"
 volume: "Medium"
 retention: "Application + 7 years"
 slug: "immigration-medical-exam-results"
-tags: ["immigration", "medical", "exam", "results", "visa", "documents"]
+tags: ["immigration", "medical-exam", "uscis", "i-693", "civil-surgeon", "vaccination-record", "public-health", "green-card"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="background: #f4f4f4; padding: 15px; border-bottom: 1px solid #ccc; display: flex; align-items: center;">
+    <div style="width: 40px; height: 40px; background: #002d62; border-radius: 50%; margin-right: 15px; display: flex; align-items: center; justify-content: center; font-size: 0.7em; color: #fff; font-weight: bold;">DHS</div>
+    <div>
+      <div style="font-weight: bold; font-size: 1.1em;">U.S. CITIZENSHIP & IMMIGRATION SERVICES</div>
+      <div style="font-size: 0.8em;">Form I-693, Medical Examination & Vaccination Record</div>
+    </div>
+  </div>
+
+  <div style="padding: 25px;">
+    <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+      <div style="border: 1px solid #000; padding: 5px 10px; font-weight: bold;">SEALED MEDICAL RESULTS</div>
+      <div style="text-align: right; font-family: monospace;">A-Number: <span data-bracket="start" data-for="im-med">]</span>A992-288-776</div>
+    </div>
+
+    <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+      <p><strong>Applicant:</strong> JOHN JACOB DOE<br>
+      <strong>Date of Exam:</strong> March 15, 2026</p>
+      
+      <div style="background: #f1f8e9; border: 1px solid #c5e1a5; padding: 15px; margin: 15px 0; border-radius: 4px;">
+        <p><strong>Civil Surgeon:</strong> Dr. Leslie Thompkins (ID #9982-BC)<br>
+        <strong>Clinic:</strong> Gotham Community Health Center</p>
+        <p><strong>Results Summary:</strong> Class A/B Conditions: NONE DETECTED. All required vaccinations confirmed and current.</p>
+      </div>
+
+      <p style="font-size: 0.85em; font-weight: bold; color: #d32f2f;">DO NOT OPEN ENVELOPE. INTERNAL RECORD VERIFICATION ONLY.</p>
+    </div>
+
+    <div data-verify-line="im-med" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: Civil Surgeon portal doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:gotham-health.org/uscis/v/A992288776 <span data-bracket="end" data-for="im-med">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Full name, DOB, civil surgeon name/signature, vaccination records, exam date
+Applicant name, Alien Registration Number (A-Number), Date of birth, Civil Surgeon name/ID, Clinic location, Date of medical examination, Vaccination status (Complete/Waiver), presence of Class A/B medical conditions, signature of surgeon, date of signature.
 
-**Privacy Salt:** Sensitive personal information requires random salt in verification lines to prevent hash enumeration.
+**Document Types:**
+- **I-693 Medical Form:** The primary 14-page federal medical report.
+- **Vaccination Record Extract:** For school or workplace proof.
+- **Panel Physician Report:** For applicants outside the U.S. (DS-2054).
+- **Communicable Disease Waiver:** (Linked hash) if required.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (the Civil Surgeon's Clinic or Health System) and current result status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Certified** — Medical exam matches the clinic's secure digital record.
+- **Incomplete** — One or more vaccinations or tests (e.g., TB) are pending.
+- **Expired** — **ALERT:** Results are > 2 years old; new exam required.
+- **Void** — Results retracted (e.g., due to laboratory error or surgeon disciplinary action).
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Applicant** benefits from verification.
 
-**Medical Records:** Verify health documents for personal medical records.
+**Submission Confidence:** Proving to themselves (and their lawyer) that the "Sealed Envelope" they are handing to USCIS contains a "Verified Passed" exam. Verification prevents the "Dead Air" period where an applicant doesn't know if their doctor actually signed the form correctly until they get a rejection notice months later.
 
-**Provider Presentation:** Share verified results with other healthcare providers.
-
-**Insurance Claims:** Support health insurance claims with verified documentation.
-
-**Compliance Requirements:** Meet employer or school health documentation requirements.
-
-**Legal Matters:** Provide verified health records for disability, litigation, or family matters.
+**Workplace Compliance:** Providing verified proof of vaccination status to an employer without needing to provide the full, private medical history.
 
 ## Third-Party Use
 
-**Regulators and Oversight Bodies**
+**USCIS Officers**
+**Intake Integrity:** When an officer receives a "Sealed I-693 Envelope," they currently have to trust the physical seal hasn't been tampered with. OCR-to-hash allows the officer to scan the hash on the form *before* opening. "Verified by Gotham Health" ensures the contents match the surgeon's original digital filing, stopping "Envelope Tampering" fraud.
 
-Regulatory compliance and oversight:
+**Immigration Attorneys**
+**Quality Control:** Verifying that the Civil Surgeon is actually on the USCIS-approved list and that their license was active on the date of the signature.
 
-**Systematic Hash Receipt:** Receive hashes in bulk for regulatory oversight.
-
-**Audit Verification:** Verify documents during routine or targeted audits.
-
-**Compliance Monitoring:** Monitor issuer compliance with documentation requirements.
-
-**Investigation Support:** Verify documents during fraud or compliance investigations.
-
-**Consumer Protection:** Verify consumer-facing documents for protection enforcement.
-
-**Employers**
-
-Hiring and compliance verification:
-
-**Pre-Employment Screening:** Verify credentials during hiring process.
-
-**I-9 Compliance:** Verify work authorization and identity documents.
-
-**Credential Verification:** Confirm professional licenses and certifications.
-
-**Health Requirements:** Verify health-related documentation for workplace safety.
-
-**Background Checks:** Integrate verification into background check processes.
-
-**Insurance Companies**
-
-Underwriting and claims processing:
-
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Healthcare Providers**
-
-Medical care and coordination:
-
-**Medical History:** Verify patient-provided medical records and test results.
-
-**Treatment Planning:** Confirm diagnostic results for treatment decisions.
-
-**Specialist Referrals:** Validate records when coordinating care.
-
-**Insurance Authorization:** Verify coverage and authorization documents.
-
-**Compliance Requirements:** Confirm vaccination and health screening records.
+**Airlines / Port of Entry**
+**Public Health Vetting:** For international arrivals, verifying the medical clearance of a refugee or immigrant before boarding.
 
 ## Verification Architecture
 
-**The Immigration medical exam results (I-693) Fraud Problem**
+**The "Dirty Seal" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Envelope Tampering:** Applicants carefully steaming open the "Sealed" envelope to hide a positive TB or Syphilis test result before re-sealing it.
+- **Fake Surgeons:** Unlicensed individuals posing as "Civil Surgeons" and selling fake I-693 forms for cash to immigrants who fear medical results.
+- **Vaccination Forgery:** Fabricating a vaccination history to avoid the $500 cost of mandatory shots.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**USCIS-Designated Civil Surgeons:** (Private doctors in the USA).
+**Panel Physicians:** (Overseas doctors for State Dept).
+**Public Health Clinics.**
 
-**Hospitals and Health Systems:** Major healthcare providers and hospital networks.
+**Privacy Salt:** ABSOLUTELY CRITICAL. I-693s contain highly sensitive medical diagnoses. The hash MUST be salted to prevent "Guess-and-Check" searches for people with specific diseases.
 
-**Clinical Laboratories:** Reference labs and hospital-based laboratories.
+## Competition vs. e-Medical (State Dept)
 
-**Medical Clinics:** Physician practices and specialty clinics.
+| Feature | OCR-to-Hash | e-Medical (Electronic Filing) | Paper I-693 (Standard) |
+| :--- | :--- | :--- | :--- |
+| **Trust Anchor** | **Domain-Bound.** Bound to the Doctor. | **Gov-Bound.** Direct to server. | **Zero.** Trusted only via seal. |
+| **User Access** | **High.** Applicant can see "Certified" status. | **Zero.** Black-box system; applicant sees nothing. | **Manual.** |
+| **Interoperability** | **Universal.** Works for any clinic with a URL. | **Restricted.** Requires expensive e-Medical software. | **Universal.** |
+| **Freshness** | **Real-time.** Shows if results retracted. | **High.** | **Static.** |
 
-**Public Health Departments:** Government health agencies for certifications.
-
-**System Integration**
-
-Healthcare verification connects to clinical systems:
-
-**EHR Systems:** Electronic health record systems generate verification hashes.
-
-**Lab Information Systems:** Laboratory systems create verification for results.
-
-**Health Information Exchanges:** Regional HIEs facilitate verification.
-
-**FHIR Standards:** HL7 FHIR could incorporate verification endpoints.
-
-**Privacy Considerations**
-
-Sensitive personal information requires special handling:
-
-**Privacy Salt:** Random salt added to verification lines prevents hash enumeration attacks.
-
-**Minimum Disclosure:** Verification response reveals only necessary information.
-
-**Access Controls:** Verification endpoints implement appropriate access restrictions.
-
-**Audit Logging:** Verification attempts logged for security and compliance.
-
-## Rationale
-
-Prevents fake medical exams. Domain binding verifies USCIS-authorized civil surgeon. Green card requirement. Sealed envelope integrity. Vaccination compliance. Prevents medical exam fraud. For privacy, issuers can add a random salt line to raise entropy and defeat guessing attacks.
+**Why OCR wins here:** The "Local Clinic" reality. Most USCIS civil surgeons are small private clinics who do not have the IT budget for complex federal "e-Filing" integrations. They still use paper. OCR-to-hash turns that **Mandatory Paper Form** into a live digital checkpoint, bringing "Government-Level" integrity to local medical offices.

@@ -2,279 +2,109 @@
 title: "Franchise Agreements and Disclosure Documents"
 category: "Business & Commerce"
 volume: "Small"
-retention: "Term plus statutory retention (often 7+ years)"
+retention: "Term plus 7+ years"
 slug: "franchise-agreements"
-tags: ["franchise", "agreements", "business", "commerce"]
+tags: ["franchise-agreement", "fdd", "item-19", "business-opportunity", "corporate-compliance", "ftc-rule", "franchisor-verification"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+  <div style="text-align: center; margin-bottom: 30px; border-bottom: 2px solid #000; padding-bottom: 10px;">
+    <div style="font-weight: bold; font-size: 1.4em; color: #000;">7-ELEVEN, INC.</div>
+    <div style="font-size: 0.85em; color: #666; margin-top: 5px;">OFFICIAL FRANCHISE DISCLOSURE DOCUMENT (FDD)</div>
+  </div>
+
+  <h3 style="text-align: center; text-transform: uppercase; margin-bottom: 20px; letter-spacing: 1px;">Disclosure Verification</h3>
+
+  <div style="font-size: 0.95em; line-height: 1.6; color: #333; text-align: justify;">
+    <p>This document serves as a verified extract of the FDD provided to <span data-bracket="start" data-for="franchise">]</span><strong>John Jacob Doe</strong> for the proposed franchise location at:</p>
+    
+    <p style="text-align: center; font-weight: bold;">123 Convenience Way, Austin, TX 78701</p>
+
+    <div style="background: #f9f9f9; border: 1px solid #eee; padding: 15px; margin: 20px 0;">
+      <p><strong>Item 19 (Financial Performance):</strong> 2025 Average Net Sales: $ 1,450,000.00 (Verified by Milliman Audit #992)</p>
+      <p><strong>Initial Franchise Fee:</strong> $ 25,000.00<br>
+      <strong>Ongoing Royalty:</strong> 5.0% of Gross Sales</p>
+    </div>
+
+    <p><strong>FDD Fiscal Year:</strong> 2026 (Edition 1.0)<br>
+    <strong>Receipt Date:</strong> March 15, 2026</p>
+  </div>
+
+  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+    <div style="width: 45%;">
+      <div style="border-top: 1px solid #000; padding-top: 5px; font-style: italic;">Sarah Miller, VP Development</div>
+    </div>
+    <div style="text-align: right; width: 45%;">
+      <div style="width: 80px; height: 80px; border: 2px solid #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; text-align: center; margin-left: auto;">CORP<br>SEAL</div>
+    </div>
+  </div>
+
+  <div data-verify-line="franchise" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+      title="Demo only: 7-Eleven doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:7-eleven.com/franchise/v/TX-992288 <span data-bracket="end" data-for="franchise">]</span>
+    </div>
+</div>
+
 ## Data Verified
 
-Franchisor name and corporate details, franchisee name, franchise location/territory, initial franchise fee, ongoing royalty structure, term and renewal rights, territorial rights, Franchise Disclosure Document (FDD) receipt confirmation, state-specific addenda, effective dates.
+Franchisor legal name, Franchisee candidate name, proposed location/territory, FDD fiscal year/version, Item 19 earnings claims (numerical), initial fees, royalty rates, date of disclosure receipt (starting the 14-day clock), term length, renewal rights.
 
 **Document Types:**
-- **Franchise Disclosure Document (FDD):** 23-item disclosure required by FTC Rule
-- **Franchise Agreement:** The actual contract between franchisor and franchisee
-- **State Addenda:** State-specific modifications required by registration states
-- **Item 19 Financial Performance Representations:** Earnings claims (if provided)
-- **Receipts:** Acknowledgment of FDD receipt and waiting period compliance
-- **Amendment Documents:** Changes to existing agreements
-
-**Multi-State Complexity:** Franchisors must register or file in many states, each with different requirements. A single franchise system may have different FDD versions for different states, plus state-specific addenda.
+- **Franchise Disclosure Document (FDD):** The 200+ page primary disclosure.
+- **Franchise Agreement:** The final signed 10-year contract.
+- **Area Development Agreement:** For multi-unit investors.
+- **Disclosure Receipt:** Mandatory proof of the 14-day cooling-off period.
 
 ## Data Visible After Verification
 
-Shows the issuer domain (the franchisor) and the responder text.
+Shows the issuer domain (`7-eleven.com`, `subway.com`, `mcdonalds.com`) and current agreement status.
 
 **Status Indications:**
-- **Current** - This is the current FDD/agreement version
-- **Superseded** - A newer version has been issued
-- **Expired** - FDD has passed its 120-day update deadline
-- **State-Specific** - This version is for a specific state
-- **Terminated** - Franchise agreement has been terminated
-- **Transferred** - Franchise has been transferred to new owner
+- **Disclosed** — FDD has been officially provided to the candidate.
+- **Under Cooling-Off** — Mandated 14-day waiting period is active.
+- **Fully Executed** — Agreement is signed and binding.
+- **Terminated** — Franchise rights revoked (e.g., for non-payment or brand standards).
 
-**Version Tracking:** Verification should indicate FDD fiscal year and any amendments: "Current FDD - Fiscal Year 2024, includes Amendment 1."
+## Second-Party Use
 
-## Second-Party Use (Franchisee Verifying Their Own Documents)
+The **Franchisee (Investor)** benefits from verification.
 
-Franchisees benefit from verification.
+**Due Diligence Defense:** Proving to their lawyers and family that the "Item 19" earnings claims aren't just verbal promises from a salesman, but are verified, audited facts from the franchisor's own domain. This stops the most common form of franchise fraud: "Earnings Misrepresentation."
 
-**FDD Authentication:** After receiving FDD, verify it's genuine and current.
-
-**Agreement Verification:** Verify the franchise agreement matches what was negotiated.
-
-**State Addenda Confirmation:** Verify correct state-specific addenda are included.
-
-**Amendment Tracking:** Verify amendments received are genuine.
-
-**Disclosure Compliance:** Verify FDD receipt timing for 14-day waiting period.
+**SBA Loan Approval:** Proving to a lender that the "Franchise Package" is authentic and current. Lenders often reject outdated FDDs; a verified hash from the franchisor removes this delay.
 
 ## Third-Party Use
 
-**Prospective Franchisees**
+**The Federal Trade Commission (FTC)**
+**Enforcement:** Regulators can verify that the FDD version being handed to candidates matches the latest version filed with the government. OCR-to-hash prevents "Selective Disclosure" where a franchisor hides a negative lawsuit from a prospect.
 
-Pre-investment due diligence:
+**Lenders / Banks**
+**Risk Management:** Verifying the "Termination Provisions" and "Royalties" before lending $500,000 for a store build-out.
 
-**FDD Verification:** Verify the FDD received is genuine and current.
-
-**Version Currency:** Confirm this is the latest FDD, not an outdated version.
-
-**Item 19 Verification:** Verify financial performance representations are authentic.
-
-**Litigation History (Item 3):** Verify disclosed litigation is accurate.
-
-**Franchisee References (Item 20):** Verify franchisee contact information.
-
-**Franchise Attorneys**
-
-Legal representation:
-
-**Document Review:** Verify documents being reviewed for clients.
-
-**Negotiation Verification:** Verify final versions match negotiated terms.
-
-**Due Diligence:** Verify FDD during buyer due diligence.
-
-**Dispute Documentation:** Verify documents in franchise disputes.
-
-**State Regulators**
-
-Franchise registration:
-
-**Registration Compliance:** Verify FDD matches filed registration.
-
-**Amendment Verification:** Verify amendments were properly filed.
-
-**Complaint Investigation:** Verify FDD provided to complainants.
-
-**Enforcement Actions:** Verify documents in enforcement proceedings.
-
-**Lenders**
-
-Franchise financing:
-
-**Loan Underwriting:** Verify franchise agreement terms for loan decisions.
-
-**SBA Franchise Directory:** Verify franchise is SBA-approved.
-
-**Assignment Rights:** Verify lender protections in franchise agreement.
-
-**Default Provisions:** Understand termination triggers.
-
-**Landlords**
-
-Real estate:
-
-**Franchisor Involvement:** Verify franchisor approval requirements.
-
-**Assignment Provisions:** Understand franchise assignment impacts on lease.
-
-**Termination Impact:** What happens to lease if franchise terminates.
-
-**Build-Out Requirements:** Verify franchisor build-out specifications.
-
-**Franchise Resale Parties**
-
-Franchise transfers:
-
-**Current Agreement Verification:** Verify what agreement is being transferred.
-
-**Amendment History:** Verify all amendments are accounted for.
-
-**Franchisor Approval:** Verify transfer approval requirements.
-
-**Successor Obligations:** What obligations transfer to buyer.
+**Commercial Landlords**
+**Tenant Vetting:** Ensuring that a new "Starbucks" or "7-Eleven" tenant actually has a verified franchise agreement in place before signing a 10-year commercial lease.
 
 ## Verification Architecture
 
-**The Franchise Document Fraud Problem**
+**The "Item 19" Fraud Problem**
 
-Franchise document fraud harms prospective franchisees:
+- **Earnings Inflation:** Editing the PDF to change a $100k average profit to $500k to trick a buyer into an expensive franchise.
+- **Litigation Hiding:** Removing the pages from "Item 3" that list the 50 pending lawsuits against the franchisor.
+- **Backdating Receipts:** Fabricating a disclosure receipt from 14 days ago to bypass the mandatory federal waiting period and force a fast closing.
 
-- **Outdated FDDs:** Providing old FDDs missing material information
-- **Altered Item 19:** Inflating or fabricating financial performance claims
-- **Selective Disclosure:** Omitting required disclosures
-- **Fake Addenda:** State addenda that don't match filed versions
-- **Receipt Manipulation:** Backdating FDD receipts to circumvent waiting periods
-- **Version Confusion:** Providing different versions to different parties
+**Issuer Types**
 
-OCR-to-hash addresses alteration and version control. Verification against franchisor records confirms the document matches what was filed/registered.
+**Franchisors:** (National brands).
+**Franchise Law Firms:** (Hosting verified hashes for their clients).
+**State Securities Regulators:** (In "Registration States" like NY or CA).
 
-**Franchisors as Issuers**
+## Competition vs. State Registry Search
 
-Franchisors issue and update FDDs:
+| Feature | OCR-to-Hash | State Registry (Online) | Scanned PDF |
+| :--- | :--- | :--- | :--- |
+| **Trust Anchor** | **Domain-Bound.** Bound to the Brand. | **Gov-Bound.** | **Zero.** Easily forged. |
+| **Integrity** | **Binds "Item 19".** Protects the numbers. | **Data-Only.** Doesn't verify the paper doc. | **Vulnerable.** |
+| **User Access** | **Instant.** Scan the paper at the meeting. | **Difficult.** Requires searching by state and paying fees. | **Instant.** |
+| **Completeness** | **High.** Verifies the *specific* candidate's copy. | **Low.** Only shows the generic filing. | **Vulnerable.** |
 
-**Annual Updates:** FDDs must be updated within 120 days of fiscal year end.
-
-**Quarterly Updates:** Material changes require interim updates.
-
-**State Filings:** Registration states require FDD filing.
-
-**Amendment Tracking:** All amendments must be trackable.
-
-Each franchisor operates verification endpoints for their FDDs and agreements.
-
-**FTC Franchise Rule**
-
-Federal disclosure requirements:
-
-**16 CFR Part 436:** FTC Franchise Rule requirements.
-
-**23 Disclosure Items:** Required FDD contents.
-
-**14-Day Waiting Period:** Prospect must receive FDD 14 days before payment.
-
-**7-Day Agreement Waiting:** Prospect must receive agreement 7 days before signing.
-
-Verification timestamps support waiting period compliance.
-
-**State Registration Requirements**
-
-Some states require FDD registration:
-
-**Registration States:** California, Illinois, Maryland, Minnesota, New York, and others.
-
-**Filing States:** Some states require filing without full review.
-
-**State Administrators:** State agencies review and approve FDDs.
-
-**State-Specific Addenda:** Additional disclosures required by specific states.
-
-Verification should indicate: "Registered in [state], effective [date]."
-
-**Item 19 Financial Performance Representations**
-
-Earnings claims are highly regulated:
-
-**Optional Disclosure:** Franchisors aren't required to provide Item 19.
-
-**Strict Requirements:** If provided, must have reasonable basis.
-
-**Written Only:** Cannot make oral earnings claims.
-
-**Verification Importance:** Prospective franchisees often base decisions on Item 19.
-
-Verification of Item 19 is particularly important—altered earnings claims cause investment disasters.
-
-**Multi-Unit and Area Development**
-
-Complex franchise structures:
-
-**Single-Unit Agreements:** One location per agreement.
-
-**Multi-Unit Agreements:** Development schedules for multiple locations.
-
-**Area Development Agreements:** Rights to develop territory.
-
-**Master Franchise Agreements:** Rights to sub-franchise.
-
-Each agreement type should be independently verifiable.
-
-**Franchise Relationship Laws**
-
-State laws protecting franchisees:
-
-**Good Cause Termination:** Some states require good cause for termination.
-
-**Encroachment Protection:** Protection from nearby franchisor locations.
-
-**Renewal Rights:** Required renewal under certain conditions.
-
-**Transfer Rights:** Limitations on transfer refusal.
-
-Verification confirms which state law applies based on franchise location.
-
-**Amendment and Renewal Documentation**
-
-Franchise relationships evolve:
-
-**Contract Amendments:** Changes to existing agreements.
-
-**Renewal Agreements:** New agreements upon term expiration.
-
-**Successor Agreements:** When franchise systems adopt new agreement forms.
-
-**Addenda:** State-specific or negotiated additions.
-
-Each document should be independently verifiable with clear succession.
-
-**Termination and Transfer**
-
-End of franchise relationship:
-
-**Termination Notices:** Franchisor termination of franchise.
-
-**Non-Renewal Notices:** Decision not to renew at term end.
-
-**Transfer Approval:** Franchisor approval of franchise sale.
-
-**Post-Term Obligations:** Non-compete, de-identification requirements.
-
-Verification of termination status prevents fraudulent operation under terminated franchise.
-
-**International Franchising**
-
-Franchising across borders:
-
-**Country-Specific Requirements:** Different countries have different franchise laws.
-
-**Master Franchise Structures:** International expansion through master franchisees.
-
-**Currency and Payment:** International fee structures.
-
-**Local Law Compliance:** Adapting to local regulatory requirements.
-
-Verification architecture should accommodate international variations.
-
-**Digital FDD Distribution**
-
-Modern FDD delivery:
-
-**Electronic Delivery:** FDDs delivered electronically under certain conditions.
-
-**E-Signature:** Electronic signature of franchise agreements.
-
-**Receipt Tracking:** Electronic verification of receipt and timing.
-
-**Version Control:** Digital systems managing FDD versions.
-
-OCR-to-hash applies to printed FDDs; electronic systems may have native verification.
+**Why OCR wins here:** The "Sales Meeting" reality. Prospects decide to buy a franchise in a meeting with a development officer. They aren't going to search 50 different state databases. OCR-to-hash turns the **Physical FDD** into a live digital checkpoint, ensuring the multi-million dollar investment decision is based on verified facts.

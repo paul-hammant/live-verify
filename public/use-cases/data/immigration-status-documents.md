@@ -2,313 +2,106 @@
 title: "Immigration Status Documents"
 category: "Immigration & Visa Documents"
 volume: "Medium (aggregate)"
-retention: "Varies by document type (visa validity to permanent)"
+retention: "Varies (visa validity to permanent)"
 slug: "immigration-status-documents"
-tags: ["immigration", "status", "documents", "visa"]
+tags: ["green-card", "i-551", "naturalization-certificate", "visa-status", "uscis", "immigration-verification", "i-9-compliance"]
 ---
-Immigration documents determine legal status, work authorization, and residency rights. Verification is critical for employers (I-9 compliance), educational institutions, government agencies, and the individuals themselves. Privacy salt is particularly important for these sensitive documents.
 
-## Document Types
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1); overflow: hidden;">
+  <div style="background: #002d62; color: #fff; padding: 20px; display: flex; align-items: center; justify-content: space-between;">
+    <div>
+      <div style="font-weight: bold; font-size: 1.1em;">U.S. CITIZENSHIP & IMMIGRATION</div>
+      <div style="font-size: 0.8em;">Permanent Resident Card (I-551)</div>
+    </div>
+    <div style="font-size: 1.5em;">🦅</div>
+  </div>
 
-### Green Cards (I-551 Permanent Resident Cards)
+  <div style="padding: 20px; display: flex;">
+    <div style="width: 120px; margin-right: 20px;">
+      <div style="width: 120px; height: 150px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #777;">[PHOTO]</div>
+    </div>
+    <div style="flex-grow: 1;">
+      <div style="font-size: 1.2em; font-weight: bold; margin: 0 0 5px 0;"><span data-bracket="start" data-for="im-status">]</span>DOE, JOHN JACOB</div>
+      <div style="font-size: 0.9em; color: #333; line-height: 1.5;">
+        <strong>USCIS #:</strong> 992-288-776<br>
+        <strong>Birth Date:</strong> 05/15/1985<br>
+        <strong>Resident Since:</strong> 01/01/2020<br>
+        <strong>Expires:</strong> 01/01/2030
+      </div>
+    </div>
+  </div>
 
-**Purpose:** Proves lawful permanent resident status in the United States.
+  <div style="padding: 0 20px 20px 20px;">
+    <div style="font-size: 0.8em; font-weight: bold; color: #002d62; text-align: center; margin-bottom: 5px;">UNITED STATES OF AMERICA</div>
+    <div data-verify-line="im-status" style="border-top: 1px dashed #999; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+      title="Demo only: USCIS doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:uscis.gov/status/v/992288776 <span data-bracket="end" data-for="im-status">]</span>
+    </div>
+  </div>
+</div>
 
-**Data Verified:** Full name, sex, Alien registration number (A-number), date of birth, card validity dates (from-to), country of birth, resident since date.
+## Data Verified
 
-
-**Physical Card Considerations:** Holders don't need to carry the physical card at all times for domestic travel. OCR-to-hash verification reduces the need to carry the original while maintaining proof of status.
-
-**Fraud Prevention:** Fake green cards are used for unauthorized employment and identity fraud. Domain binding to USCIS prevents impersonation.
-
-### Citizenship and Naturalization Certificates
-
-**Purpose:** Proves acquisition of citizenship through naturalization or derivation.
-
-**Data Verified:** Full name, date of birth, country of origin/former nationality, naturalization date, certificate number, issuing USCIS office.
-
-
-**Document Types:**
-- **N-550/N-570:** Certificate of Naturalization (for those who naturalized)
-- **N-560/N-561:** Certificate of Citizenship (for derived/acquired citizenship)
-
-**Critical Uses:** Required for passport applications, proving citizenship for federal employment, voter registration.
-
-**Privacy Salt:** Given permanent retention and sensitivity, salt lines prevent hash enumeration attacks.
-
-### Work Visas (H-1B, L-1, O-1, TN)
-
-**Purpose:** Authorizes temporary employment in specific job categories.
-
-**Data Verified:** Full name, visa type/classification, passport number, employer name, validity period, I-94 admission number.
-
-
-**Visa Categories:**
-- **H-1B:** Specialty occupation (requires bachelor's degree)
-- **L-1A/L-1B:** Intracompany transferees (managers/specialized knowledge)
-- **O-1:** Extraordinary ability in sciences, arts, business
-- **TN:** USMCA professionals (Canada/Mexico)
-- **E-1/E-2:** Treaty traders and investors
-
-**I-9 Compliance:** Employers must verify work authorization. OCR-to-hash enables verification without physical document handling.
-
-### Student Visas (F-1, J-1, M-1)
-
-**Purpose:** Authorizes study at approved educational institutions.
-
-**Data Verified:** Full name, date of birth, nationality, school/program name, SEVIS ID number, program dates, visa validity.
-
-
-**Related Documents:**
-- **I-20:** Certificate of Eligibility for F-1 status
-- **DS-2019:** Certificate of Eligibility for J-1 status
-- **I-94:** Arrival/departure record
-
-**Work Authorization:** Students may work under CPT (Curricular Practical Training) or OPT (Optional Practical Training)—these must also be verified.
-
-### Employment Authorization Documents (EAD)
-
-**Purpose:** Authorizes employment for categories that require separate work permission.
-
-**Data Verified:** Full name, date of birth, photo reference, A-number, category code, validity dates, USCIS receipt number.
-
-
-**Who Gets EADs:**
-- Asylum applicants and asylees
-- Adjustment of status applicants
-- F-1 students on OPT
-- H-4 and L-2 dependent spouses (certain cases)
-- DACA recipients
-- TPS holders
-
-**Card Format:** Credit-card-sized with photo, similar to green card.
-
-### Visa Approval Notices and Stamps
-
-**Purpose:** Confirms visa approval from consular or immigration authorities.
-
-**Data Verified:** Full name, passport number, visa type, validity period, issuing post/authority, annotation number.
-
+Full name, Alien Registration Number (A-Number), Date of birth, Country of birth, Resident Since date, Card expiration date, Visa Category (e.g., IR1, EB2), Photo (via hash), Fingerprint status (hash), Issuing USCIS office.
 
 **Document Types:**
-- **Visa Stamp:** Affixed to passport at consulate
-- **I-797 Approval Notice:** USCIS approval of petition
-- **I-94:** Arrival/departure record (electronic since 2013)
-- **Port of Entry Stamp:** CBP admission stamp
-
-**Multi-Page:** I-797 approval notices can be multi-page with petition details.
-
-### I-94 Arrival/Departure Records
-
-**Purpose:** Documents lawful admission to the United States.
-
-**Data Verified:** Full name, passport number, nationality, admission date, admission class, admitted until date, I-94 number.
-
-
-**Electronic I-94:** Since 2013, I-94 is typically electronic for air/sea arrivals, printable from CBP website. Land border crossings may still receive paper I-94.
+- **Green Card (I-551):** Proof of permanent residency.
+- **Naturalization Certificate (N-550):** Proof of citizenship.
+- **I-797 Approval Notice:** Proving a pending or approved petition.
+- **Advance Parole (I-512L):** Travel authorization for pending applicants.
 
 ## Data Visible After Verification
 
-Shows the issuer domain (USCIS, CBP, State Department) and the responder text.
+Shows the issuer domain (`uscis.gov`) and real-time legal standing.
 
 **Status Indications:**
-- **Valid** - Document is current and status is active
-- **Expired** - Document has expired
-- **Revoked** - Status has been revoked
-- **Pending** - Application is pending (for EAD, etc.)
+- **Active** — Bearer has valid legal status in the U.S.
+- **Terminated** — **ALERT:** Status has been revoked (e.g., due to criminal conviction).
+- **In-Removal** — Bearer is currently in deportation proceedings.
+- **Expired** — Card is no longer valid; renewal or status proof required.
 
-**Status Confirmation:** Verification may indicate: "Valid - H-1B status through [date]."
+## Second-Party Use
 
-## Second-Party Use (Individual Verifying Their Own Documents)
+The **Named Individual** benefits from verification.
 
-Document holders benefit from verification.
+**Identity Protection:** Proving their status to a landlord, bank, or employer without handing over the high-value physical card (which costs $540+ to replace if lost). A verified digital hash allows the holder to keep the original in a safe deposit box.
 
-**Status Confirmation:** Verify immigration status is correctly recorded.
-
-**Employment Preparation:** Verify work authorization before starting new job.
-
-**Travel Preparation:** Verify status before international travel.
-
-**Renewal Timing:** Verify document validity dates for renewal planning.
-
-**Reduced Physical Carry:** Verification reduces need to carry original documents.
+**Domestic Travel:** Proving legal residency to TSA or local police during domestic travel, especially in "Border Zones" where proof of status is legally required.
 
 ## Third-Party Use
 
-**Employers**
+**Employers (I-9 Compliance)**
+**Zero-Trust Onboarding:** Instantly verifying that a candidate's Green Card isn't a "High-Quality Forgery." Black-market cards look perfect to the eye; OCR-to-hash connects the manager directly to the USCIS record in seconds.
 
-I-9 compliance:
+**Mortgage Lenders**
+**Loan Eligibility:** Verifying that a borrower is a "Lawful Permanent Resident," which is a mandatory requirement for most Fannie Mae/Freddie Mac conforming loans.
 
-**Employment Verification:** Verify work authorization for new hires.
-
-**Reverification:** Verify when work authorization expires.
-
-**E-Verify:** Integration with E-Verify system.
-
-**ICE Compliance:** Ensure compliance with immigration enforcement.
-
-**Audit Preparation:** Maintain verified documentation for audits.
-
-**Educational Institutions**
-
-Student status:
-
-**Enrollment Verification:** Verify student visa status at enrollment.
-
-**SEVIS Compliance:** Maintain accurate SEVIS records.
-
-**Work Authorization:** Verify CPT/OPT authorization.
-
-**Status Changes:** Monitor status changes during enrollment.
-
-**Government Agencies**
-
-Benefits and services:
-
-**Benefits Eligibility:** Verify immigration status for benefits.
-
-**Driver's License:** Verify status for REAL ID compliance.
-
-**Professional Licensing:** Verify work authorization for licensure.
-
-**Security Clearances:** Verify status for cleared positions.
-
-**Healthcare Providers**
-
-Coverage verification:
-
-**Insurance Eligibility:** Verify status for coverage eligibility.
-
-**Medicaid/Medicare:** Verify status for program eligibility.
-
-**Emergency Treatment:** EMTALA applies regardless of status.
-
-**Landlords**
-
-Housing applications:
-
-**Identity Verification:** Verify immigration documents for rental applications.
-
-**Right to Rent:** UK-style right-to-rent verification.
-
-**Fair Housing:** Must apply criteria consistently.
-
-**Financial Institutions**
-
-Account opening:
-
-**KYC Compliance:** Know Your Customer identity verification.
-
-**Account Opening:** Verify immigration documents for account eligibility.
-
-**Loan Applications:** Verify status for loan eligibility.
+**Local Police (Traffic Stops)**
+**Status Verification:** Confirming the legal status of an individual during a stop in jurisdictions that coordinate with federal immigration authorities.
 
 ## Verification Architecture
 
-**The Immigration Document Fraud Problem**
+**The "Black Market" Fraud Problem**
 
-Immigration fraud has serious consequences:
+- **Novice Fakes:** Realistic-looking plastic cards sold online for $200. These lack the cryptographic link to `uscis.gov`.
+- **Identity Swapping:** Using a "Clean" person's A-number and editing the photo on the card.
+- **Revocation Hiding:** A person who was deported last month keeping their physical Green Card to return to the U.S. and find work.
 
-- **Counterfeit Documents:** Fake green cards, EADs, visa stamps
-- **Altered Documents:** Genuine documents with changed dates or status
-- **Impersonation:** Using another person's legitimate documents
-- **Expired as Current:** Presenting expired documents as valid
-- **Fabricated Status:** Creating false immigration records
-- **Employment Fraud:** Unauthorized workers using fraudulent documents
+**Issuer Types**
 
-OCR-to-hash addresses document alteration. USCIS/CBP domain binding prevents impersonation of government issuers.
+**U.S. Citizenship and Immigration Services (USCIS).**
+**DHS SAVE System:** (The backend data source).
+**National Registries:** (In other countries, e.g., UK Home Office).
 
-**Government Agencies as Issuers**
+**Privacy Salt:** ABSOLUTELY CRITICAL. Immigration data is a high-value target for hackers and activists. The hash MUST be salted to prevent "Guess-and-Check" attacks to map the entire immigrant population.
 
-Multiple agencies issue immigration documents:
+## Competition vs. E-Verify / SAVE
 
-**USCIS:** Green cards, EADs, naturalization certificates, approval notices.
+| Feature | OCR-to-Hash | E-Verify (Employer System) | Physical Card |
+| :--- | :--- | :--- | :--- |
+| **User Access** | **Open.** Small businesses/landlords can verify. | **Restricted.** Only for registered federal contractors/employers. | **Manual.** |
+| **Trust Anchor** | **Domain-Bound.** Bound to `uscis.gov`. | **Direct DB Access.** High trust. | **Mechanical.** Prone to forgery. |
+| **Speed** | **Instant.** 5-second scan. | **Slow.** Often flags for "Manual Review" taking 3-10 days. | **Instant.** |
+| **Interoperability** | **High.** Verified PDF works for banks/lawyers. | **Zero.** Data is trapped in the gov portal. | **Universal.** |
 
-**CBP:** I-94 records, entry stamps, parole documents.
-
-**State Department:** Visa stamps in passports, issued at consulates.
-
-**ICE:** Immigration enforcement documents.
-
-Each agency can operate verification endpoints for documents they issue.
-
-**SAVE and E-Verify Integration**
-
-Existing verification systems:
-
-**SAVE:** Systematic Alien Verification for Entitlements (government benefits).
-
-**E-Verify:** Employment eligibility verification (employers).
-
-**SEVIS:** Student and Exchange Visitor Information System.
-
-OCR-to-hash complements these systems by verifying document authenticity before system queries.
-
-**Privacy and Salt Requirements**
-
-Immigration documents are highly sensitive:
-
-**Identity Protection:** Documents contain PII and immigration status.
-
-**Discrimination Risk:** Status information could enable discrimination.
-
-**Safety Concerns:** Some status holders face persecution in home countries.
-
-**Random Salt Lines:** Raise entropy to defeat hash guessing attacks.
-
-Verification should confirm document existence without revealing full contents.
-
-**Document Renewal and Succession**
-
-Immigration status evolves:
-
-**Green Card Renewal:** 10-year renewal cycle.
-
-**EAD Renewal:** Often annual renewal.
-
-**Visa Extensions:** Status extensions through I-797.
-
-**Status Adjustment:** Changing from one status to another.
-
-Verification should indicate: "Valid - Supersedes prior EAD issued [date]."
-
-**International Equivalents**
-
-Similar documents worldwide:
-
-**UK:** Biometric Residence Permits, visa vignettes.
-
-**EU:** Residence cards, Schengen visas.
-
-**Canada:** PR cards, work permits, study permits.
-
-**Australia:** Visa grant notices, ImmiCards.
-
-Verification architecture can accommodate international immigration documents.
-
-**Automatic Status Determination**
-
-Some status is automatic:
-
-**Derivative Status:** Spouse/children derive status from principal.
-
-**Citizenship by Birth:** Born in US or to US citizen parents.
-
-**Automatic Renewal:** Some benefits extend automatically.
-
-These may not have separate documents but still need verification.
-
-**Sensitive Categories**
-
-Special handling for:
-
-**Asylum Seekers:** Persecution concerns in home country.
-
-**DACA Recipients:** Discretionary protection.
-
-**TPS Holders:** Temporary Protected Status.
-
-**U Visa Holders:** Crime victims.
-
-Verification must protect these individuals from exposure.
-
+**Why OCR wins here:** Reach and Portability. Most people who need to see a Green Card (Bankers, Landlords, DMV clerks) do not have access to the E-Verify system. They are forced to "Trust their eyes." OCR-to-hash allows **every citizen and business** to have "Federal-Level" trust in an immigration document using only their phone.

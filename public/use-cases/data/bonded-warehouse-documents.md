@@ -1,122 +1,105 @@
 ---
-title: "Bonded warehouse entry and exit documents"
+title: "Bonded Warehouse Entry and Exit Documents"
 category: "Customs & Trade Compliance"
 volume: "Medium"
 retention: "7-10 years (customs compliance)"
 slug: "bonded-warehouse-documents"
-tags: ["bonded", "warehouse", "documents", "logistics", "transportation"]
+tags: ["customs", "logistics", "warehouse", "duty-deferral", "international-trade", "cbp"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', monospace; border: 2px solid #000; background: #fff; padding: 20px; box-shadow: 2px 2px 5px rgba(0,0,0,0.1);">
+  <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
+    <strong>GLOBAL LOGISTICS BONDED HUB</strong><br>
+    U.S. CUSTOMS CLASS 3 WAREHOUSE (#998877)<br>
+    -------------------------------------------
+  </div>
+
+  <div style="font-size: 0.9em; line-height: 1.4;">
+    <p><strong>Importer of Record:</strong> <span data-bracket="start" data-for="bonded">]</span>Swiss Watch Imports, Inc.<br>
+    <strong>Customs Entry #:</strong> 110-9988776-5<br>
+    <strong>Warehouse Receipt:</strong> WR-2026-402</p>
+
+    <p><strong>Cargo Description:</strong><br>
+    10 Pallets: Luxury Watches (High Value)<br>
+    Total Weight: 1,200 KG<br>
+    Declared Value: $ 2,500,000.00</p>
+
+    <div style="background: #eee; padding: 10px; margin: 15px 0; border: 1px solid #999;">
+      <strong>STATUS: ADMITTED UNDER BOND</strong><br>
+      Entry Date: 15 MAR 2026<br>
+      Bond Holder: Great American Insurance Co.<br>
+      Duty Deferral Status: ACTIVE
+    </div>
+
+    <p style="font-size: 0.8em;">Goods may not be removed until Customs Form 7501 is processed and duties paid.</p>
+  </div>
+
+  <div data-verify-line="bonded" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: Warehouse operator doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:global-bonded.com/receipts/v/WR402 <span data-bracket="end" data-for="bonded">]</span>
+  </div>
+</div>
+
 ## Data Verified
 
-Importer, bonded warehouse, customs entry, goods in/out, duty deferral
+Importer name, Customs Entry Number, Warehouse Receipt Number, Class of Warehouse (1-11), inventory description, gross weight, declared value, bond reference, admission date, duty deferral status.
+
+**Document Types:**
+- **Warehouse Receipt (Form 214 equivalent):** Admission into the bond.
+- **Withdrawal for Consumption (Form 7501):** Paying duty and exiting.
+- **Withdrawal for Export:** Exiting to another country without paying domestic duty.
+- **Transfer Document:** Moving goods between two bonded warehouses.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (the Warehouse Operator) and current cargo status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Admitted** — Goods are physically in the warehouse and under bond.
+- **Released** — Customs duties paid; goods authorized for exit.
+- **In-Transit** — Moving between bonded facilities.
+- **Seized/Hold** — Customs has frozen the cargo (e.g., for investigation).
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Importer** benefits from verification.
 
-**Document Authenticity:** Verify received documents are genuine and properly issued.
+**Trade Finance:** Proving to a bank that $2.5M worth of watches is "Verified in Custody" at a bonded warehouse. This allows the importer to use the cargo as collateral for a loan before the duties are even paid.
 
-**Third-Party Presentation:** Provide verified documentation when required.
-
-**Compliance Requirements:** Meet regulatory or contractual documentation requirements.
-
-**Record Keeping:** Maintain verified records for future reference or audits.
-
-**Dispute Prevention:** Establish authenticity to prevent future challenges.
+**Audit Compliance:** Providing a "Verified Admission Log" to Customs during an annual audit to prove that all deferred-duty goods are accounted for.
 
 ## Third-Party Use
 
-**Insurance Companies**
+**Customs Authorities (CBP / HMRC)**
+**Inventory Control:** Customs officers can walk the warehouse floor and scan the paper receipts attached to pallets. "Verified by Warehouse System" ensures the importer hasn't "ghosted" the cargo (sold it without paying duty).
 
-Underwriting and claims processing:
+**Lenders / Banks**
+**Asset Verification:** Verifying the "Bonded Status" ensures that the bank's collateral is being held in a regulated facility where it can't be legally moved without a Customs release.
 
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Customs and Border Authorities**
-
-International trade compliance:
-
-**Import Clearance:** Verify shipping documents for customs clearance.
-
-**Duty Assessment:** Validate commercial invoices and declarations.
-
-**Trade Compliance:** Confirm certificates of origin and trade documents.
-
-**Security Screening:** Verify cargo documentation for security.
-
-**Export Controls:** Validate export documentation and licenses.
-
-**Freight Forwarders and Carriers**
-
-Logistics and transportation:
-
-**Shipment Acceptance:** Verify documents before accepting cargo.
-
-**Carrier Handoffs:** Validate documentation at transfer points.
-
-**Liability Determination:** Reference verified documents for claims.
-
-**Route Planning:** Confirm documentation for transit requirements.
-
-**Delivery Confirmation:** Verify documents at final delivery.
+**Cargo Insurers**
+**Risk Monitoring:** Insurers can verify that high-value cargo is actually inside the high-security bonded zone and not sitting on an unmonitored loading dock.
 
 ## Verification Architecture
 
-**The Bonded warehouse entry and exit documents Fraud Problem**
+**The "Leakage" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Ghost Removals:** Physically removing goods from the warehouse to sell them domestically while keeping the "Admitted" paper receipt on an empty pallet to fool inspectors.
+- **Value Swapping:** Admitting a box of "Luxury Watches" but re-writing the exit paper to read "Plastic Toys" to pay lower duties.
+- **Fictitious Admissions:** Creating a fake warehouse receipt to trick a bank into giving a loan for cargo that doesn't exist.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Bonded Warehouse Operators:** (Class 3 Public, Class 4 Yard, etc.).
+**Foreign Trade Zone (FTZ) Operators.**
+**Customs Brokers.**
 
-**Primary Issuers:** Organizations with direct authority to issue these documents.
+## Competition vs. Customs ACE Portal
 
-**Licensed Professionals:** Professionals authorized to create and certify documents.
+| Feature | OCR-to-Hash | ACE Portal (Gov) | Paper Receipt |
+| :--- | :--- | :--- | :--- |
+| **User Access** | **Universal.** Any trucker/bank/auditor. | **Restricted.** Requires expensive "ACE Portal" credentials. | **Instant.** |
+| **Trust** | **Cryptographic.** Bound to the Warehouse Operator. | **High.** Gov database. | **Zero.** Easily forged. |
+| **Offline Proof** | **Strong.** The paper is the audit anchor. | **None.** Requires live gov system access. | **Medium.** |
+| **Efficiency** | **Instant.** Scan the pallet tag. | **Slow.** Login, search entry #, find line item. | **Manual.** |
 
-**Government Agencies:** Federal, state, or local agencies with jurisdiction.
-
-**Industry Bodies:** Trade associations and professional organizations.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Prevents bonded warehouse fraud (removing goods without duty payment). Domain binding verifies bonded warehouse operator. Customs compliance. Duty deferral verification. CBP audit trail.
+**Why OCR wins here:** The "Warehouse Floor" workflow. Customs inspectors and warehouse managers don't want to carry laptops and log into slow government portals while walking between rows of cargo. A self-verifying pallet tag provides the **immediate confirmation** needed for high-speed logistics and enforcement.

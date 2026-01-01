@@ -1,129 +1,115 @@
 ---
-title: "Commercial auto insurance policies and certificates"
+title: "Commercial Auto Insurance Policies"
 category: "Commercial Lines Insurance"
 volume: "Medium"
 retention: "Policy term + 7 years"
 slug: "commercial-auto-insurance"
-tags: ["commercial", "auto", "insurance", "lines"]
+tags: ["commercial-auto", "fleet-insurance", "logistics", "dot-compliance", "trucking", "hired-non-owned"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #004d40; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <div style="background: #004d40; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+    <div>
+      <div style="font-weight: bold; font-size: 1.2em;">PROGRESSIVE COMMERCIAL</div>
+      <div style="font-size: 0.8em;">Fleet & Logistics Division</div>
+    </div>
+    <div style="text-align: right;">
+      <div style="font-size: 0.8em;">Policy #: CA-992288-26</div>
+    </div>
+  </div>
+
+  <div style="padding: 25px;">
+    <h2 style="text-align: center; color: #004d40; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Proof of Commercial Insurance</h2>
+
+    <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
+      <p><strong>Insured:</strong> <span data-bracket="start" data-for="com-auto">]</span>Lightning Logistics, LLC<br>
+      <strong>DOT Number:</strong> 1234567</p>
+
+      <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: #e8f5e9; border-bottom: 2px solid #004d40;">
+          <th style="text-align: left; padding: 8px;">Vehicle / VIN</th>
+          <th style="text-align: right; padding: 8px;">Liability Limit</th>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border-bottom: 1px solid #eee;">2024 Freightliner Cascadia<br><small>VIN: 1FUJA...5544</small></td>
+          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 1,000,000 CSL</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border-bottom: 1px solid #eee;">2025 Ford F-550 Box Truck<br><small>VIN: 1FDRF...9922</small></td>
+          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 1,000,000 CSL</td>
+        </tr>
+      </table>
+
+      <p><strong>Coverage Includes:</strong> MCS-90 Endorsement, Hired & Non-Owned Auto.</p>
+      <p><strong>Policy Period:</strong> Jan 01, 2026 to Jan 01, 2027</p>
+    </div>
+
+    <div data-verify-line="com-auto" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: Progressive Commercial doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:progressive.com/commercial/v/CA992288 <span data-bracket="end" data-for="com-auto">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Business name, vehicles/VINs, drivers, coverage limits, hired/non-owned auto coverage
+Business name, DOT number, specific vehicle VINs, combined single limit (CSL), cargo liability, effective/expiration dates, MCS-90 status, hired/non-owned auto inclusion.
 
-**Policy Forms:** Different policy forms and endorsements may apply.
+**Document Types:**
+- **Commercial ID Card:** For the glovebox of every fleet vehicle.
+- **Form MCS-90:** Federal filing for public liability (trucking).
+- **Scheduled Auto List:** Detailing every covered VIN.
+- **Hired/Non-Owned Certificate:** For businesses using employees' personal cars.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`progressive.com`, `travelers.com`) and fleet status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-- **Cancelled** - Policy cancelled before expiration
-- **Non-Renewed** - Policy expired and not renewed
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **In Force** — Fleet is fully covered.
+- **Vehicle Excluded** — **ALERT:** This specific VIN was removed from the policy.
+- **Cancelled** — Policy terminated (e.g., for safety score or non-payment).
+- **Expired** — Term ended.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Fleet Owner** benefits from verification.
 
-**Proof of Coverage:** Verify coverage is active when needed for compliance or access.
+**DOT Inspections:** Proving to a roadside inspector that the MCS-90 filing is active and the vehicle is verified insured. This prevents "Out-of-Service" orders due to paperwork confusion.
 
-**Claims Support:** Confirm policy details when filing claims.
-
-**Coverage Confirmation:** Verify coverage terms match expectations after purchase.
-
-**Third-Party Presentation:** Provide verified proof to landlords, lenders, or employers.
-
-**Renewal Verification:** Confirm renewal was processed and coverage continues.
+**Broker Onboarding:** Speeding up the process of joining a logistics network (e.g., C.H. Robinson) by providing a "Verified Fleet Token" that automatically validates all VINs.
 
 ## Third-Party Use
 
-**Regulators and Oversight Bodies**
+**Roadside DOT Inspectors**
+**Enforcement:** Instantly confirming that a heavy truck hasn't been "dropped" from the policy. Fleet owners often keep 100 trucks on the road while only paying for 50. OCR-to-hash verification of the VIN-specific card stops this "Ghost Fleet" fraud.
 
-Regulatory compliance and oversight:
+**Logistics Brokers**
+**Risk Management:** Verifying the cargo and liability insurance of a carrier before dispatching a $500,000 load.
 
-**Systematic Hash Receipt:** Receive hashes in bulk for regulatory oversight.
-
-**Audit Verification:** Verify documents during routine or targeted audits.
-
-**Compliance Monitoring:** Monitor issuer compliance with documentation requirements.
-
-**Investigation Support:** Verify documents during fraud or compliance investigations.
-
-**Consumer Protection:** Verify consumer-facing documents for protection enforcement.
-
-**Lenders and Financial Institutions**
-
-Credit underwriting and risk assessment:
-
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
+**Shipping Hubs / Warehouses**
+**Gate Access:** Ensuring that any truck entering the facility has verified liability coverage, protecting the facility owner from accidents on their property.
 
 ## Verification Architecture
 
-**The Commercial auto insurance policies and certificates Fraud Problem**
+**The "Ghost Fleet" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Coverage Inflation:** Inflating coverage limits or adding non-existent coverage
-- **Backdating:** Creating policies with false effective dates
-- **Ghost Policies:** Fabricated policies from non-existent insurers
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Selective Deletion:** Removing high-risk drivers or aging trucks from the policy to save money, but keeping the old "Policy Summary" paper to show at checkpoints.
+- **VIN Tampering:** Editing a "Clean" VIN onto a card for an uninsured, damaged vehicle.
+- **MCS-90 Forgery:** Fabricating the federal filing needed for interstate commerce.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Commercial Carriers:** (Progressive, Travelers, Zurich).
+**State DOTs:** (As the oversight body).
+**Fleet Platforms:** (Samsara, Motive - integrating insurance verification into the ELD).
 
-**Banks and Credit Unions:** Depository institutions for account documents.
+## Competition vs. FMCSA SAFER Database
 
-**Investment Firms:** Brokerage and investment management firms.
+| Feature | OCR-to-Hash | FMCSA SAFER (Public) | Paper Fleet List |
+| :--- | :--- | :--- | :--- |
+| **VIN Detail** | **High.** Verifies *this specific truck*. | **Low.** Often only shows "Policy Active" for the whole company. | **High.** But untrusted. |
+| **Freshness** | **Real-time.** Queries the insurer's live fleet file. | **Laggy.** Federal records can lag by weeks. | **Static.** |
+| **Accessibility** | **Open.** Any warehouse or broker can verify. | **Public.** But limited data. | **Manual.** |
 
-**Insurance Companies:** Insurers for policy and claims documents.
-
-**Accounting Firms:** CPAs and audit firms for financial statements.
-
-**System Integration**
-
-Insurance verification integrates with industry systems:
-
-**Policy Administration Systems:** Core insurance systems generate verification hashes at policy issuance.
-
-**ACORD Standards:** Insurance industry data standards could include verification fields.
-
-**State Insurance Databases:** Regulators maintain databases for systematic hash receipt.
-
-**Agent Portals:** Insurance agents access verification for client service.
-
-## Rationale
-
-Prevents fake commercial auto insurance in fleet fraud and contractor fraud. Domain binding verifies insurer. High liability limits ($1M+ typical). DOT compliance verification for commercial vehicles. Critical for fleet management where commercial auto verification prevents accidents with uninsured commercial vehicles.
+**Why OCR wins here:** The "VIN Specificity" problem. Government databases like SAFER prove a company *has* insurance, but they rarely list the 500 individual VINs. OCR-to-hash allows a verifier to prove that **this specific VIN** is covered *today*, closing the gap between corporate-level filings and vehicle-level reality.

@@ -1,157 +1,108 @@
 ---
-title: "Fireworks display permits"
+title: "Fireworks Display Permits"
 category: "Event & Temporary Use Permits"
 volume: "Small"
 retention: "Event + 7 years (liability)"
 slug: "fireworks-display-permits"
-tags: ["fireworks", "display", "permits", "event", "temporary"]
+tags: ["fireworks-permit", "pyrotechnics", "fire-marshal", "public-safety", "explosives-permit", "event-safety", "compliance"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 3px solid #d32f2f; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="background: #d32f2f; color: #fff; padding: 15px; text-align: center; display: flex; align-items: center; justify-content: center;">
+    <div style="font-size: 2em; margin-right: 15px;">🎆</div>
+    <div>
+      <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">FIREWORKS DISPLAY PERMIT</h2>
+      <div style="font-size: 0.85em; opacity: 0.9;">OFFICE OF THE STATE FIRE MARSHAL</div>
+    </div>
+  </div>
+
+  <div style="padding: 25px;">
+    <div style="text-align: center; border-bottom: 2px solid #d32f2f; padding-bottom: 10px; margin-bottom: 20px;">
+      <h3 style="margin: 0; color: #b71c1c;">PUBLIC DISPLAY AUTHORIZATION</h3>
+      <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;">Permit #: <span data-bracket="start" data-for="fireworks">]</span>FDP-2026-0704</div>
+    </div>
+
+    <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+      <p><strong>Permittee:</strong> Pyro-Technics Global, LLC<br>
+      <strong>Lead Operator:</strong> Michael J. Miller (Lic #9982)</p>
+
+      <div style="background: #fff5f5; border: 1px solid #ffcdd2; padding: 10px; margin: 15px 0; border-radius: 4px;">
+        <p><strong>Event:</strong> Independence Day Celebration<br>
+        <strong>Location:</strong> Town Square Park, Springfield, IL</p>
+        <p><strong>Date:</strong> July 4, 2026 (Rain Date: July 5)</p>
+      </div>
+
+      <p style="font-size: 0.8em; color: #555;"><strong>Authorized Scope:</strong> 1.3G Display Fireworks only. Minimum 300ft fallout zone required. <strong>Insurance:</strong> Verified active ($5M General Liability).</p>
+    </div>
+
+    <div data-verify-line="fireworks" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: State Fire Marshal doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:sfm.illinois.gov/permits/v/FDP0704 <span data-bracket="end" data-for="fireworks">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Pyrotechnician name, license, event location, safety plan, insurance, fire dept
+Permittee name, lead pyrotechnician name/license, event location (launch site), exact date/time, shell classification (e.g., 1.3G vs 1.4G), fallout zone radius, insurance carrier/limit, fire marshall approval ID, date of issuance.
 
-**Permit Types:** Various permit subtypes may exist depending on jurisdiction and specific use.
+**Document Types:**
+- **Public Display Permit:** For large professional shows.
+- **Pyrotechnic Operator License:** The individual's "Driver's License" for explosives.
+- **Magazine Permit:** Authorization to store explosives on-site.
+- **Coast Guard Permit:** For launch barges on waterways.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`sfm.illinois.gov`, `nypd.gov`) and current permit status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-- **Suspended** - Permit temporarily suspended
-- **Pending** - Permit application pending approval
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Active** — Display is authorized for the specified window.
+- **Suspended** — Halted due to high winds, drought (Fire Ban), or safety violation.
+- **Expired** — Event date has passed.
+- **Void** — Permit revoked; launch prohibited.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Pyrotechnician / Display Firm** benefits from verification.
 
-**Legitimacy Confirmation:** After obtaining permit, verify it was properly issued and recorded.
+**Interactions with Police:** Proving to a local patrol officer arriving at the launch site that the "Multimillion-dollar Explosion" they are about to set off is verified and legal. This prevents dangerous, high-stress project shutdowns in the final hours before a show.
 
-**Compliance Display:** Maintain verified permit for posting requirements.
-
-**Scope Verification:** Confirm permitted activities match intended use.
-
-**Expiration Tracking:** Monitor permit status to avoid lapses.
-
-**Record Keeping:** Maintain verified documentation for audits and compliance.
+**Logistics / Renting Barges:** Proving to a barge operator or park owner that the firm has the verified federal and state permits required to bring high explosives onto their property.
 
 ## Third-Party Use
 
-**Lenders and Financial Institutions**
+**Fire Marshals / Safety Officers**
+**Field Enforcement:** An inspector arriving for the pre-show "Shot-Clock" walk-through can scan the permit. "Verified by State Fire Marshal" ensure the lead operator is who they claim to be and that the shell count hasn't been "Edited" beyond the fallout zone's capacity.
 
-Credit underwriting and risk assessment:
+**Event Insurers**
+**Liability Underwriting:** Verifying that the event promoter actually secured the mandatory government permit, which is a "Hard Condition" for liability coverage.
 
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Insurance Companies**
-
-Underwriting and claims processing:
-
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
-
-**Government Agencies**
-
-Compliance enforcement and administration:
-
-**Inspection Verification:** Field agents verify permits and licenses at sites.
-
-**Enforcement Actions:** Confirm documentation before enforcement.
-
-**Benefit Eligibility:** Verify supporting documents for benefits administration.
-
-**Compliance Audits:** Audit documentation for regulatory compliance.
-
-**Interagency Coordination:** Share verified documents across agencies.
-
-**Real Estate Professionals**
-
-Property transactions and due diligence:
-
-**Purchase Due Diligence:** Verify property documents during transactions.
-
-**Listing Preparation:** Confirm permits and documentation for listings.
-
-**Disclosure Compliance:** Validate required disclosures and permits.
-
-**Title Research:** Verify property documents for title clearance.
-
-**Appraisal Support:** Confirm documented improvements and permits.
+**Concerned Neighbors**
+**Transparency:** Allowing residents near the fallout zone to verify that the show is professionally permitted and meets all mandatory safety setbacks.
 
 ## Verification Architecture
 
-**The Fireworks display permits Fraud Problem**
+**The "Bootleg Pyro" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Permit Sharing:** Using one property's permit for work at another location
-- **Scope Expansion:** Expanding permitted activities beyond authorization
-- **Contractor Fraud:** Claiming permits that were never obtained
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Shell Class Inflation:** Buying a permit for "Consumer Sparklers" (low fee) but using the paper to hide a professional "1.3G" display (high risk).
+- **Date Forgery:** Editing an old permit from last year to avoid the $500 state fee and the 30-day notice period.
+- **Operator Impersonation:** An unlicensed amateur using a real professional's name and license number on a fake PDF to get hired for a wedding or local festival.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**State Fire Marshals.**
+**Municipal Fire Departments.**
+**U.S. Coast Guard:** (For maritime launches).
+**ATF:** (For federal explosives movement).
 
-**Government Entities:** Counties, cities, and special districts maintain property records.
+## Competition vs. Central Permit Lists
 
-**Title Companies:** Title insurers and escrow companies for transaction documents.
+| Feature | OCR-to-Hash | Fire Dept. Public List | Scanned PDF Permit |
+| :--- | :--- | :--- | :--- |
+| **Field Access** | **Instant.** Scan the paper at the launch site. | **Difficult.** Requires navigating complex gov databases on mobile at night. | **Instant.** |
+| **Trust Anchor** | **Domain-Bound.** Bound to the State Gov. | **Database.** High trust but manual. | **Zero.** Easily forged. |
+| **Integrity** | **Binds Fallout Zone.** Protects safety data. | **General.** Often just says "Approved" without the zone details. | **Vulnerable.** |
+| **Weather Status** | **Active.** Can show "SUSPENDED (WIND)" in red. | **Passive.** | **Hidden.** |
 
-**Lending Institutions:** Banks and mortgage companies for loan documents.
-
-**Appraisal Firms:** Licensed appraisers for property valuations.
-
-**System Integration**
-
-Real estate verification connects to property systems:
-
-**Recording Systems:** County recorder systems for property document registration.
-
-**MLS Integration:** Multiple listing services for property documentation.
-
-**Title Plants:** Title companies maintain verification for title searches.
-
-**E-Recording:** Electronic recording systems generate verification at recording.
-
-## Rationale
-
-Prevents fake fireworks permits. Domain binding verifies fire marshal. Licensed pyrotechnician verification. High liability risk. Prevents illegal fireworks displays. Public safety critical.
+**Why OCR wins here:** The "T-Minus 60 Minutes" reality. In the hour before a fireworks show, the site is chaotic and the launch team is busy. Police and Fire officials need a **zero-friction, high-authority** way to verify every legal and safety requirement is met. OCR-to-hash turns the **Paper Permit** into a live safety portal that keeps the community safe while the show goes on.

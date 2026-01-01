@@ -1,127 +1,116 @@
 ---
-title: "Catastrophe modeling and PML reports"
+title: "Catastrophe Modeling and PML Reports"
 category: "Actuarial & Insurance Mathematics"
 volume: "Very Small"
 retention: "5-10 years (capital planning)"
 slug: "catastrophe-modeling-pml-reports"
-tags: ["catastrophe", "modeling", "reports", "actuarial", "insurance", "mathematics"]
+tags: ["catastrophe-modeling", "pml", "actuarial", "reinsurance", "risk-management", "solvency", "rms", "air-worldwide"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Helvetica Neue', Helvetica, sans-serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 30px;">
+    <div style="font-weight: bold; font-size: 1.2em; color: #000;">RMS (Risk Management Solutions)</div>
+    <div style="text-align: right; font-size: 0.8em; color: #666;">
+      Model Version: 21.0 (RiskLink)<br>
+      March 15, 2026
+    </div>
+  </div>
+
+  <h3 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; color: #000; border-bottom: 2px solid #000; padding-bottom: 10px;">Probable Maximum Loss (PML) Report</h3>
+
+  <div style="font-size: 0.9em; line-height: 1.6; color: #333; margin-top: 20px;">
+    <p><strong>Insured:</strong> <span data-bracket="start" data-for="pml">]</span>Global Real Estate Trust, REIT<br>
+    <strong>Portfolio:</strong> US Coastal Tier 1 (142 Properties)</p>
+
+    <div style="background: #f9f9f9; padding: 15px; border: 1px solid #eee; margin: 20px 0;">
+      <table style="width: 100%; font-size: 0.95em;">
+        <tr style="border-bottom: 1px solid #ddd;">
+          <th style="text-align: left; padding: 5px;">Return Period</th>
+          <th style="text-align: right; padding: 5px;">PML (Gross)</th>
+        </tr>
+        <tr>
+          <td style="padding: 5px;">1-in-100 Year (Hurricane)</td>
+          <td style="text-align: right; padding: 5px;">$ 142,500,000</td>
+        </tr>
+        <tr>
+          <td style="padding: 5px;">1-in-250 Year (Hurricane)</td>
+          <td style="text-align: right; padding: 5px;">$ 285,000,000</td>
+        </tr>
+        <tr>
+          <td style="padding: 5px;">1-in-500 Year (Earthquake)</td>
+          <td style="text-align: right; padding: 5px;">$ 412,000,000</td>
+        </tr>
+      </table>
+    </div>
+
+    <p style="font-style: italic; font-size: 0.85em;">Certified by: Robert Miller, Senior Catastrophe Modeler</p>
+  </div>
+
+  <div data-verify-line="pml" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+      title="Demo only: RMS doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:rms.com/reports/v/GRET-2026-99 <span data-bracket="end" data-for="pml">]</span>
+  </div>
+</div>
+
 ## Data Verified
 
-Actuary/modeler name, insurance company, PML (Probable Maximum Loss) estimates, catastrophe scenarios
+Modeling firm name, model version (e.g., RMS RiskLink 21), portfolio ID, number of locations, specific return period estimates (100yr, 250yr, 500yr PML), average annual loss (AAL), date of run, certification status.
 
-**Multi-Page Handling:** Documents may span multiple pages. Per-page verification prevents page substitution attacks.
+**Document Types:**
+- **PML Summary Report:** 1-2 page extract for underwriters.
+- **Detailed Loss Analysis (DLA):** Full output file.
+- **Exposure Data Audit:** Verification that the building data (COPE) is accurate.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`rms.com`, `air-worldwide.com`) and the report status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Verified** — Model run matches the firm's official record.
+- **Outdated** — Model version has been retired; new run required.
+- **In-Dispute** — Exposure data (COPE) found to be inaccurate.
+- **Invalid** — Serial number or parameters mismatch.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Insurance Broker** or **REIT Manager** benefits from verification.
 
-**Record Verification:** Confirm financial documents match expectations.
+**Market Submission:** Proving to a panel of 20+ reinsurers that the $285M "1-in-250 PML" figure isn't a fabricated number from a "Lite" model, but is a verified result from a top-tier firm. This builds trust and reduces the "Risk Premium" charged by reinsurers.
 
-**Tax Preparation:** Provide verified documentation for tax filing.
-
-**Audit Support:** Maintain verified records for potential audits.
-
-**Dispute Resolution:** Use verified documents to resolve discrepancies.
-
-**Loan Applications:** Present verified financial documentation to lenders.
+**Investor Transparency:** Proving to REIT shareholders that the company's exposure to climate risk is accurately modeled and verified.
 
 ## Third-Party Use
 
-**Regulators and Oversight Bodies**
+**Reinsurers**
+**Capacity Allocation:** Reinsurers rely on these numbers to decide how much "Cat Limit" to deploy to a specific client. Verification prevents "Model Gaming" where a broker might manipulate parameters to show a lower PML and get a cheaper rate.
 
-Regulatory compliance and oversight:
+**Rating Agencies (S&P / Moody's)**
+**Solvency Analysis:** Ensuring that the PMLs used in capital adequacy models are authentic and haven't been altered.
 
-**Systematic Hash Receipt:** Receive hashes in bulk for regulatory oversight.
-
-**Audit Verification:** Verify documents during routine or targeted audits.
-
-**Compliance Monitoring:** Monitor issuer compliance with documentation requirements.
-
-**Investigation Support:** Verify documents during fraud or compliance investigations.
-
-**Consumer Protection:** Verify consumer-facing documents for protection enforcement.
-
-**Lenders and Financial Institutions**
-
-Credit underwriting and risk assessment:
-
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
+**Mortgage Lenders (Commercial)**
+**Collateral Protection:** Banks lending on coastal towers verify the PML to ensure the project has enough insurance to survive a "1-in-500" event.
 
 ## Verification Architecture
 
-**The Catastrophe modeling and PML reports Fraud Problem**
+**The "Model Gaming" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Income Inflation:** Inflating income or assets on financial documents
-- **Photoshop Fraud:** Digital manipulation of statements and documents
-- **Shell Company Documents:** Documents from fake or shell entities
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Parameter Tampering:** Manually editing the "Demand Surge" or "Storm Surge" flags in the PDF report to lower the PML by 20%.
+- **Location Omission:** Deleting the most high-risk properties (e.g., Miami beach-front) from the portfolio run to artificially lower the aggregate loss number.
+- **Fabricated Certificates:** Shady boutique firms claiming to use "RMS Models" but actually providing a guess-work estimate on fake letterhead.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Model Vendors:** (RMS, AIR Worldwide, CoreLogic).
+**Actuarial Consultants:** (Guy Carpenter, Aon Benfield, Willis Re).
+**In-House Modeling Units:** (For large carriers like Chubb).
 
-**Banks and Credit Unions:** Depository institutions for account documents.
+## Competition vs. API Data Feeds
 
-**Investment Firms:** Brokerage and investment management firms.
+| Feature | OCR-to-Hash | API Integration | Scanned PDF Report |
+| :--- | :--- | :--- | :--- |
+| **User Experience** | **Universal.** Scan the report in the "Submission Pack." | **Hard.** Requires complex software integration between Broker and Reinsurer. | **Instant.** |
+| **Trust Anchor** | **Domain-Bound.** Bound to the Modeler. | **System-Bound.** Trust the data feed. | **Zero.** Easily forged. |
+| **Interoperability** | **High.** Works across 50+ different reinsurers. | **Low.** Every firm has a different platform (Touchstone vs RiskLink). | **Universal.** |
+| **Cost** | **Low.** Standard web infra. | **Very High.** Seven-figure software licenses. | **None.** |
 
-**Insurance Companies:** Insurers for policy and claims documents.
-
-**Accounting Firms:** CPAs and audit firms for financial statements.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Domain binding verifies catastrophe modeling firm (RMS, AIR Worldwide, CoreLogic) or credentialed actuary. Multi-billion dollar capital requirements for insurers. Regulatory compliance (AM Best, S&P ratings). Prevents underestimation of catastrophe risk exposing insurer to insolvency. Critical for property insurers in catastrophe-prone areas.
+**Why OCR wins here:** The "Market Cycle." In the high-speed "Renewal Season" (e.g., Jan 1), thousands of "Submission Packs" (PDFs) are emailed across the globe. Reinsurers don't have the time or tech to link APIs with every single broker. OCR-to-hash provides **API-level trust** for the existing PDF-based workflow.

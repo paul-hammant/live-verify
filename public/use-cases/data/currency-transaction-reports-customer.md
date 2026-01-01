@@ -1,127 +1,118 @@
 ---
-title: "Currency Transaction Reports (CTRs) - customer copies"
+title: "Currency Transaction Reports (CTR) - Customer Records"
 category: "Financial Compliance"
 volume: "Small"
-retention: "5 years (IRS requirement)"
+retention: "5 years (IRS/FinCEN requirement)"
 slug: "currency-transaction-reports-customer"
-tags: ["currency", "transaction", "reports", "customer", "banking", "financial", "services"]
+tags: ["aml", "ctr", "fincen-form-112", "bank-secrecy-act", "cash-transaction", "financial-compliance", "kyc"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="background: #002d62; color: #fff; padding: 20px; text-align: center;">
+    <h2 style="margin: 0; font-size: 1.3em;">CURRENCY TRANSACTION REPORT</h2>
+    <div style="font-size: 0.8em; margin-top: 5px;">FinCEN Form 112 • Official Customer Receipt</div>
+  </div>
+
+  <div style="padding: 25px;">
+    <div style="border-bottom: 2px solid #002d62; padding-bottom: 10px; margin-bottom: 20px;">
+      <strong>Financial Institution:</strong> BANK OF AMERICA, N.A.<br>
+      <strong>Branch:</strong> 402 Market St, San Francisco, CA<br>
+      <strong>Date of Filing:</strong> March 15, 2026
+    </div>
+
+    <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+      <p><strong>Part I: Person Conducting Transaction</strong></p>
+      <p style="background: #f9f9f9; padding: 10px; border-left: 4px solid #002d62;">
+        <span data-bracket="start" data-for="ctr">]</span><strong>Name:</strong> JOHN JACOB DOE<br>
+        <strong>SSN/ITIN:</strong> ***-**-1234<br>
+        <strong>ID:</strong> CA Driver License #*******
+      </p>
+
+      <p><strong>Part II: Transaction Details</strong></p>
+      <table style="width: 100%; border-collapse: collapse;">
+        <tr>
+          <td>Cash-In (Deposit):</td>
+          <td style="text-align: right; font-weight: bold;">$ 12,500.00</td>
+        </tr>
+        <tr>
+          <td>Account Number:</td>
+          <td style="text-align: right;">****-****-9982</td>
+        </tr>
+      </table>
+    </div>
+
+    <p style="font-size: 0.8em; color: #777; font-style: italic; margin-top: 20px;">
+      This report is filed in accordance with the Bank Secrecy Act. Submission ID: 9988776655.
+    </p>
+
+    <div data-verify-line="ctr" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: FinCEN/Banks don't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:bankofamerica.com/compliance/v/99887766 <span data-bracket="end" data-for="ctr">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Customer name, transaction amount, date, financial institution
+Customer name, SSN/TIN (redacted), identifying document number, financial institution name/branch, cash-in/cash-out amount, account number (masked), date of transaction, FinCEN filing reference ID.
 
-**Multi-Page Handling:** Documents may span multiple pages. Per-page verification prevents page substitution attacks.
+**Document Types:**
+- **CTR Receipt:** Issued to the customer for their records.
+- **FinCEN Form 112:** The official federal filing.
+- **Exempt Person Filing:** For businesses that don't require regular CTRs.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (the Bank) and the filing status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Filed** — Report has been successfully transmitted to FinCEN.
+- **Corrected** — Original filing was amended (e.g., due to amount correction).
+- **Rejected** — Filing was returned by FinCEN for errors.
+- **Void** — Transaction reversed; filing withdrawn.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Bank Customer** benefits from verification.
 
-**Record Verification:** Confirm financial documents match expectations.
+**Tax Audit Defense:** If the IRS questions a large $12,500 cash deposit 3 years later, the customer can provide the verified CTR receipt. This proves they followed federal "Anti-Money Laundering" laws at the time of the transaction, separating legitimate cash income from "unreported" income.
 
-**Tax Preparation:** Provide verified documentation for tax filing.
-
-**Audit Support:** Maintain verified records for potential audits.
-
-**Dispute Resolution:** Use verified documents to resolve discrepancies.
-
-**Loan Applications:** Present verified financial documentation to lenders.
+**Source of Funds:** Proving to a real estate attorney or title company that a large cash downpayment was properly reported to the government, avoiding delays in closing.
 
 ## Third-Party Use
 
-**Regulators and Oversight Bodies**
+**The IRS / FinCEN**
+**Audit Integrity:** During a bank examination, federal auditors can scan random customer-held CTR receipts. Verification ensures the bank isn't "Deleting" reports from their internal database while still giving receipts to customers.
 
-Regulatory compliance and oversight:
+**Real Estate Attorneys**
+**Compliance Vetting:** Verifying the "Source of Funds" for cash buyers to ensure the money isn't being "Laundered" through un-reported cash deposits.
 
-**Systematic Hash Receipt:** Receive hashes in bulk for regulatory oversight.
-
-**Audit Verification:** Verify documents during routine or targeted audits.
-
-**Compliance Monitoring:** Monitor issuer compliance with documentation requirements.
-
-**Investigation Support:** Verify documents during fraud or compliance investigations.
-
-**Consumer Protection:** Verify consumer-facing documents for protection enforcement.
-
-**Lenders and Financial Institutions**
-
-Credit underwriting and risk assessment:
-
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
+**Commercial Lenders**
+**Risk Management:** For cash-intensive businesses (e.g., restaurants or laundromats), lenders can verify that the company is properly reporting its cash receipts to the government, reducing the bank's regulatory risk.
 
 ## Verification Architecture
 
-**The Currency Transaction Reports (CTRs) - customer copies Fraud Problem**
+**The "Structuring" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Income Inflation:** Inflating income or assets on financial documents
-- **Photoshop Fraud:** Digital manipulation of statements and documents
-- **Shell Company Documents:** Documents from fake or shell entities
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Report Deletion:** A corrupt bank employee taking a bribe to "Delete" a CTR from the federal system after the customer leaves the branch. OCR-to-hash prevents this by making the customer's paper receipt a verified link to the bank's domain record.
+- **Amount Tampering:** A customer editing their $50,000 CTR receipt to read $5,000 to hide the true scale of a cash transaction from their spouse or an auditor.
+- **Fake Receipts:** Fraudsters creating fake "CTR Filed" papers to trick a landlord or lender into thinking their illegal cash has been "cleansed" by government reporting.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Retail Banks & Credit Unions.**
+**Casinos:** (Who must file CTRCs for large wins/losses).
+**Money Service Businesses (MSBs).**
 
-**Banks and Credit Unions:** Depository institutions for account documents.
+**Privacy Salt:** ABSOLUTELY CRITICAL. CTRs contain SSNs and large dollar amounts. The hash must be salted to prevent "Guess-and-Check" searches for people making large cash moves.
 
-**Investment Firms:** Brokerage and investment management firms.
+## Competition vs. Internal Bank Logs
 
-**Insurance Companies:** Insurers for policy and claims documents.
+| Feature | OCR-to-Hash | Bank Internal Log | Paper Receipt |
+| :--- | :--- | :--- | :--- |
+| **User Access** | **Universal.** Customer can show anyone. | **Zero.** Customers can't see the bank's AML logs. | **Instant.** |
+| **Trust Anchor** | **Domain-Bound.** Bound to the Bank. | **System-Bound.** | **Zero.** Easily forged. |
+| **Integrity** | **Cryptographic.** Binds Name + Amount. | **High.** Direct DB. | **Vulnerable.** |
+| **Portability** | **High.** Verified PDF works for any 3rd party. | **None.** Requires bank intervention. | **High.** |
 
-**Accounting Firms:** CPAs and audit firms for financial statements.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Customer receives verifiable copy of CTR filing. Domain binding verifies financial institution. Tamper-evident transaction record. IRS BSA compliance. Prevents disputes over reported amounts.
+**Why OCR wins here:** The "External Proof." A bank's internal log is useless to a customer who needs to prove their legitimacy to a third party (like an IRS auditor or a lawyer). OCR-to-hash turns the **Bank's Internal Truth** into a **Portable Legal Artifact** that the customer can use for their own protection.

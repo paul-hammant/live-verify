@@ -1,108 +1,104 @@
 ---
-title: "Document translations (certified translations)"
+title: "Certified Document Translations"
 category: "Notary Services"
 volume: "Medium"
 retention: "Translation purpose + 7-10 years"
 slug: "certified-translations"
-tags: ["certified", "translations", "notary", "services"]
+tags: ["translation", "notary", "certified-translation", "ata", "immigration", "legal-docs"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #999; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+  <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 25px;">
+    <div style="font-weight: bold; font-size: 1.2em;">LINGUISTIC ACCURACY, INC.</div>
+    <div style="font-size: 0.85em; color: #666;">CERTIFIED TRANSLATION SERVICES • ATA MEMBER #998877</div>
+  </div>
+
+  <h3 style="text-align: center; text-transform: uppercase; margin-bottom: 20px;">Certificate of Translation</h3>
+
+  <div style="font-size: 1em; line-height: 1.6; color: #000; text-align: justify;">
+    <p>I, <span data-bracket="start" data-for="trans">]</span><strong>MARIA GARCIA</strong>, hereby certify that I am competent to translate from <strong>SPANISH</strong> into <strong>ENGLISH</strong> and that the attached document titled <em>Acta de Nacimiento (Birth Certificate)</em> is a true and accurate translation of the original.</p>
+    
+    <div style="margin: 20px 0; border: 1px solid #eee; padding: 10px; background: #f9f9f9; font-size: 0.9em;">
+      <strong>Subject:</strong> Juan Valdez<br>
+      <strong>Document ID:</strong> MEX-998877-BC<br>
+      <strong>Pages:</strong> 2
+    </div>
+
+    <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+      <div>
+        <div style="border-top: 1px solid #000; width: 200px; padding-top: 5px; font-style: italic;">Maria Garcia</div>
+        <div style="font-size: 0.8em; color: #777;">Translator ID: MG-2026-04</div>
+      </div>
+      <div style="text-align: right;">
+        <div style="width: 80px; height: 80px; border: 2px solid #000; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold;">NOTARY<br>SEAL</div>
+      </div>
+    </div>
+  </div>
+
+  <div data-verify-line="trans" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+      title="Demo only: Translation firm doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:linguisticaccuracy.com/v/MEX998877 <span data-bracket="end" data-for="trans">]</span>
+  </div>
+</div>
+
 ## Data Verified
 
-Translator name, translator credentials, original document language, translated document, notary certification, notary name, notary commission number, notary seal, translation date
+Translator name, credentials (e.g., ATA certification #), source language, target language, title of original document, subject name, number of pages, date of certification, notary name/commission (if notarized).
+
+**Document Types:**
+- **Certificate of Accuracy:** Attached to the front of the translation.
+- **Notarized Translation:** Required for many government filings.
+- **Sworn Translation:** (Traducteur Assermenté) common in Europe.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (the Translation Firm or Platform) and current status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Certified** — Translation matches the firm's official output.
+- **Superseded** — Replaced by a newer version (e.g., due to a correction).
+- **Invalid** — Disavowed by the translator (e.g., signature forgery).
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Linguist / Translation Agency** benefits from verification.
 
-**Document Authenticity:** Verify received documents are genuine and properly issued.
+**Reputation Protection:** Ensuring that an unscrupulous client doesn't "edit" the translated PDF (e.g., changing a date or a legal term) while keeping the translator's official signature/seal on the letterhead.
 
-**Third-Party Presentation:** Provide verified documentation when required.
-
-**Compliance Requirements:** Meet regulatory or contractual documentation requirements.
-
-**Record Keeping:** Maintain verified records for future reference or audits.
-
-**Dispute Prevention:** Establish authenticity to prevent future challenges.
+**Business Efficiency:** Reducing the time spent manually confirming "Did you translate this?" phone calls from embassies or courts.
 
 ## Third-Party Use
 
-**Courts and Legal Professionals**
+**Embassies / Consulates**
+**Visa Adjudication:** Verifying that the birth certificate or marriage license translation hasn't been altered to hide a criminal record or change a name.
 
-Litigation and legal proceedings:
+**University Admissions**
+**Transcript Validation:** Ensuring that the translated "High School Diploma" is exactly what the certified translator issued, preventing grade or degree title inflation.
 
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
-
-**Auditors and Compliance Officers**
-
-Internal and external audits:
-
-**Financial Audits:** Verify documents during financial statement audits.
-
-**Compliance Audits:** Validate documentation for regulatory compliance.
-
-**Internal Controls:** Test document authenticity in control assessments.
-
-**Fraud Investigations:** Verify documents in fraud examinations.
-
-**Third-Party Audits:** Validate vendor and partner documentation.
+**Courts / Legal Counsel**
+**Evidence Admissibility:** Proving the "Chain of Accuracy" for translated foreign evidence in litigation.
 
 ## Verification Architecture
 
-**The Document translations (certified translations) Fraud Problem**
+**The "PDF Edit" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Terms Alteration:** Changing "Guilty" to "Not Guilty" in a translated court record.
+- **Grade Inflation:** Editing a translated university transcript to change a "C" to an "A."
+- **Fake Agencies:** Creating a fake "Certified Translation" letterhead for an un-certified, unqualified translator.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Translation Agencies:** (e.g., TransPerfect, Lionbridge).
+**Independent Linguists:** (ATA Certified translators).
+**Online Platforms:** (Rev, Gengo).
 
-**Primary Issuers:** Organizations with direct authority to issue these documents.
+## Competition vs. Physical Seals / Notarization
 
-**Licensed Professionals:** Professionals authorized to create and certify documents.
+| Feature | OCR-to-Hash | Notary Seal (Embossed) | Scanned PDF |
+| :--- | :--- | :--- | :--- |
+| **Integrity** | **Binds Content.** Protects every word. | **Binds Paper.** Doesn't prevent editing the text. | **Zero.** Easily forged. |
+| **Trust Anchor** | **Domain-Bound.** Trust the Firm. | **License-Bound.** Trust the Notary. | **Visual.** |
+| **User Control** | **High.** Share only the verified doc. | **Medium.** Prone to loss. | **Low.** |
+| **Speed** | **Instant.** 5-second scan. | **Manual.** Requires visual expert. | **N/A.** |
 
-**Government Agencies:** Federal, state, or local agencies with jurisdiction.
-
-**Industry Bodies:** Trade associations and professional organizations.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Prevents fake certified translations for immigration and legal proceedings. Domain binding verifies translator and notary legitimacy. Immigration applications (USCIS) require certified translations of foreign documents. Court proceedings accept only certified translations as evidence. Legal document translation for international contracts. Prevents translation fraud in visa applications. Multi-page documents require per-page certification. Critical for immigration where translation accuracy and authenticity are verified.
+**Why OCR wins here:** Content Protection. A Notary only proves that "John Smith signed this paper." They do not read the translation or verify its accuracy. OCR-to-hash binds the **actual translated text** to the Translation Firm's domain, ensuring the *message* hasn't been tampered with.

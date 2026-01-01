@@ -1,122 +1,113 @@
 ---
-title: "Intermodal equipment receipts (EIR)"
+title: "Intermodal Equipment Interchange Receipts (EIR)"
 category: "Shipping & Freight"
-volume: "Large"
+volume: "Very Large"
 retention: "Equipment return + 7 years"
 slug: "intermodal-equipment-receipts"
-tags: ["intermodal", "equipment", "receipts", "logistics", "transportation"]
+tags: ["logistics", "intermodal", "chassis-inspection", "container-damage", "terminal-operations", "eir", "liability-transfer", "port-logistics"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 1px solid #000; background: #fff; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+  <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
+    <strong>GLOBAL TERMINAL OPERATORS</strong><br>
+    EQUIPMENT INTERCHANGE RECEIPT (EIR)<br>
+    -------------------------------------
+  </div>
+
+  <div style="font-size: 0.85em; line-height: 1.4;">
+    <div style="display: flex; justify-content: space-between;">
+      <div>
+        <strong>Container ID:</strong> <span data-bracket="start" data-for="eir">]</span>MSKU-998877-6<br>
+        <strong>Chassis ID:</strong> GTO-4228
+      </div>
+      <div style="text-align: right;">
+        <strong>Transaction #:</strong> 99228877<br>
+        <strong>Date:</strong> 15 MAR 2026 09:14 AM
+      </div>
+    </div>
+
+    <div style="margin: 15px 0; border: 1px solid #000; padding: 10px; background: #f9f9f9;">
+      <strong>DAMAGE NOTATIONS (OUTGATE):</strong><br>
+      [ ] NO DAMAGE FOUND (CLEAN)<br>
+      [X] SC-1: 12" Scratch, Left Side Panel<br>
+      [X] DT-4: Minor Dent, Rear Door sill
+    </div>
+
+    <p><strong>Trucking Co:</strong> Quick-Haul Transport, Inc.<br>
+    <strong>Driver ID:</strong> Miller, R. (Verified)<br>
+    <strong>Terminal:</strong> LBCT Pier E, Long Beach, CA</p>
+
+    <div style="margin-top: 20px; font-size: 0.8em; font-style: italic; color: #555;">
+      Signatory confirms receipt of equipment in the condition noted above.
+    </div>
+
+    <div data-verify-line="eir" style="border-top: 1px dashed #999; margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: Terminal doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:global-terminals.com/eir/v/99228877 <span data-bracket="end" data-for="eir">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Carrier, container/chassis number, equipment condition, damage notation
+Container ID, Chassis ID, Trucking company name, Driver ID (hash), Outgate/Ingate status, detailed damage codes (e.g., SC-1, DT-4), seal integrity status, terminal location ID, precise timestamp, issuing terminal operator.
+
+**Document Types:**
+- **Inbound EIR:** When a trucker brings a container *into* the port.
+- **Outbound EIR:** When a trucker picks up a container *from* the port.
+- **Street Turn Receipt:** When equipment is transferred between truckers outside the port.
+- **Chassis Inspection Report:** Specifically for the road-worthiness of the trailer.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (the Terminal Operator or Port Authority) and current asset status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Outgated** — Equipment is currently in the possession of the trucker.
+- **Returned/Ingated** — Equipment has been verified back at the terminal.
+- **Damage Claim Active** — Terminal has flagged the asset for repair billing.
+- **Lost/Stolen** — Asset reported missing from the fleet.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Trucking Company / Driver** benefits from verification.
 
-**Document Authenticity:** Verify received documents are genuine and properly issued.
+**Liability Defense:** Proving to the Steamship Line (e.g., Maersk) that the "12-inch scratch" was already noted on the verified EIR at the moment of pickup. Verification prevents the carrier from charging the trucker $500 for a repair they didn't cause.
 
-**Third-Party Presentation:** Provide verified documentation when required.
-
-**Compliance Requirements:** Meet regulatory or contractual documentation requirements.
-
-**Record Keeping:** Maintain verified records for future reference or audits.
-
-**Dispute Prevention:** Establish authenticity to prevent future challenges.
+**Billing Disputes:** Providing verified "Outgate vs Ingate" timestamps to a customer to justify "Demurrage" or "Detention" charges based on actual terminal data.
 
 ## Third-Party Use
 
-**Insurance Companies**
+**Ocean Carriers (Steamship Lines)**
+**Maintenance Audit:** Instantly verifying the condition reports from 100+ different global terminals. OCR-to-hash allows the carrier to build a digital history of every asset's damage, identifying "Repeat Offender" truckers who consistently damage containers.
 
-Underwriting and claims processing:
+**Marine Insurers**
+**Claim Adjudication:** Verifying the "Point of Damage." If a container is reported damaged at the warehouse, the insurer checks the verified EIR from the port. If the EIR was "Clean," the liability falls on the trucker.
 
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Customs and Border Authorities**
-
-International trade compliance:
-
-**Import Clearance:** Verify shipping documents for customs clearance.
-
-**Duty Assessment:** Validate commercial invoices and declarations.
-
-**Trade Compliance:** Confirm certificates of origin and trade documents.
-
-**Security Screening:** Verify cargo documentation for security.
-
-**Export Controls:** Validate export documentation and licenses.
-
-**Freight Forwarders and Carriers**
-
-Logistics and transportation:
-
-**Shipment Acceptance:** Verify documents before accepting cargo.
-
-**Carrier Handoffs:** Validate documentation at transfer points.
-
-**Liability Determination:** Reference verified documents for claims.
-
-**Route Planning:** Confirm documentation for transit requirements.
-
-**Delivery Confirmation:** Verify documents at final delivery.
+**Chassis Pool Managers**
+**Inventory Control:** Verifying the "Road-Worthiness" status of thousands of chassis moving across multiple port complexes.
 
 ## Verification Architecture
 
-**The Intermodal equipment receipts (EIR) Fraud Problem**
+**The "Scratch and Dent" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Damage Erasure:** A trucker editing the PDF EIR to remove a "Dent" notation before returning the container, to avoid a $1,000 repair fee.
+- **Timestamp Tampering:** Changing the "Outgate Time" to hide that a truck sat at the gate for 4 hours (which triggers a penalty for the terminal).
+- **Identity Theft:** Using a "Clean" driver's ID on a paper EIR while an unauthorized or uninsured driver actually takes the load.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Terminal Operators:** (e.g., APM Terminals, DP World, SSA Marine).
+**Port Authorities.**
+**Intermodal Platforms:** (e.g., Advent eModal, IAS).
 
-**Primary Issuers:** Organizations with direct authority to issue these documents.
+## Competition vs. EDI Messaging (322)
 
-**Licensed Professionals:** Professionals authorized to create and certify documents.
+| Feature | OCR-to-Hash | EDI 322 (Gate Event) | Paper EIR |
+| :--- | :--- | :--- | :--- |
+| **User Access** | **Universal.** Any driver or local shop. | **Restricted.** Requires complex B2B IT setup. | **Instant.** |
+| **Trust Anchor** | **Domain-Bound.** Bound to the Terminal. | **System-Bound.** | **Zero.** Easily forged. |
+| **Integrity** | **Binds Damage Codes.** Protects the text. | **Data-Only.** | **Vulnerable.** |
+| **Offline Proof** | **Strong.** The paper is the anchor. | **None.** Requires server access. | **Medium.** |
 
-**Government Agencies:** Federal, state, or local agencies with jurisdiction.
-
-**Industry Bodies:** Trade associations and professional organizations.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Prevents altered equipment damage notation (equipment interchange fraud). Domain binding verifies terminal operator/carrier. Damage responsibility documentation. Prevents fraudulent damage claims.
+**Why OCR wins here:** The "Gate Moment." Terminals are high-pressure bottlenecks. When a driver disputes a damage code with a gate clerk, they are looking at a piece of paper or a handheld screen. They don't have access to the back-end EDI logs. OCR-to-hash turns the **Trucker's Receipt** into a live, trusted safety link that provides "Port-Grade" security in seconds.

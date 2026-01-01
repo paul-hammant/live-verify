@@ -1,125 +1,108 @@
 ---
-title: "Cross-border payment receipts (Wise, Remitly, Xoom)"
+title: "Cross-Border Payment Receipts"
 category: "Banking & Payments"
 volume: "Medium"
 retention: "5-7 years (compliance/disputes)"
 slug: "cross-border-payment-receipts"
-tags: ["cross", "border", "payment", "receipts", "banking", "financial", "services"]
+tags: ["remittance", "cross-border-payment", "wise", "remitly", "swif", "currency-exchange", "financial-transparency"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #00b9ff; border-radius: 8px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="background: #00b9ff; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+    <div style="font-weight: bold; font-size: 1.4em;">Wise</div>
+    <div style="font-size: 0.8em; font-weight: bold; text-transform: uppercase;">Transfer Confirmation</div>
+  </div>
+
+  <div style="padding: 30px;">
+    <div style="text-align: center; margin-bottom: 25px;">
+      <div style="font-size: 0.9em; color: #666;">Transfer ID: <span data-bracket="start" data-for="remit">]</span>#9988776655</div>
+      <div style="font-size: 2.2em; font-weight: bold; color: #00b9ff; margin-top: 5px;">$ 5,000.00 USD</div>
+    </div>
+
+    <div style="font-size: 0.95em; line-height: 1.6; color: #333; border-top: 1px solid #eee; padding-top: 20px;">
+      <p><strong>Sender:</strong> JOHN SMITH (USA)</p>
+      <p><strong>Recipient:</strong> TECH-SERVICES LTD (INDIA)<br>
+      <strong>Converted To:</strong> ₹ 415,250.00 INR</p>
+      
+      <p><strong>Exchange Rate:</strong> 1 USD = 83.05 INR<br>
+      <strong>Fees:</strong> $ 24.50 USD</p>
+      
+      <p><strong>Status:</strong> SENT & COMPLETED<br>
+      <strong>Date:</strong> March 15, 2026</p>
+    </div>
+
+    <div style="margin-top: 30px; padding: 10px; background: #f0faff; border: 1px solid #00b9ff; border-radius: 6px; font-size: 0.8em; color: #005a8c;">
+      <strong>Consumer Notice:</strong> This receipt is a verified record of the exchange rate and fees applied to your international transfer.
+    </div>
+
+    <div data-verify-line="remit" style="border-top: 1px dashed #00b9ff; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: Wise doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:wise.com/v/9988776655 <span data-bracket="end" data-for="remit">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Sender, recipient, amount, fees, exchange rate, transfer ID
+Sender name, Recipient name/Bank details, Transfer ID, amount sent (currency A), amount received (currency B), exchange rate, transaction fees, timestamp of completion, issuing money transmitter.
+
+**Document Types:**
+- **Transfer Confirmation:** The standard PDF/Email for the sender.
+- **Remittance Receipt:** For cash-pickup services (e.g., Western Union).
+- **SWIFT MT103 Message:** Technical confirmation for high-value B2B wires.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`wise.com`, `remitly.com`) and current fund status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Completed** — Funds have been delivered to the recipient's bank.
+- **Cancelled** — Transaction voided; funds returned to sender.
+- **Processing** — Funds en route; rate is locked.
+- **Hold** — Under review (e.g., for compliance/AML reasons).
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Sender** (Remitter) benefits from verification.
 
-**Record Verification:** Confirm financial documents match expectations.
+**Payment Proof:** Proving to a freelance developer or a family member abroad that the $5,000 was *actually sent* and isn't just a "Fake Screenshot." Verification prevents the "Recipient says they didn't get it" dispute.
 
-**Tax Preparation:** Provide verified documentation for tax filing.
-
-**Audit Support:** Maintain verified records for potential audits.
-
-**Dispute Resolution:** Use verified documents to resolve discrepancies.
-
-**Loan Applications:** Present verified financial documentation to lenders.
+**Expense Audit:** Providing verified proof of foreign business expenses to a company's finance department, ensuring the "Exchange Rate" and "Fees" claimed match the verified reality.
 
 ## Third-Party Use
 
-**Regulators and Oversight Bodies**
+**Tax Authorities / Customs**
+**Source of Funds:** Verifying large incoming international payments to comply with anti-money laundering (AML) laws. A verified receipt from `wise.com` is more authoritative than a plain paper printout.
 
-Regulatory compliance and oversight:
+**Mortgage Lenders**
+**Downpayment Vetting:** When a homebuyer receives a "Gift" from a relative overseas, the lender must verify the source. OCR-to-hash allows the lender to trust the international transfer receipt instantly.
 
-**Systematic Hash Receipt:** Receive hashes in bulk for regulatory oversight.
-
-**Audit Verification:** Verify documents during routine or targeted audits.
-
-**Compliance Monitoring:** Monitor issuer compliance with documentation requirements.
-
-**Investigation Support:** Verify documents during fraud or compliance investigations.
-
-**Consumer Protection:** Verify consumer-facing documents for protection enforcement.
-
-**Lenders and Financial Institutions**
-
-Credit underwriting and risk assessment:
-
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
+**Regulators (CFPB / FCA)**
+**Transparency Compliance:** Ensuring that money transmitters are correctly disclosing their "Total Cost" (Rate + Fees) as required by consumer protection laws (e.g., Dodd-Frank Section 1073).
 
 ## Verification Architecture
 
-**The Cross-border payment receipts (Wise, Remitly, Xoom) Fraud Problem**
+**The "Fake Screenshot" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Income Inflation:** Inflating income or assets on financial documents
-- **Photoshop Fraud:** Digital manipulation of statements and documents
-- **Shell Company Documents:** Documents from fake or shell entities
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Screenshot Editing:** Using a browser "Inspect Element" tool to change a $100 transfer to $10,000, then taking a screenshot to trick a seller into shipping goods.
+- **Rate Manipulation:** Hiding a high "FX Markup" by editing the exchange rate on the PDF to look better than it was.
+- **Ghost Transfers:** Creating a fake PDF confirmation for a transfer that was never initiated to "buy time" from a creditor.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Fintech Remitters:** (Wise, Remitly, WorldRemit, Revolut).
+**Legacy Banks:** (SWIFT gpi tracking).
+**Cash Networks:** (Western Union, MoneyGram).
 
-**Banks and Credit Unions:** Depository institutions for account documents.
+**Privacy Salt:** Highly critical. Remittance data involves PII and banking info. The hash must be salted to prevent "Guessing" transfer IDs to see who is moving money.
 
-**Investment Firms:** Brokerage and investment management firms.
+## Competition vs. SWIFT gpi (Tracking)
 
-**Insurance Companies:** Insurers for policy and claims documents.
+| Feature | OCR-to-Hash | SWIFT gpi (Bank Tracking) | Scanned PDF / Image |
+| :--- | :--- | :--- | :--- |
+| **Trust Anchor** | **Domain-Bound.** Bound to the Payer. | **Bank-Bound.** Trust the technical message. | **Zero.** Easily forged. |
+| **User Access** | **Universal.** Any recipient can verify. | **Restricted.** Usually only the sending/receiving banks see the log. | **Instant.** |
+| **Integrity** | **Binds FX Rates.** Protects the numbers. | **Data-Only.** | **Vulnerable.** |
+| **Interoperability** | **High.** Works for non-SWIFT fintechs. | **Limited.** Only for SWIFT-member banks. | **Universal.** |
 
-**Accounting Firms:** CPAs and audit firms for financial statements.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Prevents altered cross-border payment receipts. Domain binding verifies transfer service. Tamper-evident fee/exchange rate disclosure. Consumer protection. Regulatory compliance (EU PSD2, US state money transmitter laws).
+**Why OCR wins here:** The "End-to-End" Reality. SWIFT gpi is great for banks, but the actual **human recipient** often just gets a PDF in their email. OCR-to-hash turns that **Static PDF** into a live, verifiable proof-of-payment that bridges the gap between the bank's technical ledger and the human's inbox.

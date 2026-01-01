@@ -1,125 +1,112 @@
 ---
-title: "Beneficial ownership declarations"
+title: "Beneficial Ownership Declarations"
 category: "Financial Compliance"
 volume: "Small"
 retention: "5-10 years post-relationship"
 slug: "beneficial-ownership-declarations"
-tags: ["beneficial", "ownership", "declarations", "banking", "financial", "services"]
+tags: ["aml", "kyc", "fincen", "ubo", "beneficial-ownership", "corporate-transparency"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="background: #002d62; color: #fff; padding: 20px; text-align: center;">
+    <h2 style="margin: 0; font-size: 1.3em;">BENEFICIAL OWNERSHIP DECLARATION</h2>
+    <div style="font-size: 0.8em; margin-top: 5px;">FINANCIAL CRIMES ENFORCEMENT NETWORK (FinCEN)</div>
+  </div>
+
+  <div style="padding: 30px;">
+    <div style="border-bottom: 2px solid #002d62; padding-bottom: 10px; margin-bottom: 20px;">
+      <strong>Reporting Company:</strong> <span data-bracket="start" data-for="ubo">]</span>Global Shell Holdings, LLC<br>
+      <strong>Tax ID:</strong> 12-3456789<br>
+      <strong>Jurisdiction:</strong> Delaware, USA
+    </div>
+
+    <h3 style="font-size: 1.1em; color: #002d62;">ULTIMATE BENEFICIAL OWNERS (UBO)</h3>
+    
+    <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+      <p style="background: #f9f9f9; padding: 10px; border-left: 4px solid #002d62;">
+        <strong>1. Name:</strong> JOHN DOE (Direct Owner)<br>
+        <strong>Ownership:</strong> 60% Voting Shares<br>
+        <strong>ID:</strong> US Passport No. *******123
+      </p>
+
+      <p style="background: #f9f9f9; padding: 10px; border-left: 4px solid #002d62;">
+        <strong>2. Name:</strong> JANE SMITH (Indirect Owner)<br>
+        <strong>Ownership:</strong> 40% via Smith Family Trust<br>
+        <strong>ID:</strong> UK Driving License No. *******456
+      </p>
+    </div>
+
+    <p style="font-size: 0.8em; color: #777; font-style: italic; margin-top: 20px;">
+      This declaration is true and correct under penalty of perjury. 31 U.S.C. § 5336.
+    </p>
+
+    <div data-verify-line="ubo" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: FinCEN doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:fincen.gov/boi/v/99887766 <span data-bracket="end" data-for="ubo">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-UBO (Ultimate Beneficial Owner) names, ownership percentages, corporate structure, control relationships
+Reporting company name, Tax ID (EIN), Beneficial Owner names, ownership percentages, control relationships, identifying document numbers (redacted), date of filing.
+
+**Document Types:**
+- **BOI Report Extract:** Beneficial Ownership Information (under CTA).
+- **UBO Self-Certification:** For bank onboarding.
+- **Complex Ownership Diagram:** Visual chart of parent/subsidiary links.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`fincen.gov`, `registry.gov.uk`) and current filing status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Current** — Filing matches the latest registry record.
+- **Outdated** — Ownership has changed; new filing required.
+- **In-Dispute** — Control contest reported.
+- **Flagged** — Associated with a sanctioned entity or person.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Business Owner** benefits from verification.
 
-**Record Verification:** Confirm financial documents match expectations.
+**Bank Onboarding:** Proving to a bank during KYC (Know Your Customer) that the ownership structure they are presenting is the *exact same one* filed with the government. This prevents the "2-week delay" while the bank manually verifies ownership.
 
-**Tax Preparation:** Provide verified documentation for tax filing.
-
-**Audit Support:** Maintain verified records for potential audits.
-
-**Dispute Resolution:** Use verified documents to resolve discrepancies.
-
-**Loan Applications:** Present verified financial documentation to lenders.
+**Contract Bidding:** Proving transparency to a government contractor or a major corporation that the company isn't a front for a sanctioned individual.
 
 ## Third-Party Use
 
-**Regulators and Oversight Bodies**
+**Bank Compliance Officers (AML)**
+**Instant KYC:** Verification allows the bank to instantly trust the paper/PDF "Declaration of Ownership" provided by the customer, as it links directly to the FinCEN or Companies House domain record.
 
-Regulatory compliance and oversight:
+**Supply Chain Auditors**
+**Anti-Corruption:** Ensuring that "Tier 2" suppliers aren't secretly owned by the same executives as "Tier 1" suppliers (collusion detection).
 
-**Systematic Hash Receipt:** Receive hashes in bulk for regulatory oversight.
-
-**Audit Verification:** Verify documents during routine or targeted audits.
-
-**Compliance Monitoring:** Monitor issuer compliance with documentation requirements.
-
-**Investigation Support:** Verify documents during fraud or compliance investigations.
-
-**Consumer Protection:** Verify consumer-facing documents for protection enforcement.
-
-**Lenders and Financial Institutions**
-
-Credit underwriting and risk assessment:
-
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
+**Investigative Journalists**
+**Corruption Tracking:** Verifying the "Official" ownership claims of shell companies involved in public projects.
 
 ## Verification Architecture
 
-**The Beneficial ownership declarations Fraud Problem**
+**The "Shell Game" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Income Inflation:** Inflating income or assets on financial documents
-- **Photoshop Fraud:** Digital manipulation of statements and documents
-- **Shell Company Documents:** Documents from fake or shell entities
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Layering:** Creating 10 levels of shell companies to hide that a sanctioned oligarch actually owns the business.
+- **Front-Men:** Listing a secretary or lawyer as the "Owner" on the paper declaration while the real owner remains hidden in the background.
+- **Fabricated Filings:** Showing a fake "FinCEN Receipt" to a bank to hide that the company never actually filed its ownership report.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**National Registries:** (e.g., U.K. Companies House, Singapore ACRA).
+**Federal Agencies:** (e.g., U.S. FinCEN).
+**Private Compliance Platforms:** (e.g., Dun & Bradstreet, Moody's).
 
-**Banks and Credit Unions:** Depository institutions for account documents.
+**Privacy Salt:** Highly critical. Declarations contain sensitive PII. The hash must be salted to prevent "guessing" names of owners.
 
-**Investment Firms:** Brokerage and investment management firms.
+## Competition vs. Registry Portals
 
-**Insurance Companies:** Insurers for policy and claims documents.
+| Feature | OCR-to-Hash | Public Registry Portal | Private KYC Utility (Swift) |
+| :--- | :--- | :--- | :--- |
+| **User Privacy** | **High.** Only the specific company is verified. | **Low.** Many registries are public/searchable (privacy risk). | **Very Low.** Centralized data pool. |
+| **Trust** | **Cryptographic.** Bound to the Gov domain. | **Medium.** Prone to UI spoofing/phishing. | **High.** But requires expensive membership. |
+| **Immediacy** | **Instant.** Scan the document during onboarding. | **Slow.** Login, search, pay fee, download PDF. | **Fast.** But siloed. |
 
-**Accounting Firms:** CPAs and audit firms for financial statements.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Corporate registry verification for shell company prevention. Domain binding verifies registry authority. Prevents shell company fraud and ownership obfuscation. Regulatory compliance (FinCEN CDD Rule, EU AML directives). Human-readable corporate structure documentation. Critical for AML where beneficial ownership transparency prevents money laundering through complex corporate structures.
+**Why OCR wins here:** It bridges the gap between the **Private Corporate File** and the **Public Government Record**. It allows a company to prove its status to a partner *without* the partner needing to independently navigate a foreign, complex, and potentially expensive government registry website.

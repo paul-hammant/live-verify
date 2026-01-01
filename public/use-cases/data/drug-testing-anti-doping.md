@@ -1,96 +1,118 @@
 ---
-title: "Drug testing (anti-doping) certificates"
+title: "Drug Testing and Anti-Doping Certificates"
 category: "Sports & Athletics"
 volume: "Very Small"
 retention: "10-20 years (WADA requirements)"
 slug: "drug-testing-anti-doping"
-tags: ["drug", "testing", "anti", "doping", "sports", "athletics"]
+tags: ["anti-doping", "wada", "drug-test", "clean-sport", "athlete-integrity", "doping-control", "forensic-lab"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="background: #000; color: #fff; padding: 20px; text-align: center; display: flex; align-items: center; justify-content: center;">
+    <div style="width: 40px; height: 40px; background: #fff; color: #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-right: 15px;">WADA</div>
+    <div>
+      <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">DOPING CONTROL RECORD</h2>
+      <div style="font-size: 0.8em; opacity: 0.8;">OFFICIAL SAMPLE COLLECTION SUMMARY</div>
+    </div>
+  </div>
+
+  <div style="padding: 25px;">
+    <div style="display: flex; justify-content: space-between; margin-bottom: 20px; font-size: 0.9em; color: #555;">
+      <div>
+        <strong>Sample ID:</strong> <span data-bracket="start" data-for="doping">]</span>998877-A (Urine)<br>
+        <strong>Event:</strong> 2026 World Championships
+      </div>
+      <div style="text-align: right;">
+        <strong>Date:</strong> 15 MAR 2026<br>
+        <strong>Time:</strong> 14:30 PM
+      </div>
+    </div>
+
+    <div style="font-size: 0.95em; line-height: 1.6; color: #333; border: 1px solid #ccc; padding: 15px; background: #f9f9f9;">
+      <p><strong>Athlete:</strong> [REDACTED - See Athlete ID]</p>
+      <p><strong>Doping Control Officer:</strong> Sarah Connor (ID #992)</p>
+      
+      <div style="border-top: 1px solid #ddd; padding-top: 10px; margin-top: 10px;">
+        <strong>Result:</strong> <span style="color: #2e7d32; font-weight: bold;">NEGATIVE (NO PROHIBITED SUBSTANCES DETECTED)</span><br>
+        <strong>Lab:</strong> UCLA Olympic Analytical Laboratory (WADA Accredited)
+      </div>
+    </div>
+
+    <p style="font-size: 0.75em; color: #777; font-style: italic; margin-top: 20px; text-align: center;">
+      This summary is a verified extract of the Doping Control Form (DCF). The full record is held in the ADAMS database.
+    </p>
+
+    <div data-verify-line="doping" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: WADA doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:wada-ama.org/adams/v/998877A <span data-bracket="end" data-for="doping">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Athlete name, DOB, test date, sample ID, testing authority
+Athlete identifier (masked), Sample ID number, type of sample (Urine/Blood), date/time of collection, test result (Negative/Adverse Finding), testing lab accreditation, Doping Control Officer (DCO) ID, event name.
 
-**Certificate Variations:** Multiple certificate types or levels may exist.
+**Document Types:**
+- **Doping Control Form (DCF):** The 3-copy carbon paper signed at collection.
+- **Laboratory Result Certificate:** Formal proof of a "Clean" test.
+- **TUE (Therapeutic Use Exemption):** Proving a medication was authorized.
+- **Whereabouts Confirmation:** Proving an athlete was where they claimed to be.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`wada-ama.org`, `usada.org`) and current sample status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Negative** — No banned substances found.
+- **Adverse Analytical Finding (AAF)** — **ALERT:** Banned substance detected.
+- **Pending** — Sample in transit or undergoing analysis.
+- **Void** — Chain of custody broken; sample inadmissible.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Athlete** benefits from verification.
 
-**Authenticity Confirmation:** Verify certificate after receipt to confirm it's genuine.
+**Sponsorship Integrity:** Proving to a major sponsor (e.g., Nike or Red Bull) that a recent "Drug Test" claim is verified by a WADA-accredited lab. This is crucial for maintaining endorsement income after a scandal or a rival's accusation.
 
-**Credential Display:** Present verified credentials to employers or clients.
+**League Eligibility:** Providing verified proof of a clean test to a new professional league or international team during a transfer.
 
-**Professional Development:** Track verified certifications for career advancement.
-
-**Compliance Documentation:** Maintain verified certificates for regulatory requirements.
-
-**Renewal Planning:** Monitor certification status to avoid expiration.
+**Public Reputation:** Athletes accused of doping can use verified, timestamped "Negative" hashes to defend their reputation in the media.
 
 ## Third-Party Use
 
-**Auditors and Compliance Officers**
+**Sports Federations (NGBs)**
+**Eligibility Vetting:** Instantly verifying the "Clean History" of an athlete before they are allowed to compete in a championship event.
 
-Internal and external audits:
+**Sports Media / Journalists**
+**Fact Checking:** Verifying the authenticity of "Clean Certificates" posted by athletes on social media during a doping controversy.
 
-**Financial Audits:** Verify documents during financial statement audits.
-
-**Compliance Audits:** Validate documentation for regulatory compliance.
-
-**Internal Controls:** Test document authenticity in control assessments.
-
-**Fraud Investigations:** Verify documents in fraud examinations.
-
-**Third-Party Audits:** Validate vendor and partner documentation.
+**Event Organizers**
+**Mass Participation Safety:** For major marathons (e.g., Boston/London), verifying the drug testing status of elite entries.
 
 ## Verification Architecture
 
-**The Drug testing (anti-doping) certificates Fraud Problem**
+**The "Fake Clean" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Certificate Forgery:** Using a high-quality template to create a "Clean Test" letter from a famous lab like UCLA or Seibersdorf.
+- **Sample ID Swapping:** Taking a clean result for Sample #123 and editing the name/date to match a dirty Sample #456.
+- **Chain of Custody Erasure:** Editing a "Chain of Custody Exception" report to hide that a sample was left unrefrigerated.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**World Anti-Doping Agency (WADA).**
+**National Anti-Doping Orgs:** (USADA, UKAD, ASADA).
+**Accredited Laboratories.**
 
-**Primary Issuers:** Organizations with direct authority to issue these documents.
+**Privacy Salt:** ABSOLUTELY CRITICAL. Doping data is highly sensitive health info. The hash MUST be salted to prevent "Guess-and-Check" searches for famous athletes to see their test results.
 
-**Licensed Professionals:** Professionals authorized to create and certify documents.
+## Competition vs. ADAMS Database
 
-**Government Agencies:** Federal, state, or local agencies with jurisdiction.
+| Feature | OCR-to-Hash | ADAMS Portal (WADA) | Scanned PDF / Image |
+| :--- | :--- | :--- | :--- |
+| **Integrity** | **Cryptographic.** Binds Sample to Result. | **High.** Direct DB access. | **Zero.** Easily forged. |
+| **Accessibility** | **Open.** Any sponsor or journalist can verify. | **Restricted.** Requires private credentials. | **Instant.** |
+| **Speed** | **Instant.** 5-second scan. | **Slow.** Requires login and manual ID search. | **Instant.** |
+| **Hardware** | **Universal.** Any smartphone. | **Technical.** Requires laptop/dedicated app. | **Manual.** |
 
-**Industry Bodies:** Trade associations and professional organizations.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-WADA compliance. Domain binding verifies testing authority. Prevents fabricated clean tests. Regulatory forms suitable for OCR. Athlete eligibility verification. Long retention. For privacy, issuers can add a random salt line to raise entropy and defeat guessing attacks.
+**Why OCR wins here:** The "Transparency Bridge." WADA's ADAMS database is a "Fortress"—only officials can see it. But the **Athlete** needs to prove their clean status to the **Public** and **Sponsors**. OCR-to-hash turns the "Private Record" into a "Publicly Verifiable Truth" without exposing the entire secret database.

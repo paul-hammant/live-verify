@@ -1,125 +1,105 @@
 ---
-title: "Mobile money transaction receipts (M-Pesa, GCash, bKash)"
+title: "Mobile Money Transaction Receipts"
 category: "Banking & Payments"
 volume: "Large"
 retention: "3-7 years (tax/disputes)"
 slug: "mobile-money-receipts"
-tags: ["mobile", "money", "receipts", "banking", "financial", "services"]
+tags: ["m-pesa", "gcash", "bkash", "remittance", "mobile-money", "p2p-payment", "financial-inclusion", "unbanked-finance"]
 ---
+
+<div style="max-width: 400px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+  <div style="text-align: center; border-bottom: 1px solid #000; padding-bottom: 10px; margin-bottom: 15px;">
+    <strong>M-PESA SAFARICOM</strong><br>
+    Transaction Confirmation Receipt<br>
+    --------------------------------
+  </div>
+
+  <div style="font-size: 0.9em; line-height: 1.4;">
+    <p><strong>Transaction ID:</strong> <span data-bracket="start" data-for="m-pesa">]</span>RKJ42BC992</p>
+    <p><strong>Confirmed:</strong> March 15, 2026 at 14:22:01</p>
+    
+    <div style="background: #eee; padding: 10px; margin: 10px 0;">
+      <strong>SENT TO:</strong> SAMUEL OKORO<br>
+      <strong>PHONE:</strong> +254 712 345 678
+    </div>
+
+    <p><strong>Amount:</strong> Ksh 12,500.00<br>
+    <strong>Fee:</strong> Ksh 112.00<br>
+    <strong>Balance:</strong> Ksh 42,280.00</p>
+
+    <div style="margin-top: 15px; font-size: 0.8em; font-style: italic;">
+      Keep this receipt for your records. Do not share your PIN with anyone.
+    </div>
+
+    <div data-verify-line="m-pesa" style="border-top: 1px dashed #999; margin-top: 15px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+      title="Demo only: Safaricom doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:safaricom.co.ke/mpesa/v/RKJ42BC992 <span data-bracket="end" data-for="m-pesa">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Sender, recipient, phone numbers, amount, transaction ID, agent location
+Transaction ID (Reference #), Sender phone/name, Recipient phone/name, exact amount (local currency), service fees, timestamp (to the second), current account balance (optional/linked), agent ID (for cash-in/out), issuing mobile money operator.
+
+**Document Types:**
+- **P2P Transfer Receipt:** Sent between individuals.
+- **Pay-Bill Receipt:** For utility or retail payments.
+- **Cash-Out Confirmation:** Issued by a physical agent kiosk.
+- **Micro-Loan Statement:** (Linked hash) for mobile-based credit.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`safaricom.co.ke`, `gcash.com`, `mtn.com`) and current transaction standing.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Completed** — Funds have been verified as delivered to the recipient.
+- **Cancelled** — Transaction reversed; funds returned to sender.
+- **Pending** — Transfer in progress or held for compliance review.
+- **Void** — Transaction ID not found or details mismatch.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Sender / Recipient** benefits from verification.
 
-**Record Verification:** Confirm financial documents match expectations.
+**Payment Proof:** Proving to a small merchant or landlord that the "Ksh 12,500" was *actually sent* and isn't just a "Fake SMS" or "Altered Screenshot." In emerging markets, "Fake SMS" fraud is a massive problem; a verified hash from the operator's domain provides instant, authoritative proof.
 
-**Tax Preparation:** Provide verified documentation for tax filing.
-
-**Audit Support:** Maintain verified records for potential audits.
-
-**Dispute Resolution:** Use verified documents to resolve discrepancies.
-
-**Loan Applications:** Present verified financial documentation to lenders.
+**Tax Compliance:** Providing verified digital receipts to a local tax authority or NGO auditor to justify business expenses in a cash-heavy environment.
 
 ## Third-Party Use
 
-**Regulators and Oversight Bodies**
+**Micro-Lenders / Fintechs**
+**Credit Scoring:** Instantly verifying the "Transaction History" of an unbanked individual by scanning their paper or digital receipts. Verified volume and consistency act as a "Reputation Signal" for mobile-based loans.
 
-Regulatory compliance and oversight:
+**Supply Chain Distributors**
+**Order Authorization:** A truck driver can verify a small shop owner's mobile payment receipt at the loading dock before handing over a case of goods.
 
-**Systematic Hash Receipt:** Receive hashes in bulk for regulatory oversight.
-
-**Audit Verification:** Verify documents during routine or targeted audits.
-
-**Compliance Monitoring:** Monitor issuer compliance with documentation requirements.
-
-**Investigation Support:** Verify documents during fraud or compliance investigations.
-
-**Consumer Protection:** Verify consumer-facing documents for protection enforcement.
-
-**Lenders and Financial Institutions**
-
-Credit underwriting and risk assessment:
-
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
+**Law Enforcement / Anti-Money Laundering**
+**Fund Tracing:** Verifying the "Source of Funds" for high-value mobile transfers without requiring full account access.
 
 ## Verification Architecture
 
-**The Mobile money transaction receipts (M-Pesa, GCash, bKash) Fraud Problem**
+**The "Fake SMS" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Income Inflation:** Inflating income or assets on financial documents
-- **Photoshop Fraud:** Digital manipulation of statements and documents
-- **Shell Company Documents:** Documents from fake or shell entities
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **SMS Spoofing:** Using a computer to send a fake "M-Pesa Confirmation" message to a merchant's phone to steal goods.
+- **Screenshot Alteration:** Changing the name or amount on a legitimate receipt PDF to trick a landlord.
+- **Duplicate Use:** Showing the same "Completed" receipt to multiple people to "pay" for different items.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Mobile Network Operators (MNOs):** (Safaricom, MTN, Orange, Vodafone).
+**Super-Apps:** (GCash, GrabPay, bKash).
+**Agent Networks:** (Providing the "First-Mile" verified receipts).
 
-**Banks and Credit Unions:** Depository institutions for account documents.
+**Privacy Salt:** Highly critical. Mobile money data involves personal phone numbers and cash flow. The hash MUST be salted to prevent "Mass Mapping" of a community's financial activity.
 
-**Investment Firms:** Brokerage and investment management firms.
+## Competition vs. SMS Confirmation
 
-**Insurance Companies:** Insurers for policy and claims documents.
+| Feature | OCR-to-Hash | SMS Confirmation | Scanned Image / PDF |
+| :--- | :--- | :--- | :--- |
+| **Integrity** | **Cryptographic.** Binds the *Transaction ID*. | **Low.** Easily spoofed with PC software. | **Zero.** Easily forged. |
+| **Trust Anchor** | **Domain-Bound.** Bound to the Operator. | **Network-Bound.** Prone to SIM-swapping. | **Visual.** |
+| **Availability** | **Instant.** Verified via QR/Hash. | **Laggy.** SMS delivery often fails in congested areas. | **Instant.** |
+| **Hardware** | **Universal.** Any smartphone camera. | **Basic.** Works on dumb-phones. | **Visual.** |
 
-**Accounting Firms:** CPAs and audit firms for financial statements.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Developing markets rely on printed mobile money receipts. Domain binding verifies mobile money operator. Tamper-evident transaction proof. Tax compliance. Prevents duplicate payment claims. Agent fraud prevention. Critical for unbanked populations.
+**Why OCR wins here:** The "Merchant's Defend." Small shop owners in Africa and Asia lose millions to "Fake SMS" scams. They need a **High-Trust, Offline-capable** way to verify that the numbers on the screen match the ledger. OCR-to-hash turns the **Mobile Screen** into a live, trusted clinical link, ensuring the "Digital Cash" is actually in the bank.

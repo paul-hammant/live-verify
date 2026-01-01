@@ -4,261 +4,120 @@ category: "Government & Civic Documents"
 volume: "Small"
 retention: "Permanent (legal status)"
 slug: "marriage-divorce-documents"
-tags: ["marriage", "divorce", "documents", "government", "civic"]
+tags: ["marriage-certificate", "divorce-decree", "civil-status", "family-law", "vital-records", "name-change", "probate-documents", "immigration-proof"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 3px double #1a365d; background: #fdfcf0; padding: 40px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); border-radius: 4px;">
+  <div style="text-align: center; border-bottom: 2px solid #1a365d; padding-bottom: 15px; margin-bottom: 25px;">
+    <div style="font-weight: bold; font-size: 1.3em; letter-spacing: 2px; color: #1a365d;">STATE OF NEVADA</div>
+    <div style="font-size: 0.9em; text-transform: uppercase; color: #2c5282;">Clark County • Marriage Bureau</div>
+  </div>
+
+  <h2 style="text-align: center; font-size: 1.5em; color: #1a365d; margin-bottom: 25px;">CERTIFICATE OF MARRIAGE</h2>
+
+  <div style="font-size: 1em; line-height: 1.8; color: #333;">
+    <p>This certifies that on the 15th day of March, 2026, the following parties were joined in Holy Matrimony:</p>
+    
+    <div style="display: flex; justify-content: space-around; margin: 20px 0; background: #f9f9f9; padding: 15px; border: 1px solid #ccc;">
+      <div style="text-align: center;">
+        <strong>SPOUSE A</strong><br>
+        <span data-bracket="start" data-for="marriage">]</span>John Jacob Doe<br>
+        <small>DOB: 05/15/1985</small>
+      </div>
+      <div style="font-size: 1.5em; align-self: center;">&</div>
+      <div style="text-align: center;">
+        <strong>SPOUSE B</strong><br>
+        Mary Alice Jacob<br>
+        <small>DOB: 02/19/1992</small>
+      </div>
+    </div>
+
+    <p><strong>Officiant:</strong> Rev. Marcus Miller<br>
+    <strong>License #:</strong> CLK-2026-992288<br>
+    <strong>Certificate #:</strong> 998877665</p>
+  </div>
+
+  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+    <div>
+      <div style="width: 90px; height: 90px; border: 2px dashed #1a365d; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; color: #1a365d; font-weight: bold; text-align: center;">COUNTY<br>CLERK<br>SEAL</div>
+    </div>
+    <div style="text-align: right;">
+      <div style="border-top: 1px solid #000; width: 200px; padding-top: 5px; font-style: italic;">Lynn Marie Goya</div>
+      <div style="font-size: 0.8em; color: #777;">County Clerk</div>
+    </div>
+  </div>
+
+  <div data-verify-line="marriage" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+      title="Demo only: Clark County doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:clarkcountynv.gov/marriage/v/998877665 <span data-bracket="end" data-for="marriage">]</span>
+  </div>
+</div>
+
 ## Data Verified
 
-**Marriage Documents:** Spouse names, dates of birth, marriage date, officiant name, witness names, county/jurisdiction, license number, certificate number.
-
-**Divorce Documents:** Party names, marriage date, divorce/dissolution date, case number, court and jurisdiction, judge name, property division (summary), custody provisions (if applicable).
+Spouse full names, dates of birth, marriage date, license number, certificate serial number, officiant name, location of ceremony, county of issuance, date of recording.
 
 **Document Types:**
-- **Marriage License:** Authorization to marry (before ceremony)
-- **Marriage Certificate:** Proof of marriage (after ceremony)
-- **Divorce Decree/Judgment:** Final court order dissolving marriage
-- **Annulment Decree:** Court order voiding marriage
-- **Legal Separation Order:** Court order for legal separation
-- **Domestic Partnership Certificate:** Non-marriage partnership registration
-- **Civil Union Certificate:** Civil union documentation
+- **Marriage Certificate:** Official proof of union (post-ceremony).
+- **Divorce Decree:** Final court order dissolving a marriage.
+- **Domestic Partnership:** For non-marriage legal unions.
+- **Annulment Order:** (Linked hash) proving the union was voided.
 
 ## Data Visible After Verification
 
-Shows the issuer domain (the county clerk or court) and the responder text.
+Shows the issuer domain (`clarkcountynv.gov`, `nycourts.gov`) and current status.
 
 **Status Indications:**
-- **Valid** - Marriage is current/Divorce is final
-- **Pending** - Divorce pending, not yet final
-- **Annulled** - Marriage annulled
-- **Amended** - Document has been amended/corrected
+- **Valid/Recorded** — Record exists and matches the official registry.
+- **Dissolved** — **ALERT:** Marriage was subsequently ended by divorce or annulment.
+- **Amended** — Original record corrected (e.g., due to name spelling error).
+- **Void** — Assigned to wrong parties or found to be fraudulent.
 
-**Verification Response:** "Valid - Marriage Certificate, [County], [Date]."
+## Second-Party Use
 
-## Second-Party Use (Spouses Verifying Their Own Documents)
+The **Named Spouse(s)** benefit from verification.
 
-Spouses benefit from verification.
+**Name Change:** Proving to the Social Security Administration (SSA) or a bank that the "Marriage Certificate" isn't a fake PDF created to commit identity fraud. Verification against the county domain allows for instant, automated name-change processing.
 
-**Document Authenticity:** Verify marriage/divorce certificate is genuine.
+**Immigration / Green Card:** Proving a "Bona Fide Marriage" to USCIS. A verified certificate from the county is the ultimate defense against "Fake Marriage" accusations during a visa interview.
 
-**Name Change:** Verify marriage certificate for name change documentation.
-
-**Immigration:** Verify for immigration petitions.
-
-**Benefits Enrollment:** Verify for spouse benefit enrollment.
-
-**Estate Planning:** Verify marital status for estate documents.
+**Insurance Enrollment:** Proving marital status to an employer's HR department to add a spouse to a health insurance plan.
 
 ## Third-Party Use
 
-**Government Agencies**
+**Government Agencies (SSA / USCIS)**
+**Identity Integrity:** Instantly verifying the foundational civil status of an applicant. OCR-to-hash connects the agency directly to the county registrar, stopping "Paperwork Scams" where people use fake certificates to steal survivor benefits.
 
-Benefits and services:
+**Mortgage Lenders**
+**Title Vetting:** Verifying marital status during a property purchase to ensure "Spousal Consent" or "Homestead Rights" are properly addressed in the deed.
 
-**Social Security:** Verify for spousal/survivor benefits.
-
-**Immigration (USCIS):** Verify for marriage-based petitions.
-
-**Tax Authorities:** Verify marital status for filing status.
-
-**Military:** Verify for dependent benefits.
-
-**Passport Office:** Verify for name change on passports.
-
-**Employers**
-
-Benefits administration:
-
-**Spouse Benefits:** Verify marriage for benefit enrollment.
-
-**Life Insurance:** Verify marriage for beneficiary changes.
-
-**COBRA:** Verify qualifying events.
-
-**Family Leave:** Verify for FMLA eligibility.
-
-**Financial Institutions**
-
-Account and loan decisions:
-
-**Joint Accounts:** Verify marriage for joint account opening.
-
-**Mortgage Applications:** Verify marital status for lending.
-
-**Divorce Proceedings:** Verify divorce for account changes.
-
-**Estate Settlement:** Verify marital status for inheritance.
-
-**Insurance Companies**
-
-Coverage decisions:
-
-**Policy Changes:** Verify marriage/divorce for policy updates.
-
-**Beneficiary Changes:** Verify for beneficiary modifications.
-
-**Claims Processing:** Verify marital status at time of loss.
-
-**Premium Calculations:** Marital status affects some premiums.
-
-**Attorneys**
-
-Legal proceedings:
-
-**Estate Matters:** Verify marital status for probate.
-
-**Property Transactions:** Verify for spousal consent requirements.
-
-**Family Law:** Verify prior marriages in new divorces.
-
-**Immigration:** Verify for immigration petitions.
-
-**Real Estate**
-
-Property transactions:
-
-**Spousal Consent:** Verify marriage for homestead waiver.
-
-**Title Requirements:** Verify marital status for deed requirements.
-
-**Divorce Settlements:** Verify divorce for property transfers.
+**Attorneys / Probate Courts**
+**Heir Verification:** Confirming the legal status of a surviving spouse before distributing multimillion-dollar estate assets.
 
 ## Verification Architecture
 
-**The Marriage/Divorce Fraud Problem**
+**The "Paper Bride" Fraud Problem**
 
-Document fraud enables various schemes:
+- **Fabricated Certificates:** Using a template to create a fake "Marriage Certificate" for a non-existent union to get a Green Card or military benefits.
+- **Bigamy Concealment:** Presenting a "Valid" marriage paper while hiding that a "Divorce Decree" has already been issued for that union. Verification shows the *latest* status (Dissolved).
+- **Name Tampering:** Editing a PDF to change the name of one spouse to gain access to their bank accounts or inheritance.
 
-- **Fake Marriages:** Fraudulent certificates for immigration
-- **Bigamy Concealment:** Hiding prior marriages
-- **Divorce Fraud:** Claiming to be divorced when still married
-- **Date Manipulation:** Altering marriage/divorce dates
-- **Jurisdiction Shopping:** Fake documents from lenient jurisdictions
-- **Identity Fraud:** Fraudulent documents for identity purposes
+**Issuer Types**
 
-OCR-to-hash addresses forgery and alteration. Court/county verification confirms authenticity.
+**County Clerks / Registrars:** (Primary issuers for marriage).
+**Superior / Family Courts:** (Issuers for divorce decrees).
+**State Departments of Health:** (Managing long-term vital records).
 
-**Courts and Counties as Issuers**
+**Privacy Salt:** ABSOLUTELY CRITICAL. Marital status is highly private. The hash MUST be salted to prevent "Mass Scraping" of a county's marriage history by data brokers or stalkers.
 
-Local authorities issue these documents:
+## Competition vs. Certified Copies (Raised Seals)
 
-**County Clerks:** Issue marriage licenses and certificates.
+| Feature | OCR-to-Hash | Certified Copy (Physical Seal) | Public Portal (Online Search) |
+| :--- | :--- | :--- | :--- |
+| **Integrity** | **Cryptographic.** Protects every name/date. | **Binds Paper.** Doesn't prevent "Name Edits." | **Data-Only.** |
+| **Speed** | **Instant.** 5-second scan. | **Manual.** Requires physical inspection. | **Slow.** Requires search & CAPTCHAs. |
+| **Trust Anchor** | **Domain-Bound.** Bound to the County. | **Signature-Bound.** | **Gov-Bound.** |
+| **Cost** | **Low.** Standard web infra. | **High.** Fees of $20-$50 per copy are common. | **Medium.** Per-search fees. |
 
-**Courts:** Issue divorce decrees and annulments.
-
-**Vital Records:** State vital records offices maintain copies.
-
-**Online Copies:** Many jurisdictions offer online certified copies.
-
-Each authority operates verification endpoints for documents they issue.
-
-**Marriage License vs. Certificate**
-
-Two distinct documents:
-
-**License:** Issued before ceremony, authorizes marriage.
-
-**Certificate:** Issued after ceremony, proves marriage occurred.
-
-**Return:** Officiant returns signed license to county for certificate.
-
-**Timing:** License has validity period; certificate is permanent.
-
-Verification must distinguish between the two.
-
-**Divorce Decree Components**
-
-Divorce decrees contain multiple elements:
-
-**Dissolution Order:** Court order dissolving marriage.
-
-**Property Division:** Asset and debt division.
-
-**Custody Provisions:** Child custody and visitation.
-
-**Support Orders:** Alimony and child support.
-
-**Name Restoration:** Restoration of prior name.
-
-Full decree may be multi-page with extensive provisions.
-
-**Waiting Periods and Effective Dates**
-
-Timing considerations:
-
-**Marriage Waiting Period:** Some states require waiting after license.
-
-**Divorce Waiting Period:** Mandatory separation periods.
-
-**Interlocutory Decree:** Preliminary divorce, not yet final.
-
-**Effective Date:** When divorce becomes final.
-
-Verification must reflect actual effective date.
-
-**Interstate Recognition**
-
-Full Faith and Credit:
-
-**Marriage Recognition:** States recognize valid out-of-state marriages.
-
-**Divorce Recognition:** States recognize valid out-of-state divorces.
-
-**Jurisdictional Requirements:** Divorce requires residency/jurisdiction.
-
-**Foreign Marriages/Divorces:** Recognition varies.
-
-Verification should indicate: "Valid - [Jurisdiction] recognizes [other state] marriage."
-
-**Common Law Marriage**
-
-Non-ceremonial marriage:
-
-**States Recognizing:** Colorado, Iowa, Kansas, Montana, and others.
-
-**Elements:** Cohabitation, holding out as married, intent.
-
-**Documentation Challenge:** No certificate, but may obtain affidavit.
-
-**Verification Difficulty:** Harder to verify than licensed marriage.
-
-Common law marriages may require different verification approach.
-
-**Amendment and Correction**
-
-Document changes:
-
-**Name Correction:** Correcting spelling errors.
-
-**Date Correction:** Correcting date errors.
-
-**Delayed Registration:** Late registration of marriage.
-
-**Amended Certificates:** Updated certificates after corrections.
-
-Verification should indicate amendments: "Valid - Amended [date]."
-
-**International Documents**
-
-Foreign marriage/divorce:
-
-**Apostille:** Authentication for Hague Convention countries.
-
-**Consular Authentication:** For non-Hague countries.
-
-**Translation:** Certified translation requirements.
-
-**Recognition Requirements:** Requirements for US recognition.
-
-Verification architecture must accommodate international documents.
-
-**Privacy Considerations**
-
-Sensitive information:
-
-**Divorce Details:** Property, custody, support information.
-
-**Domestic Violence:** Sealed records in DV cases.
-
-**Identity Protection:** Information that could enable identity theft.
-
-Verification confirms document exists without revealing sensitive details.
+**Why OCR wins here:** Reach. Many counties do not have public-facing "Search Portals" for marriage records due to privacy laws. OCR-to-hash allows the **Individual** to carry a portable, verifiable proof of their status that only reveals data when the physical document is presented, respecting privacy while providing absolute trust.
 

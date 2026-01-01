@@ -1,122 +1,120 @@
 ---
-title: "Freight bills and carrier invoices"
+title: "Freight Bills and Carrier Invoices"
 category: "Shipping & Freight"
 volume: "Large"
 retention: "7-10 years (payment/audit)"
 slug: "freight-bills-carrier-invoices"
-tags: ["freight", "bills", "carrier", "invoices", "logistics", "transportation"]
+tags: ["logistics", "transportation", "freight-bill", "carrier-invoice", "accounts-payable", "audit-trail", "supply-chain-finance"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 1px solid #000; background: #fff; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
+    <div style="font-weight: bold; font-size: 1.2em;">SCHNEIDER NATIONAL</div>
+    <div style="text-align: right;">
+      Invoice #: <span data-bracket="start" data-for="freight-inv">]</span>INV-998877-SN<br>
+      Date: 15 MAR 2026
+    </div>
+  </div>
+
+  <div style="font-size: 0.85em; line-height: 1.4;">
+    <p><strong>Shipper:</strong> Acme Manufacturing<br>
+    <strong>Consignee:</strong> Global Distribution Center<br>
+    <strong>B/L Number:</strong> MAE-442211</p>
+
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+      <tr style="border-bottom: 1px solid #000; font-weight: bold;">
+        <th style="text-align: left;">Charge Description</th>
+        <th style="text-align: right;">Amount</th>
+      </tr>
+      <tr>
+        <td style="padding: 5px 0;">Linehaul Freight (500 Miles)</td>
+        <td style="text-align: right;">$ 1,250.00</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px 0;">Fuel Surcharge (FSC)</td>
+        <td style="text-align: right;">$ 312.50</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px 0;">Detention Fee (2 Hours)</td>
+        <td style="text-align: right;">$ 150.00</td>
+      </tr>
+      <tr style="border-top: 2px solid #000; font-weight: bold;">
+        <td>TOTAL AMOUNT DUE:</td>
+        <td style="text-align: right;">$ 1,712.50</td>
+      </tr>
+    </table>
+
+    <div style="background: #eee; padding: 10px; font-size: 0.8em;">
+      <strong>Payment Terms:</strong> Net 30 Days. Please remit to: Wells Fargo Lockbox #99228.
+    </div>
+
+    <div data-verify-line="freight-inv" style="border-top: 1px dashed #999; margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: Schneider doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:schneider.com/invoices/v/SN998877 <span data-bracket="end" data-for="freight-inv">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Shipper, carrier, freight charges, fuel surcharges, accessorial charges
+Invoice number, Carrier name, Shipper name, Bill of Lading (B/L) reference, total freight charge, line-item breakdown (Linehaul, Fuel, Accessorials), payment terms, date of issuance, delivery confirmation link.
+
+**Document Types:**
+- **Freight Bill:** The official demand for payment.
+- **Carrier Invoice:** (Often used interchangeably with Freight Bill).
+- **Pro-Forma Freight Estimate:** For pre-shipment budgeting.
+- **Supplemental Invoice:** For fees found after delivery (e.g., re-weighing).
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`schneider.com`, `swifttrans.com`, `dhl.com`) and invoice status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Outstanding** — Invoice is valid and awaiting payment.
+- **Paid** — Funds have been received and applied to the ledger.
+- **In-Dispute** — Customer has challenged a fee (e.g., detention charge).
+- **Amended** — Replaced by a corrected version (e.g., fuel surcharge adjustment).
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Shipper (Customer)** benefits from verification.
 
-**Document Authenticity:** Verify received documents are genuine and properly issued.
+**Audit Compliance:** Proving to their internal finance auditors that the $1,712 freight payment wasn't a "Fake Invoice" from a spoofed email. A verified hash from the carrier's domain removes the #1 risk in Logistics Accounts Payable: **Fraudulent Change of Bank Details.**
 
-**Third-Party Presentation:** Provide verified documentation when required.
-
-**Compliance Requirements:** Meet regulatory or contractual documentation requirements.
-
-**Record Keeping:** Maintain verified records for future reference or audits.
-
-**Dispute Prevention:** Establish authenticity to prevent future challenges.
+**Dispute Resolution:** If the carrier claims the bill is $2,000 but the verified invoice says $1,712, the shipper has cryptographically solid proof of the original agreed amount.
 
 ## Third-Party Use
 
-**Insurance Companies**
+**Freight Audit & Payment (FAP) Firms**
+**Automated Vetting:** FAP firms (e.g., Cass Information Systems, U.S. Bank) process millions of invoices. OCR-to-hash allows them to instantly verify carrier authenticity without manual "Carrier Onboarding" or phone verification for every new small trucker.
 
-Underwriting and claims processing:
+**Factoring Companies**
+**Invoice Financing:** Banks that buy carrier invoices (factoring) verify the freight bill hash to ensure the shipment is legitimate and the amount hasn't been "Padded" before they advance cash to the trucker.
 
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Customs and Border Authorities**
-
-International trade compliance:
-
-**Import Clearance:** Verify shipping documents for customs clearance.
-
-**Duty Assessment:** Validate commercial invoices and declarations.
-
-**Trade Compliance:** Confirm certificates of origin and trade documents.
-
-**Security Screening:** Verify cargo documentation for security.
-
-**Export Controls:** Validate export documentation and licenses.
-
-**Freight Forwarders and Carriers**
-
-Logistics and transportation:
-
-**Shipment Acceptance:** Verify documents before accepting cargo.
-
-**Carrier Handoffs:** Validate documentation at transfer points.
-
-**Liability Determination:** Reference verified documents for claims.
-
-**Route Planning:** Confirm documentation for transit requirements.
-
-**Delivery Confirmation:** Verify documents at final delivery.
+**Tax Authorities**
+**VAT / GST Reconciliation:** Ensuring that the tax deductions claimed for freight expenses match the verified revenue reported by the carriers.
 
 ## Verification Architecture
 
-**The Freight bills and carrier invoices Fraud Problem**
+**The "Logistics Phishing" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Business Email Compromise (BEC):** Hackers taking over a trucking company's email and sending "Updated Invoices" with a different bank account. OCR-to-hash prevents this by linking the paper to the carrier's *domain*, not an email account.
+- **Detention Fee Padding:** Shady drivers adding a "2-hour wait" fee ($150) to the paper invoice that wasn't authorized in the central system.
+- **Ghost Invoices:** Creating a fake invoice for a shipment that was never actually picked up or delivered.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Asset-Based Carriers:** (Schneider, SwiftTrans, Old Dominion).
+**3PL Brokers:** (C.H. Robinson, TQL).
+**Supply Chain Platforms:** (e.g., Project44, FourKites).
 
-**Primary Issuers:** Organizations with direct authority to issue these documents.
+## Competition vs. EDI (Electronic Data Interchange)
 
-**Licensed Professionals:** Professionals authorized to create and certify documents.
+| Feature | OCR-to-Hash | EDI 210 (Invoicing) | Scanned PDF Invoice |
+| :--- | :--- | :--- | :--- |
+| **User Access** | **Universal.** Any small shipper/auditor. | **Restricted.** Requires heavy IT setup and VAN fees. | **Instant.** |
+| **Trust Anchor** | **Domain-Bound.** Bound to the Carrier. | **System-Bound.** | **Zero.** Easily forged. |
+| **Interoperability** | **High.** Works for any trucker with a URL. | **Low.** Small truckers don't use EDI. | **Universal.** |
+| **Integrity** | **Binds Line Items.** Protects the FSC. | **Data-Only.** | **Vulnerable.** |
 
-**Government Agencies:** Federal, state, or local agencies with jurisdiction.
-
-**Industry Bodies:** Trade associations and professional organizations.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Prevents altered freight charges. Domain binding verifies carrier. Audit trail for freight spend. Prevents carrier overcharging fraud. Accounts payable verification.
+**Why OCR wins here:** The "Long Tail" of Trucking. While the top 100 carriers use EDI, there are 500,000 small trucking companies in the USA who only use PDF invoices. OCR-to-hash turns those **PDFs and Paper Bills** into cryptographically trusted digital artifacts, bringing "EDI-level" trust to the entire industry without the "EDI-level" cost.

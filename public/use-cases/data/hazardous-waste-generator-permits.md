@@ -1,157 +1,110 @@
 ---
-title: "Hazardous waste generator permits"
+title: "Hazardous Waste Generator Permits"
 category: "Environmental & Natural Resource Permits"
 volume: "Small"
 retention: "Permit term + 30 years (RCRA)"
 slug: "hazardous-waste-generator-permits"
-tags: ["hazardous", "waste", "generator", "permits", "environmental", "natural", "resource"]
+tags: ["hazmat", "rcra", "epa-id", "hazardous-waste", "environmental-compliance", "epa-permit", "pollution-prevention"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 3px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="background: #1a1a1a; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+    <div>
+      <div style="font-weight: bold; font-size: 1.1em;">U.S. ENVIRONMENTAL PROTECTION AGENCY</div>
+      <div style="font-size: 0.8em; opacity: 0.8;">RCRA Subtitle C • Hazardous Waste Management</div>
+    </div>
+    <div style="width: 40px; height: 40px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-weight: bold; font-size: 0.7em;">EPA</div>
+  </div>
+
+  <div style="padding: 25px;">
+    <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
+      <h3 style="margin: 0; color: #333;">NOTICE OF REGISTRATION</h3>
+      <div style="font-size: 1.2em; font-weight: bold; margin-top: 5px;">EPA ID #: <span data-bracket="start" data-for="haz-waste">]</span>NJD992288776</div>
+    </div>
+
+    <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+      <p><strong>Generator:</strong> Apex Chemical Recovery, LLC<br>
+      <strong>Facility Address:</strong> 4500 Industrial Way, Newark, NJ 07101</p>
+
+      <div style="background: #f5f5f5; border: 1px solid #ddd; padding: 15px; margin: 15px 0; border-radius: 4px;">
+        <p><strong>Generator Status:</strong> Large Quantity Generator (LQG)</p>
+        <p><strong>Authorized Waste Streams:</strong><br>
+        ✅ D001: Ignitable Waste<br>
+        ✅ F003: Spent Non-Halogenated Solvents<br>
+        ✅ K001: Bottom sediment sludge from wood preserving</p>
+      </div>
+
+      <p><strong>Effective Date:</strong> March 15, 2026<br>
+      <strong>Compliance Status:</strong> ACTIVE / VERIFIED</p>
+    </div>
+
+    <div data-verify-line="haz-waste" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: EPA doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:epa.gov/rcrainfo/v/NJD992288776 <span data-bracket="end" data-for="haz-waste">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Generator name, EPA ID number, waste types, quantities, disposal, EPA/state
+Generator name, EPA ID number (RCRA ID), facility address, generator status (LQG, SQG, VSQG), authorized waste codes (D, F, K, P, U codes), effective date, last inspection date, violation status, issuing state/federal agency.
 
-**Permit Types:** Various permit subtypes may exist depending on jurisdiction and specific use.
+**Document Types:**
+- **RCRA Notice of Registration:** The primary "Identity" for a generator.
+- **Hazardous Waste Manifest (Uniform):** (Linked hash) for individual shipments.
+- **Bi-Annual Report Summary:** Proving the tonnage of waste generated.
+- **TSDF Acceptance Certificate:** Proving the waste was legally received.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`epa.gov`, `dep.nj.gov`) and current compliance standing.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-- **Suspended** - Permit temporarily suspended
-- **Pending** - Permit application pending approval
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Active** — Facility is authorized to generate and ship hazardous waste.
+- **Inactive** — EPA ID has been retired; no waste may be shipped.
+- **Enforcement Action** — **ALERT:** Facility under administrative order for violations.
+- **Suspended** — Critical safety failure detected; transport prohibited.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Facility Manager / Producer** benefits from verification.
 
-**Legitimacy Confirmation:** After obtaining permit, verify it was properly issued and recorded.
+**Vendor Vetting:** Proving to a disposal company (TSDF) that the waste they are about to pick up is coming from a "Verified LQG" with a valid EPA ID. This prevents the TSDF from rejecting the load at their gate due to "Paperwork Uncertainty."
 
-**Compliance Display:** Maintain verified permit for posting requirements.
-
-**Scope Verification:** Confirm permitted activities match intended use.
-
-**Expiration Tracking:** Monitor permit status to avoid lapses.
-
-**Record Keeping:** Maintain verified documentation for audits and compliance.
+**Insurance Defense:** Proving to an environmental liability insurer that the facility is maintaining verified, active compliance with RCRA standards, which is a condition for maintaining multimillion-dollar pollution coverage.
 
 ## Third-Party Use
 
-**Lenders and Financial Institutions**
+**Hazardous Waste Transporters**
+**Liability Transfer:** Before loading 5,000 gallons of toxic sludge, the driver scans the facility's EPA ID hash. "Verified by EPA.gov" ensures the driver isn't transporting waste for an illegal, "Ghost" operator who might disappear if a spill occurs.
 
-Credit underwriting and risk assessment:
+**Environmental Regulators**
+**Chain of Custody:** Instantly verifying that the "Waste Codes" on the paper manifest match the facility's authorized waste streams. OCR-to-hash stops "Midnight Dumping" where a facility hides toxic waste under a "General Trash" ID.
 
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Insurance Companies**
-
-Underwriting and claims processing:
-
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
-
-**Government Agencies**
-
-Compliance enforcement and administration:
-
-**Inspection Verification:** Field agents verify permits and licenses at sites.
-
-**Enforcement Actions:** Confirm documentation before enforcement.
-
-**Benefit Eligibility:** Verify supporting documents for benefits administration.
-
-**Compliance Audits:** Audit documentation for regulatory compliance.
-
-**Interagency Coordination:** Share verified documents across agencies.
-
-**Real Estate Professionals**
-
-Property transactions and due diligence:
-
-**Purchase Due Diligence:** Verify property documents during transactions.
-
-**Listing Preparation:** Confirm permits and documentation for listings.
-
-**Disclosure Compliance:** Validate required disclosures and permits.
-
-**Title Research:** Verify property documents for title clearance.
-
-**Appraisal Support:** Confirm documented improvements and permits.
+**Local Emergency Services**
+**Site Intelligence:** Firefighters can scan the facility's posted notice to get a verified list of the hazardous chemicals (waste codes) stored on-site during a fire.
 
 ## Verification Architecture
 
-**The Hazardous waste generator permits Fraud Problem**
+**The "Illegal Dumping" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Permit Sharing:** Using one property's permit for work at another location
-- **Scope Expansion:** Expanding permitted activities beyond authorization
-- **Contractor Fraud:** Claiming permits that were never obtained
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Identity Theft:** Small shops using a larger, legitimate company's EPA ID to dispose of toxic waste illegally to save on fees.
+- **Code Falsification:** Editing a "Toxic" code (P-code) to a "Non-Hazardous" one on the paper form to avoid strict disposal rules.
+- **Backdating Reports:** Altering a bi-annual report to hide that the facility exceeded its "Small Quantity" tonnage limits.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**U.S. EPA (RCRAInfo).**
+**State Environmental Agencies:** (e.g., California DTSC, NJ DEP).
+**Compliance Tech Firms:** (e.g., Encamp, Intelex - hosting the hashes).
 
-**Government Entities:** Counties, cities, and special districts maintain property records.
+## Competition vs. EPA ECHO Database
 
-**Title Companies:** Title insurers and escrow companies for transaction documents.
+| Feature | OCR-to-Hash | EPA ECHO Search (Public) | Scanned PDF Permit |
+| :--- | :--- | :--- | :--- |
+| **Integrity** | **Cryptographic.** Binds Waste Codes to the ID. | **Data-Only.** Doesn't verify the paper doc. | **Zero.** Easily forged. |
+| **Speed** | **Instant.** Scan the paper at the loading dock. | **Slow.** Requires typing 12-digit ID and navigating Gov UI. | **Instant.** |
+| **Field Access** | **High.** Mobile-optimized workflow. | **Low.** Gov portals are difficult on small screens. | **Universal.** |
+| **Freshness** | **Real-time.** Shows "Enforcement Holds." | **Laggy.** Database updates can take 24-72 hours. | **Static.** |
 
-**Lending Institutions:** Banks and mortgage companies for loan documents.
-
-**Appraisal Firms:** Licensed appraisers for property valuations.
-
-**System Integration**
-
-Real estate verification connects to property systems:
-
-**Recording Systems:** County recorder systems for property document registration.
-
-**MLS Integration:** Multiple listing services for property documentation.
-
-**Title Plants:** Title companies maintain verification for title searches.
-
-**E-Recording:** Electronic recording systems generate verification at recording.
-
-## Rationale
-
-Prevents fake hazmat permits. Domain binding verifies EPA/state hazmat agency. RCRA compliance. Prevents illegal dumping. Criminal prosecution for violations. Long retention for liability.
+**Why OCR wins here:** The "Loading Dock" reality. Drivers and site managers work in high-stakes, industrial environments. They need a **zero-friction trust anchor**. OCR-to-hash turns the **EPA ID Certificate** into a live, trusted digital link, ensuring that "Toxic Chain of Custody" is an immutable fact from factory to furnace.

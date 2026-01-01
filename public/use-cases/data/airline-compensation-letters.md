@@ -1,122 +1,103 @@
 ---
-title: "Airline compensation letters (EU261, delay/cancellation)"
+title: "Airline Compensation Letters (EU261)"
 category: "Travel & Hospitality"
 volume: "Medium"
 retention: "Compensation + 3-7 years"
 slug: "airline-compensation-letters"
-tags: ["airline", "compensation", "letters", "travel", "hospitality"]
+tags: ["airline", "compensation", "eu261", "delay", "cancellation", "insurance"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; border: 1px solid #ccc; background: #fff; padding: 40px;">
+  <div style="text-align: right; margin-bottom: 30px;">
+    <div style="font-weight: bold; font-size: 1.2em; color: #002244;">BRITISH AIRWAYS</div>
+    <div style="font-size: 0.8em; color: #555;">Customer Relations</div>
+  </div>
+
+  <div style="margin-bottom: 30px;">
+    <strong>Date:</strong> 15 March 2026<br>
+    <strong>Ref:</strong> <span data-bracket="start" data-for="comp">]</span>BA-2026-998877<br>
+    <strong>Passenger:</strong> Sarah Jones
+  </div>
+
+  <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+    <p>Dear Ms. Jones,</p>
+
+    <p><strong>Re: Flight BA123 London to New York on 14 March 2026</strong></p>
+
+    <p>We are writing regarding your claim for compensation following the cancellation of the above flight.</p>
+
+    <p>Our records confirm that this cancellation was due to an operational issue within our control. Therefore, in accordance with EU Regulation 261/2004, we are pleased to confirm that you are entitled to compensation.</p>
+
+    <p><strong>Compensation Amount:</strong> € 600.00</p>
+    <p><strong>Payment Status:</strong> Initiated via Bank Transfer</p>
+
+    <p>Please accept our apologies for the disruption to your journey.</p>
+
+    <p>Sincerely,</p>
+    <p><em>Customer Relations Team</em><br>British Airways</p>
+  </div>
+
+  <div data-verify-line="comp" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: Airline doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:ba.com/claims/v/x9y8z7 <span data-bracket="end" data-for="comp">]</span>
+  </div>
+</div>
+
 ## Data Verified
 
-Passenger name, flight details, delay/cancellation reason, compensation amount
+Passenger name, flight number, disruption date, claim reference number, decision (Approved/Denied), compensation amount, regulation cited (EU261, UK261, DOT), payment status.
+
+**Document Types:**
+- **Compensation Offer:** Letter confirming payout.
+- **Denial Letter:** "Extraordinary Circumstances" rejection (needed for insurance).
+- **Delay Verification:** Proof of delay duration (for employer/insurance).
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`ba.com`) and the claim status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Paid** — Compensation was issued.
+- **Denied** — Claim rejected (reason provided, e.g., "Weather").
+- **Pending** — Under review.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Passenger** benefits from verification.
 
-**Document Authenticity:** Verify received documents are genuine and properly issued.
+**Travel Insurance Claims:** Insurers often require a "denial letter" from the airline before they will pay out for trip interruption. A verified denial letter proves the airline refused to pay, unlocking the insurance payout.
 
-**Third-Party Presentation:** Provide verified documentation when required.
-
-**Compliance Requirements:** Meet regulatory or contractual documentation requirements.
-
-**Record Keeping:** Maintain verified records for future reference or audits.
-
-**Dispute Prevention:** Establish authenticity to prevent future challenges.
+**Employer Proof:** Proving to a boss that the missed meeting was indeed due to a flight cancellation and not oversleeping.
 
 ## Third-Party Use
 
-**Insurance Companies**
+**Travel Insurers**
+**Double-Dipping Prevention:** Fraudsters claim €600 from the airline AND €600 from the insurer for the same delay. Verification allows the insurer to check: "Did the airline pay?" If the status is "Paid," the insurer reduces their payout accordingly.
 
-Underwriting and claims processing:
+**Claims Management Companies (e.g., AirHelp)**
+**Automated Onboarding:** Instead of asking passengers to forward emails or scan PDFs that need manual review, the agency can scan the verification link to instantly ingest the claim details and validity.
 
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Customs and Border Authorities**
-
-International trade compliance:
-
-**Import Clearance:** Verify shipping documents for customs clearance.
-
-**Duty Assessment:** Validate commercial invoices and declarations.
-
-**Trade Compliance:** Confirm certificates of origin and trade documents.
-
-**Security Screening:** Verify cargo documentation for security.
-
-**Export Controls:** Validate export documentation and licenses.
-
-**Freight Forwarders and Carriers**
-
-Logistics and transportation:
-
-**Shipment Acceptance:** Verify documents before accepting cargo.
-
-**Carrier Handoffs:** Validate documentation at transfer points.
-
-**Liability Determination:** Reference verified documents for claims.
-
-**Route Planning:** Confirm documentation for transit requirements.
-
-**Delivery Confirmation:** Verify documents at final delivery.
+**Small Claims Courts**
+**Evidence:** In disputes, a verified letter from the airline admitting fault (or denying it for invalid reasons) is powerful evidence.
 
 ## Verification Architecture
 
-**The Airline compensation letters (EU261, delay/cancellation) Fraud Problem**
+**The "Fake Denial" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Fabricated Denials:** Creating a fake letter from the airline saying "We won't pay because of weather" to trick a travel insurer into paying out (when the airline actually WOULD have paid if asked).
+- **Fake Approvals:** Creating a fake offer letter to show a claims agency to get them to take the case (or to borrow money against the expected payout).
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Airlines:** (Ryanair, EasyJet, Lufthansa, etc.)
+**ADR Bodies:** (Alternative Dispute Resolution entities like CEDR)
 
-**Primary Issuers:** Organizations with direct authority to issue these documents.
+## Competition vs. Email / Portals
 
-**Licensed Professionals:** Professionals authorized to create and certify documents.
+| Feature | OCR-to-Hash | Forwarded Email | Airline Portal |
+| :--- | :--- | :--- | :--- |
+| **Authenticity** | **Cryptographic.** Sender verified by domain. | **Weak.** Emails are easily edited/spoofed. | **High.** But requires login credentials. |
+| **Sharing** | **Easy.** Send the link or paper to insurer. | **Messy.** Forwarding chains, PDF attachments. | **Hard.** Can't give insurer your airline password. |
+| **Privacy** | **Selective.** Share only the specific letter. | **Low.** Email headers expose metadata. | **Low.** Portal access exposes full history. |
 
-**Government Agencies:** Federal, state, or local agencies with jurisdiction.
-
-**Industry Bodies:** Trade associations and professional organizations.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Prevents fake airline compensation letters. Domain binding verifies airline. EU261 regulation compliance (€250-€600 compensation). Prevents double-claim fraud. Payment verification.
+**Why OCR wins here:** It creates a portable, verifiable "Token of Truth" about a specific claim that can be handed to insurers, lawyers, or employers without sharing login credentials or relying on easily forged emails.

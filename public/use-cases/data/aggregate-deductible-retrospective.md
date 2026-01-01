@@ -1,125 +1,135 @@
 ---
-title: "Aggregate deductible and retrospective rating documentation"
+title: "Aggregate Deductible and Retrospective Rating Documentation"
 category: "Insurance Claims & Operations"
 volume: "Small"
 retention: "Policy term + 10 years"
 slug: "aggregate-deductible-retrospective"
-tags: ["aggregate", "deductible", "retrospective", "insurance", "risk", "management"]
+tags: ["aggregate", "deductible", "retrospective", "insurance", "risk", "management", "premium"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #000; background: #fff; padding: 0;">
+  <div style="background: #000; color: #fff; padding: 15px; text-align: right;">
+    <h3 style="margin: 0;">PREMIUM ADJUSTMENT STATEMENT</h3>
+    <div style="font-size: 0.8em;">CONFIDENTIAL</div>
+  </div>
+
+  <div style="padding: 30px;">
+    <div style="display: flex; justify-content: space-between; margin-bottom: 30px;">
+      <div>
+        <strong>Insurer:</strong><br>
+        ACE American Insurance Co.<br>
+        123 Market St, Philadelphia, PA
+      </div>
+      <div style="text-align: right;">
+        <strong>Insured:</strong><br>
+        <span data-bracket="start" data-for="retro">]</span>MegaCorp Logistics, Inc.<br>
+        Policy No: WC-9922-88<br>
+        Adjustment Period: 3rd (36 Months)
+      </div>
+    </div>
+
+    <table style="width: 100%; border-collapse: collapse; font-size: 0.9em;">
+      <tr style="border-bottom: 2px solid #000;">
+        <th style="text-align: left; padding: 5px;">Description</th>
+        <th style="text-align: right; padding: 5px;">Amount</th>
+      </tr>
+      <tr>
+        <td style="padding: 5px;">Standard Premium</td>
+        <td style="text-align: right; padding: 5px;">$2,500,000</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px;">Incurred Losses (Paid + Reserved)</td>
+        <td style="text-align: right; padding: 5px;">$1,850,000</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px;">Basic Premium Factor (0.25)</td>
+        <td style="text-align: right; padding: 5px;">$625,000</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px;">Converted Losses (x 1.10)</td>
+        <td style="text-align: right; padding: 5px;">$2,035,000</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px;"><strong>Retrospective Premium</strong></td>
+        <td style="text-align: right; padding: 5px;"><strong>$2,660,000</strong></td>
+      </tr>
+      <tr style="border-top: 1px solid #ccc;">
+        <td style="padding: 5px;">Previously Paid</td>
+        <td style="text-align: right; padding: 5px;">$2,500,000</td>
+      </tr>
+      <tr style="border-top: 2px solid #000; font-weight: bold;">
+        <td style="padding: 5px;">ADDITIONAL PREMIUM DUE</td>
+        <td style="text-align: right; padding: 5px;">$160,000</td>
+      </tr>
+    </table>
+
+    <div style="margin-top: 20px; font-size: 0.8em; color: #555;">
+      * Subject to Aggregate Deductible Limit of $3,000,000.
+    </div>
+
+    <div data-verify-line="retro" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: Insurer doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:chubb.com/retro/v/z8x7c6 <span data-bracket="end" data-for="retro">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Insured/ceding company, aggregate deductible, loss development, retrospective premium
+Insured name, policy number, adjustment period (1st, 2nd, 3rd, etc.), incurred loss amount, total retrospective premium, amount due/returned, aggregate limit status.
+
+**Document Types:**
+- **Retrospective Premium Adjustment:** The bill/refund calculation.
+- **Loss Run Report:** Detailed list of claims supporting the calculation.
+- **Collateral Adjustment Notice:** Demand for Letter of Credit increase.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (the Insurance Carrier) and the document validity.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Valid** — Document matches the carrier's system of record.
+- **Void** — Adjustment was recalculated (common in retro plans).
+- **Disputed** — The insured has formally contested this calculation.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Insured** (corporate risk manager) benefits from verification.
 
-**Record Verification:** Confirm financial documents match expectations.
+**Internal Audit:** Proving to the CFO that the $160,000 additional premium bill is legitimate and matches the carrier's official record, justifying the wire transfer.
 
-**Tax Preparation:** Provide verified documentation for tax filing.
-
-**Audit Support:** Maintain verified records for potential audits.
-
-**Dispute Resolution:** Use verified documents to resolve discrepancies.
-
-**Loan Applications:** Present verified financial documentation to lenders.
+**Collateral negotiation:** Proving to a bank (issuing a Letter of Credit) that the required collateral amount has decreased, allowing them to release tied-up capital.
 
 ## Third-Party Use
 
-**Regulators and Oversight Bodies**
+**New Insurers (Underwriters)**
+**Loss History Verification:** When a company switches insurers, the new underwriter demands "Loss Runs" (5-year history). Companies often manipulate these PDF reports to hide bad claims and get cheaper rates. Verified documents prevent this fraud.
 
-Regulatory compliance and oversight:
+**Reinsurers**
+**Treaty Compliance:** Reinsurers need to verify that the primary carrier is calculating retro premiums correctly according to the treaty terms.
 
-**Systematic Hash Receipt:** Receive hashes in bulk for regulatory oversight.
-
-**Audit Verification:** Verify documents during routine or targeted audits.
-
-**Compliance Monitoring:** Monitor issuer compliance with documentation requirements.
-
-**Investigation Support:** Verify documents during fraud or compliance investigations.
-
-**Consumer Protection:** Verify consumer-facing documents for protection enforcement.
-
-**Lenders and Financial Institutions**
-
-Credit underwriting and risk assessment:
-
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
+**M&A Due Diligence**
+**Liability Assessment:** In a corporate acquisition, the buyer needs to know if the target company has a "ticking time bomb" of retrospective premium adjustments waiting to be billed. Verified adjustment statements reveal the true liability.
 
 ## Verification Architecture
 
-**The Aggregate deductible and retrospective rating documentation Fraud Problem**
+**The "Clean Loss Run" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Income Inflation:** Inflating income or assets on financial documents
-- **Photoshop Fraud:** Digital manipulation of statements and documents
-- **Shell Company Documents:** Documents from fake or shell entities
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Photoshop:** Editing the "Incurred Losses" column in a PDF loss run to make a bad year look good.
+- **Omission:** Deleting pages of large claims from the report.
+- **Fake Paid status:** Forging a document saying "All retro premiums paid" to avoid disclosing a liability during M&A.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Commercial Carriers:** (Chubb, Travelers, Zurich, AIG, etc.)
+**Third Party Administrators (TPAs):** (Sedgwick, Gallagher Bassett) who handle claims and issue loss runs.
 
-**Banks and Credit Unions:** Depository institutions for account documents.
+## Competition vs. Broker Portals
 
-**Investment Firms:** Brokerage and investment management firms.
+| Feature | OCR-to-Hash | Broker Portal (Marsh/Aon) |
+| :--- | :--- | :--- |
+| **Cross-Carrier** | **Universal.** Works for any carrier document. | **Siloed.** Portals usually only show data for *current* placements. Hard to get historical data from 5 years ago/different broker. |
+| **M&A Access** | **Easy.** Seller sends verified PDFs to Data Room. Buyer verifies. | **Hard.** Buyer cannot access Seller's private broker portal without complex permissioning. |
+| **Immutability** | **High.** Hash proves the document hasn't changed. | **Medium.** Portal data changes dynamically; hard to prove "what was the loss number on Dec 31?" |
 
-**Insurance Companies:** Insurers for policy and claims documents.
-
-**Accounting Firms:** CPAs and audit firms for financial statements.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Domain binding verifies insurer/reinsurer. Prevents fraudulent aggregate calculations. Multi-million dollar premium adjustments. Large commercial risk retrospective rating. Self-insured retention verification.
+**Why OCR wins here:** M&A transactions and underwriting submissions rely on **static documents** (snapshots in time) exchanged between parties who don't share system access. "Here is our loss run as of Jan 1." OCR-to-hash makes that static snapshot trustworthy without requiring the recipient to log in to the sender's insurance portal.

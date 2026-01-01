@@ -1,124 +1,123 @@
 ---
-title: "Customs entry documents and clearance certificates"
+title: "Customs Entry and Clearance Certificates"
 category: "Customs & Trade Compliance"
 volume: "Large"
 retention: "7-10 years (customs audit)"
 slug: "customs-entry-clearance"
-tags: ["customs", "entry", "clearance", "logistics", "transportation"]
+tags: ["customs", "entry-summary", "cbp-form-7501", "import-clearance", "duty-payment", "trade-compliance", "logistics"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="background: #002d62; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
+    <div>
+      <div style="font-weight: bold; font-size: 1.1em;">U.S. CUSTOMS AND BORDER PROTECTION</div>
+      <div style="font-size: 0.8em;">Entry Summary / Proof of Clearance</div>
+    </div>
+    <div style="width: 40px; height: 40px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #002d62; font-weight: bold; font-size: 0.7em; text-align: center;">CBP</div>
+  </div>
+
+  <div style="padding: 25px;">
+    <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+      <div style="border: 1px solid #000; padding: 5px 10px; font-weight: bold;">CBP 7501</div>
+      <div style="text-align: right; font-family: monospace;">Entry #: <span data-bracket="start" data-for="customs">]</span>998-8776655-4</div>
+    </div>
+
+    <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+      <p><strong>Importer of Record:</strong> GLOBAL LOGISTICS HUB, LLC<br>
+      <strong>Entry Port:</strong> 2704 (San Francisco, CA)<br>
+      <strong>Entry Date:</strong> March 15, 2026</p>
+
+      <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: #f0f4f8; border-bottom: 2px solid #002d62;">
+          <th style="text-align: left; padding: 8px;">Description</th>
+          <th style="text-align: right; padding: 8px;">Duty Paid</th>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border-bottom: 1px solid #eee;">Machinery Parts (HS 8483)</td>
+          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 12,450.00</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border-bottom: 1px solid #eee;">Electronic Integrated Circuits</td>
+          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 0.00 (Duty-Free)</td>
+        </tr>
+        <tr style="font-weight: bold; background: #e8eaf6;">
+          <td style="padding: 8px;">TOTAL REVENUE COLLECTED:</td>
+          <td style="text-align: right; padding: 8px;">$ 12,450.00</td>
+        </tr>
+      </table>
+    </div>
+
+    <div style="margin-top: 25px; padding: 10px; background: #f9f9f9; border: 1px solid #eee; font-size: 0.8em; color: #555;">
+      <strong>Status:</strong> RELEASED & SETTLED. All duties and fees have been paid.
+    </div>
+
+    <div data-verify-line="customs" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: CBP doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:cbp.gov/entry/v/99887766554 <span data-bracket="end" data-for="customs">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Importer, customs broker, entry number, duty/tax paid, goods classification
+Entry Number, Importer name, Broker ID, Entry Type (e.g., Consumption, Bonded, FTZ), Port of Entry, HS Code classification, merchandise value, duty amount paid, liquidation date, release status.
 
-**Certificate Variations:** Multiple certificate types or levels may exist.
+**Document Types:**
+- **CBP Form 7501:** Entry Summary (The "Official" proof of duty payment).
+- **Delivery Order:** Issued by broker to carrier once cleared.
+- **Customs Release (Form 3461):** Preliminary release from the terminal.
+- **Notification of Liquidation:** Final legal closing of the entry.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`cbp.gov`, `hmrc.gov.uk`) and current entry standing.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Released** — Goods cleared for domestic use.
+- **Liquidated** — Entry finalized; no further duty changes.
+- **In-Bond** — Moving under bond; duty not yet paid.
+- **Seized/Hold** — Customs has frozen the shipment.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Importer** or **Customs Broker** benefits from verification.
 
-**Authenticity Confirmation:** Verify certificate after receipt to confirm it's genuine.
+**Payment Disputes:** Proving to a customer that the $12,450 "Duty Charge" on the invoice was actually paid to the government and isn't a "Fake Fee" added by the broker.
 
-**Credential Display:** Present verified credentials to employers or clients.
-
-**Professional Development:** Track verified certifications for career advancement.
-
-**Compliance Documentation:** Maintain verified certificates for regulatory requirements.
-
-**Renewal Planning:** Monitor certification status to avoid expiration.
+**Audit Readiness:** During a "Focus Assessment" (audit), the importer can provide verified digital hashes of their entries to prove 100% compliance without mailing thousands of paper 7501s to the government.
 
 ## Third-Party Use
 
-**Insurance Companies**
+**Lenders / Factors**
+**Inventory Verification:** Verifying that "Imported Inventory" in a warehouse has actually cleared customs and all duties are paid. Unpaid duties are a "Senior Lien" that takes priority over the bank's security interest.
 
-Underwriting and claims processing:
+**Domestic Buyers**
+**Resale Compliance:** A buyer of high-value machinery (e.g., an MRI machine) can verify that the unit was legally imported and all duties were settled, protecting them from future seizure by the government for "Origin/Duty Fraud."
 
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Customs and Border Authorities**
-
-International trade compliance:
-
-**Import Clearance:** Verify shipping documents for customs clearance.
-
-**Duty Assessment:** Validate commercial invoices and declarations.
-
-**Trade Compliance:** Confirm certificates of origin and trade documents.
-
-**Security Screening:** Verify cargo documentation for security.
-
-**Export Controls:** Validate export documentation and licenses.
-
-**Freight Forwarders and Carriers**
-
-Logistics and transportation:
-
-**Shipment Acceptance:** Verify documents before accepting cargo.
-
-**Carrier Handoffs:** Validate documentation at transfer points.
-
-**Liability Determination:** Reference verified documents for claims.
-
-**Route Planning:** Confirm documentation for transit requirements.
-
-**Delivery Confirmation:** Verify documents at final delivery.
+**Supply Chain Auditors**
+**Sourcing Integrity:** Verifying that a supplier isn't bypassing trade sanctions or anti-dumping duties by misclassifying goods on the entry summary.
 
 ## Verification Architecture
 
-**The Customs entry documents and clearance certificates Fraud Problem**
+**The "Double Invoice" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Duty Evasion:** Showing a "Low Value" entry summary to Customs to save money, but showing a "High Value" one to the bank to get a bigger loan.
+- **HS Code Tampering:** Editing the paper 7501 to show a "Duty-Free" code while the actual government record shows a 25% tariff was paid (or bypassed).
+- **Fictitious Entry:** Creating a fake 7501 to get a "Customs Refund" or "Drawback" from the government for goods that were never actually imported.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**National Customs Agencies:** (U.S. CBP, U.K. HMRC, German Zoll).
+**Authorized Customs Brokers.**
+**Trade Platforms:** (e.g., Flexport, Expeditors).
 
-**Primary Issuers:** Organizations with direct authority to issue these documents.
+## Competition vs. ACE Portal / Single Window
 
-**Licensed Professionals:** Professionals authorized to create and certify documents.
+| Feature | OCR-to-Hash | ACE Portal (Gov) | Scanned PDF |
+| :--- | :--- | :--- | :--- |
+| **Trust Anchor** | **Domain-Bound.** Bound to the Gov. | **Database.** Direct access. | **Zero.** Easily forged. |
+| **Accessibility** | **Open.** Any bank or buyer can verify. | **Restricted.** Requires Gov credentials and Vetting. | **Instant.** |
+| **Speed** | **Instant.** Scan the paper. | **Slow.** Requires login and manual entry search. | **Instant.** |
+| **Integrity** | **Binds Content.** Proves the *Duty Paid* matches. | **Data-Only.** | **Vulnerable.** |
 
-**Government Agencies:** Federal, state, or local agencies with jurisdiction.
-
-**Industry Bodies:** Trade associations and professional organizations.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Prevents altered customs entries (duty evasion). Domain binding verifies customs broker/authority. Audit trail for customs compliance. Prevents post-clearance entry manipulation.
+**Why OCR wins here:** The "Downstream Trust" gap. Government "Single Window" portals (like ACE) are for the government and brokers. Lenders, auditors, and domestic buyers are locked out. OCR-to-hash turns the **Official Paper Filling** into a public-facing trust bridge, allowing the private sector to leverage government data without needing a government login.

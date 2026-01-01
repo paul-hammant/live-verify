@@ -1,125 +1,122 @@
 ---
-title: "Dangerous goods declarations for air cargo (DGR)"
+title: "Dangerous Goods Declarations (Air Cargo)"
 category: "Customs & Trade Compliance"
 volume: "Small"
 retention: "7-30 years (safety/liability)"
 slug: "dangerous-goods-declarations-air"
-tags: ["dangerous", "goods", "declarations", "logistics", "transportation"]
+tags: ["dangerous-goods", "air-cargo", "iata-dgr", "hazmat", "aviation-safety", "shipper-declaration", "cargo-security"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 2px solid #d32f2f; background: #fff; padding: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <div style="background: #d32f2f; color: #fff; padding: 10px; text-align: center;">
+    <h2 style="margin: 0; text-transform: uppercase; font-size: 1.2em;">SHIPPER'S DECLARATION FOR DANGEROUS GOODS</h2>
+    <div style="font-size: 0.8em;">In Compliance with IATA Dangerous Goods Regulations (DGR)</div>
+  </div>
+
+  <div style="padding: 15px; font-size: 0.8em;">
+    <div style="display: flex; border-bottom: 1px solid #d32f2f; padding-bottom: 10px; margin-bottom: 10px;">
+      <div style="width: 50%; border-right: 1px solid #d32f2f; padding-right: 10px;">
+        <strong>Shipper:</strong><br>
+        <span data-bracket="start" data-for="dgr">]</span>Lithium-Power Tech, Ltd.<br>
+        Shenzhen, China
+      </div>
+      <div style="width: 50%; padding-left: 10px;">
+        <strong>Air Waybill No:</strong> 016-99228877<br>
+        <strong>Page:</strong> 1 of 1
+      </div>
+    </div>
+
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 15px;">
+      <tr style="background: #fdf2f2; border-bottom: 1px solid #d32f2f;">
+        <th style="text-align: left; padding: 5px;">UN Number</th>
+        <th style="text-align: left; padding: 5px;">Description</th>
+        <th style="text-align: center; padding: 5px;">Class</th>
+        <th style="text-align: center; padding: 5px;">Pkg Grp</th>
+      </tr>
+      <tr>
+        <td style="padding: 5px;">UN 3480</td>
+        <td style="padding: 5px;">Lithium Ion Batteries (Section IA)</td>
+        <td style="text-align: center; padding: 5px;">9</td>
+        <td style="text-align: center; padding: 5px;">II</td>
+      </tr>
+    </table>
+
+    <div style="margin-top: 10px; border: 1px solid #000; padding: 10px; font-style: italic;">
+      I declare that all of the applicable air transport requirements have been met. The goods are in proper condition for carriage by air according to the applicable International and National Government Regulations.
+    </div>
+
+    <div style="margin-top: 15px; display: flex; justify-content: space-between;">
+      <div><strong>Signatory:</strong> Wang Wei (Certified Packer)</div>
+      <div><strong>Date:</strong> 15 MAR 2026</div>
+    </div>
+
+    <div data-verify-line="dgr" style="border-top: 1px dashed #d32f2f; margin-top: 20px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #555; text-align: center;"
+      title="Demo only: Airline doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:iata-dgr.org/v/016-99228877 <span data-bracket="end" data-for="dgr">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Shipper, airline, consignee, hazmat classification, packing group, emergency contact
+Shipper name, Air Waybill (AWB) number, UN Number (e.g., UN3480), Proper Shipping Name, Hazard Class (1-9), Packing Group (I, II, III), Net Quantity per package, emergency contact number, signatory name, date of declaration.
+
+**Document Types:**
+- **Shipper's Declaration (DGD):** The primary red-bordered legal form.
+- **Cargo Aircraft Only (CAO) Notice:** For goods prohibited on passenger planes.
+- **NOTOC (Notice to Captain):** (Linked hash) proving the pilot was informed of the hazmat on board.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (the Shipper, Airline, or IATA Validator) and current safety status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Verified** — Declaration matches the certified packer's official log.
+- **Accepted for Carriage** — Airline has performed the "Acceptance Checklist" and verified the goods.
+- **Suspended** — Recalled/Blocked (e.g., due to battery fire safety alert).
+- **Invalid** — Signatory not authorized or details mismatch.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Shipper (Manufacturer)** benefits from verification.
 
-**Shipment Tracking:** Verify documentation matches actual shipment.
+**Vessel Acceptance:** Proving to the Airline (e.g., Lufthansa Cargo) that the batteries were packed and declared by a "Verified Certified Professional." This prevents the cargo from being rejected at the airport warehouse due to "Paperwork Inconsistency."
 
-**Customs Clearance:** Present verified documents to customs authorities.
-
-**Payment Verification:** Confirm charges match agreed terms.
-
-**Dispute Prevention:** Maintain verified records for potential disputes.
-
-**Insurance Claims:** Provide verified documentation for cargo claims.
+**Liability Protection:** In the event of an in-flight fire, the shipper can prove they provided a cryptographically verified, accurate declaration of the hazard level, defending against "Willful Misdeclaration" criminal charges.
 
 ## Third-Party Use
 
+**Airline Loadmasters / Pilots**
+**Flight Safety:** The Captain uses the DGD data to calculate fire suppression needs and cargo placement. Verification ensures the data isn't "guessed" or fabricated, preventing catastrophic mid-air incidents.
+
+**Ground Handlers (Swissport / Menzies)**
+**Acceptance Check:** Warehouse staff scan the hash while walking the floor. "Verified by IATA System" allows them to instantly trust the paper without calling the shipper's office.
+
 **Insurance Companies**
-
-Underwriting and claims processing:
-
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Customs and Border Authorities**
-
-International trade compliance:
-
-**Import Clearance:** Verify shipping documents for customs clearance.
-
-**Duty Assessment:** Validate commercial invoices and declarations.
-
-**Trade Compliance:** Confirm certificates of origin and trade documents.
-
-**Security Screening:** Verify cargo documentation for security.
-
-**Export Controls:** Validate export documentation and licenses.
-
-**Freight Forwarders and Carriers**
-
-Logistics and transportation:
-
-**Shipment Acceptance:** Verify documents before accepting cargo.
-
-**Carrier Handoffs:** Validate documentation at transfer points.
-
-**Liability Determination:** Reference verified documents for claims.
-
-**Route Planning:** Confirm documentation for transit requirements.
-
-**Delivery Confirmation:** Verify documents at final delivery.
+**Aviation Liability:** Verifying that all hazardous cargo on a lost aircraft was properly declared and met all IATA safety standards before paying out a multimillion-dollar hull claim.
 
 ## Verification Architecture
 
-**The Dangerous goods declarations for air cargo (DGR) Fraud Problem**
+**The "Phantom Batteries" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Cargo Misrepresentation:** False descriptions of goods being shipped
-- **Duplicate Bills:** Creating multiple originals for fraud
-- **Document Mismatch:** Documents that don't match actual cargo
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Misclassification:** Declaring dangerous Lithium batteries as "General Cargo" or "Toys" on the paper form to save on freight costs and bypass safety checks.
+- **Quantity Inflation:** Shipping 500kg of chemicals but only declaring 50kg on the paper to meet "Passenger Plane" limits.
+- **Signature Forgery:** Forging the signature of a certified "Dangerous Goods Professional" who never actually saw the cargo.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Certified Shippers.**
+**Specialist Packing Firms.**
+**Airlines / Carriers.**
+**IATA:** (Providing the global validation framework).
 
-**Carriers:** Shipping lines, airlines, trucking companies, and railroads.
+## Competition vs. e-DGD (Electronic Data)
 
-**Freight Forwarders:** International freight forwarders and NVOCCs.
+| Feature | OCR-to-Hash | e-DGD (IATA Digital) | Paper DGD Form |
+| :--- | :--- | :--- | :--- |
+| **Field Access** | **Instant.** Scan the paper on the pallet. | **Hard.** Requires warehouse staff to have tablet access to IATA's private cloud. | **Instant.** |
+| **Trust Anchor** | **Domain-Bound.** Bound to the Shipper/Packer. | **Platform-Bound.** Trust the IATA central hub. | **Zero.** Easily forged. |
+| **Connectivity** | **Strong.** Paper works inside lead-shielded warehouses. | **Fragile.** Requires 100% 5G/Wi-Fi coverage on the tarmac. | **Offline.** |
+| **Integrity** | **Binds Content.** Proves the *UN Number* matches. | **Data-Only.** | **Vulnerable.** |
 
-**Customs Brokers:** Licensed customs brokers for trade documentation.
-
-**Port Authorities:** Port operators for terminal and cargo documents.
-
-**System Integration**
-
-Shipping verification integrates with trade systems:
-
-**EDI Standards:** Electronic data interchange for trade documents (EDIFACT, X12).
-
-**Port Community Systems:** Port system integration for cargo documentation.
-
-**Customs Systems:** Integration with ACE, ABI, and customs clearance platforms.
-
-**Carrier Systems:** Shipping line and freight forwarder system integration.
-
-## Rationale
-
-IATA Dangerous Goods Regulations (DGR) compliance. Domain binding verifies shipper/DG-certified packer. Prevents fake DGR (aircraft safety risk). Long liability retention. Aviation safety critical.
+**Why OCR wins here:** The "Warehouse reality." Air cargo hubs are massive, metal-clad buildings where Wi-Fi is spotty and staff move fast. They rely on the "Persistent Paper" attached to the boxes. OCR-to-hash turns that paper into a **Live Safety Link**, ensuring the person loading the plane has the same verified data as the person who packed the box.

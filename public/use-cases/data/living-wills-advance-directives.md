@@ -1,150 +1,108 @@
 ---
-title: "Living wills and advance directives"
+title: "Living Wills and Advance Directives"
 category: "Healthcare & Medical Records"
 volume: "Very Small"
 retention: "Permanent (end-of-life care)"
 slug: "living-wills-advance-directives"
-tags: ["living", "wills", "advance", "directives", "healthcare", "medical", "records"]
+tags: ["advance-directive", "living-will", "healthcare-proxy", "end-of-life-care", "medical-ethics", "patient-rights", "palliative-care", "legal-document"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #000; background: #fffdf5; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); position: relative;">
+  <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 25px;">
+    <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">ADVANCE HEALTH CARE DIRECTIVE</h2>
+  </div>
+
+  <div style="font-size: 1em; line-height: 1.6; color: #000; text-align: justify;">
+    <p>I, <span data-bracket="start" data-for="will">]</span><strong>JOHN JACOB DOE</strong>, being of sound mind, willfully and voluntarily make this declaration to be followed if I become incapacitated and am unable to participate in decisions regarding my medical care.</p>
+
+    <div style="margin: 20px 0; background: #f9f9f9; padding: 15px; border: 1px solid #eee;">
+      <p><strong>1. HEALTH CARE AGENT:</strong> Mary Alice Jacob (Spouse)<br>
+      <strong>2. END-OF-LIFE WISHES:</strong> If I have an incurable and irreversible condition, I direct that life-sustaining treatment be withheld or withdrawn.</p>
+      <p><strong>3. COMFORT CARE:</strong> I direct that I be given all care necessary to alleviate pain.</p>
+    </div>
+
+    <p><strong>Witnesses:</strong> Robert Miller, Sarah Connor<br>
+    <strong>Date of Execution:</strong> March 15, 2026</p>
+  </div>
+
+  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+    <div style="width: 45%;">
+      <div style="border-top: 1px solid #000; padding-top: 5px;">John Jacob Doe</div>
+      <div style="font-size: 0.8em; color: #777;">Declarant</div>
+    </div>
+    <div style="text-align: right; width: 45%;">
+      <div style="width: 80px; height: 80px; border: 2px solid #000; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; text-align: center; margin-left: auto;">OFFICIAL<br>NOTARY<br>SEAL</div>
+    </div>
+  </div>
+
+  <div data-verify-line="will" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+      title="Demo only: Healthcare system doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:cedars-sinai.org/legal/v/DOE-992288 <span data-bracket="end" data-for="will">]</span>
+  </div>
+</div>
+
 ## Data Verified
 
-Patient name, DOB, medical wishes, appointed decision-maker, witnesses
+Declarant name, date of birth, appointed Health Care Agent (Proxy) name, specific life-sustaining treatment choices (Yes/No), comfort care directives, organ donor status, date of execution, witness names, Notary commission (if applicable), issuing healthcare system/attorney domain.
 
-**Privacy Salt:** Sensitive personal information requires random salt in verification lines to prevent hash enumeration.
+**Document Types:**
+- **Living Will:** Specific instructions for terminal conditions.
+- **Healthcare Power of Attorney:** Appointing a decision-maker.
+- **POLST / MOLST Form:** Physician Orders for Life-Sustaining Treatment (for the fridge).
+- **Five Wishes Document:** A comprehensive family-centered directive.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`cedars-sinai.org`, `mayoclinic.org`, `legalzoom.com`) and current document status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Active** — This is the latest verified directive on file.
+- **Superseded** — **ALERT:** A newer directive has been issued; this version is void.
+- **Revoked** — Declarant has formally cancelled this directive.
+- **Under Challenge** — Legal dispute regarding the declarant's competency at signing.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Patient (Declarant)** benefits from verification.
 
-**Medical Records:** Verify health documents for personal medical records.
+**Ensuring Compliance:** Proving to a hospital's ethics committee or a hesitant doctor that their "End-of-Life Wishes" are verified and un-altered. Verification prevents family members from "Losing" or "Editing" a paper directive to keep a patient on life-support against their verified will.
 
-**Provider Presentation:** Share verified results with other healthcare providers.
-
-**Insurance Claims:** Support health insurance claims with verified documentation.
-
-**Compliance Requirements:** Meet employer or school health documentation requirements.
-
-**Legal Matters:** Provide verified health records for disability, litigation, or family matters.
+**Portability:** Carrying a verified digital link to their living will while traveling, ensuring their wishes are respected in a different state or country where their local doctor isn't available.
 
 ## Third-Party Use
 
-**Regulators and Oversight Bodies**
+**Hospital Ethics Committees / ER Staff**
+**Immediate Action:** In a trauma situation where a patient is unconscious, doctors scan the hash on the "POLST" card. "Verified by Cedars-Sinai" provides the immediate legal and ethical cover needed to follow the patient's "No Intubation" wish without fear of a lawsuit from relatives.
 
-Regulatory compliance and oversight:
+**Health Care Agents (Proxies)**
+**Authority Proof:** Proving to a nursing home or insurance company that they are the verified, legally appointed decision-maker for the patient.
 
-**Systematic Hash Receipt:** Receive hashes in bulk for regulatory oversight.
-
-**Audit Verification:** Verify documents during routine or targeted audits.
-
-**Compliance Monitoring:** Monitor issuer compliance with documentation requirements.
-
-**Investigation Support:** Verify documents during fraud or compliance investigations.
-
-**Consumer Protection:** Verify consumer-facing documents for protection enforcement.
-
-**Employers**
-
-Hiring and compliance verification:
-
-**Pre-Employment Screening:** Verify credentials during hiring process.
-
-**I-9 Compliance:** Verify work authorization and identity documents.
-
-**Credential Verification:** Confirm professional licenses and certifications.
-
-**Health Requirements:** Verify health-related documentation for workplace safety.
-
-**Background Checks:** Integrate verification into background check processes.
-
-**Insurance Companies**
-
-Underwriting and claims processing:
-
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Healthcare Providers**
-
-Medical care and coordination:
-
-**Medical History:** Verify patient-provided medical records and test results.
-
-**Treatment Planning:** Confirm diagnostic results for treatment decisions.
-
-**Specialist Referrals:** Validate records when coordinating care.
-
-**Insurance Authorization:** Verify coverage and authorization documents.
-
-**Compliance Requirements:** Confirm vaccination and health screening records.
+**Probate Attorneys**
+**Estate Integrity:** Ensuring that the healthcare decisions made at the end of life were consistent with the verified legal documents in the estate file.
 
 ## Verification Architecture
 
-**The Living wills and advance directives Fraud Problem**
+**The "Daughter from California" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Directive Hiding:** Relatives intentionally hiding a "No Life Support" document to keep a patient alive for social or financial reasons. Verification allows the hospital to check the domain record directly.
+- **Content Alteration:** Editing a PDF to change the "Health Care Agent" from a spouse to a predatory stranger.
+- **Competency Fraud:** Fabricating an advance directive after a patient has already lost mental capacity (Dementia/Coma).
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Healthcare Systems:** (Kaiser, Mayo Clinic, HCA).
+**Online Legal Services:** (LegalZoom, RocketLawyer).
+**State Registries:** (e.g., California Secretary of State Advance Directive Registry).
 
-**Hospitals and Health Systems:** Major healthcare providers and hospital networks.
+**Privacy Salt:** ABSOLUTELY CRITICAL. End-of-life wishes are the most private data imaginable. The hash MUST be salted to prevent "Guess-and-Check" attacks to find someone's medical directives.
 
-**Clinical Laboratories:** Reference labs and hospital-based laboratories.
+## Competition vs. State Registries
 
-**Medical Clinics:** Physician practices and specialty clinics.
+| Feature | OCR-to-Hash | State Registry (Online) | The "Fridge" Magnet |
+| :--- | :--- | :--- | :--- |
+| **Trust Anchor** | **Domain-Bound.** Bound to the Hospital/Firm. | **Gov-Bound.** Bound to the State. | **None.** Trust the paper. |
+| **Integrity** | **Cryptographic.** Protects every wish. | **Data-Only.** Doesn't protect the paper. | **Zero.** Easily forged. |
+| **Speed** | **Instant.** 5-second scan. | **Slow.** Requires login/fees and manual search. | **Instant.** |
+| **Freshness** | **Real-time.** Shows if superseded. | **Laggy.** Updates take weeks. | **Static.** |
 
-**Public Health Departments:** Government health agencies for certifications.
-
-**System Integration**
-
-Healthcare verification connects to clinical systems:
-
-**EHR Systems:** Electronic health record systems generate verification hashes.
-
-**Lab Information Systems:** Laboratory systems create verification for results.
-
-**Health Information Exchanges:** Regional HIEs facilitate verification.
-
-**FHIR Standards:** HL7 FHIR could incorporate verification endpoints.
-
-**Privacy Considerations**
-
-Sensitive personal information requires special handling:
-
-**Privacy Salt:** Random salt added to verification lines prevents hash enumeration attacks.
-
-**Minimum Disclosure:** Verification response reveals only necessary information.
-
-**Access Controls:** Verification endpoints implement appropriate access restrictions.
-
-**Audit Logging:** Verification attempts logged for security and compliance.
-
-## Rationale
-
-Critical end-of-life decisions. Prevents forged advance directives. Domain binding verifies issuing authority (notary, healthcare system). Human-readable wishes essential. Permanent legal records. Multi-page: Full living wills may be multi-page - per-page verification prevents tampering.
+**Why OCR wins here:** The "ICU Reality." Decisions in the ICU are made in minutes. Doctors don't have time to navigate a state government website or pay a $10 fee to see a directive. OCR-to-hash turns the **Paper on the Clipboard** into a live, trusted clinical link, ensuring the patient's dignity is protected by the latest technology.

@@ -1,192 +1,115 @@
 ---
-title: "Letters of Credit"
+title: "Letters of Credit (L/C)"
 category: "Trade Finance"
-volume: "Small (but high-value transactions)"
-retention: "7-10 years (transaction lifecycle plus disputes)"
+volume: "Small (but high-value)"
+retention: "7-10 years (transaction lifecycle)"
 slug: "letters-of-credit"
-tags: ["letters", "credit", "banking", "financial", "services"]
+tags: ["trade-finance", "letter-of-credit", "swift-mt700", "documentary-credit", "international-trade", "export-finance", "ucp-600"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 1px solid #000; background: #fff; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+  <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
+    <strong>HSBC BANK PLC - TRADE SERVICES</strong><br>
+    IRREVOCABLE DOCUMENTARY CREDIT<br>
+    --------------------------------
+  </div>
+
+  <div style="font-size: 0.85em; line-height: 1.4;">
+    <p><strong>L/C Number:</strong> <span data-bracket="start" data-for="lc">]</span>HSBC-LC-99228877<br>
+    <strong>Date of Issue:</strong> 15 MAR 2026<br>
+    <strong>Expiry Date:</strong> 15 SEP 2026</p>
+
+    <div style="display: flex; margin-bottom: 15px;">
+      <div style="width: 50%; border-right: 1px solid #000; padding-right: 10px;">
+        <strong>Applicant (Buyer):</strong><br>
+        Global Retail Hub, Corp.<br>
+        New York, NY, USA
+      </div>
+      <div style="width: 50%; padding-left: 10px;">
+        <strong>Beneficiary (Seller):</strong><br>
+        Swiss Precision Lenses, SA<br>
+        Geneva, Switzerland
+      </div>
+    </div>
+
+    <div style="background: #f9f9f9; border: 1px solid #ccc; padding: 10px; margin-bottom: 15px;">
+      <strong>AMOUNT: USD 1,250,000.00</strong><br>
+      (One Million Two Hundred Fifty Thousand US Dollars)
+    </div>
+
+    <p><strong>Description of Goods:</strong><br>
+    High-Precision Optical Glass (Lot #992) as per Contract #42.</p>
+
+    <p style="font-size: 0.8em;">Available with any bank by negotiation. Subject to UCP 600.</p>
+
+    <div data-verify-line="lc" style="border-top: 1px dashed #999; margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #555; text-align: center;"
+      title="Demo only: HSBC doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:hsbc.com/trade/v/LC99228877 <span data-bracket="end" data-for="lc">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Issuing bank name and address, beneficiary (seller/exporter) name, applicant (buyer/importer) name, credit amount and currency, payment terms (sight, usance, deferred), expiry date, required documents list, shipping terms, port of loading/discharge, goods description, LC number.
+L/C Number, Issuing Bank name, Beneficiary name, Applicant name, Currency and exact amount (numerical/text), Expiry date, Port of Loading/Discharge, Goods description (digest), UCP version (e.g., UCP 600), date of issuance.
 
-**Document Complexity:** Letters of credit are formal banking instruments with precise legal language. Every term matters—a typo in goods description or shipping deadline can invalidate the credit.
-
-**Amendments:** LCs are frequently amended during transactions. Each amendment is a separate document requiring verification.
+**Document Types:**
+- **Irrevocable Letter of Credit:** The primary bank guarantee.
+- **L/C Amendment:** (Linked hash) documenting changes to the credit.
+- **Standby Letter of Credit (SBLC):** Used as a backup payment source.
+- **Advice of Credit:** From the advising bank to the seller.
 
 ## Data Visible After Verification
 
-Shows the issuer domain (the issuing bank) and the responder text.
+Shows the issuer domain (the Issuing Bank) and current credit status.
 
 **Status Indications:**
-- **Valid** - LC is current and available for drawing
-- **Amended** - This version has been superseded by an amendment
-- **Expired** - LC has passed its validity period
-- **Fully Drawn** - All available credit has been utilized
-- **Cancelled** - LC was cancelled before expiry
+- **Valid/Available** — Credit is active and open for negotiation.
+- **Amended** — **ALERT:** Terms have changed; view Amendment #2.
+- **Drawn** — Funds have already been paid against this credit.
+- **Expired** — The credit has passed its valid window.
+- **Cancelled** — Retracted by mutual agreement.
 
-**Public Ledger Link:** The verification response may include a link to the LC's position in a trade finance registry or the issuing bank's published LC index, demonstrating the commitment exists within the bank's obligations.
+## Second-Party Use
 
-## Second-Party Use (Beneficiary Verifying Received LC)
+The **Beneficiary (Exporter)** benefits from verification.
 
-Exporters/sellers receiving LCs benefit from verification.
+**Shipping Confidence:** Before manufacturing $1.2M in custom lenses, the Swiss exporter scans the L/C hash. "Verified by HSBC" ensure the buyer hasn't "Edited" the PDF to change the payment terms from "At Sight" to "Net 90 Days" or reduced the dollar amount.
 
-**Authenticity Confirmation:** Before shipping goods worth potentially millions, exporters need confidence the LC is genuine and the issuing bank will pay.
-
-**Terms Verification:** Exporters can verify the LC terms match the sales contract—amount, goods description, shipping dates, required documents.
-
-**Amendment Tracking:** As amendments arrive, beneficiaries can verify each amendment is authentic and correctly modifies the original.
-
-**Advising Bank Confirmation:** When receiving LCs through advising banks, beneficiaries can independently verify against the issuing bank's records.
-
-**Discrepancy Prevention:** Careful verification of LC terms before shipping prevents documentary discrepancies that lead to payment refusal.
+**Supply Chain Finance:** Proving the verified L/C to a local bank to get a "Pre-Export Loan" to buy raw materials. Banks only lend against L/Cs they can cryptographically trust.
 
 ## Third-Party Use
 
-**Advising and Confirming Banks**
+**Advising / Confirming Banks**
+**Risk Transfer:** A confirming bank in Switzerland can verify the L/C against HSBC's domain before adding their own guarantee. This stops "Ghost L/Cs" from non-existent or insolvent banks.
 
-LC transmission and confirmation:
+**Logistics Carriers (Steamship Lines)**
+**Title Vetting:** Verifying that the B/L they are issuing matches the verified "Goods Description" in the L/C, reducing the risk of being sued for "Misdescription."
 
-**Advising Authenticity:** Banks advising LCs to beneficiaries can verify authenticity before forwarding. Traditionally done via SWIFT key verification; OCR-to-hash provides additional confirmation.
-
-**Confirmation Decisions:** Banks asked to confirm (guarantee) an LC can verify its authenticity and terms before adding their confirmation.
-
-**Amendment Processing:** Each amendment needs verification before advising to the beneficiary.
-
-**Discrepancy Resolution:** When documents are rejected, advising banks can verify the original LC terms the issuing bank claims were violated.
-
-**Negotiating and Paying Banks**
-
-Document examination and payment:
-
-**LC Validity:** Before examining documents and paying, negotiating banks verify the LC exists and is available for drawing.
-
-**Drawing Against Terms:** Banks verify documents presented comply with LC terms as originally issued (not an altered version).
-
-**Partial Shipments:** For partial shipment LCs, banks verify remaining available balance before each payment.
-
-**Reimbursement Claims:** When claiming reimbursement from issuing banks, negotiating banks can prove they paid against a verified, authentic LC.
-
-**Issuing Banks**
-
-Risk management and compliance:
-
-**Duplicate Detection:** Issuing banks can detect if their LC has been altered or duplicated for fraudulent presentation.
-
-**Applicant Disputes:** When importers dispute LC terms, banks can prove what was actually issued.
-
-**Regulatory Reporting:** Trade finance reporting to regulators can reference verified LC hashes.
-
-**Audit Trail:** Internal audit can verify LCs in the portfolio match issued documents.
-
-**Insurance Companies**
-
-Trade credit and marine insurance:
-
-**Coverage Verification:** Trade credit insurers can verify LC terms when underwriting exporter risk.
-
-**Claims Processing:** When LCs aren't honored, insurers can verify the original LC terms and alleged discrepancies.
-
-**Marine Cargo Insurance:** Insurers covering shipped goods can verify the LC and shipping terms.
-
-**Customs and Trade Authorities**
-
-Trade facilitation and compliance:
-
-**Goods Description:** Customs can verify goods declarations against LC terms.
-
-**Valuation:** LC amount provides evidence of transaction value for duty assessment.
-
-**Trade Finance Compliance:** Authorities monitoring trade-based money laundering can verify LC authenticity.
-
-**Sanctions Screening:** LCs can be verified before processing to confirm they don't involve sanctioned parties.
+**Customs Authorities**
+**Valuation Vetting:** Verifying the actual transaction value of high-tax goods by checking the verified L/C hash.
 
 ## Verification Architecture
 
-**The LC Fraud Problem**
+**The "Phantom Credit" Fraud Problem**
 
-LC fraud is a significant trade finance risk:
+- **Fabricated L/Cs:** Using a template to create a fake L/C from a real bank (e.g., HSBC) to trick a supplier into shipping goods without payment.
+- **Term Tampering:** Editing the "Required Documents" list to remove the need for a 3rd party inspection certificate, allowing the buyer to ship junk.
+- **Amount Inflation:** Changing $100,000 to $1,000,000 to use the L/C as collateral for a fraudulent loan.
 
-- **Fabricated LCs:** Entirely fake LCs from non-existent banks or forged from real banks
-- **Altered LCs:** Genuine LCs with modified amounts, terms, or dates
-- **Duplicate Drawings:** Same LC used for multiple fraudulent shipments
-- **Confirming Bank Fraud:** Fake confirmations added to weak LCs
-- **Document Fraud:** Genuine LC but fraudulent documents presented (separate from LC verification)
+**Issuer Types**
 
-OCR-to-hash addresses fabrication and alteration at the LC level. Document fraud (fake bills of lading, inspection certificates) requires verification of each underlying document.
+**Global Trade Banks:** (HSBC, Citi, BNP Paribas, Standard Chartered).
+**Central Banks:** (In countries with high exchange controls).
+**Trade Platforms:** (e.g., Contour, Marco Polo - hosting the hashes).
 
-**Issuing Banks as Issuers**
+## Competition vs. SWIFT (Electronic)
 
-The issuing bank is the natural verification endpoint:
+| Feature | OCR-to-Hash | SWIFT MT700 (Electronic) | Scanned PDF L/C |
+| :--- | :--- | :--- | :--- |
+| **Trust Anchor** | **Domain-Bound.** Bound to the Bank. | **Network-Bound.** Trust the SWIFT keys. | **Zero.** Easily forged. |
+| **Accessibility** | **Universal.** Any local agent/broker can verify. | **Restricted.** Only banks have SWIFT terminals. | **Universal.** |
+| **Integrity** | **Binds Content.** Protects the text. | **Data-Only.** No "Human" document link. | **Vulnerable.** |
+| **Interoperability** | **High.** Works across non-SWIFT fintechs. | **Limited.** Only for legacy banks. | **Universal.** |
 
-**SWIFT Network:** Most LCs are transmitted via SWIFT. Banks already have secure messaging infrastructure.
-
-**Correspondent Relationships:** Banks have existing trust relationships that could extend to verification.
-
-**Trade Finance Platforms:** Banks increasingly use trade finance platforms (Contour, we.trade, Komgo) that could integrate verification.
-
-**API Integration:** Major trade finance banks could offer verification APIs for their issued LCs.
-
-**UCP 600 Considerations**
-
-The Uniform Customs and Practice for Documentary Credits (UCP 600) governs LC transactions:
-
-**Document Examination Standard:** UCP 600 requires documents to be examined on their face. OCR-to-hash verification complements visual examination.
-
-**Issuing Bank Obligations:** The issuing bank's obligation is defined by the LC terms. Verification confirms those terms.
-
-**Amendment Rules:** Amendments require beneficiary consent. Verification of amendment authenticity supports the consent process.
-
-**Original Documents:** UCP 600 addresses requirements for original documents. OCR-to-hash can verify originals weren't altered after issuance.
-
-**SWIFT and MT700**
-
-LCs are transmitted using standardized SWIFT messages:
-
-**MT700:** Standard format for issuing documentary credits. Could include hash of the visual LC document.
-
-**MT710:** Advice of third bank's documentary credit.
-
-**MT720:** Transfer of documentary credit.
-
-**MT707:** Amendment to documentary credit.
-
-SWIFT message authentication already provides transmission security; OCR-to-hash provides document-level verification for the human-readable LC.
-
-**Trade Finance Platform Integration**
-
-Blockchain and platform approaches to trade finance:
-
-**Contour:** Corda-based LC platform with major bank participation. Could integrate OCR-to-hash for physical document verification.
-
-**we.trade:** Trade finance platform for European banks.
-
-**Marco Polo:** Trade finance network for open account transactions.
-
-**TradeLens:** Maersk/IBM shipping platform with document tracking.
-
-These platforms handle electronic LCs; OCR-to-hash provides verification for physical documents that still accompany many transactions.
-
-**Standby Letters of Credit**
-
-Standby LCs (SBLCs) have distinct verification needs:
-
-**Guarantee Function:** SBLCs serve as guarantees rather than payment mechanisms.
-
-**Longer Validity:** SBLCs may remain valid for years, requiring ongoing verification capability.
-
-**Performance vs. Financial:** Some SBLCs guarantee performance, others guarantee payment.
-
-**ISP98 Rules:** Standby credits often operate under ISP98 rather than UCP 600.
-
-**Multi-Bank Transactions**
-
-Complex LCs involve multiple banks:
-
-**Issuing Bank → Advising Bank → Confirming Bank → Beneficiary**
-
-Each bank in the chain can verify the underlying LC. A confirming bank's confirmation is a separate document that could also be verified.
-
-**Transferable LCs:** When LCs are transferred to second beneficiaries, the transfer document requires verification.
-
-**Back-to-Back LCs:** Traders using back-to-back LCs need to verify both the master LC they receive and the LC they issue to suppliers.
+**Why OCR wins here:** The "Non-Bank" reality. Trade finance involves non-banks (freight forwarders, insurance agents, small suppliers) who **do not have SWIFT access**. They are forced to trust a piece of paper or a PDF. OCR-to-hash turns that **Human-Readable PDF** into a cryptographically trusted artifact that anyone can verify without a $50,000/year SWIFT terminal.

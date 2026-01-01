@@ -1,150 +1,113 @@
 ---
-title: "Consular processing appointments"
+title: "Consular Processing Appointments"
 category: "Immigration & Visa Documents"
 volume: "Medium"
 retention: "Appointment + 5 years"
 slug: "consular-processing-appointments"
-tags: ["consular", "processing", "appointments", "immigration", "visa", "documents"]
+tags: ["immigration", "visa-interview", "nvc", "embassy", "consular-processing", "travel-logistics", "visa-appointment"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="background: #002d62; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
+    <div>
+      <div style="font-weight: bold; font-size: 1.1em;">U.S. DEPARTMENT OF STATE</div>
+      <div style="font-size: 0.8em;">National Visa Center (NVC)</div>
+    </div>
+    <div style="width: 40px; height: 40px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #002d62; font-weight: bold; font-size: 0.7em; text-align: center;">DOS</div>
+  </div>
+
+  <div style="padding: 25px;">
+    <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+      <div style="border: 1px solid #000; padding: 5px 10px; font-weight: bold;">DS-260</div>
+      <div style="text-align: right; font-family: monospace;">NVC Case #: MTL2026998877</div>
+    </div>
+
+    <h2 style="text-align: center; font-size: 1.2em; margin-bottom: 20px; text-transform: uppercase;">Visa Interview Appointment Notice</h2>
+
+    <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+      <p><strong>Principal Applicant:</strong> <span data-bracket="start" data-for="consul-app">]</span>SARAH JANE SMITH</p>
+      
+      <div style="background: #f0f4f8; border: 1px solid #d1d9e6; padding: 15px; margin: 15px 0;">
+        <p><strong>Interview Date:</strong> March 15, 2026<br>
+        <strong>Interview Time:</strong> 08:30 AM</p>
+        <p><strong>Location:</strong><br>
+        U.S. Consulate General Montreal<br>
+        1155 Saint-Alexandre St, Montreal, QC H3B 2J2, Canada</p>
+      </div>
+
+      <p style="font-size: 0.85em; font-weight: bold;">YOU MUST BRING THIS NOTICE TO ENTER THE CONSULATE.</p>
+    </div>
+
+    <div data-verify-line="consul-app" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: NVC doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:nvc.state.gov/appointments/v/MTL2026998877 <span data-bracket="end" data-for="consul-app">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Full name, case number, NVC case number, appointment date/time/location, embassy/consulate
+Applicant name, NVC/Consular Case Number, Appointment Date/Time, Consulate location (City/Country), Visa Category (e.g., CR-1, IR-1, EB-3), number of derivative applicants, date of issuance.
 
-**Privacy Salt:** Sensitive personal information requires random salt in verification lines to prevent hash enumeration.
+**Document Types:**
+- **NVC Appointment Letter:** The standard notice sent to the applicant.
+- **Biometric Appointment Notice:** For the off-site Fingerprint Center (VAC/ASC).
+- **Medical Exam Authorization:** Linked to the appointment date.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`state.gov`) and current interview standing.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Scheduled** — Appointment is valid; security clearance granted.
+- **Rescheduled** — This notice is void; a new date has been set.
+- **Cancelled** — Interview revoked (e.g., due to document deficiency).
+- **Completed** — Interview has already taken place for this notice.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Visa Applicant** benefits from verification.
 
-**Status Confirmation:** Verify immigration documents after receipt from authorities.
+**Consulate Entry:** Proving to the security guards outside the embassy/consulate that the "Interview Notice" is legitimate. This prevents being turned away at the gate due to a suspected forgery or a typo in the mission's manual guard list.
 
-**Employment Authorization:** Confirm work authorization for I-9 compliance.
+**Travel Logistics:** Proving to airlines or border agents (if traveling to a third country for the interview) that the trip is for an official, verified government appointment.
 
-**Travel Planning:** Verify travel document validity before international trips.
-
-**Status Changes:** Confirm application outcomes and new status.
-
-**Family Petitions:** Provide verified status for dependent applications.
+**Employer Proof:** Proving to a current employer why they need to be absent for several days for international travel.
 
 ## Third-Party Use
 
-**Employers**
+**Consular Security / Local Guard Force**
+**Access Control:** Embassies are high-target environments. Guards can instantly verify notices at the perimeter fence to ensure only legitimate applicants are allowed to queue, reducing the risk of protesters or attackers using fake letters.
 
-Hiring and compliance verification:
+**Visa Medical Clinics**
+**Intake Integrity:** Authorized clinics can verify the "Interview Date" before performing the mandatory medical exam, ensuring the medical report won't expire before the actual interview takes place.
 
-**Pre-Employment Screening:** Verify credentials during hiring process.
-
-**I-9 Compliance:** Verify work authorization and identity documents.
-
-**Credential Verification:** Confirm professional licenses and certifications.
-
-**Health Requirements:** Verify health-related documentation for workplace safety.
-
-**Background Checks:** Integrate verification into background check processes.
-
-**Government Agencies**
-
-Compliance enforcement and administration:
-
-**Inspection Verification:** Field agents verify permits and licenses at sites.
-
-**Enforcement Actions:** Confirm documentation before enforcement.
-
-**Benefit Eligibility:** Verify supporting documents for benefits administration.
-
-**Compliance Audits:** Audit documentation for regulatory compliance.
-
-**Interagency Coordination:** Share verified documents across agencies.
-
-**Healthcare Providers**
-
-Medical care and coordination:
-
-**Medical History:** Verify patient-provided medical records and test results.
-
-**Treatment Planning:** Confirm diagnostic results for treatment decisions.
-
-**Specialist Referrals:** Validate records when coordinating care.
-
-**Insurance Authorization:** Verify coverage and authorization documents.
-
-**Compliance Requirements:** Confirm vaccination and health screening records.
-
-**Educational Institutions**
-
-Admissions and enrollment:
-
-**Transfer Credits:** Verify transcripts for transfer credit evaluation.
-
-**Graduate Admissions:** Validate undergraduate credentials for graduate programs.
-
-**Professional Programs:** Confirm prerequisite credentials for professional schools.
-
-**International Students:** Verify foreign credentials for admissions and visa support.
-
-**Scholarship Awards:** Validate academic credentials for scholarship eligibility.
+**Airlines (International)**
+**Travel Authorization:** Verifying that a passenger traveling to a consulate city has a verified appointment, reducing the risk of "Refusal of Entry" at the destination.
 
 ## Verification Architecture
 
-**The Consular processing appointments Fraud Problem**
+**The "Embassy Gate" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Fabricated Notices:** Scammers creating fake appointment letters to get people into high-security zones or to sell "fake spots" in the interview queue to desperate applicants.
+- **Date Swapping:** Changing an old appointment date to "Today" to try and force an interview ahead of schedule.
+- **Derivative Fraud:** Adding extra "Family Members" to a real appointment letter to smuggle people into the mission.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**National Visa Center (NVC):** (Primary scheduler for immigrant visas).
+**U.S. Embassies & Consulates:** (Post-level scheduling for non-immigrant visas).
+**Third-Party Scheduling Vendors:** (e.g., USTravelDocs, AIS, CGI Federal).
 
-**USCIS:** U.S. Citizenship and Immigration Services for immigration documents.
+**Privacy Salt:** Critical. Case numbers are unique and sensitive. The hash must be salted to prevent "Guess-and-Check" searches of the entire visa backlog.
 
-**DOS:** Department of State for passports and consular documents.
+## Competition vs. CEAC Status Search
 
-**CBP:** Customs and Border Protection for entry/exit documentation.
+| Feature | OCR-to-Hash | CEAC Search (Public) | Paper Notice |
+| :--- | :--- | :--- | :--- |
+| **Integrity** | **Binds Identity.** Proves *Who* is scheduled. | **General.** Often just says "Ready" or "At NVC." | **Low.** Easily faked. |
+| **Speed** | **Instant.** Scan the paper at the gate. | **Slow.** Requires typing case # and solving difficult CAPTCHAs. | **Instant.** |
+| **Trust** | **Cryptographic.** Bound to `state.gov`. | **High.** Direct DB access. | **Medium.** |
+| **User Access** | **Restricted.** Only people with the paper can verify. | **Public.** Anyone with a case # can search. | **N/A.** |
 
-**Foreign Governments:** International authorities for foreign-issued documents.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-**Privacy Considerations**
-
-Sensitive personal information requires special handling:
-
-**Privacy Salt:** Random salt added to verification lines prevents hash enumeration attacks.
-
-**Minimum Disclosure:** Verification response reveals only necessary information.
-
-**Access Controls:** Verification endpoints implement appropriate access restrictions.
-
-**Audit Logging:** Verification attempts logged for security and compliance.
-
-## Rationale
-
-Prevents fake consular appointments. Domain binding verifies embassy/NVC. Immigrant visa interview proof. Case status verification. DS-260 processing documentation. Prevents appointment fraud.
+**Why OCR wins here:** The "Perimeter" reality. Security guards standing in the rain outside a consulate don't have the time or tools to solve CAPTCHAs on the CEAC website for every person in line. OCR-to-hash turns the **Physical Appointment Letter** into a high-speed "Access Token" that provides definitive proof of scheduling in seconds.

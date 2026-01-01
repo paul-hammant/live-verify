@@ -1,129 +1,124 @@
 ---
-title: "Aviation insurance policies and certificates"
+title: "Aviation Insurance Policies and Certificates"
 category: "Specialty Insurance"
 volume: "Small"
 retention: "Policy term + 10-20 years"
 slug: "aviation-insurance"
-tags: ["aviation", "insurance", "risk", "management"]
+tags: ["aviation", "aircraft", "insurance", "hull", "liability", "compliance", "faa"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Helvetica', Arial, sans-serif; border: 2px solid #002244; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+  <div style="background: #002244; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+    <div>
+      <div style="font-weight: bold; font-size: 1.2em;">GLOBAL AEROSPACE, INC.</div>
+      <div style="font-size: 0.8em;">Specialist Aviation Underwriters</div>
+    </div>
+    <div style="text-align: right;">
+      <div style="font-size: 0.8em;">Policy #: AV-998877-26</div>
+    </div>
+  </div>
+
+  <div style="padding: 30px;">
+    <h2 style="text-align: center; color: #002244; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Certificate of Insurance</h2>
+
+    <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
+      <p><strong>Insured:</strong> <span data-bracket="start" data-for="aviation">]</span>Cyberdyne Systems Charter, LLC<br>
+      <strong>Aircraft:</strong> 2024 Gulfstream G650ER<br>
+      <strong>Registration (N-Number):</strong> N101CS</p>
+
+      <table style="width: 100%; border-collapse: collapse; margin-top: 15px;">
+        <tr style="background: #f0f4f8; border-bottom: 2px solid #002244;">
+          <th style="text-align: left; padding: 8px;">Coverage Type</th>
+          <th style="text-align: right; padding: 8px;">Limit of Liability</th>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border-bottom: 1px solid #eee;">Aircraft Hull (All Risks)</td>
+          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 75,000,000</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border-bottom: 1px solid #eee;">Combined Single Limit (CSL)</td>
+          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 500,000,000</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border-bottom: 1px solid #eee;">Passenger Liability</td>
+          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">Included in CSL</td>
+        </tr>
+      </table>
+
+      <p style="margin-top: 20px;"><strong>Policy Period:</strong> January 1, 2026 to January 1, 2027</p>
+    </div>
+
+    <div style="margin-top: 30px; border: 1px solid #ccc; padding: 10px; font-size: 0.8em; color: #555; background: #fafafa;">
+      <strong>Note:</strong> This certificate is issued as a matter of information only and confers no rights upon the holder.
+    </div>
+
+    <div data-verify-line="aviation" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: Global Aerospace doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:global-aerospace.com/v/N101CS-2026 <span data-bracket="end" data-for="aviation">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Aircraft owner/operator, aircraft N-number, hull value, liability limits, insurer
+Insured name, aircraft registration (N-number), hull value, liability limits (CSL), policy effective/expiration dates, war risk inclusion, primary/excess carrier identification.
 
-**Policy Forms:** Different policy forms and endorsements may apply.
+**Document Types:**
+- **Certificate of Insurance (COI):** The standard "Proof of Insurance" for airports.
+- **Aircraft Hull & Liability Policy:** The full multi-page contract.
+- **War Risk Endorsement:** Critical for international flight into restricted zones.
+- **Hangar Keepers Liability:** For FBOs and maintenance shops.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (the Underwriter) and current policy status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-- **Cancelled** - Policy cancelled before expiration
-- **Non-Renewed** - Policy expired and not renewed
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **In Force** — Premium paid; policy active.
+- **Cancelled** — Policy terminated (often due to non-payment or safety violations).
+- **Expired** — Term ended; no coverage.
+- **Grounded** — Underwriter has restricted flight (e.g., due to maintenance lapse).
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Aircraft Owner/Operator** benefits from verification.
 
-**Proof of Coverage:** Verify coverage is active when needed for compliance or access.
+**Landing Rights:** Proving to foreign airport authorities (e.g., in London or Dubai) that the aircraft has the mandatory $500M+ liability coverage to land. Verification prevents grounding at the gate.
 
-**Claims Support:** Confirm policy details when filing claims.
+**Fueling/FBOs:** FBOs require proof of insurance before allowing a jet to park in their hangar. Verification speeds up the "Ramp Access" process.
 
-**Coverage Confirmation:** Verify coverage terms match expectations after purchase.
-
-**Third-Party Presentation:** Provide verified proof to landlords, lenders, or employers.
-
-**Renewal Verification:** Confirm renewal was processed and coverage continues.
+**Charter Customers:** Proving to high-net-worth clients that the charter company is fully insured to the highest industry standards.
 
 ## Third-Party Use
 
-**Regulators and Oversight Bodies**
+**Airport Authorities (CAA / DGAC)**
+**Ramp Inspections:** Civil aviation inspectors can instantly verify the "War Risk" and "Liability" status of a foreign aircraft by scanning the COI, preventing unsafe or under-insured flight.
 
-Regulatory compliance and oversight:
+**Lienholders (Banks)**
+**Asset Protection:** Private jet lenders (e.g., Credit Suisse, Citi) verify that the $75M hull value is accurately insured and that the bank is listed as "Loss Payee."
 
-**Systematic Hash Receipt:** Receive hashes in bulk for regulatory oversight.
-
-**Audit Verification:** Verify documents during routine or targeted audits.
-
-**Compliance Monitoring:** Monitor issuer compliance with documentation requirements.
-
-**Investigation Support:** Verify documents during fraud or compliance investigations.
-
-**Consumer Protection:** Verify consumer-facing documents for protection enforcement.
-
-**Lenders and Financial Institutions**
-
-Credit underwriting and risk assessment:
-
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
+**Charter Brokers**
+**Safety Vetting:** Brokers like NetJets or Wheels Up can automatically verify the insurance status of "off-fleet" aircraft before booking them for a client.
 
 ## Verification Architecture
 
-**The Aviation insurance policies and certificates Fraud Problem**
+**The "High-Stakes" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Coverage Inflation:** Inflating coverage limits or adding non-existent coverage
-- **Backdating:** Creating policies with false effective dates
-- **Ghost Policies:** Fabricated policies from non-existent insurers
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Liability Padding:** Editing a $10M liability policy to look like a $100M policy to meet international landing requirements.
+- **Cancellation Concealment:** Keeping a printed certificate after the policy was cancelled for non-payment (common in the small-aircraft/single-pilot world).
+- **Hull Inflation:** Claiming a $5M hull value for a $1M aircraft to profit from an intentional crash (insurance fraud).
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Aviation Underwriters:** (Global Aerospace, Allianz, AXA XL, Starr).
+**Specialist Brokers:** (Marsh, Aon, JLT).
 
-**Banks and Credit Unions:** Depository institutions for account documents.
+## Competition vs. FAA Registries
 
-**Investment Firms:** Brokerage and investment management firms.
+| Feature | OCR-to-Hash | FAA Civil Aviation Registry | Paper COI |
+| :--- | :--- | :--- | :--- |
+| **Granularity** | **High.** Shows insurance limits and dates. | **Zero.** FAA registry shows ownership but *not* insurance. | **High.** But untrusted. |
+| **Cross-Border** | **Universal.** Works for any N-number or G-registration. | **Siloed.** National registries don't talk. | **Manual.** |
+| **Freshness** | **Real-time.** Checks if the premium was paid today. | **Laggy.** Changes take weeks to update. | **Static.** |
 
-**Insurance Companies:** Insurers for policy and claims documents.
-
-**Accounting Firms:** CPAs and audit firms for financial statements.
-
-**System Integration**
-
-Insurance verification integrates with industry systems:
-
-**Policy Administration Systems:** Core insurance systems generate verification hashes at policy issuance.
-
-**ACORD Standards:** Insurance industry data standards could include verification fields.
-
-**State Insurance Databases:** Regulators maintain databases for systematic hash receipt.
-
-**Agent Portals:** Insurance agents access verification for client service.
-
-## Rationale
-
-Prevents fake aviation insurance. Domain binding verifies insurer. FAA compliance. Very high hull values ($500K-$100M+). Airport landing rights verification. Extremely high liability limits ($100M+ typical for commercial aircraft).
+**Why OCR wins here:** Aviation is a highly fragmented global industry. There is **no global database** of aircraft insurance. Every country requires proof of insurance, but they all rely on the "Persistent Paper" Certificate of Insurance. OCR-to-hash turns that global paper standard into a cryptographically trusted digital bridge.

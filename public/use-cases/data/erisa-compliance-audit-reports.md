@@ -1,127 +1,109 @@
 ---
-title: "ERISA compliance and audit reports"
+title: "ERISA Compliance and Audit Reports"
 category: "Actuarial & Insurance Mathematics"
 volume: "Very Small"
 retention: "7-10 years (DOL audit)"
 slug: "erisa-compliance-audit-reports"
-tags: ["erisa", "compliance", "audit", "reports", "actuarial", "insurance", "mathematics"]
+tags: ["erisa", "pension-audit", "dol-compliance", "form-5500", "actuarial-audit", "fiduciary-responsibility", "employee-benefits"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #333; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="text-align: right; margin-bottom: 30px;">
+    <div style="font-weight: bold; font-size: 1.2em;">MILLIMAN ACTUARIAL CONSULTING</div>
+    <div style="font-size: 0.85em; color: #666;">Certified ERISA Audit Group</div>
+  </div>
+
+  <h3 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; color: #000; border-bottom: 2px solid #000; padding-bottom: 10px;">ERISA Compliance Audit Report</h3>
+
+  <div style="font-size: 0.95em; line-height: 1.6; color: #333; margin-top: 20px;">
+    <p><strong>Plan Sponsor:</strong> <span data-bracket="start" data-for="erisa">]</span>Initech Employees' 401(k) Plan<br>
+    <strong>Plan Year Ending:</strong> December 31, 2025</p>
+
+    <div style="background: #fdfdfd; padding: 15px; border: 1px solid #eee; margin: 20px 0;">
+      <p><strong>Compliance Result:</strong> <span style="color: #2e7d32; font-weight: bold;">UNQUALIFIED OPINION</span></p>
+      <p><strong>Funding Status:</strong> 102.4% (Fully Funded)<br>
+      <strong>Audit Scope:</strong> Form 5500 Schedule H Compliance</p>
+    </div>
+
+    <p style="text-align: justify;">We have audited the financial statements of the Plan. In our opinion, the Plan was administered in accordance with the Employee Retirement Income Security Act of 1974 (ERISA).</p>
+  </div>
+
+  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+    <div style="width: 45%;">
+      <div style="border-top: 1px solid #000; padding-top: 5px; font-style: italic;">Robert Miller, EA, MSPA</div>
+      <div style="font-size: 0.8em; color: #777;">Enrolled Actuary #26-9982</div>
+    </div>
+    <div style="text-align: right; font-size: 0.8em; color: #777;">
+      Audit Ref: ERISA-2026-042
+    </div>
+  </div>
+
+  <div data-verify-line="erisa" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+      title="Demo only: Milliman doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:milliman.com/erisa/v/INITECH-2025 <span data-bracket="end" data-for="erisa">]</span>
+  </div>
+</div>
+
 ## Data Verified
 
-Plan actuary name, plan sponsor, compliance status, funding requirements, plan year
+Plan sponsor name, plan year, audit opinion type (Unqualified/Qualified/Adverse), funding percentage, Enrolled Actuary (EA) name/license, Form 5500 filing date, material findings summary, date of audit completion.
 
-**Multi-Page Handling:** Documents may span multiple pages. Per-page verification prevents page substitution attacks.
+**Document Types:**
+- **ERISA Audit Report:** Mandatory for large plans (>100 participants).
+- **Form 5500 Schedule SB/MB:** Signed by the Enrolled Actuary.
+- **Summary Annual Report (SAR):** Proving the plan is healthy to participants.
+- **Fiduciary Compliance Letter:** For trustee protection.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`milliman.com`, `mercer.com`) and current audit standing.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Verified** — Audit matches the firm's official record and peer-review.
+- **Superseded** — Replaced by a corrected filing (e.g., due to data error).
+- **In-Litigation** — Audit findings are being formally disputed by the sponsor.
+- **Invalid** — Signatory not authorized or license inactive at time of audit.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Plan Sponsor (Employer)** benefits from verification.
 
-**Record Verification:** Confirm financial documents match expectations.
+**DOL/IRS Audit Defense:** Proving to the Department of Labor (DOL) that the "Unqualified Opinion" on the 401(k) isn't a fake PDF created to hide a funding shortfall. A verified hash from a top actuarial firm provides instant "Zero-Fault" trust to federal auditors.
 
-**Tax Preparation:** Provide verified documentation for tax filing.
-
-**Audit Support:** Maintain verified records for potential audits.
-
-**Dispute Resolution:** Use verified documents to resolve discrepancies.
-
-**Loan Applications:** Present verified financial documentation to lenders.
+**Employee Trust:** Displaying the "Verified Healthy" status on the employee benefit portal to reassure workers that their retirement savings are being managed responsibly.
 
 ## Third-Party Use
 
-**Regulators and Oversight Bodies**
+**Department of Labor (EBSA)**
+**Enforcement:** Regulators can verify the authenticity of Form 5500 attachments across millions of plans. OCR-to-hash prevents "Opinion Shopping" where a company hides a "Qualified" audit and submits a "Fake Unqualified" one.
 
-Regulatory compliance and oversight:
+**Investment Fiduciaries**
+**Risk Monitoring:** Verifying the funding status of pension plans before making large-scale investment or acquisition decisions.
 
-**Systematic Hash Receipt:** Receive hashes in bulk for regulatory oversight.
-
-**Audit Verification:** Verify documents during routine or targeted audits.
-
-**Compliance Monitoring:** Monitor issuer compliance with documentation requirements.
-
-**Investigation Support:** Verify documents during fraud or compliance investigations.
-
-**Consumer Protection:** Verify consumer-facing documents for protection enforcement.
-
-**Lenders and Financial Institutions**
-
-Credit underwriting and risk assessment:
-
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
+**Plan Participants (Employees)**
+**Governance Transparency:** Ensuring that the annual "Healthy Plan" notice they receive in the mail is actually what the external auditor signed.
 
 ## Verification Architecture
 
-**The ERISA compliance and audit reports Fraud Problem**
+**The "Funding Smoothing" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Income Inflation:** Inflating income or assets on financial documents
-- **Photoshop Fraud:** Digital manipulation of statements and documents
-- **Shell Company Documents:** Documents from fake or shell entities
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Percent Tampering:** Editing a "92% Funded" status to read "102% Funded" to avoid mandatory federal catch-up payments.
+- **Opinion Editing:** Removing a "Significant Deficiency" footnote from the audit report before sending it to the DOL.
+- **Actuary Impersonation:** Creating a fake audit report on the letterhead of a reputable firm using the license number of an actuary who didn't actually perform the work.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Actuarial Consulting Firms:** (Milliman, Mercer, WTW).
+**Specialist CPA Firms:** (ERISA audit specialists).
+**Department of Labor:** (Hosting the official filing hashes).
 
-**Banks and Credit Unions:** Depository institutions for account documents.
+## Competition vs. Form 5500 Public Search (EFAST2)
 
-**Investment Firms:** Brokerage and investment management firms.
+| Feature | OCR-to-Hash | EFAST2 Search (DOL) | Scanned PDF |
+| :--- | :--- | :--- | :--- |
+| **Integrity** | **Binds the Text.** Protects the numbers. | **Data-Only.** Doesn't verify the actual paper doc. | **Zero.** Easily forged. |
+| **Trust Anchor** | **Domain-Bound.** Bound to the Auditor. | **Gov-Bound.** | **Visual.** |
+| **Speed** | **Instant.** Scan the paper at the board meeting. | **Slow.** Requires finding the EIN and downloading 50MB PDFs. | **Instant.** |
+| **Freshness** | **Real-time.** Shows if firm retracted opinion. | **Laggy.** Depends on annual filing cycles. | **Static.** |
 
-**Insurance Companies:** Insurers for policy and claims documents.
-
-**Accounting Firms:** CPAs and audit firms for financial statements.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Prevents fabricated ERISA compliance reports. Domain binding verifies enrolled actuary (EA) credentials. DOL/IRS audit trail for employee benefit plans. Multi-billion dollar pension plans. Participant protection under ERISA. Criminal penalties for false statements to DOL. Critical for qualified plans where ERISA compliance is legally mandated.
+**Why OCR wins here:** The "Audit Gap." Federal databases only know what was *filed*. If a company files a fake document, the database is wrong. OCR-to-hash links the verifier back to the **Auditor's Record**, ensuring the data matches the professional's actual findings, not just the company's filing.

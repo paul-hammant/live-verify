@@ -1,122 +1,109 @@
 ---
-title: "Airport lounge access confirmations"
+title: "Airport Lounge Access Confirmations"
 category: "Travel & Hospitality"
 volume: "Large"
 retention: "Visit + 1-3 years"
 slug: "airport-lounge-access-confirmations"
-tags: ["airport", "lounge", "access", "confirmations", "travel", "hospitality"]
+tags: ["airport", "lounge", "priority-pass", "amex", "receipt", "travel", "expense"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #222; color: #fff; padding: 0;">
+  <div style="background: #d4af37; color: #000; padding: 15px; text-align: center;">
+    <h3 style="margin: 0;">PRIORITY PASS</h3>
+    <div style="font-size: 0.9em;">VISIT CONFIRMATION</div>
+  </div>
+
+  <div style="padding: 30px;">
+    <div style="text-align: center; margin-bottom: 20px;">
+      <div style="font-size: 1.2em; font-weight: bold;">The Club at SJC A15</div>
+      <div style="color: #ccc;">San Jose Int'l (SJC)</div>
+    </div>
+
+    <div style="font-size: 0.9em; line-height: 1.6; color: #eee; border-top: 1px dashed #555; border-bottom: 1px dashed #555; padding: 15px 0;">
+      <p><strong>Member:</strong> <span data-bracket="start" data-for="lounge">]</span>JAMES BOND<br>
+      <strong>Card Number:</strong> ************1234</p>
+
+      <p><strong>Date:</strong> 10 OCT 2026<br>
+      <strong>Time In:</strong> 14:30 PM</p>
+
+      <p><strong>Guests:</strong> 2<br>
+      <strong>Visit ID:</strong> 9988776655</p>
+
+      <div style="margin-top: 15px; padding: 10px; background: #333; border-radius: 4px;">
+        <div style="display: flex; justify-content: space-between;">
+          <div>Guest Fee (x2):</div>
+          <div>$ 64.00</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; font-weight: bold; margin-top: 5px; color: #d4af37;">
+          <div>TOTAL CHARGED:</div>
+          <div>$ 64.00</div>
+        </div>
+      </div>
+    </div>
+
+    <div data-verify-line="lounge" style="border-top: 1px dashed #555; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #aaa; text-align: center;"
+      title="Demo only: Lounge network doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:prioritypass.com/visits/v/x9y8z7 <span data-bracket="end" data-for="lounge">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Member name, lounge location, access date/time, membership program/day pass
+Member name, lounge name/location, date/time of entry, number of guests, total fee charged, visit reference ID.
+
+**Document Types:**
+- **Visit Receipt:** Email/printout after entry.
+- **Day Pass Purchase:** Receipt for buying a one-time pass (e.g., United Club one-time pass).
+- **Membership Renewal:** Annual fee receipt.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`prioritypass.com`, `loungekey.com`, `amex.com`) and transaction status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Valid** — Visit confirmed and billed.
+- **Comped** — Visit verified but fee waived (important for expenses).
+- **Void** — Transaction cancelled/refunded.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Business Traveler** benefits from verification.
 
-**Document Authenticity:** Verify received documents are genuine and properly issued.
+**Expense Reimbursement:** Proving that the $64 charge was for "Client Entertainment" (guests brought into the lounge) rather than personal indulgence.
 
-**Third-Party Presentation:** Provide verified documentation when required.
-
-**Compliance Requirements:** Meet regulatory or contractual documentation requirements.
-
-**Record Keeping:** Maintain verified records for future reference or audits.
-
-**Dispute Prevention:** Establish authenticity to prevent future challenges.
+**Billing Disputes:** Proving you didn't enter the lounge if charged erroneously (e.g., "I was at the gate, here is my boarding pass scan time").
 
 ## Third-Party Use
 
-**Insurance Companies**
+**Employers / Finance Teams**
+**Policy Compliance:** Many companies pay for the employee's entry but *not* for guests (unless they are clients). A verified receipt showing "Guests: 2" allows Finance to ask "Who were these guests?" and verify client meetings.
 
-Underwriting and claims processing:
+**Tax Authorities**
+**Deductibility:** Lounge access can be a business expense, but "lavish or extravagant" entertainment is scrutinized. Verified receipts provide the audit trail needed.
 
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Customs and Border Authorities**
-
-International trade compliance:
-
-**Import Clearance:** Verify shipping documents for customs clearance.
-
-**Duty Assessment:** Validate commercial invoices and declarations.
-
-**Trade Compliance:** Confirm certificates of origin and trade documents.
-
-**Security Screening:** Verify cargo documentation for security.
-
-**Export Controls:** Validate export documentation and licenses.
-
-**Freight Forwarders and Carriers**
-
-Logistics and transportation:
-
-**Shipment Acceptance:** Verify documents before accepting cargo.
-
-**Carrier Handoffs:** Validate documentation at transfer points.
-
-**Liability Determination:** Reference verified documents for claims.
-
-**Route Planning:** Confirm documentation for transit requirements.
-
-**Delivery Confirmation:** Verify documents at final delivery.
+**Project Clients**
+**Re-billing:** If a consultant charges lounge access to a client project, the client demands proof. Verified receipts prevent "padding" the invoice with personal relaxation costs.
 
 ## Verification Architecture
 
-**The Airport lounge access confirmations Fraud Problem**
+**The "Phantom Guest" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Padding Expenses:** Changing "Guests: 0" to "Guests: 2" on a PDF receipt to claim an extra $64 reimbursement.
+- **Fake Receipts:** Using a template to create a lounge receipt for a trip where the traveler actually sat at the gate.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Networks:** (Priority Pass, LoungeKey, DragonPass)
+**Airlines:** (Admirals Club, SkyClub, United Club)
+**Credit Cards:** (Amex Centurion)
 
-**Primary Issuers:** Organizations with direct authority to issue these documents.
+## Competition vs. Credit Card Statements
 
-**Licensed Professionals:** Professionals authorized to create and certify documents.
+| Feature | OCR-to-Hash | Credit Card Statement |
+| :--- | :--- | :--- |
+| **Guest Detail** | **High.** Shows "Guests: 2". | **None.** Just shows "$64.00". |
+| **Location** | **Exact.** "The Club at SJC". | **Vague.** "PRIORITY PASS HONG KONG". |
+| **Time** | **Exact.** Proves you were there during the delay. | **Date Only.** |
 
-**Government Agencies:** Federal, state, or local agencies with jurisdiction.
-
-**Industry Bodies:** Trade associations and professional organizations.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Domain binding verifies lounge operator (Priority Pass, LoungeKey, airline lounge). Prevents fake lounge access receipts. Membership verification. Day pass purchase documentation.
+**Why OCR wins here:** Context. A credit card charge is just a number. A verified lounge receipt proves *who* was with you and *where* you were, turning a generic charge into a justifiable business expense.

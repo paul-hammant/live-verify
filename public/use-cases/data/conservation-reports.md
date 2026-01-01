@@ -1,96 +1,113 @@
 ---
-title: "Conservation reports and restoration history"
+title: "Conservation Reports and Restoration History"
 category: "Art & Collectibles"
 volume: "Very Small"
 retention: "Permanent (artwork care)"
 slug: "conservation-reports"
-tags: ["conservation", "reports", "collectibles"]
+tags: ["art-conservation", "restoration", "condition-report", "provenance", "museum-standards", "art-history"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #546e7a; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="background: #546e7a; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+    <div>
+      <div style="font-weight: bold; font-size: 1.2em;">GETTY CONSERVATION INSTITUTE</div>
+      <div style="font-size: 0.8em;">Science & Analysis Department</div>
+    </div>
+    <div style="text-align: right;">
+      <div style="font-size: 0.8em;">Project #: GCI-2026-992</div>
+    </div>
+  </div>
+
+  <div style="padding: 30px;">
+    <h3 style="margin-top: 0; color: #546e7a; border-bottom: 2px solid #546e7a; padding-bottom: 5px;">CONSERVATION TREATMENT SUMMARY</h3>
+
+    <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
+      <p><strong>Object:</strong> <span data-bracket="start" data-for="conserve">]</span>Rembrandt van Rijn, <em>The Night Watch</em> (1642)<br>
+      <strong>Owner:</strong> Rijksmuseum, Amsterdam</p>
+
+      <div style="background: #fdfdfd; border: 1px solid #eee; padding: 15px; margin: 15px 0;">
+        <p><strong>Treatment Performed:</strong> Selective varnish removal and structural consolidation of the lower left quadrant.</p>
+        <p><strong>Materials Used:</strong> Regalrez 1094, Shellsol T, Paraloid B-72.</p>
+        <p><strong>Date Completed:</strong> March 15, 2026</p>
+      </div>
+
+      <p style="font-size: 0.85em;"><strong>Condition Note:</strong> Varnish bloom successfully reduced. Surface pH stabilized at 6.8. Structural cracks in the impasto consolidated with synthetic resin.</p>
+    </div>
+
+    <div style="margin-top: 20px; display: flex; justify-content: space-between; align-items: flex-end;">
+      <div style="border-top: 1px solid #000; width: 200px; padding-top: 5px; font-style: italic; font-size: 0.85em;">Lead Conservator: Dr. Elena Rossi</div>
+      <div style="text-align: right; font-size: 0.8em; color: #777;">
+        Report ID: RC-998877
+      </div>
+    </div>
+
+    <div data-verify-line="conserve" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+      title="Demo only: Getty Institute doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:getty.edu/conservation/v/GCI992 <span data-bracket="end" data-for="conserve">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Conservator name, owner, treatment details, facility
+Object title/artist, owner name, detailed treatment description, chemical materials used (solvents/resins), completion date, lead conservator credentials, laboratory/institution ID, condition status post-treatment.
 
-**Multi-Page Handling:** Documents may span multiple pages. Per-page verification prevents page substitution attacks.
+**Document Types:**
+- **Treatment Summary:** High-level proof of restoration.
+- **Condition Report:** Pre-loan assessment for museum travel.
+- **Scientific Analysis:** (e.g., X-ray, Infrared Reflectography findings).
+- **Maintenance Log:** Annual dusting/environmental checks.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`getty.edu`, `rijksmuseum.nl`) and the report standing.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Verified** — Report matches the institution's official archival record.
+- **Superseded** — A more recent treatment has been performed (essential for safety).
+- **In-Progress** — Treatment not yet finalized.
+- **Alert** — Potential damage reported post-treatment.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Museum Curator** or **Art Collector** benefits from verification.
 
-**Document Authenticity:** Verify received documents are genuine and properly issued.
+**Loan Logistics:** Proving to a borrowing museum that a masterpiece is "Verified Fit for Travel" based on a recent conservation report. This speeds up the insurance underwriting for the loan.
 
-**Third-Party Presentation:** Provide verified documentation when required.
-
-**Compliance Requirements:** Meet regulatory or contractual documentation requirements.
-
-**Record Keeping:** Maintain verified records for future reference or audits.
-
-**Dispute Prevention:** Establish authenticity to prevent future challenges.
+**Resale Transparency:** A private collector can prove that a painting hasn't been "Over-Restored" (which ruins value), by showing a verified report from a reputable independent conservator.
 
 ## Third-Party Use
 
-**Auditors and Compliance Officers**
+**Fine Art Insurers**
+**Liability Underwriting:** Insurers verify the "Restoration History" before covering high-value works. A painting with "Hidden Structural Cracks" is a massive risk. OCR-to-hash ensures the report provided by the owner matches the conservator's true findings.
 
-Internal and external audits:
+**Art Historians / Scholars**
+**Archival Research:** Instantly verifying that a digitized conservation report from 1950 is an authentic record of what was done to the painting, aiding in the study of artist techniques.
 
-**Financial Audits:** Verify documents during financial statement audits.
-
-**Compliance Audits:** Validate documentation for regulatory compliance.
-
-**Internal Controls:** Test document authenticity in control assessments.
-
-**Fraud Investigations:** Verify documents in fraud examinations.
-
-**Third-Party Audits:** Validate vendor and partner documentation.
+**Auction Houses**
+**Vetting:** Verifying that the "Condition Report" in the sale catalog matches the expert findings, reducing the house's liability for undisclosed repairs.
 
 ## Verification Architecture
 
-**The Conservation reports and restoration history Fraud Problem**
+**The "Over-Restoration" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Damage Concealment:** Editing a report to remove mention of a "Repaired Tear" or "Extensive Over-painting" to deceive a buyer.
+- **Date Alteration:** Changing a 10-year-old condition report to look like it was done last month to hide recent environmental damage (mold/bloom).
+- **Expert Impersonation:** Creating a fake report on the letterhead of a famous museum conservation lab.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Museum Conservation Labs:** (The Getty, The Met, The British Museum).
+**Private Conservation Firms:** (AIC / ICON members).
+**Art Institutes:** (Handling specialized material science).
 
-**Primary Issuers:** Organizations with direct authority to issue these documents.
+## Competition vs. Museum Management Systems (TMS)
 
-**Licensed Professionals:** Professionals authorized to create and certify documents.
+| Feature | OCR-to-Hash | TMS (The Museum System) | Scanned PDF |
+| :--- | :--- | :--- | :--- |
+| **Trust Anchor** | **Domain-Bound.** Trust the Institution. | **System-Bound.** Trust the DB admin. | **Zero.** Easily forged. |
+| **User Access** | **Universal.** Share with any insurer/buyer. | **Zero.** External parties never get TMS logins. | **Universal.** |
+| **Integrity** | **Cryptographic.** Binds every detail. | **High.** Internal only. | **Vulnerable.** |
+| **Permanence** | **Archival.** Text is permanent. | **Ephemeral.** Databases get migrated/lost. | **Vulnerable.** |
 
-**Government Agencies:** Federal, state, or local agencies with jurisdiction.
-
-**Industry Bodies:** Trade associations and professional organizations.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Domain binding verifies conservator credentials. Tamper-evident treatment history. Technical reports suitable for OCR. Permanent artwork care records.
+**Why OCR wins here:** The "External Trust" problem. A museum's internal database (TMS) is great for them, but useless for the **Rest of the World**. When a painting travels or is sold, the trust must move with it. OCR-to-hash turns the **Static PDF Report** into a cryptographically trusted artifact that anyone can verify without a TMS password.

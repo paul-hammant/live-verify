@@ -1,150 +1,112 @@
 ---
-title: "Builder warranties (new construction)"
+title: "Builder Warranties (New Construction)"
 category: "Real Estate & Property"
 volume: "Very Small"
 retention: "10-20 years (warranty period)"
 slug: "builder-warranties"
-tags: ["builder", "warranties", "real", "estate", "property"]
+tags: ["real-estate", "home-warranty", "new-construction", "structural-warranty", "builder", "homeowner"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 4px solid #1a365d; background: #fff; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+  <div style="text-align: center; border-bottom: 2px solid #1a365d; padding-bottom: 20px; margin-bottom: 25px;">
+    <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 2px; color: #1a365d;">2-10 HOME BUYERS WARRANTY</div>
+    <div style="font-size: 0.85em; color: #666; margin-top: 5px;">THE NATION'S LEADING STRUCTURAL WARRANTY</div>
+  </div>
+
+  <h3 style="text-align: center; text-transform: uppercase; margin-bottom: 20px; color: #1a365d;">Certificate of Warranty Coverage</h3>
+
+  <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+    <p>This certifies that the property located at:</p>
+    <p style="text-align: center; font-size: 1.1em; font-weight: bold;">
+      <span data-bracket="start" data-for="warranty">]</span>123 NEW HOUSE LANE, AUSTIN, TX 78701
+    </p>
+
+    <div style="margin: 20px 0; border: 1px solid #ccc; padding: 15px; background: #f9f9f9;">
+      <p><strong>Builder:</strong> Toll Brothers, Inc. (Reg #9922)<br>
+      <strong>Warranty Number:</strong> 210-998877-TX</p>
+      
+      <p><strong>Coverage Periods:</strong><br>
+      1-Year: Workmanship & Materials<br>
+      2-Year: Systems (Plumbing, Electrical, HVAC)<br>
+      10-Year: Structural Elements</p>
+    </div>
+
+    <p><strong>Warranty Effective Date:</strong> March 15, 2026</p>
+  </div>
+
+  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+    <div>
+      <div style="width: 80px; height: 80px; border: 2px solid #1a365d; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; color: #1a365d; font-weight: bold; text-align: center;">OFFICIAL<br>COVERAGE<br>SEAL</div>
+    </div>
+    <div style="text-align: right; font-size: 0.8em; color: #777;">
+      Administered by HBW Services, LLC
+    </div>
+  </div>
+
+  <div data-verify-line="warranty" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+      title="Demo only: 2-10 HBW doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:2-10.com/warranty/v/998877 <span data-bracket="end" data-for="warranty">]</span>
+  </div>
+</div>
+
 ## Data Verified
 
-Builder name, homeowner, property address, warranty terms, coverage
+Property address, homeowner name (initial), builder name/registration, warranty certificate number, coverage types (Workmanship/Systems/Structural), effective date, expiration date, issuing warranty company.
+
+**Document Types:**
+- **Certificate of Warranty:** The main proof of coverage.
+- **Maintenance Log:** Proving mandatory homeowner maintenance was performed (linked hash).
+- **Claim Approval Notice:** Confirming a structural fix is authorized.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`2-10.com`, `tollbrothers.com`) and current warranty standing.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Active** — Property is currently under warranty.
+- **Transferred** — Warranty has been moved to a second owner (Resale).
+- **Expired** — Coverage period has ended.
+- **In-Litigation** — Warranty disputed in court.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Homeowner** benefits from verification.
 
-**Ownership Verification:** Confirm property documents are authentic.
+**Resale Value:** When selling a 5-year-old home, the owner can provide a "Verified Structural Warranty" to the buyer. This proves that the remaining 5 years of the 10-year structural coverage is legitimate and transferable, increasing the home's value.
 
-**Transaction Support:** Provide verified documents for sales, refinancing, or transfers.
-
-**Title Insurance:** Supply verified documentation for title insurance requirements.
-
-**Legal Protection:** Maintain verified records for potential disputes.
-
-**Record Accuracy:** Verify recorded information matches expectations.
+**Contractor Disputes:** If a pipe bursts in year 2, the homeowner can verify their "Systems Coverage" before calling a plumber, ensuring the builder is held responsible for the cost.
 
 ## Third-Party Use
 
-**Lenders and Financial Institutions**
+**Prospective Home Buyers**
+**Due Diligence:** Before signing a contract on a resale home, the buyer can scan the warranty certificate provided by the seller. Verification ensures the builder didn't quietly cancel the warranty due to a prior dispute or non-payment.
 
-Credit underwriting and risk assessment:
+**Real Estate Agents**
+**Listing Accuracy:** Ensuring that the "Warranty Included" claim in the MLS listing is backed by a verified cryptographic proof.
 
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Insurance Companies**
-
-Underwriting and claims processing:
-
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
-
-**Government Agencies**
-
-Compliance enforcement and administration:
-
-**Inspection Verification:** Field agents verify permits and licenses at sites.
-
-**Enforcement Actions:** Confirm documentation before enforcement.
-
-**Benefit Eligibility:** Verify supporting documents for benefits administration.
-
-**Compliance Audits:** Audit documentation for regulatory compliance.
-
-**Interagency Coordination:** Share verified documents across agencies.
-
-**Real Estate Professionals**
-
-Property transactions and due diligence:
-
-**Purchase Due Diligence:** Verify property documents during transactions.
-
-**Listing Preparation:** Confirm permits and documentation for listings.
-
-**Disclosure Compliance:** Validate required disclosures and permits.
-
-**Title Research:** Verify property documents for title clearance.
-
-**Appraisal Support:** Confirm documented improvements and permits.
+**Mortgage Lenders**
+**Risk Management:** Lenders for new construction often require proof of a 10-year structural warranty before funding. Verification provides the "Final Truth" needed for the closing package.
 
 ## Verification Architecture
 
-**The Builder warranties (new construction) Fraud Problem**
+**The "Ghost Warranty" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Builder Insolvency:** A builder who has gone bankrupt might still provide unbacked "Warranty" papers to close a sale. Verification shows the warranty isn't active in the insurer's database.
+- **Term Alteration:** Editing a "1-year" warranty PDF to read "10-years" to hide structural defects from a buyer.
+- **Address Swapping:** Taking a valid warranty for a high-quality build and editing the address to cover a poor-quality "flip" house.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Warranty Administrators:** (2-10 Home Buyers Warranty, Residential Warranty Company).
+**National Builders:** (Toll Brothers, Lennar, D.R. Horton).
+**Insurance Carriers:** (Who backstop the builder's promises).
 
-**Government Entities:** Counties, cities, and special districts maintain property records.
+## Competition vs. Home Inspection Reports
 
-**Title Companies:** Title insurers and escrow companies for transaction documents.
+| Feature | OCR-to-Hash | Home Inspection (Visual) | Builder Website Portal |
+| :--- | :--- | :--- | :--- |
+| **Integrity** | **Cryptographic.** Binds the *Legal Promise*. | **Subjective.** Relies on what the inspector can *see*. | **Hard.** Requires login/password. |
+| **Duration** | **10-20 Years.** Matches the legal statute. | **Snapshot.** Only valid for the day of inspection. | **Ephemeral.** Portals change. |
+| **Transfer** | **Easy.** Proves transferability to next owner. | **N/A.** | **Hard.** New owner has no login. |
 
-**Lending Institutions:** Banks and mortgage companies for loan documents.
-
-**Appraisal Firms:** Licensed appraisers for property valuations.
-
-**System Integration**
-
-Real estate verification connects to property systems:
-
-**Recording Systems:** County recorder systems for property document registration.
-
-**MLS Integration:** Multiple listing services for property documentation.
-
-**Title Plants:** Title companies maintain verification for title searches.
-
-**E-Recording:** Electronic recording systems generate verification at recording.
-
-## Rationale
-
-Prevents forged builder warranties. Domain binding verifies builder/warranty company. Long warranty periods (10-year structural). Defect claim verification. Transferable to subsequent owners.
+**Why OCR wins here:** Persistence. A builder warranty is a "Long-Tail" financial asset. The person who needs to verify it in year 9 (the second owner) is almost never the person who received it in year 1. OCR-to-hash turns the persistent piece of paper in the "Homeowner's Binder" into a real-time link to the insurer, regardless of who currently owns the house.

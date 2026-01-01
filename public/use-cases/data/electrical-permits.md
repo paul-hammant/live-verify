@@ -1,157 +1,117 @@
 ---
-title: "Electrical permits and certificates"
+title: "Electrical Permits and Certificates"
 category: "Construction & Property Permits"
 volume: "Medium"
 retention: "Permanent (building records)"
 slug: "electrical-permits"
-tags: ["electrical", "permits", "construction", "property"]
+tags: ["construction", "electrical-permit", "fire-safety", "licensed-electrician", "city-inspection", "nec-compliance"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 3px solid #ffeb3b; background: #fffde7; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="background: #ffeb3b; color: #000; padding: 15px; text-align: center;">
+    <h2 style="margin: 0; text-transform: uppercase;">CITY OF PHOENIX</h2>
+    <div style="font-size: 0.9em; font-weight: bold;">PLANNING & DEVELOPMENT DEPT</div>
+  </div>
+
+  <div style="padding: 25px;">
+    <div style="text-align: center; border-bottom: 2px solid #ffeb3b; padding-bottom: 10px; margin-bottom: 20px;">
+      <h3 style="margin: 0; color: #333;">ELECTRICAL PERMIT</h3>
+      <div style="font-size: 1.2em; font-weight: bold; margin-top: 5px;">Permit #: ELE-2026-99228</div>
+    </div>
+
+    <div style="font-size: 0.95em; line-height: 1.5; color: #333;">
+      <p><strong>Job Address:</strong> <span data-bracket="start" data-for="electric">]</span>123 Desert Lane, Phoenix, AZ 85001<br>
+      <strong>Owner:</strong> Mike Miller</p>
+
+      <p><strong>Work Scope:</strong> Main Panel Upgrade (200 Amp), New Circuit for EV Charger, Solar Inverter Tie-in.</p>
+
+      <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr>
+          <td style="border: 1px solid #fdd835; padding: 8px;"><strong>Electrician:</strong></td>
+          <td style="border: 1px solid #fdd835; padding: 8px;">Sparky's Power, LLC (Lic #9982)</td>
+        </tr>
+        <tr>
+          <td style="border: 1px solid #fdd835; padding: 8px;"><strong>Status:</strong></td>
+          <td style="border: 1px solid #fdd835; padding: 8px; font-weight: bold; color: #2e7d32;">ROUGH-IN PASSED</td>
+        </tr>
+        <tr>
+          <td style="border: 1px solid #fdd835; padding: 8px;"><strong>Issued:</strong></td>
+          <td style="border: 1px solid #fdd835; padding: 8px;">March 15, 2026</td>
+        </tr>
+      </table>
+
+      <p style="font-size: 0.8em; font-style: italic; color: #555;">
+        MUST BE CONSPICUOUSLY POSTED NEAR THE SERVICE ENTRANCE.
+      </p>
+    </div>
+
+    <div data-verify-line="electric" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: City of Phoenix doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:phoenix.gov/permits/v/ELE99228 <span data-bracket="end" data-for="electric">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Licensed electrician, property address, electrical work scope, inspection
+Job address, permit number, contractor name/license, specific work scope (e.g., "Main Panel Upgrade"), amperage rating, solar/EV inclusion, inspection status (Rough/Final), date of issuance, city inspector ID.
 
-**Permit Types:** Various permit subtypes may exist depending on jurisdiction and specific use.
+**Document Types:**
+- **Electrical Permit Card:** Posted at the main panel.
+- **Certificate of Final Inspection:** Proving the work is safe and code-compliant.
+- **Solar Installation Clearance:** Required for utility grid tie-in.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`phoenix.gov`, `ladbs.org`) and current safety status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-- **Suspended** - Permit temporarily suspended
-- **Pending** - Permit application pending approval
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Active** — Work authorized; permit current.
+- **Rough-In Passed** — Wiring verified safe before walls are closed.
+- **Final Passed** — Project complete and safe for energized use.
+- **Expired** — Permit lapsed; work must stop.
+- **Red Tagged** — **ALERT:** Unsafe wiring found; power may be disconnected.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Homeowner** or **Business Owner** benefits from verification.
 
-**Legitimacy Confirmation:** After obtaining permit, verify it was properly issued and recorded.
+**Fire Safety Assurance:** Proving to themselves (and their family) that the electrician they hired actually pulled a permit and that the city inspector has verified the work as non-combustible. Scanning the hash on the panel gives the owner direct confirmation from the city.
 
-**Compliance Display:** Maintain verified permit for posting requirements.
-
-**Scope Verification:** Confirm permitted activities match intended use.
-
-**Expiration Tracking:** Monitor permit status to avoid lapses.
-
-**Record Keeping:** Maintain verified documentation for audits and compliance.
+**Home Sale:** Providing verified proof of electrical permits to a buyer during a home inspection, proving that the "DIY Solar" or "Basement Remodel" was legally done and inspected.
 
 ## Third-Party Use
 
-**Lenders and Financial Institutions**
+**Electrical Inspectors**
+**Field Integrity:** An inspector arriving for a "Final" can scan the card to see the verified "Rough-In Pass" from their colleague. This prevents "Paper Forgery" where a contractor fakes a rough-in signature to hide unsafe wiring behind drywall.
 
-Credit underwriting and risk assessment:
+**Fire Investigators**
+**Post-Fire Forensic:** If an electrical fire occurs, investigators scan the panel permit. Verification proves if the circuit that started the fire was ever officially permitted or if it was an illegal, unverified addition.
 
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Insurance Companies**
-
-Underwriting and claims processing:
-
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
-
-**Government Agencies**
-
-Compliance enforcement and administration:
-
-**Inspection Verification:** Field agents verify permits and licenses at sites.
-
-**Enforcement Actions:** Confirm documentation before enforcement.
-
-**Benefit Eligibility:** Verify supporting documents for benefits administration.
-
-**Compliance Audits:** Audit documentation for regulatory compliance.
-
-**Interagency Coordination:** Share verified documents across agencies.
-
-**Real Estate Professionals**
-
-Property transactions and due diligence:
-
-**Purchase Due Diligence:** Verify property documents during transactions.
-
-**Listing Preparation:** Confirm permits and documentation for listings.
-
-**Disclosure Compliance:** Validate required disclosures and permits.
-
-**Title Research:** Verify property documents for title clearance.
-
-**Appraisal Support:** Confirm documented improvements and permits.
+**Utility Companies (APS / SRP)**
+**Service Connection:** Verifying the "Final Pass" before "Turning on the juice" for a new solar array or main panel upgrade.
 
 ## Verification Architecture
 
-**The Electrical permits and certificates Fraud Problem**
+**The "Bootleg Wiring" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Permit Sharing:** Using one property's permit for work at another location
-- **Scope Expansion:** Expanding permitted activities beyond authorization
-- **Contractor Fraud:** Claiming permits that were never obtained
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Signature Forgery:** Contractors using a fake rubber stamp to "sign off" on their own inspections on the paper permit card.
+- **Scope Creep:** Pulling a permit for "1 New Outlet" but using the paper to hide a full, uninspected kitchen rewire.
+- **Expired Licenses:** Shady electricians using a valid contractor's license number on a fake permit PDF.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Municipal Building Departments.**
+**State Electrical Boards.**
+**Electrical Cooperatives / Utilities.**
 
-**Government Entities:** Counties, cities, and special districts maintain property records.
+## Competition vs. Permit Search Portals
 
-**Title Companies:** Title insurers and escrow companies for transaction documents.
+| Feature | OCR-to-Hash | City Online Portal | Scanned PDF Permit |
+| :--- | :--- | :--- | :--- |
+| **Field Access** | **Instant.** Scan the card on the wall. | **Difficult.** Requires navigating complex municipal UIs on a phone. | **Instant.** |
+| **Trust Anchor** | **Domain-Bound.** Bound to the City. | **Database.** High trust but manual. | **Zero.** Easily forged. |
+| **Integrity** | **Binds Work Scope.** Protects the details. | **General.** Often just says "Active" without the amperage/scope. | **Vulnerable.** |
+| **Hardware** | **Universal.** Any phone camera. | **Technical.** Requires laptop/stable 5G. | **Visual.** |
 
-**Lending Institutions:** Banks and mortgage companies for loan documents.
-
-**Appraisal Firms:** Licensed appraisers for property valuations.
-
-**System Integration**
-
-Real estate verification connects to property systems:
-
-**Recording Systems:** County recorder systems for property document registration.
-
-**MLS Integration:** Multiple listing services for property documentation.
-
-**Title Plants:** Title companies maintain verification for title searches.
-
-**E-Recording:** Electronic recording systems generate verification at recording.
-
-## Rationale
-
-Prevents unlicensed electrical work. Domain binding verifies electrical inspector/building department. Fire safety compliance. Prevents electrical fire liability. Home sale disclosure.
+**Why OCR wins here:** The "Panel Door" reality. Electrical permits live on the inside of cabinet doors in dark garages. OCR-to-hash turns that **Static Piece of Paper** into a live safety dashboard, allowing homeowners and inspectors to verify electrical integrity at the exact point of risk.

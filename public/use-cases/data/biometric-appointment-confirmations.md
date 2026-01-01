@@ -1,150 +1,109 @@
 ---
-title: "Biometric appointment confirmations"
+title: "Biometric Appointment Confirmations"
 category: "Immigration & Visa Documents"
 volume: "Medium"
 retention: "Appointment + 5 years"
 slug: "biometric-appointment-confirmations"
-tags: ["biometric", "appointment", "confirmations", "immigration", "visa", "documents"]
+tags: ["immigration", "visa", "uscis", "biometrics", "appointment", "asc"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0;">
+  <div style="background: #f4f4f4; padding: 15px; border-bottom: 1px solid #ccc; display: flex; align-items: center;">
+    <div style="width: 40px; height: 40px; background: #999; border-radius: 50%; margin-right: 15px; display: flex; align-items: center; justify-content: center; font-size: 0.7em; color: #fff;">USCIS</div>
+    <div>
+      <div style="font-weight: bold; font-size: 1.1em;">Department of Homeland Security</div>
+      <div style="font-size: 0.8em;">U.S. Citizenship and Immigration Services</div>
+    </div>
+  </div>
+
+  <div style="padding: 25px;">
+    <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+      <div style="border: 1px solid #000; padding: 5px 10px; font-weight: bold;">I-797C</div>
+      <div style="text-align: right; font-family: monospace;">Case #: IOE9988776655</div>
+    </div>
+
+    <h2 style="text-align: center; font-size: 1.2em; margin-bottom: 20px; text-transform: uppercase;">ASC APPOINTMENT NOTICE</h2>
+
+    <div style="font-size: 0.95em; line-height: 1.5; color: #333;">
+      <p><strong>Applicant:</strong> <span data-bracket="start" data-for="bio">]</span>SARAH JANE SMITH</p>
+      
+      <div style="background: #f9f9f9; border: 1px solid #eee; padding: 15px; margin: 15px 0;">
+        <p><strong>Date of Appointment:</strong> March 15, 2026<br>
+        <strong>Time of Appointment:</strong> 10:00 AM</p>
+        <p><strong>Location:</strong><br>
+        Application Support Center (ASC)<br>
+        123 Main St, Suite 400, San Francisco, CA</p>
+      </div>
+
+      <p style="font-size: 0.85em;">PLEASE BRING THIS ENTIRE NOTICE AND VALID PHOTO ID TO YOUR APPOINTMENT.</p>
+    </div>
+
+    <div data-verify-line="bio" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: USCIS doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:uscis.gov/asc/v/IOE9988776655 <span data-bracket="end" data-for="bio">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Full name, case number, appointment date/time/location, ASC location
+Applicant name, Case Receipt Number, Appointment Date/Time, ASC (Application Support Center) location ID, form type (e.g., I-485, I-765), date of issuance.
 
-**Privacy Salt:** Sensitive personal information requires random salt in verification lines to prevent hash enumeration.
+**Document Types:**
+- **I-797C Notice of Action:** The standard appointment letter.
+- **Rescheduling Confirmation:** Proving a new date was authorized.
+- **ASC Attendance Stamp:** (Digital equivalent) proving fingerprints were taken.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`uscis.gov`) and the appointment standing.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Scheduled** — Appointment is current and valid.
+- **Completed** — Biometrics have been captured for this notice.
+- **Rescheduled** — This notice is void; a new date has been set.
+- **Cancelled** — The underlying application was denied or withdrawn.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Applicant** benefits from verification.
 
-**Status Confirmation:** Verify immigration documents after receipt from authorities.
+**Entrance Access:** Proving to the security guard at the ASC building that the paper notice is real and the appointment is valid for *today*. Prevents being turned away due to a "suspected fake" letter or a typo in the guard's manual list.
 
-**Employment Authorization:** Confirm work authorization for I-9 compliance.
-
-**Travel Planning:** Verify travel document validity before international trips.
-
-**Status Changes:** Confirm application outcomes and new status.
-
-**Family Petitions:** Provide verified status for dependent applications.
+**Work Authorization:** Proving to an employer that their "Biometrics are Scheduled," which is a key milestone in the Green Card/EAD process, showing the case is progressing.
 
 ## Third-Party Use
 
-**Employers**
+**ASC Security / Staff**
+**Entry Control:** ASCs are high-security facilities. Guards can instantly verify notices at the door to prevent unauthorized entry or people trying to "skip the line" with fake appointments.
 
-Hiring and compliance verification:
+**Attorneys / Law Firms**
+**Case Tracking:** Firms handling thousands of cases can scan the client's notice to instantly ingest the date into their practice management software, ensuring no deadlines are missed.
 
-**Pre-Employment Screening:** Verify credentials during hiring process.
-
-**I-9 Compliance:** Verify work authorization and identity documents.
-
-**Credential Verification:** Confirm professional licenses and certifications.
-
-**Health Requirements:** Verify health-related documentation for workplace safety.
-
-**Background Checks:** Integrate verification into background check processes.
-
-**Government Agencies**
-
-Compliance enforcement and administration:
-
-**Inspection Verification:** Field agents verify permits and licenses at sites.
-
-**Enforcement Actions:** Confirm documentation before enforcement.
-
-**Benefit Eligibility:** Verify supporting documents for benefits administration.
-
-**Compliance Audits:** Audit documentation for regulatory compliance.
-
-**Interagency Coordination:** Share verified documents across agencies.
-
-**Healthcare Providers**
-
-Medical care and coordination:
-
-**Medical History:** Verify patient-provided medical records and test results.
-
-**Treatment Planning:** Confirm diagnostic results for treatment decisions.
-
-**Specialist Referrals:** Validate records when coordinating care.
-
-**Insurance Authorization:** Verify coverage and authorization documents.
-
-**Compliance Requirements:** Confirm vaccination and health screening records.
-
-**Educational Institutions**
-
-Admissions and enrollment:
-
-**Transfer Credits:** Verify transcripts for transfer credit evaluation.
-
-**Graduate Admissions:** Validate undergraduate credentials for graduate programs.
-
-**Professional Programs:** Confirm prerequisite credentials for professional schools.
-
-**International Students:** Verify foreign credentials for admissions and visa support.
-
-**Scholarship Awards:** Validate academic credentials for scholarship eligibility.
+**Immigration Checkpoints**
+**Proof of Progress:** If an applicant is stopped by ICE/CBP while their case is pending, a verified biometric notice proves they are actively following the legal process.
 
 ## Verification Architecture
 
-**The Biometric appointment confirmations Fraud Problem**
+**The "Notice Fraud" Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Fabricated Notices:** People creating fake appointment letters to get inside government buildings or to trick employers into thinking their visa is "processing."
+- **Date Alteration:** Changing an old appointment date to "Today" to try and get fingerprints taken ahead of schedule.
+- **Impersonation:** Using a family member's notice by editing the name.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**USCIS:** The sole issuer for domestic appointments.
+**VFS Global / TLScontact:** Third-party providers for overseas visa appointments.
 
-**USCIS:** U.S. Citizenship and Immigration Services for immigration documents.
+**Privacy Salt:** Critical. Case numbers and names are sensitive. The hash must be salted to prevent "guessing" case statuses.
 
-**DOS:** Department of State for passports and consular documents.
+## Competition vs. USCIS Online Account
 
-**CBP:** Customs and Border Protection for entry/exit documentation.
+| Feature | OCR-to-Hash | myUSCIS Portal | Paper Notice |
+| :--- | :--- | :--- | :--- |
+| **Field Access** | **Instant.** Scan the paper at the door. | **Slow.** Requires login, 2FA, navigating to "Documents." | **Instant.** |
+| **Guards/Staff** | **Authorized.** Can verify without seeing applicant's private portal. | **Impossible.** Guards cannot ask for applicant's login. | **Weak.** Trusted visually only. |
+| **Trust** | **Cryptographic.** Bound to `uscis.gov`. | **High.** Direct from DB. | **Low.** Easily faked. |
 
-**Foreign Governments:** International authorities for foreign-issued documents.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-**Privacy Considerations**
-
-Sensitive personal information requires special handling:
-
-**Privacy Salt:** Random salt added to verification lines prevents hash enumeration attacks.
-
-**Minimum Disclosure:** Verification response reveals only necessary information.
-
-**Access Controls:** Verification endpoints implement appropriate access restrictions.
-
-**Audit Logging:** Verification attempts logged for security and compliance.
-
-## Rationale
-
-Prevents fake biometric notices. Domain binding verifies USCIS. Application processing requirement. ASC attendance proof. Case timeline documentation. Prevents appointment fraud.
+**Why OCR wins here:** The "Security Guard Scenario." A guard at a federal building cannot and should not log into an applicant's private USCIS account. OCR-to-hash allows the guard to verify the **authenticity of the physical paper** in front of them without accessing the applicant's private files.

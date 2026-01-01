@@ -1,327 +1,132 @@
 ---
-title: "Life Insurance Policies"
+title: "Individual Life Insurance Policies"
 category: "Personal Lines Insurance"
 volume: "Small"
 retention: "Policy lifetime (50+ years)"
 slug: "life-insurance-policies"
-tags: ["life", "insurance", "policies", "personal", "lines"]
+tags: ["life-insurance", "whole-life", "term-life", "beneficiary-designation", "cash-value", "financial-planning", "estate-asset", "insurance-policy"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 2px solid #000; background: #fff; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); position: relative;">
+  <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 25px;">
+    <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 2px; color: #003366;">NEW YORK LIFE</div>
+    <div style="font-size: 0.85em; color: #666; margin-top: 5px; text-transform: uppercase;">Custom Whole Life Insurance Policy</div>
+  </div>
+
+  <h3 style="text-align: center; text-transform: uppercase; margin-bottom: 25px;">Policy Schedule</h3>
+
+  <div style="font-size: 1em; line-height: 1.6; color: #333; text-align: justify;">
+    <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+      <div>
+        <strong>Policy Number:</strong> 99228877-WL<br>
+        <strong>Insured:</strong> <span data-bracket="start" data-for="life-pol">]</span><strong>JOHN JACOB DOE</strong>
+      </div>
+      <div style="text-align: right;">
+        <strong>Date of Issue:</strong><br>
+        March 15, 2026
+      </div>
+    </div>
+
+    <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+      <tr style="border-bottom: 1px solid #000; background: #f9f9f9;">
+        <th style="text-align: left; padding: 8px;">Description</th>
+        <th style="text-align: right; padding: 8px;">Initial Amount</th>
+      </tr>
+      <tr>
+        <td style="padding: 8px;">Face Amount (Death Benefit)</td>
+        <td style="text-align: right;">$ 1,000,000.00</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px;">Cash Value (Year 10 Projection)</td>
+        <td style="text-align: right;">$ 142,500.00</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px;">Base Annual Premium</td>
+        <td style="text-align: right;">$ 4,200.00</td>
+      </tr>
+    </table>
+
+    <p><strong>Primary Beneficiary:</strong> Mary Alice Jacob (Spouse)<br>
+    <strong>Riders:</strong> Waiver of Premium, Accidental Death (Double Indemnity).</p>
+  </div>
+
+  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+    <div style="width: 45%;">
+      <div style="border-top: 1px solid #000; padding-top: 5px; font-style: italic;">Sarah Miller, Secretary</div>
+    </div>
+    <div style="text-align: right; width: 45%;">
+      <div style="width: 80px; height: 80px; border: 2px solid #003366; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; color: #003366; font-weight: bold; text-align: center; margin-left: auto;">ESTABLISHED<br>1845</div>
+    </div>
+  </div>
+
+  <div data-verify-line="life-pol" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+      title="Demo only: New York Life doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:newyorklife.com/policy/v/99228877 <span data-bracket="end" data-for="life-pol">]</span>
+  </div>
+</div>
+
 ## Data Verified
 
-Insured name, date of birth, policy number, policy type, face amount (death benefit), premium amount and frequency, beneficiary names and designations, policy date and effective date, underwriting class, any riders or endorsements, cash value provisions (for permanent policies), insurer name.
+Insured name, policy number, face amount (Death Benefit), policy type (Whole/Term/Universal), cash value accumulation (if applicable), primary/contingent beneficiaries, base premium, effective date, issuing carrier, active riders (e.g., Waiver of Premium).
 
-**Policy Types:**
-- **Term Life:** Coverage for specified period (10, 20, 30 years)
-- **Whole Life:** Permanent coverage with cash value
-- **Universal Life:** Flexible premium permanent insurance
-- **Variable Life:** Investment-linked permanent insurance
-- **Variable Universal Life:** Combines variable and universal features
-- **Final Expense/Burial:** Smaller policies for end-of-life costs
-- **Group Life:** Employer-provided coverage
-
-**Multi-Page Considerations:** Life insurance policies are often lengthy documents (30-100+ pages) with numerous riders. Per-page verification prevents page substitution—particularly critical for beneficiary designation pages and coverage amount pages.
+**Document Types:**
+- **Policy Schedule (Declarations):** The 1-page primary summary.
+- **Beneficiary Designation Form:** Proving who gets the payout.
+- **Collateral Assignment:** Proving the policy is pledged to a bank.
+- **Annual Performance Summary:** Showing cash value growth.
 
 ## Data Visible After Verification
 
-Shows the issuer domain (the insurance company) and the responder text.
+Shows the issuer domain (`newyorklife.com`, `prudential.com`, `metlife.com`) and current policy standing.
 
 **Status Indications:**
-- **In Force** - Policy is active and current
-- **Lapsed** - Policy terminated for non-payment
-- **Surrendered** - Policy voluntarily terminated
-- **Paid-Up** - No further premiums required
-- **Matured** - Policy reached maturity date
-- **Claim Pending** - Death claim submitted
-- **Claim Paid** - Death benefit distributed
+- **In Force** — Premium paid; coverage active.
+- **Lapsed** — **ALERT:** Coverage terminated due to non-payment.
+- **Paid-Up** — No further premiums required to maintain coverage.
+- **Pledged** — Policy has a verified lien from a third-party lender.
 
-**Coverage Confirmation:** Verification may indicate: "In Force - $500,000 death benefit."
+## Second-Party Use
 
-## Second-Party Use (Policyholder Verifying Their Own Policy)
+The **Policyholder (Insured)** benefits from verification.
 
-Policyholders benefit from verification.
+**Collateralized Loans:** Proving to a bank that their "Whole Life" policy has a verified $142,000 cash value. This allows the owner to take a low-interest "Policy Loan" or use the insurance as collateral for a mortgage without waiting weeks for a manual "Verification of Coverage" form from the insurer.
 
-**Policy Authenticity:** After receiving policy from agent/insurer, verify it's genuine.
-
-**Coverage Confirmation:** Verify coverage amount matches application.
-
-**Beneficiary Verification:** Verify beneficiary designations are correctly recorded.
-
-**Premium Verification:** Verify premium amounts and due dates.
-
-**Rider Confirmation:** Verify optional riders are attached as purchased.
+**Estate Planning:** Providing a verified "Wealth Token" to an estate attorney or trust officer, ensuring the death benefit is accurately accounted for in the family's total assets.
 
 ## Third-Party Use
 
-**Beneficiaries**
+**Mortgage Lenders / Private Banks**
+**Asset Integrity:** Verifying the existence and value of permanent life insurance. OCR-to-hash ensures the borrower hasn't "Edited" a $10,000 term policy to look like a $1M whole-life asset to inflate their net worth.
 
-Death benefit claims:
+**Divorce / Settlement Attorneys**
+**Valuation Proof:** Instantly verifying the "Cash Surrender Value" of a policy during asset division in a marital dissolution.
 
-**Pre-Death Verification:** Verify policy exists and is in force.
-
-**Claim Filing:** Verify policy details for death claim.
-
-**Beneficiary Confirmation:** Verify beneficiary designation.
-
-**Coverage Amount:** Confirm death benefit amount.
-
-**Contestability Status:** Verify policy is past contestability period.
-
-**Estate Attorneys**
-
-Probate and estate planning:
-
-**Estate Inventory:** Verify policies for estate valuation.
-
-**Trust Funding:** Verify policies owned by or payable to trusts.
-
-**Policy Loans:** Verify outstanding policy loans.
-
-**Tax Planning:** Verify ownership for estate tax purposes.
-
-**Will Coordination:** Ensure policy designations align with estate plan.
-
-**Financial Advisors**
-
-Planning and review:
-
-**Coverage Analysis:** Verify existing coverage for needs analysis.
-
-**Policy Review:** Verify policy performance and status.
-
-**Replacement Decisions:** Verify existing policy before recommending replacement.
-
-**Portfolio Integration:** Verify policies as part of financial plan.
-
-**Lenders**
-
-Collateral and credit:
-
-**Collateral Assignment:** Verify policies assigned as loan collateral.
-
-**Policy Loans:** Verify available cash value for policy loans.
-
-**Credit Life:** Verify policies covering loan balances.
-
-**Business Loans:** Verify key person policies for business lending.
-
-**Insurers**
-
-Industry coordination:
-
-**Policy Replacement:** Verify existing coverage for replacement regulations.
-
-**Reinstatement:** Verify policy status for reinstatement requests.
-
-**Reinsurance:** Verify policies for reinsurance purposes.
-
-**Fraud Investigation:** Verify policies in suspected fraud cases.
-
-**Divorce Attorneys**
-
-Marital dissolution:
-
-**Marital Asset:** Verify policy cash value for asset division.
-
-**Beneficiary Changes:** Verify beneficiary status during divorce.
-
-**Support Security:** Verify policies securing alimony/child support.
-
-**QDRO Alternative:** Life insurance in lieu of retirement division.
-
-**Business Partners**
-
-Business insurance:
-
-**Buy-Sell Agreements:** Verify policies funding buy-sell agreements.
-
-**Key Person Insurance:** Verify coverage on key employees.
-
-**Partnership Dissolution:** Verify policies upon partner death.
-
-**Loan Guarantee Support:** Verify policies supporting business loans.
-
-**Courts**
-
-Legal proceedings:
-
-**Divorce Proceedings:** Verify policies in asset division.
-
-**Creditor Claims:** Verify policies in debt collection.
-
-**Interpleader Actions:** Verify policies with competing claimants.
-
-**Beneficiary Disputes:** Verify designation in beneficiary litigation.
+**Institutional Lenders**
+**Lien Verification:** Checking if a policy being offered as collateral already has a verified "Assignment" to a different bank.
 
 ## Verification Architecture
 
-**The Life Insurance Fraud Problem**
+**The "Phantom Policy" Fraud Problem**
 
-Fraudulent policies enable various schemes:
+- **Benefit Inflation:** Editing a $100,000 policy PDF to read $1,000,000 to trick a lender or business partner.
+- **Lapse Concealment:** Showing an old "In Force" paper for a policy that lapsed 2 years ago.
+- **Beneficiary Tampering:** Editing the beneficiary page to change the payout from a spouse to a secret creditor or a fraudster's account.
 
-- **Forged Policies:** Entirely fake policies from non-existent insurers
-- **Altered Coverage:** Genuine policies with inflated death benefits
-- **Beneficiary Fraud:** Policies with altered beneficiary designations
-- **Lapse Misrepresentation:** Lapsed policies presented as in force
-- **Premium Fraud:** Policies with falsified premium status
-- **Impersonation:** Policies falsely attributed to major insurers
+**Issuer Types**
 
-OCR-to-hash addresses forgery and alteration. Insurer verification confirms current status.
+**National Carriers:** (New York Life, Prudential, Northwestern Mutual).
+**Mutual Companies:** (Where the policyholders own the firm).
+**Fraternal Benefit Societies.**
 
-**Insurance Companies as Issuers**
+**Privacy Salt:** Highly critical. Life insurance involves family health and massive wealth. The hash MUST be salted to prevent "Guess-and-Check" searches for people with high-value policies.
 
-Life insurers issue and verify policies:
+## Competition vs. MIB Group (Industry DB)
 
-**Major Carriers:** MetLife, Prudential, Northwestern Mutual, New York Life.
+| Feature | OCR-to-Hash | MIB Group (Industry Exchange) | Scanned PDF |
+| :--- | :--- | :--- | :--- |
+| **User Access** | **Universal.** Policyholders and banks. | **Restricted.** Only for insurance companies. | **Instant.** |
+| **Trust Anchor** | **Domain-Bound.** Bound to the Carrier. | **Data-Bound.** Trust the aggregator. | **Zero.** Easily forged. |
+| **Retention** | **50+ Years.** Archival text. | **Ephemeral.** Records often age out. | **Durable.** |
+| **Integrity** | **Cryptographic.** Binds the *Beneficiary*. | **Vague.** Often only shows "Coverage exists." | **Vulnerable.** |
 
-**Stock Companies:** Publicly traded insurers.
-
-**Mutual Companies:** Policyholder-owned insurers.
-
-**Fraternal Organizations:** Fraternal benefit societies.
-
-Each company operates verification endpoints for policies they issue.
-
-**MIB Group (Medical Information Bureau)**
-
-Industry database:
-
-**MIB Database:** Underwriting information shared among insurers.
-
-**Policy Existence:** Confirmation that coverage exists.
-
-**Underwriting History:** Prior application information.
-
-**Fraud Prevention:** Detection of multiple applications.
-
-MIB data complements insurer-specific verification.
-
-**Beneficiary Designations**
-
-Who receives the death benefit:
-
-**Primary Beneficiary:** First in line for benefit.
-
-**Contingent Beneficiary:** Receives if primary predeceases.
-
-**Irrevocable Beneficiary:** Cannot be changed without consent.
-
-**Revocable Beneficiary:** Can be changed by policyholder.
-
-**Per Stirpes/Per Capita:** How benefit divides among descendants.
-
-Beneficiary verification is critical: "Verified - Primary beneficiary: [name]."
-
-**Policy Loans and Liens**
-
-Encumbrances on policies:
-
-**Policy Loans:** Loans against cash value.
-
-**Collateral Assignments:** Policy assigned as loan security.
-
-**Automatic Premium Loans:** Cash value used for unpaid premiums.
-
-**Lien Recording:** Liens against policy death benefit.
-
-Verification should indicate: "In Force - Outstanding policy loan: $[X]."
-
-**Incontestability**
-
-Time-limited contestability:
-
-**Contestability Period:** Typically first two years.
-
-**Suicide Clause:** Suicide exclusion period.
-
-**Material Misrepresentation:** Basis for contest.
-
-**Post-Contestability:** Insurer cannot contest after period expires.
-
-Verification may indicate: "In Force - Past contestability period."
-
-**Grace Periods and Lapse**
-
-Policy termination:
-
-**Grace Period:** Time to pay overdue premium (typically 30-31 days).
-
-**Lapse Notice:** Required notice before lapse.
-
-**Reinstatement:** Restoring lapsed policy.
-
-**Automatic Premium Loan:** Prevents lapse using cash value.
-
-Real-time status verification critical: policies can lapse unexpectedly.
-
-**Cash Value and Surrender**
-
-Permanent policy values:
-
-**Cash Value:** Accumulated policy value.
-
-**Surrender Value:** Net value if policy terminated.
-
-**Paid-Up Insurance:** Reduced coverage without further premiums.
-
-**Extended Term:** Term coverage using cash value.
-
-Verification may indicate: "In Force - Current cash value: $[X]."
-
-**Riders and Endorsements**
-
-Policy modifications:
-
-**Accidental Death:** Additional benefit for accidental death.
-
-**Waiver of Premium:** Waives premiums upon disability.
-
-**Accelerated Death Benefit:** Access to benefits while living.
-
-**Long-Term Care Rider:** LTC benefits within life policy.
-
-**Child Term Rider:** Coverage on children.
-
-Per-page verification covers rider pages: "Verified - Includes waiver of premium, ADB riders."
-
-**Group Life Insurance**
-
-Employer-provided coverage:
-
-**Certificate of Coverage:** Employee's evidence of group coverage.
-
-**Basic and Supplemental:** Employer-paid and voluntary coverage.
-
-**Conversion Rights:** Convert to individual policy upon termination.
-
-**Portability:** Continue coverage after leaving employer.
-
-Group certificates should be verifiable through employer/insurer.
-
-**Life Settlements and Viaticals**
-
-Secondary market transactions:
-
-**Life Settlement:** Selling policy for more than surrender value.
-
-**Viatical Settlement:** Sale by terminally ill insured.
-
-**Investor Verification:** Buyers verify policy before purchase.
-
-**Continuing Premium:** Investors verify ongoing status.
-
-Life settlement investors need ongoing verification of policy status.
-
-**Retention and Historical Policies**
-
-Very long document lifetime:
-
-**50+ Year Retention:** Policies may be in force for decades.
-
-**Historical Records:** Insurers maintain records for century or more.
-
-**Merger Succession:** Policies from acquired companies.
-
-**Demutualization:** Mutual company conversions.
-
-Verification must accommodate very old policies from predecessor companies.
-
+**Why OCR wins here:** The "Lifetime" reality. Life insurance is a 50-year asset. Digital portals change every 5 years. OCR-to-hash turns the **Static Paper Policy** (which the owner keeps in a safe) into a permanent, verifiable financial link that survives the death of IT systems and the changing of brokers.

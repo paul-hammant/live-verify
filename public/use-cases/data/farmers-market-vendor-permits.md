@@ -1,157 +1,113 @@
 ---
-title: "Farmers market vendor permits"
+title: "Farmers Market Vendor Permits"
 category: "Food & Beverage Permits"
 volume: "Large"
 retention: "Season/year validity"
 slug: "farmers-market-vendor-permits"
-tags: ["farmers", "market", "vendor", "permits", "food", "beverage"]
+tags: ["farmers-market", "vendor-permit", "food-safety", "local-produce", "market-manager", "public-health", "sanitation-compliance"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 3px solid #2e7d32; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="background: #2e7d32; color: #fff; padding: 15px; text-align: center; display: flex; align-items: center; justify-content: center;">
+    <div style="font-size: 2em; margin-right: 15px;">🌽</div>
+    <div>
+      <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">CERTIFIED FARMER'S MARKET</h2>
+      <div style="font-size: 0.85em; opacity: 0.9;">OFFICIAL VENDOR AUTHORIZATION</div>
+    </div>
+  </div>
+
+  <div style="padding: 25px;">
+    <div style="text-align: center; border-bottom: 2px solid #2e7d32; padding-bottom: 10px; margin-bottom: 20px;">
+      <h3 style="margin: 0; color: #1b5e20;">ANNUAL VENDOR PERMIT</h3>
+      <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;">Permit #: <span data-bracket="start" data-for="fm-vendor">]</span>FMV-2026-0922</div>
+    </div>
+
+    <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+      <p><strong>Vendor:</strong> Sunny Acres Organic Farm, LLC<br>
+      <strong>Market Location:</strong> Union Square, New York, NY</p>
+
+      <div style="background: #f1f8e9; border: 1px solid #c5e1a5; padding: 10px; margin: 15px 0; border-radius: 4px;">
+        <strong>AUTHORIZED PRODUCTS:</strong><br>
+        ✅ Seasonal Vegetables (Root/Leafy)<br>
+        ✅ Stone Fruits (Peach/Plum)<br>
+        ✅ Prepared Foods: Organic Jams/Preserves
+      </div>
+
+      <p><strong>Booth Assignment:</strong> Row A, Stall 14<br>
+      <strong>Effective:</strong> April 01, 2026 to November 30, 2026</p>
+    </div>
+
+    <div style="margin-top: 25px; border: 1px solid #ccc; padding: 10px; font-size: 0.8em; color: #555; background: #fafafa; font-style: italic; text-align: center;">
+      This permit confirms the vendor is a "Certified Producer" and meets all local health and tax requirements.
+    </div>
+
+    <div data-verify-line="fm-vendor" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: Market association doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:nycfarmersmarket.org/v/FMV0922 <span data-bracket="end" data-for="fm-vendor">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Vendor name, products sold, market location, booth number
+Vendor name, farm/business location, authorized product categories (to prevent "Product Reselling"), stall/booth number, market name, effective/expiration dates, health permit status, tax ID status, market manager signature.
 
-**Permit Types:** Various permit subtypes may exist depending on jurisdiction and specific use.
+**Document Types:**
+- **Annual Vendor Permit:** The standard color-coded card for the booth.
+- **Certified Producer Certificate:** (CPC) proving the farmer actually grew the food.
+- **Health Grade:** Specifically for prepared food vendors (e.g., hot sauce).
+- **Temporary Day Pass:** For one-off visiting vendors.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`nycfarmersmarket.org`, `sfmta.com`) and current vendor standing.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-- **Suspended** - Permit temporarily suspended
-- **Pending** - Permit application pending approval
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Authorized** — Vendor is eligible to sell today.
+- **Suspended** — Temporary ban (e.g., due to selling non-local produce).
+- **Expired** — Seasonal permit has ended.
+- **Alert** — Vendor found to be reselling wholesale items as "Local."
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Vendor (Farmer)** benefits from verification.
 
-**Legitimacy Confirmation:** After obtaining permit, verify it was properly issued and recorded.
+**Customer Trust:** Proving to a skeptic customer that the "Organic Peaches" are verified local produce. Scanning the hash on the stall sign provides instant, authoritative proof that they aren't just "Wholesaling" from a big-box store.
 
-**Compliance Display:** Maintain verified permit for posting requirements.
-
-**Scope Verification:** Confirm permitted activities match intended use.
-
-**Expiration Tracking:** Monitor permit status to avoid lapses.
-
-**Record Keeping:** Maintain verified documentation for audits and compliance.
+**Market Hopping:** Speeding up the application process for a different farmers market by providing a "Verified Record" of their clean standing and certification from a previous market.
 
 ## Third-Party Use
 
-**Lenders and Financial Institutions**
+**Market Managers**
+**Booth Enforcement:** During the 6 AM setup, managers can scan every stall lanyards. Verification ensures that only authorized vendors are setting up and that they are only selling what they are permitted to sell.
 
-Credit underwriting and risk assessment:
+**Health Inspectors**
+**Field Compliance:** Instantly verifying that a vendor selling "Chicken Salad" has the verified refrigeration and health certifications required for hazardous food handling.
 
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Insurance Companies**
-
-Underwriting and claims processing:
-
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
-
-**Government Agencies**
-
-Compliance enforcement and administration:
-
-**Inspection Verification:** Field agents verify permits and licenses at sites.
-
-**Enforcement Actions:** Confirm documentation before enforcement.
-
-**Benefit Eligibility:** Verify supporting documents for benefits administration.
-
-**Compliance Audits:** Audit documentation for regulatory compliance.
-
-**Interagency Coordination:** Share verified documents across agencies.
-
-**Real Estate Professionals**
-
-Property transactions and due diligence:
-
-**Purchase Due Diligence:** Verify property documents during transactions.
-
-**Listing Preparation:** Confirm permits and documentation for listings.
-
-**Disclosure Compliance:** Validate required disclosures and permits.
-
-**Title Research:** Verify property documents for title clearance.
-
-**Appraisal Support:** Confirm documented improvements and permits.
+**Conscious Shoppers**
+**Provenance Proof:** Allowing shoppers to verify the "Producer" status of a farm, ensuring their money is actually going to a local grower and not a reseller.
 
 ## Verification Architecture
 
-**The Farmers market vendor permits Fraud Problem**
+**The "Wholesale Reselling" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Permit Sharing:** Using one property's permit for work at another location
-- **Scope Expansion:** Expanding permitted activities beyond authorization
-- **Contractor Fraud:** Claiming permits that were never obtained
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Reselling Scam:** A vendor buying cheap tomatoes from a wholesale warehouse and selling them as "Local Organic" for 3x the price. Verification of the "CPC Hash" prevents this.
+- **Permit Alteration:** Editing a "Vegetable Only" permit to allow high-profit "Prepared Foods" (like hot meals) without passing the stricter health inspections.
+- **Ghost Vendors:** Using a friend's unexpired permit to get a booth when the original farm has gone out of business.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Market Associations:** (e.g., GrowNYC, CUESA).
+**City Agriculture Depts.**
+**State Organic Certifiers.**
 
-**Government Entities:** Counties, cities, and special districts maintain property records.
+## Competition vs. Window Stickers
 
-**Title Companies:** Title insurers and escrow companies for transaction documents.
+| Feature | OCR-to-Hash | Laminated Window Sticker | Public Spreadsheet/PDF |
+| :--- | :--- | :--- | :--- |
+| **Trust Anchor** | **Domain-Bound.** Bound to the Market Org. | **Visual.** Trusted via stamp/seal. | **Database.** High trust but manual. |
+| **Integrity** | **Binds Products.** Protects the "Authorized List." | **Zero.** Easily edited with a pen. | **None.** |
+| **Speed** | **Instant.** 5-second scan at the stall. | **N/A.** Just looking. | **Slow.** Requires search. |
+| **Alerting** | **Active.** Can show "SUSPENDED" in red. | **Passive.** | **Hidden.** |
 
-**Lending Institutions:** Banks and mortgage companies for loan documents.
-
-**Appraisal Firms:** Licensed appraisers for property valuations.
-
-**System Integration**
-
-Real estate verification connects to property systems:
-
-**Recording Systems:** County recorder systems for property document registration.
-
-**MLS Integration:** Multiple listing services for property documentation.
-
-**Title Plants:** Title companies maintain verification for title searches.
-
-**E-Recording:** Electronic recording systems generate verification at recording.
-
-## Rationale
-
-Domain binding verifies market operator/city. Vendor eligibility verification (local producer requirements). Product type restrictions. Booth assignment verification.
+**Why OCR wins here:** The "Stall Door" reality. Farmers markets are chaotic, outdoor environments. Customers and managers need a **High-Trust, Low-Friction** way to verify claims in seconds. OCR-to-hash turns the **Physical Stall Card** into a live digital shield against wholesale reselling and health fraud.

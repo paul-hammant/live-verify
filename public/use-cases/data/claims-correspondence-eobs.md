@@ -1,125 +1,131 @@
 ---
-title: "Claims correspondence and EOBs"
+title: "Claims Correspondence and EOBs"
 category: "Insurance Claims & Operations"
 volume: "Large"
 retention: "Claim term + 7-10 years"
 slug: "claims-correspondence-eobs"
-tags: ["claims", "correspondence", "eobs", "insurance", "risk", "management"]
+tags: ["insurance", "claims", "eob", "healthcare-billing", "provider-dispute", "audit-trail", "compliance"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="background: #005fb8; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+    <div>
+      <div style="font-weight: bold; font-size: 1.2em;">UNITEDHEALTHCARE</div>
+      <div style="font-size: 0.8em;">Explanation of Benefits (EOB)</div>
+    </div>
+    <div style="text-align: right;">
+      <div style="font-size: 0.8em;">Claim #: 99228877-EOB</div>
+    </div>
+  </div>
+
+  <div style="padding: 25px;">
+    <div style="display: flex; justify-content: space-between; font-size: 0.9em; margin-bottom: 20px;">
+      <div>
+        <strong>Patient:</strong> <span data-bracket="start" data-for="eob">]</span>SARAH J. DOE<br>
+        <strong>Provider:</strong> Mercy General Hospital
+      </div>
+      <div style="text-align: right;">
+        <strong>Service Date:</strong> Feb 10, 2026<br>
+        <strong>Statement Date:</strong> Mar 15, 2026
+      </div>
+    </div>
+
+    <table style="width: 100%; border-collapse: collapse; font-size: 0.85em;">
+      <tr style="border-bottom: 2px solid #005fb8; background: #f5f5f5;">
+        <th style="padding: 5px; text-align: left;">Description</th>
+        <th style="padding: 5px; text-align: right;">Amount</th>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border-bottom: 1px solid #eee;">Billed Amount</td>
+        <td style="text-align: right; padding: 5px;">$ 1,200.00</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border-bottom: 1px solid #eee;">Plan Discount (Contracted)</td>
+        <td style="text-align: right; padding: 5px;">-$ 400.00</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border-bottom: 1px solid #eee;">Your Plan Paid</td>
+        <td style="text-align: right; padding: 5px;">-$ 640.00</td>
+      </tr>
+      <tr style="font-weight: bold; font-size: 1.1em;">
+        <td style="padding: 5px;">YOU OWE (Patient Responsibility):</td>
+        <td style="text-align: right; padding: 5px;">$ 160.00</td>
+      </tr>
+    </table>
+
+    <p style="margin-top: 20px; font-size: 0.8em; color: #555; font-style: italic;">
+      This is NOT a bill. This is your record of how the claim was processed.
+    </p>
+
+    <div data-verify-line="eob" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+      title="Demo only: UHC doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:uhc.com/claims/v/99228877 <span data-bracket="end" data-for="eob">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Claimant name, provider name, claim number, service date, claim amount
+Patient name, member ID (partial), provider name, service date, claim number, billed amount, allowed amount, plan paid amount, patient responsibility (deductible/copay), adjustment reason codes.
+
+**Document Types:**
+- **Explanation of Benefits (EOB):** Post-service summary.
+- **Predetermination Letter:** Pre-service cost estimate.
+- **Appeal Decision Letter:** Proving a denied claim was overturned.
+- **Subrogation Questionnaire:** Investigating 3rd party liability.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`uhc.com`, `aetna.com`) and claim status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Processed** — Data matches the carrier's final adjudication.
+- **In-Appeal** — Patient has formally challenged the calculation.
+- **Reversed** — Claim was re-processed; this EOB is void.
+- **Denied** — Payment rejected (reason provided).
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Patient** benefits from verification.
 
-**Record Verification:** Confirm financial documents match expectations.
+**Billing Disputes:** Proving to a hospital's billing department that the insurance company *actually* allowed a 40% discount, preventing the hospital from "Balance Billing" the patient for the full amount. A verified EOB is much harder for a hospital to ignore than a standard PDF.
 
-**Tax Preparation:** Provide verified documentation for tax filing.
-
-**Audit Support:** Maintain verified records for potential audits.
-
-**Dispute Resolution:** Use verified documents to resolve discrepancies.
-
-**Loan Applications:** Present verified financial documentation to lenders.
+**Flexible Spending Accounts (FSA/HSA):** Providing verified proof of "Patient Responsibility" to an HSA administrator to release tax-free funds without manual review.
 
 ## Third-Party Use
 
-**Regulators and Oversight Bodies**
+**Healthcare Providers (Clinics)**
+**Reconciliation:** Verifying that the EOB provided by the patient matches what the insurer claims to have paid, spotting "Paper Check" vs "Electronic" discrepancies.
 
-Regulatory compliance and oversight:
+**Secondary Insurers**
+**COB (Coordination of Benefits):** When a patient has two insurance plans, the secondary plan needs to see the "Verified Primary EOB" to calculate their share accurately.
 
-**Systematic Hash Receipt:** Receive hashes in bulk for regulatory oversight.
-
-**Audit Verification:** Verify documents during routine or targeted audits.
-
-**Compliance Monitoring:** Monitor issuer compliance with documentation requirements.
-
-**Investigation Support:** Verify documents during fraud or compliance investigations.
-
-**Consumer Protection:** Verify consumer-facing documents for protection enforcement.
-
-**Lenders and Financial Institutions**
-
-Credit underwriting and risk assessment:
-
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
+**Mortgage Lenders**
+**Medical Debt Audit:** If a borrower has large medical bills, lenders can verify the "Patient Responsibility" EOBs to ensure the debt isn't being exaggerated or hasn't already been paid by insurance.
 
 ## Verification Architecture
 
-**The Claims correspondence and EOBs Fraud Problem**
+**The "Phantom Bill" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Income Inflation:** Inflating income or assets on financial documents
-- **Photoshop Fraud:** Digital manipulation of statements and documents
-- **Shell Company Documents:** Documents from fake or shell entities
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Balance Billing:** Hospitals pretending they didn't receive an EOB or that the "Allowed Amount" was higher to collect more from the patient.
+- **PDF Alteration:** Patients editing a $100 copay to read $1,000 to drain their HSA/FSA for cash.
+- **Duplicate Claims:** Using an old EOB to claim reimbursement from two different insurance companies (e.g., personal and work policies).
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Health Insurers:** (UHC, Anthem, Aetna, Cigna).
+**TPA Administrators:** (For self-insured employer plans).
+**Government Payers:** (Medicare / Medicaid).
 
-**Banks and Credit Unions:** Depository institutions for account documents.
+**Privacy Salt:** Highly critical. EOBs contain sensitive clinical and financial data. The hash must be salted to prevent "Guess-and-Check" attacks.
 
-**Investment Firms:** Brokerage and investment management firms.
+## Competition vs. Patient Portals
 
-**Insurance Companies:** Insurers for policy and claims documents.
+| Feature | OCR-to-Hash | Insurance Portal (Login) | Paper EOB |
+| :--- | :--- | :--- | :--- |
+| **User Control** | **High.** Share one specific EOB. | **Low.** Giving portal access reveals *full* medical history. | **Medium.** |
+| **Trust Anchor** | **Domain-Bound.** Bound to the Insurer. | **System-Bound.** | **Zero.** Easily forged. |
+| **Interoperability** | **Universal.** Works across all carriers. | **Siloed.** | **Universal.** |
+| **Speed** | **Instant.** 5-second scan. | **Slow.** Requires 2FA, login, navigation. | **N/A.** |
 
-**Accounting Firms:** CPAs and audit firms for financial statements.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Prevents tampering with claims documentation during appeals process. Field verification by auditors and healthcare compliance officers. Patients and providers verify claim details without calling insurer. Domain binding to insurance company prevents forged EOBs in billing disputes.
+**Why OCR wins here:** Selective Privacy. A patient needs to prove a $160 debt to a hospital or lender without exposing that they also had a psychiatric visit or a high-cost medication listed elsewhere in their portal history. OCR-to-hash turns the **Static Statement** into a portable, private "Proof of Payment."

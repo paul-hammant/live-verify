@@ -1,125 +1,120 @@
 ---
-title: "Air waybills (AWB) - IATA standard"
+title: "Air Waybills (AWB)"
 category: "Shipping & Freight"
 volume: "Large"
 retention: "7-10 years (proof of shipment)"
 slug: "air-waybills-awb"
-tags: ["waybills", "logistics", "transportation"]
+tags: ["air", "waybill", "awb", "logistics", "freight", "iata", "cargo"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 1px solid #000; background: #fff; padding: 0;">
+  <div style="border-bottom: 2px solid #000; padding: 5px; display: flex; justify-content: space-between;">
+    <div style="font-weight: bold; font-size: 1.2em;">016-12345678</div>
+    <div style="font-weight: bold;">UNITED AIRLINES</div>
+    <div style="font-weight: bold;">SFO</div>
+  </div>
+
+  <div style="padding: 10px; font-size: 0.85em;">
+    <div style="display: flex; margin-bottom: 10px;">
+      <div style="width: 50%; border-right: 1px solid #000; padding-right: 5px;">
+        <strong>Shipper:</strong><br>
+        <span data-bracket="start" data-for="awb">]</span>Global Tech Exports, Inc.<br>
+        400 Silicon Valley Blvd<br>
+        San Jose, CA 95134
+      </div>
+      <div style="width: 50%; padding-left: 5px;">
+        <strong>Consignee:</strong><br>
+        EuroGadget GmbH<br>
+        Flughafenstr. 1<br>
+        Frankfurt, DE 60549
+      </div>
+    </div>
+
+    <table style="width: 100%; border: 1px solid #000; border-collapse: collapse; margin-top: 10px;">
+      <tr style="background: #eee;">
+        <th style="border: 1px solid #000;">Pcs</th>
+        <th style="border: 1px solid #000;">Gross Wt</th>
+        <th style="border: 1px solid #000;">Chargeable</th>
+        <th style="border: 1px solid #000;">Nature of Goods</th>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #000; text-align: center;">10</td>
+        <td style="border: 1px solid #000; text-align: center;">500 kg</td>
+        <td style="border: 1px solid #000; text-align: center;">500 kg</td>
+        <td style="border: 1px solid #000;">Electronic Components<br>(Lithium Ion Batteries)</td>
+      </tr>
+    </table>
+
+    <div style="margin-top: 10px;">
+      <strong>Flight/Date:</strong> UA926 / 15MAR26<br>
+      <strong>Executed on:</strong> 14MAR26 at SFO by Agent: Expeditors
+    </div>
+
+    <div data-verify-line="awb" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: Airline doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:unitedcargo.com/awb/v/x9y8z7 <span data-bracket="end" data-for="awb">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Shipper, consignee, airline, flight details, cargo description, value
+AWB Number (Master or House), shipper, consignee, pieces, weight, nature of goods, flight details, execution date, carrier signature.
+
+**Document Types:**
+- **Master Air Waybill (MAWB):** Issued by airline to freight forwarder.
+- **House Air Waybill (HAWB):** Issued by forwarder to actual shipper.
+- **e-AWB Receipt:** Printed copy of electronic record.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (Airline or Freight Forwarder) and shipment status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Booked** — Shipment registered but not yet received.
+- **Received** — Cargo physically with carrier (RCS status).
+- **Departed** — Cargo en route (DEP status).
+- **Delivered** — Handed over to consignee (DLV status).
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Shipper** or **Consignee** benefits from verification.
 
-**Shipment Tracking:** Verify documentation matches actual shipment.
+**Proof of Shipment:** Sellers need to prove to buyers (and banks for Letters of Credit) that goods were actually handed over to the airline. A verified AWB is the "Golden Key" for unlocking payment.
 
-**Customs Clearance:** Present verified documents to customs authorities.
-
-**Payment Verification:** Confirm charges match agreed terms.
-
-**Dispute Prevention:** Maintain verified records for potential disputes.
-
-**Insurance Claims:** Provide verified documentation for cargo claims.
+**Customs Clearance:** Importers in the destination country present the AWB to Customs. Verification ensures the value/weight matches what was declared to the airline, preventing "double invoicing" fraud.
 
 ## Third-Party Use
 
+**Customs Authorities**
+**Risk Targeting:** Customs can verify the AWB data against the carrier's manifest *before* the plane lands. Discrepancies (e.g., AWB says "Books", manifest says "Electronics") trigger inspections.
+
 **Insurance Companies**
+**Cargo Claims:** When goods are lost/damaged, insurers verify the AWB to confirm the weight and nature of goods declared. If the shipper declared 50kg but claims for 500kg, verification catches the fraud.
 
-Underwriting and claims processing:
-
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Customs and Border Authorities**
-
-International trade compliance:
-
-**Import Clearance:** Verify shipping documents for customs clearance.
-
-**Duty Assessment:** Validate commercial invoices and declarations.
-
-**Trade Compliance:** Confirm certificates of origin and trade documents.
-
-**Security Screening:** Verify cargo documentation for security.
-
-**Export Controls:** Validate export documentation and licenses.
-
-**Freight Forwarders and Carriers**
-
-Logistics and transportation:
-
-**Shipment Acceptance:** Verify documents before accepting cargo.
-
-**Carrier Handoffs:** Validate documentation at transfer points.
-
-**Liability Determination:** Reference verified documents for claims.
-
-**Route Planning:** Confirm documentation for transit requirements.
-
-**Delivery Confirmation:** Verify documents at final delivery.
+**Truckers / Ground Handlers**
+**Pickup Authority:** To prevent "fictitious pickup" (thieves posing as truckers), warehouses can verify the AWB presented by the driver matches the electronic release order.
 
 ## Verification Architecture
 
-**The Air waybills (AWB) - IATA standard Fraud Problem**
+**The "Fake Waybill" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Cargo Misrepresentation:** False descriptions of goods being shipped
-- **Duplicate Bills:** Creating multiple originals for fraud
-- **Document Mismatch:** Documents that don't match actual cargo
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Ghost Shipments:** Creating a fake AWB to claim payment from a buyer or bank (Trade Finance fraud) when no goods were shipped.
+- **Weight Fraud:** Declaring low weight to airline to save freight costs, but high weight to customer to charge more.
+- **Illegal Exports:** Mislabeling dangerous goods (batteries, chemicals) as "General Cargo" on the paper AWB to bypass safety checks.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Airlines:** (United Cargo, Lufthansa Cargo, etc.)
+**Freight Forwarders:** (DHL Global Forwarding, Kuehne+Nagel, etc.)
 
-**Carriers:** Shipping lines, airlines, trucking companies, and railroads.
+## Competition vs. e-AWB (Electronic Air Waybill)
 
-**Freight Forwarders:** International freight forwarders and NVOCCs.
+| Feature | OCR-to-Hash | e-AWB (IATA) |
+| :--- | :--- | :--- |
+| **Adoption** | **Universal.** Works even for small forwarders/airlines not fully integrated. | **High but not 100%.** Many lanes/countries still require paper. |
+| **Physical Handoff** | **Strong.** Verifies the paper accompanying the freight in the truck. | **Weak.** Truckers often don't have access to the e-AWB system; they carry paper. |
+| **Interoperability** | **Web-based.** Anyone (bank, insurer, customs) can verify. | **Siloed.** Cargo Community Systems (CCS) require membership/login. |
+| **Data Integrity** | **Snapshot.** Proves what was printed at origin. | **Dynamic.** System data updates; audit trail of changes can be complex. |
 
-**Customs Brokers:** Licensed customs brokers for trade documentation.
-
-**Port Authorities:** Port operators for terminal and cargo documents.
-
-**System Integration**
-
-Shipping verification integrates with trade systems:
-
-**EDI Standards:** Electronic data interchange for trade documents (EDIFACT, X12).
-
-**Port Community Systems:** Port system integration for cargo documentation.
-
-**Customs Systems:** Integration with ACE, ABI, and customs clearance platforms.
-
-**Carrier Systems:** Shipping line and freight forwarder system integration.
-
-## Rationale
-
-Prevents altered cargo details. Domain binding verifies airline/freight forwarder. IATA compliance. High-value cargo ($10K-$10M+ typical). Customs clearance documentation. Multi-page: AWB multi-page with packing details.
+**Why OCR wins here:** Despite the push for e-AWB, paper persists in the "Last Mile" (trucking to/from airport) and in customs procedures of developing nations. OCR-to-hash turns that persistent paper into a trusted digital pointer, bridging the gap until 100% global digitization is achieved (which is decades away).

@@ -1,129 +1,124 @@
 ---
-title: "Auto insurance claims and repair estimates"
+title: "Auto Insurance Claims and Repair Estimates"
 category: "Personal Lines Insurance"
 volume: "Medium"
 retention: "Claim term + 7 years"
 slug: "auto-insurance-claims-repair"
-tags: ["auto", "insurance", "claims", "repair", "personal", "lines"]
+tags: ["auto", "insurance", "claim", "repair", "estimate", "body-shop", "fraud"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0;">
+  <div style="background: #0d47a1; color: #fff; padding: 15px; display: flex; justify-content: space-between; align-items: center;">
+    <div>
+      <div style="font-weight: bold; font-size: 1.1em;">ALLSTATE INSURANCE</div>
+      <div style="font-size: 0.8em;">Claims Processing Center</div>
+    </div>
+    <div style="text-align: right;">
+      <div style="font-size: 0.8em;">Claim #: 99228877-X</div>
+      <div style="font-size: 0.8em;">March 15, 2026</div>
+    </div>
+  </div>
+
+  <div style="padding: 25px;">
+    <h3 style="margin-top: 0; color: #0d47a1; border-bottom: 2px solid #0d47a1; padding-bottom: 5px;">REPAIR ESTIMATE SUMMARY</h3>
+
+    <div style="font-size: 0.9em; line-height: 1.5; color: #333;">
+      <p><strong>Insured:</strong> <span data-bracket="start" data-for="claim">]</span>MAX POWER<br>
+      <strong>Vehicle:</strong> 2024 Tesla Model 3 (VIN: ...5544)<br>
+      <strong>Body Shop:</strong> Joe's Auto Body, Springfield</p>
+
+      <table style="width: 100%; margin-top: 15px; border-collapse: collapse;">
+        <tr style="background: #f5f5f5; border-bottom: 1px solid #ddd;">
+          <th style="text-align: left; padding: 5px;">Category</th>
+          <th style="text-align: right; padding: 5px;">Total</th>
+        </tr>
+        <tr>
+          <td style="padding: 5px;">Parts (OEM)</td>
+          <td style="text-align: right; padding: 5px;">$ 4,250.00</td>
+        </tr>
+        <tr>
+          <td style="padding: 5px;">Labor (Paint/Body)</td>
+          <td style="text-align: right; padding: 5px;">$ 2,100.00</td>
+        </tr>
+        <tr>
+          <td style="padding: 5px;">Sublet / Fees</td>
+          <td style="text-align: right; padding: 5px;">$ 450.00</td>
+        </tr>
+        <tr style="border-top: 1px solid #000; font-weight: bold;">
+          <td style="padding: 5px;">ESTIMATED REPAIR TOTAL:</td>
+          <td style="text-align: right; padding: 5px;">$ 6,800.00</td>
+        </tr>
+      </table>
+
+      <p style="margin-top: 20px;"><strong>Adjuster:</strong> Sarah Miller (ID #992)</p>
+    </div>
+
+    <div data-verify-line="claim" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: Insurer doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:allstate.com/claims/v/99228877 <span data-bracket="end" data-for="claim">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Claimant name, vehicle VIN, accident details, repair estimate, adjuster
+Insured name, vehicle VIN, Claim ID, repair estimate total, parts/labor breakdown, body shop name, adjuster name, date of estimate.
 
-**Policy Forms:** Different policy forms and endorsements may apply.
+**Document Types:**
+- **Initial Appraisal:** The first field estimate.
+- **Supplement Request:** For hidden damage found after tear-down.
+- **Final Proof of Loss:** The final document signed by the insured to release payment.
+- **Total Loss Valuation:** (Market value vs. repair cost).
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (the Insurance Carrier) and the claim status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-- **Cancelled** - Policy cancelled before expiration
-- **Non-Renewed** - Policy expired and not renewed
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Approved** — Estimate matches the carrier's system; payment authorized.
+- **Supplemented** — This estimate is outdated; a new Supplement #2 exists.
+- **Paid** — Funds have been issued to the body shop/insured.
+- **Closed** — Claim file completed.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Insured** (Vehicle Owner) benefits from verification.
 
-**Proof of Coverage:** Verify coverage is active when needed for compliance or access.
+**Body Shop Oversight:** Proving to the body shop exactly what the insurance company agreed to pay for (e.g., OEM parts vs. Aftermarket). Verification prevents "part-swapping" fraud where the shop charges for OEM but installs cheap knock-offs.
 
-**Claims Support:** Confirm policy details when filing claims.
-
-**Coverage Confirmation:** Verify coverage terms match expectations after purchase.
-
-**Third-Party Presentation:** Provide verified proof to landlords, lenders, or employers.
-
-**Renewal Verification:** Confirm renewal was processed and coverage continues.
+**Sale of Vehicle:** Providing a "Verified Clean" repair history to a future buyer, proving that the $6,800 repair was for cosmetic damage and not structural frame issues.
 
 ## Third-Party Use
 
-**Regulators and Oversight Bodies**
+**Body Shops**
+**Payment Assurance:** Before starting work, the shop scans the estimate provided by the customer. "Verified by Allstate" gives them the confidence that the funds will actually arrive upon completion.
 
-Regulatory compliance and oversight:
+**Used Car Buyers (CARFAX)**
+**History Integrity:** If a car is repaired but never reported to CARFAX, the damage history is hidden. A "Verified Claim" from the insurance domain provides an un-erasable digital audit trail of the vehicle's damage history.
 
-**Systematic Hash Receipt:** Receive hashes in bulk for regulatory oversight.
-
-**Audit Verification:** Verify documents during routine or targeted audits.
-
-**Compliance Monitoring:** Monitor issuer compliance with documentation requirements.
-
-**Investigation Support:** Verify documents during fraud or compliance investigations.
-
-**Consumer Protection:** Verify consumer-facing documents for protection enforcement.
-
-**Lenders and Financial Institutions**
-
-Credit underwriting and risk assessment:
-
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
+**Lienholders (Banks)**
+**Collateral Protection:** Banks need to ensure that insurance payouts are actually used to fix the car (their collateral) and not just pocketed by the owner. Verifying the repair estimate and completion status protects the loan.
 
 ## Verification Architecture
 
-**The Auto insurance claims and repair estimates Fraud Problem**
+**The "Padded Estimate" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Coverage Inflation:** Inflating coverage limits or adding non-existent coverage
-- **Backdating:** Creating policies with false effective dates
-- **Ghost Policies:** Fabricated policies from non-existent insurers
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **PDF Alteration:** A shady body shop takes a $2,000 estimate from the insurer and edits the PDF to read $6,000 before showing it to the customer.
+- **Prior Damage Fraud:** Claiming that old scratches from 2 years ago were part of yesterday's fender-bender.
+- **Phantom Supplements:** Forging "Supplement #1" to get extra cash from the insurer for damage that doesn't exist.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Insurance Carriers:** (Allstate, Geico, State Farm, etc.)
+**Adjusting Firms:** (Third-party firms like Crawford & Co).
+**Body Shop Management Systems:** (CCC One, Mitchell, Audatex).
 
-**Banks and Credit Unions:** Depository institutions for account documents.
+## Competition vs. Central Databases (CARFAX)
 
-**Investment Firms:** Brokerage and investment management firms.
+| Feature | OCR-to-Hash | CARFAX / Autocheck | Paper Estimate |
+| :--- | :--- | :--- | :--- |
+| **Granularity** | **High.** Shows line-item parts/labor. | **Low.** Often just says "Accident Reported - Damage to Front." | **High.** But untrusted. |
+| **Speed** | **Real-time.** Available as soon as the adjuster hits "save." | **Laggy.** Can take weeks or months for claims to appear in CARFAX. | **Instant.** |
+| **Trust** | **Cryptographic.** Bound to the Insurer's domain. | **Reporting-Based.** Relies on data feeds which can be incomplete. | **Zero.** Easily forged. |
 
-**Insurance Companies:** Insurers for policy and claims documents.
-
-**Accounting Firms:** CPAs and audit firms for financial statements.
-
-**System Integration**
-
-Insurance verification integrates with industry systems:
-
-**Policy Administration Systems:** Core insurance systems generate verification hashes at policy issuance.
-
-**ACORD Standards:** Insurance industry data standards could include verification fields.
-
-**State Insurance Databases:** Regulators maintain databases for systematic hash receipt.
-
-**Agent Portals:** Insurance agents access verification for client service.
-
-## Rationale
-
-Prevents inflated repair estimates. Domain binding verifies body shop/adjuster. Tamper-evident damage assessment. Fraud investigation. Prevents prior damage fraud (claiming old damage as new).
+**Why OCR wins here:** Detail. CARFAX is great for "Did it have a crash?" but terrible for "What exactly was fixed?" OCR-to-hash allows a buyer or bank to see the **exact scope** of the repair, verified by the source of truth (the insurer who paid for it).

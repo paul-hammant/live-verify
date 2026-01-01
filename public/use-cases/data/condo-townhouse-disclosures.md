@@ -1,150 +1,109 @@
 ---
-title: "Condominium/townhouse disclosure statements"
+title: "Condominium and Townhouse Disclosures"
 category: "Real Estate & Property"
 volume: "Very Small"
 retention: "7-10 years (transaction records)"
 slug: "condo-townhouse-disclosures"
-tags: ["condo", "townhouse", "disclosures", "real", "estate", "property"]
+tags: ["real-estate", "hoa", "condo-disclosure", "resale-certificate", "property-management", "special-assessment"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #999; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+  <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 25px;">
+    <div style="font-weight: bold; font-size: 1.2em;">PREMIER PROPERTY MANAGEMENT, LLC</div>
+    <div style="font-size: 0.85em; color: #666;">Official HOA Resale Disclosure</div>
+  </div>
+
+  <h3 style="text-align: center; text-transform: uppercase; margin-bottom: 20px;">Condominium Resale Certificate</h3>
+
+  <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+    <p><strong>Association:</strong> <span data-bracket="start" data-for="condo">]</span>Skyline Towers Condominium Association<br>
+    <strong>Unit Address:</strong> 400 Skyline Blvd, Unit 12A, Austin, TX</p>
+
+    <div style="background: #f9f9f9; padding: 15px; border: 1px solid #eee; margin: 20px 0;">
+      <p><strong>Monthly HOA Dues:</strong> $ 450.00 (Current)</p>
+      <p><strong>Special Assessments:</strong> $ 12,500.00 (Balcony Repair - Due July 2026)</p>
+      <p><strong>Reserve Fund Status:</strong> $ 1,240,500 (Adequate)</p>
+    </div>
+
+    <p>There are no known violations of the CC&Rs or outstanding architectural citations against this unit.</p>
+  </div>
+
+  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+    <div style="width: 45%;">
+      <div style="border-top: 1px solid #000; padding-top: 5px; font-style: italic;">Sarah Miller, Manager</div>
+      <div style="font-size: 0.8em; color: #777;">March 15, 2026</div>
+    </div>
+    <div style="text-align: right; font-size: 0.8em; color: #777;">
+      Ref #: HOA-992288
+    </div>
+  </div>
+
+  <div data-verify-line="condo" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+      title="Demo only: Property manager doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:premier-mgmt.com/hoas/v/SKYLINE-12A <span data-bracket="end" data-for="condo">]</span>
+  </div>
+</div>
+
 ## Data Verified
 
-Seller name, buyer name, HOA details, special assessments, property address
+HOA name, property unit address, current monthly dues, special assessment amounts/dates, reserve fund balance, violation status, rental restrictions (if any), management firm ID, date of issuance.
+
+**Document Types:**
+- **Resale Certificate:** Mandatory for most US condo sales.
+- **Estoppel Letter:** Confirming the seller's debt status to the HOA.
+- **Budget Disclosure:** Proving the financial health of the building.
+- **CC&R Extract:** Proving the latest version of the rules.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`premier-mgmt.com`, `associa.com`) and current unit standing.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Cleared** — All dues paid; no violations.
+- **Arrears** — Seller owes money to the HOA (must be settled at closing).
+- **Violation Active** — Unresolved architectural or noise citations.
+- **Pending Assessment** — A new special assessment was just voted on.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Seller** benefits from verification.
 
-**Ownership Verification:** Confirm property documents are authentic.
+**Smooth Closing:** Proving to the buyer's title company that the $12,500 special assessment is the *only* outstanding debt. This prevents the title company from escrowing too much money or delaying the closing because of "vague" HOA paperwork.
 
-**Transaction Support:** Provide verified documents for sales, refinancing, or transfers.
-
-**Title Insurance:** Supply verified documentation for title insurance requirements.
-
-**Legal Protection:** Maintain verified records for potential disputes.
-
-**Record Accuracy:** Verify recorded information matches expectations.
+**Marketing:** Showing a "Verified Violation-Free" status to potential buyers, making the unit more attractive than others with unverified histories.
 
 ## Third-Party Use
 
-**Lenders and Financial Institutions**
+**Home Buyers**
+**Due Diligence:** Scanning the disclosure provided by the seller. Verification ensures the seller didn't "Delete" the page showing a $50,000 pending roof assessment to trick the buyer into a bad deal.
 
-Credit underwriting and risk assessment:
+**Mortgage Underwriters**
+**Risk Assessment:** Lenders verify the "Reserve Fund" status. If the HOA is under-funded, the bank might refuse the mortgage. Verified disclosures reduce the underwriter's manual "HOA Questionnaire" workload.
 
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Insurance Companies**
-
-Underwriting and claims processing:
-
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
-
-**Government Agencies**
-
-Compliance enforcement and administration:
-
-**Inspection Verification:** Field agents verify permits and licenses at sites.
-
-**Enforcement Actions:** Confirm documentation before enforcement.
-
-**Benefit Eligibility:** Verify supporting documents for benefits administration.
-
-**Compliance Audits:** Audit documentation for regulatory compliance.
-
-**Interagency Coordination:** Share verified documents across agencies.
-
-**Real Estate Professionals**
-
-Property transactions and due diligence:
-
-**Purchase Due Diligence:** Verify property documents during transactions.
-
-**Listing Preparation:** Confirm permits and documentation for listings.
-
-**Disclosure Compliance:** Validate required disclosures and permits.
-
-**Title Research:** Verify property documents for title clearance.
-
-**Appraisal Support:** Confirm documented improvements and permits.
+**Title Companies**
+**Lien Search:** Confirming the exact amount of dues owed to ensure the HOA lien is properly satisfied at the moment of transfer.
 
 ## Verification Architecture
 
-**The Condominium/townhouse disclosure statements Fraud Problem**
+**The "HOA Surprise" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Assessment Hiding:** Editing the PDF to change a $20,000 special assessment to $0.
+- **Rental Restriction Erasure:** Deleting the page that says "No short-term rentals" to sell the unit to an unsuspecting Airbnb investor.
+- **Fabricated Estoppels:** Creating a fake management letter to hide years of unpaid dues.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Property Management Firms:** (Associa, FirstService Residential).
+**Self-Managed HOA Boards.**
+**HOA Tech Platforms:** (e.g., HomeWiseDocs, CondoCerts).
 
-**Government Entities:** Counties, cities, and special districts maintain property records.
+## Competition vs. HOA Search Portals
 
-**Title Companies:** Title insurers and escrow companies for transaction documents.
+| Feature | OCR-to-Hash | HomeWiseDocs / CondoCerts | Scanned PDF |
+| :--- | :--- | :--- | :--- |
+| **Trust Anchor** | **Domain-Bound.** Bound to the Mgmt firm. | **System-Bound.** Trust the vendor platform. | **Zero.** Easily forged. |
+| **Cost** | **Free.** (Marginal hosting). | **Very High.** Disclosure packs cost $300-$600 each. | **None.** |
+| **User Access** | **Instant.** Scan the paper in the lobby. | **Slow.** Requires paying a fee and waiting 3-5 days. | **Instant.** |
+| **Integrity** | **Binds Content.** Proves the *Dues* match. | **Data-Only.** | **Vulnerable.** |
 
-**Lending Institutions:** Banks and mortgage companies for loan documents.
-
-**Appraisal Firms:** Licensed appraisers for property valuations.
-
-**System Integration**
-
-Real estate verification connects to property systems:
-
-**Recording Systems:** County recorder systems for property document registration.
-
-**MLS Integration:** Multiple listing services for property documentation.
-
-**Title Plants:** Title companies maintain verification for title searches.
-
-**E-Recording:** Electronic recording systems generate verification at recording.
-
-## Rationale
-
-Domain binding verifies HOA/property manager. Standard forms suitable for OCR. Transaction transparency. Buyer protection.
+**Why OCR wins here:** Cost and Immediacy. HOA disclosure portals are notoriously expensive and slow. OCR-to-hash allows a buyer to verify the **authenticity of the specific document** they already received, without needing to pay a third-party platform another $400 for a fresh copy of the same data.

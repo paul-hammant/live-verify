@@ -1,94 +1,116 @@
 ---
-title: "Equal Employment Opportunity (EEO/EEOC) posters"
+title: "Equal Employment Opportunity (EEOC) Posters"
 category: "Mandatory Workplace Postings"
 volume: "Very Large"
 retention: "Current version"
 slug: "eeo-eeoc-posters"
-tags: ["eeoc", "posters", "mandatory", "workplace", "postings"]
+tags: ["eeoc", "eeo", "labor-law", "workplace-rights", "discrimination", "mandatory-posting", "compliance", "civil-rights"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 3px solid #002d62; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="background: #002d62; color: #fff; padding: 20px; text-align: center; display: flex; align-items: center; justify-content: center;">
+    <div style="font-size: 2em; margin-right: 15px;">⚖️</div>
+    <div>
+      <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">EQUAL EMPLOYMENT OPPORTUNITY</h2>
+      <div style="font-size: 0.85em; opacity: 0.9;">Know Your Rights: Workplace Discrimination is Illegal</div>
+    </div>
+  </div>
+
+  <div style="padding: 30px;">
+    <h3 style="margin-top: 0; color: #002d62; font-size: 1.1em; border-bottom: 2px solid #002d62; padding-bottom: 5px;">PROTECTED CHARACTERISTICS</h3>
+    
+    <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
+      <p>The law prohibits discrimination on the basis of:</p>
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+        <ul style="width: 45%; margin: 0; padding-left: 20px;">
+          <li>Race / Color</li>
+          <li>Religion</li>
+          <li>Sex / Gender</li>
+          <li>Pregnancy</li>
+        </ul>
+        <ul style="width: 45%; margin: 0; padding-left: 20px;">
+          <li>National Origin</li>
+          <li>Age (40+)</li>
+          <li>Disability</li>
+          <li>Genetic Info</li>
+        </ul>
+      </div>
+
+      <p style="margin-top: 20px;"><strong>Employer:</strong> <span data-bracket="start" data-for="eeo">]</span>Acme Global Hub, Inc.<br>
+      <strong>Poster Version:</strong> 2026-A (Digital & Print)</p>
+    </div>
+
+    <div style="margin-top: 25px; padding: 10px; background: #f0f4f8; border: 1px solid #d1d9e6; font-size: 0.8em; color: #002d62; font-style: italic; text-align: center;">
+      Verified compliant with EEOC "Know Your Rights" requirements. Scan to report a violation or view latest versions.
+    </div>
+
+    <div data-verify-line="eeo" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: EEOC doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:eeoc.gov/posters/v/2026-A <span data-bracket="end" data-for="eeo">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-None (informational), EEOC contact, discrimination complaint process
+Poster version ID (e.g., 2026-A), issuing authority (EEOC), mandated text integrity, employer name (if custom-printed), effective date of policy changes, accessibility status (e.g., Audio/Braille link).
+
+**Document Types:**
+- **Federal EEO Poster:** The standard legal notice.
+- **State-Specific EEO Notice:** Covering local laws (e.g., California Fair Employment).
+- **Sexual Harassment Prevention Poster:** Mandatory in many jurisdictions.
+- **Pay Transparency Notice:** Listing required salary range disclosures.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`eeoc.gov`) and the version status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Current** — Poster contains the latest mandatory legal language.
+- **Outdated** — Law has changed; employer must replace the poster (e.g., new "Pregnant Workers" act language).
+- **Void** — Poster retracted due to error in translation or text.
+- **Informational** — No longer mandatory but remains for archival purposes.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Employer** benefits from verification.
 
-**Document Authenticity:** Verify received documents are genuine and properly issued.
+**Compliance Shield:** Proving to a labor law inspector that the "EEO Poster" in the breakroom is the **Verified Current Version**. This prevents the $10,000+ fines often issued for "Outdated Labor Law Postings" during routine audits.
 
-**Third-Party Presentation:** Provide verified documentation when required.
-
-**Compliance Requirements:** Meet regulatory or contractual documentation requirements.
-
-**Record Keeping:** Maintain verified records for future reference or audits.
-
-**Dispute Prevention:** Establish authenticity to prevent future challenges.
+**Digital Compliance:** Proving that the "EEO Link" in the corporate Intranet or Slack channel is verified authentic, fulfilling the requirements for "Remote Worker Notification."
 
 ## Third-Party Use
 
-**Auditors and Compliance Officers**
+**Employees**
+**Rights Awareness:** Scanning the poster to verify that the "Complaint Process" listed is the official one. Verification prevents "Fake Postings" where a dishonest manager might list a non-functioning email address to discourage reporting.
 
-Internal and external audits:
+**Labor Law Inspectors**
+**Rapid Audit:** During a surprise site visit, the inspector can scan the bulletin board. "Verified by eeoc.gov" allows the inspector to focus on other safety risks instead of reading the fine print of every poster.
 
-**Financial Audits:** Verify documents during financial statement audits.
-
-**Compliance Audits:** Validate documentation for regulatory compliance.
-
-**Internal Controls:** Test document authenticity in control assessments.
-
-**Fraud Investigations:** Verify documents in fraud examinations.
-
-**Third-Party Audits:** Validate vendor and partner documentation.
+**Union Organizers**
+**Workplace Fairness:** Ensuring that management is providing accurate and verified information about employee civil rights.
 
 ## Verification Architecture
 
-**The Equal Employment Opportunity (EEO/EEOC) posters Fraud Problem**
+**The "Poster Scam" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Compliance Scams:** Private companies scaring small businesses into buying $200 "Mandatory Poster Bundles" that are actually outdated or unnecessary. A verified hash allows the business to see the "Official Free Version."
+- **Language Alteration:** Editing the text to remove mention of "Gender Identity" or "Religious Accommodation" to mislead employees about their rights.
+- **Status Faking:** Displaying an old 2018 poster in 2026 to hide new legal protections from workers.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**U.S. Equal Employment Opportunity Commission (EEOC):** (The primary authority).
+**U.S. Department of Labor (DOL).**
+**State Fair Employment Agencies.**
 
-**Primary Issuers:** Organizations with direct authority to issue these documents.
+## Competition vs. Poster Bundle Vendors
 
-**Licensed Professionals:** Professionals authorized to create and certify documents.
+| Feature | OCR-to-Hash | Private Poster Vendor | Gov PDF Printout |
+| :--- | :--- | :--- | :--- |
+| **Trust Anchor** | **Domain-Bound.** Bound to `eeoc.gov`. | **Brand-Bound.** Trust the vendor. | **Visual.** |
+| **Cost** | **Free.** (Marginal hosting). | **High.** $100-$300/year for updates. | **Free.** |
+| **Freshness** | **Real-time.** Shows if outdated today. | **Laggy.** Depends on mail delivery. | **None.** |
+| **Integrity** | **Cryptographic.** Protects every word. | **Zero.** Easily edited. | **Vulnerable.** |
 
-**Government Agencies:** Federal, state, or local agencies with jurisdiction.
-
-**Industry Bodies:** Trade associations and professional organizations.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Prevents fake EEO posters. Domain binding verifies EEOC (eeoc.gov). Federal posting requirement (employers with 15+ employees). Employee rights notification. Discrimination complaint access.
+**Why OCR wins here:** The "Mandatory Update" problem. Labor laws change every year. Employers currently waste millions of dollars on "Subscription Poster Services." OCR-to-hash turns the **One-Time Printout** into a dynamic compliance tool that tells the employer *exactly* when it needs to be swapped, saving money and increasing legal protection.

@@ -1,125 +1,103 @@
 ---
-title: "Chargeback documentation and dispute records"
+title: "Chargeback Documentation and Dispute Records"
 category: "Banking & Payments"
 volume: "Small"
 retention: "3-7 years (dispute resolution)"
 slug: "chargeback-documentation"
-tags: ["chargeback", "documentation", "banking", "financial", "services"]
+tags: ["chargeback", "payment-dispute", "visa", "mastercard", "ecommerce-fraud", "merchant-protection"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="background: #003087; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+    <div style="font-weight: bold; font-size: 1.2em;">PAYPAL MERCHANT SERVICES</div>
+    <div style="font-size: 0.8em;">Dispute Case: PP-D-99887766</div>
+  </div>
+
+  <div style="padding: 25px;">
+    <h3 style="margin-top: 0; color: #003087; border-bottom: 2px solid #003087; padding-bottom: 5px;">CHARGEBACK DISPUTE SUMMARY</h3>
+
+    <div style="font-size: 0.9em; line-height: 1.5; color: #333;">
+      <p><strong>Merchant:</strong> <span data-bracket="start" data-for="chargeback">]</span>Electronic Emporium, LLC<br>
+      <strong>Transaction Date:</strong> Feb 10, 2026<br>
+      <strong>Amount Disputed:</strong> $ 1,250.00</p>
+
+      <div style="background: #f5f5f5; border: 1px solid #ddd; padding: 15px; margin: 15px 0;">
+        <p><strong>Reason Code:</strong> 10.4 (Other Fraud - Card-Not-Present)</p>
+        <p><strong>Merchant Evidence Status:</strong> COMPELLED<br>
+        <strong>Proof of Delivery:</strong> FedEx Tracking #9922887766<br>
+        <strong>IP Address:</strong> 192.168.1.42 (Verified Match)</p>
+      </div>
+
+      <p style="font-weight: bold; color: #2e7d32;">CURRENT STATUS: DISPUTE WON - FUNDS REVERSED TO MERCHANT</p>
+    </div>
+
+    <div data-verify-line="chargeback" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: PayPal doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:paypal.com/disputes/v/PP-D-99887766 <span data-bracket="end" data-for="chargeback">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Merchant, customer, transaction details, chargeback reason, evidence
+Merchant name, Case ID, disputed amount, transaction date, reason code (Visa/MC standard), evidence summary (Tracking #, IP, AVS match), final resolution status, date of resolution.
+
+**Document Types:**
+- **Chargeback Notification:** Initial alert to the merchant.
+- **Dispute Response Summary:** The evidence pack sent to the bank.
+- **Final Adjudication Letter:** Proving the outcome (Won/Lost).
+- **Pre-Arbitration Notice:** For high-value escalations.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`paypal.com`, `stripe.com`, `chase.com`) and case standing.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Resolved - Won** — Merchant kept the funds.
+- **Resolved - Lost** — Funds returned to the cardholder.
+- **In-Review** — Evidence submitted; waiting for bank decision.
+- **Arbitration Pending** — Escalated to the card network (Visa/MC).
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Merchant** (Business Owner) benefits from verification.
 
-**Record Verification:** Confirm financial documents match expectations.
+**Collateralized Lending:** Proving to a lender that a "Reserve Fund" or "Dispute Spike" is temporary and that most recent high-value cases have been "Verified Won." This protects the merchant's credit lines.
 
-**Tax Preparation:** Provide verified documentation for tax filing.
-
-**Audit Support:** Maintain verified records for potential audits.
-
-**Dispute Resolution:** Use verified documents to resolve discrepancies.
-
-**Loan Applications:** Present verified financial documentation to lenders.
+**Vendor Trust:** Proving to a supplier that a specific large order wasn't "Fraudulent" but was a verified, settled transaction, ensuring the supplier continues to ship goods.
 
 ## Third-Party Use
 
-**Regulators and Oversight Bodies**
+**Acquiring Banks / Processors**
+**Risk Monitoring:** Processors can verify the outcome of disputes across different platforms to build a "Merchant Reputation" profile. Verified wins reduce the merchant's risk score.
 
-Regulatory compliance and oversight:
+**Business Buyers (M&A)**
+**Due Diligence:** A buyer of an e-commerce brand needs to verify the "Chargeback Rate" claims. OCR-to-hash allows them to scan random dispute letters to ensure they haven't been "Photoshopped" to hide a 5% fraud rate.
 
-**Systematic Hash Receipt:** Receive hashes in bulk for regulatory oversight.
-
-**Audit Verification:** Verify documents during routine or targeted audits.
-
-**Compliance Monitoring:** Monitor issuer compliance with documentation requirements.
-
-**Investigation Support:** Verify documents during fraud or compliance investigations.
-
-**Consumer Protection:** Verify consumer-facing documents for protection enforcement.
-
-**Lenders and Financial Institutions**
-
-Credit underwriting and risk assessment:
-
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
+**Credit Card Networks (Visa / Mastercard)**
+**Audit Compliance:** Verifying that the evidence submitted by the merchant matches the summary provided to the issuing bank.
 
 ## Verification Architecture
 
-**The Chargeback documentation and dispute records Fraud Problem**
+**The "Friendly Fraud" Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Income Inflation:** Inflating income or assets on financial documents
-- **Photoshop Fraud:** Digital manipulation of statements and documents
-- **Shell Company Documents:** Documents from fake or shell entities
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Fabricated Resolutions:** A merchant editing a "Lost" letter to say "Won" to avoid being kicked off a payment platform for high fraud.
+- **Evidence Tampering:** Altering a FedEx tracking number on the PDF summary to make it look like a package was delivered when it wasn't.
+- **Ghost Cases:** Creating fake dispute notifications to justify "withholding" payments to sub-vendors or affiliates.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Payment Processors:** (PayPal, Stripe, Adyen).
+**Acquiring Banks:** (Chase, Wells Fargo, Barclays).
+**Dispute Management Platforms:** (Chargebacks911, Chargehound).
 
-**Banks and Credit Unions:** Depository institutions for account documents.
+## Competition vs. Processor Portals
 
-**Investment Firms:** Brokerage and investment management firms.
+| Feature | OCR-to-Hash | Processor Dashboard | Scanned PDF |
+| :--- | :--- | :--- | :--- |
+| **User Control** | **High.** Share one specific case proof. | **Low.** Giving portal access reveals *all* financial data. | **Medium.** |
+| **Trust Anchor** | **Domain-Bound.** Bound to the Processor. | **System-Bound.** | **Zero.** Easily forged. |
+| **Interoperability** | **Universal.** Works for any bank with a domain. | **Siloed.** Hard to aggregate across multiple processors. | **Universal.** |
+| **Permanence** | **Snapshot.** Proves the state at resolution. | **Dynamic.** Data can shift or be archived. | **Vulnerable.** |
 
-**Insurance Companies:** Insurers for policy and claims documents.
-
-**Accounting Firms:** CPAs and audit firms for financial statements.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Prevents forged chargeback evidence. Domain binding verifies processor/bank. Tamper-evident dispute record. Merchant protection (fraudulent chargebacks). Card network compliance (Visa/MC dispute rules). Audit trail for appeals.
+**Why OCR wins here:** Selective Disclosure. A merchant needs to prove they "Won the Big Dispute" to a lender without giving that lender a password to their entire Stripe account. OCR-to-hash turns the **Adjudication Letter** into a portable, cryptographically trusted "Victory Token."

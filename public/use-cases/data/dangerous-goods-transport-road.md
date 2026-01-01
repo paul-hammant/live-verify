@@ -1,122 +1,111 @@
 ---
-title: "Dangerous goods transport documents (ADR/DOT)"
+title: "Dangerous Goods Transport (ADR/DOT)"
 category: "Customs & Trade Compliance"
-volume: "Small"
+volume: "Medium"
 retention: "7-30 years (safety/liability)"
 slug: "dangerous-goods-transport-road"
-tags: ["dangerous", "goods", "transport", "road", "logistics", "transportation"]
+tags: ["adr", "dot-hazmat", "dangerous-goods", "road-transport", "safety-data-sheet", "logistics", "highway-safety"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #ff9800; background: #fff; padding: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <div style="background: #ff9800; color: #fff; padding: 15px; text-align: center;">
+    <h2 style="margin: 0; text-transform: uppercase; font-size: 1.2em;">DANGEROUS GOODS TRANSPORT DOCUMENT</h2>
+    <div style="font-size: 0.8em;">In accordance with ADR 5.4.1 / DOT 172.200</div>
+  </div>
+
+  <div style="padding: 20px; font-size: 0.85em;">
+    <div style="display: flex; border-bottom: 1px solid #ff9800; padding-bottom: 10px; margin-bottom: 10px;">
+      <div style="width: 50%; border-right: 1px solid #ff9800; padding-right: 10px;">
+        <strong>1. Consignor (Shipper):</strong><br>
+        <span data-bracket="start" data-for="road-dg">]</span>EuroChem Industrial, SA<br>
+        Lyon, France
+      </div>
+      <div style="width: 50%; padding-left: 10px;">
+        <strong>2. Carrier:</strong><br>
+        Trans-Euro Freight, Ltd.<br>
+        Berlin, Germany
+      </div>
+    </div>
+
+    <div style="margin: 15px 0; background: #fff3e0; padding: 10px; border: 1px solid #ffe0b2;">
+      <p style="font-weight: bold; margin: 0 0 5px 0;">HAZARDOUS MATERIALS DESCRIPTION:</p>
+      <p style="font-family: monospace; font-size: 1.1em; margin: 0;">UN 1203, GASOLINE, 3, PG II, (D/E)</p>
+      <p style="margin: 5px 0 0 0;">Quantity: 24,000 Liters (Bulk Tanker)</p>
+    </div>
+
+    <p><strong>3. Emergency Contact:</strong> CHEMTREC +1 703-527-3887</p>
+
+    <div style="margin-top: 15px; font-style: italic; font-size: 0.8em; color: #555;">
+      The driver confirms the vehicle is equipped with mandatory fire extinguishers and ADR/DOT placards.
+    </div>
+
+    <div data-verify-line="road-dg" style="border-top: 1px dashed #ff9800; margin-top: 20px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #555; text-align: center;"
+      title="Demo only: Carrier doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:trans-euro.com/dg/v/UN1203-ABC <span data-bracket="end" data-for="road-dg">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Shipper, carrier, consignee, hazmat UN number, packing group, emergency info
+Consignor name, Carrier ID (DOT/MC #), UN Number (e.g., UN1203), Proper Shipping Name, Hazard Class (1-9), Packing Group (I, II, III), ADR Tunnel Code (e.g., D/E), total quantity, emergency contact information, date of transport.
+
+**Document Types:**
+- **ADR Transport Document:** Standard for European road transport.
+- **DOT Hazmat Manifest:** Required for U.S. highway transport.
+- **SDS (Safety Data Sheet):** (Linked hash) for technical chemical properties.
+- **Driver Training Certificate:** Proving the driver is "Hazmat Endorsed."
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (the Shipper or Carrier) and the safety standing.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Verified** — Transport document matches the official manifest.
+- **In-Transit** — Goods are currently on the road.
+- **Delivered** — Shipment completed; cargo transferred.
+- **Restriction Active** — **ALERT:** Recent safety restriction on this chemical/route.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Truck Driver / Carrier** benefits from verification.
 
-**Document Authenticity:** Verify received documents are genuine and properly issued.
+**Roadside Inspections:** Proving to a Highway Patrol officer or Gendarmerie that the "Gasoline" declaration is verified by the shipper. This prevents the truck from being impounded due to a suspected "Paperwork Forgery" designed to hide more dangerous chemicals.
 
-**Third-Party Presentation:** Provide verified documentation when required.
-
-**Compliance Requirements:** Meet regulatory or contractual documentation requirements.
-
-**Record Keeping:** Maintain verified records for future reference or audits.
-
-**Dispute Prevention:** Establish authenticity to prevent future challenges.
+**Tunnel/Bridge Access:** Instantly proving compliance with "Tunnel Codes" (e.g., ADR Code D/E) to tunnel authorities, ensuring the truck is allowed to enter restricted infrastructure.
 
 ## Third-Party Use
 
-**Insurance Companies**
+**Highway Patrol / First Responders**
+**Accident Response:** If a tanker crashes, firefighters scan the hash on the paperwork or vehicle. "Verified by EuroChem" provides instant, trusted confirmation of the hazard class, potentially saving lives by ensuring the correct fire-suppression method is used.
 
-Underwriting and claims processing:
+**Facility Gate Security**
+**Site Safety:** A refinery or chemical plant can scan the driver's documents before opening the gate. Verification ensures the truck isn't carrying unauthorized or "Blacklisted" materials.
 
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Customs and Border Authorities**
-
-International trade compliance:
-
-**Import Clearance:** Verify shipping documents for customs clearance.
-
-**Duty Assessment:** Validate commercial invoices and declarations.
-
-**Trade Compliance:** Confirm certificates of origin and trade documents.
-
-**Security Screening:** Verify cargo documentation for security.
-
-**Export Controls:** Validate export documentation and licenses.
-
-**Freight Forwarders and Carriers**
-
-Logistics and transportation:
-
-**Shipment Acceptance:** Verify documents before accepting cargo.
-
-**Carrier Handoffs:** Validate documentation at transfer points.
-
-**Liability Determination:** Reference verified documents for claims.
-
-**Route Planning:** Confirm documentation for transit requirements.
-
-**Delivery Confirmation:** Verify documents at final delivery.
+**Environmental Agencies**
+**Liability Tracking:** Ensuring that high-risk chemicals are being moved by carriers with the verified insurance and safety records required for hazardous transport.
 
 ## Verification Architecture
 
-**The Dangerous goods transport documents (ADR/DOT) Fraud Problem**
+**The "High-Road" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **UN Number Tampering:** Editing a UN number for a "Highly Toxic" chemical to look like a "Low Hazard" liquid to take a shorter route through a city or tunnel.
+- **Driver Impersonation:** An un-endorsed driver using a fake "Hazmat Certificate" to drive a tanker.
+- **Phantom Manifests:** Creating fake DG papers to hide the illegal transport of chemical waste.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Chemical Shippers / Manufacturers.**
+**Transport Carriers.**
+**Hazmat Compliance Platforms:** (e.g., Labelmaster, DGOffice).
 
-**Primary Issuers:** Organizations with direct authority to issue these documents.
+## Competition vs. Central Portals (ERMA)
 
-**Licensed Professionals:** Professionals authorized to create and certify documents.
+| Feature | OCR-to-Hash | Gov Hazmat Portal | Paper Manifest |
+| :--- | :--- | :--- | :--- |
+| **Field Access** | **Instant.** Scan the paper at the crash site. | **Difficult.** Requires responders to have specific portal logins and stable internet. | **Instant.** |
+| **Trust Anchor** | **Domain-Bound.** Bound to the Shipper. | **Gov-Bound.** | **Zero.** Easily forged. |
+| **Connectivity** | **Strong.** Works in rural areas/dead zones. | **Fragile.** Portals often lag during emergencies. | **Offline.** |
+| **Integrity** | **Binds Data.** Protects the UN Number. | **Data-Only.** | **Vulnerable.** |
 
-**Government Agencies:** Federal, state, or local agencies with jurisdiction.
-
-**Industry Bodies:** Trade associations and professional organizations.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-ADR (EU) / DOT (USA) hazmat compliance. Domain binding verifies shipper/carrier. Prevents fake hazmat declarations (highway safety). Long liability retention. Emergency responder verification.
+**Why OCR wins here:** The "Emergency Response" reality. In a highway accident, seconds matter. First responders don't have time to navigate a government portal. OCR-to-hash turns the **Paper Manifest** into a live, trusted safety link that works anywhere there is a phone, ensuring that responders know exactly what they are dealing with before they approach the flames.

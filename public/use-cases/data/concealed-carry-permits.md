@@ -1,157 +1,106 @@
 ---
-title: "Concealed carry permits (CCW/CHL)"
+title: "Concealed Carry Permits (CCW)"
 category: "Professional & Occupational Licenses"
 volume: "Medium"
 retention: "Permit validity (1-5 years)"
 slug: "concealed-carry-permits"
-tags: ["concealed", "carry", "permits", "professional", "occupational", "licenses"]
+tags: ["ccw", "firearms-permit", "public-safety", "second-amendment", "law-enforcement", "concealed-carry", "identity-verification"]
 ---
+
+<div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+  <div style="background: #1a237e; color: #fff; padding: 15px; text-align: center; display: flex; align-items: center; justify-content: center;">
+    <div style="font-size: 1.5em; margin-right: 10px;">⭐</div>
+    <div>
+      <h3 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">STATE OF NEVADA</h3>
+      <div style="font-size: 0.8em;">CONCEALED FIREARMS PERMIT</div>
+    </div>
+  </div>
+
+  <div style="padding: 20px; display: flex;">
+    <div style="width: 100px; margin-right: 15px;">
+      <div style="width: 100px; height: 125px; background: #eee; display: flex; align-items: center; justify-content: center; color: #777; border: 1px solid #ccc; border-radius: 4px;">[PHOTO ID]</div>
+    </div>
+    <div style="flex-grow: 1;">
+      <div style="font-size: 1.1em; font-weight: bold; margin: 0 0 5px 0;"><span data-bracket="start" data-for="ccw">]</span>DOE, JOHN JACOB</div>
+      <div style="font-size: 0.85em; color: #333; line-height: 1.4;">
+        <strong>Permit #:</strong> NV-99228877<br>
+        <strong>DOB:</strong> 05/15/1985<br>
+        <strong>Sex:</strong> M  |  <strong>Ht:</strong> 6'0"  |  <strong>Wt:</strong> 180<br>
+        <strong>Expires:</strong> 05/15/2030
+      </div>
+    </div>
+  </div>
+
+  <div style="padding: 0 20px 20px 20px;">
+    <div style="font-size: 0.8em; font-weight: bold; color: #1a237e; text-align: center; margin-bottom: 5px;">WASHOE COUNTY SHERIFF</div>
+    <div data-verify-line="ccw" style="border-top: 1px dashed #999; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+      title="Demo only: Washoe Sheriff doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:washoesheriff.com/ccw/v/99228877 <span data-bracket="end" data-for="ccw">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Permit holder name, DOB, photo, permit number, issuing authority
+Permit holder name, photo (hash), date of birth, physical descriptors (height/weight), permit number, issuing county/agency, expiration date, restrictions (e.g., "Handgun only"), training completion status.
 
-**Permit Types:** Various permit subtypes may exist depending on jurisdiction and specific use.
+**Document Types:**
+- **Standard CCW Card:** The pocket ID.
+- **Interim Permit:** Temporary 30-day paper proof while card is mailed.
+- **Training Certificate:** Proof of passing the mandatory safety class.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`washoesheriff.com`, `lasvegasnevada.gov`) and current permit status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-- **Suspended** - Permit temporarily suspended
-- **Pending** - Permit application pending approval
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Active** — Permit is valid and bearer is eligible to carry.
+- **Suspended** — Temporary restriction (e.g., pending legal outcome).
+- **Revoked** — Permanently barred from concealed carry (e.g., after felony conviction).
+- **Expired** — Renewal required.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Permit Holder** benefits from verification.
 
-**Legitimacy Confirmation:** After obtaining permit, verify it was properly issued and recorded.
+**Interstate Reciprocity:** When carrying in a "Reciprocal" state (e.g., a Nevada resident in Idaho), the holder can scan their own badge to show local Idaho police that their home-state permit is "Verified Active" on the Nevada Sheriff's domain.
 
-**Compliance Display:** Maintain verified permit for posting requirements.
-
-**Scope Verification:** Confirm permitted activities match intended use.
-
-**Expiration Tracking:** Monitor permit status to avoid lapses.
-
-**Record Keeping:** Maintain verified documentation for audits and compliance.
+**Firearms Purchase:** Speeding up the background check (NICS) process in states where a verified CCW permit acts as an exemption for the waiting period.
 
 ## Third-Party Use
 
-**Lenders and Financial Institutions**
+**Law Enforcement (Roadside)**
+**Officer Safety:** During a traffic stop, if a driver declares they have a weapon, the officer can scan the CCW card. Instant verification against the Sheriff's domain confirms the driver is a "Verified Safe" law-abiding citizen and not an impostor with a fake ID.
 
-Credit underwriting and risk assessment:
+**Private Property Owners (Businesses)**
+**Policy Enforcement:** A business owner who allows concealed carry can verify that guests are actually licensed professionals and not just un-vetted individuals.
 
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Insurance Companies**
-
-Underwriting and claims processing:
-
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
-
-**Government Agencies**
-
-Compliance enforcement and administration:
-
-**Inspection Verification:** Field agents verify permits and licenses at sites.
-
-**Enforcement Actions:** Confirm documentation before enforcement.
-
-**Benefit Eligibility:** Verify supporting documents for benefits administration.
-
-**Compliance Audits:** Audit documentation for regulatory compliance.
-
-**Interagency Coordination:** Share verified documents across agencies.
-
-**Real Estate Professionals**
-
-Property transactions and due diligence:
-
-**Purchase Due Diligence:** Verify property documents during transactions.
-
-**Listing Preparation:** Confirm permits and documentation for listings.
-
-**Disclosure Compliance:** Validate required disclosures and permits.
-
-**Title Research:** Verify property documents for title clearance.
-
-**Appraisal Support:** Confirm documented improvements and permits.
+**Gun Range Safety Officers**
+**Insurance Compliance:** Ensuring all shooters on the line with concealed holsters have verified, current safety training and permits.
 
 ## Verification Architecture
 
-**The Concealed carry permits (CCW/CHL) Fraud Problem**
+**The "Fake Permit" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Permit Sharing:** Using one property's permit for work at another location
-- **Scope Expansion:** Expanding permitted activities beyond authorization
-- **Contractor Fraud:** Claiming permits that were never obtained
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Identity Swapping:** A person with a criminal record using a "Clean" person's ID and editing the photo.
+- **Revocation Hiding:** A permit holder who has had their rights revoked (e.g., after a domestic violence incident) keeping their physical card to show police.
+- **Fabricated Permits:** Criminals creating fake "Permits" to carry illegal weapons in public without being arrested if stopped.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**County Sheriffs:** (In most "Shall-Issue" states).
+**State Police:** (In "State-Issue" jurisdictions).
+**Department of Public Safety (DPS).**
 
-**Government Entities:** Counties, cities, and special districts maintain property records.
+**Privacy Salt:** ABSOLUTELY CRITICAL. Firearms data is highly sensitive and politicized. The hash MUST be salted to prevent "Guess-and-Check" searches of the entire county population to see who owns a gun.
 
-**Title Companies:** Title insurers and escrow companies for transaction documents.
+## Competition vs. Police Database (NCIC)
 
-**Lending Institutions:** Banks and mortgage companies for loan documents.
+| Feature | OCR-to-Hash | NCIC / NLETS (Police DB) | Physical Card |
+| :--- | :--- | :--- | :--- |
+| **User Access** | **Open.** Citizens and businesses can verify. | **Zero.** Only police have access. | **Manual.** Just looking. |
+| **Integrity** | **Cryptographic.** Binds photo to status. | **High.** Direct DB access. | **Low.** Easily faked. |
+| **Speed** | **Instant.** 5-second scan. | **Slow.** Requires dispatcher or laptop query. | **Instant.** |
+| **Cross-State** | **Seamless.** Works via URL. | **Complex.** State-to-state data sharing is often laggy. | **Hard.** Officers can't recognize 50 different state cards. |
 
-**Appraisal Firms:** Licensed appraisers for property valuations.
-
-**System Integration**
-
-Real estate verification connects to property systems:
-
-**Recording Systems:** County recorder systems for property document registration.
-
-**MLS Integration:** Multiple listing services for property documentation.
-
-**Title Plants:** Title companies maintain verification for title searches.
-
-**E-Recording:** Electronic recording systems generate verification at recording.
-
-## Rationale
-
-Prevents fake CCW permits. Domain binding verifies issuing authority (sheriff, state police). Law enforcement verification. Reciprocity verification (interstate). For privacy, issuers can add a random salt line to raise entropy and defeat guessing attacks.
+**Why OCR wins here:** The "Reciprocity Gap." An officer in Utah may not know what a Vermont CCW card looks like or how to query the Vermont state database. OCR-to-hash turns the **Physical Card** into a universal digital bridge that works across any state line, providing "Police-Level" trust to everyone from a patrol officer to a gun shop owner.

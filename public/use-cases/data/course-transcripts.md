@@ -1,129 +1,139 @@
 ---
-title: "Course transcripts and grade verification"
+title: "Course Transcripts and Grade Verification"
 category: "Professional & Educational Qualifications"
 volume: "Small"
 retention: "Permanent (academic records)"
 slug: "course-transcripts"
-tags: ["course", "transcripts", "professional", "educational", "qualifications"]
+tags: ["academic-transcript", "grades", "registrar", "university-transfer", "educational-verification", "higher-education"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+  <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 25px;">
+    <div style="font-weight: bold; font-size: 1.3em;">UNIVERSITY OF OXFORD</div>
+    <div style="font-size: 0.85em; color: #666;">Office of the University Registrar</div>
+  </div>
+
+  <h3 style="text-align: center; text-transform: uppercase; margin-bottom: 20px;">Official Academic Transcript Extract</h3>
+
+  <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
+    <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+      <div>
+        <strong>Student:</strong> <span data-bracket="start" data-for="transcript">]</span><strong>PONDER STIBBONS</strong><br>
+        <strong>Student ID:</strong> OX-992288
+      </div>
+      <div style="text-align: right;">
+        <strong>Date:</strong> March 15, 2026<br>
+        <strong>Page:</strong> 1 of 1
+      </div>
+    </div>
+
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
+      <tr style="border-bottom: 1px solid #000; font-weight: bold;">
+        <th style="text-align: left;">Course Code</th>
+        <th style="text-align: left;">Course Title</th>
+        <th style="text-align: center;">Grade</th>
+        <th style="text-align: right;">Credits</th>
+      </tr>
+      <tr>
+        <td>CS-402</td>
+        <td>Advanced Thaumaturgy</td>
+        <td style="text-align: center;">A+</td>
+        <td style="text-align: right;">4.0</td>
+      </tr>
+      <tr>
+        <td>CS-310</td>
+        <td>High Energy Magic</td>
+        <td style="text-align: center;">A</td>
+        <td style="text-align: right;">3.0</td>
+      </tr>
+      <tr>
+        <td>MT-201</td>
+        <td>Stochastic Divination</td>
+        <td style="text-align: center;">A-</td>
+        <td style="text-align: right;">3.0</td>
+      </tr>
+      <tr style="border-top: 1px solid #000; font-weight: bold;">
+        <td colspan="2">CUMULATIVE GPA:</td>
+        <td style="text-align: center;">3.92</td>
+        <td style="text-align: right;">10.0</td>
+      </tr>
+    </table>
+
+    <p style="font-size: 0.8em; font-style: italic;">
+      Verification confirms the grades and credits match the student's official record.
+    </p>
+  </div>
+
+  <div data-verify-line="transcript" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+      title="Demo only: Oxford doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:ox.ac.uk/registrar/v/992288-PS <span data-bracket="end" data-for="transcript">]</span>
+  </div>
+</div>
+
 ## Data Verified
 
-Student name, student ID, courses taken, grades, enrollment dates, degree program, institution name
+Student name, student ID, specific course codes/titles, individual grades (A-F), credit hours per course, cumulative GPA, degree program, enrollment dates, date of transcript issuance.
+
+**Document Types:**
+- **Official Transcript:** Comprehensive history of all terms.
+- **Transcript Extract:** Verified proof of specific grades for a job/transfer.
+- **Dean's List / Honors Letter:** Proving academic excellence.
+- **Transfer Credit Report:** Proving credits from a previous institution.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`ox.ac.uk`, `harvard.edu`) and current record status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Verified** — Content matches the official university database.
+- **Amended** — Grade change processed; this version is outdated.
+- **Subject to Investigation** — Transcript flagged for potential academic integrity issues.
+- **Invalid** — Student ID or course data mismatch.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Student / Alumnus** benefits from verification.
 
-**Credential Verification:** Confirm educational credentials after issuance.
+**University Transfer:** Proving to a new university that the "A+" in Advanced Thaumaturgy is legitimate and should be accepted for transfer credit. Verification prevents the 4-week delay of "Mailed Official Transcripts."
 
-**Job Applications:** Present verified credentials to prospective employers.
+**Job Applications:** Providing a verified "Transcript Extract" to an employer who requires proof of specific coursework (e.g., "Must have passed 2 coding classes").
 
-**Further Education:** Provide verified transcripts for graduate school applications.
-
-**Professional Licensing:** Submit verified credentials for license applications.
-
-**Immigration Applications:** Verify educational credentials for visa applications.
+**Visa / Immigration:** Proving educational background to a foreign government for a High-Skill Visa.
 
 ## Third-Party Use
 
-**Employers**
+**Graduate School Admissions**
+**Instant Evaluation:** Admissions officers can instantly verify the grades of international applicants by scanning their PDF transcripts, bypassing the expensive and slow "Third-Party Evaluation" services (e.g., WES).
 
-Educational credential verification:
-
-**Pre-Employment Screening:** Verify degree claims during hiring.
-
-**Credential Requirements:** Confirm candidates meet educational requirements.
-
-**Professional Positions:** Verify advanced degrees for specialized roles.
-
-**Background Checks:** Integrate verification into background screening.
-
-**Global Hiring:** Verify international degrees and credentials.
-
-**Graduate Schools and Universities**
-
-Admissions and transfer credit evaluation:
-
-**Graduate Admissions:** Verify undergraduate degrees for graduate programs.
-
-**Transfer Credit:** Validate transcripts for transfer credit evaluation.
-
-**Professional Programs:** Confirm prerequisites for law, medical, MBA programs.
-
-**International Admissions:** Verify foreign credentials for U.S. programs.
-
-**Consortium Agreements:** Cross-institutional degree verification.
+**Employers (HR Departments)**
+**GPA Verification:** Ensuring that a candidate hasn't "Rounded Up" their 2.9 GPA to a 3.5 on their resume. A verified transcript provides the "Source of Truth."
 
 **Professional Licensing Boards**
-
-License application review:
-
-**Initial Licensure:** Verify educational requirements for license applications.
-
-**Continuing Education:** Validate CE credit from accredited programs.
-
-**Specialization Certification:** Confirm educational prerequisites for specialties.
-
-**Foreign Credential Evaluation:** Verify international degrees for U.S. licensing.
-
-**Degree Equivalency:** Assess non-traditional or online degrees.
+**Prerequisite Proof:** Verifying that a candidate has taken the mandatory courses required for a professional license (e.g., the CPA exam or Medical Board).
 
 ## Verification Architecture
 
-**The Course transcripts and grade verification Fraud Problem**
+**The "Transcript Padding" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Diploma Mills:** Fake credentials from unaccredited institutions
-- **Grade Alteration:** Modified GPAs and course grades
-- **Degree Fabrication:** Fake degrees from legitimate institutions
-- **Credential Mills:** Online services selling fake transcripts
-- **Diploma Mills:** Fake credentials from non-accredited institutions
-- **Grade Alteration:** Modified transcripts with inflated grades
-- **Degree Fabrication:** Completely fabricated degrees from real institutions
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Grade Alteration:** Changing a "C" to an "A" in a PDF editor to get into a top-tier grad school.
+- **Ghost Courses:** Adding non-existent courses to a transcript to meet job requirements.
+- **Fictitious Degrees:** Creating a fake transcript from a real, famous university for a person who never attended.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**University Registrars:** (The primary authority).
+**National Student Clearinghouse:** (Centralized US record hub).
+**Digital Credential Platforms:** (e.g., Parchment, Digitary).
 
-**Universities and Colleges:** Accredited degree-granting institutions.
+**Privacy Salt:** ABSOLUTELY CRITICAL. Academic records are highly private (FERPA in the USA). The hash MUST be salted to prevent "Guess-and-Check" searches for student grades.
 
-**Registrars:** Academic records offices at educational institutions.
+## Competition vs. Official Electronic Delivery (Parchment)
 
-**Accreditation Bodies:** Regional and professional accreditors.
+| Feature | OCR-to-Hash | Electronic Delivery (Parchment) | Scanned PDF / Paper |
+| :--- | :--- | :--- | :--- |
+| **User Control** | **High.** Student chooses what to share and how. | **Low.** Locked into the vendor's secure portal. | **High.** |
+| **Trust Anchor** | **Domain-Bound.** Bound to the University. | **System-Bound.** Trust the vendor platform. | **Zero.** Easily forged. |
+| **Speed** | **Instant.** Scan the paper/PDF. | **Slow.** Often takes 24-48 hours to "Process." | **Instant.** |
+| **Cost** | **Low.** Standard web infra. | **Medium.** Fees of $10-$20 per transcript are common. | **None.** |
 
-**Testing Organizations:** Standardized testing and certification providers.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-University transfer verification and graduate school applications. Privacy-preserving verification protects student academic records. Similar to degree verification pattern with domain binding to university registrar. Prevents transcript fraud and grade tampering. Critical for academic transfers where course credits must be verified without exposing full academic history.
+**Why OCR wins here:** The "Hiring Manager" reality. Recruiters want to verify a candidate *now*, during the interview. They don't want to wait 2 days for an "Official Parchment Link" to be emailed to them. OCR-to-hash turns the **Candidate's PDF** into a live, trusted record that can be verified in seconds.

@@ -1,96 +1,116 @@
 ---
-title: "Boiler and pressure vessel inspection certificates"
+title: "Boiler and Pressure Vessel Inspection Certificates"
 category: "Safety Inspection Certificates"
 volume: "Medium"
 retention: "1-3 years (inspection cycle)"
 slug: "boiler-pressure-vessel-certificates"
-tags: ["boiler", "pressure", "vessel", "certificates", "safety", "inspection"]
+tags: ["boiler-safety", "pressure-vessel", "inspection", "safety-certificate", "asme", "mechanical"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 4px solid #388e3c; background: #fff; padding: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <div style="background: #388e3c; color: #fff; padding: 15px; text-align: center;">
+    <h2 style="margin: 0; text-transform: uppercase;">CERTIFICATE OF INSPECTION</h2>
+    <div style="font-size: 0.9em;">STATE BOARD OF BOILER RULES</div>
+  </div>
+
+  <div style="padding: 25px;">
+    <div style="text-align: center; border-bottom: 2px solid #388e3c; padding-bottom: 10px; margin-bottom: 20px;">
+      <h3 style="margin: 0; color: #2e7d32;">PERMISSION TO OPERATE</h3>
+      <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;">Jurisdiction #: NY-998877</div>
+    </div>
+
+    <div style="font-size: 0.9em; line-height: 1.5; color: #333;">
+      <p><strong>Location:</strong> <span data-bracket="start" data-for="boiler">]</span>Apex Steam Plant, Building 4<br>
+      <strong>Object ID:</strong> 42-B-2025 (High Pressure Steam)</p>
+
+      <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr>
+          <td style="border: 1px solid #ccc; padding: 8px;"><strong>Max Pressure:</strong></td>
+          <td style="border: 1px solid #ccc; padding: 8px;">150 PSI</td>
+        </tr>
+        <tr>
+          <td style="border: 1px solid #ccc; padding: 8px;"><strong>Inspection Type:</strong></td>
+          <td style="border: 1px solid #ccc; padding: 8px;">Internal / External</td>
+        </tr>
+        <tr>
+          <td style="border: 1px solid #ccc; padding: 8px;"><strong>Inspector:</strong></td>
+          <td style="border: 1px solid #ccc; padding: 8px;">R. Miller (NBBI #9982)</td>
+        </tr>
+      </table>
+
+      <p style="background: #e8f5e9; padding: 10px; border-radius: 4px; font-weight: bold; text-align: center; color: #1b5e20;">
+        EXPIRES: March 15, 2027
+      </p>
+    </div>
+
+    <div data-verify-line="boiler" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: State Boiler Board doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:labor.ny.gov/boilers/v/NY998877 <span data-bracket="end" data-for="boiler">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Facility address, boiler ID, inspector name/license, pressure rating, inspection date
+Jurisdiction number, Object ID, National Board (NB) number, manufacturer, year built, max allowable working pressure (MAWP), safety valve settings, inspector name/commission number, inspection date, expiration date.
 
-**Certificate Variations:** Multiple certificate types or levels may exist.
+**Document Types:**
+- **Permit to Operate:** The "framed" certificate in the mechanical room.
+- **NBIC Form NB-5:** The detailed inspector's work report.
+- **Certificate of Competency:** For the boiler operator (person).
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`labor.ny.gov`, `nbbi.org`) and current safety status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Valid** — Object passed inspection and is safe to fire.
+- **Overdue** — Mandatory inspection interval has passed.
+- **Red Tagged** — Operation prohibited due to safety hazard (e.g., thinning shell, faulty valves).
+- **Decommissioned** — Object removed from service.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Building/Plant Owner** benefits from verification.
 
-**Authenticity Confirmation:** Verify certificate after receipt to confirm it's genuine.
+**Occupational Safety:** Proving to employees and labor unions that the high-pressure equipment they work around has been verified as safe by the state authority.
 
-**Credential Display:** Present verified credentials to employers or clients.
+**Insurance Compliance:** Boiler & Machinery (B&M) insurance is contingent on valid state certificates. A verified link prevents "Coverage Denial" in the event of a failure.
 
-**Professional Development:** Track verified certifications for career advancement.
-
-**Compliance Documentation:** Maintain verified certificates for regulatory requirements.
-
-**Renewal Planning:** Monitor certification status to avoid expiration.
+**Property Sale:** Providing a verified safety history to a potential buyer during due diligence.
 
 ## Third-Party Use
 
-**Auditors and Compliance Officers**
+**Insurance Loss Control**
+**Risk Underwriting:** B&M insurers verify the state certificates before writing policies. Fraudulent or expired certificates lead to catastrophic explosion risk.
 
-Internal and external audits:
+**Fire Marshals / Safety Inspectors**
+**Field Audit:** During a routine fire inspection, the marshal can scan the boiler tag. "Verified by State Board" ensures the building isn't operating a "Phantom Boiler" that hasn't been inspected in years.
 
-**Financial Audits:** Verify documents during financial statement audits.
-
-**Compliance Audits:** Validate documentation for regulatory compliance.
-
-**Internal Controls:** Test document authenticity in control assessments.
-
-**Fraud Investigations:** Verify documents in fraud examinations.
-
-**Third-Party Audits:** Validate vendor and partner documentation.
+**Neighboring Businesses**
+**Industrial Safety:** In dense industrial parks, neighboring companies can verify that adjacent high-pressure steam plants are compliant, ensuring community safety.
 
 ## Verification Architecture
 
-**The Boiler and pressure vessel inspection certificates Fraud Problem**
+**The "Red Tag" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Certificate Hiding:** If a boiler fails inspection, the state "Red Tags" it. Shady owners often remove the Red Tag and leave the old, valid-looking certificate on the wall. Verification reveals the "Red Tag" status instantly.
+- **Pressure Tampering:** Editing a certificate to read "150 PSI" when the inspector only authorized "100 PSI" to increase factory output.
+- **Inspector Impersonation:** Forging a certificate using the name of a retired or deceased inspector.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**State Boiler Boards:** (e.g., NY Dept of Labor, Texas TDLR).
+**Insurance Carriers:** (Qualified inspectors from firms like HSB - Hartford Steam Boiler).
+**National Board (NBBI):** Overseeing the global commission standards.
 
-**Primary Issuers:** Organizations with direct authority to issue these documents.
+## Competition vs. Physical Metal Tags
 
-**Licensed Professionals:** Professionals authorized to create and certify documents.
+| Feature | OCR-to-Hash | Metal Stamped Tag | Paper Certificate |
+| :--- | :--- | :--- | :--- |
+| **Trust** | **Cryptographic.** Links to the State DB. | **Mechanical.** Hard to forge, but static. | **Zero.** Easily photocopied. |
+| **Integrity** | **Binds Settings.** Protects the PSI limit. | **Static.** Shows the build limit, not the *current* limit. | **Vulnerable.** |
+| **Freshness** | **Real-time.** Shows if it was failed *yesterday*. | **Permanent.** Shows when it was made in 1995. | **Laggy.** |
+| **Visibility** | **Digital.** Can be audited remotely. | **Physical.** Must be in the room to read it. | **Manual.** |
 
-**Government Agencies:** Federal, state, or local agencies with jurisdiction.
-
-**Industry Bodies:** Trade associations and professional organizations.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Prevents fake boiler certificates. Domain binding verifies authorized inspector (state/insurance company). Explosion hazard prevention. ASME Boiler Code compliance. Required for insurance coverage.
+**Why OCR wins here:** Freshness. A boiler can become unsafe one hour after the inspector leaves. OCR-to-hash turns the "Snapshot in Time" certificate into a live "Safety Heartbeat" that protects lives by showing the latest known status of the pressure vessel.

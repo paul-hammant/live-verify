@@ -1,129 +1,111 @@
 ---
-title: "Fine art insurance (all-risk, nail-to-nail exhibition)"
+title: "Fine Art Insurance (Nail-to-Nail)"
 category: "Specialty Insurance"
 volume: "Small"
 retention: "Policy term / exhibition + 10 years"
 slug: "fine-art-insurance"
-tags: ["fine", "insurance", "risk", "management"]
+tags: ["fine-art", "museum-insurance", "nail-to-nail", "lloyds", "art-theft", "exhibition-coverage", "risk-management"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 2px solid #002366; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+  <div style="background: #002366; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+    <div>
+      <div style="font-weight: bold; font-size: 1.2em;">AXA ARTPRIVÉ</div>
+      <div style="font-size: 0.8em;">Specialist Fine Art & Collectibles</div>
+    </div>
+    <div style="text-align: right;">
+      <div style="font-size: 0.8em;">Policy #: ART-99228877-26</div>
+    </div>
+  </div>
+
+  <div style="padding: 35px;">
+    <h2 style="text-align: center; color: #002366; font-size: 1.4em; margin-bottom: 25px; text-transform: uppercase; letter-spacing: 1px;">Evidence of Fine Art Coverage</h2>
+
+    <div style="font-size: 1em; line-height: 1.6; color: #333;">
+      <p>This document confirms all-risk "Nail-to-Nail" coverage for the following work:</p>
+
+      <div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin: 20px 0;">
+        <strong>Object:</strong> <span data-bracket="start" data-for="art-ins">]</span>Claude Monet, <em>Water Lilies</em> (1906)<br>
+        <strong>Agreed Value:</strong> $ 85,000,000.00
+      </div>
+
+      <p><strong>Coverage Scope:</strong> Worldwide transit and exhibition, including accidental damage, theft, and mysterious disappearance.</p>
+      
+      <p><strong>Exhibition:</strong> The Met, New York (March-June 2026)<br>
+      <strong>Effective:</strong> 01 MAR 2026 to 01 JUL 2026</p>
+    </div>
+
+    <div style="margin-top: 40px; border-top: 1px solid #ccc; padding-top: 10px; font-size: 0.8em; color: #666; font-style: italic; text-align: center;">
+      Subject to professional packing and climate-controlled transit by approved handlers (e.g., Crozier).
+    </div>
+
+    <div data-verify-line="art-ins" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: AXA Art doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:axa-art.com/v/MONET-992288 <span data-bracket="end" data-for="art-ins">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Owner, artwork details, valuation, exhibition locations, transit route
+Owner name, specific artwork title/artist, "Agreed Value" amount, coverage type (Nail-to-Nail), exhibition location(s), transit route, approved packing company ID, effective dates, issuing specialist syndicate.
 
-**Policy Forms:** Different policy forms and endorsements may apply.
+**Document Types:**
+- **Evidence of Insurance:** For museum loan committees.
+- **Nail-to-Nail Transit Policy:** Covering the move from wall to truck to museum.
+- **Title Insurance (Art):** Protecting against restitution or ownership claims.
+- **Valuation Endorsement:** Linking a verified appraisal to the policy.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`axa-art.com`, `hiscox.com`, `chubb.com`) and policy status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-- **Cancelled** - Policy cancelled before expiration
-- **Non-Renewed** - Policy expired and not renewed
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **In Force** — Premium paid; masterpiece covered.
+- **Transit Active** — **ALERT:** The work is currently in the high-risk "Move" phase.
+- **Terminated** — Coverage ended post-exhibition.
+- **Claim Active** — Incident reported; under investigation.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Art Owner (Collector / Museum)** benefits from verification.
 
-**Proof of Coverage:** Verify coverage is active when needed for compliance or access.
+**Museum Loans:** Proving to a lending museum (e.g., the Louvre) that their $85M Monet is "Verified Insured" for the entire trip. Museums won't release masterpieces without 100% cryptographic certainty that the insurance is real and active.
 
-**Claims Support:** Confirm policy details when filing claims.
-
-**Coverage Confirmation:** Verify coverage terms match expectations after purchase.
-
-**Third-Party Presentation:** Provide verified proof to landlords, lenders, or employers.
-
-**Renewal Verification:** Confirm renewal was processed and coverage continues.
+**Collateralized Finance:** Proving to a private bank that the art serving as collateral for a $50M loan is fully protected by a verified "All-Risk" policy.
 
 ## Third-Party Use
 
-**Regulators and Oversight Bodies**
+**Museum Registrars**
+**Intake Integrity:** Before unpacking a crate, the museum registrar scans the insurance certificate. "Verified by AXA" ensures the owner hasn't "Self-Edited" the limits or excluded "Transit" coverage to save money.
 
-Regulatory compliance and oversight:
+**Fine Art Logisticians (Crozier / Hasenkamp)**
+**Handoff Security:** Verifying that the insurance is active before they take physical possession of the crate, reducing their own corporate liability.
 
-**Systematic Hash Receipt:** Receive hashes in bulk for regulatory oversight.
-
-**Audit Verification:** Verify documents during routine or targeted audits.
-
-**Compliance Monitoring:** Monitor issuer compliance with documentation requirements.
-
-**Investigation Support:** Verify documents during fraud or compliance investigations.
-
-**Consumer Protection:** Verify consumer-facing documents for protection enforcement.
-
-**Lenders and Financial Institutions**
-
-Credit underwriting and risk assessment:
-
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
+**Customs (Cultural Property)**
+**Export Vetting:** Ensuring that a high-value work being exported has the verified insurance required for international movement of national treasures.
 
 ## Verification Architecture
 
-**The Fine art insurance (all-risk, nail-to-nail exhibition) Fraud Problem**
+**The "Vanishing Masterpiece" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Coverage Inflation:** Inflating coverage limits or adding non-existent coverage
-- **Backdating:** Creating policies with false effective dates
-- **Ghost Policies:** Fabricated policies from non-existent insurers
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Value Inflation:** Editing an agreed value from $8.5M to $85M to trick a bank into an over-leveraged loan.
+- **Exclusion Concealment:** Deleting the line that excludes "Earthquake" or "Flood" before sending the policy to a museum in California or Venice.
+- **Ghost Policies:** Using fake Lloyd's letterhead to claim a work is insured to avoid the high cost of actual fine-art premiums.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Specialty Art Carriers:** (AXA Art, Hiscox, Chubb, Berkley).
+**Lloyd's Syndicates.**
+**Art-Specific MGAs.**
 
-**Banks and Credit Unions:** Depository institutions for account documents.
+## Competition vs. Physical Provenance Logs
 
-**Investment Firms:** Brokerage and investment management firms.
+| Feature | OCR-to-Hash | Provenance Log (Paper) | Art Registry (Blockchain) |
+| :--- | :--- | :--- | :--- |
+| **Integrity** | **Binds Value.** Protects the $85M claim. | **Subjective.** Relies on old stickers/notes. | **High.** But art is off-chain. |
+| **Trust Anchor** | **Domain-Bound.** Trust the Payer. | **Signature-Bound.** | **Consensus-Bound.** |
+| **Hardware** | **Universal.** Any smartphone. | **Expert.** Requires magnifying glass/knowledge. | **Technical.** Requires crypto-wallet. |
+| **Speed** | **Instant.** 5-second scan. | **Slow.** Hours of expert review. | **Fast.** |
 
-**Insurance Companies:** Insurers for policy and claims documents.
-
-**Accounting Firms:** CPAs and audit firms for financial statements.
-
-**System Integration**
-
-Insurance verification integrates with industry systems:
-
-**Policy Administration Systems:** Core insurance systems generate verification hashes at policy issuance.
-
-**ACORD Standards:** Insurance industry data standards could include verification fields.
-
-**State Insurance Databases:** Regulators maintain databases for systematic hash receipt.
-
-**Agent Portals:** Insurance agents access verification for client service.
-
-## Rationale
-
-Prevents fake fine art insurance. Domain binding verifies Lloyd's syndicate/specialist (Hiscox, Chubb). Museum exhibition requirements. Very high values ($100M-$500M+ for major exhibitions). Nail-to-nail transit coverage. Provenance verification.
+**Why OCR wins here:** The "Handoff Momentum." High-end art moves in a small circle of trusted registrars and handlers. They don't have time for "Crypto-Onboarding." OCR-to-hash turns the **Standard Insurance Folder** into a live digital anchor that matches the speed and prestige of the global art market.

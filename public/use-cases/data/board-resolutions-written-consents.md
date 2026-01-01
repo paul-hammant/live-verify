@@ -1,94 +1,106 @@
 ---
-title: "Board resolutions and written consents"
+title: "Board Resolutions and Written Consents"
 category: "Business & Commerce"
 volume: "Small"
 retention: "Permanent"
 slug: "board-resolutions-written-consents"
-tags: ["board", "resolutions", "written", "consents", "business", "commerce"]
+tags: ["corporate-governance", "board-of-directors", "resolution", "written-consent", "legal-authority", "m-and-a"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+  <div style="text-align: center; margin-bottom: 30px;">
+    <div style="font-weight: bold; font-size: 1.2em;">ACTION BY UNANIMOUS WRITTEN CONSENT</div>
+    <div style="font-size: 0.9em; margin-top: 5px;">OF THE BOARD OF DIRECTORS OF</div>
+    <div style="font-weight: bold; font-size: 1.1em; margin-top: 5px;">INITECH HOLDINGS, INC.</div>
+  </div>
+
+  <div style="font-size: 1em; line-height: 1.6; color: #333; text-align: justify;">
+    <p>The undersigned, being all the members of the Board of Directors of Initech Holdings, Inc., a Delaware corporation (the "Company"), hereby take the following actions by written consent:</p>
+
+    <p><strong><span data-bracket="start" data-for="board">]</span>RESOLVED:</strong> That the Company is hereby authorized to enter into the Merger Agreement with Globochem Corp. dated as of March 15, 2026.</p>
+
+    <p><strong>RESOLVED FURTHER:</strong> That the Officers of the Company are authorized to execute all such documents as are necessary to effectuate the foregoing resolution.</p>
+  </div>
+
+  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+    <div style="width: 45%;">
+      <div style="border-top: 1px solid #000; padding-top: 5px; font-style: italic;">Bill Lumbergh</div>
+      <div style="font-size: 0.8em; color: #777;">Director</div>
+    </div>
+    <div style="width: 45%;">
+      <div style="border-top: 1px solid #000; padding-top: 5px; font-style: italic;">Peter Gibbons</div>
+      <div style="font-size: 0.8em; color: #777;">Director</div>
+    </div>
+  </div>
+
+  <div data-verify-line="board" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+      title="Demo only: Law firm doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:wilson-sonsini.com/docs/v/INITECH-992 <span data-bracket="end" data-for="board">]</span>
+  </div>
+</div>
+
 ## Data Verified
 
-Directors, resolution text
+Corporate name, resolution text (digest), date of action, names of directors/officers signing, type of action (Unanimous Written Consent vs. Meeting Minutes), jurisdiction of incorporation.
+
+**Document Types:**
+- **Unanimous Written Consent:** Signed by all directors without a meeting.
+- **Board Meeting Minutes:** Summary of a formal meeting.
+- **Secretary's Certificate:** Certification that a resolution is true and in effect.
+- **Officer's Certificate:** For high-level corporate actions (e.g., IPO).
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (e.g., the Corporation or its primary Law Firm) and current status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **In Effect** — Resolution is valid and has not been rescinded.
+- **Superseded** — A later resolution has modified or replaced this one.
+- **Rescinded** — The Board has formally cancelled this action.
+- **Void** — Action determined to be ultra vires or legally invalid.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Corporation** benefits from verification.
 
-**Document Authenticity:** Verify received documents are genuine and properly issued.
+**Bank Account Opening:** Proving to a bank that the "Resolution to Open Account" isn't a fake PDF created by a rogue employee, but is an official board-sanctioned document.
 
-**Third-Party Presentation:** Provide verified documentation when required.
+**Real Estate Closing:** Proving to a title company that the officers signing the deed have the verified authority from the Board to sell the property.
 
-**Compliance Requirements:** Meet regulatory or contractual documentation requirements.
-
-**Record Keeping:** Maintain verified records for future reference or audits.
-
-**Dispute Prevention:** Establish authenticity to prevent future challenges.
+**M&A Due Diligence:** Providing a "Verified Minute Book" to a buyer, reducing the thousands of hours lawyers spend manually confirming signatures and corporate actions.
 
 ## Third-Party Use
 
-**Auditors and Compliance Officers**
+**Investment Banks / Underwriters**
+**IPO Due Diligence:** Ensuring every major corporate milestone (funding rounds, stock grants) has a verified, timestamped board resolution, preventing "Founders Disputes" later.
 
-Internal and external audits:
+**Commercial Lenders**
+**Authority Verification:** Confirming that the people signing a $100M loan agreement are the actual authorized representatives of the company.
 
-**Financial Audits:** Verify documents during financial statement audits.
-
-**Compliance Audits:** Validate documentation for regulatory compliance.
-
-**Internal Controls:** Test document authenticity in control assessments.
-
-**Fraud Investigations:** Verify documents in fraud examinations.
-
-**Third-Party Audits:** Validate vendor and partner documentation.
+**Landlords / Lessors**
+**Lease Signing:** Verifying the "Corporate Authority" of the person signing a 10-year commercial lease.
 
 ## Verification Architecture
 
-**The Board resolutions and written consents Fraud Problem**
+**The "Backdated Resolution" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Retroactive Grants:** Issuing stock options today but "resolving" them at last year's lower price (Stock Option Backdating). Verification timestamps prevent this.
+- **Unauthorized Actions:** A CEO fabricating a resolution to sell a company asset without Board knowledge.
+- **Phantom Directors:** Creating a resolution signed by non-existent or "straw" directors to bypass governance.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Corporations:** (Hosting on their own internal IR/Legal domain).
+**Law Firms:** (e.g., WSGR, Fenwick, Cooley - hosting on behalf of clients).
+**Equity Platforms:** (e.g., Carta, Pulley - who manage the cap table and resolutions).
 
-**Primary Issuers:** Organizations with direct authority to issue these documents.
+## Competition vs. Corporate Registries (Delaware SOS)
 
-**Licensed Professionals:** Professionals authorized to create and certify documents.
+| Feature | OCR-to-Hash | Secretary of State (SOS) | Virtual Data Room (VDR) |
+| :--- | :--- | :--- | :--- |
+| **Granularity** | **High.** Verifies specific *resolutions*. | **Low.** SOS only tracks broad status (e.g., Good Standing). | **Full.** But requires gated access. |
+| **Trust Anchor** | **Domain-Bound.** Bound to the Law Firm/Corp. | **Gov-Bound.** | **System-Bound.** Trust the VDR vendor. |
+| **Cost** | **Low.** Standard web infra. | **High.** SOS filings/searches cost fees. | **High.** VDRs cost thousands/month. |
+| **Interoperability** | **Universal.** PDFs stay verifiable anywhere. | **Siloed.** | **Restricted.** Access usually revoked post-deal. |
 
-**Government Agencies:** Federal, state, or local agencies with jurisdiction.
-
-**Industry Bodies:** Trade associations and professional organizations.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Law firms host. Diligence-ready without public registries. Domain binding verifies corporation.
+**Why OCR wins here:** Specificity. A "Certificate of Good Standing" from Delaware only says the company exists. It doesn't say "The Board authorized the sale of the factory." OCR-to-hash turns the **Private Resolution** into a verifiable artifact that can be shared with banks and buyers without exposing the entire secret minute book.

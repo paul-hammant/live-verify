@@ -1,125 +1,110 @@
 ---
-title: "Manufacturer self-declarations of conformity (DoC)"
+title: "Manufacturer Declarations of Conformity (DoC)"
 category: "Product Certifications & Compliance"
-volume: "Small"
+volume: "Medium"
 retention: "Product lifecycle (5-15 years)"
 slug: "manufacturer-declarations-of-conformity"
-tags: ["manufacturer", "declarations", "conformity", "product", "certifications", "compliance"]
+tags: ["ce-marking", "fcc-compliance", "declaration-of-conformity", "product-safety", "iso-standards", "manufacturing-compliance", "european-union-doc"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="background: #333; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+    <div>
+      <div style="font-weight: bold; font-size: 1.2em;">EU DECLARATION OF CONFORMITY</div>
+      <div style="font-size: 0.8em; opacity: 0.8;">In accordance with EN ISO/IEC 17050-1</div>
+    </div>
+    <div style="font-size: 1.5em; font-weight: bold;">CE</div>
+  </div>
+
+  <div style="padding: 30px;">
+    <div style="border-bottom: 2px solid #333; padding-bottom: 10px; margin-bottom: 20px;">
+      <h3 style="margin: 0; color: #333;">PRODUCT IDENTIFICATION</h3>
+      <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;">Model: <span data-bracket="start" data-for="doc">]</span>S-SERIES ROBOTIC HUB (V4.2)</div>
+    </div>
+
+    <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+      <p><strong>Manufacturer:</strong> Cyberdyne Systems, SA<br>
+      <strong>Address:</strong> Rue de la Loi 42, Brussels, Belgium</p>
+
+      <p>This declaration is issued under the sole responsibility of the manufacturer. The object of the declaration described above is in conformity with the following relevant Union harmonization legislation:</p>
+      
+      <div style="background: #f5f5f5; border: 1px solid #ddd; padding: 10px; margin: 15px 0; border-radius: 4px; font-family: monospace; font-size: 0.85em;">
+        ✅ 2014/35/EU (Low Voltage Directive)<br>
+        ✅ 2014/30/EU (EMC Directive)<br>
+        ✅ 2011/65/EU (RoHS 2 Directive)
+      </div>
+
+      <p><strong>Signed for and on behalf of:</strong> Dr. Elena Rossi, CTO<br>
+      <strong>Date:</strong> March 15, 2026</p>
+    </div>
+
+    <div data-verify-line="doc" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: Manufacturer doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:cyberdyne.be/compliance/v/S-SERIES-V42 <span data-bracket="end" data-for="doc">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Manufacturer, model/part numbers, standards
+Manufacturer name, premises address, product model/part number, serial number range, list of applicable EU Directives/Standards (e.g., LVD, EMC, RoHS), authorized signatory name/title, date of issuance, location of signature.
+
+**Document Types:**
+- **EU Declaration of Conformity (DoC):** Required for the CE mark.
+- **FCC Declaration:** For radio frequency equipment in the USA.
+- **UKCA Declaration:** Post-Brexit standard for the UK market.
+- **Certificate of Origin:** (Linked hash) proving where it was built.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`apple.com`, `bosch.de`, `cyberdyne.be`) and current compliance standing.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Valid** — Product meets all listed standards and is authorized for sale.
+- **Recalled** — **ALERT:** Safety issue found; product must be removed from market.
+- **Superseded** — New hardware version or standard update has invalidated this DoC.
+- **Invalid** — Model number or directive mismatch.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Importer / Distributor** benefits from verification.
 
-**Credential Verification:** Confirm educational credentials after issuance.
+**Customs Clearance:** Proving to an EU Customs officer that the 10,000 robotic hubs being imported have a "Verified DoC" from the manufacturer. Verification prevents the entire shipment from being seized at the port due to a "Suspected Fake CE Certificate."
 
-**Job Applications:** Present verified credentials to prospective employers.
-
-**Further Education:** Provide verified transcripts for graduate school applications.
-
-**Professional Licensing:** Submit verified credentials for license applications.
-
-**Immigration Applications:** Verify educational credentials for visa applications.
+**Retailer Onboarding:** Proving to a major retailer (e.g., MediaMarkt or Amazon) that the product meets all verified safety laws, reducing the retailer's liability risk.
 
 ## Third-Party Use
 
-**Employers**
+**Customs & Market Surveillance (EU/HMRC)**
+**Enforcement:** Market surveillance officers walking through a store can scan the hash on the product manual. "Verified by Bosch.de" ensures the company hasn't just "Slapped a CE logo" on an un-tested, dangerous electronic product.
 
-Hiring and compliance verification:
+**Insurance Companies**
+**Product Liability:** Verifying the DoC before writing a policy for a high-risk product (e.g., electric scooters or medical lasers).
 
-**Pre-Employment Screening:** Verify credentials during hiring process.
-
-**I-9 Compliance:** Verify work authorization and identity documents.
-
-**Credential Verification:** Confirm professional licenses and certifications.
-
-**Health Requirements:** Verify health-related documentation for workplace safety.
-
-**Background Checks:** Integrate verification into background check processes.
-
-**Educational Institutions**
-
-Admissions and enrollment:
-
-**Transfer Credits:** Verify transcripts for transfer credit evaluation.
-
-**Graduate Admissions:** Validate undergraduate credentials for graduate programs.
-
-**Professional Programs:** Confirm prerequisite credentials for professional schools.
-
-**International Students:** Verify foreign credentials for admissions and visa support.
-
-**Scholarship Awards:** Validate academic credentials for scholarship eligibility.
-
-**Professional Licensing Boards**
-
-Licensing and credentialing:
-
-**License Applications:** Verify educational and training credentials.
-
-**Continuing Education:** Validate CE credits for license renewal.
-
-**Reciprocity Requests:** Verify out-of-state licenses for reciprocal licensing.
-
-**Disciplinary Proceedings:** Confirm credential claims in investigations.
-
-**Specialization Certification:** Verify prerequisites for specialty certification.
+**Corporate Procurement**
+**Sourcing Compliance:** Ensuring that all hardware being installed in a new office building has verified safety certifications.
 
 ## Verification Architecture
 
-**The Manufacturer self-declarations of conformity (DoC) Fraud Problem**
+**The "Fake CE" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Diploma Mills:** Fake credentials from non-accredited institutions
-- **Grade Alteration:** Modified transcripts with inflated grades
-- **Degree Fabrication:** Completely fabricated degrees from real institutions
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **China Export Scam:** Using a logo that looks like "CE" but actually means "China Export," and providing a fake paper DoC to trick customs.
+- **Standard Padding:** Claiming a product meets "Medical Device" standards on the paper form when it was actually only tested for "General Consumer" use.
+- **Date Alteration:** Changing a 2020 DoC to read 2026 to avoid re-testing against new, stricter safety laws.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Global Manufacturers:** (Hosting on their own `/compliance` domain).
+**Testing Houses:** (e.g., TUV, SGS, UL - hosting the verified test reports).
+**Authorized Representatives:** (For companies outside the EU/UK).
 
-**Universities and Colleges:** Accredited degree-granting institutions.
+## Competition vs. QR Redirects
 
-**Registrars:** Academic records offices at educational institutions.
+| Feature | OCR-to-Hash | Standard QR Code Redirect | Scanned PDF DoC |
+| :--- | :--- | :--- | :--- |
+| **Trust Anchor** | **Domain-Bound.** Bound to the Manufacturer. | **Data-Only.** QR can redirect to any fake URL. | **Zero.** Easily forged. |
+| **Integrity** | **Cryptographic.** Binds the *Directives*. | **Vulnerable.** The landing page can be edited. | **Vulnerable.** |
+| **Persistence** | **High.** Text remains verifiable for 15 years. | **Low.** QR stickers get scratched or fade. | **Vulnerable.** |
+| **User Control** | **Targeted.** Verifies the *Exact Version*. | **General.** Often links to a generic "Help" page. | **Full.** But untrusted. |
 
-**Accreditation Bodies:** Regional and professional accreditors.
-
-**Testing Organizations:** Standardized testing and certification providers.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Human-readable DoC. Domain binding verifies issuer. Tamper-evident vs QR redirects.
+**Why OCR wins here:** The "Product Manual" reality. DoCs are usually buried at the back of a printed manual. QR codes on stickers often don't last the 10-year life of a product. OCR-to-hash turns the **Printed Text of the Manual** into a live, high-authority digital anchor, ensuring that safety trust is as durable as the product itself.

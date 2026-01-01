@@ -1,129 +1,111 @@
 ---
-title: "Freight, demurrage & defense (FD&D) insurance"
+title: "Freight, Demurrage & Defense (FD&D) Insurance"
 category: "Shipping & Freight"
 volume: "Small"
 retention: "Policy term + 10 years"
 slug: "freight-demurrage-defense"
-tags: ["freight", "demurrage", "defense", "logistics", "transportation"]
+tags: ["maritime-insurance", "p-and-i-club", "fd-and-d", "charterparty-dispute", "demurrage-claim", "legal-defense-insurance", "shipping-law"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 2px solid #002366; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+  <div style="background: #002366; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+    <div>
+      <div style="font-weight: bold; font-size: 1.2em;">THE LONDON P&I CLUB</div>
+      <div style="font-size: 0.8em; opacity: 0.8;">Class 2: Freight, Demurrage & Defense</div>
+    </div>
+    <div style="text-align: right;">
+      <div style="font-size: 0.8em;">Member #: LP-992288-26</div>
+    </div>
+  </div>
+
+  <div style="padding: 35px;">
+    <h2 style="text-align: center; color: #002366; font-size: 1.4em; margin-bottom: 25px; text-transform: uppercase; letter-spacing: 1px;">Certificate of Entry</h2>
+
+    <div style="font-size: 1em; line-height: 1.6; color: #333;">
+      <p>This document certifies that the following vessel is entered for FD&D coverage:</p>
+
+      <div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin: 20px 0;">
+        <strong>Vessel Name:</strong> <span data-bracket="start" data-for="fdd">]</span>MV OCEAN VOYAGER<br>
+        <strong>IMO Number:</strong> 9988776<br>
+        <strong>Member:</strong> Global Maritime Holdings, Ltd.
+      </div>
+
+      <p><strong>Coverage Scope:</strong> Legal costs and expert fees for disputes arising out of Charterparties, Bills of Lading, and Contracts of Affreightment.</p>
+      
+      <p><strong>Limit of Cover:</strong> USD 10,000,000.00 any one dispute.<br>
+      <strong>Period:</strong> 20 FEB 2026 to 20 FEB 2027</p>
+    </div>
+
+    <div style="margin-top: 40px; border-top: 1px solid #ccc; padding-top: 10px; font-size: 0.8em; color: #666; font-style: italic; text-align: center;">
+      This certificate is evidence only of the contract of insurance and is subject to the Rules of the Association.
+    </div>
+
+    <div data-verify-line="fdd" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: P&I Club doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:londonpandi.com/v/9988776 <span data-bracket="end" data-for="fdd">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Shipowner, vessel, FD&D insurer, dispute coverage, legal defense limits
+Vessel name, IMO number, Member name, coverage class (FD&D), legal cost limits, effective dates, P&I Club ID, specific exclusions (if any), date of certificate issuance.
 
-**Policy Forms:** Different policy forms and endorsements may apply.
+**Document Types:**
+- **Certificate of Entry (FD&D):** Proving the vessel has legal "War Chest" insurance.
+- **Letter of Undertaking (LOU):** (Linked hash) provided by the Club to release an arrested ship.
+- **Rules of the Association:** (Linked hash) for the technical fine print.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`londonpandi.com`, `gard.no`, `skuld.com`) and membership standing.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-- **Cancelled** - Policy cancelled before expiration
-- **Non-Renewed** - Policy expired and not renewed
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **In Force** — Member is in good standing; calls paid.
+- **Suspended** — Coverage paused (e.g., due to unpaid calls or sanction violation).
+- **Withdrawn** — Ship has left the Club.
+- **Lapsed** — Renewals not processed for current policy year.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Shipowner / Member** benefits from verification.
 
-**Proof of Coverage:** Verify coverage is active when needed for compliance or access.
+**Arbitration Financing:** Proving to a maritime arbitrator or legal counsel that the vessel has verified FD&D coverage. This ensures that legal fees will be paid by the P&I Club, allowing the shipowner to pursue high-value claims (e.g., $5M in unpaid demurrage) without draining their own cash flow.
 
-**Claims Support:** Confirm policy details when filing claims.
-
-**Coverage Confirmation:** Verify coverage terms match expectations after purchase.
-
-**Third-Party Presentation:** Provide verified proof to landlords, lenders, or employers.
-
-**Renewal Verification:** Confirm renewal was processed and coverage continues.
+**Chartering Credibility:** Proving to a high-quality charterer (e.g., Shell or BP) that the vessel owner is a member of a "Group Club" with verified legal defense backing.
 
 ## Third-Party Use
 
-**Regulators and Oversight Bodies**
+**Maritime Attorneys / Barristers**
+**Fee Assurance:** Before taking on a complex international charterparty dispute, the law firm scans the FD&D certificate. "Verified by The London Club" gives them the confidence that the P&I Club's "Cover for Legal Costs" is real and active.
 
-Regulatory compliance and oversight:
+**Admiralty Courts**
+**Vessel Release:** Verifying the "Letter of Undertaking" hash before releasing a ship from arrest. OCR-to-hash prevents thieves from using a "Fake LOU" to flee a jurisdiction.
 
-**Systematic Hash Receipt:** Receive hashes in bulk for regulatory oversight.
-
-**Audit Verification:** Verify documents during routine or targeted audits.
-
-**Compliance Monitoring:** Monitor issuer compliance with documentation requirements.
-
-**Investigation Support:** Verify documents during fraud or compliance investigations.
-
-**Consumer Protection:** Verify consumer-facing documents for protection enforcement.
-
-**Lenders and Financial Institutions**
-
-Credit underwriting and risk assessment:
-
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
+**Bunker Suppliers / Vendors**
+**Credit Vetting:** Verifying the insurance quality of a counterparty before allowing a "Paid on Terms" supply of fuel.
 
 ## Verification Architecture
 
-**The Freight, demurrage & defense (FD&D) insurance Fraud Problem**
+**The "Maritime Legal" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Coverage Inflation:** Inflating coverage limits or adding non-existent coverage
-- **Backdating:** Creating policies with false effective dates
-- **Ghost Policies:** Fabricated policies from non-existent insurers
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Fabricated Certificates:** Using a famous P&I Club's logo to create a fake "Certificate of Entry" to trick a port into releasing an arrested vessel.
+- **Limit Inflation:** Editing a $1M "Small Craft" policy to read $10M to meet a charterer's requirements.
+- **Backdating LOUs:** Creating a fake Letter of Undertaking to hide that a vessel is operating without legal backing.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**International Group of P&I Clubs (IG):** (e.g., Gard, Skuld, UK Club, London Club).
+**Specialist Legal Defense Underwriters.**
+**Maritime Law Firms.**
 
-**Banks and Credit Unions:** Depository institutions for account documents.
+## Competition vs. Club Member Search
 
-**Investment Firms:** Brokerage and investment management firms.
+| Feature | OCR-to-Hash | Club Website Search | Scanned PDF |
+| :--- | :--- | :--- | :--- |
+| **Integrity** | **Cryptographic.** Binds the *Legal Limit*. | **Vague.** Often only shows "Entered" without the limit details. | **Zero.** Easily forged. |
+| **User Access** | **Universal.** Any attorney or port can verify. | **Restricted.** Some Clubs require private logins for detailed data. | **Instant.** |
+| **Speed** | **Instant.** 5-second scan. | **Slow.** Requires IMO # search and UI navigation. | **N/A.** |
+| **Authority** | **Domain-Bound.** Bound to the Club. | **High.** Direct DB. | **Medium.** |
 
-**Insurance Companies:** Insurers for policy and claims documents.
-
-**Accounting Firms:** CPAs and audit firms for financial statements.
-
-**System Integration**
-
-Insurance verification integrates with industry systems:
-
-**Policy Administration Systems:** Core insurance systems generate verification hashes at policy issuance.
-
-**ACORD Standards:** Insurance industry data standards could include verification fields.
-
-**State Insurance Databases:** Regulators maintain databases for systematic hash receipt.
-
-**Agent Portals:** Insurance agents access verification for client service.
-
-## Rationale
-
-Domain binding verifies FD&D insurer. Charter party disputes. Legal defense coverage. Maritime arbitration financing. Protects against demurrage claims.
+**Why OCR wins here:** The "Bridge Moment." Maritime disputes happen at sea or in busy port offices. People don't want to struggle with a desktop-optimized P&I Club website. OCR-to-hash turns the **Physical Certificate** into a live, high-speed digital dashboard, providing the "Rule 26" level of trust needed for international legal proceedings.

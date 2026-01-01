@@ -1,196 +1,120 @@
 ---
-title: "Insurance Policy Documents"
+title: "Commercial Insurance Policy Documents"
 category: "Insurance Claims & Operations"
-volume: "Medium-Small"
-retention: "Policy term plus 7-10 years (claims runoff period)"
+volume: "Medium-Large"
+retention: "Policy term + 7-10 years"
 slug: "insurance-policy-documents"
-tags: ["insurance", "policy", "documents", "risk", "management"]
+tags: ["commercial-insurance", "policy-declarations", "endorsements", "certificate-of-insurance", "coi-verification", "risk-management", "compliance-audit"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <div style="background: #333; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+    <div>
+      <div style="font-weight: bold; font-size: 1.2em;">MARSH McLENNAN</div>
+      <div style="font-size: 0.8em; opacity: 0.8;">Commercial Lines Placement Summary</div>
+    </div>
+    <div style="text-align: right;">
+      <div style="font-size: 0.8em;">Client Ref: 99228877</div>
+    </div>
+  </div>
+
+  <div style="padding: 30px;">
+    <h2 style="text-align: center; color: #333; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Policy Evidence Portfolio</h2>
+
+    <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
+      <p><strong>Insured:</strong> <span data-bracket="start" data-for="ins-pol">]</span>Global Logistics Solutions, Corp.<br>
+      <strong>Period:</strong> March 01, 2026 to March 01, 2027</p>
+
+      <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: #f5f5f5; border-bottom: 2px solid #333;">
+          <th style="text-align: left; padding: 8px;">Line of Coverage</th>
+          <th style="text-align: right; padding: 8px;">Primary Limit</th>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border-bottom: 1px solid #eee;">General Liability (Chubb)</td>
+          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 2,000,000</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border-bottom: 1px solid #eee;">Workers Comp (Travelers)</td>
+          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 1,000,000</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border-bottom: 1px solid #eee;">Cyber Liability (AIG)</td>
+          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 5,000,000</td>
+        </tr>
+      </table>
+
+      <p style="font-size: 0.8em; color: #555;"><strong>Note:</strong> All policies include Waivers of Subrogation and Primary/Non-Contributory endorsements as required by Master Service Agreement.</p>
+    </div>
+
+    <div data-verify-line="ins-pol" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: Broker/Carrier doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:marsh.com/portfolio/v/99228877 <span data-bracket="end" data-for="ins-pol">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Policyholder name, policy number, insurer name, coverage type (liability, property, auto, health, life), coverage amounts and limits, deductibles, effective and expiration dates, premium amount, named insureds and additional insureds, covered property or vehicles, endorsements and exclusions.
+Insured name, policy numbers across multiple lines (GL, WC, Auto, Cyber), individual coverage limits, effective/expiration dates per line, deductible structures, endorsement presence (e.g., Additional Insured), issuing carriers (NAIC codes), Broker ID.
 
-**Document Types:** Insurance documentation includes declarations pages (dec pages), full policy contracts, certificates of insurance (COIs), and endorsements. Dec pages and COIs are summary documents ideal for OCR verification; full policy contracts may run dozens of pages.
-
-**Scanning Considerations:** Dec pages are typically single-page summaries with clear formatting. Full policy contracts with fine-print exclusions and conditions are less suited to phone camera OCR.
+**Document Types:**
+- **Evidence of Commercial Insurance:** The master summary for large clients.
+- **Policy Declarations (Dec Pages):** The 1-2 page line-specific summaries.
+- **Schedule of Forms:** (Linked hash) listing all 50+ endorsements in the file.
+- **Premium Audit Report:** Proving the final adjusted cost.
 
 ## Data Visible After Verification
 
-Shows the issuer domain (the insurance company) and the responder text.
+Shows the issuer domain (`marsh.com`, `aon.com`, `chubb.com`) and the status of the entire portfolio.
 
 **Status Indications:**
-- **Active** - Policy is in force
-- **Expired** - Policy has lapsed
-- **Cancelled** - Policy was terminated before expiration
-- **Pending** - Policy issued but not yet effective
-- **Claims Exhausted** - Policy limits have been reached
+- **All Active** — Every policy in the summary is current and premium-paid.
+- **Segment Cancelled** — **ALERT:** One specific line (e.g., Cyber) has lapsed.
+- **Superseded** — Mid-term changes occurred; download new evidence.
+- **Audit Pending** — Policy active but final payroll figures unverified.
 
-**Public Ledger Link:** For commercial insurance, the verification response may link to the insurer's public registry of issued policies, demonstrating the coverage exists within the insurer's book of business.
+## Second-Party Use
 
-## Second-Party Use (Policyholder Verifying Their Own Policy)
+The **Insured Business** benefits from verification.
 
-Policyholders benefit from verifying their insurance documents.
+**Master Service Agreement (MSA) Compliance:** Proving to a Fortune 500 client that the business has the complex, multi-layered insurance required by the contract. A verified "Portfolio Summary" prevents the client's procurement team from rejecting the vendor due to "Missing Endorsements."
 
-**Policy Authenticity:** After purchasing insurance, policyholders can verify the policy document is genuine—particularly important when purchasing through brokers or agents.
-
-**Coverage Confirmation:** Before an incident, policyholders can verify their understanding of coverage matches what the insurer actually issued.
-
-**Renewal Verification:** When policies renew, policyholders can verify the renewed policy terms match expectations.
-
-**Premium Disputes:** If disputes arise about premium amounts or payment history, policyholders have verified documentation.
-
-**Claim Preparation:** Before filing claims, policyholders can verify their coverage is active and terms are as understood.
+**Credit Line Renewal:** Providing verified proof of total asset protection to a lender, ensuring the company's risk is properly mitigated before capital is released.
 
 ## Third-Party Use
 
-**Lenders and Mortgage Companies**
+**Enterprise Procurement / Vendor Teams**
+**Continuous Monitoring:** Instead of manually checking 1,000 separate COIs every year, procurement software can scan the hashes. If a "Segment Cancelled" alert appears on a vendor's hash, the system automatically blocks their access to sensitive data or sites.
 
-Collateral protection:
+**General Contractors (GCs)**
+**Site Compliance:** Verifying that a large subcontractor has all three mandatory lines (GL, WC, Auto) verified active before they move a crane onto the project.
 
-**Mortgagee Interest:** Lenders require borrowers to maintain homeowners insurance with the lender named as mortgagee. Verification confirms this coverage exists.
-
-**Force-Placed Insurance:** When borrower insurance lapses, lenders force-place coverage. Verification of borrower-obtained insurance prevents unnecessary force-placement.
-
-**Auto Loans:** Auto lenders require comprehensive and collision coverage on financed vehicles.
-
-**Commercial Loans:** Commercial lenders require various coverage types depending on the collateral.
-
-**Contractors and Subcontractors**
-
-Construction and service work:
-
-**General Liability:** Property owners and general contractors require subcontractors to carry liability insurance before allowing work.
-
-**Workers' Compensation:** Employers must verify subcontractor workers' comp coverage to avoid liability.
-
-**Professional Liability:** For professional services, E&O coverage verification may be required.
-
-**COI Verification:** Certificates of insurance are the standard documentation. COI fraud is common—contractors fabricate or alter certificates.
-
-**Property Owners and Landlords**
-
-Tenant requirements:
-
-**Tenant Insurance:** Landlords may require renters insurance as a lease condition.
-
-**Commercial Tenants:** Commercial leases typically require tenants to carry liability insurance naming the landlord as additional insured.
-
-**Vendor Insurance:** Properties hosting vendors or events may require vendor insurance verification.
-
-**Government and Regulatory Bodies**
-
-Mandatory insurance compliance:
-
-**Auto Registration:** DMVs verify liability insurance before vehicle registration.
-
-**Professional Licensing:** Many licensed professions require malpractice or liability insurance.
-
-**Business Licensing:** Municipalities may require liability insurance for business permits.
-
-**Transportation:** Commercial carriers require specific insurance minimums.
-
-**Healthcare Credentialing**
-
-Medical staff privileges:
-
-**Malpractice Coverage:** Hospitals verify physician malpractice insurance before granting privileges.
-
-**Tail Coverage:** When physicians leave, hospitals may verify tail coverage for prior acts.
-
-**Credentialing Organizations:** NCQA-accredited credentialing requires insurance verification.
+**M&A Due Diligence**
+**Legacy Audit:** Instantly verifying the "Retroactive Dates" and "Tail Coverage" of a target company's historical insurance portfolio.
 
 ## Verification Architecture
 
-**The Insurance Fraud Problem**
+**The "Document Gaps" Fraud Problem**
 
-Insurance document fraud serves multiple purposes:
+- **Selective Deletion:** Editing a multi-line summary to hide that the "Cyber" policy was cancelled for poor security.
+- **Ghost Endorsements:** Claiming a policy has a "Waiver of Subrogation" on the summary sheet when the underlying policy actually excludes it.
+- **Limit Inflation:** Changing a $1M "Umbrella" limit to $10M to meet a high-stakes contract requirement.
 
-- **Fake Policies:** Entirely fabricated policies to satisfy requirements without paying premiums
-- **COI Fraud:** Altered or fake certificates of insurance showing coverage that doesn't exist
-- **Coverage Inflation:** Altering policy limits to appear adequately covered
-- **Backdated Policies:** Creating policies with false effective dates after incidents
-- **Ghost Policies:** Policies issued by agents but never submitted to insurers
+**Issuer Types**
 
-OCR-to-hash addresses fabrication, alteration, and inflation. Ghost policies are an agency fraud problem—verification against the insurer's records catches these.
+**Global Brokerages:** (Marsh, Aon, WTW).
+**Multi-Line Carriers:** (Chubb, Travelers, Liberty Mutual).
+**Compliance Risk Platforms:** (e.g., myCOI, CertFocus - hosting the hashes).
 
-**Insurers as Issuers**
+## Competition vs. ACORD Data Feeds
 
-The insurance company is the natural issuer:
+| Feature | OCR-to-Hash | ACORD IVANS (Carrier Feed) | Scanned PDF Summary |
+| :--- | :--- | :--- | :--- |
+| **Interoperability** | **Universal.** Works across all brokers/carriers. | **Limited.** Only for agencies on the IVANS network. | **Universal.** |
+| **Integrity** | **Cryptographic.** Binds the *Endorsements*. | **Data-Only.** Doesn't protect the actual doc. | **Zero.** Easily forged. |
+| **Freshness** | **Real-time.** Shows if cancelled *today*. | **Laggy.** Often 24-48 hours behind. | **Static.** |
+| **User Control** | **High.** Business shares only the *Summary*. | **Low.** Lenders see full raw data. | **High.** |
 
-**Carrier Systems:** Major insurers have policy administration systems that could generate verification hashes at policy issuance.
+**Why OCR wins here:** The "Contractual Reality." Large businesses don't buy insurance from a single app; they buy through brokers who assemble a "Portfolio" from 5 different carriers. OCR-to-hash turns that **Broker Summary** into a live digital anchor that provides "Single Source of Truth" trust for a complex, multi-carrier risk strategy.
 
-**Agent/Broker Issued:** While agents and brokers often deliver policies, verification should be against the carrier's records.
-
-**Managing General Agents:** MGAs underwriting on behalf of carriers should coordinate verification with the carrier.
-
-**Surplus Lines:** Non-admitted carriers present verification challenges; surplus lines associations might coordinate.
-
-**Certificate of Insurance (COI) Considerations**
-
-COIs are the most commonly verified insurance document:
-
-**Issuer:** COIs are typically issued by agents/brokers on behalf of insurers. The ACORD 25 form is standard.
-
-**Real-Time Verification:** COIs represent coverage at a point in time. Verification should reflect current policy status, not just COI issuance.
-
-**Third-Party Platforms:** Services like myCOI, Evident, and PINS operate COI collection and verification. These could integrate OCR-to-hash.
-
-**Additional Insured Status:** COIs often show additional insured endorsements. Verification should confirm the endorsement exists in the underlying policy.
-
-**ACORD Standards**
-
-The Association for Cooperative Operations Research and Development sets insurance data standards:
-
-**ACORD Forms:** Standard certificate forms (ACORD 25, ACORD 27, ACORD 28) have consistent layouts suitable for OCR.
-
-**ACORD XML:** Electronic data standards for policy information. OCR-to-hash complements electronic data exchange.
-
-**Verification Integration:** ACORD could develop standards for verification endpoint interoperability across insurers.
-
-**State Insurance Department Integration**
-
-Insurance regulators maintain various databases:
-
-**Licensed Insurer Verification:** State databases confirm insurers are licensed. This could link to policy verification.
-
-**Market Conduct:** Regulators investigating complaints could verify policy documents.
-
-**Rate Filings:** Filed rates could be cross-referenced with verified policy premiums.
-
-**NAIC Coordination:** The National Association of Insurance Commissioners could coordinate multi-state verification standards.
-
-**Continuous Verification vs. Point-in-Time**
-
-Insurance verification has timing considerations:
-
-**Point-in-Time:** "Was this policy in force on date X?" Historical queries for claims or disputes.
-
-**Current Status:** "Is this policy currently active?" For ongoing requirements (contractors, tenants).
-
-**Continuous Monitoring:** Some risk management requires ongoing verification that coverage remains in force.
-
-The verification response should clearly indicate the query type: "Active as of verification date" vs. "Active on [specified date]."
-
-**Claims Impact**
-
-Verified policies interact with claims:
-
-**Pre-Loss Verification:** Third parties verify coverage before relying on it.
-
-**Post-Loss Disputes:** After claims, verified policies document what coverage actually existed.
-
-**Subrogation:** Insurers pursuing subrogation verify the at-fault party's coverage.
-
-**Coverage Litigation:** In coverage disputes, verified policies document what was actually issued versus what was claimed.
-
-**Privacy Considerations**
-
-Policy documents contain financial and personal information:
-
-**Premium Information:** Policy premiums reveal financial details. Verification may confirm coverage without disclosing premiums.
-
-**Coverage Details:** Full policy terms may be more detailed than verification requires. Summary verification ("liability coverage of at least $1M exists") may suffice.
-
-**Named Insureds:** Policies may list family members or employees. Verification should confirm the inquirer has legitimate need.
-
-**Medical Information:** Health and life insurance policies may reference medical underwriting. These require additional privacy protections.

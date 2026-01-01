@@ -1,150 +1,112 @@
 ---
-title: "Cashier's checks and money orders"
+title: "Cashier's Checks and Money Orders"
 category: "Real Estate & Property"
 volume: "Small"
 retention: "3-7 years (payment disputes)"
 slug: "cashiers-checks-money-orders"
-tags: ["cashiers", "checks", "money", "orders", "real", "estate", "property"]
+tags: ["banking", "payment", "cashiers-check", "money-order", "fraud-prevention", "real-estate-closing", "guaranteed-funds"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 1px solid #999; background: #fdfdfd; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px;">
+    <div style="font-weight: bold; font-size: 1.2em; color: #003366;">WELLS FARGO BANK, N.A.</div>
+    <div style="text-align: right;">
+      <div style="font-size: 0.9em;">Official Check</div>
+      <div style="font-size: 1.1em; font-weight: bold;">No. 998877665</div>
+    </div>
+  </div>
+
+  <div style="border: 1px solid #ccc; padding: 15px; background: #fff;">
+    <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+      <div>Date: <strong>March 15, 2026</strong></div>
+      <div style="font-size: 1.2em; font-weight: bold;">$ ********25,000.00</div>
+    </div>
+
+    <div style="margin: 15px 0;">
+      PAY TO THE<br>ORDER OF: <span data-bracket="start" data-for="check">]</span><strong>EXEMPLAR REALTY HOLDINGS, LLC</strong>
+    </div>
+
+    <div style="margin: 10px 0; border-bottom: 1px solid #999; padding-bottom: 5px;">
+      TWENTY-FIVE THOUSAND AND 00/100 US DOLLARS
+    </div>
+
+    <div style="margin-top: 10px; font-size: 0.8em;">
+      RE: Earnest Money Deposit - 456 Maple St<br>
+      Purchaser: John Q. Public
+    </div>
+  </div>
+
+  <div style="display: flex; justify-content: space-between; margin-top: 20px; font-size: 0.7em; color: #777;">
+    <div>⑈998877665⑈  ⑆123456789⑆  99228877⑈</div>
+    <div style="text-align: right; border-top: 1px solid #000; width: 150px; padding-top: 2px;">Authorized Signature</div>
+  </div>
+
+  <div data-verify-line="check" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+      title="Demo only: Wells Fargo doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:wellsfargo.com/check/v/998877665 <span data-bracket="end" data-for="check">]</span>
+  </div>
+</div>
+
 ## Data Verified
 
-Payee name, payment amount, issuing institution name, check/order number, issue date
+Payee name, dollar amount (numerical and text), check/serial number, issuing bank routing number, date of issuance, purchaser name (remitter), memo/reference details.
+
+**Document Types:**
+- **Cashier's Check:** Guaranteed by the bank's own funds.
+- **Official Check:** Often used for corporate payments.
+- **Money Order:** (Western Union, USPS, MoneyGram).
+- **Certified Check:** Personal check with bank-guaranteed funds.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (the Bank) and current payment status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Outstanding** — Check is valid and has not yet been cashed.
+- **Cleared** — Funds have been paid to the payee.
+- **Stop Payment** — Payment blocked (e.g., due to loss/theft).
+- **Void** — Re-issued or cancelled by the remitter.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Remitter** (Purchaser) benefits from verification.
 
-**Ownership Verification:** Confirm property documents are authentic.
+**Anti-Fraud:** Proving to a seller (e.g., a car seller or landlord) that the check is 100% genuine and the funds are "Verified Outstanding" at the bank. This prevents the seller from being victimized by the common "Fake Cashier's Check" scam.
 
-**Transaction Support:** Provide verified documents for sales, refinancing, or transfers.
-
-**Title Insurance:** Supply verified documentation for title insurance requirements.
-
-**Legal Protection:** Maintain verified records for potential disputes.
-
-**Record Accuracy:** Verify recorded information matches expectations.
+**Loss Recovery:** Instantly verifying the "Stop Payment" status if the check is lost in the mail, allowing for a faster re-issuance process.
 
 ## Third-Party Use
 
-**Lenders and Financial Institutions**
+**Attorneys / Escrow Agents**
+**Real Estate Closings:** Verifying that the multimillion-dollar cashier's check for a house purchase is real *before* signing over the deed. This stops the most high-stakes form of wire/check fraud in the legal industry.
 
-Credit underwriting and risk assessment:
+**Used Car Buyers / Sellers**
+**Private Sales:** A seller can scan the check at the curb before handing over the keys and title, ensuring the "Bank Guarantee" is real.
 
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Insurance Companies**
-
-Underwriting and claims processing:
-
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
-
-**Government Agencies**
-
-Compliance enforcement and administration:
-
-**Inspection Verification:** Field agents verify permits and licenses at sites.
-
-**Enforcement Actions:** Confirm documentation before enforcement.
-
-**Benefit Eligibility:** Verify supporting documents for benefits administration.
-
-**Compliance Audits:** Audit documentation for regulatory compliance.
-
-**Interagency Coordination:** Share verified documents across agencies.
-
-**Real Estate Professionals**
-
-Property transactions and due diligence:
-
-**Purchase Due Diligence:** Verify property documents during transactions.
-
-**Listing Preparation:** Confirm permits and documentation for listings.
-
-**Disclosure Compliance:** Validate required disclosures and permits.
-
-**Title Research:** Verify property documents for title clearance.
-
-**Appraisal Support:** Confirm documented improvements and permits.
+**Banks (Deposit Intake)**
+**Risk Reduction:** When a customer deposits a large cashier's check from another bank, the receiving bank can verify it instantly via the hash, allowing them to release the funds faster (reducing the standard 3-5 day "hold" period).
 
 ## Verification Architecture
 
-**The Cashier's checks and money orders Fraud Problem**
+**The "Fake Check" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **High-Quality Forgeries:** Scammers using high-end printers to create near-perfect copies of bank checks. The "Check Number" might be real, but the "Amount" or "Payee" is altered.
+- **Closed Accounts:** Issuing a check from an account that is about to be closed.
+- **Overpayment Scams:** Sending a fake $5,000 check for a $2,000 item and asking for the $3,000 "difference" to be wired back before the bank realizes the check is fake.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Retail Banks:** (Wells Fargo, Chase, BofA).
+**Postal Services:** (USPS Money Orders).
+**Payment Networks:** (Western Union, MoneyGram).
 
-**Government Entities:** Counties, cities, and special districts maintain property records.
+## Competition vs. Positive Pay / Call-In
 
-**Title Companies:** Title insurers and escrow companies for transaction documents.
+| Feature | OCR-to-Hash | Positive Pay (Corporate) | Calling the Bank |
+| :--- | :--- | :--- | :--- |
+| **User Access** | **Universal.** Any private seller/landlord. | **Restricted.** Only for big businesses. | **Slow.** Often takes 20+ mins on hold. |
+| **Trust** | **Cryptographic.** Bound to the bank domain. | **High.** Direct DB link. | **Human.** Prone to social engineering. |
+| **Integrity** | **Binds All Fields.** Payee + Amount + Date. | **High.** | **Vague.** "Yes, check #123 is valid." |
+| **Speed** | **Instant.** 5-second scan. | **Fast.** | **Very Slow.** |
 
-**Lending Institutions:** Banks and mortgage companies for loan documents.
-
-**Appraisal Firms:** Licensed appraisers for property valuations.
-
-**System Integration**
-
-Real estate verification connects to property systems:
-
-**Recording Systems:** County recorder systems for property document registration.
-
-**MLS Integration:** Multiple listing services for property documentation.
-
-**Title Plants:** Title companies maintain verification for title searches.
-
-**E-Recording:** Electronic recording systems generate verification at recording.
-
-## Rationale
-
-Prevents fake cashier's checks which are common in fraud schemes. Domain binding verifies issuing bank. Real-time verification before accepting payment prevents overpayment scams. Prevents check fraud where fake cashiers check clears initially then reverses days later exposing victim to loss. Critical for high-value transactions where cashier's check fraud causes significant losses.
+**Why OCR wins here:** The "Kitchen Table" transaction. Most cashier's check fraud happens in private transactions where the seller doesn't have access to "Corporate Positive Pay" systems and the bank's fraud department is closed (weekends/evenings). OCR-to-hash provides **24/7, expert-level verification** to anyone with a smartphone.

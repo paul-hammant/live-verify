@@ -1,127 +1,121 @@
 ---
-title: "Buy Now Pay Later (BNPL) purchase agreements (Affirm, Klarna)"
+title: "Buy Now Pay Later (BNPL) Purchase Agreements"
 category: "Investment & Fintech"
 volume: "Medium-Large"
 retention: "Purchase term + 3-7 years"
 slug: "bnpl-purchase-agreements"
-tags: ["bnpl", "purchase", "agreements", "banking", "financial", "services"]
+tags: ["bnpl", "installment-loan", "klarna", "affirm", "finance", "ecommerce", "consumer-credit"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="background: #000; color: #fff; padding: 20px; text-align: left;">
+    <div style="font-weight: bold; font-size: 1.4em;">Affirm</div>
+    <div style="font-size: 0.8em; opacity: 0.8;">LOAN AGREEMENT & TRUTH IN LENDING DISCLOSURE</div>
+  </div>
+
+  <div style="padding: 25px;">
+    <div style="display: flex; justify-content: space-between; font-size: 0.9em; margin-bottom: 20px;">
+      <div>
+        <strong>Loan ID:</strong> AF-99887766<br>
+        <strong>Merchant:</strong> Peloton Interactive
+      </div>
+      <div style="text-align: right;">
+        <strong>Date:</strong> March 15, 2026
+      </div>
+    </div>
+
+    <div style="font-size: 0.95em; line-height: 1.5; color: #333; border: 1px solid #000; padding: 15px; margin-bottom: 20px;">
+      <p><strong>Borrower:</strong> <span data-bracket="start" data-for="bnpl">]</span><strong>JOHN SMITH</strong></p>
+      
+      <table style="width: 100%; border-collapse: collapse;">
+        <tr>
+          <td>Amount Financed:</td>
+          <td style="text-align: right;">$ 1,445.00</td>
+        </tr>
+        <tr>
+          <td>APR:</td>
+          <td style="text-align: right;">0.00%</td>
+        </tr>
+        <tr>
+          <td>Total of Payments:</td>
+          <td style="text-align: right;">$ 1,445.00</td>
+        </tr>
+        <tr style="font-weight: bold; border-top: 1px solid #000;">
+          <td>Monthly Payment (12x):</td>
+          <td style="text-align: right;">$ 120.42</td>
+        </tr>
+      </table>
+    </div>
+
+    <div style="font-size: 0.8em; color: #555;">
+      By signing below, you agree to the terms of this installment loan.
+    </div>
+
+    <div data-verify-line="bnpl" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: Affirm doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:affirm.com/loans/v/AF998877 <span data-bracket="end" data-for="bnpl">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Buyer name, merchant, purchase amount, payment schedule, terms
+Borrower name, merchant name, loan ID, total amount financed, Annual Percentage Rate (APR), payment schedule (e.g., 12 months), monthly payment amount, date of agreement.
 
-**Multi-Page Handling:** Documents may span multiple pages. Per-page verification prevents page substitution attacks.
+**Document Types:**
+- **Retail Installment Contract:** The legal loan document.
+- **Truth in Lending Act (TILA) Disclosure:** Federal mandatory disclosure.
+- **Payment Receipt:** Proving a specific installment was paid.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`affirm.com`, `klarna.com`) and current loan status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Active** — Loan is in good standing; payments current.
+- **Paid in Full** — Debt satisfied.
+- **In-Arrears** — Payment overdue (critical for credit checking).
+- **Charged-Off** — Uncollectible debt.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Borrower** (Consumer) benefits from verification.
 
-**Record Verification:** Confirm financial documents match expectations.
+**Dispute Resolution:** If the merchant (e.g., Peloton) claims the buyer owes $2,000, the buyer can point to the verified "Verified by Affirm" agreement showing the total was $1,445 at 0% APR.
 
-**Tax Preparation:** Provide verified documentation for tax filing.
-
-**Audit Support:** Maintain verified records for potential audits.
-
-**Dispute Resolution:** Use verified documents to resolve discrepancies.
-
-**Loan Applications:** Present verified financial documentation to lenders.
+**Credit Health:** Proving to a future mortgage lender that a BNPL loan was "Paid in Full" even if it hasn't appeared on the credit bureau report yet.
 
 ## Third-Party Use
 
-**Regulators and Oversight Bodies**
+**Mortgage Lenders / Banks**
+**Debt-to-Income (DTI) Calculation:** Many BNPL loans do not appear on traditional credit reports. Lenders can scan the applicant's verified BNPL agreements to get a true picture of their monthly debt obligations.
 
-Regulatory compliance and oversight:
+**Credit Bureaus**
+**Data Accuracy:** Verifying that the data being reported by the BNPL provider matches the original agreement signed by the consumer.
 
-**Systematic Hash Receipt:** Receive hashes in bulk for regulatory oversight.
-
-**Audit Verification:** Verify documents during routine or targeted audits.
-
-**Compliance Monitoring:** Monitor issuer compliance with documentation requirements.
-
-**Investigation Support:** Verify documents during fraud or compliance investigations.
-
-**Consumer Protection:** Verify consumer-facing documents for protection enforcement.
-
-**Lenders and Financial Institutions**
-
-Credit underwriting and risk assessment:
-
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
+**Legal Aid / Consumer Advocates**
+**Predatory Lending Checks:** Instantly verifying the "Truth in Lending" disclosures to ensure the actual APR matches the marketing claims.
 
 ## Verification Architecture
 
-**The Buy Now Pay Later (BNPL) purchase agreements (Affirm, Klarna) Fraud Problem**
+**The "Ghost Debt" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Income Inflation:** Inflating income or assets on financial documents
-- **Photoshop Fraud:** Digital manipulation of statements and documents
-- **Shell Company Documents:** Documents from fake or shell entities
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Undisclosed Liabilities:** Borrowers hiding multiple BNPL loans from a mortgage lender by editing the PDF "Balance" or "Monthly Payment."
+- **Terms Manipulation:** Changing a "20% APR" agreement to read "0% APR" to qualify for a different financial product.
+- **Identity Theft:** Fraudsters taking out BNPL loans in a victim's name; verification allows the victim to see the "Official" data being used for the loan.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**BNPL Providers:** (Affirm, Klarna, PayPal Credit).
+**Fintech Banks:** (e.g., Cross River Bank, Celtic Bank who originate the loans).
 
-**Banks and Credit Unions:** Depository institutions for account documents.
+## Competition vs. Credit Reports (Experian/TransUnion)
 
-**Investment Firms:** Brokerage and investment management firms.
+| Feature | OCR-to-Hash | Credit Bureau Report | Paper Disclosure |
+| :--- | :--- | :--- | :--- |
+| **Completeness** | **High.** Catches "Off-Bureau" debt. | **Low.** Many BNPL providers don't report all loans. | **High.** But untrusted. |
+| **Timeliness** | **Real-time.** Proves the loan status *today*. | **Laggy.** Updates take 30-60 days. | **Static.** |
+| **Trust** | **Cryptographic.** Bound to the Lender. | **Reporting-Bound.** Relies on data file uploads. | **Zero.** |
 
-**Insurance Companies:** Insurers for policy and claims documents.
+**Why OCR wins here:** The "Shadow Credit" problem. BNPL is a multi-billion dollar industry that operates largely outside the view of traditional credit bureaus. OCR-to-hash brings this "Shadow Debt" into the light, allowing for responsible lending while preserving the consumer's ability to prove their own repayment history.
 
-**Accounting Firms:** CPAs and audit firms for financial statements.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Prevents BNPL fraud (forged purchase agreements, inflated amounts). Domain binding verifies BNPL provider. Tamper-evident payment terms. Merchant verification. Credit bureau reporting accuracy. Consumer protection (dispute resolution).

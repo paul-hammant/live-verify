@@ -1,127 +1,108 @@
 ---
-title: "Independent adjuster field inspection reports"
+title: "Independent Adjuster Field Inspection Reports"
 category: "Insurance Claims & Operations"
 volume: "Medium"
 retention: "Claim term + 10 years"
 slug: "independent-adjuster-reports"
-tags: ["independent", "adjuster", "reports", "insurance", "risk", "management"]
+tags: ["independent-adjuster", "field-inspection", "damage-assessment", "insurance-claims", "property-claim", "auto-claim", "restoration-audit", "ia-report"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="background: #37474f; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+    <div>
+      <div style="font-weight: bold; font-size: 1.2em;">CRAWFORD & COMPANY</div>
+      <div style="font-size: 0.8em; opacity: 0.8;">Independent Claims Solutions</div>
+    </div>
+    <div style="text-align: right;">
+      <div style="font-size: 0.8em;">IA Report #: 2026-992288</div>
+    </div>
+  </div>
+
+  <div style="padding: 25px;">
+    <h3 style="margin-top: 0; color: #37474f; border-bottom: 2px solid #37474f; padding-bottom: 5px;">FIELD INSPECTION SUMMARY</h3>
+
+    <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
+      <p><strong>Carrier:</strong> Liberty Mutual Insurance<br>
+      <strong>Claim #:</strong> 99228877-WC<br>
+      <strong>Property:</strong> <span data-bracket="start" data-for="ia-report">]</span>123 Industrial Way, Chicago, IL</p>
+
+      <div style="background: #fdfdfd; border: 1px solid #eee; padding: 15px; margin: 15px 0; border-radius: 4px;">
+        <p><strong>Adjuster:</strong> Robert Miller (License #TX-9982)<br>
+        <strong>Inspection Date:</strong> March 15, 2026</p>
+        <p><strong>Damage Estimate (RCV):</strong> $ 42,500.00<br>
+        <strong>Cause of Loss:</strong> Sudden & Accidental Discharge of Water</p>
+      </div>
+
+      <p style="font-size: 0.85em;"><strong>Scope:</strong> Removal of 1,200 sq ft of hardwood; replacement of baseboards and insulation. No structural mold detected at time of inspection.</p>
+    </div>
+
+    <div data-verify-line="ia-report" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: Crawford & Co doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:crawco.com/reports/v/992288 <span data-bracket="end" data-for="ia-report">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Adjuster name, adjuster license number, claimant name, property address, vehicle VIN (if applicable), inspection date, damage assessment
+Adjuster name, IA (Independent Adjuster) license number, hiring carrier name, Claim ID, property address, inspection date, estimated RCV (Replacement Cost Value), cause of loss code, primary scope of work (digest), date of report issuance.
 
-**Multi-Page Handling:** Documents may span multiple pages. Per-page verification prevents page substitution attacks.
+**Document Types:**
+- **Field Inspection Report:** The primary narrative and estimate.
+- **Photo Sheet:** (Linked hash) for every damage photo taken.
+- **Narrative Report:** Adjuster's personal opinion on liability/coverage.
+- **Preliminary Loss Report:** First 24-hour assessment.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`crawco.com`, `eberls.com`, `alacritysolutions.com`) and report status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Final/Closed** — Report is complete and transmitted to the carrier.
+- **Preliminary** — Initial assessment; subject to supplement.
+- **Amended** — A revised report exists (e.g., due to hidden damage found later).
+- **Void** — Assigned to wrong claim or adjuster error.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Hiring Insurance Carrier** benefits from verification.
 
-**Record Verification:** Confirm financial documents match expectations.
+**Anti-Tampering:** Ensuring that the "IA Report" uploaded by a third-party firm hasn't been "Modified" by a broker or contractor before it hits the carrier's core ledger. A verified hash from the IA firm's domain provides the carrier with a "Sanitized Audit Trail" for high-value claims.
 
-**Tax Preparation:** Provide verified documentation for tax filing.
-
-**Audit Support:** Maintain verified records for potential audits.
-
-**Dispute Resolution:** Use verified documents to resolve discrepancies.
-
-**Loan Applications:** Present verified financial documentation to lenders.
+**Subrogation:** Proving the "Proximate Cause" to a third-party tortfeasor's insurer using a verified, immutable expert assessment from the field.
 
 ## Third-Party Use
 
-**Regulators and Oversight Bodies**
+**Property Owners (Policyholders)**
+**Transparency:** Proving to themselves that the "IA Estimate" provided by the contractor matches what the independent adjuster actually sent to the insurance company. Verification prevents "Contractor Padding" where the crew claims the adjuster authorized $50k when they only authorized $40k.
 
-Regulatory compliance and oversight:
+**Legal Counsel (Plaintiffs/Defense)**
+**Discovery Admissibility:** Instantly verifying that a 3-year-old field report used as evidence in a bad-faith lawsuit is the original, non-altered version.
 
-**Systematic Hash Receipt:** Receive hashes in bulk for regulatory oversight.
-
-**Audit Verification:** Verify documents during routine or targeted audits.
-
-**Compliance Monitoring:** Monitor issuer compliance with documentation requirements.
-
-**Investigation Support:** Verify documents during fraud or compliance investigations.
-
-**Consumer Protection:** Verify consumer-facing documents for protection enforcement.
-
-**Lenders and Financial Institutions**
-
-Credit underwriting and risk assessment:
-
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
+**Mortgage Lenders**
+**Repair Audit:** Verifying that the $42,500 insurance payout is actually intended for the "Hardwood Floors" (the bank's collateral) and not just a cash payout for personal items.
 
 ## Verification Architecture
 
-**The Independent adjuster field inspection reports Fraud Problem**
+**The "Estimate Padding" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Income Inflation:** Inflating income or assets on financial documents
-- **Photoshop Fraud:** Digital manipulation of statements and documents
-- **Shell Company Documents:** Documents from fake or shell entities
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Scope Inflation:** A contractor editing the IA's PDF to add 500 extra square feet of flooring to over-charge the carrier.
+- **Cause of Loss Forgery:** Changing "Flood" (uninsured) to "Pipe Burst" (insured) on the paper report to trigger a payout.
+- **License Fraud:** An unlicensed trainee performing the inspection but using a master adjuster's verified signature on the final PDF.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**IA Firms:** (Crawford & Co, Eberl, Sedgwick, Alacrity).
+**Independent Adjusters:** (Solo practitioners).
+**Inspection Platforms:** (e.g., Xactimate/Verisk - hosting the underlying data hashes).
 
-**Banks and Credit Unions:** Depository institutions for account documents.
+## Competition vs. Claims Management Portals
 
-**Investment Firms:** Brokerage and investment management firms.
+| Feature | OCR-to-Hash | Claims Portal (Guidewire) | Scanned PDF Report |
+| :--- | :--- | :--- | :--- |
+| **Trust Anchor** | **Domain-Bound.** Bound to the IA Firm. | **System-Bound.** Trust the Carrier's IT. | **Zero.** Easily forged. |
+| **User Access** | **Universal.** Share with any contractor/bank. | **Zero.** External parties never get portal access. | **Universal.** |
+| **Integrity** | **Binds Details.** Protects the RCV amount. | **High.** | **Vulnerable.** |
+| **Interoperability** | **High.** Works across 100+ different IA firms. | **Low.** Every carrier uses a different system. | **Universal.** |
 
-**Insurance Companies:** Insurers for policy and claims documents.
-
-**Accounting Firms:** CPAs and audit firms for financial statements.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Tamper-evident damage assessments for insurance claims. Firm domain binding prevents forged inspection reports. Field verification by insurance carriers and legal teams during litigation. Critical for claim disputes where independent adjuster reports are key evidence. Prevents alteration of damage assessments after initial inspection.
+**Why OCR wins here:** The "External Vetting" gap. Carriers and IA firms operate in private silos. Contractors and banks are locked out. OCR-to-hash turns the **Field Inspection PDF** into a portable, cryptographically trusted link that bridges the gap between the field expert and the people paying the bills.

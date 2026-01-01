@@ -4,234 +4,108 @@ category: "Food & Beverage Permits"
 volume: "Medium-Small"
 retention: "License term (1-3 years)"
 slug: "liquor-licenses"
-tags: ["liquor", "licenses", "food", "beverage", "permits"]
+tags: ["liquor-license", "abc-board", "alcohol-vending", "restaurant-compliance", "bar-permit", "public-safety", "tied-house-laws"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 3px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+  <div style="background: #1a1a1a; color: #fff; padding: 15px; text-align: center; display: flex; align-items: center; justify-content: center;">
+    <div style="width: 40px; height: 40px; background: #fff; color: #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-right: 15px;">ABC</div>
+    <div>
+      <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">ALCOHOLIC BEVERAGE CONTROL</h2>
+      <div style="font-size: 0.8em; opacity: 0.8;">OFFICIAL ON-SALE GENERAL LICENSE</div>
+    </div>
+  </div>
+
+  <div style="padding: 25px;">
+    <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
+      <h3 style="margin: 0; color: #333;">LICENSE NUMBER: <span data-bracket="start" data-for="liquor">]</span>47-992288</h3>
+    </div>
+
+    <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+      <p><strong>Licensee:</strong> The Tipsy Tavern, LLC<br>
+      <strong>Premises:</strong> 123 Bleecker Street, New York, NY 10012</p>
+
+      <div style="background: #f9f9f9; border: 1px solid #ddd; padding: 10px; margin: 15px 0; border-radius: 4px;">
+        <p><strong>License Class:</strong> Type 47 (Restaurant / Bar)<br>
+        <strong>Authorized Hours:</strong> 08:00 AM to 02:00 AM Daily</p>
+        <p><strong>Capacity:</strong> 125 Persons (Seated)</p>
+      </div>
+
+      <p><strong>Issue Date:</strong> January 15, 2026<br>
+      <strong>Expiration Date:</strong> January 14, 2027</p>
+    </div>
+
+    <div style="margin-top: 25px; border: 1px solid #ccc; padding: 10px; font-size: 0.8em; color: #555; background: #fafafa; font-style: italic; text-align: center;">
+      This license must be displayed in a conspicuous location visible to the public. Verification confirms the license matches the state's active registry.
+    </div>
+
+    <div data-verify-line="liquor" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: ABC Board doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:abc.ny.gov/v/47-992288 <span data-bracket="end" data-for="liquor">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Licensee name (individual or entity), business name (DBA), premises address, license type, license number, license class, authorized hours, seating/occupancy capacity, issuing authority (ABC board, liquor control), issue date, expiration date, any restrictions or conditions.
+Licensee name (individual/entity), premises address, license number, license type (Type 47, 48, etc.), authorized hours of operation, seating/occupancy capacity, expiration date, disciplinary flag status, issuing state/local agency.
 
-**License Types:**
-- **On-Premises:** Consumption on-site (restaurants, bars, clubs)
-- **Off-Premises:** Package sales only (liquor stores, grocery)
-- **Manufacturer:** Breweries, wineries, distilleries
-- **Distributor/Wholesaler:** Wholesale alcohol sales
-- **Catering:** Event-based alcohol service
-- **Special Event:** Temporary permits for events
-- **Club License:** Private clubs
-
-**High Value Assets:** Liquor licenses can be worth $10,000 to $500,000+ depending on jurisdiction and type, making verification for sales/transfers particularly important.
+**Document Types:**
+- **On-Premises License:** For restaurants and bars.
+- **Off-Premises License:** For liquor stores and groceries.
+- **Catering Authorization:** For off-site alcohol service.
+- **Temporary Event Permit:** (Linked hash) for 1-day festivals.
 
 ## Data Visible After Verification
 
-Shows the issuer domain (the ABC board or liquor control authority) and the responder text.
+Shows the issuer domain (`abc.ny.gov`, `abc.ca.gov`) and current status.
 
 **Status Indications:**
-- **Active** - License is current and valid
-- **Expired** - License has expired
-- **Suspended** - License temporarily suspended
-- **Revoked** - License permanently revoked
-- **Pending Renewal** - Renewal application submitted
+- **Active** — License is valid and in good standing.
+- **Suspended** — **ALERT:** Operation prohibited due to safety or legal violation.
+- **Revoked** — Permanently barred from alcohol sales.
+- **Pending Renewal** — Expired but renewal in process.
 
-**Restrictions:** Verification may indicate: "Active - Food service required, no outdoor service after 10pm."
+## Second-Party Use
 
-## Second-Party Use (Licensee Verifying Their Own License)
+The **Establishment Owner (Licensee)** benefits from verification.
 
-License holders benefit from verification.
+**Lease Negotiations:** Proving to a potential landlord that they hold a "Verified Active Type 47" license. In some markets, a liquor license is worth $500,000+; a verified hash prevents the landlord from fearing a "Fake License" scam during a business sale.
 
-**Compliance Confirmation:** Verify license is properly renewed.
-
-**Display Preparation:** Verify license before posting for public display.
-
-**Event Planning:** Verify catering license for off-site events.
-
-**Transfer Preparation:** Verify license status before sale or transfer.
+**Wholesale Purchasing:** Proving verified status to alcohol distributors (e.g., Southern Glazer's) to authorize large inventory orders. Distributors are legally barred from selling to unlicensed vendors.
 
 ## Third-Party Use
 
-**Law Enforcement**
-
-Alcohol enforcement:
-
-**Compliance Checks:** Verify license during inspections.
-
-**Minor Decoy Operations:** Verify license is valid during stings.
-
-**Complaint Investigation:** Verify license when investigating complaints.
-
-**After-Hours Enforcement:** Verify operating hours.
-
-**Prospective Buyers**
-
-Business acquisition:
-
-**Due Diligence:** Verify license before purchasing licensed business.
-
-**Transfer Eligibility:** Confirm license can be transferred.
-
-**Encumbrances:** Check for any liens or restrictions.
-
-**Valuation:** Verify license type for business valuation.
-
-**Landlords**
-
-Lease negotiations:
-
-**Tenant Qualification:** Verify prospective tenant holds valid license.
-
-**Lease Compliance:** Verify tenant maintains license as required.
-
-**Sublease Approval:** Verify for sublease situations.
-
 **Alcohol Distributors**
+**Compliance Vetting:** Automatically verifying the licenses of 1,000+ retail customers. OCR-to-hash allows the distributor to stop delivery *instantly* if a retailer's license is suspended by the state, protecting the distributor's own multi-billion dollar license.
 
-Wholesale sales:
+**Law Enforcement (NYPD / LAPD)**
+**Field Adjudication:** During an 11 PM compliance check, an officer scans the window license. "Verified by ABC" ensure the bar isn't using a "Homemade License" or an old "Catering Permit" to run a full-service nightclub.
 
-**Customer Verification:** Verify retailer license before selling.
-
-**Credit Decisions:** License status affects credit terms.
-
-**Tied House Laws:** Compliance with distribution regulations.
-
-**Catering Clients**
-
-Event planning:
-
-**Service Verification:** Verify caterer's alcohol service license.
-
-**Event Permits:** Verify event-specific permits.
-
-**Liability Concerns:** Confirm proper licensing for liability.
-
-**Insurance Companies**
-
-Liquor liability:
-
-**Coverage Decisions:** Verify license for liquor liability coverage.
-
-**Premium Calculation:** License type affects premiums.
-
-**Claims Investigation:** Verify license status at time of incident.
-
-**Neighbors and Community**
-
-Local concerns:
-
-**New Application Review:** Verify applications in neighborhood.
-
-**Compliance Verification:** Verify establishments follow conditions.
-
-**Complaint Documentation:** Document violations.
+**Business Buyers (M&A)**
+**Valuation Vetting:** Verifying the "Good Standing" and "Capacity" of a license before buying a restaurant.
 
 ## Verification Architecture
 
-**The Liquor License Fraud Problem**
+**The "Speakeasy" Fraud Problem**
 
-License fraud enables illegal alcohol sales:
+- **Ghost Licenses:** Creating a fake ABC card for a non-existent or un-vetted basement bar.
+- **Hours Tampering:** Editing a "12:00 AM" closing time to "04:00 AM" on the paper license to trick the local police.
+- **License Renting:** An unlicensed person using a retired owner's physical license paper. Verification shows the *Entity Name* which won't match the new operator.
 
-- **Fake Licenses:** Entirely fabricated licenses
-- **Expired Presented as Current:** Operating on expired licenses
-- **Wrong Type:** Off-premises license used for bar operation
-- **Altered Conditions:** Restrictions removed from license copy
-- **Transferred Without Approval:** Operating under previous owner's license
-- **Scope Fraud:** Exceeding authorized hours or capacity
+**Issuer Types**
 
-OCR-to-hash addresses forgery and alteration. ABC database verification confirms current status.
+**State Alcoholic Beverage Control (ABC) Boards.**
+**Municipal Liquor Commissions.**
+**State Departments of Revenue.**
 
-**State ABC/Liquor Control as Issuers**
+## Competition vs. Public Registry Search
 
-State agencies regulate alcohol:
+| Feature | OCR-to-Hash | ABC Online Search | Scanned PDF / Window Card |
+| :--- | :--- | :--- | :--- |
+| **Field Access** | **Instant.** Scan the paper in the window. | **Difficult.** Requires typing the License # and navigating old UIs. | **Instant.** |
+| **Trust Anchor** | **Domain-Bound.** Bound to the ABC Board. | **Database.** High trust but manual. | **Zero.** Easily forged. |
+| **Integrity** | **Binds Hours.** Protects the data. | **General.** Often just says "Active" without the fine-print hours. | **Vulnerable.** |
+| **Hardware** | **Universal.** Any smartphone camera. | **Technical.** Requires laptop/dedicated search. | **Visual.** |
 
-**ABC Boards:** Alcoholic Beverage Control boards.
-
-**Liquor Control Commissions:** Alternative state structures.
-
-**Local Licensing:** Some cities have additional requirements.
-
-**Three-Tier System:** Separation of manufacturer, distributor, retailer.
-
-Each state agency operates verification endpoints for licenses they issue.
-
-**Public Display Requirements**
-
-Licenses must be visible:
-
-**Posted at Premises:** Original must be displayed.
-
-**Visible to Public:** Customers should be able to view.
-
-**Current License:** Only current license should be displayed.
-
-**Inspection Access:** Available for inspection on demand.
-
-Verification complements physical display by confirming authenticity.
-
-**Transfer and Sale Procedures**
-
-Licenses require transfer approval:
-
-**Application Process:** New owner must apply for transfer.
-
-**Background Checks:** Transferee undergoes investigation.
-
-**Creditor Claims:** Outstanding debts may block transfer.
-
-**Approval Period:** Transfers take weeks to months.
-
-Verification status should indicate: "Transfer pending to [new owner], effective [date]."
-
-**Quota and Availability**
-
-Many jurisdictions limit licenses:
-
-**Population Quotas:** Licenses per capita.
-
-**Geographic Restrictions:** Distance from schools, churches.
-
-**Moratoriums:** No new licenses in certain areas.
-
-**Waiting Lists:** Years-long waits for new licenses.
-
-Scarcity increases value and fraud incentive.
-
-**Disciplinary Actions**
-
-License enforcement:
-
-**Violations:** Over-serving, sales to minors, after-hours.
-
-**Penalties:** Fines, suspension days, revocation.
-
-**Conditional Licenses:** Probationary periods.
-
-**Appeal Rights:** Hearing and appeal procedures.
-
-Verification should indicate: "Active - Previous suspension (2022), resolved."
-
-**Local Permits and Conditions**
-
-Additional local requirements:
-
-**Conditional Use Permits:** Land use approval for alcohol.
-
-**Entertainment Permits:** Live music, dancing.
-
-**Outdoor Service:** Patio or sidewalk service.
-
-**Extended Hours:** Late-night operating permits.
-
-Multiple permits may be required for full operation.
-
-**Special Event Licensing**
-
-Temporary alcohol permits:
-
-**One-Day Permits:** Single event authorization.
-
-**Festival Permits:** Multi-day event permits.
-
-**Catering Permits:** Off-site service authorization.
-
-**Nonprofit Events:** Special rules for charitable events.
-
-Event permits require same verification as permanent licenses.
-
+**Why OCR wins here:** The "Front Window" reality. Liquor licenses are legally required to be posted in the window. Citizens and officers encounter them in the physical world. OCR-to-hash turns that **Window Display** into a live digital checkpoint, ensuring that "Public Safety" data is as accessible as the front door.

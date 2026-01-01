@@ -1,122 +1,109 @@
 ---
-title: "ATA Carnets (temporary import/export)"
+title: "ATA Carnets (Temporary Import/Export)"
 category: "Customs & Trade Compliance"
 volume: "Small"
 retention: "Carnet validity + 7 years"
 slug: "ata-carnets"
-tags: ["carnets", "logistics", "transportation"]
+tags: ["carnet", "customs", "trade", "logistics", "export", "import", "wco"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #005a9c; background: #fff; padding: 0;">
+  <div style="background: #005a9c; color: #fff; padding: 15px; text-align: center;">
+    <h3 style="margin: 0; text-transform: uppercase;">ATA CARNET</h3>
+    <div style="font-size: 0.8em;">UNITED STATES COUNCIL FOR INTERNATIONAL BUSINESS</div>
+  </div>
+
+  <div style="padding: 25px;">
+    <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+      <div>
+        <strong>Carnet No:</strong> US-99887766<br>
+        <strong>Issued by:</strong> USCIB
+      </div>
+      <div style="text-align: right;">
+        <strong>Valid Until:</strong> 15 MAR 2027
+      </div>
+    </div>
+
+    <div style="font-size: 0.9em; line-height: 1.5; color: #333;">
+      <p><strong>Holder:</strong> <span data-bracket="start" data-for="carnet">]</span>RockBand Tours, LLC<br>
+      123 Soundstage Way, Nashville, TN</p>
+
+      <p><strong>General Description of Goods:</strong><br>
+      Musical Instruments, Amplifiers, and Audio Recording Equipment for Professional Use (Total Items: 42)</p>
+
+      <div style="background: #f0f7ff; border: 1px solid #b3d7ff; padding: 10px; margin: 15px 0;">
+        <strong>Intended Use:</strong> Professional Equipment<br>
+        <strong>Countries:</strong> UK, EU, JAPAN, AUSTRALIA
+      </div>
+
+      <p style="font-size: 0.8em;">Customs at POE: Please endorse corresponding counterfoils.</p>
+    </div>
+
+    <div data-verify-line="carnet" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: USCIB doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:uscib.org/carnets/v/US998877 <span data-bracket="end" data-for="carnet">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Carnet holder, goods description, destination countries, customs authorities
+Carnet number, holder name, total items, value of goods, countries of transit, expiration date, intended use (Commercial Samples, Professional Equipment, Fair/Exhibition).
+
+**Document Types:**
+- **Carnet Green Cover:** The main identification document.
+- **Yellow Vouchers:** For the country of origin (Export/Re-import).
+- **White Vouchers:** For the country of destination (Import/Re-export).
+- **Blue Vouchers:** For transit countries.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`uscib.org`, `iccwbo.org`) and document status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Valid** — Carnet is active and backed by a security bond.
+- **Closed** — All goods have been verified as returned; bond released.
+- **Expired** — Re-export deadline passed; duties may be triggered.
+- **Invalid** — Serial number mismatch or fraudulent document.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Carnet Holder** (Exporter) benefits from verification.
 
-**Document Authenticity:** Verify received documents are genuine and properly issued.
+**Customs Clearance:** Proving to a Japanese customs officer that the Nashville band's 42 flight cases are "Verified Professional Equipment" and not illegal imports intended for sale. A verified carnet prevents the seizure of equipment or the demand for cash duties at the border.
 
-**Third-Party Presentation:** Provide verified documentation when required.
-
-**Compliance Requirements:** Meet regulatory or contractual documentation requirements.
-
-**Record Keeping:** Maintain verified records for future reference or audits.
-
-**Dispute Prevention:** Establish authenticity to prevent future challenges.
+**Bond Management:** Proving to the bond insurer that the carnet was properly closed at the final port of entry, speeding up the release of the collateral deposit.
 
 ## Third-Party Use
 
-**Insurance Companies**
+**Customs Authorities (Foreign)**
+**Risk Assessment:** Customs can verify the Carnet data against the national chamber of commerce record instantly. If the paper says "Musical Instruments" but the hash says "Luxury Watches," the discrepancy triggers an immediate inspection.
 
-Underwriting and claims processing:
+**Freight Forwarders**
+**Acceptance:** Verifying the carnet is valid before accepting high-value temporary exports, ensuring they won't be held liable for foreign duties if the document is rejected at the destination.
 
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Customs and Border Authorities**
-
-International trade compliance:
-
-**Import Clearance:** Verify shipping documents for customs clearance.
-
-**Duty Assessment:** Validate commercial invoices and declarations.
-
-**Trade Compliance:** Confirm certificates of origin and trade documents.
-
-**Security Screening:** Verify cargo documentation for security.
-
-**Export Controls:** Validate export documentation and licenses.
-
-**Freight Forwarders and Carriers**
-
-Logistics and transportation:
-
-**Shipment Acceptance:** Verify documents before accepting cargo.
-
-**Carrier Handoffs:** Validate documentation at transfer points.
-
-**Liability Determination:** Reference verified documents for claims.
-
-**Route Planning:** Confirm documentation for transit requirements.
-
-**Delivery Confirmation:** Verify documents at final delivery.
+**Event Organizers**
+**Trade Show Logistics:** Ensuring all international exhibitors have valid carnets for their displays, preventing last-minute booth empty spaces due to customs hold-ups.
 
 ## Verification Architecture
 
-**The ATA Carnets (temporary import/export) Fraud Problem**
+**The "Temporary Import" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Ghost Exports:** Claiming to re-export goods (to close the carnet and get the bond back) while actually selling them on the black market in the foreign country.
+- **Value Under-reporting:** Listing a $1M diamond as "Glass Sample" on the paper carnet to reduce the bond requirement.
+- **Date Forgery:** Altering the "Valid Until" date to avoid paying duties when equipment stays in a country longer than 12 months.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**National Chambers of Commerce:** (e.g., USCIB in the US, London Chamber in the UK).
+**International Chamber of Commerce (ICC):** Overseeing the global chain.
 
-**Primary Issuers:** Organizations with direct authority to issue these documents.
+## Competition vs. e-ATA (Digital Carnet)
 
-**Licensed Professionals:** Professionals authorized to create and certify documents.
+| Feature | OCR-to-Hash | e-ATA (ICC Project) | Paper Carnet (Traditional) |
+| :--- | :--- | :--- | :--- |
+| **Connectivity** | **Offline-Ready.** Paper works when port Wi-Fi fails. | **Fragile.** Requires live app + cloud connectivity at the border. | **Manual.** Relies on physical stamps. |
+| **Trust** | **Domain-Bound.** Trust the National Chamber. | **Platform-Bound.** Requires all countries to join the same IT system. | **Visual.** Prone to stamp forgery. |
+| **Audit Trail** | **Hybrid.** Physical stamps + digital snapshots. | **Digital Only.** Hard to reconcile with physical boxes in a truck. | **Physical.** Hard to audit centrally. |
 
-**Government Agencies:** Federal, state, or local agencies with jurisdiction.
-
-**Industry Bodies:** Trade associations and professional organizations.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Prevents fake ATA Carnets (temporary import fraud). Domain binding verifies issuing chamber/customs. International trade show equipment. Prevents permanent import of temporary goods. World Customs Organization (WCO) compliance.
+**Why OCR wins here:** Customs borders are "Disconnected Edges." An officer in a remote port may not have the right app or credentials for the ICC's global e-ATA system. But they *always* have a phone with a browser. OCR-to-hash turns the persistent paper carnet into a universal digital bridge that works across any border, app-free.

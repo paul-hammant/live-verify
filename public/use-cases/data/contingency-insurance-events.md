@@ -1,129 +1,115 @@
 ---
-title: "Contingency insurance (event cancellation, non-appearance)"
+title: "Contingency Insurance (Event Cancellation)"
 category: "Specialty Insurance"
 volume: "Small"
 retention: "Event + 7 years"
 slug: "contingency-insurance-events"
-tags: ["contingency", "insurance", "events", "risk", "management"]
+tags: ["contingency-insurance", "event-cancellation", "non-appearance", "special-events", "lloyds", "risk-management"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 2px solid #002366; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+  <div style="background: #002366; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+    <div>
+      <div style="font-weight: bold; font-size: 1.2em;">BEAZLEY SPECIALTY LTD</div>
+      <div style="font-size: 0.8em;">Lloyd's Syndicate 2623/623</div>
+    </div>
+    <div style="text-align: right;">
+      <div style="font-size: 0.8em;">Policy #: EV-998877-26</div>
+    </div>
+  </div>
+
+  <div style="padding: 35px;">
+    <h2 style="text-align: center; color: #002366; font-size: 1.4em; margin-bottom: 25px; text-transform: uppercase; letter-spacing: 1px;">Evidence of Contingency Insurance</h2>
+
+    <div style="font-size: 1em; line-height: 1.6; color: #333;">
+      <p><strong>Insured:</strong> <span data-bracket="start" data-for="event">]</span>Glastonbury Festival Events, Ltd.<br>
+      <strong>Event:</strong> 2026 Summer Music Festival</p>
+
+      <div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin: 20px 0;">
+        <p><strong>Section 1: Event Cancellation / Abandonment</strong><br>
+        Limit: GBP 25,000,000.00</p>
+        <p><strong>Section 2: Non-Appearance</strong><br>
+        Specific Artist: [REDACTED]<br>
+        Limit: GBP 5,000,000.00</p>
+      </div>
+
+      <p><strong>Coverage Includes:</strong> Adverse Weather, Terrorism, National Mourning, Communicable Disease (Endorsement #42).</p>
+      <p><strong>Effective Date:</strong> June 24, 2026 to June 28, 2026</p>
+    </div>
+
+    <div style="margin-top: 40px; border-top: 1px solid #ccc; padding-top: 10px; font-size: 0.8em; color: #666; font-style: italic; text-align: center;">
+      This evidence is subject to the terms and conditions of the Master Policy.
+    </div>
+
+    <div data-verify-line="event" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: Beazley doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:beazley.com/v/GLASTO-2026 <span data-bracket="end" data-for="event">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Event organizer, performer, coverage trigger, coverage amount, insurer
+Insured entity name, event name/ID, coverage limits (Cancellation/Abandonment/Non-Appearance), specific "Key Artist" inclusions, date range of the event, geographic territory, primary endorsements (e.g., Pandemic/Communicable Disease), issuing syndicate.
 
-**Policy Forms:** Different policy forms and endorsements may apply.
+**Document Types:**
+- **Evidence of Insurance:** For venues and vendors.
+- **Non-Appearance Rider:** Specific to celebrity/athlete availability.
+- **Prize Indemnity Certificate:** (e.g., "Hole-in-One" or "Half-Court Shot" insurance).
+- **Adverse Weather Policy:** Triggered by specific rainfall/wind measurements.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`beazley.com`, `hiscox.com`) and current policy standing.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-- **Cancelled** - Policy cancelled before expiration
-- **Non-Renewed** - Policy expired and not renewed
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Active** — Premium paid; event covered.
+- **Cancelled** — Policy terminated (often due to non-payment or increased risk profile).
+- **Claim Filed** — Event has been cancelled; claim in processing.
+- **Closed** — Event completed; no claim filed.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Event Promoter** benefits from verification.
 
-**Proof of Coverage:** Verify coverage is active when needed for compliance or access.
+**Venue Booking:** Proving to a stadium or arena owner that the $25M cancellation policy is verified active. Venues often require this proof before allowing a promoter to move equipment onto the grass.
 
-**Claims Support:** Confirm policy details when filing claims.
+**Talent Booking:** Proving to a major artist's agent that the "Non-Appearance" deposit is backed by a verified insurance policy from a Lloyd's syndicate.
 
-**Coverage Confirmation:** Verify coverage terms match expectations after purchase.
-
-**Third-Party Presentation:** Provide verified proof to landlords, lenders, or employers.
-
-**Renewal Verification:** Confirm renewal was processed and coverage continues.
+**Sponsorship Contracts:** Assuring major sponsors (e.g., Coca-Cola or Nike) that their investment is protected even if the event is cancelled due to a hurricane or pandemic.
 
 ## Third-Party Use
 
-**Regulators and Oversight Bodies**
+**Venue Owners / Stadiums**
+**Liability Discharge:** Ensuring the promoter has enough "Cancellation Cash" to pay the venue's staff and overhead if the concert is called off at the last minute.
 
-Regulatory compliance and oversight:
+**Reinsurers**
+**Risk Aggregation:** Reinsurers can verify the digital hashes of all "Festival Policies" in a specific city to ensure they aren't over-exposed to a single weather event (e.g., a hurricane hitting Miami during Art Basel).
 
-**Systematic Hash Receipt:** Receive hashes in bulk for regulatory oversight.
-
-**Audit Verification:** Verify documents during routine or targeted audits.
-
-**Compliance Monitoring:** Monitor issuer compliance with documentation requirements.
-
-**Investigation Support:** Verify documents during fraud or compliance investigations.
-
-**Consumer Protection:** Verify consumer-facing documents for protection enforcement.
-
-**Lenders and Financial Institutions**
-
-Credit underwriting and risk assessment:
-
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
+**Artists / Talent Agencies**
+**Deposit Protection:** Verifying that the insurance covering the artist's non-appearance (which might trigger a refund of their guarantee) is legitimate.
 
 ## Verification Architecture
 
-**The Contingency insurance (event cancellation, non-appearance) Fraud Problem**
+**The "Phantom Policy" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Coverage Inflation:** Inflating coverage limits or adding non-existent coverage
-- **Backdating:** Creating policies with false effective dates
-- **Ghost Policies:** Fabricated policies from non-existent insurers
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Photoshop Forgery:** Editing an old 2022 pandemic policy to read "2026" to trick a venue into allowing a high-risk event.
+- **Limit Inflation:** Changing a $1M limit to a $10M limit to secure a more prestigious venue.
+- **Endorsement Fabrications:** Adding a fake "Communicable Disease" endorsement to a policy that actually excludes it (a common post-COVID fraud).
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Specialty Insurers:** (Beazley, Hiscox, Chubb).
+**Lloyd's Syndicates:** (Primary market for contingency).
+**MGA Specialists:** (e.g., HCC Specialty).
 
-**Banks and Credit Unions:** Depository institutions for account documents.
+## Competition vs. Central Registries (Lloyd's)
 
-**Investment Firms:** Brokerage and investment management firms.
+| Feature | OCR-to-Hash | Lloyd's Market Database | Paper Evidence |
+| :--- | :--- | :--- | :--- |
+| **Integrity** | **Binds Endorsements.** Protects the "Fine Print" triggers. | **General.** Often only shows the broad policy existence. | **Zero.** Easily forged. |
+| **Accessibility** | **Universal.** Any venue manager can verify. | **Restricted.** Requires Lloyd's broker access. | **Manual.** |
+| **Speed** | **Instant.** Scan the paper at the loading dock. | **Slow.** Requires calling a London broker. | **Instant.** |
+| **Confidentiality** | **High.** Only the specific event is verified. | **Low.** Central lists can reveal entire portfolios. | **Medium.** |
 
-**Insurance Companies:** Insurers for policy and claims documents.
-
-**Accounting Firms:** CPAs and audit firms for financial statements.
-
-**System Integration**
-
-Insurance verification integrates with industry systems:
-
-**Policy Administration Systems:** Core insurance systems generate verification hashes at policy issuance.
-
-**ACORD Standards:** Insurance industry data standards could include verification fields.
-
-**State Insurance Databases:** Regulators maintain databases for systematic hash receipt.
-
-**Agent Portals:** Insurance agents access verification for client service.
-
-## Rationale
-
-Prevents fake contingency insurance. Domain binding verifies Lloyd's syndicate/specialist. High-value events ($10M-$100M+ revenue). Celebrity non-appearance coverage. Tour cancellation. Adverse weather. Pandemic coverage (post-COVID).
+**Why OCR wins here:** The "Loading Dock" reality. In the 48 hours before a massive festival, logistics are chaotic. A site manager doesn't have time to call London to verify a broker's email. OCR-to-hash turns the **Physical Evidence of Insurance** into a live digital portal, ensuring that the show goes on (or is safely insured if it doesn't).

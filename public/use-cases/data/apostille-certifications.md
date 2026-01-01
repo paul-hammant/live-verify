@@ -1,110 +1,110 @@
 ---
-title: "Apostille certifications (Hague Convention)"
+title: "Apostille Certifications (Hague Convention)"
 category: "Notary Services"
 volume: "Small"
 retention: "Document lifetime + permanent"
 slug: "apostille-certifications"
-tags: ["apostille", "certifications", "notary", "services"]
+tags: ["apostille", "hague", "international", "notary", "legalization", "authentication"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 3px solid #000; background: #fff; padding: 40px; position: relative;">
+  <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
+    <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 2px;">APOSTILLE</h2>
+    <div style="font-size: 0.9em;">(Convention de La Haye du 5 octobre 1961)</div>
+  </div>
+
+  <div style="font-size: 0.9em; line-height: 1.8;">
+    <p><strong>1. Country:</strong> United States of America</p>
+    <p>This public document<br>
+    <strong>2. has been signed by:</strong> <span data-bracket="start" data-for="apostille">]</span><strong>John Hancock</strong><br>
+    <strong>3. acting in the capacity of:</strong> Notary Public, State of New York<br>
+    <strong>4. bears the seal/stamp of:</strong> John Hancock, Notary Public</p>
+
+    <div style="border: 1px solid #000; padding: 10px; margin: 10px 0; text-align: center; font-weight: bold; background: #f9f9f9;">
+      CERTIFIED
+    </div>
+
+    <p><strong>5. at:</strong> Albany, New York<br>
+    <strong>6. the:</strong> 15th day of March, 2026<br>
+    <strong>7. by:</strong> Secretary of State, State of New York<br>
+    <strong>8. Number:</strong> NY-2026-998877</p>
+
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px;">
+      <div>
+        <strong>9. Seal/stamp:</strong><br>
+        <div style="width: 80px; height: 80px; border: 2px dashed #999; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7em; color: #999;">[GOLD SEAL]</div>
+      </div>
+      <div style="text-align: right;">
+        <strong>10. Signature:</strong><br>
+        <em>Robert J. Rodriguez</em><br>
+        Secretary of State
+      </div>
+    </div>
+  </div>
+
+  <div data-verify-line="apostille" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+      title="Demo only: State Dept doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:dos.ny.gov/apostille/v/NY998877 <span data-bracket="end" data-for="apostille">]</span>
+  </div>
+</div>
+
 ## Data Verified
 
-Document holder, issuing authority (Secretary of State), apostille certificate number, destination country, underlying document details, apostille seal, issue date
+Signer name, capacity of signer (Notary/Judge/Clerk), seal/stamp identification, location of issuance, date of issuance, certificate number (Apostille ID), issuing authority (Secretary of State).
 
-**Certificate Variations:** Multiple certificate types or levels may exist.
+**Document Types:**
+- **Standard Apostille:** For countries in the Hague Convention.
+- **Certificate of Authentication:** For non-Hague countries (requires multi-step legalization).
+- **Federal Apostille:** Issued by U.S. Dept of State for federal documents (FBI checks, etc.).
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`dos.ny.gov`, `state.gov`) and the document status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Verified** — Certificate is legitimate and matches the state record.
+- **Invalid** — Serial number not found or details mismatch.
+- **Withdrawn** — Authority has revoked the authentication (e.g., discovery of fraud in the underlying document).
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Document Holder** (e.g., expat, international student) benefits from verification.
 
-**Authenticity Confirmation:** Verify certificate after receipt to confirm it's genuine.
+**Visa Applications:** Proving to a foreign consulate (e.g., Spain, Italy) that their background check or birth certificate is legitimately authenticated for use abroad.
 
-**Credential Display:** Present verified credentials to employers or clients.
-
-**Professional Development:** Track verified certifications for career advancement.
-
-**Compliance Documentation:** Maintain verified certificates for regulatory requirements.
-
-**Renewal Planning:** Monitor certification status to avoid expiration.
+**Property Purchase:** Verifying their own Power of Attorney document before sending it overseas to ensure it won't be rejected by a foreign notary.
 
 ## Third-Party Use
 
-**Courts and Legal Professionals**
+**Foreign Governments / Registries**
+**Authenticity Check:** A land registry in Greece receiving a US Power of Attorney needs to know if the "Apostille" attached to it is real. Scanning the verification link instantly proves the New York Secretary of State actually issued it, without needing to understand US state seals.
 
-Litigation and legal proceedings:
+**International Banks**
+**KYC/Onboarding:** Verifying corporate "Certificates of Good Standing" from foreign subsidiaries.
 
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
-
-**Auditors and Compliance Officers**
-
-Internal and external audits:
-
-**Financial Audits:** Verify documents during financial statement audits.
-
-**Compliance Audits:** Validate documentation for regulatory compliance.
-
-**Internal Controls:** Test document authenticity in control assessments.
-
-**Fraud Investigations:** Verify documents in fraud examinations.
-
-**Third-Party Audits:** Validate vendor and partner documentation.
+**Universities (Admissions)**
+**Degree Validation:** Verifying that a foreign transcript's authentication is legitimate.
 
 ## Verification Architecture
 
-**The Apostille certifications (Hague Convention) Fraud Problem**
+**The "Fake Legalization" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Phony Apostilles:** High-quality forgeries of state certificates, often attached to fake degrees or fabricated legal documents.
+- **Seal Theft:** Using a genuine state seal image on a fabricated certificate number.
+- **Underlying Fraud:** An Apostille is only as good as the underlying signature. If the Notary signature was forged, the Apostille (if it could be verified) would be part of a fraudulent chain.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Secretary of State (U.S. States):** Primary issuers for state-level docs.
+**U.S. Department of State:** For federal documents.
+**Competent Authorities:** National ministries in foreign countries.
 
-**Primary Issuers:** Organizations with direct authority to issue these documents.
+## Competition vs. e-Apostille (Registry)
 
-**Licensed Professionals:** Professionals authorized to create and certify documents.
+| Feature | OCR-to-Hash | e-Apostille Registry | Wet Ink / Embossed |
+| :--- | :--- | :--- | :--- |
+| **User Experience** | **Seamless.** Scan the paper you are holding. | **Difficult.** Must find the state website, type in the 12-digit ID, solve CAPTCHAs. | **Manual.** Compare seals to pictures in a book. |
+| **Trust Anchor** | **Domain-Bound.** `dos.ny.gov` is the source of truth. | **Centralized.** Only works if the specific registry is known. | **Visual.** Easily fooled by high-quality copies. |
+| **Offline Check** | **Medium.** Hash protects the printed text integrity. | **None.** Requires live DB access. | **Strong.** Physical security features (ribbons, grommets). |
 
-**Government Agencies:** Federal, state, or local agencies with jurisdiction.
-
-**Industry Bodies:** Trade associations and professional organizations.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Prevents fake apostilles in international document authentication. Domain binding verifies Secretary of State or competent authority. Hague Convention compliance for cross-border document recognition. Prevents international fraud in visa applications, foreign adoptions, business registrations. Multi-page documents (apostille plus underlying document) benefit from per-page verification. Critical for international legal proceedings where apostilles prove document authenticity across borders.
+**Why OCR wins here:** International law is slow. The "Hague Convention" relies on paper certificates attached with ribbons or staples. OCR-to-hash bridges this ancient physical process to the modern web, allowing a clerk in a small village in Italy to verify a document from California in seconds, using only their phone.

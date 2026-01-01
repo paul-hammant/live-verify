@@ -1,125 +1,121 @@
 ---
-title: "Dynamic discounting confirmations"
+title: "Dynamic Discounting Confirmations"
 category: "Trade Finance"
 volume: "Small"
 retention: "3-7 years (payment disputes)"
 slug: "dynamic-discounting-confirmations"
-tags: ["dynamic", "discounting", "confirmations", "banking", "financial", "services"]
+tags: ["trade-finance", "dynamic-discounting", "early-payment", "supply-chain-finance", "accounts-payable", "fintech", "cash-flow"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="background: #002d62; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+    <div>
+      <div style="font-weight: bold; font-size: 1.2em;">C2FO DYNAMIC DISCOUNTING</div>
+      <div style="font-size: 0.8em; opacity: 0.8;">Working Capital Verification</div>
+    </div>
+    <div style="text-align: right;">
+      <div style="font-size: 0.8em;">Market ID: C2-998877</div>
+    </div>
+  </div>
+
+  <div style="padding: 25px;">
+    <h3 style="margin-top: 0; color: #002d62; border-bottom: 2px solid #002d62; padding-bottom: 5px;">EARLY PAYMENT CONFIRMATION</h3>
+
+    <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
+      <p><strong>Supplier:</strong> <span data-bracket="start" data-for="discount">]</span>Apex Manufacturing, Ltd.<br>
+      <strong>Buyer:</strong> Global Retail Hub, Corp.</p>
+
+      <div style="background: #f0f4f8; padding: 15px; border: 1px solid #d1d9e6; margin: 15px 0;">
+        <table style="width: 100%; font-size: 0.95em;">
+          <tr>
+            <td><strong>Invoice Total:</strong></td>
+            <td style="text-align: right;">$ 100,000.00</td>
+          </tr>
+          <tr>
+            <td><strong>Early Payment Discount:</strong></td>
+            <td style="text-align: right;">-$ 1,500.00 (1.5%)</td>
+          </tr>
+          <tr>
+            <td><strong>Net Payment Amount:</strong></td>
+            <td style="text-align: right; font-weight: bold;">$ 98,500.00</td>
+          </tr>
+        </table>
+      </div>
+
+      <p><strong>Payment Date:</strong> March 15, 2026 (Net 5 Days)<br>
+      <strong>Original Due Date:</strong> April 30, 2026 (Net 45 Days)</p>
+    </div>
+
+    <div style="margin-top: 30px; font-size: 0.8em; color: #777; font-style: italic; text-align: center;">
+      This confirmation is a verified extract of the C2FO market clearing.
+    </div>
+
+    <div data-verify-line="discount" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: C2FO doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:c2fo.com/confirm/v/C2-998877 <span data-bracket="end" data-for="discount">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Supplier, buyer, invoice amount, discount rate, early payment date
+Supplier name, Buyer name, Invoice number, Gross amount, Discount percentage (APR equivalent), Net payment amount, Target payment date, original due date, clearing platform ID.
+
+**Document Types:**
+- **Early Payment Confirmation:** The "Receipt" showing the trade.
+- **Market Clearing Report:** Summary of all accepted discounts.
+- **Supplier Cash-Flow Forecast:** Proving future liquidity based on verified early payments.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`c2fo.com`, `taulia.com`, `kyriba.com`) and transaction status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Cleared** — Discount accepted by both parties; funds released.
+- **Pending Settlement** — Discount agreed; bank transfer in progress.
+- **Rejected** — Insufficient liquidity or error; original terms apply.
+- **Void** — Transaction cancelled due to invoice dispute.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Supplier (Vendor)** benefits from verification.
 
-**Record Verification:** Confirm financial documents match expectations.
+**Line of Credit Extension:** Proving to their local bank that they have $1M in "Verified Early Payments" coming next week from a high-credit-rating buyer (e.g., Walmart). This allows the supplier to get a larger, cheaper line of credit because the "Accounts Receivable" are verified as "Liquid."
 
-**Tax Preparation:** Provide verified documentation for tax filing.
-
-**Audit Support:** Maintain verified records for potential audits.
-
-**Dispute Resolution:** Use verified documents to resolve discrepancies.
-
-**Loan Applications:** Present verified financial documentation to lenders.
+**Audit Integrity:** Proving to their own tax auditors why they accepted 98.5% of an invoice total, justifying the "Finance Expense" of the discount.
 
 ## Third-Party Use
 
-**Regulators and Oversight Bodies**
+**Lenders (Asset-Based Lenders)**
+**Collateral Vetting:** Verifying that the AR (Accounts Receivable) listed on the balance sheet hasn't already been "Discounted" or "Factored." OCR-to-hash ensures the lender isn't lending against 100% of an invoice that the supplier already agreed to take 98% for.
 
-Regulatory compliance and oversight:
+**Tax Authorities**
+**Revenue Verification:** Ensuring the "Gross Revenue" and "Financing Costs" are properly categorized for corporate tax purposes.
 
-**Systematic Hash Receipt:** Receive hashes in bulk for regulatory oversight.
-
-**Audit Verification:** Verify documents during routine or targeted audits.
-
-**Compliance Monitoring:** Monitor issuer compliance with documentation requirements.
-
-**Investigation Support:** Verify documents during fraud or compliance investigations.
-
-**Consumer Protection:** Verify consumer-facing documents for protection enforcement.
-
-**Lenders and Financial Institutions**
-
-Credit underwriting and risk assessment:
-
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
+**Supply Chain Auditors**
+**Financial Health Monitoring:** Tracking the discount rates being accepted by suppliers. A sudden jump from 1% to 5% discount acceptance is a verified "Distress Signal."
 
 ## Verification Architecture
 
-**The Dynamic discounting confirmations Fraud Problem**
+**The "Double Counting" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Income Inflation:** Inflating income or assets on financial documents
-- **Photoshop Fraud:** Digital manipulation of statements and documents
-- **Shell Company Documents:** Documents from fake or shell entities
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Double Financing:** Selling an invoice to a factoring company while *simultaneously* taking an early payment discount from the buyer.
+- **Amount Tampering:** Editing a 1% discount to read 5% to hide internal accounting errors.
+- **Date Alteration:** Changing the "Original Due Date" to hide that the company is taking early payments on debt that was already overdue.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Dynamic Discounting Platforms:** (C2FO, Taulia, Tradeshift).
+**ERP Systems:** (SAP, Oracle - hosting the discounting logic).
+**Supply Chain Finance Banks.**
 
-**Banks and Credit Unions:** Depository institutions for account documents.
+## Competition vs. ERP Logins
 
-**Investment Firms:** Brokerage and investment management firms.
+| Feature | OCR-to-Hash | ERP Dashboard (SAP) | Scanned PDF Confirmation |
+| :--- | :--- | :--- | :--- |
+| **Trust Anchor** | **Domain-Bound.** Bound to the Platform. | **System-Bound.** | **Zero.** Easily forged. |
+| **User Access** | **Universal.** Any local lender can verify. | **Restricted.** Lenders never get access to a supplier's internal SAP. | **Instant.** |
+| **Integrity** | **Binds FX/Rates.** Protects the % discount. | **High.** | **Vulnerable.** |
+| **Speed** | **Instant.** 5-second scan. | **Slow.** Requires manual data export and upload. | **Instant.** |
 
-**Insurance Companies:** Insurers for policy and claims documents.
-
-**Accounting Firms:** CPAs and audit firms for financial statements.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Tamper-evident discount terms. Domain binding verifies buyer/platform. Prevents payment disputes. Supply chain finance transparency. Supplier cash flow verification.
+**Why OCR wins here:** The "Small Bank" Problem. A small parts manufacturer in Ohio uses C2FO to get early payments from Boeing. Their local hometown bank wants to lend them money based on those Boeing receivables. The local bank doesn't have an integration with C2FO or Boeing's SAP. OCR-to-hash turns the **Confirmation PDF** into a trusted digital artifact the local bank can rely on.

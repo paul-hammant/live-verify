@@ -1,108 +1,103 @@
 ---
-title: "Corporate resolutions and board minutes"
+title: "Corporate Resolutions and Board Minutes"
 category: "Notary Services"
 volume: "Small"
 retention: "7-10 years (corporate records)"
 slug: "corporate-resolutions-board-minutes"
-tags: ["corporate", "resolutions", "board", "minutes", "notary", "services"]
+tags: ["corporate-governance", "board-minutes", "resolution", "secretary-certificate", "legal-authority", "notary", "m-and-a"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+  <div style="text-align: center; margin-bottom: 30px;">
+    <div style="font-weight: bold; font-size: 1.2em;">SECRETARY'S CERTIFICATE OF RESOLUTION</div>
+    <div style="font-size: 0.9em; margin-top: 5px;">OF THE BOARD OF DIRECTORS OF</div>
+    <div style="font-weight: bold; font-size: 1.1em; margin-top: 5px;">WAYSTAR ROYCO CORP.</div>
+  </div>
+
+  <div style="font-size: 1em; line-height: 1.6; color: #333; text-align: justify;">
+    <p>I, the undersigned, Secretary of Waystar Royco Corp. (the "Corporation"), hereby certify that the following is a true and correct copy of a resolution adopted by the Board of Directors on <strong>March 15, 2026</strong>:</p>
+
+    <p><strong><span data-bracket="start" data-for="corp">]</span>RESOLVED:</strong> That the Corporation is authorized to open a commercial credit facility with JPMorgan Chase Bank, N.A. in the amount of <strong>$500,000,000.00</strong> and that the CEO is authorized to execute all loan documents.</p>
+
+    <p>I further certify that the said resolution has not been amended or rescinded and is in full force and effect as of the date hereof.</p>
+  </div>
+
+  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+    <div style="width: 45%;">
+      <div style="border-top: 1px solid #000; padding-top: 5px; font-style: italic;">Gerri Kellman</div>
+      <div style="font-size: 0.8em; color: #777;">Corporate Secretary</div>
+    </div>
+    <div style="width: 45%; text-align: right;">
+      <div style="width: 80px; height: 80px; border: 2px solid #000; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; margin-left: auto;">NOTARY<br>SEAL</div>
+    </div>
+  </div>
+
+  <div data-verify-line="corp" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+      title="Demo only: Corporation doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:waystar-royco.com/legal/v/998877 <span data-bracket="end" data-for="corp">]</span>
+  </div>
+</div>
+
 ## Data Verified
 
-Corporation name, corporate officers, board resolution text, vote results, notary name, notary commission number, notary seal, resolution date
+Corporation name, date of board action, specific resolution text (digest), authorized signatories, dollar amounts (if financial), Secretary's name, Notary name/commission (if applicable), date of certification.
+
+**Document Types:**
+- **Secretary's Certificate:** Certifying a specific resolution for a third party.
+- **Unanimous Written Consent:** Action taken without a meeting.
+- **Board Minutes Extract:** A specific section of formal meeting notes.
+- **Officer's Certificate:** Certifying corporate facts or authority.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`waystar-royco.com`, `wsgr.com`) and current status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Active** — Resolution is valid and in effect.
+- **Rescinded** — The Board has formally cancelled this authority.
+- **Superseded** — A later resolution has modified these terms.
+- **Void** — Action determined to be unauthorized or fraudulent.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Corporation** benefits from verification.
 
-**Document Authenticity:** Verify received documents are genuine and properly issued.
+**Anti-Fraud:** Ensuring that a disgruntled or rogue officer doesn't fabricate a "Resolution to Sell Assets" to liquidate company property without board approval.
 
-**Third-Party Presentation:** Provide verified documentation when required.
-
-**Compliance Requirements:** Meet regulatory or contractual documentation requirements.
-
-**Record Keeping:** Maintain verified records for future reference or audits.
-
-**Dispute Prevention:** Establish authenticity to prevent future challenges.
+**Banking / Financing:** Proving to a lender that the $500M loan authorization is authentic. This speeds up "Know Your Business" (KYB) checks and reduces the risk of loan document rejection by bank compliance teams.
 
 ## Third-Party Use
 
-**Courts and Legal Professionals**
+**Commercial Lenders (Banks)**
+**Authority Verification:** Before releasing $500M, the bank's legal team must be 100% certain the person signing the loan has the board's authority. OCR-to-hash turns the Secretary's Certificate into a live, trusted link to the company's official minute book.
 
-Litigation and legal proceedings:
+**M&A Buyers**
+**Due Diligence:** A buyer of a company needs to verify that all major milestones (funding rounds, stock grants, mergers) were properly authorized. A "Verified Minute Book" reduces thousands of hours of legal review.
 
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
-
-**Auditors and Compliance Officers**
-
-Internal and external audits:
-
-**Financial Audits:** Verify documents during financial statement audits.
-
-**Compliance Audits:** Validate documentation for regulatory compliance.
-
-**Internal Controls:** Test document authenticity in control assessments.
-
-**Fraud Investigations:** Verify documents in fraud examinations.
-
-**Third-Party Audits:** Validate vendor and partner documentation.
+**Real Estate Title Companies**
+**Closing Integrity:** Ensuring that the corporate officers signing a deed for a multi-million dollar property sale have the verified authority to do so.
 
 ## Verification Architecture
 
-**The Corporate resolutions and board minutes Fraud Problem**
+**The "Corporate Authority" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Phantom Resolutions:** A rogue executive creating a fake board resolution to authorize a private bank account or a secret sale of intellectual property.
+- **Backdating:** Fabricating a resolution today but dating it "Last Year" to cover up an illegal or unauthorized corporate action.
+- **Signature Forgery:** Forging the signature of the Corporate Secretary or a Notary on a PDF extract.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Corporations:** (Hosting on their own `/legal` or `/ir` domain).
+**Law Firms:** (e.g., Skadden, Sullivan & Cromwell - hosting on behalf of clients).
+**Equity Management Platforms:** (e.g., Carta, Pulley - who manage the cap table and board consents).
 
-**Primary Issuers:** Organizations with direct authority to issue these documents.
+## Competition vs. Secretary of State (Delaware)
 
-**Licensed Professionals:** Professionals authorized to create and certify documents.
+| Feature | OCR-to-Hash | Secretary of State (SOS) | Private Virtual Data Room |
+| :--- | :--- | :--- | :--- |
+| **Granularity** | **High.** Verifies specific *Board Actions*. | **Low.** Only shows the company exists (Good Standing). | **Full.** But requires gated access. |
+| **Trust Anchor** | **Domain-Bound.** Bound to the Corp/Law Firm. | **Gov-Bound.** | **System-Bound.** Trust the VDR vendor. |
+| **Cost** | **Low.** Standard web infra. | **High.** Filing/Search fees per document. | **Very High.** Monthly VDR costs. |
+| **User Access** | **Instant.** Scan the paper at the bank. | **Slow.** Requires filing search and payment. | **Restricted.** Access usually revoked post-deal. |
 
-**Government Agencies:** Federal, state, or local agencies with jurisdiction.
-
-**Industry Bodies:** Trade associations and professional organizations.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Prevents forged corporate resolutions for unauthorized actions. Domain binding verifies notary commission. Bank account opening requires notarized corporate resolutions. Real estate transactions need authenticated corporate authority. Corporate authority verification for major business decisions. Prevents unauthorized resolutions that could bind corporation to contracts. Critical for corporate governance where resolutions prove board authorization for significant actions.
+**Why OCR wins here:** Specificity. A government "Certificate of Good Standing" doesn't tell a bank who is authorized to sign a loan. Only a Corporate Resolution does. OCR-to-hash turns that **Private Internal Document** into a verifiable artifact that can be safely shared with third parties without exposing the entire secret minute book.

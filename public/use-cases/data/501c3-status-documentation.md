@@ -1,94 +1,110 @@
 ---
-title: "501(c)(3) status documentation"
+title: "501(c)(3) Status Documentation"
 category: "Charitable & Non-Profit"
 volume: "Tiny"
 retention: "Permanent (legal status)"
 slug: "501c3-status-documentation"
-tags: ["501c3", "status", "documentation", "charitable", "non-profit"]
+tags: ["501c3", "status", "documentation", "charitable", "non-profit", "IRS"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', serif; border: 1px solid #ccc; background: #fff; padding: 40px;">
+  <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 20px; margin-bottom: 30px;">
+    <div style="font-weight: bold; font-size: 1.2em;">Internal Revenue Service</div>
+    <div style="font-size: 0.9em;">Department of the Treasury</div>
+    <div style="font-size: 0.9em;">P.O. Box 2508, Cincinnati, OH 45201</div>
+  </div>
+
+  <div style="display: flex; justify-content: space-between; margin-bottom: 30px; font-size: 0.9em;">
+    <div>
+      Date: <span style="font-weight: bold;">OCT 24 2025</span><br><br>
+      <span data-bracket="start" data-for="501c3">]</span>THE HUMAN FUND<br>
+      123 CHARITY LANE<br>
+      NEW YORK, NY 10001
+    </div>
+    <div style="text-align: right;">
+      Employer Identification Number:<br>
+      <span style="font-weight: bold;">12-3456789</span><br><br>
+      DLN:<br>
+      17053221002025
+    </div>
+  </div>
+
+  <div style="font-size: 0.95em; line-height: 1.6; text-align: justify;">
+    <p>Dear Applicant:</p>
+    <p>We're pleased to tell you we determined you're exempt from federal income tax under Internal Revenue Code (IRC) Section 501(c)(3). Donors can deduct contributions they make to you under IRC Section 170. You're also qualified to receive tax deductible bequests, devises, transfers or gifts under Section 2055, 2106, or 2522.</p>
+    <p>Public Charity Status: 170(b)(1)(A)(vi)</p>
+  </div>
+
+  <div data-verify-line="501c3" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+      title="Demo only: IRS doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:irs.gov/teos/v/9a8b7c <span data-bracket="end" data-for="501c3">]</span>
+  </div>
+</div>
+
 ## Data Verified
 
-Organization name, officers, board members, EIN, IRS determination
+Organization name, EIN (Employer Identification Number), effective date of exemption, public charity status classification, address at time of issuance.
+
+**Document Types:**
+- **Determination Letter (Form 1045)**
+- **Affirmation Letter** (issued later to confirm status hasn't changed)
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (e.g., `irs.gov`) and current status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Valid** — Organization is currently exempt and in good standing.
+- **Revoked** — Exemption was automatically revoked (e.g., for failure to file Form 990 for 3 years).
+- **Suspended** — Under investigation or temporarily suspended.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Non-Profit Organization** benefits from verification.
 
-**Document Authenticity:** Verify received documents are genuine and properly issued.
+**Grant Applications:** Foundations require proof of 501(c)(3) status before releasing funds. A verified letter speeds up due diligence.
 
-**Third-Party Presentation:** Provide verified documentation when required.
+**State Registration:** Registering for charitable solicitation in other states (e.g., California Registry of Charitable Trusts) requires proof of IRS status.
 
-**Compliance Requirements:** Meet regulatory or contractual documentation requirements.
-
-**Record Keeping:** Maintain verified records for future reference or audits.
-
-**Dispute Prevention:** Establish authenticity to prevent future challenges.
+**Donation Processing:** Payment processors (Stripe, PayPal) and donor advised funds (Fidelity Charitable, Schwab) require this proof to open accounts or disburse grants.
 
 ## Third-Party Use
 
-**Auditors and Compliance Officers**
+**Donors and Foundations**
 
-Internal and external audits:
+**Tax Deduction Confidence:** High-net-worth donors want absolute certainty that their large donation will be tax-deductible. Verifying the determination letter confirms the entity is legitimate and currently exempt.
 
-**Financial Audits:** Verify documents during financial statement audits.
+**Corporate Matching Platforms**
 
-**Compliance Audits:** Validate documentation for regulatory compliance.
+**Fraud Prevention:** Platforms like Benevity or CyberGrants verify charities before allowing employees to donate. Automation via OCR verification reduces manual review time.
 
-**Internal Controls:** Test document authenticity in control assessments.
+**State Regulators**
 
-**Fraud Investigations:** Verify documents in fraud examinations.
-
-**Third-Party Audits:** Validate vendor and partner documentation.
+**Charity Bureau Oversight:** State Attorneys General can verify the federal status of organizations soliciting funds in their jurisdiction.
 
 ## Verification Architecture
 
-**The 501(c)(3) status documentation Fraud Problem**
+**The 501(c)(3) Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Name Spoofing:** Creating a fake charity with a name very similar to a famous one (e.g., "Cancer Fund of America" vs "American Cancer Society").
+- **Status Misrepresentation:** Claiming to be tax-exempt when the status was actually revoked years ago for non-filing.
+- **Photoshop:** Altering an old determination letter to change the year or the address.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Internal Revenue Service (IRS):** The sole authority for federal tax exemption.
 
-**Primary Issuers:** Organizations with direct authority to issue these documents.
+**System Integration:**
+The IRS maintains the **Tax Exempt Organization Search (TEOS)** database. Verification endpoints would effectively be a high-speed, cryptographically secure API to this existing public data, bound to the physical letter.
 
-**Licensed Professionals:** Professionals authorized to create and certify documents.
+## Competition vs. QR/NFC
 
-**Government Agencies:** Federal, state, or local agencies with jurisdiction.
+| Feature | OCR-to-Hash | QR Code | Public Database Search |
+| :--- | :--- | :--- | :--- |
+| **Trust Model** | **Strong.** Links directly to `irs.gov`. | **Weak.** QR codes can point to `irs-gov-verify.com` (phishing site). | **Strong.** But requires manual data entry. |
+| **User Experience** | **Fast.** Scan the letter -> verified. | **Fast.** Scan the code. | **Slow.** Type in EIN, solve CAPTCHA, find record. |
+| **Offline Proof** | **Medium.** Hash proves integrity of the paper text. | **Low.** Just a link. | **None.** Requires internet to search DB. |
+| **Phishing Resistance** | **High.** `verify:` line is human-readable. | **Low.** URL often hidden or truncated. | **N/A.** |
 
-**Industry Bodies:** Trade associations and professional organizations.
+**Why OCR wins here:** The "Determination Letter" is a totem of legitimacy in the non-profit world. It is framed on walls, attached to grant PDFs, and mailed to donors. Preserving its visual dignity while adding verification is superior to plastering a QR code on a formal government letter. Furthermore, database searches are prone to user error (typos in EINs), whereas scanning the document itself eliminates entry errors.
 
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Prevents fake charities. Domain binding verifies IRS/tax authority. IRS letters suitable for OCR. Permanent legal status. Donor verification. Similar to donation receipts anti-impersonation pattern.

@@ -1,150 +1,107 @@
 ---
-title: "HOA documents and bylaws"
+title: "HOA Governing Documents and Bylaws"
 category: "Real Estate & Property"
 volume: "Tiny"
 retention: "Permanent (governance)"
 slug: "hoa-documents-bylaws"
-tags: ["documents", "bylaws", "real", "estate", "property"]
+tags: ["real-estate", "hoa", "bylaws", "cc-and-rs", "governance", "legal-authority", "property-rules", "title-clearance"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #333; background: #fff; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+  <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 25px;">
+    <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;">BYLAWS OF THE</div>
+    <div style="font-weight: bold; font-size: 1.2em; margin-top: 5px;">SKYLINE TOWERS HOMEOWNERS ASSOCIATION</div>
+  </div>
+
+  <div style="font-size: 1em; line-height: 1.6; color: #333; text-align: justify;">
+    <h3 style="text-align: center; text-transform: uppercase; margin-bottom: 20px;">Certification of Governing Documents</h3>
+    <p>I, the undersigned Secretary of the Skyline Towers Homeowners Association, a Texas non-profit corporation, hereby certify that the following is a true and correct copy of the <span data-bracket="start" data-for="hoa-docs">]</span><strong>Amended and Restated Bylaws</strong> as adopted by the Board of Directors on <strong>January 15, 2026</strong>.</p>
+
+    <div style="margin: 20px 0; background: #f9f9f9; padding: 15px; border: 1px solid #eee;">
+      <strong>DOCUMENT METADATA:</strong><br>
+      Total Pages: 42<br>
+      Revision: 2026-V1<br>
+      Recorded: Travis County Doc #992288
+    </div>
+
+    <p>These Bylaws supersede all previous versions and remain in full force and effect until amended in accordance with Article XII.</p>
+  </div>
+
+  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+    <div style="width: 45%;">
+      <div style="border-top: 1px solid #000; padding-top: 5px; font-style: italic;">Sarah J. Miller, Secretary</div>
+    </div>
+    <div style="text-align: right; width: 45%;">
+      <div style="width: 80px; height: 80px; border: 2px solid #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; text-align: center; margin-left: auto;">ASSOCIATION<br>SEAL</div>
+    </div>
+  </div>
+
+  <div data-verify-line="hoa-docs" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+      title="Demo only: HOA doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:skylinetowers-hoa.com/archive/v/BYLAWS-2026-V1 <span data-bracket="end" data-for="hoa-docs">]</span>
+  </div>
+</div>
+
 ## Data Verified
 
-HOA board members, property owners (if detailed), community name
+HOA legal name, document title (Bylaws/CC&Rs), adoption date, revision version, total page count, Secretary's name, county recording reference number, principal office address.
+
+**Document Types:**
+- **Bylaws:** Rules for corporate governance.
+- **CC&Rs:** Covenants, Conditions & Restrictions (Land use).
+- **Articles of Incorporation:** Proving the HOA is a legal entity.
+- **Plat Map:** (Linked hash) for legal boundary descriptions.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`skylinetowers-hoa.com`, `associa.com`) and current document status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **In Force** — This is the current, legally binding version of the bylaws.
+- **Superseded** — **ALERT:** A newer version has been adopted; this version is void.
+- **Proposed** — Draft version under member review; not yet binding.
+- **Archival** — Historical version for research only.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Homeowner (Member)** benefits from verification.
 
-**Ownership Verification:** Confirm property documents are authentic.
+**Governance Defense:** Proving to the Board that the rule they are enforcing (e.g., "No blue front doors") isn't actually in the **Verified Current Bylaws**. Verification prevents "Rogue Board Members" from fabricating or misrepresenting the rules during a dispute.
 
-**Transaction Support:** Provide verified documents for sales, refinancing, or transfers.
-
-**Title Insurance:** Supply verified documentation for title insurance requirements.
-
-**Legal Protection:** Maintain verified records for potential disputes.
-
-**Record Accuracy:** Verify recorded information matches expectations.
+**Refinancing:** Providing verified governing documents to a lender's legal department. Lenders often delay closings for weeks because of "Incomplete" or "Unsigned" HOA packets; a verified hash from the HOA domain removes this barrier.
 
 ## Third-Party Use
 
-**Lenders and Financial Institutions**
+**Real Estate Attorneys / Title Companies**
+**Title Clearance:** Ensuring that the buyer is receiving the **absolute latest version** of the CC&Rs. Title companies currently spend thousands of hours manually checking county records; OCR-to-hash allows for instant, document-level verification.
 
-Credit underwriting and risk assessment:
+**Mortgage Underwriters**
+**Risk Management:** Verifying the "Rental Restrictions" or "Assessment Triggers" in the bylaws before approving a high-value condo loan.
 
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Insurance Companies**
-
-Underwriting and claims processing:
-
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
-
-**Government Agencies**
-
-Compliance enforcement and administration:
-
-**Inspection Verification:** Field agents verify permits and licenses at sites.
-
-**Enforcement Actions:** Confirm documentation before enforcement.
-
-**Benefit Eligibility:** Verify supporting documents for benefits administration.
-
-**Compliance Audits:** Audit documentation for regulatory compliance.
-
-**Interagency Coordination:** Share verified documents across agencies.
-
-**Real Estate Professionals**
-
-Property transactions and due diligence:
-
-**Purchase Due Diligence:** Verify property documents during transactions.
-
-**Listing Preparation:** Confirm permits and documentation for listings.
-
-**Disclosure Compliance:** Validate required disclosures and permits.
-
-**Title Research:** Verify property documents for title clearance.
-
-**Appraisal Support:** Confirm documented improvements and permits.
+**Property Management Firms**
+**Transition Integrity:** When a new management firm takes over a building, they use verified hashes to ensure the "Digital Archive" they received from the previous firm hasn't been tampered with or corrupted.
 
 ## Verification Architecture
 
-**The HOA documents and bylaws Fraud Problem**
+**The "Quiet Rule" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Selective Omission:** A seller "deleting" the page of the bylaws that mentions a $50,000 special assessment to trick a buyer into closing the deal.
+- **Version Skew:** A Board member using an old 2015 version of the pet rules to target a neighbor with a dog, while the 2026 version allows pets.
+- **Fabricated Signatures:** Forging the Secretary's signature on a rule change that was never actually voted on by the members.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Property Management Firms:** (Associa, FirstService, JLL).
+**HOA Secretary / Boards.**
+**Legal Data Platforms:** (e.g., HomeWiseDocs, CondoCerts).
 
-**Government Entities:** Counties, cities, and special districts maintain property records.
+## Competition vs. Private Portals
 
-**Title Companies:** Title insurers and escrow companies for transaction documents.
+| Feature | OCR-to-Hash | Resident Portal (Associa) | Scanned PDF / Email |
+| :--- | :--- | :--- | :--- |
+| **Trust Anchor** | **Domain-Bound.** Bound to the HOA. | **System-Bound.** Trust the portal vendor. | **Zero.** Easily forged. |
+| **User Access** | **Universal.** Share with any buyer/lawyer. | **Restricted.** Third parties never get logins. | **Universal.** |
+| **Integrity** | **Binds Content.** Protects the fine-print. | **Vulnerable.** Portal can be "Cleaned up" by admins. | **Zero.** |
+| **Persistence** | **High.** Remains verifiable after sale. | **Low.** Access cut off after move-out. | **Vulnerable.** |
 
-**Lending Institutions:** Banks and mortgage companies for loan documents.
-
-**Appraisal Firms:** Licensed appraisers for property valuations.
-
-**System Integration**
-
-Real estate verification connects to property systems:
-
-**Recording Systems:** County recorder systems for property document registration.
-
-**MLS Integration:** Multiple listing services for property documentation.
-
-**Title Plants:** Title companies maintain verification for title searches.
-
-**E-Recording:** Electronic recording systems generate verification at recording.
-
-## Rationale
-
-Domain binding verifies HOA. Legal document format suitable for OCR. Permanent governance records. Covenant enforcement.
+**Why OCR wins here:** The "External Trust" problem. HOA portals are private silos for current residents. But most verification happens for **Non-Residents** (Buyers, Banks, Title Co). OCR-to-hash turns the **Private Governing Document** into a portable, cryptographically trusted artifact that bridges the gap between the building and the market.

@@ -1,152 +1,105 @@
 ---
-title: "Easement agreements and grants"
+title: "Easement Agreements and Grants"
 category: "Real Estate & Property"
 volume: "Tiny"
 retention: "Permanent (property encumbrance)"
 slug: "easement-agreements"
-tags: ["easement", "agreements", "real", "estate", "property"]
+tags: ["real-estate", "property-rights", "easement-grant", "utility-access", "land-use", "title-search", "legal-description"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #000; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 25px;">
+    <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">GRANT OF EASEMENT</h2>
+  </div>
+
+  <div style="font-size: 1em; line-height: 1.6; color: #000; text-align: justify;">
+    <p>This Grant of Easement is made on March 15, 2026, between <strong>Grantor:</strong> <span data-bracket="start" data-for="easement">]</span><strong>John Jacob Doe</strong> and <strong>Grantee:</strong> Pacific Gas & Electric Company.</p>
+
+    <p>The Grantor hereby grants to the Grantee a permanent non-exclusive easement for the purpose of installing and maintaining subterranean electrical conduits across the following described property:</p>
+    
+    <p style="background: #f9f9f9; padding: 10px; border: 1px solid #eee; font-family: monospace; font-size: 0.9em;">
+      LOT 42, BLOCK 7, MAP OF SKYLINE HEIGHTS, RECORDED IN LIBER 123, PAGE 456, COUNTY OF MARIN.
+    </p>
+
+    <p>The easement area shall be a strip of land 10 feet in width as shown on Exhibit A attached hereto.</p>
+  </div>
+
+  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+    <div style="width: 45%;">
+      <div style="border-top: 1px solid #000; padding-top: 5px;">John Jacob Doe</div>
+      <div style="font-size: 0.8em; color: #777;">Grantor</div>
+    </div>
+    <div style="width: 45%; text-align: right;">
+      <div style="width: 80px; height: 80px; border: 2px solid #000; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; margin-left: auto;">NOTARY<br>SEAL</div>
+    </div>
+  </div>
+
+  <div data-verify-line="easement" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+      title="Demo only: County Recorder doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:marincounty.gov/recorder/v/LIBER123-P456 <span data-bracket="end" data-for="easement">]</span>
+  </div>
+</div>
+
 ## Data Verified
 
-Property owner, easement holder, property address, legal description, terms
+Grantor name, Grantee name, legal property description (Lot/Block/Plat), easement purpose (Utility, Ingress/Egress, Conservation), width/dimensions, date of grant, Liber/Page/Document reference number, Notary identification.
 
-**Multi-Page Handling:** Documents may span multiple pages. Per-page verification prevents page substitution attacks.
+**Document Types:**
+- **Grant of Easement:** The primary transfer of rights.
+- **Easement Appurtenant:** Linked to the land itself (survives sale).
+- **Easement in Gross:** Linked to a specific person/entity (e.g., utility).
+- **Termination of Easement:** Proving the right has been legally extinguished.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`marincounty.gov`, `pge.com`) and current recording status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Recorded** — Document is officially filed and legally binding.
+- **Active** — Easement is currently in force.
+- **Terminated** — Easement has been legally removed from the title.
+- **Under Review** — Document submitted but final indexing pending.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Property Owner** benefits from verification.
 
-**Ownership Verification:** Confirm property documents are authentic.
+**Clear Title:** When selling a home, the owner can provide a verified hash of all active easements to the buyer. This prevents "Title Surprises" where a buyer's lawyer discovers an undisclosed utility line 3 days before closing.
 
-**Transaction Support:** Provide verified documents for sales, refinancing, or transfers.
-
-**Title Insurance:** Supply verified documentation for title insurance requirements.
-
-**Legal Protection:** Maintain verified records for potential disputes.
-
-**Record Accuracy:** Verify recorded information matches expectations.
+**Fence/Construction Planning:** Proving the *exact width* of a 10-foot easement to a contractor to ensure a new fence or pool doesn't encroach on a utility company's verified legal rights.
 
 ## Third-Party Use
 
-**Lenders and Financial Institutions**
+**Utility Companies (PG&E / Comcast)**
+**Right-of-Entry:** When a crew needs to dig in a private backyard, they can show the homeowner the verified easement hash on their work order. "Verified by Marin County" prevents homeowners from calling the police for trespassing.
 
-Credit underwriting and risk assessment:
+**Title Insurance Companies**
+**Risk Underwriting:** Title officers verify that the easement they found in the historical records matches the "Final Signed Document" hash, ensuring no pages were swapped or terms edited in the archive.
 
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Insurance Companies**
-
-Underwriting and claims processing:
-
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
-
-**Government Agencies**
-
-Compliance enforcement and administration:
-
-**Inspection Verification:** Field agents verify permits and licenses at sites.
-
-**Enforcement Actions:** Confirm documentation before enforcement.
-
-**Benefit Eligibility:** Verify supporting documents for benefits administration.
-
-**Compliance Audits:** Audit documentation for regulatory compliance.
-
-**Interagency Coordination:** Share verified documents across agencies.
-
-**Real Estate Professionals**
-
-Property transactions and due diligence:
-
-**Purchase Due Diligence:** Verify property documents during transactions.
-
-**Listing Preparation:** Confirm permits and documentation for listings.
-
-**Disclosure Compliance:** Validate required disclosures and permits.
-
-**Title Research:** Verify property documents for title clearance.
-
-**Appraisal Support:** Confirm documented improvements and permits.
+**Civil Engineers / Surveyors**
+**Boundary Integrity:** Instantly verifying the legal descriptions used to set stakes in the ground during a new development.
 
 ## Verification Architecture
 
-**The Easement agreements and grants Fraud Problem**
+**The "Hidden Encumbrance" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Scope Alteration:** Editing a "10-foot Utility Easement" to read "5-foot" to make a lot look more buildable to a buyer.
+- **Easement Deletion:** Removing the page showing an "Ingress/Egress" easement for a neighboring property, which effectively "lands-locks" the neighbor.
+- **Fake Signatures:** Forging a neighbor's signature on an easement grant to get a driveway permit from the city.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**County Recorders / Registrars of Deeds:** (The ultimate authority).
+**Utility Companies:** (Hosting their own "Active Rights" database).
+**Title Platforms:** (e.g., Simplifile, DataTrace).
 
-**Government Entities:** Counties, cities, and special districts maintain property records.
+## Competition vs. County Records Search
 
-**Title Companies:** Title insurers and escrow companies for transaction documents.
+| Feature | OCR-to-Hash | County Search (Online) | Physical Deed Room |
+| :--- | :--- | :--- | :--- |
+| **Trust Anchor** | **Domain-Bound.** Bound to the County. | **Database-Bound.** High trust but manual. | **Physical.** Trust the paper. |
+| **Speed** | **Instant.** 5-second scan at the fence line. | **Slow.** Requires finding the parcel # and navigating old UIs. | **Very Slow.** Hours of travel/search. |
+| **Integrity** | **Binds Content.** Protects the legal text. | **Data-Only.** Doesn't verify the paper in your hand. | **Vulnerable.** |
+| **User Access** | **Universal.** Anyone with the document. | **Difficult.** Many counties charge fees or require logins. | **Restricted.** |
 
-**Lending Institutions:** Banks and mortgage companies for loan documents.
-
-**Appraisal Firms:** Licensed appraisers for property valuations.
-
-**System Integration**
-
-Real estate verification connects to property systems:
-
-**Recording Systems:** County recorder systems for property document registration.
-
-**MLS Integration:** Multiple listing services for property documentation.
-
-**Title Plants:** Title companies maintain verification for title searches.
-
-**E-Recording:** Electronic recording systems generate verification at recording.
-
-## Rationale
-
-Prevents forged easements. Domain binding verifies county recorder/parties. Permanent property encumbrance records. Critical for property rights. Utility access verification.
+**Why OCR wins here:** The "Field Reality." Disputes about property rights happen in backyards and at construction sites. People don't have Libers and Pages memorized. OCR-to-hash turns the **Physical Agreement** into a live digital portal, ending trespassing disputes and title confusion in seconds.

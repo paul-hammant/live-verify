@@ -1,124 +1,103 @@
 ---
-title: "Baggage claim receipts and delayed baggage reports"
+title: "Baggage Claim Receipts and Reports"
 category: "Travel & Hospitality"
 volume: "Large"
 retention: "Claim resolution + 3-7 years"
 slug: "baggage-claim-receipts"
-tags: ["baggage", "claim", "receipts", "travel", "hospitality"]
+tags: ["airline", "baggage", "receipt", "lost-luggage", "compensation", "travel-insurance", "expense"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', monospace; border: 1px solid #999; background: #fff; padding: 20px; box-shadow: 2px 2px 5px rgba(0,0,0,0.1);">
+  <div style="text-align: center; margin-bottom: 15px; border-bottom: 1px solid #000; padding-bottom: 10px;">
+    <strong>AIR FRANCE - BAGGAGE SERVICES</strong><br>
+    PROPERTY IRREGULARITY REPORT (PIR)<br>
+    -----------------------------------
+  </div>
+
+  <div style="font-size: 0.9em; line-height: 1.4;">
+    <p><strong>Ref:</strong> <span data-bracket="start" data-for="bag">]</span>CDG-AF-998877<br>
+    <strong>Passenger:</strong> AMELIE POULAIN<br>
+    <strong>Flight:</strong> AF1234 / 15MAR26</p>
+
+    <p><strong>Item Description:</strong><br>
+    Large Suitcase, Samsonite, Black<br>
+    Tag #: AF-123456</p>
+
+    <p><strong>Status:</strong> DELAYED / SEARCHING<br>
+    <strong>Claim Category:</strong> Delayed (> 24 Hours)</p>
+
+    <div style="background: #eee; padding: 10px; margin: 15px 0;">
+      <strong>EMERGENCY EXPENSE AUTHORIZATION:</strong><br>
+      Up to EUR 100.00 for essential items.<br>
+      Keep all receipts for reimbursement.
+    </div>
+
+    <p style="font-size: 0.8em;">Note: Subject to Montreal Convention liability limits.</p>
+  </div>
+
+  <div data-verify-line="bag" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: Air France doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:airfrance.com/baggage/v/CDG998877 <span data-bracket="end" data-for="bag">]</span>
+  </div>
+</div>
+
 ## Data Verified
 
-Passenger name, baggage tag numbers, flight details, claim amount, airline
+Passenger name, Property Irregularity Report (PIR) reference, flight details, baggage tag numbers, damage description or delay status, authorization amount for expenses, date of report.
 
-**Multi-Page Handling:** Documents may span multiple pages. Per-page verification prevents page substitution attacks.
+**Document Types:**
+- **Property Irregularity Report (PIR):** Issued when a bag is lost or delayed.
+- **Damage Report:** Issued when a bag is broken but delivered.
+- **Baggage Fee Receipt:** Proving payment for excess/checked bags.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`airfrance.com`, `delta.com`) and the claim status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Open** — Bag is still missing; claim active.
+- **Found** — Bag located; en route to passenger.
+- **Closed** — Claim settled and paid.
+- **Denied** — Claim rejected (e.g., report filed too late).
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Passenger** benefits from verification.
 
-**Document Authenticity:** Verify received documents are genuine and properly issued.
+**Travel Insurance Payout:** Insurers (e.g., Allianz, AMEX) require a PIR from the airline to pay for "Delayed Baggage" coverage. A verified PIR prevents the insurer from rejecting the claim due to "unreadable" or "suspicious" documentation.
 
-**Third-Party Presentation:** Provide verified documentation when required.
-
-**Compliance Requirements:** Meet regulatory or contractual documentation requirements.
-
-**Record Keeping:** Maintain verified records for future reference or audits.
-
-**Dispute Prevention:** Establish authenticity to prevent future challenges.
+**Emergency Purchases:** Proving to a shop that you have a verified "EUR 100 authorization" from the airline might allow for direct billing or just peace of mind when spending money you expect to get back.
 
 ## Third-Party Use
 
-**Insurance Companies**
+**Travel Insurance Companies**
+**Fraud Detection:** People often forge PIRs to claim $500 for "lost bags" that were never actually lost. Scanning the verification hash instantly proves the airline has an active PIR for that passenger/flight.
 
-Underwriting and claims processing:
+**Employers / Expense Teams**
+**Reimbursement Audit:** If an employee expenses $200 for "new clothes due to lost bag," Finance can verify the PIR to ensure the bag was actually delayed and the airline didn't already pay for the clothes.
 
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Customs and Border Authorities**
-
-International trade compliance:
-
-**Import Clearance:** Verify shipping documents for customs clearance.
-
-**Duty Assessment:** Validate commercial invoices and declarations.
-
-**Trade Compliance:** Confirm certificates of origin and trade documents.
-
-**Security Screening:** Verify cargo documentation for security.
-
-**Export Controls:** Validate export documentation and licenses.
-
-**Freight Forwarders and Carriers**
-
-Logistics and transportation:
-
-**Shipment Acceptance:** Verify documents before accepting cargo.
-
-**Carrier Handoffs:** Validate documentation at transfer points.
-
-**Liability Determination:** Reference verified documents for claims.
-
-**Route Planning:** Confirm documentation for transit requirements.
-
-**Delivery Confirmation:** Verify documents at final delivery.
+**Corporate Travel Agencies (TMCs)**
+**Support:** TMCs can monitor the verified status of a client's lost bag to provide proactive updates and handle the paperwork for them.
 
 ## Verification Architecture
 
-**The Baggage claim receipts and delayed baggage reports Fraud Problem**
+**The "Fake Lost Bag" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **PIR Forgery:** Using a template to create a realistic Property Irregularity Report for a flight the traveler actually took, just to collect insurance money.
+- **Amount Inflation:** Editing a $50 authorization to read $500.
+- **Double-Dipping:** Claiming full value from both the airline and the private insurer.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Airlines:** (Air France, BA, United, etc.)
+**Ground Handlers:** (Swissport, Menzies) who often issue the PIRs on behalf of airlines.
 
-**Primary Issuers:** Organizations with direct authority to issue these documents.
+## Competition vs. Airline Apps
 
-**Licensed Professionals:** Professionals authorized to create and certify documents.
+| Feature | OCR-to-Hash | Airline Mobile App | Paper PIR |
+| :--- | :--- | :--- | :--- |
+| **Shareability** | **High.** Can be sent to any insurance company. | **Low.** Cannot share "App access" with an insurer. | **High.** But untrusted. |
+| **Integrity** | **Cryptographic.** Binds the claim details. | **Dynamic.** Status changes in-app. | **Zero.** Easily forged. |
+| **Offline Proof** | **Strong.** The paper/PDF is the anchor. | **None.** No app access = no proof. | **Medium.** |
 
-**Government Agencies:** Federal, state, or local agencies with jurisdiction.
-
-**Industry Bodies:** Trade associations and professional organizations.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Prevents altered baggage claim amounts. Domain binding verifies airline. Montreal Convention liability limits. Prevents inflated claim fraud. Baggage delay compensation documentation (EU261 regulation).
+**Why OCR wins here:** The Insurance Bridge. Airline apps are "Walled Gardens." While they are great for the passenger, they are useless for the **Travel Insurer** who needs a trusted artifact to justify a payout. OCR-to-hash turns the airline's internal record into a portable, verifiable document that bridges the gap between the airline and the insurance industry.

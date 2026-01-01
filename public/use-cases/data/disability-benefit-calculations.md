@@ -1,129 +1,124 @@
 ---
-title: "Disability insurance benefit calculations"
+title: "Disability Insurance Benefit Calculations"
 category: "Actuarial & Insurance Mathematics"
 volume: "Small"
 retention: "Policy term + 7 years (claims)"
 slug: "disability-benefit-calculations"
-tags: ["disability", "benefit", "calculations", "actuarial", "insurance", "mathematics"]
+tags: ["disability-insurance", "benefit-calculation", "actuarial", "claims-adjudication", "income-replacement", "long-term-disability", "compliance"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 1px solid #333; background: #fff; padding: 40px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 30px;">
+    <div style="font-weight: bold; font-size: 1.1em; color: #1565c0;">METLIFE INDEMNITY</div>
+    <div style="text-align: right; font-size: 0.8em; color: #666;">
+      Claim ID: DI-992288-26<br>
+      March 15, 2026
+    </div>
+  </div>
+
+  <h3 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; color: #1565c0; border-bottom: 2px solid #1565c0; padding-bottom: 10px;">Long-Term Disability Benefit Calculation</h3>
+
+  <div style="font-size: 0.95em; line-height: 1.6; color: #333; margin-top: 20px;">
+    <p><strong>Insured:</strong> <span data-bracket="start" data-for="disability">]</span><strong>JOHN JACOB DOE</strong><br>
+    <strong>Policy Type:</strong> Individual Disability Income (Own-Occupation)</p>
+
+    <div style="background: #f1f8ff; padding: 15px; border: 1px solid #bbdefb; margin: 20px 0;">
+      <table style="width: 100%; font-size: 0.95em;">
+        <tr>
+          <td>Pre-Disability Earnings (Monthly):</td>
+          <td style="text-align: right;">$ 12,500.00</td>
+        </tr>
+        <tr>
+          <td>Benefit Percentage:</td>
+          <td style="text-align: right;">60.00%</td>
+        </tr>
+        <tr>
+          <td>Social Security Offset:</td>
+          <td style="text-align: right;">-$ 1,200.00</td>
+        </tr>
+        <tr style="font-weight: bold; border-top: 1px solid #1565c0;">
+          <td>NET MONTHLY BENEFIT:</td>
+          <td style="text-align: right;">$ 6,300.00</td>
+        </tr>
+      </table>
+    </div>
+
+    <p><strong>Elimination Period:</strong> 90 Days (Completed)<br>
+    <strong>Maximum Benefit Period:</strong> To Age 65</p>
+  </div>
+
+  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+    <div style="border-top: 1px solid #000; width: 200px; padding-top: 5px; font-style: italic;">Robert Miller, Actuary</div>
+    <div style="text-align: right; font-size: 0.8em; color: #777;">
+      Certified by MetLife Claims Group
+    </div>
+  </div>
+
+  <div data-verify-line="disability" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+      title="Demo only: MetLife doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:metlife.com/benefits/v/DI992288 <span data-bracket="end" data-for="disability">]</span>
+  </div>
+</div>
+
 ## Data Verified
 
-Actuary name, claimant name (if individual), disability assumptions, benefit amounts, benefit period
+Insured name, monthly benefit amount, pre-disability earnings base, benefit percentage, offsets applied (SSDI, Workers Comp), elimination period duration, max benefit age, claim status, certifying actuary/adjuster.
 
-**Policy Forms:** Different policy forms and endorsements may apply.
+**Document Types:**
+- **Benefit Calculation Worksheet:** The breakdown of how the $6,300 was reached.
+- **Explanation of Benefits (EOB):** Post-approval payment schedule.
+- **Return to Work Authorization:** (Linked hash) for partial disability benefits.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`metlife.com`, `unum.com`) and current claim standing.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-- **Cancelled** - Policy cancelled before expiration
-- **Non-Renewed** - Policy expired and not renewed
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Active** — Payments authorized and ongoing.
+- **Under Review** — Annual recertification of disability pending.
+- **Closed/Settled** — Claim terminated (e.g., reached max age or recovered).
+- **In-Litigation** — Benefit amount is being formally disputed.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Policyholder** benefits from verification.
 
-**Proof of Coverage:** Verify coverage is active when needed for compliance or access.
+**Mortgage Approval:** Proving to a lender that their $6,300/month disability income is a verified, stable, long-term asset. Banks are often skeptical of "Self-Reported" disability income; a verified hash from the insurer removes this doubt.
 
-**Claims Support:** Confirm policy details when filing claims.
-
-**Coverage Confirmation:** Verify coverage terms match expectations after purchase.
-
-**Third-Party Presentation:** Provide verified proof to landlords, lenders, or employers.
-
-**Renewal Verification:** Confirm renewal was processed and coverage continues.
+**Alimony/Child Support:** Proving verified income levels in a family court proceeding to ensure fair support calculations based on actual insurance payouts.
 
 ## Third-Party Use
 
-**Regulators and Oversight Bodies**
+**Mortgage Underwriters**
+**Asset Integrity:** Lenders verify the "Benefit Period." If the paper says "To Age 65" but the hash says "Max 2 Years," the lender avoids a high-risk loan.
 
-Regulatory compliance and oversight:
+**Social Security Administration (SSA)**
+**Offset Reconciliation:** Verifying the private disability amount to calculate the correct SSDI offset, preventing overpayments.
 
-**Systematic Hash Receipt:** Receive hashes in bulk for regulatory oversight.
-
-**Audit Verification:** Verify documents during routine or targeted audits.
-
-**Compliance Monitoring:** Monitor issuer compliance with documentation requirements.
-
-**Investigation Support:** Verify documents during fraud or compliance investigations.
-
-**Consumer Protection:** Verify consumer-facing documents for protection enforcement.
-
-**Lenders and Financial Institutions**
-
-Credit underwriting and risk assessment:
-
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
+**Credit Counselors**
+**Debt Restructuring:** Verifying the consumer's income stability before negotiating with creditors.
 
 ## Verification Architecture
 
-**The Disability insurance benefit calculations Fraud Problem**
+**The "Benefit Padding" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Coverage Inflation:** Inflating coverage limits or adding non-existent coverage
-- **Backdating:** Creating policies with false effective dates
-- **Ghost Policies:** Fabricated policies from non-existent insurers
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Amount Inflation:** Editing a $2,300 monthly benefit to read $6,300 to qualify for a larger car or home loan.
+- **Duration Alteration:** Changing a "2-year limit" to "Lifetime" coverage on the PDF.
+- **Offset Deletion:** Removing the "Social Security Offset" line from the calculation to make the net income look higher.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Group Carriers:** (MetLife, Prudential, Hartford).
+**Individual Income Protection Firms:** (Unum, Guardian).
+**Actuarial Audit Firms:** (Providing 3rd party certification).
 
-**Banks and Credit Unions:** Depository institutions for account documents.
+## Competition vs. Employment Verification (The Work Number)
 
-**Investment Firms:** Brokerage and investment management firms.
+| Feature | OCR-to-Hash | Equifax (The Work Number) | Scanned PDF |
+| :--- | :--- | :--- | :--- |
+| **Trust Anchor** | **Domain-Bound.** Bound to the Carrier. | **Data-Bound.** Trust the aggregator. | **Zero.** Easily forged. |
+| **Completeness** | **High.** Shows specific policy triggers. | **Low.** Often only shows "Salary" or "Active/Inactive." | **Full.** |
+| **User Privacy** | **High.** Only this specific claim is verified. | **Low.** Lenders see full employment history. | **High.** |
+| **Speed** | **Instant.** Scan the worksheet. | **Slow.** Requires specific lender credentials and fees. | **Instant.** |
 
-**Insurance Companies:** Insurers for policy and claims documents.
-
-**Accounting Firms:** CPAs and audit firms for financial statements.
-
-**System Integration**
-
-Insurance verification integrates with industry systems:
-
-**Policy Administration Systems:** Core insurance systems generate verification hashes at policy issuance.
-
-**ACORD Standards:** Insurance industry data standards could include verification fields.
-
-**State Insurance Databases:** Regulators maintain databases for systematic hash receipt.
-
-**Agent Portals:** Insurance agents access verification for client service.
-
-## Rationale
-
-Prevents fraudulent disability benefit calculations. Domain binding verifies insurance company or actuary. High-value long-term claims ($50K-$500K+ total payouts). Prevents benefit inflation fraud. Consumer protection for disabled policyholders. Critical for disability insurance where benefit calculations determine lifetime income replacement.
+**Why OCR wins here:** Specificity. Employment verification services are built for workers, not claimants. They often miss the nuanced "Own-Occ" vs "Any-Occ" triggers that determine if a disability benefit will continue. OCR-to-hash turns the **Actuarial Worksheet** into a live, trusted link to the specific contract terms.

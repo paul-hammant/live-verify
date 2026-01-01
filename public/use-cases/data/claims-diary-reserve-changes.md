@@ -1,125 +1,102 @@
 ---
-title: "Claims diary and reserve change documentation"
+title: "Claims Diary and Reserve Change Documentation"
 category: "Insurance Claims & Operations"
 volume: "Medium"
 retention: "Claim lifetime + 7 years"
 slug: "claims-diary-reserve-changes"
-tags: ["claims", "diary", "reserve", "changes", "insurance", "risk", "management"]
+tags: ["insurance-claims", "claims-diary", "loss-reserves", "adjuster-notes", "audit-trail", "reinsurance-audit"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', monospace; border: 1px solid #555; background: #fff; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
+    <strong>ACE INDEMNITY GROUP</strong><br>
+    INTERNAL CLAIMS DIARY & RESERVE LOG<br>
+    -----------------------------------
+  </div>
+
+  <div style="font-size: 0.85em; line-height: 1.4;">
+    <p><strong>Claim #:</strong> 99228877-WC<br>
+    <strong>Adjuster:</strong> <span data-bracket="start" data-for="diary">]</span>MIKE MILLER (ID #992)</p>
+
+    <div style="background: #f5f5f5; padding: 10px; margin: 15px 0; border: 1px solid #ddd;">
+      <strong>RESERVE CHANGE #04</strong><br>
+      Date: 15 MAR 2026 14:22:01<br>
+      Old Indemnity Reserve: $ 50,000.00<br>
+      New Indemnity Reserve: $ 125,000.00<br>
+      Change: +$ 75,000.00
+    </div>
+
+    <p><strong>ADJUSTER DIARY NOTE:</strong><br>
+    Received surgery estimate from claimant's physician. Injury significantly more severe than initially reported. Case now exceeds $100k threshold; escalated to supervisor for Large Loss Review.</p>
+  </div>
+
+  <div data-verify-line="diary" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+      title="Demo only: Insurer doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:ace-insurance.com/claims/v/99228877-R4 <span data-bracket="end" data-for="diary">]</span>
+  </div>
+</div>
+
 ## Data Verified
 
-Adjuster name, claim number, reserve amount, reserve changes, diary notes
+Claim ID, adjuster name/ID, reserve category (Indemnity/Medical/Expense), change amount, previous balance, new balance, timestamp (to the second), diary note text (digest), supervisor authorization status.
+
+**Document Types:**
+- **Reserve History Log:** Summary of all financial changes.
+- **Adjuster Diary Extract:** The narrative "Daily Log" of actions.
+- **Large Loss Notification:** Form sent to reinsurers for big spikes.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (the Insurance Carrier) and the log standing.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Verified** — Change matches the carrier's core ledger and timestamp.
+- **Backdated** — **ALERT:** Log entry was created after the effective date.
+- **Unauthorized** — Change was made but lacks mandatory supervisor sign-off.
+- **Void** — Reserve change was reversed due to data entry error.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Claims Adjuster** benefits from verification.
 
-**Record Verification:** Confirm financial documents match expectations.
+**Defensive Documentation:** Proving that they raised the reserve *immediately* upon receiving new medical data, defending against accusations of "Bad Faith" or "Late Reporting" during a subsequent audit or litigation.
 
-**Tax Preparation:** Provide verified documentation for tax filing.
-
-**Audit Support:** Maintain verified records for potential audits.
-
-**Dispute Resolution:** Use verified documents to resolve discrepancies.
-
-**Loan Applications:** Present verified financial documentation to lenders.
+**Escalation Proof:** Proving to a supervisor that the Large Loss Review was triggered on the exact date mandated by company policy.
 
 ## Third-Party Use
 
-**Regulators and Oversight Bodies**
+**Reinsurers**
+**Reserve Audit:** Reinsurers conduct periodic "Reserve Reviews" to ensure the primary carrier isn't hiding losses by keeping reserves artificially low. OCR-to-hash allows the auditor to instantly verify the history of every reserve change without trusting a manually compiled Excel file.
 
-Regulatory compliance and oversight:
+**State Market Conduct Examiners**
+**Claims Handling Integrity:** Verifying that the carrier isn't "Backdating" diary notes to make it look like they contacted claimants within the 14-day statutory limit when they actually waited 30 days.
 
-**Systematic Hash Receipt:** Receive hashes in bulk for regulatory oversight.
-
-**Audit Verification:** Verify documents during routine or targeted audits.
-
-**Compliance Monitoring:** Monitor issuer compliance with documentation requirements.
-
-**Investigation Support:** Verify documents during fraud or compliance investigations.
-
-**Consumer Protection:** Verify consumer-facing documents for protection enforcement.
-
-**Lenders and Financial Institutions**
-
-Credit underwriting and risk assessment:
-
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
+**Forensic Accountants**
+**Loss Development Analysis:** Verifying the "Age" of reserves to build accurate actuarial models of how long it takes for a typical claim to reach its final value.
 
 ## Verification Architecture
 
-**The Claims diary and reserve change documentation Fraud Problem**
+**The "Diary Tampering" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Income Inflation:** Inflating income or assets on financial documents
-- **Photoshop Fraud:** Digital manipulation of statements and documents
-- **Shell Company Documents:** Documents from fake or shell entities
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Post-Loss Engineering:** Editing a diary note from "Claimant seems fine" to "Claimant reported severe pain" after a lawsuit is filed to make the file look better.
+- **Reserve Smoothing:** Hiding a $1M spike by splitting it into 10 smaller $100k changes spread across different dates.
+- **Backdating:** Creating a diary entry today but dating it last month to hide a failure to respond to a legal notice.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Primary Insurers:** (Chubb, Zurich, AIG).
+**TPAs (Third Party Administrators):** (Sedgwick, ESIS, CorVel).
+**Claims Management Systems:** (Guidewire, Duck Creek).
 
-**Banks and Credit Unions:** Depository institutions for account documents.
+**Privacy Salt:** Highly critical. Internal notes contain sensitive medical/legal opinions. The hash must be salted to prevent unauthorized access to claim narratives.
 
-**Investment Firms:** Brokerage and investment management firms.
+## Competition vs. Guidewire Audit Logs
 
-**Insurance Companies:** Insurers for policy and claims documents.
+| Feature | OCR-to-Hash | System Audit Log (Guidewire) | PDF Export |
+| :--- | :--- | :--- | :--- |
+| **Trust Anchor** | **Domain-Bound.** Bound to the Carrier. | **Admin-Bound.** Can be edited by DB admins. | **Zero.** Easily forged. |
+| **Auditor Access** | **Universal.** Reinsurer can verify any PDF. | **Restricted.** Requires expensive licenses/login. | **Manual.** |
+| **Tamper Proof** | **Cryptographic.** Proves the *Text* of the note. | **Vulnerable.** Internal logs can be "cleaned up." | **Vulnerable.** |
+| **Immutability** | **High.** Once hashed, the note is fixed. | **Medium.** Database changes can be hidden. | **Zero.** |
 
-**Accounting Firms:** CPAs and audit firms for financial statements.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Domain binding verifies insurer/adjuster. Audit trail for reserve changes. Regulatory compliance (state insurance departments). Prevents backdating reserve changes. Claim handling documentation.
+**Why OCR wins here:** The "External Audit." Reinsurers and state regulators are external to the carrier's IT system. They don't have (and often don't want) direct access to the "Live" claims system. OCR-to-hash provides them with an **immutable proof-of-work** for the documents sent to them, ensuring the PDF they are auditing is the "Unfiltered Truth."

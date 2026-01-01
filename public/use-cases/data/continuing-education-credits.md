@@ -1,125 +1,101 @@
 ---
-title: "Continuing education credits (CME, CLE, CPE)"
+title: "Continuing Education Credits (CME, CLE, CPE)"
 category: "Professional & Educational Qualifications"
-volume: "Small"
+volume: "Large"
 retention: "3-7 years (renewal cycles)"
 slug: "continuing-education-credits"
-tags: ["continuing", "education", "credits", "professional", "educational", "qualifications"]
+tags: ["professional-education", "cle", "cme", "cpe", "licensing", "compliance", "training-certificate"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 4px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+  <div style="padding: 40px; text-align: center; border: 1px solid #ccc; margin: 10px;">
+    <div style="margin-bottom: 20px;">
+      <div style="font-size: 1.4em; font-weight: bold; letter-spacing: 1px;">CERTIFICATE OF ATTENDANCE</div>
+      <div style="font-size: 0.9em; font-style: italic;">Continuing Legal Education (CLE)</div>
+    </div>
+
+    <div style="margin: 30px 0;">
+      <div style="font-size: 1.1em;">This is to certify that</div>
+      <div style="font-size: 1.8em; font-weight: bold; margin: 10px 0; color: #1a237e;"><span data-bracket="start" data-for="cle">]</span>SAUL GOODMAN, ESQ.</div>
+      <div style="font-size: 1.1em;">has successfully completed</div>
+      <div style="font-size: 1.3em; font-weight: bold; margin: 10px 0;">ETHICS IN CRIMINAL DEFENSE</div>
+      <div style="font-size: 1.1em;">presented by</div>
+      <div style="font-size: 1.4em; font-weight: bold; margin: 10px 0;">ABA LEGAL ACADEMY</div>
+    </div>
+
+    <div style="margin: 30px 0; font-size: 0.95em; background: #f9f9f9; padding: 15px;">
+      <strong>Credit Hours:</strong> 2.0 Ethics / 1.0 General<br>
+      <strong>Date:</strong> March 15, 2026<br>
+      <strong>Course ID:</strong> ABA-2026-9922
+    </div>
+
+    <div data-verify-line="cle" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+      title="Demo only: Provider doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:americanbar.org/cle/v/ABA9922 <span data-bracket="end" data-for="cle">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Professional name, license number, course title, provider name, credit hours, completion date, certificate number
+Professional name, license number (optional), course title, education provider name, credit hours (by category: Ethics, Tech, General), date of completion, provider accreditation number, certificate serial ID.
+
+**Document Types:**
+- **CLE Certificate:** Continuing Legal Education (Lawyers).
+- **CME Certificate:** Continuing Medical Education (Doctors/Nurses).
+- **CPE Certificate:** Continuing Professional Education (CPAs).
+- **CEU Certificate:** General education units.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`americanbar.org`, `ama-assn.org`) and the credit status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Verified** — Course completed and credits issued.
+- **Accredited** — Provider is currently authorized by the State Board to issue credits.
+- **Expired/Superseded** — Course content no longer meets current board standards.
+- **Invalid** — Serial number mismatch or attendance not recorded.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Professional** (Attorney/Doctor/CPA) benefits from verification.
 
-**Credential Verification:** Confirm educational credentials after issuance.
+**License Renewal:** Proving to the State Licensing Board that they have met their 2-year mandatory education requirements. A verified "Token of Credit" speeds up the renewal process and reduces the chance of an "Audit" due to unreadable or suspicious paper certificates.
 
-**Job Applications:** Present verified credentials to prospective employers.
-
-**Further Education:** Provide verified transcripts for graduate school applications.
-
-**Professional Licensing:** Submit verified credentials for license applications.
-
-**Immigration Applications:** Verify educational credentials for visa applications.
+**Employer Tracking:** Providing verified credits to their firm's HR department to trigger salary increases or promotion eligibility linked to advanced training.
 
 ## Third-Party Use
 
-**Employers**
+**State Licensing Boards (The Bar / Medical Board)**
+**Audit Efficiency:** Boards conduct random audits of 5-10% of all professionals. OCR-to-hash allows board staff to instantly verify a pile of certificates without calling 50 different education providers to confirm "Did John Smith really attend this webinar?"
 
-Hiring and compliance verification:
+**Insurance Carriers (Professional Liability)**
+**Risk Assessment:** Verifying that a professional is staying current with latest safety/ethics training, which can lead to lower E&O (Errors & Omissions) premiums.
 
-**Pre-Employment Screening:** Verify credentials during hiring process.
-
-**I-9 Compliance:** Verify work authorization and identity documents.
-
-**Credential Verification:** Confirm professional licenses and certifications.
-
-**Health Requirements:** Verify health-related documentation for workplace safety.
-
-**Background Checks:** Integrate verification into background check processes.
-
-**Educational Institutions**
-
-Admissions and enrollment:
-
-**Transfer Credits:** Verify transcripts for transfer credit evaluation.
-
-**Graduate Admissions:** Validate undergraduate credentials for graduate programs.
-
-**Professional Programs:** Confirm prerequisite credentials for professional schools.
-
-**International Students:** Verify foreign credentials for admissions and visa support.
-
-**Scholarship Awards:** Validate academic credentials for scholarship eligibility.
-
-**Professional Licensing Boards**
-
-Licensing and credentialing:
-
-**License Applications:** Verify educational and training credentials.
-
-**Continuing Education:** Validate CE credits for license renewal.
-
-**Reciprocity Requests:** Verify out-of-state licenses for reciprocal licensing.
-
-**Disciplinary Proceedings:** Confirm credential claims in investigations.
-
-**Specialization Certification:** Verify prerequisites for specialty certification.
+**Patients / Clients**
+**Professionalism:** A client can verify that their doctor or lawyer is actually doing the work to stay current in their field.
 
 ## Verification Architecture
 
-**The Continuing education credits (CME, CLE, CPE) Fraud Problem**
+**The "Pencil Whipping" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Diploma Mills:** Fake credentials from non-accredited institutions
-- **Grade Alteration:** Modified transcripts with inflated grades
-- **Degree Fabrication:** Completely fabricated degrees from real institutions
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Certificate Forgery:** Professionals using a real provider's template to create a "Certificate of Attendance" for a course they never took.
+- **Hour Inflation:** Changing "1.0 Credit Hours" to "10.0 Credit Hours" on a PDF to meet a deadline.
+- **Course Sharing:** One person taking a webinar and sending the PDF certificate to 5 friends, who then edit the name to their own.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**National Associations:** (ABA, AMA, AICPA).
+**Universities:** (Law/Medical schools).
+**Commercial Providers:** (e.g., Practising Law Institute - PLI).
 
-**Universities and Colleges:** Accredited degree-granting institutions.
+## Competition vs. Central Learning Registries
 
-**Registrars:** Academic records offices at educational institutions.
+| Feature | OCR-to-Hash | Learning Management System (LMS) | Physical Certificate |
+| :--- | :--- | :--- | :--- |
+| **Trust Anchor** | **Domain-Bound.** Bound to the Provider. | **System-Bound.** Trust the LMS vendor. | **Visual.** Trusted only via stamp. |
+| **User Control** | **High.** Professional keeps the anchor. | **Low.** Data resides in a 3rd party silo. | **High.** |
+| **Interoperability** | **Universal.** PDFs work across all state boards. | **Low.** Different boards use different software. | **Universal.** |
+| **Speed** | **Instant.** 5-second scan. | **Slow.** Requires login, data export, and manual upload. | **N/A.** |
 
-**Accreditation Bodies:** Regional and professional accreditors.
-
-**Testing Organizations:** Standardized testing and certification providers.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Certificate format. Professional appearance. Verification for license renewal. Prevents fake CE credits for medical, legal, and accounting professionals. Domain binding verifies legitimate education providers. Professionals can verify credits without requesting duplicate certificates.
+**Why OCR wins here:** The "Compliance Binder" reality. Most professionals store their certificates in a physical or digital folder throughout the year. At renewal time, they need to submit them to a board that doesn't have access to their private learning portal. OCR-to-hash turns the **Static Certificate** into a portable, cryptographically trusted artifact that bridges the gap between the Learner and the Regulator.

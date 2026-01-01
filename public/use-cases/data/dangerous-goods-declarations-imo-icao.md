@@ -1,122 +1,125 @@
 ---
-title: "Dangerous goods declarations (IMO/ICAO short-form)"
+title: "Dangerous Goods Declarations (IMO/ICAO)"
 category: "Customs & Trade Compliance"
-volume: "Small"
+volume: "Medium"
 retention: "Shipment + 5-10 years"
 slug: "dangerous-goods-declarations-imo-icao"
-tags: ["dangerous", "goods", "declarations", "icao", "logistics", "transportation"]
+tags: ["imo-dgd", "imdg-code", "dangerous-goods", "maritime-safety", "container-shipping", "hazmat-declaration", "logistics"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 2px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <div style="background: #000; color: #fff; padding: 10px; text-align: center;">
+    <h2 style="margin: 0; text-transform: uppercase; font-size: 1.2em;">DANGEROUS GOODS DECLARATION (IMO)</h2>
+    <div style="font-size: 0.8em;">In accordance with the IMDG Code and SOLAS 74</div>
+  </div>
+
+  <div style="padding: 15px; font-size: 0.85em;">
+    <div style="display: flex; border-bottom: 1px solid #000; padding-bottom: 10px; margin-bottom: 10px;">
+      <div style="width: 50%; border-right: 1px solid #000; padding-right: 10px;">
+        <strong>1. Shipper / Exporter:</strong><br>
+        <span data-bracket="start" data-for="imo-dgd">]</span>Industrial Chemicals, Gmbh.<br>
+        Frankfurt, Germany
+      </div>
+      <div style="width: 50%; padding-left: 10px;">
+        <strong>2. Consignee:</strong><br>
+        Global Logistics Hub, LLC<br>
+        Houston, TX, USA
+      </div>
+    </div>
+
+    <div style="display: flex; border-bottom: 1px solid #000; padding-bottom: 10px; margin-bottom: 10px; background: #fdf2f2;">
+      <div style="width: 33%; border-right: 1px solid #000; padding: 5px;">
+        <strong>UN Number:</strong><br>
+        UN 1090
+      </div>
+      <div style="width: 33%; border-right: 1px solid #000; padding: 5px;">
+        <strong>Class:</strong><br>
+        3 (Flammable)
+      </div>
+      <div style="width: 34%; padding: 5px;">
+        <strong>Packing Group:</strong><br>
+        II
+      </div>
+    </div>
+
+    <p><strong>3. Proper Shipping Name:</strong> ACETONE</p>
+    <p><strong>4. Container ID:</strong> MSKU-998877-6</p>
+
+    <div style="margin-top: 15px; border: 1px solid #000; padding: 10px; font-style: italic;">
+      I hereby declare that the contents of this consignment are fully and accurately described above and are classified, packaged, marked and labeled/placarded in accordance with the applicable international and national governmental regulations.
+    </div>
+
+    <div style="margin-top: 15px; display: flex; justify-content: space-between;">
+      <div><strong>Signatory:</strong> Hans Muller</div>
+      <div><strong>Date:</strong> 15 MAR 2026</div>
+    </div>
+
+    <div data-verify-line="imo-dgd" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #555; text-align: center;"
+      title="Demo only: Carrier doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:hapaq-lloyd.com/dgd/v/UN1090-MSKU <span data-bracket="end" data-for="imo-dgd">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Shipper name, UN numbers, class
+Shipper name, Consignee name, UN Number, Class/Division, Packing Group, Proper Shipping Name, Flash point (for maritime), marine pollutant status, number/type of packages, container ID, signatory name, date.
+
+**Document Types:**
+- **IMO Dangerous Goods Declaration:** For ocean freight (IMDG Code).
+- **Multimodal DG Form:** For shipments moving by road and sea.
+- **Container Packing Certificate:** Proving the DG was properly braced inside the box.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (the Shipper or Carrier) and current safety status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Verified** — Declaration matches the shipper's official safety filing.
+- **Accepted** — Port/Carrier has verified the physical labels and placards.
+- **Blocked** — **ALERT:** Discrepancy found in hazard class; do not load.
+- **Void** — Replaced by an amended declaration.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Shipper (Manufacturer)** benefits from verification.
 
-**Document Authenticity:** Verify received documents are genuine and properly issued.
+**Vessel Space Allocation:** Proving to the Ocean Carrier (e.g., Hapag-Lloyd) that the hazardous chemicals are "Verified Accurately Declared." Carriers are extremely risk-averse with DG; a verified hash prevents the container from being "Left on the Dock" due to paperwork suspicion.
 
-**Third-Party Presentation:** Provide verified documentation when required.
-
-**Compliance Requirements:** Meet regulatory or contractual documentation requirements.
-
-**Record Keeping:** Maintain verified records for future reference or audits.
-
-**Dispute Prevention:** Establish authenticity to prevent future challenges.
+**Liability Defense:** If a container leaks at sea, the shipper can prove they provided a cryptographically verified, accurate declaration of the chemical's flash point and class, defending against claims of "Negligent Misdeclaration."
 
 ## Third-Party Use
 
-**Insurance Companies**
+**Vessel Command (The Captain)**
+**Stowage Safety:** The Captain uses the DGD to ensure flammable liquids (Class 3) aren't stored next to explosives or acids. Verification ensures the data isn't "guessed," preventing catastrophic ship-board fires.
 
-Underwriting and claims processing:
+**Port Terminal Operators**
+**Emergency Response:** In the event of a leak in the terminal, firefighters scan the hash on the container door or paperwork. "Verified by Hapag-Lloyd" provides instant, trusted access to the emergency response codes (ERG).
 
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Customs and Border Authorities**
-
-International trade compliance:
-
-**Import Clearance:** Verify shipping documents for customs clearance.
-
-**Duty Assessment:** Validate commercial invoices and declarations.
-
-**Trade Compliance:** Confirm certificates of origin and trade documents.
-
-**Security Screening:** Verify cargo documentation for security.
-
-**Export Controls:** Validate export documentation and licenses.
-
-**Freight Forwarders and Carriers**
-
-Logistics and transportation:
-
-**Shipment Acceptance:** Verify documents before accepting cargo.
-
-**Carrier Handoffs:** Validate documentation at transfer points.
-
-**Liability Determination:** Reference verified documents for claims.
-
-**Route Planning:** Confirm documentation for transit requirements.
-
-**Delivery Confirmation:** Verify documents at final delivery.
+**Marine Insurers**
+**Risk Management:** Ensuring that all "Hazardous Loads" on a vessel were properly declared before writing high-value hull/cargo policies.
 
 ## Verification Architecture
 
-**The Dangerous goods declarations (IMO/ICAO short-form) Fraud Problem**
+**The "Phantom Chemical" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Class Downgrading:** Declaring a highly toxic chemical as a low-hazard one to get it onto a passenger-compatible vessel or to save on freight surcharges.
+- **Flash-point Tampering:** Editing the "Flash Point" on the PDF to make a flammable liquid look safer than it is to bypass "Below Deck" storage restrictions.
+- **Container Swapping:** Using a valid DGD for a safe container to hide an illegal or leaking one.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Chemical Manufacturers.**
+**Certified DG Packers.**
+**Ocean Carriers / Ship Lines.**
 
-**Primary Issuers:** Organizations with direct authority to issue these documents.
+## Competition vs. Port Community Systems (PCS)
 
-**Licensed Professionals:** Professionals authorized to create and certify documents.
+| Feature | OCR-to-Hash | PCS / Central Hub | Paper DGD |
+| :--- | :--- | :--- | :--- |
+| **Field Access** | **Instant.** Scan the paper at the gate. | **Difficult.** Requires truckers/clerks to have complex portal logins. | **Instant.** |
+| **Trust Anchor** | **Domain-Bound.** Trust the Shipper. | **System-Bound.** Trust the Port's IT vendor. | **Zero.** Easily forged. |
+| **Connectivity** | **Strong.** Paper works at remote berths. | **Fragile.** Port IT systems often experience downtime. | **Offline.** |
+| **Interoperability** | **Universal.** Works across any port/carrier. | **Siloed.** Hamburg's PCS doesn't talk to Singapore's. | **Universal.** |
 
-**Government Agencies:** Federal, state, or local agencies with jurisdiction.
-
-**Industry Bodies:** Trade associations and professional organizations.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Port/airport safety checks. Tamper-evident declarations. Domain binding verifies shipper.
+**Why OCR wins here:** The "Intermodal Handoff." A chemical container moves from Factory (Truck) -> Port Gate -> Vessel -> Destination Port. At every step, a different entity takes responsibility. OCR-to-hash turns the **Existing Paper Standard** into a universal digital bridge that moves *with the cargo*, providing "Single Source of Truth" trust without needing a global IT integration.

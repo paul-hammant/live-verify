@@ -1,150 +1,105 @@
 ---
-title: "Employment Authorization Documents (EAD, I-766)"
+title: "Employment Authorization Documents (EAD)"
 category: "Immigration & Visa Documents"
 volume: "Medium"
 retention: "1-2 years (renewal cycle)"
 slug: "employment-authorization-ead"
-tags: ["employment", "authorization", "immigration", "visa", "documents"]
+tags: ["immigration", "ead", "form-i-766", "work-authorization", "uscis", "i-9-compliance", "employment-eligibility"]
 ---
+
+<div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+  <div style="background: #002d62; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
+    <div>
+      <div style="font-weight: bold; font-size: 1.1em;">U.S. CITIZENSHIP & IMMIGRATION</div>
+      <div style="font-size: 0.8em;">Employment Authorization Card</div>
+    </div>
+    <div style="width: 40px; height: 40px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #002d62; font-weight: bold; font-size: 0.7em; text-align: center;">DHS</div>
+  </div>
+
+  <div style="padding: 20px; display: flex;">
+    <div style="width: 100px; margin-right: 15px;">
+      <div style="width: 100px; height: 125px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #777;">[PHOTO]</div>
+    </div>
+    <div style="flex-grow: 1;">
+      <div style="font-size: 1.1em; font-weight: bold; margin: 0 0 5px 0;"><span data-bracket="start" data-for="ead">]</span>DOE, JOHN JACOB</div>
+      <div style="font-size: 0.85em; color: #333; line-height: 1.4;">
+        <strong>USCIS #:</strong> 992-288-776<br>
+        <strong>Category:</strong> C08 (Asylum)<br>
+        <strong>Card #:</strong> SRC2699887766<br>
+        <strong>Expires:</strong> 05/15/2028
+      </div>
+    </div>
+  </div>
+
+  <div style="padding: 0 20px 20px 20px;">
+    <div style="font-size: 0.8em; font-weight: bold; color: #002d62; text-align: center; margin-bottom: 5px;">UNITED STATES OF AMERICA</div>
+    <div data-verify-line="ead" style="border-top: 1px dashed #999; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+      title="Demo only: USCIS doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:uscis.gov/ead/v/SRC2699887766 <span data-bracket="end" data-for="ead">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Name, photo, A-number, work authorization category, valid from-to dates, card number
+Full name, USCIS number (A-Number), Category code (e.g., C03, C08, C09), Card serial number, effective date, expiration date, photograph (via hash), fingerprint status (hash), issuing office.
 
-**Privacy Salt:** Sensitive personal information requires random salt in verification lines to prevent hash enumeration.
+**Document Types:**
+- **Employment Authorization Document (EAD):** (Form I-766).
+- **Extension Notice (I-797):** Proving the 180/540-day automatic extension.
+- **Grant of Asylum / Withholding:** (Linked document hash).
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`uscis.gov`) and real-time work eligibility status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Authorized** — Bearer is legally eligible to work in the U.S.
+- **Pending Renewal** — Application filed; automatic extension active.
+- **Revoked** — Authorization terminated (e.g., underlying case denied).
+- **Expired** — No longer eligible; renewal required.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Employee (Authorized Worker)** benefits from verification.
 
-**Status Confirmation:** Verify immigration documents after receipt from authorities.
+**Hiring Efficiency:** Proving to an HR manager that their "Category C08" card is legitimate and hasn't been "Revoked" by the government. A verified card removes the employer's fear of "I-9 Audit" fines, making the worker much more hireable.
 
-**Employment Authorization:** Confirm work authorization for I-9 compliance.
-
-**Travel Planning:** Verify travel document validity before international trips.
-
-**Status Changes:** Confirm application outcomes and new status.
-
-**Family Petitions:** Provide verified status for dependent applications.
+**Bank Account Opening:** Proving legal status to a bank to comply with "Know Your Customer" (KYC) rules for individuals without a Green Card or Social Security Number.
 
 ## Third-Party Use
 
-**Employers**
+**Employers (HR Managers)**
+**I-9 Compliance:** Instantly confirming that the EAD isn't a "High-Quality Forgery." Standard cards are easily bought on the black market; OCR-to-hash connects the manager directly to the USCIS record in seconds.
 
-Hiring and compliance verification:
+**Social Security Administration**
+**SSN Issuance:** Verifying the work authorization before assigning an SSN.
 
-**Pre-Employment Screening:** Verify credentials during hiring process.
-
-**I-9 Compliance:** Verify work authorization and identity documents.
-
-**Credential Verification:** Confirm professional licenses and certifications.
-
-**Health Requirements:** Verify health-related documentation for workplace safety.
-
-**Background Checks:** Integrate verification into background check processes.
-
-**Government Agencies**
-
-Compliance enforcement and administration:
-
-**Inspection Verification:** Field agents verify permits and licenses at sites.
-
-**Enforcement Actions:** Confirm documentation before enforcement.
-
-**Benefit Eligibility:** Verify supporting documents for benefits administration.
-
-**Compliance Audits:** Audit documentation for regulatory compliance.
-
-**Interagency Coordination:** Share verified documents across agencies.
-
-**Healthcare Providers**
-
-Medical care and coordination:
-
-**Medical History:** Verify patient-provided medical records and test results.
-
-**Treatment Planning:** Confirm diagnostic results for treatment decisions.
-
-**Specialist Referrals:** Validate records when coordinating care.
-
-**Insurance Authorization:** Verify coverage and authorization documents.
-
-**Compliance Requirements:** Confirm vaccination and health screening records.
-
-**Educational Institutions**
-
-Admissions and enrollment:
-
-**Transfer Credits:** Verify transcripts for transfer credit evaluation.
-
-**Graduate Admissions:** Validate undergraduate credentials for graduate programs.
-
-**Professional Programs:** Confirm prerequisite credentials for professional schools.
-
-**International Students:** Verify foreign credentials for admissions and visa support.
-
-**Scholarship Awards:** Validate academic credentials for scholarship eligibility.
+**State DMVs**
+**Driver's Licensing:** Verifying legal presence for non-immigrant driver's licenses (Real ID).
 
 ## Verification Architecture
 
-**The Employment Authorization Documents (EAD, I-766) Fraud Problem**
+**The "High-End Forgery" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Ghost Documents:** Fraudsters using high-end printers to create EAD cards for people who never applied for status.
+- **Revocation Hiding:** A worker whose asylum claim was denied (revoking their EAD) keeping the physical card to trick a new employer.
+- **Category Tampering:** Changing a "Student" (Restricted) category to an "Asylum" (Unrestricted) category.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**U.S. Citizenship and Immigration Services (USCIS):** The sole issuer.
+**DHS SAVE System:** (The backend source of truth).
 
-**USCIS:** U.S. Citizenship and Immigration Services for immigration documents.
+**Privacy Salt:** ABSOLUTELY CRITICAL. Immigration data is a high-value target for identity theft. The hash MUST be salted to prevent "Guess-and-Check" attacks to find specific immigrants.
 
-**DOS:** Department of State for passports and consular documents.
+## Competition vs. E-Verify / SAVE
 
-**CBP:** Customs and Border Protection for entry/exit documentation.
+| Feature | OCR-to-Hash | E-Verify (Employer System) | Physical EAD Card |
+| :--- | :--- | :--- | :--- |
+| **Trust Anchor** | **Domain-Bound.** Bound to `uscis.gov`. | **Direct DB Access.** High trust. | **Mechanical.** Prone to forgery. |
+| **User Access** | **Open.** Small businesses can verify. | **Restricted.** Requires federal registration and training. | **Manual.** |
+| **Speed** | **Instant.** 5-second scan. | **Slow.** Often flags for "Manual Review" taking days. | **Instant.** |
+| **Privacy** | **High.** Verified at the point of use. | **Low.** Data resides in a federal monitoring system. | **N/A.** |
 
-**Foreign Governments:** International authorities for foreign-issued documents.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-**Privacy Considerations**
-
-Sensitive personal information requires special handling:
-
-**Privacy Salt:** Random salt added to verification lines prevents hash enumeration attacks.
-
-**Minimum Disclosure:** Verification response reveals only necessary information.
-
-**Access Controls:** Verification endpoints implement appropriate access restrictions.
-
-**Audit Logging:** Verification attempts logged for security and compliance.
-
-## Rationale
-
-I-9 verification; prevents fake EADs; USCIS domain binding. Common for DACA recipients, asylum applicants, and others awaiting permanent status. Frequent renewals make digital verification critical. Cardholders don't need to carry physical EAD reducing loss risk.
+**Why OCR wins here:** The "Small Employer" reality. Millions of small businesses (landscapers, restaurants, households) do not use E-Verify because it is complex and invasive. They rely on "Looking at the card." OCR-to-hash allows **every employer** to have "E-Verify Level" trust using only their phone camera, stopping EAD fraud at the scale of the entire economy.

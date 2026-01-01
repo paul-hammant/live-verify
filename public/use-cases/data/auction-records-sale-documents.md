@@ -1,94 +1,122 @@
 ---
-title: "Auction records and sale documents"
+title: "Auction Records and Sale Documents"
 category: "Art & Collectibles"
 volume: "Very Small"
 retention: "Permanent (price history)"
 slug: "auction-records-sale-documents"
-tags: ["auction", "records", "sale", "documents", "collectibles"]
+tags: ["auction", "price-history", "hammer-price", "provenance", "collectibles", "sales-receipt"]
 ---
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 2px 2px 10px rgba(0,0,0,0.05);">
+  <div style="text-align: right; margin-bottom: 30px;">
+    <div style="font-weight: bold; font-size: 1.4em; color: #000;">PHILLIPS</div>
+    <div style="font-size: 0.8em; color: #666;">NEW YORK • 432 PARK AVENUE</div>
+  </div>
+
+  <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+    <h3 style="text-align: center; text-transform: uppercase; margin-bottom: 20px;">Purchase Statement</h3>
+
+    <p><strong>Sale:</strong> NY010126 - Modern Masterpieces<br>
+    <strong>Date:</strong> 15 March 2026<br>
+    <strong>Bidder #:</strong> <span data-bracket="start" data-for="auction">]</span>9988</p>
+
+    <div style="margin: 20px 0; border-top: 2px solid #000; padding-top: 15px;">
+      <table style="width: 100%;">
+        <tr>
+          <td><strong>Lot 42:</strong> <em>The Electric Violin</em> (1962)</td>
+          <td style="text-align: right;">$ 1,200,000.00</td>
+        </tr>
+        <tr>
+          <td>Buyer's Premium:</td>
+          <td style="text-align: right;">$ 300,000.00</td>
+        </tr>
+        <tr>
+          <td>Sales Tax (8.875%):</td>
+          <td style="text-align: right;">$ 133,125.00</td>
+        </tr>
+        <tr style="border-top: 1px solid #000; font-weight: bold; font-size: 1.1em;">
+          <td>TOTAL AMOUNT DUE:</td>
+          <td style="text-align: right;">$ 1,633,125.00</td>
+        </tr>
+      </table>
+    </div>
+
+    <p style="font-style: italic; font-size: 0.9em;">Payment received in full. Title transferred upon clearance of funds.</p>
+
+    <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+      <div>
+        <div style="border-top: 1px solid #000; width: 180px; padding-top: 5px;">Auction House Controller</div>
+      </div>
+      <div style="text-align: right; font-size: 0.8em; color: #777;">
+        Invoice #: INV-9982-X
+      </div>
+    </div>
+  </div>
+
+  <div data-verify-line="auction" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+      title="Demo only: Phillips doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:phillips.com/sales/v/NY010126-42 <span data-bracket="end" data-for="auction">]</span>
+  </div>
+</div>
+
 ## Data Verified
 
-Buyer/seller names (may be anonymized), auction house, hammer price
+Auction house name, sale ID, lot number, artwork title/artist, hammer price, buyer's premium, total price, bidder ID (redacted/partial), date of sale, payment status.
+
+**Document Types:**
+- **Purchase Statement / Invoice:** Proving ownership and price paid.
+- **Settlement Statement:** For the seller (net proceeds).
+- **Price Result List:** Public list of hammer prices for a specific sale.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`phillips.com`, `sothebys.com`) and the sale confirmation.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Paid** — Funds received; title transfer verified.
+- **Withdrawn** — The sale was cancelled or the item returned (e.g., authenticity dispute).
+- **In-Dispute** — Payment or authenticity being litigated.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Buyer** (Collector) benefits from verification.
 
-**Document Authenticity:** Verify received documents are genuine and properly issued.
+**Estate Valuation:** Proving the "Fair Market Value" to the IRS based on a verified auction hammer price (which is the gold standard for valuation).
 
-**Third-Party Presentation:** Provide verified documentation when required.
+**Collateralized Loans:** Proving to a bank exactly what was paid for a piece last week to secure a loan based on that cost basis.
 
-**Compliance Requirements:** Meet regulatory or contractual documentation requirements.
-
-**Record Keeping:** Maintain verified records for future reference or audits.
-
-**Dispute Prevention:** Establish authenticity to prevent future challenges.
+**Insurance Coverage:** Establishing the "Agreed Value" for a policy based on a verified purchase price.
 
 ## Third-Party Use
 
-**Auditors and Compliance Officers**
+**Insurance Underwriters**
+**Value Verification:** Preventing "over-insurance" where a buyer claims they paid $5M for a work they actually won for $1M. Verification of the hammer price ensures the policy limit is accurate.
 
-Internal and external audits:
+**Tax Authorities (Capital Gains)**
+**Cost Basis Audit:** When the collector sells the work 10 years later, the tax authority can verify the original "Purchase Statement" to confirm the starting cost basis for capital gains tax.
 
-**Financial Audits:** Verify documents during financial statement audits.
-
-**Compliance Audits:** Validate documentation for regulatory compliance.
-
-**Internal Controls:** Test document authenticity in control assessments.
-
-**Fraud Investigations:** Verify documents in fraud examinations.
-
-**Third-Party Audits:** Validate vendor and partner documentation.
+**Art Market Researchers**
+**Price Transparency:** Verifying that "record-breaking prices" reported in the media are authentic and matched by actual paid invoices, preventing "shill bidding" or fabricated price reports.
 
 ## Verification Architecture
 
-**The Auction records and sale documents Fraud Problem**
+**The "Hammer Price" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Price Pumping:** Creating a fake auction invoice showing a $5M price for a piece actually worth $50k, to trick a lender or a future buyer.
+- **Tax Evasion:** Fabricating an invoice with a *lower* price to reduce sales tax or import duties.
+- **Identity Theft:** Using a real auction invoice from a famous collector to "legitimize" a fake version of the same painting.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Major Auction Houses:** (Phillips, Christie's, Sotheby's, Bonhams).
+**Online Platforms:** (Artsy, LiveAuctioneers, Heritage Auctions).
 
-**Primary Issuers:** Organizations with direct authority to issue these documents.
+## Competition vs. Public Price Databases
 
-**Licensed Professionals:** Professionals authorized to create and certify documents.
+| Feature | OCR-to-Hash | Public Database (Artnet/Artprice) | Private PDF / Invoice |
+| :--- | :--- | :--- | :--- |
+| **Privacy** | **High.** Only the specific buyer/lot is verified. | **Low.** Everyone sees the price (but not who bought it). | **None.** Easily forged with Photoshop. |
+| **Authority** | **Direct.** Binds the paper to the house's domain. | **Indirect.** Relies on third-party scrapers/reporters. | **Subjective.** "Is this signature real?" |
+| **Detail** | **Full.** Includes premium, tax, and bidder ID. | **Partial.** Often just hammer price + premium. | **Full.** But untrusted. |
 
-**Government Agencies:** Federal, state, or local agencies with jurisdiction.
-
-**Industry Bodies:** Trade associations and professional organizations.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Domain binding verifies auction house (Christie's, Sotheby's, etc.). Prevents fake sale records. Formal documents suitable for OCR. Permanent price history.
+**Why OCR wins here:** An auction invoice is a private financial document. While the *price* might be public, the *fact that you paid it* is private. OCR-to-hash allows a collector to prove their cost basis to a bank or tax office without the house needing to publish private bidder data to a public database.
