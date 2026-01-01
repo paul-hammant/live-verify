@@ -1,6 +1,6 @@
 ---
 title: "CMR consignment notes (international road freight)"
-category: "Logistics & Transportation"
+category: "Shipping & Freight"
 volume: "Large"
 retention: "7-10 years (carrier liability)"
 slug: "cmr-consignment-notes"

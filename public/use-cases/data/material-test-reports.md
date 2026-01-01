@@ -1,6 +1,6 @@
 ---
 title: "Material test reports (chemical composition, strength)"
-category: "Logistics & Transportation"
+category: "Product Certifications & Compliance"
 volume: "Small"
 retention: "10-30 years (structural integrity)"
 slug: "material-test-reports"

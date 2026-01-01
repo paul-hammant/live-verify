@@ -1,6 +1,6 @@
 ---
 title: "Cold storage and temperature-controlled shipping records"
-category: "Logistics & Transportation"
+category: "Warehousing & Inventory"
 volume: "Medium"
 retention: "Shipment + 7-10 years"
 slug: "cold-storage-temperature-records"

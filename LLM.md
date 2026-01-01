@@ -2,14 +2,20 @@
 
 ## Project Overview
 
-This is a **100% client-side web application** for verifying physical documents using computer vision, OCR, text normalization, and SHA-256 hashing. It implements the concept from Paul Hammant's blog post: [OCR-to-Hash: A Simple Audit Trail for Physical Documents](https://paulhammant.com/2023/01/17/ocr-to-hash-simple-audit-trail-for-physical-documents/).
+Proof-of-concept implementations demonstrating OCR-to-hash verification. Implements concept from Paul Hammant's blog post: [OCR-to-Hash: A Simple Audit Trail for Physical Documents](https://paulhammant.com/2023/01/17/ocr-to-hash-simple-audit-trail-for-physical-documents/).
 
-**Current focus:** Camera-based document verification (documents with printed verification lines and registration marks)
+### POC 1: Camera-Based Document Verification
+`public/camera-app/index.html` — Point camera at physical document, OCR extracts text, normalizes, hashes, verifies against issuer's endpoint.
 
-**Future modes:** See [VERIFICATION-MODES.md](./VERIFICATION-MODES.md) for:
-- Web-based text selection verification (verify quoted text from web pages)
-- Real-time document streaming verification
-- Batch systematic hash receipt verification
+**Future:** iOS/Android camera apps would get this built-in. Point phone at certificate/permit → native verification without third-party app.
+
+### POC 2: In-Page Text Selection Verification
+`public/text-selection-verify.js` — Select text on webpage, right-click "Verify?", computes hash, checks issuer endpoint.
+
+**Future:** Chrome/Firefox/Safari would get this built-in. Select quoted claim on any webpage → browser-native verification via context menu.
+
+### Additional Modes
+See [VERIFICATION-MODES.md](./VERIFICATION-MODES.md) for: real-time document streaming, batch systematic hash receipt verification.
 
 ## Key Design Decisions
 
@@ -93,6 +99,30 @@ live-verify/
 ├── BUILDING.md                      # Build instructions
 └── LLM.md                           # This file
 ```
+
+## Use Cases Content
+
+~450 use case documents in `public/use-cases/data/*.md`. Each has YAML frontmatter:
+
+```yaml
+---
+title: "Document Title"
+category: "Category Name"
+type: "use-case"  # or "rollup" for aggregates
+slug: "document-slug"
+volume: "Medium"
+retention: "7 years"
+---
+```
+
+**Key files:**
+- `public/use-cases/data/criteria-template.md` — Template + guidance for writing use cases. Covers: good use case criteria, party definitions (issuer/second/third), fraud patterns, status indications, common objections.
+- `scripts/migrate-use-cases.js` — Regenerates `public/use-cases/data/index.json` from .md frontmatter. Run after adding/editing use cases.
+- `public/use-cases/view.html` — Client-side markdown viewer. Access via `view.html?doc=slug-name`.
+
+**Workflow:** Edit .md files → run `node scripts/migrate-use-cases.js` → index.json updated.
+
+**Categories:** 40 categories. Large ones split (Insurance→Specialty/Claims/Bonds, Logistics→Shipping/Customs/Warehouse/Fleet, Banking→Payments/Compliance/Trade/Fintech).
 
 ## Core Logic
 

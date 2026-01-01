@@ -1,6 +1,6 @@
 ---
 title: "Directors' statutory liability (pension trustee liability)"
-category: "Insurance & Risk Management"
+category: "Commercial Lines Insurance"
 volume: "Very Small"
 retention: "Policy term + 20 years (claims tail)"
 slug: "directors-statutory-liability-pension"

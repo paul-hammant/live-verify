@@ -1,6 +1,6 @@
 ---
 title: "Cyber extortion and ransomware insurance"
-category: "Insurance & Risk Management"
+category: "Insurance Claims & Operations"
 volume: "Small"
 retention: "Policy term + 7 years"
 slug: "cyber-extortion-ransomware"

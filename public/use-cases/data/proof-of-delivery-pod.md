@@ -1,6 +1,6 @@
 ---
 title: "Proof of delivery (POD) and delivery receipts"
-category: "Logistics & Transportation"
+category: "Shipping & Freight"
 volume: "Very Large"
 retention: "Delivery + 3-7 years"
 slug: "proof-of-delivery-pod"

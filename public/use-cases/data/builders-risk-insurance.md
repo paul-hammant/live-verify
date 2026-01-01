@@ -1,6 +1,6 @@
 ---
 title: "Builders risk insurance policies"
-category: "Insurance & Risk Management"
+category: "Specialty Insurance"
 volume: "Small"
 retention: "Construction period + 7-10 years"
 slug: "builders-risk-insurance"

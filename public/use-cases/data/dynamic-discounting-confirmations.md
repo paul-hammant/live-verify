@@ -1,6 +1,6 @@
 ---
 title: "Dynamic discounting confirmations"
-category: "Banking & Financial Services"
+category: "Trade Finance"
 volume: "Small"
 retention: "3-7 years (payment disputes)"
 slug: "dynamic-discounting-confirmations"

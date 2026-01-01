@@ -1,6 +1,6 @@
 ---
 title: "Marine hull & machinery insurance policies"
-category: "Logistics & Transportation"
+category: "Specialty Insurance"
 volume: "Small"
 retention: "Vessel lifetime + 10 years"
 slug: "marine-hull-machinery"

@@ -1,6 +1,6 @@
 ---
 title: "Title insurance for international transactions"
-category: "Insurance & Risk Management"
+category: "Specialty Insurance"
 volume: "Very Small"
 retention: "Permanent (chain of title)"
 slug: "international-title-insurance"

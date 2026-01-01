@@ -1,6 +1,6 @@
 ---
 title: "Fund NAV Statements and Capital Account Statements"
-category: "Investment & Wealth Management"
+category: "Investment & Fintech"
 volume: "Medium (daily for many funds, monthly/quarterly for others)"
 retention: "7-10 years (tax, audit, dispute resolution)"
 slug: "fund-nav-statements"

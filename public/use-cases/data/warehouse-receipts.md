@@ -1,6 +1,6 @@
 ---
 title: "Warehouse Receipts and Inventory Records"
-category: "Logistics & Transportation / Commodity Finance"
+category: "Warehousing & Inventory"
 volume: "Medium-Small"
 retention: "3-7 years (financial audit, loan lifecycle)"
 slug: "warehouse-receipts"

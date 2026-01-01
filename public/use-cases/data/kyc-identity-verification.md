@@ -1,6 +1,6 @@
 ---
 title: "KYC identity verification documents"
-category: "Banking & Financial Services"
+category: "Financial Compliance"
 volume: "Medium"
 retention: "5-10 years post-relationship"
 slug: "kyc-identity-verification"

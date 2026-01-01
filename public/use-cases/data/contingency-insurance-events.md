@@ -1,6 +1,6 @@
 ---
 title: "Contingency insurance (event cancellation, non-appearance)"
-category: "Insurance & Risk Management"
+category: "Specialty Insurance"
 volume: "Small"
 retention: "Event + 7 years"
 slug: "contingency-insurance-events"

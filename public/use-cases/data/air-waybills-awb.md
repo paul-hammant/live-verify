@@ -1,6 +1,6 @@
 ---
 title: "Air waybills (AWB) - IATA standard"
-category: "Logistics & Transportation"
+category: "Shipping & Freight"
 volume: "Large"
 retention: "7-10 years (proof of shipment)"
 slug: "air-waybills-awb"

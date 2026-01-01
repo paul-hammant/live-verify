@@ -1,6 +1,6 @@
 ---
 title: "Dangerous goods declarations (IMO/ICAO short-form)"
-category: "Logistics & Transportation"
+category: "Customs & Trade Compliance"
 volume: "Small"
 retention: "Shipment + 5-10 years"
 slug: "dangerous-goods-declarations-imo-icao"

@@ -1,6 +1,6 @@
 ---
 title: "Investment advisor certifications (RIA, IAR)"
-category: "Banking & Financial Services"
+category: "Investment & Fintech"
 volume: "Very Small"
 retention: "Permanent (may show REVOKED status)"
 slug: "investment-advisor-certifications"

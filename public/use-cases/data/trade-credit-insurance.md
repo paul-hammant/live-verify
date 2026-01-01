@@ -1,6 +1,6 @@
 ---
 title: "Trade credit insurance policies"
-category: "Insurance & Risk Management"
+category: "Specialty Insurance"
 volume: "Small"
 retention: "Policy term + 7-10 years"
 slug: "trade-credit-insurance"

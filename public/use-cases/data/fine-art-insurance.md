@@ -1,6 +1,6 @@
 ---
 title: "Fine art insurance (all-risk, nail-to-nail exhibition)"
-category: "Insurance & Risk Management"
+category: "Specialty Insurance"
 volume: "Small"
 retention: "Policy term / exhibition + 10 years"
 slug: "fine-art-insurance"

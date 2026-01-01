@@ -1,6 +1,6 @@
 ---
 title: "Certificates of origin and preferential tariff documents"
-category: "Logistics & Transportation"
+category: "Customs & Trade Compliance"
 volume: "Medium"
 retention: "Shipment + 7-10 years"
 slug: "certificates-of-origin"

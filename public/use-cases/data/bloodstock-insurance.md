@@ -1,6 +1,6 @@
 ---
 title: "Bloodstock insurance (racehorses, breeding stock)"
-category: "Insurance & Risk Management"
+category: "Specialty Insurance"
 volume: "Very Small"
 retention: "Horse lifetime (15-25 years)"
 slug: "bloodstock-insurance"

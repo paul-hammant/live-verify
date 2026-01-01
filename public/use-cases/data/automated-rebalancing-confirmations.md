@@ -1,6 +1,6 @@
 ---
 title: "Automated rebalancing confirmations"
-category: "Banking & Financial Services"
+category: "Investment & Fintech"
 volume: "Small"
 retention: "7-10 years (audit trail)"
 slug: "automated-rebalancing-confirmations"

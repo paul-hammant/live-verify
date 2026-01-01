@@ -1,6 +1,6 @@
 ---
 title: "Bills of Lading"
-category: "Logistics & Transportation"
+category: "Shipping & Freight"
 volume: "Medium"
 retention: "Shipment completion plus 7-10 years (disputes, customs audits)"
 slug: "bills-of-lading"

@@ -1,6 +1,6 @@
 ---
 title: "War risk and piracy insurance certificates"
-category: "Logistics & Transportation"
+category: "Specialty Insurance"
 volume: "Small"
 retention: "Voyage + 7 years"
 slug: "war-risk-piracy-insurance"

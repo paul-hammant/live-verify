@@ -1,6 +1,6 @@
 ---
 title: "Open source license compliance notices"
-category: "Technology & Software"
+category: "Product Certifications & Compliance"
 volume: "Small"
 retention: "Release lifecycle + 3-7 years"
 slug: "open-source-license-notices"

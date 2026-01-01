@@ -1,6 +1,6 @@
 ---
 title: "Rental Agreements and Documentation"
-category: "Travel & Hospitality / Equipment & Services"
+category: "Travel & Hospitality"
 volume: "Large"
 retention: "Rental period plus 3-10 years (liability, disputes, tax)"
 slug: "rental-agreements"

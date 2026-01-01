@@ -1,6 +1,6 @@
 ---
 title: "Chargeback documentation and dispute records"
-category: "Banking & Financial Services"
+category: "Banking & Payments"
 volume: "Small"
 retention: "3-7 years (dispute resolution)"
 slug: "chargeback-documentation"

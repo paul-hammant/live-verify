@@ -1,6 +1,6 @@
 ---
 title: "National / state / province ID cards"
-category: "Identity & Access Verification"
+category: "Government & Civic Documents"
 volume: "Large (daily across hospitality, events, retail, transport)"
 retention: "Short-term (<48h) for front-line checks, long-term audit logs retained by institutions"
 slug: "national-state-province-id-cards"

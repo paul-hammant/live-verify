@@ -1,6 +1,6 @@
 ---
 title: "Quality control inspection reports"
-category: "Logistics & Transportation"
+category: "Product Certifications & Compliance"
 volume: "Small"
 retention: "5-15 years (warranty/liability)"
 slug: "quality-control-inspection-reports"

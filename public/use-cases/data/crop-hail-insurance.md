@@ -1,6 +1,6 @@
 ---
 title: "Agricultural crop-hail insurance"
-category: "Insurance & Risk Management"
+category: "Specialty Insurance"
 volume: "Small"
 retention: "Growing season + 7 years"
 slug: "crop-hail-insurance"

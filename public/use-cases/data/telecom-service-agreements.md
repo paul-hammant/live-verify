@@ -1,6 +1,6 @@
 ---
 title: "Service agreements and SLAs"
-category: "Telecommunications"
+category: "Business & Commerce"
 volume: "Medium"
 retention: "7-10 years (contract disputes)"
 slug: "telecom-service-agreements"

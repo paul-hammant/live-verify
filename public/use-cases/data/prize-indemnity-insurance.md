@@ -1,6 +1,6 @@
 ---
 title: "Prize indemnity insurance (contests, hole-in-one, sweepstakes)"
-category: "Insurance & Risk Management"
+category: "Specialty Insurance"
 volume: "Very Small"
 retention: "Contest period + 7 years"
 slug: "prize-indemnity-insurance"

@@ -1,6 +1,6 @@
 ---
 title: "Surety Bonds and Performance Guarantees"
-category: "Insurance & Risk Management"
+category: "Bonds & Sureties"
 volume: "Small"
 retention: "Bond term plus 10 years (claims, disputes)"
 slug: "surety-bonds"

@@ -1,6 +1,6 @@
 ---
 title: "Warehouse receipts and storage agreements"
-category: "Logistics & Transportation"
+category: "Warehousing & Inventory"
 volume: "Medium"
 retention: "Storage period + 7-10 years"
 slug: "warehouse-receipts-storage"

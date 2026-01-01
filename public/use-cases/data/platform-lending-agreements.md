@@ -1,6 +1,6 @@
 ---
 title: "Platform lending agreements (Amazon Lending, Shopify Capital)"
-category: "Banking & Financial Services"
+category: "Investment & Fintech"
 volume: "Small"
 retention: "Loan term + 7-10 years"
 slug: "platform-lending-agreements"

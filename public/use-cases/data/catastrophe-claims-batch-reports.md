@@ -1,6 +1,6 @@
 ---
 title: "Catastrophe claims batch reports"
-category: "Insurance & Risk Management"
+category: "Insurance Claims & Operations"
 volume: "Small"
 retention: "CAT event + 10 years"
 slug: "catastrophe-claims-batch-reports"

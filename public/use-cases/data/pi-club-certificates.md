@@ -1,6 +1,6 @@
 ---
 title: "Protection & Indemnity (P&I) club certificates"
-category: "Logistics & Transportation"
+category: "Specialty Insurance"
 volume: "Small"
 retention: "Policy term + 20 years (claims tail)"
 slug: "pi-club-certificates"

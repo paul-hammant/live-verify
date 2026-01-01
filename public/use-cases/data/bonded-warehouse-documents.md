@@ -1,6 +1,6 @@
 ---
 title: "Bonded warehouse entry and exit documents"
-category: "Logistics & Transportation"
+category: "Customs & Trade Compliance"
 volume: "Medium"
 retention: "7-10 years (customs compliance)"
 slug: "bonded-warehouse-documents"

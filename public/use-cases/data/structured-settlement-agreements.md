@@ -1,6 +1,6 @@
 ---
 title: "Structured settlement agreements and annuity contracts"
-category: "Insurance & Risk Management"
+category: "Insurance Claims & Operations"
 volume: "Very Small"
 retention: "Claimant lifetime (50+ years)"
 slug: "structured-settlement-agreements"

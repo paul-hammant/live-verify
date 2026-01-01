@@ -1,6 +1,6 @@
 ---
 title: "Auto transport damage inspection reports"
-category: "Logistics & Transportation"
+category: "Vehicle & Fleet"
 volume: "Medium"
 retention: "Transport + 7 years"
 slug: "auto-transport-damage-reports"

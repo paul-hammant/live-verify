@@ -1,6 +1,6 @@
 ---
 title: "Weight tickets and scale calibration"
-category: "Logistics & Transportation"
+category: "Warehousing & Inventory"
 volume: "Medium"
 retention: "Shipment + 3-7 years"
 slug: "weight-tickets-scale-calibration"

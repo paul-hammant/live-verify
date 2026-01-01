@@ -1,6 +1,6 @@
 ---
 title: "Inventory reports and stock certificates"
-category: "Logistics & Transportation"
+category: "Warehousing & Inventory"
 volume: "Medium"
 retention: "Reporting period + 7 years"
 slug: "inventory-reports-stock-certificates"

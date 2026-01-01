@@ -1,6 +1,6 @@
 ---
 title: "Trade finance: Certificates of origin"
-category: "Banking & Financial Services"
+category: "Trade Finance"
 volume: "Small"
 retention: "7-10 years (customs/trade disputes)"
 slug: "trade-finance-certificates-of-origin"

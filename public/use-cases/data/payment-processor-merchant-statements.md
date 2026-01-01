@@ -1,6 +1,6 @@
 ---
 title: "Payment processor merchant statements (Stripe, PayPal, Square)"
-category: "Banking & Financial Services"
+category: "Banking & Payments"
 volume: "Medium"
 retention: "7-10 years (tax/disputes)"
 slug: "payment-processor-merchant-statements"

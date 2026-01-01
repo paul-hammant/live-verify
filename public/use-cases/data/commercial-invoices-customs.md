@@ -1,6 +1,6 @@
 ---
 title: "Commercial invoices for customs clearance"
-category: "Logistics & Transportation"
+category: "Customs & Trade Compliance"
 volume: "Large"
 retention: "7-10 years (customs audit)"
 slug: "commercial-invoices-customs"

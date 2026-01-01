@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use Case - OCR Verification</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: white;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .back-link {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            margin-bottom: 20px;
+            font-weight: 500;
+            opacity: 0.9;
+        }
+        .back-link:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+        .content-card {
+            background: white;
+            color: #333;
+            border-radius: 12px;
+            padding: 32px 40px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        .content-card h1 {
+            color: #4a5568;
+            margin-bottom: 8px;
+            font-size: 1.8em;
+        }
+        .meta {
+            color: #718096;
+            font-size: 0.9em;
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .meta span {
+            margin-right: 20px;
+        }
+        .content-card h2 {
+            color: #553c9a;
+            margin-top: 28px;
+            margin-bottom: 12px;
+            font-size: 1.4em;
+        }
+        .content-card h3 {
+            color: #6b46c1;
+            margin-top: 20px;
+            margin-bottom: 8px;
+            font-size: 1.15em;
+        }
+        .content-card p {
+            line-height: 1.7;
+            margin-bottom: 12px;
+        }
+        .content-card ul, .content-card ol {
+            margin-left: 24px;
+            margin-bottom: 12px;
+        }
+        .content-card li {
+            line-height: 1.6;
+            margin-bottom: 4px;
+        }
+        .content-card strong {
+            color: #4a5568;
+        }
+        .content-card code {
+            background: #f1f5f9;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        .content-card pre {
+            background: #1a202c;
+            color: #e2e8f0;
+            padding: 16px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 16px 0;
+        }
+        .content-card pre code {
+            background: none;
+            padding: 0;
+        }
+        .loading {
+            text-align: center;
+            padding: 60px;
+            color: #718096;
+        }
+        .error {
+            background: #fed7d7;
+            color: #c53030;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        /* Styles for inline document examples */
+        .example-document {
+            border: 2px solid #333;
+            padding: 20px;
+            margin: 20px 0;
+            background: #fafafa;
+            font-family: 'Courier New', monospace;
+        }
+        .example-document .header {
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 12px;
+        }
+        .example-document .verify-url {
+            margin-top: 16px;
+            padding-top: 12px;
+            border-top: 1px dashed #999;
+            font-size: 0.85em;
+        }
+        .certification-box {
+            border: 3px solid black;
+            padding: 24px;
+            margin: 20px 0;
+            background: white;
+        }
+        .registration-marks {
+            /* Visual indicator for registration marks */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← Back to Use Cases</a>
+
+        <div class="content-card">
+            <div id="content" class="loading">Loading...</div>
+        </div>
+    </div>
+
+    <script>
+        // Get the document slug from URL
+        const params = new URLSearchParams(window.location.search);
+        const slug = params.get('doc');
+
+        if (!slug) {
+            document.getElementById('content').innerHTML =
+                '<div class="error">No document specified. Use ?doc=filename</div>';
+        } else {
+            // Fetch the markdown file
+            fetch(`data/${slug}.md`)
+                .then(response => {
+                    if (!response.ok) throw new Error('Document not found');
+                    return response.text();
+                })
+                .then(markdown => {
+                    // Parse YAML frontmatter
+                    let content = markdown;
+                    let meta = {};
+
+                    if (markdown.startsWith('---')) {
+                        const endIndex = markdown.indexOf('---', 3);
+                        if (endIndex !== -1) {
+                            const frontmatter = markdown.substring(3, endIndex).trim();
+                            content = markdown.substring(endIndex + 3).trim();
+
+                            // Simple YAML parsing for frontmatter
+                            frontmatter.split('\n').forEach(line => {
+                                const colonIndex = line.indexOf(':');
+                                if (colonIndex !== -1) {
+                                    const key = line.substring(0, colonIndex).trim();
+                                    let value = line.substring(colonIndex + 1).trim();
+                                    // Remove quotes
+                                    if ((value.startsWith('"') && value.endsWith('"')) ||
+                                        (value.startsWith("'") && value.endsWith("'"))) {
+                                        value = value.slice(1, -1);
+                                    }
+                                    meta[key] = value;
+                                }
+                            });
+                        }
+                    }
+
+                    // Update page title
+                    if (meta.title) {
+                        document.title = meta.title + ' - OCR Verification';
+                    }
+
+                    // Build HTML
+                    let html = '';
+                    if (meta.title) {
+                        html += `<h1>${meta.title}</h1>`;
+                    }
+                    if (meta.category || meta.volume) {
+                        html += '<div class="meta">';
+                        if (meta.category) html += `<span><strong>Category:</strong> ${meta.category}</span>`;
+                        if (meta.volume) html += `<span><strong>Volume:</strong> ${meta.volume}</span>`;
+                        html += '</div>';
+                    }
+
+                    // Render markdown (marked.js handles inline HTML automatically)
+                    html += marked.parse(content);
+
+                    document.getElementById('content').innerHTML = html;
+                })
+                .catch(error => {
+                    document.getElementById('content').innerHTML =
+                        `<div class="error">${error.message}</div>`;
+                });
+        }
+    </script>
+</body>
+</html>

@@ -1,10 +1,16 @@
 # Verification Modes: OCR-to-Hash Applications
 
-The OCR-to-hash verification concept supports multiple verification modes beyond camera-based document scanning. This document describes the different ways content can be verified.
+The OCR-to-hash verification concept supports multiple verification modes. This document describes proof-of-concept implementations and the vision for native platform integration.
 
-## Mode 1: Camera-Based Document Verification (Current Implementation)
+**The end goal:** These POCs demonstrate capabilities that would eventually be built into native platforms:
+- **iOS/Android camera apps** — Point phone at certificate/permit → native verification without third-party app
+- **Chrome/Firefox/Safari** — Select text on webpage → browser-native verification via context menu
+
+## Mode 1: Camera-Based Document Verification (POC Implemented)
 
 **Physical documents with printed verification lines**
+
+*Future: iOS/Android camera apps get this built-in natively.*
 
 ### How It Works
 
@@ -34,9 +40,11 @@ The OCR-to-hash verification concept supports multiple verification modes beyond
 
 ---
 
-## Mode 2: Web-Based Text Selection Verification (Proposed)
+## Mode 2: Web-Based Text Selection Verification (POC Implemented)
 
 **User-selected text from web pages with external verification display**
+
+*Future: Chrome/Firefox/Safari get this built-in via native context menu.*
 
 ### How It Works
 
@@ -546,7 +554,7 @@ User can navigate through each claim
 | **Best For** | Credentials | Quotes | Screenshots | Live events | Audit | General docs |
 | **Issuer Load** | Simple endpoint | Simple endpoint | Simple endpoint | Streaming | Batch ingest | Multiple endpoints |
 | **Device** | Camera phone | Browser | Browser | Camera+display | Network | Any browser |
-| **Status** | ✅ Implemented | 🔄 Proposed | 📋 Future | 📋 Future | 📋 Future | 🚀 Vision |
+| **Status** | ✅ POC | ✅ POC | 📋 Future | 📋 Future | 📋 Future | 🚀 Vision |
 
 ---
 
@@ -605,22 +613,16 @@ All modes share:
 
 ## Implementation Roadmap
 
-### Phase 1: Foundation (Current) ✅
-- **Mode 1:** Camera-based document verification
-- **Status:** Complete and deployed
+### Phase 1: Foundation ✅
+- **Mode 1:** Camera-based document verification (POC complete)
+- **Mode 2:** Web text selection verification (POC complete)
+- Both demonstrate capabilities for future native platform integration
 
-### Phase 2: Browser-Based Verification 🔄
-- **Mode 2:** Web text selection verification
-  - Reuses normalization logic (no new algorithms)
-  - Major use case: quote/claim verification
-  - Minimal infrastructure (simple bookmarklet)
-  - Browser security model (external UI)
-  - **Priority:** High (most impactful near-term)
-
+### Phase 2: Image-Based Verification 📋
 - **Mode 2b:** In-photo text selection
-  - Similar to Mode 2, but for images
-  - Use case: screenshot verification
-  - Lower priority than Mode 2 (less common)
+  - Similar to Mode 2, but for images/screenshots
+  - Use case: verify screenshot of social media post, receipt image
+  - Lower priority (Mode 2 covers most use cases)
 
 ### Phase 3: Advanced Verification 📋
 - **Mode 3:** Real-time document streaming
@@ -641,11 +643,3 @@ All modes share:
   - Long-term vision (5+ years)
   - Key innovation: browser chrome UI model prevents tampering
 
-### Next Step: Mode 2 Implementation
-
-Web Selection (Mode 2) is the recommended next development target:
-1. **Quick win:** 80% of code already exists (normalization, hashing)
-2. **High impact:** Solves quote/content verification problem
-3. **Low barrier:** Works without issuer adoption (verification can be optionally added)
-4. **Browser-native:** Uses DOM Selection API + simple fetch (no new libraries beyond what Mode 1 uses)
-5. **Mobile-friendly:** Bookmarklet works on all browsers including iOS/Android

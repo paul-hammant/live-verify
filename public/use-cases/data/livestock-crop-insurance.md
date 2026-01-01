@@ -1,6 +1,6 @@
 ---
 title: "Livestock/crop insurance policies"
-category: "Insurance & Risk Management"
+category: "Specialty Insurance"
 volume: "Small"
 retention: "Policy term + 7-10 years"
 slug: "livestock-crop-insurance"

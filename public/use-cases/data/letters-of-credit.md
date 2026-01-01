@@ -1,6 +1,6 @@
 ---
 title: "Letters of Credit"
-category: "Banking & Financial Services"
+category: "Trade Finance"
 volume: "Small (but high-value transactions)"
 retention: "7-10 years (transaction lifecycle plus disputes)"
 slug: "letters-of-credit"

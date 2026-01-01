@@ -1,6 +1,6 @@
 ---
 title: "Account aggregation authorization certificates"
-category: "Banking & Financial Services"
+category: "Banking & Payments"
 volume: "Medium"
 retention: "1-3 years (service duration)"
 slug: "account-aggregation-authorization"

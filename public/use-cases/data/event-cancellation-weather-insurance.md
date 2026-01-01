@@ -1,6 +1,6 @@
 ---
 title: "Event cancellation and weather insurance"
-category: "Insurance & Risk Management"
+category: "Specialty Insurance"
 volume: "Very Small"
 retention: "Event date + 7 years"
 slug: "event-cancellation-weather-insurance"

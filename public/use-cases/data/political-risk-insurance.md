@@ -1,6 +1,6 @@
 ---
 title: "Political risk insurance policies"
-category: "Insurance & Risk Management"
+category: "Specialty Insurance"
 volume: "Very Small"
 retention: "Policy term + 20 years"
 slug: "political-risk-insurance"

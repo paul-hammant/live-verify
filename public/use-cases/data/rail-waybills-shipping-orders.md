@@ -1,6 +1,6 @@
 ---
 title: "Rail waybills and shipping orders"
-category: "Logistics & Transportation"
+category: "Shipping & Freight"
 volume: "Medium-Large"
 retention: "7-10 years (proof of shipment)"
 slug: "rail-waybills-shipping-orders"

@@ -1,6 +1,6 @@
 ---
 title: "Salvage and subrogation documentation"
-category: "Insurance & Risk Management"
+category: "Insurance Claims & Operations"
 volume: "Small"
 retention: "Subrogation case + 7-10 years"
 slug: "salvage-subrogation-documentation"

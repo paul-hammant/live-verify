@@ -1,6 +1,6 @@
 ---
 title: "Aggregate deductible and retrospective rating documentation"
-category: "Insurance & Risk Management"
+category: "Insurance Claims & Operations"
 volume: "Small"
 retention: "Policy term + 10 years"
 slug: "aggregate-deductible-retrospective"

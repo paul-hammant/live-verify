@@ -1,6 +1,6 @@
 ---
 title: "Container shipping instructions and booking confirmations"
-category: "Logistics & Transportation"
+category: "Shipping & Freight"
 volume: "Large"
 retention: "Shipment + 3-7 years"
 slug: "container-shipping-instructions"

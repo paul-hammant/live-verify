@@ -1,6 +1,6 @@
 ---
 title: "SBOM attestation pages"
-category: "Technology & Software"
+category: "Product Certifications & Compliance"
 volume: "Small"
 retention: "Release lifecycle + 3-7 years"
 slug: "sbom-attestation-pages"

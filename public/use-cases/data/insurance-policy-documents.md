@@ -1,6 +1,6 @@
 ---
 title: "Insurance Policy Documents"
-category: "Insurance & Risk Management"
+category: "Insurance Claims & Operations"
 volume: "Medium-Small"
 retention: "Policy term plus 7-10 years (claims runoff period)"
 slug: "insurance-policy-documents"

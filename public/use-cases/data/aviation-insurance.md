@@ -1,6 +1,6 @@
 ---
 title: "Aviation insurance policies and certificates"
-category: "Insurance & Risk Management"
+category: "Specialty Insurance"
 volume: "Small"
 retention: "Policy term + 10-20 years"
 slug: "aviation-insurance"

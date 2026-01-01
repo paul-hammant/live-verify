@@ -1,6 +1,6 @@
 ---
 title: "Warranty documents and service agreements"
-category: "Retail & Consumer Protection"
+category: "Business & Commerce"
 volume: "Medium"
 retention: "Product lifetime + 3-10 years"
 slug: "warranty-documents"

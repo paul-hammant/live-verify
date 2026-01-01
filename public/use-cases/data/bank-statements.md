@@ -1,6 +1,6 @@
 ---
 title: "Bank Statements"
-category: "Finance"
+category: "Banking & Payments"
 volume: "Medium"
 retention: "7-10 years (loan term + disputes)"
 slug: "bank-statements"

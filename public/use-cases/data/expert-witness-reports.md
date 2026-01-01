@@ -1,6 +1,6 @@
 ---
 title: "Expert Witness Reports"
-category: "Insurance & Risk Management / Legal"
+category: "Insurance Claims & Operations"
 volume: "Small"
 retention: "Litigation lifecycle plus 10-20 years (appeals, malpractice)"
 slug: "expert-witness-reports"

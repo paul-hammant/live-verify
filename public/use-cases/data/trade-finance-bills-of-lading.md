@@ -1,6 +1,6 @@
 ---
 title: "Trade finance: Bills of lading"
-category: "Banking & Financial Services"
+category: "Trade Finance"
 volume: "Small"
 retention: "7-10 years (shipment + disputes)"
 slug: "trade-finance-bills-of-lading"

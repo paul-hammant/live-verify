@@ -1,6 +1,6 @@
 ---
 title: "Vehicle Inspection Reports"
-category: "Logistics & Transportation"
+category: "Vehicle & Fleet"
 volume: "Medium"
 retention: "5-10 years (safety compliance, registration requirements)"
 slug: "vehicle-inspection-reports"

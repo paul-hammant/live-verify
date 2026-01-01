@@ -1,6 +1,6 @@
 ---
 title: "Crowdfunding investment confirmations (Kickstarter, Indiegogo)"
-category: "Banking & Financial Services"
+category: "Investment & Fintech"
 volume: "Small"
 retention: "3-7 years (fulfillment disputes)"
 slug: "crowdfunding-investment-confirmations"

@@ -1,6 +1,6 @@
 ---
 title: "Ocean bills of lading (B/L) - negotiable/non-negotiable"
-category: "Logistics & Transportation"
+category: "Shipping & Freight"
 volume: "Large"
 retention: "7-10 years (legal title)"
 slug: "ocean-bills-of-lading"

@@ -1,6 +1,6 @@
 ---
 title: "Mortgage indemnity insurance (lender's mortgage insurance)"
-category: "Insurance & Risk Management"
+category: "Specialty Insurance"
 volume: "Small"
 retention: "Mortgage term (15-30 years)"
 slug: "mortgage-indemnity-insurance"

@@ -1,6 +1,6 @@
 ---
 title: "Satellite insurance (launch, in-orbit, third-party liability)"
-category: "Insurance & Risk Management"
+category: "Specialty Insurance"
 volume: "Tiny"
 retention: "Satellite lifetime (15-20 years)"
 slug: "satellite-insurance"

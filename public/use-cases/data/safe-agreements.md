@@ -1,6 +1,6 @@
 ---
 title: "SAFE agreements (Simple Agreement for Future Equity)"
-category: "Banking & Financial Services"
+category: "Investment & Fintech"
 volume: "Very Small"
 retention: "Permanent (convertible security)"
 slug: "safe-agreements"

@@ -1,6 +1,6 @@
 ---
 title: "KYC proof of address documents (utility/phone/credit card bills)"
-category: "Banking & Financial Services"
+category: "Financial Compliance"
 volume: "Large"
 retention: "5-10 years post-relationship"
 slug: "kyc-proof-of-address"

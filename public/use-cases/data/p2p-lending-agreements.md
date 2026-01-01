@@ -1,6 +1,6 @@
 ---
 title: "Peer-to-peer lending agreements (LendingClub, Prosper)"
-category: "Banking & Financial Services"
+category: "Investment & Fintech"
 volume: "Small"
 retention: "Loan term + 7-10 years"
 slug: "p2p-lending-agreements"

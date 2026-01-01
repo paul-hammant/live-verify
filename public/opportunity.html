@@ -279,7 +279,7 @@
 	    <script>
 	        (async () => {
 	            try {
-	                const response = await fetch('use-cases/data/categories-summary.json');
+	                const response = await fetch('use-cases/data/index.json');
                 const summary = await response.json();
                 document.querySelectorAll('[data-usecase-count]').forEach((el) => {
                     el.textContent = summary.totalUseCases;

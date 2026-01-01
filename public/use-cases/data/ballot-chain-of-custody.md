@@ -1,6 +1,6 @@
 ---
 title: "Ballot chain-of-custody transfer forms"
-category: "Immigration & Visa Documents"
+category: "Government & Civic Documents"
 volume: "Small"
 retention: "Election cycle + 2-4 years"
 slug: "ballot-chain-of-custody"

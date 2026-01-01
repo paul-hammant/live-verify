@@ -1,6 +1,6 @@
 ---
 title: "Raffle tickets and contest entries"
-category: "Retail & Consumer Protection"
+category: "Business & Commerce"
 volume: "Medium"
 retention: "3-7 years (legal/tax compliance)"
 slug: "raffle-tickets-contest-entries"

@@ -1,6 +1,6 @@
 ---
 title: "Terrorism insurance and TRIPRA coverage"
-category: "Insurance & Risk Management"
+category: "Specialty Insurance"
 volume: "Small"
 retention: "Policy term + 10 years"
 slug: "terrorism-insurance-tripra"

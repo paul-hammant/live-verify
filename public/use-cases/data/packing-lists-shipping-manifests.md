@@ -1,6 +1,6 @@
 ---
 title: "Packing lists and shipping manifests"
-category: "Logistics & Transportation"
+category: "Shipping & Freight"
 volume: "Large"
 retention: "7-10 years (customs/legal)"
 slug: "packing-lists-shipping-manifests"

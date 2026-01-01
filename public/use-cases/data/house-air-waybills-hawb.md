@@ -1,6 +1,6 @@
 ---
 title: "House air waybills (HAWB) - freight forwarder issued"
-category: "Logistics & Transportation"
+category: "Shipping & Freight"
 volume: "Large"
 retention: "7-10 years (freight forwarder liability)"
 slug: "house-air-waybills-hawb"

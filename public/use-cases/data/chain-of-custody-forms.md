@@ -1,6 +1,6 @@
 ---
 title: "Chain-of-custody forms"
-category: "Insurance & Risk Management"
+category: "Insurance Claims & Operations"
 volume: "Medium"
 retention: "Claim term + 10 years"
 slug: "chain-of-custody-forms"

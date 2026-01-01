@@ -1,6 +1,6 @@
 ---
 title: "Freight forwarder liability insurance certificates"
-category: "Logistics & Transportation"
+category: "Specialty Insurance"
 volume: "Medium"
 retention: "Shipment + 7-10 years"
 slug: "freight-forwarder-insurance"

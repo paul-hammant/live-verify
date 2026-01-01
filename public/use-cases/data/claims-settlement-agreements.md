@@ -1,6 +1,6 @@
 ---
 title: "Claims settlement agreements and releases"
-category: "Insurance & Risk Management"
+category: "Insurance Claims & Operations"
 volume: "Small"
 retention: "Settlement + 10-20 years"
 slug: "claims-settlement-agreements"

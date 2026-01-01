@@ -1,6 +1,6 @@
 ---
 title: "Claims diary and reserve change documentation"
-category: "Insurance & Risk Management"
+category: "Insurance Claims & Operations"
 volume: "Medium"
 retention: "Claim lifetime + 7 years"
 slug: "claims-diary-reserve-changes"

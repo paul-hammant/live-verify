@@ -1,6 +1,6 @@
 ---
 title: "Broker-dealer licenses and registrations"
-category: "Banking & Financial Services"
+category: "Investment & Fintech"
 volume: "Very Small"
 retention: "Permanent (may show REVOKED status)"
 slug: "broker-dealer-licenses"

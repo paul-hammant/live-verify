@@ -1,6 +1,6 @@
 ---
 title: "Vehicle registrations and inspection reports"
-category: "Logistics & Transportation"
+category: "Vehicle & Fleet"
 volume: "Large"
 retention: "Registration cycle + 3-7 years"
 slug: "vehicle-registrations"

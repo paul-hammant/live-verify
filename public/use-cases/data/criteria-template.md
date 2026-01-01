@@ -8,13 +8,19 @@ A document type is a good candidate for OCR-to-hash verification when:
 
 1. **Paper or printable origin** - The document exists as a physical artifact or is routinely printed from digital systems. Pure-digital documents with native cryptographic verification (blockchain records, digitally-signed PDFs with intact signatures) don't need this bridge.
 
-2. **Authoritative issuer** - There's a clear issuing authority who can operate a verification endpoint bound to their domain.
+2. **Goldilocks claim size** - The claim is short-to-medium human-readable text that can be captured by a camera, OCR'd, normalized, and hashed. This is NOT a "hash a whole PDF" system—proof-of-existence/timestamping is valid but requires different tooling (public logs, blockchains).
 
-3. **Verification need** - Third parties need to confirm authenticity, or the document holder (second party) wants to prove their document is genuine.
+3. **Sufficient entropy** - If the claim text is predictable or low-entropy, attackers can guess-and-hash to find matches. Low-entropy claims require an issuer-generated random line printed on the document.
 
-4. **Fraud risk** - Forgery, alteration, or misrepresentation of the document causes real harm.
+4. **Authoritative issuer** - There's a clear issuing authority who can operate a verification endpoint bound to their domain.
 
-5. **Retention period** - The document has meaningful shelf life (days to permanent).
+5. **Non-consuming verification** - Many unconnected parties can check the same claim at different times. Verification doesn't "use up" or transfer value—it's read-only attestation. (Value-bearing instruments use statuses like REDEEMED or USED.)
+
+6. **Revocability value** - The document's validity can legitimately change over time. Licenses get suspended, IDs get reported stolen, warranties expire, recalls evolve. Live verification shines when status matters.
+
+7. **Fraud risk** - Forgery, alteration, or misrepresentation of the document causes real harm.
+
+8. **Retention period** - The document has meaningful shelf life (days to permanent).
 
 ## The Parties
 
@@ -58,6 +64,16 @@ Anyone who receives the document after the second party, or who receives hashes 
 - Professional licensing boards share credential hashes
 
 Systematic recipients often receive hashes in merkle trees or batch submissions, enabling efficient verification of large document populations.  Maybe a blockchain or maybe something that merkle tree-like but without distributed byzantine concensus features.
+
+## Trust Model
+
+**"Verified" means issuer attestation, not universal truth.** The verification confirms what that issuer stands behind *now*—issuers can be wrong, out-of-date, or compromised.
+
+- The issuer chooses a domain name (their web identity). The `verify:` line binds the claim to that domain.
+- The verifier decides whether that domain is an authority for the kind of claim being checked. This decision is often encoded as organizational policy or allowlists.
+- The UI should always show the full domain clearly so humans can spot lookalikes or typosquats.
+
+**Privacy by design:** OCR, normalization, and hashing happen on the verifier's device. The network call is a minimal GET for hash lookup—no "upload scans to a portal" pattern. Verification responses should use short status codes rather than person-specific plaintext.
 
 ## Template Structure
 
@@ -142,7 +158,7 @@ For documents routinely exceeding a few pages (contracts, reports, policies), no
 For documents containing sensitive personal information where hash enumeration attacks are a concern (identity documents, medical records, immigration documents), note that issuers should add random salt lines to raise entropy.
 
 ### OCR Challenges
-For documents with decorative typography, handwriting, or complex layouts (art certificates, historical documents), note any special considerations for OCR-optimized design.
+For documents with decorative typography, handwriting, or complex layouts (art certificates, historical documents), note any special considerations for OCR-optimized design. Screens can introduce moiré artifacts; platform-native camera stacks typically outperform browser-based OCR demos. For ornate certificates, consider publishing an OCR-friendly representation (short-form claim on a letter, wallet card, or transcript extract).
 
 ### Seals, Stamps, and Visual Elements
 Physical security features (embossed seals, ink stamps, holograms, photos) are NOT part of the OCR verification. These remain as anti-forgery features on the physical document. Only text elements appear in the verification line.
@@ -157,6 +173,9 @@ Where issuers routinely submit hashes to regulators or oversight bodies (by stat
 - For what purpose (audit, compliance, dispute resolution)
 - Any third-party witnesses or attestation requirements
 - When audits apply, what is the nature of those?
+
+### Infrastructure Requirements
+Hash lookups can be served from static web hosting—no login required to answer "does this hash exist?". The commercial value is typically in integrations, governance, uptime, and tooling around publication/revocation, not the HTTP pattern itself.
 
 ## Volume Guidelines
 
@@ -389,3 +408,13 @@ Organize Third-Party stakeholders based on **document domain**:
 - Graduate schools / universities
 - Licensing boards
 - Credential verification services
+
+## Common Objections
+
+**"Why not QR codes?"** — QR is great when machine reading is primary. OCR-to-hash is for documents that must stay human-readable first, without adding visual clutter or requiring proprietary apps.
+
+**"Isn't this just a hash in public?"** — Yes: a one-way fingerprint. Safe when the input has enough entropy or includes an issuer-generated random line.
+
+**"Doesn't this prove truth?"** — No. It proves issuer attestation at a domain. The verifier still decides whether that domain is an authority for the claim.
+
+**"Couldn't someone just copy the text?"** — Copying text only helps if the issuer still attests to that exact normalized hash. Revocation and random-line hardening are the defenses against replay/guessing attacks. Note: the hash is not personal data, but the plaintext claim may be. In jurisdictions with GDPR-like legislation, anyone storing copied plaintext containing PII must meet those requirements—the hash-based approach means verifiers can check and discard without retaining PII. Caveat: not all jurisdictions have such legislation, and some entities (notably governments) won't honor DSAR or right-to-be-forgotten requests regardless of the requester's home jurisdiction.

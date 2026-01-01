@@ -1,6 +1,6 @@
 ---
 title: "Remittance transfer confirmations (Western Union, MoneyGram)"
-category: "Banking & Financial Services"
+category: "Banking & Payments"
 volume: "Medium"
 retention: "5-7 years (compliance/disputes)"
 slug: "remittance-transfer-confirmations"

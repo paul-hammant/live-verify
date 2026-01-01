@@ -1,6 +1,6 @@
 ---
 title: "Container packing lists and weight certificates (VGM)"
-category: "Logistics & Transportation"
+category: "Shipping & Freight"
 volume: "Large"
 retention: "Shipment + 7 years"
 slug: "container-packing-lists-vgm"

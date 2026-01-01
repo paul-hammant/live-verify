@@ -1,6 +1,6 @@
 ---
 title: "Advance Healthcare Directives"
-category: "Healthcare / Notary Services"
+category: "Notary Services"
 volume: "Small"
 retention: "Permanent (end-of-life care)"
 slug: "advance-healthcare-directives"

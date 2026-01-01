@@ -1,6 +1,6 @@
 ---
 title: "Marine cargo insurance certificates"
-category: "Insurance & Risk Management"
+category: "Specialty Insurance"
 volume: "Small"
 retention: "Transit period + 7-10 years"
 slug: "marine-cargo-insurance"

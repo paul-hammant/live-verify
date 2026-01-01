@@ -1,6 +1,6 @@
 ---
 title: "P2P payment transaction receipts (Venmo, Zelle, Cash App)"
-category: "Banking & Financial Services"
+category: "Banking & Payments"
 volume: "Medium-Large"
 retention: "3-7 years (tax/disputes)"
 slug: "p2p-payment-receipts"

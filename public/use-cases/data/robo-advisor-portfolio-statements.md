@@ -1,6 +1,6 @@
 ---
 title: "Robo-advisor portfolio statements (Betterment, Wealthfront)"
-category: "Banking & Financial Services"
+category: "Investment & Fintech"
 volume: "Small"
 retention: "7-10 years (regulatory)"
 slug: "robo-advisor-portfolio-statements"

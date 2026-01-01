@@ -1,6 +1,6 @@
 ---
 title: "Claims correspondence and EOBs"
-category: "Insurance & Risk Management"
+category: "Insurance Claims & Operations"
 volume: "Large"
 retention: "Claim term + 7-10 years"
 slug: "claims-correspondence-eobs"

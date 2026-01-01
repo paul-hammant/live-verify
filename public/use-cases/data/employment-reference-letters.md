@@ -1,6 +1,6 @@
 ---
 title: "Employment Reference Letters"
-category: "Employment & HR"
+category: "Professional & Educational Qualifications"
 volume: "Medium"
 retention: "1-7 years (hiring cycle plus potential disputes)"
 slug: "employment-reference-letters"

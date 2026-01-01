@@ -1,6 +1,6 @@
 ---
 title: "Poll worker appointment and training completion"
-category: "Immigration & Visa Documents"
+category: "Government & Civic Documents"
 volume: "Medium"
 retention: "Election cycle + 2-4 years"
 slug: "poll-worker-training"

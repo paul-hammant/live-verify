@@ -1,6 +1,6 @@
 ---
 title: "Sanctions compliance certificates"
-category: "Banking & Financial Services"
+category: "Financial Compliance"
 volume: "Very Small"
 retention: "7-10 years (audit trail)"
 slug: "sanctions-compliance-certificates"

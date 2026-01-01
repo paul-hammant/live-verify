@@ -14,6 +14,24 @@ For multi-page transcripts, there would be one verification per page.
 
 **Scanning Considerations:** Transcripts with dense course listings and small fonts may benefit from flatbed scanning rather than phone cameras. Degree certificates with ornate designs, seals, and signatures are typically single-page and camera-friendly.
 
+### Example Degree Certificate
+
+<div class="example-document" style="text-align: center; border: 3px solid #1a365d; padding: 30px; background: linear-gradient(to bottom, #fffff8, #f7f7f0); font-family: Georgia, serif;">
+  <div style="font-size: 0.9em; letter-spacing: 2px; color: #666; margin-bottom: 8px;">THE REGENTS OF</div>
+  <div style="font-size: 1.6em; font-weight: bold; color: #1a365d; margin-bottom: 16px;">UNIVERSITY OF CALIFORNIA, BERKELEY</div>
+  <div style="font-size: 0.95em; color: #444; margin-bottom: 20px;">On the recommendation of the Faculty of the College of Letters and Science<br>have conferred upon</div>
+  <div style="font-size: 1.4em; font-style: italic; color: #2d3748; margin-bottom: 16px;">Alexandra Marie Chen</div>
+  <div style="font-size: 0.95em; color: #444; margin-bottom: 8px;">the degree of</div>
+  <div style="font-size: 1.3em; font-weight: bold; color: #1a365d; margin-bottom: 8px;">BACHELOR OF SCIENCE</div>
+  <div style="font-size: 1em; color: #444; margin-bottom: 20px;">in Computer Science<br><em>with High Distinction</em></div>
+  <div style="font-size: 0.85em; color: #666; margin-bottom: 24px;">Given at Berkeley, California, this fifteenth day of May, 2024</div>
+  <div style="border-top: 1px dashed #999; padding-top: 16px; margin-top: 16px;">
+    <code style="font-size: 0.85em; background: #e8e8e0; padding: 4px 8px;">verify:registrar.berkeley.edu/c</code>
+  </div>
+</div>
+
+The `verify:` URL at the bottom would resolve to the university registrar's verification endpoint. When scanned, the app computes the SHA-256 hash of the normalized certificate text and checks it against `https://registrar.berkeley.edu/c/{hash}`.
+
 ## Data Visible After Verification
 
 Shows the issuer domain (the university) and the responder text (e.g., "Verified" or "Denied").

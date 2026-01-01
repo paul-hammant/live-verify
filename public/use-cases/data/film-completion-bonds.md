@@ -1,6 +1,6 @@
 ---
 title: "Film completion bonds"
-category: "Media & Publishing"
+category: "Bonds & Sureties"
 volume: "Very Small"
 retention: "Film lifecycle + 10 years"
 slug: "film-completion-bonds"

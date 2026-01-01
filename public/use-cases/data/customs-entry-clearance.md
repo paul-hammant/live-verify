@@ -1,6 +1,6 @@
 ---
 title: "Customs entry documents and clearance certificates"
-category: "Logistics & Transportation"
+category: "Customs & Trade Compliance"
 volume: "Large"
 retention: "7-10 years (customs audit)"
 slug: "customs-entry-clearance"

@@ -1,6 +1,6 @@
 ---
 title: "Jewelers block insurance (stock, transit, exhibitions)"
-category: "Insurance & Risk Management"
+category: "Specialty Insurance"
 volume: "Small"
 retention: "Policy term + 10 years"
 slug: "jewelers-block-insurance"

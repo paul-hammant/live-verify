@@ -1,6 +1,6 @@
 ---
 title: "Equity crowdfunding certificates (StartEngine, Wefunder, Republic)"
-category: "Banking & Financial Services"
+category: "Investment & Fintech"
 volume: "Very Small"
 retention: "Permanent (securities holding)"
 slug: "equity-crowdfunding-certificates"

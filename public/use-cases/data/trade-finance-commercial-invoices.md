@@ -1,6 +1,6 @@
 ---
 title: "Trade finance: Commercial invoices"
-category: "Banking & Financial Services"
+category: "Trade Finance"
 volume: "Medium"
 retention: "7-10 years (tax/customs audit)"
 slug: "trade-finance-commercial-invoices"

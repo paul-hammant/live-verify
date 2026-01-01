@@ -1,6 +1,6 @@
 ---
 title: "Delivery orders and cargo release documents"
-category: "Logistics & Transportation"
+category: "Shipping & Freight"
 volume: "Large"
 retention: "Delivery + 3-7 years"
 slug: "delivery-orders-cargo-release"

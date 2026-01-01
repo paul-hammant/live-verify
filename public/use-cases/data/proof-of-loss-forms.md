@@ -1,6 +1,6 @@
 ---
 title: "Proof of loss forms (sworn statements)"
-category: "Insurance & Risk Management"
+category: "Insurance Claims & Operations"
 volume: "Medium"
 retention: "Claim term + 7-10 years"
 slug: "proof-of-loss-forms"

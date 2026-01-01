@@ -1,6 +1,6 @@
 ---
 title: "Dangerous goods declarations for air cargo (DGR)"
-category: "Logistics & Transportation"
+category: "Customs & Trade Compliance"
 volume: "Small"
 retention: "7-30 years (safety/liability)"
 slug: "dangerous-goods-declarations-air"

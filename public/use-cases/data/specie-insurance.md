@@ -1,6 +1,6 @@
 ---
 title: "Specie insurance (fine art, jewels, precious metals in transit)"
-category: "Insurance & Risk Management"
+category: "Specialty Insurance"
 volume: "Small"
 retention: "Transit + 7-10 years"
 slug: "specie-insurance"

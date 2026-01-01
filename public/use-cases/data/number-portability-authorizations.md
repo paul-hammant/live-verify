@@ -1,6 +1,6 @@
 ---
 title: "Number portability authorizations"
-category: "Telecommunications"
+category: "Business & Commerce"
 volume: "Small"
 retention: "3-7 years (regulatory compliance)"
 slug: "number-portability-authorizations"

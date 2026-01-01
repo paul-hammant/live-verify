@@ -1,6 +1,6 @@
 ---
 title: "Intermodal equipment receipts (EIR)"
-category: "Logistics & Transportation"
+category: "Shipping & Freight"
 volume: "Large"
 retention: "Equipment return + 7 years"
 slug: "intermodal-equipment-receipts"

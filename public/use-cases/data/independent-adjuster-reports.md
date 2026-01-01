@@ -1,6 +1,6 @@
 ---
 title: "Independent adjuster field inspection reports"
-category: "Insurance & Risk Management"
+category: "Insurance Claims & Operations"
 volume: "Medium"
 retention: "Claim term + 10 years"
 slug: "independent-adjuster-reports"

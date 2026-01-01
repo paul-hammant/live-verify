@@ -1,6 +1,6 @@
 ---
 title: "BNPL merchant verification certificates"
-category: "Banking & Financial Services"
+category: "Investment & Fintech"
 volume: "Small"
 retention: "3-7 years (merchant relationship)"
 slug: "bnpl-merchant-verification"

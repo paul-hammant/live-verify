@@ -1,6 +1,6 @@
 ---
 title: "Invoice financing/factoring confirmations"
-category: "Banking & Financial Services"
+category: "Trade Finance"
 volume: "Small"
 retention: "Invoice term + 7-10 years"
 slug: "invoice-financing-factoring"

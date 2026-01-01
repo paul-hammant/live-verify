@@ -1,6 +1,6 @@
 ---
 title: "Certificates of origin (preferential/non-preferential)"
-category: "Logistics & Transportation"
+category: "Customs & Trade Compliance"
 volume: "Medium"
 retention: "7-10 years (customs audit)"
 slug: "certificates-of-origin-trade"

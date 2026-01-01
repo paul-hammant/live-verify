@@ -1,6 +1,6 @@
 ---
 title: "Insurance claims adjuster reports"
-category: "Insurance & Risk Management"
+category: "Insurance Claims & Operations"
 volume: "Small"
 retention: "Claim term + 7-10 years"
 slug: "insurance-claims-adjuster-reports"

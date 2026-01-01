@@ -1,6 +1,6 @@
 ---
 title: "Cross-border payment receipts (Wise, Remitly, Xoom)"
-category: "Banking & Financial Services"
+category: "Banking & Payments"
 volume: "Medium"
 retention: "5-7 years (compliance/disputes)"
 slug: "cross-border-payment-receipts"

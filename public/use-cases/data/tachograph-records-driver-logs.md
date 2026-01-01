@@ -1,6 +1,6 @@
 ---
 title: "Tachograph records and driver logbooks (ELD/AOBRD)"
-category: "Logistics & Transportation"
+category: "Vehicle & Fleet"
 volume: "Large"
 retention: "6 months - 3 years (DOT/FMCSA)"
 slug: "tachograph-records-driver-logs"

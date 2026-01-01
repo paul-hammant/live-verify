@@ -1,6 +1,6 @@
 ---
 title: "Total loss valuations and actual cash value (ACV) reports"
-category: "Insurance & Risk Management"
+category: "Insurance Claims & Operations"
 volume: "Medium"
 retention: "Claim term + 7 years"
 slug: "total-loss-valuations-acv"

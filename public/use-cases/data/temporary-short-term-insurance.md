@@ -1,6 +1,6 @@
 ---
 title: "Temporary and Short-Term Insurance"
-category: "Personal Lines Insurance / Emerging Insurance"
+category: "Personal Lines Insurance"
 volume: "Medium-Large (growing rapidly)"
 retention: "Coverage period plus 5-10 years (claims)"
 slug: "temporary-short-term-insurance"

@@ -1,6 +1,6 @@
 ---
 title: "Source of funds/wealth declarations"
-category: "Banking & Financial Services"
+category: "Financial Compliance"
 volume: "Small"
 retention: "5-10 years post-relationship"
 slug: "source-of-funds-declarations"

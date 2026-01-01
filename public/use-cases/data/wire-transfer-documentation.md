@@ -1,6 +1,6 @@
 ---
 title: "Wire Transfer Documentation"
-category: "Banking & Financial Services"
+category: "Banking & Payments"
 volume: "Medium-Small"
 retention: "5-10 years (audit trail, regulatory requirements)"
 slug: "wire-transfer-documentation"

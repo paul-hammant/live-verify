@@ -1,6 +1,6 @@
 ---
 title: "Neo-bank/Challenger bank account opening documents"
-category: "Banking & Financial Services"
+category: "Banking & Payments"
 volume: "Medium"
 retention: "5-10 years post-relationship"
 slug: "neobank-account-opening"

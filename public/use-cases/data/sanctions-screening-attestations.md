@@ -1,6 +1,6 @@
 ---
 title: "Sanctions/restricted party screening attestations"
-category: "Banking & Financial Services"
+category: "Financial Compliance"
 volume: "Large"
 retention: "5-7 years"
 slug: "sanctions-screening-attestations"

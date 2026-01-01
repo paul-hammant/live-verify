@@ -51,12 +51,12 @@
     function createVerifyButton() {
         verifyButton = document.createElement('button');
         verifyButton.id = 'tsv-verify-btn';
-        verifyButton.innerHTML = '&#x2713; Verify';
+        verifyButton.innerHTML = '&#x1F50D; Verify?';
         verifyButton.style.cssText = `
             position: fixed;
             display: none;
             padding: 8px 16px;
-            background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+            background: linear-gradient(135deg, #1976d2 0%, #1565c0 100%);
             color: white;
             border: none;
             border-radius: 6px;
@@ -123,6 +123,16 @@
                     opacity: 0.7;
                     transition: opacity 0.2s;
                 ">&times;</button>
+            </div>
+            <div id="tsv-modal-simulation-note" style="
+                padding: 8px 20px;
+                background: rgba(100, 100, 100, 0.2);
+                border-bottom: 1px solid #333;
+                font-size: 11px;
+                color: #aaa;
+                text-align: center;
+            ">
+                Simulation of a future feature of browsers
             </div>
             <div id="tsv-modal-disclaimer" style="
                 display: none;
@@ -299,6 +309,9 @@
         e.preventDefault();
         e.stopPropagation();
         hideVerifyButton();
+
+        // Clear the text selection so button doesn't reappear
+        window.getSelection().removeAllRanges();
 
         if (!currentSelection) {
             console.warn('[TSV] Verify button clicked but no selection');

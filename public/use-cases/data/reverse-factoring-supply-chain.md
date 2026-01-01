@@ -1,6 +1,6 @@
 ---
 title: "Reverse factoring (supply chain finance) documentation"
-category: "Banking & Financial Services"
+category: "Trade Finance"
 volume: "Small"
 retention: "7-10 years (audit trail)"
 slug: "reverse-factoring-supply-chain"

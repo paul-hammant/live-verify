@@ -1,6 +1,6 @@
 ---
 title: "Kidnap & ransom (K&R) insurance policies"
-category: "Insurance & Risk Management"
+category: "Specialty Insurance"
 volume: "Tiny"
 retention: "Policy term + 10 years"
 slug: "kidnap-ransom-insurance"

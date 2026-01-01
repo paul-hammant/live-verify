@@ -1,6 +1,6 @@
 ---
 title: "Open Banking consent forms (PSD2, FDX, CDR)"
-category: "Banking & Financial Services"
+category: "Banking & Payments"
 volume: "Medium"
 retention: "1-2 years (consent validity)"
 slug: "open-banking-consent-forms"

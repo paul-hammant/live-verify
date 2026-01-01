@@ -1,6 +1,6 @@
 ---
 title: "ATA Carnets (temporary import/export)"
-category: "Logistics & Transportation"
+category: "Customs & Trade Compliance"
 volume: "Small"
 retention: "Carnet validity + 7 years"
 slug: "ata-carnets"

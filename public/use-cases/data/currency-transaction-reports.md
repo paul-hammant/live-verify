@@ -1,6 +1,6 @@
 ---
 title: "Currency Transaction Reports (CTRs) - customer copies"
-category: "Banking & Financial Services"
+category: "Financial Compliance"
 volume: "Small"
 retention: "5 years (IRS requirement)"
 slug: "currency-transaction-reports"

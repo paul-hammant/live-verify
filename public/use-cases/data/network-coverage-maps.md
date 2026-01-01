@@ -1,6 +1,6 @@
 ---
 title: "Network coverage maps and guarantees"
-category: "Telecommunications"
+category: "Business & Commerce"
 volume: "Very Small"
 retention: "3-5 years (service claims)"
 slug: "network-coverage-maps"

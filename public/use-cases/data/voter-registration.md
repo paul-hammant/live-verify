@@ -1,6 +1,6 @@
 ---
 title: "Voter registration confirmations"
-category: "Immigration & Visa Documents"
+category: "Government & Civic Documents"
 volume: "Medium"
 retention: "Election cycle + 2-4 years"
 slug: "voter-registration"

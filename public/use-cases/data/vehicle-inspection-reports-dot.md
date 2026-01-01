@@ -1,6 +1,6 @@
 ---
 title: "Vehicle inspection reports (DOT, annual safety)"
-category: "Logistics & Transportation"
+category: "Vehicle & Fleet"
 volume: "Medium"
 retention: "5-10 years (safety compliance)"
 slug: "vehicle-inspection-reports-dot"
