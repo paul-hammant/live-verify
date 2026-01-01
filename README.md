@@ -163,6 +163,18 @@ Page 3: Transactions 11-20              verify:chase.com/stmt
 ```
 Each page's text (including page number) creates a unique hash. You can verify page 2 independently without possessing pages 1 and 3. Prevents "page substitution attacks" where attacker swaps pages from different statements.
 
+**Nested hashes (claims referencing other files):** Some claims contain SHA-256 hashes of larger files—for example:
+- Patent certificates referencing the full patent PDF (spec, claims, drawings)
+- Trademark registrations referencing logo/design image files
+- Copyright registrations referencing media files (songs, movies, software)
+
+When a verified claim contains embedded hashes like `Media SHA256: a1b2c3d4...`, the verifier should be warned: **verifying the claim text does NOT automatically verify the referenced file.** Separate steps are required:
+1. Obtain the referenced file (PDF, image, media)
+2. Compute its SHA256 independently
+3. Compare to the hash embedded in the claim
+
+The app does not currently implement this nested verification, but the principle is documented here: verifying the claim proves the certificate is genuine; verifying the embedded hash proves the file matches what was registered.
+
 **Critical transparency requirement:** The verification app MUST clearly display which domain/authority verified the claim. Not just "VERIFIED" but "VERIFIED by degrees.ed.ac.uk" or "VERIFIED by intertek.com". This is essential for trust - users need to see immediately who is vouching for the claim.
 
 **Domain complexity:** Domains vary globally - `ed.ac.uk` is a domain (UK academic), `degrees.ed.ac.uk` is a subdomain (different authority), `foobar.com.br` is a domain (Brazil), `example.co.uk` is a domain. The verifying authority should be displayed as the full hostname from the verification URL (e.g., `degrees.ed.ac.uk`, not truncated to `ed.ac.uk`).

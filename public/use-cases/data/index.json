@@ -1,13 +1,13 @@
 {
-  "generated": "2026-01-01T09:34:05.006Z",
-  "totalUseCases": 450,
+  "generated": "2026-01-01T10:16:09.605Z",
+  "totalUseCases": 451,
   "categories": {
     "Real Estate & Property": 35,
     "Charitable & Non-Profit": 5,
     "Banking & Payments": 12,
     "Actuarial & Insurance Mathematics": 13,
     "Personal Lines Insurance": 15,
-    "Government & Civic Documents": 14,
+    "Government & Civic Documents": 13,
     "Notary Services": 9,
     "Immigration & Visa Documents": 17,
     "Financial & Legal Documents": 10,
@@ -36,9 +36,10 @@
     "Food & Beverage Permits": 7,
     "Scientific & Research": 7,
     "Warehousing & Inventory": 5,
-    "Media & Publishing": 5,
+    "Intellectual Property Law": 3,
     "Mandatory Workplace Postings": 14,
     "Trade Finance": 7,
+    "Media & Publishing": 4,
     "Agriculture & Food": 6,
     "Bonds & Sureties": 3,
     "Permit Rollups": 9
@@ -1608,17 +1609,18 @@
       ]
     },
     {
-      "slug": "copyright-registrations",
-      "title": "Copyright registrations and assignments",
-      "category": "Media & Publishing",
-      "volume": "Very Small",
-      "retention": "Permanent (IP rights)",
-      "snippet": "Copyright holder name, creator, registration details, jurisdiction",
+      "slug": "copyrights",
+      "title": "Copyright Registrations",
+      "category": "Intellectual Property Law",
+      "volume": "Medium",
+      "retention": "Life + 70 years (individual), 95 years (work for hire)",
+      "snippet": "Registration number, title of work, author/creator name(s), copyright claimant/owner (may differ from creator—work for hire, assignments), creation date, publication date, registration date, type of w",
       "tags": [
         "copyright",
-        "registrations",
+        "intellectual-property",
+        "registration",
         "media",
-        "publishing"
+        "creative-works"
       ]
     },
     {
@@ -4548,19 +4550,18 @@
       ]
     },
     {
-      "slug": "patent-trademark-certificates",
-      "title": "Patent and Trademark Certificates",
-      "category": "Government & Civic Documents",
-      "volume": "Very Small",
-      "retention": "20 years (patents) / Permanent (trademarks with renewal)",
-      "snippet": "Patents: Patent number, inventor name(s), assignee/owner name, application date, issue date, title of invention, patent type (utility, design, plant), jurisdiction, expiration date, claims (key claims",
+      "slug": "patents",
+      "title": "Patent Registrations",
+      "category": "Intellectual Property Law",
+      "volume": "Medium",
+      "retention": "20 years (utility/plant), 15 years (design)",
+      "snippet": "Patent number, title of invention, inventor name(s), assignee/owner (may differ from inventor), application date, issue date, patent type (utility, design, plant), jurisdiction, expiration date, maint",
       "tags": [
         "patent",
-        "trademark",
-        "certificates",
-        "government",
-        "civic",
-        "documents"
+        "intellectual-property",
+        "USPTO",
+        "EPO",
+        "invention"
       ]
     },
     {
@@ -6363,6 +6364,21 @@
       ]
     },
     {
+      "slug": "trademarks",
+      "title": "Trademark Registrations",
+      "category": "Intellectual Property Law",
+      "volume": "Medium",
+      "retention": "Permanent with renewal (10-year cycles)",
+      "snippet": "Registration number, mark (word mark, design, or combined), owner name, registration date, goods/services classification (Nice Classification), jurisdiction, renewal dates, status, first use date (US)",
+      "tags": [
+        "trademark",
+        "intellectual-property",
+        "USPTO",
+        "EUIPO",
+        "brand"
+      ]
+    },
+    {
       "slug": "training-completion-certificates",
       "title": "Training completion certificates (safety, compliance, skills)",
       "category": "Professional & Educational Qualifications",
@@ -6966,10 +6982,6 @@
       "count": 15
     },
     {
-      "name": "Government & Civic Documents",
-      "count": 14
-    },
-    {
       "name": "Safety Inspection Certificates",
       "count": 14
     },
@@ -6983,6 +6995,10 @@
     },
     {
       "name": "Actuarial & Insurance Mathematics",
+      "count": 13
+    },
+    {
+      "name": "Government & Civic Documents",
       "count": 13
     },
     {
@@ -7082,17 +7098,21 @@
       "count": 5
     },
     {
-      "name": "Media & Publishing",
-      "count": 5
-    },
-    {
       "name": "Energy & Utilities",
       "count": 4
+    },
+    {
+      "name": "Media & Publishing",
+      "count": 4
+    },
+    {
+      "name": "Intellectual Property Law",
+      "count": 3
     },
     {
       "name": "Bonds & Sureties",
       "count": 3
     }
   ],
-  "totalCategories": 40
+  "totalCategories": 41
 }
