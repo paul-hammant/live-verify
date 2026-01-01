@@ -40,6 +40,7 @@
             border-radius: 12px;
             padding: 32px 40px;
             box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            text-align: left;
         }
         .content-card h1 {
             color: #4a5568;
@@ -216,7 +217,9 @@
                     // Render markdown (marked.js handles inline HTML automatically)
                     html += marked.parse(content);
 
-                    document.getElementById('content').innerHTML = html;
+                    const contentEl = document.getElementById('content');
+                    contentEl.classList.remove('loading');
+                    contentEl.innerHTML = html;
                 })
                 .catch(error => {
                     document.getElementById('content').innerHTML =
