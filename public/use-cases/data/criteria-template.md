@@ -163,6 +163,43 @@ For documents with decorative typography, handwriting, or complex layouts (art c
 ### Seals, Stamps, and Visual Elements
 Physical security features (embossed seals, ink stamps, holograms, photos) are NOT part of the OCR verification. These remain as anti-forgery features on the physical document. Only text elements appear in the verification line.
 
+### Privacy-Preserving Credentials for High-Volume Workers
+
+For workers with frequent, brief public interactions (50+ per day), full name exposure on badges creates unnecessary privacy risk. Their credentials are visible to every customer, passerby, and doorbell camera.
+
+**Use "First Name + Last Initial + ID" format when:**
+- Interaction duration is brief (under 2 minutes)
+- Worker completes 50+ interactions daily
+- Badge is visible to many strangers, not just the person being served
+- Full accountability can be maintained via employer records
+
+**Examples fitting this pattern:**
+- Delivery drivers (100-300 stops/day, 10-30 seconds each)
+- Meter readers (50+ properties/day, 30-60 seconds each)
+- Parking enforcement (dozens of citations/day, often confrontational)
+- Courier workers (100+ deliveries/day)
+- Food delivery (gig workers with high volume)
+
+**Badge shows:** `Marcus M 1847` (first name, last initial, ID number)
+
+**Verification returns:** Photo, current duty status, current task context (e.g., "Currently delivering to 221B Baker St"), employer domain
+
+**Why this works:**
+- Recipient gets what they need: photo match + confirmation worker is legitimate
+- Worker privacy protected: full name not broadcast to hundreds of strangers daily
+- Accountability preserved: employer maintains full identity records
+- Audit trail intact: all verifications logged with hash, timestamp, IP
+- Law enforcement access: full identity available when needed
+
+**This pattern applies broadly** — even for longer interactions (tour guides, healthcare visitors, childcare providers, social services workers), the photo return + current assignment context provides the trust. The surname adds little value but increases privacy exposure.
+
+**Full names only when legally required:**
+- Police officers (public accountability statutes in many jurisdictions)
+- Elected officials, court officers, notaries (legal identity requirements)
+- Situations where the person's full legal name is itself the verified claim
+
+The principle: photo match + verified current assignment + employer domain is what builds trust. Surnames are rarely necessary and create unnecessary exposure.
+
 ### Real-Time vs. Batch Verification
 Some use cases require real-time verification (insurance at point of claim, credentials at security checkpoint). Others can tolerate batch processing (regulatory audits, periodic compliance checks). Note timing requirements where relevant.
 

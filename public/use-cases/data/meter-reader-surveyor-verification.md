@@ -22,11 +22,10 @@ tags: ["utility-worker-safety", "meter-reader-badge", "land-surveyor-verificatio
     </div>
     <div style="flex-grow: 1;">
       <h4 style="margin: 0; color: #004a99;">FIELD TECHNICIAN</h4>
-      <div style="font-size: 1.1em; font-weight: bold; margin: 5px 0;"><span data-bracket="start" data-for="meter">]</span>MARCUS J. MILLER</div>
+      <div style="font-size: 1.3em; font-weight: bold; margin: 5px 0;"><span data-bracket="start" data-for="meter">]</span>Marcus M 1847</div>
       <div style="font-size: 0.9em; color: #333; line-height: 1.4;">
-        <strong>Employee ID:</strong> 992288<br>
         <strong>Unit:</strong> Smart-Meter Install<br>
-        <strong>Status:</strong> ON-DUTY / ACTIVE
+        <strong>Status:</strong> ON-DUTY
       </div>
     </div>
   </div>
@@ -35,9 +34,9 @@ tags: ["utility-worker-safety", "meter-reader-badge", "land-surveyor-verificatio
     <p style="font-size: 0.75em; color: #555; font-style: italic; text-align: center;">
       Verified via Con-Edison Field Operations. Bearer is authorized to enter property for official utility business.
     </p>
-    <div data-verify-line="meter" style="border-top: 1px dashed #999; margin-top: 10px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+    <div data-verify-line="meter" style="border-top: 1px dashed #999; margin-top: 10px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.9em; color: #555; text-align: center;"
       title="Demo only: Con-Edison doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:coned.com/verify/v/992288 <span data-bracket="end" data-for="meter">]</span>
+      vfy:field.coned.com <span data-bracket="end" data-for="meter">]</span>
     </div>
   </div>
 </div>
@@ -96,6 +95,22 @@ The **Field Worker (Technician/Surveyor)** benefits from verification.
 **Municipal Public Works Depts.**
 
 **Privacy Salt:** Critical. Worker locations and names are high-value targets. The hash MUST be salted to prevent "Stalking" attacks where someone tries to track a specific technician's daily route.
+
+## Privacy-Preserving Badge Design
+
+Meter readers and field technicians have brief, high-volume interactions — 30-60 seconds per property, 50+ visits per day. Their badge is visible to every homeowner, neighbor, and passerby. Full name exposure creates unnecessary privacy risk for these routine encounters.
+
+**Badge shows:** First name + last initial + ID number (e.g., "Marcus M 1847")
+
+**Verification returns:** Photo, current duty status, authorized work type, employer domain
+
+**Why this works:**
+- **Homeowner gets what they need:** Photo match + confirmation worker is on-duty for this utility
+- **Worker privacy protected:** Full name not exposed at every doorstep and recorded by doorbell cameras
+- **Accountability preserved:** Utility company maintains full employment records; disputes and incidents traceable via ID
+- **Audit trail intact:** All verifications logged
+
+For longer engagements (e.g., a surveyor spending hours on a property boundary dispute), full credentials may be appropriate. But for routine meter reads, privacy-preserving IDs suffice.
 
 ## Competition vs. Uniforms / Phone Calls
 

@@ -26,14 +26,11 @@ OCR-to-hash allows a resident or security guard to scan the driver's ID badge or
       <div style="width: 100px; height: 125px; background: #eee; border: 2px solid #ff6600; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #aaa; font-size: 0.7em; text-align: center;">[COURIER PHOTO]</div>
     </div>
     <div style="flex-grow: 1;">
-      <div style="font-size: 0.75em; color: #888; text-transform: uppercase;">Employee Name</div>
-      <div style="font-size: 1.1em; font-weight: bold; margin: 0 0 12px 0; color: #333;"><span data-bracket="start" data-for="courier">]</span>MARK A. STEVENS</div>
-      
-      <div style="font-size: 0.75em; color: #888; text-transform: uppercase;">Employee ID</div>
-      <div style="font-size: 1em; font-weight: bold; margin: 0 0 12px 0;">ID: 99887766</div>
-      
-      <div style="font-size: 0.75em; color: #888; text-transform: uppercase;">Hub Location</div>
-      <div style="font-size: 0.9em; font-weight: bold;">MEMPHIS HUB-42</div>
+      <div style="font-size: 0.75em; color: #888; text-transform: uppercase;">Courier</div>
+      <div style="font-size: 1.3em; font-weight: bold; margin: 0 0 12px 0; color: #333;"><span data-bracket="start" data-for="courier">]</span>Mark S 7766</div>
+
+      <div style="font-size: 0.75em; color: #888; text-transform: uppercase;">Hub</div>
+      <div style="font-size: 0.9em; font-weight: bold;">Memphis</div>
     </div>
   </div>
 
@@ -41,9 +38,9 @@ OCR-to-hash allows a resident or security guard to scan the driver's ID badge or
     <div style="font-size: 0.7em; color: #666; text-align: center; margin-bottom: 15px; line-height: 1.3;">
       Scan to verify employment status and current delivery route authorization.
     </div>
-    <div data-verify-line="courier" style="border-top: 1px dashed #bbb; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #ff6600; text-align: center; font-weight: bold;"
+    <div data-verify-line="courier" style="border-top: 1px dashed #bbb; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 1em; color: #ff6600; text-align: center; font-weight: bold;"
       title="Demo only: Courier companies don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:fedex.com/v/99887766-MAS <span data-bracket="end" data-for="courier">]</span>
+      vfy:drivers.fedex.com <span data-bracket="end" data-for="courier">]</span>
     </div>
   </div>
 </div>
@@ -100,6 +97,22 @@ The **Resident / Office Manager** benefits from verification.
 **Third-Party Logistics (3PL) Providers.**
 
 **Privacy Salt:** Essential. Driver names and routes are private data. The hash must be salted to prevent "Stalking" or "Competitor Reconnaissance" (e.g., a rival firm trying to map out a company's delivery density).
+
+## Privacy-Preserving Badge Design
+
+Courier drivers complete 100-300 stops per day. Each delivery is a 10-30 second interaction where their badge is visible to the recipient, neighbors, and any doorbell cameras recording the street. Exposing full names to this volume of strangers creates unnecessary privacy risk.
+
+**Badge shows:** First name + last initial + ID number (e.g., "Mark S 7766")
+
+**Verification returns:** Photo, on-duty status, assigned route area, employer domain
+
+**Why this works:**
+- **Recipient gets what they need:** Photo match + confirmation courier is on-duty for a real company
+- **Driver privacy protected:** Full name not broadcast to hundreds of households and doorbell recordings daily
+- **Accountability preserved:** FedEx/UPS maintains full HR records; package disputes traceable via ID and timestamp
+- **Audit trail intact:** All verifications logged by the courier company
+
+This pattern applies across the gig economy: anyone doing 50+ brief interactions daily deserves privacy-preserving credentials rather than full name exposure.
 
 ## Rationale
 

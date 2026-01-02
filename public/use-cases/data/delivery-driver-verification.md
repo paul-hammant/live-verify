@@ -30,9 +30,8 @@ Scammers often wear fake high-visibility vests to get inside apartment buildings
     </div>
     <div style="flex-grow: 1;">
       <h4 style="margin: 0; color: #232f3e;">DA-1 DRIVER</h4>
-      <div style="font-size: 1.1em; font-weight: bold; margin: 5px 0;"><span data-bracket="start" data-for="driver">]</span>CARLOS RODRIGUEZ</div>
+      <div style="font-size: 1.3em; font-weight: bold; margin: 5px 0;"><span data-bracket="start" data-for="driver">]</span>Carlos R 42882</div>
       <div style="font-size: 0.9em; color: #333; line-height: 1.4;">
-        <strong>Route ID:</strong> DX-SF42<br>
         <strong>Region:</strong> San Francisco, CA<br>
         <strong>Status:</strong> ON-DUTY
       </div>
@@ -43,9 +42,9 @@ Scammers often wear fake high-visibility vests to get inside apartment buildings
     <p style="font-size: 0.75em; color: #555; font-style: italic; text-align: center;">
       Verified via the Amazon Logistics Partner Network. Scan to confirm driver's current on-duty status and route authorization.
     </p>
-    <div data-verify-line="driver" style="border-top: 1px dashed #999; margin-top: 10px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+    <div data-verify-line="driver" style="border-top: 1px dashed #999; margin-top: 10px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.9em; color: #555; text-align: center;"
       title="Demo only: Amazon doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:amazon.com/delivery/v/992288 <span data-bracket="end" data-for="driver">]</span>
+      vfy:logistics.amazon.com <span data-bracket="end" data-for="driver">]</span>
     </div>
   </div>
 </div>
@@ -103,6 +102,55 @@ The **Delivery Driver** benefits from verification.
 **Local DSPs:** (Delivery Service Partners).
 
 **Privacy Salt:** Critical. Driver names and locations are sensitive. The hash must be salted to prevent "Stalking" attacks where someone tries to guess which driver is on a specific street.
+
+## Privacy-Preserving Badge Design
+
+Delivery drivers are high-volume, low-value-per-interaction workers — completing 50-200 deliveries per day at $1-3 each. Their badge is seen by dozens of strangers daily. Full name exposure creates unnecessary privacy risk.
+
+**Badge shows:** First name + last initial + ID number (e.g., "Carlos R 42882")
+
+**Verification returns:** Photo, current delivery destination, on-duty status
+
+**Why this works:**
+- **Recipient gets what they need:** Photo match + confirmation driver is assigned to their area
+- **Driver privacy protected:** Full name not exposed to every doorbell camera and passerby
+- **Accountability preserved:** Platform maintains full identity; law enforcement can access if needed
+- **Audit trail intact:** All verifications logged with hash, timestamp, IP
+
+## E-Ink Badges with Per-Delivery Salt
+
+Static badges can be used to track drivers. Criminals planning package theft could monitor which driver hashes are verified on which streets, building route maps to intercept high-value deliveries or target drivers directly.
+
+**E-ink badge with rotating salt:**
+
+<div style="max-width: 280px; margin: 24px auto; font-family: sans-serif; border: 3px solid #232f3e; border-radius: 8px; background: #f5f5f0; padding: 20px; text-align: center;">
+  <div style="font-size: 0.8em; color: #232f3e; font-weight: bold; margin-bottom: 8px;">AMAZON LOGISTICS</div>
+  <div style="font-size: 1.4em; font-weight: bold; color: #000; margin-bottom: 5px;">Carlos R 42882</div>
+  <div style="font-family: 'Courier New', monospace; font-size: 1em; color: #232f3e; background: #fff; padding: 6px; border: 1px solid #ccc; border-radius: 4px; margin: 10px 0;">
+    Salt: 9m2k7x
+  </div>
+  <div style="font-family: 'Courier New', monospace; font-size: 0.9em; color: #555;">
+    vfy:logistics.amazon.com
+  </div>
+  <div style="font-size: 0.7em; color: #888; margin-top: 8px;">Salt changes per delivery</div>
+</div>
+
+**How it works:**
+- Badge pairs with driver's delivery app via Bluetooth
+- Salt updates when driver marks delivery complete and moves to next stop
+- Each stop gets a unique hash — can't correlate "driver at 10 Oak St" with "driver at 15 Elm St 5 mins later"
+- Verification returns current destination only (not route history)
+
+**Anti-tracking protection:**
+- Criminals can't build driver route maps from verification logs
+- Protects drivers from being followed or ambushed
+- Protects high-value package routes from interception planning
+
+**Cost tradeoff:** E-ink badges cost more than printed lanyards. Justified for:
+- High-theft areas
+- High-value delivery routes (electronics, jewelry)
+- Driver safety in isolated/rural areas
+- Premium delivery services
 
 ## Competition vs. In-App Notifications
 

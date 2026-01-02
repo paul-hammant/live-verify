@@ -29,12 +29,9 @@ OCR-to-hash allows a driver to scan an officer's ID badge or the verification li
       <div style="width: 90px; height: 115px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #999; font-size: 0.7em; text-align: center;">[OFFICER PHOTO]</div>
     </div>
     <div style="flex-grow: 1;">
-      <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Officer Name</div>
-      <div style="font-size: 1.1em; font-weight: bold; margin: 0 0 10px 0; color: #333;"><span data-bracket="start" data-for="park-off">]</span>ROBERT J. MILLER</div>
-      
-      <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Badge Number</div>
-      <div style="font-size: 1.3em; font-weight: bold; margin: 0 0 10px 0; letter-spacing: 1px;">PEO-992288</div>
-      
+      <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Officer</div>
+      <div style="font-size: 1.3em; font-weight: bold; margin: 0 0 10px 0; color: #333;"><span data-bracket="start" data-for="park-off">]</span>Robert M 5523</div>
+
       <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Division</div>
       <div style="font-size: 0.9em; font-weight: bold;">Enforcement South</div>
     </div>
@@ -44,9 +41,9 @@ OCR-to-hash allows a driver to scan an officer's ID badge or the verification li
     <div style="font-size: 0.7em; color: #555; text-align: center; margin-bottom: 10px; line-height: 1.3;">
       Scan to verify current duty status and authorization to issue citations.
     </div>
-    <div data-verify-line="park-off" style="border-top: 1px dashed #999; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; text-align: center; font-weight: bold;"
+    <div data-verify-line="park-off" style="border-top: 1px dashed #999; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 1em; color: #000; text-align: center; font-weight: bold;"
       title="Demo only: Municipalities don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:sfmta.com/v/PEO-992288 <span data-bracket="end" data-for="park-off">]</span>
+      vfy:enforcement.sfmta.com <span data-bracket="end" data-for="park-off">]</span>
     </div>
   </div>
 </div>
@@ -103,6 +100,22 @@ The **Driver / Vehicle Owner** benefits from verification.
 **University Campus Police.**
 
 **Privacy Salt:** Critical. The hash must be salted to prevent "Badge Harvesting" or tracking the movements of individual officers by bad actors.
+
+## Privacy-Preserving Badge Design
+
+Parking enforcement officers issue dozens of citations daily, each a brief, often confrontational interaction. Their badge is visible to every driver who receives a ticket, plus bystanders and dashcams. Full name exposure creates unnecessary privacy and safety risks — parking disputes can escalate, and officers have been targeted for harassment or retaliation.
+
+**Badge shows:** First name + last initial + ID number (e.g., "Robert M 5523")
+
+**Verification returns:** Photo, current duty status, authorized zone, citation authority level
+
+**Why this works:**
+- **Driver gets what they need:** Photo match + confirmation officer is on-duty and authorized
+- **Officer privacy protected:** Full name not exposed to every frustrated driver who might seek retaliation
+- **Accountability preserved:** Municipality maintains full employment records; citation disputes reference the ID number
+- **Audit trail intact:** All verifications logged by the department
+
+This differs from police officers, where full name and badge number are typically required for public accountability. Parking enforcement falls between — they have limited authority (civil citations, not arrests) and face disproportionate harassment risk from the high volume of negative interactions.
 
 ## Rationale
 
