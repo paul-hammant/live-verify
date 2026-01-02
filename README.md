@@ -62,6 +62,7 @@ See that "verify:" line ... we'll come back to that.
 - ✅ **Revocable** - Issuers can change the response (e.g. REVOKED) or delete the record so verification reflects current standing
 - ✅ **Accessible** - Works with paper, screenshots, and low-end printers; no QR/NFC/special ink required (screen moiré may need higher-capability OCR)
 - ✅ **No cloud OCR** - No Google/AWS/Azure seeing your personal documents
+- ✅ **Safe to challenge** - Empowers neighbors, bystanders, and police to challenge suspicious activity (estate clearances, repo agents, property access) because verification gives them a clear answer on the spot — not "sort it out at the station"
 
 ## Commercialization (SaaS)
 

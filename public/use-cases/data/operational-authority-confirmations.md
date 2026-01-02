@@ -169,4 +169,4 @@ Other delegated authority confirmations:
 - [Contract Signing Authority](view.html?slug=contract-signing-authority) — Who can sign contracts binding the company
 - [Employment Authority](view.html?slug=employment-authority-confirmations) — Job offers, terminations, salary decisions
 - [Regulatory Filing Authority](view.html?slug=regulatory-filing-authority) — Companies House, tax filings, audit letters
-- [Technical Authority](view.html?slug=technical-authority-confirmations) — System access, architecture decisions, security exceptions
+- [Security Testing Authorizations](view.html?slug=security-testing-authorizations) — Pentest, bug bounty, red team authorizations

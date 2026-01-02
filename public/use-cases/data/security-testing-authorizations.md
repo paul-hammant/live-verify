@@ -1,208 +1,191 @@
 ---
-title: "Technical Authority Confirmations"
+title: "Security Testing Authorizations"
 category: "Delegated Authority"
-volume: "Large"
-retention: "System lifecycle + 3 years"
-slug: "technical-authority-confirmations"
-tags: ["technical-authority", "system-access", "architecture", "security", "it-governance", "delegation"]
+volume: "Medium"
+retention: "Duration of engagement + 6 years"
+slug: "security-testing-authorizations"
+tags: ["pentest", "penetration-testing", "bug-bounty", "red-team", "security-research", "authorization"]
 ---
 
-## What is Technical Authority?
+## What is a Security Testing Authorization?
 
-Technical decisions can have massive consequences — security breaches, system outages, data loss, compliance failures. **Technical authority** defines who can make decisions about systems, grant access, approve architecture changes, and authorize security exceptions.
+Penetration testers, bug bounty hunters, and red team operators do things that would otherwise be illegal — probing systems, exploiting vulnerabilities, accessing data without permission. The **authorization letter** is their legal protection: proof they had permission to attack.
 
-When something goes wrong, "who authorized this?" is the first question. Technical authority confirmations provide the answer.
-
-<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #2e5090; background: #fff; padding: 0;">
-  <div style="background: #2e5090; color: #fff; padding: 15px;">
-    <div style="font-weight: bold; font-size: 1.1em;">TECHNICAL AUTHORITY CONFIRMATION</div>
-    <div style="font-size: 0.8em;">IT Governance Delegation</div>
-  </div>
-  <div style="padding: 20px; font-size: 0.9em; line-height: 1.6;">
-    <p><strong>Company:</strong> Quantum Financial Systems<br>
-    <strong>Authorized Person:</strong> David Chen<br>
-    <strong>Role:</strong> Head of Platform Engineering<br>
-    <strong>Issued:</strong> January 1, 2026</p>
-
-    <div style="background: #f0f4f8; padding: 15px; margin: 15px 0; border-left: 3px solid #2e5090;">
-      <p style="margin: 0;"><strong>Authority to:</strong></p>
-      <p style="margin: 10px 0 0;">• Approve production deployments (trading systems)</p>
-      <p style="margin: 5px 0 0;">• Grant system access (Levels 1-3, non-privileged)</p>
-      <p style="margin: 5px 0 0;">• Approve architecture changes (within approved patterns)</p>
-      <p style="margin: 5px 0 0;">• Authorize firewall rule changes (non-critical zones)</p>
-      <p style="margin: 10px 0 0;"><strong>Requires CISO/CTO approval:</strong></p>
-      <p style="margin: 5px 0 0;">• Privileged access grants (Level 4+)</p>
-      <p style="margin: 5px 0 0;">• Security exceptions</p>
-      <p style="margin: 5px 0 0;">• New technology adoption</p>
-      <p style="margin: 5px 0 0;">• Critical zone firewall changes</p>
-    </div>
-
-    <p style="font-size: 0.85em; color: #666;">Delegated by: CTO<br>
-    Valid until: December 31, 2026</p>
-
-    <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
-      verify:quantum-fs.com/tech-auth/DC-2026
-    </div>
-  </div>
-</div>
-
-## Types of Technical Authority
-
-### System Access Grants
-
-<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #228B22; background: #fff; padding: 0;">
-  <div style="background: #228B22; color: #fff; padding: 15px;">
-    <div style="font-weight: bold; font-size: 1.1em;">ACCESS GRANT AUTHORIZATION</div>
-    <div style="font-size: 0.8em;">System Access Approval</div>
-  </div>
-  <div style="padding: 20px; font-size: 0.9em; line-height: 1.6;">
-    <p><strong>Requestor:</strong> Maria Santos<br>
-    <strong>System:</strong> Trading Platform (Production)<br>
-    <strong>Access Level:</strong> Level 2 - Read + Limited Write<br>
-    <strong>Grant Date:</strong> February 15, 2026</p>
-
-    <div style="background: #f5fff5; padding: 15px; margin: 15px 0; border: 1px solid #228B22;">
-      <p style="margin: 0;"><strong>Access includes:</strong></p>
-      <p style="margin: 10px 0 0;">• View trading positions and P&L</p>
-      <p style="margin: 5px 0 0;">• Modify client reference data</p>
-      <p style="margin: 5px 0 0;">• Generate reports</p>
-      <p style="margin: 10px 0 0;"><strong>Excludes:</strong></p>
-      <p style="margin: 5px 0 0;">• Trade execution</p>
-      <p style="margin: 5px 0 0;">• User administration</p>
-    </div>
-
-    <p style="font-size: 0.85em; color: #666;">Authorized by: David Chen, Head of Platform Engineering<br>
-    Business justification: Client onboarding role<br>
-    Review date: August 15, 2026</p>
-
-    <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
-      verify:quantum-fs.com/access/MS-TP-2026
-    </div>
-  </div>
-</div>
-
-### Architecture Decision Records
-
-<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ff6600; background: #fff; padding: 0;">
-  <div style="background: #ff6600; color: #fff; padding: 15px;">
-    <div style="font-weight: bold; font-size: 1.1em;">ARCHITECTURE DECISION RECORD</div>
-    <div style="font-size: 0.8em;">Technical Design Approval</div>
-  </div>
-  <div style="padding: 20px; font-size: 0.9em; line-height: 1.6;">
-    <p><strong>ADR Number:</strong> ADR-2026-0042<br>
-    <strong>Title:</strong> Migrate to Event-Driven Architecture<br>
-    <strong>Status:</strong> Approved<br>
-    <strong>Decision Date:</strong> February 1, 2026</p>
-
-    <div style="background: #fff8f0; padding: 15px; margin: 15px 0; border: 1px solid #ff6600;">
-      <p style="margin: 0;"><strong>Decision:</strong></p>
-      <p style="margin: 10px 0 0;">Adopt Kafka-based event streaming for inter-service communication</p>
-      <p style="margin: 10px 0 0;"><strong>Consequences:</strong></p>
-      <p style="margin: 5px 0 0;">• Eventual consistency model</p>
-      <p style="margin: 5px 0 0;">• Additional infrastructure costs</p>
-      <p style="margin: 5px 0 0;">• Team training required</p>
-    </div>
-
-    <p style="font-size: 0.85em; color: #666;">Approved by: CTO + Head of Platform Engineering<br>
-    Architecture Review Board: Endorsed</p>
-
-    <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
-      verify:quantum-fs.com/adr/ADR-2026-0042
-    </div>
-  </div>
-</div>
-
-### Security Exceptions
+Without it, they're committing computer crimes. With it, they're performing a legitimate security service.
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #8B0000; background: #fff; padding: 0;">
   <div style="background: #8B0000; color: #fff; padding: 15px;">
-    <div style="font-weight: bold; font-size: 1.1em;">SECURITY EXCEPTION AUTHORIZATION</div>
-    <div style="font-size: 0.8em;">Policy Deviation Approval</div>
+    <div style="font-weight: bold; font-size: 1.1em;">PENETRATION TEST AUTHORIZATION</div>
+    <div style="font-size: 0.8em;">Security Testing Scope & Permission</div>
   </div>
   <div style="padding: 20px; font-size: 0.9em; line-height: 1.6;">
-    <p><strong>Exception ID:</strong> SEC-EX-2026-0018<br>
-    <strong>Policy:</strong> Mandatory MFA for all production access<br>
-    <strong>Requested by:</strong> Platform Engineering<br>
-    <strong>Approval Date:</strong> February 10, 2026</p>
+    <p><strong>Client:</strong> Meridian Financial Services Ltd<br>
+    <strong>Tester:</strong> SecureProbe Ltd (Claire Watson, Lead Tester)<br>
+    <strong>Engagement ID:</strong> PT-2026-0042<br>
+    <strong>Authorization Date:</strong> February 1, 2026</p>
 
     <div style="background: #fff5f5; padding: 15px; margin: 15px 0; border: 1px solid #8B0000;">
-      <p style="margin: 0;"><strong>Exception granted:</strong></p>
-      <p style="margin: 10px 0 0;">Service accounts for automated deployment pipelines exempt from MFA</p>
-      <p style="margin: 10px 0 0;"><strong>Compensating controls:</strong></p>
-      <p style="margin: 5px 0 0;">• IP allowlisting to build infrastructure only</p>
-      <p style="margin: 5px 0 0;">• Credential rotation every 24 hours</p>
-      <p style="margin: 5px 0 0;">• Enhanced audit logging</p>
+      <p style="margin: 0;"><strong>Scope of Authorization:</strong></p>
+      <p style="margin: 10px 0 0;"><strong>In scope:</strong></p>
+      <p style="margin: 5px 0 0;">• app.meridian-fs.com (production web application)</p>
+      <p style="margin: 5px 0 0;">• api.meridian-fs.com (REST API endpoints)</p>
+      <p style="margin: 5px 0 0;">• 192.168.1.0/24 (internal network segment)</p>
+      <p style="margin: 10px 0 0;"><strong>Out of scope:</strong></p>
+      <p style="margin: 5px 0 0;">• Third-party payment processor integrations</p>
+      <p style="margin: 5px 0 0;">• Physical security testing</p>
+      <p style="margin: 5px 0 0;">• Social engineering of staff</p>
+      <p style="margin: 10px 0 0;"><strong>Testing window:</strong> February 15-28, 2026, 09:00-18:00 GMT</p>
     </div>
 
-    <p style="font-size: 0.85em; color: #666;">Approved by: CISO<br>
-    Risk acceptance: Documented<br>
-    Review date: August 10, 2026 (6-month renewal required)</p>
+    <p style="font-size: 0.85em; color: #666;">Authorized by: James Morton, CISO<br>
+    On behalf of: Meridian Financial Services Ltd</p>
 
     <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
-      verify:quantum-fs.com/secex/SEC-EX-2026-0018
+      verify:meridian-fs.com/security/PT-2026-0042
     </div>
   </div>
 </div>
 
-## The Technical Authority Problem
+## Why External Verification Matters
 
-| Scenario | What happens | Consequence |
-|----------|--------------|-------------|
-| **Unauthorized access grant** | Developer grants colleague production access | Audit finding, potential breach |
-| **Rogue architecture change** | Team adopts new framework without approval | Technical debt, support issues |
-| **Undocumented exception** | Security control bypassed without approval | Compliance failure, audit finding |
-| **Expired access** | Former employee access not revoked | Security breach vector |
-| **Shadow IT** | Department deploys unapproved system | Data governance failure |
+**The tester's problem:**
+- Client's security team detects "attack" and calls police
+- Hosting provider sees suspicious traffic, suspends access
+- Third-party (cloud provider, CDN) blocks tester's IP
+- Months later, client denies authorizing the test
+
+**Without verification:** Tester has a PDF that could be forged. Police must investigate. Tester's reputation at risk.
+
+**With verification:** Third party scans authorization → confirms on client's domain → "carry on, this is legitimate."
 
 ## Data Verified
 
-**Authorized person**, **company**, **authority type** (access/architecture/security), **scope** (systems, zones, levels), **limits** (access levels, exception scope), **compensating controls** (if exception), **delegating officer**, **validity period**, **review date**.
+**Client name**, **tester/firm name**, **engagement ID**, **scope** (in-scope systems, out-of-scope exclusions), **testing window** (dates and times), **authorizing officer**, **authorization date**.
 
 ## Data Visible After Verification
 
 **Status Indications:**
-- **Active** — Authority/grant currently valid
-- **Expired** — Past validity or review date
-- **Revoked** — Withdrawn (termination, role change, security incident)
-- **Suspended** — Temporarily inactive (investigation)
-- **Under Review** — Approaching renewal, review in progress
+- **Active** — Testing currently authorized within window
+- **Scheduled** — Authorization valid but testing window hasn't started
+- **Completed** — Testing window has passed
+- **Suspended** — Authorization paused (incident, scope change)
+- **Revoked** — Authorization withdrawn
+
+## Bug Bounty Programs
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #228B22; background: #fff; padding: 0;">
+  <div style="background: #228B22; color: #fff; padding: 15px;">
+    <div style="font-weight: bold; font-size: 1.1em;">BUG BOUNTY SCOPE CONFIRMATION</div>
+    <div style="font-size: 0.8em;">Vulnerability Disclosure Program</div>
+  </div>
+  <div style="padding: 20px; font-size: 0.9em; line-height: 1.6;">
+    <p><strong>Program:</strong> Nexus Technologies Bug Bounty<br>
+    <strong>Researcher:</strong> @security_jane (registered researcher)<br>
+    <strong>Researcher ID:</strong> BB-7742<br>
+    <strong>Registration Date:</strong> January 10, 2026</p>
+
+    <div style="background: #f5fff5; padding: 15px; margin: 15px 0; border: 1px solid #228B22;">
+      <p style="margin: 0;"><strong>In-scope targets:</strong></p>
+      <p style="margin: 10px 0 0;">• *.nexus-tech.com (all subdomains)</p>
+      <p style="margin: 5px 0 0;">• Nexus Mobile App (iOS/Android)</p>
+      <p style="margin: 5px 0 0;">• Public API endpoints</p>
+      <p style="margin: 10px 0 0;"><strong>Rules of engagement:</strong></p>
+      <p style="margin: 5px 0 0;">• No denial of service testing</p>
+      <p style="margin: 5px 0 0;">• No accessing other users' data</p>
+      <p style="margin: 5px 0 0;">• Report within 72 hours of discovery</p>
+    </div>
+
+    <p style="font-size: 0.85em; color: #666;">Program managed via: HackerOne<br>
+    Safe harbor: Yes (no legal action for good-faith research)</p>
+
+    <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
+      verify:nexus-tech.com/bounty/BB-7742
+    </div>
+  </div>
+</div>
+
+**Bug bounty difference from pentest:**
+- Pentests: Known firm, defined window, specific scope
+- Bug bounty: Unknown researchers emerge later, ongoing program, broader scope
+
+Verification confirms: "Yes, this researcher is registered in our program and these targets are in scope."
+
+## Red Team Engagements
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ff6600; background: #fff; padding: 0;">
+  <div style="background: #ff6600; color: #fff; padding: 15px;">
+    <div style="font-weight: bold; font-size: 1.1em;">RED TEAM AUTHORIZATION</div>
+    <div style="font-size: 0.8em;">Adversary Simulation Exercise</div>
+  </div>
+  <div style="padding: 20px; font-size: 0.9em; line-height: 1.6;">
+    <p><strong>Client:</strong> National Grid Infrastructure<br>
+    <strong>Red Team:</strong> Crimson Cell Security Ltd<br>
+    <strong>Exercise Code:</strong> THUNDERSTRIKE-26<br>
+    <strong>Authorization Date:</strong> January 15, 2026</p>
+
+    <div style="background: #fff8f0; padding: 15px; margin: 15px 0; border: 1px solid #ff6600;">
+      <p style="margin: 0;"><strong>Authorized activities:</strong></p>
+      <p style="margin: 10px 0 0;">• Physical intrusion attempts (non-destructive)</p>
+      <p style="margin: 5px 0 0;">• Social engineering (specified targets only)</p>
+      <p style="margin: 5px 0 0;">• Network penetration (isolated test segment)</p>
+      <p style="margin: 5px 0 0;">• Phishing simulation (pre-approved list)</p>
+      <p style="margin: 10px 0 0;"><strong>Exercise window:</strong> March 1-31, 2026</p>
+      <p style="margin: 5px 0 0;"><strong>Code word (if challenged):</strong> [Sealed]</p>
+    </div>
+
+    <p style="font-size: 0.85em; color: #666;">Authorized by: CEO + CISO + General Counsel<br>
+    Board notification: Yes</p>
+
+    <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
+      verify:nationalgrid.com/security/RT-2026-TS
+    </div>
+  </div>
+</div>
+
+**Red team challenges:**
+- Physical security guards may detain operators
+- Police may be called for "suspicious persons"
+- Social engineering targets may report to HR/security
+
+Verification (or sealed code word) confirms: "This is an authorized exercise, not a real attack."
 
 ## Third-Party Use
 
-**Auditors** — Verify access grants, architecture decisions, security exceptions
-**Regulators** — IT governance reviews (especially financial services)
-**Vendors** — Verify who can authorize integrations, API access
-**Penetration testers** — Confirm scope authorization
-**Incident responders** — Determine what access existed at time of breach
+**Police** — Verify authorization before deciding whether to investigate "hacking"
+**Hosting providers** — Verify before suspending accounts for "malicious traffic"
+**Cloud providers** — AWS/Azure/GCP policies require proof of authorization
+**Security operations centers** — Distinguish authorized testing from real attacks
+**Legal counsel** — Evidence in disputes about scope and authorization
 
-## Compliance Frameworks
+## Jurisdiction Differences
 
-| Framework | Relevance |
-|-----------|-----------|
-| **SOC 2** | Access control, change management |
-| **ISO 27001** | Access management (A.9), operations security (A.12) |
-| **PCI-DSS** | Requirement 7 (access control), Requirement 10 (logging) |
-| **FCA/PRA** | Operational resilience, IT governance |
-| **SOX** | IT general controls, access to financial systems |
+| Jurisdiction | Framework | Key Points |
+|--------------|-----------|------------|
+| **UK** | Computer Misuse Act 1990 | Authorization is complete defense; must be from system owner |
+| **US** | CFAA + state laws | Authorization defense; scope matters (exceeding scope can be crime) |
+| **EU** | National implementations of Budapest Convention | Varies; some countries have safe harbor for good-faith research |
+
+**CFAA risk (US):** Even authorized testers can face liability if they exceed scope. Verification of exact scope matters.
 
 ## Verification Architecture
 
 **The Problem:**
-- Access reviews find grants with no documented authorization
-- Architecture decisions are made informally, disputed later
-- Security exceptions granted verbally, not recorded
-- When breaches occur, unclear who authorized what
+- Testers need proof of authorization that third parties will accept
+- Authorizations can be forged or fabricated
+- Scope disputes arise after testing ("you weren't authorized for that system")
+- Time-limited authorizations need real-time verification
 
-**The Fix:** Technical authority confirmations for all significant decisions. Access grants, architecture changes, and security exceptions all generate verifiable documents. Auditors can verify: this access was granted by someone with authority, with documented justification.
+**The Fix:** Authorization documents hashed at signing, stored on client's domain. Tester carries verification URL. Any third party (police, hosting provider, cloud platform) can verify in real-time:
+- Is this authorization genuine?
+- Is it currently active?
+- Is the specific system in scope?
 
-**The audit trail flow:**
-1. Access requested → ticket created
-2. Authorized person approves → confirmation generated with verification URL
-3. Access provisioned → linked to confirmation
-4. Periodic review → verification checked, status confirmed current
-5. Audit → verifiable chain from request to authorization to provisioning
-
-**Integration with IAM systems:** Identity management systems require authority verification before provisioning. Architecture decision tools generate verifiable ADRs. Security exception requests route through approval workflow with verifiable output.
+**The incident flow:**
+1. Security team detects "attack"
+2. Before escalating to police, check for authorization
+3. Tester provides verification URL
+4. Verification confirms: authorized, in scope, within window
+5. No police involvement, testing continues
 
 ## See Also
 

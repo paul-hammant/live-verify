@@ -186,4 +186,4 @@ Other delegated authority confirmations:
 - [Contract Signing Authority](view.html?slug=contract-signing-authority) — Who can sign contracts binding the company
 - [Operational Authority](view.html?slug=operational-authority-confirmations) — Vendor selection, project approvals, SLA commitments
 - [Regulatory Filing Authority](view.html?slug=regulatory-filing-authority) — Companies House, tax filings, audit letters
-- [Technical Authority](view.html?slug=technical-authority-confirmations) — System access, architecture decisions, security exceptions
+- [Security Testing Authorizations](view.html?slug=security-testing-authorizations) — Pentest, bug bounty, red team authorizations

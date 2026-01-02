@@ -193,4 +193,4 @@ Other delegated authority confirmations:
 - [Employment Authority](view.html?slug=employment-authority-confirmations) — Job offers, terminations, salary decisions
 - [Operational Authority](view.html?slug=operational-authority-confirmations) — Vendor selection, project approvals, SLA commitments
 - [Regulatory Filing Authority](view.html?slug=regulatory-filing-authority) — Companies House, tax filings, audit letters
-- [Technical Authority](view.html?slug=technical-authority-confirmations) — System access, architecture decisions, security exceptions
+- [Security Testing Authorizations](view.html?slug=security-testing-authorizations) — Pentest, bug bounty, red team authorizations
