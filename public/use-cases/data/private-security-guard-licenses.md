@@ -1,157 +1,117 @@
 ---
-title: "Private security and armed guard licenses"
+title: "Private Security and Armed Guard Licenses"
 category: "Professional & Occupational Licenses"
 volume: "Small"
 retention: "2-5 years (license term)"
 slug: "private-security-guard-licenses"
-tags: ["private", "security", "guard", "licenses", "professional", "occupational"]
+tags: ["private", "security", "guard", "licenses", "professional", "occupational", "guard-card", "armed-guard", "law-enforcement"]
 ---
+
+## What is a Private Security License?
+
+A **Private Security License** (commonly known as a "Guard Card") is the official state credential that allows an individual to work as a security professional.
+
+It proves that the holder has passed a criminal background check (usually via the FBI/DOJ) and completed mandatory training in the use of force, power to arrest, and emergency response.
+
+**"Credential Swapping"** is a major safety risk: an unlicensed individual might use a friend's physical card to gain access to a high-security facility or sensitive event. **Armed Guards** present even higher risks; a guard whose firearms qualification has expired may still be carrying a weapon illegally.
+
+OCR-to-hash binds the **Guard's name, License Number, and Firearms Qualifications** to the state regulatory board's domain. A client or police officer can instantly verify that the guard standing before them is **Active, Vetted, and Qualified** to carry the weapons they are currently using.
+
+<div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #263238; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+  <div style="background: #263238; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
+    <div>
+      <div style="font-weight: bold; font-size: 1.1em;">STATE REGULATORY BOARD</div>
+      <div style="font-size: 0.8em;">PRIVATE SECURITY SERVICES</div>
+    </div>
+    <div style="font-size: 1.2em;">🛡️</div>
+  </div>
+
+  <div style="padding: 20px; display: flex;">
+    <div style="width: 100px; margin-right: 15px;">
+      <div style="width: 100px; height: 125px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #777; font-size: 0.7em; text-align: center;">[VERIFIED<br>PHOTO]</div>
+    </div>
+    <div style="flex-grow: 1;">
+      <div style="font-size: 1.1em; font-weight: bold; margin: 0 0 5px 0;"><span data-bracket="start" data-for="guard">]</span>MILLER, ROBERT J.</div>
+      <div style="font-size: 0.85em; color: #333; line-height: 1.4;">
+        <strong>License:</strong> SG-992288-A<br>
+        <strong>Status:</strong> ARMED GUARD<br>
+        <strong>Weapon:</strong> 9mm Handgun<br>
+        <strong>Exp:</strong> 03/15/2027
+      </div>
+    </div>
+  </div>
+
+  <div style="padding: 0 20px 20px 20px;">
+    <div style="background: #e8f5e9; color: #2e7d32; padding: 5px; border-radius: 4px; font-weight: bold; font-size: 0.8em; text-align: center; margin-bottom: 10px;">
+      ✅ FIREARMS QUALIFIED (REV 2026)
+    </div>
+    <div data-verify-line="guard" style="border-top: 1px dashed #999; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+      title="Demo only: State Bureau doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:securityboard.gov/v/SG992288 <span data-bracket="end" data-for="guard">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Licensee name, DOB, license number, weapons qualification, issuing authority
+Licensee Name, Date of Birth (partial), License Number, Registration Type (Armed/Unarmed), Specific Qualifications (Firearms, Baton, Pepper Spray), Expiration Date, Background Check Status, Training Revision ID.
 
-**Permit Types:** Various permit subtypes may exist depending on jurisdiction and specific use.
+**Document Types:**
+- **Security Guard Registration (Guard Card):** The primary ID card.
+- **Firearms Permit:** Required for armed roles.
+- **Training Completion Certificate:** Verification of specific skill hours.
+- **Business License:** For the security firm itself.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (e.g., `securityboard.gov`, `dps.state.tx.us`) and the current standing.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-- **Suspended** - Permit temporarily suspended
-- **Pending** - Permit application pending approval
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Active** — Guard is fully authorized and vetted.
+- **Firearm Restricted** — **ALERT:** Guard is authorized for security work but *not* authorized to carry a weapon.
+- **Suspended/Revoked** — **ALERT:** License pulled due to misconduct or training failure.
+- **Expired** — Background check or training is out of date.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Security Professional (Guard)** benefits from verification.
 
-**Legitimacy Confirmation:** After obtaining permit, verify it was properly issued and recorded.
+**Job Efficiency:** Speeding up access to "High Value" sites. When a guard arrives for a shift at a jewelry exchange or a data center, the site manager can verify their armed status in 5 seconds via the hash, bypassing the 30-minute manual "Call the Office" vetting process.
 
-**Compliance Display:** Maintain verified permit for posting requirements.
-
-**Scope Verification:** Confirm permitted activities match intended use.
-
-**Expiration Tracking:** Monitor permit status to avoid lapses.
-
-**Record Keeping:** Maintain verified documentation for audits and compliance.
+**Incident Accountability:** If a guard is involved in a use-of-force incident, the verified hash provides an immediate record that they were operating with valid, active legal authority at that exact timestamp.
 
 ## Third-Party Use
 
-**Employers**
+**Building Managers / Venue Promoters**
+**Vetting Contractors:** Before a major event, the promoter scans the lanyards of the 50 "Sub-contracted" guards. Verification ensures the security firm didn't hire "Un-vetted Temp Labor" to fill the gaps, which is a major insurance and safety liability.
 
-Hiring and compliance verification:
+**Police Officers**
+**Field Integrity:** During a traffic stop or a patrol check, an officer scans the guard's badge. Verification confirms the "Armed" status isn't a fake PDF created to hide an illegal concealed weapon.
 
-**Pre-Employment Screening:** Verify credentials during hiring process.
-
-**I-9 Compliance:** Verify work authorization and identity documents.
-
-**Credential Verification:** Confirm professional licenses and certifications.
-
-**Health Requirements:** Verify health-related documentation for workplace safety.
-
-**Background Checks:** Integrate verification into background check processes.
-
-**Insurance Companies**
-
-Underwriting and claims processing:
-
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Government Agencies**
-
-Compliance enforcement and administration:
-
-**Inspection Verification:** Field agents verify permits and licenses at sites.
-
-**Enforcement Actions:** Confirm documentation before enforcement.
-
-**Benefit Eligibility:** Verify supporting documents for benefits administration.
-
-**Compliance Audits:** Audit documentation for regulatory compliance.
-
-**Interagency Coordination:** Share verified documents across agencies.
-
-**Real Estate Professionals**
-
-Property transactions and due diligence:
-
-**Purchase Due Diligence:** Verify property documents during transactions.
-
-**Listing Preparation:** Confirm permits and documentation for listings.
-
-**Disclosure Compliance:** Validate required disclosures and permits.
-
-**Title Research:** Verify property documents for title clearance.
-
-**Appraisal Support:** Confirm documented improvements and permits.
-
-**Professional Licensing Boards**
-
-Licensing and credentialing:
-
-**License Applications:** Verify educational and training credentials.
-
-**Continuing Education:** Validate CE credits for license renewal.
-
-**Reciprocity Requests:** Verify out-of-state licenses for reciprocal licensing.
-
-**Disciplinary Proceedings:** Confirm credential claims in investigations.
-
-**Specialization Certification:** Verify prerequisites for specialty certification.
+**Insurance Underwriters**
+**Risk Management:** Verifying that a client's security staff is 100% compliant with state licensing before binding a high-limit general liability policy.
 
 ## Verification Architecture
 
-**The Private security and armed guard licenses Fraud Problem**
+**The "Phantom Guard" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Permit Sharing:** Using one property's permit for work at another location
-- **Scope Expansion:** Expanding permitted activities beyond authorization
-- **Contractor Fraud:** Claiming permits that were never obtained
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Weapon Qualification Forgery:** Editing a "Firearms Qualified" line on a PDF to allow a guard to work higher-paying armed shifts without taking the required range tests.
+- **Status Concealment:** Terminated guards keeping their physical cards to gain access to apartments or businesses where they were formerly employed.
+- **Name Swapping:** Unlicensed individuals with criminal records using a "Clean" friend's Guard Card to get hired at a security firm.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**State Departments of Public Safety (DPS).**
+**State Bureaus of Security and Investigative Services (BSIS).**
+**National Security Accreditation Bodies.**
 
-**Municipal Authorities:** City and county agencies issuing local permits.
+## Competition vs. Physical ID Cards
 
-**State Agencies:** State-level licensing and permitting bodies.
+| Feature | OCR-to-Hash | Holographic Card | Central Registry Lookup |
+| :--- | :--- | :--- | :--- |
+| **Trust Anchor** | **Domain-Bound.** Bound to the State Gov. | **Physical.** Trust the printer. | **Database.** High trust but manual. |
+| **Integrity** | **Binds Quals.** Protects the Armed status. | **Zero.** Doesn't protect the text. | **Data-Only.** |
+| **Speed** | **Instant.** 5-second scan at the door. | **N/A.** Just looking. | **Slow.** Requires typing 10-digit ID. |
+| **Hardware** | **Universal.** Any smartphone camera. | **Human Eye.** | **Technical.** Requires laptop/stable 5G. |
 
-**Federal Regulators:** Federal agencies for specialized permits.
-
-**Professional Boards:** State licensing boards for professional credentials.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Prevents fake security licenses. Domain binding verifies state licensing board. Employment eligibility verification. Prevents unauthorized security services. Client verification.
+**Why OCR wins here:** The "Night-Shift" reality. Bouncers and site managers often work in dark, high-pressure environments when government offices are closed. OCR-to-hash turns the **Physical Guard Card** into a live, trusted safety link, ensuring that the person "Protecting the Building" is verified safe at the exact point of risk.

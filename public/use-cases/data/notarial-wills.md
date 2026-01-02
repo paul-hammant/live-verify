@@ -1,127 +1,111 @@
 ---
-title: "Notarial wills (holographic wills, statutory wills)"
+title: "Notarial Wills (Civil Law Jurisdictions)"
 category: "Notary Services"
 volume: "Small"
 retention: "Permanent (estate records)"
 slug: "notarial-wills"
-tags: ["notarial", "wills", "notary", "services"]
+tags: ["notary", "civil-law", "wills", "estate-planning", "legal-authority", "succession"]
 ---
 
 ## What is a Notarial Will?
 
-A **Notarial Will** is a legal document that dictates how your assets are distributed after you die. Unlike a "simple" will, a notarial will is signed in front of a **Notary Public** who verifies your identity and sanity.
+In **Civil Law** jurisdictions (like France, Quebec, or Louisiana), a **Notarial Will** is a highly formal document prepared by a Notary and signed in the presence of witnesses. Unlike "Common Law" wills, which are private until death, a Notarial Will is an "Authentic Act"—it is a public document that proves itself in court.
 
-This is the highest level of legal protection for an estate.
+Because it is an "Authentic Act," it has enormous legal weight:
+1.  **Immediate Execution:** It can often be executed without a long "Probate" court process.
+2.  **Immutability:** The original is kept by the Notary in their official archives (*Minutier*).
+3.  **Presumption of Truth:** The law presumes the contents are 100% accurate.
 
-Fraud is a major risk in inheritance: family members often forge "New Wills" using a dead relative's stationery to steal assets from the true heirs. Verified hashes bind the **entire text of the will** to the notary's official journal, making it impossible to "swap pages" or forge a signature after the person has died.
+**"Succession Fraud"** occurs when heirs present a fake "Notarial Will" or a modified copy to a bank to claim an inheritance illegally. Verified hashes bind the **Testator's name, the Notary's archive ID, and the date of execution** to the National Notary Chamber's domain. This allows a bank or a land registrar to instantly verify if the document is authentic and has not been **Revoked** by a later act.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #000; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <div style="text-align: center; margin-bottom: 30px;">
-    <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">LAST WILL AND TESTAMENT</h2>
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', serif; border: 1px solid #999; background: #fff; padding: 50px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); position: relative;">
+  <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 15px; margin-bottom: 40px;">
+    <div style="font-weight: bold; font-size: 1.3em; letter-spacing: 2px;">NOTARY OFFICE</div>
+    <div style="font-size: 0.9em; text-transform: uppercase;">ACTE DE DERNIÈRE VOLONTÉ</div>
   </div>
-  <div style="font-size: 1.1em; line-height: 1.8;">
-    <p>I, <span data-bracket="start" data-for="will">]</span><strong>JOHN JACOB DOE</strong>, being of sound mind, hereby declare this to be my Last Will...</p>
-    <p><strong>Article I:</strong> I bequeath my primary residence at 123 Maple St to my daughter, Sarah Jane Smith.</p>
-    <div data-verify-line="will" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;">
-      verify:notary-check.gov/wills/v/DOE-992288 <span data-bracket="end" data-for="will">]</span>
+
+  <div style="font-size: 1.1em; line-height: 1.8; color: #000; text-align: justify;">
+    <p>BEFORE US, <span data-bracket="start" data-for="not-will">]</span><strong>Maitre JEAN-PIERRE LEFEBVRE</strong>, Notary in the City of Montreal, appeared <strong>MARCUS A. WILLOWS</strong>, who declared this to be his Last Will and Testament.</p>
+    
+    <p>The Testator bequeaths his entire estate, both real and personal, to his surviving spouse, <strong>MARIE WILLOWS</strong>, and appoints her as the Liquidator of the Succession.</p>
+  </div>
+
+  <div style="margin-top: 60px; display: flex; justify-content: space-between; align-items: flex-end;">
+    <div>
+      <div style="width: 100px; height: 100px; border: 2px solid #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; text-align: center; transform: rotate(-10deg);">OFFICIAL<br>NOTARY<br>ARCHIVE SEAL</div>
     </div>
+    <div style="text-align: right;">
+      <div style="font-size: 0.8em; color: #777;">Archive Ref: 2026-ACTE-992288</div>
+      <div style="border-top: 1px solid #000; width: 200px; padding-top: 5px; font-style: italic;">Jean-Pierre Lefebvre, Notary</div>
+    </div>
+  </div>
+
+  <div data-verify-line="not-will" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+      title="Demo only: Notary Chamber doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:notaires.qc.ca/v/2026-992288 <span data-bracket="end" data-for="not-will">]</span>
   </div>
 </div>
 
+## Data Verified
+
+Testator name, Notary name, Commission Number, Date of Act, Witness names, Archive Reference ID, Succession location, Liquidator/Executor name, Specific bequests (digest).
+
+**Document Types:**
+- **Notarial Will:** Prepared by and kept by the Notary.
+- **Codicil (Notarial):** Official amendment to a prior act.
+- **Succession Certificate:** Proof issued by the Notary after death.
+- **Revocation Act:** Proving a prior Will has been voided.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (the National or Regional Chamber of Notaries) and the current archive status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Authentic/Active** — The Will is verified and is the latest act in the registry.
+- **Superseded** — **ALERT:** A more recent Notarial Will exists (linked hash).
+- **Revoked** — The testator has formally cancelled this act.
+- **Liquidated** — The succession is complete and assets distributed.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Liquidator (Executor)** benefits from verification.
 
-**Document Authenticity:** Verify received documents are genuine and properly issued.
+**Asset Control:** Proving to a bank or an investment house that they are the verified "Liquidator" of the estate. Because Notarial Wills are self-proving, a verified hash allows the Liquidator to bypass the 30-day "Succession Search" delay, moving money to pay debts in seconds.
 
-**Third-Party Presentation:** Provide verified documentation when required.
-
-**Compliance Requirements:** Meet regulatory or contractual documentation requirements.
-
-**Record Keeping:** Maintain verified records for future reference or audits.
-
-**Dispute Prevention:** Establish authenticity to prevent future challenges.
+**International Recognition:** Providing a verified hash to a foreign consulate or bank to prove heirship for assets held in another country.
 
 ## Third-Party Use
 
-**Courts and Legal Professionals**
+**Commercial Banks**
+**Fraud Prevention:** Before releasing a €500,000 account, the bank scans the Will. "Verified by Notaires.fr" ensures the document isn't a fake copy created by a disgruntled relative.
 
-Litigation and legal proceedings:
+**Land Registrars**
+**Title Integrity:** Instantly verifying the authority of a Liquidator to sign a deed for the deceased's home, preventing "Title Gaps" and illegal sales.
 
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
-
-**Auditors and Compliance Officers**
-
-Internal and external audits:
-
-**Financial Audits:** Verify documents during financial statement audits.
-
-**Compliance Audits:** Validate documentation for regulatory compliance.
-
-**Internal Controls:** Test document authenticity in control assessments.
-
-**Fraud Investigations:** Verify documents in fraud examinations.
-
-**Third-Party Audits:** Validate vendor and partner documentation.
+**Superior Courts**
+**Litigation Speed:** In a succession dispute, providing the court with a cryptographically verified record of the act, reducing the need for costly expert handwriting analysis.
 
 ## Verification Architecture
 
-**The Notarial wills (holographic wills, statutory wills) Fraud Problem**
+**The "Hidden Codicil" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Act Suppression:** Hiding a newer Notarial Will so that an older, more favorable one can be used. OCR-to-hash stops this by showing the old Will as "Superseded" when scanned.
+- **Copy Tampering:** Editing a "True Copy" of the Will to change the names of heirs.
+- **Notary Impersonation:** Forging the seal of a retired or deceased Notary on a fake Succession Certificate.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**National Notary Chambers:** (e.g., *Chambre des Notaires du Québec*, *Conseil Supérieur du Notariat*).
+**Regional Notary Councils.**
+**Central Successions Registries:** (e.g., *Registre des Dispositions de Dernières Volontés*).
 
-**Primary Issuers:** Organizations with direct authority to issue these documents.
+## Competition vs. Apostilles
 
-**Licensed Professionals:** Professionals authorized to create and certify documents.
+| Feature | OCR-to-Hash | Apostille (Traditional) | Online Will Search |
+| :--- | :--- | :--- | :--- |
+| **Trust Anchor** | **Domain-Bound.** Bound to the Notary Org. | **Gov-Bound.** Trust the state seal. | **Database.** High trust but manual. |
+| **Integrity** | **High.** Protects every line of text. | **Low.** Only verifies the signature. | **None.** For the specific paper. |
+| **Speed** | **Instant.** 5-second scan. | **Very Slow.** Often takes weeks to get. | **Medium.** requires manual entry. |
+| **Revocation** | **Real-time.** Shows latest status. | **Zero.** Apostilles never expire. | **Manual.** |
 
-**Government Agencies:** Federal, state, or local agencies with jurisdiction.
-
-**Industry Bodies:** Trade associations and professional organizations.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Prevents forged wills in estate disputes. Domain binding verifies notary commission legitimacy. Estate disputes require verifiable will execution. Permanent legal records for testamentary documents. Will execution requirements vary by state - notarization proves compliance. Multi-page wills benefit from per-page verification to prevent page substitution attacks. Critical for estate planning where will validity determines asset distribution.
+**Why OCR wins here:** The "Authentic Act" reality. In Civil Law, the document is the law. OCR-to-hash turns the **Paper Copy** into a live, high-authority trust anchor, ensuring that "The Testator's Final Voice" is heard and verified exactly as recorded in the Notary's vault.

@@ -1,143 +1,136 @@
 ---
-title: "Online travel agency (OTA) booking confirmations"
+title: "OTA Booking Confirmations (Expedia, Booking.com)"
 category: "Travel & Hospitality"
 volume: "Very Large"
 retention: "Travel + 1-3 years"
 slug: "ota-booking-confirmations"
-tags: ["booking", "confirmations", "travel", "hospitality"]
+tags: ["ota", "booking-confirmation", "travel-logistics", "expedia", "booking-com", "itinerary-fraud", "travel-expense"]
 ---
 
 ## What is an OTA Confirmation?
 
-When you book a hotel or flight through a site like **Booking.com, Expedia, or Priceline**, you receive a **Booking Confirmation PDF**. This is your "Proof of Purchase."
+An **Online Travel Agency (OTA)** confirmation is the digital receipt issued when you book a flight, hotel, or car rental through a site like Expedia or Booking.com.
 
-The problem? These PDFs are trivial to edit. A fraudster can "edit" a $100 room to look like a $1,000 suite to trick an employer into a larger reimbursement. Or, a scam "Booking Site" might send you a fake PDF for a room that doesn't actually exist.
+It is your "Central Itinerary." It proves:
+1.  **Payment:** The price you paid (including taxes and fees).
+2.  **Rights:** Which room type or flight class you are entitled to.
+3.  **Status:** Whether the booking is "Confirmed" or "Pending."
 
-Verified hashes turn the **Static PDF** into a live link to the OTA's domain, proving that the room is paid for and the price on the page is the **truth**.
+**"Itinerary Padding"** is a common corporate fraud where employees "edit" their confirmation PDF to show a higher price (e.g., changing $150 to $250) or a "First Class" ticket when they actually flew "Economy." They then submit this to their company for reimbursement. Verified hashes bind the **Confirmation ID, Price, and Class of Service** to the OTA's domain.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #003580; border-radius: 8px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #003580; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1); overflow: hidden;">
   <div style="background: #003580; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
-    <div style="font-weight: bold; font-size: 1.4em;">Booking.com</div>
-    <div style="font-size: 0.8em; font-weight: bold;">CONFIRMATION #: <span data-bracket="start" data-for="ota">]</span>992288776</div>
+    <div>
+      <div style="font-weight: bold; font-size: 1.4em;">Booking.com</div>
+      <div style="font-size: 0.8em; opacity: 0.8;">Official Confirmation Receipt</div>
+    </div>
+    <div style="font-size: 1.2em;">🏨</div>
   </div>
-  <div style="padding: 25px; font-size: 0.95em;">
-    <p><strong>Guest:</strong> SARAH JANE SMITH</p>
-    <p><strong>Hotel:</strong> The Grand Paris<br>
-    <strong>Amount Paid:</strong> € 1,200.00 (Verified)</p>
-    <div data-verify-line="ota" style="border-top: 1px dashed #ccc; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;">
-      verify:booking.com/v/992288776 <span data-bracket="end" data-for="ota">]</span>
+
+  <div style="padding: 30px;">
+    <div style="display: flex; justify-content: space-between; margin-bottom: 25px; font-size: 0.9em; color: #555;">
+      <div>
+        <strong>Guest:</strong> <span data-bracket="start" data-for="ota">]</span>SARAH JANE SMITH<br>
+        <strong>Confirmation #:</strong> 9988776655
+      </div>
+      <div style="text-align: right;">
+        <strong>Date:</strong> 15 MAR 2026<br>
+        <strong>Status:</strong> CONFIRMED & PAID
+      </div>
+    </div>
+
+    <div style="background: #f0f4f8; padding: 15px; border: 1px solid #d1d9e6; margin-bottom: 20px;">
+      <p style="font-weight: bold; margin-top: 0;">HOTEL EXCELSIOR - ZURICH</p>
+      <table style="width: 100%; font-size: 0.9em;">
+        <tr>
+          <td>Check-in:</td>
+          <td style="text-align: right;">Apr 10, 2026</td>
+        </tr>
+        <tr>
+          <td>Check-out:</td>
+          <td style="text-align: right;">Apr 15, 2026</td>
+        </tr>
+        <tr>
+          <td>Room Type:</td>
+          <td style="text-align: right;">Executive Suite (Non-Smoking)</td>
+        </tr>
+      </table>
+    </div>
+
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px;">
+      <tr>
+        <td>Total Price (including VAT):</td>
+        <td style="text-align: right; font-weight: bold; font-size: 1.2em;">CHF 1,450.00</td>
+      </tr>
+    </table>
+
+    <div data-verify-line="ota" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: Booking.com doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:booking.com/v/9988776655 <span data-bracket="end" data-for="ota">]</span>
     </div>
   </div>
 </div>
 
+## Data Verified
+
+Passenger/Guest name, OTA Confirmation Number, Supplier Reference (PNR/Hotel ID), Total Price, Currency, Dates of travel, Class of Service (e.g., "Economy" vs "Business"), Cancellation policy terms, Issuing platform.
+
+**Document Types:**
+- **Booking Confirmation:** The primary PDF itinerary.
+- **Payment Receipt:** Itemized tax invoice.
+- **Cancellation Notice:** (Linked hash) proving a refund is due.
+- **Boarding Pass:** (Linked hash) for airline segments.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`booking.com`, `expedia.com`) and current reservation status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Confirmed/Paid** — Reservation is active and funds received.
+- **Cancelled** — **ALERT:** The trip was voided (e.g., for expense fraud detection).
+- **Checked-In** — Guest has arrived at the hotel/flight.
+- **Refunded** — Funds returned to the original payment method.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Traveler** benefits from verification.
 
-**Document Authenticity:** Verify received documents are genuine and properly issued.
+**Expense Reimbursement:** Proving to an employer or a "Travel & Expense" platform that the $1,450 "Executive Suite" was a verified business cost and not an "Economy" room they "photoshopped" up to pocket the difference.
 
-**Third-Party Presentation:** Provide verified documentation when required.
-
-**Compliance Requirements:** Meet regulatory or contractual documentation requirements.
-
-**Record Keeping:** Maintain verified records for future reference or audits.
-
-**Dispute Prevention:** Establish authenticity to prevent future challenges.
+**Visa Applications:** Providing a verified hotel confirmation to a foreign consulate. Consulates often reject un-verified OTA printouts as "Vapor-bookings," but a verified hash on the OTA's domain provides absolute trust.
 
 ## Third-Party Use
 
-**Insurance Companies**
+**Corporate Finance Departments**
+**Automatic Audit:** Using the hash to instantly validate itinerary data against the OTA's ledger, flagging "Screenshot Fraud" or deleted cancellation notices.
 
-Underwriting and claims processing:
+**Hotel Front Desks**
+**Intake Integrity:** Instantly verifying a "Third-Party Booking" if the hotel's local system is lagging. Scanning the guest's phone hash confirms they have a valid, paid-up reservation on the Booking.com domain.
 
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Customs and Border Authorities**
-
-International trade compliance:
-
-**Import Clearance:** Verify shipping documents for customs clearance.
-
-**Duty Assessment:** Validate commercial invoices and declarations.
-
-**Trade Compliance:** Confirm certificates of origin and trade documents.
-
-**Security Screening:** Verify cargo documentation for security.
-
-**Export Controls:** Validate export documentation and licenses.
-
-**Freight Forwarders and Carriers**
-
-Logistics and transportation:
-
-**Shipment Acceptance:** Verify documents before accepting cargo.
-
-**Carrier Handoffs:** Validate documentation at transfer points.
-
-**Liability Determination:** Reference verified documents for claims.
-
-**Route Planning:** Confirm documentation for transit requirements.
-
-**Delivery Confirmation:** Verify documents at final delivery.
+**Travel Insurers**
+**Claim Substantiation:** If a traveler claims their trip was cancelled due to illness, the insurer verifies the "Cancelled" status and the "Non-refundable" price directly from the OTA hash.
 
 ## Verification Architecture
 
-**The Online travel agency (OTA) booking confirmations Fraud Problem**
+**The "JPEG Itinerary" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Price Padding:** Changing a $100 budget hotel receipt to $300 to get a higher reimbursement.
+- **Status Faking:** Showing a "Confirmed" itinerary to get a travel visa, and then immediately cancelling the booking for a full refund.
+- **Class Inflation:** Editing "Premium Economy" to "Business Class" on an airline itinerary.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Global OTAs:** (Expedia Group, Booking Holdings, Trip.com).
+**Direct Suppliers:** (Marriott, Hilton, United, Lufthansa).
+**Itinerary Aggregators:** (e.g., TripIt, Traxo).
 
-**Primary Issuers:** Organizations with direct authority to issue these documents.
+## Competition vs. API Sync (Direct)
 
-**Licensed Professionals:** Professionals authorized to create and certify documents.
+| Feature | OCR-to-Hash | API Sync (Direct) | Scanned PDF / Image |
+| :--- | :--- | :--- | :--- |
+| **User Privacy** | **High.** Share only the *one* trip. | **Low.** API access often sees the *full* history. | **High.** |
+| **Trust Anchor** | **Domain-Bound.** Bound to the OTA. | **System-Bound.** Trust the app. | **Zero.** Easily forged. |
+| **Connectivity** | **Offline-Ready.** Proves the paper. | **None.** Requires live sync. | **Static.** |
+| **Cost** | **Low.** Marginal implementation. | **High.** Requires complex API keys. | **Free.** |
 
-**Government Agencies:** Federal, state, or local agencies with jurisdiction.
-
-**Industry Bodies:** Trade associations and professional organizations.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Prevents fake OTA bookings (scam booking sites). Domain binding verifies OTA (Booking.com, Expedia, Priceline). Supplier verification. Prevents booking modification fraud.
+**Why OCR wins here:** The "Hiring/Audit" reality. When a new employee joins a company, they bring their "Paper/PDF" past with them. The company doesn't want to "Sync" with the employee's private Expedia account. OCR-to-hash allows for **discrete, high-trust verification** of a single document without invading the traveler's digital life.

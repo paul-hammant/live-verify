@@ -22,44 +22,66 @@ This file tracks the "Boiler-plate Score" of each use case to identify which doc
 | | Building Safety Postings | building-safety-postings.md | 2 |
 | | Environmental & Vicinity Postings | environmental-and-vicinity-postings.md | 2 |
 | **Real Estate & Property** | 1031 Exchange Documentation | 1031-exchange-documentation.md | 1 |
-| | Property Deeds | property-deeds.md | 9 |
-| | Land Surveys | land-surveys.md | 9 |
+| | Property Deeds | property-deeds.md | 1 |
+| | Land Surveys | land-surveys.md | 1 |
+| | Rental Lease Agreements | rental-lease-agreements.md | 1 |
+| | Home Inspection Reports | home-inspection-reports.md | 1 |
+| | Construction Lien Waivers | construction-lien-waivers.md | 1 |
+| | Mortgage Satisfaction/Lien Release | mortgage-satisfaction-lien-release.md | 1 |
+| | Title Insurance Policies | title-insurance-policies.md | 1 |
+| | Probate Documents | probate-documents.md | 1 |
 | | HOA Bylaws & Revisions | hoa-bylaws-revisions.md | 3 |
-| | Mortgage Satisfaction/Lien Release | mortgage-satisfaction-lien-release.md | 8 |
-| | Home Inspection Reports | home-inspection-reports.md | 7 |
-| | Zoning & Land Use | (merged into public-works) | - |
-| **Banking & Payments** | Account Aggregation Authorization | account-aggregation-authorization.md | 2 |
-| | Bank Statements | bank-statements.md | 5 |
-| | Cashier's Checks & Money Orders | cashiers-checks-money-orders.md | 4 |
-| | Cross-Border Payment Receipts | cross-border-payment-receipts.md | 6 |
-| | P2P Payment Receipts | p2p-payment-receipts.md | 7 |
+| **Banking & Payments** | Bank Statements | bank-statements.md | 1 |
+| | Cross-Border Payment Receipts | cross-border-payment-receipts.md | 1 |
+| | P2P Payment Receipts | p2p-payment-receipts.md | 1 |
+| | P2P Lending Agreements | p2p-lending-agreements.md | 1 |
+| | Account Aggregation Authorization | account-aggregation-authorization.md | 2 |
+| | Open Banking Consent Forms | open-banking-consent-forms.md | 1 |
 | | BNPL purchase agreements | bnpl-purchase-agreements.md | 3 |
-| **Insurance** | Disability Benefit Calculations | disability-benefit-calculations.md | 2 |
+| | Cashier's Checks & Money Orders | cashiers-checks-money-orders.md | 1 |
+| **Insurance** | Life Insurance Claims | life-insurance-claims.md | 1 |
+| | Professional Liability E&O | professional-liability-eo.md | 1 |
+| | Builders Risk Insurance | builders-risk-insurance.md | 1 |
+| | Environmental Liability / Pollution | environmental-liability-pollution.md | 1 |
+| | Surety Bonds | surety-bonds.md | 1 |
+| | Commercial General Liability | commercial-general-liability.md | 1 |
+| | Disability Benefit Calculations | disability-benefit-calculations.md | 2 |
 | | Auto Insurance ID Cards | auto-insurance-id-cards.md | 3 |
-| | Commercial General Liability | commercial-general-liability.md | 5 |
-| | Life Insurance Claims | life-insurance-claims.md | 8 |
 | | Disability Insurance Policies | disability-insurance-policies.md | 3 |
 | | Claims Diary / Reserve Changes | claims-diary-reserve-changes.md | 4 |
-| **Legal & Civic** | 501c3 Status Documentation | 501c3-status-documentation.md | 2 |
-| | Birth & Death Certificates | birth-death-certificates.md | 4 |
-| | Court Orders & Judgments | court-orders-judgments.md | 8 |
-| | Power of Attorney | power-of-attorney.md | 9 |
-| | Notarized Documents | notarized-documents.md | 9 |
-| | Affidavits & Sworn Statements | affidavits-sworn-statements.md | 5 |
-| **Professional Licenses** | Cosmetology & Barber Licenses | cosmetology-barber-licenses.md | 3 |
+| **Legal & Civic** | Passports and Visa Documents | passports-visa-documents.md | 1 |
+| | Court Orders & Judgments | court-orders-judgments.md | 1 |
+| | Notarized Documents | notarized-documents.md | 1 |
+| | Last Will and Testament | wills-estate-documents.md | 1 |
+| | Power of Attorney | power-of-attorney.md | 1 |
+| | Birth & Death Certificates | birth-death-certificates.md | 1 |
+| | National / State ID Cards | national-state-province-id-cards.md | 1 |
+| | Marriage & Divorce Documents | marriage-divorce-documents.md | 1 |
+| | Social Security Benefit Statements | social-security-benefit-statements.md | 1 |
+| | Notarial Wills | notarial-wills.md | 1 |
+| | Affidavits & Sworn Statements | affidavits-sworn-statements.md | 1 |
+| | 501c3 Status Documentation | 501c3-status-documentation.md | 2 |
+| | Corporate Resolutions / Minutes | corporate-resolutions-board-minutes.md | 1 |
+| | Non-Disclosure Agreements (NDA) | non-disclosure-agreements.md | 1 |
+| **Professional Licenses** | Private Security Guard Licenses | private-security-guard-licenses.md | 1 |
+| | Cosmetology & Barber Licenses | cosmetology-barber-licenses.md | 3 |
 | | Broker-Dealer Licenses | broker-dealer-licenses.md | 4 |
 | | Medical Device Implant Cards | medical-device-implant-cards.md | 3 |
-| | Private Security Guard Licenses | private-security-guard-licenses.md | 8 |
-| | Professional Liability E&O | professional-liability-eo.md | 7 |
-| **Logistics & Trade** | Bills of Lading | bills-of-lading.md | 5 |
-| | Certificates of Origin | certificates-of-origin.md | 6 |
-| | Packing Lists | packing-lists-shipping-manifests.md | 8 |
-| | Customs Entry Clearance | customs-entry-clearance.md | 7 |
+| | Employment Reference Letters | employment-reference-letters.md | 1 |
+| **Logistics & Trade** | Packing Lists / Manifests | packing-lists-shipping-manifests.md | 1 |
+| | Certificates of Origin | certificates-of-origin.md | 1 |
+| | Customs Entry Clearance | customs-entry-clearance.md | 1 |
+| | Commercial Invoices (Customs) | commercial-invoices-customs.md | 1 |
 | | Cold Storage Temperature Records | cold-storage-temperature-records.md | 3 |
-| **Travel & Hospitality** | Airline Ancillary Fee Receipts | airline-ancillary-fee-receipts.md | 3 |
+| | Bills of Lading | bills-of-lading.md | 1 |
+| **Product & Quality** | Medical Device Certifications | medical-device-certifications.md | 1 |
+| | University Degrees / Transcripts | university-degrees.md | 1 |
+| | Educational Institution Accreditation | educational-institution-accreditation.md | 1 |
+| **Travel & Hospitality** | Guided Tour Receipts | guided-tour-receipts.md | 1 |
+| | Cruise Final Folios | cruise-final-folios.md | 1 |
+| | OTA Booking Confirmations | ota-booking-confirmations.md | 1 |
 | | Hotel Staff Verification | hotel-staff-verification.md | 2 |
-| | Cruise Final Folios | cruise-final-folios.md | 4 |
-| | Guided Tour Receipts | guided-tour-receipts.md | 7 |
+| | Airline Ancillary Fee Receipts | airline-ancillary-fee-receipts.md | 3 |
 | | Airline Compensation Letters | airline-compensation-letters.md | 3 |
 
-*Note: This list covers the major categories. Scores reflect the degree of unique vs. generic content currently in the files.*
+*Note: This list is updated as the audit continues.*

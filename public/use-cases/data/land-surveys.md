@@ -4,319 +4,117 @@ category: "Real Estate & Property"
 volume: "Very Small"
 retention: "Permanent (property records)"
 slug: "land-surveys"
-tags: ["land", "surveys", "real", "estate", "property"]
+tags: ["land", "surveys", "real", "estate", "property", "boundary", "plat"]
 ---
 
 ## What is a Land Survey?
 
-A **Land Survey** is the official map of your property. It is created by a licensed professional who visits the site with lasers and GPS to mark the exact boundaries of your land.
+A **Land Survey** is the official "Map of Truth" for your property. It is created by a licensed professional who visits the site with high-precision GPS and lasers to mark the exact boundaries of your land.
 
-It is the "Ground Truth" for your biggest asset. It proves:
+It proves the "Dirt Integrity" of your investment:
 1.  **Encroachments:** "Is my neighbor's fence 2 feet on my land?"
-2.  **Easements:** "Where is the city allowed to dig pipes?"
-3.  **Building Lines:** "Can I build a pool here?"
+2.  **Easements:** "Exactly where is the city allowed to dig pipes on my property?"
+3.  **Building Lines:** "Can I legally build this ADU or pool here?"
 
-Fraud happens when developers "Edit" a survey to hide an encroachment or to make a small lot look larger to a buyer. Verified hashes protect the **Surveyor's original measurements**, ensuring the "Dirt" you are buying is exactly what is on the paper.
+**"Boundary Fraud"** occurs when developers or shady sellers "edit" a survey PDF to hide an encroachment or to make a small lot look slightly larger to a buyer. A 2-foot error can lead to a $50,000 lawsuit. Verified hashes protect the **Surveyor's original coordinates and measurements**, ensuring the "Dirt" you are buying matches the paper.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #000; background: #fff; padding: 25px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
-    <h2 style="margin: 0; font-size: 1.2em;">OFFICIAL BOUNDARY SURVEY</h2>
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="background: #1a1a1a; color: #fff; padding: 15px; text-align: center;">
+    <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">Record of Survey</h2>
+    <div style="font-size: 0.8em; opacity: 0.8;">MILLER LAND SURVEYING, P.C.</div>
   </div>
-  <div style="font-size: 0.9em;">
-    <p><strong>Property:</strong> <span data-bracket="start" data-for="survey">]</span>LOT 42, BLOCK 7, SKYLINE HEIGHTS</p>
-    <p><strong>Dimensions:</strong> 100.00' x 150.00' (Verified)<br>
-    <strong>Encroachments:</strong> NONE FOUND</p>
-    <div data-verify-line="survey" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;">
-      verify:miller-surveying.com/v/SKYLINE-42 <span data-bracket="end" data-for="survey">]</span>
+
+  <div style="padding: 25px;">
+    <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
+      <h3 style="margin: 0; color: #333;">BOUNDARY RETRACEMENT PLAT</h3>
+      <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;">Project ID: <span data-bracket="start" data-for="survey">]</span>SKYLINE-42-2026</div>
+    </div>
+
+    <div style="font-size: 0.95em; line-height: 1.5; color: #333;">
+      <p><strong>Property:</strong> Lot 42, Block 7, Skyline Heights Addition<br>
+      <strong>Address:</strong> 4500 Skyline Blvd, Austin, TX</p>
+
+      <div style="width: 100%; height: 200px; border: 1px solid #ccc; background: #f9f9f9; display: flex; align-items: center; justify-content: center; color: #999; font-style: italic;">
+        [SIMULATED PLAT DIAGRAM WITH METES & BOUNDS]
+      </div>
+
+      <div style="background: #fffde7; border: 1px solid #fbc02d; padding: 10px; margin: 15px 0; border-radius: 4px;">
+        <strong>FIELD FINDINGS:</strong><br>
+        ✅ SW Corner: Found 5/8" Iron Rod<br>
+        ⚠️ Encroachment: Wood fence 1.2' West of East Property Line.
+      </div>
+
+      <p><strong>Licensee:</strong> Robert J. Miller, RPLS (TX #9982)<br>
+      <strong>Date of Survey:</strong> March 15, 2026</p>
+    </div>
+
+    <div data-verify-line="survey" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: Surveyor doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:miller-surveying.com/v/SKYLINE42 <span data-bracket="end" data-for="survey">]</span>
     </div>
   </div>
 </div>
 
+## Data Verified
 
-**Survey Types:**
-- **Boundary Survey:** Establishes property lines and corners
-- **ALTA/NSPS Survey:** Comprehensive survey for commercial transactions
-- **Topographic Survey:** Elevation and contour mapping
-- **Subdivision Survey/Plat:** Dividing land into lots
-- **Construction/Staking Survey:** Layout for building construction
-- **As-Built Survey:** Documents completed construction
-- **Mortgage/Loan Survey:** Lender-required survey
-- **Elevation Certificate:** FEMA flood zone documentation
+Property Lot/Block, Metes and Bounds strings, Specific Encroachment descriptions (e.g., "1.2' West"), Monument types (Iron Rod, Brass Cap), Surveyor license number, Elevation data (if included), Certification timestamp.
 
-**Multi-Page Considerations:** Survey plats are often multi-page with the drawing on one sheet and legal descriptions, certifications, and notes on others. Per-page verification prevents page substitution—particularly important when encroachment or easement pages might be removed.
+**Document Types:**
+- **Boundary Plat:** The primary map of property lines.
+- **ALTA/NSPS Survey:** The "Gold Standard" for commercial closings.
+- **Elevation Certificate:** Proving height for flood insurance (FEMA).
+- **As-Built Survey:** Proving a new building was placed correctly.
 
 ## Data Visible After Verification
 
-Shows the issuer domain (the surveying firm) and the responder text.
+Shows the issuer domain (the Surveying Firm) and the responder text.
 
 **Status Indications:**
-- **Verified** - Survey matches surveyor's records
-- **Superseded** - Newer survey has been completed
-- **Expired** - Some surveys have limited validity periods
-- **Amended** - Survey has been corrected or amended
+- **Certified** — Survey is authentic and matches the surveyor's field notes.
+- **Amended** — A correction was issued (e.g., to fix a typo in a bearing).
+- **Superseded** — **ALERT:** A newer survey of this property exists; this one is outdated.
+- **Void** — Survey retracted due to professional error or fraud.
 
-**Survey Date:** Verification indicates survey date: "Verified - Survey dated [date], by [surveyor]."
+## Second-Party Use
 
-## Second-Party Use (Property Owner Verifying Their Own Survey)
+The **Homeowner / Seller** benefits from verification.
 
-Property owners benefit from verification.
+**Disclosure Integrity:** When selling a home, providing a "Verified Survey" to the buyer. This prevents the buyer from claiming "Non-Disclosure" later if they find an encroachment, as the verified survey clearly documented the fence or shed at the time of sale.
 
-**Survey Authenticity:** After receiving survey from surveyor, verify it's genuine.
-
-**Transaction Preparation:** Verify survey before providing to buyers or lenders.
-
-**Boundary Documentation:** Maintain verified survey for boundary disputes.
-
-**Permit Applications:** Verify survey before submitting with permit applications.
-
-**Insurance Documentation:** Verify survey for property insurance purposes.
+**Permit Speed:** Proving to the City Planning Dept that your "Setback Math" is verified by a licensed professional, allowing for instant approval of a pool or fence permit.
 
 ## Third-Party Use
 
-**Title Companies**
+**Title Insurance Underwriters**
+**Risk Removal:** Title companies use surveys to remove the "Standard Survey Exception" from a policy. "Verified by Surveyor" ensures the paper isn't a "Photoshopped" copy designed to hide a title-blocking encroachment.
 
-Real estate transactions:
+**Mortgage Lenders**
+**Asset Security:** Verifying that the home they are financing is actually located on the land described in the deed. This stops "Air Loan" fraud where a house is built on the wrong lot.
 
-**Title Insurance:** Verify survey for title insurance underwriting.
-
-**ALTA Policy Requirements:** Verify ALTA/NSPS survey meets requirements.
-
-**Encumbrance Identification:** Verify surveys showing easements and encroachments.
-
-**Closing Documentation:** Verify survey before closing.
-
-**Lenders**
-
-Mortgage lending:
-
-**Loan Underwriting:** Verify survey for mortgage approval.
-
-**Collateral Assessment:** Confirm property boundaries match loan application.
-
-**Construction Loans:** Verify surveys for construction financing.
-
-**Portfolio Review:** Verify surveys for loan portfolio management.
-
-**Buyers and Sellers**
-
-Transaction due diligence:
-
-**Pre-Purchase Review:** Buyer verifies seller-provided survey.
-
-**Boundary Confirmation:** Verify property includes expected features.
-
-**Encroachment Discovery:** Verify surveys revealing encroachments.
-
-**Disclosure Support:** Seller verifies survey supporting disclosures.
-
-**Attorneys**
-
-Real estate and litigation:
-
-**Transaction Review:** Verify surveys in purchase agreements.
-
-**Boundary Disputes:** Verify surveys in adverse possession cases.
-
-**Easement Disputes:** Verify surveys showing disputed easements.
-
-**Title Litigation:** Verify surveys in title claims.
-
-**Government Agencies**
-
-Planning and permitting:
-
-**Building Permits:** Verify surveys with permit applications.
-
-**Zoning Compliance:** Verify setbacks and coverage.
-
-**Subdivision Approval:** Verify plats for subdivision approval.
-
-**Tax Assessment:** Verify surveys for property tax purposes.
-
-**Surveyors**
-
-Professional practice:
-
-**Prior Survey Review:** Verify earlier surveys before new work.
-
-**Boundary Agreement:** Reference verified surveys in boundary agreements.
-
-**Expert Testimony:** Verify surveys cited in expert reports.
-
-**Professional Liability:** Verified surveys document professional work.
-
-**Insurance Companies**
-
-Property coverage:
-
-**Property Insurance:** Verify surveys for underwriting.
-
-**Flood Insurance:** Verify elevation certificates for flood coverage.
-
-**Claims Investigation:** Verify surveys in property claims.
+**Adjacent Neighbors**
+**Boundary Peace:** If a neighbor disputes a new fence line, scanning the hash provides instant, authoritative proof of the surveyor's findings, often de-escalating neighborhood conflicts before they reach a lawyer.
 
 ## Verification Architecture
 
-**The Survey Fraud Problem**
+**The "Plat Padding" Fraud Problem**
 
-Fraudulent surveys cause significant property disputes:
+- **Encroachment Removal:** Editing a PDF to delete the text "Fence encroaches 2.0 feet" to make a title clean for a sale.
+- **Odometer Fraud (Lot Size):** Changing "100.0 feet" to "105.0 feet" to make a lot look buildable when it isn't.
+- **Stale Surveys:** Leaving a 1995 survey in a closing packet to hide that a neighbor built a massive garage on the property line in 2015.
 
-- **Forged Surveys:** Entirely fabricated surveys showing desired boundaries
-- **Altered Boundaries:** Genuine surveys with modified dimensions
-- **Surveyor Impersonation:** Surveys falsely attributed to licensed surveyors
-- **Omitted Encumbrances:** Surveys with easements or encroachments removed
-- **Date Fraud:** Old surveys presented as current
-- **Page Substitution:** Replacing certification pages in multi-page surveys
+**Issuer Types**
 
-OCR-to-hash addresses forgery and alteration. Surveyor license verification confirms credentials.
+**Private Surveying Firms:** (The primary issuers).
+**Municipal GIS Departments:** (In some jurisdictions).
+**State Boards of Professional Land Surveying.**
 
-**Surveyors as Issuers**
+## Competition vs. Digital Plat Portals
 
-Licensed surveyors issue surveys:
+| Feature | OCR-to-Hash | County GIS Viewer | Paper Plat |
+| :--- | :--- | :--- | :--- |
+| **Precision** | **High.** Binds to the specific PE seal. | **Low.** GIS maps are often "General" and not legally binding. | **Instant.** |
+| **Integrity** | **Binds Text.** Protects measurements. | **Data-Only.** Doesn't protect the paper. | **Zero.** Easily edited. |
+| **Trust Anchor** | **The Surveyor.** (Professional Liability). | **The County.** (Assessor data). | **The Ink.** |
+| **Field Access** | **Instant.** Scan the paper at the property corner. | **Difficult.** Hard to align GIS pins with physical dirt. | **Instant.** |
 
-**Licensed Land Surveyors:** State-licensed professionals.
-
-**Survey Companies:** Multi-surveyor firms.
-
-**Engineering Firms:** Licensed engineers with surveying capacity.
-
-**GIS Departments:** Some government surveys.
-
-Each surveyor or firm maintains verification endpoints for surveys they've issued.
-
-**Licensing and Standards**
-
-Surveyor qualifications:
-
-**State Licensing:** All states require surveyor licensing.
-
-**Professional Liability Insurance:** E&O coverage requirements.
-
-**Continuing Education:** Ongoing training requirements.
-
-**Standards of Practice:** State and professional standards.
-
-Verification could link to license: "Surveyor licensed in [state], license current."
-
-**ALTA/NSPS Standards**
-
-Commercial survey standards:
-
-**American Land Title Association:** Title industry standards.
-
-**National Society of Professional Surveyors:** Professional standards.
-
-**Table A Items:** Optional survey elements.
-
-**Certification Requirements:** Specific certification language.
-
-**Lender/Title Requirements:** Which Table A items required.
-
-ALTA surveys require specific verification: "Verified - ALTA/NSPS Survey with Table A items 1, 2, 3, 4, 6."
-
-**Boundary Monuments**
-
-Physical property markers:
-
-**Iron Pins/Rods:** Driven metal markers.
-
-**Concrete Monuments:** Permanent concrete markers.
-
-**Natural Monuments:** Trees, rocks, water features.
-
-**Witness Markers:** Markers near inaccessible corners.
-
-**Condition Description:** Found, set, or calculated.
-
-Survey verification confirms monument descriptions without physical inspection.
-
-**Easements and Encroachments**
-
-Property interests shown:
-
-**Utility Easements:** Power, water, sewer, communications.
-
-**Access Easements:** Right-of-way for access.
-
-**Conservation Easements:** Development restrictions.
-
-**Encroachments:** Structures crossing boundaries.
-
-**Building Setback Lines:** Required distances from boundaries.
-
-Verification notes: "Verified - Survey shows 3 easements, 1 encroachment."
-
-**Metes and Bounds**
-
-Legal descriptions:
-
-**Point of Beginning:** Starting reference point.
-
-**Bearings:** Directional measurements.
-
-**Distances:** Length measurements.
-
-**Monuments:** Reference points in description.
-
-**Closure Calculation:** Mathematical verification of boundary closure.
-
-Survey verification includes legal description confirmation.
-
-**Plat Maps and Subdivision**
-
-Recorded surveys:
-
-**Subdivision Plats:** Division of land into lots.
-
-**Recording Requirements:** Plat recording with county.
-
-**Lot/Block References:** Simplified legal descriptions.
-
-**Dedication:** Public road and utility dedications.
-
-Recorded plats may have county verification separate from surveyor verification.
-
-**Flood Zone Determinations**
-
-FEMA mapping:
-
-**FIRM Maps:** Flood Insurance Rate Maps.
-
-**Elevation Certificates:** Building elevation documentation.
-
-**LOMA/LOMR:** Map amendments and revisions.
-
-**Flood Zone Letters:** Determinations from FEMA.
-
-Elevation certificates are particularly important for flood insurance verification.
-
-**Survey Currency**
-
-When surveys age:
-
-**Currency Requirements:** Lenders may require recent surveys.
-
-**Recertification:** Surveyor certifies no changes since original.
-
-**Updated Survey:** New survey if conditions have changed.
-
-**Validity Periods:** Some uses require surveys within specific timeframes.
-
-Verification indicates survey age: "Verified - Survey dated [date], [X] years old."
-
-**Technology Integration**
-
-Modern surveying:
-
-**GPS/GNSS Surveys:** Global positioning technology.
-
-**LiDAR:** Laser scanning for topography.
-
-**Drone Surveys:** Aerial mapping with UAVs.
-
-**GIS Integration:** Geographic information systems.
-
-**Digital Plats:** Electronic recording of plats.
-
-Digital survey files may have native verification; OCR-to-hash bridges paper plats.
-
+**Why OCR wins here:** The "Fence Line" reality. Neighbors and surveyors argue in backyards and driveways. They need a **zero-friction trust anchor** that works on the paper they are holding. OCR-to-hash turns the **Static Map** into a live safety dashboard, making "Boundary Truth" a transparent fact at the exact point of the property line.
