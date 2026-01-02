@@ -7,58 +7,81 @@ beneficiary: "Employees"
 tags: ["workplace", "labor-law", "safety", "mandatory", "employees", "osha", "fmla", "eeoc", "nlra"]
 ---
 
-# Workplace Postings
+## What are Workplace Postings?
 
-**Category:** Workplace Postings
-**Beneficiary:** Employees
-**Examples:** OSHA, working hours, maternity protection, minimum wage, FMLA, EEO, unionization rights.
+Mandatory workplace postings are government-required notices that inform workers of their rights regarding safety, wages, discrimination, and leave. These must be posted in conspicuous locations accessible to all employees, typically employee breakrooms, hallways, or near time clocks.
 
-Mandatory workplace postings are government-required notices that inform workers of their rights regarding safety, wages, discrimination, and leave. 
+The problem is that these posters are often outdated or even fraudulent. Employers may fail to update posters when laws change (e.g., minimum wage increases), or shady managers might "edit" a poster to hide certain rights (e.g., changing "12 weeks" of FMLA leave to "4 weeks"). Additionally, private vendors often scam businesses into buying expensive poster bundles that are actually free from the government.
 
-**Where Posted:** Conspicuous locations accessible to all employees, typically **employee breakrooms**, **hallways**, near **time clocks**, or in **common areas**.
+OCR-to-hash allows an employee to scan the poster to verify: **"Is this the current, un-altered official version directly from the issuing authority (e.g., DOL, OSHA, EEOC)?"**
 
-## Verification Value
+<div style="max-width: 500px; margin: 24px auto; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; border: 2px solid #003366; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1); overflow: hidden;">
+  <div style="background: #003366; color: #fff; padding: 15px; text-align: center;">
+    <h2 style="margin: 0; text-transform: uppercase; font-size: 1.2em; letter-spacing: 1px;">JOB SAFETY AND HEALTH</h2>
+    <div style="font-size: 0.9em; font-weight: bold; margin-top: 5px;">IT'S THE LAW!</div>
+  </div>
 
-**Problem:**
-- **Outdated Information:** Employers may fail to update posters when laws change (e.g., minimum wage increases or the PUMP Act expansion), leading to $10,000+ fines.
-- **Fabrication/Alteration:** Managers may "edit" posters to hide rights (e.g., changing "12 weeks" of FMLA leave to "4 weeks" or altering "tipped wage" amounts).
-- **Compliance Scams:** Private vendors scaring businesses into buying $200 bundles of posters that are actually free from the government.
+  <div style="padding: 20px; font-size: 0.85em; line-height: 1.4; color: #333;">
+    <div style="display: flex; align-items: flex-start; margin-bottom: 15px;">
+      <div style="font-size: 2em; margin-right: 15px;">⚠️</div>
+      <div>
+        <strong>All workers have the right to:</strong>
+        <ul style="margin: 5px 0; padding-left: 20px;">
+          <li>A safe workplace.</li>
+          <li>Raise a safety or health concern with your employer or OSHA.</li>
+          <li>Receive information and training on job hazards.</li>
+        </ul>
+      </div>
+    </div>
 
-**Solution:**
-Employees can scan the poster to verify it is the **current, un-altered official version** directly from the issuing authority (e.g., `dol.gov`, `osha.gov`, `eeoc.gov`). This ensures they are not being misled about their legal protections.
+    <div style="background: #f9f9f9; border: 1px solid #eee; padding: 10px; border-radius: 4px; margin-bottom: 15px;">
+      <strong>Employers must:</strong> Provide a workplace free from recognized hazards. It is illegal to retaliate against an employee for using any of their rights under the law.
+    </div>
+
+    <div style="text-align: center; font-size: 0.8em; color: #666; border-top: 1px solid #eee; padding-top: 10px;">
+      For more information, contact OSHA at 1-800-321-OSHA (6742).
+    </div>
+  </div>
+
+  <div style="padding: 15px; background: #fff; border-top: 1px dashed #999; text-align: center;">
+    <div data-verify-line="osha" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #003366; font-weight: bold;"
+      title="Demo only: OSHA doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:osha.gov/posters/v/2026-GEN-SAFE <span data-bracket="end" data-for="osha">]</span>
+    </div>
+    <div style="font-size: 0.65em; color: #999; margin-top: 8px; font-style: italic;">
+      Scan to verify this is the current official version. Unauthorized alteration is a federal violation.
+    </div>
+  </div>
+</div>
 
 ## Key Examples
 
 ### Health & Safety (OSHA)
-*   **Purpose:** Inform workers of their right to a safe workplace and how to report hazards anonymously.
-*   **Risk:** Fake posters might omit the right to request an inspection or list an internal HR number instead of the official OSHA hotline.
+*   **Purpose:** Inform workers of their right to a safe workplace and how to report hazards.
+*   **Risk:** Fake posters might omit the right to request an inspection or list an internal HR number instead of the official hotline.
 
 ### Wages & Hours (FLSA)
 *   **Purpose:** Display current federal/state minimum wage and overtime rules.
 *   **Risk:** "Wage theft" via altered posters that misstate the "Tip Credit" or overtime eligibility.
 
 ### Employee Rights & Leave (FMLA, PUMP Act)
-*   **Purpose:** Detail rights to unpaid, job-protected leave for family/medical reasons or lactation accommodations.
-*   **Risk:** Employers inflating eligibility requirements (e.g., claiming 2,000 hours worked instead of the legal 1,250) to discourage leave.
+*   **Purpose:** Detail rights to unpaid, job-protected leave or lactation accommodations.
+*   **Risk:** Employers inflating eligibility requirements to discourage leave.
 
-### Discrimination & Organizing (EEOC, NLRA)
-*   **Purpose:** Protect against discrimination and guarantee the right to organize or join a union.
-*   **Risk:** Sanitized posters that remove mention of specific protected classes or the right to strike.
+## Verification Architecture
 
-## Global Variations
+**The Poster Fraud Problem**
 
-*   **United States:** Focuses on federal (DOL, EEOC) and state-level labor department requirements. Includes specialized notices like the Polygraph Protection Act.
-*   **France (Affichages Obligatoires):** Includes *Convention collective*, *Règlement intérieur*, and strict *Harcèlement* (anti-harassment) disclosures.
-*   **Germany (Aushangpflichtige Gesetze):** Laws like *Mutterschutzgesetz* (maternity) and *Arbeitszeitgesetz* (hours) must be posted or made digitally accessible.
-*   **United Kingdom:** Requires the official **Health & Safety Law** poster and the **Employer's Liability Insurance Certificate**.
+- **Outdated Info:** Keeping a 2022 minimum wage poster up in 2026.
+- **Selective Deletion:** Removing the section on "Union Rights" from an EEO poster.
+- **Compliance Scams:** Forcing businesses to buy "certified" posters that are actually home-printed fakes.
 
-## Implementation for Issuers
+**Issuer Types**
 
-**Regulatory Bodies (DOL, OSHA):**
-1.  **Generate:** Create the official PDF with a `verify:` line.
-2.  **Hash:** Bind the text content to the hash.
-3.  **Publish:** Host the endpoint confirming the version status (Current/Outdated).
+**Federal Agencies (DOL, OSHA, EEOC).**
+**State Departments of Labor.**
+**Municipal Labor Standards Offices.**
 
-**Employers:**
-1.  **Print & Post:** Use official free versions.
-2.  **Audit:** Periodically scan posters to ensure they haven't been superseded by new legislation.
+## Rationale
+
+Workplace postings are the "Bill of Rights" for the breakroom. By turning them into verifiable digital bridges, we ensure that employees are informed by the digital truth of the law, not the creative editing of a manager.

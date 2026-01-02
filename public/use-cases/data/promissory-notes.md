@@ -1,263 +1,109 @@
 ---
 title: "Promissory Notes and Loan Documents"
 category: "Financial & Legal Documents"
-volume: "Medium-Small"
-retention: "Loan term + 7-10 years"
+volume: "Medium"
+retention: "Loan term + 7-10 years (statute of limitations)"
 slug: "promissory-notes"
-tags: ["promissory", "notes", "financial", "legal", "documents"]
+tags: ["finance", "lending", "promissory-note", "negotiable-instrument", "loan-agreement", "ucc-article-3", "debt-verification", "secondary-market"]
 ---
+
+## What is a Promissory Note?
+
+A **Promissory Note** is a legal "Promise to Pay." It is a financial instrument that contains a written promise by one party (the maker or borrower) to pay a specific sum of money to another party (the payee or lender), either on demand or at a specified future date.
+
+These documents are the "Paper Gold" of the lending industry. In the **Secondary Market**, promissory notes are bought and sold for millions of dollars. Fraud is high-stakes: a dishonest person might "edit" a note to change a 5% interest rate to 15%, or to increase the principal amount. Similarly, a borrower might use a fake "Satisfied" stamp to hide a debt. Verified hashes bind the **Principal, Interest Rate, and Maturity Date** to the lender's or the servicing agent's domain (e.g., `chase.com` or `fanniemae.com`).
+
+<div style="max-width: 650px; margin: 24px auto; font-family: 'Times New Roman', Times, serif; border: 1px solid #000; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 30px;">
+    <h2 style="margin: 0; font-size: 1.4em; text-transform: uppercase; letter-spacing: 1px;">PROMISSORY NOTE</h2>
+    <div style="font-size: 0.9em; font-style: italic;">Fixed Rate - Installment</div>
+  </div>
+
+  <div style="font-size: 1em; line-height: 1.6; color: #000; text-align: justify;">
+    <div style="display: flex; justify-content: space-between; margin-bottom: 20px; font-weight: bold;">
+      <div>$ 125,000.00</div>
+      <div>MARCH 15, 2026</div>
+    </div>
+
+    <p>FOR VALUE RECEIVED, the undersigned <span data-bracket="start" data-for="note">]</span><strong>ROBERT J. MILLER</strong> (the "Borrower"), promises to pay to the order of <strong>GOLIATH NATIONAL BANK</strong> (the "Lender"), the principal sum of <strong>One Hundred Twenty-Five Thousand Dollars</strong> ($125,000.00) with interest at the rate of <strong>6.5%</strong> per annum.</p>
+    
+    <div style="background: #f9f9f9; padding: 15px; border: 1px solid #ccc; margin: 20px 0;">
+      <strong>Payment Terms:</strong> Monthly installments of $790.00 commencing May 1, 2026. Final payment due March 1, 2041 (Maturity).
+    </div>
+
+    <p>This Note is secured by a Security Agreement of even date covering certain collateral described therein.</p>
+  </div>
+
+  <div style="margin-top: 40px; border-top: 1px solid #000; width: 200px; padding-top: 5px; font-style: italic;">
+    Borrower Signature
+  </div>
+
+  <div style="padding: 20px; background: #fffbe6; border: 1px dashed #999; margin-top: 30px; text-align: center;">
+    <div data-verify-line="note" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
+      title="Demo only: Banks don't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:goliathbank.com/v/NOTE992288-RM <span data-bracket="end" data-for="note">]</span>
+    </div>
+    <div style="font-size: 0.7em; color: #666; margin-top: 8px;">
+      Scan to verify principal amount, interest rate, and current lien holder status.
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Borrower name, lender name, principal amount, interest rate, payment terms (amount, frequency, due date), loan date, maturity date, collateral description (if secured), default provisions, prepayment terms, signatures, any endorsements.
+Principal amount (numerical and text), interest rate (fixed/variable), borrower name, lender name, payment frequency, installment amount, maturity date, collateral reference, late fee terms, date of execution, loan ID.
 
 **Document Types:**
-- **Simple Promissory Note:** Basic promise to pay
-- **Secured Promissory Note:** Note secured by collateral
-- **Demand Note:** Payable on demand
-- **Installment Note:** Regular periodic payments
-- **Balloon Note:** Small payments with large final payment
-- **Convertible Note:** Converts to equity (startups)
-- **Mortgage Note:** Note secured by real property
-- **Auto Loan Note:** Note secured by vehicle
-
-**Negotiable Instrument:** Promissory notes may be negotiable instruments under UCC Article 3, meaning they can be transferred by endorsement.
+- **Unsecured Promissory Note:** A simple "I Owe You."
+- **Mortgage Note:** Secured by real estate (the "Title").
+- **Commercial Term Note:** For business equipment or capital.
+- **Convertible Note:** For startup seed investments.
 
 ## Data Visible After Verification
 
-Shows the issuer domain (the lender) and the responder text.
+Shows the issuer domain (`chase.com`, `quickenloans.com`, `circleup.com`) and the note standing.
 
 **Status Indications:**
-- **Active** - Loan is current and in repayment
-- **Paid in Full** - Loan has been satisfied
-- **Default** - Borrower is in default
-- **Accelerated** - Full balance due immediately
-- **Discharged** - Discharged in bankruptcy
-- **Modified** - Terms have been modified
+- **Active / Current** — Borrower is making payments as agreed.
+- **Satisfied / Paid** — **ALERT:** The debt is fully cleared; this paper is no longer a liability.
+- **In Default** — **CRITICAL:** Borrower has missed payments; legal action active.
+- **Assigned / Sold** — **ALERT:** The note was sold to a different lender (shows new holder).
 
-**Balance Information:** Verification may indicate: "Active - Current, next payment [date]."
+## Second-Party Use
 
-## Second-Party Use (Borrower Verifying Their Own Note)
+The **Borrower (Maker)** benefits from verification.
 
-Borrowers benefit from verification.
+**Payoff Protection:** When a borrower makes their final payment, the lender updates the hash status to **"PAID IN FULL."** The borrower can then use this verified hash to prove to future lenders or credit bureaus that the debt is gone, even if they lost the original "Satisfied" paper letter.
 
-**Term Confirmation:** Verify loan terms match what was agreed.
-
-**Rate Verification:** Confirm interest rate is correctly recorded.
-
-**Payment Tracking:** Verify payments are properly credited.
-
-**Payoff Verification:** Verify loan is shown as paid after payoff.
-
-**Dispute Documentation:** Document loan terms for disputes.
+**Dispute Defense:** If a lender's system has a glitch and claims a 10% interest rate, the borrower can scan the verified note to prove the original agreed-upon rate of 6.5% with cryptographic certainty.
 
 ## Third-Party Use
 
-**Note Purchasers**
+**Note Buyers (Secondary Market)**
+**Due Diligence:** Before buying a portfolio of 1,000 notes, an investor scans the hashes. Verification ensures the "Principal Balances" and "Maturity Dates" haven't been inflated by the seller to make the portfolio look more valuable than it is.
 
-Secondary market:
+**Civil Courts / Judges**
+**Standing Verification:** In a foreclosure case, the "Plaintiff" must prove they actually own the note. OCR-to-hash allows the court to verify the "Chain of Assignment" directly from the original lender's domain, stopping the common "Lost Note" fraud.
 
-**Due Diligence:** Verify note before purchasing.
-
-**Terms Confirmation:** Confirm stated terms match original.
-
-**Status Verification:** Verify current payment status.
-
-**Chain of Endorsement:** Verify proper endorsement chain.
-
-**Courts**
-
-Legal proceedings:
-
-**Collection Cases:** Verify note in debt collection litigation.
-
-**Bankruptcy Proceedings:** Verify claims in bankruptcy.
-
-**Foreclosure:** Verify note in foreclosure actions.
-
-**Standing Verification:** Confirm plaintiff owns the note.
-
-**Borrower Attorneys**
-
-Debtor representation:
-
-**Terms Verification:** Verify terms client is disputing.
-
-**Rate Confirmation:** Verify disclosed APR and rates.
-
-**TILA Compliance:** Verify Truth in Lending disclosures.
-
-**Fraud Investigation:** Verify in predatory lending cases.
-
-**Collateral Holders**
-
-Secured lending:
-
-**Security Interest:** Verify note matches UCC filing.
-
-**Priority Disputes:** Verify note terms in priority contests.
-
-**Lien Perfection:** Verify note supports security interest.
-
-**Successor Lenders**
-
-Loan acquisition:
-
-**Portfolio Purchase:** Verify notes in portfolio acquisitions.
-
-**Servicing Transfer:** Verify when servicing rights transfer.
-
-**Modification Verification:** Verify modification terms.
-
-**Regulators**
-
-Consumer protection:
-
-**Rate Cap Compliance:** Verify rates within legal limits.
-
-**Disclosure Requirements:** Verify required disclosures present.
-
-**Fair Lending:** Verify in discrimination investigations.
+**Attorneys / Estate Executors**
+**Asset Reconciliation:** Verifying the true value and terms of notes held by a deceased person to ensure the estate is accurately valued for tax and distribution.
 
 ## Verification Architecture
 
-**The Promissory Note Fraud Problem**
+**The "Paper Profit" Fraud Problem**
 
-Note fraud causes significant harm:
+- **Rate Padding:** Editing a PDF note to turn a 4% low-interest loan into a 12% high-yield asset to sell to an investor.
+- **Zombie Notes:** Trying to collect on a note that was already "Paid in Full" years ago.
+- **Double-Selling:** Selling the same physical note to two different investors (verification reveals the "Assigned to [Buyer A]" alert).
 
-- **Forged Notes:** Entirely fabricated loan documents
-- **Altered Terms:** Genuine notes with changed rates or amounts
-- **Unauthorized Modification:** Changes not agreed by borrower
-- **Assignment Fraud:** False claims of note ownership
-- **Double Assignment:** Same note sold to multiple parties
-- **Lost Note Fraud:** False "lost note" claims in foreclosure
+**Issuer Types**
 
-OCR-to-hash addresses forgery and alteration. Lender verification confirms authentic terms.
+**Retail & Commercial Banks.**
+**Peer-to-Peer (P2P) Platforms.**
+**Private Mortgage Servicers.**
 
-**Lenders as Issuers**
+**Privacy Salt:** Highly Critical. Loan amounts and borrower identities are private financial data. The hash must be salted to prevent "Wealth Mapping" of the population.
 
-Various lenders issue notes:
+## Rationale
 
-**Banks and Credit Unions:** Traditional financial institutions.
-
-**Mortgage Companies:** Residential and commercial lenders.
-
-**Auto Finance Companies:** Vehicle lenders.
-
-**Private Lenders:** Individual and hard money lenders.
-
-**Peer-to-Peer Platforms:** Online lending platforms.
-
-Each lender operates verification endpoints for notes they issue.
-
-**Negotiability and Endorsement**
-
-UCC Article 3 requirements:
-
-**Holder in Due Course:** Protection for good faith purchasers.
-
-**Endorsement Chain:** Tracking note transfers.
-
-**Allonge:** Additional page for endorsements.
-
-**Bearer vs. Order:** How note may be transferred.
-
-Verification should track endorsement: "Original Lender: [X], Current Holder: [Y]."
-
-**Secured vs. Unsecured**
-
-Collateral considerations:
-
-**Mortgage Notes:** Secured by real property.
-
-**Auto Notes:** Secured by vehicle.
-
-**Equipment Notes:** Secured by equipment.
-
-**Unsecured Notes:** No collateral.
-
-Verification may reference: "Secured by [collateral], UCC filed [date]."
-
-**Loan Modification**
-
-Changes to original terms:
-
-**Rate Modification:** Interest rate changes.
-
-**Term Extension:** Extending maturity date.
-
-**Principal Reduction:** Reducing amount owed.
-
-**Forbearance:** Temporary payment relief.
-
-Modified notes should verify as: "Modified [date] - Original [terms], Modified [terms]."
-
-**Default and Acceleration**
-
-When borrowers fail to pay:
-
-**Payment Default:** Missing scheduled payments.
-
-**Cross-Default:** Default on related obligations.
-
-**Acceleration Clause:** Full balance due immediately.
-
-**Cure Rights:** Opportunity to cure before acceleration.
-
-Verification should indicate: "Default - Accelerated [date]."
-
-**Bankruptcy Considerations**
-
-Insolvency impact:
-
-**Automatic Stay:** Collection efforts halted.
-
-**Proof of Claim:** Creditor files claim with court.
-
-**Discharge:** Personal liability may be discharged.
-
-**Secured Claims:** Collateral protects secured portion.
-
-Verification may indicate: "Discharged in bankruptcy [date]" or "Bankruptcy stay in effect."
-
-**Satisfaction and Release**
-
-Loan payoff:
-
-**Satisfaction of Note:** Lender marks note paid.
-
-**Lien Release:** Security interest released.
-
-**Payoff Letter:** Statement of payoff amount.
-
-**Recording:** Release recorded for real property.
-
-Post-payoff verification: "Paid in Full [date]."
-
-**State Law Variations**
-
-Lending regulations vary:
-
-**Usury Laws:** Maximum interest rate limits.
-
-**Disclosure Requirements:** State-specific disclosures.
-
-**Foreclosure Procedures:** Judicial vs. non-judicial.
-
-**Consumer Protections:** State consumer lending laws.
-
-Verification confirms compliance: "Valid under [state] law."
-
-**Electronic Notes**
-
-Digital lending:
-
-**E-Note:** Electronic promissory note.
-
-**E-Signature:** Electronic signature on note.
-
-**MERS:** Mortgage Electronic Registration System.
-
-**Transferable Records:** UCC Article 9 electronic records.
-
-Electronic notes may have native verification; OCR-to-hash bridges paper notes.
-
+Promissory notes are the "Currency of the Credit Market." By turning them into verifiable digital bridges, we ensure that the multi-trillion dollar market for debt is based on the digital truth of the contract, not the creative editing of a PDF.

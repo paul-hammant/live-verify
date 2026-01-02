@@ -1,125 +1,119 @@
 ---
-title: "Teaching reciprocity/compact credentials"
+title: "Teaching Reciprocity and Compact Credentials"
 category: "Professional & Educational Qualifications"
 volume: "Very Small"
-retention: "License term"
+retention: "License term (3-10 years)"
 slug: "teaching-reciprocity-credentials"
-tags: ["teaching", "reciprocity", "credentials", "professional", "educational", "qualifications"]
+tags: ["teaching-license", "education-reciprocity", "interstate-compact", "teacher-credentialing", "background-check", "academic-integrity", "school-district-hiring", "nasdtec"]
 ---
+
+## What are Teaching Reciprocity Credentials?
+
+In the education sector, a **Teaching License** is state-specific. However, under **Interstate Compacts** (like NASDTEC), a teacher licensed in New York can often "Reciprocate" their license to work in California. This requires a **Letter of Good Standing** or a **Reciprocity Certificate** from the original state.
+
+These documents are the "Keys to the Classroom." Fraud is high-stakes: individuals whose licenses were revoked for misconduct in one state often create fake "Clean" letters to find work in a different state. Verified hashes bind the **License Number, Endorsements (e.g., Special Ed), and Disciplinary Status** to the state's Department of Education domain (e.g., `nysed.gov` or `ctc.ca.gov`).
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #003366; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="background: #003366; color: #fff; padding: 20px; display: flex; align-items: center; justify-content: space-between;">
+    <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 1px;">STATE BOARD OF EDUCATION</div>
+    <div style="text-align: right;">
+      <div style="font-weight: bold; font-size: 0.9em;">INTERSTATE RECIPROCITY</div>
+      <div style="font-size: 0.7em; opacity: 0.8;">OFFICIAL VERIFICATION OF STATUS</div>
+    </div>
+  </div>
+
+  <div style="padding: 25px;">
+    <div style="display: flex; margin-bottom: 25px;">
+      <div style="width: 100px; height: 120px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #999; font-size: 0.7em; text-align: center; margin-right: 20px;">[TEACHER PHOTO]</div>
+      <div style="flex-grow: 1; font-size: 0.9em; line-height: 1.5;">
+        <div style="font-size: 0.8em; color: #888; text-transform: uppercase;">License Holder</div>
+        <div style="font-size: 1.3em; font-weight: bold; color: #003366;"><span data-bracket="start" data-for="teach">]</span>SARAH J. SMITH</div>
+        
+        <div style="margin-top: 10px;">
+          <strong>Primary State:</strong> New York (NYSED)<br>
+          <strong>License ID:</strong> NY-992288-XJ<br>
+          <strong>Status:</strong> CLEAR / GOOD STANDING
+        </div>
+      </div>
+    </div>
+
+    <div style="background: #f0f4f8; padding: 15px; border: 1px solid #d1d9e6; border-radius: 4px; margin-bottom: 20px;">
+      <h4 style="margin-top: 0; color: #003366; font-size: 0.9em; border-bottom: 1px solid #ccc; padding-bottom: 5px;">CERTIFIED ENDORSEMENTS</h4>
+      <ul style="margin: 5px 0; padding-left: 20px; font-size: 0.85em;">
+        <li>Mathematics (Grades 7-12)</li>
+        <li>Special Education (Generalist)</li>
+        <li>Bilingual Education (Spanish)</li>
+      </ul>
+    </div>
+
+    <div style="font-size: 0.75em; color: #666; text-align: center; font-style: italic;">
+      This credential is part of the NASDTEC Interstate Agreement. Scan to verify background check clearance and disciplinary history.
+    </div>
+  </div>
+
+  <div style="padding: 20px; background: #fff; border-top: 1px dashed #999; text-align: center;">
+    <div data-verify-line="teach" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #003366; font-weight: bold;"
+      title="Demo only: Education boards don't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:nysed.gov/v/teach/NY992288XJ <span data-bracket="end" data-for="teach">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Teacher name, license IDs across states/provinces
+Teacher name, primary state of licensure, license ID number, license type (e.g., Professional/Initial), expiration date, certified subject endorsements, disciplinary status (Clear/Flagged), background check timestamp, interstate compact eligibility code.
+
+**Document Types:**
+- **Reciprocity Certificate:** Proving status to a second state.
+- **Letter of Good Standing:** For out-of-state hiring.
+- **Teaching License:** The primary state-issued card.
+- **Praxis Score Report:** (Linked hash) proving exam passage.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`nysed.gov`, `isbe.net`, `fldoe.org`) and the professional standing.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Active / Clear** — Teacher is in good standing; no disciplinary actions on file.
+- **Flagged** — **ALERT:** A potential disciplinary or background issue is recorded.
+- **Revoked** — **CRITICAL:** Teaching authority has been terminated in the primary state.
+- **Expired** — Mandatory professional development hours not met; license inactive.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Teacher / Educator** benefits from verification.
 
-**Credential Verification:** Confirm educational credentials after issuance.
+**Interstate Relocation:** A teacher moving from NY to Florida can provide the verified hash of their "NY Good Standing" letter to the Florida DOE. The Florida board can instantly see **"VERIFIED CLEAR - NYSED"** on their phone, allowing them to issue a Florida license in days instead of months.
 
-**Job Applications:** Present verified credentials to prospective employers.
-
-**Further Education:** Provide verified transcripts for graduate school applications.
-
-**Professional Licensing:** Submit verified credentials for license applications.
-
-**Immigration Applications:** Verify educational credentials for visa applications.
+**Substitute Hiring:** Proving to multiple school districts that their background check is verified and current, allowing them to work across district lines without re-submitting paper files to every district HR office.
 
 ## Third-Party Use
 
-**Employers**
+**School District HR Managers**
+**Hiring Integrity:** Thousands of resumes are received for every opening. OCR-to-hash allows the HR manager to instantly filter for only verified, state-licensed candidates, protecting the school from the liability of hiring an un-certified teacher.
 
-Hiring and compliance verification:
+**National Clearinghouses (NASDTEC)**
+**Disciplinary Tracking:** When a teacher is flagged for misconduct, the state updates the hash status. Every other state where that teacher applied can instantly see the **"FLAGGED"** status, stopping "State-Hopping" by bad actors.
 
-**Pre-Employment Screening:** Verify credentials during hiring process.
-
-**I-9 Compliance:** Verify work authorization and identity documents.
-
-**Credential Verification:** Confirm professional licenses and certifications.
-
-**Health Requirements:** Verify health-related documentation for workplace safety.
-
-**Background Checks:** Integrate verification into background check processes.
-
-**Educational Institutions**
-
-Admissions and enrollment:
-
-**Transfer Credits:** Verify transcripts for transfer credit evaluation.
-
-**Graduate Admissions:** Validate undergraduate credentials for graduate programs.
-
-**Professional Programs:** Confirm prerequisite credentials for professional schools.
-
-**International Students:** Verify foreign credentials for admissions and visa support.
-
-**Scholarship Awards:** Validate academic credentials for scholarship eligibility.
-
-**Professional Licensing Boards**
-
-Licensing and credentialing:
-
-**License Applications:** Verify educational and training credentials.
-
-**Continuing Education:** Validate CE credits for license renewal.
-
-**Reciprocity Requests:** Verify out-of-state licenses for reciprocal licensing.
-
-**Disciplinary Proceedings:** Confirm credential claims in investigations.
-
-**Specialization Certification:** Verify prerequisites for specialty certification.
+**Parents / PTA**
+**Safety Verification:** In some jurisdictions, parents can verify that their child's teacher is an authorized, background-checked professional.
 
 ## Verification Architecture
 
-**The Teaching reciprocity/compact credentials Fraud Problem**
+**The "Clean-Hopping" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Diploma Mills:** Fake credentials from non-accredited institutions
-- **Grade Alteration:** Modified transcripts with inflated grades
-- **Degree Fabrication:** Completely fabricated degrees from real institutions
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Status Masking:** Editing a "Revoked" NY license into a "Clean" one to get hired in a rural district in a different state.
+- **Endorsement Padding:** Adding a "Special Ed" endorsement to a standard license to qualify for a higher-paying role.
+- **Background Forgery:** Creating a fake "FBI Clearance" letter to bypass child safety vetting.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**State Departments of Education.**
+**National Evaluation Series (Praxis/ETS).**
+**Teacher Licensing Compacts.**
 
-**Universities and Colleges:** Accredited degree-granting institutions.
-
-**Registrars:** Academic records offices at educational institutions.
-
-**Accreditation Bodies:** Regional and professional accreditors.
-
-**Testing Organizations:** Standardized testing and certification providers.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
+**Privacy Salt:** Critical. Teacher PII and disciplinary data are sensitive. The hash must be salted to prevent "Mass Roster Scraping" of the nation's educators.
 
 ## Rationale
 
-Multi-state portability. State boards host endpoints. Domain binding verifies education authority.
+Teaching is a "Trust-Based Profession." By turning licenses into verifiable digital bridges, we ensure that classroom authority is backed by cryptographic proof, protecting students and rewarding the vast majority of educators who maintain clean professional records.

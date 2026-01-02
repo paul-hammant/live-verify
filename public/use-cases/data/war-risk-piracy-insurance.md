@@ -1,129 +1,130 @@
 ---
-title: "War risk and piracy insurance certificates"
+title: "War Risk and Piracy Insurance Certificates"
 category: "Specialty Insurance"
-volume: "Small"
-retention: "Voyage + 7 years"
+volume: "Very Small"
+retention: "Voyage + 10 years (claims / audit)"
 slug: "war-risk-piracy-insurance"
-tags: ["risk", "piracy", "insurance", "logistics", "transportation"]
+tags: ["specialty-insurance", "war-risk", "piracy-coverage", "maritime-security", "high-risk-transit", "vessel-protection", "marine-finance", "armed-guard-verification"]
 ---
+
+## What is War Risk and Piracy Insurance?
+
+In global shipping, standard hull insurance often excludes "War Risks" (e.g., missiles, sea mines) and "Piracy." Shipowners must buy specialized **War Risk Insurance** when a vessel enters a "High-Risk Area" (HRA), such as the Red Sea, the Gulf of Aden, or the Strait of Hormuz. A **War Risk Binder** or Certificate is the proof that the vessel has the extra multi-million dollar coverage needed for these zones.
+
+These documents are the "Combat Passport" for a ship. Fraud is high-stakes: a shipowner might create a fake "Lloyd's" binder to trick a bank or a charterer into believing the ship is covered for a Red Sea transit, when it actually is not. Similarly, they might "edit" a policy to remove a mandatory "Armed Guard" requirement to save on security costs. Verified hashes bind the **Vessel IMO, Transit Dates, and Specific High-Risk Zones** to the specialist insurer's domain (e.g., `beazley.com` or `dnv.com`).
+
+<div style="max-width: 650px; margin: 24px auto; font-family: 'Times New Roman', Times, serif; border: 2px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+  <div style="background: #1a1a1a; color: #fff; padding: 25px; display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid #d32f2f;">
+    <div>
+      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;">BEAZLEY SPECIALTY MARINE</div>
+      <div style="font-size: 0.8em; opacity: 0.9; text-transform: uppercase;">War, Piracy & Terrorism Unit</div>
+    </div>
+    <div style="font-size: 2em;">⚔️</div>
+  </div>
+
+  <div style="padding: 25px;">
+    <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
+      <div>
+        <strong>Vessel Name:</strong> <span data-bracket="start" data-for="war">]</span>MV OCEAN SENTINEL<br>
+        <strong>IMO Number:</strong> 9922887<br>
+        <strong>Flag:</strong> Marshall Islands
+      </div>
+      <div style="text-align: right;">
+        <strong>Certificate #:</strong> WR-2026-8844<br>
+        <strong>Voyage Start:</strong> 15 MAR 2026<br>
+        <strong>Voyage End:</strong> 15 APR 2026
+      </div>
+    </div>
+
+    <div style="background: #fdf2f2; border: 1px solid #f8d7da; padding: 15px; margin-bottom: 20px; border-radius: 4px;">
+      <h4 style="margin-top: 0; color: #721c24; font-size: 0.9em; border-bottom: 1px solid #f5c6cb; padding-bottom: 5px;">VERIFIED HIGH-RISK ZONES</h4>
+      <table style="width: 100%; font-size: 0.85em;">
+        <tr>
+          <td><strong>Indian Ocean / HRA:</strong></td>
+          <td style="text-align: right; font-weight: bold; color: #2e7d32;">COVERED</td>
+        </tr>
+        <tr>
+          <td><strong>Red Sea / Southern Basin:</strong></td>
+          <td style="text-align: right; font-weight: bold; color: #2e7d32;">COVERED</td>
+        </tr>
+        <tr>
+          <td><strong>Gulf of Guinea:</strong></td>
+          <td style="text-align: right; font-weight: bold; color: #d32f2f;">EXCLUDED</td>
+        </tr>
+      </table>
+    </div>
+
+    <div style="font-size: 0.8em; color: #333; border: 1px solid #ccc; padding: 10px; background: #fffbe6;">
+      <strong>Mandatory Warranties:</strong> Minimum 3-person Private Armed Security Team (PMSC) required during HRA transit. Continuous AIS monitoring required.
+    </div>
+  </div>
+
+  <div style="padding: 20px; background: #f5f5f5; border-top: 1px solid #000; text-align: center;">
+    <div data-verify-line="war" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
+      title="Demo only: Specialty insurers don't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:beazley.com/war/v/IMO9922887 <span data-bracket="end" data-for="war">]</span>
+    </div>
+    <div style="font-size: 0.7em; color: #777; margin-top: 10px;">
+      Scan to verify real-time zone authorization, armed guard requirements, and P&I club coordination.
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Vessel owner, vessel IMO, covered war zones, piracy areas, premium, insurer
+IMO number, vessel name, insurer name, insured owner name, voyage dates, specific HRA zones (e.g., Red Sea, Indian Ocean), hull value limit, TPL (Third-Party Liability) limit, kidnap & ransom (K&R) sub-limit, armed guard warranty status (PMSC), date of issuance, broker ID.
 
-**Policy Forms:** Different policy forms and endorsements may apply.
+**Document Types:**
+- **War Risk Binder:** The primary 1-page voyage proof.
+- **K&R (Kidnap & Ransom) Policy:** Specifically for piracy regions.
+- **Notice of Area Breach:** (Linked hash) reporting a deviation into an un-insured zone.
+- **PMSC Authorization:** Proof that the hired guards are approved by the insurer.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`beazley.com`, `hiscox.com`, `lloyds.com`) and the vessel standing.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-- **Cancelled** - Policy cancelled before expiration
-- **Non-Renewed** - Policy expired and not renewed
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Bound / Covered** — Policy is active for the stated voyage and zones.
+- **Area Exclusion Alert** — **ALERT:** The vessel is entering a zone not covered by the hash.
+- **Warranty Breach** — **CRITICAL:** Insurer has flagged a failure to maintain security (e.g., guards not on board).
+- **Lapsed** — **ALERT:** The voyage window has passed; coverage terminated.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Shipowner / Master** benefits from verification.
 
-**Proof of Coverage:** Verify coverage is active when needed for compliance or access.
+**Suez Canal / Port Entry:** Before a vessel is allowed to enter a high-risk canal or port, the authorities demand proof of war risk insurance. The Master shows the verified hash. "Verified by Beazley" ensures the port that the ship has the $500M+ coverage needed to handle a wreck removal after a missile strike, allowing the ship to pass without delay.
 
-**Claims Support:** Confirm policy details when filing claims.
-
-**Coverage Confirmation:** Verify coverage terms match expectations after purchase.
-
-**Third-Party Presentation:** Provide verified proof to landlords, lenders, or employers.
-
-**Renewal Verification:** Confirm renewal was processed and coverage continues.
+**Charterer Trust:** Before a global commodity firm (e.g., Trafigura or Vitol) hires a ship for a Red Sea route, they scan the P&I and War Risk hashes. Verification ensures the ship meets their "Tier-1 Vetting" standards for safety.
 
 ## Third-Party Use
 
-**Regulators and Oversight Bodies**
+**Trade Finance Banks**
+**Collateral Protection:** Banks lending against the "Cargo Value" scan the vessel's war risk hash. If it returns **"EXCLUDED - RED SEA,"** the bank can instantly block the ship's route to protect their collateral from un-insured loss.
 
-Regulatory compliance and oversight:
+**Private Maritime Security Companies (PMSCs)**
+**Engagement Vetting:** Before providing armed guards to a ship, the security firm verifies the vessel's insurance. Verification ensures they aren't working for a "Rogue Ship" that lacks the K&R coverage needed if the guards themselves are captured.
 
-**Systematic Hash Receipt:** Receive hashes in bulk for regulatory oversight.
-
-**Audit Verification:** Verify documents during routine or targeted audits.
-
-**Compliance Monitoring:** Monitor issuer compliance with documentation requirements.
-
-**Investigation Support:** Verify documents during fraud or compliance investigations.
-
-**Consumer Protection:** Verify consumer-facing documents for protection enforcement.
-
-**Lenders and Financial Institutions**
-
-Credit underwriting and risk assessment:
-
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
+**Coastal Navies / Coast Guards**
+**Incident Response:** After a ship is attacked, the responding Navy scans the verified hash to identify the insurer and P&I club for coordination of salvage and crew recovery.
 
 ## Verification Architecture
 
-**The War risk and piracy insurance certificates Fraud Problem**
+**The "Zone Masking" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Coverage Inflation:** Inflating coverage limits or adding non-existent coverage
-- **Backdating:** Creating policies with false effective dates
-- **Ghost Policies:** Fabricated policies from non-existent insurers
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Zone Inflation:** Editing a "Gulf of Aden Only" policy to include the "Red Sea" on a PDF to avoid a $50,000 premium hike.
+- **Guard Ghosting:** Removing the "Armed Guard Required" clause from a policy before showing it to a charterer to save on security fees.
+- **IMO Clamping:** Using a valid binder for a high-quality ship to cover for an un-insured, low-quality "Shadow Fleet" vessel.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Global Specialty Insurers.**
+**Lloyd's of London Marine Syndicates.**
+**Maritime Security Registries.**
 
-**Banks and Credit Unions:** Depository institutions for account documents.
-
-**Investment Firms:** Brokerage and investment management firms.
-
-**Insurance Companies:** Insurers for policy and claims documents.
-
-**Accounting Firms:** CPAs and audit firms for financial statements.
-
-**System Integration**
-
-Insurance verification integrates with industry systems:
-
-**Policy Administration Systems:** Core insurance systems generate verification hashes at policy issuance.
-
-**ACORD Standards:** Insurance industry data standards could include verification fields.
-
-**State Insurance Databases:** Regulators maintain databases for systematic hash receipt.
-
-**Agent Portals:** Insurance agents access verification for client service.
+**Privacy Salt:** Highly Critical. Vessel positions and insurance values are national security and high-value trade secrets. The hash must be salted and access restricted to authorized maritime authorities.
 
 ## Rationale
 
-Prevents fake war risk certificates. Domain binding verifies Lloyd's syndicate. High-risk areas (Gulf of Aden, Strait of Hormuz). Separate from standard hull coverage. Time-sensitive voyage-specific coverage. Joint War Committee (JWC) listed areas.
+War risk is the "Highest Stakes" in maritime law. By turning binders into verifiable digital bridges, we protect the global supply chain from the risk of un-insured catastrophes and ensure that "Safety in Conflict" is backed by cryptographic proof.

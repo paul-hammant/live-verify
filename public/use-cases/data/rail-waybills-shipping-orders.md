@@ -1,125 +1,129 @@
 ---
-title: "Rail waybills and shipping orders"
+title: "Rail Waybills and Shipping Orders"
 category: "Shipping & Freight"
 volume: "Medium-Large"
-retention: "7-10 years (proof of shipment)"
+retention: "7-10 years (proof of shipment / statute of limitations)"
 slug: "rail-waybills-shipping-orders"
-tags: ["rail", "waybills", "shipping", "orders", "logistics", "transportation"]
+tags: ["logistics", "shipping", "rail-freight", "waybill", "intermodal", "supply-chain-fraud", "cargo-security", "customs-compliance"]
 ---
+
+## What is a Rail Waybill?
+
+In the freight industry, the **Rail Waybill** is the primary contract of carriage for goods moving by train. It serves as the "Instruction Manual" for the railroad, detailing the origin, destination, cargo weight, and specific railcar or container IDs. For intermodal shipments (Ship &rarr; Rail &rarr; Truck), the waybill is the "Digital Handshake" that bridges the modes of transport.
+
+Fraud is high-stakes in bulk commodities (e.g., grain, coal, chemicals). Shady shippers often "edit" a waybill to misrepresent the weight of the cargo to under-pay the railroad, or to hide the presence of **Hazardous Materials** to bypass safety fees. Verified hashes bind the **Railcar ID, Cargo Weight, and Consignee** to the railroad's domain (e.g., `up.com` or `bnsf.com`).
+
+<div style="max-width: 650px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 1px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="background: #efcc00; color: #000; padding: 15px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #000;">
+    <div>
+      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: -1px;">UNION PACIFIC</div>
+      <div style="font-size: 0.75em; opacity: 0.8;">OFFICIAL INTERMODAL WAYBILL</div>
+    </div>
+    <div style="font-size: 2em;">🚂</div>
+  </div>
+
+  <div style="padding: 20px;">
+    <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.85em; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
+      <div>
+        <strong>Shipper:</strong> <span data-bracket="start" data-for="rail">]</span>GLOBAL AGRI-TRADE LLC<br>
+        <strong>Consignee:</strong> PACIFIC TERMINALS INC.<br>
+        <strong>Destination:</strong> PORT OF TACOMA, WA
+      </div>
+      <div style="text-align: right;">
+        <strong>Waybill #:</strong> UP-2026-992288<br>
+        <strong>Date:</strong> 15 MAR 2026<br>
+        <strong>Railcar:</strong> UPP-884422 (Verified)
+      </div>
+    </div>
+
+    <table style="width: 100%; border-collapse: collapse; font-size: 0.8em; margin-bottom: 20px;">
+      <tr style="border-top: 2px solid #000; border-bottom: 1px solid #000; background: #f5f5f5;">
+        <th style="text-align: left; padding: 8px;">Commodity / STCC Code</th>
+        <th style="text-align: center; padding: 8px;">Units</th>
+        <th style="text-align: right; padding: 8px;">Gross Weight</th>
+      </tr>
+      <tr>
+        <td style="padding: 10px 8px;">01-137-10 (Hard Red Winter Wheat)</td>
+        <td style="text-align: center; padding: 8px;">1 Hopper</td>
+        <td style="text-align: right; padding: 8px; font-weight: bold;">192,450 LB</td>
+      </tr>
+      <tr style="border-bottom: 1px solid #000;">
+        <td colspan="2" style="text-align: right; padding: 8px;"><strong>Total Net Cargo Weight (Verified):</strong></td>
+        <td style="text-align: right; padding: 8px; font-weight: bold; color: #2e7d32;">142,500 LB</td>
+      </tr>
+    </table>
+
+    <div style="font-size: 0.75em; color: #666; line-height: 1.4; border: 1px solid #ccc; padding: 10px; background: #fff;">
+      <strong>Hazmat Status:</strong> NON-HAZARDOUS. Any deviation from the declared STCC code is a violation of Federal Rail Safety Standards.
+    </div>
+  </div>
+
+  <div style="padding: 20px; background: #fdfdfd; border-top: 1px solid #000; text-align: center;">
+    <div data-verify-line="rail" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
+      title="Demo only: Railroads don't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:up.com/waybill/v/UP2026992288 <span data-bracket="end" data-for="rail">]</span>
+    </div>
+    <div style="font-size: 0.7em; color: #777; margin-top: 10px; font-style: italic;">
+      Scan to verify weight integrity, railcar ownership, and interchange status.
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Shipper, consignee, railway, car number, cargo description
+Waybill number, railroad name, shipper name, consignee name, origin city/state, destination city/state, railcar ID, STCC (Standard Transportation Commodity Code), gross weight, tare weight, net weight, freight charges (Prepaid/Collect), route codes, date of lading.
+
+**Document Types:**
+- **Rail Waybill:** The primary contract/receipt.
+- **Interchange Record:** Proof of handoff between two railroads (e.g., UP to CSX).
+- **Arrival Notice:** Sent to the consignee at the destination.
+- **Switch Order:** Instruction to move a car inside a terminal.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`up.com`, `bnsf.com`, `csx.com`) and the shipment standing.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **In-Transit / Verified** — Cargo is currently moving on the rail network.
+- **Interchanged** — **ALERT:** Shipment has been handed to a partner railroad.
+- **Delivered / Spotted** — **ALERT:** The car has reached the destination dock; paper is now historic.
+- **Bad Order** — **CRITICAL:** The railcar is damaged and under repair; shipment is delayed.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Shipper (The Exporter)** benefits from verification.
 
-**Shipment Tracking:** Verify documentation matches actual shipment.
+**Payment Speed:** When exporting $500,000 in grain, the shipper provides the verified "Rail Waybill" hash to their bank. The bank can instantly see **"VERIFIED WEIGHT: 142,500 LBS"** from the railroad, allowing them to release payment under a "Letter of Credit" without waiting for manual document vetting.
 
-**Customs Clearance:** Present verified documents to customs authorities.
-
-**Payment Verification:** Confirm charges match agreed terms.
-
-**Dispute Prevention:** Maintain verified records for potential disputes.
-
-**Insurance Claims:** Provide verified documentation for cargo claims.
+**Loss Control:** If a hopper car arrives at the port empty (theft), the shipper uses the verified "Weight at Origin" hash to prove the loss occurred while in the railroad's possession, ensuring a full insurance payout.
 
 ## Third-Party Use
 
-**Insurance Companies**
+**Customs & Border Protection (CBP)**
+**Manifest Integrity:** Officers at a border crossing (e.g., Laredo or Detroit) scan the waybill hash. Verification ensures the "Wheat" declared on the paper isn't actually "Un-manifested Consumer Electronics" designed to evade import duties.
 
-Underwriting and claims processing:
+**Commodity Lenders**
+**Collateral Audit:** Banks providing "Inventory Loans" against grain in silos scan the verified hashes of the incoming rail waybills to ensure the "Assets on the Books" actually exist and match the railroad's digital records.
 
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Customs and Border Authorities**
-
-International trade compliance:
-
-**Import Clearance:** Verify shipping documents for customs clearance.
-
-**Duty Assessment:** Validate commercial invoices and declarations.
-
-**Trade Compliance:** Confirm certificates of origin and trade documents.
-
-**Security Screening:** Verify cargo documentation for security.
-
-**Export Controls:** Validate export documentation and licenses.
-
-**Freight Forwarders and Carriers**
-
-Logistics and transportation:
-
-**Shipment Acceptance:** Verify documents before accepting cargo.
-
-**Carrier Handoffs:** Validate documentation at transfer points.
-
-**Liability Determination:** Reference verified documents for claims.
-
-**Route Planning:** Confirm documentation for transit requirements.
-
-**Delivery Confirmation:** Verify documents at final delivery.
+**Port Terminal Operators**
+**Traffic Coordination:** Automatically verifying the weight and car ID of incoming trains to prioritize the unloading of "High-Priority" or "Hazardous" shipments.
 
 ## Verification Architecture
 
-**The Rail waybills and shipping orders Fraud Problem**
+**The "Heavy Load" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Cargo Misrepresentation:** False descriptions of goods being shipped
-- **Duplicate Bills:** Creating multiple originals for fraud
-- **Document Mismatch:** Documents that don't match actual cargo
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Weight Padding:** Editing a PDF to show 10% more weight to over-bill a buyer.
+- **Hazmat Masking:** Describing "Dangerous Chemicals" as "Liquid Fertilizer" to avoid restricted-route safety fees.
+- **Railcar Cloning:** Using one valid waybill number to cover for 10 "Ghost Cars" loaded with stolen goods.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Class-I Railroads.**
+**Short-Line / Regional Railroads.**
+**Intermodal Hub Portals.**
 
-**Carriers:** Shipping lines, airlines, trucking companies, and railroads.
-
-**Freight Forwarders:** International freight forwarders and NVOCCs.
-
-**Customs Brokers:** Licensed customs brokers for trade documentation.
-
-**Port Authorities:** Port operators for terminal and cargo documents.
-
-**System Integration**
-
-Shipping verification integrates with trade systems:
-
-**EDI Standards:** Electronic data interchange for trade documents (EDIFACT, X12).
-
-**Port Community Systems:** Port system integration for cargo documentation.
-
-**Customs Systems:** Integration with ACE, ABI, and customs clearance platforms.
-
-**Carrier Systems:** Shipping line and freight forwarder system integration.
+**Privacy Salt:** Essential. Specific customer names and trade volumes are sensitive business data. The hash must be salted to prevent "Commodity Forecasting" by speculators.
 
 ## Rationale
 
-Prevents altered cargo details. Domain binding verifies railway company. Intermodal shipping verification. Cross-border rail freight (USA/Canada/Mexico, EU).
+Rail freight is the "Heavy Industry" of the supply chain. By turning waybills into verifiable digital bridges, we protect the integrity of bulk trade and ensure that "Safety on the Rails" is backed by cryptographic proof.

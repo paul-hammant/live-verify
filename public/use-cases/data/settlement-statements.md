@@ -1,150 +1,130 @@
 ---
-title: "Settlement statements (HUD-1, ALTA)"
+title: "Settlement Statements (HUD-1, ALTA)"
 category: "Real Estate & Property"
-volume: "Very Small"
-retention: "7-10 years (tax/legal)"
+volume: "Very Large"
+retention: "Permanent (tax/legal / mortgage lifecycle)"
 slug: "settlement-statements"
-tags: ["settlement", "statements", "real", "estate", "property"]
+tags: ["real-estate", "settlement-statement", "alta", "hud-1", "closing-costs", "mortgage-fraud", "escrow-audit", "tax-compliance", "property-transfer"]
 ---
+
+## What is a Settlement Statement?
+
+A **Settlement Statement** (typically the **ALTA** or **HUD-1**) is the "Final Scorecard" of a real estate transaction. It lists every penny that changed hands: the purchase price, loan amounts, taxes, realtor commissions, and "Prorations" for utilities. It shows exactly how much the buyer must pay and how much the seller will receive.
+
+Because this document governs the distribution of hundreds of thousands of dollars, it is a primary target for **Mortgage and Wire Fraud**. Criminals use fake settlement statements to trick banks into releasing loan funds to "Phantom Payees," or they "edit" a statement to hide illegal "Kickbacks" to unlicensed parties. Verified hashes bind the **Net Payouts, Loan Amounts, and Settlement Agent ID** to the title company's or the lender's domain (e.g., `firstam.com` or `stewart.com`).
+
+<div style="max-width: 700px; margin: 24px auto; font-family: 'Helvetica Neue', Arial, sans-serif; border: 1px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+  <div style="background: #eee; padding: 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #000;">
+    <div style="font-weight: bold; font-size: 1.2em;">ALTA SETTLEMENT STATEMENT</div>
+    <div style="text-align: right;">
+      <div style="font-size: 0.8em; color: #666;">File #: <span data-bracket="start" data-for="settle">]</span>ESC-99228877-XJ</div>
+      <div style="font-size: 0.8em; color: #666;">Date: 15 MAR 2026</div>
+    </div>
+  </div>
+
+  <div style="padding: 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.8em; line-height: 1.4; border-bottom: 1px solid #000;">
+    <div>
+      <strong>Settlement Agent:</strong> SPRINGFIELD TITLE & ESCROW<br>
+      <strong>Buyer:</strong> SARAH JANE DOE<br>
+      <strong>Seller:</strong> ROBERT & MARY SMITH TRUST
+    </div>
+    <div style="text-align: right;">
+      <strong>Property:</strong> 123 MAPLE ST, SPRINGFIELD, USA<br>
+      <strong>Lender:</strong> GOLIATH NATIONAL BANK
+    </div>
+  </div>
+
+  <div style="padding: 0;">
+    <table style="width: 100%; border-collapse: collapse; font-size: 0.85em;">
+      <tr style="background: #f5f5f5; border-bottom: 1px solid #000;">
+        <th style="text-align: left; padding: 10px;">Description</th>
+        <th style="text-align: right; padding: 10px;">Buyer Debit</th>
+        <th style="text-align: right; padding: 10px;">Seller Credit</th>
+      </tr>
+      <tr>
+        <td style="padding: 10px;">Sale Price of Property</td>
+        <td style="text-align: right; padding: 10px;">$ 545,000.00</td>
+        <td style="text-align: right; padding: 10px;">$ 545,000.00</td>
+      </tr>
+      <tr>
+        <td style="padding: 10px;">Loan Amount (Goliath Bank)</td>
+        <td style="text-align: right; padding: 10px; color: #2e7d32;">($ 436,000.00)</td>
+        <td style="text-align: right; padding: 10px;">-</td>
+      </tr>
+      <tr style="border-top: 2px solid #000; font-weight: bold; background: #fffbe6;">
+        <td style="padding: 10px;">CASH TO CLOSE / FROM SELLER:</td>
+        <td style="text-align: right; padding: 10px;">$ 114,250.00</td>
+        <td style="text-align: right; padding: 10px;">$ 482,450.00</td>
+      </tr>
+    </table>
+  </div>
+
+  <div style="padding: 25px; background: #fdfdfd; border-top: 1px solid #000; text-align: center;">
+    <div style="font-size: 0.7em; color: #555; margin-bottom: 10px; font-style: italic;">
+      Verification confirms the financial integrity of this closing. Any unauthorized payoff or fee alteration renders this statement void.
+    </div>
+    <div data-verify-line="settle" style="border-top: 1px dashed #999; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
+      title="Demo only: Title companies don't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:springfield-title.com/v/ESC99228877 <span data-bracket="end" data-for="settle">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Buyer/seller names, addresses, lender, settlement agent, transaction amounts
+Escrow/File number, property address, buyer name, seller name, lender name, sale price, loan amount, individual fee amounts (title, escrow, recording), tax prorations, net cash to buyer/seller, settlement agent ID, closing date.
+
+**Document Types:**
+- **ALTA Settlement Statement:** The primary closing summary.
+- **HUD-1 Settlement Statement:** For older or specific government loans.
+- **Closing Disclosure (CD):** (Linked hash) the lender's final truth-in-lending form.
+- **Disbursement Authorization:** Proof of the actual wire triggers.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`firstam.com`, `fidelity.com`, `title-portal.org`) and the closing standing.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Closed / Funded** — Funds have been disbursed and the deed is recorded.
+- **Pending Closing** — Statement is valid; awaiting final wire.
+- **Amended** — **ALERT:** A post-closing correction was issued; this version is void.
+- **Rescinded** — **CRITICAL:** The transaction was cancelled due to fraud or failure.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Buyer / Seller** benefits from verification.
 
-**Ownership Verification:** Confirm property documents are authentic.
+**Tax Deduction Proof:** A homeowner can provide the verified hash of their "Settlement Statement" to the IRS to prove "Deductible Closing Costs" (like mortgage points or property tax prorations) with cryptographic certainty, avoiding the rejection of deductions due to un-readable scans.
 
-**Transaction Support:** Provide verified documents for sales, refinancing, or transfers.
-
-**Title Insurance:** Supply verified documentation for title insurance requirements.
-
-**Legal Protection:** Maintain verified records for potential disputes.
-
-**Record Accuracy:** Verify recorded information matches expectations.
+**Wire Fraud Defense:** Before sending a $100,000 wire, the buyer scans the verified hash provided by the title company. "Verified by Springfield Title" ensures the wire instructions and amounts are authentic, stopping "Business Email Compromise" (BEC) scams at the source.
 
 ## Third-Party Use
 
-**Lenders and Financial Institutions**
+**Mortgage Lenders / Underwriters**
+**Post-Closing Audit:** Instantly verifying thousands of loan files. OCR-to-hash ensures the "Sale Price" and "Down Payment" in the bank's file match the digital truth at the title company, stopping "Equity Skimming" or "Hidden Second Mortgage" fraud.
 
-Credit underwriting and risk assessment:
+**Secondary Market Investors**
+**Portfolio Due Diligence:** Before buying a pool of mortgages, the investor scans the hashes of the settlement statements. Verification ensures that the "LTV" (Loan-to-Value) ratios are based on authentic purchase prices.
 
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Insurance Companies**
-
-Underwriting and claims processing:
-
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
-
-**Government Agencies**
-
-Compliance enforcement and administration:
-
-**Inspection Verification:** Field agents verify permits and licenses at sites.
-
-**Enforcement Actions:** Confirm documentation before enforcement.
-
-**Benefit Eligibility:** Verify supporting documents for benefits administration.
-
-**Compliance Audits:** Audit documentation for regulatory compliance.
-
-**Interagency Coordination:** Share verified documents across agencies.
-
-**Real Estate Professionals**
-
-Property transactions and due diligence:
-
-**Purchase Due Diligence:** Verify property documents during transactions.
-
-**Listing Preparation:** Confirm permits and documentation for listings.
-
-**Disclosure Compliance:** Validate required disclosures and permits.
-
-**Title Research:** Verify property documents for title clearance.
-
-**Appraisal Support:** Confirm documented improvements and permits.
+**State Real Estate Commissions**
+**Compliance Audit:** Verifying that realtor commissions paid on the settlement statement match the verified hashes of the original listing agreements, stopping "Off-Book" illegal payments.
 
 ## Verification Architecture
 
-**The Settlement statements (HUD-1, ALTA) Fraud Problem**
+**The "Phantom Payoff" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Fee Padding:** Adding a "$500 Courier Fee" to a PDF that the buyer never actually agreed to pay.
+- **Kickback Hiding:** Editing a statement to hide a payment to an unlicensed "consultant" or "referral partner."
+- **Sale Price Inflation:** Changing a $400,000 sale to $500,000 on a PDF to trick a lender into providing a 100% LTV loan.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**National Title Insurers.**
+**Local Escrow Agencies.**
+**Electronic Recording (e-Recording) Portals.**
 
-**Government Entities:** Counties, cities, and special districts maintain property records.
-
-**Title Companies:** Title insurers and escrow companies for transaction documents.
-
-**Lending Institutions:** Banks and mortgage companies for loan documents.
-
-**Appraisal Firms:** Licensed appraisers for property valuations.
-
-**System Integration**
-
-Real estate verification connects to property systems:
-
-**Recording Systems:** County recorder systems for property document registration.
-
-**MLS Integration:** Multiple listing services for property documentation.
-
-**Title Plants:** Title companies maintain verification for title searches.
-
-**E-Recording:** Electronic recording systems generate verification at recording.
+**Privacy Salt:** Highly Critical. Individual financial payoffs and property values are extremely sensitive. The hash must be salted to prevent "Wealth Harvesting" or "Homeowner Targeting" by predators.
 
 ## Rationale
 
-Prevents fraudulent closing documents. Domain binding verifies settlement agent/escrow company. Tax deduction verification (mortgage interest). Prevents wire fraud targeting closing funds. Multi-page: Each statement page can verify independently.
+Settlement statements are the "Financial DNA" of a home. By turning static PDFs into verifiable digital bridges, we protect the public from wire fraud and ensure that the multi-trillion dollar mortgage market is based on the digital truth of the closing table.

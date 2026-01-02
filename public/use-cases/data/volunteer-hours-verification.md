@@ -1,94 +1,111 @@
 ---
-title: "Volunteer hours verification"
+title: "Volunteer Hours Verification"
 category: "Charitable & Non-Profit"
 volume: "Small"
-retention: "3-7 years (employment verification)"
+retention: "3-7 years (academic/employment/court cycles)"
 slug: "volunteer-hours-verification"
-tags: ["volunteer", "hours", "verification", "charitable", "non-profit"]
+tags: ["volunteer", "non-profit", "community-service", "academic-credit", "court-ordered", "charity-audit", "reputation-management"]
 ---
+
+## What is Volunteer Hour Verification?
+
+Volunteer service is a "Reputation Currency." Students need verified hours for **University Applications**, employees need them for **Corporate Giving Matches**, and defendants need them to satisfy **Court-Ordered Community Service**.
+
+The problem is that "Volunteer Certificates" are among the easiest documents to forge. A student might turn 10 hours into 100 hours with a pen, or a defendant might create a fake letterhead from a local food bank to avoid jail time. Verified hashes bind the **Total Hours, Project Scope, and Supervisor Identity** to the charity's domain (e.g., `redcross.org` or `habitat.org`).
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 5px double #2e7d32; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <div style="padding: 40px; text-align: center; border: 1px solid #eee; margin: 10px;">
+    <div style="margin-bottom: 25px;">
+      <div style="font-size: 1.6em; font-weight: bold; color: #2e7d32; letter-spacing: 1px;">CERTIFICATE OF SERVICE</div>
+      <div style="font-size: 0.9em; font-style: italic; color: #666;">AMERICA'S HARVEST FOOD BANK</div>
+    </div>
+
+    <div style="margin: 30px 0;">
+      <div style="font-size: 1.1em;">This certifies that</div>
+      <div style="font-size: 1.8em; font-weight: bold; margin: 10px 0; color: #333;"><span data-bracket="start" data-for="volunteer">]</span>SARAH J. JENKINS</div>
+      <div style="font-size: 1.1em;">has contributed their time and talent to the community.</div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 30px 0; background: #f9f9f9; padding: 20px; border-radius: 4px;">
+      <div style="text-align: left; font-size: 0.9em;">
+        <strong>Project:</strong> Warehouse Logistics<br>
+        <strong>Period:</strong> Summer 2026<br>
+        <strong>Supervisor:</strong> Robert Miller
+      </div>
+      <div style="text-align: right;">
+        <div style="font-size: 0.8em; color: #777;">TOTAL SERVICE:</div>
+        <div style="font-size: 2.2em; font-weight: bold; color: #2e7d32;">120.0</div>
+        <div style="font-size: 0.8em; font-weight: bold;">HOURS</div>
+      </div>
+    </div>
+
+    <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+      <div style="width: 150px; border-top: 1px solid #000; padding-top: 5px; font-size: 0.8em;">Executive Director</div>
+      <div style="width: 100px; height: 100px; border: 2px solid #2e7d32; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; color: #2e7d32; transform: rotate(-10deg);">VERIFIED<br>SERVICE</div>
+    </div>
+
+    <div data-verify-line="volunteer" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+      title="Demo only: Non-profits don't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:americasharvest.org/v/992288-SJJ <span data-bracket="end" data-for="volunteer">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Volunteer name, hours worked, supervisor, organization, activities
+Volunteer name, organization name, EIN (Tax ID), project description, total hours, service date range, supervisor name/title, internal volunteer ID.
+
+**Document Types:**
+- **Certificate of Service:** The formal award/recognition.
+- **Service Log:** Detailed list of individual shifts.
+- **Community Service Letter:** For court or school requirements.
+- **Corporate Matching Form:** To trigger employee donation matches.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`redcross.org`, `salvationarmy.org`) and the record standing.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Verified** — Hours match the organization's database snapshot.
+- **Pending Audit** — Hours are recorded but not yet final-signed by a director.
+- **Revoked** — **ALERT:** The record was deleted (e.g., due to reported behavior issues).
+- **Unknown** — Hash not found; high risk of fabrication.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Volunteer (Student/Employee)** benefits from verification.
 
-**Document Authenticity:** Verify received documents are genuine and properly issued.
+**College Admissions:** A high school senior can provide the verified hash of their "120 Hours" to a university. The admissions officer can instantly see **"VERIFIED - RED CROSS"** from the official domain, giving the student a competitive edge over those with un-verifiable paper letters.
 
-**Third-Party Presentation:** Provide verified documentation when required.
-
-**Compliance Requirements:** Meet regulatory or contractual documentation requirements.
-
-**Record Keeping:** Maintain verified records for future reference or audits.
-
-**Dispute Prevention:** Establish authenticity to prevent future challenges.
+**Career Branding:** A professional can include a verified "Service Badge" on their LinkedIn profile or CV, proving their commitment to social responsibility with cryptographic certainty.
 
 ## Third-Party Use
 
-**Auditors and Compliance Officers**
+**University Admissions Offices**
+**Integrity Filter:** Thousands of students claim "100+ hours" of service. OCR-to-hash allows the university to instantly verify the truth, protecting the "Fairness" of the admissions process from fraudulent claims.
 
-Internal and external audits:
+**Criminal Courts / Probation Officers**
+**Mandate Verification:** Verifying that a defendant actually performed the 50 hours of community service required by their plea deal. Verification stops the common "Fake Letterhead" fraud used to bypass sentencing requirements.
 
-**Financial Audits:** Verify documents during financial statement audits.
-
-**Compliance Audits:** Validate documentation for regulatory compliance.
-
-**Internal Controls:** Test document authenticity in control assessments.
-
-**Fraud Investigations:** Verify documents in fraud examinations.
-
-**Third-Party Audits:** Validate vendor and partner documentation.
+**Corporate CSR Teams**
+**Giving Match Audit:** Ensuring that "Volunteer Time Off" (VTO) or "Giving Matches" are only paid out for verified hours contributed to legitimate 501(c)(3) organizations.
 
 ## Verification Architecture
 
-**The Volunteer hours verification Fraud Problem**
+**The "Pencil Inflation" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Hour Padding:** Changing "10.0" to "100.0" on a PDF certificate.
+- **Template Mimicry:** Using a famous charity's logo to vouch for service that never happened.
+- **Legacy Forgery:** Creating a "2024" letter in 2026 to hide a gap in a resume or a missed court deadline.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**National Charities.**
+**Local Community Centers / Food Banks.**
+**University Volunteer Portals (e.g., GivePulse).**
 
-**Primary Issuers:** Organizations with direct authority to issue these documents.
-
-**Licensed Professionals:** Professionals authorized to create and certify documents.
-
-**Government Agencies:** Federal, state, or local agencies with jurisdiction.
-
-**Industry Bodies:** Trade associations and professional organizations.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
+**Privacy Salt:** Low to Medium. While service is public, individual IDs and specific projects can be private. The hash should be salted to prevent "Volunteer Roster Scraping."
 
 ## Rationale
 
-Domain binding verifies organization. Certificate format suitable for OCR. Employment/school applications. Court-ordered community service verification.
+Volunteerism is the "Social Credit" of a healthy society. By turning service letters into verifiable digital bridges, we protect the value of honest labor and ensure that rewards go to those who actually do the work.

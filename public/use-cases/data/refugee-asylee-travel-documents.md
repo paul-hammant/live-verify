@@ -1,150 +1,116 @@
 ---
-title: "Travel documents for refugees and asylees"
+title: "Refugee Travel Documents (I-571)"
 category: "Immigration & Visa Documents"
 volume: "Small"
-retention: "Document validity + permanent"
+retention: "Document validity + 7 years (immigration lifecycle)"
 slug: "refugee-asylee-travel-documents"
-tags: ["refugee", "asylee", "travel", "documents", "immigration", "visa"]
+tags: ["immigration", "refugee", "asylee", "i-571", "travel-document", "uscis", "border-security", "international-travel", "un-refugee-convention"]
 ---
+
+## What is a Refugee Travel Document?
+
+A **Refugee Travel Document (Form I-571)** is a passport-style booklet issued to a person who has refugee or asylee status in the US and cannot obtain a passport from their home country. It is their only legal "Ticket to the World" and their only way to return to the United States.
+
+For a refugee, this document is a fragile lifeline. If an airline agent in a foreign airport (e.g., in Turkey or Jordan) doesn't recognize the blue booklet or think it looks "fake," the traveler can be stranded in a dangerous location. Verified hashes bind the **Document ID, Validity Dates, and Holder's Photo** to the `uscis.gov` domain, providing global authorities with an instant way to trust the document.
+
+<div style="max-width: 450px; margin: 24px auto; font-family: 'Times New Roman', serif; border: 2px solid #002d62; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+  <div style="background: #002d62; color: #fff; padding: 20px; text-align: center; border-bottom: 2px solid #ce9e00;">
+    <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 1px;">UNITED STATES OF AMERICA</div>
+    <div style="font-size: 0.8em; opacity: 0.9; text-transform: uppercase;">Refugee Travel Document</div>
+  </div>
+
+  <div style="padding: 25px; background: #fdfdfd;">
+    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px;">
+      <div style="width: 110px; height: 140px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #777; font-size: 0.7em; text-align: center;">[HOLDER PHOTO]</div>
+      <div style="flex-grow: 1; margin-left: 20px; font-size: 0.9em; line-height: 1.4;">
+        <div style="font-size: 0.75em; color: #888; text-transform: uppercase;">Document No.</div>
+        <div style="font-size: 1.2em; font-weight: bold; color: #002d62;"><span data-bracket="start" data-for="refugee">]</span>RT-9922-8877-XJ</div>
+        
+        <div style="margin-top: 10px;">
+          <strong>Name:</strong> JUAN VALDEZ<br>
+          <strong>DOB:</strong> 05 MAY 1980<br>
+          <strong>Sex:</strong> M • <strong>Birthplace:</strong> COL
+        </div>
+      </div>
+    </div>
+
+    <div style="border-top: 1px solid #eee; padding-top: 15px; font-size: 0.85em; color: #333;">
+      <div style="display: grid; grid-template-columns: 1fr 1fr;">
+        <div><strong>Issued:</strong> 15 MAR 2026</div>
+        <div style="text-align: right;"><strong>Expires:</strong> 14 MAR 2027</div>
+      </div>
+      <p style="margin-top: 10px; font-style: italic; color: #666;">
+        "This document is issued under the 1951 Convention relating to the Status of Refugees."
+      </p>
+    </div>
+  </div>
+
+  <div style="padding: 20px; background: #fff; border-top: 1px dashed #999; text-align: center;">
+    <div data-verify-line="refugee" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
+      title="Demo only: USCIS doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:uscis.gov/v/i571/RT99228877 <span data-bracket="end" data-for="refugee">]</span>
+    </div>
+    <div style="font-size: 0.65em; color: #999; margin-top: 8px;">
+      Scan to verify travel eligibility and status. This document is the property of the US Government.
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Full name, DOB, nationality, refugee/asylee status, document number, validity period
+Document number (RT prefix), holder's full name, date of birth, country of birth, sex, date of issuance, date of expiration, photograph (via hash), USCIS alien registration number (A-Number), issuing office.
 
-**Privacy Salt:** Sensitive personal information requires random salt in verification lines to prevent hash enumeration.
+**Document Types:**
+- **Refugee Travel Document:** (I-571) Blue booklet.
+- **Re-Entry Permit:** (I-327) White booklet for Green Card holders.
+- **Form I-512L:** Advance Parole (Paper sheet).
+- **Consular Return Letter:** (Linked hash) for emergency re-entry.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`uscis.gov`) and the document standing.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Valid / Current** — Document is authentic and authorized for international travel.
+- **Revoked** — **CRITICAL:** Status has been terminated (e.g., due to denied asylum or criminal acts).
+- **Expired** — **ALERT:** The validity period has lapsed; re-entry may be denied.
+- **Lost/Stolen Flag** — **ALERT:** This document number has been reported missing.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Refugee / Asylee (Traveler)** benefits from verification.
 
-**Status Confirmation:** Verify immigration documents after receipt from authorities.
+**Secure Boarding:** A traveler in a remote airport can show the verified hash to the airline check-in agent. The agent can instantly see **"VALID - USCIS"** on their phone, removing the "fake document" fear that often leads to refugees being wrongfully denied boarding on the way home to the US.
 
-**Employment Authorization:** Confirm work authorization for I-9 compliance.
-
-**Travel Planning:** Verify travel document validity before international trips.
-
-**Status Changes:** Confirm application outcomes and new status.
-
-**Family Petitions:** Provide verified status for dependent applications.
+**Proof of Status:** When checking into a hotel or renting a car abroad, the traveler can use the verified hash to prove their legal status in the US, providing a higher level of trust than a mere physical booklet.
 
 ## Third-Party Use
 
-**Employers**
+**Airlines / Carrier Security**
+**Sanction Prevention:** Airlines are fined $5,000+ for every "Inadmissible" passenger they fly to the US. OCR-to-hash allows them to instantly verify the booklet's authenticity, protecting the airline's revenue and the traveler's journey.
 
-Hiring and compliance verification:
+**Foreign Border Police**
+**Identity Vetting:** Verifying that the photo on the physical booklet matches the digital record in the US database, stopping the common "Photo-Swap" fraud used for illegal border crossings.
 
-**Pre-Employment Screening:** Verify credentials during hiring process.
-
-**I-9 Compliance:** Verify work authorization and identity documents.
-
-**Credential Verification:** Confirm professional licenses and certifications.
-
-**Health Requirements:** Verify health-related documentation for workplace safety.
-
-**Background Checks:** Integrate verification into background check processes.
-
-**Government Agencies**
-
-Compliance enforcement and administration:
-
-**Inspection Verification:** Field agents verify permits and licenses at sites.
-
-**Enforcement Actions:** Confirm documentation before enforcement.
-
-**Benefit Eligibility:** Verify supporting documents for benefits administration.
-
-**Compliance Audits:** Audit documentation for regulatory compliance.
-
-**Interagency Coordination:** Share verified documents across agencies.
-
-**Healthcare Providers**
-
-Medical care and coordination:
-
-**Medical History:** Verify patient-provided medical records and test results.
-
-**Treatment Planning:** Confirm diagnostic results for treatment decisions.
-
-**Specialist Referrals:** Validate records when coordinating care.
-
-**Insurance Authorization:** Verify coverage and authorization documents.
-
-**Compliance Requirements:** Confirm vaccination and health screening records.
-
-**Educational Institutions**
-
-Admissions and enrollment:
-
-**Transfer Credits:** Verify transcripts for transfer credit evaluation.
-
-**Graduate Admissions:** Validate undergraduate credentials for graduate programs.
-
-**Professional Programs:** Confirm prerequisite credentials for professional schools.
-
-**International Students:** Verify foreign credentials for admissions and visa support.
-
-**Scholarship Awards:** Validate academic credentials for scholarship eligibility.
+**International Banks**
+**KYC Compliance:** Using the verified Refugee Travel Document as a secondary form of identity for account opening for individuals without a home-country passport.
 
 ## Verification Architecture
 
-**The Travel documents for refugees and asylees Fraud Problem**
+**The "Stateless Scam" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Photo Substitution:** Replacing the original photo in the booklet with a lookalike's photo.
+- **Revocation Hiding:** A person whose refugee status was revoked (e.g., for fraud) keeping their physical booklet to continue traveling or to hide their "Inadmissible" status.
+- **Date Stretching:** Altering the 1-year expiration date to 2 years to avoid the high cost of renewal.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**U.S. Citizenship and Immigration Services (USCIS).**
+**United Nations (UNHCR) - for Travel Docs issued by other nations.**
+**Consular Posts (Department of State).**
 
-**USCIS:** U.S. Citizenship and Immigration Services for immigration documents.
-
-**DOS:** Department of State for passports and consular documents.
-
-**CBP:** Customs and Border Protection for entry/exit documentation.
-
-**Foreign Governments:** International authorities for foreign-issued documents.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-**Privacy Considerations**
-
-Sensitive personal information requires special handling:
-
-**Privacy Salt:** Random salt added to verification lines prevents hash enumeration attacks.
-
-**Minimum Disclosure:** Verification response reveals only necessary information.
-
-**Access Controls:** Verification endpoints implement appropriate access restrictions.
-
-**Audit Logging:** Verification attempts logged for security and compliance.
+**Privacy Salt:** Highly Critical. Refugee data is subject to extreme privacy protections due to the risk of "Transnational Repression" by their home countries. The hash must be salted and access restricted to authorized port-of-entry partners.
 
 ## Rationale
 
-Prevents fake refugee travel documents. Domain binding verifies USCIS. I-571/I-327 verification. International travel authorization. Re-entry to USA documentation. Asylum/refugee status proof. For privacy, issuers can add a random salt line to raise entropy and defeat guessing attacks.
+Refugee travel is "High-Stakes Mobility." By turning travel booklets into verifiable digital bridges, we protect the most vulnerable travelers from administrative errors and ensure that "Freedom of Movement" is backed by cryptographic proof.

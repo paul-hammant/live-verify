@@ -1,125 +1,121 @@
 ---
-title: "Tax forms and receipts"
+title: "Tax Forms and Wage Statements (W-2, 1099)"
 category: "Financial & Legal Documents"
-volume: "Medium"
-retention: "7-10 years (audit statute)"
+volume: "Very Large"
+retention: "7-10 years (audit statute / social security lifecycle)"
 slug: "tax-forms-receipts"
-tags: ["forms", "receipts", "financial", "legal", "documents"]
+tags: ["tax", "w-2", "1099", "irs", "income-verification", "mortgage-underwriting", "tax-fraud", "wage-statement", "payroll-audit"]
 ---
+
+## What are Tax and Wage Statements?
+
+In the US and many other nations, the **W-2 Wage and Tax Statement** (or its equivalent, like the P60 in the UK) is the official record of your annual income and the taxes withheld by your employer. It is the "Anchor of Truth" for your financial life.
+
+Lenders use W-2s to approve mortgages, and tax authorities use them to verify your tax return. Fraud is rampant: criminals create "Synthetic W-2s" to claim fraudulent tax refunds, or they "edit" a real W-2 to inflate their income to qualify for a luxury home loan. Verified hashes bind the **Employee SSN, Total Wages, and Employer EIN** to the payroll provider's or the tax agency's domain (e.g., `adp.com`, `gusto.com`, or `irs.gov`).
+
+<div style="max-width: 650px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 1px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="padding: 20px; border-bottom: 2px solid #000; background: #f9f9f9; display: flex; justify-content: space-between; align-items: center;">
+    <div style="font-weight: bold; font-size: 1.2em;">Form W-2 Wage and Tax Statement</div>
+    <div style="font-weight: bold; font-size: 1.5em; border: 2px solid #000; padding: 5px 10px;">2025</div>
+  </div>
+
+  <div style="padding: 20px;">
+    <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.85em; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
+      <div>
+        <strong>Employer Identification Number (EIN):</strong> 99-2288776<br>
+        <strong>Employer Name & Address:</strong><br>
+        ACME GLOBAL HUB, INC.<br>
+        123 FACTORY LANE, SPRINGFIELD, USA
+      </div>
+      <div style="text-align: right;">
+        <strong>Control Number:</strong> <span data-bracket="start" data-for="tax">]</span>CN-992288-XJ<br>
+        <strong>Employee SSN:</strong> XXX-XX-1234
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9em; margin-bottom: 20px;">
+      <div style="border: 1px solid #999; padding: 10px; background: #fffbe6;">
+        <div style="font-size: 0.7em; color: #666;">1. WAGES, TIPS, OTHER COMPENSATION:</div>
+        <div style="font-size: 1.4em; font-weight: bold;">$ 145,000.00</div>
+      </div>
+      <div style="border: 1px solid #999; padding: 10px;">
+        <div style="font-size: 0.7em; color: #666;">2. FEDERAL INCOME TAX WITHHELD:</div>
+        <div style="font-size: 1.4em; font-weight: bold;">$ 28,450.42</div>
+      </div>
+    </div>
+
+    <div style="font-size: 0.85em; line-height: 1.4; color: #333;">
+      <strong>Employee Name:</strong> JOHN D. SMITH<br>
+      <strong>Address:</strong> 42 WALL STREET, NEW YORK, NY 10005
+    </div>
+  </div>
+
+  <div style="padding: 20px; background: #f5f5f5; border-top: 1px solid #000; text-align: center;">
+    <div style="font-size: 0.7em; color: #555; margin-bottom: 10px; font-style: italic;">
+      This statement is a verified extract of the official payroll and tax record. Access restricted to authorized financial institutions.
+    </div>
+    <div data-verify-line="tax" style="border-top: 1px dashed #999; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
+      title="Demo only: Payroll providers don't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:adp.com/tax/v/W2-2025-SMITH1234 <span data-bracket="end" data-for="tax">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Taxpayer name, tax ID/SSN, tax year, income amounts, deductions, filing date, preparer information
+Employer EIN, employer name, employee SSN (masked), employee name, tax year, total wages/tips, federal tax withheld, state tax withheld, Medicare/Social Security wages, control number, payroll provider ID.
+
+**Document Types:**
+- **W-2 Wage Statement:** The primary employee record.
+- **1099-NEC / 1099-MISC:** For independent contractors and freelancers.
+- **1098 Mortgage Interest Statement:** (Linked hash) for tax deductions.
+- **Tax Return Transcript:** The official IRS summary of a filed return.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`adp.com`, `gusto.com`, `irs.gov`) and the filing standing.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Verified / Filed** — The record matches the official government and payroll data.
+- **Corrected (W-2c)** — **ALERT:** An error was found; this version is void.
+- **Unknown** — **CRITICAL:** Hash not found; high risk of "Synthetic W-2" fraud.
+- **Amended** — A newer version of the tax return exists.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Employee / Taxpayer** benefits from verification.
 
-**Record Verification:** Confirm financial documents match expectations.
+**Mortgage Approval Speed:** When applying for a loan, the employee shows the verified hash of their W-2. The lender can instantly see **"VERIFIED INCOME: $145,000"** from a trusted provider like ADP, bypassing the 3-day "Manual Employer Verification" call and getting the loan approved in minutes.
 
-**Tax Preparation:** Provide verified documentation for tax filing.
-
-**Audit Support:** Maintain verified records for potential audits.
-
-**Dispute Resolution:** Use verified documents to resolve discrepancies.
-
-**Loan Applications:** Present verified financial documentation to lenders.
+**Audit Protection:** A taxpayer can maintain a verified digital library of all past W-2s. During a tax audit, they can provide the verified hashes to the IRS to prove their income wasn't "fabricated" using a home printer.
 
 ## Third-Party Use
 
-**Regulators and Oversight Bodies**
+**Mortgage Lenders / Banks**
+**Zero-Trust Underwriting:** Thousands of fake W-2s are submitted to banks every month. OCR-to-hash connects the underwriter directly to the payroll provider's domain, stopping "Income Inflation" fraud at the source and reducing loan default rates.
 
-Regulatory compliance and oversight:
+**Tax Authorities (IRS / State)**
+**Refund Fraud Prevention:** Before issuing a $5,000 refund, the IRS scans the verified hash of the W-2 provided by the taxpayer. If it returns **"NOT FOUND"** or **"WAGES: $0,"** the refund is blocked, stopping "Identity Theft Refund Fraud" (ITRF).
 
-**Systematic Hash Receipt:** Receive hashes in bulk for regulatory oversight.
-
-**Audit Verification:** Verify documents during routine or targeted audits.
-
-**Compliance Monitoring:** Monitor issuer compliance with documentation requirements.
-
-**Investigation Support:** Verify documents during fraud or compliance investigations.
-
-**Consumer Protection:** Verify consumer-facing documents for protection enforcement.
-
-**Lenders and Financial Institutions**
-
-Credit underwriting and risk assessment:
-
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
+**HR & Recruiting Firms**
+**Background Vetting:** Verifying that a candidate's "Previous Salary" claim is an accurate, tax-reported fact rather than a negotiation fabrication.
 
 ## Verification Architecture
 
-**The Tax forms and receipts Fraud Problem**
+**The "Synthetic Income" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Income Inflation:** Inflating income or assets on financial documents
-- **Photoshop Fraud:** Digital manipulation of statements and documents
-- **Shell Company Documents:** Documents from fake or shell entities
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Income Padding:** Editing a $45,000 W-2 to read $145,000 to qualify for a larger credit limit.
+- **Ghost Employers:** Creating a fake company EIN and printing W-2s for a person who never worked there.
+- **Filing Omission:** Submitting a W-2 to a bank that was never actually filed with the IRS.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Payroll Processors (ADP, Workday, Gusto).**
+**National Tax Agencies (IRS, HMRC).**
+**Large Corporate HR Portals.**
 
-**Banks and Credit Unions:** Depository institutions for account documents.
-
-**Investment Firms:** Brokerage and investment management firms.
-
-**Insurance Companies:** Insurers for policy and claims documents.
-
-**Accounting Firms:** CPAs and audit firms for financial statements.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
+**Privacy Salt:** EXTREMELY CRITICAL. Tax data is governed by strict privacy laws (Section 6103 in the US). The hash MUST be salted to prevent "Mass Income Scraping" of the tax-paying population.
 
 ## Rationale
 
-Tax fraud prevention through verifiable tax documentation. Already detailed in receipt verification use cases. Domain binding to tax preparer or IRS ensures authenticity. Critical for audit defense where tax records must be proven legitimate. Prevents tampering with income and deduction amounts. Taxpayers verify tax records during IRS audits.
+Tax forms are the "Financial DNA" of a citizen. By turning wage statements into verifiable digital bridges, we protect the mortgage market from defaults and the government from the multi-billion dollar cost of refund fraud.

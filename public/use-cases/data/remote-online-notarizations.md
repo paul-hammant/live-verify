@@ -1,108 +1,106 @@
 ---
-title: "Remote online notarizations (RON)"
+title: "Remote Online Notarizations (RON)"
 category: "Notary Services"
 volume: "Large"
 retention: "10 years (state retention laws)"
 slug: "remote-online-notarizations"
-tags: ["remote", "online", "notarizations", "notary", "services"]
+tags: ["notary", "ron", "digital-notarization", "legal-authority", "e-signing", "mortgage-closing", "identity-verification"]
 ---
+
+## What is a Remote Online Notarization (RON)?
+
+A **Remote Online Notarization (RON)** is a digital evolution of the traditional notary act. Instead of meeting in person, the signer and the notary connect via a secure video session. The notary verifies the signer's identity using "Knowledge-Based Authentication" (KBA) and "Credential Analysis" before applying an electronic seal to the document.
+
+The problem is that a "Digital Seal" is often just a pretty image on a PDF. Fraudsters can easily copy a legitimate notary's seal image and paste it onto a forged deed or power of attorney. Verified hashes bind the **Session ID, Notary Commission, and Signer Identity** to the RON platform's domain (e.g., `notarize.com` or `notarybridge.com`).
+
+<div style="max-width: 500px; margin: 24px auto; font-family: 'Times New Roman', serif; border: 2px solid #333; background: #fff; padding: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); position: relative;">
+  <div style="text-align: center; border-bottom: 1px solid #000; padding-bottom: 15px; margin-bottom: 20px;">
+    <div style="font-weight: bold; font-size: 1.3em; text-transform: uppercase;">Remote Online Notary Certificate</div>
+    <div style="font-size: 0.9em; letter-spacing: 1px;">AUTHENTICATED VIA SECURE VIDEO SESSION</div>
+  </div>
+
+  <div style="font-size: 0.95em; line-height: 1.6;">
+    <p>This document was notarized remotely on <strong>MARCH 15, 2026</strong> pursuant to the laws of the <strong>STATE OF TEXAS</strong>.</p>
+    
+    <div style="margin: 20px 0; display: flex; align-items: flex-start; border: 1px solid #ccc; padding: 15px; background: #f9f9f9;">
+      <div style="width: 80px; height: 80px; border: 2px solid #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; text-align: center; margin-right: 20px; color: #000;">DIGITAL<br>SEAL</div>
+      <div style="flex-grow: 1;">
+        <strong>Notary:</strong> <span data-bracket="start" data-for="ron">]</span>SARAH J. JENKINS<br>
+        <strong>Commission #:</strong> 992288-TX<br>
+        <strong>Expires:</strong> 12/31/2028<br>
+        <strong>Session ID:</strong> RON-8844-X92
+      </div>
+    </div>
+
+    <p><strong>Signer:</strong> JOHN JACOB DOE<br>
+    <strong>ID Verified via:</strong> KBA + Bio-Metric Credential Analysis</p>
+  </div>
+
+  <div style="margin-top: 30px; border-top: 1px dashed #999; padding-top: 15px; text-align: center;">
+    <div style="font-size: 0.75em; color: #666; font-style: italic; margin-bottom: 10px;">
+      This electronic act is recorded in the platform's digital journal. Scan to verify session integrity and notary authority.
+    </div>
+    <div data-verify-line="ron" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
+      title="Demo only: RON platforms don't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:notarize.com/v/RON8844X92 <span data-bracket="end" data-for="ron">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Signer name, video session ID, notary name, notary commission number, electronic journal entry, document type, session date/time, RON platform name
+Notary name, commission number, state of jurisdiction, session ID, signer name, date/time of act, document type hash, RON platform name, electronic journal entry ID.
+
+**Document Types:**
+- **RON Notarial Certificate:** The page attached to the legal document.
+- **Electronic Journal Extract:** Proof of the act for court/audit.
+- **Credential Analysis Report:** (Linked hash) proving the ID was scanned and passed.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`notarize.com`, `docuverify.com`) and the act's standing.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Authenticated** — The session is valid and recorded in the official journal.
+- **Video Archived** — Confirmation that the required video record is retained.
+- **Revoked** — **ALERT:** The notary act has been disavowed (e.g., due to reported fraud).
+- **Notary Suspended** — **ALERT:** The notary's commission was inactive at the time of the act.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Signer (Consumer)** benefits from verification.
 
-**Document Authenticity:** Verify received documents are genuine and properly issued.
+**Mortgage Closing Integrity:** A homebuyer signing $500,000 in loan docs via RON can scan the notary's seal to ensure they are using a legitimate, state-authorized platform and not a phishing site designed to steal their signature and PII.
 
-**Third-Party Presentation:** Provide verified documentation when required.
-
-**Compliance Requirements:** Meet regulatory or contractual documentation requirements.
-
-**Record Keeping:** Maintain verified records for future reference or audits.
-
-**Dispute Prevention:** Establish authenticity to prevent future challenges.
+**Global Business:** An executive in London signing a contract for a New York company can provide the verified hash to prove the notarization meets "Interstate Recognition" laws without needing a physical apostille.
 
 ## Third-Party Use
 
-**Courts and Legal Professionals**
+**County Recorders / Registrars**
+**Deed Fraud Prevention:** Before recording a property transfer, the clerk scans the RON seal. If the hash returns **"VALID - SESSION #8844,"** they know the digital signature isn't a simple "Copy-Paste" forgery.
 
-Litigation and legal proceedings:
+**Lenders and Title Companies**
+**Post-Closing Audit:** Instantly verifying thousands of digital loan files. OCR-to-hash ensures that every "Digital Seal" in the portfolio is backed by a real video session and a valid notary commission.
 
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
-
-**Auditors and Compliance Officers**
-
-Internal and external audits:
-
-**Financial Audits:** Verify documents during financial statement audits.
-
-**Compliance Audits:** Validate documentation for regulatory compliance.
-
-**Internal Controls:** Test document authenticity in control assessments.
-
-**Fraud Investigations:** Verify documents in fraud examinations.
-
-**Third-Party Audits:** Validate vendor and partner documentation.
+**Courts and Litigants**
+**Evidence Admissibility:** In a dispute over a "Forged Signature," the court can verify the RON hash to see the exact timestamp and platform that vouches for the identity check.
 
 ## Verification Architecture
 
-**The Remote online notarizations (RON) Fraud Problem**
+**The "Digital Xerox" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Seal Harvesting:** Criminals taking a screenshot of a real RON seal and using it to "notarize" fake documents.
+- **Credential Spoofing:** Using a deepfake video or a stolen ID to trick a remote notary.
+- **Session Fabricating:** Creating a fake "Certificate of Completion" for a session that never occurred.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Authorized RON Platforms.**
+**State Secretary of State (SOS) Portals.**
+**Large Law Firms (Internal RON).**
 
-**Primary Issuers:** Organizations with direct authority to issue these documents.
-
-**Licensed Professionals:** Professionals authorized to create and certify documents.
-
-**Government Agencies:** Federal, state, or local agencies with jurisdiction.
-
-**Industry Bodies:** Trade associations and professional organizations.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
+**Privacy Salt:** Essential. Signer names and session IDs are sensitive legal data. The hash must be salted to prevent "Journal Scraping" by unauthorized parties.
 
 ## Rationale
 
-Prevents fake RON certifications in electronic notarizations. Domain binding verifies RON platform and notary legitimacy. COVID-19 pandemic accelerated RON adoption for contactless transactions. Electronic journal verification for audit trails. Prevents remote notary fraud through tamper-evident records. Audio/video recording authentication proves signer identity verification. Critical for remote transactions where electronic notarization replaces in-person notarization with equivalent legal validity.
+RON verification solves the "Digital-to-Physical" trust gap. By turning an electronic seal into a verifiable digital bridge, it ensures that "Remote" trust is just as strong as "In-Person" trust.

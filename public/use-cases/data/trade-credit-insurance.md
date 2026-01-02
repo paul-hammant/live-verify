@@ -1,129 +1,129 @@
 ---
-title: "Trade credit insurance policies"
+title: "Trade Credit Insurance (TCI) Policies"
 category: "Specialty Insurance"
-volume: "Small"
-retention: "Policy term + 7-10 years"
+volume: "Medium"
+retention: "Policy term + 7 years (audit / claims lifecycle)"
 slug: "trade-credit-insurance"
-tags: ["trade", "credit", "insurance", "risk", "management"]
+tags: ["trade-credit", "ar-insurance", "credit-limit", "euler-hermes", "atradius", "coface", "invoice-financing", "insolvency-protection", "b2b-fraud"]
 ---
+
+## What is Trade Credit Insurance?
+
+In the B2B world, most sales happen on "Net-30" or "Net-60" terms—meaning the buyer gets the goods today but pays later. **Trade Credit Insurance (TCI)** protects the seller if the buyer goes bankrupt or simply refuses to pay. A **Credit Limit Notice** is the formal document where the insurer (e.g., Euler Hermes or Coface) approves a specific dollar amount of risk for a specific buyer.
+
+These documents are the "Green Light" for global trade. Fraud is high-stakes: a dishonest buyer might create a fake "Atradius" limit-approval letter for $1 million to trick a supplier into shipping a massive load of electronics on credit. Similarly, a seller might "edit" an old approval to hide that the insurer has recently revoked coverage for a failing customer. Verified hashes bind the **Approved Credit Limit, Buyer Tax ID, and Expiration Date** to the insurer's domain (e.g., `allianz-trade.com` or `coface.com`).
+
+<div style="max-width: 650px; margin: 24px auto; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="background: #003366; color: #fff; padding: 25px; display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid #ce9e00;">
+    <div>
+      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;">ALLIANZ TRADE</div>
+      <div style="font-size: 0.8em; opacity: 0.9; text-transform: uppercase;">Credit Risk Management & TCI</div>
+    </div>
+    <div style="font-size: 2em;">📈</div>
+  </div>
+
+  <div style="padding: 25px;">
+    <h3 style="margin-top: 0; color: #333; text-align: center; text-transform: uppercase; letter-spacing: 1px;">Credit Limit Approval Notice</h3>
+
+    <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
+      <div>
+        <strong>Insured Policyholder:</strong><br>
+        GLOBAL COMPONENTS LTD. (深圳)<br>
+        <strong>Policy #:</strong> 99228877-TCI
+      </div>
+      <div style="text-align: right;">
+        <strong>Notice ID:</strong> <span data-bracket="start" data-for="credit">]</span>AZ-2026-8844<br>
+        <strong>Date:</strong> 15 MAR 2026
+      </div>
+    </div>
+
+    <div style="background: #f9f9f9; border: 1px solid #ddd; padding: 20px; border-radius: 4px; margin-bottom: 20px;">
+      <p style="margin-top: 0;"><strong>Buyer Name:</strong> NORTH AMERICAN RETAIL CORP.</p>
+      <p><strong>Buyer ID (DUNS):</strong> 99-887-7665</p>
+      
+      <div style="border-top: 1px solid #ccc; padding-top: 15px; margin-top: 15px; display: flex; justify-content: space-between; align-items: center;">
+        <div>
+          <div style="font-size: 0.8em; color: #666; text-transform: uppercase;">Approved Credit Limit:</div>
+          <div style="font-size: 1.8em; font-weight: bold; color: #003366;">$ 1,250,000.00</div>
+        </div>
+        <div style="text-align: right;">
+          <div style="font-size: 0.8em; color: #666; text-transform: uppercase;">Payment Terms:</div>
+          <div style="font-weight: bold;">NET 60 DAYS</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="font-size: 0.75em; color: #666; font-style: italic; text-align: center;">
+      "Coverage is subject to the terms and conditions of the Master Policy. Verification confirms that this specific limit is currently authorized in the Allianz Trade system."
+    </div>
+  </div>
+
+  <div style="padding: 20px; background: #f5f5f5; border-top: 1px solid #000; text-align: center;">
+    <div data-verify-line="credit" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
+      title="Demo only: Credit insurers don't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:allianz-trade.com/v/AZ99228877 <span data-bracket="end" data-for="credit">]</span>
+    </div>
+    <div style="font-size: 0.7em; color: #777; margin-top: 10px;">
+      Scan to verify real-time limit availability, payment term compliance, and insolvency protection status.
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Insured seller, buyer creditworthiness, coverage limits, credit terms
+Policy number, insurer name, insured name, buyer name, buyer tax ID (DUNS/EIN), approved credit limit amount, maximum payment terms (e.g., 60 days), effective date, notice expiration date, currency, credit analyst ID.
 
-**Policy Forms:** Different policy forms and endorsements may apply.
+**Document Types:**
+- **Credit Limit Notice:** The approval for a specific customer.
+- **TCI Policy Schedule:** The overarching contract.
+- **Notice of Threat of Loss:** (Linked hash) reporting a late payment.
+- **Claims Settlement Advice:** Proof of payout for a bad debt.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`allianz-trade.com`, `atradius.com`, `coface.com`) and the risk standing.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-- **Cancelled** - Policy cancelled before expiration
-- **Non-Renewed** - Policy expired and not renewed
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Active / Approved** — The credit limit is currently in force and backed by the insurer.
+- **Revoked / Zero-Limit** — **CRITICAL:** The insurer has withdrawn coverage for this buyer (indicates high insolvency risk).
+- **Reduced** — **ALERT:** The approved amount has been lowered since the paper was printed.
+- **Lapsed** — **ALERT:** The annual policy has expired; no new shipments are covered.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Supplier (The Insured)** benefits from verification.
 
-**Proof of Coverage:** Verify coverage is active when needed for compliance or access.
+**Shipping Confidence:** Before loading a $250,000 container, the warehouse manager scans the "Credit Limit" hash. "Verified by Allianz" ensures them that the sale is 90% insured, allowing them to release the goods without waiting for a manual email from the finance department.
 
-**Claims Support:** Confirm policy details when filing claims.
-
-**Coverage Confirmation:** Verify coverage terms match expectations after purchase.
-
-**Third-Party Presentation:** Provide verified proof to landlords, lenders, or employers.
-
-**Renewal Verification:** Confirm renewal was processed and coverage continues.
+**Bank Financing:** Suppliers often borrow against their "Insured Accounts Receivable." By providing verified TCI hashes to their bank, they can prove that their "Collateral" is high-quality and backed by a top-tier insurer, potentially lowering their borrowing costs.
 
 ## Third-Party Use
 
-**Regulators and Oversight Bodies**
+**Invoice Factoring Firms / Banks**
+**Risk Mitigation:** Before "Buying" an invoice from a supplier, the bank scans the verified TCI limit. Verification ensures that the invoice is actually covered by insurance, protecting the bank from a loss if the buyer fails to pay.
 
-Regulatory compliance and oversight:
+**Financial Auditors**
+**Bad-Debt Reserve Audit:** Verifying that a company's "Insured Receivables" are actually backed by active, verified credit limits, ensuring that their balance sheet accurately reflects their risk exposure.
 
-**Systematic Hash Receipt:** Receive hashes in bulk for regulatory oversight.
-
-**Audit Verification:** Verify documents during routine or targeted audits.
-
-**Compliance Monitoring:** Monitor issuer compliance with documentation requirements.
-
-**Investigation Support:** Verify documents during fraud or compliance investigations.
-
-**Consumer Protection:** Verify consumer-facing documents for protection enforcement.
-
-**Lenders and Financial Institutions**
-
-Credit underwriting and risk assessment:
-
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
+**Secondary Re-Insurers**
+**Portfolio Vetting:** Verifying the "Granular Risk" of thousands of small credit limits within a large TCI portfolio before providing treaty re-insurance.
 
 ## Verification Architecture
 
-**The Trade credit insurance policies Fraud Problem**
+**The "Phantom Limit" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Coverage Inflation:** Inflating coverage limits or adding non-existent coverage
-- **Backdating:** Creating policies with false effective dates
-- **Ghost Policies:** Fabricated policies from non-existent insurers
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Limit Inflation:** Changing a "$10,000" approval to "$1,000,000" on a PDF to trick a supplier into shipping a massive load of goods.
+- **Status Masking:** Hiding a "Revocation Notice" from an insurer to continue shipping to a failing subsidiary.
+- **DUNS Swapping:** Using an approval for a "Healthy Company" to cover for a "Zombie Company" with a similar name.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Global Credit Insurance Groups.**
+**National Export Credit Agencies (ECAs).**
+**Specialized Credit Management Platforms.**
 
-**Banks and Credit Unions:** Depository institutions for account documents.
-
-**Investment Firms:** Brokerage and investment management firms.
-
-**Insurance Companies:** Insurers for policy and claims documents.
-
-**Accounting Firms:** CPAs and audit firms for financial statements.
-
-**System Integration**
-
-Insurance verification integrates with industry systems:
-
-**Policy Administration Systems:** Core insurance systems generate verification hashes at policy issuance.
-
-**ACORD Standards:** Insurance industry data standards could include verification fields.
-
-**State Insurance Databases:** Regulators maintain databases for systematic hash receipt.
-
-**Agent Portals:** Insurance agents access verification for client service.
+**Privacy Salt:** Highly Critical. Individual buyer names and their specific "Credit Limits" are sensitive business intelligence. The hash must be salted and access restricted to authorized trading partners.
 
 ## Rationale
 
-Prevents fake trade credit insurance. Domain binding verifies credit insurer (Euler Hermes, Atradius, Coface). Protects against buyer insolvency. International trade. Letter of credit alternative. Export credit agency (ECA) coverage.
+Trade credit is the "Fuel of the B2B Economy." By turning static limit notices into verifiable digital bridges, we protect the supply chain from the "Chain Reaction" of insolvencies and ensure that "Credit Power" is backed by the digital truth of the insurer.

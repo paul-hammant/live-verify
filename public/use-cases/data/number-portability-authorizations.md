@@ -1,115 +1,105 @@
 ---
-title: "Number portability authorizations"
+title: "Number Portability Authorizations (LOA)"
 category: "Business & Commerce"
-volume: "Small"
-retention: "3-7 years (regulatory compliance)"
+volume: "Very Large"
+retention: "3-7 years (regulatory compliance / dispute resolution)"
 slug: "number-portability-authorizations"
-tags: ["number", "portability", "authorizations", "telecommunications"]
+tags: ["telecom", "number-porting", "loa", "sim-swap-fraud", "identity-verification", "porting-authority", "consumer-protection"]
 ---
 
 ## What is a Porting Authorization?
 
-When you switch from AT&T to T-Mobile but keep your same phone number, you are "Porting" your number. To do this, you must sign a **Number Portability Authorization (LOA)**.
+When you switch your phone number from one carrier to another (e.g., AT&T to T-Mobile), you must sign a **Letter of Agency (LOA)**. This document is the legal "Key" to your digital identity. In the era of 2FA (Two-Factor Authentication), your phone number is often the only thing standing between a hacker and your bank account.
 
-This document is the "Key" to your digital identity.
+**SIM Swapping** is a major global crime where hackers forge these authorizations to steal a victim's phone number. Once they control the number, they reset passwords and drain accounts. Verified hashes bind the **Account Number, Zip Code, and Intent to Port** to the losing carrier's domain (e.g., `att.com` or `verizon.com`), ensuring that a "Porting Request" is a verified action from the real owner.
 
-**SIM Swapping** is a major crime where hackers forge these authorizations to steal your phone number. Once they have your number, they can reset your bank passwords and steal your money. Verified hashes from the carrier's domain ensure that a "Porting Request" is a **Verified Intent** from the real owner, not a hacker with a fake PDF.
-
-<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; background: #fff; padding: 25px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <div style="background: #000; color: #fff; padding: 15px; text-align: center; margin-bottom: 20px;">
-    <h2 style="margin: 0; text-transform: uppercase; font-size: 1.2em;">LETTER OF AGENCY (LOA)</h2>
-    <div style="font-size: 0.8em;">FOR NUMBER PORTABILITY</div>
+<div style="max-width: 500px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.15); overflow: hidden;">
+  <div style="background: #000; color: #fff; padding: 20px; text-align: center; border-bottom: 3px solid #000;">
+    <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 1px;">LETTER OF AGENCY (LOA)</div>
+    <div style="font-size: 0.75em; opacity: 0.8; text-transform: uppercase; margin-top: 5px;">Authorization for Number Portability</div>
   </div>
-  <div style="font-size: 0.95em; line-height: 1.6;">
-    <p>I, <span data-bracket="start" data-for="port">]</span><strong>JOHN JACOB DOE</strong>, authorize the porting of my telephone number <strong>(555) 123-4567</strong> from AT&T to T-Mobile.</p>
-    <p><strong>Account #:</strong> 9988776655<br>
-    <strong>Address:</strong> 123 Maple St, Anytown, USA</p>
-    <div data-verify-line="port" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;">
-      verify:att.com/porting/v/9988776655 <span data-bracket="end" data-for="port">]</span>
+
+  <div style="padding: 30px; font-size: 0.95em; line-height: 1.6; color: #333;">
+    <p>I, <span data-bracket="start" data-for="port">]</span><strong>JOHN JACOB DOE</strong>, authorize the porting of the following telephone number(s) from my current provider (Losing Carrier) to the New Provider (Winning Carrier).</p>
+    
+    <div style="background: #f9f9f9; padding: 15px; border: 1px solid #ddd; margin: 20px 0; border-radius: 4px;">
+      <p><strong>Telephone Number:</strong> (555) 123-4567<br>
+      <strong>Current Carrier:</strong> AT&T Mobility<br>
+      <strong>Account #:</strong> 9922-8877-6655<br>
+      <strong>Service Zip Code:</strong> 62704</p>
+    </div>
+
+    <p style="font-size: 0.85em; font-style: italic; color: #666;">
+      "I certify that I am the authorized account holder for the number(s) listed above. I understand that this authorization will result in a change of service provider."
+    </p>
+  </div>
+
+  <div style="padding: 20px; background: #fdfdfd; border-top: 1px solid #eee; text-align: center;">
+    <div data-verify-line="port" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
+      title="Demo only: Carriers don't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:att.com/porting/v/992288776655 <span data-bracket="end" data-for="port">]</span>
+    </div>
+    <div style="font-size: 0.7em; color: #999; margin-top: 10px;">
+      Scan to verify porting intent, account standing, and anti-fraud status.
     </div>
   </div>
 </div>
 
+## Data Verified
+
+Authorized signer name, telephone number(s) to be ported, losing carrier name, winning carrier name, account number (masked), service address zip code, date of authorization, porting PIN status, internal fraud-score hash.
+
+**Document Types:**
+- **Letter of Agency (LOA):** The primary customer authorization.
+- **Porting Request Summary:** The digital data sent between carriers.
+- **CSR (Customer Service Record):** (Linked hash) proving account ownership.
+- **Identity Verification Receipt:** Proof the customer passed a biometric check.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`att.com`, `t-mobile.com`, `verizon.com`) and the porting standing.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Authorized / Pending** — The porting request is valid and awaiting execution.
+- **Port Completed** — **ALERT:** The number has already been moved; this paper is historic.
+- **Fraud Alert** — **CRITICAL:** The account holder has flagged this number for "No Porting."
+- **Invalid PIN** — **ALERT:** The porting PIN on the paper does not match the system.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Account Holder (Consumer)** benefits from verification.
 
-**Document Authenticity:** Verify received documents are genuine and properly issued.
+**SIM Swap Defense:** An owner can place a "Verified Lock" on their number. If a hacker tries to port the number using a fake PDF, the winning carrier's automated system scans the hash. If it returns **"FRAUD ALERT"** or **"NOT AUTHORIZED,"** the port is blocked instantly, protecting the owner's bank and email accounts.
 
-**Third-Party Presentation:** Provide verified documentation when required.
-
-**Compliance Requirements:** Meet regulatory or contractual documentation requirements.
-
-**Record Keeping:** Maintain verified records for future reference or audits.
-
-**Dispute Prevention:** Establish authenticity to prevent future challenges.
+**Carrier Switching:** When arriving at a new store (e.g., T-Mobile) to switch service, the customer provides the verified hash from their old carrier (e.g., AT&T). The clerk can instantly see **"VERIFIED INTENT"** on their screen, removing the need for 30-minute "manual verification" phone calls between carriers.
 
 ## Third-Party Use
 
-**Auditors and Compliance Officers**
+**Winning Carriers (The Receiving Provider)**
+**Compliance Vetting:** FCC rules require the winning carrier to obtain a valid LOA. OCR-to-hash allows them to bulk-verify that thousands of incoming porting requests are authentic and haven't been "Faked" by aggressive sales agents trying to meet quotas.
 
-Internal and external audits:
+**Banks and Financial Institutions**
+**Identity Vetting:** Before sending a high-value wire, a bank can scan the verified hash of the customer's "Porting History." If the number was ported in the last 24 hours (a major SIM-Swap red flag), the bank can block the wire and require in-person ID.
 
-**Financial Audits:** Verify documents during financial statement audits.
-
-**Compliance Audits:** Validate documentation for regulatory compliance.
-
-**Internal Controls:** Test document authenticity in control assessments.
-
-**Fraud Investigations:** Verify documents in fraud examinations.
-
-**Third-Party Audits:** Validate vendor and partner documentation.
+**Law Enforcement**
+**Crime Investigation:** Verifying the "Chain of Authorization" for a phone number used in a fraudulent transaction to determine if the number was stolen via a fake LOA.
 
 ## Verification Architecture
 
-**The Number portability authorizations Fraud Problem**
+**The "Phantom Port" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **PIN Theft:** Hackers social-engineering a customer's porting PIN and then creating a fake LOA to match it.
+- **Account Number Padding:** Editing a PDF to add 10 "Ghost Numbers" to a legitimate single-number porting request.
+- **Identity Mimicry:** Creating a fake LOA for a victim's number using PII stolen from a data breach.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**National Mobile Carriers.**
+**VoIP Service Providers (Twilio, Bandwidth).**
+**Centralized Porting Databases (e.g., NPAC).**
 
-**Primary Issuers:** Organizations with direct authority to issue these documents.
-
-**Licensed Professionals:** Professionals authorized to create and certify documents.
-
-**Government Agencies:** Federal, state, or local agencies with jurisdiction.
-
-**Industry Bodies:** Trade associations and professional organizations.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
+**Privacy Salt:** Highly Critical. Telephone numbers and account data are the keys to a person's life. The hash MUST be salted to prevent "Mass Phone Mapping" by hackers or marketers.
 
 ## Rationale
 
-Domain binding verifies carrier. Standard forms suitable for OCR. Prevents unauthorized number porting. Regulatory compliance. Fraud prevention.
+Number porting is the "Identity Pivot" of the modern world. By turning authorizations into verifiable digital bridges, we protect the consumer's digital life from the multi-billion dollar cost of SIM-Swap fraud and ensure that "Permission to Move" is a cryptographic fact.

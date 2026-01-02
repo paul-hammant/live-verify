@@ -1,96 +1,130 @@
 ---
-title: "Scouting reports and player statistics"
+title: "Scouting Reports and Player Statistics"
 category: "Sports & Athletics"
 volume: "Very Small"
-retention: "5-15 years (player development)"
+retention: "5-15 years (recruitment / career lifecycle)"
 slug: "scouting-reports-player-stats"
-tags: ["scouting", "reports", "player", "stats", "sports", "athletics"]
+tags: ["sports", "scouting", "player-stats", "athletic-recruitment", "college-sports", "pro-league", "integrity-in-sports", "scouting-combine"]
 ---
+
+## What is a Scouting Report?
+
+In professional and collegiate sports (Baseball, Football, Soccer), a **Scouting Report** is the official evaluation of an athlete's physical talent and character. It lists critical "Objective Stats"—like a 40-yard dash time, a fastball velocity (MPH), or a goal-scoring record—alongside "Subjective Grades" from a professional scout.
+
+These documents are the "Resumes" of the sports world. They determine who gets a $1M pro contract or a full-ride college scholarship. Fraud is common: parents or agents often "edit" a report to turn a 90 MPH fastball into a 95 MPH one, or to hide a "Character Red Flag" found by a scout. Verified hashes bind the **Player's Name, Core Stats, and Scout's Credentials** to the team's or the combine's domain (e.g., `mlb.com`, `nflcombine.com`, or `imgacademy.com`).
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Arial Black', Arial, sans-serif; border: 4px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+  <div style="background: #d32f2f; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+    <div>
+      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;">NATIONAL SCOUTING BUREAU</div>
+      <div style="font-size: 0.8em; opacity: 0.9;">Official Prospect Evaluation</div>
+    </div>
+    <div style="text-align: right;">
+      <div style="font-weight: bold; font-size: 1.1em;">RATING: 80</div>
+      <div style="font-size: 0.7em;">ELITE PROSPECT</div>
+    </div>
+  </div>
+
+  <div style="padding: 25px;">
+    <div style="display: flex; margin-bottom: 25px; border-bottom: 2px solid #eee; padding-bottom: 15px;">
+      <div style="width: 100px; height: 120px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #999; font-size: 0.7em; text-align: center; margin-right: 20px;">[PLAYER PHOTO]</div>
+      <div style="flex-grow: 1;">
+        <div style="font-size: 0.8em; color: #888; text-transform: uppercase;">Athlete Name</div>
+        <div style="font-size: 1.4em; font-weight: bold; color: #000;"><span data-bracket="start" data-for="scout">]</span>SARAH "THE JET" SMITH</div>
+        <div style="font-size: 0.9em; margin-top: 5px;"><strong>Pos:</strong> Striker (Soccer) • <strong>Class:</strong> 2026</div>
+        <div style="font-size: 0.9em;"><strong>Org:</strong> Unseen University Academy</div>
+      </div>
+    </div>
+
+    <div style="background: #f9f9f9; padding: 15px; border: 1px solid #ddd; margin-bottom: 20px;">
+      <h4 style="margin-top: 0; font-size: 0.9em; border-bottom: 1px solid #ccc; padding-bottom: 5px; color: #d32f2f;">VERIFIED PERFORMANCE METRICS</h4>
+      <table style="width: 100%; font-size: 0.95em;">
+        <tr>
+          <td><strong>40-Yard Dash:</strong></td>
+          <td style="text-align: right; font-weight: bold;">4.42s</td>
+        </tr>
+        <tr>
+          <td><strong>Vertical Leap:</strong></td>
+          <td style="text-align: right; font-weight: bold;">38.5"</td>
+        </tr>
+        <tr>
+          <td><strong>Max Velocity:</strong></td>
+          <td style="text-align: right; font-weight: bold;">92 MPH</td>
+        </tr>
+      </table>
+    </div>
+
+    <div style="font-size: 0.8em; line-height: 1.4; color: #555; font-style: italic;">
+      <strong>Scout Notes:</strong> Elite explosive power. Exceptional field vision. Character Grade: A. Recommended for Tier-1 recruitment.
+    </div>
+  </div>
+
+  <div style="padding: 20px; background: #fff; border-top: 1px solid #eee; text-align: center;">
+    <div data-verify-line="scout" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
+      title="Demo only: Scouting bureaus don't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:nationscout.com/v/SMITH-992288 <span data-bracket="end" data-for="scout">]</span>
+    </div>
+    <div style="font-size: 0.7em; color: #999; margin-top: 10px;">
+      Scan to verify athletic performance data and scout certification status.
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Player name, DOB, scout name, performance metrics, team
+Player name, date of birth, graduation class, primary position, height/weight, physical metrics (e.g., speed, strength), performance stats (e.g., GPA, PPG), scout name/ID, scouting organization, date of evaluation.
 
-**Multi-Page Handling:** Documents may span multiple pages. Per-page verification prevents page substitution attacks.
+**Document Types:**
+- **Combine Result Sheet:** Data from a standardized physical test.
+- **Scouting Evaluation Report:** Subjective analysis from a pro scout.
+- **Academic/Athletic Transcript:** Summary for college recruitment.
+- **Injury Clearance Report:** (Linked hash) proving recovery from surgery.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`ncaa.org`, `nfl.com`, `PerfectGame.org`) and the athlete's standing.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Verified Metrics** — Data matches the original combine/test record.
+- **Suspended** — **ALERT:** The athlete has been flagged for disciplinary or eligibility issues.
+- **Recanted** — **ALERT:** The scout has withdrawn the evaluation (e.g., due to discovered fraud).
+- **Draft Eligible** — Confirms the athlete meets league age/academic rules.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Athlete / Prospect** benefits from verification.
 
-**Document Authenticity:** Verify received documents are genuine and properly issued.
+**College Recruiting:** A high school athlete can include a verified "Performance Hash" in their emails to college coaches. The coach can instantly see **"VERIFIED 4.4s DASH - NFL COMBINE"** on their phone, moving that player to the top of the recruitment list over players with un-verified self-reported stats.
 
-**Third-Party Presentation:** Provide verified documentation when required.
-
-**Compliance Requirements:** Meet regulatory or contractual documentation requirements.
-
-**Record Keeping:** Maintain verified records for future reference or audits.
-
-**Dispute Prevention:** Establish authenticity to prevent future challenges.
+**Scholarship Integrity:** Proving to a university that their "Elite" status is a verified fact, protecting the athlete from being "De-committed" due to unfounded rumors about their speed or character.
 
 ## Third-Party Use
 
-**Auditors and Compliance Officers**
+**College Coaches / Pro GMs**
+**Integrity Filter:** Thousands of parents send "highlight reels" and "stats." OCR-to-hash allows the front office to instantly filter for only verified, professionally-scouted talent, saving thousands of hours in manual vetting.
 
-Internal and external audits:
+**Sports Agents / Agencies**
+**Market Valuation:** Using verified stats to negotiate higher endorsement deals for their clients. "Verified by MLB Scouting Bureau" provides the brand (e.g., Nike) with the proof needed to sign a high-value contract.
 
-**Financial Audits:** Verify documents during financial statement audits.
-
-**Compliance Audits:** Validate documentation for regulatory compliance.
-
-**Internal Controls:** Test document authenticity in control assessments.
-
-**Fraud Investigations:** Verify documents in fraud examinations.
-
-**Third-Party Audits:** Validate vendor and partner documentation.
+**Anti-Doping & Integrity Units**
+**Anomaly Detection:** Tracking verified physical growth patterns. If an athlete's "Verified Strength" jumps 50% in 2 months, it triggers an immediate investigation into PED use.
 
 ## Verification Architecture
 
-**The Scouting reports and player statistics Fraud Problem**
+**The "Dad-with-a-PDF" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Metric Inflation:** Editing a 4.8s dash to 4.4s to get onto a college radar.
+- **Age Fraud:** Changing a player's birth year on a scouting report to make them appear more "Advanced" for their age.
+- **Scout Impersonation:** Creating a fake report from a famous scout to trick a small pro league in a foreign country.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**National Scouting Bureaus.**
+**Standardized Combines (NFL, NBA).**
+**Elite Athletic Academies.**
 
-**Primary Issuers:** Organizations with direct authority to issue these documents.
-
-**Licensed Professionals:** Professionals authorized to create and certify documents.
-
-**Government Agencies:** Federal, state, or local agencies with jurisdiction.
-
-**Industry Bodies:** Trade associations and professional organizations.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
+**Privacy Salt:** Critical. Athlete health data and minor PII are sensitive. The hash must be salted to prevent "Prospect Harvesting" by rival teams or data brokers.
 
 ## Rationale
 
-Domain binding verifies scouting organization. Report format suitable for OCR. Player development tracking. Recruitment verification.
+Sports recruitment is a multi-billion dollar industry built on "Paper Trust." By turning scouting reports into verifiable digital bridges, we protect the fairness of competition and ensure that life-changing opportunities go to the athletes who truly have the "Jet" speed they claim.

@@ -1,150 +1,133 @@
 ---
-title: "Property condition disclosures (seller)"
+title: "Property Condition Disclosures (Seller)"
 category: "Real Estate & Property"
-volume: "Small"
-retention: "7-10 years (transaction disputes)"
+volume: "Large"
+retention: "7-10 years (statute of limitations / transaction disputes)"
 slug: "property-condition-disclosures"
-tags: ["property", "condition", "disclosures", "real", "estate"]
+tags: ["real-estate", "property-disclosure", "seller-liability", "home-inspection", "material-defects", "real-estate-fraud", "buyer-protection", "closing-documents"]
 ---
+
+## What is a Property Condition Disclosure?
+
+When selling a home, the **Seller's Disclosure Statement** is the legally mandatory document where the owner must list all known material defects—such as a leaky roof, a cracked foundation, or past flooding. It is the "Buyer's Shield" in the "Caveat Emptor" (Buyer Beware) world of real estate.
+
+These documents are the primary evidence in post-sale lawsuits. Fraud is high-frequency: sellers often "scrub" a disclosure form to remove mention of a $20,000 foundation issue before showing it to a potential buyer. Similarly, they might "edit" an old inspection report to look like a "Clean" disclosure. Verified hashes bind the **Defect Checklist, Property Address, and Seller Signature** to the real estate portal's or the title company's domain (e.g., `zillow.com` or `firstam.com`).
+
+<div style="max-width: 650px; margin: 24px auto; font-family: 'Helvetica Neue', Arial, sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="background: #004d40; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+    <div>
+      <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 1px;">RESIDENTIAL PROPERTY DISCLOSURE</div>
+      <div style="font-size: 0.75em; opacity: 0.9;">STATE MANDATED SELLER STATEMENT</div>
+    </div>
+    <div style="font-size: 1.5em;">🏡</div>
+  </div>
+
+  <div style="padding: 25px;">
+    <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; border-bottom: 1px solid #eee; padding-bottom: 15px; margin-bottom: 20px;">
+      <div>
+        <strong>Property Address:</strong><br>
+        123 MAPLE STREET, SPRINGFIELD, USA<br>
+        <strong>Seller:</strong> <span data-bracket="start" data-for="disclose">]</span>ROBERT & MARY SMITH
+      </div>
+      <div style="text-align: right;">
+        <strong>Date of Disclosure:</strong> 15 MAR 2026<br>
+        <strong>Status:</strong> COMPLETED
+      </div>
+    </div>
+
+    <div style="font-size: 0.85em; color: #333;">
+      <h4 style="margin-top: 0; color: #004d40; border-bottom: 1px solid #ccc; padding-bottom: 5px;">KNOWN MATERIAL DEFECTS</h4>
+      <table style="width: 100%; margin: 10px 0;">
+        <tr>
+          <td><strong>1. ROOF:</strong> (Age: 12 yrs) Any leaks?</td>
+          <td style="text-align: right; font-weight: bold;">NONE KNOWN</td>
+        </tr>
+        <tr>
+          <td><strong>2. BASEMENT:</strong> Any past flooding?</td>
+          <td style="text-align: right; font-weight: bold;">NONE KNOWN</td>
+        </tr>
+        <tr>
+          <td><strong>3. PLUMBING:</strong> Any known leaks/issues?</td>
+          <td style="text-align: right; font-weight: bold;">NONE KNOWN</td>
+        </tr>
+        <tr>
+          <td><strong>4. FOUNDATION:</strong> Any known cracks?</td>
+          <td style="text-align: right; font-weight: bold; color: #d32f2f;">MINOR SETTLING</td>
+        </tr>
+      </table>
+    </div>
+
+    <div style="margin-top: 25px; padding: 15px; background: #f9f9f9; border: 1px solid #eee; font-size: 0.8em; font-style: italic; color: #666;">
+      "Seller certifies that the information herein is true and correct to the best of Seller's knowledge as of the date signed. Verification protects against unauthorized alteration of this disclosure."
+    </div>
+  </div>
+
+  <div style="padding: 20px; background: #fff; border-top: 1px dashed #999; text-align: center;">
+    <div data-verify-line="disclose" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #004d40; font-weight: bold;"
+      title="Demo only: Real estate boards don't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:springfield-realtors.org/v/SMITH992288 <span data-bracket="end" data-for="disclose">]</span>
+    </div>
+    <div style="font-size: 0.7em; color: #999; margin-top: 10px;">
+      Scan to verify disclosure integrity, original defect list, and seller authorization.
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Seller name, buyer name, property address, condition details, defects
+Property address, seller name(s), disclosure date, itemized defect list (Roof, Basement, HVAC, etc.), specific "YES/NO" answers for 20+ safety categories, seller signature timestamp, realtor ID, platform ID.
+
+**Document Types:**
+- **Seller's Disclosure Statement:** The primary legal form.
+- **Lead-Based Paint Disclosure:** For pre-1978 properties.
+- **Mold/Radon Remediation Proof:** (Linked hash) showing past work.
+- **HOA Disclosure Summary:** Rules and pending assessments.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`zillow.com`, `redfin.com`, `mls-portal.org`) and the disclosure standing.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Verified / Original** — Disclosure matches the version initially signed and uploaded.
+- **Amended** — **ALERT:** The seller has updated the disclosure (e.g., a new leak was found).
+- **Incomplete** — **ALERT:** Mandatory sections of the disclosure were left blank.
+- **Voided** — Disclosure withdrawn by the seller.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Buyer (Purchaser)** benefits from verification.
 
-**Ownership Verification:** Confirm property documents are authentic.
+**Pre-Offer Due Diligence:** Before spending $500 on a home inspection, the buyer scans the seller's disclosure hash. "Verified by Springfield Realtors" ensures the buyer that the "Clean" PDF they received from their agent hasn't been "Defect-Scrubbed" by a dishonest seller, protecting them from a "Money Pit" purchase.
 
-**Transaction Support:** Provide verified documents for sales, refinancing, or transfers.
-
-**Title Insurance:** Supply verified documentation for title insurance requirements.
-
-**Legal Protection:** Maintain verified records for potential disputes.
-
-**Record Accuracy:** Verify recorded information matches expectations.
+**Legal Leverage:** If a buyer discovers a hidden foundation crack after moving in, they can use the verified hash of the original disclosure to prove the seller committed "Material Misrepresentation" in court, making it much easier to win a damages claim.
 
 ## Third-Party Use
 
-**Lenders and Financial Institutions**
+**Home Inspectors**
+**Focus Audit:** An inspector can scan the verified disclosure before arriving at the house. This allows them to focus their attention on "Verified Issues" (like past roof leaks) to ensure they were actually repaired, rather than just hidden with fresh paint.
 
-Credit underwriting and risk assessment:
+**Title and Escrow Companies**
+**Closing Integrity:** Ensuring that the *final* version of the disclosure (including all amendments) is the one actually signed at the closing table, preventing "Last-Minute Swaps" of the paperwork.
 
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Insurance Companies**
-
-Underwriting and claims processing:
-
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
-
-**Government Agencies**
-
-Compliance enforcement and administration:
-
-**Inspection Verification:** Field agents verify permits and licenses at sites.
-
-**Enforcement Actions:** Confirm documentation before enforcement.
-
-**Benefit Eligibility:** Verify supporting documents for benefits administration.
-
-**Compliance Audits:** Audit documentation for regulatory compliance.
-
-**Interagency Coordination:** Share verified documents across agencies.
-
-**Real Estate Professionals**
-
-Property transactions and due diligence:
-
-**Purchase Due Diligence:** Verify property documents during transactions.
-
-**Listing Preparation:** Confirm permits and documentation for listings.
-
-**Disclosure Compliance:** Validate required disclosures and permits.
-
-**Title Research:** Verify property documents for title clearance.
-
-**Appraisal Support:** Confirm documented improvements and permits.
+**Real Estate Attorneys**
+**Evidence Authentication:** In a dispute over "Non-Disclosure," the attorney verifies the hash to show the exact state of the seller's knowledge at the timestamp of the contract.
 
 ## Verification Architecture
 
-**The Property condition disclosures (seller) Fraud Problem**
+**The "Defect Scrubbing" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Answer Swapping:** Changing a "YES" (Has Leaks) to a "NO" on a PDF before sending it to a buyer.
+- **Comment Deletion:** Removing an explanatory note about "Past Mold Remediation" to hide a recurring issue.
+- **Page Substitution:** Swapping Page 2 of a disclosure with a page from a different, "cleaner" house.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**State Real Estate Commissions.**
+**Multiple Listing Services (MLS).**
+**E-Signature Platforms (DocuSign, Dotloop).**
 
-**Government Entities:** Counties, cities, and special districts maintain property records.
-
-**Title Companies:** Title insurers and escrow companies for transaction documents.
-
-**Lending Institutions:** Banks and mortgage companies for loan documents.
-
-**Appraisal Firms:** Licensed appraisers for property valuations.
-
-**System Integration**
-
-Real estate verification connects to property systems:
-
-**Recording Systems:** County recorder systems for property document registration.
-
-**MLS Integration:** Multiple listing services for property documentation.
-
-**Title Plants:** Title companies maintain verification for title searches.
-
-**E-Recording:** Electronic recording systems generate verification at recording.
+**Privacy Salt:** Essential. Defect details and home addresses are sensitive. The hash must be salted to prevent "Neighborhood Defect Mapping" by data scrapers.
 
 ## Rationale
 
-Domain binding verifies seller/real estate agent. Standard forms suitable for OCR. Transaction transparency. Liability protection. Prevents undisclosed defect fraud.
+Property disclosure is about "Informed Consent." By turning static forms into verifiable digital bridges, we protect the buyer's largest-ever investment and the seller's legal reputation, ensuring that the "Truth of the House" is backed by cryptographic proof.

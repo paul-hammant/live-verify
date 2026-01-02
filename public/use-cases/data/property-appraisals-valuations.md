@@ -1,150 +1,123 @@
 ---
-title: "Property appraisals and valuations"
+title: "Property Appraisals and Valuations"
 category: "Real Estate & Property"
-volume: "Small"
-retention: "5-10 years (financing/tax)"
+volume: "Medium"
+retention: "5-10 years (financing cycle / tax audit)"
 slug: "property-appraisals-valuations"
-tags: ["property", "appraisals", "valuations", "real", "estate"]
+tags: ["real-estate", "property-appraisal", "home-valuation", "uspap-compliance", "mortgage-underwriting", "valuation-fraud", "property-tax-audit", "certified-appraiser"]
 ---
+
+## What is a Property Appraisal?
+
+A **Property Appraisal** is the professional "Opinion of Value" for a piece of real estate. For residential homes, this is documented in the **Uniform Residential Appraisal Report (URAR)**. It is the "Anchor of Collateral" for the multi-trillion dollar mortgage market.
+
+Because the appraisal determines how much money a bank will lend, it is a primary target for **Valuation Fraud**. Shady owners or "Fix-and-Flip" scammers often "edit" an appraisal to turn a $400,000 value into a $600,000 one to bypass equity requirements. Similarly, they might use a fake "Certified" letter from a non-existent appraiser. Verified hashes bind the **Final Opinion of Value, Property Condition, and Appraiser License** to the appraisal firm's or the state's domain (e.g., `corelogic.com` or `state-appraisal-board.gov`).
+
+<div style="max-width: 650px; margin: 24px auto; font-family: sans-serif; border: 1px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="background: #002366; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #000;">
+    <div>
+      <div style="font-weight: bold; font-size: 1.2em;">SUMMIT APPRAISAL GROUP</div>
+      <div style="font-size: 0.8em; opacity: 0.9;">USPAP Compliant Valuations • License: #TX-9922</div>
+    </div>
+    <div style="text-align: right;">
+      <div style="font-weight: bold; font-size: 0.9em;">APPRAISAL SUMMARY</div>
+      <div style="font-size: 0.7em;">Ref: <span data-bracket="start" data-for="appraise">]</span>SAP-2026-8844</div>
+    </div>
+  </div>
+
+  <div style="padding: 25px;">
+    <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
+      <div>
+        <strong>Property Address:</strong><br>
+        123 MAPLE STREET, SPRINGFIELD, USA<br>
+        <strong>Property Type:</strong> Single Family Res
+      </div>
+      <div style="text-align: right;">
+        <strong>Effective Date:</strong> 15 MAR 2026<br>
+        <strong>Inspection Date:</strong> 12 MAR 2026<br>
+        <strong>Client:</strong> GOLIATH MORTGAGE
+      </div>
+    </div>
+
+    <div style="background: #f0f4f8; border: 1px solid #002366; padding: 20px; text-align: center; margin-bottom: 20px;">
+      <div style="font-size: 0.8em; color: #002366; text-transform: uppercase; font-weight: bold; margin-bottom: 5px;">Indicated Opinion of Value:</div>
+      <div style="font-size: 2.2em; font-weight: bold; color: #000;">$ 545,000.00</div>
+      <div style="font-size: 0.8em; color: #666; margin-top: 5px;">Five Hundred Forty-Five Thousand Dollars</div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.85em;">
+      <div><strong>Overall Condition:</strong> C2 (Very Good)</div>
+      <div style="text-align: right;"><strong>Gross Living Area:</strong> 2,450 Sq Ft</div>
+    </div>
+  </div>
+
+  <div style="padding: 20px; background: #f9f9f9; border-top: 1px solid #eee; display: flex; justify-content: space-between; align-items: flex-end;">
+    <div>
+      <div style="border-top: 1px solid #000; width: 180px; padding-top: 5px; font-style: italic;">Robert J. Miller, Certified Appraiser</div>
+      <div style="font-size: 0.7em; color: #777;">License: #TX-992288 • Exp: 2027</div>
+    </div>
+    <div data-verify-line="appraise" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #002366; font-weight: bold;"
+      title="Demo only: Appraisal firms don't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:summit-eval.com/v/SAP20268844 <span data-bracket="end" data-for="appraise">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Appraiser name, property owner, address, valuation details
+Appraisal reference number, property address, appraiser name/license, opinion of value (numerical and text), effective date of valuation, overall property condition rating (e.g., C1-C6), square footage, year built, client name, AMC (Appraisal Management Company) ID.
+
+**Document Types:**
+- **URAR (Form 1004):** The primary residential summary.
+- **Appraisal Update (Form 1004D):** Proof that value hasn't changed.
+- **Desktop Valuation:** A faster, non-inspection evaluation.
+- **BPO (Broker Price Opinion):** A less formal realtor-led valuation.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`corelogic.com`, `veros.com`, `summit-eval.com`) and the valuation standing.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Verified / Current** — Valuation matches the appraiser's original digital record.
+- **Value Mismatch** — **CRITICAL:** The amount on the paper has been altered from the original finding.
+- **Expired** — **ALERT:** Appraisal is more than 6 months old; a re-certification is required.
+- **Redlined** — **ALERT:** The property is in a restricted or high-risk zone (e.g., flood/fire).
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Homeowner / Seller** benefits from verification.
 
-**Ownership Verification:** Confirm property documents are authentic.
+**Sales Price Justification:** A homeowner selling their house can show the verified "Appraisal Hash" to a potential buyer. The buyer scans it and sees **"VERIFIED VALUE: $545,000"** from a certified appraiser. This removes the doubt that the seller is "Exaggerating" the home's value, potentially closing the sale faster.
 
-**Transaction Support:** Provide verified documents for sales, refinancing, or transfers.
-
-**Title Insurance:** Supply verified documentation for title insurance requirements.
-
-**Legal Protection:** Maintain verified records for potential disputes.
-
-**Record Accuracy:** Verify recorded information matches expectations.
+**Tax Appeal Evidence:** If a property tax assessor over-values a home, the owner can provide the verified hash of a recent professional appraisal to prove the "Fair Market Value" with cryptographic certainty, winning the appeal without a hearing.
 
 ## Third-Party Use
 
-**Lenders and Financial Institutions**
+**Mortgage Lenders / Underwriters**
+**Zero-Trust Collateral Vetting:** Thousands of "Edited" appraisals are submitted to banks every year. OCR-to-hash connects the underwriter directly to the appraisal firm's domain, stopping "Equity Siphoning" fraud at the source and protecting the bank's loan-to-value (LTV) ratios.
 
-Credit underwriting and risk assessment:
+**Real Estate Secondary Markets (Fannie/Freddie)**
+**Quality Control Audit:** Instantly verifying thousands of appraisal files in a mortgage-backed security (MBS). OCR-to-hash ensures the underlying valuations are authentic and haven't been "Padded" to increase the bond's value.
 
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Insurance Companies**
-
-Underwriting and claims processing:
-
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
-
-**Government Agencies**
-
-Compliance enforcement and administration:
-
-**Inspection Verification:** Field agents verify permits and licenses at sites.
-
-**Enforcement Actions:** Confirm documentation before enforcement.
-
-**Benefit Eligibility:** Verify supporting documents for benefits administration.
-
-**Compliance Audits:** Audit documentation for regulatory compliance.
-
-**Interagency Coordination:** Share verified documents across agencies.
-
-**Real Estate Professionals**
-
-Property transactions and due diligence:
-
-**Purchase Due Diligence:** Verify property documents during transactions.
-
-**Listing Preparation:** Confirm permits and documentation for listings.
-
-**Disclosure Compliance:** Validate required disclosures and permits.
-
-**Title Research:** Verify property documents for title clearance.
-
-**Appraisal Support:** Confirm documented improvements and permits.
+**State Appraisal Boards**
+**Disciplinary Audit:** Verifying that a specific "Opinion of Value" was actually signed by the licensed appraiser claimed on the paper, stopping the "Clone License" fraud used by unlicensed workers.
 
 ## Verification Architecture
 
-**The Property appraisals and valuations Fraud Problem**
+**The "Kitchen Renovation" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Value Padding:** Changing a $400,000 value to $450,000 on a PDF to qualify for a home equity line of credit (HELOC).
+- **Condition Inflation:** Editing a "C4" (Fair) condition rating into a "C2" (Excellent) to hide deferred maintenance.
+- **Appraiser Spoofing:** Creating a fake report using a reputable appraiser's name and license number from a public registry.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Appraisal Management Companies (AMCs).**
+**Large National Appraisal Firms.**
+**State Real Estate Commissions.**
 
-**Government Entities:** Counties, cities, and special districts maintain property records.
-
-**Title Companies:** Title insurers and escrow companies for transaction documents.
-
-**Lending Institutions:** Banks and mortgage companies for loan documents.
-
-**Appraisal Firms:** Licensed appraisers for property valuations.
-
-**System Integration**
-
-Real estate verification connects to property systems:
-
-**Recording Systems:** County recorder systems for property document registration.
-
-**MLS Integration:** Multiple listing services for property documentation.
-
-**Title Plants:** Title companies maintain verification for title searches.
-
-**E-Recording:** Electronic recording systems generate verification at recording.
+**Privacy Salt:** Essential. Home values and floor plans are sensitive private data. The hash must be salted to prevent "Wealth Mapping" of entire neighborhoods by data scrapers.
 
 ## Rationale
 
-Domain binding verifies certified appraiser. Formal reports suitable for OCR. Prevents inflated valuations. Financing and tax documentation.
+Property value is the "Foundation of Credit." By turning static appraisal reports into verifiable digital bridges, we protect the stability of the housing market and ensure that the "Wealth" on the page is backed by the professional truth of the audit.

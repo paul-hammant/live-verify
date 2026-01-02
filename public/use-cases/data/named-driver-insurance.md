@@ -111,3 +111,9 @@ The **Named Driver** benefits from verification.
 | **User Access** | **Open.** Any citizen or car owner can verify. | **Restricted.** Usually only for Police/DVLA. | **Universal.** |
 
 **Why OCR wins here:** The "Driver Specificity" gap. Many national databases only track the *vehicle*. They don't list the 4 different named drivers. OCR-to-hash allows a car owner to prove that a **specific person** is covered, which is the most common point of failure in car-accident liability disputes.
+
+## See Also
+
+- [Authority-Issued Driving Records](view.html?slug=driving-records) — Before adding a named driver, insurers should verify their points/endorsements
+- [Driver's Licenses & Vehicle Registrations](view.html?slug=drivers-licenses-vehicle-registrations) — License card verification
+- [Additional Driver Endorsements](view.html?slug=additional-driver-endorsements) — Temporary driver coverage

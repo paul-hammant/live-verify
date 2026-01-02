@@ -4,62 +4,106 @@ category: "Food hygiene"
 type: "use-case"
 slug: "food-hygiene-postings"
 beneficiary: "Customers"
-tags: ["food-safety", "hygiene", "ratings", "restaurants", "public-health", "customers", "health-grades", "food-handler", "food-truck"]
+tags: ["food-safety", "hygiene", "ratings", "restaurants", "public-health", "customers", "health-grades", "food-handler"]
 ---
 
-# Food Hygiene Postings
+## What are Food Hygiene Postings?
 
-**Category:** Food hygiene
-**Beneficiary:** Customers
-**Examples:** Ratings (0-5), health inspection grades (A/B/C), allergen info, food handler certificates, food truck permits.
+When you walk into a restaurant, the **Food Hygiene Rating** (often an "A" card or a "5-Star" sticker in the window) is the only evidence you have that the kitchen is clean and the food is safe. These ratings are issued by health departments after rigorous, surprise inspections.
 
-Food hygiene postings are official certificates and placards that prove an establishment meets sanitary standards. These are issued by health departments following site inspections of kitchens, staff practices, and equipment.
+The problem is that these stickers are incredibly easy to fake or simply leave on the window for years. A restaurant that was "5-Star" in 2023 but dropped to "1-Star" in 2025 because of a rat infestation will almost certainly leave the old "5-Star" sticker on the door to avoid losing customers.
 
-**Where Posted:** conpicuous locations visible to customers. Typically in **front windows**, near the **entrance**, or at the **point of sale** (register). For staff-specific credentials like Food Handler Cards, these are often kept in a **manager's binder** or displayed in the **kitchen area**.
+OCR-to-hash allows a diner to scan the window sticker to verify: **"Is this the official rating from the most recent inspection, and is it still valid?"**
 
-## Verification Value
+<div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 4px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="background: #333333; color: #fff; padding: 15px; text-align: center;">
+    <h3 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">Food Hygiene Rating</h3>
+  </div>
 
-**Problem:**
-- **Grade Inflation:** Restaurants displaying a fake "A" or "5-star" sticker to hide a recent poor inspection result (e.g., a "C" or "1-star").
-- **Ghost Grades:** Keeping old stickers from years ago because recent inspections were unfavorable.
-- **Credential Fraud:** Kitchen staff using fake or "Photoshopped" Food Handler Cards to avoid taking mandatory safety exams.
-- **Permit Cloning:** One food truck's valid permit being photocopied and used across an entire fleet of 5 trucks to avoid fees and inspections.
+  <div style="padding: 25px; text-align: center; background: #ffffcc;">
+    <div style="font-size: 0.8em; color: #666; margin-bottom: 5px;">FOOD STANDARDS AGENCY</div>
+    
+    <div style="display: flex; justify-content: center; align-items: center; margin: 15px 0;">
+      <div style="background: #000; color: #fff; width: 50px; height: 50px; line-height: 50px; border-radius: 50%; font-size: 2em; font-weight: bold; margin: 0 5px; opacity: 0.2;">0</div>
+      <div style="background: #000; color: #fff; width: 50px; height: 50px; line-height: 50px; border-radius: 50%; font-size: 2em; font-weight: bold; margin: 0 5px; opacity: 0.2;">1</div>
+      <div style="background: #000; color: #fff; width: 50px; height: 50px; line-height: 50px; border-radius: 50%; font-size: 2em; font-weight: bold; margin: 0 5px; opacity: 0.2;">2</div>
+      <div style="background: #000; color: #fff; width: 50px; height: 50px; line-height: 50px; border-radius: 50%; font-size: 2em; font-weight: bold; margin: 0 5px; opacity: 0.2;">3</div>
+      <div style="background: #000; color: #fff; width: 50px; height: 50px; line-height: 50px; border-radius: 50%; font-size: 2em; font-weight: bold; margin: 0 5px; opacity: 0.2;">4</div>
+      <div style="background: #2e7d32; color: #fff; width: 65px; height: 65px; line-height: 65px; border-radius: 50%; font-size: 2.5em; font-weight: bold; margin: 0 5px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">5</div>
+    </div>
+    
+    <div style="font-size: 1.2em; font-weight: bold; color: #2e7d32; margin-bottom: 15px;">VERY GOOD</div>
 
-**Solution:**
-Customers and inspectors can scan the placard or certificate to verify the current rating and status against official health department or certification registries. This ensures the hygiene data is accurate, real-time, and bound to the specific establishment or individual.
+    <div style="font-size: 0.9em; line-height: 1.4; color: #333; border-top: 1px solid #ccc; padding-top: 15px;">
+      <strong>Establishment:</strong> <span data-bracket="start" data-for="food">]</span>THE SPICY TACO BAR<br>
+      <strong>Last Inspected:</strong> MARCH 15, 2026<br>
+      <strong>Address:</strong> 42 HIGH STREET, LONDON
+    </div>
+  </div>
 
-## Key Examples
+  <div style="padding: 15px; background: #fff;">
+    <div data-verify-line="food" style="border-top: 1px dashed #999; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #333; text-align: center; font-weight: bold;"
+      title="Demo only: Health departments don't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:food.gov.uk/ratings/v/STACO42 <span data-bracket="end" data-for="food">]</span>
+    </div>
+  </div>
+</div>
 
-### Health Inspection Grades (A/B/C) & Ratings (0-5)
-*   **Purpose:** Simplify complex food safety audits into an easy-to-read grade for diners.
-*   **Verification:** Confirms the grade matches the *most recent* inspection and isn't a fake placard designed to hide violations like vermin or improper refrigeration.
+## Data Verified
 
-### Food Service Establishment Licenses
-*   **Purpose:** The primary operating permit for restaurants, cafes, and catering facilities.
-*   **Verification:** Confirms the license is active, matches the address, and that the seating capacity is within legal fire-safety limits.
+Business name, establishment address, hygiene rating (0-5 or A/B/C), inspection date, inspector ID, specific violations found (optional linked hash), next inspection window.
 
-### Food Handler & Manager Certificates
-*   **Purpose:** Vocational credentials proving staff are trained in safe food handling and cross-contamination prevention.
-*   **Verification:** Allows managers and inspectors to verify exam scores and certificate validity directly from the national registry (e.g., ServSafe).
+**Document Types:**
+- **Window Placard:** The visible rating for diners.
+- **Health Inspection Report:** The detailed multi-page audit (linked).
+- **Food Handler Certificate:** Vocational license for individual kitchen staff.
+- **Mobile Food Permit:** For food trucks and carts.
 
-### Food Truck & Mobile Vendor Permits
-*   **Purpose:** Specialized health permits for mobile kitchens, requiring a verified "Commissary" for cleaning and propane safety checks.
-*   **Verification:** Binds the permit to the specific vehicle VIN/Plate, stopping vendors from "borrowing" permits from other trucks.
+## Data Visible After Verification
 
-## Global Variations
+Shows the issuer domain (`food.gov.uk`, `nyc.gov/health`) and the latest official grade.
 
-*   **United States:** Uses various systems (A/B/C grades in NYC/LA, numeric scores in others). Display is usually mandatory in the front window.
-*   **United Kingdom:** Uses the 0-5 Star rating scheme. Display is legally mandatory in **Wales** and **Northern Ireland** (voluntary but common in England).
-*   **France (Alim'confiance):** Ratings range from *Très satisfaisant* to *À corriger d'urgence*, covering restaurants, butchers, and supermarket counters.
-*   **Germany:** Often requires health department inspection results to be available; some states use "Smiley" systems or color-coded barometers.
+**Status Indications:**
+- **Current** — Rating matches the most recent inspection on file.
+- **Closed** — **CRITICAL:** Facility has been ordered to shut down for safety violations.
+- **Appealed** — Rating is currently being contested by the business owner.
+- **Expired** — Mandatory inspection period has passed without a new visit.
 
-## Implementation for Issuers
+## Second-Party Use
 
-**Health Departments & Credentialing Bodies:**
-1.  **Generate:** Create the grade card or certificate with a `verify:` line.
-2.  **Hash:** Bind the establishment ID, grade, and inspection date to the hash.
-3.  **Real-Time Status:** If a facility is shut down for a violation, the verification response instantly reflects **CLOSED**, **SUSPENDED**, or **CONDEMNED**.
+The **Restaurant Owner / Manager** benefits from verification.
 
-**Customers & Inspectors:**
-1.  **Scan:** Point a smartphone at the window sticker or the staff's badge.
-2.  **Verify:** "The sticker says A, but the health department database shows this facility was closed yesterday for a major violation."
+**Brand Integrity:** A restaurant that prides itself on cleanliness can use the "Verified" status to distinguish themselves from competitors who might be using fake stickers.
+
+**Staff Oversight:** Managers can scan the "Food Handler Cards" of their employees to ensure they are actually trained and that the cards aren't "Photoshopped" fakes, protecting the business from liability if an outbreak occurs.
+
+## Third-Party Use
+
+**Diners / Public**
+**Real-Time Safety:** A customer can verify that the "5-Star" rating on the window wasn't revoked last week. This is critical for high-risk populations (pregnant women, elderly) who rely on safe food handling.
+
+**Food Delivery Apps (UberEats / DoorDash)**
+**Merchant Vetting:** Apps can automatically scan the hashes of their partner restaurants. If a restaurant is marked **"CLOSED - HEALTH VIOLATION,"** the app can instantly delist them from the platform until the issue is resolved.
+
+**Commercial Landlords**
+**Compliance Monitoring:** Ensuring that their restaurant tenants are maintaining the hygiene standards required by the lease agreement.
+
+## Verification Architecture
+
+**The "Old Sticker" Fraud Problem**
+
+- **Grade Inflation:** Keeping a 2023 "A" card on the wall to hide a 2025 "C" grade.
+- **Template Forgery:** Buying fake "Rating Stickers" on the black market to look official without ever having an inspection.
+- **ID Cloning:** Using one staff member's valid "Manager Certificate" for multiple restaurants in a chain.
+
+**Issuer Types**
+
+**National Food Standards Agencies.**
+**Local / Municipal Health Departments.**
+**Private Sanitation Audit Firms.**
+
+**Privacy Salt:** Low. Food hygiene ratings are almost always public record. However, employee IDs for individual food handlers should be salted to protect worker privacy.
+
+## Rationale
+
+Food safety is a "High-Frequency, Low-Trust" domain. By allowing the public to instantly verify the truth behind the window sticker, we create a powerful incentive for restaurant owners to maintain consistent standards between inspections.

@@ -1,146 +1,144 @@
 ---
-title: "Ocean bills of lading (B/L) - negotiable/non-negotiable"
+title: "Ocean Bills of Lading (B/L)"
 category: "Shipping & Freight"
 volume: "Large"
-retention: "7-10 years (legal title)"
+retention: "7-10 years (legal title / statute of limitations)"
 slug: "ocean-bills-of-lading"
-tags: ["ocean", "bills", "lading", "logistics", "transportation"]
+tags: ["shipping", "logistics", "bill-of-lading", "trade-finance", "customs-compliance", "maritime-fraud", "document-of-title"]
 ---
 
 ## What is an Ocean Bill of Lading?
 
-An **Ocean Bill of Lading (B/L)** is the most important paper in global trade. It is a **Document of Title**, meaning whoever holds the original paper "owns" the cargo in the container.
+The **Ocean Bill of Lading (B/L)** is arguably the most critical document in global commerce. It serves three distinct legal functions:
+1.  **Receipt for Goods:** Proving the carrier received the cargo in the stated condition.
+2.  **Evidence of Contract:** Outlining the terms of carriage between the shipper and the line.
+3.  **Document of Title:** (In "Negotiable" form) The physical paper *is* the ownership of the cargo. Whoever holds the original B/L can claim the containers at the port.
 
-It serves three roles:
-1.  **Receipt:** Proving the ship captain received the goods.
-2.  **Contract:** Defining the shipping price and rules.
-3.  **Title:** The "Key" to claim the goods at the destination port.
+This "Negotiable" status makes the B/L a prime target for high-stakes fraud. Criminals use "Phantom B/Ls" to steal entire shiploads of cargo, or "Double-Finance" the same B/L at two different banks to get two multimillion-dollar loans. Verified hashes bind the **Container IDs, Vessel Name, and Consignee** to the shipping line's domain (e.g., `maersk.com`).
 
-Because this paper represents **Ownership**, it is a high-value target for forgery. Thieves use "Phantom B/Ls" to steal $100,000 containers of electronics. Verified hashes ensure the paper in the trucker's hand matches the ship line's official record.
-
-<div style="max-width: 600px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 1px solid #000; background: #fff; padding: 0;">
-  <div style="background: #002d62; color: #fff; padding: 10px; display: flex; justify-content: space-between; align-items: center;">
-    <div style="font-weight: bold; font-size: 1.2em;">MAERSK LINE</div>
-    <div style="font-size: 0.8em;">B/L No: <span data-bracket="start" data-for="ocean-bl">]</span>MAE-9988776655</div>
+<div style="max-width: 700px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 1px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+  <div style="background: #002d62; color: #fff; padding: 15px; display: flex; justify-content: space-between; align-items: flex-end;">
+    <div>
+      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;">MAERSK LINE</div>
+      <div style="font-size: 0.7em; opacity: 0.8;">A.P. Moller-Maersk A/S • Esplanaden 50, Copenhagen</div>
+    </div>
+    <div style="text-align: right;">
+      <div style="font-weight: bold; font-size: 1.1em;">BILL OF LADING</div>
+      <div style="font-size: 0.8em; opacity: 0.9;">NEGOTIABLE ORIGINAL</div>
+    </div>
   </div>
-  <div style="padding: 20px; font-size: 0.85em;">
-    <p><strong>Shipper:</strong> Global Coffee Exporters<br>
-    <strong>Vessel:</strong> MAERSK MC-KINNEY<br>
-    <strong>Cargo:</strong> 200 Bags Arabica Coffee</p>
-    <div data-verify-line="ocean-bl" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;">
-      verify:maersk.com/bl/v/9988776655 <span data-bracket="end" data-for="ocean-bl">]</span>
+
+  <div style="display: grid; grid-template-columns: 1fr 1fr; border-bottom: 1px solid #000;">
+    <div style="padding: 10px; border-right: 1px solid #000; font-size: 0.75em; line-height: 1.3;">
+      <strong style="text-transform: uppercase; font-size: 0.8em; color: #666;">Shipper:</strong><br>
+      GLOBAL COFFEE EXPORTERS LTD.<br>
+      AVENIDA PAULISTA 1234<br>
+      SÃO PAULO, BRAZIL
+    </div>
+    <div style="padding: 10px; font-size: 0.75em; line-height: 1.3;">
+      <strong style="text-transform: uppercase; font-size: 0.8em; color: #666;">B/L Number:</strong><br>
+      <div style="font-size: 1.2em; font-weight: bold;"><span data-bracket="start" data-for="bl">]</span>MAE-9988776655</div>
+    </div>
+  </div>
+
+  <div style="padding: 10px; border-bottom: 1px solid #000; font-size: 0.75em; line-height: 1.3;">
+    <strong style="text-transform: uppercase; font-size: 0.8em; color: #666;">Consignee (to the order of):</strong><br>
+    JPMORGAN CHASE BANK, N.A.<br>
+    FOR THE ACCOUNT OF: NEW YORK ROASTERS LLC
+  </div>
+
+  <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; border-bottom: 1px solid #000; font-size: 0.7em; text-transform: uppercase; text-align: center;">
+    <div style="padding: 5px; border-right: 1px solid #000;"><strong>Vessel:</strong><br>Maersk Mc-Kinney</div>
+    <div style="padding: 5px; border-right: 1px solid #000;"><strong>Port of Loading:</strong><br>Santos, Brazil</div>
+    <div style="padding: 5px; border-right: 1px solid #000;"><strong>Port of Discharge:</strong><br>New York, USA</div>
+    <div style="padding: 5px;"><strong>Final Destination:</strong><br>Newark, NJ</div>
+  </div>
+
+  <div style="padding: 15px;">
+    <table style="width: 100%; border-collapse: collapse; font-size: 0.8em;">
+      <tr style="border-bottom: 1px solid #eee;">
+        <th style="text-align: left; padding: 5px;">Container / Seal No.</th>
+        <th style="text-align: left; padding: 5px;">Description of Packages and Goods</th>
+        <th style="text-align: right; padding: 5px;">Gross Weight</th>
+      </tr>
+      <tr>
+        <td style="padding: 10px 5px;">MSKU-992288-7<br>ML-BR-442211</td>
+        <td style="padding: 10px 5px;">320 BAGS ARABICA COFFEE BEANS<br>(GRADE A / WASHED / 2026 CROP)</td>
+        <td style="padding: 10px 5px; text-align: right;">19,200 KG</td>
+      </tr>
+    </table>
+  </div>
+
+  <div style="margin: 20px; padding: 15px; border: 2px solid #d00; border-radius: 4px; color: #d00; text-align: center; font-weight: bold; transform: rotate(-1deg); opacity: 0.8;">
+    RELEASE CARGO ONLY UPON PRESENTATION OF THIS ORIGINAL DOCUMENT
+  </div>
+
+  <div style="padding: 20px; background: #f9f9f9; border-top: 1px solid #000;">
+    <div style="font-size: 0.7em; color: #555; text-align: center; margin-bottom: 10px; font-style: italic;">
+      Verification confirms the issuance of this title document by the carrier. Alteration of cargo details renders this B/L void.
+    </div>
+    <div data-verify-line="bl" style="border-top: 1px dashed #999; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #002d62; text-align: center; font-weight: bold;"
+      title="Demo only: Maersk doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:maersk.com/bl/v/MAE9988776655 <span data-bracket="end" data-for="bl">]</span>
     </div>
   </div>
 </div>
 
+## Data Verified
+
+B/L number, carrier name, shipper name, consignee name (or "To Order"), vessel name, port of loading, port of discharge, container numbers, seal numbers, description of goods, weight/volume, date of lading, freight status (Prepaid/Collect).
+
+**Document Types:**
+- **Negotiable B/L:** The actual document of title.
+- **Sea Waybill:** A non-negotiable receipt (used when title isn't traded).
+- **House B/L:** Issued by a freight forwarder (rather than the ship line).
+- **Switch B/L:** Re-issued midway to hide the original shipper (high risk).
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`maersk.com`, `msc.com`, `cmacgm.com`) and the title standing.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Valid / Outstanding** — B/L is active; cargo is in transit or at port awaiting claim.
+- **Accomplished** — **ALERT:** The cargo has already been picked up; this paper is now historic only.
+- **Cancelled** — B/L voided (e.g., due to a "Switch B/L" or correction).
+- **Blocked** — **ALERT:** Cargo is under legal or customs hold.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Importer (Buyer) / Notify Party** benefits from verification.
 
-**Document Authenticity:** Verify received documents are genuine and properly issued.
+**Payment Security:** Before paying a foreign supplier $200,000 for a shipment of coffee, the importer scans the B/L. If the hash returns **"VALID - ISSUED BY MAERSK,"** they know the supplier actually loaded the cargo and isn't just sending a "Photoshopped PDF" to steal the money.
 
-**Third-Party Presentation:** Provide verified documentation when required.
-
-**Compliance Requirements:** Meet regulatory or contractual documentation requirements.
-
-**Record Keeping:** Maintain verified records for future reference or audits.
-
-**Dispute Prevention:** Establish authenticity to prevent future challenges.
+**Port Clearance:** The trucker arriving at the Newark terminal scans the paper B/L. "Verified by Maersk" ensures they won't be turned away at the gate for having a fake or mismatched document.
 
 ## Third-Party Use
 
-**Insurance Companies**
+**Trade Finance Banks**
+**Letter of Credit (L/C) Compliance:** Banks only release payment if the B/L perfectly matches the L/C terms. Verified hashes eliminate the "Manual Discrepancy" check, allowing for instant, automated payment triggers. It also prevents "Double Financing" fraud where a borrower uses one B/L to get loans from two different banks.
 
-Underwriting and claims processing:
+**Customs Authorities**
+**Manifest Audit:** Verifying that the cargo description on the physical B/L matches the carrier's digital manifest, preventing "Misdeclaration of Goods" (e.g., hiding high-duty electronics inside a "Used Clothes" container).
 
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Customs and Border Authorities**
-
-International trade compliance:
-
-**Import Clearance:** Verify shipping documents for customs clearance.
-
-**Duty Assessment:** Validate commercial invoices and declarations.
-
-**Trade Compliance:** Confirm certificates of origin and trade documents.
-
-**Security Screening:** Verify cargo documentation for security.
-
-**Export Controls:** Validate export documentation and licenses.
-
-**Freight Forwarders and Carriers**
-
-Logistics and transportation:
-
-**Shipment Acceptance:** Verify documents before accepting cargo.
-
-**Carrier Handoffs:** Validate documentation at transfer points.
-
-**Liability Determination:** Reference verified documents for claims.
-
-**Route Planning:** Confirm documentation for transit requirements.
-
-**Delivery Confirmation:** Verify documents at final delivery.
+**Marine Insurers**
+**Claims Verification:** In the event of a "General Average" or "Cargo Loss" claim, the insurer verifies the original B/L to confirm the value and description of the insured assets.
 
 ## Verification Architecture
 
-**The Ocean bills of lading (B/L) - negotiable/non-negotiable Fraud Problem**
+**The "Phantom Cargo" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Template Forgery:** Using a shipping line's branding to create a B/L for a ship that doesn't exist or a voyage that never happened.
+- **Switch B/L Fraud:** Using a second B/L to sell the same cargo to two different buyers.
+- **Status Hiding:** Presenting an "Accomplished" B/L (where cargo was already delivered) to a bank as if it were still "Outstanding" to get a loan.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Ocean Carriers (Vessel Operators).**
+**Non-Vessel Operating Common Carriers (NVOCCs).**
+**Port Authorities.**
 
-**Primary Issuers:** Organizations with direct authority to issue these documents.
-
-**Licensed Professionals:** Professionals authorized to create and certify documents.
-
-**Government Agencies:** Federal, state, or local agencies with jurisdiction.
-
-**Industry Bodies:** Trade associations and professional organizations.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
+**Privacy Salt:** Essential. Container contents and trade routes are highly sensitive business secrets. The hash must be salted to prevent competitors from "Scraping" a rival's trade volume.
 
 ## Rationale
 
-Negotiable B/L is document of title - tampering changes cargo ownership. Domain binding verifies carrier/freight forwarder. Prevents fake B/L fraud (cargo theft). Letter of credit compliance. Multi-page: B/L often multi-page - per-page verification prevents altering cargo details.
+Ocean B/L verification is the "Holy Grail" of supply chain security. By bridging the gap between the physical paper (required by maritime law) and the digital record, it solves the "Multi-Billion Dollar Trust Problem" at the heart of global trade.

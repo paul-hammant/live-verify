@@ -1,122 +1,114 @@
 ---
-title: "Travel vouchers and credits (future travel credits)"
+title: "Travel Vouchers and Future Credits"
 category: "Travel & Hospitality"
 volume: "Large"
-retention: "Expiration date + 3-7 years"
+retention: "Expiration date + 3-7 years (financial audit)"
 slug: "travel-vouchers-credits"
-tags: ["travel", "vouchers", "credits", "hospitality"]
+tags: ["travel-voucher", "future-travel-credit", "airline-credit", "refund-voucher", "customer-service", "loyalty-recovery", "travel-fraud", "e-voucher"]
 ---
+
+## What are Travel Vouchers?
+
+In the travel industry, **Future Travel Credits (FTC)** or vouchers are the "Liquid Debt" of airlines and hotels. They are issued in lieu of cash refunds for cancelled flights, overbooked hotels, or as "Service Recovery" after a bad experience. A single voucher can be worth $1,000 or more and is often transferable.
+
+Because vouchers are essentially "Digital Cash," they are a primary target for **Resale Scams**. Fraudsters sell "Discounted Vouchers" on eBay or Craigslist that have already been used or have a zero balance. Similarly, travelers might "edit" a $50 voucher to look like a $500 one before presenting it to an agent. Verified hashes bind the **Voucher Code, Balance, and Expiration Date** to the issuer's domain (e.g., `delta.com`, `marriott.com`, or `amtrak.com`).
+
+<div style="max-width: 450px; margin: 24px auto; font-family: sans-serif; border: 2px solid #ccc; border-radius: 8px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="background: #333; color: #fff; padding: 15px; text-align: center;">
+    <div style="font-weight: bold; font-size: 1.1em; letter-spacing: 1px;">AMTRAK &reg;</div>
+    <div style="font-size: 0.7em; opacity: 0.8; text-transform: uppercase;">Future Travel Credit Voucher</div>
+  </div>
+
+  <div style="padding: 25px; background: #fdfdfd; border-bottom: 1px solid #eee;">
+    <div style="text-align: center; margin-bottom: 20px;">
+      <div style="font-size: 0.7em; color: #888; text-transform: uppercase;">Voucher Code</div>
+      <div style="font-size: 1.8em; font-weight: bold; color: #004a99; letter-spacing: 2px;"><span data-bracket="start" data-for="voucher">]</span>XJ-9922-8877</div>
+    </div>
+
+    <div style="display: flex; justify-content: space-between; font-size: 0.9em; line-height: 1.5; color: #333;">
+      <div>
+        <strong>Original Traveler:</strong><br>
+        SARAH J. SMITH
+      </div>
+      <div style="text-align: right;">
+        <strong>Expires:</strong><br>
+        MARCH 15, 2027
+      </div>
+    </div>
+
+    <div style="margin-top: 20px; padding: 15px; background: #e8f5e9; border: 1px solid #c8e6c9; border-radius: 4px; text-align: center;">
+      <div style="font-size: 0.75em; color: #2e7d32; font-weight: bold; text-transform: uppercase;">Verified Balance (USD):</div>
+      <div style="font-size: 2.2em; font-weight: bold; color: #1b5e20;">$ 450.00</div>
+    </div>
+  </div>
+
+  <div style="padding: 15px; background: #fff; text-align: center;">
+    <div data-verify-line="voucher" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #004a99; font-weight: bold;"
+      title="Demo only: Amtrak doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:amtrak.com/v/XJ99228877 <span data-bracket="end" data-for="voucher">]</span>
+    </div>
+    <div style="font-size: 0.65em; color: #999; margin-top: 8px; font-style: italic;">
+      Scan to verify current remaining balance and transferability status. Not redeemable for cash.
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Traveler name, voucher amount, expiration date, issuing provider, voucher code
+Voucher code, issuer name, original passenger name, current remaining balance, expiration date, issuing reason (e.g., Refund), transferability flag (Yes/No), date of issuance.
+
+**Document Types:**
+- **Digital Travel Credit:** Shown in a mobile app or email.
+- **Paper Voucher:** Issued at a ticket counter or airport desk.
+- **Compensation Letter:** (Linked hash) proving why the credit was issued.
+- **Residual Value Receipt:** Issued when a voucher is partially used.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`delta.com`, `expedia.com`, `amtrak.com`) and the credit standing.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Active / Unused** — Full balance is available for redemption.
+- **Partially Used** — Some value remains (shows current balance).
+- **Redeemed** — **ALERT:** Voucher has been fully spent; paper is now worthless.
+- **Expired** — **ALERT:** The credit period has lapsed.
+- **Voided** — **ALERT:** Voucher was cancelled (e.g., after a chargeback).
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Voucher Holder (Traveler)** benefits from verification.
 
-**Document Authenticity:** Verify received documents are genuine and properly issued.
+**Secure Resale:** If a traveler wants to sell their $500 voucher to a friend, they can show the "Verified" hash. The buyer scans it and sees **"ACTIVE BALANCE: $500"** from the official airline domain, allowing the transaction to happen without the fear of a scam.
 
-**Third-Party Presentation:** Provide verified documentation when required.
-
-**Compliance Requirements:** Meet regulatory or contractual documentation requirements.
-
-**Record Keeping:** Maintain verified records for future reference or audits.
-
-**Dispute Prevention:** Establish authenticity to prevent future challenges.
+**Redemption Speed:** At a busy ticket counter, the traveler scans their own voucher. "Verified by Amtrak" ensures the agent that the credit is real and hasn't been used on another booking, bypassing the need for a manual "Voucher Lookup" in the legacy mainframe.
 
 ## Third-Party Use
 
-**Insurance Companies**
+**Secondary Marketplaces (e.g., SpareFellow, Raise)**
+**Merchant Vetting:** Marketplaces can require sellers to provide a verified hash. This allows the platform to automatically delist vouchers that reach **"REDEEMED"** status, protecting buyers from "Double-Spend" fraud.
 
-Underwriting and claims processing:
+**Corporate Travel Desks**
+**Asset Recovery:** Large companies often have thousands of "Unused Credits" from cancelled employee trips. OCR-to-hash allows them to bulk-verify the value of their "Voucher Portfolio" for tax and accounting purposes.
 
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Customs and Border Authorities**
-
-International trade compliance:
-
-**Import Clearance:** Verify shipping documents for customs clearance.
-
-**Duty Assessment:** Validate commercial invoices and declarations.
-
-**Trade Compliance:** Confirm certificates of origin and trade documents.
-
-**Security Screening:** Verify cargo documentation for security.
-
-**Export Controls:** Validate export documentation and licenses.
-
-**Freight Forwarders and Carriers**
-
-Logistics and transportation:
-
-**Shipment Acceptance:** Verify documents before accepting cargo.
-
-**Carrier Handoffs:** Validate documentation at transfer points.
-
-**Liability Determination:** Reference verified documents for claims.
-
-**Route Planning:** Confirm documentation for transit requirements.
-
-**Delivery Confirmation:** Verify documents at final delivery.
+**Consular Officers**
+**Financial Means Proof:** Travelers applying for a visa can use verified "Future Credits" as part of their proof of financial ability to travel.
 
 ## Verification Architecture
 
-**The Travel vouchers and credits (future travel credits) Fraud Problem**
+**The "Double-Spend" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Balance Inflation:** Changing a "$50" voucher to read "$500" on a printed PDF to trick an agent or a buyer.
+- **Zombie Redemptions:** Selling a voucher today that was actually redeemed yesterday.
+- **Logo Mimicry:** Creating fake "Delta" vouchers to steal PII during a fake "Claim Your Credit" scam.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Airlines.**
+**Hotels.**
+**Online Travel Agencies (OTAs).**
 
-**Primary Issuers:** Organizations with direct authority to issue these documents.
-
-**Licensed Professionals:** Professionals authorized to create and certify documents.
-
-**Government Agencies:** Federal, state, or local agencies with jurisdiction.
-
-**Industry Bodies:** Trade associations and professional organizations.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
+**Privacy Salt:** Essential. Voucher codes are essentially passwords to money. The hash must be salted to prevent "Code Guessing" (Brute-Force) attacks to find valid vouchers.
 
 ## Rationale
 
-Prevents fake travel vouchers. Domain binding verifies airline/hotel/OTA. Voucher balance verification. Prevents double-redemption fraud. COVID-19 travel credit documentation.
+Travel vouchers are "Digital Gold." By turning them into verifiable digital bridges, we protect the secondary market from scams and ensure that travel credits retain their value as a trusted alternative to cash refunds.

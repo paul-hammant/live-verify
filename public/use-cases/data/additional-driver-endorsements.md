@@ -121,3 +121,8 @@ Unlike degrees which are static, insurance status changes (cancellations). The v
 
 **Why OCR wins here:** Central databases are great for "Is this car insured?" but terrible for "Is this *specific person* insured to drive this car right now?" Temporary endorsements and complex driver restrictions are often missing from central systems. A verified document bridges this gap instantly.
 
+## See Also
+
+- [Authority-Issued Driving Records](view.html?slug=driving-records) — Insurers verify driver's points/history before issuing endorsements
+- [Named Driver Insurance](view.html?slug=named-driver-insurance) — Permanent named driver coverage
+- [Driver's Licenses & Vehicle Registrations](view.html?slug=drivers-licenses-vehicle-registrations) — License card verification

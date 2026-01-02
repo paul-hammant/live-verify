@@ -52,6 +52,17 @@ OCR-to-hash turns the **Physical Card** into a live link to the DMV's database. 
 
 Full name, date of birth, physical descriptors (Height/Eye Color), license number, license class (A/B/C), endorsements (Motorcycle/Hazmat), expiration date, REAL ID compliance status, organ donor status, issuing jurisdiction.
 
+**What the card shows vs. what the record shows:**
+
+| License Card | Driving Record |
+|--------------|----------------|
+| Identity (photo, name, DOB) | Points and endorsements |
+| Categories held | Violation history |
+| Expiry date | Disqualification history |
+| Revoked/suspended status | Endorsement codes and dates |
+
+The card proves identity and basic validity. For points/violations, see [Authority-Issued Driving Records](view.html?slug=driving-records).
+
 **Document Types:**
 - **Driver's License:** The foundational ID card.
 - **Vehicle Registration:** Proving ownership and valid tags.

@@ -1,94 +1,125 @@
 ---
-title: "Tournament brackets and standings"
+title: "Tournament Brackets and Official Standings"
 category: "Sports & Athletics"
 volume: "Small"
-retention: "5-20 years (records/history)"
+retention: "Permanent (historical records / career stats)"
 slug: "tournament-brackets-standings"
-tags: ["tournament", "brackets", "standings", "sports", "athletics"]
+tags: ["sports", "tournament", "brackets", "official-results", "career-stats", "athletic-integrity", "competitive-gaming", "esports"]
 ---
+
+## What are Tournament Brackets?
+
+In competitive sports and eSports, the **Tournament Bracket** is the official map of victory and defeat. It determines who advanced to the finals and who was eliminated in the first round. **Official Standings** are the season-long records that determine "Ranking" and "Seeding" for the next championship.
+
+These documents are the "Career Proof" for athletes and teams. They are used to secure **Sponsorships**, **College Recruitment**, and **Pro Draft** slots. Fraud is common in junior and amateur levels: players or coaches often "edit" a bracket to show they finished in the "Top 4" instead of the "Top 32," or to hide a loss against a weak opponent. Verified hashes bind the **Match Results, Player/Team Names, and Final Rankings** to the league's domain (e.g., `ncaa.com`, `fifa.com`, or `challengermode.com`).
+
+<div style="max-width: 650px; margin: 24px auto; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; border: 2px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="background: #1a237e; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+    <div>
+      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;">ELITE CHAMPIONSHIP SERIES</div>
+      <div style="font-size: 0.8em; opacity: 0.9;">Official Results & Final Standings</div>
+    </div>
+    <div style="text-align: right;">
+      <div style="font-weight: bold; font-size: 1.1em;">DIVISION: TIER-1</div>
+      <div style="font-size: 0.7em;">SEASON: 2026-Q1</div>
+    </div>
+  </div>
+
+  <div style="padding: 25px;">
+    <h4 style="margin-top: 0; border-bottom: 2px solid #1a237e; padding-bottom: 5px; color: #1a237e;">SEMIFINALS & FINALS SUMMARY</h4>
+    
+    <div style="display: grid; grid-template-columns: 1fr auto 1fr; gap: 10px; align-items: center; margin: 20px 0; font-size: 0.9em;">
+      <!-- Semifinal 1 -->
+      <div style="border: 1px solid #ccc; padding: 10px; background: #f9f9f9;">
+        <div style="display: flex; justify-content: space-between;"><span>(1) Unseen Univ.</span> <strong>2</strong></div>
+        <div style="display: flex; justify-content: space-between; opacity: 0.5;"><span>(4) High Peak Acad.</span> 1</div>
+      </div>
+      <div style="font-size: 1.5em; color: #ccc;">&rarr;</div>
+      <div rowspan="2" style="border: 2px solid #1a237e; padding: 15px; background: #e8eaf6; text-align: center;">
+        <div style="font-size: 0.7em; color: #1a237e; font-weight: bold;">CHAMPIONSHIP WINNER</div>
+        <div style="font-size: 1.1em; font-weight: bold;"><span data-bracket="start" data-for="bracket">]</span>UNSEEN UNIVERSITY ACADEMY</div>
+        <div style="font-size: 0.8em; margin-top: 5px; color: #2e7d32; font-weight: bold;">FINAL SCORE: 3 - 1</div>
+      </div>
+      <!-- Semifinal 2 -->
+      <div style="border: 1px solid #ccc; padding: 10px; background: #f9f9f9;">
+        <div style="display: flex; justify-content: space-between;"><span>(2) Blue River FC</span> <strong>1</strong></div>
+        <div style="display: flex; justify-content: space-between; opacity: 0.5;"><span>(3) Desert Coyotes</span> 0</div>
+      </div>
+      <div style="font-size: 1.5em; color: #ccc;">&rarr;</div>
+      <div></div>
+    </div>
+
+    <div style="font-size: 0.8em; line-height: 1.4; color: #555; font-style: italic; background: #fffbe6; padding: 10px; border: 1px solid #ffe58f;">
+      <strong>Official Note:</strong> Match #42 (Finals) verified by Lead Official Sarah Jenkins. No protests pending.
+    </div>
+  </div>
+
+  <div style="padding: 20px; background: #fff; border-top: 1px dashed #bbb; text-align: center;">
+    <div data-verify-line="bracket" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #1a237e; font-weight: bold;"
+      title="Demo only: Sports leagues don't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:elite-champs.com/v/TIER1-2026-FIN <span data-bracket="end" data-for="bracket">]</span>
+    </div>
+    <div style="font-size: 0.7em; color: #999; margin-top: 10px;">
+      Scan to verify match results, final seeding, and official trophy status.
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Participant names, teams, rankings, tournament details
+Tournament name, division/tier, season/date, participant/team names, seeds/rankings, individual match scores, final placement (Champion/Runner-up), head official name, protest status.
+
+**Document Types:**
+- **Championship Bracket:** The visual map of the single-elimination play.
+- **Season Standings:** The table showing wins, losses, and points.
+- **Participation Certificate:** Proving an athlete was part of the event.
+- **Match Scorecard:** Detailed data for a single specific game.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`ncaa.org`, `espn.com`, `start.gg`) and the result standing.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Official / Final** — Results are verified and the appeal period has closed.
+- **Provisional** — Results are recorded but subject to final audit or drug test.
+- **Vacated** — **ALERT:** Results have been overturned (e.g., due to cheating or eligibility fraud).
+- **In Dispute** — **ALERT:** A formal protest is active for this match/bracket.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Athlete / Team Captain** benefits from verification.
 
-**Document Authenticity:** Verify received documents are genuine and properly issued.
+**Sponsorship Scouting:** A semi-pro team can include a verified "Season Standings Hash" in their pitch to a brand (e.g., Red Bull). The brand can instantly see **"VERIFIED #1 SEED - ELITE SERIES"** on their phone, removing the doubt that the team is "Exaggerating" their popularity or skill.
 
-**Third-Party Presentation:** Provide verified documentation when required.
-
-**Compliance Requirements:** Meet regulatory or contractual documentation requirements.
-
-**Record Keeping:** Maintain verified records for future reference or audits.
-
-**Dispute Prevention:** Establish authenticity to prevent future challenges.
+**Scholarship Applications:** A student-athlete can include a verified bracket in their NCAA recruitment portal. "Verified by Elite Champs" ensures the college coach that the player actually won the state finals and isn't just taking credit for a teammate's performance.
 
 ## Third-Party Use
 
-**Auditors and Compliance Officers**
+**Sports Media / Journalists**
+**Record Accuracy:** When writing a "Where are they now?" story, a journalist can scan a 10-year-old verified bracket to ensure they are accurately reporting the career history of a retired athlete.
 
-Internal and external audits:
+**College Admissions / Recruiters**
+**Eligibility Vetting:** Verifying that a "State Champion" claim matches the official league records, protecting the integrity of athletic scholarships.
 
-**Financial Audits:** Verify documents during financial statement audits.
-
-**Compliance Audits:** Validate documentation for regulatory compliance.
-
-**Internal Controls:** Test document authenticity in control assessments.
-
-**Fraud Investigations:** Verify documents in fraud examinations.
-
-**Third-Party Audits:** Validate vendor and partner documentation.
+**Betting & Integrity Units**
+**Fraud Investigation:** Verifying that the "Official Score" on the paper matches the digital result to prevent "Result Tampering" in leagues with heavy betting volume.
 
 ## Verification Architecture
 
-**The Tournament brackets and standings Fraud Problem**
+**The "Photoshopped Trophy" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Placement Inflation:** Changing a "Quarter-Finalist" label to "Winner" on a certificate.
+- **Score Padding:** Editing a close 1-0 loss into a 2-1 win to improve a team's goal-differential ranking.
+- **Name Swapping:** Putting a different player's name on a real championship bracket.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**National Governing Bodies (NGBs).**
+**Amateur Athletic Unions (AAU).**
+**Digital Tournament Platforms (e.g., Smash.gg, Battlefy).**
 
-**Primary Issuers:** Organizations with direct authority to issue these documents.
-
-**Licensed Professionals:** Professionals authorized to create and certify documents.
-
-**Government Agencies:** Federal, state, or local agencies with jurisdiction.
-
-**Industry Bodies:** Trade associations and professional organizations.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
+**Privacy Salt:** Low. Tournament results are usually public. However, individual player IDs should be salted to protect the privacy of youth athletes.
 
 ## Rationale
 
-Domain binding verifies tournament organizer. Printed brackets suitable for OCR. Prevents result tampering. Permanent competition records.
+Sports results are "Competitive History." By turning brackets into verifiable digital bridges, we ensure that the rewards of victory—glory, scholarships, and contracts—go to those who actually won the game.

@@ -7,62 +7,96 @@ beneficiary: "Occupants/Public"
 tags: ["building-safety", "inspection", "certificates", "elevator", "fire-safety", "evacuation", "public-safety", "occupants"]
 ---
 
-# Building Safety Postings
+## What are Building Safety Postings?
 
-**Category:** Building safety
-**Beneficiary:** Occupants/public
-**Examples:** Elevator certificates, fire extinguisher tags, emergency evacuation maps, boiler permits, pool health ratings.
+In every modern building, safety is governed by a layer of "Compliance Paper." From the **Elevator Inspection Certificate** in the cab to the **Fire Extinguisher Tags** in the hallway, these documents are the only way for the public to know if the equipment they are using is safe and maintained.
 
-Building safety postings are official inspection certificates and safety diagrams that must be displayed within a facility to prove it meets mandatory life-safety codes. These documents provide assurance to tenants, visitors, and workers that the building's critical systems are professionally maintained and safe for use.
+The problem is that these papers are easy to fake, "Pencil Whip" (signing without inspecting), or simply leave expired for years. A landlord might keep a 2023 certificate on the wall to hide the fact that the elevator failed its 2025 brake test.
 
-**Where Posted:** Highly visible locations near the equipment or area being certified. Typically in **building lobbies**, **inside elevator cabs**, **mechanical rooms**, **hallways**, and **near exit doors**.
+OCR-to-hash allows a tenant, visitor, or fire marshal to scan the posting to verify: **"Is this equipment currently certified safe by the city or an authorized inspector?"**
 
-## Verification Value
+<div style="max-width: 500px; margin: 24px auto; font-family: 'Times New Roman', serif; border: 4px solid #000; background: #fff; padding: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); position: relative;">
+  <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 15px; margin-bottom: 20px;">
+    <div style="font-weight: bold; font-size: 1.3em; text-transform: uppercase;">Department of Buildings</div>
+    <div style="font-size: 1em; letter-spacing: 1px;">ELEVATOR INSPECTION CERTIFICATE</div>
+  </div>
 
-**Problem:**
-- **Expired/Ghost Certificates:** Building owners keeping old certificates on the wall to hide missed inspection cycles or failed safety tests.
-- **"Pencil Whipping":** Shady inspectors signing off on safety checks (e.g., a 90-minute battery test for emergency lights) without actually performing them.
-- **Diagram Tampering:** Landlords "self-editing" evacuation maps to hide blocked exits or hide the fact that a floor plan has been illegally subdivided.
-- **Forged Signatures:** Counterfeit certificates used to avoid high maintenance costs for elevators or fire suppression systems.
+  <div style="font-size: 0.9em; line-height: 1.6;">
+    <p><strong>Building Address:</strong> 42 SKYSCRAPER PLAZA, NEW YORK, NY<br>
+    <strong>Device ID:</strong> <span data-bracket="start" data-for="elevator">]</span>ELV-992288-B (Car #2)<br>
+    <strong>Capacity:</strong> 3,500 LBS / 22 PERSONS</p>
 
-**Solution:**
-Occupants and fire marshals can scan the placard or tag to verify the **real-time status** against the city's or the service company's official database. For maps, the verification result serves the **official approved diagram**, allowing for a direct visual comparison.
+    <div style="margin: 20px 0; padding: 15px; border: 1px solid #ccc; background: #f9f9f9;">
+      <div style="text-align: center; font-weight: bold; text-decoration: underline; margin-bottom: 10px;">CERTIFICATION OF SAFETY</div>
+      This device has been inspected and found to be in compliance with the Safety Code for Elevators and Escalators (ASME A17.1).
+    </div>
 
-## Key Examples
+    <p><strong>Inspection Date:</strong> MARCH 15, 2026<br>
+    <strong>Expires:</strong> MARCH 15, 2027<br>
+    <strong>Inspector:</strong> ROBERT J. MILLER (License #992)</p>
+  </div>
 
-### Elevator, Escalator & Moving Walkway Certificates
-*   **Purpose:** Certify the machines are safe for passenger use and meet ASME standards.
-*   **Verification:** Confirms the serial number matches the equipment and that the capacity rating hasn't been altered.
+  <div data-verify-line="elevator" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: Municipalities don't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:dob.city.gov/v/ELV992288B <span data-bracket="end" data-for="elevator">]</span>
+  </div>
+</div>
 
-### Fire Safety (Extinguishers, Alarms, Sprinklers)
-*   **Purpose:** Prove that life-saving equipment is functional and professionally inspected.
-*   **Verification:** Prevents "tag swapping" where a valid tag is moved from a new extinguisher to an old, dead one.
+## Data Verified
 
-### Emergency Evacuation Maps
-*   **Purpose:** Display official exit routes and assembly points approved by the Fire Marshal.
-*   **Verification:** The served result of the hash is the **official approved diagram** itself. This allows users to visually compare the map on their phone to the one on the wall to expose "self-edited" versions.
+Equipment ID (Serial Number), building address, capacity/rating, inspector name/license, date of inspection, expiration date, safety code version (e.g., ASME A17.1), maintenance company name.
 
-### Mechanical & Utility (Boilers, Backflow, HVAC, Cooling Towers)
-*   **Purpose:** Ensure high-pressure vessels, drinking water, and indoor air quality meet health and safety standards.
-*   **Verification:** Crucial for verifying "Rough-In" passes and current safety ratings for high-risk industrial equipment. Legionella testing for cooling towers prevents disease outbreaks.
+**Document Types:**
+- **Elevator/Escalator Certificate:** Posted in the cab or lobby.
+- **Fire Extinguisher Tag:** Yellow/Green tag hanging from the nozzle.
+- **Pool/Spa Sanitation Rating:** Posted at the facility entrance.
+- **Boiler/Pressure Vessel Permit:** In the mechanical room.
 
-### Public Health (Pools, Spas, Gyms)
-*   **Purpose:** Display sanitation and safety ratings for recreational facilities.
-*   **Verification:** Prevents disease outbreaks (e.g., Legionella) by ensuring health department records match the posted "Verified" status.
+## Data Visible After Verification
 
-## Country-Specific Variations
+Shows the issuer domain (`dob.city.gov`, `fire-marshal.gov`) and the real-time status.
 
-*   **United States:** State Boards (Boilers, Elevators) and Municipal Fire/Building Departments are primary issuers. NFPA and ASME standards are strictly enforced.
-*   **United Kingdom:** Requires specific certification for lifts and pressure systems (PSSR), along with displayed fire risk assessments.
-*   **Germany:** **TÜV** or **DEKRA** stickers are ubiquitous on machinery and elevator panels as proof of rigorous safety audits.
+**Status Indications:**
+- **Certified Safe** — Equipment is current and passed all tests.
+- **Red Tagged** — **CRITICAL:** Equipment failed inspection and is unsafe for use.
+- **Expired** — Inspection is overdue; use at own risk.
+- **Inactive** — Equipment has been decommissioned.
 
-## Implementation for Issuers
+## Second-Party Use
 
-**City Safety Bureaus & Engineering Firms:**
-1.  **Issue:** Provide the building owner with a certificate or decal containing a `verify:` line.
-2.  **Hash:** Bind the equipment ID, inspection date, and safety parameters (e.g., PSI, Capacity) to the hash.
-3.  **Real-Time Status:** If a system fails a test, the verification response instantly shows **FAILED**, **RED TAGGED**, or **UNSAFE**.
+The **Building Owner / Property Manager** benefits from verification.
 
-**The Public & Tenants:**
-1.  **Scan:** Point a smartphone at the elevator card or lobby map.
-2.  **Verify:** "The phone shows this elevator was red-tagged yesterday—let's take the stairs."
+**Liability Protection:** By maintaining a verified "Chain of Safety," the owner can prove to insurers and courts that they met all mandatory safety standards, defending against "Negligence" lawsuits if an accident occurs.
+
+**Maintenance Audit:** The owner can scan the tags left by their sub-contractors (e.g., the elevator repair firm) to ensure the tech actually updated the city's database and didn't just scribble on a piece of paper.
+
+## Third-Party Use
+
+**Building Occupants / Tenants**
+**Personal Safety:** A parent entering an elevator with their child can scan the certificate. If it returns **"RED TAGGED - FAILED BRAKE TEST,"** they can choose to exit the car immediately and report the landlord.
+
+**Fire Marshals / Inspectors**
+**Rapid Compliance Check:** During a surprise walkthrough, an inspector can scan 50 fire extinguishers in minutes. OCR-to-hash prevents "Tag Swapping" (moving a good tag from a new unit to an old one).
+
+**Insurance Underwriters**
+**Risk Pricing:** Insurers can verify that a building's life-safety systems are actually current before renewing a commercial liability policy.
+
+## Verification Architecture
+
+**The "Ghost Certificate" Fraud Problem**
+
+- **Expired Stays:** Keeping an old certificate in the elevator frame but using a PDF editor to change "2024" to "2026."
+- **Pencil Whipping:** An inspector signing a fire tag today but dating it "Yesterday" to meet a quota, or signing without visiting the site.
+- **Serial Swapping:** Using one "Pass" certificate for multiple identical machines across different floors.
+
+**Issuer Types**
+
+**Municipal Building Departments.**
+**State Safety Boards (Boilers/Elevators).**
+**Certified Third-Party Inspection Firms.**
+
+**Privacy Salt:** Low. Building safety info is generally public record. However, equipment IDs should be salted to prevent competitors from mapping a city's entire infrastructure density.
+
+## Rationale
+
+Building safety is about "Passive Trust." By turning every safety placard into a live, verifiable bridge to the regulator, we empower the public to enforce the codes that protect their lives.
