@@ -4,9 +4,11 @@
 ![License](https://img.shields.io/badge/license-AGPL--3.0-blue)
 
 A **proof of concept** for issuer-attested verification of printed/on-screen claims:
-**OCR locally → normalize → SHA-256 → GET issuer endpoint → show “Verified / Denied”.**
+**OCR locally → normalize → SHA-256 → GET issuer endpoint → show "Verified / Denied".** - all using a camera-phone.
 
-“Verified” means the issuer’s domain currently stands behind this exact text (and it’s revocable). It is not “ground truth”.
+**Anyone with a camera phone can verify any document presented to them** — no special equipment, no credentials, no calling during business hours, no issuer relationship required.
+
+"Verified" means the issuer's domain currently stands behind this exact text (and it's revocable). It is not "ground truth".
 The verifier chooses whether the issuer domain is an authority for the claim.
 
 Built from:
