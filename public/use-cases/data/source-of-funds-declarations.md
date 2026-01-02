@@ -1,125 +1,98 @@
 ---
-title: "Source of funds/wealth declarations"
-category: "Financial Compliance"
-volume: "Small"
+title: "Source of Funds/Wealth Declarations"
+category: "Financial Services Compliance"
+volume: "Medium"
 retention: "5-10 years post-relationship"
 slug: "source-of-funds-declarations"
-tags: ["source", "funds", "declarations", "banking", "financial", "services"]
+tags: ["source-of-funds", "source-of-wealth", "aml", "kyc", "due-diligence", "onboarding"]
 ---
+
+## What is a Source of Funds Declaration?
+
+When opening a high-value account or making a significant investment, financial institutions must understand where your money comes from. The **source of funds declaration** documents:
+
+- **Source of Funds:** Where did this specific transaction money come from? (e.g., sale of property, salary, inheritance)
+- **Source of Wealth:** How did you accumulate your overall wealth? (e.g., business ownership, investments, inheritance)
+
+This is core AML (anti-money laundering) compliance. If you can't explain where money came from, the institution can't accept it.
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #2e5090; background: #fff; padding: 0;">
+  <div style="background: #2e5090; color: #fff; padding: 15px;">
+    <div style="font-weight: bold; font-size: 1.1em;">SOURCE OF FUNDS DECLARATION</div>
+    <div style="font-size: 0.8em;">Anti-Money Laundering Compliance</div>
+  </div>
+  <div style="padding: 20px; font-size: 0.9em; line-height: 1.6;">
+    <p><strong>Client:</strong> Richard Thornton<br>
+    <strong>Account/Transaction:</strong> Initial Investment - £500,000<br>
+    <strong>Declaration Date:</strong> February 1, 2026</p>
+
+    <div style="background: #f0f4f8; padding: 15px; margin: 15px 0; border-left: 3px solid #2e5090;">
+      <p style="margin: 0;"><strong>Source of Funds for this transaction:</strong></p>
+      <p style="margin: 10px 0 0;">Sale of residential property at 42 Kensington Gardens, London W8</p>
+      <p style="margin: 5px 0 0;">Net proceeds: £525,000 (after mortgage redemption)</p>
+      <p style="margin: 5px 0 0;">Completion date: January 15, 2026</p>
+      <p style="margin: 10px 0 0;"><strong>Supporting documentation:</strong></p>
+      <p style="margin: 5px 0 0;">• Solicitor completion statement (attached)</p>
+      <p style="margin: 5px 0 0;">• Bank statement showing receipt of funds</p>
+    </div>
+
+    <p style="font-size: 0.85em; color: #666;">I confirm this information is true and complete. I will notify the firm of any material changes.</p>
+
+    <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
+      verify:hartley-wealth.com/kyc/SOF-RT-2026-0201
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Customer name, income sources, asset origins, employment history, supporting documentation references
+**Client name**, **transaction/account reference**, **declaration date**, **source description**, **amount**, **supporting document references**, **signatory confirmation**.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
-
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
+- **Accepted** — Declaration reviewed and accepted by firm
+- **Under Review** — Additional documentation requested
+- **Superseded** — Updated declaration provided (e.g., source changed)
+- **Rejected** — Declaration not accepted (serious — may trigger SAR)
 
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+## Why This Matters
 
-## Second-Party Use
+**Money laundering basics:** Criminals need to "explain" dirty money. Fake source of funds declarations — claiming money came from property sales, business profits, or inheritance when it didn't — are a primary laundering technique.
 
-The document holder (subject/recipient) benefits from verification.
+**Red flags:**
+- Funds that don't match stated occupation/income
+- Vague explanations ("savings", "investments" without detail)
+- Supporting documents that don't verify
+- Multiple declarations with changing stories
 
-**Record Verification:** Confirm financial documents match expectations.
+## Jurisdiction Differences
 
-**Tax Preparation:** Provide verified documentation for tax filing.
+| Jurisdiction | Regulator | Framework | Key Requirements |
+|--------------|-----------|-----------|------------------|
+| **UK** | FCA | MLR 2017, JMLSG Guidance | SOF required for high-value transactions; SOW for ongoing relationship |
+| **US** | FinCEN | BSA, CDD Rule | Beneficial ownership + source of funds for high-risk customers |
+| **EU** | National FIUs | AMLD 4/5/6 | SOF/SOW for enhanced due diligence cases |
+| **Offshore** | Various | FATF standards | Often stricter than onshore (reputational pressure) |
 
-**Audit Support:** Maintain verified records for potential audits.
-
-**Dispute Resolution:** Use verified documents to resolve discrepancies.
-
-**Loan Applications:** Present verified financial documentation to lenders.
+UK wealth managers typically require SOW for all private banking clients; US has less prescriptive rules but similar practical requirements.
 
 ## Third-Party Use
 
-**Regulators and Oversight Bodies**
-
-Regulatory compliance and oversight:
-
-**Systematic Hash Receipt:** Receive hashes in bulk for regulatory oversight.
-
-**Audit Verification:** Verify documents during routine or targeted audits.
-
-**Compliance Monitoring:** Monitor issuer compliance with documentation requirements.
-
-**Investigation Support:** Verify documents during fraud or compliance investigations.
-
-**Consumer Protection:** Verify consumer-facing documents for protection enforcement.
-
-**Lenders and Financial Institutions**
-
-Credit underwriting and risk assessment:
-
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
+**Banks/investment firms** — Onboarding decisions, ongoing monitoring
+**Compliance officers** — Risk assessment, EDD file building
+**Auditors** — Testing AML program effectiveness
+**Regulators** — Thematic reviews, enforcement investigations
+**Law enforcement** — SAR follow-up, criminal investigations
 
 ## Verification Architecture
 
-**The Source of funds/wealth declarations Fraud Problem**
+**The Problem:**
+- Clients provide forged supporting documents (fake solicitor letters, altered bank statements)
+- Declarations are altered after acceptance to change the story
+- Firms claim they obtained declarations that don't exist
+- Clients deny making declarations that they did make
 
-Document fraud creates significant risks:
+**The Fix:** Declaration hashed at signing, with references to supporting documents (which may have their own hashes). If story changes later, original declaration is verifiable. Supporting documents from third parties (solicitors, employers) can also be verified against their domains.
 
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Income Inflation:** Inflating income or assets on financial documents
-- **Photoshop Fraud:** Digital manipulation of statements and documents
-- **Shell Company Documents:** Documents from fake or shell entities
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
-
-**Issuer Types**
-
-Who issues these documents and operates verification endpoints?
-
-**Banks and Credit Unions:** Depository institutions for account documents.
-
-**Investment Firms:** Brokerage and investment management firms.
-
-**Insurance Companies:** Insurers for policy and claims documents.
-
-**Accounting Firms:** CPAs and audit firms for financial statements.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Employment letters, tax returns, and sale agreements verify wealth origin. Domain binding verifies each source (employer, tax authority, notary). Prevents money laundering via fake wealth sources. AML compliance for high-value accounts and transactions. Critical for enhanced due diligence where source of funds must be proven legitimate.
+**The chain:** Client declares source → Supporting doc from third party (e.g., employer's salary confirmation) verified against employer's domain → Firm's acceptance of declaration verified against firm's domain. Multiple verification points make fabrication much harder.

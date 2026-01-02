@@ -1,4 +1,4 @@
---- 
+---
 title: "1031 Exchange Documentation"
 category: "Real Estate & Property"
 volume: "Very Small"

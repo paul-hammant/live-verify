@@ -46,11 +46,12 @@ Scanning the displayed item verifies its authenticity against the central motor 
 ### Parking Permits & Receipts
 *   **Purpose:** Authorization to park in restricted zones or proof of payment in commercial garages.
 *   **Verification:** Parking enforcement can verify permits are genuine, while companies can verify parking receipts to prevent expense fraud.
+*   **Disability Rights:** Crucial for verifying "Blue Badges" (UK) or "Handicap Placards" (US) to ensure the person using the space is the authorized holder, preventing abuse of accessible parking.
 
 ## Regional Variations
 
 *   **Germany:** **TÜV stickers** are placed directly on the license plate; **Umweltplakette** (environmental stickers) are placed on the windshield.
-*   **United Kingdom:** **MOT** status is primarily digital but often checked against **HGV operator discs** or taxi plates physically attached to the vehicle.
+*   **United Kingdom:** **MOT** status is primarily digital but often checked against **HGV operator discs** or taxi plates. The **"Blue Badge"** disability parking permit must be displayed on the dashboard.
 *   **France:** **Contrôle technique** and insurance (*Assurance*) stickers must be displayed on the windshield.
 *   **United States:** State-level windshield inspection stickers (e.g., NY, PA) and dashboard placards for parking or commercial utility work. Taxi/TLC medallions are prominent window or roof-mounted displays.
 

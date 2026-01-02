@@ -1,48 +1,48 @@
 {
-  "generated": "2026-01-02T07:09:41.243Z",
-  "totalUseCases": 423,
+  "generated": "2026-01-02T08:12:18.302Z",
+  "totalUseCases": 400,
   "categories": {
+    "Real Estate & Property": 33,
     "Charitable & Non-Profit": 5,
     "Banking & Payments": 12,
     "Actuarial & Insurance Mathematics": 13,
     "Personal Lines Insurance": 15,
-    "Government & Civic Documents": 13,
+    "Government & Civic Documents": 12,
     "Notary Services": 9,
     "Immigration & Visa Documents": 17,
     "Financial & Legal Documents": 10,
     "Insurance Claims & Operations": 14,
-    "Environmental & Natural Resource Permits": 7,
     "Shipping & Freight": 16,
     "Travel & Hospitality": 27,
     "Professional & Occupational Licenses": 10,
     "Healthcare & Medical Records": 9,
-    "Event & Temporary Use Permits": 7,
-    "Safety Inspection Certificates": 14,
     "Professional & Educational Qualifications": 14,
     "Art & Collectibles": 7,
-    "Real Estate & Property": 35,
     "Customs & Trade Compliance": 9,
     "Sports & Athletics": 6,
     "Vehicle & Fleet": 3,
     "Investment & Fintech": 12,
     "Specialty Insurance": 24,
-    "Financial Compliance": 9,
-    "Business & Commerce": 10,
+    "Financial Compliance": 7,
+    "Business & Commerce": 9,
     "Personal Safety & Service Verification": 16,
-    "Permit Rollups": 2,
+    "Building safety": 1,
     "Commercial Lines Insurance": 11,
     "Product Certifications & Compliance": 12,
-    "Energy & Utilities": 4,
-    "Food & Beverage Permits": 2,
+    "Financial Services Compliance": 8,
+    "Energy & Utilities": 3,
     "Legal, Forensic & High-Value Logistics": 1,
     "Scientific & Research": 7,
     "Warehousing & Inventory": 5,
     "Professional & Fiduciary Accountability": 1,
-    "Construction Permits": 1,
+    "Construction Permits": 2,
     "Intellectual Property Law": 3,
-    "Mandatory Workplace Postings": 2,
+    "Safety Inspection Certificates": 3,
     "Financial Rollups": 1,
     "Trade Finance": 7,
+    "Environmental & Natural Resource Permits": 3,
+    "Environmental & Vicinity": 1,
+    "Event & Temporary Use Permits": 2,
     "Media & Publishing": 4,
     "Agriculture & Food": 6,
     "Bonds & Sureties": 3,
@@ -55,6 +55,23 @@
     "Workplace Postings": 1
   },
   "useCases": [
+    {
+      "slug": "1031-exchange-documentation",
+      "title": "1031 Exchange Documentation",
+      "category": "Real Estate & Property",
+      "volume": "Very Small",
+      "retention": "7-10 years (IRS audit)",
+      "snippet": "Exchanger name, relinquished property address, date of transfer, identified replacement properties (addresses and fair market values), identification date, Qualified Intermediary (QI) name and license",
+      "tags": [
+        "1031",
+        "exchange",
+        "documentation",
+        "real",
+        "estate",
+        "property",
+        "tax"
+      ]
+    },
     {
       "slug": "501c3-status-documentation",
       "title": "501(c)(3) Status Documentation",
@@ -205,22 +222,6 @@
       ]
     },
     {
-      "slug": "air-quality-permits",
-      "title": "Air Quality Permits (Title V)",
-      "category": "Environmental & Natural Resource Permits",
-      "volume": "Small",
-      "retention": "5 years (permit term)",
-      "snippet": "Facility name, location address, equipment description (emission units), emission limits (NOx, SOx, PM), monitoring requirements, effective/expiration dates, responsible official.",
-      "tags": [
-        "air",
-        "quality",
-        "permit",
-        "environmental",
-        "epa",
-        "title-v"
-      ]
-    },
-    {
       "slug": "air-waybills-awb",
       "title": "Air Waybills (AWB)",
       "category": "Shipping & Freight",
@@ -354,40 +355,6 @@
       ]
     },
     {
-      "slug": "amplified-sound-noise-permits",
-      "title": "Amplified Sound and Noise Variance Permits",
-      "category": "Event & Temporary Use Permits",
-      "volume": "Medium",
-      "retention": "Permit period + 1-3 years",
-      "snippet": "Venue name, address, responsible party, decibel limits (dBa), cutoff times (curfew), expiration date, special conditions (e.g., \"acoustic only\").",
-      "tags": [
-        "amplified",
-        "sound",
-        "noise",
-        "permit",
-        "event",
-        "city",
-        "ordinance"
-      ]
-    },
-    {
-      "slug": "amusement-ride-carnival-certificates",
-      "title": "Amusement Ride and Carnival Inspection Certificates",
-      "category": "Safety Inspection Certificates",
-      "volume": "Medium",
-      "retention": "Seasonal/annual (before operation)",
-      "snippet": "Ride name, serial number (VIN equivalent), owner/operator, inspection date, inspector name/license, location of inspection, result (Pass/Conditional), expiration date.",
-      "tags": [
-        "amusement",
-        "ride",
-        "carnival",
-        "inspection",
-        "safety",
-        "certificate",
-        "state"
-      ]
-    },
-    {
       "slug": "annuity-pricing-certifications",
       "title": "Annuity Pricing and Rate Certifications",
       "category": "Actuarial & Insurance Mathematics",
@@ -513,22 +480,6 @@
         "authenticity",
         "connoisseurship",
         "collectibles"
-      ]
-    },
-    {
-      "slug": "asbestos-hazmat-inspection",
-      "title": "Asbestos and Hazmat Inspection Reports",
-      "category": "Real Estate & Property",
-      "volume": "Very Small",
-      "retention": "20-30 years (building lifetime)",
-      "snippet": "Property address/location, Lab NVLAP code, sample identifiers, material descriptions, analysis results (e.g., % Chrysotile), inspector name/license, date of report.",
-      "tags": [
-        "asbestos",
-        "hazmat",
-        "environmental",
-        "real-estate",
-        "inspection",
-        "compliance"
       ]
     },
     {
@@ -696,22 +647,6 @@
       ]
     },
     {
-      "slug": "backflow-preventer-certificates",
-      "title": "Backflow Preventer Inspection Certificates",
-      "category": "Safety Inspection Certificates",
-      "volume": "Large",
-      "retention": "1 year (annual inspection)",
-      "snippet": "Property address, device serial number, model/make, test results (PSID readings), tester name/license, date of test, compliance status (Pass/Fail).",
-      "tags": [
-        "backflow",
-        "water-safety",
-        "plumbing",
-        "inspection",
-        "compliance",
-        "municipal"
-      ]
-    },
-    {
       "slug": "baggage-claim-receipts",
       "title": "Baggage Claim Receipts and Reports",
       "category": "Travel & Hospitality",
@@ -842,23 +777,6 @@
       ]
     },
     {
-      "slug": "block-party-street-closure-permits",
-      "title": "Block Party and Street Closure Permits",
-      "category": "Event & Temporary Use Permits",
-      "volume": "Medium",
-      "retention": "Event + 1-3 years",
-      "snippet": "Organizer name, street closure boundaries (block by block), event name, date, start/end time, closure type (Full/Partial), neighbors' consent confirmation, permit conditions.",
-      "tags": [
-        "block-party",
-        "street-closure",
-        "event",
-        "permit",
-        "city",
-        "public-works",
-        "neighbors"
-      ]
-    },
-    {
       "slug": "blood-type-donor-cards",
       "title": "Blood Type and Donor Cards",
       "category": "Healthcare & Medical Records",
@@ -939,22 +857,6 @@
         "written-consent",
         "legal-authority",
         "m-and-a"
-      ]
-    },
-    {
-      "slug": "boiler-pressure-vessel-certificates",
-      "title": "Boiler and Pressure Vessel Inspection Certificates",
-      "category": "Safety Inspection Certificates",
-      "volume": "Medium",
-      "retention": "1-3 years (inspection cycle)",
-      "snippet": "Jurisdiction number, Object ID, National Board (NB) number, manufacturer, year built, max allowable working pressure (MAWP), safety valve settings, inspector name/commission number, inspection date, e",
-      "tags": [
-        "boiler-safety",
-        "pressure-vessel",
-        "inspection",
-        "safety-certificate",
-        "asme",
-        "mechanical"
       ]
     },
     {
@@ -1057,13 +959,22 @@
       ]
     },
     {
-      "slug": "rollup-building-safety-certificates",
-      "title": "Building Safety Certificates (Rollup)",
-      "category": "Permit Rollups",
+      "slug": "building-safety-postings",
+      "title": "Building Safety Postings",
+      "category": "Building safety",
       "volume": "Unknown",
       "retention": "Unknown",
       "snippet": "",
-      "tags": []
+      "tags": [
+        "building-safety",
+        "inspection",
+        "certificates",
+        "elevator",
+        "fire-safety",
+        "evacuation",
+        "public-safety",
+        "occupants"
+      ]
     },
     {
       "slug": "business-interruption-claims",
@@ -1112,6 +1023,24 @@
         "nist",
         "traceability",
         "compliance"
+      ]
+    },
+    {
+      "slug": "capital-adequacy-attestations",
+      "title": "Capital Adequacy Attestations",
+      "category": "Financial Services Compliance",
+      "volume": "Small",
+      "retention": "7-10 years (regulatory audit)",
+      "snippet": "Firm name, regulatory ID (FRN/CRD/SEC number), attestation date, capital ratio confirmation (CET1, Tier 1, Total Capital), buffer compliance, signatory names, external auditor confirmation.",
+      "tags": [
+        "capital",
+        "solvency",
+        "basel",
+        "crd",
+        "regulatory",
+        "banking",
+        "insurance",
+        "prudential"
       ]
     },
     {
@@ -1181,22 +1110,6 @@
         "solvency",
         "rms",
         "air-worldwide"
-      ]
-    },
-    {
-      "slug": "catering-permits-temporary-food",
-      "title": "Catering and Temporary Food Permits",
-      "category": "Food & Beverage Permits",
-      "volume": "Medium",
-      "retention": "Event + 1-3 years",
-      "snippet": "Caterer name, annual health permit number, event name, exact event location, effective/expiration dates, authorized food handling scope (e.g., \"Pre-packaged only\" vs \"On-site cooking\"), health inspect",
-      "tags": [
-        "food-safety",
-        "catering",
-        "temporary-food-facility",
-        "health-department",
-        "event-permit",
-        "public-health"
       ]
     },
     {
@@ -1398,6 +1311,22 @@
       ]
     },
     {
+      "slug": "client-money-segregation-confirmations",
+      "title": "Client Money Segregation Confirmations",
+      "category": "Financial Services Compliance",
+      "volume": "Small",
+      "retention": "7-10 years (regulatory audit)",
+      "snippet": "Firm name, regulatory ID, confirmation date, segregation status, bank account confirmation, reconciliation status, shortfall disclosure, CASS officer name, auditor name.",
+      "tags": [
+        "client-money",
+        "segregation",
+        "cass",
+        "custody",
+        "ring-fencing",
+        "investor-protection"
+      ]
+    },
+    {
       "slug": "clinical-trial-documents",
       "title": "Clinical Trial Enrollment and Consent Documents",
       "category": "Scientific & Research",
@@ -1595,8 +1524,8 @@
       ]
     },
     {
-      "slug": "construction-permits",
-      "title": "Construction Permits",
+      "slug": "construction-site-permits",
+      "title": "Construction Site Permits",
       "category": "Construction Permits",
       "volume": "Unknown",
       "retention": "Unknown",
@@ -1605,9 +1534,8 @@
         "construction",
         "permits",
         "building",
-        "zoning",
-        "public-notice",
-        "neighbors",
+        "fenced-off",
+        "site-centric",
         "demolition",
         "electrical",
         "plumbing",
@@ -1733,22 +1661,6 @@
       ]
     },
     {
-      "slug": "cooling-tower-legionella-certificates",
-      "title": "Cooling Tower and Legionella Testing Certificates",
-      "category": "Safety Inspection Certificates",
-      "volume": "Small",
-      "retention": "1 year (annual testing)",
-      "snippet": "Building address, unique Tower ID (BIN), sample date, testing laboratory ELAP number, Legionella count (CFU/mL), cleaning/disinfection date, inspector name, date of certificate.",
-      "tags": [
-        "legionella-safety",
-        "cooling-tower",
-        "water-testing",
-        "public-health",
-        "nyc-local-law-77",
-        "compliance"
-      ]
-    },
-    {
       "slug": "copyrights",
       "title": "Copyright Registrations",
       "category": "Intellectual Property Law",
@@ -1828,23 +1740,6 @@
         "clerk-of-court",
         "civil-litigation",
         "criminal-justice"
-      ]
-    },
-    {
-      "slug": "covid-workplace-safety-protocols",
-      "title": "COVID-19 Workplace Safety Protocols",
-      "category": "Mandatory Workplace Postings",
-      "volume": "Large",
-      "retention": "Policy period + 3-5 years",
-      "snippet": "Employer name, facility location, specific protocol version, vaccination requirement status, testing frequency, mask mandate level, ventilation standards, date of policy adoption, safety officer name.",
-      "tags": [
-        "covid-19",
-        "workplace-safety",
-        "osha-compliance",
-        "public-health",
-        "vaccination-policy",
-        "mandatory-posting",
-        "employee-health"
       ]
     },
     {
@@ -2320,40 +2215,6 @@
       ]
     },
     {
-      "slug": "emergency-evacuation-maps",
-      "title": "Emergency Evacuation Maps and Procedures",
-      "category": "Mandatory Workplace Postings",
-      "volume": "Very Large",
-      "retention": "Current building layout",
-      "snippet": "Building name, floor/level ID, wing/sector, primary/secondary exit routes, assembly point location, last layout audit date, Fire Marshal approval ID, fire extinguisher locations, nearest pull-station ",
-      "tags": [
-        "emergency-evacuation",
-        "fire-safety",
-        "floor-plan",
-        "workplace-safety",
-        "osha-compliance",
-        "fire-marshal",
-        "building-safety"
-      ]
-    },
-    {
-      "slug": "emergency-lighting-exit-sign-certificates",
-      "title": "Emergency Lighting and Exit Sign Certificates",
-      "category": "Safety Inspection Certificates",
-      "volume": "Large",
-      "retention": "1 year (annual inspection)",
-      "snippet": "Building name/address, specific zone/wing, total fixture count (Emergency vs Exit), battery discharge test duration (e.g., 90 min), bulb/LED status, inspector name/license, date of inspection, expirat",
-      "tags": [
-        "emergency-lighting",
-        "exit-signs",
-        "fire-safety",
-        "life-safety",
-        "building-code",
-        "annual-inspection",
-        "nfpa-101"
-      ]
-    },
-    {
       "slug": "employment-authorization-ead",
       "title": "Employment Authorization Documents (EAD)",
       "category": "Immigration & Visa Documents",
@@ -2404,20 +2265,21 @@
       ]
     },
     {
-      "slug": "energy-audits-efficiency-ratings",
-      "title": "Energy Audits and Efficiency Ratings",
-      "category": "Energy & Utilities",
-      "volume": "Very Small",
-      "retention": "5-10 years (improvement tracking)",
-      "snippet": "Property address, asset type, numerical efficiency score (e.g., HERS index), carbon intensity (kgCO2/m²), primary HVAC efficiency ratings, auditor name/accreditation, date of audit, expiration date of",
+      "slug": "environmental-and-vicinity-postings",
+      "title": "Environmental and Vicinity Postings",
+      "category": "Environmental & Vicinity",
+      "volume": "Unknown",
+      "retention": "Unknown",
+      "snippet": "",
       "tags": [
-        "energy-audit",
+        "environmental",
+        "emissions",
         "energy-efficiency",
-        "green-building",
-        "hvac-efficiency",
-        "utility-rebates",
-        "esg-reporting",
-        "hers-rating"
+        "waste-management",
+        "hazardous-materials",
+        "public-health",
+        "vicinity",
+        "sustainability"
       ]
     },
     {
@@ -2504,23 +2366,6 @@
         "actuarial-audit",
         "fiduciary-responsibility",
         "employee-benefits"
-      ]
-    },
-    {
-      "slug": "escalator-moving-walkway-certificates",
-      "title": "Escalator and Moving Walkway Inspection Certificates",
-      "category": "Safety Inspection Certificates",
-      "volume": "Medium",
-      "retention": "1-3 years (inspection cycle)",
-      "snippet": "Equipment ID number, building address, specific wing/location, manufacturer/model, last inspection date, expiration date, safety result (Pass/Fail), inspector license number, issuing municipal departm",
-      "tags": [
-        "escalator-safety",
-        "moving-walkway",
-        "inspection-certificate",
-        "public-safety",
-        "building-code",
-        "asme-a17.1",
-        "municipal-compliance"
       ]
     },
     {
@@ -2639,13 +2484,23 @@
       ]
     },
     {
-      "slug": "rollup-event-permits",
-      "title": "Event & Temporary Use Permits (Rollup)",
-      "category": "Permit Rollups",
+      "slug": "events-permits",
+      "title": "Events Permits",
+      "category": "Event & Temporary Use Permits",
       "volume": "Unknown",
       "retention": "Unknown",
       "snippet": "",
-      "tags": []
+      "tags": [
+        "events",
+        "permits",
+        "festivals",
+        "concerts",
+        "parades",
+        "street-closure",
+        "fireworks",
+        "noise",
+        "temporary"
+      ]
     },
     {
       "slug": "expert-witness-reports",
@@ -2716,23 +2571,6 @@
       ]
     },
     {
-      "slug": "farmers-market-vendor-permits",
-      "title": "Farmers Market Vendor Permits",
-      "category": "Food & Beverage Permits",
-      "volume": "Large",
-      "retention": "Season/year validity",
-      "snippet": "Vendor name, farm/business location, authorized product categories (to prevent \"Product Reselling\"), stall/booth number, market name, effective/expiration dates, health permit status, tax ID status, m",
-      "tags": [
-        "farmers-market",
-        "vendor-permit",
-        "food-safety",
-        "local-produce",
-        "market-manager",
-        "public-health",
-        "sanitation-compliance"
-      ]
-    },
-    {
       "slug": "fidelity-bonds",
       "title": "Fidelity Bonds and Employee Dishonesty",
       "category": "Bonds & Sureties",
@@ -2766,20 +2604,19 @@
       ]
     },
     {
-      "slug": "filming-photography-permits",
-      "title": "Filming and Photography Permits",
-      "category": "Event & Temporary Use Permits",
-      "volume": "Medium",
-      "retention": "Filming period + 3-7 years",
-      "snippet": "Production company name, project title, specific filming locations (blocks/parks), effective dates/times, authorized activities (closures, drones, pyrotechnics), insurance status, police/fire escort r",
+      "slug": "financial-promotions-sign-offs",
+      "title": "Financial Promotions Sign-Offs",
+      "category": "Financial Services Compliance",
+      "volume": "Large",
+      "retention": "7 years (regulatory requirement)",
+      "snippet": "Promotion ID, campaign name, channels, approval date, approving officer (name and function), firm name, FRN, key compliance certifications, validity period.",
       "tags": [
-        "filming-permit",
-        "location-scouting",
-        "production-logistics",
-        "city-film-office",
-        "public-property",
-        "entertainment-industry",
-        "permitting"
+        "financial-promotion",
+        "advertising",
+        "s21",
+        "fair-clear",
+        "marketing",
+        "compliance"
       ]
     },
     {
@@ -2817,40 +2654,6 @@
       ]
     },
     {
-      "slug": "fire-escape-egress-certificates",
-      "title": "Fire Escape and Egress Inspection Certificates",
-      "category": "Safety Inspection Certificates",
-      "volume": "Medium",
-      "retention": "1-5 years (inspection cycle)",
-      "snippet": "Building address, specific fire escape location, equipment ID, load test results (lb/sq ft), paint/corrosion status, inspector name/PE license, date of inspection, expiration date (cycle), issuing mun",
-      "tags": [
-        "fire-escape-safety",
-        "egress-inspection",
-        "structural-integrity",
-        "fire-marshal",
-        "building-safety",
-        "load-testing",
-        "municipal-code"
-      ]
-    },
-    {
-      "slug": "fire-extinguisher-inspection-tags",
-      "title": "Fire Extinguisher Inspection Tags",
-      "category": "Safety Inspection Certificates",
-      "volume": "Very Large",
-      "retention": "1 year (annual inspection)",
-      "snippet": "Extinguisher serial number, physical location (Building/Floor), technician name/license, service type (Monthly/Annual/6-Year/Hydrostatic), inspection date, expiration date, pressure gauge status, pin/",
-      "tags": [
-        "fire-safety",
-        "extinguisher-inspection",
-        "nfpa-10",
-        "fire-marshal",
-        "building-safety",
-        "maintenance-log",
-        "compliance"
-      ]
-    },
-    {
       "slug": "firearms-dealer-ffl-licenses",
       "title": "Firearms Dealer (FFL) Licenses",
       "category": "Professional & Occupational Licenses",
@@ -2869,19 +2672,19 @@
       ]
     },
     {
-      "slug": "fireworks-display-permits",
-      "title": "Fireworks Display Permits",
-      "category": "Event & Temporary Use Permits",
-      "volume": "Small",
-      "retention": "Event + 7 years (liability)",
-      "snippet": "Permittee name, lead pyrotechnician name/license, event location (launch site), exact date/time, shell classification (e.g., 1.3G vs 1.4G), fallout zone radius, insurance carrier/limit, fire marshall ",
+      "slug": "fit-and-proper-attestations",
+      "title": "Fit and Proper Attestations",
+      "category": "Financial Services Compliance",
+      "volume": "Medium",
+      "retention": "Duration of employment + 7 years",
+      "snippet": "Employee name, role/function, firm name, assessment date, certification period, competencies confirmed, certifying officers, next renewal date.",
       "tags": [
-        "fireworks-permit",
-        "pyrotechnics",
-        "fire-marshal",
-        "public-safety",
-        "explosives-permit",
-        "event-safety",
+        "fit-proper",
+        "smcr",
+        "certification",
+        "conduct",
+        "regulatory",
+        "hr",
         "compliance"
       ]
     },
@@ -3149,23 +2952,6 @@
         "ghs",
         "emergency-response",
         "product-stewardship"
-      ]
-    },
-    {
-      "slug": "hazardous-waste-generator-permits",
-      "title": "Hazardous Waste Generator Permits",
-      "category": "Environmental & Natural Resource Permits",
-      "volume": "Small",
-      "retention": "Permit term + 30 years (RCRA)",
-      "snippet": "Generator name, EPA ID number (RCRA ID), facility address, generator status (LQG, SQG, VSQG), authorized waste codes (D, F, K, P, U codes), effective date, last inspection date, violation status, issu",
-      "tags": [
-        "hazmat",
-        "rcra",
-        "epa-id",
-        "hazardous-waste",
-        "environmental-compliance",
-        "epa-permit",
-        "pollution-prevention"
       ]
     },
     {
@@ -3444,23 +3230,6 @@
       ]
     },
     {
-      "slug": "hvac-ventilation-inspection-certificates",
-      "title": "HVAC and Ventilation Inspection Certificates",
-      "category": "Safety Inspection Certificates",
-      "volume": "Medium",
-      "retention": "1-3 years (inspection cycle)",
-      "snippet": "Equipment ID number, building address, specific wing/room location, CFM (Cubic Feet per Minute) outside air, MERV filter rating, sensor calibration status, CO2 level audit results, inspector name/lice",
-      "tags": [
-        "hvac-safety",
-        "ventilation-audit",
-        "indoor-air-quality",
-        "ashrae-standards",
-        "building-safety",
-        "mechanical-inspection",
-        "maintenance-certificate"
-      ]
-    },
-    {
       "slug": "iata-asta-credentials",
       "title": "IATA and ASTA Travel Agent Credentials",
       "category": "Travel & Hospitality",
@@ -3584,23 +3353,6 @@
       ]
     },
     {
-      "slug": "inspection-reports-health-safety-fire",
-      "title": "Multi-Disciplinary Inspection Reports (Health, Safety, Fire)",
-      "category": "Government & Civic Documents",
-      "volume": "Small",
-      "retention": "5-15 years (enforcement)",
-      "snippet": "Building address, facility owner/manager, inspector name/ID, inspection date, specific violations (by code section), required corrective actions, deadline for curing, re-inspection date, issuing autho",
-      "tags": [
-        "safety-inspection",
-        "fire-safety-report",
-        "health-department",
-        "code-enforcement",
-        "building-safety",
-        "regulatory-audit",
-        "corrective-action"
-      ]
-    },
-    {
       "slug": "instrument-calibration-records",
       "title": "Scientific Instrument Calibration Records",
       "category": "Scientific & Research",
@@ -3719,6 +3471,22 @@
         "wealth-management",
         "compliance-audit",
         "iapd"
+      ]
+    },
+    {
+      "slug": "investment-suitability-reports",
+      "title": "Investment Suitability Reports",
+      "category": "Financial Services Compliance",
+      "volume": "Large",
+      "retention": "7-10 years (regulatory, litigation)",
+      "snippet": "Client name, advisor name/credentials, firm name, report date, client profile summary (risk tolerance, objectives, experience), recommendation details, suitability rationale.",
+      "tags": [
+        "suitability",
+        "investment-advice",
+        "mifid",
+        "reg-bi",
+        "financial-advice",
+        "know-your-client"
       ]
     },
     {
@@ -4666,22 +4434,6 @@
       ]
     },
     {
-      "slug": "outdoor-dining-parklet-permits",
-      "title": "Temporary outdoor dining and parklet permits",
-      "category": "Event & Temporary Use Permits",
-      "volume": "Medium",
-      "retention": "Permit season + 3-5 years",
-      "snippet": "",
-      "tags": [
-        "outdoor",
-        "dining",
-        "parklet",
-        "permits",
-        "event",
-        "temporary"
-      ]
-    },
-    {
       "slug": "p2p-lending-agreements",
       "title": "Peer-to-peer lending agreements (LendingClub, Prosper)",
       "category": "Investment & Fintech",
@@ -4837,6 +4589,22 @@
         "valuations",
         "insurance",
         "mathematics"
+      ]
+    },
+    {
+      "slug": "pep-declarations",
+      "title": "PEP Declarations (Politically Exposed Persons)",
+      "category": "Financial Services Compliance",
+      "volume": "Medium",
+      "retention": "5-10 years post-relationship",
+      "snippet": "Declarant name, declaration date, PEP status (yes/no), role/position (if PEP), country, period of office, relationship type (self, family member, close associate), source of wealth summary.",
+      "tags": [
+        "pep",
+        "politically-exposed",
+        "aml",
+        "kyc",
+        "corruption",
+        "enhanced-due-diligence"
       ]
     },
     {
@@ -5022,21 +4790,6 @@
         "immigration",
         "visa",
         "documents"
-      ]
-    },
-    {
-      "slug": "pool-spa-health-certificates",
-      "title": "Pool and spa health inspection certificates",
-      "category": "Safety Inspection Certificates",
-      "volume": "Large",
-      "retention": "1 year (seasonal/annual)",
-      "snippet": "Facility name, pool ID, health inspector, inspection date, chemical/safety compliance",
-      "tags": [
-        "pool",
-        "health",
-        "certificates",
-        "safety",
-        "inspection"
       ]
     },
     {
@@ -5314,6 +5067,24 @@
       ]
     },
     {
+      "slug": "public-works-planning-notices",
+      "title": "Public Works and Planning Notices",
+      "category": "Construction Permits",
+      "volume": "Unknown",
+      "retention": "Unknown",
+      "snippet": "",
+      "tags": [
+        "zoning",
+        "planning-permission",
+        "public-right-of-way",
+        "street-works",
+        "utility-digs",
+        "scaffolding",
+        "tree-removal",
+        "public-notice"
+      ]
+    },
+    {
       "slug": "publishing-contracts-royalties",
       "title": "Publishing contracts and royalty statements",
       "category": "Media & Publishing",
@@ -5357,23 +5128,6 @@
         "reports",
         "logistics",
         "transportation"
-      ]
-    },
-    {
-      "slug": "raffle-tickets-contest-entries",
-      "title": "Raffle tickets and contest entries",
-      "category": "Business & Commerce",
-      "volume": "Medium",
-      "retention": "3-7 years (legal/tax compliance)",
-      "snippet": "Entrant name, contact info, entry details",
-      "tags": [
-        "raffle",
-        "tickets",
-        "contest",
-        "entries",
-        "retail",
-        "consumer",
-        "protection"
       ]
     },
     {
@@ -5536,6 +5290,24 @@
       ]
     },
     {
+      "slug": "repeat-events-permits",
+      "title": "Repeat Events Permits",
+      "category": "Event & Temporary Use Permits",
+      "volume": "Unknown",
+      "retention": "Unknown",
+      "snippet": "",
+      "tags": [
+        "repeat-events",
+        "recurring",
+        "farmers-market",
+        "street-vending",
+        "parklet",
+        "sidewalk-dining",
+        "vendor",
+        "commercial"
+      ]
+    },
+    {
       "slug": "research-grants-funding",
       "title": "Research grants and funding awards",
       "category": "Scientific & Research",
@@ -5595,21 +5367,6 @@
         "receipts",
         "travel",
         "hospitality"
-      ]
-    },
-    {
-      "slug": "right-of-way-documents",
-      "title": "Right-of-way documents",
-      "category": "Real Estate & Property",
-      "volume": "Tiny",
-      "retention": "Permanent (access rights)",
-      "snippet": "Property owner, beneficiary, property address, access rights",
-      "tags": [
-        "right",
-        "documents",
-        "real",
-        "estate",
-        "property"
       ]
     },
     {
@@ -5675,19 +5432,6 @@
       ]
     },
     {
-      "slug": "safety-inspection-certificates",
-      "title": "Safety Inspection Certificates",
-      "category": "Safety Inspection Certificates",
-      "volume": "Large (aggregate)",
-      "retention": "1-3 years (inspection cycles)",
-      "snippet": "",
-      "tags": [
-        "safety",
-        "inspection",
-        "certificates"
-      ]
-    },
-    {
       "slug": "salvage-subrogation-documentation",
       "title": "Salvage and subrogation documentation",
       "category": "Insurance Claims & Operations",
@@ -5704,22 +5448,6 @@
       ]
     },
     {
-      "slug": "sanctions-compliance-certificates",
-      "title": "Sanctions compliance certificates",
-      "category": "Financial Compliance",
-      "volume": "Very Small",
-      "retention": "7-10 years (audit trail)",
-      "snippet": "Screened party name, screening date, OFAC/UN sanctions list version, compliance officer name, screening results",
-      "tags": [
-        "sanctions",
-        "compliance",
-        "certificates",
-        "banking",
-        "financial",
-        "services"
-      ]
-    },
-    {
       "slug": "sanctions-screening-attestations",
       "title": "Sanctions/restricted party screening attestations",
       "category": "Financial Compliance",
@@ -5733,6 +5461,22 @@
         "banking",
         "financial",
         "services"
+      ]
+    },
+    {
+      "slug": "sanctions-screening-confirmations",
+      "title": "Sanctions Screening Confirmations",
+      "category": "Financial Services Compliance",
+      "volume": "Large",
+      "retention": "7-10 years (regulatory audit)",
+      "snippet": "Screened party name, screening timestamp, reference number, lists checked (with versions), result (no match / potential match / confirmed match), screening provider, compliance officer sign-off.",
+      "tags": [
+        "sanctions",
+        "ofac",
+        "screening",
+        "aml",
+        "compliance",
+        "financial-crime"
       ]
     },
     {
@@ -5920,18 +5664,18 @@
     },
     {
       "slug": "source-of-funds-declarations",
-      "title": "Source of funds/wealth declarations",
-      "category": "Financial Compliance",
-      "volume": "Small",
+      "title": "Source of Funds/Wealth Declarations",
+      "category": "Financial Services Compliance",
+      "volume": "Medium",
       "retention": "5-10 years post-relationship",
-      "snippet": "Customer name, income sources, asset origins, employment history, supporting documentation references",
+      "snippet": "Client name, transaction/account reference, declaration date, source description, amount, supporting document references, signatory confirmation.",
       "tags": [
-        "source",
-        "funds",
-        "declarations",
-        "banking",
-        "financial",
-        "services"
+        "source-of-funds",
+        "source-of-wealth",
+        "aml",
+        "kyc",
+        "due-diligence",
+        "onboarding"
       ]
     },
     {
@@ -5949,20 +5693,6 @@
         "banking",
         "financial",
         "services"
-      ]
-    },
-    {
-      "slug": "special-event-permits",
-      "title": "Special event permits (festivals, concerts, parades)",
-      "category": "Event & Temporary Use Permits",
-      "volume": "Medium",
-      "retention": "Event + 3-7 years (liability)",
-      "snippet": "Organizer, event details, location, attendance, alcohol service, police/fire/EMS",
-      "tags": [
-        "special",
-        "event",
-        "permits",
-        "temporary"
       ]
     },
     {
@@ -6038,22 +5768,6 @@
         "environmental",
         "natural",
         "resource"
-      ]
-    },
-    {
-      "slug": "street-vending-sidewalk-permits",
-      "title": "Street vending and sidewalk merchandise permits",
-      "category": "Event & Temporary Use Permits",
-      "volume": "Large",
-      "retention": "Permit validity (annual)",
-      "snippet": "Vendor name, location, products, hours, health/business license",
-      "tags": [
-        "street",
-        "vending",
-        "sidewalk",
-        "permits",
-        "event",
-        "temporary"
       ]
     },
     {
@@ -6490,23 +6204,6 @@
       ]
     },
     {
-      "slug": "tree-removal-heritage-permits",
-      "title": "Tree removal and heritage tree permits",
-      "category": "Environmental & Natural Resource Permits",
-      "volume": "Small",
-      "retention": "Permit + permanent (urban forestry)",
-      "snippet": "Property owner, address, tree species, diameter, removal justification, city",
-      "tags": [
-        "tree",
-        "removal",
-        "heritage",
-        "permits",
-        "environmental",
-        "natural",
-        "resource"
-      ]
-    },
-    {
       "slug": "trip-cancellation-confirmations",
       "title": "Trip cancellation confirmations and refund vouchers",
       "category": "Travel & Hospitality",
@@ -6799,24 +6496,6 @@
       ]
     },
     {
-      "slug": "well-drilling-water-extraction-permits",
-      "title": "Well drilling and water extraction permits",
-      "category": "Environmental & Natural Resource Permits",
-      "volume": "Small",
-      "retention": "Permit term + permanent",
-      "snippet": "Permit holder, well location, depth, pumping rate, water rights, state engineer",
-      "tags": [
-        "well",
-        "drilling",
-        "water",
-        "extraction",
-        "permits",
-        "environmental",
-        "natural",
-        "resource"
-      ]
-    },
-    {
       "slug": "wetlands-delineation-reports",
       "title": "Wetlands delineation reports",
       "category": "Real Estate & Property",
@@ -6932,28 +6611,12 @@
         "eeoc",
         "nlra"
       ]
-    },
-    {
-      "slug": "zoning-land-use-documents",
-      "title": "Zoning and land use documents",
-      "category": "Real Estate & Property",
-      "volume": "Very Small",
-      "retention": "Permanent (land records)",
-      "snippet": "Property owner, address, zoning classification, jurisdiction",
-      "tags": [
-        "zoning",
-        "land",
-        "documents",
-        "real",
-        "estate",
-        "property"
-      ]
     }
   ],
   "categoriesList": [
     {
       "name": "Real Estate & Property",
-      "count": 35
+      "count": 33
     },
     {
       "name": "Travel & Hospitality",
@@ -6984,10 +6647,6 @@
       "count": 14
     },
     {
-      "name": "Safety Inspection Certificates",
-      "count": 14
-    },
-    {
       "name": "Professional & Educational Qualifications",
       "count": 14
     },
@@ -6996,11 +6655,11 @@
       "count": 13
     },
     {
-      "name": "Government & Civic Documents",
-      "count": 13
+      "name": "Banking & Payments",
+      "count": 12
     },
     {
-      "name": "Banking & Payments",
+      "name": "Government & Civic Documents",
       "count": 12
     },
     {
@@ -7024,10 +6683,6 @@
       "count": 10
     },
     {
-      "name": "Business & Commerce",
-      "count": 10
-    },
-    {
       "name": "Notary Services",
       "count": 9
     },
@@ -7040,19 +6695,19 @@
       "count": 9
     },
     {
-      "name": "Financial Compliance",
+      "name": "Business & Commerce",
       "count": 9
     },
     {
-      "name": "Environmental & Natural Resource Permits",
-      "count": 7
-    },
-    {
-      "name": "Event & Temporary Use Permits",
-      "count": 7
+      "name": "Financial Services Compliance",
+      "count": 8
     },
     {
       "name": "Art & Collectibles",
+      "count": 7
+    },
+    {
+      "name": "Financial Compliance",
       "count": 7
     },
     {
@@ -7080,10 +6735,6 @@
       "count": 5
     },
     {
-      "name": "Energy & Utilities",
-      "count": 4
-    },
-    {
       "name": "Media & Publishing",
       "count": 4
     },
@@ -7092,7 +6743,19 @@
       "count": 3
     },
     {
+      "name": "Energy & Utilities",
+      "count": 3
+    },
+    {
       "name": "Intellectual Property Law",
+      "count": 3
+    },
+    {
+      "name": "Safety Inspection Certificates",
+      "count": 3
+    },
+    {
+      "name": "Environmental & Natural Resource Permits",
       "count": 3
     },
     {
@@ -7100,16 +6763,16 @@
       "count": 3
     },
     {
-      "name": "Permit Rollups",
+      "name": "Construction Permits",
       "count": 2
     },
     {
-      "name": "Food & Beverage Permits",
+      "name": "Event & Temporary Use Permits",
       "count": 2
     },
     {
-      "name": "Mandatory Workplace Postings",
-      "count": 2
+      "name": "Building safety",
+      "count": 1
     },
     {
       "name": "Legal, Forensic & High-Value Logistics",
@@ -7120,11 +6783,11 @@
       "count": 1
     },
     {
-      "name": "Construction Permits",
+      "name": "Financial Rollups",
       "count": 1
     },
     {
-      "name": "Financial Rollups",
+      "name": "Environmental & Vicinity",
       "count": 1
     },
     {
