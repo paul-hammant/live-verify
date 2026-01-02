@@ -7,6 +7,17 @@ slug: "cmr-consignment-notes"
 tags: ["logistics", "trucking", "cmr", "road-freight", "cargo", "international-trade", "bill-of-lading"]
 ---
 
+## What is a CMR Waybill?
+
+In European and Asian trucking, the **CMR Consignment Note** is the standard contract for road freight. It follows the truck from the factory in Berlin to the store in Paris.
+
+It is the "Proof of Handoff." It records:
+1.  **What is on the truck:** (e.g., 12 pallets of electronics).
+2.  **The condition:** Did the driver note any broken boxes at pickup?
+3.  **The Delivery:** The customer signs it when the truck arrives.
+
+Trucking is a fragmented industry. Verified CMRs prevent "Weight Fraud" (lying about how heavy the truck is to avoid tolls) and "Phantom Shipments" (faking deliveries to get paid for work never done).
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 1px solid #000; background: #fff; padding: 0;">
   <div style="border-bottom: 2px solid #000; padding: 5px; display: flex; justify-content: space-between;">
     <div style="font-weight: bold; font-size: 1.2em;">CMR</div>

@@ -6,9 +6,28 @@ retention: "7-10 years (customs/legal)"
 slug: "packing-lists-shipping-manifests"
 tags: ["packing", "lists", "shipping", "manifests", "logistics", "transportation"]
 ---
-## Data Verified
 
-Shipper, consignee, detailed cargo list, quantities, weights, dimensions
+## What is a Packing List?
+
+In logistics, the Bill of Lading is the "Title," but the **Packing List** is the "Inventory." It lists every single box, pallet, and item inside a shipping container.
+
+Customs officers and warehouse workers use this list to verify that the cargo matches the paperwork.
+
+Fraud happens when smugglers "edit" the packing list to hide high-value or illegal items (like drugs or electronics) under a description of low-value goods (like "Plastic Toys"). Verified hashes ensure the **line-by-line inventory** provided to Customs matches the shipper's official warehouse record.
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', monospace; border: 1px solid #000; background: #fff; padding: 20px;">
+  <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
+    <h2 style="margin: 0; text-transform: uppercase;">PACKING LIST</h2>
+  </div>
+  <div style="font-size: 0.9em;">
+    <p><strong>Shipment:</strong> <span data-bracket="start" data-for="pack">]</span>SHZ-992288-X<br>
+    <strong>Items:</strong> 42 Cartons - High-Precision Gears</p>
+    <div data-verify-line="pack" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-size: 0.8em; color: #555; text-align: center;">
+      verify:shenzhen-gears.com/v/992288 <span data-bracket="end" data-for="pack">]</span>
+    </div>
+  </div>
+</div>
+
 
 ## Data Visible After Verification
 

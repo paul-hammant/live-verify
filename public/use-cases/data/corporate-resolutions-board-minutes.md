@@ -7,6 +7,14 @@ slug: "corporate-resolutions-board-minutes"
 tags: ["corporate-governance", "board-minutes", "resolution", "secretary-certificate", "legal-authority", "notary", "m-and-a"]
 ---
 
+## What is a Secretary's Certificate?
+
+When a big corporation (like Waystar Royco) wants to borrow $500 million, the bank doesn't just take the CEO's word for it. They need a **Corporate Resolution**.
+
+This is a document where the "Corporate Secretary" swears: "Our Board of Directors met on Tuesday and officially voted to allow the CEO to sign this loan."
+
+Disgruntled or rogue officers sometimes fabricate these papers to open secret bank accounts or sell company land without approval. Verified hashes turn these private papers into a live link to the company's official "Minute Book," protecting the corporation from its own executives.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
   <div style="text-align: center; margin-bottom: 30px;">
     <div style="font-weight: bold; font-size: 1.2em;">SECRETARY'S CERTIFICATE OF RESOLUTION</div>

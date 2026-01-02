@@ -6,9 +6,29 @@ retention: "Loan term + 7-10 years"
 slug: "p2p-lending-agreements"
 tags: ["lending", "agreements", "banking", "financial", "services"]
 ---
-## Data Verified
 
-Borrower, lender, loan amount, terms, platform, payment schedule
+## What is a P2P Lending Agreement?
+
+**Peer-to-Peer (P2P) Lending** allows individuals to lend money directly to other individuals or small businesses through platforms like LendingClub or Prosper.
+
+The **Lending Agreement** is the legal contract that says: "Person A lent Person B $10,000 at 8% interest."
+
+Fraud is a major risk: scammers often use fake lending agreements to trick banks into thinking they have "verified income" or "verified debt" that doesn't exist. Verified hashes turn these digital-first contracts into an immutable proof of the loan's **true terms and status**, preventing borrowers from taking out multiple loans using the same fabricated papers.
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 25px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="background: #002d62; color: #fff; padding: 15px; text-align: center; margin-bottom: 20px;">
+    <h2 style="margin: 0; font-size: 1.2em;">LENDINGCLUB PROMISSORY NOTE</h2>
+  </div>
+  <div style="font-size: 0.95em; line-height: 1.6;">
+    <p><strong>Borrower:</strong> <span data-bracket="start" data-for="p2p">]</span>John Jacob Doe<br>
+    <strong>Amount:</strong> $ 10,000.00 | <strong>APR:</strong> 8.42%</p>
+    <p>This note is verified and recorded in the LendingClub ledger.</p>
+    <div data-verify-line="p2p" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;">
+      verify:lendingclub.com/v/9988776655 <span data-bracket="end" data-for="p2p">]</span>
+    </div>
+  </div>
+</div>
+
 
 **Multi-Page Handling:** Documents may span multiple pages. Per-page verification prevents page substitution attacks.
 

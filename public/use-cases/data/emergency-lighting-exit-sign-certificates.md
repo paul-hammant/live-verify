@@ -7,6 +7,14 @@ slug: "emergency-lighting-exit-sign-certificates"
 tags: ["emergency-lighting", "exit-signs", "fire-safety", "life-safety", "building-code", "annual-inspection", "nfpa-101"]
 ---
 
+## What is an Emergency Light Certificate?
+
+If the power fails during a fire, the "Exit" signs and the battery-powered floodlights in the stairwells are the only things that prevent a panic.
+
+By law, every building must test these batteries for **90 minutes** every year. The **Inspection Certificate** is the proof that the building didn't just "check the bulbs," but actually verified the batteries can last long enough for a full evacuation.
+
+"Pencil Whipping" is common: inspectors sometimes sign off on a "Pass" without ever actually running the 90-minute test. Verified hashes allow fire marshals to identify shady inspection firms that fabricate safety data.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #d32f2f; background: #fff; padding: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <div style="background: #d32f2f; color: #fff; padding: 15px; text-align: center;">
     <h3 style="margin: 0;">FIRE PROTECTION SERVICES, INC.</h3>

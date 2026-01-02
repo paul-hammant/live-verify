@@ -7,6 +7,14 @@ slug: "gig-economy-payout-receipts"
 tags: ["uber", "lyft", "doordash", "gig-economy", "payout-receipt", "income-verification", "independent-contractor", "tax-compliance"]
 ---
 
+## What is a Payout Receipt?
+
+For millions of Uber, Lyft, and DoorDash drivers, their "Paycheck" is a weekly **Payout Receipt** in the app.
+
+Because gig workers are "Self-Employed," they must show these receipts to landlords to rent an apartment or to banks to get a car loan. They are the only verified proof of income.
+
+Fraud is common: drivers often edit a $400 payout to read $4,000 to trick a landlord into thinking they are high-earners. OCR-to-hash allows a landlord to scan the receipt and see the **verified, un-altered weekly income** directly from the platform's domain.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #000; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div style="font-weight: bold; font-size: 1.4em;">Uber</div>

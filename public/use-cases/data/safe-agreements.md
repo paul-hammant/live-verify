@@ -6,7 +6,59 @@ retention: "Permanent (convertible security)"
 slug: "safe-agreements"
 tags: ["safe", "agreements", "banking", "financial", "services"]
 ---
-## Data Verified
+
+## What is a SAFE?
+
+A **Simple Agreement for Future Equity (SAFE)** is the standard way Silicon Valley startups raise money. Investors give cash now (e.g., $100k) for the right to get shares later (when the company grows).
+
+Because these are private contracts (often just PDFs), fraud is rampant. A founder might sell 50% of their company to Investor A, then "forget" to tell Investor B and sell the same 50% again.
+
+**Verified SAFEs** lock the terms (Valuation Cap, Discount) into a hash. Investors can scan the document to confirm their $100k actually purchased the equity they were promised, and that the "Cap Table" is accurate.
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', serif; border: 1px solid #999; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="text-align: center; margin-bottom: 30px;">
+    <div style="font-weight: bold; font-size: 1.4em; text-transform: uppercase;">Simple Agreement for Future Equity</div>
+    <div style="font-size: 1em; font-style: italic;">(SAFE)</div>
+  </div>
+
+  <div style="font-size: 1.1em; line-height: 1.6; color: #000;">
+    <p><strong>THIS CERTIFIES THAT</strong> in exchange for the payment by <span style="text-decoration: underline;">Sequoia Capital</span> (the "Investor") of $ <span style="text-decoration: underline;">1,000,000.00</span> (the "Purchase Amount") on <span style="text-decoration: underline;">January 15, 2026</span>,</p>
+
+    <p><strong>Verific Inc.</strong> (the "Company"), hereby issues to the Investor the right to certain shares of the Company's Capital Stock, subject to the terms set forth below.</p>
+
+    <div style="margin: 20px 0; border: 1px solid #000; padding: 15px;">
+      <table style="width: 100%;">
+        <tr>
+          <td style="padding-bottom: 10px;"><strong>Valuation Cap:</strong></td>
+          <td style="text-align: right; padding-bottom: 10px;">$ <span data-bracket="start" data-for="safe">]</span>20,000,000.00</td>
+        </tr>
+        <tr>
+          <td><strong>Discount Rate:</strong></td>
+          <td style="text-align: right;">20%</td>
+        </tr>
+      </table>
+    </div>
+
+    <p>This SAFE is one of a series of such instruments issued by the Company. Any unauthorized alteration of the Valuation Cap or Purchase Amount shall render this instrument void.</p>
+  </div>
+
+  <div style="margin-top: 40px; display: flex; justify-content: space-between;">
+    <div style="border-top: 1px solid #000; width: 45%; padding-top: 5px;">
+      <div style="font-size: 0.9em;">Paul Graham</div>
+      <div style="font-size: 0.8em; font-style: italic;">Founder, Verific Inc.</div>
+    </div>
+    <div style="border-top: 1px solid #000; width: 45%; padding-top: 5px;">
+      <div style="font-size: 0.9em;">Roelof Botha</div>
+      <div style="font-size: 0.8em; font-style: italic;">Partner, Sequoia Capital</div>
+    </div>
+  </div>
+
+  <div data-verify-line="safe" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+    title="Demo only: YC SAFE platform doesn't yet offer verification&#10;endpoints, so this is illustrative">
+    verify:ycombinator.com/safe/v/2881992 <span data-bracket="end" data-for="safe">]</span>
+  </div>
+</div>
+
 
 Investor name, company, investment amount, valuation cap, discount
 

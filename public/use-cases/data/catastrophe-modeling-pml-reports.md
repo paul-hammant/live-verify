@@ -7,6 +7,14 @@ slug: "catastrophe-modeling-pml-reports"
 tags: ["catastrophe-modeling", "pml", "actuarial", "reinsurance", "risk-management", "solvency", "rms", "air-worldwide"]
 ---
 
+## What is a PML Report?
+
+A **Probable Maximum Loss (PML)** report is a "Scientific Guess" of how much money an insurance company could lose in a disaster.
+
+A specialized firm (like RMS) uses weather data and building locations to say: "In a 1-in-100 year hurricane, you will likely lose $142 million."
+
+This number is the lifeblood of the insurance market. Reinsurers use it to decide how much to charge for coverage. If a broker "Games the Model" (edits the PDF) to show a lower loss, they are tricking the market into taking too much risk for too little money.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Helvetica Neue', Helvetica, sans-serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 30px;">
     <div style="font-weight: bold; font-size: 1.2em; color: #000;">RMS (Risk Management Solutions)</div>

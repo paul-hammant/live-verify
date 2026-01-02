@@ -7,6 +7,14 @@ slug: "census-forms-surveys"
 tags: ["census", "demographics", "government-survey", "data-integrity", "vital-records", "genealogy"]
 ---
 
+## What is a Census Receipt?
+
+Every 10 years, the government counts every person in the country. Participating in the **Census** is mandatory by law in many countries.
+
+A **Census Household Receipt** is your proof that you filled out the form. It confirms that "Household #9988 participated on April 1."
+
+In some areas, you need this verified receipt to get local benefits, register for school, or to prove to a "knock-on-the-door" enumerator that you already completed your duty. OCR-to-hash allows you to prove you participated without having to reveal your private family data to a stranger at the door.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #000; color: #fff; padding: 15px; text-align: center;">
     <div style="font-weight: bold; font-size: 1.2em;">UNITED STATES CENSUS BUREAU</div>

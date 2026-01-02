@@ -7,6 +7,14 @@ slug: "cyber-extortion-ransomware"
 tags: ["cyber-insurance", "ransomware", "extortion", "incident-response", "breach-notification", "bitcoin-payment", "risk-management"]
 ---
 
+## What is an Extortion Authorization?
+
+When a company is hit by **Ransomware** (hackers locking their servers and demanding Bitcoin), the situation is chaotic. The company must decide: "Do we pay the criminals or lose our data?"
+
+If they have Cyber Insurance, the insurer provides an **Extortion Payment Authorization**. This is the formal "OK" stating the insurer will reimburse the ransom.
+
+Because these authorizations trigger multimillion-dollar crypto-payments, they are high-stakes. Fraud happens when rogue IT staff fabricate an authorization to trick the CFO into releasing Bitcoin to a private wallet. Verified hashes ensure the "OK" actually came from the insurer's domain.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Helvetica', Arial, sans-serif; border: 2px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
   <div style="background: #1a1a1a; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>

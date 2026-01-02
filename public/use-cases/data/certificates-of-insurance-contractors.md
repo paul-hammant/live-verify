@@ -7,6 +7,14 @@ slug: "certificates-of-insurance-contractors"
 tags: ["insurance", "coi", "acord-25", "contractor", "liability", "compliance", "construction"]
 ---
 
+## What is a Contractor COI?
+
+If you hire a plumber to fix a leak or a massive construction crew to build a skyscraper, you need to see their **Certificate of Insurance (COI)**.
+
+This one-page paper (usually an ACORD 25 form) is the "Proof of Protection." It says: "If this contractor breaks your house or if a worker gets hurt, the insurance company will pay, not you."
+
+COI fraud is rampant. Contractors often buy a policy for one day, print the COI, and then cancel the policy immediately. They show the "valid" paper to get hired, but they are actually uninsured. OCR-to-hash provides a "Live Status" check to see if the policy was cancelled yesterday.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #999; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #eee; padding: 10px; border-bottom: 1px solid #000; display: flex; justify-content: space-between; align-items: center;">
     <div style="font-weight: bold; font-size: 1.1em;">ACORD<sub>&reg;</sub> 25</div>

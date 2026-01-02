@@ -7,6 +7,14 @@ slug: "continuing-education-credits"
 tags: ["professional-education", "cle", "cme", "cpe", "licensing", "compliance", "training-certificate"]
 ---
 
+## What is a Continuing Education Certificate?
+
+Lawyers (CLE), Doctors (CME), and CPAs (CPE) must take a certain number of hours of training every year to keep their licenses active.
+
+When they finish a course, they receive a **Certificate of Attendance**. They must save these papers and show them to the State Board to renew their license.
+
+Because these credits are mandatory, some busy professionals "Fake" the certificates using old templates or "Rounding Up" 1 hour of training to 10 hours. Verified hashes allow licensing boards to audit these certificates instantly without calling every training provider.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 4px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="padding: 40px; text-align: center; border: 1px solid #ccc; margin: 10px;">
     <div style="margin-bottom: 20px;">

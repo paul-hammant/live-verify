@@ -7,6 +7,15 @@ slug: "contractor-licensing-bonding"
 tags: ["contractor", "license", "surety-bond", "construction-compliance", "cslb", "building-official", "tradesman"]
 ---
 
+## What is a Contractor License?
+
+In most states, a "General Contractor" isn't just someone with a truck and a hammer. They are a licensed professional who has:
+1.  **Passed a Board Exam:** Proving they know building codes and laws.
+2.  **Obtained a Surety Bond:** A $25,000+ "Insurance" fund that protects the homeowner if the contractor abandons the job.
+3.  **Passed a Criminal Background Check.**
+
+Homeowners use these "Pocket Cards" to verify who they are letting onto their roof or into their basement. Verified licenses ensure the person at the door isn't using a "Borrowed" license from a friend or a fake number from a defunct company.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 4px solid #004d40; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #004d40; color: #fff; padding: 15px; text-align: center;">
     <h2 style="margin: 0; text-transform: uppercase;">STATE CONTRACTORS BOARD</h2>

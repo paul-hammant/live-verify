@@ -7,6 +7,14 @@ slug: "clinical-trial-documents"
 tags: ["clinical-trial", "informed-consent", "fda", "research-ethics", "patient-privacy", "gcp-compliance"]
 ---
 
+## What is an Informed Consent Form?
+
+Before a patient can participate in a high-stakes clinical trial (like testing a new cancer drug), they must sign an **Informed Consent Form (ICF)**.
+
+This isn't just a signature; it's a legal and ethical requirement that proves the patient understands the risks.
+
+In pharmaceutical research, "Consent Fraud" is a serious crime. Sites sometimes "Backdate" these forms to hide that they started testing before the patient signed, or they use an **outdated version** of the form that lacks new safety warnings. Verified hashes ensure the patient and the FDA are looking at the exact, current version of the truth.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Helvetica', Arial, sans-serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="text-align: left; margin-bottom: 30px; border-bottom: 2px solid #004d40; padding-bottom: 10px;">
     <div style="font-weight: bold; font-size: 1.2em; color: #004d40;">MAYO CLINIC - DEPARTMENT OF ONCOLOGY</div>

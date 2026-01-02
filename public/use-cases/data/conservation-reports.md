@@ -7,6 +7,14 @@ slug: "conservation-reports"
 tags: ["art-conservation", "restoration", "condition-report", "provenance", "museum-standards", "art-history"]
 ---
 
+## What is an Art Conservation Report?
+
+When a famous painting (like a Rembrandt) is cleaned or repaired, it must be done by a high-level scientist called a **Conservator**.
+
+The **Conservation Report** is the detailed log of every chemical, solvent, and brushstroke used. It is the "Medical History" of the artwork.
+
+Fraudsters often hide "Over-Restoration"—where so much new paint has been added that the original artist's work is lost. They might edit a report to hide a massive tear that was repaired. Verified reports ensure the museum or buyer knows exactly what has been done to the masterpiece.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #546e7a; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #546e7a; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>

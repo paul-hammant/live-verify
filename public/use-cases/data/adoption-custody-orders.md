@@ -7,6 +7,15 @@ slug: "adoption-custody-orders"
 tags: ["adoption", "custody", "orders", "court", "family", "law"]
 ---
 
+## What is a Custody Order?
+
+A **Custody Order** (or Allocation Judgment) is a court decree defining who is responsible for a child. It answers critical questions:
+1.  **Who decides?** (School, Doctor, Religion)
+2.  **Who has the child when?** (Weekends, Holidays)
+3.  **Are there restrictions?** (No leaving the state, supervised visits only)
+
+These documents are presented to schools, police, doctors, and passport agents. The problem is that parents often present **outdated orders** to authorities to override the other parent's rights.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 2px 2px 10px rgba(0,0,0,0.1);">
   <div style="text-align: center; margin-bottom: 30px;">
     <div style="font-weight: bold; font-size: 1.2em; text-transform: uppercase;">In the Circuit Court of Cook County, Illinois</div>

@@ -7,6 +7,14 @@ slug: "guided-tour-receipts"
 tags: ["guided-tour", "booking-confirmation", "travel-expense", "activity-voucher", "tourism-logistics", "viator", "getyourguide"]
 ---
 
+## What is a Tour Voucher?
+
+When you book an excursion (like a desert trek or a boat tour) through a site like Viator or TripAdvisor, you receive a **Booking Confirmation** or Voucher.
+
+This is your "Ticket" to meet the guide at a specific time and place (often a remote boat dock or park entrance).
+
+Small tour operators often don't have real-time computers in the field. They rely on looking at your paper or PDF voucher. Fraud is common: people often "Photoshop" a fake voucher to join an expensive tour for free. Verified hashes allow the guide to scan your paper and see "PAID" on the operator's domain instantly, even in remote areas.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
     <div style="font-weight: bold; font-size: 1.2em;">SAHARA EXPEDITIONS, LTD.</div>

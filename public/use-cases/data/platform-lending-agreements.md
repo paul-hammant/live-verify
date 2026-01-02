@@ -6,9 +6,29 @@ retention: "Loan term + 7-10 years"
 slug: "platform-lending-agreements"
 tags: ["platform", "lending", "agreements", "banking", "financial", "services"]
 ---
-## Data Verified
 
-Merchant name, loan amount, repayment terms, platform, collateral
+## What is Platform Lending?
+
+If you sell products on **Amazon or Shopify**, these companies know exactly how much money you make every day. Because of this, they can lend you money faster than a traditional bank. This is called **Platform Lending**.
+
+The **Loan Agreement** is the digital contract where you agree to pay the loan back automatically from your daily sales.
+
+Merchants use these verified agreements to prove their "Creditworthiness" to other lenders. Fraud happens when a merchant edits their Shopify loan paper to hide that they already owe $100,000, allowing them to take out another illegal loan. Verified hashes link the lender directly to the **live payout ledger** of the platform.
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 25px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="background: #000; color: #fff; padding: 15px; text-align: center; margin-bottom: 20px;">
+    <h2 style="margin: 0; font-size: 1.2em;">SHOPIFY CAPITAL AGREEMENT</h2>
+  </div>
+  <div style="font-size: 0.95em;">
+    <p><strong>Merchant:</strong> <span data-bracket="start" data-for="platform">]</span>The Spicy Taco Joint, LLC<br>
+    <strong>Advance Amount:</strong> $ 50,000.00</p>
+    <p>Repayment: 10% of daily gross sales until $55,000 is reached.</p>
+    <div data-verify-line="platform" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;">
+      verify:shopify.com/capital/v/992288776 <span data-bracket="end" data-for="platform">]</span>
+    </div>
+  </div>
+</div>
+
 
 **Multi-Page Handling:** Documents may span multiple pages. Per-page verification prevents page substitution attacks.
 

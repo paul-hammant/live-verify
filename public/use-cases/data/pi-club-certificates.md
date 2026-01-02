@@ -6,9 +6,29 @@ retention: "Policy term + 20 years (claims tail)"
 slug: "pi-club-certificates"
 tags: ["club", "certificates", "logistics", "transportation"]
 ---
-## Data Verified
 
-Shipowner, vessel IMO, P&I club, tonnage limit, pollution coverage
+## What is a P&I Certificate?
+
+In the world of giant cargo ships, "Normal" insurance isn't enough. Shipowners join a **P&I Club** (Protection & Indemnity)—a group of owners who share the risk of massive disasters like oil spills or ship collisions.
+
+The **Certificate of Entry** is the ship's "Unlimited Credit Card" for liability. It is the only paper that port authorities will accept before allowing a $100 million tanker to dock.
+
+Thieves use "Fake P&I Papers" to sneak dangerous or uninsured ships into ports. Verified hashes allow a harbor master to scan the certificate and see the **verified $1 billion+ coverage** on the Club's official domain in seconds.
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 2px solid #002366; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="text-align: center; border-bottom: 2px solid #002366; padding-bottom: 10px; margin-bottom: 20px;">
+    <h2 style="margin: 0; text-transform: uppercase;">THE LONDON P&I CLUB</h2>
+  </div>
+  <div style="font-size: 1.1em; line-height: 1.6;">
+    <p><strong>Vessel:</strong> <span data-bracket="start" data-for="pi">]</span>MV OCEAN VOYAGER (IMO #9988776)<br>
+    <strong>Member:</strong> Global Maritime Holdings, Ltd.</p>
+    <p>This certifies the above vessel is entered for Protection & Indemnity risks.</p>
+    <div data-verify-line="pi" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;">
+      verify:londonpandi.com/v/9988776 <span data-bracket="end" data-for="pi">]</span>
+    </div>
+  </div>
+</div>
+
 
 **Certificate Variations:** Multiple certificate types or levels may exist.
 

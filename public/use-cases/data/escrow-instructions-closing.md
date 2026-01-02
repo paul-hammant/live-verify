@@ -1,150 +1,90 @@
 ---
-title: "Escrow instructions and closing documents"
+title: "Escrow Disbursement Instructions"
 category: "Real Estate & Property"
 volume: "Very Small"
-retention: "7-10 years (transaction disputes)"
+retention: "Permanent (transaction legal file)"
 slug: "escrow-instructions-closing"
-tags: ["escrow", "instructions", "closing", "real", "estate", "property"]
+tags: ["escrow-instructions", "wire-fraud", "disbursement-authorization", "legal-authority", "closing-integrity", "financial-crime"]
 ---
+
+## What are Escrow Instructions?
+
+When a house is sold, the **Escrow Officer** is the neutral umpire. They hold the money and wait for the "Instructions" from both parties.
+
+These **Instructions** are the legal blueprints for the payout. They tell the officer exactly who to pay:
+1.  **The Seller:** "Pay them $400,000."
+2.  **The Bank:** "Pay off the existing $200,000 mortgage."
+3.  **The Tax Man:** "Pay the county $5,000 in property tax."
+
+Fraud is rampant: scammers often send fake "Updated Instructions" to the escrow officer to divert the seller's money to a foreign bank account. Verified hashes allow the officer to verify the **authenticity of the signature and the bank details** on the paper instructions.
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', serif; border: 1px solid #000; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
+    <div style="font-weight: bold; font-size: 1.2em;">STEWART TITLE GUARANTY</div>
+    <div style="font-size: 0.9em;">DISBURSEMENT AUTHORIZATION</div>
+  </div>
+
+  <div style="font-size: 1em; line-height: 1.6; color: #333;">
+    <p>The undersigned Seller hereby authorizes Stewart Title to disburse the proceeds of Escrow #992288 as follows:</p>
+    
+    <div style="background: #f9f9f9; padding: 15px; border: 1px solid #eee; margin: 20px 0;">
+      <strong>Wire Transfer to:</strong><br>
+      Bank: <span data-bracket="start" data-for="escrow-inst">]</span>Chase Bank, N.A.<br>
+      Account Name: SARAH J. DOE<br>
+      Account #: ****-****-9922<br>
+      <strong>Amount: $ 442,500.42</strong>
+    </div>
+
+    <p style="font-style: italic;">Note: Any changes to these instructions must be verified in person or via cryptographically verified hash.</p>
+  </div>
+
+  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+    <div style="width: 45%; border-top: 1px solid #000; padding-top: 5px;">Seller Signature</div>
+    <div style="width: 45%; text-align: right;">Date: March 15, 2026</div>
+  </div>
+
+  <div data-verify-line="escrow-inst" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;">
+    verify:stewart.com/escrow/v/992288-DA <span data-bracket="end" data-for="escrow-inst">]</span>
+  </div>
+</div>
+
 ## Data Verified
 
-Buyer/seller names, escrow officer, lender, property address, instructions
+Escrow number, Property address, Seller/Recipient name, Beneficiary Bank, Routing/Account numbers, total payout amount, date of signing, Escrow Officer name.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`stewart.com`, `firstam.com`) and current authorization status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Authorized** — Instructions match the signed record in the file.
+- **Changed** — **ALERT:** New instructions have been received; older versions are void.
+- **Executed** — Money has already been sent; no further changes allowed.
+- **Hold** — Under investigation for suspected wire fraud.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
-
-**Ownership Verification:** Confirm property documents are authentic.
-
-**Transaction Support:** Provide verified documents for sales, refinancing, or transfers.
-
-**Title Insurance:** Supply verified documentation for title insurance requirements.
-
-**Legal Protection:** Maintain verified records for potential disputes.
-
-**Record Accuracy:** Verify recorded information matches expectations.
+The **Seller** benefits from verification.
+- **Theft Prevention:** Knowing that a hacker cannot simply email the escrow officer a fake bank account. The escrow officer will scan the new paper and see that the "Hash" doesn't match the seller's verified record.
+- **Audit Trail:** Proving to their spouse or business partners exactly where the money was sent.
 
 ## Third-Party Use
 
-**Lenders and Financial Institutions**
+**Escrow Officers / Title Clerks**
+**Wire Validation:** Before hitting "Send" on a $500,000 wire, the clerk scans the paper instructions. "Verified by Seller" provides the legal protection needed to release funds.
 
-Credit underwriting and risk assessment:
+**Banks (Receiving Bank)**
+**KYC/Source of Wealth:** Verifying the "Disbursement Logic" behind a large incoming wire to ensure it matches a legitimate real estate sale.
 
-**Loan Underwriting:** Verify financial and property documents during loan applications.
+## Competition vs. Secure Portals (CertifID)
 
-**Collateral Verification:** Confirm documentation for secured lending.
+| Feature | OCR-to-Hash | CertifID / Secure Portal | Scanned PDF / Email |
+| :--- | :--- | :--- | :--- |
+| **Trust Anchor** | **Domain-Bound.** Bound to the Title Co. | **System-Bound.** Trust the vendor. | **Zero.** Easily forged. |
+| **Ease of Use** | **High.** Scan the paper at the desk. | **Medium.** Requires setting up a portal login. | **Instant.** |
+| **Integrity** | **Binds All Data.** Protects every digit. | **Data-Only.** | **Vulnerable.** |
+| **Legal Status** | **Cryptographic Artifact.** | **Platform Service.** | **Vulnerable PDF.** |
 
-**Credit Decisions:** Validate income, employment, and asset documentation.
+**Why OCR wins here:**
+The "Closing Room" reality. Closings often happen at a conference table with physical papers. Sellers and Buyers are often older and not tech-savvy. They don't want to "Login to a Portal." They want to sign a piece of paper. OCR-to-hash turns that **Signed Paper** into a high-security digital key that even a hacker in a different country cannot spoof.
 
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Insurance Companies**
-
-Underwriting and claims processing:
-
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
-
-**Government Agencies**
-
-Compliance enforcement and administration:
-
-**Inspection Verification:** Field agents verify permits and licenses at sites.
-
-**Enforcement Actions:** Confirm documentation before enforcement.
-
-**Benefit Eligibility:** Verify supporting documents for benefits administration.
-
-**Compliance Audits:** Audit documentation for regulatory compliance.
-
-**Interagency Coordination:** Share verified documents across agencies.
-
-**Real Estate Professionals**
-
-Property transactions and due diligence:
-
-**Purchase Due Diligence:** Verify property documents during transactions.
-
-**Listing Preparation:** Confirm permits and documentation for listings.
-
-**Disclosure Compliance:** Validate required disclosures and permits.
-
-**Title Research:** Verify property documents for title clearance.
-
-**Appraisal Support:** Confirm documented improvements and permits.
-
-## Verification Architecture
-
-**The Escrow instructions and closing documents Fraud Problem**
-
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
-
-**Issuer Types**
-
-Who issues these documents and operates verification endpoints?
-
-**Government Entities:** Counties, cities, and special districts maintain property records.
-
-**Title Companies:** Title insurers and escrow companies for transaction documents.
-
-**Lending Institutions:** Banks and mortgage companies for loan documents.
-
-**Appraisal Firms:** Licensed appraisers for property valuations.
-
-**System Integration**
-
-Real estate verification connects to property systems:
-
-**Recording Systems:** County recorder systems for property document registration.
-
-**MLS Integration:** Multiple listing services for property documentation.
-
-**Title Plants:** Title companies maintain verification for title searches.
-
-**E-Recording:** Electronic recording systems generate verification at recording.
-
-## Rationale
-
-Domain binding verifies escrow company. Formal documents suitable for OCR. Transaction dispute resolution. Wire fraud prevention.

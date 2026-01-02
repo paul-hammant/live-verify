@@ -7,6 +7,14 @@ slug: "hotel-staff-verification"
 tags: ["hotel-safety", "staff-verification", "personal-safety", "airbnb-host-verification", "room-service-security", "hospitality-security", "home-security"]
 ---
 
+## What is a Hotel Staff Badge?
+
+In a large hotel, a "Maintenance" or "Room Service" worker might knock on your door at 11 PM. As a guest, you are at your most vulnerable.
+
+The **Staff ID Badge** is the worker's proof that they are authorized to be in the guest hallways.
+
+"Fake Uniform" home-invasions happen when burglars buy high-visibility vests or fake Hilton/Marriott shirts to gain entry to rooms. OCR-to-hash allows a guest to scan the worker's badge through the peephole or doorbell camera. Seeing a green "ON-DUTY" status from the hotel's domain ensures the person at the door is a **Verified Employee**.
+
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
   <div style="background: #000; color: #fff; padding: 15px; text-align: center; display: flex; align-items: center; justify-content: center;">
     <div style="font-size: 1.5em; margin-right: 10px;">🛎️</div>

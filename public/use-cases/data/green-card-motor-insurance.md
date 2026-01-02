@@ -7,6 +7,14 @@ slug: "green-card-motor-insurance"
 tags: ["green-card", "international-motor-insurance", "cross-border-travel", "eu-driving", "third-party-liability", "border-control", "car-insurance"]
 ---
 
+## What is a Green Card?
+
+In Europe and the Middle East, a **Green Card** is the "International Passport" for car insurance. It proves that your insurance policy covers you when you drive across a national border (e.g., from France into Switzerland).
+
+Customs officers at high-security borders will not let a car enter without seeing a physical Green Card.
+
+Because these cards are required for legal entry, scammers often sell "Fake Green Cards" to high-risk drivers who can't get real insurance. Verified hashes allow border police to scan the paper and see the **verified active status** on the insurer's domain in seconds, stopping uninsured drivers at the gate.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Helvetica', Arial, sans-serif; border: 2px solid #388e3c; background: #e8f5e9; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #388e3c; color: #fff; padding: 15px; text-align: center;">
     <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">INTERNATIONAL MOTOR INSURANCE CARD</h2>

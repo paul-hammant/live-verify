@@ -6,9 +6,28 @@ retention: "Parking + 1-3 years (expense)"
 slug: "parking-receipts-validation"
 tags: ["parking", "receipts", "validation", "travel", "hospitality"]
 ---
-## Data Verified
 
-Location, entry/exit time, parking fee, payment method, validation
+## What is a Parking Receipt?
+
+When you park in a garage for a business meeting, you receive a **Parking Receipt** or a **Validation Ticket**.
+
+For employees, these receipts are used for **Expense Reimbursement**. Because parking in cities like New York or London can cost $50-$100 a day, "Parking Fraud" is a common way for employees to pad their expense reports with fake receipts.
+
+Verified hashes turn the **Thermal Paper Receipt** into a live link to the garage operator's domain, proving that the car was actually there and the price on the page is the **truth**.
+
+<div style="max-width: 300px; margin: 24px auto; font-family: 'Courier New', monospace; border: 1px solid #999; background: #fff; padding: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+  <div style="text-align: center; border-bottom: 1px solid #000; padding-bottom: 10px; margin-bottom: 10px;">
+    <strong>METRO PARKING HUB</strong><br>
+    -------------------------
+  </div>
+  <p><strong>Entry:</strong> 09:14 AM<br>
+  <strong>Exit:</strong> 11:42 AM<br>
+  <strong>Fee:</strong> <span data-bracket="start" data-for="park-rec">]</span>$ 42.50 (Paid)</p>
+  <div data-verify-line="park-rec" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-size: 0.8em; text-align: center;">
+    verify:metropark.com/v/992288 <span data-bracket="end" data-for="park-rec">]</span>
+  </div>
+</div>
+
 
 ## Data Visible After Verification
 

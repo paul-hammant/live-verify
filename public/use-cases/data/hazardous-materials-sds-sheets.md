@@ -7,6 +7,14 @@ slug: "hazardous-materials-sds-sheets"
 tags: ["hazmat", "sds", "osha-compliance", "chemical-safety", "ghs", "emergency-response", "product-stewardship"]
 ---
 
+## What is a Safety Data Sheet (SDS)?
+
+An **SDS** is the "User Manual" for a chemical. It tells workers and firefighters exactly how dangerous a product is (e.g., "Will this explode?") and how to treat a person who was exposed to it.
+
+By federal law (**OSHA**), every business must have a "Yellow Binder" containing the latest SDS for every chemical on the site.
+
+Fraud is dangerous here: some managers use a 10-year-old SDS to hide that a chemical was recently discovered to be a carcinogen (cancer-causing). Verified hashes allow a worker to scan the binder and see the **verified current version** from the manufacturer's domain instantly.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #333; color: #fff; padding: 15px; display: flex; justify-content: space-between; align-items: center;">
     <div>

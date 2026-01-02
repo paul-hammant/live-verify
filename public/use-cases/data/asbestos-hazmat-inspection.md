@@ -7,6 +7,14 @@ slug: "asbestos-hazmat-inspection"
 tags: ["asbestos", "hazmat", "environmental", "real-estate", "inspection", "compliance"]
 ---
 
+## What is an Asbestos Inspection Report?
+
+Before a building can be renovated or demolished, a lab must test samples for **Asbestos**, Lead, or other hazardous materials.
+
+The **Inspection Report** is the official lab certificate that says: "This floor tile contains 5% Asbestos" or "This room is clean."
+
+Fraud is a major risk here. Shady landlords sometimes "Photoshopping" a positive report to say "None Detected" to avoid paying for expensive hazardous waste removal, putting construction workers' lives at risk of lung disease.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #37474f; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>

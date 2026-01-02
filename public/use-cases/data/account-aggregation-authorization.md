@@ -7,6 +7,14 @@ slug: "account-aggregation-authorization"
 tags: ["account", "aggregation", "authorization", "banking", "open-banking", "compliance"]
 ---
 
+## What is a Data Authorization?
+
+In the era of "Open Banking," you often click "Connect Bank" to let an app (like Mint, Rocket Mortgage, or Venmo) see your checking account.
+
+This digital handshake is invisible. You don't get a receipt. If that app gets hacked 3 years later, how do you prove you *only* gave them permission to "Read Balance" and not "Move Money"?
+
+A **Data Authorization Certificate** is a receipt for that digital handshake. It proves exactly **who** you let in, **what** they can see, and **when** the key expires.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); overflow: hidden; background: #fff;">
   <div style="background: #004d40; color: #fff; padding: 20px; text-align: center;">
     <h2 style="margin: 0; font-size: 1.4em; letter-spacing: 1px;">DATA ACCESS AUTHORIZATION</h2>

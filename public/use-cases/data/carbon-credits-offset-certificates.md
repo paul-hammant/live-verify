@@ -7,6 +7,14 @@ slug: "carbon-credits-offset-certificates"
 tags: ["carbon-credits", "offset", "net-zero", "esg", "sustainability", "climate-change", "verra", "gold-standard"]
 ---
 
+## What is a Carbon Credit Retirement?
+
+When a company (like Microsoft or Apple) claims to be "Net Zero," they often buy **Carbon Credits**—digital certificates representing one tonne of CO2 removed from the atmosphere (e.g., by planting trees).
+
+The most important step is **Retirement**. Once a credit is "retired," it is taken off the market so it can't be sold again. It is "used up" to balance the company's pollution.
+
+The **Retirement Certificate** is the only proof that the company actually did what it said. Without verification, a company could lie about retiring credits, leading to "Greenwashing" where the same tree is "sold" to 10 different companies.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #2e7d32; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="background: #2e7d32; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>

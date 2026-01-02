@@ -7,6 +7,14 @@ slug: "court-orders-judgments"
 tags: ["court-order", "judgment", "legal-enforcement", "clerk-of-court", "civil-litigation", "criminal-justice"]
 ---
 
+## What is a Court Judgment?
+
+A **Court Judgment** is the final decision of a judge. It is the paper that says "Acme Corp owes Sarah Doe $1,000,000."
+
+This paper is a "Weapon of Enforcement." You take it to a bank to freeze a defendant's account, or to a Sheriff to seize their property.
+
+Because they are so powerful, "Phantom Orders" are a high-stakes fraud. Scammers create fake judgments on real-looking court letterhead to trick banks into freezing accounts. Verified hashes allow a banker or sheriff to scan the paper and see "VERIFIED FINAL" on the court's own domain in seconds.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="text-align: center; margin-bottom: 30px;">
     <div style="font-weight: bold; font-size: 1.2em; text-transform: uppercase;">In the Superior Court of California</div>

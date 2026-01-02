@@ -7,6 +7,14 @@ slug: "frequent-flyer-statements"
 tags: ["airline-loyalty", "mileage-balance", "frequent-flyer", "status-match", "travel-perks", "award-travel", "american-advantage", "delta-skymiles"]
 ---
 
+## What is a Mileage Statement?
+
+If you fly a lot, your **Frequent Flyer Miles** are a valuable financial asset. For some "Million Milers," their balance can be worth $50,000 or more.
+
+The **Mileage Statement** is the "Bank Statement" for your travel points.
+
+You need this verified proof for a **"Status Match"**—where a rival airline gives you free upgrades to win your business) or to prove your net worth during a divorce or bank audit. Fraudsters often use "Inspect Element" to turn 1,000 miles into 1,000,000 to sell "fake accounts" to mileage brokers. Verified hashes stop this point-theft instantly.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #003366; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>

@@ -7,6 +7,14 @@ slug: "claims-diary-reserve-changes"
 tags: ["insurance-claims", "claims-diary", "loss-reserves", "adjuster-notes", "audit-trail", "reinsurance-audit"]
 ---
 
+## What is a Claims Diary?
+
+When an insurance adjuster handles a claim, they keep a "Diary"—a minute-by-minute log of every phone call, every medical report, and every financial change.
+
+A **Reserve Change** is when the adjuster says: "Wait, this injury is worse than we thought; we need to set aside $100,000 more to pay for it."
+
+In lawsuits, these diaries are "Evidence Item #1." If an insurance company is accused of "Bad Faith" (ignoring a claim), the diary is the only way to prove they were actually working on it. Verified hashes prevent companies from "Backdating" diary notes after a lawsuit is filed to make themselves look better.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', monospace; border: 1px solid #555; background: #fff; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
     <strong>ACE INDEMNITY GROUP</strong><br>

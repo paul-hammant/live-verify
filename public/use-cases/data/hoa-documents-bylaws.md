@@ -7,6 +7,14 @@ slug: "hoa-documents-bylaws"
 tags: ["real-estate", "hoa", "bylaws", "cc-and-rs", "governance", "legal-authority", "property-rules", "title-clearance"]
 ---
 
+## What are HOA Bylaws?
+
+If you live in a condo or a planned community, your daily life is governed by **HOA Bylaws** and **CC&Rs** (Covenants, Conditions & Restrictions). These are the "Constitution" of your neighborhood.
+
+They define everything from how many pets you can have to whether you can paint your front door blue.
+
+When you buy a house, you need the **Verified Current Version** of these rules. Sellers often "Hide" pages that mention expensive upcoming fees or strict rental bans to trick buyers. Verified hashes turn these 50-page PDFs into a live, trusted link to the association's official archive.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #333; background: #fff; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 25px;">
     <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;">BYLAWS OF THE</div>

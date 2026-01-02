@@ -6,9 +6,29 @@ retention: "1 year (annual inspection)"
 slug: "playground-equipment-safety-certificates"
 tags: ["playground", "equipment", "safety", "certificates", "inspection"]
 ---
-## Data Verified
 
-Playground location, equipment inventory, inspector, inspection date, safety compliance
+## What is a Playground Certificate?
+
+Every slide, swing, and climbing frame in a public park or school must be inspected for safety. The **Certificate of Compliance** proves that a "Certified Playground Safety Inspector" (CPSI) has verified that the equipment won't trap a child's head or cause a fall onto hard concrete.
+
+By law, these certificates must be on file at the park office.
+
+Fraud is high-stakes here: unscrupulous equipment vendors sometimes provide fake "safety papers" for cheap, un-vetted swingsets to win city contracts. Verified hashes allow parents and park rangers to scan the sticker on the equipment and see the **verified inspection date and pass status** from the inspector's own domain.
+
+<div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 3px solid #ff9800; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+  <div style="background: #ff9800; color: #fff; padding: 15px; text-align: center;">
+    <h2 style="margin: 0; text-transform: uppercase; font-size: 1.1em;">SAFETY CERTIFIED</h2>
+  </div>
+  <div style="padding: 20px; text-align: center;">
+    <strong>Park:</strong> <span data-bracket="start" data-for="park-safe">]</span>Zilker Park, Austin, TX<br>
+    <strong>Equipment:</strong> "The Giant Climber" (Serial #9922)<br>
+    <strong>Status:</strong> SAFE FOR USE
+    <div data-verify-line="park-safe" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.75em;">
+      verify:austin-parks.gov/v/ZILKER-9922 <span data-bracket="end" data-for="park-safe">]</span>
+    </div>
+  </div>
+</div>
+
 
 **Certificate Variations:** Multiple certificate types or levels may exist.
 

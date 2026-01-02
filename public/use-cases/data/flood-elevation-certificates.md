@@ -7,6 +7,14 @@ slug: "flood-elevation-certificates"
 tags: ["real-estate", "flood-insurance", "nfip", "fema-elevation-certificate", "surveyor", "flood-zone", "coastal-resiliency"]
 ---
 
+## What is an Elevation Certificate?
+
+If you live near the coast or a river, you need **Flood Insurance**. The price of that insurance depends on one number: exactly how high your "Lowest Floor" is above sea level.
+
+An **Elevation Certificate** is the official paper from a licensed surveyor that proves this height.
+
+"Elevation Padding" is a common fraud: owners often "Edit" their certificate to change an 8-foot height into an 11-foot height to save $2,000/year on insurance premiums. Verified hashes connect the insurance company directly to the **Surveyor's field notes**, ensuring the price of risk is based on math, not Photoshop.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #000; color: #fff; padding: 15px; text-align: center; display: flex; align-items: center; justify-content: center;">
     <div style="font-size: 1.5em; margin-right: 15px;">🌊</div>

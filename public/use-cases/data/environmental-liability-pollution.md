@@ -7,7 +7,15 @@ slug: "environmental-liability-pollution"
 tags: ["environmental-insurance", "pollution-liability", "cleanup-costs", "cercla", "superfund", "toxic-tort", "risk-management"]
 ---
 
-<div style="max-width: 600px; margin: 24px auto; font-family: 'Helvetica', sans-serif; border: 2px solid #2e7d32; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
+## What is Pollution Insurance?
+
+If a chemical plant or a landfill accidentally poisons the groundwater of a town, the cleanup costs can reach **$100 million or more**. Most normal insurance policies exclude this risk. Companies must buy a specialized **Pollution Legal Liability (PLL)** policy.
+
+These policies are critical for "Brownfield" redevelopments (turning old factories into apartments). No bank will lend on toxic land without verified proof of pollution insurance.
+
+Fraud is high-stakes here: sellers often edit the "Retroactive Date" on their policy to hide that they weren't insured back in 1985 when the original leak happened. Verified hashes ensure the bank and the public are looking at the **true history of the safety net**.
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Helvetica', sans-serif; border: 2px solid #2e7d32; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="background: #2e7d32; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
       <div style="font-weight: bold; font-size: 1.2em;">ACE AMERICAN INSURANCE CO.</div>

@@ -7,6 +7,14 @@ slug: "employment-reference-letters"
 tags: ["employment-verification", "voe", "hr", "background-check", "hiring-fraud", "job-reference"]
 ---
 
+## What is a VOE Letter?
+
+A **Verification of Employment (VOE)** letter is the official paper from an employer's HR department proving that you actually worked there.
+
+Lenders need these letters to approve home loans. Recruiters need them to verify your resume.
+
+Fraud is common: "Nanny Mills" or "Reference Mills" sell fake employment letters from real-looking companies for a fee. OCR-to-hash connects the recruiter directly to the real employer's domain, ensuring that "Senior Software Engineer" role actually happened.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 25px;">
     <div style="font-weight: bold; font-size: 1.2em;">ACME CORPORATION</div>

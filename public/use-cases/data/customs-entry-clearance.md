@@ -7,6 +7,17 @@ slug: "customs-entry-clearance"
 tags: ["customs", "entry-summary", "cbp-form-7501", "import-clearance", "duty-payment", "trade-compliance", "logistics"]
 ---
 
+## What is a Customs Entry?
+
+When a shipping container arrives in a country, the importer must file a **Customs Entry (CBP Form 7501 in the US)**. This is the official "Tax Return" for the shipment.
+
+It proves:
+1.  **What is inside:** (e.g., "Machinery Parts").
+2.  **The Value:** "Worth $100,000."
+3.  **The Duty:** "Paid $12,450 in tax."
+
+Verification is critical for lenders who use "Imported Inventory" as collateral. A verified 7501 proves that the goods were legally imported and that the government doesn't have a "Senior Lien" for unpaid duties.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #002d62; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
     <div>

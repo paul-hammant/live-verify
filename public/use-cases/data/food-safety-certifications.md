@@ -7,6 +7,14 @@ slug: "food-safety-certifications"
 tags: ["food-safety", "haccp", "sqf", "brcgs", "organic-certification", "kosher-halal", "supply-chain-transparency", "gfsi"]
 ---
 
+## What is a Food Safety Audit?
+
+Before a company like Costco or Walmart will buy frozen pizza or canned soup from a factory, they require an independent **Food Safety Audit** (like SQF or BRCGS).
+
+An auditor visits the factory to verify that the floors are clean, the machines are sanitized, and the workers follow hygiene rules. The result is a **Certificate of Registration**.
+
+This certificate is the "License to Sell" to big retailers. Shady factories that fail their audit sometimes "Photoshop" a passing certificate to trick buyers. Verified hashes allow a retail buyer to see the **un-altered audit score** on the standard body's domain.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #000; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>

@@ -6,9 +6,34 @@ retention: "1-3 years (license term)"
 slug: "pest-control-operator-licenses"
 tags: ["pest", "control", "operator", "licenses", "professional", "occupational"]
 ---
-## Data Verified
 
-Licensee name, business name, license categories, insurance, issuing authority
+## What is a Pest Control License?
+
+If you hire someone to spray poison in your kitchen or attic, they must be a **Licensed Pest Control Operator**.
+
+This license proves the technician:
+1.  **Knows the Chemicals:** They won't accidentally poison your pets or family.
+2.  **Is Background-Checked:** They are trusted to enter your home or business.
+3.  **Is Insured:** The company has a bond to cover any damage or chemical spills.
+
+"Fake Exterminator" scams are common: burglars pose as inspectors to "case" a home. OCR-to-hash allows a homeowner to scan the badge at the door and see a green "ACTIVE" status from the state board, ensuring the person is a verified professional.
+
+<div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #004d40; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+  <div style="background: #004d40; color: #fff; padding: 15px; text-align: center;">
+    <h2 style="margin: 0; text-transform: uppercase; font-size: 1.1em;">PEST CONTROL OPERATOR</h2>
+  </div>
+  <div style="padding: 20px; display: flex;">
+    <div style="width: 80px; height: 100px; background: #eee; margin-right: 15px; display: flex; align-items: center; justify-content: center;">[PHOTO]</div>
+    <div style="flex-grow: 1;">
+      <strong>Licensee:</strong> <span data-bracket="start" data-for="pest">]</span>Mike Miller<br>
+      <strong>License #:</strong> PCO-992288 (TX)<br>
+      <div data-verify-line="pest" style="border-top: 1px dashed #999; margin-top: 10px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.75em;">
+        verify:tx-ag.gov/v/PCO992288 <span data-bracket="end" data-for="pest">]</span>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 **Permit Types:** Various permit subtypes may exist depending on jurisdiction and specific use.
 

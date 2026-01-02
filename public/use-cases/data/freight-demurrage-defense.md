@@ -7,6 +7,14 @@ slug: "freight-demurrage-defense"
 tags: ["maritime-insurance", "p-and-i-club", "fd-and-d", "charterparty-dispute", "demurrage-claim", "legal-defense-insurance", "shipping-law"]
 ---
 
+## What is FD&D Insurance?
+
+In the world of giant cargo ships, a single delay at a port can cost $50,000 per day in **Demurrage** (late fees). Disputes over these fees can lead to multimillion-dollar lawsuits in London or Singapore.
+
+**Freight, Demurrage & Defense (FD&D)** is "Legal War-Chest Insurance." It pays for the high-priced maritime lawyers needed to fight these cases.
+
+Shipowners must prove they have this verified "Defense Cover" before they can hire top-tier barristers or release an arrested ship. Verified hashes allow lawyers and ports to check the **un-altered legal limits** on the P&I Club's domain instantly.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 2px solid #002366; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="background: #002366; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>

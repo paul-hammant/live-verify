@@ -7,6 +7,17 @@ slug: "healthcare-home-visit-verification"
 tags: ["home-health-care", "nurse-verification", "elder-care-safety", "personal-safety", "background-check", "caregiver-vetting", "home-security"]
 ---
 
+## What is a Visiting Nurse Badge?
+
+When an elderly relative receives home health care, a nurse or aide enters their private home.
+
+The **Care Professional Badge** is their "Security Token." It proves:
+1.  **Identity:** The person at the door is the one the agency sent.
+2.  **Licensure:** They are a verified Registered Nurse (RN) or Certified Aide.
+3.  **Background:** They have passed a recent criminal background check.
+
+"Fake Nurse" home invasions are a tragic reality. Scammers buy scrubs and fake IDs to gain entry into the homes of vulnerable seniors. OCR-to-hash allows a family member to scan the badge and see the **verified photo and active duty status** from the agency's domain instantly.
+
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
   <div style="background: #0277bd; color: #fff; padding: 15px; text-align: center; display: flex; align-items: center; justify-content: center;">
     <div style="font-size: 1.5em; margin-right: 10px;">🩺</div>

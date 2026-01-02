@@ -7,6 +7,14 @@ slug: "apostille-certifications"
 tags: ["apostille", "hague", "international", "notary", "legalization", "authentication"]
 ---
 
+## What is an Apostille?
+
+If you want to use a US document (like a Birth Certificate or a Diploma) in another country (like Spain or Italy), foreign officials won't just trust a US notary stamp. They need an **Apostille**.
+
+An Apostille is an "International Notary" certificate issued by the Secretary of State. It basically says: "We know this Notary, and their signature is legitimate."
+
+It's a huge target for fraud—fake apostilles are often used to "legalize" fake degrees or stolen property documents for use in foreign courts.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 3px solid #000; background: #fff; padding: 40px; position: relative;">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
     <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 2px;">APOSTILLE</h2>

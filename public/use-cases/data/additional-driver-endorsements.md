@@ -7,6 +7,14 @@ slug: "additional-driver-endorsements"
 tags: ["insurance", "driver", "endorsement", "auto", "policy", "coverage"]
 ---
 
+## What is a Driver Endorsement?
+
+If you lend your car to a friend for a week, or your teenager gets their learner's permit, are they covered by your insurance?
+
+The **Additional Driver Endorsement** is the specific paper (or PDF) that says: "Yes, Michael Chen is allowed to drive this specific Tesla from March 25 to March 30."
+
+Drivers carry this paper to show police or rental agencies. The problem? It's trivial to Photoshop a name onto an insurance card, making an uninsured driver *look* insured.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #0056b3; background: #f8fbff; padding: 0;">
   <div style="background: #0056b3; color: #fff; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center;">
     <div style="font-weight: bold; font-size: 1.1em;">SAFEGUARD INSURANCE</div>

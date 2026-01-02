@@ -7,6 +7,14 @@ slug: "farm-subsidy-documentation"
 tags: ["agriculture", "farm-subsidy", "usda-fsa", "payment-eligibility", "conservation-program", "rural-finance", "audit-trail"]
 ---
 
+## What is a Farm Subsidy?
+
+A **Farm Subsidy** is a payment from the government (USDA) to help farmers manage the risk of low crop prices or bad weather.
+
+Because these payments reach **billions of dollars annually**, they are highly regulated. To get one, a farmer must prove they are "Actively Engaged in Farming" and that their personal income isn't too high (the AGI rule).
+
+Farmers use these verified eligibility letters to get "Operating Loans" from banks to buy seeds and fertilizer. Fraudsters often edit these letters to look eligible for higher payments than they actually are. Verified hashes link the bank directly to the USDA's official approval record.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #1b5e20; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>

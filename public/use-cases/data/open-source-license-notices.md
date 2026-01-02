@@ -1,157 +1,95 @@
 ---
-title: "Open source license compliance notices"
-category: "Product Certifications & Compliance"
-volume: "Small"
-retention: "Release lifecycle + 3-7 years"
+title: "Open Source Compliance Notices"
+category: "Technology & Software"
+volume: "Huge"
+retention: "Lifetime of product"
 slug: "open-source-license-notices"
-tags: ["open", "source", "license", "notices", "technology", "software"]
+tags: ["open-source", "license", "gpl", "mit", "compliance", "supply-chain", "sbom"]
 ---
+
+## What is a Compliance Notice?
+
+When you buy a Smart TV, a car, or a router, it usually comes with a dense booklet (or a text file on a CD) listing all the Open Source Software (OSS) used in the device. This is a legal requirement of licenses like the **GPL** (General Public License).
+
+A **Verified Compliance Notice** takes this static text and binds it to the manufacturer's domain. It proves that the manufacturer *knows* what code is in the box and stands behind the license offer (e.g., "Written Offer" to provide source code).
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', monospace; border: 1px solid #333; background: #f4f4f4; padding: 20px;">
+  <div style="text-align: center; font-weight: bold; margin-bottom: 15px;">OPEN SOURCE SOFTWARE NOTICE</div>
+  
+  <p>Product: SmartRouter X1000<br>
+  Firmware: v2.4.1-stable<br>
+  Manufacturer: <span data-bracket="start" data-for="oss">]</span>NetGearLink Corp</p>
+
+  <p>This product contains software licensed under the GNU General Public License v2 (GPLv2). The following packages are included:</p>
+
+  <ul style="list-style-type: none; padding-left: 0;">
+    <li>- Linux Kernel 5.10 (GPLv2)</li>
+    <li>- BusyBox 1.35 (GPLv2)</li>
+    <li>- OpenSSL 3.0 (Apache 2.0)</li>
+  </ul>
+
+  <p>Written Offer: NetGearLink Corp will provide the source code for the GPL components upon request for a period of 3 years.</p>
+
+  <div data-verify-line="oss" style="border-top: 1px dashed #666; margin-top: 20px; padding-top: 10px; font-size: 0.9em; text-align: center;">
+    verify:netgearlink.com/oss/v/fw241 <span data-bracket="end" data-for="oss">]</span>
+  </div>
+</div>
+
 ## Data Verified
 
-OEM name, product name, package list, license types, version numbers, copyright holders
+Product model, firmware version, list of included packages/licenses, validity of the "Written Offer".
 
-**Permit Types:** Various permit subtypes may exist depending on jurisdiction and specific use.
+**Document Types:**
+- **Product Box Insert:** The physical paper found in the box.
+- **User Manual Appendix:** The "Legal" section of the manual.
+- **E-Label:** The "About" screen in the device settings.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (the Manufacturer) and potentially links to the **Software Bill of Materials (SBOM)** or the source code download.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-- **Suspended** - Permit temporarily suspended
-- **Pending** - Permit application pending approval
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Compliant** — This notice is current for the shipping firmware.
+- **Vulnerable** — The software listed has known CVEs (security vulnerabilities).
+- **Revoked** — This firmware was pulled due to bugs.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
-
-**Legitimacy Confirmation:** After obtaining permit, verify it was properly issued and recorded.
-
-**Compliance Display:** Maintain verified permit for posting requirements.
-
-**Scope Verification:** Confirm permitted activities match intended use.
-
-**Expiration Tracking:** Monitor permit status to avoid lapses.
-
-**Record Keeping:** Maintain verified documentation for audits and compliance.
+The **Consumer / End User** benefits (somewhat).
+- **Security:** "Does this router really run the secure version of OpenSSL?"
+- **Freedom:** Verifying the GPL offer is genuine ensures they can actually get the source code to modify their device.
 
 ## Third-Party Use
 
-**Employers**
+**Import Authorities / Customs**
+**IP Checks:** Customs can verify that the imported electronics have valid license declarations, preventing the import of "pirate" devices that violate GPL/copyright law.
 
-Hiring and compliance verification:
+**Enterprise IT Security**
+**Supply Chain Security:** Before deploying 1,000 routers, the IT security team scans the notice. If the verification link flags "Vulnerable" (due to a new Log4j exploit found in that firmware), they block the deployment.
 
-**Pre-Employment Screening:** Verify credentials during hiring process.
-
-**I-9 Compliance:** Verify work authorization and identity documents.
-
-**Credential Verification:** Confirm professional licenses and certifications.
-
-**Health Requirements:** Verify health-related documentation for workplace safety.
-
-**Background Checks:** Integrate verification into background check processes.
-
-**Insurance Companies**
-
-Underwriting and claims processing:
-
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Government Agencies**
-
-Compliance enforcement and administration:
-
-**Inspection Verification:** Field agents verify permits and licenses at sites.
-
-**Enforcement Actions:** Confirm documentation before enforcement.
-
-**Benefit Eligibility:** Verify supporting documents for benefits administration.
-
-**Compliance Audits:** Audit documentation for regulatory compliance.
-
-**Interagency Coordination:** Share verified documents across agencies.
-
-**Real Estate Professionals**
-
-Property transactions and due diligence:
-
-**Purchase Due Diligence:** Verify property documents during transactions.
-
-**Listing Preparation:** Confirm permits and documentation for listings.
-
-**Disclosure Compliance:** Validate required disclosures and permits.
-
-**Title Research:** Verify property documents for title clearance.
-
-**Appraisal Support:** Confirm documented improvements and permits.
-
-**Professional Licensing Boards**
-
-Licensing and credentialing:
-
-**License Applications:** Verify educational and training credentials.
-
-**Continuing Education:** Validate CE credits for license renewal.
-
-**Reciprocity Requests:** Verify out-of-state licenses for reciprocal licensing.
-
-**Disciplinary Proceedings:** Confirm credential claims in investigations.
-
-**Specialization Certification:** Verify prerequisites for specialty certification.
+**Open Source Foundations (FSF / SFC)**
+**Enforcement:** Organizations that enforce GPL compliance can verify that the "Written Offer" to provide source code is backed by the manufacturer's actual domain, not just a throwaway email address printed on a shady manual.
 
 ## Verification Architecture
 
-**The Open source license compliance notices Fraud Problem**
-
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Permit Sharing:** Using one property's permit for work at another location
-- **Scope Expansion:** Expanding permitted activities beyond authorization
-- **Contractor Fraud:** Claiming permits that were never obtained
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+**The "Ghost Code" Fraud Problem**
+- **Non-Compliance:** Manufacturers using Linux but hiding it to avoid sharing source code.
+- **Fake Notices:** Printing a generic "We use open source" statement without listing the actual components or version numbers.
+- **Supply Chain Attacks:** A middleman flashing malicious firmware onto routers but keeping the original legitimate manual in the box. Verification would fail because the hash of the *installed* software wouldn't match the *printed* notice (if the verification system is linked to device attestation).
 
 **Issuer Types**
+- **Hardware OEMs:** (Samsung, Cisco, Sony).
+- **Device Manufacturers:** (IoT makers, automotive).
 
-Who issues these documents and operates verification endpoints?
+## Competition vs. Digital SBOMs (SPDX/CycloneDX)
 
-**Municipal Authorities:** City and county agencies issuing local permits.
+| Feature | OCR-to-Hash | Digital SBOM (JSON/XML) |
+| :--- | :--- | :--- |
+| **Human Readable** | **Yes.** It's text on paper/screen. | **No.** It's a machine-readable data file. |
+| **Accessibility** | **Universal.** Any camera can read it. | **Specialized.** Needs SBOM analysis tools. |
+| **Physical Link** | **Strong.** Ties the physical box to the digital record. | **Weak.** Usually a file sitting on a server somewhere. |
+| **Completeness** | **Summary.** Lists key licenses/packages. | **Exhaustive.** Lists every dependency of a dependency. |
 
-**State Agencies:** State-level licensing and permitting bodies.
+**Why OCR wins here:**
+Digital SBOMs are the gold standard for *automated* security, but they are invisible to the human inspector at a customs checkpoint or a sysadmin unboxing a device. OCR-to-Hash acts as the **human-readable cover sheet** for the complex digital SBOM.
 
-**Federal Regulators:** Federal agencies for specialized permits.
-
-**Professional Boards:** State licensing boards for professional credentials.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-## Rationale
-
-Shipment-included license notices verifiable offline without QR code redirection risks. Avoids privacy concerns of QR codes linking to tracking systems. Domain binding to manufacturer ensures authentic license compliance. Critical for GPL and open source compliance where notices must accompany distributed software. Human-readable format suitable for printed documentation.

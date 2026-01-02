@@ -7,6 +7,17 @@ slug: "air-quality-permits"
 tags: ["air", "quality", "permit", "environmental", "epa", "title-v"]
 ---
 
+## What is an Air Quality Permit?
+
+An **Air Quality Permit** (specifically a Title V or "Permit to Operate") is a license for a factory, power plant, or large facility to emit a specific amount of air pollution.
+
+It isn't a "free pass" to pollute. It defines:
+1.  **Limits:** Exactly how many pounds of NOx or SOx can come out of a smokestack.
+2.  **Monitoring:** How the company must prove they are under those limits (e.g., Continuous Emission Monitoring).
+3.  **Compliance:** What happens if they fail.
+
+Inspectors and neighbors use these permits to ensure the air we breathe isn't being illegally poisoned by hidden emissions.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #2e7d32; background: #f1f8e9; padding: 0;">
   <div style="background: #2e7d32; color: #fff; padding: 15px; text-align: center;">
     <h3 style="margin: 0;">STATE OF CALIFORNIA</h3>

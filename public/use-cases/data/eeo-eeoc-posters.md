@@ -7,6 +7,14 @@ slug: "eeo-eeoc-posters"
 tags: ["eeoc", "eeo", "labor-law", "workplace-rights", "discrimination", "mandatory-posting", "compliance", "civil-rights"]
 ---
 
+## What is an EEO Poster?
+
+By federal law, every workplace in America must display the **Equal Employment Opportunity (EEO)** poster. It tells employees that it is illegal to discriminate against them based on race, religion, sex, or disability.
+
+These posters are "Mandatory Workplace Postings." If they are outdated (e.g., missing new laws like the Pregnant Workers Fairness Act), the company can be fined $10,000 or more.
+
+Small businesses are often scammed by "Poster Vendors" who charge $200 for these posters. OCR-to-hash allows a business to print the official government PDF for free and verify that it is the **current, legal version** required by the EEOC.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 3px solid #002d62; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #002d62; color: #fff; padding: 20px; text-align: center; display: flex; align-items: center; justify-content: center;">
     <div style="font-size: 2em; margin-right: 15px;">⚖️</div>

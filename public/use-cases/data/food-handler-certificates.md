@@ -7,6 +7,14 @@ slug: "food-handler-certificates"
 tags: ["food-safety", "servsafe", "food-handler-card", "health-permit", "restaurant-compliance", "public-health", "vocational-training"]
 ---
 
+## What is a Food Handler Card?
+
+If you work in a kitchen—from a high-end steakhouse to a high school cafeteria—you must have a **Food Handler Card** (like a ServSafe certificate).
+
+It proves you have passed an exam on how to prevent food poisoning (e.g., "Don't leave the chicken on the counter").
+
+Restaurant managers and health inspectors use these cards to ensure the staff is qualified. Because they are easy to fake with a PDF editor, "Fake Card" fraud is common among people who don't want to take the 4-hour class. Verified hashes allow a manager to scan the card and see the **verified exam score** directly from the registry.
+
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #004d40; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
   <div style="background: #004d40; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
     <div style="font-weight: bold; font-size: 1.1em;">ServSafe&reg;</div>

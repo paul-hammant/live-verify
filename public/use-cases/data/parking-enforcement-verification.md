@@ -6,9 +6,31 @@ retention: "Encounter + 1-3 years"
 slug: "parking-enforcement-verification"
 tags: ["parking", "enforcement", "verification", "personal", "safety", "service"]
 ---
-## Data Verified
 
-Officer name, photo, badge number, jurisdiction, parking authority
+## What is a Parking Officer Badge?
+
+A **Parking Enforcement Officer** is a city worker who issues tickets for expired meters or illegal parking.
+
+Because they have the power to demand cash payments (in some countries) or to order a car to be towed, criminals often pose as "Parking Officers" to extort money from tourists or to steal cars.
+
+OCR-to-hash allows a driver to scan the officer's badge or the ticket itself. Seeing a green "ACTIVE" status from the **official city domain** ensures the person is a real official and not a scammer with a fake uniform.
+
+<div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #000; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+  <div style="background: #333; color: #fff; padding: 15px; text-align: center;">
+    <h2 style="margin: 0; text-transform: uppercase; font-size: 1.1em;">PARKING ENFORCEMENT</h2>
+  </div>
+  <div style="padding: 20px; display: flex;">
+    <div style="width: 80px; height: 100px; background: #eee; margin-right: 15px; display: flex; align-items: center; justify-content: center; font-size: 0.7em;">[PHOTO]</div>
+    <div style="flex-grow: 1;">
+      <strong>Officer:</strong> <span data-bracket="start" data-for="park-off">]</span>Officer Miller<br>
+      <strong>Badge #:</strong> 992288<br>
+      <div data-verify-line="park-off" style="border-top: 1px dashed #999; margin-top: 10px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.75em;">
+        verify:city.gov/parking/v/992288 <span data-bracket="end" data-for="park-off">]</span>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 ## Data Visible After Verification
 

@@ -7,6 +7,14 @@ slug: "energy-audits-efficiency-ratings"
 tags: ["energy-audit", "energy-efficiency", "green-building", "hvac-efficiency", "utility-rebates", "esg-reporting", "hers-rating"]
 ---
 
+## What is an Efficiency Rating?
+
+An **Energy Performance Certificate (EPC)** or HERS rating is like a "Nutrition Label" for a building. It tells you exactly how much electricity and gas the building uses to stay warm or cool.
+
+For an office tower or a house, a high rating (like an **A-Rating**) is worth thousands of dollars in lower utility bills and higher resale value.
+
+"Greenwashing" is common: owners sometimes edit their certificates to turn a "C" into an "A" to attract tenants or qualify for government tax breaks. Verified hashes allow a tenant or buyer to scan the paper in the lobby and see the **unfiltered energy math** from the auditor's database.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #2e7d32; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #2e7d32; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>

@@ -7,6 +7,14 @@ slug: "crowdfunding-investment-confirmations"
 tags: ["kickstarter", "indiegogo", "crowdfunding", "pledge-confirmation", "equity-crowdfunding", "backer-reward", "consumer-trust"]
 ---
 
+## What is a Pledge Confirmation?
+
+When you back a project on Kickstarter or Indiegogo, you are often buying a "Future Product" (like a new watch or board game).
+
+The **Pledge Confirmation** is your receipt. It proves you were "Backer #4" and are entitled to a specific "Early Bird" reward.
+
+In the "Secondary Market" for gadgets, people often try to sell their "Reservation Spots" to others. Verified hashes prevent "Vapor-Pledge" fraud where someone tries to sell a high-value reward tier they never actually bought.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #05ce78; border-radius: 8px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #05ce78; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div style="font-weight: bold; font-size: 1.4em;">KICKSTARTER</div>

@@ -7,6 +7,14 @@ slug: "hotel-cancellation-confirmations"
 tags: ["hotel-cancellation", "refund-receipt", "travel-expense", "hospitality", "booking-dispute", "expense-fraud", "travel-insurance"]
 ---
 
+## What is a Cancellation Receipt?
+
+When you cancel a hotel room, you get a **Cancellation Confirmation**. This is your proof that you released the room and are no longer responsible for the bill.
+
+For business travelers, this receipt is critical for **Expense Audits**. It proves that a refunded charge on their credit card was legitimate.
+
+"Double-Dipping" fraud happens when an employee gets a refund for a room but still tries to claim the original cost from their employer. Verified hashes allow corporate finance departments to automatically flag "Ghost Refunds" where an employee provides a fake PDF to hide a credit.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 2px solid #a3b18a; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
   <div style="text-align: center; border-bottom: 1px solid #a3b18a; padding-bottom: 10px; margin-bottom: 25px;">
     <div style="font-weight: bold; font-size: 1.4em; color: #3a5a40;">THE GRAND HOTEL - PARIS</div>

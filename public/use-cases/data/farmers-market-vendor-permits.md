@@ -7,6 +7,14 @@ slug: "farmers-market-vendor-permits"
 tags: ["farmers-market", "vendor-permit", "food-safety", "local-produce", "market-manager", "public-health", "sanitation-compliance"]
 ---
 
+## What is a Vendor Permit?
+
+At a local Farmer's Market, you want to know that the "Organic Peaches" you're buying actually came from a local farm and not a wholesale warehouse.
+
+The **Annual Vendor Permit** is the proof that the market manager has visited the farm and verified the grower is a "Certified Producer." It also ensures they have passed local health inspections for prepared foods like jams or salads.
+
+"Wholesale Reselling" is a common fraud that hurts real farmers. Verified hashes allow shoppers to scan the stall card and see the **verified list of products** the farm is authorized to sell.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 3px solid #2e7d32; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #2e7d32; color: #fff; padding: 15px; text-align: center; display: flex; align-items: center; justify-content: center;">
     <div style="font-size: 2em; margin-right: 15px;">🌽</div>

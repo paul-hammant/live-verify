@@ -7,6 +7,14 @@ slug: "dangerous-goods-declarations-imo-icao"
 tags: ["imo-dgd", "imdg-code", "dangerous-goods", "maritime-safety", "container-shipping", "hazmat-declaration", "logistics"]
 ---
 
+## What is an IMO Declaration?
+
+When a shipping container full of chemicals (like Acetone or Pesticides) is put on a ship, the captain needs to know exactly where to put it. Flammable items can't be next to explosive items.
+
+The **IMO Dangerous Goods Declaration** is the "Safety Blueprint" for the container.
+
+Fraudsters often edit these PDFs to hide that a chemical is toxic, just to get it onto a faster ship or to save on port fees. Verified hashes allow the ship's captain and port firefighters to see the **un-altered hazard class** instantly, preventing catastrophic fires at sea.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 2px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <div style="background: #000; color: #fff; padding: 10px; text-align: center;">
     <h2 style="margin: 0; text-transform: uppercase; font-size: 1.2em;">DANGEROUS GOODS DECLARATION (IMO)</h2>

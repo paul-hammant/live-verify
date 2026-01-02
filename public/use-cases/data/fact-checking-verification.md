@@ -7,6 +7,14 @@ slug: "fact-checking-verification"
 tags: ["fact-checking", "journalism", "misinformation", "trust-in-media", "news-integrity", "source-verification", "editorial-standards"]
 ---
 
+## What is a Verified Fact-Check?
+
+In the era of "Fake News" and AI-generated text, it is trivial to create a realistic-looking news article or quote from a politician that is 100% false.
+
+A **Verified Fact-Check** adds a cryptographic anchor to a news story.
+
+It allows a reader to scan the text and see a green "VERIFIED" status from an independent watchdog (like Snopes or PolitiFact). More importantly, it stops the "Archival Erasure" problem: a newspaper cannot "Silently Edit" its old articles to change history if the original text is already hashed and verified on an external domain.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #ccc; background: #fffef8; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #1a1a2e; color: white; padding: 15px 20px; text-align: center;">
     <div style="font-size: 2.2em; font-weight: bold; letter-spacing: 3px;">THE DAILY PLANET</div>

@@ -7,6 +7,14 @@ slug: "cooling-tower-legionella-certificates"
 tags: ["legionella-safety", "cooling-tower", "water-testing", "public-health", "nyc-local-law-77", "compliance"]
 ---
 
+## What is a Legionella Test?
+
+Big buildings use "Cooling Towers" to keep the air conditioning running. These towers spray a fine mist of water into the air. If the water is dirty, it can grow a deadly bacteria called **Legionella**, which people then breathe in (Legionnaires' Disease).
+
+To prevent outbreaks, building owners must test the water in these towers every 90 days and post a **Test Certificate** in the lobby.
+
+Fraud is dangerous here: some owners "Dry-Lab" their reports (fabricating "Clean" results) to avoid the $5,000 cost of a chemical disinfection. Verified hashes allow health inspectors to identify "Dirty" towers instantly during an outbreak.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #006064; background: #fff; padding: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <div style="background: #006064; color: #fff; padding: 15px; text-align: center;">
     <h3 style="margin: 0;">CITY DEPARTMENT OF HEALTH</h3>

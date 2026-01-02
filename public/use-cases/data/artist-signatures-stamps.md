@@ -7,6 +7,14 @@ slug: "artist-signatures-stamps"
 tags: ["artist", "signature", "stamp", "authenticity", "connoisseurship", "collectibles"]
 ---
 
+## What is a Signature Authentication?
+
+Sometimes a painting isn't signed on the front, or the signature is illegible. Experts (Graphologists) are hired to study the ink and the "hand" of the artist to verify if the signature is real.
+
+They produce a **Signature Authentication Letter** that details things like ink flow, pressure, and characteristic letter formations (e.g., "The way Picasso crossed his 't' in 1937").
+
+These letters are high-value targets for forgery—criminals create fake "expert reports" to sell fake art.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 1px solid #000; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="text-align: center; margin-bottom: 30px;">
     <h3 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">Signature Authentication Letter</h3>

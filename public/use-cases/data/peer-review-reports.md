@@ -6,9 +6,29 @@ retention: "5-10 years (publication records)"
 slug: "peer-review-reports"
 tags: ["peer", "review", "reports", "scientific", "research"]
 ---
-## Data Verified
 
-Author names, reviewer names (if disclosed), affiliations
+## What is a Peer Review Report?
+
+Before a scientific study is published in a journal (like *The Lancet*), it must be checked by other scientists in the same field. This is called **Peer Review**.
+
+The **Reviewer's Report** is the "Verdict." It lists the flaws in the study and states whether it is "Trustworthy" or "Flawed."
+
+"Reviewer Fraud" is a growing problem: some scientists fabricate fake peer reviews from imaginary experts to get their own papers published. Verified hashes allow a journal or university to prove that a study was **independently vetted by a verified expert** on the journal's domain, protecting the integrity of science.
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 1px solid #ccc; background: #fdfdfd; padding: 25px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
+    <h2 style="margin: 0; font-size: 1.2em;">JOURNAL OF ADVANCED PHYSICS</h2>
+    <div style="font-size: 0.8em;">PEER REVIEW VERDICT</div>
+  </div>
+  <div style="font-size: 0.95em; line-height: 1.6;">
+    <p><strong>Manuscript:</strong> <span data-bracket="start" data-for="review">]</span>JAP-2026-992 (Quantum Gravity)</p>
+    <p><strong>Verdict:</strong> ACCEPTED WITH MINOR REVISIONS</p>
+    <div data-verify-line="review" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;">
+      verify:physicsjournal.org/reviews/v/992288 <span data-bracket="end" data-for="review">]</span>
+    </div>
+  </div>
+</div>
+
 
 **Multi-Page Handling:** Documents may span multiple pages. Per-page verification prevents page substitution attacks.
 

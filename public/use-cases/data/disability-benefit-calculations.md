@@ -7,6 +7,14 @@ slug: "disability-benefit-calculations"
 tags: ["disability-insurance", "benefit-calculation", "actuarial", "claims-adjudication", "income-replacement", "long-term-disability", "compliance"]
 ---
 
+## What is a Disability Calculation?
+
+If a professional (like a doctor or pilot) becomes disabled and can't work, their insurance pays them a monthly check.
+
+The **Benefit Calculation Worksheet** is the actuarial math showing how the insurer reached that number. It isn't just "60% of salary"—it includes complex subtractions for Social Security, Workers Comp, and "Own-Occupation" rules.
+
+Claimants use these verified worksheets to prove their income to banks for mortgages. Fraud happens when people "Edit" the worksheet to show a higher monthly benefit to get a bigger loan. Verified hashes link the lender directly to the insurer's official calculation.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 1px solid #333; background: #fff; padding: 40px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 30px;">
     <div style="font-weight: bold; font-size: 1.1em; color: #1565c0;">METLIFE INDEMNITY</div>

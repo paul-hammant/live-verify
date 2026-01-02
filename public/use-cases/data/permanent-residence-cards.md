@@ -6,9 +6,36 @@ retention: "10 years (card validity) + permanent"
 slug: "permanent-residence-cards"
 tags: ["permanent", "residence", "cards", "immigration", "visa", "documents"]
 ---
-## Data Verified
 
-Full name, DOB, nationality, residence status, card number, biometrics
+## What is a Green Card?
+
+A **Permanent Resident Card** (commonly known as a **Green Card**) is the document proving that a non-citizen is authorized to live and work in the US indefinitely.
+
+It is the most high-value identity card in the country.
+
+Because it grants the right to work and receive government benefits, Green Cards are the #1 target for "High-End Forgery." Black-market cards look perfect to the eye. OCR-to-hash turns the **Physical Card** into a live link to the USCIS database, allowing an employer or bank to see if the card has been **Revoked or Reported Stolen** today.
+
+<div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+  <div style="background: #002d62; color: #fff; padding: 15px; text-align: center; display: flex; align-items: center; justify-content: space-between;">
+    <div>
+      <div style="font-weight: bold; font-size: 1.1em;">U.S. CITIZENSHIP & IMMIGRATION</div>
+      <div style="font-size: 0.8em;">Permanent Resident Card (I-551)</div>
+    </div>
+    <div style="font-size: 1.5em;">🦅</div>
+  </div>
+  <div style="padding: 20px; display: flex;">
+    <div style="width: 100px; height: 125px; background: #eee; margin-right: 15px; display: flex; align-items: center; justify-content: center;">[PHOTO]</div>
+    <div style="flex-grow: 1;">
+      <strong>Name:</strong> <span data-bracket="start" data-for="pr">]</span>DOE, JOHN JACOB<br>
+      <strong>USCIS #:</strong> 992-288-776<br>
+      <strong>Expires:</strong> 01/01/2030
+      <div data-verify-line="pr" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.75em;">
+        verify:uscis.gov/v/992288776 <span data-bracket="end" data-for="pr">]</span>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 **Privacy Salt:** Sensitive personal information requires random salt in verification lines to prevent hash enumeration.
 
@@ -144,6 +171,34 @@ Sensitive personal information requires special handling:
 **Access Controls:** Verification endpoints implement appropriate access restrictions.
 
 **Audit Logging:** Verification attempts logged for security and compliance.
+
+## Photo Return: Defeating High-Grade Clones
+
+Verification responses can include **USCIS's authoritative photo** of the cardholder — not just "valid/invalid" but the actual face on file.
+
+**Why This Matters:**
+
+Green Cards are the highest-value identity document in America. A perfect clone with a swapped photo could fool any employer or bank — until verification returns the **original photo** from USCIS, exposing the mismatch.
+
+| Attack | Without Photo Return | With Photo Return |
+|--------|---------------------|-------------------|
+| **Photo-swap clone** | Employer sees valid hash, accepts card | Text verifies, but returned photo doesn't match person presenting |
+| **Stolen card + lookalike** | Thief finds someone who looks similar, uses stolen card | USCIS photo reveals the difference |
+
+**The Doppelganger Attack (The "Woman in Cabin 10" Problem)**
+
+Sophisticated fraudsters search social media for facial lookalikes, recruit a doppelganger, then steal a victim's Green Card details. The clone card shows the doppelganger's (similar) face, and the returned photo is "close enough" to pass casual HR inspection.
+
+*This attack — finding lookalikes via social media facial matching — was dramatized in "The Woman in Cabin 10" (2025), where antagonists recruited a doppelganger to impersonate a billionaire.*
+
+**Countermeasure: Geo-Anomaly Detection**
+
+USCIS can monitor verification request patterns:
+- Card verified in New York at 9am, then Los Angeles at 10am? Flagged.
+- Card verified by 20 different employers in one month? Flagged.
+- Card verified repeatedly for I-9 purposes while holder is abroad? Flagged.
+
+Immigration authorities can trigger investigations when verification patterns suggest a cloned card is in circulation — potentially catching fraud rings before victims even know their identity was compromised.
 
 ## Rationale
 

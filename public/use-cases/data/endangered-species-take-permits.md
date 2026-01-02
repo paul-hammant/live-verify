@@ -7,6 +7,14 @@ slug: "endangered-species-take-permits"
 tags: ["endangered-species", "wildlife-protection", "fws", "noaa", "incidental-take", "habitat-conservation", "environmental-compliance"]
 ---
 
+## What is a Take Permit?
+
+If a construction project (like a new solar farm) is built in a habitat where an endangered animal lives (like the Desert Tortoise), they might accidentally harm or kill some individuals. By law, they must get an **Incidental Take Permit**.
+
+This permit is a "Contract with the Earth." It says: "You are allowed to harm 15 tortoises, but in exchange, you must spend $1 million restoring 400 acres of habitat elsewhere."
+
+"Poaching and Paving" is a real risk: unscrupulous developers often "Edit" their permits to increase the allowed kill limit to avoid the cost of new mitigation. Verified hashes ensure the crew in the field is following the **exact legal limit** set by federal biologists.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #2e7d32; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #2e7d32; color: #fff; padding: 15px; text-align: center; display: flex; align-items: center; justify-content: center;">
     <div style="font-size: 2em; margin-right: 15px;">🦅</div>

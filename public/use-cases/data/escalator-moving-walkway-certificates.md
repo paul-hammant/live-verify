@@ -7,6 +7,14 @@ slug: "escalator-moving-walkway-certificates"
 tags: ["escalator-safety", "moving-walkway", "inspection-certificate", "public-safety", "building-code", "asme-a17.1", "municipal-compliance"]
 ---
 
+## What is an Escalator Certificate?
+
+Every Escalator and Moving Walkway (like the ones in airports) is a heavy-duty machine that can cause serious injury if a sensor or brake fails.
+
+The **Certificate of Operation** is the framed paper you see near the entrance. It proves that a city inspector has verified the emergency stop buttons and "skirt brushes" meet national safety standards (ASME A17.1).
+
+Fraud is common in large malls: owners often tape a copy of a *new* escalator's certificate onto an *old, uninspected* unit to avoid a "Red Tag" shutdown. OCR-to-hash turns every certificate into a live safety check, ensuring the machine under your feet is actually safe.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 4px solid #1a237e; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #1a237e; color: #fff; padding: 15px; text-align: center;">
     <h2 style="margin: 0; text-transform: uppercase;">CITY CONVEYANCE BUREAU</h2>

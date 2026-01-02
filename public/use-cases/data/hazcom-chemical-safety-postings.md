@@ -7,6 +7,14 @@ slug: "hazcom-chemical-safety-postings"
 tags: ["hazcom", "osha-compliance", "chemical-safety", "ghs", "right-to-know", "mandatory-posting", "employee-safety", "sds-management"]
 ---
 
+## What is a HazCom Notice?
+
+The **Hazard Communication (HazCom)** rule is your "Right to Know" what chemicals are in your workplace. Employers must post a **Chemical Inventory Summary** in the breakroom.
+
+It tells workers: "In this building, we have Sulfuric Acid and Acetone. Here is where the safety masks are located."
+
+Fraud ("Safety Theater") happens when a manager hides a highly toxic chemical from the list to avoid paying for expensive ventilation systems. Verified hashes turn the **Paper Notice** into a live link to the company's official safety database, ensuring workers are seeing the "Un-altered Truth" about their environment.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 3px solid #ffeb3b; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #ffeb3b; color: #000; padding: 20px; text-align: center; display: flex; align-items: center; justify-content: center;">
     <div style="font-size: 2em; margin-right: 15px;">⚠️</div>

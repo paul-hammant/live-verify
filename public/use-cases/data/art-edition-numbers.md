@@ -7,6 +7,14 @@ slug: "art-edition-numbers"
 tags: ["art", "edition", "print", "sculpture", "authenticity", "collectibles"]
 ---
 
+## What is an Edition Number?
+
+When an artist makes a print or a sculpture, they often make a limited number (e.g., 50 copies). Each one is numbered, like **14 / 50**.
+
+This creates "Scarcity." Number 14 is valuable because there are only 49 others like it. If the artist (or the printer) secretly makes 500 copies instead of 50, the value of everyone's art collapses.
+
+OCR-to-Hash allows a collector to verify that their "14 / 50" is an officially recognized number in the publisher's ledger and not a "backdoor" extra copy.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 2px solid #444; background: #fff; padding: 40px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <div style="text-align: center; margin-bottom: 30px;">
     <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 2px;">PACE EDITIONS</div>

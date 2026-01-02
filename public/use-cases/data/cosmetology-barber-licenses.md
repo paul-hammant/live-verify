@@ -7,6 +7,14 @@ slug: "cosmetology-barber-licenses"
 tags: ["cosmetology", "barber", "hair-stylist", "esthetician", "professional-license", "public-health", "sanitation-compliance"]
 ---
 
+## What is a Salon License?
+
+To cut hair or perform skin treatments (like chemical peels), a person must be licensed by the **State Board of Cosmetology**.
+
+This license isn't just about fashion; it's about **Health**. It proves the stylist knows how to properly disinfect tools to prevent the spread of infections, lice, or diseases like Hepatitis.
+
+Stylists are required by law to post their license at their station. Some people use "License Swapping"—using a friend's physical card—to hide that they never passed the health exam. OCR-to-hash allows a customer to scan the badge and see the verified photo and status from the state board instantly.
+
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 4px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
   <div style="background: #333; color: #fff; padding: 15px; text-align: center;">
     <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">STATE BOARD OF COSMETOLOGY</h2>

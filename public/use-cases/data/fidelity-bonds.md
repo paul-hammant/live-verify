@@ -7,6 +7,14 @@ slug: "fidelity-bonds"
 tags: ["fidelity-bond", "employee-dishonesty", "erisa-bond", "crime-insurance", "commercial-surety", "fiduciary-responsibility", "theft-protection"]
 ---
 
+## What is a Fidelity Bond?
+
+A **Fidelity Bond** is a type of insurance that protects a business from its own employees. If an employee steals money, embezzles funds, or commits forgery, the bond pays the business back.
+
+By federal law (**ERISA**), any company with a 401(k) plan **must** have a fidelity bond to protect the employees' retirement savings.
+
+Companies that provide in-home services (like cleaning or IT repair) use these bonds to prove to customers: "Our workers are verified bonded." Fraud happens when a firm shows a fake $1M bond paper but only actually has a $10k bond. Verified hashes prove the **true protection limit**.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #1a237e; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="background: #1a237e; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>

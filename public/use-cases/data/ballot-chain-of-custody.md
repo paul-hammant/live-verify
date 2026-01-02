@@ -7,6 +7,17 @@ slug: "ballot-chain-of-custody"
 tags: ["election", "voting", "ballots", "chain-of-custody", "integrity", "democracy"]
 ---
 
+## What is a Ballot Transfer Form?
+
+In an election, ballots are often driven from a local school (polling place) to a central counting facility. During that drive, the ballots are in a "Black Box" of risk.
+
+The **Chain-of-Custody Form** is the paper that follows the box. It lists:
+1.  **The Count:** "There are exactly 1,242 ballots in this box."
+2.  **The Seal:** "The box is locked with Seal #AZ-009988."
+3.  **The Witnesses:** Two people (one from each party) must sign it.
+
+If a box arrives at the counting center with a different count or seal than what is on the verified form, the alarm is raised immediately.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #eee; padding: 15px; border-bottom: 2px solid #000; display: flex; justify-content: space-between; align-items: center;">
     <div style="font-weight: bold; font-size: 1.1em;">MARICOPA COUNTY ELECTIONS</div>

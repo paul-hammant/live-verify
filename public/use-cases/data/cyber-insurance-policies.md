@@ -7,6 +7,14 @@ slug: "cyber-insurance-policies"
 tags: ["cyber-insurance", "breach-response", "forensic-investigation", "privacy-liability", "incident-response", "risk-management", "security-compliance"]
 ---
 
+## What is Cyber Insurance?
+
+If a company is hacked and customer data is stolen, they can be sued for millions. **Cyber Insurance** covers these legal fees, government fines, and the cost of "breach response" (like mailing notices to customers).
+
+Large corporations (like Apple or Walmart) require all their vendors to have verified cyber insurance policies.
+
+Fraudsters often "Photoshop" a low-limit policy ($100k) to look like a $10M policy to win big contracts. OCR-to-hash allows a procurement officer to scan the vendor's policy and see the **true limits** on the insurer's domain instantly.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
   <div style="background: #000; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>

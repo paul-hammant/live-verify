@@ -1,129 +1,99 @@
 ---
-title: "Network coverage maps and guarantees"
+title: "Network Coverage Guarantees"
 category: "Business & Commerce"
-volume: "Very Small"
-retention: "3-5 years (service claims)"
+volume: "Small"
+retention: "3-5 years (contract term)"
 slug: "network-coverage-maps"
-tags: ["network", "coverage", "maps", "telecommunications"]
+tags: ["network", "coverage", "maps", "telecommunications", "SLA", "5G"]
 ---
+
+## What is a Verified Coverage Guarantee?
+
+Telecommunication providers often sell services based on coverage maps ("We have the best 5G in your area"). However, these maps are often generic marketing materials.
+
+A **Verified Coverage Guarantee** is a specific, timestamped attestation by the carrier that a specific address or coordinate **had reliable signal strength** at the time of contract signing. It converts a marketing claim into a verifiable service level guarantee.
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Arial', sans-serif; border: 2px solid #000; background: #fff; padding: 20px;">
+  <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
+    <h2 style="margin: 0;">VERIZONIA WIRELESS</h2>
+    <div style="font-size: 0.9em; color: #555;">Coverage Certification</div>
+  </div>
+
+  <div style="font-family: 'Courier New', monospace; font-size: 0.95em;">
+    <p><strong>Customer:</strong> Enterprise Logistics Corp</p>
+    <p><strong>Location:</strong> <span data-bracket="start" data-for="net">]</span>Site B, 4500 Warehouse Dr, Austin, TX</p>
+    
+    <p><strong>Guaranteed Service Level:</strong><br>
+    Band: 5G Ultra Wideband (mmWave)<br>
+    Min Downlink: 450 Mbps<br>
+    Signal Strength: -85 dBm or better<br>
+    Date Verified: 2026-01-15</p>
+
+    <div style="border: 1px solid #999; padding: 10px; margin: 15px 0; text-align: center; background: #f9f9f9;">
+      [Coverage Map Visualization Placeholder]<br>
+      (Coordinates: 30.2672° N, 97.7431° W)
+    </div>
+
+    <div data-verify-line="net" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; text-align: center; font-size: 0.85em;">
+      verify:verizonia.com/sla/v/map882 <span data-bracket="end" data-for="net">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Provider name, coverage area (minimal personal data)
+Location coordinates, guaranteed signal metrics (dBm, throughput tier), timestamp, provider commitment.
 
-**Policy Forms:** Different policy forms and endorsements may apply.
+**Document Types:**
+- **Service Level Agreement (SLA) Addendum:** Attaches to the main contract.
+- **Site Survey Report:** Generated after a field technician tests the site.
+- **Coverage Map Snapshot:** A static, verified image of the coverage database at a point in time.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (e.g., `verizon.com`, `t-mobile.com`) and the technical signal data.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-- **Cancelled** - Policy cancelled before expiration
-- **Non-Renewed** - Policy expired and not renewed
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Valid** — The guarantee was issued by the carrier.
+- **Void** — The tower configuration has changed (superseded by new survey).
+- **Historical** — Valid for the past date, but not current.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Enterprise Customer** benefits from verification.
 
-**Proof of Coverage:** Verify coverage is active when needed for compliance or access.
+**Contract Termination:** If the carrier fails to deliver the promised speed, the customer can produce the *verified* guarantee to exit the contract without penalty. "You guaranteed -85dBm here, and I'm getting -110dBm."
 
-**Claims Support:** Confirm policy details when filing claims.
-
-**Coverage Confirmation:** Verify coverage terms match expectations after purchase.
-
-**Third-Party Presentation:** Provide verified proof to landlords, lenders, or employers.
-
-**Renewal Verification:** Confirm renewal was processed and coverage continues.
+**Warranty Claims:** For IoT device manufacturers, proving that a device failure wasn't due to "poor network" but rather device malfunction (or vice versa).
 
 ## Third-Party Use
 
-**Regulators and Oversight Bodies**
+**Regulators (FCC/Ofcom)**
+**Truth in Advertising:** Regulators can spot-check these verified guarantees against actual performance to punish carriers for lying about coverage.
 
-Regulatory compliance and oversight:
-
-**Systematic Hash Receipt:** Receive hashes in bulk for regulatory oversight.
-
-**Audit Verification:** Verify documents during routine or targeted audits.
-
-**Compliance Monitoring:** Monitor issuer compliance with documentation requirements.
-
-**Investigation Support:** Verify documents during fraud or compliance investigations.
-
-**Consumer Protection:** Verify consumer-facing documents for protection enforcement.
-
-**Lenders and Financial Institutions**
-
-Credit underwriting and risk assessment:
-
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Auditors and Compliance Officers**
-
-Internal and external audits:
-
-**Financial Audits:** Verify documents during financial statement audits.
-
-**Compliance Audits:** Validate documentation for regulatory compliance.
-
-**Internal Controls:** Test document authenticity in control assessments.
-
-**Fraud Investigations:** Verify documents in fraud examinations.
-
-**Third-Party Audits:** Validate vendor and partner documentation.
+**Insurance Companies**
+**Business Interruption:** If a business claims loss due to internet outage, the insurer can verify if the carrier *actually* guaranteed service at that location.
 
 ## Verification Architecture
 
-**The Network coverage maps and guarantees Fraud Problem**
-
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Coverage Inflation:** Inflating coverage limits or adding non-existent coverage
-- **Backdating:** Creating policies with false effective dates
-- **Ghost Policies:** Fabricated policies from non-existent insurers
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+**The "Phantom Bars" Fraud Problem**
+- **Sales Puffery:** Sales reps promising "great coverage" via email, which the engineering team later denies.
+- **Map Manipulation:** Showing a generic "covered" blob on a website that doesn't reflect the reality of local terrain/buildings.
 
 **Issuer Types**
+- **Mobile Network Operators (MNOs):** AT&T, Verizon, T-Mobile, Vodafone.
+- **Satellite Providers:** Starlink, Iridium (guaranteeing view of sky).
+- **IoT Network Providers:** Sigfox, LoRaWAN operators.
 
-Who issues these documents and operates verification endpoints?
+## Competition vs. Speedtest Apps
 
-**Primary Issuers:** Organizations with direct authority to issue these documents.
+| Feature | OCR-to-Hash | Speedtest App (Ookla/Fast) |
+| :--- | :--- | :--- |
+| **Time** | **Past.** Proves what was promised *at contract signing*. | **Present.** Measures what is happening *now*. |
+| **Legal Weight** | **High.** It's a contract document. | **Low.** "Your phone might be broken." |
+| **Granularity** | **Site Specific.** Can cover a whole warehouse campus. | **Point Specific.** Measures one device's location. |
+| **Integration** | **Paper/PDF Contract.** Lives with the legal docs. | **App.** Requires active testing. |
 
-**Licensed Professionals:** Professionals authorized to create and certify documents.
+**Why OCR wins here:**
+You can't "Speedtest" the past. When a dispute arises 2 years into a contract, you need to prove what the carrier *promised* back in 2026. The verified SLA document provides that immutable snapshot.
 
-**Government Agencies:** Federal, state, or local agencies with jurisdiction.
-
-**Industry Bodies:** Trade associations and professional organizations.
-
-**System Integration**
-
-Insurance verification integrates with industry systems:
-
-**Policy Administration Systems:** Core insurance systems generate verification hashes at policy issuance.
-
-**ACORD Standards:** Insurance industry data standards could include verification fields.
-
-**State Insurance Databases:** Regulators maintain databases for systematic hash receipt.
-
-**Agent Portals:** Insurance agents access verification for client service.
-
-## Rationale
-
-Domain binding verifies telecom provider. Maps/documents suitable for OCR. Service claim verification. False advertising prevention.

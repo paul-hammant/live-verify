@@ -6,9 +6,31 @@ retention: "7-20 years (legal validity, notary journal requirements)"
 slug: "notarized-documents"
 tags: ["notarized", "documents", "financial", "legal"]
 ---
-## Data Verified
 
-Signatory name(s), notary public name, notary commission number, notary commission expiration date, notary seal/stamp details, notarization date, jurisdiction (state/county), document type being notarized, notarial act type (acknowledgment, jurat, oath, copy certification), venue (where notarization occurred).
+## What is a Notarized Document?
+
+A **Notarized Document** is a paper where a public official (a **Notary Public**) has verified the identity of the signer. It is used for high-stakes transactions like selling a house, giving someone Power of Attorney, or swearing a legal oath.
+
+The Notary is the "Human Firewall" against identity theft.
+
+The problem? Notary stamps are easy to buy online or "Photoshop" onto a PDF. Verification ensures that the Notary **actually exists**, their commission is active, and they officially recorded the signing in their secure journal.
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+  <div style="text-align: center; margin-bottom: 25px;">
+    <h3 style="text-decoration: underline; text-transform: uppercase;">AFFIDAVIT OF RESIDENCY</h3>
+  </div>
+  <div style="font-size: 1em; line-height: 1.6;">
+    <p>I, <span data-bracket="start" data-for="notary">]</span><strong>JANE DOE</strong>, being duly sworn, depose and say that I reside at 123 Bleecker St...</p>
+    <div style="margin-top: 30px; border-top: 1px solid #000; padding-top: 10px;">
+      <strong>Notary Public:</strong> John Hancock (ID #992288)<br>
+      <strong>Jurisdiction:</strong> Kings County, New York
+    </div>
+    <div data-verify-line="notary" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;">
+      verify:notary-check.gov/v/992288-JD <span data-bracket="end" data-for="notary">]</span>
+    </div>
+  </div>
+</div>
+
 
 **Notarial Act Types:**
 - **Acknowledgment:** Signer acknowledges signing voluntarily (most common for deeds)

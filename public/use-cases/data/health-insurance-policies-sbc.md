@@ -7,6 +7,14 @@ slug: "health-insurance-policies-sbc"
 tags: ["health-insurance", "sbc", "aca-compliance", "summary-of-benefits", "coverage-verification", "healthcare-reform", "medical-policy"]
 ---
 
+## What is an SBC?
+
+Under the Affordable Care Act (ACA), every health insurance plan must provide a **Summary of Benefits and Coverage (SBC)**. It is a standardized 8-page document that allows you to compare plans fairly ("Apples to Apples").
+
+It lists your **Deductible**, your **Copay**, and what you pay for an **ER visit**.
+
+Fraud happens during the sales process: some brokers edit the SBC PDF to show a "$500 Deductible" when the actual plan has a "$5,000 Deductible." Verified hashes turn the SBC into a live link to the insurer's official filing, ensuring you are buying the coverage you were promised.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="background: #005fb8; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>

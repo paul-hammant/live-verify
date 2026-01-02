@@ -7,6 +7,17 @@ slug: "alarm-installer-monitoring-licenses"
 tags: ["alarm", "license", "installer", "security", "monitoring", "contractor"]
 ---
 
+## What is an Alarm Installer License?
+
+In many states, anyone who installs security cameras, burglar alarms, or fire sensors in your home must be licensed and background-checked by the State Police or a regulatory bureau.
+
+This license proves that the technician:
+1.  **Is not a criminal:** They have passed a fingerprint-based background check.
+2.  **Is trained:** They understand fire codes and electrical safety.
+3.  **Is insured:** If they damage your home or the system fails, there is a bond or insurance to cover it.
+
+Always scan the badge before letting a "technician" into your home to learn your security codes.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 4px solid #b71c1c; background: #fff; padding: 0;">
   <div style="background: #b71c1c; color: #fff; padding: 15px; text-align: center;">
     <h3 style="margin: 0;">TEXAS DEPARTMENT OF PUBLIC SAFETY</h3>

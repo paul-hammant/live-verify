@@ -7,6 +7,14 @@ slug: "chain-of-custody-forms"
 tags: ["forensics", "evidence", "legal-authority", "logistics", "audit-trail", "criminal-justice"]
 ---
 
+## What is an Evidence Log?
+
+In a criminal case, if a blood sample or a bag of cash is found at a crime scene, it must be tracked every second until it reaches the courtroom. This is the **Chain of Custody**.
+
+The **Evidence Log** is the paper that records every handoff: "Officer A handed Item #4 to Lab Tech B on Tuesday at 9:14 AM."
+
+If there is a gap in the log (a "Broken Chain"), the evidence might be thrown out of court. Fraudsters or negligent officials sometimes "Backdate" these logs to hide that evidence was left in an unsecure location. Verified hashes make this backdating impossible.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 2px solid #555; background: #fdfdfd; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px dashed #555; padding-bottom: 10px; margin-bottom: 20px;">
     <strong>EVIDENCE TRANSFER RECORD</strong><br>

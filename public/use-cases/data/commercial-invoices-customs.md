@@ -7,6 +7,14 @@ slug: "commercial-invoices-customs"
 tags: ["customs", "export-import", "commercial-invoice", "trade-compliance", "hs-codes", "tariff-valuation"]
 ---
 
+## What is a Customs Invoice?
+
+When goods cross an international border, the most important paper is the **Commercial Invoice**. It's the bill from the seller to the buyer.
+
+Customs officers use this invoice to decide how much **Tax (Duty)** to charge. If the invoice says the goods are worth $10,000, you pay less tax than if it says $100,000.
+
+"Under-valuation" is a massive global crime. Shady importers often have the exporter send two invoices: a "Real" one for payment, and a "Fake" one with a 90% discount to show Customs. Verified invoices from the exporter's domain stop this tax evasion instantly.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', monospace; border: 1px solid #000; background: #fff; padding: 20px; box-shadow: 2px 2px 5px rgba(0,0,0,0.1);">
   <div style="display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
     <div style="font-weight: bold; font-size: 1.2em;">COMMERCIAL INVOICE</div>

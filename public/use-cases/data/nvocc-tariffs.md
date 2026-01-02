@@ -6,9 +6,30 @@ retention: "Tariff validity + 7 years"
 slug: "nvocc-tariffs"
 tags: ["nvocc", "tariffs", "logistics", "transportation"]
 ---
-## Data Verified
 
-NVOCC, origin/destination, freight rates, service terms
+## What is an NVOCC Tariff?
+
+An **NVOCC** (Non-Vessel Operating Common Carrier) is a company that sells space on ships but doesn't own the ships. They are the "Middlemen" of global trade.
+
+By US law (**FMC Regulations**), these companies must publish their **Tariffs**—the official prices they charge for shipping a container. They are not allowed to "secretly" over-charge or under-charge.
+
+Fraud happens when an NVOCC edits its tariff sheet to hide "rebates" or to fake a price hike to a customer. Verified hashes allow shippers to scan the price sheet and see the **verified, filed rate** from the carrier's official public tariff domain.
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 1px solid #000; background: #fff; padding: 0;">
+  <div style="background: #333; color: #fff; padding: 10px; text-align: center;">
+    <h2 style="margin: 0; text-transform: uppercase; font-size: 1.1em;">EXPEDITORS TARIFF #042</h2>
+    <div style="font-size: 0.8em;">FMC REGISTRATION: 016228</div>
+  </div>
+  <div style="padding: 20px; font-size: 0.9em;">
+    <p><strong>Route:</strong> <span data-bracket="start" data-for="tariff">]</span>Shanghai (CNSHA) to Los Angeles (USLAX)</p>
+    <p><strong>Rate (per 40' High Cube):</strong> $ 3,250.00 (All-In)<br>
+    <strong>Effective Date:</strong> March 15, 2026</p>
+    <div data-verify-line="tariff" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;">
+      verify:expeditors.com/tariffs/v/SHA-LAX-42 <span data-bracket="end" data-for="tariff">]</span>
+    </div>
+  </div>
+</div>
+
 
 ## Data Visible After Verification
 

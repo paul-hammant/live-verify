@@ -7,6 +7,17 @@ slug: "childcare-provider-verification"
 tags: ["childcare", "nanny", "babysitter", "background-check", "first-aid", "personal-safety", "home-security"]
 ---
 
+## What is a Verified Nanny Badge?
+
+When you hire a nanny or babysitter from an app (like Care.com), they have supposedly passed a criminal background check.
+
+The **Provider ID Badge** is the digital or physical card the nanny carries. It proves:
+1.  **Identity:** The person at your door is the one who passed the check.
+2.  **Safety:** They have a clear criminal and sex-offender record.
+3.  **Training:** They are certified in First Aid and CPR.
+
+Tragically, some people use "ID Swapping"—using a sibling's clear background check to get work while they themselves have a criminal history. Scanning the badge at the door and seeing the "Verified" photo from the network stops this instantly.
+
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
   <div style="background: #e91e63; color: #fff; padding: 15px; text-align: center; display: flex; align-items: center; justify-content: center;">
     <div style="font-size: 1.5em; margin-right: 10px;">🧸</div>

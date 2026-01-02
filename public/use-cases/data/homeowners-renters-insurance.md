@@ -7,6 +7,14 @@ slug: "homeowners-renters-insurance"
 tags: ["homeowners-insurance", "renters-insurance", "property-casualty", "hazard-insurance", "condo-insurance", "mortgage-compliance", "risk-management"]
 ---
 
+## What is Homeowners Insurance?
+
+For most families, their home is their biggest financial asset. **Homeowners Insurance** ensures that if the house burns down, the insurance company will pay to rebuild it.
+
+The **Declarations Page** is the "Proof of Safety." It shows the bank that the loan is protected.
+
+Because these papers are required for every mortgage, "Ghost Policy" fraud is a major problem: people buy a policy to get the paper for the bank closing, then cancel it the next day for a refund. Verified hashes allow lenders to perform **automated annual audits** to ensure the policy is still active today.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Helvetica', Arial, sans-serif; border: 2px solid #003366; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="background: #003366; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>

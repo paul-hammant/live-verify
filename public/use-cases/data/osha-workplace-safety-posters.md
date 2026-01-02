@@ -6,9 +6,36 @@ retention: "Current year (annual updates)"
 slug: "osha-workplace-safety-posters"
 tags: ["osha", "workplace", "safety", "posters", "mandatory", "postings"]
 ---
-## Data Verified
 
-None (informational poster), OSHA contact info
+## What is an OSHA Safety Poster?
+
+By federal law, every workplace in America must display the **OSHA Job Safety and Health** poster. It tells workers they have the right to a safe workplace and the right to report dangers without being fired.
+
+These posters are "Mandatory Workplace Postings." If a manager "hides" the poster or puts up a fake version with the wrong phone numbers, they are violating federal law.
+
+Verified hashes allow any worker to scan the poster and see the **un-altered federal safety rights** on the `osha.gov` domain, ensuring they have the verified information they need to protect their lives on the job.
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 3px solid #d32f2f; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="background: #d32f2f; color: #fff; padding: 20px; text-align: center; display: flex; align-items: center; justify-content: center;">
+    <div style="font-size: 2em; margin-right: 15px;">🛡️</div>
+    <div>
+      <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">JOB SAFETY AND HEALTH</h2>
+      <div style="font-size: 0.85em; opacity: 0.9;">IT'S THE LAW!</div>
+    </div>
+  </div>
+  <div style="padding: 30px;">
+    <p>All workers have the right to a safe workplace.</p>
+    <ul style="font-size: 0.9em; line-height: 1.6;">
+      <li><span data-bracket="start" data-for="osha">]</span>Request an OSHA inspection.</li>
+      <li>Receive training on workplace hazards.</li>
+      <li>Report a work-related injury or illness.</li>
+    </ul>
+    <div data-verify-line="osha" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;">
+      verify:osha.gov/posters/v/OSHA-3165 <span data-bracket="end" data-for="osha">]</span>
+    </div>
+  </div>
+</div>
+
 
 **Privacy Salt:** Sensitive personal information requires random salt in verification lines to prevent hash enumeration.
 

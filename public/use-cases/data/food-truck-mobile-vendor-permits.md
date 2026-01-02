@@ -7,6 +7,17 @@ slug: "food-truck-mobile-vendor-permits"
 tags: ["food-truck", "mobile-vendor", "street-food", "health-permit", "vending-license", "public-health", "sanitation-compliance"]
 ---
 
+## What is a Food Truck Permit?
+
+A **Mobile Food Facility (MFF)** permit is the license that allows a food truck to cook and sell food on city streets.
+
+It proves the truck has:
+1.  **A Grease Trap:** To protect city sewers.
+2.  **A Commissary:** A verified home-base where the truck is cleaned every night.
+3.  **Fire Safety:** A verified inspection of the propane tanks.
+
+Fraud is common: trucks often "Borrow" a permit from a different truck or edit the date on an old permit to bypass the $500 annual fee. Verified hashes allow inspectors and customers to scan the window decal and see the **verified VIN and safety status** instantly.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 3px solid #ff9800; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #ff9800; color: #fff; padding: 15px; text-align: center; display: flex; align-items: center; justify-content: center;">
     <div style="font-size: 2em; margin-right: 15px;">🚚</div>

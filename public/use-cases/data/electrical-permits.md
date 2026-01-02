@@ -7,6 +7,14 @@ slug: "electrical-permits"
 tags: ["construction", "electrical-permit", "fire-safety", "licensed-electrician", "city-inspection", "nec-compliance"]
 ---
 
+## What is an Electrical Permit?
+
+If you are adding a new circuit for an EV charger, installing solar panels, or upgrading your main panel, you must get an **Electrical Permit** from the city.
+
+This isn't just paperwork; it's a **Fire Safety** requirement. Electricity is the #1 cause of house fires. The permit ensures that a city inspector will visit your home to verify the wires are the right size and the connections are safe.
+
+Homeowners often find "Bootleg Wiring" after buying a house. Verified permits allow a buyer to scan the electrical panel and see exactly which circuits were officially inspected and approved by the city.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 3px solid #ffeb3b; background: #fffde7; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #ffeb3b; color: #000; padding: 15px; text-align: center;">
     <h2 style="margin: 0; text-transform: uppercase;">CITY OF PHOENIX</h2>

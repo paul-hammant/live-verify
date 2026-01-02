@@ -7,6 +7,14 @@ slug: "consular-letters-attestations"
 tags: ["embassy", "consulate", "consular-letter", "attestation", "diplomatic-mission", "visa-support", "legalization"]
 ---
 
+## What is a Consular Attestation?
+
+If you are an expat living in a foreign country, your home government's **Embassy** acts as your local "High-Level Notary."
+
+A **Consular Letter** (or Attestation) is a formal document from a diplomat stating a fact about you (e.g., "We certify that Sarah Smith has a pension of $3,000/month").
+
+Foreign governments (like Thailand or Spain) require these letters for visas. Because they are so powerful, "Embassy Letter Forgery" is a massive industry. Verified hashes allow a foreign immigration officer to scan the letter and see "VERIFIED" on the official `usembassy.gov` domain in seconds.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); position: relative;">
   <div style="text-align: center; margin-bottom: 30px;">
     <div style="font-weight: bold; font-size: 1.2em;">EMBASSY OF THE UNITED STATES OF AMERICA</div>

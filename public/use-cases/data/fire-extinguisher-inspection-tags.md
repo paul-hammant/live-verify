@@ -7,6 +7,17 @@ slug: "fire-extinguisher-inspection-tags"
 tags: ["fire-safety", "extinguisher-inspection", "nfpa-10", "fire-marshal", "building-safety", "maintenance-log", "compliance"]
 ---
 
+## What is a Fire Extinguisher Tag?
+
+Every fire extinguisher in a public building must be inspected by a professional **every year**. The **Inspection Tag** is the plastic or paper card hanging on the unit.
+
+It proves that a technician has verified:
+1.  **Pressure:** The gauge is in the "Green" zone.
+2.  **Chemicals:** The powder inside isn't clumped or expired.
+3.  **Safety Pin:** The pin hasn't been pulled or tampered with.
+
+"Pencil Whipping" is a common fraud where shady companies sell "Verified" tags for $5 each without ever actually checking the unit. Verified hashes ensure the **Serial Number** on the tank matches the technician's official safety record.
+
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #d32f2f; border-radius: 8px; background: #fff; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
   <div style="background: #d32f2f; color: #fff; padding: 10px; text-align: center;">
     <div style="font-weight: bold; font-size: 1.1em;">DO NOT REMOVE</div>

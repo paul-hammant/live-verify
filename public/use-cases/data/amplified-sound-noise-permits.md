@@ -7,6 +7,14 @@ slug: "amplified-sound-noise-permits"
 tags: ["amplified", "sound", "noise", "permit", "event", "city", "ordinance"]
 ---
 
+## What is a Sound Permit?
+
+Cities have noise ordinances that usually ban loud music late at night. However, music venues, construction sites, and festivals can apply for an **Amplified Sound Permit** or a **Noise Variance**.
+
+This permit is a legal exception that says: "This venue is allowed to play music up to 85 decibels until midnight."
+
+Venues post these in their windows so that police and neighbors can verify exactly what the "legal" noise level is, preventing unnecessary shutdowns of legitimate businesses.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 3px solid #000; background: #fff; padding: 0;">
   <div style="background: #000; color: #fff; padding: 15px; text-align: center;">
     <h2 style="margin: 0; text-transform: uppercase;">CITY OF AUSTIN</h2>

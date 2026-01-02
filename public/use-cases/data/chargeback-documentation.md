@@ -7,6 +7,14 @@ slug: "chargeback-documentation"
 tags: ["chargeback", "payment-dispute", "visa", "mastercard", "ecommerce-fraud", "merchant-protection"]
 ---
 
+## What is a Chargeback Adjudication?
+
+When a customer disputes a credit card charge (a "Chargeback"), the merchant must provide evidence (like a FedEx receipt or an IP address) to prove the sale was legitimate.
+
+The **Adjudication Letter** is the final verdict from the payment processor (like PayPal or Stripe) stating: "Dispute Won" or "Dispute Lost."
+
+Merchants need these verified letters to prove to lenders and business partners that their "Fraud Rate" is low. Without verification, a merchant could easily fake a "Dispute Won" letter to hide that they are being victimized by massive amounts of fraud.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #003087; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div style="font-weight: bold; font-size: 1.2em;">PAYPAL MERCHANT SERVICES</div>

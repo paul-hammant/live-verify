@@ -7,6 +7,14 @@ slug: "course-transcripts"
 tags: ["academic-transcript", "grades", "registrar", "university-transfer", "educational-verification", "higher-education"]
 ---
 
+## What is an Academic Transcript?
+
+An **Academic Transcript** is the "Final Gradebook" of your education. It lists every class you took and exactly what grade you earned.
+
+You need this "Official" paper to apply for Grad School or to prove to an employer that you actually have the skills listed on your resume.
+
+"Transcript Padding" is a common fraud: people often edit a "C" to an "A" or add a "Computer Science" class they never actually took. Verified hashes allow an employer or university to scan the PDF and see the **un-altered grades** directly from the Registrar's database.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 25px;">
     <div style="font-weight: bold; font-size: 1.3em;">UNIVERSITY OF OXFORD</div>

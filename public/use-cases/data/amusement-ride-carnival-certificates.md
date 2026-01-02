@@ -7,6 +7,17 @@ slug: "amusement-ride-carnival-certificates"
 tags: ["amusement", "ride", "carnival", "inspection", "safety", "certificate", "state"]
 ---
 
+## What is a Ride Safety Certificate?
+
+Every Ferris wheel, Roller Coaster, and Tilt-A-Whirl at a traveling carnival or theme park must be inspected by state or private safety experts.
+
+The **Certificate of Operation** is the sticker or paper usually found on the ride's ticket booth. It proves:
+1.  **Mechanics:** The bolts are tight, the brakes work, and the metal isn't cracked.
+2.  **Insurance:** The operator has liability insurance.
+3.  **Freshness:** The ride was inspected recently (typically within the last year or season).
+
+If you don't see a verified sticker, think twice before getting on.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 4px solid #f57f17; background: #fff; padding: 0;">
   <div style="background: #f57f17; color: #fff; padding: 15px; text-align: center;">
     <h2 style="margin: 0;">DEPARTMENT OF LABOR & INDUSTRY</h2>

@@ -7,6 +7,14 @@ slug: "escrow-account-statements"
 tags: ["escrow-analysis", "mortgage-servicing", "property-tax-payment", "hazard-insurance", "pmi", "financial-transparency", "respa-compliance"]
 ---
 
+## What is an Escrow Statement?
+
+If you have a mortgage, your bank often collects extra money every month to pay your property taxes and home insurance for you. This "bucket" of money is your **Escrow Account**.
+
+Every year, the bank sends you an **Annual Escrow Analysis**. It tells you if you have too much money in the bucket (a Surplus) or too little (a Shortage).
+
+Because banks manage millions of these accounts, clerical errors are frequent. Verified statements allow homeowners to prove the bank's math is wrong if a "Shortage Notice" doesn't match the county's actual tax bill.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <div style="background: #003366; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>

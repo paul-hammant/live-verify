@@ -7,6 +7,14 @@ slug: "emergency-evacuation-maps"
 tags: ["emergency-evacuation", "fire-safety", "floor-plan", "workplace-safety", "osha-compliance", "fire-marshal", "building-safety"]
 ---
 
+## What is an Evacuation Plan?
+
+In an office tower or hotel, every floor has an **Emergency Evacuation Map** posted near the elevators. It shows you the shortest path to the stairs if there is a fire.
+
+These maps are "Living Documents." If a company builds a new conference room that blocks a hallway, the map must be updated and re-approved by the **Fire Marshal**.
+
+Fraud happens when landlords "Self-Edit" these maps to hide safety violations. Verified hashes ensure the map on the wall is the **exact layout** the Fire Department approved, ensuring that people aren't running toward a locked door in a fire.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 3px solid #d32f2f; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #d32f2f; color: #fff; padding: 15px; text-align: center; display: flex; align-items: center; justify-content: center;">
     <div style="font-size: 2em; margin-right: 15px;">🔥</div>

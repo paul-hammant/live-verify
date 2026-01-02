@@ -7,6 +7,17 @@ slug: "allergy-medical-alert-cards"
 tags: ["allergy", "medical", "alert", "card", "emergency", "anaphylaxis", "diabetes"]
 ---
 
+## What is a Medical Alert Card?
+
+A **Medical Alert Card** (or ID tag) is a life-saving tool for people with severe allergies (like peanuts or bees) or conditions like Diabetes or Epilepsy.
+
+If a person collapses or goes into shock:
+1.  **Paramedics** look for this card to know *not* to give certain drugs (like Penicillin).
+2.  **Bystanders** can see instructions (e.g., "Give sugar if confused").
+3.  **School Nurses** can verify that a child is authorized to carry an EpiPen.
+
+OCR-to-Hash allows a simple wallet card to link to a detailed, verified medical profile that paramedics can trust.
+
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #d32f2f; border-radius: 8px; background: #fff; overflow: hidden;">
   <div style="background: #d32f2f; color: #fff; padding: 15px; text-align: center; display: flex; align-items: center; justify-content: center;">
     <div style="font-size: 2em; margin-right: 10px;">⚠</div>

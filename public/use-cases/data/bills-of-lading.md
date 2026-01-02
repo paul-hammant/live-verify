@@ -7,6 +7,17 @@ slug: "bills-of-lading"
 tags: ["shipping", "logistics", "maritime", "trade-finance", "bill-of-lading", "bol", "cargo"]
 ---
 
+## What is a Bill of Lading?
+
+A **Bill of Lading (B/L)** is the most important document in global trade. It is distinct from an Air Waybill because it is a **Document of Title**. This means the paper document itself represents **ownership** of the goods.
+
+Whoever holds the original "negotiable" B/L effectively owns the cargo. This makes it high-stakes:
+1.  **Receipt:** Proof the ship captain received the cargo.
+2.  **Contract:** The shipping agreement.
+3.  **Title:** The physical "key" to claim the goods at the destination port.
+
+Losing the original B/L is a disaster (requires court bonds to fix), which is why verification of the paper is so critical.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 1px solid #000; background: #fff; padding: 0;">
   <div style="background: #002d62; color: #fff; padding: 10px; display: flex; justify-content: space-between; align-items: center;">
     <div style="font-weight: bold; font-size: 1.2em;">MAERSK LINE</div>

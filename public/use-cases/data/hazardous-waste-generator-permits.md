@@ -7,6 +7,14 @@ slug: "hazardous-waste-generator-permits"
 tags: ["hazmat", "rcra", "epa-id", "hazardous-waste", "environmental-compliance", "epa-permit", "pollution-prevention"]
 ---
 
+## What is an EPA ID?
+
+If a factory or hospital creates toxic waste (like spent solvents or medical waste), they are a **Hazardous Waste Generator**. By law (**RCRA**), they must register with the government and get an **EPA ID Number**.
+
+This ID is the "License to Pollute" responsibly. Without a verified ID, a company cannot legally ship waste to a disposal site.
+
+"Midnight Dumping" is a common crime where small shops use a fake or "borrowed" EPA ID to dispose of toxic sludge illegally. Verified hashes allow truck drivers and disposal sites to scan the permit and see the **verified list of authorized waste** for that specific facility.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 3px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #1a1a1a; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>

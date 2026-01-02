@@ -6,7 +6,56 @@ retention: "Permanent (ownership records)"
 slug: "stock-certificates"
 tags: ["stock", "certificates", "financial", "legal", "documents"]
 ---
-## Data Verified
+
+## What is a Stock Certificate?
+
+Before electronic trading, ownership of a company was proven by a physical paper **Stock Certificate**.
+
+While public stocks (like Apple) are now digital, **Private Companies** and **Small Businesses** still use paper certificates or PDF equivalents to prove who owns the business.
+
+If you are buying a small business or investing in a private startup, you need to verify the seller actually owns the shares they are selling. Fraudsters often sell "fake shares" in companies they don't own. Verified hashes link the certificate directly to the Company Secretary or Transfer Agent's ledger, preventing duplicate sales.
+
+<div style="max-width: 700px; margin: 24px auto; font-family: 'Times New Roman', serif; border: 8px double #003366; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); position: relative;">
+  <!-- Decorative corner elements (simplified) -->
+  <div style="position: absolute; top: 10px; left: 10px; width: 40px; height: 40px; border-top: 2px solid #003366; border-left: 2px solid #003366;"></div>
+  <div style="position: absolute; top: 10px; right: 10px; width: 40px; height: 40px; border-top: 2px solid #003366; border-right: 2px solid #003366;"></div>
+  <div style="position: absolute; bottom: 10px; left: 10px; width: 40px; height: 40px; border-bottom: 2px solid #003366; border-left: 2px solid #003366;"></div>
+  <div style="position: absolute; bottom: 10px; right: 10px; width: 40px; height: 40px; border-bottom: 2px solid #003366; border-right: 2px solid #003366;"></div>
+
+  <div style="text-align: center;">
+    <div style="font-size: 0.9em; letter-spacing: 2px; margin-bottom: 10px;">NUMBER <span style="font-weight: bold; font-size: 1.2em;">CS-1024</span></div>
+    <div style="font-size: 2.5em; font-weight: bold; color: #003366; margin: 10px 0; font-family: 'Playfair Display', serif;">Acme Corp, Inc.</div>
+    <div style="font-size: 0.9em; font-style: italic;">Incorporated under the laws of the State of Delaware</div>
+    
+    <div style="margin: 30px 0; font-size: 1.1em; line-height: 1.8;">
+      This Certifies that <span style="font-weight: bold; font-size: 1.2em; border-bottom: 1px solid #000;">THE WAYNE FAMILY TRUST</span> is the owner of
+      <br>
+      <span style="font-weight: bold; font-size: 1.4em; border-bottom: 1px solid #000; color: #003366;"><span data-bracket="start" data-for="stock">]</span>ONE THOUSAND (1,000)</span>
+      <br>
+      Fully Paid and Non-Assessable Shares of Common Stock of the above named Corporation.
+    </div>
+
+    <div style="display: flex; justify-content: space-between; margin-top: 50px; align-items: flex-end;">
+      <div style="text-align: center; width: 40%;">
+        <div style="border-bottom: 1px solid #000; margin-bottom: 5px; font-family: cursive; font-size: 1.2em;">Alice Smith</div>
+        <div style="font-size: 0.8em; text-transform: uppercase;">Secretary</div>
+      </div>
+      <div style="width: 20%; text-align: center;">
+        <div style="width: 80px; height: 80px; border: 2px solid #daa520; border-radius: 50%; margin: 0 auto; display: flex; align-items: center; justify-content: center; color: #daa520; font-size: 0.8em;">SEAL</div>
+      </div>
+      <div style="text-align: center; width: 40%;">
+        <div style="border-bottom: 1px solid #000; margin-bottom: 5px; font-family: cursive; font-size: 1.2em;">Bob Jones</div>
+        <div style="font-size: 0.8em; text-transform: uppercase;">President</div>
+      </div>
+    </div>
+  </div>
+
+  <div data-verify-line="stock" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+    title="Demo only: Carta/transfer agents don't yet offer verification&#10;endpoints, so this is illustrative">
+    verify:carta.com/certs/v/CS1024 <span data-bracket="end" data-for="stock">]</span>
+  </div>
+</div>
+
 
 Shareholder name, number of shares, share class, certificate number, company name and jurisdiction, issue date, par value (if any), transfer agent name, CUSIP/ISIN number, authorized signatures, any restrictive legends, transfer endorsements.
 

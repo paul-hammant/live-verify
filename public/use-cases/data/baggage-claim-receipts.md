@@ -7,6 +7,14 @@ slug: "baggage-claim-receipts"
 tags: ["airline", "baggage", "receipt", "lost-luggage", "compensation", "travel-insurance", "expense"]
 ---
 
+## What is a Baggage PIR?
+
+When your suitcase doesn't arrive at the airport, the airline agent gives you a **Property Irregularity Report (PIR)**. This is a simple thermal-paper receipt with a reference number like `CDG-AF-998877`.
+
+This receipt is the only "Proof of Loss" accepted by travel insurance companies.
+
+Because these receipts are easy to forge with a basic printer, "baggage fraud" is a multi-million dollar problem. Fraudsters file fake reports for flights they took just to collect $500 from their insurance company. Verified PIRs stop this scam instantly.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', monospace; border: 1px solid #999; background: #fff; padding: 20px; box-shadow: 2px 2px 5px rgba(0,0,0,0.1);">
   <div style="text-align: center; margin-bottom: 15px; border-bottom: 1px solid #000; padding-bottom: 10px;">
     <strong>AIR FRANCE - BAGGAGE SERVICES</strong><br>

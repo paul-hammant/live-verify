@@ -7,6 +7,16 @@ slug: "art-provenance-documentation"
 tags: ["provenance", "art-market", "history", "auction", "ownership", "title"]
 ---
 
+## What is Art Provenance?
+
+**Provenance** is the "Chain of Ownership" of an artwork. It's the list of everyone who has owned the painting since it left the artist's studio (e.g., "Owned by the Artist -> Sold to Gallery X in 1920 -> Sold to Museum Y in 1955").
+
+Provenance is used to prove:
+1.  **Authenticity:** If you can trace it back to the artist, it's real.
+2.  **Clear Title:** It wasn't stolen from a museum or looted during a war (like Nazi-era looting).
+
+Verified provenance documentation is the "History of Truth" that allows million-dollar sales to happen with confidence.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #999; background: #fff; padding: 40px; box-shadow: 2px 2px 10px rgba(0,0,0,0.05);">
   <div style="text-align: center; margin-bottom: 30px;">
     <div style="font-weight: bold; font-size: 1.3em; letter-spacing: 1px;">CHRISTIE'S PROVENANCE RESEARCH</div>

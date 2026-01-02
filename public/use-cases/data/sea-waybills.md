@@ -6,7 +6,77 @@ retention: "7-10 years (proof of shipment)"
 slug: "sea-waybills"
 tags: ["waybills", "logistics", "transportation"]
 ---
-## Data Verified
+
+## What is a Sea Waybill?
+
+A **Sea Waybill** is a receipt for cargo loaded onto a ship. Unlike a "Bill of Lading," it is not a title document (you don't need the original paper to claim the goods). It is used for shorter routes or between trusted partners.
+
+However, it is still critical for **Trade Finance**. Banks release millions of dollars in payment when they see a valid Waybill confirming the goods have shipped.
+
+Fraudsters create "Ghost Shipments"—fake Waybills for cargo that doesn't exist—to steal money from banks. Verified hashes allow the bank to instantly confirm with the Shipping Line (like Maersk or MSC) that the shipment is real and the document matches their system.
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 2px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="border-bottom: 2px solid #333; padding: 15px; display: flex; justify-content: space-between; align-items: center;">
+    <div style="font-weight: bold; font-size: 1.4em;">MAERSK LINE</div>
+    <div style="font-size: 0.9em;">NON-NEGOTIABLE WAYBILL</div>
+  </div>
+
+  <div style="padding: 20px; font-size: 0.85em;">
+    <div style="display: flex; border-bottom: 1px solid #ccc; padding-bottom: 10px; margin-bottom: 10px;">
+      <div style="width: 50%; border-right: 1px solid #ccc; padding-right: 10px;">
+        <strong>Shipper:</strong><br>
+        Shenzhen Electronics Mfg.<br>
+        Futian District, Shenzhen, CN
+      </div>
+      <div style="width: 50%; padding-left: 10px;">
+        <strong>Consignee:</strong><br>
+        Global Retail Imports LLC<br>
+        Los Angeles, CA, USA
+      </div>
+    </div>
+
+    <div style="display: flex; border-bottom: 1px solid #ccc; padding-bottom: 10px; margin-bottom: 10px;">
+      <div style="width: 33%;">
+        <strong>Vessel:</strong><br>
+        MAERSK SEALAND
+      </div>
+      <div style="width: 33%;">
+        <strong>Voyage:</strong><br>
+        2604W
+      </div>
+      <div style="width: 33%;">
+        <strong>B/L No:</strong><br>
+        <span data-bracket="start" data-for="waybill">]</span>MAEU123456789
+      </div>
+    </div>
+
+    <div style="margin: 20px 0;">
+      <table style="width: 100%; border: 1px solid #ccc;">
+        <tr style="background: #eee;">
+          <th style="text-align: left; padding: 5px;">Container No.</th>
+          <th style="text-align: left; padding: 5px;">Description</th>
+          <th style="text-align: right; padding: 5px;">Gross Weight</th>
+        </tr>
+        <tr>
+          <td style="padding: 5px;">MSKU9876543</td>
+          <td style="padding: 5px;">800 CTNS CONSUMER ELECTRONICS</td>
+          <td style="text-align: right; padding: 5px;">12,450 KGS</td>
+        </tr>
+      </table>
+    </div>
+
+    <div style="border: 1px solid #000; padding: 10px; margin-top: 20px; text-align: center; font-weight: bold;">
+      SHIPPED ON BOARD: MAR 15, 2026<br>
+      PORT OF LOADING: YANTIAN
+    </div>
+
+    <div data-verify-line="waybill" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: Maersk doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:maersk.com/tracking/v/MAEU123456 <span data-bracket="end" data-for="waybill">]</span>
+    </div>
+  </div>
+</div>
+
 
 Shipper, consignee, carrier, vessel, cargo description
 

@@ -7,6 +7,14 @@ slug: "crop-hail-insurance"
 tags: ["agriculture", "crop-insurance", "hail-damage", "farming", "risk-management", "harvest-records"]
 ---
 
+## What is Crop-Hail Insurance?
+
+For a farmer, a single 10-minute hailstorm can destroy an entire year's income. **Crop-Hail Insurance** protects against this specific risk.
+
+Unlike broader "Multi-Peril" insurance (which is subsidized by the government), Crop-Hail is a private contract that pays out based on the exact percentage of damage to specific acres.
+
+Farmers use these verified coverage schedules to secure "Operating Loans" from banks. If a farmer "Photoshops" their policy to show more insured acres, they are committing bank fraud. Verified hashes allow the bank to see the true, insurer-backed limits in the field.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 2px solid #2e7d32; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="background: #2e7d32; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>

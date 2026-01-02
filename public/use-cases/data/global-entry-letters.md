@@ -7,6 +7,14 @@ slug: "global-entry-letters"
 tags: ["immigration", "global-entry", "tsa-precheck", "cbp", "trusted-traveler", "border-security", "membership-verification"]
 ---
 
+## What is Global Entry Status?
+
+**Global Entry** is a "Trusted Traveler" program that allows pre-vetted, low-risk travelers to skip the long lines at US Customs when returning from abroad. It also includes **TSA PreCheck** for domestic flights.
+
+To get it, you must pass a rigorous federal background check and a face-to-face interview with a Customs officer. The **Membership Confirmation** is your proof of status.
+
+Fraud is common: scammers often create fake "Global Entry" PDFs to trick employers into thinking they have a clean criminal record. Verified hashes allow an employer or airline to scan the letter and see the "APPROVED" status on the `cbp.dhs.gov` domain in seconds.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #002d62; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
     <div>

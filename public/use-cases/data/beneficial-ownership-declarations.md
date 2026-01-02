@@ -7,6 +7,14 @@ slug: "beneficial-ownership-declarations"
 tags: ["aml", "kyc", "fincen", "ubo", "beneficial-ownership", "corporate-transparency"]
 ---
 
+## What is a UBO Declaration?
+
+Criminals and sanctioned oligarchs often hide behind "Shell Companies." They might own 10 different companies that own each other, making it impossible to see who is really in control.
+
+The **Ultimate Beneficial Owner (UBO)** Declaration is the document where a company must "unmask" its true human owners to the government (like FinCEN in the US).
+
+Verifying these declarations ensures that a company opening a bank account isn't lying about who owns it, which is the primary way the world stops money laundering and terrorism financing.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #002d62; color: #fff; padding: 20px; text-align: center;">
     <h2 style="margin: 0; font-size: 1.3em;">BENEFICIAL OWNERSHIP DECLARATION</h2>

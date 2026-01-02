@@ -7,6 +7,14 @@ slug: "auto-transport-damage-reports"
 tags: ["auto", "transport", "logistics", "damage", "inspection", "car-shipping", "bill-of-lading"]
 ---
 
+## What is an Auto Transport Report?
+
+When you ship a car across the country on a truck, the driver performs a "walk-around" inspection at your driveway. They mark every existing scratch or chip on a **Bill of Lading (BOL)** or inspection report.
+
+This document is the only thing protecting you if the car arrives at the destination with a new dent.
+
+Fraud is common: drivers sometimes "edit" the digital report *after* they damage the car, adding a scratch to the "Origin" report so it looks like it was already there. Verified snapshots prevent this "after-the-fact" tampering.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <div style="background: #333; color: #fff; padding: 15px; display: flex; justify-content: space-between; align-items: center;">
     <div>

@@ -7,6 +7,14 @@ slug: "dangerous-goods-transport-road"
 tags: ["adr", "dot-hazmat", "dangerous-goods", "road-transport", "safety-data-sheet", "logistics", "highway-safety"]
 ---
 
+## What is a Hazmat Manifest?
+
+When a truck carries hazardous materials (like Gasoline or Acid), the driver must carry a **Transport Document** (called an ADR note in Europe or a Hazmat Manifest in the US).
+
+If the truck crashes, **First Responders** (Firefighters) look for this paper first. It tells them: "Approach from upwind" or "Do not use water on this fire."
+
+Fraudsters often "Downgrade" the hazard on the paper form to bypass tunnel restrictions or to save on insurance. Verified hashes allow firefighters to scan the paperwork at the crash site and see the **verified hazard class** from the shipper's domain instantly.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #ff9800; background: #fff; padding: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <div style="background: #ff9800; color: #fff; padding: 15px; text-align: center;">
     <h2 style="margin: 0; text-transform: uppercase; font-size: 1.2em;">DANGEROUS GOODS TRANSPORT DOCUMENT</h2>

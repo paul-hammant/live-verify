@@ -7,6 +7,14 @@ slug: "calibration-certificates"
 tags: ["calibration", "metrology", "quality-assurance", "iso-17025", "nist", "traceability", "compliance"]
 ---
 
+## What is a Metrology Certificate?
+
+In high-tech manufacturing (like making microchips or vaccines), even a tiny error in weight or temperature can ruin a $10 million batch of product.
+
+**Metrology** is the science of measurement. A **Calibration Certificate** from an accredited lab proves that the machines in the factory are perfectly accurate.
+
+Because these certificates are required by law (FDA/ISO), some shady companies "Dry-Lab" their results—meaning they just write down fake "perfect" numbers on a piece of paper without actually testing the machine. Verified hashes stop this dangerous fraud.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 1px solid #000; background: #fff; padding: 40px; box-shadow: 2px 2px 10px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
     <div style="font-weight: bold; font-size: 1.2em;">NATIONAL METROLOGY SERVICES, LLC</div>

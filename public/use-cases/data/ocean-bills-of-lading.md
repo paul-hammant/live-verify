@@ -6,9 +6,33 @@ retention: "7-10 years (legal title)"
 slug: "ocean-bills-of-lading"
 tags: ["ocean", "bills", "lading", "logistics", "transportation"]
 ---
-## Data Verified
 
-Shipper, consignee, notify party, carrier, vessel, cargo description, value
+## What is an Ocean Bill of Lading?
+
+An **Ocean Bill of Lading (B/L)** is the most important paper in global trade. It is a **Document of Title**, meaning whoever holds the original paper "owns" the cargo in the container.
+
+It serves three roles:
+1.  **Receipt:** Proving the ship captain received the goods.
+2.  **Contract:** Defining the shipping price and rules.
+3.  **Title:** The "Key" to claim the goods at the destination port.
+
+Because this paper represents **Ownership**, it is a high-value target for forgery. Thieves use "Phantom B/Ls" to steal $100,000 containers of electronics. Verified hashes ensure the paper in the trucker's hand matches the ship line's official record.
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 1px solid #000; background: #fff; padding: 0;">
+  <div style="background: #002d62; color: #fff; padding: 10px; display: flex; justify-content: space-between; align-items: center;">
+    <div style="font-weight: bold; font-size: 1.2em;">MAERSK LINE</div>
+    <div style="font-size: 0.8em;">B/L No: <span data-bracket="start" data-for="ocean-bl">]</span>MAE-9988776655</div>
+  </div>
+  <div style="padding: 20px; font-size: 0.85em;">
+    <p><strong>Shipper:</strong> Global Coffee Exporters<br>
+    <strong>Vessel:</strong> MAERSK MC-KINNEY<br>
+    <strong>Cargo:</strong> 200 Bags Arabica Coffee</p>
+    <div data-verify-line="ocean-bl" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;">
+      verify:maersk.com/bl/v/9988776655 <span data-bracket="end" data-for="ocean-bl">]</span>
+    </div>
+  </div>
+</div>
+
 
 ## Data Visible After Verification
 

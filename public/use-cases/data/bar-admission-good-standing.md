@@ -7,6 +7,14 @@ slug: "bar-admission-good-standing"
 tags: ["legal", "attorney", "bar-association", "good-standing", "license", "professional"]
 ---
 
+## What is a Good-Standing Letter?
+
+Just because someone has a law degree doesn't mean they are allowed to practice law today. They might have been suspended for stealing client money or disbarred for ethics violations.
+
+A **Certificate of Good Standing** is the "Live License" for a lawyer. It is issued by the Supreme Court of their state and proves they are active and compliant.
+
+Because attorneys often move between states for specific cases, they must show these letters to foreign judges. A verified letter ensures a "fake lawyer" (identity thief) can't walk into a courtroom and represent a client.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #999; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
   <div style="text-align: center; margin-bottom: 30px; border-bottom: 2px solid #000; padding-bottom: 20px;">
     <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;">SUPREME COURT OF THE STATE OF NEW YORK</div>

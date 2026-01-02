@@ -6,9 +6,32 @@ retention: "1-2 years (consent validity)"
 slug: "open-banking-consent-forms"
 tags: ["open", "banking", "consent", "forms", "financial", "services"]
 ---
-## Data Verified
 
-Customer name, account access scope, third-party app, expiration
+## What is an Open Banking Consent?
+
+When you use a budget app (like Mint) or apply for a loan, you often click "Connect Bank." This uses **Open Banking** to let the app see your transactions.
+
+This digital handshake is invisible. You don't get a receipt. If that app gets hacked 3 years later, how do you prove you *only* gave them permission to "Read Balance" and not "Move Money"?
+
+The **Consent Form** is your verified receipt. It proves exactly **who** you let in, **what** they can see, and **when** the access expires.
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ddd; border-radius: 8px; background: #fff; overflow: hidden;">
+  <div style="background: #004d40; color: #fff; padding: 20px; text-align: center;">
+    <h2 style="margin: 0; font-size: 1.2em;">DATA ACCESS CONSENT</h2>
+  </div>
+  <div style="padding: 25px; font-size: 0.95em;">
+    <p>I, <span data-bracket="start" data-for="open-bank">]</span><strong>SARAH JANE SMITH</strong>, authorize <strong>BudgetPlanner App</strong> to access:</p>
+    <ul>
+      <li>Read-only Transaction History (Last 12 Months)</li>
+      <li>Current Account Balance</li>
+    </ul>
+    <p><strong>Expiration:</strong> March 15, 2027</p>
+    <div data-verify-line="open-bank" style="border-top: 1px dashed #ccc; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;">
+      verify:chase.com/auth/v/992288-BC <span data-bracket="end" data-for="open-bank">]</span>
+    </div>
+  </div>
+</div>
+
 
 ## Data Visible After Verification
 

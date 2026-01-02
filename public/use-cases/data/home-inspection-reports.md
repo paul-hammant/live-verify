@@ -7,6 +7,14 @@ slug: "home-inspection-reports"
 tags: ["real-estate", "home-inspection", "property-condition", "structural-integrity", "ashi-certified", "internachi", "due-diligence"]
 ---
 
+## What is a Home Inspection?
+
+Before you buy a house, you hire an expert to do a "Physical Exam" of the building. The result is a **Home Inspection Report**.
+
+It lists every defect—from a leaky faucet to a cracked foundation. This report is the "Truth Document" used to negotiate the final price of the house.
+
+Fraud is high-stakes here: sellers or dishonest agents sometimes "Delete" the scary pages (like the ones about mold or foundation failure) before sending the PDF to the buyer's bank. Verified hashes protect the **inspector's actual findings**, ensuring the buyer knows exactly what they are moving into.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #2c3e50; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>

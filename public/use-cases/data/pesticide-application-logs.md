@@ -6,9 +6,28 @@ retention: "5-10 years (environmental compliance)"
 slug: "pesticide-application-logs"
 tags: ["pesticide", "application", "logs", "agriculture", "food"]
 ---
-## Data Verified
 
-Applicator name/license, farm owner, field location, chemicals used
+## What is a Pesticide Log?
+
+When a farm sprays chemicals on crops, they must keep a **Pesticide Application Log**. This is the mandatory legal record of exactly what was sprayed, where, and by whom.
+
+It is the "Medical Record" for our food supply.
+
+Food buyers (like Whole Foods) and environmental inspectors use these logs to ensure that a farm isn't using illegal chemicals or "Over-spraying" near a river. Fraud happens when a farm "scrubs" a log to hide the use of a banned pesticide. Verified hashes turn these paper logs into an immutable digital anchor, ensuring the food we eat is safe.
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', monospace; border: 1px solid #000; background: #fff; padding: 20px;">
+  <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
+    <h2 style="margin: 0; text-transform: uppercase;">PESTICIDE LOG</h2>
+  </div>
+  <div style="font-size: 0.9em;">
+    <p><strong>Farm:</strong> <span data-bracket="start" data-for="pest-log">]</span>Sunny Acres (Field 42)<br>
+    <strong>Chemical:</strong> Roundup Ultra (EPA #524-475)</p>
+    <div data-verify-line="pest-log" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-size: 0.8em; color: #555; text-align: center;">
+      verify:sunnyacres.farm/logs/v/2026-042 <span data-bracket="end" data-for="pest-log">]</span>
+    </div>
+  </div>
+</div>
+
 
 ## Data Visible After Verification
 

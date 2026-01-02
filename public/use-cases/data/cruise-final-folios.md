@@ -7,6 +7,14 @@ slug: "cruise-final-folios"
 tags: ["cruise", "folio", "onboard-account", "travel-expense", "vacation-receipt", "carnival", "royal-caribbean"]
 ---
 
+## What is a Cruise Folio?
+
+When you disembark from a cruise ship, you receive a **Final Guest Folio**. It is a detailed list of every dollar you spent onboard: from the "Business Internet Package" to the "Midnight Margaritas."
+
+For business travelers, the "Folio" is a nightmare to expense. They must "Scrub" the personal fun (drinks/spa) from the legitimate business costs (internet/conference fees).
+
+Fraud happens when employees edit their folio to hide personal spending or to inflate business costs. Verified hashes allow a company's finance department to see the **un-altered line items**, ensuring that the company only pays for the work-related parts of the trip.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #1a237e; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>

@@ -7,6 +7,14 @@ slug: "cashiers-checks-money-orders"
 tags: ["banking", "payment", "cashiers-check", "money-order", "fraud-prevention", "real-estate-closing", "guaranteed-funds"]
 ---
 
+## What is a Cashier's Check?
+
+A **Cashier's Check** is a "Guaranteed Check" written by the bank itself, not by a person. Because the bank takes the money from the sender's account *immediately*, the check is supposedly "as good as cash."
+
+Because people trust them, they are the #1 tool for scammers. Fraudsters create high-quality fake checks to buy cars on Craigslist or to send "overpayments" to victims.
+
+The seller thinks the check is real, hands over the car keys, and then discovers 3 days later that the check was a forgery. Verified hashes allow a seller to scan the check at the curb and see "VERIFIED OUTSTANDING" on the bank's own website *before* handing over the keys.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 1px solid #999; background: #fdfdfd; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
   <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px;">
     <div style="font-weight: bold; font-size: 1.2em; color: #003366;">WELLS FARGO BANK, N.A.</div>

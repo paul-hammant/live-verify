@@ -7,6 +7,14 @@ slug: "commercial-general-liability"
 tags: ["cgl", "insurance-policy", "liability", "contractor-insurance", "risk-management", "commercial-insurance"]
 ---
 
+## What is a CGL Policy?
+
+**Commercial General Liability (CGL)** is the "Slip and Fall" insurance for a business. It protects a company if they are sued for bodily injury or property damage (e.g., a contractor accidentally burns down a client's garage).
+
+The **Declarations Page** is the 1-page summary showing the "Limits" (e.g., $2,000,000 per occurrence).
+
+Business owners must show these verified limits to win contracts. Fraudsters often "Inflate" their limits on a PDF (changing $500k to $2M) to qualify for big jobs they aren't actually insured for.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #1a237e; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
   <div style="background: #1a237e; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>

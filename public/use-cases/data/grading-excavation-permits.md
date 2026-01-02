@@ -7,6 +7,14 @@ slug: "grading-excavation-permits"
 tags: ["construction", "grading-permit", "excavation-safety", "erosion-control", "swppp", "geotechnical", "public-works"]
 ---
 
+## What is a Grading Permit?
+
+If a developer wants to move a large amount of dirt (to flatten a hill or build a foundation), they must get a **Grading Permit** from the city.
+
+This isn't just about dirt; it's about **Stability**. If a hill is graded incorrectly, it can cause a mudslide that destroys the neighbors' homes. The permit ensures a "Geotechnical Engineer" has verified that the soil is safe to move.
+
+"Midnight Grading" is a common crime where developers move dirt illegally over a weekend to avoid city fees or safety rules. Verified permits allow neighbors to scan the notice on the fence and see the **verified volume of dirt** allowed by the city.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 3px solid #ff9800; background: #fffde7; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #ff9800; color: #fff; padding: 15px; text-align: center; display: flex; align-items: center; justify-content: center;">
     <div style="font-size: 2em; margin-right: 15px;">🚜</div>

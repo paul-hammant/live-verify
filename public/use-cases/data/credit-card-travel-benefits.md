@@ -7,6 +7,14 @@ slug: "credit-card-travel-benefits"
 tags: ["credit-card", "travel-insurance", "amex", "chase-sapphire", "trip-delay", "rental-car-coverage", "travel-perks"]
 ---
 
+## What is a Travel Benefit Letter?
+
+High-end credit cards (like Amex Platinum or Chase Sapphire) come with "Hidden" insurance. They cover your rental car damage, your hotel if your flight is cancelled, and your medical bills abroad.
+
+The **Coverage Letter** is the proof you show to a rental agent in Ireland or a hospital in Mexico.
+
+Rental agents often try to force you to buy their expensive $30/day insurance by claiming your card "isn't real" or "doesn't cover this country." A verified letter from the bank's own domain ends the argument instantly, saving travelers thousands of dollars.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; border-radius: 12px; background: linear-gradient(135deg, #1a1a1a 0%, #4a4a4a 100%); color: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.3); overflow: hidden;">
   <div style="padding: 25px; display: flex; justify-content: space-between; align-items: flex-start;">
     <div>

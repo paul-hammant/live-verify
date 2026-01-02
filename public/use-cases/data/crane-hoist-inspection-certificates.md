@@ -7,6 +7,14 @@ slug: "crane-hoist-inspection-certificates"
 tags: ["crane-safety", "hoist-inspection", "construction-safety", "osha-compliance", "lifting-equipment", "heavy-machinery"]
 ---
 
+## What is a Crane Inspection?
+
+A massive construction crane can lift 1,000 tons. If a cable snaps or a bolt shears off, it can destroy an entire city block and kill dozens of people.
+
+Because the stakes are so high, every crane must be professionally inspected every year. The **Annual Inspection Certificate** is the "Safety Sticker" found in the crane cab.
+
+"Pencil Whipping" is a common industry fraud where an operator fakes an inspection to keep working during a busy season. Verified hashes allow a site foreman or an OSHA inspector to scan the certificate and prove the crane actually passed a load test yesterday.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 4px solid #fbc02d; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #fbc02d; color: #000; padding: 15px; text-align: center;">
     <h2 style="margin: 0; text-transform: uppercase;">HEAVY LIFT INSPECTION SERVICES</h2>

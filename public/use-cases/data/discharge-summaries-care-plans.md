@@ -7,6 +7,17 @@ slug: "discharge-summaries-care-plans"
 tags: ["healthcare-logistics", "patient-discharge", "care-coordination", "hospital-records", "medication-reconciliation", "continuum-of-care"]
 ---
 
+## What is a Discharge Summary?
+
+When a patient leaves the hospital, they receive a **Discharge Summary**. This is the "User Manual" for their recovery.
+
+It lists:
+1.  **The Diagnosis:** "Why were you here?"
+2.  **The Meds:** "What new drugs must you take starting today?"
+3.  **The Plan:** "When is your next surgery?"
+
+This paper is the #1 tool for preventing "Medical Errors" when a patient moves to a nursing home or goes back to their primary doctor. Verified summaries ensure that a patient (or a family member) doesn't accidentally "Edit" the medication list, which can be fatal.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #0277bd; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>

@@ -7,6 +7,14 @@ slug: "certificates-of-origin-trade"
 tags: ["customs", "international-trade", "tariff", "chamber-of-commerce", "logistics", "export-import"]
 ---
 
+## What is a Certificate of Origin?
+
+A **Certificate of Origin** is the "Nationality Passport" for a shipment of goods. It is issued by a **Chamber of Commerce** and certifies that the products (like precision lathe gears) were truly "Born" in a specific country.
+
+Customs officers around the world use these documents to decide which shipments to inspect and how much tax to charge.
+
+Because these documents save companies millions in "Preferential Tariffs," they are high-value targets for forgery. Scammers create fake Chamber stamps and letterheads to trick customs agents into allowing duty-free entry for sanctioned or high-tariff goods.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 2px solid #000; background: #fff; padding: 0;">
   <div style="background: #000; color: #fff; padding: 10px; display: flex; justify-content: space-between; align-items: center;">
     <div style="font-weight: bold; font-size: 1.1em;">GREATER LONDON CHAMBER OF COMMERCE</div>

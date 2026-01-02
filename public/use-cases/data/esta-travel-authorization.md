@@ -7,6 +7,14 @@ slug: "esta-travel-authorization"
 tags: ["immigration", "esta", "visa-waiver-program", "cbp", "travel-authorization", "international-travel", "border-security"]
 ---
 
+## What is an ESTA?
+
+If you are a citizen of a "Visa Waiver" country (like the UK, Japan, or France), you don't need a formal visa to visit the US for vacation. Instead, you need an **ESTA (Electronic System for Travel Authorization)**.
+
+This is a digital permit that links your passport to the US border system. You apply online, and if approved, you print out a **Confirmation Notice**.
+
+Airlines are fined thousands of dollars for every passenger they let onto a plane without a valid ESTA. If your paper is fake or altered, you will be stopped at the airport. Verified hashes allow the airline to see the "Approved" status on the government's domain in seconds.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <div style="background: #002d62; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
     <div>

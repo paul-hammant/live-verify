@@ -7,6 +7,17 @@ slug: "art-appraisals-valuations"
 tags: ["art", "appraisal", "valuation", "insurance", "tax", "uspap"]
 ---
 
+## What is an Art Appraisal?
+
+An **Art Appraisal** is a formal document where an expert (at Sotheby's, Christie's, or a private firm) determines how much a painting is worth.
+
+This value is used for:
+1.  **Insurance:** So you know how much to pay in premiums.
+2.  **Taxes:** If you donate the art or leave it in a will.
+3.  **Loans:** If you want to borrow money using the art as collateral.
+
+High-end art is a target for money laundering. Verified appraisals ensure that a $1,000 painting isn't being "appraised" at $1,000,000 to trick a bank into giving a massive loan.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #ccc; background: #fffef5; padding: 40px; box-shadow: 2px 2px 15px rgba(0,0,0,0.05);">
   <div style="text-align: center; border-bottom: 1px solid #000; padding-bottom: 20px; margin-bottom: 30px;">
     <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;">SOTHEBY'S ADVISORY</div>

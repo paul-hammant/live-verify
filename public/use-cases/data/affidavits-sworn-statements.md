@@ -7,6 +7,14 @@ slug: "affidavits-sworn-statements"
 tags: ["affidavits", "sworn", "statements", "financial", "legal", "notary", "court"]
 ---
 
+## What is an Affidavit?
+
+An **Affidavit** is a written promise. It is a document where you swear under penalty of perjury that certain facts are true (e.g., "I am the same person named in that Deed").
+
+To prevent people from lying, affidavits must be **Notarized**. A Notary Public checks your ID and watches you sign.
+
+In the "Robo-Signing" scandal of 2008, banks forged millions of affidavits to foreclose on homes illegally. Verification ensures that the Notary *actually* witnessed the signing and that the text hasn't been changed since.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 2px 2px 8px rgba(0,0,0,0.1);">
   <div style="text-align: center; margin-bottom: 20px;">
     <h3 style="text-decoration: underline; text-transform: uppercase;">AFFIDAVIT OF IDENTITY</h3>

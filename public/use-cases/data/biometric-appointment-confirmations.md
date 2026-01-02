@@ -7,6 +7,14 @@ slug: "biometric-appointment-confirmations"
 tags: ["immigration", "visa", "uscis", "biometrics", "appointment", "asc"]
 ---
 
+## What is a Biometric Notice?
+
+When you apply for a US Green Card or Work Permit, you must go to a federal building to have your fingerprints and "biometrics" taken.
+
+The **Appointment Notice (I-797C)** is your "Entry Ticket." Without this specific piece of paper, the guards at the Application Support Center (ASC) will not let you into the building.
+
+Fraudsters often create fake notices to get into secure government facilities or to trick employers into thinking their immigration case is "moving" when it isn't.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0;">
   <div style="background: #f4f4f4; padding: 15px; border-bottom: 1px solid #ccc; display: flex; align-items: center;">
     <div style="width: 40px; height: 40px; background: #999; border-radius: 50%; margin-right: 15px; display: flex; align-items: center; justify-content: center; font-size: 0.7em; color: #fff;">USCIS</div>

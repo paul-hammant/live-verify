@@ -6,9 +6,28 @@ retention: "Permanent (estate records)"
 slug: "notarial-wills"
 tags: ["notarial", "wills", "notary", "services"]
 ---
-## Data Verified
 
-Testator name, will provisions, witness names, notary name, notary commission number, notary certification, notary seal, execution date
+## What is a Notarial Will?
+
+A **Notarial Will** is a legal document that dictates how your assets are distributed after you die. Unlike a "simple" will, a notarial will is signed in front of a **Notary Public** who verifies your identity and sanity.
+
+This is the highest level of legal protection for an estate.
+
+Fraud is a major risk in inheritance: family members often forge "New Wills" using a dead relative's stationery to steal assets from the true heirs. Verified hashes bind the **entire text of the will** to the notary's official journal, making it impossible to "swap pages" or forge a signature after the person has died.
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #000; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="text-align: center; margin-bottom: 30px;">
+    <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">LAST WILL AND TESTAMENT</h2>
+  </div>
+  <div style="font-size: 1.1em; line-height: 1.8;">
+    <p>I, <span data-bracket="start" data-for="will">]</span><strong>JOHN JACOB DOE</strong>, being of sound mind, hereby declare this to be my Last Will...</p>
+    <p><strong>Article I:</strong> I bequeath my primary residence at 123 Maple St to my daughter, Sarah Jane Smith.</p>
+    <div data-verify-line="will" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;">
+      verify:notary-check.gov/wills/v/DOE-992288 <span data-bracket="end" data-for="will">]</span>
+    </div>
+  </div>
+</div>
+
 
 ## Data Visible After Verification
 

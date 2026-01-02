@@ -7,6 +7,14 @@ slug: "employment-authorization-ead"
 tags: ["immigration", "ead", "form-i-766", "work-authorization", "uscis", "i-9-compliance", "employment-eligibility"]
 ---
 
+## What is a Work Permit (EAD)?
+
+An **Employment Authorization Document (EAD)** is the ID card issued by the US government giving a non-citizen the legal right to work.
+
+For a business owner, this card is high-stakes. If they hire someone with a fake card, they can be fined thousands of dollars. The problem? High-quality fakes are everywhere.
+
+OCR-to-hash turns the **Physical Card** into a live link to the USCIS database. This allows a small business owner to see if the card has been "Revoked" (e.g., if the person's visa was cancelled) in seconds, without needing expensive government software.
+
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
   <div style="background: #002d62; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
     <div>

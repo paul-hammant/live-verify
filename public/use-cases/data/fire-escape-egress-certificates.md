@@ -7,6 +7,14 @@ slug: "fire-escape-egress-certificates"
 tags: ["fire-escape-safety", "egress-inspection", "structural-integrity", "fire-marshal", "building-safety", "load-testing", "municipal-code"]
 ---
 
+## What is a Fire Escape Certificate?
+
+Old brick apartment buildings often have black steel "Fire Escapes" on the outside. If these stairs rust or the bolts loosen, they can collapse when a crowd of people tries to escape a fire.
+
+In cities like Boston and New York, building owners must hire a **Professional Engineer (PE)** every 5 years to "Load Test" the stairs and issue a **Certificate of Structural Integrity**.
+
+Fraud is dangerous here: some landlords edit an old 2010 certificate to read "2026" to hide that the fire escape is a rusted death trap. Verified hashes allow any tenant or firefighter to scan the tag and see the **verified safety status** from the city's domain.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 4px solid #b71c1c; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #b71c1c; color: #fff; padding: 15px; text-align: center;">
     <h2 style="margin: 0; text-transform: uppercase;">FIRE ESCAPE SAFETY BUREAU</h2>

@@ -7,6 +7,14 @@ slug: "business-interruption-claims"
 tags: ["business-interruption", "commercial-insurance", "claims", "lost-revenue", "forensic-accounting", "disaster-recovery"]
 ---
 
+## What is a Business Interruption Claim?
+
+If a restaurant burns down or a factory is hit by a hurricane, the owner doesn't just lose the building; they lose the **income** they would have made while closed.
+
+**Business Interruption (BI)** insurance pays for that lost profit. Because calculating "what could have been" is hard, specialized **Forensic Accountants** are hired to audit the company's tax returns and sales data.
+
+The result is an **Adjustment Summary**. Because these documents often trigger multimillion-dollar insurance payouts, they are high-value targets for "PDF alteration" by unscrupulous owners or brokers.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #1a237e; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
   <div style="background: #1a237e; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>

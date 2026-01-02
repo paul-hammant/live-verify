@@ -7,6 +7,14 @@ slug: "data-sharing-agreements"
 tags: ["data-governance", "dsa", "research-agreement", "gdpr-compliance", "privacy-policy", "academic-collaboration", "legal-contract"]
 ---
 
+## What is a Data Sharing Agreement?
+
+When universities or hospitals share sensitive data (like DNA sequences or patient records) for research, they sign a **Data Sharing Agreement (DSA)**.
+
+This contract is the "Legal Firewall." It says: "You can use this data for cancer research, but you are **not** allowed to sell it or try to identify the people in it."
+
+Ethics violations are common: researchers sometimes use data for a different purpose than they promised. Verified hashes allow compliance officers to verify the **exact authorized use** of a dataset, protecting patient privacy across international borders.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
   <div style="text-align: center; margin-bottom: 30px; border-bottom: 2px solid #000; padding-bottom: 10px;">
     <div style="font-weight: bold; font-size: 1.2em;">DATA SHARING & USE AGREEMENT</div>

@@ -7,6 +7,14 @@ slug: "environmental-certifications"
 tags: ["leed", "breeam", "well-certified", "green-building", "sustainability-audit", "real-estate-valuation"]
 ---
 
+## What is a LEED Certificate?
+
+**LEED** (Leadership in Energy and Environmental Design) is the world's most famous "Green Building" award. If a building is **LEED Gold** or **Platinum**, it means it has verified high performance in energy saving, water efficiency, and air quality.
+
+For a real estate owner, a LEED plaque in the lobby is worth **millions of dollars**. Large corporations (like Google or Salesforce) often refuse to lease any office that isn't verified green.
+
+Fraud happens when a developer uses a "Fake Plaque" or an outdated certificate to hide that the building's green systems (like solar or high-tech glass) were never actually installed. OCR-to-hash ensures the plaque on the wall is a live link to the USGBC's official record.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 5px solid #004d40; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="background: #004d40; color: #fff; padding: 20px; text-align: center;">
     <h2 style="margin: 0; letter-spacing: 2px;">U.S. GREEN BUILDING COUNCIL</h2>

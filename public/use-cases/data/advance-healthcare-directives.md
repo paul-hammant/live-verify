@@ -7,6 +7,16 @@ slug: "advance-healthcare-directives"
 tags: ["advance", "healthcare", "directives", "living", "will", "medical", "power", "attorney"]
 ---
 
+## What is an Advance Directive?
+
+An **Advance Healthcare Directive** (or Living Will) is a legal document where you tell doctors what to do if you can't speak for yourself (e.g., you are in a coma).
+
+It typically covers:
+1.  **The Agent:** "Who decides for me?" (Medical Power of Attorney).
+2.  **The Wishes:** "Do I want a ventilator? CPR? Artificial feeding?"
+
+Doctors in the ER need to see this *immediately* to know whether to resuscitate. Paper copies are often lost, locked away, or outdated, leading to unwanted treatments or agonizing delays.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Arial', sans-serif; border: 2px solid #000; background: #fff; padding: 30px;">
   <div style="text-align: center; border-bottom: 2px solid #000; margin-bottom: 20px;">
     <h2 style="margin: 0;">ADVANCE HEALTH CARE DIRECTIVE</h2>

@@ -6,9 +6,34 @@ retention: "Training period + 1-3 years"
 slug: "personal-trainer-verification"
 tags: ["personal", "trainer", "verification", "safety", "service"]
 ---
-## Data Verified
 
-Trainer name, photo, certifications, background check, insurance, gym affiliation
+## What is Trainer Verification?
+
+When you hire a personal trainer or yoga instructor, you are often alone with them in a private gym or your own home.
+
+The **Verified Badge** is the trainer's proof that they:
+1.  **Are Certified:** (e.g., via NASM or ACE) proving they won't accidentally injure you.
+2.  **Are Insured:** If you are hurt during a session, there is a verified policy to cover your medical bills.
+3.  **Are Vetted:** They have passed a recent criminal background check.
+
+Personal safety is the main concern here. OCR-to-hash allows a client to scan the trainer's badge at the door and see a green "ACTIVE" status from the certification body, ensuring the person is a real professional and not a predator with a fake uniform.
+
+<div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+  <div style="background: #000; color: #fff; padding: 15px; text-align: center;">
+    <h2 style="margin: 0; text-transform: uppercase; font-size: 1.1em;">VERIFIED TRAINER</h2>
+  </div>
+  <div style="padding: 20px; display: flex;">
+    <div style="width: 80px; height: 100px; background: #eee; margin-right: 15px; display: flex; align-items: center; justify-content: center; font-size: 0.7em;">[PHOTO]</div>
+    <div style="flex-grow: 1;">
+      <strong>Trainer:</strong> <span data-bracket="start" data-for="fit">]</span>Sarah J. Miller<br>
+      <strong>Cert:</strong> NASM-CPT #992288<br>
+      <div data-verify-line="fit" style="border-top: 1px dashed #999; margin-top: 10px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.75em;">
+        verify:nasm.org/v/992288 <span data-bracket="end" data-for="fit">]</span>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 ## Data Visible After Verification
 

@@ -7,6 +7,16 @@ slug: "annuity-pricing-certifications"
 tags: ["actuarial", "annuity", "pricing", "insurance", "solvency", "compliance"]
 ---
 
+## What is an Annuity Rate Certification?
+
+An **Annuity** is a financial product where you give an insurance company a lump sum, and they promise to pay you a monthly income for the rest of your life.
+
+The **Rate Certification** is the document where the company's actuary (math expert) swears to the government that:
+1.  **The Rate is Safe:** The company isn't promising 8% if they can only earn 4% (which would bankrupt them).
+2.  **The Math is Real:** They have tested the rates against 1,000 different economic scenarios.
+
+Verification ensures that the "High Interest Rate" an agent promises you on their tablet matches what the company officially filed with the state.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 1px solid #333; background: #fff; padding: 40px; box-shadow: 2px 2px 12px rgba(0,0,0,0.1);">
   <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 30px;">
     <div style="font-weight: bold; font-size: 1.1em; color: #1a237e;">PRUDENTIAL FINANCIAL SERVICES</div>

@@ -7,6 +7,17 @@ slug: "freight-bills-carrier-invoices"
 tags: ["logistics", "transportation", "freight-bill", "carrier-invoice", "accounts-payable", "audit-trail", "supply-chain-finance"]
 ---
 
+## What is a Freight Bill?
+
+A **Freight Bill** is the invoice from a trucking company to a shipper. It's the bill for moving goods from point A to point B.
+
+It isn't just about the price; it records:
+1.  **Fuel Surcharges:** Extra money for gas.
+2.  **Detention Fees:** Penalties for making the driver wait too long.
+3.  **The Proof:** Linking the bill to the original Bill of Lading.
+
+"Logistics Phishing" is a billion-dollar crime. Hackers take over a trucker's email and send "Updated Invoices" with a different bank account. Verified hashes prevent this by linking the invoice to the carrier's **official domain**, ensuring the money goes to the real driver.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 1px solid #000; background: #fff; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
   <div style="display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
     <div style="font-weight: bold; font-size: 1.2em;">SCHNEIDER NATIONAL</div>

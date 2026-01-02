@@ -7,6 +7,14 @@ slug: "hotel-loyalty-program-statements"
 tags: ["hotel-loyalty", "marriott-bonvoy", "hilton-honors", "point-balance", "status-match", "travel-perks", "hospitality-finance", "wealth-verification"]
 ---
 
+## What is a Points Statement?
+
+If you stay at hotels often, your **Loyalty Points** (like Marriott Bonvoy or Hilton Honors) are a form of "Travel Currency." For elite travelers, their balance can be worth **$20,000 or more**.
+
+The **Member Statement** is the proof of your "Hotel Wealth" and your Elite Status (e.g., Ambassador or Diamond).
+
+You need this verified proof for a **"Status Match"**—where a rival hotel gives you free suites and breakfast just to win your business. Fraudsters often "Photoshop" their status to get free perks they didn't earn. Verified hashes allow hotel groups to see the **un-altered point balance** directly from the brand's domain.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #002d62; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>

@@ -7,6 +7,14 @@ slug: "drug-testing-anti-doping"
 tags: ["anti-doping", "wada", "drug-test", "clean-sport", "athlete-integrity", "doping-control", "forensic-lab"]
 ---
 
+## What is a Doping Record?
+
+In professional sports, athletes are constantly tested for performance-enhancing drugs.
+
+The **Doping Control Record** is the proof of a clean test. It is the "Moral Passport" for an athlete.
+
+Because a "Positive Test" can end a multimillion-dollar career, fraud is a high risk. Shady labs or athletes sometimes "Swap" samples or forge "Negative" certificates to keep competing. Verified hashes allow sports federations and sponsors to see the **un-altered result** directly from the WADA-accredited lab's domain.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #000; color: #fff; padding: 20px; text-align: center; display: flex; align-items: center; justify-content: center;">
     <div style="width: 40px; height: 40px; background: #fff; color: #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-right: 15px;">WADA</div>

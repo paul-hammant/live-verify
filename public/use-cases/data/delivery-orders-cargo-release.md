@@ -7,6 +7,17 @@ slug: "delivery-orders-cargo-release"
 tags: ["logistics", "shipping", "port-authority", "cargo-release", "delivery-order", "warehousing", "terminal-operations"]
 ---
 
+## What is a Delivery Order?
+
+When a shipping container arrives at a port, the terminal operator won't just give it to any trucker. They need a **Delivery Order (DO)**.
+
+This is the "Golden Ticket" that authorizes the release of the cargo. It proves:
+1.  **Freight is Paid:** The ship line has been settled.
+2.  **Customs is Cleared:** The government has released the goods.
+3.  **The Bearer is Right:** The trucker has the authority to take it.
+
+Cargo theft via "Fictitious Pickup" is a huge problem. Thieves use forged paper DOs to trick port clerks into giving them $200,000 containers. Verified hashes allow the port to check the DO against the broker's domain in seconds, stopping theft at the gate.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 1px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <div style="background: #002d62; color: #fff; padding: 10px; display: flex; justify-content: space-between; align-items: center;">
     <div style="font-weight: bold; font-size: 1.2em;">EXPEDITORS INTERNATIONAL</div>

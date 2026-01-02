@@ -7,6 +7,15 @@ slug: "builder-warranties"
 tags: ["real-estate", "home-warranty", "new-construction", "structural-warranty", "builder", "homeowner"]
 ---
 
+## What is a Builder Warranty?
+
+When you buy a brand-new home, the builder provides a **Structural Warranty** (often called a 2-10 warranty). It is a legal promise that:
+1.  **Year 1:** The craftsmanship is good.
+2.  **Year 2:** The pipes and wires won't fail.
+3.  **Year 10:** The foundation won't crack or collapse.
+
+This warranty is a valuable financial asset that stays with the house for 10 years, even if you sell it. Verified warranties ensure that builders (or sellers) aren't lying about coverage to close a deal on a poorly built house.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 4px solid #1a365d; background: #fff; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #1a365d; padding-bottom: 20px; margin-bottom: 25px;">
     <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 2px; color: #1a365d;">2-10 HOME BUYERS WARRANTY</div>

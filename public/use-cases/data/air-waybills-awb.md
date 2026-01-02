@@ -7,6 +7,15 @@ slug: "air-waybills-awb"
 tags: ["air", "waybill", "awb", "logistics", "freight", "iata", "cargo"]
 ---
 
+## What is an Air Waybill?
+
+An **Air Waybill (AWB)** is the legal contract between a shipper and an airline. It serves three vital roles:
+1.  **Receipt:** Proof the airline received the goods.
+2.  **Contract of Carriage:** The legal agreement defining where the goods are going and who pays.
+3.  **Guide:** It travels with the cargo and tells ground crews how to handle it (e.g., "Keep Frozen").
+
+Unlike a passenger ticket which is digital-first, AWBs are often physically attached to the freight pallets in a plastic pouch.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 1px solid #000; background: #fff; padding: 0;">
   <div style="border-bottom: 2px solid #000; padding: 5px; display: flex; justify-content: space-between;">
     <div style="font-weight: bold; font-size: 1.2em;">016-12345678</div>

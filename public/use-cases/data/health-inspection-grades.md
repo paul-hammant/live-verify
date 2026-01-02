@@ -7,6 +7,14 @@ slug: "health-inspection-grades"
 tags: ["food-safety", "health-grade", "nyc-health-grade", "restaurant-inspection", "public-health", "sanitation-rating", "consumer-trust"]
 ---
 
+## What is a Health Grade?
+
+In many cities (like New York or Los Angeles), every restaurant must display a **Sanitary Grade** (A, B, or C) in the front window.
+
+This grade is based on a surprise visit from a city inspector who checks for "Critical Violations" like vermin, improper refrigeration, or cross-contamination.
+
+"Grade Fraud" is common: a restaurant whose grade dropped to a "C" yesterday might keep their old "A" card in the window to trick customers. Verified hashes allow any diner to scan the card and see the **verified, real-time points** from the city's database.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1); overflow: hidden;">
   <div style="background: #002d62; color: #fff; padding: 15px; text-align: center;">
     <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">NYC HEALTH DEPARTMENT</h2>

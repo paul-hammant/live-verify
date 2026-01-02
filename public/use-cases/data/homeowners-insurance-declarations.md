@@ -7,6 +7,17 @@ slug: "homeowners-insurance-declarations"
 tags: ["homeowners-insurance", "dec-page", "mortgage-compliance", "dwelling-coverage", "hazard-insurance", "escrow-audit", "real-estate-closing"]
 ---
 
+## What is a Dec Page?
+
+Your homeowners insurance policy is a dense book, but the **Declarations Page** (or "Dec Page") is the 1-page summary that matters most.
+
+It proves to your bank that your house is protected against fire, wind, and theft. It lists:
+1.  **The Limits:** How much the company will pay to rebuild ($450k).
+2.  **The Deductible:** How much you pay out of pocket ($1,000).
+3.  **The Bank:** Who gets paid first (the Mortgagee).
+
+Fraud happens when owners "edit" the PDF to show a higher limit to satisfy a bank's loan requirements while actually paying for a cheaper, low-limit policy. Verified hashes allow lenders to see the **live coverage status** on the insurer's domain instantly.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #007bff; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="background: #007bff; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>

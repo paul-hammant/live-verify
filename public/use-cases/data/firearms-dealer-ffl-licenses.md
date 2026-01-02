@@ -7,7 +7,15 @@ slug: "firearms-dealer-ffl-licenses"
 tags: ["ffl", "atf", "gun-shop-license", "firearms-dealer", "second-amendment", "public-safety", "compliance", "federal-firearms-license"]
 ---
 
-<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 3px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+## What is an FFL License?
+
+In the USA, you cannot sell firearms as a business without a **Federal Firearms License (FFL)** from the ATF.
+
+This license is the "Security Key" for the entire industry. If a dealer in Texas wants to ship a rifle to a buyer in New York, the law **requires** them to ship it to another FFL dealer. Before shipping, the Texas dealer must verify the New York dealer's license is real.
+
+Scammers often create fake FFL PDF papers to trick online sellers into shipping guns directly to their homes (illegal "Ghost Dealing"). Verified hashes allow any seller to scan the license and see the "ACTIVE" status on the `atf.gov` domain in seconds.
+
+<div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 3px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
   <div style="background: #000; color: #fff; padding: 15px; text-align: center; display: flex; align-items: center; justify-content: center;">
     <div style="font-size: 1.5em; margin-right: 15px;">⚖️</div>
     <div>

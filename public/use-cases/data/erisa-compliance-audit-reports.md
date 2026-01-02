@@ -7,6 +7,14 @@ slug: "erisa-compliance-audit-reports"
 tags: ["erisa", "pension-audit", "dol-compliance", "form-5500", "actuarial-audit", "fiduciary-responsibility", "employee-benefits"]
 ---
 
+## What is an ERISA Audit?
+
+If a company has a 401(k) or pension plan with more than 100 people, the government (Department of Labor) requires an independent audit to ensure the money is actually there. This is governed by a law called **ERISA**.
+
+The **Compliance Audit Report** is the auditor's "Clean Bill of Health." It states that the company isn't "borrowing" from the pension fund and that all employees are getting the matches they were promised.
+
+If a company is in financial trouble, they might "Edit" this report to hide a funding shortfall from their workers and the government. Verified hashes ensure the auditor's true findings match the federal filing.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #333; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="text-align: right; margin-bottom: 30px;">
     <div style="font-weight: bold; font-size: 1.2em;">MILLIMAN ACTUARIAL CONSULTING</div>

@@ -7,6 +7,14 @@ slug: "directors-statutory-liability-pension"
 tags: ["pension-trustee", "erisa-liability", "fiduciary-insurance", "pension-fund-governance", "statutory-liability", "risk-management"]
 ---
 
+## What is Pension Trustee Insurance?
+
+The people who manage a company's pension fund (the **Trustees**) are legally responsible for the employees' retirement money. If they make a bad investment or a mistake in the paperwork, they can be sued *personally*.
+
+**Pension Trustee Liability (PTL)** insurance protects these individuals.
+
+Because these claims can hit 20 years after a person retires, the paperwork must be permanent. OCR-to-hash turns the static certificate in a trustee's home safe into a live, cryptographically trusted link back to the insurance carrier, ensuring they stay protected even decades later.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 2px solid #2c3e50; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="background: #2c3e50; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>

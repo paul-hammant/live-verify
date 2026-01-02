@@ -7,6 +7,14 @@ slug: "ethical-approval-irb-iacuc"
 tags: ["irb-approval", "iacuc", "research-ethics", "human-subjects", "animal-welfare", "clinical-research", "academic-integrity"]
 ---
 
+## What is Ethical Approval?
+
+Before a scientist can start a study involving humans (like testing a new drug) or animals, they must get permission from an **Ethics Committee** (called an **IRB** or **IACUC**).
+
+The committee reviews the plan to ensure people aren't being exploited and animals aren't being mistreated. The **Notice of Ethical Approval** is the formal "OK" to start the research.
+
+"Ethics Forgery" is a major scandal in science: sometimes researchers fabricate these letters to get their papers published or to bypass university rules. Verified hashes ensure the study's approval is backed by the university's official ethics office.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
   <div style="text-align: left; margin-bottom: 30px; border-bottom: 2px solid #1a237e; padding-bottom: 10px;">
     <div style="font-weight: bold; font-size: 1.2em; color: #1a237e;">STANFORD UNIVERSITY - RESEARCH COMPLIANCE</div>

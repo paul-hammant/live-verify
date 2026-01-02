@@ -7,6 +7,14 @@ slug: "house-air-waybills-hawb"
 tags: ["logistics", "air-freight", "hawb", "freight-forwarding", "cargo-security", "trade-finance", "supply-chain"]
 ---
 
+## What is a House Air Waybill (HAWB)?
+
+If a small business ships a box of lenses from Switzerland to the US, they don't talk to the airline directly. They talk to a **Freight Forwarder** (like DHL or Kuehne+Nagel).
+
+The forwarder gives them a **House Air Waybill (HAWB)**. It is the contract for that specific box. The forwarder then groups 100 boxes together into one "Master" shipment for the plane.
+
+Fraud is common in the "Long Tail" of logistics: un-vetted forwarders sometimes create fake HAWBs to trick banks into releasing "Trade Financing" for goods that were never actually shipped. Verified hashes prove the forwarder's claim matches their official system.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 1px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <div style="background: #000; color: #fff; padding: 10px; display: flex; justify-content: space-between; align-items: center;">
     <div style="font-weight: bold; font-size: 1.2em;">KUEHNE+NAGEL</div>

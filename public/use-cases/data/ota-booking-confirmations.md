@@ -6,9 +6,30 @@ retention: "Travel + 1-3 years"
 slug: "ota-booking-confirmations"
 tags: ["booking", "confirmations", "travel", "hospitality"]
 ---
-## Data Verified
 
-Traveler name, booking details, OTA booking reference, supplier confirmation
+## What is an OTA Confirmation?
+
+When you book a hotel or flight through a site like **Booking.com, Expedia, or Priceline**, you receive a **Booking Confirmation PDF**. This is your "Proof of Purchase."
+
+The problem? These PDFs are trivial to edit. A fraudster can "edit" a $100 room to look like a $1,000 suite to trick an employer into a larger reimbursement. Or, a scam "Booking Site" might send you a fake PDF for a room that doesn't actually exist.
+
+Verified hashes turn the **Static PDF** into a live link to the OTA's domain, proving that the room is paid for and the price on the page is the **truth**.
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #003580; border-radius: 8px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="background: #003580; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+    <div style="font-weight: bold; font-size: 1.4em;">Booking.com</div>
+    <div style="font-size: 0.8em; font-weight: bold;">CONFIRMATION #: <span data-bracket="start" data-for="ota">]</span>992288776</div>
+  </div>
+  <div style="padding: 25px; font-size: 0.95em;">
+    <p><strong>Guest:</strong> SARAH JANE SMITH</p>
+    <p><strong>Hotel:</strong> The Grand Paris<br>
+    <strong>Amount Paid:</strong> € 1,200.00 (Verified)</p>
+    <div data-verify-line="ota" style="border-top: 1px dashed #ccc; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;">
+      verify:booking.com/v/992288776 <span data-bracket="end" data-for="ota">]</span>
+    </div>
+  </div>
+</div>
+
 
 ## Data Visible After Verification
 

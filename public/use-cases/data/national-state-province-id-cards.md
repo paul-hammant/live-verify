@@ -95,6 +95,34 @@ The **Named Individual** benefits from verification.
 
 **Privacy Salt:** ABSOLUTELY CRITICAL. National identity data is the most sensitive data a government holds. The hash MUST be salted to prevent "Mass Mapping" of the population by hackers or foreign intelligence.
 
+## Photo Return: Defeating Sibling Lending and High-Grade Clones
+
+Verification responses can include the **issuer's authoritative photo** of the credential holder — not just "valid/invalid" but the actual face on file.
+
+**Why This Matters:**
+
+| Attack | Without Photo Return | With Photo Return |
+|--------|---------------------|-------------------|
+| **Sibling lending** | Bouncer squints at blurry card photo, waves through | Verification returns DMV's crisp photo — clear mismatch to person presenting |
+| **High-grade clone** | Fake card with swapped photo, text hashes correctly | Text verifies, but returned photo doesn't match the face on the cloned card |
+
+The cloner can perfectly replicate the card's text and even its holographic features. But they **cannot forge what the server sends back**. When the bouncer's phone displays the government's photo and it doesn't match the person in front of them, the fraud is exposed.
+
+**The Doppelganger Attack (The "Woman in Cabin 10" Problem)**
+
+Sophisticated fraudsters don't just clone cards — they search social media for facial lookalikes, recruit a doppelganger, then steal the victim's card details. The clone card shows the doppelganger's (similar) face, and when verified, the returned photo is "close enough" to pass casual inspection.
+
+*This attack — finding lookalikes via social media facial matching — was dramatized in "The Woman in Cabin 10" (2025), where antagonists recruited a doppelganger to impersonate a billionaire.*
+
+**Countermeasure: Geo-Anomaly Detection**
+
+States can monitor verification request patterns:
+- Card verified in London at 10am, then Los Angeles at 11am? Flagged.
+- Card verified 50 times in one day across different venues? Flagged.
+- Card verified in a jurisdiction 1,000 miles from holder's registered address repeatedly? Flagged.
+
+Geo-checking won't stop a single clone use, but it detects systematic abuse and can trigger card revocation and investigation before major fraud occurs.
+
 ## Competition vs. NFC Chip Readers
 
 | Feature | OCR-to-Hash | NFC (eID / Chip) | Scanned PDF / Image |

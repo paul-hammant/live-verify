@@ -7,6 +7,14 @@ slug: "fireworks-display-permits"
 tags: ["fireworks-permit", "pyrotechnics", "fire-marshal", "public-safety", "explosives-permit", "event-safety", "compliance"]
 ---
 
+## What is a Fireworks Permit?
+
+A professional fireworks show uses "High Explosives" (Class 1.3G). To launch them, a company must get a **Public Display Permit** from the State Fire Marshal.
+
+The permit defines the "Fallout Zone"—the exact distance (e.g., 300 feet) that people must be kept away from the launch site.
+
+Fraud is high-risk here: an amateur might edit a "Consumer Sparkler" permit to hide that they are setting off massive professional shells near a crowd. Verified hashes allow police and fire officials to scan the permit at the launch site and see the **verified shell count and safety radius** instantly.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 3px solid #d32f2f; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #d32f2f; color: #fff; padding: 15px; text-align: center; display: flex; align-items: center; justify-content: center;">
     <div style="font-size: 2em; margin-right: 15px;">🎆</div>

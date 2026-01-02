@@ -7,6 +7,14 @@ slug: "birth-death-certificates"
 tags: ["birth-certificate", "death-certificate", "vital-records", "identity", "probate", "ancestry"]
 ---
 
+## What is a Vital Record?
+
+**Birth and Death Certificates** are the "Breeding Documents" of identity. Almost every other ID (Passport, Driver's License, Social Security Card) is issued based on a Birth Certificate.
+
+Because they are so powerful, they are the #1 target for identity thieves. A criminal can use the birth certificate of a child who died young to "become" that person, opening bank accounts and taking out loans.
+
+Verified vital records allow banks and agencies to check the **Live Status** of the person (e.g., "This birth certificate is real, but the person is marked as DECEASED in our database") to stop identity theft cold.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 3px double #1a365d; background: #fdfcf0; padding: 40px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); position: relative; border-radius: 4px;">
   <div style="text-align: center; border-bottom: 2px solid #1a365d; padding-bottom: 15px; margin-bottom: 25px;">
     <div style="font-weight: bold; font-size: 1.3em; letter-spacing: 2px; color: #1a365d;">COMMONWEALTH OF PENNSYLVANIA</div>

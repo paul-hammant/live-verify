@@ -7,6 +7,14 @@ slug: "freight-forwarder-insurance"
 tags: ["logistics", "freight-forwarding", "cargo-liability", "errors-and-omissions", "marine-insurance", "tt-club", "risk-management"]
 ---
 
+## What is Forwarder Insurance?
+
+A **Freight Forwarder** is like a "Travel Agent for Cargo." They don't own the ships or planes, but they manage the entire trip. If they book the wrong flight or forget to file customs papers, they can be sued for the lost value of the goods.
+
+**Freight Forwarder Liability** insurance covers these "Errors & Omissions" (E&O).
+
+Big shippers (like Apple or Samsung) will not hire a forwarder without verified proof of a $500k+ policy. Fraudsters often "Photoshop" their insurance papers to look like they have high limits to win big contracts. Verified hashes turn the certificate into a live, trusted link to the insurer.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #0d47a1; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="background: #0d47a1; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>

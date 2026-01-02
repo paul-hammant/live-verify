@@ -7,6 +7,14 @@ slug: "delivery-driver-verification"
 tags: ["logistics", "courier", "personal-safety", "amazon-delivery", "ups", "fedex", "home-security", "vulnerable-recipients"]
 ---
 
+## What is a Driver ID Badge?
+
+With the rise of "Gig Work" (like Amazon Flex), the person delivering your package is often driving their own personal car and wearing a simple vest.
+
+The **Driver Badge** is their "Security Key." It proves they are an authorized worker currently on an active route.
+
+Scammers often wear fake high-visibility vests to get inside apartment buildings or gated communities to "case" homes or steal packages. OCR-to-hash allows a doorman or resident to scan the badge and see a green "ON-DUTY" status from the company's domain, stopping "Fake Courier" home invasions.
+
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
   <div style="background: #232f3e; color: #fff; padding: 15px; text-align: center; display: flex; align-items: center; justify-content: center;">
     <div style="font-size: 1.5em; margin-right: 10px;">📦</div>

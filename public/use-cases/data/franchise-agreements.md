@@ -7,6 +7,14 @@ slug: "franchise-agreements"
 tags: ["franchise-agreement", "fdd", "item-19", "business-opportunity", "corporate-compliance", "ftc-rule", "franchisor-verification"]
 ---
 
+## What is a Franchise Disclosure?
+
+If you want to open a McDonald's or a 7-Eleven, you must receive a **Franchise Disclosure Document (FDD)**. This is a massive 200-page book where the brand must tell you the truth about how much money their stores actually make.
+
+The most important part is **Item 19**, where the company lists verified profits.
+
+Fraud is high-stakes: some "Salesmen" edit the FDD to hide lawsuits or to inflate the profits to trick people into buying a failing franchise. Verified hashes ensure the **financial claims** in your copy match the official version filed with the government.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
   <div style="text-align: center; margin-bottom: 30px; border-bottom: 2px solid #000; padding-bottom: 10px;">
     <div style="font-weight: bold; font-size: 1.4em; color: #000;">7-ELEVEN, INC.</div>

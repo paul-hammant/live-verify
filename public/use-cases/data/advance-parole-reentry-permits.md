@@ -7,6 +7,14 @@ slug: "advance-parole-reentry-permits"
 tags: ["advance", "parole", "reentry", "permits", "immigration", "visa", "uscis"]
 ---
 
+## What is Advance Parole?
+
+Immigrants waiting for a Green Card (or DACA recipients) cannot just fly home for a visit. If they leave the US without permission, their application is considered "abandoned" and they are banned from returning.
+
+**Advance Parole (Form I-512)** is the permission slip to travel. It is a simple sheet of paper with a photo.
+
+If a traveler loses this paper, or if an airline agent in Paris thinks it looks "fake," the traveler is stranded abroad. Verifying this document instantly is literally a life-changing capability.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fdfdfd; padding: 0;">
   <div style="background: #eef; padding: 15px; border-bottom: 1px solid #ccc; display: flex; align-items: center;">
     <div style="width: 50px; height: 50px; background: #ccc; border-radius: 50%; margin-right: 15px; display: flex; align-items: center; justify-content: center; font-size: 0.8em; text-align: center;">[Seal]</div>

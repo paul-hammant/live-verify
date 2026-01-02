@@ -7,6 +7,14 @@ slug: "easement-agreements"
 tags: ["real-estate", "property-rights", "easement-grant", "utility-access", "land-use", "title-search", "legal-description"]
 ---
 
+## What is an Easement?
+
+An **Easement** is a legal right to use someone else's land for a specific purpose. The most common type is a **Utility Easement**, where the city or a power company has the right to run pipes or wires through your backyard.
+
+This "Right" is permanent and stays with the land, even if the house is sold.
+
+Fraud happens when sellers "Hide" easements from buyers by deleting pages from legal documents. A verified easement grant ensures the buyer knows exactly where they are **not** allowed to build a pool or a fence, preventing multimillion-dollar trespassing lawsuits.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #000; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 25px;">
     <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">GRANT OF EASEMENT</h2>

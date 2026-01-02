@@ -7,6 +7,14 @@ slug: "contingency-insurance-events"
 tags: ["contingency-insurance", "event-cancellation", "non-appearance", "special-events", "lloyds", "risk-management"]
 ---
 
+## What is Event Insurance?
+
+If a major music festival (like Glastonbury) or a Broadway show is cancelled due to a hurricane, a pandemic, or the lead singer losing their voice, the promoter stands to lose **millions of dollars**.
+
+**Contingency Insurance** (or Event Cancellation Insurance) covers these losses.
+
+Promoters must show this verified proof of insurance to stadium owners and lenders before any equipment moves onto the field. Fraud is common: promoters sometimes edit an old policy to "fake" coverage for a high-risk event to get a lower venue rate.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 2px solid #002366; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="background: #002366; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>

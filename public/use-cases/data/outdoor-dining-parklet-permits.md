@@ -6,9 +6,35 @@ retention: "Permit season + 3-5 years"
 slug: "outdoor-dining-parklet-permits"
 tags: ["outdoor", "dining", "parklet", "permits", "event", "temporary"]
 ---
-## Data Verified
 
-Restaurant name, location, seating area, barriers, ADA compliance, health dept
+## What is a Parklet Permit?
+
+During the pandemic, many cities allowed restaurants to build "Parklets"—wooden platforms in parking spots for outdoor dining. To do this, the restaurant must have an **Outdoor Dining Permit**.
+
+This permit is a **Safety License**. It proves:
+1.  **Barriers:** The parklet has heavy steel or concrete barriers to protect diners from cars.
+2.  **ADA:** The platform has a ramp for wheelchairs.
+3.  **Rent:** The restaurant is paying the city for the used parking space.
+
+Illegal parklets are a major hazard. Verified permits allow neighbors and city workers to scan the card in the window and see the **verified safety scope** instantly.
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 3px solid #ff9800; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="background: #ff9800; color: #fff; padding: 15px; text-align: center; display: flex; align-items: center; justify-content: center;">
+    <div style="font-size: 2em; margin-right: 15px;">🍷</div>
+    <div>
+      <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">PARKLET PERMIT</h2>
+      <div style="font-size: 0.85em; opacity: 0.9;">CITY OF SAN FRANCISCO • PUBLIC WORKS</div>
+    </div>
+  </div>
+  <div style="padding: 25px;">
+    <p><strong>Establishment:</strong> <span data-bracket="start" data-for="park">]</span>The Spicy Taco Joint<br>
+    <strong>Location:</strong> 123 Bleecker St (2 Spots Authorized)</p>
+    <div data-verify-line="park" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;">
+      verify:sfpublicworks.org/v/PARK-9922 <span data-bracket="end" data-for="park">]</span>
+    </div>
+  </div>
+</div>
+
 
 **Permit Types:** Various permit subtypes may exist depending on jurisdiction and specific use.
 

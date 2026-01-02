@@ -7,6 +7,14 @@ slug: "calibration-certificates-instruments"
 tags: ["calibration", "metrology", "quality-control", "nist", "iso-17025", "testing-equipment"]
 ---
 
+## What is a Calibration Certificate?
+
+A **Calibration Certificate** is the "Birth Certificate" for a precision tool. It proves that a wrench, a pressure gauge, or a thermometer actually measures what it says it does.
+
+Think of it this way: If a doctor uses an uncalibrated thermometer, they might miss a fever. If a mechanic uses an uncalibrated torque wrench, a wheel might fall off a plane.
+
+The certificate proves the tool was tested against a **National Standard** (like NIST). Verification ensures that a factory isn't using "expired" or "fake" certificates to pass safety audits.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #455a64; background: #fff; padding: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <div style="background: #455a64; color: #fff; padding: 15px; display: flex; justify-content: space-between; align-items: center;">
     <div>

@@ -7,6 +7,14 @@ slug: "consular-processing-appointments"
 tags: ["immigration", "visa-interview", "nvc", "embassy", "consular-processing", "travel-logistics", "visa-appointment"]
 ---
 
+## What is a Visa Interview Notice?
+
+Getting a US Green Card requires a face-to-face interview at a US Embassy (like the one in Montreal or London).
+
+The **Appointment Notice** is your "Admission Ticket." Security guards at the embassy perimeter will not even let you into the queue without this specific piece of paper.
+
+Fraudsters often create fake notices to get people into high-security zones or to trick employers into thinking their visa is "in progress." OCR-to-hash allows guards to verify the **authenticity of the paper** at the gate, ensuring that only scheduled, verified applicants enter the secure zone.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #002d62; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
     <div>

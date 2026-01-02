@@ -7,6 +7,14 @@ slug: "homeowners-renters-claims"
 tags: ["property-claim", "homeowners-insurance", "renters-insurance", "damage-estimate", "adjuster-report", "restoration-audit", "fraud-prevention"]
 ---
 
+## What is a Property Claim?
+
+If your kitchen floods or a tree falls on your roof, you file a **Property Claim** with your insurance company. An adjuster visits and creates a **Repair Estimate**.
+
+This estimate is the "Checkbook" for the repairs. It tells the contractor exactly what the insurance company has agreed to pay for (e.g., "$12,450 for the kitchen").
+
+Fraud is common: dishonest contractors sometimes "edit" the PDF to add $5,000 in non-existent damage to get more money from the insurer. Verified hashes protect the **adjuster's original math**, ensuring that the money goes toward real repairs and not into a scammer's pocket.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="background: #d32f2f; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>

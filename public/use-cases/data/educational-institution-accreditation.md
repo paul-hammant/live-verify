@@ -7,6 +7,17 @@ slug: "educational-institution-accreditation"
 tags: ["university-accreditation", "higher-education", "regional-accreditor", "che-accredited", "diploma-mill-prevention", "academic-standards"]
 ---
 
+## What is University Accreditation?
+
+In the US and many other countries, the government doesn't "Grade" universities. Instead, private non-profit boards (Accreditors) visit the campus to verify that the school meets high standards for faculty, curriculum, and finances.
+
+**Regional Accreditation** is the "Gold Standard." Without it:
+1.  **Degrees** are often ignored by major employers.
+2.  **Credits** won't transfer to other universities.
+3.  **Financial Aid** (like Pell Grants) cannot be used.
+
+"Diploma Mills" often create fake accreditation certificates to trick students. Verified hashes ensure the school's status is backed by the real accrediting board's domain.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 5px double #1a365d; background: #fdfcf0; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); position: relative;">
   <div style="text-align: center; margin-bottom: 30px;">
     <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 2px; color: #1a365d;">MIDDLE STATES COMMISSION ON HIGHER EDUCATION</div>

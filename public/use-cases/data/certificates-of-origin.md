@@ -7,6 +7,14 @@ slug: "certificates-of-origin"
 tags: ["trade-compliance", "customs", "export", "import", "logistics", "tariff-benefits", "origin-verification"]
 ---
 
+## What is a Certificate of Origin?
+
+A **Certificate of Origin (CO)** is a document used in international trade to prove exactly where a product was manufactured.
+
+It's not just for geography—it's for **Taxes**. If a company ships microprocessors from the USA to South Korea, they might pay 0% duty (tax) if they have a verified CO. If they don't have one, they might pay 10% or more.
+
+Fraudsters often "Launder" products—shipping goods from a high-tax country (like China) to a neutral country (like Vietnam) and creating a fake CO to avoid paying US or EU duties.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; background: #fff; padding: 0;">
   <div style="background: #333; color: #fff; padding: 10px; text-align: center;">
     <h3 style="margin: 0; text-transform: uppercase;">CERTIFICATE OF ORIGIN</h3>

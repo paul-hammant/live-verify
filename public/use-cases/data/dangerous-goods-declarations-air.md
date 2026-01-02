@@ -7,6 +7,14 @@ slug: "dangerous-goods-declarations-air"
 tags: ["dangerous-goods", "air-cargo", "iata-dgr", "hazmat", "aviation-safety", "shipper-declaration", "cargo-security"]
 ---
 
+## What is a DG Declaration?
+
+You cannot just put a box of Lithium batteries or chemicals on a plane. By international law, you must file a **Dangerous Goods (DG) Declaration**.
+
+This document tells the pilot and the ground crew: "This box is dangerous. If it leaks, use *this* specific fire extinguisher."
+
+Shady shippers often "Mis-declare" cargo—calling dangerous batteries "Toys" on the paper form to save money or bypass safety rules. This has caused multiple plane crashes. Verified hashes ensure the safety data on the paper pallet matches the certified packer's official record.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 2px solid #d32f2f; background: #fff; padding: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <div style="background: #d32f2f; color: #fff; padding: 10px; text-align: center;">
     <h2 style="margin: 0; text-transform: uppercase; font-size: 1.2em;">SHIPPER'S DECLARATION FOR DANGEROUS GOODS</h2>

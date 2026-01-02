@@ -7,6 +7,14 @@ slug: "film-completion-bonds"
 tags: ["film-finance", "completion-guarantee", "production-insurance", "film-completion-bond", "entertainment-law", "investor-protection"]
 ---
 
+## What is a Film Completion Bond?
+
+If an independent film (like a $12M epic) runs out of money or the director gets sick halfway through, the investors could lose everything. A **Completion Bond** is the "Guarantee" that the movie will be finished and delivered.
+
+If the movie goes over budget, the **Bonder** pays the difference. In extreme cases, the Bonder can even "Fire the Director" and take over the set to finish the film.
+
+No bank will lend money to a film set without seeing a verified bond. Fraudsters often use fake bond papers to trick naive investors into funding "Vapor-ware" movies.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 4px solid #000; background: #fff; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 25px;">
     <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 2px;">FILM FINANCES, INC.</div>

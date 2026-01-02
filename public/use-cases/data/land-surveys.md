@@ -6,9 +6,32 @@ retention: "Permanent (property records)"
 slug: "land-surveys"
 tags: ["land", "surveys", "real", "estate", "property"]
 ---
-## Data Verified
 
-Property owner name, surveyor name and license number, property address, legal description (metes and bounds, lot/block, or parcel number), survey date, survey type, corner monuments and markers, boundary dimensions, easements and encroachments, flood zone determination (if included), certification statement, surveyor's seal and signature.
+## What is a Land Survey?
+
+A **Land Survey** is the official map of your property. It is created by a licensed professional who visits the site with lasers and GPS to mark the exact boundaries of your land.
+
+It is the "Ground Truth" for your biggest asset. It proves:
+1.  **Encroachments:** "Is my neighbor's fence 2 feet on my land?"
+2.  **Easements:** "Where is the city allowed to dig pipes?"
+3.  **Building Lines:** "Can I build a pool here?"
+
+Fraud happens when developers "Edit" a survey to hide an encroachment or to make a small lot look larger to a buyer. Verified hashes protect the **Surveyor's original measurements**, ensuring the "Dirt" you are buying is exactly what is on the paper.
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #000; background: #fff; padding: 25px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
+    <h2 style="margin: 0; font-size: 1.2em;">OFFICIAL BOUNDARY SURVEY</h2>
+  </div>
+  <div style="font-size: 0.9em;">
+    <p><strong>Property:</strong> <span data-bracket="start" data-for="survey">]</span>LOT 42, BLOCK 7, SKYLINE HEIGHTS</p>
+    <p><strong>Dimensions:</strong> 100.00' x 150.00' (Verified)<br>
+    <strong>Encroachments:</strong> NONE FOUND</p>
+    <div data-verify-line="survey" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;">
+      verify:miller-surveying.com/v/SKYLINE-42 <span data-bracket="end" data-for="survey">]</span>
+    </div>
+  </div>
+</div>
+
 
 **Survey Types:**
 - **Boundary Survey:** Establishes property lines and corners

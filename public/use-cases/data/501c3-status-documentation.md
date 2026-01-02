@@ -7,6 +7,17 @@ slug: "501c3-status-documentation"
 tags: ["501c3", "status", "documentation", "charitable", "non-profit", "IRS"]
 ---
 
+## What is a 501(c)(3) Letter?
+
+A **501(c)(3) Determination Letter** is the official document from the IRS granting a non-profit organization tax-exempt status. It is the "Golden Ticket" of the charity world.
+
+Without this letter:
+1.  **Donors** cannot deduct their contributions.
+2.  **Foundations** will not give grants.
+3.  **Vendors** (like TechSoup or Microsoft) will not give non-profit discounts.
+
+Charities often have to fax, email, or mail this letter dozens of times a year to prove their legitimacy.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', serif; border: 1px solid #ccc; background: #fff; padding: 40px;">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 20px; margin-bottom: 30px;">
     <div style="font-weight: bold; font-size: 1.2em;">Internal Revenue Service</div>

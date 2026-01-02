@@ -7,6 +7,14 @@ slug: "building-permits"
 tags: ["construction", "building-permit", "city-planning", "inspection", "contractor", "home-improvement"]
 ---
 
+## What is a Building Permit?
+
+A **Building Permit** is the city's official "Yes" to a construction project. It ensures that the work (like a new pool or a second story) meets safety codes and zoning laws.
+
+By law, these permits must be **posted in the window** so that neighbors and city inspectors can see them.
+
+Fraud is common in the construction industry: homeowners or shady contractors often use a "Photoshop" permit to hide illegal work from the city or to trick a bank into releasing loan funds for a project that isn't actually approved.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 3px solid #fbc02d; background: #fffde7; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #fbc02d; color: #000; padding: 15px; text-align: center;">
     <h2 style="margin: 0; text-transform: uppercase;">CITY OF MIAMI</h2>

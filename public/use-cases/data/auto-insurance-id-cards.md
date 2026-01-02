@@ -7,6 +7,17 @@ slug: "auto-insurance-id-cards"
 tags: ["auto", "insurance", "card", "proof-of-insurance", "real-id", "compliance"]
 ---
 
+## What is an Auto ID Card?
+
+An **Auto Insurance ID Card** is the "Proof of Insurance" you keep in your glovebox or digital wallet. In almost every US state, driving without one is illegal and can lead to your car being impounded.
+
+The card proves three things:
+1.  **Who is insured:** The named driver.
+2.  **What is insured:** The specific vehicle (VIN).
+3.  **The Timeframe:** That the policy hasn't expired.
+
+Because people often cancel their insurance right after printing the card, police and DMV agents need a way to verify that the policy is **live** and hasn't been terminated for non-payment.
+
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 1px solid #000; background: #fff; padding: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
   <div style="background: #000; color: #fff; padding: 10px; display: flex; justify-content: space-between; align-items: center;">
     <div style="font-weight: bold;">GEICO</div>

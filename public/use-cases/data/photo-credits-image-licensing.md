@@ -6,9 +6,32 @@ retention: "5-20 years (license duration)"
 slug: "photo-credits-image-licensing"
 tags: ["photo", "credits", "image", "licensing", "media", "publishing"]
 ---
-## Data Verified
 
-Photographer name, licensee, usage rights, payment details
+## What is an Image License?
+
+When a magazine or website uses a professional photograph (like a celebrity portrait or a nature shot), they must pay the photographer for an **Image License**.
+
+The **License Certificate** is the legal proof that they have the right to use the image. It lists:
+1.  **Usage Rights:** "Digital only" vs "Print Cover."
+2.  **Duration:** "Valid for 1 year."
+3.  **The Price:** Proving the photographer was paid.
+
+Fraud happens when a site uses a stolen image and fabricates a fake "License PDF" to trick copyright lawyers into leaving them alone. Verified hashes from the photographer's domain ensure the **usage rights are real**, protecting creators from "Copyright Laundering."
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 25px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
+    <h2 style="margin: 0; font-size: 1.2em;">GETTY IMAGES LICENSE</h2>
+  </div>
+  <div style="font-size: 0.95em;">
+    <p><strong>Licensee:</strong> <span data-bracket="start" data-for="photo">]</span>The Daily Planet<br>
+    <strong>Image ID:</strong> #99228877-X (Metropolis Skyline)</p>
+    <p><strong>Rights:</strong> Commercial / Editorial / Worldwide</p>
+    <div data-verify-line="photo" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;">
+      verify:gettyimages.com/v/99228877 <span data-bracket="end" data-for="photo">]</span>
+    </div>
+  </div>
+</div>
+
 
 ## Data Visible After Verification
 

@@ -7,6 +7,16 @@ slug: "airline-compensation-letters"
 tags: ["airline", "compensation", "eu261", "delay", "cancellation", "insurance"]
 ---
 
+## What is an Airline Compensation Letter?
+
+Under regulations like **EU261** (Europe) or similar laws in Canada/UK, airlines must pay cash compensation (up to €600) for delays or cancellations within their control.
+
+However, airlines often deny claims citing "Extraordinary Circumstances" (e.g., Weather, ATC strikes). When this happens, passengers need a formal **Determination Letter** to:
+1.  **Claim Travel Insurance:** Insurers won't pay until the airline officially refuses.
+2.  **Sue:** Small claims courts need proof of the airline's final position.
+
+Verifying these letters prevents passengers from faking denials to defraud insurers ("Double Dipping").
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; border: 1px solid #ccc; background: #fff; padding: 40px;">
   <div style="text-align: right; margin-bottom: 30px;">
     <div style="font-weight: bold; font-size: 1.2em; color: #002244;">BRITISH AIRWAYS</div>

@@ -7,6 +7,14 @@ slug: "aviation-insurance"
 tags: ["aviation", "aircraft", "insurance", "hull", "liability", "compliance", "faa"]
 ---
 
+## What is Aviation Insurance?
+
+Insuring a jet is not like insuring a car. A single Gulfstream can be worth $75 million, and if it crashes into a building, the liability can be billions.
+
+The **Certificate of Insurance (COI)** is the high-stakes document that pilots must show to airport towers and customs agents around the world.
+
+If a pilot presents a fake certificate to land in London or Dubai, they are flying "uninsured" for hundreds of millions of dollars. Because there is no global database of plane insurance, officials rely on these printed papers. OCR-to-Hash provides the digital bridge they need.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Helvetica', Arial, sans-serif; border: 2px solid #002244; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
   <div style="background: #002244; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>

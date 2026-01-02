@@ -1,129 +1,93 @@
 ---
-title: "Auto insurance policies and declarations pages"
+title: "Auto Insurance Declarations Pages"
 category: "Personal Lines Insurance"
 volume: "Medium"
 retention: "Policy term + 7 years (claims)"
 slug: "auto-insurance-policies"
-tags: ["auto", "insurance", "policies", "personal", "lines"]
+tags: ["auto", "insurance", "policies", "personal", "lines", "dec-page"]
 ---
+
+## What is a Declarations Page?
+
+An insurance policy can be 50 pages of legal jargon. The **Declarations Page** (or "Dec Page") is the one-page summary that actually matters. It lists:
+1.  **Limits:** How much the company will pay (e.g., $100k/$300k).
+2.  **Deductibles:** How much you pay out of pocket ($500).
+3.  **Drivers:** Exactly who is covered.
+
+Lenders (for car loans) and landlords often require a copy of the Dec Page. Fraudsters often "Photoshopping" these pages to show higher coverage limits than they actually have to win contracts or satisfy loan requirements.
+
+<div style="max-width: 600px; margin: 24px auto; font-family: Arial, sans-serif; border: 1px solid #333; background: #fff; padding: 30px;">
+  <div style="display: flex; justify-content: space-between; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px;">
+    <div style="font-weight: bold; font-size: 1.2em;">PROGRESSIVE</div>
+    <div style="text-align: right; font-size: 0.8em;">POLICY DECLARATIONS<br>Renewal: Mar 15, 2026</div>
+  </div>
+
+  <div style="font-size: 0.9em; line-height: 1.4;">
+    <p><strong>Named Insured:</strong> <span data-bracket="start" data-for="autodec">]</span>John Doe<br>
+    456 Oak Lane, Austin, TX 78701</p>
+
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+      <tr style="background: #eee;">
+        <th style="text-align: left; padding: 5px;">Coverage</th>
+        <th style="text-align: right; padding: 5px;">Limits</th>
+      </tr>
+      <tr>
+        <td style="padding: 5px;">Bodily Injury Liability</td>
+        <td style="text-align: right; padding: 5px;">$ 250,000 / $ 500,000</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px;">Property Damage</td>
+        <td style="text-align: right; padding: 5px;">$ 100,000</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px;">Collision Deductible</td>
+        <td style="text-align: right; padding: 5px;">$ 500</td>
+      </tr>
+    </table>
+
+    <p><strong>Vehicle:</strong> 2024 Ford F-150 (VIN ...9922)</p>
+  </div>
+
+  <div data-verify-line="autodec" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;">
+    verify:progressive.com/v/dec/998877 <span data-bracket="end" data-for="autodec">]</span>
+  </div>
+</div>
+
 ## Data Verified
 
-Policyholder name, address, VIN, named drivers, coverage limits, deductibles, premium
-
-**Policy Forms:** Different policy forms and endorsements may apply.
+Named insured, policy limits, deductibles, VIN, effective dates, premium amount, lienholder name.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`progressive.com`) and the policy status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-- **Cancelled** - Policy cancelled before expiration
-- **Non-Renewed** - Policy expired and not renewed
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Active** — Policy is current.
+- **Cancelled** — Policy terminated.
+- **Pending** — Renewal in process.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
-
-**Proof of Coverage:** Verify coverage is active when needed for compliance or access.
-
-**Claims Support:** Confirm policy details when filing claims.
-
-**Coverage Confirmation:** Verify coverage terms match expectations after purchase.
-
-**Third-Party Presentation:** Provide verified proof to landlords, lenders, or employers.
-
-**Renewal Verification:** Confirm renewal was processed and coverage continues.
+The **Policyholder** benefits from verification.
+- **Loan Compliance:** Proving to a bank that they have the required "Full Coverage" for their car loan.
+- **Job Requirements:** Gig workers (Uber/DoorDash) proving they have the correct insurance tier.
 
 ## Third-Party Use
 
-**Regulators and Oversight Bodies**
+**Lenders (Auto Finance)**
+**Collateral Protection:** Banks can scan the Dec Page provided by the borrower to ensure the "Loss Payee" is correctly listed and the deductibles aren't too high.
 
-Regulatory compliance and oversight:
+**Attorneys (Personal Injury)**
+**Demand Letters:** When an accident happens, lawyers need to know the *true* policy limits. Verification prevents "Ghost Limits" fraud where a driver claims to have $1M in coverage but only has the state minimum.
 
-**Systematic Hash Receipt:** Receive hashes in bulk for regulatory oversight.
+## Competition vs. ACORD Certificates
 
-**Audit Verification:** Verify documents during routine or targeted audits.
+| Feature | OCR-to-Hash | ACORD 25 (Standard) |
+| :--- | :--- | :--- |
+| **Trust** | **Cryptographic.** Bound to insurer. | **Visual.** Prone to easy editing. |
+| **Speed** | **Instant.** Scan and verify. | **Slow.** Requires calling the broker. |
+| **Integrity** | **Binds Content.** | **Binds Nothing.** Just a template. |
 
-**Compliance Monitoring:** Monitor issuer compliance with documentation requirements.
+**Why OCR wins here:**
+The Dec Page is the source of truth. ACORD forms are just summaries written by brokers. OCR-to-hash allows the **Source Document** to be verified directly against the **Carrier**, cutting out the middleman and the potential for "Summary Errors."
 
-**Investigation Support:** Verify documents during fraud or compliance investigations.
-
-**Consumer Protection:** Verify consumer-facing documents for protection enforcement.
-
-**Lenders and Financial Institutions**
-
-Credit underwriting and risk assessment:
-
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
-
-## Verification Architecture
-
-**The Auto insurance policies and declarations pages Fraud Problem**
-
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Coverage Inflation:** Inflating coverage limits or adding non-existent coverage
-- **Backdating:** Creating policies with false effective dates
-- **Ghost Policies:** Fabricated policies from non-existent insurers
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
-
-**Issuer Types**
-
-Who issues these documents and operates verification endpoints?
-
-**Banks and Credit Unions:** Depository institutions for account documents.
-
-**Investment Firms:** Brokerage and investment management firms.
-
-**Insurance Companies:** Insurers for policy and claims documents.
-
-**Accounting Firms:** CPAs and audit firms for financial statements.
-
-**System Integration**
-
-Insurance verification integrates with industry systems:
-
-**Policy Administration Systems:** Core insurance systems generate verification hashes at policy issuance.
-
-**ACORD Standards:** Insurance industry data standards could include verification fields.
-
-**State Insurance Databases:** Regulators maintain databases for systematic hash receipt.
-
-**Agent Portals:** Insurance agents access verification for client service.
-
-## Rationale
-
-Prevents fake auto insurance common in uninsured motorist fraud. Domain binding verifies insurer legitimacy. State regulatory compliance (SR-22 verification for high-risk drivers). Prevents coverage inflation in accidents. Multi-page declarations and policy terms benefit from per-page verification. Critical for traffic enforcement where police verify insurance at stops and accidents.

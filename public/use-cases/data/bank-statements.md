@@ -7,6 +7,14 @@ slug: "bank-statements"
 tags: ["bank", "statement", "finance", "mortgage", "kyc", "aml"]
 ---
 
+## What is a Bank Statement?
+
+A **Bank Statement** is the ultimate proof of wealth. It shows exactly how much money you have and where it came from.
+
+Lenders use them to approve mortgages. Governments use them to approve Visas. Fraudsters use "Inspect Element" or Photoshop to turn a $500 balance into $50,000 in seconds.
+
+Verifying a bank statement directly against the bank's domain ensures that the balance on the page is the **truth**, without forcing the user to give their bank password to a risky "data scraping" app.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <div style="background: #004a99; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>

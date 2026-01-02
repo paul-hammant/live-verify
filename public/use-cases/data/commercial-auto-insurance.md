@@ -7,6 +7,14 @@ slug: "commercial-auto-insurance"
 tags: ["commercial-auto", "fleet-insurance", "logistics", "dot-compliance", "trucking", "hired-non-owned"]
 ---
 
+## What is Fleet Insurance?
+
+When a company owns 100 trucks or vans, they don't buy 100 individual car insurance policies. They buy a **Commercial Auto Fleet Policy**.
+
+Every driver carries a **Proof of Insurance** card. Unlike personal insurance, these cards must list the company's **DOT Number** and often include a federal **MCS-90** filing which guarantees the public is protected if a heavy truck causes an accident.
+
+Fraud is common: fleet owners often "delete" expensive-to-insure trucks from their policy to save money, but keep the old paper cards in the glovebox to fool DOT inspectors. OCR-to-hash allows an inspector to verify that **this specific VIN** is still covered today.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #004d40; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="background: #004d40; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>

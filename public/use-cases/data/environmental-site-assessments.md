@@ -7,6 +7,14 @@ slug: "environmental-site-assessments"
 tags: ["environmental", "site-assessment", "esa", "real-estate", "phase-i-esa", "phase-ii-esa", "contamination", "due-diligence"]
 ---
 
+## What is a Phase I ESA?
+
+Before a bank will give a $10 million loan for a commercial building, they need a "Medical Exam" for the land. This is called a **Phase I Environmental Site Assessment (ESA)**.
+
+An expert looks at old maps and walks the site to see if it was ever a gas station, a dry cleaner, or a chemical dump. If they find a "REC" (Recognized Environmental Condition), the property might be worth zero.
+
+Fraud happens when a seller "Deletes" the page of the report that mentions a buried oil tank to trick a bank into approving a loan. Verified hashes protect the **expert's actual findings**, ensuring the bank isn't lending on a toxic liability.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Helvetica', Arial, sans-serif; border: 2px solid #2e7d32; background: #f1f8e9; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #2e7d32; padding-bottom: 15px; margin-bottom: 25px;">
     <div style="font-weight: bold; font-size: 1.3em;">ENVIRO-CONSULT GROUP, LLC</div>

@@ -7,6 +7,17 @@ slug: "home-service-provider-verification"
 tags: ["plumber-verification", "electrician-license", "home-service-safety", "personal-safety", "background-check", "tradesperson-vetting", "home-security"]
 ---
 
+## What is a Tradesperson Badge?
+
+When you hire a plumber or electrician, you are letting a stranger into your private home.
+
+The **Verified Badge** is the worker's digital or physical ID. It proves:
+1.  **Licensure:** They are a real "Master Electrician" and not just an amateur.
+2.  **Insurance:** The company has active liability insurance if they break your house.
+3.  **Safety:** They have passed a recent criminal background check.
+
+"Fake Repairman" scams are a common way for burglars to case a house. OCR-to-hash allows a homeowner to scan the badge at the door and see a green "ACTIVE" status from the state board, ensuring only legitimate professionals enter the home.
+
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
   <div style="background: #1a237e; color: #fff; padding: 15px; text-align: center; display: flex; align-items: center; justify-content: center;">
     <div style="font-size: 1.5em; margin-right: 10px;">🛠️</div>

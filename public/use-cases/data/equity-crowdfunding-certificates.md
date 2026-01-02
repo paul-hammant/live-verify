@@ -7,6 +7,14 @@ slug: "equity-crowdfunding-certificates"
 tags: ["equity-crowdfunding", "startengine", "wefunder", "republic", "securities", "shareholder-certificate", "regulation-cf", "cap-table"]
 ---
 
+## What is a Reg CF Certificate?
+
+In the old days, only rich people could invest in startups. Today, through **Regulation Crowdfunding (Reg CF)**, anyone can buy shares in a "Future Unicorn" for as little as $100.
+
+The **Stock Certificate** is your proof of ownership. It proves you own a tiny piece of a private company (like a robotics startup or a new brewery).
+
+Because these shares aren't traded on the stock market (like Apple or Tesla), they are easy to fake. Scammers often sell "Fake Equity" in hot startups using realistic-looking PDF certificates. Verified hashes allow an investor to prove their ownership to a bank or a secondary buyer instantly.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 4px double #1a237e; background: #fff; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); position: relative;">
   <div style="text-align: center; margin-bottom: 30px;">
     <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 2px;">CERTIFICATE OF STOCK</div>

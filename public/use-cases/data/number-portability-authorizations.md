@@ -6,9 +6,30 @@ retention: "3-7 years (regulatory compliance)"
 slug: "number-portability-authorizations"
 tags: ["number", "portability", "authorizations", "telecommunications"]
 ---
-## Data Verified
 
-Customer name, phone number, previous/new carrier, authorization date
+## What is a Porting Authorization?
+
+When you switch from AT&T to T-Mobile but keep your same phone number, you are "Porting" your number. To do this, you must sign a **Number Portability Authorization (LOA)**.
+
+This document is the "Key" to your digital identity.
+
+**SIM Swapping** is a major crime where hackers forge these authorizations to steal your phone number. Once they have your number, they can reset your bank passwords and steal your money. Verified hashes from the carrier's domain ensure that a "Porting Request" is a **Verified Intent** from the real owner, not a hacker with a fake PDF.
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; background: #fff; padding: 25px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="background: #000; color: #fff; padding: 15px; text-align: center; margin-bottom: 20px;">
+    <h2 style="margin: 0; text-transform: uppercase; font-size: 1.2em;">LETTER OF AGENCY (LOA)</h2>
+    <div style="font-size: 0.8em;">FOR NUMBER PORTABILITY</div>
+  </div>
+  <div style="font-size: 0.95em; line-height: 1.6;">
+    <p>I, <span data-bracket="start" data-for="port">]</span><strong>JOHN JACOB DOE</strong>, authorize the porting of my telephone number <strong>(555) 123-4567</strong> from AT&T to T-Mobile.</p>
+    <p><strong>Account #:</strong> 9988776655<br>
+    <strong>Address:</strong> 123 Maple St, Anytown, USA</p>
+    <div data-verify-line="port" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;">
+      verify:att.com/porting/v/9988776655 <span data-bracket="end" data-for="port">]</span>
+    </div>
+  </div>
+</div>
+
 
 ## Data Visible After Verification
 

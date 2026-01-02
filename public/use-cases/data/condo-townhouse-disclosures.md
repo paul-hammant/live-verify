@@ -7,6 +7,17 @@ slug: "condo-townhouse-disclosures"
 tags: ["real-estate", "hoa", "condo-disclosure", "resale-certificate", "property-management", "special-assessment"]
 ---
 
+## What is a Condo Disclosure?
+
+When you buy a condominium, you aren't just buying a home; you are "marrying" a corporation (the HOA). You need to know if the building is healthy or if it's about to collapse financially.
+
+The **Resale Certificate** or **Disclosure** is the paper that tells the truth:
+1.  **The Dues:** Exactly how much you pay every month.
+2.  **Special Assessments:** "Does every owner owe $20,000 for a new roof next month?"
+3.  **The Rules:** "Are pets or Airbnbs allowed?"
+
+Sellers often "Delete" the scary pages of these reports to trick buyers. Verified disclosures ensure the buyer is seeing the **unfiltered financial truth** from the property manager.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #999; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 25px;">
     <div style="font-weight: bold; font-size: 1.2em;">PREMIER PROPERTY MANAGEMENT, LLC</div>

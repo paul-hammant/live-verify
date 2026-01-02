@@ -7,6 +7,17 @@ slug: "coaching-certifications"
 tags: ["sports-coaching", "certification", "youth-safety", "us-soccer", "safesport", "professional-qualification"]
 ---
 
+## What is a Coaching License?
+
+In professional and youth sports, a **Coaching License** is more than just a proof of technical skill. It is a "Safety Credential."
+
+To get one, a coach must:
+1.  **Pass a Background Check:** Screened against sex-offender and criminal registries.
+2.  **Complete SafeSport Training:** Education on preventing abuse and bullying.
+3.  **Demonstrate Technical Skill:** Tactical knowledge of the sport.
+
+Parents and clubs use these badges to ensure that the adult on the sideline is a "Verified Safe" professional who has met national standards.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 5px solid #004a99; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #004a99; color: #fff; padding: 20px; text-align: center;">
     <h2 style="margin: 0; letter-spacing: 1px;">U.S. SOCCER FEDERATION</h2>

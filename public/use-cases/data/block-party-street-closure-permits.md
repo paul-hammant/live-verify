@@ -7,6 +7,14 @@ slug: "block-party-street-closure-permits"
 tags: ["block-party", "street-closure", "event", "permit", "city", "public-works", "neighbors"]
 ---
 
+## What is a Street Closure Permit?
+
+If you want to have a block party, a festival, or a construction crane on a city street, you must get permission from the **Department of Public Works**.
+
+The **Permit** is the document you tape to the barricades. It tells police and angry drivers: "We have the legal right to block this road from 10 AM to 8 PM."
+
+Fraud is surprisingly common: organizers often take an old permit and change the date with a pen, or "expand" a 1-block closure to 3 blocks without paying the city fees. Verified permits allow anyone to scan the paper and see the true, city-approved boundaries.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #ff9800; background: #fff; padding: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <div style="background: #ff9800; color: #fff; padding: 15px; text-align: center;">
     <h2 style="margin: 0; text-transform: uppercase;">CITY OF SAN FRANCISCO</h2>

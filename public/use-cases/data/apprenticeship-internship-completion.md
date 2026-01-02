@@ -7,6 +7,14 @@ slug: "apprenticeship-internship-completion"
 tags: ["apprenticeship", "internship", "completion", "trade", "skill", "certificate"]
 ---
 
+## What is an Apprenticeship Certificate?
+
+In trades like plumbing, electrical, or software engineering, you don't just go to school; you complete thousands of hours of on-the-job training.
+
+The **Certificate of Completion** is the proof that you finished those hours. For a plumber, it's the "Journeyman" card that lets them work without a supervisor. For a software intern, it's the proof that they actually did real work at a major company.
+
+Because these lead directly to high-paying jobs, "internship fraud" (faking a certificate from Google or a local union) is a major problem for recruiters.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 10px solid #eee; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="padding: 40px; text-align: center; border: 1px solid #ccc; margin: 10px;">
     <div style="margin-bottom: 20px;">

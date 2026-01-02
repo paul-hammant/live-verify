@@ -7,6 +7,14 @@ slug: "automated-rebalancing-confirmations"
 tags: ["investing", "rebalancing", "fintech", "robo-advisor", "tax-loss-harvesting", "compliance"]
 ---
 
+## What is Automated Rebalancing?
+
+If you use a "Robo-Advisor" (like Wealthfront or Betterment), a computer program manages your money. If your stocks go up too much, the computer automatically sells some and buys bonds to keep your risk level steady.
+
+This often involves "Tax-Loss Harvesting"—selling a losing stock just to capture a tax break, then immediately buying something similar.
+
+These trades happen by the thousands every second. An **Automated Rebalancing Confirmation** is your receipt. It proves to the IRS that these trades were legitimate algorithmic moves and not a "wash sale" (an illegal tax dodge).
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ddd; background: #fff; padding: 0; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
   <div style="background: #1a237e; color: #fff; padding: 20px; text-align: center;">
     <h3 style="margin: 0; letter-spacing: 1px;">WEALTHFRONT REBALANCING NOTICE</h3>

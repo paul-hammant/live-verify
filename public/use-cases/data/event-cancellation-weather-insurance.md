@@ -7,6 +7,14 @@ slug: "event-cancellation-weather-insurance"
 tags: ["event-cancellation", "weather-insurance", "pluvius", "risk-management", "specialty-insurance", "festival-insurance"]
 ---
 
+## What is Weather Insurance?
+
+Outdoor festivals (like Coachella or Austin City Limits) are massive financial gambles. If it rains 2 inches in 4 hours, the equipment is ruined and the fans want their money back.
+
+**Weather Insurance** (or "Pluvius") pays for these losses.
+
+The policy is "Parametric"—meaning it pays out automatically if a specific weather station records more than a certain amount of rain. Verified hashes allow fans and sponsors to see the **un-altered rain triggers** on the insurer's domain, ensuring the promoter can't "hide" that the trigger was met to avoid paying refunds.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #002366; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="background: #002366; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>

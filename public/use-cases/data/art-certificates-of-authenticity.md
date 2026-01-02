@@ -7,6 +7,14 @@ slug: "art-certificates-of-authenticity"
 tags: ["art", "coa", "authenticity", "provenance", "gallery", "collectibles"]
 ---
 
+## What is a Certificate of Authenticity (COA)?
+
+In the art world, the painting itself is only half the value. The other half is the **COA**—the paper proving it was actually made by the artist.
+
+A **COA** is issued by the artist's estate or a top-tier gallery. Without a verified COA, a multimillion-dollar Basquiat or Warhol is nearly impossible to sell.
+
+Forgeries are common. Fraudsters often forge the "paperwork" (the COA) using fake letterheads and signatures to "prove" that a fake painting is real.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 3px double #000; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="text-align: center; margin-bottom: 30px;">
     <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 2px;">CERTIFICATE OF AUTHENTICITY</h2>

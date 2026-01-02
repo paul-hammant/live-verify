@@ -7,6 +7,17 @@ slug: "harvest-records-yield-data"
 tags: ["agriculture", "harvest-records", "yield-monitor", "crop-insurance", "farming", "ag-tech", "supply-chain-traceability"]
 ---
 
+## What is a Yield Report?
+
+Modern farm equipment (like a John Deere combine) is full of sensors that measure exactly how much grain is harvested from every inch of a field. This data is used to create a **Yield Report**.
+
+This report is the "Bottom Line" for a farm. It is used to:
+1.  **Calculate Rent:** In "Yield-Share" leases where the landlord gets a % of the crop.
+2.  **Claim Insurance:** Proving how much crop was lost to a storm.
+3.  **Get Loans:** Proving the farm is productive.
+
+Fraud happens when a farmer "Edits" the report to show a lower yield (to pay less rent or get more insurance money). Verified hashes bind the **Static PDF Report** to the equipment's official cloud log, ensuring the numbers are the "Mechanical Truth."
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 1px solid #333; background: #fff; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
   <div style="display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
     <div style="font-weight: bold; font-size: 1.2em;">JOHN DEERE OPERATIONS CENTER</div>

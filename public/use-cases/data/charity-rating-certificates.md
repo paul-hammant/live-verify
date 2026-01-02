@@ -7,6 +7,14 @@ slug: "charity-rating-certificates"
 tags: ["charity", "non-profit", "rating", "transparency", "impact", "donor-trust", "charity-navigator"]
 ---
 
+## What is a Charity Rating?
+
+A **Charity Rating** is a "Grade" for a non-profit organization. Watchdog groups (like Charity Navigator) look at a charity's taxes to see if they are actually spending money on the mission or just on big salaries and marketing.
+
+A **4-Star Rating** is the "Gold Standard" that charities display in their lobbies and on their websites to win over big donors.
+
+Because a higher rating leads directly to more donations, some charities "Inflate" their stars on their marketing materials or hide that their rating was recently revoked. OCR-to-hash turns the wall certificate into a real-time link to the watchdog's database.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #004d40; border-radius: 8px; background: #fff; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="background: #004d40; color: #fff; padding: 20px; text-align: center;">
     <h3 style="margin: 0; letter-spacing: 1px;">CHARITY NAVIGATOR</h3>

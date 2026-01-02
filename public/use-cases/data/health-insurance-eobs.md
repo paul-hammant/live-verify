@@ -7,6 +7,17 @@ slug: "health-insurance-eobs"
 tags: ["health-insurance", "eob", "medical-billing", "hsa-fsa-compliance", "tax-deduction", "patient-responsibility", "insurance-fraud"]
 ---
 
+## What is an EOB?
+
+An **Explanation of Benefits (EOB)** is the document your health insurance company sends you after a doctor's visit. It is **NOT** a bill.
+
+It tells you:
+1.  **The Discount:** How much the insurance company saved you by negotiating with the doctor.
+2.  **The Payment:** Exactly how much the insurance company paid.
+3.  **The Debt:** Exactly how much the doctor is legally allowed to charge you.
+
+Verified EOBs are essential for **HSA/FSA Reimbursement**. Fraudsters often edit these PDFs to inflate their "Patient Responsibility" to trick their tax-free savings account into releasing cash. Verified hashes ensure the $70 charge matches the insurer's actual adjudication.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #005fb8; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>

@@ -7,7 +7,15 @@ slug: "certified-translations"
 tags: ["translation", "notary", "certified-translation", "ata", "immigration", "legal-docs"]
 ---
 
-<div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #999; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+## What is a Certified Translation?
+
+Embassies, courts, and universities won't accept a document (like a Birth Certificate or a Diploma) if it's in a foreign language. You must provide a **Certified Translation**.
+
+A Certified Translation isn't just a translated page; it includes a **Certificate of Accuracy** where a qualified linguist swears that the English version matches the Spanish (or French, etc.) version exactly.
+
+Fraud is common: people often "edit" their translated grades or court records to look better before sending them to a visa officer. Verified hashes ensure that the *text* of the translation hasn't been tampered with since the linguist signed it.
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #999; background: #fff; padding: 40px; box-shadow: 0 4px 10 rgba(0,0,0,0.05);">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 25px;">
     <div style="font-weight: bold; font-size: 1.2em;">LINGUISTIC ACCURACY, INC.</div>
     <div style="font-size: 0.85em; color: #666;">CERTIFIED TRANSLATION SERVICES • ATA MEMBER #998877</div>

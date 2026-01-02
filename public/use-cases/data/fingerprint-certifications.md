@@ -7,6 +7,14 @@ slug: "fingerprint-certifications"
 tags: ["fingerprint-background-check", "fbi-background-check", "notary-certification", "identity-verification", "employment-vetting", "livescan", "biometric-verification"]
 ---
 
+## What is a Fingerprint Certificate?
+
+For high-security jobs (like working at a bank or a nuclear plant), a simple background check isn't enough. You must have your fingerprints "rolled" onto an FBI FD-258 card.
+
+The **Certificate of Fingerprinting** is the paper signed by a Notary Public or Police Officer swearing: "I verified this person's ID and I watched them roll these specific prints."
+
+"Identity Swapping" is a common fraud: a person with a criminal record sends a "clean" friend to the fingerprinting appointment to get a clear background check. Verified hashes (including a photo of the person being printed) stop this "Biometric Fraud" at the source.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); position: relative;">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 25px;">
     <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">CERTIFICATE OF FINGERPRINTING</h2>

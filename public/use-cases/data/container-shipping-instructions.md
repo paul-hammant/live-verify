@@ -1,125 +1,90 @@
 ---
-title: "Container shipping instructions and booking confirmations"
+title: "Container Shipping Instructions"
 category: "Shipping & Freight"
 volume: "Large"
 retention: "Shipment + 3-7 years"
 slug: "container-shipping-instructions"
-tags: ["container", "shipping", "instructions", "logistics", "transportation"]
+tags: ["container", "shipping", "instructions", "logistics", "transportation", "booking-confirmation"]
 ---
+
+## What are Shipping Instructions?
+
+Before a ship leaves, the exporter must send **Shipping Instructions (SI)** to the carrier (like Maersk or Hapag-Lloyd). This document tells the carrier exactly what to write on the final Bill of Lading.
+
+It's the "Draft" of the most important paper in trade. It includes:
+1.  **The Cargo:** "1,200 iPhones" vs "1,200 Books."
+2.  **The Parties:** Who is sending and who is receiving.
+3.  **The Route:** Which ports the ship will stop at.
+
+Fraudsters often "mis-declare" cargo in the instructions (e.g., calling high-tax electronics "low-tax toys") to get a lower freight rate or bypass customs checks.
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 1px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <div style="background: #002d62; color: #fff; padding: 10px; display: flex; justify-content: space-between; align-items: center;">
+    <div style="font-weight: bold; font-size: 1.1em;">MAERSK LINE</div>
+    <div style="font-size: 0.8em;">SHIPPING INSTRUCTIONS (DRAFT)</div>
+  </div>
+
+  <div style="padding: 20px;">
+    <div style="display: flex; justify-content: space-between; font-size: 0.9em; margin-bottom: 20px;">
+      <div>
+        <strong>Shipper:</strong> <span data-bracket="start" data-for="ship">]</span>Global Tech Exports, Inc.<br>
+        <strong>Booking #:</strong> 99228877
+      </div>
+      <div style="text-align: right;">
+        <strong>Vessel:</strong> MAERSK MC-KINNEY<br>
+        <strong>Voyage:</strong> 2604W
+      </div>
+    </div>
+
+    <div style="font-size: 0.95em; line-height: 1.6; color: #333; border: 1px solid #000; padding: 15px; margin-bottom: 20px;">
+      <p><strong>Cargo Description:</strong></p>
+      <p>12 Pallets: Telecommunications Equipment<br>
+      HS Code: 8517.62<br>
+      Gross Weight: 4,500.00 KG</p>
+    </div>
+
+    <div data-verify-line="ship" style="border-top: 1px dashed #999; margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: Maersk doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:maersk.com/si/v/99228877 <span data-bracket="end" data-for="ship">]</span>
+    </div>
+  </div>
+</div>
+
 ## Data Verified
 
-Shipper, booking party, container details, vessel, sailing schedule
+Shipper name, Booking number, Vessel name, Voyage number, Cargo description, HS Codes, Weight, Destination port.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`maersk.com`) and current booking status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Draft Received** — Carrier has the instructions.
+- **B/L Pending** — Instructions verified; final Bill of Lading being printed.
+- **Mismatch Alert** — **ALERT:** Description on SI does not match the physical scan at the port.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
-
-**Shipment Tracking:** Verify documentation matches actual shipment.
-
-**Customs Clearance:** Present verified documents to customs authorities.
-
-**Payment Verification:** Confirm charges match agreed terms.
-
-**Dispute Prevention:** Maintain verified records for potential disputes.
-
-**Insurance Claims:** Provide verified documentation for cargo claims.
+The **Exporter (Shipper)** benefits from verification.
+- **Error Prevention:** Ensuring the carrier's final Bill of Lading exactly matches the verified instructions, preventing costly "Letter of Credit" rejections at the bank.
+- **Draft Approval:** Instantly approving the digital draft from the carrier by verifying the hash against their own internal shipping system.
 
 ## Third-Party Use
 
-**Insurance Companies**
+**Customs Authorities**
+**Pre-manifest Screening:** Customs can verify the Shipping Instructions *before* the ship sails. If the description on the SI doesn't match the carrier's verified data, the container can be flagged for inspection at the loading port.
 
-Underwriting and claims processing:
+**Logistics Aggregators (Flexport / Freightos)**
+**Data Integrity:** Automatically ingesting verified shipping data from dozens of different carriers into a single dashboard without manual data entry errors.
 
-**Policy Underwriting:** Verify supporting documents during policy issuance.
+## Competition vs. EDI / Blockchain
 
-**Claims Verification:** Validate documentation during claims processing.
+| Feature | OCR-to-Hash | EDI (Shipping Standard) | GSBN Blockchain |
+| :--- | :--- | :--- | :--- |
+| **Trust** | **Cryptographic.** | **System-Bound.** | **Consensus-Bound.** |
+| **Accessibility** | **Universal.** Any clerk can scan. | **Zero.** Requires heavy IT setup. | **Low.** Requires membership. |
+| **Adoption** | **High.** Works with PDFs. | **Universal.** (For big ships). | **Low.** (Emerging). |
 
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
+**Why OCR wins here:**
+The "Silo" Problem. While big carriers use EDI, they don't share those logs with the exporter's local bank or a foreign customs agent. OCR-to-hash turns the **Draft PDF** into a portable "Token of Intent" that anyone can trust.
 
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Customs and Border Authorities**
-
-International trade compliance:
-
-**Import Clearance:** Verify shipping documents for customs clearance.
-
-**Duty Assessment:** Validate commercial invoices and declarations.
-
-**Trade Compliance:** Confirm certificates of origin and trade documents.
-
-**Security Screening:** Verify cargo documentation for security.
-
-**Export Controls:** Validate export documentation and licenses.
-
-**Freight Forwarders and Carriers**
-
-Logistics and transportation:
-
-**Shipment Acceptance:** Verify documents before accepting cargo.
-
-**Carrier Handoffs:** Validate documentation at transfer points.
-
-**Liability Determination:** Reference verified documents for claims.
-
-**Route Planning:** Confirm documentation for transit requirements.
-
-**Delivery Confirmation:** Verify documents at final delivery.
-
-## Verification Architecture
-
-**The Container shipping instructions and booking confirmations Fraud Problem**
-
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Cargo Misrepresentation:** False descriptions of goods being shipped
-- **Duplicate Bills:** Creating multiple originals for fraud
-- **Document Mismatch:** Documents that don't match actual cargo
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
-
-**Issuer Types**
-
-Who issues these documents and operates verification endpoints?
-
-**Carriers:** Shipping lines, airlines, trucking companies, and railroads.
-
-**Freight Forwarders:** International freight forwarders and NVOCCs.
-
-**Customs Brokers:** Licensed customs brokers for trade documentation.
-
-**Port Authorities:** Port operators for terminal and cargo documents.
-
-**System Integration**
-
-Shipping verification integrates with trade systems:
-
-**EDI Standards:** Electronic data interchange for trade documents (EDIFACT, X12).
-
-**Port Community Systems:** Port system integration for cargo documentation.
-
-**Customs Systems:** Integration with ACE, ABI, and customs clearance platforms.
-
-**Carrier Systems:** Shipping line and freight forwarder system integration.
-
-## Rationale
-
-Domain binding verifies shipping line/NVOCC. Prevents booking fraud. Container slot allocation verification. Demurrage/detention dispute documentation.

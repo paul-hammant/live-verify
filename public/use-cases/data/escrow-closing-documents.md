@@ -7,6 +7,14 @@ slug: "escrow-closing-documents"
 tags: ["real-estate-closing", "escrow-instructions", "wire-fraud-prevention", "trid-compliance", "closing-disclosure", "settlement-statement"]
 ---
 
+## What are Escrow Wire Instructions?
+
+When you buy a house, you must wire your life savings (the downpayment) to a title company. This is the **most dangerous moment** in a person's financial life.
+
+Hackers often "spoof" an escrow officer's email and send "Updated Wire Instructions" with their own bank account. This is called **Wire Fraud**, and it costs homebuyers $400 million a year.
+
+**Verified Wire Instructions** provide a "Digital Shield." By scanning the hash on the PDF, the buyer gets 100% confirmation from the title company's domain that the bank details are real *before* they hit "Send" at the bank.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #000; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 25px;">
     <div style="font-weight: bold; font-size: 1.2em;">FIRST AMERICAN TITLE COMPANY</div>

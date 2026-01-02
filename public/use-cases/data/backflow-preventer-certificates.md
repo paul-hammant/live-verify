@@ -7,6 +7,14 @@ slug: "backflow-preventer-certificates"
 tags: ["backflow", "water-safety", "plumbing", "inspection", "compliance", "municipal"]
 ---
 
+## What is a Backflow Certificate?
+
+In big buildings and restaurants, water must only flow *into* the building. If the pressure drops, dirty water (from a pool or a sewer) could suck *backwards* into the city's clean drinking water. This is called "Backflow."
+
+To prevent this, buildings have heavy-duty "Backflow Preventers" that must be tested by a plumber every single year.
+
+The **Test Report** is the proof that the water is safe. If a plumber "fakes" this report (called "Pencil Whipping") without actually testing the valve, an entire neighborhood's water supply could be poisoned.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #0277bd; background: #fff; padding: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <div style="background: #0277bd; color: #fff; padding: 15px; text-align: center;">
     <h3 style="margin: 0;">CITY WATER & SEWER DEPT</h3>

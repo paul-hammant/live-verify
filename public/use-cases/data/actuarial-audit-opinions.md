@@ -7,6 +7,14 @@ slug: "actuarial-audit-opinions"
 tags: ["actuarial", "audit", "opinion", "insurance", "solvency", "reserves"]
 ---
 
+## What is an Actuarial Opinion?
+
+Insurance companies don't sell products; they sell promises ("If your house burns down, we pay"). The danger is that they might collect premiums today but not have enough money to pay claims tomorrow.
+
+An **Actuarial Opinion** is a formal certification by a math expert (an Actuary) stating: "I have calculated the numbers, and this insurance company has set aside enough money (reserves) to pay its future claims."
+
+If this document is faked or altered, regulators might let a bankrupt insurance company keep selling policies, leading to disaster.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 2px 2px 15px rgba(0,0,0,0.05);">
   <div style="text-align: right; margin-bottom: 30px;">
     <div style="font-weight: bold; font-size: 1.2em; color: #2c3e50;">MILLIMAN & ROBERTSON, LLC</div>

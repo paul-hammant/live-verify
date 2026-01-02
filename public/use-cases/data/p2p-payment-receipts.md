@@ -6,9 +6,29 @@ retention: "3-7 years (tax/disputes)"
 slug: "p2p-payment-receipts"
 tags: ["payment", "receipts", "banking", "financial", "services"]
 ---
-## Data Verified
 
-Sender, recipient, amount, payment description, timestamp
+## What is a P2P Payment Receipt?
+
+When you send money via **Venmo, Zelle, or Cash App**, you receive a digital receipt.
+
+Because these apps move money in seconds, they are the #1 target for "Screenshot Scams." A buyer shows a seller a fake "Sent" screenshot to trick them into handing over a car or a phone, when no money was actually moved.
+
+Verified hashes turn the **Static Screenshot** into a live, verifiable proof-of-payment. A seller can scan the buyer's phone and see "VERIFIED COMPLETED" on the app's official domain, ensuring the money is actually in their account before they hand over the goods.
+
+<div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 1px solid #00d200; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="background: #00d200; color: #fff; padding: 20px; text-align: center;">
+    <h2 style="margin: 0; font-size: 1.2em;">Venmo Payment Sent</h2>
+  </div>
+  <div style="padding: 25px; text-align: center;">
+    <div style="font-size: 2.5em; font-weight: bold; color: #333;">$ 450.00</div>
+    <p>to <span data-bracket="start" data-for="venmo">]</span><strong>@John-Doe-42</strong></p>
+    <p style="font-size: 0.9em; color: #666;">"For the iPhone 12"</p>
+    <div data-verify-line="venmo" style="border-top: 1px dashed #ccc; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;">
+      verify:venmo.com/v/992288776 <span data-bracket="end" data-for="venmo">]</span>
+    </div>
+  </div>
+</div>
+
 
 ## Data Visible After Verification
 

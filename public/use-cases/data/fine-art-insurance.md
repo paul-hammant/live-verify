@@ -7,6 +7,14 @@ slug: "fine-art-insurance"
 tags: ["fine-art", "museum-insurance", "nail-to-nail", "lloyds", "art-theft", "exhibition-coverage", "risk-management"]
 ---
 
+## What is Fine Art Insurance?
+
+When an $85 million painting (like a Monet) moves from a museum in Paris to an exhibition in New York, it is covered by **"Nail-to-Nail" Insurance**. This means it is protected from the second it is taken off the wall until the second it is hung at the destination.
+
+Museums will not ship national treasures without 100% cryptographic certainty that the insurance is real and active.
+
+Fraud is high-stakes here: a collector might edit a $1M policy to read $100M to trick a bank into giving an over-leveraged loan. Verified hashes ensure the **agreed value** matches the insurer's actual financial risk.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 2px solid #002366; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="background: #002366; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>

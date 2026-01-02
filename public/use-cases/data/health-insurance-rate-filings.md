@@ -7,6 +7,14 @@ slug: "health-insurance-rate-filings"
 tags: ["actuarial-certification", "health-insurance-rates", "medical-loss-ratio", "rate-filing", "insurance-regulation", "solvency-compliance"]
 ---
 
+## What is a Health Insurance Rate Filing?
+
+Insurance companies cannot just raise your premiums whenever they want. In most states, they must submit a formal **Rate Filing** to the government explaining the math behind the price hike.
+
+The **Actuarial Certification** is the heart of this filing. A math expert (the Actuary) must swear that the new rates are "Fair" and that at least 80% of the premium will be spent on actual medical care.
+
+Verification ensures that the "4.2% Average Increase" the company announces to the public matches the verified math they submitted to the regulators. It prevents "Messaging Fraud" where companies hide large price hikes for specific groups.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 1px solid #333; background: #fff; padding: 40px; box-shadow: 2px 2px 12px rgba(0,0,0,0.1);">
   <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 30px;">
     <div style="font-weight: bold; font-size: 1.1em; color: #1a237e;">BLUE SHIELD OF CALIFORNIA</div>

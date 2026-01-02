@@ -6,9 +6,28 @@ retention: "3-7 years (warranty/liability)"
 slug: "pest-inspection-certificates"
 tags: ["pest", "inspection", "certificates", "real", "estate", "property"]
 ---
-## Data Verified
 
-Inspector name, property owner/address, treatment details
+## What is a Termite Certificate?
+
+Before you can buy or sell a house, the bank often requires a **Wood Destroying Insect (WDI)** report, commonly called a "Termite Certificate."
+
+It is the official proof from a licensed inspector that the house isn't being eaten by bugs.
+
+Fraud is common in real estate: a seller might edit a PDF report to hide that the inspector found "Active Termites" in the garage. Verified hashes protect the **inspector's true findings**, ensuring the bank doesn't lend $500,000 on a house with structural bug damage.
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #333; background: #fff; padding: 25px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
+    <h2 style="margin: 0; text-transform: uppercase; font-size: 1.1em;">WDI INSPECTION REPORT</h2>
+  </div>
+  <div style="font-size: 0.95em;">
+    <p><strong>Property:</strong> <span data-bracket="start" data-for="wdi">]</span>123 Maple St, Anytown<br>
+    <strong>Result:</strong> NO ACTIVE INFESTATION FOUND</p>
+    <div data-verify-line="wdi" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;">
+      verify:bug-stop.com/v/99228877 <span data-bracket="end" data-for="wdi">]</span>
+    </div>
+  </div>
+</div>
+
 
 **Certificate Variations:** Multiple certificate types or levels may exist.
 

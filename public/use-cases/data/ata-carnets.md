@@ -7,6 +7,14 @@ slug: "ata-carnets"
 tags: ["carnet", "customs", "trade", "logistics", "export", "import", "wco"]
 ---
 
+## What is an ATA Carnet?
+
+An **ATA Carnet** is a "Passport for Goods." It allows businesses to temporarily ship equipment (like camera gear for a movie, or instruments for a rock band) into a foreign country without paying customs duties.
+
+The catch is that you **must** bring the goods back home. If you sell the gear in the foreign country, you owe massive fines.
+
+The Carnet is a physical booklet of colored papers that customs officers stamp at every border. If the booklet is fake or altered, the gear can be seized at the airport, ruining a tour or a film shoot.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #005a9c; background: #fff; padding: 0;">
   <div style="background: #005a9c; color: #fff; padding: 15px; text-align: center;">
     <h3 style="margin: 0; text-transform: uppercase;">ATA CARNET</h3>

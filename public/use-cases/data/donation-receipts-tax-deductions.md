@@ -7,6 +7,14 @@ slug: "donation-receipts-tax-deductions"
 tags: ["non-profit", "donation-receipt", "irs-compliance", "tax-deduction", "charity-fraud", "philanthropy"]
 ---
 
+## What is a Donation Receipt?
+
+If you donate $1,000 to a charity, you can lower your income taxes by $1,000. But the IRS won't just take your word for it; they need an **Official Receipt** from the charity.
+
+"Donation Fraud" is a massive problem. Scammers use fake receipts from real charities (like the Red Cross) to claim thousands in illegal tax refunds.
+
+Verified hashes allow the IRS to scan a receipt and see "VERIFIED" on the charity's own domain. This stops "Photoshopped" receipts and ensures that only legitimate donors get the tax break.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 25px;">
     <div style="font-weight: bold; font-size: 1.4em;">AMERICAN RED CROSS</div>

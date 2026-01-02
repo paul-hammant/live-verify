@@ -7,6 +7,14 @@ slug: "building-inspector-verification"
 tags: ["safety", "inspector", "badge", "verification", "home-security", "municipal", "government"]
 ---
 
+## What is an Inspector Badge?
+
+A **Building Inspector Badge** is the identification carried by city officials who enter private homes and businesses to check for safety (Electrical, Plumbing, Fire).
+
+Because these officials have the legal right to walk into your kitchen or basement, criminals often pose as "Inspectors" to gain entry for burglary or to extort fake fines.
+
+OCR-to-Hash allows a homeowner to scan the badge at the door and see a green "ACTIVE" status from the city's own domain, proving the person is a real employee and not a scammer.
+
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
   <div style="background: #1a237e; color: #fff; padding: 15px; text-align: center; display: flex; align-items: center; justify-content: center;">
     <div style="font-size: 1.5em; margin-right: 10px;">🏛</div>

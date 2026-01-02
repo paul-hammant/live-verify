@@ -6,7 +6,81 @@ retention: "7-10 years (retirement planning)"
 slug: "social-security-benefit-statements"
 tags: ["social", "security", "benefit", "statements", "actuarial", "insurance", "mathematics"]
 ---
-## Data Verified
+
+## What is a Benefit Statement?
+
+Your **Social Security Statement** is the government's official record of your lifetime earnings and your future retirement payout.
+
+Lenders use it to verify income for mortgages. Courts use it to calculate alimony.
+
+Fraudsters often "Photoshop" these PDFs to inflate their income (to get a loan) or hide assets (during a divorce). Verified hashes allow any third party (bank, judge, landlord) to instantly confirm the document came directly from the **Social Security Administration (SSA)** and hasn't been altered.
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="border-bottom: 3px solid #000; padding: 20px; display: flex; align-items: center;">
+    <div style="width: 50px; height: 50px; background: #333; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: #fff; font-weight: bold; margin-right: 15px;">SSA</div>
+    <div>
+      <div style="font-size: 1.4em; font-weight: bold;">Your Social Security Statement</div>
+      <div style="font-size: 0.9em;">Social Security Administration</div>
+    </div>
+  </div>
+
+  <div style="padding: 30px;">
+    <div style="display: flex; justify-content: space-between; margin-bottom: 30px;">
+      <div>
+        <strong>Prepared for:</strong><br>
+        WANDA MAXIMOFF<br>
+        XXX-XX-1234
+      </div>
+      <div style="text-align: right;">
+        <strong>Date:</strong><br>
+        January 15, 2026
+      </div>
+    </div>
+
+    <div style="background: #e8f5e9; border: 1px solid #c8e6c9; padding: 20px; border-radius: 4px;">
+      <h3 style="margin-top: 0; color: #2e7d32;">Estimated Benefits</h3>
+      
+      <div style="display: flex; justify-content: space-between; margin-bottom: 10px; border-bottom: 1px solid #a5d6a7; padding-bottom: 5px;">
+        <span>At Full Retirement Age (67):</span>
+        <span style="font-weight: bold;">$ <span data-bracket="start" data-for="ssa">]</span>3,450 / month</span>
+      </div>
+      
+      <div style="display: flex; justify-content: space-between; margin-bottom: 10px; border-bottom: 1px solid #a5d6a7; padding-bottom: 5px;">
+        <span>At Age 70:</span>
+        <span style="font-weight: bold;">$ 4,280 / month</span>
+      </div>
+      
+      <div style="display: flex; justify-content: space-between;">
+        <span>At Age 62:</span>
+        <span style="font-weight: bold;">$ 2,390 / month</span>
+      </div>
+    </div>
+
+    <div style="margin-top: 30px;">
+      <h4 style="border-bottom: 1px solid #ccc; padding-bottom: 5px;">Earnings Record (Taxed Social Security Earnings)</h4>
+      <table style="width: 100%; font-size: 0.9em; border-collapse: collapse;">
+        <tr>
+          <td style="padding: 5px 0;">2025</td>
+          <td style="text-align: right;">$ 160,200</td>
+        </tr>
+        <tr>
+          <td style="padding: 5px 0; background: #f9f9f9;">2024</td>
+          <td style="text-align: right; background: #f9f9f9;">$ 155,000</td>
+        </tr>
+        <tr>
+          <td style="padding: 5px 0;">2023</td>
+          <td style="text-align: right;">$ 148,500</td>
+        </tr>
+      </table>
+    </div>
+
+    <div data-verify-line="ssa" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: SSA doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:ssa.gov/myaccount/v/882299 <span data-bracket="end" data-for="ssa">]</span>
+    </div>
+  </div>
+</div>
+
 
 Worker name, SSN (masked), earnings history, projected benefit amounts, retirement age scenarios
 

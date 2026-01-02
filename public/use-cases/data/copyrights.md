@@ -8,6 +8,14 @@ slug: "copyrights"
 tags: ["copyright", "intellectual-property", "us-copyright-office", "creative-works", "licensing", "dmca"]
 ---
 
+## What is a Copyright Certificate?
+
+While you own the copyright to a book or song the moment you write it, you cannot **sue** for big damages in US court unless you have a formal **Certificate of Registration** from the U.S. Copyright Office.
+
+This document is the "Proof of Ownership" used to sell movie rights or to take down "Pirated" content on YouTube.
+
+Fraudsters often create fake certificates to claim ownership of hit songs or viral videos they didn't create, stealing royalties from the true authors. Verified hashes bind the **Actual File** (the "Deposit Copy") to the certificate, ensuring the owner can't swap out the content later.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 2px solid #333; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); position: relative;">
   <div style="text-align: center; margin-bottom: 30px;">
     <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 2px;">CERTIFICATE OF REGISTRATION</div>

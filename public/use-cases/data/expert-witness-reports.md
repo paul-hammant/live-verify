@@ -7,6 +7,14 @@ slug: "expert-witness-reports"
 tags: ["expert-witness", "forensic-report", "legal-testimony", "expert-opinion", "litigation-support", "court-evidence", "professional-liability"]
 ---
 
+## What is an Expert Report?
+
+In a lawsuit about a building collapse or a medical error, the judge and jury aren't experts in engineering or surgery. They rely on **Expert Witnesses** to explain what happened.
+
+The **Expert Report** is the formal document where the scientist or doctor writes their professional opinion: "The crane fell because the weld was weak."
+
+In high-stakes trials, lawyers sometimes "Edit" the expert's findings in the final PDF to make the opinion sound stronger for their side. Verified hashes ensure the report the jury sees matches the **expert's original, un-altered scientific findings**.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
   <div style="text-align: right; margin-bottom: 30px;">
     <div style="font-weight: bold; font-size: 1.2em;">ROUX FORENSIC ENGINEERING</div>

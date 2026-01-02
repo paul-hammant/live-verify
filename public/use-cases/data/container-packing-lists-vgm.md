@@ -7,6 +7,14 @@ slug: "container-packing-lists-vgm"
 tags: ["shipping", "logistics", "vgm", "solas", "container", "maritime-safety", "packing-list"]
 ---
 
+## What is a VGM Declaration?
+
+When a massive cargo ship is loaded, the captain needs to know exactly how heavy every container is. If the ship is "top-heavy" or unbalanced, it can capsize and sink in a storm.
+
+The **Verified Gross Mass (VGM)** is the official weight certificate for a container. By international law (SOLAS), no container can be put on a ship without one.
+
+Shippers often "Guess" the weight to save the $50 fee for a certified scale. This "Guesswork" has led to several high-profile shipwrecks. Verified hashes ensure that the weight on the paper matches the official scale record at the port.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 1px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <div style="background: #002d62; color: #fff; padding: 10px; text-align: center;">
     <h2 style="margin: 0; text-transform: uppercase; font-size: 1.2em;">SOLAS VGM DECLARATION</h2>

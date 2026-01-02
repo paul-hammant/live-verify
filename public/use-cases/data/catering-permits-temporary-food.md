@@ -7,6 +7,14 @@ slug: "catering-permits-temporary-food"
 tags: ["food-safety", "catering", "temporary-food-facility", "health-department", "event-permit", "public-health"]
 ---
 
+## What is a Temporary Food Permit?
+
+If you buy a burger at a music festival (like Coachella) or a taco at a neighborhood street fair, that vendor doesn't have a permanent kitchen. They are operating under a **Temporary Food Facility (TFF) Permit**.
+
+This permit is the proof that a health inspector checked their propane tanks, their hand-washing stations, and their refrigerator temperatures *at the event site*.
+
+Fraudsters often use "Permit Swapping"—using a valid permit from a safe "Hot Dog Stand" to cover an uninspected, high-risk "Sushi Booth." Verified hashes allow inspectors and customers to see the exact, city-approved menu and safety scope.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #2e7d32; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #2e7d32; color: #fff; padding: 15px; text-align: center;">
     <h2 style="margin: 0; text-transform: uppercase;">LOS ANGELES COUNTY</h2>

@@ -6,9 +6,33 @@ retention: "Current version"
 slug: "nlra-unionization-poster"
 tags: ["nlra", "unionization", "poster", "mandatory", "workplace", "postings"]
 ---
-## Data Verified
 
-None (informational), NLRB contact, union organizing rights
+## What is an NLRA Poster?
+
+The **National Labor Relations Act (NLRA)** gives most private-sector employees the legal right to organize, form a union, and bargain collectively for better wages and conditions.
+
+By federal law, many employers must display this "Employee Rights" poster.
+
+Fraud occurs when a company posts a "Fake" or "Sanitized" version of the poster that hides the worker's right to strike or join a union. Verified hashes allow workers to scan the poster and see the **un-altered federal rights** on the `nlrb.gov` domain, ensuring they aren't being misled by management.
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 3px solid #002d62; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="background: #002d62; color: #fff; padding: 20px; text-align: center;">
+    <h2 style="margin: 0; text-transform: uppercase;">EMPLOYEE RIGHTS</h2>
+    <div style="font-size: 0.85em; opacity: 0.9;">UNDER THE NATIONAL LABOR RELATIONS ACT</div>
+  </div>
+  <div style="padding: 30px;">
+    <p>The NLRA guarantees the right of employees to organize and bargain collectively with their employers.</p>
+    <ul style="font-size: 0.9em; line-height: 1.6;">
+      <li><span data-bracket="start" data-for="nlra">]</span>Form, join or assist a union.</li>
+      <li>Bargain collectively through representatives of your own choosing.</li>
+      <li>Discuss your terms and conditions of employment with your co-workers.</li>
+    </ul>
+    <div data-verify-line="nlra" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;">
+      verify:nlrb.gov/posters/v/NLRA-2026 <span data-bracket="end" data-for="nlra">]</span>
+    </div>
+  </div>
+</div>
+
 
 ## Data Visible After Verification
 

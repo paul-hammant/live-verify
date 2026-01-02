@@ -7,6 +7,14 @@ slug: "federal-minimum-wage-labor-posters"
 tags: ["minimum-wage", "labor-law", "flsa", "department-of-labor", "mandatory-posting", "employee-rights", "wage-and-hour"]
 ---
 
+## What is a Minimum Wage Poster?
+
+Every workplace in the US must display the **Federal Minimum Wage** poster in a common area (like a breakroom). It is the law's way of ensuring that workers know their right to be paid at least $7.25/hour and receive "Time-and-a-Half" for overtime.
+
+These posters change as new laws are passed.
+
+"Wage Theft" happens when a manager edits the poster to mislead workers about their rights—for example, by claiming a "Tip Credit" that doesn't actually apply. Verified hashes allow any worker to scan the poster and see the **un-altered federal text** on the DOL domain.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 3px solid #002d62; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #002d62; color: #fff; padding: 20px; text-align: center; display: flex; align-items: center; justify-content: center;">
     <div style="font-size: 2em; margin-right: 15px;">💵</div>

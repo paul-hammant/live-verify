@@ -7,6 +7,14 @@ slug: "dynamic-discounting-confirmations"
 tags: ["trade-finance", "dynamic-discounting", "early-payment", "supply-chain-finance", "accounts-payable", "fintech", "cash-flow"]
 ---
 
+## What is Dynamic Discounting?
+
+If a small supplier (like a parts maker) sells $100,000 of goods to a big buyer (like Boeing), the buyer might wait 90 days to pay the bill.
+
+**Dynamic Discounting** is a fintech "Deal." The buyer says: "If you give me a 1.5% discount ($1,500), I will pay you *today* instead of in 90 days."
+
+Suppliers use these **Early Payment Confirmations** to prove their cash flow to local banks. Verified hashes prevent "Double Financing"—where a supplier sells the same invoice to a bank *and* takes the early discount from the buyer.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #002d62; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>

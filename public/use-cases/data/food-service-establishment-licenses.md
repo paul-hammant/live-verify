@@ -7,6 +7,14 @@ slug: "food-service-establishment-licenses"
 tags: ["food-service", "licenses", "health-permit", "restaurant", "food-safety", "public-health"]
 ---
 
+## What is a Health Grade?
+
+In most cities, every restaurant and cafe must display their **Health Permit** and their latest **Inspection Grade** (like the famous blue "A" in New York or California).
+
+This grade tells the public if the kitchen is clean or if the inspector found "Critical Violations" like rats or spoiled meat.
+
+"Grade Fraud" is a real public health threat: some restaurants illegally edit their "B" or "C" cards to look like an "A" to avoid losing customers. Verified hashes allow any diner to scan the card and see the **verified, real-time grade** on the city's domain.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Helvetica Neue', Arial, sans-serif; border: 2px solid #28a745; background: #e6ffe6; padding: 20px;">
   <div style="text-align: center; border-bottom: 1px solid #28a745; padding-bottom: 10px; margin-bottom: 15px;">
     <h2 style="margin: 0; color: #28a745;">CITY OF AUSTIN</h2>

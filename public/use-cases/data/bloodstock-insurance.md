@@ -7,6 +7,14 @@ slug: "bloodstock-insurance"
 tags: ["horse-racing", "bloodstock", "insurance", "lloyds", "mortality", "breeding", "livestock"]
 ---
 
+## What is Bloodstock Insurance?
+
+A champion racehorse or a top-tier breeding stallion can be worth **$10 million or more**. Because these animals are fragile, owners buy "Bloodstock" (equine mortality) insurance.
+
+The **Certificate of Insurance** is the financial proof of the horse's value. It is used at auctions (to prove the horse is worth the starting bid) and by banks (who lend money using the horse as collateral).
+
+If an owner "Photoshops" a $100k policy to look like a $10M policy, they can commit massive bank fraud or trick buyers into overpaying for a horse.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 2px solid #002366; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="background: #002366; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>

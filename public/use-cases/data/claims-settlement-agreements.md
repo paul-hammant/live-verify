@@ -7,6 +7,14 @@ slug: "claims-settlement-agreements"
 tags: ["settlement", "release", "insurance-claims", "legal-contract", "liability", "full-and-final", "bad-faith"]
 ---
 
+## What is a Settlement Agreement?
+
+A **Settlement Agreement** (or Release) is the final contract that ends a legal dispute. It says: "The insurance company pays you $25,000, and in exchange, you promise never to sue them again for this accident."
+
+These documents are the "Finish Line" of the legal system.
+
+Because they trigger large payments, they are targets for "PDF alteration." A dishonest person might edit a $10,000 agreement to read $50,000 to trick their partners or a bank. Verified hashes ensure that the **final dollar amount** and the **release terms** cannot be changed after the signatures are dry.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #999; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
   <div style="text-align: center; margin-bottom: 30px;">
     <h3 style="text-decoration: underline; text-transform: uppercase; margin: 0;">SETTLEMENT AGREEMENT AND RELEASE</h3>

@@ -7,6 +7,17 @@ slug: "claims-correspondence-eobs"
 tags: ["insurance", "claims", "eob", "healthcare-billing", "provider-dispute", "audit-trail", "compliance"]
 ---
 
+## What is an EOB?
+
+An **Explanation of Benefits (EOB)** is the document your health insurance company sends you after you visit a doctor. It is **NOT** a bill.
+
+It is a detailed breakdown showing:
+1.  **The Discount:** How much the insurance company forced the doctor to lower their price.
+2.  **The Payment:** Exactly how much the insurance company paid.
+3.  **The Debt:** Exactly how much you (the patient) are still allowed to be billed.
+
+Verified EOBs are critical for stopping "Balance Billing"—when a hospital tries to charge a patient for the "Discount" amount that the insurance company already negotiated away.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #005fb8; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>

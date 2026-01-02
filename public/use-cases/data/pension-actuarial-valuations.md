@@ -6,9 +6,30 @@ retention: "7-30 years (ERISA/plan lifetime)"
 slug: "pension-actuarial-valuations"
 tags: ["pension", "actuarial", "valuations", "insurance", "mathematics"]
 ---
-## Data Verified
 
-Plan actuary name, plan sponsor, participant demographics (aggregated), pension liabilities, funding status
+## What is a Pension Valuation?
+
+A **Pension Valuation** is a financial "Health Check" for a retirement fund. A math expert (an Actuary) calculates exactly how much money the fund must have today to pay for all future retirements.
+
+The **Valuation Report** states the "Funding Status" (e.g., "102% Funded").
+
+If a company is struggling, they might "edit" the report to hide a billion-dollar funding gap from the workers or the government. Verified hashes ensure the auditor's true findings match the official filing, protecting the life savings of millions of retirees.
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 1px solid #333; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
+    <div style="font-weight: bold; font-size: 1.2em;">MILLIMAN ACTUARIAL</div>
+    <div style="font-size: 0.8em;">PENSION FUND VALUATION SUMMARY</div>
+  </div>
+  <div style="font-size: 0.95em;">
+    <p><strong>Plan Sponsor:</strong> <span data-bracket="start" data-for="pension">]</span>Initech Employees' Pension Plan</p>
+    <p><strong>Funding Status:</strong> 102.4% (Verified)<br>
+    <strong>Net Liabilities:</strong> $ 450,000,000.00</p>
+    <div data-verify-line="pension" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;">
+      verify:milliman.com/v/INITECH-2026 <span data-bracket="end" data-for="pension">]</span>
+    </div>
+  </div>
+</div>
+
 
 **Multi-Page Handling:** Documents may span multiple pages. Per-page verification prevents page substitution attacks.
 

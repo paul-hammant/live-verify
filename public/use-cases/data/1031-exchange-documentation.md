@@ -7,6 +7,16 @@ slug: "1031-exchange-documentation"
 tags: ["1031", "exchange", "documentation", "real", "estate", "property", "tax"]
 ---
 
+## What is a 1031 Exchange?
+
+In US tax law, if you sell an investment property for a profit, you usually pay capital gains tax. However, under **Section 1031**, you can defer these taxes if you reinvest the money into a new property.
+
+The catch? strict rules:
+1.  **The Intermediary:** You cannot touch the cash. A neutral third party (Qualified Intermediary or **QI**) must hold the funds.
+2.  **The 45-Day Rule:** You must identify potential new properties within 45 days of selling the old one.
+
+This document is the **Identification Form**. It acts as a timestamped "snapshot" proving the investor met the 45-day deadline.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #999; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); background: #fff; padding: 0;">
   <div style="padding: 30px 40px; text-align: left;">
     <div style="border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: flex-end;">

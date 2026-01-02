@@ -7,6 +7,17 @@ slug: "demolition-permits"
 tags: ["construction", "demolition-permit", "hazardous-waste", "city-planning", "asbestos-clearance", "historical-preservation", "public-safety"]
 ---
 
+## What is a Demolition Permit?
+
+Before a wrecking ball can hit a building, the owner must get a **Demolition Permit** from the city.
+
+This isn't just about zoning; it's about **Safety**. The permit proves:
+1.  **Hazmat Clearance:** All asbestos and lead has been removed safely.
+2.  **Utility Cut-off:** The gas and electricity are disconnected (so the building doesn't explode).
+3.  **Historic Status:** The building isn't a protected landmark.
+
+"Midnight Demolitions" are a common crime where developers tear down historic buildings before the city can stop them. Verified permits allow police and neighbors to scan the notice on the fence and see the true, city-approved scope instantly.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 3px solid #d32f2f; background: #fffcfc; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #d32f2f; color: #fff; padding: 15px; text-align: center;">
     <h2 style="margin: 0; text-transform: uppercase;">CITY OF PHILADELPHIA</h2>

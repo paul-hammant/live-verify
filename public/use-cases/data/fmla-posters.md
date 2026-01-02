@@ -7,6 +7,14 @@ slug: "fmla-posters"
 tags: ["fmla", "labor-law", "workplace-rights", "parental-leave", "medical-leave", "mandatory-posting", "department-of-labor", "compliance"]
 ---
 
+## What is an FMLA Poster?
+
+The **Family and Medical Leave Act (FMLA)** is a federal law that gives employees the right to take up to 12 weeks of unpaid leave for major life events (like having a baby or caring for a sick parent) without losing their job.
+
+Every employer must display this "Rights Poster" in the workplace.
+
+Fraud happens when managers "Edit" the poster to mislead employees about their eligibility (e.g., claiming they need to work 2,000 hours when the law says 1,250). Verified hashes allow any employee to scan the poster and see the **un-altered federal rights** on the government's domain.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 3px solid #002d62; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #002d62; color: #fff; padding: 20px; text-align: center; display: flex; align-items: center; justify-content: center;">
     <div style="font-size: 2em; margin-right: 15px;">🏥</div>

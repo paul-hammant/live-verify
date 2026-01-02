@@ -7,6 +7,14 @@ slug: "covid-workplace-safety-protocols"
 tags: ["covid-19", "workplace-safety", "osha-compliance", "public-health", "vaccination-policy", "mandatory-posting", "employee-health"]
 ---
 
+## What is a Safety Protocol Poster?
+
+When a health crisis occurs, employers must post **Workplace Safety Protocols** in every breakroom. These posters tell employees and visitors the rules for "Masking," "Social Distancing," and "Vaccination."
+
+These rules change constantly as new variants or laws emerge.
+
+Fraud ("Safety Theater") happens when a local manager leaves an outdated poster up to hide that they are violating current corporate or government safety standards. OCR-to-hash turns the paper on the wall into a live link to the latest, verified safety policy from Headquarters.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 3px solid #1565c0; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #1565c0; color: #fff; padding: 20px; text-align: center; display: flex; align-items: center; justify-content: center;">
     <div style="font-size: 2em; margin-right: 15px;">🛡️</div>

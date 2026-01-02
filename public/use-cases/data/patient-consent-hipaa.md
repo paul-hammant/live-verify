@@ -7,28 +7,27 @@ slug: "patient-consent-hipaa"
 tags: ["patient", "consent", "hipaa", "healthcare", "medical", "records", "privacy", "fraud-prevention", "clinical-trials"]
 ---
 
-<div style="max-width: 600px; margin: 24px auto; font-family: 'Open Sans', sans-serif; border: 2px solid #007bff; background: #e0f7fa; padding: 20px;">
-  <div style="text-align: center; border-bottom: 1px solid #007bff; padding-bottom: 10px; margin-bottom: 15px;">
-    <h2 style="margin: 0; color: #007bff;">INFORMED CONSENT FOR TREATMENT</h2>
-    <p style="font-size: 0.8em; color: #555;">Acme Medical Center</p>
-  </div>
-  <div style="font-size: 0.9em; line-height: 1.5; color: #333;">
-    <p><strong>Patient Name:</strong> Jane A. Doe</p>
-    <p><strong>Date of Birth:</strong> 1980-05-15</p>
-    <p><strong>Procedure:</strong> Appendectomy</p>
-    <p><strong>Physician:</strong> Dr. Alex Smith</p>
-    <p><strong>Risks Disclosed:</strong> Bleeding, Infection, Anesthesia Complications</p>
-    <p><strong>Patient Signature:</strong> Yes</p>
-    <p><strong>Witness Signature:</strong> Yes</p>
-    <p><strong>Date of Consent:</strong> 2025-03-10</p>
-    <p><strong>Consent Form Version:</strong> AMC-ICF-Appen-V3.0</p>
+## What is Patient Consent?
 
-    <div style="margin-top: 20px; font-size: 0.8em; text-align: center; color: #007bff;">
-      <strong>Verify authenticity and version:</strong><br>
-      vfy:consent.acmemedical.com/patient
+Before a doctor can perform surgery or a scientist can use your DNA for a study, you must sign an **Informed Consent Form**. This is the legal proof that you understand the risks and rewards.
+
+In the US, you also sign a **HIPAA Authorization**, which tells the hospital exactly who they are allowed to share your private health data with.
+
+"Consent Fraud" is a dangerous crime: a researcher might edit a "Survey Only" consent form to allow invasive "Genetic Testing" without the patient's knowledge. Verified hashes ensure the **un-altered text** of the agreement is what the patient actually signed.
+
+<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #007bff; background: #fff; padding: 25px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="text-align: center; border-bottom: 2px solid #007bff; padding-bottom: 10px; margin-bottom: 20px;">
+    <h2 style="margin: 0; font-size: 1.2em;">INFORMED CONSENT FOR SURGERY</h2>
+  </div>
+  <div style="font-size: 0.95em; line-height: 1.6;">
+    <p>I, <span data-bracket="start" data-for="consent">]</span><strong>JANE A. DOE</strong>, authorize Dr. Alex Smith to perform a Laparoscopic Appendectomy.</p>
+    <p><strong>Version:</strong> AMC-ICF-V3.0 | <strong>Date:</strong> 2025-03-10</p>
+    <div data-verify-line="consent" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;">
+      verify:consent.acmemedical.com/v/992288 <span data-bracket="end" data-for="consent">]</span>
     </div>
   </div>
 </div>
+
 
 ## Data Verified
 

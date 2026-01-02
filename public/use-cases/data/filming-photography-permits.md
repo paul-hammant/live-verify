@@ -7,6 +7,14 @@ slug: "filming-photography-permits"
 tags: ["filming-permit", "location-scouting", "production-logistics", "city-film-office", "public-property", "entertainment-industry", "permitting"]
 ---
 
+## What is a Film Permit?
+
+If you want to shoot a movie or a high-end commercial on a public street (like Times Square), you must get a **Film Permit** from the City Film Office.
+
+This permit gives the crew the legal right to block sidewalks, park big equipment trucks, and use special effects (like strobe lights).
+
+Shopkeepers and neighbors often get angry at film crews. A **Verified Permit** posted on the camera truck is the "Official Truth" that ends arguments instantly. It prevents "Scope Creep"—where a small crew with a "Low Impact" permit tries to shut down an entire city block illegally.
+
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 3px solid #ffeb3b; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #000; color: #fff; padding: 15px; text-align: center; display: flex; align-items: center; justify-content: center;">
     <div style="font-size: 1.5em; margin-right: 15px;">🎬</div>
