@@ -146,11 +146,7 @@ Static badges can be used to track drivers. Criminals planning package theft cou
 - Protects drivers from being followed or ambushed
 - Protects high-value package routes from interception planning
 
-**Cost tradeoff:** E-ink badges cost more than printed lanyards. Justified for:
-- High-theft areas
-- High-value delivery routes (electronics, jewelry)
-- Driver safety in isolated/rural areas
-- Premium delivery services
+**Cost:** E-ink badges cost more than printed lanyards, but driver safety is the primary justification — not a premium add-on. Delivery drivers face assault, robbery, and carjacking risks in all areas. Untraceable credentials protect drivers everywhere, not just on "high-risk" routes.
 
 ## Competition vs. In-App Notifications
 

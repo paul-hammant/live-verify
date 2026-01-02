@@ -2,90 +2,118 @@
 title: "PEP Declarations (Politically Exposed Persons)"
 category: "Financial Services Compliance"
 volume: "Medium"
-retention: "5-10 years post-relationship"
+retention: "5-10 years post-relationship (AML requirement)"
 slug: "pep-declarations"
-tags: ["pep", "politically-exposed", "aml", "kyc", "corruption", "enhanced-due-diligence"]
+tags: ["aml", "kyc", "pep", "politically-exposed", "enhanced-due-diligence", "corruption-prevention", "onboarding-compliance", "financial-crime"]
 ---
 
 ## What is a PEP Declaration?
 
-A **Politically Exposed Person (PEP)** is someone in a prominent public position — or their close family/associates. PEPs are higher risk for money laundering and corruption because of their access to public funds and influence.
+In the banking and wealth management industries, a **Politically Exposed Person (PEP)** is an individual who holds (or has held) a high-profile public position, such as a Minister, Judge, or Senior Military Officer. Because PEPs have access to public funds, they are considered "High Risk" for money laundering and bribery. A **PEP Declaration** is the formal document where a client swears their status.
 
-Financial institutions must identify PEPs and apply enhanced due diligence. The **PEP declaration** is a self-disclosure where individuals confirm whether they are (or are not) a PEP, and if so, provide details about their role.
+These declarations are the "Compliance Shield" for a bank. Fraud is common in the "Private Banking" sector: high-risk individuals often "falsely deny" their PEP status on a PDF form to bypass **Enhanced Due Diligence (EDD)** and hide their wealth from regulators. Verified hashes bind the **Subject Name, Official Role, and Source of Wealth Summary** to the institution's or the compliance agency's domain (e.g., `refinitiv.com` or `privatebank.com`).
 
-<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #8B0000; background: #fff; padding: 0;">
-  <div style="background: #8B0000; color: #fff; padding: 15px;">
-    <div style="font-weight: bold; font-size: 1.1em;">POLITICALLY EXPOSED PERSON DECLARATION</div>
-    <div style="font-size: 0.8em;">Enhanced Due Diligence Disclosure</div>
+<div style="max-width: 650px; margin: 24px auto; font-family: sans-serif; border: 2px solid #8B0000; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1); overflow: hidden;">
+  <div style="background: #8B0000; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+    <div>
+      <div style="font-weight: bold; font-size: 1.2em;">PEP / EDD DECLARATION</div>
+      <div style="font-size: 0.8em; opacity: 0.9; text-transform: uppercase; letter-spacing: 1px;">Compliance Risk Management</div>
+    </div>
+    <div style="font-size: 2em;">🏦</div>
   </div>
-  <div style="padding: 20px; font-size: 0.9em; line-height: 1.6;">
-    <p><strong>Name:</strong> Alexander Volkov<br>
-    <strong>Date of Birth:</strong> [Redacted]<br>
-    <strong>Declaration Date:</strong> January 10, 2026</p>
 
-    <div style="background: #fff5f5; padding: 15px; margin: 15px 0; border: 1px solid #8B0000;">
-      <p style="margin: 0;"><strong>I declare that:</strong></p>
-      <p style="margin: 10px 0 0;">☑ I AM a Politically Exposed Person</p>
-      <p style="margin: 10px 0 0;"><strong>Role:</strong> Deputy Minister of Transport, [Country]</p>
-      <p style="margin: 5px 0 0;"><strong>Period:</strong> 2018 – Present</p>
-      <p style="margin: 5px 0 0;"><strong>Source of Wealth:</strong> Government salary, family inheritance (declared)</p>
+  <div style="padding: 25px; font-size: 0.95em; line-height: 1.6; color: #333;">
+    <div style="display: flex; justify-content: space-between; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
+      <div>
+        <strong>Individual:</strong> <span data-bracket="start" data-for="pep">]</span>ALEXANDER VOLKOV<br>
+        <strong>Nationality:</strong> [Redacted]<br>
+        <strong>DOB:</strong> [Verified/Redacted]
+      </div>
+      <div style="text-align: right;">
+        <strong>Ref:</strong> PEP-2026-042-XJ<br>
+        <strong>Date:</strong> 15 MAR 2026
+      </div>
     </div>
 
-    <p style="font-size: 0.85em; color: #666;">I confirm this information is accurate and undertake to notify the firm of any changes to my PEP status.</p>
+    <div style="background: #fff5f5; border: 1px solid #ffcdd2; padding: 15px; border-radius: 4px; margin-bottom: 20px;">
+      <p style="margin: 0; font-weight: bold; color: #8B0000;">THE UNDERSIGNED HEREBY DECLARES:</p>
+      <p style="margin: 10px 0 0;">☑ I AM a Politically Exposed Person (PEP)</p>
+      <p style="margin: 10px 0 0;"><strong>Official Role:</strong> Deputy Minister of Transport, [Country]</p>
+      <p style="margin: 5px 0 0;"><strong>Period:</strong> 2018 – Present</p>
+      <p style="margin: 5px 0 0;"><strong>Primary Source of Wealth:</strong> Declared Family Inheritance</p>
+    </div>
 
-    <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
-      verify:privatbank-kyc.com/pep/AV-2026-0110
+    <p style="font-size: 0.85em; font-style: italic; color: #666; text-align: center;">
+      "I confirm this information is true and complete. I will notify the firm of any material changes to my PEP status."
+    </p>
+  </div>
+
+  <div style="padding: 20px; background: #f9f9f9; border-top: 1px dashed #8B0000; text-align: center;">
+    <div data-verify-line="pep" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
+      title="Demo only: Banks don't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:privatbank-kyc.com/v/AV20260110 <span data-bracket="end" data-for="pep">]</span>
+    </div>
+    <div style="font-size: 0.7em; color: #777; margin-top: 10px;">
+      Scan to verify declaration integrity, role classification, and Enhanced Due Diligence (EDD) status. Access restricted to authorized compliance officers.
     </div>
   </div>
 </div>
 
 ## Data Verified
 
-**Declarant name**, **declaration date**, **PEP status** (yes/no), **role/position** (if PEP), **country**, **period of office**, **relationship type** (self, family member, close associate), **source of wealth summary**.
+Individual name, date of birth (masked), PEP classification (Yes/No), specific public role/title, country of influence, relationship type (e.g., Self, Family, Close Associate), source of wealth summary, date of declaration, compliance officer ID, institution name.
+
+**Document Types:**
+- **PEP Self-Declaration:** The primary client disclosure.
+- **Enhanced Due Diligence (EDD) Report:** The bank's internal verification.
+- **Source of Wealth Attestation:** Proof of where the money originated.
+- **Close Associate Disclosure:** (Linked hash) listing business partners.
 
 ## Data Visible After Verification
 
+Shows the issuer domain (`privatebank.com`, `world-check.com`, `dowjones.com`) and the risk standing.
+
 **Status Indications:**
-- **Current** — Declaration on file, individual remains client
-- **Updated** — PEP status has changed (new declaration supersedes)
-- **Relationship Ended** — Account closed
-- **Under Review** — Enhanced due diligence in progress
+- **Confirmed / Filed** — The declaration matches the institution's official AML audit trail.
+- **Updated Status** — **ALERT:** The subject's PEP status has changed (e.g., new government appointment).
+- **Under Review** — **ALERT:** The reported source of wealth is being audited by the bank.
+- **Relationship Ended** — **ALERT:** The firm has exited this relationship due to risk.
 
-## Who is a PEP?
+## Second-Party Use
 
-| Category | Examples |
-|----------|----------|
-| **Domestic PEP** | Ministers, MPs, senior civil servants, military officers, judges |
-| **Foreign PEP** | Same roles in other countries |
-| **International Organization PEP** | UN officials, World Bank executives, EU commissioners |
-| **Family Members** | Spouse, children, parents, siblings of PEPs |
-| **Close Associates** | Business partners, advisors, beneficial owners linked to PEPs |
+The **Client / Declarant** benefits from verification.
 
-## Jurisdiction Differences
+**Portability of Trust:** When opening a second account at a global bank (e.g., HSBC in London after having an account in New York), the client can provide the verified "PEP Hash" from their first institution. The new bank can instantly see **"VERIFIED PEP - CLEAR SOURCE OF WEALTH"** on their phone, allowing the onboarding to proceed without 3 months of redundant manual investigation.
 
-| Jurisdiction | Regulator | Framework | Key Differences |
-|--------------|-----------|-----------|-----------------|
-| **UK** | FCA | MLR 2017, JMLSG Guidance | Domestic PEPs treated as lower risk than foreign |
-| **US** | FinCEN | BSA, CDD Rule | Focus on foreign PEPs; no explicit domestic PEP rule |
-| **EU** | National FIUs | AMLD 4/5/6 | All PEPs (domestic and foreign) require EDD |
-
-US is notably weaker on domestic PEPs — a US senator opening a bank account in the US faces less scrutiny than the same senator opening an account in London.
+**Liability Defense:** If a client is later accused of "hiding" their status, they can use the verified, timestamped hash to prove they made a full and honest disclosure to the bank years earlier.
 
 ## Third-Party Use
 
-**Banks/investment firms** — Onboarding and ongoing due diligence
-**Compliance officers** — Risk assessment and EDD decisions
-**Auditors** — Verifying AML program effectiveness
-**Regulators** — Thematic reviews of PEP handling
-**Correspondent banks** — Assessing downstream relationships
+**Intermediate Correspondent Banks**
+**Transaction Monitoring:** When a $5M wire moves through a correspondent bank, the bank scans the verified PEP hashes attached to the file. Verification ensures that the "EDD Check" was actually performed by a reputable institution and hasn't been "Faked" to bypass sanctions.
+
+**Regulatory Auditors (e.g., FCA / FinCEN)**
+**Thematic Review:** During a surprise audit, the regulator can scan random PEP declarations. OCR-to-hash ensures the bank isn't "Providing higher-quality declarations to the regulator" than they are "Actually collecting from clients," stopping "Backdated Disclosure" fraud.
+
+**Venture Capital / M&A**
+**Board Vetting:** Verifying the "Political Risk" of a target company's founders or board members before a major acquisition.
 
 ## Verification Architecture
 
-**The Problem:**
-- Individuals may falsely deny PEP status to avoid scrutiny
-- Declarations may be backdated or altered
-- Firms may claim they obtained declarations that don't exist
+**The "Self-Denial" Fraud Problem**
 
-**The Fix:** Declaration is hashed at signing. Both firm and individual retain copies. If disputed (e.g., "I disclosed my role; they ignored it"), verification proves exactly what was declared and when.
+- **Status Masking:** Manually editing a "YES" to a "NO" on a PDF declaration to avoid the "High-Risk" label.
+- **Role Omission:** Removing a line that mentions being a "Family Member" of a sanctioned official.
+- **Source-of-Wealth Padding:** Changing "Casino Earnings" to "Family Inheritance" on a PDF before showing it to a second bank.
 
-**Note:** Verification confirms the declaration exists and is authentic — it does NOT confirm the declaration is truthful. Cross-referencing with PEP databases (World-Check, Dow Jones) remains necessary.
+**Issuer Types**
+
+**Global Transaction Banks.**
+**Specialized KYC Providers (Refinitiv, Dow Jones).**
+**National Financial Intelligence Units (FIUs).**
+
+**Privacy Salt:** Highly Critical. PEP status and wealth data are extremely sensitive legal data. The hash must be salted and access restricted to authorized compliance and regulatory IP ranges.
+
+## Rationale
+
+PEP compliance is the "First Line of Defense" against global corruption. By turning declarations into verifiable digital bridges, we ensure that the "Gatekeepers of Wealth" are held to the digital truth of the disclosure, protecting the financial system from the multi-billion dollar cost of hidden political risk.

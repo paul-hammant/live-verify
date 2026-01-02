@@ -1,337 +1,109 @@
 ---
 title: "Notary Public Services"
 category: "Notary Services"
-volume: "Large (aggregate across all notarial acts)"
-retention: "Varies by act type (7 years to permanent)"
+volume: "Very Large (aggregate)"
+retention: "7-10 years (statutory journal requirement)"
 slug: "notary-services"
-tags: ["notary", "services"]
+tags: ["notary", "acknowledgment", "jurat", "notarial-act", "identity-verification", "legal-witness", "document-authentication", "commission-fraud"]
 ---
-Notary publics serve as impartial witnesses and authentication officials for a wide range of legal documents. Nearly every notarial act is an ideal candidate for OCR-to-hash verification—the notary's name, commission number, jurisdiction, and notarization date are text elements captured in the verification line.
 
-**Note on Notary Seals:** The traditional embossed or inked notary seal is a visual/physical security feature, not OCR-readable text. The seal remains on the document as anti-forgery protection, but the verification line captures the textual data elements (notary name, commission number, expiration, jurisdiction) rather than the seal image itself.
+## What are Notary Services?
 
-## Types of Notarial Acts
+A **Notary Public** is a government-appointed official who acts as an impartial witness. Their primary job is to prevent fraud by verifying the identity of someone signing a high-stakes document (like a **Deed**, **Will**, or **Power of Attorney**). They record every act in a mandatory "Notary Journal."
 
-### Acknowledgments
+The problem is that the "Notary Seal" (the ink stamp or embossed circle) is a physical feature that is easily forged using a $20 custom stamp maker. Even a real seal doesn't prove that the person whose name is on the paper actually appeared before the notary. OCR-to-hash allows a recipient to scan the notary's seal or certificate to verify: **"Is this a legitimate commissioned official, and does this specific act exist in their digital or physical journal?"**
 
-**Purpose:** Signer acknowledges they signed a document voluntarily and are who they claim to be.
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Times, serif; border: 1px solid #000; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); position: relative;">
+  <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 30px;">
+    <div style="font-weight: bold; font-size: 1.2em; text-transform: uppercase;">Notary Acknowledgment</div>
+    <div style="font-size: 0.9em; font-style: italic;">Official Certificate of Act</div>
+  </div>
 
-**Common Uses:**
-- Real estate deeds and mortgages
-- Powers of attorney
-- Trust documents
-- Vehicle title transfers
-- Business formation documents
+  <div style="font-size: 1em; line-height: 1.6; color: #000; text-align: justify;">
+    <p>State of <strong>CALIFORNIA</strong><br>
+    County of <strong>LOS ANGELES</strong></p>
 
-**Data Verified:** Signer name, date of birth, notary name, notary commission number, commission expiration, jurisdiction, document type, acknowledgment date.
+    <p>On March 15, 2026 before me, <span data-bracket="start" data-for="notary">]</span><strong>SARAH J. JENKINS</strong>, Notary Public, personally appeared <strong>JOHN JACOB DOE</strong>, who proved to me on the basis of satisfactory evidence to be the person whose name is subscribed to the within instrument.</p>
+    
+    <p>I certify under PENALTY OF PERJURY under the laws of the State of California that the foregoing paragraph is true and correct.</p>
+  </div>
 
+  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+    <div>
+      <div style="border-top: 1px solid #000; width: 200px; padding-top: 5px; font-style: italic;">Sarah Jenkins</div>
+      <div style="font-size: 0.8em; color: #777;">Commission #: 992288-CA<br>Expires: Dec 31, 2028</div>
+    </div>
+    <div style="text-align: right;">
+      <div style="width: 100px; height: 100px; border: 2px solid #000; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; text-align: center; transform: rotate(-10deg);">NOTARY<br>OFFICIAL<br>SEAL</div>
+    </div>
+  </div>
 
-**Fraud Prevention:** Deed fraud costs billions annually. Forged acknowledgments enable property theft. Verification prevents fake notarizations on fraudulent deeds.
+  <div style="padding: 20px; background: #f9f9f9; border: 1px dashed #999; margin-top: 40px; text-align: center;">
+    <div data-verify-line="notary" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
+      title="Demo only: Individual notaries don't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:sarahnotary.com/v/ACT2026-9922 <span data-bracket="end" data-for="notary">]</span>
+    </div>
+    <div style="font-size: 0.7em; color: #666; margin-top: 10px;">
+      Scan to verify notary commission standing, witness authority, and journal entry integrity.
+    </div>
+  </div>
+</div>
 
-### Jurats
+## Data Verified
 
-**Purpose:** Affiant swears or affirms that the contents of a document are true under penalty of perjury.
+Notary name, commission number, state of jurisdiction, expiration date, signer name, type of act (Acknowledgment/Jurat), date of act, identification method (e.g., Driver's License), journal entry ID, document description (hash).
 
-**Common Uses:**
-- Affidavits and sworn statements
-- Depositions
-- Interrogatory answers
-- Immigration forms
-- Insurance claim statements
-
-**Data Verified:** Affiant name, date of birth, notary name, notary commission number, commission expiration, jurisdiction, jurat date.
-
-
-**Fraud Prevention:** Prevents forged sworn statements that could be used in litigation. Protects affiants from having statements altered after signing.
-
-### Copy Certifications
-
-**Purpose:** Notary certifies that a copy is a true and accurate reproduction of an original document.
-
-**Common Uses:**
-- Birth certificate copies
-- Passport copies for immigration
-- Diploma and transcript copies
-- Business record copies
-- Insurance policy copies
-
-**Data Verified:** Document holder name, original document description, notary name, notary commission number, commission expiration, jurisdiction, certification date.
-
-
-**Fraud Prevention:** Prevents submission of altered copies in official proceedings. Certified copy fraud can enable identity theft and credential fraud.
-
-**State Variations:** Some states (like California) prohibit notaries from certifying copies of certain government documents that can only be certified by the issuing agency.
-
-### Oaths and Affirmations
-
-**Purpose:** Notary administers a verbal oath (sworn to God) or affirmation (secular equivalent) that the person will tell the truth.
-
-**Common Uses:**
-- Court testimony
-- Security clearance applications
-- Government employment applications
-- Public office swearing-in
-- Witness depositions
-
-**Data Verified:** Person's name, notary name, notary commission number, commission expiration, jurisdiction, administration date.
-
-
-**Fraud Prevention:** Establishes legally binding commitment to truthfulness. Verification confirms oath was properly administered.
-
-### Signature Witnessing
-
-**Purpose:** Notary witnesses the signing of a document and verifies signer identity.
-
-**Common Uses:**
-- Wills and codicils
-- Contracts and agreements
-- Trust documents
-- Medical directives
-- Business contracts
-
-**Data Verified:** Signer name, witness name (if separate), notary name, notary commission number, commission expiration, jurisdiction, document type, witnessing date.
-
-
-**Fraud Prevention:** Will contests often hinge on whether execution was proper. Verified witness certifications prove valid execution.
-
-### Protests (Commercial Paper)
-
-**Purpose:** Formal notice that a negotiable instrument (check, promissory note) was presented and dishonored.
-
-**Common Uses:**
-- Dishonored checks
-- Unpaid promissory notes
-- Non-accepted drafts
-- International bill of exchange protests
-
-**Data Verified:** Instrument details (check/note number, amount), payee name, protest reason (dishonored/non-payment), notary name, notary commission number, commission expiration, jurisdiction, protest date.
-
-
-**Fraud Prevention:** Establishes legal notice of dishonor under UCC Article 3. Critical for commercial collection proceedings.
+**Document Types:**
+- **Acknowledgment:** For deeds and contracts.
+- **Jurat:** (Sworn statement) for affidavits.
+- **Certified Copy:** Proving a copy matches the original.
+- **Apostille:** (Linked hash) for international recognition.
 
 ## Data Visible After Verification
 
-Shows the issuer domain (the notary or notary service platform) and the responder text.
+Shows the issuer domain (the Notary or a Platform like Notarize) and the act's standing.
 
 **Status Indications:**
-- **Verified** - Notarial act matches notary's journal records
-- **Commission Expired** - Notary's commission has since expired (act may still be valid)
-- **Not Found** - No matching record in notary's journal
-- **Revoked** - Notary's commission was revoked
+- **Verified / Authenticated** — The act is recorded in the official notary journal.
+- **Commission Expired** — **ALERT:** The notary's commission has lapsed since the act.
+- **Revoked** — **CRITICAL:** The notary's commission was voided for misconduct.
+- **Not Found** — **CRITICAL:** This specific act was never recorded (indicates seal forgery).
 
-**Commission Link:** Verification may link to state commission database: "Verified - Commission current through [date]."
+## Second-Party Use
 
-## Second-Party Use (Document Holder Verifying Notarization)
+The **Signer (Consumer)** benefits from verification.
 
-Signers and document holders benefit from verification.
+**Deed Fraud Defense:** An elderly homeowner can maintain a verified hash of their "House Deed." If a scammer tries to file a forged deed at the county office, the verified hash of the *legitimate* notary act provides the owner with the proof needed to stop the theft.
 
-**Execution Confirmation:** Verify notarization was properly recorded.
-
-**Filing Preparation:** Verify notarization before submitting to government agencies.
-
-**Transaction Security:** Verify notarized documents in real estate and business transactions.
-
-**Records Retention:** Maintain verified copies of notarized documents.
+**Contract Finality:** Proving to a business partner that a signature was properly witnessed by a commissioned official, removing the risk of a "He-Said-She-Said" dispute in court later.
 
 ## Third-Party Use
 
-**Title Companies and Real Estate**
+**County Recorders / Registrars**
+**Vetting Integrity:** Before recording a property transfer, the clerk scans the notary's seal hash. Verification ensures the "Sarah Jenkins" on the stamp is a real, active notary and isn't a "Phantom Commission" created by a fraudster.
 
-Property transactions:
+**Lenders and Title Companies**
+**Closing Audit:** Verifying that thousands of loan documents in a portfolio were actually notarized according to state law, protecting the bank's security interest.
 
-**Deed Verification:** Verify notarization on deeds before recording.
-
-**Mortgage Documents:** Verify notarization on loan documents.
-
-**Chain of Title:** Verify historical notarizations in title chain.
-
-**Fraud Prevention:** Detect forged notarizations before recording.
-
-**Courts**
-
-Legal proceedings:
-
-**Evidence Admission:** Verify notarization on submitted affidavits.
-
-**Motion Support:** Verify sworn statements supporting motions.
-
-**Probate:** Verify notarizations on wills and estate documents.
-
-**Contempt Proceedings:** Verify affidavits of service.
-
-**Government Agencies**
-
-Official submissions:
-
-**USCIS Immigration:** Verify notarized supporting documents.
-
-**State Filings:** Verify notarized business formation documents.
-
-**Tax Authorities:** Verify notarized tax declarations.
-
-**Licensing Boards:** Verify notarized application documents.
-
-**Financial Institutions**
-
-Banking and lending:
-
-**Loan Documents:** Verify notarized mortgage and loan documents.
-
-**Account Access:** Verify notarized powers of attorney.
-
-**Wire Transfers:** Verify notarized authorization for large transfers.
-
-**Estate Settlement:** Verify notarized estate documents.
-
-**Attorneys**
-
-Legal practice:
-
-**Document Review:** Verify notarizations on client documents.
-
-**Discovery:** Verify notarized documents produced in litigation.
-
-**Closings:** Verify notarizations at real estate closings.
-
-**Due Diligence:** Verify notarized documents in transactions.
+**Foreign Consulates**
+**Legalization Speed:** Verifying that a US-based affidavit is authentic before issuing an Apostille or Consular Legalization for use in another country.
 
 ## Verification Architecture
 
-**The Notary Fraud Problem**
+**The "Rubber Stamp" Fraud Problem**
 
-Notary fraud enables many other crimes:
+- **Seal Harvesting:** Criminals buying a used notary embosser at an antique shop and using it to forge documents.
+- **Commission Masking:** Continuing to notarize using a physical "Valid" stamp after the state revoked the commission for fraud.
+- **Journal Erasure:** Signing a document today but refusing to record it in the mandatory journal to hide the signer's identity.
 
-- **Commission Fraud:** Using expired or fake notary commissions
-- **Signature Forgery:** Notary stamp applied without proper procedure
-- **Identity Fraud:** Notarizing without proper identification
-- **Journal Fraud:** Falsifying or failing to maintain journals
-- **Remote Fraud:** Notarizing without personal appearance (pre-RON)
-- **Seal Theft:** Using stolen notary seals
+**Issuer Types**
 
-OCR-to-hash addresses document alteration after notarization. Commission verification confirms the notary was valid at time of act.
+**Individual Notaries (Professional Portals).**
+**Large Law Firms / Banks (Internal Notaries).**
+**RON (Remote Online Notary) Platforms.**
 
-**Notaries as Issuers**
+**Privacy Salt:** Essential. Signer names and legal document titles are highly sensitive. The hash must be salted to prevent "Journal Scraping" by unauthorized data brokers.
 
-Notaries maintain verification records:
+## Rationale
 
-**Individual Notaries:** Personal journal records.
-
-**Notary Signing Services:** Companies employing multiple notaries.
-
-**Title Companies:** In-house notaries.
-
-**RON Platforms:** Remote Online Notarization services with digital records.
-
-**State Commissions:** State databases of commissioned notaries.
-
-Each notary or platform operates verification endpoints for acts they've performed.
-
-**State Commission Databases**
-
-State-level verification:
-
-**Secretary of State:** Most states maintain commission databases.
-
-**Public Search:** Many allow public commission verification.
-
-**Commission Status:** Active, expired, suspended, revoked.
-
-**Commission Details:** Commission number, expiration, county.
-
-Verification can link to state database: "Notary commission verified active in [state]."
-
-**Notary Journals**
-
-Record-keeping requirements:
-
-**Journal Entry:** Most states require journal of notarial acts.
-
-**Entry Contents:** Date, type of act, signer name, ID type, document type.
-
-
-**Thumbprints:** Some states require signer thumbprints.
-
-Journal entries provide the verification source for OCR-to-hash.
-
-**Remote Online Notarization (RON)**
-
-Digital notarization:
-
-**Video Conference:** Notarization via video call.
-
-**Identity Verification:** Knowledge-based authentication, credential analysis.
-
-**Recording:** Session recording retained.
-
-**Digital Seal:** Electronic notary stamp.
-
-**State Authorization:** Varying state acceptance.
-
-RON platforms have native digital verification; OCR-to-hash bridges paper outputs from RON sessions.
-
-**Apostille and Authentication**
-
-International recognition:
-
-**Apostille:** Hague Convention authentication for international use.
-
-**Chain Authentication:** Notarization → County Clerk → Secretary of State → Apostille.
-
-**Consular Legalization:** For non-Hague countries.
-
-Each link in the authentication chain can be independently verified.
-
-**E-Notarization vs. RON**
-
-Two different technologies:
-
-**E-Notarization:** In-person notarization with electronic journal/seal.
-
-**RON:** Fully remote notarization via video.
-
-**Hybrid:** Electronic documents signed in-person with notary.
-
-Each approach has different verification mechanisms.
-
-**Notary Bonds and Insurance**
-
-Financial protection:
-
-**Surety Bond:** Required in most states (typically $10,000-$25,000).
-
-**E&O Insurance:** Errors and omissions coverage.
-
-**Bond Claims:** Injured parties can claim against bond.
-
-**Coverage Limits:** Bond may not cover full damages.
-
-Verification may indicate bond status: "Notary bonded, bond current."
-
-**Multi-State Practice**
-
-Notaries across jurisdictions:
-
-**State-Specific Commission:** Each state issues separate commission.
-
-**Border Area Practice:** Some states allow reciprocity.
-
-**RON Interstate:** RON may allow serving signers in other states.
-
-**Federal Land:** Special rules for federal land within states.
-
-Verification must identify which state commission governs the act.
-
-**Training and Testing Requirements**
-
-Notary qualifications:
-
-**Education Requirements:** Vary by state (none to 6 hours).
-
-**Examination:** Some states require exam.
-
-**Background Checks:** Criminal background screening.
-
-**Renewal Training:** Continuing education in some states.
-
-Commission verification implicitly confirms the notary met state requirements.
-
+Notarization is the "Trust Link" of the legal system. By turning static stamps into verifiable digital bridges, we ensure that "Witnessing" is backed by cryptographic proof, protecting the public from the multi-billion dollar cost of document forgery.

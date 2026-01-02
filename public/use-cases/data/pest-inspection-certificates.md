@@ -1,171 +1,122 @@
 ---
-title: "Pest inspection certificates"
+title: "Pest Inspection Certificates (WDI)"
 category: "Real Estate & Property"
-volume: "Small"
-retention: "3-7 years (warranty/liability)"
+volume: "Large"
+retention: "3-7 years (statute of limitations / warranty period)"
 slug: "pest-inspection-certificates"
-tags: ["pest", "inspection", "certificates", "real", "estate", "property"]
+tags: ["real-estate", "pest-inspection", "wdi-report", "termite-certificate", "closing-documents", "mortgage-fraud", "property-disclosure", "structural-integrity"]
 ---
 
-## What is a Termite Certificate?
+## What is a Pest Inspection Certificate?
 
-Before you can buy or sell a house, the bank often requires a **Wood Destroying Insect (WDI)** report, commonly called a "Termite Certificate."
+In the real estate world, the **Wood Destroying Insect (WDI)** report (commonly called a "Termite Certificate") is a critical closing document. It is a formal certification by a licensed inspector stating whether a house has active infestations or past structural damage from termites, carpenter ants, or beetles.
 
-It is the official proof from a licensed inspector that the house isn't being eaten by bugs.
+Because a "Positive" finding can kill a home sale or require a $5,000 treatment, these reports are primary targets for fraud. Sellers often "edit" a report to turn "Active Infestation" into "None Found," or they "delete" a section that mentions $10,000 in hidden structural damage. Verified hashes bind the **Property Address, Inspection Findings, and Inspector's License** to the inspection firm's or the state board's domain (e.g., `orkin.com` or `pest-registry.gov`).
 
-Fraud is common in real estate: a seller might edit a PDF report to hide that the inspector found "Active Termites" in the garage. Verified hashes protect the **inspector's true findings**, ensuring the bank doesn't lend $500,000 on a house with structural bug damage.
-
-<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #333; background: #fff; padding: 25px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
-    <h2 style="margin: 0; text-transform: uppercase; font-size: 1.1em;">WDI INSPECTION REPORT</h2>
+<div style="max-width: 650px; margin: 24px auto; font-family: 'Times New Roman', Times, serif; border: 1px solid #333; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 30px;">
+    <div style="font-weight: bold; font-size: 1.4em; color: #004d40;">PRECISION PEST AUDITS</div>
+    <div style="font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">Official Wood Destroying Insect (WDI) Report</div>
   </div>
-  <div style="font-size: 0.95em;">
-    <p><strong>Property:</strong> <span data-bracket="start" data-for="wdi">]</span>123 Maple St, Anytown<br>
-    <strong>Result:</strong> NO ACTIVE INFESTATION FOUND</p>
-    <div data-verify-line="wdi" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;">
-      verify:bug-stop.com/v/99228877 <span data-bracket="end" data-for="wdi">]</span>
+
+  <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+    <div style="display: flex; justify-content: space-between; margin-bottom: 25px;">
+      <div>
+        <strong>Property Address:</strong><br>
+        <span data-bracket="start" data-for="wdi">]</span>123 MAPLE STREET, SPRINGFIELD, USA
+      </div>
+      <div style="text-align: right;">
+        <strong>Report ID:</strong> WDI-2026-8844<br>
+        <strong>Date:</strong> 15 MAR 2026
+      </div>
+    </div>
+
+    <div style="background: #f9f9f9; padding: 20px; border: 1px solid #ddd; margin: 20px 0;">
+      <h4 style="margin-top: 0; color: #004d40; border-bottom: 1px solid #ccc; padding-bottom: 5px;">VERIFIED FINDINGS</h4>
+      <p style="margin: 10px 0;"><strong>Active Infestation:</strong> <span style="color: #2e7d32; font-weight: bold;">NONE OBSERVED</span></p>
+      <p style="margin: 5px 0;"><strong>Previous Damage:</strong> MINOR (Garage Sill Plate)</p>
+      <p style="margin: 5px 0;"><strong>Recommendations:</strong> Annual monitoring recommended. No treatment required.</p>
+    </div>
+
+    <p style="font-size: 0.85em; font-style: italic; color: #666;">
+      "This report is an opinion of the condition of the property on the date of inspection only. It is not a guarantee or warranty."
+    </p>
+  </div>
+
+  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+    <div>
+      <div style="border-top: 1px solid #000; width: 200px; padding-top: 5px; font-style: italic;">Sarah J. Miller, Licensed Inspector</div>
+      <div style="font-size: 0.7em; color: #777;">License: #WDI-992288-TX</div>
+    </div>
+    <div style="text-align: right; color: #004d40; font-weight: bold; font-size: 0.8em;">INSPECTION VERIFIED</div>
+  </div>
+
+  <div style="padding: 20px; background: #fffbe6; border: 1px dashed #999; margin-top: 30px; text-align: center;">
+    <div data-verify-line="wdi" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
+      title="Demo only: Inspection firms don't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:precision-pest.com/v/WDI20268844 <span data-bracket="end" data-for="wdi">]</span>
+    </div>
+    <div style="font-size: 0.7em; color: #666; margin-top: 10px;">
+      Scan to verify structural findings, view high-res damage photos, and check for active service warranties.
     </div>
   </div>
 </div>
 
+## Data Verified
 
-**Certificate Variations:** Multiple certificate types or levels may exist.
+Report ID, property address, owner name (optional/masked), buyer name, inspection date, active infestation status (Yes/No), previous damage location/severity, treatment recommendations, inspector name/license, company name, date of signature.
+
+**Document Types:**
+- **WDI Inspection Report:** (Form NPMA-33) The industry standard.
+- **Treatment Certificate:** Proof that a house was recently "Tented" or treated.
+- **Termite Bond:** (Linked hash) the ongoing maintenance guarantee.
+- **Wood Infestation Letter:** A simplified summary for some lenders.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`orkin.com`, `terminix.com`, `state-ag-board.gov`) and the report standing.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Verified / Clear** — Report matches the original digital record; no active bugs.
+- **Treatment Required** — **ALERT:** The original report recommended immediate chemical treatment.
+- **Damage Flagged** — **ALERT:** Structural issues were identified that require a contractor audit.
+- **Expired** — **ALERT:** Report is more than 30 days old; re-inspection required for closing.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Home Seller / Real Estate Agent** benefits from verification.
 
-**Authenticity Confirmation:** Verify certificate after receipt to confirm it's genuine.
+**Closing Speed:** Before a bank releases a $500,000 mortgage, the underwriter scans the seller's WDI hash. "Verified by Orkin" ensures the bank that the house isn't "Bug Infested," removing the 3-day "Manual Report Vetting" delay and allowing the deal to close on schedule.
 
-**Credential Display:** Present verified credentials to employers or clients.
-
-**Professional Development:** Track verified certifications for career advancement.
-
-**Compliance Documentation:** Maintain verified certificates for regulatory requirements.
-
-**Renewal Planning:** Monitor certification status to avoid expiration.
+**Disclosure Shield:** A seller can use the verified hash to prove exactly what they disclosed to the buyer at the time of sale, defending against a "Hidden Damage" lawsuit filed 2 years later.
 
 ## Third-Party Use
 
-**Lenders and Financial Institutions**
+**Mortgage Lenders / Underwriters**
+**Collateral Risk Audit:** Thousands of "Edited" PDF reports are submitted to banks every month. OCR-to-hash connects the underwriter directly to the inspection firm's domain, stopping "Termite Fraud" at the source and protecting the bank's property lien.
 
-Credit underwriting and risk assessment:
+**Home Buyers (The Public)**
+**Due Diligence:** A potential buyer can scan the WDI hash provided in the "Listing Packet" before they even make an offer. This ensures the "Clean" report isn't a fabrication, protecting them from buying a "Money Pit" with structural rot.
 
-**Loan Underwriting:** Verify financial and property documents during loan applications.
-
-**Collateral Verification:** Confirm documentation for secured lending.
-
-**Credit Decisions:** Validate income, employment, and asset documentation.
-
-**Insurance Requirements:** Verify insurance coverage for loan requirements.
-
-**Fraud Prevention:** Detect fraudulent documentation in loan applications.
-
-**Insurance Companies**
-
-Underwriting and claims processing:
-
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Courts and Legal Professionals**
-
-Litigation and legal proceedings:
-
-**Evidence Authentication:** Verify documents submitted as evidence.
-
-**Discovery Verification:** Confirm authenticity of documents in discovery.
-
-**Dispute Resolution:** Validate contested documents in litigation.
-
-**Due Diligence:** Verify documentation in transactions and investigations.
-
-**Expert Testimony:** Support expert opinions with verified documentation.
-
-**Government Agencies**
-
-Compliance enforcement and administration:
-
-**Inspection Verification:** Field agents verify permits and licenses at sites.
-
-**Enforcement Actions:** Confirm documentation before enforcement.
-
-**Benefit Eligibility:** Verify supporting documents for benefits administration.
-
-**Compliance Audits:** Audit documentation for regulatory compliance.
-
-**Interagency Coordination:** Share verified documents across agencies.
-
-**Real Estate Professionals**
-
-Property transactions and due diligence:
-
-**Purchase Due Diligence:** Verify property documents during transactions.
-
-**Listing Preparation:** Confirm permits and documentation for listings.
-
-**Disclosure Compliance:** Validate required disclosures and permits.
-
-**Title Research:** Verify property documents for title clearance.
-
-**Appraisal Support:** Confirm documented improvements and permits.
+**Title and Escrow Companies**
+**Closing Audit:** Verifying that the WDI report in the file is the final, un-altered version required by the lender's instructions.
 
 ## Verification Architecture
 
-**The Pest inspection certificates Fraud Problem**
+**The "Finding Scrubbing" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Infestation Masking:** Changing an "Active" checkbox to "None" on a PDF to hide a termite problem.
+- **Damage Deletion:** Removing a page of the report that shows a photo of a rotted sill plate.
+- **License Mimicry:** Creating a fake report using a reputable inspector's name and license number from a public board.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**National Pest Control Firms.**
+**Independent Licensed Inspectors.**
+**State Departments of Agriculture (Licensing Boards).**
 
-**Government Entities:** Counties, cities, and special districts maintain property records.
-
-**Title Companies:** Title insurers and escrow companies for transaction documents.
-
-**Lending Institutions:** Banks and mortgage companies for loan documents.
-
-**Appraisal Firms:** Licensed appraisers for property valuations.
-
-**System Integration**
-
-Real estate verification connects to property systems:
-
-**Recording Systems:** County recorder systems for property document registration.
-
-**MLS Integration:** Multiple listing services for property documentation.
-
-**Title Plants:** Title companies maintain verification for title searches.
-
-**E-Recording:** Electronic recording systems generate verification at recording.
+**Privacy Salt:** Essential. Specific property defect details and home addresses are sensitive. The hash must be salted to prevent "Neighborhood Blight Mapping" by data brokers or speculators.
 
 ## Rationale
 
-Domain binding verifies pest control company. Certificate format suitable for OCR. Warranty verification. Liability records.
+Pest inspection is the "Structural Integrity" audit of a home. By turning static reports into verifiable digital bridges, we protect the buyer's investment and the lender's collateral, ensuring that "Clear" really means "No Bugs."

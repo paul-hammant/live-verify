@@ -1,205 +1,108 @@
 ---
-title: "Permanent residence cards (Green Card, ILR, PR)"
+title: "Permanent Residence Cards (Green Card)"
 category: "Immigration & Visa Documents"
-volume: "Small"
-retention: "10 years (card validity) + permanent"
+volume: "Very Large"
+retention: "Permanent (license lifecycle)"
 slug: "permanent-residence-cards"
-tags: ["permanent", "residence", "cards", "immigration", "visa", "documents"]
+tags: ["immigration", "green-card", "i-551", "uscis", "permanent-residence", "work-authorization", "identity-verification", "border-security", "i-9-compliance"]
 ---
 
 ## What is a Green Card?
 
-A **Permanent Resident Card** (commonly known as a **Green Card**) is the document proving that a non-citizen is authorized to live and work in the US indefinitely.
+The **Permanent Resident Card (Form I-551)**, commonly known as a **Green Card**, is the most high-value identity document in the United States. It proves that a non-citizen is authorized to live and work in the country indefinitely. It is the "Master Key" to employment, social security benefits, and international travel.
 
-It is the most high-value identity card in the country.
+Because it grants broad rights, Green Cards are the #1 target for **High-End Forgery**. Black-market "Super-Clones" can look pixel-perfect even to trained eyes. OCR-to-hash turns the **Physical Card** into a live digital bridge to the USCIS vault. This allows an employer or a bank to see if the card has been **Revoked, Expired, or Reported Stolen** in real-time. Verified hashes bind the **USCIS Number, Category Code, and Resident Name** to the `uscis.gov` domain.
 
-Because it grants the right to work and receive government benefits, Green Cards are the #1 target for "High-End Forgery." Black-market cards look perfect to the eye. OCR-to-hash turns the **Physical Card** into a live link to the USCIS database, allowing an employer or bank to see if the card has been **Revoked or Reported Stolen** today.
-
-<div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
-  <div style="background: #002d62; color: #fff; padding: 15px; text-align: center; display: flex; align-items: center; justify-content: space-between;">
+<div style="max-width: 450px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; border-radius: 15px; background: linear-gradient(135deg, #e8f5e9 0%, #fff 100%); overflow: hidden; box-shadow: 0 6px 20px rgba(0,0,0,0.2); position: relative;">
+  <div style="background: #002d62; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between; border-bottom: 3px solid #ce9e00;">
     <div>
-      <div style="font-weight: bold; font-size: 1.1em;">U.S. CITIZENSHIP & IMMIGRATION</div>
-      <div style="font-size: 0.8em;">Permanent Resident Card (I-551)</div>
+      <div style="font-weight: bold; font-size: 1em; letter-spacing: 1px;">UNITED STATES OF AMERICA</div>
+      <div style="font-size: 0.7em; opacity: 0.9;">PERMANENT RESIDENT</div>
     </div>
-    <div style="font-size: 1.5em;">🦅</div>
+    <div style="width: 40px; height: 40px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #002d62; font-weight: bold; font-size: 0.6em; text-align: center;">DHS</div>
   </div>
+
   <div style="padding: 20px; display: flex;">
-    <div style="width: 100px; height: 125px; background: #eee; margin-right: 15px; display: flex; align-items: center; justify-content: center;">[PHOTO]</div>
-    <div style="flex-grow: 1;">
-      <strong>Name:</strong> <span data-bracket="start" data-for="pr">]</span>DOE, JOHN JACOB<br>
-      <strong>USCIS #:</strong> 992-288-776<br>
-      <strong>Expires:</strong> 01/01/2030
-      <div data-verify-line="pr" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.75em;">
-        verify:uscis.gov/v/992288776 <span data-bracket="end" data-for="pr">]</span>
+    <div style="width: 110px; margin-right: 15px;">
+      <div style="width: 110px; height: 140px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #777; font-size: 0.7em; text-align: center;">[HOLDER PHOTO]</div>
+    </div>
+    <div style="flex-grow: 1; font-size: 0.85em; line-height: 1.4;">
+      <div style="font-weight: bold; font-size: 1.1em; margin-bottom: 5px; color: #333;"><span data-bracket="start" data-for="pr">]</span>DOE, JOHN JACOB</div>
+      <div style="color: #555;">
+        <strong>USCIS #:</strong> 992-288-776<br>
+        <strong>Category:</strong> RE8 (Refugee)<br>
+        <strong>Country of Birth:</strong> COLOMBIA<br>
+        <strong>Date of Birth:</strong> 05/15/1985<br>
+        <strong>Card Expires:</strong> 03/15/2036
       </div>
+    </div>
+  </div>
+
+  <div style="padding: 0 20px 20px 20px; text-align: center;">
+    <div data-verify-line="pr" style="border-top: 1px dashed #999; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #002d62; font-weight: bold;"
+      title="Demo only: USCIS doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:uscis.gov/v/pr/992288776 <span data-bracket="end" data-for="pr">]</span>
+    </div>
+    <div style="font-size: 0.6em; color: #888; margin-top: 10px; font-style: italic;">
+      Scan to verify residency status and work authorization. Responses include authoritative photo return.
     </div>
   </div>
 </div>
 
+## Data Verified
 
-**Privacy Salt:** Sensitive personal information requires random salt in verification lines to prevent hash enumeration.
+USCIS Alien Registration Number (A-Number), full name, category code (e.g., CR1, E11, RE8), card serial number, date of birth, country of birth, resident-since date, card expiration date, photograph (via hash), fingerprint status (hash), issuing office.
+
+**Document Types:**
+- **Permanent Resident Card:** (Form I-551) The plastic card.
+- **ADIT Stamp (I-551):** (Temporary) placed in a passport.
+- **I-797 Extension Notice:** (Linked hash) extending an expired card.
+- **Transportation Letter:** (Linked hash) for boarding if the card is lost abroad.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`uscis.gov`) and the real-time status.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Authorized / Permanent** — Holder is in good standing and authorized to work.
+- **Conditional** — **ALERT:** Subject must file to remove conditions by [Date].
+- **Revoked** — **CRITICAL:** Status terminated (e.g., due to criminal acts or fraud).
+- **Reported Stolen** — **CRITICAL:** The card number has been flagged by the owner.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Permanent Resident (Holder)** benefits from verification.
 
-**Status Confirmation:** Verify immigration documents after receipt from authorities.
+**Secure Employment (I-9):** When starting a new job, the resident provides the verified hash of their Green Card. The HR manager can instantly see **"AUTHORIZED - USCIS"** on their phone, removing the fear of a "High-Grade Forgery" and getting the worker on the payroll immediately.
 
-**Employment Authorization:** Confirm work authorization for I-9 compliance.
-
-**Travel Planning:** Verify travel document validity before international trips.
-
-**Status Changes:** Confirm application outcomes and new status.
-
-**Family Petitions:** Provide verified status for dependent applications.
+**Re-Entry Confidence:** A resident traveling abroad scans their own card before boarding a flight back to the US. "Verified by USCIS" ensures the traveler that their card hasn't been "administratively cancelled" while they were away, preventing a traumatic detention at the border.
 
 ## Third-Party Use
 
-**Employers**
+**Employers / Federal Contractors**
+**Zero-Trust Compliance:** Verifying that a worker's "RE8" category is authentic. OCR-to-hash connects the company directly to the DHS record, stopping "Social Security Card" fraud where stolen IDs are used to hide illegal hiring.
 
-Hiring and compliance verification:
+**Mortgage Lenders / Banks**
+**Status Vetting:** Verifying that a borrower is a "Permanent Resident" before granting a 30-year mortgage, as non-resident loans carry significantly higher risk and different interest rates.
 
-**Pre-Employment Screening:** Verify credentials during hiring process.
-
-**I-9 Compliance:** Verify work authorization and identity documents.
-
-**Credential Verification:** Confirm professional licenses and certifications.
-
-**Health Requirements:** Verify health-related documentation for workplace safety.
-
-**Background Checks:** Integrate verification into background check processes.
-
-**Government Agencies**
-
-Compliance enforcement and administration:
-
-**Inspection Verification:** Field agents verify permits and licenses at sites.
-
-**Enforcement Actions:** Confirm documentation before enforcement.
-
-**Benefit Eligibility:** Verify supporting documents for benefits administration.
-
-**Compliance Audits:** Audit documentation for regulatory compliance.
-
-**Interagency Coordination:** Share verified documents across agencies.
-
-**Healthcare Providers**
-
-Medical care and coordination:
-
-**Medical History:** Verify patient-provided medical records and test results.
-
-**Treatment Planning:** Confirm diagnostic results for treatment decisions.
-
-**Specialist Referrals:** Validate records when coordinating care.
-
-**Insurance Authorization:** Verify coverage and authorization documents.
-
-**Compliance Requirements:** Confirm vaccination and health screening records.
-
-**Educational Institutions**
-
-Admissions and enrollment:
-
-**Transfer Credits:** Verify transcripts for transfer credit evaluation.
-
-**Graduate Admissions:** Validate undergraduate credentials for graduate programs.
-
-**Professional Programs:** Confirm prerequisite credentials for professional schools.
-
-**International Students:** Verify foreign credentials for admissions and visa support.
-
-**Scholarship Awards:** Validate academic credentials for scholarship eligibility.
+**Airlines / Carrier Security**
+**Boarding Prep:** Instantly verifying the authenticity of a Green Card for a passenger boarding an international flight to the US, protecting the airline from a $5,000+ per-passenger "Inadmissible" fine.
 
 ## Verification Architecture
 
-**The Permanent residence cards (Green Card, ILR, PR) Fraud Problem**
+**The "Super-Clone" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Photo Return:** The verification response should include the **USCIS Authoritative Photo**. If the face on the phone doesn't match the face on the plastic card, the card is a clone.
+- **Geo-Anomaly Detection:** If a card hash is scanned in New York at 9 AM and Los Angeles at 10 AM, the system flags a "Cloned Identity" in circulation.
+- **Category Tampering:** Changing a "Student" visa class to a "Permanent Resident" class on a fake card.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**U.S. Citizenship and Immigration Services (USCIS).**
+**DHS SAVE System (Backend Source).**
 
-**USCIS:** U.S. Citizenship and Immigration Services for immigration documents.
-
-**DOS:** Department of State for passports and consular documents.
-
-**CBP:** Customs and Border Protection for entry/exit documentation.
-
-**Foreign Governments:** International authorities for foreign-issued documents.
-
-**System Integration**
-
-Verification integrates with relevant systems:
-
-**Issuer Systems:** Core operational systems generate verification hashes at document creation.
-
-**Industry Standards:** Existing data standards extended to include verification.
-
-**Regulatory Systems:** Government databases for systematic hash receipt and oversight.
-
-**Third-Party Platforms:** Industry portals and platforms enable verification access.
-
-**Privacy Considerations**
-
-Sensitive personal information requires special handling:
-
-**Privacy Salt:** Random salt added to verification lines prevents hash enumeration attacks.
-
-**Minimum Disclosure:** Verification response reveals only necessary information.
-
-**Access Controls:** Verification endpoints implement appropriate access restrictions.
-
-**Audit Logging:** Verification attempts logged for security and compliance.
-
-## Photo Return: Defeating High-Grade Clones
-
-Verification responses can include **USCIS's authoritative photo** of the cardholder — not just "valid/invalid" but the actual face on file.
-
-**Why This Matters:**
-
-Green Cards are the highest-value identity document in America. A perfect clone with a swapped photo could fool any employer or bank — until verification returns the **original photo** from USCIS, exposing the mismatch.
-
-| Attack | Without Photo Return | With Photo Return |
-|--------|---------------------|-------------------|
-| **Photo-swap clone** | Employer sees valid hash, accepts card | Text verifies, but returned photo doesn't match person presenting |
-| **Stolen card + lookalike** | Thief finds someone who looks similar, uses stolen card | USCIS photo reveals the difference |
-
-**The Doppelganger Attack (The "Woman in Cabin 10" Problem)**
-
-Sophisticated fraudsters search social media for facial lookalikes, recruit a doppelganger, then steal a victim's Green Card details. The clone card shows the doppelganger's (similar) face, and the returned photo is "close enough" to pass casual HR inspection.
-
-*This attack — finding lookalikes via social media facial matching — was dramatized in "The Woman in Cabin 10" (2025), where antagonists recruited a doppelganger to impersonate a billionaire.*
-
-**Countermeasure: Geo-Anomaly Detection**
-
-USCIS can monitor verification request patterns:
-- Card verified in New York at 9am, then Los Angeles at 10am? Flagged.
-- Card verified by 20 different employers in one month? Flagged.
-- Card verified repeatedly for I-9 purposes while holder is abroad? Flagged.
-
-Immigration authorities can trigger investigations when verification patterns suggest a cloned card is in circulation — potentially catching fraud rings before victims even know their identity was compromised.
+**Privacy Salt:** Highly Critical. Green Card data is subject to the Privacy Act. The hash must be salted to prevent "Enumeration" of the US non-citizen population.
 
 ## Rationale
 
-Prevents fake permanent residence cards. Domain binding verifies immigration authority. Employment eligibility verification (I-9). Benefits eligibility. Travel document. For privacy, issuers can add a random salt line to raise entropy and defeat guessing attacks. High-value fraud target.
+The Green Card is the "Gold Standard" of identity. By turning it into a verifiable digital bridge, we protect the US labor market and the banking system from the multi-billion dollar cost of high-grade identity fraud.

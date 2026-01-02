@@ -1,195 +1,139 @@
 ---
-title: "Sea waybills (non-negotiable B/L)"
+title: "Sea Waybills (Non-Negotiable B/L)"
 category: "Shipping & Freight"
-volume: "Large"
-retention: "7-10 years (proof of shipment)"
+volume: "Very Large"
+retention: "7-10 years (proof of shipment / tax audit)"
 slug: "sea-waybills"
-tags: ["waybills", "logistics", "transportation"]
+tags: ["logistics", "shipping", "sea-waybill", "non-negotiable", "ocean-freight", "customs-clearance", "supply-chain-fraud", "cargo-receipt"]
 ---
 
 ## What is a Sea Waybill?
 
-A **Sea Waybill** is a receipt for cargo loaded onto a ship. Unlike a "Bill of Lading," it is not a title document (you don't need the original paper to claim the goods). It is used for shorter routes or between trusted partners.
+A **Sea Waybill** is a non-negotiable receipt for cargo loaded onto an ocean vessel. Unlike a "Negotiable Bill of Lading," a Sea Waybill is not a document of title—the consignee (buyer) doesn't need to present the original paper to claim the goods. It is used when the parties trust each other and want to avoid the "Paperwork Delay" of mailing physical B/Ls around the world.
 
-However, it is still critical for **Trade Finance**. Banks release millions of dollars in payment when they see a valid Waybill confirming the goods have shipped.
+While simpler than a B/L, it is still a high-stakes legal proof of shipment. Fraud is common in **Trade Finance**: an exporter might "edit" a Sea Waybill to show 1,000 pallets instead of 100 to get a higher payout from a buyer or a bank. Similarly, shady shippers might hide the presence of dangerous goods. Verified hashes bind the **Container IDs, Gross Weight, and Shipped-on-Board Date** to the carrier's domain (e.g., `maersk.com` or `msc.com`).
 
-Fraudsters create "Ghost Shipments"—fake Waybills for cargo that doesn't exist—to steal money from banks. Verified hashes allow the bank to instantly confirm with the Shipping Line (like Maersk or MSC) that the shipment is real and the document matches their system.
-
-<div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 2px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <div style="border-bottom: 2px solid #333; padding: 15px; display: flex; justify-content: space-between; align-items: center;">
-    <div style="font-weight: bold; font-size: 1.4em;">MAERSK LINE</div>
-    <div style="font-size: 0.9em;">NON-NEGOTIABLE WAYBILL</div>
+<div style="max-width: 650px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 1px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="background: #002d62; color: #fff; padding: 15px; display: flex; justify-content: space-between; align-items: flex-end;">
+    <div>
+      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;">MAERSK LINE</div>
+      <div style="font-size: 0.7em; opacity: 0.8; text-transform: uppercase;">A.P. Moller-Maersk A/S • Copenhagen</div>
+    </div>
+    <div style="text-align: right;">
+      <div style="font-weight: bold; font-size: 1.1em;">SEA WAYBILL</div>
+      <div style="font-size: 0.7em; opacity: 0.9;">NON-NEGOTIABLE RECEIPT</div>
+    </div>
   </div>
 
-  <div style="padding: 20px; font-size: 0.85em;">
-    <div style="display: flex; border-bottom: 1px solid #ccc; padding-bottom: 10px; margin-bottom: 10px;">
-      <div style="width: 50%; border-right: 1px solid #ccc; padding-right: 10px;">
-        <strong>Shipper:</strong><br>
-        Shenzhen Electronics Mfg.<br>
-        Futian District, Shenzhen, CN
-      </div>
-      <div style="width: 50%; padding-left: 10px;">
-        <strong>Consignee:</strong><br>
-        Global Retail Imports LLC<br>
-        Los Angeles, CA, USA
-      </div>
+  <div style="display: grid; grid-template-columns: 1fr 1fr; border-bottom: 1px solid #000;">
+    <div style="padding: 10px; border-right: 1px solid #000; font-size: 0.75em; line-height: 1.3;">
+      <strong style="text-transform: uppercase; color: #666;">Shipper:</strong><br>
+      SHENZHEN ELECTRONICS MFG LTD.<br>
+      FUTIAN DISTRICT, SHENZHEN, CN
     </div>
-
-    <div style="display: flex; border-bottom: 1px solid #ccc; padding-bottom: 10px; margin-bottom: 10px;">
-      <div style="width: 33%;">
-        <strong>Vessel:</strong><br>
-        MAERSK SEALAND
-      </div>
-      <div style="width: 33%;">
-        <strong>Voyage:</strong><br>
-        2604W
-      </div>
-      <div style="width: 33%;">
-        <strong>B/L No:</strong><br>
-        <span data-bracket="start" data-for="waybill">]</span>MAEU123456789
-      </div>
+    <div style="padding: 10px; font-size: 0.75em; line-height: 1.3;">
+      <strong style="text-transform: uppercase; color: #666;">Waybill Number:</strong><br>
+      <div style="font-size: 1.2em; font-weight: bold;"><span data-bracket="start" data-for="way">]</span>MAE-9988-7766-55</div>
     </div>
+  </div>
 
-    <div style="margin: 20px 0;">
-      <table style="width: 100%; border: 1px solid #ccc;">
-        <tr style="background: #eee;">
-          <th style="text-align: left; padding: 5px;">Container No.</th>
-          <th style="text-align: left; padding: 5px;">Description</th>
-          <th style="text-align: right; padding: 5px;">Gross Weight</th>
-        </tr>
-        <tr>
-          <td style="padding: 5px;">MSKU9876543</td>
-          <td style="padding: 5px;">800 CTNS CONSUMER ELECTRONICS</td>
-          <td style="text-align: right; padding: 5px;">12,450 KGS</td>
-        </tr>
-      </table>
-    </div>
+  <div style="padding: 10px; border-bottom: 1px solid #000; font-size: 0.75em; line-height: 1.3;">
+    <strong style="text-transform: uppercase; color: #666;">Consignee:</strong><br>
+    GLOBAL RETAIL IMPORTS LLC, LOS ANGELES, CA, USA
+  </div>
 
-    <div style="border: 1px solid #000; padding: 10px; margin-top: 20px; text-align: center; font-weight: bold;">
-      SHIPPED ON BOARD: MAR 15, 2026<br>
-      PORT OF LOADING: YANTIAN
-    </div>
+  <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; border-bottom: 1px solid #000; font-size: 0.7em; text-transform: uppercase; text-align: center;">
+    <div style="padding: 5px; border-right: 1px solid #000;"><strong>Vessel:</strong><br>Maersk Sealand</div>
+    <div style="padding: 5px; border-right: 1px solid #000;"><strong>Voyage:</strong><br>2604W</div>
+    <div style="padding: 5px; border-right: 1px solid #000;"><strong>Port of Loading:</strong><br>Yantian, CN</div>
+    <div style="padding: 5px;"><strong>Place of Delivery:</strong><br>Los Angeles, USA</div>
+  </div>
 
-    <div data-verify-line="waybill" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+  <div style="padding: 15px;">
+    <table style="width: 100%; border-collapse: collapse; font-size: 0.8em;">
+      <tr style="border-bottom: 1px solid #eee;">
+        <th style="text-align: left; padding: 5px;">Container / Seal No.</th>
+        <th style="text-align: left; padding: 5px;">Description of Goods</th>
+        <th style="text-align: right; padding: 5px;">Gross Weight</th>
+      </tr>
+      <tr>
+        <td style="padding: 10px 5px;">MSKU-9876-543<br>SEAL: 884422</td>
+        <td style="padding: 10px 5px;">800 CARTONS CONSUMER ELECTRONICS<br>(SMARTPHONES / TABLETS)</td>
+        <td style="padding: 10px 5px; text-align: right;">12,450 KG</td>
+      </tr>
+    </table>
+  </div>
+
+  <div style="margin: 10px 20px; border: 1px solid #000; padding: 10px; text-align: center; font-weight: bold; font-size: 0.9em; background: #f9f9f9;">
+    SHIPPED ON BOARD: MARCH 15, 2026
+  </div>
+
+  <div style="padding: 20px; background: #fdfdfd; border-top: 1px solid #000; text-align: center;">
+    <div data-verify-line="way" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #002d62; font-weight: bold;"
       title="Demo only: Maersk doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:maersk.com/tracking/v/MAEU123456 <span data-bracket="end" data-for="waybill">]</span>
+      verify:maersk.com/v/MAE9988776655 <span data-bracket="end" data-for="way">]</span>
+    </div>
+    <div style="font-size: 0.7em; color: #666; margin-top: 10px; font-style: italic;">
+      Scan to verify Shipped-on-Board status, container seal integrity, and consignee authorization.
     </div>
   </div>
 </div>
 
+## Data Verified
 
-Shipper, consignee, carrier, vessel, cargo description
+Waybill number, carrier name, shipper name, consignee name, notify party, vessel name, voyage number, port of loading, port of discharge, container numbers, seal numbers, description of goods, gross weight, shipped-on-board date, freight status.
+
+**Document Types:**
+- **Sea Waybill:** The primary non-negotiable receipt.
+- **Express Release:** Proof that goods can be released without paper.
+- **Booking Confirmation:** (Linked hash) the pre-loading intent.
+- **Freight Invoice:** Final bill tied to the waybill weight.
 
 ## Data Visible After Verification
 
-Shows the issuer domain and the responder text (e.g., "Valid ID" or "Denied").
+Shows the issuer domain (`maersk.com`, `msc.com`, `cosco.com`) and the shipment standing.
 
 **Status Indications:**
-- **Valid** - Document verified and current
-- **Expired** - Document has reached expiration
-- **Revoked** - Document has been revoked or cancelled
-- **Superseded** - A newer version exists
-
-The verification response may include additional context such as issue date, expiration date, or document serial numbers.
+- **Shipped on Board** — Goods are verified as loaded onto the vessel.
+- **Delivered / Released** — **ALERT:** The cargo has already been picked up.
+- **Amended** — **ALERT:** An error in weight or cargo description was corrected.
+- **Hold Active** — **CRITICAL:** Cargo is under a customs or carrier lien.
 
 ## Second-Party Use
 
-The document holder (subject/recipient) benefits from verification.
+The **Importer (Buyer) / Notify Party** benefits from verification.
 
-**Shipment Tracking:** Verify documentation matches actual shipment.
+**Customs Clearance Speed:** When the ship is 3 days from port, the importer provides the verified hash of the Sea Waybill to the local Customs authority. The officer can instantly see **"VERIFIED WEIGHT: 12,450 KG"** on their screen, allowing the shipment to clear "Pre-Arrival" and removing the need for a physical inspection at the dock.
 
-**Customs Clearance:** Present verified documents to customs authorities.
-
-**Payment Verification:** Confirm charges match agreed terms.
-
-**Dispute Prevention:** Maintain verified records for potential disputes.
-
-**Insurance Claims:** Provide verified documentation for cargo claims.
+**Accounts Payable Approval:** The importer's finance system scans the verified waybill. "Verified by Maersk" ensures the goods were actually shipped on 15 MAR, triggering the final payment to the supplier without waiting for a manual email confirmation.
 
 ## Third-Party Use
 
-**Insurance Companies**
+**Freight Forwarders / 3PLs**
+**Inland Handoff:** Before a trucker picks up the container at the terminal, the terminal operator scans the waybill hash. Verification ensures the trucker is working for the correct consignee and that the container has been legally "Released" by the ship line.
 
-Underwriting and claims processing:
+**Trade Finance Banks**
+**Risk Management:** While Sea Waybills don't convey title, banks still use them to track "Goods in Transit." Verified hashes allow the bank to monitor the status of $100M+ in global inventory in real-time, protecting their open-account credit lines.
 
-**Policy Underwriting:** Verify supporting documents during policy issuance.
-
-**Claims Verification:** Validate documentation during claims processing.
-
-**Risk Assessment:** Confirm permits, licenses, and certifications for risk evaluation.
-
-**Fraud Detection:** Identify fraudulent documentation in claims or applications.
-
-**Coverage Disputes:** Reference verified documents in coverage determination.
-
-**Customs and Border Authorities**
-
-International trade compliance:
-
-**Import Clearance:** Verify shipping documents for customs clearance.
-
-**Duty Assessment:** Validate commercial invoices and declarations.
-
-**Trade Compliance:** Confirm certificates of origin and trade documents.
-
-**Security Screening:** Verify cargo documentation for security.
-
-**Export Controls:** Validate export documentation and licenses.
-
-**Freight Forwarders and Carriers**
-
-Logistics and transportation:
-
-**Shipment Acceptance:** Verify documents before accepting cargo.
-
-**Carrier Handoffs:** Validate documentation at transfer points.
-
-**Liability Determination:** Reference verified documents for claims.
-
-**Route Planning:** Confirm documentation for transit requirements.
-
-**Delivery Confirmation:** Verify documents at final delivery.
+**Insurance Claims Adjusters**
+**Damage Verification:** If cargo is damaged, the insurer verifies the original "Gross Weight" and "Seal Number" on the waybill hash to ensure the damage didn't occur during a secondary inland transit.
 
 ## Verification Architecture
 
-**The Sea waybills (non-negotiable B/L) Fraud Problem**
+**The "Paper Pirate" Fraud Problem**
 
-Document fraud creates significant risks:
-
-- **Fabrication:** Entirely fake documents created from scratch
-- **Alteration:** Genuine documents with modified content (dates, amounts, names)
-- **Impersonation:** Documents falsely claiming to be from legitimate issuers
-- **Expired/Revoked Documents:** Presenting invalid documents as current
-- **Cargo Misrepresentation:** False descriptions of goods being shipped
-- **Duplicate Bills:** Creating multiple originals for fraud
-- **Document Mismatch:** Documents that don't match actual cargo
-
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+- **Weight Padding:** Editing a PDF to show 10% more weight to over-charge a buyer for raw materials.
+- **Date Back-Dating:** Changing a 20 MAR "Shipped" date to 15 MAR to meet a contractual "Cancel Date."
+- **Identity Swapping:** Editing the "Consignee Name" on a PDF to trick a terminal into releasing a container to a thief.
 
 **Issuer Types**
 
-Who issues these documents and operates verification endpoints?
+**Global Ocean Carriers.**
+**Digital Freight Platforms (e.g., Flexport).**
+**Port Community Hubs.**
 
-**Carriers:** Shipping lines, airlines, trucking companies, and railroads.
-
-**Freight Forwarders:** International freight forwarders and NVOCCs.
-
-**Customs Brokers:** Licensed customs brokers for trade documentation.
-
-**Port Authorities:** Port operators for terminal and cargo documents.
-
-**System Integration**
-
-Shipping verification integrates with trade systems:
-
-**EDI Standards:** Electronic data interchange for trade documents (EDIFACT, X12).
-
-**Port Community Systems:** Port system integration for cargo documentation.
-
-**Customs Systems:** Integration with ACE, ABI, and customs clearance platforms.
-
-**Carrier Systems:** Shipping line and freight forwarder system integration.
+**Privacy Salt:** Essential. Specific buyer names and high-value cargo weights are sensitive trade secrets. The hash must be salted to prevent "Trade Lane Mapping" by competitors.
 
 ## Rationale
 
-Prevents altered cargo details. Domain binding verifies carrier. Faster cargo release than negotiable B/L. Prevents consignee fraud. International shipping standard.
+Sea Waybills are the "High-Speed Rail" of maritime paper. By turning static receipts into verifiable digital bridges, we ensure that the "Trust" required for express shipping is backed by cryptographic proof, protecting the global supply chain from the high cost of manual auditing.

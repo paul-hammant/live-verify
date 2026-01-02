@@ -2,48 +2,118 @@
 title: "Wire Transfer Confirmations (SWIFT/Fedwire)"
 category: "Banking & Payments"
 volume: "Medium-Small"
-retention: "7-10 years (audit trail, regulatory requirements)"
+retention: "7-10 years (audit trail / regulatory requirement)"
 slug: "wire-transfer-documentation"
-tags: ["wire-transfer", "swift", "fedwire", "banking", "finance", "fraud-prevention", "bec"]
+tags: ["wire-transfer", "swift", "fedwire", "banking-fraud", "bec-scam", "transaction-verification", "trade-finance", "real-estate-closing"]
 ---
 
-<div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', monospace; border: 1px solid #333; background: #fdfdfd; padding: 20px;">
-  <div style="border-bottom: 1px dashed #333; padding-bottom: 10px; margin-bottom: 15px;">
-    <strong>OUTGOING WIRE TRANSFER NOTIFICATION</strong><br>
-    <span style="font-size: 0.8em;">GOLIATH NATIONAL BANK</span>
-  </div>
-  <div style="font-size: 0.85em; line-height: 1.4;">
-    <p><strong>Ref:</strong> IMAD-20251015-A8849201<br>
-    <strong>Date:</strong> 2025-10-15 14:32:01 EST<br>
-    <strong>Amount:</strong> $4,250,000.00 USD</p>
+## What is a Wire Transfer Confirmation?
 
-    <p><strong>Originator:</strong> MegaCorp Holdings LLC<br>
-    <strong>Beneficiary:</strong> Global Supply Partners Ltd<br>
-    <strong>Beneficiary Bank:</strong> HSBC London<br>
+In the banking world, a **Wire Transfer Confirmation** (often called a "Debit Advice") is the proof that a bank has executed an order to move money via a network like **SWIFT** or **Fedwire**. It contains the unique tracking number—the **IMAD/OMAD** for US domestic wires or the **TRN** for international wires.
+
+These documents are the "Trigger for Action" in high-value commerce. A title company releases a house deed, or a supplier ships a $1M load of electronics, only *after* they see this confirmation. Fraud is rampant: **Business Email Compromise (BEC)** scammers use Photoshop to create pixel-perfect fake "Sent" confirmations to trick victims into releasing goods before the fraud is discovered. Verified hashes bind the **Reference Number, Beneficiary Account, and Amount** to the sending bank's domain (e.g., `goliathbank.com`).
+
+<div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 1px solid #333; background: #fff; padding: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="border-bottom: 1px dashed #333; padding-bottom: 15px; margin-bottom: 20px; text-align: center;">
+    <div style="font-weight: bold; font-size: 1.3em;">GOLIATH NATIONAL BANK</div>
+    <div style="font-size: 0.8em; opacity: 0.9;">OUTGOING WIRE TRANSFER NOTIFICATION</div>
+  </div>
+
+  <div style="font-size: 0.9em; line-height: 1.4; color: #000;">
+    <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+      <div>
+        <strong>Reference (IMAD):</strong><br>
+        <span data-bracket="start" data-for="wire">]</span>20260315A88442211
+      </div>
+      <div style="text-align: right;">
+        <strong>Value Date:</strong><br>
+        15 MAR 2026
+      </div>
+    </div>
+
+    <div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin-bottom: 20px;">
+      <div style="display: flex; justify-content: space-between; font-weight: bold; font-size: 1.1em;">
+        <span>WIRE AMOUNT:</span>
+        <span>$ 1,250,000.00 USD</span>
+      </div>
+    </div>
+
+    <p><strong>Originator:</strong> MEGACORP HOLDINGS LLC<br>
+    <strong>Beneficiary:</strong> GLOBAL SUPPLY PARTNERS LTD<br>
+    <strong>Beneficiary Bank:</strong> HSBC LONDON (SC: 40-02-50)<br>
     <strong>Account:</strong> ************8842</p>
 
-    <p><strong>Status:</strong> COMPLETED / FEDWIRE CONFIRMED</p>
+    <div style="border: 1px solid #000; padding: 10px; text-align: center; font-weight: bold; margin-top: 20px;">
+      STATUS: COMPLETED / FEDWIRE CONFIRMED
+    </div>
+  </div>
 
-    <div style="margin-top: 15px; border: 1px solid #ccc; background: #eee; padding: 8px; text-align: center;">
-      <strong>Verify execution status:</strong><br>
-      verify:wires.goliathbank.com/trace
+  <div style="padding: 20px; background: #fff; border-top: 1px dashed #999; margin-top: 30px; text-align: center;">
+    <div data-verify-line="wire" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
+      title="Demo only: Banks don't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:wires.goliathbank.com/v/20260315A8844 <span data-bracket="end" data-for="wire">]</span>
+    </div>
+    <div style="font-size: 0.7em; color: #666; margin-top: 10px; font-style: italic;">
+      Scan to verify execution status, beneficiary account match, and real-time OFAC clearance.
     </div>
   </div>
 </div>
 
 ## Data Verified
-**IMAD/OMAD Number** (Fedwire) or **TRN** (SWIFT), **Amount**, **Currency**, **Date/Time**, **Originator Name**, **Beneficiary Name**, **Beneficiary Bank**, **Status** (Sent/Completed/Failed).
+
+IMAD/OMAD number (Fedwire), TRN (SWIFT), UETR (Unique End-to-End Transaction Ref), originator name, beneficiary name, beneficiary bank (BIC/Swift Code), beneficiary account number (masked), transaction amount, currency, date/time of execution, status (Completed/Pending/Rejected).
+
+**Document Types:**
+- **Outgoing Wire Notification:** The primary proof for the sender.
+- **SWIFT MT103 Message:** The detailed technical instructions.
+- **Incoming Credit Advice:** Proof for the receiver that funds have landed.
+- **OFAC Clearance Notice:** (Linked hash) proving the wire passed sanctions screening.
 
 ## Data Visible After Verification
-**Status Indications:** `COMPLETED`, `PENDING`, `CANCELLED`, `RETURNED`.
-**Note:** Verification confirms the bank *executed* the order. It does not prove the beneficiary wasn't a fraudster (if the sender was tricked), but it proves the document isn't a Photoshop job.
+
+Shows the issuer domain (`goliathbank.com`, `chase.com`, `swift.com`) and the transfer standing.
+
+**Status Indications:**
+- **Completed / Confirmed** — The bank has executed the wire and the funds have left the institution.
+- **Pending / In-Review** — **ALERT:** The wire is held (e.g., for AML/fraud review); do not release goods.
+- **Rejected / Cancelled** — **CRITICAL:** The transfer was stopped; the paper confirmation is a fabrication.
+- **Returned** — **ALERT:** The receiving bank rejected the funds; money is back with the sender.
+
+## Second-Party Use
+
+The **Originator (Sender)** benefits from verification.
+
+**Deal Closure Speed:** When buying a $10M piece of machinery, the buyer sends the wire and provides the verified hash to the seller. The seller can instantly see **"VERIFIED COMPLETED"** from a reputable bank, allowing them to load the ship immediately without waiting 24 hours for the funds to actually "show up" in their own bank account.
+
+**Audit Protection:** Proving to corporate auditors that a specific large payout was an authentic, bank-executed transaction and not an "Internal Transfer" to a shell company controlled by a rogue employee.
 
 ## Third-Party Use
-**Real Estate Closings:** Title companies verify incoming wires before releasing deeds.
-**M&A Closings:** Lawyers verify funds transfer before releasing signature pages.
-**Vendor Payments:** Suppliers verify payment confirmation before shipping goods.
+
+**Title Companies / Real Estate Closing Agents**
+**Wire Fraud Defense:** Before releasing the keys to a house, the agent scans the buyer's wire confirmation hash. Verification ensures the "IMAD Number" isn't a random string of digits on a fake PDF, stopping the multi-billion dollar "Escrow Diversion" fraud.
+
+**Customs Brokers / Port Authorities**
+**Duty Payment Proof:** Verifying that the import duties stated on a customs declaration have actually been wired to the government's account.
+
+**Receiving Banks**
+**KYC / AML Vetting:** Verifying the "Purpose of Payment" and the "Originator Integrity" of a large incoming wire by scanning the sender's verified confirmation hash.
 
 ## Verification Architecture
-**The Fraud:** Business Email Compromise (BEC). Fraudsters send fake wire confirmations to delay discovery while they launder the money.
-**The Fix:** Domain binding to the *Sending Bank*. A fake PDF cannot hash to `goliathbank.com`.
-**Privacy Salt:** Wire details are sensitive. A random `Trace ID` acts as salt.
+
+**The "BEC Screenshot" Fraud Problem**
+
+- **Reference Fabrication:** Using a real bank's template but writing a fake IMAD/TRN number.
+- **Amount Inflation:** Editing a $1,250 wire into a $1,250,000 wire on a PDF to trick a seller.
+- **Beneficiary Swapping:** Editing the "Account Number" on a real confirmation to hide that the money was actually sent to a scammer's account.
+
+**Issuer Types**
+
+**Global Transaction Banks.**
+**National Central Banks (for Fedwire).**
+**Fintech Payout Hubs (e.g., Wise, Airwallex).**
+
+**Privacy Salt:** Highly Critical. Individual wire amounts and beneficiary names are extremely sensitive financial PII. The hash must be salted and access restricted to authorized trading partners.
+
+## Rationale
+
+Wire transfers are the "Hard Currency" of global trade. By turning static confirmations into verifiable digital bridges, we protect the entire commercial system from the devastating cost of BEC scams and ensure that "Sent" means "Spent" with cryptographic certainty.
