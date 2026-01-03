@@ -740,7 +740,7 @@ There are two primary methods for identifying the witness service:
 **How it works:**
 1.  **Issuance:** When the issuer creates the document, they send the hash to an independent third-party service (the Witness).
 2.  **Anchoring:** The Witness stores the hash and a timestamp, often "anchoring" it to a public ledger (blockchain or certificate transparency log).
-3.  **Verification:** The verifier app detects the witness info (via either method) and checks BOTH the issuer's endpoint (for current status) and the Witness service (to prove the document existed and was valid on a certain date).
+3.  **Verification:** The verifier app primarily checks the issuer's endpoint for current status. If witness information is available, the app provides an **option** to also check the Witness service to prove the document existed and was valid on its claimed issuance date.
 
 **Benefits:**
 -   **Immutable Timestamps:** Proves a receipt wasn't backdated.
