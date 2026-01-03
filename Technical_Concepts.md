@@ -722,16 +722,25 @@ This allows external parties (like corporate finance or tax authorities) to see 
 To prevent issuers from "rewriting history" (e.g., deleting a verification record to hide a mistake), some implementations use a **Secondary Witness**.
 
 **How it is communicated:**
-The physical document itself typically includes a second verification line or alias specifically for the witness service:
-```
-verify:hotel-chain.com/c
-witness:independent-audit.org/w
-```
+There are two primary methods for identifying the witness service:
+
+1.  **Explicitly on the document:** The physical document includes a second line or alias:
+    ```
+    verify:hotel-chain.com/c
+    witness:independent-audit.org/w
+    ```
+2.  **Discovery via Issuer Response:** The primary verification GET request returns the witness URL as metadata in its response:
+    ```json
+    {
+      "status": "OK",
+      "witness": "https://independent-audit.org/w"
+    }
+    ```
 
 **How it works:**
 1.  **Issuance:** When the issuer creates the document, they send the hash to an independent third-party service (the Witness).
 2.  **Anchoring:** The Witness stores the hash and a timestamp, often "anchoring" it to a public ledger (blockchain or certificate transparency log).
-3.  **Verification:** The verifier app detects both lines and checks BOTH the issuer's endpoint (for current status) and the Witness service (to prove the document existed and was valid on a certain date).
+3.  **Verification:** The verifier app detects the witness info (via either method) and checks BOTH the issuer's endpoint (for current status) and the Witness service (to prove the document existed and was valid on a certain date).
 
 **Benefits:**
 -   **Immutable Timestamps:** Proves a receipt wasn't backdated.
