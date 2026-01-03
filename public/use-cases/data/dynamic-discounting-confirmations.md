@@ -31,7 +31,7 @@ Suppliers use these **Early Payment Confirmations** to prove their cash flow to 
     <h3 style="margin-top: 0; color: #002d62; border-bottom: 2px solid #002d62; padding-bottom: 5px;">EARLY PAYMENT CONFIRMATION</h3>
 
     <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Supplier:</strong> <span data-bracket="start" data-for="discount">]</span>Apex Manufacturing, Ltd.<br>
+      <p><strong>Supplier:</strong> <span data-bracket="start" data-for="discount">[</span>Apex Manufacturing, Ltd.<br>
       <strong>Buyer:</strong> Global Retail Hub, Corp.</p>
 
       <div style="background: #f0f4f8; padding: 15px; border: 1px solid #d1d9e6; margin: 15px 0;">

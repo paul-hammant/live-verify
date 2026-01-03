@@ -26,7 +26,7 @@ These documents are the "Legal Safe Harbor" for high-value trade. Fraud is high-
   <div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
-        <strong>Subject:</strong> <span data-bracket="start" data-for="sanc">]</span>GLOBAL PETROLEUM TRADING LTD.<br>
+        <strong>Subject:</strong> <span data-bracket="start" data-for="sanc">[</span>GLOBAL PETROLEUM TRADING LTD.<br>
         <strong>Jurisdiction:</strong> Dubai, UAE<br>
         <strong>Entity ID:</strong> AE-99228877
       </div>

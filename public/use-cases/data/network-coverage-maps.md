@@ -22,7 +22,7 @@ A **Verified Coverage Guarantee** is a specific, timestamped attestation by the 
 
   <div style="font-family: 'Courier New', monospace; font-size: 0.95em;">
     <p><strong>Customer:</strong> Enterprise Logistics Corp</p>
-    <p><strong>Location:</strong> <span data-bracket="start" data-for="net">]</span>Site B, 4500 Warehouse Dr, Austin, TX</p>
+    <p><strong>Location:</strong> <span data-bracket="start" data-for="net">[</span>Site B, 4500 Warehouse Dr, Austin, TX</p>
     
     <p><strong>Guaranteed Service Level:</strong><br>
     Band: 5G Ultra Wideband (mmWave)<br>

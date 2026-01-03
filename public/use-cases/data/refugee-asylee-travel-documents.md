@@ -25,7 +25,7 @@ For a refugee, this document is a fragile lifeline. If an airline agent in a for
       <div style="width: 110px; height: 140px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #777; font-size: 0.7em; text-align: center;">[HOLDER PHOTO]</div>
       <div style="flex-grow: 1; margin-left: 20px; font-size: 0.9em; line-height: 1.4;">
         <div style="font-size: 0.75em; color: #888; text-transform: uppercase;">Document No.</div>
-        <div style="font-size: 1.2em; font-weight: bold; color: #002d62;"><span data-bracket="start" data-for="refugee">]</span>RT-9922-8877-XJ</div>
+        <div style="font-size: 1.2em; font-weight: bold; color: #002d62;"><span data-bracket="start" data-for="refugee">[</span>RT-9922-8877-XJ</div>
         
         <div style="margin-top: 10px;">
           <strong>Name:</strong> JUAN VALDEZ<br>

@@ -28,7 +28,7 @@ It proves the "Dirt Integrity" of your investment:
   <div style="padding: 25px;">
     <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
       <h3 style="margin: 0; color: #333;">BOUNDARY RETRACEMENT PLAT</h3>
-      <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;">Project ID: <span data-bracket="start" data-for="survey">]</span>SKYLINE-42-2026</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;">Project ID: <span data-bracket="start" data-for="survey">[</span>SKYLINE-42-2026</div>
     </div>
 
     <div style="font-size: 0.95em; line-height: 1.5; color: #333;">
@@ -137,7 +137,7 @@ _[Content merged from: land-surveys-property-boundaries]_
   <div style="padding: 25px;">
     <div style="text-align: center; border-bottom: 2px solid #333; padding-bottom: 10px; margin-bottom: 20px;">
       <h3 style="margin: 0; color: #333;">BOUNDARY PLAT MAP</h3>
-      <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;">Property: <span data-bracket="start" data-for="survey">]</span>123 Desert Lane, Austin, TX</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;">Property: <span data-bracket="start" data-for="survey">[</span>123 Desert Lane, Austin, TX</div>
     </div>
 
     <div style="font-size: 0.9em; line-height: 1.5; color: #333;">

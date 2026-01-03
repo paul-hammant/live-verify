@@ -23,7 +23,7 @@ These documents are the "Proof of Backstop." Fraud is common in "High-Risk Urban
   <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px;">
       <div>
-        <strong>Insured:</strong> <span data-bracket="start" data-for="tripra">]</span>GOLIATH PLAZA HOLDINGS LLC<br>
+        <strong>Insured:</strong> <span data-bracket="start" data-for="tripra">[</span>GOLIATH PLAZA HOLDINGS LLC<br>
         <strong>Address:</strong> 42 Wall Street, New York, NY
       </div>
       <div style="text-align: right;">

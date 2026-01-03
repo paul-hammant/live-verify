@@ -25,7 +25,7 @@ Fraud is common: people often "edit" their translated grades or court records to
   <h3 style="text-align: center; text-transform: uppercase; margin-bottom: 20px;">Certificate of Translation</h3>
 
   <div style="font-size: 1em; line-height: 1.6; color: #000; text-align: justify;">
-    <p>I, <span data-bracket="start" data-for="trans">]</span><strong>MARIA GARCIA</strong>, hereby certify that I am competent to translate from <strong>SPANISH</strong> into <strong>ENGLISH</strong> and that the attached document titled <em>Acta de Nacimiento (Birth Certificate)</em> is a true and accurate translation of the original.</p>
+    <p>I, <span data-bracket="start" data-for="trans">[</span><strong>MARIA GARCIA</strong>, hereby certify that I am competent to translate from <strong>SPANISH</strong> into <strong>ENGLISH</strong> and that the attached document titled <em>Acta de Nacimiento (Birth Certificate)</em> is a true and accurate translation of the original.</p>
     
     <div style="margin: 20px 0; border: 1px solid #eee; padding: 10px; background: #f9f9f9; font-size: 0.9em;">
       <strong>Subject:</strong> Juan Valdez<br>

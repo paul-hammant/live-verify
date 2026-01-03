@@ -29,7 +29,7 @@ Rental agents often try to force you to buy their expensive $30/day insurance by
     <h3 style="margin: 0 0 15px 0; color: #fff; font-size: 1.1em; text-transform: uppercase;">Benefit Confirmation: Auto Rental CDW</h3>
     
     <div style="font-size: 0.9em; line-height: 1.6; color: #eee;">
-      <p>This document confirms that <span data-bracket="start" data-for="card">]</span><strong>JOHN JACOB DOE</strong> (Account ...1234) is eligible for Primary Collision Damage Waiver (CDW) coverage when the rental is charged to this account.</p>
+      <p>This document confirms that <span data-bracket="start" data-for="card">[</span><strong>JOHN JACOB DOE</strong> (Account ...1234) is eligible for Primary Collision Damage Waiver (CDW) coverage when the rental is charged to this account.</p>
       
       <p><strong>Maximum Coverage:</strong> Actual Cash Value of most vehicles.<br>
       <strong>Region:</strong> Worldwide (including Ireland, Israel, Jamaica).<br>

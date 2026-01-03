@@ -32,7 +32,7 @@ Lenders and tax auditors use these verified receipts to prove that a large "Gift
     <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
       <p><strong>Part I: Person Conducting Transaction</strong></p>
       <p style="background: #f9f9f9; padding: 10px; border-left: 4px solid #002d62;">
-        <span data-bracket="start" data-for="ctr">]</span><strong>Name:</strong> JOHN JACOB DOE<br>
+        <span data-bracket="start" data-for="ctr">[</span><strong>Name:</strong> JOHN JACOB DOE<br>
         <strong>SSN/ITIN:</strong> ***-**-1234<br>
         <strong>ID:</strong> CA Driver License #*******
       </p>

@@ -18,7 +18,7 @@ furtherDerivations: 1
   <div style="font-size: 0.85em; line-height: 1.4;">
     <div style="display: flex; justify-content: space-between;">
       <div>
-        <strong>Container ID:</strong> <span data-bracket="start" data-for="eir">]</span>MSKU-998877-6<br>
+        <strong>Container ID:</strong> <span data-bracket="start" data-for="eir">[</span>MSKU-998877-6<br>
         <strong>Chassis ID:</strong> GTO-4228
       </div>
       <div style="text-align: right;">

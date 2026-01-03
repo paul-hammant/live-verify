@@ -29,7 +29,7 @@ The problem is that physical licenses—especially the wallet-sized cards carrie
     </div>
     <div style="flex-grow: 1;">
       <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Practitioner Name</div>
-      <div style="font-size: 1.2em; font-weight: bold; margin: 0 0 10px 0; color: #1a237e;"><span data-bracket="start" data-for="prof">]</span>DR. SARAH J. DOE</div>
+      <div style="font-size: 1.2em; font-weight: bold; margin: 0 0 10px 0; color: #1a237e;"><span data-bracket="start" data-for="prof">[</span>DR. SARAH J. DOE</div>
       
       <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">License #</div>
       <div style="font-size: 1em; font-weight: bold; margin: 0 0 10px 0;">ID: NY-992288-X</div>

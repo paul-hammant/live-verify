@@ -26,7 +26,7 @@ These documents are the "Proof of Legal Presence." Fraud is rampant: people whos
   <div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
-        <strong>Receipt Number:</strong> <span data-bracket="start" data-for="extension">]</span>WAC-26-992-28877<br>
+        <strong>Receipt Number:</strong> <span data-bracket="start" data-for="extension">[</span>WAC-26-992-28877<br>
         <strong>Petitioner:</strong> GOLIATH TECH SOLUTIONS INC.<br>
         <strong>Beneficiary:</strong> JOHN JACOB DOE
       </div>

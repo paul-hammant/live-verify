@@ -31,7 +31,7 @@ Fraud is common: fleet owners often "delete" expensive-to-insure trucks from the
     <h2 style="text-align: center; color: #004d40; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Proof of Commercial Insurance</h2>
 
     <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Insured:</strong> <span data-bracket="start" data-for="com-auto">]</span>Lightning Logistics, LLC<br>
+      <p><strong>Insured:</strong> <span data-bracket="start" data-for="com-auto">[</span>Lightning Logistics, LLC<br>
       <strong>DOT Number:</strong> 1234567</p>
 
       <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">

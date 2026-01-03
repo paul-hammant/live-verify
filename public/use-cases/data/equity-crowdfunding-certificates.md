@@ -24,7 +24,7 @@ Because these shares aren't traded on the stock market (like Apple or Tesla), th
 
   <div style="font-size: 1em; line-height: 1.6; color: #333; text-align: center;">
     <p>This certifies that</p>
-    <p style="font-size: 1.5em; font-weight: bold; color: #1a237e; margin: 15px 0;"><span data-bracket="start" data-for="equity">]</span>SARAH J. SMITH</p>
+    <p style="font-size: 1.5em; font-weight: bold; color: #1a237e; margin: 15px 0;"><span data-bracket="start" data-for="equity">[</span>SARAH J. SMITH</p>
     <p>is the registered holder of</p>
     <p style="font-size: 1.2em; font-weight: bold;">1,000 SHARES OF COMMON STOCK</p>
     <p>of</p>

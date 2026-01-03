@@ -23,7 +23,7 @@ furtherDerivations: 1
     <p>The Society of Actuaries hereby certifies the following mortality table for use in life insurance valuation and pricing:</p>
 
     <div style="background: #fdfdfd; padding: 15px; border: 1px solid #eee; margin: 20px 0;">
-      <p><strong>Table Name:</strong> <span data-bracket="start" data-for="mortality">]</span>2026 Commissioners Standard Ordinary (CSO)</p>
+      <p><strong>Table Name:</strong> <span data-bracket="start" data-for="mortality">[</span>2026 Commissioners Standard Ordinary (CSO)</p>
       <p><strong>Basis:</strong> U.S. General Population (2020-2024 Experience)</p>
       <p><strong>Segments:</strong> Male/Female, Smoker/Non-Smoker, Ultimate/Select</p>
     </div>

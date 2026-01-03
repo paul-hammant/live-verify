@@ -36,7 +36,7 @@ OCR-to-hash allows a diner to scan the window sticker to verify: **"Is this the 
     <div style="font-size: 1.2em; font-weight: bold; color: #2e7d32; margin-bottom: 15px;">VERY GOOD</div>
 
     <div style="font-size: 0.9em; line-height: 1.4; color: #333; border-top: 1px solid #ccc; padding-top: 15px;">
-      <strong>Establishment:</strong> <span data-bracket="start" data-for="food">]</span>THE SPICY TACO BAR<br>
+      <strong>Establishment:</strong> <span data-bracket="start" data-for="food">[</span>THE SPICY TACO BAR<br>
       <strong>Last Inspected:</strong> MARCH 15, 2026<br>
       <strong>Address:</strong> 42 HIGH STREET, LONDON
     </div>

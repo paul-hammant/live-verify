@@ -23,7 +23,7 @@ OCR-to-hash allows a citizen or neighbor to scan the notice from the sidewalk to
   </div>
 
   <div style="font-size: 0.9em; line-height: 1.6; color: #000;">
-    <p><strong>Application #:</strong> <span data-bracket="start" data-for="plan">]</span>PLN-2026-992288<br>
+    <p><strong>Application #:</strong> <span data-bracket="start" data-for="plan">[</span>PLN-2026-992288<br>
     <strong>Address:</strong> 42 SKYLINE DRIVE, SPRINGFIELD, USA</p>
 
     <div style="margin: 15px 0; padding: 15px; border: 1px solid #000; background: #fff;">

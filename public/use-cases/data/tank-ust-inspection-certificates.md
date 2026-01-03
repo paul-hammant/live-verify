@@ -26,7 +26,7 @@ These documents are high-stakes environmental proofs. Fraud is common: owners of
   <div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
-        <strong>Facility:</strong> <span data-bracket="start" data-for="ust">]</span>MAIN STREET FUEL CENTER<br>
+        <strong>Facility:</strong> <span data-bracket="start" data-for="ust">[</span>MAIN STREET FUEL CENTER<br>
         <strong>EPA Facility ID:</strong> 99228877-XJ<br>
         <strong>Address:</strong> 123 Main St, Springfield, USA
       </div>

@@ -29,7 +29,7 @@ The problem is that SBOMs are massive JSON/XML files that humans can't read. Ven
   <div style="padding: 25px;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div style="font-size: 0.9em;">
-        <strong>Product:</strong> <span data-bracket="start" data-for="sbom">]</span>Enterprise Gateway 5000<br>
+        <strong>Product:</strong> <span data-bracket="start" data-for="sbom">[</span>Enterprise Gateway 5000<br>
         <strong>Release Date:</strong> MARCH 15, 2026
       </div>
       <div style="text-align: right; font-size: 0.9em;">

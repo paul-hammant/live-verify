@@ -24,7 +24,7 @@ These documents are "Financial Anchors." Lenders use them to calculate "Escrow R
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px;">
       <div>
         <strong>Property Index Number (PIN):</strong><br>
-        <span data-bracket="start" data-for="tax-assess">]</span>14-42-992-288-0000
+        <span data-bracket="start" data-for="tax-assess">[</span>14-42-992-288-0000
       </div>
       <div style="text-align: right;">
         <strong>Tax Year:</strong> 2025<br>

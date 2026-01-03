@@ -28,7 +28,7 @@ This number is the lifeblood of the insurance market. Reinsurers use it to decid
   <h3 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; color: #000; border-bottom: 2px solid #000; padding-bottom: 10px;">Probable Maximum Loss (PML) Report</h3>
 
   <div style="font-size: 0.9em; line-height: 1.6; color: #333; margin-top: 20px;">
-    <p><strong>Insured:</strong> <span data-bracket="start" data-for="pml">]</span>Global Real Estate Trust, REIT<br>
+    <p><strong>Insured:</strong> <span data-bracket="start" data-for="pml">[</span>Global Real Estate Trust, REIT<br>
     <strong>Portfolio:</strong> US Coastal Tier 1 (142 Properties)</p>
 
     <div style="background: #f9f9f9; padding: 15px; border: 1px solid #eee; margin: 20px 0;">

@@ -28,7 +28,7 @@ Claimants use these verified worksheets to prove their income to banks for mortg
   <h3 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; color: #1565c0; border-bottom: 2px solid #1565c0; padding-bottom: 10px;">Long-Term Disability Benefit Calculation</h3>
 
   <div style="font-size: 0.95em; line-height: 1.6; color: #333; margin-top: 20px;">
-    <p><strong>Insured:</strong> <span data-bracket="start" data-for="disability">]</span><strong>JOHN JACOB DOE</strong><br>
+    <p><strong>Insured:</strong> <span data-bracket="start" data-for="disability">[</span><strong>JOHN JACOB DOE</strong><br>
     <strong>Policy Type:</strong> Individual Disability Income (Own-Occupation)</p>
 
     <div style="background: #f1f8ff; padding: 15px; border: 1px solid #bbdefb; margin: 20px 0;">

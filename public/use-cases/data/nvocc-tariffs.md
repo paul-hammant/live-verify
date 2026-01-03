@@ -22,7 +22,7 @@ The problem is that freight rates are volatile. To win business, some NVOCCs "ed
     </div>
     <div style="text-align: right;">
       <div style="font-weight: bold; font-size: 1em;">RATE FILING</div>
-      <div style="font-size: 0.7em;">Ref: <span data-bracket="start" data-for="tariff">]</span>GFL-SHA-LAX-2026</div>
+      <div style="font-size: 0.7em;">Ref: <span data-bracket="start" data-for="tariff">[</span>GFL-SHA-LAX-2026</div>
     </div>
   </div>
 

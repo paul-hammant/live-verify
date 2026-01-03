@@ -28,7 +28,7 @@ These documents are the primary evidence in post-sale lawsuits. Fraud is high-fr
       <div>
         <strong>Property Address:</strong><br>
         123 MAPLE STREET, SPRINGFIELD, USA<br>
-        <strong>Seller:</strong> <span data-bracket="start" data-for="disclose">]</span>ROBERT & MARY SMITH
+        <strong>Seller:</strong> <span data-bracket="start" data-for="disclose">[</span>ROBERT & MARY SMITH
       </div>
       <div style="text-align: right;">
         <strong>Date of Disclosure:</strong> 15 MAR 2026<br>

@@ -23,7 +23,7 @@ furtherDerivations: 1
     </div>
     <div style="flex-grow: 1;">
       <h4 style="margin: 0; color: #333;">LICENSED LOCKSMITH</h4>
-      <div style="font-size: 1.1em; font-weight: bold; margin: 5px 0;"><span data-bracket="start" data-for="locksmith">]</span>ROBERT J. MILLER</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin: 5px 0;"><span data-bracket="start" data-for="locksmith">[</span>ROBERT J. MILLER</div>
       <div style="font-size: 0.9em; color: #333; line-height: 1.4;">
         <strong>License #:</strong> LOC-992288<br>
         <strong>Company:</strong> Miller Security Solutions<br>

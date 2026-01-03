@@ -22,7 +22,7 @@ These documents are high-stakes because they are used as proof of "Intent to Tra
     </div>
     <div style="text-align: right;">
       <h2 style="margin: 0; font-size: 1.2em;">INVOICE</h2>
-      <div style="font-size: 0.9em; font-weight: bold; margin-top: 5px;"># <span data-bracket="start" data-for="travel">]</span>ETP-2026-8844</div>
+      <div style="font-size: 0.9em; font-weight: bold; margin-top: 5px;"># <span data-bracket="start" data-for="travel">[</span>ETP-2026-8844</div>
     </div>
   </div>
 

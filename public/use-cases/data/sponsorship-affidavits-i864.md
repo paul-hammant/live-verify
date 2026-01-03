@@ -29,7 +29,7 @@ These documents are high-stakes legal instruments. Fraud is common: people often
     <p><strong>Part 1. Basis for Filing:</strong> I am the petitioning sponsor.</p>
     
     <div style="background: #f9f9f9; padding: 15px; border: 1px solid #ddd; margin: 20px 0;">
-      <p><strong>Sponsor:</strong> <span data-bracket="start" data-for="i864">]</span><strong>ROBERT J. MILLER</strong><br>
+      <p><strong>Sponsor:</strong> <span data-bracket="start" data-for="i864">[</span><strong>ROBERT J. MILLER</strong><br>
       <strong>Beneficiary:</strong> SARAH JANE DOE<br>
       <strong>Household Size:</strong> 3</p>
       

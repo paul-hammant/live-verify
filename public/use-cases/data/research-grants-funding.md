@@ -23,7 +23,7 @@ These documents are the "Proof of Prestige." Researchers use them to secure tenu
   <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px;">
       <div>
-        <strong>Award Number:</strong> <span data-bracket="start" data-for="grant">]</span>NSF-2026-992288<br>
+        <strong>Award Number:</strong> <span data-bracket="start" data-for="grant">[</span>NSF-2026-992288<br>
         <strong>Effective Date:</strong> March 15, 2026
       </div>
       <div style="text-align: right;">

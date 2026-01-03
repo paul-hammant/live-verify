@@ -21,7 +21,7 @@ Because a POF is the difference between an offer being accepted or rejected, it 
       <div style="font-size: 0.8em; color: #666; text-transform: uppercase;">Private Client Services</div>
     </div>
     <div style="text-align: right; font-size: 0.85em; color: #666;">
-      Ref: <span data-bracket="start" data-for="pof">]</span>POF-99228877-XJ<br>
+      Ref: <span data-bracket="start" data-for="pof">[</span>POF-99228877-XJ<br>
       March 15, 2026
     </div>
   </div>

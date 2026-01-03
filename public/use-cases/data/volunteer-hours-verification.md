@@ -23,7 +23,7 @@ The problem is that "Volunteer Certificates" are among the easiest documents to 
 
     <div style="margin: 30px 0;">
       <div style="font-size: 1.1em;">This certifies that</div>
-      <div style="font-size: 1.8em; font-weight: bold; margin: 10px 0; color: #333;"><span data-bracket="start" data-for="volunteer">]</span>SARAH J. JENKINS</div>
+      <div style="font-size: 1.8em; font-weight: bold; margin: 10px 0; color: #333;"><span data-bracket="start" data-for="volunteer">[</span>SARAH J. JENKINS</div>
       <div style="font-size: 1.1em;">has contributed their time and talent to the community.</div>
     </div>
 

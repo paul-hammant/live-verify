@@ -25,7 +25,7 @@ It's a huge target for fraud—fake apostilles are often used to "legalize" fake
   <div style="font-size: 0.9em; line-height: 1.8;">
     <p><strong>1. Country:</strong> United States of America</p>
     <p>This public document<br>
-    <strong>2. has been signed by:</strong> <span data-bracket="start" data-for="apostille">]</span><strong>John Hancock</strong><br>
+    <strong>2. has been signed by:</strong> <span data-bracket="start" data-for="apostille">[</span><strong>John Hancock</strong><br>
     <strong>3. acting in the capacity of:</strong> Notary Public, State of New York<br>
     <strong>4. bears the seal/stamp of:</strong> John Hancock, Notary Public</p>
 

@@ -25,7 +25,7 @@ In the "Robo-Signing" scandal of 2008, banks forged millions of affidavits to fo
     <p>STATE OF NEW YORK )<br>
     COUNTY OF KINGS ) ss.:</p>
 
-    <p>I, <span data-bracket="start" data-for="affidavit">]</span><strong>JANE DOE</strong>, being duly sworn, deposes and says:</p>
+    <p>I, <span data-bracket="start" data-for="affidavit">[</span><strong>JANE DOE</strong>, being duly sworn, deposes and says:</p>
 
     <p>1. I reside at 123 Maple Street, Brooklyn, NY 11201.</p>
     <p>2. I am the identical person named as the grantee in the deed recorded in Liber 1234, Page 567.</p>

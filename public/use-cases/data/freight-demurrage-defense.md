@@ -34,7 +34,7 @@ Shipowners must prove they have this verified "Defense Cover" before they can hi
       <p>This document certifies that the following vessel is entered for FD&D coverage:</p>
 
       <div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin: 20px 0;">
-        <strong>Vessel Name:</strong> <span data-bracket="start" data-for="fdd">]</span>MV OCEAN VOYAGER<br>
+        <strong>Vessel Name:</strong> <span data-bracket="start" data-for="fdd">[</span>MV OCEAN VOYAGER<br>
         <strong>IMO Number:</strong> 9988776<br>
         <strong>Member:</strong> Global Maritime Holdings, Ltd.
       </div>

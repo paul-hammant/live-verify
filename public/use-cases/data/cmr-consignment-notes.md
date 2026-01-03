@@ -30,7 +30,7 @@ Trucking is a fragmented industry. Verified CMRs prevent "Weight Fraud" (lying a
     <div style="display: flex; border-bottom: 1px solid #000; padding-bottom: 10px;">
       <div style="width: 50%; border-right: 1px solid #000; padding-right: 10px;">
         <strong>1. Sender (name, address, country):</strong><br>
-        <span data-bracket="start" data-for="cmr">]</span>Deutsche Elektro GmbH<br>
+        <span data-bracket="start" data-for="cmr">[</span>Deutsche Elektro GmbH<br>
         Industriestr. 42, Berlin, DE
       </div>
       <div style="width: 50%; padding-left: 10px;">

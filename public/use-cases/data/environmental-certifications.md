@@ -25,7 +25,7 @@ Fraud happens when a developer uses a "Fake Plaque" or an outdated certificate t
   <div style="padding: 40px; text-align: center;">
     <div style="font-size: 1.1em; color: #666; margin-bottom: 10px;">This is to certify that</div>
     <div style="font-size: 1.8em; font-weight: bold; color: #004d40; margin-bottom: 20px;">
-      <span data-bracket="start" data-for="leed">]</span>THE SUSTAINABILITY CENTER, AUSTIN
+      <span data-bracket="start" data-for="leed">[</span>THE SUSTAINABILITY CENTER, AUSTIN
     </div>
     
     <div style="margin: 25px 0;">

@@ -29,7 +29,7 @@ These documents are the "Keys to the Cap Table." Fraud is high-stakes: a founder
       <table style="width: 100%; border-collapse: collapse;">
         <tr>
           <td style="padding-bottom: 10px;"><strong>Post-Money Valuation Cap:</strong></td>
-          <td style="text-align: right; font-weight: bold; padding-bottom: 10px;">$ <span data-bracket="start" data-for="safe">]</span>20,000,000.00</td>
+          <td style="text-align: right; font-weight: bold; padding-bottom: 10px;">$ <span data-bracket="start" data-for="safe">[</span>20,000,000.00</td>
         </tr>
         <tr>
           <td><strong>Discount Rate:</strong></td>

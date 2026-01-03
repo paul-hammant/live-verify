@@ -27,7 +27,7 @@ High-end art is a target for money laundering. Verified appraisals ensure that a
 
   <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <p><strong>Date:</strong> March 15, 2026<br>
-    <strong>Client:</strong> <span data-bracket="start" data-for="appraisal">]</span>The Sterling Cooper Foundation</p>
+    <strong>Client:</strong> <span data-bracket="start" data-for="appraisal">[</span>The Sterling Cooper Foundation</p>
 
     <h3 style="text-align: center; margin: 20px 0;">SUMMARY VALUATION REPORT</h3>
 
@@ -141,7 +141,7 @@ Forgeries are common. Fraudsters often forge the "paperwork" (the COA) using fak
     <p>This document certifies that the following work of art is an original work by the artist named herein.</p>
 
     <div style="margin: 20px 0; border-left: 4px solid #000; padding-left: 20px;">
-      <p><strong>Artist:</strong> <span data-bracket="start" data-for="art">]</span>Jean-Michel Basquiat<br>
+      <p><strong>Artist:</strong> <span data-bracket="start" data-for="art">[</span>Jean-Michel Basquiat<br>
       <strong>Title:</strong> <em>Untitled (Skull)</em><br>
       <strong>Year:</strong> 1981<br>
       <strong>Medium:</strong> Acrylic and mixed media on canvas<br>
@@ -262,7 +262,7 @@ OCR-to-Hash allows a collector to verify that their "14 / 50" is an officially r
       <strong>Year:</strong> 2025</p>
       
       <p style="border-top: 1px solid #ddd; padding-top: 10px; font-size: 1.1em; font-weight: bold;">
-        <span data-bracket="start" data-for="edition">]</span>Edition Number: 14 / 50
+        <span data-bracket="start" data-for="edition">[</span>Edition Number: 14 / 50
       </p>
     </div>
 
@@ -371,7 +371,7 @@ These letters are high-value targets for forgery—criminals create fake "expert
     <p><strong>Ref:</strong> SIG-2026-042-PC</p>
     <p>To Whom It May Concern,</p>
     
-    <p>We have examined the signature and estate stamp appearing on the reverse of the work titled <em>Guernica Sketch IV</em>, attributed to <span data-bracket="start" data-for="sig">]</span><strong>PABLO PICASSO</strong>.</p>
+    <p>We have examined the signature and estate stamp appearing on the reverse of the work titled <em>Guernica Sketch IV</em>, attributed to <span data-bracket="start" data-for="sig">[</span><strong>PABLO PICASSO</strong>.</p>
 
     <div style="margin: 20px 0; border: 1px solid #eee; padding: 15px; background: #f9f9f9; text-align: center;">
       <div style="font-style: italic; font-size: 1.2em; border-bottom: 1px solid #ccc; display: inline-block; padding: 0 20px;">Picasso</div>
@@ -488,7 +488,7 @@ Verified provenance documentation is the "History of Truth" that allows million-
     <div style="margin: 20px 0; border-top: 1px solid #ccc; padding-top: 15px;">
       <strong>PROVENANCE:</strong><br>
       <ul style="margin-left: 20px; list-style-type: circle;">
-        <li><span data-bracket="start" data-for="prov">]</span><strong>1906:</strong> Purchased from the artist by Paul Durand-Ruel, Paris.</li>
+        <li><span data-bracket="start" data-for="prov">[</span><strong>1906:</strong> Purchased from the artist by Paul Durand-Ruel, Paris.</li>
         <li><strong>1922:</strong> Collection of Dr. Albert Barnes, Philadelphia.</li>
         <li><strong>1955:</strong> Inherited by the current estate.</li>
         <li><strong>2026:</strong> Consigned to Christie's for public auction.</li>

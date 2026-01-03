@@ -34,7 +34,7 @@ Fraudsters often create fake notices to get people into high-security zones or t
     <h2 style="text-align: center; font-size: 1.2em; margin-bottom: 20px; text-transform: uppercase;">Visa Interview Appointment Notice</h2>
 
     <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
-      <p><strong>Principal Applicant:</strong> <span data-bracket="start" data-for="consul-app">]</span>SARAH JANE SMITH</p>
+      <p><strong>Principal Applicant:</strong> <span data-bracket="start" data-for="consul-app">[</span>SARAH JANE SMITH</p>
       
       <div style="background: #f0f4f8; border: 1px solid #d1d9e6; padding: 15px; margin: 15px 0;">
         <p><strong>Interview Date:</strong> March 15, 2026<br>

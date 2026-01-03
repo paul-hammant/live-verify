@@ -34,7 +34,7 @@ Big shippers (like Apple or Samsung) will not hire a forwarder without verified 
       <p>This document confirms that the following Member is entered for Freight Forwarder Liability:</p>
 
       <div style="background: #f0f4f8; border: 1px solid #d1d9e6; padding: 15px; margin: 15px 0;">
-        <strong>Member Name:</strong> <span data-bracket="start" data-for="forward">]</span>Global Logistics Solutions, Ltd.<br>
+        <strong>Member Name:</strong> <span data-bracket="start" data-for="forward">[</span>Global Logistics Solutions, Ltd.<br>
         <strong>Region:</strong> Hong Kong / South East Asia
       </div>
 

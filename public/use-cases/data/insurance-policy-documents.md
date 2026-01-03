@@ -23,7 +23,7 @@ furtherDerivations: 1
     <h2 style="text-align: center; color: #333; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Policy Evidence Portfolio</h2>
 
     <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Insured:</strong> <span data-bracket="start" data-for="ins-pol">]</span>Global Logistics Solutions, Corp.<br>
+      <p><strong>Insured:</strong> <span data-bracket="start" data-for="ins-pol">[</span>Global Logistics Solutions, Corp.<br>
       <strong>Period:</strong> March 01, 2026 to March 01, 2027</p>
 
       <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">

@@ -22,7 +22,7 @@ These documents are the "Proof of Payout." Fraud is rampant in "Small-Town Conte
     </div>
     <div style="text-align: right;">
       <div style="font-weight: bold; font-size: 1.1em;">CERTIFICATE OF COVERAGE</div>
-      <div style="font-size: 0.7em;">Policy: <span data-bracket="start" data-for="prize">]</span>PI-992288-XJ</div>
+      <div style="font-size: 0.7em;">Policy: <span data-bracket="start" data-for="prize">[</span>PI-992288-XJ</div>
     </div>
   </div>
 

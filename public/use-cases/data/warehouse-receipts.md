@@ -141,7 +141,7 @@ Because they represent high-value physical assets, these receipts are a primary 
   <div style="padding: 20px;">
     <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.85em; margin-bottom: 20px;">
       <div>
-        <strong>Depositor:</strong> <span data-bracket="start" data-for="warehouse">]</span>GLOBAL TECH IMPORTS LLC<br>
+        <strong>Depositor:</strong> <span data-bracket="start" data-for="warehouse">[</span>GLOBAL TECH IMPORTS LLC<br>
         <strong>Account #:</strong> ACCT-9922-88<br>
         <strong>Address:</strong> London, UK
       </div>

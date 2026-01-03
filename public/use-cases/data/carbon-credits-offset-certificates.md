@@ -34,7 +34,7 @@ The **Retirement Certificate** is the only proof that the company actually did w
       <p>This document certifies the permanent retirement of carbon units from the Verra Registry on behalf of:</p>
       
       <p style="text-align: center; font-size: 1.2em; font-weight: bold; margin: 15px 0;">
-        <span data-bracket="start" data-for="carbon">]</span>MICROSOFT CORPORATION
+        <span data-bracket="start" data-for="carbon">[</span>MICROSOFT CORPORATION
       </p>
 
       <div style="background: #f1f8e9; border: 1px solid #c5e1a5; padding: 15px; margin: 15px 0;">

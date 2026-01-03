@@ -17,7 +17,7 @@ furtherDerivations: 1
   <div style="font-size: 1em; line-height: 1.6; color: #333; text-align: justify;">
     <p>This Master Service Agreement (the "Agreement") is entered into as of March 15, 2026, by and between:</p>
     
-    <p><strong>CLIENT:</strong> <span data-bracket="start" data-for="msa">]</span>Globochem Worldwide, Inc.<br>
+    <p><strong>CLIENT:</strong> <span data-bracket="start" data-for="msa">[</span>Globochem Worldwide, Inc.<br>
     <strong>PROVIDER:</strong> Apex Cloud Solutions, LLC</p>
 
     <div style="margin: 20px 0; background: #f9f9f9; padding: 15px; border: 1px solid #eee;">

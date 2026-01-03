@@ -32,7 +32,7 @@ It is the primary document used for **Income Verification**:
 
   <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <p>Date: March 15, 2026</p>
-    <p><span data-bracket="start" data-for="ssa">]</span><strong>MARGARET A. WILLOWS</strong><br>
+    <p><span data-bracket="start" data-for="ssa">[</span><strong>MARGARET A. WILLOWS</strong><br>
     123 Oak Street, Springfield, IL 62704</p>
 
     <p>We are writing to verify that you receive Social Security benefits. Your current <strong>Monthly Benefit</strong> amount before deductions is:</p>

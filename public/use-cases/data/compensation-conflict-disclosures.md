@@ -47,7 +47,10 @@ Currently, these claims are unverifiable. Disclosures exist in fine print or reg
     <p style="font-size: 0.85em; color: #666;">This disclosure is current as of the date above. Material changes require updated disclosure.</p>
 
     <div style="margin-top: 15px; border-top: 1px dashed #ccc; padding-top: 10px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666;">
-      verify:disclosures.wellington-wealth.com/comp/MJW2026
+      <div data-verify-line="compensationconflict" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+        title="Demo only: This is an illustrative example of the verification line">
+        verify:disclosures.wellington-wealth.com/comp/MJW2026 <span data-bracket="end" data-for="compensationconflict">]</span>
+      </div>
     </div>
   </div>
 </div>
@@ -97,7 +100,10 @@ Verified disclosures make the information **scannable at the point of decision**
     </p>
 
     <div style="margin-top: 20px; font-size: 0.8em; font-family: monospace; color: #888;">
-      verify:conflictfree.org/attest/SC-MEM-2026
+      <div data-verify-line="compensationconflict" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+        title="Demo only: This is an illustrative example of the verification line">
+        verify:conflictfree.org/attest/SC-MEM-2026 <span data-bracket="end" data-for="compensationconflict">]</span>
+      </div>
     </div>
   </div>
 </div>
@@ -128,7 +134,7 @@ You can't just take someone's word for it. But you can ask the entities that *wo
     THIRD-PARTY PAYMENT CONFIRMATIONS
   </div>
   <div style="font-size: 0.85em; line-height: 1.8;">
-    <p><strong>Re:</strong> Dr. Sarah Chen, MD (NPI: 1234567890)</p>
+    <p><strong>Re:</strong> <span data-bracket="start" data-for="compensationconflict">[</span>Dr. Sarah Chen, MD (NPI: 1234567890)</p>
     <p><strong>Period:</strong> Calendar Year 2025</p>
 
     <div style="margin: 15px 0; padding: 10px; background: #fff; border: 1px dashed #666;">
@@ -142,7 +148,10 @@ You can't just take someone's word for it. But you can ask the entities that *wo
     <p style="font-size: 0.8em; color: #666;">Data aggregated from CMS Open Payments and direct issuer attestations.</p>
 
     <div style="margin-top: 15px; font-size: 0.8em; text-align: center; color: #888;">
-      verify:openpaymentscheck.org/confirm/SC2025
+      <div data-verify-line="compensationconflict" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+        title="Demo only: This is an illustrative example of the verification line">
+        verify:openpaymentscheck.org/confirm/SC2025 <span data-bracket="end" data-for="compensationconflict">]</span>
+      </div>
     </div>
   </div>
 </div>

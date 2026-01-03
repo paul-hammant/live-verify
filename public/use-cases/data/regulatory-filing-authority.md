@@ -20,7 +20,7 @@ Filing the wrong information, or filing without authority, can result in penalti
     <div style="font-size: 0.8em;">Statutory Submissions Delegation</div>
   </div>
   <div style="padding: 20px; font-size: 0.9em; line-height: 1.6;">
-    <p><strong>Company:</strong> Ashford Holdings Ltd<br>
+    <p><strong>Company:</strong> <span data-bracket="start" data-for="regulatoryfilingauth">[</span>Ashford Holdings Ltd<br>
     <strong>Authorized Person:</strong> Elizabeth Park<br>
     <strong>Role:</strong> Company Secretary<br>
     <strong>Issued:</strong> January 1, 2026</p>
@@ -43,7 +43,10 @@ Filing the wrong information, or filing without authority, can result in penalti
     Valid until: December 31, 2026</p>
 
     <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
-      verify:ashford-holdings.com/cosec/EP-2026
+      <div data-verify-line="regulatoryfilingauth" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+        title="Demo only: This is an illustrative example of the verification line">
+        verify:ashford-holdings.com/cosec/EP-2026 <span data-bracket="end" data-for="regulatoryfilingauth">]</span>
+      </div>
     </div>
   </div>
 </div>
@@ -86,7 +89,10 @@ Filing the wrong information, or filing without authority, can result in penalti
     Agent authorization: Filed with HMRC</p>
 
     <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
-      verify:ashford-holdings.com/tax-auth/JL-2026
+      <div data-verify-line="regulatoryfilingauth" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+        title="Demo only: This is an illustrative example of the verification line">
+        verify:ashford-holdings.com/tax-auth/JL-2026 <span data-bracket="end" data-for="regulatoryfilingauth">]</span>
+      </div>
     </div>
   </div>
 </div>
@@ -115,7 +121,10 @@ Filing the wrong information, or filing without authority, can result in penalti
     On behalf of the Board of Directors</p>
 
     <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
-      verify:ashford-holdings.com/audit/REP-2025
+      <div data-verify-line="regulatoryfilingauth" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+        title="Demo only: This is an illustrative example of the verification line">
+        verify:ashford-holdings.com/audit/REP-2025 <span data-bracket="end" data-for="regulatoryfilingauth">]</span>
+      </div>
     </div>
   </div>
 </div>

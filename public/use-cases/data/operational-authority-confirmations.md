@@ -20,7 +20,7 @@ When a vendor is told "you've been selected," or a customer is promised an SLA, 
     <div style="font-size: 0.8em;">Project & Vendor Delegation</div>
   </div>
   <div style="padding: 20px; font-size: 0.9em; line-height: 1.6;">
-    <p><strong>Company:</strong> Orion Logistics plc<br>
+    <p><strong>Company:</strong> <span data-bracket="start" data-for="operationalauthority">[</span>Orion Logistics plc<br>
     <strong>Authorized Person:</strong> Robert Kim<br>
     <strong>Role:</strong> Operations Director, Northern Region<br>
     <strong>Issued:</strong> January 1, 2026</p>
@@ -42,7 +42,10 @@ When a vendor is told "you've been selected," or a customer is promised an SLA, 
     Valid until: December 31, 2026</p>
 
     <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
-      verify:orion-logistics.com/ops-auth/RK-2026
+      <div data-verify-line="operationalauthority" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+        title="Demo only: This is an illustrative example of the verification line">
+        verify:orion-logistics.com/ops-auth/RK-2026 <span data-bracket="end" data-for="operationalauthority">]</span>
+      </div>
     </div>
   </div>
 </div>
@@ -81,7 +84,10 @@ When a vendor is told "you've been selected," or a customer is promised an SLA, 
     Expected completion: Q3 2026</p>
 
     <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
-      verify:orion-logistics.com/projects/CAPEX-2026-0087
+      <div data-verify-line="operationalauthority" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+        title="Demo only: This is an illustrative example of the verification line">
+        verify:orion-logistics.com/projects/CAPEX-2026-0087 <span data-bracket="end" data-for="operationalauthority">]</span>
+      </div>
     </div>
   </div>
 </div>
@@ -109,7 +115,10 @@ When a vendor is told "you've been selected," or a customer is promised an SLA, 
     Within standard parameters: Yes</p>
 
     <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
-      verify:orion-logistics.com/sla/MM-2026-0201
+      <div data-verify-line="operationalauthority" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+        title="Demo only: This is an illustrative example of the verification line">
+        verify:orion-logistics.com/sla/MM-2026-0201 <span data-bracket="end" data-for="operationalauthority">]</span>
+      </div>
     </div>
   </div>
 </div>

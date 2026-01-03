@@ -48,7 +48,7 @@ The **Staff ID Badge** is the worker's proof that they are authorized to be in t
     </div>
     <div style="flex-grow: 1;">
       <h4 style="margin: 0; color: #000;">ROOM SERVICE</h4>
-      <div style="font-size: 1.1em; font-weight: bold; margin: 5px 0;"><span data-bracket="start" data-for="hotel-staff">]</span>JAVIER ORTEGA</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin: 5px 0;"><span data-bracket="start" data-for="hotel-staff">[</span>JAVIER ORTEGA</div>
       <div style="font-size: 0.9em; color: #333; line-height: 1.4;">
         <strong>Employee ID:</strong> 992288<br>
         <strong>Property:</strong> Hilton Midtown, NYC<br>

@@ -24,7 +24,7 @@ Beyond the diploma on the wall, the **Academic Transcript** is the granular reco
 
   <p style="font-family: 'Times New Roman'; font-size: 1.3em; font-style: italic;">This is to certify that</p>
   
-  <h2 style="font-family: 'Arial'; margin: 25px 0; font-size: 1.8em;"><span data-bracket="start" data-for="degree">]</span>SARAH JANE CONNOR</h2>
+  <h2 style="font-family: 'Arial'; margin: 25px 0; font-size: 1.8em;"><span data-bracket="start" data-for="degree">[</span>SARAH JANE CONNOR</h2>
   
   <p style="font-family: 'Times New Roman'; font-size: 1.3em;">having satisfied the Examiners in the required course of study was on the 15th day of July, 2026 admitted to the degree of</p>
   

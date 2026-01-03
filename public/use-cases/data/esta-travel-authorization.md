@@ -28,7 +28,7 @@ Airlines are fined thousands of dollars for every passenger they let onto a plan
   <div style="padding: 25px;">
     <div style="text-align: center; margin-bottom: 20px;">
       <h2 style="margin: 0; font-size: 1.3em;">AUTHORIZATION APPROVED</h2>
-      <div style="font-size: 1.5em; font-weight: bold; margin-top: 5px; color: #2e7d32;">APPLICATION #: <span data-bracket="start" data-for="esta">]</span>9988776655</div>
+      <div style="font-size: 1.5em; font-weight: bold; margin-top: 5px; color: #2e7d32;">APPLICATION #: <span data-bracket="start" data-for="esta">[</span>9988776655</div>
     </div>
 
     <div style="font-size: 0.95em; line-height: 1.6; color: #333;">

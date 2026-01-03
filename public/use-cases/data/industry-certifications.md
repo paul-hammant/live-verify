@@ -20,7 +20,7 @@ furtherDerivations: 1
   <div style="padding: 40px; text-align: center;">
     <div style="font-size: 1.1em; color: #666; margin-bottom: 10px;">This is to certify that</div>
     <div style="font-size: 2em; font-weight: bold; color: #1a1a1a; margin-bottom: 20px;">
-      <span data-bracket="start" data-for="ind-cert">]</span>SARAH JANE SMITH
+      <span data-bracket="start" data-for="ind-cert">[</span>SARAH JANE SMITH
     </div>
     <div style="font-size: 1.1em; color: #666; margin-bottom: 25px;">has fulfilled the requirements for the designation of</div>
     <div style="font-size: 1.5em; font-weight: bold; color: #d32f2f; letter-spacing: 1px; margin-bottom: 30px;">PROJECT MANAGEMENT PROFESSIONAL</div>

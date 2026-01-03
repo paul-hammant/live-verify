@@ -28,7 +28,7 @@ This permit is a "Contract with the Earth." It says: "You are allowed to harm 15
   <div style="padding: 25px;">
     <div style="text-align: center; border-bottom: 2px solid #2e7d32; padding-bottom: 10px; margin-bottom: 20px;">
       <h3 style="margin: 0; color: #1b5e20;">INCIDENTAL TAKE PERMIT</h3>
-      <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;">Permit #: <span data-bracket="start" data-for="species">]</span>PER-99228877</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;">Permit #: <span data-bracket="start" data-for="species">[</span>PER-99228877</div>
     </div>
 
     <div style="font-size: 0.95em; line-height: 1.6; color: #333;">

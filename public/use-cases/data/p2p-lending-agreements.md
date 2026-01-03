@@ -28,7 +28,7 @@ The **Lending Agreement** (or Promissory Note) is the legal contract that says: 
   <h3 style="text-align: center; text-transform: uppercase; margin-bottom: 25px; letter-spacing: 1px; color: #002d62;">Borrower Promissory Note</h3>
 
   <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
-    <p>This certifies a valid lending agreement exists for <span data-bracket="start" data-for="p2p">]</span><strong>Borrower:</strong> John Jacob Doe.</p>
+    <p>This certifies a valid lending agreement exists for <span data-bracket="start" data-for="p2p">[</span><strong>Borrower:</strong> John Jacob Doe.</p>
 
     <div style="background: #f0f4f8; padding: 15px; border: 1px solid #d1d9e6; margin: 20px 0;">
       <table style="width: 100%; font-size: 0.95em;">

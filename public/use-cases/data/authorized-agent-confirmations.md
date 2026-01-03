@@ -48,7 +48,7 @@ When challenged by police, property owners, or bystanders, these agents need pro
     <div style="font-size: 0.8em;">Asset Recovery Order</div>
   </div>
   <div style="padding: 20px; font-size: 0.9em; line-height: 1.6;">
-    <p><strong>Lender:</strong> AutoFinance UK Ltd<br>
+    <p><strong>Lender:</strong> <span data-bracket="start" data-for="authorizedagentconfi">[</span>AutoFinance UK Ltd<br>
     <strong>Recovery Agent:</strong> Nationwide Asset Recovery<br>
     <strong>Agent ID:</strong> NAR-7742<br>
     <strong>Order Date:</strong> February 10, 2026</p>
@@ -67,7 +67,10 @@ When challenged by police, property owners, or bystanders, these agents need pro
     Recovery authorized by: Collections Manager</p>
 
     <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
-      verify:autofinance-uk.com/recovery/AB12CDE-2026
+      <div data-verify-line="authorizedagentconfi" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+        title="Demo only: This is an illustrative example of the verification line">
+        verify:autofinance-uk.com/recovery/AB12CDE-2026 <span data-bracket="end" data-for="authorizedagentconfi">]</span>
+      </div>
     </div>
   </div>
 </div>
@@ -99,7 +102,10 @@ When challenged by police, property owners, or bystanders, these agents need pro
     Valid for 12 months from issue date</p>
 
     <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
-      verify:gov.uk/courts/writs/WC-2026-00887
+      <div data-verify-line="authorizedagentconfi" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+        title="Demo only: This is an illustrative example of the verification line">
+        verify:gov.uk/courts/writs/WC-2026-00887 <span data-bracket="end" data-for="authorizedagentconfi">]</span>
+      </div>
     </div>
   </div>
 </div>
@@ -134,7 +140,10 @@ For locksmiths and tree surgeons, the authorizing party is an individual homeown
     Technician: Mike Roberts (ID: SE-447)</p>
 
     <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
-      verify:secureentry.co.uk/jobs/2026-0215-14MA
+      <div data-verify-line="authorizedagentconfi" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+        title="Demo only: This is an illustrative example of the verification line">
+        verify:secureentry.co.uk/jobs/2026-0215-14MA <span data-bracket="end" data-for="authorizedagentconfi">]</span>
+      </div>
     </div>
   </div>
 </div>
@@ -171,7 +180,10 @@ For locksmiths and tree surgeons, the authorizing party is an individual homeown
     Arboricultural Association member: AA-2018-772</p>
 
     <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
-      verify:greenwood-trees.co.uk/jobs/2026-0220-27OL
+      <div data-verify-line="authorizedagentconfi" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+        title="Demo only: This is an illustrative example of the verification line">
+        verify:greenwood-trees.co.uk/jobs/2026-0220-27OL <span data-bracket="end" data-for="authorizedagentconfi">]</span>
+      </div>
     </div>
   </div>
 </div>
@@ -210,7 +222,10 @@ Three different authorization sources depending on context:
     Recovery: QuickTow Services</p>
 
     <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
-      verify:parksecure.co.uk/removals/XY67ZZZ-2026-0215
+      <div data-verify-line="authorizedagentconfi" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+        title="Demo only: This is an illustrative example of the verification line">
+        verify:parksecure.co.uk/removals/XY67ZZZ-2026-0215 <span data-bracket="end" data-for="authorizedagentconfi">]</span>
+      </div>
     </div>
   </div>
 </div>
@@ -262,7 +277,10 @@ Simple notice inviting challenge before work begins:
     </p>
 
     <p style="font-size: 0.8em; font-family: monospace; text-align: center; color: #666; margin-top: 15px;">
-      verify:[authorization-domain]/advance/[ref]
+      <div data-verify-line="authorizedagentconfi" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+        title="Demo only: This is an illustrative example of the verification line">
+        verify:propertyworks-auth.co.uk/advance/PWK-2026-0315 <span data-bracket="end" data-for="authorizedagentconfi">]</span>
+      </div>
     </p>
   </div>
 </div>
@@ -293,7 +311,10 @@ Full details including authorized individuals:
     </p>
 
     <p style="font-size: 0.8em; font-family: monospace; text-align: center; color: #666; margin-top: 15px;">
-      verify:[authorization-domain]/works/[ref]
+      <div data-verify-line="authorizedagentconfi" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+        title="Demo only: This is an illustrative example of the verification line">
+        verify:propertyworks-auth.co.uk/works/PWK-2026-0315-A1 <span data-bracket="end" data-for="authorizedagentconfi">]</span>
+      </div>
     </p>
   </div>
 </div>

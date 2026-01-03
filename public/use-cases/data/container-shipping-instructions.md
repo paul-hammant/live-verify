@@ -28,7 +28,7 @@ Fraudsters often "mis-declare" cargo in the instructions (e.g., calling high-tax
   <div style="padding: 20px;">
     <div style="display: flex; justify-content: space-between; font-size: 0.9em; margin-bottom: 20px;">
       <div>
-        <strong>Shipper:</strong> <span data-bracket="start" data-for="ship">]</span>Global Tech Exports, Inc.<br>
+        <strong>Shipper:</strong> <span data-bracket="start" data-for="ship">[</span>Global Tech Exports, Inc.<br>
         <strong>Booking #:</strong> 99228877
       </div>
       <div style="text-align: right;">

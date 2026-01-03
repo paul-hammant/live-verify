@@ -26,7 +26,7 @@ These documents are the "Proof of Mission." Fraud is extremely rare but high-imp
   <div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
-        <strong>Operator:</strong> <span data-bracket="start" data-for="space">]</span>SKY-NET COMMUNICATIONS INC.<br>
+        <strong>Operator:</strong> <span data-bracket="start" data-for="space">[</span>SKY-NET COMMUNICATIONS INC.<br>
         <strong>Satellite ID:</strong> SN-2026-042 (Alpha-Sat)<br>
         <strong>COSPAR ID:</strong> 2026-992A (Pending)
       </div>

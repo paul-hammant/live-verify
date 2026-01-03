@@ -26,7 +26,7 @@ It's not just for geography—it's for **Tariffs**. If a company ships microproc
     <div style="display: flex; border-bottom: 1px solid #333; padding-bottom: 10px; margin-bottom: 10px;">
       <div style="width: 50%; border-right: 1px solid #333; padding-right: 10px;">
         <strong>1. Exporter:</strong><br>
-        <span data-bracket="start" data-for="origin-us">]</span>Texas Instruments, Inc.<br>
+        <span data-bracket="start" data-for="origin-us">[</span>Texas Instruments, Inc.<br>
         12500 TI Blvd, Dallas, TX 75243
       </div>
       <div style="width: 50%; padding-left: 10px;">

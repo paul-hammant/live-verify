@@ -25,7 +25,7 @@ Because the stakes are so high, every crane must be professionally inspected eve
   <div style="padding: 25px;">
     <div style="text-align: center; border-bottom: 2px solid #fbc02d; padding-bottom: 10px; margin-bottom: 20px;">
       <h3 style="margin: 0; color: #333;">ANNUAL INSPECTION CERTIFICATE</h3>
-      <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;">Certificate #: <span data-bracket="start" data-for="crane">]</span>C-992288-26</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;">Certificate #: <span data-bracket="start" data-for="crane">[</span>C-992288-26</div>
     </div>
 
     <div style="font-size: 0.9em; line-height: 1.5; color: #333;">

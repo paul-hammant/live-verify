@@ -27,7 +27,7 @@ Scammers often create fake FFL PDF papers to trick online sellers into shipping 
 
   <div style="padding: 25px;">
     <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
-      <h3 style="margin: 0; color: #333;">LICENSE NUMBER: <span data-bracket="start" data-for="ffl">]</span>9-99-887-01-2C-99228</h3>
+      <h3 style="margin: 0; color: #333;">LICENSE NUMBER: <span data-bracket="start" data-for="ffl">[</span>9-99-887-01-2C-99228</h3>
     </div>
 
     <div style="font-size: 0.95em; line-height: 1.6; color: #333;">

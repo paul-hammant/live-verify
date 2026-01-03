@@ -18,7 +18,7 @@ furtherDerivations: 1
     <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px;">
       <div style="font-size: 0.9em; line-height: 1.4; color: #333;">
         <strong>Donor Name:</strong><br>
-        <span data-bracket="start" data-for="blood">]</span><strong>BRUCE WAYNE</strong><br>
+        <span data-bracket="start" data-for="blood">[</span><strong>BRUCE WAYNE</strong><br>
         <strong>DOB:</strong> 02/19/1972
       </div>
       <div style="text-align: center; border: 3px solid #b71c1c; padding: 5px 10px; border-radius: 8px;">

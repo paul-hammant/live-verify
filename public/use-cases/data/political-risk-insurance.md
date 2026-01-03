@@ -22,7 +22,7 @@ These documents are the "Proof of Protection." Fraud is high-stakes: a developer
     </div>
     <div style="text-align: right;">
       <div style="font-weight: bold; font-size: 1.1em;">POLICY SUMMARY</div>
-      <div style="font-size: 0.7em;">Ref: <span data-bracket="start" data-for="pri">]</span>PRI-2026-992288</div>
+      <div style="font-size: 0.7em;">Ref: <span data-bracket="start" data-for="pri">[</span>PRI-2026-992288</div>
     </div>
   </div>
 

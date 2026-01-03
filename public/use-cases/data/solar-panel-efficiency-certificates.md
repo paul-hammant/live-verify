@@ -27,7 +27,7 @@ These certificates are the foundation of **Solar Financing** and **Warranties**.
     <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
         <strong>Model:</strong> Vertex S+ (Black)<br>
-        <strong>Serial #:</strong> <span data-bracket="start" data-for="solar">]</span>SN-99228877-XJ<br>
+        <strong>Serial #:</strong> <span data-bracket="start" data-for="solar">[</span>SN-99228877-XJ<br>
         <strong>Manufacturer:</strong> Trina Solar Co., Ltd.
       </div>
       <div style="text-align: right;">

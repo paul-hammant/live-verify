@@ -22,7 +22,7 @@ These documents are the "Proof of Solvency" for the supply chain. Large retailer
     </div>
     <div style="text-align: right;">
       <div style="font-weight: bold; font-size: 0.9em;">POLICY SUMMARY</div>
-      <div style="font-size: 0.7em;">Ref: <span data-bracket="start" data-for="liab">]</span>PL-99228877</div>
+      <div style="font-size: 0.7em;">Ref: <span data-bracket="start" data-for="liab">[</span>PL-99228877</div>
     </div>
   </div>
 

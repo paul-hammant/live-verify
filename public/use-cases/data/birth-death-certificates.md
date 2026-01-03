@@ -26,7 +26,7 @@ Verified vital records allow banks and agencies to check the **Live Status** of 
 
   <div style="font-size: 1em; line-height: 1.8; color: #333;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 15px;">
-      <div><strong>Name:</strong> <span data-bracket="start" data-for="birth">]</span><strong>JOHN JACOB DOE</strong></div>
+      <div><strong>Name:</strong> <span data-bracket="start" data-for="birth">[</span><strong>JOHN JACOB DOE</strong></div>
       <div style="text-align: right;"><strong>File No:</strong> 137-2026-9922</div>
     </div>
 

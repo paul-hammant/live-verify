@@ -22,7 +22,7 @@ These digital agreements are the "Lien on Future Revenue." Fraud is rampant in t
     </div>
     <div style="text-align: right;">
       <div style="font-weight: bold; font-size: 0.9em;">FINANCING AGREEMENT</div>
-      <div style="font-size: 0.7em; opacity: 0.9;">Ref: <span data-bracket="start" data-for="platform">]</span>SC-2026-992288</div>
+      <div style="font-size: 0.7em; opacity: 0.9;">Ref: <span data-bracket="start" data-for="platform">[</span>SC-2026-992288</div>
     </div>
   </div>
 

@@ -18,7 +18,7 @@ Because this document governs the distribution of hundreds of thousands of dolla
   <div style="background: #eee; padding: 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #000;">
     <div style="font-weight: bold; font-size: 1.2em;">ALTA SETTLEMENT STATEMENT</div>
     <div style="text-align: right;">
-      <div style="font-size: 0.8em; color: #666;">File #: <span data-bracket="start" data-for="settle">]</span>ESC-99228877-XJ</div>
+      <div style="font-size: 0.8em; color: #666;">File #: <span data-bracket="start" data-for="settle">[</span>ESC-99228877-XJ</div>
       <div style="font-size: 0.8em; color: #666;">Date: 15 MAR 2026</div>
     </div>
   </div>

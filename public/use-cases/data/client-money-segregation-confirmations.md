@@ -23,7 +23,7 @@ These documents are the "Safety Certificates" for an investor's cash. Fraud is h
   <div style="padding: 30px; font-size: 0.95em; line-height: 1.6; color: #333;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 10px;">
       <div>
-        <strong>Firm:</strong> <span data-bracket="start" data-for="cass">]</span>STERLING INVESTMENTS LTD<br>
+        <strong>Firm:</strong> <span data-bracket="start" data-for="cass">[</span>STERLING INVESTMENTS LTD<br>
         <strong>FCA FRN:</strong> 789012 (Authorized)
       </div>
       <div style="text-align: right;">

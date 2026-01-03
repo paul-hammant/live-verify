@@ -23,7 +23,7 @@ It isn't just about the price; it records:
   <div style="display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
     <div style="font-weight: bold; font-size: 1.2em;">SCHNEIDER NATIONAL</div>
     <div style="text-align: right;">
-      Invoice #: <span data-bracket="start" data-for="freight-inv">]</span>INV-998877-SN<br>
+      Invoice #: <span data-bracket="start" data-for="freight-inv">[</span>INV-998877-SN<br>
       Date: 15 MAR 2026
     </div>
   </div>

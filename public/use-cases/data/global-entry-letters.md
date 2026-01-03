@@ -28,7 +28,7 @@ Fraud is common: scammers often create fake "Global Entry" PDFs to trick employe
   <div style="padding: 25px;">
     <div style="text-align: center; margin-bottom: 20px;">
       <h2 style="margin: 0; font-size: 1.3em;">MEMBERSHIP CONFIRMATION</h2>
-      <div style="font-size: 1.5em; font-weight: bold; margin-top: 5px; color: #002d62;">PASSID: <span data-bracket="start" data-for="ttp">]</span>998877665</div>
+      <div style="font-size: 1.5em; font-weight: bold; margin-top: 5px; color: #002d62;">PASSID: <span data-bracket="start" data-for="ttp">[</span>998877665</div>
     </div>
 
     <div style="font-size: 0.95em; line-height: 1.6; color: #333;">

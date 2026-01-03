@@ -26,7 +26,7 @@ These documents are the "Paper Gold" of the lending industry. In the **Secondary
       <div>MARCH 15, 2026</div>
     </div>
 
-    <p>FOR VALUE RECEIVED, the undersigned <span data-bracket="start" data-for="note">]</span><strong>ROBERT J. MILLER</strong> (the "Borrower"), promises to pay to the order of <strong>GOLIATH NATIONAL BANK</strong> (the "Lender"), the principal sum of <strong>One Hundred Twenty-Five Thousand Dollars</strong> ($125,000.00) with interest at the rate of <strong>6.5%</strong> per annum.</p>
+    <p>FOR VALUE RECEIVED, the undersigned <span data-bracket="start" data-for="note">[</span><strong>ROBERT J. MILLER</strong> (the "Borrower"), promises to pay to the order of <strong>GOLIATH NATIONAL BANK</strong> (the "Lender"), the principal sum of <strong>One Hundred Twenty-Five Thousand Dollars</strong> ($125,000.00) with interest at the rate of <strong>6.5%</strong> per annum.</p>
     
     <div style="background: #f9f9f9; padding: 15px; border: 1px solid #ccc; margin: 20px 0;">
       <strong>Payment Terms:</strong> Monthly installments of $790.00 commencing May 1, 2026. Final payment due March 1, 2041 (Maturity).

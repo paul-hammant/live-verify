@@ -20,7 +20,7 @@ furtherDerivations: 1
     <p>This document serves as a verified record of the following manuscript version as received by the publisher:</p>
 
     <div style="margin: 20px 0; border-left: 4px solid #333; padding-left: 20px; background: #f9f9f9; padding-top: 10px; padding-bottom: 10px;">
-      <p><strong>Title:</strong> <span data-bracket="start" data-for="manu">]</span>"THE VERIFICATION CHRONICLES" (v.2.4)<br>
+      <p><strong>Title:</strong> <span data-bracket="start" data-for="manu">[</span>"THE VERIFICATION CHRONICLES" (v.2.4)<br>
       <strong>Author:</strong> J.K. Row-Verify<br>
       <strong>Editor:</strong> Marcus J. Miller</p>
       

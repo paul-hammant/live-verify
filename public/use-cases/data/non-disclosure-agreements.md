@@ -26,7 +26,7 @@ A **Verified NDA** adds a cryptographic hash to the signature page. This proves:
     <p>This Agreement is made effective as of <strong>January 15, 2026</strong>, by and between:</p>
     
     <p><strong>Disclosing Party:</strong> Acme Global Hub, Inc.<br>
-    <strong>Receiving Party:</strong> <span data-bracket="start" data-for="nda">]</span><strong>Consultant Dynamics, LLC</strong></p>
+    <strong>Receiving Party:</strong> <span data-bracket="start" data-for="nda">[</span><strong>Consultant Dynamics, LLC</strong></p>
 
     <p><strong>1. Confidential Information.</strong> Receiving Party shall not disclose any technical data, designs, trade secrets, or unreleased software code related to the "Project X" initiative...</p>
     

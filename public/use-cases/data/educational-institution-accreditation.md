@@ -27,7 +27,7 @@ In most countries, the government doesn't "Grade" universities. Instead, private
 
   <div style="font-size: 1.1em; line-height: 1.8; color: #333; text-align: center;">
     <p>This is to certify that</p>
-    <p style="font-size: 1.5em; font-weight: bold; color: #1a365d; margin: 15px 0;"><span data-bracket="start" data-for="accred">]</span>UNIVERSITY OF EXCELLENCE</p>
+    <p style="font-size: 1.5em; font-weight: bold; color: #1a365d; margin: 15px 0;"><span data-bracket="start" data-for="accred">[</span>UNIVERSITY OF EXCELLENCE</p>
     <p>is accredited by the Middle States Commission on Higher Education, an institutional accrediting agency recognized by the U.S. Secretary of Education and the Council for Higher Education Accreditation.</p>
     
     <div style="background: #f9f9f9; padding: 15px; border: 1px solid #eee; margin: 25px 0; font-size: 0.9em; text-align: left;">

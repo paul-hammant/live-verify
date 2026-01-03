@@ -29,7 +29,7 @@ Farmers use these verified eligibility letters to get "Operating Loans" from ban
     <h3 style="margin-top: 0; color: #1b5e20; border-bottom: 2px solid #1b5e20; padding-bottom: 5px;">NOTICE OF PAYMENT ELIGIBILITY</h3>
 
     <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Producer:</strong> <span data-bracket="start" data-for="subsidy">]</span>Miller Family Farms, Inc.<br>
+      <p><strong>Producer:</strong> <span data-bracket="start" data-for="subsidy">[</span>Miller Family Farms, Inc.<br>
       <strong>Business Type:</strong> Corporation (EIN: **-***5544)</p>
 
       <div style="background: #f1f8e9; padding: 15px; border: 1px solid #c5e1a5; margin: 15px 0;">

@@ -20,7 +20,7 @@ furtherDerivations: 1
   <div style="padding: 30px;">
     <div style="border-bottom: 2px solid #333; padding-bottom: 10px; margin-bottom: 20px;">
       <h3 style="margin: 0; color: #333;">PRODUCT IDENTIFICATION</h3>
-      <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;">Model: <span data-bracket="start" data-for="doc">]</span>S-SERIES ROBOTIC HUB (V4.2)</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;">Model: <span data-bracket="start" data-for="doc">[</span>S-SERIES ROBOTIC HUB (V4.2)</div>
     </div>
 
     <div style="font-size: 0.95em; line-height: 1.6; color: #333;">

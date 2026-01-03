@@ -28,7 +28,7 @@ This "Ethical Premium" is worth billions of dollars. Large retailers (like Starb
   <div style="padding: 30px; text-align: center;">
     <div style="font-size: 1.1em; line-height: 1.6; color: #333; margin-bottom: 25px;">
       This is to certify that<br>
-      <span data-bracket="start" data-for="fairtrade">]</span><strong>COOPERATIVA CAFETERA DEL SUR</strong><br>
+      <span data-bracket="start" data-for="fairtrade">[</span><strong>COOPERATIVA CAFETERA DEL SUR</strong><br>
       (Producer ID: FLO-992288)
     </div>
 

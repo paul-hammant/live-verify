@@ -33,7 +33,7 @@ Verified EOBs are essential for **HSA/FSA Reimbursement**. Fraudsters often edit
   <div style="padding: 25px;">
     <div style="display: flex; justify-content: space-between; font-size: 0.9em; margin-bottom: 20px; color: #555;">
       <div>
-        <strong>Patient:</strong> <span data-bracket="start" data-for="eob-health">]</span>SARAH J. DOE<br>
+        <strong>Patient:</strong> <span data-bracket="start" data-for="eob-health">[</span>SARAH J. DOE<br>
         <strong>Provider:</strong> Westside Medical Clinic
       </div>
       <div style="text-align: right;">

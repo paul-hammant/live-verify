@@ -23,7 +23,7 @@ These documents are critical for highway safety. Fraud is rampant: shady carrier
   <div style="padding: 20px;">
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.85em; margin-bottom: 20px;">
       <div>
-        <strong>Carrier:</strong> <span data-bracket="start" data-for="dot">]</span>GLOBAL LOGISTICS CORP.<br>
+        <strong>Carrier:</strong> <span data-bracket="start" data-for="dot">[</span>GLOBAL LOGISTICS CORP.<br>
         <strong>USDOT #:</strong> 99228877<br>
         <strong>Address:</strong> Springfield, USA
       </div>

@@ -32,7 +32,7 @@ The **Consent Form** is the legal receipt for this digital handshake. It proves:
     <h3 style="margin-top: 0; color: #004d40; border-bottom: 2px solid #004d40; padding-bottom: 5px;">AUTHORIZATION RECORD</h3>
 
     <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
-      <p>This certifies that <span data-bracket="start" data-for="ob-consent">]</span><strong>Customer:</strong> JANE M. SMITH (Ending in ...4421) has granted permission to:</p>
+      <p>This certifies that <span data-bracket="start" data-for="ob-consent">[</span><strong>Customer:</strong> JANE M. SMITH (Ending in ...4421) has granted permission to:</p>
       
       <div style="background: #f1f8e9; padding: 15px; border: 1px solid #c5e1a5; margin: 20px 0;">
         <p><strong>Third-Party Provider:</strong> ClearScore (via Plaid)<br>

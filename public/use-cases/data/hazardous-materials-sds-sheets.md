@@ -29,7 +29,7 @@ Fraud is dangerous here: some managers use a 10-year-old SDS to hide that a chem
 
   <div style="padding: 25px;">
     <div style="border-bottom: 2px solid #333; padding-bottom: 10px; margin-bottom: 20px;">
-      <h2 style="margin: 0; font-size: 1.3em;"><span data-bracket="start" data-for="sds">]</span>ACETONE (Technical Grade)</h2>
+      <h2 style="margin: 0; font-size: 1.3em;"><span data-bracket="start" data-for="sds">[</span>ACETONE (Technical Grade)</h2>
       <div style="font-size: 0.9em; color: #666;">Manufacturer: Global Chemicals, Corp.</div>
     </div>
 

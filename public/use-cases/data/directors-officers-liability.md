@@ -31,7 +31,7 @@ High-profile executives won't join a board unless they see verified proof of thi
     <h2 style="text-align: center; color: #000; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">D&O Policy Declarations</h2>
 
     <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Insured Organization:</strong> <span data-bracket="start" data-for="do-pol">]</span>Globochem Worldwide, Inc.<br>
+      <p><strong>Insured Organization:</strong> <span data-bracket="start" data-for="do-pol">[</span>Globochem Worldwide, Inc.<br>
       <strong>Jurisdiction:</strong> Delaware, USA</p>
 
       <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">

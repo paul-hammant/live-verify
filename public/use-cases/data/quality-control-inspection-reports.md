@@ -29,7 +29,7 @@ For critical components (e.g., bolts for an airplane wing, medical implants, or 
   <div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9em; margin-bottom: 25px;">
       <div>
-        <strong>Batch Number:</strong> <span data-bracket="start" data-for="qc">]</span>LOT-9922-XJ<br>
+        <strong>Batch Number:</strong> <span data-bracket="start" data-for="qc">[</span>LOT-9922-XJ<br>
         <strong>Product:</strong> Grade 8 Hex Bolts (Zinc Plated)<br>
         <strong>Customer:</strong> Global Aerospace Corp.
       </div>

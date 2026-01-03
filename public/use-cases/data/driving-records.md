@@ -20,7 +20,7 @@ Unlike a self-declaration ("I have no points"), an authority-issued record is **
     <div style="font-size: 0.8em;">Driver and Vehicle Licensing Agency</div>
   </div>
   <div style="padding: 20px; font-size: 0.9em; line-height: 1.6;">
-    <p><strong>Licence Holder:</strong> James Michael Smith<br>
+    <p><strong>Licence Holder:</strong> <span data-bracket="start" data-for="drivingrecords">[</span>James Michael Smith<br>
     <strong>Licence Number:</strong> SMITH890123JS9AB<br>
     <strong>Date of Birth:</strong> [Verified but not displayed]<br>
     <strong>Record Date:</strong> 15 February 2026, 09:42 GMT</p>
@@ -44,7 +44,10 @@ Unlike a self-declaration ("I have no points"), an authority-issued record is **
     </p>
 
     <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
-      verify:gov.uk/dvla/records/SMITH890123JS9AB-2026-0215
+      <div data-verify-line="drivingrecords" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+        title="Demo only: This is an illustrative example of the verification line">
+        verify:gov.uk/dvla/records/SMITH890123JS9AB-2026-0215 <span data-bracket="end" data-for="drivingrecords">]</span>
+      </div>
     </div>
   </div>
 </div>
@@ -76,7 +79,10 @@ Unlike a self-declaration ("I have no points"), an authority-issued record is **
     </p>
 
     <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
-      verify:gov.uk/dvla/records/WILSO901234SJ9CD-2026-0215
+      <div data-verify-line="drivingrecords" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+        title="Demo only: This is an illustrative example of the verification line">
+        verify:gov.uk/dvla/records/WILSO901234SJ9CD-2026-0215 <span data-bracket="end" data-for="drivingrecords">]</span>
+      </div>
     </div>
   </div>
 </div>

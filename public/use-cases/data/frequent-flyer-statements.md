@@ -23,7 +23,7 @@ You need this verified proof for a **"Status Match"**—where a rival airline gi
       <div style="font-size: 0.8em; opacity: 0.8;">AAdvantage&reg; Executive Statement</div>
     </div>
     <div style="text-align: right;">
-      <div style="font-size: 0.8em;">Member #: <span data-bracket="start" data-for="loyalty">]</span>99228877</div>
+      <div style="font-size: 0.8em;">Member #: <span data-bracket="start" data-for="loyalty">[</span>99228877</div>
     </div>
   </div>
 

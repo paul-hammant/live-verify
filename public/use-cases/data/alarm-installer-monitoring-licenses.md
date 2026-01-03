@@ -33,7 +33,7 @@ Always scan the badge before letting a "technician" into your home to learn your
       <h2 style="margin-top: 0; color: #333; font-size: 1.2em;">ALARM SYSTEMS INSTALLER</h2>
       
       <div style="font-size: 0.95em; line-height: 1.5; color: #333;">
-        <p><strong>Licensee:</strong> <span data-bracket="start" data-for="alarm">]</span>ROBERT PAULSON<br>
+        <p><strong>Licensee:</strong> <span data-bracket="start" data-for="alarm">[</span>ROBERT PAULSON<br>
         <strong>License #:</strong> B-1234567<br>
         <strong>Company:</strong> Fight Club Security, LLC</p>
 

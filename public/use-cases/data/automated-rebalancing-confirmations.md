@@ -35,7 +35,7 @@ These trades happen by the thousands every second. An **Automated Rebalancing Co
     </div>
 
     <div style="font-size: 0.95em; line-height: 1.5; color: #333;">
-      <p>Hello <span data-bracket="start" data-for="rebal">]</span><strong>Sarah Connor</strong>,</p>
+      <p>Hello <span data-bracket="start" data-for="rebal">[</span><strong>Sarah Connor</strong>,</p>
       <p>Your portfolio was automatically rebalanced today to maintain your 9.0/10 risk score and capture tax-loss harvesting opportunities.</p>
 
       <table style="width: 100%; border-collapse: collapse; margin-top: 15px;">

@@ -25,7 +25,7 @@ Fraud is common: drivers often edit a $400 payout to read $4,000 to trick a land
   <div style="padding: 30px;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px;">
       <div>
-        <div style="font-size: 1.1em; font-weight: bold; color: #333;"><span data-bracket="start" data-for="gig">]</span>SARAH JANE SMITH</div>
+        <div style="font-size: 1.1em; font-weight: bold; color: #333;"><span data-bracket="start" data-for="gig">[</span>SARAH JANE SMITH</div>
         <div style="font-size: 0.9em; color: #666;">Partner ID: 99228877</div>
       </div>
       <div style="text-align: right;">

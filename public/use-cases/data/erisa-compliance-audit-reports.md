@@ -25,7 +25,7 @@ If a company is in financial trouble, they might "Edit" this report to hide a fu
   <h3 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; color: #000; border-bottom: 2px solid #000; padding-bottom: 10px;">ERISA Compliance Audit Report</h3>
 
   <div style="font-size: 0.95em; line-height: 1.6; color: #333; margin-top: 20px;">
-    <p><strong>Plan Sponsor:</strong> <span data-bracket="start" data-for="erisa">]</span>Initech Employees' 401(k) Plan<br>
+    <p><strong>Plan Sponsor:</strong> <span data-bracket="start" data-for="erisa">[</span>Initech Employees' 401(k) Plan<br>
     <strong>Plan Year Ending:</strong> December 31, 2025</p>
 
     <div style="background: #fdfdfd; padding: 15px; border: 1px solid #eee; margin: 20px 0;">

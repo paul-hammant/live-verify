@@ -22,7 +22,7 @@ Fraud happens when sellers "Hide" easements from buyers by deleting pages from l
   </div>
 
   <div style="font-size: 1em; line-height: 1.6; color: #000; text-align: justify;">
-    <p>This Grant of Easement is made on March 15, 2026, between <strong>Grantor:</strong> <span data-bracket="start" data-for="easement">]</span><strong>John Jacob Doe</strong> and <strong>Grantee:</strong> Pacific Gas & Electric Company.</p>
+    <p>This Grant of Easement is made on March 15, 2026, between <strong>Grantor:</strong> <span data-bracket="start" data-for="easement">[</span><strong>John Jacob Doe</strong> and <strong>Grantee:</strong> Pacific Gas & Electric Company.</p>
 
     <p>The Grantor hereby grants to the Grantee a permanent non-exclusive easement for the purpose of installing and maintaining subterranean electrical conduits across the following described property:</p>
     

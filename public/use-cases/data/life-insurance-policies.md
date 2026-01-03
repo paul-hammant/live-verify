@@ -20,7 +20,7 @@ furtherDerivations: 1
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
       <div>
         <strong>Policy Number:</strong> 99228877-WL<br>
-        <strong>Insured:</strong> <span data-bracket="start" data-for="life-pol">]</span><strong>JOHN JACOB DOE</strong>
+        <strong>Insured:</strong> <span data-bracket="start" data-for="life-pol">[</span><strong>JOHN JACOB DOE</strong>
       </div>
       <div style="text-align: right;">
         <strong>Date of Issue:</strong><br>

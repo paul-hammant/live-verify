@@ -32,7 +32,7 @@ Customs officers use this invoice to decide:
     <div style="display: flex; margin-bottom: 20px;">
       <div style="width: 50%;">
         <strong>EXPORTER (SELLER):</strong><br>
-        <span data-bracket="start" data-for="invoice">]</span>Shenzhen Tech Components, Ltd.<br>
+        <span data-bracket="start" data-for="invoice">[</span>Shenzhen Tech Components, Ltd.<br>
         Building 4, High-Tech Park<br>
         Shenzhen, GD, China
       </div>

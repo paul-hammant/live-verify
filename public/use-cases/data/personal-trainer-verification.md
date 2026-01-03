@@ -28,7 +28,7 @@ OCR-to-hash allows a client to scan the trainer's digital badge or physical ID t
     </div>
     <div style="flex-grow: 1;">
       <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Professional Name</div>
-      <div style="font-size: 1.2em; font-weight: bold; margin: 0 0 10px 0; color: #333;"><span data-bracket="start" data-for="fit">]</span>SARAH J. MILLER</div>
+      <div style="font-size: 1.2em; font-weight: bold; margin: 0 0 10px 0; color: #333;"><span data-bracket="start" data-for="fit">[</span>SARAH J. MILLER</div>
       
       <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Credential</div>
       <div style="font-size: 1em; font-weight: bold; margin: 0 0 10px 0;">Certified Personal Trainer</div>

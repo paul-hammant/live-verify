@@ -25,7 +25,7 @@ Because these lead directly to high-paying jobs, "internship fraud" (faking a ce
 
     <div style="margin: 30px 0;">
       <div style="font-size: 1.1em;">This is to certify that</div>
-      <div style="font-size: 1.8em; font-weight: bold; margin: 10px 0; color: #2c3e50;"><span data-bracket="start" data-for="intern">]</span>SARAH J. MILLER</div>
+      <div style="font-size: 1.8em; font-weight: bold; margin: 10px 0; color: #2c3e50;"><span data-bracket="start" data-for="intern">[</span>SARAH J. MILLER</div>
       <div style="font-size: 1.1em;">has successfully completed a</div>
       <div style="font-size: 1.3em; font-weight: bold; margin: 10px 0;">SOFTWARE ENGINEERING INTERNSHIP</div>
       <div style="font-size: 1.1em;">at</div>

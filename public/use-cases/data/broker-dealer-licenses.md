@@ -22,7 +22,7 @@ furtherDerivations: 1
       <h3 style="margin-top: 0; color: #002d62; font-size: 1.2em;">REGISTERED REPRESENTATIVE</h3>
       
       <div style="font-size: 0.95em; line-height: 1.5; color: #333;">
-        <p><strong>Individual:</strong> <span data-bracket="start" data-for="broker">]</span>JORDAN BELFORT<br>
+        <p><strong>Individual:</strong> <span data-bracket="start" data-for="broker">[</span>JORDAN BELFORT<br>
         <strong>CRD Number:</strong> 9988776<br>
         <strong>Firm:</strong> Stratton Oakmont, Inc.</p>
 

@@ -22,7 +22,7 @@ These documents are high-value targets for **Invoice Factoring Fraud**. A dishon
     </div>
     <div style="text-align: right;">
       <h2 style="margin: 0; color: #000; font-size: 1.5em; letter-spacing: 1px;">PURCHASE ORDER</h2>
-      <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px; color: #d32f2f;"># <span data-bracket="start" data-for="po">]</span>PO-2026-992288</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px; color: #d32f2f;"># <span data-bracket="start" data-for="po">[</span>PO-2026-992288</div>
     </div>
   </div>
 

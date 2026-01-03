@@ -20,7 +20,7 @@ furtherDerivations: 1
   <div style="padding: 25px;">
     <div style="text-align: center; margin-bottom: 20px;">
       <h2 style="margin: 0; font-size: 1.3em;">ADMISSION (I-94) RECORD NUMBER</h2>
-      <div style="font-size: 1.5em; font-weight: bold; margin-top: 5px; color: #002d62;"><span data-bracket="start" data-for="i94">]</span>998877665 42</div>
+      <div style="font-size: 1.5em; font-weight: bold; margin-top: 5px; color: #002d62;"><span data-bracket="start" data-for="i94">[</span>998877665 42</div>
     </div>
 
     <div style="font-size: 0.95em; line-height: 1.6; color: #333;">

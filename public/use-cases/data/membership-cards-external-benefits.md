@@ -25,13 +25,16 @@ A gym membership card only needs to work at the gym—they have your photo on fi
     <div style="background: gold; color: #003366; padding: 4px 12px; border-radius: 4px; font-weight: bold;">PREMIER</div>
   </div>
   <div style="font-size: 0.9em; line-height: 1.5;">
-    <p style="margin: 5px 0;"><strong>Member:</strong> Jennifer M. Kowalski</p>
+    <p style="margin: 5px 0;"><strong>Member:</strong> <span data-bracket="start" data-for="membershipcardsexter">[</span>Jennifer M. Kowalski</p>
     <p style="margin: 5px 0;"><strong>Member #:</strong> 438 722 991 847 3</p>
     <p style="margin: 5px 0;"><strong>Since:</strong> 2018</p>
     <p style="margin: 5px 0;"><strong>Valid Thru:</strong> 12/2026</p>
   </div>
   <div style="margin-top: 15px; background: rgba(255,255,255,0.1); padding: 8px; border-radius: 4px; font-size: 0.75em; text-align: center;">
-    verify:member.aaa.com/card
+    <div data-verify-line="membershipcardsexter" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+      title="Demo only: This is an illustrative example of the verification line">
+      verify:member.aaa.com/card <span data-bracket="end" data-for="membershipcardsexter">]</span>
+    </div>
   </div>
 </div>
 
@@ -78,7 +81,10 @@ Some auto insurers offer discounts for AAA members (assuming safer drivers). Ver
     <p style="margin: 5px 0;"><strong>Societies:</strong> Computer Society, Robotics & Automation</p>
     <p style="margin: 5px 0;"><strong>Valid:</strong> 2026</p>
     <div style="margin-top: 15px; border-top: 1px dashed #ccc; padding-top: 10px; font-size: 0.8em; color: #666; text-align: center;">
-      verify:membership.ieee.org/card
+      <div data-verify-line="membershipcardsexter" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+        title="Demo only: This is an illustrative example of the verification line">
+        verify:membership.ieee.org/card <span data-bracket="end" data-for="membershipcardsexter">]</span>
+      </div>
     </div>
   </div>
 </div>
@@ -126,7 +132,10 @@ IEEE Xplore, ACM Digital Library offer member pricing. Institutional access asid
   <div style="font-size: 0.95em; margin-bottom: 5px;">is a Member in Good Standing</div>
   <div style="font-size: 0.85em; color: #666;">Member Since 2019 • Valid 2026</div>
   <div style="margin-top: 20px; font-size: 0.75em; font-family: monospace; color: #888;">
-    verify:members.wingedfoot.org/reciprocal
+    <div data-verify-line="membershipcardsexter" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+      title="Demo only: This is an illustrative example of the verification line">
+      verify:members.wingedfoot.org/reciprocal <span data-bracket="end" data-for="membershipcardsexter">]</span>
+    </div>
   </div>
 </div>
 
@@ -171,7 +180,10 @@ University clubs, business clubs with reciprocal networks (e.g., the University 
     <p style="margin: 5px 0;"><strong>Classification:</strong> Journeyman Wireman</p>
     <p style="margin: 5px 0;"><strong>Dues Paid Through:</strong> Q2 2026</p>
     <div style="margin-top: 15px; background: #f0f0f0; padding: 10px; font-size: 0.8em; text-align: center; font-family: monospace;">
-      verify:ibew.org/local3/member
+      <div data-verify-line="membershipcardsexter" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+        title="Demo only: This is an illustrative example of the verification line">
+        verify:ibew.org/local3/member <span data-bracket="end" data-for="membershipcardsexter">]</span>
+      </div>
     </div>
   </div>
 </div>
@@ -219,7 +231,10 @@ SAG-AFTRA members on a film set. Payroll company verifies union status to ensure
   <div style="font-size: 0.95em; margin-top: 15px;">is a Member in Good Standing</div>
   <div style="font-size: 0.85em; color: #666; margin-top: 10px;">HAA Member Since 2012 • Life Member</div>
   <div style="margin-top: 20px; font-size: 0.75em; font-family: monospace; color: #888;">
-    verify:alumni.harvard.edu/membership
+    <div data-verify-line="membershipcardsexter" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+      title="Demo only: This is an illustrative example of the verification line">
+      verify:alumni.harvard.edu/membership <span data-bracket="end" data-for="membershipcardsexter">]</span>
+    </div>
   </div>
 </div>
 
@@ -261,7 +276,10 @@ Alumni associations negotiate discounts (insurance, travel, etc.). Vendors verif
     <p style="margin: 5px 0;"><strong>Life Member:</strong> Yes</p>
     <p style="margin: 5px 0;"><strong>Service:</strong> U.S. Army, OIF 2004-2005</p>
     <div style="margin-top: 15px; background: #f0f0f0; padding: 10px; font-size: 0.8em; text-align: center; font-family: monospace;">
-      verify:vfw.org/membership
+      <div data-verify-line="membershipcardsexter" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+        title="Demo only: This is an illustrative example of the verification line">
+        verify:vfw.org/membership <span data-bracket="end" data-for="membershipcardsexter">]</span>
+      </div>
     </div>
   </div>
 </div>

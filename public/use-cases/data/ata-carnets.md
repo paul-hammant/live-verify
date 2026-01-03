@@ -34,7 +34,7 @@ The Carnet is a physical booklet of colored papers that customs officers stamp a
     </div>
 
     <div style="font-size: 0.9em; line-height: 1.5; color: #333;">
-      <p><strong>Holder:</strong> <span data-bracket="start" data-for="carnet">]</span>RockBand Tours, LLC<br>
+      <p><strong>Holder:</strong> <span data-bracket="start" data-for="carnet">[</span>RockBand Tours, LLC<br>
       123 Soundstage Way, Nashville, TN</p>
 
       <p><strong>General Description of Goods:</strong><br>

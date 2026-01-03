@@ -31,7 +31,7 @@ If a carrier "sneaks" a normal kitchen fire into a "Hurricane" batch, they are c
     <h3 style="margin-top: 0; color: #d32f2f; border-bottom: 2px solid #d32f2f; padding-bottom: 5px;">CAT BATCH LOSS SUMMARY</h3>
 
     <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Event:</strong> <span data-bracket="start" data-for="cat">]</span>Hurricane Helena (PCS Code: 42)<br>
+      <p><strong>Event:</strong> <span data-bracket="start" data-for="cat">[</span>Hurricane Helena (PCS Code: 42)<br>
       <strong>Region:</strong> Florida Gulf Coast (Zip 337xx, 336xx)</p>
 
       <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">

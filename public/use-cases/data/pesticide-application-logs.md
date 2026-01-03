@@ -21,7 +21,7 @@ These logs are the "Safety Map" of our food supply. Large retailers (e.g., Whole
       <div style="font-size: 0.8em; color: #666;">In accordance with EPA 40 CFR Part 170</div>
     </div>
     <div style="text-align: right;">
-      <div style="font-weight: bold; font-size: 1em;">LOG #: <span data-bracket="start" data-for="pest">]</span>2026-NY-42</div>
+      <div style="font-weight: bold; font-size: 1em;">LOG #: <span data-bracket="start" data-for="pest">[</span>2026-NY-42</div>
     </div>
   </div>
 

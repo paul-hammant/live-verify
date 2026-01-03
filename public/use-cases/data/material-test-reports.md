@@ -19,7 +19,7 @@ furtherDerivations: 1
     <div style="display: flex; justify-content: space-between;">
       <div>
         <strong>Customer:</strong> Apex Structural Engineering<br>
-        <strong>Heat Number:</strong> <span data-bracket="start" data-for="mtr">]</span>HEAT-992288-X
+        <strong>Heat Number:</strong> <span data-bracket="start" data-for="mtr">[</span>HEAT-992288-X
       </div>
       <div style="text-align: right;">
         <strong>Report #:</strong> MTR-2026-042<br>

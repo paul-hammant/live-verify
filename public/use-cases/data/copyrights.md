@@ -35,7 +35,7 @@ Fraudsters often create fake certificates to claim ownership of hit songs or vir
       </div>
     </div>
 
-    <p><strong>Title of Work:</strong> <span data-bracket="start" data-for="copyright">]</span><em>The Chronicles of Verification: A Digital Epic</em></p>
+    <p><strong>Title of Work:</strong> <span data-bracket="start" data-for="copyright">[</span><em>The Chronicles of Verification: A Digital Epic</em></p>
     <p><strong>Author / Claimant:</strong> J.K. Row-Verify</p>
     <p><strong>Type of Work:</strong> Literary Work</p>
 

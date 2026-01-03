@@ -26,7 +26,7 @@ Fraud is rampant in the construction industry. "Premium Evasion" is a multi-bill
   <div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
-        <strong>Insured:</strong> <span data-bracket="start" data-for="comp">]</span>TOP-NOTCH DRYWALL LLC<br>
+        <strong>Insured:</strong> <span data-bracket="start" data-for="comp">[</span>TOP-NOTCH DRYWALL LLC<br>
         <strong>FEIN:</strong> 99-2288776<br>
         <strong>Address:</strong> 123 Builder Lane, Springfield
       </div>

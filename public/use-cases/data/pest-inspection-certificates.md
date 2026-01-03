@@ -24,7 +24,7 @@ Because a "Positive" finding can kill a home sale or require a $5,000 treatment,
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px;">
       <div>
         <strong>Property Address:</strong><br>
-        <span data-bracket="start" data-for="wdi">]</span>123 MAPLE STREET, SPRINGFIELD, USA
+        <span data-bracket="start" data-for="wdi">[</span>123 MAPLE STREET, SPRINGFIELD, USA
       </div>
       <div style="text-align: right;">
         <strong>Report ID:</strong> WDI-2026-8844<br>

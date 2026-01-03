@@ -31,7 +31,7 @@ OCR-to-Hash allows a homeowner to scan the badge at the door and see a green "AC
     </div>
     <div style="flex-grow: 1;">
       <h4 style="margin: 0; color: #1a237e;">OFFICIAL INSPECTOR</h4>
-      <div style="font-size: 1.1em; font-weight: bold; margin: 5px 0;"><span data-bracket="start" data-for="inspect">]</span>RAYMOND STANTZ</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin: 5px 0;"><span data-bracket="start" data-for="inspect">[</span>RAYMOND STANTZ</div>
       <div style="font-size: 0.9em; color: #333; line-height: 1.4;">
         <strong>Badge #:</strong> 992288<br>
         <strong>Division:</strong> Electrical Safety<br>

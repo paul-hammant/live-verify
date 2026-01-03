@@ -34,7 +34,7 @@ If an owner "Photoshops" a $100k policy to look like a $10M policy, they can com
       <p>This is to certify that insurance has been effected on the following animal:</p>
 
       <div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin: 20px 0;">
-        <strong>Animal Name:</strong> <span data-bracket="start" data-for="horse">]</span>"MIDNIGHT RUNNER" (2022 Colt)<br>
+        <strong>Animal Name:</strong> <span data-bracket="start" data-for="horse">[</span>"MIDNIGHT RUNNER" (2022 Colt)<br>
         <strong>Sire/Dam:</strong> Galileo / Urban Sea<br>
         <strong>Registration:</strong> Weatherbys ID #992288
       </div>

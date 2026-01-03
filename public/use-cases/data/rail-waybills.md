@@ -26,7 +26,7 @@ Fraud is high-stakes in bulk commodities (e.g., grain, coal, chemicals). Shady s
   <div style="padding: 20px;">
     <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.85em; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
-        <strong>Shipper:</strong> <span data-bracket="start" data-for="rail">]</span>GLOBAL AGRI-TRADE LLC<br>
+        <strong>Shipper:</strong> <span data-bracket="start" data-for="rail">[</span>GLOBAL AGRI-TRADE LLC<br>
         <strong>Consignee:</strong> PACIFIC TERMINALS INC.<br>
         <strong>Destination:</strong> PORT OF TACOMA, WA
       </div>

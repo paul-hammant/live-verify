@@ -28,7 +28,7 @@ It is the primary document used by:
   <div style="font-size: 0.85em; line-height: 1.4; color: #000;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
       <div>
-        <strong>Shipper:</strong> <span data-bracket="start" data-for="pack">]</span>Shenzhen Tech Components, Ltd.<br>
+        <strong>Shipper:</strong> <span data-bracket="start" data-for="pack">[</span>Shenzhen Tech Components, Ltd.<br>
         <strong>Consignee:</strong> Apex Robotics, LLC (Chicago, IL)
       </div>
       <div style="text-align: right;">

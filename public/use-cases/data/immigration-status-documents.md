@@ -22,7 +22,7 @@ furtherDerivations: 1
       <div style="width: 120px; height: 150px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #777;">[PHOTO]</div>
     </div>
     <div style="flex-grow: 1;">
-      <div style="font-size: 1.2em; font-weight: bold; margin: 0 0 5px 0;"><span data-bracket="start" data-for="im-status">]</span>DOE, JOHN JACOB</div>
+      <div style="font-size: 1.2em; font-weight: bold; margin: 0 0 5px 0;"><span data-bracket="start" data-for="im-status">[</span>DOE, JOHN JACOB</div>
       <div style="font-size: 0.9em; color: #333; line-height: 1.5;">
         <strong>USCIS #:</strong> 992-288-776<br>
         <strong>Birth Date:</strong> 05/15/1985<br>

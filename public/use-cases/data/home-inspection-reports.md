@@ -31,7 +31,7 @@ Fraud is high-stakes here: sellers or dishonest agents sometimes "Delete" the sc
     <h3 style="margin-top: 0; color: #2c3e50; border-bottom: 2px solid #2c3e50; padding-bottom: 5px;">PROPERTY CONDITION SUMMARY</h3>
 
     <div style="font-size: 0.9em; line-height: 1.5; color: #333;">
-      <p><strong>Property:</strong> <span data-bracket="start" data-for="inspect">]</span>123 Desert Lane, Phoenix, AZ 85001<br>
+      <p><strong>Property:</strong> <span data-bracket="start" data-for="inspect">[</span>123 Desert Lane, Phoenix, AZ 85001<br>
       <strong>Client:</strong> Sarah Jane Smith</p>
 
       <div style="background: #fdfdfd; border: 1px solid #eee; padding: 15px; margin: 15px 0; border-radius: 4px;">

@@ -25,7 +25,7 @@ Small tour operators often don't have real-time computers in the field. They rel
   <div style="font-size: 0.9em; line-height: 1.4;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
       <div>
-        <strong>Participant:</strong> <span data-bracket="start" data-for="tour">]</span><strong>SARAH JANE SMITH</strong><br>
+        <strong>Participant:</strong> <span data-bracket="start" data-for="tour">[</span><strong>SARAH JANE SMITH</strong><br>
         <strong>Booking #:</strong> SE-99228877
       </div>
       <div style="text-align: right;">

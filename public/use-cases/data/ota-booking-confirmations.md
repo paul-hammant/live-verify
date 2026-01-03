@@ -31,7 +31,7 @@ It is your "Central Itinerary." It proves:
   <div style="padding: 30px;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px; font-size: 0.9em; color: #555;">
       <div>
-        <strong>Guest:</strong> <span data-bracket="start" data-for="ota">]</span>SARAH JANE SMITH<br>
+        <strong>Guest:</strong> <span data-bracket="start" data-for="ota">[</span>SARAH JANE SMITH<br>
         <strong>Confirmation #:</strong> 9988776655
       </div>
       <div style="text-align: right;">

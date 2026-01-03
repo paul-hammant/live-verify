@@ -28,7 +28,7 @@ Unlike other insurance that covers *future* events (like fire), title insurance 
   <h2 style="text-align: center; font-size: 1.4em; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 30px;">Owner's Policy of Title Insurance</h2>
 
   <div style="font-size: 1em; line-height: 1.6; color: #000; text-align: justify;">
-    <p><strong>SUBJECT TO THE EXCLUSIONS FROM COVERAGE</strong>, FIRST AMERICAN TITLE INSURANCE COMPANY (the "Company") insures <span data-bracket="start" data-for="title-ins">]</span><strong>ROBERT J. MILLER</strong> (the "Insured") against loss or damage sustained by reason of any defect in title.</p>
+    <p><strong>SUBJECT TO THE EXCLUSIONS FROM COVERAGE</strong>, FIRST AMERICAN TITLE INSURANCE COMPANY (the "Company") insures <span data-bracket="start" data-for="title-ins">[</span><strong>ROBERT J. MILLER</strong> (the "Insured") against loss or damage sustained by reason of any defect in title.</p>
 
     <div style="background: #f9f9f9; padding: 15px; border: 1px solid #eee; margin: 20px 0;">
       <p><strong>Amount of Insurance:</strong> $ 525,000.00</p>

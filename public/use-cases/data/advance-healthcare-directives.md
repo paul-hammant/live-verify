@@ -26,7 +26,7 @@ Doctors in the ER need to see this *immediately* to know whether to resuscitate.
 
   <div style="font-size: 0.95em; line-height: 1.5; color: #333;">
     <p><strong>1. POWER OF ATTORNEY FOR HEALTH CARE</strong></p>
-    <p>I, <span data-bracket="start" data-for="directive">]</span><strong>ELEANOR RIGBY</strong> (DOB: 02/14/1950), designate the following individual as my agent to make health care decisions for me:</p>
+    <p>I, <span data-bracket="start" data-for="directive">[</span><strong>ELEANOR RIGBY</strong> (DOB: 02/14/1950), designate the following individual as my agent to make health care decisions for me:</p>
     
     <p style="margin-left: 20px;"><strong>Agent:</strong> FATHER MCKENZIE<br>
     <strong>Phone:</strong> (555) 867-5309<br>

@@ -16,7 +16,7 @@ furtherDerivations: 1
   </div>
 
   <div style="font-size: 0.9em; line-height: 1.4;">
-    <p><strong>Transaction ID:</strong> <span data-bracket="start" data-for="m-pesa">]</span>RKJ42BC992</p>
+    <p><strong>Transaction ID:</strong> <span data-bracket="start" data-for="m-pesa">[</span>RKJ42BC992</p>
     <p><strong>Confirmed:</strong> March 15, 2026 at 14:22:01</p>
     
     <div style="background: #eee; padding: 10px; margin: 10px 0;">

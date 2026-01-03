@@ -31,7 +31,7 @@ Farmers use these verified coverage schedules to secure "Operating Loans" from b
     <h2 style="text-align: center; color: #2e7d32; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Crop-Hail Coverage Schedule</h2>
 
     <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
-      <p><strong>Insured:</strong> <span data-bracket="start" data-for="crop">]</span>Miller Family Farms, Inc.<br>
+      <p><strong>Insured:</strong> <span data-bracket="start" data-for="crop">[</span>Miller Family Farms, Inc.<br>
       <strong>Location:</strong> Story County, Iowa (Section 14, T84N, R24W)</p>
 
       <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">

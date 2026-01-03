@@ -24,7 +24,7 @@ In the "Secondary Market" for gadgets, people often try to sell their "Reservati
 
   <div style="padding: 30px;">
     <div style="text-align: center; margin-bottom: 25px;">
-      <div style="font-size: 0.9em; color: #666;">Backer ID: <span data-bracket="start" data-for="crowd">]</span>#998877-K</div>
+      <div style="font-size: 0.9em; color: #666;">Backer ID: <span data-bracket="start" data-for="crowd">[</span>#998877-K</div>
       <div style="font-size: 2.2em; font-weight: bold; color: #05ce78; margin-top: 5px;">$ 1,200.00</div>
     </div>
 

@@ -22,7 +22,7 @@ Fraud is rampant in the "Direct Booking" market. Scammers create "Phantom Listin
     </div>
     <div style="text-align: right;">
       <div style="font-weight: bold; font-size: 0.9em;">RESERVATION CONFIRMED</div>
-      <div style="font-size: 0.7em; opacity: 0.9;">Ref: <span data-bracket="start" data-for="rental">]</span>HM-99228877</div>
+      <div style="font-size: 0.7em; opacity: 0.9;">Ref: <span data-bracket="start" data-for="rental">[</span>HM-99228877</div>
     </div>
   </div>
 

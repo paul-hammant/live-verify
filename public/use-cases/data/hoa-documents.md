@@ -24,7 +24,7 @@ When you buy a house, you need the **Verified Current Version** of these rules. 
 
   <div style="font-size: 1em; line-height: 1.6; color: #333; text-align: justify;">
     <h3 style="text-align: center; text-transform: uppercase; margin-bottom: 20px;">Certification of Governing Documents</h3>
-    <p>I, the undersigned Secretary of the Skyline Towers Homeowners Association, a Texas non-profit corporation, hereby certify that the following is a true and correct copy of the <span data-bracket="start" data-for="hoa-docs">]</span><strong>Amended and Restated Bylaws</strong> as adopted by the Board of Directors on <strong>January 15, 2026</strong>.</p>
+    <p>I, the undersigned Secretary of the Skyline Towers Homeowners Association, a Texas non-profit corporation, hereby certify that the following is a true and correct copy of the <span data-bracket="start" data-for="hoa-docs">[</span><strong>Amended and Restated Bylaws</strong> as adopted by the Board of Directors on <strong>January 15, 2026</strong>.</p>
 
     <div style="margin: 20px 0; background: #f9f9f9; padding: 15px; border: 1px solid #eee;">
       <strong>DOCUMENT METADATA:</strong><br>
@@ -139,7 +139,7 @@ Fraud happens when "Rogue Board Members" fabricate a rule change to target a spe
     <p>Please be advised that the Board of Directors has adopted the following revision to the Association Rules, effective immediately:</p>
 
     <div style="margin: 20px 0; border-left: 4px solid #000; padding-left: 20px; background: #f9f9f9; padding-top: 10px; padding-bottom: 10px;">
-      <strong><span data-bracket="start" data-for="hoa-rule">]</span>ARTICLE IV, SECTION 2 (REVISED):</strong><br>
+      <strong><span data-bracket="start" data-for="hoa-rule">[</span>ARTICLE IV, SECTION 2 (REVISED):</strong><br>
       "Short-term rentals of less than thirty (30) days are strictly prohibited. Violations shall incur a fine of $500 per day."
     </div>
 

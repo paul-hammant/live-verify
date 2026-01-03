@@ -26,7 +26,7 @@ Merchants need these verified letters to prove to lenders and business partners 
     <h3 style="margin-top: 0; color: #003087; border-bottom: 2px solid #003087; padding-bottom: 5px;">CHARGEBACK DISPUTE SUMMARY</h3>
 
     <div style="font-size: 0.9em; line-height: 1.5; color: #333;">
-      <p><strong>Merchant:</strong> <span data-bracket="start" data-for="chargeback">]</span>Electronic Emporium, LLC<br>
+      <p><strong>Merchant:</strong> <span data-bracket="start" data-for="chargeback">[</span>Electronic Emporium, LLC<br>
       <strong>Transaction Date:</strong> Feb 10, 2026<br>
       <strong>Amount Disputed:</strong> $ 1,250.00</p>
 

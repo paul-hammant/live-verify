@@ -23,7 +23,7 @@ furtherDerivations: 1
       </div>
       <div style="text-align: right;">
         <strong>Insured:</strong><br>
-        <span data-bracket="start" data-for="retro">]</span>MegaCorp Logistics, Inc.<br>
+        <span data-bracket="start" data-for="retro">[</span>MegaCorp Logistics, Inc.<br>
         Policy No: WC-9922-88<br>
         Adjustment Period: 3rd (36 Months)
       </div>

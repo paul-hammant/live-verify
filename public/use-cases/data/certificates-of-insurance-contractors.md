@@ -31,7 +31,7 @@ COI fraud is rampant. Contractors often buy a policy for one day, print the COI,
       </div>
       <div style="width: 50%; border: 1px solid #000; border-left: none; padding: 5px; font-size: 0.8em;">
         <strong>INSURED:</strong><br>
-        <span data-bracket="start" data-for="coi">]</span>Apex Construction Services, LLC<br>
+        <span data-bracket="start" data-for="coi">[</span>Apex Construction Services, LLC<br>
         400 Industrial Way<br>
         Oakland, CA 94621
       </div>

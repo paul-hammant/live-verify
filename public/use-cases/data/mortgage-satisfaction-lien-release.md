@@ -14,7 +14,7 @@ furtherDerivations: 1
   </div>
 
   <div style="font-size: 1em; line-height: 1.6; color: #000; text-align: justify;">
-    <p>Know all men by these presents, that <strong>Lender:</strong> Wells Fargo Bank, N.A. (the "Mortgagee") does hereby certify that a certain mortgage made and executed by <span data-bracket="start" data-for="mort-rel">]</span><strong>John Jacob Doe</strong> (the "Mortgagor") on <strong>January 1, 2010</strong>, is fully <strong>PAID, SATISFIED, AND DISCHARGED</strong>.</p>
+    <p>Know all men by these presents, that <strong>Lender:</strong> Wells Fargo Bank, N.A. (the "Mortgagee") does hereby certify that a certain mortgage made and executed by <span data-bracket="start" data-for="mort-rel">[</span><strong>John Jacob Doe</strong> (the "Mortgagor") on <strong>January 1, 2010</strong>, is fully <strong>PAID, SATISFIED, AND DISCHARGED</strong>.</p>
 
     <div style="background: #f9f9f9; padding: 15px; border: 1px solid #eee; margin: 20px 0; font-family: monospace; font-size: 0.9em;">
       Property: 123 Maple St, Anytown, USA<br>

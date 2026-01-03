@@ -27,7 +27,7 @@ The problem is that these permits are often valid for 6 to 12 months. Shady vend
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px; border-bottom: 2px solid #eee; padding-bottom: 10px;">
       <div>
         <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Vendor Name</div>
-        <div style="font-size: 1.2em; font-weight: bold; color: #2e7d32;"><span data-bracket="start" data-for="market">]</span>GREEN ACRES FAMILY FARM</div>
+        <div style="font-size: 1.2em; font-weight: bold; color: #2e7d32;"><span data-bracket="start" data-for="market">[</span>GREEN ACRES FAMILY FARM</div>
       </div>
       <div style="text-align: right;">
         <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Stall Assignment</div>

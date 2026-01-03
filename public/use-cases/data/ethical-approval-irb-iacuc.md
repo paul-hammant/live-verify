@@ -28,7 +28,7 @@ The committee reviews the plan to ensure people aren't being exploited and anima
     <p>This document confirms that the research protocol described below has been reviewed and approved by the Stanford IRB.</p>
 
     <div style="margin: 20px 0; border-left: 4px solid #1a237e; padding-left: 20px; background: #f5f5f5; padding-top: 10px; padding-bottom: 10px;">
-      <p><strong>Protocol ID:</strong> <span data-bracket="start" data-for="ethics">]</span>IRB-2026-992288<br>
+      <p><strong>Protocol ID:</strong> <span data-bracket="start" data-for="ethics">[</span>IRB-2026-992288<br>
       <strong>Study Title:</strong> Neural Response to Digital Verification Affordances<br>
       <strong>Principal Investigator:</strong> Prof. Albus Dumbledore<br>
       <strong>Risk Level:</strong> Minimal Risk</p>

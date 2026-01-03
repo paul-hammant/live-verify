@@ -23,7 +23,7 @@ furtherDerivations: 1
     <h3 style="margin-top: 0; color: #0d47a1; border-bottom: 2px solid #0d47a1; padding-bottom: 5px;">ADJUSTER'S PRELIMINARY DAMAGE ASSESSMENT</h3>
 
     <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
-      <p><strong>Insured:</strong> <span data-bracket="start" data-for="adjuster">]</span>Sarah J. Doe (Policy ...9982)<br>
+      <p><strong>Insured:</strong> <span data-bracket="start" data-for="adjuster">[</span>Sarah J. Doe (Policy ...9982)<br>
       <strong>Risk:</strong> 2025 Tesla Model 3 (VIN ...5544)</p>
 
       <div style="background: #f0f4f8; border: 1px solid #d1d9e6; padding: 15px; margin: 15px 0; border-radius: 4px;">

@@ -29,7 +29,7 @@ Because these statements determine the distribution of millions of dollars, they
   <div style="padding: 25px; border-bottom: 1px solid #eee;">
     <div style="display: grid; grid-template-columns: 1fr 1fr; font-size: 0.9em; line-height: 1.5;">
       <div>
-        <strong>Author:</strong> <span data-bracket="start" data-for="royalty">]</span>KILGORE TROUT<br>
+        <strong>Author:</strong> <span data-bracket="start" data-for="royalty">[</span>KILGORE TROUT<br>
         <strong>Project ID:</strong> 99228877-KT<br>
         <strong>Title:</strong> <em>Venus on the Half-Shell</em>
       </div>

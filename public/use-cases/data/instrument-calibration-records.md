@@ -15,7 +15,7 @@ furtherDerivations: 1
   </div>
 
   <div style="font-size: 0.9em; line-height: 1.4; color: #333;">
-    <p><strong>Instrument:</strong> <span data-bracket="start" data-for="sci-cal">]</span>Mass Spectrometer (Agilent 6470B)<br>
+    <p><strong>Instrument:</strong> <span data-bracket="start" data-for="sci-cal">[</span>Mass Spectrometer (Agilent 6470B)<br>
     <strong>Serial #:</strong> AG-99228877-X<br>
     <strong>Asset ID:</strong> QL-402</p>
 

@@ -25,7 +25,7 @@ Because these credits are mandatory, some busy professionals "Fake" the certific
 
     <div style="margin: 30px 0;">
       <div style="font-size: 1.1em;">This is to certify that</div>
-      <div style="font-size: 1.8em; font-weight: bold; margin: 10px 0; color: #1a237e;"><span data-bracket="start" data-for="cle">]</span>SAUL GOODMAN, ESQ.</div>
+      <div style="font-size: 1.8em; font-weight: bold; margin: 10px 0; color: #1a237e;"><span data-bracket="start" data-for="cle">[</span>SAUL GOODMAN, ESQ.</div>
       <div style="font-size: 1.1em;">has successfully completed</div>
       <div style="font-size: 1.3em; font-weight: bold; margin: 10px 0;">ETHICS IN CRIMINAL DEFENSE</div>
       <div style="font-size: 1.1em;">presented by</div>

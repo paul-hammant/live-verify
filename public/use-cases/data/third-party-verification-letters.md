@@ -25,7 +25,7 @@ These letters are the "Seal of Solvency." Fraud is rampant: people create fake "
 
   <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <p>Date: March 15, 2026</p>
-    <p><strong>Subject:</strong> <span data-bracket="start" data-for="verify">]</span><strong>JOHN JACOB DOE</strong><br>
+    <p><strong>Subject:</strong> <span data-bracket="start" data-for="verify">[</span><strong>JOHN JACOB DOE</strong><br>
     <strong>SSN (Last 4):</strong> XXX-XX-9922</p>
 
     <div style="background: #f9f9f9; padding: 20px; border: 1px solid #ddd; margin: 20px 0;">

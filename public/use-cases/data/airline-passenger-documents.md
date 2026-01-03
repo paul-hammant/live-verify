@@ -16,7 +16,7 @@ furtherDerivations: 5
   </div>
 
   <div style="font-size: 0.9em; line-height: 1.4;">
-    <p><strong>Passenger:</strong> <span data-bracket="start" data-for="receipt">]</span>JOHN DOE<br>
+    <p><strong>Passenger:</strong> <span data-bracket="start" data-for="receipt">[</span>JOHN DOE<br>
     <strong>Ticket #:</strong> 006-2345678901<br>
     <strong>Date:</strong> 15MAR26</p>
 
@@ -140,7 +140,7 @@ Verifying these letters prevents passengers from faking denials to defraud insur
 
   <div style="margin-bottom: 30px;">
     <strong>Date:</strong> 15 March 2026<br>
-    <strong>Ref:</strong> <span data-bracket="start" data-for="comp">]</span>BA-2026-998877<br>
+    <strong>Ref:</strong> <span data-bracket="start" data-for="comp">[</span>BA-2026-998877<br>
     <strong>Passenger:</strong> Sarah Jones
   </div>
 
@@ -240,7 +240,7 @@ _[Content merged from: airline-refund-confirmations]_
   </div>
 
   <div style="font-size: 0.9em; line-height: 1.5; color: #333;">
-    <p><strong>Passenger:</strong> <span data-bracket="start" data-for="refund">]</span>HANS MULLER<br>
+    <p><strong>Passenger:</strong> <span data-bracket="start" data-for="refund">[</span>HANS MULLER<br>
     <strong>Original Ticket:</strong> 220-1234567890<br>
     <strong>Refund Document:</strong> 220-9988776655</p>
 
@@ -358,7 +358,7 @@ _[Content merged from: airline-upgrade-confirmations]_
     </div>
 
     <div style="font-size: 1.1em; line-height: 1.5; color: #333; border-bottom: 1px solid #ccc; padding-bottom: 20px; margin-bottom: 20px;">
-      <p><strong>Passenger:</strong> <span data-bracket="start" data-for="upgrade">]</span>SARAH CONNOR</p>
+      <p><strong>Passenger:</strong> <span data-bracket="start" data-for="upgrade">[</span>SARAH CONNOR</p>
       <p><strong>Flight:</strong> UA 926 (SFO to FRA)<br>
       <strong>Upgrade:</strong> Economy &rarr; Polaris Business</p>
       
@@ -465,7 +465,7 @@ _[Content merged from: airport-lounge-access-confirmations]_
     </div>
 
     <div style="font-size: 0.9em; line-height: 1.6; color: #eee; border-top: 1px dashed #555; border-bottom: 1px dashed #555; padding: 15px 0;">
-      <p><strong>Member:</strong> <span data-bracket="start" data-for="lounge">]</span>JAMES BOND<br>
+      <p><strong>Member:</strong> <span data-bracket="start" data-for="lounge">[</span>JAMES BOND<br>
       <strong>Card Number:</strong> ************1234</p>
 
       <p><strong>Date:</strong> 10 OCT 2026<br>

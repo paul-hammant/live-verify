@@ -29,7 +29,7 @@ In pharmaceutical research, "Consent Fraud" is a serious crime. Sites sometimes 
     <strong>NCT Number:</strong> NCT09988776<br>
     <strong>Protocol ID:</strong> MC-2026-0492</p>
 
-    <p>I, <span data-bracket="start" data-for="clinic">]</span><strong>PARTICIPANT ID: 9988-SJ</strong>, have been informed of the risks and benefits of this study. I voluntarily agree to participate and understand that I may withdraw at any time.</p>
+    <p>I, <span data-bracket="start" data-for="clinic">[</span><strong>PARTICIPANT ID: 9988-SJ</strong>, have been informed of the risks and benefits of this study. I voluntarily agree to participate and understand that I may withdraw at any time.</p>
 
     <div style="margin: 20px 0; border: 1px solid #004d40; padding: 15px; background: #f1f8e9;">
       <strong>CONSENT SIGNATURE:</strong><br>

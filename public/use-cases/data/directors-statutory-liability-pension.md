@@ -34,7 +34,7 @@ Because these claims can hit 20 years after a person retires, the paperwork must
       <p>This document confirms that the following individuals are insured for their fiduciary responsibilities under ERISA Section 409:</p>
 
       <div style="background: #fdfdfd; border: 1px solid #ddd; padding: 15px; margin: 20px 0;">
-        <p><strong>Pension Scheme:</strong> <span data-bracket="start" data-for="pension">]</span>Globochem Retirement Master Trust<br>
+        <p><strong>Pension Scheme:</strong> <span data-bracket="start" data-for="pension">[</span>Globochem Retirement Master Trust<br>
         <strong>Named Trustees:</strong> Peter Gibbons, Michael Bolton, Samir Nagheenanajar</p>
         
         <p><strong>Limit of Indemnity:</strong> $ 10,000,000.00<br>

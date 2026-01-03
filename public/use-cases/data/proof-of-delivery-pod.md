@@ -27,7 +27,7 @@ Fraud is rampant in high-value shipping (electronics, pharmaceuticals). Dishones
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
         <div style="font-size: 0.7em; color: #888; text-transform: uppercase;">Waybill Number</div>
-        <div style="font-size: 1.2em; font-weight: bold;"><span data-bracket="start" data-for="pod">]</span>JD-9922-8877-66</div>
+        <div style="font-size: 1.2em; font-weight: bold;"><span data-bracket="start" data-for="pod">[</span>JD-9922-8877-66</div>
       </div>
       <div style="text-align: right;">
         <div style="font-size: 0.7em; color: #888; text-transform: uppercase;">Delivery Date/Time</div>

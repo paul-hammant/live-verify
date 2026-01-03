@@ -24,7 +24,7 @@ Fraudsters often use "Fake Screenshots" to trick sellers into shipping goods bef
 
   <div style="padding: 30px;">
     <div style="text-align: center; margin-bottom: 25px;">
-      <div style="font-size: 0.9em; color: #666;">Transfer ID: <span data-bracket="start" data-for="remit">]</span>#9988776655</div>
+      <div style="font-size: 0.9em; color: #666;">Transfer ID: <span data-bracket="start" data-for="remit">[</span>#9988776655</div>
       <div style="font-size: 2.2em; font-weight: bold; color: #00b9ff; margin-top: 5px;">$ 5,000.00 USD</div>
     </div>
 

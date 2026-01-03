@@ -30,7 +30,7 @@ Fraud happens when employees edit their folio to hide personal spending or to in
   <div style="padding: 25px;">
     <div style="display: flex; justify-content: space-between; font-size: 0.9em; margin-bottom: 20px; color: #555;">
       <div>
-        <strong>Guest:</strong> <span data-bracket="start" data-for="cruise">]</span>SARAH J. DOE<br>
+        <strong>Guest:</strong> <span data-bracket="start" data-for="cruise">[</span>SARAH J. DOE<br>
         <strong>Stateroom:</strong> 12504 (Deck 12)
       </div>
       <div style="text-align: right;">

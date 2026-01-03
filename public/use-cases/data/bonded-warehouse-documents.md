@@ -16,7 +16,7 @@ furtherDerivations: 1
   </div>
 
   <div style="font-size: 0.9em; line-height: 1.4;">
-    <p><strong>Importer of Record:</strong> <span data-bracket="start" data-for="bonded">]</span>Swiss Watch Imports, Inc.<br>
+    <p><strong>Importer of Record:</strong> <span data-bracket="start" data-for="bonded">[</span>Swiss Watch Imports, Inc.<br>
     <strong>Customs Entry #:</strong> 110-9988776-5<br>
     <strong>Warehouse Receipt:</strong> WR-2026-402</p>
 

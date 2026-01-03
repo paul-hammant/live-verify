@@ -29,7 +29,7 @@ If a box arrives at the counting center with a different count or seal than what
     <h3 style="margin-top: 0; text-align: center; text-transform: uppercase;">Ballot Container Transfer</h3>
 
     <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
-      <p><strong>Origin:</strong> <span data-bracket="start" data-for="ballot">]</span>Precinct 402 - North High School<br>
+      <p><strong>Origin:</strong> <span data-bracket="start" data-for="ballot">[</span>Precinct 402 - North High School<br>
       <strong>Destination:</strong> Central Tabulation Center</p>
 
       <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">

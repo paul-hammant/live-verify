@@ -31,7 +31,7 @@ It is the "Insurance for Brainwork." If an architect's design causes a balcony t
     <h2 style="text-align: center; color: #37474f; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Certificate of Professional Liability</h2>
 
     <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Named Insured:</strong> <span data-bracket="start" data-for="eo">]</span>Skyline Architecture & Design, P.C.<br>
+      <p><strong>Named Insured:</strong> <span data-bracket="start" data-for="eo">[</span>Skyline Architecture & Design, P.C.<br>
       <strong>Professional Category:</strong> Licensed Structural Engineering</p>
 
       <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">

@@ -28,7 +28,7 @@ OCR-to-hash allows a resident or security guard to scan the driver's ID badge or
     </div>
     <div style="flex-grow: 1;">
       <div style="font-size: 0.75em; color: #888; text-transform: uppercase;">Courier</div>
-      <div style="font-size: 1.3em; font-weight: bold; margin: 0 0 12px 0; color: #333;"><span data-bracket="start" data-for="courier">]</span>Mark S 7766</div>
+      <div style="font-size: 1.3em; font-weight: bold; margin: 0 0 12px 0; color: #333;"><span data-bracket="start" data-for="courier">[</span>Mark S 7766</div>
 
       <div style="font-size: 0.75em; color: #888; text-transform: uppercase;">Hub</div>
       <div style="font-size: 0.9em; font-weight: bold;">Memphis</div>
@@ -148,7 +148,7 @@ Scammers often wear fake high-visibility vests to get inside apartment buildings
     </div>
     <div style="flex-grow: 1;">
       <h4 style="margin: 0; color: #232f3e;">DA-1 DRIVER</h4>
-      <div style="font-size: 1.3em; font-weight: bold; margin: 5px 0;"><span data-bracket="start" data-for="driver">]</span>Carlos R 42882</div>
+      <div style="font-size: 1.3em; font-weight: bold; margin: 5px 0;"><span data-bracket="start" data-for="driver">[</span>Carlos R 42882</div>
       <div style="font-size: 0.9em; color: #333; line-height: 1.4;">
         <strong>Region:</strong> San Francisco, CA<br>
         <strong>Status:</strong> ON-DUTY

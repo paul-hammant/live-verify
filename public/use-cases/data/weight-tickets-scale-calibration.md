@@ -23,7 +23,7 @@ Because weight determines the price of multimillion-dollar shipments, these tick
   <div style="padding: 20px;">
     <div style="display: flex; justify-content: space-between; font-size: 0.9em; margin-bottom: 20px;">
       <div>
-        <strong>Ticket #:</strong> <span data-bracket="start" data-for="weight">]</span>WT-2026-8844<br>
+        <strong>Ticket #:</strong> <span data-bracket="start" data-for="weight">[</span>WT-2026-8844<br>
         <strong>Plate:</strong> ABC-1234 (IL)<br>
         <strong>Unit:</strong> TRUCK-42
       </div>

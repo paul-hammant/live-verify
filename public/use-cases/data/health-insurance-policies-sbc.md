@@ -34,7 +34,7 @@ Fraud happens during the sales process: some brokers edit the SBC PDF to show a 
     </div>
 
     <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p>This is only a summary. For more information, see <span data-bracket="start" data-for="health-sbc">]</span><strong>www.aetna.com</strong>.</p>
+      <p>This is only a summary. For more information, see <span data-bracket="start" data-for="health-sbc">[</span><strong>www.aetna.com</strong>.</p>
 
       <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
         <tr style="background: #f5f5f5; border-bottom: 1px solid #005fb8;">

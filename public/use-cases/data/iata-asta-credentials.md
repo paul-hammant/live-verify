@@ -17,7 +17,7 @@ furtherDerivations: 1
   <div style="padding: 30px;">
     <div style="text-align: center; border-bottom: 2px solid #002d62; padding-bottom: 10px; margin-bottom: 20px;">
       <h3 style="margin: 0; color: #002d62;">CERTIFICATE OF ACCREDITATION</h3>
-      <div style="font-size: 1.2em; font-weight: bold; margin-top: 5px;">Numeric Code: <span data-bracket="start" data-for="iata">]</span>99-8-2288 7</div>
+      <div style="font-size: 1.2em; font-weight: bold; margin-top: 5px;">Numeric Code: <span data-bracket="start" data-for="iata">[</span>99-8-2288 7</div>
     </div>
 
     <div style="font-size: 0.95em; line-height: 1.6; color: #333;">

@@ -23,7 +23,7 @@ furtherDerivations: 1
     <h2 style="text-align: center; color: #388e3c; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Summary of Coverage</h2>
 
     <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Insured:</strong> <span data-bracket="start" data-for="ag-pol">]</span>Miller Family Farms, Inc.<br>
+      <p><strong>Insured:</strong> <span data-bracket="start" data-for="ag-pol">[</span>Miller Family Farms, Inc.<br>
       <strong>State/County:</strong> Iowa / Story (FIPS 19169)</p>
 
       <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">

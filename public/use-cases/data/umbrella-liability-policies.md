@@ -26,7 +26,7 @@ These policies are critical for **Asset Protection**. Fraud is high-stakes: high
   <div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
-        <strong>Policyholder:</strong> <span data-bracket="start" data-for="umbrella">]</span>SARAH JANE SMITH<br>
+        <strong>Policyholder:</strong> <span data-bracket="start" data-for="umbrella">[</span>SARAH JANE SMITH<br>
         <strong>Address:</strong> 42 Millionaire Row, Greenwich, CT
       </div>
       <div style="text-align: right;">

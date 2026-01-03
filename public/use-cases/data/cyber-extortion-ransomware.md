@@ -31,7 +31,7 @@ Because these authorizations trigger multimillion-dollar crypto-payments, they a
     <h2 style="text-align: center; color: #333; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Extortion Payment Authorization</h2>
 
     <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Insured:</strong> <span data-bracket="start" data-for="cyber">]</span>Apex Healthcare Systems, Inc.<br>
+      <p><strong>Insured:</strong> <span data-bracket="start" data-for="cyber">[</span>Apex Healthcare Systems, Inc.<br>
       <strong>Attacking Group:</strong> [REDACTED - Threat Actor 42]</p>
 
       <div style="background: #fdfdfd; border: 1px solid #ddd; padding: 15px; margin: 15px 0;">

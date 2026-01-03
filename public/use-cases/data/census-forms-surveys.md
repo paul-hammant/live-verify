@@ -30,7 +30,7 @@ In some areas, you need this verified receipt to get local benefits, register fo
       </div>
       <div style="text-align: right;">
         <strong>Confirmation #:</strong><br>
-        <span data-bracket="start" data-for="census">]</span>9988-7766-5544
+        <span data-bracket="start" data-for="census">[</span>9988-7766-5544
       </div>
     </div>
 

@@ -20,7 +20,7 @@ The classic fraud: someone claims purchasing authority they don't have, places o
     <div style="font-size: 0.8em;">Trade Credit Authorization</div>
   </div>
   <div style="padding: 20px; font-size: 0.9em; line-height: 1.6;">
-    <p><strong>Company:</strong> Meridian Manufacturing Ltd<br>
+    <p><strong>Company:</strong> <span data-bracket="start" data-for="b2bcreditcontrol">[</span>Meridian Manufacturing Ltd<br>
     <strong>Authorized Person:</strong> Sarah Chen<br>
     <strong>Role:</strong> Procurement Manager<br>
     <strong>Issued:</strong> January 15, 2026</p>
@@ -40,7 +40,10 @@ The classic fraud: someone claims purchasing authority they don't have, places o
     Valid until: December 31, 2026 (or earlier revocation)</p>
 
     <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
-      verify:meridian-mfg.co.uk/auth/SC-2026-0115
+      <div data-verify-line="b2bcreditcontrol" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+        title="Demo only: This is an illustrative example of the verification line">
+        verify:meridian-mfg.co.uk/auth/SC-2026-0115 <span data-bracket="end" data-for="b2bcreditcontrol">]</span>
+      </div>
     </div>
   </div>
 </div>
@@ -99,7 +102,10 @@ The classic fraud: someone claims purchasing authority they don't have, places o
     Bank: Barclays Business, Sort: 20-00-00</p>
 
     <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
-      verify:northern-components.com/credit/APP-2026-0201
+      <div data-verify-line="b2bcreditcontrol" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+        title="Demo only: This is an illustrative example of the verification line">
+        verify:northern-components.com/credit/APP-2026-0201 <span data-bracket="end" data-for="b2bcreditcontrol">]</span>
+      </div>
     </div>
   </div>
 </div>
@@ -134,7 +140,10 @@ The classic fraud: someone claims purchasing authority they don't have, places o
     ABC Supplies Ltd</p>
 
     <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
-      verify:abc-supplies.com/refs/NC-2026-0205
+      <div data-verify-line="b2bcreditcontrol" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+        title="Demo only: This is an illustrative example of the verification line">
+        verify:abc-supplies.com/refs/NC-2026-0205 <span data-bracket="end" data-for="b2bcreditcontrol">]</span>
+      </div>
     </div>
   </div>
 </div>

@@ -28,7 +28,7 @@ It is used for high-stakes financial decisions:
   <h3 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px;">Report of Independent Registered Public Accounting Firm</h3>
 
   <div style="font-size: 0.95em; line-height: 1.6; text-align: justify; color: #333;">
-    <p>To the Board of Directors and Shareholders of <span data-bracket="start" data-for="audit">]</span><strong>WAYSTAR ROYCO CORP.</strong></p>
+    <p>To the Board of Directors and Shareholders of <span data-bracket="start" data-for="audit">[</span><strong>WAYSTAR ROYCO CORP.</strong></p>
 
     <p><strong>Opinions on the Financial Statements</strong></p>
     <p>We have audited the accompanying consolidated balance sheets of Waystar Royco Corp. as of <strong>December 31, 2025</strong>. In our opinion, the consolidated financial statements present fairly, in all material respects, the financial position of the Company.</p>

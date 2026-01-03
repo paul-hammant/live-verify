@@ -22,7 +22,7 @@ furtherDerivations: 1
       <div style="width: 100px; height: 125px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #777;">[PHOTO]</div>
     </div>
     <div style="flex-grow: 1;">
-      <div style="font-size: 1.1em; font-weight: bold; margin: 0 0 5px 0;"><span data-bracket="start" data-for="nat-id">]</span>SMITH, JANE M.</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin: 0 0 5px 0;"><span data-bracket="start" data-for="nat-id">[</span>SMITH, JANE M.</div>
       <div style="font-size: 0.85em; color: #333; line-height: 1.4;">
         <strong>ID #:</strong> 9988-7766-5544<br>
         <strong>DOB:</strong> 1985-07-20<br>

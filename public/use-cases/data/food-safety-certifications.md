@@ -32,7 +32,7 @@ This certificate is the "License to Sell" to big retailers. Shady factories that
     
     <div style="font-size: 1.1em; line-height: 1.6; color: #333; margin: 25px 0;">
       This is to certify that<br>
-      <span data-bracket="start" data-for="food-safe">]</span><strong>APEX FOOD PROCESSING, LLC</strong><br>
+      <span data-bracket="start" data-for="food-safe">[</span><strong>APEX FOOD PROCESSING, LLC</strong><br>
       123 Industrial Way, Chicago, IL 60601
     </div>
 

@@ -28,7 +28,7 @@ Because a "Positive Test" can end a multimillion-dollar career, fraud is a high 
   <div style="padding: 25px;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px; font-size: 0.9em; color: #555;">
       <div>
-        <strong>Sample ID:</strong> <span data-bracket="start" data-for="doping">]</span>998877-A (Urine)<br>
+        <strong>Sample ID:</strong> <span data-bracket="start" data-for="doping">[</span>998877-A (Urine)<br>
         <strong>Event:</strong> 2026 World Championships
       </div>
       <div style="text-align: right;">

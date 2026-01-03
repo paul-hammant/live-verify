@@ -32,7 +32,7 @@ Police officers at a traffic stop need to verify these permits in seconds. If a 
       <div style="width: 100px; height: 125px; background: #eee; display: flex; align-items: center; justify-content: center; color: #777; border: 1px solid #ccc; border-radius: 4px;">[PHOTO ID]</div>
     </div>
     <div style="flex-grow: 1;">
-      <div style="font-size: 1.1em; font-weight: bold; margin: 0 0 5px 0;"><span data-bracket="start" data-for="ccw">]</span>DOE, JOHN JACOB</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin: 0 0 5px 0;"><span data-bracket="start" data-for="ccw">[</span>DOE, JOHN JACOB</div>
       <div style="font-size: 0.85em; color: #333; line-height: 1.4;">
         <strong>Permit #:</strong> NV-99228877<br>
         <strong>DOB:</strong> 05/15/1985<br>

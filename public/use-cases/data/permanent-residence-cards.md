@@ -28,7 +28,7 @@ Because it grants broad rights, Green Cards are the #1 target for **High-End For
       <div style="width: 110px; height: 140px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #777; font-size: 0.7em; text-align: center;">[HOLDER PHOTO]</div>
     </div>
     <div style="flex-grow: 1; font-size: 0.85em; line-height: 1.4;">
-      <div style="font-weight: bold; font-size: 1.1em; margin-bottom: 5px; color: #333;"><span data-bracket="start" data-for="pr">]</span>DOE, JOHN JACOB</div>
+      <div style="font-weight: bold; font-size: 1.1em; margin-bottom: 5px; color: #333;"><span data-bracket="start" data-for="pr">[</span>DOE, JOHN JACOB</div>
       <div style="color: #555;">
         <strong>USCIS #:</strong> 992-288-776<br>
         <strong>Category:</strong> RE8 (Refugee)<br>

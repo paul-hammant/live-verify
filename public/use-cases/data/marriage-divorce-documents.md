@@ -22,7 +22,7 @@ furtherDerivations: 1
     <div style="display: flex; justify-content: space-around; margin: 20px 0; background: #f9f9f9; padding: 15px; border: 1px solid #ccc;">
       <div style="text-align: center;">
         <strong>SPOUSE A</strong><br>
-        <span data-bracket="start" data-for="marriage">]</span>John Jacob Doe<br>
+        <span data-bracket="start" data-for="marriage">[</span>John Jacob Doe<br>
         <small>DOB: 05/15/1985</small>
       </div>
       <div style="font-size: 1.5em; align-self: center;">&</div>

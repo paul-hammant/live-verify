@@ -28,7 +28,7 @@ OCR-to-hash allows a homeowner to scan the worker's ID badge to verify: **"Is th
     </div>
     <div style="flex-grow: 1;">
       <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Employee Name</div>
-      <div style="font-size: 1.1em; font-weight: bold; margin: 0 0 10px 0; color: #333;"><span data-bracket="start" data-for="utility">]</span>DAVID R. CHEN</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin: 0 0 10px 0; color: #333;"><span data-bracket="start" data-for="utility">[</span>DAVID R. CHEN</div>
       
       <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Employee ID</div>
       <div style="font-size: 1em; font-weight: bold; margin: 0 0 10px 0;">ID: NY-992288</div>
@@ -127,7 +127,7 @@ _[Content merged from: meter-reader-surveyor-verification]_
     </div>
     <div style="flex-grow: 1;">
       <h4 style="margin: 0; color: #004a99;">FIELD TECHNICIAN</h4>
-      <div style="font-size: 1.3em; font-weight: bold; margin: 5px 0;"><span data-bracket="start" data-for="meter">]</span>Marcus M 1847</div>
+      <div style="font-size: 1.3em; font-weight: bold; margin: 5px 0;"><span data-bracket="start" data-for="meter">[</span>Marcus M 1847</div>
       <div style="font-size: 0.9em; color: #333; line-height: 1.4;">
         <strong>Unit:</strong> Smart-Meter Install<br>
         <strong>Status:</strong> ON-DUTY

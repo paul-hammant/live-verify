@@ -22,7 +22,7 @@ It allows a reader to scan the text and see a green "VERIFIED" status from an in
     <div style="font-size: 0.85em; margin-top: 4px; opacity: 0.8;">METROPOLIS • TRUTH, JUSTICE, AND VERIFIED FACTS</div>
   </div>
   <div style="padding: 25px;">
-    <h2 style="font-size: 1.6em; margin: 0 0 10px 0; line-height: 1.2; color: #1a1a2e;"><span data-bracket="start" data-for="fact">]</span>LexCorp Tower Fire: 47 Rescued, No Casualties</h2>
+    <h2 style="font-size: 1.6em; margin: 0 0 10px 0; line-height: 1.2; color: #1a1a2e;"><span data-bracket="start" data-for="fact">[</span>LexCorp Tower Fire: 47 Rescued, No Casualties</h2>
     <div style="font-size: 0.9em; color: #666; margin-bottom: 16px;">
       By <strong>Lois Lane</strong> | Metro Desk | March 15, 2026
     </div>

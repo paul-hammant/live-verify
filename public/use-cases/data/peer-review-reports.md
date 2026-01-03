@@ -21,7 +21,7 @@ These reports are the "Gold Standard" of credibility. Researchers use them to se
   </div>
 
   <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
-    <p><strong>Manuscript ID:</strong> <span data-bracket="start" data-for="peer">]</span>JQP-2026-9922-XJ<br>
+    <p><strong>Manuscript ID:</strong> <span data-bracket="start" data-for="peer">[</span>JQP-2026-9922-XJ<br>
     <strong>Submission Date:</strong> January 15, 2026</p>
 
     <p><strong>Title:</strong> <em>Anomalous Waveform Dynamics in High-Energy Magic Fields.</em></p>

@@ -26,7 +26,7 @@ In high-stakes trials, lawyers sometimes "Edit" the expert's findings in the fin
 
   <div style="font-size: 1em; line-height: 1.6; color: #000; text-align: justify;">
     <p><strong>Case:</strong> <em>Acme v. Globochem</em> (Case #: 26-CIV-9922)<br>
-    <strong>Subject:</strong> <span data-bracket="start" data-for="expert">]</span>Structural Analysis of SkyTower Crane Collapse</p>
+    <strong>Subject:</strong> <span data-bracket="start" data-for="expert">[</span>Structural Analysis of SkyTower Crane Collapse</p>
 
     <p>I, Dr. David Miller, PE, have been retained by Counsel for the Plaintiff to provide an independent engineering opinion. Based on my review of the metallurgical data and the site photos, it is my professional opinion that the weld failure in the primary jib was the proximate cause of the collapse.</p>
 

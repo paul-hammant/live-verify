@@ -29,7 +29,7 @@ A **Data Authorization Certificate** is a receipt for that digital handshake. It
     </div>
 
     <div style="font-size: 1.1em; line-height: 1.5; color: #333; margin-bottom: 20px;">
-      <p>This certifies that <span data-bracket="start" data-for="agg">]</span><strong>Customer:</strong> Jane Doe (Ending in ...4421)</p>
+      <p>This certifies that <span data-bracket="start" data-for="agg">[</span><strong>Customer:</strong> Jane Doe (Ending in ...4421)</p>
       
       <p>Has explicitly authorized:</p>
       <p><strong>Third Party:</strong> BudgetPlanner App (via Plaid)<br>

@@ -27,7 +27,7 @@ OCR-to-hash allows a neighbor, tenant, or regulator to scan the posting to verif
       <div style="font-size: 0.9em; line-height: 1.4;">
         <strong>Property:</strong><br>
         42 INDUSTRIAL WAY, SPRINGFIELD<br>
-        <strong>RRN:</strong> <span data-bracket="start" data-for="env">]</span>9922-8877-6655-4422
+        <strong>RRN:</strong> <span data-bracket="start" data-for="env">[</span>9922-8877-6655-4422
       </div>
       <div style="text-align: right; font-size: 0.9em;">
         <strong>Date:</strong> 15 MAR 2026<br>

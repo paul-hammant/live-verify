@@ -28,7 +28,7 @@ Foreign governments (like Thailand or Spain) require these letters for visas. Be
 
     <h3 style="text-align: center; text-transform: uppercase; margin: 20px 0;">Consular Attestation</h3>
 
-    <p>The Consular Section of the Embassy of the United States of America in London hereby attests that <span data-bracket="start" data-for="consul">]</span><strong>SARAH JANE SMITH</strong> (Passport No: *******1234) has appeared before me and presented evidence of her residency and financial standing for the purpose of a retirement visa application.</p>
+    <p>The Consular Section of the Embassy of the United States of America in London hereby attests that <span data-bracket="start" data-for="consul">[</span><strong>SARAH JANE SMITH</strong> (Passport No: *******1234) has appeared before me and presented evidence of her residency and financial standing for the purpose of a retirement visa application.</p>
 
     <p>This attestation is issued at the request of the named individual for submission to the Ministry of Interior, Kingdom of Thailand.</p>
   </div>

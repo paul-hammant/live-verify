@@ -22,7 +22,7 @@ The **Certificate of Fingerprinting** is the paper signed by a Notary Public or 
   </div>
 
   <div style="font-size: 1em; line-height: 1.6; color: #333; text-align: justify;">
-    <p>I, the undersigned Notary Public, hereby certify that <span data-bracket="start" data-for="finger">]</span><strong>JOHN JACOB DOE</strong> (DOB: 05/15/1985) appeared before me this day and was fingerprinted using the standard FBI FD-258 card format.</p>
+    <p>I, the undersigned Notary Public, hereby certify that <span data-bracket="start" data-for="finger">[</span><strong>JOHN JACOB DOE</strong> (DOB: 05/15/1985) appeared before me this day and was fingerprinted using the standard FBI FD-258 card format.</p>
 
     <div style="display: flex; justify-content: space-around; margin: 20px 0;">
       <div style="width: 80px; height: 100px; border: 1px solid #999; background: #eee; display: flex; align-items: center; justify-content: center; font-size: 0.6em; color: #777;">[R THUMB]</div>

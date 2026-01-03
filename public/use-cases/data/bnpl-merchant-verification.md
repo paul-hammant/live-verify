@@ -21,7 +21,7 @@ furtherDerivations: 1
     </div>
 
     <div style="font-size: 1em; line-height: 1.6; color: #333;">
-      <p>This certifies that <span data-bracket="start" data-for="bnpl-merch">]</span><strong>LUXURY WATCH BOUTIQUE, INC.</strong></p>
+      <p>This certifies that <span data-bracket="start" data-for="bnpl-merch">[</span><strong>LUXURY WATCH BOUTIQUE, INC.</strong></p>
       <p>Is an authorized merchant partner of Klarna Bank AB. This merchant has passed our financial and compliance vetting process and is authorized to offer "Pay in 4" and "Financing" products to eligible customers.</p>
       
       <p><strong>Status:</strong> VERIFIED<br>

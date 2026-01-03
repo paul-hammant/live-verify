@@ -23,7 +23,7 @@ Because vouchers are essentially "Digital Cash," they are a primary target for *
   <div style="padding: 25px; background: #fdfdfd; border-bottom: 1px solid #eee;">
     <div style="text-align: center; margin-bottom: 20px;">
       <div style="font-size: 0.7em; color: #888; text-transform: uppercase;">Voucher Code</div>
-      <div style="font-size: 1.8em; font-weight: bold; color: #004a99; letter-spacing: 2px;"><span data-bracket="start" data-for="voucher">]</span>XJ-9922-8877</div>
+      <div style="font-size: 1.8em; font-weight: bold; color: #004a99; letter-spacing: 2px;"><span data-bracket="start" data-for="voucher">[</span>XJ-9922-8877</div>
     </div>
 
     <div style="display: flex; justify-content: space-between; font-size: 0.9em; line-height: 1.5; color: #333;">

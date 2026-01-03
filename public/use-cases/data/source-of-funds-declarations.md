@@ -23,7 +23,7 @@ This is core AML (anti-money laundering) compliance. If you can't explain where 
     <div style="font-size: 0.8em;">Anti-Money Laundering Compliance</div>
   </div>
   <div style="padding: 20px; font-size: 0.9em; line-height: 1.6;">
-    <p><strong>Client:</strong> Richard Thornton<br>
+    <p><strong>Client:</strong> <span data-bracket="start" data-for="sourceoffundsdeclara">[</span>Richard Thornton<br>
     <strong>Account/Transaction:</strong> Initial Investment - £500,000<br>
     <strong>Declaration Date:</strong> February 1, 2026</p>
 
@@ -40,7 +40,10 @@ This is core AML (anti-money laundering) compliance. If you can't explain where 
     <p style="font-size: 0.85em; color: #666;">I confirm this information is true and complete. I will notify the firm of any material changes.</p>
 
     <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
-      verify:hartley-wealth.com/kyc/SOF-RT-2026-0201
+      <div data-verify-line="sourceoffundsdeclara" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+        title="Demo only: This is an illustrative example of the verification line">
+        verify:hartley-wealth.com/kyc/SOF-RT-2026-0201 <span data-bracket="end" data-for="sourceoffundsdeclara">]</span>
+      </div>
     </div>
   </div>
 </div>

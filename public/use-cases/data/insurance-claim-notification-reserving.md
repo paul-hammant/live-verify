@@ -23,7 +23,7 @@ OCR-to-hash with **Independent Witnessing** solves the "Completeness Problem." T
   </div>
 
   <div style="font-size: 0.95em; line-height: 1.4;">
-    <p><strong>Claim Ref:</strong> <span data-bracket="start" data-for="claim">]</span>CL-2026-887766<br>
+    <p><strong>Claim Ref:</strong> <span data-bracket="start" data-for="claim">[</span>CL-2026-887766<br>
     <strong>Policy:</strong> PL-992288-XJ<br>
     <strong>Insured:</strong> Springfield Manufacturing</p>
 

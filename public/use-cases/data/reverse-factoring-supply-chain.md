@@ -22,7 +22,7 @@ These documents are the "Trade Collateral." Fraud is high-stakes: a dishonest su
     </div>
     <div style="text-align: right;">
       <div style="font-weight: bold; font-size: 0.9em;">APPROVAL ADVICE</div>
-      <div style="font-size: 0.7em;">Batch: <span data-bracket="start" data-for="factor">]</span>SCF-2026-992288</div>
+      <div style="font-size: 0.7em;">Batch: <span data-bracket="start" data-for="factor">[</span>SCF-2026-992288</div>
     </div>
   </div>
 

@@ -34,7 +34,7 @@ The policy is "Parametric"—meaning it pays out automatically if a specific wea
       <p>This document confirms that coverage is in effect for the following event:</p>
 
       <div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin: 20px 0;">
-        <strong>Event:</strong> <span data-bracket="start" data-for="event-cancel">]</span>Austin City Limits - Weekend 1<br>
+        <strong>Event:</strong> <span data-bracket="start" data-for="event-cancel">[</span>Austin City Limits - Weekend 1<br>
         <strong>Location:</strong> Zilker Park, Austin, TX
       </div>
 

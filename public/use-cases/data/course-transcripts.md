@@ -27,7 +27,7 @@ You need this "Official" paper to apply for Grad School or to prove to an employ
   <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
       <div>
-        <strong>Student:</strong> <span data-bracket="start" data-for="transcript">]</span><strong>PONDER STIBBONS</strong><br>
+        <strong>Student:</strong> <span data-bracket="start" data-for="transcript">[</span><strong>PONDER STIBBONS</strong><br>
         <strong>Student ID:</strong> OX-992288
       </div>
       <div style="text-align: right;">

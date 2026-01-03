@@ -31,7 +31,7 @@ OCR-to-hash allows a driver to scan an officer's ID badge or the verification li
     </div>
     <div style="flex-grow: 1;">
       <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Officer</div>
-      <div style="font-size: 1.3em; font-weight: bold; margin: 0 0 10px 0; color: #333;"><span data-bracket="start" data-for="park-off">]</span>Robert M 5523</div>
+      <div style="font-size: 1.3em; font-weight: bold; margin: 0 0 10px 0; color: #333;"><span data-bracket="start" data-for="park-off">[</span>Robert M 5523</div>
 
       <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Division</div>
       <div style="font-size: 0.9em; font-weight: bold;">Enforcement South</div>

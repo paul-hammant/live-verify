@@ -24,7 +24,7 @@ If a shipment hits a "Temperature Spike" (Excursion), the product might be ruine
   </div>
 
   <div style="font-size: 0.85em; line-height: 1.4;">
-    <p><strong>Shipment ID:</strong> <span data-bracket="start" data-for="cold">]</span>COLD-2026-992288<br>
+    <p><strong>Shipment ID:</strong> <span data-bracket="start" data-for="cold">[</span>COLD-2026-992288<br>
     <strong>Consignor:</strong> BioMed Pharma, AG<br>
     <strong>Commodity:</strong> Insul-Safe Insulin (12 Pallets)</p>
 

@@ -26,7 +26,7 @@ These documents are the "Combat Passport" for a ship. Fraud is high-stakes: a sh
   <div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
-        <strong>Vessel Name:</strong> <span data-bracket="start" data-for="war">]</span>MV OCEAN SENTINEL<br>
+        <strong>Vessel Name:</strong> <span data-bracket="start" data-for="war">[</span>MV OCEAN SENTINEL<br>
         <strong>IMO Number:</strong> 9922887<br>
         <strong>Flag:</strong> Marshall Islands
       </div>

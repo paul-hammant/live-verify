@@ -26,7 +26,7 @@ Shady shippers often "Mis-declare" cargo—calling dangerous batteries "Toys" on
     <div style="display: flex; border-bottom: 1px solid #d32f2f; padding-bottom: 10px; margin-bottom: 10px;">
       <div style="width: 50%; border-right: 1px solid #d32f2f; padding-right: 10px;">
         <strong>Shipper:</strong><br>
-        <span data-bracket="start" data-for="dgr">]</span>Lithium-Power Tech, Ltd.<br>
+        <span data-bracket="start" data-for="dgr">[</span>Lithium-Power Tech, Ltd.<br>
         Shenzhen, China
       </div>
       <div style="width: 50%; padding-left: 10px;">
@@ -154,7 +154,7 @@ Fraudsters often edit these PDFs to hide that a chemical is toxic, just to get i
     <div style="display: flex; border-bottom: 1px solid #000; padding-bottom: 10px; margin-bottom: 10px;">
       <div style="width: 50%; border-right: 1px solid #000; padding-right: 10px;">
         <strong>1. Shipper / Exporter:</strong><br>
-        <span data-bracket="start" data-for="imo-dgd">]</span>Industrial Chemicals, Gmbh.<br>
+        <span data-bracket="start" data-for="imo-dgd">[</span>Industrial Chemicals, Gmbh.<br>
         Frankfurt, Germany
       </div>
       <div style="width: 50%; padding-left: 10px;">
@@ -284,7 +284,7 @@ Fraudsters often "Downgrade" the hazard on the paper form to bypass tunnel restr
     <div style="display: flex; border-bottom: 1px solid #ff9800; padding-bottom: 10px; margin-bottom: 10px;">
       <div style="width: 50%; border-right: 1px solid #ff9800; padding-right: 10px;">
         <strong>1. Consignor (Shipper):</strong><br>
-        <span data-bracket="start" data-for="road-dg">]</span>EuroChem Industrial, SA<br>
+        <span data-bracket="start" data-for="road-dg">[</span>EuroChem Industrial, SA<br>
         Lyon, France
       </div>
       <div style="width: 50%; padding-left: 10px;">

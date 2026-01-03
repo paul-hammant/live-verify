@@ -26,7 +26,7 @@ These cards are the "Ticket to the Ballot Box." Fraud is high-stakes: partisan a
   <div style="padding: 20px; background: #fff;">
     <div style="border-bottom: 1px solid #eee; padding-bottom: 10px; margin-bottom: 15px;">
       <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Registered Voter</div>
-      <div style="font-size: 1.2em; font-weight: bold; color: #333;"><span data-bracket="start" data-for="vote">]</span>SARAH JANE SMITH</div>
+      <div style="font-size: 1.2em; font-weight: bold; color: #333;"><span data-bracket="start" data-for="vote">[</span>SARAH JANE SMITH</div>
       
       <div style="font-size: 0.9em; color: #333; margin-top: 5px;">
         123 MAPLE STREET, SPRINGFIELD, IL 62704

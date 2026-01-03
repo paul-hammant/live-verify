@@ -26,7 +26,7 @@ Because these cards are required for legal entry, scammers often sell "Fake Gree
     <div style="display: flex; justify-content: space-between; font-size: 0.9em; margin-bottom: 20px;">
       <div>
         <strong>1. Valid:</strong> From 15/03/2026 To 14/04/2026<br>
-        <strong>2. Country Code:</strong> <span data-bracket="start" data-for="green-card">]</span>UK / 992288
+        <strong>2. Country Code:</strong> <span data-bracket="start" data-for="green-card">[</span>UK / 992288
       </div>
       <div style="text-align: right;">
         <strong>3. Registration No:</strong><br>

@@ -25,7 +25,7 @@ This letter is the "proof of income" for non-profits. They show it to other dono
 
   <p>March 10, 2026</p>
 
-  <p>To: <span data-bracket="start" data-for="grant">]</span>Community Health Initiative<br>
+  <p>To: <span data-bracket="start" data-for="grant">[</span>Community Health Initiative<br>
   Attn: Executive Director</p>
 
   <p>Dear Partners,</p>

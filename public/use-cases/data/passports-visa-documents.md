@@ -33,7 +33,7 @@ Beyond the airport, passports are used as the "Primary ID" for:
       <div style="width: 120px; height: 150px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #777; font-size: 0.7em; text-align: center;">[AUTHORITATIVE<br>DMV/PASSPORT<br>PHOTO]</div>
     </div>
     <div style="flex-grow: 1;">
-      <div style="font-size: 1.1em; font-weight: bold; margin: 0 0 5px 0;"><span data-bracket="start" data-for="pass">]</span>DOE, JOHN JACOB</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin: 0 0 5px 0;"><span data-bracket="start" data-for="pass">[</span>DOE, JOHN JACOB</div>
       <div style="font-size: 0.85em; color: #333; line-height: 1.4;">
         <strong>Passport No:</strong> 992288776<br>
         <strong>Nationality:</strong> BRITISH CITIZEN<br>

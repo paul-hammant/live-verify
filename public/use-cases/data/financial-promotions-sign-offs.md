@@ -26,7 +26,7 @@ These documents are the "Legal Safe Harbor" for marketing. Fraud is high-stakes 
   <div style="padding: 25px; font-size: 0.95em; line-height: 1.6; color: #333;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
-        <strong>Campaign:</strong> <span data-bracket="start" data-for="promo">]</span>High-Yield Spring Fund<br>
+        <strong>Campaign:</strong> <span data-bracket="start" data-for="promo">[</span>High-Yield Spring Fund<br>
         <strong>Promotion ID:</strong> MKT-2026-042-XJ<br>
         <strong>Channels:</strong> Paid Social / Email
       </div>

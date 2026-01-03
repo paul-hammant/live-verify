@@ -30,7 +30,7 @@ furtherDerivations: 1
       <p style="margin-top: 0;"><strong>PERSONS ENTITLED TO DRIVE:</strong></p>
       <ul style="margin: 0; padding-left: 20px;">
         <li>John Jacob Doe (Policyholder)</li>
-        <li><span data-bracket="start" data-for="driver">]</span><strong>Sarah Jane Smith</strong> (Named Driver)</li>
+        <li><span data-bracket="start" data-for="driver">[</span><strong>Sarah Jane Smith</strong> (Named Driver)</li>
       </ul>
     </div>
 

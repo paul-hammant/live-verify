@@ -34,7 +34,7 @@ Companies that provide in-home services (like cleaning or IT repair) use these b
       <p>This certifies that the following entity is bonded against acts of Employee Dishonesty:</p>
       
       <p style="background: #f5f5f5; padding: 10px; border-left: 4px solid #1a237e;">
-        <strong>Principal:</strong> <span data-bracket="start" data-for="fidelity">]</span>Initech Financial Services, LLC<br>
+        <strong>Principal:</strong> <span data-bracket="start" data-for="fidelity">[</span>Initech Financial Services, LLC<br>
         <strong>Bond Amount:</strong> $ 1,000,000.00<br>
         <strong>Covered Class:</strong> All Employees (Blanket Bond)
       </p>

@@ -28,7 +28,7 @@ These documents are the "Keys to the Classroom." Fraud is high-stakes: individua
       <div style="width: 100px; height: 120px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #999; font-size: 0.7em; text-align: center; margin-right: 20px;">[TEACHER PHOTO]</div>
       <div style="flex-grow: 1; font-size: 0.9em; line-height: 1.5;">
         <div style="font-size: 0.8em; color: #888; text-transform: uppercase;">License Holder</div>
-        <div style="font-size: 1.3em; font-weight: bold; color: #003366;"><span data-bracket="start" data-for="teach">]</span>SARAH J. SMITH</div>
+        <div style="font-size: 1.3em; font-weight: bold; color: #003366;"><span data-bracket="start" data-for="teach">[</span>SARAH J. SMITH</div>
         
         <div style="margin-top: 10px;">
           <strong>Primary State:</strong> New York (NYSED)<br>

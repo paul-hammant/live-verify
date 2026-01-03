@@ -26,7 +26,7 @@ Because it is an "Authentic Act," it has enormous legal weight:
   </div>
 
   <div style="font-size: 1.1em; line-height: 1.8; color: #000; text-align: justify;">
-    <p>BEFORE US, <span data-bracket="start" data-for="not-will">]</span><strong>Maitre JEAN-PIERRE LEFEBVRE</strong>, Notary in the City of Montreal, appeared <strong>MARCUS A. WILLOWS</strong>, who declared this to be his Last Will and Testament.</p>
+    <p>BEFORE US, <span data-bracket="start" data-for="not-will">[</span><strong>Maitre JEAN-PIERRE LEFEBVRE</strong>, Notary in the City of Montreal, appeared <strong>MARCUS A. WILLOWS</strong>, who declared this to be his Last Will and Testament.</p>
     
     <p>The Testator bequeaths his entire estate, both real and personal, to his surviving spouse, <strong>MARIE WILLOWS</strong>, and appoints her as the Liquidator of the Succession.</p>
   </div>
@@ -133,7 +133,7 @@ OCR-to-hash binds the **Notary's commission number, the signer's name, and the s
   <div style="font-size: 1.1em; line-height: 1.6; color: #000;">
     <p style="text-align: right; font-size: 0.9em;">STATE OF FLORIDA<br>COUNTY OF MIAMI-DADE</p>
     
-    <p>The foregoing instrument was acknowledged before me this 15th day of March, 2026, by <span data-bracket="start" data-for="notary">]</span><strong>ROBERT J. MILLER</strong>, who is personally known to me or who has produced a Driver License as identification.</p>
+    <p>The foregoing instrument was acknowledged before me this 15th day of March, 2026, by <span data-bracket="start" data-for="notary">[</span><strong>ROBERT J. MILLER</strong>, who is personally known to me or who has produced a Driver License as identification.</p>
   </div>
 
   <div style="margin-top: 40px; display: flex; align-items: flex-start; justify-content: space-between;">
@@ -240,7 +240,7 @@ The problem is that the "Notary Seal" (the ink stamp or embossed circle) is a ph
     <p>State of <strong>CALIFORNIA</strong><br>
     County of <strong>LOS ANGELES</strong></p>
 
-    <p>On March 15, 2026 before me, <span data-bracket="start" data-for="notary">]</span><strong>SARAH J. JENKINS</strong>, Notary Public, personally appeared <strong>JOHN JACOB DOE</strong>, who proved to me on the basis of satisfactory evidence to be the person whose name is subscribed to the within instrument.</p>
+    <p>On March 15, 2026 before me, <span data-bracket="start" data-for="notary">[</span><strong>SARAH J. JENKINS</strong>, Notary Public, personally appeared <strong>JOHN JACOB DOE</strong>, who proved to me on the basis of satisfactory evidence to be the person whose name is subscribed to the within instrument.</p>
     
     <p>I certify under PENALTY OF PERJURY under the laws of the State of California that the foregoing paragraph is true and correct.</p>
   </div>
@@ -348,7 +348,7 @@ The problem is that a "Digital Seal" is often just a pretty image on a PDF. Frau
     <div style="margin: 20px 0; display: flex; align-items: flex-start; border: 1px solid #ccc; padding: 15px; background: #f9f9f9;">
       <div style="width: 80px; height: 80px; border: 2px solid #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; text-align: center; margin-right: 20px; color: #000;">DIGITAL<br>SEAL</div>
       <div style="flex-grow: 1;">
-        <strong>Notary:</strong> <span data-bracket="start" data-for="ron">]</span>SARAH J. JENKINS<br>
+        <strong>Notary:</strong> <span data-bracket="start" data-for="ron">[</span>SARAH J. JENKINS<br>
         <strong>Commission #:</strong> 992288-TX<br>
         <strong>Expires:</strong> 12/31/2028<br>
         <strong>Session ID:</strong> RON-8844-X92

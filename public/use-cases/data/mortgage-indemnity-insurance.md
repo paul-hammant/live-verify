@@ -23,7 +23,7 @@ furtherDerivations: 1
     <h2 style="text-align: center; color: #002d62; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">PMI Coverage Confirmation</h2>
 
     <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Insured Lender:</strong> <span data-bracket="start" data-for="mort-ins">]</span>Wells Fargo Bank, N.A.<br>
+      <p><strong>Insured Lender:</strong> <span data-bracket="start" data-for="mort-ins">[</span>Wells Fargo Bank, N.A.<br>
       <strong>Borrower:</strong> Sarah Jane Smith</p>
 
       <div style="background: #f0f4f8; border: 1px solid #d1d9e6; padding: 15px; margin: 15px 0; border-radius: 4px;">

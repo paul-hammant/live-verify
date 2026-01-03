@@ -25,7 +25,7 @@ Fraud is high-stakes: some "Salesmen" edit the FDD to hide lawsuits or to inflat
   <h3 style="text-align: center; text-transform: uppercase; margin-bottom: 20px; letter-spacing: 1px;">Disclosure Verification</h3>
 
   <div style="font-size: 0.95em; line-height: 1.6; color: #333; text-align: justify;">
-    <p>This document serves as a verified extract of the FDD provided to <span data-bracket="start" data-for="franchise">]</span><strong>John Jacob Doe</strong> for the proposed franchise location at:</p>
+    <p>This document serves as a verified extract of the FDD provided to <span data-bracket="start" data-for="franchise">[</span><strong>John Jacob Doe</strong> for the proposed franchise location at:</p>
     
     <p style="text-align: center; font-weight: bold;">123 Convenience Way, Austin, TX 78701</p>
 

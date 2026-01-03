@@ -18,7 +18,7 @@ Because these apps move money instantly, they are the #1 target for **"Screensho
   <div style="background: #008CFF; color: #fff; padding: 25px; text-align: center;">
     <div style="font-size: 1.1em; font-weight: bold;">Payment Sent</div>
     <div style="font-size: 3em; font-weight: bold; margin: 10px 0;">$ 450.00</div>
-    <div style="font-size: 0.9em; opacity: 0.9;">to <span data-bracket="start" data-for="p2p">]</span>Sarah Jane Smith</div>
+    <div style="font-size: 0.9em; opacity: 0.9;">to <span data-bracket="start" data-for="p2p">[</span>Sarah Jane Smith</div>
   </div>
 
   <div style="padding: 25px; text-align: center;">

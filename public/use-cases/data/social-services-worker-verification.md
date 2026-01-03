@@ -31,7 +31,7 @@ OCR-to-hash allows a family to scan the worker's ID card to verify: **"Is this a
     </div>
     <div style="flex-grow: 1;">
       <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Worker Name</div>
-      <div style="font-size: 1.1em; font-weight: bold; margin: 0 0 10px 0; color: #2e7d32;"><span data-bracket="start" data-for="social">]</span>SARAH J. JENKINS</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin: 0 0 10px 0; color: #2e7d32;"><span data-bracket="start" data-for="social">[</span>SARAH J. JENKINS</div>
       
       <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Employee ID</div>
       <div style="font-size: 1.1em; font-weight: bold; margin: 0 0 10px 0; letter-spacing: 1px;">ID: DCFS-992288</div>

@@ -16,7 +16,7 @@ furtherDerivations: 1
 
   <div style="padding: 40px; text-align: center;">
     <div style="font-size: 1.1em; color: #666; margin-bottom: 10px;">This is to certify that</div>
-    <div style="font-size: 2em; font-weight: bold; color: #003366; margin-bottom: 20px;"><span data-bracket="start" data-for="record">]</span>USAIN BOLT</div>
+    <div style="font-size: 2em; font-weight: bold; color: #003366; margin-bottom: 20px;"><span data-bracket="start" data-for="record">[</span>USAIN BOLT</div>
     <div style="font-size: 1.1em; color: #666; margin-bottom: 10px;">achieved a new World Record in the</div>
     <div style="font-size: 1.5em; font-weight: bold; margin-bottom: 20px;">MEN'S 100 METRES</div>
 

@@ -34,7 +34,7 @@ Fraud is high-stakes here: a collector might edit a $1M policy to read $100M to 
       <p>This document confirms all-risk "Nail-to-Nail" coverage for the following work:</p>
 
       <div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin: 20px 0;">
-        <strong>Object:</strong> <span data-bracket="start" data-for="art-ins">]</span>Claude Monet, <em>Water Lilies</em> (1906)<br>
+        <strong>Object:</strong> <span data-bracket="start" data-for="art-ins">[</span>Claude Monet, <em>Water Lilies</em> (1906)<br>
         <strong>Agreed Value:</strong> $ 85,000,000.00
       </div>
 

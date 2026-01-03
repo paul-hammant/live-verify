@@ -26,7 +26,7 @@ These permits are the "Final Barrier" to construction. Fraud is high-stakes: dev
   <div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
-        <strong>Permittee:</strong> <span data-bracket="start" data-for="fill">]</span>SKYLINE DEVELOPERS LLC<br>
+        <strong>Permittee:</strong> <span data-bracket="start" data-for="fill">[</span>SKYLINE DEVELOPERS LLC<br>
         <strong>Project:</strong> Blue River Industrial Park<br>
         <strong>Location:</strong> Parcel 9922 (Springfield)
       </div>

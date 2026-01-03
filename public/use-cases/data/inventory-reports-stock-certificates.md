@@ -18,7 +18,7 @@ furtherDerivations: 1
   <div style="font-size: 0.85em; line-height: 1.4;">
     <div style="display: flex; justify-content: space-between;">
       <div>
-        <strong>Depositor:</strong> <span data-bracket="start" data-for="inventory">]</span>Premium Seafood Imports, Inc.<br>
+        <strong>Depositor:</strong> <span data-bracket="start" data-for="inventory">[</span>Premium Seafood Imports, Inc.<br>
         <strong>Warehouse:</strong> Pier 42 Cold Hub, Seattle, WA
       </div>
       <div style="text-align: right;">

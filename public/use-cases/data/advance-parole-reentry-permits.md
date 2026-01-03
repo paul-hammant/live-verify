@@ -36,7 +36,7 @@ If a traveler loses this paper, or if an airline agent in Paris thinks it looks 
     <div style="display: flex; margin-bottom: 20px;">
       <div style="width: 100px; height: 120px; background: #eee; margin-right: 20px; display: flex; align-items: center; justify-content: center; color: #777;">[Photo]</div>
       <div style="font-size: 0.95em; line-height: 1.5; color: #333;">
-        <p><strong>Name:</strong> <span data-bracket="start" data-for="parole">]</span>JUAN VALDEZ<br>
+        <p><strong>Name:</strong> <span data-bracket="start" data-for="parole">[</span>JUAN VALDEZ<br>
         <strong>Date of Birth:</strong> 05/05/1980<br>
         <strong>Country of Birth:</strong> COLOMBIA</p>
         <p><strong>Date of Issuance:</strong> JAN 15, 2026<br>

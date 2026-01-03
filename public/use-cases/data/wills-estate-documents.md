@@ -23,7 +23,7 @@ It defines:
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 40px;">
     <h1 style="margin: 0; font-size: 1.8em; text-transform: uppercase; letter-spacing: 2px;">Last Will and Testament</h1>
     <div style="font-size: 1.1em; font-style: italic; margin-top: 5px;">of</div>
-    <div style="font-size: 1.5em; font-weight: bold; margin-top: 5px;"><span data-bracket="start" data-for="will">]</span>MARGARET A. WILLOWS</div>
+    <div style="font-size: 1.5em; font-weight: bold; margin-top: 5px;"><span data-bracket="start" data-for="will">[</span>MARGARET A. WILLOWS</div>
   </div>
 
   <div style="font-size: 1.1em; line-height: 1.8; color: #000; text-align: justify;">

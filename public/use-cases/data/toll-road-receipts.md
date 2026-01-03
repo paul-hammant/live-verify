@@ -22,7 +22,7 @@ Fraud is high-volume and low-detection: employees use "Toll Receipt Generator" a
   </div>
 
   <div style="font-size: 0.9em; line-height: 1.4;">
-    <p><strong>Account:</strong> <span data-bracket="start" data-for="toll">]</span>****-****-9922<br>
+    <p><strong>Account:</strong> <span data-bracket="start" data-for="toll">[</span>****-****-9922<br>
     <strong>Transponder:</strong> 004-88776655<br>
     <strong>Plate:</strong> ABC-1234 (NY)</p>
 

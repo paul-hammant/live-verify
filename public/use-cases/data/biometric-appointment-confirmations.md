@@ -34,7 +34,7 @@ Fraudsters often create fake notices to get into secure government facilities or
     <h2 style="text-align: center; font-size: 1.2em; margin-bottom: 20px; text-transform: uppercase;">ASC APPOINTMENT NOTICE</h2>
 
     <div style="font-size: 0.95em; line-height: 1.5; color: #333;">
-      <p><strong>Applicant:</strong> <span data-bracket="start" data-for="bio">]</span>SARAH JANE SMITH</p>
+      <p><strong>Applicant:</strong> <span data-bracket="start" data-for="bio">[</span>SARAH JANE SMITH</p>
       
       <div style="background: #f9f9f9; border: 1px solid #eee; padding: 15px; margin: 15px 0;">
         <p><strong>Date of Appointment:</strong> March 15, 2026<br>

@@ -26,7 +26,7 @@ This sector faces massive high-volume fraud. From **Expense Reimbursement Fraud*
   <div style="padding: 25px;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div style="font-size: 0.9em; line-height: 1.5;">
-        <strong>Traveler:</strong> <span data-bracket="start" data-for="travel">]</span>SARAH JANE SMITH<br>
+        <strong>Traveler:</strong> <span data-bracket="start" data-for="travel">[</span>SARAH JANE SMITH<br>
         <strong>Company:</strong> Global Logistics Corp.<br>
         <strong>Purpose:</strong> Q1 Board Meeting
       </div>

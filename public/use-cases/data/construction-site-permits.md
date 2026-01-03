@@ -26,7 +26,7 @@ OCR-to-hash allows a neighbor or building inspector to scan the permit from the 
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px; border-bottom: 2px solid #eee; padding-bottom: 10px;">
       <div>
         <div style="font-size: 0.7em; color: #888; text-transform: uppercase;">Permit Number</div>
-        <div style="font-size: 1.2em; font-weight: bold; color: #d32f2f;"><span data-bracket="start" data-for="permit">]</span>B-9922-8877-Z</div>
+        <div style="font-size: 1.2em; font-weight: bold; color: #d32f2f;"><span data-bracket="start" data-for="permit">[</span>B-9922-8877-Z</div>
       </div>
       <div style="text-align: right;">
         <div style="font-size: 0.7em; color: #888; text-transform: uppercase;">Issue Date</div>

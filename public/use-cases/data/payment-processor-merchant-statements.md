@@ -19,7 +19,7 @@ These statements are the "Income Proof" for the digital economy. Lenders use the
     <div style="font-weight: bold; font-size: 1.5em; letter-spacing: -0.5px;">stripe</div>
     <div style="text-align: right;">
       <div style="font-weight: bold; font-size: 0.9em;">MONTHLY REVENUE SUMMARY</div>
-      <div style="font-size: 0.7em; opacity: 0.9;">Statement ID: <span data-bracket="start" data-for="stripe">]</span>ST-99228877-XJ</div>
+      <div style="font-size: 0.7em; opacity: 0.9;">Statement ID: <span data-bracket="start" data-for="stripe">[</span>ST-99228877-XJ</div>
     </div>
   </div>
 

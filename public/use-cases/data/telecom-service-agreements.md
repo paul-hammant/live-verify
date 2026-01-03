@@ -26,7 +26,7 @@ The problem is that these agreements are often buried in 50-page PDFs. During a 
   <div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9em; margin-bottom: 25px;">
       <div>
-        <strong>Customer:</strong> <span data-bracket="start" data-for="telecom">]</span>GLOBAL LOGISTICS CORP.<br>
+        <strong>Customer:</strong> <span data-bracket="start" data-for="telecom">[</span>GLOBAL LOGISTICS CORP.<br>
         <strong>Account #:</strong> 8877-6655-44<br>
         <strong>Service:</strong> Dedicated Fiber (10Gbps)
       </div>

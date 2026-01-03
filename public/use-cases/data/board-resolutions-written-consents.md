@@ -18,7 +18,7 @@ furtherDerivations: 1
   <div style="font-size: 1em; line-height: 1.6; color: #333; text-align: justify;">
     <p>The undersigned, being all the members of the Board of Directors of Initech Holdings, Inc., a Delaware corporation (the "Company"), hereby take the following actions by written consent:</p>
 
-    <p><strong><span data-bracket="start" data-for="board">]</span>RESOLVED:</strong> That the Company is hereby authorized to enter into the Merger Agreement with Globochem Corp. dated as of March 15, 2026.</p>
+    <p><strong><span data-bracket="start" data-for="board">[</span>RESOLVED:</strong> That the Company is hereby authorized to enter into the Merger Agreement with Globochem Corp. dated as of March 15, 2026.</p>
 
     <p><strong>RESOLVED FURTHER:</strong> That the Officers of the Company are authorized to execute all such documents as are necessary to effectuate the foregoing resolution.</p>
   </div>

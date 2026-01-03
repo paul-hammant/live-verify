@@ -19,7 +19,7 @@ furtherDerivations: 1
 
     <p><strong>Sale:</strong> NY010126 - Modern Masterpieces<br>
     <strong>Date:</strong> 15 March 2026<br>
-    <strong>Bidder #:</strong> <span data-bracket="start" data-for="auction">]</span>9988</p>
+    <strong>Bidder #:</strong> <span data-bracket="start" data-for="auction">[</span>9988</p>
 
     <div style="margin: 20px 0; border-top: 2px solid #000; padding-top: 15px;">
       <table style="width: 100%;">

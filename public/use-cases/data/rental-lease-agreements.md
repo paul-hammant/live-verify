@@ -31,7 +31,7 @@ Beyond the relationship between the two parties, a lease is used by third partie
   <h3 style="text-align: center; text-transform: uppercase; margin-bottom: 25px; letter-spacing: 1px;">Residential Lease Summary</h3>
 
   <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
-    <p>This certifies a valid lease agreement exists between <span data-bracket="start" data-for="lease">]</span><strong>Landlord:</strong> Skyline Heights, LLC and <strong>Tenant:</strong> Sarah J. Connor.</p>
+    <p>This certifies a valid lease agreement exists between <span data-bracket="start" data-for="lease">[</span><strong>Landlord:</strong> Skyline Heights, LLC and <strong>Tenant:</strong> Sarah J. Connor.</p>
 
     <div style="background: #fdfdfd; padding: 15px; border: 1px solid #eee; margin: 20px 0;">
       <p><strong>Premises:</strong> 4500 Skyline Blvd, Apt 402, Austin, TX 78701</p>

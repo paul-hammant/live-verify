@@ -29,13 +29,16 @@ Unlike NAV statements, verification here confirms **existence and status**, not 
     <div style="font-size: 0.8em;">Security Deposit Acknowledgment</div>
   </div>
   <div style="padding: 20px; font-size: 0.9em; line-height: 1.6;">
-    <p><strong>Tenant:</strong> Maria Santos<br>
+    <p><strong>Tenant:</strong> <span data-bracket="start" data-for="depositsheldbythirdp">[</span>Maria Santos<br>
     <strong>Property:</strong> 2847 Riverside Dr, Apt 4B, Chicago IL<br>
     <strong>Deposit Amount:</strong> $2,400.00<br>
     <strong>Date Received:</strong> March 1, 2025<br>
     <strong>Escrow Bank:</strong> Chase Bank NA, Acct ending 8847</p>
     <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
-      verify:greystar.com/deposits/MS-2847-4B
+      <div data-verify-line="depositsheldbythirdp" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+        title="Demo only: This is an illustrative example of the verification line">
+        verify:greystar.com/deposits/MS-2847-4B <span data-bracket="end" data-for="depositsheldbythirdp">]</span>
+      </div>
     </div>
   </div>
 </div>
@@ -74,7 +77,10 @@ Unlike NAV statements, verification here confirms **existence and status**, not 
     <strong>As of:</strong> December 31, 2025</p>
     <p style="font-size: 0.85em; color: #666;">Major components: Roof (2031), Elevator (2028), Facade (2033)</p>
     <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
-      verify:skylinetowers-hoa.org/reserves/2025
+      <div data-verify-line="depositsheldbythirdp" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+        title="Demo only: This is an illustrative example of the verification line">
+        verify:skylinetowers-hoa.org/reserves/2025 <span data-bracket="end" data-for="depositsheldbythirdp">]</span>
+      </div>
     </div>
   </div>
 </div>
@@ -112,7 +118,10 @@ Unlike NAV statements, verification here confirms **existence and status**, not 
     <strong>Your Notional Share:</strong> £8,550 (2.5%)<br>
     <strong>Statement Date:</strong> 31 March 2026</p>
     <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
-      verify:rendall-rittner.co.uk/sinking/KC-F12
+      <div data-verify-line="depositsheldbythirdp" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+        title="Demo only: This is an illustrative example of the verification line">
+        verify:rendall-rittner.co.uk/sinking/KC-F12 <span data-bracket="end" data-for="depositsheldbythirdp">]</span>
+      </div>
     </div>
   </div>
 </div>
@@ -150,7 +159,10 @@ Unlike NAV statements, verification here confirms **existence and status**, not 
     <strong>IOLTA Bank:</strong> First National Bank</p>
     <p style="font-size: 0.8em; color: #666;">Funds held pending court approval of final distribution.</p>
     <div style="margin-top: 15px; font-size: 0.8em; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
-      verify:morrison-law.com/trust/HK-PROBATE-2025
+      <div data-verify-line="depositsheldbythirdp" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+        title="Demo only: This is an illustrative example of the verification line">
+        verify:morrison-law.com/trust/HK-PROBATE-2025 <span data-bracket="end" data-for="depositsheldbythirdp">]</span>
+      </div>
     </div>
   </div>
 </div>
@@ -187,7 +199,10 @@ Unlike NAV statements, verification here confirms **existence and status**, not 
     <strong>Received:</strong> February 10, 2026<br>
     <strong>Escrow #:</strong> 26-CT-449821</p>
     <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
-      verify:chicagotitle.com/escrow/26CT449821
+      <div data-verify-line="depositsheldbythirdp" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+        title="Demo only: This is an illustrative example of the verification line">
+        verify:chicagotitle.com/escrow/26CT449821 <span data-bracket="end" data-for="depositsheldbythirdp">]</span>
+      </div>
     </div>
   </div>
 </div>
@@ -225,7 +240,10 @@ Unlike NAV statements, verification here confirms **existence and status**, not 
     <strong>Retainage Held (10%):</strong> $240,000<br>
     <strong>Release Milestone:</strong> Substantial Completion + 60 days</p>
     <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
-      verify:turnerconstruction.com/retainage/AEC-MCT-2025
+      <div data-verify-line="depositsheldbythirdp" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+        title="Demo only: This is an illustrative example of the verification line">
+        verify:turnerconstruction.com/retainage/AEC-MCT-2025 <span data-bracket="end" data-for="depositsheldbythirdp">]</span>
+      </div>
     </div>
   </div>
 </div>
@@ -264,7 +282,10 @@ Unlike NAV statements, verification here confirms **existence and status**, not 
     <strong>Trustee:</strong> State Street Bank</p>
     <p style="font-size: 0.85em; color: #666;">Funds held in irrevocable trust per state regulations.</p>
     <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
-      verify:dignitymemorial.com/trust/PNT202488421
+      <div data-verify-line="depositsheldbythirdp" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+        title="Demo only: This is an illustrative example of the verification line">
+        verify:dignitymemorial.com/trust/PNT202488421 <span data-bracket="end" data-for="depositsheldbythirdp">]</span>
+      </div>
     </div>
   </div>
 </div>
@@ -302,7 +323,10 @@ Unlike NAV statements, verification here confirms **existence and status**, not 
     <strong>Date Paid:</strong> August 15, 2024<br>
     <strong>Refund Eligibility:</strong> After 12 months good payment history</p>
     <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
-      verify:comed.com/deposits/JL-44228899
+      <div data-verify-line="depositsheldbythirdp" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+        title="Demo only: This is an illustrative example of the verification line">
+        verify:comed.com/deposits/JL-44228899 <span data-bracket="end" data-for="depositsheldbythirdp">]</span>
+      </div>
     </div>
   </div>
 </div>
@@ -334,7 +358,10 @@ Unlike NAV statements, verification here confirms **existence and status**, not 
     <strong>Status:</strong> Held Pending Court Order<br>
     <strong>Deposit Date:</strong> November 3, 2025</p>
     <div style="margin-top: 15px; font-size: 0.8em; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
-      verify:cookcountyclerk.gov/funds/2025L004421
+      <div data-verify-line="depositsheldbythirdp" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+        title="Demo only: This is an illustrative example of the verification line">
+        verify:cookcountyclerk.gov/funds/2025L004421 <span data-bracket="end" data-for="depositsheldbythirdp">]</span>
+      </div>
     </div>
   </div>
 </div>
@@ -366,7 +393,10 @@ Unlike NAV statements, verification here confirms **existence and status**, not 
     <strong>Posted By:</strong> Angela Williams (Mother)<br>
     <strong>Date Posted:</strong> January 5, 2026</p>
     <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
-      verify:courts.state.gov/bail/2025CR8827
+      <div data-verify-line="depositsheldbythirdp" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+        title="Demo only: This is an illustrative example of the verification line">
+        verify:courts.state.gov/bail/2025CR8827 <span data-bracket="end" data-for="depositsheldbythirdp">]</span>
+      </div>
     </div>
   </div>
 </div>
@@ -399,7 +429,10 @@ Unlike NAV statements, verification here confirms **existence and status**, not 
     <strong>Obligor:</strong> [Redacted]<br>
     <strong>Received:</strong> ICE Chicago Field Office</p>
     <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
-      verify:ice.gov/bonds/[tracking-number]
+      <div data-verify-line="depositsheldbythirdp" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+        title="Demo only: This is an illustrative example of the verification line">
+        verify:ice.gov/bonds/[tracking-number] <span data-bracket="end" data-for="depositsheldbythirdp">]</span>
+      </div>
     </div>
   </div>
 </div>
@@ -431,7 +464,10 @@ Unlike NAV statements, verification here confirms **existence and status**, not 
     <strong>Refund Terms:</strong> 80% after 30 years or upon resignation (waitlist)</p>
     <p style="font-size: 0.85em; color: #666;">Deposit held in club reserve fund per bylaws.</p>
     <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
-      verify:congressionalcc.org/deposits/WT-2015-0042
+      <div data-verify-line="depositsheldbythirdp" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+        title="Demo only: This is an illustrative example of the verification line">
+        verify:congressionalcc.org/deposits/WT-2015-0042 <span data-bracket="end" data-for="depositsheldbythirdp">]</span>
+      </div>
     </div>
   </div>
 </div>

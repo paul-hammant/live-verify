@@ -23,7 +23,7 @@ Because these papers are essentially vouchers for cash, they are high-stakes tar
   <div style="padding: 20px; background: #fffbe6;">
     <div style="text-align: center; margin-bottom: 20px;">
       <div style="font-size: 0.7em; color: #666; text-transform: uppercase;">Tracking Number (MTCN)</div>
-      <div style="font-size: 1.8em; font-weight: bold; color: #000; letter-spacing: 2px;"><span data-bracket="start" data-for="remit">]</span>992-288-7766</div>
+      <div style="font-size: 1.8em; font-weight: bold; color: #000; letter-spacing: 2px;"><span data-bracket="start" data-for="remit">[</span>992-288-7766</div>
     </div>
 
     <div style="font-size: 0.9em; line-height: 1.5; color: #333;">

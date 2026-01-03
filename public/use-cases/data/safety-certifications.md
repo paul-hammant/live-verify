@@ -26,7 +26,7 @@ These documents are the "Entry Permit" for global commerce. US Customs, Amazon, 
   <div style="padding: 30px;">
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
-        <strong>Manufacturer:</strong> <span data-bracket="start" data-for="safety">]</span>GLOBAL POWER TECH LLC<br>
+        <strong>Manufacturer:</strong> <span data-bracket="start" data-for="safety">[</span>GLOBAL POWER TECH LLC<br>
         <strong>Model:</strong> XJ-9922 High-Output Charger<br>
         <strong>Batch #:</strong> LOT-2026-8844
       </div>

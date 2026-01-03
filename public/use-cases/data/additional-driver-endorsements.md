@@ -31,7 +31,7 @@ These documents are the "Permission to Drive." Fraud is high-frequency: individu
         <strong>Vehicle:</strong> 2024 Tesla Model Y
       </div>
       <div style="text-align: right; font-size: 0.9em;">
-        <strong>Notice ID:</strong> <span data-bracket="start" data-for="endorse">]</span>END-2026-8844<br>
+        <strong>Notice ID:</strong> <span data-bracket="start" data-for="endorse">[</span>END-2026-8844<br>
         <strong>Issued:</strong> 15 MAR 2026
       </div>
     </div>

@@ -29,7 +29,7 @@ This industry is a primary target for "Bandit Towers"—unlicensed operators who
     </div>
     <div style="flex-grow: 1;">
       <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Operator Name</div>
-      <div style="font-size: 1.2em; font-weight: bold; margin: 0 0 10px 0; color: #333;"><span data-bracket="start" data-for="tow">]</span>SARAH J. SMITH</div>
+      <div style="font-size: 1.2em; font-weight: bold; margin: 0 0 10px 0; color: #333;"><span data-bracket="start" data-for="tow">[</span>SARAH J. SMITH</div>
       
       <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">License #</div>
       <div style="font-size: 1.1em; font-weight: bold; margin: 0 0 10px 0; letter-spacing: 1px;">TOW-992288</div>

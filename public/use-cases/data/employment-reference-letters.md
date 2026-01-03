@@ -29,7 +29,7 @@ Fraud is common: "Nanny Mills" or "Reference Mills" sell fake employment letters
     <p>This document serves as an official confirmation of the employment history for the individual named below:</p>
 
     <div style="margin: 20px 0; border-left: 4px solid #000; padding-left: 20px; background: #f9f9f9; padding-top: 10px; padding-bottom: 10px;">
-      <p><strong>Employee:</strong> <span data-bracket="start" data-for="voe">]</span><strong>John D. Smith</strong><br>
+      <p><strong>Employee:</strong> <span data-bracket="start" data-for="voe">[</span><strong>John D. Smith</strong><br>
       <strong>Position:</strong> Senior Software Engineer<br>
       <strong>Dates:</strong> March 1, 2020 to October 31, 2025<br>
       <strong>Status:</strong> Voluntary Separation / Eligible for Rehire</p>

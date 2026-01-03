@@ -27,7 +27,7 @@ No bank will lend money to a film set without seeing a verified bond. Fraudsters
   <div style="font-size: 1em; line-height: 1.6; color: #333; text-align: justify;">
     <p>This certifies that a Completion Guaranty has been issued for the production titled:</p>
     <p style="text-align: center; font-size: 1.3em; font-weight: bold; margin: 15px 0;">
-      <span data-bracket="start" data-for="film">]</span>"THE VERIFICATION CHRONICLES"
+      <span data-bracket="start" data-for="film">[</span>"THE VERIFICATION CHRONICLES"
     </p>
 
     <div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin: 20px 0;">

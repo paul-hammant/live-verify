@@ -23,7 +23,7 @@ These documents are the "Proof of Retirement Security." Fraud is high-stakes: co
   <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px;">
       <div>
-        <strong>Plan:</strong> <span data-bracket="start" data-for="pension">]</span>METRO TEACHERS RETIREMENT FUND<br>
+        <strong>Plan:</strong> <span data-bracket="start" data-for="pension">[</span>METRO TEACHERS RETIREMENT FUND<br>
         <strong>Plan ID:</strong> #992288-XJ
       </div>
       <div style="text-align: right;">

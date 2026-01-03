@@ -18,7 +18,7 @@ furtherDerivations: 1
     <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px;">
       <div style="font-size: 0.9em; line-height: 1.4; color: #333;">
         <strong>Patient Name:</strong><br>
-        <span data-bracket="start" data-for="implant">]</span><strong>JOHN JACOB DOE</strong><br>
+        <span data-bracket="start" data-for="implant">[</span><strong>JOHN JACOB DOE</strong><br>
         <strong>DOB:</strong> 05/15/1985
       </div>
       <div style="text-align: center; border: 2px solid #004a99; padding: 5px 10px; border-radius: 8px;">

@@ -31,7 +31,7 @@ Verifying a bank statement directly against the bank's domain ensures that the b
     <div style="display: flex; justify-content: space-between; margin-bottom: 30px;">
       <div>
         <strong>Account Holder:</strong><br>
-        <span data-bracket="start" data-for="bank">]</span><strong>WAYNE ENTERPRISES, INC.</strong><br>
+        <span data-bracket="start" data-for="bank">[</span><strong>WAYNE ENTERPRISES, INC.</strong><br>
         1007 Mountain Drive<br>
         Gotham City, NY 10001
       </div>

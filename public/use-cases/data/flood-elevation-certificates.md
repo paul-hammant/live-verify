@@ -32,7 +32,7 @@ An **Elevation Certificate** is the official paper from a licensed surveyor that
     </div>
 
     <div style="font-size: 0.95em; line-height: 1.5; color: #333;">
-      <p><strong>Property:</strong> <span data-bracket="start" data-for="flood">]</span>123 Ocean Blvd, Miami Beach, FL 33139<br>
+      <p><strong>Property:</strong> <span data-bracket="start" data-for="flood">[</span>123 Ocean Blvd, Miami Beach, FL 33139<br>
       <strong>Building Type:</strong> Single-Family Residential</p>
 
       <div style="background: #f0f4f8; padding: 15px; border: 1px solid #d1d9e6; margin: 15px 0;">

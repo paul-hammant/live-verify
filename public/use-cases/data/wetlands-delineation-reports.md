@@ -26,7 +26,7 @@ These reports are "Development Killers." If a property is 50% wetlands, it may b
   <div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
-        <strong>Project Site:</strong> <span data-bracket="start" data-for="wetland">]</span>BLUE RIVER MEADOWS<br>
+        <strong>Project Site:</strong> <span data-bracket="start" data-for="wetland">[</span>BLUE RIVER MEADOWS<br>
         <strong>APN:</strong> 992-288-776<br>
         <strong>Address:</strong> 123 Marsh Rd, Springfield
       </div>

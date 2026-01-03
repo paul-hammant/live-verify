@@ -23,7 +23,7 @@ Government regulators (like the FTC) now require these fees to be clearly disclo
   <div style="padding: 25px; font-size: 0.9em; line-height: 1.5; color: #333;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 10px;">
       <div>
-        <strong>Guest:</strong> <span data-bracket="start" data-for="resort">]</span>JOHN DOE<br>
+        <strong>Guest:</strong> <span data-bracket="start" data-for="resort">[</span>JOHN DOE<br>
         <strong>Conf #:</strong> AZ-99228877
       </div>
       <div style="text-align: right;">

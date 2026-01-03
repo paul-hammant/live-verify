@@ -31,7 +31,7 @@ If a pilot presents a fake certificate to land in London or Dubai, they are flyi
     <h2 style="text-align: center; color: #002244; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Certificate of Insurance</h2>
 
     <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Insured:</strong> <span data-bracket="start" data-for="aviation">]</span>Cyberdyne Systems Charter, LLC<br>
+      <p><strong>Insured:</strong> <span data-bracket="start" data-for="aviation">[</span>Cyberdyne Systems Charter, LLC<br>
       <strong>Aircraft:</strong> 2024 Gulfstream G650ER<br>
       <strong>Registration (N-Number):</strong> N101CS</p>
 

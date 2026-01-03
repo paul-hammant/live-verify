@@ -30,7 +30,7 @@ Because a higher rating leads directly to more donations, some charities "Inflat
 
     <div style="font-size: 1.1em; line-height: 1.6; color: #333; margin-bottom: 25px;">
       This is to certify that<br>
-      <span data-bracket="start" data-for="rating">]</span><strong>THE HUMAN FUND</strong><br>
+      <span data-bracket="start" data-for="rating">[</span><strong>THE HUMAN FUND</strong><br>
       has achieved our highest rating for fiscal responsibility, transparency, and impact.
     </div>
 

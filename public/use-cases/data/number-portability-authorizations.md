@@ -21,7 +21,7 @@ When you switch your phone number from one carrier to another (e.g., AT&T to T-M
   </div>
 
   <div style="padding: 30px; font-size: 0.95em; line-height: 1.6; color: #333;">
-    <p>I, <span data-bracket="start" data-for="port">]</span><strong>JOHN JACOB DOE</strong>, authorize the porting of the following telephone number(s) from my current provider (Losing Carrier) to the New Provider (Winning Carrier).</p>
+    <p>I, <span data-bracket="start" data-for="port">[</span><strong>JOHN JACOB DOE</strong>, authorize the porting of the following telephone number(s) from my current provider (Losing Carrier) to the New Provider (Winning Carrier).</p>
     
     <div style="background: #f9f9f9; padding: 15px; border: 1px solid #ddd; margin: 20px 0; border-radius: 4px;">
       <p><strong>Telephone Number:</strong> (555) 123-4567<br>

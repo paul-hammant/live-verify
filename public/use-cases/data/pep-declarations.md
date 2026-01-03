@@ -26,7 +26,7 @@ These declarations are the "Compliance Shield" for a bank. Fraud is common in th
   <div style="padding: 25px; font-size: 0.95em; line-height: 1.6; color: #333;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
-        <strong>Individual:</strong> <span data-bracket="start" data-for="pep">]</span>ALEXANDER VOLKOV<br>
+        <strong>Individual:</strong> <span data-bracket="start" data-for="pep">[</span>ALEXANDER VOLKOV<br>
         <strong>Nationality:</strong> [Redacted]<br>
         <strong>DOB:</strong> [Verified/Redacted]
       </div>

@@ -20,7 +20,7 @@ furtherDerivations: 1
     <p>This document confirms the approval of the death benefit claim for the following policy:</p>
 
     <div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin: 20px 0;">
-      <p><strong>Deceased (Insured):</strong> <span data-bracket="start" data-for="life-claim">]</span>John Jacob Doe (Policy #992288)</p>
+      <p><strong>Deceased (Insured):</strong> <span data-bracket="start" data-for="life-claim">[</span>John Jacob Doe (Policy #992288)</p>
       <p><strong>Beneficiary:</strong> Mary Alice Jacob (Spouse)</p>
       <p><strong>Approved Benefit Amount:</strong> $ 1,000,000.00</p>
     </div>

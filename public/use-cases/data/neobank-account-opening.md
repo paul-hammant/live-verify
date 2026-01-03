@@ -28,7 +28,7 @@ The problem? Anyone can inspect-element a PDF or email to change the numbers. A 
   <div style="padding: 24px; font-size: 0.9em; color: #333;">
     <div style="margin-bottom: 20px;">
       <strong>Date:</strong> January 15, 2026<br>
-      <strong>Customer:</strong> <span data-bracket="start" data-for="neo">]</span>Sarah J. Connor<br>
+      <strong>Customer:</strong> <span data-bracket="start" data-for="neo">[</span>Sarah J. Connor<br>
       123 Cyberdyne Systems Way, San Francisco, CA
     </div>
 

@@ -31,7 +31,7 @@ Verification is critical for lenders who use "Imported Inventory" as collateral.
   <div style="padding: 25px;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
       <div style="border: 1px solid #000; padding: 5px 10px; font-weight: bold;">CBP 7501</div>
-      <div style="text-align: right; font-family: monospace;">Entry #: <span data-bracket="start" data-for="customs">]</span>998-8776655-4</div>
+      <div style="text-align: right; font-family: monospace;">Entry #: <span data-bracket="start" data-for="customs">[</span>998-8776655-4</div>
     </div>
 
     <div style="font-size: 0.95em; line-height: 1.6; color: #333;">

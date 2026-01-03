@@ -18,7 +18,7 @@ furtherDerivations: 1
   <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
       <div>
-        <strong>Notebook ID:</strong> <span data-bracket="start" data-for="lab-data">]</span>IBR-2026-NB-42<br>
+        <strong>Notebook ID:</strong> <span data-bracket="start" data-for="lab-data">[</span>IBR-2026-NB-42<br>
         <strong>Page #:</strong> 114
       </div>
       <div style="text-align: right;">

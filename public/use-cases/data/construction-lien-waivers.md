@@ -23,7 +23,7 @@ Banks won't release construction loans without these papers. Fraud is common: co
   <div style="font-size: 0.9em; line-height: 1.5; color: #333;">
     <p><strong>Project:</strong> Skyline Tower (Job #4921)<br>
     <strong>Property:</strong> 500 W 5th St, Austin, TX<br>
-    <strong>Claimant:</strong> <span data-bracket="start" data-for="waiver">]</span><strong>Drywall Dynamics LLC</strong><br>
+    <strong>Claimant:</strong> <span data-bracket="start" data-for="waiver">[</span><strong>Drywall Dynamics LLC</strong><br>
     <strong>Customer:</strong> Turner Construction</p>
     
     <p style="background: #f9f9f9; padding: 10px; border: 1px solid #eee;">

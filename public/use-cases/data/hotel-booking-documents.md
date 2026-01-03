@@ -26,7 +26,7 @@ For business travelers, this receipt is critical for **Expense Audits**. It prov
     <p>This document confirms the cancellation of your reservation. A refund has been processed to your original payment method.</p>
 
     <div style="margin: 20px 0; background: #f9f9f9; padding: 15px; border: 1px solid #eee; font-size: 0.95em;">
-      <strong>Guest:</strong> <span data-bracket="start" data-for="hotel-cancel">]</span>Madame E. Dubois<br>
+      <strong>Guest:</strong> <span data-bracket="start" data-for="hotel-cancel">[</span>Madame E. Dubois<br>
       <strong>Booking Ref:</strong> GHP-47291-ED<br>
       <strong>Refund Amount:</strong> € 1,200.00
     </div>
@@ -136,7 +136,7 @@ A **Verified Confirmation** from the hotel's domain ends the argument instantly.
   <div style="padding: 30px;">
     <div style="text-align: center; margin-bottom: 25px;">
       <h3 style="margin: 0; color: #1a1a1a;">UPGRADE SUCCESSFUL</h3>
-      <div style="font-size: 0.9em; color: #666; margin-top: 5px;">Reservation ID: <span data-bracket="start" data-for="upgrade">]</span>RC-99228877</div>
+      <div style="font-size: 0.9em; color: #666; margin-top: 5px;">Reservation ID: <span data-bracket="start" data-for="upgrade">[</span>RC-99228877</div>
     </div>
 
     <div style="font-size: 1em; line-height: 1.6; color: #333;">
@@ -259,7 +259,7 @@ You need this verified proof for a **"Status Match"**—where a rival hotel give
       <div style="font-size: 0.8em; opacity: 0.8;">Official Member Statement</div>
     </div>
     <div style="text-align: right;">
-      <div style="font-size: 0.8em;">Member #: <span data-bracket="start" data-for="hotel-loy">]</span>99228877</div>
+      <div style="font-size: 0.8em;">Member #: <span data-bracket="start" data-for="hotel-loy">[</span>99228877</div>
     </div>
   </div>
 

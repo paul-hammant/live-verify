@@ -24,7 +24,7 @@ These documents are the "Financial Lifeline" for injured parties. Fraud is high-
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
         <strong>Annuitant (Claimant):</strong><br>
-        <span data-bracket="start" data-for="settle">]</span>SARAH JANE DOE<br>
+        <span data-bracket="start" data-for="settle">[</span>SARAH JANE DOE<br>
         <strong>DOB:</strong> 05/15/1985
       </div>
       <div style="text-align: right;">

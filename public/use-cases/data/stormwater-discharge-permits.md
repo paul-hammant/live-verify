@@ -26,7 +26,7 @@ These permits are the "Permission to Pollute" within legal bounds. Fraud is comm
   <div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
-        <strong>Permittee:</strong> <span data-bracket="start" data-for="water">]</span>GOLIATH MANUFACTURING INC.<br>
+        <strong>Permittee:</strong> <span data-bracket="start" data-for="water">[</span>GOLIATH MANUFACTURING INC.<br>
         <strong>Facility ID:</strong> #NY-992288-Z<br>
         <strong>Address:</strong> 123 Factory Lane, Springfield
       </div>

@@ -19,7 +19,7 @@ A **Verified Compliance Notice** takes this static text and binds it to the manu
   
   <p>Product: SmartRouter X1000<br>
   Firmware: v2.4.1-stable<br>
-  Manufacturer: <span data-bracket="start" data-for="oss">]</span>NetGearLink Corp</p>
+  Manufacturer: <span data-bracket="start" data-for="oss">[</span>NetGearLink Corp</p>
 
   <p>This product contains software licensed under the GNU General Public License v2 (GPLv2). The following packages are included:</p>
 

@@ -31,7 +31,7 @@ Fraudsters often "Photoshop" a low-limit policy ($100k) to look like a $10M poli
     <h2 style="text-align: center; color: #000; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Certificate of Cyber Coverage</h2>
 
     <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Named Insured:</strong> <span data-bracket="start" data-for="cyber-pol">]</span>Waystar Royco Digital, LLC<br>
+      <p><strong>Named Insured:</strong> <span data-bracket="start" data-for="cyber-pol">[</span>Waystar Royco Digital, LLC<br>
       <strong>Industry:</strong> Media & Technology Services</p>
 
       <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">

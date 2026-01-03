@@ -41,7 +41,7 @@ These documents are presented to schools, police, doctors, and passport agents. 
 
   <div style="font-size: 0.95em; line-height: 1.6; text-align: justify;">
     <p>This cause coming to be heard for entry of a Final Allocation Judgment, the Court finds:</p>
-    <p>1. The parties have agreed to a Parenting Plan regarding the minor child, <span data-bracket="start" data-for="custody">]</span><strong>MICHAEL DOE (DOB: 05/12/2018)</strong>.</p>
+    <p>1. The parties have agreed to a Parenting Plan regarding the minor child, <span data-bracket="start" data-for="custody">[</span><strong>MICHAEL DOE (DOB: 05/12/2018)</strong>.</p>
     <p>2. <strong>Decision-Making:</strong> The Petitioner (Mother) shall have sole decision-making responsibility for education and healthcare.</p>
     <p>3. <strong>Parenting Time:</strong> The Respondent (Father) shall have parenting time every other weekend from Friday 5:00 PM to Sunday 5:00 PM.</p>
     

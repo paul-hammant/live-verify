@@ -24,7 +24,7 @@ furtherDerivations: 4
     <h3 style="margin-top: 0; color: #0d47a1; border-bottom: 2px solid #0d47a1; padding-bottom: 5px;">REPAIR ESTIMATE SUMMARY</h3>
 
     <div style="font-size: 0.9em; line-height: 1.5; color: #333;">
-      <p><strong>Insured:</strong> <span data-bracket="start" data-for="claim">]</span>MAX POWER<br>
+      <p><strong>Insured:</strong> <span data-bracket="start" data-for="claim">[</span>MAX POWER<br>
       <strong>Vehicle:</strong> 2024 Tesla Model 3 (VIN: ...5544)<br>
       <strong>Body Shop:</strong> Joe's Auto Body, Springfield</p>
 
@@ -160,7 +160,7 @@ Because people often cancel their insurance right after printing the card, polic
     </div>
 
     <div style="font-size: 0.9em; line-height: 1.4; color: #333;">
-      <p><strong>Insured:</strong> <span data-bracket="start" data-for="ins">]</span>RICHARD "DICK" GRAYSON<br>
+      <p><strong>Insured:</strong> <span data-bracket="start" data-for="ins">[</span>RICHARD "DICK" GRAYSON<br>
       <strong>Vehicle:</strong> 2025 Gotham Motors Bat-Sedan<br>
       <strong>VIN:</strong> 1G6AX57L9RJ123456</p>
 
@@ -262,7 +262,7 @@ Lenders (for car loans) and landlords often require a copy of the Dec Page. Frau
   </div>
 
   <div style="font-size: 0.9em; line-height: 1.4;">
-    <p><strong>Named Insured:</strong> <span data-bracket="start" data-for="autodec">]</span>John Doe<br>
+    <p><strong>Named Insured:</strong> <span data-bracket="start" data-for="autodec">[</span>John Doe<br>
     456 Oak Lane, Austin, TX 78701</p>
 
     <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
@@ -360,7 +360,7 @@ Fraud is common: drivers sometimes "edit" the digital report *after* they damage
     <h3 style="margin-top: 0; color: #333; border-bottom: 2px solid #333; padding-bottom: 5px;">VEHICLE INSPECTION REPORT (BOL)</h3>
 
     <div style="font-size: 0.9em; line-height: 1.5; color: #333;">
-      <p><strong>Vehicle:</strong> <span data-bracket="start" data-for="damage">]</span>2025 Porsche 911 GT3<br>
+      <p><strong>Vehicle:</strong> <span data-bracket="start" data-for="damage">[</span>2025 Porsche 911 GT3<br>
       <strong>VIN:</strong> WP0AC2A9...5544<br>
       <strong>Condition:</strong> Pre-Transport</p>
 

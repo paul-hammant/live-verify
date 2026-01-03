@@ -24,7 +24,7 @@ Because these receipts are easy to forge with a basic printer, "baggage fraud" i
   </div>
 
   <div style="font-size: 0.9em; line-height: 1.4;">
-    <p><strong>Ref:</strong> <span data-bracket="start" data-for="bag">]</span>CDG-AF-998877<br>
+    <p><strong>Ref:</strong> <span data-bracket="start" data-for="bag">[</span>CDG-AF-998877<br>
     <strong>Passenger:</strong> AMELIE POULAIN<br>
     <strong>Flight:</strong> AF1234 / 15MAR26</p>
 

@@ -25,7 +25,7 @@ It is one of the most powerful—and dangerous—documents in law. It allows an 
   </div>
 
   <div style="font-size: 1em; line-height: 1.6; color: #000;">
-    <p>I, <span data-bracket="start" data-for="poa">]</span><strong>MARGARET A. WILLOWS</strong>, a resident of Cook County, IL, hereby appoint <strong>STEVEN J. WILLOWS</strong> as my true and lawful attorney-in-fact.</p>
+    <p>I, <span data-bracket="start" data-for="poa">[</span><strong>MARGARET A. WILLOWS</strong>, a resident of Cook County, IL, hereby appoint <strong>STEVEN J. WILLOWS</strong> as my true and lawful attorney-in-fact.</p>
     
     <div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin: 20px 0;">
       <p style="font-weight: bold; margin-top: 0;">GRANTED POWERS:</p>

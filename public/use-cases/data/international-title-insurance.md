@@ -17,7 +17,7 @@ furtherDerivations: 1
   <h3 style="text-align: center; text-transform: uppercase; margin-bottom: 25px;">Policy of Title Insurance</h3>
 
   <div style="font-size: 1em; line-height: 1.6; color: #333; text-align: justify;">
-    <p>This policy insures against loss or damage sustained by the <strong>Insured:</strong> <span data-bracket="start" data-for="intl-title">]</span>Globochem Real Estate Holding, SA</p>
+    <p>This policy insures against loss or damage sustained by the <strong>Insured:</strong> <span data-bracket="start" data-for="intl-title">[</span>Globochem Real Estate Holding, SA</p>
     
     <p>By reason of any defect in or lien or encumbrance on the title to the <strong>Estate or Interest:</strong> Fee Simple in the following property:</p>
 

@@ -24,7 +24,7 @@ The problem is that these permits are often temporary pieces of paper taped to a
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px; border-bottom: 2px solid #eee; padding-bottom: 10px;">
       <div>
         <div style="font-size: 0.7em; color: #888; text-transform: uppercase;">Permit Number</div>
-        <div style="font-size: 1.2em; font-weight: bold; color: #1a237e;"><span data-bracket="start" data-for="event">]</span>EVT-2026-9922-X</div>
+        <div style="font-size: 1.2em; font-weight: bold; color: #1a237e;"><span data-bracket="start" data-for="event">[</span>EVT-2026-9922-X</div>
       </div>
       <div style="text-align: right;">
         <div style="font-size: 0.7em; color: #888; text-transform: uppercase;">Issue Date</div>

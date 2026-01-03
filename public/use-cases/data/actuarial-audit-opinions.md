@@ -27,7 +27,7 @@ If this document is faked or altered, regulators might let a bankrupt insurance 
   <div style="font-size: 0.95em; line-height: 1.6; text-align: justify; color: #2c3e50;">
     <p><strong>To the Board of Directors of Apex Indemnity Corp:</strong></p>
 
-    <p>I, <span data-bracket="start" data-for="actuarial">]</span><strong>John Smith, FCAS, MAAA</strong>, am a member of the American Academy of Actuaries and meet its Qualification Standards to render the actuarial opinion contained herein.</p>
+    <p>I, <span data-bracket="start" data-for="actuarial">[</span><strong>John Smith, FCAS, MAAA</strong>, am a member of the American Academy of Actuaries and meet its Qualification Standards to render the actuarial opinion contained herein.</p>
 
     <p>I have examined the actuarial assumptions and methods used in determining loss reserves as of <strong>December 31, 2025</strong>.</p>
 

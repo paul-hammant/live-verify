@@ -25,7 +25,7 @@ Shippers often "Guess" the weight to save the $50 fee for a certified scale. Thi
   <div style="padding: 20px;">
     <div style="display: flex; justify-content: space-between; font-size: 0.9em; margin-bottom: 20px;">
       <div>
-        <strong>Container #:</strong> <span data-bracket="start" data-for="vgm">]</span>MSKU-123456-7<br>
+        <strong>Container #:</strong> <span data-bracket="start" data-for="vgm">[</span>MSKU-123456-7<br>
         <strong>Seal #:</strong> MAE-998877
       </div>
       <div style="text-align: right;">

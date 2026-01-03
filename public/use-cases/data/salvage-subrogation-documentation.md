@@ -22,7 +22,7 @@ These documents are the "Recovery Ledger" of the insurance world. Fraud is commo
     </div>
     <div style="text-align: right;">
       <div style="font-weight: bold; font-size: 0.9em;">SALVAGE CERTIFICATE</div>
-      <div style="font-size: 0.7em;">Lot: <span data-bracket="start" data-for="salvage">]</span>9922-8877-XJ</div>
+      <div style="font-size: 0.7em;">Lot: <span data-bracket="start" data-for="salvage">[</span>9922-8877-XJ</div>
     </div>
   </div>
 

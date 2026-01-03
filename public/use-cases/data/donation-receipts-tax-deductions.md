@@ -23,7 +23,7 @@ Verified hashes allow the IRS to scan a receipt and see "VERIFIED" on the charit
   </div>
 
   <div style="font-size: 1em; line-height: 1.6; color: #333;">
-    <p>Dear <span data-bracket="start" data-for="donate">]</span><strong>JOHN JACOB DOE</strong>,</p>
+    <p>Dear <span data-bracket="start" data-for="donate">[</span><strong>JOHN JACOB DOE</strong>,</p>
     <p>Thank you for your generous gift. This letter confirms that the American Red Cross received your contribution as described below:</p>
 
     <div style="background: #f9f9f9; padding: 15px; border: 1px solid #eee; margin: 20px 0;">

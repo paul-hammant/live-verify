@@ -31,7 +31,7 @@ Business owners must show these verified limits to win contracts. Fraudsters oft
     <h2 style="text-align: center; color: #1a237e; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Policy Declarations</h2>
 
     <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Named Insured:</strong> <span data-bracket="start" data-for="cgl">]</span>Heavy Haulers Construction, Inc.<br>
+      <p><strong>Named Insured:</strong> <span data-bracket="start" data-for="cgl">[</span>Heavy Haulers Construction, Inc.<br>
       <strong>Business Description:</strong> Structural Steel Erection</p>
 
       <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">

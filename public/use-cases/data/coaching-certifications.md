@@ -31,7 +31,7 @@ Parents and clubs use these badges to ensure that the adult on the sideline is a
     </div>
     <div style="flex-grow: 1;">
       <h3 style="margin: 0; color: #004a99;">NATIONAL "C" LICENSE</h3>
-      <div style="font-size: 1.2em; font-weight: bold; margin: 10px 0;"><span data-bracket="start" data-for="coach">]</span>TED LASSO</div>
+      <div style="font-size: 1.2em; font-weight: bold; margin: 10px 0;"><span data-bracket="start" data-for="coach">[</span>TED LASSO</div>
       
       <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
         <strong>License #:</strong> 992288-USSF<br>

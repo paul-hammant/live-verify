@@ -31,7 +31,7 @@ The result is an **Adjustment Summary**. Because these documents often trigger m
     <h3 style="margin-top: 0; color: #1a237e; border-bottom: 2px solid #1a237e; padding-bottom: 5px;">BUSINESS INTERRUPTION ADJUSTMENT SUMMARY</h3>
 
     <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Insured:</strong> <span data-bracket="start" data-for="bi-claim">]</span>The Grande Cafe & Bistro, LLC<br>
+      <p><strong>Insured:</strong> <span data-bracket="start" data-for="bi-claim">[</span>The Grande Cafe & Bistro, LLC<br>
       <strong>Location:</strong> 123 Main St, New Orleans, LA<br>
       <strong>Incident Date:</strong> August 29, 2025 (Hurricane Damage)</p>
 

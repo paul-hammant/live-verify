@@ -25,7 +25,7 @@ The problem is that physical cards are easy to fake. During the COVID-19 pandemi
 
   <div style="padding: 20px;">
     <div style="border-bottom: 1px solid #000; padding-bottom: 10px; margin-bottom: 15px;">
-      <div style="font-size: 0.9em;"><strong>Patient Name:</strong> <span data-bracket="start" data-for="vax">]</span>SMITH, SARAH JANE</div>
+      <div style="font-size: 0.9em;"><strong>Patient Name:</strong> <span data-bracket="start" data-for="vax">[</span>SMITH, SARAH JANE</div>
       <div style="font-size: 0.9em;"><strong>Date of Birth:</strong> 05/15/1985</div>
     </div>
 

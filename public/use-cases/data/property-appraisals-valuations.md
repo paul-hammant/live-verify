@@ -22,7 +22,7 @@ Because the appraisal determines how much money a bank will lend, it is a primar
     </div>
     <div style="text-align: right;">
       <div style="font-weight: bold; font-size: 0.9em;">APPRAISAL SUMMARY</div>
-      <div style="font-size: 0.7em;">Ref: <span data-bracket="start" data-for="appraise">]</span>SAP-2026-8844</div>
+      <div style="font-size: 0.7em;">Ref: <span data-bracket="start" data-for="appraise">[</span>SAP-2026-8844</div>
     </div>
   </div>
 

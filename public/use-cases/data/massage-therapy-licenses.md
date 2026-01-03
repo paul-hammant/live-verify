@@ -23,7 +23,7 @@ furtherDerivations: 1
     </div>
     <div style="flex-grow: 1;">
       <h4 style="margin: 0; color: #002d62;">LICENSED MASSAGE THERAPIST</h4>
-      <div style="font-size: 1.1em; font-weight: bold; margin: 5px 0;"><span data-bracket="start" data-for="massage">]</span>SARAH J. DOE</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin: 5px 0;"><span data-bracket="start" data-for="massage">[</span>SARAH J. DOE</div>
       <div style="font-size: 0.9em; color: #333; line-height: 1.4;">
         <strong>License #:</strong> MA-992288<br>
         <strong>Status:</strong> ACTIVE / CLEAR<br>

@@ -24,7 +24,7 @@ These tags are the "Intellectual Property" of the seed world. Fraud is common in
     <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px;">
       <div style="font-size: 0.9em; line-height: 1.4;">
         <strong>Crop:</strong> Winter Wheat<br>
-        <strong>Variety:</strong> <span data-bracket="start" data-for="seed">]</span>GOLDEN-HARVEST 42<br>
+        <strong>Variety:</strong> <span data-bracket="start" data-for="seed">[</span>GOLDEN-HARVEST 42<br>
         <strong>Lot #:</strong> 9922-8877-XJ
       </div>
       <div style="text-align: right; font-size: 0.8em; color: #004a99;">

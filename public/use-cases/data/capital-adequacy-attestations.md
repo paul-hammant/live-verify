@@ -23,7 +23,7 @@ These documents are the "Proof of Solvency" needed for high-stakes business. Cou
   <div style="padding: 30px; font-size: 0.95em; line-height: 1.6; color: #333;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 10px;">
       <div>
-        <strong>Firm:</strong> <span data-bracket="start" data-for="capital">]</span>MERIDIAN CAPITAL PARTNERS<br>
+        <strong>Firm:</strong> <span data-bracket="start" data-for="capital">[</span>MERIDIAN CAPITAL PARTNERS<br>
         <strong>FRN:</strong> 123456 (FCA Authorized)
       </div>
       <div style="text-align: right;">

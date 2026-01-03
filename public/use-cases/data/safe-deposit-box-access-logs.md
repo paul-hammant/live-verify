@@ -22,7 +22,7 @@ In the world of **Estate Law**, these logs are "The Smoking Gun." If a box holde
 
   <div style="font-size: 0.9em; line-height: 1.6;">
     <p><strong>Branch:</strong> 42ND STREET MAIN VAULT<br>
-    <strong>Box Number:</strong> <span data-bracket="start" data-for="vault">]</span>SD-992288-Z</p>
+    <strong>Box Number:</strong> <span data-bracket="start" data-for="vault">[</span>SD-992288-Z</p>
 
     <table style="width: 100%; border-collapse: collapse; margin: 20px 0; border: 1px solid #000;">
       <tr style="background: #eee; border-bottom: 1px solid #000;">

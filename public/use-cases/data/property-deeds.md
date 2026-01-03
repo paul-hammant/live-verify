@@ -25,7 +25,7 @@ OCR-to-hash binds the **Grantor/Grantee names and the Legal Description** to the
     </div>
 
     <div style="font-size: 1.1em; line-height: 1.6; color: #000;">
-      <p>THE GRANTOR, <span data-bracket="start" data-for="deed">]</span><strong>MARIA G. RODRIGUEZ</strong>, a single person, for and in consideration of Ten Dollars ($10.00) and other good and valuable consideration in hand paid, conveys and warrants to <strong>ROBERT J. MILLER</strong>, the following described real estate:</p>
+      <p>THE GRANTOR, <span data-bracket="start" data-for="deed">[</span><strong>MARIA G. RODRIGUEZ</strong>, a single person, for and in consideration of Ten Dollars ($10.00) and other good and valuable consideration in hand paid, conveys and warrants to <strong>ROBERT J. MILLER</strong>, the following described real estate:</p>
       
       <div style="margin: 20px 0; padding-left: 20px; font-style: italic; border-left: 3px solid #eee;">
         Lot 42, Block 7 of Skyline Heights Addition, according to the plat thereof recorded in Volume 12 of Plats, Page 88, records of King County, Washington.<br>

@@ -34,7 +34,7 @@ The **Care Professional Badge** is their "Security Token." It proves:
     </div>
     <div style="flex-grow: 1;">
       <h4 style="margin: 0; color: #0277bd;">REGISTERED NURSE (RN)</h4>
-      <div style="font-size: 1.1em; font-weight: bold; margin: 5px 0;"><span data-bracket="start" data-for="nurse">]</span>SARAH J. MILLER</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin: 5px 0;"><span data-bracket="start" data-for="nurse">[</span>SARAH J. MILLER</div>
       <div style="font-size: 0.9em; color: #333; line-height: 1.4;">
         <strong>License #:</strong> RN-992288 (TX)<br>
         <strong>Visit ID:</strong> VIS-2026-402<br>

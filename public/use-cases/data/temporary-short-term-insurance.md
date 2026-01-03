@@ -24,7 +24,7 @@ These documents are "High-Velocity" proofs. Fraud is rampant in "Post-Accident" 
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 10px;">
       <div>
         <div style="font-size: 0.7em; color: #888; text-transform: uppercase;">Covered Driver</div>
-        <div style="font-size: 1.1em; font-weight: bold; color: #333;"><span data-bracket="start" data-for="temp">]</span>SARAH JANE SMITH</div>
+        <div style="font-size: 1.1em; font-weight: bold; color: #333;"><span data-bracket="start" data-for="temp">[</span>SARAH JANE SMITH</div>
       </div>
       <div style="text-align: right;">
         <div style="font-size: 0.7em; color: #888; text-transform: uppercase;">License #</div>

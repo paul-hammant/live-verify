@@ -35,7 +35,7 @@ Fraud is common in the "Port Market." Unlicensed tour operators create fake "Off
     </div>
 
     <div style="font-size: 0.9em; line-height: 1.4; color: #333;">
-      <p><strong>Guest:</strong> <span data-bracket="start" data-for="shore">]</span>SARAH JANE SMITH<br>
+      <p><strong>Guest:</strong> <span data-bracket="start" data-for="shore">[</span>SARAH JANE SMITH<br>
       <strong>Cabin:</strong> 9922 (Deck 9) • <strong>Booking:</strong> L7XK9B</p>
       
       <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 15px; background: #fff; padding: 10px; border: 1px solid #cce3ff; border-radius: 4px;">

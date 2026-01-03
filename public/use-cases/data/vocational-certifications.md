@@ -26,7 +26,7 @@ The problem is that "Trade School" certificates are easily forged. Shady contrac
   <div style="padding: 25px;">
     <div style="text-align: center; margin-bottom: 25px;">
       <h2 style="margin: 0; color: #000; letter-spacing: 1px;">CERTIFICATE OF TECHNICAL COMPETENCY</h2>
-      <div style="font-size: 0.9em; color: #666; margin-top: 5px;">Credential ID: <span data-bracket="start" data-for="vocation">]</span>LT-2026-992288</div>
+      <div style="font-size: 0.9em; color: #666; margin-top: 5px;">Credential ID: <span data-bracket="start" data-for="vocation">[</span>LT-2026-992288</div>
     </div>
 
     <div style="font-size: 1.1em; line-height: 1.6; color: #333; text-align: center; margin-bottom: 25px;">

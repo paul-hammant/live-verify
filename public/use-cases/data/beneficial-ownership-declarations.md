@@ -24,7 +24,7 @@ Verifying these declarations ensures that a company opening a bank account isn't
 
   <div style="padding: 30px;">
     <div style="border-bottom: 2px solid #002d62; padding-bottom: 10px; margin-bottom: 20px;">
-      <strong>Reporting Company:</strong> <span data-bracket="start" data-for="ubo">]</span>Global Shell Holdings, LLC<br>
+      <strong>Reporting Company:</strong> <span data-bracket="start" data-for="ubo">[</span>Global Shell Holdings, LLC<br>
       <strong>Tax ID:</strong> 12-3456789<br>
       <strong>Jurisdiction:</strong> Delaware, USA
     </div>

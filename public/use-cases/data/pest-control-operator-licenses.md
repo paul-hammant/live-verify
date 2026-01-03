@@ -29,7 +29,7 @@ The problem is that "Pest Control" is a high-trust, high-risk profession. Crimin
     </div>
     <div style="flex-grow: 1;">
       <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Licensee Name</div>
-      <div style="font-size: 1.2em; font-weight: bold; margin: 0 0 10px 0; color: #004d40;"><span data-bracket="start" data-for="pest">]</span>ROBERT J. MILLER</div>
+      <div style="font-size: 1.2em; font-weight: bold; margin: 0 0 10px 0; color: #004d40;"><span data-bracket="start" data-for="pest">[</span>ROBERT J. MILLER</div>
       
       <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">License #</div>
       <div style="font-size: 1em; font-weight: bold; margin: 0 0 10px 0;">ID: PCO-992288-TX</div>

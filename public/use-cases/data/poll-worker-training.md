@@ -29,7 +29,7 @@ This is a critical security frontier. Fraudsters or partisan actors might attemp
     </div>
     <div style="flex-grow: 1;">
       <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Official Name</div>
-      <div style="font-size: 1.2em; font-weight: bold; margin: 0 0 10px 0; color: #b71c1c;"><span data-bracket="start" data-for="poll">]</span>SARAH JANE SMITH</div>
+      <div style="font-size: 1.2em; font-weight: bold; margin: 0 0 10px 0; color: #b71c1c;"><span data-bracket="start" data-for="poll">[</span>SARAH JANE SMITH</div>
       
       <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Assignment</div>
       <div style="font-size: 1em; font-weight: bold; margin: 0 0 10px 0;">Precinct #42 (Ward 7)</div>

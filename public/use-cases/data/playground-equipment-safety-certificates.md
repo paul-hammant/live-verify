@@ -26,7 +26,7 @@ These documents are the "Shield of Public Trust." Fraud is high-stakes: un-certi
   <div style="padding: 25px; background: #fff;">
     <div style="border-bottom: 1px solid #eee; padding-bottom: 10px; margin-bottom: 15px;">
       <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Location / Site</div>
-      <div style="font-size: 1.2em; font-weight: bold; color: #333;"><span data-bracket="start" data-for="play">]</span>ZILKER PARK (SOUTH AREA)</div>
+      <div style="font-size: 1.2em; font-weight: bold; color: #333;"><span data-bracket="start" data-for="play">[</span>ZILKER PARK (SOUTH AREA)</div>
       
       <div style="font-size: 0.9em; color: #333; margin-top: 5px;">
         Structure ID: #992288-CLIMB ("The Castle")

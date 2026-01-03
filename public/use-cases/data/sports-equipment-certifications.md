@@ -32,7 +32,7 @@ These labels are the "Seal of Survival." Fraud is common in the "Budget Market":
     </div>
 
     <div style="font-size: 0.9em; line-height: 1.5; color: #333; border-top: 1px solid #eee; padding-top: 15px;">
-      <p><strong>Manufacturer:</strong> <span data-bracket="start" data-for="safety">]</span>RIDDELL SPORTS GROUP<br>
+      <p><strong>Manufacturer:</strong> <span data-bracket="start" data-for="safety">[</span>RIDDELL SPORTS GROUP<br>
       <strong>Model:</strong> SpeedFlex Precision-Fit<br>
       <strong>Serial Number:</strong> SN-992288-XJ-42</p>
       

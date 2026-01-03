@@ -14,7 +14,7 @@ furtherDerivations: 1
   </div>
 
   <div style="font-size: 1em; line-height: 1.6; color: #000; text-align: justify;">
-    <p>I, <span data-bracket="start" data-for="will">]</span><strong>JOHN JACOB DOE</strong>, being of sound mind, willfully and voluntarily make this declaration to be followed if I become incapacitated and am unable to participate in decisions regarding my medical care.</p>
+    <p>I, <span data-bracket="start" data-for="will">[</span><strong>JOHN JACOB DOE</strong>, being of sound mind, willfully and voluntarily make this declaration to be followed if I become incapacitated and am unable to participate in decisions regarding my medical care.</p>
 
     <div style="margin: 20px 0; background: #f9f9f9; padding: 15px; border: 1px solid #eee;">
       <p><strong>1. HEALTH CARE AGENT:</strong> Mary Alice Jacob (Spouse)<br>

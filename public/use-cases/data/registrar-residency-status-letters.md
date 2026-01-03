@@ -27,7 +27,7 @@ These letters are the "Benefit Unlockers" of the student world. They are used to
     <p>This document serves as official verification of student status for:</p>
     
     <div style="background: #f9f9f9; padding: 20px; border: 1px solid #ddd; margin: 20px 0;">
-      <p><strong>Student:</strong> <span data-bracket="start" data-for="registrar">]</span><strong>SARAH JANE SMITH</strong><br>
+      <p><strong>Student:</strong> <span data-bracket="start" data-for="registrar">[</span><strong>SARAH JANE SMITH</strong><br>
       <strong>Student ID:</strong> 99228877<br>
       <strong>Academic Level:</strong> Undergraduate Junior</p>
       

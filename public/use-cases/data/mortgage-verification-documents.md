@@ -21,7 +21,7 @@ furtherDerivations: 2
     <p>This letter confirms the employment and salary details for the individual named below, as requested for mortgage underwriting purposes:</p>
 
     <div style="margin: 20px 0; border-left: 4px solid #000; padding-left: 20px; background: #f9f9f9; padding-top: 10px; padding-bottom: 10px;">
-      <p><strong>Employee:</strong> <span data-bracket="start" data-for="mort-voe">]</span><strong>John D. Smith</strong><br>
+      <p><strong>Employee:</strong> <span data-bracket="start" data-for="mort-voe">[</span><strong>John D. Smith</strong><br>
       <strong>Job Title:</strong> Senior Systems Architect<br>
       <strong>Start Date:</strong> March 1, 2020 (Current/Active)<br>
       <strong>Base Salary:</strong> $ 145,000.00 / Annual</p>
@@ -130,7 +130,7 @@ _[Content merged from: mortgage-income-verification]_
   <div style="font-size: 0.9em; line-height: 1.4;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
       <div>
-        <strong>Employee:</strong> <span data-bracket="start" data-for="income">]</span><strong>JOHN JACOB DOE</strong><br>
+        <strong>Employee:</strong> <span data-bracket="start" data-for="income">[</span><strong>JOHN JACOB DOE</strong><br>
         <strong>Address:</strong> 123 Maple St, Anytown, USA
       </div>
       <div style="text-align: right;">

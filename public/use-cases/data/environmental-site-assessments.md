@@ -23,7 +23,7 @@ Fraud happens when a seller "Deletes" the page of the report that mentions a bur
   </div>
 
   <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
-    <p><strong>Property:</strong> <span data-bracket="start" data-for="esa">]</span>789 Industrial Way, Metropolis, State 90210<br>
+    <p><strong>Property:</strong> <span data-bracket="start" data-for="esa">[</span>789 Industrial Way, Metropolis, State 90210<br>
     <strong>Client:</strong> Metropolis Property Developers, LLC</p>
 
     <div style="background: #fff; border: 1px solid #c5e1a5; padding: 15px; margin: 20px 0;">

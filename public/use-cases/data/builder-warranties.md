@@ -28,7 +28,7 @@ This warranty is a valuable financial asset that stays with the house for 10 yea
   <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <p>This certifies that the property located at:</p>
     <p style="text-align: center; font-size: 1.1em; font-weight: bold;">
-      <span data-bracket="start" data-for="warranty">]</span>123 NEW HOUSE LANE, AUSTIN, TX 78701
+      <span data-bracket="start" data-for="warranty">[</span>123 NEW HOUSE LANE, AUSTIN, TX 78701
     </p>
 
     <div style="margin: 20px 0; border: 1px solid #ccc; padding: 15px; background: #f9f9f9;">

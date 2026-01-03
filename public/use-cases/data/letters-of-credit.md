@@ -16,7 +16,7 @@ furtherDerivations: 1
   </div>
 
   <div style="font-size: 0.85em; line-height: 1.4;">
-    <p><strong>L/C Number:</strong> <span data-bracket="start" data-for="lc">]</span>HSBC-LC-99228877<br>
+    <p><strong>L/C Number:</strong> <span data-bracket="start" data-for="lc">[</span>HSBC-LC-99228877<br>
     <strong>Date of Issue:</strong> 15 MAR 2026<br>
     <strong>Expiry Date:</strong> 15 SEP 2026</p>
 

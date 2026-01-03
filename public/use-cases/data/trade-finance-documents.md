@@ -34,7 +34,7 @@ These documents are the primary target for **Trade Finance Fraud**. Scammers use
     </div>
     <div style="padding: 10px; font-size: 0.75em; line-height: 1.3;">
       <strong style="text-transform: uppercase; color: #666;">B/L Number:</strong><br>
-      <div style="font-size: 1.2em; font-weight: bold;"><span data-bracket="start" data-for="trade">]</span>MSC-9922887766</div>
+      <div style="font-size: 1.2em; font-weight: bold;"><span data-bracket="start" data-for="trade">[</span>MSC-9922887766</div>
     </div>
   </div>
 
@@ -156,7 +156,7 @@ These papers are the primary tools for **Tariff Evasion**. Fraud is high-stakes:
   <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 25px;">
       <div>
-        <strong>Exporter:</strong> <span data-bracket="start" data-for="origin">]</span>BRITISH PRECISION LTD.<br>
+        <strong>Exporter:</strong> <span data-bracket="start" data-for="origin">[</span>BRITISH PRECISION LTD.<br>
         123 Thames Way, London, UK
       </div>
       <div style="text-align: right;">
@@ -276,7 +276,7 @@ This document is the primary engine for **Trade-Based Money Laundering (TBML)** 
     </div>
     <div style="text-align: right;">
       <h2 style="margin: 0; font-size: 1.2em; letter-spacing: 1px;">COMMERCIAL INVOICE</h2>
-      <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;"># <span data-bracket="start" data-for="invoice">]</span>INV-2026-8844</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;"># <span data-bracket="start" data-for="invoice">[</span>INV-2026-8844</div>
     </div>
   </div>
 

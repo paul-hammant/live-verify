@@ -22,7 +22,7 @@ These notices are critical for future travel. Fraud is high-stakes: applicants o
 
   <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <p>Date: March 15, 2026</p>
-    <p><strong>Applicant:</strong> <span data-bracket="start" data-for="visa">]</span>JOHN JACOB DOE<br>
+    <p><strong>Applicant:</strong> <span data-bracket="start" data-for="visa">[</span>JOHN JACOB DOE<br>
     <strong>Case Number:</strong> 202607442211</p>
 
     <p>Dear Mr. Doe,</p>

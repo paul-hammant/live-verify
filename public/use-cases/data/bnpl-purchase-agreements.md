@@ -26,7 +26,7 @@ furtherDerivations: 1
     </div>
 
     <div style="font-size: 0.95em; line-height: 1.5; color: #333; border: 1px solid #000; padding: 15px; margin-bottom: 20px;">
-      <p><strong>Borrower:</strong> <span data-bracket="start" data-for="bnpl">]</span><strong>JOHN SMITH</strong></p>
+      <p><strong>Borrower:</strong> <span data-bracket="start" data-for="bnpl">[</span><strong>JOHN SMITH</strong></p>
       
       <table style="width: 100%; border-collapse: collapse;">
         <tr>

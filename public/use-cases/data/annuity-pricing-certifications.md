@@ -30,7 +30,7 @@ Verification ensures that the "High Interest Rate" an agent promises you on thei
   <h3 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; color: #1a237e; border-bottom: 2px solid #1a237e; padding-bottom: 10px;">Actuarial Certification of Pricing</h3>
 
   <div style="font-size: 0.95em; line-height: 1.6; text-align: justify; color: #333; margin-top: 20px;">
-    <p>I, <span data-bracket="start" data-for="annuity">]</span><strong>Robert Miller, FSA, MAAA</strong>, Appointed Actuary for Prudential, hereby certify that the pricing and interest rate assumptions for the <strong>SecureIncome Plus Fixed Index Annuity (Series 2026)</strong>:</p>
+    <p>I, <span data-bracket="start" data-for="annuity">[</span><strong>Robert Miller, FSA, MAAA</strong>, Appointed Actuary for Prudential, hereby certify that the pricing and interest rate assumptions for the <strong>SecureIncome Plus Fixed Index Annuity (Series 2026)</strong>:</p>
 
     <ul>
       <li>Are consistent with current mortality tables (2012 IAM).</li>

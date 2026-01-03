@@ -23,7 +23,7 @@ furtherDerivations: 1
     </div>
     <div style="flex-grow: 1;">
       <h3 style="margin: 0; color: #002d62;">REPRESENTATIVE CREDENTIAL</h3>
-      <div style="font-size: 1.1em; font-weight: bold; margin: 5px 0;"><span data-bracket="start" data-for="advisor">]</span>SARAH J. MILLER</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin: 5px 0;"><span data-bracket="start" data-for="advisor">[</span>SARAH J. MILLER</div>
       
       <div style="font-size: 0.9em; color: #333; line-height: 1.4;">
         <strong>Individual CRD #:</strong> 9922887<br>

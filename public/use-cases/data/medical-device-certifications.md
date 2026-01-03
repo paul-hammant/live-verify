@@ -15,7 +15,7 @@ furtherDerivations: 1
   </div>
 
   <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
-    <p><strong>Certificate No:</strong> <span data-bracket="start" data-for="med-cert">]</span>BSI-MDR-987654</p>
+    <p><strong>Certificate No:</strong> <span data-bracket="start" data-for="med-cert">[</span>BSI-MDR-987654</p>
     <p><strong>Manufacturer:</strong> OmniHealth Corp, Dublin, Ireland</p>
     
     <div style="background: #fff; border: 1px solid #b2ebf2; padding: 15px; margin: 20px 0;">

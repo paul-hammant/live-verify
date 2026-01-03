@@ -21,7 +21,7 @@ These documents are the primary evidence used for **Travel Insurance Claims**. A
       <div style="font-size: 0.8em; opacity: 0.9;">Official Cancellation Notice</div>
     </div>
     <div style="text-align: right;">
-      <div style="font-size: 0.8em;">Booking Ref: <span data-bracket="start" data-for="cancel">]</span>L7XK9B</div>
+      <div style="font-size: 0.8em;">Booking Ref: <span data-bracket="start" data-for="cancel">[</span>L7XK9B</div>
     </div>
   </div>
 

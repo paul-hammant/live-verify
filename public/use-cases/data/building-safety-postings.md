@@ -24,7 +24,7 @@ OCR-to-hash allows a tenant, visitor, or fire marshal to scan the posting to ver
 
   <div style="font-size: 0.9em; line-height: 1.6;">
     <p><strong>Building Address:</strong> 42 SKYSCRAPER PLAZA, NEW YORK, NY<br>
-    <strong>Device ID:</strong> <span data-bracket="start" data-for="elevator">]</span>ELV-992288-B (Car #2)<br>
+    <strong>Device ID:</strong> <span data-bracket="start" data-for="elevator">[</span>ELV-992288-B (Car #2)<br>
     <strong>Capacity:</strong> 3,500 LBS / 22 PERSONS</p>
 
     <div style="margin: 20px 0; padding: 15px; border: 1px solid #ccc; background: #f9f9f9;">

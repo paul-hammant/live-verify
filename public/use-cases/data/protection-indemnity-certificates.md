@@ -28,7 +28,7 @@ These documents are the "Entry Ticket" to global trade. Fraud is high-stakes: ow
 
     <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; border-bottom: 1px solid #eee; padding-bottom: 15px; margin-bottom: 20px;">
       <div>
-        <strong>Vessel Name:</strong> <span data-bracket="start" data-for="pi">]</span>MV OCEAN TRADER<br>
+        <strong>Vessel Name:</strong> <span data-bracket="start" data-for="pi">[</span>MV OCEAN TRADER<br>
         <strong>IMO Number:</strong> 9922887<br>
         <strong>Gross Tonnage:</strong> 42,500 GT
       </div>

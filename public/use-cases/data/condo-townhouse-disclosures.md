@@ -28,7 +28,7 @@ Sellers often "Delete" the scary pages of these reports to trick buyers. Verifie
   <h3 style="text-align: center; text-transform: uppercase; margin-bottom: 20px;">Condominium Resale Certificate</h3>
 
   <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
-    <p><strong>Association:</strong> <span data-bracket="start" data-for="condo">]</span>Skyline Towers Condominium Association<br>
+    <p><strong>Association:</strong> <span data-bracket="start" data-for="condo">[</span>Skyline Towers Condominium Association<br>
     <strong>Unit Address:</strong> 400 Skyline Blvd, Unit 12A, Austin, TX</p>
 
     <div style="background: #f9f9f9; padding: 15px; border: 1px solid #eee; margin: 20px 0;">

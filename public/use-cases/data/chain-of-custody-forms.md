@@ -24,7 +24,7 @@ If there is a gap in the log (a "Broken Chain"), the evidence might be thrown ou
   
   <div style="font-size: 0.85em; line-height: 1.6;">
     <p><strong>Case Number:</strong> CR-2025-84921<br>
-    <strong>Item ID:</strong> <span data-bracket="start" data-for="custody">]</span>EV-004 (Blood Sample)<br>
+    <strong>Item ID:</strong> <span data-bracket="start" data-for="custody">[</span>EV-004 (Blood Sample)<br>
     <strong>Seal Number:</strong> 99482-A</p>
     
     <div style="background: #eee; padding: 10px; margin: 10px 0; border: 1px solid #999;">

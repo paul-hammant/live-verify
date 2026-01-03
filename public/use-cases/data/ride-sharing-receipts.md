@@ -25,7 +25,7 @@ Fraud is high-frequency and low-barrier: employees use "Ride Receipt Generator" 
 
   <div style="padding: 20px;">
     <div style="font-size: 0.9em; line-height: 1.6; color: #333; margin-bottom: 20px;">
-      <p><strong>Rider:</strong> <span data-bracket="start" data-for="ride">]</span>JOHN DOE<br>
+      <p><strong>Rider:</strong> <span data-bracket="start" data-for="ride">[</span>JOHN DOE<br>
       <strong>Trip ID:</strong> 99228877-XJ-42</p>
       
       <div style="margin: 15px 0; border-left: 2px solid #000; padding-left: 15px;">

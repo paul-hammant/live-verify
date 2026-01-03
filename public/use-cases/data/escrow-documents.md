@@ -31,7 +31,7 @@ Because banks manage millions of these accounts, clerical errors are frequent. V
     <div style="display: flex; justify-content: space-between; font-size: 0.9em; margin-bottom: 20px; color: #555;">
       <div>
         <strong>Property Address:</strong><br>
-        <span data-bracket="start" data-for="escrow">]</span>123 Maple Street<br>
+        <span data-bracket="start" data-for="escrow">[</span>123 Maple Street<br>
         Anytown, USA 12345
       </div>
       <div style="text-align: right;">
@@ -162,7 +162,7 @@ Hackers often "spoof" an escrow officer's email and send "Updated Wire Instructi
       <p style="color: #d32f2f; font-weight: bold; margin-top: 0;">⚠️ MANDATORY VERIFICATION REQUIRED</p>
       <p>Before wiring any funds, scan the hash below to verify these bank details directly against our secure server.</p>
       
-      <strong>Beneficiary Bank:</strong> <span data-bracket="start" data-for="escrow-wire">]</span>Wells Fargo, N.A.<br>
+      <strong>Beneficiary Bank:</strong> <span data-bracket="start" data-for="escrow-wire">[</span>Wells Fargo, N.A.<br>
       <strong>Account Name:</strong> First American Escrow Account<br>
       <strong>Account #:</strong> ****-****-9988<br>
       <strong>Routing #:</strong> 123456789<br>
@@ -284,7 +284,7 @@ In high-stakes deals, fraudsters (or disgruntled partners) often "Edit" the PDF 
     <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
       <tr>
         <td style="padding: 5px 0;">Gross Purchase Price</td>
-        <td style="text-align: right; font-weight: bold;"><span data-bracket="start" data-for="ma">]</span>$ 50,000,000.00</td>
+        <td style="text-align: right; font-weight: bold;"><span data-bracket="start" data-for="ma">[</span>$ 50,000,000.00</td>
       </tr>
       <tr>
         <td style="padding: 5px 0; color: #c62828;">Indemnity Holdback (12 Months)</td>
@@ -376,7 +376,7 @@ Fraud is rampant: scammers often send fake "Updated Instructions" to the escrow 
     
     <div style="background: #f9f9f9; padding: 15px; border: 1px solid #eee; margin: 20px 0;">
       <strong>Wire Transfer to:</strong><br>
-      Bank: <span data-bracket="start" data-for="escrow-inst">]</span>Chase Bank, N.A.<br>
+      Bank: <span data-bracket="start" data-for="escrow-inst">[</span>Chase Bank, N.A.<br>
       Account Name: SARAH J. DOE<br>
       Account #: ****-****-9922<br>
       <strong>Amount: $ 442,500.42</strong>

@@ -22,7 +22,7 @@ These internal records are "Compliance Insurance." During a regulatory exam (e.g
     </div>
     <div style="text-align: right;">
       <div style="font-weight: bold; font-size: 0.9em;">CONFIDENTIAL</div>
-      <div style="font-size: 0.7em;">SAR-Ref: <span data-bracket="start" data-for="sar">]</span>9922-8877-XJ</div>
+      <div style="font-size: 0.7em;">SAR-Ref: <span data-bracket="start" data-for="sar">[</span>9922-8877-XJ</div>
     </div>
   </div>
 

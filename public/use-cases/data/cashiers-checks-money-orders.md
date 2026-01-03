@@ -32,7 +32,7 @@ The seller thinks the check is real, hands over the car keys, and then discovers
     </div>
 
     <div style="margin: 15px 0;">
-      PAY TO THE<br>ORDER OF: <span data-bracket="start" data-for="check">]</span><strong>EXEMPLAR REALTY HOLDINGS, LLC</strong>
+      PAY TO THE<br>ORDER OF: <span data-bracket="start" data-for="check">[</span><strong>EXEMPLAR REALTY HOLDINGS, LLC</strong>
     </div>
 
     <div style="margin: 10px 0; border-bottom: 1px solid #999; padding-bottom: 5px;">

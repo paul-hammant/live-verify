@@ -34,7 +34,7 @@ This paper is the #1 tool for preventing "Medical Errors" when a patient moves t
     <h3 style="margin-top: 0; color: #0277bd; border-bottom: 2px solid #0277bd; padding-bottom: 5px;">DISCHARGE INSTRUCTIONS</h3>
 
     <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Patient:</strong> <span data-bracket="start" data-for="discharge">]</span><strong>WAYNE, BRUCE</strong> (DOB: 02/19/1972)<br>
+      <p><strong>Patient:</strong> <span data-bracket="start" data-for="discharge">[</span><strong>WAYNE, BRUCE</strong> (DOB: 02/19/1972)<br>
       <strong>Admission Date:</strong> March 10, 2026<br>
       <strong>Discharge Date:</strong> March 15, 2026</p>
 

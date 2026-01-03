@@ -37,7 +37,7 @@ OCR-to-hash binds the **Judge's name, the Case ID, and the exact verdict text** 
       <em>Defendant.</em>
     </div>
     <div style="width: 45%; text-align: right;">
-      <strong>Case No:</strong> <span data-bracket="start" data-for="court">]</span><strong>CV-2026-992288</strong>
+      <strong>Case No:</strong> <span data-bracket="start" data-for="court">[</span><strong>CV-2026-992288</strong>
     </div>
   </div>
 

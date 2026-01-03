@@ -24,7 +24,7 @@ These documents are the "Trigger for Action" in high-value commerce. A title com
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
       <div>
         <strong>Reference (IMAD):</strong><br>
-        <span data-bracket="start" data-for="wire">]</span>20260315A88442211
+        <span data-bracket="start" data-for="wire">[</span>20260315A88442211
       </div>
       <div style="text-align: right;">
         <strong>Value Date:</strong><br>

@@ -23,7 +23,7 @@ OCR-to-hash allows a patron, neighbor, or police officer to scan the posting to 
   </div>
 
   <div style="font-size: 0.9em; line-height: 1.6;">
-    <p><strong>License Number:</strong> <span data-bracket="start" data-for="liquor">]</span>42-992288 (Type 47)<br>
+    <p><strong>License Number:</strong> <span data-bracket="start" data-for="liquor">[</span>42-992288 (Type 47)<br>
     <strong>Primary Owner:</strong> SUNSET HOSPITALITY GROUP LLC<br>
     <strong>DBA:</strong> THE NEON LOUNGE</p>
 

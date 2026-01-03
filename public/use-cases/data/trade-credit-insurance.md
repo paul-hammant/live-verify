@@ -33,7 +33,7 @@ These documents are the "Green Light" for global trade. Fraud is high-stakes: a 
         <strong>Policy #:</strong> 99228877-TCI
       </div>
       <div style="text-align: right;">
-        <strong>Notice ID:</strong> <span data-bracket="start" data-for="credit">]</span>AZ-2026-8844<br>
+        <strong>Notice ID:</strong> <span data-bracket="start" data-for="credit">[</span>AZ-2026-8844<br>
         <strong>Date:</strong> 15 MAR 2026
       </div>
     </div>

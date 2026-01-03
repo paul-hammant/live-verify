@@ -23,7 +23,7 @@ furtherDerivations: 1
     <h2 style="text-align: center; color: #1565c0; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Builders Risk Certificate</h2>
 
     <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Project Name:</strong> <span data-bracket="start" data-for="build">]</span>Liberty High School Addition<br>
+      <p><strong>Project Name:</strong> <span data-bracket="start" data-for="build">[</span>Liberty High School Addition<br>
       <strong>Location:</strong> 4500 Skyline Blvd, Austin, TX</p>
 
       <p><strong>Project Owner:</strong> Austin Independent School District<br>

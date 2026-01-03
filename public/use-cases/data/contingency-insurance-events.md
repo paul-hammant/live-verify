@@ -31,7 +31,7 @@ Promoters must show this verified proof of insurance to stadium owners and lende
     <h2 style="text-align: center; color: #002366; font-size: 1.4em; margin-bottom: 25px; text-transform: uppercase; letter-spacing: 1px;">Evidence of Contingency Insurance</h2>
 
     <div style="font-size: 1em; line-height: 1.6; color: #333;">
-      <p><strong>Insured:</strong> <span data-bracket="start" data-for="event">]</span>Glastonbury Festival Events, Ltd.<br>
+      <p><strong>Insured:</strong> <span data-bracket="start" data-for="event">[</span>Glastonbury Festival Events, Ltd.<br>
       <strong>Event:</strong> 2026 Summer Music Festival</p>
 
       <div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin: 20px 0;">

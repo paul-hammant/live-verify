@@ -29,7 +29,7 @@ These reports are high-value documents. Farmers use them to secure **Crop Loans*
   <div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9em; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
-        <strong>Client:</strong> <span data-bracket="start" data-for="soil">]</span>GREEN ACRES FAMILY FARM<br>
+        <strong>Client:</strong> <span data-bracket="start" data-for="soil">[</span>GREEN ACRES FAMILY FARM<br>
         <strong>Field ID:</strong> North-42 (APN: 998-776)<br>
         <strong>Crop Type:</strong> Winter Wheat
       </div>

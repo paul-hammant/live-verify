@@ -34,7 +34,7 @@ Fraud happens when owners "edit" the PDF to show a higher limit to satisfy a ban
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px;">
       <div>
         <strong>Insured:</strong><br>
-        <span data-bracket="start" data-for="ho-dec">]</span><strong>JANE A. DOE</strong><br>
+        <span data-bracket="start" data-for="ho-dec">[</span><strong>JANE A. DOE</strong><br>
         123 Maple Street<br>
         Anytown, USA 12345
       </div>
@@ -169,7 +169,7 @@ Fraud is common: dishonest contractors sometimes "edit" the PDF to add $5,000 in
     <h3 style="margin-top: 0; color: #d32f2f; border-bottom: 2px solid #d32f2f; padding-bottom: 5px;">REPAIR ESTIMATE & PROOF OF LOSS</h3>
 
     <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Insured:</strong> <span data-bracket="start" data-for="prop-claim">]</span>SARAH J. DOE<br>
+      <p><strong>Insured:</strong> <span data-bracket="start" data-for="prop-claim">[</span>SARAH J. DOE<br>
       <strong>Property:</strong> 123 Maple St, Anytown, USA</p>
 
       <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
@@ -295,7 +295,7 @@ Because these papers are required for every mortgage, "Ghost Policy" fraud is a 
     <h2 style="text-align: center; color: #003366; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Insurance Declarations</h2>
 
     <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Named Insured:</strong> <span data-bracket="start" data-for="ho-pol">]</span>Sarah Jane Smith<br>
+      <p><strong>Named Insured:</strong> <span data-bracket="start" data-for="ho-pol">[</span>Sarah Jane Smith<br>
       <strong>Location:</strong> 4500 Skyline Blvd, Unit 12A, Austin, TX</p>
 
       <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">

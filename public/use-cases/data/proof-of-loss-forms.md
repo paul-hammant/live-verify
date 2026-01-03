@@ -23,7 +23,7 @@ This document is the "Trigger for Payout." Fraud is high-stakes: claimants often
   <div style="font-size: 0.95em; line-height: 1.6; color: #333; text-align: justify;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px; font-weight: bold;">
       <div>POLICY #: 99228877-XJ</div>
-      <div>CLAIM #: <span data-bracket="start" data-for="loss">]</span>CL-2026-8844</div>
+      <div>CLAIM #: <span data-bracket="start" data-for="loss">[</span>CL-2026-8844</div>
     </div>
 
     <p>To the <strong>GOLIATH INSURANCE COMPANY</strong> of Springfield, USA.</p>

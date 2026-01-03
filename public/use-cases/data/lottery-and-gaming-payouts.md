@@ -37,7 +37,7 @@ Witnessed hashes provide the immutable, third-party proof required to turn a "de
     <div style="text-align: left; margin-top: 20px; font-size: 0.9em;">
       <strong>Draw:</strong> MEGA MILLIONS<br>
       <strong>Date:</strong> JAN 02, 2026<br>
-      <strong>Ticket ID:</strong> <span data-bracket="start" data-for="lottery">]</span>MM-2026-X9Y8Z7<br>
+      <strong>Ticket ID:</strong> <span data-bracket="start" data-for="lottery">[</span>MM-2026-X9Y8Z7<br>
       <strong>Terminal:</strong> #8472-A
     </div>
 

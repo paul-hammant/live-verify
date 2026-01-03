@@ -27,7 +27,7 @@ Fraud is high-volume: consumers often "edit" a purchase date on a PDF receipt to
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; color: #333; margin-bottom: 20px;">
       <div>
         <strong>Model:</strong> Ocean-Master 300<br>
-        <strong>Serial:</strong> <span data-bracket="start" data-for="warranty">]</span>SN-992288-XJ
+        <strong>Serial:</strong> <span data-bracket="start" data-for="warranty">[</span>SN-992288-XJ
       </div>
       <div style="text-align: right;">
         <strong>Purchase Date:</strong><br>

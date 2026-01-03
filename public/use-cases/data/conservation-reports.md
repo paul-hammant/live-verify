@@ -31,7 +31,7 @@ Fraudsters often hide "Over-Restoration"—where so much new paint has been adde
     <h3 style="margin-top: 0; color: #546e7a; border-bottom: 2px solid #546e7a; padding-bottom: 5px;">CONSERVATION TREATMENT SUMMARY</h3>
 
     <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Object:</strong> <span data-bracket="start" data-for="conserve">]</span>Rembrandt van Rijn, <em>The Night Watch</em> (1642)<br>
+      <p><strong>Object:</strong> <span data-bracket="start" data-for="conserve">[</span>Rembrandt van Rijn, <em>The Night Watch</em> (1642)<br>
       <strong>Owner:</strong> Rijksmuseum, Amsterdam</p>
 
       <div style="background: #fdfdfd; border: 1px solid #eee; padding: 15px; margin: 15px 0;">

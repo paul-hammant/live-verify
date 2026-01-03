@@ -29,7 +29,7 @@ Lenders use W-2s to approve mortgages, and tax authorities use them to verify yo
         123 FACTORY LANE, SPRINGFIELD, USA
       </div>
       <div style="text-align: right;">
-        <strong>Control Number:</strong> <span data-bracket="start" data-for="tax">]</span>CN-992288-XJ<br>
+        <strong>Control Number:</strong> <span data-bracket="start" data-for="tax">[</span>CN-992288-XJ<br>
         <strong>Employee SSN:</strong> XXX-XX-1234
       </div>
     </div>

@@ -31,7 +31,7 @@ Fraud is high-stakes here: scammers often edit a cheap "Any Occupation" policy t
     <h2 style="text-align: center; color: #000; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Policy Schedule</h2>
 
     <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Insured:</strong> <span data-bracket="start" data-for="dis-pol">]</span><strong>DR. STEPHEN STRANGE</strong><br>
+      <p><strong>Insured:</strong> <span data-bracket="start" data-for="dis-pol">[</span><strong>DR. STEPHEN STRANGE</strong><br>
       <strong>Occupation Class:</strong> 6M (Neurosurgeon - Own Occupation)</p>
 
       <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">

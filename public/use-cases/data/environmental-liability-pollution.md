@@ -31,7 +31,7 @@ Fraud is high-stakes here: sellers often edit the "Retroactive Date" on their po
     <h2 style="text-align: center; color: #2e7d32; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Insurance Declarations</h2>
 
     <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>First Named Insured:</strong> <span data-bracket="start" data-for="pollution">]</span>Industrial Reclamation Group, LLC</p>
+      <p><strong>First Named Insured:</strong> <span data-bracket="start" data-for="pollution">[</span>Industrial Reclamation Group, LLC</p>
       <p><strong>Covered Location:</strong> 4500 Industrial Way, Newark, NJ (Former Lead Smelter)</p>
 
       <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">

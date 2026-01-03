@@ -26,7 +26,7 @@ furtherDerivations: 1
       <p>This document confirms that the following accounts receivable have been purchased by the Factor:</p>
       
       <div style="background: #fdfdfd; border: 1px solid #eee; padding: 15px; margin: 15px 0; border-radius: 4px;">
-        <p><strong>Seller:</strong> <span data-bracket="start" data-for="factor">]</span>Apex Manufacturing, Ltd.<br>
+        <p><strong>Seller:</strong> <span data-bracket="start" data-for="factor">[</span>Apex Manufacturing, Ltd.<br>
         <strong>Buyer (Debtor):</strong> Global Retail Hub, Corp.</p>
         
         <strong>Invoice Total:</strong> $ 100,000.00<br>

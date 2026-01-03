@@ -29,7 +29,7 @@ Charities often have to fax, email, or mail this letter dozens of times a year t
   <div style="display: flex; justify-content: space-between; margin-bottom: 30px; font-size: 0.9em;">
     <div>
       Date: <span style="font-weight: bold;">OCT 24 2025</span><br><br>
-      <span data-bracket="start" data-for="501c3">]</span>THE HUMAN FUND<br>
+      <span data-bracket="start" data-for="501c3">[</span>THE HUMAN FUND<br>
       123 CHARITY LANE<br>
       NEW YORK, NY 10001
     </div>

@@ -23,7 +23,7 @@ furtherDerivations: 2
     </div>
     <div style="flex-grow: 1;">
       <h3 style="margin: 0; color: #002d62;">VERIFIED CUSTOMER PROFILE</h3>
-      <div style="font-size: 1.1em; font-weight: bold; margin: 10px 0;"><span data-bracket="start" data-for="kyc-id">]</span>DOE, JOHN JACOB</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin: 10px 0;"><span data-bracket="start" data-for="kyc-id">[</span>DOE, JOHN JACOB</div>
       
       <div style="font-size: 0.9em; color: #333; line-height: 1.5;">
         <strong>Document:</strong> US Passport #*******1234<br>
@@ -132,7 +132,7 @@ _[Content merged from: kyc-proof-of-address]_
     <div style="border-bottom: 2px solid #004a99; padding-bottom: 10px; margin-bottom: 20px;">
       <h3 style="margin: 0; color: #333;">SERVICE ADDRESS</h3>
       <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px; color: #004a99;">
-        <span data-bracket="start" data-for="address">]</span>123 Bleecker Street, Apt 4B<br>
+        <span data-bracket="start" data-for="address">[</span>123 Bleecker Street, Apt 4B<br>
         New York, NY 10012
       </div>
     </div>

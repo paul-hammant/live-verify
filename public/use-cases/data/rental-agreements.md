@@ -19,7 +19,7 @@ This sector is plagued by high-volume, low-trust disputes. **Damage Fraud** is t
     <div style="font-weight: bold; font-size: 1.5em; letter-spacing: -1px;">Hertz</div>
     <div style="text-align: right;">
       <div style="font-weight: bold; font-size: 0.9em;">RENTAL RECORD</div>
-      <div style="font-size: 0.7em;">Ref: <span data-bracket="start" data-for="rental">]</span>RA-99228877-XJ</div>
+      <div style="font-size: 0.7em;">Ref: <span data-bracket="start" data-for="rental">[</span>RA-99228877-XJ</div>
     </div>
   </div>
 

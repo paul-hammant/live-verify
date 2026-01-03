@@ -32,7 +32,7 @@ OCR-to-hash allows a citizen to scan the officer's physical ID card or badge num
       <div style="width: 100px; height: 125px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #777; font-size: 0.8em; text-align: center;">[PHOTO]</div>
     </div>
     <div style="flex-grow: 1;">
-      <div style="font-size: 1.4em; font-weight: bold; margin: 0 0 10px 0; color: #002d62;"><span data-bracket="start" data-for="police">]</span>PC Alex D 1332</div>
+      <div style="font-size: 1.4em; font-weight: bold; margin: 0 0 10px 0; color: #002d62;"><span data-bracket="start" data-for="police">[</span>PC Alex D 1332</div>
       <div style="font-size: 0.9em; font-weight: bold;">London MET</div>
     </div>
   </div>
@@ -51,7 +51,7 @@ Static cards can be photographed and reprinted. An **e-ink warrant card** with a
 
 <div style="max-width: 320px; margin: 24px auto; font-family: sans-serif; border: 3px solid #002d62; border-radius: 8px; background: #f5f5f0; padding: 20px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
   <div style="font-size: 0.8em; color: #002d62; font-weight: bold; margin-bottom: 10px;">METROPOLITAN POLICE</div>
-  <div style="font-size: 1.5em; font-weight: bold; color: #000; margin-bottom: 5px;"><span data-bracket="start" data-for="eink">]</span>PC Alex D 1332</div>
+  <div style="font-size: 1.5em; font-weight: bold; color: #000; margin-bottom: 5px;"><span data-bracket="start" data-for="eink">[</span>PC Alex D 1332</div>
   <div style="font-size: 1em; color: #333; margin-bottom: 15px;">London MET</div>
   <div style="font-family: 'Courier New', monospace; font-size: 1.1em; color: #002d62; background: #fff; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
     Salt: 7k3m9x2p

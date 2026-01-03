@@ -29,7 +29,7 @@ These digital-first documents are the "Proof of Wealth" for a new generation of 
   <div style="padding: 25px;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 30px;">
       <div style="font-size: 0.9em; line-height: 1.5; color: #333;">
-        <strong>Client:</strong> <span data-bracket="start" data-for="robo">]</span>SARAH JANE SMITH<br>
+        <strong>Client:</strong> <span data-bracket="start" data-for="robo">[</span>SARAH JANE SMITH<br>
         <strong>Account:</strong> Individual Taxable (...9922)<br>
         <strong>Advisor:</strong> Betterment LLC (CRD #149117)
       </div>

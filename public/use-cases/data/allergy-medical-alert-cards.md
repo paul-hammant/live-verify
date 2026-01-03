@@ -30,7 +30,7 @@ OCR-to-Hash allows a simple wallet card to link to a detailed, verified medical 
 
   <div style="padding: 20px;">
     <div style="font-size: 0.95em; line-height: 1.5; color: #333;">
-      <p><strong>Name:</strong> <span data-bracket="start" data-for="alert">]</span>TIMOTHY DRAKE<br>
+      <p><strong>Name:</strong> <span data-bracket="start" data-for="alert">[</span>TIMOTHY DRAKE<br>
       <strong>DOB:</strong> 07/19/2018</p>
 
       <div style="background: #ffebee; border: 1px solid #ffcdd2; padding: 10px; border-radius: 4px; margin: 15px 0;">
