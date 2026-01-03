@@ -2,20 +2,23 @@
 
 ## Project Overview
 
-Proof-of-concept implementations demonstrating OCR-to-hash verification for resolving fraud or disputes. Implements concept from Paul Hammant's blog post: [OCR-to-Hash: A Simple Audit Trail for Physical Documents](https://paulhammant.com/2023/01/17/ocr-to-hash-simple-audit-trail-for-physical-documents/).
+Proof-of-concept implementations demonstrating **Text-to-Hash** verification (often called **OCR-to-hash**) for resolving fraud or disputes. The pipeline is `Input -> normalization -> hash -> GET`.
+
+### Permutations:
+- **OCR Path:** Camera or image clip -> OCR -> normalized-text -> hash -> GET.
+- **Selection Path:** Selected digital text -> normalization -> hash -> GET.
+
+### Integration Vision:
+These capabilities are designed for building into camera apps, browsers (mobile/desktop), email clients, PDF viewers, messaging systems (SMS, WhatsApp, iMessage), and collaboration tools (Slack, Discord).
 
 ### POC 1: Camera-Based Document Verification
 `public/camera-app/index.html` — Point camera at physical document, OCR extracts text, normalizes, hashes, verifies against issuer's endpoint.
 
-**Future:** iOS/Android camera apps would get this built-in. Point phone at certificate/permit → native verification without third-party app.
-
 ### POC 2: In-Page Text Selection Verification
 `public/text-selection-verify.js` — Select text on webpage, right-click "Verify?", computes hash, checks issuer endpoint.
 
-**Future:** Chrome/Firefox/Safari would get this built-in. Select quoted claim on any webpage → browser-native verification via context menu.
-
 ### Additional Modes
-See [VERIFICATION-MODES.md](./VERIFICATION-MODES.md) for: real-time document streaming, batch systematic hash receipt verification.
+See [VERIFICATION-MODES.md](./VERIFICATION-MODES.md) for detailed permutations and the platform integration roadmap.
 
 ## Key Design Decisions
 

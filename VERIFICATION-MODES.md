@@ -1,10 +1,30 @@
-# Verification Modes: OCR-to-Hash Applications
+# Verification Modes: Text-to-Hash Applications
 
-The OCR-to-hash verification concept supports multiple verification modes. This document describes proof-of-concept implementations and the vision for native platform integration.
+While often called "OCR-to-hash," the system is actually a more fine-grained **Text-to-Hash** pipeline with multiple input permutations. The core process is `Input -> normalized-text -> hash -> GET`.
 
-**The end goal:** These POCs demonstrate capabilities that would eventually be built into native platforms:
-- **iOS/Android camera apps** — Point phone at certificate/permit → native verification without third-party app
-- **Chrome/Firefox/Safari** — Select text on webpage → browser-native verification via context menu
+## Input Permutations
+
+### 1. Image-to-Text (OCR)
+- **Camera-based:** Pointing a live camera at a physical document or screen.
+- **Rectangular Clip:** Selecting a region of an image from a view (screenshot, photo).
+- **Automatic Detection:** Using computer vision (registration marks) to find scannable regions.
+
+### 2. Direct Text Selection
+- **Actual Text:** Selecting digital text from a view (webpage, PDF, email).
+- **Normalization:** Even direct text requires the same normalization rules as OCR to ensure hash consistency across different viewing environments.
+
+## Platform Integration Vision
+
+These capabilities are designed to be built into the native fabric of digital life:
+
+- **Camera Apps:** System-level recognition of `verify:` lines in the viewfinder.
+- **Browsers:** (Desktop, Tablet, Mobile) Right-click context menus for selected text.
+- **Email Packages:** Automatic verification of headers or body claims.
+- **PDF Viewers:** Built-in "Verify Page" or "Verify Selection" tools.
+- **Messaging Systems:** (SMS, RCS, iMessage, WhatsApp, WeChat) Long-press on a message to verify its authenticity.
+- **Collaboration Apps:** (Slack, Discord, Teams) Integration for verifying shared documents or claims within channels.
+
+---
 
 ## Mode 1: Camera-Based Document Verification (POC Implemented)
 
