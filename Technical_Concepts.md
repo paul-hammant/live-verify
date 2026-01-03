@@ -711,20 +711,27 @@ While the underlying text of a claim is static, its **legal or financial standin
 A verification endpoint can return different statuses during the lifecycle of a document.
 
 **Example: Hotel Receipt Lifecycle**
-1.  **Day 0 (Checkout):** Guest receives receipt for $500. Hash endpoint returns `{"status": "OK", "amount": 500}`.
+1.  **Day 0 (Checkout):** Guest receives receipt for $500. Hash endpoint returns `{"status": "OK"}`.
 2.  **Day 3 (Dispute):** Guest complains about a broken AC. Hotel agrees to a $100 refund.
-3.  **Day 4 (Update):** The hotel updates their internal system. The **same hash** endpoint now returns `{"status": "PARTIAL_REFUND", "refund_amount": 100, "net_amount": 400}`.
+3.  **Day 4 (Update):** The hotel updates their internal system. The **same hash** endpoint now returns `{"status": "AMENDED"}` (or `PARTIAL_REFUND`).
 
-This allows external parties (like corporate finance or tax authorities) to see the *current* reality of a claim even if they only possess the *original* document.
+This allows external parties (like corporate finance or tax authorities) to see the *current* reality of a claim even if they only possess the *original* document. Note that specific refund amounts are typically NOT returned in the JSON to preserve privacy; the status change simply signals that the original total is no longer the final net amount.
 
 ### Independent Witnessing Services
 
 To prevent issuers from "rewriting history" (e.g., deleting a verification record to hide a mistake), some implementations use a **Secondary Witness**.
 
+**How it is communicated:**
+The physical document itself typically includes a second verification line or alias specifically for the witness service:
+```
+verify:hotel-chain.com/c
+witness:independent-audit.org/w
+```
+
 **How it works:**
 1.  **Issuance:** When the issuer creates the document, they send the hash to an independent third-party service (the Witness).
 2.  **Anchoring:** The Witness stores the hash and a timestamp, often "anchoring" it to a public ledger (blockchain or certificate transparency log).
-3.  **Verification:** The verifier app checks BOTH the issuer's endpoint (for current status) and the Witness service (to prove the document existed and was valid on a certain date).
+3.  **Verification:** The verifier app detects both lines and checks BOTH the issuer's endpoint (for current status) and the Witness service (to prove the document existed and was valid on a certain date).
 
 **Benefits:**
 -   **Immutable Timestamps:** Proves a receipt wasn't backdated.
