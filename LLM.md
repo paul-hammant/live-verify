@@ -51,6 +51,101 @@ The app:
 - If hash matches URL AND endpoint returns 200 + "OK" → verified
 - If hash doesn't match URL OR endpoint fails → verification fails
 
+## Should Your Organization Adopt E-Ink Verification? A Decision Framework
+
+**This section is for decision-makers in hospitals, police departments, hotels, and other organizations asking: "Do we need this? When? At what cost?"**
+
+### When E-Ink Verification Is Essential (Not Optional)
+
+**Adopt now if you have:**
+- **High-risk vulnerability:** Mobile staff entering private spaces (patient rooms, guest rooms, private apartments, secure event areas) with minimal notice—especially if impostors pose safety or theft risks
+- **Documented fraud pattern:** Actual incidents of impostor entry, credential spoofing, or unsafe unauthorized access (even one breach is material evidence)
+- **Vulnerable populations:** Patients, guests, or residents who cannot reliably verify identity by appearance (medicated, isolated, elderly, non-English speaking)
+- **Regulatory pressure:** Accreditors (Joint Commission), licensing boards, or insurance carriers explicitly requiring credential verification or access control improvements
+- **Staff safety concerns:** Officers, healthcare workers, or staff reporting harassment, doxing, or targeting tied to identity exposure
+
+**Implementation timeline:** 6-12 months for badge rollout (phased by department/region). Verification infrastructure (backend endpoints) can be deployed in parallel in 2-4 months.
+
+### When E-Ink Verification Is Premature (Wait)
+
+**Do NOT adopt if:**
+- **No documented fraud/safety incidents** — Your facility has never had an impostor entry or credential-based breach. The risk is theoretical, not actual
+- **Centralized/gated facility** — Your building is locked, staff wear fixed IDs at desks, and unauthorized people stand out. (Examples: corporate offices, enclosed schools with badge readers)
+- **Staff resistance is high** — Officers fear doxing, healthcare workers fear abusive patients targeting them. Address privacy/safety concerns first in pilot; don't force org-wide without buy-in
+- **Badge rotation is extremely infrequent** — You issue badges every 5-10 years and expect low turnover. The cost of reprinting/redistribution outweighs the security gain
+- **Your verifier population is small/known** — If only 5 staff members ever need verification (e.g., small clinic), traditional ID checks with phone verification might suffice
+
+**When to revisit:** After a documented incident, regulatory change, or when staff specifically request it (strong signal of felt need).
+
+### Cost-Benefit Analysis: What You're Trading
+
+| Factor | Cost/Burden | Benefit |
+| :--- | :--- | :--- |
+| **Badge Hardware** | $15-40 per e-Ink badge + infrastructure | One-time cost; lasts 3-5 years; eliminates counterfeiting |
+| **Verification Endpoints** | 1-2 weeks developer time to build hash database; minimal hosting (GitHub Pages free) | Instant, cryptographic verification; audit logs; real-time status (suspended/active) |
+| **Staff Training** | 30 min per staff member + ongoing onboarding | Reduces confrontations; staff feel safer with instant verification proof |
+| **Privacy/Doxing Risk** | Must decouple identification from verification (name on badge ≠ verification claim) | Actually *reduces* doxing risk if done correctly (rotating salt, anonymized claims) |
+| **Verification Abuse** | Rate limiting + monitoring required; potential legal escalation | Prevents weaponization by bad actors; protects staff from systematic harassment |
+| **Audit/Compliance Burden** | Retention policies, legal review, incident reporting | Creates defensible record for accreditation, lawsuits, investigations |
+
+### Privacy & Safety Tradeoffs: The Hidden Costs
+
+**You must address these before deployment:**
+
+1. **Police Officer Safety** — Badge shows "Officer A 1332" but verification claim says "London Met officer, active duty, traffic enforcement" (no badge number). This prevents hostile individuals from doxing officers while still allowing citizens to verify authority. **Decision:** Will your police department adopt the privacy-protective model, or keep badge numbers visible?
+
+2. **Healthcare Worker Safety** — Badge shows "Dr. Smith, Cardiologist" but verification claim doesn't include license number (prevents patients from searching state boards to find home address). **Decision:** Can you train staff and patients to understand "verification without identification"? Will patients accept it?
+
+3. **Family Member Audit Logging** — If a family member verifies a provider 5 times in one shift because they're distressed about care, that's documented in the audit log. Is your organization comfortable with that? **Decision:** Will your legal/compliance team accept that adversarial verification is expected in healthcare?
+
+4. **Staff Targeting Detection** — System flags if one staff member is verified 20+ times by different users in 1 hour (likely targeting/harassment). **Decision:** Will you have escalation procedures to notify staff and law enforcement? Do you have security resources to respond?
+
+### Implementation Roadmap: How to Phase It
+
+**Phase 1 (Months 1-2): Pilot & Testing**
+- Select one high-risk department (ICU, emergency room, or high-turnover service area)
+- Issue 20-50 e-Ink badges to pilot staff
+- Deploy verification endpoints (GitHub Pages, free hosting)
+- Gather staff and user feedback on privacy, usability, abuse patterns
+- Cost: ~$500-1000 hardware + 2-4 weeks dev time
+
+**Phase 2 (Months 3-6): Scale to Department**
+- Roll out to full department based on pilot learnings
+- Update `.verification-meta.json` based on actual privacy/compliance needs
+- Train staff on privacy-protective messaging ("We verify your role, not your identity")
+- Establish abuse monitoring and escalation procedures
+- Cost: $2000-5000 hardware + 1 week training
+
+**Phase 3 (Months 7-12): Org-Wide Rollout**
+- Gradual badge replacement as old badges expire or during regular refresh cycles
+- Do NOT try to replace all badges at once (creates chaos, staffing issues)
+- Cost: $50,000-200,000 depending on organization size (10-100+ staff)
+
+**Do NOT skip**: Pilot phase. Organizations that skip pilot and go org-wide face staff resistance, abuse patterns you didn't anticipate, and potential legal/compliance issues.
+
+### Red Flags: When to Slow Down or Reconsider
+
+1. **High staff resistance** — If >30% of staff say "This feels like surveillance," investigate. You may have a trust issue that verification can't solve. Consider a smaller pilot or different approach.
+
+2. **Verification weaponization appears** — If bad actors immediately start verification abuse (flood attacks, targeting specific staff), your organization may not be ready for the legal/enforcement implications. Ensure HR, security, and legal are engaged.
+
+3. **Regulatory ambiguity** — If your regulator (Joint Commission, state board, insurance) says "We don't require this and are unsure if we allow it," get written clarification before large-scale deployment.
+
+4. **Badge infrastructure failures** — If your organization can't reliably deploy and maintain e-Ink hardware or verification endpoints, traditional plastic badges + phone verification might be safer.
+
+### Success Metrics: How to Know If It's Working
+
+Track these after 3-6 months of deployment:
+- **Reduction in impostor incidents:** Did you catch fraudulent access attempts that would have succeeded before?
+- **Staff confidence:** Do staff feel safer entering private spaces (patients feel verified, officers feel protected)?
+- **Verification response time:** Can users verify in <5 seconds from doorway/camera? If not, adoption will be low.
+- **Abuse patterns:** Are you seeing targeting/harassment attempts? If yes, is your escalation working?
+- **Audit trail usefulness:** When an incident occurs, can you instantly identify who was where and when?
+
+If after 6 months you're not seeing clear wins in these areas, the technology may not be the right fit for your organization—or your implementation may need adjustment.
+
+---
+
 ## File Structure
 
 ```
@@ -789,6 +884,64 @@ npm test                    # Should see 68 + 16 tests pass
 - **Change normalization:** Update `public/normalize.js`, verify tests pass
 - **Fix detection:** Adjust thresholds in `public/cv/detectSquares.js`
 - **Add fixture:** Place PNG in `test/fixtures/should-detect/`, add `.txt` with expected text
+
+## Use-Case-Specific Implementation Nuances
+
+**This section addresses practical considerations for specific organization types.**
+
+### Healthcare Facilities: The Credentialing Complexity
+
+**Key Nuance:** Healthcare adds regulatory layers that hotels don't have.
+
+- **Credential Verification vs. Identity Verification:** Your patients need to know both "who is this person?" (identity) and "are they licensed?" (credential). The e-Ink badge solves the second; photo handles the first. Budget time for staff training that this is *not* the same as traditional photo ID checks
+- **License Boards Integration:** If you want real-time license status (suspended, expired, active), you need to either:
+  - Partner with state medical/nursing boards for API access (complex, 3-6 months)
+  - Pre-generate badge hashes daily from board data (requires daily hash rebuilds)
+  - Use hash-based status (simpler, but less real-time)
+- **Abusive Patient Escalation:** You will get calls from staff saying "A patient scanned my badge 10 times in 2 hours." Rate limiting prevents this at the app level, but you need security/HR procedures to actually *respond*. Budget time for legal review of harassment policy *before* deployment
+- **HIPAA Audit Log Retention:** Your audit logs documenting "Dr. Smith was verified at 2:15 PM in CCU" are medical records. They stay for 6 years minimum under HIPAA. Budget data storage; don't assume it's negligible
+- **Timeline Expectation:** Healthcare implementation is 12-18 months (vs. 6-12 months for hotels), mostly due to regulatory review and credentialing integration
+
+### Police Departments: The Officer Safety Paradox
+
+**Key Nuance:** Verification helps citizens, but exposes officers to doxing. You must solve this or face officer resistance.
+
+- **Privacy-Protective Claim vs. Badge Display:** The breakthrough is that your badge can show "Officer A 1332" (for identification) but the verification claim never includes the badge number. Instead, it verifies "NYC Police Department officer, active duty, authorized for traffic enforcement" (anonymized, role-based). This is *the* critical architectural choice. Without this, you cannot ethically deploy to officers working organized crime, narcotics, or undercover
+- **Rotating Salt Non-Negotiable:** If your police department issues static badges with permanent hashes, you've created a searchable database. A suspect verifies an officer's hash, then can verify it repeatedly to track the officer's movements (Brixton, then Peckham, then Westminster = movement trail). You must use ephemeral hashes (10-minute rotation) or officers will resist
+- **Federal vs. Local:** FBI, ATF, and federal agents have even higher operational security needs. If you deploy to federal LEO, your verification system cannot expose operational assignment or task force affiliation. Design around this from day one
+- **Citizen Verification Expectations:** Not all citizens will understand why they can verify an officer is real but can't see the officer's full name. Budget time for public education. Some will feel this is "opaque." Address this in your messaging
+- **Timeline Expectation:** 9-15 months, heavily back-loaded with officer buy-in and operational security review
+
+### Hotels & Vacation Rentals: The Counterfeiting Problem
+
+**Key Nuance:** Your biggest risk is printed counterfeits. E-Ink doesn't help if counterfeits are in circulation.
+
+- **Badge Replacement Logistics:** When you switch to e-Ink, you have old plastic badges in circulation. You need a *sunset policy* — plastic badges stop working on Date X. Without this, guests see both types and may not understand which is real. Budget 3-6 months to get all staff switched over; shorter timelines will have parallel authentication confusion
+- **Guest Training:** Not all guests will carry phones or understand how to scan. Some will ask staff to do it for them (defeats the purpose). Budget time for signage ("You can scan our staff badges using the hotel app") and guest education
+- **Turnover Reality:** If you have 50% staff turnover annually, issuing new badges for half your staff every year is normal ops. If you have 20% turnover, badge distribution isn't a burden. Know your baseline
+- **Third-Party Contractors:** Housekeeping, maintenance, laundry, food service contractors may not want e-Ink badges if they work multiple hotels. Will you mandate it? Provide it? Ensure contracts allow it? This is an underestimated friction point
+- **Timeline Expectation:** 6-10 months for hotels (shorter than healthcare/police because fewer regulatory constraints)
+
+### Residential Buildings & Apartment Management: The Burden of Proof
+
+**Key Nuance:** You're asking residents to trust a system they didn't choose, for contractors they didn't hire.
+
+- **Resident Adoption:** Unlike hotels, residents have limited incentive to scan contractor badges if they're expecting the work. The value proposition ("Are you sure you want to let a stranger in?") only works if residents are naturally skeptical. Know your resident demographics before deploying
+- **Work Order Integration:** For e-Ink verification to work, your badge system must tie to your work order system. A contractor shows up with badge for unit 412 on Friday 9-5, but there's no work order in the system. Now the resident won't let them in *correctly*, but you have a service gap. Budget time for integrating badges with your maintenance scheduling software
+- **Contractor Resistance:** Many plumbers, electricians, and HVAC companies work multiple buildings. They won't want separate badges for each. Provide lanyards, centralized distribution, or other solutions to reduce friction
+- **Insurance & Liability:** If a contractor commits theft and claims "But I was verified, so that proves I was authorized," your insurance may have questions. Work with your insurance and legal counsel on liability implications *before* deployment
+- **Timeline Expectation:** 8-12 months (contractor coordination adds friction)
+
+### Event Venues & Hospitality: The Temporary Logistics Challenge
+
+**Key Nuance:** You're managing hundreds of workers you'll never see again. Verification is useful, but only if you have a process to issue badges quickly.
+
+- **Just-In-Time Badge Printing:** Unlike permanent staff, event contractors arrive 2-3 days before setup. You don't have time for a 3-week badge process. You need *rapid printing* (24 hours or less) or a kiosk system for on-site badge generation. Budget for this upfront
+- **Multi-Company Coordination:** If setup involves 5 different contractors (security, catering, AV, talent handlers, event staff), they all need badges issued by 5 different companies. Who coordinates? Who enforces policy? One company won't adopt if others don't, and vice versa. This is a *coordination problem*, not a technology problem
+- **Post-Event Badge Destruction:** After the event, you have 500 single-use e-Ink badges. Do you recycle? Destroy? Store? Budget for disposal and secure destruction (GDPR/privacy regulation applies)
+- **Timeline Expectation:** 6-9 months to implement, but with higher ongoing logistics burden (each event = badge coordination cycle)
+
+---
 
 ## Related Concepts
 
