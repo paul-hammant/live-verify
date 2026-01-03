@@ -447,7 +447,50 @@ Issuers can specify legal/regulatory requirements for how verification apps must
         "Policy clarification: Document that 'legitimate verification for lawful purpose' (one scan before treatment, one check during traffic stop) is protected. Systematic targeting (20+ attempts, movement tracking, roster enumeration) is not."
       ]
     },
-    "notes": "Healthcare credentials: Captured badge image must not be stored if it contains patient-visible information. Audit logs MUST be contextualized to patient encounter, not provider-centric. Police credentials: Do not retain verification requests or movement tracking. All contexts: Verification is legitimate for authorized purposes, but systematic harassment via verification is not and may violate harassment/stalking laws."
+    "progressiveGuidance": {
+      "description": "Context-sensitive guidance URLs triggered at verification frequency thresholds. Allows issuers to provide educational, warning, and legal framework resources at escalating frequency levels. Apps track verification attempts per staff member and offer corresponding guidance URLs.",
+      "implementation": "App tracks cumulative verification attempts for same staff member and presents guidance URL (as modal, banner, or link) when threshold is reached. Frequency counter resets per 24-hour period.",
+      "thresholds": [
+        {
+          "requestNumber": 1,
+          "guidanceUrl": "https://issuer-domain.org/guidance/first-verification",
+          "purpose": "Educational: explain legitimate verification use cases and appropriate contexts",
+          "exampleContent": "What is verification? When is it appropriate? This badge proves this person is authorized to be here. You can verify them for lawful purposes like confirming credentials before treatment, checking during security incident, or during care discussions."
+        },
+        {
+          "requestNumber": 3,
+          "guidanceUrl": "https://issuer-domain.org/guidance/repeated-verification",
+          "purpose": "Warning: notify user that repeated verification may indicate concerning pattern",
+          "exampleContent": "You've verified this person 3 times in the last 24 hours. If you're verifying the same person repeatedly without a specific new reason, this may be flagged by facility security as a potential targeting or stalking pattern."
+        },
+        {
+          "requestNumber": 10,
+          "guidanceUrl": "https://issuer-domain.org/guidance/harassment-law",
+          "purpose": "Legal framework: explain harassment/stalking statutes and escalation procedures",
+          "exampleContent": "Repeated verification attempts may constitute harassment or stalking under state law. Facility security monitors for patterns like 5+ attempts in 5 minutes (real-time targeting). If you believe someone is using verification to harass staff, report to facility security or law enforcement."
+        }
+      ],
+      "exampleImplementation": {
+        "scenario": "User verifies same staff member multiple times",
+        "firstRequest": {
+          "requestCount": 1,
+          "action": "Show educational guidance: display banner or modal linking to first guidance URL",
+          "userExperience": "'This badge is verified. Learn when verification is appropriate.' [Learn more]"
+        },
+        "thirdRequest": {
+          "requestCount": 3,
+          "action": "Show warning guidance: display banner or modal linking to repeated verification guidance",
+          "userExperience": "'You've verified this person 3 times. Repeated verification without new reason may be flagged.' [Learn more]"
+        },
+        "tenthRequest": {
+          "requestCount": 10,
+          "action": "Show legal guidance: display prominent notice with escalation procedures",
+          "userExperience": "'Repeated verification attempts may violate harassment or stalking laws. See facility security.' [Legal Framework]"
+        }
+      },
+      "designNotes": "Progressive guidance avoids hard-coded warnings in app code. Instead, issuers customize guidance URLs for their jurisdiction, organization, and context. URLs can link to facility-specific policies, legal frameworks, abuse reporting forms, or educational materials. This approach provides flexibility while maintaining consistent user experience across different issuer domains."
+    },
+    "notes": "Healthcare credentials: Captured badge image must not be stored if it contains patient-visible information. Audit logs MUST be contextualized to patient encounter, not provider-centric. Police credentials: Do not retain verification requests or movement tracking. All contexts: Verification is legitimate for authorized purposes, but systematic harassment via verification is not and may violate harassment/stalking laws. Progressive guidance provides context-sensitive user education without hard-coded warnings."
   }
 }
 ```
