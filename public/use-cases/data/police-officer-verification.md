@@ -71,15 +71,37 @@ Static cards can be photographed and reprinted. An **e-ink warrant card** with a
 
 **How rotating salt protects officers:**
 
-Static hashes would let criminals track police movements by monitoring which hashes are being verified and where. With a salt rotating every 10 minutes, each verification request uses a different hash — no way to correlate "hash X was verified in Brixton at 2pm" with "hash Y was verified in Peckham at 3pm" as the same officer.
+The rotating salt creates **ephemeral, non-persistent identifiers**. This is fundamentally different from static hash systems (like hotels or healthcare):
+
+- **No permanent hash database:** Unlike hotel/healthcare use cases with `/c/{hash}` endpoints that persist forever, police e-ink hashes exist only for a 10-minute window
+- **Each hash is temporal, not identifying:** The badge displays "PC Alex D 1332 + Salt: 7k3m9x2p". The combination of officer ID + salt creates a hash valid only now. In 10 minutes, salt becomes "8m4n2y3q" and the old hash is **explicitly expired and unqueryable**
+- **Expired hash reveals nothing:** If someone tries to verify the old hash tomorrow, the system returns "EXPIRED" — not "SUSPENDED" or other status. An expired hash just means "that salt window closed", providing zero information about the officer
+- **No tracking attacks:** Static hashes would allow building movement timelines:
+  - "Hash X verified in Brixton at 2pm" + "Hash Y verified in Peckham at 3pm" = tracking one officer's movements
+  - With rotating salt: "Hash X expired at 2:10pm, unqueryable. Hash Y unrelated to Hash X (different salt window). No correlation possible."
+- **No roster scraping:** Criminals cannot build a list of valid officer hashes. Any hash they capture is worthless within 10 minutes. No way to enumerate department rosters by testing hashes
 
 **Technical implementation:**
 - E-ink badge pairs with officer's phone via Bluetooth
 - Phone app maintains connection to force backend
+- Backend tracks valid (salt, officer_id) pairs in a **temporary, rotating registry** — not a persistent database
 - Salt updates pushed to badge every 10 minutes (or on movement threshold)
-- Badge displays new salt; backend registers new hash as valid, expires old hash
+- Badge displays new salt; backend marks new (salt, officer_id) as valid, **explicitly expires previous salt**
+- Backend returns "VALID" only if: current time is within the officer's shift window AND the queried salt is current (or recently expired within grace period)
+- Backend returns "EXPIRED" for old salts — no useful information about officer status, just that the salt window closed
 - E-ink power draw: ~15mW per update, negligible between updates
 - Battery life: months with frequent updates; USB-C or wireless charging at station
+
+**Comparison to Static Hash Systems:**
+
+| Model | Hotel/Healthcare | Police E-Ink |
+| :--- | :--- | :--- |
+| **Hash persistence** | Permanent (`/c/{hash}/index.html` forever) | Ephemeral (valid 10 minutes, then expired) |
+| **Database model** | Static hash database indexed by SHA-256 | Transient validity registry, rotates every 10 min |
+| **Doxing risk** | Badge number unique per person; searchable in databases | Badge number + salt combination changes every 10 min; no persistent identifier |
+| **Tracking attacks** | Could correlate multiple verifications to same person | Salt rotation breaks any correlation across verification requests |
+| **Roster enumeration** | Possible (cycle through likely badge numbers/hashes) | Impossible (all hashes stale within 10 minutes) |
+| **Expired hash meaning** | "This document was revoked" (status information) | "That salt window closed" (time-based, meaningless) |
 
 ## Data Verified
 
