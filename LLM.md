@@ -314,16 +314,39 @@ Issuers can specify legal/regulatory requirements for how verification apps must
       "verificationResult": "RETAIN_7_DAYS",
       "auditLog": "RETAIN_1_YEAR"
     },
+    "auditLogging": {
+      "description": "Context-aware audit logging for healthcare verification",
+      "logStructure": {
+        "timestamp": "ISO 8601 format",
+        "verificationResult": "VALID, SUSPENDED, EXPIRED, or UNKNOWN",
+        "verifierRole": "Staff member / Family member / Visitor",
+        "patientContext": "Patient identifier (hash or MRN, NOT plain name)",
+        "treatmentContext": "Procedure type, unit (ICU/OR/etc), NOT detailed medical info",
+        "verifiedPersonRole": "Doctor title, specialty (e.g., 'Cardiologist'), NOT name/license number",
+        "purposeOfVerification": "Treatment, family accompaniment, visitor verification"
+      },
+      "example": {
+        "timestamp": "2025-01-03T14:23:45Z",
+        "verificationResult": "VALID",
+        "verifierRole": "Family member",
+        "patientContext": "Patient_8847 (attending Room 412)",
+        "treatmentContext": "Cardiology consultation, CCU",
+        "verifiedPersonRole": "Cardiologist (Arizona-licensed, on-duty)",
+        "purposeOfVerification": "Family member verifying surgeon credentials before procedure"
+      },
+      "retention": "1 year (HIPAA medical record retention)"
+    },
     "applicableLaws": [
       "HIPAA (if patient data visible in capture)",
       "GDPR (if EU user)",
       "CCPA (if California resident)"
     ],
-    "purposeLimitation": "Verification only. Cannot use captured data for ML training, analytics, or secondary purposes.",
-    "dataMinimization": "App should not transmit captured image to issuer. Only hash and verification result.",
-    "userConsent": "App must notify user that verification data is being processed and retained per this policy.",
+    "purposeLimitation": "Verification only. Cannot use captured data for ML training, analytics, or secondary purposes. Audit logs tied to specific patient encounters for treatment/compliance purposes only.",
+    "dataMinimization": "App should not transmit captured image to issuer. Only hash and verification result. Audit logs must not include provider names, license numbers, or provider-specific identifiers—only role/specialty and verification status.",
+    "userConsent": "App must notify user that verification data is being processed and retained per this policy. For family members: 'Your verification of this provider will be logged in patient's medical record as: [family member] verified [provider role] at [timestamp]'",
     "incidentReporting": "If verification app is compromised, issuer domain operator must be notified within 24 hours.",
-    "notes": "Healthcare credentials: Captured badge image must not be stored if it contains patient-visible information. Police credentials: Do not retain verification requests or movement tracking."
+    "contextualAwareness": "Verification audit logs should distinguish between: staff member verifying peer (internal audit), family member verifying provider (patient safety), visitor verification (security). Each has different retention and privacy implications.",
+    "notes": "Healthcare credentials: Captured badge image must not be stored if it contains patient-visible information. Audit logs MUST be contextualized to patient encounter, not provider-centric. Police credentials: Do not retain verification requests or movement tracking."
   }
 }
 ```
