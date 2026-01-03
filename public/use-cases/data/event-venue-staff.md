@@ -125,6 +125,20 @@ While hotels involve repeated, known staff, events involve high-volume, one-time
 
 ---
 
+## Adoption Nuances: The Logistics Bottleneck
+
+**For event venues and promoters evaluating implementation:**
+
+**Just-In-Time Badge Printing:** Event contractors arrive 2-3 days before setup. You don't have time for a 3-week badge process. You need rapid printing (24 hours or less) or on-site badge kiosks. Budget for this infrastructure upfront.
+
+**Multi-Company Coordination:** Setup involves 5+ contractors (security, catering, AV, talent handlers, event staff). They all need badges issued by 5 different companies. Who coordinates? Who enforces? This is a *coordination problem*, not a technology problem. If one company doesn't adopt, the system breaks.
+
+**Post-Event Badge Destruction:** After the event, you have 500 single-use e-Ink badges. Do you recycle? Destroy? Store? Budget for secure destruction (GDPR/privacy regulation applies).
+
+**Implementation Timeline:** 6-9 months to implement, but with higher ongoing logistics burden—each event = badge coordination cycle. Only makes sense for high-value events with repeat contractor teams.
+
+---
+
 ## Further Derivations
 
 This use case does not derive further sub-cases. It represents a key instantiation of the broader "Mobile Service Staff in Ungated Facilities" pattern, serving as a parallel to hotel staff verification in a temporary-workforce context.

@@ -266,6 +266,22 @@ The underlying "mobile staff in ungated facility" pattern is identical. But heal
 
 ---
 
+## Adoption Nuances: Why This Is Complex in Practice
+
+**For hospital decision-makers evaluating whether to implement:**
+
+**Credential vs. Identity Verification:** Patients need both. Your badge shows "Dr. Smith" (identity) but the verification claim only says "Arizona-licensed cardiologist, active duty, credentialed at Banner Health" (no name/license number). This prevents doxing but requires staff training that this is *different* from traditional photo ID.
+
+**License Board Integration:** Real-time license verification (showing if a provider is suspended *today*) requires partnering with state boards (complex, 3-6 months) or daily hash rebuilds from board data. Pre-generated hashes are simpler but less real-time.
+
+**Abusive Patient Escalation:** You will get calls from staff saying "A patient scanned my badge 15 times in 2 hours." Rate limiting prevents this at the app level, but you need HR/security procedures to actually respond. Budget legal review of harassment policy *before* deployment.
+
+**HIPAA Retention:** Audit logs documenting who verified which provider at which time are medical records. They stay for 6 years minimum under HIPAA. Budget storage infrastructure.
+
+**Implementation Timeline:** 12-18 months (vs. 6-12 months for hotels), mostly regulatory review and credentialing integration.
+
+---
+
 ## Further Derivations
 
 This use case does not derive further sub-cases. It represents a key instantiation of the broader "Mobile Service Staff in Ungated Facilities" pattern, but extends it into the **credentialing and access control domain** where it applies to clinical staff, particularly physicians.

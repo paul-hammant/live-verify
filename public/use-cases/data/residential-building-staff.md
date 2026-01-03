@@ -126,6 +126,22 @@ The underlying pattern is identical: mobile staff, ungated facility, unpredictab
 
 ---
 
+## Adoption Nuances: Overcoming Resident Skepticism
+
+**For building management companies evaluating implementation:**
+
+**Resident Adoption:** Unlike hotels where verification is optional guest safety, residents have limited incentive to scan badges for contractors they're expecting. The value proposition only works if residents are naturally skeptical about door entry. Know your resident demographics before deploying.
+
+**Work Order Integration:** Verification must tie to your maintenance scheduling system. Contractor shows up for unit 412 on Friday 9-5, but work order doesn't exist in your system—resident correctly refuses entry, but you have a service gap. Budget time integrating badges with scheduling software.
+
+**Contractor Resistance:** Plumbers, electricians, and HVAC companies work multiple buildings. They won't want separate badges per building. Provide centralized distribution, lanyards, or contractual requirements.
+
+**Insurance & Liability:** If a verified contractor commits theft, they may claim "Verification proves I was authorized, so I'm not liable." Work with insurance and legal counsel on liability implications *before* deployment.
+
+**Implementation Timeline:** 8-12 months (contractor coordination adds friction compared to hotels).
+
+---
+
 ## Further Derivations
 
 This use case does not derive further sub-cases. It represents a key instantiation of the broader "Mobile Service Staff in Ungated Facilities" pattern, serving as a parallel to hotel staff verification in a residential context.

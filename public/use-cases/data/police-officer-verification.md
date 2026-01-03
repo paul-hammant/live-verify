@@ -287,6 +287,22 @@ This approach separates **authority** (is this person a real cop with valid powe
 
 ---
 
+## Adoption Nuances: Why This Requires Officer Buy-In
+
+**For police departments evaluating implementation:**
+
+**Privacy-Protective Architecture Non-Negotiable:** Your badge can show "Officer A 1332" (for ID) but verification claim must anonymize the badge number: "NYC Police Department officer, active duty, authorized for traffic enforcement" instead. Without this decoupling, officers working organized crime, narcotics, or undercover will resist—and they're right to. This is *the* critical architectural choice.
+
+**Rotating Salt is Mandatory:** Static badges create searchable databases. A suspect verifies an officer's hash once, then can verify it repeatedly to track movement (Brixton 2PM → Peckham 3PM → Westminster 4PM = officer timeline). Ephemeral hashes (10-minute rotation) break this entirely. Without rotating salt, officers will refuse deployment.
+
+**Citizen Communication Burden:** Citizens will ask "Why can't I see the officer's full name?" Some will feel this is opaque. Budget public education on *why* name anonymization protects officers while still enabling verification.
+
+**Operational Security:** Federal agents (FBI, ATF, DEA) have even higher requirements—verify system cannot expose task force assignment or undercover role. Design with this constraint from the start if federal deployment is planned.
+
+**Implementation Timeline:** 9-15 months, heavily back-loaded with officer associations' buy-in and operational security review. This is slower than hotels due to union/association dynamics.
+
+---
+
 ## Further Derivations
 
 This use case derives two related scenarios:

@@ -171,6 +171,22 @@ The **Mobile Service Staff in Ungated Facilities** pattern applies wherever:
 
 ---
 
+## Adoption Nuances: Practical Considerations for Hotels
+
+**For hotel chains evaluating implementation:**
+
+**Badge Replacement Logistics:** You have old plastic badges in circulation. You need a *sunset policy*—plastic badges stop working on Date X. Without it, guests see both types and won't understand which is real. Budget 3-6 months for staff transition; shorter timelines create confusion.
+
+**Guest Training:** Not all guests carry phones or understand OCR. Some will ask staff to scan for them (defeats the purpose). Budget signage ("Scan our badges using the hotel app") and guest education.
+
+**Contractor Complexity:** Housekeeping, maintenance, laundry, and food service contractors work multiple hotels. They won't want separate badges per hotel. Provide lanyards, centralized distribution, or contractual solutions to reduce friction.
+
+**Turnover Reality:** 50% annual turnover? Badge reprinting is normal ops. 10% turnover? Distribution burden is minimal. Know your baseline before budgeting.
+
+**Implementation Timeline:** 6-10 months for hotels (simpler than healthcare/police because fewer regulatory constraints and no officer safety paradox).
+
+---
+
 ## Further Derivations
 
 This use case derives three related scenarios:
