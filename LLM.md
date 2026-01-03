@@ -391,7 +391,62 @@ Issuers can specify legal/regulatory requirements for how verification apps must
     "userConsent": "App must notify user that verification data is being processed and retained per this policy. For family members: 'Your verification of this provider will be logged in patient's medical record as: [family member] verified [provider role] at [timestamp]'",
     "incidentReporting": "If verification app is compromised, issuer domain operator must be notified within 24 hours.",
     "contextualAwareness": "Verification audit logs should distinguish between: staff member verifying peer (internal audit), family member verifying provider (patient safety), visitor verification (security). Each has different retention and privacy implications.",
-    "notes": "Healthcare credentials: Captured badge image must not be stored if it contains patient-visible information. Audit logs MUST be contextualized to patient encounter, not provider-centric. Police credentials: Do not retain verification requests or movement tracking."
+    "abuseProtection": {
+      "description": "Protections against 'First Amendment auditors' and bad-faith verification abuse. Verification is legitimate, but systematic harassment via verification is not.",
+      "reasonableVerification": [
+        "Family member verifying provider once before treatment",
+        "Citizen verifying officer legitimacy during traffic stop",
+        "Patient verifying nurse during unexpected room entry",
+        "Staff member verifying peer credentials occasionally"
+      ],
+      "harassmentPatterns": [
+        "Same person verifying same staff member 5+ times in one shift (tracking)",
+        "Repeated verification attempts with incrementally delayed times (movement mapping)",
+        "Systematic attempts to verify all staff at facility (roster enumeration attack)",
+        "Verification requests targeting specific individuals based on name/identity (targeted harassment)",
+        "Flood verification attempts to probe endpoint vulnerabilities"
+      ],
+      "rateLimiting": {
+        "perUser": "Maximum 3 verification requests per user per staff member per 24 hours",
+        "perStaff": "Flag staff member if >10 unique verifiers in 1 hour (potential targeting)",
+        "perIPAddress": "Rate limit flood attempts: max 20 requests per IP per hour",
+        "escalation": "After rate limit exceeded, require human review before granting additional requests"
+      },
+      "legalFramework": {
+        "description": "Emerging laws protect staff from verification-based harassment. Issuers should document abuse prevention in compliance metadata.",
+        "applicableStatutes": [
+          {
+            "law": "Harassment/Cyberstalking Statutes",
+            "applies": "Repeated verification attempts targeting specific person may constitute harassment or stalking under state law (varies by jurisdiction)"
+          },
+          {
+            "law": "Workplace Violence Prevention Laws",
+            "applies": "Healthcare facilities, law enforcement can restrict verification in abusive/confrontational contexts under workplace safety rules"
+          },
+          {
+            "law": "Interference with Public Employees",
+            "applies": "Some jurisdictions: deliberately provoking confrontations via verification scanning may constitute interference with officer/employee duties"
+          },
+          {
+            "law": "Computer Fraud & Abuse Act (CFAA)",
+            "applies": "US law: automated verification scraping or flood attacks may constitute 'unauthorized access' under CFAA §1030"
+          }
+        ]
+      },
+      "appGuidance": [
+        "Apps should display rate-limit warnings: 'You've verified this person 3 times today. Additional requests may be flagged as suspicious.'",
+        "Apps should NOT enable batch verification or allow scripts to automate verification requests",
+        "Apps should warn users if verification pattern resembles stalking/tracking (same person multiple times, different times)",
+        "Apps should provide 'report abuse' button if user believes verification is being weaponized against staff member"
+      ],
+      "issuerGuidance": [
+        "Issuers should monitor verification patterns for harassment/targeting (staff member being verified 20+ times by different users)",
+        "Rate limiting should be transparent in .verification-meta.json so apps can enforce it client-side",
+        "Issuers should have escalation procedure when verification is weaponized (notify staff member, law enforcement if pattern constitutes stalking/harassment)",
+        "Issuers should document that 'legitimate verification for lawful purpose' is protected, but harassment via verification is not"
+      ]
+    },
+    "notes": "Healthcare credentials: Captured badge image must not be stored if it contains patient-visible information. Audit logs MUST be contextualized to patient encounter, not provider-centric. Police credentials: Do not retain verification requests or movement tracking. All contexts: Verification is legitimate for authorized purposes, but systematic harassment via verification is not and may violate harassment/stalking laws."
   }
 }
 ```
