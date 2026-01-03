@@ -152,44 +152,108 @@ See [public/domain-authority.js](public/domain-authority.js) for implementation.
 
 ## Hash Algorithms
 
-**Default: SHA-256** - Used for most documents (degrees, receipts, certifications)
+**Flexible choice based on document type and security needs** - Organizations specify their preferred algorithm via `.verification-meta.json`.
 
-**Properties:**
-- **256-bit output** - 64 hexadecimal characters
-- **One-way function** - Cannot reconstruct original text from hash
-- **Collision-resistant** - Probability of two different texts producing same hash: ~1 in 2^256 (effectively zero)
-- **Fast** - Computes in milliseconds on modern phones
+### Algorithm Options
 
-**Example hash:**
+**SHA-256** (Default, use for everything):
+- **Output:** 64 hexadecimal characters
+- **Properties:** One-way function, collision-resistant (probability ~1 in 2^256 ≈ 10^77), cryptographically strong
+- **Security level:** Unbreakable by brute force today, tomorrow, and for all practical purposes this century
+- **When to use:** Degrees, receipts, certifications, medical licenses, employment letters, passports, government IDs—literally everything
+- **Pros:** Widely supported, perfect balance of security and URL length, fast on phones, de facto standard
+- **Cons:** None for practical purposes
+
+**SHA-512** (Optional, for extreme future-proofing only):
+- **Output:** 128 hexadecimal characters
+- **Properties:** Stronger collision resistance (2^512), theoretically more resistant to future quantum computing threats
+- **When to use:** Only if your organization specifically requires longer-term quantum resistance (50+ years) or has specific regulatory mandates
+- **Pros:** Even higher entropy (though SHA-256 is already overkill for security)
+- **Cons:** Longer URLs, no practical security benefit over SHA-256 today or in foreseeable future
+
+**SHA-1** (Deprecated, do NOT use):
+- **Why:** Collision attacks discovered; no longer cryptographically secure
+- **Legacy:** Only for backward compatibility with ancient systems
+
+### Example Hash
+
+**SHA-256 example:**
 ```
 Input: "Bachelor of Science\nComputer Science\nJane Smith, 2018"
 SHA-256: fb92e9f3086212ed68adbec9e9b32767a378cdd198b9d58b34f3c8718dbb9afe
 ```
 
-**SHA-512 for high-security documents** (government IDs, passports):
+**SHA-512 example (same input):**
+```
+SHA-512: a1b2c3d4e5f6... (128 hex characters total)
+```
 
-**Why upgrade:**
-- **Prevents brute-force enumeration** - Attacker trying to guess valid hashes would need 2^512 attempts instead of 2^256
-- **Future-proof** - Quantum computers may eventually threaten SHA-256, SHA-512 provides more headroom
-- **Passport biometrics** - Higher security standard matches passport security requirements
+### Configuring via .verification-meta.json
 
-**Used in:**
-- **Passports** - See [Use_Case-Government_IDs.md](Use_Case-Government_IDs.md)
-- **Driver's licenses** - In some jurisdictions
+**Organizations specify their hash algorithm choice:**
 
-**Tradeoff:** SHA-512 produces 128 hex characters (longer URLs) vs SHA-256's 64 characters.
+```json
+{
+  "hashAlgorithm": "SHA-256",
+  "description": "Standard hash for degree verification"
+}
+```
 
-**BLAKE3 consideration (future):**
-- Even faster than SHA-256
-- Better parallelization on modern CPUs
-- Not yet as widely supported in browsers
+**For high-security documents:**
 
-**Hash not printed on document:**
+```json
+{
+  "hashAlgorithm": "SHA-512",
+  "description": "Government ID uses stronger hash for long-term security"
+}
+```
 
-Critical privacy property - the hash is **never** printed on the physical document. Only the base verification URL (`verify:example.com/c`) appears. This prevents:
+**Verification apps must:**
+1. Read the `.verification-meta.json` from the issuer domain
+2. Extract the `hashAlgorithm` field (default to SHA-256 if not specified)
+3. Use the specified algorithm to compute the hash
+4. Pass the algorithm identifier to the verification endpoint (via URL parameter or header)
+
+**Example verification URL:**
+```
+# SHA-256 (default)
+https://degrees.ed.ac.uk/c/abc123def456...
+
+# SHA-512 (if configured)
+https://dmv.ca.gov/verify/sha512/abc123def456...xyz789...
+```
+
+**Alternative: Algorithm in response**
+
+For simplicity, verification endpoints can return the algorithm they expect:
+
+```json
+{
+  "hashAlgorithm": "SHA-256",
+  "status": "OK"
+}
+```
+
+This lets verifiers confirm they used the right algorithm.
+
+### Choosing the Right Algorithm
+
+**Use SHA-256 for everything** — it's already cryptographically secure for any practical threat model.
+
+**Only consider SHA-512 if:**
+- Your organization has explicit regulatory requirement for quantum-resistant algorithms (rare)
+- You're designing a system meant to remain secure for 50+ years against theoretical future quantum computers
+- Longer URLs are acceptable in your workflow
+
+**In practice:** Most organizations should just use SHA-256 and not overthink this. The security is already overkill for fraudulent document detection.
+
+### Hash not printed on document
+
+**Critical privacy property** - the hash is **never** printed on the physical document. Only the base verification URL (`verify:example.com/c`) appears. This prevents:
 - **Hash enumeration** - Can't scrape hashes from public photos of documents
 - **Direct lookup** - Need physical document text to compute hash
 - **Privacy preservation** - No public registry of "who has what credential"
+- **Algorithm flexibility** - Organization can change algorithms without re-printing documents
 
 ---
 
