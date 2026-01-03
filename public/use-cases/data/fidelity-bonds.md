@@ -6,6 +6,7 @@ retention: "Policy term + 10 years"
 slug: "fidelity-bonds"
 tags: ["fidelity-bond", "employee-dishonesty", "erisa-bond", "crime-insurance", "commercial-surety", "fiduciary-responsibility", "theft-protection"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is a Fidelity Bond?

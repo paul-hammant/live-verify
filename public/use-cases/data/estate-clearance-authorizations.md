@@ -5,6 +5,7 @@ volume: "Medium"
 retention: "7 years post-clearance"
 slug: "estate-clearance-authorizations"
 tags: ["estate-clearance", "probate", "executor", "property", "fraud-prevention", "site-notice"]
+furtherDerivations: 0
 ---
 
 ## The Problem: Will Fraud and Estate Theft

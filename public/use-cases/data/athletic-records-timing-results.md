@@ -6,6 +6,7 @@ retention: "Permanent (sports history and records)"
 slug: "athletic-records-timing-results"
 tags: ["sports", "athletics", "timing", "records", "ratification", "olympics"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 5px solid #003366; background: #fff; padding: 0; position: relative;">

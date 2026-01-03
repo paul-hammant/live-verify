@@ -5,6 +5,7 @@ volume: "Large"
 retention: "Varies by action type"
 slug: "authorized-agent-confirmations"
 tags: ["repo", "bailiff", "locksmith", "tow", "demolition", "authorization", "agent", "indemnification"]
+furtherDerivations: 0
 ---
 
 ## The Pattern: Actions That Would Otherwise Be Criminal

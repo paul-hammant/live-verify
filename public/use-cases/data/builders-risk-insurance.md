@@ -6,6 +6,7 @@ retention: "Construction period + 7-10 years"
 slug: "builders-risk-insurance"
 tags: ["construction", "insurance", "builders-risk", "contractor", "real-estate-development", "risk-management"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Helvetica', sans-serif; border: 2px solid #1565c0; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">

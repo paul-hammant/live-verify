@@ -6,6 +6,7 @@ retention: "10-30 years (medical records)"
 slug: "discharge-summaries-care-plans"
 tags: ["healthcare-logistics", "patient-discharge", "care-coordination", "hospital-records", "medication-reconciliation", "continuum-of-care"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is a Discharge Summary?

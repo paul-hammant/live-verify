@@ -6,6 +6,7 @@ retention: "5-10 years (renewal cycles)"
 slug: "national-state-province-id-cards"
 tags: ["national-id", "state-id", "provincial-id", "identity-verification", "kyc", "fraud-prevention", "government-id", "real-id"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">

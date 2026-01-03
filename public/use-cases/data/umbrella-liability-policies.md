@@ -6,6 +6,7 @@ retention: "Policy term + 10-20 years (liability lifecycle)"
 slug: "umbrella-liability-policies"
 tags: ["personal-insurance", "umbrella-policy", "excess-liability", "asset-protection", "high-net-worth", "catastrophic-coverage", "insurance-fraud", "liability-limit"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is an Umbrella Liability Policy?

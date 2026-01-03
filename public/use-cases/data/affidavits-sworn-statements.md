@@ -6,6 +6,7 @@ retention: "10-30 years (legal proceedings)"
 slug: "affidavits-sworn-statements"
 tags: ["affidavits", "sworn", "statements", "financial", "legal", "notary", "court"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is an Affidavit?

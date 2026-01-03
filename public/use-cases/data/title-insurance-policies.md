@@ -6,6 +6,7 @@ retention: "Permanent (chain of title)"
 slug: "title-insurance-policies"
 tags: ["title", "insurance", "policies", "real", "estate", "property", "title-clearance", "closing-docs"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is a Title Insurance Policy?

@@ -5,6 +5,7 @@ volume: "Medium"
 retention: "5-10 years post-relationship"
 slug: "source-of-funds-declarations"
 tags: ["source-of-funds", "source-of-wealth", "aml", "kyc", "due-diligence", "onboarding"]
+furtherDerivations: 0
 ---
 
 ## What is a Source of Funds Declaration?

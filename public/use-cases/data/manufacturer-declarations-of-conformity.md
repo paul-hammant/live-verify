@@ -6,6 +6,7 @@ retention: "Product lifecycle (5-15 years)"
 slug: "manufacturer-declarations-of-conformity"
 tags: ["ce-marking", "fcc-compliance", "declaration-of-conformity", "product-safety", "iso-standards", "manufacturing-compliance", "european-union-doc"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">

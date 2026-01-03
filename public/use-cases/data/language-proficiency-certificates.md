@@ -6,6 +6,7 @@ retention: "2-5 years (test validity)"
 slug: "language-proficiency-certificates"
 tags: ["toefl", "ielts", "english-proficiency", "higher-education", "immigration-visa", "test-scores", "academic-credential", "ets"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #004a99; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">

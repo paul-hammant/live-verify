@@ -6,6 +6,7 @@ retention: "Policy lifetime + 10 years"
 slug: "disability-insurance-policies"
 tags: ["disability-insurance", "income-protection", "own-occupation", "financial-planning", "risk-management", "insurance-policy"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is Disability Insurance?

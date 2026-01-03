@@ -6,6 +6,7 @@ retention: "Permanent"
 slug: "board-resolutions-written-consents"
 tags: ["corporate-governance", "board-of-directors", "resolution", "written-consent", "legal-authority", "m-and-a"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">

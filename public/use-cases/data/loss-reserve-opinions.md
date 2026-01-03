@@ -6,6 +6,7 @@ retention: "7-15 years (claims settlement)"
 slug: "loss-reserve-opinions"
 tags: ["actuarial-opinion", "loss-reserves", "property-casualty", "solvency-audit", "naic-compliance", "cas-actuary", "casualty-insurance"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 1px solid #333; background: #fff; padding: 40px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">

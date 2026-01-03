@@ -6,6 +6,7 @@ retention: "1 year (annual inspection)"
 slug: "crane-hoist-inspection-certificates"
 tags: ["crane-safety", "hoist-inspection", "construction-safety", "osha-compliance", "lifting-equipment", "heavy-machinery"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is a Crane Inspection?

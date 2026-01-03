@@ -6,6 +6,7 @@ retention: "Permanent (historical records)"
 slug: "census-forms-surveys"
 tags: ["census", "demographics", "government-survey", "data-integrity", "vital-records", "genealogy"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is a Census Receipt?

@@ -6,6 +6,7 @@ retention: "1 year (annual inspection cycle)"
 slug: "playground-equipment-safety-certificates"
 tags: ["playground-safety", "cpsi-inspection", "astm-f1487", "cpsc-compliance", "public-safety", "child-protection", "impact-attenuation", "park-audit"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What are Playground Safety Certificates?

@@ -6,6 +6,7 @@ retention: "Employment period + badge validity"
 slug: "cold-caller-credentials"
 tags: ["doorstep", "cold-caller", "distraction-burglary", "utility-worker", "charity-collector", "consumer-protection", "elderly-protection"]
 derivations: 2
+furtherDerivations: 2
 ---
 
 ## What is a Cold-Caller Credential?

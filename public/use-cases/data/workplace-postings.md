@@ -6,6 +6,7 @@ slug: "workplace-postings"
 beneficiary: "Employees"
 tags: ["workplace", "labor-law", "safety", "mandatory", "employees", "osha", "fmla", "eeoc", "nlra"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What are Workplace Postings?

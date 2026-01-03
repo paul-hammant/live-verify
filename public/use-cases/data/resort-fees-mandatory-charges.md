@@ -6,6 +6,7 @@ retention: "Stay + 3-7 years (statute of limitations / tax)"
 slug: "resort-fees-mandatory-charges"
 tags: ["hospitality", "hotel", "resort-fee", "consumer-protection", "ftc-compliance", "drip-pricing", "travel-fraud"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What are Mandatory Resort Fee Disclosures?

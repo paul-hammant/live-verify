@@ -6,6 +6,7 @@ retention: "7-10 years (customs compliance)"
 slug: "bonded-warehouse-documents"
 tags: ["customs", "logistics", "warehouse", "duty-deferral", "international-trade", "cbp"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', monospace; border: 2px solid #000; background: #fff; padding: 20px; box-shadow: 2px 2px 5px rgba(0,0,0,0.1);">

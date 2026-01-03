@@ -6,6 +6,7 @@ retention: "Policy term + 7 years (audit / claims lifecycle)"
 slug: "trade-credit-insurance"
 tags: ["trade-credit", "ar-insurance", "credit-limit", "euler-hermes", "atradius", "coface", "invoice-financing", "insolvency-protection", "b2b-fraud"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is Trade Credit Insurance?

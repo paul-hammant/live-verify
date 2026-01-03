@@ -6,6 +6,7 @@ retention: "Tour + 1-3 years (safety/liability record)"
 slug: "tour-guide-verification"
 tags: ["tourism", "tour-guide", "travel-safety", "solo-travel", "official-license", "background-check", "vetted-services", "destination-security"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is Tour Guide Verification?

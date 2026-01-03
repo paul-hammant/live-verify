@@ -6,6 +6,7 @@ retention: "Permanent (public record)"
 slug: "property-deeds"
 tags: ["deeds", "real-estate", "title", "ownership", "property", "recording"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is a Property Deed?

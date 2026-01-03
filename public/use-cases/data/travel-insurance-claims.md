@@ -6,6 +6,7 @@ retention: "Claim + 7-10 years (statute of limitations / audit)"
 slug: "travel-insurance-claims"
 tags: ["travel-insurance", "claims-settlement", "insurance-fraud", "medical-evacuation", "trip-cancellation", "loss-recovery", "insurance-audit", "claims-verification"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is a Travel Insurance Settlement?

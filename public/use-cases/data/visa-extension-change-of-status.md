@@ -6,6 +6,7 @@ retention: "New status validity + 7 years"
 slug: "visa-extension-change-of-status"
 tags: ["immigration", "visa-extension", "change-of-status", "i-797", "uscis", "h1b-extension", "work-authorization", "legal-stay"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is a Visa Extension Approval?

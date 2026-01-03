@@ -6,6 +6,7 @@ retention: "5-10 years (regulatory compliance / liability)"
 slug: "vehicle-inspection-reports-dot"
 tags: ["transportation", "dot-inspection", "fmcsr", "fleet-safety", "commercial-vehicle", "logistics", "trucking-audit", "roadside-enforcement"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What are DOT Inspection Reports?

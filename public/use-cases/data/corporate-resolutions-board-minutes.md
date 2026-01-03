@@ -6,6 +6,7 @@ retention: "7-10 years (corporate records)"
 slug: "corporate-resolutions-board-minutes"
 tags: ["corporate-governance", "board-minutes", "resolution", "secretary-certificate", "legal-authority", "notary", "m-and-a", "authority-to-sign"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is a Corporate Resolution?

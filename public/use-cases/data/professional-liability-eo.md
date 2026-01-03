@@ -6,6 +6,7 @@ retention: "Policy term + 10-20 years (claims-made tail)"
 slug: "professional-liability-eo"
 tags: ["professional-liability", "errors-and-omissions", "e-and-o", "malpractice-insurance", "claims-made", "retroactive-date", "risk-transfer"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is E&O Insurance?

@@ -6,6 +6,7 @@ retention: "Travel + 3-7 years (statute of limitations / tax)"
 slug: "travel-package-bookings"
 tags: ["travel-package", "all-inclusive", "tour-operator", "booking-confirmation", "vacation-voucher", "travel-fraud", "resort-access"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What are Travel Package Confirmations?

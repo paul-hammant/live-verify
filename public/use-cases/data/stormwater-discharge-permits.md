@@ -6,6 +6,7 @@ retention: "5 years (permit term / statutory audit)"
 slug: "stormwater-discharge-permits"
 tags: ["environmental", "npdes", "stormwater-permit", "clean-water-act", "epa-compliance", "industrial-runoff", "pollution-control", "environmental-audit"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is a Stormwater Discharge Permit?

@@ -6,6 +6,7 @@ retention: "20-30 years (solar system lifetime)"
 slug: "solar-panel-efficiency-certificates"
 tags: ["solar-energy", "photovoltaic", "panel-efficiency", "stc-rating", "solar-fraud", "green-energy-finance", "panel-warranty", "tier-1-solar"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What are Solar Efficiency Certificates?

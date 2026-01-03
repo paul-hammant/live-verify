@@ -6,6 +6,7 @@ retention: "7-10 years (tax appeals / audit lifecycle)"
 slug: "property-tax-assessments"
 tags: ["real-estate", "property-tax", "tax-assessment", "county-assessor", "ad-valorem", "mortgage-underwriting", "tax-fraud", "property-valuation"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is a Property Tax Assessment?

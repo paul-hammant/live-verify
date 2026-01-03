@@ -6,6 +6,7 @@ retention: "7-10 years (audit trail)"
 slug: "automated-rebalancing-confirmations"
 tags: ["investing", "rebalancing", "fintech", "robo-advisor", "tax-loss-harvesting", "compliance"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is Automated Rebalancing?

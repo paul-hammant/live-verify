@@ -6,6 +6,7 @@ retention: "5-10 years post-relationship"
 slug: "beneficial-ownership-declarations"
 tags: ["aml", "kyc", "fincen", "ubo", "beneficial-ownership", "corporate-transparency"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is a UBO Declaration?

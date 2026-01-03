@@ -6,6 +6,7 @@ retention: "Policy term + 10 years"
 slug: "commercial-general-liability"
 tags: ["cgl", "insurance-policy", "liability", "contractor-insurance", "risk-management", "commercial-insurance"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is a CGL Policy?

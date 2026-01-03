@@ -6,6 +6,7 @@ retention: "Policy term + 10 years (claims)"
 slug: "cyber-insurance-policies"
 tags: ["cyber-insurance", "breach-response", "forensic-investigation", "privacy-liability", "incident-response", "risk-management", "security-compliance"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is Cyber Insurance?

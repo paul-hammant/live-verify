@@ -7,6 +7,7 @@ retention: "Life + 70 years (individual), 95 years (work for hire)"
 slug: "copyrights"
 tags: ["copyright", "intellectual-property", "us-copyright-office", "creative-works", "licensing", "dmca"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is a Copyright Certificate?

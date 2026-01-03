@@ -6,6 +6,7 @@ retention: "Policy term + 10 years"
 slug: "kidnap-ransom-insurance"
 tags: ["k-and-r", "crisis-response", "extortion-insurance", "executive-protection", "high-risk-travel", "corporate-security", "lloyds"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Helvetica', Arial, sans-serif; border: 2px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">

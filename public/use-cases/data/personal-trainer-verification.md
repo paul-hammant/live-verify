@@ -6,6 +6,7 @@ retention: "Training period + 1-3 years (certification cycle)"
 slug: "personal-trainer-verification"
 tags: ["fitness", "personal-trainer", "nasm", "ace", "professional-certification", "gym-safety", "background-check", "service-vetting", "wellness"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is Trainer Verification?

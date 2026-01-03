@@ -6,6 +6,7 @@ retention: "Appointment Date + 1-2 years (financial audit)"
 slug: "visa-fee-receipts"
 tags: ["immigration", "visa-fee", "mrv-receipt", "consular-fees", "travel-fraud", "expense-reimbursement", "appointment-booking", "identity-theft"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is a Visa Fee Receipt?

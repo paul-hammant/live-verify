@@ -6,6 +6,7 @@ retention: "1-3 years (service duration)"
 slug: "account-aggregation-authorization"
 tags: ["account", "aggregation", "authorization", "banking", "open-banking", "compliance"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is a Data Authorization?

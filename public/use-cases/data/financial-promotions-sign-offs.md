@@ -6,6 +6,7 @@ retention: "7 years (FCA/FINRA regulatory requirement)"
 slug: "financial-promotions-sign-offs"
 tags: ["financial-promotion", "marketing-compliance", "s21-sign-off", "fair-clear-misleading", "ad-verification", "investor-protection", "advertising-standards", "regulatory-vetting"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is a Financial Promotions Sign-Off?

@@ -6,6 +6,7 @@ retention: "7-10 years (federal audit / financial lifecycle)"
 slug: "research-grants-funding"
 tags: ["research-funding", "nsf", "nih", "grant-award", "academic-integrity", "scientific-funding", "auditing", "pi-credentials"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What are Research Grant Awards?

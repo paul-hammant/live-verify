@@ -6,6 +6,7 @@ retention: "3-7 years (tax reporting)"
 slug: "gig-economy-payout-receipts"
 tags: ["uber", "lyft", "doordash", "gig-economy", "payout-receipt", "income-verification", "independent-contractor", "tax-compliance"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is a Payout Receipt?

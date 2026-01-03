@@ -6,6 +6,7 @@ retention: "5-10 years (regulatory cycle / property lifecycle)"
 slug: "environmental-and-vicinity-postings"
 tags: ["environmental", "epc", "air-quality", "emissions", "greenwashing", "energy-efficiency", "public-health", "vicinity-notices"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What are Environmental Postings?

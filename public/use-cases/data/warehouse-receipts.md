@@ -6,6 +6,7 @@ retention: "7-10 years (financial audit, loan lifecycle)"
 slug: "warehouse-receipts"
 tags: ["asset-verification", "collateral-fraud", "commodities", "fraud-prevention", "inventory-management", "logistics", "supply-chain", "trade-finance", "warehouse", "warehousing"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 4px double #000; background: #fffbe6; padding: 20px;">

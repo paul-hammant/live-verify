@@ -6,6 +6,7 @@ retention: "5-15 years (warranty/liability period)"
 slug: "quality-control-inspection-reports"
 tags: ["manufacturing", "qc", "inspection-report", "product-safety", "iso-compliance", "batch-traceability", "engineering-audit"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is a Quality Control (QC) Report?

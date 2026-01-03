@@ -6,6 +6,7 @@ retention: "Statement period + 3-7 years"
 slug: "frequent-flyer-statements"
 tags: ["airline-loyalty", "mileage-balance", "frequent-flyer", "status-match", "travel-perks", "award-travel", "american-advantage", "delta-skymiles"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is a Mileage Statement?

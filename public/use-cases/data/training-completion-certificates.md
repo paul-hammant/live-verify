@@ -6,6 +6,7 @@ retention: "5-10 years (OSHA / regulatory requirement)"
 slug: "training-completion-certificates"
 tags: ["vocational-training", "safety-compliance", "osha-certification", "skills-verification", "professional-development", "employee-onboarding", "workplace-safety", "credential-fraud"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is a Training Completion Certificate?

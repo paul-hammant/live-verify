@@ -6,6 +6,7 @@ retention: "Loan term + 7-10 years"
 slug: "p2p-lending-agreements"
 tags: ["p2p-lending", "promissory-note", "fintech", "lendingclub", "prosper", "loan-agreement", "alternative-finance", "private-credit"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is a P2P Lending Agreement?

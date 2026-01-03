@@ -5,6 +5,7 @@ volume: "Very Large"
 retention: "Duration of trading relationship + 6 years"
 slug: "b2b-credit-control"
 tags: ["purchasing-authority", "credit-control", "trade-credit", "b2b", "procurement", "fraud-prevention"]
+furtherDerivations: 0
 ---
 
 ## What is B2B Credit Control?

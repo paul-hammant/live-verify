@@ -6,6 +6,7 @@ retention: "Election cycle + 2-4 years (audit requirement)"
 slug: "poll-worker-training"
 tags: ["elections", "poll-worker", "voter-integrity", "election-security", "civic-duty", "government-id", "training-certification", "election-day-ops"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is Poll Worker Verification?

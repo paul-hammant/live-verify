@@ -6,6 +6,7 @@ retention: "7-10 years (CASS audit / legal statute)"
 slug: "client-money-segregation-confirmations"
 tags: ["client-money", "segregation", "cass-compliance", "investor-protection", "ring-fencing", "custody-audit", "financial-solvency", "brokerage-safety"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is a Client Money Segregation Confirmation?

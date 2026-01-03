@@ -6,6 +6,7 @@ retention: "Endorsement validity period + 7 years (claims lifecycle)"
 slug: "additional-driver-endorsements"
 tags: ["insurance", "driver", "endorsement", "auto", "policy", "coverage", "roadside-verification", "borrowed-vehicle", "travel-fraud"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is a Driver Endorsement?

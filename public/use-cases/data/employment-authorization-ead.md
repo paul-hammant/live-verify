@@ -6,6 +6,7 @@ retention: "1-2 years (renewal cycle)"
 slug: "employment-authorization-ead"
 tags: ["immigration", "ead", "form-i-766", "work-authorization", "uscis", "i-9-compliance", "employment-eligibility"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is a Work Permit (EAD)?

@@ -6,6 +6,7 @@ retention: "Expiration date + 3-7 years (financial audit)"
 slug: "travel-vouchers-credits"
 tags: ["travel-voucher", "future-travel-credit", "airline-credit", "refund-voucher", "customer-service", "loyalty-recovery", "travel-fraud", "e-voucher"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What are Travel Vouchers?

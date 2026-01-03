@@ -6,6 +6,7 @@ retention: "Current + 2-5 years"
 slug: "bar-admission-good-standing"
 tags: ["legal", "attorney", "bar-association", "good-standing", "license", "professional"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is a Good-Standing Letter?

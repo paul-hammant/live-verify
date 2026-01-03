@@ -6,6 +6,7 @@ retention: "Claim term + 10 years"
 slug: "independent-adjuster-reports"
 tags: ["independent-adjuster", "field-inspection", "damage-assessment", "insurance-claims", "property-claim", "auto-claim", "restoration-audit", "ia-report"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">

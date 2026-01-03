@@ -6,6 +6,7 @@ retention: "Flight + 1-3 years"
 slug: "airline-passenger-documents"
 tags: ["airline", "airport", "amex", "ancillary", "audit", "baggage", "business-class", "cancellation", "compensation", "credit", "delay", "eu261", "expense", "finance", "insurance", "lounge", "memo", "priority-pass", "receipt", "refund", "seat", "travel", "upgrade", "wifi"]
 derivations: 5
+furtherDerivations: 5
 ---
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', monospace; border: 1px dashed #999; background: #fff; padding: 20px;">

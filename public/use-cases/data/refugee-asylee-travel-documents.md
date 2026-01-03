@@ -6,6 +6,7 @@ retention: "Document validity + 7 years (immigration lifecycle)"
 slug: "refugee-asylee-travel-documents"
 tags: ["immigration", "refugee", "asylee", "i-571", "travel-document", "uscis", "border-security", "international-travel", "un-refugee-convention"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is a Refugee Travel Document?

@@ -6,6 +6,7 @@ retention: "Policy term + 20 years (long-term investment lifecycle)"
 slug: "political-risk-insurance"
 tags: ["specialty-insurance", "political-risk", "sovereign-guarantee", "expropriation-coverage", "infrastructure-finance", "miga", "sovereign-fraud", "investment-protection"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is Political Risk Insurance (PRI)?

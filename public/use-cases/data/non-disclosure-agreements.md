@@ -6,6 +6,7 @@ retention: "Duration of agreement + 5-10 years"
 slug: "non-disclosure-agreements"
 tags: ["NDA", "legal", "contracts", "confidentiality", "intellectual-property", "trade-secrets", "m-and-a-due-diligence"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is a Verified NDA?

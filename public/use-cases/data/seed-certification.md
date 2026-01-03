@@ -6,6 +6,7 @@ retention: "5-20 years (variety tracking / IP lifecycle)"
 slug: "seed-certification"
 tags: ["agriculture", "seed-certification", "aosca", "variety-registration", "plant-ip", "germination-metrics", "farming-integrity", "supply-chain-fraud"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is Seed Certification?

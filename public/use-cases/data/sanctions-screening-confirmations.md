@@ -5,6 +5,7 @@ volume: "Large"
 retention: "7-10 years (regulatory audit)"
 slug: "sanctions-screening-confirmations"
 tags: ["sanctions", "ofac", "screening", "aml", "compliance", "financial-crime"]
+furtherDerivations: 0
 ---
 
 ## What is a Sanctions Screening Confirmation?

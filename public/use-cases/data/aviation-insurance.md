@@ -6,6 +6,7 @@ retention: "Policy term + 10-20 years"
 slug: "aviation-insurance"
 tags: ["aviation", "aircraft", "insurance", "hull", "liability", "compliance", "faa"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is Aviation Insurance?

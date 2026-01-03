@@ -6,6 +6,7 @@ retention: "3-7 years (audit cycles)"
 slug: "fair-trade-certifications"
 tags: ["fair-trade", "ethical-sourcing", "sustainability", "supply-chain-integrity", "fairtrade-international", "esg", "consumer-trust"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is Fair Trade?

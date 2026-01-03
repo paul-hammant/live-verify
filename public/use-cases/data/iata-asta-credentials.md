@@ -6,6 +6,7 @@ retention: "Statement period + 7 years"
 slug: "iata-asta-credentials"
 tags: ["iata-accredited", "asta-member", "travel-agency-credentials", "commission-verification", "travel-industry-standards", "agency-audit", "iata-numeric-code"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 4px solid #002d62; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">

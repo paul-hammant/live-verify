@@ -6,6 +6,7 @@ retention: "Permanent (price history)"
 slug: "auction-records-sale-documents"
 tags: ["auction", "price-history", "hammer-price", "provenance", "collectibles", "sales-receipt"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 2px 2px 10px rgba(0,0,0,0.05);">

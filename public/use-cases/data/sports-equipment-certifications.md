@@ -6,6 +6,7 @@ retention: "Product lifetime (5-15 years / liability period)"
 slug: "sports-equipment-certifications"
 tags: ["sports-safety", "equipment-certification", "nocsae", "helmet-safety", "product-integrity", "athletic-gear", "safety-audit", "liability-protection"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What are Equipment Safety Certifications?

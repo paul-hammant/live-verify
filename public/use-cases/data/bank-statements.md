@@ -6,6 +6,7 @@ retention: "7-10 years (loan term + disputes)"
 slug: "bank-statements"
 tags: ["bank", "statement", "finance", "mortgage", "kyc", "aml"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is a Bank Statement?

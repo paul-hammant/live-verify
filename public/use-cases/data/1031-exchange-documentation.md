@@ -6,6 +6,7 @@ retention: "7-10 years (IRS audit)"
 slug: "1031-exchange-documentation"
 tags: ["1031", "exchange", "documentation", "real", "estate", "property", "tax"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is a 1031 Exchange?

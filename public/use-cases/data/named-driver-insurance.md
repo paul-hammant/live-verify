@@ -6,6 +6,7 @@ retention: "Policy term (1 year typical)"
 slug: "named-driver-insurance"
 tags: ["car-insurance", "named-driver", "policy-endorsement", "additional-driver", "telematics-insurance", "uninsured-motorist", "insurance-fraud"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #000; background: #fff; padding: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">

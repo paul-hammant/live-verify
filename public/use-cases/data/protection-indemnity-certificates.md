@@ -6,6 +6,7 @@ retention: "Policy term + 10-20 years (maritime claims lifecycle)"
 slug: "protection-indemnity-certificates"
 tags: ["maritime-insurance", "p-and-i-club", "vessel-insurance", "oil-pollution", "shipping-liability", "port-state-control", "imo-compliance", "marine-fraud"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is a P&I Certificate of Entry?

@@ -6,6 +6,7 @@ retention: "Policy term + 7-10 years"
 slug: "insurance-policy-documents"
 tags: ["commercial-insurance", "policy-declarations", "endorsements", "certificate-of-insurance", "coi-verification", "risk-management", "compliance-audit"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">

@@ -6,6 +6,7 @@ retention: "Lifetime (transfusion safety)"
 slug: "blood-type-donor-cards"
 tags: ["blood-type", "blood-donor", "transfusion", "emergency", "red-cross", "hematology"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #b71c1c; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">

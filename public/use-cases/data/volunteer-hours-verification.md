@@ -6,6 +6,7 @@ retention: "3-7 years (academic/employment/court cycles)"
 slug: "volunteer-hours-verification"
 tags: ["volunteer", "non-profit", "community-service", "academic-credit", "court-ordered", "charity-audit", "reputation-management"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is Volunteer Hour Verification?

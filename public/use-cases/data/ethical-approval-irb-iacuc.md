@@ -6,6 +6,7 @@ retention: "7-30 years (regulatory compliance)"
 slug: "ethical-approval-irb-iacuc"
 tags: ["irb-approval", "iacuc", "research-ethics", "human-subjects", "animal-welfare", "clinical-research", "academic-integrity"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is Ethical Approval?

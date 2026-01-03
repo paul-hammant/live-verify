@@ -6,6 +6,7 @@ retention: "Consent term + 3-7 years (audit)"
 slug: "open-banking-consent-forms"
 tags: ["open-banking", "psd2", "consent-management", "data-privacy", "financial-data", "third-party-provider", "consumer-rights"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is an Open Banking Consent?

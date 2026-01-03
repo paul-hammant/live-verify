@@ -6,6 +6,7 @@ retention: "Visit + 3-7 years (case management / accountability)"
 slug: "social-services-worker-verification"
 tags: ["social-services", "cps", "home-visit", "child-welfare", "personal-safety", "government-id", "public-trust", "vulnerable-populations"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is Social Services Verification?

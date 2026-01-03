@@ -6,6 +6,7 @@ retention: "5-7 years (financial audit / AML lifecycle)"
 slug: "remittance-transfer-confirmations"
 tags: ["remittance", "western-union", "money-transfer", "cross-border-payment", "mtcn", "fintech-fraud", "money-laundering", "immigrant-services"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is a Remittance Confirmation?

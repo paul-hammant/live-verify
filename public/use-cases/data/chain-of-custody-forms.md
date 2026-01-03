@@ -6,6 +6,7 @@ retention: "Variable (Case duration to Permanent)"
 slug: "chain-of-custody-forms"
 tags: ["forensics", "evidence", "legal-authority", "logistics", "audit-trail", "criminal-justice"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is an Evidence Log?

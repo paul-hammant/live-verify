@@ -6,6 +6,7 @@ retention: "License term (1-3 years)"
 slug: "vehicle-display-postings"
 tags: ["taxi-license", "rideshare-permit", "tlc-medallion", "vehicle-safety", "public-transport", "municipal-permit", "driver-verification", "passenger-safety"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What are Vehicle Display Postings?

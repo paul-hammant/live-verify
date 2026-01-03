@@ -6,6 +6,7 @@ retention: "Policy term + 10 years"
 slug: "freight-demurrage-defense"
 tags: ["maritime-insurance", "p-and-i-club", "fd-and-d", "charterparty-dispute", "demurrage-claim", "legal-defense-insurance", "shipping-law"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is FD&D Insurance?

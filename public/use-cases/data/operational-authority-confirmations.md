@@ -5,6 +5,7 @@ volume: "Very Large"
 retention: "Project duration + 6 years"
 slug: "operational-authority-confirmations"
 tags: ["operational-authority", "project-approval", "vendor-selection", "sla", "delegation", "business-operations"]
+furtherDerivations: 0
 ---
 
 ## What is Operational Authority?

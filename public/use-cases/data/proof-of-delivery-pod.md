@@ -6,6 +6,7 @@ retention: "Delivery + 3-7 years (statute of limitations)"
 slug: "proof-of-delivery-pod"
 tags: ["logistics", "shipping", "pod", "delivery-receipt", "supply-chain", "dispute-resolution", "freight-fraud"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is a Proof of Delivery (POD)?

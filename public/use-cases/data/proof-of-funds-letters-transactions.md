@@ -6,6 +6,7 @@ retention: "Transaction period (3-6 months / point-in-time)"
 slug: "proof-of-funds-letters-transactions"
 tags: ["real-estate", "banking", "pof", "proof-of-funds", "cash-buyer", "financial-vetting", "escrow-funding", "mergers-and-acquisitions"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is a Proof of Funds (POF) Letter?

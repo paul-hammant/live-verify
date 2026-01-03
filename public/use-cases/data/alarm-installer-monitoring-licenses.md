@@ -6,6 +6,7 @@ retention: "1-3 years (license term)"
 slug: "alarm-installer-monitoring-licenses"
 tags: ["alarm", "license", "installer", "security", "monitoring", "contractor"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is an Alarm Installer License?

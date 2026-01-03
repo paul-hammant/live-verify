@@ -6,6 +6,7 @@ retention: "Litigation lifecycle plus 10-20 years"
 slug: "expert-witness-reports"
 tags: ["expert-witness", "forensic-report", "legal-testimony", "expert-opinion", "litigation-support", "court-evidence", "professional-liability"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is an Expert Report?

@@ -6,6 +6,7 @@ retention: "10-20 years (security requirements)"
 slug: "passports-visa-documents"
 tags: ["passports", "visa", "identity-verification", "kyc", "border-security", "international-travel", "real-id", "consular-services"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is a Passport?

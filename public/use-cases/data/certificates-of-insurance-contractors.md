@@ -6,6 +6,7 @@ retention: "Contract term + 3-7 years"
 slug: "certificates-of-insurance-contractors"
 tags: ["insurance", "coi", "acord-25", "contractor", "liability", "compliance", "construction"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is a Contractor COI?

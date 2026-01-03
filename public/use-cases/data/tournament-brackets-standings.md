@@ -6,6 +6,7 @@ retention: "Permanent (historical records / career stats)"
 slug: "tournament-brackets-standings"
 tags: ["sports", "tournament", "brackets", "official-results", "career-stats", "athletic-integrity", "competitive-gaming", "esports"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What are Tournament Brackets?

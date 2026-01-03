@@ -6,6 +6,7 @@ retention: "Policy term + 30+ years (claims)"
 slug: "environmental-liability-pollution"
 tags: ["environmental-insurance", "pollution-liability", "cleanup-costs", "cercla", "superfund", "toxic-tort", "risk-management"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is Pollution Insurance?

@@ -6,6 +6,7 @@ retention: "Background check + 3-7 years"
 slug: "fingerprint-certifications"
 tags: ["fingerprint-background-check", "fbi-background-check", "notary-certification", "identity-verification", "employment-vetting", "livescan", "biometric-verification"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is a Fingerprint Certificate?

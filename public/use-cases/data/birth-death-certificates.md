@@ -6,6 +6,7 @@ retention: "Permanent (vital records)"
 slug: "birth-death-certificates"
 tags: ["birth-certificate", "death-certificate", "vital-records", "identity", "probate", "ancestry"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is a Vital Record?

@@ -6,6 +6,7 @@ retention: "Voyage + 3-7 years (expense)"
 slug: "cruise-final-folios"
 tags: ["cruise", "folio", "onboard-account", "travel-expense", "vacation-receipt", "carnival", "royal-caribbean"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is a Cruise Folio?

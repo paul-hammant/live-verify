@@ -6,6 +6,7 @@ retention: "Project lifecycle + 20 years (environmental liability)"
 slug: "wetlands-fill-mitigation-permits"
 tags: ["environmental", "section-404-permit", "wetlands-fill", "mitigation-banking", "usace", "clean-water-act", "land-development", "habitat-restoration"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is a Wetlands Fill Permit?

@@ -6,6 +6,7 @@ retention: "Product lifetime + 3-10 years (liability/recall period)"
 slug: "warranty-documents"
 tags: ["retail", "warranty", "consumer-protection", "product-registration", "service-contract", "extended-warranty", "after-sales", "repair-eligibility"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What are Warranty Documents?

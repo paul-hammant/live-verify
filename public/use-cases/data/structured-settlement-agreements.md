@@ -6,6 +6,7 @@ retention: "Claimant lifetime (50-70+ years / permanent)"
 slug: "structured-settlement-agreements"
 tags: ["structured-settlement", "annuity-contract", "personal-injury", "insurance-payout", "factoring-fraud", "financial-planning", "legal-judgment", "long-term-care"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is a Structured Settlement?

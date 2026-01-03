@@ -6,6 +6,7 @@ retention: "Permanent (end-of-life care)"
 slug: "living-wills-advance-directives"
 tags: ["advance-directive", "living-will", "healthcare-proxy", "end-of-life-care", "medical-ethics", "patient-rights", "palliative-care", "legal-document"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #000; background: #fffdf5; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); position: relative;">

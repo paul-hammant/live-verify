@@ -6,6 +6,7 @@ retention: "25-30 years (FDA regulatory requirement)"
 slug: "clinical-trial-documents"
 tags: ["clinical-trial", "informed-consent", "fda", "research-ethics", "patient-privacy", "gcp-compliance"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is an Informed Consent Form?

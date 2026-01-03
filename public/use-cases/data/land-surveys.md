@@ -6,6 +6,7 @@ retention: "Permanent (property records)"
 slug: "land-surveys"
 tags: ["boundary", "boundary-dispute", "encroachment-check", "estate", "land", "land-survey", "plat", "plat-map", "property", "property-boundary", "real", "real-estate-due-diligence", "surveyor-seal", "surveys"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is a Land Survey?

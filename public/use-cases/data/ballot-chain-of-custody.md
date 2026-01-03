@@ -6,6 +6,7 @@ retention: "Election cycle + 2-4 years"
 slug: "ballot-chain-of-custody"
 tags: ["election", "voting", "ballots", "chain-of-custody", "integrity", "democracy"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is a Ballot Transfer Form?

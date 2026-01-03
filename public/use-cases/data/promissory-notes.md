@@ -6,6 +6,7 @@ retention: "Loan term + 7-10 years (statute of limitations)"
 slug: "promissory-notes"
 tags: ["finance", "lending", "promissory-note", "negotiable-instrument", "loan-agreement", "ucc-article-3", "debt-verification", "secondary-market"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is a Promissory Note?

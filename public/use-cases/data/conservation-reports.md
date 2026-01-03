@@ -6,6 +6,7 @@ retention: "Permanent (artwork care)"
 slug: "conservation-reports"
 tags: ["art-conservation", "restoration", "condition-report", "provenance", "museum-standards", "art-history"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is an Art Conservation Report?

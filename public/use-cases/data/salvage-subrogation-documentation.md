@@ -6,6 +6,7 @@ retention: "Subrogation case + 7-10 years (audit/legal)"
 slug: "salvage-subrogation-documentation"
 tags: ["insurance-claims", "subrogation", "salvage-title", "total-loss", "vehicle-fraud", "recovery-audit", "claims-settlement", "auto-insurance"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What are Salvage and Subrogation Records?

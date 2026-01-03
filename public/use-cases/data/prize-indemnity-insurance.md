@@ -6,6 +6,7 @@ retention: "Contest period + 7 years (claims / audit)"
 slug: "prize-indemnity-insurance"
 tags: ["specialty-insurance", "prize-indemnity", "hole-in-one-insurance", "sweepstakes", "marketing-risk", "contest-fraud", "insurance-payout", "event-marketing"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is Prize Indemnity Insurance?

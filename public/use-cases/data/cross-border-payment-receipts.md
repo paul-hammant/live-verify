@@ -6,6 +6,7 @@ retention: "5-7 years (compliance/disputes)"
 slug: "cross-border-payment-receipts"
 tags: ["remittance", "cross-border-payment", "wise", "remitly", "swif", "currency-exchange", "financial-transparency"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is a Remittance Receipt?

@@ -6,6 +6,7 @@ retention: "Permanent (career skills record)"
 slug: "vocational-certifications"
 tags: ["trade-skills", "vocational-training", "welding-cert", "hvac-license", "skilled-trades", "job-readiness", "credential-fraud", "industrial-safety"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What are Vocational Certifications?

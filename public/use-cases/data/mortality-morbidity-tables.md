@@ -6,6 +6,7 @@ retention: "Permanent (industry standards)"
 slug: "mortality-morbidity-tables"
 tags: ["actuarial-standards", "mortality-table", "soa", "life-insurance-pricing", "valuation-manual", "actuarial-certification", "risk-modeling"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 1px solid #333; background: #fff; padding: 40px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">

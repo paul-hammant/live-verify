@@ -6,6 +6,7 @@ retention: "7-20 years (contract term + disputes)"
 slug: "publishing-contracts-royalties"
 tags: ["publishing", "royalties", "intellectual-property", "author-rights", "contract-compliance", "book-deals", "audit-trail"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What are Royalty Statements?

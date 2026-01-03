@@ -6,6 +6,7 @@ retention: "7-10 years (carrier liability)"
 slug: "cmr-consignment-notes"
 tags: ["logistics", "trucking", "cmr", "road-freight", "cargo", "international-trade", "bill-of-lading"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is a CMR Waybill?

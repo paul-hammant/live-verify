@@ -6,6 +6,7 @@ retention: "Equipment return + 7 years"
 slug: "intermodal-equipment-receipts"
 tags: ["logistics", "intermodal", "chassis-inspection", "container-damage", "terminal-operations", "eir", "liability-transfer", "port-logistics"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 1px solid #000; background: #fff; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">

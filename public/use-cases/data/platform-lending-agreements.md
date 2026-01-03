@@ -6,6 +6,7 @@ retention: "Loan term + 7-10 years (financial audit / tax)"
 slug: "platform-lending-agreements"
 tags: ["fintech", "shopify-capital", "amazon-lending", "merchant-cash-advance", "revenue-based-financing", "mca-fraud", "business-lending", "ecommerce-finance"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is Platform Lending?

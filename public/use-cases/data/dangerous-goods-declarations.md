@@ -6,6 +6,7 @@ retention: "7-30 years (safety/liability)"
 slug: "dangerous-goods-declarations"
 tags: ["adr", "air-cargo", "aviation-safety", "cargo-security", "container-shipping", "dangerous-goods", "dot-hazmat", "hazmat", "hazmat-declaration", "highway-safety", "iata-dgr", "imdg-code", "imo-dgd", "logistics", "maritime-safety", "road-transport", "safety-data-sheet", "shipper-declaration"]
 derivations: 3
+furtherDerivations: 3
 ---
 
 ## What is a DG Declaration?

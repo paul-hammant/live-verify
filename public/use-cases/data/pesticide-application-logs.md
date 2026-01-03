@@ -6,6 +6,7 @@ retention: "5-10 years (environmental compliance / supply chain audit)"
 slug: "pesticide-application-logs"
 tags: ["agriculture", "pesticide-safety", "environmental-compliance", "epa-regulations", "food-traceability", "organic-verification", "farm-audit", "chemical-application"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is a Pesticide Application Log?

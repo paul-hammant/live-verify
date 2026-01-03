@@ -6,6 +6,7 @@ retention: "Active use + 30 years"
 slug: "hazardous-materials-sds-sheets"
 tags: ["hazmat", "sds", "osha-compliance", "chemical-safety", "ghs", "emergency-response", "product-stewardship"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is a Safety Data Sheet (SDS)?

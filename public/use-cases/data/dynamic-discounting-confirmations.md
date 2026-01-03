@@ -6,6 +6,7 @@ retention: "3-7 years (payment disputes)"
 slug: "dynamic-discounting-confirmations"
 tags: ["trade-finance", "dynamic-discounting", "early-payment", "supply-chain-finance", "accounts-payable", "fintech", "cash-flow"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is Dynamic Discounting?

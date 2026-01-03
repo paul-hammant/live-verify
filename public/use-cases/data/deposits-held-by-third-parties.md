@@ -4,6 +4,7 @@ category: "Banking & Payments"
 type: "summary"
 slug: "deposits-held-by-third-parties"
 tags: ["deposit", "escrow", "security-deposit", "reserve-fund", "trust-account", "retainage", "sinking-fund", "fiduciary", "prepaid"]
+furtherDerivations: 0
 ---
 
 # Deposits Held by Third Parties

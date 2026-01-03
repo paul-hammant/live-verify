@@ -9,9 +9,9 @@
 */
 
 /**
- * Count derivations in each use-case markdown file and update frontmatter.
+ * Count further derivations in each use-case markdown file and update frontmatter.
  *
- * Derivations are counted by looking for unique data-verify-line attributes
+ * Further derivations are counted by looking for unique data-verify-line attributes
  * in the HTML content of the markdown files.
  *
  * Usage: node scripts/count-and-update-derivations.js [--dry-run]
@@ -24,10 +24,10 @@ const USE_CASES_DIR = path.join(__dirname, '../public/use-cases/data');
 const dryRun = process.argv.includes('--dry-run');
 
 /**
- * Count unique derivations in markdown content
- * Derivations are marked by data-verify-line attributes
+ * Count unique further derivations in markdown content
+ * Further derivations are marked by data-verify-line attributes
  */
-function countDerivations(content) {
+function countFurtherDerivations(content) {
     // Find all data-verify-line="..." attributes
     const verifyLineMatches = content.match(/data-verify-line="([^"]+)"/g) || [];
     // Remove duplicates
@@ -54,23 +54,23 @@ function splitFrontmatterAndBody(content) {
 }
 
 /**
- * Check if derivations field exists in frontmatter
+ * Check if furtherDerivations field exists in frontmatter
  */
-function hasDerivationsField(frontmatter) {
-    return /^\s*derivations:\s*\d+\s*$/m.test(frontmatter);
+function hasFurtherDerivationsField(frontmatter) {
+    return /^\s*furtherDerivations:\s*\d+\s*$/m.test(frontmatter);
 }
 
 /**
- * Update derivations field in frontmatter
+ * Update furtherDerivations field in frontmatter
  */
-function updateDerivationsInFrontmatter(frontmatter, count) {
-    if (hasDerivationsField(frontmatter)) {
-        // Replace existing derivations field
-        return frontmatter.replace(/^\s*derivations:\s*\d+\s*$/m, `derivations: ${count}`);
+function updateFurtherDerivationsInFrontmatter(frontmatter, count) {
+    if (hasFurtherDerivationsField(frontmatter)) {
+        // Replace existing furtherDerivations field
+        return frontmatter.replace(/^\s*furtherDerivations:\s*\d+\s*$/m, `furtherDerivations: ${count}`);
     } else {
-        // Add derivations field after other fields, before the closing ---
+        // Add furtherDerivations field after other fields, before the closing ---
         // Insert before the closing --- marker
-        return frontmatter.replace(/\n---$/, `\nderivations: ${count}\n---`);
+        return frontmatter.replace(/\n---$/, `\nfurtherDerivations: ${count}\n---`);
     }
 }
 
@@ -88,7 +88,7 @@ async function main() {
 
     console.log(`Found ${files.length} markdown files\n`);
 
-    let totalDerivations = 0;
+    let totalFurtherDerivations = 0;
     let updatedCount = 0;
     const stats = [];
 
@@ -96,42 +96,42 @@ async function main() {
         const filepath = path.join(USE_CASES_DIR, file);
         const content = fs.readFileSync(filepath, 'utf-8');
 
-        const derivations = countDerivations(content);
-        totalDerivations += derivations;
+        const furtherDerivations = countFurtherDerivations(content);
+        totalFurtherDerivations += furtherDerivations;
 
         const { frontmatter, body } = splitFrontmatterAndBody(content);
 
-        if (derivations > 0 && !hasDerivationsField(frontmatter)) {
+        if (!hasFurtherDerivationsField(frontmatter)) {
             // Would need to update
             updatedCount++;
         }
 
         stats.push({
             file,
-            derivations
+            furtherDerivations
         });
 
-        if (!dryRun && derivations > 0) {
-            // Update the file
-            const newFrontmatter = updateDerivationsInFrontmatter(frontmatter, derivations);
+        if (!dryRun) {
+            // Always update - add or replace the furtherDerivations field
+            const newFrontmatter = updateFurtherDerivationsInFrontmatter(frontmatter, furtherDerivations);
             const newContent = newFrontmatter + '\n' + body;
             fs.writeFileSync(filepath, newContent, 'utf-8');
         }
     }
 
-    // Print summary sorted by derivation count (descending)
-    console.log('--- Derivations by Use Case ---');
+    // Print summary sorted by furtherDerivation count (descending)
+    console.log('--- Further Derivations by Use Case ---');
     stats
-        .filter(s => s.derivations > 0)
-        .sort((a, b) => b.derivations - a.derivations)
+        .filter(s => s.furtherDerivations > 0)
+        .sort((a, b) => b.furtherDerivations - a.furtherDerivations)
         .forEach(s => {
-            console.log(`${s.file}: ${s.derivations} derivation(s)`);
+            console.log(`${s.file}: ${s.furtherDerivations} further derivation(s)`);
         });
 
     console.log('\n--- Summary ---');
     console.log(`Total use cases: ${files.length}`);
-    console.log(`Use cases with derivations: ${stats.filter(s => s.derivations > 0).length}`);
-    console.log(`Total derivations across all use cases: ${totalDerivations}`);
+    console.log(`Use cases with further derivations: ${stats.filter(s => s.furtherDerivations > 0).length}`);
+    console.log(`Total further derivations across all use cases: ${totalFurtherDerivations}`);
     console.log(`Files updated: ${updatedCount}`);
 
     if (dryRun) {

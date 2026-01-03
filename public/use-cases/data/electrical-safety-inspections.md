@@ -6,6 +6,7 @@ retention: "3-5 years (commercial wiring cycle)"
 slug: "electrical-safety-inspections"
 tags: ["electrical-safety", "eawr", "nfpa-70e", "fixed-wire-test", "panel-inspection", "fire-prevention", "electrical-code"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is an Electrical System Inspection?

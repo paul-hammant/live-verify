@@ -6,6 +6,7 @@ retention: "Cancellation + 3-7 years (insurance/tax audit)"
 slug: "trip-cancellation-confirmations"
 tags: ["trip-cancellation", "travel-insurance", "refund-confirmation", "travel-credit", "claims-evidence", "travel-fraud", "airline-refund"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is a Trip Cancellation Confirmation?

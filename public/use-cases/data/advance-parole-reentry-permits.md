@@ -6,6 +6,7 @@ retention: "Permit validity + 7 years"
 slug: "advance-parole-reentry-permits"
 tags: ["advance", "parole", "reentry", "permits", "immigration", "visa", "uscis"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is Advance Parole?

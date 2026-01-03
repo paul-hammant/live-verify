@@ -6,6 +6,7 @@ retention: "7-20 years (carbon accounting)"
 slug: "carbon-credits-offset-certificates"
 tags: ["carbon-credits", "offset", "net-zero", "esg", "sustainability", "climate-change", "verra", "gold-standard"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is a Carbon Credit Retirement?

@@ -6,6 +6,7 @@ retention: "Term plus 7+ years"
 slug: "franchise-agreements"
 tags: ["franchise-agreement", "fdd", "item-19", "business-opportunity", "corporate-compliance", "ftc-rule", "franchisor-verification"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is a Franchise Disclosure?

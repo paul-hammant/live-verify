@@ -6,6 +6,7 @@ retention: "Coverage period + 5-10 years (claims lifecycle)"
 slug: "temporary-short-term-insurance"
 tags: ["insurtech", "temporary-insurance", "auto-binder", "gig-economy", "on-demand-insurance", "roadside-verification", "borrowed-vehicle", "short-term-coverage"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is Temporary Insurance?

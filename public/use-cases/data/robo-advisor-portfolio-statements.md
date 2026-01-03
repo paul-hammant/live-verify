@@ -6,6 +6,7 @@ retention: "7-10 years (SEC/FINRA regulatory requirement)"
 slug: "robo-advisor-portfolio-statements"
 tags: ["fintech", "robo-advisor", "investment-statement", "wealthfront", "betterment", "wealth-verification", "financial-transparency", "asset-allocation"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is a Robo-Advisor Statement?

@@ -6,6 +6,7 @@ retention: "Transit period + 10 years (claims / audit)"
 slug: "specie-insurance"
 tags: ["specialty-insurance", "specie-risk", "fine-art-insurance", "bullion-transit", "jewelry-insurance", "high-value-logistics", "armored-transport", "vault-security"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is Specie Insurance?

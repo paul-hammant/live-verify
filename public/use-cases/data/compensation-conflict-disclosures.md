@@ -5,6 +5,7 @@ volume: "Medium-Large"
 retention: "7 years (regulatory), permanent (litigation)"
 slug: "compensation-conflict-disclosures"
 tags: ["conflict-of-interest", "fiduciary", "commission", "compensation", "disclosure", "fee-only", "kickback", "transparency", "attestation"]
+furtherDerivations: 0
 ---
 
 # Compensation & Conflict-of-Interest Disclosures

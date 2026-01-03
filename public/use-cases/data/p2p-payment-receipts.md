@@ -6,6 +6,7 @@ retention: "3-7 years (tax / dispute period)"
 slug: "p2p-payment-receipts"
 tags: ["venmo", "zelle", "cash-app", "p2p-payments", "transaction-receipt", "screenshot-scam", "instant-payment", "payment-verification"]
 derivations: 1
+furtherDerivations: 1
 ---
 
 ## What is a P2P Payment Receipt?
