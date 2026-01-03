@@ -1,6 +1,6 @@
 ---
 title: "Estate Clearance Authorizations"
-category: "Authorized Agent Confirmations"
+category: "Identity & Authority Verification"
 volume: "Medium"
 retention: "7 years post-clearance"
 slug: "estate-clearance-authorizations"

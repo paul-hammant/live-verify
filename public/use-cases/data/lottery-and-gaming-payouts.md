@@ -1,6 +1,6 @@
 ---
 title: "Lottery and Gaming Payouts"
-category: "Gaming & Gambling"
+category: "Banking & Payments"
 volume: "Very Large"
 retention: "Draw Date + 1-2 years"
 slug: "lottery-and-gaming-payouts"

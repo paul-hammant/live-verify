@@ -11,7 +11,7 @@ tags: ["crane-safety", "hoist-inspection", "construction-safety", "osha-complian
 
 A massive construction crane can lift 1,000 tons. If a cable snaps or a bolt shears off, it can destroy an entire city block and kill dozens of people.
 
-Because the stakes are so high, every crane must be professionally inspected every year. The **Annual Inspection Certificate** is the "Safety Sticker" found in the crane cab.
+Because the stakes are so high, every crane must be professionally inspected every year (under standards like OSHA in the US or **LOLER 1998** in the UK). The **Annual Inspection Certificate** is the "Safety Sticker" found in the crane cab.
 
 "Pencil Whipping" is a common industry fraud where an operator fakes an inspection to keep working during a busy season. Verified hashes allow a site foreman or an OSHA inspector to scan the certificate and prove the crane actually passed a load test yesterday.
 

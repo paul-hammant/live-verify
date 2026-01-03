@@ -9,7 +9,7 @@ tags: ["building-safety", "inspection", "certificates", "elevator", "fire-safety
 
 ## What are Building Safety Postings?
 
-In every modern building, safety is governed by a layer of "Compliance Paper." From the **Elevator Inspection Certificate** in the cab to the **Fire Extinguisher Tags** in the hallway, these documents are the only way for the public to know if the equipment they are using is safe and maintained.
+In every modern building, safety is governed by a layer of "Compliance Paper." From the **Elevator Inspection Certificate** in the cab to the **Fire Extinguisher Tags** (mandated by OSHA 29 CFR 1910.157 and NFPA 10) in the hallway, these documents are the only way for the public to know if the equipment they are using is safe and maintained.
 
 The problem is that these papers are easy to fake, "Pencil Whip" (signing without inspecting), or simply leave expired for years. A landlord might keep a 2023 certificate on the wall to hide the fact that the elevator failed its 2025 brake test.
 
