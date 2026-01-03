@@ -178,6 +178,77 @@ The **Healthcare Staff Member** benefits from verification.
 
 ---
 
+## Privacy Protection for Healthcare Workers: Verification Without Doxing
+
+**The Hidden Risk: Healthcare Worker Safety**
+
+Hospitals are antagonistic workplaces. Abusive patients, hostile families, and workplace violence are ongoing threats. If a credential verification system exposes unique identifiers (license numbers, names cross-referenced with licenses), patients can easily dox healthcare workers:
+
+1. Patient sees "Dr. Smith, License #3342" on badge
+2. Patient searches Arizona Medical Board for "License #3342"
+3. Finds full name, disciplinary history, addresses, background info
+4. Hostile patient now has personal doxing material for harassment, stalking, targeting
+
+**The OCR-to-Hash Solution: Decouple Identification from Verification**
+
+E-Ink badges can serve **two separate purposes**:
+
+**Visual Badge (for identification):**
+- Shows photo and name: "Dr. Smith, Cardiologist"
+- Allows patient to see who they're dealing with
+- No additional PII exposed
+
+**OCR-to-Hash Verification (for authorization, privacy-protected):**
+- Verifies: "Licensed in Arizona, credentialed at Banner Health, authorized for cardiology duties"
+- NO unique identifiers (no name, no license number)
+- Claims are anonymized/role-based, not person-specific
+- Hashes can be verified against issuer domain without exposing PII
+
+**Example Claims (Two Approaches):**
+
+*Standard approach (current, doxing-risky):*
+```
+Dr. John Smith
+Arizona Medical License #3342
+Cardiologist
+Banner Health, Phoenix
+verify:azmedicalboard.gov/lic/3342
+```
+Problem: License number uniquely identifies the person and is easily cross-referenceable.
+
+*Privacy-protective approach (recommended):*
+```
+[Photo] Cardiologist
+Badge ID: [anonymized sequence]
+verify:bannerhealth.com/provider
+```
+- Badge displays: "Cardiologist" role (visible on physical badge)
+- OCR-to-hash verifies: "Arizona-licensed cardiologist, credentialed at Banner Health, on-duty in cardiac unit"
+- Claim is issued by Banner Health (or Arizona Medical Board)
+- Hash is computed from credential claim WITHOUT PII
+- Result: Patient knows the person is verified without gaining doxing information
+
+**How This Protects HCWs:**
+- Verification still works (credential is valid)
+- Hostile patients cannot easily harvest personal information
+- Protects against workplace harassment, stalking, doxxing
+- No link between verification URL and individual identity
+
+**For Facilities:**
+- Issuer domain (Banner Health, Mayo Clinic) remains trusted anchor
+- Credential state (licensed, credentialed, on-duty, suspended) still verified
+- Can still log which staff member accessed which patient (for audit purposes)
+- But the public verification URL doesn't expose PII
+
+**For Clinical Staff:**
+- Badge shows name/photo (for patient identification purposes)
+- Credential verification doesn't enable doxing via license number lookup
+- Protection against hostile patients weaponizing badge information
+
+This approach separates **verification** (role/credential/status) from **identification** (who the person is), allowing both functions without creating privacy/safety risks for healthcare workers.
+
+---
+
 ## Derived Scenarios: Why This Pattern Extends Beyond Hotels
 
 This use case is a **direct derivative** of the hotel staff verification pattern, adapted for healthcare with an additional critical dimension:
