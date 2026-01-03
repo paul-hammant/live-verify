@@ -5,6 +5,7 @@ volume: "Medium"
 retention: "Translation purpose + 7-10 years"
 slug: "certified-translations"
 tags: ["translation", "notary", "certified-translation", "ata", "immigration", "legal-docs"]
+furtherDerivations: 1
 ---
 
 ## What is a Certified Translation?

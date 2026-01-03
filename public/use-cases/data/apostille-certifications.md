@@ -5,6 +5,7 @@ volume: "Small"
 retention: "Document lifetime + permanent"
 slug: "apostille-certifications"
 tags: ["apostille", "hague", "international", "notary", "legalization", "authentication"]
+furtherDerivations: 1
 ---
 
 ## What is an Apostille?

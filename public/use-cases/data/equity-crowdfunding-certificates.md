@@ -5,6 +5,7 @@ volume: "Very Small"
 retention: "Permanent (securities holding)"
 slug: "equity-crowdfunding-certificates"
 tags: ["equity-crowdfunding", "startengine", "wefunder", "republic", "securities", "shareholder-certificate", "regulation-cf", "cap-table"]
+furtherDerivations: 1
 ---
 
 ## What is a Reg CF Certificate?

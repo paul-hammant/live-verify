@@ -5,6 +5,7 @@ volume: "Very Small"
 retention: "Permanent (legal guardianship)"
 slug: "adoption-custody-orders"
 tags: ["adoption", "custody", "orders", "court", "family", "law"]
+furtherDerivations: 1
 ---
 
 ## What is a Custody Order?

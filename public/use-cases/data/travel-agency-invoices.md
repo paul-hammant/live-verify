@@ -5,6 +5,7 @@ volume: "Large"
 retention: "Travel + 3-7 years (statute of limitations / liability)"
 slug: "travel-agency-invoices"
 tags: ["travel-agency", "booking-invoice", "itinerary-confirmation", "visa-documentation", "expense-reimbursement", "travel-fraud", "concierge-services"]
+furtherDerivations: 1
 ---
 
 ## What are Travel Agency Invoices?

@@ -5,6 +5,7 @@ type: "use-case"
 slug: "licensed-premises-postings"
 beneficiary: "Customers/Regulators"
 tags: ["alcohol-license", "liquor-license", "occupancy", "operating-hours", "compliance", "public-safety"]
+furtherDerivations: 1
 ---
 
 ## What are Licensed Premises Postings?

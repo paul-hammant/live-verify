@@ -5,6 +5,7 @@ volume: "Very Small"
 retention: "Horse lifetime (15-25 years)"
 slug: "bloodstock-insurance"
 tags: ["horse-racing", "bloodstock", "insurance", "lloyds", "mortality", "breeding", "livestock"]
+furtherDerivations: 1
 ---
 
 ## What is Bloodstock Insurance?

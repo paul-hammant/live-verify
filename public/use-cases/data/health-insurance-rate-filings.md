@@ -5,6 +5,7 @@ volume: "Very Small"
 retention: "5-10 years (rate approval)"
 slug: "health-insurance-rate-filings"
 tags: ["actuarial-certification", "health-insurance-rates", "medical-loss-ratio", "rate-filing", "insurance-regulation", "solvency-compliance"]
+furtherDerivations: 1
 ---
 
 ## What is a Health Insurance Rate Filing?

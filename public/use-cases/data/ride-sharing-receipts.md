@@ -5,6 +5,7 @@ volume: "Very Large"
 retention: "Ride + 1-3 years (expense/tax audit)"
 slug: "ride-sharing-receipts"
 tags: ["uber", "lyft", "ride-share", "transportation", "expense-reimbursement", "travel-fraud", "business-travel", "gig-economy"]
+furtherDerivations: 1
 ---
 
 ## What are Ride-Sharing Receipts?

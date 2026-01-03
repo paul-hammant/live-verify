@@ -5,6 +5,7 @@ volume: "Very Large"
 retention: "Lifetime (health & public safety history)"
 slug: "vaccination-immunization-records"
 tags: ["healthcare", "immunization", "vaccination-card", "cdc-white-card", "public-health", "travel-requirements", "school-enrollment", "medical-fraud", "phi-security"]
+furtherDerivations: 1
 ---
 
 ## What are Immunization Records?

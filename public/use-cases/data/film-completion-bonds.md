@@ -5,6 +5,7 @@ volume: "Very Small"
 retention: "Film lifecycle + 10 years"
 slug: "film-completion-bonds"
 tags: ["film-finance", "completion-guarantee", "production-insurance", "film-completion-bond", "entertainment-law", "investor-protection"]
+furtherDerivations: 1
 ---
 
 ## What is a Film Completion Bond?

@@ -5,6 +5,7 @@ volume: "Very Small"
 retention: "5-10 years (certification validity)"
 slug: "environmental-certifications"
 tags: ["leed", "breeam", "well-certified", "green-building", "sustainability-audit", "real-estate-valuation"]
+furtherDerivations: 1
 ---
 
 ## What is a LEED Certificate?

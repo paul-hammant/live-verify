@@ -5,6 +5,7 @@ volume: "Large"
 retention: "Claim resolution + 3-7 years"
 slug: "baggage-claim-receipts"
 tags: ["airline", "baggage", "receipt", "lost-luggage", "compensation", "travel-insurance", "expense"]
+furtherDerivations: 1
 ---
 
 ## What is a Baggage PIR?

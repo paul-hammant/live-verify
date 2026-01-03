@@ -5,6 +5,7 @@ volume: "Very Large"
 retention: "5-7 years (OFAC / AML regulatory requirement)"
 slug: "sanctions-screening-attestations"
 tags: ["sanctions-screening", "ofac-compliance", "kyc", "aml", "restricted-party", "export-compliance", "trade-integrity", "compliance-audit"]
+furtherDerivations: 1
 ---
 
 ## What is a Sanctions Attestation?

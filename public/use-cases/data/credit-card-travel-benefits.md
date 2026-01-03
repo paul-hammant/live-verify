@@ -5,6 +5,7 @@ volume: "Small"
 retention: "Trip + 3-7 years"
 slug: "credit-card-travel-benefits"
 tags: ["credit-card", "travel-insurance", "amex", "chase-sapphire", "trip-delay", "rental-car-coverage", "travel-perks"]
+furtherDerivations: 1
 ---
 
 ## What is a Travel Benefit Letter?

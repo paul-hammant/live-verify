@@ -5,6 +5,7 @@ volume: "Very Small"
 retention: "5-10 years (data validity)"
 slug: "instrument-calibration-records"
 tags: ["metrology", "scientific-instruments", "laboratory-compliance", "calibration-log", "glp-compliance", "data-integrity", "research-quality"]
+furtherDerivations: 1
 ---
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 1px solid #444; background: #fff; padding: 30px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">

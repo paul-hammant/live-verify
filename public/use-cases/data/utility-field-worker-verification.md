@@ -5,6 +5,7 @@ volume: "Large"
 retention: "Service + 1-3 years (access records)"
 slug: "utility-field-worker-verification"
 tags: ["utility", "worker", "verification", "personal", "safety", "service", "home-security", "fraud-prevention", "meter-reader", "surveyor", "con-edison", "field-operations"]
+furtherDerivations: 2
 ---
 
 ## What is Utility Worker Verification?

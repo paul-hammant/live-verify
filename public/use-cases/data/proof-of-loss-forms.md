@@ -5,6 +5,7 @@ volume: "Medium"
 retention: "Claim term + 7-10 years (statute of limitations)"
 slug: "proof-of-loss-forms"
 tags: ["insurance-claims", "proof-of-loss", "sworn-statement", "adjuster-report", "insurance-fraud", "claim-payout", "legal-affidavit", "notarized-document"]
+furtherDerivations: 1
 ---
 
 ## What is a Proof of Loss Form?

@@ -5,6 +5,7 @@ volume: "Very Large"
 retention: "Travel + 1-3 years"
 slug: "ota-booking-confirmations"
 tags: ["ota", "booking-confirmation", "travel-logistics", "expedia", "booking-com", "itinerary-fraud", "travel-expense"]
+furtherDerivations: 1
 ---
 
 ## What is an OTA Confirmation?

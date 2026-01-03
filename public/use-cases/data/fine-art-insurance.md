@@ -5,6 +5,7 @@ volume: "Small"
 retention: "Policy term / exhibition + 10 years"
 slug: "fine-art-insurance"
 tags: ["fine-art", "museum-insurance", "nail-to-nail", "lloyds", "art-theft", "exhibition-coverage", "risk-management"]
+furtherDerivations: 1
 ---
 
 ## What is Fine Art Insurance?

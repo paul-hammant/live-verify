@@ -5,6 +5,7 @@ volume: "Small"
 retention: "5 years (IRS/FinCEN requirement)"
 slug: "currency-transaction-reports-customer"
 tags: ["aml", "ctr", "fincen-form-112", "bank-secrecy-act", "cash-transaction", "financial-compliance", "kyc"]
+furtherDerivations: 1
 ---
 
 ## What is a CTR?

@@ -5,6 +5,7 @@ volume: "Small"
 retention: "Policy term + 7 years (claims)"
 slug: "disability-benefit-calculations"
 tags: ["disability-insurance", "benefit-calculation", "actuarial", "claims-adjudication", "income-replacement", "long-term-disability", "compliance"]
+furtherDerivations: 1
 ---
 
 ## What is a Disability Calculation?

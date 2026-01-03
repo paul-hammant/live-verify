@@ -5,6 +5,7 @@ volume: "Very Small"
 retention: "Permanent (chain of title)"
 slug: "international-title-insurance"
 tags: ["international-real-estate", "title-insurance", "cross-border-finance", "foreign-investment", "legal-indemnity", "title-search", "risk-mitigation"]
+furtherDerivations: 1
 ---
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 2px solid #333; background: #fff; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); position: relative;">

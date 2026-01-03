@@ -5,6 +5,7 @@ volume: "Very Small"
 retention: "Permanent (pension plan lifecycle)"
 slug: "pension-actuarial-valuations"
 tags: ["actuarial", "pension-funding", "retirement-security", "erisa-compliance", "pbgc", "benefit-verification", "financial-solvency", "audit-trail"]
+furtherDerivations: 1
 ---
 
 ## What is a Pension Actuarial Valuation?

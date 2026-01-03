@@ -5,6 +5,7 @@ volume: "Very Small"
 retention: "License term (3-10 years)"
 slug: "teaching-reciprocity-credentials"
 tags: ["teaching-license", "education-reciprocity", "interstate-compact", "teacher-credentialing", "background-check", "academic-integrity", "school-district-hiring", "nasdtec"]
+furtherDerivations: 1
 ---
 
 ## What are Teaching Reciprocity Credentials?

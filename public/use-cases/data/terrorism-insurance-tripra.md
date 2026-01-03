@@ -5,6 +5,7 @@ volume: "Small"
 retention: "Policy term + 10 years (long-term liability)"
 slug: "terrorism-insurance-tripra"
 tags: ["specialty-insurance", "terrorism-coverage", "tripra", "commercial-real-estate", "high-risk-insurance", "lender-compliance", "certified-act", "risk-management"]
+furtherDerivations: 1
 ---
 
 ## What is Terrorism (TRIPRA) Insurance?

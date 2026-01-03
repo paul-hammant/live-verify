@@ -5,6 +5,7 @@ volume: "Small"
 retention: "Growing season + 7 years"
 slug: "crop-hail-insurance"
 tags: ["agriculture", "crop-insurance", "hail-damage", "farming", "risk-management", "harvest-records"]
+furtherDerivations: 1
 ---
 
 ## What is Crop-Hail Insurance?

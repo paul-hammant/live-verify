@@ -5,6 +5,7 @@ type: "use-case"
 slug: "events-permits"
 beneficiary: "Organizers/Public"
 tags: ["events", "permits", "festivals", "concerts", "parades", "street-closure", "fireworks", "noise", "temporary"]
+furtherDerivations: 1
 ---
 
 ## What are Events Permits?

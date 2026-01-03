@@ -5,6 +5,7 @@ volume: "Very Large"
 retention: "3-7 years (regulatory compliance / dispute resolution)"
 slug: "number-portability-authorizations"
 tags: ["telecom", "number-porting", "loa", "sim-swap-fraud", "identity-verification", "porting-authority", "consumer-protection"]
+furtherDerivations: 1
 ---
 
 ## What is a Porting Authorization?

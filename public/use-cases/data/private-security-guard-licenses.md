@@ -5,6 +5,7 @@ volume: "Small"
 retention: "2-5 years (license term)"
 slug: "private-security-guard-licenses"
 tags: ["private", "security", "guard", "licenses", "professional", "occupational", "guard-card", "armed-guard", "law-enforcement"]
+furtherDerivations: 1
 ---
 
 ## What is a Private Security License?

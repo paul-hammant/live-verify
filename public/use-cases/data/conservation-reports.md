@@ -5,6 +5,7 @@ volume: "Very Small"
 retention: "Permanent (artwork care)"
 slug: "conservation-reports"
 tags: ["art-conservation", "restoration", "condition-report", "provenance", "museum-standards", "art-history"]
+furtherDerivations: 1
 ---
 
 ## What is an Art Conservation Report?

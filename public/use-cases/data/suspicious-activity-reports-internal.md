@@ -5,6 +5,7 @@ volume: "Very Small"
 retention: "5-7 years (BSA/AML regulatory requirement)"
 slug: "suspicious-activity-reports-internal"
 tags: ["aml", "kyc", "sar", "bsa-compliance", "financial-crime", "internal-audit", "regulatory-exam", "anti-money-laundering"]
+furtherDerivations: 1
 ---
 
 ## What are Internal SAR Records?

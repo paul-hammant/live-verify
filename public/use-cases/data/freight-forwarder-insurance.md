@@ -5,6 +5,7 @@ volume: "Medium"
 retention: "Shipment + 7-10 years"
 slug: "freight-forwarder-insurance"
 tags: ["logistics", "freight-forwarding", "cargo-liability", "errors-and-omissions", "marine-insurance", "tt-club", "risk-management"]
+furtherDerivations: 1
 ---
 
 ## What is Forwarder Insurance?

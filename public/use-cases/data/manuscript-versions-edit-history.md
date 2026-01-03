@@ -5,6 +5,7 @@ volume: "Very Small"
 retention: "5-10 years (publication records)"
 slug: "manuscript-versions-edit-history"
 tags: ["manuscript", "version-control", "publishing-integrity", "author-attestation", "literary-fraud", "copyright-protection", "editorial-workflow"]
+furtherDerivations: 1
 ---
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #ccc; background: #fffdf8; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); position: relative;">

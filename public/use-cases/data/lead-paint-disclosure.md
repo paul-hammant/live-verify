@@ -5,6 +5,7 @@ volume: "Very Large"
 retention: "3-7 years (EPA requirement)"
 slug: "lead-paint-disclosure"
 tags: ["lead-paint", "epa-disclosure", "real-estate-closing", "tenant-rights", "environmental-compliance", "public-health", "property-management"]
+furtherDerivations: 1
 ---
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">

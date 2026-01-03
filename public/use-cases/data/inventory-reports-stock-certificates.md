@@ -5,6 +5,7 @@ volume: "Medium"
 retention: "Reporting period + 7 years"
 slug: "inventory-reports-stock-certificates"
 tags: ["warehousing", "inventory-audit", "warehouse-receipt", "collateral-verification", "supply-chain-finance", "stock-certificate", "logistics"]
+furtherDerivations: 1
 ---
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 1px solid #000; background: #fff; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">

@@ -5,6 +5,7 @@ volume: "Medium"
 retention: "Duration of employment + 7 years"
 slug: "fit-and-proper-attestations"
 tags: ["fit-proper", "smcr", "certification", "conduct", "regulatory", "hr", "compliance"]
+furtherDerivations: 0
 ---
 
 ## What is a Fit and Proper Attestation?

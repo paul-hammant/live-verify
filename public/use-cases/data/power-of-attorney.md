@@ -5,6 +5,7 @@ volume: "Small"
 retention: "Permanent (life of principal)"
 slug: "power-of-attorney"
 tags: ["poa", "power-of-attorney", "notary", "estate-planning", "legal-authority", "medical-directive"]
+furtherDerivations: 1
 ---
 
 ## What is a Power of Attorney?

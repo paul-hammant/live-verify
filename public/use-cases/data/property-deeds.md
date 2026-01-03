@@ -5,6 +5,7 @@ volume: "Medium"
 retention: "Permanent (public record)"
 slug: "property-deeds"
 tags: ["deeds", "real-estate", "title", "ownership", "property", "recording"]
+furtherDerivations: 1
 ---
 
 ## What is a Property Deed?

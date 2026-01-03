@@ -4,6 +4,7 @@ category: "Charitable & Non-Profit"
 type: "summary"
 slug: "membership-cards-external-benefits"
 tags: ["membership", "club", "association", "benefits", "discounts", "reciprocal", "aaa", "professional-society", "union", "alumni"]
+furtherDerivations: 0
 ---
 
 # Membership Cards with External Benefits

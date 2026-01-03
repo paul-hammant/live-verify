@@ -5,6 +5,7 @@ volume: "Medium"
 retention: "Visit + 3-7 years (care records)"
 slug: "healthcare-home-visit-verification"
 tags: ["home-health-care", "nurse-verification", "elder-care-safety", "personal-safety", "background-check", "caregiver-vetting", "home-security"]
+furtherDerivations: 1
 ---
 
 ## What is a Visiting Nurse Badge?

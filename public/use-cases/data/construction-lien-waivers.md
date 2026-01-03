@@ -5,6 +5,7 @@ volume: "Very Large"
 retention: "Statute of Repose (10+ years)"
 slug: "construction-lien-waivers"
 tags: ["construction", "lien-waiver", "payment-draw", "title-clearance", "contractor-payment", "real-estate-closing"]
+furtherDerivations: 1
 ---
 
 ## What is a Lien Waiver?

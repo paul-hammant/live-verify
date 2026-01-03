@@ -5,6 +5,7 @@ volume: "Small (per certificate, but billions exist globally)"
 retention: "Permanent (vital records)"
 slug: "birth-death-certificates"
 tags: ["birth-certificate", "death-certificate", "vital-records", "identity", "probate", "ancestry"]
+furtherDerivations: 1
 ---
 
 ## What is a Vital Record?

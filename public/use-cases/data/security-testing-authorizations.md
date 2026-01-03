@@ -5,6 +5,7 @@ volume: "Medium"
 retention: "Duration of engagement + 6 years"
 slug: "security-testing-authorizations"
 tags: ["pentest", "penetration-testing", "bug-bounty", "red-team", "security-research", "authorization"]
+furtherDerivations: 0
 ---
 
 ## What is a Security Testing Authorization?

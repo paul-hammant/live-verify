@@ -5,6 +5,7 @@ volume: "Very Large"
 retention: "Encounter + 1-3 years (accountability)"
 slug: "police-officer-verification"
 tags: ["police", "officer", "verification", "personal", "safety", "service", "public-safety", "accountability"]
+furtherDerivations: 2
 ---
 
 ## What is Police Officer Verification?

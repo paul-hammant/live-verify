@@ -5,6 +5,7 @@ volume: "Medium"
 retention: "Statutory period (varies by filing type)"
 slug: "regulatory-filing-authority"
 tags: ["regulatory-filings", "companies-house", "tax-authority", "compliance", "statutory", "delegation"]
+furtherDerivations: 0
 ---
 
 ## What is Regulatory Filing Authority?

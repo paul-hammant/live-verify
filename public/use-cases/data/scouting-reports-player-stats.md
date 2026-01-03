@@ -5,6 +5,7 @@ volume: "Very Small"
 retention: "5-15 years (recruitment / career lifecycle)"
 slug: "scouting-reports-player-stats"
 tags: ["sports", "scouting", "player-stats", "athletic-recruitment", "college-sports", "pro-league", "integrity-in-sports", "scouting-combine"]
+furtherDerivations: 1
 ---
 
 ## What is a Scouting Report?

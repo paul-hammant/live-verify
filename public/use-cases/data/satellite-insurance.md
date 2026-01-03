@@ -5,6 +5,7 @@ volume: "Tiny"
 retention: "Satellite lifetime (15-20 years / orbital lifecycle)"
 slug: "satellite-insurance"
 tags: ["specialty-insurance", "space-insurance", "satellite-launch", "orbital-liability", "space-risk", "aerospace-finance", "debris-liability", "payload-insurance"]
+furtherDerivations: 1
 ---
 
 ## What is Satellite Insurance?

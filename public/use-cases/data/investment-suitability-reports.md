@@ -5,6 +5,7 @@ volume: "Large"
 retention: "7-10 years (regulatory, litigation)"
 slug: "investment-suitability-reports"
 tags: ["suitability", "investment-advice", "mifid", "reg-bi", "financial-advice", "know-your-client"]
+furtherDerivations: 0
 ---
 
 ## What is a Suitability Report?

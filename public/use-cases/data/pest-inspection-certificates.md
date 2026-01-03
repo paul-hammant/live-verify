@@ -5,6 +5,7 @@ volume: "Large"
 retention: "3-7 years (statute of limitations / warranty period)"
 slug: "pest-inspection-certificates"
 tags: ["real-estate", "pest-inspection", "wdi-report", "termite-certificate", "closing-documents", "mortgage-fraud", "property-disclosure", "structural-integrity"]
+furtherDerivations: 1
 ---
 
 ## What is a Pest Inspection Certificate?

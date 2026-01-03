@@ -5,6 +5,7 @@ volume: "Small"
 retention: "5-10 years (nutrient management / carbon credits)"
 slug: "soil-test-results"
 tags: ["agriculture", "soil-science", "agronomy", "nutrient-management", "carbon-sequestration", "land-valuation", "farming-audit"]
+furtherDerivations: 1
 ---
 
 ## What is a Soil Analysis Report?

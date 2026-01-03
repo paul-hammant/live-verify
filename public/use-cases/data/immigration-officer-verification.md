@@ -5,6 +5,7 @@ volume: "Medium"
 retention: "Encounter + 1-3 years"
 slug: "immigration-officer-verification"
 tags: ["immigration-enforcement", "ice-officer", "cbp-officer", "officer-badge", "public-safety", "enforcement-integrity", "home-security"]
+furtherDerivations: 1
 ---
 
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #002d62; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">

@@ -5,6 +5,7 @@ volume: "Medium"
 retention: "Appointment + 5 years"
 slug: "biometric-appointment-confirmations"
 tags: ["immigration", "visa", "uscis", "biometrics", "appointment", "asc"]
+furtherDerivations: 1
 ---
 
 ## What is a Biometric Notice?

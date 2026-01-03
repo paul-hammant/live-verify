@@ -5,6 +5,7 @@ volume: "Very Small"
 retention: "Permanent (clear title)"
 slug: "mortgage-satisfaction-lien-release"
 tags: ["mortgage-satisfaction", "lien-release", "clear-title", "reconveyance", "real-estate-closing", "deed-of-trust", "county-recorder"]
+furtherDerivations: 1
 ---
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #000; background: #fff; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); position: relative;">

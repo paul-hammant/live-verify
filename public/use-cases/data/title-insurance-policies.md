@@ -5,6 +5,7 @@ volume: "Very Small"
 retention: "Permanent (chain of title)"
 slug: "title-insurance-policies"
 tags: ["title", "insurance", "policies", "real", "estate", "property", "title-clearance", "closing-docs"]
+furtherDerivations: 1
 ---
 
 ## What is a Title Insurance Policy?

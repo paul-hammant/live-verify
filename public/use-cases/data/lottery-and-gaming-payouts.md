@@ -5,6 +5,7 @@ volume: "Very Large"
 retention: "Draw Date + 1-2 years"
 slug: "lottery-and-gaming-payouts"
 tags: ["lottery", "gaming", "gambling", "jackpot", "payout-fraud", "mega-millions", "powerball", "independent-witness", "conflict-of-interest"]
+furtherDerivations: 1
 ---
 
 ## What is a Lottery Win Receipt?

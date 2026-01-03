@@ -5,6 +5,7 @@ volume: "Very Small"
 retention: "7-20 years (IP/legal)"
 slug: "data-sharing-agreements"
 tags: ["data-governance", "dsa", "research-agreement", "gdpr-compliance", "privacy-policy", "academic-collaboration", "legal-contract"]
+furtherDerivations: 1
 ---
 
 ## What is a Data Sharing Agreement?

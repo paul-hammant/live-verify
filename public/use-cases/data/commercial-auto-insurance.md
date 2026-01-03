@@ -5,6 +5,7 @@ volume: "Medium"
 retention: "Policy term + 7 years"
 slug: "commercial-auto-insurance"
 tags: ["commercial-auto", "fleet-insurance", "logistics", "dot-compliance", "trucking", "hired-non-owned"]
+furtherDerivations: 1
 ---
 
 ## What is Fleet Insurance?

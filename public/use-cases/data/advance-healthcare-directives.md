@@ -5,6 +5,7 @@ volume: "Small"
 retention: "Permanent (end-of-life care)"
 slug: "advance-healthcare-directives"
 tags: ["advance", "healthcare", "directives", "living", "will", "medical", "power", "attorney"]
+furtherDerivations: 1
 ---
 
 ## What is an Advance Directive?

@@ -5,6 +5,7 @@ volume: "Very Large"
 retention: "Point-in-time (re-verify periodically)"
 slug: "driving-records"
 tags: ["driving", "licence", "dvla", "dmv", "points", "endorsements", "fleet", "employment"]
+furtherDerivations: 0
 ---
 
 ## What is an Authority-Issued Driving Record?

@@ -5,6 +5,7 @@ volume: "Large"
 retention: "Duration of employment + 6 years"
 slug: "employment-authority-confirmations"
 tags: ["hiring-authority", "job-offers", "employment", "hr", "recruitment", "delegation"]
+furtherDerivations: 0
 ---
 
 ## What is Employment Authority?

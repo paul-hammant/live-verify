@@ -5,6 +5,7 @@ volume: "Small"
 retention: "3-7 years (dispute resolution)"
 slug: "chargeback-documentation"
 tags: ["chargeback", "payment-dispute", "visa", "mastercard", "ecommerce-fraud", "merchant-protection"]
+furtherDerivations: 1
 ---
 
 ## What is a Chargeback Adjudication?

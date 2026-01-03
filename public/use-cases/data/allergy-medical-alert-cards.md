@@ -5,6 +5,7 @@ volume: "Small"
 retention: "Lifetime (emergency care)"
 slug: "allergy-medical-alert-cards"
 tags: ["allergy", "medical", "alert", "card", "emergency", "anaphylaxis", "diabetes"]
+furtherDerivations: 1
 ---
 
 ## What is a Medical Alert Card?

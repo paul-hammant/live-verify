@@ -5,6 +5,7 @@ volume: "Small"
 retention: "Policy term + 10 years"
 slug: "jewelers-block-insurance"
 tags: ["jewelers-block", "diamond-trade", "luxury-goods-insurance", "vault-security", "stock-insurance", "transit-coverage", "lloyds"]
+furtherDerivations: 1
 ---
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 2px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">

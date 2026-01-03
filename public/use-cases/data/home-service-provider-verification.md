@@ -5,6 +5,7 @@ volume: "Large"
 retention: "Service + 3-7 years (liability/tax)"
 slug: "home-service-provider-verification"
 tags: ["plumber-verification", "electrician-license", "home-service-safety", "personal-safety", "background-check", "tradesperson-vetting", "home-security"]
+furtherDerivations: 1
 ---
 
 ## What is a Tradesperson Badge?

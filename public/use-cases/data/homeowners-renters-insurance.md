@@ -5,6 +5,7 @@ volume: "Large"
 retention: "Policy term + 7 years (claims, mortgage audits)"
 slug: "homeowners-renters-insurance"
 tags: ["adjuster-report", "condo-insurance", "damage-estimate", "dec-page", "dwelling-coverage", "escrow-audit", "fraud-prevention", "hazard-insurance", "homeowners-insurance", "mortgage-compliance", "property-casualty", "property-claim", "real-estate-closing", "renters-insurance", "restoration-audit", "risk-management"]
+furtherDerivations: 3
 ---
 
 ## What is a Dec Page?

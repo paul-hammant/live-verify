@@ -5,6 +5,7 @@ volume: "Small"
 retention: "Case + 5-10 years"
 slug: "consular-letters-attestations"
 tags: ["embassy", "consulate", "consular-letter", "attestation", "diplomatic-mission", "visa-support", "legalization"]
+furtherDerivations: 1
 ---
 
 ## What is a Consular Attestation?

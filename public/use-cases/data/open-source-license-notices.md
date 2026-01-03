@@ -5,6 +5,7 @@ volume: "Huge"
 retention: "Lifetime of product"
 slug: "open-source-license-notices"
 tags: ["open-source", "license", "gpl", "mit", "compliance", "supply-chain", "sbom"]
+furtherDerivations: 1
 ---
 
 ## What is a Compliance Notice?

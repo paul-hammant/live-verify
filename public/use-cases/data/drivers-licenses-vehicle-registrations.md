@@ -5,6 +5,7 @@ volume: "Medium-Large"
 retention: "5-10 years (renewal cycles)"
 slug: "drivers-licenses-vehicle-registrations"
 tags: ["dmv", "drivers-license", "vehicle-registration", "real-id", "identity-verification", "public-safety", "law-enforcement"]
+furtherDerivations: 1
 ---
 
 ## What is a Driver License?

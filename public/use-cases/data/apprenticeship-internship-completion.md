@@ -5,6 +5,7 @@ volume: "Very Small"
 retention: "7-10 years (employment verification)"
 slug: "apprenticeship-internship-completion"
 tags: ["apprenticeship", "internship", "completion", "trade", "skill", "certificate"]
+furtherDerivations: 1
 ---
 
 ## What is an Apprenticeship Certificate?

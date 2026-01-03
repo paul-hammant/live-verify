@@ -5,6 +5,7 @@ volume: "Medium"
 retention: "7-20 years (CERCLA liability protection)"
 slug: "environmental-site-assessments"
 tags: ["environmental", "site-assessment", "esa", "real-estate", "phase-i-esa", "phase-ii-esa", "contamination", "due-diligence"]
+furtherDerivations: 1
 ---
 
 ## What is a Phase I ESA?

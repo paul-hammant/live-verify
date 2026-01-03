@@ -5,6 +5,7 @@ volume: "Very Small"
 retention: "Permanent (flood insurance)"
 slug: "flood-elevation-certificates"
 tags: ["real-estate", "flood-insurance", "nfip", "fema-elevation-certificate", "surveyor", "flood-zone", "coastal-resiliency"]
+furtherDerivations: 1
 ---
 
 ## What is an Elevation Certificate?

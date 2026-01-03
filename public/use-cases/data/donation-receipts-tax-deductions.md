@@ -5,6 +5,7 @@ volume: "Medium"
 retention: "7-10 years (tax audit)"
 slug: "donation-receipts-tax-deductions"
 tags: ["non-profit", "donation-receipt", "irs-compliance", "tax-deduction", "charity-fraud", "philanthropy"]
+furtherDerivations: 1
 ---
 
 ## What is a Donation Receipt?

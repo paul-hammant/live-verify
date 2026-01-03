@@ -5,6 +5,7 @@ volume: "Very Small"
 retention: "5-10 years (certification validity)"
 slug: "coaching-certifications"
 tags: ["sports-coaching", "certification", "youth-safety", "us-soccer", "safesport", "professional-qualification"]
+furtherDerivations: 1
 ---
 
 ## What is a Coaching License?
