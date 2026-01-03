@@ -1,7 +1,7 @@
 {
-  "generated": "2026-01-03T11:56:32.996Z",
-  "totalUseCases": 371,
-  "totalFurtherDerivations": 394,
+  "generated": "2026-01-03T12:48:06.207Z",
+  "totalUseCases": 374,
+  "totalFurtherDerivations": 396,
   "categories": {
     "Real Estate & Property": 30,
     "Charitable & Non-Profit": 6,
@@ -21,7 +21,7 @@
     "Art, Media & Publishing": 7,
     "Customs & Trade Compliance": 6,
     "Sports & Athletics": 6,
-    "Identity & Authority Verification": 17,
+    "Identity & Authority Verification": 20,
     "Investment & Fintech": 12,
     "Specialty Insurance": 22,
     "Business & Commerce": 10,
@@ -2476,6 +2476,23 @@
       ]
     },
     {
+      "slug": "event-venue-staff",
+      "title": "Event Venue and Contractor Staff Verification",
+      "category": "Identity & Authority Verification",
+      "volume": "Medium",
+      "retention": "1-3 years (security & liability logs)",
+      "furtherDerivations": 0,
+      "snippet": "Staff or contractor name, photo (hash), company affiliation, role/position (Setup Crew, Security, AV Tech, Vendor, Catering, Talent Handler, etc.), assigned area/zone access (Backstage, VIP, Equipment",
+      "tags": [
+        "event-security",
+        "contractor-verification",
+        "venue-security",
+        "temporary-staff-verification",
+        "equipment-protection",
+        "backstage-access"
+      ]
+    },
+    {
       "slug": "events-permits",
       "title": "Events Permits",
       "category": "Permits & Approvals",
@@ -3028,6 +3045,23 @@
       ]
     },
     {
+      "slug": "healthcare-facility-staff",
+      "title": "Healthcare Facility Staff Verification",
+      "category": "Identity & Authority Verification",
+      "volume": "Large",
+      "retention": "2-7 years (security & incident records)",
+      "furtherDerivations": 0,
+      "snippet": "Staff name, photo (hash), employee ID, job role (e.g., RN, LPN, Nurse Aide, Dietary Technician, Housekeeping), department/unit affiliation, shift status (On-Duty/Off-Duty), credentials clearance (back",
+      "tags": [
+        "hospital-safety",
+        "patient-safety",
+        "healthcare-security",
+        "staff-verification",
+        "nurse-aide-verification",
+        "medical-facility-security"
+      ]
+    },
+    {
       "slug": "healthcare-home-visit-verification",
       "title": "Healthcare Home Visit Worker Verification",
       "category": "Identity & Authority Verification",
@@ -3162,11 +3196,11 @@
     },
     {
       "slug": "hotel-staff-verification",
-      "title": "Hotel and Vacation Rental Staff Verification",
+      "title": "Mobile Service Staff Verification in High-Turnover Facilities",
       "category": "Identity & Authority Verification",
       "volume": "Large",
       "retention": "Stay + 1-3 years (incident records)",
-      "furtherDerivations": 1,
+      "furtherDerivations": 3,
       "snippet": "Staff name, photo (hash), employee ID, job role (e.g., Housekeeping, Maintenance, Room Service), property affiliation, current duty status (Active/Off-Duty), background check clearance date (hash).",
       "tags": [
         "hotel-safety",
@@ -3175,7 +3209,9 @@
         "airbnb-host-verification",
         "room-service-security",
         "hospitality-security",
-        "home-security"
+        "home-security",
+        "ungated-facilities",
+        "mobile-staff"
       ]
     },
     {
@@ -5537,6 +5573,23 @@
       ]
     },
     {
+      "slug": "residential-building-staff",
+      "title": "Residential Building Service Staff Verification",
+      "category": "Identity & Authority Verification",
+      "volume": "Medium",
+      "retention": "2-5 years (building security logs)",
+      "furtherDerivations": 0,
+      "snippet": "Staff or contractor name, photo (hash), license/credential number (for licensed trades), company affiliation, license status (Active/Expired/Suspended), assigned property and unit(s), work order numbe",
+      "tags": [
+        "apartment-safety",
+        "home-security",
+        "maintenance-verification",
+        "contractor-verification",
+        "residential-security",
+        "building-staff-verification"
+      ]
+    },
+    {
       "slug": "resort-fees-mandatory-charges",
       "title": "Resort Fees and Mandatory Hotel Disclosures",
       "category": "Travel & Hospitality",
@@ -7058,11 +7111,11 @@
       "count": 21
     },
     {
-      "name": "Immigration & Visa Documents",
-      "count": 17
+      "name": "Identity & Authority Verification",
+      "count": 20
     },
     {
-      "name": "Identity & Authority Verification",
+      "name": "Immigration & Visa Documents",
       "count": 17
     },
     {
