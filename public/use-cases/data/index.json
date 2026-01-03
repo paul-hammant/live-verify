@@ -1,6 +1,6 @@
 {
-  "generated": "2026-01-02T20:20:43.702Z",
-  "totalUseCases": 366,
+  "generated": "2026-01-03T07:40:50.961Z",
+  "totalUseCases": 367,
   "categories": {
     "Real Estate & Property": 30,
     "Charitable & Non-Profit": 5,
@@ -52,6 +52,7 @@
     "Bonds & Sureties": 3,
     "Food hygiene": 1,
     "Licensed premises": 1,
+    "Gaming & Gambling": 1,
     "Membership Rollups": 1,
     "Legal & Contracts": 1,
     "Technology & Software": 1,
@@ -3651,6 +3652,25 @@
       ]
     },
     {
+      "slug": "lottery-and-gaming-payouts",
+      "title": "Lottery and Gaming Payouts",
+      "category": "Gaming & Gambling",
+      "volume": "Very Large",
+      "retention": "Draw Date + 1-2 years",
+      "snippet": "Win amount, draw name, draw date, ticket serial number, terminal ID, timestamp of verification, player ID (if registered).",
+      "tags": [
+        "lottery",
+        "gaming",
+        "gambling",
+        "jackpot",
+        "payout-fraud",
+        "mega-millions",
+        "powerball",
+        "independent-witness",
+        "conflict-of-interest"
+      ]
+    },
+    {
       "slug": "manufacturer-declarations-of-conformity",
       "title": "Manufacturer Declarations of Conformity (DoC)",
       "category": "Product Certifications & Compliance",
@@ -6807,6 +6827,10 @@
       "count": 1
     },
     {
+      "name": "Gaming & Gambling",
+      "count": 1
+    },
+    {
       "name": "Membership Rollups",
       "count": 1
     },
@@ -6835,5 +6859,5 @@
       "count": 1
     }
   ],
-  "totalCategories": 57
+  "totalCategories": 58
 }

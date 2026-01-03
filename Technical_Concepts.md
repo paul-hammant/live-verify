@@ -746,6 +746,7 @@ There are two primary methods for identifying the witness service:
 -   **Immutable Timestamps (Neutral Ground):** Proves a receipt or certificate wasn't backdated by the issuer or holder. The Witness provides a non-repudiable "Proof of Existence" at a specific point in time.
 -   **Anti-Deletion / Issuer Longevity:** If an issuer goes out of business, deletes their records, or is compromised, the Witness service remains as a neutral proof that the document was once authoritative.
 -   **Collusion Resistance:** Prevents an issuer and holder from colluding to create a "fake historical" record. If it wasn't witnessed on day zero, it can't be claimed as valid on day 100.
+-   **Anti-Dishonesty (Conflict of Interest):** Prevents an issuer who is also the "Payor" from later denying a valid claim for financial gain. For example, if a Lottery Commission informs a user they won a jackpot via a digital or printed receipt, an independent witness prevents the Commission from later deleting the record or claiming "no one won" to keep the prize money.
 -   **Audit Integrity:** Provides a neutral "third party" for resolving disputes between two parties (e.g., Guest vs. Hotel) without requiring one to trust the other's internal database.
 -   **Public Transparency (Optional):** For government or high-stakes certifications, a Witness can publish hashes to a public ledger, allowing anyone to verify the volume and issuance rate of credentials without seeing PII.
 
