@@ -1,42 +1,41 @@
 {
-  "generated": "2026-01-02T12:42:32.311Z",
-  "totalUseCases": 412,
+  "generated": "2026-01-02T20:20:43.702Z",
+  "totalUseCases": 366,
   "categories": {
-    "Real Estate & Property": 34,
+    "Real Estate & Property": 30,
     "Charitable & Non-Profit": 5,
     "Banking & Payments": 12,
-    "Actuarial & Insurance Mathematics": 12,
-    "Personal Lines Insurance": 15,
-    "Government & Civic Documents": 13,
-    "Notary Services": 10,
+    "Actuarial & Insurance Mathematics": 9,
+    "Personal Lines Insurance": 11,
+    "Government & Civic Documents": 12,
+    "Notary Services": 7,
     "Immigration & Visa Documents": 17,
-    "Financial & Legal Documents": 8,
-    "Insurance Claims & Operations": 14,
-    "Shipping & Freight": 17,
-    "Travel & Hospitality": 27,
+    "Financial & Legal Documents": 7,
+    "Insurance Claims & Operations": 12,
+    "Shipping & Freight": 14,
+    "Travel & Hospitality": 21,
     "Professional & Occupational Licenses": 10,
     "Healthcare & Medical Records": 9,
     "Professional & Educational Qualifications": 14,
-    "Art & Collectibles": 7,
-    "Customs & Trade Compliance": 9,
+    "Art & Collectibles": 3,
+    "Customs & Trade Compliance": 6,
     "Sports & Athletics": 6,
     "Authorized Agent Confirmations": 2,
-    "Vehicle & Fleet": 2,
     "Investment & Fintech": 12,
-    "Specialty Insurance": 24,
+    "Specialty Insurance": 22,
     "Business Operations": 1,
-    "Financial Compliance": 7,
-    "Business & Commerce": 9,
-    "Personal Safety & Service Verification": 16,
+    "Financial Compliance": 6,
+    "Business & Commerce": 8,
+    "Personal Safety & Service Verification": 14,
     "Building safety": 1,
     "Commercial Lines Insurance": 11,
-    "Product Certifications & Compliance": 12,
+    "Product Certifications & Compliance": 11,
     "Financial Services Compliance": 8,
     "Energy & Utilities": 3,
     "Legal, Forensic & High-Value Logistics": 1,
     "Scientific & Research": 7,
     "Public Safety & Consumer Protection": 1,
-    "Warehousing & Inventory": 5,
+    "Warehousing & Inventory": 4,
     "Professional & Fiduciary Accountability": 1,
     "Construction Permits": 2,
     "Delegated Authority": 5,
@@ -44,7 +43,7 @@
     "Safety Inspection Certificates": 3,
     "Financial Rollups": 1,
     "Government & Identity": 1,
-    "Trade Finance": 7,
+    "Trade Finance": 5,
     "Environmental & Natural Resource Permits": 3,
     "Environmental & Vicinity": 1,
     "Event & Temporary Use Permits": 2,
@@ -58,6 +57,7 @@
     "Technology & Software": 1,
     "Banking & Legal Records": 1,
     "Vehicle displays": 1,
+    "Vehicle & Fleet": 1,
     "Workplace Postings": 1
   },
   "useCases": [
@@ -131,15 +131,18 @@
       "title": "Additional Driver Endorsements",
       "category": "Personal Lines Insurance",
       "volume": "Medium",
-      "retention": "Endorsement validity period",
-      "snippet": "Policyholder name, additional driver name, driver's license number (partial/redacted), vehicle VIN, effective start/end timestamp, endorsement type.",
+      "retention": "Endorsement validity period + 7 years (claims lifecycle)",
+      "snippet": "Policy number, policyholder name, additional driver full name, driver's license number (masked), vehicle VIN, vehicle license plate, effective start date/time, expiration date/time, liability limits (",
       "tags": [
         "insurance",
         "driver",
         "endorsement",
         "auto",
         "policy",
-        "coverage"
+        "coverage",
+        "roadside-verification",
+        "borrowed-vehicle",
+        "travel-fraud"
       ]
     },
     {
@@ -228,24 +231,30 @@
       ]
     },
     {
-      "slug": "air-waybills-awb",
-      "title": "Air Waybills (AWB)",
+      "slug": "air-waybills",
+      "title": "Air Waybills",
       "category": "Shipping & Freight",
       "volume": "Large",
       "retention": "7-10 years (proof of shipment)",
       "snippet": "AWB Number (Master or House), shipper, consignee, pieces, weight, nature of goods, flight details, execution date, carrier signature.",
       "tags": [
         "air",
-        "waybill",
+        "air-freight",
         "awb",
-        "logistics",
+        "cargo",
+        "cargo-security",
         "freight",
+        "freight-forwarding",
+        "hawb",
         "iata",
-        "cargo"
+        "logistics",
+        "supply-chain",
+        "trade-finance",
+        "waybill"
       ]
     },
     {
-      "slug": "airline-ancillary-fee-receipts",
+      "slug": "airline-passenger-documents",
       "title": "Airline Ancillary Fee Receipts",
       "category": "Travel & Hospitality",
       "volume": "Very Large",
@@ -253,78 +262,29 @@
       "snippet": "Passenger name, ticket number, flight details, specific service types (baggage, seat, wifi, meal), fee amounts, total paid, payment method (last 4 digits).",
       "tags": [
         "airline",
-        "receipt",
-        "baggage",
-        "wifi",
-        "seat",
-        "expense",
-        "ancillary"
-      ]
-    },
-    {
-      "slug": "airline-compensation-letters",
-      "title": "Airline Compensation Letters (EU261)",
-      "category": "Travel & Hospitality",
-      "volume": "Medium",
-      "retention": "Compensation + 3-7 years",
-      "snippet": "Passenger name, flight number, disruption date, claim reference number, decision (Approved/Denied), compensation amount, regulation cited (EU261, UK261, DOT), payment status.",
-      "tags": [
-        "airline",
-        "compensation",
-        "eu261",
-        "delay",
-        "cancellation",
-        "insurance"
-      ]
-    },
-    {
-      "slug": "airline-refund-confirmations",
-      "title": "Airline Refund Confirmations",
-      "category": "Travel & Hospitality",
-      "volume": "Large",
-      "retention": "Refund + 3-7 years (financial audit)",
-      "snippet": "Passenger name, original ticket number, refund document number (Credit Memo), refund amount, currency, penalty applied, original form of payment credited, date processed.",
-      "tags": [
-        "airline",
-        "refund",
-        "credit",
-        "memo",
-        "travel",
-        "finance",
-        "audit"
-      ]
-    },
-    {
-      "slug": "airline-upgrade-confirmations",
-      "title": "Airline Upgrade Confirmations",
-      "category": "Travel & Hospitality",
-      "volume": "Medium",
-      "retention": "Flight + 1-3 years",
-      "snippet": "Passenger name, original ticket number, confirmation code, flight details, from/to class of service, cash payment amount, miles redeemed, date of transaction.",
-      "tags": [
-        "airline",
-        "upgrade",
-        "receipt",
-        "business-class",
-        "expense",
-        "travel"
-      ]
-    },
-    {
-      "slug": "airport-lounge-access-confirmations",
-      "title": "Airport Lounge Access Confirmations",
-      "category": "Travel & Hospitality",
-      "volume": "Large",
-      "retention": "Visit + 1-3 years",
-      "snippet": "Member name, lounge name/location, date/time of entry, number of guests, total fee charged, visit reference ID.",
-      "tags": [
         "airport",
-        "lounge",
-        "priority-pass",
         "amex",
+        "ancillary",
+        "audit",
+        "baggage",
+        "business-class",
+        "cancellation",
+        "compensation",
+        "credit",
+        "delay",
+        "eu261",
+        "expense",
+        "finance",
+        "insurance",
+        "lounge",
+        "memo",
+        "priority-pass",
         "receipt",
+        "refund",
+        "seat",
         "travel",
-        "expense"
+        "upgrade",
+        "wifi"
       ]
     },
     {
@@ -409,83 +369,36 @@
       ]
     },
     {
-      "slug": "art-appraisals-valuations",
+      "slug": "art-authentication-documents",
       "title": "Art Appraisals and Valuations",
       "category": "Art & Collectibles",
       "volume": "Small",
       "retention": "5-10 years (insurance/tax)",
       "snippet": "Appraiser name/credentials (AAA/ISA), client name, artwork details (Artist, Title, Medium), effective date of valuation, Purpose (Insurance/Tax/Collateral), Fair Market Value (FMV) or Replacement Valu",
       "tags": [
-        "art",
         "appraisal",
-        "valuation",
-        "insurance",
-        "tax",
-        "uspap"
-      ]
-    },
-    {
-      "slug": "art-certificates-of-authenticity",
-      "title": "Certificates of Authenticity for Artwork",
-      "category": "Art & Collectibles",
-      "volume": "Small",
-      "retention": "Permanent (art market provenance)",
-      "snippet": "Artist name, artwork title, creation year, medium, dimensions, edition number (if applicable), unique certificate ID, archive/registration number, name of the authenticating authority.",
-      "tags": [
         "art",
-        "coa",
-        "authenticity",
-        "provenance",
-        "gallery",
-        "collectibles"
-      ]
-    },
-    {
-      "slug": "art-edition-numbers",
-      "title": "Edition Numbers for Prints and Sculptures",
-      "category": "Art & Collectibles",
-      "volume": "Very Small",
-      "retention": "Permanent (edition tracking)",
-      "snippet": "Artist name, title of work, year, medium, total edition size (e.g., 50), specific print number (e.g., 14), number of Artist Proofs (APs), publisher name, registry number.",
-      "tags": [
-        "art",
-        "edition",
-        "print",
-        "sculpture",
-        "authenticity",
-        "collectibles"
-      ]
-    },
-    {
-      "slug": "art-provenance-documentation",
-      "title": "Provenance Documentation and Ownership History",
-      "category": "Art & Collectibles",
-      "volume": "Very Small",
-      "retention": "Permanent (chain of title)",
-      "snippet": "Full ownership chain (dates and names), dealer/gallery references, exhibition history, publication references, restitution status (e.g., Nazi-era check), object reference ID, researcher name.",
-      "tags": [
-        "provenance",
         "art-market",
-        "history",
-        "auction",
-        "ownership",
-        "title"
-      ]
-    },
-    {
-      "slug": "artist-signatures-stamps",
-      "title": "Artist Signatures and Stamps",
-      "category": "Art & Collectibles",
-      "volume": "Very Small",
-      "retention": "Permanent (authenticity)",
-      "snippet": "Artist name, signature type (Wet Ink, Pencil, Crayon), location of signature (Front/Back), date of analysis, authentication firm/expert name, comparison exemplars used, result (Consistent/Inconsistent",
-      "tags": [
         "artist",
+        "auction",
+        "authenticity",
+        "coa",
+        "collectibles",
+        "connoisseurship",
+        "edition",
+        "gallery",
+        "history",
+        "insurance",
+        "ownership",
+        "print",
+        "provenance",
+        "sculpture",
         "signature",
         "stamp",
-        "authenticity",
-        "connoisseurship",
-        "collectibles"
+        "tax",
+        "title",
+        "uspap",
+        "valuation"
       ]
     },
     {
@@ -574,7 +487,7 @@
       ]
     },
     {
-      "slug": "auto-insurance-claims-repair",
+      "slug": "auto-insurance-documents",
       "title": "Auto Insurance Claims and Repair Estimates",
       "category": "Personal Lines Insurance",
       "volume": "Medium",
@@ -582,61 +495,26 @@
       "snippet": "Insured name, vehicle VIN, Claim ID, repair estimate total, parts/labor breakdown, body shop name, adjuster name, date of estimate.",
       "tags": [
         "auto",
-        "insurance",
-        "claim",
-        "repair",
-        "estimate",
+        "bill-of-lading",
         "body-shop",
-        "fraud"
-      ]
-    },
-    {
-      "slug": "auto-insurance-id-cards",
-      "title": "Auto Insurance ID Cards",
-      "category": "Personal Lines Insurance",
-      "volume": "Large",
-      "retention": "6-12 months (card validity)",
-      "snippet": "Insured name, policy number, NAIC code, VIN (Full), vehicle year/make/model, effective date, expiration date, issuing carrier.",
-      "tags": [
-        "auto",
-        "insurance",
+        "car-shipping",
         "card",
+        "claim",
+        "compliance",
+        "damage",
+        "dec-page",
+        "estimate",
+        "fraud",
+        "inspection",
+        "insurance",
+        "lines",
+        "logistics",
+        "personal",
+        "policies",
         "proof-of-insurance",
         "real-id",
-        "compliance"
-      ]
-    },
-    {
-      "slug": "auto-insurance-policies",
-      "title": "Auto Insurance Declarations Pages",
-      "category": "Personal Lines Insurance",
-      "volume": "Medium",
-      "retention": "Policy term + 7 years (claims)",
-      "snippet": "Named insured, policy limits, deductibles, VIN, effective dates, premium amount, lienholder name.",
-      "tags": [
-        "auto",
-        "insurance",
-        "policies",
-        "personal",
-        "lines",
-        "dec-page"
-      ]
-    },
-    {
-      "slug": "auto-transport-damage-reports",
-      "title": "Auto Transport Damage Inspection Reports",
-      "category": "Vehicle & Fleet",
-      "volume": "Medium",
-      "retention": "Transport + 7 years",
-      "snippet": "Carrier DOT/MC number, vehicle VIN, pickup/delivery locations, timestamps, detailed damage codes (scratches, dents, chips), driver name, customer signature.",
-      "tags": [
-        "auto",
-        "transport",
-        "logistics",
-        "damage",
-        "inspection",
-        "car-shipping",
-        "bill-of-lading"
+        "repair",
+        "transport"
       ]
     },
     {
@@ -767,23 +645,6 @@
         "ubo",
         "beneficial-ownership",
         "corporate-transparency"
-      ]
-    },
-    {
-      "slug": "bills-of-lading",
-      "title": "Bills of Lading (Ocean/Multimodal)",
-      "category": "Shipping & Freight",
-      "volume": "Large",
-      "retention": "Shipment completion plus 7-10 years (disputes, customs audits)",
-      "snippet": "B/L Number, shipper, consignee, vessel name, voyage number, port of loading/discharge, container numbers, seal numbers, cargo description, gross weight, date of loading (shipped on board).",
-      "tags": [
-        "shipping",
-        "logistics",
-        "maritime",
-        "trade-finance",
-        "bill-of-lading",
-        "bol",
-        "cargo"
       ]
     },
     {
@@ -1035,36 +896,22 @@
       ]
     },
     {
-      "slug": "calibration-certificates-instruments",
-      "title": "Calibration Certificates (Instruments)",
+      "slug": "calibration-certificates",
+      "title": "Calibration Certificates",
       "category": "Product Certifications & Compliance",
       "volume": "Medium",
-      "retention": "3-10 years (audit cycles)",
-      "snippet": "Instrument description, model number, serial number, calibration date, expiration (due) date, as-found/as-left status, accreditation status (ISO 17025), technician name, reference standard used (NIST ",
-      "tags": [
-        "calibration",
-        "metrology",
-        "quality-control",
-        "nist",
-        "iso-17025",
-        "testing-equipment"
-      ]
-    },
-    {
-      "slug": "calibration-certificates",
-      "title": "Calibration Certificates (Industrial & Lab)",
-      "category": "Product Certifications & Compliance",
-      "volume": "Small",
-      "retention": "5-10 years (regulatory requirements, re-calibration cycles)",
-      "snippet": "Instrument make/model/serial number, Lab accreditation ID, measurement data (as-found/as-left), calibration standards used, NIST/NPL traceability links, uncertainty budgets, technician credentials, ne",
+      "retention": "3-10 years (audit cycles, regulatory requirements, re-calibration cycles)",
+      "snippet": "Instrument description, make/model/serial number, calibration date, expiration (due) date, as-found/as-left status, measurement data (test points and uncertainty), accreditation status (ISO 17025), re",
       "tags": [
         "calibration",
         "metrology",
         "quality-assurance",
+        "quality-control",
         "iso-17025",
         "nist",
         "traceability",
-        "compliance"
+        "compliance",
+        "testing-equipment"
       ]
     },
     {
@@ -1072,17 +919,17 @@
       "title": "Capital Adequacy Attestations",
       "category": "Financial Services Compliance",
       "volume": "Small",
-      "retention": "7-10 years (regulatory audit)",
-      "snippet": "Firm name, regulatory ID (FRN/CRD/SEC number), attestation date, capital ratio confirmation (CET1, Tier 1, Total Capital), buffer compliance, signatory names, external auditor confirmation.",
+      "retention": "7-10 years (regulatory audit lifecycle)",
+      "snippet": "Firm name, regulatory ID (FRN/CRD), attestation date (quarterly), CET1 Ratio, Tier 1 Capital Ratio, Total Capital Ratio, LCR (Liquidity Coverage Ratio), buffer compliance status, CFO name/signature, e",
       "tags": [
-        "capital",
+        "capital-adequacy",
         "solvency",
-        "basel",
-        "crd",
-        "regulatory",
-        "banking",
-        "insurance",
-        "prudential"
+        "basel-iii",
+        "prudential-regulation",
+        "banking-compliance",
+        "cfo-attestation",
+        "financial-stability",
+        "counterparty-risk"
       ]
     },
     {
@@ -1188,28 +1035,12 @@
       ]
     },
     {
-      "slug": "certificates-of-origin-trade",
-      "title": "Certificates of Origin (International Trade)",
-      "category": "Customs & Trade Compliance",
-      "volume": "Medium",
-      "retention": "7-10 years (customs audit)",
-      "snippet": "Exporter name, Consignee name, specific Country of Origin, detailed description of goods, Harmonized System (HS) Codes, quantity/weight, Certificate ID number, certifying authority (Chamber), date of ",
-      "tags": [
-        "customs",
-        "international-trade",
-        "tariff",
-        "chamber-of-commerce",
-        "logistics",
-        "export-import"
-      ]
-    },
-    {
       "slug": "certificates-of-origin",
-      "title": "Certificates of Origin (General & Regional)",
+      "title": "Certificates of Origin",
       "category": "Customs & Trade Compliance",
       "volume": "Medium",
-      "retention": "Shipment + 7-10 years",
-      "snippet": "Exporter name, Consignee name, declared Country of Origin, HS Code (Harmonized System), product weight/quantity, Certificate ID number, issuing chamber/authority, date of certification.",
+      "retention": "7-10 years (customs audit, shipment records)",
+      "snippet": "Exporter name and location, Consignee name and location, specific Country of Origin, detailed description of goods, Harmonized System (HS) Codes, quantity/weight, Certificate ID number, certifying aut",
       "tags": [
         "trade-compliance",
         "customs",
@@ -1217,7 +1048,9 @@
         "import",
         "logistics",
         "tariff-benefits",
-        "origin-verification"
+        "origin-verification",
+        "chamber-of-commerce",
+        "international-trade"
       ]
     },
     {
@@ -1303,69 +1136,21 @@
       ]
     },
     {
-      "slug": "claims-correspondence-eobs",
-      "title": "Claims Correspondence and EOBs",
-      "category": "Insurance Claims & Operations",
-      "volume": "Large",
-      "retention": "Claim term + 7-10 years",
-      "snippet": "Patient name, member ID (partial), provider name, service date, claim number, billed amount, allowed amount, plan paid amount, patient responsibility (deductible/copay), adjustment reason codes.",
-      "tags": [
-        "insurance",
-        "claims",
-        "eob",
-        "healthcare-billing",
-        "provider-dispute",
-        "audit-trail",
-        "compliance"
-      ]
-    },
-    {
-      "slug": "claims-diary-reserve-changes",
-      "title": "Claims Diary and Reserve Change Documentation",
-      "category": "Insurance Claims & Operations",
-      "volume": "Medium",
-      "retention": "Claim lifetime + 7 years",
-      "snippet": "Claim ID, adjuster name/ID, reserve category (Indemnity/Medical/Expense), change amount, previous balance, new balance, timestamp (to the second), diary note text (digest), supervisor authorization st",
-      "tags": [
-        "insurance-claims",
-        "claims-diary",
-        "loss-reserves",
-        "adjuster-notes",
-        "audit-trail",
-        "reinsurance-audit"
-      ]
-    },
-    {
-      "slug": "claims-settlement-agreements",
-      "title": "Claims Settlement Agreements and Releases",
-      "category": "Insurance Claims & Operations",
-      "volume": "Small",
-      "retention": "Settlement + 10-20 years",
-      "snippet": "Releasor name, Releasee name, settlement amount (numerical and text), incident date, Claim ID, effective date of agreement, signature status of both parties.",
-      "tags": [
-        "settlement",
-        "release",
-        "insurance-claims",
-        "legal-contract",
-        "liability",
-        "full-and-final",
-        "bad-faith"
-      ]
-    },
-    {
       "slug": "client-money-segregation-confirmations",
       "title": "Client Money Segregation Confirmations",
       "category": "Financial Services Compliance",
       "volume": "Small",
-      "retention": "7-10 years (regulatory audit)",
-      "snippet": "Firm name, regulatory ID, confirmation date, segregation status, bank account confirmation, reconciliation status, shortfall disclosure, CASS officer name, auditor name.",
+      "retention": "7-10 years (CASS audit / legal statute)",
+      "snippet": "Firm name, regulatory ID (FRN), confirmation date, segregation status (Pass/Fail), account designation type, reconciliation frequency, shortfall amount (if any), CASS oversight officer name, external ",
       "tags": [
         "client-money",
         "segregation",
-        "cass",
-        "custody",
+        "cass-compliance",
+        "investor-protection",
         "ring-fencing",
-        "investor-protection"
+        "custody-audit",
+        "financial-solvency",
+        "brokerage-safety"
       ]
     },
     {
@@ -1987,54 +1772,31 @@
       ]
     },
     {
-      "slug": "dangerous-goods-declarations-air",
-      "title": "Dangerous Goods Declarations (Air Cargo)",
+      "slug": "dangerous-goods-declarations",
+      "title": "Dangerous Goods Declarations",
       "category": "Customs & Trade Compliance",
       "volume": "Small",
       "retention": "7-30 years (safety/liability)",
       "snippet": "Shipper name, Air Waybill (AWB) number, UN Number (e.g., UN3480), Proper Shipping Name, Hazard Class (1-9), Packing Group (I, II, III), Net Quantity per package, emergency contact number, signatory na",
       "tags": [
-        "dangerous-goods",
-        "air-cargo",
-        "iata-dgr",
-        "hazmat",
-        "aviation-safety",
-        "shipper-declaration",
-        "cargo-security"
-      ]
-    },
-    {
-      "slug": "dangerous-goods-declarations-imo-icao",
-      "title": "Dangerous Goods Declarations (IMO/ICAO)",
-      "category": "Customs & Trade Compliance",
-      "volume": "Medium",
-      "retention": "Shipment + 5-10 years",
-      "snippet": "Shipper name, Consignee name, UN Number, Class/Division, Packing Group, Proper Shipping Name, Flash point (for maritime), marine pollutant status, number/type of packages, container ID, signatory name",
-      "tags": [
-        "imo-dgd",
-        "imdg-code",
-        "dangerous-goods",
-        "maritime-safety",
-        "container-shipping",
-        "hazmat-declaration",
-        "logistics"
-      ]
-    },
-    {
-      "slug": "dangerous-goods-transport-road",
-      "title": "Dangerous Goods Transport (ADR/DOT)",
-      "category": "Customs & Trade Compliance",
-      "volume": "Medium",
-      "retention": "7-30 years (safety/liability)",
-      "snippet": "Consignor name, Carrier ID (DOT/MC #), UN Number (e.g., UN1203), Proper Shipping Name, Hazard Class (1-9), Packing Group (I, II, III), ADR Tunnel Code (e.g., D/E), total quantity, emergency contact in",
-      "tags": [
         "adr",
-        "dot-hazmat",
+        "air-cargo",
+        "aviation-safety",
+        "cargo-security",
+        "container-shipping",
         "dangerous-goods",
+        "dot-hazmat",
+        "hazmat",
+        "hazmat-declaration",
+        "highway-safety",
+        "iata-dgr",
+        "imdg-code",
+        "imo-dgd",
+        "logistics",
+        "maritime-safety",
         "road-transport",
         "safety-data-sheet",
-        "logistics",
-        "highway-safety"
+        "shipper-declaration"
       ]
     },
     {
@@ -2055,12 +1817,12 @@
       ]
     },
     {
-      "slug": "delivery-driver-verification",
-      "title": "Delivery Driver Verification",
+      "slug": "delivery-courier-verification",
+      "title": "Delivery & Courier Verification",
       "category": "Personal Safety & Service Verification",
       "volume": "Very Large",
-      "retention": "Delivery + 30 days (disputes)",
-      "snippet": "Driver name, photo (hash), route ID, vehicle type/plate (partial), employment status (Active/On-Duty), delivery company name, date of authorization.",
+      "retention": "Delivery + 30 days",
+      "snippet": "Courier name, employee ID, company division (Express/Ground/Freight), hub location, photograph (via hash), expiration date, background check status.",
       "tags": [
         "logistics",
         "courier",
@@ -2069,7 +1831,11 @@
         "ups",
         "fedex",
         "home-security",
-        "vulnerable-recipients"
+        "vulnerable-recipients",
+        "postal",
+        "verification",
+        "delivery-fraud",
+        "package-security"
       ]
     },
     {
@@ -2480,68 +2246,36 @@
       ]
     },
     {
-      "slug": "escrow-account-statements",
+      "slug": "escrow-documents",
       "title": "Escrow Account Statements",
       "category": "Real Estate & Property",
       "volume": "Large",
       "retention": "7 years (tax records), life of loan",
       "snippet": "Loan number, property address, homeowner name, total disbursements (Taxes/Insurance), beginning/ending balance, projected payment change, next year's cushion amount, date of analysis, servicer ID.",
       "tags": [
-        "escrow-analysis",
-        "mortgage-servicing",
-        "property-tax-payment",
-        "hazard-insurance",
-        "pmi",
-        "financial-transparency",
-        "respa-compliance"
-      ]
-    },
-    {
-      "slug": "escrow-closing-documents",
-      "title": "Escrow Instructions and Closing Documents",
-      "category": "Real Estate & Property",
-      "volume": "Very Small (per transaction, but high value)",
-      "retention": "7-10 years (transaction disputes, title claims)",
-      "snippet": "Escrow number, Property address, Buyer/Seller names, Beneficiary Bank name, Routing/Account numbers, exact wire amount authorized, Escrow Officer ID, date of issuance.",
-      "tags": [
-        "real-estate-closing",
-        "escrow-instructions",
-        "wire-fraud-prevention",
-        "trid-compliance",
         "closing-disclosure",
-        "settlement-statement"
-      ]
-    },
-    {
-      "slug": "escrow-closing-statements-ma",
-      "title": "M&A Settlement Statements",
-      "category": "Business & Commerce",
-      "volume": "Small",
-      "retention": "Permanent (transaction record)",
-      "snippet": "Deal Name, Buyer/Seller entities, Gross Purchase Price, Holdback/Indemnity amounts, Working Capital adjustments, Net Payouts, Closing Date, Escrow Agent ID.",
-      "tags": [
-        "mergers-and-acquisitions",
-        "escrow",
-        "settlement-statement",
+        "closing-integrity",
         "closing-packet",
         "corporate-finance",
-        "dispute-resolution"
-      ]
-    },
-    {
-      "slug": "escrow-instructions-closing",
-      "title": "Escrow Disbursement Instructions",
-      "category": "Real Estate & Property",
-      "volume": "Very Small",
-      "retention": "Permanent (transaction legal file)",
-      "snippet": "Escrow number, Property address, Seller/Recipient name, Beneficiary Bank, Routing/Account numbers, total payout amount, date of signing, Escrow Officer name.",
-      "tags": [
-        "escrow-instructions",
-        "wire-fraud",
         "disbursement-authorization",
+        "dispute-resolution",
+        "escrow",
+        "escrow-analysis",
+        "escrow-instructions",
+        "financial-crime",
+        "financial-transparency",
+        "hazard-insurance",
         "legal-authority",
-        "closing-integrity",
-        "financial-crime"
+        "mergers-and-acquisitions",
+        "mortgage-servicing",
+        "pmi",
+        "property-tax-payment",
+        "real-estate-closing",
+        "respa-compliance",
+        "settlement-statement",
+        "trid-compliance",
+        "wire-fraud",
+        "wire-fraud-prevention"
       ]
     },
     {
@@ -2616,7 +2350,7 @@
       "category": "Event & Temporary Use Permits",
       "volume": "Unknown",
       "retention": "Unknown",
-      "snippet": "",
+      "snippet": "Permit number, event name, organizer name, authorized dates/times, specific street boundaries, authorized activities (e.g., Amplified Sound, Alcohol), security requirements, max occupancy, city depart",
       "tags": [
         "events",
         "permits",
@@ -2732,18 +2466,20 @@
     },
     {
       "slug": "financial-promotions-sign-offs",
-      "title": "Financial Promotions Sign-Offs",
+      "title": "Financial Promotions Sign-Offs (s21)",
       "category": "Financial Services Compliance",
-      "volume": "Large",
-      "retention": "7 years (regulatory requirement)",
-      "snippet": "Promotion ID, campaign name, channels, approval date, approving officer (name and function), firm name, FRN, key compliance certifications, validity period.",
+      "volume": "Very Large",
+      "retention": "7 years (FCA/FINRA regulatory requirement)",
+      "snippet": "Promotion ID, campaign name, approved media channels, date of approval, expiration date of sign-off, name of authorized firm (and FRN), name/ID of the approving individual, specific risk-warning text ",
       "tags": [
         "financial-promotion",
-        "advertising",
-        "s21",
-        "fair-clear",
-        "marketing",
-        "compliance"
+        "marketing-compliance",
+        "s21-sign-off",
+        "fair-clear-misleading",
+        "ad-verification",
+        "investor-protection",
+        "advertising-standards",
+        "regulatory-vetting"
       ]
     },
     {
@@ -3148,38 +2884,22 @@
       ]
     },
     {
-      "slug": "hoa-bylaws-revisions",
-      "title": "HOA Bylaws and Rule Revisions",
-      "category": "Real Estate & Property",
-      "volume": "Small",
-      "retention": "Permanent",
-      "snippet": "HOA legal name, community name, specific Article/Section number being revised, exact text of the revision, date of board approval, date of adoption, revision version ID, Secretary's name, jurisdiction",
-      "tags": [
-        "real-estate",
-        "hoa",
-        "condo-association",
-        "bylaws",
-        "cc-and-rs",
-        "governance",
-        "legal-contract",
-        "property-rules"
-      ]
-    },
-    {
-      "slug": "hoa-documents-bylaws",
+      "slug": "hoa-documents",
       "title": "HOA Governing Documents and Bylaws",
       "category": "Real Estate & Property",
       "volume": "Tiny",
       "retention": "Permanent (governance)",
       "snippet": "HOA legal name, document title (Bylaws/CC&Rs), adoption date, revision version, total page count, Secretary's name, county recording reference number, principal office address.",
       "tags": [
-        "real-estate",
-        "hoa",
         "bylaws",
         "cc-and-rs",
+        "condo-association",
         "governance",
+        "hoa",
         "legal-authority",
+        "legal-contract",
         "property-rules",
+        "real-estate",
         "title-clearance"
       ]
     },
@@ -3218,88 +2938,58 @@
       ]
     },
     {
-      "slug": "homeowners-insurance-declarations",
+      "slug": "homeowners-renters-insurance",
       "title": "Homeowners Insurance Declarations Page",
       "category": "Real Estate & Property",
       "volume": "Large",
       "retention": "Policy term + 7 years (claims, mortgage audits)",
       "snippet": "Named insured, property address, dwelling limit (Coverage A), personal property limit (Coverage C), liability limit, deductible amount, policy form (HO-3/HO-5), effective/expiration dates, Mortgagee C",
       "tags": [
-        "homeowners-insurance",
-        "dec-page",
-        "mortgage-compliance",
-        "dwelling-coverage",
-        "hazard-insurance",
-        "escrow-audit",
-        "real-estate-closing"
-      ]
-    },
-    {
-      "slug": "homeowners-renters-claims",
-      "title": "Homeowners and Renters Claims",
-      "category": "Personal Lines Insurance",
-      "volume": "Medium",
-      "retention": "Claim term + 7-10 years",
-      "snippet": "Insured name, property address, Claim ID, estimated Replacement Cost Value (RCV), Actual Cash Value (ACV), deductible amount, adjuster name/ID, restoration contractor name, date of loss, date of estim",
-      "tags": [
-        "property-claim",
-        "homeowners-insurance",
-        "renters-insurance",
-        "damage-estimate",
         "adjuster-report",
-        "restoration-audit",
-        "fraud-prevention"
-      ]
-    },
-    {
-      "slug": "homeowners-renters-insurance",
-      "title": "Homeowners and Renters Insurance Policies",
-      "category": "Personal Lines Insurance",
-      "volume": "Medium",
-      "retention": "Policy lifetime + 10 years",
-      "snippet": "Named insured, property address, dwelling limit (Cov A), personal property limit (Cov C), liability limit, deductible amount, policy form (HO-3, HO-4, HO-6), effective/expiration dates, Mortgagee/Lien",
-      "tags": [
-        "homeowners-insurance",
-        "renters-insurance",
-        "property-casualty",
-        "hazard-insurance",
         "condo-insurance",
+        "damage-estimate",
+        "dec-page",
+        "dwelling-coverage",
+        "escrow-audit",
+        "fraud-prevention",
+        "hazard-insurance",
+        "homeowners-insurance",
         "mortgage-compliance",
+        "property-casualty",
+        "property-claim",
+        "real-estate-closing",
+        "renters-insurance",
+        "restoration-audit",
         "risk-management"
       ]
     },
     {
-      "slug": "hotel-cancellation-confirmations",
+      "slug": "hotel-booking-documents",
       "title": "Hotel Cancellation & Refund Receipts",
       "category": "Travel & Hospitality",
       "volume": "Very Large",
       "retention": "Cancellation Date + 3-7 years",
       "snippet": "Guest name, booking reference ID, original stay dates, cancellation timestamp, refund amount, refund method, cancellation fee (if any), policy terms (Non-refundable vs Free), issuing hotel/OTA name.",
       "tags": [
-        "hotel-cancellation",
-        "refund-receipt",
-        "travel-expense",
-        "hospitality",
         "booking-dispute",
         "expense-fraud",
-        "travel-insurance"
-      ]
-    },
-    {
-      "slug": "hotel-loyalty-program-statements",
-      "title": "Hotel Loyalty Statements and Point Proof",
-      "category": "Travel & Hospitality",
-      "volume": "Medium",
-      "retention": "Statement period + 3-7 years",
-      "snippet": "Member name, loyalty ID number, current point balance, elite status tier (e.g., Titanium/Diamond), lifetime nights, year-to-date nights, expiration date of points, date of statement issuance.",
-      "tags": [
-        "hotel-loyalty",
-        "marriott-bonvoy",
         "hilton-honors",
-        "point-balance",
-        "status-match",
-        "travel-perks",
+        "hospitality",
         "hospitality-finance",
+        "hospitality-management",
+        "hotel-cancellation",
+        "hotel-loyalty",
+        "hotel-upgrade",
+        "loyalty-perks",
+        "marriott-bonvoy",
+        "point-balance",
+        "refund-receipt",
+        "room-upgrade",
+        "status-match",
+        "suite-upgrade",
+        "travel-expense",
+        "travel-insurance",
+        "travel-perks",
         "wealth-verification"
       ]
     },
@@ -3318,41 +3008,6 @@
         "room-service-security",
         "hospitality-security",
         "home-security"
-      ]
-    },
-    {
-      "slug": "hotel-upgrade-confirmations",
-      "title": "Hotel Upgrade Confirmations",
-      "category": "Travel & Hospitality",
-      "volume": "Medium",
-      "retention": "Stay + 1-3 years",
-      "snippet": "Guest name, Reservation ID, Original room type, Upgraded room type, Upgrade fee (if paid), Upgrade method (Paid/Points/Perk), hotel property ID, effective stay dates, date of upgrade confirmation.",
-      "tags": [
-        "hotel-upgrade",
-        "room-upgrade",
-        "loyalty-perks",
-        "suite-upgrade",
-        "travel-expense",
-        "hospitality-management",
-        "marriott-bonvoy",
-        "hilton-honors"
-      ]
-    },
-    {
-      "slug": "house-air-waybills-hawb",
-      "title": "House Air Waybills (HAWB)",
-      "category": "Shipping & Freight",
-      "volume": "Large",
-      "retention": "7-10 years (freight forwarder liability)",
-      "snippet": "HAWB Number, Master Air Waybill (MAWB) number, Shipper name, Consignee name, Airport of Departure/Destination, total piece count, gross weight, cargo description (e.g., \"Optical Lenses\"), freight char",
-      "tags": [
-        "logistics",
-        "air-freight",
-        "hawb",
-        "freight-forwarding",
-        "cargo-security",
-        "trade-finance",
-        "supply-chain"
       ]
     },
     {
@@ -3513,6 +3168,34 @@
       ]
     },
     {
+      "slug": "insurance-claims-processing",
+      "title": "Claims Correspondence and EOBs",
+      "category": "Insurance Claims & Operations",
+      "volume": "Large",
+      "retention": "Claim term + 7-10 years",
+      "snippet": "Patient name, member ID (partial), provider name, service date, claim number, billed amount, allowed amount, plan paid amount, patient responsibility (deductible/copay), adjustment reason codes.",
+      "tags": [
+        "adjuster-notes",
+        "audit-trail",
+        "bad-faith",
+        "claims",
+        "claims-diary",
+        "compliance",
+        "eob",
+        "full-and-final",
+        "healthcare-billing",
+        "insurance",
+        "insurance-claims",
+        "legal-contract",
+        "liability",
+        "loss-reserves",
+        "provider-dispute",
+        "reinsurance-audit",
+        "release",
+        "settlement"
+      ]
+    },
+    {
       "slug": "insurance-policy-documents",
       "title": "Commercial Insurance Policy Documents",
       "category": "Insurance Claims & Operations",
@@ -3527,6 +3210,36 @@
         "coi-verification",
         "risk-management",
         "compliance-audit"
+      ]
+    },
+    {
+      "slug": "insurance-reserve-certifications",
+      "title": "Life Insurance Reserve Certifications",
+      "category": "Actuarial & Insurance Mathematics",
+      "volume": "Very Small",
+      "retention": "7-30 years (policy lifetime)",
+      "snippet": "Certifying actuary name/qualifications (FSA/MAAA), insurer name, specific business unit/portfolio, aggregate reserve amount (USD), valuation date (e.g., Year-End 2025), compliance standards (e.g., VM-",
+      "tags": [
+        "actuarial-audit",
+        "actuarial-certification",
+        "actuarial-opinion",
+        "claims-management",
+        "financial-reporting",
+        "insurance-liability",
+        "insurance-regulation",
+        "lapse-rates",
+        "life-insurance-liabilities",
+        "loss-reserves",
+        "ltc-insurance",
+        "morbidity-assumptions",
+        "naic-compliance",
+        "pension-protection",
+        "pension-reserves",
+        "risk-audit",
+        "self-insurance",
+        "solvency-audit",
+        "solvency-compliance",
+        "workers-comp"
       ]
     },
     {
@@ -3667,37 +3380,23 @@
       ]
     },
     {
-      "slug": "kyc-identity-verification",
+      "slug": "kyc-documents",
       "title": "KYC Identity Verification Documents",
       "category": "Financial Compliance",
       "volume": "Medium",
       "retention": "5-10 years post-relationship",
       "snippet": "Full name, date of birth, residential address, primary ID number (Passport/SSN), nationality, PEP (Politically Exposed Person) status, adverse media flag, sanctions list status (OFAC/EU), biometric li",
       "tags": [
-        "kyc",
+        "address-verification",
         "aml",
-        "identity-verification",
         "bank-onboarding",
         "customer-due-diligence",
+        "digital-id",
         "financial-crime",
-        "digital-id"
-      ]
-    },
-    {
-      "slug": "kyc-proof-of-address",
-      "title": "KYC Proof of Address Documents",
-      "category": "Financial Compliance",
-      "volume": "Large",
-      "retention": "5-10 years post-relationship",
-      "snippet": "Customer name, full service address, billing period dates, total amount due (numerical), account status (Active/Closed), issuing utility/bank name, date of issuance.",
-      "tags": [
+        "identity-verification",
         "kyc",
-        "aml",
         "proof-of-address",
-        "utility-bill",
-        "bank-onboarding",
-        "financial-crime",
-        "address-verification"
+        "utility-bill"
       ]
     },
     {
@@ -3736,23 +3435,6 @@
       ]
     },
     {
-      "slug": "land-surveys-property-boundaries",
-      "title": "Land Surveys and Property Boundaries",
-      "category": "Government & Civic Documents",
-      "volume": "Small",
-      "retention": "Permanent (property rights)",
-      "snippet": "Property address, legal description (Lot/Block/Subdivision), surveyor name/RPLS license, date of field work, boundary coordinates (metes and bounds), presence of encroachments (e.g., fences over line)",
-      "tags": [
-        "land-survey",
-        "property-boundary",
-        "boundary-dispute",
-        "plat-map",
-        "surveyor-seal",
-        "real-estate-due-diligence",
-        "encroachment-check"
-      ]
-    },
-    {
       "slug": "land-surveys",
       "title": "Land Surveys",
       "category": "Real Estate & Property",
@@ -3760,13 +3442,20 @@
       "retention": "Permanent (property records)",
       "snippet": "Property Lot/Block, Metes and Bounds strings, Specific Encroachment descriptions (e.g., \"1.2' West\"), Monument types (Iron Rod, Brass Cap), Surveyor license number, Elevation data (if included), Certi",
       "tags": [
-        "land",
-        "surveys",
-        "real",
-        "estate",
-        "property",
         "boundary",
-        "plat"
+        "boundary-dispute",
+        "encroachment-check",
+        "estate",
+        "land",
+        "land-survey",
+        "plat",
+        "plat-map",
+        "property",
+        "property-boundary",
+        "real",
+        "real-estate-due-diligence",
+        "surveyor-seal",
+        "surveys"
       ]
     },
     {
@@ -3873,22 +3562,6 @@
       ]
     },
     {
-      "slug": "life-insurance-reserve-certifications",
-      "title": "Life Insurance Reserve Certifications",
-      "category": "Actuarial & Insurance Mathematics",
-      "volume": "Very Small",
-      "retention": "7-30 years (policy lifetime)",
-      "snippet": "Certifying actuary name/qualifications (FSA/MAAA), insurer name, specific business unit/portfolio, aggregate reserve amount (USD), valuation date (e.g., Year-End 2025), compliance standards (e.g., VM-",
-      "tags": [
-        "actuarial-opinion",
-        "pension-reserves",
-        "life-insurance-liabilities",
-        "solvency-audit",
-        "naic-compliance",
-        "actuarial-certification"
-      ]
-    },
-    {
       "slug": "livestock-crop-insurance",
       "title": "Livestock and Crop Insurance Policies",
       "category": "Specialty Insurance",
@@ -3978,23 +3651,6 @@
       ]
     },
     {
-      "slug": "ltc-insurance-reserve-certifications",
-      "title": "Long-Term Care (LTC) Insurance Reserve Certifications",
-      "category": "Actuarial & Insurance Mathematics",
-      "volume": "Very Small",
-      "retention": "30-50 years (policy lifetime)",
-      "snippet": "Certifying actuary name/FSA ID, insurer name, specific LTC block/series ID, aggregate reserve amount (USD), morbidity assumptions (claim incidence), lapse rate assumptions, interest rate discount curv",
-      "tags": [
-        "ltc-insurance",
-        "actuarial-opinion",
-        "morbidity-assumptions",
-        "lapse-rates",
-        "solvency-compliance",
-        "pension-protection",
-        "insurance-regulation"
-      ]
-    },
-    {
       "slug": "manufacturer-declarations-of-conformity",
       "title": "Manufacturer Declarations of Conformity (DoC)",
       "category": "Product Certifications & Compliance",
@@ -4029,37 +3685,31 @@
       ]
     },
     {
-      "slug": "marine-cargo-insurance",
+      "slug": "marine-insurance",
       "title": "Marine Cargo Insurance Certificates",
       "category": "Specialty Insurance",
       "volume": "Small",
       "retention": "Transit period + 7-10 years",
       "snippet": "Assured name, Loss Payee (Bank), Certificate number, Vessel name, Voyage route (Port-to-Port), cargo description, total amount insured (usually 110% of CIF), coverage clauses (e.g., ICC A), issuing br",
       "tags": [
-        "marine-cargo",
-        "ocean-freight-insurance",
-        "icc-a-clauses",
         "cargo-security",
-        "international-trade-finance",
         "certificate-of-insurance",
-        "risk-management"
-      ]
-    },
-    {
-      "slug": "marine-hull-machinery",
-      "title": "Marine Hull & Machinery (H&M) Insurance",
-      "category": "Specialty Insurance",
-      "volume": "Small",
-      "retention": "Vessel lifetime + 10 years",
-      "snippet": "Vessel name, IMO number (unique 7-digit ID), Flag State, agreed hull value (USD), deductible amount, classification society (e.g., ABS, DNV, LR), primary underwriter ID, effective/expiration dates, tr",
-      "tags": [
-        "marine-insurance",
+        "certificates",
+        "club",
         "h-and-m",
         "hull-and-machinery",
-        "ship-finance",
+        "icc-a-clauses",
         "imo-vessel",
-        "maritime-safety",
+        "international-trade-finance",
         "lloyds",
+        "logistics",
+        "marine-cargo",
+        "marine-insurance",
+        "maritime-safety",
+        "ocean-freight-insurance",
+        "risk-management",
+        "ship-finance",
+        "transportation",
         "vessel-valuation"
       ]
     },
@@ -4209,24 +3859,6 @@
       ]
     },
     {
-      "slug": "meter-reader-surveyor-verification",
-      "title": "Utility Worker and Surveyor Verification",
-      "category": "Personal Safety & Service Verification",
-      "volume": "Large",
-      "retention": "Visit + 1-3 years (access records)",
-      "snippet": "Worker name, photo (hash), employee ID, company name (Utility/Surveying firm), specialized role (e.g., Meter Reader, Gas Leak Repair, Boundary Surveyor), current duty status (Active/On-Duty), backgrou",
-      "tags": [
-        "utility-worker-safety",
-        "meter-reader-badge",
-        "land-surveyor-verification",
-        "home-security",
-        "personal-safety",
-        "official-credentials",
-        "con-edison",
-        "surveying-licensure"
-      ]
-    },
-    {
       "slug": "mobile-money-receipts",
       "title": "Mobile Money Transaction Receipts",
       "category": "Banking & Payments",
@@ -4262,42 +3894,6 @@
       ]
     },
     {
-      "slug": "mortgage-employment-verification",
-      "title": "Mortgage Employment Verification Letters",
-      "category": "Real Estate & Property",
-      "volume": "Small",
-      "retention": "7-10 years (loan term + disputes)",
-      "snippet": "Employee name, legal employer name, current job title, employment status (Active/On-Leave), start date, base salary amount, bonus/commission history (linked hash), total annual income, issuing HR offi",
-      "tags": [
-        "mortgage-underwriting",
-        "voe",
-        "employment-verification",
-        "loan-approval",
-        "salary-verification",
-        "fannie-mae-compliance",
-        "real-estate-finance",
-        "fraud-prevention"
-      ]
-    },
-    {
-      "slug": "mortgage-income-verification",
-      "title": "Mortgage Income Verification (W-2, Pay Stubs)",
-      "category": "Real Estate & Property",
-      "volume": "Large",
-      "retention": "7-10 years (loan term + disputes)",
-      "snippet": "Employee name, SSN/TIN (redacted), employer name, pay period dates, gross earnings, net pay, itemized withholdings (Taxes/401k), Year-to-Date (YTD) totals, issuing payroll provider ID, date of payment",
-      "tags": [
-        "mortgage-underwriting",
-        "income-verification",
-        "paystub",
-        "w-2",
-        "loan-approval",
-        "fannie-mae-compliance",
-        "real-estate-finance",
-        "fraud-prevention"
-      ]
-    },
-    {
       "slug": "mortgage-indemnity-insurance",
       "title": "Mortgage Indemnity Insurance (LMI)",
       "category": "Specialty Insurance",
@@ -4329,6 +3925,27 @@
         "real-estate-closing",
         "deed-of-trust",
         "county-recorder"
+      ]
+    },
+    {
+      "slug": "mortgage-verification-documents",
+      "title": "Mortgage Employment Verification Letters",
+      "category": "Real Estate & Property",
+      "volume": "Small",
+      "retention": "7-10 years (loan term + disputes)",
+      "snippet": "Employee name, legal employer name, current job title, employment status (Active/On-Leave), start date, base salary amount, bonus/commission history (linked hash), total annual income, issuing HR offi",
+      "tags": [
+        "employment-verification",
+        "fannie-mae-compliance",
+        "fraud-prevention",
+        "income-verification",
+        "loan-approval",
+        "mortgage-underwriting",
+        "paystub",
+        "real-estate-finance",
+        "salary-verification",
+        "voe",
+        "w-2"
       ]
     },
     {
@@ -4435,62 +4052,51 @@
       ]
     },
     {
-      "slug": "notarial-wills",
-      "title": "Notarial Wills (Civil Law Jurisdictions)",
+      "slug": "notary-documents",
+      "title": "Notarial Wills",
       "category": "Notary Services",
       "volume": "Small",
       "retention": "Permanent (estate records)",
       "snippet": "Testator name, Notary name, Commission Number, Date of Act, Witness names, Archive Reference ID, Succession location, Liquidator/Executor name, Specific bequests (digest).",
       "tags": [
-        "notary",
-        "civil-law",
-        "wills",
-        "estate-planning",
-        "legal-authority",
-        "succession"
-      ]
-    },
-    {
-      "slug": "notarized-documents",
-      "title": "Notarized Documents",
-      "category": "Notary Services",
-      "volume": "Very Large",
-      "retention": "Permanent (legal validity)",
-      "snippet": "Signer name, Notary name, Commission Number, Jurisdiction (State/County), Type of Notarial Act (Acknowledgment vs. Jurat), Identification Method (ID vs. Knowledge), Expiration Date of Commission, Date",
-      "tags": [
-        "notary",
-        "jurat",
         "acknowledgment",
         "apostille",
+        "civil-law",
+        "commission-fraud",
+        "digital-notarization",
+        "document-authentication",
+        "e-signing",
+        "estate-planning",
+        "identity-verification",
+        "jurat",
+        "legal-authority",
+        "legal-witness",
         "legalization",
+        "mortgage-closing",
+        "notarial-act",
+        "notary",
+        "ron",
+        "succession",
         "sworn-statement",
+        "wills",
         "witnessing"
       ]
     },
     {
-      "slug": "notary-services",
-      "title": "Notary Public Services",
-      "category": "Notary Services",
-      "volume": "Large (aggregate across all notarial acts)",
-      "retention": "Varies by act type (7 years to permanent)",
-      "snippet": "",
-      "tags": [
-        "notary",
-        "services"
-      ]
-    },
-    {
       "slug": "number-portability-authorizations",
-      "title": "Number portability authorizations",
+      "title": "Number Portability Authorizations (LOA)",
       "category": "Business & Commerce",
-      "volume": "Small",
-      "retention": "3-7 years (regulatory compliance)",
-      "snippet": "",
+      "volume": "Very Large",
+      "retention": "3-7 years (regulatory compliance / dispute resolution)",
+      "snippet": "Authorized signer name, telephone number(s) to be ported, losing carrier name, winning carrier name, account number (masked), service address zip code, date of authorization, porting PIN status, inter",
       "tags": [
-        "number",
-        "portability",
-        "authorizations",
-        "telecommunications"
+        "telecom",
+        "number-porting",
+        "loa",
+        "sim-swap-fraud",
+        "identity-verification",
+        "porting-authority",
+        "consumer-protection"
       ]
     },
     {
@@ -4512,20 +4118,29 @@
       ]
     },
     {
-      "slug": "ocean-bills-of-lading",
-      "title": "Ocean Bills of Lading (B/L)",
+      "slug": "ocean-shipping-waybills",
+      "title": "Bills of Lading",
       "category": "Shipping & Freight",
       "volume": "Large",
-      "retention": "7-10 years (legal title / statute of limitations)",
-      "snippet": "B/L number, carrier name, shipper name, consignee name (or \"To Order\"), vessel name, port of loading, port of discharge, container numbers, seal numbers, description of goods, weight/volume, date of l",
+      "retention": "Shipment completion plus 7-10 years (disputes, customs audits)",
+      "snippet": "B/L Number, shipper, consignee, vessel name, voyage number, port of loading/discharge, container numbers, seal numbers, cargo description, gross weight, date of loading (shipped on board).",
       "tags": [
-        "shipping",
-        "logistics",
         "bill-of-lading",
-        "trade-finance",
+        "bol",
+        "cargo",
+        "cargo-receipt",
+        "customs-clearance",
         "customs-compliance",
+        "document-of-title",
+        "logistics",
+        "maritime",
         "maritime-fraud",
-        "document-of-title"
+        "non-negotiable",
+        "ocean-freight",
+        "sea-waybill",
+        "shipping",
+        "supply-chain-fraud",
+        "trade-finance"
       ]
     },
     {
@@ -4615,17 +4230,20 @@
     },
     {
       "slug": "p2p-payment-receipts",
-      "title": "P2P payment transaction receipts (Venmo, Zelle, Cash App)",
+      "title": "P2P Payment Receipts (Venmo, Zelle, Cash App)",
       "category": "Banking & Payments",
-      "volume": "Medium-Large",
-      "retention": "3-7 years (tax/disputes)",
-      "snippet": "",
+      "volume": "Very Large",
+      "retention": "3-7 years (tax / dispute period)",
+      "snippet": "Transaction ID, platform name (Venmo/Zelle/CashApp), sender name/@handle, receiver name/@handle, payment amount, date/time of transfer, payment status (Completed/Pending), note/memo text, payment meth",
       "tags": [
-        "payment",
-        "receipts",
-        "banking",
-        "financial",
-        "services"
+        "venmo",
+        "zelle",
+        "cash-app",
+        "p2p-payments",
+        "transaction-receipt",
+        "screenshot-scam",
+        "instant-payment",
+        "payment-verification"
       ]
     },
     {
@@ -4718,19 +4336,20 @@
     },
     {
       "slug": "payment-processor-merchant-statements",
-      "title": "Payment processor merchant statements (Stripe, PayPal, Square)",
+      "title": "Payment Processor Merchant Statements",
       "category": "Banking & Payments",
-      "volume": "Medium",
-      "retention": "7-10 years (tax/disputes)",
-      "snippet": "",
+      "volume": "Very Large",
+      "retention": "7-10 years (tax / financial audit lifecycle)",
+      "snippet": "Merchant ID, business legal name, statement ID, period date range, total gross sales, total net payouts, processing fee totals, chargeback/dispute count and dollar amount, refund volume, issuing bank ",
       "tags": [
-        "payment",
-        "processor",
-        "merchant",
-        "statements",
-        "banking",
-        "financial",
-        "services"
+        "stripe",
+        "paypal",
+        "square",
+        "merchant-statement",
+        "payment-processing",
+        "ecommerce-fraud",
+        "business-lending",
+        "revenue-verification"
       ]
     },
     {
@@ -4753,17 +4372,20 @@
     },
     {
       "slug": "pension-actuarial-valuations",
-      "title": "Pension plan actuarial valuation reports",
-      "category": "Actuarial & Insurance Mathematics",
+      "title": "Pension Actuarial Valuations",
+      "category": "Financial Compliance",
       "volume": "Very Small",
-      "retention": "7-30 years (ERISA/plan lifetime)",
-      "snippet": "",
+      "retention": "Permanent (pension plan lifecycle)",
+      "snippet": "Plan ID number, plan name, valuation date, total accrued liability, net actuarial assets, funded status percentage, discount rate (interest rate) assumption, Enrolled Actuary ID, date of signature, si",
       "tags": [
-        "pension",
         "actuarial",
-        "valuations",
-        "insurance",
-        "mathematics"
+        "pension-funding",
+        "retirement-security",
+        "erisa-compliance",
+        "pbgc",
+        "benefit-verification",
+        "financial-solvency",
+        "audit-trail"
       ]
     },
     {
@@ -4771,31 +4393,36 @@
       "title": "PEP Declarations (Politically Exposed Persons)",
       "category": "Financial Services Compliance",
       "volume": "Medium",
-      "retention": "5-10 years post-relationship",
-      "snippet": "Declarant name, declaration date, PEP status (yes/no), role/position (if PEP), country, period of office, relationship type (self, family member, close associate), source of wealth summary.",
+      "retention": "5-10 years post-relationship (AML requirement)",
+      "snippet": "Individual name, date of birth (masked), PEP classification (Yes/No), specific public role/title, country of influence, relationship type (e.g., Self, Family, Close Associate), source of wealth summar",
       "tags": [
-        "pep",
-        "politically-exposed",
         "aml",
         "kyc",
-        "corruption",
-        "enhanced-due-diligence"
+        "pep",
+        "politically-exposed",
+        "enhanced-due-diligence",
+        "corruption-prevention",
+        "onboarding-compliance",
+        "financial-crime"
       ]
     },
     {
       "slug": "permanent-residence-cards",
-      "title": "Permanent residence cards (Green Card, ILR, PR)",
+      "title": "Permanent Residence Cards (Green Card)",
       "category": "Immigration & Visa Documents",
-      "volume": "Small",
-      "retention": "10 years (card validity) + permanent",
-      "snippet": "",
+      "volume": "Very Large",
+      "retention": "Permanent (license lifecycle)",
+      "snippet": "USCIS Alien Registration Number (A-Number), full name, category code (e.g., CR1, E11, RE8), card serial number, date of birth, country of birth, resident-since date, card expiration date, photograph (",
       "tags": [
-        "permanent",
-        "residence",
-        "cards",
         "immigration",
-        "visa",
-        "documents"
+        "green-card",
+        "i-551",
+        "uscis",
+        "permanent-residence",
+        "work-authorization",
+        "identity-verification",
+        "border-security",
+        "i-9-compliance"
       ]
     },
     {
@@ -4819,34 +4446,38 @@
     },
     {
       "slug": "pest-control-operator-licenses",
-      "title": "Pest control operator licenses",
+      "title": "Pest Control Operator Licenses",
       "category": "Professional & Occupational Licenses",
-      "volume": "Small",
-      "retention": "1-3 years (license term)",
-      "snippet": "",
+      "volume": "Medium",
+      "retention": "License term (1-3 years)",
+      "snippet": "License number, licensee full name, photograph (via hash), company name (DBA), license categories (e.g., Structural, Lawn, Termite), expiration date, background check timestamp, insurance policy ID, i",
       "tags": [
-        "pest",
-        "control",
-        "operator",
-        "licenses",
-        "professional",
-        "occupational"
+        "pest-control",
+        "occupational-license",
+        "pesticide-safety",
+        "structural-pest",
+        "exterminator-vetting",
+        "public-health",
+        "consumer-protection",
+        "background-check"
       ]
     },
     {
       "slug": "pest-inspection-certificates",
-      "title": "Pest inspection certificates",
+      "title": "Pest Inspection Certificates (WDI)",
       "category": "Real Estate & Property",
-      "volume": "Small",
-      "retention": "3-7 years (warranty/liability)",
-      "snippet": "",
+      "volume": "Large",
+      "retention": "3-7 years (statute of limitations / warranty period)",
+      "snippet": "Report ID, property address, owner name (optional/masked), buyer name, inspection date, active infestation status (Yes/No), previous damage location/severity, treatment recommendations, inspector name",
       "tags": [
-        "pest",
-        "inspection",
-        "certificates",
-        "real",
-        "estate",
-        "property"
+        "real-estate",
+        "pest-inspection",
+        "wdi-report",
+        "termite-certificate",
+        "closing-documents",
+        "mortgage-fraud",
+        "property-disclosure",
+        "structural-integrity"
       ]
     },
     {
@@ -4886,48 +4517,39 @@
       ]
     },
     {
-      "slug": "pi-club-certificates",
-      "title": "Protection & Indemnity (P&I) club certificates",
-      "category": "Specialty Insurance",
-      "volume": "Small",
-      "retention": "Policy term + 20 years (claims tail)",
-      "snippet": "",
-      "tags": [
-        "club",
-        "certificates",
-        "logistics",
-        "transportation"
-      ]
-    },
-    {
       "slug": "platform-lending-agreements",
-      "title": "Platform lending agreements (Amazon Lending, Shopify Capital)",
+      "title": "Platform Lending and Financing Agreements",
       "category": "Investment & Fintech",
-      "volume": "Small",
-      "retention": "Loan term + 7-10 years",
-      "snippet": "",
+      "volume": "Medium",
+      "retention": "Loan term + 7-10 years (financial audit / tax)",
+      "snippet": "Merchant ID, business legal name, advance ID, funding date, amount advanced (net), total repayment amount (gross), daily remittance percentage, platform name, primary bank account ID (for sweeping), d",
       "tags": [
-        "platform",
-        "lending",
-        "agreements",
-        "banking",
-        "financial",
-        "services"
+        "fintech",
+        "shopify-capital",
+        "amazon-lending",
+        "merchant-cash-advance",
+        "revenue-based-financing",
+        "mca-fraud",
+        "business-lending",
+        "ecommerce-finance"
       ]
     },
     {
       "slug": "playground-equipment-safety-certificates",
-      "title": "Playground equipment safety inspection certificates",
+      "title": "Playground Safety Inspection Certificates",
       "category": "Safety Inspection Certificates",
       "volume": "Medium",
-      "retention": "1 year (annual inspection)",
-      "snippet": "",
+      "retention": "1 year (annual inspection cycle)",
+      "snippet": "Equipment serial number, site/park name, specific structure name (e.g., \"The Castle\"), surface type (e.g., Poured Rubber, Woodchips), HIC (Head Injury Criterion) score, ASTM F1487 status, CPSI (Certif",
       "tags": [
-        "playground",
-        "equipment",
-        "safety",
-        "certificates",
-        "inspection"
+        "playground-safety",
+        "cpsi-inspection",
+        "astm-f1487",
+        "cpsc-compliance",
+        "public-safety",
+        "child-protection",
+        "impact-attenuation",
+        "park-audit"
       ]
     },
     {
@@ -4982,24 +4604,6 @@
         "government-id",
         "training-certification",
         "election-day-ops"
-      ]
-    },
-    {
-      "slug": "postal-courier-verification",
-      "title": "Postal/courier worker verification (suspicious packages)",
-      "category": "Personal Safety & Service Verification",
-      "volume": "Very Large",
-      "retention": "Delivery + 30 days",
-      "snippet": "Courier name, employee ID, company division (Express/Ground/Freight), hub location, photograph (via hash), expiration date, background check status.",
-      "tags": [
-        "postal",
-        "courier",
-        "verification",
-        "personal",
-        "safety",
-        "service",
-        "delivery-fraud",
-        "package-security"
       ]
     },
     {
@@ -5177,22 +4781,6 @@
         "financial-vetting",
         "escrow-funding",
         "mergers-and-acquisitions"
-      ]
-    },
-    {
-      "slug": "proof-of-funds-letters",
-      "title": "Bank proof-of-funds letters",
-      "category": "Financial & Legal Documents",
-      "volume": "Medium",
-      "retention": "1 year (time-bound)",
-      "snippet": "Account holder name, issuing bank, letter date, expiration date, reference number, account balance range (if disclosed in letter)",
-      "tags": [
-        "proof",
-        "funds",
-        "letters",
-        "financial",
-        "legal",
-        "documents"
       ]
     },
     {
@@ -5390,35 +4978,38 @@
     },
     {
       "slug": "rail-waybills-shipping-orders",
-      "title": "Rail waybills and shipping orders",
+      "title": "Rail Waybills and Shipping Orders",
       "category": "Shipping & Freight",
       "volume": "Medium-Large",
-      "retention": "7-10 years (proof of shipment)",
-      "snippet": "Shipper, consignee, railway, car number, cargo description",
+      "retention": "7-10 years (proof of shipment / statute of limitations)",
+      "snippet": "Waybill number, railroad name, shipper name, consignee name, origin city/state, destination city/state, railcar ID, STCC (Standard Transportation Commodity Code), gross weight, tare weight, net weight",
       "tags": [
-        "rail",
-        "waybills",
-        "shipping",
-        "orders",
         "logistics",
-        "transportation"
+        "shipping",
+        "rail-freight",
+        "waybill",
+        "intermodal",
+        "supply-chain-fraud",
+        "cargo-security",
+        "customs-compliance"
       ]
     },
     {
       "slug": "real-estate-agent-verification",
-      "title": "Real estate showing agent verification",
+      "title": "Real Estate Agent Verification (Showings)",
       "category": "Personal Safety & Service Verification",
       "volume": "Medium",
-      "retention": "Showing + 1-3 years (liability)",
-      "snippet": "Agent name, photo, license number, brokerage, license status",
+      "retention": "Showing + 1-3 years (safety/liability record)",
+      "snippet": "Agent name, license number, state of jurisdiction, brokerage name, photograph (via hash), expiration date, disciplinary status (Clear/Flagged), background check timestamp, NAR (National Association of",
       "tags": [
-        "real",
-        "estate",
-        "agent",
-        "verification",
-        "personal",
-        "safety",
-        "service"
+        "real-estate",
+        "realtor-safety",
+        "agent-verification",
+        "property-showing",
+        "background-check",
+        "licensing-board",
+        "home-security",
+        "consumer-protection"
       ]
     },
     {
@@ -5511,50 +5102,40 @@
       ]
     },
     {
-      "slug": "remote-online-notarizations",
-      "title": "Remote Online Notarizations (RON)",
-      "category": "Notary Services",
-      "volume": "Large",
-      "retention": "10 years (state retention laws)",
-      "snippet": "Notary name, commission number, state of jurisdiction, session ID, signer name, date/time of act, document type hash, RON platform name, electronic journal entry ID.",
-      "tags": [
-        "notary",
-        "ron",
-        "digital-notarization",
-        "legal-authority",
-        "e-signing",
-        "mortgage-closing",
-        "identity-verification"
-      ]
-    },
-    {
       "slug": "renewable-energy-certificates",
-      "title": "Renewable energy certificates (RECs)",
+      "title": "Renewable Energy Certificates (RECs)",
       "category": "Energy & Utilities",
-      "volume": "Small",
-      "retention": "3-7 years (compliance/trading)",
-      "snippet": "Generator name, REC purchaser, MWh details, certification body",
+      "volume": "Medium",
+      "retention": "3-7 years (compliance / carbon audit)",
+      "snippet": "Certificate ID, facility name, facility ID, fuel type (Solar/Wind/etc.), balancing authority (e.g., CAISO), vintage month/year, total MWh quantity, purchaser name (if retired), date of generation, dat",
       "tags": [
-        "renewable",
-        "energy",
-        "certificates",
-        "utilities"
+        "renewable-energy",
+        "rec",
+        "green-power",
+        "carbon-offset",
+        "esg-reporting",
+        "energy-trading",
+        "sustainability-audit",
+        "greenwashing-prevention"
       ]
     },
     {
       "slug": "rental-agreements",
-      "title": "Rental Agreements and Documentation",
+      "title": "Rental Agreements and Condition Reports",
       "category": "Travel & Hospitality",
-      "volume": "Large",
-      "retention": "Rental period plus 3-10 years (liability, disputes, tax)",
-      "snippet": "Rental Agreement: Renter name, rental company, item description (vehicle VIN, equipment serial number), pickup/return locations and dates, rental rate and fees, insurance/damage waiver coverage, depos",
+      "volume": "Very Large",
+      "retention": "Rental period + 3-10 years (liability / dispute period)",
+      "snippet": "Rental Agreement (RA) number, renter name, vehicle VIN/Plate, unit number, pickup location/time, return location/time, starting odometer, fuel/charge level, accepted coverage options (LDW, PAI, SLI), ",
       "tags": [
-        "rental",
-        "agreements",
-        "travel",
-        "hospitality",
-        "equipment",
-        "services"
+        "rental-car",
+        "equipment-rental",
+        "hertz",
+        "enterprise",
+        "ldw-coverage",
+        "odometer-fraud",
+        "damage-claims",
+        "travel-expense",
+        "liability-release"
       ]
     },
     {
@@ -5579,18 +5160,18 @@
       "slug": "repeat-events-permits",
       "title": "Repeat Events Permits",
       "category": "Event & Temporary Use Permits",
-      "volume": "Unknown",
-      "retention": "Unknown",
-      "snippet": "",
+      "volume": "Medium",
+      "retention": "Season + 1-3 years (permit cycle / audit)",
+      "snippet": "Vendor name, farm/business location, stall assignment ID, seasonal validity dates, list of authorized products, certification level (e.g., Organic/Sustainable), market manager ID, permit fee status, b",
       "tags": [
-        "repeat-events",
-        "recurring",
         "farmers-market",
         "street-vending",
-        "parklet",
+        "seasonal-permit",
+        "vendor-verification",
+        "certified-producer",
         "sidewalk-dining",
-        "vendor",
-        "commercial"
+        "market-integrity",
+        "public-safety"
       ]
     },
     {
@@ -5684,17 +5265,20 @@
     },
     {
       "slug": "safe-agreements",
-      "title": "SAFE agreements (Simple Agreement for Future Equity)",
+      "title": "SAFE Agreements (Simple Agreement for Future Equity)",
       "category": "Investment & Fintech",
-      "volume": "Very Small",
-      "retention": "Permanent (convertible security)",
-      "snippet": "",
+      "volume": "Small",
+      "retention": "Permanent (convertible security lifecycle)",
+      "snippet": "Purchase amount, valuation cap (post-money or pre-money), discount rate, investor name, company name (jurisdiction), date of issuance, series ID, side letter status (Yes/No), board authorization ID, l",
       "tags": [
-        "safe",
-        "agreements",
-        "banking",
-        "financial",
-        "services"
+        "venture-capital",
+        "startup-funding",
+        "safe-agreement",
+        "y-combinator",
+        "convertible-equity",
+        "cap-table-integrity",
+        "investment-fraud",
+        "equity-financing"
       ]
     },
     {
@@ -5840,19 +5424,6 @@
       ]
     },
     {
-      "slug": "sea-waybills",
-      "title": "Sea waybills (non-negotiable B/L)",
-      "category": "Shipping & Freight",
-      "volume": "Large",
-      "retention": "7-10 years (proof of shipment)",
-      "snippet": "",
-      "tags": [
-        "waybills",
-        "logistics",
-        "transportation"
-      ]
-    },
-    {
       "slug": "security-testing-authorizations",
       "title": "Security Testing Authorizations",
       "category": "Delegated Authority",
@@ -5959,18 +5530,20 @@
     },
     {
       "slug": "soil-geotechnical-reports",
-      "title": "Soil and geotechnical reports",
+      "title": "Soil and Geotechnical Reports",
       "category": "Real Estate & Property",
       "volume": "Very Small",
-      "retention": "20-30 years (building lifetime)",
-      "snippet": "Property owner, geotechnical engineer, site address, soil conditions, recommendations",
+      "retention": "20-30 years (building lifetime / structural liability)",
+      "snippet": "Project number, site address, parcel ID (APN), client name, engineering firm name, borehole count/depth, allowable soil bearing pressure (PSF), seismic site classification (A-F), liquefaction risk sta",
       "tags": [
-        "soil",
-        "geotechnical",
-        "reports",
-        "real",
-        "estate",
-        "property"
+        "engineering",
+        "geotechnical-report",
+        "soil-testing",
+        "structural-safety",
+        "land-development",
+        "building-permits",
+        "liquefaction-risk",
+        "geology-audit"
       ]
     },
     {
@@ -5992,18 +5565,20 @@
     },
     {
       "slug": "solar-panel-efficiency-certificates",
-      "title": "Solar panel efficiency certificates",
+      "title": "Solar Panel Efficiency Certificates",
       "category": "Energy & Utilities",
       "volume": "Very Small",
-      "retention": "20-30 years (system lifetime)",
-      "snippet": "System owner name, address, installer, panel specifications",
+      "retention": "20-30 years (solar system lifetime)",
+      "snippet": "Panel serial number, model name/number, testing date, peak wattage (Pmax), module efficiency percentage, open-circuit voltage (Voc), short-circuit current (Isc), fill factor, testing lab ID, IEC/UL ce",
       "tags": [
-        "solar",
-        "panel",
-        "efficiency",
-        "certificates",
-        "energy",
-        "utilities"
+        "solar-energy",
+        "photovoltaic",
+        "panel-efficiency",
+        "stc-rating",
+        "solar-fraud",
+        "green-energy-finance",
+        "panel-warranty",
+        "tier-1-solar"
       ]
     },
     {
@@ -6020,23 +5595,6 @@
         "kyc",
         "due-diligence",
         "onboarding"
-      ]
-    },
-    {
-      "slug": "source-of-funds-wealth-declarations",
-      "title": "Source of funds/wealth declarations",
-      "category": "Financial Compliance",
-      "volume": "Small",
-      "retention": "5-10 years post-relationship",
-      "snippet": "Customer name, income sources, asset origins, employment history",
-      "tags": [
-        "source",
-        "funds",
-        "wealth",
-        "declarations",
-        "banking",
-        "financial",
-        "services"
       ]
     },
     {
@@ -6110,18 +5668,20 @@
     },
     {
       "slug": "stormwater-discharge-permits",
-      "title": "Stormwater discharge permits (NPDES)",
+      "title": "Stormwater Discharge Permits (NPDES)",
       "category": "Environmental & Natural Resource Permits",
       "volume": "Small",
-      "retention": "5 years (permit term)",
-      "snippet": "Permit holder, facility, discharge points, monitoring requirements, EPA/state",
+      "retention": "5 years (permit term / statutory audit)",
+      "snippet": "Permit number (NPDES), permittee name, facility address, facility ID, industrial SIC/NAICS code, authorized outfall IDs, pollutant concentration limits (TSS, pH, Oil), monitoring frequency, effective/",
       "tags": [
-        "stormwater",
-        "discharge",
-        "permits",
         "environmental",
-        "natural",
-        "resource"
+        "npdes",
+        "stormwater-permit",
+        "clean-water-act",
+        "epa-compliance",
+        "industrial-runoff",
+        "pollution-control",
+        "environmental-audit"
       ]
     },
     {
@@ -6272,32 +5832,36 @@
       "slug": "temporary-short-term-insurance",
       "title": "Temporary and Short-Term Insurance",
       "category": "Personal Lines Insurance",
-      "volume": "Medium-Large (growing rapidly)",
-      "retention": "Coverage period plus 5-10 years (claims)",
-      "snippet": "Insured name, coverage type, covered item (vehicle, person, event, property), coverage dates and times, policy/certificate number, insurer name, coverage limits, premium paid, any exclusions or condit",
+      "volume": "Medium-Large",
+      "retention": "Coverage period + 5-10 years (claims lifecycle)",
+      "snippet": "Policy ID, driver name, driver license number, vehicle VIN, vehicle license plate, precise start date/time (to the second), precise end date/time, liability limits, collision/comprehensive status, ins",
       "tags": [
-        "temporary",
-        "short",
-        "term",
-        "insurance",
-        "personal",
-        "lines",
-        "emerging"
+        "insurtech",
+        "temporary-insurance",
+        "auto-binder",
+        "gig-economy",
+        "on-demand-insurance",
+        "roadside-verification",
+        "borrowed-vehicle",
+        "short-term-coverage"
       ]
     },
     {
       "slug": "terrorism-insurance-tripra",
-      "title": "Terrorism insurance and TRIPRA coverage",
+      "title": "Terrorism Insurance and TRIPRA Coverage",
       "category": "Specialty Insurance",
       "volume": "Small",
-      "retention": "Policy term + 10 years",
-      "snippet": "Insured property, location, terrorism coverage limit, TRIPRA certification",
+      "retention": "Policy term + 10 years (long-term liability)",
+      "snippet": "Policy number, insurer name, insured entity name, property address, TRIPRA certified act limit, non-certified act limit (if any), premium attributable to terrorism, policy effective/expiration dates, ",
       "tags": [
-        "terrorism",
-        "insurance",
+        "specialty-insurance",
+        "terrorism-coverage",
         "tripra",
-        "risk",
-        "management"
+        "commercial-real-estate",
+        "high-risk-insurance",
+        "lender-compliance",
+        "certified-act",
+        "risk-management"
       ]
     },
     {
@@ -6357,34 +5921,39 @@
     },
     {
       "slug": "total-loss-valuations-acv",
-      "title": "Total loss valuations and actual cash value (ACV) reports",
+      "title": "Total Loss Valuations and ACV Reports",
       "category": "Insurance Claims & Operations",
-      "volume": "Medium",
-      "retention": "Claim term + 7 years",
-      "snippet": "Vehicle/property details, market value, depreciation, ACV calculation, valuation source",
+      "volume": "Large",
+      "retention": "Claim term + 7-10 years (audit / total-loss history)",
+      "snippet": "Report number, VIN, mileage at time of loss, Actual Cash Value (ACV) amount, vehicle options/packages, comparable vehicle prices (Avg), condition adjustments (e.g., prior damage), date of valuation, a",
       "tags": [
-        "total",
-        "loss",
-        "valuations",
-        "insurance",
-        "risk",
-        "management"
+        "insurance-claims",
+        "total-loss",
+        "acv",
+        "actual-cash-value",
+        "vehicle-valuation",
+        "ccc-one",
+        "claims-audit",
+        "settlement-dispute",
+        "vehicle-history"
       ]
     },
     {
       "slug": "tour-guide-verification",
-      "title": "Tour guide verification (solo travelers)",
+      "title": "Tour Guide and Host Verification",
       "category": "Personal Safety & Service Verification",
       "volume": "Large",
-      "retention": "Tour + 1-3 years",
-      "snippet": "Guide name, photo, license number, tour company, language skills",
+      "retention": "Tour + 1-3 years (safety/liability record)",
+      "snippet": "Guide name, license ID, issuing tourism board, photograph (via hash), languages spoken, first aid certification status, insurance policy ID, expiration date, background check timestamp, specialized si",
       "tags": [
-        "tour",
-        "guide",
-        "verification",
-        "personal",
-        "safety",
-        "service"
+        "tourism",
+        "tour-guide",
+        "travel-safety",
+        "solo-travel",
+        "official-license",
+        "background-check",
+        "vetted-services",
+        "destination-security"
       ]
     },
     {
@@ -6407,85 +5976,70 @@
     },
     {
       "slug": "towing-vehicle-recovery-permits",
-      "title": "Towing and vehicle recovery permits",
+      "title": "Towing and Vehicle Recovery Permits",
       "category": "Professional & Occupational Licenses",
-      "volume": "Small",
-      "retention": "1-3 years (permit term)",
-      "snippet": "Company name, owner, tow truck IDs, service area, issuing authority",
+      "volume": "Medium",
+      "retention": "License term (1-3 years)",
+      "snippet": "License number, operator name, company name, truck unit number, vehicle license plate (linked), photograph (via hash), expiration date, background check status, insurance policy ID, police rotation zo",
       "tags": [
         "towing",
-        "vehicle",
-        "recovery",
-        "permits",
-        "professional",
-        "occupational",
-        "licenses"
+        "vehicle-recovery",
+        "municipal-permit",
+        "police-rotation",
+        "predatory-towing",
+        "consumer-protection",
+        "roadside-safety",
+        "enforcement"
       ]
     },
     {
       "slug": "trade-credit-insurance",
-      "title": "Trade credit insurance policies",
+      "title": "Trade Credit Insurance (TCI) Policies",
       "category": "Specialty Insurance",
-      "volume": "Small",
-      "retention": "Policy term + 7-10 years",
-      "snippet": "Insured seller, buyer creditworthiness, coverage limits, credit terms",
-      "tags": [
-        "trade",
-        "credit",
-        "insurance",
-        "risk",
-        "management"
-      ]
-    },
-    {
-      "slug": "trade-finance-bills-of-lading",
-      "title": "Trade finance: Bills of lading",
-      "category": "Trade Finance",
-      "volume": "Small",
-      "retention": "7-10 years (shipment + disputes)",
-      "snippet": "Shipper name, consignee name, carrier name, goods description, port of loading, port of discharge, B/L number",
-      "tags": [
-        "trade",
-        "finance",
-        "bills",
-        "lading",
-        "banking",
-        "financial",
-        "services"
-      ]
-    },
-    {
-      "slug": "trade-finance-certificates-of-origin",
-      "title": "Trade finance: Certificates of origin",
-      "category": "Trade Finance",
-      "volume": "Small",
-      "retention": "7-10 years (customs/trade disputes)",
-      "snippet": "Exporter name, importer name, goods description, origin country, chamber of commerce certification, certificate number",
-      "tags": [
-        "trade",
-        "finance",
-        "certificates",
-        "origin",
-        "banking",
-        "financial",
-        "services"
-      ]
-    },
-    {
-      "slug": "trade-finance-commercial-invoices",
-      "title": "Trade finance: Commercial invoices",
-      "category": "Trade Finance",
       "volume": "Medium",
-      "retention": "7-10 years (tax/customs audit)",
-      "snippet": "Exporter name, importer name, goods description, invoice value, Incoterms, payment terms, invoice date",
+      "retention": "Policy term + 7 years (audit / claims lifecycle)",
+      "snippet": "Policy number, insurer name, insured name, buyer name, buyer tax ID (DUNS/EIN), approved credit limit amount, maximum payment terms (e.g., 60 days), effective date, notice expiration date, currency, c",
       "tags": [
-        "trade",
-        "finance",
-        "commercial",
-        "invoices",
-        "banking",
-        "financial",
-        "services"
+        "trade-credit",
+        "ar-insurance",
+        "credit-limit",
+        "euler-hermes",
+        "atradius",
+        "coface",
+        "invoice-financing",
+        "insolvency-protection",
+        "b2b-fraud"
+      ]
+    },
+    {
+      "slug": "trade-finance-documents",
+      "title": "Trade Finance: Bills of Lading",
+      "category": "Trade Finance",
+      "volume": "Very Large",
+      "retention": "7-10 years (statute of limitations / loan term)",
+      "snippet": "B/L number, carrier name, shipper name, consignee name (The Bank), notify party, vessel name, IMO number, on-board date, port of loading, description of goods (HS Code), total package count, weight/vo",
+      "tags": [
+        "anti-dumping",
+        "bank-collateral",
+        "bill-of-lading",
+        "cargo-fraud",
+        "certificate-of-origin",
+        "chamber-of-commerce",
+        "commercial-invoice",
+        "customs-duty",
+        "customs-valuation",
+        "documentary-collection",
+        "export-billing",
+        "fta-preferential-origin",
+        "incoterms",
+        "letter-of-credit",
+        "maritime-title",
+        "money-laundering",
+        "tariff-evasion",
+        "tbml",
+        "trade-compliance",
+        "trade-finance",
+        "ucc-article-7"
       ]
     },
     {
@@ -6666,8 +6220,8 @@
       ]
     },
     {
-      "slug": "utility-worker-verification",
-      "title": "Utility worker verification (gas/electric/water)",
+      "slug": "utility-field-worker-verification",
+      "title": "Utility & Field Worker Verification",
       "category": "Personal Safety & Service Verification",
       "volume": "Large",
       "retention": "Service + 1-3 years (access records)",
@@ -6680,7 +6234,11 @@
         "safety",
         "service",
         "home-security",
-        "fraud-prevention"
+        "fraud-prevention",
+        "meter-reader",
+        "surveyor",
+        "con-edison",
+        "field-operations"
       ]
     },
     {
@@ -6757,62 +6315,74 @@
     },
     {
       "slug": "visa-denial-notices",
-      "title": "Visa denial notices",
+      "title": "Visa Denial Notices",
       "category": "Immigration & Visa Documents",
-      "volume": "Small",
-      "retention": "Denial + 10 years (reapplication)",
-      "snippet": "Full name, case number, denial reason/INA section, denial date, consular officer",
+      "volume": "Large",
+      "retention": "Denial + 10 years (reapplication lifecycle)",
+      "snippet": "Case number, applicant full name, date of birth, nationality, denial section code (e.g., 214b, 212a6C), denial date, consular post location, issuing officer ID, waiver eligibility status.",
       "tags": [
-        "visa",
-        "denial",
-        "notices",
         "immigration",
-        "documents"
+        "visa-denial",
+        "214b",
+        "consular-processing",
+        "travel-fraud",
+        "embassy-verification",
+        "visa-reapplication",
+        "admissibility"
       ]
     },
     {
       "slug": "visa-extension-change-of-status",
-      "title": "Visa extension and change of status approvals",
+      "title": "Visa Extensions and Change of Status approvals",
       "category": "Immigration & Visa Documents",
       "volume": "Medium",
-      "retention": "Approval + 10 years",
-      "snippet": "Full name, passport number, current status, new status/extension, approval date, receipt number",
+      "retention": "New status validity + 7 years",
+      "snippet": "Receipt number (e.g., WAC/LIN/EAC), petitioner/employer name, beneficiary name, case type (I-129/I-539), notice date, approval dates (start/end), new visa class (e.g., H-1B, O-1, L-1), I-94 number (li",
       "tags": [
-        "visa",
-        "extension",
-        "change",
-        "status",
         "immigration",
-        "documents"
+        "visa-extension",
+        "change-of-status",
+        "i-797",
+        "uscis",
+        "h1b-extension",
+        "work-authorization",
+        "legal-stay"
       ]
     },
     {
       "slug": "visa-fee-receipts",
-      "title": "Visa fee receipts and biometrics appointments",
+      "title": "Visa Fee Receipts (MRV)",
       "category": "Immigration & Visa Documents",
-      "volume": "Large",
-      "retention": "3-7 years",
-      "snippet": "Applicant name, receipt number, fee amount, payment date, appointment date/time (if applicable), visa category",
+      "volume": "Very Large",
+      "retention": "Appointment Date + 1-2 years (financial audit)",
+      "snippet": "Receipt number (CGI Ref), applicant name, passport number (masked), fee amount (USD), equivalent in local currency, payment date/time, consular post location, visa type (e.g., B1/B2), payment method (",
       "tags": [
-        "visa",
-        "receipts",
         "immigration",
-        "documents"
+        "visa-fee",
+        "mrv-receipt",
+        "consular-fees",
+        "travel-fraud",
+        "expense-reimbursement",
+        "appointment-booking",
+        "identity-theft"
       ]
     },
     {
       "slug": "vocational-certifications",
-      "title": "Vocational certifications (trade skills, technical training)",
+      "title": "Vocational Certifications",
       "category": "Professional & Educational Qualifications",
-      "volume": "Very Small",
-      "retention": "5-10 years (certification validity)",
-      "snippet": "Trainee name, skill area, certifying body, certification date, credential number, competency level",
+      "volume": "Very Large",
+      "retention": "Permanent (career skills record)",
+      "snippet": "Student name, school ID, trade specialization, specific technical codes (e.g., AWS D1.1, EPA 608), date of completion, credit hours, instructor name/ID, school accreditation number, certificate serial",
       "tags": [
-        "vocational",
-        "certifications",
-        "professional",
-        "educational",
-        "qualifications"
+        "trade-skills",
+        "vocational-training",
+        "welding-cert",
+        "hvac-license",
+        "skilled-trades",
+        "job-readiness",
+        "credential-fraud",
+        "industrial-safety"
       ]
     },
     {
@@ -6834,49 +6404,38 @@
     },
     {
       "slug": "voter-registration",
-      "title": "Voter registration confirmations",
+      "title": "Voter Registration Confirmations",
       "category": "Government & Civic Documents",
-      "volume": "Medium",
-      "retention": "Election cycle + 2-4 years",
-      "snippet": "Voter name, address, precinct number, registration date, voter ID number (if applicable), jurisdiction",
+      "volume": "Very Large",
+      "retention": "Election cycle + 4 years",
+      "snippet": "Voter ID number, voter name, residential address, party affiliation, precinct/ward ID, polling place location, registration date, status (Active/Inactive), date of last ballot cast (hash), issuing boa",
       "tags": [
-        "voter",
-        "registration",
-        "immigration",
-        "visa",
-        "documents"
+        "elections",
+        "voter-id",
+        "registration-card",
+        "civic-duty",
+        "voter-integrity",
+        "government-records",
+        "poll-worker-vetting",
+        "democracy"
       ]
     },
     {
       "slug": "war-risk-piracy-insurance",
-      "title": "War risk and piracy insurance certificates",
+      "title": "War Risk and Piracy Insurance Certificates",
       "category": "Specialty Insurance",
-      "volume": "Small",
-      "retention": "Voyage + 7 years",
-      "snippet": "Vessel owner, vessel IMO, covered war zones, piracy areas, premium, insurer",
+      "volume": "Very Small",
+      "retention": "Voyage + 10 years (claims / audit)",
+      "snippet": "IMO number, vessel name, insurer name, insured owner name, voyage dates, specific HRA zones (e.g., Red Sea, Indian Ocean), hull value limit, TPL (Third-Party Liability) limit, kidnap & ransom (K&R) su",
       "tags": [
-        "risk",
-        "piracy",
-        "insurance",
-        "logistics",
-        "transportation"
-      ]
-    },
-    {
-      "slug": "warehouse-receipts-storage",
-      "title": "Warehouse Receipts and Storage Agreements",
-      "category": "Warehousing & Inventory",
-      "volume": "Medium",
-      "retention": "Storage period + 7-10 years (financial audit / tax)",
-      "snippet": "Receipt number, warehouse operator name, facility ID, depositor name, account number, itemized SKUs and quantities, total weight/volume, storage location (Aisle/Bin), estimated value, date of entry, l",
-      "tags": [
-        "logistics",
-        "warehousing",
-        "inventory-management",
-        "collateral-fraud",
-        "supply-chain",
-        "asset-verification",
-        "trade-finance"
+        "specialty-insurance",
+        "war-risk",
+        "piracy-coverage",
+        "maritime-security",
+        "high-risk-transit",
+        "vessel-protection",
+        "marine-finance",
+        "armed-guard-verification"
       ]
     },
     {
@@ -6887,11 +6446,16 @@
       "retention": "7-10 years (financial audit, loan lifecycle)",
       "snippet": "Warehouse Operator (Issuer), Depositor (Current Owner), Commodity Details (Grade, Brand, Crop Year), Weights (Gross/Net), Storage Location (Specific Shed/Bay), Warrant Number, Rent/Storage Paid To Dat",
       "tags": [
-        "logistics",
-        "trade-finance",
+        "asset-verification",
+        "collateral-fraud",
         "commodities",
+        "fraud-prevention",
+        "inventory-management",
+        "logistics",
+        "supply-chain",
+        "trade-finance",
         "warehouse",
-        "fraud-prevention"
+        "warehousing"
       ]
     },
     {
@@ -6932,35 +6496,38 @@
     },
     {
       "slug": "wetlands-delineation-reports",
-      "title": "Wetlands delineation reports",
+      "title": "Wetlands Delineation Reports",
       "category": "Real Estate & Property",
       "volume": "Very Small",
-      "retention": "Permanent (environmental compliance)",
-      "snippet": "Property owner, environmental consultant, site address, wetland boundaries",
+      "retention": "20-30 years (permit term / development history)",
+      "snippet": "Report number, site name, parcel ID (APN), property address, total acreage surveyed, verified wetland acreage, wetland classification (e.g., Emergent, Forested, Scrub-Shrub), USACE jurisdictional stat",
       "tags": [
-        "wetlands",
-        "delineation",
-        "reports",
-        "real",
-        "estate",
-        "property"
+        "environmental",
+        "wetlands-delineation",
+        "clean-water-act",
+        "section-404-permit",
+        "land-development",
+        "environmental-survey",
+        "usace",
+        "real-estate-fraud"
       ]
     },
     {
       "slug": "wetlands-fill-mitigation-permits",
-      "title": "Wetlands fill and mitigation permits (404 permits)",
+      "title": "Wetlands Fill and Mitigation Permits",
       "category": "Environmental & Natural Resource Permits",
-      "volume": "Small",
-      "retention": "Permanent (environmental records)",
-      "snippet": "Applicant, property, wetland impacts, mitigation plan, USACE/EPA",
+      "volume": "Very Small",
+      "retention": "Project lifecycle + 20 years (environmental liability)",
+      "snippet": "Permit ID, permittee name, project name, total authorized fill acreage, temporary impact acreage, required mitigation credits, name of mitigation bank, credit retirement ID, effective date, expiration",
       "tags": [
-        "wetlands",
-        "fill",
-        "mitigation",
-        "permits",
         "environmental",
-        "natural",
-        "resource"
+        "section-404-permit",
+        "wetlands-fill",
+        "mitigation-banking",
+        "usace",
+        "clean-water-act",
+        "land-development",
+        "habitat-restoration"
       ]
     },
     {
@@ -6987,49 +6554,35 @@
       "title": "Wire Transfer Confirmations (SWIFT/Fedwire)",
       "category": "Banking & Payments",
       "volume": "Medium-Small",
-      "retention": "7-10 years (audit trail, regulatory requirements)",
-      "snippet": "IMAD/OMAD Number (Fedwire) or TRN (SWIFT), Amount, Currency, Date/Time, Originator Name, Beneficiary Name, Beneficiary Bank, Status (Sent/Completed/Failed).",
+      "retention": "7-10 years (audit trail / regulatory requirement)",
+      "snippet": "IMAD/OMAD number (Fedwire), TRN (SWIFT), UETR (Unique End-to-End Transaction Ref), originator name, beneficiary name, beneficiary bank (BIC/Swift Code), beneficiary account number (masked), transactio",
       "tags": [
         "wire-transfer",
         "swift",
         "fedwire",
-        "banking",
-        "finance",
-        "fraud-prevention",
-        "bec"
+        "banking-fraud",
+        "bec-scam",
+        "transaction-verification",
+        "trade-finance",
+        "real-estate-closing"
       ]
     },
     {
       "slug": "workers-comp-certificates",
-      "title": "Workers' compensation insurance certificates",
+      "title": "Workers' Compensation Insurance Certificates",
       "category": "Commercial Lines Insurance",
-      "volume": "Medium",
-      "retention": "Policy term + 7-10 years",
-      "snippet": "Employer name, coverage state, policy number, effective dates, insurer name",
+      "volume": "Very Large",
+      "retention": "Policy term + 30-50 years (medical/disability lifecycle)",
+      "snippet": "Policy number, insurer name (NAIC), insured name, FEIN, policy effective/expiration dates, statutory limit status, employers liability limits (per accident/disease), payroll class codes (e.g., 5445 - ",
       "tags": [
-        "workers",
-        "comp",
-        "certificates",
-        "commercial",
-        "lines",
-        "insurance"
-      ]
-    },
-    {
-      "slug": "workers-comp-reserve-certifications",
-      "title": "Workers' compensation reserve certifications",
-      "category": "Actuarial & Insurance Mathematics",
-      "volume": "Small",
-      "retention": "10-20 years (claim lifetime)",
-      "snippet": "Actuary name, employer name, jurisdiction, reserve amounts, claim development patterns",
-      "tags": [
-        "workers",
-        "comp",
-        "reserve",
-        "certifications",
-        "actuarial",
-        "insurance",
-        "mathematics"
+        "commercial-insurance",
+        "workers-comp",
+        "coi-verification",
+        "payroll-audit",
+        "workplace-safety",
+        "sub-contractor-vetting",
+        "insurance-fraud",
+        "statutory-coverage"
       ]
     },
     {
@@ -7055,15 +6608,15 @@
   "categoriesList": [
     {
       "name": "Real Estate & Property",
-      "count": 34
-    },
-    {
-      "name": "Travel & Hospitality",
-      "count": 27
+      "count": 30
     },
     {
       "name": "Specialty Insurance",
-      "count": 24
+      "count": 22
+    },
+    {
+      "name": "Travel & Hospitality",
+      "count": 21
     },
     {
       "name": "Immigration & Visa Documents",
@@ -7071,18 +6624,6 @@
     },
     {
       "name": "Shipping & Freight",
-      "count": 17
-    },
-    {
-      "name": "Personal Safety & Service Verification",
-      "count": 16
-    },
-    {
-      "name": "Personal Lines Insurance",
-      "count": 15
-    },
-    {
-      "name": "Insurance Claims & Operations",
       "count": 14
     },
     {
@@ -7090,15 +6631,19 @@
       "count": 14
     },
     {
-      "name": "Government & Civic Documents",
-      "count": 13
+      "name": "Personal Safety & Service Verification",
+      "count": 14
     },
     {
       "name": "Banking & Payments",
       "count": 12
     },
     {
-      "name": "Actuarial & Insurance Mathematics",
+      "name": "Government & Civic Documents",
+      "count": 12
+    },
+    {
+      "name": "Insurance Claims & Operations",
       "count": 12
     },
     {
@@ -7106,35 +6651,31 @@
       "count": 12
     },
     {
-      "name": "Product Certifications & Compliance",
-      "count": 12
+      "name": "Personal Lines Insurance",
+      "count": 11
     },
     {
       "name": "Commercial Lines Insurance",
       "count": 11
     },
     {
-      "name": "Notary Services",
-      "count": 10
+      "name": "Product Certifications & Compliance",
+      "count": 11
     },
     {
       "name": "Professional & Occupational Licenses",
       "count": 10
     },
     {
+      "name": "Actuarial & Insurance Mathematics",
+      "count": 9
+    },
+    {
       "name": "Healthcare & Medical Records",
       "count": 9
     },
     {
-      "name": "Customs & Trade Compliance",
-      "count": 9
-    },
-    {
       "name": "Business & Commerce",
-      "count": 9
-    },
-    {
-      "name": "Financial & Legal Documents",
       "count": 8
     },
     {
@@ -7142,11 +6683,11 @@
       "count": 8
     },
     {
-      "name": "Art & Collectibles",
+      "name": "Notary Services",
       "count": 7
     },
     {
-      "name": "Financial Compliance",
+      "name": "Financial & Legal Documents",
       "count": 7
     },
     {
@@ -7154,11 +6695,15 @@
       "count": 7
     },
     {
-      "name": "Trade Finance",
-      "count": 7
+      "name": "Customs & Trade Compliance",
+      "count": 6
     },
     {
       "name": "Sports & Athletics",
+      "count": 6
+    },
+    {
+      "name": "Financial Compliance",
       "count": 6
     },
     {
@@ -7170,16 +6715,24 @@
       "count": 5
     },
     {
-      "name": "Warehousing & Inventory",
-      "count": 5
-    },
-    {
       "name": "Delegated Authority",
       "count": 5
     },
     {
+      "name": "Trade Finance",
+      "count": 5
+    },
+    {
+      "name": "Warehousing & Inventory",
+      "count": 4
+    },
+    {
       "name": "Media & Publishing",
       "count": 4
+    },
+    {
+      "name": "Art & Collectibles",
+      "count": 3
     },
     {
       "name": "Energy & Utilities",
@@ -7203,10 +6756,6 @@
     },
     {
       "name": "Authorized Agent Confirmations",
-      "count": 2
-    },
-    {
-      "name": "Vehicle & Fleet",
       "count": 2
     },
     {
@@ -7275,6 +6824,10 @@
     },
     {
       "name": "Vehicle displays",
+      "count": 1
+    },
+    {
+      "name": "Vehicle & Fleet",
       "count": 1
     },
     {
