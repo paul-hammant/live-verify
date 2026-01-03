@@ -8,7 +8,7 @@ Proof-of-concept implementations demonstrating **Text-to-Hash** verification (of
 - **OCR Path:** Camera or image clip -> OCR -> normalized-text -> hash -> GET.
 - **Selection Path:** Selected digital text -> normalization -> hash -> GET.
 
-### Integration Vision:
+### Integration Vision
 These capabilities are designed for building into camera apps, browsers (mobile/desktop), email clients, PDF viewers, messaging systems (SMS, WhatsApp, iMessage), and collaboration tools (Slack, Discord).
 
 ### POC 1: Camera-Based Document Verification
@@ -268,7 +268,7 @@ Issuers can optionally provide document-specific normalization rules and OCR opt
   "charNormalization": "éèêë→e àáâä→a ìíîï→i òóôö→o ùúûü→u ñ→n ç→c",
   "ocrNormalizationRules": [
     {
-      "pattern": "CHF\\s+(\\d)",
+      "pattern": "CHF\s+(\d)",
       "replacement": "CHF$1",
       "description": "Remove space between CHF currency code and amount"
     }
@@ -388,7 +388,7 @@ Issuers can specify legal/regulatory requirements for how verification apps must
     ],
     "purposeLimitation": "Verification only. Cannot use captured data for ML training, analytics, or secondary purposes. Audit logs tied to specific patient encounters for treatment/compliance purposes only.",
     "dataMinimization": "App should not transmit captured image to issuer. Only hash and verification result. Audit logs must not include provider names, license numbers, or provider-specific identifiers—only role/specialty and verification status.",
-    "userConsent": "App must notify user that verification data is being processed and retained per this policy. For family members: 'Your verification of this provider will be logged in patient's medical record as: [family member] verified [provider role] at [timestamp]'",
+    "userConsent": "App must notify user that verification data is being processed and retained per this policy. For family members: 'Your verification of this provider will be logged in patient's medical record as: [family member] verified [provider role] at [timestamp] '",
     "incidentReporting": "If verification app is compromised, issuer domain operator must be notified within 24 hours.",
     "contextualAwareness": "Verification audit logs should distinguish between: staff member verifying peer (internal audit), family member verifying provider (patient safety), visitor verification (security). Each has different retention and privacy implications.",
     "abuseProtection": {
@@ -693,26 +693,6 @@ GitHub Pages provides this automatically.
 ### Easter Egg
 Click the app title to see build timestamp.
 
-## Recent Development (Jan 2025)
-
-### Progress Bar Timing Fix
-- **Issue:** Progress bar appeared before camera shutter
-- **Fix:** Reordered code to capture image first, then show processing
-
-### Test Coverage Expansion
-- Added `app-logic.test.js` (29 tests) for pure functions
-- Extracted testable logic from `live-verify-app.js`
-- All production browser code now tested (except DOM/API-dependent code)
-
-### Documentation Updates
-- Added SHA-256 parameters to NORMALIZATION.md (UTF-8 input, hex lowercase output, no HMAC)
-- Updated implementation notes to reflect test coverage
-
-### Code Deduplication
-- Created `public/normalize.js` as single source of truth
-- Removed duplicate normalization from `live-verify-app.js` and test pages
-- Build tool mirrors the same logic
-
 ## Known Limitations
 
 1. **OCR accuracy**: Tesseract isn't perfect, may need retries
@@ -722,35 +702,6 @@ Click the app title to see build timestamp.
 5. **HTTPS required**: Camera API needs HTTPS (GitHub Pages provides this)
 6. **Wide-angle lens**: Some phones capture wide FOV, reducing text pixel density
 7. **iOS zoom**: No zoom control available on iOS Safari
-
-## Architecture Rationale
-
-1. **No server costs**: Static files on GitHub Pages = free
-2. **Privacy**: No data sent to servers, everything processed locally
-3. **Offline capable**: After initial load, works without internet (except URL verification)
-4. **Mobile-first**: Designed for phone cameras
-5. **Simple deployment**: Just push to GitHub
-6. **Transparent**: All code visible, no black boxes
-7. **Scalable**: Each org hosts their own verification endpoints
-8. **Testable**: 68 unit tests + 16 E2E tests, all production code tested
-
-## How Certification Agencies Use This
-
-1. **Generate certification text**
-2. **Normalize it** using same rules (Unicode + whitespace)
-3. **Compute SHA-256 hash**
-4. **Create base URL for printing**: `verify:your-org.com/c`
-5. **Print text + registration marks + base URL** on document (use Courier New font for verify: URL)
-6. **Host endpoint** at `https://your-org.com/c/{hash}` returning:
-   - HTTP 200 status
-   - Body containing "OK" (or "REVOKED" to fail verification)
-   - CORS header: `Access-Control-Allow-Origin: *`
-7. **Optional: Host `.verification-meta.json`** at `https://your-org.com/c/.verification-meta.json` with:
-   - Document-specific normalization rules (`charNormalization` for diacritics, `ocrNormalizationRules` for regex cleanup)
-   - Optional Tesseract OCR optimization settings
-   - Character whitelist specific to your document type (in `tesseract` section)
-
-Note: The document shows `verify:your-org.com/c` but the app converts this to `https://your-org.com/c/{hash}` when fetching.
 
 ## Development Guidelines
 
@@ -811,87 +762,6 @@ The app verifies:
 - Can't forge a URL with correct hash without the original text
 - Can't alter text without changing the hash
 - Can't use someone else's hash because OCR'd URL won't match
-
-## If Returning to This Project
-
-### Quick Start
-```bash
-npm install
-npm test                    # Should see 68 + 16 tests pass
-```
-
-### Key Files to Review
-- `public/live-verify-app.js` - Main app logic
-- `public/normalize.js` - Normalization (tested)
-- `public/app-logic.js` - Pure functions (tested)
-- `public/cv/detectSquares.js` - Computer vision
-- `ocr-hash.test.js` - Test cases showing expected behavior
-- `app-logic.test.js` - More test cases
-- `NORMALIZATION.md` - Complete normalization spec
-
-### Common Tasks
-- **Add training page:** Edit `generate-training-pages.js`, run it, add hash to `build-hashes.js`
-- **Change normalization:** Update `public/normalize.js`, verify tests pass
-- **Fix detection:** Adjust thresholds in `public/cv/detectSquares.js`
-- **Add fixture:** Place PNG in `test/fixtures/should-detect/`, add `.txt` with expected text
-
-## Use-Case-Specific Implementation Nuances
-
-**This section addresses practical considerations for specific organization types.**
-
-### Healthcare Facilities: The Credentialing Complexity
-
-**Key Nuance:** Healthcare adds regulatory layers that hotels don't have.
-
-- **Credential Verification vs. Identity Verification:** Your patients need to know both "who is this person?" (identity) and "are they licensed?" (credential). The e-Ink badge solves the second; photo handles the first. Budget time for staff training that this is *not* the same as traditional photo ID checks
-- **License Boards Integration:** If you want real-time license status (suspended, expired, active), you need to either:
-  - Partner with state medical/nursing boards for API access (complex, 3-6 months)
-  - Pre-generate badge hashes daily from board data (requires daily hash rebuilds)
-  - Use hash-based status (simpler, but less real-time)
-- **Abusive Patient Escalation:** You will get calls from staff saying "A patient scanned my badge 10 times in 2 hours." Rate limiting prevents this at the app level, but you need security/HR procedures to actually *respond*. Budget time for legal review of harassment policy *before* deployment
-- **HIPAA Audit Log Retention:** Your audit logs documenting "Dr. Smith was verified at 2:15 PM in CCU" are medical records. They stay for 6 years minimum under HIPAA. Budget data storage; don't assume it's negligible
-- **Timeline Expectation:** Healthcare implementation is 12-18 months (vs. 6-12 months for hotels), mostly due to regulatory review and credentialing integration
-
-### Police Departments: The Officer Safety Paradox
-
-**Key Nuance:** Verification helps citizens, but exposes officers to doxing. You must solve this or face officer resistance.
-
-- **Privacy-Protective Claim vs. Badge Display:** The breakthrough is that your badge can show "Officer A 1332" (for identification) but the verification claim never includes the badge number. Instead, it verifies "NYC Police Department officer, active duty, authorized for traffic enforcement" (anonymized, role-based). This is *the* critical architectural choice. Without this, you cannot ethically deploy to officers working organized crime, narcotics, or undercover
-- **Rotating Salt Non-Negotiable:** If your police department issues static badges with permanent hashes, you've created a searchable database. A suspect verifies an officer's hash, then can verify it repeatedly to track the officer's movements (Brixton, then Peckham, then Westminster = movement trail). You must use ephemeral hashes (10-minute rotation) or officers will resist
-- **Federal vs. Local:** FBI, ATF, and federal agents have even higher operational security needs. If you deploy to federal LEO, your verification system cannot expose operational assignment or task force affiliation. Design around this from day one
-- **Citizen Verification Expectations:** Not all citizens will understand why they can verify an officer is real but can't see the officer's full name. Budget time for public education. Some will feel this is "opaque." Address this in your messaging
-- **Timeline Expectation:** 9-15 months, heavily back-loaded with officer buy-in and operational security review
-
-### Hotels & Vacation Rentals: The Counterfeiting Problem
-
-**Key Nuance:** Your biggest risk is printed counterfeits. E-Ink doesn't help if counterfeits are in circulation.
-
-- **Badge Replacement Logistics:** When you switch to e-Ink, you have old plastic badges in circulation. You need a *sunset policy* — plastic badges stop working on Date X. Without this, guests see both types and may not understand which is real. Budget 3-6 months to get all staff switched over; shorter timelines will have parallel authentication confusion
-- **Guest Training:** Not all guests will carry phones or understand how to scan. Some will ask staff to do it for them (defeats the purpose). Budget time for signage ("You can scan our staff badges using the hotel app") and guest education
-- **Turnover Reality:** If you have 50% staff turnover annually, issuing new badges for half your staff every year is normal ops. If you have 20% turnover, badge distribution isn't a burden. Know your baseline
-- **Third-Party Contractors:** Housekeeping, maintenance, laundry, food service contractors may not want e-Ink badges if they work multiple hotels. Will you mandate it? Provide it? Ensure contracts allow it? This is an underestimated friction point
-- **Timeline Expectation:** 6-10 months for hotels (shorter than healthcare/police because fewer regulatory constraints)
-
-### Residential Buildings & Apartment Management: The Burden of Proof
-
-**Key Nuance:** You're asking residents to trust a system they didn't choose, for contractors they didn't hire.
-
-- **Resident Adoption:** Unlike hotels, residents have limited incentive to scan contractor badges if they're expecting the work. The value proposition ("Are you sure you want to let a stranger in?") only works if residents are naturally skeptical. Know your resident demographics before deploying
-- **Work Order Integration:** For e-Ink verification to work, your badge system must tie to your work order system. A contractor shows up with badge for unit 412 on Friday 9-5, but there's no work order in the system. Now the resident won't let them in *correctly*, but you have a service gap. Budget time for integrating badges with your maintenance scheduling software
-- **Contractor Resistance:** Many plumbers, electricians, and HVAC companies work multiple buildings. They won't want separate badges for each. Provide lanyards, centralized distribution, or other solutions to reduce friction
-- **Insurance & Liability:** If a contractor commits theft and claims "But I was verified, so that proves I was authorized," your insurance may have questions. Work with your insurance and legal counsel on liability implications *before* deployment
-- **Timeline Expectation:** 8-12 months (contractor coordination adds friction)
-
-### Event Venues & Hospitality: The Temporary Logistics Challenge
-
-**Key Nuance:** You're managing hundreds of workers you'll never see again. Verification is useful, but only if you have a process to issue badges quickly.
-
-- **Just-In-Time Badge Printing:** Unlike permanent staff, event contractors arrive 2-3 days before setup. You don't have time for a 3-week badge process. You need *rapid printing* (24 hours or less) or a kiosk system for on-site badge generation. Budget for this upfront
-- **Multi-Company Coordination:** If setup involves 5 different contractors (security, catering, AV, talent handlers, event staff), they all need badges issued by 5 different companies. Who coordinates? Who enforces policy? One company won't adopt if others don't, and vice versa. This is a *coordination problem*, not a technology problem
-- **Post-Event Badge Destruction:** After the event, you have 500 single-use e-Ink badges. Do you recycle? Destroy? Store? Budget for disposal and secure destruction (GDPR/privacy regulation applies)
-- **Timeline Expectation:** 6-9 months to implement, but with higher ongoing logistics burden (each event = badge coordination cycle)
-
----
 
 ## Related Concepts
 

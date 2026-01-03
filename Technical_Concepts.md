@@ -13,6 +13,7 @@ This document explains technical concepts referenced across multiple use case do
 7. [OCR Challenges](#ocr-challenges)
 8. [Deployment Architecture](#deployment-architecture-air-gapped-originals-public-hashes)
 9. [Independent Witnessing & Stateful Verification](#independent-witnessing--stateful-verification)
+10. [Sector-Specific Implementation Nuances](#sector-specific-implementation-nuances)
 
 ---
 
@@ -781,26 +782,58 @@ There are two primary methods for identifying the witness service:
 
 ---
 
-## Summary
+## Sector-Specific Implementation Nuances
 
-**Key takeaways:**
+This section addresses practical considerations for specific organization types.
 
-1. **Registration marks** - Black borders help computer vision find the scannable region
-2. **Normalization** - Ensures consistent hashing despite OCR variations
-3. **Domain binding** - Verification text specifies trusted authority, prevents impersonation
-4. **Hash algorithms** - SHA-256 default, SHA-512 for high-security (passports)
-5. **Response formats** - Simple "OK" or rich JSON with status/photo/metadata (keep minimal in practice)
-6. **Photo encoding** - Base64 prevents enumeration, preserves privacy
-7. **OCR challenges** - Works great for plain text today, on-device AI will handle ornate documents soon
-8. **Deployment architecture** - Air-gap original records, publish only hashes to DMZ/public; static files ideal
+### Healthcare Facilities: The Credentialing Complexity
 
-**For implementation details:**
-- Text normalization rules: [NORMALIZATION.md](NORMALIZATION.md)
-- Creating verifiable documents: [README.md: For Organizations](README.md#for-organizations-creating-verifiable-documents)
-- Computer vision detection: [public/cv/detectSquares.js](public/cv/detectSquares.js)
-- Domain authority extraction: [public/domain-authority.js](public/domain-authority.js)
+**Key Nuance:** Healthcare adds regulatory layers that hotels don't have.
 
-**Related documentation:**
-- [Multi_Representation_Verification.md](Multi_Representation_Verification.md) - How one legal claim can have unlimited text representations
-- [Verification_Charges.md](Verification_Charges.md) - Business models for free vs paid verification
-- [LLM.md](LLM.md) - Complete project context for AI assistants
+- **Credential Verification vs. Identity Verification:** Your patients need to know both "who is this person?" (identity) and "are they licensed?" (credential). The e-Ink badge solves the second; photo handles the first. Budget time for staff training that this is *not* the same as traditional photo ID checks
+- **License Boards Integration:** If you want real-time license status (suspended, expired, active), you need to either:
+  - Partner with state medical/nursing boards for API access (complex, 3-6 months)
+  - Pre-generate badge hashes daily from board data (requires daily hash rebuilds)
+  - Use hash-based status (simpler, but less real-time)
+- **Abusive Patient Escalation:** You will get calls from staff saying "A patient scanned my badge 10 times in 2 hours." Rate limiting prevents this at the app level, but you need security/HR procedures to actually *respond*. Budget time for legal review of harassment policy *before* deployment
+- **HIPAA Audit Log Retention:** Your audit logs documenting "Dr. Smith was verified at 2:15 PM in CCU" are medical records. They stay for 6 years minimum under HIPAA. Budget data storage; don't assume it's negligible
+- **Timeline Expectation:** Healthcare implementation is 12-18 months (vs. 6-12 months for hotels), mostly due to regulatory review and credentialing integration
+
+### Police Departments: The Officer Safety Paradox
+
+**Key Nuance:** Verification helps citizens, but exposes officers to doxing. You must solve this or face officer resistance.
+
+- **Privacy-Protective Claim vs. Badge Display:** The breakthrough is that your badge can show "Officer A 1332" (for identification) but the verification claim never includes the badge number. Instead, it verifies "NYC Police Department officer, active duty, authorized for traffic enforcement" (anonymized, role-based). This is *the* critical architectural choice. Without this, you cannot ethically deploy to officers working organized crime, narcotics, or undercover
+- **Rotating Salt Non-Negotiable:** If your police department issues static badges with permanent hashes, you've created a searchable database. A suspect verifies an officer's hash, then can verify it repeatedly to track the officer's movements (Brixton, then Peckham, then Westminster = movement trail). You must use ephemeral hashes (10-minute rotation) or officers will resist
+- **Federal vs. Local:** FBI, ATF, and federal agents have even higher operational security needs. If you deploy to federal LEO, your verification system cannot expose operational assignment or task force affiliation. Design around this from day one
+- **Citizen Verification Expectations:** Not all citizens will understand why they can verify an officer is real but can't see the officer's full name. Budget time for public education. Some will feel this is "opaque." Address this in your messaging
+- **Timeline Expectation:** 9-15 months, heavily back-loaded with officer buy-in and operational security review
+
+### Hotels & Vacation Rentals: The Counterfeiting Problem
+
+**Key Nuance:** Your biggest risk is printed counterfeits. E-Ink doesn't help if counterfeits are in circulation.
+
+- **Badge Replacement Logistics:** When you switch to e-Ink, you have old plastic badges in circulation. You need a *sunset policy* — plastic badges stop working on Date X. Without this, guests see both types and may not understand which is real. Budget 3-6 months to get all staff switched over; shorter timelines will have parallel authentication confusion
+- **Guest Training:** Not all guests will carry phones or understand how to scan. Some will ask staff to do it for them (defeats the purpose). Budget time for signage ("You can scan our staff badges using the hotel app") and guest education
+- **Turnover Reality:** If you have 50% staff turnover annually, issuing new badges for half your staff every year is normal ops. If you have 20% turnover, badge distribution isn't a burden. Know your baseline
+- **Third-Party Contractors:** Housekeeping, maintenance, laundry, food service contractors may not want e-Ink badges if they work multiple hotels. Will you mandate it? Provide it? Ensure contracts allow it? This is an underestimated friction point
+- **Timeline Expectation:** 6-10 months for hotels (shorter than healthcare/police because fewer regulatory constraints)
+
+### Residential Buildings & Apartment Management: The Burden of Proof
+
+**Key Nuance:** You're asking residents to trust a system they didn't choose, for contractors they didn't hire.
+
+- **Resident Adoption:** Unlike hotels, residents have limited incentive to scan contractor badges if they're expecting the work. The value proposition ("Are you sure you want to let a stranger in?") only works if residents are naturally skeptical. Know your resident demographics before deploying
+- **Work Order Integration:** For e-Ink verification to work, your badge system must tie to your work order system. A contractor shows up with badge for unit 412 on Friday 9-5, but there's no work order in the system. Now the resident won't let them in *correctly*, but you have a service gap. Budget time for integrating badges with your maintenance scheduling software
+- **Contractor Resistance:** Many plumbers, electricians, and HVAC companies work multiple buildings. They won't want separate badges for each. Provide lanyards, centralized distribution, or other solutions to reduce friction
+- **Insurance & Liability:** If a contractor commits theft and claims "But I was verified, so that proves I was authorized," your insurance may have questions. Work with your insurance and legal counsel on liability implications *before* deployment
+- **Timeline Expectation:** 8-12 months (contractor coordination adds friction)
+
+### Event Venues & Hospitality: The Temporary Logistics Challenge
+
+**Key Nuance:** You're managing hundreds of workers you'll never see again. Verification is useful, but only if you have a process to issue badges quickly.
+
+- **Just-In-Time Badge Printing:** Unlike permanent staff, event contractors arrive 2-3 days before setup. You don't have time for a 3-week badge process. You need *rapid printing* (24 hours or less) or a kiosk system for on-site badge generation. Budget for this upfront
+- **Multi-Company Coordination:** If setup involves 5 different contractors (security, catering, AV, talent handlers, event staff), they all need badges issued by 5 different companies. Who coordinates? Who enforces policy? One company won't adopt if others don't, and vice versa. This is a *coordination problem*, not a technology problem
+- **Post-Event Badge Destruction:** After the event, you have 500 single-use e-Ink badges. Do you recycle? Destroy? Store? Budget for disposal and secure destruction (GDPR/privacy regulation applies)
+- **Timeline Expectation:** 6-9 months to implement, but with higher ongoing logistics burden (each event = badge coordination cycle)
