@@ -337,9 +337,27 @@ Issuers can specify legal/regulatory requirements for how verification apps must
       "retention": "1 year (HIPAA medical record retention)"
     },
     "applicableLaws": [
-      "HIPAA (if patient data visible in capture)",
-      "GDPR (if EU user)",
-      "CCPA (if California resident)"
+      {
+        "name": "HIPAA Privacy Rule",
+        "condition": "if patient data visible in capture",
+        "regulation": "45 CFR §164.500",
+        "canonical": "https://www.hhs.gov/hipaa/for-professionals/privacy/index.html",
+        "impact": "Captured badge images containing patient information must be deleted immediately. Audit logs retained for 1 year per medical record requirements."
+      },
+      {
+        "name": "GDPR",
+        "condition": "if EU user or data processed in EU",
+        "articles": "Articles 5-6 (Processing Principles), Article 35 (Data Protection Impact Assessment)",
+        "canonical": "https://gdpr-info.eu/",
+        "impact": "Data minimization required. Only non-identifiable role/specialty verified, no provider names. User consent required before processing."
+      },
+      {
+        "name": "CCPA",
+        "condition": "if California resident",
+        "statute": "California Consumer Privacy Act §1798.100+",
+        "canonical": "https://oag.ca.gov/privacy/ccpa",
+        "impact": "Consumer right to know/delete. Audit logs tied to patient encounter (not provider-identifiable). No sale of verification data."
+      }
     ],
     "purposeLimitation": "Verification only. Cannot use captured data for ML training, analytics, or secondary purposes. Audit logs tied to specific patient encounters for treatment/compliance purposes only.",
     "dataMinimization": "App should not transmit captured image to issuer. Only hash and verification result. Audit logs must not include provider names, license numbers, or provider-specific identifiers—only role/specialty and verification status.",
