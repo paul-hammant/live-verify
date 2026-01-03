@@ -1,5 +1,5 @@
 {
-  "generated": "2026-01-03T08:18:10.525Z",
+  "generated": "2026-01-03T08:33:43.912Z",
   "totalUseCases": 368,
   "categories": {
     "Real Estate & Property": 30,
@@ -41,7 +41,7 @@
     "Delegated Authority": 5,
     "Intellectual Property Law": 3,
     "Safety Inspection Certificates": 3,
-    "Financial Rollups": 1,
+    "Financial": 1,
     "Government & Identity": 1,
     "Trade Finance": 5,
     "Environmental & Natural Resource Permits": 3,
@@ -54,7 +54,7 @@
     "Insurance & Actuarial": 1,
     "Licensed premises": 1,
     "Gaming & Gambling": 1,
-    "Membership Rollups": 1,
+    "Membership": 1,
     "Legal & Contracts": 1,
     "Technology & Software": 1,
     "Banking & Legal Records": 1,
@@ -1858,9 +1858,9 @@
       ]
     },
     {
-      "slug": "rollup-deposits-held-by-third-parties",
-      "title": "Deposits Held by Third Parties (Rollup)",
-      "category": "Financial Rollups",
+      "slug": "deposits-held-by-third-parties",
+      "title": "Deposits Held by Third Parties",
+      "category": "Financial",
       "volume": "Unknown",
       "retention": "Unknown",
       "snippet": "",
@@ -3877,9 +3877,9 @@
       ]
     },
     {
-      "slug": "rollup-membership-cards-external-benefits",
-      "title": "Membership Cards with External Benefits (Rollup)",
-      "category": "Membership Rollups",
+      "slug": "membership-cards-external-benefits",
+      "title": "Membership Cards with External Benefits",
+      "category": "Membership",
       "volume": "Unknown",
       "retention": "Unknown",
       "snippet": "Member Name, Member Number, Membership Tier (Basic, Plus, Premier), Valid Through Date, Home Club (regional affiliate), Covered Vehicles (if listed), Household Members (if applicable).",
@@ -6825,7 +6825,7 @@
       "count": 1
     },
     {
-      "name": "Financial Rollups",
+      "name": "Financial",
       "count": 1
     },
     {
@@ -6853,7 +6853,7 @@
       "count": 1
     },
     {
-      "name": "Membership Rollups",
+      "name": "Membership",
       "count": 1
     },
     {

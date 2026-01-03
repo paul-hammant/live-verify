@@ -1,8 +1,8 @@
 ---
-title: "Deposits Held by Third Parties (Rollup)"
-category: "Financial Rollups"
-type: "rollup"
-slug: "rollup-deposits-held-by-third-parties"
+title: "Deposits Held by Third Parties"
+category: "Financial"
+type: "summary"
+slug: "deposits-held-by-third-parties"
 tags: ["deposit", "escrow", "security-deposit", "reserve-fund", "trust-account", "retainage", "sinking-fund", "fiduciary", "prepaid"]
 ---
 
@@ -10,7 +10,7 @@ tags: ["deposit", "escrow", "security-deposit", "reserve-fund", "trust-account",
 
 You gave someone money to hold. You have a receipt. But is the money still there?
 
-This rollup covers the universal pattern: an individual or business pays a deposit to a third party, who is supposed to hold it safely and return it (or apply it) under specified conditions. The depositor wants to:
+This summary covers the universal pattern: an individual or business pays a deposit to a third party, who is supposed to hold it safely and return it (or apply it) under specified conditions. The depositor wants to:
 
 1. **Verify the deposit exists** in the holder's records
 2. **Subscribe to status changes** (applied, released, forfeited, transferred)

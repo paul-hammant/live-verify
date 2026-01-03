@@ -82,7 +82,7 @@ Patient name, member ID (partial), provider name, service date, CPT codes (proce
 - **Explanation of Benefits (EOB):** The primary post-service record.
 - **Predetermination of Benefits:** (Linked hash) for high-cost surgery estimates.
 - **HSA/FSA Substantiation Receipt:** Proving an expense was "eligible."
-- **Tax-Deduction Summary:** Annual rollup of patient responsibility.
+- **Tax-Deduction Summary:** Annual summary of patient responsibility.
 
 ## Data Visible After Verification
 

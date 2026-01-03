@@ -1,8 +1,8 @@
 ---
-title: "Membership Cards with External Benefits (Rollup)"
-category: "Membership Rollups"
-type: "rollup"
-slug: "rollup-membership-cards-external-benefits"
+title: "Membership Cards with External Benefits"
+category: "Membership"
+type: "summary"
+slug: "membership-cards-external-benefits"
 tags: ["membership", "club", "association", "benefits", "discounts", "reciprocal", "aaa", "professional-society", "union", "alumni"]
 ---
 
