@@ -5,7 +5,6 @@ volume: "Small"
 retention: "Permanent (sports history and records)"
 slug: "athletic-records-timing-results"
 tags: ["sports", "athletics", "timing", "records", "ratification", "olympics"]
-derivations: 1
 furtherDerivations: 1
 ---
 

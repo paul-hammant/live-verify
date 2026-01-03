@@ -5,7 +5,6 @@ volume: "Large"
 retention: "7-10 years (tax/audit)"
 slug: "health-insurance-eobs"
 tags: ["health-insurance", "eob", "medical-billing", "hsa-fsa-compliance", "tax-deduction", "patient-responsibility", "insurance-fraud"]
-derivations: 1
 furtherDerivations: 1
 ---
 

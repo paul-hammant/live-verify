@@ -5,7 +5,6 @@ volume: "Medium"
 retention: "Policy term + 7 years"
 slug: "commercial-auto-insurance"
 tags: ["commercial-auto", "fleet-insurance", "logistics", "dot-compliance", "trucking", "hired-non-owned"]
-derivations: 1
 furtherDerivations: 1
 ---
 

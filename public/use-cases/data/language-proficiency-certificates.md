@@ -5,7 +5,6 @@ volume: "Very Small"
 retention: "2-5 years (test validity)"
 slug: "language-proficiency-certificates"
 tags: ["toefl", "ielts", "english-proficiency", "higher-education", "immigration-visa", "test-scores", "academic-credential", "ets"]
-derivations: 1
 furtherDerivations: 1
 ---
 

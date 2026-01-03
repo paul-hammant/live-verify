@@ -5,7 +5,6 @@ volume: "Medium"
 retention: "Permanent (until citizenship or 10 years of work)"
 slug: "sponsorship-affidavits-i864"
 tags: ["immigration", "i-864", "affidavit-of-support", "uscis", "visa-sponsorship", "public-charge", "legal-contract", "financial-sponsorship"]
-derivations: 1
 furtherDerivations: 1
 ---
 

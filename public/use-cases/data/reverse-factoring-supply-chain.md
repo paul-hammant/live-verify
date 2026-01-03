@@ -5,7 +5,6 @@ volume: "Small"
 retention: "7-10 years (audit trail / financial cycle)"
 slug: "reverse-factoring-supply-chain"
 tags: ["supply-chain-finance", "reverse-factoring", "trade-finance", "invoice-financing", "ar-audit", "corporate-treasury", "banking-fraud", "supplier-payment"]
-derivations: 1
 furtherDerivations: 1
 ---
 

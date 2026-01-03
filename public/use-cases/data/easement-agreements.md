@@ -5,7 +5,6 @@ volume: "Tiny"
 retention: "Permanent (property encumbrance)"
 slug: "easement-agreements"
 tags: ["real-estate", "property-rights", "easement-grant", "utility-access", "land-use", "title-search", "legal-description"]
-derivations: 1
 furtherDerivations: 1
 ---
 

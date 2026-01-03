@@ -5,7 +5,6 @@ volume: "Medium"
 retention: "Active use + 30 years"
 slug: "hazardous-materials-sds-sheets"
 tags: ["hazmat", "sds", "osha-compliance", "chemical-safety", "ghs", "emergency-response", "product-stewardship"]
-derivations: 1
 furtherDerivations: 1
 ---
 

@@ -5,7 +5,6 @@ volume: "Medium"
 retention: "License term (1-3 years)"
 slug: "towing-vehicle-recovery-permits"
 tags: ["towing", "vehicle-recovery", "municipal-permit", "police-rotation", "predatory-towing", "consumer-protection", "roadside-safety", "enforcement"]
-derivations: 1
 furtherDerivations: 1
 ---
 

@@ -5,7 +5,6 @@ volume: "Small"
 retention: "Event + 7 years"
 slug: "contingency-insurance-events"
 tags: ["contingency-insurance", "event-cancellation", "non-appearance", "special-events", "lloyds", "risk-management"]
-derivations: 1
 furtherDerivations: 1
 ---
 

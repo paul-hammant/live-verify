@@ -5,7 +5,6 @@ volume: "Medium"
 retention: "Care period + 3-7 years"
 slug: "childcare-provider-verification"
 tags: ["childcare", "nanny", "babysitter", "background-check", "first-aid", "personal-safety", "home-security"]
-derivations: 1
 furtherDerivations: 1
 ---
 

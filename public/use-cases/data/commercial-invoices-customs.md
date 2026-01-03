@@ -5,7 +5,6 @@ volume: "Very Large"
 retention: "7-10 years (customs audit cycle)"
 slug: "commercial-invoices-customs"
 tags: ["customs", "export-import", "commercial-invoice", "trade-compliance", "hs-codes", "tariff-valuation", "duty-evasion-prevention"]
-derivations: 1
 furtherDerivations: 1
 ---
 

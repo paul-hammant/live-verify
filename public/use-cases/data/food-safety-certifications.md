@@ -5,7 +5,6 @@ volume: "Small"
 retention: "2-7 years (audit cycles)"
 slug: "food-safety-certifications"
 tags: ["food-safety", "haccp", "sqf", "brcgs", "organic-certification", "kosher-halal", "supply-chain-transparency", "gfsi"]
-derivations: 1
 furtherDerivations: 1
 ---
 

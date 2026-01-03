@@ -5,7 +5,6 @@ volume: "Very Small"
 retention: "Permanent (legal guardianship)"
 slug: "adoption-custody-orders"
 tags: ["adoption", "custody", "orders", "court", "family", "law"]
-derivations: 1
 furtherDerivations: 1
 ---
 

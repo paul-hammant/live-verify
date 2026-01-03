@@ -5,7 +5,6 @@ volume: "Medium"
 retention: "7-10 years (tax, audit, dispute resolution)"
 slug: "fund-nav-statements"
 tags: ["hedge-fund", "private-equity", "nav-statement", "fund-administration", "wealth-management", "madoff-prevention", "asset-valuation", "reit", "pension", "endowment", "variable-annuity", "interval-fund", "bdc"]
-derivations: 1
 furtherDerivations: 1
 ---
 

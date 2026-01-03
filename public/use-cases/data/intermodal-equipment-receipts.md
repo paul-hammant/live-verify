@@ -5,7 +5,6 @@ volume: "Very Large"
 retention: "Equipment return + 7 years"
 slug: "intermodal-equipment-receipts"
 tags: ["logistics", "intermodal", "chassis-inspection", "container-damage", "terminal-operations", "eir", "liability-transfer", "port-logistics"]
-derivations: 1
 furtherDerivations: 1
 ---
 

@@ -5,7 +5,6 @@ volume: "Large"
 retention: "Shipment completion plus 7-10 years (disputes, customs audits)"
 slug: "ocean-shipping-waybills"
 tags: ["bill-of-lading", "bol", "cargo", "cargo-receipt", "customs-clearance", "customs-compliance", "document-of-title", "logistics", "maritime", "maritime-fraud", "non-negotiable", "ocean-freight", "sea-waybill", "shipping", "supply-chain-fraud", "trade-finance"]
-derivations: 3
 furtherDerivations: 3
 ---
 

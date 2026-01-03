@@ -5,7 +5,6 @@ volume: "Very Small"
 retention: "Permanent (may show REVOKED status)"
 slug: "investment-advisor-certifications"
 tags: ["ria", "iar", "investment-advisor", "sec-registered", "fiduciary", "wealth-management", "compliance-audit", "iapd"]
-derivations: 1
 furtherDerivations: 1
 ---
 

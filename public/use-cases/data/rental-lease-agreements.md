@@ -5,7 +5,6 @@ volume: "Very Large"
 retention: "7-10 years post-termination"
 slug: "rental-lease-agreements"
 tags: ["rental", "lease", "agreements", "real", "estate", "property", "tenant-rights", "landlord-compliance"]
-derivations: 1
 furtherDerivations: 1
 ---
 

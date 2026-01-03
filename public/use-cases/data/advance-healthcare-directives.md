@@ -5,7 +5,6 @@ volume: "Small"
 retention: "Permanent (end-of-life care)"
 slug: "advance-healthcare-directives"
 tags: ["advance", "healthcare", "directives", "living", "will", "medical", "power", "attorney"]
-derivations: 1
 furtherDerivations: 1
 ---
 

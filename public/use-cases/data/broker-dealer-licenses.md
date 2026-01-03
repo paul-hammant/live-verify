@@ -5,7 +5,6 @@ volume: "Very Small"
 retention: "Permanent (may show REVOKED status)"
 slug: "broker-dealer-licenses"
 tags: ["finra", "sec", "broker-dealer", "investment-advisor", "series-7", "brokercheck", "compliance"]
-derivations: 1
 furtherDerivations: 1
 ---
 

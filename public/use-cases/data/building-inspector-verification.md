@@ -5,7 +5,6 @@ volume: "Medium"
 retention: "Inspection + 3-7 years (compliance)"
 slug: "building-inspector-verification"
 tags: ["safety", "inspector", "badge", "verification", "home-security", "municipal", "government"]
-derivations: 1
 furtherDerivations: 1
 ---
 

@@ -5,7 +5,6 @@ volume: "Very Small"
 retention: "Permanent (chain of title)"
 slug: "international-title-insurance"
 tags: ["international-real-estate", "title-insurance", "cross-border-finance", "foreign-investment", "legal-indemnity", "title-search", "risk-mitigation"]
-derivations: 1
 furtherDerivations: 1
 ---
 

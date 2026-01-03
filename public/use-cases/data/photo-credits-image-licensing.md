@@ -5,7 +5,6 @@ volume: "Small"
 retention: "5-20 years (license term / copyright lifecycle)"
 slug: "photo-credits-image-licensing"
 tags: ["photography", "intellectual-property", "copyright-law", "image-licensing", "digital-rights-management", "publishing-audit", "media-fraud", "getty-images"]
-derivations: 1
 furtherDerivations: 1
 ---
 

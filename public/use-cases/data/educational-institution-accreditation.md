@@ -5,7 +5,6 @@ volume: "Tiny"
 retention: "Permanent (institutional status)"
 slug: "educational-institution-accreditation"
 tags: ["university-accreditation", "higher-education", "regional-accreditor", "che-accredited", "diploma-mill-prevention", "academic-standards", "institutional-integrity"]
-derivations: 1
 furtherDerivations: 1
 ---
 

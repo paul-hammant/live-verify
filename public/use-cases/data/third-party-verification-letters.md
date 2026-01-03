@@ -5,7 +5,6 @@ volume: "Medium"
 retention: "5-10 years (loan term / financial audit)"
 slug: "third-party-verification-letters"
 tags: ["income-verification", "employment-verification", "voi", "voe", "background-check", "mortgage-underwriting", "fintech", "compliance", "fraud-prevention"]
-derivations: 1
 furtherDerivations: 1
 ---
 

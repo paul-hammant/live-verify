@@ -5,7 +5,6 @@ volume: "Small"
 retention: "Lifetime (transfusion safety)"
 slug: "blood-type-donor-cards"
 tags: ["blood-type", "blood-donor", "transfusion", "emergency", "red-cross", "hematology"]
-derivations: 1
 furtherDerivations: 1
 ---
 

@@ -5,7 +5,6 @@ volume: "Very Large"
 retention: "Permanent (license lifecycle)"
 slug: "professional-licenses"
 tags: ["professional-licensing", "medical-license", "legal-bar", "occupational-license", "practitioner-vetting", "credentialing", "public-safety", "consumer-protection"]
-derivations: 1
 furtherDerivations: 1
 ---
 

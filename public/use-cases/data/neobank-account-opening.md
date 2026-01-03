@@ -5,7 +5,6 @@ volume: "Medium"
 retention: "5-10 years (customer relationship)"
 slug: "neobank-account-opening"
 tags: ["neobank", "account", "opening", "banking", "financial", "kyc", "monzo", "revolut", "chime"]
-derivations: 1
 furtherDerivations: 1
 ---
 

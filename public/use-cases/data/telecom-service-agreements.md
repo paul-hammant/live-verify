@@ -5,7 +5,6 @@ volume: "Medium"
 retention: "7-10 years (contract lifecycle / statute of limitations)"
 slug: "telecom-service-agreements"
 tags: ["telecom", "sla", "service-agreement", "cloud-services", "contract-dispute", "uptime-guarantee", "business-continuity"]
-derivations: 1
 furtherDerivations: 1
 ---
 

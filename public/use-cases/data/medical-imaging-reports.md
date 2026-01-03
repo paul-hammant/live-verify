@@ -5,7 +5,6 @@ volume: "Medium"
 retention: "10-30 years (diagnostic history)"
 slug: "medical-imaging-reports"
 tags: ["radiology-report", "mri-scan", "ct-scan", "x-ray-findings", "diagnostic-imaging", "medical-verification", "patient-safety", "radiologist-attestation"]
-derivations: 1
 furtherDerivations: 1
 ---
 

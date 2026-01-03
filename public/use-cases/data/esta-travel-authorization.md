@@ -5,7 +5,6 @@ volume: "Very Large"
 retention: "2 years (ESTA validity)"
 slug: "esta-travel-authorization"
 tags: ["immigration", "esta", "visa-waiver-program", "cbp", "travel-authorization", "international-travel", "border-security"]
-derivations: 1
 furtherDerivations: 1
 ---
 

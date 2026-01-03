@@ -5,7 +5,6 @@ volume: "Medium"
 retention: "Permanent (public land records)"
 slug: "recording-page-abstracts"
 tags: ["real-estate", "county-recorder", "deed-fraud", "property-records", "title-search", "land-registry", "abstract-of-title", "e-recording"]
-derivations: 1
 furtherDerivations: 1
 ---
 

@@ -5,7 +5,6 @@ volume: "Large"
 retention: "Travel + 5-10 years (immigration)"
 slug: "border-crossing-receipts-i94"
 tags: ["immigration", "i-94", "visa", "cbp", "border-crossing", "entry-record", "employment-eligibility"]
-derivations: 1
 furtherDerivations: 1
 ---
 

@@ -5,7 +5,6 @@ volume: "Large"
 retention: "3-7 years (renewal cycles)"
 slug: "continuing-education-credits"
 tags: ["professional-education", "cle", "cme", "cpe", "licensing", "compliance", "training-certificate"]
-derivations: 1
 furtherDerivations: 1
 ---
 

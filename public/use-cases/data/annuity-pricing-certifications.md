@@ -5,7 +5,6 @@ volume: "Very Small"
 retention: "7-30 years (contract lifetime)"
 slug: "annuity-pricing-certifications"
 tags: ["actuarial", "annuity", "pricing", "insurance", "solvency", "compliance"]
-derivations: 1
 furtherDerivations: 1
 ---
 

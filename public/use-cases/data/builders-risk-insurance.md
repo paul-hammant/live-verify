@@ -5,7 +5,6 @@ volume: "Small"
 retention: "Construction period + 7-10 years"
 slug: "builders-risk-insurance"
 tags: ["construction", "insurance", "builders-risk", "contractor", "real-estate-development", "risk-management"]
-derivations: 1
 furtherDerivations: 1
 ---
 

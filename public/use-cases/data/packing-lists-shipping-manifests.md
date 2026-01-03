@@ -5,7 +5,6 @@ volume: "Very Large"
 retention: "7-10 years (customs/legal)"
 slug: "packing-lists-shipping-manifests"
 tags: ["packing", "lists", "shipping", "manifests", "logistics", "transportation", "customs-compliance", "cargo-security"]
-derivations: 1
 furtherDerivations: 1
 ---
 

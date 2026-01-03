@@ -5,7 +5,6 @@ volume: "Very Small"
 retention: "Permanent (artwork care)"
 slug: "conservation-reports"
 tags: ["art-conservation", "restoration", "condition-report", "provenance", "museum-standards", "art-history"]
-derivations: 1
 furtherDerivations: 1
 ---
 

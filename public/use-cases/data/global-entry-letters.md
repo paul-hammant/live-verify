@@ -5,7 +5,6 @@ volume: "Medium"
 retention: "5 years (membership validity)"
 slug: "global-entry-letters"
 tags: ["immigration", "global-entry", "tsa-precheck", "cbp", "trusted-traveler", "border-security", "membership-verification"]
-derivations: 1
 furtherDerivations: 1
 ---
 

@@ -5,7 +5,6 @@ volume: "Tiny"
 retention: "Permanent (industry standards)"
 slug: "mortality-morbidity-tables"
 tags: ["actuarial-standards", "mortality-table", "soa", "life-insurance-pricing", "valuation-manual", "actuarial-certification", "risk-modeling"]
-derivations: 1
 furtherDerivations: 1
 ---
 

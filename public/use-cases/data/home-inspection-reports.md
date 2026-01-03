@@ -5,7 +5,6 @@ volume: "Small"
 retention: "5-10 years (transaction records)"
 slug: "home-inspection-reports"
 tags: ["real-estate", "home-inspection", "property-condition", "structural-integrity", "ashi-certified", "internachi", "due-diligence"]
-derivations: 1
 furtherDerivations: 1
 ---
 

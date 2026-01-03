@@ -6,7 +6,6 @@ volume: "Medium"
 retention: "20 years (utility/plant), 15 years (design)"
 slug: "patents"
 tags: ["patent", "intellectual-property", "USPTO", "EPO", "invention"]
-derivations: 1
 furtherDerivations: 1
 ---
 

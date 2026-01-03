@@ -5,7 +5,6 @@ volume: "Medium"
 retention: "5-10 years (crop insurance/audit)"
 slug: "harvest-records-yield-data"
 tags: ["agriculture", "harvest-records", "yield-monitor", "crop-insurance", "farming", "ag-tech", "supply-chain-traceability"]
-derivations: 1
 furtherDerivations: 1
 ---
 

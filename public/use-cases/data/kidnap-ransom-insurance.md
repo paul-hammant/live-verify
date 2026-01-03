@@ -5,7 +5,6 @@ volume: "Tiny"
 retention: "Policy term + 10 years"
 slug: "kidnap-ransom-insurance"
 tags: ["k-and-r", "crisis-response", "extortion-insurance", "executive-protection", "high-risk-travel", "corporate-security", "lloyds"]
-derivations: 1
 furtherDerivations: 1
 ---
 

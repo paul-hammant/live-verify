@@ -5,7 +5,6 @@ volume: "Small"
 retention: "Permanent (convertible security lifecycle)"
 slug: "safe-agreements"
 tags: ["venture-capital", "startup-funding", "safe-agreement", "y-combinator", "convertible-equity", "cap-table-integrity", "investment-fraud", "equity-financing"]
-derivations: 1
 furtherDerivations: 1
 ---
 

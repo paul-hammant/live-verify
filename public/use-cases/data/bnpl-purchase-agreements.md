@@ -5,7 +5,6 @@ volume: "Medium-Large"
 retention: "Purchase term + 3-7 years"
 slug: "bnpl-purchase-agreements"
 tags: ["bnpl", "installment-loan", "klarna", "affirm", "finance", "ecommerce", "consumer-credit"]
-derivations: 1
 furtherDerivations: 1
 ---
 

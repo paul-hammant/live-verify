@@ -5,7 +5,6 @@ volume: "Medium-Small"
 retention: "7-10 years (audit trail / regulatory requirement)"
 slug: "wire-transfer-documentation"
 tags: ["wire-transfer", "swift", "fedwire", "banking-fraud", "bec-scam", "transaction-verification", "trade-finance", "real-estate-closing"]
-derivations: 1
 furtherDerivations: 1
 ---
 

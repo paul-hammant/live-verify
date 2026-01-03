@@ -5,7 +5,6 @@ volume: "Small"
 retention: "Policy lifetime (50+ years)"
 slug: "life-insurance-policies"
 tags: ["life-insurance", "whole-life", "term-life", "beneficiary-designation", "cash-value", "financial-planning", "estate-asset", "insurance-policy"]
-derivations: 1
 furtherDerivations: 1
 ---
 

@@ -5,7 +5,6 @@ volume: "Large"
 retention: "7-10 years (customs audit)"
 slug: "customs-entry-clearance"
 tags: ["customs", "entry-summary", "cbp-form-7501", "import-clearance", "duty-payment", "trade-compliance", "logistics"]
-derivations: 1
 furtherDerivations: 1
 ---
 

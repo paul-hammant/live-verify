@@ -5,7 +5,6 @@ volume: "Medium"
 retention: "Claim term + 7 years"
 slug: "auto-insurance-documents"
 tags: ["auto", "bill-of-lading", "body-shop", "car-shipping", "card", "claim", "compliance", "damage", "dec-page", "estimate", "fraud", "inspection", "insurance", "lines", "logistics", "personal", "policies", "proof-of-insurance", "real-id", "repair", "transport"]
-derivations: 4
 furtherDerivations: 4
 ---
 

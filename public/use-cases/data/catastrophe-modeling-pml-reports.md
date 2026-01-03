@@ -5,7 +5,6 @@ volume: "Very Small"
 retention: "5-10 years (capital planning)"
 slug: "catastrophe-modeling-pml-reports"
 tags: ["catastrophe-modeling", "pml", "actuarial", "reinsurance", "risk-management", "solvency", "rms", "air-worldwide"]
-derivations: 1
 furtherDerivations: 1
 ---
 

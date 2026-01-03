@@ -5,7 +5,6 @@ volume: "Small"
 retention: "Permanent (academic records)"
 slug: "course-transcripts"
 tags: ["academic-transcript", "grades", "registrar", "university-transfer", "educational-verification", "higher-education"]
-derivations: 1
 furtherDerivations: 1
 ---
 

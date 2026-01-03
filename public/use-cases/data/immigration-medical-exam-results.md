@@ -5,7 +5,6 @@ volume: "Medium"
 retention: "Application + 7 years"
 slug: "immigration-medical-exam-results"
 tags: ["immigration", "medical-exam", "uscis", "i-693", "civil-surgeon", "vaccination-record", "public-health", "green-card"]
-derivations: 1
 furtherDerivations: 1
 ---
 

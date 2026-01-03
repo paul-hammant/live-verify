@@ -5,7 +5,6 @@ volume: "Large"
 retention: "Permanent (academic record)"
 slug: "university-degrees"
 tags: ["education", "degrees", "diploma", "transcripts", "hiring", "background-check", "diploma-mill", "university-registrar"]
-derivations: 1
 furtherDerivations: 1
 ---
 

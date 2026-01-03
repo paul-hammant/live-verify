@@ -5,7 +5,6 @@ volume: "Medium"
 retention: "Shipment + 7-10 years"
 slug: "cold-storage-temperature-records"
 tags: ["cold-chain", "logistics", "food-safety", "pharmaceutical-logistics", "temperature-monitoring", "gdp-compliance"]
-derivations: 1
 furtherDerivations: 1
 ---
 

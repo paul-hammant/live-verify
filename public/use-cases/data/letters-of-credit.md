@@ -5,7 +5,6 @@ volume: "Small (but high-value)"
 retention: "7-10 years (transaction lifecycle)"
 slug: "letters-of-credit"
 tags: ["trade-finance", "letter-of-credit", "swift-mt700", "documentary-credit", "international-trade", "export-finance", "ucp-600"]
-derivations: 1
 furtherDerivations: 1
 ---
 

@@ -5,7 +5,6 @@ volume: "Very Large"
 retention: "Rental period + 3-10 years (liability / dispute period)"
 slug: "rental-agreements"
 tags: ["rental-car", "equipment-rental", "hertz", "enterprise", "ldw-coverage", "odometer-fraud", "damage-claims", "travel-expense", "liability-release"]
-derivations: 1
 furtherDerivations: 1
 ---
 

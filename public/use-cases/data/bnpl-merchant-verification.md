@@ -5,7 +5,6 @@ volume: "Small"
 retention: "3-7 years (merchant relationship)"
 slug: "bnpl-merchant-verification"
 tags: ["bnpl", "merchant", "verification", "klarna", "affirm", "fintech", "ecommerce"]
-derivations: 1
 furtherDerivations: 1
 ---
 

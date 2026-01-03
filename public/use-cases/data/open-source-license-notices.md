@@ -5,7 +5,6 @@ volume: "Huge"
 retention: "Lifetime of product"
 slug: "open-source-license-notices"
 tags: ["open-source", "license", "gpl", "mit", "compliance", "supply-chain", "sbom"]
-derivations: 1
 furtherDerivations: 1
 ---
 

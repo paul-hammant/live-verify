@@ -5,7 +5,6 @@ volume: "Medium"
 retention: "Encounter + 1-3 years"
 slug: "immigration-officer-verification"
 tags: ["immigration-enforcement", "ice-officer", "cbp-officer", "officer-badge", "public-safety", "enforcement-integrity", "home-security"]
-derivations: 1
 furtherDerivations: 1
 ---
 

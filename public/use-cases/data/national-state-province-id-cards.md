@@ -5,7 +5,6 @@ volume: "Very Large"
 retention: "5-10 years (renewal cycles)"
 slug: "national-state-province-id-cards"
 tags: ["national-id", "state-id", "provincial-id", "identity-verification", "kyc", "fraud-prevention", "government-id", "real-id"]
-derivations: 1
 furtherDerivations: 1
 ---
 

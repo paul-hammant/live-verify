@@ -5,7 +5,6 @@ volume: "Medium"
 retention: "Tariff validity + 7 years (FMC compliance)"
 slug: "nvocc-tariffs"
 tags: ["shipping", "logistics", "nvocc", "fmc-compliance", "freight-rates", "tariff-filing", "maritime-regulation", "trade-integrity"]
-derivations: 1
 furtherDerivations: 1
 ---
 

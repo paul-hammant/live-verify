@@ -5,7 +5,6 @@ volume: "Medium"
 retention: "Policy term (1 year typical)"
 slug: "named-driver-insurance"
 tags: ["car-insurance", "named-driver", "policy-endorsement", "additional-driver", "telematics-insurance", "uninsured-motorist", "insurance-fraud"]
-derivations: 1
 furtherDerivations: 1
 ---
 

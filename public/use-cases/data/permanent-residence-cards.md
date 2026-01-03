@@ -5,7 +5,6 @@ volume: "Very Large"
 retention: "Permanent (license lifecycle)"
 slug: "permanent-residence-cards"
 tags: ["immigration", "green-card", "i-551", "uscis", "permanent-residence", "work-authorization", "identity-verification", "border-security", "i-9-compliance"]
-derivations: 1
 furtherDerivations: 1
 ---
 

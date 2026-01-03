@@ -5,7 +5,6 @@ type: "use-case"
 slug: "licensed-premises-postings"
 beneficiary: "Customers/Regulators"
 tags: ["alcohol-license", "liquor-license", "occupancy", "operating-hours", "compliance", "public-safety"]
-derivations: 1
 furtherDerivations: 1
 ---
 

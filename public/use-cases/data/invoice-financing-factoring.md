@@ -5,7 +5,6 @@ volume: "Small"
 retention: "Invoice term + 7-10 years"
 slug: "invoice-financing-factoring"
 tags: ["factoring", "invoice-financing", "accounts-receivable", "supply-chain-finance", "working-capital", "fraud-prevention", "credit-risk"]
-derivations: 1
 furtherDerivations: 1
 ---
 

@@ -5,7 +5,6 @@ volume: "Large"
 retention: "Project lifecycle + 5-10 years (appeal / legal record)"
 slug: "public-works-planning-notices"
 tags: ["zoning", "planning-permission", "public-notice", "municipal-governance", "street-works", "neighbor-rights", "city-planning", "transparency"]
-derivations: 1
 furtherDerivations: 1
 ---
 

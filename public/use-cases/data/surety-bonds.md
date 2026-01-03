@@ -5,7 +5,6 @@ volume: "Small"
 retention: "Bond term plus 10 years (claims, disputes)"
 slug: "surety-bonds"
 tags: ["surety", "bonds", "performance-bond", "payment-bond", "bid-bond", "contract-compliance", "construction-risk"]
-derivations: 1
 furtherDerivations: 1
 ---
 

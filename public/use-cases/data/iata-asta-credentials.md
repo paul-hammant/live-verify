@@ -5,7 +5,6 @@ volume: "Small"
 retention: "Statement period + 7 years"
 slug: "iata-asta-credentials"
 tags: ["iata-accredited", "asta-member", "travel-agency-credentials", "commission-verification", "travel-industry-standards", "agency-audit", "iata-numeric-code"]
-derivations: 1
 furtherDerivations: 1
 ---
 

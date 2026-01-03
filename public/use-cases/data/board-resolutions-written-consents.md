@@ -5,7 +5,6 @@ volume: "Small"
 retention: "Permanent"
 slug: "board-resolutions-written-consents"
 tags: ["corporate-governance", "board-of-directors", "resolution", "written-consent", "legal-authority", "m-and-a"]
-derivations: 1
 furtherDerivations: 1
 ---
 

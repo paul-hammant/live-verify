@@ -5,7 +5,6 @@ volume: "Small"
 retention: "Permanent (legal precedent, enforcement)"
 slug: "court-orders-judgments"
 tags: ["court-order", "judgment", "legal-enforcement", "clerk-of-court", "civil-litigation", "criminal-justice", "divorce-decree"]
-derivations: 1
 furtherDerivations: 1
 ---
 

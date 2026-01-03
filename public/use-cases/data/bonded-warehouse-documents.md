@@ -5,7 +5,6 @@ volume: "Medium"
 retention: "7-10 years (customs compliance)"
 slug: "bonded-warehouse-documents"
 tags: ["customs", "logistics", "warehouse", "duty-deferral", "international-trade", "cbp"]
-derivations: 1
 furtherDerivations: 1
 ---
 

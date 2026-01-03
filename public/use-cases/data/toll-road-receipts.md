@@ -5,7 +5,6 @@ volume: "Very Large"
 retention: "3-7 years (tax/audit requirements)"
 slug: "toll-road-receipts"
 tags: ["transportation", "toll-road", "ezpass", "fastrak", "expense-reimbursement", "logistics", "tax-audit", "rental-cars"]
-derivations: 1
 furtherDerivations: 1
 ---
 

@@ -5,7 +5,6 @@ volume: "Very Small"
 retention: "7-15 years (claims settlement)"
 slug: "loss-reserve-opinions"
 tags: ["actuarial-opinion", "loss-reserves", "property-casualty", "solvency-audit", "naic-compliance", "cas-actuary", "casualty-insurance"]
-derivations: 1
 furtherDerivations: 1
 ---
 

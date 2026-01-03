@@ -5,7 +5,6 @@ volume: "Small"
 retention: "7-10 years post-claim"
 slug: "life-insurance-claims"
 tags: ["life-insurance", "death-benefit", "beneficiary-claim", "probate-finance", "estate-settlement", "insurance-fraud", "mortality-verification"]
-derivations: 1
 furtherDerivations: 1
 ---
 

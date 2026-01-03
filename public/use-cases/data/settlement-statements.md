@@ -5,7 +5,6 @@ volume: "Very Large"
 retention: "Permanent (tax/legal / mortgage lifecycle)"
 slug: "settlement-statements"
 tags: ["real-estate", "settlement-statement", "alta", "hud-1", "closing-costs", "mortgage-fraud", "escrow-audit", "tax-compliance", "property-transfer"]
-derivations: 1
 furtherDerivations: 1
 ---
 

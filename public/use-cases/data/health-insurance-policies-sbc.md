@@ -5,7 +5,6 @@ volume: "Medium"
 retention: "Policy term + 7 years"
 slug: "health-insurance-policies-sbc"
 tags: ["health-insurance", "sbc", "aca-compliance", "summary-of-benefits", "coverage-verification", "healthcare-reform", "medical-policy"]
-derivations: 1
 furtherDerivations: 1
 ---
 

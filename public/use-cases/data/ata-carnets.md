@@ -5,7 +5,6 @@ volume: "Small"
 retention: "Carnet validity + 7 years"
 slug: "ata-carnets"
 tags: ["carnet", "customs", "trade", "logistics", "export", "import", "wco"]
-derivations: 1
 furtherDerivations: 1
 ---
 

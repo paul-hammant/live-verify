@@ -5,7 +5,6 @@ volume: "Large"
 retention: "Stay + 3-7 years (tax/dispute period)"
 slug: "vacation-rental-agreements"
 tags: ["airbnb", "vacation-rental", "short-term-rental", "booking-confirmation", "hospitality-fraud", "property-management", "rental-compliance"]
-derivations: 1
 furtherDerivations: 1
 ---
 

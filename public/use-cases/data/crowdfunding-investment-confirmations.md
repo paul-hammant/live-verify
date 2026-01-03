@@ -5,7 +5,6 @@ volume: "Small"
 retention: "3-7 years (fulfillment disputes)"
 slug: "crowdfunding-investment-confirmations"
 tags: ["kickstarter", "indiegogo", "crowdfunding", "pledge-confirmation", "equity-crowdfunding", "backer-reward", "consumer-trust"]
-derivations: 1
 furtherDerivations: 1
 ---
 

@@ -5,7 +5,6 @@ volume: "Medium"
 retention: "License term + 7 years"
 slug: "contractor-licensing-bonding"
 tags: ["contractor", "license", "surety-bond", "construction-compliance", "cslb", "building-official", "tradesman"]
-derivations: 1
 furtherDerivations: 1
 ---
 

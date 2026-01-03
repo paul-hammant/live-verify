@@ -5,7 +5,6 @@ volume: "Small"
 retention: "Lifetime (emergency care)"
 slug: "allergy-medical-alert-cards"
 tags: ["allergy", "medical", "alert", "card", "emergency", "anaphylaxis", "diabetes"]
-derivations: 1
 furtherDerivations: 1
 ---
 

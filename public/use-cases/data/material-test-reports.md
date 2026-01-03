@@ -5,7 +5,6 @@ volume: "Small"
 retention: "10-30 years (structural integrity)"
 slug: "material-test-reports"
 tags: ["mtr", "mill-certificate", "steel-testing", "material-science", "structural-integrity", "asme-compliance", "metallurgy", "supply-chain-traceability"]
-derivations: 1
 furtherDerivations: 1
 ---
 

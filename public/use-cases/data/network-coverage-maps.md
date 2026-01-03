@@ -5,7 +5,6 @@ volume: "Small"
 retention: "3-5 years (contract term)"
 slug: "network-coverage-maps"
 tags: ["network", "coverage", "maps", "telecommunications", "SLA", "5G"]
-derivations: 1
 furtherDerivations: 1
 ---
 

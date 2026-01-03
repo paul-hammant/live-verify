@@ -5,7 +5,6 @@ volume: "Small"
 retention: "7 years (IRS audit)"
 slug: "nonprofit-grant-applications"
 tags: ["nonprofit", "grant", "award", "charity", "foundation", "philanthropy"]
-derivations: 1
 furtherDerivations: 1
 ---
 

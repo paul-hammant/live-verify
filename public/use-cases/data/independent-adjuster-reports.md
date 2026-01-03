@@ -5,7 +5,6 @@ volume: "Medium"
 retention: "Claim term + 10 years"
 slug: "independent-adjuster-reports"
 tags: ["independent-adjuster", "field-inspection", "damage-assessment", "insurance-claims", "property-claim", "auto-claim", "restoration-audit", "ia-report"]
-derivations: 1
 furtherDerivations: 1
 ---
 

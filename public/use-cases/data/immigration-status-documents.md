@@ -5,7 +5,6 @@ volume: "Medium (aggregate)"
 retention: "Varies (visa validity to permanent)"
 slug: "immigration-status-documents"
 tags: ["green-card", "i-551", "naturalization-certificate", "visa-status", "uscis", "immigration-verification", "i-9-compliance"]
-derivations: 1
 furtherDerivations: 1
 ---
 

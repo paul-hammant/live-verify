@@ -5,7 +5,6 @@ volume: "Small"
 retention: "7-10 years (regulatory audit lifecycle)"
 slug: "capital-adequacy-attestations"
 tags: ["capital-adequacy", "solvency", "basel-iii", "prudential-regulation", "banking-compliance", "cfo-attestation", "financial-stability", "counterparty-risk"]
-derivations: 1
 furtherDerivations: 1
 ---
 

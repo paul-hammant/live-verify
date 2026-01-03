@@ -5,7 +5,6 @@ volume: "Medium"
 retention: "Academic term + 4 years (audit cycle)"
 slug: "registrar-residency-status-letters"
 tags: ["higher-education", "registrar", "enrollment-verification", "residency-status", "tuition-fraud", "student-benefits", "academic-integrity", "insurance-eligibility"]
-derivations: 1
 furtherDerivations: 1
 ---
 

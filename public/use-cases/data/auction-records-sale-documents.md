@@ -5,7 +5,6 @@ volume: "Very Small"
 retention: "Permanent (price history)"
 slug: "auction-records-sale-documents"
 tags: ["auction", "price-history", "hammer-price", "provenance", "collectibles", "sales-receipt"]
-derivations: 1
 furtherDerivations: 1
 ---
 

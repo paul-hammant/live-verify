@@ -5,7 +5,6 @@ volume: "Medium"
 retention: "Appointment + 5 years"
 slug: "immigration-interview-notices"
 tags: ["immigration", "uscis", "interview-notice", "green-card", "naturalization", "form-i-797", "adjustment-of-status", "visa-appointment"]
-derivations: 1
 furtherDerivations: 1
 ---
 

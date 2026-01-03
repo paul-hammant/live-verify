@@ -5,7 +5,6 @@ volume: "Large"
 retention: "Fiscal year + 7 years (tax/audit requirements)"
 slug: "purchase-orders-delivery-notes"
 tags: ["procurement", "supply-chain", "purchase-order", "delivery-note", "grn", "invoice-factoring", "three-way-match", "business-fraud"]
-derivations: 1
 furtherDerivations: 1
 ---
 

@@ -5,7 +5,6 @@ volume: "Medium"
 retention: "Appointment + 5 years"
 slug: "biometric-appointment-confirmations"
 tags: ["immigration", "visa", "uscis", "biometrics", "appointment", "asc"]
-derivations: 1
 furtherDerivations: 1
 ---
 

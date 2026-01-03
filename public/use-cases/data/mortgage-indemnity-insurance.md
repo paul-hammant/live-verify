@@ -5,7 +5,6 @@ volume: "Small"
 retention: "Mortgage term (15-30 years)"
 slug: "mortgage-indemnity-insurance"
 tags: ["lenders-mortgage-insurance", "lmi", "mortgage-insurance", "high-ltv-loan", "pmi-certificate", "mortgage-finance", "risk-mitigation"]
-derivations: 1
 furtherDerivations: 1
 ---
 

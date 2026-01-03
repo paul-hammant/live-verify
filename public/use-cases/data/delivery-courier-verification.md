@@ -5,7 +5,6 @@ volume: "Very Large"
 retention: "Delivery + 30 days"
 slug: "delivery-courier-verification"
 tags: ["logistics", "courier", "personal-safety", "amazon-delivery", "ups", "fedex", "home-security", "vulnerable-recipients", "postal", "verification", "delivery-fraud", "package-security"]
-derivations: 2
 furtherDerivations: 2
 ---
 

@@ -5,7 +5,6 @@ volume: "Medium"
 retention: "5-10 years post-relationship"
 slug: "kyc-documents"
 tags: ["address-verification", "aml", "bank-onboarding", "customer-due-diligence", "digital-id", "financial-crime", "identity-verification", "kyc", "proof-of-address", "utility-bill"]
-derivations: 2
 furtherDerivations: 2
 ---
 

@@ -5,7 +5,6 @@ volume: "Very Large (aggregate)"
 retention: "Varies by document type (1-10 years)"
 slug: "travel-hospitality-documents"
 tags: ["travel", "hospitality", "itinerary-verification", "booking-fraud", "expense-audit", "corporate-travel", "concierge-services", "supply-chain-trust"]
-derivations: 1
 furtherDerivations: 1
 ---
 

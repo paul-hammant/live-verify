@@ -5,7 +5,6 @@ volume: "Tiny"
 retention: "3-5 years (rating validity)"
 slug: "charity-rating-certificates"
 tags: ["charity", "non-profit", "rating", "transparency", "impact", "donor-trust", "charity-navigator"]
-derivations: 1
 furtherDerivations: 1
 ---
 

@@ -5,7 +5,6 @@ volume: "Very Large"
 retention: "Permanent (tax/legal records)"
 slug: "social-security-benefit-statements"
 tags: ["ssa", "social-security", "retirement-benefits", "income-verification", "ssa-1099", "government-benefits", "pension"]
-derivations: 1
 furtherDerivations: 1
 ---
 

@@ -5,7 +5,6 @@ volume: "Large"
 retention: "3-7 years (tax/disputes)"
 slug: "mobile-money-receipts"
 tags: ["m-pesa", "gcash", "bkash", "remittance", "mobile-money", "p2p-payment", "financial-inclusion", "unbanked-finance"]
-derivations: 1
 furtherDerivations: 1
 ---
 

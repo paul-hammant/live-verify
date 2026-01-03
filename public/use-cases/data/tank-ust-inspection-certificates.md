@@ -5,7 +5,6 @@ volume: "Medium"
 retention: "1-5 years (EPA/state regulatory requirement)"
 slug: "tank-ust-inspection-certificates"
 tags: ["environmental-safety", "ust-inspection", "leak-detection", "epa-compliance", "hazmat-storage", "groundwater-protection", "facility-audit", "compliance-certificate"]
-derivations: 1
 furtherDerivations: 1
 ---
 

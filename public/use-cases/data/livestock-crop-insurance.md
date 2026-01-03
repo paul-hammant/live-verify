@@ -5,7 +5,6 @@ volume: "Small"
 retention: "Policy term + 7-10 years"
 slug: "livestock-crop-insurance"
 tags: ["agriculture", "crop-insurance", "livestock-insurance", "rma", "usda", "risk-management", "rural-finance", "agribusiness"]
-derivations: 1
 furtherDerivations: 1
 ---
 

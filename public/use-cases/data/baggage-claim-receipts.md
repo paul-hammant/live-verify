@@ -5,7 +5,6 @@ volume: "Large"
 retention: "Claim resolution + 3-7 years"
 slug: "baggage-claim-receipts"
 tags: ["airline", "baggage", "receipt", "lost-luggage", "compensation", "travel-insurance", "expense"]
-derivations: 1
 furtherDerivations: 1
 ---
 

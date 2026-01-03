@@ -5,7 +5,6 @@ volume: "Small"
 retention: "3-10 years (renewal cycles)"
 slug: "industry-certifications"
 tags: ["pmp-certification", "cfa-charter", "aws-certified", "cissp", "osha-30", "professional-development", "credential-verification", "resume-integrity"]
-derivations: 1
 furtherDerivations: 1
 ---
 
