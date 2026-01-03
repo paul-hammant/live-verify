@@ -315,26 +315,53 @@ Issuers can specify legal/regulatory requirements for how verification apps must
       "auditLog": "RETAIN_1_YEAR"
     },
     "auditLogging": {
-      "description": "Context-aware audit logging for healthcare verification",
+      "description": "Context-aware audit logging for healthcare verification. Hospitals are high-stress environments where verification can happen at any time—not just key treatment moments. Family members may challenge credentials during adversarial care disputes, safety concerns, or general distrust.",
       "logStructure": {
         "timestamp": "ISO 8601 format",
         "verificationResult": "VALID, SUSPENDED, EXPIRED, or UNKNOWN",
         "verifierRole": "Staff member / Family member / Visitor",
         "patientContext": "Patient identifier (hash or MRN, NOT plain name)",
-        "treatmentContext": "Procedure type, unit (ICU/OR/etc), NOT detailed medical info",
+        "treatmentContext": "Unit/area (ICU/OR/etc), NOT detailed medical info",
         "verifiedPersonRole": "Doctor title, specialty (e.g., 'Cardiologist'), NOT name/license number",
-        "purposeOfVerification": "Treatment, family accompaniment, visitor verification"
+        "verificationContext": "Routine check / Pre-procedure consent / Care dispute / Safety concern / Unscheduled visit / Distrust/adversarial encounter",
+        "purposeOfVerification": "Why verification was sought at this moment"
       },
-      "example": {
-        "timestamp": "2025-01-03T14:23:45Z",
-        "verificationResult": "VALID",
-        "verifierRole": "Family member",
-        "patientContext": "Patient_8847 (attending Room 412)",
-        "treatmentContext": "Cardiology consultation, CCU",
-        "verifiedPersonRole": "Cardiologist (Arizona-licensed, on-duty)",
-        "purposeOfVerification": "Family member verifying surgeon credentials before procedure"
-      },
-      "retention": "1 year (HIPAA medical record retention)"
+      "examples": [
+        {
+          "timestamp": "2025-01-03T08:30:00Z",
+          "scenario": "Routine pre-procedure verification",
+          "verificationResult": "VALID",
+          "verifierRole": "Family member",
+          "patientContext": "Patient_8847",
+          "treatmentContext": "OR preparation, pre-operative",
+          "verifiedPersonRole": "Cardiologist (Arizona-licensed, on-duty)",
+          "verificationContext": "Pre-procedure consent",
+          "purposeOfVerification": "Family member confirming surgeon credentials before cardiothoracic procedure"
+        },
+        {
+          "timestamp": "2025-01-03T14:45:00Z",
+          "scenario": "Adversarial encounter during care dispute",
+          "verificationResult": "VALID",
+          "verifierRole": "Family member",
+          "patientContext": "Patient_8847",
+          "treatmentContext": "CCU",
+          "verifiedPersonRole": "Cardiologist (Arizona-licensed, on-duty)",
+          "verificationContext": "Care dispute/distrust",
+          "purposeOfVerification": "Family member challenges physician credentials during disagreement over treatment plan"
+        },
+        {
+          "timestamp": "2025-01-03T23:15:00Z",
+          "scenario": "Safety concern, unscheduled visit",
+          "verificationResult": "VALID",
+          "verifierRole": "Family member",
+          "patientContext": "Patient_8847",
+          "treatmentContext": "CCU night shift",
+          "verifiedPersonRole": "Nurse (RN, on-duty)",
+          "verificationContext": "Unscheduled visit/safety check",
+          "purposeOfVerification": "Family member verifies aide credentials during unexpected 11 PM entry to verify legitimacy of unannounced care"
+        }
+      ],
+      "retention": "1 year (HIPAA medical record retention). Audit logs may document adversarial encounters—this is expected and appropriate when family members exercise verification rights during disputes over care."
     },
     "applicableLaws": [
       {
