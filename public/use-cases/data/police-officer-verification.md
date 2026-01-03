@@ -147,6 +147,102 @@ The **Citizen (Public)** benefits from verification.
 
 **Privacy Salt:** Critical. Police officer data is sensitive. The hash must be salted to prevent "Scraping" the entire department's roster. The verification URL should only be queryable by those with the physical ID in hand.
 
+---
+
+## Privacy Protection for Police Officers: Verification Without Officer Doxing
+
+**The Hidden Risk: Officer Safety and Targeting**
+
+Police work creates enemies. Officers routinely interact with people they arrest, investigate, or cite. If a verification system exposes unique identifiers (badge numbers that can be cross-referenced with officer names, addresses, family info), hostile individuals can dox and target officers:
+
+1. Suspect sees "PC Alex D 1332, London MET" on warrant card
+2. Suspect searches London MET records for "Badge 1332" or "PC Alex D"
+3. Finds officer's full name, home address, family information, work schedule
+4. Hostile suspect now has targeting material for stalking, harassment, retaliation, or violence
+
+**Additional risk:** Officers involved in high-profile cases, civil rights incidents, or controversial shootings face targeted harassment, doxing, and death threats. A verification system shouldn't amplify that risk.
+
+**The OCR-to-Hash Solution: Decouple Authority from Identification**
+
+E-Ink warrant cards can serve **two separate purposes**:
+
+**Visual Card (for identification):**
+- Shows photo and rank: "PC Alex D, London MET"
+- Allows citizen to see who they're dealing with
+- No searchable identifiers exposed
+
+**OCR-to-Hash Verification (for authority, privacy-protected):**
+- Verifies: "Active duty officer, Metropolitan Police, authorized to conduct traffic stops and investigations"
+- NO unique identifiers (no badge number, no full name matching)
+- Claims are authority-based, not person-specific
+- Hashes can be verified against issuer domain without exposing PII
+
+**Example Claims (Two Approaches):**
+
+*Standard approach (current, officer-doxing-risky):*
+```
+PC Alex D 1332
+London Metropolitan Police
+Badge Number: 1332
+verify:met.police.uk/badge/1332
+```
+Problem: Badge number uniquely identifies the officer and is easily cross-referenceable in police records.
+
+*Privacy-protective approach (recommended):*
+```
+[Photo] Metropolitan Police
+Authorization: Traffic Enforcement
+Shift: On-Duty
+verify:met.police.uk/officer
+```
+- Warrant card displays: "PC Alex D" + photo (for identification)
+- OCR-to-hash verifies: "London Met officer, active duty, authorized for traffic enforcement, on-duty now"
+- Claim is issued by Metropolitan Police
+- Hash is computed from authority claim WITHOUT unique identifiers
+- Result: Citizen knows officer is authorized without gaining doxing material
+
+**How This Protects Officers:**
+- Verification still works (officer is authentic and active)
+- Hostile suspects cannot easily harvest personal information for targeting/doxing
+- Protects against officer harassment, stalking, violence
+- No link between verification URL and officer's searchable identity
+- Rotating salt (every 10 minutes) makes historical verification queries impossible
+
+**For Police Departments:**
+- Domain remains trusted anchor (met.police.uk)
+- Officer authority status still verified (active, on-duty, suspended, etc.)
+- Can still maintain internal logs of which officer verified with which citizen (for audit purposes)
+- But the public verification URL doesn't expose officer identity
+
+**For Citizens:**
+- Can still see officer's photo and see they're legitimate
+- Verification confirms authority without exposing officer to retaliation risk
+- No conflict between citizen safety (verification needed) and officer safety (identity protection needed)
+
+**For Undercover Operations:**
+- Undercover officers can verify authority without exposing their identity or assignment
+- Warrant card can show generic "Authorized Investigator" role without specifics that would compromise undercover status
+- Critical for officers working organized crime, narcotics, or undercover infiltration
+
+This approach separates **authority** (is this person a real cop with valid powers?) from **identity** (who exactly is this person?), enabling verification while protecting officers from targeted harassment and doxing.
+
+---
+
+## Further Derivations
+
+This use case derives two related scenarios:
+
+1. **Federal Law Enforcement Officer Verification** — FBI, ATF, DEA, Secret Service, ICE agents with multi-jurisdictional authority
+   - Higher secrecy requirements; federal officers often work undercover or in task forces
+   - Verification without compromising operational security or officer identity
+
+2. **Plainclothes/Undercover Officer Verification** — Officers working vice, narcotics, organized crime, or undercover infiltration
+   - Cannot wear uniform; must prove authority through warrant card in civilian clothes
+   - Verification critical when stopping civilians but identity exposure risks officer safety and operations
+   - Especially important: rotating salts defeat bad-actor attempts to harvest officer lists for targeting
+
+---
+
 ## Rationale
 
 Citizen safety is the primary driver. Domain binding verifies the department (police.gov, sheriff.gov). It bridges the gap between the physical presence of an officer and the digital record of their authority, enhancing public trust and police accountability.
