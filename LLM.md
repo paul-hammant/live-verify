@@ -300,10 +300,40 @@ If the app finds this file at `https://example.com/c/.verification-meta.json`, i
 - `tessedit_char_whitelist`: Allowed characters (reduces false positives)
 - `preserve_interword_spaces`: Keeps spaces between words intact
 
+**3. Data Retention & Compliance Rules (optional but recommended):**
+
+Issuers can specify legal/regulatory requirements for how verification apps must handle captured data:
+
+```json
+{
+  "compliance": {
+    "dataRetention": {
+      "capturedImage": "DELETE_IMMEDIATELY",
+      "ocrText": "DELETE_AFTER_VERIFICATION",
+      "verificationHash": "NONE",
+      "verificationResult": "RETAIN_7_DAYS",
+      "auditLog": "RETAIN_1_YEAR"
+    },
+    "applicableLaws": [
+      "HIPAA (if patient data visible in capture)",
+      "GDPR (if EU user)",
+      "CCPA (if California resident)"
+    ],
+    "purposeLimitation": "Verification only. Cannot use captured data for ML training, analytics, or secondary purposes.",
+    "dataMinimization": "App should not transmit captured image to issuer. Only hash and verification result.",
+    "userConsent": "App must notify user that verification data is being processed and retained per this policy.",
+    "incidentReporting": "If verification app is compromised, issuer domain operator must be notified within 24 hours.",
+    "notes": "Healthcare credentials: Captured badge image must not be stored if it contains patient-visible information. Police credentials: Do not retain verification requests or movement tracking."
+  }
+}
+```
+
 This is particularly useful for:
 - Documents with diacritics or special characters that need consistent normalization
 - Receipt formats with known whitespace issues (e.g., HTML tabs rendering as spaces)
 - Specialized documents with known character sets (e.g., employment letters won't have `@#$%^&*`)
+- High-security credentials (healthcare, law enforcement, government IDs) requiring strict compliance
+- Multi-jurisdictional deployments needing GDPR, HIPAA, CCPA compliance
 
 **Full verification requires these checks:**
 
