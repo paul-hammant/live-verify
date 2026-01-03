@@ -1,6 +1,6 @@
 {
-  "generated": "2026-01-03T07:40:50.961Z",
-  "totalUseCases": 367,
+  "generated": "2026-01-03T07:52:58.838Z",
+  "totalUseCases": 368,
   "categories": {
     "Real Estate & Property": 30,
     "Charitable & Non-Profit": 5,
@@ -51,6 +51,7 @@
     "Agriculture & Food": 6,
     "Bonds & Sureties": 3,
     "Food hygiene": 1,
+    "Insurance & Actuarial": 1,
     "Licensed premises": 1,
     "Gaming & Gambling": 1,
     "Membership Rollups": 1,
@@ -3149,6 +3150,23 @@
         "glp-compliance",
         "data-integrity",
         "research-quality"
+      ]
+    },
+    {
+      "slug": "insurance-claim-notification-reserving",
+      "title": "Insurance Claim Notification & Reserving",
+      "category": "Insurance & Actuarial",
+      "volume": "Very Large",
+      "retention": "Policy Period + 10-20 years (Statute of Limitations)",
+      "snippet": "Claim reference number, policy number, name of insured, date of loss, timestamp of reporting, claim type (e.g., motor, liability), status (Registered/Reserved).",
+      "tags": [
+        "insurance-fraud",
+        "reserving-fraud",
+        "actuarial-integrity",
+        "ibnr",
+        "claim-notification",
+        "independent-witness",
+        "insolvency-prevention"
       ]
     },
     {
@@ -6823,6 +6841,10 @@
       "count": 1
     },
     {
+      "name": "Insurance & Actuarial",
+      "count": 1
+    },
+    {
       "name": "Licensed premises",
       "count": 1
     },
@@ -6859,5 +6881,5 @@
       "count": 1
     }
   ],
-  "totalCategories": 58
+  "totalCategories": 59
 }

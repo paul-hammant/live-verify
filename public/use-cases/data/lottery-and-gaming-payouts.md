@@ -15,7 +15,7 @@ The **Conflict of Interest**: In most jurisdictions, the entity that issues the 
 
 OCR-to-hash with **Independent Witnessing** solves this. The moment the player sees the "WINNER" screen, they scan it. The hash is sent to an independent third-party witness (e.g., an audit firm or a public ledger). The Lottery Commission can no longer claim "no one won the draw" because a neutral record of the win notification exists.
 
-## The Essential Difference: Gambling vs. Insurance
+## Fun Fact: The Essential Difference (Gambling vs. Insurance)
 
 In the insurance industry, there is a classic riddle: *"What is the essential difference between gambling and insurance?"* The answer: *"In insurance, you must have a loss before you can have a win."*
 
