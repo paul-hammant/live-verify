@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-Proof-of-concept implementations demonstrating OCR-to-hash verification. Implements concept from Paul Hammant's blog post: [OCR-to-Hash: A Simple Audit Trail for Physical Documents](https://paulhammant.com/2023/01/17/ocr-to-hash-simple-audit-trail-for-physical-documents/).
+Proof-of-concept implementations demonstrating OCR-to-hash verification for resolving fraud or disputes. Implements concept from Paul Hammant's blog post: [OCR-to-Hash: A Simple Audit Trail for Physical Documents](https://paulhammant.com/2023/01/17/ocr-to-hash-simple-audit-trail-for-physical-documents/).
 
 ### POC 1: Camera-Based Document Verification
 `public/camera-app/index.html` — Point camera at physical document, OCR extracts text, normalizes, hashes, verifies against issuer's endpoint.
@@ -641,6 +641,7 @@ npm test                    # Should see 68 + 16 tests pass
 - NFT-less verification (no blockchain needed for basic use case)
 - The Medpro/Intertek fraud case that inspired this
 - OpenCV.js for web-based computer vision
+- Independent Witnessing and Stateful Verification (see Technical_Concepts.md)
 
 ## License
 

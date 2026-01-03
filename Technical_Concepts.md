@@ -12,6 +12,7 @@ This document explains technical concepts referenced across multiple use case do
 6. [Photo Encoding](#photo-encoding)
 7. [OCR Challenges](#ocr-challenges)
 8. [Deployment Architecture](#deployment-architecture-air-gapped-originals-public-hashes)
+9. [Independent Witnessing & Stateful Verification](#independent-witnessing--stateful-verification)
 
 ---
 
@@ -698,6 +699,37 @@ This gives CDN speed + database flexibility without exposing the database to pub
 **Hash database:** Can be public-facing, static files, cheaply hosted. If stolen, reveals nothing (hashes are one-way).
 
 **The magic:** Public can verify credentials without ever accessing the private data. Universities, medical boards, governments can offer instant verification without exposing student/patient/citizen records.
+
+---
+
+## Independent Witnessing & Stateful Verification
+
+While the underlying text of a claim is static, its **legal or financial standing** can change over time.
+
+### Stateful Verification
+
+A verification endpoint can return different statuses during the lifecycle of a document.
+
+**Example: Hotel Receipt Lifecycle**
+1.  **Day 0 (Checkout):** Guest receives receipt for $500. Hash endpoint returns `{"status": "OK", "amount": 500}`.
+2.  **Day 3 (Dispute):** Guest complains about a broken AC. Hotel agrees to a $100 refund.
+3.  **Day 4 (Update):** The hotel updates their internal system. The **same hash** endpoint now returns `{"status": "PARTIAL_REFUND", "refund_amount": 100, "net_amount": 400}`.
+
+This allows external parties (like corporate finance or tax authorities) to see the *current* reality of a claim even if they only possess the *original* document.
+
+### Independent Witnessing Services
+
+To prevent issuers from "rewriting history" (e.g., deleting a verification record to hide a mistake), some implementations use a **Secondary Witness**.
+
+**How it works:**
+1.  **Issuance:** When the issuer creates the document, they send the hash to an independent third-party service (the Witness).
+2.  **Anchoring:** The Witness stores the hash and a timestamp, often "anchoring" it to a public ledger (blockchain or certificate transparency log).
+3.  **Verification:** The verifier app checks BOTH the issuer's endpoint (for current status) and the Witness service (to prove the document existed and was valid on a certain date).
+
+**Benefits:**
+-   **Immutable Timestamps:** Proves a receipt wasn't backdated.
+-   **Anti-Deletion:** If an issuer goes out of business or deletes their records, the Witness still confirms the document's historical validity.
+-   **Audit Integrity:** Provides a neutral "neutral ground" for resolving disputes between two parties.
 
 ---
 
