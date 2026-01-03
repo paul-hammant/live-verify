@@ -152,54 +152,32 @@ See [public/domain-authority.js](public/domain-authority.js) for implementation.
 
 ## Hash Algorithms
 
-**Flexible choice based on document type and security needs** - Organizations specify their preferred algorithm via `.verification-meta.json`.
+**Default: SHA-256** - Used for most documents (degrees, receipts, certifications).
 
-### Algorithm Options
+**Properties:**
+- **256-bit output** - 64 hexadecimal characters.
+- **One-way function** - Cannot reconstruct original text from hash.
+- **Collision-resistant** - Probability of two different texts producing same hash: ~1 in 2^256 (effectively zero).
+- **Fast** - Computes in milliseconds on modern phones.
 
-**SHA-256** (Default, use for everything):
-- **Output:** 64 hexadecimal characters
-- **Properties:** One-way function, collision-resistant (probability ~1 in 2^256 ≈ 10^77), cryptographically strong
-- **Security level:** Unbreakable by brute force today, tomorrow, and for all practical purposes this century
-- **When to use:** Degrees, receipts, certifications, medical licenses, employment letters, passports, government IDs—literally everything
-- **Pros:** Widely supported, perfect balance of security and URL length, fast on phones, de facto standard
-- **Cons:** None for practical purposes
+### Flexible Algorithm Choice
 
-**SHA-512** (Optional, for extreme future-proofing only):
-- **Output:** 128 hexadecimal characters
-- **Properties:** Stronger collision resistance (2^512), theoretically more resistant to future quantum computing threats
-- **When to use:** Only if your organization specifically requires longer-term quantum resistance (50+ years) or has specific regulatory mandates
-- **Pros:** Even higher entropy (though SHA-256 is already overkill for security)
-- **Cons:** Longer URLs, no practical security benefit over SHA-256 today or in foreseeable future
+While SHA-256 is the recommended default, different use cases may prefer stronger or weaker alternatives. The preferred algorithm for a domain is specified in its [`.verification-meta.json`](#extended-response-with-metadata) file.
 
-**SHA-1** (Deprecated, do NOT use):
-- **Why:** Collision attacks discovered; no longer cryptographically secure
-- **Legacy:** Only for backward compatibility with ancient systems
+**SHA-512 for High-Security Documents** (Government IDs, Passports):
+- **Why upgrade:** Provides significantly higher collision resistance and better long-term "future-proofing" against theoretical quantum computing threats.
+- **Tradeoff:** Produces 128 hex characters (longer URLs).
 
-### Example Hash
+**Weaker/Faster Algorithms** (Low-value, high-volume micro-transactions):
+- In rare cases where extreme speed or minimal URL length is required for non-critical claims (e.g., short-lived loyalty points), an organization might choose a faster algorithm or a truncated hash, provided the entropy is managed to prevent brute-force guessing.
 
-**SHA-256 example:**
-```
-Input: "Bachelor of Science\nComputer Science\nJane Smith, 2018"
-SHA-256: fb92e9f3086212ed68adbec9e9b32767a378cdd198b9d58b34f3c8718dbb9afe
-```
-
-**SHA-512 example (same input):**
-```
-SHA-512: a1b2c3d4e5f6... (128 hex characters total)
-```
+**Verification apps must:**
+1. Check for a `hashAlgorithm` specification in the issuer's `.verification-meta.json`.
+2. Fall back to SHA-256 if no algorithm is specified.
 
 ### Configuring via .verification-meta.json
 
-**Organizations specify their hash algorithm choice:**
-
-```json
-{
-  "hashAlgorithm": "SHA-256",
-  "description": "Standard hash for degree verification"
-}
-```
-
-**For high-security documents:**
+Organizations specify their hash algorithm choice in the root-level configuration:
 
 ```json
 {
@@ -208,52 +186,8 @@ SHA-512: a1b2c3d4e5f6... (128 hex characters total)
 }
 ```
 
-**Verification apps must:**
-1. Read the `.verification-meta.json` from the issuer domain
-2. Extract the `hashAlgorithm` field (default to SHA-256 if not specified)
-3. Use the specified algorithm to compute the hash
-4. Pass the algorithm identifier to the verification endpoint (via URL parameter or header)
-
-**Example verification URL:**
-```
-# SHA-256 (default)
-https://degrees.ed.ac.uk/c/abc123def456...
-
-# SHA-512 (if configured)
-https://dmv.ca.gov/verify/sha512/abc123def456...xyz789...
-```
-
-**Alternative: Algorithm in response**
-
-For simplicity, verification endpoints can return the algorithm they expect:
-
-```json
-{
-  "hashAlgorithm": "SHA-256",
-  "status": "OK"
-}
-```
-
-This lets verifiers confirm they used the right algorithm.
-
-### Choosing the Right Algorithm
-
-**Use SHA-256 for everything** — it's already cryptographically secure for any practical threat model.
-
-**Only consider SHA-512 if:**
-- Your organization has explicit regulatory requirement for quantum-resistant algorithms (rare)
-- You're designing a system meant to remain secure for 50+ years against theoretical future quantum computers
-- Longer URLs are acceptable in your workflow
-
-**In practice:** Most organizations should just use SHA-256 and not overthink this. The security is already overkill for fraudulent document detection.
-
-### Hash not printed on document
-
-**Critical privacy property** - the hash is **never** printed on the physical document. Only the base verification URL (`verify:example.com/c`) appears. This prevents:
-- **Hash enumeration** - Can't scrape hashes from public photos of documents
-- **Direct lookup** - Need physical document text to compute hash
-- **Privacy preservation** - No public registry of "who has what credential"
-- **Algorithm flexibility** - Organization can change algorithms without re-printing documents
+**Hash not printed on document:**
+Critical privacy property - the hash is **never** printed on the physical document. Only the base verification URL (`verify:example.com/c`) appears. This prevents hash enumeration from public photos and ensures privacy.
 
 ---
 
@@ -314,24 +248,26 @@ See [Use_Case-Medical_License.md](Use_Case-Medical_License.md) for detailed JSON
 
 **Using `.verification-meta.json` configuration:**
 
-Organizations can host `https://example.com/c/.verification-meta.json` to define custom response types:
+Organizations can host `https://example.com/c/.verification-meta.json` to define custom response types and suggest more integrated participation:
 
 ```json
 {
+  "integrationLinks": {
+    "website": "https://example.com/verify-help",
+    "iosApp": "https://apps.apple.com/app/example-verify",
+    "androidApp": "https://play.google.com/store/apps/details?id=com.example.verify"
+  },
   "responseTypes": {
     "SUPERSEDED": {
       "class": "denying",
       "text": "This document has been replaced by a newer version",
       "link": "https://example.com/verification-updates.html"
-    },
-    "PENDING": {
-      "class": "neutral",
-      "text": "Verification pending - contact issuer",
-      "link": "https://example.com/contact.html"
     }
   }
 }
 ```
+
+This allows the verifier's generic app to suggest the issuer's dedicated app for a more rich experience (e.g., real-time notifications or biometric integration).
 
 See [README.md: For Organizations Creating Verifiable Documents](README.md#for-organizations-creating-verifiable-documents) for complete `.verification-meta.json` specification.
 
@@ -394,6 +330,35 @@ During transition period (20-30 years), some individuals may opt out of photo ve
 App displays: ✅ **VERIFIED by dmv.ca.gov** (no photo, issued before photo mandate)
 
 See [Use_Case-Government_IDs.md](Use_Case-Government_IDs.md) lines 236-242 for cultural transition discussion.
+
+---
+
+## Dynamic Badges & Worker Verification
+
+In some high-volume use cases (delivery drivers, utility workers, field inspectors), the "document" being verified is a **Dynamic Badge** or wearable pendant.
+
+### e-Ink Badges
+
+Static ID cards can be easily photographed or forged. Next-generation worker verification uses **e-Ink badges** that can display a rotating "Salt" or a specific "Session ID" linked to the worker's current task.
+
+**Typical Use Cases:**
+- **[Police Officer Verification](public/use-cases/data/police-officer-verification.md):** Preventing impersonation during traffic stops or home visits.
+- **[Delivery & Courier Verification](public/use-cases/data/delivery-courier-verification.md):** High-volume interactions where route-specific salts protect driver privacy.
+- **[Utility & Field Worker Verification](public/use-cases/data/utility-field-worker-verification.md):** Verifying authorized access for meter readers and repair crews.
+- **[Social Services Worker Verification](public/use-cases/data/social-services-worker-verification.md):** Ensuring the legitimacy of officials conducting sensitive home visits.
+- **[Hotel & Vacation Rental Staff](public/use-cases/data/hotel-staff-verification.md):** Verifying maintenance and room-service workers at the guest's door.
+
+**How it works:**
+1.  **Task Assignment:** A driver starts a delivery shift. Their phone app syncs a unique salt to their e-Ink badge via Bluetooth.
+2.  **Visual Presentation:** The worker shows the badge through a window or doorbell camera. The badge displays their name, ID, and the current session salt.
+3.  **No-Friction Verification:** The recipient scans the badge. The salt ensures that a simple photocopy of the badge won't verify. The hash lookup returns the worker's current duty status and assignment.
+
+### Pre-Notification Integration
+
+Where a recipient already has a relationship with the issuer (e.g., an Amazon customer expecting a package), the verification details can be pushed to the recipient's phone via SMS, email, or a mobile app **before** the worker arrives.
+
+- **Synced Metadata:** The "Verification Line" on the driver's e-Ink badge matches the details sent in the "Out for Delivery" notification.
+- **Participatory Security:** The recipient can verify the driver's authority without needing to interact or open the door, increasing safety for both parties.
 
 ---
 
