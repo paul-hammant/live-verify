@@ -72,6 +72,17 @@ The **Policyholder / Claimant** benefits from verification.
 **External Actuaries (Watson Wyatt, Milliman)**
 **Completeness Vetting:** Actuaries traditionally rely on "management data." With Text-to-Hash, actuaries can verify the *completeness* of the data they are auditing by reconciled the witnessed hash list against the management spreadsheet.
 
+## Competition vs. National Reporting Databases
+
+| Feature | Text-to-Hash (Witnessed) | Legacy Databases (CUE, ISO) |
+| :--- | :--- | :--- |
+| **Primary Goal** | **Issuer Integrity.** Prevents unbooked liabilities. | **Claimant Integrity.** Prevents double-claiming. |
+| **Timing** | **Instant.** Witnessed at the second of notification. | **Laggy.** Often updated weeks after the event. |
+| **Authority** | **Cryptographic.** Witness provides neutral proof. | **Administrative.** Relies on insurer data entry. |
+| **Accessibility** | **Open Protocol.** Anyone with the receipt can verify. | **Closed Loop.** Only available to member insurers. |
+
+**Why Text-to-Hash wins:** Legacy reporting systems like the UK's **CUE** or the US's **ISO ClaimSearch** are designed to help insurers catch fraudulent *policyholders*. They are virtually useless at catching fraudulent *management teams* because the insurer remains the gatekeeper of what data is uploaded. Text-to-Hash flips the script: the moment the public notifies the insurer, the "Witness" locks in the liability, making it impossible for management to hide it later.
+
 ## Verification Architecture
 
 **The "Management-Curated Reality" Problem**
