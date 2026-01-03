@@ -300,10 +300,208 @@ If the app finds this file at `https://example.com/c/.verification-meta.json`, i
 - `tessedit_char_whitelist`: Allowed characters (reduces false positives)
 - `preserve_interword_spaces`: Keeps spaces between words intact
 
+**3. Data Retention & Compliance Rules (optional but recommended):**
+
+Issuers can specify legal/regulatory requirements for how verification apps must handle captured data:
+
+```json
+{
+  "compliance": {
+    "dataRetention": {
+      "capturedImage": "DELETE_IMMEDIATELY",
+      "ocrText": "DELETE_AFTER_VERIFICATION",
+      "verificationHash": "NONE",
+      "verificationResult": "RETAIN_7_DAYS",
+      "auditLog": "RETAIN_1_YEAR"
+    },
+    "auditLogging": {
+      "description": "Context-aware audit logging for healthcare verification. Hospitals are high-stress environments where verification can happen at any time—not just key treatment moments. Family members may challenge credentials during adversarial care disputes, safety concerns, or general distrust.",
+      "logStructure": {
+        "timestamp": "ISO 8601 format",
+        "verificationResult": "VALID, SUSPENDED, EXPIRED, or UNKNOWN",
+        "verifierRole": "Staff member / Family member / Visitor",
+        "patientContext": "Patient identifier (hash or MRN, NOT plain name)",
+        "treatmentContext": "Unit/area (ICU/OR/etc), NOT detailed medical info",
+        "verifiedPersonRole": "Doctor title, specialty (e.g., 'Cardiologist'), NOT name/license number",
+        "verificationContext": "Routine check / Pre-procedure consent / Care dispute / Safety concern / Unscheduled visit / Distrust/adversarial encounter",
+        "purposeOfVerification": "Why verification was sought at this moment"
+      },
+      "examples": [
+        {
+          "timestamp": "2025-01-03T08:30:00Z",
+          "scenario": "Routine pre-procedure verification",
+          "verificationResult": "VALID",
+          "verifierRole": "Family member",
+          "patientContext": "Patient_8847",
+          "treatmentContext": "OR preparation, pre-operative",
+          "verifiedPersonRole": "Cardiologist (Arizona-licensed, on-duty)",
+          "verificationContext": "Pre-procedure consent",
+          "purposeOfVerification": "Family member confirming surgeon credentials before cardiothoracic procedure"
+        },
+        {
+          "timestamp": "2025-01-03T14:45:00Z",
+          "scenario": "Adversarial encounter during care dispute",
+          "verificationResult": "VALID",
+          "verifierRole": "Family member",
+          "patientContext": "Patient_8847",
+          "treatmentContext": "CCU",
+          "verifiedPersonRole": "Cardiologist (Arizona-licensed, on-duty)",
+          "verificationContext": "Care dispute/distrust",
+          "purposeOfVerification": "Family member challenges physician credentials during disagreement over treatment plan"
+        },
+        {
+          "timestamp": "2025-01-03T23:15:00Z",
+          "scenario": "Safety concern, unscheduled visit",
+          "verificationResult": "VALID",
+          "verifierRole": "Family member",
+          "patientContext": "Patient_8847",
+          "treatmentContext": "CCU night shift",
+          "verifiedPersonRole": "Nurse (RN, on-duty)",
+          "verificationContext": "Unscheduled visit/safety check",
+          "purposeOfVerification": "Family member verifies aide credentials during unexpected 11 PM entry to verify legitimacy of unannounced care"
+        }
+      ],
+      "retention": "1 year (HIPAA medical record retention). Audit logs may document adversarial encounters—this is expected and appropriate when family members exercise verification rights during disputes over care."
+    },
+    "applicableLaws": [
+      {
+        "name": "HIPAA Privacy Rule",
+        "condition": "if patient data visible in capture",
+        "regulation": "45 CFR §164.500",
+        "canonical": "https://www.hhs.gov/hipaa/for-professionals/privacy/index.html",
+        "impact": "Captured badge images containing patient information must be deleted immediately. Audit logs retained for 1 year per medical record requirements."
+      },
+      {
+        "name": "GDPR",
+        "condition": "if EU user or data processed in EU",
+        "articles": "Articles 5-6 (Processing Principles), Article 35 (Data Protection Impact Assessment)",
+        "canonical": "https://gdpr-info.eu/",
+        "impact": "Data minimization required. Only non-identifiable role/specialty verified, no provider names. User consent required before processing."
+      },
+      {
+        "name": "CCPA",
+        "condition": "if California resident",
+        "statute": "California Consumer Privacy Act §1798.100+",
+        "canonical": "https://oag.ca.gov/privacy/ccpa",
+        "impact": "Consumer right to know/delete. Audit logs tied to patient encounter (not provider-identifiable). No sale of verification data."
+      }
+    ],
+    "purposeLimitation": "Verification only. Cannot use captured data for ML training, analytics, or secondary purposes. Audit logs tied to specific patient encounters for treatment/compliance purposes only.",
+    "dataMinimization": "App should not transmit captured image to issuer. Only hash and verification result. Audit logs must not include provider names, license numbers, or provider-specific identifiers—only role/specialty and verification status.",
+    "userConsent": "App must notify user that verification data is being processed and retained per this policy. For family members: 'Your verification of this provider will be logged in patient's medical record as: [family member] verified [provider role] at [timestamp]'",
+    "incidentReporting": "If verification app is compromised, issuer domain operator must be notified within 24 hours.",
+    "contextualAwareness": "Verification audit logs should distinguish between: staff member verifying peer (internal audit), family member verifying provider (patient safety), visitor verification (security). Each has different retention and privacy implications.",
+    "abuseProtection": {
+      "description": "Protections against 'First Amendment auditors' and bad-faith verification abuse. Verification is legitimate, but systematic harassment via verification is not.",
+      "reasonableVerification": [
+        "Family member verifying provider once before treatment",
+        "Citizen verifying officer legitimacy during traffic stop",
+        "Patient verifying nurse during unexpected room entry",
+        "Staff member verifying peer credentials occasionally"
+      ],
+      "harassmentPatterns": [
+        "Same person verifying same staff member 5+ times in one shift (tracking)",
+        "Repeated verification attempts with incrementally delayed times (movement mapping)",
+        "Systematic attempts to verify all staff at facility (roster enumeration attack)",
+        "Verification requests targeting specific individuals based on name/identity (targeted harassment)",
+        "Flood verification attempts to probe endpoint vulnerabilities"
+      ],
+      "rateLimiting": {
+        "perUser": "Maximum 3 verification requests per user per staff member per 24 hours (app-level user consent)",
+        "perStaff": "CRITICAL: Monitor badge verification frequency at facility level. Alert security if same staff member receives 5+ verification attempts in 5 minutes (real-time targeting detection). This is NOT app-level rate limiting—this is facility monitoring triggering immediate security response.",
+        "perIPAddress": "NOT EFFECTIVE in practice (all facility staff behind NAT share same public IP). Do NOT rely on IP-based rate limiting.",
+        "escalation": "Upon detection of rapid verification attempts on a staff member: (1) Consider alerting facility security to conduct welfare check on staff member's location, (2) Notify staff member and management, (3) Document incident for potential harassment/stalking report to law enforcement if pattern continues."
+      },
+      "legalFramework": {
+        "description": "Emerging laws protect staff from verification-based harassment. Issuers should document abuse prevention in compliance metadata.",
+        "applicableStatutes": [
+          {
+            "law": "Harassment/Cyberstalking Statutes",
+            "applies": "Repeated verification attempts targeting specific person may constitute harassment or stalking under state law (varies by jurisdiction)"
+          },
+          {
+            "law": "Workplace Violence Prevention Laws",
+            "applies": "Healthcare facilities, law enforcement can restrict verification in abusive/confrontational contexts under workplace safety rules"
+          },
+          {
+            "law": "Interference with Public Employees",
+            "applies": "Some jurisdictions: deliberately provoking confrontations via verification scanning may constitute interference with officer/employee duties"
+          },
+          {
+            "law": "Computer Fraud & Abuse Act (CFAA)",
+            "applies": "US law: automated verification scraping or flood attacks may constitute 'unauthorized access' under CFAA §1030"
+          }
+        ]
+      },
+      "appGuidance": [
+        "Apps should display rate-limit warnings: 'You've verified this person 3 times today. Additional requests may be flagged as suspicious.'",
+        "Apps should NOT enable batch verification or allow scripts to automate verification requests",
+        "Apps should warn users if verification pattern resembles stalking/tracking (same person multiple times, different times)",
+        "Apps should provide 'report abuse' button if user believes verification is being weaponized against staff member"
+      ],
+      "issuerGuidance": [
+        "Facility-level monitoring: Issuers (hospitals, police departments) must actively monitor verification endpoint for rapid-fire attempts on single staff members. Set alerts at 5+ attempts in 5 minutes.",
+        "Real-time dispatch: Upon alert, consider automatic notification of facility security to conduct welfare check on staff member's location. Do NOT wait for staff to self-report harassment—treat rapid verification as potential active targeting and escalate accordingly.",
+        "App-level guidance: Transparent rate limiting in .verification-meta.json for user consent (3 per day), but do NOT rely on app to stop abuse—facility monitoring is primary defense.",
+        "Documentation: Log all verification patterns (who verified whom, when, from where if available). Correlate with any harassment/threat reports. This becomes evidence if legal escalation needed.",
+        "Policy clarification: Document that 'legitimate verification for lawful purpose' (one scan before treatment, one check during traffic stop) is protected. Systematic targeting (20+ attempts, movement tracking, roster enumeration) is not."
+      ]
+    },
+    "progressiveGuidance": {
+      "description": "Context-sensitive guidance URLs triggered at verification frequency thresholds. Allows issuers to provide educational, warning, and legal framework resources at escalating frequency levels. Apps track verification attempts per staff member and offer corresponding guidance URLs.",
+      "implementation": "App tracks cumulative verification attempts for same staff member and presents guidance URL (as modal, banner, or link) when threshold is reached. Frequency counter resets per 24-hour period.",
+      "thresholds": [
+        {
+          "requestNumber": 1,
+          "guidanceUrl": "https://issuer-domain.org/guidance/first-verification",
+          "purpose": "Educational: explain legitimate verification use cases and appropriate contexts",
+          "exampleContent": "What is verification? When is it appropriate? This badge proves this person is authorized to be here. You can verify them for lawful purposes like confirming credentials before treatment, checking during security incident, or during care discussions."
+        },
+        {
+          "requestNumber": 3,
+          "guidanceUrl": "https://issuer-domain.org/guidance/repeated-verification",
+          "purpose": "Warning: notify user that repeated verification may indicate concerning pattern",
+          "exampleContent": "You've verified this person 3 times in the last 24 hours. If you're verifying the same person repeatedly without a specific new reason, this may be flagged by facility security as a potential targeting or stalking pattern."
+        },
+        {
+          "requestNumber": 10,
+          "guidanceUrl": "https://issuer-domain.org/guidance/harassment-law",
+          "purpose": "Legal framework: explain harassment/stalking statutes and escalation procedures",
+          "exampleContent": "Repeated verification attempts may constitute harassment or stalking under state law. Facility security monitors for patterns like 5+ attempts in 5 minutes (real-time targeting). If you believe someone is using verification to harass staff, report to facility security or law enforcement."
+        }
+      ],
+      "exampleImplementation": {
+        "scenario": "User verifies same staff member multiple times",
+        "firstRequest": {
+          "requestCount": 1,
+          "action": "Show educational guidance: display banner or modal linking to first guidance URL",
+          "userExperience": "'This badge is verified. Learn when verification is appropriate.' [Learn more]"
+        },
+        "thirdRequest": {
+          "requestCount": 3,
+          "action": "Show warning guidance: display banner or modal linking to repeated verification guidance",
+          "userExperience": "'You've verified this person 3 times. Repeated verification without new reason may be flagged.' [Learn more]"
+        },
+        "tenthRequest": {
+          "requestCount": 10,
+          "action": "Show legal guidance: display prominent notice with escalation procedures",
+          "userExperience": "'Repeated verification attempts may violate harassment or stalking laws. See facility security.' [Legal Framework]"
+        }
+      },
+      "designNotes": "Progressive guidance avoids hard-coded warnings in app code. Instead, issuers customize guidance URLs for their jurisdiction, organization, and context. URLs can link to facility-specific policies, legal frameworks, abuse reporting forms, or educational materials. This approach provides flexibility while maintaining consistent user experience across different issuer domains.",
+      "adoptionNote": "Progressive guidance is optional and best suited for jurisdictions with specific legal frameworks around verification rights or organizations with documented verification abuse patterns. Most issuers will omit these URLs entirely to keep verification flows streamlined and user-friendly. The primary abuse defense is facility-level monitoring (detecting rapid-fire attempts and triggering security welfare checks), not user-facing warnings. Don't enable progressive guidance unless you have a specific reason."
+    },
+    "notes": "Healthcare credentials: Captured badge image must not be stored if it contains patient-visible information. Audit logs MUST be contextualized to patient encounter, not provider-centric. Police credentials: Do not retain verification requests or movement tracking. All contexts: Verification is legitimate for authorized purposes, but systematic harassment via verification is not and may violate harassment/stalking laws. Progressive guidance is optional—most issuers will omit it to keep flows clean."
+  }
+}
+```
+
 This is particularly useful for:
 - Documents with diacritics or special characters that need consistent normalization
 - Receipt formats with known whitespace issues (e.g., HTML tabs rendering as spaces)
 - Specialized documents with known character sets (e.g., employment letters won't have `@#$%^&*`)
+- High-security credentials (healthcare, law enforcement, government IDs) requiring strict compliance
+- Multi-jurisdictional deployments needing GDPR, HIPAA, CCPA compliance
 
 **Full verification requires these checks:**
 
@@ -636,6 +834,64 @@ npm test                    # Should see 68 + 16 tests pass
 - **Change normalization:** Update `public/normalize.js`, verify tests pass
 - **Fix detection:** Adjust thresholds in `public/cv/detectSquares.js`
 - **Add fixture:** Place PNG in `test/fixtures/should-detect/`, add `.txt` with expected text
+
+## Use-Case-Specific Implementation Nuances
+
+**This section addresses practical considerations for specific organization types.**
+
+### Healthcare Facilities: The Credentialing Complexity
+
+**Key Nuance:** Healthcare adds regulatory layers that hotels don't have.
+
+- **Credential Verification vs. Identity Verification:** Your patients need to know both "who is this person?" (identity) and "are they licensed?" (credential). The e-Ink badge solves the second; photo handles the first. Budget time for staff training that this is *not* the same as traditional photo ID checks
+- **License Boards Integration:** If you want real-time license status (suspended, expired, active), you need to either:
+  - Partner with state medical/nursing boards for API access (complex, 3-6 months)
+  - Pre-generate badge hashes daily from board data (requires daily hash rebuilds)
+  - Use hash-based status (simpler, but less real-time)
+- **Abusive Patient Escalation:** You will get calls from staff saying "A patient scanned my badge 10 times in 2 hours." Rate limiting prevents this at the app level, but you need security/HR procedures to actually *respond*. Budget time for legal review of harassment policy *before* deployment
+- **HIPAA Audit Log Retention:** Your audit logs documenting "Dr. Smith was verified at 2:15 PM in CCU" are medical records. They stay for 6 years minimum under HIPAA. Budget data storage; don't assume it's negligible
+- **Timeline Expectation:** Healthcare implementation is 12-18 months (vs. 6-12 months for hotels), mostly due to regulatory review and credentialing integration
+
+### Police Departments: The Officer Safety Paradox
+
+**Key Nuance:** Verification helps citizens, but exposes officers to doxing. You must solve this or face officer resistance.
+
+- **Privacy-Protective Claim vs. Badge Display:** The breakthrough is that your badge can show "Officer A 1332" (for identification) but the verification claim never includes the badge number. Instead, it verifies "NYC Police Department officer, active duty, authorized for traffic enforcement" (anonymized, role-based). This is *the* critical architectural choice. Without this, you cannot ethically deploy to officers working organized crime, narcotics, or undercover
+- **Rotating Salt Non-Negotiable:** If your police department issues static badges with permanent hashes, you've created a searchable database. A suspect verifies an officer's hash, then can verify it repeatedly to track the officer's movements (Brixton, then Peckham, then Westminster = movement trail). You must use ephemeral hashes (10-minute rotation) or officers will resist
+- **Federal vs. Local:** FBI, ATF, and federal agents have even higher operational security needs. If you deploy to federal LEO, your verification system cannot expose operational assignment or task force affiliation. Design around this from day one
+- **Citizen Verification Expectations:** Not all citizens will understand why they can verify an officer is real but can't see the officer's full name. Budget time for public education. Some will feel this is "opaque." Address this in your messaging
+- **Timeline Expectation:** 9-15 months, heavily back-loaded with officer buy-in and operational security review
+
+### Hotels & Vacation Rentals: The Counterfeiting Problem
+
+**Key Nuance:** Your biggest risk is printed counterfeits. E-Ink doesn't help if counterfeits are in circulation.
+
+- **Badge Replacement Logistics:** When you switch to e-Ink, you have old plastic badges in circulation. You need a *sunset policy* — plastic badges stop working on Date X. Without this, guests see both types and may not understand which is real. Budget 3-6 months to get all staff switched over; shorter timelines will have parallel authentication confusion
+- **Guest Training:** Not all guests will carry phones or understand how to scan. Some will ask staff to do it for them (defeats the purpose). Budget time for signage ("You can scan our staff badges using the hotel app") and guest education
+- **Turnover Reality:** If you have 50% staff turnover annually, issuing new badges for half your staff every year is normal ops. If you have 20% turnover, badge distribution isn't a burden. Know your baseline
+- **Third-Party Contractors:** Housekeeping, maintenance, laundry, food service contractors may not want e-Ink badges if they work multiple hotels. Will you mandate it? Provide it? Ensure contracts allow it? This is an underestimated friction point
+- **Timeline Expectation:** 6-10 months for hotels (shorter than healthcare/police because fewer regulatory constraints)
+
+### Residential Buildings & Apartment Management: The Burden of Proof
+
+**Key Nuance:** You're asking residents to trust a system they didn't choose, for contractors they didn't hire.
+
+- **Resident Adoption:** Unlike hotels, residents have limited incentive to scan contractor badges if they're expecting the work. The value proposition ("Are you sure you want to let a stranger in?") only works if residents are naturally skeptical. Know your resident demographics before deploying
+- **Work Order Integration:** For e-Ink verification to work, your badge system must tie to your work order system. A contractor shows up with badge for unit 412 on Friday 9-5, but there's no work order in the system. Now the resident won't let them in *correctly*, but you have a service gap. Budget time for integrating badges with your maintenance scheduling software
+- **Contractor Resistance:** Many plumbers, electricians, and HVAC companies work multiple buildings. They won't want separate badges for each. Provide lanyards, centralized distribution, or other solutions to reduce friction
+- **Insurance & Liability:** If a contractor commits theft and claims "But I was verified, so that proves I was authorized," your insurance may have questions. Work with your insurance and legal counsel on liability implications *before* deployment
+- **Timeline Expectation:** 8-12 months (contractor coordination adds friction)
+
+### Event Venues & Hospitality: The Temporary Logistics Challenge
+
+**Key Nuance:** You're managing hundreds of workers you'll never see again. Verification is useful, but only if you have a process to issue badges quickly.
+
+- **Just-In-Time Badge Printing:** Unlike permanent staff, event contractors arrive 2-3 days before setup. You don't have time for a 3-week badge process. You need *rapid printing* (24 hours or less) or a kiosk system for on-site badge generation. Budget for this upfront
+- **Multi-Company Coordination:** If setup involves 5 different contractors (security, catering, AV, talent handlers, event staff), they all need badges issued by 5 different companies. Who coordinates? Who enforces policy? One company won't adopt if others don't, and vice versa. This is a *coordination problem*, not a technology problem
+- **Post-Event Badge Destruction:** After the event, you have 500 single-use e-Ink badges. Do you recycle? Destroy? Store? Budget for disposal and secure destruction (GDPR/privacy regulation applies)
+- **Timeline Expectation:** 6-9 months to implement, but with higher ongoing logistics burden (each event = badge coordination cycle)
+
+---
 
 ## Related Concepts
 

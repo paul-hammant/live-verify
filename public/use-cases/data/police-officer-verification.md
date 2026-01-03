@@ -71,15 +71,37 @@ Static cards can be photographed and reprinted. An **e-ink warrant card** with a
 
 **How rotating salt protects officers:**
 
-Static hashes would let criminals track police movements by monitoring which hashes are being verified and where. With a salt rotating every 10 minutes, each verification request uses a different hash — no way to correlate "hash X was verified in Brixton at 2pm" with "hash Y was verified in Peckham at 3pm" as the same officer.
+The rotating salt creates **ephemeral, non-persistent identifiers**. This is fundamentally different from static hash systems (like hotels or healthcare):
+
+- **No permanent hash database:** Unlike hotel/healthcare use cases with `/c/{hash}` endpoints that persist forever, police e-ink hashes exist only for a 10-minute window
+- **Each hash is temporal, not identifying:** The badge displays "PC Alex D 1332 + Salt: 7k3m9x2p". The combination of officer ID + salt creates a hash valid only now. In 10 minutes, salt becomes "8m4n2y3q" and the old hash is **explicitly expired and unqueryable**
+- **Expired hash reveals nothing:** If someone tries to verify the old hash tomorrow, the system returns "EXPIRED" — not "SUSPENDED" or other status. An expired hash just means "that salt window closed", providing zero information about the officer
+- **No tracking attacks:** Static hashes would allow building movement timelines:
+  - "Hash X verified in Brixton at 2pm" + "Hash Y verified in Peckham at 3pm" = tracking one officer's movements
+  - With rotating salt: "Hash X expired at 2:10pm, unqueryable. Hash Y unrelated to Hash X (different salt window). No correlation possible."
+- **No roster scraping:** Criminals cannot build a list of valid officer hashes. Any hash they capture is worthless within 10 minutes. No way to enumerate department rosters by testing hashes
 
 **Technical implementation:**
 - E-ink badge pairs with officer's phone via Bluetooth
 - Phone app maintains connection to force backend
+- Backend tracks valid (salt, officer_id) pairs in a **temporary, rotating registry** — not a persistent database
 - Salt updates pushed to badge every 10 minutes (or on movement threshold)
-- Badge displays new salt; backend registers new hash as valid, expires old hash
+- Badge displays new salt; backend marks new (salt, officer_id) as valid, **explicitly expires previous salt**
+- Backend returns "VALID" only if: current time is within the officer's shift window AND the queried salt is current (or recently expired within grace period)
+- Backend returns "EXPIRED" for old salts — no useful information about officer status, just that the salt window closed
 - E-ink power draw: ~15mW per update, negligible between updates
 - Battery life: months with frequent updates; USB-C or wireless charging at station
+
+**Comparison to Static Hash Systems:**
+
+| Model | Hotel/Healthcare | Police E-Ink |
+| :--- | :--- | :--- |
+| **Hash persistence** | Permanent (`/c/{hash}/index.html` forever) | Ephemeral (valid 10 minutes, then expired) |
+| **Database model** | Static hash database indexed by SHA-256 | Transient validity registry, rotates every 10 min |
+| **Doxing risk** | Badge number unique per person; searchable in databases | Badge number + salt combination changes every 10 min; no persistent identifier |
+| **Tracking attacks** | Could correlate multiple verifications to same person | Salt rotation breaks any correlation across verification requests |
+| **Roster enumeration** | Possible (cycle through likely badge numbers/hashes) | Impossible (all hashes stale within 10 minutes) |
+| **Expired hash meaning** | "This document was revoked" (status information) | "That salt window closed" (time-based, meaningless) |
 
 ## Data Verified
 
@@ -109,6 +131,36 @@ Shows the issuer domain (`met.police.uk`, `police.ny.gov`) and the officer's rea
 - **Unknown** — Hash not found; high risk of impersonation.
 
 **Location Mismatch Alert:** If the officer claims to be working in Camden but verification shows assignment to Westminster, that's a red flag worth questioning.
+
+---
+
+## When to Challenge ID: Context Matters
+
+**Verification is appropriate when:**
+- Officer is requesting **consent to search** your home or property (you have time and legal right to verify)
+- Officer claims to have a **warrant** (they can show the warrant; you can verify the officer serving it is real)
+- Officer is conducting an **investigative interview** at your door (non-emergency, you control whether to open door)
+- Officer is responding to **incident you reported** (you can verify legitimate responder, reduces risk of fake police impostor)
+- **Time permits** — the situation is non-urgent and you have seconds to verify via phone/camera
+
+**Verification is NOT appropriate when:**
+- **Active emergency/threat situation** in progress ("Which way did the guy with the shotgun go?")
+- Officer is responding to **urgent call** (medical emergency, assault in progress, fire, traffic accident)
+- Verification would **materially delay emergency response** to life-threatening situation
+- Officer is clearly engaged in **immediate protective action** (getting victim to safety, securing scene, medical aid)
+- Situation requires **instant compliance** for officer or public safety
+
+**Why the distinction matters:**
+
+*Legal/Consent Context:* If an officer is asking for consent to search, you have the legal right to assert your rights—which means you have time to verify. Officers requesting consent understand they're asking you to waive rights; verification before consenting is entirely appropriate and protected.
+
+*Emergency Context:* If an officer is responding to "shots fired" or "medical emergency," verification delays response. An officer in that context shouldn't be waiting at your door while you check a phone app; they should be engaging the threat or providing aid. Challenging ID in this context creates liability for you and delay for the officer.
+
+*Legal Protection:* Verification creates documented proof that you cooperated with a *verified* officer. If something goes wrong later, you have timestamped evidence you complied with a real officer, not an impostor. This protects you.
+
+*Operational Reality:* Officers in high-threat scenarios don't have time to wait at the door. They're moving urgently. If an officer is standing at your door calmly explaining their purpose, that's when verification is appropriate. If they're breaching, securing a scene, or responding to active threat—they shouldn't wait.
+
+---
 
 ## Second-Party Use
 
@@ -146,6 +198,125 @@ The **Citizen (Public)** benefits from verification.
 **State / National Police Agencies.**
 
 **Privacy Salt:** Critical. Police officer data is sensitive. The hash must be salted to prevent "Scraping" the entire department's roster. The verification URL should only be queryable by those with the physical ID in hand.
+
+---
+
+## Privacy Protection for Police Officers: Verification Without Officer Doxing
+
+**The Hidden Risk: Officer Safety and Targeting**
+
+Police work creates enemies. Officers routinely interact with people they arrest, investigate, or cite. If a verification system exposes unique identifiers (badge numbers that can be cross-referenced with officer names, addresses, family info), hostile individuals can dox and target officers:
+
+1. Suspect sees "PC Alex D 1332, London MET" on warrant card
+2. Suspect searches London MET records for "Badge 1332" or "PC Alex D"
+3. Finds officer's full name, home address, family information, work schedule
+4. Hostile suspect now has targeting material for stalking, harassment, retaliation, or violence
+
+**Additional risk:** Officers involved in high-profile cases, civil rights incidents, or controversial shootings face targeted harassment, doxing, and death threats. A verification system shouldn't amplify that risk.
+
+**The OCR-to-Hash Solution: Decouple Authority from Identification**
+
+E-Ink warrant cards can serve **two separate purposes**:
+
+**Visual Card (for identification):**
+- Shows photo and rank: "PC Alex D, London MET"
+- Allows citizen to see who they're dealing with
+- No searchable identifiers exposed
+
+**OCR-to-Hash Verification (for authority, privacy-protected):**
+- Verifies: "Active duty officer, Metropolitan Police, authorized to conduct traffic stops and investigations"
+- NO unique identifiers (no badge number, no full name matching)
+- Claims are authority-based, not person-specific
+- Hashes can be verified against issuer domain without exposing PII
+
+**Example Claims (Two Approaches):**
+
+*Standard approach (current, officer-doxing-risky):*
+```
+PC Alex D 1332
+London Metropolitan Police
+Badge Number: 1332
+verify:met.police.uk/badge/1332
+```
+Problem: Badge number uniquely identifies the officer and is easily cross-referenceable in police records.
+
+*Privacy-protective approach (recommended):*
+```
+[Photo] Metropolitan Police
+Authorization: Traffic Enforcement
+Shift: On-Duty
+verify:met.police.uk/officer
+```
+- Warrant card displays: "PC Alex D" + photo (for identification)
+- OCR-to-hash verifies: "London Met officer, active duty, authorized for traffic enforcement, on-duty now"
+- Claim is issued by Metropolitan Police
+- Hash is computed from authority claim WITHOUT unique identifiers
+- Result: Citizen knows officer is authorized without gaining doxing material
+
+**How This Protects Officers:**
+- Verification still works (officer is authentic and active)
+- Hostile suspects cannot easily harvest personal information for targeting/doxing
+- Protects against officer harassment, stalking, violence
+- No link between verification URL and officer's searchable identity
+- Rotating salt (every 10 minutes) makes historical verification queries impossible
+
+**For Police Departments:**
+- Domain remains trusted anchor (met.police.uk)
+- Officer authority status still verified (active, on-duty, suspended, etc.)
+- Can still maintain internal logs of which officer verified with which citizen (for audit purposes)
+- But the public verification URL doesn't expose officer identity
+
+**For Citizens:**
+- Can still see officer's photo and see they're legitimate
+- Verification confirms authority without exposing officer to retaliation risk
+- No conflict between citizen safety (verification needed) and officer safety (identity protection needed)
+
+**For Name Privacy & Reducing Doxing Surface:**
+- Officers can choose to display initials or common-name variants on their warrant card ("Officer A" instead of "Arpan", "Chris" instead of "Christopher") while internal systems maintain full records
+- Photo remains for identification; minimal name information reduces doxing attack surface
+- Ethnic names or uncommon names become less identifiable, reducing targeted harassment campaigns
+- Department can issue badges with officer-chosen display names without affecting verification integrity (backend knows the true mapping)
+- Example: Badge shows "Officer A. 1332" (initials only) + rotating salt; verification returns "London Met officer, active duty, authorized for traffic enforcement" with no name correlation possible
+
+**For Undercover Operations:**
+- Undercover officers can verify authority without exposing their identity or assignment
+- Warrant card can show generic "Authorized Investigator" role without specifics that would compromise undercover status
+- Critical for officers working organized crime, narcotics, or undercover infiltration
+
+This approach separates **authority** (is this person a real cop with valid powers?) from **identity** (who exactly is this person?), enabling verification while protecting officers from targeted harassment and doxing.
+
+---
+
+## Adoption Nuances: Why This Requires Officer Buy-In
+
+**For police departments evaluating implementation:**
+
+**Privacy-Protective Architecture Non-Negotiable:** Your badge can show "Officer A 1332" (for ID) but verification claim must anonymize the badge number: "NYC Police Department officer, active duty, authorized for traffic enforcement" instead. Without this decoupling, officers working organized crime, narcotics, or undercover will resist—and they're right to. This is *the* critical architectural choice.
+
+**Rotating Salt is Mandatory:** Static badges create searchable databases. A suspect verifies an officer's hash once, then can verify it repeatedly to track movement (Brixton 2PM → Peckham 3PM → Westminster 4PM = officer timeline). Ephemeral hashes (10-minute rotation) break this entirely. Without rotating salt, officers will refuse deployment.
+
+**Citizen Communication Burden:** Citizens will ask "Why can't I see the officer's full name?" Some will feel this is opaque. Budget public education on *why* name anonymization protects officers while still enabling verification.
+
+**Operational Security:** Federal agents (FBI, ATF, DEA) have even higher requirements—verify system cannot expose task force assignment or undercover role. Design with this constraint from the start if federal deployment is planned.
+
+**Implementation Timeline:** 9-15 months, heavily back-loaded with officer associations' buy-in and operational security review. This is slower than hotels due to union/association dynamics.
+
+---
+
+## Further Derivations
+
+This use case derives two related scenarios:
+
+1. **Federal Law Enforcement Officer Verification** — FBI, ATF, DEA, Secret Service, ICE agents with multi-jurisdictional authority
+   - Higher secrecy requirements; federal officers often work undercover or in task forces
+   - Verification without compromising operational security or officer identity
+
+2. **Plainclothes/Undercover Officer Verification** — Officers working vice, narcotics, organized crime, or undercover infiltration
+   - Cannot wear uniform; must prove authority through warrant card in civilian clothes
+   - Verification critical when stopping civilians but identity exposure risks officer safety and operations
+   - Especially important: rotating salts defeat bad-actor attempts to harvest officer lists for targeting
+
+---
 
 ## Rationale
 
