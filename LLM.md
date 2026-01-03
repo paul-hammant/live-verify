@@ -407,10 +407,10 @@ Issuers can specify legal/regulatory requirements for how verification apps must
         "Flood verification attempts to probe endpoint vulnerabilities"
       ],
       "rateLimiting": {
-        "perUser": "Maximum 3 verification requests per user per staff member per 24 hours",
-        "perStaff": "Flag staff member if >10 unique verifiers in 1 hour (potential targeting)",
-        "perIPAddress": "Rate limit flood attempts: max 20 requests per IP per hour",
-        "escalation": "After rate limit exceeded, require human review before granting additional requests"
+        "perUser": "Maximum 3 verification requests per user per staff member per 24 hours (app-level user consent)",
+        "perStaff": "CRITICAL: Monitor badge verification frequency at facility level. Alert security if same staff member receives 5+ verification attempts in 5 minutes (real-time targeting detection). This is NOT app-level rate limiting—this is facility monitoring triggering immediate security response.",
+        "perIPAddress": "NOT EFFECTIVE in practice (all facility staff behind NAT share same public IP). Do NOT rely on IP-based rate limiting.",
+        "escalation": "Upon detection of rapid verification attempts on a staff member: (1) Facility security immediately dispatches to staff member's location for welfare check, (2) Notify staff member and management, (3) Document incident for potential harassment/stalking report to law enforcement if pattern continues."
       },
       "legalFramework": {
         "description": "Emerging laws protect staff from verification-based harassment. Issuers should document abuse prevention in compliance metadata.",
@@ -440,10 +440,11 @@ Issuers can specify legal/regulatory requirements for how verification apps must
         "Apps should provide 'report abuse' button if user believes verification is being weaponized against staff member"
       ],
       "issuerGuidance": [
-        "Issuers should monitor verification patterns for harassment/targeting (staff member being verified 20+ times by different users)",
-        "Rate limiting should be transparent in .verification-meta.json so apps can enforce it client-side",
-        "Issuers should have escalation procedure when verification is weaponized (notify staff member, law enforcement if pattern constitutes stalking/harassment)",
-        "Issuers should document that 'legitimate verification for lawful purpose' is protected, but harassment via verification is not"
+        "Facility-level monitoring: Issuers (hospitals, police departments) must actively monitor verification endpoint for rapid-fire attempts on single staff members. Set alerts at 5+ attempts in 5 minutes.",
+        "Real-time dispatch: Upon alert, immediately notify facility security to conduct welfare check on staff member's location. Do NOT wait for staff to report harassment—treat rapid verification as potential active targeting.",
+        "App-level guidance: Transparent rate limiting in .verification-meta.json for user consent (3 per day), but do NOT rely on app to stop abuse—facility monitoring is primary defense.",
+        "Documentation: Log all verification patterns (who verified whom, when, from where if available). Correlate with any harassment/threat reports. This becomes evidence if legal escalation needed.",
+        "Policy clarification: Document that 'legitimate verification for lawful purpose' (one scan before treatment, one check during traffic stop) is protected. Systematic targeting (20+ attempts, movement tracking, roster enumeration) is not."
       ]
     },
     "notes": "Healthcare credentials: Captured badge image must not be stored if it contains patient-visible information. Audit logs MUST be contextualized to patient encounter, not provider-centric. Police credentials: Do not retain verification requests or movement tracking. All contexts: Verification is legitimate for authorized purposes, but systematic harassment via verification is not and may violate harassment/stalking laws."
