@@ -1,6 +1,6 @@
 ---
 title: "Freight, Demurrage & Defense (FD&D) Insurance"
-category: "Shipping & Freight"
+category: "Chain of Custody & Logistics"
 volume: "Small"
 retention: "Policy term + 10 years"
 slug: "freight-demurrage-defense"

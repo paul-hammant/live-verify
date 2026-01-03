@@ -1,6 +1,6 @@
 ---
 title: "Investment Suitability Reports"
-category: "Financial Services Compliance"
+category: "Professional Ethics & Compliance"
 volume: "Large"
 retention: "7-10 years (regulatory, litigation)"
 slug: "investment-suitability-reports"

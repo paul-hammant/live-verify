@@ -1,6 +1,6 @@
 ---
 title: "Conservation Reports and Restoration History"
-category: "Art & Collectibles"
+category: "Art, Media & Publishing"
 volume: "Very Small"
 retention: "Permanent (artwork care)"
 slug: "conservation-reports"

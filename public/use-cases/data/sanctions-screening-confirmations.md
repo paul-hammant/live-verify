@@ -1,6 +1,6 @@
 ---
 title: "Sanctions Screening Confirmations"
-category: "Financial Services Compliance"
+category: "Professional Ethics & Compliance"
 volume: "Large"
 retention: "7-10 years (regulatory audit)"
 slug: "sanctions-screening-confirmations"

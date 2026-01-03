@@ -1,6 +1,6 @@
 ---
 title: "Food Hygiene Postings"
-category: "Food hygiene"
+category: "Agriculture & Food"
 type: "use-case"
 slug: "food-hygiene-postings"
 beneficiary: "Customers"

@@ -1,6 +1,6 @@
 ---
 title: "Endangered Species Take Permits (ESA Section 10)"
-category: "Environmental & Natural Resource Permits"
+category: "Environmental Permits & Compliance"
 volume: "Tiny"
 retention: "Permit term + permanent"
 slug: "endangered-species-take-permits"

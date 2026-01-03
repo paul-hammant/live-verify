@@ -1,6 +1,6 @@
 ---
 title: "Freight Bills and Carrier Invoices"
-category: "Shipping & Freight"
+category: "Chain of Custody & Logistics"
 volume: "Large"
 retention: "7-10 years (payment/audit)"
 slug: "freight-bills-carrier-invoices"

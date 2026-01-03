@@ -1,6 +1,6 @@
 ---
 title: "Auction Records and Sale Documents"
-category: "Art & Collectibles"
+category: "Art, Media & Publishing"
 volume: "Very Small"
 retention: "Permanent (price history)"
 slug: "auction-records-sale-documents"

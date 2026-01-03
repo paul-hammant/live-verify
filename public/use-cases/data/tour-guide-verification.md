@@ -1,6 +1,6 @@
 ---
 title: "Tour Guide and Host Verification"
-category: "Personal Safety & Service Verification"
+category: "Identity & Authority Verification"
 volume: "Large"
 retention: "Tour + 1-3 years (safety/liability record)"
 slug: "tour-guide-verification"

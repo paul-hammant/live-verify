@@ -1,6 +1,6 @@
 ---
 title: "Repeat Events Permits"
-category: "Event & Temporary Use Permits"
+category: "Permits & Approvals"
 volume: "Medium"
 retention: "Season + 1-3 years (permit cycle / audit)"
 slug: "repeat-events-permits"

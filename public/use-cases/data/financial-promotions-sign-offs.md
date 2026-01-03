@@ -1,6 +1,6 @@
 ---
 title: "Financial Promotions Sign-Offs (s21)"
-category: "Financial Services Compliance"
+category: "Professional Ethics & Compliance"
 volume: "Very Large"
 retention: "7 years (FCA/FINRA regulatory requirement)"
 slug: "financial-promotions-sign-offs"

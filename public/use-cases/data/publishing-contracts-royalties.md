@@ -1,6 +1,6 @@
 ---
 title: "Publishing Contracts and Royalty Statements"
-category: "Media & Publishing"
+category: "Art, Media & Publishing"
 volume: "Very Small"
 retention: "7-20 years (contract term + disputes)"
 slug: "publishing-contracts-royalties"

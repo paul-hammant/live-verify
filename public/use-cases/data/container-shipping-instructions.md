@@ -1,6 +1,6 @@
 ---
 title: "Container Shipping Instructions"
-category: "Shipping & Freight"
+category: "Chain of Custody & Logistics"
 volume: "Large"
 retention: "Shipment + 3-7 years"
 slug: "container-shipping-instructions"

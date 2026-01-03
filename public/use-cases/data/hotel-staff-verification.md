@@ -1,6 +1,6 @@
 ---
 title: "Hotel and Vacation Rental Staff Verification"
-category: "Personal Safety & Service Verification"
+category: "Identity & Authority Verification"
 volume: "Large"
 retention: "Stay + 1-3 years (incident records)"
 slug: "hotel-staff-verification"

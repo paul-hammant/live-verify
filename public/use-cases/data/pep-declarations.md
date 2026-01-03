@@ -1,6 +1,6 @@
 ---
 title: "PEP Declarations (Politically Exposed Persons)"
-category: "Financial Services Compliance"
+category: "Professional Ethics & Compliance"
 volume: "Medium"
 retention: "5-10 years post-relationship (AML requirement)"
 slug: "pep-declarations"

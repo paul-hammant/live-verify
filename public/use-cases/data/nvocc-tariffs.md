@@ -1,6 +1,6 @@
 ---
 title: "NVOCC (Non-Vessel Operating Common Carrier) Tariffs"
-category: "Shipping & Freight"
+category: "Chain of Custody & Logistics"
 volume: "Medium"
 retention: "Tariff validity + 7 years (FMC compliance)"
 slug: "nvocc-tariffs"

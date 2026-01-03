@@ -1,6 +1,6 @@
 ---
 title: "Public Works and Planning Notices"
-category: "Construction Permits"
+category: "Permits & Approvals"
 volume: "Large"
 retention: "Project lifecycle + 5-10 years (appeal / legal record)"
 slug: "public-works-planning-notices"

@@ -1,6 +1,6 @@
 ---
 title: "Playground Safety Inspection Certificates"
-category: "Safety Inspection Certificates"
+category: "Site & Equipment Safety"
 volume: "Medium"
 retention: "1 year (annual inspection cycle)"
 slug: "playground-equipment-safety-certificates"

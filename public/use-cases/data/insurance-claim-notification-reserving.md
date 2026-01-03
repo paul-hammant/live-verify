@@ -1,6 +1,6 @@
 ---
 title: "Insurance Claim Notification & Reserving"
-category: "Insurance & Actuarial"
+category: "Actuarial & Insurance Mathematics"
 volume: "Very Large"
 retention: "Policy Period + 10-20 years (Statute of Limitations)"
 slug: "insurance-claim-notification-reserving"

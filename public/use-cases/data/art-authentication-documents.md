@@ -1,6 +1,6 @@
 ---
 title: "Art Appraisals and Valuations"
-category: "Art & Collectibles"
+category: "Art, Media & Publishing"
 volume: "Small"
 retention: "5-10 years (insurance/tax)"
 slug: "art-authentication-documents"

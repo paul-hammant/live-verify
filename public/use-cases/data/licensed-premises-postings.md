@@ -1,6 +1,6 @@
 ---
 title: "Licensed Premises Postings"
-category: "Licensed premises"
+category: "Professional & Occupational Licenses"
 type: "use-case"
 slug: "licensed-premises-postings"
 beneficiary: "Customers/Regulators"

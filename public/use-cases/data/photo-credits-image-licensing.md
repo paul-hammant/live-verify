@@ -1,6 +1,6 @@
 ---
 title: "Photo Credits and Image Licensing"
-category: "Media & Publishing"
+category: "Art, Media & Publishing"
 volume: "Small"
 retention: "5-20 years (license term / copyright lifecycle)"
 slug: "photo-credits-image-licensing"

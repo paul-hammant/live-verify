@@ -1,6 +1,6 @@
 ---
 title: "Vehicle Display Postings (Taxi, TNC, Permits)"
-category: "Vehicle displays"
+category: "Vehicle & Transportation"
 volume: "Very Large"
 retention: "License term (1-3 years)"
 slug: "vehicle-display-postings"

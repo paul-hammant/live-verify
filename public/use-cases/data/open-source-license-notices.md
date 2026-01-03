@@ -1,6 +1,6 @@
 ---
 title: "Open Source Compliance Notices"
-category: "Technology & Software"
+category: "Business & Commerce"
 volume: "Huge"
 retention: "Lifetime of product"
 slug: "open-source-license-notices"

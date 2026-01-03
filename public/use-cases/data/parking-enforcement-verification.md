@@ -1,6 +1,6 @@
 ---
 title: "Parking Enforcement Officer Verification"
-category: "Personal Safety & Service Verification"
+category: "Identity & Authority Verification"
 volume: "Large"
 retention: "Encounter + 1-3 years (dispute period)"
 slug: "parking-enforcement-verification"

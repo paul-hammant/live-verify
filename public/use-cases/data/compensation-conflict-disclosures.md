@@ -1,6 +1,6 @@
 ---
 title: "Compensation & Conflict-of-Interest Disclosures"
-category: "Professional & Fiduciary Accountability"
+category: "Professional Ethics & Compliance"
 volume: "Medium-Large"
 retention: "7 years (regulatory), permanent (litigation)"
 slug: "compensation-conflict-disclosures"

@@ -1,6 +1,6 @@
 ---
 title: "Tachograph Records and Driver Logbooks (ELD)"
-category: "Shipping & Freight"
+category: "Chain of Custody & Logistics"
 volume: "Very Large"
 retention: "6 months - 3 years (DOT/FMCSA compliance)"
 slug: "tachograph-records-driver-logs"

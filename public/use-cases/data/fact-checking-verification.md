@@ -1,6 +1,6 @@
 ---
 title: "Fact-Checking Verification and Sources"
-category: "Media & Publishing"
+category: "Art, Media & Publishing"
 volume: "Very Small"
 retention: "3-10 years (journalistic integrity)"
 slug: "fact-checking-verification"

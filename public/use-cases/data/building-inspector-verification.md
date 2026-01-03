@@ -1,6 +1,6 @@
 ---
 title: "Building/Safety Inspector Verification"
-category: "Personal Safety & Service Verification"
+category: "Identity & Authority Verification"
 volume: "Medium"
 retention: "Inspection + 3-7 years (compliance)"
 slug: "building-inspector-verification"

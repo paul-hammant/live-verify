@@ -1,6 +1,6 @@
 ---
 title: "Childcare Provider Verification (Nanny/Babysitter)"
-category: "Personal Safety & Service Verification"
+category: "Identity & Authority Verification"
 volume: "Medium"
 retention: "Care period + 3-7 years"
 slug: "childcare-provider-verification"

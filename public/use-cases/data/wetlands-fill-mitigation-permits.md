@@ -1,6 +1,6 @@
 ---
 title: "Wetlands Fill and Mitigation Permits"
-category: "Environmental & Natural Resource Permits"
+category: "Environmental Permits & Compliance"
 volume: "Very Small"
 retention: "Project lifecycle + 20 years (environmental liability)"
 slug: "wetlands-fill-mitigation-permits"

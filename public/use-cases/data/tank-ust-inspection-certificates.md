@@ -1,6 +1,6 @@
 ---
 title: "Underground Storage Tank (UST) Compliance Certificates"
-category: "Safety Inspection Certificates"
+category: "Site & Equipment Safety"
 volume: "Medium"
 retention: "1-5 years (EPA/state regulatory requirement)"
 slug: "tank-ust-inspection-certificates"

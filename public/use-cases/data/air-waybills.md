@@ -1,6 +1,6 @@
 ---
 title: "Air Waybills"
-category: "Shipping & Freight"
+category: "Chain of Custody & Logistics"
 volume: "Large"
 retention: "7-10 years (proof of shipment)"
 slug: "air-waybills"

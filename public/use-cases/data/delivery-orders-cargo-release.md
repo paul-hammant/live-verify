@@ -1,6 +1,6 @@
 ---
 title: "Delivery Orders and Cargo Release"
-category: "Shipping & Freight"
+category: "Chain of Custody & Logistics"
 volume: "Large"
 retention: "Delivery + 3-7 years"
 slug: "delivery-orders-cargo-release"

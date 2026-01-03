@@ -1,6 +1,6 @@
 ---
 title: "Authority-Issued Driving Records"
-category: "Government & Identity"
+category: "Government & Civic Documents"
 volume: "Very Large"
 retention: "Point-in-time (re-verify periodically)"
 slug: "driving-records"

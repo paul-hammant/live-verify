@@ -1,6 +1,6 @@
 ---
 title: "Source of Funds/Wealth Declarations"
-category: "Financial Services Compliance"
+category: "Professional Ethics & Compliance"
 volume: "Medium"
 retention: "5-10 years post-relationship"
 slug: "source-of-funds-declarations"

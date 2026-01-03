@@ -1,6 +1,6 @@
 ---
 title: "Police officer verification (traffic stops, home visits)"
-category: "Personal Safety & Service Verification"
+category: "Identity & Authority Verification"
 volume: "Very Large"
 retention: "Encounter + 1-3 years (accountability)"
 slug: "police-officer-verification"

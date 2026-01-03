@@ -1,6 +1,6 @@
 ---
 title: "Delivery & Courier Verification"
-category: "Personal Safety & Service Verification"
+category: "Identity & Authority Verification"
 volume: "Very Large"
 retention: "Delivery + 30 days"
 slug: "delivery-courier-verification"

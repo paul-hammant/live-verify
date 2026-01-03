@@ -1,6 +1,6 @@
 ---
 title: "Building Safety Postings"
-category: "Building safety"
+category: "Site & Equipment Safety"
 type: "use-case"
 slug: "building-safety-postings"
 beneficiary: "Occupants/Public"

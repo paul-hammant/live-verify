@@ -1,6 +1,6 @@
 ---
 title: "Fit and Proper Attestations"
-category: "Financial Services Compliance"
+category: "Professional Ethics & Compliance"
 volume: "Medium"
 retention: "Duration of employment + 7 years"
 slug: "fit-and-proper-attestations"

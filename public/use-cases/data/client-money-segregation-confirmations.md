@@ -1,6 +1,6 @@
 ---
 title: "Client Money Segregation Confirmations"
-category: "Financial Services Compliance"
+category: "Professional Ethics & Compliance"
 volume: "Small"
 retention: "7-10 years (CASS audit / legal statute)"
 slug: "client-money-segregation-confirmations"

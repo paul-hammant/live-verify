@@ -1,6 +1,6 @@
 ---
 title: "Home Service Provider Verification"
-category: "Personal Safety & Service Verification"
+category: "Identity & Authority Verification"
 volume: "Large"
 retention: "Service + 3-7 years (liability/tax)"
 slug: "home-service-provider-verification"

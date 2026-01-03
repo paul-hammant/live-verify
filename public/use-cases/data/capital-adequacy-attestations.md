@@ -1,6 +1,6 @@
 ---
 title: "Capital Adequacy Attestations"
-category: "Financial Services Compliance"
+category: "Professional Ethics & Compliance"
 volume: "Small"
 retention: "7-10 years (regulatory audit lifecycle)"
 slug: "capital-adequacy-attestations"

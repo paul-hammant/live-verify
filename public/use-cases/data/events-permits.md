@@ -1,6 +1,6 @@
 ---
 title: "Events Permits"
-category: "Event & Temporary Use Permits"
+category: "Permits & Approvals"
 type: "use-case"
 slug: "events-permits"
 beneficiary: "Organizers/Public"

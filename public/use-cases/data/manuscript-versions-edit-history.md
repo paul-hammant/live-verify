@@ -1,6 +1,6 @@
 ---
 title: "Manuscript Versions and Edit History"
-category: "Media & Publishing"
+category: "Art, Media & Publishing"
 volume: "Very Small"
 retention: "5-10 years (publication records)"
 slug: "manuscript-versions-edit-history"

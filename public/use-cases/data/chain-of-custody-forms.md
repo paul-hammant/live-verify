@@ -1,6 +1,6 @@
 ---
 title: "Chain of Custody Forms & Evidence Logs"
-category: "Legal, Forensic & High-Value Logistics"
+category: "Chain of Custody & Logistics"
 volume: "Medium"
 retention: "Variable (Case duration to Permanent)"
 slug: "chain-of-custody-forms"

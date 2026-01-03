@@ -1,6 +1,6 @@
 ---
 title: "CMR Consignment Notes (Road Freight)"
-category: "Shipping & Freight"
+category: "Chain of Custody & Logistics"
 volume: "Large"
 retention: "7-10 years (carrier liability)"
 slug: "cmr-consignment-notes"

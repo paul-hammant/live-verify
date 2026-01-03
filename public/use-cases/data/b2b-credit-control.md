@@ -1,6 +1,6 @@
 ---
 title: "B2B Credit Control & Purchasing Authority"
-category: "Business Operations"
+category: "Business & Commerce"
 volume: "Very Large"
 retention: "Duration of trading relationship + 6 years"
 slug: "b2b-credit-control"

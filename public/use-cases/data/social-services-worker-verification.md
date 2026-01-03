@@ -1,6 +1,6 @@
 ---
 title: "Social Services Worker Verification (Home Visits)"
-category: "Personal Safety & Service Verification"
+category: "Identity & Authority Verification"
 volume: "Medium"
 retention: "Visit + 3-7 years (case management / accountability)"
 slug: "social-services-worker-verification"

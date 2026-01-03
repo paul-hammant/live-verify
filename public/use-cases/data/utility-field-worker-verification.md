@@ -1,6 +1,6 @@
 ---
 title: "Utility & Field Worker Verification"
-category: "Personal Safety & Service Verification"
+category: "Identity & Authority Verification"
 volume: "Large"
 retention: "Service + 1-3 years (access records)"
 slug: "utility-field-worker-verification"

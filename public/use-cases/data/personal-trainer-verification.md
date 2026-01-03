@@ -1,6 +1,6 @@
 ---
 title: "Personal Trainer and Fitness Instructor Verification"
-category: "Personal Safety & Service Verification"
+category: "Identity & Authority Verification"
 volume: "Medium"
 retention: "Training period + 1-3 years (certification cycle)"
 slug: "personal-trainer-verification"

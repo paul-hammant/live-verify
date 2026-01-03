@@ -1,6 +1,6 @@
 ---
 title: "Crane and Hoist Inspection Certificates"
-category: "Safety Inspection Certificates"
+category: "Site & Equipment Safety"
 volume: "Small"
 retention: "1 year (annual inspection)"
 slug: "crane-hoist-inspection-certificates"

@@ -1,6 +1,6 @@
 ---
 title: "Workplace Postings"
-category: "Workplace Postings"
+category: "Professional & Occupational Licenses"
 type: "use-case"
 slug: "workplace-postings"
 beneficiary: "Employees"

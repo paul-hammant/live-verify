@@ -1,6 +1,6 @@
 ---
 title: "Cold-Caller Credentials"
-category: "Public Safety & Consumer Protection"
+category: "Identity & Authority Verification"
 volume: "Very Large"
 retention: "Employment period + badge validity"
 slug: "cold-caller-credentials"

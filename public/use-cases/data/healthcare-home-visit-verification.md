@@ -1,6 +1,6 @@
 ---
 title: "Healthcare Home Visit Worker Verification"
-category: "Personal Safety & Service Verification"
+category: "Identity & Authority Verification"
 volume: "Medium"
 retention: "Visit + 3-7 years (care records)"
 slug: "healthcare-home-visit-verification"

@@ -1,6 +1,6 @@
 ---
 title: "Rail Waybills and Shipping Orders"
-category: "Shipping & Freight"
+category: "Chain of Custody & Logistics"
 volume: "Medium-Large"
 retention: "7-10 years (proof of shipment / statute of limitations)"
 slug: "rail-waybills-shipping-orders"

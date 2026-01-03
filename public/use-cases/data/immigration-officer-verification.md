@@ -1,6 +1,6 @@
 ---
 title: "Immigration Officer Verification"
-category: "Personal Safety & Service Verification"
+category: "Identity & Authority Verification"
 volume: "Medium"
 retention: "Encounter + 1-3 years"
 slug: "immigration-officer-verification"

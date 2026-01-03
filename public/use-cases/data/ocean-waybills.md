@@ -1,6 +1,6 @@
 ---
 title: "Bills of Lading"
-category: "Shipping & Freight"
+category: "Chain of Custody & Logistics"
 volume: "Large"
 retention: "Shipment completion plus 7-10 years (disputes, customs audits)"
 slug: "ocean-shipping-waybills"

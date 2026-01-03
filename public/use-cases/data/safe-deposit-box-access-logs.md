@@ -1,6 +1,6 @@
 ---
 title: "Safe Deposit Box Access Logs"
-category: "Banking & Legal Records"
+category: "Banking & Payments"
 volume: "Small"
 retention: "Access + 10-20 years (estate lifecycle / statute of limitations)"
 slug: "safe-deposit-box-access-logs"

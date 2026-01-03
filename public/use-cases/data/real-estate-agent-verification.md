@@ -1,6 +1,6 @@
 ---
 title: "Real Estate Agent Verification (Showings)"
-category: "Personal Safety & Service Verification"
+category: "Identity & Authority Verification"
 volume: "Medium"
 retention: "Showing + 1-3 years (safety/liability record)"
 slug: "real-estate-agent-verification"

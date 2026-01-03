@@ -1,6 +1,6 @@
 ---
 title: "Stormwater Discharge Permits (NPDES)"
-category: "Environmental & Natural Resource Permits"
+category: "Environmental Permits & Compliance"
 volume: "Small"
 retention: "5 years (permit term / statutory audit)"
 slug: "stormwater-discharge-permits"

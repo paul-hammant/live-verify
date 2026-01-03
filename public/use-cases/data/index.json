@@ -1,66 +1,47 @@
 {
-  "generated": "2026-01-03T08:33:43.912Z",
+  "generated": "2026-01-03T11:22:58.571Z",
   "totalUseCases": 368,
   "categories": {
     "Real Estate & Property": 30,
-    "Charitable & Non-Profit": 5,
-    "Banking & Payments": 12,
-    "Actuarial & Insurance Mathematics": 9,
+    "Charitable & Non-Profit": 6,
+    "Banking & Payments": 14,
+    "Actuarial & Insurance Mathematics": 10,
     "Personal Lines Insurance": 11,
-    "Government & Civic Documents": 12,
+    "Government & Civic Documents": 13,
     "Notary Services": 7,
     "Immigration & Visa Documents": 17,
-    "Financial & Legal Documents": 7,
+    "Financial & Legal Documents": 8,
     "Insurance Claims & Operations": 12,
-    "Shipping & Freight": 14,
+    "Chain of Custody & Logistics": 15,
     "Travel & Hospitality": 21,
-    "Professional & Occupational Licenses": 10,
+    "Professional & Occupational Licenses": 12,
     "Healthcare & Medical Records": 9,
     "Professional & Educational Qualifications": 14,
-    "Art & Collectibles": 3,
+    "Art, Media & Publishing": 7,
     "Customs & Trade Compliance": 6,
     "Sports & Athletics": 6,
     "Authorized Agent Confirmations": 2,
     "Investment & Fintech": 12,
     "Specialty Insurance": 22,
-    "Business Operations": 1,
+    "Business & Commerce": 10,
     "Financial Compliance": 6,
-    "Business & Commerce": 8,
-    "Personal Safety & Service Verification": 14,
-    "Building safety": 1,
+    "Identity & Authority Verification": 15,
+    "Site & Equipment Safety": 4,
     "Commercial Lines Insurance": 11,
     "Product Certifications & Compliance": 11,
-    "Financial Services Compliance": 8,
+    "Professional Ethics & Compliance": 9,
     "Energy & Utilities": 3,
-    "Legal, Forensic & High-Value Logistics": 1,
     "Scientific & Research": 7,
-    "Public Safety & Consumer Protection": 1,
     "Warehousing & Inventory": 4,
-    "Professional & Fiduciary Accountability": 1,
-    "Construction Permits": 2,
+    "Permits & Approvals": 4,
     "Delegated Authority": 5,
     "Intellectual Property Law": 3,
-    "Safety Inspection Certificates": 3,
-    "Financial": 1,
-    "Government & Identity": 1,
     "Trade Finance": 5,
-    "Environmental & Natural Resource Permits": 3,
-    "Environmental & Vicinity": 1,
-    "Event & Temporary Use Permits": 2,
-    "Media & Publishing": 4,
-    "Agriculture & Food": 6,
+    "Environmental Permits & Compliance": 4,
+    "Agriculture & Food": 7,
     "Bonds & Sureties": 3,
-    "Food hygiene": 1,
-    "Insurance & Actuarial": 1,
-    "Licensed premises": 1,
     "Gaming & Gambling": 1,
-    "Membership": 1,
-    "Legal & Contracts": 1,
-    "Technology & Software": 1,
-    "Banking & Legal Records": 1,
-    "Vehicle displays": 1,
-    "Vehicle & Fleet": 1,
-    "Workplace Postings": 1
+    "Vehicle & Transportation": 2
   },
   "useCases": [
     {
@@ -235,7 +216,7 @@
     {
       "slug": "air-waybills",
       "title": "Air Waybills",
-      "category": "Shipping & Freight",
+      "category": "Chain of Custody & Logistics",
       "volume": "Large",
       "retention": "7-10 years (proof of shipment)",
       "snippet": "AWB Number (Master or House), shipper, consignee, pieces, weight, nature of goods, flight details, execution date, carrier signature.",
@@ -373,7 +354,7 @@
     {
       "slug": "art-authentication-documents",
       "title": "Art Appraisals and Valuations",
-      "category": "Art & Collectibles",
+      "category": "Art, Media & Publishing",
       "volume": "Small",
       "retention": "5-10 years (insurance/tax)",
       "snippet": "Appraiser name/credentials (AAA/ISA), client name, artwork details (Artist, Title, Medium), effective date of valuation, Purpose (Insurance/Tax/Collateral), Fair Market Value (FMV) or Replacement Valu",
@@ -439,7 +420,7 @@
     {
       "slug": "auction-records-sale-documents",
       "title": "Auction Records and Sale Documents",
-      "category": "Art & Collectibles",
+      "category": "Art, Media & Publishing",
       "volume": "Very Small",
       "retention": "Permanent (price history)",
       "snippet": "Auction house name, sale ID, lot number, artwork title/artist, hammer price, buyer's premium, total price, bidder ID (redacted/partial), date of sale, payment status.",
@@ -555,7 +536,7 @@
     {
       "slug": "b2b-credit-control",
       "title": "B2B Credit Control & Purchasing Authority",
-      "category": "Business Operations",
+      "category": "Business & Commerce",
       "volume": "Very Large",
       "retention": "Duration of trading relationship + 6 years",
       "snippet": "Authorized person name, company name, company registration number, role/title, specific authority limits (monetary, category, duration), excluded authorities, issuing officer, issue date, expiry date.",
@@ -849,7 +830,7 @@
     {
       "slug": "building-inspector-verification",
       "title": "Building/Safety Inspector Verification",
-      "category": "Personal Safety & Service Verification",
+      "category": "Identity & Authority Verification",
       "volume": "Medium",
       "retention": "Inspection + 3-7 years (compliance)",
       "snippet": "Inspector name, photo (hash), badge number, department/division (Electrical, Plumbing, Fire), authority statute, employment status (Active/Retired/Suspended), jurisdiction.",
@@ -866,7 +847,7 @@
     {
       "slug": "building-safety-postings",
       "title": "Building Safety Postings",
-      "category": "Building safety",
+      "category": "Site & Equipment Safety",
       "volume": "Unknown",
       "retention": "Unknown",
       "snippet": "Equipment ID (Serial Number), building address, capacity/rating, inspector name/license, date of inspection, expiration date, safety code version (e.g., ASME A17.1), maintenance company name.",
@@ -919,7 +900,7 @@
     {
       "slug": "capital-adequacy-attestations",
       "title": "Capital Adequacy Attestations",
-      "category": "Financial Services Compliance",
+      "category": "Professional Ethics & Compliance",
       "volume": "Small",
       "retention": "7-10 years (regulatory audit lifecycle)",
       "snippet": "Firm name, regulatory ID (FRN/CRD), attestation date (quarterly), CET1 Ratio, Tier 1 Capital Ratio, Total Capital Ratio, LCR (Liquidity Coverage Ratio), buffer compliance status, CFO name/signature, e",
@@ -1074,7 +1055,7 @@
     {
       "slug": "chain-of-custody-forms",
       "title": "Chain of Custody Forms & Evidence Logs",
-      "category": "Legal, Forensic & High-Value Logistics",
+      "category": "Chain of Custody & Logistics",
       "volume": "Medium",
       "retention": "Variable (Case duration to Permanent)",
       "snippet": "Case number, item ID/description, container seal number (unique ID), relinquishing party name/ID, receiving party name/ID, handoff timestamp (to the second), physical location, purpose of transfer.",
@@ -1123,7 +1104,7 @@
     {
       "slug": "childcare-provider-verification",
       "title": "Childcare Provider Verification (Nanny/Babysitter)",
-      "category": "Personal Safety & Service Verification",
+      "category": "Identity & Authority Verification",
       "volume": "Medium",
       "retention": "Care period + 3-7 years",
       "snippet": "Provider name, photo (hash), background check status (Clear/Fail), background check date, first aid/CPR certification, childcare training (e.g., CDA), state registry ID, reference count.",
@@ -1140,7 +1121,7 @@
     {
       "slug": "client-money-segregation-confirmations",
       "title": "Client Money Segregation Confirmations",
-      "category": "Financial Services Compliance",
+      "category": "Professional Ethics & Compliance",
       "volume": "Small",
       "retention": "7-10 years (CASS audit / legal statute)",
       "snippet": "Firm name, regulatory ID (FRN), confirmation date, segregation status (Pass/Fail), account designation type, reconciliation frequency, shortfall amount (if any), CASS oversight officer name, external ",
@@ -1174,7 +1155,7 @@
     {
       "slug": "cmr-consignment-notes",
       "title": "CMR Consignment Notes (Road Freight)",
-      "category": "Shipping & Freight",
+      "category": "Chain of Custody & Logistics",
       "volume": "Large",
       "retention": "7-10 years (carrier liability)",
       "snippet": "Consignment number, Sender name, Consignee name, Pickup/Delivery locations, cargo description, number of packages, gross weight, Carrier ID, date of taking over, specialized instructions (e.g., \"Keep ",
@@ -1207,7 +1188,7 @@
     {
       "slug": "cold-caller-credentials",
       "title": "Cold-Caller Credentials",
-      "category": "Public Safety & Consumer Protection",
+      "category": "Identity & Authority Verification",
       "volume": "Very Large",
       "retention": "Employment period + badge validity",
       "snippet": "Employee name, photo, employee ID, employing organization, role/job title, authorized activities, geographic region, badge validity dates, DBS/background check status (where relevant).",
@@ -1289,7 +1270,7 @@
     {
       "slug": "compensation-conflict-disclosures",
       "title": "Compensation & Conflict-of-Interest Disclosures",
-      "category": "Professional & Fiduciary Accountability",
+      "category": "Professional Ethics & Compliance",
       "volume": "Medium-Large",
       "retention": "7 years (regulatory), permanent (litigation)",
       "snippet": "Advisor Name, Firm Name, Disclosure Date, Fee Structure (AUM, flat, hourly), Revenue Sharing Arrangements, Commissions by Product Type, Referral Fees, Soft Dollar Arrangements.",
@@ -1341,7 +1322,7 @@
     {
       "slug": "conservation-reports",
       "title": "Conservation Reports and Restoration History",
-      "category": "Art & Collectibles",
+      "category": "Art, Media & Publishing",
       "volume": "Very Small",
       "retention": "Permanent (artwork care)",
       "snippet": "Object title/artist, owner name, detailed treatment description, chemical materials used (solvents/resins), completion date, lead conservator credentials, laboratory/institution ID, condition status p",
@@ -1373,7 +1354,7 @@
     {
       "slug": "construction-site-permits",
       "title": "Construction Site Permits",
-      "category": "Construction Permits",
+      "category": "Permits & Approvals",
       "volume": "Unknown",
       "retention": "Unknown",
       "snippet": "Permit number, project address, description of work (scope), contractor name/license, owner name, issue date, expiration date, required inspection list, plan version hash.",
@@ -1425,7 +1406,7 @@
     {
       "slug": "container-packing-lists-vgm",
       "title": "Container Packing Lists and Weight Certificates (VGM)",
-      "category": "Shipping & Freight",
+      "category": "Chain of Custody & Logistics",
       "volume": "Large",
       "retention": "Shipment + 7 years",
       "snippet": "Container ID, Seal ID, Booking number, Verified Gross Mass (VGM) in KG/LB, weighing method (Method 1 vs Method 2), shipper name, scale operator ID, scale certification status, date of weighing.",
@@ -1442,7 +1423,7 @@
     {
       "slug": "container-shipping-instructions",
       "title": "Container Shipping Instructions",
-      "category": "Shipping & Freight",
+      "category": "Chain of Custody & Logistics",
       "volume": "Large",
       "retention": "Shipment + 3-7 years",
       "snippet": "Shipper name, Booking number, Vessel name, Voyage number, Cargo description, HS Codes, Weight, Destination port.",
@@ -1608,7 +1589,7 @@
     {
       "slug": "crane-hoist-inspection-certificates",
       "title": "Crane and Hoist Inspection Certificates",
-      "category": "Safety Inspection Certificates",
+      "category": "Site & Equipment Safety",
       "volume": "Small",
       "retention": "1 year (annual inspection)",
       "snippet": "Equipment serial number, manufacturer/model, owner name, maximum lift capacity, boom/jib configuration, load test results, inspector name/NCCCO number, date of inspection, expiration date.",
@@ -1821,7 +1802,7 @@
     {
       "slug": "delivery-courier-verification",
       "title": "Delivery & Courier Verification",
-      "category": "Personal Safety & Service Verification",
+      "category": "Identity & Authority Verification",
       "volume": "Very Large",
       "retention": "Delivery + 30 days",
       "snippet": "Courier name, employee ID, company division (Express/Ground/Freight), hub location, photograph (via hash), expiration date, background check status.",
@@ -1843,7 +1824,7 @@
     {
       "slug": "delivery-orders-cargo-release",
       "title": "Delivery Orders and Cargo Release",
-      "category": "Shipping & Freight",
+      "category": "Chain of Custody & Logistics",
       "volume": "Large",
       "retention": "Delivery + 3-7 years",
       "snippet": "Delivery Order (DO) number, Consignee name, Trucking company (if specified), Container ID, Bill of Lading (B/L) number, Port Terminal ID, freight payment status, customs clearance status, expiration d",
@@ -1860,7 +1841,7 @@
     {
       "slug": "deposits-held-by-third-parties",
       "title": "Deposits Held by Third Parties",
-      "category": "Financial",
+      "category": "Banking & Payments",
       "volume": "Unknown",
       "retention": "Unknown",
       "snippet": "",
@@ -1994,7 +1975,7 @@
     {
       "slug": "driving-records",
       "title": "Authority-Issued Driving Records",
-      "category": "Government & Identity",
+      "category": "Government & Civic Documents",
       "volume": "Very Large",
       "retention": "Point-in-time (re-verify periodically)",
       "snippet": "Licence holder name, licence number, record date/time, penalty points total, endorsement codes and dates, disqualification status, licence categories held, category validity dates.",
@@ -2129,7 +2110,7 @@
     {
       "slug": "endangered-species-take-permits",
       "title": "Endangered Species Take Permits (ESA Section 10)",
-      "category": "Environmental & Natural Resource Permits",
+      "category": "Environmental Permits & Compliance",
       "volume": "Tiny",
       "retention": "Permit term + permanent",
       "snippet": "Permittee name, project location, authorized species (Latin/Common name), take limit (numerical), mitigation requirements, effective/expiration dates, HCP (Habitat Conservation Plan) reference, issuin",
@@ -2146,7 +2127,7 @@
     {
       "slug": "environmental-and-vicinity-postings",
       "title": "Environmental and Vicinity Postings",
-      "category": "Environmental & Vicinity",
+      "category": "Environmental Permits & Compliance",
       "volume": "Large",
       "retention": "5-10 years (regulatory cycle / property lifecycle)",
       "snippet": "Report Reference Number (RRN), property address, energy efficiency score (0-100), energy band (A-G), carbon emissions (tonnes/year), auditor name/ID, inspection date, expiration date, recommended impr",
@@ -2349,7 +2330,7 @@
     {
       "slug": "events-permits",
       "title": "Events Permits",
-      "category": "Event & Temporary Use Permits",
+      "category": "Permits & Approvals",
       "volume": "Unknown",
       "retention": "Unknown",
       "snippet": "Permit number, event name, organizer name, authorized dates/times, specific street boundaries, authorized activities (e.g., Amplified Sound, Alcohol), security requirements, max occupancy, city depart",
@@ -2385,7 +2366,7 @@
     {
       "slug": "fact-checking-verification",
       "title": "Fact-Checking Verification and Sources",
-      "category": "Media & Publishing",
+      "category": "Art, Media & Publishing",
       "volume": "Very Small",
       "retention": "3-10 years (journalistic integrity)",
       "snippet": "Full published text (digest), author name, date of publication, fact-checker organization, list of verified sources (anonymized or linked), presence of corrections/retractions, primary source timestam",
@@ -2469,7 +2450,7 @@
     {
       "slug": "financial-promotions-sign-offs",
       "title": "Financial Promotions Sign-Offs (s21)",
-      "category": "Financial Services Compliance",
+      "category": "Professional Ethics & Compliance",
       "volume": "Very Large",
       "retention": "7 years (FCA/FINRA regulatory requirement)",
       "snippet": "Promotion ID, campaign name, approved media channels, date of approval, expiration date of sign-off, name of authorized firm (and FRN), name/ID of the approving individual, specific risk-warning text ",
@@ -2539,7 +2520,7 @@
     {
       "slug": "fit-and-proper-attestations",
       "title": "Fit and Proper Attestations",
-      "category": "Financial Services Compliance",
+      "category": "Professional Ethics & Compliance",
       "volume": "Medium",
       "retention": "Duration of employment + 7 years",
       "snippet": "Employee name, role/function, firm name, assessment date, certification period, competencies confirmed, certifying officers, next renewal date.",
@@ -2573,7 +2554,7 @@
     {
       "slug": "food-hygiene-postings",
       "title": "Food Hygiene Postings",
-      "category": "Food hygiene",
+      "category": "Agriculture & Food",
       "volume": "Unknown",
       "retention": "Unknown",
       "snippet": "Business name, establishment address, hygiene rating (0-5 or A/B/C), inspection date, inspector ID, specific violations found (optional linked hash), next inspection window.",
@@ -2626,7 +2607,7 @@
     {
       "slug": "freight-bills-carrier-invoices",
       "title": "Freight Bills and Carrier Invoices",
-      "category": "Shipping & Freight",
+      "category": "Chain of Custody & Logistics",
       "volume": "Large",
       "retention": "7-10 years (payment/audit)",
       "snippet": "Invoice number, Carrier name, Shipper name, Bill of Lading (B/L) reference, total freight charge, line-item breakdown (Linehaul, Fuel, Accessorials), payment terms, date of issuance, delivery confirma",
@@ -2643,7 +2624,7 @@
     {
       "slug": "freight-demurrage-defense",
       "title": "Freight, Demurrage & Defense (FD&D) Insurance",
-      "category": "Shipping & Freight",
+      "category": "Chain of Custody & Logistics",
       "volume": "Small",
       "retention": "Policy term + 10 years",
       "snippet": "Vessel name, IMO number, Member name, coverage class (FD&D), legal cost limits, effective dates, P&I Club ID, specific exclusions (if any), date of certificate issuance.",
@@ -2871,7 +2852,7 @@
     {
       "slug": "healthcare-home-visit-verification",
       "title": "Healthcare Home Visit Worker Verification",
-      "category": "Personal Safety & Service Verification",
+      "category": "Identity & Authority Verification",
       "volume": "Medium",
       "retention": "Visit + 3-7 years (care records)",
       "snippet": "Worker name, photo (hash), professional license type (RN, LPN, CNA), state license number, agency name, scheduled visit ID, background check clearance date, current duty status (Active/Off-Duty).",
@@ -2925,7 +2906,7 @@
     {
       "slug": "home-service-provider-verification",
       "title": "Home Service Provider Verification",
-      "category": "Personal Safety & Service Verification",
+      "category": "Identity & Authority Verification",
       "volume": "Large",
       "retention": "Service + 3-7 years (liability/tax)",
       "snippet": "Tradesperson name, photo (hash), professional license type (Master/Journeyman), license number, company name, insurance status (Liability/WC), background check date, issuing state board.",
@@ -2998,7 +2979,7 @@
     {
       "slug": "hotel-staff-verification",
       "title": "Hotel and Vacation Rental Staff Verification",
-      "category": "Personal Safety & Service Verification",
+      "category": "Identity & Authority Verification",
       "volume": "Large",
       "retention": "Stay + 1-3 years (incident records)",
       "snippet": "Staff name, photo (hash), employee ID, job role (e.g., Housekeeping, Maintenance, Room Service), property affiliation, current duty status (Active/Off-Duty), background check clearance date (hash).",
@@ -3068,7 +3049,7 @@
     {
       "slug": "immigration-officer-verification",
       "title": "Immigration Officer Verification",
-      "category": "Personal Safety & Service Verification",
+      "category": "Identity & Authority Verification",
       "volume": "Medium",
       "retention": "Encounter + 1-3 years",
       "snippet": "Officer name, photo (hash), badge number, agency (ICE, CBP), unit (ERO, HSI), employment status (Active/Retired), jurisdiction, date of credential issuance.",
@@ -3155,7 +3136,7 @@
     {
       "slug": "insurance-claim-notification-reserving",
       "title": "Insurance Claim Notification & Reserving",
-      "category": "Insurance & Actuarial",
+      "category": "Actuarial & Insurance Mathematics",
       "volume": "Very Large",
       "retention": "Policy Period + 10-20 years (Statute of Limitations)",
       "snippet": "Claim reference number, policy number, name of insured, date of loss, timestamp of reporting, claim type (e.g., motor, liability), status (Registered/Reserved).",
@@ -3264,7 +3245,7 @@
     {
       "slug": "intermodal-equipment-receipts",
       "title": "Intermodal Equipment Interchange Receipts (EIR)",
-      "category": "Shipping & Freight",
+      "category": "Chain of Custody & Logistics",
       "volume": "Very Large",
       "retention": "Equipment return + 7 years",
       "snippet": "Container ID, Chassis ID, Trucking company name, Driver ID (hash), Outgate/Ingate status, detailed damage codes (e.g., SC-1, DT-4), seal integrity status, terminal location ID, precise timestamp, issu",
@@ -3334,7 +3315,7 @@
     {
       "slug": "investment-suitability-reports",
       "title": "Investment Suitability Reports",
-      "category": "Financial Services Compliance",
+      "category": "Professional Ethics & Compliance",
       "volume": "Large",
       "retention": "7-10 years (regulatory, litigation)",
       "snippet": "Client name, advisor name/credentials, firm name, report date, client profile summary (risk tolerance, objectives, experience), recommendation details, suitability rationale.",
@@ -3532,7 +3513,7 @@
     {
       "slug": "licensed-premises-postings",
       "title": "Licensed Premises Postings",
-      "category": "Licensed premises",
+      "category": "Professional & Occupational Licenses",
       "volume": "Unknown",
       "retention": "Unknown",
       "snippet": "License number, license type (e.g., Type 47 - Restaurant), business name, DBA name, premises address, expiration date, specific operating conditions (curfews, sound limits), maximum occupancy count, p",
@@ -3708,7 +3689,7 @@
     {
       "slug": "manuscript-versions-edit-history",
       "title": "Manuscript Versions and Edit History",
-      "category": "Media & Publishing",
+      "category": "Art, Media & Publishing",
       "volume": "Very Small",
       "retention": "5-10 years (publication records)",
       "snippet": "Author name, editor name, manuscript title, version ID (e.g., v2.4), SHA-256 hash of the submitted digital file, submission timestamp (to the second), total word count, copyright registration status, ",
@@ -3879,7 +3860,7 @@
     {
       "slug": "membership-cards-external-benefits",
       "title": "Membership Cards with External Benefits",
-      "category": "Membership",
+      "category": "Charitable & Non-Profit",
       "volume": "Unknown",
       "retention": "Unknown",
       "snippet": "Member Name, Member Number, Membership Tier (Basic, Plus, Premier), Valid Through Date, Home Club (regional affiliate), Covered Vehicles (if listed), Household Members (if applicable).",
@@ -4059,7 +4040,7 @@
     {
       "slug": "non-disclosure-agreements",
       "title": "Non-Disclosure Agreements (NDA)",
-      "category": "Legal & Contracts",
+      "category": "Financial & Legal Documents",
       "volume": "Very Large",
       "retention": "Duration of agreement + 5-10 years",
       "snippet": "Party names, Effective date, Agreement ID, Page number (e.g., \"Page 1 of 8\"), Specific Scope of Confidentiality, Governing Law, Signature IDs, Law firm or Corporate Legal ID.",
@@ -4140,7 +4121,7 @@
     {
       "slug": "nvocc-tariffs",
       "title": "NVOCC (Non-Vessel Operating Common Carrier) Tariffs",
-      "category": "Shipping & Freight",
+      "category": "Chain of Custody & Logistics",
       "volume": "Medium",
       "retention": "Tariff validity + 7 years (FMC compliance)",
       "snippet": "Tariff number, FMC license number, route (Origin/Destination ports), container type (e.g., 40' HC), commodity description, effective date, expiration date, base freight rate, individual surcharge amou",
@@ -4158,7 +4139,7 @@
     {
       "slug": "ocean-shipping-waybills",
       "title": "Bills of Lading",
-      "category": "Shipping & Freight",
+      "category": "Chain of Custody & Logistics",
       "volume": "Large",
       "retention": "Shipment completion plus 7-10 years (disputes, customs audits)",
       "snippet": "B/L Number, shipper, consignee, vessel name, voyage number, port of loading/discharge, container numbers, seal numbers, cargo description, gross weight, date of loading (shipped on board).",
@@ -4201,7 +4182,7 @@
     {
       "slug": "open-source-license-notices",
       "title": "Open Source Compliance Notices",
-      "category": "Technology & Software",
+      "category": "Business & Commerce",
       "volume": "Huge",
       "retention": "Lifetime of product",
       "snippet": "Product model, firmware version, list of included packages/licenses, validity of the \"Written Offer\".",
@@ -4287,7 +4268,7 @@
     {
       "slug": "packing-lists-shipping-manifests",
       "title": "Packing Lists and Shipping Manifests",
-      "category": "Shipping & Freight",
+      "category": "Chain of Custody & Logistics",
       "volume": "Very Large",
       "retention": "7-10 years (customs/legal)",
       "snippet": "Shipper/Consignee names, Manifest Number, Container ID, Seal Number, Line-item SKUs and quantities, Unit/Total Weights, HS Codes (Harmonized System), Origin/Destination ports, Date of loading.",
@@ -4305,7 +4286,7 @@
     {
       "slug": "parking-enforcement-verification",
       "title": "Parking Enforcement Officer Verification",
-      "category": "Personal Safety & Service Verification",
+      "category": "Identity & Authority Verification",
       "volume": "Large",
       "retention": "Encounter + 1-3 years (dispute period)",
       "snippet": "Officer name, badge ID, department/agency, photograph (via hash), current duty status, jurisdiction boundaries, citation authority level.",
@@ -4429,7 +4410,7 @@
     {
       "slug": "pep-declarations",
       "title": "PEP Declarations (Politically Exposed Persons)",
-      "category": "Financial Services Compliance",
+      "category": "Professional Ethics & Compliance",
       "volume": "Medium",
       "retention": "5-10 years post-relationship (AML requirement)",
       "snippet": "Individual name, date of birth (masked), PEP classification (Yes/No), specific public role/title, country of influence, relationship type (e.g., Self, Family, Close Associate), source of wealth summar",
@@ -4466,7 +4447,7 @@
     {
       "slug": "personal-trainer-verification",
       "title": "Personal Trainer and Fitness Instructor Verification",
-      "category": "Personal Safety & Service Verification",
+      "category": "Identity & Authority Verification",
       "volume": "Medium",
       "retention": "Training period + 1-3 years (certification cycle)",
       "snippet": "Trainer name, certification ID number, credential type (CPT, Nutrition, etc.), expiration date, issuing body (NASM, ACE, ISSA), liability insurance status, background check timestamp, CPR/AED certific",
@@ -4539,7 +4520,7 @@
     {
       "slug": "photo-credits-image-licensing",
       "title": "Photo Credits and Image Licensing",
-      "category": "Media & Publishing",
+      "category": "Art, Media & Publishing",
       "volume": "Small",
       "retention": "5-20 years (license term / copyright lifecycle)",
       "snippet": "License number, image ID (Asset ID), licensee name, photographer name, agency name, usage type (Commercial/Editorial/Personal), geographic scope (Regional/Worldwide), duration (start/end dates), resol",
@@ -4575,7 +4556,7 @@
     {
       "slug": "playground-equipment-safety-certificates",
       "title": "Playground Safety Inspection Certificates",
-      "category": "Safety Inspection Certificates",
+      "category": "Site & Equipment Safety",
       "volume": "Medium",
       "retention": "1 year (annual inspection cycle)",
       "snippet": "Equipment serial number, site/park name, specific structure name (e.g., \"The Castle\"), surface type (e.g., Poured Rubber, Woodchips), HIC (Head Injury Criterion) score, ASTM F1487 status, CPSI (Certif",
@@ -4593,7 +4574,7 @@
     {
       "slug": "police-officer-verification",
       "title": "Police officer verification (traffic stops, home visits)",
-      "category": "Personal Safety & Service Verification",
+      "category": "Identity & Authority Verification",
       "volume": "Very Large",
       "retention": "Encounter + 1-3 years (accountability)",
       "snippet": "Officer name, rank, badge number, photograph (via hash), department/precinct, current assignment, date of last background clearance, expiration date of ID.",
@@ -4789,7 +4770,7 @@
     {
       "slug": "proof-of-delivery-pod",
       "title": "Proof of Delivery (POD) and Delivery Receipts",
-      "category": "Shipping & Freight",
+      "category": "Chain of Custody & Logistics",
       "volume": "Very Large",
       "retention": "Delivery + 3-7 years (statute of limitations)",
       "snippet": "Waybill/Tracking number, carrier ID, consignee name, delivery address, quantity of items, condition status (Intact/Damaged), recipient signature (via hash), delivery photo (via hash), GPS coordinates ",
@@ -4947,7 +4928,7 @@
     {
       "slug": "public-works-planning-notices",
       "title": "Public Works and Planning Notices",
-      "category": "Construction Permits",
+      "category": "Permits & Approvals",
       "volume": "Large",
       "retention": "Project lifecycle + 5-10 years (appeal / legal record)",
       "snippet": "Application number, property address, owner/developer name, proposed action description, zoning class, consultation end date (appeal deadline), hearing date/time, municipal department ID, notice issue",
@@ -4965,7 +4946,7 @@
     {
       "slug": "publishing-contracts-royalties",
       "title": "Publishing Contracts and Royalty Statements",
-      "category": "Media & Publishing",
+      "category": "Art, Media & Publishing",
       "volume": "Very Small",
       "retention": "7-20 years (contract term + disputes)",
       "snippet": "Author/Artist name, publisher name, project title (ISBN/ISRC), royalty period, itemized sales units (by format), royalty rates (percentages), gross earnings, net payout, statement ID, issue date.",
@@ -5017,7 +4998,7 @@
     {
       "slug": "rail-waybills-shipping-orders",
       "title": "Rail Waybills and Shipping Orders",
-      "category": "Shipping & Freight",
+      "category": "Chain of Custody & Logistics",
       "volume": "Medium-Large",
       "retention": "7-10 years (proof of shipment / statute of limitations)",
       "snippet": "Waybill number, railroad name, shipper name, consignee name, origin city/state, destination city/state, railcar ID, STCC (Standard Transportation Commodity Code), gross weight, tare weight, net weight",
@@ -5035,7 +5016,7 @@
     {
       "slug": "real-estate-agent-verification",
       "title": "Real Estate Agent Verification (Showings)",
-      "category": "Personal Safety & Service Verification",
+      "category": "Identity & Authority Verification",
       "volume": "Medium",
       "retention": "Showing + 1-3 years (safety/liability record)",
       "snippet": "Agent name, license number, state of jurisdiction, brokerage name, photograph (via hash), expiration date, disciplinary status (Clear/Flagged), background check timestamp, NAR (National Association of",
@@ -5197,7 +5178,7 @@
     {
       "slug": "repeat-events-permits",
       "title": "Repeat Events Permits",
-      "category": "Event & Temporary Use Permits",
+      "category": "Permits & Approvals",
       "volume": "Medium",
       "retention": "Season + 1-3 years (permit cycle / audit)",
       "snippet": "Vendor name, farm/business location, stall assignment ID, seasonal validity dates, list of authorized products, certification level (e.g., Organic/Sustainable), market manager ID, permit fee status, b",
@@ -5322,7 +5303,7 @@
     {
       "slug": "safe-deposit-box-access-logs",
       "title": "Safe Deposit Box Access Logs",
-      "category": "Banking & Legal Records",
+      "category": "Banking & Payments",
       "volume": "Small",
       "retention": "Access + 10-20 years (estate lifecycle / statute of limitations)",
       "snippet": "Box number, branch ID, holder name, authorized signer name, identification method (e.g., ID verified), date of access, precise entry/exit timestamps, bank officer name/ID, witness signature (via hash)",
@@ -5395,7 +5376,7 @@
     {
       "slug": "sanctions-screening-confirmations",
       "title": "Sanctions Screening Confirmations",
-      "category": "Financial Services Compliance",
+      "category": "Professional Ethics & Compliance",
       "volume": "Large",
       "retention": "7-10 years (regulatory audit)",
       "snippet": "Screened party name, screening timestamp, reference number, lists checked (with versions), result (no match / potential match / confirmed match), screening provider, compliance officer sign-off.",
@@ -5551,7 +5532,7 @@
     {
       "slug": "social-services-worker-verification",
       "title": "Social Services Worker Verification (Home Visits)",
-      "category": "Personal Safety & Service Verification",
+      "category": "Identity & Authority Verification",
       "volume": "Medium",
       "retention": "Visit + 3-7 years (case management / accountability)",
       "snippet": "Worker name, employee ID number, agency name, photograph (via hash), role/title, supervisor name, office location, expiration date, background check status.",
@@ -5622,7 +5603,7 @@
     {
       "slug": "source-of-funds-declarations",
       "title": "Source of Funds/Wealth Declarations",
-      "category": "Financial Services Compliance",
+      "category": "Professional Ethics & Compliance",
       "volume": "Medium",
       "retention": "5-10 years post-relationship",
       "snippet": "Client name, transaction/account reference, declaration date, source description, amount, supporting document references, signatory confirmation.",
@@ -5707,7 +5688,7 @@
     {
       "slug": "stormwater-discharge-permits",
       "title": "Stormwater Discharge Permits (NPDES)",
-      "category": "Environmental & Natural Resource Permits",
+      "category": "Environmental Permits & Compliance",
       "volume": "Small",
       "retention": "5 years (permit term / statutory audit)",
       "snippet": "Permit number (NPDES), permittee name, facility address, facility ID, industrial SIC/NAICS code, authorized outfall IDs, pollutant concentration limits (TSS, pH, Oil), monitoring frequency, effective/",
@@ -5778,7 +5759,7 @@
     {
       "slug": "tachograph-records-driver-logs",
       "title": "Tachograph Records and Driver Logbooks (ELD)",
-      "category": "Shipping & Freight",
+      "category": "Chain of Custody & Logistics",
       "volume": "Very Large",
       "retention": "6 months - 3 years (DOT/FMCSA compliance)",
       "snippet": "Driver name, driver ID, carrier name, USDOT number, vehicle ID, trailer numbers, date, 24-hour duty status log (Off-Duty, Sleeper, Driving, On-Duty), total miles, GPS coordinates of status changes, EL",
@@ -5797,7 +5778,7 @@
     {
       "slug": "tank-ust-inspection-certificates",
       "title": "Underground Storage Tank (UST) Compliance Certificates",
-      "category": "Safety Inspection Certificates",
+      "category": "Site & Equipment Safety",
       "volume": "Medium",
       "retention": "1-5 years (EPA/state regulatory requirement)",
       "snippet": "EPA Facility ID, owner/operator name, facility address, tank counts and IDs, tank capacity/contents, leak detection method (e.g., SIR, ATG), test results (pass/fail/inconclusive), cathodic protection ",
@@ -5979,7 +5960,7 @@
     {
       "slug": "tour-guide-verification",
       "title": "Tour Guide and Host Verification",
-      "category": "Personal Safety & Service Verification",
+      "category": "Identity & Authority Verification",
       "volume": "Large",
       "retention": "Tour + 1-3 years (safety/liability record)",
       "snippet": "Guide name, license ID, issuing tourism board, photograph (via hash), languages spoken, first aid certification status, insurance policy ID, expiration date, background check timestamp, specialized si",
@@ -6260,7 +6241,7 @@
     {
       "slug": "utility-field-worker-verification",
       "title": "Utility & Field Worker Verification",
-      "category": "Personal Safety & Service Verification",
+      "category": "Identity & Authority Verification",
       "volume": "Large",
       "retention": "Service + 1-3 years (access records)",
       "snippet": "Worker name, employee ID, company name, service specialization (Gas/Electric/Steam), photograph (via hash), expiration date, background check status, vehicle fleet number.",
@@ -6318,7 +6299,7 @@
     {
       "slug": "vehicle-display-postings",
       "title": "Vehicle Display Postings (Taxi, TNC, Permits)",
-      "category": "Vehicle displays",
+      "category": "Vehicle & Transportation",
       "volume": "Very Large",
       "retention": "License term (1-3 years)",
       "snippet": "License number, driver name, vehicle license plate (linked), vehicle VIN, photograph (via hash), expiration date, background check status, insurance policy ID, carrier/company name (e.g., Yellow Cab #",
@@ -6336,7 +6317,7 @@
     {
       "slug": "vehicle-inspection-reports-dot",
       "title": "Vehicle Inspection Reports (DOT, Annual Safety)",
-      "category": "Vehicle & Fleet",
+      "category": "Vehicle & Transportation",
       "volume": "Large",
       "retention": "5-10 years (regulatory compliance / liability)",
       "snippet": "VIN (Vehicle Identification Number), USDOT number, carrier name, unit number, plate number, inspection date, inspector name/license, facility ID, pass/fail status for 13+ safety categories (Brakes, St",
@@ -6553,7 +6534,7 @@
     {
       "slug": "wetlands-fill-mitigation-permits",
       "title": "Wetlands Fill and Mitigation Permits",
-      "category": "Environmental & Natural Resource Permits",
+      "category": "Environmental Permits & Compliance",
       "volume": "Very Small",
       "retention": "Project lifecycle + 20 years (environmental liability)",
       "snippet": "Permit ID, permittee name, project name, total authorized fill acreage, temporary impact acreage, required mitigation credits, name of mitigation bank, credit retirement ID, effective date, expiration",
@@ -6626,7 +6607,7 @@
     {
       "slug": "workplace-postings",
       "title": "Workplace Postings",
-      "category": "Workplace Postings",
+      "category": "Professional & Occupational Licenses",
       "volume": "Unknown",
       "retention": "Unknown",
       "snippet": "",
@@ -6661,7 +6642,15 @@
       "count": 17
     },
     {
-      "name": "Shipping & Freight",
+      "name": "Chain of Custody & Logistics",
+      "count": 15
+    },
+    {
+      "name": "Identity & Authority Verification",
+      "count": 15
+    },
+    {
+      "name": "Banking & Payments",
       "count": 14
     },
     {
@@ -6669,19 +6658,15 @@
       "count": 14
     },
     {
-      "name": "Personal Safety & Service Verification",
-      "count": 14
-    },
-    {
-      "name": "Banking & Payments",
-      "count": 12
-    },
-    {
       "name": "Government & Civic Documents",
-      "count": 12
+      "count": 13
     },
     {
       "name": "Insurance Claims & Operations",
+      "count": 12
+    },
+    {
+      "name": "Professional & Occupational Licenses",
       "count": 12
     },
     {
@@ -6701,23 +6686,23 @@
       "count": 11
     },
     {
-      "name": "Professional & Occupational Licenses",
+      "name": "Actuarial & Insurance Mathematics",
       "count": 10
     },
     {
-      "name": "Actuarial & Insurance Mathematics",
-      "count": 9
+      "name": "Business & Commerce",
+      "count": 10
     },
     {
       "name": "Healthcare & Medical Records",
       "count": 9
     },
     {
-      "name": "Business & Commerce",
-      "count": 8
+      "name": "Professional Ethics & Compliance",
+      "count": 9
     },
     {
-      "name": "Financial Services Compliance",
+      "name": "Financial & Legal Documents",
       "count": 8
     },
     {
@@ -6725,12 +6710,20 @@
       "count": 7
     },
     {
-      "name": "Financial & Legal Documents",
+      "name": "Art, Media & Publishing",
       "count": 7
     },
     {
       "name": "Scientific & Research",
       "count": 7
+    },
+    {
+      "name": "Agriculture & Food",
+      "count": 7
+    },
+    {
+      "name": "Charitable & Non-Profit",
+      "count": 6
     },
     {
       "name": "Customs & Trade Compliance",
@@ -6745,14 +6738,6 @@
       "count": 6
     },
     {
-      "name": "Agriculture & Food",
-      "count": 6
-    },
-    {
-      "name": "Charitable & Non-Profit",
-      "count": 5
-    },
-    {
       "name": "Delegated Authority",
       "count": 5
     },
@@ -6761,16 +6746,20 @@
       "count": 5
     },
     {
+      "name": "Site & Equipment Safety",
+      "count": 4
+    },
+    {
       "name": "Warehousing & Inventory",
       "count": 4
     },
     {
-      "name": "Media & Publishing",
+      "name": "Permits & Approvals",
       "count": 4
     },
     {
-      "name": "Art & Collectibles",
-      "count": 3
+      "name": "Environmental Permits & Compliance",
+      "count": 4
     },
     {
       "name": "Energy & Utilities",
@@ -6778,14 +6767,6 @@
     },
     {
       "name": "Intellectual Property Law",
-      "count": 3
-    },
-    {
-      "name": "Safety Inspection Certificates",
-      "count": 3
-    },
-    {
-      "name": "Environmental & Natural Resource Permits",
       "count": 3
     },
     {
@@ -6797,89 +6778,13 @@
       "count": 2
     },
     {
-      "name": "Construction Permits",
+      "name": "Vehicle & Transportation",
       "count": 2
-    },
-    {
-      "name": "Event & Temporary Use Permits",
-      "count": 2
-    },
-    {
-      "name": "Business Operations",
-      "count": 1
-    },
-    {
-      "name": "Building safety",
-      "count": 1
-    },
-    {
-      "name": "Legal, Forensic & High-Value Logistics",
-      "count": 1
-    },
-    {
-      "name": "Public Safety & Consumer Protection",
-      "count": 1
-    },
-    {
-      "name": "Professional & Fiduciary Accountability",
-      "count": 1
-    },
-    {
-      "name": "Financial",
-      "count": 1
-    },
-    {
-      "name": "Government & Identity",
-      "count": 1
-    },
-    {
-      "name": "Environmental & Vicinity",
-      "count": 1
-    },
-    {
-      "name": "Food hygiene",
-      "count": 1
-    },
-    {
-      "name": "Insurance & Actuarial",
-      "count": 1
-    },
-    {
-      "name": "Licensed premises",
-      "count": 1
     },
     {
       "name": "Gaming & Gambling",
       "count": 1
-    },
-    {
-      "name": "Membership",
-      "count": 1
-    },
-    {
-      "name": "Legal & Contracts",
-      "count": 1
-    },
-    {
-      "name": "Technology & Software",
-      "count": 1
-    },
-    {
-      "name": "Banking & Legal Records",
-      "count": 1
-    },
-    {
-      "name": "Vehicle displays",
-      "count": 1
-    },
-    {
-      "name": "Vehicle & Fleet",
-      "count": 1
-    },
-    {
-      "name": "Workplace Postings",
-      "count": 1
     }
   ],
-  "totalCategories": 59
+  "totalCategories": 40
 }
