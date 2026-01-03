@@ -742,10 +742,12 @@ There are two primary methods for identifying the witness service:
 2.  **Anchoring:** The Witness stores the hash and a timestamp, often "anchoring" it to a public ledger (blockchain or certificate transparency log).
 3.  **Verification:** The verifier app primarily checks the issuer's endpoint for current status. If witness information is available, the app provides an **option** to also check the Witness service to prove the document existed and was valid on its claimed issuance date.
 
-**Benefits:**
--   **Immutable Timestamps:** Proves a receipt wasn't backdated.
--   **Anti-Deletion:** If an issuer goes out of business or deletes their records, the Witness still confirms the document's historical validity.
--   **Audit Integrity:** Provides a neutral "neutral ground" for resolving disputes between two parties.
+**Benefits & Reasons for Existence:**
+-   **Immutable Timestamps (Neutral Ground):** Proves a receipt or certificate wasn't backdated by the issuer or holder. The Witness provides a non-repudiable "Proof of Existence" at a specific point in time.
+-   **Anti-Deletion / Issuer Longevity:** If an issuer goes out of business, deletes their records, or is compromised, the Witness service remains as a neutral proof that the document was once authoritative.
+-   **Collusion Resistance:** Prevents an issuer and holder from colluding to create a "fake historical" record. If it wasn't witnessed on day zero, it can't be claimed as valid on day 100.
+-   **Audit Integrity:** Provides a neutral "third party" for resolving disputes between two parties (e.g., Guest vs. Hotel) without requiring one to trust the other's internal database.
+-   **Public Transparency (Optional):** For government or high-stakes certifications, a Witness can publish hashes to a public ledger, allowing anyone to verify the volume and issuance rate of credentials without seeing PII.
 
 ---
 
