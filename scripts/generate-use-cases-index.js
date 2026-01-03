@@ -11,7 +11,7 @@
 /**
  * Generate index.json from use-case markdown files with YAML frontmatter.
  *
- * Usage: node scripts/migrate-use-cases.js [--dry-run]
+ * Usage: node scripts/generate-use-cases-index.js [--dry-run]
  */
 
 const fs = require('fs');
