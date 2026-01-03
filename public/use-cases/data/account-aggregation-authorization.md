@@ -21,30 +21,24 @@ A **Data Authorization Certificate** is a receipt for that digital handshake. It
     <h2 style="margin: 0; font-size: 1.4em; letter-spacing: 1px;">DATA ACCESS AUTHORIZATION</h2>
     <div style="font-size: 0.8em; margin-top: 5px; opacity: 0.8;">FIRST NATIONAL BANK OF OMAHA</div>
   </div>
-
-  <div style="padding: 30px;">
+<div style="padding: 30px;">
     <div style="font-size: 0.9em; color: #555; margin-bottom: 20px;">
       <strong>Certificate ID:</strong> AA-8923-XK-2025<br>
       <strong>Issued:</strong> March 15, 2025 14:30 UTC
     </div>
-
-    <div style="font-size: 1.1em; line-height: 1.5; color: #333; margin-bottom: 20px;">
+<div style="font-size: 1.1em; line-height: 1.5; color: #333; margin-bottom: 20px;">
       <p>This certifies that <span data-bracket="start" data-for="agg">[</span><strong>Customer:</strong> Jane Doe (Ending in ...4421)</p>
-      
-      <p>Has explicitly authorized:</p>
+<p>Has explicitly authorized:</p>
       <p><strong>Third Party:</strong> BudgetPlanner App (via Plaid)<br>
       <strong>Scope:</strong> Read-Only Transaction History, Balance Details<br>
       <strong>Accounts:</strong> Checking (...9988), Savings (...7766)</p>
-      
-      <p><strong>Status:</strong> ACTIVE<br>
+<p><strong>Status:</strong> ACTIVE<br>
       <strong>Expiration:</strong> March 15, 2026</p>
     </div>
-
-    <div style="font-size: 0.8em; color: #777; font-style: italic;">
+<div style="font-size: 0.8em; color: #777; font-style: italic;">
       This document serves as proof of consumer consent under Dodd-Frank Section 1033.
     </div>
-
-    <div data-verify-line="agg" style="border-top: 1px dashed #ccc; margin-top: 30px; padding-top: 15px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #444; text-align: center;"
+<div data-verify-line="agg" style="border-top: 1px dashed #ccc; margin-top: 30px; padding-top: 15px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #444; text-align: center;"
       title="Demo only: Bank doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:fnbo.com/auth/v/x9y8z7 <span data-bracket="end" data-for="agg">]</span>
     </div>

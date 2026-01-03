@@ -25,8 +25,7 @@ These documents are the "Proof of Payout." Fraud is rampant in "Small-Town Conte
       <div style="font-size: 0.7em;">Policy: <span data-bracket="start" data-for="prize">[</span>PI-992288-XJ</div>
     </div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
         <strong>Sponsor:</strong> SPRINGFIELD CHARITY GOLF<br>
@@ -39,8 +38,7 @@ These documents are the "Proof of Payout." Fraud is rampant in "Small-Town Conte
         <div style="font-size: 0.8em; color: #666;">ONE MILLION DOLLARS</div>
       </div>
     </div>
-
-    <div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin-bottom: 20px; border-radius: 4px;">
+<div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin-bottom: 20px; border-radius: 4px;">
       <h4 style="margin-top: 0; color: #333; font-size: 0.9em; border-bottom: 1px solid #ccc; padding-bottom: 5px;">MANDATORY WIN CONDITIONS</h4>
       <ul style="margin: 5px 0; padding-left: 20px; font-size: 0.85em; line-height: 1.4;">
         <li>Minimum distance: 165 Yards (Hole #17).</li>
@@ -49,13 +47,11 @@ These documents are the "Proof of Payout." Fraud is rampant in "Small-Town Conte
         <li>Professional golfers are EXCLUDED from this policy.</li>
       </ul>
     </div>
-
-    <div style="font-size: 0.75em; color: #666; font-style: italic; text-align: center;">
+<div style="font-size: 0.75em; color: #666; font-style: italic; text-align: center;">
       This certificate is a verified extract of the Master Policy. Verification confirms that the premium has been paid and coverage is in force for the stated event.
     </div>
   </div>
-
-  <div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #bbb; text-align: center;">
+<div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #bbb; text-align: center;">
     <div data-verify-line="prize" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: Specialty insurers don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:hiscox.com/prize/v/PI992288XJ <span data-bracket="end" data-for="prize">]</span>

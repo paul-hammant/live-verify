@@ -22,8 +22,7 @@ Because this document governs the distribution of hundreds of thousands of dolla
       <div style="font-size: 0.8em; color: #666;">Date: 15 MAR 2026</div>
     </div>
   </div>
-
-  <div style="padding: 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.8em; line-height: 1.4; border-bottom: 1px solid #000;">
+<div style="padding: 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.8em; line-height: 1.4; border-bottom: 1px solid #000;">
     <div>
       <strong>Settlement Agent:</strong> SPRINGFIELD TITLE & ESCROW<br>
       <strong>Buyer:</strong> SARAH JANE DOE<br>
@@ -34,8 +33,7 @@ Because this document governs the distribution of hundreds of thousands of dolla
       <strong>Lender:</strong> GOLIATH NATIONAL BANK
     </div>
   </div>
-
-  <div style="padding: 0;">
+<div style="padding: 0;">
     <table style="width: 100%; border-collapse: collapse; font-size: 0.85em;">
       <tr style="background: #f5f5f5; border-bottom: 1px solid #000;">
         <th style="text-align: left; padding: 10px;">Description</th>
@@ -59,8 +57,7 @@ Because this document governs the distribution of hundreds of thousands of dolla
       </tr>
     </table>
   </div>
-
-  <div style="padding: 25px; background: #fdfdfd; border-top: 1px solid #000; text-align: center;">
+<div style="padding: 25px; background: #fdfdfd; border-top: 1px solid #000; text-align: center;">
     <div style="font-size: 0.7em; color: #555; margin-bottom: 10px; font-style: italic;">
       Verification confirms the financial integrity of this closing. Any unauthorized payoff or fee alteration renders this statement void.
     </div>

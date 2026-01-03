@@ -22,21 +22,18 @@ Fraud is high-frequency and low-barrier: employees use "Ride Receipt Generator" 
       <div style="font-size: 0.9em; font-weight: bold;">$ 42.50</div>
     </div>
   </div>
-
-  <div style="padding: 20px;">
+<div style="padding: 20px;">
     <div style="font-size: 0.9em; line-height: 1.6; color: #333; margin-bottom: 20px;">
       <p><strong>Rider:</strong> <span data-bracket="start" data-for="ride">[</span>JOHN DOE<br>
       <strong>Trip ID:</strong> 99228877-XJ-42</p>
-      
-      <div style="margin: 15px 0; border-left: 2px solid #000; padding-left: 15px;">
+<div style="margin: 15px 0; border-left: 2px solid #000; padding-left: 15px;">
         <div style="font-size: 0.8em; color: #888;">PICKUP:</div>
         <div style="font-weight: bold;">JFK Airport Terminal 4</div>
         <div style="font-size: 0.8em; color: #888; margin-top: 10px;">DROPOFF:</div>
         <div style="font-weight: bold;">42 Wall Street, New York</div>
       </div>
     </div>
-
-    <table style="width: 100%; font-size: 0.9em; border-top: 1px solid #eee; padding-top: 10px;">
+<table style="width: 100%; font-size: 0.9em; border-top: 1px solid #eee; padding-top: 10px;">
       <tr>
         <td>Trip Fare</td>
         <td style="text-align: right;">$ 32.00</td>
@@ -55,8 +52,7 @@ Fraud is high-frequency and low-barrier: employees use "Ride Receipt Generator" 
       </tr>
     </table>
   </div>
-
-  <div style="padding: 20px; background: #f6f6f6; border-top: 1px solid #eee; text-align: center;">
+<div style="padding: 20px; background: #f6f6f6; border-top: 1px solid #eee; text-align: center;">
     <div data-verify-line="ride" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Uber doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:uber.com/receipts/v/99228877XJ <span data-bracket="end" data-for="ride">]</span>

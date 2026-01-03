@@ -19,8 +19,7 @@ These tags are the "Intellectual Property" of the seed world. Fraud is common in
     <div style="font-weight: bold; font-size: 1.1em; letter-spacing: 1px;">OFFICIAL CERTIFIED SEED</div>
     <div style="font-size: 0.7em; opacity: 0.9; text-transform: uppercase;">Member: Assoc. of Official Seed Certifying Agencies</div>
   </div>
-
-  <div style="padding: 20px; background: #e3f2fd;">
+<div style="padding: 20px; background: #e3f2fd;">
     <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px;">
       <div style="font-size: 0.9em; line-height: 1.4;">
         <strong>Crop:</strong> Winter Wheat<br>
@@ -32,8 +31,7 @@ These tags are the "Intellectual Property" of the seed world. Fraud is common in
         <strong>Class:</strong> CERTIFIED
       </div>
     </div>
-
-    <div style="background: #fff; border: 1px solid #004a99; padding: 10px; border-radius: 2px;">
+<div style="background: #fff; border: 1px solid #004a99; padding: 10px; border-radius: 2px;">
       <table style="width: 100%; font-size: 0.85em; border-collapse: collapse;">
         <tr>
           <td><strong>Pure Seed:</strong></td>
@@ -54,8 +52,7 @@ These tags are the "Intellectual Property" of the seed world. Fraud is common in
       </table>
     </div>
   </div>
-
-  <div style="padding: 15px; background: #fff; text-align: center;">
+<div style="padding: 15px; background: #fff; text-align: center;">
     <div data-verify-line="seed" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Seed certifying agencies don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:aosca.org/v/NY992288-GOLDEN <span data-bracket="end" data-for="seed">]</span>

@@ -24,8 +24,7 @@ These logs are the "Safety Map" of our food supply. Large retailers (e.g., Whole
       <div style="font-weight: bold; font-size: 1em;">LOG #: <span data-bracket="start" data-for="pest">[</span>2026-NY-42</div>
     </div>
   </div>
-
-  <div style="padding: 20px;">
+<div style="padding: 20px;">
     <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 20px; font-size: 0.85em; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
         <strong>Farm / Operation:</strong> SUNNY ACRES FAMILY FARM<br>
@@ -38,8 +37,7 @@ These logs are the "Safety Map" of our food supply. Large retailers (e.g., Whole
         <strong>Applicator:</strong> David R. Chen
       </div>
     </div>
-
-    <div style="background: #fffbe6; padding: 15px; border: 1px solid #ffe58f; border-radius: 4px; margin-bottom: 20px;">
+<div style="background: #fffbe6; padding: 15px; border: 1px solid #ffe58f; border-radius: 4px; margin-bottom: 20px;">
       <h4 style="margin-top: 0; font-size: 0.9em; border-bottom: 1px solid #ffe58f; padding-bottom: 5px; color: #856404;">CHEMICAL DETAILS</h4>
       <table style="width: 100%; font-size: 0.9em;">
         <tr>
@@ -60,8 +58,7 @@ These logs are the "Safety Map" of our food supply. Large retailers (e.g., Whole
         </tr>
       </table>
     </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: flex-end; font-size: 0.8em;">
+<div style="display: flex; justify-content: space-between; align-items: flex-end; font-size: 0.8em;">
       <div>
         <div style="border-top: 1px solid #000; width: 180px; padding-top: 5px; font-style: italic;">David Chen, Certified Applicator</div>
         <div>License: #NY-PEST-992288 • Exp: 2027</div>
@@ -69,8 +66,7 @@ These logs are the "Safety Map" of our food supply. Large retailers (e.g., Whole
       <div style="border: 2px solid #000; padding: 8px; font-weight: bold; text-align: center; text-transform: uppercase;">ENTRY RESTRICTED<br>UNTIL 17 MAR</div>
     </div>
   </div>
-
-  <div style="padding: 20px; background: #eee; border-top: 1px solid #ddd; text-align: center;">
+<div style="padding: 20px; background: #eee; border-top: 1px solid #ddd; text-align: center;">
     <div data-verify-line="pest" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Farms don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:sunnyacres.farm/v/NY42-2026 <span data-bracket="end" data-for="pest">]</span>

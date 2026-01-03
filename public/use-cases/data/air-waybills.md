@@ -23,8 +23,7 @@ Unlike a passenger ticket which is digital-first, AWBs are often physically atta
     <div style="font-weight: bold;">UNITED AIRLINES</div>
     <div style="font-weight: bold;">SFO</div>
   </div>
-
-  <div style="padding: 10px; font-size: 0.85em;">
+<div style="padding: 10px; font-size: 0.85em;">
     <div style="display: flex; margin-bottom: 10px;">
       <div style="width: 50%; border-right: 1px solid #000; padding-right: 5px;">
         <strong>Shipper:</strong><br>
@@ -39,8 +38,7 @@ Unlike a passenger ticket which is digital-first, AWBs are often physically atta
         Frankfurt, DE 60549
       </div>
     </div>
-
-    <table style="width: 100%; border: 1px solid #000; border-collapse: collapse; margin-top: 10px;">
+<table style="width: 100%; border: 1px solid #000; border-collapse: collapse; margin-top: 10px;">
       <tr style="background: #eee;">
         <th style="border: 1px solid #000;">Pcs</th>
         <th style="border: 1px solid #000;">Gross Wt</th>
@@ -54,13 +52,11 @@ Unlike a passenger ticket which is digital-first, AWBs are often physically atta
         <td style="border: 1px solid #000;">Electronic Components<br>(Lithium Ion Batteries)</td>
       </tr>
     </table>
-
-    <div style="margin-top: 10px;">
+<div style="margin-top: 10px;">
       <strong>Flight/Date:</strong> UA926 / 15MAR26<br>
       <strong>Executed on:</strong> 14MAR26 at SFO by Agent: Expeditors
     </div>
-
-    <div data-verify-line="awb" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="awb" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Airline doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:unitedcargo.com/awb/v/x9y8z7 <span data-bracket="end" data-for="awb">]</span>
     </div>
@@ -148,8 +144,7 @@ Fraud is common in the "Long Tail" of logistics: un-vetted forwarders sometimes 
     <div style="font-weight: bold; font-size: 1.2em;">KUEHNE+NAGEL</div>
     <div style="font-size: 0.8em; text-align: right;">HAWB No: <span data-bracket="start" data-for="hawb">[</span>KN-9988776655</div>
   </div>
-
-  <div style="padding: 10px; font-size: 0.8em;">
+<div style="padding: 10px; font-size: 0.8em;">
     <div style="display: flex; border-bottom: 1px solid #000; padding-bottom: 10px; margin-bottom: 10px;">
       <div style="width: 50%; border-right: 1px solid #000; padding-right: 10px;">
         <strong>Shipper:</strong><br>
@@ -162,8 +157,7 @@ Fraud is common in the "Long Tail" of logistics: un-vetted forwarders sometimes 
         Cambridge, MA, USA
       </div>
     </div>
-
-    <div style="display: flex; border-bottom: 1px solid #000; padding-bottom: 10px; margin-bottom: 10px; background: #f9f9f9;">
+<div style="display: flex; border-bottom: 1px solid #000; padding-bottom: 10px; margin-bottom: 10px; background: #f9f9f9;">
       <div style="width: 33%; border-right: 1px solid #000; padding: 5px;">
         <strong>Airport of Dept:</strong><br>
         GVA (Geneva)
@@ -177,8 +171,7 @@ Fraud is common in the "Long Tail" of logistics: un-vetted forwarders sometimes 
         085-99228877
       </div>
     </div>
-
-    <table style="width: 100%; border-collapse: collapse; margin-top: 5px;">
+<table style="width: 100%; border-collapse: collapse; margin-top: 5px;">
       <tr style="border-bottom: 1px solid #000;">
         <th style="text-align: left; padding: 2px;">No. of Pieces</th>
         <th style="text-align: left; padding: 2px;">Description</th>
@@ -190,12 +183,10 @@ Fraud is common in the "Long Tail" of logistics: un-vetted forwarders sometimes 
         <td style="text-align: right; padding: 2px;">120.50</td>
       </tr>
     </table>
-
-    <div style="margin-top: 15px; border-top: 1px solid #000; padding-top: 5px; font-style: italic;">
+<div style="margin-top: 15px; border-top: 1px solid #000; padding-top: 5px; font-style: italic;">
       The carrier certifies that the goods described above were received for carriage in apparent good order and condition.
     </div>
-
-    <div data-verify-line="hawb" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #555; text-align: center;"
+<div data-verify-line="hawb" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #555; text-align: center;"
       title="Demo only: Forwarder doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:kuehne-nagel.com/hawb/v/9988776655 <span data-bracket="end" data-for="hawb">]</span>
     </div>

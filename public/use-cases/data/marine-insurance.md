@@ -13,11 +13,9 @@ furtherDerivations: 3
     <div style="font-weight: bold; font-size: 1.2em;">ALLIANZ MARINE & TRANSIT</div>
     <div style="font-size: 0.8em; text-align: right;">Certificate #: <span data-bracket="start" data-for="cargo-ins">[</span>AZ-998877-MAR</div>
   </div>
-
-  <div style="padding: 15px; font-size: 0.85em;">
+<div style="padding: 15px; font-size: 0.85em;">
     <h2 style="text-align: center; margin: 0 0 15px 0; font-size: 1.3em; text-decoration: underline;">CERTIFICATE OF CARGO INSURANCE</h2>
-
-    <div style="display: flex; border-bottom: 1px solid #000; padding-bottom: 10px; margin-bottom: 15px;">
+<div style="display: flex; border-bottom: 1px solid #000; padding-bottom: 10px; margin-bottom: 15px;">
       <div style="width: 50%; border-right: 1px solid #000; padding-right: 10px;">
         <strong>Assured:</strong><br>
         Global Retail Hub, Corp.<br>
@@ -29,25 +27,20 @@ furtherDerivations: 3
         (Trade Finance Unit)
       </div>
     </div>
-
-    <div style="background: #f9f9f9; padding: 10px; border: 1px solid #ccc; margin-bottom: 15px;">
+<div style="background: #f9f9f9; padding: 10px; border: 1px solid #ccc; margin-bottom: 15px;">
       <p><strong>Voyage:</strong> Shanghai, CN to Long Beach, US<br>
       <strong>Vessel:</strong> MAERSK MC-KINNEY<br>
       <strong>Cargo:</strong> 420 Cartons: Consumer Electronics</p>
-      
-      <strong>AMOUNT INSURED: USD 1,250,000.00</strong> (110% of CIF)
+<strong>AMOUNT INSURED: USD 1,250,000.00</strong> (110% of CIF)
     </div>
-
-    <div style="font-size: 0.8em; line-height: 1.4;">
+<div style="font-size: 0.8em; line-height: 1.4;">
       <strong>Conditions:</strong> Institute Cargo Clauses (A) 1/1/09, Institute War Clauses, Institute Strikes Clauses.
     </div>
-
-    <div style="margin-top: 20px; display: flex; justify-content: space-between;">
+<div style="margin-top: 20px; display: flex; justify-content: space-between;">
       <div><strong>Date Issued:</strong> March 15, 2026</div>
       <div style="text-align: right; width: 60px; height: 60px; border: 2px solid #002d62; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold;">OFFICIAL<br>STAMP</div>
     </div>
-
-    <div data-verify-line="cargo-ins" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #555; text-align: center;"
+<div data-verify-line="cargo-ins" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #555; text-align: center;"
       title="Demo only: Allianz doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:allianz.com/marine/v/998877MAR <span data-bracket="end" data-for="cargo-ins">]</span>
     </div>
@@ -134,31 +127,24 @@ _[Content merged from: marine-hull-machinery]_
       <div style="font-size: 0.8em;">Policy #: HM-99228877-26</div>
     </div>
   </div>
-
-  <div style="padding: 35px;">
+<div style="padding: 35px;">
     <h2 style="text-align: center; color: #002366; font-size: 1.4em; margin-bottom: 25px; text-transform: uppercase; letter-spacing: 1px;">Evidence of Hull Coverage</h2>
-
-    <div style="font-size: 1em; line-height: 1.6; color: #333;">
+<div style="font-size: 1em; line-height: 1.6; color: #333;">
       <p>This document confirms that the following vessel is insured for Hull & Machinery risks:</p>
-
-      <div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin: 20px 0;">
+<div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin: 20px 0;">
         <strong>Vessel Name:</strong> <span data-bracket="start" data-for="hull-ins">[</span>MV OCEAN VOYAGER<br>
         <strong>IMO Number:</strong> 9988776<br>
         <strong>Flag State:</strong> Marshall Islands
       </div>
-
-      <p><strong>Agreed Hull Value:</strong> USD 45,000,000.00<br>
+<p><strong>Agreed Hull Value:</strong> USD 45,000,000.00<br>
       <strong>Trading Limits:</strong> Worldwide (Excl. Sanctioned Zones).<br>
       <strong>Classification:</strong> Lloyd's Register (Verified)</p>
-      
-      <p><strong>Effective:</strong> Jan 01, 2026 to Jan 01, 2027</p>
+<p><strong>Effective:</strong> Jan 01, 2026 to Jan 01, 2027</p>
     </div>
-
-    <div style="margin-top: 40px; border-top: 1px solid #ccc; padding-top: 10px; font-size: 0.8em; color: #666; font-style: italic; text-align: center;">
+<div style="margin-top: 40px; border-top: 1px solid #ccc; padding-top: 10px; font-size: 0.8em; color: #666; font-style: italic; text-align: center;">
       Subject to the Nordic Marine Insurance Plan or Institute Time Clauses (Hull).
     </div>
-
-    <div data-verify-line="hull-ins" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="hull-ins" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Gard doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:gard.no/hull/v/IMO9988776 <span data-bracket="end" data-for="hull-ins">]</span>
     </div>

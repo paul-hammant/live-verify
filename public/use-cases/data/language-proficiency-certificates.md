@@ -16,8 +16,7 @@ furtherDerivations: 1
     </div>
     <div style="width: 50px; height: 50px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #004a99; font-weight: bold; font-size: 0.8em;">TOEFL</div>
   </div>
-
-  <div style="padding: 30px;">
+<div style="padding: 30px;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px;">
       <div>
         <div style="font-size: 1.1em; font-weight: bold; color: #333;"><span data-bracket="start" data-for="lang-test">[</span><strong>DOE, JOHN JACOB</strong></div>
@@ -29,8 +28,7 @@ furtherDerivations: 1
         <div style="font-size: 0.7em; color: #004a99; font-weight: bold; text-transform: uppercase;">Total Score</div>
       </div>
     </div>
-
-    <table style="width: 100%; border-collapse: collapse; font-size: 0.9em; color: #333;">
+<table style="width: 100%; border-collapse: collapse; font-size: 0.9em; color: #333;">
       <tr style="border-bottom: 1px solid #eee; background: #f9f9f9;">
         <th style="padding: 8px; text-align: left;">Section</th>
         <th style="padding: 8px; text-align: right;">Score (0-30)</th>
@@ -52,12 +50,10 @@ furtherDerivations: 1
         <td style="text-align: right;">28</td>
       </tr>
     </table>
-
-    <div style="margin-top: 25px; padding: 10px; background: #f0f4f8; border: 1px solid #d1d9e6; font-size: 0.8em; color: #004a99; font-style: italic; text-align: center;">
+<div style="margin-top: 25px; padding: 10px; background: #f0f4f8; border: 1px solid #d1d9e6; font-size: 0.8em; color: #004a99; font-style: italic; text-align: center;">
       This report is a verified record of the test-taker's English proficiency. Valid for 2 years from the test date.
     </div>
-
-    <div data-verify-line="lang-test" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="lang-test" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: ETS doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:ets.org/toefl/v/99228877 <span data-bracket="end" data-for="lang-test">]</span>
     </div>

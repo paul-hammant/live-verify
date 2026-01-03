@@ -22,19 +22,16 @@ The problem is that "Trade School" certificates are easily forged. Shady contrac
     </div>
     <div style="width: 60px; height: 60px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-weight: bold; font-size: 0.7em; text-align: center; border: 2px solid #333;">LT<br>SEAL</div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="text-align: center; margin-bottom: 25px;">
       <h2 style="margin: 0; color: #000; letter-spacing: 1px;">CERTIFICATE OF TECHNICAL COMPETENCY</h2>
       <div style="font-size: 0.9em; color: #666; margin-top: 5px;">Credential ID: <span data-bracket="start" data-for="vocation">[</span>LT-2026-992288</div>
     </div>
-
-    <div style="font-size: 1.1em; line-height: 1.6; color: #333; text-align: center; margin-bottom: 25px;">
+<div style="font-size: 1.1em; line-height: 1.6; color: #333; text-align: center; margin-bottom: 25px;">
       <p>This is to certify that <strong>JOHN JACOB DOE</strong> has successfully met the standards of training and assessment in the field of:</p>
       <div style="font-size: 1.4em; font-weight: bold; color: #d32f2f; text-transform: uppercase;">Advanced Structural Welding (AWS D1.1)</div>
     </div>
-
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9em; border-top: 1px solid #eee; border-bottom: 1px solid #eee; padding: 15px 0;">
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9em; border-top: 1px solid #eee; border-bottom: 1px solid #eee; padding: 15px 0;">
       <div style="text-align: left;">
         <strong>Date Conferred:</strong> MARCH 15, 2026<br>
         <strong>Hours Completed:</strong> 420 Shop Hours
@@ -45,8 +42,7 @@ The problem is that "Trade School" certificates are easily forged. Shady contrac
       </div>
     </div>
   </div>
-
-  <div style="padding: 20px; background: #f9f9f9; border-top: 1px dashed #999; text-align: center;">
+<div style="padding: 20px; background: #f9f9f9; border-top: 1px dashed #999; text-align: center;">
     <div data-verify-line="vocation" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: Technical schools don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:lincolntech.edu/v/LT992288 <span data-bracket="end" data-for="vocation">]</span>

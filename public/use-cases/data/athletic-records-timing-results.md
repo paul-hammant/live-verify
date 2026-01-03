@@ -13,30 +13,25 @@ furtherDerivations: 1
     <h2 style="margin: 0; letter-spacing: 2px;">WORLD ATHLETICS</h2>
     <div style="font-size: 0.9em; margin-top: 5px;">OFFICIAL RECORD RATIFICATION</div>
   </div>
-
-  <div style="padding: 40px; text-align: center;">
+<div style="padding: 40px; text-align: center;">
     <div style="font-size: 1.1em; color: #666; margin-bottom: 10px;">This is to certify that</div>
     <div style="font-size: 2em; font-weight: bold; color: #003366; margin-bottom: 20px;"><span data-bracket="start" data-for="record">[</span>USAIN BOLT</div>
     <div style="font-size: 1.1em; color: #666; margin-bottom: 10px;">achieved a new World Record in the</div>
     <div style="font-size: 1.5em; font-weight: bold; margin-bottom: 20px;">MEN'S 100 METRES</div>
-
-    <div style="background: #f0f4f8; padding: 20px; border-radius: 8px; margin: 20px 0;">
+<div style="background: #f0f4f8; padding: 20px; border-radius: 8px; margin: 20px 0;">
       <div style="font-size: 3em; font-weight: bold; color: #d32f2f;">9.58s</div>
       <div style="font-size: 0.9em; color: #555; margin-top: 5px;">Wind: +0.9 m/s | Reaction: 0.146s</div>
     </div>
-
-    <div style="font-size: 0.95em; color: #333; line-height: 1.6;">
+<div style="font-size: 0.95em; color: #333; line-height: 1.6;">
       <strong>Competition:</strong> 12th IAAF World Championships<br>
       <strong>Location:</strong> Berlin, Germany<br>
       <strong>Date:</strong> 16 August 2009
     </div>
-
-    <div style="margin-top: 40px; display: flex; justify-content: space-around;">
+<div style="margin-top: 40px; display: flex; justify-content: space-around;">
       <div style="width: 45%; border-top: 1px solid #000; padding-top: 5px; font-size: 0.8em;">Technical Delegate</div>
       <div style="width: 45%; border-top: 1px solid #000; padding-top: 5px; font-size: 0.8em;">Chief Timing Official</div>
     </div>
-
-    <div data-verify-line="record" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="record" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: World Athletics doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:worldathletics.org/records/v/BERLIN-958 <span data-bracket="end" data-for="record">]</span>
     </div>

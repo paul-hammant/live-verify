@@ -26,17 +26,14 @@ Fraud happens during the sales process: some brokers edit the SBC PDF to show a 
       <div style="font-size: 0.8em;">Form #: SBC-2026-NY-99</div>
     </div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="border-bottom: 2px solid #005fb8; padding-bottom: 10px; margin-bottom: 20px;">
       <h2 style="margin: 0; color: #333; font-size: 1.3em;">PLAN: BRONZE PPO 1000</h2>
       <div style="font-size: 0.9em; color: #666;">Coverage for: Individual & Family | Plan Period: 01/01/26 - 12/31/26</div>
     </div>
-
-    <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.9em; line-height: 1.6; color: #333;">
       <p>This is only a summary. For more information, see <span data-bracket="start" data-for="health-sbc">[</span><strong>www.aetna.com</strong>.</p>
-
-      <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
         <tr style="background: #f5f5f5; border-bottom: 1px solid #005fb8;">
           <th style="text-align: left; padding: 8px;">Important Questions</th>
           <th style="text-align: left; padding: 8px;">Answers</th>
@@ -55,12 +52,10 @@ Fraud happens during the sales process: some brokers edit the SBC PDF to show a 
         </tr>
       </table>
     </div>
-
-    <div style="margin-top: 25px; padding: 10px; background: #e3f2fd; border: 1px solid #90caf9; font-size: 0.8em; color: #0d47a1; font-style: italic; text-align: center;">
+<div style="margin-top: 25px; padding: 10px; background: #e3f2fd; border: 1px solid #90caf9; font-size: 0.8em; color: #0d47a1; font-style: italic; text-align: center;">
       This SBC is a verified extract of the Aetna Bronze PPO policy filed with the NY Dept of Financial Services.
     </div>
-
-    <div data-verify-line="health-sbc" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="health-sbc" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Aetna doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:aetna.com/sbc/v/BRONZE-1000-NY <span data-bracket="end" data-for="health-sbc">]</span>
     </div>

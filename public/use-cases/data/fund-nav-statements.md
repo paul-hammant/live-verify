@@ -35,15 +35,12 @@ In the **Bernie Madoff** scandal, the fraud was possible because Madoff wrote hi
       <div style="font-size: 0.8em;">Statement ID: NAV-992288-26</div>
     </div>
   </div>
-
-  <div style="padding: 30px;">
+<div style="padding: 30px;">
     <h3 style="margin-top: 0; color: #002d62; border-bottom: 2px solid #002d62; padding-bottom: 5px;">MONTHLY CAPITAL ACCOUNT STATEMENT</h3>
-
-    <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.9em; line-height: 1.6; color: #333;">
       <p><strong>Fund:</strong> <span data-bracket="start" data-for="nav">[</span>Titan Alpha Hedge Fund, LP<br>
       <strong>Investor:</strong> Wayne Family Foundation</p>
-
-      <div style="background: #f0f4f8; padding: 15px; border: 1px solid #d1d9e6; margin: 15px 0;">
+<div style="background: #f0f4f8; padding: 15px; border: 1px solid #d1d9e6; margin: 15px 0;">
         <table style="width: 100%; font-size: 0.95em;">
           <tr>
             <td><strong>Period Ending:</strong></td>
@@ -59,16 +56,13 @@ In the **Bernie Madoff** scandal, the fraud was possible because Madoff wrote hi
           </tr>
         </table>
       </div>
-
-      <p style="font-size: 0.85em;"><strong>Performance (MTD):</strong> +4.2%<br>
+<p style="font-size: 0.85em;"><strong>Performance (MTD):</strong> +4.2%<br>
       <strong>Performance (YTD):</strong> +12.8%</p>
     </div>
-
-    <div style="margin-top: 30px; border: 1px solid #ccc; padding: 10px; font-size: 0.8em; color: #555; background: #fafafa; font-style: italic;">
+<div style="margin-top: 30px; border: 1px solid #ccc; padding: 10px; font-size: 0.8em; color: #555; background: #fafafa; font-style: italic;">
       This statement is issued by Citco as an independent third party. Verification confirms the NAV and performance match the administrator's official books and records.
     </div>
-
-    <div data-verify-line="nav" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="nav" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Citco doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:citco.com/statements/v/NAV992288 <span data-bracket="end" data-for="nav">]</span>
     </div>

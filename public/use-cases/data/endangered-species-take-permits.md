@@ -24,32 +24,26 @@ This permit is a "Contract with the Earth." It says: "You are allowed to harm 15
       <div style="font-size: 0.85em; opacity: 0.9;">U.S. FISH AND WILDLIFE SERVICE</div>
     </div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="text-align: center; border-bottom: 2px solid #2e7d32; padding-bottom: 10px; margin-bottom: 20px;">
       <h3 style="margin: 0; color: #1b5e20;">INCIDENTAL TAKE PERMIT</h3>
       <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;">Permit #: <span data-bracket="start" data-for="species">[</span>PER-99228877</div>
     </div>
-
-    <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
       <p><strong>Permittee:</strong> Desert Sun Solar, LLC<br>
       <strong>Location:</strong> Riverside County, CA (Project Helios)</p>
-
-      <div style="background: #f1f8e9; border: 1px solid #c5e1a5; padding: 15px; margin: 15px 0; border-radius: 4px;">
+<div style="background: #f1f8e9; border: 1px solid #c5e1a5; padding: 15px; margin: 15px 0; border-radius: 4px;">
         <p><strong>Authorized Species:</strong> Desert Tortoise (<em>Gopherus agassizii</em>)</p>
         <p><strong>Take Limit:</strong> 15 individuals (Incidental)</p>
         <p><strong>Required Mitigation:</strong> Restoration of 400 acres of Critical Habitat.</p>
       </div>
-
-      <p><strong>Effective Date:</strong> March 15, 2026<br>
+<p><strong>Effective Date:</strong> March 15, 2026<br>
       <strong>Expiration Date:</strong> March 14, 2031</p>
     </div>
-
-    <div style="margin-top: 25px; border: 1px solid #ccc; padding: 10px; font-size: 0.8em; color: #555; background: #fafafa; font-style: italic;">
+<div style="margin-top: 25px; border: 1px solid #ccc; padding: 10px; font-size: 0.8em; color: #555; background: #fafafa; font-style: italic;">
       Verification confirms the permittee has an active Habitat Conservation Plan (HCP) on file.
     </div>
-
-    <div data-verify-line="species" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="species" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: FWS doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:fws.gov/permits/v/PER99228877 <span data-bracket="end" data-for="species">]</span>
     </div>

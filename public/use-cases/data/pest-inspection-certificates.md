@@ -19,8 +19,7 @@ Because a "Positive" finding can kill a home sale or require a $5,000 treatment,
     <div style="font-weight: bold; font-size: 1.4em; color: #004d40;">PRECISION PEST AUDITS</div>
     <div style="font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">Official Wood Destroying Insect (WDI) Report</div>
   </div>
-
-  <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px;">
       <div>
         <strong>Property Address:</strong><br>
@@ -31,28 +30,24 @@ Because a "Positive" finding can kill a home sale or require a $5,000 treatment,
         <strong>Date:</strong> 15 MAR 2026
       </div>
     </div>
-
-    <div style="background: #f9f9f9; padding: 20px; border: 1px solid #ddd; margin: 20px 0;">
+<div style="background: #f9f9f9; padding: 20px; border: 1px solid #ddd; margin: 20px 0;">
       <h4 style="margin-top: 0; color: #004d40; border-bottom: 1px solid #ccc; padding-bottom: 5px;">VERIFIED FINDINGS</h4>
       <p style="margin: 10px 0;"><strong>Active Infestation:</strong> <span style="color: #2e7d32; font-weight: bold;">NONE OBSERVED</span></p>
       <p style="margin: 5px 0;"><strong>Previous Damage:</strong> MINOR (Garage Sill Plate)</p>
       <p style="margin: 5px 0;"><strong>Recommendations:</strong> Annual monitoring recommended. No treatment required.</p>
     </div>
-
-    <p style="font-size: 0.85em; font-style: italic; color: #666;">
+<p style="font-size: 0.85em; font-style: italic; color: #666;">
       "This report is an opinion of the condition of the property on the date of inspection only. It is not a guarantee or warranty."
     </p>
   </div>
-
-  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div>
       <div style="border-top: 1px solid #000; width: 200px; padding-top: 5px; font-style: italic;">Sarah J. Miller, Licensed Inspector</div>
       <div style="font-size: 0.7em; color: #777;">License: #WDI-992288-TX</div>
     </div>
     <div style="text-align: right; color: #004d40; font-weight: bold; font-size: 0.8em;">INSPECTION VERIFIED</div>
   </div>
-
-  <div style="padding: 20px; background: #fffbe6; border: 1px dashed #999; margin-top: 30px; text-align: center;">
+<div style="padding: 20px; background: #fffbe6; border: 1px dashed #999; margin-top: 30px; text-align: center;">
     <div data-verify-line="wdi" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: Inspection firms don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:precision-pest.com/v/WDI20268844 <span data-bracket="end" data-for="wdi">]</span>

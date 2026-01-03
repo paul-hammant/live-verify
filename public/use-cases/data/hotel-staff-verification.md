@@ -41,8 +41,7 @@ The **Staff ID Badge** is the worker's proof that they are authorized to be in t
       <div style="font-size: 0.8em; opacity: 0.8;">OFFICIAL SERVICE TEAM</div>
     </div>
   </div>
-
-  <div style="padding: 20px; display: flex;">
+<div style="padding: 20px; display: flex;">
     <div style="width: 100px; margin-right: 15px;">
       <div style="width: 100px; height: 125px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #777;">[PHOTO ID]</div>
     </div>
@@ -56,8 +55,7 @@ The **Staff ID Badge** is the worker's proof that they are authorized to be in t
       </div>
     </div>
   </div>
-
-  <div style="padding: 0 20px 20px 20px;">
+<div style="padding: 0 20px 20px 20px;">
     <p style="font-size: 0.75em; color: #555; font-style: italic; text-align: center;">
       Verified via Hilton Corporate Security. Scan to confirm staff member's current on-duty status and property affiliation.
     </p>

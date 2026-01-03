@@ -21,8 +21,7 @@ It's not just for geography—it's for **Tariffs**. If a company ships microproc
     <h3 style="margin: 0; text-transform: uppercase;">CERTIFICATE OF ORIGIN</h3>
     <div style="font-size: 0.8em;">U.S. CHAMBER OF COMMERCE • WASHINGTON D.C.</div>
   </div>
-
-  <div style="padding: 20px; font-size: 0.8em;">
+<div style="padding: 20px; font-size: 0.8em;">
     <div style="display: flex; border-bottom: 1px solid #333; padding-bottom: 10px; margin-bottom: 10px;">
       <div style="width: 50%; border-right: 1px solid #333; padding-right: 10px;">
         <strong>1. Exporter:</strong><br>
@@ -35,23 +34,19 @@ It's not just for geography—it's for **Tariffs**. If a company ships microproc
         Suwon, South Korea
       </div>
     </div>
-
-    <p><strong>3. Country of Origin:</strong> UNITED STATES OF AMERICA</p>
-    
-    <p><strong>4. Description of Goods:</strong><br>
+<p><strong>3. Country of Origin:</strong> UNITED STATES OF AMERICA</p>
+<p><strong>4. Description of Goods:</strong><br>
     Integrated Circuits (Microprocessors)<br>
     HS Code: 8542.31<br>
     Weight: 450 KG</p>
-
-    <div style="margin-top: 20px; border: 1px solid #000; padding: 10px;">
+<div style="margin-top: 20px; border: 1px solid #000; padding: 10px;">
       <strong>CERTIFICATION:</strong><br>
       The U.S. Chamber of Commerce certifies that the goods described above originated in the country shown in box 3.
       <br><br>
       Date: 15 March 2026<br>
       Authorized Signature: <em>M. J. Smith</em>
     </div>
-
-    <div data-verify-line="origin-us" style="border-top: 1px dashed #999; margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #555; text-align: center;"
+<div data-verify-line="origin-us" style="border-top: 1px dashed #999; margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #555; text-align: center;"
       title="Demo only: US Chamber doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:uschamber.com/v/TXTI-2026-09 <span data-bracket="end" data-for="origin-us">]</span>
     </div>

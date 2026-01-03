@@ -16,24 +16,21 @@ furtherDerivations: 1
       <div style="font-size: 0.8em; opacity: 0.8;">U.S. SECURITIES AND EXCHANGE COMMISSION</div>
     </div>
   </div>
-
-  <div style="padding: 25px; display: flex;">
+<div style="padding: 25px; display: flex;">
     <div style="width: 100px; margin-right: 20px;">
       <div style="width: 100px; height: 125px; background: #eee; border: 1px solid #ccc; display: flex; align-items: center; justify-content: center; color: #777; border-radius: 4px;">[PHOTO ID]</div>
     </div>
     <div style="flex-grow: 1;">
       <h3 style="margin: 0; color: #002d62;">REPRESENTATIVE CREDENTIAL</h3>
       <div style="font-size: 1.1em; font-weight: bold; margin: 5px 0;"><span data-bracket="start" data-for="advisor">[</span>SARAH J. MILLER</div>
-      
-      <div style="font-size: 0.9em; color: #333; line-height: 1.4;">
+<div style="font-size: 0.9em; color: #333; line-height: 1.4;">
         <strong>Individual CRD #:</strong> 9922887<br>
         <strong>Firm:</strong> Miller Wealth Management, LLC<br>
         <strong>Status:</strong> REGISTERED / ACTIVE
       </div>
     </div>
   </div>
-
-  <div style="padding: 0 25px 25px 25px;">
+<div style="padding: 0 25px 25px 25px;">
     <div style="background: #f9f9f9; border: 1px solid #eee; padding: 10px; font-size: 0.85em; color: #555;">
       <strong>Fiduciary Status:</strong> This representative is a fiduciary under the Investment Advisers Act of 1940. Last ADV filing: Jan 15, 2026.
     </div>

@@ -19,8 +19,7 @@ These labels are the "Seal of Survival." Fraud is common in the "Budget Market":
     <h3 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">SAFETY CERTIFICATION</h3>
     <div style="font-size: 0.7em; opacity: 0.8; margin-top: 5px;">NATIONAL OPERATING COMMITTEE ON STANDARDS FOR ATHLETIC EQUIPMENT</div>
   </div>
-
-  <div style="padding: 20px;">
+<div style="padding: 20px;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
       <div style="width: 60px; height: 60px; border: 2px solid #d32f2f; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; text-align: center; color: #d32f2f;">SEI<br>CERTIFIED</div>
       <div style="text-align: right;">
@@ -30,19 +29,16 @@ These labels are the "Seal of Survival." Fraud is common in the "Budget Market":
         <div style="font-weight: bold;">15 MAR 2026</div>
       </div>
     </div>
-
-    <div style="font-size: 0.9em; line-height: 1.5; color: #333; border-top: 1px solid #eee; padding-top: 15px;">
+<div style="font-size: 0.9em; line-height: 1.5; color: #333; border-top: 1px solid #eee; padding-top: 15px;">
       <p><strong>Manufacturer:</strong> <span data-bracket="start" data-for="safety">[</span>RIDDELL SPORTS GROUP<br>
       <strong>Model:</strong> SpeedFlex Precision-Fit<br>
       <strong>Serial Number:</strong> SN-992288-XJ-42</p>
-      
-      <div style="margin-top: 15px; padding: 10px; background: #fdfdfd; border: 1px solid #ccc; font-size: 0.85em; font-style: italic;">
+<div style="margin-top: 15px; padding: 10px; background: #fdfdfd; border: 1px solid #ccc; font-size: 0.85em; font-style: italic;">
         "Meets NOCSAE standard for newly manufactured football helmets. Certified for use through March 2027."
       </div>
     </div>
   </div>
-
-  <div style="padding: 15px; background: #f9f9f9; border-top: 1px dashed #bbb; text-align: center;">
+<div style="padding: 15px; background: #f9f9f9; border-top: 1px dashed #bbb; text-align: center;">
     <div data-verify-line="safety" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Standards bodies don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:nocsae.org/v/SN992288XJ <span data-bracket="end" data-for="safety">]</span>

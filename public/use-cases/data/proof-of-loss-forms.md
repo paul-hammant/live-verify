@@ -19,31 +19,24 @@ This document is the "Trigger for Payout." Fraud is high-stakes: claimants often
     <h2 style="margin: 0; font-size: 1.4em; text-transform: uppercase; letter-spacing: 1px;">SWORN STATEMENT IN PROOF OF LOSS</h2>
     <div style="font-size: 0.9em; font-style: italic;">Official Claim Document</div>
   </div>
-
-  <div style="font-size: 0.95em; line-height: 1.6; color: #333; text-align: justify;">
+<div style="font-size: 0.95em; line-height: 1.6; color: #333; text-align: justify;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px; font-weight: bold;">
       <div>POLICY #: 99228877-XJ</div>
       <div>CLAIM #: <span data-bracket="start" data-for="loss">[</span>CL-2026-8844</div>
     </div>
-
-    <p>To the <strong>GOLIATH INSURANCE COMPANY</strong> of Springfield, USA.</p>
-    
-    <p>At time of loss, the total amount of insurance upon the property described was <strong>$ 250,000.00</strong>. The said loss occurred on the 15th day of March, 2026 about the hour of 02:15 PM.</p>
-    
-    <div style="background: #f9f9f9; padding: 15px; border: 1px solid #ddd; margin: 20px 0;">
+<p>To the <strong>GOLIATH INSURANCE COMPANY</strong> of Springfield, USA.</p>
+<p>At time of loss, the total amount of insurance upon the property described was <strong>$ 250,000.00</strong>. The said loss occurred on the 15th day of March, 2026 about the hour of 02:15 PM.</p>
+<div style="background: #f9f9f9; padding: 15px; border: 1px solid #ddd; margin: 20px 0;">
       <p><strong>Cause of Loss:</strong> Accidental Fire (Kitchen Electrical)<br>
       <strong>Insured:</strong> SARAH JANE DOE<br>
       <strong>Property Address:</strong> 123 Maple St, Anytown, USA</p>
-      
-      <p style="border-top: 1px solid #ccc; padding-top: 10px; font-weight: bold;">
+<p style="border-top: 1px solid #ccc; padding-top: 10px; font-weight: bold;">
         TOTAL AMOUNT CLAIMED: <span style="font-size: 1.3em;">$ 42,250.00</span>
       </p>
     </div>
-
-    <p>The said loss did not originate by any act, design, or procurement on the part of your insured. No articles are mentioned herein but such as were destroyed or damaged at the time of said loss.</p>
+<p>The said loss did not originate by any act, design, or procurement on the part of your insured. No articles are mentioned herein but such as were destroyed or damaged at the time of said loss.</p>
   </div>
-
-  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div style="width: 45%;">
       <div style="border-top: 1px solid #000; padding-top: 5px; font-size: 0.8em; font-style: italic;">Insured Signature</div>
     </div>
@@ -51,8 +44,7 @@ This document is the "Trigger for Payout." Fraud is high-stakes: claimants often
       <div style="width: 80px; height: 80px; border: 2px solid #000; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; text-align: center; margin-left: auto;">NOTARY<br>SEAL</div>
     </div>
   </div>
-
-  <div style="padding: 20px; background: #fffbe6; border: 1px dashed #999; margin-top: 30px; text-align: center;">
+<div style="padding: 20px; background: #fffbe6; border: 1px dashed #999; margin-top: 30px; text-align: center;">
     <div data-verify-line="loss" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Insurers don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:goliathins.com/v/CL20268844 <span data-bracket="end" data-for="loss">]</span>

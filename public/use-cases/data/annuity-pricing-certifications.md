@@ -6,6 +6,11 @@ retention: "7-30 years (contract lifetime)"
 slug: "annuity-pricing-certifications"
 tags: ["actuarial", "annuity", "pricing", "insurance", "solvency", "compliance"]
 furtherDerivations: 1
+gmail: yes
+pdf: yes
+sms: no
+discord: no
+whatsapp: yes
 ---
 
 ## What is an Annuity Rate Certification?
@@ -18,6 +23,11 @@ The **Rate Certification** is the document where the company's actuary (math exp
 
 Verification ensures that the "High Interest Rate" an agent promises you on their tablet matches what the company officially filed with the state.
 
+## Document Format Examples
+
+The annuity certification can arrive through different channels. Below: rotating view of how the same certification appears in different formats (5-second cycle with countdown):
+
+<div id="format-showcase-annuity" class="content" data-format-showcase="[]" data-doc-content="" data-verify-line="verify:prudential.com/actuarial/v/x9y8z7">
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 1px solid #333; background: #fff; padding: 40px; box-shadow: 2px 2px 12px rgba(0,0,0,0.1);">
   <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 30px;">
     <div style="font-weight: bold; font-size: 1.1em; color: #1a237e;">PRUDENTIAL FINANCIAL SERVICES</div>
@@ -26,32 +36,27 @@ Verification ensures that the "High Interest Rate" an agent promises you on thei
       March 15, 2026
     </div>
   </div>
-
   <h3 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; color: #1a237e; border-bottom: 2px solid #1a237e; padding-bottom: 10px;">Actuarial Certification of Pricing</h3>
-
   <div style="font-size: 0.95em; line-height: 1.6; text-align: justify; color: #333; margin-top: 20px;">
     <p>I, <span data-bracket="start" data-for="annuity">[</span><strong>Robert Miller, FSA, MAAA</strong>, Appointed Actuary for Prudential, hereby certify that the pricing and interest rate assumptions for the <strong>SecureIncome Plus Fixed Index Annuity (Series 2026)</strong>:</p>
-
-    <ul>
-      <li>Are consistent with current mortality tables (2012 IAM).</li>
-      <li>Incorporate interest rate crediting strategies that meet state solvency requirements.</li>
-      <li>Have been tested for adequacy under 1,000 stochastic economic scenarios.</li>
+    <ul style="margin-left: 20px; margin-top: 10px; margin-bottom: 0;">
+      <li style="margin-bottom: 6px;">Are consistent with current mortality tables (2012 IAM).</li>
+      <li style="margin-bottom: 6px;">Incorporate interest rate crediting strategies that meet state solvency requirements.</li>
+      <li style="margin-bottom: 6px;">Have been tested for adequacy under 1,000 stochastic economic scenarios.</li>
     </ul>
-
     <p><strong>Certified Crediting Rate:</strong> 5.25% (Guaranteed for 3 years)</p>
-  </div>
-
+</div>
   <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div style="border-top: 1px solid #000; width: 200px; padding-top: 5px; font-style: italic;">Robert Miller, FSA</div>
     <div style="text-align: right;">
       <div style="border: 1px solid #1a237e; display: inline-block; padding: 5px 10px; font-size: 0.8em; color: #1a237e; font-weight: bold;">FILED & APPROVED</div>
     </div>
   </div>
-
   <div data-verify-line="annuity" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Prudential doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:prudential.com/actuarial/v/x9y8z7 <span data-bracket="end" data-for="annuity">]</span>
+      verify:prudential.com/actuarial/rates/2026 <span data-bracket="end" data-for="annuity">]</span>
   </div>
+</div>
 </div>
 
 ## Data Verified

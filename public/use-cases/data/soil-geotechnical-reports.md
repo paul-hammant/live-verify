@@ -25,8 +25,7 @@ These reports are the foundation of all structural engineering. Fraud is high-st
       <div style="font-size: 0.8em; color: #888;">Project #: GEO-2026-8844</div>
     </div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
         <strong>Project Site:</strong> <span data-bracket="start" data-for="geo">[</span>42 SKYLINE DRIVE, SPRINGFIELD<br>
@@ -39,8 +38,7 @@ These reports are the foundation of all structural engineering. Fraud is high-st
         <strong>Max Depth:</strong> 50 FT
       </div>
     </div>
-
-    <div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin-bottom: 20px; border-radius: 4px;">
+<div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin-bottom: 20px; border-radius: 4px;">
       <h4 style="margin-top: 0; color: #003366; font-size: 0.9em; border-bottom: 1px solid #ccc; padding-bottom: 5px;">CERTIFIED FOUNDATION PARAMETERS</h4>
       <table style="width: 100%; font-size: 0.9em;">
         <tr>
@@ -61,8 +59,7 @@ These reports are the foundation of all structural engineering. Fraud is high-st
         </tr>
       </table>
     </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="display: flex; justify-content: space-between; align-items: flex-end;">
       <div>
         <div style="border-top: 1px solid #000; width: 200px; padding-top: 5px; font-style: italic;">Sarah J. Jenkins, P.E.</div>
         <div style="font-size: 0.7em; color: #777;">License: #PE-992288 • SEAL VERIFIED</div>
@@ -70,8 +67,7 @@ These reports are the foundation of all structural engineering. Fraud is high-st
       <div style="width: 80px; height: 80px; border: 2px solid #003366; color: #003366; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; text-align: center; transform: rotate(-5deg);">STRUCTURAL<br>RELIANCE</div>
     </div>
   </div>
-
-  <div style="padding: 20px; background: #fdfdfd; border-top: 1px solid #000; text-align: center;">
+<div style="padding: 20px; background: #fdfdfd; border-top: 1px solid #000; text-align: center;">
     <div data-verify-line="geo" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Engineering firms don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:summit-geo.com/v/GEO99228877 <span data-bracket="end" data-for="geo">]</span>

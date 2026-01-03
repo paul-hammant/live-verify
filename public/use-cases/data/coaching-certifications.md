@@ -24,16 +24,14 @@ Parents and clubs use these badges to ensure that the adult on the sideline is a
     <h2 style="margin: 0; letter-spacing: 1px;">U.S. SOCCER FEDERATION</h2>
     <div style="font-size: 0.9em; opacity: 0.8;">OFFICIAL COACHING LICENSE</div>
   </div>
-
-  <div style="padding: 30px; display: flex;">
+<div style="padding: 30px; display: flex;">
     <div style="width: 120px; margin-right: 25px;">
       <div style="width: 120px; height: 150px; background: #eee; border: 1px solid #ccc; display: flex; align-items: center; justify-content: center; color: #777; border-radius: 4px;">[PHOTO ID]</div>
     </div>
     <div style="flex-grow: 1;">
       <h3 style="margin: 0; color: #004a99;">NATIONAL "C" LICENSE</h3>
       <div style="font-size: 1.2em; font-weight: bold; margin: 10px 0;"><span data-bracket="start" data-for="coach">[</span>TED LASSO</div>
-      
-      <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
         <strong>License #:</strong> 992288-USSF<br>
         <strong>Status:</strong> ACTIVE / ELIGIBLE<br>
         <strong>SafeSport Trained:</strong> YES (Exp 2027)<br>
@@ -41,8 +39,7 @@ Parents and clubs use these badges to ensure that the adult on the sideline is a
       </div>
     </div>
   </div>
-
-  <div style="padding: 0 30px 30px 30px;">
+<div style="padding: 0 30px 30px 30px;">
     <p style="font-size: 0.8em; color: #555; font-style: italic; text-align: center; border-top: 1px solid #eee; padding-top: 10px;">
       This individual has met all technical and safety requirements to coach youth soccer in sanctioned competitions.
     </p>

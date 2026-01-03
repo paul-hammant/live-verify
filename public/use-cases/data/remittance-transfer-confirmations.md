@@ -19,18 +19,15 @@ Because these papers are essentially vouchers for cash, they are high-stakes tar
     <div style="font-weight: bold; font-size: 1.4em; letter-spacing: -1px;">WesternUnion \/</div>
     <div style="font-size: 0.7em; font-weight: bold; text-transform: uppercase; margin-top: 5px;">Money Transfer Receipt</div>
   </div>
-
-  <div style="padding: 20px; background: #fffbe6;">
+<div style="padding: 20px; background: #fffbe6;">
     <div style="text-align: center; margin-bottom: 20px;">
       <div style="font-size: 0.7em; color: #666; text-transform: uppercase;">Tracking Number (MTCN)</div>
       <div style="font-size: 1.8em; font-weight: bold; color: #000; letter-spacing: 2px;"><span data-bracket="start" data-for="remit">[</span>992-288-7766</div>
     </div>
-
-    <div style="font-size: 0.9em; line-height: 1.5; color: #333;">
+<div style="font-size: 0.9em; line-height: 1.5; color: #333;">
       <p><strong>Sender:</strong> JOHN JACOB DOE (USA)<br>
       <strong>Receiver:</strong> SARAH JANE SMITH (MEX)</p>
-      
-      <div style="border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; padding: 10px 0; margin: 15px 0;">
+<div style="border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; padding: 10px 0; margin: 15px 0;">
         <div style="display: flex; justify-content: space-between;">
           <span>Transfer Amount:</span>
           <strong>$ 1,250.00 USD</strong>
@@ -46,8 +43,7 @@ Because these papers are essentially vouchers for cash, they are high-stakes tar
       </div>
     </div>
   </div>
-
-  <div style="padding: 20px; background: #fff; text-align: center;">
+<div style="padding: 20px; background: #fff; text-align: center;">
     <div data-verify-line="remit" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Remittance firms don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:wu.com/v/MTCN9922887766 <span data-bracket="end" data-for="remit">]</span>

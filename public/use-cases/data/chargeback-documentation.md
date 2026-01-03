@@ -21,26 +21,21 @@ Merchants need these verified letters to prove to lenders and business partners 
     <div style="font-weight: bold; font-size: 1.2em;">PAYPAL MERCHANT SERVICES</div>
     <div style="font-size: 0.8em;">Dispute Case: PP-D-99887766</div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <h3 style="margin-top: 0; color: #003087; border-bottom: 2px solid #003087; padding-bottom: 5px;">CHARGEBACK DISPUTE SUMMARY</h3>
-
-    <div style="font-size: 0.9em; line-height: 1.5; color: #333;">
+<div style="font-size: 0.9em; line-height: 1.5; color: #333;">
       <p><strong>Merchant:</strong> <span data-bracket="start" data-for="chargeback">[</span>Electronic Emporium, LLC<br>
       <strong>Transaction Date:</strong> Feb 10, 2026<br>
       <strong>Amount Disputed:</strong> $ 1,250.00</p>
-
-      <div style="background: #f5f5f5; border: 1px solid #ddd; padding: 15px; margin: 15px 0;">
+<div style="background: #f5f5f5; border: 1px solid #ddd; padding: 15px; margin: 15px 0;">
         <p><strong>Reason Code:</strong> 10.4 (Other Fraud - Card-Not-Present)</p>
         <p><strong>Merchant Evidence Status:</strong> COMPELLED<br>
         <strong>Proof of Delivery:</strong> FedEx Tracking #9922887766<br>
         <strong>IP Address:</strong> 192.168.1.42 (Verified Match)</p>
       </div>
-
-      <p style="font-weight: bold; color: #2e7d32;">CURRENT STATUS: DISPUTE WON - FUNDS REVERSED TO MERCHANT</p>
+<p style="font-weight: bold; color: #2e7d32;">CURRENT STATUS: DISPUTE WON - FUNDS REVERSED TO MERCHANT</p>
     </div>
-
-    <div data-verify-line="chargeback" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="chargeback" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: PayPal doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:paypal.com/disputes/v/PP-D-99887766 <span data-bracket="end" data-for="chargeback">]</span>
     </div>

@@ -24,33 +24,27 @@ The seller thinks the check is real, hands over the car keys, and then discovers
       <div style="font-size: 1.1em; font-weight: bold;">No. 998877665</div>
     </div>
   </div>
-
-  <div style="border: 1px solid #ccc; padding: 15px; background: #fff;">
+<div style="border: 1px solid #ccc; padding: 15px; background: #fff;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
       <div>Date: <strong>March 15, 2026</strong></div>
       <div style="font-size: 1.2em; font-weight: bold;">$ ********25,000.00</div>
     </div>
-
-    <div style="margin: 15px 0;">
+<div style="margin: 15px 0;">
       PAY TO THE<br>ORDER OF: <span data-bracket="start" data-for="check">[</span><strong>EXEMPLAR REALTY HOLDINGS, LLC</strong>
     </div>
-
-    <div style="margin: 10px 0; border-bottom: 1px solid #999; padding-bottom: 5px;">
+<div style="margin: 10px 0; border-bottom: 1px solid #999; padding-bottom: 5px;">
       TWENTY-FIVE THOUSAND AND 00/100 US DOLLARS
     </div>
-
-    <div style="margin-top: 10px; font-size: 0.8em;">
+<div style="margin-top: 10px; font-size: 0.8em;">
       RE: Earnest Money Deposit - 456 Maple St<br>
       Purchaser: John Q. Public
     </div>
   </div>
-
-  <div style="display: flex; justify-content: space-between; margin-top: 20px; font-size: 0.7em; color: #777;">
+<div style="display: flex; justify-content: space-between; margin-top: 20px; font-size: 0.7em; color: #777;">
     <div>⑈998877665⑈  ⑆123456789⑆  99228877⑈</div>
     <div style="text-align: right; border-top: 1px solid #000; width: 150px; padding-top: 2px;">Authorized Signature</div>
   </div>
-
-  <div data-verify-line="check" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="check" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Wells Fargo doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:wellsfargo.com/check/v/998877665 <span data-bracket="end" data-for="check">]</span>
   </div>

@@ -21,8 +21,7 @@ Because these shares aren't traded on the stock market (like Apple or Tesla), th
     <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 2px;">CERTIFICATE OF STOCK</div>
     <div style="font-size: 0.9em; margin-top: 5px;">INCORPORATED UNDER THE LAWS OF DELAWARE</div>
   </div>
-
-  <div style="font-size: 1em; line-height: 1.6; color: #333; text-align: center;">
+<div style="font-size: 1em; line-height: 1.6; color: #333; text-align: center;">
     <p>This certifies that</p>
     <p style="font-size: 1.5em; font-weight: bold; color: #1a237e; margin: 15px 0;"><span data-bracket="start" data-for="equity">[</span>SARAH J. SMITH</p>
     <p>is the registered holder of</p>
@@ -30,14 +29,12 @@ Because these shares aren't traded on the stock market (like Apple or Tesla), th
     <p>of</p>
     <p style="font-size: 1.4em; font-weight: bold; margin: 10px 0;">FUTURE-TECH ROBOTICS, INC.</p>
   </div>
-
-  <div style="margin: 30px 0; font-size: 0.9em; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; padding: 15px 0; text-align: left;">
+<div style="margin: 30px 0; font-size: 0.9em; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; padding: 15px 0; text-align: left;">
     <strong>Certificate #:</strong> FT-2026-0992<br>
     <strong>Issuance Date:</strong> March 15, 2026<br>
     <strong>Offering Type:</strong> Regulation Crowdfunding (Reg CF)
   </div>
-
-  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div style="width: 45%;">
       <div style="border-top: 1px solid #000; padding-top: 5px; font-style: italic;">Elon Miller, CEO</div>
     </div>
@@ -45,8 +42,7 @@ Because these shares aren't traded on the stock market (like Apple or Tesla), th
       <div style="width: 80px; height: 80px; border: 2px solid #1a237e; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; color: #1a237e; font-weight: bold; text-align: center; margin-left: auto;">CORP<br>SEAL</div>
     </div>
   </div>
-
-  <div data-verify-line="equity" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="equity" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: StartEngine doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:startengine.com/shares/v/FT-992288 <span data-bracket="end" data-for="equity">]</span>
   </div>

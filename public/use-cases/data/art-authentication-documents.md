@@ -24,34 +24,27 @@ High-end art is a target for money laundering. Verified appraisals ensure that a
     <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;">SOTHEBY'S ADVISORY</div>
     <div style="font-size: 0.8em; color: #666; margin-top: 5px;">APPRAISAL & VALUATION SERVICES</div>
   </div>
-
-  <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <p><strong>Date:</strong> March 15, 2026<br>
     <strong>Client:</strong> <span data-bracket="start" data-for="appraisal">[</span>The Sterling Cooper Foundation</p>
-
-    <h3 style="text-align: center; margin: 20px 0;">SUMMARY VALUATION REPORT</h3>
-
-    <div style="background: #fdfdfd; border: 1px solid #eee; padding: 15px; margin-bottom: 20px;">
+<h3 style="text-align: center; margin: 20px 0;">SUMMARY VALUATION REPORT</h3>
+<div style="background: #fdfdfd; border: 1px solid #eee; padding: 15px; margin-bottom: 20px;">
       <p><strong>Artist:</strong> Mark Rothko (1903-1970)<br>
       <strong>Title:</strong> <em>No. 6 (Violet, Green and Red)</em><br>
       <strong>Medium:</strong> Oil on canvas<br>
       <strong>Dimensions:</strong> 94 in x 56 in</p>
-      
-      <p style="border-top: 1px solid #ddd; padding-top: 10px; font-size: 1.1em;">
+<p style="border-top: 1px solid #ddd; padding-top: 10px; font-size: 1.1em;">
         <strong>Fair Market Value:</strong> $ 186,000,000.00
       </p>
     </div>
-
-    <p><strong>Purpose of Appraisal:</strong> Insurance Placement / Estate Tax</p>
+<p><strong>Purpose of Appraisal:</strong> Insurance Placement / Estate Tax</p>
     <p><strong>Standards:</strong> This appraisal conforms to the Uniform Standards of Professional Appraisal Practice (USPAP).</p>
   </div>
-
-  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div style="border-top: 1px solid #000; width: 200px; padding-top: 5px; font-style: italic;">Arthur Jensen, AAA</div>
     <div style="font-size: 0.8em; color: #777;">Report #: VAL- Rothko-2026-01</div>
   </div>
-
-  <div data-verify-line="appraisal" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="appraisal" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Sotheby's doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:sothebys.com/valuation/v/x9y8z7 <span data-bracket="end" data-for="appraisal">]</span>
   </div>
@@ -136,21 +129,17 @@ Forgeries are common. Fraudsters often forge the "paperwork" (the COA) using fak
   <div style="text-align: center; margin-bottom: 30px;">
     <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 2px;">CERTIFICATE OF AUTHENTICITY</h2>
   </div>
-
-  <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <p>This document certifies that the following work of art is an original work by the artist named herein.</p>
-
-    <div style="margin: 20px 0; border-left: 4px solid #000; padding-left: 20px;">
+<div style="margin: 20px 0; border-left: 4px solid #000; padding-left: 20px;">
       <p><strong>Artist:</strong> <span data-bracket="start" data-for="art">[</span>Jean-Michel Basquiat<br>
       <strong>Title:</strong> <em>Untitled (Skull)</em><br>
       <strong>Year:</strong> 1981<br>
       <strong>Medium:</strong> Acrylic and mixed media on canvas<br>
       <strong>Dimensions:</strong> 207 cm &times; 176 cm</p>
     </div>
-
-    <p>This work is registered in the archives of the <strong>Basquiat Authentication Committee</strong> and is included in the Catalogue Raisonné (Vol III, Page 12).</p>
-
-    <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+<p>This work is registered in the archives of the <strong>Basquiat Authentication Committee</strong> and is included in the Catalogue Raisonné (Vol III, Page 12).</p>
+<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
       <div>
         <div style="border-top: 1px solid #000; width: 200px; padding-top: 5px; font-style: italic;">Gerard Basquiat</div>
         <div style="font-size: 0.8em; color: #777;">For the Authentication Committee</div>
@@ -160,8 +149,7 @@ Forgeries are common. Fraudsters often forge the "paperwork" (the COA) using fak
       </div>
     </div>
   </div>
-
-  <div data-verify-line="art" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="art" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Authentication committee doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:basquiat-estate.org/v/JMB0992 <span data-bracket="end" data-for="art">]</span>
   </div>
@@ -249,26 +237,20 @@ OCR-to-Hash allows a collector to verify that their "14 / 50" is an officially r
     <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 2px;">PACE EDITIONS</div>
     <div style="font-size: 0.8em; color: #666; margin-top: 5px;">NEW YORK • LONDON • HONG KONG</div>
   </div>
-
-  <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <h3 style="text-align: center; text-transform: uppercase; margin-bottom: 20px;">Edition Certification</h3>
-
-    <p>This certifies that the work described below is part of an authorized limited edition.</p>
-
-    <div style="margin: 20px 0; padding: 15px; background: #f9f9f9; border: 1px solid #eee;">
+<p>This certifies that the work described below is part of an authorized limited edition.</p>
+<div style="margin: 20px 0; padding: 15px; background: #f9f9f9; border: 1px solid #eee;">
       <p><strong>Artist:</strong> Chuck Close<br>
       <strong>Title:</strong> <em>Self-Portrait (Scribble)</em><br>
       <strong>Medium:</strong> Soft ground etching<br>
       <strong>Year:</strong> 2025</p>
-      
-      <p style="border-top: 1px solid #ddd; padding-top: 10px; font-size: 1.1em; font-weight: bold;">
+<p style="border-top: 1px solid #ddd; padding-top: 10px; font-size: 1.1em; font-weight: bold;">
         <span data-bracket="start" data-for="edition">[</span>Edition Number: 14 / 50
       </p>
     </div>
-
-    <p>Signed and numbered by the artist in pencil, lower right. Published by Pace Editions, Inc.</p>
-
-    <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+<p>Signed and numbered by the artist in pencil, lower right. Published by Pace Editions, Inc.</p>
+<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
       <div>
         <div style="border-top: 1px solid #000; width: 180px; padding-top: 5px; font-style: italic;">Pace Editions Archive</div>
         <div style="font-size: 0.8em; color: #777;">Authorized Representative</div>
@@ -278,8 +260,7 @@ OCR-to-Hash allows a collector to verify that their "14 / 50" is an officially r
       </div>
     </div>
   </div>
-
-  <div data-verify-line="edition" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="edition" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Publisher doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:pacegallery.com/editions/v/14-50-CC <span data-bracket="end" data-for="edition">]</span>
   </div>
@@ -366,21 +347,16 @@ These letters are high-value targets for forgery—criminals create fake "expert
     <h3 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">Signature Authentication Letter</h3>
     <div style="font-size: 0.8em; color: #666; margin-top: 5px;">THE INTERNATIONAL FOUNDATION FOR ART RESEARCH (IFAR)</div>
   </div>
-
-  <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <p><strong>Ref:</strong> SIG-2026-042-PC</p>
     <p>To Whom It May Concern,</p>
-    
-    <p>We have examined the signature and estate stamp appearing on the reverse of the work titled <em>Guernica Sketch IV</em>, attributed to <span data-bracket="start" data-for="sig">[</span><strong>PABLO PICASSO</strong>.</p>
-
-    <div style="margin: 20px 0; border: 1px solid #eee; padding: 15px; background: #f9f9f9; text-align: center;">
+<p>We have examined the signature and estate stamp appearing on the reverse of the work titled <em>Guernica Sketch IV</em>, attributed to <span data-bracket="start" data-for="sig">[</span><strong>PABLO PICASSO</strong>.</p>
+<div style="margin: 20px 0; border: 1px solid #eee; padding: 15px; background: #f9f9f9; text-align: center;">
       <div style="font-style: italic; font-size: 1.2em; border-bottom: 1px solid #ccc; display: inline-block; padding: 0 20px;">Picasso</div>
       <div style="font-size: 0.8em; color: #777; margin-top: 5px;">Analysis of hand-written signature (Black Ink)</div>
     </div>
-
-    <p>Our analysis included comparison with known exemplars from 1937. The ink flow, pressure, and characteristic "P" formation are consistent with the artist's hand during this period.</p>
-
-    <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+<p>Our analysis included comparison with known exemplars from 1937. The ink flow, pressure, and characteristic "P" formation are consistent with the artist's hand during this period.</p>
+<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
       <div>
         <div style="border-top: 1px solid #000; width: 200px; padding-top: 5px; font-style: italic;">Authentication Committee</div>
         <div style="font-size: 0.8em; color: #777;">March 15, 2026</div>
@@ -388,8 +364,7 @@ These letters are high-value targets for forgery—criminals create fake "expert
       <div style="width: 60px; height: 60px; border: 2px solid #333; display: flex; align-items: center; justify-content: center; font-size: 0.7em; font-weight: bold;">SEAL</div>
     </div>
   </div>
-
-  <div data-verify-line="sig" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="sig" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: IFAR doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:ifar.org/signatures/v/PICASSO-37 <span data-bracket="end" data-for="sig">]</span>
   </div>
@@ -478,14 +453,11 @@ Verified provenance documentation is the "History of Truth" that allows million-
     <div style="font-weight: bold; font-size: 1.3em; letter-spacing: 1px;">CHRISTIE'S PROVENANCE RESEARCH</div>
     <div style="font-size: 0.8em; color: #666; margin-top: 5px;">ARCHIVAL DEPARTMENT • LONDON</div>
   </div>
-
-  <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <h3 style="text-align: center; text-transform: uppercase; margin-bottom: 20px;">Ownership History Statement</h3>
-
-    <p><strong>Object:</strong> Claude Monet, <em>Water Lilies</em> (1906)<br>
+<p><strong>Object:</strong> Claude Monet, <em>Water Lilies</em> (1906)<br>
     <strong>Ref:</strong> CHR-LDN-2026-992</p>
-
-    <div style="margin: 20px 0; border-top: 1px solid #ccc; padding-top: 15px;">
+<div style="margin: 20px 0; border-top: 1px solid #ccc; padding-top: 15px;">
       <strong>PROVENANCE:</strong><br>
       <ul style="margin-left: 20px; list-style-type: circle;">
         <li><span data-bracket="start" data-for="prov">[</span><strong>1906:</strong> Purchased from the artist by Paul Durand-Ruel, Paris.</li>
@@ -494,16 +466,13 @@ Verified provenance documentation is the "History of Truth" that allows million-
         <li><strong>2026:</strong> Consigned to Christie's for public auction.</li>
       </ul>
     </div>
-
-    <p style="font-style: italic;">We have researched the history of this work and found no evidence of claims or restitution issues during the 1933-1945 period.</p>
-
-    <div style="margin-top: 40px; text-align: right;">
+<p style="font-style: italic;">We have researched the history of this work and found no evidence of claims or restitution issues during the 1933-1945 period.</p>
+<div style="margin-top: 40px; text-align: right;">
       <div style="border-top: 1px solid #000; width: 200px; display: inline-block; padding-top: 5px;">Archival Research Lead</div>
       <div style="font-size: 0.8em; color: #777;">March 10, 2026</div>
     </div>
   </div>
-
-  <div data-verify-line="prov" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="prov" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Christie's doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:christies.com/provenance/v/MONET1906 <span data-bracket="end" data-for="prov">]</span>
   </div>

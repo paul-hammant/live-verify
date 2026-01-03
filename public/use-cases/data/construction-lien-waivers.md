@@ -25,17 +25,14 @@ Banks won't release construction loans without these papers. Fraud is common: co
     <strong>Property:</strong> 500 W 5th St, Austin, TX<br>
     <strong>Claimant:</strong> <span data-bracket="start" data-for="waiver">[</span><strong>Drywall Dynamics LLC</strong><br>
     <strong>Customer:</strong> Turner Construction</p>
-    
-    <p style="background: #f9f9f9; padding: 10px; border: 1px solid #eee;">
+<p style="background: #f9f9f9; padding: 10px; border: 1px solid #eee;">
       The undersigned has been paid and has received a progress payment in the sum of <strong>$ 42,500.00</strong> for labor, services, equipment, or material furnished to the jobsite through <strong>April 30, 2026</strong>.
     </p>
-
-    <div style="margin-top: 20px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 20px; display: flex; justify-content: space-between; align-items: flex-end;">
       <div style="width: 45%; border-top: 1px solid #000; padding-top: 5px;">Claimant Signature</div>
       <div style="width: 45%; text-align: right; font-size: 0.8em; color: #777;">Date: May 05, 2026</div>
     </div>
-
-    <div data-verify-line="waiver" style="margin-top: 30px; border-top: 1px dashed #999; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="waiver" style="margin-top: 30px; border-top: 1px dashed #999; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Subcontractor doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:fin.drywalldynamics.com/v/998877 <span data-bracket="end" data-for="waiver">]</span>
     </div>

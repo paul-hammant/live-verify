@@ -19,24 +19,20 @@ The problem is that "Tour Guide" is a low-barrier profession. Anyone can buy a g
     <div style="font-weight: bold; font-size: 1.1em; letter-spacing: 1px;">OFFICIAL TOUR GUIDE</div>
     <div style="font-size: 1.5em;">🏛️</div>
   </div>
-
-  <div style="padding: 20px; display: flex; background: linear-gradient(to bottom, #fff, #f0f7ff);">
+<div style="padding: 20px; display: flex; background: linear-gradient(to bottom, #fff, #f0f7ff);">
     <div style="width: 100px; margin-right: 15px;">
       <div style="width: 100px; height: 125px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #999; font-size: 0.7em; text-align: center;">[GUIDE PHOTO]</div>
     </div>
     <div style="flex-grow: 1;">
       <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Guide Name</div>
       <div style="font-size: 1.2em; font-weight: bold; margin: 0 0 10px 0; color: #003366;"><span data-bracket="start" data-for="guide">[</span>MARCO R. SILVA</div>
-      
-      <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">License #</div>
+<div style="font-size: 0.75em; color: #777; text-transform: uppercase;">License #</div>
       <div style="font-size: 1em; font-weight: bold; margin: 0 0 10px 0;">ID: PT-992288</div>
-      
-      <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Languages</div>
+<div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Languages</div>
       <div style="font-size: 0.85em; font-weight: bold;">ENG / POR / SPA</div>
     </div>
   </div>
-
-  <div style="padding: 0 20px 20px 20px; background: #fff;">
+<div style="padding: 0 20px 20px 20px; background: #fff;">
     <div style="font-size: 0.7em; color: #555; text-align: center; margin-bottom: 10px; line-height: 1.3;">
       Vetted by the National Tourism Board. Authorized for historical sites. Scan to verify current duty status and insurance.
     </div>

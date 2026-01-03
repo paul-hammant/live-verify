@@ -22,27 +22,21 @@ These documents are high-stakes legal instruments. Fraud is common: people often
     </div>
     <div style="width: 50px; height: 50px; background: #eee; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.7em; text-align: center;">DHS<br>SEAL</div>
   </div>
-
-  <h3 style="margin-top: 0; text-align: center; text-transform: uppercase; letter-spacing: 1px;">Affidavit of Support (Form I-864)</h3>
-
-  <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+<h3 style="margin-top: 0; text-align: center; text-transform: uppercase; letter-spacing: 1px;">Affidavit of Support (Form I-864)</h3>
+<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <p><strong>Part 1. Basis for Filing:</strong> I am the petitioning sponsor.</p>
-    
-    <div style="background: #f9f9f9; padding: 15px; border: 1px solid #ddd; margin: 20px 0;">
+<div style="background: #f9f9f9; padding: 15px; border: 1px solid #ddd; margin: 20px 0;">
       <p><strong>Sponsor:</strong> <span data-bracket="start" data-for="i864">[</span><strong>ROBERT J. MILLER</strong><br>
       <strong>Beneficiary:</strong> SARAH JANE DOE<br>
       <strong>Household Size:</strong> 3</p>
-      
-      <p><strong>Most Recent Year Income:</strong> $ 78,450.00<br>
+<p><strong>Most Recent Year Income:</strong> $ 78,450.00<br>
       <strong>Total Assets:</strong> $ 125,000.00</p>
     </div>
-
-    <p style="font-size: 0.85em; font-style: italic; color: #666;">
+<p style="font-size: 0.85em; font-style: italic; color: #666;">
       I certify under penalty of perjury that this affidavit and all evidence submitted with it is true and correct. I authorize the release of any information from my records that USCIS determines is necessary.
     </p>
   </div>
-
-  <div style="margin-top: 40px; border-top: 1px dashed #999; padding-top: 10px; text-align: center;">
+<div style="margin-top: 40px; border-top: 1px dashed #999; padding-top: 10px; text-align: center;">
     <div data-verify-line="i864" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: USCIS doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:uscis.gov/v/i864/RM992288 <span data-bracket="end" data-for="i864">]</span>

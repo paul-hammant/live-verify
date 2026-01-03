@@ -36,17 +36,14 @@ Currently, these claims are unverifiable. Disclosures exist in fine print or reg
     <p style="margin: 5px 0;"><strong>Advisor:</strong> Marcus J. Wellington, CFP</p>
     <p style="margin: 5px 0;"><strong>Firm:</strong> Wellington Wealth Advisory LLC</p>
     <p style="margin: 5px 0;"><strong>Date:</strong> January 15, 2026</p>
-
-    <div style="margin: 15px 0; padding: 10px; background: #f5f5f5; border-left: 3px solid #2c5aa0;">
+<div style="margin: 15px 0; padding: 10px; background: #f5f5f5; border-left: 3px solid #2c5aa0;">
       <strong>Compensation Structure:</strong><br>
       AUM Fee: 1.0% annually on managed assets<br>
       Mutual Fund Revenue Share: 0.25% from Vanguard Advisor Shares<br>
       Insurance Commission: 2.5% first-year on any life policies placed
     </div>
-
-    <p style="font-size: 0.85em; color: #666;">This disclosure is current as of the date above. Material changes require updated disclosure.</p>
-
-    <div style="margin-top: 15px; border-top: 1px dashed #ccc; padding-top: 10px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666;">
+<p style="font-size: 0.85em; color: #666;">This disclosure is current as of the date above. Material changes require updated disclosure.</p>
+<div style="margin-top: 15px; border-top: 1px dashed #ccc; padding-top: 10px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666;">
       <div data-verify-line="compensationconflict" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
         verify:disclosures.wellington-wealth.com/comp/MJW2026 <span data-bracket="end" data-for="compensationconflict">]</span>
@@ -87,19 +84,16 @@ Verified disclosures make the information **scannable at the point of decision**
   </div>
   <div style="padding: 25px; font-size: 0.95em; line-height: 1.7; text-align: center;">
     <p style="margin-bottom: 20px;">I, <strong>Dr. Sarah Chen, MD</strong>, hereby attest that:</p>
-
-    <div style="background: #fff; border: 1px solid #1a5f2a; padding: 15px; margin: 15px 0; text-align: left;">
+<div style="background: #fff; border: 1px solid #1a5f2a; padding: 15px; margin: 15px 0; text-align: left;">
       <p style="margin: 0;"><strong>1.</strong> I receive $0 in payments, gifts, or consulting fees from pharmaceutical companies.</p>
       <p style="margin: 10px 0 0;"><strong>2.</strong> I hold no equity positions in medical device or pharmaceutical manufacturers.</p>
       <p style="margin: 10px 0 0;"><strong>3.</strong> My compensation is 100% salary from Memorial Hospital, with no bonus tied to prescribing patterns.</p>
     </div>
-
-    <p style="font-size: 0.85em; color: #666; margin-top: 20px;">
+<p style="font-size: 0.85em; color: #666; margin-top: 20px;">
       Valid: January 1, 2026 through December 31, 2026<br>
       Subject to liquidated damages per enrollment agreement
     </p>
-
-    <div style="margin-top: 20px; font-size: 0.8em; font-family: monospace; color: #888;">
+<div style="margin-top: 20px; font-size: 0.8em; font-family: monospace; color: #888;">
       <div data-verify-line="compensationconflict" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
         verify:conflictfree.org/attest/SC-MEM-2026 <span data-bracket="end" data-for="compensationconflict">]</span>
@@ -136,18 +130,15 @@ You can't just take someone's word for it. But you can ask the entities that *wo
   <div style="font-size: 0.85em; line-height: 1.8;">
     <p><strong>Re:</strong> <span data-bracket="start" data-for="compensationconflict">[</span>Dr. Sarah Chen, MD (NPI: 1234567890)</p>
     <p><strong>Period:</strong> Calendar Year 2025</p>
-
-    <div style="margin: 15px 0; padding: 10px; background: #fff; border: 1px dashed #666;">
+<div style="margin: 15px 0; padding: 10px; background: #fff; border: 1px dashed #666;">
       <p style="margin: 0;"><strong>Pfizer Inc.</strong> — $0.00 paid</p>
       <p style="margin: 5px 0;"><strong>Merck & Co.</strong> — $0.00 paid</p>
       <p style="margin: 5px 0;"><strong>Johnson & Johnson</strong> — $0.00 paid</p>
       <p style="margin: 5px 0;"><strong>AbbVie Inc.</strong> — $0.00 paid</p>
       <p style="margin: 5px 0;"><em>[+ 47 other manufacturers queried]</em></p>
     </div>
-
-    <p style="font-size: 0.8em; color: #666;">Data aggregated from CMS Open Payments and direct issuer attestations.</p>
-
-    <div style="margin-top: 15px; font-size: 0.8em; text-align: center; color: #888;">
+<p style="font-size: 0.8em; color: #666;">Data aggregated from CMS Open Payments and direct issuer attestations.</p>
+<div style="margin-top: 15px; font-size: 0.8em; text-align: center; color: #888;">
       <div data-verify-line="compensationconflict" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
         verify:openpaymentscheck.org/confirm/SC2025 <span data-bracket="end" data-for="compensationconflict">]</span>
@@ -192,17 +183,14 @@ Claims without consequences are cheap. The **warranted attestation** adds teeth:
     <div style="font-size: 1.3em; font-weight: bold; color: #8B0000;">WARRANTY TERMS</div>
     <div style="font-size: 0.9em; color: #666;">Incorporated by Reference into Attestation</div>
   </div>
-
-  <div style="font-size: 0.9em; line-height: 1.8;">
+<div style="font-size: 0.9em; line-height: 1.8;">
     <p><strong>Section 4.2 — Liquidated Damages</strong></p>
     <p>In the event that any attestation of non-compensation is found to be materially false, the attesting individual agrees to pay to the affected party:</p>
-
-    <div style="background: #fff5f5; padding: 15px; margin: 15px 0; border-left: 4px solid #8B0000;">
+<div style="background: #fff5f5; padding: 15px; margin: 15px 0; border-left: 4px solid #8B0000;">
       <strong>Two times (2x) the undisclosed compensation received</strong><br>
       <span style="font-size: 0.85em;">Plus reasonable attorneys' fees and investigation costs.</span>
     </div>
-
-    <p style="font-size: 0.85em; color: #666;">This remedy is in addition to any regulatory penalties, license sanctions, or criminal liability that may apply. The attesting party waives any defense of "good faith" or "inadvertent omission."</p>
+<p style="font-size: 0.85em; color: #666;">This remedy is in addition to any regulatory penalties, license sanctions, or criminal liability that may apply. The attesting party waives any defense of "good faith" or "inadvertent omission."</p>
   </div>
 </div>
 

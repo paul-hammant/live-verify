@@ -27,25 +27,19 @@ It is the primary document used for **Income Verification**:
     </div>
     <div style="width: 50px; height: 50px; background: #eee; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.7em; text-align: center;">SSA<br>SEAL</div>
   </div>
-
-  <h3 style="margin-top: 0;">Your Benefit Verification Letter</h3>
-
-  <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+<h3 style="margin-top: 0;">Your Benefit Verification Letter</h3>
+<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <p>Date: March 15, 2026</p>
     <p><span data-bracket="start" data-for="ssa">[</span><strong>MARGARET A. WILLOWS</strong><br>
     123 Oak Street, Springfield, IL 62704</p>
-
-    <p>We are writing to verify that you receive Social Security benefits. Your current <strong>Monthly Benefit</strong> amount before deductions is:</p>
-    
-    <div style="background: #f9f9f9; padding: 15px; border: 1px solid #ddd; margin: 20px 0; text-align: center;">
+<p>We are writing to verify that you receive Social Security benefits. Your current <strong>Monthly Benefit</strong> amount before deductions is:</p>
+<div style="background: #f9f9f9; padding: 15px; border: 1px solid #ddd; margin: 20px 0; text-align: center;">
       <div style="font-size: 2em; font-weight: bold; color: #000;">$ 2,450.42</div>
       <div style="font-size: 0.8em; color: #666;">Effective: January 2026</div>
     </div>
-
-    <p>This benefit is paid on the third Wednesday of each month. Your type of benefit is <strong>Retirement</strong>.</p>
+<p>This benefit is paid on the third Wednesday of each month. Your type of benefit is <strong>Retirement</strong>.</p>
   </div>
-
-  <div data-verify-line="ssa" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="ssa" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: SSA doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:ssa.gov/myaccount/v/MW992288 <span data-bracket="end" data-for="ssa">]</span>
   </div>

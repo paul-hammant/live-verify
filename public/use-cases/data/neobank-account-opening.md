@@ -24,24 +24,20 @@ The problem? Anyone can inspect-element a PDF or email to change the numbers. A 
     <div style="font-weight: bold; font-size: 1.4em;">MONDO BANK</div>
     <div style="font-size: 0.8em; opacity: 0.9;">Account Confirmation</div>
   </div>
-
-  <div style="padding: 24px; font-size: 0.9em; color: #333;">
+<div style="padding: 24px; font-size: 0.9em; color: #333;">
     <div style="margin-bottom: 20px;">
       <strong>Date:</strong> January 15, 2026<br>
       <strong>Customer:</strong> <span data-bracket="start" data-for="neo">[</span>Sarah J. Connor<br>
       123 Cyberdyne Systems Way, San Francisco, CA
     </div>
-
-    <div style="background: #f5f5f5; padding: 15px; border-radius: 4px; margin-bottom: 20px;">
+<div style="background: #f5f5f5; padding: 15px; border-radius: 4px; margin-bottom: 20px;">
       <div style="margin-bottom: 8px;"><strong>Account Type:</strong> Personal Checking</div>
       <div style="margin-bottom: 8px;"><strong>Routing Number:</strong> 122000247</div>
       <div style="margin-bottom: 8px;"><strong>Account Number:</strong> 8899554422</div>
       <div><strong>Status:</strong> Active & Verified</div>
     </div>
-
-    <p>This letter confirms that the above individual maintains an active account with Mondo Bank since 2024.</p>
-
-    <div data-verify-line="neo" style="border-top: 1px dashed #ccc; margin-top: 24px; padding-top: 12px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #666; text-align: center;"
+<p>This letter confirms that the above individual maintains an active account with Mondo Bank since 2024.</p>
+<div data-verify-line="neo" style="border-top: 1px dashed #ccc; margin-top: 24px; padding-top: 12px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #666; text-align: center;"
       title="Demo only: Neobanks typically verify via app, this creates a bridge for paper">
       verify:mondobank.com/v/u7i8o9 <span data-bracket="end" data-for="neo">]</span>
     </div>

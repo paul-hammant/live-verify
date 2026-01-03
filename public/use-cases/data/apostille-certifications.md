@@ -21,24 +21,20 @@ It's a huge target for fraud—fake apostilles are often used to "legalize" fake
     <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 2px;">APOSTILLE</h2>
     <div style="font-size: 0.9em;">(Convention de La Haye du 5 octobre 1961)</div>
   </div>
-
-  <div style="font-size: 0.9em; line-height: 1.8;">
+<div style="font-size: 0.9em; line-height: 1.8;">
     <p><strong>1. Country:</strong> United States of America</p>
     <p>This public document<br>
     <strong>2. has been signed by:</strong> <span data-bracket="start" data-for="apostille">[</span><strong>John Hancock</strong><br>
     <strong>3. acting in the capacity of:</strong> Notary Public, State of New York<br>
     <strong>4. bears the seal/stamp of:</strong> John Hancock, Notary Public</p>
-
-    <div style="border: 1px solid #000; padding: 10px; margin: 10px 0; text-align: center; font-weight: bold; background: #f9f9f9;">
+<div style="border: 1px solid #000; padding: 10px; margin: 10px 0; text-align: center; font-weight: bold; background: #f9f9f9;">
       CERTIFIED
     </div>
-
-    <p><strong>5. at:</strong> Albany, New York<br>
+<p><strong>5. at:</strong> Albany, New York<br>
     <strong>6. the:</strong> 15th day of March, 2026<br>
     <strong>7. by:</strong> Secretary of State, State of New York<br>
     <strong>8. Number:</strong> NY-2026-998877</p>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px;">
       <div>
         <strong>9. Seal/stamp:</strong><br>
         <div style="width: 80px; height: 80px; border: 2px dashed #999; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7em; color: #999;">[GOLD SEAL]</div>
@@ -50,8 +46,7 @@ It's a huge target for fraud—fake apostilles are often used to "legalize" fake
       </div>
     </div>
   </div>
-
-  <div data-verify-line="apostille" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="apostille" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: State Dept doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:dos.ny.gov/apostille/v/NY998877 <span data-bracket="end" data-for="apostille">]</span>
   </div>

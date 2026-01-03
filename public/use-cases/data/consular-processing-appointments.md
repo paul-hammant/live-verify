@@ -24,30 +24,24 @@ Fraudsters often create fake notices to get people into high-security zones or t
     </div>
     <div style="width: 40px; height: 40px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #002d62; font-weight: bold; font-size: 0.7em; text-align: center;">DOS</div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
       <div style="border: 1px solid #000; padding: 5px 10px; font-weight: bold;">DS-260</div>
       <div style="text-align: right; font-family: monospace;">NVC Case #: MTL2026998877</div>
     </div>
-
-    <h2 style="text-align: center; font-size: 1.2em; margin-bottom: 20px; text-transform: uppercase;">Visa Interview Appointment Notice</h2>
-
-    <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+<h2 style="text-align: center; font-size: 1.2em; margin-bottom: 20px; text-transform: uppercase;">Visa Interview Appointment Notice</h2>
+<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
       <p><strong>Principal Applicant:</strong> <span data-bracket="start" data-for="consul-app">[</span>SARAH JANE SMITH</p>
-      
-      <div style="background: #f0f4f8; border: 1px solid #d1d9e6; padding: 15px; margin: 15px 0;">
+<div style="background: #f0f4f8; border: 1px solid #d1d9e6; padding: 15px; margin: 15px 0;">
         <p><strong>Interview Date:</strong> March 15, 2026<br>
         <strong>Interview Time:</strong> 08:30 AM</p>
         <p><strong>Location:</strong><br>
         U.S. Consulate General Montreal<br>
         1155 Saint-Alexandre St, Montreal, QC H3B 2J2, Canada</p>
       </div>
-
-      <p style="font-size: 0.85em; font-weight: bold;">YOU MUST BRING THIS NOTICE TO ENTER THE CONSULATE.</p>
+<p style="font-size: 0.85em; font-weight: bold;">YOU MUST BRING THIS NOTICE TO ENTER THE CONSULATE.</p>
     </div>
-
-    <div data-verify-line="consul-app" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="consul-app" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: NVC doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:nvc.state.gov/appointments/v/MTL2026998877 <span data-bracket="end" data-for="consul-app">]</span>
     </div>

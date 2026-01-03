@@ -19,14 +19,12 @@ Because vouchers are essentially "Digital Cash," they are a primary target for *
     <div style="font-weight: bold; font-size: 1.1em; letter-spacing: 1px;">AMTRAK &reg;</div>
     <div style="font-size: 0.7em; opacity: 0.8; text-transform: uppercase;">Future Travel Credit Voucher</div>
   </div>
-
-  <div style="padding: 25px; background: #fdfdfd; border-bottom: 1px solid #eee;">
+<div style="padding: 25px; background: #fdfdfd; border-bottom: 1px solid #eee;">
     <div style="text-align: center; margin-bottom: 20px;">
       <div style="font-size: 0.7em; color: #888; text-transform: uppercase;">Voucher Code</div>
       <div style="font-size: 1.8em; font-weight: bold; color: #004a99; letter-spacing: 2px;"><span data-bracket="start" data-for="voucher">[</span>XJ-9922-8877</div>
     </div>
-
-    <div style="display: flex; justify-content: space-between; font-size: 0.9em; line-height: 1.5; color: #333;">
+<div style="display: flex; justify-content: space-between; font-size: 0.9em; line-height: 1.5; color: #333;">
       <div>
         <strong>Original Traveler:</strong><br>
         SARAH J. SMITH
@@ -36,14 +34,12 @@ Because vouchers are essentially "Digital Cash," they are a primary target for *
         MARCH 15, 2027
       </div>
     </div>
-
-    <div style="margin-top: 20px; padding: 15px; background: #e8f5e9; border: 1px solid #c8e6c9; border-radius: 4px; text-align: center;">
+<div style="margin-top: 20px; padding: 15px; background: #e8f5e9; border: 1px solid #c8e6c9; border-radius: 4px; text-align: center;">
       <div style="font-size: 0.75em; color: #2e7d32; font-weight: bold; text-transform: uppercase;">Verified Balance (USD):</div>
       <div style="font-size: 2.2em; font-weight: bold; color: #1b5e20;">$ 450.00</div>
     </div>
   </div>
-
-  <div style="padding: 15px; background: #fff; text-align: center;">
+<div style="padding: 15px; background: #fff; text-align: center;">
     <div data-verify-line="voucher" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #004a99; font-weight: bold;"
       title="Demo only: Amtrak doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:amtrak.com/v/XJ99228877 <span data-bracket="end" data-for="voucher">]</span>

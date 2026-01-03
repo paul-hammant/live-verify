@@ -22,8 +22,7 @@ These documents are the "Legal Safe Harbor" for marketing. Fraud is high-stakes 
     </div>
     <div style="font-size: 2em;">📢</div>
   </div>
-
-  <div style="padding: 25px; font-size: 0.95em; line-height: 1.6; color: #333;">
+<div style="padding: 25px; font-size: 0.95em; line-height: 1.6; color: #333;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
         <strong>Campaign:</strong> <span data-bracket="start" data-for="promo">[</span>High-Yield Spring Fund<br>
@@ -36,8 +35,7 @@ These documents are the "Legal Safe Harbor" for marketing. Fraud is high-stakes 
         <strong>Status:</strong> <span style="color: #2e7d32; font-weight: bold;">APPROVED</span>
       </div>
     </div>
-
-    <div style="background: #fff8f0; border: 1px solid #ff6600; padding: 15px; border-radius: 4px; margin-bottom: 20px;">
+<div style="background: #fff8f0; border: 1px solid #ff6600; padding: 15px; border-radius: 4px; margin-bottom: 20px;">
       <p style="margin: 0; font-weight: bold; color: #e65100;">COMPLIANCE CERTIFICATIONS:</p>
       <ul style="margin: 5px 0; padding-left: 20px; font-size: 0.9em;">
         <li>✓ Promotion is fair, clear, and not misleading.</li>
@@ -46,8 +44,7 @@ These documents are the "Legal Safe Harbor" for marketing. Fraud is high-stakes 
         <li>✓ Target audience meets 'Sophisticated Investor' criteria.</li>
       </ul>
     </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="display: flex; justify-content: space-between; align-items: flex-end;">
       <div>
         <div style="border-top: 1px solid #000; width: 200px; padding-top: 5px; font-style: italic;">John Harrison, Compliance Director</div>
         <div style="font-size: 0.7em; color: #777;">FCA Individual Ref: #JH-992288</div>
@@ -55,8 +52,7 @@ These documents are the "Legal Safe Harbor" for marketing. Fraud is high-stakes 
       <div style="text-align: right; color: #ff6600; font-weight: bold; font-size: 0.8em; opacity: 0.8;">SECTION 21 AUTHORIZED</div>
     </div>
   </div>
-
-  <div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #ff6600; text-align: center;">
+<div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #ff6600; text-align: center;">
     <div data-verify-line="promo" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: Regulated firms don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:meridian-funds.com/v/MKT2026042 <span data-bracket="end" data-for="promo">]</span>

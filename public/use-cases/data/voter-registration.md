@@ -22,18 +22,15 @@ These cards are the "Ticket to the Ballot Box." Fraud is high-stakes: partisan a
       <div style="font-size: 0.75em; font-weight: bold; opacity: 0.9;">STATE OF ILLINOIS • BOARD OF ELECTIONS</div>
     </div>
   </div>
-
-  <div style="padding: 20px; background: #fff;">
+<div style="padding: 20px; background: #fff;">
     <div style="border-bottom: 1px solid #eee; padding-bottom: 10px; margin-bottom: 15px;">
       <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Registered Voter</div>
       <div style="font-size: 1.2em; font-weight: bold; color: #333;"><span data-bracket="start" data-for="vote">[</span>SARAH JANE SMITH</div>
-      
-      <div style="font-size: 0.9em; color: #333; margin-top: 5px;">
+<div style="font-size: 0.9em; color: #333; margin-top: 5px;">
         123 MAPLE STREET, SPRINGFIELD, IL 62704
       </div>
     </div>
-
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; font-size: 0.85em; line-height: 1.4;">
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; font-size: 0.85em; line-height: 1.4;">
       <div>
         <strong>Voter ID:</strong> 99228877<br>
         <strong>Party:</strong> INDEPENDENT
@@ -43,14 +40,12 @@ These cards are the "Ticket to the Ballot Box." Fraud is high-stakes: partisan a
         <strong>Reg Date:</strong> 15 MAR 2026
       </div>
     </div>
-
-    <div style="margin-top: 15px; background: #f9f9f9; padding: 10px; border: 1px solid #ddd; font-size: 0.8em; text-align: center;">
+<div style="margin-top: 15px; background: #f9f9f9; padding: 10px; border: 1px solid #ddd; font-size: 0.8em; text-align: center;">
       <strong>POLLING PLACE:</strong><br>
       Springfield Library, 1st Ave Entrance
     </div>
   </div>
-
-  <div style="padding: 15px 20px 20px 20px; background: #fff; border-top: 1px dashed #999; text-align: center;">
+<div style="padding: 15px 20px 20px 20px; background: #fff; border-top: 1px dashed #999; text-align: center;">
     <div data-verify-line="vote" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #002d62; font-weight: bold;"
       title="Demo only: Election boards don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:elections.il.gov/v/99228877 <span data-bracket="end" data-for="vote">]</span>

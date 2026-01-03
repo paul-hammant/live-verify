@@ -26,8 +26,7 @@ Police officers at a traffic stop need to verify these permits in seconds. If a 
       <div style="font-size: 0.8em;">CONCEALED FIREARMS PERMIT</div>
     </div>
   </div>
-
-  <div style="padding: 20px; display: flex;">
+<div style="padding: 20px; display: flex;">
     <div style="width: 100px; margin-right: 15px;">
       <div style="width: 100px; height: 125px; background: #eee; display: flex; align-items: center; justify-content: center; color: #777; border: 1px solid #ccc; border-radius: 4px;">[PHOTO ID]</div>
     </div>
@@ -41,8 +40,7 @@ Police officers at a traffic stop need to verify these permits in seconds. If a 
       </div>
     </div>
   </div>
-
-  <div style="padding: 0 20px 20px 20px;">
+<div style="padding: 0 20px 20px 20px;">
     <div style="font-size: 0.8em; font-weight: bold; color: #1a237e; text-align: center; margin-bottom: 5px;">WASHOE COUNTY SHERIFF</div>
     <div data-verify-line="ccw" style="border-top: 1px dashed #999; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Washoe Sheriff doesn't yet offer verification&#10;endpoints, so this is illustrative">

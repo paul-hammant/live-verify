@@ -26,31 +26,25 @@ Promoters must show this verified proof of insurance to stadium owners and lende
       <div style="font-size: 0.8em;">Policy #: EV-998877-26</div>
     </div>
   </div>
-
-  <div style="padding: 35px;">
+<div style="padding: 35px;">
     <h2 style="text-align: center; color: #002366; font-size: 1.4em; margin-bottom: 25px; text-transform: uppercase; letter-spacing: 1px;">Evidence of Contingency Insurance</h2>
-
-    <div style="font-size: 1em; line-height: 1.6; color: #333;">
+<div style="font-size: 1em; line-height: 1.6; color: #333;">
       <p><strong>Insured:</strong> <span data-bracket="start" data-for="event">[</span>Glastonbury Festival Events, Ltd.<br>
       <strong>Event:</strong> 2026 Summer Music Festival</p>
-
-      <div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin: 20px 0;">
+<div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin: 20px 0;">
         <p><strong>Section 1: Event Cancellation / Abandonment</strong><br>
         Limit: GBP 25,000,000.00</p>
         <p><strong>Section 2: Non-Appearance</strong><br>
         Specific Artist: [REDACTED]<br>
         Limit: GBP 5,000,000.00</p>
       </div>
-
-      <p><strong>Coverage Includes:</strong> Adverse Weather, Terrorism, National Mourning, Communicable Disease (Endorsement #42).</p>
+<p><strong>Coverage Includes:</strong> Adverse Weather, Terrorism, National Mourning, Communicable Disease (Endorsement #42).</p>
       <p><strong>Effective Date:</strong> June 24, 2026 to June 28, 2026</p>
     </div>
-
-    <div style="margin-top: 40px; border-top: 1px solid #ccc; padding-top: 10px; font-size: 0.8em; color: #666; font-style: italic; text-align: center;">
+<div style="margin-top: 40px; border-top: 1px solid #ccc; padding-top: 10px; font-size: 0.8em; color: #666; font-style: italic; text-align: center;">
       This evidence is subject to the terms and conditions of the Master Policy.
     </div>
-
-    <div data-verify-line="event" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="event" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Beazley doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:beazley.com/v/GLASTO-2026 <span data-bracket="end" data-for="event">]</span>
     </div>

@@ -26,15 +26,12 @@ Farmers use these verified coverage schedules to secure "Operating Loans" from b
       <div style="font-size: 0.8em;">Policy #: CH-998877-26</div>
     </div>
   </div>
-
-  <div style="padding: 30px;">
+<div style="padding: 30px;">
     <h2 style="text-align: center; color: #2e7d32; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Crop-Hail Coverage Schedule</h2>
-
-    <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
       <p><strong>Insured:</strong> <span data-bracket="start" data-for="crop">[</span>Miller Family Farms, Inc.<br>
       <strong>Location:</strong> Story County, Iowa (Section 14, T84N, R24W)</p>
-
-      <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
         <tr style="background: #f1f8e9; border-bottom: 2px solid #2e7d32;">
           <th style="text-align: left; padding: 8px;">Crop</th>
           <th style="text-align: center; padding: 8px;">Acres</th>
@@ -51,16 +48,13 @@ Farmers use these verified coverage schedules to secure "Operating Loans" from b
           <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 600.00</td>
         </tr>
       </table>
-
-      <p><strong>Total Liability:</strong> $ 610,000.00<br>
+<p><strong>Total Liability:</strong> $ 610,000.00<br>
       <strong>Effective Date:</strong> May 01, 2026 (or upon emergence)</p>
     </div>
-
-    <div style="margin-top: 30px; border: 1px solid #ccc; padding: 10px; font-size: 0.8em; color: #555; background: #fafafa;">
+<div style="margin-top: 30px; border: 1px solid #ccc; padding: 10px; font-size: 0.8em; color: #555; background: #fafafa;">
       <strong>Note:</strong> Coverage applies only to direct physical loss from Hail or Fire.
     </div>
-
-    <div data-verify-line="crop" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="crop" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Rain & Hail doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:rainhail.com/v/IA-998877-26 <span data-bracket="end" data-for="crop">]</span>
     </div>

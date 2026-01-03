@@ -20,11 +20,9 @@ OCR-to-hash allows a diner to scan the window sticker to verify: **"Is this the 
   <div style="background: #333333; color: #fff; padding: 15px; text-align: center;">
     <h3 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">Food Hygiene Rating</h3>
   </div>
-
-  <div style="padding: 25px; text-align: center; background: #ffffcc;">
+<div style="padding: 25px; text-align: center; background: #ffffcc;">
     <div style="font-size: 0.8em; color: #666; margin-bottom: 5px;">FOOD STANDARDS AGENCY</div>
-    
-    <div style="display: flex; justify-content: center; align-items: center; margin: 15px 0;">
+<div style="display: flex; justify-content: center; align-items: center; margin: 15px 0;">
       <div style="background: #000; color: #fff; width: 50px; height: 50px; line-height: 50px; border-radius: 50%; font-size: 2em; font-weight: bold; margin: 0 5px; opacity: 0.2;">0</div>
       <div style="background: #000; color: #fff; width: 50px; height: 50px; line-height: 50px; border-radius: 50%; font-size: 2em; font-weight: bold; margin: 0 5px; opacity: 0.2;">1</div>
       <div style="background: #000; color: #fff; width: 50px; height: 50px; line-height: 50px; border-radius: 50%; font-size: 2em; font-weight: bold; margin: 0 5px; opacity: 0.2;">2</div>
@@ -32,17 +30,14 @@ OCR-to-hash allows a diner to scan the window sticker to verify: **"Is this the 
       <div style="background: #000; color: #fff; width: 50px; height: 50px; line-height: 50px; border-radius: 50%; font-size: 2em; font-weight: bold; margin: 0 5px; opacity: 0.2;">4</div>
       <div style="background: #2e7d32; color: #fff; width: 65px; height: 65px; line-height: 65px; border-radius: 50%; font-size: 2.5em; font-weight: bold; margin: 0 5px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">5</div>
     </div>
-    
-    <div style="font-size: 1.2em; font-weight: bold; color: #2e7d32; margin-bottom: 15px;">VERY GOOD</div>
-
-    <div style="font-size: 0.9em; line-height: 1.4; color: #333; border-top: 1px solid #ccc; padding-top: 15px;">
+<div style="font-size: 1.2em; font-weight: bold; color: #2e7d32; margin-bottom: 15px;">VERY GOOD</div>
+<div style="font-size: 0.9em; line-height: 1.4; color: #333; border-top: 1px solid #ccc; padding-top: 15px;">
       <strong>Establishment:</strong> <span data-bracket="start" data-for="food">[</span>THE SPICY TACO BAR<br>
       <strong>Last Inspected:</strong> MARCH 15, 2026<br>
       <strong>Address:</strong> 42 HIGH STREET, LONDON
     </div>
   </div>
-
-  <div style="padding: 15px; background: #fff;">
+<div style="padding: 15px; background: #fff;">
     <div data-verify-line="food" style="border-top: 1px dashed #999; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #333; text-align: center; font-weight: bold;"
       title="Demo only: Health departments don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:food.gov.uk/ratings/v/STACO42 <span data-bracket="end" data-for="food">]</span>

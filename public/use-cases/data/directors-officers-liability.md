@@ -26,15 +26,12 @@ High-profile executives won't join a board unless they see verified proof of thi
       <div style="font-size: 0.8em;">Policy #: DO-998877-26</div>
     </div>
   </div>
-
-  <div style="padding: 30px;">
+<div style="padding: 30px;">
     <h2 style="text-align: center; color: #000; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">D&O Policy Declarations</h2>
-
-    <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.9em; line-height: 1.6; color: #333;">
       <p><strong>Insured Organization:</strong> <span data-bracket="start" data-for="do-pol">[</span>Globochem Worldwide, Inc.<br>
       <strong>Jurisdiction:</strong> Delaware, USA</p>
-
-      <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
         <tr style="background: #f5f5f5; border-bottom: 2px solid #000;">
           <th style="text-align: left; padding: 8px;">Coverage Layer</th>
           <th style="text-align: right; padding: 8px;">Limit of Liability</th>
@@ -52,16 +49,13 @@ High-profile executives won't join a board unless they see verified proof of thi
           <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 25,000,000</td>
         </tr>
       </table>
-
-      <p style="margin-top: 20px;"><strong>Policy Period:</strong> Jan 01, 2026 to Jan 01, 2027<br>
+<p style="margin-top: 20px;"><strong>Policy Period:</strong> Jan 01, 2026 to Jan 01, 2027<br>
       <strong>Retroactive Date:</strong> Jan 01, 2015</p>
     </div>
-
-    <div style="margin-top: 30px; border: 1px solid #ccc; padding: 10px; font-size: 0.8em; color: #555; background: #fafafa;">
+<div style="margin-top: 30px; border: 1px solid #ccc; padding: 10px; font-size: 0.8em; color: #555; background: #fafafa;">
       <strong>Notice:</strong> This is a Claims-Made and Reported policy. Coverage only applies to claims first made against the insured during the policy period.
     </div>
-
-    <div data-verify-line="do-pol" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="do-pol" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Chubb doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:chubb.com/do/v/DO998877 <span data-bracket="end" data-for="do-pol">]</span>
     </div>

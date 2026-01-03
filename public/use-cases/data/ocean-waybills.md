@@ -24,8 +24,7 @@ Losing the original B/L is a disaster (requires court bonds to fix), which is wh
     <div style="font-weight: bold; font-size: 1.2em;">MAERSK LINE</div>
     <div style="font-size: 0.8em; text-align: right;">B/L No: <span data-bracket="start" data-for="bol">[</span>MAE-9988776655</div>
   </div>
-
-  <div style="padding: 10px; font-size: 0.8em;">
+<div style="padding: 10px; font-size: 0.8em;">
     <div style="display: flex; border-bottom: 1px solid #000;">
       <div style="width: 50%; border-right: 1px solid #000; padding: 5px;">
         <strong>Shipper:</strong><br>
@@ -38,8 +37,7 @@ Losing the original B/L is a disaster (requires court bonds to fix), which is wh
         Brooklyn, NY, USA
       </div>
     </div>
-
-    <div style="display: flex; border-bottom: 1px solid #000; background: #f9f9f9;">
+<div style="display: flex; border-bottom: 1px solid #000; background: #f9f9f9;">
       <div style="width: 33%; border-right: 1px solid #000; padding: 5px;">
         <strong>Vessel:</strong><br>
         MAERSK MC-KINNEY
@@ -53,8 +51,7 @@ Losing the original B/L is a disaster (requires court bonds to fix), which is wh
         NEW YORK, USA
       </div>
     </div>
-
-    <table style="width: 100%; border-collapse: collapse; margin-top: 5px;">
+<table style="width: 100%; border-collapse: collapse; margin-top: 5px;">
       <tr style="border-bottom: 1px solid #000;">
         <th style="text-align: left; padding: 2px;">Container No.</th>
         <th style="text-align: left; padding: 2px;">Description</th>
@@ -66,12 +63,10 @@ Losing the original B/L is a disaster (requires court bonds to fix), which is wh
         <td style="text-align: right; padding: 2px;">12,000.00</td>
       </tr>
     </table>
-
-    <div style="margin-top: 15px; border-top: 1px solid #000; padding-top: 5px; font-style: italic;">
+<div style="margin-top: 15px; border-top: 1px solid #000; padding-top: 5px; font-style: italic;">
       RECEIVED by the Carrier the Goods as specified above in apparent good order and condition.
     </div>
-
-    <div data-verify-line="bol" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #555; text-align: center;"
+<div data-verify-line="bol" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #555; text-align: center;"
       title="Demo only: Maersk doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:maersk.com/bl/v/9988776655 <span data-bracket="end" data-for="bol">]</span>
     </div>
@@ -168,8 +163,7 @@ This "Negotiable" status makes the B/L a prime target for high-stakes fraud. Cri
       <div style="font-size: 0.8em; opacity: 0.9;">NEGOTIABLE ORIGINAL</div>
     </div>
   </div>
-
-  <div style="display: grid; grid-template-columns: 1fr 1fr; border-bottom: 1px solid #000;">
+<div style="display: grid; grid-template-columns: 1fr 1fr; border-bottom: 1px solid #000;">
     <div style="padding: 10px; border-right: 1px solid #000; font-size: 0.75em; line-height: 1.3;">
       <strong style="text-transform: uppercase; font-size: 0.8em; color: #666;">Shipper:</strong><br>
       GLOBAL COFFEE EXPORTERS LTD.<br>
@@ -181,21 +175,18 @@ This "Negotiable" status makes the B/L a prime target for high-stakes fraud. Cri
       <div style="font-size: 1.2em; font-weight: bold;"><span data-bracket="start" data-for="bl">[</span>MAE-9988776655</div>
     </div>
   </div>
-
-  <div style="padding: 10px; border-bottom: 1px solid #000; font-size: 0.75em; line-height: 1.3;">
+<div style="padding: 10px; border-bottom: 1px solid #000; font-size: 0.75em; line-height: 1.3;">
     <strong style="text-transform: uppercase; font-size: 0.8em; color: #666;">Consignee (to the order of):</strong><br>
     JPMORGAN CHASE BANK, N.A.<br>
     FOR THE ACCOUNT OF: NEW YORK ROASTERS LLC
   </div>
-
-  <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; border-bottom: 1px solid #000; font-size: 0.7em; text-transform: uppercase; text-align: center;">
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; border-bottom: 1px solid #000; font-size: 0.7em; text-transform: uppercase; text-align: center;">
     <div style="padding: 5px; border-right: 1px solid #000;"><strong>Vessel:</strong><br>Maersk Mc-Kinney</div>
     <div style="padding: 5px; border-right: 1px solid #000;"><strong>Port of Loading:</strong><br>Santos, Brazil</div>
     <div style="padding: 5px; border-right: 1px solid #000;"><strong>Port of Discharge:</strong><br>New York, USA</div>
     <div style="padding: 5px;"><strong>Final Destination:</strong><br>Newark, NJ</div>
   </div>
-
-  <div style="padding: 15px;">
+<div style="padding: 15px;">
     <table style="width: 100%; border-collapse: collapse; font-size: 0.8em;">
       <tr style="border-bottom: 1px solid #eee;">
         <th style="text-align: left; padding: 5px;">Container / Seal No.</th>
@@ -209,12 +200,10 @@ This "Negotiable" status makes the B/L a prime target for high-stakes fraud. Cri
       </tr>
     </table>
   </div>
-
-  <div style="margin: 20px; padding: 15px; border: 2px solid #d00; border-radius: 4px; color: #d00; text-align: center; font-weight: bold; transform: rotate(-1deg); opacity: 0.8;">
+<div style="margin: 20px; padding: 15px; border: 2px solid #d00; border-radius: 4px; color: #d00; text-align: center; font-weight: bold; transform: rotate(-1deg); opacity: 0.8;">
     RELEASE CARGO ONLY UPON PRESENTATION OF THIS ORIGINAL DOCUMENT
   </div>
-
-  <div style="padding: 20px; background: #f9f9f9; border-top: 1px solid #000;">
+<div style="padding: 20px; background: #f9f9f9; border-top: 1px solid #000;">
     <div style="font-size: 0.7em; color: #555; text-align: center; margin-bottom: 10px; font-style: italic;">
       Verification confirms the issuance of this title document by the carrier. Alteration of cargo details renders this B/L void.
     </div>
@@ -306,8 +295,7 @@ While simpler than a B/L, it is still a high-stakes legal proof of shipment. Fra
       <div style="font-size: 0.7em; opacity: 0.9;">NON-NEGOTIABLE RECEIPT</div>
     </div>
   </div>
-
-  <div style="display: grid; grid-template-columns: 1fr 1fr; border-bottom: 1px solid #000;">
+<div style="display: grid; grid-template-columns: 1fr 1fr; border-bottom: 1px solid #000;">
     <div style="padding: 10px; border-right: 1px solid #000; font-size: 0.75em; line-height: 1.3;">
       <strong style="text-transform: uppercase; color: #666;">Shipper:</strong><br>
       SHENZHEN ELECTRONICS MFG LTD.<br>
@@ -318,20 +306,17 @@ While simpler than a B/L, it is still a high-stakes legal proof of shipment. Fra
       <div style="font-size: 1.2em; font-weight: bold;"><span data-bracket="start" data-for="way">[</span>MAE-9988-7766-55</div>
     </div>
   </div>
-
-  <div style="padding: 10px; border-bottom: 1px solid #000; font-size: 0.75em; line-height: 1.3;">
+<div style="padding: 10px; border-bottom: 1px solid #000; font-size: 0.75em; line-height: 1.3;">
     <strong style="text-transform: uppercase; color: #666;">Consignee:</strong><br>
     GLOBAL RETAIL IMPORTS LLC, LOS ANGELES, CA, USA
   </div>
-
-  <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; border-bottom: 1px solid #000; font-size: 0.7em; text-transform: uppercase; text-align: center;">
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; border-bottom: 1px solid #000; font-size: 0.7em; text-transform: uppercase; text-align: center;">
     <div style="padding: 5px; border-right: 1px solid #000;"><strong>Vessel:</strong><br>Maersk Sealand</div>
     <div style="padding: 5px; border-right: 1px solid #000;"><strong>Voyage:</strong><br>2604W</div>
     <div style="padding: 5px; border-right: 1px solid #000;"><strong>Port of Loading:</strong><br>Yantian, CN</div>
     <div style="padding: 5px;"><strong>Place of Delivery:</strong><br>Los Angeles, USA</div>
   </div>
-
-  <div style="padding: 15px;">
+<div style="padding: 15px;">
     <table style="width: 100%; border-collapse: collapse; font-size: 0.8em;">
       <tr style="border-bottom: 1px solid #eee;">
         <th style="text-align: left; padding: 5px;">Container / Seal No.</th>
@@ -345,12 +330,10 @@ While simpler than a B/L, it is still a high-stakes legal proof of shipment. Fra
       </tr>
     </table>
   </div>
-
-  <div style="margin: 10px 20px; border: 1px solid #000; padding: 10px; text-align: center; font-weight: bold; font-size: 0.9em; background: #f9f9f9;">
+<div style="margin: 10px 20px; border: 1px solid #000; padding: 10px; text-align: center; font-weight: bold; font-size: 0.9em; background: #f9f9f9;">
     SHIPPED ON BOARD: MARCH 15, 2026
   </div>
-
-  <div style="padding: 20px; background: #fdfdfd; border-top: 1px solid #000; text-align: center;">
+<div style="padding: 20px; background: #fdfdfd; border-top: 1px solid #000; text-align: center;">
     <div data-verify-line="way" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #002d62; font-weight: bold;"
       title="Demo only: Maersk doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:maersk.com/v/MAE9988776655 <span data-bracket="end" data-for="way">]</span>

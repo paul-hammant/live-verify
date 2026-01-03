@@ -19,23 +19,19 @@ When you switch your phone number from one carrier to another (e.g., AT&T to T-M
     <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 1px;">LETTER OF AGENCY (LOA)</div>
     <div style="font-size: 0.75em; opacity: 0.8; text-transform: uppercase; margin-top: 5px;">Authorization for Number Portability</div>
   </div>
-
-  <div style="padding: 30px; font-size: 0.95em; line-height: 1.6; color: #333;">
+<div style="padding: 30px; font-size: 0.95em; line-height: 1.6; color: #333;">
     <p>I, <span data-bracket="start" data-for="port">[</span><strong>JOHN JACOB DOE</strong>, authorize the porting of the following telephone number(s) from my current provider (Losing Carrier) to the New Provider (Winning Carrier).</p>
-    
-    <div style="background: #f9f9f9; padding: 15px; border: 1px solid #ddd; margin: 20px 0; border-radius: 4px;">
+<div style="background: #f9f9f9; padding: 15px; border: 1px solid #ddd; margin: 20px 0; border-radius: 4px;">
       <p><strong>Telephone Number:</strong> (555) 123-4567<br>
       <strong>Current Carrier:</strong> AT&T Mobility<br>
       <strong>Account #:</strong> 9922-8877-6655<br>
       <strong>Service Zip Code:</strong> 62704</p>
     </div>
-
-    <p style="font-size: 0.85em; font-style: italic; color: #666;">
+<p style="font-size: 0.85em; font-style: italic; color: #666;">
       "I certify that I am the authorized account holder for the number(s) listed above. I understand that this authorization will result in a change of service provider."
     </p>
   </div>
-
-  <div style="padding: 20px; background: #fdfdfd; border-top: 1px solid #eee; text-align: center;">
+<div style="padding: 20px; background: #fdfdfd; border-top: 1px solid #eee; text-align: center;">
     <div data-verify-line="port" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Carriers don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:att.com/porting/v/992288776655 <span data-bracket="end" data-for="port">]</span>

@@ -22,8 +22,7 @@ These documents are presented to schools, police, doctors, and passport agents. 
     <div style="font-weight: bold; font-size: 1.2em; text-transform: uppercase;">In the Circuit Court of Cook County, Illinois</div>
     <div style="font-size: 1em; margin-top: 5px;">County Department, Domestic Relations Division</div>
   </div>
-
-  <div style="display: flex; justify-content: space-between; margin-bottom: 30px;">
+<div style="display: flex; justify-content: space-between; margin-bottom: 30px;">
     <div>
       <strong>In re the Marriage of:</strong><br><br>
       JANE DOE, Petitioner,<br>
@@ -36,19 +35,15 @@ These documents are presented to schools, police, doctors, and passport agents. 
       <strong>Calendar:</strong> 42<br>
     </div>
   </div>
-
-  <h3 style="text-align: center; text-decoration: underline; text-transform: uppercase;">Final Allocation Judgment of Parental Responsibilities</h3>
-
-  <div style="font-size: 0.95em; line-height: 1.6; text-align: justify;">
+<h3 style="text-align: center; text-decoration: underline; text-transform: uppercase;">Final Allocation Judgment of Parental Responsibilities</h3>
+<div style="font-size: 0.95em; line-height: 1.6; text-align: justify;">
     <p>This cause coming to be heard for entry of a Final Allocation Judgment, the Court finds:</p>
     <p>1. The parties have agreed to a Parenting Plan regarding the minor child, <span data-bracket="start" data-for="custody">[</span><strong>MICHAEL DOE (DOB: 05/12/2018)</strong>.</p>
     <p>2. <strong>Decision-Making:</strong> The Petitioner (Mother) shall have sole decision-making responsibility for education and healthcare.</p>
     <p>3. <strong>Parenting Time:</strong> The Respondent (Father) shall have parenting time every other weekend from Friday 5:00 PM to Sunday 5:00 PM.</p>
-    
-    <p><strong>IT IS ORDERED</strong> that the Parenting Plan attached hereto is incorporated by reference.</p>
+<p><strong>IT IS ORDERED</strong> that the Parenting Plan attached hereto is incorporated by reference.</p>
   </div>
-
-  <div style="margin-top: 50px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 50px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div style="border-top: 1px solid #000; width: 40%; text-align: center; padding-top: 5px;">
       Hon. Judge Susan Miller<br>
       <span style="font-size: 0.8em;">OCT 12 2025</span>
@@ -60,8 +55,7 @@ These documents are presented to schools, police, doctors, and passport agents. 
       </div>
     </div>
   </div>
-
-  <div data-verify-line="custody" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="custody" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Court doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:cookcountycourt.org/orders/v/a1b2c3 <span data-bracket="end" data-for="custody">]</span>
   </div>

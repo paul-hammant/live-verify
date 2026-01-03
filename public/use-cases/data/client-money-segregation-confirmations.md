@@ -19,8 +19,7 @@ These documents are the "Safety Certificates" for an investor's cash. Fraud is h
     <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 1px;">CLIENT MONEY SEGREGATION</div>
     <div style="font-size: 0.8em; opacity: 0.9; text-transform: uppercase; margin-top: 5px;">CASS 7 Compliance Attestation</div>
   </div>
-
-  <div style="padding: 30px; font-size: 0.95em; line-height: 1.6; color: #333;">
+<div style="padding: 30px; font-size: 0.95em; line-height: 1.6; color: #333;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 10px;">
       <div>
         <strong>Firm:</strong> <span data-bracket="start" data-for="cass">[</span>STERLING INVESTMENTS LTD<br>
@@ -31,20 +30,17 @@ These documents are the "Safety Certificates" for an investor's cash. Fraud is h
         <strong>As of Date:</strong> MARCH 31, 2026
       </div>
     </div>
-
-    <div style="background: #f0fff0; border: 1px solid #1a5f2a; padding: 15px; border-radius: 4px; margin-bottom: 20px;">
+<div style="background: #f0fff0; border: 1px solid #1a5f2a; padding: 15px; border-radius: 4px; margin-bottom: 20px;">
       <p style="margin: 0; font-weight: bold; color: #1a5f2a;">THE FIRM HEREBY ATTESTS THAT:</p>
       <p style="margin: 10px 0 0;">1. All client money is held in <strong>Designated Client Accounts</strong>.</p>
       <p style="margin: 5px 0 0;">2. Funds are fully segregated from the firm's proprietary assets.</p>
       <p style="margin: 5px 0 0;">3. Daily internal reconciliations show <strong>ZERO SHORTFALL</strong>.</p>
     </div>
-
-    <p style="font-size: 0.85em; color: #666; font-style: italic;">
+<p style="font-size: 0.85em; color: #666; font-style: italic;">
       "This attestation has been reviewed by our external auditors per the annual CASS audit cycle."
     </p>
   </div>
-
-  <div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #1a5f2a; text-align: center;">
+<div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #1a5f2a; text-align: center;">
     <div data-verify-line="cass" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: Investment firms don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:sterling-invest.co.uk/v/SEG2026Q1 <span data-bracket="end" data-for="cass">]</span>

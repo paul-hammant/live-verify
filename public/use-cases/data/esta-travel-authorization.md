@@ -24,30 +24,25 @@ Airlines are fined thousands of dollars for every passenger they let onto a plan
     </div>
     <div style="width: 40px; height: 40px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #002d62; font-weight: bold; font-size: 0.7em; text-align: center;">CBP</div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="text-align: center; margin-bottom: 20px;">
       <h2 style="margin: 0; font-size: 1.3em;">AUTHORIZATION APPROVED</h2>
       <div style="font-size: 1.5em; font-weight: bold; margin-top: 5px; color: #2e7d32;">APPLICATION #: <span data-bracket="start" data-for="esta">[</span>9988776655</div>
     </div>
-
-    <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
       <p><strong>Applicant:</strong> JOHN JACOB DOE<br>
       <strong>Birth Date:</strong> 05/15/1985<br>
       <strong>Citizenship:</strong> UNITED KINGDOM</p>
-
-      <div style="border-top: 1px solid #eee; padding-top: 10px; margin-top: 10px;">
+<div style="border-top: 1px solid #eee; padding-top: 10px; margin-top: 10px;">
         <strong>Passport Number:</strong> ********1234<br>
         <strong>Issuance Date:</strong> March 15, 2026<br>
         <strong>Expiration Date:</strong> March 14, 2028
       </div>
     </div>
-
-    <div style="margin-top: 25px; padding: 10px; background: #f9f9f9; border: 1px solid #eee; font-size: 0.8em; color: #555;">
+<div style="margin-top: 25px; padding: 10px; background: #f9f9f9; border: 1px solid #eee; font-size: 0.8em; color: #555;">
       <strong>Note:</strong> Your travel authorization is valid for two years or until your passport expires, whichever comes first.
     </div>
-
-    <div data-verify-line="esta" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="esta" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: CBP doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:esta.cbp.dhs.gov/v/9988776655 <span data-bracket="end" data-for="esta">]</span>
     </div>

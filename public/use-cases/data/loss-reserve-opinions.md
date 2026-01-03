@@ -16,29 +16,23 @@ furtherDerivations: 1
       March 15, 2026
     </div>
   </div>
-
-  <h3 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; color: #d32f2f; border-bottom: 2px solid #d32f2f; padding-bottom: 10px;">Statement of Actuarial Opinion (SAO)</h3>
-
-  <div style="font-size: 0.95em; line-height: 1.6; text-align: justify; color: #333; margin-top: 20px;">
+<h3 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; color: #d32f2f; border-bottom: 2px solid #d32f2f; padding-bottom: 10px;">Statement of Actuarial Opinion (SAO)</h3>
+<div style="font-size: 0.95em; line-height: 1.6; text-align: justify; color: #333; margin-top: 20px;">
     <p>I, <span data-bracket="start" data-for="loss-res">[</span><strong>Robert Miller, FCAS, MAAA</strong>, Appointed Actuary, do hereby certify that the loss and loss adjustment expense reserves for the <strong>Florida Homeowners Portfolio</strong> as of Dec 31, 2025:</p>
-
-    <ul>
+<ul>
       <li>Are developed using standard actuarial methodologies (Chain Ladder, Bornhuetter-Ferguson).</li>
       <li>Meet the requirements of the National Association of Insurance Commissioners (NAIC).</li>
       <li>Are within a reasonable range of the central estimate.</li>
     </ul>
-
-    <p><strong>Total Certified Loss Reserves:</strong> $ 4,250,000,000.00</p>
+<p><strong>Total Certified Loss Reserves:</strong> $ 4,250,000,000.00</p>
   </div>
-
-  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div style="border-top: 1px solid #000; width: 200px; padding-top: 5px; font-style: italic;">Robert Miller, FCAS</div>
     <div style="text-align: right;">
       <div style="border: 1px solid #d32f2f; display: inline-block; padding: 5px 10px; font-size: 0.8em; color: #d32f2f; font-weight: bold;">FILED & VERIFIED</div>
     </div>
   </div>
-
-  <div data-verify-line="loss-res" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="loss-res" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: State Farm doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:statefarm.com/actuarial/v/LOSS2026FL <span data-bracket="end" data-for="loss-res">]</span>
   </div>

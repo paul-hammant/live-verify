@@ -22,8 +22,7 @@ This sector faces massive high-volume fraud. From **Expense Reimbursement Fraud*
     </div>
     <div style="font-size: 2em;">✈️</div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div style="font-size: 0.9em; line-height: 1.5;">
         <strong>Traveler:</strong> <span data-bracket="start" data-for="travel">[</span>SARAH JANE SMITH<br>
@@ -36,8 +35,7 @@ This sector faces massive high-volume fraud. From **Expense Reimbursement Fraud*
         <strong>Status:</strong> CONFIRMED
       </div>
     </div>
-
-    <div style="margin-bottom: 25px;">
+<div style="margin-bottom: 25px;">
       <h4 style="margin-top: 0; font-size: 0.8em; color: #888; text-transform: uppercase; border-bottom: 1px solid #eee; padding-bottom: 5px;">FLIGHTS & LODGING</h4>
       <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
         <strong>15 MAR:</strong> United UA 926 (SFO-FRA) - <em>Business Class</em><br>
@@ -45,14 +43,12 @@ This sector faces massive high-volume fraud. From **Expense Reimbursement Fraud*
         <strong>20 MAR:</strong> United UA 927 (FRA-SFO) - <em>Business Class</em>
       </div>
     </div>
-
-    <div style="background: #f9f9f9; padding: 15px; border: 1px solid #ddd; border-radius: 4px; display: flex; justify-content: space-between; align-items: center;">
+<div style="background: #f9f9f9; padding: 15px; border: 1px solid #ddd; border-radius: 4px; display: flex; justify-content: space-between; align-items: center;">
       <div style="font-size: 0.85em; font-weight: bold;">TOTAL TRIP VALUE (VERIFIED):</div>
       <div style="font-size: 1.4em; font-weight: bold; color: #2e7d32;">$ 6,250.42</div>
     </div>
   </div>
-
-  <div style="padding: 20px; background: #fff; border-top: 1px dashed #999; text-align: center;">
+<div style="padding: 20px; background: #fff; border-top: 1px dashed #999; text-align: center;">
     <div data-verify-line="travel" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #002d62; font-weight: bold;"
       title="Demo only: Concur/Booking sites don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:concur.com/v/ITIN99228877 <span data-bracket="end" data-for="travel">]</span>

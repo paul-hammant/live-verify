@@ -20,20 +20,16 @@ The **Certificate of Fingerprinting** is the paper signed by a Notary Public or 
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 25px;">
     <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">CERTIFICATE OF FINGERPRINTING</h2>
   </div>
-
-  <div style="font-size: 1em; line-height: 1.6; color: #333; text-align: justify;">
+<div style="font-size: 1em; line-height: 1.6; color: #333; text-align: justify;">
     <p>I, the undersigned Notary Public, hereby certify that <span data-bracket="start" data-for="finger">[</span><strong>JOHN JACOB DOE</strong> (DOB: 05/15/1985) appeared before me this day and was fingerprinted using the standard FBI FD-258 card format.</p>
-
-    <div style="display: flex; justify-content: space-around; margin: 20px 0;">
+<div style="display: flex; justify-content: space-around; margin: 20px 0;">
       <div style="width: 80px; height: 100px; border: 1px solid #999; background: #eee; display: flex; align-items: center; justify-content: center; font-size: 0.6em; color: #777;">[R THUMB]</div>
       <div style="width: 80px; height: 100px; border: 1px solid #999; background: #eee; display: flex; align-items: center; justify-content: center; font-size: 0.6em; color: #777;">[L THUMB]</div>
     </div>
-
-    <p><strong>Purpose:</strong> FINRA Registration / Federal Employment<br>
+<p><strong>Purpose:</strong> FINRA Registration / Federal Employment<br>
     <strong>Card Serial #:</strong> 99228877-X</p>
   </div>
-
-  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div style="width: 45%;">
       <div style="border-top: 1px solid #000; padding-top: 5px; font-style: italic;">John Hancock, Notary</div>
       <div style="font-size: 0.8em; color: #777;">Commission Exp: 04/01/2028</div>
@@ -42,8 +38,7 @@ The **Certificate of Fingerprinting** is the paper signed by a Notary Public or 
       <div style="width: 80px; height: 80px; border: 2px solid #000; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; text-align: center; margin-left: auto;">OFFICIAL<br>NOTARY<br>SEAL</div>
     </div>
   </div>
-
-  <div data-verify-line="finger" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="finger" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Notary platform doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:notary-check.gov/biometrics/v/99228877 <span data-bracket="end" data-for="finger">]</span>
   </div>

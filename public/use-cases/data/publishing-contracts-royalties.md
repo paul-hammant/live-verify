@@ -25,8 +25,7 @@ Because these statements determine the distribution of millions of dollars, they
       <div style="font-size: 0.8em; color: #777;">Period: JUL - DEC 2025</div>
     </div>
   </div>
-
-  <div style="padding: 25px; border-bottom: 1px solid #eee;">
+<div style="padding: 25px; border-bottom: 1px solid #eee;">
     <div style="display: grid; grid-template-columns: 1fr 1fr; font-size: 0.9em; line-height: 1.5;">
       <div>
         <strong>Author:</strong> <span data-bracket="start" data-for="royalty">[</span>KILGORE TROUT<br>
@@ -39,8 +38,7 @@ Because these statements determine the distribution of millions of dollars, they
       </div>
     </div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <table style="width: 100%; border-collapse: collapse; font-size: 0.85em;">
       <tr style="border-bottom: 1px solid #000; background: #f5f5f5;">
         <th style="text-align: left; padding: 8px;">Format / Territory</th>
@@ -66,8 +64,7 @@ Because these statements determine the distribution of millions of dollars, they
       </tr>
     </table>
   </div>
-
-  <div style="padding: 20px; background: #f9f9f9; border-top: 1px solid #eee; text-align: center;">
+<div style="padding: 20px; background: #f9f9f9; border-top: 1px solid #eee; text-align: center;">
     <div style="font-size: 0.7em; color: #666; margin-bottom: 10px; font-style: italic;">
       Verification confirms the financial integrity of this statement against the publisher's general ledger.
     </div>

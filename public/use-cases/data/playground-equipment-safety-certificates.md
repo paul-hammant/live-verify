@@ -22,18 +22,15 @@ These documents are the "Shield of Public Trust." Fraud is high-stakes: un-certi
       <div style="font-size: 0.75em; font-weight: bold; opacity: 0.9;">CITY OF SPRINGFIELD • PARKS & REC</div>
     </div>
   </div>
-
-  <div style="padding: 25px; background: #fff;">
+<div style="padding: 25px; background: #fff;">
     <div style="border-bottom: 1px solid #eee; padding-bottom: 10px; margin-bottom: 15px;">
       <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Location / Site</div>
       <div style="font-size: 1.2em; font-weight: bold; color: #333;"><span data-bracket="start" data-for="play">[</span>ZILKER PARK (SOUTH AREA)</div>
-      
-      <div style="font-size: 0.9em; color: #333; margin-top: 5px;">
+<div style="font-size: 0.9em; color: #333; margin-top: 5px;">
         Structure ID: #992288-CLIMB ("The Castle")
       </div>
     </div>
-
-    <div style="background: #fff8e1; border: 1px solid #ffe082; padding: 15px; border-radius: 4px; margin-bottom: 20px;">
+<div style="background: #fff8e1; border: 1px solid #ffe082; padding: 15px; border-radius: 4px; margin-bottom: 20px;">
       <h4 style="margin-top: 0; color: #f57c00; font-size: 0.85em; text-transform: uppercase; border-bottom: 1px solid #ffe082; padding-bottom: 5px;">VERIFIED SAFETY AUDIT</h4>
       <table style="width: 100%; font-size: 0.9em; line-height: 1.6;">
         <tr>
@@ -50,8 +47,7 @@ These documents are the "Shield of Public Trust." Fraud is high-stakes: un-certi
         </tr>
       </table>
     </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: flex-end; font-size: 0.8em;">
+<div style="display: flex; justify-content: space-between; align-items: flex-end; font-size: 0.8em;">
       <div>
         <div style="border-top: 1px solid #000; width: 180px; padding-top: 5px; font-style: italic;">Sarah J. Jenkins, CPSI</div>
         <div style="color: #666;">CPSI License: #992288 • Exp: 2027</div>
@@ -61,8 +57,7 @@ These documents are the "Shield of Public Trust." Fraud is high-stakes: un-certi
       </div>
     </div>
   </div>
-
-  <div style="padding: 15px 20px 20px 20px; background: #fff; border-top: 1px dashed #bbb; text-align: center;">
+<div style="padding: 15px 20px 20px 20px; background: #fff; border-top: 1px dashed #bbb; text-align: center;">
     <div data-verify-line="play" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #f57c00; font-weight: bold;"
       title="Demo only: Municipalities don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:austin-parks.gov/v/ZILKER9922 <span data-bracket="end" data-for="play">]</span>

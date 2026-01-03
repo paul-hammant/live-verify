@@ -20,21 +20,17 @@ Because these apps move money instantly, they are the #1 target for **"Screensho
     <div style="font-size: 3em; font-weight: bold; margin: 10px 0;">$ 450.00</div>
     <div style="font-size: 0.9em; opacity: 0.9;">to <span data-bracket="start" data-for="p2p">[</span>Sarah Jane Smith</div>
   </div>
-
-  <div style="padding: 25px; text-align: center;">
+<div style="padding: 25px; text-align: center;">
     <div style="font-size: 1.1em; color: #333; margin-bottom: 5px;"><strong>@Sarah-Smith-42</strong></div>
     <div style="font-size: 0.9em; color: #666; font-style: italic;">"Payment for iPhone 12 Pro"</div>
-    
-    <div style="margin: 20px 0; border-top: 1px solid #eee; padding-top: 15px; font-size: 0.8em; color: #888;">
+<div style="margin: 20px 0; border-top: 1px solid #eee; padding-top: 15px; font-size: 0.8em; color: #888;">
       <strong>Transaction ID:</strong> 992288776655-XJ<br>
       <strong>Date:</strong> 15 MAR 2026 • 14:32 PM
     </div>
-
-    <div style="display: inline-block; background: #e8f5e9; color: #2e7d32; padding: 5px 15px; border-radius: 20px; font-size: 0.8em; font-weight: bold; margin-bottom: 20px;">
+<div style="display: inline-block; background: #e8f5e9; color: #2e7d32; padding: 5px 15px; border-radius: 20px; font-size: 0.8em; font-weight: bold; margin-bottom: 20px;">
       ✓ COMPLETED
     </div>
-
-    <div data-verify-line="p2p" style="border-top: 1px dashed #ccc; padding-top: 15px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #008CFF; font-weight: bold;"
+<div data-verify-line="p2p" style="border-top: 1px dashed #ccc; padding-top: 15px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #008CFF; font-weight: bold;"
       title="Demo only: P2P platforms don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:venmo.com/v/992288776655 <span data-bracket="end" data-for="p2p">]</span>
     </div>

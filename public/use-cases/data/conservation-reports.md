@@ -26,31 +26,25 @@ Fraudsters often hide "Over-Restoration"—where so much new paint has been adde
       <div style="font-size: 0.8em;">Project #: GCI-2026-992</div>
     </div>
   </div>
-
-  <div style="padding: 30px;">
+<div style="padding: 30px;">
     <h3 style="margin-top: 0; color: #546e7a; border-bottom: 2px solid #546e7a; padding-bottom: 5px;">CONSERVATION TREATMENT SUMMARY</h3>
-
-    <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.9em; line-height: 1.6; color: #333;">
       <p><strong>Object:</strong> <span data-bracket="start" data-for="conserve">[</span>Rembrandt van Rijn, <em>The Night Watch</em> (1642)<br>
       <strong>Owner:</strong> Rijksmuseum, Amsterdam</p>
-
-      <div style="background: #fdfdfd; border: 1px solid #eee; padding: 15px; margin: 15px 0;">
+<div style="background: #fdfdfd; border: 1px solid #eee; padding: 15px; margin: 15px 0;">
         <p><strong>Treatment Performed:</strong> Selective varnish removal and structural consolidation of the lower left quadrant.</p>
         <p><strong>Materials Used:</strong> Regalrez 1094, Shellsol T, Paraloid B-72.</p>
         <p><strong>Date Completed:</strong> March 15, 2026</p>
       </div>
-
-      <p style="font-size: 0.85em;"><strong>Condition Note:</strong> Varnish bloom successfully reduced. Surface pH stabilized at 6.8. Structural cracks in the impasto consolidated with synthetic resin.</p>
+<p style="font-size: 0.85em;"><strong>Condition Note:</strong> Varnish bloom successfully reduced. Surface pH stabilized at 6.8. Structural cracks in the impasto consolidated with synthetic resin.</p>
     </div>
-
-    <div style="margin-top: 20px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 20px; display: flex; justify-content: space-between; align-items: flex-end;">
       <div style="border-top: 1px solid #000; width: 200px; padding-top: 5px; font-style: italic; font-size: 0.85em;">Lead Conservator: Dr. Elena Rossi</div>
       <div style="text-align: right; font-size: 0.8em; color: #777;">
         Report ID: RC-998877
       </div>
     </div>
-
-    <div data-verify-line="conserve" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="conserve" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Getty Institute doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:getty.edu/conservation/v/GCI992 <span data-bracket="end" data-for="conserve">]</span>
     </div>

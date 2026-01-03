@@ -25,8 +25,7 @@ Trucking is a fragmented industry. Verified CMRs prevent "Weight Fraud" (lying a
     <div style="font-weight: bold;">INTERNATIONAL CONSIGNMENT NOTE</div>
     <div style="font-weight: bold; color: #d32f2f;">No. 99887766</div>
   </div>
-
-  <div style="padding: 10px; font-size: 0.8em;">
+<div style="padding: 10px; font-size: 0.8em;">
     <div style="display: flex; border-bottom: 1px solid #000; padding-bottom: 10px;">
       <div style="width: 50%; border-right: 1px solid #000; padding-right: 10px;">
         <strong>1. Sender (name, address, country):</strong><br>
@@ -39,17 +38,14 @@ Trucking is a fragmented industry. Verified CMRs prevent "Weight Fraud" (lying a
         Rue de Rivoli, Paris, FR
       </div>
     </div>
-
-    <div style="margin-top: 10px;">
+<div style="margin-top: 10px;">
       <p><strong>3. Place of Delivery:</strong> Paris, FR<br>
       <strong>4. Place of Taking Over:</strong> Berlin, DE (Date: 15.03.2026)</p>
-      
-      <p><strong>5. Description of Goods:</strong><br>
+<p><strong>5. Description of Goods:</strong><br>
       High-Value Consumer Electronics (12 Pallets)<br>
       Total Weight: 4,500 KG</p>
     </div>
-
-    <div style="margin-top: 20px; display: flex; justify-content: space-between; border-top: 1px solid #000; padding-top: 10px;">
+<div style="margin-top: 20px; display: flex; justify-content: space-between; border-top: 1px solid #000; padding-top: 10px;">
       <div style="width: 30%; text-align: center; border: 1px solid #000; padding: 5px;">
         Sender Signature
       </div>
@@ -60,8 +56,7 @@ Trucking is a fragmented industry. Verified CMRs prevent "Weight Fraud" (lying a
         Consignee Signature
       </div>
     </div>
-
-    <div data-verify-line="cmr" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #555; text-align: center;"
+<div data-verify-line="cmr" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #555; text-align: center;"
       title="Demo only: Carrier doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:dhl-logistics.com/cmr/v/99887766 <span data-bracket="end" data-for="cmr">]</span>
     </div>

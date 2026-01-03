@@ -21,24 +21,19 @@ The committee reviews the plan to ensure people aren't being exploited and anima
     <div style="font-weight: bold; font-size: 1.2em; color: #1a237e;">STANFORD UNIVERSITY - RESEARCH COMPLIANCE</div>
     <div style="font-size: 0.85em; color: #666;">Institutional Review Board (IRB)</div>
   </div>
-
-  <h2 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; color: #1a237e;">Notice of Ethical Approval</h2>
-
-  <div style="font-size: 0.95em; line-height: 1.6; color: #333; text-align: justify;">
+<h2 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; color: #1a237e;">Notice of Ethical Approval</h2>
+<div style="font-size: 0.95em; line-height: 1.6; color: #333; text-align: justify;">
     <p>This document confirms that the research protocol described below has been reviewed and approved by the Stanford IRB.</p>
-
-    <div style="margin: 20px 0; border-left: 4px solid #1a237e; padding-left: 20px; background: #f5f5f5; padding-top: 10px; padding-bottom: 10px;">
+<div style="margin: 20px 0; border-left: 4px solid #1a237e; padding-left: 20px; background: #f5f5f5; padding-top: 10px; padding-bottom: 10px;">
       <p><strong>Protocol ID:</strong> <span data-bracket="start" data-for="ethics">[</span>IRB-2026-992288<br>
       <strong>Study Title:</strong> Neural Response to Digital Verification Affordances<br>
       <strong>Principal Investigator:</strong> Prof. Albus Dumbledore<br>
       <strong>Risk Level:</strong> Minimal Risk</p>
     </div>
-
-    <p><strong>Approval Date:</strong> March 15, 2026<br>
+<p><strong>Approval Date:</strong> March 15, 2026<br>
     <strong>Expiration Date:</strong> March 14, 2027</p>
   </div>
-
-  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div style="width: 45%;">
       <div style="border-top: 1px solid #000; padding-top: 5px; font-style: italic;">Dr. Minerva McGonagall</div>
       <div style="font-size: 0.8em; color: #777;">IRB Chair</div>
@@ -47,8 +42,7 @@ The committee reviews the plan to ensure people aren't being exploited and anima
       <div style="width: 80px; height: 80px; border: 2px solid #1a237e; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; color: #1a237e; font-weight: bold; text-align: center; margin-left: auto;">ETHICS<br>OFFICE</div>
     </div>
   </div>
-
-  <div data-verify-line="ethics" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="ethics" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Stanford doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:stanford.edu/compliance/v/IRB-992288 <span data-bracket="end" data-for="ethics">]</span>
   </div>

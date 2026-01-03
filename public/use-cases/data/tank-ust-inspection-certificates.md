@@ -22,8 +22,7 @@ These documents are high-stakes environmental proofs. Fraud is common: owners of
     </div>
     <div style="font-size: 2em;">💧</div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
         <strong>Facility:</strong> <span data-bracket="start" data-for="ust">[</span>MAIN STREET FUEL CENTER<br>
@@ -36,8 +35,7 @@ These documents are high-stakes environmental proofs. Fraud is common: owners of
         <strong>Expires:</strong> 15 MAR 2027
       </div>
     </div>
-
-    <div style="background: #f9f9f9; padding: 15px; border: 1px solid #ddd; border-radius: 4px; margin-bottom: 20px;">
+<div style="background: #f9f9f9; padding: 15px; border: 1px solid #ddd; border-radius: 4px; margin-bottom: 20px;">
       <h4 style="margin-top: 0; color: #2e7d32; font-size: 0.9em; border-bottom: 1px solid #ccc; padding-bottom: 5px;">VERIFIED TANK STATUS</h4>
       <table style="width: 100%; font-size: 0.85em;">
         <tr style="border-bottom: 1px solid #eee;">
@@ -54,8 +52,7 @@ These documents are high-stakes environmental proofs. Fraud is common: owners of
         </tr>
       </table>
     </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: flex-end; font-size: 0.85em;">
+<div style="display: flex; justify-content: space-between; align-items: flex-end; font-size: 0.85em;">
       <div>
         <div style="border-top: 1px solid #000; width: 200px; padding-top: 5px; font-style: italic;">Sarah J. Jenkins, Certified Inspector</div>
         <div>License: #UST-992288 • Phone: 555-0199</div>
@@ -63,8 +60,7 @@ These documents are high-stakes environmental proofs. Fraud is common: owners of
       <div style="width: 80px; height: 80px; border: 2px solid #2e7d32; color: #2e7d32; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; text-align: center; transform: rotate(-5deg);">EPA<br>COMPLIANT</div>
     </div>
   </div>
-
-  <div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #2e7d32; text-align: center;">
+<div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #2e7d32; text-align: center;">
     <div data-verify-line="ust" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: EPA doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:epa.gov/ust/v/99228877XJ <span data-bracket="end" data-for="ust">]</span>

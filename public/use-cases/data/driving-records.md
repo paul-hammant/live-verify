@@ -24,26 +24,22 @@ Unlike a self-declaration ("I have no points"), an authority-issued record is **
     <strong>Licence Number:</strong> SMITH890123JS9AB<br>
     <strong>Date of Birth:</strong> [Verified but not displayed]<br>
     <strong>Record Date:</strong> 15 February 2026, 09:42 GMT</p>
-
-    <div style="background: #f5fff5; padding: 15px; margin: 15px 0; border: 1px solid #228B22;">
+<div style="background: #f5fff5; padding: 15px; margin: 15px 0; border: 1px solid #228B22;">
       <p style="margin: 0; color: #228B22; font-weight: bold;">✓ CLEAN RECORD</p>
       <p style="margin: 10px 0 0;"><strong>Penalty Points:</strong> 0</p>
       <p style="margin: 5px 0 0;"><strong>Endorsements:</strong> None</p>
       <p style="margin: 5px 0 0;"><strong>Disqualifications:</strong> None</p>
     </div>
-
-    <div style="background: #f0f4f8; padding: 15px; margin: 15px 0; border-left: 3px solid #003366;">
+<div style="background: #f0f4f8; padding: 15px; margin: 15px 0; border-left: 3px solid #003366;">
       <p style="margin: 0;"><strong>Licence Categories:</strong></p>
       <p style="margin: 5px 0 0;">B — Car (valid to 2035)</p>
       <p style="margin: 5px 0 0;">BE — Car + trailer (valid to 2035)</p>
     </div>
-
-    <p style="font-size: 0.85em; color: #666;">
+<p style="font-size: 0.85em; color: #666;">
       This record is valid at the time of issue.<br>
       Status may change — re-verify for current standing.
     </p>
-
-    <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
+<div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="drivingrecords" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
         verify:gov.uk/dvla/records/SMITH890123JS9AB-2026-0215 <span data-bracket="end" data-for="drivingrecords">]</span>
@@ -63,8 +59,7 @@ Unlike a self-declaration ("I have no points"), an authority-issued record is **
     <p><strong>Licence Holder:</strong> Sarah Jane Wilson<br>
     <strong>Licence Number:</strong> WILSO901234SJ9CD<br>
     <strong>Record Date:</strong> 15 February 2026, 14:22 GMT</p>
-
-    <div style="background: #fff8f0; padding: 15px; margin: 15px 0; border: 1px solid #ff6600;">
+<div style="background: #fff8f0; padding: 15px; margin: 15px 0; border: 1px solid #ff6600;">
       <p style="margin: 0; color: #ff6600; font-weight: bold;">⚠ POINTS ON LICENCE</p>
       <p style="margin: 10px 0 0;"><strong>Penalty Points:</strong> 6</p>
       <p style="margin: 10px 0 0;"><strong>Endorsements:</strong></p>
@@ -72,13 +67,11 @@ Unlike a self-declaration ("I have no points"), an authority-issued record is **
       <p style="margin: 5px 0 0;">• CU80 — Using phone (3 pts) — expires July 2028</p>
       <p style="margin: 5px 0 0;"><strong>Disqualifications:</strong> None</p>
     </div>
-
-    <p style="font-size: 0.85em; color: #666;">
+<p style="font-size: 0.85em; color: #666;">
       12+ points = automatic disqualification consideration.<br>
       New drivers (first 2 years): 6 points = licence revoked.
     </p>
-
-    <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
+<div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="drivingrecords" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
         verify:gov.uk/dvla/records/WILSO901234SJ9CD-2026-0215 <span data-bracket="end" data-for="drivingrecords">]</span>

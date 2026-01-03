@@ -22,8 +22,7 @@ These certificates are the foundation of **Solar Financing** and **Warranties**.
     </div>
     <div style="font-size: 2.2em;">☀️</div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
         <strong>Model:</strong> Vertex S+ (Black)<br>
@@ -36,8 +35,7 @@ These certificates are the foundation of **Solar Financing** and **Warranties**.
         <strong>Class:</strong> TIER-1 (Elite)
       </div>
     </div>
-
-    <div style="background: #f1f8e9; border: 1px solid #c5e1a5; padding: 20px; text-align: center; border-radius: 4px; margin-bottom: 20px;">
+<div style="background: #f1f8e9; border: 1px solid #c5e1a5; padding: 20px; text-align: center; border-radius: 4px; margin-bottom: 20px;">
       <h4 style="margin-top: 0; color: #2e7d32; font-size: 0.85em; text-transform: uppercase; border-bottom: 1px solid #c5e1a5; padding-bottom: 5px;">VERIFIED STC PERFORMANCE</h4>
       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px;">
         <div>
@@ -50,13 +48,11 @@ These certificates are the foundation of **Solar Financing** and **Warranties**.
         </div>
       </div>
     </div>
-
-    <div style="font-size: 0.75em; color: #666; line-height: 1.4; font-style: italic; text-align: center;">
+<div style="font-size: 0.75em; color: #666; line-height: 1.4; font-style: italic; text-align: center;">
       "This panel has been individually tested at the point of manufacture. Performance data is guaranteed for 25 years under the Linear Power Warranty."
     </div>
   </div>
-
-  <div style="padding: 20px; background: #fdfdfd; border-top: 1px solid #004d40; text-align: center;">
+<div style="padding: 20px; background: #fdfdfd; border-top: 1px solid #004d40; text-align: center;">
     <div data-verify-line="solar" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Solar manufacturers don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:trinasolar.com/v/SN99228877 <span data-bracket="end" data-for="solar">]</span>

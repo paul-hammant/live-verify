@@ -24,29 +24,23 @@ Verification ensures that the "4.2% Average Increase" the company announces to t
       March 15, 2026
     </div>
   </div>
-
-  <h3 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; color: #1a237e; border-bottom: 2px solid #1a237e; padding-bottom: 10px;">Actuarial Certification of Rates</h3>
-
-  <div style="font-size: 0.95em; line-height: 1.6; text-align: justify; color: #333; margin-top: 20px;">
+<h3 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; color: #1a237e; border-bottom: 2px solid #1a237e; padding-bottom: 10px;">Actuarial Certification of Rates</h3>
+<div style="font-size: 0.95em; line-height: 1.6; text-align: justify; color: #333; margin-top: 20px;">
     <p>I, <span data-bracket="start" data-for="rate-filing">[</span><strong>Robert Miller, FSA, MAAA</strong>, do hereby certify that the proposed rates for the <strong>2027 Individual PPO Portfolio</strong>:</p>
-
-    <ul>
+<ul>
       <li>Are developed in accordance with generally accepted actuarial principles.</li>
       <li>Are not excessive, inadequate, or unfairly discriminatory.</li>
       <li>Meet the minimum 80% Medical Loss Ratio (MLR) requirement under the ACA.</li>
     </ul>
-
-    <p><strong>Proposed Weighted Average Increase:</strong> 4.2%</p>
+<p><strong>Proposed Weighted Average Increase:</strong> 4.2%</p>
   </div>
-
-  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div style="border-top: 1px solid #000; width: 200px; padding-top: 5px; font-style: italic;">Robert Miller, FSA</div>
     <div style="text-align: right;">
       <div style="border: 1px solid #1a237e; display: inline-block; padding: 5px 10px; font-size: 0.8em; color: #1a237e; font-weight: bold;">FILED & APPROVED</div>
     </div>
   </div>
-
-  <div data-verify-line="rate-filing" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="rate-filing" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Blue Shield doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:blueshieldca.com/actuarial/v/RATE202642 <span data-bracket="end" data-for="rate-filing">]</span>
   </div>

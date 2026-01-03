@@ -22,8 +22,7 @@ Fraud is high-stakes in bulk commodities (e.g., grain, coal, chemicals). Shady s
     </div>
     <div style="font-size: 2em;">🚂</div>
   </div>
-
-  <div style="padding: 20px;">
+<div style="padding: 20px;">
     <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.85em; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
         <strong>Shipper:</strong> <span data-bracket="start" data-for="rail">[</span>GLOBAL AGRI-TRADE LLC<br>
@@ -36,8 +35,7 @@ Fraud is high-stakes in bulk commodities (e.g., grain, coal, chemicals). Shady s
         <strong>Railcar:</strong> UPP-884422 (Verified)
       </div>
     </div>
-
-    <table style="width: 100%; border-collapse: collapse; font-size: 0.8em; margin-bottom: 20px;">
+<table style="width: 100%; border-collapse: collapse; font-size: 0.8em; margin-bottom: 20px;">
       <tr style="border-top: 2px solid #000; border-bottom: 1px solid #000; background: #f5f5f5;">
         <th style="text-align: left; padding: 8px;">Commodity / STCC Code</th>
         <th style="text-align: center; padding: 8px;">Units</th>
@@ -53,13 +51,11 @@ Fraud is high-stakes in bulk commodities (e.g., grain, coal, chemicals). Shady s
         <td style="text-align: right; padding: 8px; font-weight: bold; color: #2e7d32;">142,500 LB</td>
       </tr>
     </table>
-
-    <div style="font-size: 0.75em; color: #666; line-height: 1.4; border: 1px solid #ccc; padding: 10px; background: #fff;">
+<div style="font-size: 0.75em; color: #666; line-height: 1.4; border: 1px solid #ccc; padding: 10px; background: #fff;">
       <strong>Hazmat Status:</strong> NON-HAZARDOUS. Any deviation from the declared STCC code is a violation of Federal Rail Safety Standards.
     </div>
   </div>
-
-  <div style="padding: 20px; background: #fdfdfd; border-top: 1px solid #000; text-align: center;">
+<div style="padding: 20px; background: #fdfdfd; border-top: 1px solid #000; text-align: center;">
     <div data-verify-line="rail" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Railroads don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:up.com/waybill/v/UP2026992288 <span data-bracket="end" data-for="rail">]</span>

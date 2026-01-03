@@ -14,8 +14,7 @@ furtherDerivations: 1
     EQUIPMENT INTERCHANGE RECEIPT (EIR)<br>
     -------------------------------------
   </div>
-
-  <div style="font-size: 0.85em; line-height: 1.4;">
+<div style="font-size: 0.85em; line-height: 1.4;">
     <div style="display: flex; justify-content: space-between;">
       <div>
         <strong>Container ID:</strong> <span data-bracket="start" data-for="eir">[</span>MSKU-998877-6<br>
@@ -26,23 +25,19 @@ furtherDerivations: 1
         <strong>Date:</strong> 15 MAR 2026 09:14 AM
       </div>
     </div>
-
-    <div style="margin: 15px 0; border: 1px solid #000; padding: 10px; background: #f9f9f9;">
+<div style="margin: 15px 0; border: 1px solid #000; padding: 10px; background: #f9f9f9;">
       <strong>DAMAGE NOTATIONS (OUTGATE):</strong><br>
       [ ] NO DAMAGE FOUND (CLEAN)<br>
       [X] SC-1: 12" Scratch, Left Side Panel<br>
       [X] DT-4: Minor Dent, Rear Door sill
     </div>
-
-    <p><strong>Trucking Co:</strong> Quick-Haul Transport, Inc.<br>
+<p><strong>Trucking Co:</strong> Quick-Haul Transport, Inc.<br>
     <strong>Driver ID:</strong> Miller, R. (Verified)<br>
     <strong>Terminal:</strong> LBCT Pier E, Long Beach, CA</p>
-
-    <div style="margin-top: 20px; font-size: 0.8em; font-style: italic; color: #555;">
+<div style="margin-top: 20px; font-size: 0.8em; font-style: italic; color: #555;">
       Signatory confirms receipt of equipment in the condition noted above.
     </div>
-
-    <div data-verify-line="eir" style="border-top: 1px dashed #999; margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="eir" style="border-top: 1px dashed #999; margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Terminal doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:global-terminals.com/eir/v/99228877 <span data-bracket="end" data-for="eir">]</span>
     </div>

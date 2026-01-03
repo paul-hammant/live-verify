@@ -21,27 +21,22 @@ OCR-to-hash allows a citizen or neighbor to scan the notice from the sidewalk to
     <div style="font-weight: bold; font-size: 1.3em; text-transform: uppercase;">City Planning Commission</div>
     <div style="font-size: 1em; letter-spacing: 1px;">PUBLIC NOTICE OF PROPOSED DEVELOPMENT</div>
   </div>
-
-  <div style="font-size: 0.9em; line-height: 1.6; color: #000;">
+<div style="font-size: 0.9em; line-height: 1.6; color: #000;">
     <p><strong>Application #:</strong> <span data-bracket="start" data-for="plan">[</span>PLN-2026-992288<br>
     <strong>Address:</strong> 42 SKYLINE DRIVE, SPRINGFIELD, USA</p>
-
-    <div style="margin: 15px 0; padding: 15px; border: 1px solid #000; background: #fff;">
+<div style="margin: 15px 0; padding: 15px; border: 1px solid #000; background: #fff;">
       <strong>Proposed Action:</strong><br>
       Construction of a 4-story mixed-use building (12 residential units / 2 commercial). Request for Zoning Variance (Height) from 35ft to 48ft.
     </div>
-
-    <div style="background: #000; color: #fff; padding: 10px; text-align: center; margin-top: 15px;">
+<div style="background: #000; color: #fff; padding: 10px; text-align: center; margin-top: 15px;">
       <strong>CONSULTATION END DATE:</strong><br>
       <span style="font-size: 1.4em; font-weight: bold;">APRIL 15, 2026</span>
     </div>
   </div>
-
-  <div style="margin-top: 25px; font-size: 0.75em; color: #333; text-align: center;">
+<div style="margin-top: 25px; font-size: 0.75em; color: #333; text-align: center;">
     All comments or appeals must be received by the end date above. Use the Reference ID below for all correspondence.
   </div>
-
-  <div style="padding: 20px; background: #fff; border: 1px dashed #000; margin-top: 20px; text-align: center;">
+<div style="padding: 20px; background: #fff; border: 1px dashed #000; margin-top: 20px; text-align: center;">
     <div data-verify-line="plan" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: Municipalities don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:springfield.gov/plan/v/PLN992288 <span data-bracket="end" data-for="plan">]</span>

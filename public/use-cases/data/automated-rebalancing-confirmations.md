@@ -21,8 +21,7 @@ These trades happen by the thousands every second. An **Automated Rebalancing Co
     <h3 style="margin: 0; letter-spacing: 1px;">WEALTHFRONT REBALANCING NOTICE</h3>
     <div style="font-size: 0.8em; margin-top: 5px;">AUTOMATED PORTFOLIO MANAGEMENT</div>
   </div>
-
-  <div style="padding: 30px;">
+<div style="padding: 30px;">
     <div style="display: flex; justify-content: space-between; font-size: 0.9em; margin-bottom: 20px; color: #555;">
       <div>
         <strong>Account:</strong> XXXX-9988<br>
@@ -33,12 +32,10 @@ These trades happen by the thousands every second. An **Automated Rebalancing Co
         <strong>Transaction:</strong> REB-998877
       </div>
     </div>
-
-    <div style="font-size: 0.95em; line-height: 1.5; color: #333;">
+<div style="font-size: 0.95em; line-height: 1.5; color: #333;">
       <p>Hello <span data-bracket="start" data-for="rebal">[</span><strong>Sarah Connor</strong>,</p>
       <p>Your portfolio was automatically rebalanced today to maintain your 9.0/10 risk score and capture tax-loss harvesting opportunities.</p>
-
-      <table style="width: 100%; border-collapse: collapse; margin-top: 15px;">
+<table style="width: 100%; border-collapse: collapse; margin-top: 15px;">
         <tr style="border-bottom: 1px solid #eee; background: #f9f9f9;">
           <th style="text-align: left; padding: 8px;">Security</th>
           <th style="text-align: center; padding: 8px;">Action</th>
@@ -55,11 +52,9 @@ These trades happen by the thousands every second. An **Automated Rebalancing Co
           <td style="text-align: right; padding: 8px;">$ 1,250.00</td>
         </tr>
       </table>
-
-      <p style="margin-top: 20px; font-weight: bold; color: #2e7d32;">Estimated Tax Savings: $ 312.50</p>
+<p style="margin-top: 20px; font-weight: bold; color: #2e7d32;">Estimated Tax Savings: $ 312.50</p>
     </div>
-
-    <div data-verify-line="rebal" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="rebal" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Wealthfront doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:wealthfront.com/confirms/v/x9y8z7 <span data-bracket="end" data-for="rebal">]</span>
     </div>

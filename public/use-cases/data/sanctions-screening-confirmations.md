@@ -23,8 +23,7 @@ If you do business with a sanctioned party, even accidentally, the penalties are
     <p><strong>Screened Party:</strong> <span data-bracket="start" data-for="sanctionsscreeningco">[</span>Meridian Trading GmbH<br>
     <strong>Screening Date:</strong> February 15, 2026 14:32:01 UTC<br>
     <strong>Reference:</strong> SCR-2026-00442871</p>
-
-    <div style="background: #f5fff5; padding: 15px; margin: 15px 0; border: 1px solid #228B22;">
+<div style="background: #f5fff5; padding: 15px; margin: 15px 0; border: 1px solid #228B22;">
       <p style="margin: 0; color: #228B22; font-weight: bold;">✓ NO MATCHES FOUND</p>
       <p style="margin: 10px 0 0;"><strong>Lists Screened:</strong></p>
       <p style="margin: 5px 0 0;">• OFAC SDN List (v. 2026-02-15)</p>
@@ -32,11 +31,9 @@ If you do business with a sanctioned party, even accidentally, the penalties are
       <p style="margin: 5px 0 0;">• UN Security Council Sanctions</p>
       <p style="margin: 5px 0 0;">• HMT UK Sanctions List</p>
     </div>
-
-    <p style="font-size: 0.85em; color: #666;">Screening Provider: World-Check (Refinitiv)<br>
+<p style="font-size: 0.85em; color: #666;">Screening Provider: World-Check (Refinitiv)<br>
     Compliance Officer: J. Martinez</p>
-
-    <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
+<div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="sanctionsscreeningco" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
         verify:sterling-bank.com/sanctions/SCR-2026-00442871 <span data-bracket="end" data-for="sanctionsscreeningco">]</span>

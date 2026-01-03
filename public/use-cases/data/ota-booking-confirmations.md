@@ -27,8 +27,7 @@ It is your "Central Itinerary." It proves:
     </div>
     <div style="font-size: 1.2em;">🏨</div>
   </div>
-
-  <div style="padding: 30px;">
+<div style="padding: 30px;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px; font-size: 0.9em; color: #555;">
       <div>
         <strong>Guest:</strong> <span data-bracket="start" data-for="ota">[</span>SARAH JANE SMITH<br>
@@ -39,8 +38,7 @@ It is your "Central Itinerary." It proves:
         <strong>Status:</strong> CONFIRMED & PAID
       </div>
     </div>
-
-    <div style="background: #f0f4f8; padding: 15px; border: 1px solid #d1d9e6; margin-bottom: 20px;">
+<div style="background: #f0f4f8; padding: 15px; border: 1px solid #d1d9e6; margin-bottom: 20px;">
       <p style="font-weight: bold; margin-top: 0;">HOTEL EXCELSIOR - ZURICH</p>
       <table style="width: 100%; font-size: 0.9em;">
         <tr>
@@ -57,15 +55,13 @@ It is your "Central Itinerary." It proves:
         </tr>
       </table>
     </div>
-
-    <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px;">
+<table style="width: 100%; border-collapse: collapse; margin-bottom: 10px;">
       <tr>
         <td>Total Price (including VAT):</td>
         <td style="text-align: right; font-weight: bold; font-size: 1.2em;">CHF 1,450.00</td>
       </tr>
     </table>
-
-    <div data-verify-line="ota" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="ota" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Booking.com doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:booking.com/v/9988776655 <span data-bracket="end" data-for="ota">]</span>
     </div>

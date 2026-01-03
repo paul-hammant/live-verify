@@ -13,22 +13,18 @@ furtherDerivations: 1
     <h2 style="margin: 0; color: #0056b3; letter-spacing: 1px;">EU CE CERTIFICATE OF CONFORMITY</h2>
     <div style="font-size: 0.85em; color: #555; margin-top: 5px;">Medical Device Regulation (EU) 2017/745</div>
   </div>
-
-  <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <p><strong>Certificate No:</strong> <span data-bracket="start" data-for="med-cert">[</span>BSI-MDR-987654</p>
     <p><strong>Manufacturer:</strong> OmniHealth Corp, Dublin, Ireland</p>
-    
-    <div style="background: #fff; border: 1px solid #b2ebf2; padding: 15px; margin: 20px 0;">
+<div style="background: #fff; border: 1px solid #b2ebf2; padding: 15px; margin: 20px 0;">
       <strong>Device:</strong> Advanced Surgical Sutures (Class IIa)<br>
       <strong>Model(s):</strong> ACS-100, ACS-200, ACS-300<br>
       <strong>Standards:</strong> ISO 13485:2016, EN ISO 14971
     </div>
-
-    <p><strong>Issued By:</strong> BSI (Notified Body 0086)<br>
+<p><strong>Issued By:</strong> BSI (Notified Body 0086)<br>
     <strong>Expiry Date:</strong> February 28, 2029</p>
   </div>
-
-  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div style="width: 45%;">
       <div style="border-top: 1px solid #000; padding-top: 5px; font-style: italic;">Certification Director</div>
     </div>
@@ -36,8 +32,7 @@ furtherDerivations: 1
       <div style="width: 80px; height: 80px; border: 2px solid #0056b3; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; color: #0056b3; font-weight: bold; text-align: center; margin-left: auto;">NOTIFIED<br>BODY<br>0086</div>
     </div>
   </div>
-
-  <div data-verify-line="med-cert" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="med-cert" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: BSI doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:certs.bsigroup.com/mdr/v/987654 <span data-bracket="end" data-for="med-cert">]</span>
   </div>

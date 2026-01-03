@@ -22,8 +22,7 @@ This sector is plagued by high-volume, low-trust disputes. **Damage Fraud** is t
       <div style="font-size: 0.7em;">Ref: <span data-bracket="start" data-for="rental">[</span>RA-99228877-XJ</div>
     </div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; color: #333; margin-bottom: 20px;">
       <div>
         <strong>Renter:</strong> JOHN JACOB DOE<br>
@@ -36,8 +35,7 @@ This sector is plagued by high-volume, low-trust disputes. **Damage Fraud** is t
         <strong>Unit #:</strong> 42-XJ (Verified)
       </div>
     </div>
-
-    <div style="border: 1px solid #eee; padding: 15px; background: #f9f9f9; border-radius: 4px; margin-bottom: 20px;">
+<div style="border: 1px solid #eee; padding: 15px; background: #f9f9f9; border-radius: 4px; margin-bottom: 20px;">
       <h4 style="margin-top: 0; color: #000; font-size: 0.85em; border-bottom: 1px solid #ddd; padding-bottom: 5px;">VERIFIED RENTAL STATUS</h4>
       <table style="width: 100%; font-size: 0.85em;">
         <tr>
@@ -54,13 +52,11 @@ This sector is plagued by high-volume, low-trust disputes. **Damage Fraud** is t
         </tr>
       </table>
     </div>
-
-    <div style="font-size: 0.75em; color: #666; font-style: italic; text-align: center;">
+<div style="font-size: 0.75em; color: #666; font-style: italic; text-align: center;">
       This record is a verified snapshot of the rental contract. Any unauthorized alteration of mileage or coverage status renders this document void.
     </div>
   </div>
-
-  <div style="padding: 20px; background: #f7f7f7; border-top: 1px solid #eee; text-align: center;">
+<div style="padding: 20px; background: #f7f7f7; border-top: 1px solid #eee; text-align: center;">
     <div data-verify-line="rental" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Rental companies don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:hertz.com/v/RA99228877 <span data-bracket="end" data-for="rental">]</span>

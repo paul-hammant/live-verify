@@ -25,8 +25,7 @@ For critical components (e.g., bolts for an airplane wing, medical implants, or 
       <div style="font-size: 0.8em; color: #888;">Report #: QC-2026-8844</div>
     </div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9em; margin-bottom: 25px;">
       <div>
         <strong>Batch Number:</strong> <span data-bracket="start" data-for="qc">[</span>LOT-9922-XJ<br>
@@ -39,8 +38,7 @@ For critical components (e.g., bolts for an airplane wing, medical implants, or 
         <strong>AQL Level:</strong> 1.0 (Critical)
       </div>
     </div>
-
-    <table style="width: 100%; border-collapse: collapse; font-size: 0.85em; margin-bottom: 25px;">
+<table style="width: 100%; border-collapse: collapse; font-size: 0.85em; margin-bottom: 25px;">
       <tr style="background: #eee; border-top: 1px solid #000; border-bottom: 1px solid #000;">
         <th style="text-align: left; padding: 10px;">Test Parameter</th>
         <th style="text-align: center; padding: 10px;">Spec Min/Max</th>
@@ -66,8 +64,7 @@ For critical components (e.g., bolts for an airplane wing, medical implants, or 
         <td style="text-align: right; padding: 8px; color: #2e7d32; font-weight: bold;">PASS</td>
       </tr>
     </table>
-
-    <div style="display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="display: flex; justify-content: space-between; align-items: flex-end;">
       <div>
         <div style="border-top: 1px solid #000; width: 180px; padding-top: 5px; font-style: italic;">Robert Miller, QC Lead</div>
         <div style="font-size: 0.7em; color: #777;">Digital Signature ID: RM-992288</div>
@@ -75,8 +72,7 @@ For critical components (e.g., bolts for an airplane wing, medical implants, or 
       <div style="width: 100px; height: 100px; border: 2px solid #2e7d32; color: #2e7d32; display: flex; align-items: center; justify-content: center; font-size: 1.5em; font-weight: bold; transform: rotate(-5deg);">QC PASS</div>
     </div>
   </div>
-
-  <div style="padding: 20px; background: #f9f9f9; border-top: 1px solid #eee; text-align: center;">
+<div style="padding: 20px; background: #f9f9f9; border-top: 1px solid #eee; text-align: center;">
     <div style="font-size: 0.75em; color: #555; margin-bottom: 10px; font-style: italic;">
       This report is a verified extract of the official lab record. Scan to verify test integrity and batch authenticity.
     </div>

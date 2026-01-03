@@ -25,8 +25,7 @@ Because the appraisal determines how much money a bank will lend, it is a primar
       <div style="font-size: 0.7em;">Ref: <span data-bracket="start" data-for="appraise">[</span>SAP-2026-8844</div>
     </div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
         <strong>Property Address:</strong><br>
@@ -39,20 +38,17 @@ Because the appraisal determines how much money a bank will lend, it is a primar
         <strong>Client:</strong> GOLIATH MORTGAGE
       </div>
     </div>
-
-    <div style="background: #f0f4f8; border: 1px solid #002366; padding: 20px; text-align: center; margin-bottom: 20px;">
+<div style="background: #f0f4f8; border: 1px solid #002366; padding: 20px; text-align: center; margin-bottom: 20px;">
       <div style="font-size: 0.8em; color: #002366; text-transform: uppercase; font-weight: bold; margin-bottom: 5px;">Indicated Opinion of Value:</div>
       <div style="font-size: 2.2em; font-weight: bold; color: #000;">$ 545,000.00</div>
       <div style="font-size: 0.8em; color: #666; margin-top: 5px;">Five Hundred Forty-Five Thousand Dollars</div>
     </div>
-
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.85em;">
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.85em;">
       <div><strong>Overall Condition:</strong> C2 (Very Good)</div>
       <div style="text-align: right;"><strong>Gross Living Area:</strong> 2,450 Sq Ft</div>
     </div>
   </div>
-
-  <div style="padding: 20px; background: #f9f9f9; border-top: 1px solid #eee; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="padding: 20px; background: #f9f9f9; border-top: 1px solid #eee; display: flex; justify-content: space-between; align-items: flex-end;">
     <div>
       <div style="border-top: 1px solid #000; width: 180px; padding-top: 5px; font-style: italic;">Robert J. Miller, Certified Appraiser</div>
       <div style="font-size: 0.7em; color: #777;">License: #TX-992288 • Exp: 2027</div>

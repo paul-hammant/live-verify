@@ -22,11 +22,9 @@ These documents are the "Green Light" for global trade. Fraud is high-stakes: a 
     </div>
     <div style="font-size: 2em;">📈</div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <h3 style="margin-top: 0; color: #333; text-align: center; text-transform: uppercase; letter-spacing: 1px;">Credit Limit Approval Notice</h3>
-
-    <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
+<div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
         <strong>Insured Policyholder:</strong><br>
         GLOBAL COMPONENTS LTD. (深圳)<br>
@@ -37,12 +35,10 @@ These documents are the "Green Light" for global trade. Fraud is high-stakes: a 
         <strong>Date:</strong> 15 MAR 2026
       </div>
     </div>
-
-    <div style="background: #f9f9f9; border: 1px solid #ddd; padding: 20px; border-radius: 4px; margin-bottom: 20px;">
+<div style="background: #f9f9f9; border: 1px solid #ddd; padding: 20px; border-radius: 4px; margin-bottom: 20px;">
       <p style="margin-top: 0;"><strong>Buyer Name:</strong> NORTH AMERICAN RETAIL CORP.</p>
       <p><strong>Buyer ID (DUNS):</strong> 99-887-7665</p>
-      
-      <div style="border-top: 1px solid #ccc; padding-top: 15px; margin-top: 15px; display: flex; justify-content: space-between; align-items: center;">
+<div style="border-top: 1px solid #ccc; padding-top: 15px; margin-top: 15px; display: flex; justify-content: space-between; align-items: center;">
         <div>
           <div style="font-size: 0.8em; color: #666; text-transform: uppercase;">Approved Credit Limit:</div>
           <div style="font-size: 1.8em; font-weight: bold; color: #003366;">$ 1,250,000.00</div>
@@ -53,13 +49,11 @@ These documents are the "Green Light" for global trade. Fraud is high-stakes: a 
         </div>
       </div>
     </div>
-
-    <div style="font-size: 0.75em; color: #666; font-style: italic; text-align: center;">
+<div style="font-size: 0.75em; color: #666; font-style: italic; text-align: center;">
       "Coverage is subject to the terms and conditions of the Master Policy. Verification confirms that this specific limit is currently authorized in the Allianz Trade system."
     </div>
   </div>
-
-  <div style="padding: 20px; background: #f5f5f5; border-top: 1px solid #000; text-align: center;">
+<div style="padding: 20px; background: #f5f5f5; border-top: 1px solid #000; text-align: center;">
     <div data-verify-line="credit" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Credit insurers don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:allianz-trade.com/v/AZ99228877 <span data-bracket="end" data-for="credit">]</span>

@@ -21,8 +21,7 @@ Stylists are required by law to post their license at their station. Some people
     <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">STATE BOARD OF COSMETOLOGY</h2>
     <div style="font-size: 0.8em; opacity: 0.8;">OFFICIAL PRACTITIONER LICENSE</div>
   </div>
-
-  <div style="padding: 25px; display: flex;">
+<div style="padding: 25px; display: flex;">
     <div style="width: 100px; margin-right: 20px;">
       <div style="width: 100px; height: 125px; background: #eee; border: 1px solid #ccc; display: flex; align-items: center; justify-content: center; color: #777; border-radius: 4px;">[PHOTO ID]</div>
     </div>
@@ -36,8 +35,7 @@ Stylists are required by law to post their license at their station. Some people
       </div>
     </div>
   </div>
-
-  <div style="padding: 0 25px 25px 25px;">
+<div style="padding: 0 25px 25px 25px;">
     <p style="font-size: 0.8em; color: #555; font-style: italic; text-align: center; border-top: 1px solid #eee; padding-top: 10px;">
       This license must be displayed in a conspicuous location at the licensee's primary workstation.
     </p>

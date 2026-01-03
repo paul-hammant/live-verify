@@ -24,11 +24,9 @@ Cargo theft via "Fictitious Pickup" is a huge problem. Thieves use forged paper 
     <div style="font-weight: bold; font-size: 1.2em;">EXPEDITORS INTERNATIONAL</div>
     <div style="font-size: 0.8em; text-align: right;">Ref #: <span data-bracket="start" data-for="cargo">[</span>DO-2026-992288</div>
   </div>
-
-  <div style="padding: 15px; font-size: 0.85em;">
+<div style="padding: 15px; font-size: 0.85em;">
     <h2 style="text-align: center; margin: 0 0 15px 0; font-size: 1.3em; text-decoration: underline;">DELIVERY ORDER</h2>
-
-    <div style="display: flex; border-bottom: 1px solid #000; padding-bottom: 10px; margin-bottom: 15px;">
+<div style="display: flex; border-bottom: 1px solid #000; padding-bottom: 10px; margin-bottom: 15px;">
       <div style="width: 50%; border-right: 1px solid #000; padding-right: 10px;">
         <strong>To: Terminal Operator</strong><br>
         Port of Long Beach, Pier J<br>
@@ -40,15 +38,13 @@ Cargo theft via "Fictitious Pickup" is a huge problem. Thieves use forged paper 
         Ontario, CA
       </div>
     </div>
-
-    <div style="background: #f9f9f9; padding: 10px; border: 1px solid #ccc; margin-bottom: 15px;">
+<div style="background: #f9f9f9; padding: 10px; border: 1px solid #ccc; margin-bottom: 15px;">
       <p>Please deliver the following goods to the bearer of this order:</p>
       <strong>Container #:</strong> MSKU-998877-6<br>
       <strong>B/L No:</strong> MAE-44221100<br>
       <strong>Cargo:</strong> 42 Pallets: Consumer Electronics
     </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="display: flex; justify-content: space-between; align-items: flex-end;">
       <div>
         <strong>Carrier / Broker Signature:</strong><br>
         <em>Jane Q. Broker</em><br>
@@ -58,8 +54,7 @@ Cargo theft via "Fictitious Pickup" is a huge problem. Thieves use forged paper 
         <div style="border: 2px solid #002d62; display: inline-block; padding: 5px; font-weight: bold; color: #002d62;">FREIGHT PREPAID<br>CUSTOMS CLEARED</div>
       </div>
     </div>
-
-    <div data-verify-line="cargo" style="border-top: 1px dashed #999; margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #555; text-align: center;"
+<div data-verify-line="cargo" style="border-top: 1px dashed #999; margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #555; text-align: center;"
       title="Demo only: Broker/Carrier doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:expeditors.com/do/v/992288 <span data-bracket="end" data-for="cargo">]</span>
     </div>

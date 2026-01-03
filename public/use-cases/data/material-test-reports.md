@@ -14,8 +14,7 @@ furtherDerivations: 1
     CERTIFIED MATERIAL TEST REPORT (CMTR)<br>
     ---------------------------------------
   </div>
-
-  <div style="font-size: 0.85em; line-height: 1.4;">
+<div style="font-size: 0.85em; line-height: 1.4;">
     <div style="display: flex; justify-content: space-between;">
       <div>
         <strong>Customer:</strong> Apex Structural Engineering<br>
@@ -26,14 +25,12 @@ furtherDerivations: 1
         <strong>Date:</strong> 15 MAR 2026
       </div>
     </div>
-
-    <div style="margin: 15px 0; border: 1px solid #000; padding: 10px; background: #f9f9f9;">
+<div style="margin: 15px 0; border: 1px solid #000; padding: 10px; background: #f9f9f9;">
       <strong>MATERIAL SPECIFICATION: ASTM A36 / ASME SA36</strong><br>
       Product: Structural Steel I-Beam (12" x 24')<br>
       Quantity: 120 Pieces
     </div>
-
-    <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px; font-size: 0.9em;">
+<table style="width: 100%; border-collapse: collapse; margin-bottom: 10px; font-size: 0.9em;">
       <tr style="border-bottom: 1px solid #000; font-weight: bold;">
         <th style="text-align: left;">Element / Test</th>
         <th style="text-align: right;">Result</th>
@@ -50,12 +47,10 @@ furtherDerivations: 1
         <td style="text-align: right;">36,000 (Min)</td>
       </tr>
     </table>
-
-    <div style="margin-top: 20px; font-size: 0.8em; font-style: italic; color: #555;">
+<div style="margin-top: 20px; font-size: 0.8em; font-style: italic; color: #555;">
       We hereby certify that the material has been tested and found to be in compliance with the above listed specifications.
     </div>
-
-    <div data-verify-line="mtr" style="border-top: 1px dashed #999; margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #555; text-align: center;"
+<div data-verify-line="mtr" style="border-top: 1px dashed #999; margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #555; text-align: center;"
       title="Demo only: Steel mill doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:sheffield-steel.co.uk/mtr/v/HEAT992288 <span data-bracket="end" data-for="mtr">]</span>
     </div>

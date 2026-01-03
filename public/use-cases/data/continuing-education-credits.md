@@ -22,8 +22,7 @@ Because these credits are mandatory, some busy professionals "Fake" the certific
       <div style="font-size: 1.4em; font-weight: bold; letter-spacing: 1px;">CERTIFICATE OF ATTENDANCE</div>
       <div style="font-size: 0.9em; font-style: italic;">Continuing Legal Education (CLE)</div>
     </div>
-
-    <div style="margin: 30px 0;">
+<div style="margin: 30px 0;">
       <div style="font-size: 1.1em;">This is to certify that</div>
       <div style="font-size: 1.8em; font-weight: bold; margin: 10px 0; color: #1a237e;"><span data-bracket="start" data-for="cle">[</span>SAUL GOODMAN, ESQ.</div>
       <div style="font-size: 1.1em;">has successfully completed</div>
@@ -31,14 +30,12 @@ Because these credits are mandatory, some busy professionals "Fake" the certific
       <div style="font-size: 1.1em;">presented by</div>
       <div style="font-size: 1.4em; font-weight: bold; margin: 10px 0;">ABA LEGAL ACADEMY</div>
     </div>
-
-    <div style="margin: 30px 0; font-size: 0.95em; background: #f9f9f9; padding: 15px;">
+<div style="margin: 30px 0; font-size: 0.95em; background: #f9f9f9; padding: 15px;">
       <strong>Credit Hours:</strong> 2.0 Ethics / 1.0 General<br>
       <strong>Date:</strong> March 15, 2026<br>
       <strong>Course ID:</strong> ABA-2026-9922
     </div>
-
-    <div data-verify-line="cle" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="cle" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Provider doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:americanbar.org/cle/v/ABA9922 <span data-bracket="end" data-for="cle">]</span>
     </div>

@@ -27,8 +27,7 @@ Beyond the airport, passports are used as the "Primary ID" for:
     </div>
     <div style="font-size: 1.5em;">🇬🇧</div>
   </div>
-
-  <div style="padding: 20px; display: flex;">
+<div style="padding: 20px; display: flex;">
     <div style="width: 120px; margin-right: 20px;">
       <div style="width: 120px; height: 150px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #777; font-size: 0.7em; text-align: center;">[AUTHORITATIVE<br>DMV/PASSPORT<br>PHOTO]</div>
     </div>
@@ -43,8 +42,7 @@ Beyond the airport, passports are used as the "Primary ID" for:
       </div>
     </div>
   </div>
-
-  <div style="padding: 0 20px 20px 20px;">
+<div style="padding: 0 20px 20px 20px;">
     <div style="font-family: 'Courier New', monospace; font-size: 0.9em; background: #f5f5f5; padding: 10px; border: 1px solid #ddd; letter-spacing: 1px; margin-bottom: 10px;">
       P&lt;GBRDOE&lt;&lt;JOHN&lt;JACOB&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;<br>
       9922887762GBR8505151M3103158&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;06

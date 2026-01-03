@@ -24,27 +24,22 @@ Fraud is common: scammers often create fake "Global Entry" PDFs to trick employe
     </div>
     <div style="width: 40px; height: 40px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #002d62; font-weight: bold; font-size: 0.7em; text-align: center;">CBP</div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="text-align: center; margin-bottom: 20px;">
       <h2 style="margin: 0; font-size: 1.3em;">MEMBERSHIP CONFIRMATION</h2>
       <div style="font-size: 1.5em; font-weight: bold; margin-top: 5px; color: #002d62;">PASSID: <span data-bracket="start" data-for="ttp">[</span>998877665</div>
     </div>
-
-    <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
       <p><strong>Member Name:</strong> JOHN JACOB DOE<br>
       <strong>Program:</strong> Global Entry / TSA PreCheck&reg;</p>
-
-      <div style="background: #f0f4f8; border: 1px solid #d1d9e6; padding: 15px; margin: 15px 0;">
+<div style="background: #f0f4f8; border: 1px solid #d1d9e6; padding: 15px; margin: 15px 0;">
         <p><strong>Membership Status:</strong> ACTIVE / APPROVED<br>
         <strong>Expiration Date:</strong> May 15, 2031</p>
         <p><strong>Known Traveler Number (KTN):</strong> 998877665</p>
       </div>
-
-      <p style="font-size: 0.85em; color: #555;">This document confirms your enrollment in the U.S. Customs and Border Protection (CBP) Trusted Traveler Programs.</p>
+<p style="font-size: 0.85em; color: #555;">This document confirms your enrollment in the U.S. Customs and Border Protection (CBP) Trusted Traveler Programs.</p>
     </div>
-
-    <div data-verify-line="ttp" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="ttp" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: CBP doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:ttp.cbp.dhs.gov/v/998877665 <span data-bracket="end" data-for="ttp">]</span>
     </div>

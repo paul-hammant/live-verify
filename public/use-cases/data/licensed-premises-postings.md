@@ -21,24 +21,19 @@ OCR-to-hash allows a patron, neighbor, or police officer to scan the posting to 
     <div style="font-weight: bold; font-size: 1.2em; text-transform: uppercase;">State of California</div>
     <div style="font-size: 1em; letter-spacing: 1px;">DEPARTMENT OF ALCOHOLIC BEVERAGE CONTROL</div>
   </div>
-
-  <div style="font-size: 0.9em; line-height: 1.6;">
+<div style="font-size: 0.9em; line-height: 1.6;">
     <p><strong>License Number:</strong> <span data-bracket="start" data-for="liquor">[</span>42-992288 (Type 47)<br>
     <strong>Primary Owner:</strong> SUNSET HOSPITALITY GROUP LLC<br>
     <strong>DBA:</strong> THE NEON LOUNGE</p>
-
-    <div style="margin: 15px 0; padding: 15px; border: 1px solid #ccc; background: #f9f9f9; text-align: center;">
+<div style="margin: 15px 0; padding: 15px; border: 1px solid #ccc; background: #f9f9f9; text-align: center;">
       <div style="font-weight: bold; text-decoration: underline; margin-bottom: 5px;">ON-SALE GENERAL</div>
       EATING PLACE (FULL SPIRITS / BEER / WINE)
     </div>
-
-    <p><strong>Premises Address:</strong> 123 SUNSET BLVD, LOS ANGELES, CA<br>
+<p><strong>Premises Address:</strong> 123 SUNSET BLVD, LOS ANGELES, CA<br>
     <strong>Conditions:</strong> No amplified music after 11 PM. No service after 2 AM.</p>
-    
-    <p><strong>Expires:</strong> MARCH 15, 2027</p>
+<p><strong>Expires:</strong> MARCH 15, 2027</p>
   </div>
-
-  <div style="margin-top: 30px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 30px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div style="width: 100px; height: 100px; border: 2px solid #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; text-align: center; opacity: 0.5;">OFFICIAL<br>STATE SEAL</div>
     <div data-verify-line="liquor" style="flex-grow: 1; margin-left: 20px; border-top: 1px dashed #999; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
         title="Demo only: ABC Boards don't yet offer verification&#10;endpoints, so this is illustrative">

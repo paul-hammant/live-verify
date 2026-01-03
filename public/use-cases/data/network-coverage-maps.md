@@ -19,23 +19,19 @@ A **Verified Coverage Guarantee** is a specific, timestamped attestation by the 
     <h2 style="margin: 0;">VERIZONIA WIRELESS</h2>
     <div style="font-size: 0.9em; color: #555;">Coverage Certification</div>
   </div>
-
-  <div style="font-family: 'Courier New', monospace; font-size: 0.95em;">
+<div style="font-family: 'Courier New', monospace; font-size: 0.95em;">
     <p><strong>Customer:</strong> Enterprise Logistics Corp</p>
     <p><strong>Location:</strong> <span data-bracket="start" data-for="net">[</span>Site B, 4500 Warehouse Dr, Austin, TX</p>
-    
-    <p><strong>Guaranteed Service Level:</strong><br>
+<p><strong>Guaranteed Service Level:</strong><br>
     Band: 5G Ultra Wideband (mmWave)<br>
     Min Downlink: 450 Mbps<br>
     Signal Strength: -85 dBm or better<br>
     Date Verified: 2026-01-15</p>
-
-    <div style="border: 1px solid #999; padding: 10px; margin: 15px 0; text-align: center; background: #f9f9f9;">
+<div style="border: 1px solid #999; padding: 10px; margin: 15px 0; text-align: center; background: #f9f9f9;">
       [Coverage Map Visualization Placeholder]<br>
       (Coordinates: 30.2672° N, 97.7431° W)
     </div>
-
-    <div data-verify-line="net" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; text-align: center; font-size: 0.85em;">
+<div data-verify-line="net" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; text-align: center; font-size: 0.85em;">
       verify:verizonia.com/sla/v/map882 <span data-bracket="end" data-for="net">]</span>
     </div>
   </div>

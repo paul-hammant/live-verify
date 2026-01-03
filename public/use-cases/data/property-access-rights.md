@@ -42,19 +42,16 @@ Property access rights verification provides **on-demand proof** that a person h
     <p><strong>Title Number:</strong> <span data-bracket="start" data-for="propertyaccessrights">[</span>BS123456<br>
     <strong>Edition Date:</strong> 15 March 2022<br>
     <strong>This copy issued:</strong> 15 February 2026</p>
-
-    <div style="background: #f0f4f8; padding: 15px; margin: 15px 0; border-left: 3px solid #003366;">
+<div style="background: #f0f4f8; padding: 15px; margin: 15px 0; border-left: 3px solid #003366;">
       <p style="margin: 0;"><strong>Property Address:</strong></p>
       <p style="margin: 5px 0 0;">14 Maple Avenue, Bristol BS8 4TQ</p>
       <p style="margin: 15px 0 0;"><strong>Registered Owner(s):</strong></p>
       <p style="margin: 5px 0 0;">JAMES SMITH</p>
       <p style="margin: 5px 0 0;">Registered: 15 March 2022</p>
     </div>
-
-    <p style="font-size: 0.85em; color: #666;">This is an official copy issued by HM Land Registry.<br>
+<p style="font-size: 0.85em; color: #666;">This is an official copy issued by HM Land Registry.<br>
     Crown Copyright.</p>
-
-    <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
+<div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="propertyaccessrights" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
         verify:gov.uk/land-registry/titles/BS123456-2026-0215 <span data-bracket="end" data-for="propertyaccessrights">]</span>
@@ -81,19 +78,16 @@ Property access rights verification provides **on-demand proof** that a person h
     <strong>Landlord:</strong> Northern Properties Ltd<br>
     <strong>Tenant:</strong> Sarah Johnson<br>
     <strong>Tenancy Start:</strong> 1 September 2025</p>
-
-    <div style="background: #f5fff5; padding: 15px; margin: 15px 0; border: 1px solid #228B22;">
+<div style="background: #f5fff5; padding: 15px; margin: 15px 0; border: 1px solid #228B22;">
       <p style="margin: 0;"><strong>Tenancy Details:</strong></p>
       <p style="margin: 10px 0 0;">Type: Assured Shorthold Tenancy</p>
       <p style="margin: 5px 0 0;">Term: 12 months (renewable)</p>
       <p style="margin: 5px 0 0;">Current status: Active</p>
       <p style="margin: 5px 0 0;">End date: 31 August 2026</p>
     </div>
-
-    <p style="font-size: 0.85em; color: #666;">Managing Agent: CityLet Property Management<br>
+<p style="font-size: 0.85em; color: #666;">Managing Agent: CityLet Property Management<br>
     Deposit protected: Yes (TDS ref: 12345678)</p>
-
-    <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
+<div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="propertyaccessrights" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
         verify:citylet-mgmt.co.uk/tenancies/SJ-27VR-2025 <span data-bracket="end" data-for="propertyaccessrights">]</span>
@@ -119,18 +113,15 @@ Property access rights verification provides **on-demand proof** that a person h
     <p><strong>Property:</strong> The Garden Cottage, 8 Mill Lane, Bath BA1 5TT<br>
     <strong>Guest:</strong> Michael Chen<br>
     <strong>Booking Reference:</strong> BK-2026-44721</p>
-
-    <div style="background: #fff8f0; padding: 15px; margin: 15px 0; border: 1px solid #ff6600;">
+<div style="background: #fff8f0; padding: 15px; margin: 15px 0; border: 1px solid #ff6600;">
       <p style="margin: 0;"><strong>Stay Details:</strong></p>
       <p style="margin: 10px 0 0;">Check-in: February 15, 2026, 15:00</p>
       <p style="margin: 5px 0 0;">Check-out: February 18, 2026, 10:00</p>
       <p style="margin: 5px 0 0;">Guests authorized: 2 adults</p>
     </div>
-
-    <p style="font-size: 0.85em; color: #666;">Property owner: J. Williams<br>
+<p style="font-size: 0.85em; color: #666;">Property owner: J. Williams<br>
     Booked via: Direct / Owner website</p>
-
-    <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
+<div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="propertyaccessrights" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
         verify:gardencottagebath.co.uk/bookings/BK-2026-44721 <span data-bracket="end" data-for="propertyaccessrights">]</span>
@@ -155,18 +146,15 @@ Property access rights verification provides **on-demand proof** that a person h
     <p><strong>Property:</strong> 42 Oak Street, Leeds LS1 4HT<br>
     <strong>Owner:</strong> Patricia Green<br>
     <strong>Authorized Keyholder:</strong> David Green (brother)</p>
-
-    <div style="background: #f5f5f5; padding: 15px; margin: 15px 0; border-left: 3px solid #666;">
+<div style="background: #f5f5f5; padding: 15px; margin: 15px 0; border-left: 3px solid #666;">
       <p style="margin: 0;"><strong>Authorization:</strong></p>
       <p style="margin: 10px 0 0;">Purpose: General property access (feeding cat, collecting mail)</p>
       <p style="margin: 5px 0 0;">Valid from: January 1, 2026</p>
       <p style="margin: 5px 0 0;">Valid until: December 31, 2026 (or until revoked)</p>
     </div>
-
-    <p style="font-size: 0.85em; color: #666;">Issued by property owner<br>
+<p style="font-size: 0.85em; color: #666;">Issued by property owner<br>
     Can be revoked at any time</p>
-
-    <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
+<div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="propertyaccessrights" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
         verify:securekey-auth.co.uk/keyholders/PG-42OS-DG <span data-bracket="end" data-for="propertyaccessrights">]</span>

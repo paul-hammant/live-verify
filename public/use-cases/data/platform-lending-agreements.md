@@ -25,8 +25,7 @@ These digital agreements are the "Lien on Future Revenue." Fraud is rampant in t
       <div style="font-size: 0.7em; opacity: 0.9;">Ref: <span data-bracket="start" data-for="platform">[</span>SC-2026-992288</div>
     </div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div style="font-size: 0.9em; line-height: 1.5; color: #333;">
         <strong>Merchant:</strong> THE SPICY TACO JOINT LLC<br>
@@ -38,8 +37,7 @@ These digital agreements are the "Lien on Future Revenue." Fraud is rampant in t
         <div style="font-size: 1.8em; font-weight: bold; color: #95bf47;">$ 50,000.00</div>
       </div>
     </div>
-
-    <div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; border-radius: 4px; margin-bottom: 20px;">
+<div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; border-radius: 4px; margin-bottom: 20px;">
       <h4 style="margin-top: 0; color: #5e8e3e; font-size: 0.85em; text-transform: uppercase; border-bottom: 1px solid #ddd; padding-bottom: 5px;">VERIFIED REPAYMENT TERMS</h4>
       <table style="width: 100%; font-size: 0.9em; line-height: 1.6;">
         <tr>
@@ -56,13 +54,11 @@ These digital agreements are the "Lien on Future Revenue." Fraud is rampant in t
         </tr>
       </table>
     </div>
-
-    <div style="font-size: 0.75em; color: #666; font-style: italic; text-align: center;">
+<div style="font-size: 0.75em; color: #666; font-style: italic; text-align: center;">
       "The Merchant has sold a portion of its future receivables to Shopify Capital. This agreement creates a legal security interest under UCC Article 9."
     </div>
   </div>
-
-  <div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #999; text-align: center;">
+<div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #999; text-align: center;">
     <div data-verify-line="platform" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Shopify doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:shopify.com/v/SC99228877 <span data-bracket="end" data-for="platform">]</span>

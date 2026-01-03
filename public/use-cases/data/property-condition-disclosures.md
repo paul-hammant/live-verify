@@ -22,8 +22,7 @@ These documents are the primary evidence in post-sale lawsuits. Fraud is high-fr
     </div>
     <div style="font-size: 1.5em;">🏡</div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; border-bottom: 1px solid #eee; padding-bottom: 15px; margin-bottom: 20px;">
       <div>
         <strong>Property Address:</strong><br>
@@ -35,8 +34,7 @@ These documents are the primary evidence in post-sale lawsuits. Fraud is high-fr
         <strong>Status:</strong> COMPLETED
       </div>
     </div>
-
-    <div style="font-size: 0.85em; color: #333;">
+<div style="font-size: 0.85em; color: #333;">
       <h4 style="margin-top: 0; color: #004d40; border-bottom: 1px solid #ccc; padding-bottom: 5px;">KNOWN MATERIAL DEFECTS</h4>
       <table style="width: 100%; margin: 10px 0;">
         <tr>
@@ -57,13 +55,11 @@ These documents are the primary evidence in post-sale lawsuits. Fraud is high-fr
         </tr>
       </table>
     </div>
-
-    <div style="margin-top: 25px; padding: 15px; background: #f9f9f9; border: 1px solid #eee; font-size: 0.8em; font-style: italic; color: #666;">
+<div style="margin-top: 25px; padding: 15px; background: #f9f9f9; border: 1px solid #eee; font-size: 0.8em; font-style: italic; color: #666;">
       "Seller certifies that the information herein is true and correct to the best of Seller's knowledge as of the date signed. Verification protects against unauthorized alteration of this disclosure."
     </div>
   </div>
-
-  <div style="padding: 20px; background: #fff; border-top: 1px dashed #999; text-align: center;">
+<div style="padding: 20px; background: #fff; border-top: 1px dashed #999; text-align: center;">
     <div data-verify-line="disclose" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #004d40; font-weight: bold;"
       title="Demo only: Real estate boards don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:springfield-realtors.org/v/SMITH992288 <span data-bracket="end" data-for="disclose">]</span>

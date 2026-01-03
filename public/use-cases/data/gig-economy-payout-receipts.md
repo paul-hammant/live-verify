@@ -21,8 +21,7 @@ Fraud is common: drivers often edit a $400 payout to read $4,000 to trick a land
     <div style="font-weight: bold; font-size: 1.4em;">Uber</div>
     <div style="font-size: 0.8em; opacity: 0.8;">Weekly Earnings Statement</div>
   </div>
-
-  <div style="padding: 30px;">
+<div style="padding: 30px;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px;">
       <div>
         <div style="font-size: 1.1em; font-weight: bold; color: #333;"><span data-bracket="start" data-for="gig">[</span>SARAH JANE SMITH</div>
@@ -34,8 +33,7 @@ Fraud is common: drivers often edit a $400 payout to read $4,000 to trick a land
         <div style="font-size: 0.7em; font-weight: bold; text-transform: uppercase;">Net Payout</div>
       </div>
     </div>
-
-    <table style="width: 100%; border-collapse: collapse; font-size: 0.9em; color: #333;">
+<table style="width: 100%; border-collapse: collapse; font-size: 0.9em; color: #333;">
       <tr style="border-bottom: 1px solid #eee;">
         <td style="padding: 8px 0;">Trip Earnings (42 Trips)</td>
         <td style="text-align: right;">$ 950.00</td>
@@ -53,12 +51,10 @@ Fraud is common: drivers often edit a $400 payout to read $4,000 to trick a land
         <td style="text-align: right; color: #666;">-$ 125.00</td>
       </tr>
     </table>
-
-    <div style="margin-top: 25px; padding: 10px; background: #f9f9f9; border: 1px solid #eee; font-size: 0.8em; color: #555; font-style: italic; text-align: center;">
+<div style="margin-top: 25px; padding: 10px; background: #f9f9f9; border: 1px solid #eee; font-size: 0.8em; color: #555; font-style: italic; text-align: center;">
       This statement is a verified record of earnings for tax and income verification purposes.
     </div>
-
-    <div data-verify-line="gig" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="gig" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Uber doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:uber.com/payouts/v/99228877 <span data-bracket="end" data-for="gig">]</span>
     </div>

@@ -22,26 +22,22 @@ These letters are the "Seal of Solvency." Fraud is rampant: people create fake "
     </div>
     <div style="width: 60px; height: 60px; background: #eee; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.6em; text-align: center;">EFX<br>LOGGED</div>
   </div>
-
-  <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <p>Date: March 15, 2026</p>
     <p><strong>Subject:</strong> <span data-bracket="start" data-for="verify">[</span><strong>JOHN JACOB DOE</strong><br>
     <strong>SSN (Last 4):</strong> XXX-XX-9922</p>
-
-    <div style="background: #f9f9f9; padding: 20px; border: 1px solid #ddd; margin: 20px 0;">
+<div style="background: #f9f9f9; padding: 20px; border: 1px solid #ddd; margin: 20px 0;">
       <h4 style="margin-top: 0; color: #003366; border-bottom: 1px solid #ccc; padding-bottom: 5px;">VERIFIED EMPLOYMENT DATA</h4>
       <p><strong>Employer:</strong> GLOBAL LOGISTICS CORP.<br>
       <strong>Employment Status:</strong> ACTIVE / FULL-TIME<br>
       <strong>Position:</strong> SENIOR ARCHITECT<br>
       <strong>Annual Base Salary:</strong> $ 145,000.00</p>
     </div>
-
-    <p style="font-size: 0.85em; font-style: italic; color: #666;">
+<p style="font-size: 0.85em; font-style: italic; color: #666;">
       This verification is based on data provided directly by the employer's payroll department.
     </p>
   </div>
-
-  <div style="margin-top: 40px; border-top: 1px dashed #999; padding-top: 15px; text-align: center;">
+<div style="margin-top: 40px; border-top: 1px dashed #999; padding-top: 15px; text-align: center;">
     <div data-verify-line="verify" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: Verifiers don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:theworknumber.com/v/DOE-9922-XJ <span data-bracket="end" data-for="verify">]</span>

@@ -26,24 +26,18 @@ These pages are the "Lifeblood of Title." Fraud is high-stakes: criminals create
       <strong>PAGES:</strong> 4 • <strong>FEE:</strong> $ 42.00
     </div>
   </div>
-
-  <div style="padding: 30px; font-size: 0.95em; line-height: 1.6; color: #000; text-align: justify;">
+<div style="padding: 30px; font-size: 0.95em; line-height: 1.6; color: #000; text-align: justify;">
     <h3 style="text-align: center; text-decoration: underline; margin-bottom: 20px;">ABSTRACT OF RECORDED INSTRUMENT</h3>
-    
-    <p>This certifies that the following document has been accepted for permanent record:</p>
-    
-    <div style="background: #f9f9f9; padding: 15px; border: 1px solid #ccc; margin: 20px 0;">
+<p>This certifies that the following document has been accepted for permanent record:</p>
+<div style="background: #f9f9f9; padding: 15px; border: 1px solid #ccc; margin: 20px 0;">
       <p><strong>Grantor:</strong> ROBERT & MARY SMITH TRUST<br>
       <strong>Grantee:</strong> SARAH JANE DOE, A SINGLE PERSON</p>
-      
-      <p><strong>Property Address:</strong> 123 MAPLE ST, CHICAGO, IL 60601<br>
+<p><strong>Property Address:</strong> 123 MAPLE ST, CHICAGO, IL 60601<br>
       <strong>Legal Description:</strong> Lot 42 in Block 7 of Springfield Heights...</p>
     </div>
-
-    <p style="font-size: 0.8em; font-style: italic;">"The recording of this document constitutes constructive notice to all subsequent purchasers and encumbrancers of the interest herein conveyed."</p>
+<p style="font-size: 0.8em; font-style: italic;">"The recording of this document constitutes constructive notice to all subsequent purchasers and encumbrancers of the interest herein conveyed."</p>
   </div>
-
-  <div style="padding: 20px; background: #fffbe6; border-top: 1px solid #000; text-align: center;">
+<div style="padding: 20px; background: #fffbe6; border-top: 1px solid #000; text-align: center;">
     <div data-verify-line="record" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: County recorders don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:cookcountyclerk.com/v/2026R992288 <span data-bracket="end" data-for="record">]</span>

@@ -19,8 +19,7 @@ These documents are the "Financial Lifeline" for injured parties. Fraud is high-
     <div style="font-weight: bold; font-size: 1.5em; letter-spacing: 1px;">PACIFIC LIFE & ANNUITY</div>
     <div style="font-size: 0.8em; opacity: 0.9; text-transform: uppercase; margin-top: 5px;">Structured Settlement Annuity Contract</div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
         <strong>Annuitant (Claimant):</strong><br>
@@ -33,8 +32,7 @@ These documents are the "Financial Lifeline" for injured parties. Fraud is high-
         <strong>Effective Date:</strong> 15 MAR 2026
       </div>
     </div>
-
-    <div style="background: #f9f9f9; padding: 20px; border: 1px solid #ccc; margin-bottom: 20px;">
+<div style="background: #f9f9f9; padding: 20px; border: 1px solid #ccc; margin-bottom: 20px;">
       <h4 style="margin-top: 0; color: #003366; border-bottom: 1px solid #ddd; padding-bottom: 5px;">VERIFIED PAYMENT SCHEDULE</h4>
       <table style="width: 100%; font-size: 0.95em;">
         <tr>
@@ -55,13 +53,11 @@ These documents are the "Financial Lifeline" for injured parties. Fraud is high-
         </tr>
       </table>
     </div>
-
-    <div style="font-size: 0.8em; line-height: 1.4; color: #555; font-style: italic;">
+<div style="font-size: 0.8em; line-height: 1.4; color: #555; font-style: italic;">
       <strong>Transfer Restriction:</strong> This annuity is non-assignable and non-transferable without a verified Court Order pursuant to State Structured Settlement Protection Acts.
     </div>
   </div>
-
-  <div style="padding: 20px; background: #fff; border-top: 1px dashed #999; text-align: center;">
+<div style="padding: 20px; background: #fff; border-top: 1px dashed #999; text-align: center;">
     <div data-verify-line="settle" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: Life insurers don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:pacificlife.com/v/PLA99228877 <span data-bracket="end" data-for="settle">]</span>

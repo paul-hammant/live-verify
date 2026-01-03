@@ -14,25 +14,20 @@ furtherDerivations: 1
     Transaction Confirmation Receipt<br>
     --------------------------------
   </div>
-
-  <div style="font-size: 0.9em; line-height: 1.4;">
+<div style="font-size: 0.9em; line-height: 1.4;">
     <p><strong>Transaction ID:</strong> <span data-bracket="start" data-for="m-pesa">[</span>RKJ42BC992</p>
     <p><strong>Confirmed:</strong> March 15, 2026 at 14:22:01</p>
-    
-    <div style="background: #eee; padding: 10px; margin: 10px 0;">
+<div style="background: #eee; padding: 10px; margin: 10px 0;">
       <strong>SENT TO:</strong> SAMUEL OKORO<br>
       <strong>PHONE:</strong> +254 712 345 678
     </div>
-
-    <p><strong>Amount:</strong> Ksh 12,500.00<br>
+<p><strong>Amount:</strong> Ksh 12,500.00<br>
     <strong>Fee:</strong> Ksh 112.00<br>
     <strong>Balance:</strong> Ksh 42,280.00</p>
-
-    <div style="margin-top: 15px; font-size: 0.8em; font-style: italic;">
+<div style="margin-top: 15px; font-size: 0.8em; font-style: italic;">
       Keep this receipt for your records. Do not share your PIN with anyone.
     </div>
-
-    <div data-verify-line="m-pesa" style="border-top: 1px dashed #999; margin-top: 15px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="m-pesa" style="border-top: 1px dashed #999; margin-top: 15px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Safaricom doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:safaricom.co.ke/mpesa/v/RKJ42BC992 <span data-bracket="end" data-for="m-pesa">]</span>
     </div>

@@ -22,8 +22,7 @@ These reports are the "Final Settlement" for a vehicle. Fraud is high-volume: cl
     </div>
     <div style="width: 50px; height: 50px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #333; font-weight: bold; font-size: 0.7em;">CCC</div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
         <strong>Claimant:</strong> <span data-bracket="start" data-for="total-loss">[</span>SARAH JANE DOE<br>
@@ -36,20 +35,17 @@ These reports are the "Final Settlement" for a vehicle. Fraud is high-volume: cl
         <strong>Mileage:</strong> 12,450 (Verified)
       </div>
     </div>
-
-    <div style="background: #fdfdfd; border: 1px solid #ddd; padding: 20px; text-align: center; margin-bottom: 20px;">
+<div style="background: #fdfdfd; border: 1px solid #ddd; padding: 20px; text-align: center; margin-bottom: 20px;">
       <div style="font-size: 0.8em; color: #666; text-transform: uppercase; font-weight: bold;">Actual Cash Value (ACV):</div>
       <div style="font-size: 2.2em; font-weight: bold; color: #000;">$ 28,450.00</div>
       <div style="font-size: 0.8em; color: #ce9e00; font-weight: bold; margin-top: 5px;">VERIFIED MARKET SNAPSHOT</div>
     </div>
-
-    <div style="font-size: 0.8em; color: #333; line-height: 1.4;">
+<div style="font-size: 0.8em; color: #333; line-height: 1.4;">
       <strong>Comparables:</strong> 3 matching vehicles found in 50-mile radius (Avg: $28,600).<br>
       <strong>Adjustments:</strong> - $150 (Tire Wear), + $0 (Equipment).
     </div>
   </div>
-
-  <div style="padding: 20px; background: #f5f5f5; border-top: 1px solid #000; text-align: center;">
+<div style="padding: 20px; background: #f5f5f5; border-top: 1px solid #000; text-align: center;">
     <div data-verify-line="total-loss" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: Valuation firms don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:cccis.com/v/VAL99228877 <span data-bracket="end" data-for="total-loss">]</span>

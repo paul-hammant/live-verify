@@ -20,30 +20,23 @@ In the "Robo-Signing" scandal of 2008, banks forged millions of affidavits to fo
   <div style="text-align: center; margin-bottom: 20px;">
     <h3 style="text-decoration: underline; text-transform: uppercase;">AFFIDAVIT OF IDENTITY</h3>
   </div>
-
-  <div style="font-size: 0.95em; line-height: 1.6; text-align: justify;">
+<div style="font-size: 0.95em; line-height: 1.6; text-align: justify;">
     <p>STATE OF NEW YORK )<br>
     COUNTY OF KINGS ) ss.:</p>
-
-    <p>I, <span data-bracket="start" data-for="affidavit">[</span><strong>JANE DOE</strong>, being duly sworn, deposes and says:</p>
-
-    <p>1. I reside at 123 Maple Street, Brooklyn, NY 11201.</p>
+<p>I, <span data-bracket="start" data-for="affidavit">[</span><strong>JANE DOE</strong>, being duly sworn, deposes and says:</p>
+<p>1. I reside at 123 Maple Street, Brooklyn, NY 11201.</p>
     <p>2. I am the identical person named as the grantee in the deed recorded in Liber 1234, Page 567.</p>
     <p>3. I make this affidavit to induce Title Insurance Co. to issue a policy free of exception.</p>
-
-    <div style="margin-top: 30px; margin-bottom: 30px;">
+<div style="margin-top: 30px; margin-bottom: 30px;">
       <div style="border-bottom: 1px solid #000; width: 250px; margin-bottom: 5px;"></div>
       JANE DOE (Affiant)
     </div>
-
-    <p>Sworn to before me this 15th day of March, 2026.</p>
-
-    <div style="margin-top: 20px;">
+<p>Sworn to before me this 15th day of March, 2026.</p>
+<div style="margin-top: 20px;">
       <div style="border-bottom: 1px solid #000; width: 250px; margin-bottom: 5px;"></div>
       NOTARY PUBLIC
     </div>
-    
-    <div style="border: 1px solid #000; display: inline-block; padding: 10px; margin-top: 10px; font-size: 0.8em;">
+<div style="border: 1px solid #000; display: inline-block; padding: 10px; margin-top: 10px; font-size: 0.8em;">
       <strong>JOHN SMITH</strong><br>
       Notary Public, State of New York<br>
       No. 01SM6005555<br>
@@ -51,8 +44,7 @@ In the "Robo-Signing" scandal of 2008, banks forged millions of affidavits to fo
       Commission Expires April 1, 2028
     </div>
   </div>
-
-  <div data-verify-line="affidavit" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="affidavit" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Notary platform doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:notary-check.ny.gov/v/a1b2c3 <span data-bracket="end" data-for="affidavit">]</span>
   </div>

@@ -25,8 +25,7 @@ These documents are the "Resumes" of the sports world. They determine who gets a
       <div style="font-size: 0.7em;">ELITE PROSPECT</div>
     </div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="display: flex; margin-bottom: 25px; border-bottom: 2px solid #eee; padding-bottom: 15px;">
       <div style="width: 100px; height: 120px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #999; font-size: 0.7em; text-align: center; margin-right: 20px;">[PLAYER PHOTO]</div>
       <div style="flex-grow: 1;">
@@ -36,8 +35,7 @@ These documents are the "Resumes" of the sports world. They determine who gets a
         <div style="font-size: 0.9em;"><strong>Org:</strong> Unseen University Academy</div>
       </div>
     </div>
-
-    <div style="background: #f9f9f9; padding: 15px; border: 1px solid #ddd; margin-bottom: 20px;">
+<div style="background: #f9f9f9; padding: 15px; border: 1px solid #ddd; margin-bottom: 20px;">
       <h4 style="margin-top: 0; font-size: 0.9em; border-bottom: 1px solid #ccc; padding-bottom: 5px; color: #d32f2f;">VERIFIED PERFORMANCE METRICS</h4>
       <table style="width: 100%; font-size: 0.95em;">
         <tr>
@@ -54,13 +52,11 @@ These documents are the "Resumes" of the sports world. They determine who gets a
         </tr>
       </table>
     </div>
-
-    <div style="font-size: 0.8em; line-height: 1.4; color: #555; font-style: italic;">
+<div style="font-size: 0.8em; line-height: 1.4; color: #555; font-style: italic;">
       <strong>Scout Notes:</strong> Elite explosive power. Exceptional field vision. Character Grade: A. Recommended for Tier-1 recruitment.
     </div>
   </div>
-
-  <div style="padding: 20px; background: #fff; border-top: 1px solid #eee; text-align: center;">
+<div style="padding: 20px; background: #fff; border-top: 1px solid #eee; text-align: center;">
     <div data-verify-line="scout" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Scouting bureaus don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:nationscout.com/v/SMITH-992288 <span data-bracket="end" data-for="scout">]</span>

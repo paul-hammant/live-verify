@@ -14,8 +14,7 @@ furtherDerivations: 1
     CERTIFIED LABORATORY NOTEBOOK RECORD<br>
     --------------------------------------
   </div>
-
-  <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.9em; line-height: 1.6; color: #333;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
       <div>
         <strong>Notebook ID:</strong> <span data-bracket="start" data-for="lab-data">[</span>IBR-2026-NB-42<br>
@@ -26,19 +25,16 @@ furtherDerivations: 1
         <strong>Time:</strong> 14:22:01 GMT
       </div>
     </div>
-
-    <div style="border: 1px dashed #999; padding: 15px; background: #fff;">
+<div style="border: 1px dashed #999; padding: 15px; background: #fff;">
       <p style="margin-top: 0;"><strong>EXPERIMENT:</strong> CRISPR-Cas9 Target Cleavage (Lot #992)</p>
       <p><strong>OBSERVATION:</strong> Gel electrophoresis at 60 mins shows 92% efficiency. Bands consistent with predicted fragment sizes at 2.4kb and 1.1kb.</p>
       <p><strong>Witness Signature:</strong> Dr. Minerva McGonagall<br>
       <strong>PI Signature:</strong> Prof. Albus Dumbledore</p>
     </div>
-
-    <div style="margin-top: 20px; font-size: 0.8em; font-style: italic; color: #555;">
+<div style="margin-top: 20px; font-size: 0.8em; font-style: italic; color: #555;">
       Verification confirms this page entry was witnessed and committed to the institutional digital archive at the timestamp noted above.
     </div>
-
-    <div data-verify-line="lab-data" style="border-top: 1px dashed #999; margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="lab-data" style="border-top: 1px dashed #999; margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: University doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:ibr-stanford.edu/notebooks/v/NB42-P114 <span data-bracket="end" data-for="lab-data">]</span>
     </div>

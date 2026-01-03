@@ -21,8 +21,7 @@ Shady shippers often "Mis-declare" cargo—calling dangerous batteries "Toys" on
     <h2 style="margin: 0; text-transform: uppercase; font-size: 1.2em;">SHIPPER'S DECLARATION FOR DANGEROUS GOODS</h2>
     <div style="font-size: 0.8em;">In Compliance with IATA Dangerous Goods Regulations (DGR)</div>
   </div>
-
-  <div style="padding: 15px; font-size: 0.8em;">
+<div style="padding: 15px; font-size: 0.8em;">
     <div style="display: flex; border-bottom: 1px solid #d32f2f; padding-bottom: 10px; margin-bottom: 10px;">
       <div style="width: 50%; border-right: 1px solid #d32f2f; padding-right: 10px;">
         <strong>Shipper:</strong><br>
@@ -34,8 +33,7 @@ Shady shippers often "Mis-declare" cargo—calling dangerous batteries "Toys" on
         <strong>Page:</strong> 1 of 1
       </div>
     </div>
-
-    <table style="width: 100%; border-collapse: collapse; margin-bottom: 15px;">
+<table style="width: 100%; border-collapse: collapse; margin-bottom: 15px;">
       <tr style="background: #fdf2f2; border-bottom: 1px solid #d32f2f;">
         <th style="text-align: left; padding: 5px;">UN Number</th>
         <th style="text-align: left; padding: 5px;">Description</th>
@@ -49,17 +47,14 @@ Shady shippers often "Mis-declare" cargo—calling dangerous batteries "Toys" on
         <td style="text-align: center; padding: 5px;">II</td>
       </tr>
     </table>
-
-    <div style="margin-top: 10px; border: 1px solid #000; padding: 10px; font-style: italic;">
+<div style="margin-top: 10px; border: 1px solid #000; padding: 10px; font-style: italic;">
       I declare that all of the applicable air transport requirements have been met. The goods are in proper condition for carriage by air according to the applicable International and National Government Regulations.
     </div>
-
-    <div style="margin-top: 15px; display: flex; justify-content: space-between;">
+<div style="margin-top: 15px; display: flex; justify-content: space-between;">
       <div><strong>Signatory:</strong> Wang Wei (Certified Packer)</div>
       <div><strong>Date:</strong> 15 MAR 2026</div>
     </div>
-
-    <div data-verify-line="dgr" style="border-top: 1px dashed #d32f2f; margin-top: 20px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #555; text-align: center;"
+<div data-verify-line="dgr" style="border-top: 1px dashed #d32f2f; margin-top: 20px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #555; text-align: center;"
       title="Demo only: Airline doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:iata-dgr.org/v/016-99228877 <span data-bracket="end" data-for="dgr">]</span>
     </div>
@@ -149,8 +144,7 @@ Fraudsters often edit these PDFs to hide that a chemical is toxic, just to get i
     <h2 style="margin: 0; text-transform: uppercase; font-size: 1.2em;">DANGEROUS GOODS DECLARATION (IMO)</h2>
     <div style="font-size: 0.8em;">In accordance with the IMDG Code and SOLAS 74</div>
   </div>
-
-  <div style="padding: 15px; font-size: 0.85em;">
+<div style="padding: 15px; font-size: 0.85em;">
     <div style="display: flex; border-bottom: 1px solid #000; padding-bottom: 10px; margin-bottom: 10px;">
       <div style="width: 50%; border-right: 1px solid #000; padding-right: 10px;">
         <strong>1. Shipper / Exporter:</strong><br>
@@ -163,8 +157,7 @@ Fraudsters often edit these PDFs to hide that a chemical is toxic, just to get i
         Houston, TX, USA
       </div>
     </div>
-
-    <div style="display: flex; border-bottom: 1px solid #000; padding-bottom: 10px; margin-bottom: 10px; background: #fdf2f2;">
+<div style="display: flex; border-bottom: 1px solid #000; padding-bottom: 10px; margin-bottom: 10px; background: #fdf2f2;">
       <div style="width: 33%; border-right: 1px solid #000; padding: 5px;">
         <strong>UN Number:</strong><br>
         UN 1090
@@ -178,20 +171,16 @@ Fraudsters often edit these PDFs to hide that a chemical is toxic, just to get i
         II
       </div>
     </div>
-
-    <p><strong>3. Proper Shipping Name:</strong> ACETONE</p>
+<p><strong>3. Proper Shipping Name:</strong> ACETONE</p>
     <p><strong>4. Container ID:</strong> MSKU-998877-6</p>
-
-    <div style="margin-top: 15px; border: 1px solid #000; padding: 10px; font-style: italic;">
+<div style="margin-top: 15px; border: 1px solid #000; padding: 10px; font-style: italic;">
       I hereby declare that the contents of this consignment are fully and accurately described above and are classified, packaged, marked and labeled/placarded in accordance with the applicable international and national governmental regulations.
     </div>
-
-    <div style="margin-top: 15px; display: flex; justify-content: space-between;">
+<div style="margin-top: 15px; display: flex; justify-content: space-between;">
       <div><strong>Signatory:</strong> Hans Muller</div>
       <div><strong>Date:</strong> 15 MAR 2026</div>
     </div>
-
-    <div data-verify-line="imo-dgd" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #555; text-align: center;"
+<div data-verify-line="imo-dgd" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #555; text-align: center;"
       title="Demo only: Carrier doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:hapaq-lloyd.com/dgd/v/UN1090-MSKU <span data-bracket="end" data-for="imo-dgd">]</span>
     </div>
@@ -279,8 +268,7 @@ Fraudsters often "Downgrade" the hazard on the paper form to bypass tunnel restr
     <h2 style="margin: 0; text-transform: uppercase; font-size: 1.2em;">DANGEROUS GOODS TRANSPORT DOCUMENT</h2>
     <div style="font-size: 0.8em;">In accordance with ADR 5.4.1 / DOT 172.200</div>
   </div>
-
-  <div style="padding: 20px; font-size: 0.85em;">
+<div style="padding: 20px; font-size: 0.85em;">
     <div style="display: flex; border-bottom: 1px solid #ff9800; padding-bottom: 10px; margin-bottom: 10px;">
       <div style="width: 50%; border-right: 1px solid #ff9800; padding-right: 10px;">
         <strong>1. Consignor (Shipper):</strong><br>
@@ -293,20 +281,16 @@ Fraudsters often "Downgrade" the hazard on the paper form to bypass tunnel restr
         Berlin, Germany
       </div>
     </div>
-
-    <div style="margin: 15px 0; background: #fff3e0; padding: 10px; border: 1px solid #ffe0b2;">
+<div style="margin: 15px 0; background: #fff3e0; padding: 10px; border: 1px solid #ffe0b2;">
       <p style="font-weight: bold; margin: 0 0 5px 0;">HAZARDOUS MATERIALS DESCRIPTION:</p>
       <p style="font-family: monospace; font-size: 1.1em; margin: 0;">UN 1203, GASOLINE, 3, PG II, (D/E)</p>
       <p style="margin: 5px 0 0 0;">Quantity: 24,000 Liters (Bulk Tanker)</p>
     </div>
-
-    <p><strong>3. Emergency Contact:</strong> CHEMTREC +1 703-527-3887</p>
-
-    <div style="margin-top: 15px; font-style: italic; font-size: 0.8em; color: #555;">
+<p><strong>3. Emergency Contact:</strong> CHEMTREC +1 703-527-3887</p>
+<div style="margin-top: 15px; font-style: italic; font-size: 0.8em; color: #555;">
       The driver confirms the vehicle is equipped with mandatory fire extinguishers and ADR/DOT placards.
     </div>
-
-    <div data-verify-line="road-dg" style="border-top: 1px dashed #ff9800; margin-top: 20px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #555; text-align: center;"
+<div data-verify-line="road-dg" style="border-top: 1px dashed #ff9800; margin-top: 20px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #555; text-align: center;"
       title="Demo only: Carrier doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:trans-euro.com/dg/v/UN1203-ABC <span data-bracket="end" data-for="road-dg">]</span>
     </div>

@@ -14,16 +14,12 @@ furtherDerivations: 1
     <div style="font-size: 0.9em; margin-top: 5px;">OF THE BOARD OF DIRECTORS OF</div>
     <div style="font-weight: bold; font-size: 1.1em; margin-top: 5px;">INITECH HOLDINGS, INC.</div>
   </div>
-
-  <div style="font-size: 1em; line-height: 1.6; color: #333; text-align: justify;">
+<div style="font-size: 1em; line-height: 1.6; color: #333; text-align: justify;">
     <p>The undersigned, being all the members of the Board of Directors of Initech Holdings, Inc., a Delaware corporation (the "Company"), hereby take the following actions by written consent:</p>
-
-    <p><strong><span data-bracket="start" data-for="board">[</span>RESOLVED:</strong> That the Company is hereby authorized to enter into the Merger Agreement with Globochem Corp. dated as of March 15, 2026.</p>
-
-    <p><strong>RESOLVED FURTHER:</strong> That the Officers of the Company are authorized to execute all such documents as are necessary to effectuate the foregoing resolution.</p>
+<p><strong><span data-bracket="start" data-for="board">[</span>RESOLVED:</strong> That the Company is hereby authorized to enter into the Merger Agreement with Globochem Corp. dated as of March 15, 2026.</p>
+<p><strong>RESOLVED FURTHER:</strong> That the Officers of the Company are authorized to execute all such documents as are necessary to effectuate the foregoing resolution.</p>
   </div>
-
-  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div style="width: 45%;">
       <div style="border-top: 1px solid #000; padding-top: 5px; font-style: italic;">Bill Lumbergh</div>
       <div style="font-size: 0.8em; color: #777;">Director</div>
@@ -33,8 +29,7 @@ furtherDerivations: 1
       <div style="font-size: 0.8em; color: #777;">Director</div>
     </div>
   </div>
-
-  <div data-verify-line="board" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="board" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Law firm doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:wilson-sonsini.com/docs/v/INITECH-992 <span data-bracket="end" data-for="board">]</span>
   </div>

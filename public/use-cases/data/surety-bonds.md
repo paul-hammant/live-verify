@@ -24,20 +24,15 @@ It is the "Lifeblood of Public Works." If a contractor goes bankrupt halfway thr
       March 15, 2026
     </div>
   </div>
-
-  <h2 style="text-align: center; font-size: 1.4em; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 30px;">Performance and Payment Bond</h2>
-
-  <div style="font-size: 1em; line-height: 1.6; color: #000; text-align: justify;">
+<h2 style="text-align: center; font-size: 1.4em; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 30px;">Performance and Payment Bond</h2>
+<div style="font-size: 1em; line-height: 1.6; color: #000; text-align: justify;">
     <p>KNOW ALL MEN BY THESE PRESENTS, that <span data-bracket="start" data-for="surety">[</span><strong>SKYLINE BUILDERS GROUP, LLC</strong> (the "Principal") and <strong>TRAVELERS CASUALTY AND SURETY COMPANY</strong> (the "Surety") are held and firmly bound unto the <strong>CITY OF AUSTIN</strong> (the "Obligee") in the sum of:</p>
-
-    <div style="margin: 20px auto; width: 90%; border: 2px solid #000; padding: 15px; text-align: center; background: #f9f9f9; font-weight: bold; font-size: 1.1em;">
+<div style="margin: 20px auto; width: 90%; border: 2px solid #000; padding: 15px; text-align: center; background: #f9f9f9; font-weight: bold; font-size: 1.1em;">
       TEN MILLION FIVE HUNDRED THOUSAND DOLLARS ($10,500,000.00)
     </div>
-
-    <p>For the payment of which sum, the Principal and Surety bind themselves, their heirs, executors, and successors, for the faithful performance of the <strong>Public Works Contract #2026-BLK-99</strong> (The Skyline Tunnel Project).</p>
+<p>For the payment of which sum, the Principal and Surety bind themselves, their heirs, executors, and successors, for the faithful performance of the <strong>Public Works Contract #2026-BLK-99</strong> (The Skyline Tunnel Project).</p>
   </div>
-
-  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div style="width: 45%;">
       <div style="border-top: 1px solid #000; padding-top: 5px; font-size: 0.8em; font-style: italic;">Principal Signature</div>
     </div>
@@ -45,8 +40,7 @@ It is the "Lifeblood of Public Works." If a contractor goes bankrupt halfway thr
       <div style="width: 80px; height: 80px; border: 2px solid #b71c1c; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; color: #b71c1c; font-weight: bold; text-align: center; margin-left: auto; transform: rotate(-10deg);">SURETY<br>CORPORATE<br>SEAL</div>
     </div>
   </div>
-
-  <div data-verify-line="surety" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="surety" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Travelers doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:travelers.com/surety/v/TR99228877 <span data-bracket="end" data-for="surety">]</span>
   </div>

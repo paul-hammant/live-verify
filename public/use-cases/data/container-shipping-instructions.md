@@ -24,8 +24,7 @@ Fraudsters often "mis-declare" cargo in the instructions (e.g., calling high-tax
     <div style="font-weight: bold; font-size: 1.1em;">MAERSK LINE</div>
     <div style="font-size: 0.8em;">SHIPPING INSTRUCTIONS (DRAFT)</div>
   </div>
-
-  <div style="padding: 20px;">
+<div style="padding: 20px;">
     <div style="display: flex; justify-content: space-between; font-size: 0.9em; margin-bottom: 20px;">
       <div>
         <strong>Shipper:</strong> <span data-bracket="start" data-for="ship">[</span>Global Tech Exports, Inc.<br>
@@ -36,15 +35,13 @@ Fraudsters often "mis-declare" cargo in the instructions (e.g., calling high-tax
         <strong>Voyage:</strong> 2604W
       </div>
     </div>
-
-    <div style="font-size: 0.95em; line-height: 1.6; color: #333; border: 1px solid #000; padding: 15px; margin-bottom: 20px;">
+<div style="font-size: 0.95em; line-height: 1.6; color: #333; border: 1px solid #000; padding: 15px; margin-bottom: 20px;">
       <p><strong>Cargo Description:</strong></p>
       <p>12 Pallets: Telecommunications Equipment<br>
       HS Code: 8517.62<br>
       Gross Weight: 4,500.00 KG</p>
     </div>
-
-    <div data-verify-line="ship" style="border-top: 1px dashed #999; margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="ship" style="border-top: 1px dashed #999; margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Maersk doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:maersk.com/si/v/99228877 <span data-bracket="end" data-for="ship">]</span>
     </div>

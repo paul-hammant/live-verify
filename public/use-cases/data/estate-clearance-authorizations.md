@@ -36,32 +36,27 @@ The current system relies on self-declaration and trust. Criminals exploit this 
     <strong>Deceased:</strong> Christine Harverson<br>
     <strong>Probate Reference:</strong> PR-2024-887432<br>
     <strong>Executor:</strong> John Smith (ID verified by court)</p>
-
-    <div style="background: #f0f4f8; padding: 15px; margin: 15px 0; border-left: 3px solid #003366;">
+<div style="background: #f0f4f8; padding: 15px; margin: 15px 0; border-left: 3px solid #003366;">
       <p style="margin: 0;"><strong>Clearance Firm:</strong> Belgravia Estate Services Ltd</p>
       <p style="margin: 5px 0 0;"><strong>License:</strong> ECA-2019-4421</p>
       <p style="margin: 5px 0 0;"><strong>Authorized Dates:</strong> 15 Feb 2026 – 28 Feb 2026</p>
     </div>
-
-    <div style="text-align: center; margin: 20px 0;">
+<div style="text-align: center; margin: 20px 0;">
       <div style="display: inline-block; border: 2px solid #003366; padding: 10px;">
         <strong>[QR CODE]</strong><br>
         <span style="font-size: 0.8em;">SCAN TO VERIFY</span>
       </div>
     </div>
-
-    <p style="font-size: 0.85em; color: #666; text-align: center;">
+<p style="font-size: 0.85em; color: #666; text-align: center;">
       <div data-verify-line="estateclearanceautho" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
         verify:gov.uk/probate/PR-2024-887432 <span data-bracket="end" data-for="estateclearanceautho">]</span>
       </div>
     </p>
-
-    <p style="font-size: 0.8em; color: #8B0000; text-align: center; margin-top: 15px;">
+<p style="font-size: 0.8em; color: #8B0000; text-align: center; margin-top: 15px;">
       <strong>Concerns?</strong> Call 0800 XXX XXXX or local police non-emergency
     </p>
-
-    <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
+<div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="estateclearanceautho" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
         verify:belgravia-estates.co.uk/jobs/CH-2024-42WPR <span data-bracket="end" data-for="estateclearanceautho">]</span>
@@ -105,21 +100,17 @@ MANDATORY SITE NOTICE
 
 <div style="max-width: 500px; margin: 24px auto; font-family: monospace; background: #f5fff5; border: 2px solid #228B22; padding: 20px; font-size: 0.85em;">
   <p style="color: #228B22; font-weight: bold; font-size: 1.1em; margin: 0;">✓ VERIFIED CLEARANCE</p>
-
-  <p style="margin: 15px 0 5px;"><strong>Probate Reference:</strong> PR-2024-887432</p>
+<p style="margin: 15px 0 5px;"><strong>Probate Reference:</strong> PR-2024-887432</p>
   <p style="margin: 0;">Status: GRANTED (verified 10 Feb 2026)</p>
   <p style="margin: 0;">Court: Principal Registry, Family Division</p>
-
-  <p style="margin: 15px 0 5px;"><strong>Deceased:</strong> Christine Harverson</p>
+<p style="margin: 15px 0 5px;"><strong>Deceased:</strong> Christine Harverson</p>
   <p style="margin: 0;"><strong>Property:</strong> 42 Wimbledon Park Road, SW19 5NE</p>
   <p style="margin: 0;"><strong>Executor:</strong> John Smith (ID verified by court)</p>
-
-  <p style="margin: 15px 0 5px;"><strong>Clearance authorized:</strong></p>
+<p style="margin: 15px 0 5px;"><strong>Clearance authorized:</strong></p>
   <p style="margin: 0;">Firm: Belgravia Estate Services Ltd</p>
   <p style="margin: 0;">License: ECA-2019-4421 (valid)</p>
   <p style="margin: 0;">Dates: 15 Feb 2026 – 28 Feb 2026</p>
-
-  <p style="margin: 15px 0 5px;"><strong>Solicitor:</strong> Harrison & Co, Wimbledon</p>
+<p style="margin: 15px 0 5px;"><strong>Solicitor:</strong> Harrison & Co, Wimbledon</p>
   <p style="margin: 0;">verify:harrison-solicitors.co.uk/probate/CH-2024</p>
 </div>
 
@@ -127,14 +118,12 @@ MANDATORY SITE NOTICE
 
 <div style="max-width: 500px; margin: 24px auto; font-family: monospace; background: #fff5f5; border: 2px solid #8B0000; padding: 20px; font-size: 0.85em;">
   <p style="color: #8B0000; font-weight: bold; font-size: 1.1em; margin: 0;">⚠ VERIFICATION FAILED</p>
-
-  <p style="margin: 15px 0 5px;">One or more checks failed:</p>
+<p style="margin: 15px 0 5px;">One or more checks failed:</p>
   <p style="margin: 0;">☐ Probate reference not found in court system</p>
   <p style="margin: 0;">☐ Clearance firm license: EXPIRED / NOT FOUND</p>
   <p style="margin: 0;">☐ Dates: OUTSIDE AUTHORIZED WINDOW</p>
   <p style="margin: 0;">☐ Property address: DOES NOT MATCH</p>
-
-  <p style="margin: 20px 0 0; color: #8B0000; font-weight: bold;">
+<p style="margin: 20px 0 0; color: #8B0000; font-weight: bold;">
     DO NOT ALLOW CLEARANCE TO PROCEED<br>
     Call police: 999
   </p>
@@ -198,20 +187,17 @@ MANDATORY SITE NOTICE
     <p><strong>Property:</strong> 42 Wimbledon Park Road, London SW19 5NE<br>
     <strong>Deceased:</strong> Christine Harverson<br>
     <strong>Probate Reference:</strong> PR-2024-887432</p>
-
-    <div style="background: #fff8f0; padding: 15px; margin: 15px 0; border: 1px solid #ff6600;">
+<div style="background: #fff8f0; padding: 15px; margin: 15px 0; border: 1px solid #ff6600;">
       <p style="margin: 0; font-weight: bold;">ESTATE CLEARANCE WILL BEGIN:</p>
       <p style="margin: 10px 0 0; font-size: 1.2em;">Saturday 15 February 2026</p>
       <p style="margin: 10px 0 0;">This notice will be replaced by a full clearance authorization notice when work commences.</p>
     </div>
-
-    <p style="font-size: 0.85em; color: #666;">
+<p style="font-size: 0.85em; color: #666;">
       <strong>Concerns about this clearance?</strong><br>
       Contact before work begins: 0800 XXX XXXX<br>
       or local police non-emergency: 101
     </p>
-
-    <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
+<div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="estateclearanceautho" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
         verify:gov.uk/probate/PR-2024-887432 <span data-bracket="end" data-for="estateclearanceautho">]</span>
@@ -236,8 +222,7 @@ MANDATORY SITE NOTICE
     <strong>Deceased:</strong> Christine Harverson<br>
     <strong>Probate Reference:</strong> PR-2024-887432<br>
     <strong>Executor:</strong> John Smith (ID verified by court)</p>
-
-    <div style="background: #f0f4f8; padding: 15px; margin: 15px 0; border-left: 3px solid #003366;">
+<div style="background: #f0f4f8; padding: 15px; margin: 15px 0; border-left: 3px solid #003366;">
       <p style="margin: 0;"><strong>Clearance Firm:</strong> Belgravia Estate Services Ltd</p>
       <p style="margin: 5px 0 0;"><strong>License:</strong> ECA-2019-4421</p>
       <p style="margin: 5px 0 0;"><strong>Authorized Dates:</strong> 15–18 Feb 2026</p>
@@ -246,18 +231,15 @@ MANDATORY SITE NOTICE
       <p style="margin: 5px 0 0;">• Sarah Collins — ID: BES-512</p>
       <p style="margin: 5px 0 0;">• James Okonkwo — ID: BES-489</p>
     </div>
-
-    <p style="font-size: 0.85em; color: #8B0000; text-align: center;">
+<p style="font-size: 0.85em; color: #8B0000; text-align: center;">
       <strong>Only the named individuals above are authorized.<br>
       Anyone else claiming to work here — call police.</strong>
     </p>
-
-    <p style="font-size: 0.85em; color: #003366; text-align: center; margin-top: 10px;">
+<p style="font-size: 0.85em; color: #003366; text-align: center; margin-top: 10px;">
       Individual worker verification posters are displayed at the entrance.<br>
       Scan any worker's poster to verify their authorization.
     </p>
-
-    <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
+<div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="estateclearanceautho" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
         verify:gov.uk/probate/PR-2024-887432<br> <span data-bracket="end" data-for="estateclearanceautho">]</span>
@@ -286,12 +268,10 @@ MANDATORY SITE NOTICE
     <p style="margin: 10px 0 0; font-size: 0.85em;">Belgravia Estate Services Ltd</p>
     <p style="margin: 5px 0;">Authorized for: 42 Wimbledon Park Road</p>
     <p style="margin: 5px 0;">Dates: 15–18 Feb 2026</p>
-
-    <div style="margin: 15px 0; border: 1px solid #003366; padding: 8px; display: inline-block;">
+<div style="margin: 15px 0; border: 1px solid #003366; padding: 8px; display: inline-block;">
       <strong>[QR CODE]</strong>
     </div>
-
-    <p style="margin: 5px 0; font-size: 0.75em; font-family: monospace; color: #666;">
+<p style="margin: 5px 0; font-size: 0.75em; font-family: monospace; color: #666;">
       <div data-verify-line="estateclearanceautho" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
         verify:belgravia-estates.co.uk/staff/BES-447-42WPR <span data-bracket="end" data-for="estateclearanceautho">]</span>

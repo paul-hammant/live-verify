@@ -26,29 +26,22 @@ Fraud is high-stakes here: a collector might edit a $1M policy to read $100M to 
       <div style="font-size: 0.8em;">Policy #: ART-99228877-26</div>
     </div>
   </div>
-
-  <div style="padding: 35px;">
+<div style="padding: 35px;">
     <h2 style="text-align: center; color: #002366; font-size: 1.4em; margin-bottom: 25px; text-transform: uppercase; letter-spacing: 1px;">Evidence of Fine Art Coverage</h2>
-
-    <div style="font-size: 1em; line-height: 1.6; color: #333;">
+<div style="font-size: 1em; line-height: 1.6; color: #333;">
       <p>This document confirms all-risk "Nail-to-Nail" coverage for the following work:</p>
-
-      <div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin: 20px 0;">
+<div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin: 20px 0;">
         <strong>Object:</strong> <span data-bracket="start" data-for="art-ins">[</span>Claude Monet, <em>Water Lilies</em> (1906)<br>
         <strong>Agreed Value:</strong> $ 85,000,000.00
       </div>
-
-      <p><strong>Coverage Scope:</strong> Worldwide transit and exhibition, including accidental damage, theft, and mysterious disappearance.</p>
-      
-      <p><strong>Exhibition:</strong> The Met, New York (March-June 2026)<br>
+<p><strong>Coverage Scope:</strong> Worldwide transit and exhibition, including accidental damage, theft, and mysterious disappearance.</p>
+<p><strong>Exhibition:</strong> The Met, New York (March-June 2026)<br>
       <strong>Effective:</strong> 01 MAR 2026 to 01 JUL 2026</p>
     </div>
-
-    <div style="margin-top: 40px; border-top: 1px solid #ccc; padding-top: 10px; font-size: 0.8em; color: #666; font-style: italic; text-align: center;">
+<div style="margin-top: 40px; border-top: 1px solid #ccc; padding-top: 10px; font-size: 0.8em; color: #666; font-style: italic; text-align: center;">
       Subject to professional packing and climate-controlled transit by approved handlers (e.g., Crozier).
     </div>
-
-    <div data-verify-line="art-ins" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="art-ins" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: AXA Art doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:axa-art.com/v/MONET-992288 <span data-bracket="end" data-for="art-ins">]</span>
     </div>

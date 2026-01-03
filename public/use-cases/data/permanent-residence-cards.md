@@ -22,8 +22,7 @@ Because it grants broad rights, Green Cards are the #1 target for **High-End For
     </div>
     <div style="width: 40px; height: 40px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #002d62; font-weight: bold; font-size: 0.6em; text-align: center;">DHS</div>
   </div>
-
-  <div style="padding: 20px; display: flex;">
+<div style="padding: 20px; display: flex;">
     <div style="width: 110px; margin-right: 15px;">
       <div style="width: 110px; height: 140px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #777; font-size: 0.7em; text-align: center;">[HOLDER PHOTO]</div>
     </div>
@@ -38,8 +37,7 @@ Because it grants broad rights, Green Cards are the #1 target for **High-End For
       </div>
     </div>
   </div>
-
-  <div style="padding: 0 20px 20px 20px; text-align: center;">
+<div style="padding: 0 20px 20px 20px; text-align: center;">
     <div data-verify-line="pr" style="border-top: 1px dashed #999; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #002d62; font-weight: bold;"
       title="Demo only: USCIS doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:uscis.gov/v/pr/992288776 <span data-bracket="end" data-for="pr">]</span>

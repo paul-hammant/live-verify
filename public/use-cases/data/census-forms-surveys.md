@@ -21,8 +21,7 @@ In some areas, you need this verified receipt to get local benefits, register fo
     <div style="font-weight: bold; font-size: 1.2em;">UNITED STATES CENSUS BUREAU</div>
     <div style="font-size: 0.8em;">Official Household Receipt</div>
   </div>
-
-  <div style="padding: 30px;">
+<div style="padding: 30px;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
       <div>
         <strong>Census Year:</strong> 2026<br>
@@ -33,22 +32,17 @@ In some areas, you need this verified receipt to get local benefits, register fo
         <span data-bracket="start" data-for="census">[</span>9988-7766-5544
       </div>
     </div>
-
-    <div style="font-size: 0.9em; line-height: 1.6; color: #333; border: 1px solid #ccc; padding: 15px; background: #f9f9f9;">
+<div style="font-size: 0.9em; line-height: 1.6; color: #333; border: 1px solid #ccc; padding: 15px; background: #f9f9f9;">
       <p>Thank you for completing the 2026 Census. Your submission has been received and verified.</p>
-      
-      <p><strong>Household Address:</strong><br>
+<p><strong>Household Address:</strong><br>
       123 Maple Street, Anytown, USA</p>
-
-      <p><strong>Household Count:</strong> 4 Persons</p>
+<p><strong>Household Count:</strong> 4 Persons</p>
       <p><strong>Submission Date:</strong> April 1, 2026</p>
     </div>
-
-    <div style="margin-top: 20px; font-size: 0.75em; color: #777; font-style: italic;">
+<div style="margin-top: 20px; font-size: 0.75em; color: #777; font-style: italic;">
       Verification of this receipt does not expose PII (Personally Identifiable Information). It confirms the submission exists in the National Archives.
     </div>
-
-    <div data-verify-line="census" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="census" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Census Bureau doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:census.gov/verify/v/998877665544 <span data-bracket="end" data-for="census">]</span>
     </div>

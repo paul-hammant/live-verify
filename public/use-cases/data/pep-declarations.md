@@ -22,8 +22,7 @@ These declarations are the "Compliance Shield" for a bank. Fraud is common in th
     </div>
     <div style="font-size: 2em;">🏦</div>
   </div>
-
-  <div style="padding: 25px; font-size: 0.95em; line-height: 1.6; color: #333;">
+<div style="padding: 25px; font-size: 0.95em; line-height: 1.6; color: #333;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
         <strong>Individual:</strong> <span data-bracket="start" data-for="pep">[</span>ALEXANDER VOLKOV<br>
@@ -35,21 +34,18 @@ These declarations are the "Compliance Shield" for a bank. Fraud is common in th
         <strong>Date:</strong> 15 MAR 2026
       </div>
     </div>
-
-    <div style="background: #fff5f5; border: 1px solid #ffcdd2; padding: 15px; border-radius: 4px; margin-bottom: 20px;">
+<div style="background: #fff5f5; border: 1px solid #ffcdd2; padding: 15px; border-radius: 4px; margin-bottom: 20px;">
       <p style="margin: 0; font-weight: bold; color: #8B0000;">THE UNDERSIGNED HEREBY DECLARES:</p>
       <p style="margin: 10px 0 0;">☑ I AM a Politically Exposed Person (PEP)</p>
       <p style="margin: 10px 0 0;"><strong>Official Role:</strong> Deputy Minister of Transport, [Country]</p>
       <p style="margin: 5px 0 0;"><strong>Period:</strong> 2018 – Present</p>
       <p style="margin: 5px 0 0;"><strong>Primary Source of Wealth:</strong> Declared Family Inheritance</p>
     </div>
-
-    <p style="font-size: 0.85em; font-style: italic; color: #666; text-align: center;">
+<p style="font-size: 0.85em; font-style: italic; color: #666; text-align: center;">
       "I confirm this information is true and complete. I will notify the firm of any material changes to my PEP status."
     </p>
   </div>
-
-  <div style="padding: 20px; background: #f9f9f9; border-top: 1px dashed #8B0000; text-align: center;">
+<div style="padding: 20px; background: #f9f9f9; border-top: 1px dashed #8B0000; text-align: center;">
     <div data-verify-line="pep" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: Banks don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:privatbank-kyc.com/v/AV20260110 <span data-bracket="end" data-for="pep">]</span>

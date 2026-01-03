@@ -12,20 +12,16 @@ furtherDerivations: 1
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 25px;">
     <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">SATISFACTION OF MORTGAGE</h2>
   </div>
-
-  <div style="font-size: 1em; line-height: 1.6; color: #000; text-align: justify;">
+<div style="font-size: 1em; line-height: 1.6; color: #000; text-align: justify;">
     <p>Know all men by these presents, that <strong>Lender:</strong> Wells Fargo Bank, N.A. (the "Mortgagee") does hereby certify that a certain mortgage made and executed by <span data-bracket="start" data-for="mort-rel">[</span><strong>John Jacob Doe</strong> (the "Mortgagor") on <strong>January 1, 2010</strong>, is fully <strong>PAID, SATISFIED, AND DISCHARGED</strong>.</p>
-
-    <div style="background: #f9f9f9; padding: 15px; border: 1px solid #eee; margin: 20px 0; font-family: monospace; font-size: 0.9em;">
+<div style="background: #f9f9f9; padding: 15px; border: 1px solid #eee; margin: 20px 0; font-family: monospace; font-size: 0.9em;">
       Property: 123 Maple St, Anytown, USA<br>
       Recording Info: Liber 9988, Page 776<br>
       Loan Account: ********9922
     </div>
-
-    <p>The Mortgagee hereby consents that the same be discharged of record.</p>
+<p>The Mortgagee hereby consents that the same be discharged of record.</p>
   </div>
-
-  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div style="width: 45%;">
       <div style="border-top: 1px solid #000; padding-top: 5px; font-style: italic;">Sarah Miller, VP Operations</div>
       <div style="font-size: 0.8em; color: #777;">Authorized Signatory</div>
@@ -34,8 +30,7 @@ furtherDerivations: 1
       <div style="width: 80px; height: 80px; border: 2px solid #000; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; text-align: center; margin-left: auto;">OFFICIAL<br>NOTARY<br>SEAL</div>
     </div>
   </div>
-
-  <div data-verify-line="mort-rel" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="mort-rel" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Wells Fargo doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:wellsfargo.com/mortgage/v/REL992288 <span data-bracket="end" data-for="mort-rel">]</span>
   </div>

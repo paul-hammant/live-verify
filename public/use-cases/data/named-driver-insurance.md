@@ -13,8 +13,7 @@ furtherDerivations: 1
     <div style="font-weight: bold;">ADMIRAL</div>
     <div style="font-size: 0.8em;">CERTIFICATE OF MOTOR INSURANCE</div>
   </div>
-
-  <div style="padding: 15px;">
+<div style="padding: 15px;">
     <div style="display: flex; justify-content: space-between; font-size: 0.8em; margin-bottom: 10px;">
       <div>
         <strong>Policy Number:</strong><br>
@@ -25,25 +24,21 @@ furtherDerivations: 1
         LV26 ABC (Mini Cooper)
       </div>
     </div>
-
-    <div style="font-size: 0.9em; line-height: 1.4; color: #333; background: #f9f9f9; padding: 10px; border: 1px solid #eee;">
+<div style="font-size: 0.9em; line-height: 1.4; color: #333; background: #f9f9f9; padding: 10px; border: 1px solid #eee;">
       <p style="margin-top: 0;"><strong>PERSONS ENTITLED TO DRIVE:</strong></p>
       <ul style="margin: 0; padding-left: 20px;">
         <li>John Jacob Doe (Policyholder)</li>
         <li><span data-bracket="start" data-for="driver">[</span><strong>Sarah Jane Smith</strong> (Named Driver)</li>
       </ul>
     </div>
-
-    <div style="font-size: 0.8em; margin-top: 10px;">
+<div style="font-size: 0.8em; margin-top: 10px;">
       <strong>Effective Date:</strong> 15 MAR 2026<br>
       <strong>Expiration Date:</strong> 14 MAR 2027
     </div>
-
-    <div style="font-size: 0.7em; color: #777; margin-top: 10px; border-top: 1px solid #eee; padding-top: 5px;">
+<div style="font-size: 0.7em; color: #777; margin-top: 10px; border-top: 1px solid #eee; padding-top: 5px;">
       This document provides evidence that the persons named are insured to drive the specified vehicle.
     </div>
-
-    <div data-verify-line="driver" style="border-top: 1px dashed #999; margin-top: 15px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.7em; color: #555; text-align: center;"
+<div data-verify-line="driver" style="border-top: 1px dashed #999; margin-top: 15px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.7em; color: #555; text-align: center;"
       title="Demo only: Admiral doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:admiral.com/check/v/99887766 <span data-bracket="end" data-for="driver">]</span>
     </div>

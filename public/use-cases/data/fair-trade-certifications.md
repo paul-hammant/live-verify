@@ -24,26 +24,22 @@ This "Ethical Premium" is worth billions of dollars. Large retailers (like Starb
       <div style="font-size: 0.8em; opacity: 0.9;">Empowering Farmers and Workers Worldwide</div>
     </div>
   </div>
-
-  <div style="padding: 30px; text-align: center;">
+<div style="padding: 30px; text-align: center;">
     <div style="font-size: 1.1em; line-height: 1.6; color: #333; margin-bottom: 25px;">
       This is to certify that<br>
       <span data-bracket="start" data-for="fairtrade">[</span><strong>COOPERATIVA CAFETERA DEL SUR</strong><br>
       (Producer ID: FLO-992288)
     </div>
-
-    <div style="background: #f1f8e9; padding: 15px; border: 1px solid #c5e1a5; border-radius: 6px; margin-bottom: 25px; text-align: left; font-size: 0.9em;">
+<div style="background: #f1f8e9; padding: 15px; border: 1px solid #c5e1a5; border-radius: 6px; margin-bottom: 25px; text-align: left; font-size: 0.9em;">
       <strong>Certified Product:</strong> Coffee (Arabica / Green)<br>
       <strong>Region:</strong> Nariño, Colombia<br>
       <strong>Audit Status:</strong> COMPLIANT (FLOCERT Audit #2026-04)
     </div>
-
-    <div style="font-size: 0.8em; color: #777;">
+<div style="font-size: 0.8em; color: #777;">
       <strong>Issue Date:</strong> January 15, 2026<br>
       <strong>Valid Until:</strong> January 14, 2027
     </div>
-
-    <div data-verify-line="fairtrade" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="fairtrade" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Fairtrade doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:fairtrade.net/v/FLO992288 <span data-bracket="end" data-for="fairtrade">]</span>
     </div>

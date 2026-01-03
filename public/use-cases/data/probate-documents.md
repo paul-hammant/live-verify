@@ -24,21 +24,16 @@ The most critical document in this process is **Letters Testamentary** (or Lette
     <div style="font-size: 1.3em; font-weight: bold; text-transform: uppercase;">Superior Court of California</div>
     <div style="font-size: 0.9em; letter-spacing: 1px;">COUNTY OF LOS ANGELES</div>
   </div>
-
-  <h2 style="text-align: center; font-size: 1.4em; text-decoration: underline; margin-bottom: 25px;">LETTERS TESTAMENTARY</h2>
-
-  <div style="font-size: 1em; line-height: 1.6; color: #000; text-align: justify;">
+<h2 style="text-align: center; font-size: 1.4em; text-decoration: underline; margin-bottom: 25px;">LETTERS TESTAMENTARY</h2>
+<div style="font-size: 1em; line-height: 1.6; color: #000; text-align: justify;">
     <p>The Will of <span data-bracket="start" data-for="probate">[</span><strong>JOHN JACOB DOE</strong>, Deceased, having been admitted to probate in Case No. <strong>26PR992288</strong>, the Court hereby appoints:</p>
-    
-    <div style="margin: 20px auto; width: 80%; border: 2px solid #000; padding: 15px; text-align: center; background: #f9f9f9;">
+<div style="margin: 20px auto; width: 80%; border: 2px solid #000; padding: 15px; text-align: center; background: #f9f9f9;">
       <strong>MARY ALICE JACOB</strong><br>
       as Executor of the Estate.
     </div>
-
-    <p>The Executor is authorized to perform all acts required by law to settle the estate, including the power to sell real property and manage financial accounts.</p>
+<p>The Executor is authorized to perform all acts required by law to settle the estate, including the power to sell real property and manage financial accounts.</p>
   </div>
-
-  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div style="width: 45%;">
       <div style="border-top: 1px solid #000; padding-top: 5px; font-size: 0.9em;">Hon. Michael J. Miller<br>Judge of the Superior Court</div>
     </div>
@@ -46,8 +41,7 @@ The most critical document in this process is **Letters Testamentary** (or Lette
       <div style="width: 90px; height: 90px; border: 2px solid #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; text-align: center; margin-left: auto; transform: rotate(-5deg);">CERTIFIED<br>COURT<br>SEAL</div>
     </div>
   </div>
-
-  <div data-verify-line="probate" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="probate" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: LA Superior Court doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:lacourt.org/probate/v/26PR992288 <span data-bracket="end" data-for="probate">]</span>
   </div>

@@ -29,8 +29,7 @@ Fraud happens when owners "edit" the PDF to show a higher limit to satisfy a ban
       <div style="font-size: 0.8em;">Policy #: 99-BC-9922-8</div>
     </div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px;">
       <div>
         <strong>Insured:</strong><br>
@@ -44,8 +43,7 @@ Fraud happens when owners "edit" the PDF to show a higher limit to satisfy a ban
         <strong>Form:</strong> HO-3 (Special)
       </div>
     </div>
-
-    <h3 style="border-bottom: 2px solid #007bff; padding-bottom: 5px; color: #007bff;">COVERAGES & LIMITS</h3>
+<h3 style="border-bottom: 2px solid #007bff; padding-bottom: 5px; color: #007bff;">COVERAGES & LIMITS</h3>
     <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px; font-size: 0.9em;">
       <tr>
         <td style="padding: 8px 0;"><strong>A. Dwelling</strong></td>
@@ -64,12 +62,10 @@ Fraud happens when owners "edit" the PDF to show a higher limit to satisfy a ban
         <td style="text-align: right;">$ 1,000.00</td>
       </tr>
     </table>
-
-    <div style="font-size: 0.85em; color: #555;">
+<div style="font-size: 0.85em; color: #555;">
       <strong>Mortgagee:</strong> Bank of America, N.A. (ISAOA/ATIMA) • Loan #88776655
     </div>
-
-    <div data-verify-line="ho-dec" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="ho-dec" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: State Farm doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:statefarm.com/policy/v/99BC99228 <span data-bracket="end" data-for="ho-dec">]</span>
     </div>
@@ -164,15 +160,12 @@ Fraud is common: dishonest contractors sometimes "edit" the PDF to add $5,000 in
       <div style="font-size: 0.8em;">Claim #: 99228877-PROP</div>
     </div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <h3 style="margin-top: 0; color: #d32f2f; border-bottom: 2px solid #d32f2f; padding-bottom: 5px;">REPAIR ESTIMATE & PROOF OF LOSS</h3>
-
-    <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.9em; line-height: 1.6; color: #333;">
       <p><strong>Insured:</strong> <span data-bracket="start" data-for="prop-claim">[</span>SARAH J. DOE<br>
       <strong>Property:</strong> 123 Maple St, Anytown, USA</p>
-
-      <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
         <tr style="background: #f5f5f5; border-bottom: 1px solid #d32f2f;">
           <th style="text-align: left; padding: 8px;">Damage Category</th>
           <th style="text-align: right; padding: 8px;">Estimated RCV</th>
@@ -190,12 +183,10 @@ Fraud is common: dishonest contractors sometimes "edit" the PDF to add $5,000 in
           <td style="text-align: right; padding: 8px;">$ 14,550.00</td>
         </tr>
       </table>
-
-      <p style="margin-top: 20px;"><strong>Adjuster:</strong> Robert Miller (ID #992)<br>
+<p style="margin-top: 20px;"><strong>Adjuster:</strong> Robert Miller (ID #992)<br>
       <strong>Restoration Firm:</strong> ServePro of Anytown (Verified)</p>
     </div>
-
-    <div data-verify-line="prop-claim" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="prop-claim" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Allstate doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:allstate.com/claims/v/99228877 <span data-bracket="end" data-for="prop-claim">]</span>
     </div>
@@ -290,15 +281,12 @@ Because these papers are required for every mortgage, "Ghost Policy" fraud is a 
       <div style="font-size: 0.8em;">Policy #: HO-99228877-26</div>
     </div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <h2 style="text-align: center; color: #003366; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Insurance Declarations</h2>
-
-    <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.9em; line-height: 1.6; color: #333;">
       <p><strong>Named Insured:</strong> <span data-bracket="start" data-for="ho-pol">[</span>Sarah Jane Smith<br>
       <strong>Location:</strong> 4500 Skyline Blvd, Unit 12A, Austin, TX</p>
-
-      <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
         <tr style="background: #f0f4f8; border-bottom: 2px solid #003366;">
           <th style="text-align: left; padding: 8px;">Coverage Description</th>
           <th style="text-align: right; padding: 8px;">Limit</th>
@@ -316,16 +304,13 @@ Because these papers are required for every mortgage, "Ghost Policy" fraud is a 
           <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 500,000.00</td>
         </tr>
       </table>
-
-      <p style="margin-top: 20px;"><strong>Policy Period:</strong> March 01, 2026 to March 01, 2027<br>
+<p style="margin-top: 20px;"><strong>Policy Period:</strong> March 01, 2026 to March 01, 2027<br>
       <strong>Annual Premium:</strong> $ 1,242.00</p>
     </div>
-
-    <div style="margin-top: 30px; border: 1px solid #ccc; padding: 10px; font-size: 0.8em; color: #555; background: #fafafa;">
+<div style="margin-top: 30px; border: 1px solid #ccc; padding: 10px; font-size: 0.8em; color: #555; background: #fafafa;">
       <strong>Mortgagee:</strong> Wells Fargo Bank, N.A. (ISAOA/ATIMA) • Loan #99887766
     </div>
-
-    <div data-verify-line="ho-pol" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="ho-pol" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Liberty Mutual doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:libertymutual.com/policy/v/HO99228877 <span data-bracket="end" data-for="ho-pol">]</span>
     </div>

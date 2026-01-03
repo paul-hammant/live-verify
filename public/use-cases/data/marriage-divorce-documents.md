@@ -13,13 +13,10 @@ furtherDerivations: 1
     <div style="font-weight: bold; font-size: 1.3em; letter-spacing: 2px; color: #1a365d;">STATE OF NEVADA</div>
     <div style="font-size: 0.9em; text-transform: uppercase; color: #2c5282;">Clark County • Marriage Bureau</div>
   </div>
-
-  <h2 style="text-align: center; font-size: 1.5em; color: #1a365d; margin-bottom: 25px;">CERTIFICATE OF MARRIAGE</h2>
-
-  <div style="font-size: 1em; line-height: 1.8; color: #333;">
+<h2 style="text-align: center; font-size: 1.5em; color: #1a365d; margin-bottom: 25px;">CERTIFICATE OF MARRIAGE</h2>
+<div style="font-size: 1em; line-height: 1.8; color: #333;">
     <p>This certifies that on the 15th day of March, 2026, the following parties were joined in Holy Matrimony:</p>
-    
-    <div style="display: flex; justify-content: space-around; margin: 20px 0; background: #f9f9f9; padding: 15px; border: 1px solid #ccc;">
+<div style="display: flex; justify-content: space-around; margin: 20px 0; background: #f9f9f9; padding: 15px; border: 1px solid #ccc;">
       <div style="text-align: center;">
         <strong>SPOUSE A</strong><br>
         <span data-bracket="start" data-for="marriage">[</span>John Jacob Doe<br>
@@ -32,13 +29,11 @@ furtherDerivations: 1
         <small>DOB: 02/19/1992</small>
       </div>
     </div>
-
-    <p><strong>Officiant:</strong> Rev. Marcus Miller<br>
+<p><strong>Officiant:</strong> Rev. Marcus Miller<br>
     <strong>License #:</strong> CLK-2026-992288<br>
     <strong>Certificate #:</strong> 998877665</p>
   </div>
-
-  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div>
       <div style="width: 90px; height: 90px; border: 2px dashed #1a365d; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; color: #1a365d; font-weight: bold; text-align: center;">COUNTY<br>CLERK<br>SEAL</div>
     </div>
@@ -47,8 +42,7 @@ furtherDerivations: 1
       <div style="font-size: 0.8em; color: #777;">County Clerk</div>
     </div>
   </div>
-
-  <div data-verify-line="marriage" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="marriage" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Clark County doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:clarkcountynv.gov/marriage/v/998877665 <span data-bracket="end" data-for="marriage">]</span>
   </div>

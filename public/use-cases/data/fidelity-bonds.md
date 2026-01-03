@@ -26,28 +26,22 @@ Companies that provide in-home services (like cleaning or IT repair) use these b
       <div style="font-size: 0.8em;">Bond #: FB-99228877-26</div>
     </div>
   </div>
-
-  <div style="padding: 30px;">
+<div style="padding: 30px;">
     <h2 style="text-align: center; color: #1a237e; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Certificate of Bonding</h2>
-
-    <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.9em; line-height: 1.6; color: #333;">
       <p>This certifies that the following entity is bonded against acts of Employee Dishonesty:</p>
-      
-      <p style="background: #f5f5f5; padding: 10px; border-left: 4px solid #1a237e;">
+<p style="background: #f5f5f5; padding: 10px; border-left: 4px solid #1a237e;">
         <strong>Principal:</strong> <span data-bracket="start" data-for="fidelity">[</span>Initech Financial Services, LLC<br>
         <strong>Bond Amount:</strong> $ 1,000,000.00<br>
         <strong>Covered Class:</strong> All Employees (Blanket Bond)
       </p>
-
-      <p><strong>ERISA Compliance:</strong> YES (Meets Section 412 requirements)<br>
+<p><strong>ERISA Compliance:</strong> YES (Meets Section 412 requirements)<br>
       <strong>Effective Date:</strong> March 15, 2026 to March 15, 2027</p>
     </div>
-
-    <div style="margin-top: 30px; border: 1px solid #ccc; padding: 10px; font-size: 0.8em; color: #555; background: #fafafa; font-style: italic; text-align: center;">
+<div style="margin-top: 30px; border: 1px solid #ccc; padding: 10px; font-size: 0.8em; color: #555; background: #fafafa; font-style: italic; text-align: center;">
       This bond protects the assets of the company and its employee benefit plans from theft, forgery, or embezzlement.
     </div>
-
-    <div data-verify-line="fidelity" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="fidelity" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Travelers doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:travelers.com/surety/v/FB99228877 <span data-bracket="end" data-for="fidelity">]</span>
     </div>

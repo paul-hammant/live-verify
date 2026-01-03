@@ -13,22 +13,17 @@ furtherDerivations: 1
     <div style="font-weight: bold; font-size: 1.2em; color: #003366;">NORTHWESTERN MUTUAL</div>
     <div style="font-size: 0.85em; color: #666;">Life Claims Adjudication Office</div>
   </div>
-
-  <h3 style="text-align: center; text-transform: uppercase; margin-bottom: 25px; letter-spacing: 1px;">Notice of Claim Approval</h3>
-
-  <div style="font-size: 1em; line-height: 1.6; color: #333; text-align: justify;">
+<h3 style="text-align: center; text-transform: uppercase; margin-bottom: 25px; letter-spacing: 1px;">Notice of Claim Approval</h3>
+<div style="font-size: 1em; line-height: 1.6; color: #333; text-align: justify;">
     <p>This document confirms the approval of the death benefit claim for the following policy:</p>
-
-    <div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin: 20px 0;">
+<div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin: 20px 0;">
       <p><strong>Deceased (Insured):</strong> <span data-bracket="start" data-for="life-claim">[</span>John Jacob Doe (Policy #992288)</p>
       <p><strong>Beneficiary:</strong> Mary Alice Jacob (Spouse)</p>
       <p><strong>Approved Benefit Amount:</strong> $ 1,000,000.00</p>
     </div>
-
-    <p>The death certificate (File #137-9922) has been verified. Funds will be disbursed to the named beneficiary via wire transfer or settlement check.</p>
+<p>The death certificate (File #137-9922) has been verified. Funds will be disbursed to the named beneficiary via wire transfer or settlement check.</p>
   </div>
-
-  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div style="width: 45%;">
       <div style="border-top: 1px solid #000; padding-top: 5px; font-style: italic;">Sarah Miller, Claims Director</div>
     </div>
@@ -36,8 +31,7 @@ furtherDerivations: 1
       <div style="width: 80px; height: 80px; border: 2px solid #003366; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; color: #003366; font-weight: bold; text-align: center; margin-left: auto;">SETTLED<br>& VERIFIED</div>
     </div>
   </div>
-
-  <div data-verify-line="life-claim" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="life-claim" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Northwestern Mutual doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:northwesternmutual.com/claims/v/992288-PAY <span data-bracket="end" data-for="life-claim">]</span>
   </div>

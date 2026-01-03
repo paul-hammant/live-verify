@@ -25,8 +25,7 @@ These digital-first documents are the "Proof of Wealth" for a new generation of 
       <div style="font-size: 0.7em; opacity: 0.9;">Period: MAR 2026</div>
     </div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 30px;">
       <div style="font-size: 0.9em; line-height: 1.5; color: #333;">
         <strong>Client:</strong> <span data-bracket="start" data-for="robo">[</span>SARAH JANE SMITH<br>
@@ -38,8 +37,7 @@ These digital-first documents are the "Proof of Wealth" for a new generation of 
         <div style="font-size: 1.8em; font-weight: bold; color: #00bcd4;">$ 142,500.42</div>
       </div>
     </div>
-
-    <div style="margin-bottom: 25px;">
+<div style="margin-bottom: 25px;">
       <h4 style="font-size: 0.8em; color: #888; text-transform: uppercase; border-bottom: 1px solid #eee; padding-bottom: 5px;">Current Asset Allocation</h4>
       <div style="display: flex; height: 30px; border-radius: 4px; overflow: hidden; margin-top: 10px;">
         <div style="width: 70%; background: #00bcd4; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 0.7em; font-weight: bold;">STOCKS (70%)</div>
@@ -47,13 +45,11 @@ These digital-first documents are the "Proof of Wealth" for a new generation of 
         <div style="width: 5%; background: #b2ebf2; display: flex; align-items: center; justify-content: center; color: #00838f; font-size: 0.7em; font-weight: bold;">CASH</div>
       </div>
     </div>
-
-    <div style="font-size: 0.8em; color: #666; font-style: italic; background: #f9f9f9; padding: 15px; border-radius: 4px;">
+<div style="font-size: 0.8em; color: #666; font-style: italic; background: #f9f9f9; padding: 15px; border-radius: 4px;">
       "Verification protects the integrity of your investment data. This statement is a SEC-compliant record of your holdings and performance."
     </div>
   </div>
-
-  <div style="padding: 20px; background: #fff; border-top: 1px dashed #999; text-align: center;">
+<div style="padding: 20px; background: #fff; border-top: 1px dashed #999; text-align: center;">
     <div data-verify-line="robo" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Robo-advisors don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:betterment.com/v/ACCT9922-SJS <span data-bracket="end" data-for="robo">]</span>

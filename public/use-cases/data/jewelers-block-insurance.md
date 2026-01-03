@@ -16,30 +16,23 @@ furtherDerivations: 1
     </div>
     <div style="font-size: 1.5em;">💎</div>
   </div>
-
-  <div style="padding: 35px;">
+<div style="padding: 35px;">
     <h2 style="text-align: center; color: #000; font-size: 1.4em; margin-bottom: 25px; text-transform: uppercase; letter-spacing: 1px;">Certificate of Jewelers Insurance</h2>
-
-    <div style="font-size: 1em; line-height: 1.6; color: #333;">
+<div style="font-size: 1em; line-height: 1.6; color: #333;">
       <p>This document confirms that all-risk coverage is in effect for the following inventory:</p>
-
-      <div style="background: #fdfcf0; border: 1px solid #d4af37; padding: 15px; margin: 20px 0;">
+<div style="background: #fdfcf0; border: 1px solid #d4af37; padding: 15px; margin: 20px 0;">
         <strong>Insured:</strong> <span data-bracket="start" data-for="jewel">[</span>Imperial Diamonds & Fine Gems, LLC<br>
         <strong>Location:</strong> 42 Diamond Way, New York, NY
       </div>
-
-      <p><strong>Stock Limit (At Premises):</strong> $ 15,000,000.00<br>
+<p><strong>Stock Limit (At Premises):</strong> $ 15,000,000.00<br>
       <strong>Transit Limit (FedEx/Brinks):</strong> $ 2,000,000.00<br>
       <strong>Vault Class:</strong> UL Class 3 / Verified</p>
-      
-      <p><strong>Effective Date:</strong> March 15, 2026 to March 15, 2027</p>
+<p><strong>Effective Date:</strong> March 15, 2026 to March 15, 2027</p>
     </div>
-
-    <div style="margin-top: 40px; border-top: 1px solid #ccc; padding-top: 10px; font-size: 0.8em; color: #666; font-style: italic; text-align: center;">
+<div style="margin-top: 40px; border-top: 1px solid #ccc; padding-top: 10px; font-size: 0.8em; color: #666; font-style: italic; text-align: center;">
       Subject to maintenance of verified alarm systems and 24-hour video surveillance.
     </div>
-
-    <div data-verify-line="jewel" style="border-top: 1px dashed #d4af37; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="jewel" style="border-top: 1px dashed #d4af37; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Berkley doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:berkleyassetpro.com/v/IDG992288 <span data-bracket="end" data-for="jewel">]</span>
     </div>

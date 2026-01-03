@@ -25,22 +25,19 @@ These documents are high-stakes because they are used as proof of "Intent to Tra
       <div style="font-size: 0.9em; font-weight: bold; margin-top: 5px;"># <span data-bracket="start" data-for="travel">[</span>ETP-2026-8844</div>
     </div>
   </div>
-
-  <div style="padding: 25px; border-bottom: 1px solid #eee; font-size: 0.9em; line-height: 1.5;">
+<div style="padding: 25px; border-bottom: 1px solid #eee; font-size: 0.9em; line-height: 1.5;">
     <p><strong>Traveler:</strong> JOHN JACOB DOE<br>
     <strong>Destination:</strong> Tokyo - Kyoto - Osaka, Japan<br>
     <strong>Dates:</strong> 15-25 MAR 2026</p>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <h4 style="margin-top: 0; color: #002366; border-bottom: 1px solid #002366; padding-bottom: 5px;">ITINERARY SUMMARY</h4>
     <div style="font-size: 0.85em; margin-bottom: 20px;">
       <div style="margin-bottom: 10px;"><strong>15 MAR:</strong> JAL Flight JL005 (JFK-HND) - <em>Business Class</em></div>
       <div style="margin-bottom: 10px;"><strong>16-20 MAR:</strong> Aman Tokyo (Deluxe Suite) - <em>Confirmed</em></div>
       <div style="margin-bottom: 10px;"><strong>20 MAR:</strong> Shinkansen Nozomi (Green Car) - <em>Ticketed</em></div>
     </div>
-
-    <table style="width: 100%; border-collapse: collapse; font-size: 0.9em;">
+<table style="width: 100%; border-collapse: collapse; font-size: 0.9em;">
       <tr style="border-bottom: 2px solid #002366;">
         <th style="text-align: left; padding: 10px;">Description</th>
         <th style="text-align: right; padding: 10px;">Amount</th>
@@ -59,8 +56,7 @@ These documents are high-stakes because they are used as proof of "Intent to Tra
       </tr>
     </table>
   </div>
-
-  <div style="padding: 20px; background: #fdfdfd; border-top: 1px solid #eee; text-align: center;">
+<div style="padding: 20px; background: #fdfdfd; border-top: 1px solid #eee; text-align: center;">
     <div data-verify-line="travel" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #002366; font-weight: bold;"
       title="Demo only: Travel agencies don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:elitetravel.com/v/ETP20268844 <span data-bracket="end" data-for="travel">]</span>

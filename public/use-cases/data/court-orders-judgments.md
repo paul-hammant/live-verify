@@ -27,8 +27,7 @@ OCR-to-hash binds the **Judge's name, the Case ID, and the exact verdict text** 
     <div style="font-size: 1.4em; font-weight: bold; text-transform: uppercase;">In the Superior Court of the State of Delaware</div>
     <div style="font-size: 0.9em; letter-spacing: 1px;">IN AND FOR NEW CASTLE COUNTY</div>
   </div>
-
-  <div style="display: flex; justify-content: space-between; margin-bottom: 20px; font-size: 0.95em;">
+<div style="display: flex; justify-content: space-between; margin-bottom: 20px; font-size: 0.95em;">
     <div style="width: 45%;">
       <strong>ABC CORP,</strong><br>
       <em>Plaintiff,</em><br><br>
@@ -40,14 +39,11 @@ OCR-to-hash binds the **Judge's name, the Case ID, and the exact verdict text** 
       <strong>Case No:</strong> <span data-bracket="start" data-for="court">[</span><strong>CV-2026-992288</strong>
     </div>
   </div>
-
-  <h2 style="font-size: 1.3em; text-align: center; text-decoration: underline; margin: 30px 0;">FINAL JUDGMENT</h2>
-
-  <div style="font-size: 1em; line-height: 1.6; text-align: justify; color: #000;">
+<h2 style="font-size: 1.3em; text-align: center; text-decoration: underline; margin: 30px 0;">FINAL JUDGMENT</h2>
+<div style="font-size: 1em; line-height: 1.6; text-align: justify; color: #000;">
     <p>IT IS HEREBY ORDERED AND ADJUDGED that the Plaintiff, ABC CORP, shall recover from the Defendant, XYZ VENTURES, LLC, the principal sum of <strong>Forty-Two Thousand Five Hundred Dollars ($42,500.00)</strong>, with post-judgment interest at the legal rate.</p>
   </div>
-
-  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div style="border-top: 1px solid #000; width: 200px; padding-top: 5px; font-size: 0.9em;">Hon. Michael J. Miller</div>
     <div style="text-align: right; border: 2px solid #000; padding: 5px; font-family: sans-serif; font-size: 0.7em;">
       <strong>FILED & RECORDED</strong><br>
@@ -55,8 +51,7 @@ OCR-to-hash binds the **Judge's name, the Case ID, and the exact verdict text** 
       Clerk of Court
     </div>
   </div>
-
-  <div data-verify-line="court" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="court" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
     title="Demo only: Delaware Courts don't yet offer verification&#10;endpoints, so this is illustrative">
     verify:courts.delaware.gov/v/CV2026-992288 <span data-bracket="end" data-for="court">]</span>
   </div>

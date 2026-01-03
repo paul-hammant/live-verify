@@ -21,33 +21,27 @@ These letters are the "Benefit Unlockers" of the student world. They are used to
     <div style="font-weight: bold; font-size: 1.4em; color: #003366; letter-spacing: 1px;">UNIVERSITY OF CALIFORNIA, BERKELEY</div>
     <div style="font-size: 0.9em; text-transform: uppercase;">Office of the Registrar • Enrollment Verification</div>
   </div>
-
-  <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <p>Date: March 15, 2026</p>
     <p>This document serves as official verification of student status for:</p>
-    
-    <div style="background: #f9f9f9; padding: 20px; border: 1px solid #ddd; margin: 20px 0;">
+<div style="background: #f9f9f9; padding: 20px; border: 1px solid #ddd; margin: 20px 0;">
       <p><strong>Student:</strong> <span data-bracket="start" data-for="registrar">[</span><strong>SARAH JANE SMITH</strong><br>
       <strong>Student ID:</strong> 99228877<br>
       <strong>Academic Level:</strong> Undergraduate Junior</p>
-      
-      <p><strong>Enrollment Status:</strong> FULL-TIME (15 Units)<br>
+<p><strong>Enrollment Status:</strong> FULL-TIME (15 Units)<br>
       <strong>Residency Classification:</strong> <span style="color: #2e7d32; font-weight: bold;">CALIFORNIA RESIDENT (IN-STATE)</span><br>
       <strong>Term:</strong> Spring 2026 (01/15/2026 - 05/15/2026)</p>
     </div>
-
-    <p style="font-size: 0.85em; font-style: italic;">"The residency classification stated above was determined based on the evidence of domicile provided by the student pursuant to California Education Code Section 68040."</p>
+<p style="font-size: 0.85em; font-style: italic;">"The residency classification stated above was determined based on the evidence of domicile provided by the student pursuant to California Education Code Section 68040."</p>
   </div>
-
-  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div>
       <div style="border-top: 1px solid #000; width: 200px; padding-top: 5px; font-style: italic;">Sarah Jenkins, University Registrar</div>
       <div style="font-size: 0.7em; color: #777;">Digital ID: #REG-992288</div>
     </div>
     <div style="width: 80px; height: 80px; border: 2px solid #003366; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; text-align: center; color: #003366;">OFFICIAL<br>REGISTRAR<br>SEAL</div>
   </div>
-
-  <div style="padding: 20px; background: #fffbe6; border: 1px dashed #999; margin-top: 30px; text-align: center;">
+<div style="padding: 20px; background: #fffbe6; border: 1px dashed #999; margin-top: 30px; text-align: center;">
     <div data-verify-line="registrar" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: University registrars don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:berkeley.edu/v/SMITH992288 <span data-bracket="end" data-for="registrar">]</span>

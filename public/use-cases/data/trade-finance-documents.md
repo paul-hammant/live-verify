@@ -25,8 +25,7 @@ These documents are the primary target for **Trade Finance Fraud**. Scammers use
       <div style="font-size: 0.7em; opacity: 0.9;">NEGOTIABLE ORIGINAL (1/3)</div>
     </div>
   </div>
-
-  <div style="display: grid; grid-template-columns: 1fr 1fr; border-bottom: 1px solid #000;">
+<div style="display: grid; grid-template-columns: 1fr 1fr; border-bottom: 1px solid #000;">
     <div style="padding: 10px; border-right: 1px solid #000; font-size: 0.75em; line-height: 1.3;">
       <strong style="text-transform: uppercase; color: #666;">Shipper:</strong><br>
       GLOBAL COTTON TRADERS LTD.<br>
@@ -37,21 +36,18 @@ These documents are the primary target for **Trade Finance Fraud**. Scammers use
       <div style="font-size: 1.2em; font-weight: bold;"><span data-bracket="start" data-for="trade">[</span>MSC-9922887766</div>
     </div>
   </div>
-
-  <div style="padding: 10px; border-bottom: 1px solid #000; font-size: 0.75em; line-height: 1.3; background: #fffbe6;">
+<div style="padding: 10px; border-bottom: 1px solid #000; font-size: 0.75em; line-height: 1.3; background: #fffbe6;">
     <strong style="text-transform: uppercase; color: #666;">Consignee (to the order of):</strong><br>
     <span style="font-weight: bold; color: #000;">STANDARD CHARTERED BANK, N.A.</span><br>
     FOR THE ACCOUNT OF: SPRINGFIELD TEXTILES LLC
   </div>
-
-  <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; border-bottom: 1px solid #000; font-size: 0.7em; text-transform: uppercase; text-align: center;">
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; border-bottom: 1px solid #000; font-size: 0.7em; text-transform: uppercase; text-align: center;">
     <div style="padding: 5px; border-right: 1px solid #000;"><strong>Vessel:</strong><br>MSC TESSA</div>
     <div style="padding: 5px; border-right: 1px solid #000;"><strong>Port of Loading:</strong><br>NHAVA SHEVA, IN</div>
     <div style="padding: 5px; border-right: 1px solid #000;"><strong>On-Board Date:</strong><br>15 MAR 2026</div>
     <div style="padding: 5px;"><strong>Freight:</strong><br>PREPAID</div>
   </div>
-
-  <div style="padding: 15px;">
+<div style="padding: 15px;">
     <table style="width: 100%; border-collapse: collapse; font-size: 0.8em;">
       <tr style="border-bottom: 1px solid #eee;">
         <th style="text-align: left; padding: 5px;">Marks & Numbers</th>
@@ -65,8 +61,7 @@ These documents are the primary target for **Trade Finance Fraud**. Scammers use
       </tr>
     </table>
   </div>
-
-  <div style="padding: 20px; background: #f9f9f9; border-top: 1px solid #000; text-align: center;">
+<div style="padding: 20px; background: #f9f9f9; border-top: 1px solid #000; text-align: center;">
     <div data-verify-line="trade" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #ef6c00; font-weight: bold;"
       title="Demo only: MSC doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:msc.com/bl/v/9922887766 <span data-bracket="end" data-for="trade">]</span>
@@ -152,8 +147,7 @@ These papers are the primary tools for **Tariff Evasion**. Fraud is high-stakes:
     <div style="font-weight: bold; font-size: 1.4em; color: #003366; letter-spacing: 1px;">LONDON CHAMBER OF COMMERCE</div>
     <div style="font-size: 0.85em; text-transform: uppercase;">Official Certificate of Origin</div>
   </div>
-
-  <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 25px;">
       <div>
         <strong>Exporter:</strong> <span data-bracket="start" data-for="origin">[</span>BRITISH PRECISION LTD.<br>
@@ -164,30 +158,24 @@ These papers are the primary tools for **Tariff Evasion**. Fraud is high-stakes:
         <strong>Issue Date:</strong> 15 MAR 2026
       </div>
     </div>
-
-    <p><strong>Consignee:</strong> GOLIATH MANUFACTURING INC., CHICAGO, USA</p>
-
-    <div style="margin: 20px 0; padding: 15px; border: 1px solid #ccc; background: #f9f9f9;">
+<p><strong>Consignee:</strong> GOLIATH MANUFACTURING INC., CHICAGO, USA</p>
+<div style="margin: 20px 0; padding: 15px; border: 1px solid #ccc; background: #f9f9f9;">
       <p><strong>Description of Goods:</strong><br>
       High-Precision Titanium Aerospace Fasteners (HS Code: 8108.90)</p>
-      
-      <p style="border-top: 1px solid #ddd; padding-top: 10px; font-weight: bold; text-align: center;">
+<p style="border-top: 1px solid #ddd; padding-top: 10px; font-weight: bold; text-align: center;">
         COUNTRY OF ORIGIN: <span style="font-size: 1.3em; color: #003366;">UNITED KINGDOM</span>
       </p>
     </div>
-
-    <p style="font-size: 0.85em; font-style: italic;">"The undersigned Chamber of Commerce hereby certifies that the goods described above were produced or manufactured in the country stated."</p>
+<p style="font-size: 0.85em; font-style: italic;">"The undersigned Chamber of Commerce hereby certifies that the goods described above were produced or manufactured in the country stated."</p>
   </div>
-
-  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div>
       <div style="border-top: 1px solid #000; width: 200px; padding-top: 5px; font-style: italic;">Authorized Signature</div>
       <div style="font-size: 0.7em; color: #777;">Chamber ID: #LCC-9922</div>
     </div>
     <div style="width: 80px; height: 80px; border: 2px solid #003366; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; text-align: center; color: #003366; transform: rotate(-10deg);">CHAMBER<br>OFFICIAL<br>STAMP</div>
   </div>
-
-  <div style="padding: 20px; background: #fdfdfd; border: 1px dashed #999; margin-top: 40px; text-align: center;">
+<div style="padding: 20px; background: #fdfdfd; border: 1px dashed #999; margin-top: 40px; text-align: center;">
     <div data-verify-line="origin" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: Chambers of Commerce don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:londonchamber.com/v/CO992288UK <span data-bracket="end" data-for="origin">]</span>
@@ -279,8 +267,7 @@ This document is the primary engine for **Trade-Based Money Laundering (TBML)** 
       <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;"># <span data-bracket="start" data-for="invoice">[</span>INV-2026-8844</div>
     </div>
   </div>
-
-  <div style="padding: 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.85em; line-height: 1.4; border-bottom: 1px solid #eee;">
+<div style="padding: 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.85em; line-height: 1.4; border-bottom: 1px solid #eee;">
     <div>
       <strong style="text-transform: uppercase; color: #888;">Consignee / Buyer:</strong><br>
       NEW YORK FASHION HUBS LLC<br>
@@ -292,8 +279,7 @@ This document is the primary engine for **Trade-Based Money Laundering (TBML)** 
       <strong>Payment:</strong> L/C #992288
     </div>
   </div>
-
-  <div style="padding: 0;">
+<div style="padding: 0;">
     <table style="width: 100%; border-collapse: collapse; font-size: 0.9em;">
       <tr style="background: #eee; border-bottom: 2px solid #000;">
         <th style="text-align: left; padding: 10px;">Item / HS Code</th>
@@ -313,8 +299,7 @@ This document is the primary engine for **Trade-Based Money Laundering (TBML)** 
       </tr>
     </table>
   </div>
-
-  <div style="padding: 25px; background: #fdfdfd; border-top: 1px solid #000; text-align: center;">
+<div style="padding: 25px; background: #fdfdfd; border-top: 1px solid #000; text-align: center;">
     <div style="font-size: 0.7em; color: #555; margin-bottom: 10px; font-style: italic;">
       Verification confirms the financial integrity of this billing record against the exporter's ledger.
     </div>

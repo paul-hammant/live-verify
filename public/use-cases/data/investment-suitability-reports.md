@@ -24,23 +24,19 @@ If things go wrong, this report is critical evidence. Did the advisor understand
     <strong>Advisor:</strong> James Wilson, CFA (FCA Approved CF30)<br>
     <strong>Firm:</strong> Hartley Wealth Management<br>
     <strong>Date:</strong> February 15, 2026</p>
-
-    <div style="background: #f5f5f5; padding: 15px; margin: 15px 0;">
+<div style="background: #f5f5f5; padding: 15px; margin: 15px 0;">
       <p style="margin: 0;"><strong>Client Profile Summary:</strong></p>
       <p style="margin: 10px 0 0;">Risk Tolerance: Moderate | Time Horizon: 10+ years</p>
       <p style="margin: 5px 0 0;">Investment Objective: Growth with income</p>
       <p style="margin: 5px 0 0;">Experience Level: Intermediate</p>
     </div>
-
-    <div style="background: #fff; padding: 15px; margin: 15px 0; border: 1px solid #ddd;">
+<div style="background: #fff; padding: 15px; margin: 15px 0; border: 1px solid #ddd;">
       <p style="margin: 0;"><strong>Recommendation:</strong></p>
       <p style="margin: 10px 0 0;">Balanced Multi-Asset Fund (60% equity / 40% bonds)</p>
       <p style="margin: 10px 0 0;"><strong>Suitability Rationale:</strong> Aligns with moderate risk tolerance, provides growth potential with income, appropriate for 10+ year horizon.</p>
     </div>
-
-    <p style="font-size: 0.85em; color: #666;">This report should be read alongside the Key Information Document (KID) provided separately.</p>
-
-    <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
+<p style="font-size: 0.85em; color: #666;">This report should be read alongside the Key Information Document (KID) provided separately.</p>
+<div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="investmentsuitabilit" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
         verify:hartley-wealth.com/advice/MC-2026-0215 <span data-bracket="end" data-for="investmentsuitabilit">]</span>

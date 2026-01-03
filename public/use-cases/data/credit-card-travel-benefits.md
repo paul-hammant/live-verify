@@ -24,24 +24,19 @@ Rental agents often try to force you to buy their expensive $30/day insurance by
     </div>
     <div style="font-size: 1.2em;">💳</div>
   </div>
-
-  <div style="background: rgba(255,255,255,0.1); padding: 25px;">
+<div style="background: rgba(255,255,255,0.1); padding: 25px;">
     <h3 style="margin: 0 0 15px 0; color: #fff; font-size: 1.1em; text-transform: uppercase;">Benefit Confirmation: Auto Rental CDW</h3>
-    
-    <div style="font-size: 0.9em; line-height: 1.6; color: #eee;">
+<div style="font-size: 0.9em; line-height: 1.6; color: #eee;">
       <p>This document confirms that <span data-bracket="start" data-for="card">[</span><strong>JOHN JACOB DOE</strong> (Account ...1234) is eligible for Primary Collision Damage Waiver (CDW) coverage when the rental is charged to this account.</p>
-      
-      <p><strong>Maximum Coverage:</strong> Actual Cash Value of most vehicles.<br>
+<p><strong>Maximum Coverage:</strong> Actual Cash Value of most vehicles.<br>
       <strong>Region:</strong> Worldwide (including Ireland, Israel, Jamaica).<br>
       <strong>Benefit Status:</strong> ACTIVE</p>
     </div>
-
-    <div style="margin-top: 25px; padding: 10px; border: 1px solid rgba(255,255,255,0.3); border-radius: 6px; font-size: 0.8em; background: rgba(0,0,0,0.2);">
+<div style="margin-top: 25px; padding: 10px; border: 1px solid rgba(255,255,255,0.3); border-radius: 6px; font-size: 0.8em; background: rgba(0,0,0,0.2);">
       <strong>Claim Intake:</strong> (888) 320-9956<br>
       <strong>Reference:</strong> BENEFIT-992288-2026
     </div>
-
-    <div data-verify-line="card" style="border-top: 1px dashed rgba(255,255,255,0.3); margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #ccc; text-align: center;"
+<div data-verify-line="card" style="border-top: 1px dashed rgba(255,255,255,0.3); margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #ccc; text-align: center;"
       title="Demo only: Chase doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:chase.com/benefits/v/992288-CDW <span data-bracket="end" data-for="card">]</span>
     </div>

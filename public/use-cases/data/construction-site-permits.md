@@ -21,8 +21,7 @@ OCR-to-hash allows a neighbor or building inspector to scan the permit from the 
     <h2 style="margin: 0; text-transform: uppercase; font-size: 1.3em; letter-spacing: 1px;">Building Permit</h2>
     <div style="font-size: 0.8em; font-weight: bold; opacity: 0.9;">POST IN A CONSPICUOUS PLACE</div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px; border-bottom: 2px solid #eee; padding-bottom: 10px;">
       <div>
         <div style="font-size: 0.7em; color: #888; text-transform: uppercase;">Permit Number</div>
@@ -33,24 +32,19 @@ OCR-to-hash allows a neighbor or building inspector to scan the permit from the 
         <div style="font-size: 1em; font-weight: bold;">MARCH 15, 2026</div>
       </div>
     </div>
-
-    <div style="font-size: 0.9em; line-height: 1.5; color: #333;">
+<div style="font-size: 0.9em; line-height: 1.5; color: #333;">
       <p><strong>Address:</strong> 123 MAPLE AVENUE, SPRINGFIELD, USA</p>
-      
-      <div style="margin: 15px 0; padding: 15px; border: 1px solid #ccc; background: #fdfdfd; font-style: italic;">
+<div style="margin: 15px 0; padding: 15px; border: 1px solid #ccc; background: #fdfdfd; font-style: italic;">
         <strong>Description of Work:</strong><br>
         Two-story residential addition (850 sq ft) including new foundation, plumbing, and 200A electrical service upgrade.
       </div>
-
-      <p><strong>Contractor:</strong> TOP-NOTCH BUILDERS LLC (Lic #992288)<br>
+<p><strong>Contractor:</strong> TOP-NOTCH BUILDERS LLC (Lic #992288)<br>
       <strong>Owner:</strong> ROBERT & MARY SMITH TRUST</p>
     </div>
-
-    <div style="margin-top: 25px; font-size: 0.75em; color: #666; text-align: center; border-top: 1px solid #eee; padding-top: 15px;">
+<div style="margin-top: 25px; font-size: 0.75em; color: #666; text-align: center; border-top: 1px solid #eee; padding-top: 15px;">
       This permit must remain posted until final inspection sign-off.
     </div>
-
-    <div data-verify-line="permit" style="margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #d32f2f; text-align: center; font-weight: bold; border-top: 1px dashed #bbb;"
+<div data-verify-line="permit" style="margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #d32f2f; text-align: center; font-weight: bold; border-top: 1px dashed #bbb;"
       title="Demo only: Municipalities don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:springfield.gov/build/v/B99228877Z <span data-bracket="end" data-for="permit">]</span>
     </div>

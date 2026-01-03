@@ -18,26 +18,20 @@ furtherDerivations: 1
       <div style="font-size: 0.8em;">Factor Ref: BV-992288</div>
     </div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <h3 style="margin-top: 0; color: #002d62; border-bottom: 2px solid #002d62; padding-bottom: 5px;">FACTORING CONFIRMATION</h3>
-
-    <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.9em; line-height: 1.6; color: #333;">
       <p>This document confirms that the following accounts receivable have been purchased by the Factor:</p>
-      
-      <div style="background: #fdfdfd; border: 1px solid #eee; padding: 15px; margin: 15px 0; border-radius: 4px;">
+<div style="background: #fdfdfd; border: 1px solid #eee; padding: 15px; margin: 15px 0; border-radius: 4px;">
         <p><strong>Seller:</strong> <span data-bracket="start" data-for="factor">[</span>Apex Manufacturing, Ltd.<br>
         <strong>Buyer (Debtor):</strong> Global Retail Hub, Corp.</p>
-        
-        <strong>Invoice Total:</strong> $ 100,000.00<br>
+<strong>Invoice Total:</strong> $ 100,000.00<br>
         <strong>Advance Rate:</strong> 85.00% ($ 85,000.00 Paid)<br>
         <strong>Reserve Fund:</strong> $ 15,000.00
       </div>
-
-      <p style="font-weight: bold; color: #d32f2f;">NOTICE OF ASSIGNMENT: All future payments for this invoice MUST be remitted directly to Blue-Vine Capital.</p>
+<p style="font-weight: bold; color: #d32f2f;">NOTICE OF ASSIGNMENT: All future payments for this invoice MUST be remitted directly to Blue-Vine Capital.</p>
     </div>
-
-    <div data-verify-line="factor" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="factor" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: BlueVine doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:bluevine.com/factoring/v/992288 <span data-bracket="end" data-for="factor">]</span>
     </div>

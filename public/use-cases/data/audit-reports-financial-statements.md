@@ -24,16 +24,12 @@ It is used for high-stakes financial decisions:
     <div style="font-weight: bold; font-size: 1.2em; color: #000;">PRICEWATERHOUSECOOPERS LLP</div>
     <div style="font-size: 0.8em; color: #666;">300 Madison Avenue, New York, NY 10017</div>
   </div>
-
-  <h3 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px;">Report of Independent Registered Public Accounting Firm</h3>
-
-  <div style="font-size: 0.95em; line-height: 1.6; text-align: justify; color: #333;">
+<h3 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px;">Report of Independent Registered Public Accounting Firm</h3>
+<div style="font-size: 0.95em; line-height: 1.6; text-align: justify; color: #333;">
     <p>To the Board of Directors and Shareholders of <span data-bracket="start" data-for="audit">[</span><strong>WAYSTAR ROYCO CORP.</strong></p>
-
-    <p><strong>Opinions on the Financial Statements</strong></p>
+<p><strong>Opinions on the Financial Statements</strong></p>
     <p>We have audited the accompanying consolidated balance sheets of Waystar Royco Corp. as of <strong>December 31, 2025</strong>. In our opinion, the consolidated financial statements present fairly, in all material respects, the financial position of the Company.</p>
-
-    <div style="background: #fdfdfd; padding: 15px; border: 1px solid #eee; margin: 20px 0;">
+<div style="background: #fdfdfd; padding: 15px; border: 1px solid #eee; margin: 20px 0;">
       <p style="margin-top: 0;"><strong>CONSOLIDATED TOTALS:</strong></p>
       <table style="width: 100%; font-size: 0.9em;">
         <tr>
@@ -46,17 +42,14 @@ It is used for high-stakes financial decisions:
         </tr>
       </table>
     </div>
-
-    <p><strong>Basis for Opinion</strong></p>
+<p><strong>Basis for Opinion</strong></p>
     <p>We are a public accounting firm registered with the PCAOB. Our responsibility is to express an opinion on the Company's financial statements based on our audits.</p>
   </div>
-
-  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div style="border-top: 1px solid #000; width: 200px; padding-top: 5px;">PricewaterhouseCoopers LLP</div>
     <div style="font-size: 0.8em; color: #777;">February 24, 2026</div>
   </div>
-
-  <div data-verify-line="audit" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="audit" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: PwC doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:pwc.com/audit/v/WAYSTAR-2025 <span data-bracket="end" data-for="audit">]</span>
   </div>

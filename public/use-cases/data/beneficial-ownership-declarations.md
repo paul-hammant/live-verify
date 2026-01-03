@@ -21,35 +21,29 @@ Verifying these declarations ensures that a company opening a bank account isn't
     <h2 style="margin: 0; font-size: 1.3em;">BENEFICIAL OWNERSHIP DECLARATION</h2>
     <div style="font-size: 0.8em; margin-top: 5px;">FINANCIAL CRIMES ENFORCEMENT NETWORK (FinCEN)</div>
   </div>
-
-  <div style="padding: 30px;">
+<div style="padding: 30px;">
     <div style="border-bottom: 2px solid #002d62; padding-bottom: 10px; margin-bottom: 20px;">
       <strong>Reporting Company:</strong> <span data-bracket="start" data-for="ubo">[</span>Global Shell Holdings, LLC<br>
       <strong>Tax ID:</strong> 12-3456789<br>
       <strong>Jurisdiction:</strong> Delaware, USA
     </div>
-
-    <h3 style="font-size: 1.1em; color: #002d62;">ULTIMATE BENEFICIAL OWNERS (UBO)</h3>
-    
-    <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+<h3 style="font-size: 1.1em; color: #002d62;">ULTIMATE BENEFICIAL OWNERS (UBO)</h3>
+<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
       <p style="background: #f9f9f9; padding: 10px; border-left: 4px solid #002d62;">
         <strong>1. Name:</strong> JOHN DOE (Direct Owner)<br>
         <strong>Ownership:</strong> 60% Voting Shares<br>
         <strong>ID:</strong> US Passport No. *******123
       </p>
-
-      <p style="background: #f9f9f9; padding: 10px; border-left: 4px solid #002d62;">
+<p style="background: #f9f9f9; padding: 10px; border-left: 4px solid #002d62;">
         <strong>2. Name:</strong> JANE SMITH (Indirect Owner)<br>
         <strong>Ownership:</strong> 40% via Smith Family Trust<br>
         <strong>ID:</strong> UK Driving License No. *******456
       </p>
     </div>
-
-    <p style="font-size: 0.8em; color: #777; font-style: italic; margin-top: 20px;">
+<p style="font-size: 0.8em; color: #777; font-style: italic; margin-top: 20px;">
       This declaration is true and correct under penalty of perjury. 31 U.S.C. § 5336.
     </p>
-
-    <div data-verify-line="ubo" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="ubo" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: FinCEN doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:fincen.gov/boi/v/99887766 <span data-bracket="end" data-for="ubo">]</span>
     </div>

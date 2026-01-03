@@ -21,26 +21,21 @@ Verified vital records allow banks and agencies to check the **Live Status** of 
     <div style="font-weight: bold; font-size: 1.3em; letter-spacing: 2px; color: #1a365d;">COMMONWEALTH OF PENNSYLVANIA</div>
     <div style="font-size: 0.9em; text-transform: uppercase; color: #2c5282;">Department of Health • Vital Statistics</div>
   </div>
-
-  <h2 style="text-align: center; font-size: 1.5em; color: #1a365d; margin-bottom: 25px;">CERTIFICATION OF BIRTH</h2>
-
-  <div style="font-size: 1em; line-height: 1.8; color: #333;">
+<h2 style="text-align: center; font-size: 1.5em; color: #1a365d; margin-bottom: 25px;">CERTIFICATION OF BIRTH</h2>
+<div style="font-size: 1em; line-height: 1.8; color: #333;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 15px;">
       <div><strong>Name:</strong> <span data-bracket="start" data-for="birth">[</span><strong>JOHN JACOB DOE</strong></div>
       <div style="text-align: right;"><strong>File No:</strong> 137-2026-9922</div>
     </div>
-
-    <div style="margin-bottom: 10px;"><strong>Date of Birth:</strong> May 15, 2026</div>
+<div style="margin-bottom: 10px;"><strong>Date of Birth:</strong> May 15, 2026</div>
     <div style="margin-bottom: 10px;"><strong>Sex:</strong> Male</div>
     <div style="margin-bottom: 10px;"><strong>Place of Birth:</strong> Philadelphia, PA (Hospital: Penn Medicine)</div>
-    
-    <div style="margin-top: 20px; border-top: 1px solid #ccc; padding-top: 15px;">
+<div style="margin-top: 20px; border-top: 1px solid #ccc; padding-top: 15px;">
       <div style="margin-bottom: 10px;"><strong>Mother/Parent:</strong> Mary Alice Jacob</div>
       <div style="margin-bottom: 10px;"><strong>Father/Parent:</strong> Robert Q. Doe</div>
     </div>
   </div>
-
-  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div>
       <div style="width: 90px; height: 90px; border: 2px dashed #1a365d; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; color: #1a365d; font-weight: bold; text-align: center;">STATE<br>REGISTRAR<br>SEAL</div>
     </div>
@@ -49,8 +44,7 @@ Verified vital records allow banks and agencies to check the **Live Status** of 
       <div style="font-size: 0.8em; color: #777;">Date Issued: June 01, 2026</div>
     </div>
   </div>
-
-  <div data-verify-line="birth" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="birth" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: PA Health Dept doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:health.pa.gov/vital/v/137-9922 <span data-bracket="end" data-for="birth">]</span>
   </div>

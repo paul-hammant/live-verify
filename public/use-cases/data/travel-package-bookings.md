@@ -22,8 +22,7 @@ Fraud is common in the "Secondary Market." Scammers sell fake "Discounted Packag
     </div>
     <div style="font-size: 2em;">🏝️</div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px; border-bottom: 2px solid #00bcd4; padding-bottom: 10px;">
       <div>
         <div style="font-size: 0.75em; color: #888; text-transform: uppercase;">Lead Traveler</div>
@@ -34,13 +33,11 @@ Fraud is common in the "Secondary Market." Scammers sell fake "Discounted Packag
         <div style="font-size: 1.2em; font-weight: bold; color: #00838f;">IE-992288-XJ</div>
       </div>
     </div>
-
-    <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.9em; line-height: 1.6; color: #333;">
       <p><strong>Destination:</strong> Riviera Maya, Mexico<br>
       <strong>Dates:</strong> 15 MAR - 22 MAR 2026 (7 Nights)<br>
       <strong>Resort:</strong> The Azure Sands All-Inclusive</p>
-
-      <div style="margin: 20px 0; padding: 15px; background: #e0f7fa; border: 1px solid #b2ebf2; border-radius: 4px;">
+<div style="margin: 20px 0; padding: 15px; background: #e0f7fa; border: 1px solid #b2ebf2; border-radius: 4px;">
         <strong style="color: #00838f; font-size: 0.85em; text-transform: uppercase;">Package Inclusions:</strong>
         <ul style="margin: 5px 0; padding-left: 20px; font-size: 0.9em;">
           <li>Unlimited Dining & Premium Beverages</li>
@@ -49,15 +46,13 @@ Fraud is common in the "Secondary Market." Scammers sell fake "Discounted Packag
           <li>Complimentary Wi-Fi & Non-Motorized Sports</li>
         </ul>
       </div>
-
-      <div style="display: flex; justify-content: space-between; font-weight: bold;">
+<div style="display: flex; justify-content: space-between; font-weight: bold;">
         <span>TOTAL PACKAGE PRICE:</span>
         <span style="color: #2e7d32;">$ 4,250.00 (PAID IN FULL)</span>
       </div>
     </div>
   </div>
-
-  <div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #bbb; text-align: center;">
+<div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #bbb; text-align: center;">
     <div data-verify-line="package" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #00838f; font-weight: bold;"
       title="Demo only: Tour operators don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:islandescapes.com/v/IE992288XJ <span data-bracket="end" data-for="package">]</span>

@@ -12,21 +12,17 @@ furtherDerivations: 1
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 25px;">
     <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">ADVANCE HEALTH CARE DIRECTIVE</h2>
   </div>
-
-  <div style="font-size: 1em; line-height: 1.6; color: #000; text-align: justify;">
+<div style="font-size: 1em; line-height: 1.6; color: #000; text-align: justify;">
     <p>I, <span data-bracket="start" data-for="will">[</span><strong>JOHN JACOB DOE</strong>, being of sound mind, willfully and voluntarily make this declaration to be followed if I become incapacitated and am unable to participate in decisions regarding my medical care.</p>
-
-    <div style="margin: 20px 0; background: #f9f9f9; padding: 15px; border: 1px solid #eee;">
+<div style="margin: 20px 0; background: #f9f9f9; padding: 15px; border: 1px solid #eee;">
       <p><strong>1. HEALTH CARE AGENT:</strong> Mary Alice Jacob (Spouse)<br>
       <strong>2. END-OF-LIFE WISHES:</strong> If I have an incurable and irreversible condition, I direct that life-sustaining treatment be withheld or withdrawn.</p>
       <p><strong>3. COMFORT CARE:</strong> I direct that I be given all care necessary to alleviate pain.</p>
     </div>
-
-    <p><strong>Witnesses:</strong> Robert Miller, Sarah Connor<br>
+<p><strong>Witnesses:</strong> Robert Miller, Sarah Connor<br>
     <strong>Date of Execution:</strong> March 15, 2026</p>
   </div>
-
-  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div style="width: 45%;">
       <div style="border-top: 1px solid #000; padding-top: 5px;">John Jacob Doe</div>
       <div style="font-size: 0.8em; color: #777;">Declarant</div>
@@ -35,8 +31,7 @@ furtherDerivations: 1
       <div style="width: 80px; height: 80px; border: 2px solid #000; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; text-align: center; margin-left: auto;">OFFICIAL<br>NOTARY<br>SEAL</div>
     </div>
   </div>
-
-  <div data-verify-line="will" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="will" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Healthcare system doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:cedars-sinai.org/legal/v/DOE-992288 <span data-bracket="end" data-for="will">]</span>
   </div>

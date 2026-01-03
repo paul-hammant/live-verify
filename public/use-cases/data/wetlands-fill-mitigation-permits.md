@@ -22,8 +22,7 @@ These permits are the "Final Barrier" to construction. Fraud is high-stakes: dev
     </div>
     <div style="font-size: 2em;">🦅</div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
         <strong>Permittee:</strong> <span data-bracket="start" data-for="fill">[</span>SKYLINE DEVELOPERS LLC<br>
@@ -36,8 +35,7 @@ These permits are the "Final Barrier" to construction. Fraud is high-stakes: dev
         <strong>Expires:</strong> 14 MAR 2028
       </div>
     </div>
-
-    <div style="background: #f0f4f8; border: 1px solid #ddd; padding: 15px; margin-bottom: 20px; border-radius: 4px;">
+<div style="background: #f0f4f8; border: 1px solid #ddd; padding: 15px; margin-bottom: 20px; border-radius: 4px;">
       <h4 style="margin-top: 0; color: #002d62; font-size: 0.9em; border-bottom: 1px solid #ccc; padding-bottom: 5px; text-transform: uppercase;">Authorized Impact & Mitigation</h4>
       <table style="width: 100%; font-size: 0.85em;">
         <tr>
@@ -58,13 +56,11 @@ These permits are the "Final Barrier" to construction. Fraud is high-stakes: dev
         </tr>
       </table>
     </div>
-
-    <div style="font-size: 0.75em; color: #666; line-height: 1.4; font-style: italic; text-align: center;">
+<div style="font-size: 0.75em; color: #666; line-height: 1.4; font-style: italic; text-align: center;">
       This permit authorizes the discharge of dredged or fill material into jurisdictional waters. Any expansion of fill beyond the verified acreage is a federal violation.
     </div>
   </div>
-
-  <div style="padding: 20px; background: #fdfdfd; border-top: 1px solid #002d62; text-align: center;">
+<div style="padding: 20px; background: #fdfdfd; border-top: 1px solid #002d62; text-align: center;">
     <div data-verify-line="fill" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: USACE doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:usace.army.mil/v/NWP20268844 <span data-bracket="end" data-for="fill">]</span>

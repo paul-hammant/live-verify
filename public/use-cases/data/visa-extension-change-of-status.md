@@ -22,8 +22,7 @@ These documents are the "Proof of Legal Presence." Fraud is rampant: people whos
     </div>
     <div style="width: 45px; height: 45px; background: #999; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-weight: bold; font-size: 0.6em; text-align: center;">DHS</div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
         <strong>Receipt Number:</strong> <span data-bracket="start" data-for="extension">[</span>WAC-26-992-28877<br>
@@ -36,20 +35,17 @@ These documents are the "Proof of Legal Presence." Fraud is rampant: people whos
         <strong>Case Type:</strong> I-129 Extension
       </div>
     </div>
-
-    <div style="background: #e8f5e9; border: 1px solid #c8e6c9; padding: 15px; border-radius: 4px; margin-bottom: 20px;">
+<div style="background: #e8f5e9; border: 1px solid #c8e6c9; padding: 15px; border-radius: 4px; margin-bottom: 20px;">
       <h4 style="margin-top: 0; color: #2e7d32; font-size: 0.9em; border-bottom: 1px solid #c8e6c9; padding-bottom: 5px; text-transform: uppercase;">Approval Notice</h4>
       <p style="font-size: 0.9em; color: #333;">
         The above petition for an extension of stay has been approved. The beneficiary's status is extended from <strong>03/15/2026</strong> to <strong>03/14/2029</strong>.
       </p>
     </div>
-
-    <div style="border: 2px dashed #ccc; padding: 10px; text-align: center; font-size: 0.8em; color: #666;">
+<div style="border: 2px dashed #ccc; padding: 10px; text-align: center; font-size: 0.8em; color: #666;">
       [ NEW DETACHABLE I-94 RECORD ATTACHED BELOW ]
     </div>
   </div>
-
-  <div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #999; text-align: center;">
+<div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #999; text-align: center;">
     <div data-verify-line="extension" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #002d62; font-weight: bold;"
       title="Demo only: USCIS doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:uscis.gov/v/i797/WAC2699228877 <span data-bracket="end" data-for="extension">]</span>

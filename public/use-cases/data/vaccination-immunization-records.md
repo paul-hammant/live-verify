@@ -22,14 +22,12 @@ The problem is that physical cards are easy to fake. During the COVID-19 pandemi
     </div>
     <div style="width: 40px; height: 40px; background: #999; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-weight: bold; font-size: 0.6em; text-align: center;">CDC</div>
   </div>
-
-  <div style="padding: 20px;">
+<div style="padding: 20px;">
     <div style="border-bottom: 1px solid #000; padding-bottom: 10px; margin-bottom: 15px;">
       <div style="font-size: 0.9em;"><strong>Patient Name:</strong> <span data-bracket="start" data-for="vax">[</span>SMITH, SARAH JANE</div>
       <div style="font-size: 0.9em;"><strong>Date of Birth:</strong> 05/15/1985</div>
     </div>
-
-    <table style="width: 100%; border-collapse: collapse; font-size: 0.8em; text-align: left;">
+<table style="width: 100%; border-collapse: collapse; font-size: 0.8em; text-align: left;">
       <tr style="border-bottom: 1px solid #000;">
         <th style="padding: 5px;">Vaccine</th>
         <th style="padding: 5px;">Product / Lot</th>
@@ -50,8 +48,7 @@ The problem is that physical cards are easy to fake. During the COVID-19 pandemi
       </tr>
     </table>
   </div>
-
-  <div style="padding: 15px; background: #fffbe6; border-top: 1px dashed #999; text-align: center;">
+<div style="padding: 15px; background: #fffbe6; border-top: 1px dashed #999; text-align: center;">
     <div data-verify-line="vax" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Healthcare providers don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:cvs.com/vax/v/SMITH992288 <span data-bracket="end" data-for="vax">]</span>

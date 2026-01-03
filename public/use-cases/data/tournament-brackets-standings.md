@@ -25,11 +25,9 @@ These documents are the "Career Proof" for athletes and teams. They are used to 
       <div style="font-size: 0.7em;">SEASON: 2026-Q1</div>
     </div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <h4 style="margin-top: 0; border-bottom: 2px solid #1a237e; padding-bottom: 5px; color: #1a237e;">SEMIFINALS & FINALS SUMMARY</h4>
-    
-    <div style="display: grid; grid-template-columns: 1fr auto 1fr; gap: 10px; align-items: center; margin: 20px 0; font-size: 0.9em;">
+<div style="display: grid; grid-template-columns: 1fr auto 1fr; gap: 10px; align-items: center; margin: 20px 0; font-size: 0.9em;">
       <!-- Semifinal 1 -->
       <div style="border: 1px solid #ccc; padding: 10px; background: #f9f9f9;">
         <div style="display: flex; justify-content: space-between;"><span>(1) Unseen Univ.</span> <strong>2</strong></div>
@@ -49,13 +47,11 @@ These documents are the "Career Proof" for athletes and teams. They are used to 
       <div style="font-size: 1.5em; color: #ccc;">&rarr;</div>
       <div></div>
     </div>
-
-    <div style="font-size: 0.8em; line-height: 1.4; color: #555; font-style: italic; background: #fffbe6; padding: 10px; border: 1px solid #ffe58f;">
+<div style="font-size: 0.8em; line-height: 1.4; color: #555; font-style: italic; background: #fffbe6; padding: 10px; border: 1px solid #ffe58f;">
       <strong>Official Note:</strong> Match #42 (Finals) verified by Lead Official Sarah Jenkins. No protests pending.
     </div>
   </div>
-
-  <div style="padding: 20px; background: #fff; border-top: 1px dashed #bbb; text-align: center;">
+<div style="padding: 20px; background: #fff; border-top: 1px dashed #bbb; text-align: center;">
     <div data-verify-line="bracket" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #1a237e; font-weight: bold;"
       title="Demo only: Sports leagues don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:elite-champs.com/v/TIER1-2026-FIN <span data-bracket="end" data-for="bracket">]</span>

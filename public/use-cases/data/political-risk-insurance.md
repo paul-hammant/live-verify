@@ -25,8 +25,7 @@ These documents are the "Proof of Protection." Fraud is high-stakes: a developer
       <div style="font-size: 0.7em;">Ref: <span data-bracket="start" data-for="pri">[</span>PRI-2026-992288</div>
     </div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
         <strong>Insured:</strong> GLOBAL ENERGY PARTNERS LLC<br>
@@ -39,8 +38,7 @@ These documents are the "Proof of Protection." Fraud is high-stakes: a developer
         <strong>Currency:</strong> USD (Verified)
       </div>
     </div>
-
-    <div style="background: #fdfdfd; border: 1px solid #ddd; padding: 15px; margin-bottom: 20px;">
+<div style="background: #fdfdfd; border: 1px solid #ddd; padding: 15px; margin-bottom: 20px;">
       <h4 style="margin-top: 0; color: #003366; font-size: 0.9em; border-bottom: 1px solid #ccc; padding-bottom: 5px;">VERIFIED COVERAGE SCOPE</h4>
       <table style="width: 100%; font-size: 0.85em;">
         <tr>
@@ -61,13 +59,11 @@ These documents are the "Proof of Protection." Fraud is high-stakes: a developer
         </tr>
       </table>
     </div>
-
-    <div style="font-size: 0.8em; color: #666; font-style: italic; border-top: 1px solid #eee; padding-top: 10px;">
+<div style="font-size: 0.8em; color: #666; font-style: italic; border-top: 1px solid #eee; padding-top: 10px;">
       This summary is a verified extract of Policy #PRI-992288. Verification confirms coverage availability at the time of query.
     </div>
   </div>
-
-  <div style="padding: 20px; background: #f5f5f5; border-top: 1px solid #000; text-align: center;">
+<div style="padding: 20px; background: #f5f5f5; border-top: 1px solid #000; text-align: center;">
     <div data-verify-line="pri" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Specialist insurers don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:zurich.com/pri/v/992288-NORDIA <span data-bracket="end" data-for="pri">]</span>

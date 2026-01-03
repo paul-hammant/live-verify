@@ -26,16 +26,13 @@ If a pilot presents a fake certificate to land in London or Dubai, they are flyi
       <div style="font-size: 0.8em;">Policy #: AV-998877-26</div>
     </div>
   </div>
-
-  <div style="padding: 30px;">
+<div style="padding: 30px;">
     <h2 style="text-align: center; color: #002244; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Certificate of Insurance</h2>
-
-    <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.9em; line-height: 1.6; color: #333;">
       <p><strong>Insured:</strong> <span data-bracket="start" data-for="aviation">[</span>Cyberdyne Systems Charter, LLC<br>
       <strong>Aircraft:</strong> 2024 Gulfstream G650ER<br>
       <strong>Registration (N-Number):</strong> N101CS</p>
-
-      <table style="width: 100%; border-collapse: collapse; margin-top: 15px;">
+<table style="width: 100%; border-collapse: collapse; margin-top: 15px;">
         <tr style="background: #f0f4f8; border-bottom: 2px solid #002244;">
           <th style="text-align: left; padding: 8px;">Coverage Type</th>
           <th style="text-align: right; padding: 8px;">Limit of Liability</th>
@@ -53,15 +50,12 @@ If a pilot presents a fake certificate to land in London or Dubai, they are flyi
           <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">Included in CSL</td>
         </tr>
       </table>
-
-      <p style="margin-top: 20px;"><strong>Policy Period:</strong> January 1, 2026 to January 1, 2027</p>
+<p style="margin-top: 20px;"><strong>Policy Period:</strong> January 1, 2026 to January 1, 2027</p>
     </div>
-
-    <div style="margin-top: 30px; border: 1px solid #ccc; padding: 10px; font-size: 0.8em; color: #555; background: #fafafa;">
+<div style="margin-top: 30px; border: 1px solid #ccc; padding: 10px; font-size: 0.8em; color: #555; background: #fafafa;">
       <strong>Note:</strong> This certificate is issued as a matter of information only and confers no rights upon the holder.
     </div>
-
-    <div data-verify-line="aviation" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="aviation" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Global Aerospace doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:global-aerospace.com/v/N101CS-2026 <span data-bracket="end" data-for="aviation">]</span>
     </div>

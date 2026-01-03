@@ -14,28 +14,23 @@ furtherDerivations: 1
     U.S. CUSTOMS CLASS 3 WAREHOUSE (#998877)<br>
     -------------------------------------------
   </div>
-
-  <div style="font-size: 0.9em; line-height: 1.4;">
+<div style="font-size: 0.9em; line-height: 1.4;">
     <p><strong>Importer of Record:</strong> <span data-bracket="start" data-for="bonded">[</span>Swiss Watch Imports, Inc.<br>
     <strong>Customs Entry #:</strong> 110-9988776-5<br>
     <strong>Warehouse Receipt:</strong> WR-2026-402</p>
-
-    <p><strong>Cargo Description:</strong><br>
+<p><strong>Cargo Description:</strong><br>
     10 Pallets: Luxury Watches (High Value)<br>
     Total Weight: 1,200 KG<br>
     Declared Value: $ 2,500,000.00</p>
-
-    <div style="background: #eee; padding: 10px; margin: 15px 0; border: 1px solid #999;">
+<div style="background: #eee; padding: 10px; margin: 15px 0; border: 1px solid #999;">
       <strong>STATUS: ADMITTED UNDER BOND</strong><br>
       Entry Date: 15 MAR 2026<br>
       Bond Holder: Great American Insurance Co.<br>
       Duty Deferral Status: ACTIVE
     </div>
-
-    <p style="font-size: 0.8em;">Goods may not be removed until Customs Form 7501 is processed and duties paid.</p>
+<p style="font-size: 0.8em;">Goods may not be removed until Customs Form 7501 is processed and duties paid.</p>
   </div>
-
-  <div data-verify-line="bonded" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="bonded" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Warehouse operator doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:global-bonded.com/receipts/v/WR402 <span data-bracket="end" data-for="bonded">]</span>
   </div>

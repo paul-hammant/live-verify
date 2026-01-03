@@ -24,30 +24,24 @@ Fraudsters often create fake notices to get into secure government facilities or
       <div style="font-size: 0.8em;">U.S. Citizenship and Immigration Services</div>
     </div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
       <div style="border: 1px solid #000; padding: 5px 10px; font-weight: bold;">I-797C</div>
       <div style="text-align: right; font-family: monospace;">Case #: IOE9988776655</div>
     </div>
-
-    <h2 style="text-align: center; font-size: 1.2em; margin-bottom: 20px; text-transform: uppercase;">ASC APPOINTMENT NOTICE</h2>
-
-    <div style="font-size: 0.95em; line-height: 1.5; color: #333;">
+<h2 style="text-align: center; font-size: 1.2em; margin-bottom: 20px; text-transform: uppercase;">ASC APPOINTMENT NOTICE</h2>
+<div style="font-size: 0.95em; line-height: 1.5; color: #333;">
       <p><strong>Applicant:</strong> <span data-bracket="start" data-for="bio">[</span>SARAH JANE SMITH</p>
-      
-      <div style="background: #f9f9f9; border: 1px solid #eee; padding: 15px; margin: 15px 0;">
+<div style="background: #f9f9f9; border: 1px solid #eee; padding: 15px; margin: 15px 0;">
         <p><strong>Date of Appointment:</strong> March 15, 2026<br>
         <strong>Time of Appointment:</strong> 10:00 AM</p>
         <p><strong>Location:</strong><br>
         Application Support Center (ASC)<br>
         123 Main St, Suite 400, San Francisco, CA</p>
       </div>
-
-      <p style="font-size: 0.85em;">PLEASE BRING THIS ENTIRE NOTICE AND VALID PHOTO ID TO YOUR APPOINTMENT.</p>
+<p style="font-size: 0.85em;">PLEASE BRING THIS ENTIRE NOTICE AND VALID PHOTO ID TO YOUR APPOINTMENT.</p>
     </div>
-
-    <div data-verify-line="bio" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="bio" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: USCIS doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:uscis.gov/asc/v/IOE9988776655 <span data-bracket="end" data-for="bio">]</span>
     </div>

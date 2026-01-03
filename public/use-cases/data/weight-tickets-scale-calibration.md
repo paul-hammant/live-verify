@@ -19,8 +19,7 @@ Because weight determines the price of multimillion-dollar shipments, these tick
     <div style="font-weight: bold; font-size: 1.3em;">MIDWEST CERTIFIED SCALES</div>
     <div style="font-size: 0.8em; opacity: 0.9;">NIST Handbook 44 Compliant • Scale ID: #9922-A</div>
   </div>
-
-  <div style="padding: 20px;">
+<div style="padding: 20px;">
     <div style="display: flex; justify-content: space-between; font-size: 0.9em; margin-bottom: 20px;">
       <div>
         <strong>Ticket #:</strong> <span data-bracket="start" data-for="weight">[</span>WT-2026-8844<br>
@@ -33,8 +32,7 @@ Because weight determines the price of multimillion-dollar shipments, these tick
         <strong>Location:</strong> JOLIET, IL
       </div>
     </div>
-
-    <table style="width: 100%; border-collapse: collapse; font-size: 1em; margin-bottom: 20px;">
+<table style="width: 100%; border-collapse: collapse; font-size: 1em; margin-bottom: 20px;">
       <tr>
         <td style="padding: 5px;">GROSS WEIGHT:</td>
         <td style="text-align: right; font-weight: bold;">78,450 LB</td>
@@ -48,13 +46,11 @@ Because weight determines the price of multimillion-dollar shipments, these tick
         <td style="text-align: right; padding: 10px 5px; color: #d32f2f;"><strong>46,350 LB</strong></td>
       </tr>
     </table>
-
-    <div style="font-size: 0.75em; color: #555; text-align: center; font-style: italic;">
+<div style="font-size: 0.75em; color: #555; text-align: center; font-style: italic;">
       This weight is certified accurate by a licensed Weighmaster. Verification protects trade integrity.
     </div>
   </div>
-
-  <div style="padding: 15px; background: #fff; border-top: 1px solid #333; text-align: center;">
+<div style="padding: 15px; background: #fff; border-top: 1px solid #333; text-align: center;">
     <div data-verify-line="weight" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Scale operators don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:midwest-scales.com/v/WT20268844 <span data-bracket="end" data-for="weight">]</span>

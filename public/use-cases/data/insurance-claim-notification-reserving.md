@@ -21,22 +21,18 @@ OCR-to-hash with **Independent Witnessing** solves the "Completeness Problem." T
     <div style="font-weight: bold; font-size: 1.2em; color: #002244;">GLOBAL LIABILITY INSURERS</div>
     <div style="font-size: 0.8em;">FIRST NOTICE OF LOSS (FNOL) RECEIPT</div>
   </div>
-
-  <div style="font-size: 0.95em; line-height: 1.4;">
+<div style="font-size: 0.95em; line-height: 1.4;">
     <p><strong>Claim Ref:</strong> <span data-bracket="start" data-for="claim">[</span>CL-2026-887766<br>
     <strong>Policy:</strong> PL-992288-XJ<br>
     <strong>Insured:</strong> Springfield Manufacturing</p>
-
-    <div style="border: 1px solid #ccc; padding: 10px; margin: 15px 0; background: #f9f9f9;">
+<div style="border: 1px solid #ccc; padding: 10px; margin: 15px 0; background: #f9f9f9;">
       <strong>Event Date:</strong> JAN 02, 2026<br>
       <strong>Reported:</strong> JAN 02, 2026 14:22:10 UTC<br>
       <strong>Type:</strong> Employers' Liability (Injury)
     </div>
-
-    <p style="font-size: 0.85em;">This receipt confirms that your claim has been registered in our system. Any alteration to this record will invalidate the witnessed hash.</p>
+<p style="font-size: 0.85em;">This receipt confirms that your claim has been registered in our system. Any alteration to this record will invalidate the witnessed hash.</p>
   </div>
-
-  <div data-verify-line="claim" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="claim" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Insurers don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:globalliability.com/v/CL887766 <span data-bracket="end" data-for="claim">]</span>
   </div>

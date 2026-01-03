@@ -24,8 +24,7 @@ Filing the wrong information, or filing without authority, can result in penalti
     <strong>Authorized Person:</strong> Elizabeth Park<br>
     <strong>Role:</strong> Company Secretary<br>
     <strong>Issued:</strong> January 1, 2026</p>
-
-    <div style="background: #f0f4f8; padding: 15px; margin: 15px 0; border-left: 3px solid #003366;">
+<div style="background: #f0f4f8; padding: 15px; margin: 15px 0; border-left: 3px solid #003366;">
       <p style="margin: 0;"><strong>Authority to sign and file:</strong></p>
       <p style="margin: 10px 0 0;">• Companies House annual confirmation statement</p>
       <p style="margin: 5px 0 0;">• Director/secretary appointment and resignation forms</p>
@@ -37,12 +36,10 @@ Filing the wrong information, or filing without authority, can result in penalti
       <p style="margin: 5px 0 0;">• Directors' report</p>
       <p style="margin: 5px 0 0;">• Articles amendments</p>
     </div>
-
-    <p style="font-size: 0.85em; color: #666;">Delegated by: Board of Directors<br>
+<p style="font-size: 0.85em; color: #666;">Delegated by: Board of Directors<br>
     Company Reg: 05678901<br>
     Valid until: December 31, 2026</p>
-
-    <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
+<div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="regulatoryfilingauth" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
         verify:ashford-holdings.com/cosec/EP-2026 <span data-bracket="end" data-for="regulatoryfilingauth">]</span>
@@ -75,8 +72,7 @@ Filing the wrong information, or filing without authority, can result in penalti
     <strong>Authorized Person:</strong> James Liu<br>
     <strong>Role:</strong> Tax Director<br>
     <strong>Issued:</strong> January 1, 2026</p>
-
-    <div style="background: #fff5f5; padding: 15px; margin: 15px 0; border: 1px solid #8B0000;">
+<div style="background: #fff5f5; padding: 15px; margin: 15px 0; border: 1px solid #8B0000;">
       <p style="margin: 0;"><strong>Authority to sign and file:</strong></p>
       <p style="margin: 10px 0 0;">• Corporation tax returns (CT600)</p>
       <p style="margin: 5px 0 0;">• VAT returns</p>
@@ -84,11 +80,9 @@ Filing the wrong information, or filing without authority, can result in penalti
       <p style="margin: 5px 0 0;">• R&D tax credit claims</p>
       <p style="margin: 5px 0 0;">• Transfer pricing documentation</p>
     </div>
-
-    <p style="font-size: 0.85em; color: #666;">Delegated by: CFO<br>
+<p style="font-size: 0.85em; color: #666;">Delegated by: CFO<br>
     Agent authorization: Filed with HMRC</p>
-
-    <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
+<div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="regulatoryfilingauth" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
         verify:ashford-holdings.com/tax-auth/JL-2026 <span data-bracket="end" data-for="regulatoryfilingauth">]</span>
@@ -108,19 +102,16 @@ Filing the wrong information, or filing without authority, can result in penalti
     <p><strong>To:</strong> Ernst & Young LLP<br>
     <strong>Re:</strong> Audit of Ashford Holdings Ltd for year ending 31 December 2025<br>
     <strong>Date:</strong> March 15, 2026</p>
-
-    <div style="background: #f5fff5; padding: 15px; margin: 15px 0; border: 1px solid #228B22;">
+<div style="background: #f5fff5; padding: 15px; margin: 15px 0; border: 1px solid #228B22;">
       <p style="margin: 0;"><strong>We confirm that to the best of our knowledge:</strong></p>
       <p style="margin: 10px 0 0;">• Financial statements are prepared in accordance with applicable standards</p>
       <p style="margin: 5px 0 0;">• All transactions have been recorded and disclosed</p>
       <p style="margin: 5px 0 0;">• We have disclosed all known frauds or suspected frauds</p>
       <p style="margin: 5px 0 0;">• We have provided access to all relevant records</p>
     </div>
-
-    <p style="font-size: 0.85em; color: #666;">Signed: CEO and CFO<br>
+<p style="font-size: 0.85em; color: #666;">Signed: CEO and CFO<br>
     On behalf of the Board of Directors</p>
-
-    <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
+<div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="regulatoryfilingauth" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
         verify:ashford-holdings.com/audit/REP-2025 <span data-bracket="end" data-for="regulatoryfilingauth">]</span>

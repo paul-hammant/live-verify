@@ -14,8 +14,7 @@ furtherDerivations: 1
     OFFICIAL INVENTORY SUMMARY REPORT<br>
     -----------------------------------
   </div>
-
-  <div style="font-size: 0.85em; line-height: 1.4;">
+<div style="font-size: 0.85em; line-height: 1.4;">
     <div style="display: flex; justify-content: space-between;">
       <div>
         <strong>Depositor:</strong> <span data-bracket="start" data-for="inventory">[</span>Premium Seafood Imports, Inc.<br>
@@ -26,8 +25,7 @@ furtherDerivations: 1
         <strong>Date:</strong> 15 MAR 2026
       </div>
     </div>
-
-    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
       <tr style="border-bottom: 1px solid #000; font-weight: bold;">
         <th style="text-align: left;">Lot Number</th>
         <th style="text-align: left;">Description</th>
@@ -48,12 +46,10 @@ furtherDerivations: 1
         <td style="text-align: right;">$ 1,242,500.00</td>
       </tr>
     </table>
-
-    <div style="background: #eee; padding: 10px; font-size: 0.8em;">
+<div style="background: #eee; padding: 10px; font-size: 0.8em;">
       <strong>Note:</strong> This report is a verified record of inventory physically present in the warehouse as of the audit date.
     </div>
-
-    <div data-verify-line="inventory" style="border-top: 1px dashed #999; margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #555; text-align: center;"
+<div data-verify-line="inventory" style="border-top: 1px dashed #999; margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #555; text-align: center;"
       title="Demo only: Warehouse doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:global-coldstorage.com/inventory/v/INV992288 <span data-bracket="end" data-for="inventory">]</span>
     </div>

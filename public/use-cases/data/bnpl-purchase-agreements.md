@@ -13,8 +13,7 @@ furtherDerivations: 1
     <div style="font-weight: bold; font-size: 1.4em;">Affirm</div>
     <div style="font-size: 0.8em; opacity: 0.8;">LOAN AGREEMENT & TRUTH IN LENDING DISCLOSURE</div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="display: flex; justify-content: space-between; font-size: 0.9em; margin-bottom: 20px;">
       <div>
         <strong>Loan ID:</strong> AF-99887766<br>
@@ -24,11 +23,9 @@ furtherDerivations: 1
         <strong>Date:</strong> March 15, 2026
       </div>
     </div>
-
-    <div style="font-size: 0.95em; line-height: 1.5; color: #333; border: 1px solid #000; padding: 15px; margin-bottom: 20px;">
+<div style="font-size: 0.95em; line-height: 1.5; color: #333; border: 1px solid #000; padding: 15px; margin-bottom: 20px;">
       <p><strong>Borrower:</strong> <span data-bracket="start" data-for="bnpl">[</span><strong>JOHN SMITH</strong></p>
-      
-      <table style="width: 100%; border-collapse: collapse;">
+<table style="width: 100%; border-collapse: collapse;">
         <tr>
           <td>Amount Financed:</td>
           <td style="text-align: right;">$ 1,445.00</td>
@@ -47,12 +44,10 @@ furtherDerivations: 1
         </tr>
       </table>
     </div>
-
-    <div style="font-size: 0.8em; color: #555;">
+<div style="font-size: 0.8em; color: #555;">
       By signing below, you agree to the terms of this installment loan.
     </div>
-
-    <div data-verify-line="bnpl" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="bnpl" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Affirm doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:affirm.com/loans/v/AF998877 <span data-bracket="end" data-for="bnpl">]</span>
     </div>

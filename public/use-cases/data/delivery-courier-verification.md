@@ -21,21 +21,18 @@ OCR-to-hash allows a resident or security guard to scan the driver's ID badge or
     <div style="font-weight: bold; font-size: 1.4em; letter-spacing: -1px; margin-right: 10px;">FedEx</div>
     <div style="font-size: 0.8em; opacity: 0.9; border-left: 1px solid rgba(255,255,255,0.5); padding-left: 10px;">Express / Ground<br>Authorized Personnel</div>
   </div>
-
-  <div style="padding: 20px; display: flex; background: linear-gradient(to bottom, #fff, #f9f9f9);">
+<div style="padding: 20px; display: flex; background: linear-gradient(to bottom, #fff, #f9f9f9);">
     <div style="width: 100px; margin-right: 20px;">
       <div style="width: 100px; height: 125px; background: #eee; border: 2px solid #ff6600; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #aaa; font-size: 0.7em; text-align: center;">[COURIER PHOTO]</div>
     </div>
     <div style="flex-grow: 1;">
       <div style="font-size: 0.75em; color: #888; text-transform: uppercase;">Courier</div>
       <div style="font-size: 1.3em; font-weight: bold; margin: 0 0 12px 0; color: #333;"><span data-bracket="start" data-for="courier">[</span>Mark S 7766</div>
-
-      <div style="font-size: 0.75em; color: #888; text-transform: uppercase;">Hub</div>
+<div style="font-size: 0.75em; color: #888; text-transform: uppercase;">Hub</div>
       <div style="font-size: 0.9em; font-weight: bold;">Memphis</div>
     </div>
   </div>
-
-  <div style="padding: 0 20px 20px 20px;">
+<div style="padding: 0 20px 20px 20px;">
     <div style="font-size: 0.7em; color: #666; text-align: center; margin-bottom: 15px; line-height: 1.3;">
       Scan to verify employment status and current delivery route authorization.
     </div>
@@ -141,8 +138,7 @@ Scammers often wear fake high-visibility vests to get inside apartment buildings
       <div style="font-size: 0.8em; opacity: 0.8;">OFFICIAL DELIVERY PARTNER</div>
     </div>
   </div>
-
-  <div style="padding: 20px; display: flex;">
+<div style="padding: 20px; display: flex;">
     <div style="width: 100px; margin-right: 15px;">
       <div style="width: 100px; height: 125px; background: #eee; display: flex; align-items: center; justify-content: center; color: #777; border: 1px solid #ccc; border-radius: 4px;">[PHOTO ID]</div>
     </div>
@@ -155,8 +151,7 @@ Scammers often wear fake high-visibility vests to get inside apartment buildings
       </div>
     </div>
   </div>
-
-  <div style="padding: 0 20px 20px 20px;">
+<div style="padding: 0 20px 20px 20px;">
     <p style="font-size: 0.75em; color: #555; font-style: italic; text-align: center;">
       Verified via the Amazon Logistics Partner Network. Scan to confirm driver's current on-duty status and route authorization.
     </p>

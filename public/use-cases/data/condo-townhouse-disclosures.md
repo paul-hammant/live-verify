@@ -24,23 +24,18 @@ Sellers often "Delete" the scary pages of these reports to trick buyers. Verifie
     <div style="font-weight: bold; font-size: 1.2em;">PREMIER PROPERTY MANAGEMENT, LLC</div>
     <div style="font-size: 0.85em; color: #666;">Official HOA Resale Disclosure</div>
   </div>
-
-  <h3 style="text-align: center; text-transform: uppercase; margin-bottom: 20px;">Condominium Resale Certificate</h3>
-
-  <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+<h3 style="text-align: center; text-transform: uppercase; margin-bottom: 20px;">Condominium Resale Certificate</h3>
+<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <p><strong>Association:</strong> <span data-bracket="start" data-for="condo">[</span>Skyline Towers Condominium Association<br>
     <strong>Unit Address:</strong> 400 Skyline Blvd, Unit 12A, Austin, TX</p>
-
-    <div style="background: #f9f9f9; padding: 15px; border: 1px solid #eee; margin: 20px 0;">
+<div style="background: #f9f9f9; padding: 15px; border: 1px solid #eee; margin: 20px 0;">
       <p><strong>Monthly HOA Dues:</strong> $ 450.00 (Current)</p>
       <p><strong>Special Assessments:</strong> $ 12,500.00 (Balcony Repair - Due July 2026)</p>
       <p><strong>Reserve Fund Status:</strong> $ 1,240,500 (Adequate)</p>
     </div>
-
-    <p>There are no known violations of the CC&Rs or outstanding architectural citations against this unit.</p>
+<p>There are no known violations of the CC&Rs or outstanding architectural citations against this unit.</p>
   </div>
-
-  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div style="width: 45%;">
       <div style="border-top: 1px solid #000; padding-top: 5px; font-style: italic;">Sarah Miller, Manager</div>
       <div style="font-size: 0.8em; color: #777;">March 15, 2026</div>
@@ -49,8 +44,7 @@ Sellers often "Delete" the scary pages of these reports to trick buyers. Verifie
       Ref #: HOA-992288
     </div>
   </div>
-
-  <div data-verify-line="condo" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="condo" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Property manager doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:premier-mgmt.com/hoas/v/SKYLINE-12A <span data-bracket="end" data-for="condo">]</span>
   </div>

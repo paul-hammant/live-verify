@@ -13,24 +13,19 @@ furtherDerivations: 2
     <div style="font-weight: bold; font-size: 1.2em;">ACME GLOBAL HUB, INC.</div>
     <div style="font-size: 0.85em; color: #666;">Human Resources • Employment Verification Office</div>
   </div>
-
-  <h3 style="text-align: center; text-transform: uppercase; margin-bottom: 20px;">Verification of Employment (VOE)</h3>
-
-  <div style="font-size: 1em; line-height: 1.6; color: #333; text-align: justify;">
+<h3 style="text-align: center; text-transform: uppercase; margin-bottom: 20px;">Verification of Employment (VOE)</h3>
+<div style="font-size: 1em; line-height: 1.6; color: #333; text-align: justify;">
     <p>To Whom It May Concern,</p>
     <p>This letter confirms the employment and salary details for the individual named below, as requested for mortgage underwriting purposes:</p>
-
-    <div style="margin: 20px 0; border-left: 4px solid #000; padding-left: 20px; background: #f9f9f9; padding-top: 10px; padding-bottom: 10px;">
+<div style="margin: 20px 0; border-left: 4px solid #000; padding-left: 20px; background: #f9f9f9; padding-top: 10px; padding-bottom: 10px;">
       <p><strong>Employee:</strong> <span data-bracket="start" data-for="mort-voe">[</span><strong>John D. Smith</strong><br>
       <strong>Job Title:</strong> Senior Systems Architect<br>
       <strong>Start Date:</strong> March 1, 2020 (Current/Active)<br>
       <strong>Base Salary:</strong> $ 145,000.00 / Annual</p>
     </div>
-
-    <p>This verification is issued directly from our corporate payroll system and is valid for 30 days from the date hereof.</p>
+<p>This verification is issued directly from our corporate payroll system and is valid for 30 days from the date hereof.</p>
   </div>
-
-  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div>
       <div style="border-top: 1px solid #000; width: 200px; padding-top: 5px; font-style: italic;">Sarah Miller, HR Director</div>
       <div style="font-size: 0.8em; color: #777;">March 15, 2026</div>
@@ -39,8 +34,7 @@ furtherDerivations: 2
       Ref #: VOE-992288-S
     </div>
   </div>
-
-  <div data-verify-line="mort-voe" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="mort-voe" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Acme Corp doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:acme-global.com/hr/v/992288-JDS <span data-bracket="end" data-for="mort-voe">]</span>
   </div>
@@ -126,8 +120,7 @@ _[Content merged from: mortgage-income-verification]_
       Period: 03/01/26 - 03/15/26
     </div>
   </div>
-
-  <div style="font-size: 0.9em; line-height: 1.4;">
+<div style="font-size: 0.9em; line-height: 1.4;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
       <div>
         <strong>Employee:</strong> <span data-bracket="start" data-for="income">[</span><strong>JOHN JACOB DOE</strong><br>
@@ -138,8 +131,7 @@ _[Content merged from: mortgage-income-verification]_
         <strong>Pay Date:</strong> 03/15/2026
       </div>
     </div>
-
-    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
       <tr style="border-bottom: 1px solid #000; font-weight: bold;">
         <th style="text-align: left;">Earnings Description</th>
         <th style="text-align: right;">Hours</th>
@@ -164,12 +156,10 @@ _[Content merged from: mortgage-income-verification]_
         <td style="text-align: right;">$ 24,252.10</td>
       </tr>
     </table>
-
-    <div style="background: #eee; padding: 10px; font-size: 0.8em; font-style: italic; text-align: center;">
+<div style="background: #eee; padding: 10px; font-size: 0.8em; font-style: italic; text-align: center;">
       Verification confirms the earnings and withholdings match the employer's certified payroll ledger.
     </div>
-
-    <div data-verify-line="income" style="border-top: 1px dashed #999; margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="income" style="border-top: 1px dashed #999; margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Acme Corp doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:acme-global.com/payroll/v/992288-2026-05 <span data-bracket="end" data-for="income">]</span>
     </div>

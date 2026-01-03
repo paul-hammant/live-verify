@@ -17,8 +17,7 @@ furtherDerivations: 1
     <p><strong>Warrant No:</strong> MSL-ROT-88429<br>
     <strong>Depositor:</strong> Global Metals Trading Corp<br>
     <strong>Date:</strong> 14-OCT-2025</p>
-    
-    <table style="width: 100%; border-collapse: collapse; margin: 10px 0;">
+<table style="width: 100%; border-collapse: collapse; margin: 10px 0;">
       <tr style="border-bottom: 1px solid #000;">
         <td style="padding: 4px;"><strong>Commodity</strong></td>
         <td style="padding: 4px;"><strong>Grade</strong></td>
@@ -30,16 +29,13 @@ furtherDerivations: 1
         <td style="padding: 4px;">498.24 MT</td>
       </tr>
     </table>
-    
-    <p><strong>Location:</strong> Bay 12, Stack 4-9<br>
+<p><strong>Location:</strong> Bay 12, Stack 4-9<br>
     <strong>Brand:</strong> Codelco<br>
     <strong>Seal Numbers:</strong> 9941A - 9982A</p>
-
-    <div style="margin-top: 15px; border: 2px solid #d00; color: #d00; padding: 5px; text-align: center; font-weight: bold; transform: rotate(-2deg);">
+<div style="margin-top: 15px; border: 2px solid #d00; color: #d00; padding: 5px; text-align: center; font-weight: bold; transform: rotate(-2deg);">
       NON-NEGOTIABLE COPY
     </div>
-
-    <div style="margin-top: 15px; font-size: 0.8em; text-align: center;">
+<div style="margin-top: 15px; font-size: 0.8em; text-align: center;">
       <strong>Verify authenticity and lien status:</strong><br>
       verify:warrants.metro-logistics.com/check
     </div>
@@ -137,8 +133,7 @@ Because they represent high-value physical assets, these receipts are a primary 
     <div style="font-weight: bold; font-size: 1.4em;">METRO STORAGE & LOGISTICS</div>
     <div style="font-size: 0.8em; opacity: 0.9;">Global Bonded Warehousing • Facility ID: ROT-42</div>
   </div>
-
-  <div style="padding: 20px;">
+<div style="padding: 20px;">
     <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.85em; margin-bottom: 20px;">
       <div>
         <strong>Depositor:</strong> <span data-bracket="start" data-for="warehouse">[</span>GLOBAL TECH IMPORTS LLC<br>
@@ -151,8 +146,7 @@ Because they represent high-value physical assets, these receipts are a primary 
         <strong>Location:</strong> AISLE 4, BIN 12-B
       </div>
     </div>
-
-    <table style="width: 100%; border-collapse: collapse; font-size: 0.85em; margin-bottom: 20px;">
+<table style="width: 100%; border-collapse: collapse; font-size: 0.85em; margin-bottom: 20px;">
       <tr style="border-top: 2px solid #000; border-bottom: 1px solid #000; background: #eee;">
         <th style="text-align: left; padding: 8px;">SKU / Description</th>
         <th style="text-align: center; padding: 8px;">Units</th>
@@ -170,13 +164,11 @@ Because they represent high-value physical assets, these receipts are a primary 
         <td style="text-align: right; padding: 10px;">$ 250,000.00</td>
       </tr>
     </table>
-
-    <div style="font-size: 0.75em; color: #555; line-height: 1.4; border: 1px solid #999; padding: 10px; background: #fff;">
+<div style="font-size: 0.75em; color: #555; line-height: 1.4; border: 1px solid #999; padding: 10px; background: #fff;">
       <strong>Terms:</strong> Goods are stored subject to the Standard Warehouse Contract. Negotiable only if endorsed. Lien active for unpaid storage fees.
     </div>
   </div>
-
-  <div style="padding: 20px; background: #fdfdfd; border-top: 1px solid #000; text-align: center;">
+<div style="padding: 20px; background: #fdfdfd; border-top: 1px solid #000; text-align: center;">
     <div data-verify-line="warehouse" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Warehouses don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:metro-logistics.com/v/WR20268844 <span data-bracket="end" data-for="warehouse">]</span>

@@ -21,19 +21,14 @@ A **Verified NDA** adds a cryptographic hash to the signature page. This proves:
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="text-align: center; font-weight: bold; margin-bottom: 30px; font-size: 1.2em; text-transform: uppercase; letter-spacing: 1px;">Mutual Non-Disclosure Agreement</div>
-
-  <div style="font-size: 1em; line-height: 1.6; text-align: justify; color: #000;">
+<div style="font-size: 1em; line-height: 1.6; text-align: justify; color: #000;">
     <p>This Agreement is made effective as of <strong>January 15, 2026</strong>, by and between:</p>
-    
-    <p><strong>Disclosing Party:</strong> Acme Global Hub, Inc.<br>
+<p><strong>Disclosing Party:</strong> Acme Global Hub, Inc.<br>
     <strong>Receiving Party:</strong> <span data-bracket="start" data-for="nda">[</span><strong>Consultant Dynamics, LLC</strong></p>
-
-    <p><strong>1. Confidential Information.</strong> Receiving Party shall not disclose any technical data, designs, trade secrets, or unreleased software code related to the "Project X" initiative...</p>
-    
-    <p><strong>2. Term.</strong> This protection lasts for <strong>5 years</strong> from the date of disclosure.</p>
+<p><strong>1. Confidential Information.</strong> Receiving Party shall not disclose any technical data, designs, trade secrets, or unreleased software code related to the "Project X" initiative...</p>
+<p><strong>2. Term.</strong> This protection lasts for <strong>5 years</strong> from the date of disclosure.</p>
   </div>
-
-  <div style="margin-top: 40px; border-top: 2px solid #000; padding-top: 15px;">
+<div style="margin-top: 40px; border-top: 2px solid #000; padding-top: 15px;">
     <div style="float: left; width: 45%;">
       Signed:<br>
       <em style="font-family: cursive;">/s/ Jane Doe</em>, CEO<br>
@@ -46,12 +41,10 @@ A **Verified NDA** adds a cryptographic hash to the signature page. This proves:
     </div>
     <div style="clear: both;"></div>
   </div>
-
-  <div style="margin-top: 40px; font-size: 0.8em; color: #666; text-align: center;">
+<div style="margin-top: 40px; font-size: 0.8em; color: #666; text-align: center;">
     Page 1 of 8  |  Contract ID: ACME-NDA-2026-042
   </div>
-
-  <div data-verify-line="nda" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="nda" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
     title="Demo only: Acme doesn't yet offer verification&#10;endpoints, so this is illustrative">
     verify:acme-corp.legal/v/NDA2026-P1 <span data-bracket="end" data-for="nda">]</span>
   </div>

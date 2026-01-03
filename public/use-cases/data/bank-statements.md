@@ -26,8 +26,7 @@ Verifying a bank statement directly against the bank's domain ensures that the b
       <div style="font-size: 0.9em;">Page 1 of 4</div>
     </div>
   </div>
-
-  <div style="padding: 30px;">
+<div style="padding: 30px;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 30px;">
       <div>
         <strong>Account Holder:</strong><br>
@@ -41,8 +40,7 @@ Verifying a bank statement directly against the bank's domain ensures that the b
         <strong>Period:</strong> Mar 01 - Mar 31, 2026
       </div>
     </div>
-
-    <h3 style="border-bottom: 2px solid #004a99; padding-bottom: 5px;">ACCOUNT SUMMARY</h3>
+<h3 style="border-bottom: 2px solid #004a99; padding-bottom: 5px;">ACCOUNT SUMMARY</h3>
     <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
       <tr>
         <td style="padding: 8px 0;">Beginning Balance</td>
@@ -61,12 +59,10 @@ Verifying a bank statement directly against the bank's domain ensures that the b
         <td style="text-align: right;">$ 1,500,000.42</td>
       </tr>
     </table>
-
-    <div style="font-size: 0.8em; color: #555; font-style: italic;">
+<div style="font-size: 0.8em; color: #555; font-style: italic;">
       Verification protects every line of this statement. Alteration of balances is a federal crime.
     </div>
-
-    <div data-verify-line="bank" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="bank" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Chase doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:chase.com/statements/v/x9y8z7 <span data-bracket="end" data-for="bank">]</span>
     </div>

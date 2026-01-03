@@ -21,17 +21,12 @@ If this document is faked or altered, regulators might let a bankrupt insurance 
     <div style="font-weight: bold; font-size: 1.2em; color: #2c3e50;">MILLIMAN & ROBERTSON, LLC</div>
     <div style="font-size: 0.9em; color: #7f8c8d;">Actuaries and Consultants</div>
   </div>
-
-  <h3 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 30px;">Statement of Actuarial Opinion</h3>
-
-  <div style="font-size: 0.95em; line-height: 1.6; text-align: justify; color: #2c3e50;">
+<h3 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 30px;">Statement of Actuarial Opinion</h3>
+<div style="font-size: 0.95em; line-height: 1.6; text-align: justify; color: #2c3e50;">
     <p><strong>To the Board of Directors of Apex Indemnity Corp:</strong></p>
-
-    <p>I, <span data-bracket="start" data-for="actuarial">[</span><strong>John Smith, FCAS, MAAA</strong>, am a member of the American Academy of Actuaries and meet its Qualification Standards to render the actuarial opinion contained herein.</p>
-
-    <p>I have examined the actuarial assumptions and methods used in determining loss reserves as of <strong>December 31, 2025</strong>.</p>
-
-    <p>In my opinion, the amounts carried in the balance sheet on account of the items identified:</p>
+<p>I, <span data-bracket="start" data-for="actuarial">[</span><strong>John Smith, FCAS, MAAA</strong>, am a member of the American Academy of Actuaries and meet its Qualification Standards to render the actuarial opinion contained herein.</p>
+<p>I have examined the actuarial assumptions and methods used in determining loss reserves as of <strong>December 31, 2025</strong>.</p>
+<p>In my opinion, the amounts carried in the balance sheet on account of the items identified:</p>
     <ol>
       <li>Meet the requirements of the insurance laws of the State of New York.</li>
       <li>Are computed in accordance with accepted actuarial standards and principles.</li>
@@ -39,13 +34,11 @@ If this document is faked or altered, regulators might let a bankrupt insurance 
     </ol>
     <p><strong>Opinion Type:</strong> REASONABLE (No material adverse deviation expected)</p>
   </div>
-
-  <div style="margin-top: 40px;">
+<div style="margin-top: 40px;">
     <div style="border-top: 1px solid #000; width: 200px; padding-top: 5px; font-style: italic;">John Smith, FCAS, MAAA</div>
     <div style="font-size: 0.8em; margin-top: 5px;">February 14, 2026</div>
   </div>
-
-  <div data-verify-line="actuarial" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="actuarial" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Actuarial firm doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:milliman.com/opinions/v/k2j3h4 <span data-bracket="end" data-for="actuarial">]</span>
   </div>

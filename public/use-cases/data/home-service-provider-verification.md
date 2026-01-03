@@ -27,8 +27,7 @@ The **Verified Badge** is the worker's digital or physical ID. It proves:
       <div style="font-size: 0.8em; opacity: 0.8;">OFFICIAL LICENSE & SAFETY CLEARANCE</div>
     </div>
   </div>
-
-  <div style="padding: 20px; display: flex;">
+<div style="padding: 20px; display: flex;">
     <div style="width: 100px; margin-right: 15px;">
       <div style="width: 100px; height: 125px; background: #eee; display: flex; align-items: center; justify-content: center; color: #777; border: 1px solid #ccc; border-radius: 4px;">[PHOTO ID]</div>
     </div>
@@ -42,8 +41,7 @@ The **Verified Badge** is the worker's digital or physical ID. It proves:
       </div>
     </div>
   </div>
-
-  <div style="padding: 0 20px 20px 20px;">
+<div style="padding: 0 20px 20px 20px;">
     <p style="font-size: 0.75em; color: #555; font-style: italic; text-align: center;">
       Verified via the State Licensing Board. Includes current general liability insurance and criminal background clearance.
     </p>

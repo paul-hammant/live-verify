@@ -21,19 +21,14 @@ In high-stakes trials, lawyers sometimes "Edit" the expert's findings in the fin
     <div style="font-weight: bold; font-size: 1.2em;">ROUX FORENSIC ENGINEERING</div>
     <div style="font-size: 0.8em; color: #666;">Structural Failures • Accident Reconstruction</div>
   </div>
-
-  <h3 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px;">Rule 26 Expert Report</h3>
-
-  <div style="font-size: 1em; line-height: 1.6; color: #000; text-align: justify;">
+<h3 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px;">Rule 26 Expert Report</h3>
+<div style="font-size: 1em; line-height: 1.6; color: #000; text-align: justify;">
     <p><strong>Case:</strong> <em>Acme v. Globochem</em> (Case #: 26-CIV-9922)<br>
     <strong>Subject:</strong> <span data-bracket="start" data-for="expert">[</span>Structural Analysis of SkyTower Crane Collapse</p>
-
-    <p>I, Dr. David Miller, PE, have been retained by Counsel for the Plaintiff to provide an independent engineering opinion. Based on my review of the metallurgical data and the site photos, it is my professional opinion that the weld failure in the primary jib was the proximate cause of the collapse.</p>
-
-    <p><strong>Total Estimated Damages:</strong> $ 12,500,000.00</p>
+<p>I, Dr. David Miller, PE, have been retained by Counsel for the Plaintiff to provide an independent engineering opinion. Based on my review of the metallurgical data and the site photos, it is my professional opinion that the weld failure in the primary jib was the proximate cause of the collapse.</p>
+<p><strong>Total Estimated Damages:</strong> $ 12,500,000.00</p>
   </div>
-
-  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div style="width: 45%;">
       <div style="border-top: 1px solid #000; padding-top: 5px; font-style: italic;">David Miller, Ph.D., P.E.</div>
       <div style="font-size: 0.8em; color: #777;">Licensed Professional Engineer</div>
@@ -42,8 +37,7 @@ In high-stakes trials, lawyers sometimes "Edit" the expert's findings in the fin
       March 15, 2026
     </div>
   </div>
-
-  <div data-verify-line="expert" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="expert" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Engineering firm doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:roux-forensics.com/reports/v/26CIV9922 <span data-bracket="end" data-for="expert">]</span>
   </div>

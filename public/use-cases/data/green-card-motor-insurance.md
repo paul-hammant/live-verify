@@ -21,8 +21,7 @@ Because these cards are required for legal entry, scammers often sell "Fake Gree
     <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">INTERNATIONAL MOTOR INSURANCE CARD</h2>
     <div style="font-size: 0.8em; font-weight: bold;">CARTE INTERNATIONALE D'ASSURANCE AUTOMOBILE</div>
   </div>
-
-  <div style="padding: 25px; color: #1b5e20;">
+<div style="padding: 25px; color: #1b5e20;">
     <div style="display: flex; justify-content: space-between; font-size: 0.9em; margin-bottom: 20px;">
       <div>
         <strong>1. Valid:</strong> From 15/03/2026 To 14/04/2026<br>
@@ -33,23 +32,19 @@ Because these cards are required for legal entry, scammers often sell "Fake Gree
         ABC 123D (GB)
       </div>
     </div>
-
-    <div style="font-size: 0.95em; line-height: 1.4; border: 1px solid #388e3c; padding: 15px; background: #fff;">
+<div style="font-size: 0.95em; line-height: 1.4; border: 1px solid #388e3c; padding: 15px; background: #fff;">
       <p><strong>4. Category of Vehicle:</strong> A (Car)</p>
       <p><strong>5. Make of Vehicle:</strong> Land Rover Defender</p>
       <p><strong>6. Policyholder:</strong> JOHN JACOB DOE</p>
-      
-      <p style="font-size: 0.85em; margin-top: 15px; border-top: 1px solid #eee; padding-top: 10px;">
+<p style="font-size: 0.85em; margin-top: 15px; border-top: 1px solid #eee; padding-top: 10px;">
         <strong>7. Insurer:</strong> ALLIANZ INSURANCE PLC (UK)<br>
         <strong>Address:</strong> 57 Ladymead, Guildford, Surrey
       </p>
     </div>
-
-    <div style="margin-top: 20px; font-size: 0.7em; text-align: justify;">
+<div style="margin-top: 20px; font-size: 0.7em; text-align: justify;">
       This card is valid in all countries of the European Union and those listed in Box 8. This document is issued by the authority of the Council of Bureaux.
     </div>
-
-    <div data-verify-line="green-card" style="border-top: 1px dashed #388e3c; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #333; text-align: center;"
+<div data-verify-line="green-card" style="border-top: 1px dashed #388e3c; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #333; text-align: center;"
       title="Demo only: Allianz doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:allianz.co.uk/greencard/v/992288ABC <span data-bracket="end" data-for="green-card">]</span>
     </div>

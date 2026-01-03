@@ -24,8 +24,7 @@ Do you let them in?
       <div style="font-size: 0.8em;">Authorized Field Representative</div>
     </div>
   </div>
-
-  <div style="padding: 15px; display: flex; gap: 15px;">
+<div style="padding: 15px; display: flex; gap: 15px;">
     <div style="width: 80px; height: 100px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #777; font-size: 0.7em;">[PHOTO]</div>
     <div style="flex-grow: 1;">
       <div style="font-size: 1.1em; font-weight: bold;"><span data-bracket="start" data-for="badge">[</span>SARAH JENKINS</div>
@@ -37,8 +36,7 @@ Do you let them in?
       </div>
     </div>
   </div>
-
-  <div style="padding: 0 15px 15px 15px;">
+<div style="padding: 0 15px 15px 15px;">
     <div data-verify-line="badge" style="border-top: 1px dashed #999; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Thames Water doesn't yet offer verification endpoints, so this is illustrative">
       verify:thameswater.co.uk/staff/v/44821 <span data-bracket="end" data-for="badge">]</span>

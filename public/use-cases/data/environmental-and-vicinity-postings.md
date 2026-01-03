@@ -21,8 +21,7 @@ OCR-to-hash allows a neighbor, tenant, or regulator to scan the posting to verif
     <h3 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">Energy Performance Certificate</h3>
     <div style="font-size: 0.8em; opacity: 0.9; margin-top: 5px;">OFFICIAL BUILDING RATING</div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 10px;">
       <div style="font-size: 0.9em; line-height: 1.4;">
         <strong>Property:</strong><br>
@@ -34,8 +33,7 @@ OCR-to-hash allows a neighbor, tenant, or regulator to scan the posting to verif
         <strong>Valid To:</strong> 15 MAR 2036
       </div>
     </div>
-
-    <!-- Energy Rating Bars -->
+<!-- Energy Rating Bars -->
     <div style="margin: 20px 0;">
       <div style="display: flex; align-items: center; margin-bottom: 2px;">
         <div style="background: #008037; color: #fff; width: 30%; padding: 3px 10px; font-weight: bold; font-size: 0.8em;">A</div>
@@ -51,13 +49,11 @@ OCR-to-hash allows a neighbor, tenant, or regulator to scan the posting to verif
         <div style="background: #ffec00; color: #000; width: 75%; padding: 3px 10px; font-weight: bold; font-size: 0.8em;">D</div>
       </div>
     </div>
-
-    <div style="font-size: 0.8em; color: #555; font-style: italic; background: #f9f9f9; padding: 10px; border: 1px solid #eee; border-radius: 4px;">
+<div style="font-size: 0.8em; color: #555; font-style: italic; background: #f9f9f9; padding: 10px; border: 1px solid #eee; border-radius: 4px;">
       <strong>Auditor Note:</strong> Upgrade to LED lighting and triple-glazing verified. Est. CO2 Emissions: 14.2 tonnes/year.
     </div>
   </div>
-
-  <div style="padding: 20px; background: #fff; border-top: 1px dashed #2e7d32; text-align: center;">
+<div style="padding: 20px; background: #fff; border-top: 1px dashed #2e7d32; text-align: center;">
     <div data-verify-line="env" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #2e7d32; font-weight: bold;"
       title="Demo only: Environmental agencies don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:gov.uk/epc/v/992288776655 <span data-bracket="end" data-for="env">]</span>

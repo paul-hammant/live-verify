@@ -16,29 +16,23 @@ furtherDerivations: 1
       March 15, 2026
     </div>
   </div>
-
-  <h3 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; color: #1a237e; border-bottom: 2px solid #1a237e; padding-bottom: 10px;">Certification of Standard Table</h3>
-
-  <div style="font-size: 0.95em; line-height: 1.6; text-align: justify; color: #333; margin-top: 20px;">
+<h3 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; color: #1a237e; border-bottom: 2px solid #1a237e; padding-bottom: 10px;">Certification of Standard Table</h3>
+<div style="font-size: 0.95em; line-height: 1.6; text-align: justify; color: #333; margin-top: 20px;">
     <p>The Society of Actuaries hereby certifies the following mortality table for use in life insurance valuation and pricing:</p>
-
-    <div style="background: #fdfdfd; padding: 15px; border: 1px solid #eee; margin: 20px 0;">
+<div style="background: #fdfdfd; padding: 15px; border: 1px solid #eee; margin: 20px 0;">
       <p><strong>Table Name:</strong> <span data-bracket="start" data-for="mortality">[</span>2026 Commissioners Standard Ordinary (CSO)</p>
       <p><strong>Basis:</strong> U.S. General Population (2020-2024 Experience)</p>
       <p><strong>Segments:</strong> Male/Female, Smoker/Non-Smoker, Ultimate/Select</p>
     </div>
-
-    <p>This table has been verified for technical accuracy and complies with the requirements of the NAIC Valuation Manual.</p>
+<p>This table has been verified for technical accuracy and complies with the requirements of the NAIC Valuation Manual.</p>
   </div>
-
-  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div style="border-top: 1px solid #000; width: 200px; padding-top: 5px; font-style: italic;">Robert Miller, FSA</div>
     <div style="text-align: right;">
       <div style="width: 60px; height: 60px; border: 2px solid #1a237e; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; color: #1a237e; font-weight: bold;">SOA<br>SEAL</div>
     </div>
   </div>
-
-  <div data-verify-line="mortality" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="mortality" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: SOA doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:soa.org/tables/v/CSO-2026-V1 <span data-bracket="end" data-for="mortality">]</span>
   </div>

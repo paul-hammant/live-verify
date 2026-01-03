@@ -22,8 +22,7 @@ These documents are "Financial Recovery" records. Fraud is high-stakes: claimant
     </div>
     <div style="font-size: 2em;">🏥</div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div style="font-size: 0.9em; line-height: 1.5;">
         <strong>Claimant:</strong> <span data-bracket="start" data-for="claim">[</span>SARAH JANE SMITH<br>
@@ -36,8 +35,7 @@ These documents are "Financial Recovery" records. Fraud is high-stakes: claimant
         <strong>Status:</strong> SETTLED
       </div>
     </div>
-
-    <div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin-bottom: 20px; border-radius: 4px;">
+<div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin-bottom: 20px; border-radius: 4px;">
       <h4 style="margin-top: 0; color: #0033a0; font-size: 0.9em; border-bottom: 1px solid #ccc; padding-bottom: 5px;">VERIFIED PAYOUT SUMMARY</h4>
       <table style="width: 100%; font-size: 0.9em;">
         <tr>
@@ -58,13 +56,11 @@ These documents are "Financial Recovery" records. Fraud is high-stakes: claimant
         </tr>
       </table>
     </div>
-
-    <div style="font-size: 0.75em; color: #666; font-style: italic; text-align: center;">
+<div style="font-size: 0.75em; color: #666; font-style: italic; text-align: center;">
       This advice is a verified digital record of the claim settlement. Payment has been issued via Wire Transfer to the account on file.
     </div>
   </div>
-
-  <div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #bbb; text-align: center;">
+<div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #bbb; text-align: center;">
     <div data-verify-line="claim" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #0033a0; font-weight: bold;"
       title="Demo only: Travel insurers don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:allianz.com/v/CL20268844 <span data-bracket="end" data-for="claim">]</span>

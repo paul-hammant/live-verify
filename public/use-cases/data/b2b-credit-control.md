@@ -24,8 +24,7 @@ The classic fraud: someone claims purchasing authority they don't have, places o
     <strong>Authorized Person:</strong> Sarah Chen<br>
     <strong>Role:</strong> Procurement Manager<br>
     <strong>Issued:</strong> January 15, 2026</p>
-
-    <div style="background: #f0f4f8; padding: 15px; margin: 15px 0; border-left: 3px solid #2e5090;">
+<div style="background: #f0f4f8; padding: 15px; margin: 15px 0; border-left: 3px solid #2e5090;">
       <p style="margin: 0;"><strong>This confirms that the named individual is authorized to:</strong></p>
       <p style="margin: 10px 0 0;">• Place purchase orders up to £50,000 per order</p>
       <p style="margin: 5px 0 0;">• Approve invoices for payment</p>
@@ -34,12 +33,10 @@ The classic fraud: someone claims purchasing authority they don't have, places o
       <p style="margin: 5px 0 0;">• Capital expenditure over £10,000</p>
       <p style="margin: 5px 0 0;">• Contracts exceeding 12 months</p>
     </div>
-
-    <p style="font-size: 0.85em; color: #666;">Issued by: J. Williams, Finance Director<br>
+<p style="font-size: 0.85em; color: #666;">Issued by: J. Williams, Finance Director<br>
     Company Reg: 12345678<br>
     Valid until: December 31, 2026 (or earlier revocation)</p>
-
-    <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
+<div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="b2bcreditcontrol" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
         verify:meridian-mfg.co.uk/auth/SC-2026-0115 <span data-bracket="end" data-for="b2bcreditcontrol">]</span>
@@ -90,18 +87,15 @@ The classic fraud: someone claims purchasing authority they don't have, places o
     <strong>Requested Credit Limit:</strong> £75,000<br>
     <strong>Payment Terms Requested:</strong> Net 60<br>
     <strong>Application Date:</strong> February 1, 2026</p>
-
-    <div style="background: #f5fff5; padding: 15px; margin: 15px 0; border: 1px solid #228B22;">
+<div style="background: #f5fff5; padding: 15px; margin: 15px 0; border: 1px solid #228B22;">
       <p style="margin: 0;"><strong>Trade References Provided:</strong></p>
       <p style="margin: 10px 0 0;">• ABC Supplies Ltd — 3 years trading</p>
       <p style="margin: 5px 0 0;">• Industrial Parts Co — 2 years trading</p>
       <p style="margin: 5px 0 0;">• Metro Logistics — 18 months trading</p>
     </div>
-
-    <p style="font-size: 0.85em; color: #666;">Signed: M. Roberts, Director<br>
+<p style="font-size: 0.85em; color: #666;">Signed: M. Roberts, Director<br>
     Bank: Barclays Business, Sort: 20-00-00</p>
-
-    <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
+<div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="b2bcreditcontrol" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
         verify:northern-components.com/credit/APP-2026-0201 <span data-bracket="end" data-for="b2bcreditcontrol">]</span>
@@ -126,8 +120,7 @@ The classic fraud: someone claims purchasing authority they don't have, places o
     <p><strong>Reference For:</strong> Northern Components Ltd<br>
     <strong>Reference From:</strong> ABC Supplies Ltd<br>
     <strong>Date:</strong> February 5, 2026</p>
-
-    <div style="background: #f5f5f5; padding: 15px; margin: 15px 0; border-left: 3px solid #666;">
+<div style="background: #f5f5f5; padding: 15px; margin: 15px 0; border-left: 3px solid #666;">
       <p style="margin: 0;"><strong>Trading History:</strong></p>
       <p style="margin: 10px 0 0;">Account opened: March 2023</p>
       <p style="margin: 5px 0 0;">Current credit limit: £50,000</p>
@@ -135,11 +128,9 @@ The classic fraud: someone claims purchasing authority they don't have, places o
       <p style="margin: 5px 0 0;">Payment record: Consistently within terms</p>
       <p style="margin: 5px 0 0;">Recommendation: Suitable for requested credit</p>
     </div>
-
-    <p style="font-size: 0.85em; color: #666;">Provided by: Credit Control Department<br>
+<p style="font-size: 0.85em; color: #666;">Provided by: Credit Control Department<br>
     ABC Supplies Ltd</p>
-
-    <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
+<div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="b2bcreditcontrol" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
         verify:abc-supplies.com/refs/NC-2026-0205 <span data-bracket="end" data-for="b2bcreditcontrol">]</span>

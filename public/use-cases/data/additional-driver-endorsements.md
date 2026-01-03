@@ -22,8 +22,7 @@ These documents are the "Permission to Drive." Fraud is high-frequency: individu
     </div>
     <div style="font-size: 2em;">🚗</div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div style="font-size: 0.9em; line-height: 1.5;">
         <strong>Policyholder:</strong> ROBERT J. MILLER<br>
@@ -35,8 +34,7 @@ These documents are the "Permission to Drive." Fraud is high-frequency: individu
         <strong>Issued:</strong> 15 MAR 2026
       </div>
     </div>
-
-    <div style="background: #e7f3ff; border: 1px solid #b8daff; padding: 15px; border-radius: 4px; margin-bottom: 20px;">
+<div style="background: #e7f3ff; border: 1px solid #b8daff; padding: 15px; border-radius: 4px; margin-bottom: 20px;">
       <h4 style="margin-top: 0; color: #004085; font-size: 0.85em; text-transform: uppercase; border-bottom: 1px solid #b8daff; padding-bottom: 5px;">VERIFIED ADDITIONAL DRIVER</h4>
       <p style="margin: 10px 0; font-size: 1.1em; font-weight: bold; color: #000;">MICHAEL CHEN</p>
       <div style="display: grid; grid-template-columns: 1fr 1fr; font-size: 0.85em; color: #333;">
@@ -44,13 +42,11 @@ These documents are the "Permission to Drive." Fraud is high-frequency: individu
         <div style="text-align: right;"><strong>Ends:</strong> 22 MAR 2026</div>
       </div>
     </div>
-
-    <div style="font-size: 0.75em; color: #666; font-style: italic; text-align: center;">
+<div style="font-size: 0.75em; color: #666; font-style: italic; text-align: center;">
       "Coverage is extended only to the named operator above while driving with the owner's permission. Verification protects against unauthorized policy alteration."
     </div>
   </div>
-
-  <div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #999; text-align: center;">
+<div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #999; text-align: center;">
     <div data-verify-line="endorse" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #0056b3; font-weight: bold;"
       title="Demo only: Insurers don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:safeguard-ins.com/v/END99228877 <span data-bracket="end" data-for="endorse">]</span>

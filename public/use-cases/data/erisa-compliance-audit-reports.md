@@ -21,23 +21,18 @@ If a company is in financial trouble, they might "Edit" this report to hide a fu
     <div style="font-weight: bold; font-size: 1.2em;">MILLIMAN ACTUARIAL CONSULTING</div>
     <div style="font-size: 0.85em; color: #666;">Certified ERISA Audit Group</div>
   </div>
-
-  <h3 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; color: #000; border-bottom: 2px solid #000; padding-bottom: 10px;">ERISA Compliance Audit Report</h3>
-
-  <div style="font-size: 0.95em; line-height: 1.6; color: #333; margin-top: 20px;">
+<h3 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; color: #000; border-bottom: 2px solid #000; padding-bottom: 10px;">ERISA Compliance Audit Report</h3>
+<div style="font-size: 0.95em; line-height: 1.6; color: #333; margin-top: 20px;">
     <p><strong>Plan Sponsor:</strong> <span data-bracket="start" data-for="erisa">[</span>Initech Employees' 401(k) Plan<br>
     <strong>Plan Year Ending:</strong> December 31, 2025</p>
-
-    <div style="background: #fdfdfd; padding: 15px; border: 1px solid #eee; margin: 20px 0;">
+<div style="background: #fdfdfd; padding: 15px; border: 1px solid #eee; margin: 20px 0;">
       <p><strong>Compliance Result:</strong> <span style="color: #2e7d32; font-weight: bold;">UNQUALIFIED OPINION</span></p>
       <p><strong>Funding Status:</strong> 102.4% (Fully Funded)<br>
       <strong>Audit Scope:</strong> Form 5500 Schedule H Compliance</p>
     </div>
-
-    <p style="text-align: justify;">We have audited the financial statements of the Plan. In our opinion, the Plan was administered in accordance with the Employee Retirement Income Security Act of 1974 (ERISA).</p>
+<p style="text-align: justify;">We have audited the financial statements of the Plan. In our opinion, the Plan was administered in accordance with the Employee Retirement Income Security Act of 1974 (ERISA).</p>
   </div>
-
-  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div style="width: 45%;">
       <div style="border-top: 1px solid #000; padding-top: 5px; font-style: italic;">Robert Miller, EA, MSPA</div>
       <div style="font-size: 0.8em; color: #777;">Enrolled Actuary #26-9982</div>
@@ -46,8 +41,7 @@ If a company is in financial trouble, they might "Edit" this report to hide a fu
       Audit Ref: ERISA-2026-042
     </div>
   </div>
-
-  <div data-verify-line="erisa" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="erisa" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Milliman doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:milliman.com/erisa/v/INITECH-2025 <span data-bracket="end" data-for="erisa">]</span>
   </div>

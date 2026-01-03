@@ -21,24 +21,20 @@ OCR-to-hash allows a homeowner to scan the worker's ID badge to verify: **"Is th
     <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 1px;">CONSOLIDATED EDISON</div>
     <div style="font-size: 0.7em; text-align: right; opacity: 0.9;">AUTHORIZED<br>FIELD SERVICE</div>
   </div>
-
-  <div style="padding: 20px; display: flex; border-bottom: 1px solid #eee;">
+<div style="padding: 20px; display: flex; border-bottom: 1px solid #eee;">
     <div style="width: 100px; margin-right: 15px;">
       <div style="width: 100px; height: 125px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #999; font-size: 0.7em; text-align: center;">[PHOTO ID]</div>
     </div>
     <div style="flex-grow: 1;">
       <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Employee Name</div>
       <div style="font-size: 1.1em; font-weight: bold; margin: 0 0 10px 0; color: #333;"><span data-bracket="start" data-for="utility">[</span>DAVID R. CHEN</div>
-      
-      <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Employee ID</div>
+<div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Employee ID</div>
       <div style="font-size: 1em; font-weight: bold; margin: 0 0 10px 0;">ID: NY-992288</div>
-      
-      <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Specialization</div>
+<div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Specialization</div>
       <div style="font-size: 0.9em; font-weight: bold; color: #d32f2f;">GAS OPERATIONS</div>
     </div>
   </div>
-
-  <div style="padding: 15px; background: #f9f9f9;">
+<div style="padding: 15px; background: #f9f9f9;">
     <div style="font-size: 0.7em; color: #555; text-align: center; margin-bottom: 10px; line-height: 1.3;">
       Scan to verify current employment status and field access authorization.
     </div>
@@ -120,8 +116,7 @@ _[Content merged from: meter-reader-surveyor-verification]_
       <div style="font-size: 0.8em; opacity: 0.8;">OFFICIAL UTILITY SERVICE</div>
     </div>
   </div>
-
-  <div style="padding: 20px; display: flex;">
+<div style="padding: 20px; display: flex;">
     <div style="width: 100px; margin-right: 15px;">
       <div style="width: 100px; height: 125px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #777;">[PHOTO ID]</div>
     </div>
@@ -134,8 +129,7 @@ _[Content merged from: meter-reader-surveyor-verification]_
       </div>
     </div>
   </div>
-
-  <div style="padding: 0 20px 20px 20px;">
+<div style="padding: 0 20px 20px 20px;">
     <p style="font-size: 0.75em; color: #555; font-style: italic; text-align: center;">
       Verified via Con-Edison Field Operations. Bearer is authorized to enter property for official utility business.
     </p>

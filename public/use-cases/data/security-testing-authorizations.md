@@ -24,8 +24,7 @@ Without it, they're committing computer crimes. With it, they're performing a le
     <strong>Tester:</strong> SecureProbe Ltd (Claire Watson, Lead Tester)<br>
     <strong>Engagement ID:</strong> PT-2026-0042<br>
     <strong>Authorization Date:</strong> February 1, 2026</p>
-
-    <div style="background: #fff5f5; padding: 15px; margin: 15px 0; border: 1px solid #8B0000;">
+<div style="background: #fff5f5; padding: 15px; margin: 15px 0; border: 1px solid #8B0000;">
       <p style="margin: 0;"><strong>Scope of Authorization:</strong></p>
       <p style="margin: 10px 0 0;"><strong>In scope:</strong></p>
       <p style="margin: 5px 0 0;">• app.meridian-fs.com (production web application)</p>
@@ -37,11 +36,9 @@ Without it, they're committing computer crimes. With it, they're performing a le
       <p style="margin: 5px 0 0;">• Social engineering of staff</p>
       <p style="margin: 10px 0 0;"><strong>Testing window:</strong> February 15-28, 2026, 09:00-18:00 GMT</p>
     </div>
-
-    <p style="font-size: 0.85em; color: #666;">Authorized by: James Morton, CISO<br>
+<p style="font-size: 0.85em; color: #666;">Authorized by: James Morton, CISO<br>
     On behalf of: Meridian Financial Services Ltd</p>
-
-    <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
+<div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="securitytestingautho" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
         verify:meridian-fs.com/security/PT-2026-0042 <span data-bracket="end" data-for="securitytestingautho">]</span>
@@ -87,8 +84,7 @@ Without it, they're committing computer crimes. With it, they're performing a le
     <strong>Researcher:</strong> @security_jane (registered researcher)<br>
     <strong>Researcher ID:</strong> BB-7742<br>
     <strong>Registration Date:</strong> January 10, 2026</p>
-
-    <div style="background: #f5fff5; padding: 15px; margin: 15px 0; border: 1px solid #228B22;">
+<div style="background: #f5fff5; padding: 15px; margin: 15px 0; border: 1px solid #228B22;">
       <p style="margin: 0;"><strong>In-scope targets:</strong></p>
       <p style="margin: 10px 0 0;">• *.nexus-tech.com (all subdomains)</p>
       <p style="margin: 5px 0 0;">• Nexus Mobile App (iOS/Android)</p>
@@ -98,11 +94,9 @@ Without it, they're committing computer crimes. With it, they're performing a le
       <p style="margin: 5px 0 0;">• No accessing other users' data</p>
       <p style="margin: 5px 0 0;">• Report within 72 hours of discovery</p>
     </div>
-
-    <p style="font-size: 0.85em; color: #666;">Program managed via: HackerOne<br>
+<p style="font-size: 0.85em; color: #666;">Program managed via: HackerOne<br>
     Safe harbor: Yes (no legal action for good-faith research)</p>
-
-    <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
+<div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="securitytestingautho" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
         verify:nexus-tech.com/bounty/BB-7742 <span data-bracket="end" data-for="securitytestingautho">]</span>
@@ -129,8 +123,7 @@ Verification confirms: "Yes, this researcher is registered in our program and th
     <strong>Red Team:</strong> Crimson Cell Security Ltd<br>
     <strong>Exercise Code:</strong> THUNDERSTRIKE-26<br>
     <strong>Authorization Date:</strong> January 15, 2026</p>
-
-    <div style="background: #fff8f0; padding: 15px; margin: 15px 0; border: 1px solid #ff6600;">
+<div style="background: #fff8f0; padding: 15px; margin: 15px 0; border: 1px solid #ff6600;">
       <p style="margin: 0;"><strong>Authorized activities:</strong></p>
       <p style="margin: 10px 0 0;">• Physical intrusion attempts (non-destructive)</p>
       <p style="margin: 5px 0 0;">• Social engineering (specified targets only)</p>
@@ -139,11 +132,9 @@ Verification confirms: "Yes, this researcher is registered in our program and th
       <p style="margin: 10px 0 0;"><strong>Exercise window:</strong> March 1-31, 2026</p>
       <p style="margin: 5px 0 0;"><strong>Code word (if challenged):</strong> [Sealed]</p>
     </div>
-
-    <p style="font-size: 0.85em; color: #666;">Authorized by: CEO + CISO + General Counsel<br>
+<p style="font-size: 0.85em; color: #666;">Authorized by: CEO + CISO + General Counsel<br>
     Board notification: Yes</p>
-
-    <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
+<div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="securitytestingautho" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
         verify:nationalgrid.com/security/RT-2026-TS <span data-bracket="end" data-for="securitytestingautho">]</span>

@@ -22,8 +22,7 @@ Because these lead directly to high-paying jobs, "internship fraud" (faking a ce
       <div style="font-size: 1.5em; font-weight: bold; letter-spacing: 2px;">CERTIFICATE OF COMPLETION</div>
       <div style="font-size: 0.9em; font-style: italic;">Professional Development Program</div>
     </div>
-
-    <div style="margin: 30px 0;">
+<div style="margin: 30px 0;">
       <div style="font-size: 1.1em;">This is to certify that</div>
       <div style="font-size: 1.8em; font-weight: bold; margin: 10px 0; color: #2c3e50;"><span data-bracket="start" data-for="intern">[</span>SARAH J. MILLER</div>
       <div style="font-size: 1.1em;">has successfully completed a</div>
@@ -31,19 +30,16 @@ Because these lead directly to high-paying jobs, "internship fraud" (faking a ce
       <div style="font-size: 1.1em;">at</div>
       <div style="font-size: 1.4em; font-weight: bold; margin: 10px 0;">TECHNO-DYNAMIC SYSTEMS, LLC</div>
     </div>
-
-    <div style="margin: 30px 0; font-size: 0.95em;">
+<div style="margin: 30px 0; font-size: 0.95em;">
       <strong>Program Duration:</strong> June 1, 2025 to August 31, 2025<br>
       <strong>Total Hours:</strong> 480 Hours<br>
       <strong>Supervisor:</strong> Dr. David Chen, CTO
     </div>
-
-    <div style="display: flex; justify-content: space-around; margin-top: 40px;">
+<div style="display: flex; justify-content: space-around; margin-top: 40px;">
       <div style="width: 40%; border-top: 1px solid #000; padding-top: 5px; font-size: 0.8em;">Program Director Signature</div>
       <div style="width: 40%; border-top: 1px solid #000; padding-top: 5px; font-size: 0.8em;">Supervisor Signature</div>
     </div>
-
-    <div data-verify-line="intern" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="intern" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Company doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:techno-dynamic.com/interns/v/x9y8z7 <span data-bracket="end" data-for="intern">]</span>
     </div>

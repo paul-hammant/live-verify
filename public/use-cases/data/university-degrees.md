@@ -21,26 +21,19 @@ Beyond the diploma on the wall, the **Academic Transcript** is the granular reco
     <h1 style="margin: 0; font-size: 2.2em; color: #000;">University of Cambridge</h1>
     <div style="font-family: 'Times New Roman'; font-size: 1.1em; margin-top: 10px;">The Chancellor, Masters, and Scholars of the University</div>
   </div>
-
-  <p style="font-family: 'Times New Roman'; font-size: 1.3em; font-style: italic;">This is to certify that</p>
-  
-  <h2 style="font-family: 'Arial'; margin: 25px 0; font-size: 1.8em;"><span data-bracket="start" data-for="degree">[</span>SARAH JANE CONNOR</h2>
-  
-  <p style="font-family: 'Times New Roman'; font-size: 1.3em;">having satisfied the Examiners in the required course of study was on the 15th day of July, 2026 admitted to the degree of</p>
-  
-  <h3 style="margin: 30px 0; font-size: 1.6em; color: #003366;">Master of Science in Artificial Intelligence</h3>
-  
-  <p style="font-family: 'Arial'; font-weight: bold; font-size: 1.1em;">CLASS I (DISTINCTION)</p>
-
-  <div style="margin-top: 60px; display: flex; justify-content: space-between; align-items: center;">
+<p style="font-family: 'Times New Roman'; font-size: 1.3em; font-style: italic;">This is to certify that</p>
+<h2 style="font-family: 'Arial'; margin: 25px 0; font-size: 1.8em;"><span data-bracket="start" data-for="degree">[</span>SARAH JANE CONNOR</h2>
+<p style="font-family: 'Times New Roman'; font-size: 1.3em;">having satisfied the Examiners in the required course of study was on the 15th day of July, 2026 admitted to the degree of</p>
+<h3 style="margin: 30px 0; font-size: 1.6em; color: #003366;">Master of Science in Artificial Intelligence</h3>
+<p style="font-family: 'Arial'; font-weight: bold; font-size: 1.1em;">CLASS I (DISTINCTION)</p>
+<div style="margin-top: 60px; display: flex; justify-content: space-between; align-items: center;">
     <div style="width: 100px; height: 100px; border: 2px solid #d4af37; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; transform: rotate(-10deg);">UNIVERSITY<br>SEAL</div>
     <div style="text-align: right; font-family: 'Times New Roman'; font-size: 0.9em;">
       <em>Vice-Chancellor</em><br>
       <div style="border-top: 1px solid #000; width: 150px; margin-top: 5px;"></div>
     </div>
   </div>
-
-  <div data-verify-line="degree" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="degree" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: University doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:degrees.cam.ac.uk/v/CONNOR-AI-2026 <span data-bracket="end" data-for="degree">]</span>
   </div>

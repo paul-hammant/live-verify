@@ -22,24 +22,20 @@ The problem is that physical licenses—especially the wallet-sized cards carrie
     </div>
     <div style="font-size: 1.5em;">⚖️</div>
   </div>
-
-  <div style="padding: 20px; display: flex; background: #fff;">
+<div style="padding: 20px; display: flex; background: #fff;">
     <div style="width: 100px; margin-right: 15px;">
       <div style="width: 100px; height: 125px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #999; font-size: 0.7em; text-align: center;">[PHOTO ID]</div>
     </div>
     <div style="flex-grow: 1;">
       <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Practitioner Name</div>
       <div style="font-size: 1.2em; font-weight: bold; margin: 0 0 10px 0; color: #1a237e;"><span data-bracket="start" data-for="prof">[</span>DR. SARAH J. DOE</div>
-      
-      <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">License #</div>
+<div style="font-size: 0.75em; color: #777; text-transform: uppercase;">License #</div>
       <div style="font-size: 1em; font-weight: bold; margin: 0 0 10px 0;">ID: NY-992288-X</div>
-      
-      <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Profession</div>
+<div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Profession</div>
       <div style="font-size: 0.9em; font-weight: bold;">Physician & Surgeon</div>
     </div>
   </div>
-
-  <div style="padding: 0 20px 20px 20px; background: #fff;">
+<div style="padding: 0 20px 20px 20px; background: #fff;">
     <div style="font-size: 0.7em; color: #555; text-align: center; margin-bottom: 10px; line-height: 1.3;">
       Authorized to practice medicine in the State of New York. Scan to verify current license status and disciplinary history.
     </div>

@@ -26,15 +26,12 @@ If a carrier "sneaks" a normal kitchen fire into a "Hurricane" batch, they are c
       <div style="font-size: 0.8em;">Batch ID: CAT-2026-FL-04</div>
     </div>
   </div>
-
-  <div style="padding: 30px;">
+<div style="padding: 30px;">
     <h3 style="margin-top: 0; color: #d32f2f; border-bottom: 2px solid #d32f2f; padding-bottom: 5px;">CAT BATCH LOSS SUMMARY</h3>
-
-    <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.9em; line-height: 1.6; color: #333;">
       <p><strong>Event:</strong> <span data-bracket="start" data-for="cat">[</span>Hurricane Helena (PCS Code: 42)<br>
       <strong>Region:</strong> Florida Gulf Coast (Zip 337xx, 336xx)</p>
-
-      <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
         <tr style="background: #f5f5f5; border-bottom: 1px solid #d32f2f;">
           <th style="text-align: left; padding: 8px;">Claim Metric</th>
           <th style="text-align: right; padding: 8px;">Batch Total</th>
@@ -56,12 +53,10 @@ If a carrier "sneaks" a normal kitchen fire into a "Hurricane" batch, they are c
           <td style="text-align: right; padding: 8px;">$ 22,650,000.00</td>
         </tr>
       </table>
-
-      <p style="margin-top: 20px;"><strong>Audit Date:</strong> March 15, 2026<br>
+<p style="margin-top: 20px;"><strong>Audit Date:</strong> March 15, 2026<br>
       <strong>Note:</strong> All claims verified as occurring within CAT date window.</p>
     </div>
-
-    <div data-verify-line="cat" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="cat" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: State Farm doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:statefarm.com/claims/v/CAT2026FL04 <span data-bracket="end" data-for="cat">]</span>
     </div>

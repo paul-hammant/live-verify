@@ -25,8 +25,7 @@ The problem is that freight rates are volatile. To win business, some NVOCCs "ed
       <div style="font-size: 0.7em;">Ref: <span data-bracket="start" data-for="tariff">[</span>GFL-SHA-LAX-2026</div>
     </div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
         <strong>Origin:</strong> Shanghai, China (CNSHA)<br>
@@ -39,8 +38,7 @@ The problem is that freight rates are volatile. To win business, some NVOCCs "ed
         <strong>Service:</strong> Port-to-Port
       </div>
     </div>
-
-    <table style="width: 100%; border-collapse: collapse; font-size: 0.9em; margin-bottom: 25px;">
+<table style="width: 100%; border-collapse: collapse; font-size: 0.9em; margin-bottom: 25px;">
       <tr style="border-top: 2px solid #000; border-bottom: 1px solid #000; background: #f5f5f5;">
         <th style="text-align: left; padding: 10px;">Cost Component</th>
         <th style="text-align: center; padding: 10px;">Basis</th>
@@ -61,13 +59,11 @@ The problem is that freight rates are volatile. To win business, some NVOCCs "ed
         <td style="text-align: right; padding: 10px;">$ 3,670.00</td>
       </tr>
     </table>
-
-    <div style="font-size: 0.75em; color: #666; line-height: 1.4; border: 1px solid #ccc; padding: 10px; background: #fff;">
+<div style="font-size: 0.75em; color: #666; line-height: 1.4; border: 1px solid #ccc; padding: 10px; background: #fff;">
       <strong>FMC Compliance:</strong> This rate has been filed with the Federal Maritime Commission. Any deviations or unauthorized surcharges are subject to civil penalties under the Shipping Act of 1984.
     </div>
   </div>
-
-  <div style="padding: 20px; background: #f9f9f9; border-top: 1px solid #333; text-align: center;">
+<div style="padding: 20px; background: #f9f9f9; border-top: 1px solid #333; text-align: center;">
     <div data-verify-line="tariff" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: NVOCCs don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:gfreight.com/tariffs/v/SHA-LAX-2026 <span data-bracket="end" data-for="tariff">]</span>

@@ -19,26 +19,21 @@ These notices are critical for future travel. Fraud is high-stakes: applicants o
     <div style="font-weight: bold; font-size: 1.2em; color: #002d62;">EMBASSY OF THE UNITED STATES</div>
     <div style="font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">Consular Section • Visa Unit</div>
   </div>
-
-  <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <p>Date: March 15, 2026</p>
     <p><strong>Applicant:</strong> <span data-bracket="start" data-for="visa">[</span>JOHN JACOB DOE<br>
     <strong>Case Number:</strong> 202607442211</p>
-
-    <p>Dear Mr. Doe,</p>
+<p>Dear Mr. Doe,</p>
     <p>This is to inform you that you have been found ineligible for a nonimmigrant visa under the following section of the U.S. Immigration and Nationality Act (INA):</p>
-    
-    <div style="background: #fdf2f2; border: 1px solid #f8d7da; padding: 15px; margin: 20px 0; border-radius: 4px;">
+<div style="background: #fdf2f2; border: 1px solid #f8d7da; padding: 15px; margin: 20px 0; border-radius: 4px;">
       <div style="font-weight: bold; color: #d32f2f;">Section 214(b)</div>
       <p style="margin: 5px 0; font-size: 0.9em; color: #721c24;">
         You have not demonstrated that you have sufficiently strong ties to your home country that would compel you to leave the United States at the end of your temporary stay.
       </p>
     </div>
-
-    <p style="font-size: 0.85em; font-style: italic;">"A denial under this section is not permanent. You may reapply at any time if your circumstances change significantly."</p>
+<p style="font-size: 0.85em; font-style: italic;">"A denial under this section is not permanent. You may reapply at any time if your circumstances change significantly."</p>
   </div>
-
-  <div style="margin-top: 40px; border-top: 1px dashed #999; padding-top: 15px; text-align: center;">
+<div style="margin-top: 40px; border-top: 1px dashed #999; padding-top: 15px; text-align: center;">
     <div data-verify-line="visa" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #002d62; font-weight: bold;"
       title="Demo only: Embassies don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:state.gov/v/visa/202607442211 <span data-bracket="end" data-for="visa">]</span>

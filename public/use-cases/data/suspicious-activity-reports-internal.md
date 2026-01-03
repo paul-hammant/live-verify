@@ -25,22 +25,18 @@ These internal records are "Compliance Insurance." During a regulatory exam (e.g
       <div style="font-size: 0.7em;">SAR-Ref: <span data-bracket="start" data-for="sar">[</span>9922-8877-XJ</div>
     </div>
   </div>
-
-  <div style="padding: 25px; font-size: 0.9em; line-height: 1.6; color: #333;">
+<div style="padding: 25px; font-size: 0.9em; line-height: 1.6; color: #333;">
     <div style="background: #fffbe6; border: 1px solid #ffe58f; padding: 15px; margin-bottom: 20px; border-radius: 4px;">
       <strong style="color: #856404;">WARNING:</strong> This document contains sensitive AML information. Unauthorized disclosure is a federal crime.
     </div>
-
-    <p><strong>Filing Date:</strong> MARCH 15, 2026<br>
+<p><strong>Filing Date:</strong> MARCH 15, 2026<br>
     <strong>Primary Subject:</strong> GLOBAL SHELL HOLDINGS LLC<br>
     <strong>Institution:</strong> GOLIATH NATIONAL BANK (Main Hub)</p>
-
-    <div style="border-top: 1px solid #eee; margin-top: 15px; padding-top: 15px;">
+<div style="border-top: 1px solid #eee; margin-top: 15px; padding-top: 15px;">
       <strong>Summary of Suspicion:</strong><br>
       Rapid movement of funds (Structure: $9,900 x 5) from high-risk jurisdiction. No apparent business purpose. FinCEN E-Filing ID: #88442211.
     </div>
-
-    <div style="margin-top: 25px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 25px; display: flex; justify-content: space-between; align-items: flex-end;">
       <div>
         <div style="border-top: 1px solid #000; width: 200px; padding-top: 5px; font-style: italic;">Sarah Jenkins, AML Director</div>
         <div style="font-size: 0.8em; color: #777;">ID: #AML-992288</div>
@@ -48,8 +44,7 @@ These internal records are "Compliance Insurance." During a regulatory exam (e.g
       <div style="text-align: right; color: #d32f2f; font-weight: bold; font-size: 0.8em;">FILED WITH FINCEN</div>
     </div>
   </div>
-
-  <div style="padding: 20px; background: #f9f9f9; border-top: 1px dashed #d32f2f; text-align: center;">
+<div style="padding: 20px; background: #f9f9f9; border-top: 1px dashed #d32f2f; text-align: center;">
     <div data-verify-line="sar" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Banks don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:goliathbank.com/aml/v/SAR99228877 <span data-bracket="end" data-for="sar">]</span>

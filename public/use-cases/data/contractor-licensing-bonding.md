@@ -22,33 +22,27 @@ Homeowners use these "Pocket Cards" to verify who they are letting onto their ro
     <h2 style="margin: 0; text-transform: uppercase;">STATE CONTRACTORS BOARD</h2>
     <div style="font-size: 0.9em;">OFFICIAL LICENSE CERTIFICATE</div>
   </div>
-
-  <div style="padding: 30px;">
+<div style="padding: 30px;">
     <div style="text-align: center; border-bottom: 2px solid #004d40; padding-bottom: 10px; margin-bottom: 20px;">
       <h3 style="margin: 0; color: #004d40;">ACTIVE LICENSE</h3>
       <div style="font-size: 1.2em; font-weight: bold; margin-top: 5px;">License #: <span data-bracket="start" data-for="contractor">[</span>998877</div>
     </div>
-
-    <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
       <p><strong>Business Name:</strong> Apex Building Group, LLC<br>
       <strong>Principal:</strong> Robert J. Miller</p>
-
-      <div style="background: #f1f8e9; border: 1px solid #c5e1a5; padding: 10px; margin: 15px 0;">
+<div style="background: #f1f8e9; border: 1px solid #c5e1a5; padding: 10px; margin: 15px 0;">
         <strong>Classification:</strong> B - General Building Contractor<br>
         <strong>Bond Status:</strong> Verified Active ($25,000)<br>
         <strong>Bonding Co:</strong> Travelers Casualty & Surety
       </div>
-
-      <p><strong>Issued:</strong> January 15, 2024<br>
+<p><strong>Issued:</strong> January 15, 2024<br>
       <strong>Expires:</strong> January 31, 2027</p>
     </div>
-
-    <div style="margin-top: 30px; display: flex; align-items: center; justify-content: center; border: 1px solid #ccc; padding: 10px; border-radius: 4px; background: #fafafa;">
+<div style="margin-top: 30px; display: flex; align-items: center; justify-content: center; border: 1px solid #ccc; padding: 10px; border-radius: 4px; background: #fafafa;">
       <div style="width: 50px; height: 50px; border: 2px solid #004d40; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; color: #004d40; font-weight: bold; transform: rotate(-10deg);">SEAL</div>
       <div style="margin-left: 15px; font-size: 0.85em; font-style: italic;">"Protecting the public through professional licensing."</div>
     </div>
-
-    <div data-verify-line="contractor" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="contractor" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: State Board doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:cslb.ca.gov/v/998877 <span data-bracket="end" data-for="contractor">]</span>
     </div>

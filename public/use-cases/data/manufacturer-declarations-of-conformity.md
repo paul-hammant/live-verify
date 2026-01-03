@@ -16,30 +16,24 @@ furtherDerivations: 1
     </div>
     <div style="font-size: 1.5em; font-weight: bold;">CE</div>
   </div>
-
-  <div style="padding: 30px;">
+<div style="padding: 30px;">
     <div style="border-bottom: 2px solid #333; padding-bottom: 10px; margin-bottom: 20px;">
       <h3 style="margin: 0; color: #333;">PRODUCT IDENTIFICATION</h3>
       <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;">Model: <span data-bracket="start" data-for="doc">[</span>S-SERIES ROBOTIC HUB (V4.2)</div>
     </div>
-
-    <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
       <p><strong>Manufacturer:</strong> Cyberdyne Systems, SA<br>
       <strong>Address:</strong> Rue de la Loi 42, Brussels, Belgium</p>
-
-      <p>This declaration is issued under the sole responsibility of the manufacturer. The object of the declaration described above is in conformity with the following relevant Union harmonization legislation:</p>
-      
-      <div style="background: #f5f5f5; border: 1px solid #ddd; padding: 10px; margin: 15px 0; border-radius: 4px; font-family: monospace; font-size: 0.85em;">
+<p>This declaration is issued under the sole responsibility of the manufacturer. The object of the declaration described above is in conformity with the following relevant Union harmonization legislation:</p>
+<div style="background: #f5f5f5; border: 1px solid #ddd; padding: 10px; margin: 15px 0; border-radius: 4px; font-family: monospace; font-size: 0.85em;">
         ✅ 2014/35/EU (Low Voltage Directive)<br>
         ✅ 2014/30/EU (EMC Directive)<br>
         ✅ 2011/65/EU (RoHS 2 Directive)
       </div>
-
-      <p><strong>Signed for and on behalf of:</strong> Dr. Elena Rossi, CTO<br>
+<p><strong>Signed for and on behalf of:</strong> Dr. Elena Rossi, CTO<br>
       <strong>Date:</strong> March 15, 2026</p>
     </div>
-
-    <div data-verify-line="doc" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="doc" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Manufacturer doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:cyberdyne.be/compliance/v/S-SERIES-V42 <span data-bracket="end" data-for="doc">]</span>
     </div>

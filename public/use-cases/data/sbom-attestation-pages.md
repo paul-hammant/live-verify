@@ -25,8 +25,7 @@ The problem is that SBOMs are massive JSON/XML files that humans can't read. Ven
       <div style="font-size: 0.7em;">v2.4.0-STABLE</div>
     </div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div style="font-size: 0.9em;">
         <strong>Product:</strong> <span data-bracket="start" data-for="sbom">[</span>Enterprise Gateway 5000<br>
@@ -37,8 +36,7 @@ The problem is that SBOMs are massive JSON/XML files that humans can't read. Ven
         <strong>Compliance:</strong> EO 14028 Verified
       </div>
     </div>
-
-    <div style="background: #f0f7ff; border: 1px solid #cce3ff; padding: 15px; border-radius: 4px; margin-bottom: 20px;">
+<div style="background: #f0f7ff; border: 1px solid #cce3ff; padding: 15px; border-radius: 4px; margin-bottom: 20px;">
       <h4 style="margin-top: 0; color: #0078d4; font-size: 0.9em;">CORE COMPONENT HASHES</h4>
       <div style="font-family: monospace; font-size: 0.75em; color: #333;">
         [Kernel] v6.1.4 ... 8d7s9f22 (VERIFIED)<br>
@@ -46,16 +44,14 @@ The problem is that SBOMs are massive JSON/XML files that humans can't read. Ven
         [React] v18.2.0 ... a1b2c3d4 (VERIFIED)
       </div>
     </div>
-
-    <div style="display: flex; align-items: center; border: 2px solid #2e7d32; padding: 10px; background: #e8f5e9; border-radius: 4px;">
+<div style="display: flex; align-items: center; border: 2px solid #2e7d32; padding: 10px; background: #e8f5e9; border-radius: 4px;">
       <div style="font-size: 1.5em; margin-right: 15px;">🛡️</div>
       <div style="font-size: 0.85em; color: #1b5e20;">
         <strong>Vulnerability Scan Status:</strong> 0 Critical / 0 High CVEs detected at time of build. This product meets the NIST Secure Software Development Framework (SSDF).
       </div>
     </div>
   </div>
-
-  <div style="padding: 20px; background: #fdfdfd; border-top: 1px solid #eee; text-align: center;">
+<div style="padding: 20px; background: #fdfdfd; border-top: 1px solid #eee; text-align: center;">
     <div data-verify-line="sbom" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #0078d4; font-weight: bold;"
       title="Demo only: Software vendors don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:cybershield.com/sbom/v/EG5000-240 <span data-bracket="end" data-for="sbom">]</span>

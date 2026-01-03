@@ -19,8 +19,7 @@ The problem is that these permits are often temporary pieces of paper taped to a
     <h2 style="margin: 0; text-transform: uppercase; font-size: 1.3em; letter-spacing: 1px;">Special Event Permit</h2>
     <div style="font-size: 0.8em; font-weight: bold; opacity: 0.9;">CITY OF SPRINGFIELD • DEPT OF PUBLIC WORKS</div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px; border-bottom: 2px solid #eee; padding-bottom: 10px;">
       <div>
         <div style="font-size: 0.7em; color: #888; text-transform: uppercase;">Permit Number</div>
@@ -31,26 +30,21 @@ The problem is that these permits are often temporary pieces of paper taped to a
         <div style="font-size: 1em; font-weight: bold;">MARCH 15, 2026</div>
       </div>
     </div>
-
-    <div style="font-size: 0.9em; line-height: 1.5; color: #333;">
+<div style="font-size: 0.9em; line-height: 1.5; color: #333;">
       <p><strong>Event Name:</strong> 42nd Annual Street Fair<br>
       <strong>Organizer:</strong> Community Action Group</p>
-      
-      <div style="margin: 15px 0; padding: 15px; border: 1px solid #ccc; background: #fdfdfd; font-style: italic;">
+<div style="margin: 15px 0; padding: 15px; border: 1px solid #ccc; background: #fdfdfd; font-style: italic;">
         <strong>Authorized Location:</strong><br>
         Main Street (between 1st and 4th Ave).<br>
         <strong>Authorized Hours:</strong> 08:00 AM to 10:00 PM
       </div>
-
-      <p><strong>Security Plan:</strong> 4 Paid Detail Officers Required<br>
+<p><strong>Security Plan:</strong> 4 Paid Detail Officers Required<br>
       <strong>Max Occupancy:</strong> 2,500 Persons</p>
     </div>
-
-    <div style="margin-top: 25px; font-size: 0.75em; color: #666; text-align: center; border-top: 1px solid #eee; padding-top: 15px;">
+<div style="margin-top: 25px; font-size: 0.75em; color: #666; text-align: center; border-top: 1px solid #eee; padding-top: 15px;">
       This permit must be clearly displayed at the primary entrance or command post.
     </div>
-
-    <div data-verify-line="event" style="margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #1a237e; text-align: center; font-weight: bold; border-top: 1px dashed #bbb;"
+<div data-verify-line="event" style="margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #1a237e; text-align: center; font-weight: bold; border-top: 1px dashed #bbb;"
       title="Demo only: Municipalities don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:springfield.gov/events/v/EVT992288X <span data-bracket="end" data-for="event">]</span>
     </div>

@@ -22,29 +22,24 @@ This industry is a primary target for "Bandit Towers"—unlicensed operators who
       <div style="font-size: 0.75em; font-weight: bold; opacity: 0.8;">OFFICIAL TOWING OPERATOR</div>
     </div>
   </div>
-
-  <div style="padding: 20px; display: flex; background: #fff;">
+<div style="padding: 20px; display: flex; background: #fff;">
     <div style="width: 90px; margin-right: 15px;">
       <div style="width: 90px; height: 115px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #999; font-size: 0.7em; text-align: center;">[OPERATOR PHOTO]</div>
     </div>
     <div style="flex-grow: 1;">
       <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Operator Name</div>
       <div style="font-size: 1.2em; font-weight: bold; margin: 0 0 10px 0; color: #333;"><span data-bracket="start" data-for="tow">[</span>SARAH J. SMITH</div>
-      
-      <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">License #</div>
+<div style="font-size: 0.75em; color: #777; text-transform: uppercase;">License #</div>
       <div style="font-size: 1.1em; font-weight: bold; margin: 0 0 10px 0; letter-spacing: 1px;">TOW-992288</div>
-      
-      <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Company</div>
+<div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Company</div>
       <div style="font-size: 0.9em; font-weight: bold;">Skyline Recovery LLC</div>
     </div>
   </div>
-
-  <div style="padding: 10px 20px; background: #fdfdfd; border-top: 1px solid #eee; font-size: 0.8em;">
+<div style="padding: 10px 20px; background: #fdfdfd; border-top: 1px solid #eee; font-size: 0.8em;">
     <strong>Rotation Status:</strong> <span style="color: #2e7d32; font-weight: bold;">ACTIVE (Zone 4)</span><br>
     <strong>Truck Plate:</strong> NY-ABC1234 (Verified)
   </div>
-
-  <div style="padding: 15px 20px 20px 20px; background: #fff;">
+<div style="padding: 15px 20px 20px 20px; background: #fff;">
     <div data-verify-line="tow" style="border-top: 1px dashed #999; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; text-align: center; font-weight: bold;"
       title="Demo only: Police departments don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:springfieldpd.gov/v/TOW992288 <span data-bracket="end" data-for="tow">]</span>

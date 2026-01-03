@@ -26,30 +26,23 @@ Shipowners must prove they have this verified "Defense Cover" before they can hi
       <div style="font-size: 0.8em;">Member #: LP-992288-26</div>
     </div>
   </div>
-
-  <div style="padding: 35px;">
+<div style="padding: 35px;">
     <h2 style="text-align: center; color: #002366; font-size: 1.4em; margin-bottom: 25px; text-transform: uppercase; letter-spacing: 1px;">Certificate of Entry</h2>
-
-    <div style="font-size: 1em; line-height: 1.6; color: #333;">
+<div style="font-size: 1em; line-height: 1.6; color: #333;">
       <p>This document certifies that the following vessel is entered for FD&D coverage:</p>
-
-      <div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin: 20px 0;">
+<div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin: 20px 0;">
         <strong>Vessel Name:</strong> <span data-bracket="start" data-for="fdd">[</span>MV OCEAN VOYAGER<br>
         <strong>IMO Number:</strong> 9988776<br>
         <strong>Member:</strong> Global Maritime Holdings, Ltd.
       </div>
-
-      <p><strong>Coverage Scope:</strong> Legal costs and expert fees for disputes arising out of Charterparties, Bills of Lading, and Contracts of Affreightment.</p>
-      
-      <p><strong>Limit of Cover:</strong> USD 10,000,000.00 any one dispute.<br>
+<p><strong>Coverage Scope:</strong> Legal costs and expert fees for disputes arising out of Charterparties, Bills of Lading, and Contracts of Affreightment.</p>
+<p><strong>Limit of Cover:</strong> USD 10,000,000.00 any one dispute.<br>
       <strong>Period:</strong> 20 FEB 2026 to 20 FEB 2027</p>
     </div>
-
-    <div style="margin-top: 40px; border-top: 1px solid #ccc; padding-top: 10px; font-size: 0.8em; color: #666; font-style: italic; text-align: center;">
+<div style="margin-top: 40px; border-top: 1px solid #ccc; padding-top: 10px; font-size: 0.8em; color: #666; font-style: italic; text-align: center;">
       This certificate is evidence only of the contract of insurance and is subject to the Rules of the Association.
     </div>
-
-    <div data-verify-line="fdd" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="fdd" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: P&I Club doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:londonpandi.com/v/9988776 <span data-bracket="end" data-for="fdd">]</span>
     </div>

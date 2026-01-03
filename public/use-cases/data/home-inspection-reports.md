@@ -26,30 +26,24 @@ Fraud is high-stakes here: sellers or dishonest agents sometimes "Delete" the sc
       <div style="font-size: 0.8em;">Report #: HI-2026-042</div>
     </div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <h3 style="margin-top: 0; color: #2c3e50; border-bottom: 2px solid #2c3e50; padding-bottom: 5px;">PROPERTY CONDITION SUMMARY</h3>
-
-    <div style="font-size: 0.9em; line-height: 1.5; color: #333;">
+<div style="font-size: 0.9em; line-height: 1.5; color: #333;">
       <p><strong>Property:</strong> <span data-bracket="start" data-for="inspect">[</span>123 Desert Lane, Phoenix, AZ 85001<br>
       <strong>Client:</strong> Sarah Jane Smith</p>
-
-      <div style="background: #fdfdfd; border: 1px solid #eee; padding: 15px; margin: 15px 0; border-radius: 4px;">
+<div style="background: #fdfdfd; border: 1px solid #eee; padding: 15px; margin: 15px 0; border-radius: 4px;">
         <strong>MAJOR FINDINGS:</strong><br>
         ⚠️ Roof: Aged shingles (15+ years); minor granular loss.<br>
         ⚠️ Electrical: Double-tap breaker in main panel.<br>
         ✅ Structure: No evidence of foundation settlement.
       </div>
-
-      <p><strong>Inspector:</strong> James "Jimmy" Miller, PE<br>
+<p><strong>Inspector:</strong> James "Jimmy" Miller, PE<br>
       <strong>Inspection Date:</strong> March 15, 2026</p>
     </div>
-
-    <div style="margin-top: 25px; border: 1px solid #ccc; padding: 10px; font-size: 0.8em; color: #555; background: #fafafa; font-style: italic; text-align: center;">
+<div style="margin-top: 25px; border: 1px solid #ccc; padding: 10px; font-size: 0.8em; color: #555; background: #fafafa; font-style: italic; text-align: center;">
       Verification confirms the findings summary and major defect list match the inspector's official digital file.
     </div>
-
-    <div data-verify-line="inspect" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="inspect" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Inspection firm doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:premier-inspections.com/v/HI2026042 <span data-bracket="end" data-for="inspect">]</span>
     </div>

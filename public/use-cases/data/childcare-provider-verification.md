@@ -27,8 +27,7 @@ Tragically, some people use "ID Swapping"—using a sibling's clear background c
       <div style="font-size: 0.8em;">TRUSTED PROVIDER NETWORK</div>
     </div>
   </div>
-
-  <div style="padding: 20px; display: flex;">
+<div style="padding: 20px; display: flex;">
     <div style="width: 100px; margin-right: 15px;">
       <div style="width: 100px; height: 125px; background: #eee; display: flex; align-items: center; justify-content: center; color: #777; border: 1px solid #ccc; border-radius: 4px;">[PHOTO ID]</div>
     </div>
@@ -42,8 +41,7 @@ Tragically, some people use "ID Swapping"—using a sibling's clear background c
       </div>
     </div>
   </div>
-
-  <div style="padding: 0 20px 20px 20px;">
+<div style="padding: 0 20px 20px 20px;">
     <p style="font-size: 0.75em; color: #555; font-style: italic; text-align: center;">
       Verified via the National Childcare Registry. Includes criminal and sex offender background checks.
     </p>

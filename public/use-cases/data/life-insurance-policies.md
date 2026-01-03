@@ -13,10 +13,8 @@ furtherDerivations: 1
     <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 2px; color: #003366;">NEW YORK LIFE</div>
     <div style="font-size: 0.85em; color: #666; margin-top: 5px; text-transform: uppercase;">Custom Whole Life Insurance Policy</div>
   </div>
-
-  <h3 style="text-align: center; text-transform: uppercase; margin-bottom: 25px;">Policy Schedule</h3>
-
-  <div style="font-size: 1em; line-height: 1.6; color: #333; text-align: justify;">
+<h3 style="text-align: center; text-transform: uppercase; margin-bottom: 25px;">Policy Schedule</h3>
+<div style="font-size: 1em; line-height: 1.6; color: #333; text-align: justify;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
       <div>
         <strong>Policy Number:</strong> 99228877-WL<br>
@@ -27,8 +25,7 @@ furtherDerivations: 1
         March 15, 2026
       </div>
     </div>
-
-    <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+<table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
       <tr style="border-bottom: 1px solid #000; background: #f9f9f9;">
         <th style="text-align: left; padding: 8px;">Description</th>
         <th style="text-align: right; padding: 8px;">Initial Amount</th>
@@ -46,12 +43,10 @@ furtherDerivations: 1
         <td style="text-align: right;">$ 4,200.00</td>
       </tr>
     </table>
-
-    <p><strong>Primary Beneficiary:</strong> Mary Alice Jacob (Spouse)<br>
+<p><strong>Primary Beneficiary:</strong> Mary Alice Jacob (Spouse)<br>
     <strong>Riders:</strong> Waiver of Premium, Accidental Death (Double Indemnity).</p>
   </div>
-
-  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div style="width: 45%;">
       <div style="border-top: 1px solid #000; padding-top: 5px; font-style: italic;">Sarah Miller, Secretary</div>
     </div>
@@ -59,8 +54,7 @@ furtherDerivations: 1
       <div style="width: 80px; height: 80px; border: 2px solid #003366; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; color: #003366; font-weight: bold; text-align: center; margin-left: auto;">ESTABLISHED<br>1845</div>
     </div>
   </div>
-
-  <div data-verify-line="life-pol" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="life-pol" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: New York Life doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:newyorklife.com/policy/v/99228877 <span data-bracket="end" data-for="life-pol">]</span>
   </div>

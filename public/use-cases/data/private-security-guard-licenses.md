@@ -26,8 +26,7 @@ OCR-to-hash binds the **Guard's name, License Number, and Firearms Qualification
     </div>
     <div style="font-size: 1.2em;">🛡️</div>
   </div>
-
-  <div style="padding: 20px; display: flex;">
+<div style="padding: 20px; display: flex;">
     <div style="width: 100px; margin-right: 15px;">
       <div style="width: 100px; height: 125px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #777; font-size: 0.7em; text-align: center;">[VERIFIED<br>PHOTO]</div>
     </div>
@@ -41,8 +40,7 @@ OCR-to-hash binds the **Guard's name, License Number, and Firearms Qualification
       </div>
     </div>
   </div>
-
-  <div style="padding: 0 20px 20px 20px;">
+<div style="padding: 0 20px 20px 20px;">
     <div style="background: #e8f5e9; color: #2e7d32; padding: 5px; border-radius: 4px; font-weight: bold; font-size: 0.8em; text-align: center; margin-bottom: 10px;">
       ✅ FIREARMS QUALIFIED (REV 2026)
     </div>

@@ -16,27 +16,22 @@ furtherDerivations: 1
       <div style="font-size: 0.8em;">Form I-693, Medical Examination & Vaccination Record</div>
     </div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
       <div style="border: 1px solid #000; padding: 5px 10px; font-weight: bold;">SEALED MEDICAL RESULTS</div>
       <div style="text-align: right; font-family: monospace;">A-Number: <span data-bracket="start" data-for="im-med">[</span>A992-288-776</div>
     </div>
-
-    <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
       <p><strong>Applicant:</strong> JOHN JACOB DOE<br>
       <strong>Date of Exam:</strong> March 15, 2026</p>
-      
-      <div style="background: #f1f8e9; border: 1px solid #c5e1a5; padding: 15px; margin: 15px 0; border-radius: 4px;">
+<div style="background: #f1f8e9; border: 1px solid #c5e1a5; padding: 15px; margin: 15px 0; border-radius: 4px;">
         <p><strong>Civil Surgeon:</strong> Dr. Leslie Thompkins (ID #9982-BC)<br>
         <strong>Clinic:</strong> Gotham Community Health Center</p>
         <p><strong>Results Summary:</strong> Class A/B Conditions: NONE DETECTED. All required vaccinations confirmed and current.</p>
       </div>
-
-      <p style="font-size: 0.85em; font-weight: bold; color: #d32f2f;">DO NOT OPEN ENVELOPE. INTERNAL RECORD VERIFICATION ONLY.</p>
+<p style="font-size: 0.85em; font-weight: bold; color: #d32f2f;">DO NOT OPEN ENVELOPE. INTERNAL RECORD VERIFICATION ONLY.</p>
     </div>
-
-    <div data-verify-line="im-med" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="im-med" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Civil Surgeon portal doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:gotham-health.org/uscis/v/A992288776 <span data-bracket="end" data-for="im-med">]</span>
     </div>

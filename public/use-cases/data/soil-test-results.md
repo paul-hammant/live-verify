@@ -25,8 +25,7 @@ These reports are high-value documents. Farmers use them to secure **Crop Loans*
       <div style="font-size: 0.7em;">Batch #: QC-992288</div>
     </div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9em; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
         <strong>Client:</strong> <span data-bracket="start" data-for="soil">[</span>GREEN ACRES FAMILY FARM<br>
@@ -39,8 +38,7 @@ These reports are high-value documents. Farmers use them to secure **Crop Loans*
         <strong>Method:</strong> Mehlich-3 Extraction
       </div>
     </div>
-
-    <table style="width: 100%; border-collapse: collapse; font-size: 0.9em; margin-bottom: 20px;">
+<table style="width: 100%; border-collapse: collapse; font-size: 0.9em; margin-bottom: 20px;">
       <tr style="border-bottom: 2px solid #3e2723; background: #efebe9;">
         <th style="text-align: left; padding: 10px;">Test Component</th>
         <th style="text-align: center; padding: 10px;">Result</th>
@@ -62,13 +60,11 @@ These reports are high-value documents. Farmers use them to secure **Crop Loans*
         <td style="text-align: right; padding: 10px; color: #d32f2f; font-weight: bold;">DEFICIENT</td>
       </tr>
     </table>
-
-    <div style="padding: 15px; background: #fffde7; border: 1px solid #fff59d; font-size: 0.85em; border-radius: 4px;">
+<div style="padding: 15px; background: #fffde7; border: 1px solid #fff59d; font-size: 0.85em; border-radius: 4px;">
       <strong>Recommendations:</strong> Apply 80 lbs/acre Urea (46-0-0). Monitor pH levels post-harvest. No lime required.
     </div>
   </div>
-
-  <div style="padding: 20px; background: #fdfdfd; border-top: 1px solid #eee; text-align: center;">
+<div style="padding: 20px; background: #fdfdfd; border-top: 1px solid #eee; text-align: center;">
     <div style="font-size: 0.7em; color: #666; margin-bottom: 10px; font-style: italic;">
       This report is a verified digital copy of the original lab analysis. Alteration of metrics renders this report void.
     </div>

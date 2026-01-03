@@ -24,32 +24,26 @@ It proves the "Dirt Integrity" of your investment:
     <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">Record of Survey</h2>
     <div style="font-size: 0.8em; opacity: 0.8;">MILLER LAND SURVEYING, P.C.</div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
       <h3 style="margin: 0; color: #333;">BOUNDARY RETRACEMENT PLAT</h3>
       <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;">Project ID: <span data-bracket="start" data-for="survey">[</span>SKYLINE-42-2026</div>
     </div>
-
-    <div style="font-size: 0.95em; line-height: 1.5; color: #333;">
+<div style="font-size: 0.95em; line-height: 1.5; color: #333;">
       <p><strong>Property:</strong> Lot 42, Block 7, Skyline Heights Addition<br>
       <strong>Address:</strong> 4500 Skyline Blvd, Austin, TX</p>
-
-      <div style="width: 100%; height: 200px; border: 1px solid #ccc; background: #f9f9f9; display: flex; align-items: center; justify-content: center; color: #999; font-style: italic;">
+<div style="width: 100%; height: 200px; border: 1px solid #ccc; background: #f9f9f9; display: flex; align-items: center; justify-content: center; color: #999; font-style: italic;">
         [SIMULATED PLAT DIAGRAM WITH METES & BOUNDS]
       </div>
-
-      <div style="background: #fffde7; border: 1px solid #fbc02d; padding: 10px; margin: 15px 0; border-radius: 4px;">
+<div style="background: #fffde7; border: 1px solid #fbc02d; padding: 10px; margin: 15px 0; border-radius: 4px;">
         <strong>FIELD FINDINGS:</strong><br>
         ✅ SW Corner: Found 5/8" Iron Rod<br>
         ⚠️ Encroachment: Wood fence 1.2' West of East Property Line.
       </div>
-
-      <p><strong>Licensee:</strong> Robert J. Miller, RPLS (TX #9982)<br>
+<p><strong>Licensee:</strong> Robert J. Miller, RPLS (TX #9982)<br>
       <strong>Date of Survey:</strong> March 15, 2026</p>
     </div>
-
-    <div data-verify-line="survey" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="survey" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Surveyor doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:miller-surveying.com/v/SKYLINE42 <span data-bracket="end" data-for="survey">]</span>
     </div>
@@ -133,30 +127,24 @@ _[Content merged from: land-surveys-property-boundaries]_
       <div style="font-size: 0.8em; opacity: 0.8;">OFFICIAL BOUNDARY DELINEATION</div>
     </div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="text-align: center; border-bottom: 2px solid #333; padding-bottom: 10px; margin-bottom: 20px;">
       <h3 style="margin: 0; color: #333;">BOUNDARY PLAT MAP</h3>
       <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;">Property: <span data-bracket="start" data-for="survey">[</span>123 Desert Lane, Austin, TX</div>
     </div>
-
-    <div style="font-size: 0.9em; line-height: 1.5; color: #333;">
+<div style="font-size: 0.9em; line-height: 1.5; color: #333;">
       <p><strong>Legal Description:</strong> Lot 42, Block 7, Map of Skyline Heights, recorded in Travis County Doc #992288.</p>
-
-      <div style="width: 100%; height: 200px; background: #f5f5f5; border: 1px solid #ccc; display: flex; align-items: center; justify-content: center; color: #999; font-style: italic;">
+<div style="width: 100%; height: 200px; background: #f5f5f5; border: 1px solid #ccc; display: flex; align-items: center; justify-content: center; color: #999; font-style: italic;">
         [SIMULATED PROPERTY BOUNDARY DIAGRAM]
       </div>
-
-      <p style="margin-top: 15px;"><strong>Surveyor:</strong> Michael J. Miller, RPLS (Lic #9982)<br>
+<p style="margin-top: 15px;"><strong>Surveyor:</strong> Michael J. Miller, RPLS (Lic #9982)<br>
       <strong>Field Work Date:</strong> March 15, 2026</p>
     </div>
-
-    <div style="margin-top: 25px; display: flex; align-items: center; justify-content: center; border: 1px solid #ccc; padding: 10px; border-radius: 4px; background: #fafafa;">
+<div style="margin-top: 25px; display: flex; align-items: center; justify-content: center; border: 1px solid #ccc; padding: 10px; border-radius: 4px; background: #fafafa;">
       <div style="width: 60px; height: 60px; border: 2px solid #333; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; transform: rotate(-10deg);">RPLS SEAL</div>
       <div style="margin-left: 15px; font-size: 0.85em; font-style: italic;">"Accuracy and Integrity in Land Measurement."</div>
     </div>
-
-    <div data-verify-line="survey" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="survey" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Surveyor doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:miller-surveying.com/v/SKYLINE-42 <span data-bracket="end" data-for="survey">]</span>
     </div>

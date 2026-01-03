@@ -25,19 +25,16 @@ A **Calibration Certificate** is proof that a measuring device or tool is accura
     <div style="font-weight: bold; font-size: 1.2em;">NATIONAL METROLOGY SERVICES, LLC</div>
     <div style="font-size: 0.8em;">Accredited to ISO/IEC 17025:2017</div>
   </div>
-
-  <div style="font-size: 0.9em; line-height: 1.4;">
+<div style="font-size: 0.9em; line-height: 1.4;">
     <p><strong>Certificate No:</strong> CERT-2026-9988</p>
-    
-    <div style="border: 1px solid #000; padding: 10px; margin-bottom: 20px;">
+<div style="border: 1px solid #000; padding: 10px; margin-bottom: 20px;">
       <strong>INSTRUMENT IDENTIFICATION:</strong><br>
       Description: Analytical Balance<br>
       Manufacturer: Mettler Toledo<br>
       Model: XPR205<br>
       Serial Number: <span data-bracket="start" data-for="cal-long">[</span>MT-9988776655
     </div>
-
-    <div style="display: flex; justify-content: space-between;">
+<div style="display: flex; justify-content: space-between;">
       <div>
         <strong>Calibration Date:</strong> 15 MAR 2026<br>
         <strong>Next Due Date:</strong> 15 MAR 2027
@@ -47,8 +44,7 @@ A **Calibration Certificate** is proof that a measuring device or tool is accura
         <strong>Humidity:</strong> 42% RH
       </div>
     </div>
-
-    <table style="width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 0.85em;">
+<table style="width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 0.85em;">
       <tr style="border-bottom: 1px solid #000;">
         <th style="text-align: left;">Nominal Value</th>
         <th style="text-align: left;">As Found</th>
@@ -65,16 +61,13 @@ A **Calibration Certificate** is proof that a measuring device or tool is accura
         <td style="text-align: right;">± 0.0001 g</td>
       </tr>
     </table>
-
-    <p style="margin-top: 20px; font-weight: bold; color: #2e7d32; text-align: center;">RESULT: IN-TOLERANCE / PASS</p>
+<p style="margin-top: 20px; font-weight: bold; color: #2e7d32; text-align: center;">RESULT: IN-TOLERANCE / PASS</p>
   </div>
-
-  <div style="margin-top: 30px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 30px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div style="border-top: 1px solid #000; width: 180px; padding-top: 5px; font-style: italic; font-size: 0.8em;">David Chen, Metrologist</div>
     <div style="width: 50px; height: 50px; border: 1px solid #000; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold;">SEAL</div>
   </div>
-
-  <div data-verify-line="cal-long" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="cal-long" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Lab doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:metrologyservices.com/v/CERT9988 <span data-bracket="end" data-for="cal-long">]</span>
   </div>

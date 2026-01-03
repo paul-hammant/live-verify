@@ -21,19 +21,15 @@ Ethics violations are common: researchers sometimes use data for a different pur
     <div style="font-weight: bold; font-size: 1.2em;">DATA SHARING & USE AGREEMENT</div>
     <div style="font-size: 0.9em; margin-top: 5px;">OXFORD UNIVERSITY - RESEARCH SERVICES</div>
   </div>
-
-  <div style="font-size: 1em; line-height: 1.6; color: #333; text-align: justify;">
+<div style="font-size: 1em; line-height: 1.6; color: #333; text-align: justify;">
     <p>This Agreement governs the transfer of Data from the <strong>Provider:</strong> Oxford University to the <strong>Recipient:</strong> <span data-bracket="start" data-for="dsa">[</span>Stanford Medical Research Center.</p>
-
-    <p><strong>Dataset ID:</strong> OX-BIO-2026-992 (Genomic Sequences)<br>
+<p><strong>Dataset ID:</strong> OX-BIO-2026-992 (Genomic Sequences)<br>
     <strong>Authorized Use:</strong> Cancer Research Initiative only.<br>
     <strong>Restrictions:</strong> No re-identification; No third-party transfer.</p>
-
-    <p><strong>Execution Date:</strong> March 15, 2026<br>
+<p><strong>Execution Date:</strong> March 15, 2026<br>
     <strong>Termination Date:</strong> March 14, 2031</p>
   </div>
-
-  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div style="width: 45%;">
       <div style="border-top: 1px solid #000; padding-top: 5px; font-style: italic;">Prof. Albus Dumbledore</div>
       <div style="font-size: 0.8em; color: #777;">Authorized Signatory (Oxford)</div>
@@ -42,8 +38,7 @@ Ethics violations are common: researchers sometimes use data for a different pur
       <div style="width: 80px; height: 80px; border: 2px solid #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; margin-left: auto;">RESEARCH<br>OFFICE</div>
     </div>
   </div>
-
-  <div data-verify-line="dsa" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="dsa" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: University doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:ox.ac.uk/legal/v/OX-BIO-992 <span data-bracket="end" data-for="dsa">]</span>
   </div>

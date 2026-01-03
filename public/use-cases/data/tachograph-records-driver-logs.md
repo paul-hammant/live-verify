@@ -25,8 +25,7 @@ Fraud is common and lethal: drivers or carrier managers often "edit" logbooks to
       <div style="font-size: 0.7em; color: #888;">ELD Record ID: #992288-ELD</div>
     </div>
   </div>
-
-  <div style="padding: 20px;">
+<div style="padding: 20px;">
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.85em; margin-bottom: 20px;">
       <div>
         <strong>Driver:</strong> <span data-bracket="start" data-for="tacho">[</span>JAMES W. GORDON<br>
@@ -39,8 +38,7 @@ Fraud is common and lethal: drivers or carrier managers often "edit" logbooks to
         <strong>Co-Driver:</strong> N/A
       </div>
     </div>
-
-    <!-- Simplified HOS Grid Representation -->
+<!-- Simplified HOS Grid Representation -->
     <div style="border: 1px solid #999; padding: 10px; background: #f9f9f9; margin-bottom: 20px;">
       <div style="font-size: 0.7em; font-weight: bold; color: #666; margin-bottom: 5px; text-transform: uppercase;">Duty Status Summary (24 Hours)</div>
       <div style="display: flex; height: 40px; border: 1px solid #ccc; overflow: hidden; border-radius: 2px;">
@@ -49,14 +47,12 @@ Fraud is common and lethal: drivers or carrier managers often "edit" logbooks to
         <div style="width: 22%; background: #ef6c00; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 0.6em;">ON DUTY (3h)</div>
       </div>
     </div>
-
-    <div style="font-size: 0.8em; line-height: 1.4; color: #333;">
+<div style="font-size: 0.8em; line-height: 1.4; color: #333;">
       <strong>Cycle Status:</strong> 62 hours worked in 7 days. 8 hours remaining in cycle.<br>
       <strong>Violations:</strong> NONE DETECTED.
     </div>
   </div>
-
-  <div style="padding: 20px; background: #f5f5f5; border-top: 1px solid #000; text-align: center;">
+<div style="padding: 20px; background: #f5f5f5; border-top: 1px solid #000; text-align: center;">
     <div style="font-size: 0.7em; color: #555; margin-bottom: 10px; font-style: italic;">
       I certify that these entries are true and correct. Verified via Samsara ELD Gateway.
     </div>

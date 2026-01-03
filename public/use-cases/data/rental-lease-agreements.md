@@ -27,13 +27,10 @@ Beyond the relationship between the two parties, a lease is used by third partie
       March 15, 2026
     </div>
   </div>
-
-  <h3 style="text-align: center; text-transform: uppercase; margin-bottom: 25px; letter-spacing: 1px;">Residential Lease Summary</h3>
-
-  <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+<h3 style="text-align: center; text-transform: uppercase; margin-bottom: 25px; letter-spacing: 1px;">Residential Lease Summary</h3>
+<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <p>This certifies a valid lease agreement exists between <span data-bracket="start" data-for="lease">[</span><strong>Landlord:</strong> Skyline Heights, LLC and <strong>Tenant:</strong> Sarah J. Connor.</p>
-
-    <div style="background: #fdfdfd; padding: 15px; border: 1px solid #eee; margin: 20px 0;">
+<div style="background: #fdfdfd; padding: 15px; border: 1px solid #eee; margin: 20px 0;">
       <p><strong>Premises:</strong> 4500 Skyline Blvd, Apt 402, Austin, TX 78701</p>
       <table style="width: 100%; font-size: 0.95em;">
         <tr>
@@ -50,17 +47,14 @@ Beyond the relationship between the two parties, a lease is used by third partie
         </tr>
       </table>
     </div>
-
-    <p><strong>Start Date:</strong> April 1, 2026<br>
+<p><strong>Start Date:</strong> April 1, 2026<br>
     <strong>End Date:</strong> March 31, 2027</p>
   </div>
-
-  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div style="border-top: 1px solid #000; width: 180px; padding-top: 5px; font-size: 0.8em;">Property Manager Signature</div>
     <div style="border-top: 1px solid #000; width: 180px; padding-top: 5px; font-size: 0.8em;">Tenant Signature</div>
   </div>
-
-  <div data-verify-line="lease" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="lease" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Management firm doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:skyline-mgmt.com/v/L992288 <span data-bracket="end" data-for="lease">]</span>
   </div>

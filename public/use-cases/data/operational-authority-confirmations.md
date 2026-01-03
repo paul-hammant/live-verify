@@ -24,8 +24,7 @@ When a vendor is told "you've been selected," or a customer is promised an SLA, 
     <strong>Authorized Person:</strong> Robert Kim<br>
     <strong>Role:</strong> Operations Director, Northern Region<br>
     <strong>Issued:</strong> January 1, 2026</p>
-
-    <div style="background: #fff8f0; padding: 15px; margin: 15px 0; border-left: 3px solid #ff6600;">
+<div style="background: #fff8f0; padding: 15px; margin: 15px 0; border-left: 3px solid #ff6600;">
       <p style="margin: 0;"><strong>Authority to:</strong></p>
       <p style="margin: 10px 0 0;">• Select and appoint vendors (within approved vendor list)</p>
       <p style="margin: 5px 0 0;">• Approve capital projects up to £250,000</p>
@@ -37,11 +36,9 @@ When a vendor is told "you've been selected," or a customer is promised an SLA, 
       <p style="margin: 5px 0 0;">• Non-standard SLA terms</p>
       <p style="margin: 5px 0 0;">• Projects over £250,000</p>
     </div>
-
-    <p style="font-size: 0.85em; color: #666;">Delegated by: COO<br>
+<p style="font-size: 0.85em; color: #666;">Delegated by: COO<br>
     Valid until: December 31, 2026</p>
-
-    <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
+<div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="operationalauthority" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
         verify:orion-logistics.com/ops-auth/RK-2026 <span data-bracket="end" data-for="operationalauthority">]</span>
@@ -73,17 +70,14 @@ When a vendor is told "you've been selected," or a customer is promised an SLA, 
     <strong>Project Code:</strong> CAPEX-2026-0087<br>
     <strong>Budget:</strong> £180,000<br>
     <strong>Approval Date:</strong> February 15, 2026</p>
-
-    <div style="background: #f5fff5; padding: 15px; margin: 15px 0; border: 1px solid #228B22;">
+<div style="background: #f5fff5; padding: 15px; margin: 15px 0; border: 1px solid #228B22;">
       <p style="margin: 0;"><strong>Approved by:</strong> Robert Kim, Operations Director</p>
       <p style="margin: 10px 0 0;">Authority: Projects up to £250,000</p>
       <p style="margin: 5px 0 0;">Within budget allocation: Northern Region 2026</p>
     </div>
-
-    <p style="font-size: 0.85em; color: #666;">Project sponsor: Warehouse Manager<br>
+<p style="font-size: 0.85em; color: #666;">Project sponsor: Warehouse Manager<br>
     Expected completion: Q3 2026</p>
-
-    <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
+<div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="operationalauthority" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
         verify:orion-logistics.com/projects/CAPEX-2026-0087 <span data-bracket="end" data-for="operationalauthority">]</span>
@@ -103,18 +97,15 @@ When a vendor is told "you've been selected," or a customer is promised an SLA, 
     <p><strong>Customer:</strong> MegaMart Retail Ltd<br>
     <strong>Service:</strong> Next-day delivery, Northern distribution<br>
     <strong>Commitment Date:</strong> February 1, 2026</p>
-
-    <div style="background: #f5f5f5; padding: 15px; margin: 15px 0; border-left: 3px solid #666;">
+<div style="background: #f5f5f5; padding: 15px; margin: 15px 0; border-left: 3px solid #666;">
       <p style="margin: 0;"><strong>SLA Terms:</strong></p>
       <p style="margin: 10px 0 0;">• 98.5% on-time delivery target</p>
       <p style="margin: 5px 0 0;">• Service credits: 2% per 0.5% below target</p>
       <p style="margin: 5px 0 0;">• Measurement: Rolling 30-day average</p>
     </div>
-
-    <p style="font-size: 0.85em; color: #666;">Authorized by: Robert Kim, Operations Director<br>
+<p style="font-size: 0.85em; color: #666;">Authorized by: Robert Kim, Operations Director<br>
     Within standard parameters: Yes</p>
-
-    <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
+<div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="operationalauthority" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
         verify:orion-logistics.com/sla/MM-2026-0201 <span data-bracket="end" data-for="operationalauthority">]</span>

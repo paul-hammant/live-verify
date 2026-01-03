@@ -27,19 +27,16 @@ Verification is critical for lenders who use "Imported Inventory" as collateral.
     </div>
     <div style="width: 40px; height: 40px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #002d62; font-weight: bold; font-size: 0.7em; text-align: center;">CBP</div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
       <div style="border: 1px solid #000; padding: 5px 10px; font-weight: bold;">CBP 7501</div>
       <div style="text-align: right; font-family: monospace;">Entry #: <span data-bracket="start" data-for="customs">[</span>998-8776655-4</div>
     </div>
-
-    <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
       <p><strong>Importer of Record:</strong> GLOBAL LOGISTICS HUB, LLC<br>
       <strong>Entry Port:</strong> 2704 (San Francisco, CA)<br>
       <strong>Entry Date:</strong> March 15, 2026</p>
-
-      <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
         <tr style="background: #f0f4f8; border-bottom: 2px solid #002d62;">
           <th style="text-align: left; padding: 8px;">Description</th>
           <th style="text-align: right; padding: 8px;">Duty Paid</th>
@@ -58,12 +55,10 @@ Verification is critical for lenders who use "Imported Inventory" as collateral.
         </tr>
       </table>
     </div>
-
-    <div style="margin-top: 25px; padding: 10px; background: #f9f9f9; border: 1px solid #eee; font-size: 0.8em; color: #555;">
+<div style="margin-top: 25px; padding: 10px; background: #f9f9f9; border: 1px solid #eee; font-size: 0.8em; color: #555;">
       <strong>Status:</strong> RELEASED & SETTLED. All duties and fees have been paid.
     </div>
-
-    <div data-verify-line="customs" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="customs" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: CBP doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:cbp.gov/entry/v/99887766554 <span data-bracket="end" data-for="customs">]</span>
     </div>

@@ -13,24 +13,18 @@ furtherDerivations: 1
     <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 2px; color: #000;">FIRST AMERICAN TITLE</div>
     <div style="font-size: 0.85em; color: #666; margin-top: 5px; text-transform: uppercase;">International Division • European Operations</div>
   </div>
-
-  <h3 style="text-align: center; text-transform: uppercase; margin-bottom: 25px;">Policy of Title Insurance</h3>
-
-  <div style="font-size: 1em; line-height: 1.6; color: #333; text-align: justify;">
+<h3 style="text-align: center; text-transform: uppercase; margin-bottom: 25px;">Policy of Title Insurance</h3>
+<div style="font-size: 1em; line-height: 1.6; color: #333; text-align: justify;">
     <p>This policy insures against loss or damage sustained by the <strong>Insured:</strong> <span data-bracket="start" data-for="intl-title">[</span>Globochem Real Estate Holding, SA</p>
-    
-    <p>By reason of any defect in or lien or encumbrance on the title to the <strong>Estate or Interest:</strong> Fee Simple in the following property:</p>
-
-    <div style="background: #f9f9f9; padding: 15px; border: 1px solid #eee; margin: 20px 0; font-family: monospace; font-size: 0.9em;">
+<p>By reason of any defect in or lien or encumbrance on the title to the <strong>Estate or Interest:</strong> Fee Simple in the following property:</p>
+<div style="background: #f9f9f9; padding: 15px; border: 1px solid #eee; margin: 20px 0; font-family: monospace; font-size: 0.9em;">
       Address: Rue de Rivoli 42, 75001 Paris, France<br>
       Cadastral Ref: Section 75, Plot 1234
     </div>
-
-    <p><strong>Amount of Insurance:</strong> $ 25,000,000.00 (Twenty-Five Million USD)<br>
+<p><strong>Amount of Insurance:</strong> $ 25,000,000.00 (Twenty-Five Million USD)<br>
     <strong>Policy Number:</strong> INT-99228877-FR</p>
   </div>
-
-  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div style="width: 45%;">
       <div style="border-top: 1px solid #000; padding-top: 5px; font-style: italic;">Authorized Signatory</div>
       <div style="font-size: 0.8em; color: #777;">March 15, 2026</div>
@@ -39,8 +33,7 @@ furtherDerivations: 1
       <div style="width: 80px; height: 80px; border: 2px solid #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; text-align: center; margin-left: auto;">OFFICIAL<br>TITLE<br>SEAL</div>
     </div>
   </div>
-
-  <div data-verify-line="intl-title" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="intl-title" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: First American doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:firstam.com/intl/v/INT99228877 <span data-bracket="end" data-for="intl-title">]</span>
   </div>

@@ -14,16 +14,13 @@ furtherDerivations: 5
     ELECTRONIC RECEIPT<br>
     ---------------------------------
   </div>
-
-  <div style="font-size: 0.9em; line-height: 1.4;">
+<div style="font-size: 0.9em; line-height: 1.4;">
     <p><strong>Passenger:</strong> <span data-bracket="start" data-for="receipt">[</span>JOHN DOE<br>
     <strong>Ticket #:</strong> 006-2345678901<br>
     <strong>Date:</strong> 15MAR26</p>
-
-    <p><strong>Itinerary:</strong><br>
+<p><strong>Itinerary:</strong><br>
     DL123 JFK-LHR</p>
-
-    <p><strong>Ancillary Services:</strong></p>
+<p><strong>Ancillary Services:</strong></p>
     <table style="width: 100%; font-size: 1em;">
       <tr>
         <td>1st Checked Bag</td>
@@ -42,13 +39,11 @@ furtherDerivations: 5
         <td style="text-align: right; border-top: 1px dashed #000;"><strong>$ 124.00</strong></td>
       </tr>
     </table>
-
-    <p><strong>Payment:</strong><br>
+<p><strong>Payment:</strong><br>
     Visa ending in 1234<br>
     Auth: 998877</p>
   </div>
-
-  <div data-verify-line="receipt" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="receipt" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Airline doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:delta.com/receipts/v/x9y8z7 <span data-bracket="end" data-for="receipt">]</span>
   </div>
@@ -137,32 +132,23 @@ Verifying these letters prevents passengers from faking denials to defraud insur
     <div style="font-weight: bold; font-size: 1.2em; color: #002244;">BRITISH AIRWAYS</div>
     <div style="font-size: 0.8em; color: #555;">Customer Relations</div>
   </div>
-
-  <div style="margin-bottom: 30px;">
+<div style="margin-bottom: 30px;">
     <strong>Date:</strong> 15 March 2026<br>
     <strong>Ref:</strong> <span data-bracket="start" data-for="comp">[</span>BA-2026-998877<br>
     <strong>Passenger:</strong> Sarah Jones
   </div>
-
-  <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <p>Dear Ms. Jones,</p>
-
-    <p><strong>Re: Flight BA123 London to New York on 14 March 2026</strong></p>
-
-    <p>We are writing regarding your claim for compensation following the cancellation of the above flight.</p>
-
-    <p>Our records confirm that this cancellation was due to an operational issue within our control. Therefore, in accordance with EU Regulation 261/2004, we are pleased to confirm that you are entitled to compensation.</p>
-
-    <p><strong>Compensation Amount:</strong> € 600.00</p>
+<p><strong>Re: Flight BA123 London to New York on 14 March 2026</strong></p>
+<p>We are writing regarding your claim for compensation following the cancellation of the above flight.</p>
+<p>Our records confirm that this cancellation was due to an operational issue within our control. Therefore, in accordance with EU Regulation 261/2004, we are pleased to confirm that you are entitled to compensation.</p>
+<p><strong>Compensation Amount:</strong> € 600.00</p>
     <p><strong>Payment Status:</strong> Initiated via Bank Transfer</p>
-
-    <p>Please accept our apologies for the disruption to your journey.</p>
-
-    <p>Sincerely,</p>
+<p>Please accept our apologies for the disruption to your journey.</p>
+<p>Sincerely,</p>
     <p><em>Customer Relations Team</em><br>British Airways</p>
   </div>
-
-  <div data-verify-line="comp" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="comp" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Airline doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:ba.com/claims/v/x9y8z7 <span data-bracket="end" data-for="comp">]</span>
   </div>
@@ -238,13 +224,11 @@ _[Content merged from: airline-refund-confirmations]_
     <div style="font-weight: bold; font-size: 1.2em; color: #d32f2f;">LUFTHANSA</div>
     <div style="font-size: 0.9em;">Passenger Receipt - REFUND</div>
   </div>
-
-  <div style="font-size: 0.9em; line-height: 1.5; color: #333;">
+<div style="font-size: 0.9em; line-height: 1.5; color: #333;">
     <p><strong>Passenger:</strong> <span data-bracket="start" data-for="refund">[</span>HANS MULLER<br>
     <strong>Original Ticket:</strong> 220-1234567890<br>
     <strong>Refund Document:</strong> 220-9988776655</p>
-
-    <table style="width: 100%; margin-top: 15px; border-collapse: collapse;">
+<table style="width: 100%; margin-top: 15px; border-collapse: collapse;">
       <tr>
         <td style="padding: 5px 0;">Base Fare Refund:</td>
         <td style="text-align: right;">EUR 2,500.00</td>
@@ -262,13 +246,11 @@ _[Content merged from: airline-refund-confirmations]_
         <td style="text-align: right;">EUR 2,750.00</td>
       </tr>
     </table>
-
-    <p style="margin-top: 20px;"><strong>Form of Payment:</strong><br>
+<p style="margin-top: 20px;"><strong>Form of Payment:</strong><br>
     Credited to Mastercard ending 5544<br>
     Date: 20 March 2026</p>
   </div>
-
-  <div data-verify-line="refund" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="refund" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Airline doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:lufthansa.com/refunds/v/x9y8z7 <span data-bracket="end" data-for="refund">]</span>
   </div>
@@ -345,8 +327,7 @@ _[Content merged from: airline-upgrade-confirmations]_
     <h3 style="margin: 0;">UNITED AIRLINES</h3>
     <div style="font-size: 0.9em; margin-top: 5px;">UPGRADE CONFIRMATION</div>
   </div>
-
-  <div style="padding: 30px;">
+<div style="padding: 30px;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px; font-size: 0.9em;">
       <div>
         <strong>Confirmation:</strong> L7XK9B<br>
@@ -356,13 +337,11 @@ _[Content merged from: airline-upgrade-confirmations]_
         <strong>Date:</strong> 12 SEP 2026
       </div>
     </div>
-
-    <div style="font-size: 1.1em; line-height: 1.5; color: #333; border-bottom: 1px solid #ccc; padding-bottom: 20px; margin-bottom: 20px;">
+<div style="font-size: 1.1em; line-height: 1.5; color: #333; border-bottom: 1px solid #ccc; padding-bottom: 20px; margin-bottom: 20px;">
       <p><strong>Passenger:</strong> <span data-bracket="start" data-for="upgrade">[</span>SARAH CONNOR</p>
       <p><strong>Flight:</strong> UA 926 (SFO to FRA)<br>
       <strong>Upgrade:</strong> Economy &rarr; Polaris Business</p>
-      
-      <p><strong>Payment Summary:</strong></p>
+<p><strong>Payment Summary:</strong></p>
       <table style="width: 100%;">
         <tr>
           <td>Cash Co-Pay:</td>
@@ -374,13 +353,11 @@ _[Content merged from: airline-upgrade-confirmations]_
         </tr>
       </table>
     </div>
-
-    <div style="font-size: 0.9em; color: #555;">
+<div style="font-size: 0.9em; color: #555;">
       <strong>Upgrade Status:</strong> CONFIRMED<br>
       <strong>Seat:</strong> 12A
     </div>
-
-    <div data-verify-line="upgrade" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="upgrade" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Airline doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:united.com/receipts/v/x9y8z7 <span data-bracket="end" data-for="upgrade">]</span>
     </div>
@@ -457,24 +434,19 @@ _[Content merged from: airport-lounge-access-confirmations]_
     <h3 style="margin: 0;">PRIORITY PASS</h3>
     <div style="font-size: 0.9em;">VISIT CONFIRMATION</div>
   </div>
-
-  <div style="padding: 30px;">
+<div style="padding: 30px;">
     <div style="text-align: center; margin-bottom: 20px;">
       <div style="font-size: 1.2em; font-weight: bold;">The Club at SJC A15</div>
       <div style="color: #ccc;">San Jose Int'l (SJC)</div>
     </div>
-
-    <div style="font-size: 0.9em; line-height: 1.6; color: #eee; border-top: 1px dashed #555; border-bottom: 1px dashed #555; padding: 15px 0;">
+<div style="font-size: 0.9em; line-height: 1.6; color: #eee; border-top: 1px dashed #555; border-bottom: 1px dashed #555; padding: 15px 0;">
       <p><strong>Member:</strong> <span data-bracket="start" data-for="lounge">[</span>JAMES BOND<br>
       <strong>Card Number:</strong> ************1234</p>
-
-      <p><strong>Date:</strong> 10 OCT 2026<br>
+<p><strong>Date:</strong> 10 OCT 2026<br>
       <strong>Time In:</strong> 14:30 PM</p>
-
-      <p><strong>Guests:</strong> 2<br>
+<p><strong>Guests:</strong> 2<br>
       <strong>Visit ID:</strong> 9988776655</p>
-
-      <div style="margin-top: 15px; padding: 10px; background: #333; border-radius: 4px;">
+<div style="margin-top: 15px; padding: 10px; background: #333; border-radius: 4px;">
         <div style="display: flex; justify-content: space-between;">
           <div>Guest Fee (x2):</div>
           <div>$ 64.00</div>
@@ -485,8 +457,7 @@ _[Content merged from: airport-lounge-access-confirmations]_
         </div>
       </div>
     </div>
-
-    <div data-verify-line="lounge" style="border-top: 1px dashed #555; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #aaa; text-align: center;"
+<div data-verify-line="lounge" style="border-top: 1px dashed #555; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #aaa; text-align: center;"
       title="Demo only: Lounge network doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:prioritypass.com/visits/v/x9y8z7 <span data-bracket="end" data-for="lounge">]</span>
     </div>

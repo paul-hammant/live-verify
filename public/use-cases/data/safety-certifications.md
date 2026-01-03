@@ -22,8 +22,7 @@ These documents are the "Entry Permit" for global commerce. US Customs, Amazon, 
     </div>
     <div style="width: 60px; height: 60px; background: #fff; color: #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.5em; border: 2px solid #d32f2f;">UL</div>
   </div>
-
-  <div style="padding: 30px;">
+<div style="padding: 30px;">
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
         <strong>Manufacturer:</strong> <span data-bracket="start" data-for="safety">[</span>GLOBAL POWER TECH LLC<br>
@@ -36,8 +35,7 @@ These documents are the "Entry Permit" for global commerce. US Customs, Amazon, 
         <strong>Lab ID:</strong> #9922-CH
       </div>
     </div>
-
-    <div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin-bottom: 20px; border-radius: 4px;">
+<div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin-bottom: 20px; border-radius: 4px;">
       <h4 style="margin-top: 0; color: #333; font-size: 0.9em; border-bottom: 1px solid #ccc; padding-bottom: 5px;">VERIFIED SAFETY STANDARDS</h4>
       <ul style="margin: 5px 0; padding-left: 20px; font-size: 0.85em; line-height: 1.4;">
         <li><strong>UL 62368-1:</strong> Audio/Video, IT and Communication Tech.</li>
@@ -45,13 +43,11 @@ These documents are the "Entry Permit" for global commerce. US Customs, Amazon, 
         <li><strong>IEC 60950-1:</strong> International IT Safety Standard.</li>
       </ul>
     </div>
-
-    <div style="font-size: 0.75em; color: #666; font-style: italic; text-align: center;">
+<div style="font-size: 0.75em; color: #666; font-style: italic; text-align: center;">
       This certificate confirms that representative samples of this product have been tested and found to meet the requirements of the standards above.
     </div>
   </div>
-
-  <div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #bbb; text-align: center;">
+<div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #bbb; text-align: center;">
     <div data-verify-line="safety" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Standards bodies don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:ul.com/v/CERT992288-XJ <span data-bracket="end" data-for="safety">]</span>

@@ -24,24 +24,19 @@ Unlike other insurance that covers *future* events (like fire), title insurance 
       March 15, 2026
     </div>
   </div>
-
-  <h2 style="text-align: center; font-size: 1.4em; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 30px;">Owner's Policy of Title Insurance</h2>
-
-  <div style="font-size: 1em; line-height: 1.6; color: #000; text-align: justify;">
+<h2 style="text-align: center; font-size: 1.4em; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 30px;">Owner's Policy of Title Insurance</h2>
+<div style="font-size: 1em; line-height: 1.6; color: #000; text-align: justify;">
     <p><strong>SUBJECT TO THE EXCLUSIONS FROM COVERAGE</strong>, FIRST AMERICAN TITLE INSURANCE COMPANY (the "Company") insures <span data-bracket="start" data-for="title-ins">[</span><strong>ROBERT J. MILLER</strong> (the "Insured") against loss or damage sustained by reason of any defect in title.</p>
-
-    <div style="background: #f9f9f9; padding: 15px; border: 1px solid #eee; margin: 20px 0;">
+<div style="background: #f9f9f9; padding: 15px; border: 1px solid #eee; margin: 20px 0;">
       <p><strong>Amount of Insurance:</strong> $ 525,000.00</p>
       <p><strong>Property:</strong> Lot 42, Block 7, Skyline Heights Addition, Austin, TX</p>
       <p><strong>Schedule B - Exceptions:</strong> 1. Current taxes; 2. Utility easement per Vol 12, Pg 88; 3. [None].</p>
     </div>
   </div>
-
-  <div style="margin-top: 40px; border-top: 1px solid #000; padding-top: 5px; font-size: 0.8em; text-align: center;">
+<div style="margin-top: 40px; border-top: 1px solid #000; padding-top: 5px; font-size: 0.8em; text-align: center;">
     This policy is not valid unless Schedule A and Schedule B are attached.
   </div>
-
-  <div data-verify-line="title-ins" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="title-ins" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: First American doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:firstam.com/v/99228877-TX <span data-bracket="end" data-for="title-ins">]</span>
   </div>

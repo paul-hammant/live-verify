@@ -16,8 +16,7 @@ furtherDerivations: 1
       <div style="font-size: 0.8em; opacity: 0.8;">OFFICIAL ENFORCEMENT CREDENTIAL</div>
     </div>
   </div>
-
-  <div style="padding: 20px; display: flex;">
+<div style="padding: 20px; display: flex;">
     <div style="width: 100px; margin-right: 15px;">
       <div style="width: 100px; height: 125px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #777;">[PHOTO ID]</div>
     </div>
@@ -31,8 +30,7 @@ furtherDerivations: 1
       </div>
     </div>
   </div>
-
-  <div style="padding: 0 20px 20px 20px;">
+<div style="padding: 0 20px 20px 20px;">
     <p style="font-size: 0.75em; color: #555; font-style: italic; text-align: center;">
       Verified via Department of Homeland Security Enforcement Systems. Scan to confirm officer's current active duty status.
     </p>

@@ -24,25 +24,20 @@ Scammers often create fake FFL PDF papers to trick online sellers into shipping 
       <div style="font-size: 0.8em; opacity: 0.8;">U.S. DEPT OF JUSTICE • BUREAU OF ALCOHOL, TOBACCO, FIREARMS AND EXPLOSIVES</div>
     </div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
       <h3 style="margin: 0; color: #333;">LICENSE NUMBER: <span data-bracket="start" data-for="ffl">[</span>9-99-887-01-2C-99228</h3>
     </div>
-
-    <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
       <p><strong>Licensee Name:</strong> MILLER ARMS & SPORTING GOODS, LLC<br>
       <strong>Premises Address:</strong> 123 Main St, Springfield, IL 62701</p>
-
-      <div style="background: #f5f5f5; border: 1px solid #ddd; padding: 10px; margin: 15px 0;">
+<div style="background: #f5f5f5; border: 1px solid #ddd; padding: 10px; margin: 15px 0;">
         <p><strong>Type of License:</strong> 01 - DEALER IN FIREARMS OTHER THAN DESTRUCTIVE DEVICES</p>
         <p><strong>Expiration Date:</strong> March 15, 2027</p>
       </div>
-
-      <p style="font-size: 0.8em; color: #555;">The licensee is authorized to transport, ship, and receive firearms in interstate or foreign commerce during the period specified above.</p>
+<p style="font-size: 0.8em; color: #555;">The licensee is authorized to transport, ship, and receive firearms in interstate or foreign commerce during the period specified above.</p>
     </div>
-
-    <div style="margin-top: 30px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 30px; display: flex; justify-content: space-between; align-items: flex-end;">
       <div>
         <div style="border-top: 1px solid #000; width: 200px; padding-top: 5px; font-style: italic;">Special Agent in Charge</div>
       </div>
@@ -50,8 +45,7 @@ Scammers often create fake FFL PDF papers to trick online sellers into shipping 
         <div style="width: 80px; height: 80px; border: 2px solid #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; text-align: center;">OFFICIAL<br>ATF<br>SEAL</div>
       </div>
     </div>
-
-    <div data-verify-line="ffl" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="ffl" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: ATF doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:atf.gov/fflezcheck/v/99988701 <span data-bracket="end" data-for="ffl">]</span>
     </div>

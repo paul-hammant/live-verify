@@ -21,26 +21,21 @@ For business travelers, this receipt is critical for **Expense Audits**. It prov
     <div style="font-weight: bold; font-size: 1.4em; color: #3a5a40;">THE GRAND HOTEL - PARIS</div>
     <div style="font-size: 0.85em; color: #588157; margin-top: 5px;">OFFICIAL CANCELLATION NOTICE</div>
   </div>
-
-  <div style="font-size: 1em; line-height: 1.6; color: #333; text-align: justify;">
+<div style="font-size: 1em; line-height: 1.6; color: #333; text-align: justify;">
     <p>This document confirms the cancellation of your reservation. A refund has been processed to your original payment method.</p>
-
-    <div style="margin: 20px 0; background: #f9f9f9; padding: 15px; border: 1px solid #eee; font-size: 0.95em;">
+<div style="margin: 20px 0; background: #f9f9f9; padding: 15px; border: 1px solid #eee; font-size: 0.95em;">
       <strong>Guest:</strong> <span data-bracket="start" data-for="hotel-cancel">[</span>Madame E. Dubois<br>
       <strong>Booking Ref:</strong> GHP-47291-ED<br>
       <strong>Refund Amount:</strong> € 1,200.00
     </div>
-
-    <p><strong>Cancellation Date:</strong> June 28, 2025<br>
+<p><strong>Cancellation Date:</strong> June 28, 2025<br>
     <strong>Policy:</strong> Free cancellation (48h prior to arrival).<br>
     <strong>Status:</strong> REFUNDED & CLOSED</p>
   </div>
-
-  <div style="margin-top: 40px; text-align: right;">
+<div style="margin-top: 40px; text-align: right;">
     <div style="border-top: 1px solid #000; width: 200px; display: inline-block; padding-top: 5px; font-size: 0.9em; color: #777;">Reservations Manager</div>
   </div>
-
-  <div data-verify-line="hotel-cancel" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="hotel-cancel" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: The Grand Hotel doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:grandhotelparis.com/v/GHP-47291 <span data-bracket="end" data-for="hotel-cancel">]</span>
   </div>
@@ -132,18 +127,15 @@ A **Verified Confirmation** from the hotel's domain ends the argument instantly.
     </div>
     <div style="font-size: 1.5em;">✨</div>
   </div>
-
-  <div style="padding: 30px;">
+<div style="padding: 30px;">
     <div style="text-align: center; margin-bottom: 25px;">
       <h3 style="margin: 0; color: #1a1a1a;">UPGRADE SUCCESSFUL</h3>
       <div style="font-size: 0.9em; color: #666; margin-top: 5px;">Reservation ID: <span data-bracket="start" data-for="upgrade">[</span>RC-99228877</div>
     </div>
-
-    <div style="font-size: 1em; line-height: 1.6; color: #333;">
+<div style="font-size: 1em; line-height: 1.6; color: #333;">
       <p>Dear <strong>Sarah Jane Smith</strong>,</p>
       <p>We are pleased to confirm your room upgrade for your upcoming stay at <strong>The Ritz-Carlton, Maui</strong>.</p>
-
-      <div style="background: #fdfcf0; border: 1px solid #d4af37; padding: 15px; margin: 20px 0; border-radius: 4px;">
+<div style="background: #fdfcf0; border: 1px solid #d4af37; padding: 15px; margin: 20px 0; border-radius: 4px;">
         <table style="width: 100%; font-size: 0.95em;">
           <tr>
             <td>Original Room:</td>
@@ -163,11 +155,9 @@ A **Verified Confirmation** from the hotel's domain ends the argument instantly.
           </tr>
         </table>
       </div>
-
-      <p style="font-size: 0.85em; font-style: italic;">Please present this verified confirmation at the front desk upon arrival.</p>
+<p style="font-size: 0.85em; font-style: italic;">Please present this verified confirmation at the front desk upon arrival.</p>
     </div>
-
-    <div data-verify-line="upgrade" style="border-top: 1px dashed #d4af37; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="upgrade" style="border-top: 1px dashed #d4af37; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Ritz-Carlton doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:ritzcarlton.com/upgrades/v/RC99228877 <span data-bracket="end" data-for="upgrade">]</span>
     </div>
@@ -262,8 +252,7 @@ You need this verified proof for a **"Status Match"**—where a rival hotel give
       <div style="font-size: 0.8em;">Member #: <span data-bracket="start" data-for="hotel-loy">[</span>99228877</div>
     </div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px;">
       <div>
         <div style="font-size: 1.1em; font-weight: bold; color: #333;">SARAH JANE SMITH</div>
@@ -275,20 +264,17 @@ You need this verified proof for a **"Status Match"**—where a rival hotel give
         <div style="font-size: 0.7em; color: #002d62; font-weight: bold;">TOTAL POINTS</div>
       </div>
     </div>
-
-    <div style="font-size: 0.9em; line-height: 1.5; color: #333; border-top: 1px solid #eee; padding-top: 15px;">
+<div style="font-size: 0.9em; line-height: 1.5; color: #333; border-top: 1px solid #eee; padding-top: 15px;">
       <p><strong>2026 Progress:</strong></p>
       <div style="width: 100%; height: 10px; background: #eee; border-radius: 5px; margin-bottom: 5px;">
         <div style="width: 85%; height: 10px; background: #002d62; border-radius: 5px;"></div>
       </div>
       <p style="font-size: 0.8em; color: #666;">85 of 100 Nights for Lifetime Platinum</p>
     </div>
-
-    <div style="margin-top: 25px; padding: 10px; background: #f0f4f8; border: 1px solid #d1d9e6; font-size: 0.8em; color: #002d62; font-style: italic; text-align: center;">
+<div style="margin-top: 25px; padding: 10px; background: #f0f4f8; border: 1px solid #d1d9e6; font-size: 0.8em; color: #002d62; font-style: italic; text-align: center;">
       This statement is a verified record of your point balance and elite status. Valid for corporate housing and status-match requests.
     </div>
-
-    <div data-verify-line="hotel-loy" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="hotel-loy" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Marriott doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:marriott.com/loyalty/v/99228877 <span data-bracket="end" data-for="hotel-loy">]</span>
     </div>

@@ -22,29 +22,24 @@ This is a critical security frontier. Fraudsters or partisan actors might attemp
       <div style="font-size: 0.75em; font-weight: bold; opacity: 0.9;">COUNTY OF SPRINGFIELD</div>
     </div>
   </div>
-
-  <div style="padding: 20px; display: flex; background: #fff;">
+<div style="padding: 20px; display: flex; background: #fff;">
     <div style="width: 100px; margin-right: 15px;">
       <div style="width: 100px; height: 125px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #999; font-size: 0.7em; text-align: center;">[WORKER PHOTO]</div>
     </div>
     <div style="flex-grow: 1;">
       <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Official Name</div>
       <div style="font-size: 1.2em; font-weight: bold; margin: 0 0 10px 0; color: #b71c1c;"><span data-bracket="start" data-for="poll">[</span>SARAH JANE SMITH</div>
-      
-      <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Assignment</div>
+<div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Assignment</div>
       <div style="font-size: 1em; font-weight: bold; margin: 0 0 10px 0;">Precinct #42 (Ward 7)</div>
-      
-      <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Role</div>
+<div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Role</div>
       <div style="font-size: 0.9em; font-weight: bold;">Judge of Election</div>
     </div>
   </div>
-
-  <div style="padding: 10px 20px; background: #f5f5f5; border-top: 1px solid #eee; font-size: 0.8em;">
+<div style="padding: 10px 20px; background: #f5f5f5; border-top: 1px solid #eee; font-size: 0.8em;">
     <strong>Training Status:</strong> <span style="color: #2e7d32; font-weight: bold;">COMPLETED (15 MAR 2026)</span><br>
     <strong>Oath of Office:</strong> Verified on file
   </div>
-
-  <div style="padding: 15px 20px 20px 20px; background: #fff;">
+<div style="padding: 15px 20px 20px 20px; background: #fff;">
     <div data-verify-line="poll" style="border-top: 1px dashed #999; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; text-align: center; font-weight: bold;"
       title="Demo only: Election boards don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:elections.springfield.gov/v/992288-SJS <span data-bracket="end" data-for="poll">]</span>

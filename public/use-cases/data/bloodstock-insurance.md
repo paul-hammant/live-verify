@@ -26,32 +26,24 @@ If an owner "Photoshops" a $100k policy to look like a $10M policy, they can com
       <div style="font-size: 0.8em;">Policy #: B-9988-BS-26</div>
     </div>
   </div>
-
-  <div style="padding: 35px;">
+<div style="padding: 35px;">
     <h2 style="text-align: center; color: #002366; font-size: 1.4em; margin-bottom: 25px; text-transform: uppercase; letter-spacing: 1px;">Certificate of Bloodstock Insurance</h2>
-
-    <div style="font-size: 1em; line-height: 1.6; color: #333;">
+<div style="font-size: 1em; line-height: 1.6; color: #333;">
       <p>This is to certify that insurance has been effected on the following animal:</p>
-
-      <div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin: 20px 0;">
+<div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin: 20px 0;">
         <strong>Animal Name:</strong> <span data-bracket="start" data-for="horse">[</span>"MIDNIGHT RUNNER" (2022 Colt)<br>
         <strong>Sire/Dam:</strong> Galileo / Urban Sea<br>
         <strong>Registration:</strong> Weatherbys ID #992288
       </div>
-
-      <p><strong>Insured Value:</strong> $ 12,500,000.00 (Twelve Million Five Hundred Thousand USD)</p>
-      
-      <p><strong>Coverage:</strong> All Risks of Mortality, including Infertility & Theft.<br>
+<p><strong>Insured Value:</strong> $ 12,500,000.00 (Twelve Million Five Hundred Thousand USD)</p>
+<p><strong>Coverage:</strong> All Risks of Mortality, including Infertility & Theft.<br>
       <strong>Territory:</strong> Worldwide, including transit.</p>
-
-      <p><strong>Effective:</strong> 01 JAN 2026 to 01 JAN 2027</p>
+<p><strong>Effective:</strong> 01 JAN 2026 to 01 JAN 2027</p>
     </div>
-
-    <div style="margin-top: 40px; border-top: 1px solid #ccc; padding-top: 10px; font-size: 0.8em; color: #666; font-style: italic;">
+<div style="margin-top: 40px; border-top: 1px solid #ccc; padding-top: 10px; font-size: 0.8em; color: #666; font-style: italic;">
       Subject to veterinary certificate of health dated within 30 days of inception.
     </div>
-
-    <div data-verify-line="horse" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="horse" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Lloyd's Syndicate doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:lloyds-bloodstock.com/v/B9988BS <span data-bracket="end" data-for="horse">]</span>
     </div>

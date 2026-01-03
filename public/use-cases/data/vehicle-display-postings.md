@@ -22,24 +22,20 @@ These postings are the primary defense against "Ghost Taxis"—unlicensed cars t
       <div style="font-size: 0.75em; font-weight: bold; opacity: 0.8;">OFFICIAL FOR-HIRE PERMIT</div>
     </div>
   </div>
-
-  <div style="padding: 20px; display: flex; background: #fff;">
+<div style="padding: 20px; display: flex; background: #fff;">
     <div style="width: 90px; margin-right: 15px;">
       <div style="width: 90px; height: 115px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #999; font-size: 0.7em; text-align: center;">[DRIVER PHOTO]</div>
     </div>
     <div style="flex-grow: 1;">
       <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Driver Name</div>
       <div style="font-size: 1.1em; font-weight: bold; margin: 0 0 10px 0; color: #333;"><span data-bracket="start" data-for="taxi">[</span>SARAH J. SMITH</div>
-      
-      <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">License #</div>
+<div style="font-size: 0.75em; color: #777; text-transform: uppercase;">License #</div>
       <div style="font-size: 1.3em; font-weight: bold; margin: 0 0 10px 0; letter-spacing: 1px;">TLC-992288</div>
-      
-      <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Vehicle Plate</div>
+<div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Vehicle Plate</div>
       <div style="font-size: 0.9em; font-weight: bold;">NY-ABC1234</div>
     </div>
   </div>
-
-  <div style="padding: 0 20px 20px 20px; background: #fff;">
+<div style="padding: 0 20px 20px 20px; background: #fff;">
     <div style="font-size: 0.7em; color: #555; text-align: center; margin-bottom: 10px; line-height: 1.3;">
       Scan to verify driver background clearance, vehicle insurance, and real-time active duty status.
     </div>

@@ -29,8 +29,7 @@ Verified EOBs are critical for stopping "Balance Billing"—when a hospital trie
       <div style="font-size: 0.8em;">Claim #: 99228877-EOB</div>
     </div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="display: flex; justify-content: space-between; font-size: 0.9em; margin-bottom: 20px;">
       <div>
         <strong>Patient:</strong> <span data-bracket="start" data-for="eob">[</span>SARAH J. DOE<br>
@@ -41,8 +40,7 @@ Verified EOBs are critical for stopping "Balance Billing"—when a hospital trie
         <strong>Statement Date:</strong> Mar 15, 2026
       </div>
     </div>
-
-    <table style="width: 100%; border-collapse: collapse; font-size: 0.85em;">
+<table style="width: 100%; border-collapse: collapse; font-size: 0.85em;">
       <tr style="border-bottom: 2px solid #005fb8; background: #f5f5f5;">
         <th style="padding: 5px; text-align: left;">Description</th>
         <th style="padding: 5px; text-align: right;">Amount</th>
@@ -64,12 +62,10 @@ Verified EOBs are critical for stopping "Balance Billing"—when a hospital trie
         <td style="text-align: right; padding: 5px;">$ 160.00</td>
       </tr>
     </table>
-
-    <p style="margin-top: 20px; font-size: 0.8em; color: #555; font-style: italic;">
+<p style="margin-top: 20px; font-size: 0.8em; color: #555; font-style: italic;">
       This is NOT a bill. This is your record of how the claim was processed.
     </p>
-
-    <div data-verify-line="eob" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="eob" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: UHC doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:uhc.com/claims/v/99228877 <span data-bracket="end" data-for="eob">]</span>
     </div>
@@ -162,24 +158,20 @@ In lawsuits, these diaries are "Evidence Item #1." If an insurance company is ac
     INTERNAL CLAIMS DIARY & RESERVE LOG<br>
     -----------------------------------
   </div>
-
-  <div style="font-size: 0.85em; line-height: 1.4;">
+<div style="font-size: 0.85em; line-height: 1.4;">
     <p><strong>Claim #:</strong> 99228877-WC<br>
     <strong>Adjuster:</strong> <span data-bracket="start" data-for="diary">[</span>MIKE MILLER (ID #992)</p>
-
-    <div style="background: #f5f5f5; padding: 10px; margin: 15px 0; border: 1px solid #ddd;">
+<div style="background: #f5f5f5; padding: 10px; margin: 15px 0; border: 1px solid #ddd;">
       <strong>RESERVE CHANGE #04</strong><br>
       Date: 15 MAR 2026 14:22:01<br>
       Old Indemnity Reserve: $ 50,000.00<br>
       New Indemnity Reserve: $ 125,000.00<br>
       Change: +$ 75,000.00
     </div>
-
-    <p><strong>ADJUSTER DIARY NOTE:</strong><br>
+<p><strong>ADJUSTER DIARY NOTE:</strong><br>
     Received surgery estimate from claimant's physician. Injury significantly more severe than initially reported. Case now exceeds $100k threshold; escalated to supervisor for Large Loss Review.</p>
   </div>
-
-  <div data-verify-line="diary" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="diary" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Insurer doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:ace-insurance.com/claims/v/99228877-R4 <span data-bracket="end" data-for="diary">]</span>
   </div>
@@ -268,19 +260,14 @@ Because they trigger large payments, they are targets for "PDF alteration." A di
   <div style="text-align: center; margin-bottom: 30px;">
     <h3 style="text-decoration: underline; text-transform: uppercase; margin: 0;">SETTLEMENT AGREEMENT AND RELEASE</h3>
   </div>
-
-  <div style="font-size: 1em; line-height: 1.6; color: #000; text-align: justify;">
+<div style="font-size: 1em; line-height: 1.6; color: #000; text-align: justify;">
     <p>This Settlement Agreement and Release (the "Agreement") is entered into as of March 15, 2026, by and between:</p>
-    
-    <p><strong>RELEASOR:</strong> <span data-bracket="start" data-for="settle">[</span>SARAH J. DOE<br>
+<p><strong>RELEASOR:</strong> <span data-bracket="start" data-for="settle">[</span>SARAH J. DOE<br>
     <strong>RELEASEE:</strong> ACME INDEMNITY INSURANCE CO.</p>
-
-    <p>In consideration of the sum of <strong>TWENTY-FIVE THOUSAND DOLLARS ($25,000.00)</strong>, the Releasor hereby releases and forever discharges the Releasee from any and all claims arising out of the incident occurring on or about June 1, 2025.</p>
-
-    <p>This Agreement represents a full and final settlement of the disputed claims. No further liability exists on the part of the Releasee.</p>
+<p>In consideration of the sum of <strong>TWENTY-FIVE THOUSAND DOLLARS ($25,000.00)</strong>, the Releasor hereby releases and forever discharges the Releasee from any and all claims arising out of the incident occurring on or about June 1, 2025.</p>
+<p>This Agreement represents a full and final settlement of the disputed claims. No further liability exists on the part of the Releasee.</p>
   </div>
-
-  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div style="width: 45%;">
       <div style="border-top: 1px solid #000; padding-top: 5px;">Sarah J. Doe</div>
       <div style="font-size: 0.8em; color: #777;">Releasor</div>
@@ -290,8 +277,7 @@ Because they trigger large payments, they are targets for "PDF alteration." A di
       <div style="font-size: 0.8em; color: #777;">For Acme Indemnity</div>
     </div>
   </div>
-
-  <div data-verify-line="settle" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="settle" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Insurer doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:acme-insurance.com/legal/v/DOE-9922 <span data-bracket="end" data-for="settle">]</span>
   </div>

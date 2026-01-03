@@ -22,8 +22,7 @@ The problem is that a REC can only be used once. "Double-Counting" is a massive 
     </div>
     <div style="font-size: 2em;">☀️</div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
         <strong>Generator:</strong> <span data-bracket="start" data-for="rec">[</span>SUNNY-RIDGE SOLAR ARRAY<br>
@@ -36,19 +35,16 @@ The problem is that a REC can only be used once. "Double-Counting" is a massive 
         <strong>Status:</strong> <span style="color: #2e7d32; font-weight: bold;">ACTIVE</span>
       </div>
     </div>
-
-    <div style="background: #f1f8e9; border: 1px solid #c5e1a5; padding: 20px; text-align: center; border-radius: 4px; margin-bottom: 20px;">
+<div style="background: #f1f8e9; border: 1px solid #c5e1a5; padding: 20px; text-align: center; border-radius: 4px; margin-bottom: 20px;">
       <div style="font-size: 0.8em; color: #558b2f; text-transform: uppercase; font-weight: bold;">Renewable Energy Quantity:</div>
       <div style="font-size: 2.5em; font-weight: bold; color: #1b5e20;">1,000.00 MWh</div>
       <div style="font-size: 0.8em; color: #666; margin-top: 5px;">One Thousand Megawatt-Hours</div>
     </div>
-
-    <div style="font-size: 0.8em; color: #666; line-height: 1.4; font-style: italic;">
+<div style="font-size: 0.8em; color: #666; line-height: 1.4; font-style: italic;">
       <strong>Fuel Type:</strong> Solar Photovoltaic. This certificate represents the environmental attributes of energy produced and injected into the CAISO balancing authority area.
     </div>
   </div>
-
-  <div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #999; text-align: center;">
+<div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #999; text-align: center;">
     <div data-verify-line="rec" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: Energy registries don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:wregis.org/v/REC99228877 <span data-bracket="end" data-for="rec">]</span>

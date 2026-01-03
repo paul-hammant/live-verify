@@ -24,8 +24,7 @@ It is the primary document used by:
     <h1 style="margin: 0; font-size: 1.5em; text-transform: uppercase;">Cargo Shipping Manifest</h1>
     <div style="font-size: 0.8em; opacity: 0.7;">GLOBAL LOGISTICS SOLUTIONS, INC.</div>
   </div>
-
-  <div style="font-size: 0.85em; line-height: 1.4; color: #000;">
+<div style="font-size: 0.85em; line-height: 1.4; color: #000;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
       <div>
         <strong>Shipper:</strong> <span data-bracket="start" data-for="pack">[</span>Shenzhen Tech Components, Ltd.<br>
@@ -36,8 +35,7 @@ It is the primary document used by:
         <strong>Container:</strong> TGHU-442288-0
       </div>
     </div>
-
-    <table style="width: 100%; border-collapse: collapse; margin: 15px 0; font-size: 0.9em;">
+<table style="width: 100%; border-collapse: collapse; margin: 15px 0; font-size: 0.9em;">
       <tr style="border-bottom: 2px solid #000;">
         <th style="text-align: left; padding: 5px;">SKU / Description</th>
         <th style="text-align: center; padding: 5px;">Qty</th>
@@ -58,11 +56,9 @@ It is the primary document used by:
         <td colspan="2" style="text-align: right; padding: 5px;">2,290.00 kg</td>
       </tr>
     </table>
-
-    <p><strong>Seal Number:</strong> 000992288 (Verified Intact at Origin)</p>
+<p><strong>Seal Number:</strong> 000992288 (Verified Intact at Origin)</p>
   </div>
-
-  <div data-verify-line="pack" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="pack" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
     title="Demo only: Shipper doesn't yet offer verification&#10;endpoints, so this is illustrative">
     verify:sz-tech.com/cargo/v/M992288 <span data-bracket="end" data-for="pack">]</span>
   </div>

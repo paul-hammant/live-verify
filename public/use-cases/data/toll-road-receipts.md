@@ -20,25 +20,20 @@ Fraud is high-volume and low-detection: employees use "Toll Receipt Generator" a
     TRANSACTION RECEIPT<br>
     ---------------------------------
   </div>
-
-  <div style="font-size: 0.9em; line-height: 1.4;">
+<div style="font-size: 0.9em; line-height: 1.4;">
     <p><strong>Account:</strong> <span data-bracket="start" data-for="toll">[</span>****-****-9922<br>
     <strong>Transponder:</strong> 004-88776655<br>
     <strong>Plate:</strong> ABC-1234 (NY)</p>
-
-    <p><strong>Location:</strong> GEORGE WASHINGTON BRIDGE<br>
+<p><strong>Location:</strong> GEORGE WASHINGTON BRIDGE<br>
     <strong>Plaza:</strong> GWB UPPER LEVEL<br>
     <strong>Date/Time:</strong> 15 MAR 2026 08:42:01</p>
-
-    <div style="margin: 15px 0; border-top: 1px solid #000; border-bottom: 1px solid #000; padding: 5px 0; display: flex; justify-content: space-between; font-weight: bold;">
+<div style="margin: 15px 0; border-top: 1px solid #000; border-bottom: 1px solid #000; padding: 5px 0; display: flex; justify-content: space-between; font-weight: bold;">
       <span>TOLL AMOUNT:</span>
       <span>$ 16.00</span>
     </div>
-
-    <p><strong>Status:</strong> POSTED / PAID</p>
+<p><strong>Status:</strong> POSTED / PAID</p>
   </div>
-
-  <div data-verify-line="toll" style="margin-top: 20px; padding-top: 10px; border-top: 1px dashed #999; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="toll" style="margin-top: 20px; padding-top: 10px; border-top: 1px dashed #999; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Toll authorities don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:e-zpassny.com/v/NY99228877 <span data-bracket="end" data-for="toll">]</span>
   </div>

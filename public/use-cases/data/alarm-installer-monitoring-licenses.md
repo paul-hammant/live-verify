@@ -24,28 +24,23 @@ Always scan the badge before letting a "technician" into your home to learn your
     <h3 style="margin: 0;">TEXAS DEPARTMENT OF PUBLIC SAFETY</h3>
     <div style="font-size: 0.9em;">PRIVATE SECURITY BUREAU</div>
   </div>
-
-  <div style="padding: 25px; display: flex;">
+<div style="padding: 25px; display: flex;">
     <div style="width: 100px; margin-right: 20px;">
       <div style="width: 100px; height: 125px; background: #eee; display: flex; align-items: center; justify-content: center; color: #777; border: 1px solid #ccc;">[Photo]</div>
     </div>
     <div style="flex-grow: 1;">
       <h2 style="margin-top: 0; color: #333; font-size: 1.2em;">ALARM SYSTEMS INSTALLER</h2>
-      
-      <div style="font-size: 0.95em; line-height: 1.5; color: #333;">
+<div style="font-size: 0.95em; line-height: 1.5; color: #333;">
         <p><strong>Licensee:</strong> <span data-bracket="start" data-for="alarm">[</span>ROBERT PAULSON<br>
         <strong>License #:</strong> B-1234567<br>
         <strong>Company:</strong> Fight Club Security, LLC</p>
-
-        <p><strong>Expires:</strong> 12/31/2026<br>
+<p><strong>Expires:</strong> 12/31/2026<br>
         <strong>Status:</strong> ACTIVE</p>
-
-        <p style="font-size: 0.8em; margin-top: 10px;">Authorized to install, service, and monitor burglary and fire alarm systems.</p>
+<p style="font-size: 0.8em; margin-top: 10px;">Authorized to install, service, and monitor burglary and fire alarm systems.</p>
       </div>
     </div>
   </div>
-
-  <div data-verify-line="alarm" style="border-top: 1px dashed #999; margin-top: 10px; padding: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center; background: #f9f9f9;"
+<div data-verify-line="alarm" style="border-top: 1px dashed #999; margin-top: 10px; padding: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center; background: #f9f9f9;"
       title="Demo only: State DPS doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:dps.texas.gov/psb/v/x9y8z7 <span data-bracket="end" data-for="alarm">]</span>
   </div>

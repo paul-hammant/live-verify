@@ -25,35 +25,28 @@ Because a POF is the difference between an offer being accepted or rejected, it 
       March 15, 2026
     </div>
   </div>
-
-  <h3 style="margin-top: 0; text-align: center; text-transform: uppercase; letter-spacing: 1px;">Proof of Funds Statement</h3>
-
-  <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+<h3 style="margin-top: 0; text-align: center; text-transform: uppercase; letter-spacing: 1px;">Proof of Funds Statement</h3>
+<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <p>To Whom It May Concern,</p>
     <p>At the request of our client, we are pleased to confirm that the following funds are currently held in a liquid account at this institution:</p>
-    
-    <div style="background: #f9f9f9; padding: 20px; border: 1px solid #ddd; margin: 20px 0;">
+<div style="background: #f9f9f9; padding: 20px; border: 1px solid #ddd; margin: 20px 0;">
       <p><strong>Account Holder:</strong> SARAH JANE SMITH<br>
       <strong>Account Type:</strong> Private Client Money Market</p>
-      
-      <p><strong>Available Balance:</strong> <span style="font-size: 1.4em; font-weight: bold; color: #000;">$ 1,250,000.00</span><br>
+<p><strong>Available Balance:</strong> <span style="font-size: 1.4em; font-weight: bold; color: #000;">$ 1,250,000.00</span><br>
       <strong>Currency:</strong> United States Dollars (USD)</p>
     </div>
-
-    <p style="font-size: 0.85em; font-style: italic; color: #666;">
+<p style="font-size: 0.85em; font-style: italic; color: #666;">
       These funds are unencumbered and available for immediate withdrawal or wire transfer for the purpose of real estate acquisition.
     </p>
   </div>
-
-  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div>
       <div style="border-top: 1px solid #000; width: 200px; padding-top: 5px; font-style: italic;">James W. Gordon, Vice President</div>
       <div style="font-size: 0.8em; color: #777;">Employee ID: #992288</div>
     </div>
     <div style="text-align: right; color: #004a99; font-weight: bold; font-size: 0.8em;">BANK VERIFIED</div>
   </div>
-
-  <div style="padding: 20px; background: #eee; border-radius: 4px; margin-top: 30px; text-align: center;">
+<div style="padding: 20px; background: #eee; border-radius: 4px; margin-top: 30px; text-align: center;">
     <div data-verify-line="pof" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Banks don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:chase.com/v/POF99228877 <span data-bracket="end" data-for="pof">]</span>

@@ -949,6 +949,11 @@
             });
         }
 
+        // Navigate to view a use case document
+        function viewUseCase(slug) {
+            window.location.href = `view.html?doc=${slug}`;
+        }
+
         function closeDialog() {
             const dialog = document.getElementById('categoryDialog');
             // Add closing class to trigger exit animation

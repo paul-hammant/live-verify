@@ -24,24 +24,20 @@ The problem is that "Agent ID Cards" are not standardized and are easy to fake. 
       <div style="font-size: 0.7em; font-weight: bold; opacity: 0.9;">STATE LICENSED PRO</div>
     </div>
   </div>
-
-  <div style="padding: 20px; display: flex; background: #fff;">
+<div style="padding: 20px; display: flex; background: #fff;">
     <div style="width: 100px; margin-right: 15px;">
       <div style="width: 100px; height: 125px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #999; font-size: 0.7em; text-align: center;">[AGENT PHOTO]</div>
     </div>
     <div style="flex-grow: 1;">
       <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Professional Name</div>
       <div style="font-size: 1.2em; font-weight: bold; margin: 0 0 10px 0; color: #333;"><span data-bracket="start" data-for="agent">[</span>SARAH J. SMITH</div>
-      
-      <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">License #</div>
+<div style="font-size: 0.75em; color: #777; text-transform: uppercase;">License #</div>
       <div style="font-size: 1em; font-weight: bold; margin: 0 0 10px 0;">ID: RE-992288-Z</div>
-      
-      <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Brokerage</div>
+<div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Brokerage</div>
       <div style="font-size: 0.9em; font-weight: bold;">Skyline Realty Group</div>
     </div>
   </div>
-
-  <div style="padding: 0 20px 20px 20px; background: #fff;">
+<div style="padding: 0 20px 20px 20px; background: #fff;">
     <div style="font-size: 0.7em; color: #555; text-align: center; margin-bottom: 10px; line-height: 1.3;">
       Scan to verify current license standing, brokerage affiliation, and background clearance for property access.
     </div>

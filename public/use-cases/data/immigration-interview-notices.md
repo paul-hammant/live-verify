@@ -16,29 +16,24 @@ furtherDerivations: 1
       <div style="font-size: 0.8em;">Form I-797C, Notice of Action</div>
     </div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
       <div style="border: 1px solid #000; padding: 5px 10px; font-weight: bold;">INTERVIEW NOTICE</div>
       <div style="text-align: right; font-family: monospace;">Receipt #: <span data-bracket="start" data-for="im-inter">[</span>MSC2699887766</div>
     </div>
-
-    <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
       <p><strong>Applicant:</strong> JOHN JACOB DOE<br>
       <strong>Form Type:</strong> I-485, Adjustment of Status</p>
-      
-      <div style="background: #f9f9f9; border: 1px solid #eee; padding: 15px; margin: 15px 0; border-radius: 4px;">
+<div style="background: #f9f9f9; border: 1px solid #eee; padding: 15px; margin: 15px 0; border-radius: 4px;">
         <p><strong>Interview Date:</strong> March 15, 2026<br>
         <strong>Interview Time:</strong> 13:00 PM</p>
         <p><strong>Location:</strong><br>
         USCIS San Francisco Field Office<br>
         444 Washington St, San Francisco, CA 94111</p>
       </div>
-
-      <p style="font-size: 0.85em; font-weight: bold;">YOU MUST BRING THIS NOTICE AND PHOTO ID TO BE ADMITTED.</p>
+<p style="font-size: 0.85em; font-weight: bold;">YOU MUST BRING THIS NOTICE AND PHOTO ID TO BE ADMITTED.</p>
     </div>
-
-    <div data-verify-line="im-inter" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="im-inter" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: USCIS doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:uscis.gov/appointments/v/MSC2699887766 <span data-bracket="end" data-for="im-inter">]</span>
     </div>

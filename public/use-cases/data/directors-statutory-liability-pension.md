@@ -26,30 +26,23 @@ Because these claims can hit 20 years after a person retires, the paperwork must
       <div style="font-size: 0.8em;">Policy #: PTL-99228877-26</div>
     </div>
   </div>
-
-  <div style="padding: 35px;">
+<div style="padding: 35px;">
     <h2 style="text-align: center; color: #2c3e50; font-size: 1.4em; margin-bottom: 25px; text-transform: uppercase; letter-spacing: 1px;">Certificate of Fiduciary Coverage</h2>
-
-    <div style="font-size: 1em; line-height: 1.6; color: #333;">
+<div style="font-size: 1em; line-height: 1.6; color: #333;">
       <p>This document confirms that the following individuals are insured for their fiduciary responsibilities under ERISA Section 409:</p>
-
-      <div style="background: #fdfdfd; border: 1px solid #ddd; padding: 15px; margin: 20px 0;">
+<div style="background: #fdfdfd; border: 1px solid #ddd; padding: 15px; margin: 20px 0;">
         <p><strong>Pension Scheme:</strong> <span data-bracket="start" data-for="pension">[</span>Globochem Retirement Master Trust<br>
         <strong>Named Trustees:</strong> Peter Gibbons, Michael Bolton, Samir Nagheenanajar</p>
-        
-        <p><strong>Limit of Indemnity:</strong> $ 10,000,000.00<br>
+<p><strong>Limit of Indemnity:</strong> $ 10,000,000.00<br>
         <strong>Self-Insured Retention:</strong> $ 100,000.00</p>
       </div>
-
-      <p><strong>Coverage Scope:</strong> Breach of Fiduciary Duty, Administrative Errors & Omissions, and Statutory Penalties.</p>
+<p><strong>Coverage Scope:</strong> Breach of Fiduciary Duty, Administrative Errors & Omissions, and Statutory Penalties.</p>
       <p><strong>Policy Period:</strong> Jan 01, 2026 to Dec 31, 2026</p>
     </div>
-
-    <div style="margin-top: 40px; border-top: 1px solid #ccc; padding-top: 10px; font-size: 0.8em; color: #666; font-style: italic; text-align: center;">
+<div style="margin-top: 40px; border-top: 1px solid #ccc; padding-top: 10px; font-size: 0.8em; color: #666; font-style: italic; text-align: center;">
       This evidence is subject to the terms, conditions, and exclusions of the Master Policy.
     </div>
-
-    <div data-verify-line="pension" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="pension" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: AXA XL doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:axaxl.com/fiduciary/v/PTL992288 <span data-bracket="end" data-for="pension">]</span>
     </div>

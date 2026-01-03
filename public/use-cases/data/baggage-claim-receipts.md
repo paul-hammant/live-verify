@@ -22,29 +22,23 @@ Because these receipts are easy to forge with a basic printer, "baggage fraud" i
     PROPERTY IRREGULARITY REPORT (PIR)<br>
     -----------------------------------
   </div>
-
-  <div style="font-size: 0.9em; line-height: 1.4;">
+<div style="font-size: 0.9em; line-height: 1.4;">
     <p><strong>Ref:</strong> <span data-bracket="start" data-for="bag">[</span>CDG-AF-998877<br>
     <strong>Passenger:</strong> AMELIE POULAIN<br>
     <strong>Flight:</strong> AF1234 / 15MAR26</p>
-
-    <p><strong>Item Description:</strong><br>
+<p><strong>Item Description:</strong><br>
     Large Suitcase, Samsonite, Black<br>
     Tag #: AF-123456</p>
-
-    <p><strong>Status:</strong> DELAYED / SEARCHING<br>
+<p><strong>Status:</strong> DELAYED / SEARCHING<br>
     <strong>Claim Category:</strong> Delayed (> 24 Hours)</p>
-
-    <div style="background: #eee; padding: 10px; margin: 15px 0;">
+<div style="background: #eee; padding: 10px; margin: 15px 0;">
       <strong>EMERGENCY EXPENSE AUTHORIZATION:</strong><br>
       Up to EUR 100.00 for essential items.<br>
       Keep all receipts for reimbursement.
     </div>
-
-    <p style="font-size: 0.8em;">Note: Subject to Montreal Convention liability limits.</p>
+<p style="font-size: 0.8em;">Note: Subject to Montreal Convention liability limits.</p>
   </div>
-
-  <div data-verify-line="bag" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="bag" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Air France doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:airfrance.com/baggage/v/CDG998877 <span data-bracket="end" data-for="bag">]</span>
   </div>

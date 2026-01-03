@@ -29,22 +29,18 @@ Witnessed hashes provide the immutable, third-party proof required to turn a "de
     <div style="font-weight: bold; font-size: 1.4em;">STATE LOTTERY</div>
     <div style="font-size: 0.8em;">OFFICIAL WIN NOTIFICATION</div>
   </div>
-
-  <div style="font-size: 1em; line-height: 1.4; text-align: center;">
+<div style="font-size: 1em; line-height: 1.4; text-align: center;">
     <p style="font-size: 1.5em; font-weight: bold; margin: 10px 0;">*** WINNER ***</p>
     <p style="font-size: 2em; font-weight: bold; color: #d32f2f; margin: 10px 0;">$ 500,000,000</p>
-    
-    <div style="text-align: left; margin-top: 20px; font-size: 0.9em;">
+<div style="text-align: left; margin-top: 20px; font-size: 0.9em;">
       <strong>Draw:</strong> MEGA MILLIONS<br>
       <strong>Date:</strong> JAN 02, 2026<br>
       <strong>Ticket ID:</strong> <span data-bracket="start" data-for="lottery">[</span>MM-2026-X9Y8Z7<br>
       <strong>Terminal:</strong> #8472-A
     </div>
-
-    <p style="margin-top: 20px; font-size: 0.8em; font-style: italic;">Please present this receipt at a regional claims center to begin the verification process.</p>
+<p style="margin-top: 20px; font-size: 0.8em; font-style: italic;">Please present this receipt at a regional claims center to begin the verification process.</p>
   </div>
-
-  <div data-verify-line="lottery" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="lottery" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Lottery doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:statelottery.gov/v/MM2026X9Y8Z7 <span data-bracket="end" data-for="lottery">]</span>
   </div>

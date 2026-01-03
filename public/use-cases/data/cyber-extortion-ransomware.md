@@ -26,28 +26,22 @@ Because these authorizations trigger multimillion-dollar crypto-payments, they a
       <div style="font-size: 0.8em;">Incident #: BBR-2026-9922</div>
     </div>
   </div>
-
-  <div style="padding: 30px;">
+<div style="padding: 30px;">
     <h2 style="text-align: center; color: #333; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Extortion Payment Authorization</h2>
-
-    <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.9em; line-height: 1.6; color: #333;">
       <p><strong>Insured:</strong> <span data-bracket="start" data-for="cyber">[</span>Apex Healthcare Systems, Inc.<br>
       <strong>Attacking Group:</strong> [REDACTED - Threat Actor 42]</p>
-
-      <div style="background: #fdfdfd; border: 1px solid #ddd; padding: 15px; margin: 15px 0;">
+<div style="background: #fdfdfd; border: 1px solid #ddd; padding: 15px; margin: 15px 0;">
         <p><strong>Approved Ransom Limit:</strong> $ 2,500,000.00 (in BTC/XMR)</p>
         <p><strong>Authorized Negotiator:</strong> Kivu Consulting, Inc.<br>
         <strong>Sanctions Check:</strong> PASSED (OFAC/HMT Compliance)</p>
       </div>
-
-      <p><strong>Incident Summary:</strong> LockBit 3.0 infection. 1.2 TB of data exfiltrated. Critical infrastructure affected. <strong>Decision:</strong> Authorization granted for negotiation and settlement.</p>
+<p><strong>Incident Summary:</strong> LockBit 3.0 infection. 1.2 TB of data exfiltrated. Critical infrastructure affected. <strong>Decision:</strong> Authorization granted for negotiation and settlement.</p>
     </div>
-
-    <div style="margin-top: 30px; border: 1px solid #ffccbc; padding: 10px; font-size: 0.8em; color: #d84315; background: #fff5f2; font-style: italic;">
+<div style="margin-top: 30px; border: 1px solid #ffccbc; padding: 10px; font-size: 0.8em; color: #d84315; background: #fff5f2; font-style: italic;">
       Strictly Confidential. Subject to "No-Admission" clause. Verification of this authorization does not constitute proof of payment.
     </div>
-
-    <div data-verify-line="cyber" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="cyber" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Cyber underwriter doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:beazley.com/cyber/v/BBR-992288 <span data-bracket="end" data-for="cyber">]</span>
     </div>

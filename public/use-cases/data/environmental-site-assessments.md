@@ -21,22 +21,18 @@ Fraud happens when a seller "Deletes" the page of the report that mentions a bur
     <div style="font-weight: bold; font-size: 1.3em;">ENVIRO-CONSULT GROUP, LLC</div>
     <div style="font-size: 0.85em; color: #33691e;">PHASE I ENVIRONMENTAL SITE ASSESSMENT</div>
   </div>
-
-  <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <p><strong>Property:</strong> <span data-bracket="start" data-for="esa">[</span>789 Industrial Way, Metropolis, State 90210<br>
     <strong>Client:</strong> Metropolis Property Developers, LLC</p>
-
-    <div style="background: #fff; border: 1px solid #c5e1a5; padding: 15px; margin: 20px 0;">
+<div style="background: #fff; border: 1px solid #c5e1a5; padding: 15px; margin: 20px 0;">
       <p><strong>Assessment Standard:</strong> ASTM E1527-21</p>
       <p><strong>Findings:</strong> No Recognized Environmental Conditions (RECs) identified.</p>
       <p><strong>Recommendation:</strong> No further action required.</p>
     </div>
-
-    <p><strong>Report Date:</strong> March 15, 2026<br>
+<p><strong>Report Date:</strong> March 15, 2026<br>
     <strong>Lead Assessor:</strong> Dr. K. Sharma (LSP #9876)</p>
   </div>
-
-  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div style="width: 45%;">
       <div style="border-top: 1px solid #000; padding-top: 5px; font-style: italic;">K. Sharma, LSP</div>
       <div style="font-size: 0.8em; color: #777;">Licensed Site Professional</div>
@@ -45,8 +41,7 @@ Fraud happens when a seller "Deletes" the page of the report that mentions a bur
       Report ID: EC-P1-2026-402
     </div>
   </div>
-
-  <div data-verify-line="esa" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="esa" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Enviro-Consult doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:enviroconsult.com/reports/v/EC-P1-402 <span data-bracket="end" data-for="esa">]</span>
   </div>

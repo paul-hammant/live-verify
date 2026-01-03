@@ -24,16 +24,13 @@ These documents are the primary evidence used for **Travel Insurance Claims**. A
       <div style="font-size: 0.8em;">Booking Ref: <span data-bracket="start" data-for="cancel">[</span>L7XK9B</div>
     </div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <h3 style="margin-top: 0; color: #333; border-bottom: 2px solid #d32f2f; padding-bottom: 5px;">CANCELLATION SUMMARY</h3>
-
-    <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.9em; line-height: 1.6; color: #333;">
       <p><strong>Passenger:</strong> JOHN JACOB DOE<br>
       <strong>Cancellation Date:</strong> MARCH 15, 2026<br>
       <strong>Reason:</strong> Passenger Request (Non-Refundable Fare)</p>
-
-      <div style="margin: 20px 0; border: 1px solid #eee; border-radius: 4px; overflow: hidden;">
+<div style="margin: 20px 0; border: 1px solid #eee; border-radius: 4px; overflow: hidden;">
         <table style="width: 100%; border-collapse: collapse;">
           <tr style="background: #f5f5f5; border-bottom: 1px solid #eee;">
             <th style="text-align: left; padding: 10px;">Refund Type</th>
@@ -55,8 +52,7 @@ These documents are the primary evidence used for **Travel Insurance Claims**. A
       </div>
     </div>
   </div>
-
-  <div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #bbb; text-align: center;">
+<div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #bbb; text-align: center;">
     <div data-verify-line="cancel" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #d32f2f; font-weight: bold;"
       title="Demo only: Airlines don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:ba.com/cancel/v/L7XK9BDOE <span data-bracket="end" data-for="cancel">]</span>

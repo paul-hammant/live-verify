@@ -27,31 +27,25 @@ OCR-to-Hash allows a simple wallet card to link to a detailed, verified medical 
       <div style="font-size: 0.8em;">EMERGENCY INFORMATION</div>
     </div>
   </div>
-
-  <div style="padding: 20px;">
+<div style="padding: 20px;">
     <div style="font-size: 0.95em; line-height: 1.5; color: #333;">
       <p><strong>Name:</strong> <span data-bracket="start" data-for="alert">[</span>TIMOTHY DRAKE<br>
       <strong>DOB:</strong> 07/19/2018</p>
-
-      <div style="background: #ffebee; border: 1px solid #ffcdd2; padding: 10px; border-radius: 4px; margin: 15px 0;">
+<div style="background: #ffebee; border: 1px solid #ffcdd2; padding: 10px; border-radius: 4px; margin: 15px 0;">
         <strong style="color: #d32f2f;">SEVERE ALLERGIES:</strong>
         <ul style="margin: 5px 0 0 20px; padding: 0;">
           <li>PEANUTS (Anaphylaxis)</li>
           <li>PENICILLIN</li>
         </ul>
       </div>
-
-      <p><strong>Conditions:</strong> Type 1 Diabetes (Insulin Dependent)</p>
-
-      <p><strong>Emergency Contact:</strong><br>
+<p><strong>Conditions:</strong> Type 1 Diabetes (Insulin Dependent)</p>
+<p><strong>Emergency Contact:</strong><br>
       Jack Drake (Father)<br>
       (555) 123-4567</p>
-
-      <p><strong>Physician:</strong> Dr. Leslie Thompkins<br>
+<p><strong>Physician:</strong> Dr. Leslie Thompkins<br>
       (555) 987-6543</p>
     </div>
-
-    <div data-verify-line="alert" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="alert" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: MedicAlert doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:medicalert.org/v/x9y8z7 <span data-bracket="end" data-for="alert">]</span>
     </div>

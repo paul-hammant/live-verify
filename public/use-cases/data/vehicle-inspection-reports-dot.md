@@ -19,8 +19,7 @@ These documents are critical for highway safety. Fraud is rampant: shady carrier
     <h2 style="margin: 0; font-size: 1.3em; letter-spacing: 1px;">ANNUAL VEHICLE INSPECTION REPORT</h2>
     <div style="font-size: 0.8em; opacity: 0.9;">IN ACCORDANCE WITH 49 CFR PART 396.17</div>
   </div>
-
-  <div style="padding: 20px;">
+<div style="padding: 20px;">
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.85em; margin-bottom: 20px;">
       <div>
         <strong>Carrier:</strong> <span data-bracket="start" data-for="dot">[</span>GLOBAL LOGISTICS CORP.<br>
@@ -33,8 +32,7 @@ These documents are critical for highway safety. Fraud is rampant: shady carrier
         <strong>Plate:</strong> ABC-1234 (NY)
       </div>
     </div>
-
-    <table style="width: 100%; border-collapse: collapse; font-size: 0.8em; margin-bottom: 20px;">
+<table style="width: 100%; border-collapse: collapse; font-size: 0.8em; margin-bottom: 20px;">
       <tr style="background: #eee; border-top: 1px solid #000; border-bottom: 1px solid #000;">
         <th style="text-align: left; padding: 8px;">Inspection Category</th>
         <th style="text-align: center; padding: 8px;">Condition</th>
@@ -56,8 +54,7 @@ These documents are critical for highway safety. Fraud is rampant: shady carrier
         <td style="text-align: right; padding: 6px;">Passed</td>
       </tr>
     </table>
-
-    <div style="display: flex; justify-content: space-between; align-items: flex-end; font-size: 0.85em;">
+<div style="display: flex; justify-content: space-between; align-items: flex-end; font-size: 0.85em;">
       <div>
         <div style="border-top: 1px solid #000; width: 200px; padding-top: 5px; font-style: italic;">Robert J. Miller, Certified Inspector</div>
         <div>Inspector ID: #9922-NY • Date: 15 MAR 2026</div>
@@ -65,8 +62,7 @@ These documents are critical for highway safety. Fraud is rampant: shady carrier
       <div style="border: 2px solid #000; padding: 10px; font-weight: bold; transform: rotate(-3deg);">CERTIFIED PASS</div>
     </div>
   </div>
-
-  <div style="padding: 20px; background: #f9f9f9; border-top: 1px solid #eee; text-align: center;">
+<div style="padding: 20px; background: #f9f9f9; border-top: 1px solid #eee; text-align: center;">
     <div data-verify-line="dot" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: Inspection stations don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:dot-inspect.com/v/VIN1ABC9922 <span data-bracket="end" data-for="dot">]</span>

@@ -19,8 +19,7 @@ Government regulators (like the FTC) now require these fees to be clearly disclo
     <div style="font-size: 1.4em; font-weight: bold; letter-spacing: 2px;">THE GRAND AZURE RESORT</div>
     <div style="font-size: 0.7em; opacity: 0.8; text-transform: uppercase; margin-top: 5px;">MANDATORY FEE DISCLOSURE & RECEIPT</div>
   </div>
-
-  <div style="padding: 25px; font-size: 0.9em; line-height: 1.5; color: #333;">
+<div style="padding: 25px; font-size: 0.9em; line-height: 1.5; color: #333;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 10px;">
       <div>
         <strong>Guest:</strong> <span data-bracket="start" data-for="resort">[</span>JOHN DOE<br>
@@ -31,12 +30,10 @@ Government regulators (like the FTC) now require these fees to be clearly disclo
         <strong>Room:</strong> 1242 (King)
       </div>
     </div>
-
-    <p style="font-style: italic; color: #666; font-size: 0.85em;">
+<p style="font-style: italic; color: #666; font-size: 0.85em;">
       In accordance with consumer protection laws, the following mandatory daily charges are included in your stay:
     </p>
-
-    <table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
       <tr style="border-bottom: 1px solid #ccc;">
         <th style="text-align: left; padding: 8px;">Charge Description</th>
         <th style="text-align: right; padding: 8px;">Daily Amount</th>
@@ -54,13 +51,11 @@ Government regulators (like the FTC) now require these fees to be clearly disclo
         <td style="text-align: right; padding: 8px;">$ 57.50</td>
       </tr>
     </table>
-
-    <div style="font-size: 0.75em; color: #777; margin-top: 15px;">
+<div style="font-size: 0.75em; color: #777; margin-top: 15px;">
       Total mandatory fees for 3 nights: <strong>$ 172.50</strong>
     </div>
   </div>
-
-  <div style="padding: 20px; background: #f9f9f9; border-top: 1px solid #eee; text-align: center;">
+<div style="padding: 20px; background: #f9f9f9; border-top: 1px solid #eee; text-align: center;">
     <div data-verify-line="resort" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #1a237e; font-weight: bold;"
       title="Demo only: Hotels don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:grandazure.com/fees/v/AZ99228877 <span data-bracket="end" data-for="resort">]</span>

@@ -13,8 +13,7 @@ furtherDerivations: 1
     <div style="font-weight: bold; font-size: 1.1em;">AMERICAN RED CROSS</div>
     <div style="font-size: 1.5em;">🩸</div>
   </div>
-
-  <div style="padding: 20px;">
+<div style="padding: 20px;">
     <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px;">
       <div style="font-size: 0.9em; line-height: 1.4; color: #333;">
         <strong>Donor Name:</strong><br>
@@ -26,18 +25,15 @@ furtherDerivations: 1
         <div style="font-size: 1.8em; font-weight: bold; color: #b71c1c;">O Neg</div>
       </div>
     </div>
-
-    <div style="font-size: 0.85em; color: #555; border-top: 1px solid #eee; padding-top: 10px;">
+<div style="font-size: 0.85em; color: #555; border-top: 1px solid #eee; padding-top: 10px;">
       <strong>Donor ID:</strong> 9988-7766-55<br>
       <strong>Last Donation:</strong> 15 JAN 2026<br>
       <strong>Screening:</strong> CMV Negative
     </div>
-
-    <div style="margin-top: 15px; font-size: 0.7em; line-height: 1.3; color: #777; font-style: italic;">
+<div style="margin-top: 15px; font-size: 0.7em; line-height: 1.3; color: #777; font-style: italic;">
       This card is for record-keeping only. Hospitals must perform independent cross-matching before any transfusion.
     </div>
-
-    <div data-verify-line="blood" style="border-top: 1px dashed #999; margin-top: 15px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="blood" style="border-top: 1px dashed #999; margin-top: 15px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Red Cross doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:redcross.org/donors/v/99887766 <span data-bracket="end" data-for="blood">]</span>
     </div>

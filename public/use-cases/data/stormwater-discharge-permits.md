@@ -22,8 +22,7 @@ These permits are the "Permission to Pollute" within legal bounds. Fraud is comm
     </div>
     <div style="font-size: 2em;">💧</div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
         <strong>Permittee:</strong> <span data-bracket="start" data-for="water">[</span>GOLIATH MANUFACTURING INC.<br>
@@ -36,8 +35,7 @@ These permits are the "Permission to Pollute" within legal bounds. Fraud is comm
         <strong>Expires:</strong> 14 MAR 2031
       </div>
     </div>
-
-    <div style="background: #f0f4f8; border: 1px solid #ddd; padding: 15px; margin-bottom: 20px; border-radius: 4px;">
+<div style="background: #f0f4f8; border: 1px solid #ddd; padding: 15px; margin-bottom: 20px; border-radius: 4px;">
       <h4 style="margin-top: 0; color: #002d62; font-size: 0.9em; border-bottom: 1px solid #ccc; padding-bottom: 5px;">VERIFIED DISCHARGE LIMITS</h4>
       <table style="width: 100%; font-size: 0.85em;">
         <tr>
@@ -58,13 +56,11 @@ These permits are the "Permission to Pollute" within legal bounds. Fraud is comm
         </tr>
       </table>
     </div>
-
-    <div style="font-size: 0.75em; color: #666; line-height: 1.4; font-style: italic; text-align: center;">
+<div style="font-size: 0.75em; color: #666; line-height: 1.4; font-style: italic; text-align: center;">
       This permit authorizes discharge only during storm events. Any un-verified discharge or limit violation is subject to federal penalties of up to $50,000 per day.
     </div>
   </div>
-
-  <div style="padding: 20px; background: #fdfdfd; border-top: 1px solid #002d62; text-align: center;">
+<div style="padding: 20px; background: #fdfdfd; border-top: 1px solid #002d62; text-align: center;">
     <div data-verify-line="water" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: State boards don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:state-water.gov/npdes/v/NY992288Z <span data-bracket="end" data-for="water">]</span>

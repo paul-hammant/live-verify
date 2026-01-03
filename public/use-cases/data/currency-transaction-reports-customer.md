@@ -21,23 +21,20 @@ Lenders and tax auditors use these verified receipts to prove that a large "Gift
     <h2 style="margin: 0; font-size: 1.3em;">CURRENCY TRANSACTION REPORT</h2>
     <div style="font-size: 0.8em; margin-top: 5px;">FinCEN Form 112 • Official Customer Receipt</div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="border-bottom: 2px solid #002d62; padding-bottom: 10px; margin-bottom: 20px;">
       <strong>Financial Institution:</strong> BANK OF AMERICA, N.A.<br>
       <strong>Branch:</strong> 402 Market St, San Francisco, CA<br>
       <strong>Date of Filing:</strong> March 15, 2026
     </div>
-
-    <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
       <p><strong>Part I: Person Conducting Transaction</strong></p>
       <p style="background: #f9f9f9; padding: 10px; border-left: 4px solid #002d62;">
         <span data-bracket="start" data-for="ctr">[</span><strong>Name:</strong> JOHN JACOB DOE<br>
         <strong>SSN/ITIN:</strong> ***-**-1234<br>
         <strong>ID:</strong> CA Driver License #*******
       </p>
-
-      <p><strong>Part II: Transaction Details</strong></p>
+<p><strong>Part II: Transaction Details</strong></p>
       <table style="width: 100%; border-collapse: collapse;">
         <tr>
           <td>Cash-In (Deposit):</td>
@@ -49,12 +46,10 @@ Lenders and tax auditors use these verified receipts to prove that a large "Gift
         </tr>
       </table>
     </div>
-
-    <p style="font-size: 0.8em; color: #777; font-style: italic; margin-top: 20px;">
+<p style="font-size: 0.8em; color: #777; font-style: italic; margin-top: 20px;">
       This report is filed in accordance with the Bank Secrecy Act. Submission ID: 9988776655.
     </p>
-
-    <div data-verify-line="ctr" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="ctr" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: FinCEN/Banks don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:bankofamerica.com/compliance/v/99887766 <span data-bracket="end" data-for="ctr">]</span>
     </div>

@@ -24,16 +24,13 @@ If a traveler loses this paper, or if an airline agent in Paris thinks it looks 
       <div style="font-size: 0.9em;">U.S. Citizenship and Immigration Services</div>
     </div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
       <div style="border: 1px solid #000; padding: 5px 10px; font-weight: bold;">I-512L</div>
       <div style="font-family: monospace;">A# 123-456-789</div>
     </div>
-
-    <h2 style="text-align: center; font-size: 1.3em; margin-bottom: 20px;">AUTHORIZATION FOR PAROLE OF AN ALIEN<br>INTO THE UNITED STATES</h2>
-
-    <div style="display: flex; margin-bottom: 20px;">
+<h2 style="text-align: center; font-size: 1.3em; margin-bottom: 20px;">AUTHORIZATION FOR PAROLE OF AN ALIEN<br>INTO THE UNITED STATES</h2>
+<div style="display: flex; margin-bottom: 20px;">
       <div style="width: 100px; height: 120px; background: #eee; margin-right: 20px; display: flex; align-items: center; justify-content: center; color: #777;">[Photo]</div>
       <div style="font-size: 0.95em; line-height: 1.5; color: #333;">
         <p><strong>Name:</strong> <span data-bracket="start" data-for="parole">[</span>JUAN VALDEZ<br>
@@ -43,10 +40,8 @@ If a traveler loses this paper, or if an airline agent in Paris thinks it looks 
         <strong>Valid Until:</strong> JAN 14, 2027</p>
       </div>
     </div>
-
-    <p style="font-size: 0.9em; text-align: justify;">Presentation of this authorization will permit the above named alien to seek parole at a port of entry. Officer at POE: Please endorse below.</p>
-
-    <div data-verify-line="parole" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<p style="font-size: 0.9em; text-align: justify;">Presentation of this authorization will permit the above named alien to seek parole at a port of entry. Officer at POE: Please endorse below.</p>
+<div data-verify-line="parole" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: USCIS doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:uscis.gov/v/i512/x9y8z7 <span data-bracket="end" data-for="parole">]</span>
     </div>

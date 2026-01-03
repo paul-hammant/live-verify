@@ -22,8 +22,7 @@ These documents are the "Proof of Protection" for the most valuable items on Ear
     </div>
     <div style="font-size: 2.2em; color: #d4af37;">💎</div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
         <strong>Insured:</strong> THE METROPOLITAN GALLERY<br>
@@ -36,8 +35,7 @@ These documents are the "Proof of Protection" for the most valuable items on Ear
         <strong>Date:</strong> 15 MAR 2026
       </div>
     </div>
-
-    <div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin-bottom: 20px; border-radius: 4px;">
+<div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin-bottom: 20px; border-radius: 4px;">
       <h4 style="margin-top: 0; color: #1a1a1a; font-size: 0.9em; border-bottom: 1px solid #ccc; padding-bottom: 5px;">VERIFIED TRANSIT PROTOCOL</h4>
       <table style="width: 100%; font-size: 0.85em; line-height: 1.4;">
         <tr>
@@ -58,13 +56,11 @@ These documents are the "Proof of Protection" for the most valuable items on Ear
         </tr>
       </table>
     </div>
-
-    <div style="font-size: 0.75em; color: #666; font-style: italic; text-align: center;">
+<div style="font-size: 0.75em; color: #666; font-style: italic; text-align: center;">
       This certificate is a verified extract of the Master Specie Policy. Coverage is contingent upon strict adherence to the transit protocols stated above.
     </div>
   </div>
-
-  <div style="padding: 20px; background: #1a1a1a; text-align: center;">
+<div style="padding: 20px; background: #1a1a1a; text-align: center;">
     <div data-verify-line="specie" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #d4af37; font-weight: bold;"
       title="Demo only: Fine art insurers don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:axa-art.com/v/SP99228877 <span data-bracket="end" data-for="specie">]</span>

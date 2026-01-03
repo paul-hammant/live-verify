@@ -29,8 +29,7 @@ Verified EOBs are essential for **HSA/FSA Reimbursement**. Fraudsters often edit
       <div style="font-size: 0.8em;">Claim #: 99228877-BC</div>
     </div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="display: flex; justify-content: space-between; font-size: 0.9em; margin-bottom: 20px; color: #555;">
       <div>
         <strong>Patient:</strong> <span data-bracket="start" data-for="eob-health">[</span>SARAH J. DOE<br>
@@ -41,8 +40,7 @@ Verified EOBs are essential for **HSA/FSA Reimbursement**. Fraudsters often edit
         <strong>Statement Date:</strong> Mar 15, 2026
       </div>
     </div>
-
-    <table style="width: 100%; border-collapse: collapse; font-size: 0.85em;">
+<table style="width: 100%; border-collapse: collapse; font-size: 0.85em;">
       <tr style="border-bottom: 2px solid #005fb8; background: #f5f5f5;">
         <th style="padding: 5px; text-align: left;">Service Description</th>
         <th style="padding: 5px; text-align: right;">Amount Billed</th>
@@ -63,12 +61,10 @@ Verified EOBs are essential for **HSA/FSA Reimbursement**. Fraudsters often edit
         <td style="text-align: right; padding: 5px;">$ 70.00</td>
       </tr>
     </table>
-
-    <p style="margin-top: 20px; font-size: 0.8em; color: #555; font-style: italic;">
+<p style="margin-top: 20px; font-size: 0.8em; color: #555; font-style: italic;">
       This is NOT a bill. Use this verified record for HSA/FSA reimbursement.
     </p>
-
-    <div data-verify-line="eob-health" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="eob-health" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Anthem doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:anthem.com/claims/v/99228877 <span data-bracket="end" data-for="eob-health">]</span>
     </div>

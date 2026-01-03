@@ -22,8 +22,7 @@ These documents are the "Legal Safe Harbor" for high-value trade. Fraud is high-
     </div>
     <div style="font-size: 2em;">🌐</div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
         <strong>Subject:</strong> <span data-bracket="start" data-for="sanc">[</span>GLOBAL PETROLEUM TRADING LTD.<br>
@@ -36,8 +35,7 @@ These documents are the "Legal Safe Harbor" for high-value trade. Fraud is high-
         <strong>Result:</strong> <span style="color: #2e7d32; font-weight: bold;">NO MATCH FOUND</span>
       </div>
     </div>
-
-    <div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin-bottom: 20px; border-radius: 4px;">
+<div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin-bottom: 20px; border-radius: 4px;">
       <h4 style="margin-top: 0; color: #000; font-size: 0.9em; border-bottom: 1px solid #ccc; padding-bottom: 5px;">DATASETS VERIFIED</h4>
       <ul style="margin: 5px 0; padding-left: 20px; font-size: 0.85em; line-height: 1.4;">
         <li><strong>US OFAC:</strong> Specially Designated Nationals (SDN) - <em>Verified 15-MAR</em></li>
@@ -46,13 +44,11 @@ These documents are the "Legal Safe Harbor" for high-value trade. Fraud is high-
         <li><strong>UK HMT:</strong> Consolidated List of Financial Sanctions - <em>Verified 15-MAR</em></li>
       </ul>
     </div>
-
-    <div style="font-size: 0.75em; color: #666; font-style: italic; text-align: center;">
+<div style="font-size: 0.75em; color: #666; font-style: italic; text-align: center;">
       This attestation confirms that the subject was screened against the datasets above with 100% fuzzy-match threshold. Verification confirms report integrity at the timestamp of issuance.
     </div>
   </div>
-
-  <div style="padding: 20px; background: #f5f5f5; border-top: 1px dashed #999; text-align: center;">
+<div style="padding: 20px; background: #f5f5f5; border-top: 1px dashed #999; text-align: center;">
     <div data-verify-line="sanc" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: Screening providers don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:dowjones.com/v/DJ99228877 <span data-bracket="end" data-for="sanc">]</span>

@@ -22,29 +22,24 @@ The problem is that "Pest Control" is a high-trust, high-risk profession. Crimin
       <div style="font-size: 0.75em; font-weight: bold; opacity: 0.9;">PEST CONTROL BOARD</div>
     </div>
   </div>
-
-  <div style="padding: 20px; display: flex; background: #fff;">
+<div style="padding: 20px; display: flex; background: #fff;">
     <div style="width: 100px; margin-right: 15px;">
       <div style="width: 100px; height: 125px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #999; font-size: 0.7em; text-align: center;">[TECHNICIAN PHOTO]</div>
     </div>
     <div style="flex-grow: 1;">
       <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Licensee Name</div>
       <div style="font-size: 1.2em; font-weight: bold; margin: 0 0 10px 0; color: #004d40;"><span data-bracket="start" data-for="pest">[</span>ROBERT J. MILLER</div>
-      
-      <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">License #</div>
+<div style="font-size: 0.75em; color: #777; text-transform: uppercase;">License #</div>
       <div style="font-size: 1em; font-weight: bold; margin: 0 0 10px 0;">ID: PCO-992288-TX</div>
-      
-      <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Employer</div>
+<div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Employer</div>
       <div style="font-size: 0.9em; font-weight: bold;">Safe-Home Exterminators</div>
     </div>
   </div>
-
-  <div style="padding: 10px 20px; background: #f5f5f5; border-top: 1px solid #eee; font-size: 0.8em;">
+<div style="padding: 10px 20px; background: #f5f5f5; border-top: 1px solid #eee; font-size: 0.8em;">
     <strong>Categories:</strong> Structural (7A), Termite (7B)<br>
     <strong>Expires:</strong> MARCH 15, 2027
   </div>
-
-  <div style="padding: 15px 20px 20px 20px; background: #fff; border-top: 1px dashed #999; text-align: center;">
+<div style="padding: 15px 20px 20px 20px; background: #fff; border-top: 1px dashed #999; text-align: center;">
     <div data-verify-line="pest" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #004d40; font-weight: bold;"
       title="Demo only: State boards don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:texasag.gov/v/PCO992288 <span data-bracket="end" data-for="pest">]</span>

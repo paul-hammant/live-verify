@@ -21,8 +21,7 @@ Shippers often "Guess" the weight to save the $50 fee for a certified scale. Thi
     <h2 style="margin: 0; text-transform: uppercase; font-size: 1.2em;">SOLAS VGM DECLARATION</h2>
     <div style="font-size: 0.8em;">Verified Gross Mass Certificate</div>
   </div>
-
-  <div style="padding: 20px;">
+<div style="padding: 20px;">
     <div style="display: flex; justify-content: space-between; font-size: 0.9em; margin-bottom: 20px;">
       <div>
         <strong>Container #:</strong> <span data-bracket="start" data-for="vgm">[</span>MSKU-123456-7<br>
@@ -33,24 +32,19 @@ Shippers often "Guess" the weight to save the $50 fee for a certified scale. Thi
         <strong>Date:</strong> 15 MAR 2026
       </div>
     </div>
-
-    <div style="font-size: 0.95em; line-height: 1.6; color: #333; border: 1px solid #000; padding: 15px; margin-bottom: 20px;">
+<div style="font-size: 0.95em; line-height: 1.6; color: #333; border: 1px solid #000; padding: 15px; margin-bottom: 20px;">
       <p><strong>Verified Gross Mass (VGM):</strong></p>
       <div style="text-align: center; font-size: 1.8em; font-weight: bold; color: #002d62;">24,550.00 KG</div>
-      
-      <p style="margin-top: 15px;"><strong>Shipper:</strong> Global Furniture Exports, Ltd.<br>
+<p style="margin-top: 15px;"><strong>Shipper:</strong> Global Furniture Exports, Ltd.<br>
       <strong>Method:</strong> Method 1 (Weighing the entire container)</p>
     </div>
-
-    <div style="font-size: 0.8em; color: #555; text-align: justify;">
+<div style="font-size: 0.8em; color: #555; text-align: justify;">
       This declaration is made in accordance with the IMO SOLAS Regulation VI/2. The signatory certifies that the mass has been verified using calibrated and certified equipment.
     </div>
-
-    <div style="margin-top: 30px; border-top: 1px solid #000; padding-top: 5px; font-size: 0.85em;">
+<div style="margin-top: 30px; border-top: 1px solid #000; padding-top: 5px; font-size: 0.85em;">
       <strong>Authorized Signatory:</strong> <em>Robert J. Miller</em>
     </div>
-
-    <div data-verify-line="vgm" style="border-top: 1px dashed #999; margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #555; text-align: center;"
+<div data-verify-line="vgm" style="border-top: 1px dashed #999; margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #555; text-align: center;"
       title="Demo only: Shipper portal doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:global-furniture.com/vgm/v/MSKU123456 <span data-bracket="end" data-for="vgm">]</span>
     </div>

@@ -18,15 +18,12 @@ furtherDerivations: 1
       <div style="font-size: 0.8em;">Client Ref: 99228877</div>
     </div>
   </div>
-
-  <div style="padding: 30px;">
+<div style="padding: 30px;">
     <h2 style="text-align: center; color: #333; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Policy Evidence Portfolio</h2>
-
-    <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.9em; line-height: 1.6; color: #333;">
       <p><strong>Insured:</strong> <span data-bracket="start" data-for="ins-pol">[</span>Global Logistics Solutions, Corp.<br>
       <strong>Period:</strong> March 01, 2026 to March 01, 2027</p>
-
-      <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
         <tr style="background: #f5f5f5; border-bottom: 2px solid #333;">
           <th style="text-align: left; padding: 8px;">Line of Coverage</th>
           <th style="text-align: right; padding: 8px;">Primary Limit</th>
@@ -44,11 +41,9 @@ furtherDerivations: 1
           <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 5,000,000</td>
         </tr>
       </table>
-
-      <p style="font-size: 0.8em; color: #555;"><strong>Note:</strong> All policies include Waivers of Subrogation and Primary/Non-Contributory endorsements as required by Master Service Agreement.</p>
+<p style="font-size: 0.8em; color: #555;"><strong>Note:</strong> All policies include Waivers of Subrogation and Primary/Non-Contributory endorsements as required by Master Service Agreement.</p>
     </div>
-
-    <div data-verify-line="ins-pol" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="ins-pol" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Broker/Carrier doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:marsh.com/portfolio/v/99228877 <span data-bracket="end" data-for="ins-pol">]</span>
     </div>

@@ -25,8 +25,7 @@ Charities often have to fax, email, or mail this letter dozens of times a year t
     <div style="font-size: 0.9em;">Department of the Treasury</div>
     <div style="font-size: 0.9em;">P.O. Box 2508, Cincinnati, OH 45201</div>
   </div>
-
-  <div style="display: flex; justify-content: space-between; margin-bottom: 30px; font-size: 0.9em;">
+<div style="display: flex; justify-content: space-between; margin-bottom: 30px; font-size: 0.9em;">
     <div>
       Date: <span style="font-weight: bold;">OCT 24 2025</span><br><br>
       <span data-bracket="start" data-for="501c3">[</span>THE HUMAN FUND<br>
@@ -40,14 +39,12 @@ Charities often have to fax, email, or mail this letter dozens of times a year t
       17053221002025
     </div>
   </div>
-
-  <div style="font-size: 0.95em; line-height: 1.6; text-align: justify;">
+<div style="font-size: 0.95em; line-height: 1.6; text-align: justify;">
     <p>Dear Applicant:</p>
     <p>We're pleased to tell you we determined you're exempt from federal income tax under Internal Revenue Code (IRC) Section 501(c)(3). Donors can deduct contributions they make to you under IRC Section 170. You're also qualified to receive tax deductible bequests, devises, transfers or gifts under Section 2055, 2106, or 2522.</p>
     <p>Public Charity Status: 170(b)(1)(A)(vi)</p>
   </div>
-
-  <div data-verify-line="501c3" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="501c3" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: IRS doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:irs.gov/teos/v/9a8b7c <span data-bracket="end" data-for="501c3">]</span>
   </div>

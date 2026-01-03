@@ -13,15 +13,12 @@ furtherDerivations: 1
     <div style="font-weight: bold; font-size: 1.4em; color: #000;">PHILLIPS</div>
     <div style="font-size: 0.8em; color: #666;">NEW YORK • 432 PARK AVENUE</div>
   </div>
-
-  <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <h3 style="text-align: center; text-transform: uppercase; margin-bottom: 20px;">Purchase Statement</h3>
-
-    <p><strong>Sale:</strong> NY010126 - Modern Masterpieces<br>
+<p><strong>Sale:</strong> NY010126 - Modern Masterpieces<br>
     <strong>Date:</strong> 15 March 2026<br>
     <strong>Bidder #:</strong> <span data-bracket="start" data-for="auction">[</span>9988</p>
-
-    <div style="margin: 20px 0; border-top: 2px solid #000; padding-top: 15px;">
+<div style="margin: 20px 0; border-top: 2px solid #000; padding-top: 15px;">
       <table style="width: 100%;">
         <tr>
           <td><strong>Lot 42:</strong> <em>The Electric Violin</em> (1962)</td>
@@ -41,10 +38,8 @@ furtherDerivations: 1
         </tr>
       </table>
     </div>
-
-    <p style="font-style: italic; font-size: 0.9em;">Payment received in full. Title transferred upon clearance of funds.</p>
-
-    <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+<p style="font-style: italic; font-size: 0.9em;">Payment received in full. Title transferred upon clearance of funds.</p>
+<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
       <div>
         <div style="border-top: 1px solid #000; width: 180px; padding-top: 5px;">Auction House Controller</div>
       </div>
@@ -53,8 +48,7 @@ furtherDerivations: 1
       </div>
     </div>
   </div>
-
-  <div data-verify-line="auction" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="auction" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Phillips doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:phillips.com/sales/v/NY010126-42 <span data-bracket="end" data-for="auction">]</span>
   </div>

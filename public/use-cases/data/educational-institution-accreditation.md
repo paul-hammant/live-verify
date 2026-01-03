@@ -24,20 +24,17 @@ In most countries, the government doesn't "Grade" universities. Instead, private
     <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 2px; color: #1a365d;">MIDDLE STATES COMMISSION ON HIGHER EDUCATION</div>
     <div style="font-size: 0.85em; color: #666; margin-top: 5px;">CERTIFICATE OF ACCREDITATION</div>
   </div>
-
-  <div style="font-size: 1.1em; line-height: 1.8; color: #333; text-align: center;">
+<div style="font-size: 1.1em; line-height: 1.8; color: #333; text-align: center;">
     <p>This is to certify that</p>
     <p style="font-size: 1.5em; font-weight: bold; color: #1a365d; margin: 15px 0;"><span data-bracket="start" data-for="accred">[</span>UNIVERSITY OF EXCELLENCE</p>
     <p>is accredited by the Middle States Commission on Higher Education, an institutional accrediting agency recognized by the U.S. Secretary of Education and the Council for Higher Education Accreditation.</p>
-    
-    <div style="background: #f9f9f9; padding: 15px; border: 1px solid #eee; margin: 25px 0; font-size: 0.9em; text-align: left;">
+<div style="background: #f9f9f9; padding: 15px; border: 1px solid #eee; margin: 25px 0; font-size: 0.9em; text-align: left;">
       <strong>Status:</strong> ACCREDITED (In Good Standing)<br>
       <strong>Last Review:</strong> March 2024<br>
       <strong>Next Evaluation:</strong> 2032
     </div>
   </div>
-
-  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div>
       <div style="width: 100px; height: 100px; border: 2px solid #1a365d; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; color: #1a365d; font-weight: bold; text-align: center;">OFFICIAL<br>MSCHE<br>SEAL</div>
     </div>
@@ -46,8 +43,7 @@ In most countries, the government doesn't "Grade" universities. Instead, private
       <div style="font-size: 0.8em; color: #777;">President, MSCHE</div>
     </div>
   </div>
-
-  <div data-verify-line="accred" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="accred" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: MSCHE doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:msche.org/v/UNIV-EXCELLENCE-99 <span data-bracket="end" data-for="accred">]</span>
   </div>

@@ -13,26 +13,20 @@ furtherDerivations: 1
     <div style="font-weight: bold; font-size: 1.2em; color: #1a1a1a;">PENGUIN RANDOM HOUSE</div>
     <div style="font-size: 0.85em; color: #666;">Editorial Operations • New York</div>
   </div>
-
-  <h3 style="text-align: center; text-transform: uppercase; margin-bottom: 25px; letter-spacing: 1px;">Manuscript Attestation</h3>
-
-  <div style="font-size: 1em; line-height: 1.6; color: #333; text-align: justify;">
+<h3 style="text-align: center; text-transform: uppercase; margin-bottom: 25px; letter-spacing: 1px;">Manuscript Attestation</h3>
+<div style="font-size: 1em; line-height: 1.6; color: #333; text-align: justify;">
     <p>This document serves as a verified record of the following manuscript version as received by the publisher:</p>
-
-    <div style="margin: 20px 0; border-left: 4px solid #333; padding-left: 20px; background: #f9f9f9; padding-top: 10px; padding-bottom: 10px;">
+<div style="margin: 20px 0; border-left: 4px solid #333; padding-left: 20px; background: #f9f9f9; padding-top: 10px; padding-bottom: 10px;">
       <p><strong>Title:</strong> <span data-bracket="start" data-for="manu">[</span>"THE VERIFICATION CHRONICLES" (v.2.4)<br>
       <strong>Author:</strong> J.K. Row-Verify<br>
       <strong>Editor:</strong> Marcus J. Miller</p>
-      
-      <p><strong>File Hash (SHA-256):</strong><br>
+<p><strong>File Hash (SHA-256):</strong><br>
       <span style="font-family: monospace; font-size: 0.85em; word-break: break-all;">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span></p>
     </div>
-
-    <p><strong>Submission Date:</strong> March 15, 2026<br>
+<p><strong>Submission Date:</strong> March 15, 2026<br>
     <strong>Verification Status:</strong> CERTIFIED ORIGINAL</p>
   </div>
-
-  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div style="width: 45%;">
       <div style="border-top: 1px solid #000; padding-top: 5px; font-style: italic;">Editorial Director</div>
     </div>
@@ -40,8 +34,7 @@ furtherDerivations: 1
       <div style="font-size: 0.8em; color: #777;">Internal Ref: MSS-2026-992</div>
     </div>
   </div>
-
-  <div data-verify-line="manu" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="manu" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Publisher doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:penguinrandomhouse.com/mss/v/992288 <span data-bracket="end" data-for="manu">]</span>
   </div>

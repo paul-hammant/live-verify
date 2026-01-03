@@ -22,25 +22,18 @@ This letter is the "proof of income" for non-profits. They show it to other dono
     <h2 style="margin: 0; color: #2c3e50;">THE GATES-BUFFETT ALLIANCE</h2>
     <div style="font-style: italic; color: #7f8c8d;">Investing in the Future</div>
   </div>
-
-  <p>March 10, 2026</p>
-
-  <p>To: <span data-bracket="start" data-for="grant">[</span>Community Health Initiative<br>
+<p>March 10, 2026</p>
+<p>To: <span data-bracket="start" data-for="grant">[</span>Community Health Initiative<br>
   Attn: Executive Director</p>
-
-  <p>Dear Partners,</p>
-
-  <p>We are pleased to inform you that the Alliance has approved a grant in the amount of <strong>$500,000.00</strong> to support your mobile vaccination clinic expansion.</p>
-
-  <p>This grant is subject to the Terms and Conditions attached.</p>
-
-  <div style="margin-top: 40px;">
+<p>Dear Partners,</p>
+<p>We are pleased to inform you that the Alliance has approved a grant in the amount of <strong>$500,000.00</strong> to support your mobile vaccination clinic expansion.</p>
+<p>This grant is subject to the Terms and Conditions attached.</p>
+<div style="margin-top: 40px;">
     Sincerely,<br>
     <img src="placeholder-signature.png" alt="(Signature)" style="height: 40px; opacity: 0.5;"><br>
     <em>Director of Global Health</em>
   </div>
-
-  <div data-verify-line="grant" style="border-top: 1px dashed #ccc; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;">
+<div data-verify-line="grant" style="border-top: 1px dashed #ccc; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;">
     verify:alliance.org/grants/v/2026-chi-500k <span data-bracket="end" data-for="grant">]</span>
   </div>
 </div>

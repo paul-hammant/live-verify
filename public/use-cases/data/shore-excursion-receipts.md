@@ -22,23 +22,19 @@ Fraud is common in the "Port Market." Unlicensed tour operators create fake "Off
     </div>
     <div style="font-size: 1.5em;">🚢</div>
   </div>
-
-  <div style="padding: 20px; background: linear-gradient(135deg, #fff 0%, #f0f7ff 100%);">
+<div style="padding: 20px; background: linear-gradient(135deg, #fff 0%, #f0f7ff 100%);">
     <div style="border-bottom: 1px dashed #0072b2; padding-bottom: 15px; margin-bottom: 15px;">
       <div style="font-size: 0.7em; color: #666; text-transform: uppercase;">Excursion Title</div>
       <div style="font-size: 1.2em; font-weight: bold; color: #003366;">TULUM RUINS & CENOTE SWIM</div>
-      
-      <div style="display: flex; justify-content: space-between; margin-top: 10px; font-size: 0.9em;">
+<div style="display: flex; justify-content: space-between; margin-top: 10px; font-size: 0.9em;">
         <div><strong>Port:</strong> Cozumel, MX</div>
         <div><strong>Date:</strong> 15 MAR 2026</div>
       </div>
     </div>
-
-    <div style="font-size: 0.9em; line-height: 1.4; color: #333;">
+<div style="font-size: 0.9em; line-height: 1.4; color: #333;">
       <p><strong>Guest:</strong> <span data-bracket="start" data-for="shore">[</span>SARAH JANE SMITH<br>
       <strong>Cabin:</strong> 9922 (Deck 9) • <strong>Booking:</strong> L7XK9B</p>
-      
-      <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 15px; background: #fff; padding: 10px; border: 1px solid #cce3ff; border-radius: 4px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-top: 15px; background: #fff; padding: 10px; border: 1px solid #cce3ff; border-radius: 4px;">
         <div>
           <div style="font-size: 0.7em; color: #888;">MEETING TIME:</div>
           <div style="font-weight: bold;">08:15 AM</div>
@@ -50,8 +46,7 @@ Fraud is common in the "Port Market." Unlicensed tour operators create fake "Off
       </div>
     </div>
   </div>
-
-  <div style="padding: 15px; background: #fff; text-align: center;">
+<div style="padding: 15px; background: #fff; text-align: center;">
     <div data-verify-line="shore" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #0072b2; font-weight: bold;"
       title="Demo only: Cruise lines don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:carnival.com/v/L7XK9BSMITH <span data-bracket="end" data-for="shore">]</span>

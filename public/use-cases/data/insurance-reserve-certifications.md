@@ -16,29 +16,23 @@ furtherDerivations: 3
       March 15, 2026
     </div>
   </div>
-
-  <h3 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; color: #1a237e; border-bottom: 2px solid #1a237e; padding-bottom: 10px;">Statement of Actuarial Opinion (SAO)</h3>
-
-  <div style="font-size: 0.95em; line-height: 1.6; text-align: justify; color: #333; margin-top: 20px;">
+<h3 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; color: #1a237e; border-bottom: 2px solid #1a237e; padding-bottom: 10px;">Statement of Actuarial Opinion (SAO)</h3>
+<div style="font-size: 0.95em; line-height: 1.6; text-align: justify; color: #333; margin-top: 20px;">
     <p>I, <span data-bracket="start" data-for="life-res">[</span><strong>Robert Miller, FSA, MAAA</strong>, Appointed Actuary for Prudential, do hereby certify that the aggregate reserves for the <strong>Individual Life Insurance Portfolio</strong> as of Dec 31, 2025:</p>
-
-    <ul>
+<ul>
       <li>Are calculated in accordance with the Valuation Manual (VM-20).</li>
       <li>Meet the requirements of the insurance laws of the State of New Jersey.</li>
       <li>Are adequate to provide for all future guaranteed policy obligations.</li>
     </ul>
-
-    <p><strong>Total Certified Reserve Amount:</strong> $ 14,250,000,000.00</p>
+<p><strong>Total Certified Reserve Amount:</strong> $ 14,250,000,000.00</p>
   </div>
-
-  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div style="border-top: 1px solid #000; width: 200px; padding-top: 5px; font-style: italic;">Robert Miller, FSA</div>
     <div style="text-align: right;">
       <div style="border: 1px solid #1a237e; display: inline-block; padding: 5px 10px; font-size: 0.8em; color: #1a237e; font-weight: bold;">FILED & VERIFIED</div>
     </div>
   </div>
-
-  <div data-verify-line="life-res" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="life-res" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Prudential doesn't yet offer verification\nendpoints, so this is illustrative">
       verify:prudential.com/actuarial/v/RES202609 <span data-bracket="end" data-for="life-res">]</span>
   </div>
@@ -122,29 +116,23 @@ _[Content merged from: ltc-insurance-reserve-certifications]_
       March 15, 2026
     </div>
   </div>
-
-  <h3 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; color: #1a237e; border-bottom: 2px solid #1a237e; padding-bottom: 10px;">Statement of Actuarial Opinion (LTC)</h3>
-
-  <div style="font-size: 0.95em; line-height: 1.6; text-align: justify; color: #333; margin-top: 20px;">
+<h3 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; color: #1a237e; border-bottom: 2px solid #1a237e; padding-bottom: 10px;">Statement of Actuarial Opinion (LTC)</h3>
+<div style="font-size: 0.95em; line-height: 1.6; text-align: justify; color: #333; margin-top: 20px;">
     <p>I, <span data-bracket="start" data-for="ltc-res">[</span><strong>Robert Miller, FSA, MAAA</strong>, do hereby certify that the statutory reserves for the <strong>LTC Block IV Portfolio</strong> as of Dec 31, 2025:</p>
-
-    <ul>
+<ul>
       <li>Are adequate based on current morbidity and lapse rate assumptions.</li>
       <li>Incorporate margin for adverse deviation in interest rates.</li>
       <li>Comply with the NAIC Long-Term Care Insurance Model Regulation.</li>
     </ul>
-
-    <p><strong>Aggregate Reserve Liability:</strong> $ 8,450,000,000.00</p>
+<p><strong>Aggregate Reserve Liability:</strong> $ 8,450,000,000.00</p>
   </div>
-
-  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div style="border-top: 1px solid #000; width: 200px; padding-top: 5px; font-style: italic;">Robert Miller, FSA</div>
     <div style="text-align: right;">
       <div style="border: 1px solid #1a237e; display: inline-block; padding: 5px 10px; font-size: 0.8em; color: #1a237e; font-weight: bold;">FILED & VERIFIED</div>
     </div>
   </div>
-
-  <div data-verify-line="ltc-res" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="ltc-res" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Genworth doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:genworth.com/actuarial/v/LTCRES2026 <span data-bracket="end" data-for="ltc-res">]</span>
   </div>
@@ -231,8 +219,7 @@ These documents are the "Proof of Solvency." Fraud is high-stakes in **M&A (Merg
     <div style="font-weight: bold; font-size: 1.4em; color: #003366;">HARTFORD LOSS CONTROL SERVICES</div>
     <div style="font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">Official Loss Reserve Attestation</div>
   </div>
-
-  <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px;">
       <div>
         <strong>Insured:</strong> <span data-bracket="start" data-for="reserve">[</span>GOLIATH LOGISTICS CORP.<br>
@@ -243,14 +230,11 @@ These documents are the "Proof of Solvency." Fraud is high-stakes in **M&A (Merg
         <strong>Date:</strong> 15 MAR 2026
       </div>
     </div>
-
-    <p>This document certifies the estimated future liability (reserves) for the following high-value claim:</p>
-    
-    <div style="background: #f9f9f9; padding: 20px; border: 1px solid #ddd; margin: 20px 0;">
+<p>This document certifies the estimated future liability (reserves) for the following high-value claim:</p>
+<div style="background: #f9f9f9; padding: 20px; border: 1px solid #ddd; margin: 20px 0;">
       <p><strong>Claimant ID:</strong> #CL-992288-S<br>
       <strong>Date of Injury:</strong> 10 OCT 2024</p>
-      
-      <table style="width: 100%; border-top: 1px solid #ccc; margin-top: 10px; padding-top: 10px;">
+<table style="width: 100%; border-top: 1px solid #ccc; margin-top: 10px; padding-top: 10px;">
         <tr>
           <td>Medical Reserve (Lifetime):</td>
           <td style="text-align: right; font-weight: bold;">$ 1,250,000.00</td>
@@ -265,19 +249,16 @@ These documents are the "Proof of Solvency." Fraud is high-stakes in **M&A (Merg
         </tr>
       </table>
     </div>
-
-    <p style="font-size: 0.85em; font-style: italic;">"I certify that these reserves represent a fair and accurate estimate of the expected future cost of this claim based on current actuarial standards."</p>
+<p style="font-size: 0.85em; font-style: italic;">"I certify that these reserves represent a fair and accurate estimate of the expected future cost of this claim based on current actuarial standards."</p>
   </div>
-
-  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div>
       <div style="border-top: 1px solid #000; width: 200px; padding-top: 5px; font-style: italic;">Sarah Jenkins, Lead Actuary</div>
       <div style="font-size: 0.7em; color: #777;">Credential: #ACAS-992288</div>
     </div>
     <div style="text-align: right; color: #003366; font-weight: bold; font-size: 0.8em;">ACTUARIAL VERIFIED</div>
   </div>
-
-  <div style="padding: 20px; background: #fffbe6; border: 1px dashed #999; margin-top: 30px; text-align: center;">
+<div style="padding: 20px; background: #fffbe6; border: 1px dashed #999; margin-top: 30px; text-align: center;">
     <div data-verify-line="reserve" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: Actuarial firms don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:thehartford.com/v/RES99228877 <span data-bracket="end" data-for="reserve">]</span>

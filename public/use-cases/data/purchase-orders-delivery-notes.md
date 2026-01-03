@@ -25,8 +25,7 @@ These documents are high-value targets for **Invoice Factoring Fraud**. A dishon
       <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px; color: #d32f2f;"># <span data-bracket="start" data-for="po">[</span>PO-2026-992288</div>
     </div>
   </div>
-
-  <div style="padding: 25px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.85em;">
+<div style="padding: 25px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.85em;">
     <div style="border: 1px solid #eee; padding: 15px; background: #f9f9f9;">
       <strong style="text-transform: uppercase; color: #888;">Vendor:</strong><br>
       GLOBAL COMPONENTS LTD.<br>
@@ -38,8 +37,7 @@ These documents are high-value targets for **Invoice Factoring Fraud**. A dishon
       DOCK 4, SPRINGFIELD, USA
     </div>
   </div>
-
-  <div style="padding: 0 25px 25px 25px;">
+<div style="padding: 0 25px 25px 25px;">
     <table style="width: 100%; border-collapse: collapse; font-size: 0.9em;">
       <tr style="border-bottom: 2px solid #000; background: #eee;">
         <th style="text-align: left; padding: 10px;">Item Description</th>
@@ -65,8 +63,7 @@ These documents are high-value targets for **Invoice Factoring Fraud**. A dishon
       </tr>
     </table>
   </div>
-
-  <div style="padding: 20px; background: #f5f5f5; border-top: 1px solid #eee;">
+<div style="padding: 20px; background: #f5f5f5; border-top: 1px solid #eee;">
     <div style="font-size: 0.75em; color: #555; text-align: center; margin-bottom: 10px; font-style: italic;">
       This PO is a legally binding offer once accepted. Scan to verify procurement authority and order integrity.
     </div>

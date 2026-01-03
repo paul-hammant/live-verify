@@ -24,15 +24,12 @@ If a box arrives at the counting center with a different count or seal than what
     <div style="font-weight: bold; font-size: 1.1em;">MARICOPA COUNTY ELECTIONS</div>
     <div style="font-size: 0.9em; font-weight: bold;">TRANSFER FORM #99228</div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <h3 style="margin-top: 0; text-align: center; text-transform: uppercase;">Ballot Container Transfer</h3>
-
-    <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
       <p><strong>Origin:</strong> <span data-bracket="start" data-for="ballot">[</span>Precinct 402 - North High School<br>
       <strong>Destination:</strong> Central Tabulation Center</p>
-
-      <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
         <tr>
           <td style="border: 1px solid #ccc; padding: 8px;"><strong>Container ID:</strong></td>
           <td style="border: 1px solid #ccc; padding: 8px;">BOX-A-123</td>
@@ -46,16 +43,14 @@ If a box arrives at the counting center with a different count or seal than what
           <td style="border: 1px solid #ccc; padding: 8px;">1,242 Ballots</td>
         </tr>
       </table>
-
-      <div style="margin-top: 20px; padding: 10px; border: 1px solid #000; background: #f9f9f9;">
+<div style="margin-top: 20px; padding: 10px; border: 1px solid #000; background: #f9f9f9;">
         <strong>CUSTODIAN HANDOFF:</strong><br>
         Relinquished by: John Miller (Poll Worker)<br>
         Received by: Sarah Connor (Transport Deputy)<br>
         Timestamp: Nov 3, 2026 - 8:15 PM MST
       </div>
     </div>
-
-    <div data-verify-line="ballot" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="ballot" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Elections dept doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:elections.maricopa.gov/custody/v/99228 <span data-bracket="end" data-for="ballot">]</span>
     </div>

@@ -22,8 +22,7 @@ The problem is that these permits are often valid for 6 to 12 months. Shady vend
       <div style="font-size: 0.75em; font-weight: bold; opacity: 0.9;">SPRINGFIELD FARMERS MARKET</div>
     </div>
   </div>
-
-  <div style="padding: 20px; background: #fff;">
+<div style="padding: 20px; background: #fff;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px; border-bottom: 2px solid #eee; padding-bottom: 10px;">
       <div>
         <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Vendor Name</div>
@@ -34,8 +33,7 @@ The problem is that these permits are often valid for 6 to 12 months. Shady vend
         <div style="font-size: 1.1em; font-weight: bold;">SITE #42-B</div>
       </div>
     </div>
-
-    <div style="background: #f9f9f9; padding: 15px; border: 1px solid #ddd; border-radius: 4px; margin-bottom: 20px;">
+<div style="background: #f9f9f9; padding: 15px; border: 1px solid #ddd; border-radius: 4px; margin-bottom: 20px;">
       <h4 style="margin-top: 0; color: #2e7d32; font-size: 0.85em; border-bottom: 1px solid #ccc; padding-bottom: 5px; text-transform: uppercase;">Authorized Seasonal Products</h4>
       <ul style="margin: 5px 0; padding-left: 20px; font-size: 0.85em; line-height: 1.4;">
         <li>Braeburn & Gala Apples (Organic)</li>
@@ -44,14 +42,12 @@ The problem is that these permits are often valid for 6 to 12 months. Shady vend
         <li style="color: #666; font-style: italic;">Excluded: Processed/Resold Goods</li>
       </ul>
     </div>
-
-    <div style="display: flex; justify-content: space-between; font-size: 0.85em; color: #333;">
+<div style="display: flex; justify-content: space-between; font-size: 0.85em; color: #333;">
       <div><strong>Valid From:</strong> 01 APR 2026</div>
       <div><strong>Expires:</strong> 15 NOV 2026</div>
     </div>
   </div>
-
-  <div style="padding: 15px 20px 20px 20px; background: #fdfdfd; border-top: 1px solid #eee; text-align: center;">
+<div style="padding: 15px 20px 20px 20px; background: #fdfdfd; border-top: 1px solid #eee; text-align: center;">
     <div data-verify-line="market" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Market associations don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:springfieldmarket.org/v/STALL42B <span data-bracket="end" data-for="market">]</span>

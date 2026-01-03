@@ -22,8 +22,7 @@ These documents are the "Proof of Permission." Fraud is rampant in the "Copyrigh
     </div>
     <div style="font-size: 2em;">📸</div>
   </div>
-
-  <div style="padding: 30px;">
+<div style="padding: 30px;">
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; color: #333; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
         <strong>Licensee:</strong> <span data-bracket="start" data-for="photo">[</span>THE DAILY PLANET CORP.<br>
@@ -36,8 +35,7 @@ These documents are the "Proof of Permission." Fraud is rampant in the "Copyrigh
         <strong>Format:</strong> High-Res TIFF
       </div>
     </div>
-
-    <div style="background: #f9f9f9; padding: 20px; border: 1px solid #ddd; border-radius: 4px; margin-bottom: 20px;">
+<div style="background: #f9f9f9; padding: 20px; border: 1px solid #ddd; border-radius: 4px; margin-bottom: 20px;">
       <h4 style="margin-top: 0; color: #000; font-size: 0.9em; border-bottom: 1px solid #ccc; padding-bottom: 5px;">VERIFIED USAGE RIGHTS</h4>
       <table style="width: 100%; font-size: 0.9em;">
         <tr>
@@ -58,13 +56,11 @@ These documents are the "Proof of Permission." Fraud is rampant in the "Copyrigh
         </tr>
       </table>
     </div>
-
-    <div style="font-size: 0.75em; color: #666; font-style: italic; text-align: center;">
+<div style="font-size: 0.75em; color: #666; font-style: italic; text-align: center;">
       This license is non-transferable. Image metadata contains a matching cryptographic watermark.
     </div>
   </div>
-
-  <div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #bbb; text-align: center;">
+<div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #bbb; text-align: center;">
     <div data-verify-line="photo" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: Photo agencies don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:gettyimages.com/v/LIC20268844 <span data-bracket="end" data-for="photo">]</span>

@@ -22,8 +22,7 @@ Fraudsters often create fake certificates to claim ownership of hit songs or vir
     <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 2px;">CERTIFICATE OF REGISTRATION</div>
     <div style="font-size: 0.9em; margin-top: 5px; font-weight: bold; border-top: 1px solid #000; display: inline-block; padding-top: 5px;">UNITED STATES COPYRIGHT OFFICE</div>
   </div>
-
-  <div style="font-size: 1em; line-height: 1.6; color: #333;">
+<div style="font-size: 1em; line-height: 1.6; color: #333;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
       <div>
         <strong>Registration Number:</strong><br>
@@ -34,27 +33,22 @@ Fraudsters often create fake certificates to claim ownership of hit songs or vir
         March 15, 2026
       </div>
     </div>
-
-    <p><strong>Title of Work:</strong> <span data-bracket="start" data-for="copyright">[</span><em>The Chronicles of Verification: A Digital Epic</em></p>
+<p><strong>Title of Work:</strong> <span data-bracket="start" data-for="copyright">[</span><em>The Chronicles of Verification: A Digital Epic</em></p>
     <p><strong>Author / Claimant:</strong> J.K. Row-Verify</p>
     <p><strong>Type of Work:</strong> Literary Work</p>
-
-    <div style="margin: 20px 0; padding: 15px; background: #f9f9f9; border: 1px solid #eee; font-family: 'Courier New', monospace; font-size: 0.85em;">
+<div style="margin: 20px 0; padding: 15px; background: #f9f9f9; border: 1px solid #eee; font-family: 'Courier New', monospace; font-size: 0.85em;">
       <strong>DEPOSIT HASH (SHA-256):</strong><br>
       <span style="word-break: break-all;">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
     </div>
-
-    <p style="font-size: 0.8em; font-style: italic;">
+<p style="font-size: 0.8em; font-style: italic;">
       This certificate is issued under the seal of the Copyright Office in accordance with Title 17, United States Code.
     </p>
   </div>
-
-  <div style="margin-top: 40px; text-align: right;">
+<div style="margin-top: 40px; text-align: right;">
     <div style="width: 80px; height: 80px; border: 2px solid #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; margin-left: auto;">OFFICIAL<br>SEAL</div>
     <div style="font-size: 0.8em; color: #777; margin-top: 5px;">Register of Copyrights</div>
   </div>
-
-  <div data-verify-line="copyright" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="copyright" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Copyright Office doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:copyright.gov/v/TX9988776 <span data-bracket="end" data-for="copyright">]</span>
   </div>

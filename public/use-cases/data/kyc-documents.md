@@ -16,16 +16,14 @@ furtherDerivations: 2
     </div>
     <div style="font-size: 1.5em;">🏦</div>
   </div>
-
-  <div style="padding: 25px; display: flex;">
+<div style="padding: 25px; display: flex;">
     <div style="width: 120px; margin-right: 20px;">
       <div style="width: 120px; height: 150px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #777;">[PHOTO]</div>
     </div>
     <div style="flex-grow: 1;">
       <h3 style="margin: 0; color: #002d62;">VERIFIED CUSTOMER PROFILE</h3>
       <div style="font-size: 1.1em; font-weight: bold; margin: 10px 0;"><span data-bracket="start" data-for="kyc-id">[</span>DOE, JOHN JACOB</div>
-      
-      <div style="font-size: 0.9em; color: #333; line-height: 1.5;">
+<div style="font-size: 0.9em; color: #333; line-height: 1.5;">
         <strong>Document:</strong> US Passport #*******1234<br>
         <strong>DOB:</strong> May 15, 1985<br>
         <strong>PEP Status:</strong> CLEAR (Non-Political)<br>
@@ -33,8 +31,7 @@ furtherDerivations: 2
       </div>
     </div>
   </div>
-
-  <div style="padding: 0 25px 25px 25px;">
+<div style="padding: 0 25px 25px 25px;">
     <div style="background: #f9f9f9; border: 1px solid #eee; padding: 10px; font-size: 0.85em; color: #555;">
       <strong>Bank Attestation:</strong> This identity has been verified against government databases and biometric liveness checks. Profile ID: REV-99228877.
     </div>
@@ -127,8 +124,7 @@ _[Content merged from: kyc-proof-of-address]_
       <div style="font-size: 0.8em;">Account #: 9922887766</div>
     </div>
   </div>
-
-  <div style="padding: 30px;">
+<div style="padding: 30px;">
     <div style="border-bottom: 2px solid #004a99; padding-bottom: 10px; margin-bottom: 20px;">
       <h3 style="margin: 0; color: #333;">SERVICE ADDRESS</h3>
       <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px; color: #004a99;">
@@ -136,11 +132,9 @@ _[Content merged from: kyc-proof-of-address]_
         New York, NY 10012
       </div>
     </div>
-
-    <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
       <p><strong>Customer:</strong> JOHN JACOB DOE</p>
-      
-      <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
         <tr>
           <td><strong>Billing Period:</strong></td>
           <td style="text-align: right;">Feb 01 - Mar 01, 2026</td>
@@ -155,12 +149,10 @@ _[Content merged from: kyc-proof-of-address]_
         </tr>
       </table>
     </div>
-
-    <div style="margin-top: 25px; padding: 10px; background: #f9f9f9; border: 1px solid #eee; font-size: 0.8em; color: #555; font-style: italic; text-align: center;">
+<div style="margin-top: 25px; padding: 10px; background: #f9f9f9; border: 1px solid #eee; font-size: 0.8em; color: #555; font-style: italic; text-align: center;">
       Verification confirms the address and residency status match the utility company's official billing records.
     </div>
-
-    <div data-verify-line="address" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="address" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Con-Ed doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:coned.com/billing/v/9922887766 <span data-bracket="end" data-for="address">]</span>
     </div>

@@ -21,8 +21,7 @@ The Carnet is a physical booklet of colored papers that customs officers stamp a
     <h3 style="margin: 0; text-transform: uppercase;">ATA CARNET</h3>
     <div style="font-size: 0.8em;">UNITED STATES COUNCIL FOR INTERNATIONAL BUSINESS</div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
       <div>
         <strong>Carnet No:</strong> US-99887766<br>
@@ -32,23 +31,18 @@ The Carnet is a physical booklet of colored papers that customs officers stamp a
         <strong>Valid Until:</strong> 15 MAR 2027
       </div>
     </div>
-
-    <div style="font-size: 0.9em; line-height: 1.5; color: #333;">
+<div style="font-size: 0.9em; line-height: 1.5; color: #333;">
       <p><strong>Holder:</strong> <span data-bracket="start" data-for="carnet">[</span>RockBand Tours, LLC<br>
       123 Soundstage Way, Nashville, TN</p>
-
-      <p><strong>General Description of Goods:</strong><br>
+<p><strong>General Description of Goods:</strong><br>
       Musical Instruments, Amplifiers, and Audio Recording Equipment for Professional Use (Total Items: 42)</p>
-
-      <div style="background: #f0f7ff; border: 1px solid #b3d7ff; padding: 10px; margin: 15px 0;">
+<div style="background: #f0f7ff; border: 1px solid #b3d7ff; padding: 10px; margin: 15px 0;">
         <strong>Intended Use:</strong> Professional Equipment<br>
         <strong>Countries:</strong> UK, EU, JAPAN, AUSTRALIA
       </div>
-
-      <p style="font-size: 0.8em;">Customs at POE: Please endorse corresponding counterfoils.</p>
+<p style="font-size: 0.8em;">Customs at POE: Please endorse corresponding counterfoils.</p>
     </div>
-
-    <div data-verify-line="carnet" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="carnet" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: USCIB doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:uscib.org/carnets/v/US998877 <span data-bracket="end" data-for="carnet">]</span>
     </div>

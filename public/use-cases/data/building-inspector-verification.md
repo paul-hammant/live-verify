@@ -24,8 +24,7 @@ OCR-to-Hash allows a homeowner to scan the badge at the door and see a green "AC
       <div style="font-size: 0.8em;">DEPARTMENT OF BUILDINGS</div>
     </div>
   </div>
-
-  <div style="padding: 20px; display: flex;">
+<div style="padding: 20px; display: flex;">
     <div style="width: 100px; margin-right: 15px;">
       <div style="width: 100px; height: 125px; background: #eee; display: flex; align-items: center; justify-content: center; color: #777; border: 1px solid #ccc; border-radius: 4px;">[PHOTO ID]</div>
     </div>
@@ -39,8 +38,7 @@ OCR-to-Hash allows a homeowner to scan the badge at the door and see a green "AC
       </div>
     </div>
   </div>
-
-  <div style="padding: 0 20px 20px 20px;">
+<div style="padding: 0 20px 20px 20px;">
     <p style="font-size: 0.75em; color: #555; font-style: italic; text-align: center;">
       The bearer is authorized to enter premises for the purpose of official safety inspections. Chicago Municipal Code §13-8.
     </p>

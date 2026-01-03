@@ -21,8 +21,7 @@ Small tour operators often don't have real-time computers in the field. They rel
     <div style="font-weight: bold; font-size: 1.2em;">SAHARA EXPEDITIONS, LTD.</div>
     <div style="font-size: 0.8em;">Official Booking Confirmation</div>
   </div>
-
-  <div style="font-size: 0.9em; line-height: 1.4;">
+<div style="font-size: 0.9em; line-height: 1.4;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
       <div>
         <strong>Participant:</strong> <span data-bracket="start" data-for="tour">[</span><strong>SARAH JANE SMITH</strong><br>
@@ -33,15 +32,13 @@ Small tour operators often don't have real-time computers in the field. They rel
         <strong>Status:</strong> PAID & CONFIRMED
       </div>
     </div>
-
-    <div style="background: #f9f9f9; border: 1px solid #eee; padding: 15px; margin-bottom: 20px;">
+<div style="background: #f9f9f9; border: 1px solid #eee; padding: 15px; margin-bottom: 20px;">
       <strong>TOUR DETAILS:</strong><br>
       Activity: Luxury Stargazing Desert Trek<br>
       Meeting Point: Merzouga Gateway, Gate 4<br>
       Time: 18:00 PM (Local Time)
     </div>
-
-    <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px;">
+<table style="width: 100%; border-collapse: collapse; margin-bottom: 10px;">
       <tr>
         <td>Adult Admission (x2):</td>
         <td style="text-align: right;">$ 450.00</td>
@@ -55,12 +52,10 @@ Small tour operators often don't have real-time computers in the field. They rel
         <td style="text-align: right;">$ 600.00</td>
       </tr>
     </table>
-
-    <div style="margin-top: 20px; font-size: 0.8em; color: #555; font-style: italic;">
+<div style="margin-top: 20px; font-size: 0.8em; color: #555; font-style: italic;">
       Please present this verified voucher to the lead guide at the meeting point.
     </div>
-
-    <div data-verify-line="tour" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="tour" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Tour operator doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:sahara-expeditions.com/v/SE99228877 <span data-bracket="end" data-for="tour">]</span>
     </div>

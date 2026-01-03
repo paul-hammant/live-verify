@@ -24,8 +24,7 @@ Because a "Positive Test" can end a multimillion-dollar career, fraud is a high 
       <div style="font-size: 0.8em; opacity: 0.8;">OFFICIAL SAMPLE COLLECTION SUMMARY</div>
     </div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px; font-size: 0.9em; color: #555;">
       <div>
         <strong>Sample ID:</strong> <span data-bracket="start" data-for="doping">[</span>998877-A (Urine)<br>
@@ -36,22 +35,18 @@ Because a "Positive Test" can end a multimillion-dollar career, fraud is a high 
         <strong>Time:</strong> 14:30 PM
       </div>
     </div>
-
-    <div style="font-size: 0.95em; line-height: 1.6; color: #333; border: 1px solid #ccc; padding: 15px; background: #f9f9f9;">
+<div style="font-size: 0.95em; line-height: 1.6; color: #333; border: 1px solid #ccc; padding: 15px; background: #f9f9f9;">
       <p><strong>Athlete:</strong> [REDACTED - See Athlete ID]</p>
       <p><strong>Doping Control Officer:</strong> Sarah Connor (ID #992)</p>
-      
-      <div style="border-top: 1px solid #ddd; padding-top: 10px; margin-top: 10px;">
+<div style="border-top: 1px solid #ddd; padding-top: 10px; margin-top: 10px;">
         <strong>Result:</strong> <span style="color: #2e7d32; font-weight: bold;">NEGATIVE (NO PROHIBITED SUBSTANCES DETECTED)</span><br>
         <strong>Lab:</strong> UCLA Olympic Analytical Laboratory (WADA Accredited)
       </div>
     </div>
-
-    <p style="font-size: 0.75em; color: #777; font-style: italic; margin-top: 20px; text-align: center;">
+<p style="font-size: 0.75em; color: #777; font-style: italic; margin-top: 20px; text-align: center;">
       This summary is a verified extract of the Doping Control Form (DCF). The full record is held in the ADAMS database.
     </p>
-
-    <div data-verify-line="doping" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="doping" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: WADA doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:wada-ama.org/adams/v/998877A <span data-bracket="end" data-for="doping">]</span>
     </div>

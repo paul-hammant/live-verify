@@ -22,29 +22,23 @@ This warranty is a valuable financial asset that stays with the house for 10 yea
     <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 2px; color: #1a365d;">2-10 HOME BUYERS WARRANTY</div>
     <div style="font-size: 0.85em; color: #666; margin-top: 5px;">THE NATION'S LEADING STRUCTURAL WARRANTY</div>
   </div>
-
-  <h3 style="text-align: center; text-transform: uppercase; margin-bottom: 20px; color: #1a365d;">Certificate of Warranty Coverage</h3>
-
-  <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+<h3 style="text-align: center; text-transform: uppercase; margin-bottom: 20px; color: #1a365d;">Certificate of Warranty Coverage</h3>
+<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <p>This certifies that the property located at:</p>
     <p style="text-align: center; font-size: 1.1em; font-weight: bold;">
       <span data-bracket="start" data-for="warranty">[</span>123 NEW HOUSE LANE, AUSTIN, TX 78701
     </p>
-
-    <div style="margin: 20px 0; border: 1px solid #ccc; padding: 15px; background: #f9f9f9;">
+<div style="margin: 20px 0; border: 1px solid #ccc; padding: 15px; background: #f9f9f9;">
       <p><strong>Builder:</strong> Toll Brothers, Inc. (Reg #9922)<br>
       <strong>Warranty Number:</strong> 210-998877-TX</p>
-      
-      <p><strong>Coverage Periods:</strong><br>
+<p><strong>Coverage Periods:</strong><br>
       1-Year: Workmanship & Materials<br>
       2-Year: Systems (Plumbing, Electrical, HVAC)<br>
       10-Year: Structural Elements</p>
     </div>
-
-    <p><strong>Warranty Effective Date:</strong> March 15, 2026</p>
+<p><strong>Warranty Effective Date:</strong> March 15, 2026</p>
   </div>
-
-  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div>
       <div style="width: 80px; height: 80px; border: 2px solid #1a365d; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; color: #1a365d; font-weight: bold; text-align: center;">OFFICIAL<br>COVERAGE<br>SEAL</div>
     </div>
@@ -52,8 +46,7 @@ This warranty is a valuable financial asset that stays with the house for 10 yea
       Administered by HBW Services, LLC
     </div>
   </div>
-
-  <div data-verify-line="warranty" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="warranty" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: 2-10 HBW doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:2-10.com/warranty/v/998877 <span data-bracket="end" data-for="warranty">]</span>
   </div>

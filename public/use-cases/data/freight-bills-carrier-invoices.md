@@ -27,13 +27,11 @@ It isn't just about the price; it records:
       Date: 15 MAR 2026
     </div>
   </div>
-
-  <div style="font-size: 0.85em; line-height: 1.4;">
+<div style="font-size: 0.85em; line-height: 1.4;">
     <p><strong>Shipper:</strong> Acme Manufacturing<br>
     <strong>Consignee:</strong> Global Distribution Center<br>
     <strong>B/L Number:</strong> MAE-442211</p>
-
-    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
       <tr style="border-bottom: 1px solid #000; font-weight: bold;">
         <th style="text-align: left;">Charge Description</th>
         <th style="text-align: right;">Amount</th>
@@ -55,12 +53,10 @@ It isn't just about the price; it records:
         <td style="text-align: right;">$ 1,712.50</td>
       </tr>
     </table>
-
-    <div style="background: #eee; padding: 10px; font-size: 0.8em;">
+<div style="background: #eee; padding: 10px; font-size: 0.8em;">
       <strong>Payment Terms:</strong> Net 30 Days. Please remit to: Wells Fargo Lockbox #99228.
     </div>
-
-    <div data-verify-line="freight-inv" style="border-top: 1px dashed #999; margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="freight-inv" style="border-top: 1px dashed #999; margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Schneider doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:schneider.com/invoices/v/SN998877 <span data-bracket="end" data-for="freight-inv">]</span>
     </div>

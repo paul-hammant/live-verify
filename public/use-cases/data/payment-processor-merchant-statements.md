@@ -22,8 +22,7 @@ These statements are the "Income Proof" for the digital economy. Lenders use the
       <div style="font-size: 0.7em; opacity: 0.9;">Statement ID: <span data-bracket="start" data-for="stripe">[</span>ST-99228877-XJ</div>
     </div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px;">
       <div style="font-size: 0.9em; line-height: 1.5; color: #333;">
         <strong>Merchant:</strong> THE SPICY TACO BAR LLC<br>
@@ -35,8 +34,7 @@ These statements are the "Income Proof" for the digital economy. Lenders use the
         <div style="font-size: 1.8em; font-weight: bold; color: #635bff;">$ 42,250.00</div>
       </div>
     </div>
-
-    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px; margin-bottom: 25px;">
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px; margin-bottom: 25px;">
       <div style="background: #f9f9f9; padding: 10px; border: 1px solid #eee; text-align: center; border-radius: 4px;">
         <div style="font-size: 0.7em; color: #666;">GROSS SALES:</div>
         <div style="font-weight: bold;">$ 45,500</div>
@@ -50,13 +48,11 @@ These statements are the "Income Proof" for the digital economy. Lenders use the
         <div style="font-weight: bold; color: #d32f2f;">$ 0.00</div>
       </div>
     </div>
-
-    <div style="font-size: 0.8em; color: #666; font-style: italic; border-top: 1px solid #eee; padding-top: 15px; text-align: center;">
+<div style="font-size: 0.8em; color: #666; font-style: italic; border-top: 1px solid #eee; padding-top: 15px; text-align: center;">
       "Verification confirms the financial integrity of this merchant account. Tampering with payout balances is a violation of processor terms."
     </div>
   </div>
-
-  <div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #999; text-align: center;">
+<div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #999; text-align: center;">
     <div data-verify-line="stripe" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #635bff; font-weight: bold;"
       title="Demo only: Stripe doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:stripe.com/v/ST99228877 <span data-bracket="end" data-for="stripe">]</span>

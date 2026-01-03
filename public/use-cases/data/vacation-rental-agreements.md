@@ -25,8 +25,7 @@ Fraud is rampant in the "Direct Booking" market. Scammers create "Phantom Listin
       <div style="font-size: 0.7em; opacity: 0.9;">Ref: <span data-bracket="start" data-for="rental">[</span>HM-99228877</div>
     </div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; color: #333; margin-bottom: 20px;">
       <div>
         <strong>Property:</strong><br>
@@ -39,8 +38,7 @@ Fraud is rampant in the "Direct Booking" market. Scammers create "Phantom Listin
         (7 Nights)
       </div>
     </div>
-
-    <div style="border-top: 1px solid #eee; border-bottom: 1px solid #eee; padding: 15px 0; margin-bottom: 20px;">
+<div style="border-top: 1px solid #eee; border-bottom: 1px solid #eee; padding: 15px 0; margin-bottom: 20px;">
       <table style="width: 100%; font-size: 0.9em; color: #444;">
         <tr>
           <td>Nightly Rate ($350 x 7)</td>
@@ -56,13 +54,11 @@ Fraud is rampant in the "Direct Booking" market. Scammers create "Phantom Listin
         </tr>
       </table>
     </div>
-
-    <div style="font-size: 0.8em; color: #666; font-style: italic;">
+<div style="font-size: 0.8em; color: #666; font-style: italic;">
       <strong>House Rules:</strong> Maximum 4 guests. No smoking. No unauthorized pets. Verification protects host and guest integrity.
     </div>
   </div>
-
-  <div style="padding: 20px; background: #f7f7f7; border-top: 1px solid #eee; text-align: center;">
+<div style="padding: 20px; background: #f7f7f7; border-top: 1px solid #eee; text-align: center;">
     <div data-verify-line="rental" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #ff385c; font-weight: bold;"
       title="Demo only: Airbnb doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:airbnb.com/v/HM99228877 <span data-bracket="end" data-for="rental">]</span>

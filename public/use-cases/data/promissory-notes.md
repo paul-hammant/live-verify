@@ -19,27 +19,21 @@ These documents are the "Paper Gold" of the lending industry. In the **Secondary
     <h2 style="margin: 0; font-size: 1.4em; text-transform: uppercase; letter-spacing: 1px;">PROMISSORY NOTE</h2>
     <div style="font-size: 0.9em; font-style: italic;">Fixed Rate - Installment</div>
   </div>
-
-  <div style="font-size: 1em; line-height: 1.6; color: #000; text-align: justify;">
+<div style="font-size: 1em; line-height: 1.6; color: #000; text-align: justify;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px; font-weight: bold;">
       <div>$ 125,000.00</div>
       <div>MARCH 15, 2026</div>
     </div>
-
-    <p>FOR VALUE RECEIVED, the undersigned <span data-bracket="start" data-for="note">[</span><strong>ROBERT J. MILLER</strong> (the "Borrower"), promises to pay to the order of <strong>GOLIATH NATIONAL BANK</strong> (the "Lender"), the principal sum of <strong>One Hundred Twenty-Five Thousand Dollars</strong> ($125,000.00) with interest at the rate of <strong>6.5%</strong> per annum.</p>
-    
-    <div style="background: #f9f9f9; padding: 15px; border: 1px solid #ccc; margin: 20px 0;">
+<p>FOR VALUE RECEIVED, the undersigned <span data-bracket="start" data-for="note">[</span><strong>ROBERT J. MILLER</strong> (the "Borrower"), promises to pay to the order of <strong>GOLIATH NATIONAL BANK</strong> (the "Lender"), the principal sum of <strong>One Hundred Twenty-Five Thousand Dollars</strong> ($125,000.00) with interest at the rate of <strong>6.5%</strong> per annum.</p>
+<div style="background: #f9f9f9; padding: 15px; border: 1px solid #ccc; margin: 20px 0;">
       <strong>Payment Terms:</strong> Monthly installments of $790.00 commencing May 1, 2026. Final payment due March 1, 2041 (Maturity).
     </div>
-
-    <p>This Note is secured by a Security Agreement of even date covering certain collateral described therein.</p>
+<p>This Note is secured by a Security Agreement of even date covering certain collateral described therein.</p>
   </div>
-
-  <div style="margin-top: 40px; border-top: 1px solid #000; width: 200px; padding-top: 5px; font-style: italic;">
+<div style="margin-top: 40px; border-top: 1px solid #000; width: 200px; padding-top: 5px; font-style: italic;">
     Borrower Signature
   </div>
-
-  <div style="padding: 20px; background: #fffbe6; border: 1px dashed #999; margin-top: 30px; text-align: center;">
+<div style="padding: 20px; background: #fffbe6; border: 1px dashed #999; margin-top: 30px; text-align: center;">
     <div data-verify-line="note" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: Banks don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:goliathbank.com/v/NOTE992288-RM <span data-bracket="end" data-for="note">]</span>

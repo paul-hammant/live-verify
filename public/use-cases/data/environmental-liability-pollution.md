@@ -26,15 +26,12 @@ Fraud is high-stakes here: sellers often edit the "Retroactive Date" on their po
       <div style="font-size: 0.8em;">Policy #: PLL-99228877-26</div>
     </div>
   </div>
-
-  <div style="padding: 30px;">
+<div style="padding: 30px;">
     <h2 style="text-align: center; color: #2e7d32; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Insurance Declarations</h2>
-
-    <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.9em; line-height: 1.6; color: #333;">
       <p><strong>First Named Insured:</strong> <span data-bracket="start" data-for="pollution">[</span>Industrial Reclamation Group, LLC</p>
       <p><strong>Covered Location:</strong> 4500 Industrial Way, Newark, NJ (Former Lead Smelter)</p>
-
-      <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
         <tr style="background: #f1f8e9; border-bottom: 2px solid #2e7d32;">
           <th style="text-align: left; padding: 8px;">Coverage Layer</th>
           <th style="text-align: right; padding: 8px;">Limit of Liability</th>
@@ -52,12 +49,10 @@ Fraud is high-stakes here: sellers often edit the "Retroactive Date" on their po
           <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">Included</td>
         </tr>
       </table>
-
-      <p style="margin-top: 20px;"><strong>Policy Period:</strong> March 01, 2026 to March 01, 2036 (10-Year Term)<br>
+<p style="margin-top: 20px;"><strong>Policy Period:</strong> March 01, 2026 to March 01, 2036 (10-Year Term)<br>
       <strong>Retroactive Date:</strong> January 01, 1985</p>
     </div>
-
-    <div data-verify-line="pollution" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="pollution" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: ACE American doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:chubb.com/environmental/v/PLL992288 <span data-bracket="end" data-for="pollution">]</span>
     </div>

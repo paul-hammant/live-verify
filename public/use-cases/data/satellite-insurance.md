@@ -22,8 +22,7 @@ These documents are the "Proof of Mission." Fraud is extremely rare but high-imp
     </div>
     <div style="font-size: 2.2em;">🛰️</div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
         <strong>Operator:</strong> <span data-bracket="start" data-for="space">[</span>SKY-NET COMMUNICATIONS INC.<br>
@@ -36,8 +35,7 @@ These documents are the "Proof of Mission." Fraud is extremely rare but high-imp
         <strong>Policy #:</strong> <span style="font-family: monospace;">SP-2026-8844</span>
       </div>
     </div>
-
-    <div style="background: #fdfdfd; border: 1px solid #ddd; padding: 15px; margin-bottom: 20px; border-radius: 4px;">
+<div style="background: #fdfdfd; border: 1px solid #ddd; padding: 15px; margin-bottom: 20px; border-radius: 4px;">
       <h4 style="margin-top: 0; color: #000; font-size: 0.9em; border-bottom: 1px solid #ccc; padding-bottom: 5px;">VERIFIED MISSION PARAMETERS</h4>
       <table style="width: 100%; font-size: 0.85em;">
         <tr>
@@ -58,13 +56,11 @@ These documents are the "Proof of Mission." Fraud is extremely rare but high-imp
         </tr>
       </table>
     </div>
-
-    <div style="font-size: 0.75em; color: #666; font-style: italic; text-align: center;">
+<div style="font-size: 0.75em; color: #666; font-style: italic; text-align: center;">
       This summary is a verified extract of Policy #SP-2026-8844. Coverage confirmed for Launch Window opening 15 MAR 2026.
     </div>
   </div>
-
-  <div style="padding: 20px; background: #f5f5f5; border-top: 1px solid #000; text-align: center;">
+<div style="padding: 20px; background: #f5f5f5; border-top: 1px solid #000; text-align: center;">
     <div data-verify-line="space" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: Space insurers don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:axaxl.com/space/v/SP99228877 <span data-bracket="end" data-for="space">]</span>

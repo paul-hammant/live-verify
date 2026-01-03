@@ -13,8 +13,7 @@ furtherDerivations: 1
     <div style="font-weight: bold; font-size: 1.1em;">MEDTRONIC</div>
     <div style="font-size: 0.8em; font-weight: bold; text-transform: uppercase;">Medical Device ID Card</div>
   </div>
-
-  <div style="padding: 20px;">
+<div style="padding: 20px;">
     <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px;">
       <div style="font-size: 0.9em; line-height: 1.4; color: #333;">
         <strong>Patient Name:</strong><br>
@@ -26,19 +25,16 @@ furtherDerivations: 1
         <div style="font-size: 0.8em; font-weight: bold; color: #004a99;">00843123456789</div>
       </div>
     </div>
-
-    <div style="font-size: 0.85em; color: #555; border-top: 1px solid #eee; padding-top: 10px;">
+<div style="font-size: 0.85em; color: #555; border-top: 1px solid #eee; padding-top: 10px;">
       <strong>Device:</strong> Percept™ PC Deep Brain Stimulator<br>
       <strong>Serial #:</strong> ABC99228877<br>
       <strong>Implant Date:</strong> March 15, 2026<br>
       <strong>Hospital:</strong> Mayo Clinic, MN
     </div>
-
-    <div style="margin-top: 15px; font-size: 0.7em; line-height: 1.3; color: #777; font-style: italic;">
+<div style="margin-top: 15px; font-size: 0.7em; line-height: 1.3; color: #777; font-style: italic;">
       This card contains critical information for MRI safety and emergency medical treatment.
     </div>
-
-    <div data-verify-line="implant" style="border-top: 1px dashed #999; margin-top: 15px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="implant" style="border-top: 1px dashed #999; margin-top: 15px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Medtronic doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:medtronic.com/implants/v/ABC99228877 <span data-bracket="end" data-for="implant">]</span>
     </div>

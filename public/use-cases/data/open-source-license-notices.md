@@ -16,22 +16,17 @@ A **Verified Compliance Notice** takes this static text and binds it to the manu
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', monospace; border: 1px solid #333; background: #f4f4f4; padding: 20px;">
   <div style="text-align: center; font-weight: bold; margin-bottom: 15px;">OPEN SOURCE SOFTWARE NOTICE</div>
-  
-  <p>Product: SmartRouter X1000<br>
+<p>Product: SmartRouter X1000<br>
   Firmware: v2.4.1-stable<br>
   Manufacturer: <span data-bracket="start" data-for="oss">[</span>NetGearLink Corp</p>
-
-  <p>This product contains software licensed under the GNU General Public License v2 (GPLv2). The following packages are included:</p>
-
-  <ul style="list-style-type: none; padding-left: 0;">
+<p>This product contains software licensed under the GNU General Public License v2 (GPLv2). The following packages are included:</p>
+<ul style="list-style-type: none; padding-left: 0;">
     <li>- Linux Kernel 5.10 (GPLv2)</li>
     <li>- BusyBox 1.35 (GPLv2)</li>
     <li>- OpenSSL 3.0 (Apache 2.0)</li>
   </ul>
-
-  <p>Written Offer: NetGearLink Corp will provide the source code for the GPL components upon request for a period of 3 years.</p>
-
-  <div data-verify-line="oss" style="border-top: 1px dashed #666; margin-top: 20px; padding-top: 10px; font-size: 0.9em; text-align: center;">
+<p>Written Offer: NetGearLink Corp will provide the source code for the GPL components upon request for a period of 3 years.</p>
+<div data-verify-line="oss" style="border-top: 1px dashed #666; margin-top: 20px; padding-top: 10px; font-size: 0.9em; text-align: center;">
     verify:netgearlink.com/oss/v/fw241 <span data-bracket="end" data-for="oss">]</span>
   </div>
 </div>

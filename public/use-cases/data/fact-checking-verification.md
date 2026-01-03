@@ -30,12 +30,10 @@ It allows a reader to scan the text and see a green "VERIFIED" status from an in
       <p>A fire broke out on the 38th floor of LexCorp Tower yesterday evening, prompting the evacuation of 47 employees. Metropolis Fire Department responded within 4 minutes of the initial alarm.</p>
       <p>"All personnel were evacuated safely," said Fire Chief Marcus Stone. "The sprinkler system contained the blaze until our units arrived."</p>
     </div>
-
-    <div style="margin-top: 25px; padding: 10px; border: 1px solid #1a1a2e; background: #f0f0f5; font-size: 0.8em; color: #1a1a2e; font-style: italic; text-align: center;">
+<div style="margin-top: 25px; padding: 10px; border: 1px solid #1a1a2e; background: #f0f0f5; font-size: 0.8em; color: #1a1a2e; font-style: italic; text-align: center;">
       This article has been independently fact-checked for accuracy. Select the text to verify sources and integrity.
     </div>
-
-    <div data-verify-line="fact" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="fact" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Fact-checker network doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:fctchkrs.org/d-planet/v/LEX-FIRE-99 <span data-bracket="end" data-for="fact">]</span>
     </div>

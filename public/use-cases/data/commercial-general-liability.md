@@ -26,15 +26,12 @@ Business owners must show these verified limits to win contracts. Fraudsters oft
       <div style="font-size: 0.8em;">Policy #: CGL-99887766-26</div>
     </div>
   </div>
-
-  <div style="padding: 30px;">
+<div style="padding: 30px;">
     <h2 style="text-align: center; color: #1a237e; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Policy Declarations</h2>
-
-    <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.9em; line-height: 1.6; color: #333;">
       <p><strong>Named Insured:</strong> <span data-bracket="start" data-for="cgl">[</span>Heavy Haulers Construction, Inc.<br>
       <strong>Business Description:</strong> Structural Steel Erection</p>
-
-      <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
         <tr style="background: #f0f4f8; border-bottom: 2px solid #1a237e;">
           <th style="text-align: left; padding: 8px;">Coverage Limits</th>
           <th style="text-align: right; padding: 8px;">Amount</th>
@@ -52,11 +49,9 @@ Business owners must show these verified limits to win contracts. Fraudsters oft
           <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 4,000,000</td>
         </tr>
       </table>
-
-      <p style="margin-top: 20px;"><strong>Policy Period:</strong> March 01, 2026 to March 01, 2027</p>
+<p style="margin-top: 20px;"><strong>Policy Period:</strong> March 01, 2026 to March 01, 2027</p>
     </div>
-
-    <div data-verify-line="cgl" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="cgl" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Travelers doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:travelers.com/policy/v/CGL99887766 <span data-bracket="end" data-for="cgl">]</span>
     </div>

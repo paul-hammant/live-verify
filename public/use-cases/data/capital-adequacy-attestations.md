@@ -19,8 +19,7 @@ These documents are the "Proof of Solvency" needed for high-stakes business. Cou
     <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 1px;">CAPITAL ADEQUACY ATTESTATION</div>
     <div style="font-size: 0.8em; opacity: 0.8; text-transform: uppercase; margin-top: 5px;">Prudential Regulatory Confirmation</div>
   </div>
-
-  <div style="padding: 30px; font-size: 0.95em; line-height: 1.6; color: #333;">
+<div style="padding: 30px; font-size: 0.95em; line-height: 1.6; color: #333;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 10px;">
       <div>
         <strong>Firm:</strong> <span data-bracket="start" data-for="capital">[</span>MERIDIAN CAPITAL PARTNERS<br>
@@ -31,20 +30,17 @@ These documents are the "Proof of Solvency" needed for high-stakes business. Cou
         <strong>Date:</strong> MARCH 31, 2026
       </div>
     </div>
-
-    <div style="background: #f0f4f8; padding: 20px; border-left: 4px solid #003366; margin-bottom: 20px;">
+<div style="background: #f0f4f8; padding: 20px; border-left: 4px solid #003366; margin-bottom: 20px;">
       <p style="margin: 0; font-weight: bold; color: #003366;">SOLVENCY RATIO CERTIFICATION:</p>
       <p style="margin: 10px 0 0;">Common Equity Tier 1 (CET1) Ratio: <strong>14.2%</strong></p>
       <p style="margin: 5px 0 0;">Total Capital Ratio: <strong>18.5%</strong></p>
       <p style="margin: 5px 0 0;">Liquidity Coverage Ratio (LCR): <strong>152%</strong></p>
     </div>
-
-    <p style="font-size: 0.85em; font-style: italic; color: #666;">
+<p style="font-size: 0.85em; font-style: italic; color: #666;">
       "We attest that the firm meets all applicable capital requirements under Basel III / CRD IV. No capital buffer breaches occurred during this reporting period."
     </p>
   </div>
-
-  <div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #003366; text-align: center;">
+<div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #003366; text-align: center;">
     <div data-verify-line="capital" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: Banks don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:meridian-capital.com/v/CAP2026Q1 <span data-bracket="end" data-for="capital">]</span>

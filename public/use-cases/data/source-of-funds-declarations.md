@@ -26,8 +26,7 @@ This is core AML (anti-money laundering) compliance. If you can't explain where 
     <p><strong>Client:</strong> <span data-bracket="start" data-for="sourceoffundsdeclara">[</span>Richard Thornton<br>
     <strong>Account/Transaction:</strong> Initial Investment - £500,000<br>
     <strong>Declaration Date:</strong> February 1, 2026</p>
-
-    <div style="background: #f0f4f8; padding: 15px; margin: 15px 0; border-left: 3px solid #2e5090;">
+<div style="background: #f0f4f8; padding: 15px; margin: 15px 0; border-left: 3px solid #2e5090;">
       <p style="margin: 0;"><strong>Source of Funds for this transaction:</strong></p>
       <p style="margin: 10px 0 0;">Sale of residential property at 42 Kensington Gardens, London W8</p>
       <p style="margin: 5px 0 0;">Net proceeds: £525,000 (after mortgage redemption)</p>
@@ -36,10 +35,8 @@ This is core AML (anti-money laundering) compliance. If you can't explain where 
       <p style="margin: 5px 0 0;">• Solicitor completion statement (attached)</p>
       <p style="margin: 5px 0 0;">• Bank statement showing receipt of funds</p>
     </div>
-
-    <p style="font-size: 0.85em; color: #666;">I confirm this information is true and complete. I will notify the firm of any material changes.</p>
-
-    <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
+<p style="font-size: 0.85em; color: #666;">I confirm this information is true and complete. I will notify the firm of any material changes.</p>
+<div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="sourceoffundsdeclara" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
         verify:hartley-wealth.com/kyc/SOF-RT-2026-0201 <span data-bracket="end" data-for="sourceoffundsdeclara">]</span>

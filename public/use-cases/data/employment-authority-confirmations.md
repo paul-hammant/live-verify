@@ -24,8 +24,7 @@ This matters from both sides: candidates want to know the offer is real, and com
     <strong>Authorized Person:</strong> Jennifer Walsh<br>
     <strong>Role:</strong> Engineering Director<br>
     <strong>Issued:</strong> January 1, 2026</p>
-
-    <div style="background: #f0f4f8; padding: 15px; margin: 15px 0; border-left: 3px solid #2e5090;">
+<div style="background: #f0f4f8; padding: 15px; margin: 15px 0; border-left: 3px solid #2e5090;">
       <p style="margin: 0;"><strong>Authority to:</strong></p>
       <p style="margin: 10px 0 0;">• Extend job offers for roles in Engineering department</p>
       <p style="margin: 5px 0 0;">• Salary offers up to £120,000 base</p>
@@ -37,11 +36,9 @@ This matters from both sides: candidates want to know the offer is real, and com
       <p style="margin: 5px 0 0;">• Sign-on bonuses over £10,000</p>
       <p style="margin: 5px 0 0;">• Relocation packages over £25,000</p>
     </div>
-
-    <p style="font-size: 0.85em; color: #666;">Delegated by: CHRO<br>
+<p style="font-size: 0.85em; color: #666;">Delegated by: CHRO<br>
     Valid until: December 31, 2026</p>
-
-    <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
+<div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="employmentauthorityc" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
         verify:nexus-tech.com/hr-auth/JW-2026 <span data-bracket="end" data-for="employmentauthorityc">]</span>
@@ -74,19 +71,16 @@ This matters from both sides: candidates want to know the offer is real, and com
     <strong>Position:</strong> Senior Software Engineer<br>
     <strong>Start Date:</strong> March 1, 2026<br>
     <strong>Offer Date:</strong> February 1, 2026</p>
-
-    <div style="background: #f5fff5; padding: 15px; margin: 15px 0; border: 1px solid #228B22;">
+<div style="background: #f5fff5; padding: 15px; margin: 15px 0; border: 1px solid #228B22;">
       <p style="margin: 0;"><strong>Compensation:</strong></p>
       <p style="margin: 10px 0 0;">Base salary: £95,000 per annum</p>
       <p style="margin: 5px 0 0;">Bonus target: 15% of base</p>
       <p style="margin: 5px 0 0;">Equity: Standard new hire grant</p>
       <p style="margin: 5px 0 0;">Benefits: Full package per employee handbook</p>
     </div>
-
-    <p style="font-size: 0.85em; color: #666;">Offer extended by: Jennifer Walsh, Engineering Director<br>
+<p style="font-size: 0.85em; color: #666;">Offer extended by: Jennifer Walsh, Engineering Director<br>
     Subject to: Background check, right to work verification</p>
-
-    <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
+<div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="employmentauthorityc" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
         verify:nexus-tech.com/offers/DC-2026-0201 <span data-bracket="end" data-for="employmentauthorityc">]</span>
@@ -112,8 +106,7 @@ This matters from both sides: candidates want to know the offer is real, and com
     <strong>Authorized Person:</strong> Sarah Martinez<br>
     <strong>Role:</strong> HR Director<br>
     <strong>Issued:</strong> January 1, 2026</p>
-
-    <div style="background: #fff5f5; padding: 15px; margin: 15px 0; border: 1px solid #8B0000;">
+<div style="background: #fff5f5; padding: 15px; margin: 15px 0; border: 1px solid #8B0000;">
       <p style="margin: 0;"><strong>Authority to approve:</strong></p>
       <p style="margin: 10px 0 0;">• Terminations for cause (all levels below Director)</p>
       <p style="margin: 5px 0 0;">• Redundancy selections (with CFO approval for costs)</p>
@@ -123,11 +116,9 @@ This matters from both sides: candidates want to know the offer is real, and com
       <p style="margin: 5px 0 0;">• Director-level terminations</p>
       <p style="margin: 5px 0 0;">• Settlements over £50,000</p>
     </div>
-
-    <p style="font-size: 0.85em; color: #666;">Delegated by: CEO<br>
+<p style="font-size: 0.85em; color: #666;">Delegated by: CEO<br>
     Valid until: December 31, 2026</p>
-
-    <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
+<div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="employmentauthorityc" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
         verify:nexus-tech.com/hr-auth/SM-TERM-2026 <span data-bracket="end" data-for="employmentauthorityc">]</span>

@@ -22,8 +22,7 @@ These reports are "Development Killers." If a property is 50% wetlands, it may b
     </div>
     <div style="font-size: 2.2em;">🌿</div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
         <strong>Project Site:</strong> <span data-bracket="start" data-for="wetland">[</span>BLUE RIVER MEADOWS<br>
@@ -36,8 +35,7 @@ These reports are "Development Killers." If a property is 50% wetlands, it may b
         <strong>Status:</strong> FINAL
       </div>
     </div>
-
-    <div style="background: #f1f8e9; border: 1px solid #c5e1a5; padding: 20px; border-radius: 4px; margin-bottom: 20px;">
+<div style="background: #f1f8e9; border: 1px solid #c5e1a5; padding: 20px; border-radius: 4px; margin-bottom: 20px;">
       <h4 style="margin-top: 0; color: #1b5e20; font-size: 0.9em; border-bottom: 1px solid #c5e1a5; padding-bottom: 5px;">VERIFIED DELINEATION RESULTS</h4>
       <table style="width: 100%; font-size: 0.9em;">
         <tr>
@@ -58,8 +56,7 @@ These reports are "Development Killers." If a property is 50% wetlands, it may b
         </tr>
       </table>
     </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="display: flex; justify-content: space-between; align-items: flex-end;">
       <div>
         <div style="border-top: 1px solid #000; width: 200px; padding-top: 5px; font-style: italic;">Sarah J. Jenkins, PWS</div>
         <div style="font-size: 0.7em; color: #777;">Professional Wetland Scientist #9922</div>
@@ -67,8 +64,7 @@ These reports are "Development Killers." If a property is 50% wetlands, it may b
       <div style="width: 80px; height: 80px; border: 2px solid #2e7d32; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; text-align: center; color: #2e7d32; transform: rotate(-5deg);">ECO<br>VERIFIED</div>
     </div>
   </div>
-
-  <div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #999; text-align: center;">
+<div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #999; text-align: center;">
     <div data-verify-line="wetland" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Environmental firms don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:eco-stream.com/v/WET99228877 <span data-bracket="end" data-for="wetland">]</span>

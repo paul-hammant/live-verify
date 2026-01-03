@@ -24,32 +24,26 @@ An **Elevation Certificate** is the official paper from a licensed surveyor that
       <div style="font-size: 0.8em; opacity: 0.8;">FEDERAL EMERGENCY MANAGEMENT AGENCY (FEMA)</div>
     </div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
       <h3 style="margin: 0; color: #333;">NATIONAL FLOOD INSURANCE PROGRAM (NFIP)</h3>
       <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;">OMB Control #: 1660-0008</div>
     </div>
-
-    <div style="font-size: 0.95em; line-height: 1.5; color: #333;">
+<div style="font-size: 0.95em; line-height: 1.5; color: #333;">
       <p><strong>Property:</strong> <span data-bracket="start" data-for="flood">[</span>123 Ocean Blvd, Miami Beach, FL 33139<br>
       <strong>Building Type:</strong> Single-Family Residential</p>
-
-      <div style="background: #f0f4f8; padding: 15px; border: 1px solid #d1d9e6; margin: 15px 0;">
+<div style="background: #f0f4f8; padding: 15px; border: 1px solid #d1d9e6; margin: 15px 0;">
         <p><strong>FEMA Flood Zone:</strong> AE (EL 9')<br>
         <strong>Lowest Floor Elevation:</strong> 11.2 Feet (NAVD 88)</p>
         <p><strong>Status:</strong> COMPLIANT (Above BFE)</p>
       </div>
-
-      <p><strong>Licensed Surveyor:</strong> Mike Miller, PSM (Lic #9982)<br>
+<p><strong>Licensed Surveyor:</strong> Mike Miller, PSM (Lic #9982)<br>
       <strong>Certification Date:</strong> March 15, 2026</p>
     </div>
-
-    <div style="margin-top: 30px; border: 1px solid #ccc; padding: 10px; font-size: 0.8em; color: #555; background: #fafafa; font-style: italic;">
+<div style="margin-top: 30px; border: 1px solid #ccc; padding: 10px; font-size: 0.8em; color: #555; background: #fafafa; font-style: italic;">
       Verification confirms the Base Flood Elevation (BFE) and Lowest Floor data match the surveyor's official field record.
     </div>
-
-    <div data-verify-line="flood" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="flood" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: FEMA/Surveyor doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:miller-surveying.com/v/MIAMI-123 <span data-bracket="end" data-for="flood">]</span>
     </div>

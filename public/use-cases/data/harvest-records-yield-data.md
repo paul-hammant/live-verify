@@ -27,27 +27,22 @@ Fraud happens when a farmer "Edits" the report to show a lower yield (to pay les
       Date: 15 OCT 2026
     </div>
   </div>
-
-  <div style="font-size: 0.9em; line-height: 1.4;">
+<div style="font-size: 0.9em; line-height: 1.4;">
     <p><strong>Producer:</strong> Miller Family Farms, Inc.<br>
     <strong>Field:</strong> North Quarter (Section 14, Story County, IA)<br>
     <strong>Crop:</strong> Corn (Yellow)</p>
-
-    <div style="border: 1px solid #000; padding: 10px; margin: 15px 0; background: #f9f9f9;">
+<div style="border: 1px solid #000; padding: 10px; margin: 15px 0; background: #f9f9f9;">
       <strong>YIELD SUMMARY:</strong><br>
       Total Wet Mass: 1,242,500 LBS<br>
       Average Moisture: 15.4%<br>
       <strong>Net Dry Yield: 214.2 BU/ACRE</strong> (Verified)
     </div>
-
-    <p><strong>Equipment:</strong> Combine S780 (Serial #998877)<br>
+<p><strong>Equipment:</strong> Combine S780 (Serial #998877)<br>
     <strong>Operator:</strong> Sarah J. Miller</p>
-
-    <div style="margin-top: 20px; font-size: 0.8em; font-style: italic; color: #555;">
+<div style="margin-top: 20px; font-size: 0.8em; font-style: italic; color: #555;">
       Yield data generated via JDLink&trade; telematics and calibrated yield monitors.
     </div>
-
-    <div data-verify-line="harvest" style="border-top: 1px dashed #999; margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="harvest" style="border-top: 1px dashed #999; margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: John Deere doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:operationscenter.deere.com/v/HARV9922 <span data-bracket="end" data-for="harvest">]</span>
     </div>

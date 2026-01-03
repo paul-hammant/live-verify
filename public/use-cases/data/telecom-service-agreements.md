@@ -22,8 +22,7 @@ The problem is that these agreements are often buried in 50-page PDFs. During a 
       <div style="font-size: 0.7em; color: #666;">Contract Ref: VZ-992288-X</div>
     </div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9em; margin-bottom: 25px;">
       <div>
         <strong>Customer:</strong> <span data-bracket="start" data-for="telecom">[</span>GLOBAL LOGISTICS CORP.<br>
@@ -36,8 +35,7 @@ The problem is that these agreements are often buried in 50-page PDFs. During a 
         <strong>Location:</strong> CHICAGO HUB-1
       </div>
     </div>
-
-    <div style="border: 1px solid #eee; padding: 20px; background: #f9f9f9; margin-bottom: 20px;">
+<div style="border: 1px solid #eee; padding: 20px; background: #f9f9f9; margin-bottom: 20px;">
       <h4 style="margin-top: 0; border-bottom: 1px solid #ddd; padding-bottom: 5px; color: #d32f2f;">CORE PERFORMANCE GUARANTEES</h4>
       <table style="width: 100%; font-size: 0.9em;">
         <tr>
@@ -58,13 +56,11 @@ The problem is that these agreements are often buried in 50-page PDFs. During a 
         </tr>
       </table>
     </div>
-
-    <div style="font-size: 0.8em; color: #555; line-height: 1.4;">
+<div style="font-size: 0.8em; color: #555; line-height: 1.4;">
       <strong>SLA Credits:</strong> Failures to meet Availability targets result in a 10% credit of the monthly recurring charge (MRC) for each hour of downtime, capped at 50% MRC per month.
     </div>
   </div>
-
-  <div style="padding: 20px; background: #eee; border-top: 1px solid #ddd; text-align: center;">
+<div style="padding: 20px; background: #eee; border-top: 1px solid #ddd; text-align: center;">
     <div data-verify-line="telecom" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Telecoms don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:verizon.com/sla/v/VZ992288X <span data-bracket="end" data-for="telecom">]</span>

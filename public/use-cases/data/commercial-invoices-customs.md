@@ -27,8 +27,7 @@ Customs officers use this invoice to decide:
       Date: March 15, 2026
     </div>
   </div>
-
-  <div style="font-size: 0.85em; line-height: 1.4;">
+<div style="font-size: 0.85em; line-height: 1.4;">
     <div style="display: flex; margin-bottom: 20px;">
       <div style="width: 50%;">
         <strong>EXPORTER (SELLER):</strong><br>
@@ -43,8 +42,7 @@ Customs officers use this invoice to decide:
         Zurich, CH-8001, Switzerland
       </div>
     </div>
-
-    <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
+<table style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
       <tr style="border-bottom: 1px solid #000; font-weight: bold;">
         <th style="text-align: left;">Description of Goods</th>
         <th style="text-align: center;">HS Code</th>
@@ -65,14 +63,12 @@ Customs officers use this invoice to decide:
         <td style="text-align: right;">$ 57,500.00</td>
       </tr>
     </table>
-
-    <div style="font-size: 0.8em; font-style: italic;">
+<div style="font-size: 0.8em; font-style: italic;">
       Incoterms: CIP Zurich (2020)<br>
       Country of Origin: CHINA<br>
       Container: MSKU-992288-0
     </div>
-
-    <div data-verify-line="invoice" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="invoice" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Exporter doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:sz-tech.com/invoices/v/INV998877 <span data-bracket="end" data-for="invoice">]</span>
     </div>

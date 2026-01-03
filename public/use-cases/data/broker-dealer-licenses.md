@@ -13,28 +13,23 @@ furtherDerivations: 1
     <h2 style="margin: 0; font-size: 1.3em; letter-spacing: 1px;">CERTIFICATE OF REGISTRATION</h2>
     <div style="font-size: 0.8em; margin-top: 5px;">FINANCIAL INDUSTRY REGULATORY AUTHORITY (FINRA)</div>
   </div>
-
-  <div style="padding: 25px; display: flex;">
+<div style="padding: 25px; display: flex;">
     <div style="width: 100px; margin-right: 20px;">
       <div style="width: 100px; height: 125px; background: #eee; display: flex; align-items: center; justify-content: center; color: #777; border: 1px solid #ccc;">[Photo]</div>
     </div>
     <div style="flex-grow: 1;">
       <h3 style="margin-top: 0; color: #002d62; font-size: 1.2em;">REGISTERED REPRESENTATIVE</h3>
-      
-      <div style="font-size: 0.95em; line-height: 1.5; color: #333;">
+<div style="font-size: 0.95em; line-height: 1.5; color: #333;">
         <p><strong>Individual:</strong> <span data-bracket="start" data-for="broker">[</span>JORDAN BELFORT<br>
         <strong>CRD Number:</strong> 9988776<br>
         <strong>Firm:</strong> Stratton Oakmont, Inc.</p>
-
-        <p><strong>Status:</strong> REGISTERED<br>
+<p><strong>Status:</strong> REGISTERED<br>
         <strong>Examinations:</strong> Series 7, Series 63</p>
-        
-        <p style="font-size: 0.8em; margin-top: 10px;">This individual is authorized to engage in the sale of securities products.</p>
+<p style="font-size: 0.8em; margin-top: 10px;">This individual is authorized to engage in the sale of securities products.</p>
       </div>
     </div>
   </div>
-
-  <div data-verify-line="broker" style="border-top: 1px dashed #999; margin-top: 10px; padding: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center; background: #f9f9f9;"
+<div data-verify-line="broker" style="border-top: 1px dashed #999; margin-top: 10px; padding: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center; background: #f9f9f9;"
       title="Demo only: FINRA doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:finra.org/brokercheck/v/9988776 <span data-bracket="end" data-for="broker">]</span>
   </div>

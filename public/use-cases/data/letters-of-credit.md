@@ -14,13 +14,11 @@ furtherDerivations: 1
     IRREVOCABLE DOCUMENTARY CREDIT<br>
     --------------------------------
   </div>
-
-  <div style="font-size: 0.85em; line-height: 1.4;">
+<div style="font-size: 0.85em; line-height: 1.4;">
     <p><strong>L/C Number:</strong> <span data-bracket="start" data-for="lc">[</span>HSBC-LC-99228877<br>
     <strong>Date of Issue:</strong> 15 MAR 2026<br>
     <strong>Expiry Date:</strong> 15 SEP 2026</p>
-
-    <div style="display: flex; margin-bottom: 15px;">
+<div style="display: flex; margin-bottom: 15px;">
       <div style="width: 50%; border-right: 1px solid #000; padding-right: 10px;">
         <strong>Applicant (Buyer):</strong><br>
         Global Retail Hub, Corp.<br>
@@ -32,18 +30,14 @@ furtherDerivations: 1
         Geneva, Switzerland
       </div>
     </div>
-
-    <div style="background: #f9f9f9; border: 1px solid #ccc; padding: 10px; margin-bottom: 15px;">
+<div style="background: #f9f9f9; border: 1px solid #ccc; padding: 10px; margin-bottom: 15px;">
       <strong>AMOUNT: USD 1,250,000.00</strong><br>
       (One Million Two Hundred Fifty Thousand US Dollars)
     </div>
-
-    <p><strong>Description of Goods:</strong><br>
+<p><strong>Description of Goods:</strong><br>
     High-Precision Optical Glass (Lot #992) as per Contract #42.</p>
-
-    <p style="font-size: 0.8em;">Available with any bank by negotiation. Subject to UCP 600.</p>
-
-    <div data-verify-line="lc" style="border-top: 1px dashed #999; margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #555; text-align: center;"
+<p style="font-size: 0.8em;">Available with any bank by negotiation. Subject to UCP 600.</p>
+<div data-verify-line="lc" style="border-top: 1px dashed #999; margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #555; text-align: center;"
       title="Demo only: HSBC doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:hsbc.com/trade/v/LC99228877 <span data-bracket="end" data-for="lc">]</span>
     </div>

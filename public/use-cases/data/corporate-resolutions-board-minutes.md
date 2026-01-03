@@ -22,18 +22,14 @@ This is an official document—usually a **Secretary's Certificate**—where the
     <div style="font-size: 0.9em; margin-top: 5px;">OF THE BOARD OF DIRECTORS OF</div>
     <div style="font-weight: bold; font-size: 1.1em; margin-top: 5px;">WAYSTAR ROYCO CORP.</div>
   </div>
-
-  <div style="font-size: 1em; line-height: 1.6; color: #333; text-align: justify;">
+<div style="font-size: 1em; line-height: 1.6; color: #333; text-align: justify;">
     <p>I, the undersigned, Secretary of Waystar Royco Corp. (the "Corporation"), hereby certify that the following is a true and correct copy of a resolution adopted by the Board of Directors on <strong>March 15, 2026</strong>:</p>
-
-    <div style="background: #fdfdfd; border-left: 4px solid #000; padding: 15px; margin: 20px 0;">
+<div style="background: #fdfdfd; border-left: 4px solid #000; padding: 15px; margin: 20px 0;">
       <p style="margin-top: 0;"><strong><span data-bracket="start" data-for="corp">[</span>RESOLVED:</strong> That the Corporation is authorized to open a commercial credit facility with JPMorgan Chase Bank, N.A. in the amount of <strong>$500,000,000.00</strong> and that the CEO is authorized to execute all loan documents.</p>
     </div>
-
-    <p>I further certify that the said resolution has not been amended or rescinded and is in full force and effect as of the date hereof.</p>
+<p>I further certify that the said resolution has not been amended or rescinded and is in full force and effect as of the date hereof.</p>
   </div>
-
-  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div style="width: 45%;">
       <div style="border-top: 1px solid #000; padding-top: 5px; font-style: italic;">Gerri Kellman</div>
       <div style="font-size: 0.8em; color: #777;">Corporate Secretary</div>
@@ -42,8 +38,7 @@ This is an official document—usually a **Secretary's Certificate**—where the
       <div style="width: 80px; height: 80px; border: 2px solid #000; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; text-align: center; margin-left: auto;">NOTARY<br>SEAL</div>
     </div>
   </div>
-
-  <div data-verify-line="corp" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="corp" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Corporation doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:waystar-royco.com/legal/v/998877 <span data-bracket="end" data-for="corp">]</span>
   </div>

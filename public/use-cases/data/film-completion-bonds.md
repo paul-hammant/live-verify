@@ -21,25 +21,20 @@ No bank will lend money to a film set without seeing a verified bond. Fraudsters
     <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 2px;">FILM FINANCES, INC.</div>
     <div style="font-size: 0.9em; margin-top: 5px;">A Completion Guaranty Company</div>
   </div>
-
-  <h3 style="text-align: center; text-transform: uppercase; margin-bottom: 20px;">Completion Guaranty Certificate</h3>
-
-  <div style="font-size: 1em; line-height: 1.6; color: #333; text-align: justify;">
+<h3 style="text-align: center; text-transform: uppercase; margin-bottom: 20px;">Completion Guaranty Certificate</h3>
+<div style="font-size: 1em; line-height: 1.6; color: #333; text-align: justify;">
     <p>This certifies that a Completion Guaranty has been issued for the production titled:</p>
     <p style="text-align: center; font-size: 1.3em; font-weight: bold; margin: 15px 0;">
       <span data-bracket="start" data-for="film">[</span>"THE VERIFICATION CHRONICLES"
     </p>
-
-    <div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin: 20px 0;">
+<div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin: 20px 0;">
       <strong>Production Company:</strong> Independent Epic, LLC<br>
       <strong>Guaranteed Budget:</strong> $ 12,500,000.00<br>
       <strong>Bond Number:</strong> FF-2026-992288
     </div>
-
-    <p>The Guarantor hereby guarantees to the Beneficiary (Lender) that the Production will be completed and delivered in accordance with the approved screenplay and delivery schedule.</p>
+<p>The Guarantor hereby guarantees to the Beneficiary (Lender) that the Production will be completed and delivered in accordance with the approved screenplay and delivery schedule.</p>
   </div>
-
-  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div style="width: 45%;">
       <div style="border-top: 1px solid #000; padding-top: 5px; font-style: italic;">Sarah Connor</div>
       <div style="font-size: 0.8em; color: #777;">Authorized Signatory</div>
@@ -48,8 +43,7 @@ No bank will lend money to a film set without seeing a verified bond. Fraudsters
       <div style="width: 80px; height: 80px; border: 2px solid #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; color: #000; font-weight: bold; text-align: center; margin-left: auto;">BONDED<br>& SECURED</div>
     </div>
   </div>
-
-  <div data-verify-line="film" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="film" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Film Finances doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:filmfinances.com/bonds/v/FF992288 <span data-bracket="end" data-for="film">]</span>
   </div>

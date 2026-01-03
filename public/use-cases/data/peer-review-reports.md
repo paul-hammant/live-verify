@@ -19,25 +19,20 @@ These reports are the "Gold Standard" of credibility. Researchers use them to se
     <div style="font-weight: bold; font-size: 1.4em; color: #003366; letter-spacing: 1px;">JOURNAL OF QUANTUM PHYSICS</div>
     <div style="font-size: 0.85em; text-transform: uppercase;">Official Editorial Decision Letter</div>
   </div>
-
-  <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <p><strong>Manuscript ID:</strong> <span data-bracket="start" data-for="peer">[</span>JQP-2026-9922-XJ<br>
     <strong>Submission Date:</strong> January 15, 2026</p>
-
-    <p><strong>Title:</strong> <em>Anomalous Waveform Dynamics in High-Energy Magic Fields.</em></p>
+<p><strong>Title:</strong> <em>Anomalous Waveform Dynamics in High-Energy Magic Fields.</em></p>
     <p><strong>Corresponding Author:</strong> Dr. Adrian Turnipseed</p>
-
-    <div style="margin: 25px 0; padding: 20px; border: 2px solid #2e7d32; background: #e8f5e9; text-align: center; border-radius: 4px;">
+<div style="margin: 25px 0; padding: 20px; border: 2px solid #2e7d32; background: #e8f5e9; text-align: center; border-radius: 4px;">
       <div style="font-size: 0.8em; color: #1b5e20; text-transform: uppercase; font-weight: bold; margin-bottom: 5px;">Editorial Verdict:</div>
       <div style="font-size: 1.4em; font-weight: bold; color: #1b5e20;">ACCEPTED WITH MINOR REVISIONS</div>
     </div>
-
-    <div style="border-top: 1px solid #eee; padding-top: 15px; font-size: 0.85em; font-style: italic;">
+<div style="border-top: 1px solid #eee; padding-top: 15px; font-size: 0.85em; font-style: italic;">
       <strong>Lead Reviewer Summary:</strong> "The data supports the hypothesis. Methodology is sound. Author must address the pak-factor discrepancies noted in Section 4.2 before final publication."
     </div>
   </div>
-
-  <div style="margin-top: 40px; border-top: 1px dashed #999; padding-top: 10px; text-align: center;">
+<div style="margin-top: 40px; border-top: 1px dashed #999; padding-top: 10px; text-align: center;">
     <div data-verify-line="peer" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #003366; font-weight: bold;"
       title="Demo only: Academic journals don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:quantum-journal.org/v/JQP992288 <span data-bracket="end" data-for="peer">]</span>

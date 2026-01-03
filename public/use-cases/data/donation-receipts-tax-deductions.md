@@ -21,12 +21,10 @@ Verified hashes allow the IRS to scan a receipt and see "VERIFIED" on the charit
     <div style="font-weight: bold; font-size: 1.4em;">AMERICAN RED CROSS</div>
     <div style="font-size: 0.85em; color: #666;">OFFICIAL CHARITABLE CONTRIBUTION RECEIPT</div>
   </div>
-
-  <div style="font-size: 1em; line-height: 1.6; color: #333;">
+<div style="font-size: 1em; line-height: 1.6; color: #333;">
     <p>Dear <span data-bracket="start" data-for="donate">[</span><strong>JOHN JACOB DOE</strong>,</p>
     <p>Thank you for your generous gift. This letter confirms that the American Red Cross received your contribution as described below:</p>
-
-    <div style="background: #f9f9f9; padding: 15px; border: 1px solid #eee; margin: 20px 0;">
+<div style="background: #f9f9f9; padding: 15px; border: 1px solid #eee; margin: 20px 0;">
       <table style="width: 100%; font-size: 0.95em;">
         <tr>
           <td><strong>Donation Amount:</strong></td>
@@ -42,15 +40,12 @@ Verified hashes allow the IRS to scan a receipt and see "VERIFIED" on the charit
         </tr>
       </table>
     </div>
-
-    <p style="font-size: 0.85em; font-style: italic;">No goods or services were provided in exchange for this contribution. The American Red Cross is a 501(c)(3) organization. Federal Tax ID: 12-3456789.</p>
+<p style="font-size: 0.85em; font-style: italic;">No goods or services were provided in exchange for this contribution. The American Red Cross is a 501(c)(3) organization. Federal Tax ID: 12-3456789.</p>
   </div>
-
-  <div style="margin-top: 40px; text-align: right;">
+<div style="margin-top: 40px; text-align: right;">
     <div style="border-top: 1px solid #000; width: 200px; display: inline-block; padding-top: 5px; font-size: 0.9em;">Treasurer, ARC</div>
   </div>
-
-  <div data-verify-line="donate" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="donate" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Red Cross doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:redcross.org/receipts/v/ARC-2025-9922 <span data-bracket="end" data-for="donate">]</span>
   </div>

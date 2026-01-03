@@ -26,14 +26,12 @@ Fraud is dangerous here: some managers use a 10-year-old SDS to hide that a chem
       <div style="font-size: 0.8em;">Product ID: CHEM-992288</div>
     </div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="border-bottom: 2px solid #333; padding-bottom: 10px; margin-bottom: 20px;">
       <h2 style="margin: 0; font-size: 1.3em;"><span data-bracket="start" data-for="sds">[</span>ACETONE (Technical Grade)</h2>
       <div style="font-size: 0.9em; color: #666;">Manufacturer: Global Chemicals, Corp.</div>
     </div>
-
-    <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+<div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
       <div style="width: 65%; font-size: 0.9em; line-height: 1.5; color: #333;">
         <strong>Section 2: Hazard Identification</strong><br>
         🔥 Flammable Liquid - Category 2<br>
@@ -45,13 +43,11 @@ Fraud is dangerous here: some managers use a 10-year-old SDS to hide that a chem
         <div style="font-size: 0.7em; color: #d32f2f; font-weight: bold;">FLAMMABLE</div>
       </div>
     </div>
-
-    <div style="background: #eee; padding: 10px; font-size: 0.8em; color: #555;">
+<div style="background: #eee; padding: 10px; font-size: 0.8em; color: #555;">
       <strong>EMERGENCY CONTACT:</strong> 1-800-424-9300 (CHEMTREC)<br>
       <strong>Last Revision:</strong> March 15, 2026
     </div>
-
-    <div data-verify-line="sds" style="border-top: 1px dashed #999; margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="sds" style="border-top: 1px dashed #999; margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Manufacturer doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:globalchem.com/sds/v/CHEM992288 <span data-bracket="end" data-for="sds">]</span>
     </div>

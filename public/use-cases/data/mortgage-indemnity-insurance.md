@@ -18,30 +18,24 @@ furtherDerivations: 1
       <div style="font-size: 0.8em;">Cert #: PMI-99228877-26</div>
     </div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <h2 style="text-align: center; color: #002d62; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">PMI Coverage Confirmation</h2>
-
-    <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.9em; line-height: 1.6; color: #333;">
       <p><strong>Insured Lender:</strong> <span data-bracket="start" data-for="mort-ins">[</span>Wells Fargo Bank, N.A.<br>
       <strong>Borrower:</strong> Sarah Jane Smith</p>
-
-      <div style="background: #f0f4f8; border: 1px solid #d1d9e6; padding: 15px; margin: 15px 0; border-radius: 4px;">
+<div style="background: #f0f4f8; border: 1px solid #d1d9e6; padding: 15px; margin: 15px 0; border-radius: 4px;">
         <p><strong>Loan Amount:</strong> $ 450,000.00<br>
         <strong>Loan-to-Value (LTV):</strong> 95.00%</p>
         <p><strong>Insurance Coverage:</strong> 30.00% of Loss<br>
         <strong>Monthly Premium:</strong> $ 142.50</p>
       </div>
-
-      <p><strong>Effective Date:</strong> March 15, 2026<br>
+<p><strong>Effective Date:</strong> March 15, 2026<br>
       <strong>Master Policy:</strong> AM-99887766</p>
     </div>
-
-    <div style="margin-top: 30px; border: 1px solid #ccc; padding: 10px; font-size: 0.8em; color: #555; background: #fafafa; font-style: italic;">
+<div style="margin-top: 30px; border: 1px solid #ccc; padding: 10px; font-size: 0.8em; color: #555; background: #fafafa; font-style: italic;">
       This certificate is for the benefit of the lender and is subject to the terms of the Master Policy on file with Arch MI.
     </div>
-
-    <div data-verify-line="mort-ins" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="mort-ins" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Arch MI doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:archmi.com/v/PMI99228877 <span data-bracket="end" data-for="mort-ins">]</span>
     </div>

@@ -18,18 +18,14 @@ furtherDerivations: 1
       <div style="font-size: 0.8em;">Policy #: BRI-99228877-26</div>
     </div>
   </div>
-
-  <div style="padding: 30px;">
+<div style="padding: 30px;">
     <h2 style="text-align: center; color: #1565c0; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Builders Risk Certificate</h2>
-
-    <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.9em; line-height: 1.6; color: #333;">
       <p><strong>Project Name:</strong> <span data-bracket="start" data-for="build">[</span>Liberty High School Addition<br>
       <strong>Location:</strong> 4500 Skyline Blvd, Austin, TX</p>
-
-      <p><strong>Project Owner:</strong> Austin Independent School District<br>
+<p><strong>Project Owner:</strong> Austin Independent School District<br>
       <strong>General Contractor:</strong> Skyline Builders Group, LLC</p>
-
-      <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
         <tr style="background: #f1f8ff; border-bottom: 2px solid #1565c0;">
           <th style="text-align: left; padding: 8px;">Limit Description</th>
           <th style="text-align: right; padding: 8px;">Amount</th>
@@ -47,15 +43,12 @@ furtherDerivations: 1
           <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">Full Project Value</td>
         </tr>
       </table>
-
-      <p style="margin-top: 20px;"><strong>Construction Term:</strong> March 01, 2026 to September 30, 2027</p>
+<p style="margin-top: 20px;"><strong>Construction Term:</strong> March 01, 2026 to September 30, 2027</p>
     </div>
-
-    <div style="margin-top: 30px; border: 1px solid #ffccbc; padding: 10px; font-size: 0.8em; color: #d84315; background: #fff5f2;">
+<div style="margin-top: 30px; border: 1px solid #ffccbc; padding: 10px; font-size: 0.8em; color: #d84315; background: #fff5f2;">
       <strong>Security Notice:</strong> Coverage automatically terminates upon substantial completion or occupancy.
     </div>
-
-    <div data-verify-line="build" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="build" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Zurich doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:zurichna.com/construction/v/BRI992288 <span data-bracket="end" data-for="build">]</span>
     </div>

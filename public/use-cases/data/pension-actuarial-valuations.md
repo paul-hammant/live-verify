@@ -19,8 +19,7 @@ These documents are the "Proof of Retirement Security." Fraud is high-stakes: co
     <div style="font-weight: bold; font-size: 1.4em; color: #002366;">WILLIS TOWERS WATSON</div>
     <div style="font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">Actuarial Valuation & Solvency Certification</div>
   </div>
-
-  <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px;">
       <div>
         <strong>Plan:</strong> <span data-bracket="start" data-for="pension">[</span>METRO TEACHERS RETIREMENT FUND<br>
@@ -31,10 +30,8 @@ These documents are the "Proof of Retirement Security." Fraud is high-stakes: co
         <strong>Date:</strong> MARCH 15, 2026
       </div>
     </div>
-
-    <p>This document certifies the actuarial status of the Plan as of the measurement date of <strong>January 1, 2026</strong>.</p>
-    
-    <div style="background: #f0f4f8; border: 1px solid #ccc; padding: 20px; margin: 20px 0;">
+<p>This document certifies the actuarial status of the Plan as of the measurement date of <strong>January 1, 2026</strong>.</p>
+<div style="background: #f0f4f8; border: 1px solid #ccc; padding: 20px; margin: 20px 0;">
       <table style="width: 100%; font-size: 0.9em; border-collapse: collapse;">
         <tr>
           <td>Total Actuarial Accrued Liability (AAL):</td>
@@ -50,19 +47,16 @@ These documents are the "Proof of Retirement Security." Fraud is high-stakes: co
         </tr>
       </table>
     </div>
-
-    <p style="font-size: 0.85em; font-style: italic;">"Based on the assumptions stated in the full report, the Plan's current funding level meets the requirements of ERISA and the PBGC."</p>
+<p style="font-size: 0.85em; font-style: italic;">"Based on the assumptions stated in the full report, the Plan's current funding level meets the requirements of ERISA and the PBGC."</p>
   </div>
-
-  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div>
       <div style="border-top: 1px solid #000; width: 200px; padding-top: 5px; font-style: italic;">Robert J. Miller, FSA, MAAA</div>
       <div style="font-size: 0.7em; color: #777;">Enrolled Actuary #992288</div>
     </div>
     <div style="width: 80px; height: 80px; border: 2px solid #002366; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; text-align: center; color: #002366;">ACTUARIAL<br>VERIFIED</div>
   </div>
-
-  <div style="padding: 20px; background: #fffbe6; border: 1px dashed #999; margin-top: 40px; text-align: center;">
+<div style="padding: 20px; background: #fffbe6; border: 1px dashed #999; margin-top: 40px; text-align: center;">
     <div data-verify-line="pension" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Actuarial firms don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:wtwco.com/v/VAL99228877 <span data-bracket="end" data-for="pension">]</span>

@@ -24,8 +24,7 @@ When you're about to sign a major deal, you need to know: does the person across
     <strong>Authorized Person:</strong> Michael Torres<br>
     <strong>Role:</strong> Commercial Director<br>
     <strong>Issued:</strong> January 1, 2026</p>
-
-    <div style="background: #f0f4f8; padding: 15px; margin: 15px 0; border-left: 3px solid #003366;">
+<div style="background: #f0f4f8; padding: 15px; margin: 15px 0; border-left: 3px solid #003366;">
       <p style="margin: 0;"><strong>Authority to execute:</strong></p>
       <p style="margin: 10px 0 0;">• Commercial contracts up to £500,000 total value</p>
       <p style="margin: 5px 0 0;">• Service agreements up to 3 years duration</p>
@@ -36,12 +35,10 @@ When you're about to sign a major deal, you need to know: does the person across
       <p style="margin: 5px 0 0;">• Contracts with unlimited liability clauses</p>
       <p style="margin: 5px 0 0;">• Exclusivity arrangements over 12 months</p>
     </div>
-
-    <p style="font-size: 0.85em; color: #666;">Delegated by: Board Resolution dated December 15, 2025<br>
+<p style="font-size: 0.85em; color: #666;">Delegated by: Board Resolution dated December 15, 2025<br>
     Company Reg: 09876543<br>
     Valid until: December 31, 2026</p>
-
-    <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
+<div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="contractsigningautho" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
         verify:vertex-solutions.com/authority/MT-2026 <span data-bracket="end" data-for="contractsigningautho">]</span>

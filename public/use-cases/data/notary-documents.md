@@ -24,14 +24,11 @@ Because it is an "Authentic Act," it has enormous legal weight:
     <div style="font-weight: bold; font-size: 1.3em; letter-spacing: 2px;">NOTARY OFFICE</div>
     <div style="font-size: 0.9em; text-transform: uppercase;">ACTE DE DERNIÈRE VOLONTÉ</div>
   </div>
-
-  <div style="font-size: 1.1em; line-height: 1.8; color: #000; text-align: justify;">
+<div style="font-size: 1.1em; line-height: 1.8; color: #000; text-align: justify;">
     <p>BEFORE US, <span data-bracket="start" data-for="not-will">[</span><strong>Maitre JEAN-PIERRE LEFEBVRE</strong>, Notary in the City of Montreal, appeared <strong>MARCUS A. WILLOWS</strong>, who declared this to be his Last Will and Testament.</p>
-    
-    <p>The Testator bequeaths his entire estate, both real and personal, to his surviving spouse, <strong>MARIE WILLOWS</strong>, and appoints her as the Liquidator of the Succession.</p>
+<p>The Testator bequeaths his entire estate, both real and personal, to his surviving spouse, <strong>MARIE WILLOWS</strong>, and appoints her as the Liquidator of the Succession.</p>
   </div>
-
-  <div style="margin-top: 60px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 60px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div>
       <div style="width: 100px; height: 100px; border: 2px solid #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; text-align: center; transform: rotate(-10deg);">OFFICIAL<br>NOTARY<br>ARCHIVE SEAL</div>
     </div>
@@ -40,8 +37,7 @@ Because it is an "Authentic Act," it has enormous legal weight:
       <div style="border-top: 1px solid #000; width: 200px; padding-top: 5px; font-style: italic;">Jean-Pierre Lefebvre, Notary</div>
     </div>
   </div>
-
-  <div data-verify-line="not-will" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="not-will" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Notary Chamber doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:notaires.qc.ca/v/2026-992288 <span data-bracket="end" data-for="not-will">]</span>
   </div>
@@ -132,11 +128,9 @@ OCR-to-hash binds the **Notary's commission number, the signer's name, and the s
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', serif; border: 1px solid #999; background: #fff; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="font-size: 1.1em; line-height: 1.6; color: #000;">
     <p style="text-align: right; font-size: 0.9em;">STATE OF FLORIDA<br>COUNTY OF MIAMI-DADE</p>
-    
-    <p>The foregoing instrument was acknowledged before me this 15th day of March, 2026, by <span data-bracket="start" data-for="notary">[</span><strong>ROBERT J. MILLER</strong>, who is personally known to me or who has produced a Driver License as identification.</p>
+<p>The foregoing instrument was acknowledged before me this 15th day of March, 2026, by <span data-bracket="start" data-for="notary">[</span><strong>ROBERT J. MILLER</strong>, who is personally known to me or who has produced a Driver License as identification.</p>
   </div>
-
-  <div style="margin-top: 40px; display: flex; align-items: flex-start; justify-content: space-between;">
+<div style="margin-top: 40px; display: flex; align-items: flex-start; justify-content: space-between;">
     <div style="width: 200px; border: 2px solid #000; padding: 10px; text-align: center; font-family: sans-serif; font-size: 0.75em; line-height: 1.3;">
       <div style="font-weight: bold; text-transform: uppercase;">Jane Doe</div>
       NOTARY PUBLIC<br>
@@ -148,8 +142,7 @@ OCR-to-hash binds the **Notary's commission number, the signer's name, and the s
       Notary Signature
     </div>
   </div>
-
-  <div data-verify-line="notary" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="notary" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
     title="Demo only: Florida Secretary of State doesn't yet offer verification&#10;endpoints, so this is illustrative">
     verify:flsos.gov/notary/v/HH992288 <span data-bracket="end" data-for="notary">]</span>
   </div>
@@ -235,17 +228,13 @@ The problem is that the "Notary Seal" (the ink stamp or embossed circle) is a ph
     <div style="font-weight: bold; font-size: 1.2em; text-transform: uppercase;">Notary Acknowledgment</div>
     <div style="font-size: 0.9em; font-style: italic;">Official Certificate of Act</div>
   </div>
-
-  <div style="font-size: 1em; line-height: 1.6; color: #000; text-align: justify;">
+<div style="font-size: 1em; line-height: 1.6; color: #000; text-align: justify;">
     <p>State of <strong>CALIFORNIA</strong><br>
     County of <strong>LOS ANGELES</strong></p>
-
-    <p>On March 15, 2026 before me, <span data-bracket="start" data-for="notary">[</span><strong>SARAH J. JENKINS</strong>, Notary Public, personally appeared <strong>JOHN JACOB DOE</strong>, who proved to me on the basis of satisfactory evidence to be the person whose name is subscribed to the within instrument.</p>
-    
-    <p>I certify under PENALTY OF PERJURY under the laws of the State of California that the foregoing paragraph is true and correct.</p>
+<p>On March 15, 2026 before me, <span data-bracket="start" data-for="notary">[</span><strong>SARAH J. JENKINS</strong>, Notary Public, personally appeared <strong>JOHN JACOB DOE</strong>, who proved to me on the basis of satisfactory evidence to be the person whose name is subscribed to the within instrument.</p>
+<p>I certify under PENALTY OF PERJURY under the laws of the State of California that the foregoing paragraph is true and correct.</p>
   </div>
-
-  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div>
       <div style="border-top: 1px solid #000; width: 200px; padding-top: 5px; font-style: italic;">Sarah Jenkins</div>
       <div style="font-size: 0.8em; color: #777;">Commission #: 992288-CA<br>Expires: Dec 31, 2028</div>
@@ -254,8 +243,7 @@ The problem is that the "Notary Seal" (the ink stamp or embossed circle) is a ph
       <div style="width: 100px; height: 100px; border: 2px solid #000; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; text-align: center; transform: rotate(-10deg);">NOTARY<br>OFFICIAL<br>SEAL</div>
     </div>
   </div>
-
-  <div style="padding: 20px; background: #f9f9f9; border: 1px dashed #999; margin-top: 40px; text-align: center;">
+<div style="padding: 20px; background: #f9f9f9; border: 1px dashed #999; margin-top: 40px; text-align: center;">
     <div data-verify-line="notary" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: Individual notaries don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:sarahnotary.com/v/ACT2026-9922 <span data-bracket="end" data-for="notary">]</span>
@@ -341,11 +329,9 @@ The problem is that a "Digital Seal" is often just a pretty image on a PDF. Frau
     <div style="font-weight: bold; font-size: 1.3em; text-transform: uppercase;">Remote Online Notary Certificate</div>
     <div style="font-size: 0.9em; letter-spacing: 1px;">AUTHENTICATED VIA SECURE VIDEO SESSION</div>
   </div>
-
-  <div style="font-size: 0.95em; line-height: 1.6;">
+<div style="font-size: 0.95em; line-height: 1.6;">
     <p>This document was notarized remotely on <strong>MARCH 15, 2026</strong> pursuant to the laws of the <strong>STATE OF TEXAS</strong>.</p>
-    
-    <div style="margin: 20px 0; display: flex; align-items: flex-start; border: 1px solid #ccc; padding: 15px; background: #f9f9f9;">
+<div style="margin: 20px 0; display: flex; align-items: flex-start; border: 1px solid #ccc; padding: 15px; background: #f9f9f9;">
       <div style="width: 80px; height: 80px; border: 2px solid #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; text-align: center; margin-right: 20px; color: #000;">DIGITAL<br>SEAL</div>
       <div style="flex-grow: 1;">
         <strong>Notary:</strong> <span data-bracket="start" data-for="ron">[</span>SARAH J. JENKINS<br>
@@ -354,12 +340,10 @@ The problem is that a "Digital Seal" is often just a pretty image on a PDF. Frau
         <strong>Session ID:</strong> RON-8844-X92
       </div>
     </div>
-
-    <p><strong>Signer:</strong> JOHN JACOB DOE<br>
+<p><strong>Signer:</strong> JOHN JACOB DOE<br>
     <strong>ID Verified via:</strong> KBA + Bio-Metric Credential Analysis</p>
   </div>
-
-  <div style="margin-top: 30px; border-top: 1px dashed #999; padding-top: 15px; text-align: center;">
+<div style="margin-top: 30px; border-top: 1px dashed #999; padding-top: 15px; text-align: center;">
     <div style="font-size: 0.75em; color: #666; font-style: italic; margin-bottom: 10px;">
       This electronic act is recorded in the platform's digital journal. Scan to verify session integrity and notary authority.
     </div>

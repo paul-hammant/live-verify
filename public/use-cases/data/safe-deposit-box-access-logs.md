@@ -19,12 +19,10 @@ In the world of **Estate Law**, these logs are "The Smoking Gun." If a box holde
     <div style="font-weight: bold; font-size: 1.3em; text-transform: uppercase;">GOLIATH NATIONAL BANK</div>
     <div style="font-size: 0.9em; letter-spacing: 1px;">SAFE DEPOSIT VAULT ACCESS RECORD</div>
   </div>
-
-  <div style="font-size: 0.9em; line-height: 1.6;">
+<div style="font-size: 0.9em; line-height: 1.6;">
     <p><strong>Branch:</strong> 42ND STREET MAIN VAULT<br>
     <strong>Box Number:</strong> <span data-bracket="start" data-for="vault">[</span>SD-992288-Z</p>
-
-    <table style="width: 100%; border-collapse: collapse; margin: 20px 0; border: 1px solid #000;">
+<table style="width: 100%; border-collapse: collapse; margin: 20px 0; border: 1px solid #000;">
       <tr style="background: #eee; border-bottom: 1px solid #000;">
         <th style="text-align: left; padding: 10px; border-right: 1px solid #000;">Access Date/Time</th>
         <th style="text-align: left; padding: 10px;">Authorized Signer</th>
@@ -40,8 +38,7 @@ In the world of **Estate Law**, these logs are "The Smoking Gun." If a box holde
         </td>
       </tr>
     </table>
-
-    <div style="margin-top: 20px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 20px; display: flex; justify-content: space-between; align-items: flex-end;">
       <div>
         <div style="border-top: 1px solid #000; width: 180px; padding-top: 5px; font-style: italic;">James Gordon, Bank Officer</div>
         <div style="font-size: 0.7em; color: #777;">Employee ID: #992288</div>
@@ -49,8 +46,7 @@ In the world of **Estate Law**, these logs are "The Smoking Gun." If a box holde
       <div style="width: 80px; height: 80px; border: 1px solid #000; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; text-align: center; transform: rotate(-5deg);">ENTRY<br>AUTHORIZED</div>
     </div>
   </div>
-
-  <div style="margin-top: 30px; padding-top: 10px; border-top: 1px dashed #999; text-align: center;">
+<div style="margin-top: 30px; padding-top: 10px; border-top: 1px dashed #999; text-align: center;">
     <div data-verify-line="vault" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: Banks don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:goliathbank.com/v/SD992288Z <span data-bracket="end" data-for="vault">]</span>

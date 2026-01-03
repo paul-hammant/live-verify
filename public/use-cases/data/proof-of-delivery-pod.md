@@ -22,8 +22,7 @@ Fraud is rampant in high-value shipping (electronics, pharmaceuticals). Dishones
       <div style="font-size: 0.7em;">Official Record of Handoff</div>
     </div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
         <div style="font-size: 0.7em; color: #888; text-transform: uppercase;">Waybill Number</div>
@@ -34,14 +33,12 @@ Fraud is rampant in high-value shipping (electronics, pharmaceuticals). Dishones
         <div style="font-size: 1.1em; font-weight: bold;">15 MAR 2026 • 14:22 GMT</div>
       </div>
     </div>
-
-    <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.9em; line-height: 1.6; color: #333;">
       <div style="margin-bottom: 15px;">
         <strong>Consignee:</strong> GLOBAL TECH SOLUTIONS, INC.<br>
         <strong>Address:</strong> 42 Innovation Way, London, UK
       </div>
-
-      <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
         <tr style="background: #f9f9f9; border-bottom: 1px solid #eee;">
           <th style="text-align: left; padding: 8px; font-size: 0.8em;">Items</th>
           <th style="text-align: center; padding: 8px; font-size: 0.8em;">Qty</th>
@@ -53,8 +50,7 @@ Fraud is rampant in high-value shipping (electronics, pharmaceuticals). Dishones
           <td style="text-align: right; padding: 8px; color: #2e7d32; font-weight: bold;">INTACT</td>
         </tr>
       </table>
-
-      <div style="margin-top: 20px; display: flex; align-items: center; border: 1px solid #eee; padding: 15px; background: #fffbe6;">
+<div style="margin-top: 20px; display: flex; align-items: center; border: 1px solid #eee; padding: 15px; background: #fffbe6;">
         <div style="flex-grow: 1;">
           <strong>Signed By:</strong> <span style="font-family: cursive; font-size: 1.2em;">Sarah Jenkins</span><br>
           <span style="font-size: 0.8em; color: #666;">Security Supervisor (Emp #992)</span>
@@ -62,8 +58,7 @@ Fraud is rampant in high-value shipping (electronics, pharmaceuticals). Dishones
         <div style="width: 60px; height: 60px; border: 1px solid #ccc; display: flex; align-items: center; justify-content: center; font-size: 0.5em; color: #999; text-align: center;">ID PHOTO<br>LOGGED</div>
       </div>
     </div>
-
-    <div data-verify-line="pod" style="border-top: 1px dashed #bbb; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #d40511; text-align: center; font-weight: bold;"
+<div data-verify-line="pod" style="border-top: 1px dashed #bbb; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #d40511; text-align: center; font-weight: bold;"
       title="Demo only: DHL doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:dhl.com/pod/v/JD9922887766 <span data-bracket="end" data-for="pod">]</span>
     </div>

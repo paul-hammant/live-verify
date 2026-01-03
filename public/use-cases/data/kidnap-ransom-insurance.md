@@ -18,29 +18,22 @@ furtherDerivations: 1
       <div style="font-size: 0.8em;">Confidential ID: KR-992288-26</div>
     </div>
   </div>
-
-  <div style="padding: 30px;">
+<div style="padding: 30px;">
     <h2 style="text-align: center; color: #333; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Evidence of Special Coverage</h2>
-
-    <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.9em; line-height: 1.6; color: #333;">
       <p>This document confirms that the following entity has active Crisis Management and Extortion insurance:</p>
-      
-      <div style="background: #fdfdfd; border: 1px solid #ddd; padding: 15px; margin: 15px 0; border-radius: 4px;">
+<div style="background: #fdfdfd; border: 1px solid #ddd; padding: 15px; margin: 15px 0; border-radius: 4px;">
         <p><strong>Insured:</strong> <span data-bracket="start" data-for="knr">[</span>Waystar Royco Global, Corp.<br>
         <strong>Covered Class:</strong> Directors, Officers, and Key Executives</p>
-        
-        <strong>Aggregate Ransom Limit:</strong> $ 10,000,000.00<br>
+<strong>Aggregate Ransom Limit:</strong> $ 10,000,000.00<br>
         <strong>Response Team:</strong> Control Risks Group (CRG)
       </div>
-
-      <p><strong>Authorized Scope:</strong> Kidnap for Ransom, Extortion, Detention, and Hijack. <strong>Territory:</strong> Worldwide.</p>
+<p><strong>Authorized Scope:</strong> Kidnap for Ransom, Extortion, Detention, and Hijack. <strong>Territory:</strong> Worldwide.</p>
     </div>
-
-    <div style="margin-top: 30px; border: 1px solid #ffccbc; padding: 10px; font-size: 0.8em; color: #d84315; background: #fff5f2; font-style: italic; text-align: center;">
+<div style="margin-top: 30px; border: 1px solid #ffccbc; padding: 10px; font-size: 0.8em; color: #d84315; background: #fff5f2; font-style: italic; text-align: center;">
       <strong>STRICTLY CONFIDENTIAL:</strong> The existence of this policy must not be disclosed to any third party (except as required by law). Unauthorized disclosure may void coverage.
     </div>
-
-    <div data-verify-line="knr" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="knr" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Hiscox doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:hiscox.com/crisis/v/KR992288 <span data-bracket="end" data-for="knr">]</span>
     </div>

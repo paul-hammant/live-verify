@@ -21,20 +21,17 @@ Because a higher rating leads directly to more donations, some charities "Inflat
     <h3 style="margin: 0; letter-spacing: 1px;">CHARITY NAVIGATOR</h3>
     <div style="font-size: 0.8em; opacity: 0.8;">OFFICIAL ACCREDITATION CERTIFICATE</div>
   </div>
-
-  <div style="padding: 30px; text-align: center;">
+<div style="padding: 30px; text-align: center;">
     <div style="margin-bottom: 20px;">
       <div style="font-size: 3em; color: #ffca28;">★★★★</div>
       <div style="font-weight: bold; font-size: 1.2em; color: #004d40; margin-top: -10px;">4-STAR RATING</div>
     </div>
-
-    <div style="font-size: 1.1em; line-height: 1.6; color: #333; margin-bottom: 25px;">
+<div style="font-size: 1.1em; line-height: 1.6; color: #333; margin-bottom: 25px;">
       This is to certify that<br>
       <span data-bracket="start" data-for="rating">[</span><strong>THE HUMAN FUND</strong><br>
       has achieved our highest rating for fiscal responsibility, transparency, and impact.
     </div>
-
-    <div style="display: flex; justify-content: space-around; font-size: 0.9em; color: #555; background: #f9f9f9; padding: 15px; border-radius: 6px; margin-bottom: 20px;">
+<div style="display: flex; justify-content: space-around; font-size: 0.9em; color: #555; background: #f9f9f9; padding: 15px; border-radius: 6px; margin-bottom: 20px;">
       <div>
         <strong>Efficiency:</strong><br>92.4%
       </div>
@@ -45,13 +42,11 @@ Because a higher rating leads directly to more donations, some charities "Inflat
         <strong>Reporting:</strong><br>VERIFIED
       </div>
     </div>
-
-    <div style="font-size: 0.8em; color: #777;">
+<div style="font-size: 0.8em; color: #777;">
       <strong>Issue Date:</strong> January 15, 2026<br>
       <strong>Valid Until:</strong> January 14, 2027
     </div>
-
-    <div data-verify-line="rating" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="rating" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Charity Navigator doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:charitynavigator.org/v/HUMAN-FUND-99 <span data-bracket="end" data-for="rating">]</span>
     </div>

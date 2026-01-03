@@ -22,8 +22,7 @@ These policies are critical for **Asset Protection**. Fraud is high-stakes: high
     </div>
     <div style="font-size: 2em;">🛡️</div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
         <strong>Policyholder:</strong> <span data-bracket="start" data-for="umbrella">[</span>SARAH JANE SMITH<br>
@@ -35,14 +34,12 @@ These policies are critical for **Asset Protection**. Fraud is high-stakes: high
         <strong>Status:</strong> ACTIVE
       </div>
     </div>
-
-    <div style="background: #f9f9f9; border: 1px solid #ddd; padding: 20px; text-align: center; margin-bottom: 20px;">
+<div style="background: #f9f9f9; border: 1px solid #ddd; padding: 20px; text-align: center; margin-bottom: 20px;">
       <div style="font-size: 0.8em; color: #666; text-transform: uppercase; font-weight: bold;">Excess Liability Limit:</div>
       <div style="font-size: 2.2em; font-weight: bold; color: #000;">$ 5,000,000.00</div>
       <div style="font-size: 0.8em; color: #ce9e00; font-weight: bold; margin-top: 5px;">VERIFIED WORLDWIDE COVERAGE</div>
     </div>
-
-    <div style="font-size: 0.85em; color: #333;">
+<div style="font-size: 0.85em; color: #333;">
       <h4 style="margin-top: 0; color: #000; border-bottom: 1px solid #ccc; padding-bottom: 5px;">VERIFIED UNDERLYING POLICIES</h4>
       <table style="width: 100%; margin: 10px 0;">
         <tr>
@@ -56,8 +53,7 @@ These policies are critical for **Asset Protection**. Fraud is high-stakes: high
       </table>
     </div>
   </div>
-
-  <div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #999; text-align: center;">
+<div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #999; text-align: center;">
     <div data-verify-line="umbrella" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Personal insurers don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:chubb.com/umbrella/v/UMB20269922 <span data-bracket="end" data-for="umbrella">]</span>

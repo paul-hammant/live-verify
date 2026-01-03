@@ -19,8 +19,7 @@ These documents are the "Proof of Prestige." Researchers use them to secure tenu
     <div style="font-weight: bold; font-size: 1.4em; color: #002d62;">NATIONAL SCIENCE FOUNDATION</div>
     <div style="font-size: 0.9em; text-transform: uppercase; letter-spacing: 1px;">Office of Budget, Finance, and Award Management</div>
   </div>
-
-  <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px;">
       <div>
         <strong>Award Number:</strong> <span data-bracket="start" data-for="grant">[</span>NSF-2026-992288<br>
@@ -30,26 +29,20 @@ These documents are the "Proof of Prestige." Researchers use them to secure tenu
         <strong>Total Amount:</strong> $ 1,250,000.00
       </div>
     </div>
-
-    <p>Dear Dr. Ponder Stibbons,</p>
-    
-    <p>The National Science Foundation is pleased to announce the approval of your research grant award. This funding is authorized for the following project:</p>
-
-    <div style="margin: 20px 0; padding: 15px; border-left: 4px solid #002d62; background: #f9f9f9; font-style: italic;">
+<p>Dear Dr. Ponder Stibbons,</p>
+<p>The National Science Foundation is pleased to announce the approval of your research grant award. This funding is authorized for the following project:</p>
+<div style="margin: 20px 0; padding: 15px; border-left: 4px solid #002d62; background: #f9f9f9; font-style: italic;">
       <strong>Project Title:</strong> Quantum Thaumaturgy and High-Energy Magic Dynamics in Urban Environments.
     </div>
-
-    <p><strong>Principal Investigator:</strong> Dr. Ponder Stibbons<br>
+<p><strong>Principal Investigator:</strong> Dr. Ponder Stibbons<br>
     <strong>Institution:</strong> Unseen University (DUN: 998877665)<br>
     <strong>Period of Performance:</strong> 03/15/2026 to 03/14/2029</p>
   </div>
-
-  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div style="width: 180px; border-top: 1px solid #000; padding-top: 5px; font-size: 0.8em; text-align: center;">Grants Officer Approval</div>
     <div style="width: 80px; height: 80px; border: 2px solid #002d62; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; text-align: center; color: #002d62;">NSF<br>VERIFIED</div>
   </div>
-
-  <div data-verify-line="grant" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="grant" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Funding agencies don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:nsf.gov/awards/v/2026992288 <span data-bracket="end" data-for="grant">]</span>
   </div>

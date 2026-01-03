@@ -25,20 +25,15 @@ It defines:
     <div style="font-size: 1.1em; font-style: italic; margin-top: 5px;">of</div>
     <div style="font-size: 1.5em; font-weight: bold; margin-top: 5px;"><span data-bracket="start" data-for="will">[</span>MARGARET A. WILLOWS</div>
   </div>
-
-  <div style="font-size: 1.1em; line-height: 1.8; color: #000; text-align: justify;">
+<div style="font-size: 1.1em; line-height: 1.8; color: #000; text-align: justify;">
     <p>I, <strong>MARGARET A. WILLOWS</strong>, a resident of the City of Chicago, County of Cook, State of Illinois, being of sound mind and memory, do hereby make, publish, and declare this to be my Last Will and Testament, hereby revoking all wills and codicils heretofore made by me.</p>
-    
-    <p><strong>ARTICLE I:</strong> I direct that all my enforceable debts and funeral expenses be paid as soon after my death as practicable.</p>
-    
-    <p><strong>ARTICLE II:</strong> I give, devise, and bequeath all of my remaining property, real and personal, to my children, in equal shares...</p>
+<p><strong>ARTICLE I:</strong> I direct that all my enforceable debts and funeral expenses be paid as soon after my death as practicable.</p>
+<p><strong>ARTICLE II:</strong> I give, devise, and bequeath all of my remaining property, real and personal, to my children, in equal shares...</p>
   </div>
-
-  <div style="margin-top: 60px; border-top: 1px solid #eee; padding-top: 20px; font-size: 0.85em; color: #666; text-align: center;">
+<div style="margin-top: 60px; border-top: 1px solid #eee; padding-top: 20px; font-size: 0.85em; color: #666; text-align: center;">
     Page 1 of 12  |  Revision ID: 2026-03-15-WILLOWS-A
   </div>
-
-  <div data-verify-line="will" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="will" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Law firm doesn't yet offer verification&#10;endpoints, so this is illustrative">
     verify:willows-law.com/wills/v/MAW2026-P1 <span data-bracket="end" data-for="will">]</span>
   </div>

@@ -13,31 +13,25 @@ furtherDerivations: 1
     <div style="font-weight: bold; font-size: 1.2em;">IATA ACCREDITED AGENCY</div>
     <div style="width: 50px; height: 50px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #002d62; font-weight: bold; font-size: 0.8em;">IATA</div>
   </div>
-
-  <div style="padding: 30px;">
+<div style="padding: 30px;">
     <div style="text-align: center; border-bottom: 2px solid #002d62; padding-bottom: 10px; margin-bottom: 20px;">
       <h3 style="margin: 0; color: #002d62;">CERTIFICATE OF ACCREDITATION</h3>
       <div style="font-size: 1.2em; font-weight: bold; margin-top: 5px;">Numeric Code: <span data-bracket="start" data-for="iata">[</span>99-8-2288 7</div>
     </div>
-
-    <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
       <p>This certifies that <strong>Apex Global Travel, LLC</strong> is a Passenger Sales Agent in good standing, authorized to issue tickets on behalf of IATA member airlines.</p>
-      
-      <div style="background: #f0f4f8; border: 1px solid #d1d9e6; padding: 15px; margin: 15px 0; border-radius: 4px;">
+<div style="background: #f0f4f8; border: 1px solid #d1d9e6; padding: 15px; margin: 15px 0; border-radius: 4px;">
         <strong>Agency Location:</strong> 123 Main St, Boston, MA 02108<br>
         <strong>Status:</strong> ACTIVE / FULL ACCREDITATION<br>
         <strong>Last Financial Review:</strong> March 01, 2026
       </div>
-
-      <p><strong>Effective Date:</strong> January 01, 2026<br>
+<p><strong>Effective Date:</strong> January 01, 2026<br>
       <strong>Annual Review Date:</strong> January 01, 2027</p>
     </div>
-
-    <div style="margin-top: 25px; border: 1px solid #ccc; padding: 10px; font-size: 0.8em; color: #555; background: #fafafa; font-style: italic; text-align: center;">
+<div style="margin-top: 25px; border: 1px solid #ccc; padding: 10px; font-size: 0.8em; color: #555; background: #fafafa; font-style: italic; text-align: center;">
       This credential confirms the agency meets IATA's rigorous financial and professional standards.
     </div>
-
-    <div data-verify-line="iata" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="iata" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: IATA doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:iata.org/check-a-code/v/99822887 <span data-bracket="end" data-for="iata">]</span>
     </div>

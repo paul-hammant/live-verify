@@ -21,24 +21,19 @@ In pharmaceutical research, "Consent Fraud" is a serious crime. Sites sometimes 
     <div style="font-weight: bold; font-size: 1.2em; color: #004d40;">MAYO CLINIC - DEPARTMENT OF ONCOLOGY</div>
     <div style="font-size: 0.85em; color: #666;">Institutional Review Board Approved (v.4.2)</div>
   </div>
-
-  <h2 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; color: #004d40;">Informed Consent Form</h2>
-
-  <div style="font-size: 0.95em; line-height: 1.6; color: #333; text-align: justify;">
+<h2 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; color: #004d40;">Informed Consent Form</h2>
+<div style="font-size: 0.95em; line-height: 1.6; color: #333; text-align: justify;">
     <p><strong>Trial Title:</strong> Phase III Study of Compound X in Metastatic Melanoma<br>
     <strong>NCT Number:</strong> NCT09988776<br>
     <strong>Protocol ID:</strong> MC-2026-0492</p>
-
-    <p>I, <span data-bracket="start" data-for="clinic">[</span><strong>PARTICIPANT ID: 9988-SJ</strong>, have been informed of the risks and benefits of this study. I voluntarily agree to participate and understand that I may withdraw at any time.</p>
-
-    <div style="margin: 20px 0; border: 1px solid #004d40; padding: 15px; background: #f1f8e9;">
+<p>I, <span data-bracket="start" data-for="clinic">[</span><strong>PARTICIPANT ID: 9988-SJ</strong>, have been informed of the risks and benefits of this study. I voluntarily agree to participate and understand that I may withdraw at any time.</p>
+<div style="margin: 20px 0; border: 1px solid #004d40; padding: 15px; background: #f1f8e9;">
       <strong>CONSENT SIGNATURE:</strong><br>
       Date: March 15, 2026<br>
       Investigator: Dr. Stephen Strange
     </div>
   </div>
-
-  <div data-verify-line="clinic" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="clinic" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Mayo Clinic doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:mayoclinic.org/research/v/NCT09988776 <span data-bracket="end" data-for="clinic">]</span>
   </div>

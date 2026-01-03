@@ -23,19 +23,15 @@ OCR-to-hash binds the **Grantor/Grantee names and the Legal Description** to the
     <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 30px;">
       <h1 style="margin: 0; font-size: 1.8em; text-transform: uppercase; letter-spacing: 2px;">Statutory Warranty Deed</h1>
     </div>
-
-    <div style="font-size: 1.1em; line-height: 1.6; color: #000;">
+<div style="font-size: 1.1em; line-height: 1.6; color: #000;">
       <p>THE GRANTOR, <span data-bracket="start" data-for="deed">[</span><strong>MARIA G. RODRIGUEZ</strong>, a single person, for and in consideration of Ten Dollars ($10.00) and other good and valuable consideration in hand paid, conveys and warrants to <strong>ROBERT J. MILLER</strong>, the following described real estate:</p>
-      
-      <div style="margin: 20px 0; padding-left: 20px; font-style: italic; border-left: 3px solid #eee;">
+<div style="margin: 20px 0; padding-left: 20px; font-style: italic; border-left: 3px solid #eee;">
         Lot 42, Block 7 of Skyline Heights Addition, according to the plat thereof recorded in Volume 12 of Plats, Page 88, records of King County, Washington.<br>
         Tax Parcel ID: 9922-8877-00
       </div>
-
-      <p>Dated this 15th day of March, 2026.</p>
+<p>Dated this 15th day of March, 2026.</p>
     </div>
-
-    <div style="margin-top: 40px; border: 2px solid #000; padding: 15px; width: 250px; text-align: center; font-family: sans-serif;">
+<div style="margin-top: 40px; border: 2px solid #000; padding: 15px; width: 250px; text-align: center; font-family: sans-serif;">
       <div style="font-weight: bold; text-transform: uppercase; font-size: 0.9em; margin-bottom: 5px;">County Recorder's Use Only</div>
       <div style="font-size: 0.8em; line-height: 1.4;">
         RECORDED: 03/16/2026 09:14 AM<br>
@@ -43,8 +39,7 @@ OCR-to-hash binds the **Grantor/Grantee names and the Legal Description** to the
         FEE: $203.50  |  PAGES: 3
       </div>
     </div>
-
-    <div data-verify-line="deed" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="deed" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: King County doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:kingcounty.gov/recorder/v/20260316000442 <span data-bracket="end" data-for="deed">]</span>
     </div>

@@ -16,8 +16,7 @@ furtherDerivations: 1
     </div>
     <div style="font-size: 1.5em;">🦅</div>
   </div>
-
-  <div style="padding: 20px; display: flex;">
+<div style="padding: 20px; display: flex;">
     <div style="width: 120px; margin-right: 20px;">
       <div style="width: 120px; height: 150px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #777;">[PHOTO]</div>
     </div>
@@ -31,8 +30,7 @@ furtherDerivations: 1
       </div>
     </div>
   </div>
-
-  <div style="padding: 0 20px 20px 20px;">
+<div style="padding: 0 20px 20px 20px;">
     <div style="font-size: 0.8em; font-weight: bold; color: #002d62; text-align: center; margin-bottom: 5px;">UNITED STATES OF AMERICA</div>
     <div data-verify-line="im-status" style="border-top: 1px dashed #999; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: USCIS doesn't yet offer verification&#10;endpoints, so this is illustrative">

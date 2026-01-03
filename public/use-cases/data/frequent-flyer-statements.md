@@ -26,8 +26,7 @@ You need this verified proof for a **"Status Match"**—where a rival airline gi
       <div style="font-size: 0.8em;">Member #: <span data-bracket="start" data-for="loyalty">[</span>99228877</div>
     </div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px;">
       <div>
         <div style="font-size: 1.1em; font-weight: bold; color: #333;">SARAH JANE SMITH</div>
@@ -39,8 +38,7 @@ You need this verified proof for a **"Status Match"**—where a rival airline gi
         <div style="font-size: 0.7em; color: #003366; font-weight: bold;">TOTAL MILES</div>
       </div>
     </div>
-
-    <div style="font-size: 0.9em; line-height: 1.5; color: #333; border-top: 1px solid #eee; padding-top: 15px;">
+<div style="font-size: 0.9em; line-height: 1.5; color: #333; border-top: 1px solid #eee; padding-top: 15px;">
       <p><strong>Recent Activity:</strong></p>
       <table style="width: 100%; font-size: 0.85em;">
         <tr>
@@ -53,12 +51,10 @@ You need this verified proof for a **"Status Match"**—where a rival airline gi
         </tr>
       </table>
     </div>
-
-    <div style="margin-top: 25px; padding: 10px; background: #f0f4f8; border: 1px solid #d1d9e6; font-size: 0.8em; color: #003366; font-style: italic; text-align: center;">
+<div style="margin-top: 25px; padding: 10px; background: #f0f4f8; border: 1px solid #d1d9e6; font-size: 0.8em; color: #003366; font-style: italic; text-align: center;">
       This statement is a verified record of your mileage balance and tier status. Valid for status-match applications.
     </div>
-
-    <div data-verify-line="loyalty" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="loyalty" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Airline doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:aa.com/loyalty/v/99228877 <span data-bracket="end" data-for="loyalty">]</span>
     </div>

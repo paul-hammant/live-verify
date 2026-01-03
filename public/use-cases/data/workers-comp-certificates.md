@@ -22,8 +22,7 @@ Fraud is rampant in the construction industry. "Premium Evasion" is a multi-bill
     </div>
     <div style="font-size: 2em;">👷</div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
         <strong>Insured:</strong> <span data-bracket="start" data-for="comp">[</span>TOP-NOTCH DRYWALL LLC<br>
@@ -36,8 +35,7 @@ Fraud is rampant in the construction industry. "Premium Evasion" is a multi-bill
         <strong>Exp Date:</strong> 15 MAR 2027
       </div>
     </div>
-
-    <div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin-bottom: 20px; border-radius: 4px;">
+<div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin-bottom: 20px; border-radius: 4px;">
       <h4 style="margin-top: 0; color: #003366; font-size: 0.9em; border-bottom: 1px solid #ccc; padding-bottom: 5px;">VERIFIED COVERAGE LIMITS</h4>
       <table style="width: 100%; font-size: 0.9em;">
         <tr>
@@ -54,13 +52,11 @@ Fraud is rampant in the construction industry. "Premium Evasion" is a multi-bill
         </tr>
       </table>
     </div>
-
-    <div style="font-size: 0.75em; color: #666; font-style: italic; text-align: center;">
+<div style="font-size: 0.75em; color: #666; font-style: italic; text-align: center;">
       This certificate is a verified extract of the active policy on file. Any unauthorized alteration of class codes or employee counts renders this document void.
     </div>
   </div>
-
-  <div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #999; text-align: center;">
+<div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #999; text-align: center;">
     <div data-verify-line="comp" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: Commercial insurers don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:libertymutual.com/v/WC99228877 <span data-bracket="end" data-for="comp">]</span>

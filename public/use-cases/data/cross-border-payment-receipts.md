@@ -21,30 +21,24 @@ Fraudsters often use "Fake Screenshots" to trick sellers into shipping goods bef
     <div style="font-weight: bold; font-size: 1.4em;">Wise</div>
     <div style="font-size: 0.8em; font-weight: bold; text-transform: uppercase;">Transfer Confirmation</div>
   </div>
-
-  <div style="padding: 30px;">
+<div style="padding: 30px;">
     <div style="text-align: center; margin-bottom: 25px;">
       <div style="font-size: 0.9em; color: #666;">Transfer ID: <span data-bracket="start" data-for="remit">[</span>#9988776655</div>
       <div style="font-size: 2.2em; font-weight: bold; color: #00b9ff; margin-top: 5px;">$ 5,000.00 USD</div>
     </div>
-
-    <div style="font-size: 0.95em; line-height: 1.6; color: #333; border-top: 1px solid #eee; padding-top: 20px;">
+<div style="font-size: 0.95em; line-height: 1.6; color: #333; border-top: 1px solid #eee; padding-top: 20px;">
       <p><strong>Sender:</strong> JOHN SMITH (USA)</p>
       <p><strong>Recipient:</strong> TECH-SERVICES LTD (INDIA)<br>
       <strong>Converted To:</strong> ₹ 415,250.00 INR</p>
-      
-      <p><strong>Exchange Rate:</strong> 1 USD = 83.05 INR<br>
+<p><strong>Exchange Rate:</strong> 1 USD = 83.05 INR<br>
       <strong>Fees:</strong> $ 24.50 USD</p>
-      
-      <p><strong>Status:</strong> SENT & COMPLETED<br>
+<p><strong>Status:</strong> SENT & COMPLETED<br>
       <strong>Date:</strong> March 15, 2026</p>
     </div>
-
-    <div style="margin-top: 30px; padding: 10px; background: #f0faff; border: 1px solid #00b9ff; border-radius: 6px; font-size: 0.8em; color: #005a8c;">
+<div style="margin-top: 30px; padding: 10px; background: #f0faff; border: 1px solid #00b9ff; border-radius: 6px; font-size: 0.8em; color: #005a8c;">
       <strong>Consumer Notice:</strong> This receipt is a verified record of the exchange rate and fees applied to your international transfer.
     </div>
-
-    <div data-verify-line="remit" style="border-top: 1px dashed #00b9ff; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="remit" style="border-top: 1px dashed #00b9ff; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Wise doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:wise.com/v/9988776655 <span data-bracket="end" data-for="remit">]</span>
     </div>

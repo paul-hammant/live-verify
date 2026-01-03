@@ -52,8 +52,7 @@ When challenged by police, property owners, or bystanders, these agents need pro
     <strong>Recovery Agent:</strong> Nationwide Asset Recovery<br>
     <strong>Agent ID:</strong> NAR-7742<br>
     <strong>Order Date:</strong> February 10, 2026</p>
-
-    <div style="background: #fff5f5; padding: 15px; margin: 15px 0; border: 1px solid #8B0000;">
+<div style="background: #fff5f5; padding: 15px; margin: 15px 0; border: 1px solid #8B0000;">
       <p style="margin: 0;"><strong>Vehicle Details:</strong></p>
       <p style="margin: 10px 0 0;">Registration: AB12 CDE</p>
       <p style="margin: 5px 0 0;">Make/Model: BMW 3 Series</p>
@@ -62,11 +61,9 @@ When challenged by police, property owners, or bystanders, these agents need pro
       <p style="margin: 5px 0 0;">Agreement ref: AF-2023-887432</p>
       <p style="margin: 5px 0 0;">Arrears: £2,847.00 (4 months)</p>
     </div>
-
-    <p style="font-size: 0.85em; color: #666;">Default notice served: January 5, 2026<br>
+<p style="font-size: 0.85em; color: #666;">Default notice served: January 5, 2026<br>
     Recovery authorized by: Collections Manager</p>
-
-    <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
+<div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="authorizedagentconfi" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
         verify:autofinance-uk.com/recovery/AB12CDE-2026 <span data-bracket="end" data-for="authorizedagentconfi">]</span>
@@ -89,19 +86,16 @@ When challenged by police, property owners, or bystanders, these agents need pro
     <strong>Case Number:</strong> QB-2025-004421<br>
     <strong>Writ Number:</strong> WC-2026-00887<br>
     <strong>Issue Date:</strong> February 1, 2026</p>
-
-    <div style="background: #f0f4f8; padding: 15px; margin: 15px 0; border-left: 3px solid #003366;">
+<div style="background: #f0f4f8; padding: 15px; margin: 15px 0; border-left: 3px solid #003366;">
       <p style="margin: 0;"><strong>Judgment Creditor:</strong> Smith Trading Ltd</p>
       <p style="margin: 5px 0 0;"><strong>Judgment Debtor:</strong> Jones Enterprises Ltd</p>
       <p style="margin: 5px 0 0;"><strong>Judgment Amount:</strong> £45,000 + costs</p>
       <p style="margin: 10px 0 0;"><strong>Enforcement Agent:</strong> High Court Enforcement Group</p>
       <p style="margin: 5px 0 0;"><strong>Agent Certificate:</strong> HCEOA-2019-442</p>
     </div>
-
-    <p style="font-size: 0.85em; color: #666;">This writ authorizes the enforcement agent to take control of goods<br>
+<p style="font-size: 0.85em; color: #666;">This writ authorizes the enforcement agent to take control of goods<br>
     Valid for 12 months from issue date</p>
-
-    <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
+<div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="authorizedagentconfi" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
         verify:gov.uk/courts/writs/WC-2026-00887 <span data-bracket="end" data-for="authorizedagentconfi">]</span>
@@ -127,19 +121,16 @@ For locksmiths and tree surgeons, the authorizing party is an individual homeown
     <p><strong>Property:</strong> 14 Maple Avenue, Bristol BS8 4TQ<br>
     <strong>Work Requested:</strong> Emergency lock opening — lost keys<br>
     <strong>Date:</strong> February 15, 2026, 14:32</p>
-
-    <div style="background: #f5fff5; padding: 15px; margin: 15px 0; border: 1px solid #228B22;">
+<div style="background: #f5fff5; padding: 15px; margin: 15px 0; border: 1px solid #228B22;">
       <p style="margin: 0;"><strong>Verification performed:</strong></p>
       <p style="margin: 10px 0 0;">✓ Requestor ID checked: J. Smith (driving license)</p>
       <p style="margin: 5px 0 0;">✓ Land Registry title verified: J. Smith is registered owner</p>
       <p style="margin: 5px 0 0;">✓ Address on ID matches property</p>
     </div>
-
-    <p style="font-size: 0.85em; color: #666;">Locksmith: SecureEntry Ltd<br>
+<p style="font-size: 0.85em; color: #666;">Locksmith: SecureEntry Ltd<br>
     License: MLA-2020-4421<br>
     Technician: Mike Roberts (ID: SE-447)</p>
-
-    <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
+<div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="authorizedagentconfi" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
         verify:secureentry.co.uk/jobs/2026-0215-14MA <span data-bracket="end" data-for="authorizedagentconfi">]</span>
@@ -167,19 +158,16 @@ For locksmiths and tree surgeons, the authorizing party is an individual homeown
     <p><strong>Property:</strong> 27 Oak Lane, Cambridge CB2 1TN<br>
     <strong>Work:</strong> Remove oak tree in rear garden<br>
     <strong>Work Dates:</strong> February 20-21, 2026</p>
-
-    <div style="background: #f5fff5; padding: 15px; margin: 15px 0; border: 1px solid #228B22;">
+<div style="background: #f5fff5; padding: 15px; margin: 15px 0; border: 1px solid #228B22;">
       <p style="margin: 0;"><strong>Verification performed:</strong></p>
       <p style="margin: 10px 0 0;">✓ Land Registry: P. Williams is registered owner</p>
       <p style="margin: 5px 0 0;">✓ Council TPO check: No Tree Preservation Order</p>
       <p style="margin: 5px 0 0;">✓ Conservation area check: Not in conservation area</p>
       <p style="margin: 5px 0 0;">✓ Owner signed work order on-site</p>
     </div>
-
-    <p style="font-size: 0.85em; color: #666;">Contractor: Greenwood Tree Services Ltd<br>
+<p style="font-size: 0.85em; color: #666;">Contractor: Greenwood Tree Services Ltd<br>
     Arboricultural Association member: AA-2018-772</p>
-
-    <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
+<div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="authorizedagentconfi" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
         verify:greenwood-trees.co.uk/jobs/2026-0220-27OL <span data-bracket="end" data-for="authorizedagentconfi">]</span>
@@ -209,19 +197,16 @@ Three different authorization sources depending on context:
     <p><strong>Location:</strong> Riverside Retail Park, Unit 4 Car Park<br>
     <strong>Vehicle:</strong> XY67 ZZZ (Silver Ford Focus)<br>
     <strong>Removal Time:</strong> February 15, 2026, 16:45</p>
-
-    <div style="background: #fff8f0; padding: 15px; margin: 15px 0; border: 1px solid #ff6600;">
+<div style="background: #fff8f0; padding: 15px; margin: 15px 0; border: 1px solid #ff6600;">
       <p style="margin: 0;"><strong>Reason:</strong> Parked beyond 2-hour limit</p>
       <p style="margin: 10px 0 0;">Time parked: 09:15</p>
       <p style="margin: 5px 0 0;">Warning notice issued: 13:30</p>
       <p style="margin: 5px 0 0;">Removal authorized: 16:30</p>
     </div>
-
-    <p style="font-size: 0.85em; color: #666;">Parking operator: ParkSecure Ltd<br>
+<p style="font-size: 0.85em; color: #666;">Parking operator: ParkSecure Ltd<br>
     Authorized by: Riverside Retail Park Management<br>
     Recovery: QuickTow Services</p>
-
-    <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
+<div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="authorizedagentconfi" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
         verify:parksecure.co.uk/removals/XY67ZZZ-2026-0215 <span data-bracket="end" data-for="authorizedagentconfi">]</span>
@@ -270,13 +255,11 @@ Simple notice inviting challenge before work begins:
     <strong>Work:</strong> [Description]<br>
     <strong>Scheduled:</strong> [Date and timespan]<br>
     <strong>Contractor:</strong> [Firm name]</p>
-
-    <p style="background: #fff8f0; padding: 10px; border: 1px solid #ff6600; text-align: center;">
+<p style="background: #fff8f0; padding: 10px; border: 1px solid #ff6600; text-align: center;">
       <strong>Concerns? Challenge before work begins.</strong><br>
       Contact: [Phone] or police non-emergency: 101
     </p>
-
-    <p style="font-size: 0.8em; font-family: monospace; text-align: center; color: #666; margin-top: 15px;">
+<p style="font-size: 0.8em; font-family: monospace; text-align: center; color: #666; margin-top: 15px;">
       <div data-verify-line="authorizedagentconfi" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
         verify:propertyworks-auth.co.uk/advance/PWK-2026-0315 <span data-bracket="end" data-for="authorizedagentconfi">]</span>
@@ -298,19 +281,16 @@ Full details including authorized individuals:
     <strong>Work:</strong> [Description]<br>
     <strong>Authorization:</strong> [Permit/court order/contract ref]<br>
     <strong>Contractor:</strong> [Firm name + license]</p>
-
-    <div style="background: #f0f4f8; padding: 10px; margin: 10px 0; border-left: 3px solid #003366;">
+<div style="background: #f0f4f8; padding: 10px; margin: 10px 0; border-left: 3px solid #003366;">
       <p style="margin: 0;"><strong>Authorized Workers On-Site:</strong></p>
       <p style="margin: 5px 0 0;">• [Name] — ID: [ref]</p>
       <p style="margin: 5px 0 0;">• [Name] — ID: [ref]</p>
     </div>
-
-    <p style="font-size: 0.85em; color: #8B0000; text-align: center;">
+<p style="font-size: 0.85em; color: #8B0000; text-align: center;">
       <strong>Individual worker posters displayed at entrance.</strong><br>
       Anyone not listed — challenge or call police.
     </p>
-
-    <p style="font-size: 0.8em; font-family: monospace; text-align: center; color: #666; margin-top: 15px;">
+<p style="font-size: 0.8em; font-family: monospace; text-align: center; color: #666; margin-top: 15px;">
       <div data-verify-line="authorizedagentconfi" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
         verify:propertyworks-auth.co.uk/works/PWK-2026-0315-A1 <span data-bracket="end" data-for="authorizedagentconfi">]</span>

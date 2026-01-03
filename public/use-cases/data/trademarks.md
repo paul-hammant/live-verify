@@ -17,36 +17,29 @@ Fraud is high-stakes in the digital economy. Scammers create "Phantom Registrati
 <div style="max-width: 650px; margin: 24px auto; font-family: 'Times New Roman', Times, serif; border: 1px solid #ccc; background: #fff; padding: 50px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); position: relative; overflow: hidden;">
   <!-- Decorative Background Seal -->
   <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 20em; color: #f0f0f0; z-index: 0; opacity: 0.5;">®</div>
-
-  <div style="position: relative; z-index: 1;">
+<div style="position: relative; z-index: 1;">
     <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 20px; margin-bottom: 30px;">
       <div style="font-weight: bold; font-size: 1.4em; text-transform: uppercase; letter-spacing: 2px;">United States Patent and Trademark Office</div>
       <div style="font-size: 0.9em; margin-top: 5px;">Reg. No. <span data-bracket="start" data-for="tm">[</span>9,922,887</div>
     </div>
-
-    <div style="text-align: center; margin-bottom: 40px;">
+<div style="text-align: center; margin-bottom: 40px;">
       <div style="font-size: 3em; font-weight: bold; color: #000; letter-spacing: -1px; text-transform: uppercase;">ACME-TECH</div>
       <div style="font-size: 0.8em; color: #666; margin-top: 10px;">Word Mark • Class 9 (Software)</div>
     </div>
-
-    <div style="font-size: 1em; line-height: 1.6; color: #000; text-align: justify;">
+<div style="font-size: 1em; line-height: 1.6; color: #000; text-align: justify;">
       <p><strong>Owner:</strong> ACME GLOBAL SOLUTIONS, INC.<br>
       <strong>Address:</strong> 123 INNOVATION WAY, CALIFORNIA, USA</p>
-      
-      <p>The mark consists of standard characters without claim to any particular font style, size, or color. First used in commerce: January 15, 2024.</p>
-      
-      <p><strong>Design Hash:</strong> <span style="font-family: monospace; font-size: 0.8em; color: #666;">SHA256:8d7s9f22...</span> (Verified)</p>
+<p>The mark consists of standard characters without claim to any particular font style, size, or color. First used in commerce: January 15, 2024.</p>
+<p><strong>Design Hash:</strong> <span style="font-family: monospace; font-size: 0.8em; color: #666;">SHA256:8d7s9f22...</span> (Verified)</p>
     </div>
-
-    <div style="margin-top: 50px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 50px; display: flex; justify-content: space-between; align-items: flex-end;">
       <div style="width: 100px; height: 100px; border: 2px solid #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; text-align: center; transform: rotate(-10deg);">USPTO<br>OFFICIAL<br>SEAL</div>
       <div style="text-align: right;">
         <div style="font-size: 0.9em; font-weight: bold;">Director of the USPTO</div>
         <div style="border-top: 1px solid #000; width: 180px; margin-top: 5px; font-family: cursive; font-size: 1.2em;">Kathi Vidal</div>
       </div>
     </div>
-
-    <div style="padding: 20px; background: #f9f9f9; border: 1px dashed #999; margin-top: 40px; text-align: center;">
+<div style="padding: 20px; background: #f9f9f9; border: 1px dashed #999; margin-top: 40px; text-align: center;">
       <div data-verify-line="tm" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
         title="Demo only: Trademark offices don't yet offer verification&#10;endpoints, so this is illustrative">
         verify:uspto.gov/v/tm/9922887 <span data-bracket="end" data-for="tm">]</span>

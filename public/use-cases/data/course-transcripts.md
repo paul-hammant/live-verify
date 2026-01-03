@@ -21,10 +21,8 @@ You need this "Official" paper to apply for Grad School or to prove to an employ
     <div style="font-weight: bold; font-size: 1.3em;">UNIVERSITY OF OXFORD</div>
     <div style="font-size: 0.85em; color: #666;">Office of the University Registrar</div>
   </div>
-
-  <h3 style="text-align: center; text-transform: uppercase; margin-bottom: 20px;">Official Academic Transcript Extract</h3>
-
-  <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
+<h3 style="text-align: center; text-transform: uppercase; margin-bottom: 20px;">Official Academic Transcript Extract</h3>
+<div style="font-size: 0.9em; line-height: 1.6; color: #333;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
       <div>
         <strong>Student:</strong> <span data-bracket="start" data-for="transcript">[</span><strong>PONDER STIBBONS</strong><br>
@@ -35,8 +33,7 @@ You need this "Official" paper to apply for Grad School or to prove to an employ
         <strong>Page:</strong> 1 of 1
       </div>
     </div>
-
-    <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
+<table style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
       <tr style="border-bottom: 1px solid #000; font-weight: bold;">
         <th style="text-align: left;">Course Code</th>
         <th style="text-align: left;">Course Title</th>
@@ -67,13 +64,11 @@ You need this "Official" paper to apply for Grad School or to prove to an employ
         <td style="text-align: right;">10.0</td>
       </tr>
     </table>
-
-    <p style="font-size: 0.8em; font-style: italic;">
+<p style="font-size: 0.8em; font-style: italic;">
       Verification confirms the grades and credits match the student's official record.
     </p>
   </div>
-
-  <div data-verify-line="transcript" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="transcript" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Oxford doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:ox.ac.uk/registrar/v/992288-PS <span data-bracket="end" data-for="transcript">]</span>
   </div>

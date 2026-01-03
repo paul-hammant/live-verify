@@ -26,15 +26,12 @@ Fraudsters often "Photoshop" a low-limit policy ($100k) to look like a $10M poli
       <div style="font-size: 0.8em;">Policy #: CE-99228877-26</div>
     </div>
   </div>
-
-  <div style="padding: 30px;">
+<div style="padding: 30px;">
     <h2 style="text-align: center; color: #000; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Certificate of Cyber Coverage</h2>
-
-    <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.9em; line-height: 1.6; color: #333;">
       <p><strong>Named Insured:</strong> <span data-bracket="start" data-for="cyber-pol">[</span>Waystar Royco Digital, LLC<br>
       <strong>Industry:</strong> Media & Technology Services</p>
-
-      <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
         <tr style="background: #f5f5f5; border-bottom: 2px solid #000;">
           <th style="text-align: left; padding: 8px;">Coverage Module</th>
           <th style="text-align: right; padding: 8px;">Limit per Event</th>
@@ -52,15 +49,12 @@ Fraudsters often "Photoshop" a low-limit policy ($100k) to look like a $10M poli
           <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 5,000,000</td>
         </tr>
       </table>
-
-      <p style="margin-top: 20px;"><strong>Policy Period:</strong> March 01, 2026 to March 01, 2027</p>
+<p style="margin-top: 20px;"><strong>Policy Period:</strong> March 01, 2026 to March 01, 2027</p>
     </div>
-
-    <div style="margin-top: 30px; border: 1px solid #ccc; padding: 10px; font-size: 0.8em; color: #555; background: #fafafa;">
+<div style="margin-top: 30px; border: 1px solid #ccc; padding: 10px; font-size: 0.8em; color: #555; background: #fafafa;">
       <strong>Security Attestation:</strong> Insured warrants that Multi-Factor Authentication (MFA) is active on all remote access points.
     </div>
-
-    <div data-verify-line="cyber-pol" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="cyber-pol" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: AIG doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:aig.com/cyber/v/CE99228877 <span data-bracket="end" data-for="cyber-pol">]</span>
     </div>

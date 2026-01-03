@@ -19,13 +19,10 @@ These documents are the "Keys to the Cap Table." Fraud is high-stakes: a founder
     <div style="font-weight: bold; font-size: 1.4em; text-transform: uppercase; letter-spacing: 1px;">Simple Agreement for Future Equity</div>
     <div style="font-size: 1em; font-style: italic;">(Post-Money Valuation Cap)</div>
   </div>
-
-  <div style="font-size: 1.1em; line-height: 1.6; color: #000; text-align: justify;">
+<div style="font-size: 1.1em; line-height: 1.6; color: #000; text-align: justify;">
     <p>THIS CERTIFIES THAT in exchange for the payment by <span style="text-decoration: underline;">SEQUOIA CAPITAL</span> (the "Investor") of <strong>$ 1,000,000.00</strong> (the "Purchase Amount") on March 15, 2026,</p>
-
-    <p><strong>VERIFIC INC.</strong> (the "Company"), a Delaware corporation, hereby issues to the Investor the right to certain shares of the Company's Capital Stock, subject to the terms set forth below.</p>
-
-    <div style="margin: 25px 0; border: 2px solid #000; padding: 20px; background: #fdfdfd;">
+<p><strong>VERIFIC INC.</strong> (the "Company"), a Delaware corporation, hereby issues to the Investor the right to certain shares of the Company's Capital Stock, subject to the terms set forth below.</p>
+<div style="margin: 25px 0; border: 2px solid #000; padding: 20px; background: #fdfdfd;">
       <table style="width: 100%; border-collapse: collapse;">
         <tr>
           <td style="padding-bottom: 10px;"><strong>Post-Money Valuation Cap:</strong></td>
@@ -37,11 +34,9 @@ These documents are the "Keys to the Cap Table." Fraud is high-stakes: a founder
         </tr>
       </table>
     </div>
-
-    <p style="font-size: 0.9em; font-style: italic; color: #444;">"This SAFE is one of a series of SAFEs issued by the Company. Any unauthorized alteration of the Valuation Cap or Discount Rate renders this instrument void."</p>
+<p style="font-size: 0.9em; font-style: italic; color: #444;">"This SAFE is one of a series of SAFEs issued by the Company. Any unauthorized alteration of the Valuation Cap or Discount Rate renders this instrument void."</p>
   </div>
-
-  <div style="margin-top: 50px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 50px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div style="width: 40%;">
       <div style="border-top: 1px solid #000; padding-top: 5px; font-size: 0.8em; font-style: italic;">Founder Signature</div>
     </div>
@@ -49,8 +44,7 @@ These documents are the "Keys to the Cap Table." Fraud is high-stakes: a founder
       <div style="border-top: 1px solid #000; padding-top: 5px; font-size: 0.8em; font-style: italic;">Investor Signature</div>
     </div>
   </div>
-
-  <div style="padding: 20px; background: #f9f9f9; border: 1px dashed #999; margin-top: 40px; text-align: center;">
+<div style="padding: 20px; background: #f9f9f9; border: 1px dashed #999; margin-top: 40px; text-align: center;">
     <div data-verify-line="safe" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: Startup law firms don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:verific.io/safe/v/SEQ2026-9922 <span data-bracket="end" data-for="safe">]</span>

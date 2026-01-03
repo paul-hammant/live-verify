@@ -21,8 +21,7 @@ OCR-to-hash allows an employee to scan the poster to verify: **"Is this the curr
     <h2 style="margin: 0; text-transform: uppercase; font-size: 1.2em; letter-spacing: 1px;">JOB SAFETY AND HEALTH</h2>
     <div style="font-size: 0.9em; font-weight: bold; margin-top: 5px;">IT'S THE LAW!</div>
   </div>
-
-  <div style="padding: 20px; font-size: 0.85em; line-height: 1.4; color: #333;">
+<div style="padding: 20px; font-size: 0.85em; line-height: 1.4; color: #333;">
     <div style="display: flex; align-items: flex-start; margin-bottom: 15px;">
       <div style="font-size: 2em; margin-right: 15px;">⚠️</div>
       <div>
@@ -34,17 +33,14 @@ OCR-to-hash allows an employee to scan the poster to verify: **"Is this the curr
         </ul>
       </div>
     </div>
-
-    <div style="background: #f9f9f9; border: 1px solid #eee; padding: 10px; border-radius: 4px; margin-bottom: 15px;">
+<div style="background: #f9f9f9; border: 1px solid #eee; padding: 10px; border-radius: 4px; margin-bottom: 15px;">
       <strong>Employers must:</strong> Provide a workplace free from recognized hazards. It is illegal to retaliate against an employee for using any of their rights under the law.
     </div>
-
-    <div style="text-align: center; font-size: 0.8em; color: #666; border-top: 1px solid #eee; padding-top: 10px;">
+<div style="text-align: center; font-size: 0.8em; color: #666; border-top: 1px solid #eee; padding-top: 10px;">
       For more information, contact OSHA at 1-800-321-OSHA (6742).
     </div>
   </div>
-
-  <div style="padding: 15px; background: #fff; border-top: 1px dashed #999; text-align: center;">
+<div style="padding: 15px; background: #fff; border-top: 1px dashed #999; text-align: center;">
     <div data-verify-line="osha" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #003366; font-weight: bold;"
       title="Demo only: OSHA doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:osha.gov/posters/v/2026-GEN-SAFE <span data-bracket="end" data-for="osha">]</span>

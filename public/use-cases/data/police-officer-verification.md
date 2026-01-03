@@ -20,14 +20,13 @@ OCR-to-hash allows a citizen to scan the officer's physical ID card or badge num
 
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #002d62; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
   <div style="background: #002d62; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
-    <div style="width: 45px; height: 45px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #002d62; font-weight: bold; font-size: 0.6em; text-align: center;">CITY<br>POLICE</div>
+    <img src="met.png" alt="Metropolitan Police" style="width: 45px; height: 45px; object-fit: contain;">
     <div style="text-align: right;">
       <div style="font-weight: bold; font-size: 1.1em; letter-spacing: 1px;">WARRANT CARD</div>
       <div style="font-size: 0.7em; opacity: 0.8;">METROPOLITAN POLICE</div>
     </div>
   </div>
-
-  <div style="padding: 20px; display: flex;">
+<div style="padding: 20px; display: flex;">
     <div style="width: 100px; margin-right: 15px;">
       <div style="width: 100px; height: 125px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #777; font-size: 0.8em; text-align: center;">[PHOTO]</div>
     </div>
@@ -36,8 +35,7 @@ OCR-to-hash allows a citizen to scan the officer's physical ID card or badge num
       <div style="font-size: 0.9em; font-weight: bold;">London MET</div>
     </div>
   </div>
-
-  <div style="padding: 0 20px 20px 20px;">
+<div style="padding: 0 20px 20px 20px;">
     <div data-verify-line="police" style="border-top: 1px dashed #999; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 1em; color: #002d62; text-align: center; font-weight: bold;"
       title="Demo only: Police don't yet offer verification endpoints, so this is illustrative">
       vfy:met.police.uk <span data-bracket="end" data-for="police">]</span>
@@ -49,19 +47,20 @@ OCR-to-hash allows a citizen to scan the officer's physical ID card or badge num
 
 Static cards can be photographed and reprinted. An **e-ink warrant card** with a rotating salt defeats this entirely:
 
-<div style="max-width: 320px; margin: 24px auto; font-family: sans-serif; border: 3px solid #002d62; border-radius: 8px; background: #f5f5f0; padding: 20px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
-  <div style="font-size: 0.8em; color: #002d62; font-weight: bold; margin-bottom: 10px;">METROPOLITAN POLICE</div>
-  <div style="font-size: 1.5em; font-weight: bold; color: #000; margin-bottom: 5px;"><span data-bracket="start" data-for="eink">[</span>PC Alex D 1332</div>
-  <div style="font-size: 1em; color: #333; margin-bottom: 15px;">London MET</div>
-  <div style="font-family: 'Courier New', monospace; font-size: 1.1em; color: #002d62; background: #fff; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+<div style="max-width: 320px; margin: 24px auto; font-family: 'Courier New', monospace; border: 3px solid #002d62; border-radius: 8px; background: #f5f5f0; padding: 20px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+  <div style="font-size: 1em; color: #002d62; font-weight: bold; margin-bottom: 8px;">METROPOLITAN POLICE</div>
+  <div style="font-size: 1em; font-weight: bold; color: #000; margin-bottom: 8px;"><span data-bracket="start" data-for="eink">[</span>PC Alex D 1332</div>
+  <div style="font-size: 1em; color: #333; margin-bottom: 8px;">London MET</div>
+  <div style="font-size: 1em; color: #002d62; margin-bottom: 12px;">
     Salt: 7k3m9x2p
   </div>
-  <div data-verify-line="eink" style="margin-top: 15px; font-family: 'Courier New', monospace; font-size: 1em; color: #555;"
+  <div data-verify-line="eink" style="font-size: 1em; color: #555;"
     title="Demo only: Police don't yet offer verification endpoints">
     vfy:met.police.uk <span data-bracket="end" data-for="eink">]</span>
   </div>
-  <div style="font-size: 0.7em; color: #888; margin-top: 10px;">Salt rotates every 10 mins</div>
 </div>
+
+*Salt rotates every 10 mins*
 
 **How e-ink defeats fake police:**
 - **Salt rotates frequently** (every 10 minutes, or more often if officer is moving) — a photographed copy is stale within minutes
@@ -74,63 +73,60 @@ Static cards can be photographed and reprinted. An **e-ink warrant card** with a
 The rotating salt creates **ephemeral, non-persistent identifiers**. This is fundamentally different from static hash systems (like hotels or healthcare):
 
 - **No permanent hash database:** Unlike hotel/healthcare use cases with `/c/{hash}` endpoints that persist forever, police e-ink hashes exist only for a 10-minute window
-- **Each hash is temporal, not identifying:** The badge displays "PC Alex D 1332 + Salt: 7k3m9x2p". The combination of officer ID + salt creates a hash valid only now. In 10 minutes, salt becomes "8m4n2y3q" and the old hash is **explicitly expired and unqueryable**
-- **Expired hash reveals nothing:** If someone tries to verify the old hash tomorrow, the system returns "EXPIRED" — not "SUSPENDED" or other status. An expired hash just means "that salt window closed", providing zero information about the officer
+- **Each hash is temporal, not identifying:** The badge displays "PC Alex D 1332 + Salt: 7k3m9x2p". The combination of officer ID + salt creates a hash valid only now. In 10 minutes, salt becomes "8m4n2y3q" and the old hash is **unqueryable**
+- **Expired hash reveals nothing:** If someone tries to verify the old hash tomorrow, the system returns 404 (not found). A catch-all message explains hashes are time-bound and expired, providing zero information about the officer
 - **No tracking attacks:** Static hashes would allow building movement timelines:
   - "Hash X verified in Brixton at 2pm" + "Hash Y verified in Peckham at 3pm" = tracking one officer's movements
-  - With rotating salt: "Hash X expired at 2:10pm, unqueryable. Hash Y unrelated to Hash X (different salt window). No correlation possible."
-- **No roster scraping:** Criminals cannot build a list of valid officer hashes. Any hash they capture is worthless within 10 minutes. No way to enumerate department rosters by testing hashes
+  - With rotating salt: "Hash X returns 404 (expired). Hash Y unrelated to Hash X (different salt window). No correlation possible."
+- **No roster scraping or cloning:** Criminals cannot build a list of valid officer hashes. The salt changes with each scan, so even a cloned e-ink badge used by a fake officer within the same 10-minute window would display a different salt than what a citizen just scanned. No way to enumerate department rosters by testing hashes, and no way to re-use a captured hash for impersonation
 
 **Technical implementation:**
 - E-ink badge pairs with officer's phone via Bluetooth
 - Phone app maintains connection to force backend
 - Backend tracks valid (salt, officer_id) pairs in a **temporary, rotating registry** — not a persistent database
 - Salt updates pushed to badge every 10 minutes (or on movement threshold)
-- Badge displays new salt; backend marks new (salt, officer_id) as valid, **explicitly expires previous salt**
-- Backend returns "VALID" only if: current time is within the officer's shift window AND the queried salt is current (or recently expired within grace period)
-- Backend returns "EXPIRED" for old salts — no useful information about officer status, just that the salt window closed
+- Badge displays new salt; backend marks new (salt, officer_id) as valid, **removes previous salt entirely**
+- Backend returns verification data only if: the queried salt is current (or recently expired within grace period)
+- Backend returns 404 for expired or invalid salts, with a catch-all message explaining that hashes are time-bound — no information leakage about officer status
 - E-ink power draw: ~15mW per update, negligible between updates
 - Battery life: months with frequent updates; USB-C or wireless charging at station
 
 **Comparison to Static Hash Systems:**
 
-| Model | Hotel/Healthcare | Police E-Ink |
+| Model | Hotel | Police E-Ink |
 | :--- | :--- | :--- |
-| **Hash persistence** | Permanent (`/c/{hash}/index.html` forever) | Ephemeral (valid 10 minutes, then expired) |
+| **Hash persistence** | Permanent (`/c/{hash}/index.html` forever) | Ephemeral (valid 10 minutes, then 404) |
 | **Database model** | Static hash database indexed by SHA-256 | Transient validity registry, rotates every 10 min |
 | **Doxing risk** | Badge number unique per person; searchable in databases | Badge number + salt combination changes every 10 min; no persistent identifier |
 | **Tracking attacks** | Could correlate multiple verifications to same person | Salt rotation breaks any correlation across verification requests |
-| **Roster enumeration** | Possible (cycle through likely badge numbers/hashes) | Impossible (all hashes stale within 10 minutes) |
-| **Expired hash meaning** | "This document was revoked" (status information) | "That salt window closed" (time-based, meaningless) |
+| **Roster enumeration** | Possible (cycle through likely badge numbers/hashes) | Impossible (all hashes 404 within 10 minutes) |
+| **Expired hash response** | "This document was revoked" (status information) | 404 with catch-all message (no information leakage) |
 
 ## Data Verified
 
-Officer name, rank, badge number, photograph (via hash), department/precinct, current assignment, date of last background clearance, expiration date of ID.
+Officer identity, rank, role, and current assignment are verified through police department systems.
 
 **Document Types:**
 - **Officer ID Card:** Standard pocket identification.
 - **Warrant of Authority:** Formal document for plain-clothes/undercover operations.
 - **Special Task Force Credentials:** For multi-agency operations.
 
-## Data Visible After Verification
+## Data Visible After Successful Verification
 
-Shows the issuer domain (`met.police.uk`, `police.ny.gov`) and the officer's real-time standing.
+Shows the issuer domain (`met.police.uk`, `police.ny.gov`) confirming the officer's rank, role, and approximate live street location.
 
 **Verification returns:**
-- Officer's photo (for visual matching)
-- Current duty status
-- Current assignment/location (e.g., "On duty: Camden Borough")
-- Rank and warrant number
-
-**Status Indications:**
-- **Active Duty** — Officer is currently on shift in the indicated area.
-- **Off Duty** — Not currently on shift (legitimate officer, but not working now).
-- **On Leave** — Administrative or personal leave.
-- **Suspended** — **ALERT:** Police powers have been temporarily revoked.
-- **Retired/Inactive** — Person is no longer a sworn officer.
-- **Unknown** — Hash not found; high risk of impersonation.
+- Multiple officer photos for visual matching (including different expressions, e.g., formal, candid, grinning)
+- Photo of the verifier (citizen) as captured by the officer's body-worn video (BWV) camera at the moment of verification
+- Officer rank and role (e.g., "Detective Inspector, Traffic Division")
+- Current street-level assignment location (e.g., "Camden Borough" or coordinates with map)
 
 **Location Mismatch Alert:** If the officer claims to be working in Camden but verification shows assignment to Westminster, that's a red flag worth questioning.
+
+## Verification Status Outcomes
+
+- **Valid** — Officer's identity and authority are confirmed. The system does not report on-duty vs off-duty vs on-leave status; the fact that the e-ink badge is active and verifying means the officer is authorized to present it.
+- **Unknown** — Hash not found or does not match. This indicates the person is not an officer, or there's a transcription error. Suggestion: check the spelling of what is shown in your camera's Live Verify view, or ask the person to repeat the information on their badge.
 
 ---
 
@@ -166,11 +162,13 @@ Shows the issuer domain (`met.police.uk`, `police.ny.gov`) and the officer's rea
 
 The **Citizen (Public)** benefits from verification.
 
-**Traffic Stop Safety:** A woman driving alone at night is pulled over by an unmarked car with flashing lights. Before rolling down the window, she asks the officer to show their warrant card through the glass. She scans it and sees **"VERIFIED: PC Alex D 1332 — On duty: Traffic Division, Camden"** plus their photo. The photo matches the face at the window, giving her the confidence to comply.
+**Traffic Stop Safety:** A woman driving alone at night is pulled over by an unmarked car with flashing lights. Before rolling down the window, she asks the officer to show their warrant card through the glass. She scans it and sees **"VERIFIED: PC Alex D 1332 — Detective Inspector, Traffic Division"** with a location map showing "Camden Borough" and multiple photos. The face in the photos matches the officer at the window, giving her the confidence to comply.
 
 **Home Visit Verification:** A "Detective" knocks on a door claiming to be investigating a gas leak or a neighbor's crime. The homeowner verifies the credentials before unlocking the door, preventing a potential home invasion.
 
 **Accountability:** If an officer behaves unprofessionally, the citizen has a verified record of exactly which officer was on the scene, making complaints or commendations more accurate.
+
+For additional guidance on checking officer identity, read the [Metropolitan Police's advice on how to check an officer's identity](https://www.met.police.uk/advice/advice-and-information/fa/how-to-check-an-officers-identity/). This official guidance becomes exponentially more powerful when citizens can verify those credentials cryptographically—transforming a subjective visual check into objective, tamper-proof confirmation of the officer's rank, role, and assignment at the moment of encounter.
 
 ## Third-Party Use
 
@@ -244,11 +242,11 @@ Problem: Badge number uniquely identifies the officer and is easily cross-refere
 ```
 [Photo] Metropolitan Police
 Authorization: Traffic Enforcement
-Shift: On-Duty
+Salt: 7k3m9x2p
 verify:met.police.uk/officer
 ```
 - Warrant card displays: "PC Alex D" + photo (for identification)
-- OCR-to-hash verifies: "London Met officer, active duty, authorized for traffic enforcement, on-duty now"
+- OCR-to-hash verifies: "London Met officer, authorized for traffic enforcement, current assignment: Camden Borough"
 - Claim is issued by Metropolitan Police
 - Hash is computed from authority claim WITHOUT unique identifiers
 - Result: Citizen knows officer is authorized without gaining doxing material

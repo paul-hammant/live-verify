@@ -22,21 +22,18 @@ If you are buying a small business or investing in a private startup, you need t
   <div style="position: absolute; top: 10px; right: 10px; width: 40px; height: 40px; border-top: 2px solid #003366; border-right: 2px solid #003366;"></div>
   <div style="position: absolute; bottom: 10px; left: 10px; width: 40px; height: 40px; border-bottom: 2px solid #003366; border-left: 2px solid #003366;"></div>
   <div style="position: absolute; bottom: 10px; right: 10px; width: 40px; height: 40px; border-bottom: 2px solid #003366; border-right: 2px solid #003366;"></div>
-
-  <div style="text-align: center;">
+<div style="text-align: center;">
     <div style="font-size: 0.9em; letter-spacing: 2px; margin-bottom: 10px;">NUMBER <span style="font-weight: bold; font-size: 1.2em;">CS-1024</span></div>
     <div style="font-size: 2.5em; font-weight: bold; color: #003366; margin: 10px 0; font-family: 'Playfair Display', serif;">Acme Corp, Inc.</div>
     <div style="font-size: 0.9em; font-style: italic;">Incorporated under the laws of the State of Delaware</div>
-    
-    <div style="margin: 30px 0; font-size: 1.1em; line-height: 1.8;">
+<div style="margin: 30px 0; font-size: 1.1em; line-height: 1.8;">
       This Certifies that <span style="font-weight: bold; font-size: 1.2em; border-bottom: 1px solid #000;">THE WAYNE FAMILY TRUST</span> is the owner of
       <br>
       <span style="font-weight: bold; font-size: 1.4em; border-bottom: 1px solid #000; color: #003366;"><span data-bracket="start" data-for="stock">[</span>ONE THOUSAND (1,000)</span>
       <br>
       Fully Paid and Non-Assessable Shares of Common Stock of the above named Corporation.
     </div>
-
-    <div style="display: flex; justify-content: space-between; margin-top: 50px; align-items: flex-end;">
+<div style="display: flex; justify-content: space-between; margin-top: 50px; align-items: flex-end;">
       <div style="text-align: center; width: 40%;">
         <div style="border-bottom: 1px solid #000; margin-bottom: 5px; font-family: cursive; font-size: 1.2em;">Alice Smith</div>
         <div style="font-size: 0.8em; text-transform: uppercase;">Secretary</div>
@@ -50,8 +47,7 @@ If you are buying a small business or investing in a private startup, you need t
       </div>
     </div>
   </div>
-
-  <div data-verify-line="stock" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="stock" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
     title="Demo only: Carta/transfer agents don't yet offer verification&#10;endpoints, so this is illustrative">
     verify:carta.com/certs/v/CS1024 <span data-bracket="end" data-for="stock">]</span>
   </div>

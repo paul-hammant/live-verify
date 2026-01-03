@@ -20,14 +20,12 @@ The problem is that "Volunteer Certificates" are among the easiest documents to 
       <div style="font-size: 1.6em; font-weight: bold; color: #2e7d32; letter-spacing: 1px;">CERTIFICATE OF SERVICE</div>
       <div style="font-size: 0.9em; font-style: italic; color: #666;">AMERICA'S HARVEST FOOD BANK</div>
     </div>
-
-    <div style="margin: 30px 0;">
+<div style="margin: 30px 0;">
       <div style="font-size: 1.1em;">This certifies that</div>
       <div style="font-size: 1.8em; font-weight: bold; margin: 10px 0; color: #333;"><span data-bracket="start" data-for="volunteer">[</span>SARAH J. JENKINS</div>
       <div style="font-size: 1.1em;">has contributed their time and talent to the community.</div>
     </div>
-
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 30px 0; background: #f9f9f9; padding: 20px; border-radius: 4px;">
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 30px 0; background: #f9f9f9; padding: 20px; border-radius: 4px;">
       <div style="text-align: left; font-size: 0.9em;">
         <strong>Project:</strong> Warehouse Logistics<br>
         <strong>Period:</strong> Summer 2026<br>
@@ -39,13 +37,11 @@ The problem is that "Volunteer Certificates" are among the easiest documents to 
         <div style="font-size: 0.8em; font-weight: bold;">HOURS</div>
       </div>
     </div>
-
-    <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
       <div style="width: 150px; border-top: 1px solid #000; padding-top: 5px; font-size: 0.8em;">Executive Director</div>
       <div style="width: 100px; height: 100px; border: 2px solid #2e7d32; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; color: #2e7d32; transform: rotate(-10deg);">VERIFIED<br>SERVICE</div>
     </div>
-
-    <div data-verify-line="volunteer" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="volunteer" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Non-profits don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:americasharvest.org/v/992288-SJJ <span data-bracket="end" data-for="volunteer">]</span>
     </div>

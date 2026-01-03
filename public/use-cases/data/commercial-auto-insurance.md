@@ -26,15 +26,12 @@ Fraud is common: fleet owners often "delete" expensive-to-insure trucks from the
       <div style="font-size: 0.8em;">Policy #: CA-992288-26</div>
     </div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <h2 style="text-align: center; color: #004d40; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Proof of Commercial Insurance</h2>
-
-    <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.9em; line-height: 1.6; color: #333;">
       <p><strong>Insured:</strong> <span data-bracket="start" data-for="com-auto">[</span>Lightning Logistics, LLC<br>
       <strong>DOT Number:</strong> 1234567</p>
-
-      <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
         <tr style="background: #e8f5e9; border-bottom: 2px solid #004d40;">
           <th style="text-align: left; padding: 8px;">Vehicle / VIN</th>
           <th style="text-align: right; padding: 8px;">Liability Limit</th>
@@ -48,12 +45,10 @@ Fraud is common: fleet owners often "delete" expensive-to-insure trucks from the
           <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 1,000,000 CSL</td>
         </tr>
       </table>
-
-      <p><strong>Coverage Includes:</strong> MCS-90 Endorsement, Hired & Non-Owned Auto.</p>
+<p><strong>Coverage Includes:</strong> MCS-90 Endorsement, Hired & Non-Owned Auto.</p>
       <p><strong>Policy Period:</strong> Jan 01, 2026 to Jan 01, 2027</p>
     </div>
-
-    <div data-verify-line="com-auto" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="com-auto" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Progressive Commercial doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:progressive.com/commercial/v/CA992288 <span data-bracket="end" data-for="com-auto">]</span>
     </div>

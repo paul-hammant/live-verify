@@ -26,28 +26,23 @@ This certificate is the "License to Sell" to big retailers. Shady factories that
       <div style="font-size: 0.8em;">Edition 9.0</div>
     </div>
   </div>
-
-  <div style="padding: 30px; text-align: center;">
+<div style="padding: 30px; text-align: center;">
     <h2 style="margin: 0; color: #333; font-size: 1.4em;">CERTIFICATE OF REGISTRATION</h2>
-    
-    <div style="font-size: 1.1em; line-height: 1.6; color: #333; margin: 25px 0;">
+<div style="font-size: 1.1em; line-height: 1.6; color: #333; margin: 25px 0;">
       This is to certify that<br>
       <span data-bracket="start" data-for="food-safe">[</span><strong>APEX FOOD PROCESSING, LLC</strong><br>
       123 Industrial Way, Chicago, IL 60601
     </div>
-
-    <div style="background: #f9f9f9; padding: 15px; border: 1px solid #eee; margin-bottom: 25px; text-align: left; font-size: 0.9em;">
+<div style="background: #f9f9f9; padding: 15px; border: 1px solid #eee; margin-bottom: 25px; text-align: left; font-size: 0.9em;">
       <strong>Scope:</strong> Processing of Perishable Prepared Foods (Ready-to-Eat).<br>
       <strong>Audit Rating:</strong> EXCELLENT (98/100)<br>
       <strong>Certification Body:</strong> SCS Global Services
     </div>
-
-    <div style="font-size: 0.8em; color: #777;">
+<div style="font-size: 0.8em; color: #777;">
       <strong>Certificate #:</strong> SQF-99228877<br>
       <strong>Valid Until:</strong> March 15, 2027
     </div>
-
-    <div data-verify-line="food-safe" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="food-safe" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: SQF doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:sqfi.com/v/SQF99228877 <span data-bracket="end" data-for="food-safe">]</span>
     </div>

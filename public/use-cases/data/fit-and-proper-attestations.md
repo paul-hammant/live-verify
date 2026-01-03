@@ -24,19 +24,16 @@ Under regimes like SM&CR (UK) or FINRA (US), firms must annually attest that sta
     <strong>Role:</strong> Portfolio Manager (Certification Function CF30)<br>
     <strong>Firm:</strong> Albion Asset Management<br>
     <strong>Assessment Date:</strong> March 1, 2026</p>
-
-    <div style="background: #f0f4f8; padding: 15px; margin: 15px 0; border-left: 3px solid #003366;">
+<div style="background: #f0f4f8; padding: 15px; margin: 15px 0; border-left: 3px solid #003366;">
       <p style="margin: 0;"><strong>The firm certifies that this individual:</strong></p>
       <p style="margin: 10px 0 0;">✓ Meets the requirements for honesty, integrity, and reputation</p>
       <p style="margin: 5px 0 0;">✓ Has the competence and capability for their role</p>
       <p style="margin: 5px 0 0;">✓ Is financially sound (no undisclosed insolvency issues)</p>
       <p style="margin: 5px 0 0;">✓ Has completed required training and CPD</p>
     </div>
-
-    <p style="font-size: 0.85em; color: #666;">Certified by: HR Director & Compliance Officer<br>
+<p style="font-size: 0.85em; color: #666;">Certified by: HR Director & Compliance Officer<br>
     Valid until: February 28, 2027 (annual renewal required)</p>
-
-    <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
+<div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="fitandproperattestat" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
         verify:albion-am.com/smcr/SM-2026-0301 <span data-bracket="end" data-for="fitandproperattestat">]</span>

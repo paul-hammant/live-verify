@@ -19,8 +19,7 @@ These documents are the "Trigger for Action" in high-value commerce. A title com
     <div style="font-weight: bold; font-size: 1.3em;">GOLIATH NATIONAL BANK</div>
     <div style="font-size: 0.8em; opacity: 0.9;">OUTGOING WIRE TRANSFER NOTIFICATION</div>
   </div>
-
-  <div style="font-size: 0.9em; line-height: 1.4; color: #000;">
+<div style="font-size: 0.9em; line-height: 1.4; color: #000;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
       <div>
         <strong>Reference (IMAD):</strong><br>
@@ -31,25 +30,21 @@ These documents are the "Trigger for Action" in high-value commerce. A title com
         15 MAR 2026
       </div>
     </div>
-
-    <div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin-bottom: 20px;">
+<div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin-bottom: 20px;">
       <div style="display: flex; justify-content: space-between; font-weight: bold; font-size: 1.1em;">
         <span>WIRE AMOUNT:</span>
         <span>$ 1,250,000.00 USD</span>
       </div>
     </div>
-
-    <p><strong>Originator:</strong> MEGACORP HOLDINGS LLC<br>
+<p><strong>Originator:</strong> MEGACORP HOLDINGS LLC<br>
     <strong>Beneficiary:</strong> GLOBAL SUPPLY PARTNERS LTD<br>
     <strong>Beneficiary Bank:</strong> HSBC LONDON (SC: 40-02-50)<br>
     <strong>Account:</strong> ************8842</p>
-
-    <div style="border: 1px solid #000; padding: 10px; text-align: center; font-weight: bold; margin-top: 20px;">
+<div style="border: 1px solid #000; padding: 10px; text-align: center; font-weight: bold; margin-top: 20px;">
       STATUS: COMPLETED / FEDWIRE CONFIRMED
     </div>
   </div>
-
-  <div style="padding: 20px; background: #fff; border-top: 1px dashed #999; margin-top: 30px; text-align: center;">
+<div style="padding: 20px; background: #fff; border-top: 1px dashed #999; margin-top: 30px; text-align: center;">
     <div data-verify-line="wire" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: Banks don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:wires.goliathbank.com/v/20260315A8844 <span data-bracket="end" data-for="wire">]</span>

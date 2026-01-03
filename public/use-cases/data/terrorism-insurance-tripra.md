@@ -19,8 +19,7 @@ These documents are the "Proof of Backstop." Fraud is common in "High-Risk Urban
     <div style="font-weight: bold; font-size: 1.4em; color: #b71c1c;">ZURICH AMERICAN INSURANCE</div>
     <div style="font-size: 0.9em; text-transform: uppercase; letter-spacing: 1px;">TRIPRA Disclosure & Policy Summary</div>
   </div>
-
-  <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px;">
       <div>
         <strong>Insured:</strong> <span data-bracket="start" data-for="tripra">[</span>GOLIATH PLAZA HOLDINGS LLC<br>
@@ -31,8 +30,7 @@ These documents are the "Proof of Backstop." Fraud is common in "High-Risk Urban
         <strong>Term:</strong> 2026-2027
       </div>
     </div>
-
-    <div style="background: #fdfdfd; border: 1px solid #ccc; padding: 20px; margin: 20px 0;">
+<div style="background: #fdfdfd; border: 1px solid #ccc; padding: 20px; margin: 20px 0;">
       <h4 style="margin-top: 0; color: #b71c1c; border-bottom: 1px solid #ddd; padding-bottom: 5px;">VERIFIED TERRORISM COVERAGE</h4>
       <table style="width: 100%; font-size: 0.9em;">
         <tr>
@@ -49,11 +47,9 @@ These documents are the "Proof of Backstop." Fraud is common in "High-Risk Urban
         </tr>
       </table>
     </div>
-
-    <p style="font-size: 0.85em; font-style: italic;">"In accordance with federal law, you are hereby notified that the amount of your premium that is attributable to coverage for certified acts of terrorism is $42,500.00."</p>
+<p style="font-size: 0.85em; font-style: italic;">"In accordance with federal law, you are hereby notified that the amount of your premium that is attributable to coverage for certified acts of terrorism is $42,500.00."</p>
   </div>
-
-  <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div style="width: 80px; height: 80px; border: 2px solid #b71c1c; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; text-align: center; color: #b71c1c;">TRIPRA<br>VERIFIED</div>
     <div data-verify-line="tripra" style="flex-grow: 1; margin-left: 20px; border-top: 1px dashed #999; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; text-align: center; font-weight: bold;"
         title="Demo only: Specialty insurers don't yet offer verification&#10;endpoints, so this is illustrative">

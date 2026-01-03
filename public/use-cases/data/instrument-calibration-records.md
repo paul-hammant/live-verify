@@ -13,13 +13,11 @@ furtherDerivations: 1
     <div style="font-weight: bold; font-size: 1.2em;">QUANTUM ANALYTICS LABS</div>
     <div style="font-size: 0.8em;">Metrology & Calibration Services</div>
   </div>
-
-  <div style="font-size: 0.9em; line-height: 1.4; color: #333;">
+<div style="font-size: 0.9em; line-height: 1.4; color: #333;">
     <p><strong>Instrument:</strong> <span data-bracket="start" data-for="sci-cal">[</span>Mass Spectrometer (Agilent 6470B)<br>
     <strong>Serial #:</strong> AG-99228877-X<br>
     <strong>Asset ID:</strong> QL-402</p>
-
-    <div style="background: #f5f5f5; border: 1px solid #ccc; padding: 15px; margin: 15px 0;">
+<div style="background: #f5f5f5; border: 1px solid #ccc; padding: 15px; margin: 15px 0;">
       <table style="width: 100%; font-size: 0.9em;">
         <tr>
           <td><strong>Calibration Date:</strong></td>
@@ -35,19 +33,16 @@ furtherDerivations: 1
         </tr>
       </table>
     </div>
-
-    <p><strong>Technician:</strong> Dr. Aris Vrettos, Ph.D.<br>
+<p><strong>Technician:</strong> Dr. Aris Vrettos, Ph.D.<br>
     <strong>Environment:</strong> 21.2°C / 42% Humidity</p>
   </div>
-
-  <div style="margin-top: 30px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 30px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div style="width: 50%; border-top: 1px solid #000; padding-top: 5px; font-style: italic; font-size: 0.8em;">Certified Digital Signature</div>
     <div style="text-align: right; font-size: 0.8em; color: #777;">
       Log ID: CAL-9928-X
     </div>
   </div>
-
-  <div data-verify-line="sci-cal" style="border-top: 1px dashed #999; margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="sci-cal" style="border-top: 1px dashed #999; margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
     title="Demo only: Quantum Labs doesn't yet offer verification&#10;endpoints, so this is illustrative">
     verify:quantum-labs.com/calibration/v/AG992288 <span data-bracket="end" data-for="sci-cal">]</span>
   </div>

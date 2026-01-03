@@ -21,19 +21,16 @@ Because the stakes are so high, every crane must be professionally inspected eve
     <h2 style="margin: 0; text-transform: uppercase;">HEAVY LIFT INSPECTION SERVICES</h2>
     <div style="font-size: 0.8em; font-weight: bold;">CERTIFIED ACCREDITED CRANE INSPECTOR</div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="text-align: center; border-bottom: 2px solid #fbc02d; padding-bottom: 10px; margin-bottom: 20px;">
       <h3 style="margin: 0; color: #333;">ANNUAL INSPECTION CERTIFICATE</h3>
       <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;">Certificate #: <span data-bracket="start" data-for="crane">[</span>C-992288-26</div>
     </div>
-
-    <div style="font-size: 0.9em; line-height: 1.5; color: #333;">
+<div style="font-size: 0.9em; line-height: 1.5; color: #333;">
       <p><strong>Equipment:</strong> Liebherr LTM 11200-9.1 (Mobile Crane)<br>
       <strong>Serial Number:</strong> LTM-99887766<br>
       <strong>Owner:</strong> Mega-Lift Construction, LLC</p>
-
-      <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
         <tr>
           <td style="border: 1px solid #ccc; padding: 8px;"><strong>Max Capacity:</strong></td>
           <td style="border: 1px solid #ccc; padding: 8px;">1,200 Metric Tons</td>
@@ -47,19 +44,16 @@ Because the stakes are so high, every crane must be professionally inspected eve
           <td style="border: 1px solid #ccc; padding: 8px;">D. Miller (NCCCO #9982)</td>
         </tr>
       </table>
-
-      <p style="background: #fff9c4; padding: 10px; border-radius: 4px; font-weight: bold; text-align: center; color: #333;">
+<p style="background: #fff9c4; padding: 10px; border-radius: 4px; font-weight: bold; text-align: center; color: #333;">
         INSPECTION DATE: March 15, 2026<br>
         NEXT DUE DATE: March 15, 2027
       </p>
     </div>
-
-    <div style="margin-top: 25px; display: flex; align-items: center; justify-content: center; border: 1px solid #fbc02d; padding: 10px; border-radius: 4px; background: #fffde7;">
+<div style="margin-top: 25px; display: flex; align-items: center; justify-content: center; border: 1px solid #fbc02d; padding: 10px; border-radius: 4px; background: #fffde7;">
       <div style="width: 50px; height: 50px; border: 2px solid #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; transform: rotate(-5deg);">NCCCO</div>
       <div style="margin-left: 15px; font-size: 0.85em; font-weight: bold;">"SAFETY FIRST - LIFTING EXCELLENCE"</div>
     </div>
-
-    <div data-verify-line="crane" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="crane" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Inspection firm doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:heavylift-inspections.com/v/C992288 <span data-bracket="end" data-for="crane">]</span>
     </div>

@@ -13,32 +13,27 @@ furtherDerivations: 1
     <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">LEAD PAINT DISCLOSURE</h2>
     <div style="font-size: 0.8em; opacity: 0.8;">In compliance with U.S. EPA / HUD Regulations</div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
       <h3 style="margin: 0; color: #333;">DISCLOSURE OF INFORMATION</h3>
       <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;">Property: <span data-bracket="start" data-for="lead">[</span>123 Historic Street, Boston, MA</div>
     </div>
-
-    <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
       <p><strong>Seller/Lessor's Disclosure:</strong></p>
       <div style="background: #f9f9f9; padding: 10px; border: 1px solid #ddd; margin-bottom: 15px;">
         [ ] Presence of lead-based paint/hazards is known.<br>
         [X] <strong>Seller has no knowledge of lead-based paint/hazards in the housing.</strong>
       </div>
-
-      <p><strong>Records and Reports available to the Seller:</strong></p>
+<p><strong>Records and Reports available to the Seller:</strong></p>
       <div style="background: #f9f9f9; padding: 10px; border: 1px solid #ddd;">
         [ ] Seller has provided all available records.<br>
         [X] <strong>Seller has no reports or records pertaining to lead-based paint.</strong>
       </div>
     </div>
-
-    <div style="margin-top: 25px; border: 1px solid #ccc; padding: 10px; font-size: 0.8em; color: #555; background: #fafafa; font-style: italic; text-align: center;">
+<div style="margin-top: 25px; border: 1px solid #ccc; padding: 10px; font-size: 0.8em; color: #555; background: #fafafa; font-style: italic; text-align: center;">
       Verified compliant with the Residential Lead-Based Paint Hazard Reduction Act of 1992.
     </div>
-
-    <div data-verify-line="lead" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+<div data-verify-line="lead" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: EPA doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:epa.gov/lead/v/MA-123-HISTORIC <span data-bracket="end" data-for="lead">]</span>
     </div>

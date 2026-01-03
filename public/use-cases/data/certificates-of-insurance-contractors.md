@@ -21,8 +21,7 @@ COI fraud is rampant. Contractors often buy a policy for one day, print the COI,
     <div style="font-weight: bold; font-size: 1.1em;">ACORD<sub>&reg;</sub> 25</div>
     <div style="font-size: 0.8em; font-weight: bold;">CERTIFICATE OF LIABILITY INSURANCE</div>
   </div>
-
-  <div style="padding: 20px;">
+<div style="padding: 20px;">
     <div style="display: flex; margin-bottom: 15px;">
       <div style="width: 50%; border: 1px solid #000; padding: 5px; font-size: 0.8em;">
         <strong>PRODUCER:</strong><br>
@@ -36,8 +35,7 @@ COI fraud is rampant. Contractors often buy a policy for one day, print the COI,
         Oakland, CA 94621
       </div>
     </div>
-
-    <table style="width: 100%; border-collapse: collapse; font-size: 0.75em; border: 1px solid #000;">
+<table style="width: 100%; border-collapse: collapse; font-size: 0.75em; border: 1px solid #000;">
       <tr style="background: #f5f5f5; border-bottom: 1px solid #000;">
         <th style="padding: 2px; text-align: left; border-right: 1px solid #000;">Type of Insurance</th>
         <th style="padding: 2px; text-align: left; border-right: 1px solid #000;">Policy Number</th>
@@ -54,14 +52,12 @@ COI fraud is rampant. Contractors often buy a policy for one day, print the COI,
         <td style="padding: 2px; text-align: right;">Statutory</td>
       </tr>
     </table>
-
-    <div style="margin-top: 15px; border: 1px solid #000; padding: 5px; font-size: 0.8em;">
+<div style="margin-top: 15px; border: 1px solid #000; padding: 5px; font-size: 0.8em;">
       <strong>CERTIFICATE HOLDER:</strong><br>
       The City of Oakland<br>
       1 Frank Ogawa Plaza, Oakland, CA
     </div>
-
-    <div data-verify-line="coi" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.7em; color: #555; text-align: center;"
+<div data-verify-line="coi" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.7em; color: #555; text-align: center;"
       title="Demo only: Insurer doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:marsh.com/coi/v/99887766 <span data-bracket="end" data-for="coi">]</span>
     </div>

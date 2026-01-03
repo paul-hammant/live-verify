@@ -29,34 +29,28 @@ This paper is the #1 tool for preventing "Medical Errors" when a patient moves t
       <div style="font-size: 0.8em;">Patient MRN: 998877-X</div>
     </div>
   </div>
-
-  <div style="padding: 25px;">
+<div style="padding: 25px;">
     <h3 style="margin-top: 0; color: #0277bd; border-bottom: 2px solid #0277bd; padding-bottom: 5px;">DISCHARGE INSTRUCTIONS</h3>
-
-    <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.9em; line-height: 1.6; color: #333;">
       <p><strong>Patient:</strong> <span data-bracket="start" data-for="discharge">[</span><strong>WAYNE, BRUCE</strong> (DOB: 02/19/1972)<br>
       <strong>Admission Date:</strong> March 10, 2026<br>
       <strong>Discharge Date:</strong> March 15, 2026</p>
-
-      <div style="background: #e1f5fe; padding: 15px; border: 1px solid #b3e5fc; margin: 15px 0;">
+<div style="background: #e1f5fe; padding: 15px; border: 1px solid #b3e5fc; margin: 15px 0;">
         <strong>NEW MEDICATIONS:</strong>
         <ul style="margin: 5px 0 0 20px; padding: 0;">
           <li>Lisinopril 10mg - 1 tab daily (Blood Pressure)</li>
           <li>Atorvastatin 20mg - 1 tab at bedtime (Cholesterol)</li>
         </ul>
       </div>
-
-      <p><strong>Follow-up Care:</strong> Primary Care Physician within 7 days. Physical therapy 2x weekly.</p>
+<p><strong>Follow-up Care:</strong> Primary Care Physician within 7 days. Physical therapy 2x weekly.</p>
     </div>
-
-    <div style="margin-top: 20px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="margin-top: 20px; display: flex; justify-content: space-between; align-items: flex-end;">
       <div style="border-top: 1px solid #000; width: 200px; padding-top: 5px; font-style: italic; font-size: 0.85em;">Attending: Dr. Leslie Thompkins</div>
       <div style="text-align: right; font-size: 0.8em; color: #777;">
         Verified via Epic MyChart
       </div>
     </div>
-
-    <div data-verify-line="discharge" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
+<div data-verify-line="discharge" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Cedars-Sinai doesn't yet offer verification&#10;endpoints, so this is illustrative">
       verify:cedars-sinai.org/discharge/v/998877X <span data-bracket="end" data-for="discharge">]</span>
     </div>

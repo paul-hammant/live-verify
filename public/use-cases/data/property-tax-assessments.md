@@ -19,8 +19,7 @@ These documents are "Financial Anchors." Lenders use them to calculate "Escrow R
     <div style="font-weight: bold; font-size: 1.3em; text-transform: uppercase;">Office of the County Assessor</div>
     <div style="font-size: 1em; letter-spacing: 1px;">NOTICE OF AD VALOREM TAX ASSESSMENT</div>
   </div>
-
-  <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px;">
       <div>
         <strong>Property Index Number (PIN):</strong><br>
@@ -31,11 +30,9 @@ These documents are "Financial Anchors." Lenders use them to calculate "Escrow R
         <strong>Mailing Date:</strong> March 15, 2026
       </div>
     </div>
-
-    <p><strong>Property Owner:</strong> ROBERT & MARY SMITH TRUST<br>
+<p><strong>Property Owner:</strong> ROBERT & MARY SMITH TRUST<br>
     <strong>Address:</strong> 123 MAPLE STREET, SPRINGFIELD, USA</p>
-
-    <div style="margin: 25px 0; border: 2px solid #333; padding: 0;">
+<div style="margin: 25px 0; border: 2px solid #333; padding: 0;">
       <table style="width: 100%; border-collapse: collapse; text-align: center;">
         <tr style="background: #eee; border-bottom: 1px solid #000;">
           <th style="padding: 10px; border-right: 1px solid #000;">Classification</th>
@@ -49,11 +46,9 @@ These documents are "Financial Anchors." Lenders use them to calculate "Escrow R
         </tr>
       </table>
     </div>
-
-    <p style="font-size: 0.85em; font-style: italic;">"The taxable value above represents the assessed value minus any applicable exemptions. This assessment is used to calculate your final tax bill."</p>
+<p style="font-size: 0.85em; font-style: italic;">"The taxable value above represents the assessed value minus any applicable exemptions. This assessment is used to calculate your final tax bill."</p>
   </div>
-
-  <div style="margin-top: 40px; border-top: 1px dashed #999; padding-top: 15px; text-align: center;">
+<div style="margin-top: 40px; border-top: 1px dashed #999; padding-top: 15px; text-align: center;">
     <div data-verify-line="tax-assess" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: County assessors don't yet offer verification&#10;endpoints, so this is illustrative">
       verify:springfieldassessor.gov/v/PIN1442992288 <span data-bracket="end" data-for="tax-assess">]</span>

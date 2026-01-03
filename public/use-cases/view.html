@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Use Case - OCR Verification</title>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="../formatShowcaseInjector.js"></script>
     <style>
         * {
             margin: 0;
@@ -264,6 +265,43 @@
                     const contentEl = document.getElementById('content');
                     contentEl.classList.remove('loading');
                     contentEl.innerHTML = html;
+
+                    // Parse format preferences from frontmatter
+                    let formats = ['gmail', 'pdf', 'email-attachment']; // default formats
+                    if (meta.showFormats) {
+                        try {
+                            // Parse JSON array format: ["gmail", "pdf", "whatsapp"]
+                            if (meta.showFormats.startsWith('[')) {
+                                formats = JSON.parse(meta.showFormats);
+                            } else {
+                                // Parse YAML format: gmail, pdf, whatsapp
+                                formats = meta.showFormats.split(',').map(f => f.trim().toLowerCase());
+                            }
+                        } catch (e) {
+                            console.warn('Failed to parse showFormats:', e);
+                        }
+                    } else {
+                        // Parse individual format flags: gmail: yes, pdf: yes, etc.
+                        const availableFormats = ['gmail', 'pdf', 'email-attachment', 'sms', 'whatsapp', 'discord'];
+                        formats = availableFormats.filter(fmt => {
+                            const value = meta[fmt];
+                            return value && (value.toLowerCase() === 'yes' || value.toLowerCase() === 'true');
+                        });
+                        // Maintain order if any found
+                        if (formats.length === 0) {
+                            formats = ['gmail', 'pdf', 'email-attachment']; // fallback to defaults
+                        }
+                    }
+
+                    // Set format-showcase div data attribute
+                    const showcase = contentEl.querySelector('[data-format-showcase]');
+                    if (showcase) {
+                        showcase.setAttribute('data-format-showcase', JSON.stringify(formats));
+                        // Re-initialize format showcase with new formats
+                        if (window.initFormatShowcase) {
+                            window.initFormatShowcase();
+                        }
+                    }
 
                     // Initialize verify hover effects
                     initVerifyHover();
