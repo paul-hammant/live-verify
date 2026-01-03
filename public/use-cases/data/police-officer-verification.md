@@ -132,6 +132,36 @@ Shows the issuer domain (`met.police.uk`, `police.ny.gov`) and the officer's rea
 
 **Location Mismatch Alert:** If the officer claims to be working in Camden but verification shows assignment to Westminster, that's a red flag worth questioning.
 
+---
+
+## When to Challenge ID: Context Matters
+
+**Verification is appropriate when:**
+- Officer is requesting **consent to search** your home or property (you have time and legal right to verify)
+- Officer claims to have a **warrant** (they can show the warrant; you can verify the officer serving it is real)
+- Officer is conducting an **investigative interview** at your door (non-emergency, you control whether to open door)
+- Officer is responding to **incident you reported** (you can verify legitimate responder, reduces risk of fake police impostor)
+- **Time permits** — the situation is non-urgent and you have seconds to verify via phone/camera
+
+**Verification is NOT appropriate when:**
+- **Active emergency/threat situation** in progress ("Which way did the guy with the shotgun go?")
+- Officer is responding to **urgent call** (medical emergency, assault in progress, fire, traffic accident)
+- Verification would **materially delay emergency response** to life-threatening situation
+- Officer is clearly engaged in **immediate protective action** (getting victim to safety, securing scene, medical aid)
+- Situation requires **instant compliance** for officer or public safety
+
+**Why the distinction matters:**
+
+*Legal/Consent Context:* If an officer is asking for consent to search, you have the legal right to assert your rights—which means you have time to verify. Officers requesting consent understand they're asking you to waive rights; verification before consenting is entirely appropriate and protected.
+
+*Emergency Context:* If an officer is responding to "shots fired" or "medical emergency," verification delays response. An officer in that context shouldn't be waiting at your door while you check a phone app; they should be engaging the threat or providing aid. Challenging ID in this context creates liability for you and delay for the officer.
+
+*Legal Protection:* Verification creates documented proof that you cooperated with a *verified* officer. If something goes wrong later, you have timestamped evidence you complied with a real officer, not an impostor. This protects you.
+
+*Operational Reality:* Officers in high-threat scenarios don't have time to wait at the door. They're moving urgently. If an officer is standing at your door calmly explaining their purpose, that's when verification is appropriate. If they're breaching, securing a scene, or responding to active threat—they shouldn't wait.
+
+---
+
 ## Second-Party Use
 
 The **Citizen (Public)** benefits from verification.
