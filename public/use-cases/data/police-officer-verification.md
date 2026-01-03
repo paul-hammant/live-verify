@@ -241,6 +241,13 @@ verify:met.police.uk/officer
 - Verification confirms authority without exposing officer to retaliation risk
 - No conflict between citizen safety (verification needed) and officer safety (identity protection needed)
 
+**For Name Privacy & Reducing Doxing Surface:**
+- Officers can choose to display initials or common-name variants on their warrant card ("Officer A" instead of "Arpan", "Chris" instead of "Christopher") while internal systems maintain full records
+- Photo remains for identification; minimal name information reduces doxing attack surface
+- Ethnic names or uncommon names become less identifiable, reducing targeted harassment campaigns
+- Department can issue badges with officer-chosen display names without affecting verification integrity (backend knows the true mapping)
+- Example: Badge shows "Officer A. 1332" (initials only) + rotating salt; verification returns "London Met officer, active duty, authorized for traffic enforcement" with no name correlation possible
+
 **For Undercover Operations:**
 - Undercover officers can verify authority without exposing their identity or assignment
 - Warrant card can show generic "Authorized Investigator" role without specifics that would compromise undercover status
