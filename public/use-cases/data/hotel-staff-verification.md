@@ -5,6 +5,7 @@ volume: "Large"
 retention: "Stay + 1-3 years (incident records)"
 slug: "hotel-staff-verification"
 tags: ["hotel-safety", "staff-verification", "personal-safety", "airbnb-host-verification", "room-service-security", "hospitality-security", "home-security"]
+derivations: 1
 ---
 
 ## What is a Hotel Staff Badge?

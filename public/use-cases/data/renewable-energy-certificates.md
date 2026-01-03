@@ -5,6 +5,7 @@ volume: "Medium"
 retention: "3-7 years (compliance / carbon audit)"
 slug: "renewable-energy-certificates"
 tags: ["renewable-energy", "rec", "green-power", "carbon-offset", "esg-reporting", "energy-trading", "sustainability-audit", "greenwashing-prevention"]
+derivations: 1
 ---
 
 ## What is a Renewable Energy Certificate?

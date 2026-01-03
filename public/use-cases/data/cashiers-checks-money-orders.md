@@ -5,6 +5,7 @@ volume: "Small"
 retention: "3-7 years (payment disputes)"
 slug: "cashiers-checks-money-orders"
 tags: ["banking", "payment", "cashiers-check", "money-order", "fraud-prevention", "real-estate-closing", "guaranteed-funds"]
+derivations: 1
 ---
 
 ## What is a Cashier's Check?

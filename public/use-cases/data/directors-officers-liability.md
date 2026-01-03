@@ -5,6 +5,7 @@ volume: "Small"
 retention: "Policy term + 10-20 years (claims)"
 slug: "directors-officers-liability"
 tags: ["d-and-o-insurance", "executive-liability", "securities-litigation", "corporate-governance", "ipo-insurance", "risk-management", "commercial-insurance"]
+derivations: 1
 ---
 
 ## What is D&O Insurance?

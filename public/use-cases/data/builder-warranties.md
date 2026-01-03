@@ -5,6 +5,7 @@ volume: "Very Small"
 retention: "10-20 years (warranty period)"
 slug: "builder-warranties"
 tags: ["real-estate", "home-warranty", "new-construction", "structural-warranty", "builder", "homeowner"]
+derivations: 1
 ---
 
 ## What is a Builder Warranty?

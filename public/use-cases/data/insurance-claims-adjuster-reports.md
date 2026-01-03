@@ -5,6 +5,7 @@ volume: "Medium"
 retention: "Claim term + 10 years"
 slug: "insurance-claims-adjuster-reports"
 tags: ["claims-adjudication", "damage-assessment", "insurance-adjuster", "claims-audit", "liability-report", "settlement-evidence", "xactimate-verified"]
+derivations: 1
 ---
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #0d47a1; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">

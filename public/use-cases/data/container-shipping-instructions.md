@@ -5,6 +5,7 @@ volume: "Large"
 retention: "Shipment + 3-7 years"
 slug: "container-shipping-instructions"
 tags: ["container", "shipping", "instructions", "logistics", "transportation", "booking-confirmation"]
+derivations: 1
 ---
 
 ## What are Shipping Instructions?

@@ -5,6 +5,7 @@ volume: "Small"
 retention: "Permanent (legal status)"
 slug: "marriage-divorce-documents"
 tags: ["marriage-certificate", "divorce-decree", "civil-status", "family-law", "vital-records", "name-change", "probate-documents", "immigration-proof"]
+derivations: 1
 ---
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 3px double #1a365d; background: #fdfcf0; padding: 40px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); border-radius: 4px;">

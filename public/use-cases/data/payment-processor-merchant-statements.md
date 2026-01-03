@@ -5,6 +5,7 @@ volume: "Very Large"
 retention: "7-10 years (tax / financial audit lifecycle)"
 slug: "payment-processor-merchant-statements"
 tags: ["stripe", "paypal", "square", "merchant-statement", "payment-processing", "ecommerce-fraud", "business-lending", "revenue-verification"]
+derivations: 1
 ---
 
 ## What is a Merchant Statement?

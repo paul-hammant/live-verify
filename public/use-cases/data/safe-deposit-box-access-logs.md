@@ -5,6 +5,7 @@ volume: "Small"
 retention: "Access + 10-20 years (estate lifecycle / statute of limitations)"
 slug: "safe-deposit-box-access-logs"
 tags: ["banking", "safe-deposit-box", "access-log", "probate", "estate-dispute", "audit-trail", "physical-security", "bank-officer"]
+derivations: 1
 ---
 
 ## What is a Safe Deposit Box Access Log?

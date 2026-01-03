@@ -5,6 +5,7 @@ volume: "Medium-Large"
 retention: "7-10 years (proof of shipment / statute of limitations)"
 slug: "rail-waybills-shipping-orders"
 tags: ["logistics", "shipping", "rail-freight", "waybill", "intermodal", "supply-chain-fraud", "cargo-security", "customs-compliance"]
+derivations: 1
 ---
 
 ## What is a Rail Waybill?

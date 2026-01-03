@@ -5,6 +5,7 @@ volume: "Very Small"
 retention: "7-10 years (transaction records)"
 slug: "condo-townhouse-disclosures"
 tags: ["real-estate", "hoa", "condo-disclosure", "resale-certificate", "property-management", "special-assessment"]
+derivations: 1
 ---
 
 ## What is a Condo Disclosure?

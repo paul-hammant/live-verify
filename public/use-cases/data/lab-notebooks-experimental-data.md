@@ -5,6 +5,7 @@ volume: "Small"
 retention: "7-30 years (research integrity)"
 slug: "lab-notebooks-experimental-data"
 tags: ["scientific-integrity", "lab-notebook", "glp-compliance", "patent-evidence", "reproducibility", "r-and-d", "academic-fraud-prevention"]
+derivations: 1
 ---
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 1px solid #555; background: #fffdf5; padding: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); position: relative;">

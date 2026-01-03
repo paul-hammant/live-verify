@@ -5,6 +5,7 @@ volume: "Medium"
 retention: "7-10 years (customs audit, shipment records)"
 slug: "certificates-of-origin"
 tags: ["trade-compliance", "customs", "export", "import", "logistics", "tariff-benefits", "origin-verification", "chamber-of-commerce", "international-trade"]
+derivations: 1
 ---
 
 ## What is a Certificate of Origin?

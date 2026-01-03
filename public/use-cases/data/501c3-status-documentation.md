@@ -5,6 +5,7 @@ volume: "Tiny"
 retention: "Permanent (legal status)"
 slug: "501c3-status-documentation"
 tags: ["501c3", "status", "documentation", "charitable", "non-profit", "IRS"]
+derivations: 1
 ---
 
 ## What is a 501(c)(3) Letter?

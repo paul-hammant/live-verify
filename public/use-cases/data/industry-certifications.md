@@ -5,6 +5,7 @@ volume: "Small"
 retention: "3-10 years (renewal cycles)"
 slug: "industry-certifications"
 tags: ["pmp-certification", "cfa-charter", "aws-certified", "cissp", "osha-30", "professional-development", "credential-verification", "resume-integrity"]
+derivations: 1
 ---
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">

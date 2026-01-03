@@ -5,6 +5,7 @@ volume: "Small"
 retention: "7-10 years (loan term + disputes)"
 slug: "mortgage-verification-documents"
 tags: ["employment-verification", "fannie-mae-compliance", "fraud-prevention", "income-verification", "loan-approval", "mortgage-underwriting", "paystub", "real-estate-finance", "salary-verification", "voe", "w-2"]
+derivations: 2
 ---
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">

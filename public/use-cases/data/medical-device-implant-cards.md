@@ -5,6 +5,7 @@ volume: "Small"
 retention: "Lifetime (device tracking)"
 slug: "medical-device-implant-cards"
 tags: ["medical-implant", "pacemaker-card", "joint-replacement", "udi-tracking", "patient-safety", "surgical-history", "healthcare-logistics"]
+derivations: 1
 ---
 
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">

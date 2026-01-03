@@ -5,6 +5,7 @@ volume: "Large"
 retention: "Encounter + 1-3 years (dispute period)"
 slug: "parking-enforcement-verification"
 tags: ["parking", "enforcement", "verification", "personal", "safety", "service", "municipal-fraud", "ticket-verification"]
+derivations: 1
 ---
 
 ## What is Parking Enforcement Verification?

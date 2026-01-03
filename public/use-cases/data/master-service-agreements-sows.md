@@ -5,6 +5,7 @@ volume: "Medium"
 retention: "Contract term + 7-10 years"
 slug: "master-service-agreements-sows"
 tags: ["msa", "sow", "corporate-contract", "legal-operations", "procurement", "service-agreement", "change-order", "liability-limit"]
+derivations: 1
 ---
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">

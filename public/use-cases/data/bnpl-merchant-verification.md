@@ -5,6 +5,7 @@ volume: "Small"
 retention: "3-7 years (merchant relationship)"
 slug: "bnpl-merchant-verification"
 tags: ["bnpl", "merchant", "verification", "klarna", "affirm", "fintech", "ecommerce"]
+derivations: 1
 ---
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ffb3c1; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">

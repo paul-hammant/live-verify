@@ -5,6 +5,7 @@ volume: "Small"
 retention: "7-10 years (regulatory requirements)"
 slug: "audit-reports-financial-statements"
 tags: ["audit", "financial-statements", "opinion", "cpa", "pcaob", "compliance", "fraud-prevention", "accounting"]
+derivations: 1
 ---
 
 ## What is an Audited Financial Statement?

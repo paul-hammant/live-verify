@@ -5,6 +5,7 @@ volume: "Large"
 retention: "Claim term + 7-10 years (audit / total-loss history)"
 slug: "total-loss-valuations-acv"
 tags: ["insurance-claims", "total-loss", "acv", "actual-cash-value", "vehicle-valuation", "ccc-one", "claims-audit", "settlement-dispute", "vehicle-history"]
+derivations: 1
 ---
 
 ## What is a Total Loss Valuation?

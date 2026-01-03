@@ -5,6 +5,7 @@ volume: "Medium"
 retention: "5-10 years post-relationship (AML requirement)"
 slug: "pep-declarations"
 tags: ["aml", "kyc", "pep", "politically-exposed", "enhanced-due-diligence", "corruption-prevention", "onboarding-compliance", "financial-crime"]
+derivations: 1
 ---
 
 ## What is a PEP Declaration?

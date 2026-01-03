@@ -5,6 +5,7 @@ volume: "Small"
 retention: "Permanent (ownership records)"
 slug: "stock-certificates"
 tags: ["stock", "certificates", "financial", "legal", "documents"]
+derivations: 1
 ---
 
 ## What is a Stock Certificate?

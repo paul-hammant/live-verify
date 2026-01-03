@@ -5,6 +5,7 @@ volume: "Very Large"
 retention: "Election cycle + 4 years"
 slug: "voter-registration"
 tags: ["elections", "voter-id", "registration-card", "civic-duty", "voter-integrity", "government-records", "poll-worker-vetting", "democracy"]
+derivations: 1
 ---
 
 ## What is a Voter Registration Card?

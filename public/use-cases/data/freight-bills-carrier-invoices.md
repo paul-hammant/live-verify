@@ -5,6 +5,7 @@ volume: "Large"
 retention: "7-10 years (payment/audit)"
 slug: "freight-bills-carrier-invoices"
 tags: ["logistics", "transportation", "freight-bill", "carrier-invoice", "accounts-payable", "audit-trail", "supply-chain-finance"]
+derivations: 1
 ---
 
 ## What is a Freight Bill?

@@ -5,6 +5,7 @@ volume: "Large"
 retention: "1-3 years (inspection cycle)"
 slug: "work-equipment-safety-tags"
 tags: ["puwer", "osha-1910", "machine-safety", "equipment-inspection", "workplace-safety", "industrial-maintenance"]
+derivations: 1
 ---
 
 ## What are Work Equipment Safety Tags?

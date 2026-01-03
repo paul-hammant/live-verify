@@ -5,6 +5,7 @@ type: "use-case"
 slug: "food-hygiene-postings"
 beneficiary: "Customers"
 tags: ["food-safety", "hygiene", "ratings", "restaurants", "public-health", "customers", "health-grades", "food-handler"]
+derivations: 1
 ---
 
 ## What are Food Hygiene Postings?

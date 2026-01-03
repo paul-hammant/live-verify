@@ -36,7 +36,14 @@ function parseFrontmatter(content) {
     yaml.split('\n').forEach(line => {
         const keyMatch = line.match(/^(\w+):\s*"?([^"]*)"?\s*$/);
         if (keyMatch) {
-            metadata[keyMatch[1]] = keyMatch[2];
+            const key = keyMatch[1];
+            const value = keyMatch[2];
+            // Parse numeric values
+            if (key === 'derivations' || key === 'volume') {
+                metadata[key] = isNaN(value) ? value : parseInt(value, 10);
+            } else {
+                metadata[key] = value;
+            }
         }
         // Handle arrays like tags: ["a", "b"]
         const arrayMatch = line.match(/^(\w+):\s*\[(.*)\]\s*$/);
@@ -87,6 +94,7 @@ async function main() {
     const index = {
         generated: new Date().toISOString(),
         totalUseCases: files.length,
+        totalDerivations: 0,
         categories: {},
         useCases: []
     };
@@ -106,6 +114,7 @@ async function main() {
         }
 
         const snippet = extractSnippet(content);
+        const derivations = metadata.derivations || 0;
 
         // Add to index
         index.useCases.push({
@@ -114,6 +123,7 @@ async function main() {
             category: metadata.category || 'Uncategorized',
             volume: metadata.volume || 'Unknown',
             retention: metadata.retention || 'Unknown',
+            derivations: derivations,
             snippet: snippet,
             tags: metadata.tags || []
         });
@@ -122,8 +132,11 @@ async function main() {
         const cat = metadata.category || 'Uncategorized';
         index.categories[cat] = (index.categories[cat] || 0) + 1;
 
+        // Sum up derivations
+        index.totalDerivations += derivations;
+
         if (dryRun) {
-            console.log(`${file}: ${metadata.title} [${metadata.category}]`);
+            console.log(`${file}: ${metadata.title} [${metadata.category}] (${derivations} derivations)`);
         }
     }
 
@@ -137,6 +150,7 @@ async function main() {
     console.log('\n--- Summary ---');
     console.log(`Total use cases: ${index.totalUseCases}`);
     console.log(`Total categories: ${index.totalCategories}`);
+    console.log(`Total derivations: ${index.totalDerivations}`);
     if (errorCount > 0) {
         console.log(`Errors: ${errorCount}`);
     }

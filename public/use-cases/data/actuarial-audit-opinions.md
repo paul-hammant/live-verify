@@ -5,6 +5,7 @@ volume: "Very Small"
 retention: "7-15 years (professional standards)"
 slug: "actuarial-audit-opinions"
 tags: ["actuarial", "audit", "opinion", "insurance", "solvency", "reserves"]
+derivations: 1
 ---
 
 ## What is an Actuarial Opinion?

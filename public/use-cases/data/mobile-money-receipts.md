@@ -5,6 +5,7 @@ volume: "Large"
 retention: "3-7 years (tax/disputes)"
 slug: "mobile-money-receipts"
 tags: ["m-pesa", "gcash", "bkash", "remittance", "mobile-money", "p2p-payment", "financial-inclusion", "unbanked-finance"]
+derivations: 1
 ---
 
 <div style="max-width: 400px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">

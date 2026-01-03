@@ -5,6 +5,7 @@ volume: "Very Large"
 retention: "1-7 years (hiring cycle)"
 slug: "employment-reference-letters"
 tags: ["employment-verification", "voe", "hr", "background-check", "hiring-fraud", "job-reference"]
+derivations: 1
 ---
 
 ## What is a VOE Letter?

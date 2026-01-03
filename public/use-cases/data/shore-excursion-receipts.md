@@ -5,6 +5,7 @@ volume: "Large"
 retention: "Excursion + 1-3 years (claims / liability)"
 slug: "shore-excursion-receipts"
 tags: ["cruise-travel", "shore-excursion", "tour-ticket", "travel-fraud", "liability-release", "vacation-planning", "maritime-hospitality"]
+derivations: 1
 ---
 
 ## What are Shore Excursion Receipts?

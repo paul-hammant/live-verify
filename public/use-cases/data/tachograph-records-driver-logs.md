@@ -5,6 +5,7 @@ volume: "Very Large"
 retention: "6 months - 3 years (DOT/FMCSA compliance)"
 slug: "tachograph-records-driver-logs"
 tags: ["logistics", "trucking", "hos", "eld", "tachograph", "driver-safety", "fmcsa-compliance", "roadside-inspection", "fatigue-management"]
+derivations: 1
 ---
 
 ## What are Tachograph and ELD Records?

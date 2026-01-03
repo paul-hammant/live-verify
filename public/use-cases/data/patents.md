@@ -6,6 +6,7 @@ volume: "Medium"
 retention: "20 years (utility/plant), 15 years (design)"
 slug: "patents"
 tags: ["patent", "intellectual-property", "USPTO", "EPO", "invention"]
+derivations: 1
 ---
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 3px double #1a365d; background: #fffef5; padding: 0;">

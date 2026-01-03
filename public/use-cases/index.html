@@ -648,6 +648,10 @@
                 <span class="stat-number" data-stat="categories" data-target="0">0</span>
                 <div class="stat-label">Industries</div>
             </div>
+            <div class="stat">
+                <span class="stat-number" data-stat="derivations" data-target="0">0</span>
+                <div class="stat-label">Derivations</div>
+            </div>
         </div>
     </div>
 
@@ -1002,6 +1006,7 @@
             // Update stat counters
             document.querySelector('[data-stat="useCases"]').dataset.target = indexData.totalUseCases;
             document.querySelector('[data-stat="categories"]').dataset.target = indexData.totalCategories;
+            document.querySelector('[data-stat="derivations"]').dataset.target = indexData.totalDerivations;
 
             // Animate counters
             document.querySelectorAll('.stat-number').forEach(animateCounter);

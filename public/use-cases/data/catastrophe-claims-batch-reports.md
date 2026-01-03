@@ -5,6 +5,7 @@ volume: "Small"
 retention: "CAT event + 10 years"
 slug: "catastrophe-claims-batch-reports"
 tags: ["catastrophe", "insurance-claims", "reinsurance", "cat-code", "disaster-response", "claims-audit"]
+derivations: 1
 ---
 
 ## What is a CAT Batch Report?

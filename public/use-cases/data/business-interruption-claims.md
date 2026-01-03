@@ -5,6 +5,7 @@ volume: "Small"
 retention: "Claim term + 10 years"
 slug: "business-interruption-claims"
 tags: ["business-interruption", "commercial-insurance", "claims", "lost-revenue", "forensic-accounting", "disaster-recovery"]
+derivations: 1
 ---
 
 ## What is a Business Interruption Claim?

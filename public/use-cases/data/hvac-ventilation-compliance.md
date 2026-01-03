@@ -5,6 +5,7 @@ volume: "Medium"
 retention: "14 months - 5 years (COSHH / OSHA cycles)"
 slug: "hvac-ventilation-compliance"
 tags: ["hvac", "lev", "coshh", "air-quality", "ventilation-safety", "osha-1910-94", "industrial-hygiene"]
+derivations: 1
 ---
 
 ## What is Ventilation Compliance?

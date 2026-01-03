@@ -5,6 +5,7 @@ volume: "Medium"
 retention: "Appointment + 5 years"
 slug: "consular-processing-appointments"
 tags: ["immigration", "visa-interview", "nvc", "embassy", "consular-processing", "travel-logistics", "visa-appointment"]
+derivations: 1
 ---
 
 ## What is a Visa Interview Notice?

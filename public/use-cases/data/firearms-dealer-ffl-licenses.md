@@ -5,6 +5,7 @@ volume: "Small"
 retention: "3 years (license term)"
 slug: "firearms-dealer-ffl-licenses"
 tags: ["ffl", "atf", "gun-shop-license", "firearms-dealer", "second-amendment", "public-safety", "compliance", "federal-firearms-license"]
+derivations: 1
 ---
 
 ## What is an FFL License?

@@ -5,6 +5,7 @@ volume: "Medium"
 retention: "Permit validity (1-5 years)"
 slug: "concealed-carry-permits"
 tags: ["ccw", "firearms-permit", "public-safety", "second-amendment", "law-enforcement", "concealed-carry", "identity-verification"]
+derivations: 1
 ---
 
 ## What is a CCW Permit?

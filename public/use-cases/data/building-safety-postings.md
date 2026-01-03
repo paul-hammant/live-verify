@@ -5,6 +5,7 @@ type: "use-case"
 slug: "building-safety-postings"
 beneficiary: "Occupants/Public"
 tags: ["building-safety", "inspection", "certificates", "elevator", "fire-safety", "evacuation", "public-safety", "occupants"]
+derivations: 1
 ---
 
 ## What are Building Safety Postings?

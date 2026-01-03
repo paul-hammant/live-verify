@@ -5,6 +5,7 @@ volume: "Very Small"
 retention: "Event date + 7 years"
 slug: "event-cancellation-weather-insurance"
 tags: ["event-cancellation", "weather-insurance", "pluvius", "risk-management", "specialty-insurance", "festival-insurance"]
+derivations: 1
 ---
 
 ## What is Weather Insurance?

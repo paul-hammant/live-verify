@@ -5,6 +5,7 @@ volume: "Tiny"
 retention: "Permit term + permanent"
 slug: "endangered-species-take-permits"
 tags: ["endangered-species", "wildlife-protection", "fws", "noaa", "incidental-take", "habitat-conservation", "environmental-compliance"]
+derivations: 1
 ---
 
 ## What is a Take Permit?

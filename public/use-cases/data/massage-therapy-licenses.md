@@ -5,6 +5,7 @@ volume: "Medium"
 retention: "1-2 years (renewal)"
 slug: "massage-therapy-licenses"
 tags: ["massage-therapy", "professional-license", "public-health", "background-check", "licensing-board", "human-trafficking-prevention", "wellness-industry", "home-security"]
+derivations: 1
 ---
 
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 4px solid #002d62; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">

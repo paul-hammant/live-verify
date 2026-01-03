@@ -5,6 +5,7 @@ volume: "Very Small"
 retention: "Voyage + 10 years (claims / audit)"
 slug: "war-risk-piracy-insurance"
 tags: ["specialty-insurance", "war-risk", "piracy-coverage", "maritime-security", "high-risk-transit", "vessel-protection", "marine-finance", "armed-guard-verification"]
+derivations: 1
 ---
 
 ## What is War Risk and Piracy Insurance?

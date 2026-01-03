@@ -5,6 +5,7 @@ volume: "Very Small"
 retention: "3-10 years (journalistic integrity)"
 slug: "fact-checking-verification"
 tags: ["fact-checking", "journalism", "misinformation", "trust-in-media", "news-integrity", "source-verification", "editorial-standards"]
+derivations: 1
 ---
 
 ## What is a Verified Fact-Check?

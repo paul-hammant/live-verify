@@ -5,6 +5,7 @@ volume: "Large"
 retention: "Shipment + 7 years"
 slug: "container-packing-lists-vgm"
 tags: ["shipping", "logistics", "vgm", "solas", "container", "maritime-safety", "packing-list"]
+derivations: 1
 ---
 
 ## What is a VGM Declaration?

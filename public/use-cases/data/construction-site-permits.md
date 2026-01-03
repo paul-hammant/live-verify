@@ -5,6 +5,7 @@ type: "use-case"
 slug: "construction-site-permits"
 beneficiary: "Neighbors/Public"
 tags: ["construction", "permits", "building", "demolition", "electrical", "plumbing", "grading", "public-safety"]
+derivations: 1
 ---
 
 ## What are Construction Site Permits?

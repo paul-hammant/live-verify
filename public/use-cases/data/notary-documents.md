@@ -5,6 +5,7 @@ volume: "Small"
 retention: "Permanent (estate records)"
 slug: "notary-documents"
 tags: ["acknowledgment", "apostille", "civil-law", "commission-fraud", "digital-notarization", "document-authentication", "e-signing", "estate-planning", "identity-verification", "jurat", "legal-authority", "legal-witness", "legalization", "mortgage-closing", "notarial-act", "notary", "ron", "succession", "sworn-statement", "wills", "witnessing"]
+derivations: 3
 ---
 
 ## What is a Notarial Will?

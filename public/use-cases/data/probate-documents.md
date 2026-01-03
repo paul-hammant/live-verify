@@ -5,6 +5,7 @@ volume: "Small"
 retention: "Permanent (estate records)"
 slug: "probate-documents"
 tags: ["probate", "documents", "financial", "legal", "estate-settlement", "letters-testamentary", "executor", "inheritance-fraud"]
+derivations: 1
 ---
 
 ## What is a Probate Document?

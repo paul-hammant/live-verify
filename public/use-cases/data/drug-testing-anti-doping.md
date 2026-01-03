@@ -5,6 +5,7 @@ volume: "Very Small"
 retention: "10-20 years (WADA requirements)"
 slug: "drug-testing-anti-doping"
 tags: ["anti-doping", "wada", "drug-test", "clean-sport", "athlete-integrity", "doping-control", "forensic-lab"]
+derivations: 1
 ---
 
 ## What is a Doping Record?

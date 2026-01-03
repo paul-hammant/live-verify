@@ -5,6 +5,7 @@ volume: "Medium"
 retention: "5-10 years (financing cycle / tax audit)"
 slug: "property-appraisals-valuations"
 tags: ["real-estate", "property-appraisal", "home-valuation", "uspap-compliance", "mortgage-underwriting", "valuation-fraud", "property-tax-audit", "certified-appraiser"]
+derivations: 1
 ---
 
 ## What is a Property Appraisal?

@@ -5,6 +5,7 @@ volume: "Medium"
 retention: "Appointment + 5 years"
 slug: "immigration-interview-notices"
 tags: ["immigration", "uscis", "interview-notice", "green-card", "naturalization", "form-i-797", "adjustment-of-status", "visa-appointment"]
+derivations: 1
 ---
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">

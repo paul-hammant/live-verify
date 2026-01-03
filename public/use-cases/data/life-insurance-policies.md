@@ -5,6 +5,7 @@ volume: "Small"
 retention: "Policy lifetime (50+ years)"
 slug: "life-insurance-policies"
 tags: ["life-insurance", "whole-life", "term-life", "beneficiary-designation", "cash-value", "financial-planning", "estate-asset", "insurance-policy"]
+derivations: 1
 ---
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 2px solid #000; background: #fff; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); position: relative;">

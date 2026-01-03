@@ -5,6 +5,7 @@ volume: "Small"
 retention: "Policy term + 10 years"
 slug: "aggregate-deductible-retrospective"
 tags: ["aggregate", "deductible", "retrospective", "insurance", "risk", "management", "premium"]
+derivations: 1
 ---
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #000; background: #fff; padding: 0;">

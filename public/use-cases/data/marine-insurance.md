@@ -5,6 +5,7 @@ volume: "Small"
 retention: "Transit period + 7-10 years"
 slug: "marine-insurance"
 tags: ["cargo-security", "certificate-of-insurance", "certificates", "club", "h-and-m", "hull-and-machinery", "icc-a-clauses", "imo-vessel", "international-trade-finance", "lloyds", "logistics", "marine-cargo", "marine-insurance", "maritime-safety", "ocean-freight-insurance", "risk-management", "ship-finance", "transportation", "vessel-valuation"]
+derivations: 3
 ---
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 2px solid #002d62; background: #fff; padding: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
