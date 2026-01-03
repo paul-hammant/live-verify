@@ -21,8 +21,9 @@ These capabilities are designed to be built into the native fabric of digital li
 - **Browsers:** (Desktop, Tablet, Mobile) Right-click context menus for selected text.
 - **Email Packages:** Automatic verification of headers or body claims.
 - **PDF Viewers:** Built-in "Verify Page" or "Verify Selection" tools.
-- **Messaging Systems:** (SMS, RCS, iMessage, WhatsApp, WeChat) Long-press on a message to verify its authenticity.
-- **Collaboration Apps:** (Slack, Discord, Teams) Integration for verifying shared documents or claims within channels.
+- **Messaging Systems:** (SMS, RCS, iMessage, WhatsApp, WeChat) Verification indicators appearing in the chat chrome or via long-press on a message.
+- **Automatic Status:** Software tools (PDF viewers, browsers, email clients) automatically identifying claims and displaying verification status in the "chrome" or status bar as the user scrolls through a document or view.
+- **Collaboration Apps:** (Slack, Discord, Teams) Integration for verifying shared documents or claims within channels with real-time status badges.
 
 ---
 
