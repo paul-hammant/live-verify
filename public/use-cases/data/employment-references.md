@@ -14,7 +14,12 @@ A verified employment reference proves you actually worked somewhere. It can app
 
 Fraud is common: "Reference Mills" sell fake employment letters. OCR-to-hash connects the verifier directly to the real employer's domain.
 
-<div style="max-width: 500px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 20px;">
+<div style="max-width: 550px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 20px;">
+  <div style="font-size: 0.85em; color: #555; border-bottom: 1px solid #ddd; padding-bottom: 10px; margin-bottom: 15px;">
+    <strong>From:</strong> john.smith@gmail.com<br>
+    <strong>To:</strong> miggins@newco.com<br>
+    <strong>Subject:</strong> Re: References for Senior Engineer role
+  </div>
   <div style="font-size: 0.95em; color: #333; margin-bottom: 15px;">
     Dear Ms Miggins,<br><br>
     As requested, here are the references I mentioned:
@@ -25,11 +30,33 @@ Fraud is common: "Reference Mills" sell fake employment letters. OCR-to-hash con
     Senior Software Engineer<br>
     March 2020 – October 2025<br>
     Eligible for Rehire<br>
-    <span data-verify-line="voe">vfy:acme-corp.com/hr</span> <span verifiable-text="end" data-for="voe">]</span>
+    <span data-verify-line="voe">verify:acme-corp.com/staff</span> <span verifiable-text="end" data-for="voe">]</span>
   </div>
   <div style="font-size: 0.95em; color: #333; margin-top: 15px;">
     Let me know if you need anything else.<br><br>
     Best regards
+  </div>
+</div>
+
+<div style="max-width: 550px; margin: 24px auto; font-family: 'Times New Roman', serif; border: 1px solid #999; background: #fff; padding: 40px 40px 20px 40px; position: relative;">
+  <h3 style="margin: 0 0 20px 0; font-size: 1.1em; text-transform: uppercase; letter-spacing: 1px;">References</h3>
+  <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
+    <p style="margin-bottom: 15px;"><strong>Widget Industries</strong> — Project Manager, 2016–2020<br>
+    <em>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</em></p>
+    <p style="margin-bottom: 15px;"><strong>StartupCo</strong> — Junior Developer, 2014–2016<br>
+    <em>Sed do eiusmod tempor incididunt ut labore.</em></p>
+    <div style="font-family: 'Courier New', monospace; background: #f9f9f9; padding: 12px; border: 1px solid #999; font-size: 0.95em; color: #000; line-height: 1.5; margin-bottom: 15px;">
+      <span verifiable-text="start" data-for="voe2">[</span>Acme Corporation<br>
+      John D. Smith<br>
+      Senior Software Engineer<br>
+      March 2020 – October 2025<br>
+      Eligible for Rehire<br>
+      <span data-verify-line="voe2">verify:acme-corp.com/staff</span> <span verifiable-text="end" data-for="voe2">]</span>
+    </div>
+  </div>
+  <div style="position: absolute; bottom: 10px; left: 40px; right: 40px; font-size: 0.75em; color: #777; display: flex; justify-content: space-between;">
+    <span>john_smith_cv.pdf</span>
+    <span>Page 4 of 4</span>
   </div>
 </div>
 
@@ -71,6 +98,24 @@ The **Employee (Applicant)** benefits from verification.
 
 **Immigration Authorities**
 **Work Visa Vetting:** Verifying the "Specialty Occupation" claims of an H-1B or L-1 applicant by confirming their prior job titles and duties against the employer's verified record.
+
+## Peer References
+
+Unlike formal VOE letters from HR departments, **peer references** are colleague-to-colleague attestations—similar to LinkedIn recommendations but cryptographically verifiable. See [prior art discussion of mine](https://gist.github.com/paul-hammant/3375fec8e204f0c7567d4daea1fe48ef).
+
+The verify URL points to the *referee's* domain, not the employer's. This reflects that the claim is personal ("I worked with this person") rather than institutional ("This person was employed here").
+
+<div style="max-width: 550px; margin: 24px auto; font-family: 'Courier New', monospace; background: #f9f9f9; padding: 15px; border: 1px solid #999; font-size: 1em; color: #000; line-height: 1.6;">
+  <span verifiable-text="start" data-for="peer">[</span>I, Paul Hammant, worked for Kevin Behr in<br>
+  his role as CIO of HedgeServ in New York City<br>
+  in 2015 and 2016<br>
+  <span data-verify-line="peer">verify:paulhammant.com/refs</span> <span verifiable-text="end" data-for="peer">]</span>
+</div>
+
+**Use Cases:**
+- **Professional Networking:** A former colleague attests to working with you, verifiable against their personal site.
+- **Freelance/Contract Work:** When no formal HR department exists, peers can vouch for project collaboration.
+- **Reference Chains:** Multiple peer attestations from different people build a web of trust.
 
 ## Verification Architecture
 
