@@ -31,7 +31,7 @@ The **Staff ID Badge** is the worker's proof that they are authorized to be in t
 
 "Fake Uniform" home-invasions happen when burglars buy high-visibility vests or fake Hilton/Marriott shirts to gain entry to rooms. OCR-to-hash allows a guest to scan the worker's badge through the peephole or doorbell camera. Seeing a green "ON-DUTY" status from the hotel's domain ensures the person at the door is a **Verified Employee**.
 
-**This pattern extends beyond hotels** to hospitals (nurse aides, dietary staff), apartment buildings (maintenance, custodial), and event venues (setup crew) — anywhere mobile service staff enter private spaces in ungated, high-turnover environments.
+**This pattern also applies** to hospitals, apartment buildings, and event venues—anywhere mobile service staff enter private spaces in ungated, high-turnover environments.
 
 ### Static Card (Traditional)
 

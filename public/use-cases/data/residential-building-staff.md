@@ -169,21 +169,6 @@ The **Building Staff Member or Contractor** benefits from verification.
 
 ---
 
-## Derived Scenarios: Why This Pattern Extends Beyond Hotels
-
-This use case is a **direct derivative** of the hotel staff verification pattern, adapted for residential:
-
-- **Hotels:** Guests in guest rooms verify unscheduled service staff
-- **Residential:** Residents in private apartments verify unscheduled service contractors
-
-The underlying pattern is identical: mobile staff, ungated facility, unpredictable entry, private spaces, vulnerable people, time-bound authorization.
-
-**Related scenarios that follow the same pattern:**
-- Healthcare facility staff (hospitals, clinics)
-- Event venue setup crews and logistics staff (temporary event spaces)
-
----
-
 ## Adoption Nuances: Overcoming Resident Skepticism
 
 **For building management companies evaluating implementation:**

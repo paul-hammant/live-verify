@@ -308,23 +308,6 @@ This approach separates **verification** (role/credential/status) from **identif
 
 ---
 
-## Derived Scenarios: Why This Pattern Extends Beyond Hotels
-
-This use case is a **direct derivative** of the hotel staff verification pattern, adapted for healthcare with an additional critical dimension:
-
-- **Hotels:** Guests in guest rooms verify unscheduled service staff → "Is this person authorized to be here?"
-- **Healthcare:** Patients in patient rooms verify unscheduled care/service staff → "Is this person authorized to be here?" + **"Is their license active and credentials current?"**
-
-The underlying "mobile staff in ungated facility" pattern is identical. But healthcare adds a **credentialing layer** that applies to all staff—particularly physicians, nurses, and mid-level providers—where license status and hospital credentialing directly impact patient safety.
-
-**Related scenarios that follow the same pattern:**
-- Residential building maintenance and contractors (apartment buildings)
-- Event venue setup crews and logistics staff (temporary event spaces)
-
-**Key difference from hotel/residential/event:** In healthcare, credential verification isn't just a security/fraud issue—it's directly tied to patient treatment safety. A doctor with a suspended license shouldn't be treating you, period. Hospitals are legally liable for credentialing oversight.
-
----
-
 ## Adoption Nuances: Why This Is Complex in Practice
 
 **For hospital decision-makers evaluating whether to implement:**

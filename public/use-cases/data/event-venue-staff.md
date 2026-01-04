@@ -169,21 +169,6 @@ The **Event Staff Member or Contractor** benefits from verification.
 
 ---
 
-## Derived Scenarios: Why This Pattern Extends Beyond Hotels
-
-This use case is a **direct derivative** of the hotel staff verification pattern, adapted for temporary event staffing:
-
-- **Hotels:** Guests verify permanent/long-term service staff
-- **Events:** Security verifies temporary contractors and event staff
-
-While hotels involve repeated, known staff, events involve high-volume, one-time workers, making verification even more critical.
-
-**Related scenarios that follow the same pattern:**
-- Healthcare facility staff (hospitals, clinics)
-- Residential building maintenance and contractors (apartment buildings)
-
----
-
 ## Adoption Nuances: The Logistics Bottleneck
 
 **For event venues and promoters evaluating implementation:**
