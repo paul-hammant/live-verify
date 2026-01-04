@@ -50,7 +50,7 @@ Static cards can be photographed and reprinted. An **e-ink warrant card** with a
   <div style="font-size: 1em; color: #002d62; font-weight: bold; margin-bottom: 8px;"><span verifiable-text="start" data-for="eink">[</span>METROPOLITAN POLICE</div>
   <div style="font-size: 1em; font-weight: bold; color: #000; margin-bottom: 8px;">PC Alex D 1332</div>
   <div style="font-size: 1em; color: #333; margin-bottom: 8px;">London MET</div>
-  <div style="font-size: 1em; color: #002d62; margin-bottom: 12px;">
+  <div style="font-size: 1em; color: #333; margin-bottom: 12px;">
     Salt: 7k3m9x2p
   </div>
   <div data-verify-line="eink" style="font-size: 1em; color: #555;"

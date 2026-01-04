@@ -66,7 +66,7 @@ Static cards display full names and license numbers permanently, which can lead 
   </div>
   <div data-verify-line="eink-nurse" style="font-size: 1em; color: #555;"
     title="Demo only: Mayo Clinic doesn't yet offer verification endpoints">
-    vfy:mayoclinic.org <span verifiable-text="end" data-for="eink-nurse">]</span>
+    vfy:ids.mayoclinic.org <span verifiable-text="end" data-for="eink-nurse">]</span>
   </div>
 </div>
 

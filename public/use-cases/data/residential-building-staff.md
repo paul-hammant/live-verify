@@ -54,12 +54,12 @@ Static cards can be lost or stolen by former employees. An **e-ink maintenance b
   <div style="font-size: 1em; color: #2e7d32; font-weight: bold; margin-bottom: 8px;"><span verifiable-text="start" data-for="eink-maint">[</span>EQUITY RESIDENTIAL</div>
   <div style="font-size: 1em; font-weight: bold; color: #000; margin-bottom: 8px;">Robert M.</div>
   <div style="font-size: 1em; color: #333; margin-bottom: 8px;">Maintenance Lead</div>
-  <div style="font-size: 1em; color: #2e7d32; margin-bottom: 12px;">
+  <div style="font-size: 1em; color: #333; margin-bottom: 8px;">
     Salt: 7x2p9k4m
   </div>
   <div data-verify-line="eink-maint" style="font-size: 1em; color: #555;"
     title="Demo only: Equity Residential doesn't yet offer verification endpoints">
-    vfy:equityapartments.com <span verifiable-text="end" data-for="eink-maint">]</span>
+    vfy:id.equityapartments.com <span verifiable-text="end" data-for="eink-maint">]</span>
   </div>
 </div>
 

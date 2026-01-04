@@ -55,12 +55,12 @@ Printed laminates are easily forged or stolen. An **e-ink event credential** wit
   <div style="font-size: 1.2em; color: #000; font-weight: 900; margin-bottom: 8px;"><span verifiable-text="start" data-for="eink-crew">[</span>COACHELLA</div>
   <div style="font-size: 1em; font-weight: bold; color: #000; margin-bottom: 8px;">Mike D.</div>
   <div style="font-size: 1em; color: #333; margin-bottom: 8px;">Stage Crew - Zone A</div>
-  <div style="font-size: 1em; color: #000; margin-bottom: 12px; background: #fff; display: inline-block; padding: 4px 8px; border: 1px solid #999;">
+  <div style="font-size: 1em; color: #000; margin-bottom: 12px; display: inline-block; padding: 4px 8px; border: 1px solid #999;">
     Salt: 5k9x2m
   </div>
   <div data-verify-line="eink-crew" style="font-size: 1em; color: #555;"
     title="Demo only: Event promoters don't yet offer verification endpoints">
-    vfy:coachella.com <span verifiable-text="end" data-for="eink-crew">]</span>
+    vfy:staff.coachella.com <span verifiable-text="end" data-for="eink-crew">]</span>
   </div>
 </div>
 
