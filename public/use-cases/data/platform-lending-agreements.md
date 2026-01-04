@@ -22,7 +22,7 @@ These digital agreements are the "Lien on Future Revenue." Fraud is rampant in t
     </div>
     <div style="text-align: right;">
       <div style="font-weight: bold; font-size: 0.9em;">FINANCING AGREEMENT</div>
-      <div style="font-size: 0.7em; opacity: 0.9;">Ref: <span data-bracket="start" data-for="platform">[</span>SC-2026-992288</div>
+      <div style="font-size: 0.7em; opacity: 0.9;">Ref: <span verifiable-text="start" data-for="platform">[</span>SC-2026-992288</div>
     </div>
   </div>
 <div style="padding: 25px;">
@@ -61,7 +61,7 @@ These digital agreements are the "Lien on Future Revenue." Fraud is rampant in t
 <div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #999; text-align: center;">
     <div data-verify-line="platform" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Shopify doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:shopify.com/v/SC99228877 <span data-bracket="end" data-for="platform">]</span>
+      verify:shopify.com/v/SC99228877 <span verifiable-text="end" data-for="platform">]</span>
     </div>
     <div style="font-size: 0.7em; color: #999; margin-top: 10px;">
       Scan to verify current outstanding balance, daily remittance status, and lien priority.

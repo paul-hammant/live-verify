@@ -26,7 +26,7 @@ Scammers often create fake FFL PDF papers to trick online sellers into shipping 
   </div>
 <div style="padding: 25px;">
     <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
-      <h3 style="margin: 0; color: #333;">LICENSE NUMBER: <span data-bracket="start" data-for="ffl">[</span>9-99-887-01-2C-99228</h3>
+      <h3 style="margin: 0; color: #333;">LICENSE NUMBER: <span verifiable-text="start" data-for="ffl">[</span>9-99-887-01-2C-99228</h3>
     </div>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
       <p><strong>Licensee Name:</strong> MILLER ARMS & SPORTING GOODS, LLC<br>
@@ -47,7 +47,7 @@ Scammers often create fake FFL PDF papers to trick online sellers into shipping 
     </div>
 <div data-verify-line="ffl" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: ATF doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:atf.gov/fflezcheck/v/99988701 <span data-bracket="end" data-for="ffl">]</span>
+      verify:atf.gov/fflezcheck/v/99988701 <span verifiable-text="end" data-for="ffl">]</span>
     </div>
   </div>
 </div>

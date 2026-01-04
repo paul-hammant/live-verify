@@ -23,7 +23,7 @@ If there is a gap in the log (a "Broken Chain"), the evidence might be thrown ou
   </div>
 <div style="font-size: 0.85em; line-height: 1.6;">
     <p><strong>Case Number:</strong> CR-2025-84921<br>
-    <strong>Item ID:</strong> <span data-bracket="start" data-for="custody">[</span>EV-004 (Blood Sample)<br>
+    <strong>Item ID:</strong> <span verifiable-text="start" data-for="custody">[</span>EV-004 (Blood Sample)<br>
     <strong>Seal Number:</strong> 99482-A</p>
 <div style="background: #eee; padding: 10px; margin: 10px 0; border: 1px solid #999;">
       <strong>TRANSFER #3</strong><br>
@@ -37,7 +37,7 @@ If there is a gap in the log (a "Broken Chain"), the evidence might be thrown ou
     </p>
 <div data-verify-line="custody" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: State Lab doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:statelab.gov/custody/v/84921-004 <span data-bracket="end" data-for="custody">]</span>
+      verify:statelab.gov/custody/v/84921-004 <span verifiable-text="end" data-for="custody">]</span>
     </div>
   </div>
 </div>

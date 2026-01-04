@@ -25,7 +25,7 @@ These documents are the "Legal Safe Harbor" for marketing. Fraud is high-stakes 
 <div style="padding: 25px; font-size: 0.95em; line-height: 1.6; color: #333;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
-        <strong>Campaign:</strong> <span data-bracket="start" data-for="promo">[</span>High-Yield Spring Fund<br>
+        <strong>Campaign:</strong> <span verifiable-text="start" data-for="promo">[</span>High-Yield Spring Fund<br>
         <strong>Promotion ID:</strong> MKT-2026-042-XJ<br>
         <strong>Channels:</strong> Paid Social / Email
       </div>
@@ -55,7 +55,7 @@ These documents are the "Legal Safe Harbor" for marketing. Fraud is high-stakes 
 <div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #ff6600; text-align: center;">
     <div data-verify-line="promo" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: Regulated firms don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:meridian-funds.com/v/MKT2026042 <span data-bracket="end" data-for="promo">]</span>
+      verify:meridian-funds.com/v/MKT2026042 <span verifiable-text="end" data-for="promo">]</span>
     </div>
     <div style="font-size: 0.7em; color: #999; margin-top: 10px;">
       Scan to verify ad-integrity, required risk-warning text, and the authorizing firm's regulatory standing.

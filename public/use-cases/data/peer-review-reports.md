@@ -20,7 +20,7 @@ These reports are the "Gold Standard" of credibility. Researchers use them to se
     <div style="font-size: 0.85em; text-transform: uppercase;">Official Editorial Decision Letter</div>
   </div>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
-    <p><strong>Manuscript ID:</strong> <span data-bracket="start" data-for="peer">[</span>JQP-2026-9922-XJ<br>
+    <p><strong>Manuscript ID:</strong> <span verifiable-text="start" data-for="peer">[</span>JQP-2026-9922-XJ<br>
     <strong>Submission Date:</strong> January 15, 2026</p>
 <p><strong>Title:</strong> <em>Anomalous Waveform Dynamics in High-Energy Magic Fields.</em></p>
     <p><strong>Corresponding Author:</strong> Dr. Adrian Turnipseed</p>
@@ -35,7 +35,7 @@ These reports are the "Gold Standard" of credibility. Researchers use them to se
 <div style="margin-top: 40px; border-top: 1px dashed #999; padding-top: 10px; text-align: center;">
     <div data-verify-line="peer" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #003366; font-weight: bold;"
       title="Demo only: Academic journals don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:quantum-journal.org/v/JQP992288 <span data-bracket="end" data-for="peer">]</span>
+      verify:quantum-journal.org/v/JQP992288 <span verifiable-text="end" data-for="peer">]</span>
     </div>
     <div style="font-size: 0.7em; color: #999; margin-top: 10px; font-style: italic;">
       Scan to verify manuscript status, reviewer credentials, and the integrity of the editorial decision.

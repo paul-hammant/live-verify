@@ -24,7 +24,7 @@ It's a huge target for fraud—fake apostilles are often used to "legalize" fake
 <div style="font-size: 0.9em; line-height: 1.8;">
     <p><strong>1. Country:</strong> United States of America</p>
     <p>This public document<br>
-    <strong>2. has been signed by:</strong> <span data-bracket="start" data-for="apostille">[</span><strong>John Hancock</strong><br>
+    <strong>2. has been signed by:</strong> <span verifiable-text="start" data-for="apostille">[</span><strong>John Hancock</strong><br>
     <strong>3. acting in the capacity of:</strong> Notary Public, State of New York<br>
     <strong>4. bears the seal/stamp of:</strong> John Hancock, Notary Public</p>
 <div style="border: 1px solid #000; padding: 10px; margin: 10px 0; text-align: center; font-weight: bold; background: #f9f9f9;">
@@ -48,7 +48,7 @@ It's a huge target for fraud—fake apostilles are often used to "legalize" fake
   </div>
 <div data-verify-line="apostille" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: State Dept doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:dos.ny.gov/apostille/v/NY998877 <span data-bracket="end" data-for="apostille">]</span>
+      verify:dos.ny.gov/apostille/v/NY998877 <span verifiable-text="end" data-for="apostille">]</span>
   </div>
 </div>
 

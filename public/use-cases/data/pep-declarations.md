@@ -25,7 +25,7 @@ These declarations are the "Compliance Shield" for a bank. Fraud is common in th
 <div style="padding: 25px; font-size: 0.95em; line-height: 1.6; color: #333;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
-        <strong>Individual:</strong> <span data-bracket="start" data-for="pep">[</span>ALEXANDER VOLKOV<br>
+        <strong>Individual:</strong> <span verifiable-text="start" data-for="pep">[</span>ALEXANDER VOLKOV<br>
         <strong>Nationality:</strong> [Redacted]<br>
         <strong>DOB:</strong> [Verified/Redacted]
       </div>
@@ -48,7 +48,7 @@ These declarations are the "Compliance Shield" for a bank. Fraud is common in th
 <div style="padding: 20px; background: #f9f9f9; border-top: 1px dashed #8B0000; text-align: center;">
     <div data-verify-line="pep" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: Banks don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:privatbank-kyc.com/v/AV20260110 <span data-bracket="end" data-for="pep">]</span>
+      verify:privatbank-kyc.com/v/AV20260110 <span verifiable-text="end" data-for="pep">]</span>
     </div>
     <div style="font-size: 0.7em; color: #777; margin-top: 10px;">
       Scan to verify declaration integrity, role classification, and Enhanced Due Diligence (EDD) status. Access restricted to authorized compliance officers.

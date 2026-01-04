@@ -28,7 +28,7 @@ These postings are the primary defense against "Ghost Taxis"—unlicensed cars t
     </div>
     <div style="flex-grow: 1;">
       <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Driver Name</div>
-      <div style="font-size: 1.1em; font-weight: bold; margin: 0 0 10px 0; color: #333;"><span data-bracket="start" data-for="taxi">[</span>SARAH J. SMITH</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin: 0 0 10px 0; color: #333;"><span verifiable-text="start" data-for="taxi">[</span>SARAH J. SMITH</div>
 <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">License #</div>
       <div style="font-size: 1.3em; font-weight: bold; margin: 0 0 10px 0; letter-spacing: 1px;">TLC-992288</div>
 <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Vehicle Plate</div>
@@ -41,7 +41,7 @@ These postings are the primary defense against "Ghost Taxis"—unlicensed cars t
     </div>
     <div data-verify-line="taxi" style="border-top: 1px dashed #999; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; text-align: center; font-weight: bold;"
       title="Demo only: Municipalities don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:nyctlc.gov/v/TLC992288 <span data-bracket="end" data-for="taxi">]</span>
+      verify:nyctlc.gov/v/TLC992288 <span verifiable-text="end" data-for="taxi">]</span>
     </div>
   </div>
 </div>

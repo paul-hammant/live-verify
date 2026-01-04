@@ -30,7 +30,7 @@ It is your "Central Itinerary." It proves:
 <div style="padding: 30px;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px; font-size: 0.9em; color: #555;">
       <div>
-        <strong>Guest:</strong> <span data-bracket="start" data-for="ota">[</span>SARAH JANE SMITH<br>
+        <strong>Guest:</strong> <span verifiable-text="start" data-for="ota">[</span>SARAH JANE SMITH<br>
         <strong>Confirmation #:</strong> 9988776655
       </div>
       <div style="text-align: right;">
@@ -63,7 +63,7 @@ It is your "Central Itinerary." It proves:
     </table>
 <div data-verify-line="ota" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Booking.com doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:booking.com/v/9988776655 <span data-bracket="end" data-for="ota">]</span>
+      verify:booking.com/v/9988776655 <span verifiable-text="end" data-for="ota">]</span>
     </div>
   </div>
 </div>

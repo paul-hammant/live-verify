@@ -29,7 +29,7 @@ OCR-to-hash turns the **Physical Card** into a live link to the USCIS database. 
       <div style="width: 100px; height: 125px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #777;">[PHOTO]</div>
     </div>
     <div style="flex-grow: 1;">
-      <div style="font-size: 1.1em; font-weight: bold; margin: 0 0 5px 0;"><span data-bracket="start" data-for="ead">[</span>DOE, JOHN JACOB</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin: 0 0 5px 0;"><span verifiable-text="start" data-for="ead">[</span>DOE, JOHN JACOB</div>
       <div style="font-size: 0.85em; color: #333; line-height: 1.4;">
         <strong>USCIS #:</strong> 992-288-776<br>
         <strong>Category:</strong> C08 (Asylum)<br>
@@ -42,7 +42,7 @@ OCR-to-hash turns the **Physical Card** into a live link to the USCIS database. 
     <div style="font-size: 0.8em; font-weight: bold; color: #002d62; text-align: center; margin-bottom: 5px;">UNITED STATES OF AMERICA</div>
     <div data-verify-line="ead" style="border-top: 1px dashed #999; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: USCIS doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:uscis.gov/ead/v/SRC2699887766 <span data-bracket="end" data-for="ead">]</span>
+      verify:uscis.gov/ead/v/SRC2699887766 <span verifiable-text="end" data-for="ead">]</span>
     </div>
   </div>
 </div>

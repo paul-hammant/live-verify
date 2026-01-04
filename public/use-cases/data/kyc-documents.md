@@ -22,7 +22,7 @@ furtherDerivations: 2
     </div>
     <div style="flex-grow: 1;">
       <h3 style="margin: 0; color: #002d62;">VERIFIED CUSTOMER PROFILE</h3>
-      <div style="font-size: 1.1em; font-weight: bold; margin: 10px 0;"><span data-bracket="start" data-for="kyc-id">[</span>DOE, JOHN JACOB</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin: 10px 0;"><span verifiable-text="start" data-for="kyc-id">[</span>DOE, JOHN JACOB</div>
 <div style="font-size: 0.9em; color: #333; line-height: 1.5;">
         <strong>Document:</strong> US Passport #*******1234<br>
         <strong>DOB:</strong> May 15, 1985<br>
@@ -37,7 +37,7 @@ furtherDerivations: 2
     </div>
     <div data-verify-line="kyc-id" style="border-top: 1px dashed #999; margin-top: 15px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Revolut doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:revolut.com/compliance/v/99228877 <span data-bracket="end" data-for="kyc-id">]</span>
+      verify:revolut.com/compliance/v/99228877 <span verifiable-text="end" data-for="kyc-id">]</span>
     </div>
   </div>
 </div>
@@ -128,7 +128,7 @@ _[Content merged from: kyc-proof-of-address]_
     <div style="border-bottom: 2px solid #004a99; padding-bottom: 10px; margin-bottom: 20px;">
       <h3 style="margin: 0; color: #333;">SERVICE ADDRESS</h3>
       <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px; color: #004a99;">
-        <span data-bracket="start" data-for="address">[</span>123 Bleecker Street, Apt 4B<br>
+        <span verifiable-text="start" data-for="address">[</span>123 Bleecker Street, Apt 4B<br>
         New York, NY 10012
       </div>
     </div>
@@ -154,7 +154,7 @@ _[Content merged from: kyc-proof-of-address]_
     </div>
 <div data-verify-line="address" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Con-Ed doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:coned.com/billing/v/9922887766 <span data-bracket="end" data-for="address">]</span>
+      verify:coned.com/billing/v/9922887766 <span verifiable-text="end" data-for="address">]</span>
     </div>
   </div>
 </div>

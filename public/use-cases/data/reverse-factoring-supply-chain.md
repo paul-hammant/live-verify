@@ -22,7 +22,7 @@ These documents are the "Trade Collateral." Fraud is high-stakes: a dishonest su
     </div>
     <div style="text-align: right;">
       <div style="font-weight: bold; font-size: 0.9em;">APPROVAL ADVICE</div>
-      <div style="font-size: 0.7em;">Batch: <span data-bracket="start" data-for="factor">[</span>SCF-2026-992288</div>
+      <div style="font-size: 0.7em;">Batch: <span verifiable-text="start" data-for="factor">[</span>SCF-2026-992288</div>
     </div>
   </div>
 <div style="padding: 25px;">
@@ -63,7 +63,7 @@ These documents are the "Trade Collateral." Fraud is high-stakes: a dishonest su
 <div style="padding: 20px; background: #f5f5f5; border-top: 1px solid #004a99; text-align: center;">
     <div data-verify-line="factor" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: Banks don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:citi.com/scf/v/SCF99228877 <span data-bracket="end" data-for="factor">]</span>
+      verify:citi.com/scf/v/SCF99228877 <span verifiable-text="end" data-for="factor">]</span>
     </div>
     <div style="font-size: 0.7em; color: #777; margin-top: 10px;">
       Scan to verify invoice approval status, discount rates, and upcoming maturity dates.

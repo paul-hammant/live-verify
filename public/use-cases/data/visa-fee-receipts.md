@@ -22,7 +22,7 @@ These receipts are "Digital Currency." Fraud is high-stakes in the "Visa Consult
   </div>
 <div style="font-size: 0.9em; line-height: 1.4;">
     <p><strong>Merchant:</strong> U.S. DEPARTMENT OF STATE<br>
-    <strong>Ref #:</strong> <span data-bracket="start" data-for="fee">[</span>CGI-9922-8877-XJ<br>
+    <strong>Ref #:</strong> <span verifiable-text="start" data-for="fee">[</span>CGI-9922-8877-XJ<br>
     <strong>Date:</strong> 15 MAR 2026 10:42:01</p>
 <div style="margin: 15px 0; border-top: 1px solid #000; border-bottom: 1px solid #000; padding: 5px 0; display: flex; justify-content: space-between; font-weight: bold;">
       <span>FEE AMOUNT (USD):</span>
@@ -35,7 +35,7 @@ These receipts are "Digital Currency." Fraud is high-stakes in the "Visa Consult
   </div>
 <div data-verify-line="fee" style="margin-top: 20px; padding-top: 10px; border-top: 1px dashed #999; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Visa portals don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:usvisa-info.com/v/CGI99228877 <span data-bracket="end" data-for="fee">]</span>
+      verify:usvisa-info.com/v/CGI99228877 <span verifiable-text="end" data-for="fee">]</span>
     </div>
 </div>
 

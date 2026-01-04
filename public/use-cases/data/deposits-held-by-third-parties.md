@@ -29,7 +29,7 @@ Unlike NAV statements, verification here confirms **existence and status**, not 
     <div style="font-size: 0.8em;">Security Deposit Acknowledgment</div>
   </div>
   <div style="padding: 20px; font-size: 0.9em; line-height: 1.6;">
-    <p><strong>Tenant:</strong> <span data-bracket="start" data-for="depositsheldbythirdp">[</span>Maria Santos<br>
+    <p><strong>Tenant:</strong> <span verifiable-text="start" data-for="depositsheldbythirdp">[</span>Maria Santos<br>
     <strong>Property:</strong> 2847 Riverside Dr, Apt 4B, Chicago IL<br>
     <strong>Deposit Amount:</strong> $2,400.00<br>
     <strong>Date Received:</strong> March 1, 2025<br>
@@ -37,7 +37,7 @@ Unlike NAV statements, verification here confirms **existence and status**, not 
     <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="depositsheldbythirdp" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
-        verify:greystar.com/deposits/MS-2847-4B <span data-bracket="end" data-for="depositsheldbythirdp">]</span>
+        verify:greystar.com/deposits/MS-2847-4B <span verifiable-text="end" data-for="depositsheldbythirdp">]</span>
       </div>
     </div>
   </div>
@@ -79,7 +79,7 @@ Unlike NAV statements, verification here confirms **existence and status**, not 
     <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="depositsheldbythirdp" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
-        verify:skylinetowers-hoa.org/reserves/2025 <span data-bracket="end" data-for="depositsheldbythirdp">]</span>
+        verify:skylinetowers-hoa.org/reserves/2025 <span verifiable-text="end" data-for="depositsheldbythirdp">]</span>
       </div>
     </div>
   </div>
@@ -120,7 +120,7 @@ Unlike NAV statements, verification here confirms **existence and status**, not 
     <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="depositsheldbythirdp" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
-        verify:rendall-rittner.co.uk/sinking/KC-F12 <span data-bracket="end" data-for="depositsheldbythirdp">]</span>
+        verify:rendall-rittner.co.uk/sinking/KC-F12 <span verifiable-text="end" data-for="depositsheldbythirdp">]</span>
       </div>
     </div>
   </div>
@@ -161,7 +161,7 @@ Unlike NAV statements, verification here confirms **existence and status**, not 
     <div style="margin-top: 15px; font-size: 0.8em; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="depositsheldbythirdp" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
-        verify:morrison-law.com/trust/HK-PROBATE-2025 <span data-bracket="end" data-for="depositsheldbythirdp">]</span>
+        verify:morrison-law.com/trust/HK-PROBATE-2025 <span verifiable-text="end" data-for="depositsheldbythirdp">]</span>
       </div>
     </div>
   </div>
@@ -201,7 +201,7 @@ Unlike NAV statements, verification here confirms **existence and status**, not 
     <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="depositsheldbythirdp" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
-        verify:chicagotitle.com/escrow/26CT449821 <span data-bracket="end" data-for="depositsheldbythirdp">]</span>
+        verify:chicagotitle.com/escrow/26CT449821 <span verifiable-text="end" data-for="depositsheldbythirdp">]</span>
       </div>
     </div>
   </div>
@@ -242,7 +242,7 @@ Unlike NAV statements, verification here confirms **existence and status**, not 
     <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="depositsheldbythirdp" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
-        verify:turnerconstruction.com/retainage/AEC-MCT-2025 <span data-bracket="end" data-for="depositsheldbythirdp">]</span>
+        verify:turnerconstruction.com/retainage/AEC-MCT-2025 <span verifiable-text="end" data-for="depositsheldbythirdp">]</span>
       </div>
     </div>
   </div>
@@ -284,7 +284,7 @@ Unlike NAV statements, verification here confirms **existence and status**, not 
     <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="depositsheldbythirdp" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
-        verify:dignitymemorial.com/trust/PNT202488421 <span data-bracket="end" data-for="depositsheldbythirdp">]</span>
+        verify:dignitymemorial.com/trust/PNT202488421 <span verifiable-text="end" data-for="depositsheldbythirdp">]</span>
       </div>
     </div>
   </div>
@@ -325,7 +325,7 @@ Unlike NAV statements, verification here confirms **existence and status**, not 
     <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="depositsheldbythirdp" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
-        verify:comed.com/deposits/JL-44228899 <span data-bracket="end" data-for="depositsheldbythirdp">]</span>
+        verify:comed.com/deposits/JL-44228899 <span verifiable-text="end" data-for="depositsheldbythirdp">]</span>
       </div>
     </div>
   </div>
@@ -360,7 +360,7 @@ Unlike NAV statements, verification here confirms **existence and status**, not 
     <div style="margin-top: 15px; font-size: 0.8em; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="depositsheldbythirdp" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
-        verify:cookcountyclerk.gov/funds/2025L004421 <span data-bracket="end" data-for="depositsheldbythirdp">]</span>
+        verify:cookcountyclerk.gov/funds/2025L004421 <span verifiable-text="end" data-for="depositsheldbythirdp">]</span>
       </div>
     </div>
   </div>
@@ -395,7 +395,7 @@ Unlike NAV statements, verification here confirms **existence and status**, not 
     <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="depositsheldbythirdp" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
-        verify:courts.state.gov/bail/2025CR8827 <span data-bracket="end" data-for="depositsheldbythirdp">]</span>
+        verify:courts.state.gov/bail/2025CR8827 <span verifiable-text="end" data-for="depositsheldbythirdp">]</span>
       </div>
     </div>
   </div>
@@ -431,7 +431,7 @@ Unlike NAV statements, verification here confirms **existence and status**, not 
     <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="depositsheldbythirdp" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
-        verify:ice.gov/bonds/[tracking-number] <span data-bracket="end" data-for="depositsheldbythirdp">]</span>
+        verify:ice.gov/bonds/[tracking-number] <span verifiable-text="end" data-for="depositsheldbythirdp">]</span>
       </div>
     </div>
   </div>
@@ -466,7 +466,7 @@ Unlike NAV statements, verification here confirms **existence and status**, not 
     <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="depositsheldbythirdp" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
-        verify:congressionalcc.org/deposits/WT-2015-0042 <span data-bracket="end" data-for="depositsheldbythirdp">]</span>
+        verify:congressionalcc.org/deposits/WT-2015-0042 <span verifiable-text="end" data-for="depositsheldbythirdp">]</span>
       </div>
     </div>
   </div>

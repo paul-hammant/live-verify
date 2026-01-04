@@ -29,7 +29,7 @@ If a carrier "sneaks" a normal kitchen fire into a "Hurricane" batch, they are c
 <div style="padding: 30px;">
     <h3 style="margin-top: 0; color: #d32f2f; border-bottom: 2px solid #d32f2f; padding-bottom: 5px;">CAT BATCH LOSS SUMMARY</h3>
 <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Event:</strong> <span data-bracket="start" data-for="cat">[</span>Hurricane Helena (PCS Code: 42)<br>
+      <p><strong>Event:</strong> <span verifiable-text="start" data-for="cat">[</span>Hurricane Helena (PCS Code: 42)<br>
       <strong>Region:</strong> Florida Gulf Coast (Zip 337xx, 336xx)</p>
 <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
         <tr style="background: #f5f5f5; border-bottom: 1px solid #d32f2f;">
@@ -58,7 +58,7 @@ If a carrier "sneaks" a normal kitchen fire into a "Hurricane" batch, they are c
     </div>
 <div data-verify-line="cat" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: State Farm doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:statefarm.com/claims/v/CAT2026FL04 <span data-bracket="end" data-for="cat">]</span>
+      verify:statefarm.com/claims/v/CAT2026FL04 <span verifiable-text="end" data-for="cat">]</span>
     </div>
   </div>
 </div>

@@ -35,14 +35,14 @@ Witnessed hashes provide the immutable, third-party proof required to turn a "de
 <div style="text-align: left; margin-top: 20px; font-size: 0.9em;">
       <strong>Draw:</strong> MEGA MILLIONS<br>
       <strong>Date:</strong> JAN 02, 2026<br>
-      <strong>Ticket ID:</strong> <span data-bracket="start" data-for="lottery">[</span>MM-2026-X9Y8Z7<br>
+      <strong>Ticket ID:</strong> <span verifiable-text="start" data-for="lottery">[</span>MM-2026-X9Y8Z7<br>
       <strong>Terminal:</strong> #8472-A
     </div>
 <p style="margin-top: 20px; font-size: 0.8em; font-style: italic;">Please present this receipt at a regional claims center to begin the verification process.</p>
   </div>
 <div data-verify-line="lottery" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Lottery doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:statelottery.gov/v/MM2026X9Y8Z7 <span data-bracket="end" data-for="lottery">]</span>
+      verify:statelottery.gov/v/MM2026X9Y8Z7 <span verifiable-text="end" data-for="lottery">]</span>
   </div>
   <div style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center; margin-top: 5px;">
       witness:independent-audit.org/w

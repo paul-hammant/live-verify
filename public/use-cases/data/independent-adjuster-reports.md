@@ -23,7 +23,7 @@ furtherDerivations: 1
 <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
       <p><strong>Carrier:</strong> Liberty Mutual Insurance<br>
       <strong>Claim #:</strong> 99228877-WC<br>
-      <strong>Property:</strong> <span data-bracket="start" data-for="ia-report">[</span>123 Industrial Way, Chicago, IL</p>
+      <strong>Property:</strong> <span verifiable-text="start" data-for="ia-report">[</span>123 Industrial Way, Chicago, IL</p>
 <div style="background: #fdfdfd; border: 1px solid #eee; padding: 15px; margin: 15px 0; border-radius: 4px;">
         <p><strong>Adjuster:</strong> Robert Miller (License #TX-9982)<br>
         <strong>Inspection Date:</strong> March 15, 2026</p>
@@ -34,7 +34,7 @@ furtherDerivations: 1
     </div>
 <div data-verify-line="ia-report" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Crawford & Co doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:crawco.com/reports/v/992288 <span data-bracket="end" data-for="ia-report">]</span>
+      verify:crawco.com/reports/v/992288 <span verifiable-text="end" data-for="ia-report">]</span>
     </div>
   </div>
 </div>

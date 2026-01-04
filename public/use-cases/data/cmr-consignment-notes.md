@@ -29,7 +29,7 @@ Trucking is a fragmented industry. Verified CMRs prevent "Weight Fraud" (lying a
     <div style="display: flex; border-bottom: 1px solid #000; padding-bottom: 10px;">
       <div style="width: 50%; border-right: 1px solid #000; padding-right: 10px;">
         <strong>1. Sender (name, address, country):</strong><br>
-        <span data-bracket="start" data-for="cmr">[</span>Deutsche Elektro GmbH<br>
+        <span verifiable-text="start" data-for="cmr">[</span>Deutsche Elektro GmbH<br>
         Industriestr. 42, Berlin, DE
       </div>
       <div style="width: 50%; padding-left: 10px;">
@@ -58,7 +58,7 @@ Trucking is a fragmented industry. Verified CMRs prevent "Weight Fraud" (lying a
     </div>
 <div data-verify-line="cmr" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #555; text-align: center;"
       title="Demo only: Carrier doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:dhl-logistics.com/cmr/v/99887766 <span data-bracket="end" data-for="cmr">]</span>
+      verify:dhl-logistics.com/cmr/v/99887766 <span verifiable-text="end" data-for="cmr">]</span>
     </div>
   </div>
 </div>

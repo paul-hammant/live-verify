@@ -28,7 +28,7 @@ Impostors posing as maintenance workers use this as a pretense to gain entry: th
     </div>
     <div style="flex-grow: 1;">
       <h4 style="margin: 0; color: #1b5e20;">MAINTENANCE</h4>
-      <div style="font-size: 1.1em; font-weight: bold; margin: 5px 0;"><span data-bracket="start" data-for="maintenance">[</span>Robert M.</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin: 5px 0;">Robert M.</div>
       <div style="font-size: 0.9em; color: #333; line-height: 1.4;">
         <strong>ID:</strong> 4421<br>
         <strong>Site:</strong> 1500 Mass Ave<br>
@@ -38,11 +38,10 @@ Impostors posing as maintenance workers use this as a pretense to gain entry: th
   </div>
 <div style="padding: 0 20px 20px 20px;">
     <p style="font-size: 0.75em; color: #555; font-style: italic; text-align: center;">
-      Official Staff. Scan to verify current employment and site authorization.
+      Traditional plastic ID card. For verification, scan an e-ink badge if available.
     </p>
-    <div data-verify-line="maintenance" style="border-top: 1px dashed #999; margin-top: 10px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #2e7d32; text-align: center;"
-      title="Demo only: Equity Residential doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:equityapartments.com <span data-bracket="end" data-for="maintenance">]</span>
+    <div style="border-top: 1px dashed #999; margin-top: 10px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #999; text-align: center;">
+      https://equityapartments.com
     </div>
   </div>
 </div>
@@ -52,15 +51,15 @@ Impostors posing as maintenance workers use this as a pretense to gain entry: th
 Static cards can be lost or stolen by former employees. An **e-ink maintenance badge** with a rotating salt ensures only currently authorized staff can enter.
 
 <div style="max-width: 320px; margin: 24px auto; font-family: 'Courier New', monospace; border: 3px solid #2e7d32; border-radius: 8px; background: #f5f5f0; padding: 20px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
-  <div style="font-size: 1em; color: #2e7d32; font-weight: bold; margin-bottom: 8px;">EQUITY RESIDENTIAL</div>
-  <div style="font-size: 1em; font-weight: bold; color: #000; margin-bottom: 8px;"><span data-bracket="start" data-for="eink-maint">[</span>Robert M.</div>
+  <div style="font-size: 1em; color: #2e7d32; font-weight: bold; margin-bottom: 8px;"><span verifiable-text="start" data-for="eink-maint">[</span>EQUITY RESIDENTIAL</div>
+  <div style="font-size: 1em; font-weight: bold; color: #000; margin-bottom: 8px;">Robert M.</div>
   <div style="font-size: 1em; color: #333; margin-bottom: 8px;">Maintenance Lead</div>
   <div style="font-size: 1em; color: #2e7d32; margin-bottom: 12px;">
     Salt: 7x2p9k4m
   </div>
   <div data-verify-line="eink-maint" style="font-size: 1em; color: #555;"
     title="Demo only: Equity Residential doesn't yet offer verification endpoints">
-    vfy:equityapartments.com <span data-bracket="end" data-for="eink-maint">]</span>
+    vfy:equityapartments.com <span verifiable-text="end" data-for="eink-maint">]</span>
   </div>
 </div>
 

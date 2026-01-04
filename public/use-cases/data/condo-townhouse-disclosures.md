@@ -26,7 +26,7 @@ Sellers often "Delete" the scary pages of these reports to trick buyers. Verifie
   </div>
 <h3 style="text-align: center; text-transform: uppercase; margin-bottom: 20px;">Condominium Resale Certificate</h3>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
-    <p><strong>Association:</strong> <span data-bracket="start" data-for="condo">[</span>Skyline Towers Condominium Association<br>
+    <p><strong>Association:</strong> <span verifiable-text="start" data-for="condo">[</span>Skyline Towers Condominium Association<br>
     <strong>Unit Address:</strong> 400 Skyline Blvd, Unit 12A, Austin, TX</p>
 <div style="background: #f9f9f9; padding: 15px; border: 1px solid #eee; margin: 20px 0;">
       <p><strong>Monthly HOA Dues:</strong> $ 450.00 (Current)</p>
@@ -46,7 +46,7 @@ Sellers often "Delete" the scary pages of these reports to trick buyers. Verifie
   </div>
 <div data-verify-line="condo" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Property manager doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:premier-mgmt.com/hoas/v/SKYLINE-12A <span data-bracket="end" data-for="condo">]</span>
+      verify:premier-mgmt.com/hoas/v/SKYLINE-12A <span verifiable-text="end" data-for="condo">]</span>
   </div>
 </div>
 

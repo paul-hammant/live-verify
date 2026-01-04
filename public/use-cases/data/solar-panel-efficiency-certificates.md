@@ -26,7 +26,7 @@ These certificates are the foundation of **Solar Financing** and **Warranties**.
     <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
         <strong>Model:</strong> Vertex S+ (Black)<br>
-        <strong>Serial #:</strong> <span data-bracket="start" data-for="solar">[</span>SN-99228877-XJ<br>
+        <strong>Serial #:</strong> <span verifiable-text="start" data-for="solar">[</span>SN-99228877-XJ<br>
         <strong>Manufacturer:</strong> Trina Solar Co., Ltd.
       </div>
       <div style="text-align: right;">
@@ -55,7 +55,7 @@ These certificates are the foundation of **Solar Financing** and **Warranties**.
 <div style="padding: 20px; background: #fdfdfd; border-top: 1px solid #004d40; text-align: center;">
     <div data-verify-line="solar" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Solar manufacturers don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:trinasolar.com/v/SN99228877 <span data-bracket="end" data-for="solar">]</span>
+      verify:trinasolar.com/v/SN99228877 <span verifiable-text="end" data-for="solar">]</span>
     </div>
     <div style="font-size: 0.7em; color: #777; margin-top: 10px;">
       Scan to verify individual flash-test results, warranty coverage, and panel provenance.

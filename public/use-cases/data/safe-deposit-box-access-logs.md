@@ -21,7 +21,7 @@ In the world of **Estate Law**, these logs are "The Smoking Gun." If a box holde
   </div>
 <div style="font-size: 0.9em; line-height: 1.6;">
     <p><strong>Branch:</strong> 42ND STREET MAIN VAULT<br>
-    <strong>Box Number:</strong> <span data-bracket="start" data-for="vault">[</span>SD-992288-Z</p>
+    <strong>Box Number:</strong> <span verifiable-text="start" data-for="vault">[</span>SD-992288-Z</p>
 <table style="width: 100%; border-collapse: collapse; margin: 20px 0; border: 1px solid #000;">
       <tr style="background: #eee; border-bottom: 1px solid #000;">
         <th style="text-align: left; padding: 10px; border-right: 1px solid #000;">Access Date/Time</th>
@@ -49,7 +49,7 @@ In the world of **Estate Law**, these logs are "The Smoking Gun." If a box holde
 <div style="margin-top: 30px; padding-top: 10px; border-top: 1px dashed #999; text-align: center;">
     <div data-verify-line="vault" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: Banks don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:goliathbank.com/v/SD992288Z <span data-bracket="end" data-for="vault">]</span>
+      verify:goliathbank.com/v/SD992288Z <span verifiable-text="end" data-for="vault">]</span>
     </div>
     <div style="font-size: 0.7em; color: #666; margin-top: 10px; font-style: italic;">
       Scan to verify access integrity and witness authority. This log is a permanent bank record.

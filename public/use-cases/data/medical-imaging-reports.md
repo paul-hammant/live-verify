@@ -21,7 +21,7 @@ furtherDerivations: 1
 <div style="padding: 25px;">
     <div style="border-bottom: 2px solid #0d47a1; padding-bottom: 10px; margin-bottom: 20px;">
       <h3 style="margin: 0; color: #333;">MRI BRAIN W/O CONTRAST</h3>
-      <div style="font-size: 0.9em; color: #666;">Patient: <span data-bracket="start" data-for="imaging">[</span><strong>WAYNE, BRUCE</strong> (DOB: 02/19/1972)</div>
+      <div style="font-size: 0.9em; color: #666;">Patient: <span verifiable-text="start" data-for="imaging">[</span><strong>WAYNE, BRUCE</strong> (DOB: 02/19/1972)</div>
     </div>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
       <p><strong>Clinical Indication:</strong> Persistent headache, post-trauma evaluation.</p>
@@ -39,7 +39,7 @@ furtherDerivations: 1
     </div>
 <div data-verify-line="imaging" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Radiology firm doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:radpartners.com/reports/v/26-992288 <span data-bracket="end" data-for="imaging">]</span>
+      verify:radpartners.com/reports/v/26-992288 <span verifiable-text="end" data-for="imaging">]</span>
     </div>
   </div>
 </div>

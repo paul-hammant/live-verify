@@ -20,7 +20,7 @@ When you're about to sign a major deal, you need to know: does the person across
     <div style="font-size: 0.8em;">Delegation of Authority Confirmation</div>
   </div>
   <div style="padding: 20px; font-size: 0.9em; line-height: 1.6;">
-    <p><strong>Company:</strong> <span data-bracket="start" data-for="contractsigningautho">[</span>Vertex Solutions Ltd<br>
+    <p><strong>Company:</strong> <span verifiable-text="start" data-for="contractsigningautho">[</span>Vertex Solutions Ltd<br>
     <strong>Authorized Person:</strong> Michael Torres<br>
     <strong>Role:</strong> Commercial Director<br>
     <strong>Issued:</strong> January 1, 2026</p>
@@ -41,7 +41,7 @@ When you're about to sign a major deal, you need to know: does the person across
 <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="contractsigningautho" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
-        verify:vertex-solutions.com/authority/MT-2026 <span data-bracket="end" data-for="contractsigningautho">]</span>
+        verify:vertex-solutions.com/authority/MT-2026 <span verifiable-text="end" data-for="contractsigningautho">]</span>
       </div>
     </div>
   </div>

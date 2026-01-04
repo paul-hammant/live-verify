@@ -22,7 +22,7 @@ These documents are the "Proof of Backstop." Fraud is common in "High-Risk Urban
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px;">
       <div>
-        <strong>Insured:</strong> <span data-bracket="start" data-for="tripra">[</span>GOLIATH PLAZA HOLDINGS LLC<br>
+        <strong>Insured:</strong> <span verifiable-text="start" data-for="tripra">[</span>GOLIATH PLAZA HOLDINGS LLC<br>
         <strong>Address:</strong> 42 Wall Street, New York, NY
       </div>
       <div style="text-align: right;">
@@ -53,7 +53,7 @@ These documents are the "Proof of Backstop." Fraud is common in "High-Risk Urban
     <div style="width: 80px; height: 80px; border: 2px solid #b71c1c; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; text-align: center; color: #b71c1c;">TRIPRA<br>VERIFIED</div>
     <div data-verify-line="tripra" style="flex-grow: 1; margin-left: 20px; border-top: 1px dashed #999; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; text-align: center; font-weight: bold;"
         title="Demo only: Specialty insurers don't yet offer verification&#10;endpoints, so this is illustrative">
-        verify:zurich.com/v/TR99228877 <span data-bracket="end" data-for="tripra">]</span>
+        verify:zurich.com/v/TR99228877 <span verifiable-text="end" data-for="tripra">]</span>
     </div>
   </div>
 </div>

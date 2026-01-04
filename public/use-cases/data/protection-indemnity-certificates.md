@@ -26,7 +26,7 @@ These documents are the "Entry Ticket" to global trade. Fraud is high-stakes: ow
     <h2 style="text-align: center; color: #002d62; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px;">Certificate of Entry</h2>
 <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; border-bottom: 1px solid #eee; padding-bottom: 15px; margin-bottom: 20px;">
       <div>
-        <strong>Vessel Name:</strong> <span data-bracket="start" data-for="pi">[</span>MV OCEAN TRADER<br>
+        <strong>Vessel Name:</strong> <span verifiable-text="start" data-for="pi">[</span>MV OCEAN TRADER<br>
         <strong>IMO Number:</strong> 9922887<br>
         <strong>Gross Tonnage:</strong> 42,500 GT
       </div>
@@ -60,7 +60,7 @@ These documents are the "Entry Ticket" to global trade. Fraud is high-stakes: ow
 <div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #bbb; text-align: center;">
     <div data-verify-line="pi" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #002d62; font-weight: bold;"
       title="Demo only: P&I Clubs don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:ukpandi.com/v/IMO9922887 <span data-bracket="end" data-for="pi">]</span>
+      verify:ukpandi.com/v/IMO9922887 <span verifiable-text="end" data-for="pi">]</span>
     </div>
     <div style="font-size: 0.7em; color: #999; margin-top: 10px;">
       Scan to verify Blue Card status, war risk endorsements, and club membership validity.

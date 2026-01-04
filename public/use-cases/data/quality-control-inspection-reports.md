@@ -28,7 +28,7 @@ For critical components (e.g., bolts for an airplane wing, medical implants, or 
 <div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9em; margin-bottom: 25px;">
       <div>
-        <strong>Batch Number:</strong> <span data-bracket="start" data-for="qc">[</span>LOT-9922-XJ<br>
+        <strong>Batch Number:</strong> <span verifiable-text="start" data-for="qc">[</span>LOT-9922-XJ<br>
         <strong>Product:</strong> Grade 8 Hex Bolts (Zinc Plated)<br>
         <strong>Customer:</strong> Global Aerospace Corp.
       </div>
@@ -78,7 +78,7 @@ For critical components (e.g., bolts for an airplane wing, medical implants, or 
     </div>
     <div data-verify-line="qc" style="border-top: 1px dashed #bbb; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Testing labs don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:precision-alloys.com/v/LOT9922XJ <span data-bracket="end" data-for="qc">]</span>
+      verify:precision-alloys.com/v/LOT9922XJ <span verifiable-text="end" data-for="qc">]</span>
     </div>
   </div>
 </div>

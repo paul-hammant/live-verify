@@ -39,7 +39,7 @@ Property access rights verification provides **on-demand proof** that a person h
     <div style="font-size: 0.8em;">HM Land Registry</div>
   </div>
   <div style="padding: 20px; font-size: 0.9em; line-height: 1.6;">
-    <p><strong>Title Number:</strong> <span data-bracket="start" data-for="propertyaccessrights">[</span>BS123456<br>
+    <p><strong>Title Number:</strong> <span verifiable-text="start" data-for="propertyaccessrights">[</span>BS123456<br>
     <strong>Edition Date:</strong> 15 March 2022<br>
     <strong>This copy issued:</strong> 15 February 2026</p>
 <div style="background: #f0f4f8; padding: 15px; margin: 15px 0; border-left: 3px solid #003366;">
@@ -54,7 +54,7 @@ Property access rights verification provides **on-demand proof** that a person h
 <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="propertyaccessrights" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
-        verify:gov.uk/land-registry/titles/BS123456-2026-0215 <span data-bracket="end" data-for="propertyaccessrights">]</span>
+        verify:gov.uk/land-registry/titles/BS123456-2026-0215 <span verifiable-text="end" data-for="propertyaccessrights">]</span>
       </div>
     </div>
   </div>
@@ -90,7 +90,7 @@ Property access rights verification provides **on-demand proof** that a person h
 <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="propertyaccessrights" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
-        verify:citylet-mgmt.co.uk/tenancies/SJ-27VR-2025 <span data-bracket="end" data-for="propertyaccessrights">]</span>
+        verify:citylet-mgmt.co.uk/tenancies/SJ-27VR-2025 <span verifiable-text="end" data-for="propertyaccessrights">]</span>
       </div>
     </div>
   </div>
@@ -124,7 +124,7 @@ Property access rights verification provides **on-demand proof** that a person h
 <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="propertyaccessrights" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
-        verify:gardencottagebath.co.uk/bookings/BK-2026-44721 <span data-bracket="end" data-for="propertyaccessrights">]</span>
+        verify:gardencottagebath.co.uk/bookings/BK-2026-44721 <span verifiable-text="end" data-for="propertyaccessrights">]</span>
       </div>
     </div>
   </div>
@@ -157,7 +157,7 @@ Property access rights verification provides **on-demand proof** that a person h
 <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="propertyaccessrights" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
-        verify:securekey-auth.co.uk/keyholders/PG-42OS-DG <span data-bracket="end" data-for="propertyaccessrights">]</span>
+        verify:securekey-auth.co.uk/keyholders/PG-42OS-DG <span verifiable-text="end" data-for="propertyaccessrights">]</span>
       </div>
     </div>
   </div>

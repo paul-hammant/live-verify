@@ -21,7 +21,7 @@ The **Certificate of Fingerprinting** is the paper signed by a Notary Public or 
     <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">CERTIFICATE OF FINGERPRINTING</h2>
   </div>
 <div style="font-size: 1em; line-height: 1.6; color: #333; text-align: justify;">
-    <p>I, the undersigned Notary Public, hereby certify that <span data-bracket="start" data-for="finger">[</span><strong>JOHN JACOB DOE</strong> (DOB: 05/15/1985) appeared before me this day and was fingerprinted using the standard FBI FD-258 card format.</p>
+    <p>I, the undersigned Notary Public, hereby certify that <span verifiable-text="start" data-for="finger">[</span><strong>JOHN JACOB DOE</strong> (DOB: 05/15/1985) appeared before me this day and was fingerprinted using the standard FBI FD-258 card format.</p>
 <div style="display: flex; justify-content: space-around; margin: 20px 0;">
       <div style="width: 80px; height: 100px; border: 1px solid #999; background: #eee; display: flex; align-items: center; justify-content: center; font-size: 0.6em; color: #777;">[R THUMB]</div>
       <div style="width: 80px; height: 100px; border: 1px solid #999; background: #eee; display: flex; align-items: center; justify-content: center; font-size: 0.6em; color: #777;">[L THUMB]</div>
@@ -40,7 +40,7 @@ The **Certificate of Fingerprinting** is the paper signed by a Notary Public or 
   </div>
 <div data-verify-line="finger" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Notary platform doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:notary-check.gov/biometrics/v/99228877 <span data-bracket="end" data-for="finger">]</span>
+      verify:notary-check.gov/biometrics/v/99228877 <span verifiable-text="end" data-for="finger">]</span>
   </div>
 </div>
 

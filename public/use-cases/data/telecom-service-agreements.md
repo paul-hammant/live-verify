@@ -25,7 +25,7 @@ The problem is that these agreements are often buried in 50-page PDFs. During a 
 <div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9em; margin-bottom: 25px;">
       <div>
-        <strong>Customer:</strong> <span data-bracket="start" data-for="telecom">[</span>GLOBAL LOGISTICS CORP.<br>
+        <strong>Customer:</strong> <span verifiable-text="start" data-for="telecom">[</span>GLOBAL LOGISTICS CORP.<br>
         <strong>Account #:</strong> 8877-6655-44<br>
         <strong>Service:</strong> Dedicated Fiber (10Gbps)
       </div>
@@ -63,7 +63,7 @@ The problem is that these agreements are often buried in 50-page PDFs. During a 
 <div style="padding: 20px; background: #eee; border-top: 1px solid #ddd; text-align: center;">
     <div data-verify-line="telecom" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Telecoms don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:verizon.com/sla/v/VZ992288X <span data-bracket="end" data-for="telecom">]</span>
+      verify:verizon.com/sla/v/VZ992288X <span verifiable-text="end" data-for="telecom">]</span>
     </div>
     <div style="font-size: 0.7em; color: #777; margin-top: 10px; font-style: italic;">
       Scan to verify contract terms, performance tiers, and SLA credit eligibility.

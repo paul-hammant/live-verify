@@ -38,7 +38,7 @@ In the **Bernie Madoff** scandal, the fraud was possible because Madoff wrote hi
 <div style="padding: 30px;">
     <h3 style="margin-top: 0; color: #002d62; border-bottom: 2px solid #002d62; padding-bottom: 5px;">MONTHLY CAPITAL ACCOUNT STATEMENT</h3>
 <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Fund:</strong> <span data-bracket="start" data-for="nav">[</span>Titan Alpha Hedge Fund, LP<br>
+      <p><strong>Fund:</strong> <span verifiable-text="start" data-for="nav">[</span>Titan Alpha Hedge Fund, LP<br>
       <strong>Investor:</strong> Wayne Family Foundation</p>
 <div style="background: #f0f4f8; padding: 15px; border: 1px solid #d1d9e6; margin: 15px 0;">
         <table style="width: 100%; font-size: 0.95em;">
@@ -64,7 +64,7 @@ In the **Bernie Madoff** scandal, the fraud was possible because Madoff wrote hi
     </div>
 <div data-verify-line="nav" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Citco doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:citco.com/statements/v/NAV992288 <span data-bracket="end" data-for="nav">]</span>
+      verify:citco.com/statements/v/NAV992288 <span verifiable-text="end" data-for="nav">]</span>
     </div>
   </div>
 </div>

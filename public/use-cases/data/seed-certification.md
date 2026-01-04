@@ -23,7 +23,7 @@ These tags are the "Intellectual Property" of the seed world. Fraud is common in
     <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px;">
       <div style="font-size: 0.9em; line-height: 1.4;">
         <strong>Crop:</strong> Winter Wheat<br>
-        <strong>Variety:</strong> <span data-bracket="start" data-for="seed">[</span>GOLDEN-HARVEST 42<br>
+        <strong>Variety:</strong> <span verifiable-text="start" data-for="seed">[</span>GOLDEN-HARVEST 42<br>
         <strong>Lot #:</strong> 9922-8877-XJ
       </div>
       <div style="text-align: right; font-size: 0.8em; color: #004a99;">
@@ -55,7 +55,7 @@ These tags are the "Intellectual Property" of the seed world. Fraud is common in
 <div style="padding: 15px; background: #fff; text-align: center;">
     <div data-verify-line="seed" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Seed certifying agencies don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:aosca.org/v/NY992288-GOLDEN <span data-bracket="end" data-for="seed">]</span>
+      verify:aosca.org/v/NY992288-GOLDEN <span verifiable-text="end" data-for="seed">]</span>
     </div>
     <div style="font-size: 0.65em; color: #666; margin-top: 8px; font-style: italic;">
       Scan to verify genetic purity, germination test date, and IP licensing authority.

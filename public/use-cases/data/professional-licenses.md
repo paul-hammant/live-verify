@@ -28,7 +28,7 @@ The problem is that physical licenses—especially the wallet-sized cards carrie
     </div>
     <div style="flex-grow: 1;">
       <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Practitioner Name</div>
-      <div style="font-size: 1.2em; font-weight: bold; margin: 0 0 10px 0; color: #1a237e;"><span data-bracket="start" data-for="prof">[</span>DR. SARAH J. DOE</div>
+      <div style="font-size: 1.2em; font-weight: bold; margin: 0 0 10px 0; color: #1a237e;"><span verifiable-text="start" data-for="prof">[</span>DR. SARAH J. DOE</div>
 <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">License #</div>
       <div style="font-size: 1em; font-weight: bold; margin: 0 0 10px 0;">ID: NY-992288-X</div>
 <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Profession</div>
@@ -41,7 +41,7 @@ The problem is that physical licenses—especially the wallet-sized cards carrie
     </div>
     <div data-verify-line="prof" style="border-top: 1px dashed #999; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #1a237e; text-align: center; font-weight: bold;"
       title="Demo only: State boards don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:nysed.gov/v/med/NY992288X <span data-bracket="end" data-for="prof">]</span>
+      verify:nysed.gov/v/med/NY992288X <span verifiable-text="end" data-for="prof">]</span>
     </div>
   </div>
 </div>

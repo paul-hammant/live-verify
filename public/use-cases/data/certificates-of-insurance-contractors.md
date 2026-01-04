@@ -30,7 +30,7 @@ COI fraud is rampant. Contractors often buy a policy for one day, print the COI,
       </div>
       <div style="width: 50%; border: 1px solid #000; border-left: none; padding: 5px; font-size: 0.8em;">
         <strong>INSURED:</strong><br>
-        <span data-bracket="start" data-for="coi">[</span>Apex Construction Services, LLC<br>
+        <span verifiable-text="start" data-for="coi">[</span>Apex Construction Services, LLC<br>
         400 Industrial Way<br>
         Oakland, CA 94621
       </div>
@@ -59,7 +59,7 @@ COI fraud is rampant. Contractors often buy a policy for one day, print the COI,
     </div>
 <div data-verify-line="coi" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.7em; color: #555; text-align: center;"
       title="Demo only: Insurer doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:marsh.com/coi/v/99887766 <span data-bracket="end" data-for="coi">]</span>
+      verify:marsh.com/coi/v/99887766 <span verifiable-text="end" data-for="coi">]</span>
     </div>
   </div>
 </div>

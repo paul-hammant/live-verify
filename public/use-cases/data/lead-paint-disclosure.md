@@ -16,7 +16,7 @@ furtherDerivations: 1
 <div style="padding: 25px;">
     <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
       <h3 style="margin: 0; color: #333;">DISCLOSURE OF INFORMATION</h3>
-      <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;">Property: <span data-bracket="start" data-for="lead">[</span>123 Historic Street, Boston, MA</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;">Property: <span verifiable-text="start" data-for="lead">[</span>123 Historic Street, Boston, MA</div>
     </div>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
       <p><strong>Seller/Lessor's Disclosure:</strong></p>
@@ -35,7 +35,7 @@ furtherDerivations: 1
     </div>
 <div data-verify-line="lead" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: EPA doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:epa.gov/lead/v/MA-123-HISTORIC <span data-bracket="end" data-for="lead">]</span>
+      verify:epa.gov/lead/v/MA-123-HISTORIC <span verifiable-text="end" data-for="lead">]</span>
     </div>
   </div>
 </div>

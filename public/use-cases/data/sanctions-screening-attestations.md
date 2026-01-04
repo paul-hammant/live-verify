@@ -25,7 +25,7 @@ These documents are the "Legal Safe Harbor" for high-value trade. Fraud is high-
 <div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
-        <strong>Subject:</strong> <span data-bracket="start" data-for="sanc">[</span>GLOBAL PETROLEUM TRADING LTD.<br>
+        <strong>Subject:</strong> <span verifiable-text="start" data-for="sanc">[</span>GLOBAL PETROLEUM TRADING LTD.<br>
         <strong>Jurisdiction:</strong> Dubai, UAE<br>
         <strong>Entity ID:</strong> AE-99228877
       </div>
@@ -51,7 +51,7 @@ These documents are the "Legal Safe Harbor" for high-value trade. Fraud is high-
 <div style="padding: 20px; background: #f5f5f5; border-top: 1px dashed #999; text-align: center;">
     <div data-verify-line="sanc" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: Screening providers don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:dowjones.com/v/DJ99228877 <span data-bracket="end" data-for="sanc">]</span>
+      verify:dowjones.com/v/DJ99228877 <span verifiable-text="end" data-for="sanc">]</span>
     </div>
     <div style="font-size: 0.7em; color: #777; margin-top: 10px;">
       Scan to verify screening status, view the specific lists checked, and confirm dataset freshness.

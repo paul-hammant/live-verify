@@ -18,7 +18,7 @@ furtherDerivations: 1
     <div style="display: flex; justify-content: space-between;">
       <div>
         <strong>Customer:</strong> Apex Structural Engineering<br>
-        <strong>Heat Number:</strong> <span data-bracket="start" data-for="mtr">[</span>HEAT-992288-X
+        <strong>Heat Number:</strong> <span verifiable-text="start" data-for="mtr">[</span>HEAT-992288-X
       </div>
       <div style="text-align: right;">
         <strong>Report #:</strong> MTR-2026-042<br>
@@ -52,7 +52,7 @@ furtherDerivations: 1
     </div>
 <div data-verify-line="mtr" style="border-top: 1px dashed #999; margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #555; text-align: center;"
       title="Demo only: Steel mill doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:sheffield-steel.co.uk/mtr/v/HEAT992288 <span data-bracket="end" data-for="mtr">]</span>
+      verify:sheffield-steel.co.uk/mtr/v/HEAT992288 <span verifiable-text="end" data-for="mtr">]</span>
     </div>
   </div>
 </div>

@@ -22,7 +22,7 @@ furtherDerivations: 1
       </div>
       <div style="text-align: right;">
         <strong>Insured:</strong><br>
-        <span data-bracket="start" data-for="retro">[</span>MegaCorp Logistics, Inc.<br>
+        <span verifiable-text="start" data-for="retro">[</span>MegaCorp Logistics, Inc.<br>
         Policy No: WC-9922-88<br>
         Adjustment Period: 3rd (36 Months)
       </div>
@@ -66,7 +66,7 @@ furtherDerivations: 1
     </div>
 <div data-verify-line="retro" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Insurer doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:chubb.com/retro/v/z8x7c6 <span data-bracket="end" data-for="retro">]</span>
+      verify:chubb.com/retro/v/z8x7c6 <span verifiable-text="end" data-for="retro">]</span>
     </div>
   </div>
 </div>

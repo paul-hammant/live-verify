@@ -28,7 +28,7 @@ Lenders use W-2s to approve mortgages, and tax authorities use them to verify yo
         123 FACTORY LANE, SPRINGFIELD, USA
       </div>
       <div style="text-align: right;">
-        <strong>Control Number:</strong> <span data-bracket="start" data-for="tax">[</span>CN-992288-XJ<br>
+        <strong>Control Number:</strong> <span verifiable-text="start" data-for="tax">[</span>CN-992288-XJ<br>
         <strong>Employee SSN:</strong> XXX-XX-1234
       </div>
     </div>
@@ -53,7 +53,7 @@ Lenders use W-2s to approve mortgages, and tax authorities use them to verify yo
     </div>
     <div data-verify-line="tax" style="border-top: 1px dashed #999; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: Payroll providers don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:adp.com/tax/v/W2-2025-SMITH1234 <span data-bracket="end" data-for="tax">]</span>
+      verify:adp.com/tax/v/W2-2025-SMITH1234 <span verifiable-text="end" data-for="tax">]</span>
     </div>
   </div>
 </div>

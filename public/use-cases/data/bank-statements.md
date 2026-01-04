@@ -30,7 +30,7 @@ Verifying a bank statement directly against the bank's domain ensures that the b
     <div style="display: flex; justify-content: space-between; margin-bottom: 30px;">
       <div>
         <strong>Account Holder:</strong><br>
-        <span data-bracket="start" data-for="bank">[</span><strong>WAYNE ENTERPRISES, INC.</strong><br>
+        <span verifiable-text="start" data-for="bank">[</span><strong>WAYNE ENTERPRISES, INC.</strong><br>
         1007 Mountain Drive<br>
         Gotham City, NY 10001
       </div>
@@ -64,7 +64,7 @@ Verifying a bank statement directly against the bank's domain ensures that the b
     </div>
 <div data-verify-line="bank" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Chase doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:chase.com/statements/v/x9y8z7 <span data-bracket="end" data-for="bank">]</span>
+      verify:chase.com/statements/v/x9y8z7 <span verifiable-text="end" data-for="bank">]</span>
     </div>
   </div>
 </div>

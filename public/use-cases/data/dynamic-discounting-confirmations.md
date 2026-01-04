@@ -29,7 +29,7 @@ Suppliers use these **Early Payment Confirmations** to prove their cash flow to 
 <div style="padding: 25px;">
     <h3 style="margin-top: 0; color: #002d62; border-bottom: 2px solid #002d62; padding-bottom: 5px;">EARLY PAYMENT CONFIRMATION</h3>
 <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Supplier:</strong> <span data-bracket="start" data-for="discount">[</span>Apex Manufacturing, Ltd.<br>
+      <p><strong>Supplier:</strong> <span verifiable-text="start" data-for="discount">[</span>Apex Manufacturing, Ltd.<br>
       <strong>Buyer:</strong> Global Retail Hub, Corp.</p>
 <div style="background: #f0f4f8; padding: 15px; border: 1px solid #d1d9e6; margin: 15px 0;">
         <table style="width: 100%; font-size: 0.95em;">
@@ -55,7 +55,7 @@ Suppliers use these **Early Payment Confirmations** to prove their cash flow to 
     </div>
 <div data-verify-line="discount" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: C2FO doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:c2fo.com/confirm/v/C2-998877 <span data-bracket="end" data-for="discount">]</span>
+      verify:c2fo.com/confirm/v/C2-998877 <span verifiable-text="end" data-for="discount">]</span>
     </div>
   </div>
 </div>

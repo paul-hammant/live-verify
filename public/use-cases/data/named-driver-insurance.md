@@ -28,7 +28,7 @@ furtherDerivations: 1
       <p style="margin-top: 0;"><strong>PERSONS ENTITLED TO DRIVE:</strong></p>
       <ul style="margin: 0; padding-left: 20px;">
         <li>John Jacob Doe (Policyholder)</li>
-        <li><span data-bracket="start" data-for="driver">[</span><strong>Sarah Jane Smith</strong> (Named Driver)</li>
+        <li><span verifiable-text="start" data-for="driver">[</span><strong>Sarah Jane Smith</strong> (Named Driver)</li>
       </ul>
     </div>
 <div style="font-size: 0.8em; margin-top: 10px;">
@@ -40,7 +40,7 @@ furtherDerivations: 1
     </div>
 <div data-verify-line="driver" style="border-top: 1px dashed #999; margin-top: 15px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.7em; color: #555; text-align: center;"
       title="Demo only: Admiral doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:admiral.com/check/v/99887766 <span data-bracket="end" data-for="driver">]</span>
+      verify:admiral.com/check/v/99887766 <span verifiable-text="end" data-for="driver">]</span>
     </div>
   </div>
 </div>

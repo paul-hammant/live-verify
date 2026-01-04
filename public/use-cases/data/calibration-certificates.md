@@ -32,7 +32,7 @@ A **Calibration Certificate** is proof that a measuring device or tool is accura
       Description: Analytical Balance<br>
       Manufacturer: Mettler Toledo<br>
       Model: XPR205<br>
-      Serial Number: <span data-bracket="start" data-for="cal-long">[</span>MT-9988776655
+      Serial Number: <span verifiable-text="start" data-for="cal-long">[</span>MT-9988776655
     </div>
 <div style="display: flex; justify-content: space-between;">
       <div>
@@ -69,7 +69,7 @@ A **Calibration Certificate** is proof that a measuring device or tool is accura
   </div>
 <div data-verify-line="cal-long" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Lab doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:metrologyservices.com/v/CERT9988 <span data-bracket="end" data-for="cal-long">]</span>
+      verify:metrologyservices.com/v/CERT9988 <span verifiable-text="end" data-for="cal-long">]</span>
   </div>
 </div>
 

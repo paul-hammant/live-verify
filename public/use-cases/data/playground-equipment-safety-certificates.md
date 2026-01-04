@@ -25,7 +25,7 @@ These documents are the "Shield of Public Trust." Fraud is high-stakes: un-certi
 <div style="padding: 25px; background: #fff;">
     <div style="border-bottom: 1px solid #eee; padding-bottom: 10px; margin-bottom: 15px;">
       <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Location / Site</div>
-      <div style="font-size: 1.2em; font-weight: bold; color: #333;"><span data-bracket="start" data-for="play">[</span>ZILKER PARK (SOUTH AREA)</div>
+      <div style="font-size: 1.2em; font-weight: bold; color: #333;"><span verifiable-text="start" data-for="play">[</span>ZILKER PARK (SOUTH AREA)</div>
 <div style="font-size: 0.9em; color: #333; margin-top: 5px;">
         Structure ID: #992288-CLIMB ("The Castle")
       </div>
@@ -60,7 +60,7 @@ These documents are the "Shield of Public Trust." Fraud is high-stakes: un-certi
 <div style="padding: 15px 20px 20px 20px; background: #fff; border-top: 1px dashed #bbb; text-align: center;">
     <div data-verify-line="play" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #f57c00; font-weight: bold;"
       title="Demo only: Municipalities don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:austin-parks.gov/v/ZILKER9922 <span data-bracket="end" data-for="play">]</span>
+      verify:austin-parks.gov/v/ZILKER9922 <span verifiable-text="end" data-for="play">]</span>
     </div>
     <div style="font-size: 0.65em; color: #999; margin-top: 8px; font-style: italic;">
       Scan to verify current safety rating, view surfacing depth history, and report a defect.

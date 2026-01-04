@@ -24,7 +24,7 @@ Shippers often "Guess" the weight to save the $50 fee for a certified scale. Thi
 <div style="padding: 20px;">
     <div style="display: flex; justify-content: space-between; font-size: 0.9em; margin-bottom: 20px;">
       <div>
-        <strong>Container #:</strong> <span data-bracket="start" data-for="vgm">[</span>MSKU-123456-7<br>
+        <strong>Container #:</strong> <span verifiable-text="start" data-for="vgm">[</span>MSKU-123456-7<br>
         <strong>Seal #:</strong> MAE-998877
       </div>
       <div style="text-align: right;">
@@ -46,7 +46,7 @@ Shippers often "Guess" the weight to save the $50 fee for a certified scale. Thi
     </div>
 <div data-verify-line="vgm" style="border-top: 1px dashed #999; margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #555; text-align: center;"
       title="Demo only: Shipper portal doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:global-furniture.com/vgm/v/MSKU123456 <span data-bracket="end" data-for="vgm">]</span>
+      verify:global-furniture.com/vgm/v/MSKU123456 <span verifiable-text="end" data-for="vgm">]</span>
     </div>
   </div>
 </div>

@@ -23,7 +23,7 @@ These documents are "High-Velocity" proofs. Fraud is rampant in "Post-Accident" 
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 10px;">
       <div>
         <div style="font-size: 0.7em; color: #888; text-transform: uppercase;">Covered Driver</div>
-        <div style="font-size: 1.1em; font-weight: bold; color: #333;"><span data-bracket="start" data-for="temp">[</span>SARAH JANE SMITH</div>
+        <div style="font-size: 1.1em; font-weight: bold; color: #333;"><span verifiable-text="start" data-for="temp">[</span>SARAH JANE SMITH</div>
       </div>
       <div style="text-align: right;">
         <div style="font-size: 0.7em; color: #888; text-transform: uppercase;">License #</div>
@@ -46,7 +46,7 @@ These documents are "High-Velocity" proofs. Fraud is rampant in "Post-Accident" 
 <div style="padding: 15px 20px 20px 20px; background: #f8f9fa; border-top: 1px solid #dee2e6; text-align: center;">
     <div data-verify-line="temp" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #007bff; font-weight: bold;"
       title="Demo only: Insurtech firms don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:cuvva.com/v/BIND99228877 <span data-bracket="end" data-for="temp">]</span>
+      verify:cuvva.com/v/BIND99228877 <span verifiable-text="end" data-for="temp">]</span>
     </div>
     <div style="font-size: 0.65em; color: #6c757d; margin-top: 8px;">
       Scan to verify real-time policy activation and driver eligibility. Coverage is time-sensitive.

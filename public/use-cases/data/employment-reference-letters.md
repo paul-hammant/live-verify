@@ -26,7 +26,7 @@ Fraud is common: "Nanny Mills" or "Reference Mills" sell fake employment letters
     <p>To Whom It May Concern,</p>
     <p>This document serves as an official confirmation of the employment history for the individual named below:</p>
 <div style="margin: 20px 0; border-left: 4px solid #000; padding-left: 20px; background: #f9f9f9; padding-top: 10px; padding-bottom: 10px;">
-      <p><strong>Employee:</strong> <span data-bracket="start" data-for="voe">[</span><strong>John D. Smith</strong><br>
+      <p><strong>Employee:</strong> <span verifiable-text="start" data-for="voe">[</span><strong>John D. Smith</strong><br>
       <strong>Position:</strong> Senior Software Engineer<br>
       <strong>Dates:</strong> March 1, 2020 to October 31, 2025<br>
       <strong>Status:</strong> Voluntary Separation / Eligible for Rehire</p>
@@ -44,7 +44,7 @@ Fraud is common: "Nanny Mills" or "Reference Mills" sell fake employment letters
   </div>
 <div data-verify-line="voe" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Acme Corp doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:acme-corp.com/hr/v/992288-JDS <span data-bracket="end" data-for="voe">]</span>
+      verify:acme-corp.com/hr/v/992288-JDS <span verifiable-text="end" data-for="voe">]</span>
   </div>
 </div>
 

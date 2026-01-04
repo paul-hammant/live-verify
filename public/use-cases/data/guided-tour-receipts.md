@@ -24,7 +24,7 @@ Small tour operators often don't have real-time computers in the field. They rel
 <div style="font-size: 0.9em; line-height: 1.4;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
       <div>
-        <strong>Participant:</strong> <span data-bracket="start" data-for="tour">[</span><strong>SARAH JANE SMITH</strong><br>
+        <strong>Participant:</strong> <span verifiable-text="start" data-for="tour">[</span><strong>SARAH JANE SMITH</strong><br>
         <strong>Booking #:</strong> SE-99228877
       </div>
       <div style="text-align: right;">
@@ -57,7 +57,7 @@ Small tour operators often don't have real-time computers in the field. They rel
     </div>
 <div data-verify-line="tour" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Tour operator doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:sahara-expeditions.com/v/SE99228877 <span data-bracket="end" data-for="tour">]</span>
+      verify:sahara-expeditions.com/v/SE99228877 <span verifiable-text="end" data-for="tour">]</span>
     </div>
   </div>
 </div>

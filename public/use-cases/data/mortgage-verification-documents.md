@@ -18,7 +18,7 @@ furtherDerivations: 2
     <p>To Whom It May Concern,</p>
     <p>This letter confirms the employment and salary details for the individual named below, as requested for mortgage underwriting purposes:</p>
 <div style="margin: 20px 0; border-left: 4px solid #000; padding-left: 20px; background: #f9f9f9; padding-top: 10px; padding-bottom: 10px;">
-      <p><strong>Employee:</strong> <span data-bracket="start" data-for="mort-voe">[</span><strong>John D. Smith</strong><br>
+      <p><strong>Employee:</strong> <span verifiable-text="start" data-for="mort-voe">[</span><strong>John D. Smith</strong><br>
       <strong>Job Title:</strong> Senior Systems Architect<br>
       <strong>Start Date:</strong> March 1, 2020 (Current/Active)<br>
       <strong>Base Salary:</strong> $ 145,000.00 / Annual</p>
@@ -36,7 +36,7 @@ furtherDerivations: 2
   </div>
 <div data-verify-line="mort-voe" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Acme Corp doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:acme-global.com/hr/v/992288-JDS <span data-bracket="end" data-for="mort-voe">]</span>
+      verify:acme-global.com/hr/v/992288-JDS <span verifiable-text="end" data-for="mort-voe">]</span>
   </div>
 </div>
 
@@ -123,7 +123,7 @@ _[Content merged from: mortgage-income-verification]_
 <div style="font-size: 0.9em; line-height: 1.4;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
       <div>
-        <strong>Employee:</strong> <span data-bracket="start" data-for="income">[</span><strong>JOHN JACOB DOE</strong><br>
+        <strong>Employee:</strong> <span verifiable-text="start" data-for="income">[</span><strong>JOHN JACOB DOE</strong><br>
         <strong>Address:</strong> 123 Maple St, Anytown, USA
       </div>
       <div style="text-align: right;">
@@ -161,7 +161,7 @@ _[Content merged from: mortgage-income-verification]_
     </div>
 <div data-verify-line="income" style="border-top: 1px dashed #999; margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Acme Corp doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:acme-global.com/payroll/v/992288-2026-05 <span data-bracket="end" data-for="income">]</span>
+      verify:acme-global.com/payroll/v/992288-2026-05 <span verifiable-text="end" data-for="income">]</span>
     </div>
   </div>
 </div>

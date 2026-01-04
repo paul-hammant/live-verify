@@ -29,7 +29,7 @@ The result is an **Adjustment Summary**. Because these documents often trigger m
 <div style="padding: 30px;">
     <h3 style="margin-top: 0; color: #1a237e; border-bottom: 2px solid #1a237e; padding-bottom: 5px;">BUSINESS INTERRUPTION ADJUSTMENT SUMMARY</h3>
 <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Insured:</strong> <span data-bracket="start" data-for="bi-claim">[</span>The Grande Cafe & Bistro, LLC<br>
+      <p><strong>Insured:</strong> <span verifiable-text="start" data-for="bi-claim">[</span>The Grande Cafe & Bistro, LLC<br>
       <strong>Location:</strong> 123 Main St, New Orleans, LA<br>
       <strong>Incident Date:</strong> August 29, 2025 (Hurricane Damage)</p>
 <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
@@ -59,7 +59,7 @@ The result is an **Adjustment Summary**. Because these documents often trigger m
     </div>
 <div data-verify-line="bi-claim" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Liberty Mutual doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:libertymutual.com/claims/v/BI992288 <span data-bracket="end" data-for="bi-claim">]</span>
+      verify:libertymutual.com/claims/v/BI992288 <span verifiable-text="end" data-for="bi-claim">]</span>
     </div>
   </div>
 </div>

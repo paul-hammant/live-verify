@@ -25,7 +25,7 @@ No bank will lend money to a film set without seeing a verified bond. Fraudsters
 <div style="font-size: 1em; line-height: 1.6; color: #333; text-align: justify;">
     <p>This certifies that a Completion Guaranty has been issued for the production titled:</p>
     <p style="text-align: center; font-size: 1.3em; font-weight: bold; margin: 15px 0;">
-      <span data-bracket="start" data-for="film">[</span>"THE VERIFICATION CHRONICLES"
+      <span verifiable-text="start" data-for="film">[</span>"THE VERIFICATION CHRONICLES"
     </p>
 <div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin: 20px 0;">
       <strong>Production Company:</strong> Independent Epic, LLC<br>
@@ -45,7 +45,7 @@ No bank will lend money to a film set without seeing a verified bond. Fraudsters
   </div>
 <div data-verify-line="film" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Film Finances doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:filmfinances.com/bonds/v/FF992288 <span data-bracket="end" data-for="film">]</span>
+      verify:filmfinances.com/bonds/v/FF992288 <span verifiable-text="end" data-for="film">]</span>
   </div>
 </div>
 

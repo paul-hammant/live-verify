@@ -25,7 +25,7 @@ You need this "Official" paper to apply for Grad School or to prove to an employ
 <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
       <div>
-        <strong>Student:</strong> <span data-bracket="start" data-for="transcript">[</span><strong>PONDER STIBBONS</strong><br>
+        <strong>Student:</strong> <span verifiable-text="start" data-for="transcript">[</span><strong>PONDER STIBBONS</strong><br>
         <strong>Student ID:</strong> OX-992288
       </div>
       <div style="text-align: right;">
@@ -70,7 +70,7 @@ You need this "Official" paper to apply for Grad School or to prove to an employ
   </div>
 <div data-verify-line="transcript" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Oxford doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:ox.ac.uk/registrar/v/992288-PS <span data-bracket="end" data-for="transcript">]</span>
+      verify:ox.ac.uk/registrar/v/992288-PS <span verifiable-text="end" data-for="transcript">]</span>
   </div>
 </div>
 

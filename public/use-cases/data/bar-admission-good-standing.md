@@ -23,7 +23,7 @@ Because attorneys often move between states for specific cases, they must show t
   </div>
 <div style="font-size: 1em; line-height: 1.8; color: #000; text-align: justify;">
     <p>I, Susanna Rojas, Clerk of the Appellate Division of the Supreme Court of the State of New York, First Judicial Department, do hereby certify that</p>
-<p style="text-align: center; font-size: 1.3em; font-weight: bold; margin: 20px 0;"><span data-bracket="start" data-for="bar">[</span>SAUL GOODMAN</p>
+<p style="text-align: center; font-size: 1.3em; font-weight: bold; margin: 20px 0;"><span verifiable-text="start" data-for="bar">[</span>SAUL GOODMAN</p>
 <p>was duly licensed and admitted to practice as an Attorney and Counselor-at-Law in all the courts of this State on <strong>May 15, 2010</strong>, has duly taken and subscribed the statutory oath of office, and has been enrolled in the Roll of Attorneys and Counselors-at-Law on file in my office, is currently in <strong>GOOD STANDING</strong>, and is registered with the Office of Court Administration.</p>
   </div>
 <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
@@ -37,7 +37,7 @@ Because attorneys often move between states for specific cases, they must show t
   </div>
 <div data-verify-line="bar" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: State Bar doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:nycourts.gov/attorneys/v/998877 <span data-bracket="end" data-for="bar">]</span>
+      verify:nycourts.gov/attorneys/v/998877 <span verifiable-text="end" data-for="bar">]</span>
   </div>
 </div>
 

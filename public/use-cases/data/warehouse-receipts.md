@@ -136,7 +136,7 @@ Because they represent high-value physical assets, these receipts are a primary 
 <div style="padding: 20px;">
     <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.85em; margin-bottom: 20px;">
       <div>
-        <strong>Depositor:</strong> <span data-bracket="start" data-for="warehouse">[</span>GLOBAL TECH IMPORTS LLC<br>
+        <strong>Depositor:</strong> <span verifiable-text="start" data-for="warehouse">[</span>GLOBAL TECH IMPORTS LLC<br>
         <strong>Account #:</strong> ACCT-9922-88<br>
         <strong>Address:</strong> London, UK
       </div>
@@ -171,7 +171,7 @@ Because they represent high-value physical assets, these receipts are a primary 
 <div style="padding: 20px; background: #fdfdfd; border-top: 1px solid #000; text-align: center;">
     <div data-verify-line="warehouse" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Warehouses don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:metro-logistics.com/v/WR20268844 <span data-bracket="end" data-for="warehouse">]</span>
+      verify:metro-logistics.com/v/WR20268844 <span verifiable-text="end" data-for="warehouse">]</span>
     </div>
     <div style="font-size: 0.7em; color: #666; margin-top: 10px; font-style: italic;">
       Scan to verify inventory presence, lien status, and owner authenticity.

@@ -32,7 +32,7 @@ The Carnet is a physical booklet of colored papers that customs officers stamp a
       </div>
     </div>
 <div style="font-size: 0.9em; line-height: 1.5; color: #333;">
-      <p><strong>Holder:</strong> <span data-bracket="start" data-for="carnet">[</span>RockBand Tours, LLC<br>
+      <p><strong>Holder:</strong> <span verifiable-text="start" data-for="carnet">[</span>RockBand Tours, LLC<br>
       123 Soundstage Way, Nashville, TN</p>
 <p><strong>General Description of Goods:</strong><br>
       Musical Instruments, Amplifiers, and Audio Recording Equipment for Professional Use (Total Items: 42)</p>
@@ -44,7 +44,7 @@ The Carnet is a physical booklet of colored papers that customs officers stamp a
     </div>
 <div data-verify-line="carnet" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: USCIB doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:uscib.org/carnets/v/US998877 <span data-bracket="end" data-for="carnet">]</span>
+      verify:uscib.org/carnets/v/US998877 <span verifiable-text="end" data-for="carnet">]</span>
     </div>
   </div>
 </div>

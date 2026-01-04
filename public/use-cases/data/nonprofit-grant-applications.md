@@ -23,7 +23,7 @@ This letter is the "proof of income" for non-profits. They show it to other dono
     <div style="font-style: italic; color: #7f8c8d;">Investing in the Future</div>
   </div>
 <p>March 10, 2026</p>
-<p>To: <span data-bracket="start" data-for="grant">[</span>Community Health Initiative<br>
+<p>To: <span verifiable-text="start" data-for="grant">[</span>Community Health Initiative<br>
   Attn: Executive Director</p>
 <p>Dear Partners,</p>
 <p>We are pleased to inform you that the Alliance has approved a grant in the amount of <strong>$500,000.00</strong> to support your mobile vaccination clinic expansion.</p>
@@ -34,7 +34,7 @@ This letter is the "proof of income" for non-profits. They show it to other dono
     <em>Director of Global Health</em>
   </div>
 <div data-verify-line="grant" style="border-top: 1px dashed #ccc; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;">
-    verify:alliance.org/grants/v/2026-chi-500k <span data-bracket="end" data-for="grant">]</span>
+    verify:alliance.org/grants/v/2026-chi-500k <span verifiable-text="end" data-for="grant">]</span>
   </div>
 </div>
 

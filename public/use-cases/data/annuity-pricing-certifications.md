@@ -38,7 +38,7 @@ The annuity certification can arrive through different channels. Verification of
   </div>
   <h3 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; color: #1a237e; border-bottom: 2px solid #1a237e; padding-bottom: 10px;">Actuarial Certification of Pricing</h3>
   <div style="font-size: 0.95em; line-height: 1.6; text-align: justify; color: #333; margin-top: 20px;">
-    <p>I, <span data-bracket="start" data-for="annuity">[</span><strong>Robert Miller, FSA, MAAA</strong>, Appointed Actuary for Prudential, hereby certify that the pricing and interest rate assumptions for the <strong>SecureIncome Plus Fixed Index Annuity (Series 2026)</strong>:</p>
+    <p>I, <span verifiable-text="start" data-for="annuity">[</span><strong>Robert Miller, FSA, MAAA</strong>, Appointed Actuary for Prudential, hereby certify that the pricing and interest rate assumptions for the <strong>SecureIncome Plus Fixed Index Annuity (Series 2026)</strong>:</p>
     <ul style="margin-left: 20px; margin-top: 10px; margin-bottom: 0;">
       <li style="margin-bottom: 6px;">Are consistent with current mortality tables (2012 IAM).</li>
       <li style="margin-bottom: 6px;">Incorporate interest rate crediting strategies that meet state solvency requirements.</li>
@@ -54,7 +54,7 @@ The annuity certification can arrive through different channels. Verification of
   </div>
   <div data-verify-line="annuity" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Prudential doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:prudential.com/actuarial/rates/2026 <span data-bracket="end" data-for="annuity">]</span>
+      verify:prudential.com/actuarial/rates/2026 <span verifiable-text="end" data-for="annuity">]</span>
   </div>
 </div>
 </div>

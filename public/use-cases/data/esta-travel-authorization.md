@@ -27,7 +27,7 @@ Airlines are fined thousands of dollars for every passenger they let onto a plan
 <div style="padding: 25px;">
     <div style="text-align: center; margin-bottom: 20px;">
       <h2 style="margin: 0; font-size: 1.3em;">AUTHORIZATION APPROVED</h2>
-      <div style="font-size: 1.5em; font-weight: bold; margin-top: 5px; color: #2e7d32;">APPLICATION #: <span data-bracket="start" data-for="esta">[</span>9988776655</div>
+      <div style="font-size: 1.5em; font-weight: bold; margin-top: 5px; color: #2e7d32;">APPLICATION #: <span verifiable-text="start" data-for="esta">[</span>9988776655</div>
     </div>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
       <p><strong>Applicant:</strong> JOHN JACOB DOE<br>
@@ -44,7 +44,7 @@ Airlines are fined thousands of dollars for every passenger they let onto a plan
     </div>
 <div data-verify-line="esta" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: CBP doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:esta.cbp.dhs.gov/v/9988776655 <span data-bracket="end" data-for="esta">]</span>
+      verify:esta.cbp.dhs.gov/v/9988776655 <span verifiable-text="end" data-for="esta">]</span>
     </div>
   </div>
 </div>

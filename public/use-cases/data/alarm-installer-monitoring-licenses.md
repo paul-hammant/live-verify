@@ -31,7 +31,7 @@ Always scan the badge before letting a "technician" into your home to learn your
     <div style="flex-grow: 1;">
       <h2 style="margin-top: 0; color: #333; font-size: 1.2em;">ALARM SYSTEMS INSTALLER</h2>
 <div style="font-size: 0.95em; line-height: 1.5; color: #333;">
-        <p><strong>Licensee:</strong> <span data-bracket="start" data-for="alarm">[</span>ROBERT PAULSON<br>
+        <p><strong>Licensee:</strong> <span verifiable-text="start" data-for="alarm">[</span>ROBERT PAULSON<br>
         <strong>License #:</strong> B-1234567<br>
         <strong>Company:</strong> Fight Club Security, LLC</p>
 <p><strong>Expires:</strong> 12/31/2026<br>
@@ -42,7 +42,7 @@ Always scan the badge before letting a "technician" into your home to learn your
   </div>
 <div data-verify-line="alarm" style="border-top: 1px dashed #999; margin-top: 10px; padding: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center; background: #f9f9f9;"
       title="Demo only: State DPS doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:dps.texas.gov/psb/v/x9y8z7 <span data-bracket="end" data-for="alarm">]</span>
+      verify:dps.texas.gov/psb/v/x9y8z7 <span verifiable-text="end" data-for="alarm">]</span>
   </div>
 </div>
 

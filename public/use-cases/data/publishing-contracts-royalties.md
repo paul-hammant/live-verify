@@ -28,7 +28,7 @@ Because these statements determine the distribution of millions of dollars, they
 <div style="padding: 25px; border-bottom: 1px solid #eee;">
     <div style="display: grid; grid-template-columns: 1fr 1fr; font-size: 0.9em; line-height: 1.5;">
       <div>
-        <strong>Author:</strong> <span data-bracket="start" data-for="royalty">[</span>KILGORE TROUT<br>
+        <strong>Author:</strong> <span verifiable-text="start" data-for="royalty">[</span>KILGORE TROUT<br>
         <strong>Project ID:</strong> 99228877-KT<br>
         <strong>Title:</strong> <em>Venus on the Half-Shell</em>
       </div>
@@ -70,7 +70,7 @@ Because these statements determine the distribution of millions of dollars, they
     </div>
     <div data-verify-line="royalty" style="border-top: 1px dashed #999; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Publishers don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:prh.com/royalties/v/RS20260042 <span data-bracket="end" data-for="royalty">]</span>
+      verify:prh.com/royalties/v/RS20260042 <span verifiable-text="end" data-for="royalty">]</span>
     </div>
   </div>
 </div>

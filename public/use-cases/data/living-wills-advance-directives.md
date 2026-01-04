@@ -13,7 +13,7 @@ furtherDerivations: 1
     <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">ADVANCE HEALTH CARE DIRECTIVE</h2>
   </div>
 <div style="font-size: 1em; line-height: 1.6; color: #000; text-align: justify;">
-    <p>I, <span data-bracket="start" data-for="will">[</span><strong>JOHN JACOB DOE</strong>, being of sound mind, willfully and voluntarily make this declaration to be followed if I become incapacitated and am unable to participate in decisions regarding my medical care.</p>
+    <p>I, <span verifiable-text="start" data-for="will">[</span><strong>JOHN JACOB DOE</strong>, being of sound mind, willfully and voluntarily make this declaration to be followed if I become incapacitated and am unable to participate in decisions regarding my medical care.</p>
 <div style="margin: 20px 0; background: #f9f9f9; padding: 15px; border: 1px solid #eee;">
       <p><strong>1. HEALTH CARE AGENT:</strong> Mary Alice Jacob (Spouse)<br>
       <strong>2. END-OF-LIFE WISHES:</strong> If I have an incurable and irreversible condition, I direct that life-sustaining treatment be withheld or withdrawn.</p>
@@ -33,7 +33,7 @@ furtherDerivations: 1
   </div>
 <div data-verify-line="will" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Healthcare system doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:cedars-sinai.org/legal/v/DOE-992288 <span data-bracket="end" data-for="will">]</span>
+      verify:cedars-sinai.org/legal/v/DOE-992288 <span verifiable-text="end" data-for="will">]</span>
   </div>
 </div>
 

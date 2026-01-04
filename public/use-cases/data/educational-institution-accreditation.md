@@ -26,7 +26,7 @@ In most countries, the government doesn't "Grade" universities. Instead, private
   </div>
 <div style="font-size: 1.1em; line-height: 1.8; color: #333; text-align: center;">
     <p>This is to certify that</p>
-    <p style="font-size: 1.5em; font-weight: bold; color: #1a365d; margin: 15px 0;"><span data-bracket="start" data-for="accred">[</span>UNIVERSITY OF EXCELLENCE</p>
+    <p style="font-size: 1.5em; font-weight: bold; color: #1a365d; margin: 15px 0;"><span verifiable-text="start" data-for="accred">[</span>UNIVERSITY OF EXCELLENCE</p>
     <p>is accredited by the Middle States Commission on Higher Education, an institutional accrediting agency recognized by the U.S. Secretary of Education and the Council for Higher Education Accreditation.</p>
 <div style="background: #f9f9f9; padding: 15px; border: 1px solid #eee; margin: 25px 0; font-size: 0.9em; text-align: left;">
       <strong>Status:</strong> ACCREDITED (In Good Standing)<br>
@@ -45,7 +45,7 @@ In most countries, the government doesn't "Grade" universities. Instead, private
   </div>
 <div data-verify-line="accred" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: MSCHE doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:msche.org/v/UNIV-EXCELLENCE-99 <span data-bracket="end" data-for="accred">]</span>
+      verify:msche.org/v/UNIV-EXCELLENCE-99 <span verifiable-text="end" data-for="accred">]</span>
   </div>
 </div>
 

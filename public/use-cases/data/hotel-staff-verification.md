@@ -49,7 +49,7 @@ The **Staff ID Badge** is the worker's proof that they are authorized to be in t
     </div>
     <div style="flex-grow: 1;">
       <h4 style="margin: 0; color: #000;">ROOM SERVICE</h4>
-      <div style="font-size: 1.1em; font-weight: bold; margin: 5px 0;"><span data-bracket="start" data-for="hotel-staff">[</span>JAVIER ORTEGA</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin: 5px 0;">Mildred Mayflower</div>
       <div style="font-size: 0.9em; color: #333; line-height: 1.4;">
         <strong>Employee ID:</strong> 992288<br>
         <strong>Property:</strong> Hilton Midtown, NYC<br>
@@ -59,11 +59,10 @@ The **Staff ID Badge** is the worker's proof that they are authorized to be in t
   </div>
 <div style="padding: 0 20px 20px 20px;">
     <p style="font-size: 0.75em; color: #555; font-style: italic; text-align: center;">
-      Verified via Hilton Corporate Security. Scan to confirm staff member's current on-duty status and property affiliation.
+      Traditional plastic ID card. For verification, scan an e-ink badge if available.
     </p>
-    <div data-verify-line="hotel-staff" style="border-top: 1px dashed #999; margin-top: 10px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
-      title="Demo only: Hilton doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:hilton.com/staff/v/992288 <span data-bracket="end" data-for="hotel-staff">]</span>
+    <div style="border-top: 1px dashed #999; margin-top: 10px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #999; text-align: center;">
+      https://hilton.com
     </div>
   </div>
 </div>
@@ -73,15 +72,15 @@ The **Staff ID Badge** is the worker's proof that they are authorized to be in t
 Static cards can be photographed and reprinted. An **e-ink staff badge** with a rotating salt prevents cloning and protects staff privacy.
 
 <div style="max-width: 320px; margin: 24px auto; font-family: 'Courier New', monospace; border: 3px solid #000; border-radius: 8px; background: #f5f5f0; padding: 20px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
-  <div style="font-size: 1em; color: #000; font-weight: bold; margin-bottom: 8px;">HILTON HOTELS</div>
-  <div style="font-size: 1em; font-weight: bold; color: #000; margin-bottom: 8px;"><span data-bracket="start" data-for="eink-hotel">[</span>Javier Ortega</div>
+  <div style="font-size: 1em; color: #000; font-weight: bold; margin-bottom: 8px;"><span verifiable-text="start" data-for="eink-hotel">[</span>HILTON HOTELS</div>
+  <div style="font-size: 1em; font-weight: bold; color: #000; margin-bottom: 8px;">Mildred M</div>
   <div style="font-size: 1em; color: #333; margin-bottom: 8px;">Room Service</div>
   <div style="font-size: 1em; color: #000; margin-bottom: 12px;">
     Salt: 9k2m4x8p
   </div>
   <div data-verify-line="eink-hotel" style="font-size: 1em; color: #555;"
     title="Demo only: Hilton doesn't yet offer verification endpoints">
-    vfy:hilton.com <span data-bracket="end" data-for="eink-hotel">]</span>
+    vfy:hilton.com <span verifiable-text="end" data-for="eink-hotel">]</span>
   </div>
 </div>
 
@@ -128,6 +127,8 @@ The **Hotel Staff Member** benefits from verification.
 
 **Hotel Guests (Travelers)**
 **Assault Prevention:** Before opening the door at 11 PM for a "Maintenance" person, a guest can ask to see the badge through the peephole or doorbell camera. Scanning the hash confirms the person is a "Verified On-Duty" employee of the hotel, preventing "Fake Uniform" home-invasion style attacks.
+
+**Automated Doorbell Authentication:** In time, room-door cameras could autonomously authenticate the worker by scanning the badge as they approach. The system could then announce the verified status via a nearby intercom or the guest's mobile device ("Authorized Maintenance at the door"), providing immediate assurance before the guest even reaches the door—though other proximity technologies like Bluetooth or NFC could also achieve similar results.
 
 **Vacation Rental Guests (Airbnb)**
 **Host Vetting:** Instantly verifying the identity of a host during a "Key Handoff" in an unfamiliar city, ensuring the person isn't a scammer.

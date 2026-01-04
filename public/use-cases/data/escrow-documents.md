@@ -30,7 +30,7 @@ Because banks manage millions of these accounts, clerical errors are frequent. V
     <div style="display: flex; justify-content: space-between; font-size: 0.9em; margin-bottom: 20px; color: #555;">
       <div>
         <strong>Property Address:</strong><br>
-        <span data-bracket="start" data-for="escrow">[</span>123 Maple Street<br>
+        <span verifiable-text="start" data-for="escrow">[</span>123 Maple Street<br>
         Anytown, USA 12345
       </div>
       <div style="text-align: right;">
@@ -62,7 +62,7 @@ Because banks manage millions of these accounts, clerical errors are frequent. V
     </div>
 <div data-verify-line="escrow" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Mr. Cooper doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:mrcooper.com/escrow/v/99228877 <span data-bracket="end" data-for="escrow">]</span>
+      verify:mrcooper.com/escrow/v/99228877 <span verifiable-text="end" data-for="escrow">]</span>
     </div>
   </div>
 </div>
@@ -155,7 +155,7 @@ Hackers often "spoof" an escrow officer's email and send "Updated Wire Instructi
 <div style="background: #fdf2f2; border: 2px solid #d32f2f; padding: 15px; margin: 20px 0;">
       <p style="color: #d32f2f; font-weight: bold; margin-top: 0;">⚠️ MANDATORY VERIFICATION REQUIRED</p>
       <p>Before wiring any funds, scan the hash below to verify these bank details directly against our secure server.</p>
-<strong>Beneficiary Bank:</strong> <span data-bracket="start" data-for="escrow-wire">[</span>Wells Fargo, N.A.<br>
+<strong>Beneficiary Bank:</strong> <span verifiable-text="start" data-for="escrow-wire">[</span>Wells Fargo, N.A.<br>
       <strong>Account Name:</strong> First American Escrow Account<br>
       <strong>Account #:</strong> ****-****-9988<br>
       <strong>Routing #:</strong> 123456789<br>
@@ -175,7 +175,7 @@ Hackers often "spoof" an escrow officer's email and send "Updated Wire Instructi
   </div>
 <div data-verify-line="escrow-wire" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: First American doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:firstam.com/escrow/v/2026-992288 <span data-bracket="end" data-for="escrow-wire">]</span>
+      verify:firstam.com/escrow/v/2026-992288 <span verifiable-text="end" data-for="escrow-wire">]</span>
   </div>
 </div>
 
@@ -272,7 +272,7 @@ In high-stakes deals, fraudsters (or disgruntled partners) often "Edit" the PDF 
 <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
       <tr>
         <td style="padding: 5px 0;">Gross Purchase Price</td>
-        <td style="text-align: right; font-weight: bold;"><span data-bracket="start" data-for="ma">[</span>$ 50,000,000.00</td>
+        <td style="text-align: right; font-weight: bold;"><span verifiable-text="start" data-for="ma">[</span>$ 50,000,000.00</td>
       </tr>
       <tr>
         <td style="padding: 5px 0; color: #c62828;">Indemnity Holdback (12 Months)</td>
@@ -290,7 +290,7 @@ In high-stakes deals, fraudsters (or disgruntled partners) often "Edit" the PDF 
 <p><strong>Closing Date:</strong> March 15, 2026</p>
   </div>
 <div data-verify-line="ma" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;">
-    verify:jpmorgan.com/escrow/v/BLUEBIRD-2026 <span data-bracket="end" data-for="ma">]</span>
+    verify:jpmorgan.com/escrow/v/BLUEBIRD-2026 <span verifiable-text="end" data-for="ma">]</span>
   </div>
 </div>
 
@@ -360,7 +360,7 @@ Fraud is rampant: scammers often send fake "Updated Instructions" to the escrow 
     <p>The undersigned Seller hereby authorizes Stewart Title to disburse the proceeds of Escrow #992288 as follows:</p>
 <div style="background: #f9f9f9; padding: 15px; border: 1px solid #eee; margin: 20px 0;">
       <strong>Wire Transfer to:</strong><br>
-      Bank: <span data-bracket="start" data-for="escrow-inst">[</span>Chase Bank, N.A.<br>
+      Bank: <span verifiable-text="start" data-for="escrow-inst">[</span>Chase Bank, N.A.<br>
       Account Name: SARAH J. DOE<br>
       Account #: ****-****-9922<br>
       <strong>Amount: $ 442,500.42</strong>
@@ -372,7 +372,7 @@ Fraud is rampant: scammers often send fake "Updated Instructions" to the escrow 
     <div style="width: 45%; text-align: right;">Date: March 15, 2026</div>
   </div>
 <div data-verify-line="escrow-inst" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;">
-    verify:stewart.com/escrow/v/992288-DA <span data-bracket="end" data-for="escrow-inst">]</span>
+    verify:stewart.com/escrow/v/992288-DA <span verifiable-text="end" data-for="escrow-inst">]</span>
   </div>
 </div>
 

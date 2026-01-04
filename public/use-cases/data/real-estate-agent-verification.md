@@ -30,7 +30,7 @@ The problem is that "Agent ID Cards" are not standardized and are easy to fake. 
     </div>
     <div style="flex-grow: 1;">
       <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Professional Name</div>
-      <div style="font-size: 1.2em; font-weight: bold; margin: 0 0 10px 0; color: #333;"><span data-bracket="start" data-for="agent">[</span>SARAH J. SMITH</div>
+      <div style="font-size: 1.2em; font-weight: bold; margin: 0 0 10px 0; color: #333;"><span verifiable-text="start" data-for="agent">[</span>SARAH J. SMITH</div>
 <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">License #</div>
       <div style="font-size: 1em; font-weight: bold; margin: 0 0 10px 0;">ID: RE-992288-Z</div>
 <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Brokerage</div>
@@ -43,7 +43,7 @@ The problem is that "Agent ID Cards" are not standardized and are easy to fake. 
     </div>
     <div data-verify-line="agent" style="border-top: 1px dashed #999; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #d32f2f; text-align: center; font-weight: bold;"
       title="Demo only: Real estate boards don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:realtor.com/v/RE992288Z <span data-bracket="end" data-for="agent">]</span>
+      verify:realtor.com/v/RE992288Z <span verifiable-text="end" data-for="agent">]</span>
     </div>
   </div>
 </div>

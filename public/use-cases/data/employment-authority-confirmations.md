@@ -20,7 +20,7 @@ This matters from both sides: candidates want to know the offer is real, and com
     <div style="font-size: 0.8em;">Employment Delegation</div>
   </div>
   <div style="padding: 20px; font-size: 0.9em; line-height: 1.6;">
-    <p><strong>Company:</strong> <span data-bracket="start" data-for="employmentauthorityc">[</span>Nexus Technology Group<br>
+    <p><strong>Company:</strong> <span verifiable-text="start" data-for="employmentauthorityc">[</span>Nexus Technology Group<br>
     <strong>Authorized Person:</strong> Jennifer Walsh<br>
     <strong>Role:</strong> Engineering Director<br>
     <strong>Issued:</strong> January 1, 2026</p>
@@ -41,7 +41,7 @@ This matters from both sides: candidates want to know the offer is real, and com
 <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="employmentauthorityc" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
-        verify:nexus-tech.com/hr-auth/JW-2026 <span data-bracket="end" data-for="employmentauthorityc">]</span>
+        verify:nexus-tech.com/hr-auth/JW-2026 <span verifiable-text="end" data-for="employmentauthorityc">]</span>
       </div>
     </div>
   </div>
@@ -83,7 +83,7 @@ This matters from both sides: candidates want to know the offer is real, and com
 <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="employmentauthorityc" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
-        verify:nexus-tech.com/offers/DC-2026-0201 <span data-bracket="end" data-for="employmentauthorityc">]</span>
+        verify:nexus-tech.com/offers/DC-2026-0201 <span verifiable-text="end" data-for="employmentauthorityc">]</span>
       </div>
     </div>
   </div>
@@ -121,7 +121,7 @@ This matters from both sides: candidates want to know the offer is real, and com
 <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="employmentauthorityc" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
-        verify:nexus-tech.com/hr-auth/SM-TERM-2026 <span data-bracket="end" data-for="employmentauthorityc">]</span>
+        verify:nexus-tech.com/hr-auth/SM-TERM-2026 <span verifiable-text="end" data-for="employmentauthorityc">]</span>
       </div>
     </div>
   </div>

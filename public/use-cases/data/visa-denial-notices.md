@@ -21,7 +21,7 @@ These notices are critical for future travel. Fraud is high-stakes: applicants o
   </div>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <p>Date: March 15, 2026</p>
-    <p><strong>Applicant:</strong> <span data-bracket="start" data-for="visa">[</span>JOHN JACOB DOE<br>
+    <p><strong>Applicant:</strong> <span verifiable-text="start" data-for="visa">[</span>JOHN JACOB DOE<br>
     <strong>Case Number:</strong> 202607442211</p>
 <p>Dear Mr. Doe,</p>
     <p>This is to inform you that you have been found ineligible for a nonimmigrant visa under the following section of the U.S. Immigration and Nationality Act (INA):</p>
@@ -36,7 +36,7 @@ These notices are critical for future travel. Fraud is high-stakes: applicants o
 <div style="margin-top: 40px; border-top: 1px dashed #999; padding-top: 15px; text-align: center;">
     <div data-verify-line="visa" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #002d62; font-weight: bold;"
       title="Demo only: Embassies don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:state.gov/v/visa/202607442211 <span data-bracket="end" data-for="visa">]</span>
+      verify:state.gov/v/visa/202607442211 <span verifiable-text="end" data-for="visa">]</span>
     </div>
     <div style="font-size: 0.7em; color: #999; margin-top: 10px; font-style: italic;">
       Scan to verify denial grounds and reapplication eligibility. This record is held in the Consular Consolidated Database (CCD).

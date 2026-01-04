@@ -30,7 +30,7 @@ Lenders and tax auditors use these verified receipts to prove that a large "Gift
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
       <p><strong>Part I: Person Conducting Transaction</strong></p>
       <p style="background: #f9f9f9; padding: 10px; border-left: 4px solid #002d62;">
-        <span data-bracket="start" data-for="ctr">[</span><strong>Name:</strong> JOHN JACOB DOE<br>
+        <span verifiable-text="start" data-for="ctr">[</span><strong>Name:</strong> JOHN JACOB DOE<br>
         <strong>SSN/ITIN:</strong> ***-**-1234<br>
         <strong>ID:</strong> CA Driver License #*******
       </p>
@@ -51,7 +51,7 @@ Lenders and tax auditors use these verified receipts to prove that a large "Gift
     </p>
 <div data-verify-line="ctr" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: FinCEN/Banks don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:bankofamerica.com/compliance/v/99887766 <span data-bracket="end" data-for="ctr">]</span>
+      verify:bankofamerica.com/compliance/v/99887766 <span verifiable-text="end" data-for="ctr">]</span>
     </div>
   </div>
 </div>

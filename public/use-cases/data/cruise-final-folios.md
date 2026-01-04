@@ -29,7 +29,7 @@ Fraud happens when employees edit their folio to hide personal spending or to in
 <div style="padding: 25px;">
     <div style="display: flex; justify-content: space-between; font-size: 0.9em; margin-bottom: 20px; color: #555;">
       <div>
-        <strong>Guest:</strong> <span data-bracket="start" data-for="cruise">[</span>SARAH J. DOE<br>
+        <strong>Guest:</strong> <span verifiable-text="start" data-for="cruise">[</span>SARAH J. DOE<br>
         <strong>Stateroom:</strong> 12504 (Deck 12)
       </div>
       <div style="text-align: right;">
@@ -64,7 +64,7 @@ Fraud happens when employees edit their folio to hide personal spending or to in
     </p>
 <div data-verify-line="cruise" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Royal Caribbean doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:royalcaribbean.com/folios/v/99228877 <span data-bracket="end" data-for="cruise">]</span>
+      verify:royalcaribbean.com/folios/v/99228877 <span verifiable-text="end" data-for="cruise">]</span>
     </div>
   </div>
 </div>

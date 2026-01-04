@@ -31,7 +31,7 @@ Companies that provide in-home services (like cleaning or IT repair) use these b
 <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
       <p>This certifies that the following entity is bonded against acts of Employee Dishonesty:</p>
 <p style="background: #f5f5f5; padding: 10px; border-left: 4px solid #1a237e;">
-        <strong>Principal:</strong> <span data-bracket="start" data-for="fidelity">[</span>Initech Financial Services, LLC<br>
+        <strong>Principal:</strong> <span verifiable-text="start" data-for="fidelity">[</span>Initech Financial Services, LLC<br>
         <strong>Bond Amount:</strong> $ 1,000,000.00<br>
         <strong>Covered Class:</strong> All Employees (Blanket Bond)
       </p>
@@ -43,7 +43,7 @@ Companies that provide in-home services (like cleaning or IT repair) use these b
     </div>
 <div data-verify-line="fidelity" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Travelers doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:travelers.com/surety/v/FB99228877 <span data-bracket="end" data-for="fidelity">]</span>
+      verify:travelers.com/surety/v/FB99228877 <span verifiable-text="end" data-for="fidelity">]</span>
     </div>
   </div>
 </div>

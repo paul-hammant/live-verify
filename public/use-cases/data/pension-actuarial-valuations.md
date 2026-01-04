@@ -22,7 +22,7 @@ These documents are the "Proof of Retirement Security." Fraud is high-stakes: co
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px;">
       <div>
-        <strong>Plan:</strong> <span data-bracket="start" data-for="pension">[</span>METRO TEACHERS RETIREMENT FUND<br>
+        <strong>Plan:</strong> <span verifiable-text="start" data-for="pension">[</span>METRO TEACHERS RETIREMENT FUND<br>
         <strong>Plan ID:</strong> #992288-XJ
       </div>
       <div style="text-align: right;">
@@ -59,7 +59,7 @@ These documents are the "Proof of Retirement Security." Fraud is high-stakes: co
 <div style="padding: 20px; background: #fffbe6; border: 1px dashed #999; margin-top: 40px; text-align: center;">
     <div data-verify-line="pension" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Actuarial firms don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:wtwco.com/v/VAL99228877 <span data-bracket="end" data-for="pension">]</span>
+      verify:wtwco.com/v/VAL99228877 <span verifiable-text="end" data-for="pension">]</span>
     </div>
     <div style="font-size: 0.7em; color: #666; margin-top: 10px;">
       Scan to verify funded ratio, discount rate assumptions, and view the full 50-page actuarial audit.

@@ -33,7 +33,7 @@ Tragically, some people use "ID Swapping"—using a sibling's clear background c
     </div>
     <div style="flex-grow: 1;">
       <h4 style="margin: 0; color: #e91e63;">CERTIFIED NANNY</h4>
-      <div style="font-size: 1.1em; font-weight: bold; margin: 5px 0;"><span data-bracket="start" data-for="child">[</span>MARY POPPINS</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin: 5px 0;"><span verifiable-text="start" data-for="child">[</span>MARY POPPINS</div>
       <div style="font-size: 0.9em; color: #333; line-height: 1.4;">
         <strong>Background:</strong> CLEAR (Mar 2026)<br>
         <strong>First Aid:</strong> ACTIVE (Exp 2028)<br>
@@ -47,7 +47,7 @@ Tragically, some people use "ID Swapping"—using a sibling's clear background c
     </p>
     <div data-verify-line="child" style="border-top: 1px dashed #999; margin-top: 10px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Care platform doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:care.com/providers/v/992288 <span data-bracket="end" data-for="child">]</span>
+      verify:care.com/providers/v/992288 <span verifiable-text="end" data-for="child">]</span>
     </div>
   </div>
 </div>

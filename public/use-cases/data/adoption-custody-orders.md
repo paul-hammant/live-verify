@@ -38,7 +38,7 @@ These documents are presented to schools, police, doctors, and passport agents. 
 <h3 style="text-align: center; text-decoration: underline; text-transform: uppercase;">Final Allocation Judgment of Parental Responsibilities</h3>
 <div style="font-size: 0.95em; line-height: 1.6; text-align: justify;">
     <p>This cause coming to be heard for entry of a Final Allocation Judgment, the Court finds:</p>
-    <p>1. The parties have agreed to a Parenting Plan regarding the minor child, <span data-bracket="start" data-for="custody">[</span><strong>MICHAEL DOE (DOB: 05/12/2018)</strong>.</p>
+    <p>1. The parties have agreed to a Parenting Plan regarding the minor child, <span verifiable-text="start" data-for="custody">[</span><strong>MICHAEL DOE (DOB: 05/12/2018)</strong>.</p>
     <p>2. <strong>Decision-Making:</strong> The Petitioner (Mother) shall have sole decision-making responsibility for education and healthcare.</p>
     <p>3. <strong>Parenting Time:</strong> The Respondent (Father) shall have parenting time every other weekend from Friday 5:00 PM to Sunday 5:00 PM.</p>
 <p><strong>IT IS ORDERED</strong> that the Parenting Plan attached hereto is incorporated by reference.</p>
@@ -57,7 +57,7 @@ These documents are presented to schools, police, doctors, and passport agents. 
   </div>
 <div data-verify-line="custody" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Court doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:cookcountycourt.org/orders/v/a1b2c3 <span data-bracket="end" data-for="custody">]</span>
+      verify:cookcountycourt.org/orders/v/a1b2c3 <span verifiable-text="end" data-for="custody">]</span>
   </div>
 </div>
 

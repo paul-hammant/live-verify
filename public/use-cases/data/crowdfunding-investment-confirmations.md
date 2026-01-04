@@ -23,7 +23,7 @@ In the "Secondary Market" for gadgets, people often try to sell their "Reservati
   </div>
 <div style="padding: 30px;">
     <div style="text-align: center; margin-bottom: 25px;">
-      <div style="font-size: 0.9em; color: #666;">Backer ID: <span data-bracket="start" data-for="crowd">[</span>#998877-K</div>
+      <div style="font-size: 0.9em; color: #666;">Backer ID: <span verifiable-text="start" data-for="crowd">[</span>#998877-K</div>
       <div style="font-size: 2.2em; font-weight: bold; color: #05ce78; margin-top: 5px;">$ 1,200.00</div>
     </div>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333; border-top: 1px solid #eee; padding-top: 20px;">
@@ -39,7 +39,7 @@ In the "Secondary Market" for gadgets, people often try to sell their "Reservati
     </div>
 <div data-verify-line="crowd" style="border-top: 1px dashed #05ce78; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Kickstarter doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:kickstarter.com/pledges/v/998877K <span data-bracket="end" data-for="crowd">]</span>
+      verify:kickstarter.com/pledges/v/998877K <span verifiable-text="end" data-for="crowd">]</span>
     </div>
   </div>
 </div>

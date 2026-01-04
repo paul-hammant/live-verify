@@ -23,7 +23,7 @@ Verifying these declarations ensures that a company opening a bank account isn't
   </div>
 <div style="padding: 30px;">
     <div style="border-bottom: 2px solid #002d62; padding-bottom: 10px; margin-bottom: 20px;">
-      <strong>Reporting Company:</strong> <span data-bracket="start" data-for="ubo">[</span>Global Shell Holdings, LLC<br>
+      <strong>Reporting Company:</strong> <span verifiable-text="start" data-for="ubo">[</span>Global Shell Holdings, LLC<br>
       <strong>Tax ID:</strong> 12-3456789<br>
       <strong>Jurisdiction:</strong> Delaware, USA
     </div>
@@ -45,7 +45,7 @@ Verifying these declarations ensures that a company opening a bank account isn't
     </p>
 <div data-verify-line="ubo" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: FinCEN doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:fincen.gov/boi/v/99887766 <span data-bracket="end" data-for="ubo">]</span>
+      verify:fincen.gov/boi/v/99887766 <span verifiable-text="end" data-for="ubo">]</span>
     </div>
   </div>
 </div>

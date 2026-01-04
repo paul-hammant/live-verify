@@ -23,7 +23,7 @@ Fraud is common: people often "edit" their translated grades or court records to
   </div>
 <h3 style="text-align: center; text-transform: uppercase; margin-bottom: 20px;">Certificate of Translation</h3>
 <div style="font-size: 1em; line-height: 1.6; color: #000; text-align: justify;">
-    <p>I, <span data-bracket="start" data-for="trans">[</span><strong>MARIA GARCIA</strong>, hereby certify that I am competent to translate from <strong>SPANISH</strong> into <strong>ENGLISH</strong> and that the attached document titled <em>Acta de Nacimiento (Birth Certificate)</em> is a true and accurate translation of the original.</p>
+    <p>I, <span verifiable-text="start" data-for="trans">[</span><strong>MARIA GARCIA</strong>, hereby certify that I am competent to translate from <strong>SPANISH</strong> into <strong>ENGLISH</strong> and that the attached document titled <em>Acta de Nacimiento (Birth Certificate)</em> is a true and accurate translation of the original.</p>
 <div style="margin: 20px 0; border: 1px solid #eee; padding: 10px; background: #f9f9f9; font-size: 0.9em;">
       <strong>Subject:</strong> Juan Valdez<br>
       <strong>Document ID:</strong> MEX-998877-BC<br>
@@ -41,7 +41,7 @@ Fraud is common: people often "edit" their translated grades or court records to
   </div>
 <div data-verify-line="trans" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Translation firm doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:linguisticaccuracy.com/v/MEX998877 <span data-bracket="end" data-for="trans">]</span>
+      verify:linguisticaccuracy.com/v/MEX998877 <span verifiable-text="end" data-for="trans">]</span>
   </div>
 </div>
 

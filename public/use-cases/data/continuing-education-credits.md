@@ -24,7 +24,7 @@ Because these credits are mandatory, some busy professionals "Fake" the certific
     </div>
 <div style="margin: 30px 0;">
       <div style="font-size: 1.1em;">This is to certify that</div>
-      <div style="font-size: 1.8em; font-weight: bold; margin: 10px 0; color: #1a237e;"><span data-bracket="start" data-for="cle">[</span>SAUL GOODMAN, ESQ.</div>
+      <div style="font-size: 1.8em; font-weight: bold; margin: 10px 0; color: #1a237e;"><span verifiable-text="start" data-for="cle">[</span>SAUL GOODMAN, ESQ.</div>
       <div style="font-size: 1.1em;">has successfully completed</div>
       <div style="font-size: 1.3em; font-weight: bold; margin: 10px 0;">ETHICS IN CRIMINAL DEFENSE</div>
       <div style="font-size: 1.1em;">presented by</div>
@@ -37,7 +37,7 @@ Because these credits are mandatory, some busy professionals "Fake" the certific
     </div>
 <div data-verify-line="cle" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Provider doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:americanbar.org/cle/v/ABA9922 <span data-bracket="end" data-for="cle">]</span>
+      verify:americanbar.org/cle/v/ABA9922 <span verifiable-text="end" data-for="cle">]</span>
     </div>
   </div>
 </div>

@@ -23,7 +23,7 @@ furtherDerivations: 1
 <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
       <p>This document confirms that the following entity has active Crisis Management and Extortion insurance:</p>
 <div style="background: #fdfdfd; border: 1px solid #ddd; padding: 15px; margin: 15px 0; border-radius: 4px;">
-        <p><strong>Insured:</strong> <span data-bracket="start" data-for="knr">[</span>Waystar Royco Global, Corp.<br>
+        <p><strong>Insured:</strong> <span verifiable-text="start" data-for="knr">[</span>Waystar Royco Global, Corp.<br>
         <strong>Covered Class:</strong> Directors, Officers, and Key Executives</p>
 <strong>Aggregate Ransom Limit:</strong> $ 10,000,000.00<br>
         <strong>Response Team:</strong> Control Risks Group (CRG)
@@ -35,7 +35,7 @@ furtherDerivations: 1
     </div>
 <div data-verify-line="knr" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Hiscox doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:hiscox.com/crisis/v/KR992288 <span data-bracket="end" data-for="knr">]</span>
+      verify:hiscox.com/crisis/v/KR992288 <span verifiable-text="end" data-for="knr">]</span>
     </div>
   </div>
 </div>

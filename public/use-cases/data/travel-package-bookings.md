@@ -26,7 +26,7 @@ Fraud is common in the "Secondary Market." Scammers sell fake "Discounted Packag
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px; border-bottom: 2px solid #00bcd4; padding-bottom: 10px;">
       <div>
         <div style="font-size: 0.75em; color: #888; text-transform: uppercase;">Lead Traveler</div>
-        <div style="font-size: 1.2em; font-weight: bold;"><span data-bracket="start" data-for="package">[</span>SARAH J. JENKINS</div>
+        <div style="font-size: 1.2em; font-weight: bold;"><span verifiable-text="start" data-for="package">[</span>SARAH J. JENKINS</div>
       </div>
       <div style="text-align: right;">
         <div style="font-size: 0.75em; color: #888; text-transform: uppercase;">Booking Reference</div>
@@ -55,7 +55,7 @@ Fraud is common in the "Secondary Market." Scammers sell fake "Discounted Packag
 <div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #bbb; text-align: center;">
     <div data-verify-line="package" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #00838f; font-weight: bold;"
       title="Demo only: Tour operators don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:islandescapes.com/v/IE992288XJ <span data-bracket="end" data-for="package">]</span>
+      verify:islandescapes.com/v/IE992288XJ <span verifiable-text="end" data-for="package">]</span>
     </div>
     <div style="font-size: 0.7em; color: #999; margin-top: 10px; font-style: italic;">
       This voucher is valid only for the named travelers. Scan to verify inclusions and resort access authority.

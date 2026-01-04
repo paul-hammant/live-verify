@@ -31,14 +31,13 @@ OCR-to-hash allows a citizen to scan the officer's ID card to get a real-time "A
       <div style="width: 100px; height: 125px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #777; font-size: 0.8em; text-align: center;">[PHOTO]</div>
     </div>
     <div style="flex-grow: 1;">
-      <div style="font-size: 1.4em; font-weight: bold; margin: 0 0 10px 0; color: #002d62;"><span data-bracket="start" data-for="police">[</span>PC Alex D 1332</div>
+      <div style="font-size: 1.4em; font-weight: bold; margin: 0 0 10px 0; color: #002d62;"><span verifiable-text="start" data-for="police">[</span>PC Alex D 1332</div>
       <div style="font-size: 0.9em; font-weight: bold;">London MET</div>
     </div>
   </div>
 <div style="padding: 0 20px 20px 20px;">
-    <div data-verify-line="police" style="border-top: 1px dashed #999; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 1em; color: #002d62; text-align: center; font-weight: bold;"
-      title="Demo only: Police don't yet offer verification endpoints, so this is illustrative">
-      vfy:met.police.uk <span data-bracket="end" data-for="police">]</span>
+    <div style="border-top: 1px dashed #999; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.9em; color: #666; text-align: center;">
+      https://met.police.uk <span verifiable-text="end" data-for="police">]</span>
     </div>
   </div>
 </div>
@@ -48,21 +47,60 @@ OCR-to-hash allows a citizen to scan the officer's ID card to get a real-time "A
 Static cards can be photographed and reprinted. An **e-ink warrant card** with a rotating salt prevents cloning and protects officer movements.
 
 <div style="max-width: 320px; margin: 24px auto; font-family: 'Courier New', monospace; border: 3px solid #002d62; border-radius: 8px; background: #f5f5f0; padding: 20px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
-  <div style="font-size: 1em; color: #002d62; font-weight: bold; margin-bottom: 8px;">METROPOLITAN POLICE</div>
-  <div style="font-size: 1em; font-weight: bold; color: #000; margin-bottom: 8px;"><span data-bracket="start" data-for="eink">[</span>PC Alex D 1332</div>
+  <div style="font-size: 1em; color: #002d62; font-weight: bold; margin-bottom: 8px;"><span verifiable-text="start" data-for="eink">[</span>METROPOLITAN POLICE</div>
+  <div style="font-size: 1em; font-weight: bold; color: #000; margin-bottom: 8px;">PC Alex D 1332</div>
   <div style="font-size: 1em; color: #333; margin-bottom: 8px;">London MET</div>
   <div style="font-size: 1em; color: #002d62; margin-bottom: 12px;">
     Salt: 7k3m9x2p
   </div>
   <div data-verify-line="eink" style="font-size: 1em; color: #555;"
     title="Demo only: Police don't yet offer verification endpoints">
-    vfy:met.police.uk <span data-bracket="end" data-for="eink">]</span>
+    vfy:met.police.uk <span verifiable-text="end" data-for="eink">]</span>
   </div>
 </div>
 
 *Salt rotates every 10 mins*
 
+### Digital Warrant Card (Mobile Backup)
+
+Officers also carry a secure mobile app that generates the same verifiable display. This serves as a backup if the physical badge is damaged, lost, or for plainclothes officers who do not wear a lanyard but need to prove authority upon request.
+
+<div style="max-width: 500px; margin: 24px auto; border: 12px solid #333; border-radius: 30px; background: #fff; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.3); display: flex; flex-direction: row;">
+  <!-- Left side: Photo/Identity (Simulated) -->
+  <div style="width: 150px; background: #f9f9f9; padding: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-right: 1px solid #ddd;">
+    <div style="width: 100px; height: 120px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #777; font-size: 0.8em; text-align: center; font-family: sans-serif;">[PHOTO]</div>
+    <div style="margin-top: 15px;">
+      <img src="met.png" alt="Metropolitan Police" style="width: 50px; height: 50px; object-fit: contain;">
+    </div>
+  </div>
+  
+  <!-- Right side: Verification Text -->
+  <div style="flex-grow: 1; padding: 20px; font-family: sans-serif; text-align: left; background: #fff;">
+    <div style="font-size: 1em; color: #002d62; font-weight: bold; margin-bottom: 5px;"><span verifiable-text="start" data-for="app-police">[</span>METROPOLITAN POLICE</div>
+    <div style="font-size: 0.8em; color: #555; margin-bottom: 15px; letter-spacing: 1px;">DIGITAL WARRANT</div>
+
+    <div style="font-size: 1.2em; font-weight: bold; color: #000; margin-bottom: 5px;">PC Alex D 1332</div>
+    <div style="font-size: 1em; color: #333; margin-bottom: 10px;">London MET</div>
+    
+    <div style="font-size: 1.1em; color: #002d62; font-weight: bold; margin-bottom: 10px;">
+      Salt: 7k3m9x2p
+    </div>
+
+    <div data-verify-line="app-police" style="font-family: 'Courier New', monospace; font-size: 0.9em; color: #555; border-top: 1px dashed #ccc; padding-top: 10px;"
+      title="Demo only: Police don't yet offer verification endpoints">
+      vfy:met.police.uk <span verifiable-text="end" data-for="app-police">]</span>
+    </div>
+    
+    <div style="margin-top: 15px; color: #28a745; font-weight: bold; font-size: 0.9em;">
+      ● LIVE & AUTHENTICATED
+    </div>
+  </div>
+</div>
+
 **Security Features:**
+- **Exact Parity:** The app generates the *exact same hash* as the e-ink badge for the current time window.
+- **High-Contrast Mode:** Designed with pure black text on white background to ensure 100% OCR accuracy even in low light or through a car window.
+- **Biometric Unlock:** Officer must FaceID/fingerprint to reveal the digital warrant card, preventing unauthorized use of a lost phone.
 - **Cloning Protection:** Because the salt rotates every 10 minutes, a photographed copy becomes invalid almost immediately.
 - **Location Verification:** Verification can confirm if the officer is currently assigned to the district where the encounter is happening.
 - **Real-time Status:** Suspended officers show immediately as invalid, without needing to physically collect their card.
@@ -115,6 +153,7 @@ This decoupling allows plainclothes or undercover officers to verify their autho
 - **Trust:** Demonstrates a commitment to transparency and modern accountability.
 - **Officer Safety:** Protects officers' personal data better than traditional name-heavy badges.
 - **Fraud Prevention:** Makes stolen or fake badges useless.
+- **Streamlining ID challenges** [This convoluted (UK Met Police) identification process](https://www.met.police.uk/advice/advice-and-information/fa/how-to-check-an-officers-identity/) goes away.
 
 **The Legal System:**
 - **Audit Trail:** Provides undeniable proof that a specific officer (identified by hash) was present and authorized at the time of an arrest or search.

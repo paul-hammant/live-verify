@@ -29,7 +29,7 @@ Promoters must show this verified proof of insurance to stadium owners and lende
 <div style="padding: 35px;">
     <h2 style="text-align: center; color: #002366; font-size: 1.4em; margin-bottom: 25px; text-transform: uppercase; letter-spacing: 1px;">Evidence of Contingency Insurance</h2>
 <div style="font-size: 1em; line-height: 1.6; color: #333;">
-      <p><strong>Insured:</strong> <span data-bracket="start" data-for="event">[</span>Glastonbury Festival Events, Ltd.<br>
+      <p><strong>Insured:</strong> <span verifiable-text="start" data-for="event">[</span>Glastonbury Festival Events, Ltd.<br>
       <strong>Event:</strong> 2026 Summer Music Festival</p>
 <div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin: 20px 0;">
         <p><strong>Section 1: Event Cancellation / Abandonment</strong><br>
@@ -46,7 +46,7 @@ Promoters must show this verified proof of insurance to stadium owners and lende
     </div>
 <div data-verify-line="event" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Beazley doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:beazley.com/v/GLASTO-2026 <span data-bracket="end" data-for="event">]</span>
+      verify:beazley.com/v/GLASTO-2026 <span verifiable-text="end" data-for="event">]</span>
     </div>
   </div>
 </div>

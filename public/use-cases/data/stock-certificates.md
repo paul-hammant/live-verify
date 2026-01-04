@@ -29,7 +29,7 @@ If you are buying a small business or investing in a private startup, you need t
 <div style="margin: 30px 0; font-size: 1.1em; line-height: 1.8;">
       This Certifies that <span style="font-weight: bold; font-size: 1.2em; border-bottom: 1px solid #000;">THE WAYNE FAMILY TRUST</span> is the owner of
       <br>
-      <span style="font-weight: bold; font-size: 1.4em; border-bottom: 1px solid #000; color: #003366;"><span data-bracket="start" data-for="stock">[</span>ONE THOUSAND (1,000)</span>
+      <span style="font-weight: bold; font-size: 1.4em; border-bottom: 1px solid #000; color: #003366;"><span verifiable-text="start" data-for="stock">[</span>ONE THOUSAND (1,000)</span>
       <br>
       Fully Paid and Non-Assessable Shares of Common Stock of the above named Corporation.
     </div>
@@ -49,7 +49,7 @@ If you are buying a small business or investing in a private startup, you need t
   </div>
 <div data-verify-line="stock" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
     title="Demo only: Carta/transfer agents don't yet offer verification&#10;endpoints, so this is illustrative">
-    verify:carta.com/certs/v/CS1024 <span data-bracket="end" data-for="stock">]</span>
+    verify:carta.com/certs/v/CS1024 <span verifiable-text="end" data-for="stock">]</span>
   </div>
 </div>
 

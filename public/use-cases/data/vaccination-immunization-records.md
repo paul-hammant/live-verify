@@ -24,7 +24,7 @@ The problem is that physical cards are easy to fake. During the COVID-19 pandemi
   </div>
 <div style="padding: 20px;">
     <div style="border-bottom: 1px solid #000; padding-bottom: 10px; margin-bottom: 15px;">
-      <div style="font-size: 0.9em;"><strong>Patient Name:</strong> <span data-bracket="start" data-for="vax">[</span>SMITH, SARAH JANE</div>
+      <div style="font-size: 0.9em;"><strong>Patient Name:</strong> <span verifiable-text="start" data-for="vax">[</span>SMITH, SARAH JANE</div>
       <div style="font-size: 0.9em;"><strong>Date of Birth:</strong> 05/15/1985</div>
     </div>
 <table style="width: 100%; border-collapse: collapse; font-size: 0.8em; text-align: left;">
@@ -51,7 +51,7 @@ The problem is that physical cards are easy to fake. During the COVID-19 pandemi
 <div style="padding: 15px; background: #fffbe6; border-top: 1px dashed #999; text-align: center;">
     <div data-verify-line="vax" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Healthcare providers don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:cvs.com/vax/v/SMITH992288 <span data-bracket="end" data-for="vax">]</span>
+      verify:cvs.com/vax/v/SMITH992288 <span verifiable-text="end" data-for="vax">]</span>
     </div>
     <div style="font-size: 0.65em; color: #666; margin-top: 8px; font-style: italic;">
       Scan to verify lot authenticity, administration date, and provider authority. PHI protected.

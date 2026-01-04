@@ -26,7 +26,7 @@ This warranty is a valuable financial asset that stays with the house for 10 yea
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <p>This certifies that the property located at:</p>
     <p style="text-align: center; font-size: 1.1em; font-weight: bold;">
-      <span data-bracket="start" data-for="warranty">[</span>123 NEW HOUSE LANE, AUSTIN, TX 78701
+      <span verifiable-text="start" data-for="warranty">[</span>123 NEW HOUSE LANE, AUSTIN, TX 78701
     </p>
 <div style="margin: 20px 0; border: 1px solid #ccc; padding: 15px; background: #f9f9f9;">
       <p><strong>Builder:</strong> Toll Brothers, Inc. (Reg #9922)<br>
@@ -48,7 +48,7 @@ This warranty is a valuable financial asset that stays with the house for 10 yea
   </div>
 <div data-verify-line="warranty" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: 2-10 HBW doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:2-10.com/warranty/v/998877 <span data-bracket="end" data-for="warranty">]</span>
+      verify:2-10.com/warranty/v/998877 <span verifiable-text="end" data-for="warranty">]</span>
   </div>
 </div>
 

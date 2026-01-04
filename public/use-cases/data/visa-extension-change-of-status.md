@@ -25,7 +25,7 @@ These documents are the "Proof of Legal Presence." Fraud is rampant: people whos
 <div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
-        <strong>Receipt Number:</strong> <span data-bracket="start" data-for="extension">[</span>WAC-26-992-28877<br>
+        <strong>Receipt Number:</strong> <span verifiable-text="start" data-for="extension">[</span>WAC-26-992-28877<br>
         <strong>Petitioner:</strong> GOLIATH TECH SOLUTIONS INC.<br>
         <strong>Beneficiary:</strong> JOHN JACOB DOE
       </div>
@@ -48,7 +48,7 @@ These documents are the "Proof of Legal Presence." Fraud is rampant: people whos
 <div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #999; text-align: center;">
     <div data-verify-line="extension" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #002d62; font-weight: bold;"
       title="Demo only: USCIS doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:uscis.gov/v/i797/WAC2699228877 <span data-bracket="end" data-for="extension">]</span>
+      verify:uscis.gov/v/i797/WAC2699228877 <span verifiable-text="end" data-for="extension">]</span>
     </div>
     <div style="font-size: 0.7em; color: #999; margin-top: 10px; font-style: italic;">
       Scan to verify case approval, new validity dates, and work authorization class.

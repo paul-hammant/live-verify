@@ -24,7 +24,7 @@ For a refugee, this document is a fragile lifeline. If an airline agent in a for
       <div style="width: 110px; height: 140px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #777; font-size: 0.7em; text-align: center;">[HOLDER PHOTO]</div>
       <div style="flex-grow: 1; margin-left: 20px; font-size: 0.9em; line-height: 1.4;">
         <div style="font-size: 0.75em; color: #888; text-transform: uppercase;">Document No.</div>
-        <div style="font-size: 1.2em; font-weight: bold; color: #002d62;"><span data-bracket="start" data-for="refugee">[</span>RT-9922-8877-XJ</div>
+        <div style="font-size: 1.2em; font-weight: bold; color: #002d62;"><span verifiable-text="start" data-for="refugee">[</span>RT-9922-8877-XJ</div>
 <div style="margin-top: 10px;">
           <strong>Name:</strong> JUAN VALDEZ<br>
           <strong>DOB:</strong> 05 MAY 1980<br>
@@ -45,7 +45,7 @@ For a refugee, this document is a fragile lifeline. If an airline agent in a for
 <div style="padding: 20px; background: #fff; border-top: 1px dashed #999; text-align: center;">
     <div data-verify-line="refugee" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: USCIS doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:uscis.gov/v/i571/RT99228877 <span data-bracket="end" data-for="refugee">]</span>
+      verify:uscis.gov/v/i571/RT99228877 <span verifiable-text="end" data-for="refugee">]</span>
     </div>
     <div style="font-size: 0.65em; color: #999; margin-top: 8px;">
       Scan to verify travel eligibility and status. This document is the property of the US Government.

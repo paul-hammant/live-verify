@@ -23,7 +23,7 @@ furtherDerivations: 1
 <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
       <p>This document confirms that the following accounts receivable have been purchased by the Factor:</p>
 <div style="background: #fdfdfd; border: 1px solid #eee; padding: 15px; margin: 15px 0; border-radius: 4px;">
-        <p><strong>Seller:</strong> <span data-bracket="start" data-for="factor">[</span>Apex Manufacturing, Ltd.<br>
+        <p><strong>Seller:</strong> <span verifiable-text="start" data-for="factor">[</span>Apex Manufacturing, Ltd.<br>
         <strong>Buyer (Debtor):</strong> Global Retail Hub, Corp.</p>
 <strong>Invoice Total:</strong> $ 100,000.00<br>
         <strong>Advance Rate:</strong> 85.00% ($ 85,000.00 Paid)<br>
@@ -33,7 +33,7 @@ furtherDerivations: 1
     </div>
 <div data-verify-line="factor" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: BlueVine doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:bluevine.com/factoring/v/992288 <span data-bracket="end" data-for="factor">]</span>
+      verify:bluevine.com/factoring/v/992288 <span verifiable-text="end" data-for="factor">]</span>
     </div>
   </div>
 </div>

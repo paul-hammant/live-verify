@@ -26,7 +26,7 @@ It is used for high-stakes financial decisions:
   </div>
 <h3 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px;">Report of Independent Registered Public Accounting Firm</h3>
 <div style="font-size: 0.95em; line-height: 1.6; text-align: justify; color: #333;">
-    <p>To the Board of Directors and Shareholders of <span data-bracket="start" data-for="audit">[</span><strong>WAYSTAR ROYCO CORP.</strong></p>
+    <p>To the Board of Directors and Shareholders of <span verifiable-text="start" data-for="audit">[</span><strong>WAYSTAR ROYCO CORP.</strong></p>
 <p><strong>Opinions on the Financial Statements</strong></p>
     <p>We have audited the accompanying consolidated balance sheets of Waystar Royco Corp. as of <strong>December 31, 2025</strong>. In our opinion, the consolidated financial statements present fairly, in all material respects, the financial position of the Company.</p>
 <div style="background: #fdfdfd; padding: 15px; border: 1px solid #eee; margin: 20px 0;">
@@ -51,7 +51,7 @@ It is used for high-stakes financial decisions:
   </div>
 <div data-verify-line="audit" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: PwC doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:pwc.com/audit/v/WAYSTAR-2025 <span data-bracket="end" data-for="audit">]</span>
+      verify:pwc.com/audit/v/WAYSTAR-2025 <span verifiable-text="end" data-for="audit">]</span>
   </div>
 </div>
 

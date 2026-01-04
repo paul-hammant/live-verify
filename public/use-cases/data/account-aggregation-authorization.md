@@ -27,7 +27,7 @@ A **Data Authorization Certificate** is a receipt for that digital handshake. It
       <strong>Issued:</strong> March 15, 2025 14:30 UTC
     </div>
 <div style="font-size: 1.1em; line-height: 1.5; color: #333; margin-bottom: 20px;">
-      <p>This certifies that <span data-bracket="start" data-for="agg">[</span><strong>Customer:</strong> Jane Doe (Ending in ...4421)</p>
+      <p>This certifies that <span verifiable-text="start" data-for="agg">[</span><strong>Customer:</strong> Jane Doe (Ending in ...4421)</p>
 <p>Has explicitly authorized:</p>
       <p><strong>Third Party:</strong> BudgetPlanner App (via Plaid)<br>
       <strong>Scope:</strong> Read-Only Transaction History, Balance Details<br>
@@ -40,7 +40,7 @@ A **Data Authorization Certificate** is a receipt for that digital handshake. It
     </div>
 <div data-verify-line="agg" style="border-top: 1px dashed #ccc; margin-top: 30px; padding-top: 15px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #444; text-align: center;"
       title="Demo only: Bank doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:fnbo.com/auth/v/x9y8z7 <span data-bracket="end" data-for="agg">]</span>
+      verify:fnbo.com/auth/v/x9y8z7 <span verifiable-text="end" data-for="agg">]</span>
     </div>
   </div>
 </div>

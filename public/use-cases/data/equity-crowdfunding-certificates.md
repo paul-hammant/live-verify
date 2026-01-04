@@ -23,7 +23,7 @@ Because these shares aren't traded on the stock market (like Apple or Tesla), th
   </div>
 <div style="font-size: 1em; line-height: 1.6; color: #333; text-align: center;">
     <p>This certifies that</p>
-    <p style="font-size: 1.5em; font-weight: bold; color: #1a237e; margin: 15px 0;"><span data-bracket="start" data-for="equity">[</span>SARAH J. SMITH</p>
+    <p style="font-size: 1.5em; font-weight: bold; color: #1a237e; margin: 15px 0;"><span verifiable-text="start" data-for="equity">[</span>SARAH J. SMITH</p>
     <p>is the registered holder of</p>
     <p style="font-size: 1.2em; font-weight: bold;">1,000 SHARES OF COMMON STOCK</p>
     <p>of</p>
@@ -44,7 +44,7 @@ Because these shares aren't traded on the stock market (like Apple or Tesla), th
   </div>
 <div data-verify-line="equity" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: StartEngine doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:startengine.com/shares/v/FT-992288 <span data-bracket="end" data-for="equity">]</span>
+      verify:startengine.com/shares/v/FT-992288 <span verifiable-text="end" data-for="equity">]</span>
   </div>
 </div>
 

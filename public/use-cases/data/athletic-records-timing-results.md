@@ -15,7 +15,7 @@ furtherDerivations: 1
   </div>
 <div style="padding: 40px; text-align: center;">
     <div style="font-size: 1.1em; color: #666; margin-bottom: 10px;">This is to certify that</div>
-    <div style="font-size: 2em; font-weight: bold; color: #003366; margin-bottom: 20px;"><span data-bracket="start" data-for="record">[</span>USAIN BOLT</div>
+    <div style="font-size: 2em; font-weight: bold; color: #003366; margin-bottom: 20px;"><span verifiable-text="start" data-for="record">[</span>USAIN BOLT</div>
     <div style="font-size: 1.1em; color: #666; margin-bottom: 10px;">achieved a new World Record in the</div>
     <div style="font-size: 1.5em; font-weight: bold; margin-bottom: 20px;">MEN'S 100 METRES</div>
 <div style="background: #f0f4f8; padding: 20px; border-radius: 8px; margin: 20px 0;">
@@ -33,7 +33,7 @@ furtherDerivations: 1
     </div>
 <div data-verify-line="record" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: World Athletics doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:worldathletics.org/records/v/BERLIN-958 <span data-bracket="end" data-for="record">]</span>
+      verify:worldathletics.org/records/v/BERLIN-958 <span verifiable-text="end" data-for="record">]</span>
     </div>
   </div>
 </div>

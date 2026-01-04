@@ -28,7 +28,7 @@ Charities often have to fax, email, or mail this letter dozens of times a year t
 <div style="display: flex; justify-content: space-between; margin-bottom: 30px; font-size: 0.9em;">
     <div>
       Date: <span style="font-weight: bold;">OCT 24 2025</span><br><br>
-      <span data-bracket="start" data-for="501c3">[</span>THE HUMAN FUND<br>
+      <span verifiable-text="start" data-for="501c3">[</span>THE HUMAN FUND<br>
       123 CHARITY LANE<br>
       NEW YORK, NY 10001
     </div>
@@ -46,7 +46,7 @@ Charities often have to fax, email, or mail this letter dozens of times a year t
   </div>
 <div data-verify-line="501c3" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: IRS doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:irs.gov/teos/v/9a8b7c <span data-bracket="end" data-for="501c3">]</span>
+      verify:irs.gov/teos/v/9a8b7c <span verifiable-text="end" data-for="501c3">]</span>
   </div>
 </div>
 

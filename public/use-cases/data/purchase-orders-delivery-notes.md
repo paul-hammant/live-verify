@@ -22,7 +22,7 @@ These documents are high-value targets for **Invoice Factoring Fraud**. A dishon
     </div>
     <div style="text-align: right;">
       <h2 style="margin: 0; color: #000; font-size: 1.5em; letter-spacing: 1px;">PURCHASE ORDER</h2>
-      <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px; color: #d32f2f;"># <span data-bracket="start" data-for="po">[</span>PO-2026-992288</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px; color: #d32f2f;"># <span verifiable-text="start" data-for="po">[</span>PO-2026-992288</div>
     </div>
   </div>
 <div style="padding: 25px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.85em;">
@@ -69,7 +69,7 @@ These documents are high-value targets for **Invoice Factoring Fraud**. A dishon
     </div>
     <div data-verify-line="po" style="border-top: 1px dashed #999; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #333; text-align: center; font-weight: bold;"
       title="Demo only: Corporations don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:acme-mfg.com/procure/v/PO2026992288 <span data-bracket="end" data-for="po">]</span>
+      verify:acme-mfg.com/procure/v/PO2026992288 <span verifiable-text="end" data-for="po">]</span>
     </div>
   </div>
 </div>

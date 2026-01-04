@@ -29,7 +29,7 @@ Beyond the relationship between the two parties, a lease is used by third partie
   </div>
 <h3 style="text-align: center; text-transform: uppercase; margin-bottom: 25px; letter-spacing: 1px;">Residential Lease Summary</h3>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
-    <p>This certifies a valid lease agreement exists between <span data-bracket="start" data-for="lease">[</span><strong>Landlord:</strong> Skyline Heights, LLC and <strong>Tenant:</strong> Sarah J. Connor.</p>
+    <p>This certifies a valid lease agreement exists between <span verifiable-text="start" data-for="lease">[</span><strong>Landlord:</strong> Skyline Heights, LLC and <strong>Tenant:</strong> Sarah J. Connor.</p>
 <div style="background: #fdfdfd; padding: 15px; border: 1px solid #eee; margin: 20px 0;">
       <p><strong>Premises:</strong> 4500 Skyline Blvd, Apt 402, Austin, TX 78701</p>
       <table style="width: 100%; font-size: 0.95em;">
@@ -56,7 +56,7 @@ Beyond the relationship between the two parties, a lease is used by third partie
   </div>
 <div data-verify-line="lease" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Management firm doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:skyline-mgmt.com/v/L992288 <span data-bracket="end" data-for="lease">]</span>
+      verify:skyline-mgmt.com/v/L992288 <span verifiable-text="end" data-for="lease">]</span>
   </div>
 </div>
 

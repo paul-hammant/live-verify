@@ -17,7 +17,7 @@ furtherDerivations: 1
 <div style="font-size: 1em; line-height: 1.6; color: #333; text-align: justify;">
     <p>This document serves as a verified record of the following manuscript version as received by the publisher:</p>
 <div style="margin: 20px 0; border-left: 4px solid #333; padding-left: 20px; background: #f9f9f9; padding-top: 10px; padding-bottom: 10px;">
-      <p><strong>Title:</strong> <span data-bracket="start" data-for="manu">[</span>"THE VERIFICATION CHRONICLES" (v.2.4)<br>
+      <p><strong>Title:</strong> <span verifiable-text="start" data-for="manu">[</span>"THE VERIFICATION CHRONICLES" (v.2.4)<br>
       <strong>Author:</strong> J.K. Row-Verify<br>
       <strong>Editor:</strong> Marcus J. Miller</p>
 <p><strong>File Hash (SHA-256):</strong><br>
@@ -36,7 +36,7 @@ furtherDerivations: 1
   </div>
 <div data-verify-line="manu" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Publisher doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:penguinrandomhouse.com/mss/v/992288 <span data-bracket="end" data-for="manu">]</span>
+      verify:penguinrandomhouse.com/mss/v/992288 <span verifiable-text="end" data-for="manu">]</span>
   </div>
 </div>
 

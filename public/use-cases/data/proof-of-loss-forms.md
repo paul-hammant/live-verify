@@ -22,7 +22,7 @@ This document is the "Trigger for Payout." Fraud is high-stakes: claimants often
 <div style="font-size: 0.95em; line-height: 1.6; color: #333; text-align: justify;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px; font-weight: bold;">
       <div>POLICY #: 99228877-XJ</div>
-      <div>CLAIM #: <span data-bracket="start" data-for="loss">[</span>CL-2026-8844</div>
+      <div>CLAIM #: <span verifiable-text="start" data-for="loss">[</span>CL-2026-8844</div>
     </div>
 <p>To the <strong>GOLIATH INSURANCE COMPANY</strong> of Springfield, USA.</p>
 <p>At time of loss, the total amount of insurance upon the property described was <strong>$ 250,000.00</strong>. The said loss occurred on the 15th day of March, 2026 about the hour of 02:15 PM.</p>
@@ -47,7 +47,7 @@ This document is the "Trigger for Payout." Fraud is high-stakes: claimants often
 <div style="padding: 20px; background: #fffbe6; border: 1px dashed #999; margin-top: 30px; text-align: center;">
     <div data-verify-line="loss" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Insurers don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:goliathins.com/v/CL20268844 <span data-bracket="end" data-for="loss">]</span>
+      verify:goliathins.com/v/CL20268844 <span verifiable-text="end" data-for="loss">]</span>
     </div>
     <div style="font-size: 0.7em; color: #666; margin-top: 8px;">
       Scan to verify claimed amounts, cause of loss findings, and notary authority.

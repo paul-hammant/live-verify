@@ -19,7 +19,7 @@ furtherDerivations: 1
 <div style="padding: 40px; text-align: center;">
     <div style="font-size: 1.1em; color: #666; margin-bottom: 10px;">This is to certify that</div>
     <div style="font-size: 2em; font-weight: bold; color: #1a1a1a; margin-bottom: 20px;">
-      <span data-bracket="start" data-for="ind-cert">[</span>SARAH JANE SMITH
+      <span verifiable-text="start" data-for="ind-cert">[</span>SARAH JANE SMITH
     </div>
     <div style="font-size: 1.1em; color: #666; margin-bottom: 25px;">has fulfilled the requirements for the designation of</div>
     <div style="font-size: 1.5em; font-weight: bold; color: #d32f2f; letter-spacing: 1px; margin-bottom: 30px;">PROJECT MANAGEMENT PROFESSIONAL</div>
@@ -30,7 +30,7 @@ furtherDerivations: 1
     </div>
 <div data-verify-line="ind-cert" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: PMI doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:pmi.org/credentials/v/99228877 <span data-bracket="end" data-for="ind-cert">]</span>
+      verify:pmi.org/credentials/v/99228877 <span verifiable-text="end" data-for="ind-cert">]</span>
     </div>
   </div>
 </div>

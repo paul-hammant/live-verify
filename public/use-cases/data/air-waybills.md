@@ -27,7 +27,7 @@ Unlike a passenger ticket which is digital-first, AWBs are often physically atta
     <div style="display: flex; margin-bottom: 10px;">
       <div style="width: 50%; border-right: 1px solid #000; padding-right: 5px;">
         <strong>Shipper:</strong><br>
-        <span data-bracket="start" data-for="awb">[</span>Global Tech Exports, Inc.<br>
+        <span verifiable-text="start" data-for="awb">[</span>Global Tech Exports, Inc.<br>
         400 Silicon Valley Blvd<br>
         San Jose, CA 95134
       </div>
@@ -58,7 +58,7 @@ Unlike a passenger ticket which is digital-first, AWBs are often physically atta
     </div>
 <div data-verify-line="awb" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Airline doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:unitedcargo.com/awb/v/x9y8z7 <span data-bracket="end" data-for="awb">]</span>
+      verify:unitedcargo.com/awb/v/x9y8z7 <span verifiable-text="end" data-for="awb">]</span>
     </div>
   </div>
 </div>
@@ -142,7 +142,7 @@ Fraud is common in the "Long Tail" of logistics: un-vetted forwarders sometimes 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 1px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <div style="background: #000; color: #fff; padding: 10px; display: flex; justify-content: space-between; align-items: center;">
     <div style="font-weight: bold; font-size: 1.2em;">KUEHNE+NAGEL</div>
-    <div style="font-size: 0.8em; text-align: right;">HAWB No: <span data-bracket="start" data-for="hawb">[</span>KN-9988776655</div>
+    <div style="font-size: 0.8em; text-align: right;">HAWB No: <span verifiable-text="start" data-for="hawb">[</span>KN-9988776655</div>
   </div>
 <div style="padding: 10px; font-size: 0.8em;">
     <div style="display: flex; border-bottom: 1px solid #000; padding-bottom: 10px; margin-bottom: 10px;">
@@ -188,7 +188,7 @@ Fraud is common in the "Long Tail" of logistics: un-vetted forwarders sometimes 
     </div>
 <div data-verify-line="hawb" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #555; text-align: center;"
       title="Demo only: Forwarder doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:kuehne-nagel.com/hawb/v/9988776655 <span data-bracket="end" data-for="hawb">]</span>
+      verify:kuehne-nagel.com/hawb/v/9988776655 <span verifiable-text="end" data-for="hawb">]</span>
     </div>
   </div>
 </div>

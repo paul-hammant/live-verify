@@ -27,7 +27,7 @@ These documents are the "Keys to the Classroom." Fraud is high-stakes: individua
       <div style="width: 100px; height: 120px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #999; font-size: 0.7em; text-align: center; margin-right: 20px;">[TEACHER PHOTO]</div>
       <div style="flex-grow: 1; font-size: 0.9em; line-height: 1.5;">
         <div style="font-size: 0.8em; color: #888; text-transform: uppercase;">License Holder</div>
-        <div style="font-size: 1.3em; font-weight: bold; color: #003366;"><span data-bracket="start" data-for="teach">[</span>SARAH J. SMITH</div>
+        <div style="font-size: 1.3em; font-weight: bold; color: #003366;"><span verifiable-text="start" data-for="teach">[</span>SARAH J. SMITH</div>
 <div style="margin-top: 10px;">
           <strong>Primary State:</strong> New York (NYSED)<br>
           <strong>License ID:</strong> NY-992288-XJ<br>
@@ -50,7 +50,7 @@ These documents are the "Keys to the Classroom." Fraud is high-stakes: individua
 <div style="padding: 20px; background: #fff; border-top: 1px dashed #999; text-align: center;">
     <div data-verify-line="teach" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #003366; font-weight: bold;"
       title="Demo only: Education boards don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:nysed.gov/v/teach/NY992288XJ <span data-bracket="end" data-for="teach">]</span>
+      verify:nysed.gov/v/teach/NY992288XJ <span verifiable-text="end" data-for="teach">]</span>
     </div>
   </div>
 </div>

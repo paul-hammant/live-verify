@@ -27,7 +27,7 @@ Fraud is common: scammers often create fake "Global Entry" PDFs to trick employe
 <div style="padding: 25px;">
     <div style="text-align: center; margin-bottom: 20px;">
       <h2 style="margin: 0; font-size: 1.3em;">MEMBERSHIP CONFIRMATION</h2>
-      <div style="font-size: 1.5em; font-weight: bold; margin-top: 5px; color: #002d62;">PASSID: <span data-bracket="start" data-for="ttp">[</span>998877665</div>
+      <div style="font-size: 1.5em; font-weight: bold; margin-top: 5px; color: #002d62;">PASSID: <span verifiable-text="start" data-for="ttp">[</span>998877665</div>
     </div>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
       <p><strong>Member Name:</strong> JOHN JACOB DOE<br>
@@ -41,7 +41,7 @@ Fraud is common: scammers often create fake "Global Entry" PDFs to trick employe
     </div>
 <div data-verify-line="ttp" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: CBP doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:ttp.cbp.dhs.gov/v/998877665 <span data-bracket="end" data-for="ttp">]</span>
+      verify:ttp.cbp.dhs.gov/v/998877665 <span verifiable-text="end" data-for="ttp">]</span>
     </div>
   </div>
 </div>

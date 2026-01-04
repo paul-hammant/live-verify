@@ -25,7 +25,7 @@ The problem is that a REC can only be used once. "Double-Counting" is a massive 
 <div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
-        <strong>Generator:</strong> <span data-bracket="start" data-for="rec">[</span>SUNNY-RIDGE SOLAR ARRAY<br>
+        <strong>Generator:</strong> <span verifiable-text="start" data-for="rec">[</span>SUNNY-RIDGE SOLAR ARRAY<br>
         <strong>Facility ID:</strong> #992288-XJ<br>
         <strong>Location:</strong> Kern County, CA
       </div>
@@ -47,7 +47,7 @@ The problem is that a REC can only be used once. "Double-Counting" is a massive 
 <div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #999; text-align: center;">
     <div data-verify-line="rec" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: Energy registries don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:wregis.org/v/REC99228877 <span data-bracket="end" data-for="rec">]</span>
+      verify:wregis.org/v/REC99228877 <span verifiable-text="end" data-for="rec">]</span>
     </div>
     <div style="font-size: 0.7em; color: #999; margin-top: 10px;">
       Scan to verify generation timestamps, grid injection status, and retirement ownership.

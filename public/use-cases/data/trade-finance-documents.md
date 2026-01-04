@@ -33,7 +33,7 @@ These documents are the primary target for **Trade Finance Fraud**. Scammers use
     </div>
     <div style="padding: 10px; font-size: 0.75em; line-height: 1.3;">
       <strong style="text-transform: uppercase; color: #666;">B/L Number:</strong><br>
-      <div style="font-size: 1.2em; font-weight: bold;"><span data-bracket="start" data-for="trade">[</span>MSC-9922887766</div>
+      <div style="font-size: 1.2em; font-weight: bold;"><span verifiable-text="start" data-for="trade">[</span>MSC-9922887766</div>
     </div>
   </div>
 <div style="padding: 10px; border-bottom: 1px solid #000; font-size: 0.75em; line-height: 1.3; background: #fffbe6;">
@@ -64,7 +64,7 @@ These documents are the primary target for **Trade Finance Fraud**. Scammers use
 <div style="padding: 20px; background: #f9f9f9; border-top: 1px solid #000; text-align: center;">
     <div data-verify-line="trade" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #ef6c00; font-weight: bold;"
       title="Demo only: MSC doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:msc.com/bl/v/9922887766 <span data-bracket="end" data-for="trade">]</span>
+      verify:msc.com/bl/v/9922887766 <span verifiable-text="end" data-for="trade">]</span>
     </div>
     <div style="font-size: 0.7em; color: #777; margin-top: 10px; font-style: italic;">
       Scan to verify Bank Endorsement status, On-Board timestamps, and Cargo Integrity. This is a Document of Title.
@@ -150,7 +150,7 @@ These papers are the primary tools for **Tariff Evasion**. Fraud is high-stakes:
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 25px;">
       <div>
-        <strong>Exporter:</strong> <span data-bracket="start" data-for="origin">[</span>BRITISH PRECISION LTD.<br>
+        <strong>Exporter:</strong> <span verifiable-text="start" data-for="origin">[</span>BRITISH PRECISION LTD.<br>
         123 Thames Way, London, UK
       </div>
       <div style="text-align: right;">
@@ -178,7 +178,7 @@ These papers are the primary tools for **Tariff Evasion**. Fraud is high-stakes:
 <div style="padding: 20px; background: #fdfdfd; border: 1px dashed #999; margin-top: 40px; text-align: center;">
     <div data-verify-line="origin" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: Chambers of Commerce don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:londonchamber.com/v/CO992288UK <span data-bracket="end" data-for="origin">]</span>
+      verify:londonchamber.com/v/CO992288UK <span verifiable-text="end" data-for="origin">]</span>
     </div>
     <div style="font-size: 0.7em; color: #666; margin-top: 10px;">
       Scan to verify origin authenticity, HS Code classification, and Chamber authority.
@@ -264,7 +264,7 @@ This document is the primary engine for **Trade-Based Money Laundering (TBML)** 
     </div>
     <div style="text-align: right;">
       <h2 style="margin: 0; font-size: 1.2em; letter-spacing: 1px;">COMMERCIAL INVOICE</h2>
-      <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;"># <span data-bracket="start" data-for="invoice">[</span>INV-2026-8844</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;"># <span verifiable-text="start" data-for="invoice">[</span>INV-2026-8844</div>
     </div>
   </div>
 <div style="padding: 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.85em; line-height: 1.4; border-bottom: 1px solid #eee;">
@@ -305,7 +305,7 @@ This document is the primary engine for **Trade-Based Money Laundering (TBML)** 
     </div>
     <div data-verify-line="invoice" style="border-top: 1px dashed #999; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: Exporters don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:globaltextiles.ae/v/INV20268844 <span data-bracket="end" data-for="invoice">]</span>
+      verify:globaltextiles.ae/v/INV20268844 <span verifiable-text="end" data-for="invoice">]</span>
     </div>
   </div>
 </div>

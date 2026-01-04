@@ -25,7 +25,7 @@ Because these cards are required for legal entry, scammers often sell "Fake Gree
     <div style="display: flex; justify-content: space-between; font-size: 0.9em; margin-bottom: 20px;">
       <div>
         <strong>1. Valid:</strong> From 15/03/2026 To 14/04/2026<br>
-        <strong>2. Country Code:</strong> <span data-bracket="start" data-for="green-card">[</span>UK / 992288
+        <strong>2. Country Code:</strong> <span verifiable-text="start" data-for="green-card">[</span>UK / 992288
       </div>
       <div style="text-align: right;">
         <strong>3. Registration No:</strong><br>
@@ -46,7 +46,7 @@ Because these cards are required for legal entry, scammers often sell "Fake Gree
     </div>
 <div data-verify-line="green-card" style="border-top: 1px dashed #388e3c; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #333; text-align: center;"
       title="Demo only: Allianz doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:allianz.co.uk/greencard/v/992288ABC <span data-bracket="end" data-for="green-card">]</span>
+      verify:allianz.co.uk/greencard/v/992288ABC <span verifiable-text="end" data-for="green-card">]</span>
     </div>
   </div>
 </div>

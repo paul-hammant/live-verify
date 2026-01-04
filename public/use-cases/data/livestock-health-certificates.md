@@ -19,7 +19,7 @@ furtherDerivations: 1
 <div style="padding: 25px;">
     <div style="text-align: center; border-bottom: 2px solid #1b5e20; padding-bottom: 10px; margin-bottom: 20px;">
       <h3 style="margin: 0; color: #1b5e20;">OFFICIAL SHIPMENT AUTHORIZATION</h3>
-      <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;">Serial #: <span data-bracket="start" data-for="animal">[</span>CVI-2026-992288</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;">Serial #: <span verifiable-text="start" data-for="animal">[</span>CVI-2026-992288</div>
     </div>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
       <p><strong>Consignor:</strong> Miller Quarter Horses, LLC (Texas)<br>
@@ -35,7 +35,7 @@ furtherDerivations: 1
     </div>
 <div data-verify-line="animal" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: State Vet Office doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:tahc.texas.gov/cvi/v/992288 <span data-bracket="end" data-for="animal">]</span>
+      verify:tahc.texas.gov/cvi/v/992288 <span verifiable-text="end" data-for="animal">]</span>
     </div>
   </div>
 </div>

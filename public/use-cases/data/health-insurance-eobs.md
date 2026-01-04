@@ -32,7 +32,7 @@ Verified EOBs are essential for **HSA/FSA Reimbursement**. Fraudsters often edit
 <div style="padding: 25px;">
     <div style="display: flex; justify-content: space-between; font-size: 0.9em; margin-bottom: 20px; color: #555;">
       <div>
-        <strong>Patient:</strong> <span data-bracket="start" data-for="eob-health">[</span>SARAH J. DOE<br>
+        <strong>Patient:</strong> <span verifiable-text="start" data-for="eob-health">[</span>SARAH J. DOE<br>
         <strong>Provider:</strong> Westside Medical Clinic
       </div>
       <div style="text-align: right;">
@@ -66,7 +66,7 @@ Verified EOBs are essential for **HSA/FSA Reimbursement**. Fraudsters often edit
     </p>
 <div data-verify-line="eob-health" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Anthem doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:anthem.com/claims/v/99228877 <span data-bracket="end" data-for="eob-health">]</span>
+      verify:anthem.com/claims/v/99228877 <span verifiable-text="end" data-for="eob-health">]</span>
     </div>
   </div>
 </div>

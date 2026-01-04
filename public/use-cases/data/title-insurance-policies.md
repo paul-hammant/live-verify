@@ -26,7 +26,7 @@ Unlike other insurance that covers *future* events (like fire), title insurance 
   </div>
 <h2 style="text-align: center; font-size: 1.4em; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 30px;">Owner's Policy of Title Insurance</h2>
 <div style="font-size: 1em; line-height: 1.6; color: #000; text-align: justify;">
-    <p><strong>SUBJECT TO THE EXCLUSIONS FROM COVERAGE</strong>, FIRST AMERICAN TITLE INSURANCE COMPANY (the "Company") insures <span data-bracket="start" data-for="title-ins">[</span><strong>ROBERT J. MILLER</strong> (the "Insured") against loss or damage sustained by reason of any defect in title.</p>
+    <p><strong>SUBJECT TO THE EXCLUSIONS FROM COVERAGE</strong>, FIRST AMERICAN TITLE INSURANCE COMPANY (the "Company") insures <span verifiable-text="start" data-for="title-ins">[</span><strong>ROBERT J. MILLER</strong> (the "Insured") against loss or damage sustained by reason of any defect in title.</p>
 <div style="background: #f9f9f9; padding: 15px; border: 1px solid #eee; margin: 20px 0;">
       <p><strong>Amount of Insurance:</strong> $ 525,000.00</p>
       <p><strong>Property:</strong> Lot 42, Block 7, Skyline Heights Addition, Austin, TX</p>
@@ -38,7 +38,7 @@ Unlike other insurance that covers *future* events (like fire), title insurance 
   </div>
 <div data-verify-line="title-ins" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: First American doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:firstam.com/v/99228877-TX <span data-bracket="end" data-for="title-ins">]</span>
+      verify:firstam.com/v/99228877-TX <span verifiable-text="end" data-for="title-ins">]</span>
   </div>
 </div>
 

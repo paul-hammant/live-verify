@@ -22,7 +22,7 @@ These documents are the "Proof of Protection." Fraud is high-stakes: a developer
     </div>
     <div style="text-align: right;">
       <div style="font-weight: bold; font-size: 1.1em;">POLICY SUMMARY</div>
-      <div style="font-size: 0.7em;">Ref: <span data-bracket="start" data-for="pri">[</span>PRI-2026-992288</div>
+      <div style="font-size: 0.7em;">Ref: <span verifiable-text="start" data-for="pri">[</span>PRI-2026-992288</div>
     </div>
   </div>
 <div style="padding: 25px;">
@@ -66,7 +66,7 @@ These documents are the "Proof of Protection." Fraud is high-stakes: a developer
 <div style="padding: 20px; background: #f5f5f5; border-top: 1px solid #000; text-align: center;">
     <div data-verify-line="pri" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Specialist insurers don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:zurich.com/pri/v/992288-NORDIA <span data-bracket="end" data-for="pri">]</span>
+      verify:zurich.com/pri/v/992288-NORDIA <span verifiable-text="end" data-for="pri">]</span>
     </div>
     <div style="font-size: 0.7em; color: #777; margin-top: 10px;">
       Scan to verify coverage limits, sovereign risk status, and claims eligibility.

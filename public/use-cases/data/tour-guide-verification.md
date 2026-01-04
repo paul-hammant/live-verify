@@ -25,7 +25,7 @@ The problem is that "Tour Guide" is a low-barrier profession. Anyone can buy a g
     </div>
     <div style="flex-grow: 1;">
       <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Guide Name</div>
-      <div style="font-size: 1.2em; font-weight: bold; margin: 0 0 10px 0; color: #003366;"><span data-bracket="start" data-for="guide">[</span>MARCO R. SILVA</div>
+      <div style="font-size: 1.2em; font-weight: bold; margin: 0 0 10px 0; color: #003366;"><span verifiable-text="start" data-for="guide">[</span>MARCO R. SILVA</div>
 <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">License #</div>
       <div style="font-size: 1em; font-weight: bold; margin: 0 0 10px 0;">ID: PT-992288</div>
 <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Languages</div>
@@ -38,7 +38,7 @@ The problem is that "Tour Guide" is a low-barrier profession. Anyone can buy a g
     </div>
     <div data-verify-line="guide" style="border-top: 1px dashed #999; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #0072b2; text-align: center; font-weight: bold;"
       title="Demo only: Tourism boards don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:visitportugal.gov/v/992288 <span data-bracket="end" data-for="guide">]</span>
+      verify:visitportugal.gov/v/992288 <span verifiable-text="end" data-for="guide">]</span>
     </div>
   </div>
 </div>

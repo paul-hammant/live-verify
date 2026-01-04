@@ -25,7 +25,7 @@ It's not just for geography—it's for **Tariffs**. If a company ships microproc
     <div style="display: flex; border-bottom: 1px solid #333; padding-bottom: 10px; margin-bottom: 10px;">
       <div style="width: 50%; border-right: 1px solid #333; padding-right: 10px;">
         <strong>1. Exporter:</strong><br>
-        <span data-bracket="start" data-for="origin-us">[</span>Texas Instruments, Inc.<br>
+        <span verifiable-text="start" data-for="origin-us">[</span>Texas Instruments, Inc.<br>
         12500 TI Blvd, Dallas, TX 75243
       </div>
       <div style="width: 50%; padding-left: 10px;">
@@ -48,7 +48,7 @@ It's not just for geography—it's for **Tariffs**. If a company ships microproc
     </div>
 <div data-verify-line="origin-us" style="border-top: 1px dashed #999; margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #555; text-align: center;"
       title="Demo only: US Chamber doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:uschamber.com/v/TXTI-2026-09 <span data-bracket="end" data-for="origin-us">]</span>
+      verify:uschamber.com/v/TXTI-2026-09 <span verifiable-text="end" data-for="origin-us">]</span>
     </div>
   </div>
 </div>

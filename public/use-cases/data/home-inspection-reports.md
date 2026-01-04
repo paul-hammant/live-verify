@@ -29,7 +29,7 @@ Fraud is high-stakes here: sellers or dishonest agents sometimes "Delete" the sc
 <div style="padding: 25px;">
     <h3 style="margin-top: 0; color: #2c3e50; border-bottom: 2px solid #2c3e50; padding-bottom: 5px;">PROPERTY CONDITION SUMMARY</h3>
 <div style="font-size: 0.9em; line-height: 1.5; color: #333;">
-      <p><strong>Property:</strong> <span data-bracket="start" data-for="inspect">[</span>123 Desert Lane, Phoenix, AZ 85001<br>
+      <p><strong>Property:</strong> <span verifiable-text="start" data-for="inspect">[</span>123 Desert Lane, Phoenix, AZ 85001<br>
       <strong>Client:</strong> Sarah Jane Smith</p>
 <div style="background: #fdfdfd; border: 1px solid #eee; padding: 15px; margin: 15px 0; border-radius: 4px;">
         <strong>MAJOR FINDINGS:</strong><br>
@@ -45,7 +45,7 @@ Fraud is high-stakes here: sellers or dishonest agents sometimes "Delete" the sc
     </div>
 <div data-verify-line="inspect" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Inspection firm doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:premier-inspections.com/v/HI2026042 <span data-bracket="end" data-for="inspect">]</span>
+      verify:premier-inspections.com/v/HI2026042 <span verifiable-text="end" data-for="inspect">]</span>
     </div>
   </div>
 </div>

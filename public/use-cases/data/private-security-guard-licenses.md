@@ -31,7 +31,7 @@ OCR-to-hash binds the **Guard's name, License Number, and Firearms Qualification
       <div style="width: 100px; height: 125px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #777; font-size: 0.7em; text-align: center;">[VERIFIED<br>PHOTO]</div>
     </div>
     <div style="flex-grow: 1;">
-      <div style="font-size: 1.1em; font-weight: bold; margin: 0 0 5px 0;"><span data-bracket="start" data-for="guard">[</span>MILLER, ROBERT J.</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin: 0 0 5px 0;"><span verifiable-text="start" data-for="guard">[</span>MILLER, ROBERT J.</div>
       <div style="font-size: 0.85em; color: #333; line-height: 1.4;">
         <strong>License:</strong> SG-992288-A<br>
         <strong>Status:</strong> ARMED GUARD<br>
@@ -46,7 +46,7 @@ OCR-to-hash binds the **Guard's name, License Number, and Firearms Qualification
     </div>
     <div data-verify-line="guard" style="border-top: 1px dashed #999; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: State Bureau doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:securityboard.gov/v/SG992288 <span data-bracket="end" data-for="guard">]</span>
+      verify:securityboard.gov/v/SG992288 <span verifiable-text="end" data-for="guard">]</span>
     </div>
   </div>
 </div>

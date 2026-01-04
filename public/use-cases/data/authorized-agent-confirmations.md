@@ -48,7 +48,7 @@ When challenged by police, property owners, or bystanders, these agents need pro
     <div style="font-size: 0.8em;">Asset Recovery Order</div>
   </div>
   <div style="padding: 20px; font-size: 0.9em; line-height: 1.6;">
-    <p><strong>Lender:</strong> <span data-bracket="start" data-for="authorizedagentconfi">[</span>AutoFinance UK Ltd<br>
+    <p><strong>Lender:</strong> <span verifiable-text="start" data-for="authorizedagentconfi">[</span>AutoFinance UK Ltd<br>
     <strong>Recovery Agent:</strong> Nationwide Asset Recovery<br>
     <strong>Agent ID:</strong> NAR-7742<br>
     <strong>Order Date:</strong> February 10, 2026</p>
@@ -66,7 +66,7 @@ When challenged by police, property owners, or bystanders, these agents need pro
 <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="authorizedagentconfi" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
-        verify:autofinance-uk.com/recovery/AB12CDE-2026 <span data-bracket="end" data-for="authorizedagentconfi">]</span>
+        verify:autofinance-uk.com/recovery/AB12CDE-2026 <span verifiable-text="end" data-for="authorizedagentconfi">]</span>
       </div>
     </div>
   </div>
@@ -98,7 +98,7 @@ When challenged by police, property owners, or bystanders, these agents need pro
 <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="authorizedagentconfi" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
-        verify:gov.uk/courts/writs/WC-2026-00887 <span data-bracket="end" data-for="authorizedagentconfi">]</span>
+        verify:gov.uk/courts/writs/WC-2026-00887 <span verifiable-text="end" data-for="authorizedagentconfi">]</span>
       </div>
     </div>
   </div>
@@ -133,7 +133,7 @@ For locksmiths and tree surgeons, the authorizing party is an individual homeown
 <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="authorizedagentconfi" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
-        verify:secureentry.co.uk/jobs/2026-0215-14MA <span data-bracket="end" data-for="authorizedagentconfi">]</span>
+        verify:secureentry.co.uk/jobs/2026-0215-14MA <span verifiable-text="end" data-for="authorizedagentconfi">]</span>
       </div>
     </div>
   </div>
@@ -170,7 +170,7 @@ For locksmiths and tree surgeons, the authorizing party is an individual homeown
 <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="authorizedagentconfi" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
-        verify:greenwood-trees.co.uk/jobs/2026-0220-27OL <span data-bracket="end" data-for="authorizedagentconfi">]</span>
+        verify:greenwood-trees.co.uk/jobs/2026-0220-27OL <span verifiable-text="end" data-for="authorizedagentconfi">]</span>
       </div>
     </div>
   </div>
@@ -209,7 +209,7 @@ Three different authorization sources depending on context:
 <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="authorizedagentconfi" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
-        verify:parksecure.co.uk/removals/XY67ZZZ-2026-0215 <span data-bracket="end" data-for="authorizedagentconfi">]</span>
+        verify:parksecure.co.uk/removals/XY67ZZZ-2026-0215 <span verifiable-text="end" data-for="authorizedagentconfi">]</span>
       </div>
     </div>
   </div>
@@ -262,7 +262,7 @@ Simple notice inviting challenge before work begins:
 <p style="font-size: 0.8em; font-family: monospace; text-align: center; color: #666; margin-top: 15px;">
       <div data-verify-line="authorizedagentconfi" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
-        verify:propertyworks-auth.co.uk/advance/PWK-2026-0315 <span data-bracket="end" data-for="authorizedagentconfi">]</span>
+        verify:propertyworks-auth.co.uk/advance/PWK-2026-0315 <span verifiable-text="end" data-for="authorizedagentconfi">]</span>
       </div>
     </p>
   </div>
@@ -293,7 +293,7 @@ Full details including authorized individuals:
 <p style="font-size: 0.8em; font-family: monospace; text-align: center; color: #666; margin-top: 15px;">
       <div data-verify-line="authorizedagentconfi" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
-        verify:propertyworks-auth.co.uk/works/PWK-2026-0315-A1 <span data-bracket="end" data-for="authorizedagentconfi">]</span>
+        verify:propertyworks-auth.co.uk/works/PWK-2026-0315-A1 <span verifiable-text="end" data-for="authorizedagentconfi">]</span>
       </div>
     </p>
   </div>

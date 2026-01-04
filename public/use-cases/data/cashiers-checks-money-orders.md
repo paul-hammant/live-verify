@@ -30,7 +30,7 @@ The seller thinks the check is real, hands over the car keys, and then discovers
       <div style="font-size: 1.2em; font-weight: bold;">$ ********25,000.00</div>
     </div>
 <div style="margin: 15px 0;">
-      PAY TO THE<br>ORDER OF: <span data-bracket="start" data-for="check">[</span><strong>EXEMPLAR REALTY HOLDINGS, LLC</strong>
+      PAY TO THE<br>ORDER OF: <span verifiable-text="start" data-for="check">[</span><strong>EXEMPLAR REALTY HOLDINGS, LLC</strong>
     </div>
 <div style="margin: 10px 0; border-bottom: 1px solid #999; padding-bottom: 5px;">
       TWENTY-FIVE THOUSAND AND 00/100 US DOLLARS
@@ -46,7 +46,7 @@ The seller thinks the check is real, hands over the car keys, and then discovers
   </div>
 <div data-verify-line="check" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Wells Fargo doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:wellsfargo.com/check/v/998877665 <span data-bracket="end" data-for="check">]</span>
+      verify:wellsfargo.com/check/v/998877665 <span verifiable-text="end" data-for="check">]</span>
   </div>
 </div>
 

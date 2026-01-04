@@ -16,7 +16,7 @@ furtherDerivations: 1
   </div>
   <div style="padding: 24px 28px; text-align: center;">
     <div style="font-size: 1.1em; color: #666; margin-bottom: 8px;">LETTERS PATENT</div>
-    <h2 style="font-size: 1.5em; margin: 0 0 16px 0; line-height: 1.3; color: #1a365d;"><span data-bracket="start" data-for="patent">[</span>Mechanism for Facilitating Rotational Ground Transport</h2>
+    <h2 style="font-size: 1.5em; margin: 0 0 16px 0; line-height: 1.3; color: #1a365d;"><span verifiable-text="start" data-for="patent">[</span>Mechanism for Facilitating Rotational Ground Transport</h2>
     <div style="font-size: 0.95em; color: #333; margin-bottom: 20px; text-align: left; line-height: 1.6;">
       <strong>Patent No:</strong> MES-4200-0001<br>
       <strong>Inventor:</strong> Gilgamesh of Uruk<br>
@@ -27,7 +27,7 @@ furtherDerivations: 1
     </div>
     <div style="background: #f7fafc; border: 1px solid #cbd5e0; padding: 12px 16px; margin: 16px 0; font-size: 0.85em; text-align: left; font-family: 'Courier New', monospace;">
       <strong>Patent PDF SHA256:</strong><br>
-      <span style="word-break: break-all; color: #555;">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span><span data-bracket="end" data-for="patent">]</span>
+      <span style="word-break: break-all; color: #555;">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span><span verifiable-text="end" data-for="patent">]</span>
     </div>
     <div data-verify-line="patent" style="border-top: 1px dashed #999; margin-top: 16px; padding-top: 12px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555;"
       title="Demo only: USPTO doesn't yet offer verification&#10;endpoints, so this is illustrative">

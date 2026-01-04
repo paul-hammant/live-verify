@@ -25,7 +25,7 @@ These documents are "Financial Recovery" records. Fraud is high-stakes: claimant
 <div style="padding: 25px;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div style="font-size: 0.9em; line-height: 1.5;">
-        <strong>Claimant:</strong> <span data-bracket="start" data-for="claim">[</span>SARAH JANE SMITH<br>
+        <strong>Claimant:</strong> <span verifiable-text="start" data-for="claim">[</span>SARAH JANE SMITH<br>
         <strong>Policy #:</strong> AZ-99228877-XJ<br>
         <strong>Loss Event:</strong> Emergency Medical (Thailand)
       </div>
@@ -63,7 +63,7 @@ These documents are "Financial Recovery" records. Fraud is high-stakes: claimant
 <div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #bbb; text-align: center;">
     <div data-verify-line="claim" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #0033a0; font-weight: bold;"
       title="Demo only: Travel insurers don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:allianz.com/v/CL20268844 <span data-bracket="end" data-for="claim">]</span>
+      verify:allianz.com/v/CL20268844 <span verifiable-text="end" data-for="claim">]</span>
     </div>
     <div style="font-size: 0.7em; color: #999; margin-top: 10px;">
       Scan to verify payout amounts, loss categorization, and final settlement authority.

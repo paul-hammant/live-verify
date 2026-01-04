@@ -31,7 +31,7 @@ Customs officers use this invoice to decide:
     <div style="display: flex; margin-bottom: 20px;">
       <div style="width: 50%;">
         <strong>EXPORTER (SELLER):</strong><br>
-        <span data-bracket="start" data-for="invoice">[</span>Shenzhen Tech Components, Ltd.<br>
+        <span verifiable-text="start" data-for="invoice">[</span>Shenzhen Tech Components, Ltd.<br>
         Building 4, High-Tech Park<br>
         Shenzhen, GD, China
       </div>
@@ -70,7 +70,7 @@ Customs officers use this invoice to decide:
     </div>
 <div data-verify-line="invoice" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Exporter doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:sz-tech.com/invoices/v/INV998877 <span data-bracket="end" data-for="invoice">]</span>
+      verify:sz-tech.com/invoices/v/INV998877 <span verifiable-text="end" data-for="invoice">]</span>
     </div>
   </div>
 </div>

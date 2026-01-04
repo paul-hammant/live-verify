@@ -15,7 +15,7 @@ furtherDerivations: 1
     --------------------------------
   </div>
 <div style="font-size: 0.9em; line-height: 1.4;">
-    <p><strong>Transaction ID:</strong> <span data-bracket="start" data-for="m-pesa">[</span>RKJ42BC992</p>
+    <p><strong>Transaction ID:</strong> <span verifiable-text="start" data-for="m-pesa">[</span>RKJ42BC992</p>
     <p><strong>Confirmed:</strong> March 15, 2026 at 14:22:01</p>
 <div style="background: #eee; padding: 10px; margin: 10px 0;">
       <strong>SENT TO:</strong> SAMUEL OKORO<br>
@@ -29,7 +29,7 @@ furtherDerivations: 1
     </div>
 <div data-verify-line="m-pesa" style="border-top: 1px dashed #999; margin-top: 15px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Safaricom doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:safaricom.co.ke/mpesa/v/RKJ42BC992 <span data-bracket="end" data-for="m-pesa">]</span>
+      verify:safaricom.co.ke/mpesa/v/RKJ42BC992 <span verifiable-text="end" data-for="m-pesa">]</span>
     </div>
   </div>
 </div>

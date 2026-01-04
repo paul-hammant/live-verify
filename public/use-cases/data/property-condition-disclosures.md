@@ -27,7 +27,7 @@ These documents are the primary evidence in post-sale lawsuits. Fraud is high-fr
       <div>
         <strong>Property Address:</strong><br>
         123 MAPLE STREET, SPRINGFIELD, USA<br>
-        <strong>Seller:</strong> <span data-bracket="start" data-for="disclose">[</span>ROBERT & MARY SMITH
+        <strong>Seller:</strong> <span verifiable-text="start" data-for="disclose">[</span>ROBERT & MARY SMITH
       </div>
       <div style="text-align: right;">
         <strong>Date of Disclosure:</strong> 15 MAR 2026<br>
@@ -62,7 +62,7 @@ These documents are the primary evidence in post-sale lawsuits. Fraud is high-fr
 <div style="padding: 20px; background: #fff; border-top: 1px dashed #999; text-align: center;">
     <div data-verify-line="disclose" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #004d40; font-weight: bold;"
       title="Demo only: Real estate boards don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:springfield-realtors.org/v/SMITH992288 <span data-bracket="end" data-for="disclose">]</span>
+      verify:springfield-realtors.org/v/SMITH992288 <span verifiable-text="end" data-for="disclose">]</span>
     </div>
     <div style="font-size: 0.7em; color: #999; margin-top: 10px;">
       Scan to verify disclosure integrity, original defect list, and seller authorization.

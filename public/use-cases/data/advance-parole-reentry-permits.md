@@ -33,7 +33,7 @@ If a traveler loses this paper, or if an airline agent in Paris thinks it looks 
 <div style="display: flex; margin-bottom: 20px;">
       <div style="width: 100px; height: 120px; background: #eee; margin-right: 20px; display: flex; align-items: center; justify-content: center; color: #777;">[Photo]</div>
       <div style="font-size: 0.95em; line-height: 1.5; color: #333;">
-        <p><strong>Name:</strong> <span data-bracket="start" data-for="parole">[</span>JUAN VALDEZ<br>
+        <p><strong>Name:</strong> <span verifiable-text="start" data-for="parole">[</span>JUAN VALDEZ<br>
         <strong>Date of Birth:</strong> 05/05/1980<br>
         <strong>Country of Birth:</strong> COLOMBIA</p>
         <p><strong>Date of Issuance:</strong> JAN 15, 2026<br>
@@ -43,7 +43,7 @@ If a traveler loses this paper, or if an airline agent in Paris thinks it looks 
 <p style="font-size: 0.9em; text-align: justify;">Presentation of this authorization will permit the above named alien to seek parole at a port of entry. Officer at POE: Please endorse below.</p>
 <div data-verify-line="parole" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: USCIS doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:uscis.gov/v/i512/x9y8z7 <span data-bracket="end" data-for="parole">]</span>
+      verify:uscis.gov/v/i512/x9y8z7 <span verifiable-text="end" data-for="parole">]</span>
     </div>
   </div>
 </div>

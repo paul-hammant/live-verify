@@ -26,7 +26,7 @@ Fraud is high-volume: consumers often "edit" a purchase date on a PDF receipt to
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; color: #333; margin-bottom: 20px;">
       <div>
         <strong>Model:</strong> Ocean-Master 300<br>
-        <strong>Serial:</strong> <span data-bracket="start" data-for="warranty">[</span>SN-992288-XJ
+        <strong>Serial:</strong> <span verifiable-text="start" data-for="warranty">[</span>SN-992288-XJ
       </div>
       <div style="text-align: right;">
         <strong>Purchase Date:</strong><br>
@@ -53,7 +53,7 @@ Fraud is high-volume: consumers often "edit" a purchase date on a PDF receipt to
 <div style="padding: 20px; background: #f0f0f0; border-top: 1px solid #ddd; text-align: center;">
     <div data-verify-line="warranty" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Manufacturers don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:precisionchrono.com/v/SN992288XJ <span data-bracket="end" data-for="warranty">]</span>
+      verify:precisionchrono.com/v/SN992288XJ <span verifiable-text="end" data-for="warranty">]</span>
     </div>
     <div style="font-size: 0.7em; color: #999; margin-top: 10px;">
       Scan to verify repair eligibility, coverage dates, and original owner registration.

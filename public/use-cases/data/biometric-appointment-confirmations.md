@@ -31,7 +31,7 @@ Fraudsters often create fake notices to get into secure government facilities or
     </div>
 <h2 style="text-align: center; font-size: 1.2em; margin-bottom: 20px; text-transform: uppercase;">ASC APPOINTMENT NOTICE</h2>
 <div style="font-size: 0.95em; line-height: 1.5; color: #333;">
-      <p><strong>Applicant:</strong> <span data-bracket="start" data-for="bio">[</span>SARAH JANE SMITH</p>
+      <p><strong>Applicant:</strong> <span verifiable-text="start" data-for="bio">[</span>SARAH JANE SMITH</p>
 <div style="background: #f9f9f9; border: 1px solid #eee; padding: 15px; margin: 15px 0;">
         <p><strong>Date of Appointment:</strong> March 15, 2026<br>
         <strong>Time of Appointment:</strong> 10:00 AM</p>
@@ -43,7 +43,7 @@ Fraudsters often create fake notices to get into secure government facilities or
     </div>
 <div data-verify-line="bio" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: USCIS doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:uscis.gov/asc/v/IOE9988776655 <span data-bracket="end" data-for="bio">]</span>
+      verify:uscis.gov/asc/v/IOE9988776655 <span verifiable-text="end" data-for="bio">]</span>
     </div>
   </div>
 </div>

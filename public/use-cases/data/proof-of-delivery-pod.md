@@ -26,7 +26,7 @@ Fraud is rampant in high-value shipping (electronics, pharmaceuticals). Dishones
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
         <div style="font-size: 0.7em; color: #888; text-transform: uppercase;">Waybill Number</div>
-        <div style="font-size: 1.2em; font-weight: bold;"><span data-bracket="start" data-for="pod">[</span>JD-9922-8877-66</div>
+        <div style="font-size: 1.2em; font-weight: bold;"><span verifiable-text="start" data-for="pod">[</span>JD-9922-8877-66</div>
       </div>
       <div style="text-align: right;">
         <div style="font-size: 0.7em; color: #888; text-transform: uppercase;">Delivery Date/Time</div>
@@ -60,7 +60,7 @@ Fraud is rampant in high-value shipping (electronics, pharmaceuticals). Dishones
     </div>
 <div data-verify-line="pod" style="border-top: 1px dashed #bbb; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #d40511; text-align: center; font-weight: bold;"
       title="Demo only: DHL doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:dhl.com/pod/v/JD9922887766 <span data-bracket="end" data-for="pod">]</span>
+      verify:dhl.com/pod/v/JD9922887766 <span verifiable-text="end" data-for="pod">]</span>
     </div>
   </div>
 </div>

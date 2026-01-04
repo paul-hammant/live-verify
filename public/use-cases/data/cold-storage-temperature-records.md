@@ -23,7 +23,7 @@ If a shipment hits a "Temperature Spike" (Excursion), the product might be ruine
     ---------------------------------------
   </div>
 <div style="font-size: 0.85em; line-height: 1.4;">
-    <p><strong>Shipment ID:</strong> <span data-bracket="start" data-for="cold">[</span>COLD-2026-992288<br>
+    <p><strong>Shipment ID:</strong> <span verifiable-text="start" data-for="cold">[</span>COLD-2026-992288<br>
     <strong>Consignor:</strong> BioMed Pharma, AG<br>
     <strong>Commodity:</strong> Insul-Safe Insulin (12 Pallets)</p>
 <div style="border: 1px solid #0277bd; padding: 10px; margin: 15px 0; background: #e1f5fe;">
@@ -39,7 +39,7 @@ If a shipment hits a "Temperature Spike" (Excursion), the product might be ruine
   </div>
 <div data-verify-line="cold" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Logistics provider doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:arctic-logistics.com/v/COLD992288 <span data-bracket="end" data-for="cold">]</span>
+      verify:arctic-logistics.com/v/COLD992288 <span verifiable-text="end" data-for="cold">]</span>
   </div>
 </div>
 

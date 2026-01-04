@@ -28,7 +28,7 @@ These reports are high-value documents. Farmers use them to secure **Crop Loans*
 <div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9em; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
-        <strong>Client:</strong> <span data-bracket="start" data-for="soil">[</span>GREEN ACRES FAMILY FARM<br>
+        <strong>Client:</strong> <span verifiable-text="start" data-for="soil">[</span>GREEN ACRES FAMILY FARM<br>
         <strong>Field ID:</strong> North-42 (APN: 998-776)<br>
         <strong>Crop Type:</strong> Winter Wheat
       </div>
@@ -70,7 +70,7 @@ These reports are high-value documents. Farmers use them to secure **Crop Loans*
     </div>
     <div data-verify-line="soil" style="border-top: 1px dashed #999; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #3e2723; font-weight: bold;"
       title="Demo only: Soil labs don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:agrolabs.com/v/N42-992288 <span data-bracket="end" data-for="soil">]</span>
+      verify:agrolabs.com/v/N42-992288 <span verifiable-text="end" data-for="soil">]</span>
     </div>
   </div>
 </div>

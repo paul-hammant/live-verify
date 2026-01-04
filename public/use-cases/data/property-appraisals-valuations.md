@@ -22,7 +22,7 @@ Because the appraisal determines how much money a bank will lend, it is a primar
     </div>
     <div style="text-align: right;">
       <div style="font-weight: bold; font-size: 0.9em;">APPRAISAL SUMMARY</div>
-      <div style="font-size: 0.7em;">Ref: <span data-bracket="start" data-for="appraise">[</span>SAP-2026-8844</div>
+      <div style="font-size: 0.7em;">Ref: <span verifiable-text="start" data-for="appraise">[</span>SAP-2026-8844</div>
     </div>
   </div>
 <div style="padding: 25px;">
@@ -55,7 +55,7 @@ Because the appraisal determines how much money a bank will lend, it is a primar
     </div>
     <div data-verify-line="appraise" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #002366; font-weight: bold;"
       title="Demo only: Appraisal firms don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:summit-eval.com/v/SAP20268844 <span data-bracket="end" data-for="appraise">]</span>
+      verify:summit-eval.com/v/SAP20268844 <span verifiable-text="end" data-for="appraise">]</span>
     </div>
   </div>
 </div>

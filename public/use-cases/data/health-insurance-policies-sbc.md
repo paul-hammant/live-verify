@@ -32,7 +32,7 @@ Fraud happens during the sales process: some brokers edit the SBC PDF to show a 
       <div style="font-size: 0.9em; color: #666;">Coverage for: Individual & Family | Plan Period: 01/01/26 - 12/31/26</div>
     </div>
 <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p>This is only a summary. For more information, see <span data-bracket="start" data-for="health-sbc">[</span><strong>www.aetna.com</strong>.</p>
+      <p>This is only a summary. For more information, see <span verifiable-text="start" data-for="health-sbc">[</span><strong>www.aetna.com</strong>.</p>
 <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
         <tr style="background: #f5f5f5; border-bottom: 1px solid #005fb8;">
           <th style="text-align: left; padding: 8px;">Important Questions</th>
@@ -57,7 +57,7 @@ Fraud happens during the sales process: some brokers edit the SBC PDF to show a 
     </div>
 <div data-verify-line="health-sbc" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Aetna doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:aetna.com/sbc/v/BRONZE-1000-NY <span data-bracket="end" data-for="health-sbc">]</span>
+      verify:aetna.com/sbc/v/BRONZE-1000-NY <span verifiable-text="end" data-for="health-sbc">]</span>
     </div>
   </div>
 </div>

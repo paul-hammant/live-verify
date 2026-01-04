@@ -29,7 +29,7 @@ OCR-to-Hash allows a simple wallet card to link to a detailed, verified medical 
   </div>
 <div style="padding: 20px;">
     <div style="font-size: 0.95em; line-height: 1.5; color: #333;">
-      <p><strong>Name:</strong> <span data-bracket="start" data-for="alert">[</span>TIMOTHY DRAKE<br>
+      <p><strong>Name:</strong> <span verifiable-text="start" data-for="alert">[</span>TIMOTHY DRAKE<br>
       <strong>DOB:</strong> 07/19/2018</p>
 <div style="background: #ffebee; border: 1px solid #ffcdd2; padding: 10px; border-radius: 4px; margin: 15px 0;">
         <strong style="color: #d32f2f;">SEVERE ALLERGIES:</strong>
@@ -47,7 +47,7 @@ OCR-to-Hash allows a simple wallet card to link to a detailed, verified medical 
     </div>
 <div data-verify-line="alert" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: MedicAlert doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:medicalert.org/v/x9y8z7 <span data-bracket="end" data-for="alert">]</span>
+      verify:medicalert.org/v/x9y8z7 <span verifiable-text="end" data-for="alert">]</span>
     </div>
   </div>
 </div>

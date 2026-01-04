@@ -27,7 +27,7 @@ If a box arrives at the counting center with a different count or seal than what
 <div style="padding: 25px;">
     <h3 style="margin-top: 0; text-align: center; text-transform: uppercase;">Ballot Container Transfer</h3>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
-      <p><strong>Origin:</strong> <span data-bracket="start" data-for="ballot">[</span>Precinct 402 - North High School<br>
+      <p><strong>Origin:</strong> <span verifiable-text="start" data-for="ballot">[</span>Precinct 402 - North High School<br>
       <strong>Destination:</strong> Central Tabulation Center</p>
 <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
         <tr>
@@ -52,7 +52,7 @@ If a box arrives at the counting center with a different count or seal than what
     </div>
 <div data-verify-line="ballot" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Elections dept doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:elections.maricopa.gov/custody/v/99228 <span data-bracket="end" data-for="ballot">]</span>
+      verify:elections.maricopa.gov/custody/v/99228 <span verifiable-text="end" data-for="ballot">]</span>
     </div>
   </div>
 </div>

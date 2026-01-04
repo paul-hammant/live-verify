@@ -23,7 +23,7 @@ If a company is in financial trouble, they might "Edit" this report to hide a fu
   </div>
 <h3 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; color: #000; border-bottom: 2px solid #000; padding-bottom: 10px;">ERISA Compliance Audit Report</h3>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333; margin-top: 20px;">
-    <p><strong>Plan Sponsor:</strong> <span data-bracket="start" data-for="erisa">[</span>Initech Employees' 401(k) Plan<br>
+    <p><strong>Plan Sponsor:</strong> <span verifiable-text="start" data-for="erisa">[</span>Initech Employees' 401(k) Plan<br>
     <strong>Plan Year Ending:</strong> December 31, 2025</p>
 <div style="background: #fdfdfd; padding: 15px; border: 1px solid #eee; margin: 20px 0;">
       <p><strong>Compliance Result:</strong> <span style="color: #2e7d32; font-weight: bold;">UNQUALIFIED OPINION</span></p>
@@ -43,7 +43,7 @@ If a company is in financial trouble, they might "Edit" this report to hide a fu
   </div>
 <div data-verify-line="erisa" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Milliman doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:milliman.com/erisa/v/INITECH-2025 <span data-bracket="end" data-for="erisa">]</span>
+      verify:milliman.com/erisa/v/INITECH-2025 <span verifiable-text="end" data-for="erisa">]</span>
   </div>
 </div>
 

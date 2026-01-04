@@ -26,7 +26,7 @@ Claimants use these verified worksheets to prove their income to banks for mortg
   </div>
 <h3 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; color: #1565c0; border-bottom: 2px solid #1565c0; padding-bottom: 10px;">Long-Term Disability Benefit Calculation</h3>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333; margin-top: 20px;">
-    <p><strong>Insured:</strong> <span data-bracket="start" data-for="disability">[</span><strong>JOHN JACOB DOE</strong><br>
+    <p><strong>Insured:</strong> <span verifiable-text="start" data-for="disability">[</span><strong>JOHN JACOB DOE</strong><br>
     <strong>Policy Type:</strong> Individual Disability Income (Own-Occupation)</p>
 <div style="background: #f1f8ff; padding: 15px; border: 1px solid #bbdefb; margin: 20px 0;">
       <table style="width: 100%; font-size: 0.95em;">
@@ -59,7 +59,7 @@ Claimants use these verified worksheets to prove their income to banks for mortg
   </div>
 <div data-verify-line="disability" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: MetLife doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:metlife.com/benefits/v/DI992288 <span data-bracket="end" data-for="disability">]</span>
+      verify:metlife.com/benefits/v/DI992288 <span verifiable-text="end" data-for="disability">]</span>
   </div>
 </div>
 

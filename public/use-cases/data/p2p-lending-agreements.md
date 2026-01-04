@@ -26,7 +26,7 @@ The **Lending Agreement** (or Promissory Note) is the legal contract that says: 
   </div>
 <h3 style="text-align: center; text-transform: uppercase; margin-bottom: 25px; letter-spacing: 1px; color: #002d62;">Borrower Promissory Note</h3>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
-    <p>This certifies a valid lending agreement exists for <span data-bracket="start" data-for="p2p">[</span><strong>Borrower:</strong> John Jacob Doe.</p>
+    <p>This certifies a valid lending agreement exists for <span verifiable-text="start" data-for="p2p">[</span><strong>Borrower:</strong> John Jacob Doe.</p>
 <div style="background: #f0f4f8; padding: 15px; border: 1px solid #d1d9e6; margin: 20px 0;">
       <table style="width: 100%; font-size: 0.95em;">
         <tr>
@@ -55,7 +55,7 @@ The **Lending Agreement** (or Promissory Note) is the legal contract that says: 
   </div>
 <div data-verify-line="p2p" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: LendingClub doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:lendingclub.com/v/99228877 <span data-bracket="end" data-for="p2p">]</span>
+      verify:lendingclub.com/v/99228877 <span verifiable-text="end" data-for="p2p">]</span>
   </div>
 </div>
 

@@ -22,7 +22,7 @@ The problem is that freight rates are volatile. To win business, some NVOCCs "ed
     </div>
     <div style="text-align: right;">
       <div style="font-weight: bold; font-size: 1em;">RATE FILING</div>
-      <div style="font-size: 0.7em;">Ref: <span data-bracket="start" data-for="tariff">[</span>GFL-SHA-LAX-2026</div>
+      <div style="font-size: 0.7em;">Ref: <span verifiable-text="start" data-for="tariff">[</span>GFL-SHA-LAX-2026</div>
     </div>
   </div>
 <div style="padding: 25px;">
@@ -66,7 +66,7 @@ The problem is that freight rates are volatile. To win business, some NVOCCs "ed
 <div style="padding: 20px; background: #f9f9f9; border-top: 1px solid #333; text-align: center;">
     <div data-verify-line="tariff" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: NVOCCs don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:gfreight.com/tariffs/v/SHA-LAX-2026 <span data-bracket="end" data-for="tariff">]</span>
+      verify:gfreight.com/tariffs/v/SHA-LAX-2026 <span verifiable-text="end" data-for="tariff">]</span>
     </div>
     <div style="font-size: 0.7em; color: #777; margin-top: 10px; font-style: italic;">
       Scan to verify the filed rate integrity, effective dates, and FMC regulatory compliance status.

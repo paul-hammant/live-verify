@@ -25,7 +25,7 @@ These documents are the "Entry Permit" for global commerce. US Customs, Amazon, 
 <div style="padding: 30px;">
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
-        <strong>Manufacturer:</strong> <span data-bracket="start" data-for="safety">[</span>GLOBAL POWER TECH LLC<br>
+        <strong>Manufacturer:</strong> <span verifiable-text="start" data-for="safety">[</span>GLOBAL POWER TECH LLC<br>
         <strong>Model:</strong> XJ-9922 High-Output Charger<br>
         <strong>Batch #:</strong> LOT-2026-8844
       </div>
@@ -50,7 +50,7 @@ These documents are the "Entry Permit" for global commerce. US Customs, Amazon, 
 <div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #bbb; text-align: center;">
     <div data-verify-line="safety" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Standards bodies don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:ul.com/v/CERT992288-XJ <span data-bracket="end" data-for="safety">]</span>
+      verify:ul.com/v/CERT992288-XJ <span verifiable-text="end" data-for="safety">]</span>
     </div>
     <div style="font-size: 0.7em; color: #999; margin-top: 10px;">
       Scan to verify testing integrity, current listing status, and manufacturer factory-audit compliance.

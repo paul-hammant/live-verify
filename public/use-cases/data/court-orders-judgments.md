@@ -36,7 +36,7 @@ OCR-to-hash binds the **Judge's name, the Case ID, and the exact verdict text** 
       <em>Defendant.</em>
     </div>
     <div style="width: 45%; text-align: right;">
-      <strong>Case No:</strong> <span data-bracket="start" data-for="court">[</span><strong>CV-2026-992288</strong>
+      <strong>Case No:</strong> <span verifiable-text="start" data-for="court">[</span><strong>CV-2026-992288</strong>
     </div>
   </div>
 <h2 style="font-size: 1.3em; text-align: center; text-decoration: underline; margin: 30px 0;">FINAL JUDGMENT</h2>
@@ -53,7 +53,7 @@ OCR-to-hash binds the **Judge's name, the Case ID, and the exact verdict text** 
   </div>
 <div data-verify-line="court" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
     title="Demo only: Delaware Courts don't yet offer verification&#10;endpoints, so this is illustrative">
-    verify:courts.delaware.gov/v/CV2026-992288 <span data-bracket="end" data-for="court">]</span>
+    verify:courts.delaware.gov/v/CV2026-992288 <span verifiable-text="end" data-for="court">]</span>
   </div>
 </div>
 

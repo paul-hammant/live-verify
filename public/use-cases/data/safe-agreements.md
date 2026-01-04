@@ -26,7 +26,7 @@ These documents are the "Keys to the Cap Table." Fraud is high-stakes: a founder
       <table style="width: 100%; border-collapse: collapse;">
         <tr>
           <td style="padding-bottom: 10px;"><strong>Post-Money Valuation Cap:</strong></td>
-          <td style="text-align: right; font-weight: bold; padding-bottom: 10px;">$ <span data-bracket="start" data-for="safe">[</span>20,000,000.00</td>
+          <td style="text-align: right; font-weight: bold; padding-bottom: 10px;">$ <span verifiable-text="start" data-for="safe">[</span>20,000,000.00</td>
         </tr>
         <tr>
           <td><strong>Discount Rate:</strong></td>
@@ -47,7 +47,7 @@ These documents are the "Keys to the Cap Table." Fraud is high-stakes: a founder
 <div style="padding: 20px; background: #f9f9f9; border: 1px dashed #999; margin-top: 40px; text-align: center;">
     <div data-verify-line="safe" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: Startup law firms don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:verific.io/safe/v/SEQ2026-9922 <span data-bracket="end" data-for="safe">]</span>
+      verify:verific.io/safe/v/SEQ2026-9922 <span verifiable-text="end" data-for="safe">]</span>
     </div>
     <div style="font-size: 0.7em; color: #666; margin-top: 10px;">
       Scan to verify equity conversion terms, view the signed board resolution, and check for 'Pro-Rata Right' side letters.

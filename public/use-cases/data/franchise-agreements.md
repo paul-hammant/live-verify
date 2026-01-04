@@ -23,7 +23,7 @@ Fraud is high-stakes: some "Salesmen" edit the FDD to hide lawsuits or to inflat
   </div>
 <h3 style="text-align: center; text-transform: uppercase; margin-bottom: 20px; letter-spacing: 1px;">Disclosure Verification</h3>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333; text-align: justify;">
-    <p>This document serves as a verified extract of the FDD provided to <span data-bracket="start" data-for="franchise">[</span><strong>John Jacob Doe</strong> for the proposed franchise location at:</p>
+    <p>This document serves as a verified extract of the FDD provided to <span verifiable-text="start" data-for="franchise">[</span><strong>John Jacob Doe</strong> for the proposed franchise location at:</p>
 <p style="text-align: center; font-weight: bold;">123 Convenience Way, Austin, TX 78701</p>
 <div style="background: #f9f9f9; border: 1px solid #eee; padding: 15px; margin: 20px 0;">
       <p><strong>Item 19 (Financial Performance):</strong> 2025 Average Net Sales: $ 1,450,000.00 (Verified by Milliman Audit #992)</p>
@@ -43,7 +43,7 @@ Fraud is high-stakes: some "Salesmen" edit the FDD to hide lawsuits or to inflat
   </div>
 <div data-verify-line="franchise" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: 7-Eleven doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:7-eleven.com/franchise/v/TX-992288 <span data-bracket="end" data-for="franchise">]</span>
+      verify:7-eleven.com/franchise/v/TX-992288 <span verifiable-text="end" data-for="franchise">]</span>
     </div>
 </div>
 

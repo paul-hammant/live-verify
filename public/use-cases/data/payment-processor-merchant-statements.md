@@ -19,7 +19,7 @@ These statements are the "Income Proof" for the digital economy. Lenders use the
     <div style="font-weight: bold; font-size: 1.5em; letter-spacing: -0.5px;">stripe</div>
     <div style="text-align: right;">
       <div style="font-weight: bold; font-size: 0.9em;">MONTHLY REVENUE SUMMARY</div>
-      <div style="font-size: 0.7em; opacity: 0.9;">Statement ID: <span data-bracket="start" data-for="stripe">[</span>ST-99228877-XJ</div>
+      <div style="font-size: 0.7em; opacity: 0.9;">Statement ID: <span verifiable-text="start" data-for="stripe">[</span>ST-99228877-XJ</div>
     </div>
   </div>
 <div style="padding: 25px;">
@@ -55,7 +55,7 @@ These statements are the "Income Proof" for the digital economy. Lenders use the
 <div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #999; text-align: center;">
     <div data-verify-line="stripe" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #635bff; font-weight: bold;"
       title="Demo only: Stripe doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:stripe.com/v/ST99228877 <span data-bracket="end" data-for="stripe">]</span>
+      verify:stripe.com/v/ST99228877 <span verifiable-text="end" data-for="stripe">]</span>
     </div>
     <div style="font-size: 0.7em; color: #999; margin-top: 10px;">
       Scan to verify net volume, dispute ratios, and bank settlement status.

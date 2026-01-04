@@ -25,7 +25,7 @@ These documents are the "Combat Passport" for a ship. Fraud is high-stakes: a sh
 <div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
-        <strong>Vessel Name:</strong> <span data-bracket="start" data-for="war">[</span>MV OCEAN SENTINEL<br>
+        <strong>Vessel Name:</strong> <span verifiable-text="start" data-for="war">[</span>MV OCEAN SENTINEL<br>
         <strong>IMO Number:</strong> 9922887<br>
         <strong>Flag:</strong> Marshall Islands
       </div>
@@ -59,7 +59,7 @@ These documents are the "Combat Passport" for a ship. Fraud is high-stakes: a sh
 <div style="padding: 20px; background: #f5f5f5; border-top: 1px solid #000; text-align: center;">
     <div data-verify-line="war" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: Specialty insurers don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:beazley.com/war/v/IMO9922887 <span data-bracket="end" data-for="war">]</span>
+      verify:beazley.com/war/v/IMO9922887 <span verifiable-text="end" data-for="war">]</span>
     </div>
     <div style="font-size: 0.7em; color: #777; margin-top: 10px;">
       Scan to verify real-time zone authorization, armed guard requirements, and P&I club coordination.

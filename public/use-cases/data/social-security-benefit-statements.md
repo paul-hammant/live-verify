@@ -30,7 +30,7 @@ It is the primary document used for **Income Verification**:
 <h3 style="margin-top: 0;">Your Benefit Verification Letter</h3>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <p>Date: March 15, 2026</p>
-    <p><span data-bracket="start" data-for="ssa">[</span><strong>MARGARET A. WILLOWS</strong><br>
+    <p><span verifiable-text="start" data-for="ssa">[</span><strong>MARGARET A. WILLOWS</strong><br>
     123 Oak Street, Springfield, IL 62704</p>
 <p>We are writing to verify that you receive Social Security benefits. Your current <strong>Monthly Benefit</strong> amount before deductions is:</p>
 <div style="background: #f9f9f9; padding: 15px; border: 1px solid #ddd; margin: 20px 0; text-align: center;">
@@ -41,7 +41,7 @@ It is the primary document used for **Income Verification**:
   </div>
 <div data-verify-line="ssa" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: SSA doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:ssa.gov/myaccount/v/MW992288 <span data-bracket="end" data-for="ssa">]</span>
+      verify:ssa.gov/myaccount/v/MW992288 <span verifiable-text="end" data-for="ssa">]</span>
   </div>
 </div>
 

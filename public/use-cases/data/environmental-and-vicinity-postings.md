@@ -26,7 +26,7 @@ OCR-to-hash allows a neighbor, tenant, or regulator to scan the posting to verif
       <div style="font-size: 0.9em; line-height: 1.4;">
         <strong>Property:</strong><br>
         42 INDUSTRIAL WAY, SPRINGFIELD<br>
-        <strong>RRN:</strong> <span data-bracket="start" data-for="env">[</span>9922-8877-6655-4422
+        <strong>RRN:</strong> <span verifiable-text="start" data-for="env">[</span>9922-8877-6655-4422
       </div>
       <div style="text-align: right; font-size: 0.9em;">
         <strong>Date:</strong> 15 MAR 2026<br>
@@ -56,7 +56,7 @@ OCR-to-hash allows a neighbor, tenant, or regulator to scan the posting to verif
 <div style="padding: 20px; background: #fff; border-top: 1px dashed #2e7d32; text-align: center;">
     <div data-verify-line="env" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #2e7d32; font-weight: bold;"
       title="Demo only: Environmental agencies don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:gov.uk/epc/v/992288776655 <span data-bracket="end" data-for="env">]</span>
+      verify:gov.uk/epc/v/992288776655 <span verifiable-text="end" data-for="env">]</span>
     </div>
     <div style="font-size: 0.7em; color: #999; margin-top: 10px;">
       Scan to verify building energy efficiency, carbon footprint data, and auditor certification.

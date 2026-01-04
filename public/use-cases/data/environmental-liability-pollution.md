@@ -29,7 +29,7 @@ Fraud is high-stakes here: sellers often edit the "Retroactive Date" on their po
 <div style="padding: 30px;">
     <h2 style="text-align: center; color: #2e7d32; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Insurance Declarations</h2>
 <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>First Named Insured:</strong> <span data-bracket="start" data-for="pollution">[</span>Industrial Reclamation Group, LLC</p>
+      <p><strong>First Named Insured:</strong> <span verifiable-text="start" data-for="pollution">[</span>Industrial Reclamation Group, LLC</p>
       <p><strong>Covered Location:</strong> 4500 Industrial Way, Newark, NJ (Former Lead Smelter)</p>
 <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
         <tr style="background: #f1f8e9; border-bottom: 2px solid #2e7d32;">
@@ -54,7 +54,7 @@ Fraud is high-stakes here: sellers often edit the "Retroactive Date" on their po
     </div>
 <div data-verify-line="pollution" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: ACE American doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:chubb.com/environmental/v/PLL992288 <span data-bracket="end" data-for="pollution">]</span>
+      verify:chubb.com/environmental/v/PLL992288 <span verifiable-text="end" data-for="pollution">]</span>
     </div>
   </div>
 </div>

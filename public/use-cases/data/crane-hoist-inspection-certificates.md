@@ -24,7 +24,7 @@ Because the stakes are so high, every crane must be professionally inspected eve
 <div style="padding: 25px;">
     <div style="text-align: center; border-bottom: 2px solid #fbc02d; padding-bottom: 10px; margin-bottom: 20px;">
       <h3 style="margin: 0; color: #333;">ANNUAL INSPECTION CERTIFICATE</h3>
-      <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;">Certificate #: <span data-bracket="start" data-for="crane">[</span>C-992288-26</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;">Certificate #: <span verifiable-text="start" data-for="crane">[</span>C-992288-26</div>
     </div>
 <div style="font-size: 0.9em; line-height: 1.5; color: #333;">
       <p><strong>Equipment:</strong> Liebherr LTM 11200-9.1 (Mobile Crane)<br>
@@ -55,7 +55,7 @@ Because the stakes are so high, every crane must be professionally inspected eve
     </div>
 <div data-verify-line="crane" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Inspection firm doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:heavylift-inspections.com/v/C992288 <span data-bracket="end" data-for="crane">]</span>
+      verify:heavylift-inspections.com/v/C992288 <span verifiable-text="end" data-for="crane">]</span>
     </div>
   </div>
 </div>

@@ -146,7 +146,7 @@
         }
 
         /* Verify hover effect brackets */
-        [data-bracket] {
+        [verifiable-text] {
             display: inline-block;
             max-width: 0;
             overflow: hidden;
@@ -155,10 +155,10 @@
             font-size: inherit;
             transition: max-width 0.15s;
         }
-        [data-bracket="start"] {
+        [verifiable-text="start"] {
             vertical-align: text-top;
         }
-        [data-bracket="end"] {
+        [verifiable-text="end"] {
             vertical-align: text-bottom;
         }
         [data-verify-line] {
@@ -184,8 +184,8 @@
         function initVerifyHover() {
             document.querySelectorAll('[data-verify-line]').forEach(verifyLine => {
                 const group = verifyLine.dataset.verifyLine;
-                const startBracket = document.querySelector(`[data-bracket="start"][data-for="${group}"]`);
-                const endBracket = document.querySelector(`[data-bracket="end"][data-for="${group}"]`);
+                const startBracket = document.querySelector(`[verifiable-text="start"][data-for="${group}"]`);
+                const endBracket = document.querySelector(`[verifiable-text="end"][data-for="${group}"]`);
 
                 if (startBracket && endBracket) {
                     verifyLine.addEventListener('mouseover', () => {

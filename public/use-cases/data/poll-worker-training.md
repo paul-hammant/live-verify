@@ -28,7 +28,7 @@ This is a critical security frontier. Fraudsters or partisan actors might attemp
     </div>
     <div style="flex-grow: 1;">
       <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Official Name</div>
-      <div style="font-size: 1.2em; font-weight: bold; margin: 0 0 10px 0; color: #b71c1c;"><span data-bracket="start" data-for="poll">[</span>SARAH JANE SMITH</div>
+      <div style="font-size: 1.2em; font-weight: bold; margin: 0 0 10px 0; color: #b71c1c;"><span verifiable-text="start" data-for="poll">[</span>SARAH JANE SMITH</div>
 <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Assignment</div>
       <div style="font-size: 1em; font-weight: bold; margin: 0 0 10px 0;">Precinct #42 (Ward 7)</div>
 <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Role</div>
@@ -42,7 +42,7 @@ This is a critical security frontier. Fraudsters or partisan actors might attemp
 <div style="padding: 15px 20px 20px 20px; background: #fff;">
     <div data-verify-line="poll" style="border-top: 1px dashed #999; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; text-align: center; font-weight: bold;"
       title="Demo only: Election boards don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:elections.springfield.gov/v/992288-SJS <span data-bracket="end" data-for="poll">]</span>
+      verify:elections.springfield.gov/v/992288-SJS <span verifiable-text="end" data-for="poll">]</span>
     </div>
     <div style="font-size: 0.65em; color: #999; margin-top: 8px; text-align: center; font-style: italic;">
       Verification confirms authorization for the current election cycle only.

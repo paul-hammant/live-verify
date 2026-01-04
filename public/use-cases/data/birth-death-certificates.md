@@ -24,7 +24,7 @@ Verified vital records allow banks and agencies to check the **Live Status** of 
 <h2 style="text-align: center; font-size: 1.5em; color: #1a365d; margin-bottom: 25px;">CERTIFICATION OF BIRTH</h2>
 <div style="font-size: 1em; line-height: 1.8; color: #333;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 15px;">
-      <div><strong>Name:</strong> <span data-bracket="start" data-for="birth">[</span><strong>JOHN JACOB DOE</strong></div>
+      <div><strong>Name:</strong> <span verifiable-text="start" data-for="birth">[</span><strong>JOHN JACOB DOE</strong></div>
       <div style="text-align: right;"><strong>File No:</strong> 137-2026-9922</div>
     </div>
 <div style="margin-bottom: 10px;"><strong>Date of Birth:</strong> May 15, 2026</div>
@@ -46,7 +46,7 @@ Verified vital records allow banks and agencies to check the **Live Status** of 
   </div>
 <div data-verify-line="birth" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: PA Health Dept doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:health.pa.gov/vital/v/137-9922 <span data-bracket="end" data-for="birth">]</span>
+      verify:health.pa.gov/vital/v/137-9922 <span verifiable-text="end" data-for="birth">]</span>
   </div>
 </div>
 

@@ -33,7 +33,7 @@ The **Care Professional Badge** is their "Security Token." It proves:
     </div>
     <div style="flex-grow: 1;">
       <h4 style="margin: 0; color: #0277bd;">REGISTERED NURSE (RN)</h4>
-      <div style="font-size: 1.1em; font-weight: bold; margin: 5px 0;"><span data-bracket="start" data-for="nurse">[</span>SARAH J. MILLER</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin: 5px 0;"><span verifiable-text="start" data-for="nurse">[</span>SARAH J. MILLER</div>
       <div style="font-size: 0.9em; color: #333; line-height: 1.4;">
         <strong>License #:</strong> RN-992288 (TX)<br>
         <strong>Visit ID:</strong> VIS-2026-402<br>
@@ -47,7 +47,7 @@ The **Care Professional Badge** is their "Security Token." It proves:
     </p>
     <div data-verify-line="nurse" style="border-top: 1px dashed #999; margin-top: 10px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Care agency doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:bayada.com/verify/v/992288 <span data-bracket="end" data-for="nurse">]</span>
+      verify:bayada.com/verify/v/992288 <span verifiable-text="end" data-for="nurse">]</span>
     </div>
   </div>
 </div>

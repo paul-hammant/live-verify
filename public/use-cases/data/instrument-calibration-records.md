@@ -14,7 +14,7 @@ furtherDerivations: 1
     <div style="font-size: 0.8em;">Metrology & Calibration Services</div>
   </div>
 <div style="font-size: 0.9em; line-height: 1.4; color: #333;">
-    <p><strong>Instrument:</strong> <span data-bracket="start" data-for="sci-cal">[</span>Mass Spectrometer (Agilent 6470B)<br>
+    <p><strong>Instrument:</strong> <span verifiable-text="start" data-for="sci-cal">[</span>Mass Spectrometer (Agilent 6470B)<br>
     <strong>Serial #:</strong> AG-99228877-X<br>
     <strong>Asset ID:</strong> QL-402</p>
 <div style="background: #f5f5f5; border: 1px solid #ccc; padding: 15px; margin: 15px 0;">
@@ -44,7 +44,7 @@ furtherDerivations: 1
   </div>
 <div data-verify-line="sci-cal" style="border-top: 1px dashed #999; margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
     title="Demo only: Quantum Labs doesn't yet offer verification&#10;endpoints, so this is illustrative">
-    verify:quantum-labs.com/calibration/v/AG992288 <span data-bracket="end" data-for="sci-cal">]</span>
+    verify:quantum-labs.com/calibration/v/AG992288 <span verifiable-text="end" data-for="sci-cal">]</span>
   </div>
 </div>
 

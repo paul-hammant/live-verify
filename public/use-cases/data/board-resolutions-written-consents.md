@@ -16,7 +16,7 @@ furtherDerivations: 1
   </div>
 <div style="font-size: 1em; line-height: 1.6; color: #333; text-align: justify;">
     <p>The undersigned, being all the members of the Board of Directors of Initech Holdings, Inc., a Delaware corporation (the "Company"), hereby take the following actions by written consent:</p>
-<p><strong><span data-bracket="start" data-for="board">[</span>RESOLVED:</strong> That the Company is hereby authorized to enter into the Merger Agreement with Globochem Corp. dated as of March 15, 2026.</p>
+<p><strong><span verifiable-text="start" data-for="board">[</span>RESOLVED:</strong> That the Company is hereby authorized to enter into the Merger Agreement with Globochem Corp. dated as of March 15, 2026.</p>
 <p><strong>RESOLVED FURTHER:</strong> That the Officers of the Company are authorized to execute all such documents as are necessary to effectuate the foregoing resolution.</p>
   </div>
 <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
@@ -31,7 +31,7 @@ furtherDerivations: 1
   </div>
 <div data-verify-line="board" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Law firm doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:wilson-sonsini.com/docs/v/INITECH-992 <span data-bracket="end" data-for="board">]</span>
+      verify:wilson-sonsini.com/docs/v/INITECH-992 <span verifiable-text="end" data-for="board">]</span>
   </div>
 </div>
 

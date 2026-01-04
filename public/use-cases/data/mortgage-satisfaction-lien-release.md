@@ -13,7 +13,7 @@ furtherDerivations: 1
     <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">SATISFACTION OF MORTGAGE</h2>
   </div>
 <div style="font-size: 1em; line-height: 1.6; color: #000; text-align: justify;">
-    <p>Know all men by these presents, that <strong>Lender:</strong> Wells Fargo Bank, N.A. (the "Mortgagee") does hereby certify that a certain mortgage made and executed by <span data-bracket="start" data-for="mort-rel">[</span><strong>John Jacob Doe</strong> (the "Mortgagor") on <strong>January 1, 2010</strong>, is fully <strong>PAID, SATISFIED, AND DISCHARGED</strong>.</p>
+    <p>Know all men by these presents, that <strong>Lender:</strong> Wells Fargo Bank, N.A. (the "Mortgagee") does hereby certify that a certain mortgage made and executed by <span verifiable-text="start" data-for="mort-rel">[</span><strong>John Jacob Doe</strong> (the "Mortgagor") on <strong>January 1, 2010</strong>, is fully <strong>PAID, SATISFIED, AND DISCHARGED</strong>.</p>
 <div style="background: #f9f9f9; padding: 15px; border: 1px solid #eee; margin: 20px 0; font-family: monospace; font-size: 0.9em;">
       Property: 123 Maple St, Anytown, USA<br>
       Recording Info: Liber 9988, Page 776<br>
@@ -32,7 +32,7 @@ furtherDerivations: 1
   </div>
 <div data-verify-line="mort-rel" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Wells Fargo doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:wellsfargo.com/mortgage/v/REL992288 <span data-bracket="end" data-for="mort-rel">]</span>
+      verify:wellsfargo.com/mortgage/v/REL992288 <span verifiable-text="end" data-for="mort-rel">]</span>
   </div>
 </div>
 

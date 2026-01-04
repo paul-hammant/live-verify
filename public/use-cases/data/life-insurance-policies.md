@@ -18,7 +18,7 @@ furtherDerivations: 1
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
       <div>
         <strong>Policy Number:</strong> 99228877-WL<br>
-        <strong>Insured:</strong> <span data-bracket="start" data-for="life-pol">[</span><strong>JOHN JACOB DOE</strong>
+        <strong>Insured:</strong> <span verifiable-text="start" data-for="life-pol">[</span><strong>JOHN JACOB DOE</strong>
       </div>
       <div style="text-align: right;">
         <strong>Date of Issue:</strong><br>
@@ -56,7 +56,7 @@ furtherDerivations: 1
   </div>
 <div data-verify-line="life-pol" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: New York Life doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:newyorklife.com/policy/v/99228877 <span data-bracket="end" data-for="life-pol">]</span>
+      verify:newyorklife.com/policy/v/99228877 <span verifiable-text="end" data-for="life-pol">]</span>
   </div>
 </div>
 

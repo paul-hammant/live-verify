@@ -21,7 +21,7 @@ A **Verified Coverage Guarantee** is a specific, timestamped attestation by the 
   </div>
 <div style="font-family: 'Courier New', monospace; font-size: 0.95em;">
     <p><strong>Customer:</strong> Enterprise Logistics Corp</p>
-    <p><strong>Location:</strong> <span data-bracket="start" data-for="net">[</span>Site B, 4500 Warehouse Dr, Austin, TX</p>
+    <p><strong>Location:</strong> <span verifiable-text="start" data-for="net">[</span>Site B, 4500 Warehouse Dr, Austin, TX</p>
 <p><strong>Guaranteed Service Level:</strong><br>
     Band: 5G Ultra Wideband (mmWave)<br>
     Min Downlink: 450 Mbps<br>
@@ -32,7 +32,7 @@ A **Verified Coverage Guarantee** is a specific, timestamped attestation by the 
       (Coordinates: 30.2672° N, 97.7431° W)
     </div>
 <div data-verify-line="net" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; text-align: center; font-size: 0.85em;">
-      verify:verizonia.com/sla/v/map882 <span data-bracket="end" data-for="net">]</span>
+      verify:verizonia.com/sla/v/map882 <span verifiable-text="end" data-for="net">]</span>
     </div>
   </div>
 </div>

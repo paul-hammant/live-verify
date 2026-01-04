@@ -19,7 +19,7 @@ This sector is plagued by high-volume, low-trust disputes. **Damage Fraud** is t
     <div style="font-weight: bold; font-size: 1.5em; letter-spacing: -1px;">Hertz</div>
     <div style="text-align: right;">
       <div style="font-weight: bold; font-size: 0.9em;">RENTAL RECORD</div>
-      <div style="font-size: 0.7em;">Ref: <span data-bracket="start" data-for="rental">[</span>RA-99228877-XJ</div>
+      <div style="font-size: 0.7em;">Ref: <span verifiable-text="start" data-for="rental">[</span>RA-99228877-XJ</div>
     </div>
   </div>
 <div style="padding: 25px;">
@@ -59,7 +59,7 @@ This sector is plagued by high-volume, low-trust disputes. **Damage Fraud** is t
 <div style="padding: 20px; background: #f7f7f7; border-top: 1px solid #eee; text-align: center;">
     <div data-verify-line="rental" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Rental companies don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:hertz.com/v/RA99228877 <span data-bracket="end" data-for="rental">]</span>
+      verify:hertz.com/v/RA99228877 <span verifiable-text="end" data-for="rental">]</span>
     </div>
     <div style="font-size: 0.7em; color: #999; margin-top: 10px;">
       Scan to verify pre-rental damage photos, active insurance status, and final billing integrity.

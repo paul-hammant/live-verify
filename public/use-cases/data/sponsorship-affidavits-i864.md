@@ -26,7 +26,7 @@ These documents are high-stakes legal instruments. Fraud is common: people often
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <p><strong>Part 1. Basis for Filing:</strong> I am the petitioning sponsor.</p>
 <div style="background: #f9f9f9; padding: 15px; border: 1px solid #ddd; margin: 20px 0;">
-      <p><strong>Sponsor:</strong> <span data-bracket="start" data-for="i864">[</span><strong>ROBERT J. MILLER</strong><br>
+      <p><strong>Sponsor:</strong> <span verifiable-text="start" data-for="i864">[</span><strong>ROBERT J. MILLER</strong><br>
       <strong>Beneficiary:</strong> SARAH JANE DOE<br>
       <strong>Household Size:</strong> 3</p>
 <p><strong>Most Recent Year Income:</strong> $ 78,450.00<br>
@@ -39,7 +39,7 @@ These documents are high-stakes legal instruments. Fraud is common: people often
 <div style="margin-top: 40px; border-top: 1px dashed #999; padding-top: 10px; text-align: center;">
     <div data-verify-line="i864" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: USCIS doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:uscis.gov/v/i864/RM992288 <span data-bracket="end" data-for="i864">]</span>
+      verify:uscis.gov/v/i864/RM992288 <span verifiable-text="end" data-for="i864">]</span>
     </div>
     <div style="font-size: 0.7em; color: #999; margin-top: 10px; font-style: italic;">
       Scan to verify sponsorship authenticity and income threshold compliance.

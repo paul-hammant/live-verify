@@ -20,7 +20,7 @@ Fraud is high-stakes in the digital economy. Scammers create "Phantom Registrati
 <div style="position: relative; z-index: 1;">
     <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 20px; margin-bottom: 30px;">
       <div style="font-weight: bold; font-size: 1.4em; text-transform: uppercase; letter-spacing: 2px;">United States Patent and Trademark Office</div>
-      <div style="font-size: 0.9em; margin-top: 5px;">Reg. No. <span data-bracket="start" data-for="tm">[</span>9,922,887</div>
+      <div style="font-size: 0.9em; margin-top: 5px;">Reg. No. <span verifiable-text="start" data-for="tm">[</span>9,922,887</div>
     </div>
 <div style="text-align: center; margin-bottom: 40px;">
       <div style="font-size: 3em; font-weight: bold; color: #000; letter-spacing: -1px; text-transform: uppercase;">ACME-TECH</div>
@@ -42,7 +42,7 @@ Fraud is high-stakes in the digital economy. Scammers create "Phantom Registrati
 <div style="padding: 20px; background: #f9f9f9; border: 1px dashed #999; margin-top: 40px; text-align: center;">
       <div data-verify-line="tm" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
         title="Demo only: Trademark offices don't yet offer verification&#10;endpoints, so this is illustrative">
-        verify:uspto.gov/v/tm/9922887 <span data-bracket="end" data-for="tm">]</span>
+        verify:uspto.gov/v/tm/9922887 <span verifiable-text="end" data-for="tm">]</span>
       </div>
       <div style="font-size: 0.7em; color: #666; margin-top: 10px;">
         Scan to verify mark ownership, current renewal status, and view the original deposited design file.

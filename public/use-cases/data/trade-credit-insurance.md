@@ -31,7 +31,7 @@ These documents are the "Green Light" for global trade. Fraud is high-stakes: a 
         <strong>Policy #:</strong> 99228877-TCI
       </div>
       <div style="text-align: right;">
-        <strong>Notice ID:</strong> <span data-bracket="start" data-for="credit">[</span>AZ-2026-8844<br>
+        <strong>Notice ID:</strong> <span verifiable-text="start" data-for="credit">[</span>AZ-2026-8844<br>
         <strong>Date:</strong> 15 MAR 2026
       </div>
     </div>
@@ -56,7 +56,7 @@ These documents are the "Green Light" for global trade. Fraud is high-stakes: a 
 <div style="padding: 20px; background: #f5f5f5; border-top: 1px solid #000; text-align: center;">
     <div data-verify-line="credit" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Credit insurers don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:allianz-trade.com/v/AZ99228877 <span data-bracket="end" data-for="credit">]</span>
+      verify:allianz-trade.com/v/AZ99228877 <span verifiable-text="end" data-for="credit">]</span>
     </div>
     <div style="font-size: 0.7em; color: #777; margin-top: 10px;">
       Scan to verify real-time limit availability, payment term compliance, and insolvency protection status.

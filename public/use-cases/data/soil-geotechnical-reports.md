@@ -28,7 +28,7 @@ These reports are the foundation of all structural engineering. Fraud is high-st
 <div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
-        <strong>Project Site:</strong> <span data-bracket="start" data-for="geo">[</span>42 SKYLINE DRIVE, SPRINGFIELD<br>
+        <strong>Project Site:</strong> <span verifiable-text="start" data-for="geo">[</span>42 SKYLINE DRIVE, SPRINGFIELD<br>
         <strong>Client:</strong> SKYLINE DEVELOPERS GROUP<br>
         <strong>APN:</strong> 992-887-766
       </div>
@@ -70,7 +70,7 @@ These reports are the foundation of all structural engineering. Fraud is high-st
 <div style="padding: 20px; background: #fdfdfd; border-top: 1px solid #000; text-align: center;">
     <div data-verify-line="geo" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Engineering firms don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:summit-geo.com/v/GEO99228877 <span data-bracket="end" data-for="geo">]</span>
+      verify:summit-geo.com/v/GEO99228877 <span verifiable-text="end" data-for="geo">]</span>
     </div>
     <div style="font-size: 0.7em; color: #666; margin-top: 10px; font-style: italic;">
       Scan to verify soil bearing capacity, seismic site class, and licensed engineer authority.

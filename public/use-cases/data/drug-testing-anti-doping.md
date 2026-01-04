@@ -27,7 +27,7 @@ Because a "Positive Test" can end a multimillion-dollar career, fraud is a high 
 <div style="padding: 25px;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px; font-size: 0.9em; color: #555;">
       <div>
-        <strong>Sample ID:</strong> <span data-bracket="start" data-for="doping">[</span>998877-A (Urine)<br>
+        <strong>Sample ID:</strong> <span verifiable-text="start" data-for="doping">[</span>998877-A (Urine)<br>
         <strong>Event:</strong> 2026 World Championships
       </div>
       <div style="text-align: right;">
@@ -48,7 +48,7 @@ Because a "Positive Test" can end a multimillion-dollar career, fraud is a high 
     </p>
 <div data-verify-line="doping" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: WADA doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:wada-ama.org/adams/v/998877A <span data-bracket="end" data-for="doping">]</span>
+      verify:wada-ama.org/adams/v/998877A <span verifiable-text="end" data-for="doping">]</span>
     </div>
   </div>
 </div>

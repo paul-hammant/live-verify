@@ -17,7 +17,7 @@ furtherDerivations: 1
     <h3 style="text-align: center; text-transform: uppercase; margin-bottom: 20px;">Purchase Statement</h3>
 <p><strong>Sale:</strong> NY010126 - Modern Masterpieces<br>
     <strong>Date:</strong> 15 March 2026<br>
-    <strong>Bidder #:</strong> <span data-bracket="start" data-for="auction">[</span>9988</p>
+    <strong>Bidder #:</strong> <span verifiable-text="start" data-for="auction">[</span>9988</p>
 <div style="margin: 20px 0; border-top: 2px solid #000; padding-top: 15px;">
       <table style="width: 100%;">
         <tr>
@@ -50,7 +50,7 @@ furtherDerivations: 1
   </div>
 <div data-verify-line="auction" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Phillips doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:phillips.com/sales/v/NY010126-42 <span data-bracket="end" data-for="auction">]</span>
+      verify:phillips.com/sales/v/NY010126-42 <span verifiable-text="end" data-for="auction">]</span>
   </div>
 </div>
 

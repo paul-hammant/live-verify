@@ -29,7 +29,7 @@ Impostors pose multiple threats: they can steal high-value equipment (lighting r
     </div>
     <div style="flex-grow: 1;">
       <h3 style="margin: 0; color: #000; text-transform: uppercase;">STAGE CREW</h3>
-      <div style="font-size: 1.2em; font-weight: bold; margin: 5px 0;"><span data-bracket="start" data-for="crew">[</span>MIKE D.</div>
+      <div style="font-size: 1.2em; font-weight: bold; margin: 5px 0;">MIKE D.</div>
       <div style="font-size: 0.9em; color: #333; line-height: 1.4;">
         <strong>Company:</strong> Rhino Staging<br>
         <strong>Zone:</strong> Stage A / Backstage<br>
@@ -41,9 +41,8 @@ Impostors pose multiple threats: they can steal high-value equipment (lighting r
     <div style="background: #000; color: #fff; padding: 5px; text-align: center; font-weight: bold; margin-bottom: 10px;">
       CREW
     </div>
-    <div data-verify-line="crew" style="border-top: 1px dashed #999; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.9em; color: #000; text-align: center;"
-      title="Demo only: Event promoters don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:coachella.com/staff <span data-bracket="end" data-for="crew">]</span>
+    <div style="border-top: 1px dashed #999; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.9em; color: #999; text-align: center;">
+      https://coachella.com
     </div>
   </div>
 </div>
@@ -53,15 +52,15 @@ Impostors pose multiple threats: they can steal high-value equipment (lighting r
 Printed laminates are easily forged or stolen. An **e-ink event credential** with a rotating salt secures the perimeter and protects high-value zones.
 
 <div style="max-width: 320px; margin: 24px auto; font-family: 'Courier New', monospace; border: 4px solid #000; border-radius: 4px; background: #f0f0f0; padding: 20px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
-  <div style="font-size: 1.2em; color: #000; font-weight: 900; margin-bottom: 8px;">COACHELLA</div>
-  <div style="font-size: 1em; font-weight: bold; color: #000; margin-bottom: 8px;"><span data-bracket="start" data-for="eink-crew">[</span>Mike D.</div>
+  <div style="font-size: 1.2em; color: #000; font-weight: 900; margin-bottom: 8px;"><span verifiable-text="start" data-for="eink-crew">[</span>COACHELLA</div>
+  <div style="font-size: 1em; font-weight: bold; color: #000; margin-bottom: 8px;">Mike D.</div>
   <div style="font-size: 1em; color: #333; margin-bottom: 8px;">Stage Crew - Zone A</div>
   <div style="font-size: 1em; color: #000; margin-bottom: 12px; background: #fff; display: inline-block; padding: 4px 8px; border: 1px solid #999;">
     Salt: 5k9x2m
   </div>
   <div data-verify-line="eink-crew" style="font-size: 1em; color: #555;"
     title="Demo only: Event promoters don't yet offer verification endpoints">
-    vfy:coachella.com <span data-bracket="end" data-for="eink-crew">]</span>
+    vfy:coachella.com <span verifiable-text="end" data-for="eink-crew">]</span>
   </div>
 </div>
 

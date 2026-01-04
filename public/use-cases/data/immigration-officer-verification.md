@@ -22,7 +22,7 @@ furtherDerivations: 1
     </div>
     <div style="flex-grow: 1;">
       <h4 style="margin: 0; color: #002d62;">SPECIAL AGENT</h4>
-      <div style="font-size: 1.1em; font-weight: bold; margin: 5px 0;"><span data-bracket="start" data-for="im-officer">[</span>MARCUS J. MILLER</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin: 5px 0;"><span verifiable-text="start" data-for="im-officer">[</span>MARCUS J. MILLER</div>
       <div style="font-size: 0.9em; color: #333; line-height: 1.4;">
         <strong>Agency:</strong> ICE / ERO<br>
         <strong>Badge #:</strong> 992288<br>
@@ -36,7 +36,7 @@ furtherDerivations: 1
     </p>
     <div data-verify-line="im-officer" style="border-top: 1px dashed #999; margin-top: 10px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: DHS doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:dhs.gov/verify/v/992288 <span data-bracket="end" data-for="im-officer">]</span>
+      verify:dhs.gov/verify/v/992288 <span verifiable-text="end" data-for="im-officer">]</span>
     </div>
   </div>
 </div>

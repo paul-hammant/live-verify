@@ -22,7 +22,7 @@ furtherDerivations: 4
 <div style="padding: 25px;">
     <h3 style="margin-top: 0; color: #0d47a1; border-bottom: 2px solid #0d47a1; padding-bottom: 5px;">REPAIR ESTIMATE SUMMARY</h3>
 <div style="font-size: 0.9em; line-height: 1.5; color: #333;">
-      <p><strong>Insured:</strong> <span data-bracket="start" data-for="claim">[</span>MAX POWER<br>
+      <p><strong>Insured:</strong> <span verifiable-text="start" data-for="claim">[</span>MAX POWER<br>
       <strong>Vehicle:</strong> 2024 Tesla Model 3 (VIN: ...5544)<br>
       <strong>Body Shop:</strong> Joe's Auto Body, Springfield</p>
 <table style="width: 100%; margin-top: 15px; border-collapse: collapse;">
@@ -51,7 +51,7 @@ furtherDerivations: 4
     </div>
 <div data-verify-line="claim" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Insurer doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:allstate.com/claims/v/99228877 <span data-bracket="end" data-for="claim">]</span>
+      verify:allstate.com/claims/v/99228877 <span verifiable-text="end" data-for="claim">]</span>
     </div>
   </div>
 </div>
@@ -153,7 +153,7 @@ Because people often cancel their insurance right after printing the card, polic
       </div>
     </div>
 <div style="font-size: 0.9em; line-height: 1.4; color: #333;">
-      <p><strong>Insured:</strong> <span data-bracket="start" data-for="ins">[</span>RICHARD "DICK" GRAYSON<br>
+      <p><strong>Insured:</strong> <span verifiable-text="start" data-for="ins">[</span>RICHARD "DICK" GRAYSON<br>
       <strong>Vehicle:</strong> 2025 Gotham Motors Bat-Sedan<br>
       <strong>VIN:</strong> 1G6AX57L9RJ123456</p>
 <p><strong>Effective Date:</strong> JAN 01, 2026<br>
@@ -164,7 +164,7 @@ Because people often cancel their insurance right after printing the card, polic
     </div>
 <div data-verify-line="ins" style="border-top: 1px dashed #999; margin-top: 15px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.7em; color: #555; text-align: center;"
       title="Demo only: Geico doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:geico.com/v/99887766 <span data-bracket="end" data-for="ins">]</span>
+      verify:geico.com/v/99887766 <span verifiable-text="end" data-for="ins">]</span>
     </div>
   </div>
 </div>
@@ -251,7 +251,7 @@ Lenders (for car loans) and landlords often require a copy of the Dec Page. Frau
     <div style="text-align: right; font-size: 0.8em;">POLICY DECLARATIONS<br>Renewal: Mar 15, 2026</div>
   </div>
 <div style="font-size: 0.9em; line-height: 1.4;">
-    <p><strong>Named Insured:</strong> <span data-bracket="start" data-for="autodec">[</span>John Doe<br>
+    <p><strong>Named Insured:</strong> <span verifiable-text="start" data-for="autodec">[</span>John Doe<br>
     456 Oak Lane, Austin, TX 78701</p>
 <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
       <tr style="background: #eee;">
@@ -274,7 +274,7 @@ Lenders (for car loans) and landlords often require a copy of the Dec Page. Frau
 <p><strong>Vehicle:</strong> 2024 Ford F-150 (VIN ...9922)</p>
   </div>
 <div data-verify-line="autodec" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;">
-    verify:progressive.com/v/dec/998877 <span data-bracket="end" data-for="autodec">]</span>
+    verify:progressive.com/v/dec/998877 <span verifiable-text="end" data-for="autodec">]</span>
   </div>
 </div>
 
@@ -344,7 +344,7 @@ Fraud is common: drivers sometimes "edit" the digital report *after* they damage
 <div style="padding: 25px;">
     <h3 style="margin-top: 0; color: #333; border-bottom: 2px solid #333; padding-bottom: 5px;">VEHICLE INSPECTION REPORT (BOL)</h3>
 <div style="font-size: 0.9em; line-height: 1.5; color: #333;">
-      <p><strong>Vehicle:</strong> <span data-bracket="start" data-for="damage">[</span>2025 Porsche 911 GT3<br>
+      <p><strong>Vehicle:</strong> <span verifiable-text="start" data-for="damage">[</span>2025 Porsche 911 GT3<br>
       <strong>VIN:</strong> WP0AC2A9...5544<br>
       <strong>Condition:</strong> Pre-Transport</p>
 <div style="display: flex; justify-content: space-between; align-items: center; margin: 20px 0;">
@@ -367,7 +367,7 @@ Fraud is common: drivers sometimes "edit" the digital report *after* they damage
     </div>
 <div data-verify-line="damage" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Carrier doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:reliable-carriers.com/bol/v/RCC992 <span data-bracket="end" data-for="damage">]</span>
+      verify:reliable-carriers.com/bol/v/RCC992 <span verifiable-text="end" data-for="damage">]</span>
     </div>
   </div>
 </div>

@@ -15,7 +15,7 @@ furtherDerivations: 1
     -------------------------------------------
   </div>
 <div style="font-size: 0.9em; line-height: 1.4;">
-    <p><strong>Importer of Record:</strong> <span data-bracket="start" data-for="bonded">[</span>Swiss Watch Imports, Inc.<br>
+    <p><strong>Importer of Record:</strong> <span verifiable-text="start" data-for="bonded">[</span>Swiss Watch Imports, Inc.<br>
     <strong>Customs Entry #:</strong> 110-9988776-5<br>
     <strong>Warehouse Receipt:</strong> WR-2026-402</p>
 <p><strong>Cargo Description:</strong><br>
@@ -32,7 +32,7 @@ furtherDerivations: 1
   </div>
 <div data-verify-line="bonded" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Warehouse operator doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:global-bonded.com/receipts/v/WR402 <span data-bracket="end" data-for="bonded">]</span>
+      verify:global-bonded.com/receipts/v/WR402 <span verifiable-text="end" data-for="bonded">]</span>
   </div>
 </div>
 

@@ -30,7 +30,7 @@ These documents are the "Permission to Drive." Fraud is high-frequency: individu
         <strong>Vehicle:</strong> 2024 Tesla Model Y
       </div>
       <div style="text-align: right; font-size: 0.9em;">
-        <strong>Notice ID:</strong> <span data-bracket="start" data-for="endorse">[</span>END-2026-8844<br>
+        <strong>Notice ID:</strong> <span verifiable-text="start" data-for="endorse">[</span>END-2026-8844<br>
         <strong>Issued:</strong> 15 MAR 2026
       </div>
     </div>
@@ -49,7 +49,7 @@ These documents are the "Permission to Drive." Fraud is high-frequency: individu
 <div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #999; text-align: center;">
     <div data-verify-line="endorse" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #0056b3; font-weight: bold;"
       title="Demo only: Insurers don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:safeguard-ins.com/v/END99228877 <span data-bracket="end" data-for="endorse">]</span>
+      verify:safeguard-ins.com/v/END99228877 <span verifiable-text="end" data-for="endorse">]</span>
     </div>
     <div style="font-size: 0.7em; color: #999; margin-top: 10px;">
       Scan to verify real-time coverage status, driver license eligibility, and policy expiration.

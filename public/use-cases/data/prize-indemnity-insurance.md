@@ -22,7 +22,7 @@ These documents are the "Proof of Payout." Fraud is rampant in "Small-Town Conte
     </div>
     <div style="text-align: right;">
       <div style="font-weight: bold; font-size: 1.1em;">CERTIFICATE OF COVERAGE</div>
-      <div style="font-size: 0.7em;">Policy: <span data-bracket="start" data-for="prize">[</span>PI-992288-XJ</div>
+      <div style="font-size: 0.7em;">Policy: <span verifiable-text="start" data-for="prize">[</span>PI-992288-XJ</div>
     </div>
   </div>
 <div style="padding: 25px;">
@@ -54,7 +54,7 @@ These documents are the "Proof of Payout." Fraud is rampant in "Small-Town Conte
 <div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #bbb; text-align: center;">
     <div data-verify-line="prize" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: Specialty insurers don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:hiscox.com/prize/v/PI992288XJ <span data-bracket="end" data-for="prize">]</span>
+      verify:hiscox.com/prize/v/PI992288XJ <span verifiable-text="end" data-for="prize">]</span>
     </div>
     <div style="font-size: 0.7em; color: #999; margin-top: 10px;">
       Scan to verify prize integrity, required witness protocols, and insurer authority.

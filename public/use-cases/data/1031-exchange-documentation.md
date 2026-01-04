@@ -29,7 +29,7 @@ This document is the **Identification Form**. It acts as a timestamped "snapshot
     </div>
 <h2 style="font-size: 1.4em; text-align: center; margin: 20px 0; text-decoration: underline;">IDENTIFICATION OF REPLACEMENT PROPERTY</h2>
 <div style="font-size: 0.95em; line-height: 1.5; color: #333;">
-      <p><strong>Exchanger:</strong> <span data-bracket="start" data-for="1031">[</span>Robert & Mary Smith Trust<br>
+      <p><strong>Exchanger:</strong> <span verifiable-text="start" data-for="1031">[</span>Robert & Mary Smith Trust<br>
       <strong>Relinquished Property:</strong> 123 Oak Street, Springfield, IL<br>
       <strong>Date of Transfer:</strong> January 15, 2026</p>
 <p>Pursuant to Section 1031 of the Internal Revenue Code, the Exchanger hereby identifies the following replacement properties:</p>
@@ -46,7 +46,7 @@ This document is the **Identification Form**. It acts as a timestamped "snapshot
     </div>
 <div data-verify-line="1031" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: This is an illustrative example of the verification line">
-      verify:equitable-exchange.com/v/8d7s9f <span data-bracket="end" data-for="1031">]</span>
+      verify:equitable-exchange.com/v/8d7s9f <span verifiable-text="end" data-for="1031">]</span>
     </div>
   </div>
 </div>

@@ -23,7 +23,7 @@ When you buy a house, you need the **Verified Current Version** of these rules. 
   </div>
 <div style="font-size: 1em; line-height: 1.6; color: #333; text-align: justify;">
     <h3 style="text-align: center; text-transform: uppercase; margin-bottom: 20px;">Certification of Governing Documents</h3>
-    <p>I, the undersigned Secretary of the Skyline Towers Homeowners Association, a Texas non-profit corporation, hereby certify that the following is a true and correct copy of the <span data-bracket="start" data-for="hoa-docs">[</span><strong>Amended and Restated Bylaws</strong> as adopted by the Board of Directors on <strong>January 15, 2026</strong>.</p>
+    <p>I, the undersigned Secretary of the Skyline Towers Homeowners Association, a Texas non-profit corporation, hereby certify that the following is a true and correct copy of the <span verifiable-text="start" data-for="hoa-docs">[</span><strong>Amended and Restated Bylaws</strong> as adopted by the Board of Directors on <strong>January 15, 2026</strong>.</p>
 <div style="margin: 20px 0; background: #f9f9f9; padding: 15px; border: 1px solid #eee;">
       <strong>DOCUMENT METADATA:</strong><br>
       Total Pages: 42<br>
@@ -42,7 +42,7 @@ When you buy a house, you need the **Verified Current Version** of these rules. 
   </div>
 <div data-verify-line="hoa-docs" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: HOA doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:skylinetowers-hoa.com/archive/v/BYLAWS-2026-V1 <span data-bracket="end" data-for="hoa-docs">]</span>
+      verify:skylinetowers-hoa.com/archive/v/BYLAWS-2026-V1 <span verifiable-text="end" data-for="hoa-docs">]</span>
   </div>
 </div>
 
@@ -132,7 +132,7 @@ Fraud happens when "Rogue Board Members" fabricate a rule change to target a spe
     <h3 style="text-align: center; text-transform: uppercase; margin-bottom: 20px;">Notice of Rule Change</h3>
     <p>Please be advised that the Board of Directors has adopted the following revision to the Association Rules, effective immediately:</p>
 <div style="margin: 20px 0; border-left: 4px solid #000; padding-left: 20px; background: #f9f9f9; padding-top: 10px; padding-bottom: 10px;">
-      <strong><span data-bracket="start" data-for="hoa-rule">[</span>ARTICLE IV, SECTION 2 (REVISED):</strong><br>
+      <strong><span verifiable-text="start" data-for="hoa-rule">[</span>ARTICLE IV, SECTION 2 (REVISED):</strong><br>
       "Short-term rentals of less than thirty (30) days are strictly prohibited. Violations shall incur a fine of $500 per day."
     </div>
 <p><strong>Adoption Date:</strong> March 15, 2026<br>
@@ -149,7 +149,7 @@ Fraud happens when "Rogue Board Members" fabricate a rule change to target a spe
   </div>
 <div data-verify-line="hoa-rule" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: HOA doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:skylinetowers-hoa.com/rules/v/2026-04A <span data-bracket="end" data-for="hoa-rule">]</span>
+      verify:skylinetowers-hoa.com/rules/v/2026-04A <span verifiable-text="end" data-for="hoa-rule">]</span>
   </div>
 </div>
 

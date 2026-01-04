@@ -17,7 +17,7 @@ furtherDerivations: 1
 <div style="font-size: 1em; line-height: 1.6; color: #333; text-align: justify;">
     <p>This document confirms the approval of the death benefit claim for the following policy:</p>
 <div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin: 20px 0;">
-      <p><strong>Deceased (Insured):</strong> <span data-bracket="start" data-for="life-claim">[</span>John Jacob Doe (Policy #992288)</p>
+      <p><strong>Deceased (Insured):</strong> <span verifiable-text="start" data-for="life-claim">[</span>John Jacob Doe (Policy #992288)</p>
       <p><strong>Beneficiary:</strong> Mary Alice Jacob (Spouse)</p>
       <p><strong>Approved Benefit Amount:</strong> $ 1,000,000.00</p>
     </div>
@@ -33,7 +33,7 @@ furtherDerivations: 1
   </div>
 <div data-verify-line="life-claim" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Northwestern Mutual doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:northwesternmutual.com/claims/v/992288-PAY <span data-bracket="end" data-for="life-claim">]</span>
+      verify:northwesternmutual.com/claims/v/992288-PAY <span verifiable-text="end" data-for="life-claim">]</span>
   </div>
 </div>
 

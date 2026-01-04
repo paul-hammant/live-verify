@@ -21,7 +21,7 @@ These documents are the primary evidence used for **Travel Insurance Claims**. A
       <div style="font-size: 0.8em; opacity: 0.9;">Official Cancellation Notice</div>
     </div>
     <div style="text-align: right;">
-      <div style="font-size: 0.8em;">Booking Ref: <span data-bracket="start" data-for="cancel">[</span>L7XK9B</div>
+      <div style="font-size: 0.8em;">Booking Ref: <span verifiable-text="start" data-for="cancel">[</span>L7XK9B</div>
     </div>
   </div>
 <div style="padding: 25px;">
@@ -55,7 +55,7 @@ These documents are the primary evidence used for **Travel Insurance Claims**. A
 <div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #bbb; text-align: center;">
     <div data-verify-line="cancel" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #d32f2f; font-weight: bold;"
       title="Demo only: Airlines don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:ba.com/cancel/v/L7XK9BDOE <span data-bracket="end" data-for="cancel">]</span>
+      verify:ba.com/cancel/v/L7XK9BDOE <span verifiable-text="end" data-for="cancel">]</span>
     </div>
     <div style="font-size: 0.7em; color: #999; margin-top: 10px; font-style: italic;">
       Scan to verify cancellation status and non-refundable loss amounts for insurance purposes.

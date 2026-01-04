@@ -36,7 +36,7 @@ These documents are the "Career Proof" for athletes and teams. They are used to 
       <div style="font-size: 1.5em; color: #ccc;">&rarr;</div>
       <div rowspan="2" style="border: 2px solid #1a237e; padding: 15px; background: #e8eaf6; text-align: center;">
         <div style="font-size: 0.7em; color: #1a237e; font-weight: bold;">CHAMPIONSHIP WINNER</div>
-        <div style="font-size: 1.1em; font-weight: bold;"><span data-bracket="start" data-for="bracket">[</span>UNSEEN UNIVERSITY ACADEMY</div>
+        <div style="font-size: 1.1em; font-weight: bold;"><span verifiable-text="start" data-for="bracket">[</span>UNSEEN UNIVERSITY ACADEMY</div>
         <div style="font-size: 0.8em; margin-top: 5px; color: #2e7d32; font-weight: bold;">FINAL SCORE: 3 - 1</div>
       </div>
       <!-- Semifinal 2 -->
@@ -54,7 +54,7 @@ These documents are the "Career Proof" for athletes and teams. They are used to 
 <div style="padding: 20px; background: #fff; border-top: 1px dashed #bbb; text-align: center;">
     <div data-verify-line="bracket" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #1a237e; font-weight: bold;"
       title="Demo only: Sports leagues don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:elite-champs.com/v/TIER1-2026-FIN <span data-bracket="end" data-for="bracket">]</span>
+      verify:elite-champs.com/v/TIER1-2026-FIN <span verifiable-text="end" data-for="bracket">]</span>
     </div>
     <div style="font-size: 0.7em; color: #999; margin-top: 10px;">
       Scan to verify match results, final seeding, and official trophy status.

@@ -30,7 +30,7 @@ OCR-to-hash allows a driver to scan an officer's ID badge or the verification li
     </div>
     <div style="flex-grow: 1;">
       <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Officer</div>
-      <div style="font-size: 1.3em; font-weight: bold; margin: 0 0 10px 0; color: #333;"><span data-bracket="start" data-for="park-off">[</span>Robert M 5523</div>
+      <div style="font-size: 1.3em; font-weight: bold; margin: 0 0 10px 0; color: #333;"><span verifiable-text="start" data-for="park-off">[</span>Robert M 5523</div>
 <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Division</div>
       <div style="font-size: 0.9em; font-weight: bold;">Enforcement South</div>
     </div>
@@ -41,7 +41,7 @@ OCR-to-hash allows a driver to scan an officer's ID badge or the verification li
     </div>
     <div data-verify-line="park-off" style="border-top: 1px dashed #999; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 1em; color: #000; text-align: center; font-weight: bold;"
       title="Demo only: Municipalities don't yet offer verification&#10;endpoints, so this is illustrative">
-      vfy:enforcement.sfmta.com <span data-bracket="end" data-for="park-off">]</span>
+      vfy:enforcement.sfmta.com <span verifiable-text="end" data-for="park-off">]</span>
     </div>
   </div>
 </div>

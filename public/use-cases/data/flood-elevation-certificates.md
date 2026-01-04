@@ -30,7 +30,7 @@ An **Elevation Certificate** is the official paper from a licensed surveyor that
       <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;">OMB Control #: 1660-0008</div>
     </div>
 <div style="font-size: 0.95em; line-height: 1.5; color: #333;">
-      <p><strong>Property:</strong> <span data-bracket="start" data-for="flood">[</span>123 Ocean Blvd, Miami Beach, FL 33139<br>
+      <p><strong>Property:</strong> <span verifiable-text="start" data-for="flood">[</span>123 Ocean Blvd, Miami Beach, FL 33139<br>
       <strong>Building Type:</strong> Single-Family Residential</p>
 <div style="background: #f0f4f8; padding: 15px; border: 1px solid #d1d9e6; margin: 15px 0;">
         <p><strong>FEMA Flood Zone:</strong> AE (EL 9')<br>
@@ -45,7 +45,7 @@ An **Elevation Certificate** is the official paper from a licensed surveyor that
     </div>
 <div data-verify-line="flood" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: FEMA/Surveyor doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:miller-surveying.com/v/MIAMI-123 <span data-bracket="end" data-for="flood">]</span>
+      verify:miller-surveying.com/v/MIAMI-123 <span verifiable-text="end" data-for="flood">]</span>
     </div>
   </div>
 </div>

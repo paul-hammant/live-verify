@@ -31,7 +31,7 @@ The policy is "Parametric"—meaning it pays out automatically if a specific wea
 <div style="font-size: 1em; line-height: 1.6; color: #333;">
       <p>This document confirms that coverage is in effect for the following event:</p>
 <div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin: 20px 0;">
-        <strong>Event:</strong> <span data-bracket="start" data-for="event-cancel">[</span>Austin City Limits - Weekend 1<br>
+        <strong>Event:</strong> <span verifiable-text="start" data-for="event-cancel">[</span>Austin City Limits - Weekend 1<br>
         <strong>Location:</strong> Zilker Park, Austin, TX
       </div>
 <p><strong>Primary Trigger:</strong> Adverse Weather (Rainfall exceeding 0.5" during 12:00-22:00 window).<br>
@@ -43,7 +43,7 @@ The policy is "Parametric"—meaning it pays out automatically if a specific wea
     </div>
 <div data-verify-line="event-cancel" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Hiscox doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:hiscox.com/specialty/v/ACL-2026-W1 <span data-bracket="end" data-for="event-cancel">]</span>
+      verify:hiscox.com/specialty/v/ACL-2026-W1 <span verifiable-text="end" data-for="event-cancel">]</span>
     </div>
   </div>
 </div>

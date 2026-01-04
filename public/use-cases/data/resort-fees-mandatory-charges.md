@@ -22,7 +22,7 @@ Government regulators (like the FTC) now require these fees to be clearly disclo
 <div style="padding: 25px; font-size: 0.9em; line-height: 1.5; color: #333;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 10px;">
       <div>
-        <strong>Guest:</strong> <span data-bracket="start" data-for="resort">[</span>JOHN DOE<br>
+        <strong>Guest:</strong> <span verifiable-text="start" data-for="resort">[</span>JOHN DOE<br>
         <strong>Conf #:</strong> AZ-99228877
       </div>
       <div style="text-align: right;">
@@ -58,7 +58,7 @@ Government regulators (like the FTC) now require these fees to be clearly disclo
 <div style="padding: 20px; background: #f9f9f9; border-top: 1px solid #eee; text-align: center;">
     <div data-verify-line="resort" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #1a237e; font-weight: bold;"
       title="Demo only: Hotels don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:grandazure.com/fees/v/AZ99228877 <span data-bracket="end" data-for="resort">]</span>
+      verify:grandazure.com/fees/v/AZ99228877 <span verifiable-text="end" data-for="resort">]</span>
     </div>
     <div style="font-size: 0.7em; color: #999; margin-top: 10px; font-style: italic;">
       Scan to verify mandatory fee disclosure authenticity and compliance status.

@@ -25,7 +25,7 @@ These reports are "Development Killers." If a property is 50% wetlands, it may b
 <div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
-        <strong>Project Site:</strong> <span data-bracket="start" data-for="wetland">[</span>BLUE RIVER MEADOWS<br>
+        <strong>Project Site:</strong> <span verifiable-text="start" data-for="wetland">[</span>BLUE RIVER MEADOWS<br>
         <strong>APN:</strong> 992-288-776<br>
         <strong>Address:</strong> 123 Marsh Rd, Springfield
       </div>
@@ -67,7 +67,7 @@ These reports are "Development Killers." If a property is 50% wetlands, it may b
 <div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #999; text-align: center;">
     <div data-verify-line="wetland" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Environmental firms don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:eco-stream.com/v/WET99228877 <span data-bracket="end" data-for="wetland">]</span>
+      verify:eco-stream.com/v/WET99228877 <span verifiable-text="end" data-for="wetland">]</span>
     </div>
     <div style="font-size: 0.7em; color: #666; margin-top: 10px; font-style: italic;">
       Scan to verify wetland boundaries, view high-res survey maps, and check for USACE 'Jurisdictional Determination' status.

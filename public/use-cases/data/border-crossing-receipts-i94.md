@@ -19,7 +19,7 @@ furtherDerivations: 1
 <div style="padding: 25px;">
     <div style="text-align: center; margin-bottom: 20px;">
       <h2 style="margin: 0; font-size: 1.3em;">ADMISSION (I-94) RECORD NUMBER</h2>
-      <div style="font-size: 1.5em; font-weight: bold; margin-top: 5px; color: #002d62;"><span data-bracket="start" data-for="i94">[</span>998877665 42</div>
+      <div style="font-size: 1.5em; font-weight: bold; margin-top: 5px; color: #002d62;"><span verifiable-text="start" data-for="i94">[</span>998877665 42</div>
     </div>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
       <p><strong>Most Recent Admission:</strong> March 15, 2026<br>
@@ -37,7 +37,7 @@ furtherDerivations: 1
     </div>
 <div data-verify-line="i94" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: CBP doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:cbp.gov/i94/v/99887766542 <span data-bracket="end" data-for="i94">]</span>
+      verify:cbp.gov/i94/v/99887766542 <span verifiable-text="end" data-for="i94">]</span>
     </div>
   </div>
 </div>

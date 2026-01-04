@@ -22,7 +22,7 @@ Ethics violations are common: researchers sometimes use data for a different pur
     <div style="font-size: 0.9em; margin-top: 5px;">OXFORD UNIVERSITY - RESEARCH SERVICES</div>
   </div>
 <div style="font-size: 1em; line-height: 1.6; color: #333; text-align: justify;">
-    <p>This Agreement governs the transfer of Data from the <strong>Provider:</strong> Oxford University to the <strong>Recipient:</strong> <span data-bracket="start" data-for="dsa">[</span>Stanford Medical Research Center.</p>
+    <p>This Agreement governs the transfer of Data from the <strong>Provider:</strong> Oxford University to the <strong>Recipient:</strong> <span verifiable-text="start" data-for="dsa">[</span>Stanford Medical Research Center.</p>
 <p><strong>Dataset ID:</strong> OX-BIO-2026-992 (Genomic Sequences)<br>
     <strong>Authorized Use:</strong> Cancer Research Initiative only.<br>
     <strong>Restrictions:</strong> No re-identification; No third-party transfer.</p>
@@ -40,7 +40,7 @@ Ethics violations are common: researchers sometimes use data for a different pur
   </div>
 <div data-verify-line="dsa" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: University doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:ox.ac.uk/legal/v/OX-BIO-992 <span data-bracket="end" data-for="dsa">]</span>
+      verify:ox.ac.uk/legal/v/OX-BIO-992 <span verifiable-text="end" data-for="dsa">]</span>
   </div>
 </div>
 

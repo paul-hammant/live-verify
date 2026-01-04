@@ -33,7 +33,7 @@ Fraudsters often create fake certificates to claim ownership of hit songs or vir
         March 15, 2026
       </div>
     </div>
-<p><strong>Title of Work:</strong> <span data-bracket="start" data-for="copyright">[</span><em>The Chronicles of Verification: A Digital Epic</em></p>
+<p><strong>Title of Work:</strong> <span verifiable-text="start" data-for="copyright">[</span><em>The Chronicles of Verification: A Digital Epic</em></p>
     <p><strong>Author / Claimant:</strong> J.K. Row-Verify</p>
     <p><strong>Type of Work:</strong> Literary Work</p>
 <div style="margin: 20px 0; padding: 15px; background: #f9f9f9; border: 1px solid #eee; font-family: 'Courier New', monospace; font-size: 0.85em;">
@@ -50,7 +50,7 @@ Fraudsters often create fake certificates to claim ownership of hit songs or vir
   </div>
 <div data-verify-line="copyright" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Copyright Office doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:copyright.gov/v/TX9988776 <span data-bracket="end" data-for="copyright">]</span>
+      verify:copyright.gov/v/TX9988776 <span verifiable-text="end" data-for="copyright">]</span>
   </div>
 </div>
 

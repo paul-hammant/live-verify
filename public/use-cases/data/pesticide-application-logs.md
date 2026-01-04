@@ -21,7 +21,7 @@ These logs are the "Safety Map" of our food supply. Large retailers (e.g., Whole
       <div style="font-size: 0.8em; color: #666;">In accordance with EPA 40 CFR Part 170</div>
     </div>
     <div style="text-align: right;">
-      <div style="font-weight: bold; font-size: 1em;">LOG #: <span data-bracket="start" data-for="pest">[</span>2026-NY-42</div>
+      <div style="font-weight: bold; font-size: 1em;">LOG #: <span verifiable-text="start" data-for="pest">[</span>2026-NY-42</div>
     </div>
   </div>
 <div style="padding: 20px;">
@@ -69,7 +69,7 @@ These logs are the "Safety Map" of our food supply. Large retailers (e.g., Whole
 <div style="padding: 20px; background: #eee; border-top: 1px solid #ddd; text-align: center;">
     <div data-verify-line="pest" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Farms don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:sunnyacres.farm/v/NY42-2026 <span data-bracket="end" data-for="pest">]</span>
+      verify:sunnyacres.farm/v/NY42-2026 <span verifiable-text="end" data-for="pest">]</span>
     </div>
     <div style="font-size: 0.7em; color: #777; margin-top: 10px; font-style: italic;">
       Scan to verify chemical concentration, weather conditions, and mandatory REI (Restricted Entry Interval) status.

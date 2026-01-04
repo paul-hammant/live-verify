@@ -19,7 +19,7 @@ furtherDerivations: 1
 <div style="padding: 30px;">
     <div style="border-bottom: 2px solid #333; padding-bottom: 10px; margin-bottom: 20px;">
       <h3 style="margin: 0; color: #333;">PRODUCT IDENTIFICATION</h3>
-      <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;">Model: <span data-bracket="start" data-for="doc">[</span>S-SERIES ROBOTIC HUB (V4.2)</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;">Model: <span verifiable-text="start" data-for="doc">[</span>S-SERIES ROBOTIC HUB (V4.2)</div>
     </div>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
       <p><strong>Manufacturer:</strong> Cyberdyne Systems, SA<br>
@@ -35,7 +35,7 @@ furtherDerivations: 1
     </div>
 <div data-verify-line="doc" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Manufacturer doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:cyberdyne.be/compliance/v/S-SERIES-V42 <span data-bracket="end" data-for="doc">]</span>
+      verify:cyberdyne.be/compliance/v/S-SERIES-V42 <span verifiable-text="end" data-for="doc">]</span>
     </div>
   </div>
 </div>

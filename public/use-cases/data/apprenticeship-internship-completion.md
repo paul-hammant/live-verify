@@ -24,7 +24,7 @@ Because these lead directly to high-paying jobs, "internship fraud" (faking a ce
     </div>
 <div style="margin: 30px 0;">
       <div style="font-size: 1.1em;">This is to certify that</div>
-      <div style="font-size: 1.8em; font-weight: bold; margin: 10px 0; color: #2c3e50;"><span data-bracket="start" data-for="intern">[</span>SARAH J. MILLER</div>
+      <div style="font-size: 1.8em; font-weight: bold; margin: 10px 0; color: #2c3e50;"><span verifiable-text="start" data-for="intern">[</span>SARAH J. MILLER</div>
       <div style="font-size: 1.1em;">has successfully completed a</div>
       <div style="font-size: 1.3em; font-weight: bold; margin: 10px 0;">SOFTWARE ENGINEERING INTERNSHIP</div>
       <div style="font-size: 1.1em;">at</div>
@@ -41,7 +41,7 @@ Because these lead directly to high-paying jobs, "internship fraud" (faking a ce
     </div>
 <div data-verify-line="intern" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Company doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:techno-dynamic.com/interns/v/x9y8z7 <span data-bracket="end" data-for="intern">]</span>
+      verify:techno-dynamic.com/interns/v/x9y8z7 <span verifiable-text="end" data-for="intern">]</span>
     </div>
   </div>
 </div>

@@ -20,7 +20,7 @@ furtherDerivations: 1
 <div style="font-size: 0.95em; line-height: 1.6; text-align: justify; color: #333; margin-top: 20px;">
     <p>The Society of Actuaries hereby certifies the following mortality table for use in life insurance valuation and pricing:</p>
 <div style="background: #fdfdfd; padding: 15px; border: 1px solid #eee; margin: 20px 0;">
-      <p><strong>Table Name:</strong> <span data-bracket="start" data-for="mortality">[</span>2026 Commissioners Standard Ordinary (CSO)</p>
+      <p><strong>Table Name:</strong> <span verifiable-text="start" data-for="mortality">[</span>2026 Commissioners Standard Ordinary (CSO)</p>
       <p><strong>Basis:</strong> U.S. General Population (2020-2024 Experience)</p>
       <p><strong>Segments:</strong> Male/Female, Smoker/Non-Smoker, Ultimate/Select</p>
     </div>
@@ -34,7 +34,7 @@ furtherDerivations: 1
   </div>
 <div data-verify-line="mortality" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: SOA doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:soa.org/tables/v/CSO-2026-V1 <span data-bracket="end" data-for="mortality">]</span>
+      verify:soa.org/tables/v/CSO-2026-V1 <span verifiable-text="end" data-for="mortality">]</span>
   </div>
 </div>
 

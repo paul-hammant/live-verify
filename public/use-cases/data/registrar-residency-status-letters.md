@@ -25,7 +25,7 @@ These letters are the "Benefit Unlockers" of the student world. They are used to
     <p>Date: March 15, 2026</p>
     <p>This document serves as official verification of student status for:</p>
 <div style="background: #f9f9f9; padding: 20px; border: 1px solid #ddd; margin: 20px 0;">
-      <p><strong>Student:</strong> <span data-bracket="start" data-for="registrar">[</span><strong>SARAH JANE SMITH</strong><br>
+      <p><strong>Student:</strong> <span verifiable-text="start" data-for="registrar">[</span><strong>SARAH JANE SMITH</strong><br>
       <strong>Student ID:</strong> 99228877<br>
       <strong>Academic Level:</strong> Undergraduate Junior</p>
 <p><strong>Enrollment Status:</strong> FULL-TIME (15 Units)<br>
@@ -44,7 +44,7 @@ These letters are the "Benefit Unlockers" of the student world. They are used to
 <div style="padding: 20px; background: #fffbe6; border: 1px dashed #999; margin-top: 30px; text-align: center;">
     <div data-verify-line="registrar" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: University registrars don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:berkeley.edu/v/SMITH992288 <span data-bracket="end" data-for="registrar">]</span>
+      verify:berkeley.edu/v/SMITH992288 <span verifiable-text="end" data-for="registrar">]</span>
     </div>
     <div style="font-size: 0.7em; color: #666; margin-top: 8px;">
       Scan to verify enrollment intensity, legal residency status, and semester dates.

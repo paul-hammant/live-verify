@@ -22,7 +22,7 @@ These documents are the "Recovery Ledger" of the insurance world. Fraud is commo
     </div>
     <div style="text-align: right;">
       <div style="font-weight: bold; font-size: 0.9em;">SALVAGE CERTIFICATE</div>
-      <div style="font-size: 0.7em;">Lot: <span data-bracket="start" data-for="salvage">[</span>9922-8877-XJ</div>
+      <div style="font-size: 0.7em;">Lot: <span verifiable-text="start" data-for="salvage">[</span>9922-8877-XJ</div>
     </div>
   </div>
 <div style="padding: 25px;">
@@ -62,7 +62,7 @@ These documents are the "Recovery Ledger" of the insurance world. Fraud is commo
 <div style="padding: 20px; background: #f5f5f5; border-top: 1px solid #000; text-align: center;">
     <div data-verify-line="salvage" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Salvage yards don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:copart.com/v/VIN1ABC992288 <span data-bracket="end" data-for="salvage">]</span>
+      verify:copart.com/v/VIN1ABC992288 <span verifiable-text="end" data-for="salvage">]</span>
     </div>
     <div style="font-size: 0.7em; color: #777; margin-top: 10px;">
       Scan to verify total-loss history, subrogation liens, and the integrity of the repair-vs-salvage math.

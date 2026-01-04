@@ -22,7 +22,7 @@ Losing the original B/L is a disaster (requires court bonds to fix), which is wh
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 1px solid #000; background: #fff; padding: 0;">
   <div style="background: #002d62; color: #fff; padding: 10px; display: flex; justify-content: space-between; align-items: center;">
     <div style="font-weight: bold; font-size: 1.2em;">MAERSK LINE</div>
-    <div style="font-size: 0.8em; text-align: right;">B/L No: <span data-bracket="start" data-for="bol">[</span>MAE-9988776655</div>
+    <div style="font-size: 0.8em; text-align: right;">B/L No: <span verifiable-text="start" data-for="bol">[</span>MAE-9988776655</div>
   </div>
 <div style="padding: 10px; font-size: 0.8em;">
     <div style="display: flex; border-bottom: 1px solid #000;">
@@ -68,7 +68,7 @@ Losing the original B/L is a disaster (requires court bonds to fix), which is wh
     </div>
 <div data-verify-line="bol" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #555; text-align: center;"
       title="Demo only: Maersk doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:maersk.com/bl/v/9988776655 <span data-bracket="end" data-for="bol">]</span>
+      verify:maersk.com/bl/v/9988776655 <span verifiable-text="end" data-for="bol">]</span>
     </div>
   </div>
 </div>
@@ -172,7 +172,7 @@ This "Negotiable" status makes the B/L a prime target for high-stakes fraud. Cri
     </div>
     <div style="padding: 10px; font-size: 0.75em; line-height: 1.3;">
       <strong style="text-transform: uppercase; font-size: 0.8em; color: #666;">B/L Number:</strong><br>
-      <div style="font-size: 1.2em; font-weight: bold;"><span data-bracket="start" data-for="bl">[</span>MAE-9988776655</div>
+      <div style="font-size: 1.2em; font-weight: bold;"><span verifiable-text="start" data-for="bl">[</span>MAE-9988776655</div>
     </div>
   </div>
 <div style="padding: 10px; border-bottom: 1px solid #000; font-size: 0.75em; line-height: 1.3;">
@@ -209,7 +209,7 @@ This "Negotiable" status makes the B/L a prime target for high-stakes fraud. Cri
     </div>
     <div data-verify-line="bl" style="border-top: 1px dashed #999; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #002d62; text-align: center; font-weight: bold;"
       title="Demo only: Maersk doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:maersk.com/bl/v/MAE9988776655 <span data-bracket="end" data-for="bl">]</span>
+      verify:maersk.com/bl/v/MAE9988776655 <span verifiable-text="end" data-for="bl">]</span>
     </div>
   </div>
 </div>
@@ -303,7 +303,7 @@ While simpler than a B/L, it is still a high-stakes legal proof of shipment. Fra
     </div>
     <div style="padding: 10px; font-size: 0.75em; line-height: 1.3;">
       <strong style="text-transform: uppercase; color: #666;">Waybill Number:</strong><br>
-      <div style="font-size: 1.2em; font-weight: bold;"><span data-bracket="start" data-for="way">[</span>MAE-9988-7766-55</div>
+      <div style="font-size: 1.2em; font-weight: bold;"><span verifiable-text="start" data-for="way">[</span>MAE-9988-7766-55</div>
     </div>
   </div>
 <div style="padding: 10px; border-bottom: 1px solid #000; font-size: 0.75em; line-height: 1.3;">
@@ -336,7 +336,7 @@ While simpler than a B/L, it is still a high-stakes legal proof of shipment. Fra
 <div style="padding: 20px; background: #fdfdfd; border-top: 1px solid #000; text-align: center;">
     <div data-verify-line="way" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #002d62; font-weight: bold;"
       title="Demo only: Maersk doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:maersk.com/v/MAE9988776655 <span data-bracket="end" data-for="way">]</span>
+      verify:maersk.com/v/MAE9988776655 <span verifiable-text="end" data-for="way">]</span>
     </div>
     <div style="font-size: 0.7em; color: #666; margin-top: 10px; font-style: italic;">
       Scan to verify Shipped-on-Board status, container seal integrity, and consignee authorization.

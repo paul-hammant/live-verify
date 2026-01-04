@@ -23,7 +23,7 @@ Because these receipts are easy to forge with a basic printer, "baggage fraud" i
     -----------------------------------
   </div>
 <div style="font-size: 0.9em; line-height: 1.4;">
-    <p><strong>Ref:</strong> <span data-bracket="start" data-for="bag">[</span>CDG-AF-998877<br>
+    <p><strong>Ref:</strong> <span verifiable-text="start" data-for="bag">[</span>CDG-AF-998877<br>
     <strong>Passenger:</strong> AMELIE POULAIN<br>
     <strong>Flight:</strong> AF1234 / 15MAR26</p>
 <p><strong>Item Description:</strong><br>
@@ -40,7 +40,7 @@ Because these receipts are easy to forge with a basic printer, "baggage fraud" i
   </div>
 <div data-verify-line="bag" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Air France doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:airfrance.com/baggage/v/CDG998877 <span data-bracket="end" data-for="bag">]</span>
+      verify:airfrance.com/baggage/v/CDG998877 <span verifiable-text="end" data-for="bag">]</span>
   </div>
 </div>
 

@@ -25,7 +25,7 @@ These permits are the "Permission to Pollute" within legal bounds. Fraud is comm
 <div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
-        <strong>Permittee:</strong> <span data-bracket="start" data-for="water">[</span>GOLIATH MANUFACTURING INC.<br>
+        <strong>Permittee:</strong> <span verifiable-text="start" data-for="water">[</span>GOLIATH MANUFACTURING INC.<br>
         <strong>Facility ID:</strong> #NY-992288-Z<br>
         <strong>Address:</strong> 123 Factory Lane, Springfield
       </div>
@@ -63,7 +63,7 @@ These permits are the "Permission to Pollute" within legal bounds. Fraud is comm
 <div style="padding: 20px; background: #fdfdfd; border-top: 1px solid #002d62; text-align: center;">
     <div data-verify-line="water" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: State boards don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:state-water.gov/npdes/v/NY992288Z <span data-bracket="end" data-for="water">]</span>
+      verify:state-water.gov/npdes/v/NY992288Z <span verifiable-text="end" data-for="water">]</span>
     </div>
     <div style="font-size: 0.7em; color: #777; margin-top: 10px;">
       Scan to verify discharge outfall maps, recent lab monitoring results, and storm-event log compliance.

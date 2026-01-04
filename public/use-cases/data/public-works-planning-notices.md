@@ -22,7 +22,7 @@ OCR-to-hash allows a citizen or neighbor to scan the notice from the sidewalk to
     <div style="font-size: 1em; letter-spacing: 1px;">PUBLIC NOTICE OF PROPOSED DEVELOPMENT</div>
   </div>
 <div style="font-size: 0.9em; line-height: 1.6; color: #000;">
-    <p><strong>Application #:</strong> <span data-bracket="start" data-for="plan">[</span>PLN-2026-992288<br>
+    <p><strong>Application #:</strong> <span verifiable-text="start" data-for="plan">[</span>PLN-2026-992288<br>
     <strong>Address:</strong> 42 SKYLINE DRIVE, SPRINGFIELD, USA</p>
 <div style="margin: 15px 0; padding: 15px; border: 1px solid #000; background: #fff;">
       <strong>Proposed Action:</strong><br>
@@ -39,7 +39,7 @@ OCR-to-hash allows a citizen or neighbor to scan the notice from the sidewalk to
 <div style="padding: 20px; background: #fff; border: 1px dashed #000; margin-top: 20px; text-align: center;">
     <div data-verify-line="plan" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: Municipalities don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:springfield.gov/plan/v/PLN992288 <span data-bracket="end" data-for="plan">]</span>
+      verify:springfield.gov/plan/v/PLN992288 <span verifiable-text="end" data-for="plan">]</span>
     </div>
     <div style="font-size: 0.7em; color: #666; margin-top: 10px;">
       Scan to verify appeal deadlines, view high-res project renderings, and read the full environmental impact report.

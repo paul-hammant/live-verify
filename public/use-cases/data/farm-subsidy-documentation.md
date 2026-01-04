@@ -27,7 +27,7 @@ Farmers use these verified eligibility letters to get "Operating Loans" from ban
 <div style="padding: 25px;">
     <h3 style="margin-top: 0; color: #1b5e20; border-bottom: 2px solid #1b5e20; padding-bottom: 5px;">NOTICE OF PAYMENT ELIGIBILITY</h3>
 <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Producer:</strong> <span data-bracket="start" data-for="subsidy">[</span>Miller Family Farms, Inc.<br>
+      <p><strong>Producer:</strong> <span verifiable-text="start" data-for="subsidy">[</span>Miller Family Farms, Inc.<br>
       <strong>Business Type:</strong> Corporation (EIN: **-***5544)</p>
 <div style="background: #f1f8e9; padding: 15px; border: 1px solid #c5e1a5; margin: 15px 0;">
         <p><strong>Program:</strong> Agriculture Risk Coverage (ARC-CO)<br>
@@ -43,7 +43,7 @@ Farmers use these verified eligibility letters to get "Operating Loans" from ban
     </div>
 <div data-verify-line="subsidy" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: USDA doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:fsa.usda.gov/compliance/v/ARC-2026-9922 <span data-bracket="end" data-for="subsidy">]</span>
+      verify:fsa.usda.gov/compliance/v/ARC-2026-9922 <span verifiable-text="end" data-for="subsidy">]</span>
     </div>
   </div>
 </div>

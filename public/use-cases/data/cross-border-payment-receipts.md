@@ -23,7 +23,7 @@ Fraudsters often use "Fake Screenshots" to trick sellers into shipping goods bef
   </div>
 <div style="padding: 30px;">
     <div style="text-align: center; margin-bottom: 25px;">
-      <div style="font-size: 0.9em; color: #666;">Transfer ID: <span data-bracket="start" data-for="remit">[</span>#9988776655</div>
+      <div style="font-size: 0.9em; color: #666;">Transfer ID: <span verifiable-text="start" data-for="remit">[</span>#9988776655</div>
       <div style="font-size: 2.2em; font-weight: bold; color: #00b9ff; margin-top: 5px;">$ 5,000.00 USD</div>
     </div>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333; border-top: 1px solid #eee; padding-top: 20px;">
@@ -40,7 +40,7 @@ Fraudsters often use "Fake Screenshots" to trick sellers into shipping goods bef
     </div>
 <div data-verify-line="remit" style="border-top: 1px dashed #00b9ff; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Wise doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:wise.com/v/9988776655 <span data-bracket="end" data-for="remit">]</span>
+      verify:wise.com/v/9988776655 <span verifiable-text="end" data-for="remit">]</span>
     </div>
   </div>
 </div>

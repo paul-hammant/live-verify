@@ -27,7 +27,7 @@ Fraudsters often "mis-declare" cargo in the instructions (e.g., calling high-tax
 <div style="padding: 20px;">
     <div style="display: flex; justify-content: space-between; font-size: 0.9em; margin-bottom: 20px;">
       <div>
-        <strong>Shipper:</strong> <span data-bracket="start" data-for="ship">[</span>Global Tech Exports, Inc.<br>
+        <strong>Shipper:</strong> <span verifiable-text="start" data-for="ship">[</span>Global Tech Exports, Inc.<br>
         <strong>Booking #:</strong> 99228877
       </div>
       <div style="text-align: right;">
@@ -43,7 +43,7 @@ Fraudsters often "mis-declare" cargo in the instructions (e.g., calling high-tax
     </div>
 <div data-verify-line="ship" style="border-top: 1px dashed #999; margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Maersk doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:maersk.com/si/v/99228877 <span data-bracket="end" data-for="ship">]</span>
+      verify:maersk.com/si/v/99228877 <span verifiable-text="end" data-for="ship">]</span>
     </div>
   </div>
 </div>

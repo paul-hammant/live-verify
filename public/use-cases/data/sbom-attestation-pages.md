@@ -28,7 +28,7 @@ The problem is that SBOMs are massive JSON/XML files that humans can't read. Ven
 <div style="padding: 25px;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div style="font-size: 0.9em;">
-        <strong>Product:</strong> <span data-bracket="start" data-for="sbom">[</span>Enterprise Gateway 5000<br>
+        <strong>Product:</strong> <span verifiable-text="start" data-for="sbom">[</span>Enterprise Gateway 5000<br>
         <strong>Release Date:</strong> MARCH 15, 2026
       </div>
       <div style="text-align: right; font-size: 0.9em;">
@@ -54,7 +54,7 @@ The problem is that SBOMs are massive JSON/XML files that humans can't read. Ven
 <div style="padding: 20px; background: #fdfdfd; border-top: 1px solid #eee; text-align: center;">
     <div data-verify-line="sbom" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #0078d4; font-weight: bold;"
       title="Demo only: Software vendors don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:cybershield.com/sbom/v/EG5000-240 <span data-bracket="end" data-for="sbom">]</span>
+      verify:cybershield.com/sbom/v/EG5000-240 <span verifiable-text="end" data-for="sbom">]</span>
     </div>
     <div style="font-size: 0.7em; color: #999; margin-top: 10px; font-style: italic;">
       Scan to verify the software bill of materials integrity and security attestation status.

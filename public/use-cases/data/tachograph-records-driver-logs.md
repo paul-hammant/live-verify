@@ -28,7 +28,7 @@ Fraud is common and lethal: drivers or carrier managers often "edit" logbooks to
 <div style="padding: 20px;">
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.85em; margin-bottom: 20px;">
       <div>
-        <strong>Driver:</strong> <span data-bracket="start" data-for="tacho">[</span>JAMES W. GORDON<br>
+        <strong>Driver:</strong> <span verifiable-text="start" data-for="tacho">[</span>JAMES W. GORDON<br>
         <strong>Carrier:</strong> GLOBAL LOGISTICS CORP.<br>
         <strong>USDOT #:</strong> 99228877
       </div>
@@ -58,7 +58,7 @@ Fraud is common and lethal: drivers or carrier managers often "edit" logbooks to
     </div>
     <div data-verify-line="tacho" style="border-top: 1px dashed #999; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: ELD providers don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:samsara.com/logs/v/992288GORDON <span data-bracket="end" data-for="tacho">]</span>
+      verify:samsara.com/logs/v/992288GORDON <span verifiable-text="end" data-for="tacho">]</span>
     </div>
   </div>
 </div>

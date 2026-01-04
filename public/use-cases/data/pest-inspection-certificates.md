@@ -23,7 +23,7 @@ Because a "Positive" finding can kill a home sale or require a $5,000 treatment,
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px;">
       <div>
         <strong>Property Address:</strong><br>
-        <span data-bracket="start" data-for="wdi">[</span>123 MAPLE STREET, SPRINGFIELD, USA
+        <span verifiable-text="start" data-for="wdi">[</span>123 MAPLE STREET, SPRINGFIELD, USA
       </div>
       <div style="text-align: right;">
         <strong>Report ID:</strong> WDI-2026-8844<br>
@@ -50,7 +50,7 @@ Because a "Positive" finding can kill a home sale or require a $5,000 treatment,
 <div style="padding: 20px; background: #fffbe6; border: 1px dashed #999; margin-top: 30px; text-align: center;">
     <div data-verify-line="wdi" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: Inspection firms don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:precision-pest.com/v/WDI20268844 <span data-bracket="end" data-for="wdi">]</span>
+      verify:precision-pest.com/v/WDI20268844 <span verifiable-text="end" data-for="wdi">]</span>
     </div>
     <div style="font-size: 0.7em; color: #666; margin-top: 10px;">
       Scan to verify structural findings, view high-res damage photos, and check for active service warranties.

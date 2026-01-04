@@ -33,7 +33,7 @@ Fraud happens when owners "edit" the PDF to show a higher limit to satisfy a ban
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px;">
       <div>
         <strong>Insured:</strong><br>
-        <span data-bracket="start" data-for="ho-dec">[</span><strong>JANE A. DOE</strong><br>
+        <span verifiable-text="start" data-for="ho-dec">[</span><strong>JANE A. DOE</strong><br>
         123 Maple Street<br>
         Anytown, USA 12345
       </div>
@@ -67,7 +67,7 @@ Fraud happens when owners "edit" the PDF to show a higher limit to satisfy a ban
     </div>
 <div data-verify-line="ho-dec" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: State Farm doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:statefarm.com/policy/v/99BC99228 <span data-bracket="end" data-for="ho-dec">]</span>
+      verify:statefarm.com/policy/v/99BC99228 <span verifiable-text="end" data-for="ho-dec">]</span>
     </div>
   </div>
 </div>
@@ -163,7 +163,7 @@ Fraud is common: dishonest contractors sometimes "edit" the PDF to add $5,000 in
 <div style="padding: 25px;">
     <h3 style="margin-top: 0; color: #d32f2f; border-bottom: 2px solid #d32f2f; padding-bottom: 5px;">REPAIR ESTIMATE & PROOF OF LOSS</h3>
 <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Insured:</strong> <span data-bracket="start" data-for="prop-claim">[</span>SARAH J. DOE<br>
+      <p><strong>Insured:</strong> <span verifiable-text="start" data-for="prop-claim">[</span>SARAH J. DOE<br>
       <strong>Property:</strong> 123 Maple St, Anytown, USA</p>
 <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
         <tr style="background: #f5f5f5; border-bottom: 1px solid #d32f2f;">
@@ -188,7 +188,7 @@ Fraud is common: dishonest contractors sometimes "edit" the PDF to add $5,000 in
     </div>
 <div data-verify-line="prop-claim" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Allstate doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:allstate.com/claims/v/99228877 <span data-bracket="end" data-for="prop-claim">]</span>
+      verify:allstate.com/claims/v/99228877 <span verifiable-text="end" data-for="prop-claim">]</span>
     </div>
   </div>
 </div>
@@ -284,7 +284,7 @@ Because these papers are required for every mortgage, "Ghost Policy" fraud is a 
 <div style="padding: 25px;">
     <h2 style="text-align: center; color: #003366; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Insurance Declarations</h2>
 <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Named Insured:</strong> <span data-bracket="start" data-for="ho-pol">[</span>Sarah Jane Smith<br>
+      <p><strong>Named Insured:</strong> <span verifiable-text="start" data-for="ho-pol">[</span>Sarah Jane Smith<br>
       <strong>Location:</strong> 4500 Skyline Blvd, Unit 12A, Austin, TX</p>
 <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
         <tr style="background: #f0f4f8; border-bottom: 2px solid #003366;">
@@ -312,7 +312,7 @@ Because these papers are required for every mortgage, "Ghost Policy" fraud is a 
     </div>
 <div data-verify-line="ho-pol" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Liberty Mutual doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:libertymutual.com/policy/v/HO99228877 <span data-bracket="end" data-for="ho-pol">]</span>
+      verify:libertymutual.com/policy/v/HO99228877 <span verifiable-text="end" data-for="ho-pol">]</span>
     </div>
   </div>
 </div>

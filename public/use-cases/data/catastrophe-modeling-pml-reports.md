@@ -26,7 +26,7 @@ This number is the lifeblood of the insurance market. Reinsurers use it to decid
   </div>
 <h3 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; color: #000; border-bottom: 2px solid #000; padding-bottom: 10px;">Probable Maximum Loss (PML) Report</h3>
 <div style="font-size: 0.9em; line-height: 1.6; color: #333; margin-top: 20px;">
-    <p><strong>Insured:</strong> <span data-bracket="start" data-for="pml">[</span>Global Real Estate Trust, REIT<br>
+    <p><strong>Insured:</strong> <span verifiable-text="start" data-for="pml">[</span>Global Real Estate Trust, REIT<br>
     <strong>Portfolio:</strong> US Coastal Tier 1 (142 Properties)</p>
 <div style="background: #f9f9f9; padding: 15px; border: 1px solid #eee; margin: 20px 0;">
       <table style="width: 100%; font-size: 0.95em;">
@@ -52,7 +52,7 @@ This number is the lifeblood of the insurance market. Reinsurers use it to decid
   </div>
 <div data-verify-line="pml" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: RMS doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:rms.com/reports/v/GRET-2026-99 <span data-bracket="end" data-for="pml">]</span>
+      verify:rms.com/reports/v/GRET-2026-99 <span verifiable-text="end" data-for="pml">]</span>
   </div>
 </div>
 

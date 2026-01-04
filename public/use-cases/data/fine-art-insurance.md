@@ -31,7 +31,7 @@ Fraud is high-stakes here: a collector might edit a $1M policy to read $100M to 
 <div style="font-size: 1em; line-height: 1.6; color: #333;">
       <p>This document confirms all-risk "Nail-to-Nail" coverage for the following work:</p>
 <div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin: 20px 0;">
-        <strong>Object:</strong> <span data-bracket="start" data-for="art-ins">[</span>Claude Monet, <em>Water Lilies</em> (1906)<br>
+        <strong>Object:</strong> <span verifiable-text="start" data-for="art-ins">[</span>Claude Monet, <em>Water Lilies</em> (1906)<br>
         <strong>Agreed Value:</strong> $ 85,000,000.00
       </div>
 <p><strong>Coverage Scope:</strong> Worldwide transit and exhibition, including accidental damage, theft, and mysterious disappearance.</p>
@@ -43,7 +43,7 @@ Fraud is high-stakes here: a collector might edit a $1M policy to read $100M to 
     </div>
 <div data-verify-line="art-ins" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: AXA Art doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:axa-art.com/v/MONET-992288 <span data-bracket="end" data-for="art-ins">]</span>
+      verify:axa-art.com/v/MONET-992288 <span verifiable-text="end" data-for="art-ins">]</span>
     </div>
   </div>
 </div>

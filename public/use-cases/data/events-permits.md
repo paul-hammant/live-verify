@@ -23,7 +23,7 @@ The problem is that these permits are often temporary pieces of paper taped to a
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px; border-bottom: 2px solid #eee; padding-bottom: 10px;">
       <div>
         <div style="font-size: 0.7em; color: #888; text-transform: uppercase;">Permit Number</div>
-        <div style="font-size: 1.2em; font-weight: bold; color: #1a237e;"><span data-bracket="start" data-for="event">[</span>EVT-2026-9922-X</div>
+        <div style="font-size: 1.2em; font-weight: bold; color: #1a237e;"><span verifiable-text="start" data-for="event">[</span>EVT-2026-9922-X</div>
       </div>
       <div style="text-align: right;">
         <div style="font-size: 0.7em; color: #888; text-transform: uppercase;">Issue Date</div>
@@ -46,7 +46,7 @@ The problem is that these permits are often temporary pieces of paper taped to a
     </div>
 <div data-verify-line="event" style="margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #1a237e; text-align: center; font-weight: bold; border-top: 1px dashed #bbb;"
       title="Demo only: Municipalities don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:springfield.gov/events/v/EVT992288X <span data-bracket="end" data-for="event">]</span>
+      verify:springfield.gov/events/v/EVT992288X <span verifiable-text="end" data-for="event">]</span>
     </div>
   </div>
 </div>

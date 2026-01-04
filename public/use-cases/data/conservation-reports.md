@@ -29,7 +29,7 @@ Fraudsters often hide "Over-Restoration"—where so much new paint has been adde
 <div style="padding: 30px;">
     <h3 style="margin-top: 0; color: #546e7a; border-bottom: 2px solid #546e7a; padding-bottom: 5px;">CONSERVATION TREATMENT SUMMARY</h3>
 <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Object:</strong> <span data-bracket="start" data-for="conserve">[</span>Rembrandt van Rijn, <em>The Night Watch</em> (1642)<br>
+      <p><strong>Object:</strong> <span verifiable-text="start" data-for="conserve">[</span>Rembrandt van Rijn, <em>The Night Watch</em> (1642)<br>
       <strong>Owner:</strong> Rijksmuseum, Amsterdam</p>
 <div style="background: #fdfdfd; border: 1px solid #eee; padding: 15px; margin: 15px 0;">
         <p><strong>Treatment Performed:</strong> Selective varnish removal and structural consolidation of the lower left quadrant.</p>
@@ -46,7 +46,7 @@ Fraudsters often hide "Over-Restoration"—where so much new paint has been adde
     </div>
 <div data-verify-line="conserve" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Getty Institute doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:getty.edu/conservation/v/GCI992 <span data-bracket="end" data-for="conserve">]</span>
+      verify:getty.edu/conservation/v/GCI992 <span verifiable-text="end" data-for="conserve">]</span>
     </div>
   </div>
 </div>

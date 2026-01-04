@@ -30,7 +30,7 @@ The **Consent Form** is the legal receipt for this digital handshake. It proves:
 <div style="padding: 30px;">
     <h3 style="margin-top: 0; color: #004d40; border-bottom: 2px solid #004d40; padding-bottom: 5px;">AUTHORIZATION RECORD</h3>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
-      <p>This certifies that <span data-bracket="start" data-for="ob-consent">[</span><strong>Customer:</strong> JANE M. SMITH (Ending in ...4421) has granted permission to:</p>
+      <p>This certifies that <span verifiable-text="start" data-for="ob-consent">[</span><strong>Customer:</strong> JANE M. SMITH (Ending in ...4421) has granted permission to:</p>
 <div style="background: #f1f8e9; padding: 15px; border: 1px solid #c5e1a5; margin: 20px 0;">
         <p><strong>Third-Party Provider:</strong> ClearScore (via Plaid)<br>
         <strong>Access Scope:</strong> AIS (Account Information Service)<br>
@@ -45,7 +45,7 @@ The **Consent Form** is the legal receipt for this digital handshake. It proves:
     </div>
 <div data-verify-line="ob-consent" style="border-top: 1px dashed #ccc; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #444; text-align: center;"
       title="Demo only: HSBC doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:hsbc.com/v/99228877 <span data-bracket="end" data-for="ob-consent">]</span>
+      verify:hsbc.com/v/99228877 <span verifiable-text="end" data-for="ob-consent">]</span>
     </div>
   </div>
 </div>

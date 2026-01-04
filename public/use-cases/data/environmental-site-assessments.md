@@ -22,7 +22,7 @@ Fraud happens when a seller "Deletes" the page of the report that mentions a bur
     <div style="font-size: 0.85em; color: #33691e;">PHASE I ENVIRONMENTAL SITE ASSESSMENT</div>
   </div>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
-    <p><strong>Property:</strong> <span data-bracket="start" data-for="esa">[</span>789 Industrial Way, Metropolis, State 90210<br>
+    <p><strong>Property:</strong> <span verifiable-text="start" data-for="esa">[</span>789 Industrial Way, Metropolis, State 90210<br>
     <strong>Client:</strong> Metropolis Property Developers, LLC</p>
 <div style="background: #fff; border: 1px solid #c5e1a5; padding: 15px; margin: 20px 0;">
       <p><strong>Assessment Standard:</strong> ASTM E1527-21</p>
@@ -43,7 +43,7 @@ Fraud happens when a seller "Deletes" the page of the report that mentions a bur
   </div>
 <div data-verify-line="esa" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Enviro-Consult doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:enviroconsult.com/reports/v/EC-P1-402 <span data-bracket="end" data-for="esa">]</span>
+      verify:enviroconsult.com/reports/v/EC-P1-402 <span verifiable-text="end" data-for="esa">]</span>
   </div>
 </div>
 

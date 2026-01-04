@@ -33,7 +33,7 @@ These trades happen by the thousands every second. An **Automated Rebalancing Co
       </div>
     </div>
 <div style="font-size: 0.95em; line-height: 1.5; color: #333;">
-      <p>Hello <span data-bracket="start" data-for="rebal">[</span><strong>Sarah Connor</strong>,</p>
+      <p>Hello <span verifiable-text="start" data-for="rebal">[</span><strong>Sarah Connor</strong>,</p>
       <p>Your portfolio was automatically rebalanced today to maintain your 9.0/10 risk score and capture tax-loss harvesting opportunities.</p>
 <table style="width: 100%; border-collapse: collapse; margin-top: 15px;">
         <tr style="border-bottom: 1px solid #eee; background: #f9f9f9;">
@@ -56,7 +56,7 @@ These trades happen by the thousands every second. An **Automated Rebalancing Co
     </div>
 <div data-verify-line="rebal" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Wealthfront doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:wealthfront.com/confirms/v/x9y8z7 <span data-bracket="end" data-for="rebal">]</span>
+      verify:wealthfront.com/confirms/v/x9y8z7 <span verifiable-text="end" data-for="rebal">]</span>
     </div>
   </div>
 </div>

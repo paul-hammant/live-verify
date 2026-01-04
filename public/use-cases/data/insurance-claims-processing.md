@@ -32,7 +32,7 @@ Verified EOBs are critical for stopping "Balance Billing"—when a hospital trie
 <div style="padding: 25px;">
     <div style="display: flex; justify-content: space-between; font-size: 0.9em; margin-bottom: 20px;">
       <div>
-        <strong>Patient:</strong> <span data-bracket="start" data-for="eob">[</span>SARAH J. DOE<br>
+        <strong>Patient:</strong> <span verifiable-text="start" data-for="eob">[</span>SARAH J. DOE<br>
         <strong>Provider:</strong> Mercy General Hospital
       </div>
       <div style="text-align: right;">
@@ -67,7 +67,7 @@ Verified EOBs are critical for stopping "Balance Billing"—when a hospital trie
     </p>
 <div data-verify-line="eob" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: UHC doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:uhc.com/claims/v/99228877 <span data-bracket="end" data-for="eob">]</span>
+      verify:uhc.com/claims/v/99228877 <span verifiable-text="end" data-for="eob">]</span>
     </div>
   </div>
 </div>
@@ -160,7 +160,7 @@ In lawsuits, these diaries are "Evidence Item #1." If an insurance company is ac
   </div>
 <div style="font-size: 0.85em; line-height: 1.4;">
     <p><strong>Claim #:</strong> 99228877-WC<br>
-    <strong>Adjuster:</strong> <span data-bracket="start" data-for="diary">[</span>MIKE MILLER (ID #992)</p>
+    <strong>Adjuster:</strong> <span verifiable-text="start" data-for="diary">[</span>MIKE MILLER (ID #992)</p>
 <div style="background: #f5f5f5; padding: 10px; margin: 15px 0; border: 1px solid #ddd;">
       <strong>RESERVE CHANGE #04</strong><br>
       Date: 15 MAR 2026 14:22:01<br>
@@ -173,7 +173,7 @@ In lawsuits, these diaries are "Evidence Item #1." If an insurance company is ac
   </div>
 <div data-verify-line="diary" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Insurer doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:ace-insurance.com/claims/v/99228877-R4 <span data-bracket="end" data-for="diary">]</span>
+      verify:ace-insurance.com/claims/v/99228877-R4 <span verifiable-text="end" data-for="diary">]</span>
   </div>
 </div>
 
@@ -262,7 +262,7 @@ Because they trigger large payments, they are targets for "PDF alteration." A di
   </div>
 <div style="font-size: 1em; line-height: 1.6; color: #000; text-align: justify;">
     <p>This Settlement Agreement and Release (the "Agreement") is entered into as of March 15, 2026, by and between:</p>
-<p><strong>RELEASOR:</strong> <span data-bracket="start" data-for="settle">[</span>SARAH J. DOE<br>
+<p><strong>RELEASOR:</strong> <span verifiable-text="start" data-for="settle">[</span>SARAH J. DOE<br>
     <strong>RELEASEE:</strong> ACME INDEMNITY INSURANCE CO.</p>
 <p>In consideration of the sum of <strong>TWENTY-FIVE THOUSAND DOLLARS ($25,000.00)</strong>, the Releasor hereby releases and forever discharges the Releasee from any and all claims arising out of the incident occurring on or about June 1, 2025.</p>
 <p>This Agreement represents a full and final settlement of the disputed claims. No further liability exists on the part of the Releasee.</p>
@@ -279,7 +279,7 @@ Because they trigger large payments, they are targets for "PDF alteration." A di
   </div>
 <div data-verify-line="settle" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Insurer doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:acme-insurance.com/legal/v/DOE-9922 <span data-bracket="end" data-for="settle">]</span>
+      verify:acme-insurance.com/legal/v/DOE-9922 <span verifiable-text="end" data-for="settle">]</span>
   </div>
 </div>
 

@@ -25,7 +25,7 @@ Doctors in the ER need to see this *immediately* to know whether to resuscitate.
   </div>
 <div style="font-size: 0.95em; line-height: 1.5; color: #333;">
     <p><strong>1. POWER OF ATTORNEY FOR HEALTH CARE</strong></p>
-    <p>I, <span data-bracket="start" data-for="directive">[</span><strong>ELEANOR RIGBY</strong> (DOB: 02/14/1950), designate the following individual as my agent to make health care decisions for me:</p>
+    <p>I, <span verifiable-text="start" data-for="directive">[</span><strong>ELEANOR RIGBY</strong> (DOB: 02/14/1950), designate the following individual as my agent to make health care decisions for me:</p>
 <p style="margin-left: 20px;"><strong>Agent:</strong> FATHER MCKENZIE<br>
     <strong>Phone:</strong> (555) 867-5309<br>
     <strong>Authority:</strong> Effective immediately upon my incapacity.</p>
@@ -50,7 +50,7 @@ Doctors in the ER need to see this *immediately* to know whether to resuscitate.
   </div>
 <div data-verify-line="directive" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Registry doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:uslivingwillregistry.com/v/x9y8z7 <span data-bracket="end" data-for="directive">]</span>
+      verify:uslivingwillregistry.com/v/x9y8z7 <span verifiable-text="end" data-for="directive">]</span>
   </div>
 </div>
 

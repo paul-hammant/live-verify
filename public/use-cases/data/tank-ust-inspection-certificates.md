@@ -25,7 +25,7 @@ These documents are high-stakes environmental proofs. Fraud is common: owners of
 <div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
-        <strong>Facility:</strong> <span data-bracket="start" data-for="ust">[</span>MAIN STREET FUEL CENTER<br>
+        <strong>Facility:</strong> <span verifiable-text="start" data-for="ust">[</span>MAIN STREET FUEL CENTER<br>
         <strong>EPA Facility ID:</strong> 99228877-XJ<br>
         <strong>Address:</strong> 123 Main St, Springfield, USA
       </div>
@@ -63,7 +63,7 @@ These documents are high-stakes environmental proofs. Fraud is common: owners of
 <div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #2e7d32; text-align: center;">
     <div data-verify-line="ust" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: EPA doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:epa.gov/ust/v/99228877XJ <span data-bracket="end" data-for="ust">]</span>
+      verify:epa.gov/ust/v/99228877XJ <span verifiable-text="end" data-for="ust">]</span>
     </div>
     <div style="font-size: 0.7em; color: #666; margin-top: 10px; font-style: italic;">
       Scan to verify leak detection logs, insurance coverage, and inspector authority.

@@ -23,7 +23,7 @@ These documents are "Financial Anchors." Lenders use them to calculate "Escrow R
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px;">
       <div>
         <strong>Property Index Number (PIN):</strong><br>
-        <span data-bracket="start" data-for="tax-assess">[</span>14-42-992-288-0000
+        <span verifiable-text="start" data-for="tax-assess">[</span>14-42-992-288-0000
       </div>
       <div style="text-align: right;">
         <strong>Tax Year:</strong> 2025<br>
@@ -51,7 +51,7 @@ These documents are "Financial Anchors." Lenders use them to calculate "Escrow R
 <div style="margin-top: 40px; border-top: 1px dashed #999; padding-top: 15px; text-align: center;">
     <div data-verify-line="tax-assess" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: County assessors don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:springfieldassessor.gov/v/PIN1442992288 <span data-bracket="end" data-for="tax-assess">]</span>
+      verify:springfieldassessor.gov/v/PIN1442992288 <span verifiable-text="end" data-for="tax-assess">]</span>
     </div>
     <div style="font-size: 0.7em; color: #666; margin-top: 10px;">
       Scan to verify market valuation integrity, parcel classification, and exemption status.

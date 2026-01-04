@@ -25,7 +25,7 @@ These cards are the "Ticket to the Ballot Box." Fraud is high-stakes: partisan a
 <div style="padding: 20px; background: #fff;">
     <div style="border-bottom: 1px solid #eee; padding-bottom: 10px; margin-bottom: 15px;">
       <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Registered Voter</div>
-      <div style="font-size: 1.2em; font-weight: bold; color: #333;"><span data-bracket="start" data-for="vote">[</span>SARAH JANE SMITH</div>
+      <div style="font-size: 1.2em; font-weight: bold; color: #333;"><span verifiable-text="start" data-for="vote">[</span>SARAH JANE SMITH</div>
 <div style="font-size: 0.9em; color: #333; margin-top: 5px;">
         123 MAPLE STREET, SPRINGFIELD, IL 62704
       </div>
@@ -48,7 +48,7 @@ These cards are the "Ticket to the Ballot Box." Fraud is high-stakes: partisan a
 <div style="padding: 15px 20px 20px 20px; background: #fff; border-top: 1px dashed #999; text-align: center;">
     <div data-verify-line="vote" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #002d62; font-weight: bold;"
       title="Demo only: Election boards don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:elections.il.gov/v/99228877 <span data-bracket="end" data-for="vote">]</span>
+      verify:elections.il.gov/v/99228877 <span verifiable-text="end" data-for="vote">]</span>
     </div>
     <div style="font-size: 0.65em; color: #999; margin-top: 8px; font-style: italic;">
       Scan to verify registration status, active precinct, and citizenship vetting status.

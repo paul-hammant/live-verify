@@ -23,7 +23,7 @@ You need this verified proof for a **"Status Match"**—where a rival airline gi
       <div style="font-size: 0.8em; opacity: 0.8;">AAdvantage&reg; Executive Statement</div>
     </div>
     <div style="text-align: right;">
-      <div style="font-size: 0.8em;">Member #: <span data-bracket="start" data-for="loyalty">[</span>99228877</div>
+      <div style="font-size: 0.8em;">Member #: <span verifiable-text="start" data-for="loyalty">[</span>99228877</div>
     </div>
   </div>
 <div style="padding: 25px;">
@@ -56,7 +56,7 @@ You need this verified proof for a **"Status Match"**—where a rival airline gi
     </div>
 <div data-verify-line="loyalty" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Airline doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:aa.com/loyalty/v/99228877 <span data-bracket="end" data-for="loyalty">]</span>
+      verify:aa.com/loyalty/v/99228877 <span verifiable-text="end" data-for="loyalty">]</span>
     </div>
   </div>
 </div>

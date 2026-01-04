@@ -24,7 +24,7 @@ Fraud is common: drivers often edit a $400 payout to read $4,000 to trick a land
 <div style="padding: 30px;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px;">
       <div>
-        <div style="font-size: 1.1em; font-weight: bold; color: #333;"><span data-bracket="start" data-for="gig">[</span>SARAH JANE SMITH</div>
+        <div style="font-size: 1.1em; font-weight: bold; color: #333;"><span verifiable-text="start" data-for="gig">[</span>SARAH JANE SMITH</div>
         <div style="font-size: 0.9em; color: #666;">Partner ID: 99228877</div>
       </div>
       <div style="text-align: right;">
@@ -56,7 +56,7 @@ Fraud is common: drivers often edit a $400 payout to read $4,000 to trick a land
     </div>
 <div data-verify-line="gig" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Uber doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:uber.com/payouts/v/99228877 <span data-bracket="end" data-for="gig">]</span>
+      verify:uber.com/payouts/v/99228877 <span verifiable-text="end" data-for="gig">]</span>
     </div>
   </div>
 </div>

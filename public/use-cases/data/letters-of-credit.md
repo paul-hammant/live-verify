@@ -15,7 +15,7 @@ furtherDerivations: 1
     --------------------------------
   </div>
 <div style="font-size: 0.85em; line-height: 1.4;">
-    <p><strong>L/C Number:</strong> <span data-bracket="start" data-for="lc">[</span>HSBC-LC-99228877<br>
+    <p><strong>L/C Number:</strong> <span verifiable-text="start" data-for="lc">[</span>HSBC-LC-99228877<br>
     <strong>Date of Issue:</strong> 15 MAR 2026<br>
     <strong>Expiry Date:</strong> 15 SEP 2026</p>
 <div style="display: flex; margin-bottom: 15px;">
@@ -39,7 +39,7 @@ furtherDerivations: 1
 <p style="font-size: 0.8em;">Available with any bank by negotiation. Subject to UCP 600.</p>
 <div data-verify-line="lc" style="border-top: 1px dashed #999; margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #555; text-align: center;"
       title="Demo only: HSBC doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:hsbc.com/trade/v/LC99228877 <span data-bracket="end" data-for="lc">]</span>
+      verify:hsbc.com/trade/v/LC99228877 <span verifiable-text="end" data-for="lc">]</span>
     </div>
   </div>
 </div>

@@ -26,7 +26,7 @@ It is the "Lifeblood of Public Works." If a contractor goes bankrupt halfway thr
   </div>
 <h2 style="text-align: center; font-size: 1.4em; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 30px;">Performance and Payment Bond</h2>
 <div style="font-size: 1em; line-height: 1.6; color: #000; text-align: justify;">
-    <p>KNOW ALL MEN BY THESE PRESENTS, that <span data-bracket="start" data-for="surety">[</span><strong>SKYLINE BUILDERS GROUP, LLC</strong> (the "Principal") and <strong>TRAVELERS CASUALTY AND SURETY COMPANY</strong> (the "Surety") are held and firmly bound unto the <strong>CITY OF AUSTIN</strong> (the "Obligee") in the sum of:</p>
+    <p>KNOW ALL MEN BY THESE PRESENTS, that <span verifiable-text="start" data-for="surety">[</span><strong>SKYLINE BUILDERS GROUP, LLC</strong> (the "Principal") and <strong>TRAVELERS CASUALTY AND SURETY COMPANY</strong> (the "Surety") are held and firmly bound unto the <strong>CITY OF AUSTIN</strong> (the "Obligee") in the sum of:</p>
 <div style="margin: 20px auto; width: 90%; border: 2px solid #000; padding: 15px; text-align: center; background: #f9f9f9; font-weight: bold; font-size: 1.1em;">
       TEN MILLION FIVE HUNDRED THOUSAND DOLLARS ($10,500,000.00)
     </div>
@@ -42,7 +42,7 @@ It is the "Lifeblood of Public Works." If a contractor goes bankrupt halfway thr
   </div>
 <div data-verify-line="surety" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Travelers doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:travelers.com/surety/v/TR99228877 <span data-bracket="end" data-for="surety">]</span>
+      verify:travelers.com/surety/v/TR99228877 <span verifiable-text="end" data-for="surety">]</span>
   </div>
 </div>
 

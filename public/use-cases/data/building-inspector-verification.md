@@ -30,7 +30,7 @@ OCR-to-Hash allows a homeowner to scan the badge at the door and see a green "AC
     </div>
     <div style="flex-grow: 1;">
       <h4 style="margin: 0; color: #1a237e;">OFFICIAL INSPECTOR</h4>
-      <div style="font-size: 1.1em; font-weight: bold; margin: 5px 0;"><span data-bracket="start" data-for="inspect">[</span>RAYMOND STANTZ</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin: 5px 0;"><span verifiable-text="start" data-for="inspect">[</span>RAYMOND STANTZ</div>
       <div style="font-size: 0.9em; color: #333; line-height: 1.4;">
         <strong>Badge #:</strong> 992288<br>
         <strong>Division:</strong> Electrical Safety<br>
@@ -44,7 +44,7 @@ OCR-to-Hash allows a homeowner to scan the badge at the door and see a green "AC
     </p>
     <div data-verify-line="inspect" style="border-top: 1px dashed #999; margin-top: 10px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: City of Chicago doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:cityofchicago.org/inspect/v/992288 <span data-bracket="end" data-for="inspect">]</span>
+      verify:cityofchicago.org/inspect/v/992288 <span verifiable-text="end" data-for="inspect">]</span>
     </div>
   </div>
 </div>

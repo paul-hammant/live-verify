@@ -26,7 +26,7 @@ In pharmaceutical research, "Consent Fraud" is a serious crime. Sites sometimes 
     <p><strong>Trial Title:</strong> Phase III Study of Compound X in Metastatic Melanoma<br>
     <strong>NCT Number:</strong> NCT09988776<br>
     <strong>Protocol ID:</strong> MC-2026-0492</p>
-<p>I, <span data-bracket="start" data-for="clinic">[</span><strong>PARTICIPANT ID: 9988-SJ</strong>, have been informed of the risks and benefits of this study. I voluntarily agree to participate and understand that I may withdraw at any time.</p>
+<p>I, <span verifiable-text="start" data-for="clinic">[</span><strong>PARTICIPANT ID: 9988-SJ</strong>, have been informed of the risks and benefits of this study. I voluntarily agree to participate and understand that I may withdraw at any time.</p>
 <div style="margin: 20px 0; border: 1px solid #004d40; padding: 15px; background: #f1f8e9;">
       <strong>CONSENT SIGNATURE:</strong><br>
       Date: March 15, 2026<br>
@@ -35,7 +35,7 @@ In pharmaceutical research, "Consent Fraud" is a serious crime. Sites sometimes 
   </div>
 <div data-verify-line="clinic" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Mayo Clinic doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:mayoclinic.org/research/v/NCT09988776 <span data-bracket="end" data-for="clinic">]</span>
+      verify:mayoclinic.org/research/v/NCT09988776 <span verifiable-text="end" data-for="clinic">]</span>
   </div>
 </div>
 

@@ -27,7 +27,7 @@ Because it grants broad rights, Green Cards are the #1 target for **High-End For
       <div style="width: 110px; height: 140px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #777; font-size: 0.7em; text-align: center;">[HOLDER PHOTO]</div>
     </div>
     <div style="flex-grow: 1; font-size: 0.85em; line-height: 1.4;">
-      <div style="font-weight: bold; font-size: 1.1em; margin-bottom: 5px; color: #333;"><span data-bracket="start" data-for="pr">[</span>DOE, JOHN JACOB</div>
+      <div style="font-weight: bold; font-size: 1.1em; margin-bottom: 5px; color: #333;"><span verifiable-text="start" data-for="pr">[</span>DOE, JOHN JACOB</div>
       <div style="color: #555;">
         <strong>USCIS #:</strong> 992-288-776<br>
         <strong>Category:</strong> RE8 (Refugee)<br>
@@ -40,7 +40,7 @@ Because it grants broad rights, Green Cards are the #1 target for **High-End For
 <div style="padding: 0 20px 20px 20px; text-align: center;">
     <div data-verify-line="pr" style="border-top: 1px dashed #999; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #002d62; font-weight: bold;"
       title="Demo only: USCIS doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:uscis.gov/v/pr/992288776 <span data-bracket="end" data-for="pr">]</span>
+      verify:uscis.gov/v/pr/992288776 <span verifiable-text="end" data-for="pr">]</span>
     </div>
     <div style="font-size: 0.6em; color: #888; margin-top: 10px; font-style: italic;">
       Scan to verify residency status and work authorization. Responses include authoritative photo return.

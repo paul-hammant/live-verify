@@ -22,7 +22,7 @@ These documents are the "Proof of Solvency" for the supply chain. Large retailer
     </div>
     <div style="text-align: right;">
       <div style="font-weight: bold; font-size: 0.9em;">POLICY SUMMARY</div>
-      <div style="font-size: 0.7em;">Ref: <span data-bracket="start" data-for="liab">[</span>PL-99228877</div>
+      <div style="font-size: 0.7em;">Ref: <span verifiable-text="start" data-for="liab">[</span>PL-99228877</div>
     </div>
   </div>
 <div style="padding: 25px;">
@@ -53,7 +53,7 @@ These documents are the "Proof of Solvency" for the supply chain. Large retailer
 <div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #bbb; text-align: center;">
     <div data-verify-line="liab" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: Commercial insurers don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:chubb.com/liab/v/PL99228877 <span data-bracket="end" data-for="liab">]</span>
+      verify:chubb.com/liab/v/PL99228877 <span verifiable-text="end" data-for="liab">]</span>
     </div>
     <div style="font-size: 0.7em; color: #999; margin-top: 10px;">
       Scan to verify coverage limits, retroactive dates, and the specific list of insured products.

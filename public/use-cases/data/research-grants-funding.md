@@ -22,7 +22,7 @@ These documents are the "Proof of Prestige." Researchers use them to secure tenu
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px;">
       <div>
-        <strong>Award Number:</strong> <span data-bracket="start" data-for="grant">[</span>NSF-2026-992288<br>
+        <strong>Award Number:</strong> <span verifiable-text="start" data-for="grant">[</span>NSF-2026-992288<br>
         <strong>Effective Date:</strong> March 15, 2026
       </div>
       <div style="text-align: right;">
@@ -44,7 +44,7 @@ These documents are the "Proof of Prestige." Researchers use them to secure tenu
   </div>
 <div data-verify-line="grant" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Funding agencies don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:nsf.gov/awards/v/2026992288 <span data-bracket="end" data-for="grant">]</span>
+      verify:nsf.gov/awards/v/2026992288 <span verifiable-text="end" data-for="grant">]</span>
   </div>
 </div>
 

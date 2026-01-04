@@ -28,7 +28,7 @@ These digital-first documents are the "Proof of Wealth" for a new generation of 
 <div style="padding: 25px;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 30px;">
       <div style="font-size: 0.9em; line-height: 1.5; color: #333;">
-        <strong>Client:</strong> <span data-bracket="start" data-for="robo">[</span>SARAH JANE SMITH<br>
+        <strong>Client:</strong> <span verifiable-text="start" data-for="robo">[</span>SARAH JANE SMITH<br>
         <strong>Account:</strong> Individual Taxable (...9922)<br>
         <strong>Advisor:</strong> Betterment LLC (CRD #149117)
       </div>
@@ -52,7 +52,7 @@ These digital-first documents are the "Proof of Wealth" for a new generation of 
 <div style="padding: 20px; background: #fff; border-top: 1px dashed #999; text-align: center;">
     <div data-verify-line="robo" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Robo-advisors don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:betterment.com/v/ACCT9922-SJS <span data-bracket="end" data-for="robo">]</span>
+      verify:betterment.com/v/ACCT9922-SJS <span verifiable-text="end" data-for="robo">]</span>
     </div>
     <div style="font-size: 0.7em; color: #999; margin-top: 10px;">
       Scan to verify net account value, risk-score settings, and tax-loss harvesting status.

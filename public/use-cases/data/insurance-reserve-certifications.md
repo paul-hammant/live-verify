@@ -18,7 +18,7 @@ furtherDerivations: 3
   </div>
 <h3 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; color: #1a237e; border-bottom: 2px solid #1a237e; padding-bottom: 10px;">Statement of Actuarial Opinion (SAO)</h3>
 <div style="font-size: 0.95em; line-height: 1.6; text-align: justify; color: #333; margin-top: 20px;">
-    <p>I, <span data-bracket="start" data-for="life-res">[</span><strong>Robert Miller, FSA, MAAA</strong>, Appointed Actuary for Prudential, do hereby certify that the aggregate reserves for the <strong>Individual Life Insurance Portfolio</strong> as of Dec 31, 2025:</p>
+    <p>I, <span verifiable-text="start" data-for="life-res">[</span><strong>Robert Miller, FSA, MAAA</strong>, Appointed Actuary for Prudential, do hereby certify that the aggregate reserves for the <strong>Individual Life Insurance Portfolio</strong> as of Dec 31, 2025:</p>
 <ul>
       <li>Are calculated in accordance with the Valuation Manual (VM-20).</li>
       <li>Meet the requirements of the insurance laws of the State of New Jersey.</li>
@@ -34,7 +34,7 @@ furtherDerivations: 3
   </div>
 <div data-verify-line="life-res" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Prudential doesn't yet offer verification\nendpoints, so this is illustrative">
-      verify:prudential.com/actuarial/v/RES202609 <span data-bracket="end" data-for="life-res">]</span>
+      verify:prudential.com/actuarial/v/RES202609 <span verifiable-text="end" data-for="life-res">]</span>
   </div>
 </div>
 
@@ -118,7 +118,7 @@ _[Content merged from: ltc-insurance-reserve-certifications]_
   </div>
 <h3 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; color: #1a237e; border-bottom: 2px solid #1a237e; padding-bottom: 10px;">Statement of Actuarial Opinion (LTC)</h3>
 <div style="font-size: 0.95em; line-height: 1.6; text-align: justify; color: #333; margin-top: 20px;">
-    <p>I, <span data-bracket="start" data-for="ltc-res">[</span><strong>Robert Miller, FSA, MAAA</strong>, do hereby certify that the statutory reserves for the <strong>LTC Block IV Portfolio</strong> as of Dec 31, 2025:</p>
+    <p>I, <span verifiable-text="start" data-for="ltc-res">[</span><strong>Robert Miller, FSA, MAAA</strong>, do hereby certify that the statutory reserves for the <strong>LTC Block IV Portfolio</strong> as of Dec 31, 2025:</p>
 <ul>
       <li>Are adequate based on current morbidity and lapse rate assumptions.</li>
       <li>Incorporate margin for adverse deviation in interest rates.</li>
@@ -134,7 +134,7 @@ _[Content merged from: ltc-insurance-reserve-certifications]_
   </div>
 <div data-verify-line="ltc-res" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Genworth doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:genworth.com/actuarial/v/LTCRES2026 <span data-bracket="end" data-for="ltc-res">]</span>
+      verify:genworth.com/actuarial/v/LTCRES2026 <span verifiable-text="end" data-for="ltc-res">]</span>
   </div>
 </div>
 
@@ -222,7 +222,7 @@ These documents are the "Proof of Solvency." Fraud is high-stakes in **M&A (Merg
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px;">
       <div>
-        <strong>Insured:</strong> <span data-bracket="start" data-for="reserve">[</span>GOLIATH LOGISTICS CORP.<br>
+        <strong>Insured:</strong> <span verifiable-text="start" data-for="reserve">[</span>GOLIATH LOGISTICS CORP.<br>
         <strong>Policy #:</strong> WC-99228877-Z
       </div>
       <div style="text-align: right;">
@@ -261,7 +261,7 @@ These documents are the "Proof of Solvency." Fraud is high-stakes in **M&A (Merg
 <div style="padding: 20px; background: #fffbe6; border: 1px dashed #999; margin-top: 30px; text-align: center;">
     <div data-verify-line="reserve" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: Actuarial firms don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:thehartford.com/v/RES99228877 <span data-bracket="end" data-for="reserve">]</span>
+      verify:thehartford.com/v/RES99228877 <span verifiable-text="end" data-for="reserve">]</span>
     </div>
     <div style="font-size: 0.7em; color: #666; margin-top: 8px;">
       Scan to verify reserve integrity, actuarial authority, and view subsequent 'Loss Development' updates.

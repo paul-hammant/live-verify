@@ -14,7 +14,7 @@ furtherDerivations: 1
     <div style="font-size: 0.85em; color: #555; margin-top: 5px;">Medical Device Regulation (EU) 2017/745</div>
   </div>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
-    <p><strong>Certificate No:</strong> <span data-bracket="start" data-for="med-cert">[</span>BSI-MDR-987654</p>
+    <p><strong>Certificate No:</strong> <span verifiable-text="start" data-for="med-cert">[</span>BSI-MDR-987654</p>
     <p><strong>Manufacturer:</strong> OmniHealth Corp, Dublin, Ireland</p>
 <div style="background: #fff; border: 1px solid #b2ebf2; padding: 15px; margin: 20px 0;">
       <strong>Device:</strong> Advanced Surgical Sutures (Class IIa)<br>
@@ -34,7 +34,7 @@ furtherDerivations: 1
   </div>
 <div data-verify-line="med-cert" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: BSI doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:certs.bsigroup.com/mdr/v/987654 <span data-bracket="end" data-for="med-cert">]</span>
+      verify:certs.bsigroup.com/mdr/v/987654 <span verifiable-text="end" data-for="med-cert">]</span>
   </div>
 </div>
 

@@ -21,7 +21,7 @@ furtherDerivations: 1
 <div style="font-size: 1em; line-height: 1.6; color: #333;">
       <p>This document confirms that all-risk coverage is in effect for the following inventory:</p>
 <div style="background: #fdfcf0; border: 1px solid #d4af37; padding: 15px; margin: 20px 0;">
-        <strong>Insured:</strong> <span data-bracket="start" data-for="jewel">[</span>Imperial Diamonds & Fine Gems, LLC<br>
+        <strong>Insured:</strong> <span verifiable-text="start" data-for="jewel">[</span>Imperial Diamonds & Fine Gems, LLC<br>
         <strong>Location:</strong> 42 Diamond Way, New York, NY
       </div>
 <p><strong>Stock Limit (At Premises):</strong> $ 15,000,000.00<br>
@@ -34,7 +34,7 @@ furtherDerivations: 1
     </div>
 <div data-verify-line="jewel" style="border-top: 1px dashed #d4af37; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Berkley doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:berkleyassetpro.com/v/IDG992288 <span data-bracket="end" data-for="jewel">]</span>
+      verify:berkleyassetpro.com/v/IDG992288 <span verifiable-text="end" data-for="jewel">]</span>
     </div>
   </div>
 </div>

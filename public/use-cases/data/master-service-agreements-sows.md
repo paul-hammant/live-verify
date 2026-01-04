@@ -15,7 +15,7 @@ furtherDerivations: 1
   </div>
 <div style="font-size: 1em; line-height: 1.6; color: #333; text-align: justify;">
     <p>This Master Service Agreement (the "Agreement") is entered into as of March 15, 2026, by and between:</p>
-<p><strong>CLIENT:</strong> <span data-bracket="start" data-for="msa">[</span>Globochem Worldwide, Inc.<br>
+<p><strong>CLIENT:</strong> <span verifiable-text="start" data-for="msa">[</span>Globochem Worldwide, Inc.<br>
     <strong>PROVIDER:</strong> Apex Cloud Solutions, LLC</p>
 <div style="margin: 20px 0; background: #f9f9f9; padding: 15px; border: 1px solid #eee;">
       <p><strong>Section 4.2: Liability Limit:</strong> Provider's total aggregate liability under this Agreement shall not exceed <strong>$ 1,000,000.00</strong>.</p>
@@ -33,7 +33,7 @@ furtherDerivations: 1
   </div>
 <div data-verify-line="msa" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Legal department doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:apexcloud.com/legal/v/GC-MSA-2026 <span data-bracket="end" data-for="msa">]</span>
+      verify:apexcloud.com/legal/v/GC-MSA-2026 <span verifiable-text="end" data-for="msa">]</span>
   </div>
 </div>
 

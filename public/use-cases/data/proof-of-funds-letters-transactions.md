@@ -21,7 +21,7 @@ Because a POF is the difference between an offer being accepted or rejected, it 
       <div style="font-size: 0.8em; color: #666; text-transform: uppercase;">Private Client Services</div>
     </div>
     <div style="text-align: right; font-size: 0.85em; color: #666;">
-      Ref: <span data-bracket="start" data-for="pof">[</span>POF-99228877-XJ<br>
+      Ref: <span verifiable-text="start" data-for="pof">[</span>POF-99228877-XJ<br>
       March 15, 2026
     </div>
   </div>
@@ -49,7 +49,7 @@ Because a POF is the difference between an offer being accepted or rejected, it 
 <div style="padding: 20px; background: #eee; border-radius: 4px; margin-top: 30px; text-align: center;">
     <div data-verify-line="pof" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Banks don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:chase.com/v/POF99228877 <span data-bracket="end" data-for="pof">]</span>
+      verify:chase.com/v/POF99228877 <span verifiable-text="end" data-for="pof">]</span>
     </div>
     <div style="font-size: 0.7em; color: #777; margin-top: 10px; font-style: italic;">
       Scan to verify liquid balance authenticity and account holder standing. Point-in-time record only.

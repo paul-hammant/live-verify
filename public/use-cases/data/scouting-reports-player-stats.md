@@ -30,7 +30,7 @@ These documents are the "Resumes" of the sports world. They determine who gets a
       <div style="width: 100px; height: 120px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #999; font-size: 0.7em; text-align: center; margin-right: 20px;">[PLAYER PHOTO]</div>
       <div style="flex-grow: 1;">
         <div style="font-size: 0.8em; color: #888; text-transform: uppercase;">Athlete Name</div>
-        <div style="font-size: 1.4em; font-weight: bold; color: #000;"><span data-bracket="start" data-for="scout">[</span>SARAH "THE JET" SMITH</div>
+        <div style="font-size: 1.4em; font-weight: bold; color: #000;"><span verifiable-text="start" data-for="scout">[</span>SARAH "THE JET" SMITH</div>
         <div style="font-size: 0.9em; margin-top: 5px;"><strong>Pos:</strong> Striker (Soccer) • <strong>Class:</strong> 2026</div>
         <div style="font-size: 0.9em;"><strong>Org:</strong> Unseen University Academy</div>
       </div>
@@ -59,7 +59,7 @@ These documents are the "Resumes" of the sports world. They determine who gets a
 <div style="padding: 20px; background: #fff; border-top: 1px solid #eee; text-align: center;">
     <div data-verify-line="scout" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Scouting bureaus don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:nationscout.com/v/SMITH-992288 <span data-bracket="end" data-for="scout">]</span>
+      verify:nationscout.com/v/SMITH-992288 <span verifiable-text="end" data-for="scout">]</span>
     </div>
     <div style="font-size: 0.7em; color: #999; margin-top: 10px;">
       Scan to verify athletic performance data and scout certification status.

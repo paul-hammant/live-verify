@@ -31,7 +31,7 @@ The **Retirement Certificate** is the only proof that the company actually did w
 <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
       <p>This document certifies the permanent retirement of carbon units from the Verra Registry on behalf of:</p>
 <p style="text-align: center; font-size: 1.2em; font-weight: bold; margin: 15px 0;">
-        <span data-bracket="start" data-for="carbon">[</span>MICROSOFT CORPORATION
+        <span verifiable-text="start" data-for="carbon">[</span>MICROSOFT CORPORATION
       </p>
 <div style="background: #f1f8e9; border: 1px solid #c5e1a5; padding: 15px; margin: 15px 0;">
         <table style="width: 100%; font-size: 0.95em;">
@@ -53,7 +53,7 @@ The **Retirement Certificate** is the only proof that the company actually did w
     </div>
 <div data-verify-line="carbon" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Verra doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:verra.org/registry/v/9982-2026 <span data-bracket="end" data-for="carbon">]</span>
+      verify:verra.org/registry/v/9982-2026 <span verifiable-text="end" data-for="carbon">]</span>
     </div>
   </div>
 </div>

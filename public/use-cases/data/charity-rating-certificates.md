@@ -28,7 +28,7 @@ Because a higher rating leads directly to more donations, some charities "Inflat
     </div>
 <div style="font-size: 1.1em; line-height: 1.6; color: #333; margin-bottom: 25px;">
       This is to certify that<br>
-      <span data-bracket="start" data-for="rating">[</span><strong>THE HUMAN FUND</strong><br>
+      <span verifiable-text="start" data-for="rating">[</span><strong>THE HUMAN FUND</strong><br>
       has achieved our highest rating for fiscal responsibility, transparency, and impact.
     </div>
 <div style="display: flex; justify-content: space-around; font-size: 0.9em; color: #555; background: #f9f9f9; padding: 15px; border-radius: 6px; margin-bottom: 20px;">
@@ -48,7 +48,7 @@ Because a higher rating leads directly to more donations, some charities "Inflat
     </div>
 <div data-verify-line="rating" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Charity Navigator doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:charitynavigator.org/v/HUMAN-FUND-99 <span data-bracket="end" data-for="rating">]</span>
+      verify:charitynavigator.org/v/HUMAN-FUND-99 <span verifiable-text="end" data-for="rating">]</span>
     </div>
   </div>
 </div>

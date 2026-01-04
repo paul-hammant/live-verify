@@ -22,7 +22,7 @@ Because these papers are essentially vouchers for cash, they are high-stakes tar
 <div style="padding: 20px; background: #fffbe6;">
     <div style="text-align: center; margin-bottom: 20px;">
       <div style="font-size: 0.7em; color: #666; text-transform: uppercase;">Tracking Number (MTCN)</div>
-      <div style="font-size: 1.8em; font-weight: bold; color: #000; letter-spacing: 2px;"><span data-bracket="start" data-for="remit">[</span>992-288-7766</div>
+      <div style="font-size: 1.8em; font-weight: bold; color: #000; letter-spacing: 2px;"><span verifiable-text="start" data-for="remit">[</span>992-288-7766</div>
     </div>
 <div style="font-size: 0.9em; line-height: 1.5; color: #333;">
       <p><strong>Sender:</strong> JOHN JACOB DOE (USA)<br>
@@ -46,7 +46,7 @@ Because these papers are essentially vouchers for cash, they are high-stakes tar
 <div style="padding: 20px; background: #fff; text-align: center;">
     <div data-verify-line="remit" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Remittance firms don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:wu.com/v/MTCN9922887766 <span data-bracket="end" data-for="remit">]</span>
+      verify:wu.com/v/MTCN9922887766 <span verifiable-text="end" data-for="remit">]</span>
     </div>
     <div style="font-size: 0.65em; color: #999; margin-top: 10px; font-style: italic;">
       Scan to verify transfer status and payment integrity. Protect your MTCN like cash.

@@ -24,7 +24,7 @@ OCR-to-hash binds the **Grantor/Grantee names and the Legal Description** to the
       <h1 style="margin: 0; font-size: 1.8em; text-transform: uppercase; letter-spacing: 2px;">Statutory Warranty Deed</h1>
     </div>
 <div style="font-size: 1.1em; line-height: 1.6; color: #000;">
-      <p>THE GRANTOR, <span data-bracket="start" data-for="deed">[</span><strong>MARIA G. RODRIGUEZ</strong>, a single person, for and in consideration of Ten Dollars ($10.00) and other good and valuable consideration in hand paid, conveys and warrants to <strong>ROBERT J. MILLER</strong>, the following described real estate:</p>
+      <p>THE GRANTOR, <span verifiable-text="start" data-for="deed">[</span><strong>MARIA G. RODRIGUEZ</strong>, a single person, for and in consideration of Ten Dollars ($10.00) and other good and valuable consideration in hand paid, conveys and warrants to <strong>ROBERT J. MILLER</strong>, the following described real estate:</p>
 <div style="margin: 20px 0; padding-left: 20px; font-style: italic; border-left: 3px solid #eee;">
         Lot 42, Block 7 of Skyline Heights Addition, according to the plat thereof recorded in Volume 12 of Plats, Page 88, records of King County, Washington.<br>
         Tax Parcel ID: 9922-8877-00
@@ -41,7 +41,7 @@ OCR-to-hash binds the **Grantor/Grantee names and the Legal Description** to the
     </div>
 <div data-verify-line="deed" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: King County doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:kingcounty.gov/recorder/v/20260316000442 <span data-bracket="end" data-for="deed">]</span>
+      verify:kingcounty.gov/recorder/v/20260316000442 <span verifiable-text="end" data-for="deed">]</span>
     </div>
   </div>
 </div>

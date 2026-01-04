@@ -22,7 +22,7 @@ The problem is that "compliance fatigue" leads to massive fraud. Shady employers
     </div>
 <div style="margin: 30px 0;">
       <div style="font-size: 1.1em;">This is to certify that</div>
-      <div style="font-size: 1.8em; font-weight: bold; margin: 10px 0; color: #333;"><span data-bracket="start" data-for="train">[</span>ROBERT J. MILLER</div>
+      <div style="font-size: 1.8em; font-weight: bold; margin: 10px 0; color: #333;"><span verifiable-text="start" data-for="train">[</span>ROBERT J. MILLER</div>
       <div style="font-size: 1.1em;">has successfully completed the prescribed course of study in</div>
       <div style="font-size: 1.4em; font-weight: bold; margin: 15px 0; color: #1a237e;">OSHA HAZARDOUS MATERIALS (HAZMAT) OPERATIONS</div>
     </div>
@@ -42,7 +42,7 @@ The problem is that "compliance fatigue" leads to massive fraud. Shady employers
     </div>
 <div data-verify-line="train" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Training providers don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:nsc.org/v/train/RM992288-HM <span data-bracket="end" data-for="train">]</span>
+      verify:nsc.org/v/train/RM992288-HM <span verifiable-text="end" data-for="train">]</span>
     </div>
   </div>
 </div>

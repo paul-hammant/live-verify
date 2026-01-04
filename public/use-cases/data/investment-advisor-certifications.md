@@ -22,7 +22,7 @@ furtherDerivations: 1
     </div>
     <div style="flex-grow: 1;">
       <h3 style="margin: 0; color: #002d62;">REPRESENTATIVE CREDENTIAL</h3>
-      <div style="font-size: 1.1em; font-weight: bold; margin: 5px 0;"><span data-bracket="start" data-for="advisor">[</span>SARAH J. MILLER</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin: 5px 0;"><span verifiable-text="start" data-for="advisor">[</span>SARAH J. MILLER</div>
 <div style="font-size: 0.9em; color: #333; line-height: 1.4;">
         <strong>Individual CRD #:</strong> 9922887<br>
         <strong>Firm:</strong> Miller Wealth Management, LLC<br>
@@ -36,7 +36,7 @@ furtherDerivations: 1
     </div>
     <div data-verify-line="advisor" style="border-top: 1px dashed #999; margin-top: 15px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: SEC/FINRA doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:adviserinfo.sec.gov/v/9922887 <span data-bracket="end" data-for="advisor">]</span>
+      verify:adviserinfo.sec.gov/v/9922887 <span verifiable-text="end" data-for="advisor">]</span>
     </div>
   </div>
 </div>

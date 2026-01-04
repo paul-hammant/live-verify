@@ -32,7 +32,7 @@ OCR-to-hash allows a diner to scan the window sticker to verify: **"Is this the 
     </div>
 <div style="font-size: 1.2em; font-weight: bold; color: #2e7d32; margin-bottom: 15px;">VERY GOOD</div>
 <div style="font-size: 0.9em; line-height: 1.4; color: #333; border-top: 1px solid #ccc; padding-top: 15px;">
-      <strong>Establishment:</strong> <span data-bracket="start" data-for="food">[</span>THE SPICY TACO BAR<br>
+      <strong>Establishment:</strong> <span verifiable-text="start" data-for="food">[</span>THE SPICY TACO BAR<br>
       <strong>Last Inspected:</strong> MARCH 15, 2026<br>
       <strong>Address:</strong> 42 HIGH STREET, LONDON
     </div>
@@ -40,7 +40,7 @@ OCR-to-hash allows a diner to scan the window sticker to verify: **"Is this the 
 <div style="padding: 15px; background: #fff;">
     <div data-verify-line="food" style="border-top: 1px dashed #999; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #333; text-align: center; font-weight: bold;"
       title="Demo only: Health departments don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:food.gov.uk/ratings/v/STACO42 <span data-bracket="end" data-for="food">]</span>
+      verify:food.gov.uk/ratings/v/STACO42 <span verifiable-text="end" data-for="food">]</span>
     </div>
   </div>
 </div>

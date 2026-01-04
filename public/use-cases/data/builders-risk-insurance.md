@@ -21,7 +21,7 @@ furtherDerivations: 1
 <div style="padding: 30px;">
     <h2 style="text-align: center; color: #1565c0; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Builders Risk Certificate</h2>
 <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Project Name:</strong> <span data-bracket="start" data-for="build">[</span>Liberty High School Addition<br>
+      <p><strong>Project Name:</strong> <span verifiable-text="start" data-for="build">[</span>Liberty High School Addition<br>
       <strong>Location:</strong> 4500 Skyline Blvd, Austin, TX</p>
 <p><strong>Project Owner:</strong> Austin Independent School District<br>
       <strong>General Contractor:</strong> Skyline Builders Group, LLC</p>
@@ -50,7 +50,7 @@ furtherDerivations: 1
     </div>
 <div data-verify-line="build" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Zurich doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:zurichna.com/construction/v/BRI992288 <span data-bracket="end" data-for="build">]</span>
+      verify:zurichna.com/construction/v/BRI992288 <span verifiable-text="end" data-for="build">]</span>
     </div>
   </div>
 </div>

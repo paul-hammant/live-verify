@@ -25,7 +25,7 @@ Because it is an "Authentic Act," it has enormous legal weight:
     <div style="font-size: 0.9em; text-transform: uppercase;">ACTE DE DERNIÈRE VOLONTÉ</div>
   </div>
 <div style="font-size: 1.1em; line-height: 1.8; color: #000; text-align: justify;">
-    <p>BEFORE US, <span data-bracket="start" data-for="not-will">[</span><strong>Maitre JEAN-PIERRE LEFEBVRE</strong>, Notary in the City of Montreal, appeared <strong>MARCUS A. WILLOWS</strong>, who declared this to be his Last Will and Testament.</p>
+    <p>BEFORE US, <span verifiable-text="start" data-for="not-will">[</span><strong>Maitre JEAN-PIERRE LEFEBVRE</strong>, Notary in the City of Montreal, appeared <strong>MARCUS A. WILLOWS</strong>, who declared this to be his Last Will and Testament.</p>
 <p>The Testator bequeaths his entire estate, both real and personal, to his surviving spouse, <strong>MARIE WILLOWS</strong>, and appoints her as the Liquidator of the Succession.</p>
   </div>
 <div style="margin-top: 60px; display: flex; justify-content: space-between; align-items: flex-end;">
@@ -39,7 +39,7 @@ Because it is an "Authentic Act," it has enormous legal weight:
   </div>
 <div data-verify-line="not-will" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Notary Chamber doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:notaires.qc.ca/v/2026-992288 <span data-bracket="end" data-for="not-will">]</span>
+      verify:notaires.qc.ca/v/2026-992288 <span verifiable-text="end" data-for="not-will">]</span>
   </div>
 </div>
 
@@ -128,7 +128,7 @@ OCR-to-hash binds the **Notary's commission number, the signer's name, and the s
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', serif; border: 1px solid #999; background: #fff; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="font-size: 1.1em; line-height: 1.6; color: #000;">
     <p style="text-align: right; font-size: 0.9em;">STATE OF FLORIDA<br>COUNTY OF MIAMI-DADE</p>
-<p>The foregoing instrument was acknowledged before me this 15th day of March, 2026, by <span data-bracket="start" data-for="notary">[</span><strong>ROBERT J. MILLER</strong>, who is personally known to me or who has produced a Driver License as identification.</p>
+<p>The foregoing instrument was acknowledged before me this 15th day of March, 2026, by <span verifiable-text="start" data-for="notary">[</span><strong>ROBERT J. MILLER</strong>, who is personally known to me or who has produced a Driver License as identification.</p>
   </div>
 <div style="margin-top: 40px; display: flex; align-items: flex-start; justify-content: space-between;">
     <div style="width: 200px; border: 2px solid #000; padding: 10px; text-align: center; font-family: sans-serif; font-size: 0.75em; line-height: 1.3;">
@@ -144,7 +144,7 @@ OCR-to-hash binds the **Notary's commission number, the signer's name, and the s
   </div>
 <div data-verify-line="notary" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
     title="Demo only: Florida Secretary of State doesn't yet offer verification&#10;endpoints, so this is illustrative">
-    verify:flsos.gov/notary/v/HH992288 <span data-bracket="end" data-for="notary">]</span>
+    verify:flsos.gov/notary/v/HH992288 <span verifiable-text="end" data-for="notary">]</span>
   </div>
 </div>
 
@@ -231,7 +231,7 @@ The problem is that the "Notary Seal" (the ink stamp or embossed circle) is a ph
 <div style="font-size: 1em; line-height: 1.6; color: #000; text-align: justify;">
     <p>State of <strong>CALIFORNIA</strong><br>
     County of <strong>LOS ANGELES</strong></p>
-<p>On March 15, 2026 before me, <span data-bracket="start" data-for="notary">[</span><strong>SARAH J. JENKINS</strong>, Notary Public, personally appeared <strong>JOHN JACOB DOE</strong>, who proved to me on the basis of satisfactory evidence to be the person whose name is subscribed to the within instrument.</p>
+<p>On March 15, 2026 before me, <span verifiable-text="start" data-for="notary">[</span><strong>SARAH J. JENKINS</strong>, Notary Public, personally appeared <strong>JOHN JACOB DOE</strong>, who proved to me on the basis of satisfactory evidence to be the person whose name is subscribed to the within instrument.</p>
 <p>I certify under PENALTY OF PERJURY under the laws of the State of California that the foregoing paragraph is true and correct.</p>
   </div>
 <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
@@ -246,7 +246,7 @@ The problem is that the "Notary Seal" (the ink stamp or embossed circle) is a ph
 <div style="padding: 20px; background: #f9f9f9; border: 1px dashed #999; margin-top: 40px; text-align: center;">
     <div data-verify-line="notary" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: Individual notaries don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:sarahnotary.com/v/ACT2026-9922 <span data-bracket="end" data-for="notary">]</span>
+      verify:sarahnotary.com/v/ACT2026-9922 <span verifiable-text="end" data-for="notary">]</span>
     </div>
     <div style="font-size: 0.7em; color: #666; margin-top: 10px;">
       Scan to verify notary commission standing, witness authority, and journal entry integrity.
@@ -334,7 +334,7 @@ The problem is that a "Digital Seal" is often just a pretty image on a PDF. Frau
 <div style="margin: 20px 0; display: flex; align-items: flex-start; border: 1px solid #ccc; padding: 15px; background: #f9f9f9;">
       <div style="width: 80px; height: 80px; border: 2px solid #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; text-align: center; margin-right: 20px; color: #000;">DIGITAL<br>SEAL</div>
       <div style="flex-grow: 1;">
-        <strong>Notary:</strong> <span data-bracket="start" data-for="ron">[</span>SARAH J. JENKINS<br>
+        <strong>Notary:</strong> <span verifiable-text="start" data-for="ron">[</span>SARAH J. JENKINS<br>
         <strong>Commission #:</strong> 992288-TX<br>
         <strong>Expires:</strong> 12/31/2028<br>
         <strong>Session ID:</strong> RON-8844-X92
@@ -349,7 +349,7 @@ The problem is that a "Digital Seal" is often just a pretty image on a PDF. Frau
     </div>
     <div data-verify-line="ron" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: RON platforms don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:notarize.com/v/RON8844X92 <span data-bracket="end" data-for="ron">]</span>
+      verify:notarize.com/v/RON8844X92 <span verifiable-text="end" data-for="ron">]</span>
     </div>
   </div>
 </div>

@@ -22,7 +22,7 @@ These documents are the "Safety Certificates" for an investor's cash. Fraud is h
 <div style="padding: 30px; font-size: 0.95em; line-height: 1.6; color: #333;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 10px;">
       <div>
-        <strong>Firm:</strong> <span data-bracket="start" data-for="cass">[</span>STERLING INVESTMENTS LTD<br>
+        <strong>Firm:</strong> <span verifiable-text="start" data-for="cass">[</span>STERLING INVESTMENTS LTD<br>
         <strong>FCA FRN:</strong> 789012 (Authorized)
       </div>
       <div style="text-align: right;">
@@ -43,7 +43,7 @@ These documents are the "Safety Certificates" for an investor's cash. Fraud is h
 <div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #1a5f2a; text-align: center;">
     <div data-verify-line="cass" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: Investment firms don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:sterling-invest.co.uk/v/SEG2026Q1 <span data-bracket="end" data-for="cass">]</span>
+      verify:sterling-invest.co.uk/v/SEG2026Q1 <span verifiable-text="end" data-for="cass">]</span>
     </div>
     <div style="font-size: 0.7em; color: #777; margin-top: 10px;">
       Scan to verify segregation integrity, view the latest shortfall history, and check for CASS breach notifications.

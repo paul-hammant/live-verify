@@ -22,7 +22,7 @@ Because weight determines the price of multimillion-dollar shipments, these tick
 <div style="padding: 20px;">
     <div style="display: flex; justify-content: space-between; font-size: 0.9em; margin-bottom: 20px;">
       <div>
-        <strong>Ticket #:</strong> <span data-bracket="start" data-for="weight">[</span>WT-2026-8844<br>
+        <strong>Ticket #:</strong> <span verifiable-text="start" data-for="weight">[</span>WT-2026-8844<br>
         <strong>Plate:</strong> ABC-1234 (IL)<br>
         <strong>Unit:</strong> TRUCK-42
       </div>
@@ -53,7 +53,7 @@ Because weight determines the price of multimillion-dollar shipments, these tick
 <div style="padding: 15px; background: #fff; border-top: 1px solid #333; text-align: center;">
     <div data-verify-line="weight" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Scale operators don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:midwest-scales.com/v/WT20268844 <span data-bracket="end" data-for="weight">]</span>
+      verify:midwest-scales.com/v/WT20268844 <span verifiable-text="end" data-for="weight">]</span>
     </div>
   </div>
 </div>

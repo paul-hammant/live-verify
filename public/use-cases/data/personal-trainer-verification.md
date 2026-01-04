@@ -27,7 +27,7 @@ OCR-to-hash allows a client to scan the trainer's digital badge or physical ID t
     </div>
     <div style="flex-grow: 1;">
       <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Professional Name</div>
-      <div style="font-size: 1.2em; font-weight: bold; margin: 0 0 10px 0; color: #333;"><span data-bracket="start" data-for="fit">[</span>SARAH J. MILLER</div>
+      <div style="font-size: 1.2em; font-weight: bold; margin: 0 0 10px 0; color: #333;"><span verifiable-text="start" data-for="fit">[</span>SARAH J. MILLER</div>
 <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Credential</div>
       <div style="font-size: 1em; font-weight: bold; margin: 0 0 10px 0;">Certified Personal Trainer</div>
 <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">License #</div>
@@ -40,7 +40,7 @@ OCR-to-hash allows a client to scan the trainer's digital badge or physical ID t
     </div>
     <div data-verify-line="fit" style="border-top: 1px dashed #999; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; text-align: center; font-weight: bold;"
       title="Demo only: Certification bodies don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:nasm.org/v/992288-SJM <span data-bracket="end" data-for="fit">]</span>
+      verify:nasm.org/v/992288-SJM <span verifiable-text="end" data-for="fit">]</span>
     </div>
   </div>
 </div>

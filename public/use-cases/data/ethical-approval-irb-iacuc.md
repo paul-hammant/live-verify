@@ -25,7 +25,7 @@ The committee reviews the plan to ensure people aren't being exploited and anima
 <div style="font-size: 0.95em; line-height: 1.6; color: #333; text-align: justify;">
     <p>This document confirms that the research protocol described below has been reviewed and approved by the Stanford IRB.</p>
 <div style="margin: 20px 0; border-left: 4px solid #1a237e; padding-left: 20px; background: #f5f5f5; padding-top: 10px; padding-bottom: 10px;">
-      <p><strong>Protocol ID:</strong> <span data-bracket="start" data-for="ethics">[</span>IRB-2026-992288<br>
+      <p><strong>Protocol ID:</strong> <span verifiable-text="start" data-for="ethics">[</span>IRB-2026-992288<br>
       <strong>Study Title:</strong> Neural Response to Digital Verification Affordances<br>
       <strong>Principal Investigator:</strong> Prof. Albus Dumbledore<br>
       <strong>Risk Level:</strong> Minimal Risk</p>
@@ -44,7 +44,7 @@ The committee reviews the plan to ensure people aren't being exploited and anima
   </div>
 <div data-verify-line="ethics" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Stanford doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:stanford.edu/compliance/v/IRB-992288 <span data-bracket="end" data-for="ethics">]</span>
+      verify:stanford.edu/compliance/v/IRB-992288 <span verifiable-text="end" data-for="ethics">]</span>
   </div>
 </div>
 

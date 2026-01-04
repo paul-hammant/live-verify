@@ -17,7 +17,7 @@ furtherDerivations: 1
 <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
       <div>
-        <strong>Notebook ID:</strong> <span data-bracket="start" data-for="lab-data">[</span>IBR-2026-NB-42<br>
+        <strong>Notebook ID:</strong> <span verifiable-text="start" data-for="lab-data">[</span>IBR-2026-NB-42<br>
         <strong>Page #:</strong> 114
       </div>
       <div style="text-align: right;">
@@ -36,7 +36,7 @@ furtherDerivations: 1
     </div>
 <div data-verify-line="lab-data" style="border-top: 1px dashed #999; margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: University doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:ibr-stanford.edu/notebooks/v/NB42-P114 <span data-bracket="end" data-for="lab-data">]</span>
+      verify:ibr-stanford.edu/notebooks/v/NB42-P114 <span verifiable-text="end" data-for="lab-data">]</span>
     </div>
   </div>
 </div>

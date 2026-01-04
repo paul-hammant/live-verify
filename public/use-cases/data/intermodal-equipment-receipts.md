@@ -17,7 +17,7 @@ furtherDerivations: 1
 <div style="font-size: 0.85em; line-height: 1.4;">
     <div style="display: flex; justify-content: space-between;">
       <div>
-        <strong>Container ID:</strong> <span data-bracket="start" data-for="eir">[</span>MSKU-998877-6<br>
+        <strong>Container ID:</strong> <span verifiable-text="start" data-for="eir">[</span>MSKU-998877-6<br>
         <strong>Chassis ID:</strong> GTO-4228
       </div>
       <div style="text-align: right;">
@@ -39,7 +39,7 @@ furtherDerivations: 1
     </div>
 <div data-verify-line="eir" style="border-top: 1px dashed #999; margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Terminal doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:global-terminals.com/eir/v/99228877 <span data-bracket="end" data-for="eir">]</span>
+      verify:global-terminals.com/eir/v/99228877 <span verifiable-text="end" data-for="eir">]</span>
     </div>
   </div>
 </div>

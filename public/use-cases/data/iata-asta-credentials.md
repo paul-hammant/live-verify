@@ -16,7 +16,7 @@ furtherDerivations: 1
 <div style="padding: 30px;">
     <div style="text-align: center; border-bottom: 2px solid #002d62; padding-bottom: 10px; margin-bottom: 20px;">
       <h3 style="margin: 0; color: #002d62;">CERTIFICATE OF ACCREDITATION</h3>
-      <div style="font-size: 1.2em; font-weight: bold; margin-top: 5px;">Numeric Code: <span data-bracket="start" data-for="iata">[</span>99-8-2288 7</div>
+      <div style="font-size: 1.2em; font-weight: bold; margin-top: 5px;">Numeric Code: <span verifiable-text="start" data-for="iata">[</span>99-8-2288 7</div>
     </div>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
       <p>This certifies that <strong>Apex Global Travel, LLC</strong> is a Passenger Sales Agent in good standing, authorized to issue tickets on behalf of IATA member airlines.</p>
@@ -33,7 +33,7 @@ furtherDerivations: 1
     </div>
 <div data-verify-line="iata" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: IATA doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:iata.org/check-a-code/v/99822887 <span data-bracket="end" data-for="iata">]</span>
+      verify:iata.org/check-a-code/v/99822887 <span verifiable-text="end" data-for="iata">]</span>
     </div>
   </div>
 </div>

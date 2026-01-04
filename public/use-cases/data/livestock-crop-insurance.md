@@ -21,7 +21,7 @@ furtherDerivations: 1
 <div style="padding: 25px;">
     <h2 style="text-align: center; color: #388e3c; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Summary of Coverage</h2>
 <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Insured:</strong> <span data-bracket="start" data-for="ag-pol">[</span>Miller Family Farms, Inc.<br>
+      <p><strong>Insured:</strong> <span verifiable-text="start" data-for="ag-pol">[</span>Miller Family Farms, Inc.<br>
       <strong>State/County:</strong> Iowa / Story (FIPS 19169)</p>
 <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
         <tr style="background: #f1f8e9; border-bottom: 2px solid #388e3c;">
@@ -49,7 +49,7 @@ furtherDerivations: 1
     </div>
 <div data-verify-line="ag-pol" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: NAU Country doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:naucountry.com/policy/v/MPCI992288 <span data-bracket="end" data-for="ag-pol">]</span>
+      verify:naucountry.com/policy/v/MPCI992288 <span verifiable-text="end" data-for="ag-pol">]</span>
     </div>
   </div>
 </div>

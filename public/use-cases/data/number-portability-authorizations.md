@@ -20,7 +20,7 @@ When you switch your phone number from one carrier to another (e.g., AT&T to T-M
     <div style="font-size: 0.75em; opacity: 0.8; text-transform: uppercase; margin-top: 5px;">Authorization for Number Portability</div>
   </div>
 <div style="padding: 30px; font-size: 0.95em; line-height: 1.6; color: #333;">
-    <p>I, <span data-bracket="start" data-for="port">[</span><strong>JOHN JACOB DOE</strong>, authorize the porting of the following telephone number(s) from my current provider (Losing Carrier) to the New Provider (Winning Carrier).</p>
+    <p>I, <span verifiable-text="start" data-for="port">[</span><strong>JOHN JACOB DOE</strong>, authorize the porting of the following telephone number(s) from my current provider (Losing Carrier) to the New Provider (Winning Carrier).</p>
 <div style="background: #f9f9f9; padding: 15px; border: 1px solid #ddd; margin: 20px 0; border-radius: 4px;">
       <p><strong>Telephone Number:</strong> (555) 123-4567<br>
       <strong>Current Carrier:</strong> AT&T Mobility<br>
@@ -34,7 +34,7 @@ When you switch your phone number from one carrier to another (e.g., AT&T to T-M
 <div style="padding: 20px; background: #fdfdfd; border-top: 1px solid #eee; text-align: center;">
     <div data-verify-line="port" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Carriers don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:att.com/porting/v/992288776655 <span data-bracket="end" data-for="port">]</span>
+      verify:att.com/porting/v/992288776655 <span verifiable-text="end" data-for="port">]</span>
     </div>
     <div style="font-size: 0.7em; color: #999; margin-top: 10px;">
       Scan to verify porting intent, account standing, and anti-fraud status.

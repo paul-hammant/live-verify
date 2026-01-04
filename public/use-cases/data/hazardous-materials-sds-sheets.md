@@ -28,7 +28,7 @@ Fraud is dangerous here: some managers use a 10-year-old SDS to hide that a chem
   </div>
 <div style="padding: 25px;">
     <div style="border-bottom: 2px solid #333; padding-bottom: 10px; margin-bottom: 20px;">
-      <h2 style="margin: 0; font-size: 1.3em;"><span data-bracket="start" data-for="sds">[</span>ACETONE (Technical Grade)</h2>
+      <h2 style="margin: 0; font-size: 1.3em;"><span verifiable-text="start" data-for="sds">[</span>ACETONE (Technical Grade)</h2>
       <div style="font-size: 0.9em; color: #666;">Manufacturer: Global Chemicals, Corp.</div>
     </div>
 <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
@@ -49,7 +49,7 @@ Fraud is dangerous here: some managers use a 10-year-old SDS to hide that a chem
     </div>
 <div data-verify-line="sds" style="border-top: 1px dashed #999; margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Manufacturer doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:globalchem.com/sds/v/CHEM992288 <span data-bracket="end" data-for="sds">]</span>
+      verify:globalchem.com/sds/v/CHEM992288 <span verifiable-text="end" data-for="sds">]</span>
     </div>
   </div>
 </div>

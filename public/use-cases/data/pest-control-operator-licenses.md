@@ -28,7 +28,7 @@ The problem is that "Pest Control" is a high-trust, high-risk profession. Crimin
     </div>
     <div style="flex-grow: 1;">
       <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Licensee Name</div>
-      <div style="font-size: 1.2em; font-weight: bold; margin: 0 0 10px 0; color: #004d40;"><span data-bracket="start" data-for="pest">[</span>ROBERT J. MILLER</div>
+      <div style="font-size: 1.2em; font-weight: bold; margin: 0 0 10px 0; color: #004d40;"><span verifiable-text="start" data-for="pest">[</span>ROBERT J. MILLER</div>
 <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">License #</div>
       <div style="font-size: 1em; font-weight: bold; margin: 0 0 10px 0;">ID: PCO-992288-TX</div>
 <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Employer</div>
@@ -42,7 +42,7 @@ The problem is that "Pest Control" is a high-trust, high-risk profession. Crimin
 <div style="padding: 15px 20px 20px 20px; background: #fff; border-top: 1px dashed #999; text-align: center;">
     <div data-verify-line="pest" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #004d40; font-weight: bold;"
       title="Demo only: State boards don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:texasag.gov/v/PCO992288 <span data-bracket="end" data-for="pest">]</span>
+      verify:texasag.gov/v/PCO992288 <span verifiable-text="end" data-for="pest">]</span>
     </div>
     <div style="font-size: 0.65em; color: #999; margin-top: 8px; font-style: italic;">
       Scan to verify current license standing, chemical safety clearance, and background check validity.

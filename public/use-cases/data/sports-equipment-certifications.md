@@ -30,7 +30,7 @@ These labels are the "Seal of Survival." Fraud is common in the "Budget Market":
       </div>
     </div>
 <div style="font-size: 0.9em; line-height: 1.5; color: #333; border-top: 1px solid #eee; padding-top: 15px;">
-      <p><strong>Manufacturer:</strong> <span data-bracket="start" data-for="safety">[</span>RIDDELL SPORTS GROUP<br>
+      <p><strong>Manufacturer:</strong> <span verifiable-text="start" data-for="safety">[</span>RIDDELL SPORTS GROUP<br>
       <strong>Model:</strong> SpeedFlex Precision-Fit<br>
       <strong>Serial Number:</strong> SN-992288-XJ-42</p>
 <div style="margin-top: 15px; padding: 10px; background: #fdfdfd; border: 1px solid #ccc; font-size: 0.85em; font-style: italic;">
@@ -41,7 +41,7 @@ These labels are the "Seal of Survival." Fraud is common in the "Budget Market":
 <div style="padding: 15px; background: #f9f9f9; border-top: 1px dashed #bbb; text-align: center;">
     <div data-verify-line="safety" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Standards bodies don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:nocsae.org/v/SN992288XJ <span data-bracket="end" data-for="safety">]</span>
+      verify:nocsae.org/v/SN992288XJ <span verifiable-text="end" data-for="safety">]</span>
     </div>
     <div style="font-size: 0.65em; color: #999; margin-top: 8px;">
       Scan to verify product safety lab results, batch traceability, and recall status.

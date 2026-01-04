@@ -27,7 +27,7 @@ The problem? Anyone can inspect-element a PDF or email to change the numbers. A 
 <div style="padding: 24px; font-size: 0.9em; color: #333;">
     <div style="margin-bottom: 20px;">
       <strong>Date:</strong> January 15, 2026<br>
-      <strong>Customer:</strong> <span data-bracket="start" data-for="neo">[</span>Sarah J. Connor<br>
+      <strong>Customer:</strong> <span verifiable-text="start" data-for="neo">[</span>Sarah J. Connor<br>
       123 Cyberdyne Systems Way, San Francisco, CA
     </div>
 <div style="background: #f5f5f5; padding: 15px; border-radius: 4px; margin-bottom: 20px;">
@@ -39,7 +39,7 @@ The problem? Anyone can inspect-element a PDF or email to change the numbers. A 
 <p>This letter confirms that the above individual maintains an active account with Mondo Bank since 2024.</p>
 <div data-verify-line="neo" style="border-top: 1px dashed #ccc; margin-top: 24px; padding-top: 12px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #666; text-align: center;"
       title="Demo only: Neobanks typically verify via app, this creates a bridge for paper">
-      verify:mondobank.com/v/u7i8o9 <span data-bracket="end" data-for="neo">]</span>
+      verify:mondobank.com/v/u7i8o9 <span verifiable-text="end" data-for="neo">]</span>
     </div>
   </div>
 </div>

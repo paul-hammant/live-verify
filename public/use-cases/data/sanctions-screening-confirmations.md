@@ -20,7 +20,7 @@ If you do business with a sanctioned party, even accidentally, the penalties are
     <div style="font-size: 0.8em;">Financial Crime Compliance</div>
   </div>
   <div style="padding: 20px; font-size: 0.9em; line-height: 1.6;">
-    <p><strong>Screened Party:</strong> <span data-bracket="start" data-for="sanctionsscreeningco">[</span>Meridian Trading GmbH<br>
+    <p><strong>Screened Party:</strong> <span verifiable-text="start" data-for="sanctionsscreeningco">[</span>Meridian Trading GmbH<br>
     <strong>Screening Date:</strong> February 15, 2026 14:32:01 UTC<br>
     <strong>Reference:</strong> SCR-2026-00442871</p>
 <div style="background: #f5fff5; padding: 15px; margin: 15px 0; border: 1px solid #228B22;">
@@ -36,7 +36,7 @@ If you do business with a sanctioned party, even accidentally, the penalties are
 <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="sanctionsscreeningco" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
-        verify:sterling-bank.com/sanctions/SCR-2026-00442871 <span data-bracket="end" data-for="sanctionsscreeningco">]</span>
+        verify:sterling-bank.com/sanctions/SCR-2026-00442871 <span verifiable-text="end" data-for="sanctionsscreeningco">]</span>
       </div>
     </div>
   </div>

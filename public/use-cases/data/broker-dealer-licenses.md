@@ -20,7 +20,7 @@ furtherDerivations: 1
     <div style="flex-grow: 1;">
       <h3 style="margin-top: 0; color: #002d62; font-size: 1.2em;">REGISTERED REPRESENTATIVE</h3>
 <div style="font-size: 0.95em; line-height: 1.5; color: #333;">
-        <p><strong>Individual:</strong> <span data-bracket="start" data-for="broker">[</span>JORDAN BELFORT<br>
+        <p><strong>Individual:</strong> <span verifiable-text="start" data-for="broker">[</span>JORDAN BELFORT<br>
         <strong>CRD Number:</strong> 9988776<br>
         <strong>Firm:</strong> Stratton Oakmont, Inc.</p>
 <p><strong>Status:</strong> REGISTERED<br>
@@ -31,7 +31,7 @@ furtherDerivations: 1
   </div>
 <div data-verify-line="broker" style="border-top: 1px dashed #999; margin-top: 10px; padding: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center; background: #f9f9f9;"
       title="Demo only: FINRA doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:finra.org/brokercheck/v/9988776 <span data-bracket="end" data-for="broker">]</span>
+      verify:finra.org/brokercheck/v/9988776 <span verifiable-text="end" data-for="broker">]</span>
   </div>
 </div>
 

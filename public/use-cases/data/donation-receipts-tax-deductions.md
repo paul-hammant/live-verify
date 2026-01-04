@@ -22,7 +22,7 @@ Verified hashes allow the IRS to scan a receipt and see "VERIFIED" on the charit
     <div style="font-size: 0.85em; color: #666;">OFFICIAL CHARITABLE CONTRIBUTION RECEIPT</div>
   </div>
 <div style="font-size: 1em; line-height: 1.6; color: #333;">
-    <p>Dear <span data-bracket="start" data-for="donate">[</span><strong>JOHN JACOB DOE</strong>,</p>
+    <p>Dear <span verifiable-text="start" data-for="donate">[</span><strong>JOHN JACOB DOE</strong>,</p>
     <p>Thank you for your generous gift. This letter confirms that the American Red Cross received your contribution as described below:</p>
 <div style="background: #f9f9f9; padding: 15px; border: 1px solid #eee; margin: 20px 0;">
       <table style="width: 100%; font-size: 0.95em;">
@@ -47,7 +47,7 @@ Verified hashes allow the IRS to scan a receipt and see "VERIFIED" on the charit
   </div>
 <div data-verify-line="donate" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Red Cross doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:redcross.org/receipts/v/ARC-2025-9922 <span data-bracket="end" data-for="donate">]</span>
+      verify:redcross.org/receipts/v/ARC-2025-9922 <span verifiable-text="end" data-for="donate">]</span>
   </div>
 </div>
 

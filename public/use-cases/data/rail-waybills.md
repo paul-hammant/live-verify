@@ -25,7 +25,7 @@ Fraud is high-stakes in bulk commodities (e.g., grain, coal, chemicals). Shady s
 <div style="padding: 20px;">
     <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.85em; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
-        <strong>Shipper:</strong> <span data-bracket="start" data-for="rail">[</span>GLOBAL AGRI-TRADE LLC<br>
+        <strong>Shipper:</strong> <span verifiable-text="start" data-for="rail">[</span>GLOBAL AGRI-TRADE LLC<br>
         <strong>Consignee:</strong> PACIFIC TERMINALS INC.<br>
         <strong>Destination:</strong> PORT OF TACOMA, WA
       </div>
@@ -58,7 +58,7 @@ Fraud is high-stakes in bulk commodities (e.g., grain, coal, chemicals). Shady s
 <div style="padding: 20px; background: #fdfdfd; border-top: 1px solid #000; text-align: center;">
     <div data-verify-line="rail" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Railroads don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:up.com/waybill/v/UP2026992288 <span data-bracket="end" data-for="rail">]</span>
+      verify:up.com/waybill/v/UP2026992288 <span verifiable-text="end" data-for="rail">]</span>
     </div>
     <div style="font-size: 0.7em; color: #777; margin-top: 10px; font-style: italic;">
       Scan to verify weight integrity, railcar ownership, and interchange status.

@@ -29,7 +29,7 @@ Fraud is high-stakes here: scammers often edit a cheap "Any Occupation" policy t
 <div style="padding: 30px;">
     <h2 style="text-align: center; color: #000; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Policy Schedule</h2>
 <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Insured:</strong> <span data-bracket="start" data-for="dis-pol">[</span><strong>DR. STEPHEN STRANGE</strong><br>
+      <p><strong>Insured:</strong> <span verifiable-text="start" data-for="dis-pol">[</span><strong>DR. STEPHEN STRANGE</strong><br>
       <strong>Occupation Class:</strong> 6M (Neurosurgeon - Own Occupation)</p>
 <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
         <tr style="background: #f5f5f5; border-bottom: 2px solid #000;">
@@ -57,7 +57,7 @@ Fraud is high-stakes here: scammers often edit a cheap "Any Occupation" policy t
     </div>
 <div data-verify-line="dis-pol" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Unum doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:unum.com/v/DI998877 <span data-bracket="end" data-for="dis-pol">]</span>
+      verify:unum.com/v/DI998877 <span verifiable-text="end" data-for="dis-pol">]</span>
     </div>
   </div>
 </div>

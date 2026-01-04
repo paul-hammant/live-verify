@@ -24,7 +24,7 @@ Fraud happens when a developer uses a "Fake Plaque" or an outdated certificate t
 <div style="padding: 40px; text-align: center;">
     <div style="font-size: 1.1em; color: #666; margin-bottom: 10px;">This is to certify that</div>
     <div style="font-size: 1.8em; font-weight: bold; color: #004d40; margin-bottom: 20px;">
-      <span data-bracket="start" data-for="leed">[</span>THE SUSTAINABILITY CENTER, AUSTIN
+      <span verifiable-text="start" data-for="leed">[</span>THE SUSTAINABILITY CENTER, AUSTIN
     </div>
 <div style="margin: 25px 0;">
       <div style="font-size: 3em; font-weight: bold; color: #d4af37;">GOLD</div>
@@ -37,7 +37,7 @@ Fraud happens when a developer uses a "Fake Plaque" or an outdated certificate t
     </div>
 <div data-verify-line="leed" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: USGBC doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:usgbc.org/projects/v/99887766 <span data-bracket="end" data-for="leed">]</span>
+      verify:usgbc.org/projects/v/99887766 <span verifiable-text="end" data-for="leed">]</span>
     </div>
   </div>
 </div>

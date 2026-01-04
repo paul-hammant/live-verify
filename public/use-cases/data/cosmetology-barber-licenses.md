@@ -27,7 +27,7 @@ Stylists are required by law to post their license at their station. Some people
     </div>
     <div style="flex-grow: 1;">
       <h3 style="margin: 0; color: #333;">LICENSED COSMETOLOGIST</h3>
-      <div style="font-size: 1.2em; font-weight: bold; margin: 5px 0;"><span data-bracket="start" data-for="beauty">[</span>JANE STYLIST-DOE</div>
+      <div style="font-size: 1.2em; font-weight: bold; margin: 5px 0;"><span verifiable-text="start" data-for="beauty">[</span>JANE STYLIST-DOE</div>
       <div style="font-size: 0.9em; color: #333; line-height: 1.4;">
         <strong>License #:</strong> 99228877<br>
         <strong>Status:</strong> ACTIVE / VALID<br>
@@ -41,7 +41,7 @@ Stylists are required by law to post their license at their station. Some people
     </p>
     <div data-verify-line="beauty" style="border-top: 1px dashed #999; margin-top: 10px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: State Board doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:barbercosmo.ca.gov/v/99228877 <span data-bracket="end" data-for="beauty">]</span>
+      verify:barbercosmo.ca.gov/v/99228877 <span verifiable-text="end" data-for="beauty">]</span>
     </div>
   </div>
 </div>

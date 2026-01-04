@@ -19,7 +19,7 @@ furtherDerivations: 1
 <div style="display: flex; justify-content: space-around; margin: 20px 0; background: #f9f9f9; padding: 15px; border: 1px solid #ccc;">
       <div style="text-align: center;">
         <strong>SPOUSE A</strong><br>
-        <span data-bracket="start" data-for="marriage">[</span>John Jacob Doe<br>
+        <span verifiable-text="start" data-for="marriage">[</span>John Jacob Doe<br>
         <small>DOB: 05/15/1985</small>
       </div>
       <div style="font-size: 1.5em; align-self: center;">&</div>
@@ -44,7 +44,7 @@ furtherDerivations: 1
   </div>
 <div data-verify-line="marriage" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Clark County doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:clarkcountynv.gov/marriage/v/998877665 <span data-bracket="end" data-for="marriage">]</span>
+      verify:clarkcountynv.gov/marriage/v/998877665 <span verifiable-text="end" data-for="marriage">]</span>
   </div>
 </div>
 

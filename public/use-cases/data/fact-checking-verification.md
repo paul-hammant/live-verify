@@ -22,7 +22,7 @@ It allows a reader to scan the text and see a green "VERIFIED" status from an in
     <div style="font-size: 0.85em; margin-top: 4px; opacity: 0.8;">METROPOLIS • TRUTH, JUSTICE, AND VERIFIED FACTS</div>
   </div>
   <div style="padding: 25px;">
-    <h2 style="font-size: 1.6em; margin: 0 0 10px 0; line-height: 1.2; color: #1a1a2e;"><span data-bracket="start" data-for="fact">[</span>LexCorp Tower Fire: 47 Rescued, No Casualties</h2>
+    <h2 style="font-size: 1.6em; margin: 0 0 10px 0; line-height: 1.2; color: #1a1a2e;"><span verifiable-text="start" data-for="fact">[</span>LexCorp Tower Fire: 47 Rescued, No Casualties</h2>
     <div style="font-size: 0.9em; color: #666; margin-bottom: 16px;">
       By <strong>Lois Lane</strong> | Metro Desk | March 15, 2026
     </div>
@@ -35,7 +35,7 @@ It allows a reader to scan the text and see a green "VERIFIED" status from an in
     </div>
 <div data-verify-line="fact" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Fact-checker network doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:fctchkrs.org/d-planet/v/LEX-FIRE-99 <span data-bracket="end" data-for="fact">]</span>
+      verify:fctchkrs.org/d-planet/v/LEX-FIRE-99 <span verifiable-text="end" data-for="fact">]</span>
     </div>
   </div>
 </div>

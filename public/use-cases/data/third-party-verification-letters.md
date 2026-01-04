@@ -24,7 +24,7 @@ These letters are the "Seal of Solvency." Fraud is rampant: people create fake "
   </div>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <p>Date: March 15, 2026</p>
-    <p><strong>Subject:</strong> <span data-bracket="start" data-for="verify">[</span><strong>JOHN JACOB DOE</strong><br>
+    <p><strong>Subject:</strong> <span verifiable-text="start" data-for="verify">[</span><strong>JOHN JACOB DOE</strong><br>
     <strong>SSN (Last 4):</strong> XXX-XX-9922</p>
 <div style="background: #f9f9f9; padding: 20px; border: 1px solid #ddd; margin: 20px 0;">
       <h4 style="margin-top: 0; color: #003366; border-bottom: 1px solid #ccc; padding-bottom: 5px;">VERIFIED EMPLOYMENT DATA</h4>
@@ -40,7 +40,7 @@ These letters are the "Seal of Solvency." Fraud is rampant: people create fake "
 <div style="margin-top: 40px; border-top: 1px dashed #999; padding-top: 15px; text-align: center;">
     <div data-verify-line="verify" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: Verifiers don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:theworknumber.com/v/DOE-9922-XJ <span data-bracket="end" data-for="verify">]</span>
+      verify:theworknumber.com/v/DOE-9922-XJ <span verifiable-text="end" data-for="verify">]</span>
     </div>
     <div style="font-size: 0.7em; color: #999; margin-top: 10px;">
       Scan to verify income data and verifier credentials. Access restricted to authorized financial institutions.

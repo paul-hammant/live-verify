@@ -24,7 +24,7 @@ It is one of the most powerful—and dangerous—documents in law. It allows an 
     <h1 style="margin: 0; font-size: 1.6em; text-transform: uppercase; letter-spacing: 1px;">Durable Power of Attorney</h1>
   </div>
 <div style="font-size: 1em; line-height: 1.6; color: #000;">
-    <p>I, <span data-bracket="start" data-for="poa">[</span><strong>MARGARET A. WILLOWS</strong>, a resident of Cook County, IL, hereby appoint <strong>STEVEN J. WILLOWS</strong> as my true and lawful attorney-in-fact.</p>
+    <p>I, <span verifiable-text="start" data-for="poa">[</span><strong>MARGARET A. WILLOWS</strong>, a resident of Cook County, IL, hereby appoint <strong>STEVEN J. WILLOWS</strong> as my true and lawful attorney-in-fact.</p>
 <div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin: 20px 0;">
       <p style="font-weight: bold; margin-top: 0;">GRANTED POWERS:</p>
       <ul style="font-size: 0.9em; margin-bottom: 0;">
@@ -43,7 +43,7 @@ It is one of the most powerful—and dangerous—documents in law. It allows an 
   </div>
 <div data-verify-line="poa" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
     title="Demo only: Law firm doesn't yet offer verification&#10;endpoints, so this is illustrative">
-    verify:willows-law.com/poa/v/MAW2026 <span data-bracket="end" data-for="poa">]</span>
+    verify:willows-law.com/poa/v/MAW2026 <span verifiable-text="end" data-for="poa">]</span>
   </div>
 </div>
 

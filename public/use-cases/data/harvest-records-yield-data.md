@@ -23,7 +23,7 @@ Fraud happens when a farmer "Edits" the report to show a lower yield (to pay les
   <div style="display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
     <div style="font-weight: bold; font-size: 1.2em;">JOHN DEERE OPERATIONS CENTER</div>
     <div style="text-align: right;">
-      Harvest ID: <span data-bracket="start" data-for="harvest">[</span>HARV-2026-9922<br>
+      Harvest ID: <span verifiable-text="start" data-for="harvest">[</span>HARV-2026-9922<br>
       Date: 15 OCT 2026
     </div>
   </div>
@@ -44,7 +44,7 @@ Fraud happens when a farmer "Edits" the report to show a lower yield (to pay les
     </div>
 <div data-verify-line="harvest" style="border-top: 1px dashed #999; margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: John Deere doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:operationscenter.deere.com/v/HARV9922 <span data-bracket="end" data-for="harvest">]</span>
+      verify:operationscenter.deere.com/v/HARV9922 <span verifiable-text="end" data-for="harvest">]</span>
     </div>
   </div>
 </div>

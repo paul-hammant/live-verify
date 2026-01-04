@@ -17,7 +17,7 @@ furtherDerivations: 1
     <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px;">
       <div style="font-size: 0.9em; line-height: 1.4; color: #333;">
         <strong>Donor Name:</strong><br>
-        <span data-bracket="start" data-for="blood">[</span><strong>BRUCE WAYNE</strong><br>
+        <span verifiable-text="start" data-for="blood">[</span><strong>BRUCE WAYNE</strong><br>
         <strong>DOB:</strong> 02/19/1972
       </div>
       <div style="text-align: center; border: 3px solid #b71c1c; padding: 5px 10px; border-radius: 8px;">
@@ -35,7 +35,7 @@ furtherDerivations: 1
     </div>
 <div data-verify-line="blood" style="border-top: 1px dashed #999; margin-top: 15px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Red Cross doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:redcross.org/donors/v/99887766 <span data-bracket="end" data-for="blood">]</span>
+      verify:redcross.org/donors/v/99887766 <span verifiable-text="end" data-for="blood">]</span>
     </div>
   </div>
 </div>

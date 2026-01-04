@@ -20,6 +20,24 @@ This prototype uses Tesseract.js (OCR) and OpenCV.js (registration marker detect
 **Project status:** Prototype. Works well for OCR-friendly layouts (receipts, plain-text credentials). Ornate typography and scanning from screens can reduce reliability (including moiré patterns).
 Known issue: Tesseract.js (via WASM) bug not present in newer native versions: [issue #1](https://github.com/paul-hammant/live-verify/issues/1). Production deployments would likely use native on-device OCR (or self-hosted assets) with the same protocol.
 
+## Why OCR-to-Hash?
+
+This technology is built for **human trust first**, enhanced by cryptography.
+
+1.  **Low-Tech:** The human reads the claim (e.g., "First Class Honours") and mentally questions it.
+2.  **Domain Trust:** The human reads the `verify:degrees.ed.ac.uk` line. They recognize `ed.ac.uk` as a trustworthy domain (Edinburgh University) and decide that *if* this domain confirms the claim, it is authentic. (This requires basic digital literacy/training).
+3.  **Tool Trust:** The human already trusts their iPhone/Android Camera app (or a dedicated verifier app). They use it to scan the text.
+4.  **Verification:** The app performs the OCR-to-hash lookup and displays "Verified by degrees.ed.ac.uk". The human moves from "questioning" to "no longer questioning."
+
+**The QR Code Challenge:**
+QR codes are popular but introduce a "double-checking" burden.
+-   **Opaque Link:** Humans cannot read a QR code. They must scan it to see where it leads.
+-   **Redirect Risk:** A QR code on a fake degree might lead to `degrees-edinburgh-verify.com` (a phishing site).
+-   **Authenticity Gap:** After scanning, the user arrives at a webpage. They must then *manually* check the browser's address bar to ensure they are on the real `ed.ac.uk` site and not a spoof.
+-   **Context Mismatch:** QR codes are rarely presented alone; they accompany text. A fake document could have a valid QR code pointing to a real (but unrelated) verification page, or a fake text with a fake QR code.
+
+OCR-to-hash binds the **visible text itself** to the verification. If you change the name on the degree, the hash changes, and verification fails. The human reads the domain *before* scanning, establishing trust anchors early.
+
 ## The Problem
 
 **Claims to the authenticity of printed things (or pictures of them) are hard to verify or resolve during disputes:** One example that has a billion+ incidents a day is 

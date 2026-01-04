@@ -22,7 +22,7 @@ The problem is that "Volunteer Certificates" are among the easiest documents to 
     </div>
 <div style="margin: 30px 0;">
       <div style="font-size: 1.1em;">This certifies that</div>
-      <div style="font-size: 1.8em; font-weight: bold; margin: 10px 0; color: #333;"><span data-bracket="start" data-for="volunteer">[</span>SARAH J. JENKINS</div>
+      <div style="font-size: 1.8em; font-weight: bold; margin: 10px 0; color: #333;"><span verifiable-text="start" data-for="volunteer">[</span>SARAH J. JENKINS</div>
       <div style="font-size: 1.1em;">has contributed their time and talent to the community.</div>
     </div>
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 30px 0; background: #f9f9f9; padding: 20px; border-radius: 4px;">
@@ -43,7 +43,7 @@ The problem is that "Volunteer Certificates" are among the easiest documents to 
     </div>
 <div data-verify-line="volunteer" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Non-profits don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:americasharvest.org/v/992288-SJJ <span data-bracket="end" data-for="volunteer">]</span>
+      verify:americasharvest.org/v/992288-SJJ <span verifiable-text="end" data-for="volunteer">]</span>
     </div>
   </div>
 </div>

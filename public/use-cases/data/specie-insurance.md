@@ -63,7 +63,7 @@ These documents are the "Proof of Protection" for the most valuable items on Ear
 <div style="padding: 20px; background: #1a1a1a; text-align: center;">
     <div data-verify-line="specie" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #d4af37; font-weight: bold;"
       title="Demo only: Fine art insurers don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:axa-art.com/v/SP99228877 <span data-bracket="end" data-for="specie">]</span>
+      verify:axa-art.com/v/SP99228877 <span verifiable-text="end" data-for="specie">]</span>
     </div>
     <div style="font-size: 0.7em; color: #999; margin-top: 10px;">
       Scan to verify coverage limits, specialized security requirements, and the integrity of the asset description.

@@ -19,7 +19,7 @@ furtherDerivations: 1
 <div style="padding: 30px;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px;">
       <div>
-        <div style="font-size: 1.1em; font-weight: bold; color: #333;"><span data-bracket="start" data-for="lang-test">[</span><strong>DOE, JOHN JACOB</strong></div>
+        <div style="font-size: 1.1em; font-weight: bold; color: #333;"><span verifiable-text="start" data-for="lang-test">[</span><strong>DOE, JOHN JACOB</strong></div>
         <div style="font-size: 0.9em; color: #666;">Registration ID: 0000 0000 9922 8877</div>
       </div>
       <div style="text-align: right;">
@@ -55,7 +55,7 @@ furtherDerivations: 1
     </div>
 <div data-verify-line="lang-test" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: ETS doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:ets.org/toefl/v/99228877 <span data-bracket="end" data-for="lang-test">]</span>
+      verify:ets.org/toefl/v/99228877 <span verifiable-text="end" data-for="lang-test">]</span>
     </div>
   </div>
 </div>

@@ -35,7 +35,7 @@ The **Healthcare Staff ID Badge** serves two purposes:
     </div>
     <div style="flex-grow: 1;">
       <h4 style="margin: 0; color: #005eb8; text-transform: uppercase;">Registered Nurse</h4>
-      <div style="font-size: 1.2em; font-weight: bold; margin: 5px 0;"><span data-bracket="start" data-for="nurse">[</span>Sarah J. RN</div>
+      <div style="font-size: 1.2em; font-weight: bold; margin: 5px 0;">Sarah J. RN</div>
       <div style="font-size: 0.85em; color: #333; line-height: 1.4;">
         <strong>Dept:</strong> ICU / Critical Care<br>
         <strong>ID:</strong> 88291<br>
@@ -47,9 +47,8 @@ The **Healthcare Staff ID Badge** serves two purposes:
     <div style="background: #e6f2ff; padding: 8px; border-radius: 4px; text-align: center; margin-bottom: 10px;">
       <strong style="color: #005eb8;">CODE BLUE TEAM</strong>
     </div>
-    <div data-verify-line="nurse" style="border-top: 1px dashed #999; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
-      title="Demo only: Mayo Clinic doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:mayoclinic.org/staff <span data-bracket="end" data-for="nurse">]</span>
+    <div style="border-top: 1px dashed #999; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #999; text-align: center;">
+      https://mayoclinic.org
     </div>
   </div>
 </div>
@@ -59,15 +58,15 @@ The **Healthcare Staff ID Badge** serves two purposes:
 Static cards display full names and license numbers permanently, which can lead to doxing or stalking by hostile patients. An **e-ink healthcare badge** with a rotating salt protects staff privacy while ensuring patient safety.
 
 <div style="max-width: 320px; margin: 24px auto; font-family: 'Courier New', monospace; border: 3px solid #005eb8; border-radius: 8px; background: #f5f5f0; padding: 20px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
-  <div style="font-size: 1em; color: #005eb8; font-weight: bold; margin-bottom: 8px;">MAYO CLINIC</div>
-  <div style="font-size: 1em; font-weight: bold; color: #000; margin-bottom: 8px;"><span data-bracket="start" data-for="eink-nurse">[</span>Sarah J.</div>
+  <div style="font-size: 1em; color: #005eb8; font-weight: bold; margin-bottom: 8px;"><span verifiable-text="start" data-for="eink-nurse">[</span>MAYO CLINIC</div>
+  <div style="font-size: 1em; font-weight: bold; color: #000; margin-bottom: 8px;">Sarah J.</div>
   <div style="font-size: 1em; color: #333; margin-bottom: 8px;">Registered Nurse - ICU</div>
   <div style="font-size: 1em; color: #005eb8; margin-bottom: 12px;">
     Salt: 3p9x2m5k
   </div>
   <div data-verify-line="eink-nurse" style="font-size: 1em; color: #555;"
     title="Demo only: Mayo Clinic doesn't yet offer verification endpoints">
-    vfy:mayoclinic.org <span data-bracket="end" data-for="eink-nurse">]</span>
+    vfy:mayoclinic.org <span verifiable-text="end" data-for="eink-nurse">]</span>
   </div>
 </div>
 

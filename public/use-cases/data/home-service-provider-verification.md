@@ -33,7 +33,7 @@ The **Verified Badge** is the worker's digital or physical ID. It proves:
     </div>
     <div style="flex-grow: 1;">
       <h4 style="margin: 0; color: #1a237e;">MASTER ELECTRICIAN</h4>
-      <div style="font-size: 1.1em; font-weight: bold; margin: 5px 0;"><span data-bracket="start" data-for="home-serv">[</span>MIKE J. MILLER</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin: 5px 0;"><span verifiable-text="start" data-for="home-serv">[</span>MIKE J. MILLER</div>
       <div style="font-size: 0.9em; color: #333; line-height: 1.4;">
         <strong>License #:</strong> ELEC-992288 (TX)<br>
         <strong>Company:</strong> Sparky's Power, LLC<br>
@@ -47,7 +47,7 @@ The **Verified Badge** is the worker's digital or physical ID. It proves:
     </p>
     <div data-verify-line="home-serv" style="border-top: 1px dashed #999; margin-top: 10px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Licensing board doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:tx-license.gov/v/ELEC992288 <span data-bracket="end" data-for="home-serv">]</span>
+      verify:tx-license.gov/v/ELEC992288 <span verifiable-text="end" data-for="home-serv">]</span>
     </div>
   </div>
 </div>

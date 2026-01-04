@@ -22,7 +22,7 @@ These documents are critical for highway safety. Fraud is rampant: shady carrier
 <div style="padding: 20px;">
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.85em; margin-bottom: 20px;">
       <div>
-        <strong>Carrier:</strong> <span data-bracket="start" data-for="dot">[</span>GLOBAL LOGISTICS CORP.<br>
+        <strong>Carrier:</strong> <span verifiable-text="start" data-for="dot">[</span>GLOBAL LOGISTICS CORP.<br>
         <strong>USDOT #:</strong> 99228877<br>
         <strong>Address:</strong> Springfield, USA
       </div>
@@ -65,7 +65,7 @@ These documents are critical for highway safety. Fraud is rampant: shady carrier
 <div style="padding: 20px; background: #f9f9f9; border-top: 1px solid #eee; text-align: center;">
     <div data-verify-line="dot" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: Inspection stations don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:dot-inspect.com/v/VIN1ABC9922 <span data-bracket="end" data-for="dot">]</span>
+      verify:dot-inspect.com/v/VIN1ABC9922 <span verifiable-text="end" data-for="dot">]</span>
     </div>
     <div style="font-size: 0.7em; color: #666; margin-top: 10px; font-style: italic;">
       Scan to verify vehicle safety compliance, inspector credentials, and real-time status.

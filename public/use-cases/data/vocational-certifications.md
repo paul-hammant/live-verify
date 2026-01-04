@@ -25,7 +25,7 @@ The problem is that "Trade School" certificates are easily forged. Shady contrac
 <div style="padding: 25px;">
     <div style="text-align: center; margin-bottom: 25px;">
       <h2 style="margin: 0; color: #000; letter-spacing: 1px;">CERTIFICATE OF TECHNICAL COMPETENCY</h2>
-      <div style="font-size: 0.9em; color: #666; margin-top: 5px;">Credential ID: <span data-bracket="start" data-for="vocation">[</span>LT-2026-992288</div>
+      <div style="font-size: 0.9em; color: #666; margin-top: 5px;">Credential ID: <span verifiable-text="start" data-for="vocation">[</span>LT-2026-992288</div>
     </div>
 <div style="font-size: 1.1em; line-height: 1.6; color: #333; text-align: center; margin-bottom: 25px;">
       <p>This is to certify that <strong>JOHN JACOB DOE</strong> has successfully met the standards of training and assessment in the field of:</p>
@@ -45,7 +45,7 @@ The problem is that "Trade School" certificates are easily forged. Shady contrac
 <div style="padding: 20px; background: #f9f9f9; border-top: 1px dashed #999; text-align: center;">
     <div data-verify-line="vocation" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: Technical schools don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:lincolntech.edu/v/LT992288 <span data-bracket="end" data-for="vocation">]</span>
+      verify:lincolntech.edu/v/LT992288 <span verifiable-text="end" data-for="vocation">]</span>
     </div>
     <div style="font-size: 0.7em; color: #999; margin-top: 10px; font-style: italic;">
       Scan to verify skill endorsements, safety clearances, and school accreditation.

@@ -17,7 +17,7 @@ furtherDerivations: 1
     <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px;">
       <div style="font-size: 0.9em; line-height: 1.4; color: #333;">
         <strong>Patient Name:</strong><br>
-        <span data-bracket="start" data-for="implant">[</span><strong>JOHN JACOB DOE</strong><br>
+        <span verifiable-text="start" data-for="implant">[</span><strong>JOHN JACOB DOE</strong><br>
         <strong>DOB:</strong> 05/15/1985
       </div>
       <div style="text-align: center; border: 2px solid #004a99; padding: 5px 10px; border-radius: 8px;">
@@ -36,7 +36,7 @@ furtherDerivations: 1
     </div>
 <div data-verify-line="implant" style="border-top: 1px dashed #999; margin-top: 15px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Medtronic doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:medtronic.com/implants/v/ABC99228877 <span data-bracket="end" data-for="implant">]</span>
+      verify:medtronic.com/implants/v/ABC99228877 <span verifiable-text="end" data-for="implant">]</span>
     </div>
   </div>
 </div>

@@ -24,7 +24,7 @@ A **Verified NDA** adds a cryptographic hash to the signature page. This proves:
 <div style="font-size: 1em; line-height: 1.6; text-align: justify; color: #000;">
     <p>This Agreement is made effective as of <strong>January 15, 2026</strong>, by and between:</p>
 <p><strong>Disclosing Party:</strong> Acme Global Hub, Inc.<br>
-    <strong>Receiving Party:</strong> <span data-bracket="start" data-for="nda">[</span><strong>Consultant Dynamics, LLC</strong></p>
+    <strong>Receiving Party:</strong> <span verifiable-text="start" data-for="nda">[</span><strong>Consultant Dynamics, LLC</strong></p>
 <p><strong>1. Confidential Information.</strong> Receiving Party shall not disclose any technical data, designs, trade secrets, or unreleased software code related to the "Project X" initiative...</p>
 <p><strong>2. Term.</strong> This protection lasts for <strong>5 years</strong> from the date of disclosure.</p>
   </div>
@@ -46,7 +46,7 @@ A **Verified NDA** adds a cryptographic hash to the signature page. This proves:
   </div>
 <div data-verify-line="nda" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
     title="Demo only: Acme doesn't yet offer verification&#10;endpoints, so this is illustrative">
-    verify:acme-corp.legal/v/NDA2026-P1 <span data-bracket="end" data-for="nda">]</span>
+    verify:acme-corp.legal/v/NDA2026-P1 <span verifiable-text="end" data-for="nda">]</span>
   </div>
 </div>
 

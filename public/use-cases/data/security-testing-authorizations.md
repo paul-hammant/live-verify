@@ -20,7 +20,7 @@ Without it, they're committing computer crimes. With it, they're performing a le
     <div style="font-size: 0.8em;">Security Testing Scope & Permission</div>
   </div>
   <div style="padding: 20px; font-size: 0.9em; line-height: 1.6;">
-    <p><strong>Client:</strong> <span data-bracket="start" data-for="securitytestingautho">[</span>Meridian Financial Services Ltd<br>
+    <p><strong>Client:</strong> <span verifiable-text="start" data-for="securitytestingautho">[</span>Meridian Financial Services Ltd<br>
     <strong>Tester:</strong> SecureProbe Ltd (Claire Watson, Lead Tester)<br>
     <strong>Engagement ID:</strong> PT-2026-0042<br>
     <strong>Authorization Date:</strong> February 1, 2026</p>
@@ -41,7 +41,7 @@ Without it, they're committing computer crimes. With it, they're performing a le
 <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="securitytestingautho" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
-        verify:meridian-fs.com/security/PT-2026-0042 <span data-bracket="end" data-for="securitytestingautho">]</span>
+        verify:meridian-fs.com/security/PT-2026-0042 <span verifiable-text="end" data-for="securitytestingautho">]</span>
       </div>
     </div>
   </div>
@@ -99,7 +99,7 @@ Without it, they're committing computer crimes. With it, they're performing a le
 <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="securitytestingautho" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
-        verify:nexus-tech.com/bounty/BB-7742 <span data-bracket="end" data-for="securitytestingautho">]</span>
+        verify:nexus-tech.com/bounty/BB-7742 <span verifiable-text="end" data-for="securitytestingautho">]</span>
       </div>
     </div>
   </div>
@@ -137,7 +137,7 @@ Verification confirms: "Yes, this researcher is registered in our program and th
 <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="securitytestingautho" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
-        verify:nationalgrid.com/security/RT-2026-TS <span data-bracket="end" data-for="securitytestingautho">]</span>
+        verify:nationalgrid.com/security/RT-2026-TS <span verifiable-text="end" data-for="securitytestingautho">]</span>
       </div>
     </div>
   </div>

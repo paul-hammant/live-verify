@@ -31,7 +31,7 @@ Because these claims can hit 20 years after a person retires, the paperwork must
 <div style="font-size: 1em; line-height: 1.6; color: #333;">
       <p>This document confirms that the following individuals are insured for their fiduciary responsibilities under ERISA Section 409:</p>
 <div style="background: #fdfdfd; border: 1px solid #ddd; padding: 15px; margin: 20px 0;">
-        <p><strong>Pension Scheme:</strong> <span data-bracket="start" data-for="pension">[</span>Globochem Retirement Master Trust<br>
+        <p><strong>Pension Scheme:</strong> <span verifiable-text="start" data-for="pension">[</span>Globochem Retirement Master Trust<br>
         <strong>Named Trustees:</strong> Peter Gibbons, Michael Bolton, Samir Nagheenanajar</p>
 <p><strong>Limit of Indemnity:</strong> $ 10,000,000.00<br>
         <strong>Self-Insured Retention:</strong> $ 100,000.00</p>
@@ -44,7 +44,7 @@ Because these claims can hit 20 years after a person retires, the paperwork must
     </div>
 <div data-verify-line="pension" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: AXA XL doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:axaxl.com/fiduciary/v/PTL992288 <span data-bracket="end" data-for="pension">]</span>
+      verify:axaxl.com/fiduciary/v/PTL992288 <span verifiable-text="end" data-for="pension">]</span>
     </div>
   </div>
 </div>

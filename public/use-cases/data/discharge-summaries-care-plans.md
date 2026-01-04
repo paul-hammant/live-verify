@@ -32,7 +32,7 @@ This paper is the #1 tool for preventing "Medical Errors" when a patient moves t
 <div style="padding: 25px;">
     <h3 style="margin-top: 0; color: #0277bd; border-bottom: 2px solid #0277bd; padding-bottom: 5px;">DISCHARGE INSTRUCTIONS</h3>
 <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Patient:</strong> <span data-bracket="start" data-for="discharge">[</span><strong>WAYNE, BRUCE</strong> (DOB: 02/19/1972)<br>
+      <p><strong>Patient:</strong> <span verifiable-text="start" data-for="discharge">[</span><strong>WAYNE, BRUCE</strong> (DOB: 02/19/1972)<br>
       <strong>Admission Date:</strong> March 10, 2026<br>
       <strong>Discharge Date:</strong> March 15, 2026</p>
 <div style="background: #e1f5fe; padding: 15px; border: 1px solid #b3e5fc; margin: 15px 0;">
@@ -52,7 +52,7 @@ This paper is the #1 tool for preventing "Medical Errors" when a patient moves t
     </div>
 <div data-verify-line="discharge" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Cedars-Sinai doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:cedars-sinai.org/discharge/v/998877X <span data-bracket="end" data-for="discharge">]</span>
+      verify:cedars-sinai.org/discharge/v/998877X <span verifiable-text="end" data-for="discharge">]</span>
     </div>
   </div>
 </div>

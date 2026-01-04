@@ -24,7 +24,7 @@ Merchants need these verified letters to prove to lenders and business partners 
 <div style="padding: 25px;">
     <h3 style="margin-top: 0; color: #003087; border-bottom: 2px solid #003087; padding-bottom: 5px;">CHARGEBACK DISPUTE SUMMARY</h3>
 <div style="font-size: 0.9em; line-height: 1.5; color: #333;">
-      <p><strong>Merchant:</strong> <span data-bracket="start" data-for="chargeback">[</span>Electronic Emporium, LLC<br>
+      <p><strong>Merchant:</strong> <span verifiable-text="start" data-for="chargeback">[</span>Electronic Emporium, LLC<br>
       <strong>Transaction Date:</strong> Feb 10, 2026<br>
       <strong>Amount Disputed:</strong> $ 1,250.00</p>
 <div style="background: #f5f5f5; border: 1px solid #ddd; padding: 15px; margin: 15px 0;">
@@ -37,7 +37,7 @@ Merchants need these verified letters to prove to lenders and business partners 
     </div>
 <div data-verify-line="chargeback" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: PayPal doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:paypal.com/disputes/v/PP-D-99887766 <span data-bracket="end" data-for="chargeback">]</span>
+      verify:paypal.com/disputes/v/PP-D-99887766 <span verifiable-text="end" data-for="chargeback">]</span>
     </div>
   </div>
 </div>

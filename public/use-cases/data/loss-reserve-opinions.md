@@ -18,7 +18,7 @@ furtherDerivations: 1
   </div>
 <h3 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; color: #d32f2f; border-bottom: 2px solid #d32f2f; padding-bottom: 10px;">Statement of Actuarial Opinion (SAO)</h3>
 <div style="font-size: 0.95em; line-height: 1.6; text-align: justify; color: #333; margin-top: 20px;">
-    <p>I, <span data-bracket="start" data-for="loss-res">[</span><strong>Robert Miller, FCAS, MAAA</strong>, Appointed Actuary, do hereby certify that the loss and loss adjustment expense reserves for the <strong>Florida Homeowners Portfolio</strong> as of Dec 31, 2025:</p>
+    <p>I, <span verifiable-text="start" data-for="loss-res">[</span><strong>Robert Miller, FCAS, MAAA</strong>, Appointed Actuary, do hereby certify that the loss and loss adjustment expense reserves for the <strong>Florida Homeowners Portfolio</strong> as of Dec 31, 2025:</p>
 <ul>
       <li>Are developed using standard actuarial methodologies (Chain Ladder, Bornhuetter-Ferguson).</li>
       <li>Meet the requirements of the National Association of Insurance Commissioners (NAIC).</li>
@@ -34,7 +34,7 @@ furtherDerivations: 1
   </div>
 <div data-verify-line="loss-res" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: State Farm doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:statefarm.com/actuarial/v/LOSS2026FL <span data-bracket="end" data-for="loss-res">]</span>
+      verify:statefarm.com/actuarial/v/LOSS2026FL <span verifiable-text="end" data-for="loss-res">]</span>
   </div>
 </div>
 

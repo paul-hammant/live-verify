@@ -21,7 +21,7 @@ These pages are the "Lifeblood of Title." Fraud is high-stakes: criminals create
       <div style="font-size: 1.2em; margin-top: 5px;">15 MAR 2026</div>
     </div>
     <div style="text-align: right; font-size: 0.8em; line-height: 1.4;">
-      <strong>INSTRUMENT #:</strong> <span data-bracket="start" data-for="record">[</span>2026-R-992288<br>
+      <strong>INSTRUMENT #:</strong> <span verifiable-text="start" data-for="record">[</span>2026-R-992288<br>
       <strong>DOC TYPE:</strong> WARRANTY DEED<br>
       <strong>PAGES:</strong> 4 • <strong>FEE:</strong> $ 42.00
     </div>
@@ -40,7 +40,7 @@ These pages are the "Lifeblood of Title." Fraud is high-stakes: criminals create
 <div style="padding: 20px; background: #fffbe6; border-top: 1px solid #000; text-align: center;">
     <div data-verify-line="record" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: County recorders don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:cookcountyclerk.com/v/2026R992288 <span data-bracket="end" data-for="record">]</span>
+      verify:cookcountyclerk.com/v/2026R992288 <span verifiable-text="end" data-for="record">]</span>
     </div>
     <div style="font-size: 0.7em; color: #666; margin-top: 10px; font-style: italic;">
       Scan to verify instrument authenticity, view the full 4-page scanned image, and check for subsequent 'Notice of Rescission'.

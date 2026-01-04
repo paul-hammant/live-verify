@@ -25,7 +25,7 @@ Homeowners use these "Pocket Cards" to verify who they are letting onto their ro
 <div style="padding: 30px;">
     <div style="text-align: center; border-bottom: 2px solid #004d40; padding-bottom: 10px; margin-bottom: 20px;">
       <h3 style="margin: 0; color: #004d40;">ACTIVE LICENSE</h3>
-      <div style="font-size: 1.2em; font-weight: bold; margin-top: 5px;">License #: <span data-bracket="start" data-for="contractor">[</span>998877</div>
+      <div style="font-size: 1.2em; font-weight: bold; margin-top: 5px;">License #: <span verifiable-text="start" data-for="contractor">[</span>998877</div>
     </div>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
       <p><strong>Business Name:</strong> Apex Building Group, LLC<br>
@@ -44,7 +44,7 @@ Homeowners use these "Pocket Cards" to verify who they are letting onto their ro
     </div>
 <div data-verify-line="contractor" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: State Board doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:cslb.ca.gov/v/998877 <span data-bracket="end" data-for="contractor">]</span>
+      verify:cslb.ca.gov/v/998877 <span verifiable-text="end" data-for="contractor">]</span>
     </div>
   </div>
 </div>

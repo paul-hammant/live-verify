@@ -31,7 +31,7 @@ Big shippers (like Apple or Samsung) will not hire a forwarder without verified 
 <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
       <p>This document confirms that the following Member is entered for Freight Forwarder Liability:</p>
 <div style="background: #f0f4f8; border: 1px solid #d1d9e6; padding: 15px; margin: 15px 0;">
-        <strong>Member Name:</strong> <span data-bracket="start" data-for="forward">[</span>Global Logistics Solutions, Ltd.<br>
+        <strong>Member Name:</strong> <span verifiable-text="start" data-for="forward">[</span>Global Logistics Solutions, Ltd.<br>
         <strong>Region:</strong> Hong Kong / South East Asia
       </div>
 <p><strong>Cargo Liability:</strong> USD 500,000 per occurrence.<br>
@@ -44,7 +44,7 @@ Big shippers (like Apple or Samsung) will not hire a forwarder without verified 
     </div>
 <div data-verify-line="forward" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: TT Club doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:ttclub.com/members/v/992288 <span data-bracket="end" data-for="forward">]</span>
+      verify:ttclub.com/members/v/992288 <span verifiable-text="end" data-for="forward">]</span>
     </div>
   </div>
 </div>

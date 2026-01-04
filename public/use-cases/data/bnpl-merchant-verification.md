@@ -19,7 +19,7 @@ furtherDerivations: 1
       <div style="font-size: 0.9em; color: #666; margin-top: 5px;">Relationship ID: KL-MER-992288</div>
     </div>
 <div style="font-size: 1em; line-height: 1.6; color: #333;">
-      <p>This certifies that <span data-bracket="start" data-for="bnpl-merch">[</span><strong>LUXURY WATCH BOUTIQUE, INC.</strong></p>
+      <p>This certifies that <span verifiable-text="start" data-for="bnpl-merch">[</span><strong>LUXURY WATCH BOUTIQUE, INC.</strong></p>
       <p>Is an authorized merchant partner of Klarna Bank AB. This merchant has passed our financial and compliance vetting process and is authorized to offer "Pay in 4" and "Financing" products to eligible customers.</p>
 <p><strong>Status:</strong> VERIFIED<br>
       <strong>Authorized Since:</strong> JAN 15, 2024<br>
@@ -30,7 +30,7 @@ furtherDerivations: 1
     </div>
 <div data-verify-line="bnpl-merch" style="border-top: 1px dashed #ffb3c1; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Klarna doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:klarna.com/merchants/v/992288 <span data-bracket="end" data-for="bnpl-merch">]</span>
+      verify:klarna.com/merchants/v/992288 <span verifiable-text="end" data-for="bnpl-merch">]</span>
     </div>
   </div>
 </div>

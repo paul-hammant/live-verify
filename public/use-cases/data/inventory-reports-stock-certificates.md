@@ -17,7 +17,7 @@ furtherDerivations: 1
 <div style="font-size: 0.85em; line-height: 1.4;">
     <div style="display: flex; justify-content: space-between;">
       <div>
-        <strong>Depositor:</strong> <span data-bracket="start" data-for="inventory">[</span>Premium Seafood Imports, Inc.<br>
+        <strong>Depositor:</strong> <span verifiable-text="start" data-for="inventory">[</span>Premium Seafood Imports, Inc.<br>
         <strong>Warehouse:</strong> Pier 42 Cold Hub, Seattle, WA
       </div>
       <div style="text-align: right;">
@@ -51,7 +51,7 @@ furtherDerivations: 1
     </div>
 <div data-verify-line="inventory" style="border-top: 1px dashed #999; margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #555; text-align: center;"
       title="Demo only: Warehouse doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:global-coldstorage.com/inventory/v/INV992288 <span data-bracket="end" data-for="inventory">]</span>
+      verify:global-coldstorage.com/inventory/v/INV992288 <span verifiable-text="end" data-for="inventory">]</span>
     </div>
   </div>
 </div>

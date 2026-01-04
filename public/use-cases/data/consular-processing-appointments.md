@@ -31,7 +31,7 @@ Fraudsters often create fake notices to get people into high-security zones or t
     </div>
 <h2 style="text-align: center; font-size: 1.2em; margin-bottom: 20px; text-transform: uppercase;">Visa Interview Appointment Notice</h2>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
-      <p><strong>Principal Applicant:</strong> <span data-bracket="start" data-for="consul-app">[</span>SARAH JANE SMITH</p>
+      <p><strong>Principal Applicant:</strong> <span verifiable-text="start" data-for="consul-app">[</span>SARAH JANE SMITH</p>
 <div style="background: #f0f4f8; border: 1px solid #d1d9e6; padding: 15px; margin: 15px 0;">
         <p><strong>Interview Date:</strong> March 15, 2026<br>
         <strong>Interview Time:</strong> 08:30 AM</p>
@@ -43,7 +43,7 @@ Fraudsters often create fake notices to get people into high-security zones or t
     </div>
 <div data-verify-line="consul-app" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: NVC doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:nvc.state.gov/appointments/v/MTL2026998877 <span data-bracket="end" data-for="consul-app">]</span>
+      verify:nvc.state.gov/appointments/v/MTL2026998877 <span verifiable-text="end" data-for="consul-app">]</span>
     </div>
   </div>
 </div>

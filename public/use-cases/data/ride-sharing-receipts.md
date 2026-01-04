@@ -24,7 +24,7 @@ Fraud is high-frequency and low-barrier: employees use "Ride Receipt Generator" 
   </div>
 <div style="padding: 20px;">
     <div style="font-size: 0.9em; line-height: 1.6; color: #333; margin-bottom: 20px;">
-      <p><strong>Rider:</strong> <span data-bracket="start" data-for="ride">[</span>JOHN DOE<br>
+      <p><strong>Rider:</strong> <span verifiable-text="start" data-for="ride">[</span>JOHN DOE<br>
       <strong>Trip ID:</strong> 99228877-XJ-42</p>
 <div style="margin: 15px 0; border-left: 2px solid #000; padding-left: 15px;">
         <div style="font-size: 0.8em; color: #888;">PICKUP:</div>
@@ -55,7 +55,7 @@ Fraud is high-frequency and low-barrier: employees use "Ride Receipt Generator" 
 <div style="padding: 20px; background: #f6f6f6; border-top: 1px solid #eee; text-align: center;">
     <div data-verify-line="ride" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Uber doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:uber.com/receipts/v/99228877XJ <span data-bracket="end" data-for="ride">]</span>
+      verify:uber.com/receipts/v/99228877XJ <span verifiable-text="end" data-for="ride">]</span>
     </div>
     <div style="font-size: 0.7em; color: #999; margin-top: 10px; font-style: italic;">
       Scan to verify trip integrity, route details, and payment authenticity.

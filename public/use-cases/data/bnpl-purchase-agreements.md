@@ -24,7 +24,7 @@ furtherDerivations: 1
       </div>
     </div>
 <div style="font-size: 0.95em; line-height: 1.5; color: #333; border: 1px solid #000; padding: 15px; margin-bottom: 20px;">
-      <p><strong>Borrower:</strong> <span data-bracket="start" data-for="bnpl">[</span><strong>JOHN SMITH</strong></p>
+      <p><strong>Borrower:</strong> <span verifiable-text="start" data-for="bnpl">[</span><strong>JOHN SMITH</strong></p>
 <table style="width: 100%; border-collapse: collapse;">
         <tr>
           <td>Amount Financed:</td>
@@ -49,7 +49,7 @@ furtherDerivations: 1
     </div>
 <div data-verify-line="bnpl" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Affirm doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:affirm.com/loans/v/AF998877 <span data-bracket="end" data-for="bnpl">]</span>
+      verify:affirm.com/loans/v/AF998877 <span verifiable-text="end" data-for="bnpl">]</span>
     </div>
   </div>
 </div>

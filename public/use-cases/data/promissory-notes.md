@@ -24,7 +24,7 @@ These documents are the "Paper Gold" of the lending industry. In the **Secondary
       <div>$ 125,000.00</div>
       <div>MARCH 15, 2026</div>
     </div>
-<p>FOR VALUE RECEIVED, the undersigned <span data-bracket="start" data-for="note">[</span><strong>ROBERT J. MILLER</strong> (the "Borrower"), promises to pay to the order of <strong>GOLIATH NATIONAL BANK</strong> (the "Lender"), the principal sum of <strong>One Hundred Twenty-Five Thousand Dollars</strong> ($125,000.00) with interest at the rate of <strong>6.5%</strong> per annum.</p>
+<p>FOR VALUE RECEIVED, the undersigned <span verifiable-text="start" data-for="note">[</span><strong>ROBERT J. MILLER</strong> (the "Borrower"), promises to pay to the order of <strong>GOLIATH NATIONAL BANK</strong> (the "Lender"), the principal sum of <strong>One Hundred Twenty-Five Thousand Dollars</strong> ($125,000.00) with interest at the rate of <strong>6.5%</strong> per annum.</p>
 <div style="background: #f9f9f9; padding: 15px; border: 1px solid #ccc; margin: 20px 0;">
       <strong>Payment Terms:</strong> Monthly installments of $790.00 commencing May 1, 2026. Final payment due March 1, 2041 (Maturity).
     </div>
@@ -36,7 +36,7 @@ These documents are the "Paper Gold" of the lending industry. In the **Secondary
 <div style="padding: 20px; background: #fffbe6; border: 1px dashed #999; margin-top: 30px; text-align: center;">
     <div data-verify-line="note" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: Banks don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:goliathbank.com/v/NOTE992288-RM <span data-bracket="end" data-for="note">]</span>
+      verify:goliathbank.com/v/NOTE992288-RM <span verifiable-text="end" data-for="note">]</span>
     </div>
     <div style="font-size: 0.7em; color: #666; margin-top: 8px;">
       Scan to verify principal amount, interest rate, and current lien holder status.

@@ -20,7 +20,7 @@ Under regimes like SM&CR (UK) or FINRA (US), firms must annually attest that sta
     <div style="font-size: 0.8em;">SM&CR Certification Regime</div>
   </div>
   <div style="padding: 20px; font-size: 0.9em; line-height: 1.6;">
-    <p><strong>Employee:</strong> <span data-bracket="start" data-for="fitandproperattestat">[</span>Sarah Mitchell<br>
+    <p><strong>Employee:</strong> <span verifiable-text="start" data-for="fitandproperattestat">[</span>Sarah Mitchell<br>
     <strong>Role:</strong> Portfolio Manager (Certification Function CF30)<br>
     <strong>Firm:</strong> Albion Asset Management<br>
     <strong>Assessment Date:</strong> March 1, 2026</p>
@@ -36,7 +36,7 @@ Under regimes like SM&CR (UK) or FINRA (US), firms must annually attest that sta
 <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="fitandproperattestat" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
-        verify:albion-am.com/smcr/SM-2026-0301 <span data-bracket="end" data-for="fitandproperattestat">]</span>
+        verify:albion-am.com/smcr/SM-2026-0301 <span verifiable-text="end" data-for="fitandproperattestat">]</span>
       </div>
     </div>
   </div>

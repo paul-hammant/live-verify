@@ -19,7 +19,7 @@ furtherDerivations: 1
 <div style="padding: 25px;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
       <div style="border: 1px solid #000; padding: 5px 10px; font-weight: bold;">INTERVIEW NOTICE</div>
-      <div style="text-align: right; font-family: monospace;">Receipt #: <span data-bracket="start" data-for="im-inter">[</span>MSC2699887766</div>
+      <div style="text-align: right; font-family: monospace;">Receipt #: <span verifiable-text="start" data-for="im-inter">[</span>MSC2699887766</div>
     </div>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
       <p><strong>Applicant:</strong> JOHN JACOB DOE<br>
@@ -35,7 +35,7 @@ furtherDerivations: 1
     </div>
 <div data-verify-line="im-inter" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: USCIS doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:uscis.gov/appointments/v/MSC2699887766 <span data-bracket="end" data-for="im-inter">]</span>
+      verify:uscis.gov/appointments/v/MSC2699887766 <span verifiable-text="end" data-for="im-inter">]</span>
     </div>
   </div>
 </div>

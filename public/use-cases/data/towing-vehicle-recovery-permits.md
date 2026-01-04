@@ -28,7 +28,7 @@ This industry is a primary target for "Bandit Towers"—unlicensed operators who
     </div>
     <div style="flex-grow: 1;">
       <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Operator Name</div>
-      <div style="font-size: 1.2em; font-weight: bold; margin: 0 0 10px 0; color: #333;"><span data-bracket="start" data-for="tow">[</span>SARAH J. SMITH</div>
+      <div style="font-size: 1.2em; font-weight: bold; margin: 0 0 10px 0; color: #333;"><span verifiable-text="start" data-for="tow">[</span>SARAH J. SMITH</div>
 <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">License #</div>
       <div style="font-size: 1.1em; font-weight: bold; margin: 0 0 10px 0; letter-spacing: 1px;">TOW-992288</div>
 <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Company</div>
@@ -42,7 +42,7 @@ This industry is a primary target for "Bandit Towers"—unlicensed operators who
 <div style="padding: 15px 20px 20px 20px; background: #fff;">
     <div data-verify-line="tow" style="border-top: 1px dashed #999; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; text-align: center; font-weight: bold;"
       title="Demo only: Police departments don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:springfieldpd.gov/v/TOW992288 <span data-bracket="end" data-for="tow">]</span>
+      verify:springfieldpd.gov/v/TOW992288 <span verifiable-text="end" data-for="tow">]</span>
     </div>
     <div style="font-size: 0.65em; color: #999; margin-top: 8px; text-align: center;">
       Scan to verify insurance validity, criminal background clearance, and legal impound authority.

@@ -22,7 +22,7 @@ These documents are high-stakes because they are used as proof of "Intent to Tra
     </div>
     <div style="text-align: right;">
       <h2 style="margin: 0; font-size: 1.2em;">INVOICE</h2>
-      <div style="font-size: 0.9em; font-weight: bold; margin-top: 5px;"># <span data-bracket="start" data-for="travel">[</span>ETP-2026-8844</div>
+      <div style="font-size: 0.9em; font-weight: bold; margin-top: 5px;"># <span verifiable-text="start" data-for="travel">[</span>ETP-2026-8844</div>
     </div>
   </div>
 <div style="padding: 25px; border-bottom: 1px solid #eee; font-size: 0.9em; line-height: 1.5;">
@@ -59,7 +59,7 @@ These documents are high-stakes because they are used as proof of "Intent to Tra
 <div style="padding: 20px; background: #fdfdfd; border-top: 1px solid #eee; text-align: center;">
     <div data-verify-line="travel" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #002366; font-weight: bold;"
       title="Demo only: Travel agencies don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:elitetravel.com/v/ETP20268844 <span data-bracket="end" data-for="travel">]</span>
+      verify:elitetravel.com/v/ETP20268844 <span verifiable-text="end" data-for="travel">]</span>
     </div>
     <div style="font-size: 0.7em; color: #777; margin-top: 10px; font-style: italic;">
       Scan to verify itinerary authenticity, payment status, and Virtuoso&reg; protection.

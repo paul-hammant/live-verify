@@ -18,7 +18,7 @@ Because this document governs the distribution of hundreds of thousands of dolla
   <div style="background: #eee; padding: 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #000;">
     <div style="font-weight: bold; font-size: 1.2em;">ALTA SETTLEMENT STATEMENT</div>
     <div style="text-align: right;">
-      <div style="font-size: 0.8em; color: #666;">File #: <span data-bracket="start" data-for="settle">[</span>ESC-99228877-XJ</div>
+      <div style="font-size: 0.8em; color: #666;">File #: <span verifiable-text="start" data-for="settle">[</span>ESC-99228877-XJ</div>
       <div style="font-size: 0.8em; color: #666;">Date: 15 MAR 2026</div>
     </div>
   </div>
@@ -63,7 +63,7 @@ Because this document governs the distribution of hundreds of thousands of dolla
     </div>
     <div data-verify-line="settle" style="border-top: 1px dashed #999; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Title companies don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:springfield-title.com/v/ESC99228877 <span data-bracket="end" data-for="settle">]</span>
+      verify:springfield-title.com/v/ESC99228877 <span verifiable-text="end" data-for="settle">]</span>
     </div>
   </div>
 </div>
