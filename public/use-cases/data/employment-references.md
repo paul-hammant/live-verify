@@ -41,10 +41,20 @@ Fraud is common: "Reference Mills" sell fake employment letters. OCR-to-hash con
 <div style="max-width: 550px; margin: 24px auto; font-family: 'Times New Roman', serif; border: 1px solid #999; background: #fff; padding: 40px 40px 20px 40px; position: relative;">
   <h3 style="margin: 0 0 20px 0; font-size: 1.1em; text-transform: uppercase; letter-spacing: 1px;">References</h3>
   <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
-    <p style="margin-bottom: 15px;"><strong>Widget Industries</strong> — Project Manager, 2016–2020<br>
-    <em>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</em></p>
-    <p style="margin-bottom: 15px;"><strong>StartupCo</strong> — Junior Developer, 2014–2016<br>
-    <em>Sed do eiusmod tempor incididunt ut labore.</em></p>
+    <div style="font-family: 'Courier New', monospace; background: #f0f0f0; padding: 12px; border: 1px solid #ccc; font-size: 0.95em; color: #999; line-height: 1.5; margin-bottom: 15px;">
+      StartupCo<br>
+      John D. Smith<br>
+      Junior Developer<br>
+      June 2014 – August 2016<br>
+      <span style="color: #bbb;">no verification available</span>
+    </div>
+    <div style="font-family: 'Courier New', monospace; background: #f0f0f0; padding: 12px; border: 1px solid #ccc; font-size: 0.95em; color: #999; line-height: 1.5; margin-bottom: 15px;">
+      Widget Industries<br>
+      John D. Smith<br>
+      Project Manager<br>
+      September 2016 – February 2020<br>
+      <span style="color: #bbb;">no verification available</span>
+    </div>
     <div style="font-family: 'Courier New', monospace; background: #f9f9f9; padding: 12px; border: 1px solid #999; font-size: 0.95em; color: #000; line-height: 1.5; margin-bottom: 15px;">
       <span verifiable-text="start" data-for="voe2">[</span>Acme Corporation<br>
       John D. Smith<br>
