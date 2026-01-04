@@ -29,7 +29,7 @@ OCR-to-hash allows a resident or security guard to scan the driver's ID badge or
     </div>
     <div style="flex-grow: 1;">
       <div style="font-size: 0.75em; color: #888; text-transform: uppercase;">Courier</div>
-      <div style="font-size: 1.3em; font-weight: bold; margin: 0 0 12px 0; color: #333;"><span verifiable-text="start" data-for="courier">[</span>Mark S 7766</div>
+      <div style="font-size: 1.3em; font-weight: bold; margin: 0 0 12px 0; color: #333;">Mark S 7766</div>
 <div style="font-size: 0.75em; color: #888; text-transform: uppercase;">Hub</div>
       <div style="font-size: 0.9em; font-weight: bold;">Memphis</div>
     </div>
@@ -38,9 +38,8 @@ OCR-to-hash allows a resident or security guard to scan the driver's ID badge or
     <div style="font-size: 0.7em; color: #666; text-align: center; margin-bottom: 15px; line-height: 1.3;">
       Scan to verify employment status and current delivery route authorization.
     </div>
-    <div data-verify-line="courier" style="border-top: 1px dashed #bbb; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 1em; color: #ff6600; text-align: center; font-weight: bold;"
-      title="Demo only: Courier companies don't yet offer verification&#10;endpoints, so this is illustrative">
-      vfy:drivers.fedex.com <span verifiable-text="end" data-for="courier">]</span>
+    <div style="border-top: 1px dashed #bbb; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.9em; color: #999; text-align: center;">
+      https://fedex.com
     </div>
   </div>
 </div>
@@ -148,7 +147,7 @@ Scammers often wear fake high-visibility vests to get inside apartment buildings
     </div>
     <div style="flex-grow: 1;">
       <h4 style="margin: 0; color: #232f3e;">DA-1 DRIVER</h4>
-      <div style="font-size: 1.3em; font-weight: bold; margin: 5px 0;"><span verifiable-text="start" data-for="driver">[</span>Carlos R 42882</div>
+      <div style="font-size: 1.3em; font-weight: bold; margin: 5px 0;">Carlos R 42882</div>
       <div style="font-size: 0.9em; color: #333; line-height: 1.4;">
         <strong>Region:</strong> San Francisco, CA<br>
         <strong>Status:</strong> ON-DUTY
@@ -157,11 +156,10 @@ Scammers often wear fake high-visibility vests to get inside apartment buildings
   </div>
 <div style="padding: 0 20px 20px 20px;">
     <p style="font-size: 0.75em; color: #555; font-style: italic; text-align: center;">
-      Verified via the Amazon Logistics Partner Network. Scan to confirm driver's current on-duty status and route authorization.
+      Traditional ID card. For verification, scan an e-ink badge if available.
     </p>
-    <div data-verify-line="driver" style="border-top: 1px dashed #999; margin-top: 10px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.9em; color: #555; text-align: center;"
-      title="Demo only: Amazon doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      vfy:logistics.amazon.com <span verifiable-text="end" data-for="driver">]</span>
+    <div style="border-top: 1px dashed #999; margin-top: 10px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.9em; color: #999; text-align: center;">
+      https://logistics.amazon.com
     </div>
   </div>
 </div>
