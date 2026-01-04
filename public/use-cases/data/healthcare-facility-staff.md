@@ -22,6 +22,66 @@ The **Healthcare Staff ID Badge** serves two purposes:
 
 **Credentialing example:** "Dr. Smith, Cardiologist, License #3342" — verify the person is actually a credentialed cardiologist with an active, non-suspended license before they order medications for you.
 
+### Static Card (Traditional)
+
+<div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; border-radius: 8px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="background: #005eb8; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
+    <div style="font-weight: bold; font-size: 1.2em;">MAYO CLINIC</div>
+    <div style="font-size: 0.8em; opacity: 0.9;">Saint Marys Campus</div>
+  </div>
+<div style="padding: 20px; display: flex;">
+    <div style="width: 100px; margin-right: 15px;">
+      <div style="width: 100px; height: 125px; background: #eee; border: 1px solid #ccc; display: flex; align-items: center; justify-content: center; color: #777;">[PHOTO]</div>
+    </div>
+    <div style="flex-grow: 1;">
+      <h4 style="margin: 0; color: #005eb8; text-transform: uppercase;">Registered Nurse</h4>
+      <div style="font-size: 1.2em; font-weight: bold; margin: 5px 0;"><span data-bracket="start" data-for="nurse">[</span>Sarah J. RN</div>
+      <div style="font-size: 0.85em; color: #333; line-height: 1.4;">
+        <strong>Dept:</strong> ICU / Critical Care<br>
+        <strong>ID:</strong> 88291<br>
+        <strong>Lic:</strong> MN-RN-22919
+      </div>
+    </div>
+  </div>
+<div style="padding: 0 20px 20px 20px;">
+    <div style="background: #e6f2ff; padding: 8px; border-radius: 4px; text-align: center; margin-bottom: 10px;">
+      <strong style="color: #005eb8;">CODE BLUE TEAM</strong>
+    </div>
+    <div data-verify-line="nurse" style="border-top: 1px dashed #999; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
+      title="Demo only: Mayo Clinic doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:mayoclinic.org/staff <span data-bracket="end" data-for="nurse">]</span>
+    </div>
+  </div>
+</div>
+
+### E-Ink Live Card (Next Generation)
+
+Static cards display full names and license numbers permanently, which can lead to doxing or stalking by hostile patients. An **e-ink healthcare badge** with a rotating salt protects staff privacy while ensuring patient safety.
+
+<div style="max-width: 320px; margin: 24px auto; font-family: 'Courier New', monospace; border: 3px solid #005eb8; border-radius: 8px; background: #f5f5f0; padding: 20px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+  <div style="font-size: 1em; color: #005eb8; font-weight: bold; margin-bottom: 8px;">MAYO CLINIC</div>
+  <div style="font-size: 1em; font-weight: bold; color: #000; margin-bottom: 8px;"><span data-bracket="start" data-for="eink-nurse">[</span>Sarah J.</div>
+  <div style="font-size: 1em; color: #333; margin-bottom: 8px;">Registered Nurse - ICU</div>
+  <div style="font-size: 1em; color: #005eb8; margin-bottom: 12px;">
+    Salt: 3p9x2m5k
+  </div>
+  <div data-verify-line="eink-nurse" style="font-size: 1em; color: #555;"
+    title="Demo only: Mayo Clinic doesn't yet offer verification endpoints">
+    vfy:mayoclinic.org <span data-bracket="end" data-for="eink-nurse">]</span>
+  </div>
+</div>
+
+*Salt rotates every 30 mins*
+
+**Security Features:**
+- **Cloning Protection:** Because the salt rotates, a photographed copy becomes invalid shortly after.
+- **Credential Verification:** Verifies the nurse is *currently* licensed and credentialed (not suspended).
+- **Unit Authorization:** Can confirm if the staff member is authorized for the specific unit (e.g., ICU) where the patient is located.
+
+**Staff Privacy & Safety:**
+- **Anti-Doxing:** The verification proves "Authorized RN" without exposing the permanent license number or full legal name to every patient, preventing license lookup harassment.
+- **No Stalking:** Rotating salts prevent hostile individuals from tracking a specific nurse's shift patterns by logging static hashes.
+
 ## Why Healthcare Needs This Pattern
 
 **Healthcare facilities match the "Mobile Service Staff in Ungated Facilities" pattern precisely:**

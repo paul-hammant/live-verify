@@ -10,10 +10,12 @@ This document explains technical concepts referenced across multiple use case do
 4. [Hash Algorithms](#hash-algorithms)
 5. [Response Formats](#response-formats)
 6. [Photo Encoding](#photo-encoding)
-7. [OCR Challenges](#ocr-challenges)
-8. [Deployment Architecture](#deployment-architecture-air-gapped-originals-public-hashes)
-9. [Independent Witnessing & Stateful Verification](#independent-witnessing--stateful-verification)
-10. [Sector-Specific Implementation Nuances](#sector-specific-implementation-nuances)
+7. [Dynamic Badges & Worker Verification](#dynamic-badges--worker-verification)
+8. [OCR Challenges](#ocr-challenges)
+9. [Standard Libraries & Native Integration](#standard-libraries--native-integration)
+10. [Deployment Architecture](#deployment-architecture-air-gapped-originals-public-hashes)
+11. [Independent Witnessing & Stateful Verification](#independent-witnessing--stateful-verification)
+12. [Sector-Specific Implementation Nuances](#sector-specific-implementation-nuances)
 
 ---
 
@@ -444,6 +446,37 @@ See [Use_Case-Sales_Receipts.md](Use_Case-Sales_Receipts.md) lines 106-124.
 **Still 100% on-device** - maintains privacy guarantee.
 
 See [README.md: Privacy-First Architecture](README.md#privacy-first-architecture-why-client-side-ocr-matters) for detailed discussion.
+
+---
+
+## Standard Libraries & Native Integration
+
+As the ecosystem matures, the processing pipeline (text capture → normalization → hashing → verification) becomes a candidate for standardization at the OS or library level.
+
+**Inevitable Library Availability:**
+We anticipate that native libraries for **iOS, Android, Windows, macOS, and Linux** will eventually be made available (by OS vendors or trusted third parties) to handle this pipeline atomically. Similarly, **JavaScript and WebAssembly (WASM)** versions will provide these capabilities for browser-based environments, allowing web-first applications to participate in the ecosystem.
+
+**Core Capabilities:**
+These libraries will encapsulate the entire flow:
+1.  **Text Capture:** Secure, optimized camera access for text regions.
+2.  **Normalization:** Rigorous implementation of the ruleset (e.g., [NORMALIZATION.md](NORMALIZATION.md)) to guarantee hash consistency.
+3.  **Hashing:** Cryptographically secure hashing (SHA-256/512) with salt management.
+4.  **GET Processing:** Handling the verification network request securely.
+5.  **Outcome Display:** Rendering the result (OK/REVOKED) in a trusted UI component.
+
+**Non-Vetoable Judgment:**
+Crucially, the library itself indicates the verification judgment to the human user. This judgment (e.g., a green "Verified" shield or a red "Revoked" warning) is a **non-vetoable aspect of the library**. The calling application cannot intercept, suppress, or modify this final status display. This ensures that a malicious app cannot perform the verification and then lie to the user about the result.
+
+**Caution: The "Content Rectangle" Authenticity Gap**
+For web-based implementations (JavaScript/WASM), developers must exercise caution regarding where the verification outcome is displayed.
+- **Inauthentic Display:** Rendering a "Verified" checkmark or status message inside the **content rectangle** (the HTML DOM of the page itself) is inherently spoofable. Just as it would be inauthentic for the HTML content of a page to claim "This website is secure," it is untrustworthy for a page to declare its own verification success within its own layout.
+- **Trusted Display:** Higher trust is achieved when the outcome is displayed within the **"Browser Chrome"** (e.g., via a trusted browser extension or the address bar) or a **Native OS Overlay** that the underlying page content cannot manipulate. This aligns with platform standards for security indicators; for example, browser vendors place "Not Secure" warnings outside the viewport to lend authenticity to the judgment (see [Chrome's guidance on secure UI](https://developer.chrome.com/blog/avoid-not-secure-warn)).
+- **Platform Judgment:** The goal is to move the "judgment of truth" from the untrusted content to the trusted platform (OS or Browser).
+
+**Standardized Capability & Testing:**
+To ensure cross-platform interoperability, these libraries will likely be validated against a **Shipped Set of Test Cases**.
+-   **Purpose:** To prove that an Android library produces the exact same hash for a given physical document as an iOS or WASM library.
+-   **Mechanism:** A certification suite containing reference images, raw OCR outputs, and expected final hashes. Any library purporting to support the standard must pass 100% of these cases to be considered compliant.
 
 ---
 

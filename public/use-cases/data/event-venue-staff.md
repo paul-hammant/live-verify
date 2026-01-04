@@ -16,6 +16,66 @@ A **"Credential" or "Access Badge"** issued for the event proves the wearer is a
 
 Impostors pose multiple threats: they can steal high-value equipment (lighting rigs, sound systems, cameras), pirate backstage access to VIP areas, plant security threats, or exploit temporary chaos to commit fraud. E-Ink badges with real-time access status allow security teams to instantly verify any person's authorization, role, and access level—preventing unauthorized equipment theft, access escalation, and security breaches.
 
+### Static Card (Traditional)
+
+<div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 3px solid #000; border-radius: 0; background: #fff; overflow: hidden; box-shadow: 0 6px 15px rgba(0,0,0,0.3);">
+  <div style="background: #000; color: #00ff00; padding: 20px; text-align: center;">
+    <h2 style="margin: 0; text-transform: uppercase; font-weight: 900; letter-spacing: 2px;">ALL ACCESS</h2>
+    <div style="font-size: 0.8em; color: #fff; margin-top: 5px;">COACHELLA 2026</div>
+  </div>
+<div style="padding: 20px; display: flex;">
+    <div style="width: 100px; margin-right: 15px;">
+      <div style="width: 100px; height: 125px; background: #eee; border: 2px solid #000; display: flex; align-items: center; justify-content: center; color: #000; font-weight: bold;">[PHOTO]</div>
+    </div>
+    <div style="flex-grow: 1;">
+      <h3 style="margin: 0; color: #000; text-transform: uppercase;">STAGE CREW</h3>
+      <div style="font-size: 1.2em; font-weight: bold; margin: 5px 0;"><span data-bracket="start" data-for="crew">[</span>MIKE D.</div>
+      <div style="font-size: 0.9em; color: #333; line-height: 1.4;">
+        <strong>Company:</strong> Rhino Staging<br>
+        <strong>Zone:</strong> Stage A / Backstage<br>
+        <strong>Valid:</strong> Apr 14-16
+      </div>
+    </div>
+  </div>
+<div style="padding: 0 20px 20px 20px;">
+    <div style="background: #000; color: #fff; padding: 5px; text-align: center; font-weight: bold; margin-bottom: 10px;">
+      CREW
+    </div>
+    <div data-verify-line="crew" style="border-top: 1px dashed #999; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.9em; color: #000; text-align: center;"
+      title="Demo only: Event promoters don't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:coachella.com/staff <span data-bracket="end" data-for="crew">]</span>
+    </div>
+  </div>
+</div>
+
+### E-Ink Live Card (Next Generation)
+
+Printed laminates are easily forged or stolen. An **e-ink event credential** with a rotating salt secures the perimeter and protects high-value zones.
+
+<div style="max-width: 320px; margin: 24px auto; font-family: 'Courier New', monospace; border: 4px solid #000; border-radius: 4px; background: #f0f0f0; padding: 20px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+  <div style="font-size: 1.2em; color: #000; font-weight: 900; margin-bottom: 8px;">COACHELLA</div>
+  <div style="font-size: 1em; font-weight: bold; color: #000; margin-bottom: 8px;"><span data-bracket="start" data-for="eink-crew">[</span>Mike D.</div>
+  <div style="font-size: 1em; color: #333; margin-bottom: 8px;">Stage Crew - Zone A</div>
+  <div style="font-size: 1em; color: #000; margin-bottom: 12px; background: #fff; display: inline-block; padding: 4px 8px; border: 1px solid #999;">
+    Salt: 5k9x2m
+  </div>
+  <div data-verify-line="eink-crew" style="font-size: 1em; color: #555;"
+    title="Demo only: Event promoters don't yet offer verification endpoints">
+    vfy:coachella.com <span data-bracket="end" data-for="eink-crew">]</span>
+  </div>
+</div>
+
+*Salt rotates every 10 mins*
+
+**Security Features:**
+- **Cloning Protection:** A photo of a pass cannot be used to sneak into VIP areas 20 minutes later.
+- **Zone Enforcement:** Verification instantly confirms if the holder is authorized for *this specific checkpoint* (e.g., Backstage vs. General Admission).
+- **Instant Revocation:** If a staff member is fired or ejected, their badge stops verifying immediately.
+
+**Staff Safety:**
+- **Privacy:** Prevents fans or stalkers from tracking crew members' movements or personal details via static QR codes.
+- **Validity:** Protects legitimate crew from being accused of having fake passes during security sweeps.
+
 ## Why Event Venues Need This Pattern
 
 **Event venues match the "Mobile Service Staff in Ungated Facilities" pattern in extreme form:**

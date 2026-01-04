@@ -25,7 +25,7 @@ Verification ensures that the "High Interest Rate" an agent promises you on thei
 
 ## Document Format Examples
 
-The annuity certification can arrive through different channels. Below: rotating view of how the same certification appears in different formats (5-second cycle with countdown):
+The annuity certification can arrive through different channels. Verification of them can happen from many of those starting points of claims made in a document/page: Email, WhatsApp, Windows or File explorer, PDF viewers. Forum apps like Discord or Slack, printed paper too, via a Camera app.
 
 <div id="format-showcase-annuity" class="content" data-format-showcase="[]" data-doc-content="" data-verify-line="verify:prudential.com/actuarial/v/x9y8z7">
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 1px solid #333; background: #fff; padding: 40px; box-shadow: 2px 2px 12px rgba(0,0,0,0.1);">

@@ -16,6 +16,8 @@ Fraudsters often wear high-visibility vests or fake corporate shirts to walk up 
 
 OCR-to-hash allows a resident or security guard to scan the driver's ID badge or a printed delivery manifest to verify: **"Is this person an authorized employee of this company, and are they assigned to this route today?"**
 
+### Static Card (Traditional)
+
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; border-radius: 8px; background: #fff; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
   <div style="background: #ff6600; color: #fff; padding: 15px; display: flex; align-items: center;">
     <div style="font-weight: bold; font-size: 1.4em; letter-spacing: -1px; margin-right: 10px;">FedEx</div>
@@ -130,6 +132,8 @@ The **Driver Badge** is their "Security Key." It proves they are an authorized w
 
 Scammers often wear fake high-visibility vests to get inside apartment buildings or gated communities to "case" homes or steal packages. OCR-to-hash allows a doorman or resident to scan the badge and see a green "ON-DUTY" status from the company's domain, stopping "Fake Courier" home invasions.
 
+### Static Card (Traditional)
+
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
   <div style="background: #232f3e; color: #fff; padding: 15px; text-align: center; display: flex; align-items: center; justify-content: center;">
     <div style="font-size: 1.5em; margin-right: 10px;">📦</div>
@@ -216,50 +220,33 @@ The **Delivery Driver** benefits from verification.
 
 **Privacy Salt:** Critical. Driver names and locations are sensitive. The hash must be salted to prevent "Stalking" attacks where someone tries to guess which driver is on a specific street.
 
-## Privacy-Preserving Badge Design
+### E-Ink Live Card (Next Generation)
 
-Delivery drivers are high-volume, low-value-per-interaction workers — completing 50-200 deliveries per day at $1-3 each. Their badge is seen by dozens of strangers daily. Full name exposure creates unnecessary privacy risk.
+Static cards can be photographed and reprinted. An **e-ink courier badge** with a rotating salt prevents cloning and protects driver privacy.
 
-**Badge shows:** First name + last initial + ID number (e.g., "Carlos R 42882")
-
-**Verification returns:** Photo, current delivery destination, on-duty status
-
-**Why this works:**
-- **Recipient gets what they need:** Photo match + confirmation driver is assigned to their area
-- **Driver privacy protected:** Full name not exposed to every doorbell camera and passerby
-- **Accountability preserved:** Platform maintains full identity; law enforcement can access if needed
-- **Audit trail intact:** All verifications logged with hash, timestamp, IP
-
-## E-Ink Badges with Per-Delivery Salt
-
-Static badges can be used to track drivers. Criminals planning package theft could monitor which driver hashes are verified on which streets, building route maps to intercept high-value deliveries or target drivers directly.
-
-**E-ink badge with rotating salt:**
-
-<div style="max-width: 280px; margin: 24px auto; font-family: sans-serif; border: 3px solid #232f3e; border-radius: 8px; background: #f5f5f0; padding: 20px; text-align: center;">
-  <div style="font-size: 0.8em; color: #232f3e; font-weight: bold; margin-bottom: 8px;">AMAZON LOGISTICS</div>
-  <div style="font-size: 1.4em; font-weight: bold; color: #000; margin-bottom: 5px;">Carlos R 42882</div>
-  <div style="font-family: 'Courier New', monospace; font-size: 1em; color: #232f3e; background: #fff; padding: 6px; border: 1px solid #ccc; border-radius: 4px; margin: 10px 0;">
-    Salt: 9m2k7x
+<div style="max-width: 320px; margin: 24px auto; font-family: 'Courier New', monospace; border: 3px solid #232f3e; border-radius: 8px; background: #f5f5f0; padding: 20px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+  <div style="font-size: 1em; color: #232f3e; font-weight: bold; margin-bottom: 8px;">AMAZON LOGISTICS</div>
+  <div style="font-size: 1em; font-weight: bold; color: #000; margin-bottom: 8px;"><span data-bracket="start" data-for="eink-driver">[</span>Carlos R 42882</div>
+  <div style="font-size: 1em; color: #333; margin-bottom: 8px;">San Francisco Metro</div>
+  <div style="font-size: 1em; color: #232f3e; margin-bottom: 12px;">
+    Salt: 9m2k7x3p
   </div>
-  <div style="font-family: 'Courier New', monospace; font-size: 0.9em; color: #555;">
-    vfy:logistics.amazon.com
+  <div data-verify-line="eink-driver" style="font-size: 1em; color: #555;"
+    title="Demo only: Amazon doesn't yet offer verification endpoints">
+    vfy:logistics.amazon.com <span data-bracket="end" data-for="eink-driver">]</span>
   </div>
-  <div style="font-size: 0.7em; color: #888; margin-top: 8px;">Salt changes per delivery</div>
 </div>
 
-**How it works:**
-- Badge pairs with driver's delivery app via Bluetooth
-- Salt updates when driver marks delivery complete and moves to next stop
-- Each stop gets a unique hash — can't correlate "driver at 10 Oak St" with "driver at 15 Elm St 5 mins later"
-- Verification returns current destination only (not route history)
+*Salt rotates every 10 mins or per-delivery*
 
-**Anti-tracking protection:**
-- Criminals can't build driver route maps from verification logs
-- Protects drivers from being followed or ambushed
-- Protects high-value package routes from interception planning
+**Security Features:**
+- **Cloning Protection:** Because the salt rotates, a photographed copy becomes invalid almost immediately.
+- **Route Verification:** Verification can confirm if the driver is currently assigned to the delivery zone where the scan happens.
+- **Real-time Status:** Drivers who are off-duty or suspended show immediately as invalid.
 
-**Cost:** E-ink badges cost more than printed lanyards, but driver safety is the primary justification — not a premium add-on. Delivery drivers face assault, robbery, and carjacking risks in all areas. Untraceable credentials protect drivers everywhere, not just on "high-risk" routes.
+**Driver Privacy & Safety:**
+- **No Stalking:** Rotating salts prevent criminals from building route maps of specific drivers by logging static hashes.
+- **Partial Anonymity:** The verification proves "Authorized Driver" without broadcasting the driver's full legal name to every doorbell camera.
 
 ## Competition vs. In-App Notifications
 

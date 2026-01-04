@@ -33,6 +33,8 @@ The **Staff ID Badge** is the worker's proof that they are authorized to be in t
 
 **This pattern extends beyond hotels** to hospitals (nurse aides, dietary staff), apartment buildings (maintenance, custodial), and event venues (setup crew) — anywhere mobile service staff enter private spaces in ungated, high-turnover environments.
 
+### Static Card (Traditional)
+
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
   <div style="background: #000; color: #fff; padding: 15px; text-align: center; display: flex; align-items: center; justify-content: center;">
     <div style="font-size: 1.5em; margin-right: 10px;">🛎️</div>
@@ -65,6 +67,34 @@ The **Staff ID Badge** is the worker's proof that they are authorized to be in t
     </div>
   </div>
 </div>
+
+### E-Ink Live Card (Next Generation)
+
+Static cards can be photographed and reprinted. An **e-ink staff badge** with a rotating salt prevents cloning and protects staff privacy.
+
+<div style="max-width: 320px; margin: 24px auto; font-family: 'Courier New', monospace; border: 3px solid #000; border-radius: 8px; background: #f5f5f0; padding: 20px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+  <div style="font-size: 1em; color: #000; font-weight: bold; margin-bottom: 8px;">HILTON HOTELS</div>
+  <div style="font-size: 1em; font-weight: bold; color: #000; margin-bottom: 8px;"><span data-bracket="start" data-for="eink-hotel">[</span>Javier Ortega</div>
+  <div style="font-size: 1em; color: #333; margin-bottom: 8px;">Room Service</div>
+  <div style="font-size: 1em; color: #000; margin-bottom: 12px;">
+    Salt: 9k2m4x8p
+  </div>
+  <div data-verify-line="eink-hotel" style="font-size: 1em; color: #555;"
+    title="Demo only: Hilton doesn't yet offer verification endpoints">
+    vfy:hilton.com <span data-bracket="end" data-for="eink-hotel">]</span>
+  </div>
+</div>
+
+*Salt rotates every 10 mins or per-room entry*
+
+**Security Features:**
+- **Cloning Protection:** Because the salt rotates, a photographed copy becomes invalid almost immediately.
+- **Location Verification:** Verification can confirm if the staff member is assigned to the specific floor/wing where the guest is.
+- **Real-time Status:** Suspended staff show immediately as invalid.
+
+**Staff Privacy & Safety:**
+- **No Stalking:** Rotating salts prevent guests from tracking a specific employee's movement through the hotel by logging static hashes.
+- **Ephemeral ID:** The verification proves "Authorized Staff Member" without needing to permanently log the staff's personal ID in the guest's phone.
 
 ## Data Verified
 

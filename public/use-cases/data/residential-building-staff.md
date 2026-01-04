@@ -16,6 +16,65 @@ The **Building Service Staff Badge** is the contractor's or employee's proof of 
 
 Impostors posing as maintenance workers use this as a pretense to gain entry: they case the apartment, steal valuables, follow residents inside to assess layout and security, or worse. E-Ink badges with real-time authorization status allow residents to verify a worker's credentials before opening the door—confirming they're assigned to that property, to that unit, and authorized to work at that time.
 
+### Static Card (Traditional)
+
+<div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #2e7d32; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div style="background: #2e7d32; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: center;">
+    <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 1px;">EQUITY RESIDENTIAL</div>
+  </div>
+<div style="padding: 20px; display: flex;">
+    <div style="width: 100px; margin-right: 15px;">
+      <div style="width: 100px; height: 125px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #777;">[PHOTO]</div>
+    </div>
+    <div style="flex-grow: 1;">
+      <h4 style="margin: 0; color: #1b5e20;">MAINTENANCE</h4>
+      <div style="font-size: 1.1em; font-weight: bold; margin: 5px 0;"><span data-bracket="start" data-for="maintenance">[</span>Robert M.</div>
+      <div style="font-size: 0.9em; color: #333; line-height: 1.4;">
+        <strong>ID:</strong> 4421<br>
+        <strong>Site:</strong> 1500 Mass Ave<br>
+        <strong>Access:</strong> Master Key
+      </div>
+    </div>
+  </div>
+<div style="padding: 0 20px 20px 20px;">
+    <p style="font-size: 0.75em; color: #555; font-style: italic; text-align: center;">
+      Official Staff. Scan to verify current employment and site authorization.
+    </p>
+    <div data-verify-line="maintenance" style="border-top: 1px dashed #999; margin-top: 10px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #2e7d32; text-align: center;"
+      title="Demo only: Equity Residential doesn't yet offer verification&#10;endpoints, so this is illustrative">
+      verify:equityapartments.com <span data-bracket="end" data-for="maintenance">]</span>
+    </div>
+  </div>
+</div>
+
+### E-Ink Live Card (Next Generation)
+
+Static cards can be lost or stolen by former employees. An **e-ink maintenance badge** with a rotating salt ensures only currently authorized staff can enter.
+
+<div style="max-width: 320px; margin: 24px auto; font-family: 'Courier New', monospace; border: 3px solid #2e7d32; border-radius: 8px; background: #f5f5f0; padding: 20px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+  <div style="font-size: 1em; color: #2e7d32; font-weight: bold; margin-bottom: 8px;">EQUITY RESIDENTIAL</div>
+  <div style="font-size: 1em; font-weight: bold; color: #000; margin-bottom: 8px;"><span data-bracket="start" data-for="eink-maint">[</span>Robert M.</div>
+  <div style="font-size: 1em; color: #333; margin-bottom: 8px;">Maintenance Lead</div>
+  <div style="font-size: 1em; color: #2e7d32; margin-bottom: 12px;">
+    Salt: 7x2p9k4m
+  </div>
+  <div data-verify-line="eink-maint" style="font-size: 1em; color: #555;"
+    title="Demo only: Equity Residential doesn't yet offer verification endpoints">
+    vfy:equityapartments.com <span data-bracket="end" data-for="eink-maint">]</span>
+  </div>
+</div>
+
+*Salt rotates every 15 mins*
+
+**Security Features:**
+- **Cloning Protection:** A photo of the badge cannot be reused to gain entry later.
+- **Work Order Verification:** Can confirm if the staff member has an active work order for *your specific unit* right now.
+- **Revocation:** Terminated staff lose access immediately; the badge stops verifying.
+
+**Resident Safety:**
+- **No Impostors:** Prevents criminals from using stolen uniforms or old badges to bluff their way into apartments.
+- **Privacy:** Staff tracking is anonymized; residents can verify authority without needing the worker's full legal history.
+
 ## Why Residential Buildings Need This Pattern
 
 **Residential buildings match the "Mobile Service Staff in Ungated Facilities" pattern:**
