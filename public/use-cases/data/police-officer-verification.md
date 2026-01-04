@@ -135,6 +135,16 @@ Departments must implement the backend logic to generate and validate rotating s
 1. **Federal Law Enforcement:** FBI, ATF, DEA agents with multi-jurisdictional authority. Higher secrecy requirements necessitate strict privacy controls.
 2. **Plainclothes/Undercover:** Officers working vice, narcotics, or organized crime who need to prove authority without blowing their cover identity.
 
+## Related E-Ink Scenarios
+
+The "Mobile Service Staff in Ungated Facilities" pattern is also used to protect citizens and staff in these contexts:
+
+- [Mobile Service Staff (Hotels)](view.html?doc=hotel-staff-verification) — Guests verify staff before opening doors.
+- [Delivery & Courier Verification](view.html?doc=delivery-courier-verification) — Recipients verify delivery persons.
+- [Healthcare Facility Staff](view.html?doc=healthcare-facility-staff) — Patients verify staff in hospitals.
+- [Residential Building Staff](view.html?doc=residential-building-staff) — Residents verify maintenance/contractors.
+- [Event Venue & Contractor Staff](view.html?doc=event-venue-staff) — Security and staff verify contractors.
+
 ---
 
 ## Rationale

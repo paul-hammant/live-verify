@@ -201,4 +201,10 @@ While hotels involve repeated, known staff, events involve high-volume, one-time
 
 ## Further Derivations
 
-This use case does not derive further sub-cases. It represents a key instantiation of the broader "Mobile Service Staff in Ungated Facilities" pattern, serving as a parallel to hotel staff verification in a temporary-workforce context.
+This use case belongs to the **Mobile Service Staff in Ungated Facilities** pattern. Related scenarios include:
+
+- [Police Officer Verification](view.html?doc=police-officer-verification) — Citizens verify law enforcement.
+- [Mobile Service Staff (Hotels)](view.html?doc=hotel-staff-verification) — Guests verify staff at their door.
+- [Delivery & Courier Verification](view.html?doc=delivery-courier-verification) — Recipients verify delivery drivers.
+- [Healthcare Facility Staff](view.html?doc=healthcare-facility-staff) — Patients verify hospital support workers.
+- [Residential Building Staff](view.html?doc=residential-building-staff) — Residents verify maintenance contractors.

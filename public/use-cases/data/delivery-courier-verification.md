@@ -258,3 +258,13 @@ Static cards can be photographed and reprinted. An **e-ink courier badge** with 
 | **Field Access** | **Instant.** 5-second scan. | **Zero.** Doorman cannot see the customer's phone. | **Instant.** |
 
 **Why OCR wins here:** The "Doorman Dilemma." In a large apartment building, the doorman doesn't know which of the 500 residents ordered an Amazon package. They cannot see the resident's private app notification. OCR-to-hash turns the **Driver's Badge** into a public-facing trust bridge, allowing the doorman to verify the driver independently.
+
+## Related E-Ink Scenarios
+
+The pattern of using e-ink badges for real-time authority verification applies to several high-volume mobile service roles:
+
+- [Police Officer Verification](view.html?doc=police-officer-verification) — Citizens verify law enforcement authority.
+- [Mobile Service Staff (Hotels)](view.html?doc=hotel-staff-verification) — Guests verify hotel staff before entry.
+- [Healthcare Facility Staff](view.html?doc=healthcare-facility-staff) — Patients verify hospital support workers.
+- [Residential Building Staff](view.html?doc=residential-building-staff) — Residents verify maintenance contractors.
+- [Event Venue & Contractor Staff](view.html?doc=event-venue-staff) — Security verify event setup crews.

@@ -340,8 +340,13 @@ The underlying "mobile staff in ungated facility" pattern is identical. But heal
 
 **Implementation Timeline:** 12-18 months (vs. 6-12 months for hotels), mostly regulatory review and credentialing integration.
 
----
-
 ## Further Derivations
 
-This use case does not derive further sub-cases. It represents a key instantiation of the broader "Mobile Service Staff in Ungated Facilities" pattern, but extends it into the **credentialing and access control domain** where it applies to clinical staff, particularly physicians.
+This use case is part of the **Mobile Service Staff in Ungated Facilities** pattern. Related scenarios include:
+
+- [Police Officer Verification](view.html?doc=police-officer-verification) — Citizens verify authority during encounters.
+- [Mobile Service Staff (Hotels)](view.html?doc=hotel-staff-verification) — Guests verify staff at their door.
+- [Delivery & Courier Verification](view.html?doc=delivery-courier-verification) — Recipients verify delivery persons.
+- [Residential Building Staff](view.html?doc=residential-building-staff) — Residents verify maintenance and contractors.
+- [Event Venue & Contractor Staff](view.html?doc=event-venue-staff) — Venue security verify temporary crews.
+

@@ -203,4 +203,11 @@ The underlying pattern is identical: mobile staff, ungated facility, unpredictab
 
 ## Further Derivations
 
-This use case does not derive further sub-cases. It represents a key instantiation of the broader "Mobile Service Staff in Ungated Facilities" pattern, serving as a parallel to hotel staff verification in a residential context.
+This use case belongs to the **Mobile Service Staff in Ungated Facilities** pattern. Related scenarios include:
+
+- [Police Officer Verification](view.html?doc=police-officer-verification) — Citizens verify law enforcement.
+- [Mobile Service Staff (Hotels)](view.html?doc=hotel-staff-verification) — Guests verify hotel staff.
+- [Delivery & Courier Verification](view.html?doc=delivery-courier-verification) — Recipients verify delivery drivers.
+- [Healthcare Facility Staff](view.html?doc=healthcare-facility-staff) — Patients verify hospital staff.
+- [Event Venue & Contractor Staff](view.html?doc=event-venue-staff) — Security verify event crews.
+

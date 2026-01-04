@@ -217,7 +217,10 @@ The **Mobile Service Staff in Ungated Facilities** pattern applies wherever:
 
 ## Further Derivations
 
-This use case derives three related scenarios:
-1. **Healthcare Facility Staff Verification** — Nurse aides, dietary, housekeeping in patient-facing roles
-2. **Residential Building Service Staff Verification** — Maintenance, contractors, emergency services in apartment buildings
-3. **Event Venue & Contractor Staff Verification** — Setup crews, logistics, security in temporary event spaces
+This use case belongs to a broader pattern of **Mobile Service Staff in Ungated Facilities**. Related scenarios include:
+
+- [Police Officer Verification](view.html?doc=police-officer-verification) — Citizens verify authority during stops or home visits.
+- [Delivery & Courier Verification](view.html?doc=delivery-courier-verification) — Recipients verify drivers at the door.
+- [Healthcare Facility Staff](view.html?doc=healthcare-facility-staff) — Patients verify nurse aides and support staff.
+- [Residential Building Staff](view.html?doc=residential-building-staff) — Residents verify maintenance and contractors.
+- [Event Venue & Contractor Staff](view.html?doc=event-venue-staff) — Venue security verify temporary setup crews.
