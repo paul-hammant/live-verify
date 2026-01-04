@@ -1,31 +1,35 @@
 ---
-title: "Employment Reference Letters & VOE"
+title: "Employment References"
 category: "Professional & Educational Qualifications"
 volume: "Very Large"
 retention: "1-7 years (hiring cycle)"
-slug: "employment-reference-letters"
+slug: "employment-references"
 tags: ["employment-verification", "voe", "hr", "background-check", "hiring-fraud", "job-reference"]
 furtherDerivations: 1
 ---
 
-## What is a VOE Letter?
+## What is an Employment Reference?
 
-A **Verification of Employment (VOE)** letter is the official paper from an employer's HR department proving that you actually worked there.
+A verified employment reference proves you actually worked somewhere. It can appear as an addendum to a CV/resume, in an email after a job offer, or as a standalone VOE letter.
 
-Lenders need these letters to approve home loans. Recruiters need them to verify your resume.
+Fraud is common: "Reference Mills" sell fake employment letters. OCR-to-hash connects the verifier directly to the real employer's domain.
 
-Fraud is common: "Nanny Mills" or "Reference Mills" sell fake employment letters from real-looking companies for a fee. OCR-to-hash connects the recruiter directly to the real employer's domain, ensuring that "Senior Software Engineer" role actually happened.
-
-<div style="max-width: 400px; margin: 24px auto; font-family: 'Courier New', monospace; border: 1px solid #ccc; background: #fff; padding: 20px;">
-  <div style="font-size: 1em; line-height: 1.8; color: #000;">
+<div style="max-width: 500px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 20px;">
+  <div style="font-size: 0.95em; color: #333; margin-bottom: 15px;">
+    Dear Ms Miggins,<br><br>
+    As requested, here are the references I mentioned:
+  </div>
+  <div style="font-family: 'Courier New', monospace; background: #f9f9f9; padding: 15px; border: 1px solid #999; font-size: 1em; color: #000; line-height: 1.6;">
     <span verifiable-text="start" data-for="voe">[</span>Acme Corporation<br>
     John D. Smith<br>
     Senior Software Engineer<br>
     March 2020 – October 2025<br>
-    Eligible for Rehire
+    Eligible for Rehire<br>
+    <span data-verify-line="voe">vfy:acme-corp.com/hr</span> <span verifiable-text="end" data-for="voe">]</span>
   </div>
-  <div data-verify-line="voe" style="margin-top: 15px; font-size: 1em; color: #000;">
-    vfy:acme-corp.com/hr <span verifiable-text="end" data-for="voe">]</span>
+  <div style="font-size: 0.95em; color: #333; margin-top: 15px;">
+    Let me know if you need anything else.<br><br>
+    Best regards
   </div>
 </div>
 
