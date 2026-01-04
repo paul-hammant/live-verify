@@ -16,35 +16,16 @@ Lenders need these letters to approve home loans. Recruiters need them to verify
 
 Fraud is common: "Nanny Mills" or "Reference Mills" sell fake employment letters from real-looking companies for a fee. OCR-to-hash connects the recruiter directly to the real employer's domain, ensuring that "Senior Software Engineer" role actually happened.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
-  <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 25px;">
-    <div style="font-weight: bold; font-size: 1.2em;">ACME CORPORATION</div>
-    <div style="font-size: 0.85em; color: #666;">Global Human Resources Operations</div>
+<div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 20px;">
+  <div style="font-size: 0.95em; line-height: 1.8; color: #333;">
+    <span verifiable-text="start" data-for="voe">[</span><strong>John D. Smith</strong><br>
+    Senior Software Engineer<br>
+    Acme Corporation<br>
+    March 2020 – October 2025<br>
+    Eligible for Rehire
   </div>
-<h3 style="text-align: center; text-transform: uppercase; margin-bottom: 20px;">Verification of Employment (VOE)</h3>
-<div style="font-size: 1em; line-height: 1.6; color: #333; text-align: justify;">
-    <p>To Whom It May Concern,</p>
-    <p>This document serves as an official confirmation of the employment history for the individual named below:</p>
-<div style="margin: 20px 0; border-left: 4px solid #000; padding-left: 20px; background: #f9f9f9; padding-top: 10px; padding-bottom: 10px;">
-      <p><strong>Employee:</strong> <span verifiable-text="start" data-for="voe">[</span><strong>John D. Smith</strong><br>
-      <strong>Position:</strong> Senior Software Engineer<br>
-      <strong>Dates:</strong> March 1, 2020 to October 31, 2025<br>
-      <strong>Status:</strong> Voluntary Separation / Eligible for Rehire</p>
-    </div>
-<p>This verification is issued directly from the Acme Corp HR Information System (HRIS).</p>
-  </div>
-<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
-    <div>
-      <div style="border-top: 1px solid #000; width: 200px; padding-top: 5px; font-style: italic;">Human Resources Dept.</div>
-      <div style="font-size: 0.8em; color: #777;">March 15, 2026</div>
-    </div>
-    <div style="text-align: right; font-size: 0.8em; color: #777;">
-      Ref #: VERF-992288
-    </div>
-  </div>
-<div data-verify-line="voe" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
-      title="Demo only: Acme Corp doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:acme-corp.com/hr/v/992288-JDS <span verifiable-text="end" data-for="voe">]</span>
+  <div data-verify-line="voe" style="border-top: 1px dashed #999; margin-top: 15px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #555;">
+    vfy:acme-corp.com/hr <span verifiable-text="end" data-for="voe">]</span>
   </div>
 </div>
 
