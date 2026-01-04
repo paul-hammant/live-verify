@@ -67,30 +67,25 @@ Officers also carry a secure mobile app that generates the same verifiable displ
 
 <div style="max-width: 500px; margin: 24px auto; border: 12px solid #333; border-radius: 30px; background: #fff; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.3); display: flex; flex-direction: row;">
   <!-- Left side: Photo/Identity (Simulated) -->
-  <div style="width: 150px; background: #f9f9f9; padding: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-right: 1px solid #ddd;">
+  <div style="width: 150px; background: #f9f9f9; padding: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-right: 2px solid #000;">
     <div style="width: 100px; height: 120px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #777; font-size: 0.8em; text-align: center; font-family: sans-serif;">[PHOTO]</div>
     <div style="margin-top: 15px;">
-      <img src="met.png" alt="Metropolitan Police" style="width: 50px; height: 50px; object-fit: contain;">
+      <img src="data/met.png" style="width: 50px; height: 50px; object-fit: contain;">
     </div>
   </div>
-  
   <!-- Right side: Verification Text -->
   <div style="flex-grow: 1; padding: 20px; font-family: sans-serif; text-align: left; background: #fff;">
     <div style="font-size: 1em; color: #002d62; font-weight: bold; margin-bottom: 5px;"><span verifiable-text="start" data-for="app-police">[</span>METROPOLITAN POLICE</div>
-    <div style="font-size: 0.8em; color: #555; margin-bottom: 15px; letter-spacing: 1px;">DIGITAL WARRANT</div>
-
+    <div style="font-size: 0.8em; color: #555; margin-bottom: 15px; letter-spacing: 1px;">DIGITAL WARRANT CARD</div>
     <div style="font-size: 1.2em; font-weight: bold; color: #000; margin-bottom: 5px;">PC Alex D 1332</div>
     <div style="font-size: 1em; color: #333; margin-bottom: 10px;">London MET</div>
-    
     <div style="font-size: 1.1em; color: #002d62; font-weight: bold; margin-bottom: 10px;">
       Salt: 7k3m9x2p
     </div>
-
     <div data-verify-line="app-police" style="font-family: 'Courier New', monospace; font-size: 0.9em; color: #555; border-top: 1px dashed #ccc; padding-top: 10px;"
       title="Demo only: Police don't yet offer verification endpoints">
       vfy:met.police.uk <span verifiable-text="end" data-for="app-police">]</span>
     </div>
-    
     <div style="margin-top: 15px; color: #28a745; font-weight: bold; font-size: 0.9em;">
       ● LIVE & AUTHENTICATED
     </div>
