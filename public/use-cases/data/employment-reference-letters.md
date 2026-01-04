@@ -16,15 +16,15 @@ Lenders need these letters to approve home loans. Recruiters need them to verify
 
 Fraud is common: "Nanny Mills" or "Reference Mills" sell fake employment letters from real-looking companies for a fee. OCR-to-hash connects the recruiter directly to the real employer's domain, ensuring that "Senior Software Engineer" role actually happened.
 
-<div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 20px;">
-  <div style="font-size: 0.95em; line-height: 1.8; color: #333;">
-    <span verifiable-text="start" data-for="voe">[</span><strong>John D. Smith</strong><br>
+<div style="max-width: 400px; margin: 24px auto; font-family: 'Courier New', monospace; border: 1px solid #ccc; background: #fff; padding: 20px;">
+  <div style="font-size: 1em; line-height: 1.8; color: #000;">
+    <span verifiable-text="start" data-for="voe">[</span>Acme Corporation<br>
+    John D. Smith<br>
     Senior Software Engineer<br>
-    Acme Corporation<br>
     March 2020 – October 2025<br>
     Eligible for Rehire
   </div>
-  <div data-verify-line="voe" style="border-top: 1px dashed #999; margin-top: 15px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #555;">
+  <div data-verify-line="voe" style="margin-top: 15px; font-size: 1em; color: #000;">
     vfy:acme-corp.com/hr <span verifiable-text="end" data-for="voe">]</span>
   </div>
 </div>
