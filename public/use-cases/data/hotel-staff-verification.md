@@ -80,7 +80,7 @@ Static cards can be photographed and reprinted. An **e-ink staff badge** with a 
   </div>
   <div data-verify-line="eink-hotel" style="font-size: 1em; color: #555;"
     title="Demo only: Hilton doesn't yet offer verification endpoints">
-    vfy:hilton.com <span verifiable-text="end" data-for="eink-hotel">]</span>
+    vfy:ids.hilton.com <span verifiable-text="end" data-for="eink-hotel">]</span>
   </div>
 </div>
 
@@ -162,41 +162,6 @@ The **Hotel Staff Member** benefits from verification.
 | **Freshness** | **Real-time.** Shows if banned *today*. | **Static.** | **N/A.** |
 
 **Why OCR wins here:** The "Doorstep Workflow." Guests make the decision to open the door in seconds. They don't want to engage in a long phone conversation while a stranger stands in the hallway. OCR-to-hash turns the **ID Badge** into a live, non-confrontational safety tool that provides instant, high-authority trust.
-
----
-
-## Derived Scenarios: Why This Pattern Matters Beyond Hotels
-
-The **Mobile Service Staff in Ungated Facilities** pattern applies wherever:
-
-### Healthcare Facilities (Hospitals, Clinics)
-- **Nurse Aides**, dietary staff, housekeeping enter patient rooms unannounced
-- Patients are vulnerable (recovering, medicated, isolated)
-- High staff turnover; temp agencies; contractors
-- **Example fraud:** Impostor in scrubs steals medications or patient belongings
-- **Verification benefit:** Patient can verify staff identity before allowing entry to private room
-
-### Apartment & Residential Buildings
-- **Maintenance, plumbing, electrical contractors** enter units with minimal notice
-- Residents don't know building staff by sight
-- High turnover; subcontractors; emergency callouts at odd hours
-- **Example fraud:** Burglar poses as "maintenance" to gain entry to apartment
-- **Verification benefit:** Resident scans badge before opening door; confirms contractor affiliation and work order
-
-### Event Venues & Hospitality
-- **Setup crews, logistics, security contractors** move throughout event spaces
-- Temporary staff, multiple companies, fluid access patterns
-- High-value equipment and guest valuables present
-- **Example fraud:** Impostor crew member steals equipment or gains backstage access
-- **Verification benefit:** Venue security can verify contractor credentials instantly
-
-### Schools (During Non-Instructional Hours)
-- **Custodial, maintenance, after-hours contractors** work during evenings/weekends when buildings are less populated
-- Parents picking up children may encounter unfamiliar staff members
-- **Example fraud:** Impostor gains access to storage areas or loiters near student pickup zones
-- **Verification benefit:** Parents/staff verify custodian identity; school security monitors building access logs
-
-**Commonality:** All share the **unpredictability pattern** — staff appear with little notice, in facilities where face recognition alone is unreliable, and where verification happens in seconds, not minutes.
 
 ---
 
