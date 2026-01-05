@@ -811,9 +811,9 @@ async function verifyAgainstClaimedUrl(claimedUrl, computedHash) {
     try {
         let fetchUrl = claimedUrl;
 
-        // Check for addTrailingSlash config (e.g., GitHub Pages needs this)
-        if (meta && meta.addTrailingSlash && !fetchUrl.endsWith('/') && !fetchUrl.match(/\.\w+$/)) {
-            fetchUrl = claimedUrl + '/';
+        // Check for appendToHashFileName config (e.g., "/" for GitHub Pages, ".json" for other hosts)
+        if (meta && meta.appendToHashFileName) {
+            fetchUrl = claimedUrl + meta.appendToHashFileName;
         }
 
         const response = await fetch(fetchUrl, {

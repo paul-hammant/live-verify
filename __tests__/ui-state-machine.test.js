@@ -178,4 +178,42 @@ describe('UI State Machine - Code Analysis', () => {
             expect(matches.length).toBe(5);
         });
     });
+
+    describe('appendToHashFileName feature', () => {
+        it('should check for meta.appendToHashFileName in verifyAgainstClaimedUrl', () => {
+            // Find the verification function
+            const verifyFunction = appCode.match(/async function verifyAgainstClaimedUrl[\s\S]*?(?=\n\/\/ Show overlay on video)/);
+            expect(verifyFunction).not.toBeNull();
+
+            const functionCode = verifyFunction[0];
+
+            // Should check for appendToHashFileName config
+            expect(functionCode).toMatch(/meta\.appendToHashFileName/);
+        });
+
+        it('should append the config value to fetchUrl', () => {
+            const verifyFunction = appCode.match(/async function verifyAgainstClaimedUrl[\s\S]*?(?=\n\/\/ Show overlay on video)/);
+            const functionCode = verifyFunction[0];
+
+            // Should append the suffix to claimedUrl when config exists
+            expect(functionCode).toMatch(/fetchUrl = claimedUrl \+ meta\.appendToHashFileName/);
+        });
+
+        it('should have a comment explaining the supported values', () => {
+            const verifyFunction = appCode.match(/async function verifyAgainstClaimedUrl[\s\S]*?(?=\n\/\/ Show overlay on video)/);
+            const functionCode = verifyFunction[0];
+
+            // Comment should mention "/" for GitHub Pages and ".json" for other hosts
+            expect(functionCode).toMatch(/appendToHashFileName.*GitHub Pages/i);
+            expect(functionCode).toMatch(/\.json.*for other hosts/i);
+        });
+
+        it('should use fetchUrl for the actual fetch call', () => {
+            const verifyFunction = appCode.match(/async function verifyAgainstClaimedUrl[\s\S]*?(?=\n\/\/ Show overlay on video)/);
+            const functionCode = verifyFunction[0];
+
+            // The fetch call should use fetchUrl (not claimedUrl directly)
+            expect(functionCode).toMatch(/const response = await fetch\(fetchUrl/);
+        });
+    });
 });
