@@ -56,10 +56,10 @@ test.describe('OCR Character Normalization', () => {
         const screenshotBuffer = fs.readFileSync(screenshotPath);
         const screenshotBase64 = screenshotBuffer.toString('base64');
 
-        // Inject OCR normalization rules from .verification-meta.json
+        // Inject OCR normalization rules from verification-meta.json
         // Note: OCR may misread German umlauts as other accented characters
         const injectedMeta = {
-            "description": "Test .verification-meta.json for hotel receipts with Swiss Franc formatting",
+            "description": "Test verification-meta.json for hotel receipts with Swiss Franc formatting",
             "charNormalization": "éèêë→e àáâä→a ìíîï→i òóôö→o ùúûü→u ñ→n ç→c",
             "ocrNormalizationRules": [
                 {

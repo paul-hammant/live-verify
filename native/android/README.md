@@ -8,13 +8,13 @@ Pipeline:
 2. OCR (on-device, ML Kit Text Recognition)
 3. Normalize text (mirrors the intent of `public/normalize.js`)
 4. SHA-256
-5. `GET` the issuer URL implied by the `verify:` line (plus optional `/.verification-meta.json`)
+5. `GET` the issuer URL implied by the `verify:` line (plus optional `/verification-meta.json`)
 6. Show an affirming/denying result
 
 ## Privacy model (intent)
 
 - OCR + normalization + hashing are performed on-device.
-- The network call is a minimal `GET` to the issuer endpoint (and optionally `/.verification-meta.json` for issuer-defined response/normalization rules).
+- The network call is a minimal `GET` to the issuer endpoint (and optionally `/verification-meta.json` for issuer-defined response/normalization rules).
 - This is a prototype; production camera-app integration would follow the same on-device model.
 
 ## Open in Android Studio

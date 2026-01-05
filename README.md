@@ -143,12 +143,12 @@ flowchart TD
     ShowOCRError --> Start
     CheckConfidence -->|Yes| UseRotation[Use best rotation]
     UseRotation --> ParseVerify[Parse verify:domain.com/path from OCR text]
-    ParseVerify --> FetchMeta[Fetch https://domain.com/.verification-meta.json<br/>for normalization hints]
+    ParseVerify --> FetchMeta[Fetch https://domain.com/verification-meta.json<br/>for normalization hints]
     FetchMeta --> Normalize[Normalize text:<br/>- Strip leading/trailing spaces<br/>- Collapse multiple spaces<br/>- Remove verify: line<br/>- Apply domain-specific rules]
     Normalize --> Hash[Compute SHA-256 hash<br/>of normalized text]
     Hash --> BuildURL[Build verification URL:<br/>https://domain.com/path/hash]
 
-    MetaURL[("https://domain.com/.verification-meta.json<br/>(normalization rules, custom status text)")] -.->|fetched earlier| FetchMeta
+    MetaURL[("https://domain.com/verification-meta.json<br/>(normalization rules, custom status text)")] -.->|fetched earlier| FetchMeta
     VerifyURL[("https://domain.com/path/hash<br/>(verification endpoint)")] -.->|HTTP GET| Verify
 
     BuildURL --> Verify[HTTP GET request to verification URL<br/>static webserver or dynamic endpoint]
@@ -486,9 +486,9 @@ To create verifiable documents:
 3. Compute SHA-256 hash
 4. Print text within registration marks + base URL: `verify:your-org.com/c` (use Courier New font)
 5. Host verification endpoint at `https://your-org.com/c/{HASH}` returning HTTP 200 + "OK" for valid hashes
-6. Optional: Host `.verification-meta.json` at `https://your-org.com/c/.verification-meta.json` with text normalization rules and OCR optimization settings
+6. Optional: Host `verification-meta.json` at `https://your-org.com/c/verification-meta.json` with text normalization rules and OCR optimization settings
 
-The `.verification-meta.json` file can provide document-specific normalization rules, custom response types, and OCR optimization:
+The `verification-meta.json` file can provide document-specific normalization rules, custom response types, and OCR optimization:
 
 ```json
 {
@@ -576,7 +576,7 @@ The `parentAuthorities` field establishes a chain of trust through simple URL li
 - **Food safety cert** → Health department's licensed facilities page
 - **Product certification** → Standards body's certified labs directory
 
-Example for a university: See [github.com/paul-hammant/live-verify/blob/main/public/c/.verification-meta.json](https://github.com/paul-hammant/live-verify/blob/main/public/c/.verification-meta.json
+Example for a university: See [github.com/paul-hammant/live-verify/blob/main/public/c/verification-meta.json](https://github.com/paul-hammant/live-verify/blob/main/public/c/verification-meta.json
 
 **Why This Matters:**
 

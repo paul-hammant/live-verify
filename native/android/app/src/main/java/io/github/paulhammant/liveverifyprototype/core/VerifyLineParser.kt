@@ -70,7 +70,7 @@ object VerifyLineParser {
 
     fun buildMetaUrl(baseUrl: String): URI {
         val httpsBase = httpsBaseUrlString(baseUrl)
-        return URI.create("$httpsBase/.verification-meta.json")
+        return URI.create("$httpsBase/verification-meta.json")
     }
 }
 

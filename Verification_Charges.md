@@ -313,9 +313,9 @@ Organizations like medical boards may **charge** because:
 - High-frequency commercial users (hospitals, staffing agencies) can afford it
 - Revenue helps fund regulatory oversight
 
-## Integration with .verification-meta.json
+## Integration with verification-meta.json
 
-Organizations can publish their pricing information in the metadata file at `https://example.com/c/.verification-meta.json`:
+Organizations can publish their pricing information in the metadata file at `https://example.com/c/verification-meta.json`:
 
 ```json
 {

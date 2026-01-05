@@ -21,13 +21,13 @@
  * @param {Page} page - Playwright page object
  * @param {string} base64Image - Base64-encoded image data
  * @param {string} expectedHash - Expected hash for mock comparison (empty string for discovery mode)
- * @param {Object} injectedVerifcationMeta - Optional .verification-meta.json to inject (for OCR normalization testing)
+ * @param {Object} injectedVerifcationMeta - Optional verification-meta.json to inject (for OCR normalization testing)
  * @returns {Promise<Object>} Test result with success, extracted values, etc.
  */
 export async function testVerifyFromBase64(page, base64Image, expectedHash, injectedVerificationMeta = null) {
-    // Mock .verification-meta.json fetch if provided (Design for Testability: mock at network layer)
+    // Mock verification-meta.json fetch if provided (Design for Testability: mock at network layer)
     if (injectedVerificationMeta) {
-        await page.route('**/.verification-meta.json', async route => {
+        await page.route('**/verification-meta.json', async route => {
             await route.fulfill({
                 status: 200,
                 contentType: 'application/json',

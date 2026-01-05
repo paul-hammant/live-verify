@@ -93,7 +93,7 @@ Organizations *could* include additional fields, but in practice they rarely wou
 - Most organizations will just return the status alone
 - If JSON parsing fails, treat as plain text
 
-### 3. Custom Status Display (.verification-meta.json)
+### 3. Custom Status Display (verification-meta.json)
 
 Organizations can optionally define custom display text so the camera overlay speaks the customer’s language. The `text` value can be as short as “Valid ID” or as long as “Licensed R.N in Texas and states listed on nursecompact.com”.
 
@@ -128,7 +128,7 @@ Organizations can optionally define custom display text so the camera overlay sp
 - Falls back to the default “Claim Verified”/“Denied” text if the response code is missing.
 
 ### Real-world example
-Texas has been running Operation Nightingale against fake nursing IDs; the board publishes details at https://www.bon.texas.gov/Operation_Nightingale_Main.asp.html. Use your `.verification-meta.json` to return a status like `"LICENSED"` with `"text": "Licensed R.N in Texas and Nurse Compact states (see https://www.bon.texas.gov/Operation_Nightingale_Main.asp.html)"` so frontline staff see the same warning plus the trusted domain that attests to the credential.
+Texas has been running Operation Nightingale against fake nursing IDs; the board publishes details at https://www.bon.texas.gov/Operation_Nightingale_Main.asp.html. Use your `verification-meta.json` to return a status like `"LICENSED"` with `"text": "Licensed R.N in Texas and Nurse Compact states (see https://www.bon.texas.gov/Operation_Nightingale_Main.asp.html)"` so frontline staff see the same warning plus the trusted domain that attests to the credential.
 
 ## Response Decision Tree
 

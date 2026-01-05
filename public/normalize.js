@@ -21,10 +21,10 @@
  */
 
 /**
- * Apply document-specific normalization rules from .verification-meta.json
+ * Apply document-specific normalization rules from verification-meta.json
  * This allows document issuers to define character substitutions and regex patterns
  * @param {string} text - Text to normalize
- * @param {Object} metadata - Metadata from .verification-meta.json (optional)
+ * @param {Object} metadata - Metadata from verification-meta.json (optional)
  * @returns {string} Normalized text with document-specific rules applied
  */
 function applyDocSpecificNorm(text, metadata) {

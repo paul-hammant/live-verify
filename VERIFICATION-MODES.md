@@ -471,7 +471,7 @@ User clicks < Prev | Next > to jump between claims
 **Issuer Discovery:**
 - Extract domain hints from document (letterhead, footer)
 - Use URL pattern conventions (e.g., `verify:example.com/c`)
-- Support domain configuration (e.g., `.verification-meta.json`)
+- Support domain configuration (e.g., `verification-meta.json`)
 
 ### Limitations & Challenges
 
@@ -604,7 +604,7 @@ All modes share:
    - Domain ownership (not distributed consensus)
    - HTTPS for communication security
    - CORS headers for browser access
-   - Optional: `.verification-meta.json` for document-specific rules
+   - Optional: `verification-meta.json` for document-specific rules
 
 ---
 

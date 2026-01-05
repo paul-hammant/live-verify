@@ -73,7 +73,7 @@ enum VerifyLineParser {
 
     static func buildMetaURL(baseURL: String) throws -> URL {
         let httpsBase = try httpsBaseURLString(from: baseURL)
-        guard let url = URL(string: httpsBase + "/.verification-meta.json") else {
+        guard let url = URL(string: httpsBase + "/verification-meta.json") else {
             throw LiveVerifyError.invalidBaseURL
         }
         return url

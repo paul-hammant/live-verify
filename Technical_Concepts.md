@@ -165,7 +165,7 @@ See [public/domain-authority.js](public/domain-authority.js) for implementation.
 
 ### Flexible Algorithm Choice
 
-While SHA-256 is the recommended default, different use cases may prefer stronger or weaker alternatives. The preferred algorithm for a domain is specified in its [`.verification-meta.json`](#extended-response-with-metadata) file.
+While SHA-256 is the recommended default, different use cases may prefer stronger or weaker alternatives. The preferred algorithm for a domain is specified in its [`verification-meta.json`](#extended-response-with-metadata) file.
 
 **SHA-512 for High-Security Documents** (Government IDs, Passports):
 - **Why upgrade:** Provides significantly higher collision resistance and better long-term "future-proofing" against theoretical quantum computing threats.
@@ -175,10 +175,10 @@ While SHA-256 is the recommended default, different use cases may prefer stronge
 - In rare cases where extreme speed or minimal URL length is required for non-critical claims (e.g., short-lived loyalty points), an organization might choose a faster algorithm or a truncated hash, provided the entropy is managed to prevent brute-force guessing.
 
 **Verification apps must:**
-1. Check for a `hashAlgorithm` specification in the issuer's `.verification-meta.json`.
+1. Check for a `hashAlgorithm` specification in the issuer's `verification-meta.json`.
 2. Fall back to SHA-256 if no algorithm is specified.
 
-### Configuring via .verification-meta.json
+### Configuring via verification-meta.json
 
 Organizations specify their hash algorithm choice in the root-level configuration:
 
@@ -249,9 +249,9 @@ See [Use_Case-Medical_License.md](Use_Case-Medical_License.md) for detailed JSON
 
 ### Extended Response with Metadata
 
-**Using `.verification-meta.json` configuration:**
+**Using `verification-meta.json` configuration:**
 
-Organizations can host `https://example.com/c/.verification-meta.json` to define custom response types and suggest more integrated participation:
+Organizations can host `https://example.com/c/verification-meta.json` to define custom response types and suggest more integrated participation:
 
 ```json
 {
@@ -272,7 +272,7 @@ Organizations can host `https://example.com/c/.verification-meta.json` to define
 
 This allows the verifier's generic app to suggest the issuer's dedicated app for a more rich experience (e.g., real-time notifications or biometric integration).
 
-See [README.md: For Organizations Creating Verifiable Documents](README.md#for-organizations-creating-verifiable-documents) for complete `.verification-meta.json` specification.
+See [README.md: For Organizations Creating Verifiable Documents](README.md#for-organizations-creating-verifiable-documents) for complete `verification-meta.json` specification.
 
 ---
 

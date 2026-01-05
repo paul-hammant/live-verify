@@ -81,7 +81,7 @@ const resultsSection = document.querySelector('.results-section');
 let stream = null;
 let deviceOrientation = { alpha: 0, beta: 0, gamma: 0 };
 let currentBaseUrl = null; // Store base URL for re-verification when user edits normalized text
-const metaCache = {}; // Cache .verification-meta.json by URL
+const metaCache = {}; // Cache verification-meta.json by URL
 
 // Get meta from cache or fetch it
 async function getVerificMeta(baseUrl) {
@@ -546,10 +546,10 @@ async function processImageCanvas(canvas, captureMethod = 'Unknown') {
     const certText = extractCertText(rawText, urlLineIndex);
     debugLog(`Cert text: ${certText.substring(0, 50)}...`);
 
-    // Fetch .verification-meta.json for OCR normalization rules (if available)
+    // Fetch verification-meta.json for OCR normalization rules (if available)
     const meta = await getVerificMeta(baseUrl);
     if (meta) {
-        console.log('Using normalization rules from .verification-meta.json:', meta);
+        console.log('Using normalization rules from verification-meta.json:', meta);
     }
 
     // Normalize text according to the rules
@@ -577,15 +577,15 @@ async function processImageCanvas(canvas, captureMethod = 'Unknown') {
     // Verify against the full URL
     const verifyResult = await verifyAgainstClaimedUrl(fullVerificationUrl, hash);
 
-    // If 404, try fetching .verification-meta.json and retry with optimized OCR
+    // If 404, try fetching verification-meta.json and retry with optimized OCR
     if (verifyResult.status === 404) {
-        console.log('Got 404, attempting to fetch .verification-meta.json for optimized OCR retry...');
+        console.log('Got 404, attempting to fetch verification-meta.json for optimized OCR retry...');
         showProcessingOverlay('Retrying...');
 
         const meta = await fetchVerificMeta(baseUrl);
 
         if (meta && meta.tesseract) {
-            console.log('Found .verification-meta.json, retrying OCR with optimized settings:', meta.tesseract);
+            console.log('Found verification-meta.json, retrying OCR with optimized settings:', meta.tesseract);
             debugLog('Retrying OCR with domain-specific settings...');
 
             // Retry OCR with optimized Tesseract settings
@@ -641,7 +641,7 @@ async function processImageCanvas(canvas, captureMethod = 'Unknown') {
                 console.log('Retry OCR also failed at all orientations');
             }
         } else {
-            console.log('No .verification-meta.json found or no tesseract settings');
+            console.log('No verification-meta.json found or no tesseract settings');
         }
     }
 
@@ -789,8 +789,8 @@ async function verifyAgainstClaimedUrl(claimedUrl, computedHash) {
     // Get meta config (cached) - fetch early so it's available for all outcomes
     const meta = await getVerificMeta(currentBaseUrl);
     const metaInfo = meta
-        ? `<small style="color: #4ade80;">.verification-meta.json: ${JSON.stringify(meta)}</small>`
-        : `<small style="color: #fbbf24;">no .verification-meta.json</small>`;
+        ? `<small style="color: #4ade80;">verification-meta.json: ${JSON.stringify(meta)}</small>`
+        : `<small style="color: #fbbf24;">no verification-meta.json</small>`;
 
     // Check if the URL contains the hash (using app-logic.js)
     if (!hashMatchesUrl(claimedUrl, computedHash)) {
@@ -860,7 +860,7 @@ async function verifyAgainstClaimedUrl(claimedUrl, computedHash) {
             // Show the actual status from the server (e.g., "REVOKED")
             const status = statusText;
 
-            // Use cached .verification-meta.json to get custom responseTypes
+            // Use cached verification-meta.json to get custom responseTypes
             let displayText = status;
             let statusClass = 'not-found';
 

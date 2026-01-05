@@ -359,7 +359,7 @@
 
         console.log('[TSV] Extracted cert text:', certText.substring(0, 50) + '...');
 
-        // Step 3: Try to fetch .verification-meta.json for document-specific normalization
+        // Step 3: Try to fetch verification-meta.json for document-specific normalization
         let metadata = null;
         try {
             metadata = await fetchVerificMeta(baseUrl);

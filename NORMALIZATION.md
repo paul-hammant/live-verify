@@ -4,7 +4,7 @@ Before computing the SHA-256 hash of certification text, the following normaliza
 
 ## 1. Document-Specific Normalization (Optional)
 
-If a `.verification-meta.json` file exists at the verification URL path, it may define additional normalization rules specific to that document type. These rules are applied **before** the standard normalization steps below.
+If a `verification-meta.json` file exists at the verification URL path, it may define additional normalization rules specific to that document type. These rules are applied **before** the standard normalization steps below.
 
 ### Schema
 
@@ -48,13 +48,13 @@ If a `.verification-meta.json` file exists at the verification URL path, it may 
 ### Fetching Rules
 
 When OCR extracts `vfy:rcpts.domain.com/hotel/abc123`:
-1. Client converts to: `https://rcpts.domain.com/hotel/.verification-meta.json`
+1. Client converts to: `https://rcpts.domain.com/hotel/verification-meta.json`
 2. Fetches metadata file (if it exists)
 3. Applies `charNormalization` rules first
 4. Applies `ocrNormalizationRules` second
 5. Proceeds to standard normalization steps below
 
-If `.verification-meta.json` is not found or fetch fails, standard normalization is used without document-specific rules.
+If `verification-meta.json` is not found or fetch fails, standard normalization is used without document-specific rules.
 
 ## 2. Unicode Character Normalization
 

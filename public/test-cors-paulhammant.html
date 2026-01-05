@@ -23,8 +23,8 @@
     <p>Testing fetch requests to diagnose CORS issues with the verification endpoint.</p>
 
     <div class="test-section">
-        <h3>Test 1: Fetch .verification-meta.json</h3>
-        <div class="url">https://paulhammant.com/refs/.verification-meta.json</div>
+        <h3>Test 1: Fetch verification-meta.json</h3>
+        <div class="url">https://paulhammant.com/refs/verification-meta.json</div>
         <div id="meta-result" class="result pending">Pending...</div>
     </div>
 
@@ -81,7 +81,7 @@
         }
 
         async function runTests() {
-            await testFetch('https://paulhammant.com/refs/.verification-meta.json', 'meta-result');
+            await testFetch('https://paulhammant.com/refs/verification-meta.json', 'meta-result');
             await testFetch('https://paulhammant.com/refs/65f150303faf7b5abb753bff887443d9b3f1393f18414ee84f61e9d4c20891ab', 'hash-result');
             await testFetch('https://paulhammant.com/refs/65f150303faf7b5abb753bff887443d9b3f1393f18414ee84f61e9d4c20891ab/', 'hash-slash-result');
         }

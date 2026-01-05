@@ -71,7 +71,7 @@ live-verify/
 │   │   ├── master-applied-anthropics.html
 │   │   └── doctorate-high-energy-magic.html
 │   ├── c/
-│   │   ├── .verification-meta.json       # Document normalization rules + OCR settings (optional)
+│   │   ├── verification-meta.json       # Document normalization rules + OCR settings (optional)
 │   │   └── {hash}/index.html        # Static verification endpoints (200 + "OK")
 │   └── hashes.json                  # Hash database metadata
 │
@@ -258,13 +258,13 @@ The app converts either form to `https://` and appends the computed hash:
 
 This keeps printed documents concise while remaining explicit that the URL is for verification.
 
-**Document-Specific Normalization (`.verification-meta.json`):**
+**Document-Specific Normalization (`verification-meta.json`):**
 
-Issuers can optionally provide document-specific normalization rules and OCR optimization hints at the base URL by hosting a `.verification-meta.json` file:
+Issuers can optionally provide document-specific normalization rules and OCR optimization hints at the base URL by hosting a `verification-meta.json` file:
 
 ```json
 {
-  "description": "Example .verification-meta.json for hotel receipts with Swiss Franc formatting",
+  "description": "Example verification-meta.json for hotel receipts with Swiss Franc formatting",
   "charNormalization": "éèêë→e àáâä→a ìíîï→i òóôö→o ùúûü→u ñ→n ç→c",
   "ocrNormalizationRules": [
     {
@@ -283,7 +283,7 @@ Issuers can optionally provide document-specific normalization rules and OCR opt
 }
 ```
 
-If the app finds this file at `https://example.com/c/.verification-meta.json`, it applies the rules in this order:
+If the app finds this file at `https://example.com/c/verification-meta.json`, it applies the rules in this order:
 
 **1. Text Normalization Rules (applied before standard normalization):**
 - `charNormalization`: Compact notation for character mappings (e.g., `éèêë→e` means é→e, è→e, ê→e, ë→e)
@@ -442,7 +442,7 @@ Issuers can specify legal/regulatory requirements for how verification apps must
       "issuerGuidance": [
         "Facility-level monitoring: Issuers (hospitals, police departments) must actively monitor verification endpoint for rapid-fire attempts on single staff members. Set alerts at 5+ attempts in 5 minutes.",
         "Real-time dispatch: Upon alert, consider automatic notification of facility security to conduct welfare check on staff member's location. Do NOT wait for staff to self-report harassment—treat rapid verification as potential active targeting and escalate accordingly.",
-        "App-level guidance: Transparent rate limiting in .verification-meta.json for user consent (3 per day), but do NOT rely on app to stop abuse—facility monitoring is primary defense.",
+        "App-level guidance: Transparent rate limiting in verification-meta.json for user consent (3 per day), but do NOT rely on app to stop abuse—facility monitoring is primary defense.",
         "Documentation: Log all verification patterns (who verified whom, when, from where if available). Correlate with any harassment/threat reports. This becomes evidence if legal escalation needed.",
         "Policy clarification: Document that 'legitimate verification for lawful purpose' (one scan before treatment, one check during traffic stop) is protected. Systematic targeting (20+ attempts, movement tracking, roster enumeration) is not."
       ]

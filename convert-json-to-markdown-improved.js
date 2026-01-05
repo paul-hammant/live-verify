@@ -931,7 +931,7 @@ function main() {
 
   // Filter out special files
   const jsonFiles = glob.sync(path.join(dataDir, '*.json'))
-    .filter(f => !f.includes('categories-summary.json') && !f.includes('.verification-meta.json'));
+    .filter(f => !f.includes('categories-summary.json') && !f.includes('verification-meta.json'));
 
   if (jsonFiles.length === 0) {
     console.error('No JSON files found in public/use-cases/data/');

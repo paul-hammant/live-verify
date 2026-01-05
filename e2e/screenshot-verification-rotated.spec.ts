@@ -20,9 +20,9 @@ import * as fs from 'fs';
 import * as path from 'path';
 import { testVerifyFromBase64 } from './test-helpers.js';
 
-// Load .verification-meta.json files for domain-specific normalization
+// Load verification-meta.json files for domain-specific normalization
 const HOTEL_RECEIPT_META = JSON.parse(
-    fs.readFileSync(path.join(__dirname, '../public/examples/.verification-meta.json'), 'utf-8')
+    fs.readFileSync(path.join(__dirname, '../public/examples/verification-meta.json'), 'utf-8')
 );
 
 // Configure longer timeout for these tests (OCR can be slow)
@@ -417,7 +417,7 @@ test.describe('Screenshot Verification Pipeline - Rotated Images', () => {
             const screenshotBuffer = fs.readFileSync(screenshotPath);
             const screenshotBase64 = screenshotBuffer.toString('base64');
 
-            // Determine if this test needs .verification-meta.json injection
+            // Determine if this test needs verification-meta.json injection
             const injectedMeta = testCase.screenshot.includes('hotel-receipt') ? HOTEL_RECEIPT_META : null;
 
             // Run verification pipeline using test helper
