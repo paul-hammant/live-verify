@@ -81,6 +81,18 @@ const resultsSection = document.querySelector('.results-section');
 let stream = null;
 let deviceOrientation = { alpha: 0, beta: 0, gamma: 0 };
 let currentBaseUrl = null; // Store base URL for re-verification when user edits normalized text
+const metaCache = {}; // Cache .verification-meta.json by URL
+
+// Get meta from cache or fetch it
+async function getVerificMeta(baseUrl) {
+    if (!baseUrl) return null;
+    if (metaCache[baseUrl] !== undefined) {
+        return metaCache[baseUrl];
+    }
+    const meta = await fetchVerificMeta(baseUrl);
+    metaCache[baseUrl] = meta; // Cache even if null (to avoid re-fetching 404s)
+    return meta;
+}
 
 // Debug console for mobile
 const debugConsole = document.getElementById('debugConsole');
@@ -521,7 +533,8 @@ async function processImageCanvas(canvas, captureMethod = 'Unknown') {
         extractedText.textContent = rawText;
         switchToTab('extracted');
 
-        showFailureOverlay('No verification URL found');
+        showFailureOverlay('No verify: URL recognized');
+        console.log('OCR did not find verify: or vfy: prefix. Raw text:', rawText);
         return; // Early return, not an exception
     }
 
@@ -534,7 +547,7 @@ async function processImageCanvas(canvas, captureMethod = 'Unknown') {
     debugLog(`Cert text: ${certText.substring(0, 50)}...`);
 
     // Fetch .verification-meta.json for OCR normalization rules (if available)
-    const meta = await fetchVerificMeta(baseUrl);
+    const meta = await getVerificMeta(baseUrl);
     if (meta) {
         console.log('Using normalization rules from .verification-meta.json:', meta);
     }
@@ -784,13 +797,25 @@ async function verifyAgainstClaimedUrl(claimedUrl, computedHash) {
 
     // Extract domain/authority for display
     const authority = extractDomainAuthority(claimedUrl);
-    verificationDetails.innerHTML = `<small style="color: rgba(255,255,255,0.6);">${claimedUrl}</small>`;
+
+    // Get meta config (cached)
+    const meta = await getVerificMeta(currentBaseUrl);
+    const metaInfo = meta
+        ? `<small style="color: #4ade80;">.verification-meta.json: ${JSON.stringify(meta)}</small>`
+        : `<small style="color: #fbbf24;">no .verification-meta.json</small>`;
+    verificationDetails.innerHTML = `<small style="color: rgba(255,255,255,0.6);">${claimedUrl}</small><br>${metaInfo}`;
 
     // Fetch the URL and verify response
     try {
-        const response = await fetch(claimedUrl, {
-            redirect: 'follow',  // Explicitly follow redirects (GitHub Pages adds trailing slash)
-            // mode: 'cors' is default, but some static hosts may need no-cors
+        let fetchUrl = claimedUrl;
+
+        // Check for addTrailingSlash config (e.g., GitHub Pages needs this)
+        if (meta && meta.addTrailingSlash && !fetchUrl.endsWith('/') && !fetchUrl.match(/\.\w+$/)) {
+            fetchUrl = claimedUrl + '/';
+        }
+
+        const response = await fetch(fetchUrl, {
+            redirect: 'follow',
         });
 
         // Accept any 2xx status (not just 200) - redirects resolve to final status
@@ -833,8 +858,7 @@ async function verifyAgainstClaimedUrl(claimedUrl, computedHash) {
             // Show the actual status from the server (e.g., "REVOKED")
             const status = statusText;
 
-            // Try to fetch .verification-meta.json to get custom responseTypes
-            const meta = await fetchVerificMeta(currentBaseUrl);
+            // Use cached .verification-meta.json to get custom responseTypes
             let displayText = status;
             let statusClass = 'not-found';
 

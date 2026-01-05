@@ -48,6 +48,10 @@ const {
     buildVerificationUrl
 } = require('../public/app-logic.js');
 
+function extractVerificationUrlOnly(rawText) {
+    return extractVerificationUrl(rawText).url;
+}
+
 describe('App Logic - Pure Functions', () => {
     describe('rotateCanvas', () => {
         let sourceCanvas;
@@ -133,20 +137,22 @@ verify:paul-hammant.github.io/live-verify/c`;
             expect(result.urlLineIndex).toBe(1);
         });
 
-        it('should remove spaces from verify: URL', () => {
+        it('should NOT match spaced-out "v e r i f y :" (requires contiguous verify:)', () => {
             const rawText = `Text
 v e r i f y : e x a m p l e . c o m / v e r i f i c a t i o n`;
 
             const result = extractVerificationUrl(rawText);
-            expect(result.url).toBe('verify:example.com/verification');
+            // Spaced-out text doesn't match - space removal is handled by normalization elsewhere
+            expect(result.url).toBeNull();
         });
 
-        it('should accept VERIFY: in any case', () => {
+        it('should accept VERIFY: in any case (prefix normalized to lowercase)', () => {
             const rawText = `Text
 VERIFY:EXAMPLE.COM/PATH`;
 
             const result = extractVerificationUrl(rawText);
-            expect(result.url).toBe('VERIFY:EXAMPLE.COM/PATH');
+            // Prefix is normalized to lowercase, path case preserved
+            expect(result.url).toBe('verify:EXAMPLE.COM/PATH');
         });
 
         it('should discard OCR garbage below verify: line (real-world example)', () => {
@@ -175,28 +181,31 @@ vfy:paul-hammant.github.io/live-verify/c`;
             expect(result.urlLineIndex).toBe(1);
         });
 
-        it('should remove spaces from vfy: URL', () => {
+        it('should NOT match spaced-out "v f y :" (requires contiguous vfy:)', () => {
             const rawText = `Text
 v f y : e x a m p l e . c o m / v e r i f i c a t i o n`;
 
             const result = extractVerificationUrl(rawText);
-            expect(result.url).toBe('vfy:example.com/verification');
+            // Spaced-out text doesn't match - space removal is handled by normalization elsewhere
+            expect(result.url).toBeNull();
         });
 
-        it('should accept VFY: in any case', () => {
+        it('should accept VFY: in any case (prefix normalized to lowercase)', () => {
             const rawText = `Text
 VFY:EXAMPLE.COM/PATH`;
 
             const result = extractVerificationUrl(rawText);
-            expect(result.url).toBe('VFY:EXAMPLE.COM/PATH');
+            // Prefix is normalized to lowercase, path case preserved
+            expect(result.url).toBe('vfy:EXAMPLE.COM/PATH');
         });
 
-        it('should accept vfy: in mixed case', () => {
+        it('should accept vfy: in mixed case (prefix normalized to lowercase)', () => {
             const rawText = `Text
 VfY:example.com/path`;
 
             const result = extractVerificationUrl(rawText);
-            expect(result.url).toBe('VfY:example.com/path');
+            // Prefix is normalized to lowercase, path case preserved
+            expect(result.url).toBe('vfy:example.com/path');
         });
 
         it('should discard OCR garbage below vfy: line', () => {
@@ -209,6 +218,134 @@ random OCR garbage text`;
             const result = extractVerificationUrl(rawText);
             expect(result.url).toBe('vfy:paul-hammant.github.io/live-verify/c');
             expect(result.urlLineIndex).toBe(3);
+        });
+
+        // Tests for OCR leading garbage (verify: preceded by space)
+        describe('OCR verify-line garbage handling', () => {
+            it('should find verify: preceded by tesseract mistakes or with trailing mistakes', () => {
+                expect(extractVerificationUrlOnly(`abc verify:example.com/path e`))
+                    .toBe('verify:example.com/path');
+                expect(extractVerificationUrlOnly(`abc vfy:example.com/path e`))
+                    .toBe('vfy:example.com/path');
+
+                expect(extractVerificationUrlOnly(`xyz verify:example.com/path |`))
+                    .toBe('verify:example.com/path');
+                expect(extractVerificationUrlOnly(`xyz vfy:example.com/path |`))
+                    .toBe('vfy:example.com/path');
+
+                expect(extractVerificationUrlOnly(`]  verify:example.com/path [`))
+                    .toBe('verify:example.com/path');
+                expect(extractVerificationUrlOnly(`]  vfy:example.com/path [`))
+                    .toBe('vfy:example.com/path');
+
+                expect(extractVerificationUrlOnly(`|  verify:example.com/path`))
+                    .toBe('verify:example.com/path');
+                expect(extractVerificationUrlOnly(`|  vfy:example.com/path`))
+                    .toBe('vfy:example.com/path');
+
+                expect(extractVerificationUrlOnly(`verify:example.com/path | ee`))
+                    .toBe('verify:example.com/path');
+                expect(extractVerificationUrlOnly(`vfy:example.com/path | ee`))
+                    .toBe('vfy:example.com/path');
+
+                expect(extractVerificationUrlOnly(`verify:example.com/path } ee`))
+                    .toBe('verify:example.com/path');
+                expect(extractVerificationUrlOnly(`vfy:example.com/path } ee`))
+                    .toBe('vfy:example.com/path');
+
+                expect(extractVerificationUrlOnly(`\tverify:example.com/path`))
+                    .toBe('verify:example.com/path');
+                expect(extractVerificationUrlOnly(`\tvfy:example.com/path`))
+                    .toBe('vfy:example.com/path');
+
+                expect(extractVerificationUrlOnly(`vverify:example.com/path`))
+                    .toBe(null);
+                expect(extractVerificationUrlOnly(`vvfy:example.com/path`))
+                    .toBe(null);
+
+                expect(extractVerificationUrlOnly(`verify: example.com/path`))
+                    .toBe(null); // we are not going to sanitize this class of OCR error
+                expect(extractVerificationUrlOnly(`vfy: example.com/path`))
+                    .toBe(null); // we are not going to sanitize this class of OCR error
+
+            });
+        });
+
+        // Tests for what should NOT match
+        describe('should NOT match invalid patterns', () => {
+
+            it('should return null for empty text', () => {
+                const result = extractVerificationUrl('');
+                expect(result.url).toBeNull();
+                expect(result.urlLineIndex).toBe(-1);
+            });
+
+            it('should return null for whitespace only', () => {
+                const result = extractVerificationUrl('   \n   \n   ');
+                expect(result.url).toBeNull();
+                expect(result.urlLineIndex).toBe(-1);
+            });
+
+            it('should return null when verify: has no URL after it', () => {
+                const rawText = `Some text
+verify:`;
+
+                const result = extractVerificationUrl(rawText);
+                expect(result.url).toBeNull();
+            });
+
+            it('should return null when vfy: has no URL after it', () => {
+                const rawText = `Some text
+vfy:`;
+
+                const result = extractVerificationUrl(rawText);
+                expect(result.url).toBeNull();
+            });
+
+            it('should return null when verify: has only whitespace after it', () => {
+                const rawText = `Some text
+verify:   `;
+
+                const result = extractVerificationUrl(rawText);
+                expect(result.url).toBeNull();
+            });
+        });
+
+        // Edge cases
+        describe('edge cases', () => {
+
+
+            it('should handle verify: at very start of text', () => {
+                const rawText = `verify:example.com/path`;
+
+                const result = extractVerificationUrl(rawText);
+                expect(result.url).toBe('verify:example.com/path');
+                expect(result.urlLineIndex).toBe(0);
+            });
+
+            it('should handle tabs as whitespace before verify:', () => {
+                const rawText = `Some text
+\tverify:example.com/path`;
+
+                const result = extractVerificationUrl(rawText);
+                expect(result.url).toBe('verify:example.com/path');
+            });
+
+            it('should handle URL with query params (space after = garbage)', () => {
+                const rawText = `Some text
+verify:example.com/path?foo=bar baz`;
+
+                const result = extractVerificationUrl(rawText);
+                expect(result.url).toBe('verify:example.com/path?foo=bar');
+            });
+
+            it('should preserve path case in extracted URL', () => {
+                const rawText = `Some text
+verify:Example.COM/VeRiFy/PaTh`;
+
+                const result = extractVerificationUrl(rawText);
+                expect(result.url).toBe('verify:Example.COM/VeRiFy/PaTh');
+            });
         });
     });
 

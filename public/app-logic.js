@@ -57,35 +57,44 @@ function rotateCanvas(sourceCanvas, degrees) {
 function extractVerificationUrl(rawText) {
     const rawLines = rawText.split('\n').map(l => l.trim());
 
+    // Match verify: or vfy: at line start OR preceded by space (to skip leading OCR garbage)
+    const verifyPattern = /(^|\s)(verify|vfy):/i;
+
     // Scan from bottom to top to find the verify: or vfy: line
     // Everything below it is likely OCR garbage from dust/artifacts
     for (let i = rawLines.length - 1; i >= 0; i--) {
         const line = rawLines[i];
         if (!line) continue; // Skip empty lines
 
-        // Remove ALL spaces from the line (OCR often adds errant spaces)
-        const lineNoSpaces = line.replace(/\s+/g, '');
-        const lowerLine = lineNoSpaces.toLowerCase();
+        const match = line.match(verifyPattern);
+        if (match) {
+            // Found a match - extract everything after the colon
+            const colonIndex = line.indexOf(':', match.index);
+            if (colonIndex === -1) continue;
 
-        // Check if this line starts with verify: or vfy: (with OCR tolerance)
-        // OCR often confuses: V/v, f/t, i/l/1, so we check multiple patterns
-        if (lowerLine.startsWith('verify:') || lowerLine.startsWith('vfy:') ||
-            lowerLine.startsWith('verity:') || lowerLine.startsWith('vty:') ||
-            lowerLine.startsWith('verily:') || lowerLine.startsWith('veryfy:')) {
-            // Normalize common OCR errors in the prefix
-            let normalizedUrl = lineNoSpaces;
-            const lowerUrl = normalizedUrl.toLowerCase();
+            // Get text after colon - URL must start immediately (no space after colon)
+            let urlPart = line.substring(colonIndex + 1);
 
-            if (lowerUrl.startsWith('verity:') || lowerUrl.startsWith('vty:') ||
-                lowerUrl.startsWith('verily:') || lowerUrl.startsWith('veryfy:')) {
-                // Replace the corrupted prefix with correct 'vfy:'
-                normalizedUrl = 'vfy:' + normalizedUrl.substring(normalizedUrl.indexOf(':') + 1);
+            // Reject if there's a space immediately after the colon
+            if (urlPart.length === 0 || /^\s/.test(urlPart)) {
+                continue;
             }
 
-            return {
-                url: normalizedUrl,
-                urlLineIndex: i
-            };
+            // Strip trailing garbage (anything after a space)
+            const spaceIndex = urlPart.indexOf(' ');
+            if (spaceIndex !== -1) {
+                urlPart = urlPart.substring(0, spaceIndex);
+            }
+
+            if (urlPart.length > 0) {
+                // Determine the correct prefix
+                const prefix = match[2].toLowerCase() === 'vfy' ? 'vfy:' : 'verify:';
+
+                return {
+                    url: prefix + urlPart,
+                    urlLineIndex: i
+                };
+            }
         }
     }
 
