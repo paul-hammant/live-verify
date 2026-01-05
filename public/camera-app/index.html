@@ -142,7 +142,10 @@
                         </div>
                         <div class="tab-pane" id="tab-normalized">
                             <textarea id="normalizedText" rows="10" style="width: 100%; font-family: monospace; padding: 10px; border: 1px solid #e2e8f0; border-radius: 4px;"></textarea>
-                            <p style="margin-top: 10px; font-size: 0.9rem; color: #666;">You can edit the text above to fix OCR errors. Hash will automatically recalculate.</p>
+                            <div style="margin-top: 10px; display: flex; align-items: center; gap: 10px;">
+                                <button id="resubmitBtn" class="btn btn-primary" style="display: none;">Re-verify</button>
+                                <p style="font-size: 0.9rem; color: #666; margin: 0;">Edit text to fix OCR errors, then re-verify.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -156,7 +159,7 @@
                 <div class="result-card" id="verificationResult" style="display: none;">
                     <h3>Verification Status</h3>
                     <div class="verification-status" id="verificationStatus"></div>
-                    <div class="verification-url" id="verificationUrl"></div>
+                    <div class="verification-details" id="verificationDetails"></div>
                     <div id="verificationDisclaimer" style="display: none; margin-top: 15px; padding: 12px; background-color: #fef5e7; border-left: 4px solid #f39c12; font-size: 0.85rem; color: #856404;">
                         <div style="margin-bottom: 8px;">⚠️ <strong>Only the text within the registration marks has been verified</strong></div>
                         <div style="font-size: 0.8rem; opacity: 0.9;">Screencaps of this verified message are not proof of anything</div>

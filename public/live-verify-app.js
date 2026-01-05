@@ -60,9 +60,10 @@ const hashValue = document.getElementById('hashValue');
 const copyHashBtn = document.getElementById('copyHash');
 const verificationResult = document.getElementById('verificationResult');
 const verificationStatus = document.getElementById('verificationStatus');
-const verificationUrl = document.getElementById('verificationUrl');
+const verificationDetails = document.getElementById('verificationDetails');
 const verificationDisclaimer = document.getElementById('verificationDisclaimer');
 const verifyAnotherBtn = document.getElementById('verifyAnotherBtn');
+const resubmitBtn = document.getElementById('resubmitBtn');
 // Capture info elements (for user-facing diagnostics)
 const captureInfo = document.getElementById('captureInfo');
 const captureMethodEl = document.getElementById('captureMethod');
@@ -137,8 +138,8 @@ successOverlay.addEventListener('click', () => {
     hideAllOverlays();
 
     // Reset for next scan
-    normalizedTextEditorSetup = false;
     currentBaseUrl = null;
+    resubmitBtn.style.display = 'none';
 
     // Clear the frozen viewfinder
     const overlayCtx = overlay.getContext('2d');
@@ -348,9 +349,9 @@ stopCameraBtn.addEventListener('click', () => {
     verificationResult.style.display = 'none';
     debugConsole.style.display = 'none';
 
-    // Reset normalized text editor flag
-    normalizedTextEditorSetup = false;
+    // Reset for next scan
     currentBaseUrl = null;
+    resubmitBtn.style.display = 'none';
 
     resetCameraUI();
 });
@@ -364,9 +365,9 @@ retakeBtn.addEventListener('click', () => {
     verificationResult.style.display = 'none';
     debugConsole.style.display = 'none';
 
-    // Reset normalized text editor flag
-    normalizedTextEditorSetup = false;
+    // Reset for next scan
     currentBaseUrl = null;
+    resubmitBtn.style.display = 'none';
 
     // Show camera section again
     document.querySelector('.camera-section').style.display = '';
@@ -392,9 +393,9 @@ verifyAnotherBtn.addEventListener('click', () => {
     verifyAnotherBtn.style.display = 'none';
     debugConsole.style.display = 'none';
 
-    // Reset normalized text editor flag
-    normalizedTextEditorSetup = false;
+    // Reset for next scan
     currentBaseUrl = null;
+    resubmitBtn.style.display = 'none';
 
     // Show camera section again
     document.querySelector('.camera-section').style.display = '';
@@ -643,9 +644,9 @@ captureBtn.addEventListener('click', async () => {
     try {
         captureBtn.style.display = 'none'; // Hide button during processing
 
-        // Reset normalized text editor for new capture
-        normalizedTextEditorSetup = false;
+        // Reset for new capture
         currentBaseUrl = null;
+        resubmitBtn.style.display = 'none';
 
         // Hide previous results and reset to cropped image tab
         textResult.style.display = 'none';
@@ -707,42 +708,59 @@ captureBtn.addEventListener('click', async () => {
 // rotateCanvas(), extractVerificationUrl(), extractCertText(), hashMatchesUrl(), buildVerificationUrl(), fetchVerificMeta() are loaded from app-logic.js
 // normalizeText() and sha256() are loaded from normalize.js
 
-// Setup event listener for manual editing of normalized text
-let normalizedTextEditorSetup = false; // Track if event listener already added
+// Setup event listeners for manual editing of normalized text (one-time setup)
+let normalizedTextListenersSetup = false; // True once listeners are attached (never reset)
+let originalNormalizedText = ''; // Track original text to detect changes (reset per capture)
+
 function setupNormalizedTextEditor() {
-    // Only set up once per capture to avoid duplicate listeners
-    if (normalizedTextEditorSetup) return;
-    normalizedTextEditorSetup = true;
+    // Store original text for this capture
+    originalNormalizedText = normalizedText.value;
 
-    let debounceTimer = null;
+    // Only attach listeners once globally (not per capture)
+    if (normalizedTextListenersSetup) return;
+    normalizedTextListenersSetup = true;
 
-    normalizedText.addEventListener('input', async () => {
-        // Debounce to avoid re-verifying on every keystroke
-        clearTimeout(debounceTimer);
-        debounceTimer = setTimeout(async () => {
-            try {
-                const editedText = normalizedText.value;
-                console.log('User edited normalized text, re-hashing and re-verifying...');
+    // Show re-verify button when text changes
+    normalizedText.addEventListener('input', () => {
+        const hasChanged = normalizedText.value !== originalNormalizedText;
+        resubmitBtn.style.display = hasChanged ? 'inline-block' : 'none';
+    });
 
-                // Generate new SHA-256 hash
-                const hash = await sha256(editedText);
-                console.log('New SHA-256 Hash:', hash);
-                hashValue.textContent = hash;
+    // Handle re-verify button click
+    resubmitBtn.addEventListener('click', async () => {
+        try {
+            const editedText = normalizedText.value;
+            console.log('User clicked re-verify, re-hashing and re-verifying...');
 
-                // Build full verification URL
-                if (currentBaseUrl) {
-                    const fullVerificationUrl = buildVerificationUrl(currentBaseUrl, hash);
-                    console.log('New Verification URL:', fullVerificationUrl);
+            // Hide the button while processing
+            resubmitBtn.style.display = 'none';
+            showProcessingOverlay('Re-verifying...');
 
-                    // Re-verify
-                    await verifyAgainstClaimedUrl(fullVerificationUrl, hash);
-                } else {
-                    console.warn('No base URL available for re-verification');
-                }
-            } catch (error) {
-                console.error('Error re-verifying edited text:', error);
+            // Generate new SHA-256 hash
+            const hash = await sha256(editedText);
+            console.log('New SHA-256 Hash:', hash);
+            hashValue.textContent = hash;
+
+            // Build full verification URL
+            if (currentBaseUrl) {
+                const fullVerificationUrl = buildVerificationUrl(currentBaseUrl, hash);
+                console.log('New Verification URL:', fullVerificationUrl);
+
+                // Re-verify
+                await verifyAgainstClaimedUrl(fullVerificationUrl, hash);
+
+                // Update original text after successful verify
+                originalNormalizedText = editedText;
+            } else {
+                console.warn('No base URL available for re-verification');
+                hideProcessingOverlay();
             }
-        }, 500); // Wait 500ms after user stops typing
+        } catch (error) {
+            console.error('Error re-verifying edited text:', error);
+            hideProcessingOverlay();
+            // Show button again on error so user can retry
+            resubmitBtn.style.display = 'inline-block';
+        }
     });
 }
 
@@ -755,7 +773,7 @@ async function verifyAgainstClaimedUrl(claimedUrl, computedHash) {
     // Check if the URL contains the hash (using app-logic.js)
     if (!hashMatchesUrl(claimedUrl, computedHash)) {
         verificationStatus.textContent = `Hash not found at claimed URL`;
-        verificationUrl.textContent = claimedUrl;
+        verificationDetails.innerHTML = `<small style="color: rgba(255,255,255,0.6);">${claimedUrl}</small>`;
         verificationStatus.classList.add('not-found');
         console.log('Hash mismatch: computed hash not in claimed URL');
 
@@ -766,14 +784,17 @@ async function verifyAgainstClaimedUrl(claimedUrl, computedHash) {
 
     // Extract domain/authority for display
     const authority = extractDomainAuthority(claimedUrl);
-    verificationUrl.innerHTML = `<small style="color: rgba(255,255,255,0.6);">${claimedUrl}</small>`;
+    verificationDetails.innerHTML = `<small style="color: rgba(255,255,255,0.6);">${claimedUrl}</small>`;
 
     // Fetch the URL and verify response
     try {
-        const response = await fetch(claimedUrl);
+        const response = await fetch(claimedUrl, {
+            redirect: 'follow',  // Explicitly follow redirects (GitHub Pages adds trailing slash)
+            // mode: 'cors' is default, but some static hosts may need no-cors
+        });
 
-        // Check for 200 status
-        if (response.status !== 200) {
+        // Accept any 2xx status (not just 200) - redirects resolve to final status
+        if (!response.ok) {
             verificationStatus.textContent = `URL returned status ${response.status}`;
             verificationStatus.classList.add('not-found');
             console.log(`Verification failed: HTTP ${response.status}`);
@@ -844,8 +865,20 @@ async function verifyAgainstClaimedUrl(claimedUrl, computedHash) {
     } catch (error) {
         // Network error or CORS issue
         console.error('Could not fetch URL:', error);
-        verificationStatus.textContent = `Network error or CORS restriction`;
+
+        // Provide more specific error message
+        let errorMsg = 'Network error';
+        if (error.message && error.message.includes('CORS')) {
+            errorMsg = 'CORS blocked';
+        } else if (error.message && error.message.includes('Failed to fetch')) {
+            errorMsg = 'Failed to fetch (CORS or unreachable)';
+        } else if (error.name === 'TypeError') {
+            errorMsg = 'Network/CORS error';
+        }
+
+        verificationStatus.textContent = 'Not Verified';
         verificationStatus.classList.add('not-found');
+        verificationDetails.innerHTML = `<small style="color: rgba(255,255,255,0.6);">${claimedUrl}</small><br><small style="color: #f56565;">${errorMsg}</small>`;
 
         textResult.style.display = 'block';
         showFailureOverlay('Network error');
@@ -988,8 +1021,8 @@ window.liveVerifyApp = {
 
     // UI reset function - needed to prepare for test runs
     resetForTest: () => {
-        normalizedTextEditorSetup = false;
         currentBaseUrl = null;
+        resubmitBtn.style.display = 'none';
         textResult.style.display = 'none';
         hashResult.style.display = 'none';
         verificationResult.style.display = 'none';
@@ -1000,6 +1033,6 @@ window.liveVerifyApp = {
     verification: {
         get status() { return verificationStatus; },
         get result() { return verificationResult; },
-        get url() { return verificationUrl; }
+        get details() { return verificationDetails; }
     }
 };

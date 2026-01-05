@@ -115,7 +115,7 @@ Unlike formal VOE letters from HR departments, **peer references** are colleague
 
 The verify URL points to the *referee's* domain, not the employer's. This reflects that the claim is personal ("I worked with this person") rather than institutional ("This person was employed here").
 
-<div style="max-width: 550px; margin: 24px auto; font-family: 'Courier New', monospace; background: #f9f9f9; padding: 15px; border: 1px solid #999; font-size: 1em; color: #000; line-height: 1.6;">
+<div style="max-width: 550px; margin: 24px auto; font-family: 'Courier New', monospace; background: #f9f9f9; padding: 15px; font-size: 1em; color: #000; line-height: 1.6;">
   <span verifiable-text="start" data-for="peer">[</span>I, Paul Hammant, worked for Kevin Behr in<br>
   his role as CIO of HedgeServ in New York City<br>
   in 2015 and 2016<br>

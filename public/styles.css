@@ -547,7 +547,7 @@ main {
     border: 2px solid #bf5af2;
 }
 
-.verification-url {
+.verification-details {
     font-size: 0.75rem;
     color: rgba(255,255,255,0.6);
     word-break: break-all;
