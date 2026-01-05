@@ -783,10 +783,19 @@ async function verifyAgainstClaimedUrl(claimedUrl, computedHash) {
     verificationResult.style.display = 'block';
     verificationStatus.className = 'verification-status';
 
+    // Extract domain/authority for display
+    const authority = extractDomainAuthority(claimedUrl);
+
+    // Get meta config (cached) - fetch early so it's available for all outcomes
+    const meta = await getVerificMeta(currentBaseUrl);
+    const metaInfo = meta
+        ? `<small style="color: #4ade80;">.verification-meta.json: ${JSON.stringify(meta)}</small>`
+        : `<small style="color: #fbbf24;">no .verification-meta.json</small>`;
+
     // Check if the URL contains the hash (using app-logic.js)
     if (!hashMatchesUrl(claimedUrl, computedHash)) {
         verificationStatus.textContent = `Hash not found at claimed URL`;
-        verificationDetails.innerHTML = `<small style="color: rgba(255,255,255,0.6);">${claimedUrl}</small>`;
+        verificationDetails.innerHTML = `<small style="color: rgba(255,255,255,0.6);">${claimedUrl}</small><br>${metaInfo}`;
         verificationStatus.classList.add('not-found');
         console.log('Hash mismatch: computed hash not in claimed URL');
 
@@ -795,14 +804,7 @@ async function verifyAgainstClaimedUrl(claimedUrl, computedHash) {
         return { status: 'HASH_MISMATCH' };
     }
 
-    // Extract domain/authority for display
-    const authority = extractDomainAuthority(claimedUrl);
-
-    // Get meta config (cached)
-    const meta = await getVerificMeta(currentBaseUrl);
-    const metaInfo = meta
-        ? `<small style="color: #4ade80;">.verification-meta.json: ${JSON.stringify(meta)}</small>`
-        : `<small style="color: #fbbf24;">no .verification-meta.json</small>`;
+    // Set initial details (will be updated if error occurs)
     verificationDetails.innerHTML = `<small style="color: rgba(255,255,255,0.6);">${claimedUrl}</small><br>${metaInfo}`;
 
     // Fetch the URL and verify response
@@ -902,7 +904,7 @@ async function verifyAgainstClaimedUrl(claimedUrl, computedHash) {
 
         verificationStatus.textContent = 'Not Verified';
         verificationStatus.classList.add('not-found');
-        verificationDetails.innerHTML = `<small style="color: rgba(255,255,255,0.6);">${claimedUrl}</small><br><small style="color: #f56565;">${errorMsg}</small>`;
+        verificationDetails.innerHTML = `<small style="color: rgba(255,255,255,0.6);">${claimedUrl}</small><br>${metaInfo}<br><small style="color: #f56565;">${errorMsg}</small>`;
 
         textResult.style.display = 'block';
         showFailureOverlay('Network error');

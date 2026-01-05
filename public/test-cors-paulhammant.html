@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORS Test - paulhammant.com/refs</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; }
+        h1 { color: #333; }
+        .test-section { margin: 20px 0; padding: 15px; border: 1px solid #ddd; border-radius: 8px; }
+        .test-section h3 { margin-top: 0; }
+        .url { font-family: monospace; font-size: 0.9em; word-break: break-all; background: #f5f5f5; padding: 8px; border-radius: 4px; }
+        .result { margin-top: 10px; padding: 10px; border-radius: 4px; }
+        .success { background: #d4edda; color: #155724; }
+        .error { background: #f8d7da; color: #721c24; }
+        .pending { background: #fff3cd; color: #856404; }
+        pre { white-space: pre-wrap; word-break: break-word; font-size: 0.85em; max-height: 200px; overflow: auto; }
+        button { padding: 10px 20px; font-size: 1em; cursor: pointer; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <h1>CORS Test: paulhammant.com/refs</h1>
+    <p>Testing fetch requests to diagnose CORS issues with the verification endpoint.</p>
+
+    <div class="test-section">
+        <h3>Test 1: Fetch .verification-meta.json</h3>
+        <div class="url">https://paulhammant.com/refs/.verification-meta.json</div>
+        <div id="meta-result" class="result pending">Pending...</div>
+    </div>
+
+    <div class="test-section">
+        <h3>Test 2: Fetch verification hash endpoint</h3>
+        <div class="url">https://paulhammant.com/refs/65f150303faf7b5abb753bff887443d9b3f1393f18414ee84f61e9d4c20891ab</div>
+        <div id="hash-result" class="result pending">Pending...</div>
+    </div>
+
+    <div class="test-section">
+        <h3>Test 3: Fetch with trailing slash</h3>
+        <div class="url">https://paulhammant.com/refs/65f150303faf7b5abb753bff887443d9b3f1393f18414ee84f61e9d4c20891ab/</div>
+        <div id="hash-slash-result" class="result pending">Pending...</div>
+    </div>
+
+    <button onclick="runTests()">Run Tests</button>
+
+    <script>
+        async function testFetch(url, resultId) {
+            const resultEl = document.getElementById(resultId);
+            resultEl.className = 'result pending';
+            resultEl.innerHTML = 'Fetching...';
+
+            try {
+                const startTime = performance.now();
+                const response = await fetch(url, { redirect: 'follow' });
+                const elapsed = Math.round(performance.now() - startTime);
+
+                const body = await response.text();
+                const headers = {};
+                response.headers.forEach((value, key) => {
+                    headers[key] = value;
+                });
+
+                resultEl.className = 'result success';
+                resultEl.innerHTML = `
+                    <strong>Status:</strong> ${response.status} ${response.statusText}<br>
+                    <strong>Time:</strong> ${elapsed}ms<br>
+                    <strong>Headers:</strong><pre>${JSON.stringify(headers, null, 2)}</pre>
+                    <strong>Body:</strong><pre>${body.substring(0, 500)}${body.length > 500 ? '...' : ''}</pre>
+                `;
+            } catch (error) {
+                resultEl.className = 'result error';
+                resultEl.innerHTML = `
+                    <strong>Error:</strong> ${error.name}<br>
+                    <strong>Message:</strong> ${error.message}<br>
+                    <strong>Likely cause:</strong> ${
+                        error.name === 'TypeError'
+                            ? 'CORS blocked or network unreachable. The server may not be sending Access-Control-Allow-Origin header.'
+                            : 'Unknown error'
+                    }
+                `;
+            }
+        }
+
+        async function runTests() {
+            await testFetch('https://paulhammant.com/refs/.verification-meta.json', 'meta-result');
+            await testFetch('https://paulhammant.com/refs/65f150303faf7b5abb753bff887443d9b3f1393f18414ee84f61e9d4c20891ab', 'hash-result');
+            await testFetch('https://paulhammant.com/refs/65f150303faf7b5abb753bff887443d9b3f1393f18414ee84f61e9d4c20891ab/', 'hash-slash-result');
+        }
+
+        // Run tests on page load
+        runTests();
+    </script>
+</body>
+</html>
