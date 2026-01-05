@@ -35,9 +35,9 @@
     </div>
 
     <div class="test-section">
-        <h3>Test 3: Fetch with trailing slash</h3>
-        <div class="url">https://paulhammant.com/refs/65f150303faf7b5abb753bff887443d9b3f1393f18414ee84f61e9d4c20891ab/</div>
-        <div id="hash-slash-result" class="result pending">Pending...</div>
+        <h3>Test 3: Fetch with .json suffix</h3>
+        <div class="url">https://paulhammant.com/refs/65f150303faf7b5abb753bff887443d9b3f1393f18414ee84f61e9d4c20891ab.json</div>
+        <div id="hash-json-result" class="result pending">Pending...</div>
     </div>
 
     <button onclick="runTests()">Run Tests</button>
@@ -83,7 +83,7 @@
         async function runTests() {
             await testFetch('https://paulhammant.com/refs/verification-meta.json', 'meta-result');
             await testFetch('https://paulhammant.com/refs/65f150303faf7b5abb753bff887443d9b3f1393f18414ee84f61e9d4c20891ab', 'hash-result');
-            await testFetch('https://paulhammant.com/refs/65f150303faf7b5abb753bff887443d9b3f1393f18414ee84f61e9d4c20891ab/', 'hash-slash-result');
+            await testFetch('https://paulhammant.com/refs/65f150303faf7b5abb753bff887443d9b3f1393f18414ee84f61e9d4c20891ab.json', 'hash-json-result');
         }
 
         // Run tests on page load
