@@ -1,0 +1,20 @@
+{
+  "name": "live-verify-appium-tests",
+  "version": "1.0.0",
+  "description": "Appium UI tests for Live Verify iOS app",
+  "scripts": {
+    "test": "wdio run wdio.conf.js",
+    "test:simulator": "DEVICE_NAME='iPhone 15 Pro' wdio run wdio.conf.js"
+  },
+  "devDependencies": {
+    "@wdio/cli": "^8.x",
+    "@wdio/local-runner": "^8.x",
+    "@wdio/mocha-framework": "^8.x",
+    "@wdio/spec-reporter": "^8.x",
+    "appium": "^2.x",
+    "appium-xcuitest-driver": "^7.x"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

@@ -748,6 +748,9 @@ const psl = (typeof window !== 'undefined' && window.psl) || require('psl');
 - Node.js tests: `npm install` provides dependencies
 - Both environments get the same code - no fallbacks
 
+### No Fallback Logic
+- Do not add "last known good" caches, silent fallbacks, or default defaults when inputs/signals are missing (orientation, network, feature flags, etc.). Surface missing data explicitly and fail loudly so issues are visible.
+
 
 ## Trust Model
 

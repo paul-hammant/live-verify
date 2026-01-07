@@ -1,0 +1,663 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1000001 /* LiveVerifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001 /* LiveVerifyApp.swift */; };
+		A1000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000002 /* ContentView.swift */; };
+		A1000003 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000003 /* CameraService.swift */; };
+		A1000004 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000004 /* CameraView.swift */; };
+		A1000005 /* JSBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000005 /* JSBridge.swift */; };
+		A1000006 /* SHA256Hasher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000006 /* SHA256Hasher.swift */; };
+		A1000007 /* TextRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000007 /* TextRecognizer.swift */; };
+		A1000008 /* VerificationClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000008 /* VerificationClient.swift */; };
+		A1000009 /* VerificationPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000009 /* VerificationPipeline.swift */; };
+		A100000A /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000A /* ResultView.swift */; };
+		A100000B /* VerificationOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000B /* VerificationOverlay.swift */; };
+		A100000C /* normalize.js in Resources */ = {isa = PBXBuildFile; fileRef = A200000C /* normalize.js */; };
+		A100000D /* app-logic.js in Resources */ = {isa = PBXBuildFile; fileRef = A200000D /* app-logic.js */; };
+		A1000010 /* LiveVerifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000010 /* LiveVerifyTests.swift */; };
+		A1000020 /* LiveVerifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000020 /* LiveVerifyUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A3000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5000001;
+			remoteInfo = LiveVerify;
+		};
+		A3000002 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5000001;
+			remoteInfo = LiveVerify;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A2000001 /* LiveVerifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveVerifyApp.swift; sourceTree = "<group>"; };
+		A2000002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A2000003 /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
+		A2000004 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		A2000005 /* JSBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSBridge.swift; sourceTree = "<group>"; };
+		A2000006 /* SHA256Hasher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHA256Hasher.swift; sourceTree = "<group>"; };
+		A2000007 /* TextRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRecognizer.swift; sourceTree = "<group>"; };
+		A2000008 /* VerificationClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationClient.swift; sourceTree = "<group>"; };
+		A2000009 /* VerificationPipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationPipeline.swift; sourceTree = "<group>"; };
+		A200000A /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		A200000B /* VerificationOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationOverlay.swift; sourceTree = "<group>"; };
+		A200000C /* normalize.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = normalize.js; sourceTree = "<group>"; };
+		A200000D /* app-logic.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "app-logic.js"; sourceTree = "<group>"; };
+		A200000E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2000010 /* LiveVerifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveVerifyTests.swift; sourceTree = "<group>"; };
+		A2000020 /* LiveVerifyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveVerifyUITests.swift; sourceTree = "<group>"; };
+		A6000001 /* LiveVerify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveVerify.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6000002 /* LiveVerifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveVerifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6000003 /* LiveVerifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveVerifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A7000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7000003 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A8000001 = {
+			isa = PBXGroup;
+			children = (
+				A8000002 /* LiveVerify */,
+				A8000008 /* LiveVerifyTests */,
+				A8000009 /* LiveVerifyUITests */,
+				A800000A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A8000002 /* LiveVerify */ = {
+			isa = PBXGroup;
+			children = (
+				A8000003 /* App */,
+				A8000004 /* Camera */,
+				A8000005 /* Pipeline */,
+				A8000006 /* Views */,
+				A8000007 /* Resources */,
+			);
+			path = LiveVerify;
+			sourceTree = "<group>";
+		};
+		A8000003 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A2000001 /* LiveVerifyApp.swift */,
+				A2000002 /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A8000004 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				A2000003 /* CameraService.swift */,
+				A2000004 /* CameraView.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		A8000005 /* Pipeline */ = {
+			isa = PBXGroup;
+			children = (
+				A2000005 /* JSBridge.swift */,
+				A2000006 /* SHA256Hasher.swift */,
+				A2000007 /* TextRecognizer.swift */,
+				A2000008 /* VerificationClient.swift */,
+				A2000009 /* VerificationPipeline.swift */,
+			);
+			path = Pipeline;
+			sourceTree = "<group>";
+		};
+		A8000006 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A200000A /* ResultView.swift */,
+				A200000B /* VerificationOverlay.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A8000007 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A200000E /* Info.plist */,
+				A800000B /* JS */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A8000008 /* LiveVerifyTests */ = {
+			isa = PBXGroup;
+			children = (
+				A2000010 /* LiveVerifyTests.swift */,
+			);
+			path = LiveVerifyTests;
+			sourceTree = "<group>";
+		};
+		A8000009 /* LiveVerifyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A2000020 /* LiveVerifyUITests.swift */,
+			);
+			path = LiveVerifyUITests;
+			sourceTree = "<group>";
+		};
+		A800000A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6000001 /* LiveVerify.app */,
+				A6000002 /* LiveVerifyTests.xctest */,
+				A6000003 /* LiveVerifyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A800000B /* JS */ = {
+			isa = PBXGroup;
+			children = (
+				A200000C /* normalize.js */,
+				A200000D /* app-logic.js */,
+			);
+			path = JS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5000001 /* LiveVerify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9000001 /* Build configuration list for PBXNativeTarget "LiveVerify" */;
+			buildPhases = (
+				AA000001 /* Sources */,
+				A7000001 /* Frameworks */,
+				AB000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LiveVerify;
+			productName = LiveVerify;
+			productReference = A6000001 /* LiveVerify.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A5000002 /* LiveVerifyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9000002 /* Build configuration list for PBXNativeTarget "LiveVerifyTests" */;
+			buildPhases = (
+				AA000002 /* Sources */,
+				A7000002 /* Frameworks */,
+				AB000002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC000001 /* PBXTargetDependency */,
+			);
+			name = LiveVerifyTests;
+			productName = LiveVerifyTests;
+			productReference = A6000002 /* LiveVerifyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A5000003 /* LiveVerifyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9000003 /* Build configuration list for PBXNativeTarget "LiveVerifyUITests" */;
+			buildPhases = (
+				AA000003 /* Sources */,
+				A7000003 /* Frameworks */,
+				AB000003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC000002 /* PBXTargetDependency */,
+			);
+			name = LiveVerifyUITests;
+			productName = LiveVerifyUITests;
+			productReference = A6000003 /* LiveVerifyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A4000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A5000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					A5000002 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = A5000001;
+					};
+					A5000003 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = A5000001;
+					};
+				};
+			};
+			buildConfigurationList = A9000000 /* Build configuration list for PBXProject "LiveVerify" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A8000001;
+			productRefGroup = A800000A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5000001 /* LiveVerify */,
+				A5000002 /* LiveVerifyTests */,
+				A5000003 /* LiveVerifyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A100000C /* normalize.js in Resources */,
+				A100000D /* app-logic.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB000002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000001 /* LiveVerifyApp.swift in Sources */,
+				A1000002 /* ContentView.swift in Sources */,
+				A1000003 /* CameraService.swift in Sources */,
+				A1000004 /* CameraView.swift in Sources */,
+				A1000005 /* JSBridge.swift in Sources */,
+				A1000006 /* SHA256Hasher.swift in Sources */,
+				A1000007 /* TextRecognizer.swift in Sources */,
+				A1000008 /* VerificationClient.swift in Sources */,
+				A1000009 /* VerificationPipeline.swift in Sources */,
+				A100000A /* ResultView.swift in Sources */,
+				A100000B /* VerificationOverlay.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000010 /* LiveVerifyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA000003 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000020 /* LiveVerifyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5000001 /* LiveVerify */;
+			targetProxy = A3000001 /* PBXContainerItemProxy */;
+		};
+		AC000002 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5000001 /* LiveVerify */;
+			targetProxy = A3000002 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AD000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AD000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 48SU79VBV2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LiveVerify/Resources/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Live Verify needs camera access to scan documents for verification.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liveverify.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AD000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 48SU79VBV2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LiveVerify/Resources/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Live Verify needs camera access to scan documents for verification.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liveverify.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AD000005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liveverify.app.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LiveVerify.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LiveVerify";
+			};
+			name = Debug;
+		};
+		AD000006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liveverify.app.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LiveVerify.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LiveVerify";
+			};
+			name = Release;
+		};
+		AD000007 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liveverify.app.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LiveVerify;
+			};
+			name = Debug;
+		};
+		AD000008 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liveverify.app.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LiveVerify;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9000000 /* Build configuration list for PBXProject "LiveVerify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD000001 /* Debug */,
+				AD000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9000001 /* Build configuration list for PBXNativeTarget "LiveVerify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD000003 /* Debug */,
+				AD000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9000002 /* Build configuration list for PBXNativeTarget "LiveVerifyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD000005 /* Debug */,
+				AD000006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9000003 /* Build configuration list for PBXNativeTarget "LiveVerifyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD000007 /* Debug */,
+				AD000008 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A4000001 /* Project object */;
+}
