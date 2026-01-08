@@ -177,7 +177,7 @@ enum PipelineError: Error, LocalizedError {
 /// Coordinates OCR, normalization (via JS), hashing, and network verification
 class VerificationPipeline: ObservableObject {
     private let textRecognizer: TextRecognizer
-    private let rectangleDetector: RectangleDetector
+    private let contourDetector: ContourDetector
     private let verificationClient: VerificationClient
     private var jsBridge: JSBridge?
 
@@ -199,7 +199,7 @@ class VerificationPipeline: ObservableObject {
 
     init() {
         self.textRecognizer = TextRecognizer()
-        self.rectangleDetector = RectangleDetector()
+        self.contourDetector = ContourDetector()
         self.verificationClient = VerificationClient()
 
         // Initialize JS bridge
@@ -251,11 +251,27 @@ class VerificationPipeline: ObservableObject {
         Log.d("Pipeline", "After normalization: \(orientedImage.size)")
 
         await MainActor.run {
-            currentStep = "Detecting document..."
+            currentStep = "Detecting registration marks..."
         }
 
-        // Step 0: Detect and crop to document rectangle
-        let croppedImage = await rectangleDetector.detectAndCrop(image: orientedImage)
+        // Step 0: Detect and crop to registration rectangle (using OpenCV contour detection)
+        let croppedImage: UIImage
+        do {
+            croppedImage = try await contourDetector.detectAndCrop(image: orientedImage)
+        } catch {
+            await MainActor.run {
+                isProcessing = false
+            }
+            // Return a result indicating detection failure - no fallback
+            return VerificationResult(
+                outcome: .error("No registration marks detected. Point camera at document with black border."),
+                rawText: "",
+                normalizedText: nil,
+                hash: nil,
+                verificationURL: nil,
+                baseURL: nil
+            )
+        }
 
         await MainActor.run {
             currentStep = "Recognizing text..."
@@ -355,6 +371,112 @@ class VerificationPipeline: ObservableObject {
         }
 
         // Step 8: Verify against issuer endpoint
+        let outcome = await verificationClient.verify(verificationURL: verificationURL, meta: meta)
+
+        await MainActor.run {
+            isProcessing = false
+            currentStep = ""
+        }
+
+        return VerificationResult(
+            outcome: outcome,
+            rawText: rawText,
+            normalizedText: normalizedText,
+            hash: hash,
+            verificationURL: verificationURL,
+            baseURL: baseURL
+        )
+    }
+
+    /// Verify text scanned via DataScanner (no image processing needed)
+    /// - Parameter rawText: Text selected by user tapping on recognized text
+    /// - Returns: VerificationResult with outcome and intermediate data
+    func verifyText(_ rawText: String) async throws -> VerificationResult {
+        await MainActor.run {
+            isProcessing = true
+            currentStep = "Extracting verification URL..."
+        }
+
+        Log.d("Pipeline", "Verifying text (\(rawText.count) chars)")
+
+        // Ensure JS bridge is initialized
+        if jsBridge == nil {
+            do {
+                jsBridge = try JSBridge()
+            } catch {
+                await MainActor.run { isProcessing = false }
+                throw PipelineError.jsBridgeInitFailed(error)
+            }
+        }
+
+        guard let bridge = jsBridge else {
+            await MainActor.run { isProcessing = false }
+            throw PipelineError.jsBridgeInitFailed(JSBridgeError.contextCreationFailed)
+        }
+
+        // Extract verify: URL
+        guard let (baseURL, lineIndex) = bridge.extractVerificationURL(from: rawText) else {
+            await MainActor.run { isProcessing = false }
+            return VerificationResult(
+                outcome: .noVerifyURL,
+                rawText: rawText,
+                normalizedText: nil,
+                hash: nil,
+                verificationURL: nil,
+                baseURL: nil
+            )
+        }
+
+        Log.d("Pipeline", "Found verify URL: \(baseURL) at line \(lineIndex)")
+
+        await MainActor.run {
+            currentStep = "Fetching metadata..."
+        }
+
+        // Fetch verification-meta.json (optional)
+        let meta = await verificationClient.fetchVerificationMeta(baseURL: baseURL)
+
+        await MainActor.run {
+            currentStep = "Normalizing text..."
+        }
+
+        // Extract cert text (lines before URL)
+        guard let certText = bridge.extractCertText(from: rawText, urlLineIndex: lineIndex) else {
+            await MainActor.run { isProcessing = false }
+            throw PipelineError.normalizationFailed
+        }
+
+        Log.d("Pipeline", "Cert text: \(certText.prefix(100))...")
+
+        // Normalize (via JSBridge - uses same JS as web app!)
+        guard let normalizedText = bridge.normalizeText(certText, metadata: meta) else {
+            await MainActor.run { isProcessing = false }
+            throw PipelineError.normalizationFailed
+        }
+
+        await MainActor.run {
+            currentStep = "Computing hash..."
+        }
+
+        // Hash (native CryptoKit)
+        let hash = SHA256Hasher.hashHex(normalizedText)
+        Log.d("Pipeline", "Hash: \(hash)")
+
+        await MainActor.run {
+            currentStep = "Building verification URL..."
+        }
+
+        // Build verification URL
+        guard let verificationURL = bridge.buildVerificationURL(baseURL: baseURL, hash: hash) else {
+            await MainActor.run { isProcessing = false }
+            throw PipelineError.urlBuildFailed
+        }
+
+        await MainActor.run {
+            currentStep = "Verifying..."
+        }
+
+        // Verify against issuer endpoint
         let outcome = await verificationClient.verify(verificationURL: verificationURL, meta: meta)
 
         await MainActor.run {

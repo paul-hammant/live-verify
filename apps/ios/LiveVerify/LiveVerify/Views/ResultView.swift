@@ -162,7 +162,7 @@ struct ResultView: View {
 
     private var extractedTab: some View {
         ScrollView {
-            Text(result.rawText)
+            Text(withReturnSymbols(result.rawText))
                 .font(.system(.body, design: .monospaced))
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding()
@@ -174,11 +174,24 @@ struct ResultView: View {
 
     private var normalizedTab: some View {
         VStack {
+            // Display with ⏎ symbols (read-only)
+            ScrollView {
+                Text(withReturnSymbols(result.normalizedText ?? ""))
+                    .font(.system(.body, design: .monospaced))
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding()
+                    .background(Color(.systemGray6))
+                    .cornerRadius(8)
+            }
+            .frame(maxHeight: 150)
+            .padding(.horizontal)
+
+            // Editable version (without ⏎)
             TextEditor(text: $editedText)
                 .font(.system(.body, design: .monospaced))
-                .frame(minHeight: 200)
+                .frame(minHeight: 120)
                 .border(Color.gray.opacity(0.3))
-                .padding()
+                .padding(.horizontal)
 
             HStack {
                 Button("Re-verify") {
@@ -187,7 +200,7 @@ struct ResultView: View {
                 .buttonStyle(.borderedProminent)
                 .accessibilityIdentifier("result.reVerifyButton")
 
-                Text("Edit to fix OCR errors")
+                Text("Edit above to fix OCR errors")
                     .font(.caption)
                     .foregroundColor(.secondary)
             }
@@ -243,6 +256,15 @@ struct ResultView: View {
 
     private func copyHash(_ hash: String) {
         UIPasteboard.general.string = hash
+    }
+
+    // MARK: - Helpers
+
+    /// Add U+23CE (⏎) at end of each line for visual debugging
+    private func withReturnSymbols(_ text: String) -> String {
+        text.components(separatedBy: .newlines)
+            .map { $0 + "\u{23CE}" }
+            .joined(separator: "\n")
     }
 }
 

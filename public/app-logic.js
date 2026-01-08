@@ -57,8 +57,9 @@ function rotateCanvas(sourceCanvas, degrees) {
 function extractVerificationUrl(rawText) {
     const rawLines = rawText.split('\n').map(l => l.trim());
 
-    // Match verify: or vfy: at line start OR preceded by space (to skip leading OCR garbage)
-    const verifyPattern = /(^|\s)(verify|vfy):/i;
+    // Match verify: or vfy: with optional spaces around colon
+    // e.g., "verify:", "verify :", "verify: ", "verify : " all match
+    const verifyPattern = /(^|\s)(verify|vfy)\s*:\s*/i;
 
     // Scan from bottom to top to find the verify: or vfy: line
     // Everything below it is likely OCR garbage from dust/artifacts
@@ -68,26 +69,20 @@ function extractVerificationUrl(rawText) {
 
         const match = line.match(verifyPattern);
         if (match) {
-            // Found a match - extract everything after the colon
-            const colonIndex = line.indexOf(':', match.index);
-            if (colonIndex === -1) continue;
+            // Found a match - extract everything after the pattern (which includes colon and surrounding spaces)
+            let urlPart = line.substring(match.index + match[0].length);
 
-            // Get text after colon - URL must start immediately (no space after colon)
-            let urlPart = line.substring(colonIndex + 1);
+            // Strip leading/trailing whitespace from URL part
+            urlPart = urlPart.trim();
 
-            // Reject if there's a space immediately after the colon
-            if (urlPart.length === 0 || /^\s/.test(urlPart)) {
-                continue;
-            }
-
-            // Strip trailing garbage (anything after a space)
+            // Strip trailing garbage (anything after a space in the URL)
             const spaceIndex = urlPart.indexOf(' ');
             if (spaceIndex !== -1) {
                 urlPart = urlPart.substring(0, spaceIndex);
             }
 
             if (urlPart.length > 0) {
-                // Determine the correct prefix
+                // Determine the correct prefix (normalized, no spaces)
                 const prefix = match[2].toLowerCase() === 'vfy' ? 'vfy:' : 'verify:';
 
                 return {
