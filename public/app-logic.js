@@ -104,21 +104,26 @@ function extractVerificationUrl(rawText) {
  * Convert verify: or vfy: URL to https:// URL with hash appended
  * @param {string} baseUrl - Base URL (either "verify:example.com/path", "vfy:example.com/path", or "https://example.com/path")
  * @param {string} hash - SHA-256 hash to append
+ * @param {Object} [meta] - Optional verification-meta.json contents
  * @returns {string} - Full HTTPS verification URL
  */
-function buildVerificationUrl(baseUrl, hash) {
+function buildVerificationUrl(baseUrl, hash, meta) {
     const lowerBase = baseUrl.toLowerCase();
+
+    // Get suffix from meta if available (e.g., ".json")
+    // Field name is "appendToHashFileName" in verification-meta.json
+    const suffix = (meta && meta.appendToHashFileName) ? meta.appendToHashFileName : '';
 
     // If it starts with verify:, convert to https://
     if (lowerBase.startsWith('verify:')) {
         const withoutPrefix = baseUrl.substring(7); // Remove "verify:"
-        return `https://${withoutPrefix}/${hash}`;
+        return `https://${withoutPrefix}/${hash}${suffix}`;
     }
 
     // If it starts with vfy:, convert to https://
     if (lowerBase.startsWith('vfy:')) {
         const withoutPrefix = baseUrl.substring(4); // Remove "vfy:"
-        return `https://${withoutPrefix}/${hash}`;
+        return `https://${withoutPrefix}/${hash}${suffix}`;
     }
 
     // This should not be reached if extractVerificationUrl is working correctly

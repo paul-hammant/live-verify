@@ -226,7 +226,23 @@ struct DataScanner: UIViewControllerRepresentable {
                     // Sort by reading order: top-to-bottom (descending Y), then left-to-right (ascending X)
                     // But image orientation varies, so try: ascending X first (for landscape)
                     lines.sort { $0.x > $1.x }
-                    let result = lines.map { $0.text }.joined(separator: "\n")
+
+                    // Join lines and normalize verify:/vfy: lines (strip spurious spaces from OCR)
+                    var resultLines = lines.map { $0.text }
+
+                    // Fix verify:/vfy: lines - remove ALL spaces from the URL portion
+                    for i in 0..<resultLines.count {
+                        let line = resultLines[i]
+                        let lower = line.lowercased()
+                        if lower.hasPrefix("verify:") || lower.hasPrefix("vfy:") ||
+                           lower.hasPrefix("verify :") || lower.hasPrefix("vfy :") {
+                            // Remove all spaces from the entire line (URLs don't have spaces)
+                            resultLines[i] = line.replacingOccurrences(of: " ", with: "")
+                        }
+                    }
+
+                    let result = resultLines.joined(separator: "\n")
+
                     continuation.resume(returning: result)
                 }
 

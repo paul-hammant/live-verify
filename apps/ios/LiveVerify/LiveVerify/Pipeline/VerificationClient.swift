@@ -47,6 +47,7 @@ class VerificationClient {
     func fetchVerificationMeta(baseURL: String) async -> [String: Any]? {
         let httpsBase = convertToHTTPS(baseURL)
         let metaURLString = "\(httpsBase)/verification-meta.json"
+        Log.d("Verify", "Fetching meta from: \(metaURLString)")
 
         guard let metaURL = URL(string: metaURLString) else {
             Log.d("Verify", "Invalid meta URL: \(metaURLString)")
@@ -54,14 +55,23 @@ class VerificationClient {
         }
 
         do {
+            Log.d("Verify", "Starting network request...")
             let (data, response) = try await session.data(from: metaURL)
+            Log.d("Verify", "Network request completed")
 
-            guard let httpResponse = response as? HTTPURLResponse,
-                  httpResponse.statusCode == 200 else {
+            guard let httpResponse = response as? HTTPURLResponse else {
+                Log.d("Verify", "Not an HTTP response")
+                return nil
+            }
+
+            Log.d("Verify", "HTTP status: \(httpResponse.statusCode)")
+
+            guard httpResponse.statusCode == 200 else {
                 return nil
             }
 
             let json = try JSONSerialization.jsonObject(with: data) as? [String: Any]
+            Log.d("Verify", "Meta parsed: \(json != nil ? "success" : "nil")")
             return json
         } catch {
             Log.d("Verify", "Failed to fetch meta: \(error)")

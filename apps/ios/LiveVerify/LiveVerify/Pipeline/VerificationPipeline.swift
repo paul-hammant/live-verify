@@ -358,13 +358,14 @@ class VerificationPipeline: ObservableObject {
             currentStep = "Building verification URL..."
         }
 
-        // Step 7: Build verification URL
-        guard let verificationURL = bridge.buildVerificationURL(baseURL: baseURL, hash: hash) else {
+        // Step 7: Build verification URL (with suffix from meta if available)
+        guard let verificationURL = bridge.buildVerificationURL(baseURL: baseURL, hash: hash, meta: meta) else {
             await MainActor.run {
                 isProcessing = false
             }
             throw PipelineError.urlBuildFailed
         }
+        Log.d("Pipeline", "Verification URL: \(verificationURL)")
 
         await MainActor.run {
             currentStep = "Verifying..."
@@ -466,11 +467,12 @@ class VerificationPipeline: ObservableObject {
             currentStep = "Building verification URL..."
         }
 
-        // Build verification URL
-        guard let verificationURL = bridge.buildVerificationURL(baseURL: baseURL, hash: hash) else {
+        // Build verification URL (with suffix from meta if available)
+        guard let verificationURL = bridge.buildVerificationURL(baseURL: baseURL, hash: hash, meta: meta) else {
             await MainActor.run { isProcessing = false }
             throw PipelineError.urlBuildFailed
         }
+        Log.d("Pipeline", "Verification URL: \(verificationURL)")
 
         await MainActor.run {
             currentStep = "Verifying..."
@@ -523,8 +525,8 @@ class VerificationPipeline: ObservableObject {
         // Hash
         let hash = SHA256Hasher.hashHex(normalizedText)
 
-        // Build URL
-        guard let verificationURL = bridge.buildVerificationURL(baseURL: baseURL, hash: hash) else {
+        // Build URL (with suffix from meta if available)
+        guard let verificationURL = bridge.buildVerificationURL(baseURL: baseURL, hash: hash, meta: meta) else {
             await MainActor.run {
                 isProcessing = false
             }

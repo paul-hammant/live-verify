@@ -121,14 +121,23 @@ class JSBridge {
     }
 
     /// Build full verification URL from base URL and hash
-    /// Converts verify: or vfy: to https:// and appends hash
+    /// Converts verify: or vfy: to https:// and appends hash (with optional suffix from meta)
     /// - Parameters:
     ///   - baseURL: Base URL (e.g., "verify:example.com/c")
     ///   - hash: SHA-256 hash of normalized text
+    ///   - meta: Optional verification-meta.json contents (for suffix)
     /// - Returns: Full HTTPS URL for verification
-    func buildVerificationURL(baseURL: String, hash: String) -> String? {
+    func buildVerificationURL(baseURL: String, hash: String, meta: [String: Any]?) -> String? {
         let escapedBase = baseURL.jsEscaped
-        let script = "buildVerificationUrl('\(escapedBase)', '\(hash)')"
+        let metaJSON: String
+        if let meta = meta,
+           let data = try? JSONSerialization.data(withJSONObject: meta),
+           let json = String(data: data, encoding: .utf8) {
+            metaJSON = json
+        } else {
+            metaJSON = "null"
+        }
+        let script = "buildVerificationUrl('\(escapedBase)', '\(hash)', \(metaJSON))"
         let result = context.evaluateScript(script)
         return result?.toString()
     }
