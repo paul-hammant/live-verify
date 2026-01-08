@@ -212,15 +212,20 @@ struct DataScanner: UIViewControllerRepresentable {
 
                     Log.d("DataScanner", "VNRecognizeTextRequest found \(observations.count) lines")
 
-                    // Extract text sorted by Y position (top to bottom)
-                    var lines: [(text: String, y: CGFloat)] = []
+                    // Extract text with both X and Y for sorting
+                    var lines: [(text: String, x: CGFloat, y: CGFloat)] = []
                     for observation in observations {
                         if let candidate = observation.topCandidates(1).first {
-                            lines.append((text: candidate.string, y: observation.boundingBox.maxY))
+                            let centerX = (observation.boundingBox.minX + observation.boundingBox.maxX) / 2
+                            let centerY = (observation.boundingBox.minY + observation.boundingBox.maxY) / 2
+                            Log.d("DataScanner", "  Line: '\(candidate.string.prefix(20))...' x=\(centerX) y=\(centerY)")
+                            lines.append((text: candidate.string, x: centerX, y: centerY))
                         }
                     }
 
-                    lines.sort { $0.y > $1.y }
+                    // Sort by reading order: top-to-bottom (descending Y), then left-to-right (ascending X)
+                    // But image orientation varies, so try: ascending X first (for landscape)
+                    lines.sort { $0.x > $1.x }
                     let result = lines.map { $0.text }.joined(separator: "\n")
                     continuation.resume(returning: result)
                 }
