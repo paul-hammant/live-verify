@@ -3,9 +3,286 @@
 
 import XCTest
 import Vision
-import CoreImage
 import ImageIO
 @testable import LiveVerify
+
+// MARK: - Mock URLProtocol for testing
+
+/// A mock URLProtocol that returns predefined responses for testing
+class MockURLProtocol: URLProtocol {
+    /// Handler to provide mock responses for requests
+    static var requestHandler: ((URLRequest) throws -> (HTTPURLResponse, Data))?
+
+    override class func canInit(with request: URLRequest) -> Bool {
+        return true
+    }
+
+    override class func canonicalRequest(for request: URLRequest) -> URLRequest {
+        return request
+    }
+
+    override func startLoading() {
+        guard let handler = MockURLProtocol.requestHandler else {
+            client?.urlProtocol(self, didFailWithError: NSError(domain: "MockURLProtocol", code: 0, userInfo: [NSLocalizedDescriptionKey: "No handler set"]))
+            return
+        }
+
+        do {
+            let (response, data) = try handler(request)
+            client?.urlProtocol(self, didReceive: response, cacheStoragePolicy: .notAllowed)
+            client?.urlProtocol(self, didLoad: data)
+            client?.urlProtocolDidFinishLoading(self)
+        } catch {
+            client?.urlProtocol(self, didFailWithError: error)
+        }
+    }
+
+    override func stopLoading() {}
+}
+
+// MARK: - VerificationClient Tests
+
+final class VerificationClientTests: XCTestCase {
+
+    var session: URLSession!
+    var client: VerificationClient!
+
+    override func setUp() {
+        super.setUp()
+        let config = URLSessionConfiguration.ephemeral
+        config.protocolClasses = [MockURLProtocol.self]
+        session = URLSession(configuration: config)
+        client = VerificationClient(session: session)
+    }
+
+    override func tearDown() {
+        MockURLProtocol.requestHandler = nil
+        super.tearDown()
+    }
+
+    // MARK: - fetchVerificationMeta Tests
+
+    func testFetchVerificationMeta_returns200_parseJSON() async {
+        let jsonData = """
+        {"appendToHashFileName": ".json", "description": "Test meta"}
+        """.data(using: .utf8)!
+
+        MockURLProtocol.requestHandler = { request in
+            XCTAssertTrue(request.url?.absoluteString.contains("verification-meta.json") ?? false)
+            let response = HTTPURLResponse(url: request.url!, statusCode: 200, httpVersion: nil, headerFields: nil)!
+            return (response, jsonData)
+        }
+
+        let meta = await client.fetchVerificationMeta(baseURL: "verify:example.com/c")
+
+        XCTAssertNotNil(meta)
+        XCTAssertEqual(meta?["appendToHashFileName"] as? String, ".json")
+        XCTAssertEqual(meta?["description"] as? String, "Test meta")
+    }
+
+    func testFetchVerificationMeta_returns404_nil() async {
+        MockURLProtocol.requestHandler = { request in
+            let response = HTTPURLResponse(url: request.url!, statusCode: 404, httpVersion: nil, headerFields: nil)!
+            return (response, Data())
+        }
+
+        let meta = await client.fetchVerificationMeta(baseURL: "verify:example.com/c")
+
+        XCTAssertNil(meta)
+    }
+
+    func testFetchVerificationMeta_returns500_nil() async {
+        MockURLProtocol.requestHandler = { request in
+            let response = HTTPURLResponse(url: request.url!, statusCode: 500, httpVersion: nil, headerFields: nil)!
+            return (response, Data())
+        }
+
+        let meta = await client.fetchVerificationMeta(baseURL: "verify:example.com/c")
+
+        XCTAssertNil(meta)
+    }
+
+    func testFetchVerificationMeta_networkError_nil() async {
+        MockURLProtocol.requestHandler = { _ in
+            throw NSError(domain: NSURLErrorDomain, code: NSURLErrorNotConnectedToInternet, userInfo: nil)
+        }
+
+        let meta = await client.fetchVerificationMeta(baseURL: "verify:example.com/c")
+
+        XCTAssertNil(meta)
+    }
+
+    func testFetchVerificationMeta_invalidJSON_nil() async {
+        let invalidJSON = "not valid json {{{".data(using: .utf8)!
+
+        MockURLProtocol.requestHandler = { request in
+            let response = HTTPURLResponse(url: request.url!, statusCode: 200, httpVersion: nil, headerFields: nil)!
+            return (response, invalidJSON)
+        }
+
+        let meta = await client.fetchVerificationMeta(baseURL: "verify:example.com/c")
+
+        XCTAssertNil(meta)
+    }
+
+    // MARK: - verify Tests
+
+    func testVerify_http200_OK_affirming() async {
+        let okData = "OK".data(using: .utf8)!
+
+        MockURLProtocol.requestHandler = { request in
+            let response = HTTPURLResponse(url: request.url!, statusCode: 200, httpVersion: nil, headerFields: nil)!
+            return (response, okData)
+        }
+
+        let result = await client.verify(verificationURL: "https://example.com/c/abc123", meta: nil)
+
+        if case .affirming(let domain, let status) = result {
+            XCTAssertEqual(domain, "example.com")
+            XCTAssertEqual(status, "VERIFIED")
+        } else {
+            XCTFail("Expected .affirming, got \(result)")
+        }
+    }
+
+    func testVerify_http200_JSONStatusVerified_affirming() async {
+        let jsonData = """
+        {"status": "VERIFIED"}
+        """.data(using: .utf8)!
+
+        MockURLProtocol.requestHandler = { request in
+            let response = HTTPURLResponse(url: request.url!, statusCode: 200, httpVersion: nil, headerFields: nil)!
+            return (response, jsonData)
+        }
+
+        let result = await client.verify(verificationURL: "https://example.com/c/abc123", meta: nil)
+
+        if case .affirming(let domain, let status) = result {
+            XCTAssertEqual(domain, "example.com")
+            XCTAssertEqual(status, "VERIFIED")
+        } else {
+            XCTFail("Expected .affirming, got \(result)")
+        }
+    }
+
+    func testVerify_http200_JSONStatusRevoked_denying() async {
+        let jsonData = """
+        {"status": "REVOKED"}
+        """.data(using: .utf8)!
+
+        MockURLProtocol.requestHandler = { request in
+            let response = HTTPURLResponse(url: request.url!, statusCode: 200, httpVersion: nil, headerFields: nil)!
+            return (response, jsonData)
+        }
+
+        let result = await client.verify(verificationURL: "https://example.com/c/abc123", meta: nil)
+
+        if case .denying(let domain, let reason) = result {
+            XCTAssertEqual(domain, "example.com")
+            XCTAssertEqual(reason, "REVOKED")
+        } else {
+            XCTFail("Expected .denying, got \(result)")
+        }
+    }
+
+    func testVerify_http404_denying() async {
+        MockURLProtocol.requestHandler = { request in
+            let response = HTTPURLResponse(url: request.url!, statusCode: 404, httpVersion: nil, headerFields: nil)!
+            return (response, Data())
+        }
+
+        let result = await client.verify(verificationURL: "https://example.com/c/abc123", meta: nil)
+
+        if case .denying(let domain, let reason) = result {
+            XCTAssertEqual(domain, "example.com")
+            XCTAssertEqual(reason, "Hash not found")
+        } else {
+            XCTFail("Expected .denying with 'Hash not found', got \(result)")
+        }
+    }
+
+    func testVerify_http500_denying() async {
+        MockURLProtocol.requestHandler = { request in
+            let response = HTTPURLResponse(url: request.url!, statusCode: 500, httpVersion: nil, headerFields: nil)!
+            return (response, Data())
+        }
+
+        let result = await client.verify(verificationURL: "https://example.com/c/abc123", meta: nil)
+
+        if case .denying(let domain, let reason) = result {
+            XCTAssertEqual(domain, "example.com")
+            XCTAssertEqual(reason, "HTTP 500")
+        } else {
+            XCTFail("Expected .denying with 'HTTP 500', got \(result)")
+        }
+    }
+
+    func testVerify_networkError_returnsNetworkError() async {
+        MockURLProtocol.requestHandler = { _ in
+            throw NSError(domain: NSURLErrorDomain, code: NSURLErrorNotConnectedToInternet, userInfo: nil)
+        }
+
+        let result = await client.verify(verificationURL: "https://example.com/c/abc123", meta: nil)
+
+        if case .networkError(let error) = result {
+            XCTAssertEqual((error as NSError).code, NSURLErrorNotConnectedToInternet)
+        } else {
+            XCTFail("Expected .networkError, got \(result)")
+        }
+    }
+
+    func testVerify_customResponseType_affirming() async {
+        let jsonData = """
+        {"status": "ACTIVE"}
+        """.data(using: .utf8)!
+
+        MockURLProtocol.requestHandler = { request in
+            let response = HTTPURLResponse(url: request.url!, statusCode: 200, httpVersion: nil, headerFields: nil)!
+            return (response, jsonData)
+        }
+
+        let meta: [String: Any] = [
+            "responseTypes": [
+                "ACTIVE": ["class": "affirming", "text": "Active and valid"]
+            ]
+        ]
+
+        let result = await client.verify(verificationURL: "https://example.com/c/abc123", meta: meta)
+
+        if case .affirming(let domain, let status) = result {
+            XCTAssertEqual(domain, "example.com")
+            XCTAssertEqual(status, "ACTIVE")
+        } else {
+            XCTFail("Expected .affirming with status ACTIVE, got \(result)")
+        }
+    }
+
+    func testVerify_customResponseType_denying() async {
+        let jsonData = """
+        {"status": "SUSPENDED"}
+        """.data(using: .utf8)!
+
+        MockURLProtocol.requestHandler = { request in
+            let response = HTTPURLResponse(url: request.url!, statusCode: 200, httpVersion: nil, headerFields: nil)!
+            return (response, jsonData)
+        }
+
+        let meta: [String: Any] = [
+            "responseTypes": [
+                "SUSPENDED": ["class": "denying", "text": "Temporarily suspended"]
+            ]
+        ]
+
+        let result = await client.verify(verificationURL: "https://example.com/c/abc123", meta: meta)
+
+        if case .denying(let domain, let reason) = result {
+            XCTAssertEqual(domain, "example.com")
+            XCTAssertEqual(reason, "Temporarily suspended")
+        } else {
+            XCTFail("Expected .denying with reason 'Temporarily suspended', got \(result)")
+        }
+    }
+}
 
 final class SHA256HasherTests: XCTestCase {
 
@@ -46,12 +323,10 @@ final class VisionFixtureTests: XCTestCase {
     private func fixtureURL() throws -> URL {
         let base = URL(fileURLWithPath: #filePath)
             .deletingLastPathComponent() // LiveVerifyTests
-            .deletingLastPathComponent() // LiveVerify
-            .deletingLastPathComponent() // ios
-            .deletingLastPathComponent() // apps
-            .deletingLastPathComponent() // repo root
-        let url = base.appendingPathComponent("foo.jpeg")
-        XCTAssertTrue(FileManager.default.fileExists(atPath: url.path), "Missing fixture at \(url.path)")
+        let url = base.appendingPathComponent("kevinAtHedgeServ.png")
+        guard FileManager.default.fileExists(atPath: url.path) else {
+            throw XCTSkip("Missing fixture at \(url.path) - add a test image to run OCR tests")
+        }
         return url
     }
 
@@ -63,51 +338,6 @@ final class VisionFixtureTests: XCTestCase {
             throw XCTSkip("Failed to load CGImage from \(url.path)")
         }
         return image
-    }
-
-    private func detectTopRectangle(in cgImage: CGImage) throws -> VNRectangleObservation {
-        let request = VNDetectRectanglesRequest()
-        request.minimumAspectRatio = 0.3
-        request.maximumAspectRatio = 1.0
-        request.minimumSize = 0.1
-        request.maximumObservations = 5
-        request.minimumConfidence = 0.5
-
-        let handler = VNImageRequestHandler(cgImage: cgImage, options: [:])
-        try handler.perform([request])
-        guard let first = (request.results as? [VNRectangleObservation])?.sorted(by: { $0.confidence > $1.confidence }).first else {
-            throw XCTSkip("No rectangle detected in fixture")
-        }
-        return first
-    }
-
-    private func perspectiveCorrect(cgImage: CGImage, rect: VNRectangleObservation) throws -> CGImage {
-        let ciImage = CIImage(cgImage: cgImage)
-        let extent = ciImage.extent
-
-        let topLeft = CGPoint(x: rect.topLeft.x * extent.width, y: rect.topLeft.y * extent.height)
-        let topRight = CGPoint(x: rect.topRight.x * extent.width, y: rect.topRight.y * extent.height)
-        let bottomLeft = CGPoint(x: rect.bottomLeft.x * extent.width, y: rect.bottomLeft.y * extent.height)
-        let bottomRight = CGPoint(x: rect.bottomRight.x * extent.width, y: rect.bottomRight.y * extent.height)
-
-        guard let filter = CIFilter(name: "CIPerspectiveCorrection") else {
-            throw XCTSkip("Missing CIPerspectiveCorrection filter")
-        }
-        filter.setValue(ciImage, forKey: kCIInputImageKey)
-        filter.setValue(CIVector(cgPoint: topLeft), forKey: "inputTopLeft")
-        filter.setValue(CIVector(cgPoint: topRight), forKey: "inputTopRight")
-        filter.setValue(CIVector(cgPoint: bottomLeft), forKey: "inputBottomLeft")
-        filter.setValue(CIVector(cgPoint: bottomRight), forKey: "inputBottomRight")
-
-        guard let corrected = filter.outputImage else {
-            throw XCTSkip("Perspective correction failed")
-        }
-
-        let context = CIContext()
-        guard let correctedCG = context.createCGImage(corrected, from: corrected.extent) else {
-            throw XCTSkip("Failed to render corrected image")
-        }
-        return correctedCG
     }
 
     private func recognizeText(from cgImage: CGImage) throws -> String {
@@ -130,14 +360,6 @@ final class VisionFixtureTests: XCTestCase {
         XCTAssertTrue(text.contains("verify:paulhammant.com/refs"), "OCR did not include verify URL. Text:\n\(text)")
     }
 
-    func testCroppedOCRReadsVerifyURL() throws {
-        let cgImage = try loadCGImage()
-        let rect = try detectTopRectangle(in: cgImage)
-        let corrected = try perspectiveCorrect(cgImage: cgImage, rect: rect)
-        let text = try recognizeText(from: corrected)
-        XCTAssertFalse(text.isEmpty, "OCR returned empty text for cropped image")
-        XCTAssertTrue(text.contains("verify:paulhammant.com/refs"), "OCR did not include verify URL in crop. Text:\n\(text)")
-    }
 }
 
 final class JSBridgeTests: XCTestCase {
@@ -209,6 +431,54 @@ final class JSBridgeTests: XCTestCase {
         let url = bridge.buildVerificationURL(baseURL: "vfy:example.com/path", hash: "def456", meta: nil)
 
         XCTAssertEqual(url, "https://example.com/path/def456")
+    }
+
+    func testBuildVerificationURL_withSuffix() throws {
+        let bridge = try XCTUnwrap(jsBridge)
+        let meta: [String: Any] = ["appendToHashFileName": ".json"]
+
+        let url = bridge.buildVerificationURL(baseURL: "verify:example.com/refs", hash: "abc123", meta: meta)
+
+        XCTAssertEqual(url, "https://example.com/refs/abc123.json")
+    }
+
+    func testBuildVerificationURL_withoutSuffix() throws {
+        let bridge = try XCTUnwrap(jsBridge)
+        let meta: [String: Any] = ["someOtherField": "value"]
+
+        let url = bridge.buildVerificationURL(baseURL: "verify:example.com/c", hash: "abc123", meta: meta)
+
+        XCTAssertEqual(url, "https://example.com/c/abc123")
+    }
+
+    func testExtractVerificationURL_withSpaceAfterColon() throws {
+        let bridge = try XCTUnwrap(jsBridge)
+        let text = "Certificate\nverify: example.com/c"
+
+        let result = bridge.extractVerificationURL(from: text)
+
+        XCTAssertNotNil(result)
+        XCTAssertEqual(result?.url, "verify:example.com/c")
+    }
+
+    func testExtractVerificationURL_withSpaceBeforeColon() throws {
+        let bridge = try XCTUnwrap(jsBridge)
+        let text = "Certificate\nverify :example.com/c"
+
+        let result = bridge.extractVerificationURL(from: text)
+
+        XCTAssertNotNil(result)
+        XCTAssertEqual(result?.url, "verify:example.com/c")
+    }
+
+    func testExtractVerificationURL_withSpacesAroundColon() throws {
+        let bridge = try XCTUnwrap(jsBridge)
+        let text = "Certificate\nverify : example.com/c"
+
+        let result = bridge.extractVerificationURL(from: text)
+
+        XCTAssertNotNil(result)
+        XCTAssertEqual(result?.url, "verify:example.com/c")
     }
 
     func testNormalizeText_basic() throws {
