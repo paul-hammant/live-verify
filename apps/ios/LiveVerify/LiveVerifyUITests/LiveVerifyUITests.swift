@@ -35,7 +35,7 @@ final class LiveVerifyUITests: XCTestCase {
 
     func testCameraPreviewShowsAfterPermission() throws {
         // Add interruption monitor to handle system permission dialog
-        addUIInterruptionMonitor(forDescription: "Camera Permission") { alert in
+        addUIInterruptionMonitor(withDescription: "Camera Permission") { alert in
             let allowButton = alert.buttons["Allow"]
             if allowButton.exists {
                 allowButton.tap()
@@ -60,7 +60,7 @@ final class LiveVerifyUITests: XCTestCase {
     // MARK: - Capture Button Tests
 
     func testCaptureButtonExists() throws {
-        addUIInterruptionMonitor(forDescription: "Camera Permission") { alert in
+        addUIInterruptionMonitor(withDescription: "Camera Permission") { alert in
             alert.buttons["Allow"].tap()
             return true
         }
@@ -120,7 +120,7 @@ final class VerificationFlowUITests: XCTestCase {
     }
 
     func testCameraStateTransitions() throws {
-        addUIInterruptionMonitor(forDescription: "Camera Permission") { alert in
+        addUIInterruptionMonitor(withDescription: "Camera Permission") { alert in
             alert.buttons["Allow"].tap()
             return true
         }

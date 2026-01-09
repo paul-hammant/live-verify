@@ -43,17 +43,29 @@ struct VerificationResultOverlay: View {
 
             VStack(spacing: 20) {
                 Image(systemName: iconName)
-                    .font(.system(size: 80))
+                    .font(.system(size: 88, weight: .bold))
                     .foregroundColor(.white)
 
-                Text(title)
-                    .font(.largeTitle.bold())
+                Text(primaryLine)
+                    .font(.system(size: 32, weight: .bold))
                     .foregroundColor(.white)
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal)
 
-                if let domain = domain {
-                    Text("by \(domain)")
+                if let secondaryLine {
+                    Text(secondaryLine)
                         .font(.title3)
                         .foregroundColor(.white.opacity(0.9))
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal)
+                }
+
+                if showLinks {
+                    HStack(spacing: 24) {
+                        linkStyle(text: "What claim?")
+                        linkStyle(text: "How to be discerning")
+                    }
+                    .padding(.top, 4)
                 }
 
                 if let reason = reason {
@@ -64,10 +76,10 @@ struct VerificationResultOverlay: View {
                         .padding(.horizontal)
                 }
 
-                Text("Tap to continue")
+                Text(tapHint)
                     .font(.caption)
                     .foregroundColor(.white.opacity(0.6))
-                    .padding(.top, 20)
+                    .padding(.top, 16)
             }
         }
         .onTapGesture {
@@ -100,10 +112,10 @@ struct VerificationResultOverlay: View {
         }
     }
 
-    private var title: String {
+    private var primaryLine: String {
         switch outcome {
-        case .affirming(_, let status):
-            return status
+        case .affirming(let domain, _):
+            return "Claim verified by \(domain)"
         case .denying:
             return "VERIFICATION FAILED"
         case .noVerifyURL:
@@ -115,10 +127,12 @@ struct VerificationResultOverlay: View {
         }
     }
 
-    private var domain: String? {
+    private var secondaryLine: String? {
         switch outcome {
-        case .affirming(let domain, _), .denying(let domain, _):
-            return domain
+        case .affirming:
+            return nil
+        case .denying(let domain, _):
+            return "by \(domain)"
         case .noVerifyURL, .networkError, .error:
             return nil
         }
@@ -137,6 +151,27 @@ struct VerificationResultOverlay: View {
         case .error(let message):
             return message
         }
+    }
+
+    private var showLinks: Bool {
+        if case .affirming = outcome { return true }
+        return false
+    }
+
+    private var tapHint: String {
+        switch outcome {
+        case .affirming:
+            return "Tap to dismiss and scan again"
+        default:
+            return "Tap to continue"
+        }
+    }
+
+    private func linkStyle(text: String) -> some View {
+        Text(text)
+            .font(.callout)
+            .foregroundColor(.white)
+            .underline()
     }
 }
 

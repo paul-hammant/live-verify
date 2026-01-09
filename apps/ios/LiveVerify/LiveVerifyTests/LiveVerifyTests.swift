@@ -198,7 +198,7 @@ final class JSBridgeTests: XCTestCase {
     func testBuildVerificationURL_verifyPrefix() throws {
         let bridge = try XCTUnwrap(jsBridge)
 
-        let url = bridge.buildVerificationURL(baseURL: "verify:example.com/c", hash: "abc123")
+        let url = bridge.buildVerificationURL(baseURL: "verify:example.com/c", hash: "abc123", meta: nil)
 
         XCTAssertEqual(url, "https://example.com/c/abc123")
     }
@@ -206,7 +206,7 @@ final class JSBridgeTests: XCTestCase {
     func testBuildVerificationURL_vfyPrefix() throws {
         let bridge = try XCTUnwrap(jsBridge)
 
-        let url = bridge.buildVerificationURL(baseURL: "vfy:example.com/path", hash: "def456")
+        let url = bridge.buildVerificationURL(baseURL: "vfy:example.com/path", hash: "def456", meta: nil)
 
         XCTAssertEqual(url, "https://example.com/path/def456")
     }
