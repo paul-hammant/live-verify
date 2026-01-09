@@ -32,12 +32,22 @@ These capabilities are designed for building into camera apps, browsers (mobile/
 - `settings/` — Intrusiveness levels, auto-scan options
 - `shared/normalize.js`, `shared/verify.js` — Shared verification logic
 
-**CRITICAL - Keep normalization in sync:** Text normalization is implemented in THREE places that must match:
+### Android App
+`apps/android/` — Native Kotlin Android app for camera-based verification. Uses ML Kit for OCR, CameraX for camera. Key files:
+- `app/src/main/java/com/liveverify/app/TextNormalizer.kt` — Text normalization matching JS implementation
+- `app/src/main/java/com/liveverify/app/VerificationLogic.kt` — URL extraction, HTTP verification
+- `app/src/main/java/com/liveverify/app/MainActivity.kt` — Camera capture and verification UI
+- `app/build.gradle.kts` — Dependencies: ML Kit, CameraX, OkHttp, Coroutines
+
+Target SDK: 35 (Android 15), Min SDK: 26 (Android 8.0). Uses native Kotlin implementation for normalization (no JS engine) for performance and minimal APK size.
+
+**CRITICAL - Keep normalization in sync:** Text normalization is implemented in FOUR places that must match:
 1. `public/normalize.js` (JavaScript, web app)
 2. `apps/browser-extension/shared/normalize.js` (JavaScript ES modules, browser extension)
-3. `apps/ios/LiveVerify/LiveVerify/TextNormalizer.swift` (Swift, iOS app)
+3. `apps/ios/LiveVerify/` uses JSBridge to run normalize.js directly
+4. `apps/android/app/src/main/java/com/liveverify/app/TextNormalizer.kt` (Kotlin, Android app)
 
-If you change normalization logic, update ALL THREE. The web app version also has `public/ocr-cleanup.js` for OCR-specific artifact removal (not needed by browser extension or iOS text selection paths).
+If you change normalization logic, update ALL implementations. The web app version also has `public/ocr-cleanup.js` for OCR-specific artifact removal (not needed by browser extension or text selection paths).
 
 **Extension features:**
 - Right-click "Verify this claim" on selected text
@@ -92,15 +102,32 @@ live-verify/
 │   │   │   └── VerificationClient.swift # HTTP verification
 │   │   └── LiveVerifyTests/         # Unit tests
 │   │
-│   └── browser-extension/           # Chrome/Edge/Firefox extension
-│       ├── manifest.json            # Manifest V3 config
-│       ├── background.js            # Service worker
-│       ├── content.js               # Page scanning
-│       ├── popup/                   # History UI
-│       ├── settings/                # Options page
-│       ├── shared/                  # normalize.js, verify.js
-│       ├── icons/                   # Extension icons
-│       └── __tests__/               # Jest tests
+│   ├── browser-extension/           # Chrome/Edge/Firefox extension
+│   │   ├── manifest.json            # Manifest V3 config
+│   │   ├── background.js            # Service worker
+│   │   ├── content.js               # Page scanning
+│   │   ├── popup/                   # History UI
+│   │   ├── settings/                # Options page
+│   │   ├── shared/                  # normalize.js, verify.js
+│   │   ├── icons/                   # Extension icons
+│   │   └── __tests__/               # Jest tests
+│   │
+│   └── android/                     # Native Android app (Kotlin)
+│       ├── app/
+│       │   ├── build.gradle.kts     # App dependencies
+│       │   └── src/main/
+│       │       ├── java/com/liveverify/app/
+│       │       │   ├── MainActivity.kt      # Camera + verification UI
+│       │       │   ├── TextNormalizer.kt    # Text normalization
+│       │       │   └── VerificationLogic.kt # URL extraction, HTTP
+│       │       ├── res/layout/              # XML layouts
+│       │       └── AndroidManifest.xml
+│       ├── build.gradle.kts         # Project config
+│       └── settings.gradle.kts
+│
+├── normalization-hashes/            # Cross-platform test fixtures
+│   ├── README.md                    # Format documentation
+│   └── {sha256}.md                  # Test cases (filename = expected hash)
 │
 ├── public/                          # Deploy this folder to GitHub Pages
 │   ├── camera-app/index.html        # Camera UI with registration marks overlay
@@ -624,12 +651,55 @@ async function verifyAgainstClaimedUrl(claimedUrl, computedHash) {
 - OCR on cropped regions ✓
 - Text extraction and normalization ✓
 
+### Android Unit Tests (JUnit)
+
+**TextNormalizerTest.kt:**
+- Text normalization (whitespace, Unicode characters)
+- SHA-256 hashing
+- Document-specific normalization with metadata
+- Cross-platform consistency (hash must match JavaScript)
+
+**VerificationLogicTest.kt:**
+- URL extraction (verify:, vfy: prefixes)
+- Certification text extraction
+- buildVerificationUrl conversion
+- Full verification flow integration
+
+### Cross-Platform Hash Fixtures
+
+`/normalization-hashes/*.md` — Shared test fixtures ensuring all platforms produce identical hashes.
+
+**Format:**
+```markdown
+---
+description: What this tests
+charNormalization: "éè→e" (optional)
+ocrNormalizationRules: (optional)
+  - pattern: "regex"
+    replacement: "text"
+---
+Input text to normalize
+```
+
+**Filename = expected SHA-256 hash** (e.g., `1cddfbb2...f0b223.md`)
+
+**Adding new fixtures:**
+```bash
+node -e "const {normalizeText,sha256}=require('./public/normalize.js'); console.log(sha256(normalizeText('your text')))"
+# Save as {hash}.md with the input text
+```
+
 ### Test Commands
 
 ```bash
+# Web app (Jest + Playwright)
 npm test              # All tests (unit + E2E)
 npm run test:unit     # Jest only
 npm run test:e2e      # Playwright only
+
+# Android (from apps/android/)
+./gradlew test        # Run unit tests
+./gradlew connectedAndroidTest  # Run instrumented tests
 ```
 
 ## Training Pages

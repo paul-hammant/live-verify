@@ -119,9 +119,9 @@ async function sha256(text) {
 }
 
 // ES module exports (for browser extension)
-export { normalizeText, sha256 };
+export { applyDocSpecificNorm, normalizeText, sha256 };
 
 // CommonJS exports (for Node.js testing)
 if (typeof module !== 'undefined' && module.exports) {
-    module.exports = { normalizeText, sha256 };
+    module.exports = { applyDocSpecificNorm, normalizeText, sha256 };
 }

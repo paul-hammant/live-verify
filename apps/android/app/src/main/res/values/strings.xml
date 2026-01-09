@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Live Verify</string>
+    <string name="status_ready">Point camera at document</string>
+    <string name="status_processing">Processing…</string>
+    <string name="status_recognizing">Recognizing text…</string>
+    <string name="status_verifying">Verifying…</string>
+    <string name="capture_verify">Capture &amp; Verify</string>
+    <string name="scan_another">Scan Another</string>
+    <string name="instructions">Point camera at a document with registration marks and verify: URL</string>
+    <string name="result_verified">Verified</string>
+    <string name="result_not_verified">Not Verified</string>
+    <string name="result_error">Error</string>
+    <string name="permission_camera_required">Camera permission is required to scan documents</string>
+    <string name="permission_denied">Permission denied</string>
+</resources>

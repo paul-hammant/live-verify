@@ -1,0 +1,64 @@
+# Live Verify Android App
+
+Native Android app for camera-based document verification using OCR-to-hash verification.
+
+## Requirements
+
+- Android Studio Hedgehog (2023.1.1) or later
+- JDK 17
+- Android SDK 35 (Android 15)
+
+## Building
+
+1. Open `apps/android/` folder in Android Studio
+2. Sync Gradle files
+3. Run on device or emulator (API 26+)
+
+Or from command line:
+```bash
+./gradlew assembleDebug
+```
+
+## Architecture
+
+- **TextNormalizer.kt**: Text normalization matching the JavaScript implementation
+- **VerificationLogic.kt**: URL extraction, HTTP verification against issuer endpoints
+- **MainActivity.kt**: CameraX preview, ML Kit OCR, verification flow
+
+## Dependencies
+
+- CameraX 1.3.1 - Camera capture
+- ML Kit Text Recognition 16.0.0 - OCR
+- OkHttp 4.12.0 - HTTP client
+- Kotlin Coroutines - Async operations
+
+## Target Configuration
+
+- compileSdk: 35 (Android 15)
+- targetSdk: 35
+- minSdk: 26 (Android 8.0)
+
+This covers ~95% of active Android devices.
+
+## Testing
+
+Run unit tests:
+```bash
+./gradlew test
+```
+
+Run instrumented tests (requires device/emulator):
+```bash
+./gradlew connectedAndroidTest
+```
+
+### Test Files
+
+- `TextNormalizerTest.kt` - Text normalization, SHA-256 hashing, cross-platform consistency
+- `VerificationLogicTest.kt` - URL extraction, cert text extraction, verification flow
+
+**Important:** The `training page Bachelor hash should match JavaScript implementation` test ensures the Kotlin normalization produces identical hashes to the JavaScript implementation. If this test fails, the implementations are out of sync.
+
+## License
+
+GNU Affero General Public License v3.0 or later (AGPL-3.0-or-later)

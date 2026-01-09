@@ -77,24 +77,13 @@ describe('Browser Extension: normalizeText', () => {
         expect(result).toBe('wait...');
     });
 
-    test('removes leading border artifacts', () => {
-        const result = normalizeText('| hello world');
-        expect(result).toBe('hello world');
-    });
+    // Note: OCR artifact removal (pipes, tildes, trailing letters) is NOT in
+    // browser extension's normalizeText. That's in ocr-cleanup.js for camera apps.
+    // Browser extension handles text selection, not OCR output.
 
-    test('removes trailing border artifacts', () => {
-        const result = normalizeText('hello world |');
-        expect(result).toBe('hello world');
-    });
-
-    test('removes trailing single lowercase letter (OCR artifact)', () => {
-        const result = normalizeText('John Doe a');
-        expect(result).toBe('John Doe');
-    });
-
-    test('preserves trailing uppercase letter', () => {
-        const result = normalizeText('Appendix A');
-        expect(result).toBe('Appendix A');
+    test('preserves pipes in middle of text (not OCR artifact)', () => {
+        const result = normalizeText('hello | world');
+        expect(result).toBe('hello | world');
     });
 });
 

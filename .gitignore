@@ -13,3 +13,4 @@ test-verifications/
 all_source*.txt
 .swift-module-cache/
 apps/ios/LiveVerify/DerivedDataLocal
+dist/

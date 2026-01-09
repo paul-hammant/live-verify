@@ -16,6 +16,10 @@
 */
 
 const { normalizeText, sha256 } = require('../public/normalize.js');
+const { cleanOcrArtifacts } = require('../public/ocr-cleanup.js');
+
+// Helper: full OCR pipeline (cleanup + normalize)
+const ocrNormalize = (text) => normalizeText(cleanOcrArtifacts(text));
 
 describe('OCR Hash Verification', () => {
   describe('Text Normalization', () => {
@@ -81,22 +85,23 @@ describe('OCR Hash Verification', () => {
       expect(normalizeText(input)).toBe(expected);
     });
 
+    // OCR artifact tests use ocrNormalize (cleanOcrArtifacts + normalizeText)
     it('should remove leading pipes (OCR artifacts)', () => {
       const input = '| Hello World';
       const expected = 'Hello World';
-      expect(normalizeText(input)).toBe(expected);
+      expect(ocrNormalize(input)).toBe(expected);
     });
 
     it('should remove multiple leading pipes', () => {
       const input = '|| Hello World';
       const expected = 'Hello World';
-      expect(normalizeText(input)).toBe(expected);
+      expect(ocrNormalize(input)).toBe(expected);
     });
 
     it('should remove leading pipes with spaces after them', () => {
       const input = '|  Hello World';
       const expected = 'Hello World';
-      expect(normalizeText(input)).toBe(expected);
+      expect(ocrNormalize(input)).toBe(expected);
     });
 
     it('should handle multi-line text with leading pipes', () => {
@@ -104,37 +109,37 @@ describe('OCR Hash Verification', () => {
 | verify:paul-hammant.github.io/live-verify/c`;
       const expected = `Awarded to: Ponder Stibbons
 verify:paul-hammant.github.io/live-verify/c`;
-      expect(normalizeText(input)).toBe(expected);
+      expect(ocrNormalize(input)).toBe(expected);
     });
 
     it('should preserve pipes that are not at the start of lines', () => {
       const input = 'Hello | World';
       const expected = 'Hello | World';
-      expect(normalizeText(input)).toBe(expected);
+      expect(ocrNormalize(input)).toBe(expected);
     });
 
     it('should remove trailing pipes (OCR artifacts)', () => {
       const input = 'Hello World |';
       const expected = 'Hello World';
-      expect(normalizeText(input)).toBe(expected);
+      expect(ocrNormalize(input)).toBe(expected);
     });
 
     it('should remove multiple trailing pipes', () => {
       const input = 'Hello World ||';
       const expected = 'Hello World';
-      expect(normalizeText(input)).toBe(expected);
+      expect(ocrNormalize(input)).toBe(expected);
     });
 
     it('should remove trailing pipes with spaces before them', () => {
       const input = 'Hello World  |';
       const expected = 'Hello World';
-      expect(normalizeText(input)).toBe(expected);
+      expect(ocrNormalize(input)).toBe(expected);
     });
 
     it('should remove both leading and trailing pipes', () => {
       const input = '| Hello World |';
       const expected = 'Hello World';
-      expect(normalizeText(input)).toBe(expected);
+      expect(ocrNormalize(input)).toBe(expected);
     });
 
     it('should handle multi-line text with leading and trailing pipes', () => {
@@ -144,13 +149,13 @@ verify:paul-hammant.github.io/live-verify/c`;
       const expected = `Line 1
 Line 2
 Line 3`;
-      expect(normalizeText(input)).toBe(expected);
+      expect(ocrNormalize(input)).toBe(expected);
     });
 
     it('should remove leading tilde (OCR artifact from borders)', () => {
       const input = '~ Ankh-Morpork';
       const expected = 'Ankh-Morpork';
-      expect(normalizeText(input)).toBe(expected);
+      expect(ocrNormalize(input)).toBe(expected);
     });
 
     it('should handle real-world example with tilde prefix', () => {
@@ -162,7 +167,7 @@ Awarded to: Ponder Stibbons`;
 Ankh-Morpork
 Bachelor of Thaumatology
 Awarded to: Ponder Stibbons`;
-      expect(normalizeText(input)).toBe(expected);
+      expect(ocrNormalize(input)).toBe(expected);
     });
 
     it('should remove various border artifact characters', () => {
@@ -183,7 +188,7 @@ Awarded to: Ponder Stibbons`;
       ];
 
       testCases.forEach(({ input, expected }) => {
-        expect(normalizeText(input)).toBe(expected);
+        expect(ocrNormalize(input)).toBe(expected);
       });
     });
   });

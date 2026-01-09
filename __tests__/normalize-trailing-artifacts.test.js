@@ -16,8 +16,12 @@
 */
 
 const { normalizeText } = require('../public/normalize.js');
+const { cleanOcrArtifacts } = require('../public/ocr-cleanup.js');
 
-describe('Normalize Text - Trailing Single Character Artifacts', () => {
+// Helper that applies OCR cleanup then normalization (for OCR'd content)
+const ocrNormalize = (text) => normalizeText(cleanOcrArtifacts(text));
+
+describe('OCR Cleanup - Trailing Single Character Artifacts', () => {
     it('should remove trailing single character artifacts from OCR', () => {
         // Real example from MIT PhD credential OCR
         const extractedText = `Massachusetts Institute of Technology
@@ -28,7 +32,7 @@ Honors: Summa Cum Laude
 Certificate Number : MIT-CS-PHD-1985-042
 Registrar ID: REG-85-CSAIL-0142`;
 
-        const normalized = normalizeText(extractedText);
+        const normalized = ocrNormalize(extractedText);
 
         // The " a" should be removed from "Hareld J Finch a"
         expect(normalized).toContain('Hareld J Finch');
@@ -55,13 +59,14 @@ Registrar ID: REG-85-CSAIL-0142`;
         ];
 
         testCases.forEach(({ input, expected }) => {
-            const result = normalizeText(input);
+            const result = ocrNormalize(input);
             expect(result).toBe(expected);
         });
     });
 
     it('should NOT remove meaningful single letters at end of line', () => {
-        // These should be preserved as they're meaningful
+        // These should be preserved as they're meaningful (uppercase letters)
+        // OCR cleanup only removes trailing lowercase letters
         const testCases = [
             'Appendix A',
             'Section B',
@@ -71,7 +76,7 @@ Registrar ID: REG-85-CSAIL-0142`;
         ];
 
         testCases.forEach(input => {
-            const result = normalizeText(input);
+            const result = ocrNormalize(input);
             expect(result).toBe(input);
         });
     });
@@ -85,7 +90,7 @@ Line three c`;
 Line two
 Line three`;
 
-        const result = normalizeText(input);
+        const result = ocrNormalize(input);
         expect(result).toBe(expected);
     });
 });
