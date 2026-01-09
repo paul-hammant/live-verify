@@ -552,9 +552,10 @@ async function processImageCanvas(canvas, captureMethod = 'Unknown') {
         console.log('Using normalization rules from verification-meta.json:', meta);
     }
 
-    // Normalize text according to the rules
+    // Clean OCR artifacts then normalize text
     showProcessingOverlay('Normalizing...');
-    const normalized = normalizeText(certText, meta);
+    const cleanedText = cleanOcrArtifacts(certText);
+    const normalized = normalizeText(cleanedText, meta);
     debugLog(`Normalized: ${normalized.length} chars`);
     console.log('Normalized Text:', normalized);
 
@@ -626,7 +627,8 @@ async function processImageCanvas(canvas, captureMethod = 'Unknown') {
 
                 const { url: retryBaseUrl, urlLineIndex: retryUrlLineIndex } = extractVerificationUrl(retryRawText);
                 const retryCertText = extractCertText(retryRawText, retryUrlLineIndex);
-                const retryNormalized = normalizeText(retryCertText, meta);
+                const retryCleanedText = cleanOcrArtifacts(retryCertText);
+                const retryNormalized = normalizeText(retryCleanedText, meta);
                 const retryHash = await sha256(retryNormalized);
 
                 console.log('Retry SHA-256 Hash:', retryHash);

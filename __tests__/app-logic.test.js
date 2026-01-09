@@ -263,10 +263,11 @@ random OCR garbage text`;
                 expect(extractVerificationUrlOnly(`vvfy:example.com/path`))
                     .toBe(null);
 
+                // Space after colon IS supported (see extractVerificationUrl comment)
                 expect(extractVerificationUrlOnly(`verify: example.com/path`))
-                    .toBe(null); // we are not going to sanitize this class of OCR error
+                    .toBe('verify:example.com/path');
                 expect(extractVerificationUrlOnly(`vfy: example.com/path`))
-                    .toBe(null); // we are not going to sanitize this class of OCR error
+                    .toBe('vfy:example.com/path');
 
             });
         });

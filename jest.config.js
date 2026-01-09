@@ -11,8 +11,13 @@ module.exports = {
   ],
   collectCoverageFrom: [
     'public/**/*.js',
+    'apps/browser-extension/shared/**/*.js',
     '!public/cv/opencv.js',
     '!jest.config.js',
     '!webpack.config.js'
-  ]
+  ],
+  // Transform browser extension ES modules for Jest
+  transform: {
+    'apps/browser-extension/shared/.*\\.js$': '<rootDir>/jest-esm-transformer.js'
+  }
 };

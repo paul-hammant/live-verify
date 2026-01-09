@@ -17,6 +17,35 @@ These capabilities are designed for building into camera apps, browsers (mobile/
 ### POC 2: In-Page Text Selection Verification
 `public/text-selection-verify.js` — Select text on webpage, right-click "Verify?", computes hash, checks issuer endpoint.
 
+### iOS App
+`apps/ios/LiveVerify/` — Native Swift iOS app for camera-based verification. Uses Vision framework for OCR, CryptoKit for SHA-256. Key files:
+- `TextNormalizer.swift` — Text normalization matching JS implementation
+- `VerificationClient.swift` — HTTP verification against issuer endpoints
+- `CameraViewController.swift` — Camera capture and OCR pipeline
+- Tests in `LiveVerifyTests/` — Unit tests for normalizer, hasher, verification client
+
+### Chrome Extension (Browser)
+`apps/browser-extension/` — Manifest V3 extension for text selection verification. Works in Chrome, Edge, Firefox. Key files:
+- `background.js` — Service worker handling verification, context menu, notifications
+- `content.js` — Page scanning for `verifiable-text` HTML markers, auto-verify regions
+- `popup/` — Verification history UI with "Show me" feature to locate claims on page
+- `settings/` — Intrusiveness levels, auto-scan options
+- `shared/normalize.js`, `shared/verify.js` — Shared verification logic
+
+**CRITICAL - Keep normalization in sync:** Text normalization is implemented in THREE places that must match:
+1. `public/normalize.js` (JavaScript, web app)
+2. `apps/browser-extension/shared/normalize.js` (JavaScript ES modules, browser extension)
+3. `apps/ios/LiveVerify/LiveVerify/TextNormalizer.swift` (Swift, iOS app)
+
+If you change normalization logic, update ALL THREE. The web app version also has `public/ocr-cleanup.js` for OCR-specific artifact removal (not needed by browser extension or iOS text selection paths).
+
+**Extension features:**
+- Right-click "Verify this claim" on selected text
+- Keyboard shortcut Cmd/Ctrl+Shift+V
+- Session-only history (privacy: cleared on browser close)
+- Auto-detect `verifiable-text` HTML markers on pages
+- "Show me" button scrolls to and highlights verified claims
+
 ### Additional Modes
 See [VERIFICATION-MODES.md](./VERIFICATION-MODES.md) for detailed permutations and the platform integration roadmap.
 
@@ -55,6 +84,24 @@ The app:
 
 ```
 live-verify/
+├── apps/
+│   ├── ios/LiveVerify/              # Native iOS app (Swift)
+│   │   ├── LiveVerify/              # Main app source
+│   │   │   ├── TextNormalizer.swift # Text normalization
+│   │   │   ├── SHA256Hasher.swift   # CryptoKit hashing
+│   │   │   └── VerificationClient.swift # HTTP verification
+│   │   └── LiveVerifyTests/         # Unit tests
+│   │
+│   └── browser-extension/           # Chrome/Edge/Firefox extension
+│       ├── manifest.json            # Manifest V3 config
+│       ├── background.js            # Service worker
+│       ├── content.js               # Page scanning
+│       ├── popup/                   # History UI
+│       ├── settings/                # Options page
+│       ├── shared/                  # normalize.js, verify.js
+│       ├── icons/                   # Extension icons
+│       └── __tests__/               # Jest tests
+│
 ├── public/                          # Deploy this folder to GitHub Pages
 │   ├── camera-app/index.html        # Camera UI with registration marks overlay
 │   ├── styles.css                   # Responsive design, mobile-first

@@ -97,6 +97,34 @@ This isn’t patent-locked, and the protocol is intentionally simple. The commer
 - **Issuer Registry SaaS**: integrate with systems of record, publish hashes, support revocation, provide response-code meaning pages, meet governance/compliance expectations.
 - **Verifier Ops SaaS**: managed app/SDK distribution, device management, allowlists of issuer domains, optional caching and logging/retention controls (where authorized).
 
+## Native Apps & Browser Extension
+
+Beyond the web demo, LiveVerify is available as native apps for real-world use:
+
+### iOS App
+Point your iPhone at any document with a `verify:` line and get instant verification. Uses Apple's Vision framework for OCR - no cloud services, no data leaves your device.
+
+- **App Store:** Coming soon
+- **Source:** `apps/ios/LiveVerify/`
+
+### Browser Extension (Chrome, Edge, Firefox)
+Verify claims directly in your browser - perfect for HR professionals reviewing CVs, finance teams checking receipts, or anyone verifying credentials online.
+
+**Features:**
+- **Right-click to verify** - Select text containing a claim + `verify:` URL, right-click → "Verify this claim"
+- **Keyboard shortcut** - Cmd+Shift+V (Mac) / Ctrl+Shift+V (Windows)
+- **Verification history** - See all verifications from your session (cleared when browser closes for privacy)
+- **Auto-detect verifiable regions** - Pages with `verifiable-text` HTML markers show a "Scan" button
+- **"Show me" feature** - Click to scroll back to and highlight the verified claim on the page
+
+**Install:**
+1. Download from `apps/browser-extension/`
+2. Chrome: `chrome://extensions` → Enable Developer Mode → Load unpacked
+3. Firefox: `about:debugging` → Load Temporary Add-on
+
+**Why a browser extension?**
+HR reviewing a CV with 5 employment claims? Verify each one without leaving the page. Finance checking an expense report PDF? Select the receipt text and verify instantly. The extension brings verification to where you already work.
+
 ## Quick Start
 
 **Try it now:**
@@ -663,15 +691,29 @@ The underlying dataset is in `public/use-cases/data/*.json`.
 
 ## Tech Stack
 
-This app is all client side. 
+All verification happens client-side - no PII ever leaves your device.
 
+**Web Demo:**
 - **OpenCV.js 4.x**: Computer vision for registration mark detection
 - **Tesseract.js v5**: Client-side OCR engine
 - **Web Crypto API**: SHA-256 hashing (built into browsers)
+
+**iOS App:**
+- **Swift/SwiftUI**: Native iOS development
+- **Vision framework**: Apple's on-device OCR
+- **CryptoKit**: SHA-256 hashing
+
+**Browser Extension:**
+- **Manifest V3**: Modern Chrome extension architecture
+- **chrome.scripting API**: Text selection capture
+- **chrome.storage.session**: Privacy-preserving session storage
+
+**Testing:**
 - **Playwright**: E2E testing framework
 - **Jest**: Unit testing framework
+- **XCTest**: iOS unit tests
 
-The URLs to hashes are static for now, but other deployments could have dynamic APis with gateways and billing.
+The URLs to hashes are static for now, but other deployments could have dynamic APIs with gateways and billing.
 
 ## Testing
 

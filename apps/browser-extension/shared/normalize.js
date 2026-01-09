@@ -16,13 +16,13 @@
 */
 
 /**
- * Shared text normalization and hashing functions
- * Used by both the main app and test pages
+ * Text normalization and hashing functions
+ * Shared logic with public/normalize.js (keep in sync)
+ * This file uses ES modules for browser extension compatibility
  */
 
 /**
  * Apply document-specific normalization rules from verification-meta.json
- * This allows document issuers to define character substitutions and regex patterns
  * @param {string} text - Text to normalize
  * @param {Object} metadata - Metadata from verification-meta.json (optional)
  * @returns {string} Normalized text with document-specific rules applied
@@ -32,17 +32,6 @@ function applyDocSpecificNorm(text, metadata) {
         return text;
     }
 
-    // Import the document-specific normalization module if available
-    if (typeof require !== 'undefined') {
-        try {
-            const docNorm = require('./doc-specific-normalization.js');
-            return docNorm.applyDocumentSpecificNormalization(text, metadata);
-        } catch (e) {
-            // Module not available in browser, fallback to inline implementation
-        }
-    }
-
-    // Browser fallback: inline implementation
     let result = text;
 
     // 1. Apply character normalization (compact notation: "éèêë→e àáâä→a")
@@ -78,13 +67,17 @@ function applyDocSpecificNorm(text, metadata) {
     return result;
 }
 
-// Text normalization function (as per the document rules)
+/**
+ * Normalize text according to verification rules
+ * @param {string} text - Text to normalize
+ * @param {Object} metadata - Optional metadata from verification-meta.json
+ * @returns {string} Normalized text
+ */
 function normalizeText(text, metadata = null) {
-    // Apply document-specific normalization FIRST (before standard normalization)
-    // This ensures user-typed text gets the same treatment as OCR text
+    // Apply document-specific normalization FIRST
     text = applyDocSpecificNorm(text, metadata);
 
-    // Normalize Unicode characters that OCR might produce
+    // Normalize Unicode characters
     text = text.replace(/[\u201C\u201D\u201E]/g, '"');  // Curly double quotes → straight
     text = text.replace(/[\u2018\u2019]/g, "'");        // Curly single quotes → straight
     text = text.replace(/[\u00AB\u00BB]/g, '"');        // Angle quotes → straight double
@@ -96,8 +89,6 @@ function normalizeText(text, metadata = null) {
     const lines = text.split('\n');
 
     // Apply normalization rules to each line
-    // Note: OCR artifact cleanup (border chars, trailing letters) is in ocr-cleanup.js
-    // and should be applied BEFORE this function for OCR'd text
     const normalizedLines = lines.map(line => {
         // Remove leading spaces
         line = line.replace(/^\s+/, '');
@@ -113,26 +104,24 @@ function normalizeText(text, metadata = null) {
     return normalizedLines.join('\n');
 }
 
-// SHA-256 hash function (works in both browser and Node.js)
-function sha256(text) {
-    // Node.js environment (for testing)
-    if (typeof require !== 'undefined' && typeof window === 'undefined') {
-        const crypto = require('crypto');
-        return crypto.createHash('sha256').update(text, 'utf8').digest('hex');
-    }
-
-    // Browser environment (production)
-    return (async () => {
-        const encoder = new TextEncoder();
-        const data = encoder.encode(text);
-        const hashBuffer = await crypto.subtle.digest('SHA-256', data);
-        const hashArray = Array.from(new Uint8Array(hashBuffer));
-        const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
-        return hashHex;
-    })();
+/**
+ * SHA-256 hash function (browser only - async)
+ * @param {string} text - Text to hash
+ * @returns {Promise<string>} Hex-encoded hash
+ */
+async function sha256(text) {
+    const encoder = new TextEncoder();
+    const data = encoder.encode(text);
+    const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+    const hashArray = Array.from(new Uint8Array(hashBuffer));
+    const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+    return hashHex;
 }
 
-// Export for Node.js testing (doesn't affect browser usage)
+// ES module exports (for browser extension)
+export { normalizeText, sha256 };
+
+// CommonJS exports (for Node.js testing)
 if (typeof module !== 'undefined' && module.exports) {
-    module.exports = { normalizeText, sha256, applyDocSpecificNorm };
+    module.exports = { normalizeText, sha256 };
 }
