@@ -1,6 +1,6 @@
 {
-  "generated": "2026-01-10T07:59:49.207Z",
-  "totalUseCases": 390,
+  "generated": "2026-01-10T08:02:26.699Z",
+  "totalUseCases": 392,
   "totalFurtherDerivations": 396,
   "categories": {
     "Real Estate & Property": 30,
@@ -38,6 +38,7 @@
     "Government & Regulatory": 4,
     "Permits & Approvals": 4,
     "Delegated Authority": 5,
+    "Corporate & Legal Documents": 2,
     "Intellectual Property Law": 3,
     "Trade Finance": 5,
     "Environmental Permits & Compliance": 4,
@@ -1638,6 +1639,24 @@
         "cslb",
         "building-official",
         "tradesman"
+      ]
+    },
+    {
+      "slug": "contracts-agreements-multipage",
+      "title": "Contracts & Agreements (Multi-Page)",
+      "category": "Corporate & Legal Documents",
+      "volume": "Very Large",
+      "retention": "Contract term + 6-10 years",
+      "furtherDerivations": 0,
+      "snippet": "Parties, effective date, key terms (compensation, term, obligations), signatures, page sequence integrity, exhibit references.",
+      "tags": [
+        "contract",
+        "agreement",
+        "multi-page",
+        "signature",
+        "terms",
+        "legal",
+        "page-substitution"
       ]
     },
     {
@@ -4339,6 +4358,24 @@
         "medical-verification",
         "patient-safety",
         "radiologist-attestation"
+      ]
+    },
+    {
+      "slug": "meeting-minutes-resolutions",
+      "title": "Meeting Minutes & Resolutions",
+      "category": "Corporate & Legal Documents",
+      "volume": "Very Large",
+      "retention": "Permanent (corporate records)",
+      "furtherDerivations": 0,
+      "snippet": "Meeting date/time/location, attendees (present/absent), quorum status, agenda items, motions and seconds, resolutions passed, vote counts, signatures, page sequence integrity.",
+      "tags": [
+        "minutes",
+        "resolutions",
+        "board",
+        "shareholders",
+        "AGM",
+        "corporate-governance",
+        "multi-page"
       ]
     },
     {
@@ -7542,6 +7579,10 @@
       "count": 3
     },
     {
+      "name": "Corporate & Legal Documents",
+      "count": 2
+    },
+    {
       "name": "Vehicle & Transportation",
       "count": 2
     },
@@ -7550,5 +7591,5 @@
       "count": 1
     }
   ],
-  "totalCategories": 42
+  "totalCategories": 43
 }
