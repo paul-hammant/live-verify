@@ -17,12 +17,12 @@ These documents are the "Trade Collateral." Fraud is high-stakes: a dishonest su
 <div style="max-width: 650px; margin: 24px auto; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #004a99; color: #fff; padding: 25px; display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid #000;">
     <div>
-      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;">CITI SUPPLY CHAIN FINANCE</div>
+      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;" verifiable-text="start" data-for="factor">CITI SUPPLY CHAIN FINANCE</div>
       <div style="font-size: 0.8em; opacity: 0.9;">Trade & Working Capital Solutions</div>
     </div>
     <div style="text-align: right;">
       <div style="font-weight: bold; font-size: 0.9em;">APPROVAL ADVICE</div>
-      <div style="font-size: 0.7em;">Batch: <span verifiable-text="start" data-for="factor">[</span>SCF-2026-992288</div>
+      <div style="font-size: 0.7em;">Batch: <span>[</span>SCF-2026-992288</div>
     </div>
   </div>
 <div style="padding: 25px;">

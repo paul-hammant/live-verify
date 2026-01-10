@@ -16,13 +16,13 @@ These documents are the "Safety Certificates" for an investor's cash. Fraud is h
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #1a5f2a; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="background: #1a5f2a; color: #fff; padding: 20px; text-align: center;">
-    <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 1px;">CLIENT MONEY SEGREGATION</div>
+    <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 1px;" verifiable-text="start" data-for="cass">CLIENT MONEY SEGREGATION</div>
     <div style="font-size: 0.8em; opacity: 0.9; text-transform: uppercase; margin-top: 5px;">CASS 7 Compliance Attestation</div>
   </div>
 <div style="padding: 30px; font-size: 0.95em; line-height: 1.6; color: #333;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 10px;">
       <div>
-        <strong>Firm:</strong> <span verifiable-text="start" data-for="cass">[</span>STERLING INVESTMENTS LTD<br>
+        <strong>Firm:</strong> <span>[</span>STERLING INVESTMENTS LTD<br>
         <strong>FCA FRN:</strong> 789012 (Authorized)
       </div>
       <div style="text-align: right;">

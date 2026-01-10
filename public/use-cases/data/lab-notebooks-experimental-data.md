@@ -10,14 +10,14 @@ furtherDerivations: 1
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 1px solid #555; background: #fffdf5; padding: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); position: relative;">
   <div style="text-align: center; border-bottom: 2px solid #555; padding-bottom: 10px; margin-bottom: 20px;">
-    <strong>INSTITUTE FOR BIOMEDICAL RESEARCH</strong><br>
+    <strong verifiable-text="start" data-for="lab-data">INSTITUTE FOR BIOMEDICAL RESEARCH</strong><br>
     CERTIFIED LABORATORY NOTEBOOK RECORD<br>
     --------------------------------------
   </div>
 <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
       <div>
-        <strong>Notebook ID:</strong> <span verifiable-text="start" data-for="lab-data">[</span>IBR-2026-NB-42<br>
+        <strong>Notebook ID:</strong> <span>[</span>IBR-2026-NB-42<br>
         <strong>Page #:</strong> 114
       </div>
       <div style="text-align: right;">

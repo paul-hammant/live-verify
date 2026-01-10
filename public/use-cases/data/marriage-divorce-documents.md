@@ -10,7 +10,7 @@ furtherDerivations: 1
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 3px double #1a365d; background: #fdfcf0; padding: 40px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); border-radius: 4px;">
   <div style="text-align: center; border-bottom: 2px solid #1a365d; padding-bottom: 15px; margin-bottom: 25px;">
-    <div style="font-weight: bold; font-size: 1.3em; letter-spacing: 2px; color: #1a365d;">STATE OF NEVADA</div>
+    <div style="font-weight: bold; font-size: 1.3em; letter-spacing: 2px; color: #1a365d;" verifiable-text="start" data-for="marriage">STATE OF NEVADA</div>
     <div style="font-size: 0.9em; text-transform: uppercase; color: #2c5282;">Clark County • Marriage Bureau</div>
   </div>
 <h2 style="text-align: center; font-size: 1.5em; color: #1a365d; margin-bottom: 25px;">CERTIFICATE OF MARRIAGE</h2>
@@ -19,7 +19,7 @@ furtherDerivations: 1
 <div style="display: flex; justify-content: space-around; margin: 20px 0; background: #f9f9f9; padding: 15px; border: 1px solid #ccc;">
       <div style="text-align: center;">
         <strong>SPOUSE A</strong><br>
-        <span verifiable-text="start" data-for="marriage">[</span>John Jacob Doe<br>
+        <span>[</span>John Jacob Doe<br>
         <small>DOB: 05/15/1985</small>
       </div>
       <div style="font-size: 1.5em; align-self: center;">&</div>

@@ -18,10 +18,10 @@ Fraud happens when sellers "Hide" easements from buyers by deleting pages from l
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #000; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 25px;">
-    <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">GRANT OF EASEMENT</h2>
+    <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;" verifiable-text="start" data-for="easement">GRANT OF EASEMENT</h2>
   </div>
 <div style="font-size: 1em; line-height: 1.6; color: #000; text-align: justify;">
-    <p>This Grant of Easement is made on March 15, 2026, between <strong>Grantor:</strong> <span verifiable-text="start" data-for="easement">[</span><strong>John Jacob Doe</strong> and <strong>Grantee:</strong> Pacific Gas & Electric Company.</p>
+    <p>This Grant of Easement is made on March 15, 2026, between <strong>Grantor:</strong> <span>[</span><strong>John Jacob Doe</strong> and <strong>Grantee:</strong> Pacific Gas & Electric Company.</p>
 <p>The Grantor hereby grants to the Grantee a permanent non-exclusive easement for the purpose of installing and maintaining subterranean electrical conduits across the following described property:</p>
 <p style="background: #f9f9f9; padding: 10px; border: 1px solid #eee; font-family: monospace; font-size: 0.9em;">
       LOT 42, BLOCK 7, MAP OF SKYLINE HEIGHTS, RECORDED IN LIBER 123, PAGE 456, COUNTY OF MARIN.

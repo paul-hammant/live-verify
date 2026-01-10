@@ -17,12 +17,12 @@ These documents are the "Recovery Ledger" of the insurance world. Fraud is commo
 <div style="max-width: 650px; margin: 24px auto; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; border: 2px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #000; color: #fff; padding: 25px; display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid #ce9e00;">
     <div>
-      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;">COPART SALVAGE SERVICES</div>
+      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;" verifiable-text="start" data-for="salvage">COPART SALVAGE SERVICES</div>
       <div style="font-size: 0.8em; opacity: 0.9;">Total Loss Asset Management</div>
     </div>
     <div style="text-align: right;">
       <div style="font-weight: bold; font-size: 0.9em;">SALVAGE CERTIFICATE</div>
-      <div style="font-size: 0.7em;">Lot: <span verifiable-text="start" data-for="salvage">[</span>9922-8877-XJ</div>
+      <div style="font-size: 0.7em;">Lot: <span>[</span>9922-8877-XJ</div>
     </div>
   </div>
 <div style="padding: 25px;">

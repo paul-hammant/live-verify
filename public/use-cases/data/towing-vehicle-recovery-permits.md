@@ -18,7 +18,7 @@ This industry is a primary target for "Bandit Towers"—unlicensed operators who
   <div style="background: #333; color: #fff; padding: 15px; display: flex; align-items: center; border-bottom: 2px solid #000;">
     <div style="font-size: 1.8em; margin-right: 15px;">⛓️</div>
     <div>
-      <div style="font-weight: bold; font-size: 1.1em; letter-spacing: 1px;">CITY POLICE DEPT.</div>
+      <div style="font-weight: bold; font-size: 1.1em; letter-spacing: 1px;" verifiable-text="start" data-for="tow">CITY POLICE DEPT.</div>
       <div style="font-size: 0.75em; font-weight: bold; opacity: 0.8;">OFFICIAL TOWING OPERATOR</div>
     </div>
   </div>
@@ -28,7 +28,7 @@ This industry is a primary target for "Bandit Towers"—unlicensed operators who
     </div>
     <div style="flex-grow: 1;">
       <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Operator Name</div>
-      <div style="font-size: 1.2em; font-weight: bold; margin: 0 0 10px 0; color: #333;"><span verifiable-text="start" data-for="tow">[</span>SARAH J. SMITH</div>
+      <div style="font-size: 1.2em; font-weight: bold; margin: 0 0 10px 0; color: #333;"><span>[</span>SARAH J. SMITH</div>
 <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">License #</div>
       <div style="font-size: 1.1em; font-weight: bold; margin: 0 0 10px 0; letter-spacing: 1px;">TOW-992288</div>
 <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Company</div>

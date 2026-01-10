@@ -16,13 +16,13 @@ Because weight determines the price of multimillion-dollar shipments, these tick
 
 <div style="max-width: 450px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 2px solid #333; background: #fffbe6; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="padding: 20px; border-bottom: 1px dashed #333; text-align: center; background: #fffbe6;">
-    <div style="font-weight: bold; font-size: 1.3em;">MIDWEST CERTIFIED SCALES</div>
+    <div style="font-weight: bold; font-size: 1.3em;" verifiable-text="start" data-for="weight">MIDWEST CERTIFIED SCALES</div>
     <div style="font-size: 0.8em; opacity: 0.9;">NIST Handbook 44 Compliant • Scale ID: #9922-A</div>
   </div>
 <div style="padding: 20px;">
     <div style="display: flex; justify-content: space-between; font-size: 0.9em; margin-bottom: 20px;">
       <div>
-        <strong>Ticket #:</strong> <span verifiable-text="start" data-for="weight">[</span>WT-2026-8844<br>
+        <strong>Ticket #:</strong> <span>[</span>WT-2026-8844<br>
         <strong>Plate:</strong> ABC-1234 (IL)<br>
         <strong>Unit:</strong> TRUCK-42
       </div>

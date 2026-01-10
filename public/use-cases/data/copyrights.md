@@ -19,7 +19,7 @@ Fraudsters often create fake certificates to claim ownership of hit songs or vir
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 2px solid #333; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); position: relative;">
   <div style="text-align: center; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 2px;">CERTIFICATE OF REGISTRATION</div>
+    <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 2px;" verifiable-text="start" data-for="copyright">CERTIFICATE OF REGISTRATION</div>
     <div style="font-size: 0.9em; margin-top: 5px; font-weight: bold; border-top: 1px solid #000; display: inline-block; padding-top: 5px;">UNITED STATES COPYRIGHT OFFICE</div>
   </div>
 <div style="font-size: 1em; line-height: 1.6; color: #333;">
@@ -33,7 +33,7 @@ Fraudsters often create fake certificates to claim ownership of hit songs or vir
         March 15, 2026
       </div>
     </div>
-<p><strong>Title of Work:</strong> <span verifiable-text="start" data-for="copyright">[</span><em>The Chronicles of Verification: A Digital Epic</em></p>
+<p><strong>Title of Work:</strong> <span>[</span><em>The Chronicles of Verification: A Digital Epic</em></p>
     <p><strong>Author / Claimant:</strong> J.K. Row-Verify</p>
     <p><strong>Type of Work:</strong> Literary Work</p>
 <div style="margin: 20px 0; padding: 15px; background: #f9f9f9; border: 1px solid #eee; font-family: 'Courier New', monospace; font-size: 0.85em;">

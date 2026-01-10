@@ -16,7 +16,7 @@ Fraud is high-frequency and low-barrier: employees use "Ride Receipt Generator" 
 
 <div style="max-width: 400px; margin: 24px auto; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; border: 1px solid #eee; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1); overflow: hidden;">
   <div style="background: #000; color: #fff; padding: 25px; display: flex; justify-content: space-between; align-items: center;">
-    <div style="font-weight: bold; font-size: 1.8em; letter-spacing: -1px;">Uber</div>
+    <div style="font-weight: bold; font-size: 1.8em; letter-spacing: -1px;" verifiable-text="start" data-for="ride">Uber</div>
     <div style="text-align: right;">
       <div style="font-size: 0.7em; opacity: 0.8;">March 15, 2026</div>
       <div style="font-size: 0.9em; font-weight: bold;">$ 42.50</div>
@@ -24,7 +24,7 @@ Fraud is high-frequency and low-barrier: employees use "Ride Receipt Generator" 
   </div>
 <div style="padding: 20px;">
     <div style="font-size: 0.9em; line-height: 1.6; color: #333; margin-bottom: 20px;">
-      <p><strong>Rider:</strong> <span verifiable-text="start" data-for="ride">[</span>JOHN DOE<br>
+      <p><strong>Rider:</strong> <span>[</span>JOHN DOE<br>
       <strong>Trip ID:</strong> 99228877-XJ-42</p>
 <div style="margin: 15px 0; border-left: 2px solid #000; padding-left: 15px;">
         <div style="font-size: 0.8em; color: #888;">PICKUP:</div>

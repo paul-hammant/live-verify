@@ -19,11 +19,11 @@ This letter is the "proof of income" for non-profits. They show it to other dono
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: none; background: #fff; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="border-bottom: 2px solid #2c3e50; padding-bottom: 20px; margin-bottom: 30px;">
-    <h2 style="margin: 0; color: #2c3e50;">THE GATES-BUFFETT ALLIANCE</h2>
+    <h2 style="margin: 0; color: #2c3e50;" verifiable-text="start" data-for="grant">THE GATES-BUFFETT ALLIANCE</h2>
     <div style="font-style: italic; color: #7f8c8d;">Investing in the Future</div>
   </div>
 <p>March 10, 2026</p>
-<p>To: <span verifiable-text="start" data-for="grant">[</span>Community Health Initiative<br>
+<p>To: <span>[</span>Community Health Initiative<br>
   Attn: Executive Director</p>
 <p>Dear Partners,</p>
 <p>We are pleased to inform you that the Alliance has approved a grant in the amount of <strong>$500,000.00</strong> to support your mobile vaccination clinic expansion.</p>

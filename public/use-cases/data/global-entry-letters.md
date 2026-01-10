@@ -19,7 +19,7 @@ Fraud is common: scammers often create fake "Global Entry" PDFs to trick employe
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #002d62; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
     <div>
-      <div style="font-weight: bold; font-size: 1.1em;">U.S. CUSTOMS AND BORDER PROTECTION</div>
+      <div style="font-weight: bold; font-size: 1.1em;" verifiable-text="start" data-for="ttp">U.S. CUSTOMS AND BORDER PROTECTION</div>
       <div style="font-size: 0.8em;">Trusted Traveler Programs</div>
     </div>
     <div style="width: 40px; height: 40px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #002d62; font-weight: bold; font-size: 0.7em; text-align: center;">CBP</div>
@@ -27,7 +27,7 @@ Fraud is common: scammers often create fake "Global Entry" PDFs to trick employe
 <div style="padding: 25px;">
     <div style="text-align: center; margin-bottom: 20px;">
       <h2 style="margin: 0; font-size: 1.3em;">MEMBERSHIP CONFIRMATION</h2>
-      <div style="font-size: 1.5em; font-weight: bold; margin-top: 5px; color: #002d62;">PASSID: <span verifiable-text="start" data-for="ttp">[</span>998877665</div>
+      <div style="font-size: 1.5em; font-weight: bold; margin-top: 5px; color: #002d62;">PASSID: <span>[</span>998877665</div>
     </div>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
       <p><strong>Member Name:</strong> JOHN JACOB DOE<br>

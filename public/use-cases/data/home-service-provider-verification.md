@@ -23,7 +23,7 @@ The **Verified Badge** is the worker's digital or physical ID. It proves:
   <div style="background: #1a237e; color: #fff; padding: 15px; text-align: center; display: flex; align-items: center; justify-content: center;">
     <div style="font-size: 1.5em; margin-right: 10px;">🛠️</div>
     <div>
-      <h3 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">VERIFIED TRADESPERSON</h3>
+      <h3 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;" verifiable-text="start" data-for="home-serv">VERIFIED TRADESPERSON</h3>
       <div style="font-size: 0.8em; opacity: 0.8;">OFFICIAL LICENSE & SAFETY CLEARANCE</div>
     </div>
   </div>
@@ -33,7 +33,7 @@ The **Verified Badge** is the worker's digital or physical ID. It proves:
     </div>
     <div style="flex-grow: 1;">
       <h4 style="margin: 0; color: #1a237e;">MASTER ELECTRICIAN</h4>
-      <div style="font-size: 1.1em; font-weight: bold; margin: 5px 0;"><span verifiable-text="start" data-for="home-serv">[</span>MIKE J. MILLER</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin: 5px 0;"><span>[</span>MIKE J. MILLER</div>
       <div style="font-size: 0.9em; color: #333; line-height: 1.4;">
         <strong>License #:</strong> ELEC-992288 (TX)<br>
         <strong>Company:</strong> Sparky's Power, LLC<br>

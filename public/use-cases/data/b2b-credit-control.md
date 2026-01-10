@@ -16,11 +16,11 @@ The classic fraud: someone claims purchasing authority they don't have, places o
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #2e5090; background: #fff; padding: 0;">
   <div style="background: #2e5090; color: #fff; padding: 15px;">
-    <div style="font-weight: bold; font-size: 1.1em;">PURCHASING AUTHORITY CONFIRMATION</div>
+    <div style="font-weight: bold; font-size: 1.1em;" verifiable-text="start" data-for="b2bcreditcontrol">PURCHASING AUTHORITY CONFIRMATION</div>
     <div style="font-size: 0.8em;">Trade Credit Authorization</div>
   </div>
   <div style="padding: 20px; font-size: 0.9em; line-height: 1.6;">
-    <p><strong>Company:</strong> <span verifiable-text="start" data-for="b2bcreditcontrol">[</span>Meridian Manufacturing Ltd<br>
+    <p><strong>Company:</strong> <span>[</span>Meridian Manufacturing Ltd<br>
     <strong>Authorized Person:</strong> Sarah Chen<br>
     <strong>Role:</strong> Procurement Manager<br>
     <strong>Issued:</strong> January 15, 2026</p>

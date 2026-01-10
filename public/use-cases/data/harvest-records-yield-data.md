@@ -21,9 +21,9 @@ Fraud happens when a farmer "Edits" the report to show a lower yield (to pay les
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 1px solid #333; background: #fff; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
   <div style="display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
-    <div style="font-weight: bold; font-size: 1.2em;">JOHN DEERE OPERATIONS CENTER</div>
+    <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="harvest">JOHN DEERE OPERATIONS CENTER</div>
     <div style="text-align: right;">
-      Harvest ID: <span verifiable-text="start" data-for="harvest">[</span>HARV-2026-9922<br>
+      Harvest ID: <span>[</span>HARV-2026-9922<br>
       Date: 15 OCT 2026
     </div>
   </div>

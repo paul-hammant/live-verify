@@ -11,7 +11,7 @@ furtherDerivations: 1
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 2px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="background: #1a1a1a; color: #d4af37; padding: 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #d4af37;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 1px;">BERKLEY ASSET PROTECTION</div>
+      <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 1px;" verifiable-text="start" data-for="jewel">BERKLEY ASSET PROTECTION</div>
       <div style="font-size: 0.8em; color: #fff;">Specialist Jewelers Block Underwriters</div>
     </div>
     <div style="font-size: 1.5em;">💎</div>
@@ -21,7 +21,7 @@ furtherDerivations: 1
 <div style="font-size: 1em; line-height: 1.6; color: #333;">
       <p>This document confirms that all-risk coverage is in effect for the following inventory:</p>
 <div style="background: #fdfcf0; border: 1px solid #d4af37; padding: 15px; margin: 20px 0;">
-        <strong>Insured:</strong> <span verifiable-text="start" data-for="jewel">[</span>Imperial Diamonds & Fine Gems, LLC<br>
+        <strong>Insured:</strong> <span>[</span>Imperial Diamonds & Fine Gems, LLC<br>
         <strong>Location:</strong> 42 Diamond Way, New York, NY
       </div>
 <p><strong>Stock Limit (At Premises):</strong> $ 15,000,000.00<br>

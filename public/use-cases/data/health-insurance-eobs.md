@@ -22,7 +22,7 @@ Verified EOBs are essential for **HSA/FSA Reimbursement**. Fraudsters often edit
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #005fb8; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;">ANTHEM BLUE CROSS</div>
+      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="eob-health">ANTHEM BLUE CROSS</div>
       <div style="font-size: 0.8em;">Explanation of Benefits (EOB)</div>
     </div>
     <div style="text-align: right;">
@@ -32,7 +32,7 @@ Verified EOBs are essential for **HSA/FSA Reimbursement**. Fraudsters often edit
 <div style="padding: 25px;">
     <div style="display: flex; justify-content: space-between; font-size: 0.9em; margin-bottom: 20px; color: #555;">
       <div>
-        <strong>Patient:</strong> <span verifiable-text="start" data-for="eob-health">[</span>SARAH J. DOE<br>
+        <strong>Patient:</strong> <span>[</span>SARAH J. DOE<br>
         <strong>Provider:</strong> Westside Medical Clinic
       </div>
       <div style="text-align: right;">

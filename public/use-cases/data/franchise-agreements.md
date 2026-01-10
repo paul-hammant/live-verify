@@ -18,12 +18,12 @@ Fraud is high-stakes: some "Salesmen" edit the FDD to hide lawsuits or to inflat
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
   <div style="text-align: center; margin-bottom: 30px; border-bottom: 2px solid #000; padding-bottom: 10px;">
-    <div style="font-weight: bold; font-size: 1.4em; color: #000;">7-ELEVEN, INC.</div>
+    <div style="font-weight: bold; font-size: 1.4em; color: #000;" verifiable-text="start" data-for="franchise">7-ELEVEN, INC.</div>
     <div style="font-size: 0.85em; color: #666; margin-top: 5px;">OFFICIAL FRANCHISE DISCLOSURE DOCUMENT (FDD)</div>
   </div>
 <h3 style="text-align: center; text-transform: uppercase; margin-bottom: 20px; letter-spacing: 1px;">Disclosure Verification</h3>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333; text-align: justify;">
-    <p>This document serves as a verified extract of the FDD provided to <span verifiable-text="start" data-for="franchise">[</span><strong>John Jacob Doe</strong> for the proposed franchise location at:</p>
+    <p>This document serves as a verified extract of the FDD provided to <span>[</span><strong>John Jacob Doe</strong> for the proposed franchise location at:</p>
 <p style="text-align: center; font-weight: bold;">123 Convenience Way, Austin, TX 78701</p>
 <div style="background: #f9f9f9; border: 1px solid #eee; padding: 15px; margin: 20px 0;">
       <p><strong>Item 19 (Financial Performance):</strong> 2025 Average Net Sales: $ 1,450,000.00 (Verified by Milliman Audit #992)</p>

@@ -16,7 +16,7 @@ These documents are the "Paper Gold" of the lending industry. In the **Secondary
 
 <div style="max-width: 650px; margin: 24px auto; font-family: 'Times New Roman', Times, serif; border: 1px solid #000; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 30px;">
-    <h2 style="margin: 0; font-size: 1.4em; text-transform: uppercase; letter-spacing: 1px;">PROMISSORY NOTE</h2>
+    <h2 style="margin: 0; font-size: 1.4em; text-transform: uppercase; letter-spacing: 1px;" verifiable-text="start" data-for="note">PROMISSORY NOTE</h2>
     <div style="font-size: 0.9em; font-style: italic;">Fixed Rate - Installment</div>
   </div>
 <div style="font-size: 1em; line-height: 1.6; color: #000; text-align: justify;">
@@ -24,7 +24,7 @@ These documents are the "Paper Gold" of the lending industry. In the **Secondary
       <div>$ 125,000.00</div>
       <div>MARCH 15, 2026</div>
     </div>
-<p>FOR VALUE RECEIVED, the undersigned <span verifiable-text="start" data-for="note">[</span><strong>ROBERT J. MILLER</strong> (the "Borrower"), promises to pay to the order of <strong>GOLIATH NATIONAL BANK</strong> (the "Lender"), the principal sum of <strong>One Hundred Twenty-Five Thousand Dollars</strong> ($125,000.00) with interest at the rate of <strong>6.5%</strong> per annum.</p>
+<p>FOR VALUE RECEIVED, the undersigned <span>[</span><strong>ROBERT J. MILLER</strong> (the "Borrower"), promises to pay to the order of <strong>GOLIATH NATIONAL BANK</strong> (the "Lender"), the principal sum of <strong>One Hundred Twenty-Five Thousand Dollars</strong> ($125,000.00) with interest at the rate of <strong>6.5%</strong> per annum.</p>
 <div style="background: #f9f9f9; padding: 15px; border: 1px solid #ccc; margin: 20px 0;">
       <strong>Payment Terms:</strong> Monthly installments of $790.00 commencing May 1, 2026. Final payment due March 1, 2041 (Maturity).
     </div>

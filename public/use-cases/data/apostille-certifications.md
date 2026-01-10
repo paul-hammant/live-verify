@@ -18,13 +18,13 @@ It's a huge target for fraud—fake apostilles are often used to "legalize" fake
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 3px solid #000; background: #fff; padding: 40px; position: relative;">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
-    <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 2px;">APOSTILLE</h2>
+    <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 2px;" verifiable-text="start" data-for="apostille">APOSTILLE</h2>
     <div style="font-size: 0.9em;">(Convention de La Haye du 5 octobre 1961)</div>
   </div>
 <div style="font-size: 0.9em; line-height: 1.8;">
     <p><strong>1. Country:</strong> United States of America</p>
     <p>This public document<br>
-    <strong>2. has been signed by:</strong> <span verifiable-text="start" data-for="apostille">[</span><strong>John Hancock</strong><br>
+    <strong>2. has been signed by:</strong> <span>[</span><strong>John Hancock</strong><br>
     <strong>3. acting in the capacity of:</strong> Notary Public, State of New York<br>
     <strong>4. bears the seal/stamp of:</strong> John Hancock, Notary Public</p>
 <div style="border: 1px solid #000; padding: 10px; margin: 10px 0; text-align: center; font-weight: bold; background: #f9f9f9;">

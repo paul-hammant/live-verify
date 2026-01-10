@@ -19,7 +19,7 @@ Verifying a bank statement directly against the bank's domain ensures that the b
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <div style="background: #004a99; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;">CHASE 🟦</div>
+      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="bank">CHASE 🟦</div>
       <div style="font-size: 0.8em;">JPMorgan Chase Bank, N.A.</div>
     </div>
     <div style="text-align: right;">
@@ -30,7 +30,7 @@ Verifying a bank statement directly against the bank's domain ensures that the b
     <div style="display: flex; justify-content: space-between; margin-bottom: 30px;">
       <div>
         <strong>Account Holder:</strong><br>
-        <span verifiable-text="start" data-for="bank">[</span><strong>WAYNE ENTERPRISES, INC.</strong><br>
+        <span>[</span><strong>WAYNE ENTERPRISES, INC.</strong><br>
         1007 Mountain Drive<br>
         Gotham City, NY 10001
       </div>

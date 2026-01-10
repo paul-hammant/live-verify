@@ -18,12 +18,12 @@ In the "Robo-Signing" scandal of 2008, banks forged millions of affidavits to fo
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 2px 2px 8px rgba(0,0,0,0.1);">
   <div style="text-align: center; margin-bottom: 20px;">
-    <h3 style="text-decoration: underline; text-transform: uppercase;">AFFIDAVIT OF IDENTITY</h3>
+    <h3 style="text-decoration: underline; text-transform: uppercase;" verifiable-text="start" data-for="affidavit">AFFIDAVIT OF IDENTITY</h3>
   </div>
 <div style="font-size: 0.95em; line-height: 1.6; text-align: justify;">
     <p>STATE OF NEW YORK )<br>
     COUNTY OF KINGS ) ss.:</p>
-<p>I, <span verifiable-text="start" data-for="affidavit">[</span><strong>JANE DOE</strong>, being duly sworn, deposes and says:</p>
+<p>I, <span>[</span><strong>JANE DOE</strong>, being duly sworn, deposes and says:</p>
 <p>1. I reside at 123 Maple Street, Brooklyn, NY 11201.</p>
     <p>2. I am the identical person named as the grantee in the deed recorded in Liber 1234, Page 567.</p>
     <p>3. I make this affidavit to induce Title Insurance Co. to issue a policy free of exception.</p>

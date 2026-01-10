@@ -10,7 +10,7 @@ furtherDerivations: 1
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 1px solid #333; background: #fff; padding: 40px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.1em; color: #1a237e;">SOCIETY OF ACTUARIES (SOA)</div>
+    <div style="font-weight: bold; font-size: 1.1em; color: #1a237e;" verifiable-text="start" data-for="mortality">SOCIETY OF ACTUARIES (SOA)</div>
     <div style="text-align: right; font-size: 0.8em; color: #666;">
       Standard ID: MORT-2026-V1<br>
       March 15, 2026
@@ -20,7 +20,7 @@ furtherDerivations: 1
 <div style="font-size: 0.95em; line-height: 1.6; text-align: justify; color: #333; margin-top: 20px;">
     <p>The Society of Actuaries hereby certifies the following mortality table for use in life insurance valuation and pricing:</p>
 <div style="background: #fdfdfd; padding: 15px; border: 1px solid #eee; margin: 20px 0;">
-      <p><strong>Table Name:</strong> <span verifiable-text="start" data-for="mortality">[</span>2026 Commissioners Standard Ordinary (CSO)</p>
+      <p><strong>Table Name:</strong> <span>[</span>2026 Commissioners Standard Ordinary (CSO)</p>
       <p><strong>Basis:</strong> U.S. General Population (2020-2024 Experience)</p>
       <p><strong>Segments:</strong> Male/Female, Smoker/Non-Smoker, Ultimate/Select</p>
     </div>

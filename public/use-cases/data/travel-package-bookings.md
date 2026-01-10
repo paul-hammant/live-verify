@@ -17,7 +17,7 @@ Fraud is common in the "Secondary Market." Scammers sell fake "Discounted Packag
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Segoe UI', Tahoma, sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="background: #00bcd4; color: #fff; padding: 25px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.5em; letter-spacing: 1px;">ISLAND ESCAPES</div>
+      <div style="font-weight: bold; font-size: 1.5em; letter-spacing: 1px;" verifiable-text="start" data-for="package">ISLAND ESCAPES</div>
       <div style="font-size: 0.8em; opacity: 0.9;">Official All-Inclusive Confirmation</div>
     </div>
     <div style="font-size: 2em;">🏝️</div>
@@ -26,7 +26,7 @@ Fraud is common in the "Secondary Market." Scammers sell fake "Discounted Packag
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px; border-bottom: 2px solid #00bcd4; padding-bottom: 10px;">
       <div>
         <div style="font-size: 0.75em; color: #888; text-transform: uppercase;">Lead Traveler</div>
-        <div style="font-size: 1.2em; font-weight: bold;"><span verifiable-text="start" data-for="package">[</span>SARAH J. JENKINS</div>
+        <div style="font-size: 1.2em; font-weight: bold;"><span>[</span>SARAH J. JENKINS</div>
       </div>
       <div style="text-align: right;">
         <div style="font-size: 0.75em; color: #888; text-transform: uppercase;">Booking Reference</div>

@@ -17,7 +17,7 @@ These policies are critical for **Asset Protection**. Fraud is high-stakes: high
 <div style="max-width: 650px; margin: 24px auto; font-family: sans-serif; border: 2px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="background: #000; color: #fff; padding: 25px; display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid #ce9e00;">
     <div>
-      <div style="font-weight: bold; font-size: 1.4em;">CHUBB PERSONAL RISK</div>
+      <div style="font-weight: bold; font-size: 1.4em;" verifiable-text="start" data-for="umbrella">CHUBB PERSONAL RISK</div>
       <div style="font-size: 0.8em; opacity: 0.9; text-transform: uppercase;">Master Umbrella & Excess Liability</div>
     </div>
     <div style="font-size: 2em;">🛡️</div>
@@ -25,7 +25,7 @@ These policies are critical for **Asset Protection**. Fraud is high-stakes: high
 <div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
-        <strong>Policyholder:</strong> <span verifiable-text="start" data-for="umbrella">[</span>SARAH JANE SMITH<br>
+        <strong>Policyholder:</strong> <span>[</span>SARAH JANE SMITH<br>
         <strong>Address:</strong> 42 Millionaire Row, Greenwich, CT
       </div>
       <div style="text-align: right;">
