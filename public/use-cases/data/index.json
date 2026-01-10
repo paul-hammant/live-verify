@@ -1,6 +1,6 @@
 {
-  "generated": "2026-01-10T08:44:25.455Z",
-  "totalUseCases": 400,
+  "generated": "2026-01-10T08:48:14.192Z",
+  "totalUseCases": 401,
   "totalFurtherDerivations": 396,
   "categories": {
     "Real Estate & Property": 30,
@@ -45,6 +45,7 @@
     "Environmental Permits & Compliance": 4,
     "Agriculture & Food": 7,
     "Bonds & Sureties": 3,
+    "Healthcare & Medical": 1,
     "Insurance & Bonds": 1,
     "Consumer & Commercial Transactions": 1,
     "Vehicle & Transportation": 2
@@ -5046,6 +5047,26 @@
       ]
     },
     {
+      "slug": "patient-safety-incident-reports",
+      "title": "Patient Safety Incident Reports",
+      "category": "Healthcare & Medical",
+      "volume": "Large",
+      "retention": "Permanent (safety records)",
+      "furtherDerivations": 0,
+      "snippet": "Reporting facility, incident category, severity level, patient notification status, report timestamp, anonymized reporter hash, contributing factors, corrective actions, RCA completion status.",
+      "tags": [
+        "patient-safety",
+        "medical-errors",
+        "incident-reports",
+        "near-miss",
+        "never-events",
+        "blameless",
+        "disclosure",
+        "healthcare",
+        "novel"
+      ]
+    },
+    {
       "slug": "payment-processor-merchant-statements",
       "title": "Payment Processor Merchant Statements",
       "category": "Banking & Payments",
@@ -7739,6 +7760,10 @@
       "count": 2
     },
     {
+      "name": "Healthcare & Medical",
+      "count": 1
+    },
+    {
       "name": "Insurance & Bonds",
       "count": 1
     },
@@ -7747,5 +7772,5 @@
       "count": 1
     }
   ],
-  "totalCategories": 45
+  "totalCategories": 46
 }
