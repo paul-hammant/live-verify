@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step 1: Selection - Employment Reference Verification</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: linear-gradient(135deg, #1e3a5f 0%, #2d5a87 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: white;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .step-indicator {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 30px;
+        }
+        .step {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .step.active {
+            background: #3b82f6;
+            box-shadow: 0 0 20px rgba(59,130,246,0.5);
+        }
+        .step.completed {
+            background: #22c55e;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 1.8em;
+        }
+        .subtitle {
+            text-align: center;
+            opacity: 0.8;
+            margin-bottom: 30px;
+        }
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            color: #333;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+        .card h2 {
+            color: #1e3a5f;
+            margin-bottom: 20px;
+            font-size: 1.3em;
+        }
+        .selection-demo {
+            position: relative;
+            background: #f8fafc;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 20px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .selection-demo .selected {
+            background: #bfdbfe;
+            border-radius: 2px;
+        }
+        .cursor {
+            display: inline-block;
+            width: 2px;
+            height: 1.2em;
+            background: #3b82f6;
+            animation: blink 1s infinite;
+            vertical-align: text-bottom;
+        }
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+        .explanation {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f0f9ff;
+            border-left: 4px solid #3b82f6;
+            border-radius: 0 8px 8px 0;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        .nav a {
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+        .nav .prev {
+            background: rgba(255,255,255,0.1);
+            color: white;
+            opacity: 0.5;
+            pointer-events: none;
+        }
+        .nav .next {
+            background: #3b82f6;
+            color: white;
+        }
+        .nav .next:hover {
+            background: #2563eb;
+            transform: translateY(-2px);
+        }
+        .highlight {
+            color: #dc2626;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="step-indicator">
+            <div class="step active">1</div>
+            <div class="step">2</div>
+            <div class="step">3</div>
+            <div class="step">4</div>
+            <div class="step">5</div>
+        </div>
+
+        <h1>Step 1: Selection</h1>
+        <p class="subtitle">User selects the verifiable claim text</p>
+
+        <div class="card">
+            <h2>The user highlights the claim region...</h2>
+
+            <div class="selection-demo">
+                <span class="selected">Acme Corporation
+John D. Smith
+Senior Software Engineer
+March 2020 – October 2025
+Eligible for Rehire
+verify:acme-corp.com/staff</span><span class="cursor"></span>
+            </div>
+
+            <div class="explanation">
+                <strong>What's happening:</strong> The user sees a reference in an email or document and selects the text from the company name through the <code>verify:</code> line. The brackets <span class="highlight">[</span> and <span class="highlight">]</span> visually indicate the verifiable region but aren't included in the selection.
+            </div>
+
+            <div class="explanation" style="background: #fef3c7; border-color: #f59e0b;">
+                <strong>Notice:</strong> The date contains an en-dash (–) not a regular hyphen (-). This is common in formatted documents. The normalization step will handle this.
+            </div>
+        </div>
+
+        <nav class="nav">
+            <a href="#" class="prev">← Previous</a>
+            <a href="employment-references-2.html" class="next">Next: Normalization →</a>
+        </nav>
+    </div>
+</body>
+</html>
