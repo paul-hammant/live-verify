@@ -16,49 +16,34 @@ Large corporations (like Apple or Walmart) require all their vendors to have ver
 
 Fraudsters often "Photoshop" a low-limit policy ($100k) to look like a $10M policy to win big contracts. OCR-to-hash allows a procurement officer to scan the vendor's policy and see the **true limits** on the insurer's domain instantly.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
-  <div style="background: #000; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="cyber-pol">[</span>AIG SPECIALTY INSURANCE</div>
-      <div style="font-size: 0.8em; opacity: 0.8;">CyberEdge&reg; Policy Declarations</div>
-    </div>
-    <div style="text-align: right;">
-      <div style="font-size: 0.8em;">Policy #: CE-99228877-26</div>
-    </div>
-  </div>
-<div style="padding: 30px;">
-    <h2 style="text-align: center; color: #000; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Certificate of Cyber Coverage</h2>
-<div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Named Insured:</strong> Waystar Royco Digital, LLC<br>
-      <strong>Industry:</strong> Media & Technology Services</p>
-<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
-        <tr style="background: #f5f5f5; border-bottom: 2px solid #000;">
-          <th style="text-align: left; padding: 8px;">Coverage Module</th>
-          <th style="text-align: right; padding: 8px;">Limit per Event</th>
-        </tr>
-        <tr>
-          <td style="padding: 8px; border-bottom: 1px solid #eee;">Privacy & Network Security Liability</td>
-          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 10,000,000</td>
-        </tr>
-        <tr>
-          <td style="padding: 8px; border-bottom: 1px solid #eee;">Incident Response & Forensics</td>
-          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 2,000,000</td>
-        </tr>
-        <tr>
-          <td style="padding: 8px; border-bottom: 1px solid #eee;">Cyber Extortion (Ransomware)</td>
-          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 5,000,000</td>
-        </tr>
-      </table>
-<p style="margin-top: 20px;"><strong>Policy Period:</strong> March 01, 2026 to March 01, 2027</p>
-    </div>
-<div style="margin-top: 30px; border: 1px solid #ccc; padding: 10px; font-size: 0.8em; color: #555; background: #fafafa;">
-      <strong>Security Attestation:</strong> Insured warrants that Multi-Factor Authentication (MFA) is active on all remote access points.
-    </div>
-<div data-verify-line="cyber-pol" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
-      title="Demo only: AIG doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:aig.com/cyber/v/CE99228877 <span verifiable-text="end" data-for="cyber-pol">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <span verifiable-text="start" data-for="cyber-pol">[</span>
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;">AIG SPECIALTY INSURANCE
+CyberEdge Policy Declarations
+═══════════════════════════════════════════════════════════════════
+
+                  CERTIFICATE OF CYBER COVERAGE
+
+Policy #: CE-99228877-26
+
+Named Insured: Waystar Royco Digital, LLC
+Industry:      Media & Technology Services
+
+COVERAGE LIMITS
+───────────────────────────────────────────────────────────────────
+Coverage Module                                    Limit per Event
+───────────────────────────────────────────────────────────────────
+Privacy & Network Security Liability                 $ 10,000,000
+Incident Response & Forensics                         $ 2,000,000
+Cyber Extortion (Ransomware)                          $ 5,000,000
+
+Policy Period: March 01, 2026 to March 01, 2027
+
+SECURITY ATTESTATION: Insured warrants that Multi-Factor
+Authentication (MFA) is active on all remote access points.
+
+</pre>
+<span data-verify-line="cyber-pol">verify:aig.com/cyber/v/CE99228877</span> <span verifiable-text="end" data-for="cyber-pol">]</span>
 </div>
 
 ## Data Verified
@@ -82,13 +67,17 @@ Shows the issuer domain (`aetna.com`, `chubb.com`, `aig.com`) and current policy
 
 ## Second-Party Use
 
-The **Insured Business** benefits from verification.
+The **Insured Business** (second party) receives the policy from the insurer (first party), **keeps it**, and may later hand it to third parties for various reasons, or never do so.
 
-**Contractual Compliance:** Proving to a large enterprise client (e.g., Apple or Walmart) that the business has the mandatory $10M cyber liability policy required to be an authorized vendor. A verified certificate prevents the client from rejecting the vendor due to "Paperwork Uncertainty."
+**Personal Record:** They have their own verified copy of the coverage terms. Most of the time, the policy sits in their business records—the verification value is latent, there *if needed*.
 
-**M&A Due Diligence:** Providing verified proof of cyber insurance history to a buyer, ensuring there are no undisclosed breaches or pending claims that could devalue the acquisition.
+**Peace of Mind:** They can confirm at any time that the policy matches what the insurer's system recorded and hasn't been altered.
+
+**Future Optionality:** If a cyber incident occurs or a dispute arises about coverage, they have cryptographic proof of the policy terms ready without needing to contact the insurer.
 
 ## Third-Party Use
+
+The insured business (second party) may hand the verified document to various third parties:
 
 **Enterprise Procurement Teams**
 **Vendor Vetting:** Procurement officers scan the COI/Dec Page of every vendor who has access to their data. "Verified by AIG" ensures the vendor isn't using a "Photoshopped" high-limit policy to hide their actual low-limit coverage.
@@ -107,11 +96,36 @@ The **Insured Business** benefits from verification.
 - **Ghost Policies:** Buying a policy, printing the papers, then cancelling it immediately to bypass vendor security requirements.
 - **Limit Inflation:** Changing a $1M "Incident Response" limit to $10M to win a prestigious tech contract.
 
-**Issuer Types**
+**Issuer Types (First Party)**
 
-**Global Cyber Carriers:** (AIG, Beazley, Chubb, Travelers).
-**Cyber Insurtechs:** (Coalition, At-Bay, Corvus).
-**Managed Security Service Providers (MSSPs):** (Who often co-sign the security warrants).
+- Global Cyber Carriers (AIG, Beazley, Chubb, Travelers)
+- Cyber Insurtechs (Coalition, At-Bay, Corvus)
+- Managed Security Service Providers (MSSPs - who often co-sign the security warrants)
+
+**Privacy Salt:** Required. Cyber insurance policies often contain enumerable values—round dollar coverage limits ($1M, $5M, $10M), standard retention amounts, and publicly known company names. A competitor could feasibly enumerate combinations to reverse-engineer a company's cyber risk profile and coverage strategy, gaining unfair market intelligence. Salt protects these strategic business decisions.
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require cyber insurers to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the insurer, and any subsequent changes to the policy as they happen—which may manifest as a new hash, a status change (cancelled, claim active), or even a 404 (record deleted)
+- Receives structured content/metadata (coverage limits, policy periods, industry codes, security attestations)
+- Does **NOT** receive plaintext (company names, specific system details, breach histories)
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to insured businesses/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Insurer cannot deny issuing the policy or coverage terms
+- **Timestamp proof:** Policy hash existed at a specific time (critical for breach coverage disputes)
+- **Regulatory audit:** State insurance departments can inspect the witness ledger for market conduct
+- **Resilience:** Verification works even if insurer's systems go down or the company exits the market
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Insurer domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
 
 ## Competition vs. Automated Security Scans (Bitsight)
 

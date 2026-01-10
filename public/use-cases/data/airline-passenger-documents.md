@@ -8,45 +8,31 @@ tags: ["airline", "airport", "amex", "ancillary", "audit", "baggage", "business-
 furtherDerivations: 5
 ---
 
-<div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', monospace; border: 1px dashed #999; background: #fff; padding: 20px;">
-  <div style="text-align: center; margin-bottom: 20px;">
-    <strong><span verifiable-text="start" data-for="receipt">[</span>DELTA AIR LINES</strong><br>
-    ELECTRONIC RECEIPT<br>
-    ---------------------------------
-  </div>
-<div style="font-size: 0.9em; line-height: 1.4;">
-    <p><strong>Passenger:</strong> JOHN DOE<br>
-    <strong>Ticket #:</strong> 006-2345678901<br>
-    <strong>Date:</strong> 15MAR26</p>
-<p><strong>Itinerary:</strong><br>
-    DL123 JFK-LHR</p>
-<p><strong>Ancillary Services:</strong></p>
-    <table style="width: 100%; font-size: 1em;">
-      <tr>
-        <td>1st Checked Bag</td>
-        <td style="text-align: right;">$ 35.00</td>
-      </tr>
-      <tr>
-        <td>Comfort+ Upgrade</td>
-        <td style="text-align: right;">$ 79.00</td>
-      </tr>
-      <tr>
-        <td>In-Flight Wi-Fi</td>
-        <td style="text-align: right;">$ 10.00</td>
-      </tr>
-      <tr>
-        <td style="border-top: 1px dashed #000;"><strong>TOTAL PAID</strong></td>
-        <td style="text-align: right; border-top: 1px dashed #000;"><strong>$ 124.00</strong></td>
-      </tr>
-    </table>
-<p><strong>Payment:</strong><br>
-    Visa ending in 1234<br>
-    Auth: 998877</p>
-  </div>
-<div data-verify-line="receipt" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
-      title="Demo only: Airline doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:delta.com/receipts/v/x9y8z7 <span verifiable-text="end" data-for="receipt">]</span>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <span verifiable-text="start" data-for="receipt">[</span>
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;">DELTA AIR LINES
+ELECTRONIC RECEIPT
+═══════════════════════════════════════════════════════════════════
+
+Passenger:   JOHN DOE
+Ticket #:    006-2345678901
+Date:        15MAR26
+
+Itinerary:   DL123 JFK-LHR
+
+ANCILLARY SERVICES
+───────────────────────────────────────────────────────────────────
+1st Checked Bag                                             $ 35.00
+Comfort+ Upgrade                                            $ 79.00
+In-Flight Wi-Fi                                             $ 10.00
+───────────────────────────────────────────────────────────────────
+TOTAL PAID                                                 $ 124.00
+
+Payment:     Visa ending in 1234
+Auth:        998877
+
+</pre>
+  <span data-verify-line="receipt">verify:delta.com/receipts/v/x9y8z7</span> <span verifiable-text="end" data-for="receipt">]</span>
 </div>
 
 ## Data Verified
@@ -70,22 +56,26 @@ Shows the issuer domain (`delta.com`) and the receipt details.
 
 ## Second-Party Use
 
-The **Business Traveler** benefits from verification.
+The **Passenger** (second party) receives the receipt from the airline (first party), **keeps it**, and may later hand it to third parties for various reasons, or never do so.
 
-**Expense Reimbursement:** Proving to their employer that the $79 "Comfort+" charge was for a seat upgrade (policy compliant) and not for an in-flight cocktail (policy violation).
+**Personal Record:** The passenger has their own verified copy of ancillary purchases. Most of the time, the document sits in their email or expense folder—the verification value is latent, there *if needed*.
 
-**Tax Deductions:** Self-employed individuals keeping rock-solid audit trails for business travel expenses.
+**Peace of Mind:** The passenger can confirm at any time that the receipt matches what the airline's system recorded and hasn't been altered since they received it.
+
+**Future Optionality:** If an expense reimbursement is needed or a tax audit arises, the passenger has cryptographic proof ready without needing to contact the airline.
 
 ## Third-Party Use
 
+The passenger (second party) may hand the verified document to various third parties:
+
 **Corporate Expense Platforms (Concur, Expensify)**
-**Automatic Audit:** The platform can scan the receipt hash to confirm validity, flagging duplicates or fakes automatically. "Verified by Delta" adds a trust layer above standard OCR.
+The platform can scan the receipt hash to confirm validity, flagging duplicates or fakes automatically. "Verified by Delta" adds a trust layer above standard OCR.
 
 **Employers / Finance Teams**
-**Fraud Detection:** Employees sometimes use "receipt generator" websites to create fake baggage receipts for $50/trip. Verification stops this immediately because the fake receipt won't exist in the airline's database.
+Employees sometimes use "receipt generator" websites to create fake baggage receipts for $50/trip. Verification stops this immediately because the fake receipt won't exist in the airline's database.
 
 **Tax Authorities (IRS/HMRC)**
-**Audit Compliance:** Verifying that "travel expenses" were actually incurred and not just fabricated for deductions.
+Verifying that "travel expenses" were actually incurred and not just fabricated for deductions.
 
 ## Verification Architecture
 
@@ -95,10 +85,35 @@ The **Business Traveler** benefits from verification.
 - **Double Dipping:** Submitting the same receipt to two different employers (e.g., for a consultant working two jobs).
 - **Refund Fraud:** Buying a refundable ticket/service, printing the receipt, claiming the expense, then cancelling/refunding the service. Verification reveals the "Refunded" status.
 
-**Issuer Types**
+**Issuer Types (First Party)**
 
-**Airlines:** (Delta, AA, United, BA, etc.)
-**Service Providers:** (Gogo Inflight, Clear, LoungeBuddy)
+- Airlines (Delta, AA, United, BA, etc.)
+- Service Providers (Gogo Inflight, Clear, LoungeBuddy)
+
+**Privacy Salt:** Not required. Airline ancillary receipts contain highly unpredictable variables—unique ticket numbers, specific flight numbers with dates, passenger names, transaction authorization codes, and precise timestamps. These elements combined provide sufficient entropy that enumeration attacks are infeasible. Adding salt would provide no additional security benefit.
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require airlines to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the airline, and any subsequent changes to the payload as they happen—which may manifest as a new hash, a status change (refunded, void), or even a 404 (record deleted)
+- Receives structured content/metadata (ticket numbers, flight numbers, service types, amounts)
+- Does **NOT** receive plaintext (passenger names, passport details, payment card numbers)
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to passengers/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Airline cannot deny issuing the receipt
+- **Timestamp proof:** Transaction existed at a specific time
+- **Regulatory audit:** Aviation authorities can inspect the witness ledger for fraud patterns
+- **Resilience:** Verification works even if airline's systems go down
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Airline domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
 
 ## Competition vs. Corporate Cards
 
@@ -219,41 +234,27 @@ The **Passenger** benefits from verification.
 _[Content merged from: airline-refund-confirmations]_
 
 
-<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 30px;">
-  <div style="border-bottom: 2px solid #d32f2f; padding-bottom: 10px; margin-bottom: 20px;">
-    <div style="font-weight: bold; font-size: 1.2em; color: #d32f2f;"><span verifiable-text="start" data-for="refund">[</span>LUFTHANSA</div>
-    <div style="font-size: 0.9em;">Passenger Receipt - REFUND</div>
-  </div>
-<div style="font-size: 0.9em; line-height: 1.5; color: #333;">
-    <p><strong>Passenger:</strong> HANS MULLER<br>
-    <strong>Original Ticket:</strong> 220-1234567890<br>
-    <strong>Refund Document:</strong> 220-9988776655</p>
-<table style="width: 100%; margin-top: 15px; border-collapse: collapse;">
-      <tr>
-        <td style="padding: 5px 0;">Base Fare Refund:</td>
-        <td style="text-align: right;">EUR 2,500.00</td>
-      </tr>
-      <tr>
-        <td style="padding: 5px 0;">Taxes/Fees Refund:</td>
-        <td style="text-align: right;">EUR 450.00</td>
-      </tr>
-      <tr>
-        <td style="padding: 5px 0;">Cancellation Penalty:</td>
-        <td style="text-align: right;">- EUR 200.00</td>
-      </tr>
-      <tr style="border-top: 1px solid #000; font-weight: bold;">
-        <td style="padding: 5px 0;">TOTAL REFUND:</td>
-        <td style="text-align: right;">EUR 2,750.00</td>
-      </tr>
-    </table>
-<p style="margin-top: 20px;"><strong>Form of Payment:</strong><br>
-    Credited to Mastercard ending 5544<br>
-    Date: 20 March 2026</p>
-  </div>
-<div data-verify-line="refund" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
-      title="Demo only: Airline doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:lufthansa.com/refunds/v/x9y8z7 <span verifiable-text="end" data-for="refund">]</span>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="refund">[</span>LUFTHANSA
+Passenger Receipt - REFUND
+═══════════════════════════════════════════════════════════════════
+
+Passenger:        HANS MULLER
+Original Ticket:  220-1234567890
+Refund Document:  220-9988776655
+
+REFUND BREAKDOWN
+───────────────────────────────────────────────────────────────────
+Base Fare Refund:                                       EUR 2,500.00
+Taxes/Fees Refund:                                        EUR 450.00
+Cancellation Penalty:                                   - EUR 200.00
+───────────────────────────────────────────────────────────────────
+TOTAL REFUND:                                           EUR 2,750.00
+
+Form of Payment:  Credited to Mastercard ending 5544
+Date:             20 March 2026
+
+<span data-verify-line="refund">verify:lufthansa.com/refunds/v/x9y8z7</span> <span verifiable-text="end" data-for="refund">]</span></pre>
 </div>
 
 ## Data Verified
@@ -322,46 +323,27 @@ The **Passenger** or **Travel Agent** benefits from verification.
 _[Content merged from: airline-upgrade-confirmations]_
 
 
-<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0;">
-  <div style="background: #000040; color: #fff; padding: 20px; text-align: center;">
-    <h3 style="margin: 0;"><span verifiable-text="start" data-for="upgrade">[</span>UNITED AIRLINES</h3>
-    <div style="font-size: 0.9em; margin-top: 5px;">UPGRADE CONFIRMATION</div>
-  </div>
-<div style="padding: 30px;">
-    <div style="display: flex; justify-content: space-between; margin-bottom: 20px; font-size: 0.9em;">
-      <div>
-        <strong>Confirmation:</strong> L7XK9B<br>
-        <strong>Ticket:</strong> 016-29384756
-      </div>
-      <div style="text-align: right;">
-        <strong>Date:</strong> 12 SEP 2026
-      </div>
-    </div>
-<div style="font-size: 1.1em; line-height: 1.5; color: #333; border-bottom: 1px solid #ccc; padding-bottom: 20px; margin-bottom: 20px;">
-      <p><strong>Passenger:</strong> SARAH CONNOR</p>
-      <p><strong>Flight:</strong> UA 926 (SFO to FRA)<br>
-      <strong>Upgrade:</strong> Economy &rarr; Polaris Business</p>
-<p><strong>Payment Summary:</strong></p>
-      <table style="width: 100%;">
-        <tr>
-          <td>Cash Co-Pay:</td>
-          <td style="text-align: right;">$ 550.00</td>
-        </tr>
-        <tr>
-          <td>Miles Redemeed:</td>
-          <td style="text-align: right;">20,000 Miles</td>
-        </tr>
-      </table>
-    </div>
-<div style="font-size: 0.9em; color: #555;">
-      <strong>Upgrade Status:</strong> CONFIRMED<br>
-      <strong>Seat:</strong> 12A
-    </div>
-<div data-verify-line="upgrade" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
-      title="Demo only: Airline doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:united.com/receipts/v/x9y8z7 <span verifiable-text="end" data-for="upgrade">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="upgrade">[</span>UNITED AIRLINES
+UPGRADE CONFIRMATION
+═══════════════════════════════════════════════════════════════════
+
+Confirmation:  L7XK9B                           Date: 12 SEP 2026
+Ticket:        016-29384756
+
+Passenger:     SARAH CONNOR
+Flight:        UA 926 (SFO to FRA)
+Upgrade:       Economy -> Polaris Business
+
+PAYMENT SUMMARY
+───────────────────────────────────────────────────────────────────
+Cash Co-Pay:                                               $ 550.00
+Miles Redeemed:                                        20,000 Miles
+
+Upgrade Status:  CONFIRMED
+Seat:            12A
+
+<span data-verify-line="upgrade">verify:united.com/receipts/v/x9y8z7</span> <span verifiable-text="end" data-for="upgrade">]</span></pre>
 </div>
 
 ## Data Verified
@@ -429,39 +411,30 @@ The **Business Traveler** benefits from verification.
 _[Content merged from: airport-lounge-access-confirmations]_
 
 
-<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #222; color: #fff; padding: 0;">
-  <div style="background: #d4af37; color: #000; padding: 15px; text-align: center;">
-    <h3 style="margin: 0;"><span verifiable-text="start" data-for="lounge">[</span>PRIORITY PASS</h3>
-    <div style="font-size: 0.9em;">VISIT CONFIRMATION</div>
-  </div>
-<div style="padding: 30px;">
-    <div style="text-align: center; margin-bottom: 20px;">
-      <div style="font-size: 1.2em; font-weight: bold;">The Club at SJC A15</div>
-      <div style="color: #ccc;">San Jose Int'l (SJC)</div>
-    </div>
-<div style="font-size: 0.9em; line-height: 1.6; color: #eee; border-top: 1px dashed #555; border-bottom: 1px dashed #555; padding: 15px 0;">
-      <p><strong>Member:</strong> JAMES BOND<br>
-      <strong>Card Number:</strong> ************1234</p>
-<p><strong>Date:</strong> 10 OCT 2026<br>
-      <strong>Time In:</strong> 14:30 PM</p>
-<p><strong>Guests:</strong> 2<br>
-      <strong>Visit ID:</strong> 9988776655</p>
-<div style="margin-top: 15px; padding: 10px; background: #333; border-radius: 4px;">
-        <div style="display: flex; justify-content: space-between;">
-          <div>Guest Fee (x2):</div>
-          <div>$ 64.00</div>
-        </div>
-        <div style="display: flex; justify-content: space-between; font-weight: bold; margin-top: 5px; color: #d4af37;">
-          <div>TOTAL CHARGED:</div>
-          <div>$ 64.00</div>
-        </div>
-      </div>
-    </div>
-<div data-verify-line="lounge" style="border-top: 1px dashed #555; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #aaa; text-align: center;"
-      title="Demo only: Lounge network doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:prioritypass.com/visits/v/x9y8z7 <span verifiable-text="end" data-for="lounge">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="lounge">[</span>PRIORITY PASS
+VISIT CONFIRMATION
+═══════════════════════════════════════════════════════════════════
+
+Lounge:       The Club at SJC A15
+Location:     San Jose Int'l (SJC)
+
+Member:       JAMES BOND
+Card Number:  ************1234
+
+Date:         10 OCT 2026
+Time In:      14:30 PM
+
+Guests:       2
+Visit ID:     9988776655
+
+CHARGES
+───────────────────────────────────────────────────────────────────
+Guest Fee (x2):                                            $ 64.00
+───────────────────────────────────────────────────────────────────
+TOTAL CHARGED:                                             $ 64.00
+
+<span data-verify-line="lounge">verify:prioritypass.com/visits/v/x9y8z7</span> <span verifiable-text="end" data-for="lounge">]</span></pre>
 </div>
 
 ## Data Verified

@@ -16,52 +16,35 @@ If a restaurant burns down or a factory is hit by a hurricane, the owner doesn't
 
 The result is an **Adjustment Summary**. Because these documents often trigger multimillion-dollar insurance payouts, they are high-value targets for "PDF alteration" by unscrupulous owners or brokers.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #1a237e; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
-  <div style="background: #1a237e; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="bi-claim">[</span>LIBERTY MUTUAL</div>
-      <div style="font-size: 0.8em;">Commercial Property Claims</div>
-    </div>
-    <div style="text-align: right;">
-      <div style="font-size: 0.8em;">Claim #: BI-99228877-26</div>
-    </div>
-  </div>
-<div style="padding: 30px;">
-    <h3 style="margin-top: 0; color: #1a237e; border-bottom: 2px solid #1a237e; padding-bottom: 5px;">BUSINESS INTERRUPTION ADJUSTMENT SUMMARY</h3>
-<div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Insured:</strong> The Grande Cafe & Bistro, LLC<br>
-      <strong>Location:</strong> 123 Main St, New Orleans, LA<br>
-      <strong>Incident Date:</strong> August 29, 2025 (Hurricane Damage)</p>
-<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
-        <tr style="background: #f5f5f5; border-bottom: 1px solid #1a237e;">
-          <th style="text-align: left; padding: 8px;">Calculation Element</th>
-          <th style="text-align: right; padding: 8px;">Adjusted Amount</th>
-        </tr>
-        <tr>
-          <td style="padding: 8px; border-bottom: 1px solid #eee;">Lost Net Income (Period: 60 Days)</td>
-          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 142,500.00</td>
-        </tr>
-        <tr>
-          <td style="padding: 8px; border-bottom: 1px solid #eee;">Continuing Normal Expenses</td>
-          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 45,000.00</td>
-        </tr>
-        <tr>
-          <td style="padding: 8px; border-bottom: 1px solid #eee;">Extra Expense (Equipment Rental)</td>
-          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 12,000.00</td>
-        </tr>
-        <tr style="font-weight: bold; font-size: 1.1em; background: #e8eaf6;">
-          <td style="padding: 8px;">TOTAL ADJUSTED CLAIM:</td>
-          <td style="text-align: right; padding: 8px;">$ 199,500.00</td>
-        </tr>
-      </table>
-<p style="margin-top: 20px;"><strong>Forensic Accountant:</strong> Baker Tilly US, LLP<br>
-      <strong>Status:</strong> FINAL ADJUDICATION</p>
-    </div>
-<div data-verify-line="bi-claim" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
-      title="Demo only: Liberty Mutual doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:libertymutual.com/claims/v/BI992288 <span verifiable-text="end" data-for="bi-claim">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <span verifiable-text="start" data-for="bi-claim">[</span>
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;">LIBERTY MUTUAL
+Commercial Property Claims
+═══════════════════════════════════════════════════════════════════
+
+         BUSINESS INTERRUPTION ADJUSTMENT SUMMARY
+
+Claim #: BI-99228877-26
+
+Insured:       The Grande Cafe & Bistro, LLC
+Location:      123 Main St, New Orleans, LA
+Incident Date: August 29, 2025 (Hurricane Damage)
+
+CALCULATION DETAILS
+───────────────────────────────────────────────────────────────────
+Calculation Element                                  Adjusted Amount
+───────────────────────────────────────────────────────────────────
+Lost Net Income (Period: 60 Days)                       $ 142,500.00
+Continuing Normal Expenses                               $ 45,000.00
+Extra Expense (Equipment Rental)                         $ 12,000.00
+───────────────────────────────────────────────────────────────────
+TOTAL ADJUSTED CLAIM:                                   $ 199,500.00
+
+Forensic Accountant: Baker Tilly US, LLP
+Status: FINAL ADJUDICATION
+
+</pre>
+<span data-verify-line="bi-claim">verify:libertymutual.com/claims/v/BI992288</span> <span verifiable-text="end" data-for="bi-claim">]</span>
 </div>
 
 ## Data Verified
@@ -86,13 +69,17 @@ Shows the issuer domain (the Insurance Carrier) and the claim status.
 
 ## Second-Party Use
 
-The **Business Owner** benefits from verification.
+The **Business Owner** (second party) receives the adjustment summary from the insurance carrier (first party), **keeps it**, and may later hand it to third parties for various reasons, or never do so.
 
-**SBA Loan Applications:** Proving to the Small Business Administration (SBA) that their insurance claim was adjusted at $199,500, which helps in calculating the correct amount for a low-interest disaster loan (preventing "Double Dipping" or "Under-funding").
+**Personal Record:** They have their own verified copy of the claim settlement. Most of the time, the document sits in their business records—the verification value is latent, there *if needed*.
 
-**Lienholder Notice:** Proving to a landlord or equipment lessor that the insurance company is paying for "Continuing Expenses," ensuring the business isn't evicted while they wait for repairs to finish.
+**Peace of Mind:** They can confirm at any time that the settlement amount matches what the carrier's system recorded and hasn't been altered.
+
+**Future Optionality:** If questions arise—whether from lenders, tax authorities, or potential buyers—they have cryptographic proof of the settlement ready without needing to contact the insurance company.
 
 ## Third-Party Use
+
+The business owner (second party) may hand the verified document to various third parties:
 
 **Lenders (Banks)**
 **Cash Flow Analysis:** If a business is applying for a line of credit post-disaster, the bank needs to see verified proof of the insurance recovery amount to model the company's future liquidity.
@@ -111,11 +98,36 @@ The **Business Owner** benefits from verification.
 - **Fabricated Expenses:** Creating fake invoices for "Extra Equipment Rental" to get more cash from the insurer.
 - **Report Forgery:** Shady adjusters/accountants creating fake "Adjustment Summaries" to trick lenders into thinking a massive insurance payout is coming.
 
-**Issuer Types**
+**Issuer Types (First Party)**
 
-**Commercial Insurance Carriers:** (Liberty Mutual, Chubb, AIG, Travelers).
-**Forensic Accounting Firms:** (Baker Tilly, Meaden & Moore).
-**Independent Adjusting Firms.**
+- Commercial Insurance Carriers (Liberty Mutual, Chubb, AIG, Travelers)
+- Forensic Accounting Firms (Baker Tilly, Meaden & Moore)
+- Independent Adjusting Firms
+
+**Privacy Salt:** Not required. Business interruption adjustment summaries contain many unpredictable variables: unique claim IDs, business names, specific incident dates and locations, exact calculated amounts (lost income, continuing expenses, extra expenses), forensic accountant names, and unique adjustment periods. The combination of these claim-specific details creates sufficient entropy to prevent hash enumeration attacks.
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require insurance carriers to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the carrier, and any subsequent changes to the claim as they happen—which may manifest as a new hash, a status change (supplemental, in-litigation, paid), or even a 404 (record deleted)
+- Receives structured content/metadata (claim amounts, calculation breakdowns, incident dates, claim numbers)
+- Does **NOT** receive plaintext (business financial details, forensic accountant working papers)
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to business owners/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Carrier cannot deny issuing the adjustment
+- **Timestamp proof:** Claim settlement hash existed at a specific time
+- **Regulatory audit:** State insurance departments can inspect the witness ledger for claims handling practices
+- **Resilience:** Verification works even if carrier's systems go down
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Carrier domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
 
 ## Competition vs. Forensic Audits
 

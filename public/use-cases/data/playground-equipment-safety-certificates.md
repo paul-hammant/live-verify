@@ -14,58 +14,31 @@ In schools and public parks, every slide, swing, and climbing frame is a potenti
 
 These documents are the "Shield of Public Trust." Fraud is high-stakes: un-certified vendors or negligent landlords often "pencil whip" a safety check, creating fake PDFs for equipment that hasn't been tested in years to avoid the high cost of surfacing replacement. In high-risk zones, a fake certificate can lead to preventable traumatic injuries. Verified hashes bind the **Equipment Serial Numbers, Surface Test Results (HIC), and Inspector ID** to the city's or the inspector's domain (e.g., `parks.city.gov` or `nrpa.org`).
 
-<div style="max-width: 500px; margin: 24px auto; font-family: sans-serif; border: 3px solid #ff9800; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
-  <div style="background: #ff9800; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
-    <div style="font-size: 1.8em; margin-right: 15px;">🧒</div>
-    <div style="text-align: right;">
-      <div style="font-weight: bold; font-size: 1.1em; letter-spacing: 1px;"><span verifiable-text="start" data-for="play">[</span>PLAYGROUND SAFETY PASS</div>
-      <div style="font-size: 0.75em; font-weight: bold; opacity: 0.9;">CITY OF SPRINGFIELD • PARKS & REC</div>
-    </div>
-  </div>
-<div style="padding: 25px; background: #fff;">
-    <div style="border-bottom: 1px solid #eee; padding-bottom: 10px; margin-bottom: 15px;">
-      <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Location / Site</div>
-      <div style="font-size: 1.2em; font-weight: bold; color: #333;">ZILKER PARK (SOUTH AREA)</div>
-<div style="font-size: 0.9em; color: #333; margin-top: 5px;">
-        Structure ID: #992288-CLIMB ("The Castle")
-      </div>
-    </div>
-<div style="background: #fff8e1; border: 1px solid #ffe082; padding: 15px; border-radius: 4px; margin-bottom: 20px;">
-      <h4 style="margin-top: 0; color: #f57c00; font-size: 0.85em; text-transform: uppercase; border-bottom: 1px solid #ffe082; padding-bottom: 5px;">VERIFIED SAFETY AUDIT</h4>
-      <table style="width: 100%; font-size: 0.9em; line-height: 1.6;">
-        <tr>
-          <td><strong>ASTM F1487 Compliance:</strong></td>
-          <td style="text-align: right; font-weight: bold; color: #2e7d32;">PASS</td>
-        </tr>
-        <tr>
-          <td><strong>Surface HIC (Impact):</strong></td>
-          <td style="text-align: right; font-weight: bold;">842 (&lt; 1000)</td>
-        </tr>
-        <tr>
-          <td><strong>Entrapment Check:</strong></td>
-          <td style="text-align: right;">Verified 15-MAR</td>
-        </tr>
-      </table>
-    </div>
-<div style="display: flex; justify-content: space-between; align-items: flex-end; font-size: 0.8em;">
-      <div>
-        <div style="border-top: 1px solid #000; width: 180px; padding-top: 5px; font-style: italic;">Sarah J. Jenkins, CPSI</div>
-        <div style="color: #666;">CPSI License: #992288 • Exp: 2027</div>
-      </div>
-      <div style="text-align: right; font-size: 0.7em; color: #888;">
-        Inspection Date: 15 MAR 2026
-      </div>
-    </div>
-  </div>
-<div style="padding: 15px 20px 20px 20px; background: #fff; border-top: 1px dashed #bbb; text-align: center;">
-    <div data-verify-line="play" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #f57c00; font-weight: bold;"
-      title="Demo only: Municipalities don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:austin-parks.gov/v/ZILKER9922 <span verifiable-text="end" data-for="play">]</span>
-    </div>
-    <div style="font-size: 0.65em; color: #999; margin-top: 8px; font-style: italic;">
-      Scan to verify current safety rating, view surfacing depth history, and report a defect.
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <span verifiable-text="start" data-for="play">[</span>
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;">CITY OF SPRINGFIELD - PARKS & REC
+═══════════════════════════════════════════════════════════════════
+
+                      PLAYGROUND SAFETY PASS
+
+Location:      ZILKER PARK (SOUTH AREA)
+Structure ID:  #992288-CLIMB ("The Castle")
+
+VERIFIED SAFETY AUDIT
+───────────────────────────────────────────────────────────────────
+ASTM F1487 Compliance:                                          PASS
+Surface HIC (Impact):                                  842 (< 1000)
+Entrapment Check:                                    Verified 15-MAR
+
+───────────────────────────────────────────────────────────────────
+________________________
+Sarah J. Jenkins, CPSI
+CPSI License: #992288 - Exp: 2027
+
+Inspection Date: 15 MAR 2026
+
+</pre>
+<span data-verify-line="play">verify:austin-parks.gov/v/ZILKER9922</span> <span verifiable-text="end" data-for="play">]</span>
 </div>
 
 ## Data Verified
@@ -90,13 +63,17 @@ Shows the issuer domain (`parks.city.gov`, `nrpa.org`, `cpsc.gov`) and the equip
 
 ## Second-Party Use
 
-The **Park Director / School Principal** benefits from verification.
+The **Park Director / School Principal** (second party) receives the safety certificate from the inspector or parks department (first party), **keeps it**, and may later hand it to third parties for various reasons, or never do so.
 
-**Liability Protection:** If a child is injured on a slide, the school can provide the verified hash of their "Annual Safety Audit." "Verified by Parks & Rec" ensures the insurer and the court that the school met the "Duty of Care" required by law, defending against millions in "Gross Negligence" claims.
+**Personal Record:** They have their own verified copy of the safety audit results. Most of the time, the document sits in their compliance files—the verification value is latent, there *if needed*.
 
-**Maintenance Audit:** The principal can scan the tags left by their maintenance sub-contractors. Verification ensures the contractor actually performed the "Head Probe" tests and didn't just sign a piece of paper in their truck.
+**Peace of Mind:** They can confirm at any time that the certificate matches what the inspector's system recorded and hasn't been altered.
+
+**Future Optionality:** If a child is injured or an inspection is challenged, they have cryptographic proof ready without needing to contact the inspector or city department.
 
 ## Third-Party Use
+
+The park director / school principal (second party) may hand the verified document to various third parties:
 
 **Parents / PTA**
 **Public Safety Audit:** A concerned parent can scan the placard on the fence. If the hash returns **"EXPIRED"** or **"SURFACE LOW,"** they have the verified evidence needed to demand immediate maintenance before an injury occurs.
@@ -115,13 +92,36 @@ The **Park Director / School Principal** benefits from verification.
 - **Surface Faking:** Editing a failed HIC score of "1200" (Unsafe) to "800" (Safe) on a PDF report.
 - **Logo Mimicry:** Using a CPSI's branding on a fake certificate for equipment that was never inspected.
 
-**Issuer Types**
+**Issuer Types (First Party)**
 
-**Municipal Parks Departments.**
-**National Recreation and Park Association (NRPA).**
-**Private Playground Safety Consulting Firms.**
+- Municipal Parks Departments
+- National Recreation and Park Association (NRPA)
+- Private Playground Safety Consulting Firms
 
-**Privacy Salt:** Low. Playground safety data is a matter of public record. However, individual inspector home contact info should be salted to protect professional privacy.
+**Privacy Salt:** Not required. Playground safety certificates contain many unpredictable variables that combine to create high entropy: unique structure IDs, specific park locations, inspector license numbers, exact HIC test scores (with decimal precision), and inspection dates. Playground safety data is a matter of public record, and the combination of these unique identifiers makes brute-force enumeration infeasible without salt.
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require parks departments and inspection firms to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the inspector, and any subsequent changes to the payload as they happen—which may manifest as a new hash, a status change (closed, red tagged, expired), or even a 404 (record deleted)
+- Receives structured content/metadata (structure IDs, HIC scores, compliance statuses, inspection dates)
+- Does **NOT** receive plaintext (inspector home addresses, internal maintenance notes)
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to park directors/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Inspector cannot deny issuing the safety certificate
+- **Timestamp proof:** Hash existed at a specific time
+- **Regulatory audit:** CPSC can inspect the witness ledger for safety compliance patterns
+- **Resilience:** Verification works even if city's systems go down
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Parks department domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
 
 ## Rationale
 

@@ -16,48 +16,33 @@ If a small supplier (like a parts maker) sells $100,000 of goods to a big buyer 
 
 Suppliers use these **Early Payment Confirmations** to prove their cash flow to local banks. Verified hashes prevent "Double Financing"—where a supplier sells the same invoice to a bank *and* takes the early discount from the buyer.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <div style="background: #002d62; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="discount">[</span>C2FO DYNAMIC DISCOUNTING</div>
-      <div style="font-size: 0.8em; opacity: 0.8;">Working Capital Verification</div>
-    </div>
-    <div style="text-align: right;">
-      <div style="font-size: 0.8em;">Market ID: C2-998877</div>
-    </div>
-  </div>
-<div style="padding: 25px;">
-    <h3 style="margin-top: 0; color: #002d62; border-bottom: 2px solid #002d62; padding-bottom: 5px;">EARLY PAYMENT CONFIRMATION</h3>
-<div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Supplier:</strong> Apex Manufacturing, Ltd.<br>
-      <strong>Buyer:</strong> Global Retail Hub, Corp.</p>
-<div style="background: #f0f4f8; padding: 15px; border: 1px solid #d1d9e6; margin: 15px 0;">
-        <table style="width: 100%; font-size: 0.95em;">
-          <tr>
-            <td><strong>Invoice Total:</strong></td>
-            <td style="text-align: right;">$ 100,000.00</td>
-          </tr>
-          <tr>
-            <td><strong>Early Payment Discount:</strong></td>
-            <td style="text-align: right;">-$ 1,500.00 (1.5%)</td>
-          </tr>
-          <tr>
-            <td><strong>Net Payment Amount:</strong></td>
-            <td style="text-align: right; font-weight: bold;">$ 98,500.00</td>
-          </tr>
-        </table>
-      </div>
-<p><strong>Payment Date:</strong> March 15, 2026 (Net 5 Days)<br>
-      <strong>Original Due Date:</strong> April 30, 2026 (Net 45 Days)</p>
-    </div>
-<div style="margin-top: 30px; font-size: 0.8em; color: #777; font-style: italic; text-align: center;">
-      This confirmation is a verified extract of the C2FO market clearing.
-    </div>
-<div data-verify-line="discount" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
-      title="Demo only: C2FO doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:c2fo.com/confirm/v/C2-998877 <span verifiable-text="end" data-for="discount">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <span verifiable-text="start" data-for="discount">[</span>
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;">C2FO DYNAMIC DISCOUNTING
+Working Capital Verification
+═══════════════════════════════════════════════════════════════════
+
+                   EARLY PAYMENT CONFIRMATION
+
+Market ID: C2-998877
+
+Supplier: Apex Manufacturing, Ltd.
+Buyer:    Global Retail Hub, Corp.
+
+PAYMENT DETAILS
+───────────────────────────────────────────────────────────────────
+Invoice Total:                                        $ 100,000.00
+Early Payment Discount:                     -$ 1,500.00 (1.5%)
+───────────────────────────────────────────────────────────────────
+Net Payment Amount:                                    $ 98,500.00
+
+Payment Date:      March 15, 2026 (Net 5 Days)
+Original Due Date: April 30, 2026 (Net 45 Days)
+
+This confirmation is a verified extract of the C2FO market clearing.
+
+</pre>
+<span data-verify-line="discount">verify:c2fo.com/confirm/v/C2-998877</span> <span verifiable-text="end" data-for="discount">]</span>
 </div>
 
 ## Data Verified
@@ -81,13 +66,17 @@ Shows the issuer domain (`c2fo.com`, `taulia.com`, `kyriba.com`) and transaction
 
 ## Second-Party Use
 
-The **Supplier (Vendor)** benefits from verification.
+The **Supplier (Vendor)** (second party) receives the early payment confirmation from the discounting platform (first party), **keeps it**, and may later hand it to third parties for various reasons, or never do so.
 
-**Line of Credit Extension:** Proving to their local bank that they have $1M in "Verified Early Payments" coming next week from a high-credit-rating buyer (e.g., Walmart). This allows the supplier to get a larger, cheaper line of credit because the "Accounts Receivable" are verified as "Liquid."
+**Personal Record:** They have their own verified copy of the payment terms. Most of the time, the confirmation sits in their financial records—the verification value is latent, there *if needed*.
 
-**Audit Integrity:** Proving to their own tax auditors why they accepted 98.5% of an invoice total, justifying the "Finance Expense" of the discount.
+**Peace of Mind:** They can confirm at any time that the confirmation matches what the platform's system recorded and hasn't been altered.
+
+**Future Optionality:** If a dispute arises about payment timing, discount rates, or double-financing allegations, they have cryptographic proof ready without needing to contact the platform.
 
 ## Third-Party Use
+
+The supplier (second party) may hand the verified document to various third parties:
 
 **Lenders (Asset-Based Lenders)**
 **Collateral Vetting:** Verifying that the AR (Accounts Receivable) listed on the balance sheet hasn't already been "Discounted" or "Factored." OCR-to-hash ensures the lender isn't lending against 100% of an invoice that the supplier already agreed to take 98% for.
@@ -106,11 +95,36 @@ The **Supplier (Vendor)** benefits from verification.
 - **Amount Tampering:** Editing a 1% discount to read 5% to hide internal accounting errors.
 - **Date Alteration:** Changing the "Original Due Date" to hide that the company is taking early payments on debt that was already overdue.
 
-**Issuer Types**
+**Issuer Types (First Party)**
 
-**Dynamic Discounting Platforms:** (C2FO, Taulia, Tradeshift).
-**ERP Systems:** (SAP, Oracle - hosting the discounting logic).
-**Supply Chain Finance Banks.**
+- Dynamic Discounting Platforms (C2FO, Taulia, Tradeshift)
+- ERP Systems (SAP, Oracle - hosting the discounting logic)
+- Supply Chain Finance Banks
+
+**Privacy Salt:** Required. Dynamic discounting confirmations often contain enumerable values—round dollar amounts ($50K, $100K, $500K), standard discount percentages (1%, 1.5%, 2%), and publicly known buyer-supplier relationships. A competitor could feasibly enumerate combinations to reverse-engineer a supplier's cash flow strategy and discount acceptance thresholds, gaining unfair market intelligence. Salt protects these sensitive financial strategies.
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require discounting platforms to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the platform, and any subsequent changes to the transaction as they happen—which may manifest as a new hash, a status change (cleared, voided), or even a 404 (record deleted)
+- Receives structured content/metadata (invoice amounts, discount percentages, payment dates, platform IDs)
+- Does **NOT** receive plaintext (supplier names, buyer names, specific invoice details)
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to suppliers/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Platform cannot deny processing the discount transaction
+- **Timestamp proof:** Confirmation hash existed at a specific time (critical for double-financing disputes)
+- **Regulatory audit:** Banking regulators can inspect the witness ledger for market manipulation
+- **Resilience:** Verification works even if platform's systems go down or the company exits the market
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Platform domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
 
 ## Competition vs. ERP Logins
 

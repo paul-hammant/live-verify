@@ -14,57 +14,32 @@ In professional and collegiate sports (Baseball, Football, Soccer), a **Scouting
 
 These documents are the "Resumes" of the sports world. They determine who gets a $1M pro contract or a full-ride college scholarship. Fraud is common: parents or agents often "edit" a report to turn a 90 MPH fastball into a 95 MPH one, or to hide a "Character Red Flag" found by a scout. Verified hashes bind the **Player's Name, Core Stats, and Scout's Credentials** to the team's or the combine's domain (e.g., `mlb.com`, `nflcombine.com`, or `imgacademy.com`).
 
-<div style="max-width: 600px; margin: 24px auto; font-family: 'Arial Black', Arial, sans-serif; border: 4px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-  <div style="background: #d32f2f; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;"><span verifiable-text="start" data-for="scout">[</span>NATIONAL SCOUTING BUREAU</div>
-      <div style="font-size: 0.8em; opacity: 0.9;">Official Prospect Evaluation</div>
-    </div>
-    <div style="text-align: right;">
-      <div style="font-weight: bold; font-size: 1.1em;">RATING: 80</div>
-      <div style="font-size: 0.7em;">ELITE PROSPECT</div>
-    </div>
-  </div>
-<div style="padding: 25px;">
-    <div style="display: flex; margin-bottom: 25px; border-bottom: 2px solid #eee; padding-bottom: 15px;">
-      <div style="width: 100px; height: 120px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #999; font-size: 0.7em; text-align: center; margin-right: 20px;">[PLAYER PHOTO]</div>
-      <div style="flex-grow: 1;">
-        <div style="font-size: 0.8em; color: #888; text-transform: uppercase;">Athlete Name</div>
-        <div style="font-size: 1.4em; font-weight: bold; color: #000;">SARAH "THE JET" SMITH</div>
-        <div style="font-size: 0.9em; margin-top: 5px;"><strong>Pos:</strong> Striker (Soccer) • <strong>Class:</strong> 2026</div>
-        <div style="font-size: 0.9em;"><strong>Org:</strong> Unseen University Academy</div>
-      </div>
-    </div>
-<div style="background: #f9f9f9; padding: 15px; border: 1px solid #ddd; margin-bottom: 20px;">
-      <h4 style="margin-top: 0; font-size: 0.9em; border-bottom: 1px solid #ccc; padding-bottom: 5px; color: #d32f2f;">VERIFIED PERFORMANCE METRICS</h4>
-      <table style="width: 100%; font-size: 0.95em;">
-        <tr>
-          <td><strong>40-Yard Dash:</strong></td>
-          <td style="text-align: right; font-weight: bold;">4.42s</td>
-        </tr>
-        <tr>
-          <td><strong>Vertical Leap:</strong></td>
-          <td style="text-align: right; font-weight: bold;">38.5"</td>
-        </tr>
-        <tr>
-          <td><strong>Max Velocity:</strong></td>
-          <td style="text-align: right; font-weight: bold;">92 MPH</td>
-        </tr>
-      </table>
-    </div>
-<div style="font-size: 0.8em; line-height: 1.4; color: #555; font-style: italic;">
-      <strong>Scout Notes:</strong> Elite explosive power. Exceptional field vision. Character Grade: A. Recommended for Tier-1 recruitment.
-    </div>
-  </div>
-<div style="padding: 20px; background: #fff; border-top: 1px solid #eee; text-align: center;">
-    <div data-verify-line="scout" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
-      title="Demo only: Scouting bureaus don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:nationscout.com/v/SMITH-992288 <span verifiable-text="end" data-for="scout">]</span>
-    </div>
-    <div style="font-size: 0.7em; color: #999; margin-top: 10px;">
-      Scan to verify athletic performance data and scout certification status.
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <span verifiable-text="start" data-for="scout">[</span>
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;">NATIONAL SCOUTING BUREAU
+Official Prospect Evaluation
+═══════════════════════════════════════════════════════════════════
+
+RATING: 80 - ELITE PROSPECT
+
+ATHLETE PROFILE
+───────────────────────────────────────────────────────────────────
+Name:      SARAH "THE JET" SMITH
+Position:  Striker (Soccer)
+Class:     2026
+Org:       Unseen University Academy
+
+VERIFIED PERFORMANCE METRICS
+───────────────────────────────────────────────────────────────────
+40-Yard Dash:                                                 4.42s
+Vertical Leap:                                                38.5"
+Max Velocity:                                                92 MPH
+
+Scout Notes: Elite explosive power. Exceptional field vision.
+Character Grade: A. Recommended for Tier-1 recruitment.
+
+</pre>
+<span data-verify-line="scout">verify:nationscout.com/v/SMITH-992288</span> <span verifiable-text="end" data-for="scout">]</span>
 </div>
 
 ## Data Verified
@@ -89,22 +64,29 @@ Shows the issuer domain (`ncaa.org`, `nfl.com`, `PerfectGame.org`) and the athle
 
 ## Second-Party Use
 
-The **Athlete / Prospect** benefits from verification.
+The **Athlete** (second party) receives the scouting report from the scouting bureau or combine (first party), **keeps it**, and may later hand it to third parties for various reasons, or never do so.
 
-**College Recruiting:** A high school athlete can include a verified "Performance Hash" in their emails to college coaches. The coach can instantly see **"VERIFIED 4.4s DASH - NFL COMBINE"** on their phone, moving that player to the top of the recruitment list over players with un-verified self-reported stats.
+**Personal Record:** The athlete has their own verified copy of their performance metrics. Most of the time, the document sits in their portfolio—the verification value is latent, there *if needed*.
 
-**Scholarship Integrity:** Proving to a university that their "Elite" status is a verified fact, protecting the athlete from being "De-committed" due to unfounded rumors about their speed or character.
+**Peace of Mind:** The athlete can confirm at any time that the report matches what the scouting organization's system recorded and hasn't been altered.
+
+**Future Optionality:** If a dispute arises—whether about recruitment offers, contract negotiations, or eligibility—the athlete has cryptographic proof ready without needing to contact the scouting bureau.
 
 ## Third-Party Use
 
-**College Coaches / Pro GMs**
-**Integrity Filter:** Thousands of parents send "highlight reels" and "stats." OCR-to-hash allows the front office to instantly filter for only verified, professionally-scouted talent, saving thousands of hours in manual vetting.
+The athlete (second party) may hand the verified document to various third parties:
 
-**Sports Agents / Agencies**
-**Market Valuation:** Using verified stats to negotiate higher endorsement deals for their clients. "Verified by MLB Scouting Bureau" provides the brand (e.g., Nike) with the proof needed to sign a high-value contract.
+**College Coaches / Recruiters (Recruiting)**
+A high school athlete includes a verified "Performance Hash" in their emails to college coaches. The coach can instantly see **"VERIFIED 4.4s DASH - NFL COMBINE"** on their phone, moving that player to the top of the recruitment list over players with unverified self-reported stats.
 
-**Anti-Doping & Integrity Units**
-**Anomaly Detection:** Tracking verified physical growth patterns. If an athlete's "Verified Strength" jumps 50% in 2 months, it triggers an immediate investigation into PED use.
+**Sports Agents / Agencies (Market Valuation)**
+When negotiating endorsement deals, the agent provides verified stats to brands. "Verified by MLB Scouting Bureau" gives the brand (e.g., Nike) the proof needed to sign a high-value contract.
+
+**Pro Team GMs / Front Offices (Draft Evaluation)**
+During the draft process, teams receive verified reports to filter for authentic, professionally-scouted talent, saving thousands of hours in manual vetting compared to unverified "highlight reels" from parents.
+
+**Anti-Doping & Integrity Units (Anomaly Detection)**
+League integrity officers track verified physical growth patterns. If an athlete's "Verified Strength" jumps 50% in 2 months, it triggers an immediate investigation into PED use.
 
 ## Verification Architecture
 
@@ -114,13 +96,36 @@ The **Athlete / Prospect** benefits from verification.
 - **Age Fraud:** Changing a player's birth year on a scouting report to make them appear more "Advanced" for their age.
 - **Scout Impersonation:** Creating a fake report from a famous scout to trick a small pro league in a foreign country.
 
-**Issuer Types**
+**Issuer Types (First Party)**
 
-**National Scouting Bureaus.**
-**Standardized Combines (NFL, NBA).**
-**Elite Athletic Academies.**
+- National Scouting Bureaus
+- Standardized Combines (NFL, NBA)
+- Elite Athletic Academies
 
-**Privacy Salt:** Critical. Athlete health data and minor PII are sensitive. The hash must be salted to prevent "Prospect Harvesting" by rival teams or data brokers.
+**Privacy Salt:** Required. Athlete health data and minor PII are sensitive. While each report contains unique combinations of player names, precise performance metrics (e.g., 4.42s dash, 38.5" vertical), and scout evaluations that provide significant entropy, the vulnerability of minors and the risk that rival teams could use enumeration for "prospect harvesting" means salt is essential. Salt protects young athletes from being tracked or targeted by data brokers and predatory agents.
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require scouting organizations to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the scouting bureau, and any subsequent changes to the report as they happen—which may manifest as a new hash, a status change (suspended, recanted), or even a 404 (record deleted)
+- Receives structured content/metadata (performance metrics, test dates, ratings, scouting org IDs)
+- Does **NOT** receive plaintext (athlete names, addresses, medical details)
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to athletes/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Scouting organization cannot deny issuing the evaluation
+- **Timestamp proof:** Report existed at a specific time (critical for eligibility and age-fraud prevention)
+- **Regulatory audit:** Athletic commissions can inspect the witness ledger for minor protection and anti-fraud compliance
+- **Resilience:** Verification works even if scouting organization's systems go down or the organization dissolves
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Scouting organization domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
 
 ## Rationale
 

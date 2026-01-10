@@ -16,50 +16,33 @@ This is your "Ticket" to meet the guide at a specific time and place (often a re
 
 Small tour operators often don't have real-time computers in the field. They rely on looking at your paper or PDF voucher. Fraud is common: people often "Photoshop" a fake voucher to join an expensive tour for free. Verified hashes allow the guide to scan your paper and see "PAID" on the operator's domain instantly, even in remote areas.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-  <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
-    <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="tour">[</span>SAHARA EXPEDITIONS, LTD.</div>
-    <div style="font-size: 0.8em;">Official Booking Confirmation</div>
-  </div>
-<div style="font-size: 0.9em; line-height: 1.4;">
-    <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
-      <div>
-        <strong>Participant:</strong> <strong>SARAH JANE SMITH</strong><br>
-        <strong>Booking #:</strong> SE-99228877
-      </div>
-      <div style="text-align: right;">
-        <strong>Date:</strong> 15 MAR 2026<br>
-        <strong>Status:</strong> PAID & CONFIRMED
-      </div>
-    </div>
-<div style="background: #f9f9f9; border: 1px solid #eee; padding: 15px; margin-bottom: 20px;">
-      <strong>TOUR DETAILS:</strong><br>
-      Activity: Luxury Stargazing Desert Trek<br>
-      Meeting Point: Merzouga Gateway, Gate 4<br>
-      Time: 18:00 PM (Local Time)
-    </div>
-<table style="width: 100%; border-collapse: collapse; margin-bottom: 10px;">
-      <tr>
-        <td>Adult Admission (x2):</td>
-        <td style="text-align: right;">$ 450.00</td>
-      </tr>
-      <tr>
-        <td>Private Guide Surcharge:</td>
-        <td style="text-align: right;">$ 150.00</td>
-      </tr>
-      <tr style="border-top: 1px solid #000; font-weight: bold;">
-        <td>TOTAL PAID:</td>
-        <td style="text-align: right;">$ 600.00</td>
-      </tr>
-    </table>
-<div style="margin-top: 20px; font-size: 0.8em; color: #555; font-style: italic;">
-      Please present this verified voucher to the lead guide at the meeting point.
-    </div>
-<div data-verify-line="tour" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
-      title="Demo only: Tour operator doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:sahara-expeditions.com/v/SE99228877 <span verifiable-text="end" data-for="tour">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <span verifiable-text="start" data-for="tour">[</span>
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;">SAHARA EXPEDITIONS, LTD.
+Official Booking Confirmation
+═══════════════════════════════════════════════════════════════════
+
+Participant: SARAH JANE SMITH            Date: 15 MAR 2026
+Booking #:   SE-99228877                 Status: PAID & CONFIRMED
+
+TOUR DETAILS
+───────────────────────────────────────────────────────────────────
+Activity:      Luxury Stargazing Desert Trek
+Meeting Point: Merzouga Gateway, Gate 4
+Time:          18:00 PM (Local Time)
+
+PAYMENT SUMMARY
+───────────────────────────────────────────────────────────────────
+Adult Admission (x2):                                     $ 450.00
+Private Guide Surcharge:                                  $ 150.00
+───────────────────────────────────────────────────────────────────
+TOTAL PAID:                                               $ 600.00
+
+Please present this verified voucher to the lead guide at the
+meeting point.
+
+</pre>
+<span data-verify-line="tour">verify:sahara-expeditions.com/v/SE99228877</span> <span verifiable-text="end" data-for="tour">]</span>
 </div>
 
 ## Data Verified
@@ -84,13 +67,17 @@ Shows the issuer domain (`sahara-expeditions.com`, `viator.com`, `getyourguide.c
 
 ## Second-Party Use
 
-The **Tourist (Traveler)** benefits from verification.
+The **Traveler** (second party) receives the tour voucher from the operator (first party), **keeps it**, and may later hand it to third parties for various reasons, or never do so.
 
-**Expense Reimbursement:** Proving to an employer or a "Travel & Expense" team that the $600 "Desert Trek" was a verified business networking event and not a fabricated "Phantom Charge." Verification removes the risk of "JPEG Editing" fraud in expense reports.
+**Personal Record:** They have their own verified copy of the booking confirmation. Most of the time, the voucher sits in their travel documents—the verification value is latent, there *if needed*.
 
-**Refund Assurance:** If a tour is cancelled due to weather, the traveler has a verified, non-alterable proof of the original payment amount to provide to their travel insurer.
+**Peace of Mind:** They can confirm at any time that the booking matches what the operator's system recorded and hasn't been cancelled or altered.
+
+**Future Optionality:** If a dispute arises—whether about cancellations, refunds, or service quality—they have cryptographic proof ready without needing to contact the operator.
 
 ## Third-Party Use
+
+The traveler (second party) may hand the verified document to various third parties:
 
 **Tour Guides / Field Staff**
 **Intake Integrity:** At a remote meeting point, the guide scans the traveler's voucher. "Verified by Sahara-Expeditions.com" ensures the traveler didn't just "Photoshop" a fake voucher to join a $600 tour for free. This is crucial for small operators who don't have expensive real-time API integrations in the field.
@@ -109,11 +96,36 @@ The **Tourist (Traveler)** benefits from verification.
 - **Amount Tampering:** Editing a $50 "Basic Tour" receipt to read $500 to get a higher reimbursement from a company or insurer.
 - **Fabricated Operators:** Creating fake tour companies with real-looking websites to sell "Vapor-Tours" to unsuspecting tourists.
 
-**Issuer Types**
+**Issuer Types (First Party)**
 
-**Local Tour Operators:** (Hosting on their own domain).
-**Global OTAs:** (Viator, GetYourGuide, Klook).
-**Hotel Concierge Desks.**
+- Local Tour Operators (Hosting on their own domain)
+- Global OTAs (Viator, GetYourGuide, Klook)
+- Hotel Concierge Desks
+
+**Privacy Salt:** Not required. Tour vouchers contain many unpredictable variables that combine to create sufficient entropy—booking reference ID (unique alphanumeric), participant name (non-enumerable), specific meeting point addresses, precise date/time combinations, itemized pricing with surcharges, and operator-specific lot numbers. The combination makes reverse-engineering a specific booking computationally infeasible without already knowing the details.
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require tour operators to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the operator, and any subsequent changes to the payload as they happen—which may manifest as a new hash, a status change (confirmed to cancelled), or even a 404 (record deleted)
+- Receives structured content/metadata (booking dates, activity types, payment amounts, meeting locations)
+- Does **NOT** receive plaintext (participant names, contact details, payment card information)
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to travelers/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Operator cannot deny issuing the voucher or the booking terms
+- **Timestamp proof:** Booking existed at a specific time (critical for cancellation disputes and insurance claims)
+- **Regulatory audit:** Tourism boards or consumer protection agencies can inspect the witness ledger for fraud patterns
+- **Resilience:** Verification works even if operator's systems go down or the business ceases operations
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Operator domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
 
 ## Competition vs. QR Codes (Offline)
 

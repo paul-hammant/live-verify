@@ -14,49 +14,26 @@ An **Immunization Record** (often a wallet card like the CDC "White Card" or a s
 
 The problem is that physical cards are easy to fake. During the COVID-19 pandemic, a massive black market emerged for "Fake White Cards," where people used real lot numbers on forged paper to bypass employment and travel rules. Similarly, students sometimes "edit" their childhood MMR records to meet college requirements. Verified hashes bind the **Patient Name, Vaccine Lot Number, and Date of Administration** to the provider's or the health department's domain (e.g., `cvs.com`, `cdc.gov`, or `doh.wa.gov`).
 
-<div style="max-width: 450px; margin: 24px auto; font-family: sans-serif; border: 2px solid #ccc; border-radius: 8px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <div style="background: #f4f4f4; padding: 15px; border-bottom: 1px solid #ccc; display: flex; align-items: center; justify-content: space-between;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.1em; color: #333;"><span verifiable-text="start" data-for="vax">[</span>COVID-19 Vaccination Record Card</div>
-      <div style="font-size: 0.7em; color: #666;">Please keep this record card, which includes medical information about the vaccines you have received.</div>
-    </div>
-    <div style="width: 40px; height: 40px; background: #999; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-weight: bold; font-size: 0.6em; text-align: center;">CDC</div>
-  </div>
-<div style="padding: 20px;">
-    <div style="border-bottom: 1px solid #000; padding-bottom: 10px; margin-bottom: 15px;">
-      <div style="font-size: 0.9em;"><strong>Patient Name:</strong> SMITH, SARAH JANE</div>
-      <div style="font-size: 0.9em;"><strong>Date of Birth:</strong> 05/15/1985</div>
-    </div>
-<table style="width: 100%; border-collapse: collapse; font-size: 0.8em; text-align: left;">
-      <tr style="border-bottom: 1px solid #000;">
-        <th style="padding: 5px;">Vaccine</th>
-        <th style="padding: 5px;">Product / Lot</th>
-        <th style="padding: 5px;">Date</th>
-        <th style="padding: 5px;">Healthcare Professional</th>
-      </tr>
-      <tr style="border-bottom: 1px solid #eee;">
-        <td style="padding: 8px 5px;">COVID-19</td>
-        <td style="padding: 8px 5px;">PFZ / 992288</td>
-        <td style="padding: 8px 5px;">15 MAR 26</td>
-        <td style="padding: 8px 5px;">CVS #042</td>
-      </tr>
-      <tr style="border-bottom: 1px solid #eee;">
-        <td style="padding: 8px 5px;">MMR</td>
-        <td style="padding: 8px 5px;">MSD / 887766</td>
-        <td style="padding: 8px 5px;">10 JUN 25</td>
-        <td style="padding: 8px 5px;">Springfield Clinic</td>
-      </tr>
-    </table>
-  </div>
-<div style="padding: 15px; background: #fffbe6; border-top: 1px dashed #999; text-align: center;">
-    <div data-verify-line="vax" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
-      title="Demo only: Healthcare providers don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:cvs.com/vax/v/SMITH992288 <span verifiable-text="end" data-for="vax">]</span>
-    </div>
-    <div style="font-size: 0.65em; color: #666; margin-top: 8px; font-style: italic;">
-      Scan to verify lot authenticity, administration date, and provider authority. PHI protected.
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <span verifiable-text="start" data-for="vax">[</span>
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;">COVID-19 VACCINATION RECORD CARD                              [CDC]
+═══════════════════════════════════════════════════════════════════
+
+Patient Name:    SMITH, SARAH JANE
+Date of Birth:   05/15/1985
+
+IMMUNIZATION RECORD
+───────────────────────────────────────────────────────────────────
+Vaccine      Product / Lot      Date          Healthcare Professional
+───────────────────────────────────────────────────────────────────
+COVID-19     PFZ / 992288       15 MAR 26     CVS #042
+MMR          MSD / 887766       10 JUN 25     Springfield Clinic
+
+Please keep this record card, which includes medical information
+about the vaccines you have received.
+
+</pre>
+<span data-verify-line="vax">verify:cvs.com/vax/v/SMITH992288</span> <span verifiable-text="end" data-for="vax">]</span>
 </div>
 
 ## Data Verified
@@ -81,22 +58,29 @@ Shows the issuer domain (`cvs.com`, `cdc.gov`, `doh.state.gov`) and the health s
 
 ## Second-Party Use
 
-The **Patient / Parent** benefits from verification.
+The **Patient** (second party) receives the immunization record from the healthcare provider (first party), **keeps it**, and may later hand it to third parties for various reasons, or never do so.
 
-**School Onboarding Speed:** A parent enrolling a child in a new school provides the verified hash of the kid's "Yellow Card." The school registrar can instantly see **"VERIFIED - MMR & POLIO"** on their phone, removing the 5-day delay of calling the pediatrician's office.
+**Personal Record:** The patient has their own verified copy of their vaccination history. Most of the time, the document sits in their wallet or health records—the verification value is latent, there *if needed*.
 
-**Travel Confidence:** Before a high-stakes international trip, a traveler scans their own card. "Verified by CDC" provides them with the assurance that their paperwork will pass border inspection, preventing a traumatic refusal of entry at a foreign airport.
+**Peace of Mind:** The patient can confirm at any time that the record matches what the provider's system recorded and hasn't been altered, ensuring they have legitimate proof of immunization.
+
+**Future Optionality:** If a dispute arises—whether about school enrollment, travel requirements, or employment—the patient has cryptographic proof ready without needing to contact the healthcare provider.
 
 ## Third-Party Use
 
-**University Registrars / K-12 Admin**
-**Fraud Filtering:** Every fall, schools receive thousands of vaccine cards. OCR-to-hash allows the system to instantly filter for only verified, provider-backed records, protecting the student population from "Outbreak Risk" caused by fraudulent immunization claims.
+The patient (second party) may hand the verified document to various third parties:
 
-**Airlines / Border Security**
-**Health Protocol Vetting:** Automatically checking the verified hashes of "Yellow Cards" for passengers arriving from endemic zones (e.g., Yellow Fever). Verification ensures the certificates aren't "Port-Side Forgeries."
+**Schools / University Registrars (Enrollment)**
+A parent enrolling a child in a new school provides the verified hash of the child's immunization record. The school registrar can instantly see **"VERIFIED - MMR & POLIO"** on their phone, removing the 5-day delay of calling the pediatrician's office and protecting the student population from outbreak risk.
 
-**Employers (Healthcare / Senior Care)**
-**Safety Compliance:** Verifying that 100% of staff have verified, active flu or COVID boosters to protect vulnerable patients.
+**Airlines / Border Security (Travel Requirements)**
+Travelers provide verified hashes of "Yellow Cards" when arriving from endemic zones (e.g., Yellow Fever). Border officials can instantly verify the certificates aren't "port-side forgeries," preventing traumatic refusal of entry.
+
+**Employers (Healthcare Safety Compliance)**
+Healthcare facilities and senior care homes receive verified immunization records to ensure that 100% of staff have verified, active flu or COVID boosters to protect vulnerable patients.
+
+**Fraud Detection Systems**
+Schools and employers use verification to filter thousands of vaccine cards, instantly identifying only verified, provider-backed records and rejecting fraudulent claims that could lead to disease outbreaks.
 
 ## Verification Architecture
 
@@ -106,13 +90,36 @@ The **Patient / Parent** benefits from verification.
 - **Date Masking:** Changing a 2022 vaccination date to 2026 to bypass a "Recent Booster" requirement.
 - **Provider Mimicry:** Using a reputable pharmacy's logo on a fake card to avoid taking a mandatory vaccine.
 
-**Issuer Types**
+**Issuer Types (First Party)**
 
-**National Health Agencies (CDC).**
-**State Immunization Registries (IIS).**
-**Pharmacy Retailers (CVS, Walgreens).**
+- National Health Agencies (CDC)
+- State Immunization Registries (IIS)
+- Pharmacy Retailers (CVS, Walgreens)
 
-**Privacy Salt:** EXTREMELY CRITICAL. Vaccination data is Protected Health Information (PHI). The hash MUST be salted to prevent "Mass Health Mapping" or the targeting of individuals based on their vaccination status.
+**Privacy Salt:** Required. Vaccination data is Protected Health Information (PHI). While each record contains unique combinations of patient names, dates of birth, specific lot numbers, precise administration dates, and provider IDs that provide very high entropy, the extreme sensitivity of health data—and the risk that bad actors could use enumeration to target individuals based on vaccination status or create "mass health mapping" databases—means salt is absolutely essential. Salt protects both individual medical privacy and prevents discrimination based on immunization status.
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require healthcare providers to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the healthcare provider, and any subsequent changes to the record as they happen—which may manifest as a new hash, a status change (lot recalled, series incomplete), or even a 404 (record deleted)
+- Receives structured content/metadata (vaccine types, lot numbers, administration dates, dose numbers)
+- Does **NOT** receive plaintext (patient names, dates of birth, provider identities)
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to patients/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Healthcare provider cannot deny administering the vaccine
+- **Timestamp proof:** Immunization existed at a specific time (critical for outbreak investigations and school enrollment disputes)
+- **Regulatory audit:** Public health departments can inspect the witness ledger for vaccination compliance and lot tracking
+- **Resilience:** Verification works even if healthcare provider's systems go down or the provider closes
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Healthcare provider domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
 
 ## Rationale
 

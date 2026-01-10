@@ -16,50 +16,36 @@ High-earners keep these **Policy Schedules** for 30+ years. They use them to pro
 
 Fraud is high-stakes here: scammers often edit a cheap "Any Occupation" policy to look like a premium "Own Occupation" policy to look more credit-worthy. Verified hashes turn the policy folder into a live, trusted financial link that lasts a lifetime.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: 'Helvetica', Arial, sans-serif; border: 2px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
-  <div style="background: #000; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="dis-pol">[</span>UNUM PROVIDENT</div>
-      <div style="font-size: 0.8em; opacity: 0.8;">Individual Income Protection</div>
-    </div>
-    <div style="text-align: right;">
-      <div style="font-size: 0.8em;">Policy #: DI-998877-26</div>
-    </div>
-  </div>
-<div style="padding: 30px;">
-    <h2 style="text-align: center; color: #000; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Policy Schedule</h2>
-<div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Insured:</strong> <strong>DR. STEPHEN STRANGE</strong><br>
-      <strong>Occupation Class:</strong> 6M (Neurosurgeon - Own Occupation)</p>
-<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
-        <tr style="background: #f5f5f5; border-bottom: 2px solid #000;">
-          <th style="text-align: left; padding: 8px;">Benefit Description</th>
-          <th style="text-align: right; padding: 8px;">Amount</th>
-        </tr>
-        <tr>
-          <td style="padding: 8px; border-bottom: 1px solid #eee;">Monthly Income Benefit</td>
-          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 15,000.00</td>
-        </tr>
-        <tr>
-          <td style="padding: 8px; border-bottom: 1px solid #eee;">Elimination Period</td>
-          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">90 Days</td>
-        </tr>
-        <tr>
-          <td style="padding: 8px; border-bottom: 1px solid #eee;">Benefit Period</td>
-          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">To Age 67</td>
-        </tr>
-      </table>
-<p style="margin-top: 20px;"><strong>Effective Date:</strong> January 1, 2026<br>
-      <strong>Premium:</strong> $ 450.00 / Monthly</p>
-    </div>
-<div style="margin-top: 30px; border: 1px solid #ccc; padding: 10px; font-size: 0.8em; color: #555; background: #fafafa;">
-      <strong>Own-Occupation Definition:</strong> Benefits are payable if you are unable to perform the material and substantial duties of your specific specialty.
-    </div>
-<div data-verify-line="dis-pol" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
-      title="Demo only: Unum doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:unum.com/v/DI998877 <span verifiable-text="end" data-for="dis-pol">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <span verifiable-text="start" data-for="dis-pol">[</span>
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;">UNUM PROVIDENT
+Individual Income Protection
+═══════════════════════════════════════════════════════════════════
+
+                        POLICY SCHEDULE
+
+Policy #: DI-998877-26
+
+Insured:          DR. STEPHEN STRANGE
+Occupation Class: 6M (Neurosurgeon - Own Occupation)
+
+BENEFIT SUMMARY
+───────────────────────────────────────────────────────────────────
+Benefit Description                                         Amount
+───────────────────────────────────────────────────────────────────
+Monthly Income Benefit                                 $ 15,000.00
+Elimination Period                                         90 Days
+Benefit Period                                          To Age 67
+
+Effective Date: January 1, 2026
+Premium: $ 450.00 / Monthly
+
+OWN-OCCUPATION DEFINITION: Benefits are payable if you are unable
+to perform the material and substantial duties of your specific
+specialty.
+
+</pre>
+<span data-verify-line="dis-pol">verify:unum.com/v/DI998877</span> <span verifiable-text="end" data-for="dis-pol">]</span>
 </div>
 
 ## Data Verified
@@ -83,13 +69,17 @@ Shows the issuer domain (`unum.com`, `northwesternmutual.com`, `guardianlife.com
 
 ## Second-Party Use
 
-The **Policyholder (Professional)** benefits from verification.
+The **Policyholder (Professional)** (second party) receives the policy from the insurer (first party), **keeps it**, and may later hand it to third parties for various reasons, or never do so.
 
-**Financial Planning:** Proving to a financial advisor or spouse that their "Neurosurgeon Income" is protected by a verified $15,000/month policy. This removes the "Trust Gap" when building a long-term retirement plan.
+**Personal Record:** They have their own verified copy of the income protection policy. Most of the time, the policy sits in their financial records—the verification value is latent, there *if needed*.
 
-**Mortgage Lending:** Proving to a bank that their high income is insured even if they become disabled. This can help high-earners qualify for larger loans by de-risking the lender's future cash flow assumptions.
+**Peace of Mind:** They can confirm at any time that the policy matches what the insurer's system recorded, including the critical "Own Occupation" definition, and hasn't been altered.
+
+**Future Optionality:** If they become disabled or a dispute arises about benefits, they have cryptographic proof of the policy terms ready without needing to contact the insurer.
 
 ## Third-Party Use
+
+The policyholder (second party) may hand the verified document to various third parties:
 
 **Mortgage Underwriters**
 **Risk De-risking:** Lenders often ignore disability insurance because it's too hard to verify the "Fine Print" (e.g., Own-Occ vs. Any-Occ). OCR-to-hash turns the policy schedule into a verified digital artifact that proves the quality of the insurance.
@@ -108,10 +98,35 @@ The **Policyholder (Professional)** benefits from verification.
 - **Definition Tampering:** Changing "Any Occupation" (cheap) to "Own Occupation" (expensive) on the paper policy to look more credit-worthy.
 - **Status Faking:** Showing an old "Active" policy paper for a policy that lapsed 3 years ago.
 
-**Issuer Types**
+**Issuer Types (First Party)**
 
-**Individual Carriers:** (Unum, Guardian, MassMutual, Ameritas).
-**Specialist Brokers:** (Providing VOI certificates).
+- Individual Carriers (Unum, Guardian, MassMutual, Ameritas)
+- Specialist Brokers (providing VOI certificates)
+
+**Privacy Salt:** Required. Disability insurance policies contain a mix of enumerable and unique values—round dollar benefit amounts ($5K, $10K, $15K per month), standard occupation classes, and publicly known professions. A competitor or adversary in divorce proceedings could feasibly enumerate combinations to reverse-engineer a professional's income protection strategy. More critically, salt prevents unauthorized parties from discovering someone's disability insurance status, which could be used for discrimination or targeting. Salt protects both financial privacy and personal medical information.
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require disability insurers to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the insurer, and any subsequent changes to the policy as they happen—which may manifest as a new hash, a status change (lapsed, in-claim), or even a 404 (record deleted)
+- Receives structured content/metadata (benefit amounts, occupation classes, policy periods, elimination periods)
+- Does **NOT** receive plaintext (insured names, medical information, specific claim details)
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to policyholders/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Insurer cannot deny issuing the policy or benefit terms
+- **Timestamp proof:** Policy hash existed at a specific time (critical for benefit disputes)
+- **Regulatory audit:** State insurance departments can inspect the witness ledger for market conduct
+- **Resilience:** Verification works even if insurer's systems go down or the company exits the market
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Insurer domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
 
 ## Competition vs. Broker Confirmation
 

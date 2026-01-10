@@ -8,52 +8,30 @@ tags: ["warehousing", "inventory-audit", "warehouse-receipt", "collateral-verifi
 furtherDerivations: 1
 ---
 
-<div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 1px solid #000; background: #fff; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-  <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
-    <strong><span verifiable-text="start" data-for="inventory">[</span>GLOBAL COLD STORAGE & LOGISTICS</strong><br>
-    OFFICIAL INVENTORY SUMMARY REPORT<br>
-    -----------------------------------
-  </div>
-<div style="font-size: 0.85em; line-height: 1.4;">
-    <div style="display: flex; justify-content: space-between;">
-      <div>
-        <strong>Depositor:</strong> Premium Seafood Imports, Inc.<br>
-        <strong>Warehouse:</strong> Pier 42 Cold Hub, Seattle, WA
-      </div>
-      <div style="text-align: right;">
-        <strong>Report #:</strong> INV-99228877<br>
-        <strong>Date:</strong> 15 MAR 2026
-      </div>
-    </div>
-<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
-      <tr style="border-bottom: 1px solid #000; font-weight: bold;">
-        <th style="text-align: left;">Lot Number</th>
-        <th style="text-align: left;">Description</th>
-        <th style="text-align: right;">On Hand (Pallets)</th>
-      </tr>
-      <tr>
-        <td>LOT-9922-A</td>
-        <td>Frozen Atlantic Salmon</td>
-        <td style="text-align: right;">142</td>
-      </tr>
-      <tr>
-        <td>LOT-9922-B</td>
-        <td>King Crab Legs (Grade A)</td>
-        <td style="text-align: right;">85</td>
-      </tr>
-      <tr style="border-top: 2px solid #000; font-weight: bold;">
-        <td colspan="2">TOTAL CERTIFIED VALUE:</td>
-        <td style="text-align: right;">$ 1,242,500.00</td>
-      </tr>
-    </table>
-<div style="background: #eee; padding: 10px; font-size: 0.8em;">
-      <strong>Note:</strong> This report is a verified record of inventory physically present in the warehouse as of the audit date.
-    </div>
-<div data-verify-line="inventory" style="border-top: 1px dashed #999; margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #555; text-align: center;"
-      title="Demo only: Warehouse doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:global-coldstorage.com/inventory/v/INV992288 <span verifiable-text="end" data-for="inventory">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <span verifiable-text="start" data-for="inventory">[</span>
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;">GLOBAL COLD STORAGE & LOGISTICS
+═══════════════════════════════════════════════════════════════════
+
+                  OFFICIAL INVENTORY SUMMARY REPORT
+
+Depositor:  Premium Seafood Imports, Inc.   Report #: INV-99228877
+Warehouse:  Pier 42 Cold Hub, Seattle, WA   Date:     15 MAR 2026
+
+INVENTORY ON HAND
+───────────────────────────────────────────────────────────────────
+Lot Number       Description                       On Hand (Pallets)
+───────────────────────────────────────────────────────────────────
+LOT-9922-A       Frozen Atlantic Salmon                         142
+LOT-9922-B       King Crab Legs (Grade A)                         85
+───────────────────────────────────────────────────────────────────
+TOTAL CERTIFIED VALUE:                              $ 1,242,500.00
+
+NOTE: This report is a verified record of inventory physically
+present in the warehouse as of the audit date.
+
+</pre>
+<span data-verify-line="inventory">verify:global-coldstorage.com/inventory/v/INV992288</span> <span verifiable-text="end" data-for="inventory">]</span>
 </div>
 
 ## Data Verified
@@ -78,13 +56,17 @@ Shows the issuer domain (the Warehouse Operator) and current asset status.
 
 ## Second-Party Use
 
-The **Depositor (Owner of Goods)** benefits from verification.
+The **Depositor** (second party) receives the inventory report from the warehouse operator (first party), **keeps it**, and may later hand it to third parties for various reasons, or never do so.
 
-**Asset-Based Lending (ABL):** Proving to a bank that the $1.2M in "King Crab" isn't a fabricated number on a spreadsheet. A verified hash from the third-party warehouse's domain provides the bank with the "Independent Custody" proof required to release a high-value loan.
+**Personal Record:** They have their own verified copy of what goods are in custody. Most of the time, the report sits in their financial files—the verification value is latent, there *if needed*.
 
-**Auditor Reassurance:** Providing verified inventory logs to their company's external auditors (Big 4) to prove the "Inventory" asset on the balance sheet is real and non-inflated.
+**Peace of Mind:** They can confirm at any time that the inventory matches what the warehouse's system recorded and the goods are physically present.
+
+**Future Optionality:** If a dispute arises—whether about loan collateral, insurance claims, or auditor verification—they have cryptographic proof ready without needing to contact the warehouse.
 
 ## Third-Party Use
+
+The depositor (second party) may hand the verified document to various third parties:
 
 **Lenders / Banks**
 **Collateral Monitoring:** Banks currently send physical "Auditors" to warehouses twice a year. OCR-to-hash allows for **automated weekly verification**. If the inventory total drops or the hash status changes to "Released," the bank's loan system can trigger an immediate alert.
@@ -103,11 +85,36 @@ The **Depositor (Owner of Goods)** benefits from verification.
 - **Double-Pledging:** Using the same 85 pallets of crab to secure loans from two different banks. OCR-to-hash allows the status to be flagged as "Pledged," stopping the second loan.
 - **Ghost Warehouses:** Creating fake "Warehouse Certificates" from non-existent facilities to hide the theft of company assets.
 
-**Issuer Types**
+**Issuer Types (First Party)**
 
-**3PL Warehouse Operators:** (Global Cold Storage, Lineage, Americold).
-**Logistics Management Systems:** (e.g., Manhattan Associates, HighJump - hosting the hashes).
-**Independent Inventory Auditors.**
+- 3PL Warehouse Operators (Global Cold Storage, Lineage, Americold)
+- Logistics Management Systems (e.g., Manhattan Associates, HighJump - hosting the hashes)
+- Independent Inventory Auditors
+
+**Privacy Salt:** Not required. Inventory reports contain many unpredictable variables that combine to create sufficient entropy—lot numbers (unique alphanumeric), product descriptions (varied and specific), precise quantity counts (continuous values), depositor-specific identifiers, warehouse location codes, and timestamp combinations. The variability in these fields makes reverse-engineering a specific inventory report computationally infeasible without already knowing all the details.
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require warehouse operators to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the warehouse operator, and any subsequent changes to the payload as they happen—which may manifest as a new hash, a status change (in custody to released/pledged), or even a 404 (record deleted)
+- Receives structured content/metadata (lot numbers, quantities, valuation amounts, depositor IDs, location codes)
+- Does **NOT** receive plaintext (depositor names, detailed product specifications, customer identities)
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to depositors/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Warehouse operator cannot deny issuing the inventory report or the quantities
+- **Timestamp proof:** Inventory existed at a specific time (critical for loan collateral and insurance claims)
+- **Regulatory audit:** Agricultural authorities, banking regulators, or food safety agencies can inspect the witness ledger
+- **Resilience:** Verification works even if warehouse operator's systems go down or the facility closes
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Warehouse domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
 
 ## Competition vs. WMS Portals (Warehouse Management)
 

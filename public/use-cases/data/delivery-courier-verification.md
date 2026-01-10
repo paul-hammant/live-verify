@@ -16,7 +16,7 @@ Fraudsters often wear high-visibility vests or fake corporate shirts to walk up 
 
 OCR-to-hash allows a resident or security guard to scan the driver's ID badge or a printed delivery manifest to verify: **"Is this person an authorized employee of this company, and are they assigned to this route today?"**
 
-### Static Card (Traditional)
+### ID Card (dynaamic e-ink)
 
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; border-radius: 8px; background: #fff; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
   <div style="background: #ff6600; color: #fff; padding: 15px; display: flex; align-items: center;">
@@ -25,21 +25,21 @@ OCR-to-hash allows a resident or security guard to scan the driver's ID badge or
   </div>
 <div style="padding: 20px; display: flex; background: linear-gradient(to bottom, #fff, #f9f9f9);">
     <div style="width: 100px; margin-right: 20px;">
-      <div style="width: 100px; height: 125px; background: #eee; border: 2px solid #ff6600; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #aaa; font-size: 0.7em; text-align: center;">[COURIER PHOTO]</div>
+      <div style="width: 100px; height: 125px; background: #eee; border: 2px solid #ff6600; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #000; font-size: 0.7em; text-align: center;">[COURIER PHOTO]</div>
     </div>
-    <div style="flex-grow: 1;">
-      <div style="font-size: 0.75em; color: #888; text-transform: uppercase;">Courier</div>
-      <div style="font-size: 1.3em; font-weight: bold; margin: 0 0 12px 0; color: #333;">Mark S 7766</div>
-<div style="font-size: 0.75em; color: #888; text-transform: uppercase;">Hub</div>
-      <div style="font-size: 0.9em; font-weight: bold;">Memphis</div>
+    <div style="flex-grow: 1; color: #000">
+      <div style="font-size: 0.85em;">FEDEX COURIER</div>
+      <div style="font-size: 1.3em; font-weight: bold; margin: 0 0 4px 0;">Mark S 7766</div>
+      <div style="font-size: 0.85em;">HUB: Memphis</div>
+      <div style="font-size: 0.85em;">SALT: QJ7E3P2</div>
+      <div style="font-family: 'Courier New', monospace; font-size: 0.95em">
+          verify://fedex.com/id
+      </div>
     </div>
   </div>
-<div style="padding: 0 20px 20px 20px;">
-    <div style="font-size: 0.7em; color: #666; text-align: center; margin-bottom: 15px; line-height: 1.3;">
+  <div style="padding: 0 20px 20px 20px;">
+    <div style="border-top: 1px dashed #bbb; padding-top: 10px; font-size: 0.7em; color: #666; text-align: center; margin-bottom: 15px; line-height: 1.3;">
       Scan to verify employment status and current delivery route authorization.
-    </div>
-    <div style="border-top: 1px dashed #bbb; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.9em; color: #999; text-align: center;">
-      https://fedex.com
     </div>
   </div>
 </div>
@@ -65,18 +65,23 @@ Shows the issuer domain (`fedex.com`, `ups.com`, `dhl.com`, `usps.gov`) and the 
 
 ## Second-Party Use
 
-The **Resident / Office Manager** benefits from verification.
+The **Courier / Driver** (second party) receives the ID badge from the courier company (first party), **keeps it**, and may later hand it to third parties for various reasons, or never do so.
 
-**Doorbell Security:** A driver knocks and asks to enter a secure building to deliver a "Heavy Item." The resident scans the ID and sees **"ON DUTY - Route #42"** before buzzing them in.
+**Personal Record:** They have their own verified credential. Most of the time, the badge sits in their pocket or lanyard—the verification value is latent, there *if needed*.
 
-**Porch Piracy Prevention:** A neighbor sees a "Driver" loading packages *into* a generic van instead of a branded truck. They snap a photo of the ID/Uniform hash. If it returns **"INACTIVE"** or **"UNKNOWN,"** they immediately call police with verified evidence of a crime in progress.
+**Peace of Mind:** They can confirm at any time that their employment status is active and properly recorded in the company's system.
 
-**Suspicious Package Handling:** If an unexpected or leaky package arrives, verifying that the driver who dropped it was an authorized professional helps determine if the package is a legitimate error or a security threat.
+**Future Optionality:** If a dispute arises about their employment, delivery assignments, or an incident during a delivery, they have cryptographic proof of their authorized status ready without needing to contact the company.
 
 ## Third-Party Use
 
+The courier (second party) may hand the verified credential to various third parties:
+
 **Property Managers / Gated Communities**
 **Access Control:** Front-desk guards can instantly verify the identity of drivers from 10 different companies (FedEx, UPS, Amazon, local couriers) using a single verification app, rather than relying on their ability to recognize 10 different fake-able badges.
+
+**Residents / Recipients**
+**Safety Verification:** Before opening the door to a stranger, a resident can scan the driver's badge to confirm they are a verified on-duty courier for a real company, preventing "Fake Courier" home invasions.
 
 **Insurance Companies**
 **Liability Verification:** Verifying that a driver involved in a parking lot accident was actually on duty for the claimed company at the time of the incident.
@@ -89,13 +94,36 @@ The **Resident / Office Manager** benefits from verification.
 - **Stolen IDs:** Using a lost/stolen badge to gain access to high-end apartment complexes.
 - **Fake Door Tags:** Leaving "Missed Delivery" tags with a fake phone number to steal PII or payment info for "Re-delivery fees."
 
-**Issuer Types**
+**Issuer Types (First Party)**
 
-**National Courier Hubs.**
-**Regional Delivery Services.**
-**Third-Party Logistics (3PL) Providers.**
+- National Courier Hubs (FedEx, UPS, DHL, USPS)
+- Regional Delivery Services
+- Third-Party Logistics (3PL) Providers
 
-**Privacy Salt:** Essential. Driver names and routes are private data. The hash must be salted to prevent "Stalking" or "Competitor Reconnaissance" (e.g., a rival firm trying to map out a company's delivery density).
+**Privacy Salt:** Required. Courier badges combine predictable values—partial names, hub locations, and standard ID formats. More critically, the hash must be salted to prevent "Stalking" attacks where someone could enumerate driver IDs and routes, creating serious safety risks for drivers. Salt also prevents "Competitor Reconnaissance" where rival firms could map out a company's delivery density and staffing patterns.
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require courier companies to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the courier company, and any subsequent changes to employment status as they happen—which may manifest as a new hash, a status change (off-duty, suspended, terminated), or even a 404 (record deleted)
+- Receives structured content/metadata (employee IDs, hub assignments, on-duty status, route zones)
+- Does **NOT** receive plaintext (driver full names, home addresses, specific delivery routes)
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to drivers/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Courier company cannot deny issuing credentials or employment status
+- **Timestamp proof:** Badge hash existed at a specific time (critical for incident investigations)
+- **Regulatory audit:** Labor departments can inspect the witness ledger for contractor misclassification
+- **Resilience:** Verification works even if courier company's systems go down
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Courier company domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
 
 ## Privacy-Preserving Badge Design
 
@@ -131,7 +159,7 @@ The **Driver Badge** is their "Security Key." It proves they are an authorized w
 
 Scammers often wear fake high-visibility vests to get inside apartment buildings or gated communities to "case" homes or steal packages. OCR-to-hash allows a doorman or resident to scan the badge and see a green "ON-DUTY" status from the company's domain, stopping "Fake Courier" home invasions.
 
-### Static Card (Traditional)
+### ID Card (dynaamic e-ink)
 
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
   <div style="background: #232f3e; color: #fff; padding: 15px; text-align: center; display: flex; align-items: center; justify-content: center;">
@@ -145,22 +173,20 @@ Scammers often wear fake high-visibility vests to get inside apartment buildings
     <div style="width: 100px; margin-right: 15px;">
       <div style="width: 100px; height: 125px; background: #eee; display: flex; align-items: center; justify-content: center; color: #777; border: 1px solid #ccc; border-radius: 4px;">[PHOTO ID]</div>
     </div>
-    <div style="flex-grow: 1;">
-      <h4 style="margin: 0; color: #232f3e;">DA-1 DRIVER</h4>
-      <div style="font-size: 1.3em; font-weight: bold; margin: 5px 0;">Carlos R 42882</div>
-      <div style="font-size: 0.9em; color: #333; line-height: 1.4;">
+    <div style="flex-grow: 1; color: #000">
+      <div style="margin: 0;">DA-1 DRIVER</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin: 2px 0;">Carlos R 42882</div>
+      <div style="font-size: 0.9em; line-height: 1.5;">
         <strong>Region:</strong> San Francisco, CA<br>
-        <strong>Status:</strong> ON-DUTY
+        Salt: qj7E3p2
+        verify://logistics.amazon.com
       </div>
     </div>
   </div>
-<div style="padding: 0 20px 20px 20px;">
+<div style="padding: 0 20px 20px 20px; border-top: 1px dashed #999; margin-top: 10px; font-family: 'Courier New', monospace; font-size: 0.9em; color: #999; text-align: center;">
     <p style="font-size: 0.75em; color: #555; font-style: italic; text-align: center;">
-      Traditional ID card. For verification, scan an e-ink badge if available.
+      For verification, scan this badge, the driver will always cooperate.
     </p>
-    <div style="border-top: 1px dashed #999; margin-top: 10px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.9em; color: #999; text-align: center;">
-      https://logistics.amazon.com
-    </div>
   </div>
 </div>
 
@@ -185,13 +211,17 @@ Shows the issuer domain (`amazon.com`, `ups.com`, `fedex.com`) and current worke
 
 ## Second-Party Use
 
-The **Delivery Driver** benefits from verification.
+The **Delivery Driver** (second party) receives the ID badge from the logistics company (first party), **keeps it**, and may later hand it to third parties for various reasons, or never do so.
 
-**Secure Access:** Proving to a doorman or high-rise security guard that they are a legitimate delivery professional and not a trespasser. This speeds up "Building Entry" and reduces the risk of being barred from elevators.
+**Personal Record:** They have their own verified credential proving their employment and route assignment. Most of the time, the badge sits on their lanyard—the verification value is latent, there *if needed*.
 
-**Professional Safety:** In rural areas, a verified badge provides safety for the driver, proving to homeowners that the person walking up their driveway is an authorized Amazon/UPS worker.
+**Peace of Mind:** They can confirm at any time that their on-duty status is active and properly recorded in the company's system.
+
+**Future Optionality:** If a dispute arises about their employment, an incident during a delivery, or access issues, they have cryptographic proof of their authorized status ready without needing to contact the company.
 
 ## Third-Party Use
+
+The delivery driver (second party) may hand the verified credential to various third parties:
 
 **Vulnerable Residents (Elderly/Alone)**
 **Personal Safety:** Before opening the door to a stranger, a resident can ask to see the driver's badge through a window or doorbell camera. Scanning the hash confirms the person is a "Verified On-Duty" driver for a real company, preventing "Fake Courier" home invasions.
@@ -210,13 +240,13 @@ The **Delivery Driver** benefits from verification.
 - **Identity Theft:** Using a real driver's badge after they have been fired to maintain access to high-value buildings.
 - **Route Faking:** Pretending to be on a "Rush Delivery" to bypass security controls in private communities.
 
-**Issuer Types**
+**Issuer Types (First Party)**
 
-**Logistics Giants:** (Amazon, UPS, FedEx, DHL).
-**Food Delivery Platforms:** (DoorDash, UberEats, GrubHub).
-**Local DSPs:** (Delivery Service Partners).
+- Logistics Giants (Amazon, UPS, FedEx, DHL)
+- Food Delivery Platforms (DoorDash, UberEats, GrubHub)
+- Local DSPs (Delivery Service Partners)
 
-**Privacy Salt:** Critical. Driver names and locations are sensitive. The hash must be salted to prevent "Stalking" attacks where someone tries to guess which driver is on a specific street.
+**Privacy Salt:** Required. Driver badges combine predictable elements—partial names, regions, and standard ID formats. More critically, salt prevents "Stalking" attacks where someone could enumerate driver IDs to track specific individuals across routes, creating serious personal safety risks. This is especially important for gig workers who interact with hundreds of strangers daily.
 
 ### E-Ink Live Card (Next Generation)
 

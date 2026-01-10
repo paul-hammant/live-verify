@@ -16,48 +16,35 @@ Because the stakes are so high, every crane must be professionally inspected eve
 
 "Pencil Whipping" is a common industry fraud where an operator fakes an inspection to keep working during a busy season. Verified hashes allow a site foreman or an OSHA inspector to scan the certificate and prove the crane actually passed a load test yesterday.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 4px solid #fbc02d; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <div style="background: #fbc02d; color: #000; padding: 15px; text-align: center;">
-    <h2 style="margin: 0; text-transform: uppercase;"><span verifiable-text="start" data-for="crane">[</span>HEAVY LIFT INSPECTION SERVICES</h2>
-    <div style="font-size: 0.8em; font-weight: bold;">CERTIFIED ACCREDITED CRANE INSPECTOR</div>
-  </div>
-<div style="padding: 25px;">
-    <div style="text-align: center; border-bottom: 2px solid #fbc02d; padding-bottom: 10px; margin-bottom: 20px;">
-      <h3 style="margin: 0; color: #333;">ANNUAL INSPECTION CERTIFICATE</h3>
-      <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;">Certificate #: C-992288-26</div>
-    </div>
-<div style="font-size: 0.9em; line-height: 1.5; color: #333;">
-      <p><strong>Equipment:</strong> Liebherr LTM 11200-9.1 (Mobile Crane)<br>
-      <strong>Serial Number:</strong> LTM-99887766<br>
-      <strong>Owner:</strong> Mega-Lift Construction, LLC</p>
-<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
-        <tr>
-          <td style="border: 1px solid #ccc; padding: 8px;"><strong>Max Capacity:</strong></td>
-          <td style="border: 1px solid #ccc; padding: 8px;">1,200 Metric Tons</td>
-        </tr>
-        <tr>
-          <td style="border: 1px solid #ccc; padding: 8px;"><strong>Boom Length:</strong></td>
-          <td style="border: 1px solid #ccc; padding: 8px;">100 Meters</td>
-        </tr>
-        <tr>
-          <td style="border: 1px solid #ccc; padding: 8px;"><strong>Inspector:</strong></td>
-          <td style="border: 1px solid #ccc; padding: 8px;">D. Miller (NCCCO #9982)</td>
-        </tr>
-      </table>
-<p style="background: #fff9c4; padding: 10px; border-radius: 4px; font-weight: bold; text-align: center; color: #333;">
-        INSPECTION DATE: March 15, 2026<br>
-        NEXT DUE DATE: March 15, 2027
-      </p>
-    </div>
-<div style="margin-top: 25px; display: flex; align-items: center; justify-content: center; border: 1px solid #fbc02d; padding: 10px; border-radius: 4px; background: #fffde7;">
-      <div style="width: 50px; height: 50px; border: 2px solid #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; transform: rotate(-5deg);">NCCCO</div>
-      <div style="margin-left: 15px; font-size: 0.85em; font-weight: bold;">"SAFETY FIRST - LIFTING EXCELLENCE"</div>
-    </div>
-<div data-verify-line="crane" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
-      title="Demo only: Inspection firm doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:heavylift-inspections.com/v/C992288 <span verifiable-text="end" data-for="crane">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <span verifiable-text="start" data-for="crane">[</span>
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;">HEAVY LIFT INSPECTION SERVICES
+Certified Accredited Crane Inspector
+═══════════════════════════════════════════════════════════════════
+
+                  ANNUAL INSPECTION CERTIFICATE
+
+Certificate #: C-992288-26
+
+EQUIPMENT IDENTIFICATION
+───────────────────────────────────────────────────────────────────
+Equipment:      Liebherr LTM 11200-9.1 (Mobile Crane)
+Serial Number:  LTM-99887766
+Owner:          Mega-Lift Construction, LLC
+
+SPECIFICATIONS
+───────────────────────────────────────────────────────────────────
+Max Capacity:   1,200 Metric Tons
+Boom Length:    100 Meters
+Inspector:      D. Miller (NCCCO #9982)
+
+INSPECTION DATE: March 15, 2026
+NEXT DUE DATE:   March 15, 2027
+
+                [NCCCO] "SAFETY FIRST - LIFTING EXCELLENCE"
+
+</pre>
+<span data-verify-line="crane">verify:heavylift-inspections.com/v/C992288</span> <span verifiable-text="end" data-for="crane">]</span>
 </div>
 
 ## Data Verified
@@ -82,13 +69,17 @@ Shows the issuer domain (the Inspection Firm or Crane Owner) and current safety 
 
 ## Second-Party Use
 
-The **Crane Owner / Operator** benefits from verification.
+The **Crane Owner / Operator** (second party) receives the inspection certificate from the inspection firm (first party), **keeps it**, and may later hand it to third parties for various reasons, or never do so.
 
-**Site Mobilization:** Proving to a General Contractor (GC) that the $10M mobile crane they are driving onto the job-site is "Verified Safe." Most big GCs (e.g., Turner, Bechtel) require proof of inspection before any machine can "Swing a Load."
+**Personal Record:** They have their own verified copy of the inspection results. Most of the time, the certificate sits in the crane cab or the office—the verification value is latent, there *if needed*.
 
-**Insurance Defense:** If an accident occurs, having an immutable, verified digital record of the annual inspection protects the owner from "Gross Negligence" claims.
+**Peace of Mind:** They can confirm at any time that the inspection matches what the inspector's system recorded and hasn't been altered.
+
+**Future Optionality:** If an accident occurs or a dispute arises about equipment safety, they have cryptographic proof of the inspection ready without needing to contact the inspection firm.
 
 ## Third-Party Use
+
+The crane owner (second party) may hand the verified document to various third parties:
 
 **General Contractors / Project Managers**
 **Liability Shield:** Scanning the sticker on every crane arriving at the project. "Verified by Independent Inspector" ensures the GC isn't taking on the liability of an uninspected, potentially deadly piece of heavy machinery.
@@ -107,11 +98,36 @@ The **Crane Owner / Operator** benefits from verification.
 - **Serial Number Swapping:** Taking a valid certificate from a new crane and taping it to an old, dangerous machine. Verification shows the "Serial Number" which won't match the physical machine.
 - **Date Stretching:** Editing a 2024 certificate to read 2026 to avoid the $2,000 cost of a professional inspection.
 
-**Issuer Types**
+**Issuer Types (First Party)**
 
-**Third-Party Inspection Firms:** (e.g., Crane Inspection & Certification Bureau - CICB).
-**Insurance Loss Control Units.**
-**National Commission for the Certification of Crane Operators (NCCCO).**
+- Third-Party Inspection Firms (e.g., Crane Inspection & Certification Bureau - CICB)
+- Insurance Loss Control Units
+- National Commission for the Certification of Crane Operators (NCCCO)
+
+**Privacy Salt:** Not required. Inspection certificates contain many unpredictable variables—unique serial numbers, specific equipment models, inspector certification numbers, precise inspection dates, and load test results. The combination of these variables creates sufficient entropy that reverse-engineering a hash to discover inspection details is computationally infeasible without prior knowledge of the exact values.
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require inspection firms to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the inspection firm, and any subsequent changes to the certificate as they happen—which may manifest as a new hash, a status change (red tag, conditional pass), or even a 404 (record deleted)
+- Receives structured content/metadata (equipment serial numbers, inspection dates, pass/fail status, load test results)
+- Does **NOT** receive plaintext (owner names, site locations)
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to crane owners/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Inspection firm cannot deny issuing the certificate
+- **Timestamp proof:** Certificate hash existed at a specific time (critical for accident liability)
+- **Regulatory audit:** OSHA can inspect the witness ledger for compliance patterns
+- **Resilience:** Verification works even if inspection firm's systems go down or the company closes
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Inspection firm domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
 
 ## Competition vs. QR Stickers
 

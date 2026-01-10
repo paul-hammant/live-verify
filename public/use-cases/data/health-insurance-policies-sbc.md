@@ -16,50 +16,33 @@ It lists your **Deductible**, your **Copay**, and what you pay for an **ER visit
 
 Fraud happens during the sales process: some brokers edit the SBC PDF to show a "$500 Deductible" when the actual plan has a "$5,000 Deductible." Verified hashes turn the SBC into a live link to the insurer's official filing, ensuring you are buying the coverage you were promised.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-  <div style="background: #005fb8; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="health-sbc">[</span>AETNA HEALTH</div>
-      <div style="font-size: 0.8em; opacity: 0.8;">Summary of Benefits and Coverage (SBC)</div>
-    </div>
-    <div style="text-align: right;">
-      <div style="font-size: 0.8em;">Form #: SBC-2026-NY-99</div>
-    </div>
-  </div>
-<div style="padding: 25px;">
-    <div style="border-bottom: 2px solid #005fb8; padding-bottom: 10px; margin-bottom: 20px;">
-      <h2 style="margin: 0; color: #333; font-size: 1.3em;">PLAN: BRONZE PPO 1000</h2>
-      <div style="font-size: 0.9em; color: #666;">Coverage for: Individual & Family | Plan Period: 01/01/26 - 12/31/26</div>
-    </div>
-<div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p>This is only a summary. For more information, see <strong>www.aetna.com</strong>.</p>
-<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
-        <tr style="background: #f5f5f5; border-bottom: 1px solid #005fb8;">
-          <th style="text-align: left; padding: 8px;">Important Questions</th>
-          <th style="text-align: left; padding: 8px;">Answers</th>
-        </tr>
-        <tr>
-          <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>Individual Deductible?</strong></td>
-          <td style="padding: 8px; border-bottom: 1px solid #eee;">$ 1,000 In-network / $ 5,000 Out-of-network</td>
-        </tr>
-        <tr>
-          <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>Out-of-Pocket Limit?</strong></td>
-          <td style="padding: 8px; border-bottom: 1px solid #eee;">$ 8,500 In-network / $ 15,000 Out-of-network</td>
-        </tr>
-        <tr>
-          <td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>Network Provider?</strong></td>
-          <td style="padding: 8px; border-bottom: 1px solid #eee;">Yes. See Aetna Open Access Network.</td>
-        </tr>
-      </table>
-    </div>
-<div style="margin-top: 25px; padding: 10px; background: #e3f2fd; border: 1px solid #90caf9; font-size: 0.8em; color: #0d47a1; font-style: italic; text-align: center;">
-      This SBC is a verified extract of the Aetna Bronze PPO policy filed with the NY Dept of Financial Services.
-    </div>
-<div data-verify-line="health-sbc" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
-      title="Demo only: Aetna doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:aetna.com/sbc/v/BRONZE-1000-NY <span verifiable-text="end" data-for="health-sbc">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <span verifiable-text="start" data-for="health-sbc">[</span>
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;">AETNA HEALTH
+Summary of Benefits and Coverage (SBC)
+═══════════════════════════════════════════════════════════════════
+
+Form #: SBC-2026-NY-99
+
+PLAN: BRONZE PPO 1000
+Coverage for: Individual & Family
+Plan Period: 01/01/26 - 12/31/26
+
+This is only a summary. For more information, see www.aetna.com.
+
+COVERAGE SUMMARY
+───────────────────────────────────────────────────────────────────
+Important Questions                                        Answers
+───────────────────────────────────────────────────────────────────
+Individual Deductible?        $ 1,000 In-network / $ 5,000 Out
+Out-of-Pocket Limit?          $ 8,500 In-network / $ 15,000 Out
+Network Provider?             Yes. See Aetna Open Access Network.
+
+This SBC is a verified extract of the Aetna Bronze PPO policy
+filed with the NY Dept of Financial Services.
+
+</pre>
+<span data-verify-line="health-sbc">verify:aetna.com/sbc/v/BRONZE-1000-NY</span> <span verifiable-text="end" data-for="health-sbc">]</span>
 </div>
 
 ## Data Verified
@@ -84,13 +67,17 @@ Shows the issuer domain (`aetna.com`, `anthem.com`, `uhc.com`) and the plan stat
 
 ## Second-Party Use
 
-The **Policyholder (Subscriber)** benefits from verification.
+The **Policyholder** (second party) receives the Summary of Benefits and Coverage from the insurer (first party), **keeps it**, and may later hand it to third parties for various reasons, or never do so.
 
-**Doctor Office Vetting:** Proving to a new specialist that their "Bronze PPO" actually has a $40 specialist copay and not a 50% coinsurance. A verified hash from the insurer prevents "Office Staff Errors" where they misread a complex PDF and demand a larger payment upfront.
+**Personal Record:** They have their own verified copy of their coverage details. Most of the time, the SBC sits in their insurance folder—the verification value is latent, there *if needed*.
 
-**Employer Choice:** During "Open Enrollment," an employee can verify the claims made by different insurance brokers to ensure the "Low Deductible" plan is actually verified by the carrier and not an outdated version.
+**Peace of Mind:** They can confirm at any time that the deductibles and copays match what the insurer's system recorded and what was filed with state regulators.
+
+**Future Optionality:** If a dispute arises—whether about coverage denials, billing errors, or network status—they have cryptographic proof ready without needing to contact the insurer.
 
 ## Third-Party Use
+
+The policyholder (second party) may hand the verified document to various third parties:
 
 **Healthcare Providers (Hospitals)**
 **Revenue Cycle Management:** Instantly verifying the "Deductible" and "Out-of-Pocket" limits before scheduling a $20,000 procedure. OCR-to-hash connects the hospital's billing system directly to the insurer's verified plan definitions.
@@ -109,13 +96,36 @@ The **Policyholder (Subscriber)** benefits from verification.
 - **Network Misrepresentation:** editing the "Network" section to include a prestigious hospital system that isn't actually part of the plan.
 - **Outdated SBCs:** A broker using a 2024 SBC to sell a 2026 plan that has significantly worse coverage.
 
-**Issuer Types**
+**Issuer Types (First Party)**
 
-**Health Insurers:** (Aetna, Blue Cross, Kaiser).
-**State Insurance Commissioners:** (e.g., NY DFS, CA CDI - who approve the filings).
-**Federal Centers for Medicare & Medicaid Services (CMS).**
+- Health Insurers (Aetna, Blue Cross, Kaiser)
+- State Insurance Commissioners (e.g., NY DFS, CA CDI - who approve the filings)
+- Federal Centers for Medicare & Medicaid Services (CMS)
 
-**Privacy Salt:** Critical. Plan names and deductibles are sensitive. The hash must be salted to prevent "Market Mapping" of all premium levels in a specific zip code.
+**Privacy Salt:** Required. While SBCs contain some unique elements, they also include enumerable values—standard deductible tiers ($500, $1000, $2500, $5000), predictable copay amounts ($20, $40, $50 for common services), and publicly known plan names (Bronze, Silver, Gold, Platinum). A competitor or data aggregator could feasibly enumerate combinations to reverse-engineer market pricing strategies, subscriber demographics by zip code, or competitive positioning. Salt protects this sensitive market intelligence.
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require health insurers to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the insurer, and any subsequent changes to the payload as they happen—which may manifest as a new hash, a status change (current to superseded), or even a 404 (record deleted)
+- Receives structured content/metadata (plan names, deductible amounts, copay tiers, network IDs, effective dates)
+- Does **NOT** receive plaintext (subscriber names, member IDs, claims history)
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to policyholders/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Insurer cannot deny issuing the SBC or the coverage terms
+- **Timestamp proof:** Plan terms existed at a specific time (critical for coverage disputes and regulatory compliance)
+- **Regulatory audit:** State insurance departments or CMS can inspect the witness ledger for consumer protection violations
+- **Resilience:** Verification works even if insurer's systems go down or the company is acquired
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Insurer domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
 
 ## Competition vs. Healthcare.gov (Federal Registry)
 

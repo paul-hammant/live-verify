@@ -16,62 +16,32 @@ You need this "Official" paper to apply for Grad School or to prove to an employ
 
 "Transcript Padding" is a common fraud: people often edit a "C" to an "A" or add a "Computer Science" class they never actually took. Verified hashes allow an employer or university to scan the PDF and see the **un-altered grades** directly from the Registrar's database.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
-  <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 25px;">
-    <div style="font-weight: bold; font-size: 1.3em;"><span verifiable-text="start" data-for="transcript">[</span>UNIVERSITY OF OXFORD</div>
-    <div style="font-size: 0.85em; color: #666;">Office of the University Registrar</div>
-  </div>
-<h3 style="text-align: center; text-transform: uppercase; margin-bottom: 20px;">Official Academic Transcript Extract</h3>
-<div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-    <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
-      <div>
-        <strong>Student:</strong> <strong>PONDER STIBBONS</strong><br>
-        <strong>Student ID:</strong> OX-992288
-      </div>
-      <div style="text-align: right;">
-        <strong>Date:</strong> March 15, 2026<br>
-        <strong>Page:</strong> 1 of 1
-      </div>
-    </div>
-<table style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
-      <tr style="border-bottom: 1px solid #000; font-weight: bold;">
-        <th style="text-align: left;">Course Code</th>
-        <th style="text-align: left;">Course Title</th>
-        <th style="text-align: center;">Grade</th>
-        <th style="text-align: right;">Credits</th>
-      </tr>
-      <tr>
-        <td>CS-402</td>
-        <td>Advanced Thaumaturgy</td>
-        <td style="text-align: center;">A+</td>
-        <td style="text-align: right;">4.0</td>
-      </tr>
-      <tr>
-        <td>CS-310</td>
-        <td>High Energy Magic</td>
-        <td style="text-align: center;">A</td>
-        <td style="text-align: right;">3.0</td>
-      </tr>
-      <tr>
-        <td>MT-201</td>
-        <td>Stochastic Divination</td>
-        <td style="text-align: center;">A-</td>
-        <td style="text-align: right;">3.0</td>
-      </tr>
-      <tr style="border-top: 1px solid #000; font-weight: bold;">
-        <td colspan="2">CUMULATIVE GPA:</td>
-        <td style="text-align: center;">3.92</td>
-        <td style="text-align: right;">10.0</td>
-      </tr>
-    </table>
-<p style="font-size: 0.8em; font-style: italic;">
-      Verification confirms the grades and credits match the student's official record.
-    </p>
-  </div>
-<div data-verify-line="transcript" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
-      title="Demo only: Oxford doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:ox.ac.uk/registrar/v/992288-PS <span verifiable-text="end" data-for="transcript">]</span>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <span verifiable-text="start" data-for="transcript">[</span>
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;">UNIVERSITY OF OXFORD
+Office of the University Registrar
+═══════════════════════════════════════════════════════════════════
+
+              OFFICIAL ACADEMIC TRANSCRIPT EXTRACT
+
+Student:    PONDER STIBBONS                   Date: March 15, 2026
+Student ID: OX-992288                         Page: 1 of 1
+
+COURSE RECORD
+───────────────────────────────────────────────────────────────────
+Course Code   Course Title                        Grade    Credits
+───────────────────────────────────────────────────────────────────
+CS-402        Advanced Thaumaturgy                  A+        4.0
+CS-310        High Energy Magic                      A        3.0
+MT-201        Stochastic Divination                 A-        3.0
+───────────────────────────────────────────────────────────────────
+CUMULATIVE GPA:                                   3.92       10.0
+
+Verification confirms the grades and credits match the student's
+official record.
+
+</pre>
+<span data-verify-line="transcript">verify:ox.ac.uk/registrar/v/992288-PS</span> <span verifiable-text="end" data-for="transcript">]</span>
 </div>
 
 ## Data Verified
@@ -96,15 +66,17 @@ Shows the issuer domain (`ox.ac.uk`, `harvard.edu`) and current record status.
 
 ## Second-Party Use
 
-The **Student / Alumnus** benefits from verification.
+The **Student / Alumnus** (second party) receives the transcript from the university (first party), **keeps it**, and may later hand it to third parties for various reasons, or never do so.
 
-**University Transfer:** Proving to a new university that the "A+" in Advanced Thaumaturgy is legitimate and should be accepted for transfer credit. Verification prevents the 4-week delay of "Mailed Official Transcripts."
+**Personal Record:** They have their own verified copy of their academic record. Most of the time, the transcript sits in their files—the verification value is latent, there *if needed*.
 
-**Job Applications:** Providing a verified "Transcript Extract" to an employer who requires proof of specific coursework (e.g., "Must have passed 2 coding classes").
+**Peace of Mind:** They can confirm at any time that it matches what the Registrar's system recorded and hasn't been altered.
 
-**Visa / Immigration:** Proving educational background to a foreign government for a High-Skill Visa.
+**Future Optionality:** If a dispute arises about grades, transfer credits, or degree requirements, they have cryptographic proof ready without needing to contact the university.
 
 ## Third-Party Use
+
+The student (second party) may hand the verified document to various third parties:
 
 **Graduate School Admissions**
 **Instant Evaluation:** Admissions officers can instantly verify the grades of international applicants by scanning their PDF transcripts, bypassing the expensive and slow "Third-Party Evaluation" services (e.g., WES).
@@ -123,13 +95,36 @@ The **Student / Alumnus** benefits from verification.
 - **Ghost Courses:** Adding non-existent courses to a transcript to meet job requirements.
 - **Fictitious Degrees:** Creating a fake transcript from a real, famous university for a person who never attended.
 
-**Issuer Types**
+**Issuer Types (First Party)**
 
-**University Registrars:** (The primary authority).
-**National Student Clearinghouse:** (Centralized US record hub).
-**Digital Credential Platforms:** (e.g., Parchment, Digitary).
+- University Registrars (The primary authority)
+- National Student Clearinghouse (Centralized US record hub)
+- Digital Credential Platforms (e.g., Parchment, Digitary)
 
-**Privacy Salt:** ABSOLUTELY CRITICAL. Academic records are highly private (FERPA in the USA). The hash MUST be salted to prevent "Guess-and-Check" searches for student grades.
+**Privacy Salt:** Required. Academic records are highly private (FERPA in the USA). Unlike documents with many unpredictable variables, transcripts combine student ID numbers, course codes, and specific grades that could theoretically be enumerated. More critically, the hash must be salted to prevent "Guess-and-Check" searches for individual student grades—a significant privacy violation that could enable unauthorized academic background checks.
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require universities to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the university, and any subsequent changes to the transcript as they happen—which may manifest as a new hash, a status change (grade amendment), or even a 404 (record deleted)
+- Receives structured content/metadata (course codes, credit hours, degree programs, graduation dates)
+- Does **NOT** receive plaintext (student names, social security numbers, detailed grade histories)
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to students/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** University cannot deny issuing the transcript or grades
+- **Timestamp proof:** Transcript hash existed at a specific time (critical for degree conferral disputes)
+- **Regulatory audit:** Department of Education can inspect the witness ledger for FERPA compliance
+- **Resilience:** Verification works even if university's systems go down or the institution closes
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **University domain** — Direct check against the Registrar
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
 
 ## Competition vs. Official Electronic Delivery (Parchment)
 

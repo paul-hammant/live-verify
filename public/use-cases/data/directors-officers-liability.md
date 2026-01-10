@@ -16,50 +16,36 @@ If a public company is sued by its shareholders (e.g., for a stock price drop), 
 
 High-profile executives won't join a board unless they see verified proof of this insurance. Fraud happens when a struggling company "Photoshops" its insurance papers to look like it has a $25M policy when it actually only has $1M (or none at all). Verified hashes ensure directors are actually protected.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: 'Helvetica', Arial, sans-serif; border: 2px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
-  <div style="background: #000; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="do-pol">[</span>CHUBB SPECIALTY INSURANCE</div>
-      <div style="font-size: 0.8em; opacity: 0.8;">Executive Protection Portfolio&reg;</div>
-    </div>
-    <div style="text-align: right;">
-      <div style="font-size: 0.8em;">Policy #: DO-998877-26</div>
-    </div>
-  </div>
-<div style="padding: 30px;">
-    <h2 style="text-align: center; color: #000; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">D&O Policy Declarations</h2>
-<div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Insured Organization:</strong> Globochem Worldwide, Inc.<br>
-      <strong>Jurisdiction:</strong> Delaware, USA</p>
-<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
-        <tr style="background: #f5f5f5; border-bottom: 2px solid #000;">
-          <th style="text-align: left; padding: 8px;">Coverage Layer</th>
-          <th style="text-align: right; padding: 8px;">Limit of Liability</th>
-        </tr>
-        <tr>
-          <td style="padding: 8px; border-bottom: 1px solid #eee;">Side A (Individual D&O)</td>
-          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 25,000,000</td>
-        </tr>
-        <tr>
-          <td style="padding: 8px; border-bottom: 1px solid #eee;">Side B (Corp. Reimbursement)</td>
-          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 25,000,000</td>
-        </tr>
-        <tr>
-          <td style="padding: 8px; border-bottom: 1px solid #eee;">Side C (Entity Securities)</td>
-          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 25,000,000</td>
-        </tr>
-      </table>
-<p style="margin-top: 20px;"><strong>Policy Period:</strong> Jan 01, 2026 to Jan 01, 2027<br>
-      <strong>Retroactive Date:</strong> Jan 01, 2015</p>
-    </div>
-<div style="margin-top: 30px; border: 1px solid #ccc; padding: 10px; font-size: 0.8em; color: #555; background: #fafafa;">
-      <strong>Notice:</strong> This is a Claims-Made and Reported policy. Coverage only applies to claims first made against the insured during the policy period.
-    </div>
-<div data-verify-line="do-pol" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
-      title="Demo only: Chubb doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:chubb.com/do/v/DO998877 <span verifiable-text="end" data-for="do-pol">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <span verifiable-text="start" data-for="do-pol">[</span>
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;">CHUBB SPECIALTY INSURANCE
+Executive Protection Portfolio
+═══════════════════════════════════════════════════════════════════
+
+                     D&O POLICY DECLARATIONS
+
+Policy #: DO-998877-26
+
+Insured Organization: Globochem Worldwide, Inc.
+Jurisdiction:         Delaware, USA
+
+COVERAGE LIMITS
+───────────────────────────────────────────────────────────────────
+Coverage Layer                                  Limit of Liability
+───────────────────────────────────────────────────────────────────
+Side A (Individual D&O)                              $ 25,000,000
+Side B (Corp. Reimbursement)                         $ 25,000,000
+Side C (Entity Securities)                           $ 25,000,000
+
+Policy Period:     Jan 01, 2026 to Jan 01, 2027
+Retroactive Date:  Jan 01, 2015
+
+NOTICE: This is a Claims-Made and Reported policy. Coverage only
+applies to claims first made against the insured during the
+policy period.
+
+</pre>
+<span data-verify-line="do-pol">verify:chubb.com/do/v/DO998877</span> <span verifiable-text="end" data-for="do-pol">]</span>
 </div>
 
 ## Data Verified
@@ -84,13 +70,17 @@ Shows the issuer domain (`chubb.com`, `aig.com`, `marsh.com`) and policy status.
 
 ## Second-Party Use
 
-The **Board Director** or **Corporate Officer** benefits from verification.
+The **Board Director** or **Corporate Officer** (second party) receives the D&O policy from the company/insurer (first party), **keeps it**, and may later hand it to third parties for various reasons, or never do so.
 
-**Personal Protection:** A director can scan the company's D&O certificate to ensure it's "Verified Active" and the "Side A" limit is actually $25M. This prevents directors from relying on "Ghost Insurance" provided by a dishonest CFO to hide a cash-flow crisis.
+**Personal Record:** They have their own verified copy of the coverage protecting them. Most of the time, the policy sits in their personal files—the verification value is latent, there *if needed*.
 
-**Resignation/Retirement:** Ensuring that the "Tail Coverage" (Run-off) promised upon leaving the company is verified and in force for the next 6 years.
+**Peace of Mind:** They can confirm at any time that the policy matches what the insurer's system recorded, including coverage limits and retroactive dates, and hasn't been altered.
+
+**Future Optionality:** If a shareholder lawsuit arises years later or a dispute occurs about coverage, they have cryptographic proof of the policy terms ready without needing to contact the insurer or the company.
 
 ## Third-Party Use
+
+The director/officer (second party) may hand the verified document to various third parties:
 
 **M&A Buyers / Acquirers**
 **Legacy Liability:** In a corporate acquisition, the buyer needs to verify the "Retroactive Date" and "Limits" of the seller's historical D&O policies. OCR-to-hash ensures the seller isn't "Editing" their history to hide past litigation risks.
@@ -109,11 +99,36 @@ The **Board Director** or **Corporate Officer** benefits from verification.
 - **Limit Inflation:** A private company editing a $1M "Small Business" policy to read $50M to attract a high-profile board member.
 - **Exclusion Erasure:** Deleting the page showing a "Regulatory Investigation Exclusion" before sending the policy to a potential investor.
 
-**Issuer Types**
+**Issuer Types (First Party)**
 
-**Specialty Carriers:** (Chubb, Beazley, AIG, Travelers).
-**Executive Liability Brokers:** (Marsh, Aon, WTW).
-**Legal Data Rooms:** (Intralinks, Merrill).
+- Specialty Carriers (Chubb, Beazley, AIG, Travelers)
+- Executive Liability Brokers (Marsh, Aon, WTW)
+- Legal Data Rooms (Intralinks, Merrill)
+
+**Privacy Salt:** Required. D&O policies often contain enumerable values—round dollar limits ($10M, $25M, $50M), standard retroactive dates, and publicly known company names. A competitor or plaintiff's attorney could feasibly enumerate combinations to reverse-engineer a company's insurance coverage strategy and historical risk profile, gaining unfair advantage in litigation or M&A negotiations. Salt protects these sensitive strategic details.
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require D&O insurers to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the insurer, and any subsequent changes to the policy as they happen—which may manifest as a new hash, a status change (cancelled, exhausted), or even a 404 (record deleted)
+- Receives structured content/metadata (coverage limits, policy periods, retroactive dates, exclusions)
+- Does **NOT** receive plaintext (company names, director names, specific litigation details)
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to directors/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Insurer cannot deny issuing the policy or coverage terms
+- **Timestamp proof:** Policy hash existed at a specific time (critical for claims-made coverage disputes)
+- **Regulatory audit:** State insurance departments can inspect the witness ledger for market conduct
+- **Resilience:** Verification works even if insurer's systems go down or the company exits the market
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Insurer domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
 
 ## Competition vs. Broker Confirmation
 

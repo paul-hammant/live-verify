@@ -19,53 +19,28 @@ It is your "Central Itinerary." It proves:
 
 **"Itinerary Padding"** is a common corporate fraud where employees "edit" their confirmation PDF to show a higher price (e.g., changing $150 to $250) or a "First Class" ticket when they actually flew "Economy." They then submit this to their company for reimbursement. Verified hashes bind the **Confirmation ID, Price, and Class of Service** to the OTA's domain.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #003580; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1); overflow: hidden;">
-  <div style="background: #003580; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.4em;"><span verifiable-text="start" data-for="ota">[</span>Booking.com</div>
-      <div style="font-size: 0.8em; opacity: 0.8;">Official Confirmation Receipt</div>
-    </div>
-    <div style="font-size: 1.2em;">🏨</div>
-  </div>
-<div style="padding: 30px;">
-    <div style="display: flex; justify-content: space-between; margin-bottom: 25px; font-size: 0.9em; color: #555;">
-      <div>
-        <strong>Guest:</strong> SARAH JANE SMITH<br>
-        <strong>Confirmation #:</strong> 9988776655
-      </div>
-      <div style="text-align: right;">
-        <strong>Date:</strong> 15 MAR 2026<br>
-        <strong>Status:</strong> CONFIRMED & PAID
-      </div>
-    </div>
-<div style="background: #f0f4f8; padding: 15px; border: 1px solid #d1d9e6; margin-bottom: 20px;">
-      <p style="font-weight: bold; margin-top: 0;">HOTEL EXCELSIOR - ZURICH</p>
-      <table style="width: 100%; font-size: 0.9em;">
-        <tr>
-          <td>Check-in:</td>
-          <td style="text-align: right;">Apr 10, 2026</td>
-        </tr>
-        <tr>
-          <td>Check-out:</td>
-          <td style="text-align: right;">Apr 15, 2026</td>
-        </tr>
-        <tr>
-          <td>Room Type:</td>
-          <td style="text-align: right;">Executive Suite (Non-Smoking)</td>
-        </tr>
-      </table>
-    </div>
-<table style="width: 100%; border-collapse: collapse; margin-bottom: 10px;">
-      <tr>
-        <td>Total Price (including VAT):</td>
-        <td style="text-align: right; font-weight: bold; font-size: 1.2em;">CHF 1,450.00</td>
-      </tr>
-    </table>
-<div data-verify-line="ota" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
-      title="Demo only: Booking.com doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:booking.com/v/9988776655 <span verifiable-text="end" data-for="ota">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <span verifiable-text="start" data-for="ota">[</span>
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;">Booking.com
+Official Confirmation Receipt
+═══════════════════════════════════════════════════════════════════
+
+Guest:          SARAH JANE SMITH              Date: 15 MAR 2026
+Confirmation #: 9988776655                    Status: CONFIRMED & PAID
+
+RESERVATION DETAILS
+───────────────────────────────────────────────────────────────────
+HOTEL EXCELSIOR - ZURICH
+
+Check-in:   Apr 10, 2026
+Check-out:  Apr 15, 2026
+Room Type:  Executive Suite (Non-Smoking)
+
+───────────────────────────────────────────────────────────────────
+Total Price (including VAT):                          CHF 1,450.00
+
+</pre>
+<span data-verify-line="ota">verify:booking.com/v/9988776655</span> <span verifiable-text="end" data-for="ota">]</span>
 </div>
 
 ## Data Verified
@@ -90,13 +65,17 @@ Shows the issuer domain (`booking.com`, `expedia.com`) and current reservation s
 
 ## Second-Party Use
 
-The **Traveler** benefits from verification.
+The **Traveler** (second party) receives the booking confirmation from the OTA (first party), **keeps it**, and may later hand it to third parties for various reasons, or never do so.
 
-**Expense Reimbursement:** Proving to an employer or a "Travel & Expense" platform that the $1,450 "Executive Suite" was a verified business cost and not an "Economy" room they "photoshopped" up to pocket the difference.
+**Personal Record:** They have their own verified copy of the reservation details and price paid. Most of the time, the document sits in their email or files—the verification value is latent, there *if needed*.
 
-**Visa Applications:** Providing a verified hotel confirmation to a foreign consulate. Consulates often reject un-verified OTA printouts as "Vapor-bookings," but a verified hash on the OTA's domain provides absolute trust.
+**Peace of Mind:** They can confirm at any time that it matches what the OTA's system recorded and hasn't been altered.
+
+**Future Optionality:** If an expense claim is disputed or a visa application is challenged, they have cryptographic proof ready without needing to contact the OTA.
 
 ## Third-Party Use
+
+The traveler (second party) may hand the verified document to various third parties:
 
 **Corporate Finance Departments**
 **Automatic Audit:** Using the hash to instantly validate itinerary data against the OTA's ledger, flagging "Screenshot Fraud" or deleted cancellation notices.
@@ -115,11 +94,36 @@ The **Traveler** benefits from verification.
 - **Status Faking:** Showing a "Confirmed" itinerary to get a travel visa, and then immediately cancelling the booking for a full refund.
 - **Class Inflation:** Editing "Premium Economy" to "Business Class" on an airline itinerary.
 
-**Issuer Types**
+**Issuer Types (First Party)**
 
-**Global OTAs:** (Expedia Group, Booking Holdings, Trip.com).
-**Direct Suppliers:** (Marriott, Hilton, United, Lufthansa).
-**Itinerary Aggregators:** (e.g., TripIt, Traxo).
+- Global OTAs (Expedia Group, Booking Holdings, Trip.com)
+- Direct Suppliers (Marriott, Hilton, United, Lufthansa)
+- Itinerary Aggregators (e.g., TripIt, Traxo)
+
+**Privacy Salt:** Not required. OTA booking confirmations contain many unpredictable variables that combine to create high entropy: unique confirmation numbers (typically 8-10 alphanumeric characters), guest names, specific check-in/check-out dates, individual hotel properties, and exact price amounts (including cents/decimals and currency conversions). The combination of these unique identifiers makes brute-force enumeration infeasible without salt.
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require OTAs to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the OTA, and any subsequent changes to the payload as they happen—which may manifest as a new hash, a status change (cancelled, checked-in, refunded), or even a 404 (record deleted)
+- Receives structured content/metadata (confirmation numbers, dates, prices, hotel IDs)
+- Does **NOT** receive plaintext (guest names, payment details, loyalty program numbers)
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to travelers/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** OTA cannot deny issuing the booking
+- **Timestamp proof:** Hash existed at a specific time
+- **Regulatory audit:** Tax authorities can inspect the witness ledger for expense fraud patterns
+- **Resilience:** Verification works even if OTA's systems go down
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **OTA domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
 
 ## Competition vs. API Sync (Direct)
 

@@ -16,47 +16,33 @@ These policies are critical for "Brownfield" redevelopments (turning old factori
 
 Fraud is high-stakes here: sellers often edit the "Retroactive Date" on their policy to hide that they weren't insured back in 1985 when the original leak happened. Verified hashes ensure the bank and the public are looking at the **true history of the safety net**.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: 'Helvetica', sans-serif; border: 2px solid #2e7d32; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-  <div style="background: #2e7d32; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="pollution">[</span>ACE AMERICAN INSURANCE CO.</div>
-      <div style="font-size: 0.8em; opacity: 0.8;">Pollution Legal Liability&reg;</div>
-    </div>
-    <div style="text-align: right;">
-      <div style="font-size: 0.8em;">Policy #: PLL-99228877-26</div>
-    </div>
-  </div>
-<div style="padding: 30px;">
-    <h2 style="text-align: center; color: #2e7d32; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Insurance Declarations</h2>
-<div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>First Named Insured:</strong> Industrial Reclamation Group, LLC</p>
-      <p><strong>Covered Location:</strong> 4500 Industrial Way, Newark, NJ (Former Lead Smelter)</p>
-<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
-        <tr style="background: #f1f8e9; border-bottom: 2px solid #2e7d32;">
-          <th style="text-align: left; padding: 8px;">Coverage Layer</th>
-          <th style="text-align: right; padding: 8px;">Limit of Liability</th>
-        </tr>
-        <tr>
-          <td style="padding: 8px; border-bottom: 1px solid #eee;">On-Site Cleanup Costs</td>
-          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 10,000,000</td>
-        </tr>
-        <tr>
-          <td style="padding: 8px; border-bottom: 1px solid #eee;">Third-Party Property Damage</td>
-          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 5,000,000</td>
-        </tr>
-        <tr>
-          <td style="padding: 8px; border-bottom: 1px solid #eee;">Sudden & Gradual Release</td>
-          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">Included</td>
-        </tr>
-      </table>
-<p style="margin-top: 20px;"><strong>Policy Period:</strong> March 01, 2026 to March 01, 2036 (10-Year Term)<br>
-      <strong>Retroactive Date:</strong> January 01, 1985</p>
-    </div>
-<div data-verify-line="pollution" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
-      title="Demo only: ACE American doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:chubb.com/environmental/v/PLL992288 <span verifiable-text="end" data-for="pollution">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <span verifiable-text="start" data-for="pollution">[</span>
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;">ACE AMERICAN INSURANCE CO.
+Pollution Legal Liability
+═══════════════════════════════════════════════════════════════════
+
+                    INSURANCE DECLARATIONS
+
+Policy #: PLL-99228877-26
+
+First Named Insured: Industrial Reclamation Group, LLC
+Covered Location:    4500 Industrial Way, Newark, NJ
+                     (Former Lead Smelter)
+
+COVERAGE LIMITS
+───────────────────────────────────────────────────────────────────
+Coverage Layer                                  Limit of Liability
+───────────────────────────────────────────────────────────────────
+On-Site Cleanup Costs                               $ 10,000,000
+Third-Party Property Damage                          $ 5,000,000
+Sudden & Gradual Release                                 Included
+
+Policy Period:    March 01, 2026 to March 01, 2036 (10-Year Term)
+Retroactive Date: January 01, 1985
+
+</pre>
+<span data-verify-line="pollution">verify:chubb.com/environmental/v/PLL992288</span> <span verifiable-text="end" data-for="pollution">]</span>
 </div>
 
 ## Data Verified
@@ -81,13 +67,17 @@ Shows the issuer domain (`chubb.com`, `aig.com`, `zurich.com`) and policy standi
 
 ## Second-Party Use
 
-The **Property Owner / Developer** benefits from verification.
+The **Property Owner / Developer** (second party) receives the pollution insurance policy from the insurer (first party), **keeps it**, and may later hand it to third parties for various reasons, or never do so.
 
-**Financing Brownfields:** Proving to a bank or equity partner that the old "Lead Smelter" site has a verified $10M cleanup policy. This allows the bank to lend on "Stigmatized" land because the environmental risk is verified as fully insured.
+**Personal Record:** They have their own verified copy of the environmental coverage. Most of the time, the policy sits in their project files—the verification value is latent, there *if needed*.
 
-**Government Grants:** Proving to the EPA or State DEP that the project meets the "Financial Assurance" requirements for a brownfield redevelopment grant.
+**Peace of Mind:** They can confirm at any time that the policy matches what the insurer's system recorded, including the critical retroactive date, and hasn't been altered.
+
+**Future Optionality:** If contamination is discovered or a dispute arises about coverage, they have cryptographic proof of the policy terms ready without needing to contact the insurer.
 
 ## Third-Party Use
+
+The property owner (second party) may hand the verified document to various third parties:
 
 **Environmental Regulators (EPA / State DEPs)**
 **Financial Assurance:** Ensuring that high-risk industrial operators (e.g., chemical plants or landfills) maintain verified, non-cancelled insurance to pay for future cleanup, preventing "Superfund" abandonments.
@@ -106,11 +96,36 @@ The **Property Owner / Developer** benefits from verification.
 - **Limit Inflation:** Editing a $1M "Limited" policy to look like a $10M "Full Site" policy to close a real estate deal.
 - **Gradual Exclusion:** Deleting the clause that excludes "Gradual Seepage" to make a cheap policy look like a comprehensive one.
 
-**Issuer Types**
+**Issuer Types (First Party)**
 
-**Specialty Carriers:** (Chubb, AIG, Great American, Ironshore).
-**Environmental MGAs.**
-**Environmental Law Firms:** (Hosting verified hashes for settlement funds).
+- Specialty Carriers (Chubb, AIG, Great American, Ironshore)
+- Environmental MGAs
+- Environmental Law Firms (hosting verified hashes for settlement funds)
+
+**Privacy Salt:** Required. Pollution insurance policies often contain enumerable values—round dollar limits ($1M, $5M, $10M), standard retroactive dates, and publicly known site addresses. A competitor or neighboring property owner could feasibly enumerate combinations to reverse-engineer a property's contamination history and coverage strategy, gaining unfair advantage in real estate negotiations or litigation. Salt protects these sensitive environmental and financial details.
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require pollution insurers to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the insurer, and any subsequent changes to the policy as they happen—which may manifest as a new hash, a status change (terminated, limit depleted), or even a 404 (record deleted)
+- Receives structured content/metadata (coverage limits, policy periods, retroactive dates, site addresses, release types)
+- Does **NOT** receive plaintext (owner names, specific contamination details, remediation plans)
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to property owners/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Insurer cannot deny issuing the policy or coverage terms
+- **Timestamp proof:** Policy hash existed at a specific time (critical for retroactive coverage disputes)
+- **Regulatory audit:** EPA can inspect the witness ledger for financial assurance compliance
+- **Resilience:** Verification works even if insurer's systems go down or the company exits the market
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Insurer domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
 
 ## Competition vs. Broker Letters
 

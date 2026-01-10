@@ -16,52 +16,29 @@ This one-page paper (usually an ACORD 25 form) is the "Proof of Protection." It 
 
 COI fraud is rampant. Contractors often buy a policy for one day, print the COI, and then cancel the policy immediately. They show the "valid" paper to get hired, but they are actually uninsured. OCR-to-hash provides a "Live Status" check to see if the policy was cancelled yesterday.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #999; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <div style="background: #eee; padding: 10px; border-bottom: 1px solid #000; display: flex; justify-content: space-between; align-items: center;">
-    <div style="font-weight: bold; font-size: 1.1em;"><span verifiable-text="start" data-for="coi">[</span>ACORD<sub>&reg;</sub> 25</div>
-    <div style="font-size: 0.8em; font-weight: bold;">CERTIFICATE OF LIABILITY INSURANCE</div>
-  </div>
-<div style="padding: 20px;">
-    <div style="display: flex; margin-bottom: 15px;">
-      <div style="width: 50%; border: 1px solid #000; padding: 5px; font-size: 0.8em;">
-        <strong>PRODUCER:</strong><br>
-        Marsh McLennan Agency<br>
-        123 Main St, Boston, MA
-      </div>
-      <div style="width: 50%; border: 1px solid #000; border-left: none; padding: 5px; font-size: 0.8em;">
-        <strong>INSURED:</strong><br>
-        Apex Construction Services, LLC<br>
-        400 Industrial Way<br>
-        Oakland, CA 94621
-      </div>
-    </div>
-<table style="width: 100%; border-collapse: collapse; font-size: 0.75em; border: 1px solid #000;">
-      <tr style="background: #f5f5f5; border-bottom: 1px solid #000;">
-        <th style="padding: 2px; text-align: left; border-right: 1px solid #000;">Type of Insurance</th>
-        <th style="padding: 2px; text-align: left; border-right: 1px solid #000;">Policy Number</th>
-        <th style="padding: 2px; text-align: right;">Limits</th>
-      </tr>
-      <tr>
-        <td style="padding: 2px; border-right: 1px solid #000;">General Liability</td>
-        <td style="padding: 2px; border-right: 1px solid #000;">GL-99887766</td>
-        <td style="padding: 2px; text-align: right;">$ 1,000,000</td>
-      </tr>
-      <tr>
-        <td style="padding: 2px; border-right: 1px solid #000;">Workers Comp</td>
-        <td style="padding: 2px; border-right: 1px solid #000;">WC-44221100</td>
-        <td style="padding: 2px; text-align: right;">Statutory</td>
-      </tr>
-    </table>
-<div style="margin-top: 15px; border: 1px solid #000; padding: 5px; font-size: 0.8em;">
-      <strong>CERTIFICATE HOLDER:</strong><br>
-      The City of Oakland<br>
-      1 Frank Ogawa Plaza, Oakland, CA
-    </div>
-<div data-verify-line="coi" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.7em; color: #555; text-align: center;"
-      title="Demo only: Insurer doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:marsh.com/coi/v/99887766 <span verifiable-text="end" data-for="coi">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <span verifiable-text="start" data-for="coi">[</span>
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;">ACORD 25               CERTIFICATE OF LIABILITY INSURANCE
+═══════════════════════════════════════════════════════════════════
+
+PRODUCER:                          INSURED:
+Marsh McLennan Agency              Apex Construction Services, LLC
+123 Main St, Boston, MA            400 Industrial Way
+                                   Oakland, CA 94621
+
+COVERAGE SUMMARY
+───────────────────────────────────────────────────────────────────
+Type of Insurance          Policy Number                    Limits
+───────────────────────────────────────────────────────────────────
+General Liability          GL-99887766                 $ 1,000,000
+Workers Comp               WC-44221100                   Statutory
+
+CERTIFICATE HOLDER:
+The City of Oakland
+1 Frank Ogawa Plaza, Oakland, CA
+
+</pre>
+<span data-verify-line="coi">verify:marsh.com/coi/v/99887766</span> <span verifiable-text="end" data-for="coi">]</span>
 </div>
 
 ## Data Verified
@@ -86,13 +63,17 @@ Shows the issuer domain (the Broker or Carrier) and the certificate standing.
 
 ## Second-Party Use
 
-The **Insured Contractor** benefits from verification.
+The **Contractor** (second party) receives the certificate of insurance from the broker or carrier (first party), **keeps it**, and may later hand it to third parties for various reasons, or never do so.
 
-**Site Access:** Proving to a security guard or project manager at a high-security construction site (e.g., a data center or airport) that their insurance is verified active. This prevents the "Monday Morning Lockout" where a crew is turned away because the office hasn't manually confirmed their COI yet.
+**Personal Record:** They have their own verified copy of the insurance coverage. Most of the time, the document sits in their business files—the verification value is latent, there *if needed*.
 
-**Bid Submissions:** Providing a verified COI with a project bid to prove "Insure-ability" and professionalism.
+**Peace of Mind:** They can confirm at any time that the certificate matches what the broker's system recorded and the policies haven't been cancelled.
+
+**Future Optionality:** If a project requires proof of insurance—whether for site access, bid submissions, or permit applications—they have cryptographic proof ready without needing to contact the broker.
 
 ## Third-Party Use
+
+The contractor (second party) may hand the verified document to various third parties:
 
 **Project Owners / Developers**
 **Liability Protection:** Ensuring that every contractor on a $100M project is fully insured. Verification prevents the common fraud where a contractor provides a COI, gets the contract, and then cancels the policy to save money.
@@ -112,11 +93,36 @@ The **Insured Contractor** benefits from verification.
 - **Date Stretching:** Changing an expired 2025 date to 2026.
 - **Fabricated Endorsements:** Claiming "Additional Insured" status on the paper COI when the endorsement was never actually purchased.
 
-**Issuer Types**
+**Issuer Types (First Party)**
 
-**Insurance Brokers:** (Marsh, Aon, local agencies).
-**Direct Carriers:** (Geico, Progressive, State Farm).
-**Compliance Tech:** (Certificate management vendors).
+- Insurance Brokers (Marsh, Aon, local agencies)
+- Direct Carriers (Geico, Progressive, State Farm)
+- Compliance Tech (Certificate management vendors)
+
+**Privacy Salt:** Not required. Certificates of insurance contain many unpredictable variables: contractor company names, unique policy numbers (often alphanumeric), specific coverage limits (exact dollar amounts), effective/expiration dates, certificate holder names, producer names and locations, and multiple policy types. The combination of these certificate-specific details creates sufficient entropy to prevent hash enumeration attacks.
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require insurance brokers to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the broker, and any subsequent changes to the certificate as they happen—which may manifest as a new hash, a status change (cancelled, superseded), or even a 404 (record deleted)
+- Receives structured content/metadata (policy numbers, coverage limits, effective dates, carrier names)
+- Does **NOT** receive plaintext (contractor financial details, proprietary risk assessments)
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to contractors/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Broker cannot deny issuing the certificate
+- **Timestamp proof:** Certificate hash existed at a specific time
+- **Regulatory audit:** State insurance departments can inspect the witness ledger
+- **Resilience:** Verification works even if broker's systems go down
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Broker domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
 
 ## Competition vs. Central Databases (ACORD)
 

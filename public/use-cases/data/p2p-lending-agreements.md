@@ -16,47 +16,34 @@ The **Lending Agreement** (or Promissory Note) is the legal contract that says: 
 
 **"Loan Padding"** is a common financial fraud where a borrower "edits" a P2P agreement to show a smaller debt than they actually have, or a higher "verified income" stream, to trick a traditional bank into giving them a mortgage. **"Duplicate Financing"** occurs when a borrower uses the same set of un-verified paper documents to take out three different loans from three different platforms at once. OCR-to-hash binds the **Loan ID, Amount, and APR** to the fintech platform's domain.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-  <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.2em; color: #002d62;"><span verifiable-text="start" data-for="p2p">[</span>LENDINGCLUB</div>
-    <div style="text-align: right; font-size: 0.8em; color: #666;">
-      Loan ID: LC-99228877-XK<br>
-      March 15, 2026
-    </div>
-  </div>
-<h3 style="text-align: center; text-transform: uppercase; margin-bottom: 25px; letter-spacing: 1px; color: #002d62;">Borrower Promissory Note</h3>
-<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
-    <p>This certifies a valid lending agreement exists for <strong>Borrower:</strong> John Jacob Doe.</p>
-<div style="background: #f0f4f8; padding: 15px; border: 1px solid #d1d9e6; margin: 20px 0;">
-      <table style="width: 100%; font-size: 0.95em;">
-        <tr>
-          <td>Principal Amount:</td>
-          <td style="text-align: right; font-weight: bold;">$ 10,000.00</td>
-        </tr>
-        <tr>
-          <td>Interest Rate (Fixed):</td>
-          <td style="text-align: right;">8.42% APR</td>
-        </tr>
-        <tr>
-          <td>Monthly Payment:</td>
-          <td style="text-align: right;">$ 315.42</td>
-        </tr>
-        <tr>
-          <td>Term:</td>
-          <td style="text-align: right;">36 Months</td>
-        </tr>
-      </table>
-    </div>
-<p><strong>Origination Date:</strong> March 1, 2026<br>
-    <strong>Maturity Date:</strong> March 1, 2029</p>
-  </div>
-<div style="margin-top: 40px; padding: 10px; border: 1px solid #ddd; font-size: 0.8em; color: #777; font-style: italic; text-align: center;">
-    This electronic record is cryptographically bound to the LendingClub private ledger. Alteration of this document is a violation of federal lending laws.
-  </div>
-<div data-verify-line="p2p" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
-      title="Demo only: LendingClub doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:lendingclub.com/v/99228877 <span verifiable-text="end" data-for="p2p">]</span>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <span verifiable-text="start" data-for="p2p">[</span>
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;">LENDINGCLUB
+═══════════════════════════════════════════════════════════════════
+
+                      BORROWER PROMISSORY NOTE
+
+Loan ID: LC-99228877-XK                            Date: 15 MAR 2026
+
+This certifies a valid lending agreement exists for:
+Borrower: John Jacob Doe
+
+LOAN TERMS
+───────────────────────────────────────────────────────────────────
+Principal Amount:                                       $ 10,000.00
+Interest Rate (Fixed):                                    8.42% APR
+Monthly Payment:                                           $ 315.42
+Term:                                                      36 Months
+
+Origination Date:                                      March 1, 2026
+Maturity Date:                                         March 1, 2029
+
+───────────────────────────────────────────────────────────────────
+This electronic record is cryptographically bound to the LendingClub
+private ledger. Alteration is a violation of federal lending laws.
+
+</pre>
+<span data-verify-line="p2p">verify:lendingclub.com/v/99228877</span> <span verifiable-text="end" data-for="p2p">]</span>
 </div>
 
 ## Data Verified
@@ -81,13 +68,17 @@ Shows the issuer domain (the P2P platform) and the current loan standing.
 
 ## Second-Party Use
 
-The **Borrower** benefits from verification.
+The **Borrower** (second party) receives the promissory note from the P2P platform (first party), **keeps it**, and may later hand it to third parties for various reasons, or never do so.
 
-**Debt Consolidation:** Proving to a new lender that their "Existing $10k Loan" is indeed only 8% APR and not a high-interest payday loan. Verification removes the "Risk Premium" often added by banks who can't verify fintech data.
+**Personal Record:** They have their own verified copy of the loan terms. Most of the time, the document sits in their files—the verification value is latent, there *if needed*.
 
-**Lease Applications:** Providing verified proof of "Fixed Monthly Obligations" to a landlord to demonstrate debt-to-income stability.
+**Peace of Mind:** They can confirm at any time that the note matches what the platform's system recorded and hasn't been altered.
+
+**Future Optionality:** If a dispute arises about payment terms or if they apply for additional financing, they have cryptographic proof ready without needing to contact the platform.
 
 ## Third-Party Use
+
+The borrower (second party) may hand the verified document to various third parties:
 
 **Traditional Banks (Mortgage Lenders)**
 **Debt Verification:** Before approving a home loan, the bank scans the P2P agreement. "Verified by LendingClub.com" ensures the borrower hasn't "photoshopped" a $50,000 debt down to $5,000 to hide their true leverage.
@@ -106,11 +97,36 @@ The **Borrower** benefits from verification.
 - **APR Tampering:** Editing a 25% "Bad Credit" interest rate to look like a 7% "Prime" rate.
 - **Phantom Origination:** Creating a fake loan agreement from a real platform to "wash" stolen money or commit identity theft.
 
-**Issuer Types**
+**Issuer Types (First Party)**
 
-**P2P Marketplaces:** (LendingClub, Prosper, Upstart).
-**Private Credit Funds.**
-**B2B Lending Platforms:** (e.g., Funding Circle).
+- P2P Marketplaces (LendingClub, Prosper, Upstart)
+- Private Credit Funds
+- B2B Lending Platforms (e.g., Funding Circle)
+
+**Privacy Salt:** Required. Unlike documents with many unpredictable variables, P2P lending agreements often contain enumerable values—round dollar amounts ($5k, $10k, $25k), standard APR tiers (6.99%, 8.42%, 12.99%), and common loan terms (36, 60 months). A competitor could feasibly enumerate combinations to reverse-engineer platform lending patterns and borrower risk profiles. Salt protects this sensitive financial intelligence.
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require P2P lending platforms to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the platform, and any subsequent changes to the payload as they happen—which may manifest as a new hash, a status change (paid in full, delinquent, charged off), or even a 404 (record deleted)
+- Receives structured content/metadata (loan IDs, principal amounts, APRs, payment terms, origination dates)
+- Does **NOT** receive plaintext (borrower names, SSNs, bank account details)
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to borrowers/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Platform cannot deny issuing the loan terms
+- **Timestamp proof:** Hash existed at a specific time
+- **Regulatory audit:** State banking commissions can inspect the witness ledger for predatory lending patterns
+- **Resilience:** Verification works even if platform's systems go down or the platform exits the market
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Platform domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
 
 ## Competition vs. API (Aggregators)
 

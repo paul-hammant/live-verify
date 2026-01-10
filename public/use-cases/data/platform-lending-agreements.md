@@ -14,59 +14,32 @@ In the e-commerce economy, platforms like **Shopify**, **Amazon**, and **Square*
 
 These digital agreements are the "Lien on Future Revenue." Fraud is rampant in the "Stacked Debt" market: a merchant might "edit" a Shopify agreement to hide that they already owe $50,000 to Amazon, allowing them to take out another illegal loan they can't afford. Similarly, they might use a fake "Satisfied" letter to hide an active lien. Verified hashes bind the **Advance Amount, Repayment Percentage, and Total Payback** to the platform's domain (e.g., `shopify.com` or `amazon.com`).
 
-<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1); overflow: hidden;">
-  <div style="background: #95bf47; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #5e8e3e;">
-    <div style="display: flex; align-items: center;">
-      <div style="font-size: 1.8em; margin-right: 10px;">🛍️</div>
-      <div style="font-weight: bold; font-size: 1.2em; letter-spacing: -0.5px;">shopify <span style="font-weight: normal; opacity: 0.8;">capital</span></div>
-    </div>
-    <div style="text-align: right;">
-      <div style="font-weight: bold; font-size: 0.9em;"><span verifiable-text="start" data-for="platform">[</span>FINANCING AGREEMENT</div>
-      <div style="font-size: 0.7em; opacity: 0.9;">Ref: SC-2026-992288</div>
-    </div>
-  </div>
-<div style="padding: 25px;">
-    <div style="display: flex; justify-content: space-between; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
-      <div style="font-size: 0.9em; line-height: 1.5; color: #333;">
-        <strong>Merchant:</strong> THE SPICY TACO JOINT LLC<br>
-        <strong>Account:</strong> shop_99228877-PRO<br>
-        <strong>Effective Date:</strong> 15 MAR 2026
-      </div>
-      <div style="text-align: right;">
-        <div style="font-size: 0.8em; color: #888; text-transform: uppercase;">Amount Advanced:</div>
-        <div style="font-size: 1.8em; font-weight: bold; color: #95bf47;">$ 50,000.00</div>
-      </div>
-    </div>
-<div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; border-radius: 4px; margin-bottom: 20px;">
-      <h4 style="margin-top: 0; color: #5e8e3e; font-size: 0.85em; text-transform: uppercase; border-bottom: 1px solid #ddd; padding-bottom: 5px;">VERIFIED REPAYMENT TERMS</h4>
-      <table style="width: 100%; font-size: 0.9em; line-height: 1.6;">
-        <tr>
-          <td><strong>Daily Remittance Rate:</strong></td>
-          <td style="text-align: right; font-weight: bold;">10.0% of Gross Sales</td>
-        </tr>
-        <tr>
-          <td><strong>Total Payout Amount:</strong></td>
-          <td style="text-align: right; font-weight: bold;">$ 55,000.00</td>
-        </tr>
-        <tr>
-          <td><strong>Target Completion:</strong></td>
-          <td style="text-align: right;">September 2026 (Est)</td>
-        </tr>
-      </table>
-    </div>
-<div style="font-size: 0.75em; color: #666; font-style: italic; text-align: center;">
-      "The Merchant has sold a portion of its future receivables to Shopify Capital. This agreement creates a legal security interest under UCC Article 9."
-    </div>
-  </div>
-<div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #999; text-align: center;">
-    <div data-verify-line="platform" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
-      title="Demo only: Shopify doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:shopify.com/v/SC99228877 <span verifiable-text="end" data-for="platform">]</span>
-    </div>
-    <div style="font-size: 0.7em; color: #999; margin-top: 10px;">
-      Scan to verify current outstanding balance, daily remittance status, and lien priority.
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <span verifiable-text="start" data-for="platform">[</span>
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;">SHOPIFY CAPITAL
+Financing Agreement
+═══════════════════════════════════════════════════════════════════
+
+Ref: SC-2026-992288                            Effective: 15 MAR 2026
+
+Merchant:     THE SPICY TACO JOINT LLC
+Account:      shop_99228877-PRO
+
+AMOUNT ADVANCED:                                        $ 50,000.00
+
+VERIFIED REPAYMENT TERMS
+───────────────────────────────────────────────────────────────────
+Daily Remittance Rate:                           10.0% of Gross Sales
+Total Payout Amount:                                    $ 55,000.00
+Target Completion:                               September 2026 (Est)
+
+───────────────────────────────────────────────────────────────────
+"The Merchant has sold a portion of its future receivables to
+Shopify Capital. This agreement creates a legal security interest
+under UCC Article 9."
+
+</pre>
+<span data-verify-line="platform">verify:shopify.com/v/SC99228877</span> <span verifiable-text="end" data-for="platform">]</span>
 </div>
 
 ## Data Verified
@@ -91,22 +64,29 @@ Shows the issuer domain (`shopify.com`, `amazon.com`, `square.com`) and the fina
 
 ## Second-Party Use
 
-The **Merchant (Business Owner)** benefits from verification.
+The **Merchant** (second party) receives the financing agreement from the platform (first party), **keeps it**, and may later hand it to third parties for various reasons, or never do so.
 
-**Secondary Financing:** A merchant who has almost paid off their Shopify advance can provide the verified hash to a second lender. The second bank can see **"VERIFIED BALANCE: $2,500 REMAINING"** on their phone, allowing them to pre-approve a new loan that will close the moment the first one finishes.
+**Personal Record:** The merchant has their own verified copy of the financing terms. Most of the time, the document sits in their business records—the verification value is latent, there *if needed*.
 
-**Business Sale (Exit):** When selling an e-commerce store, the owner provides verified hashes of all platform debt. "Verified by Shopify" ensures the buyer that there are no "Hidden Liens" on the revenue, allowing the deal to close with cryptographic certainty.
+**Peace of Mind:** The merchant can confirm at any time that the agreement matches what the platform's system recorded and hasn't been altered since they received it.
+
+**Future Optionality:** If a dispute arises—whether about repayment amounts, remittance rates, or early payoff calculations—the merchant has cryptographic proof ready without needing to contact the platform.
 
 ## Third-Party Use
 
-**Alternative Lenders (MCA Companies)**
-**Anti-Stacking Vetting:** Before funding a merchant, the lender scans the verified hashes of the merchant's other platform accounts. Verification ensures the merchant isn't "Lying by Omission" about existing 10% daily sweeps that would make a new loan unsustainable.
+The merchant (second party) may hand the verified document to various third parties:
 
-**Business Brokers / M&A Advisors**
-**Revenue Diligence:** Verifying that the "Net Income" shown on a profit-and-loss (P&L) statement accurately reflects the "Cost of Capital" from platform financing, preventing inflated valuation scams.
+**Alternative Lenders (Secondary Financing)**
+A merchant who has almost paid off their Shopify advance provides the verified hash to a second lender. The lender can see **"VERIFIED BALANCE: $2,500 REMAINING"** instantly, allowing them to pre-approve a new loan that closes the moment the first one finishes—without calling Shopify.
 
-**Lenders and Factoring Firms**
-**Lien Priority Audit:** Verifying the exact date of the platform's UCC filing to ensure the lender's own "First Position" status isn't being compromised by an undisclosed platform advance.
+**Business Buyers (Exit / M&A)**
+When selling an e-commerce store, the owner provides verified hashes of all platform debt. "Verified by Shopify" ensures the buyer there are no hidden liens on revenue, allowing the deal to close with cryptographic certainty. Brokers can verify that "Net Income" accurately reflects the cost of capital.
+
+**Factoring Firms (Lien Priority)**
+Before advancing against receivables, the factoring firm verifies the exact date of the platform's UCC filing to ensure their own "First Position" status isn't compromised by an undisclosed platform advance.
+
+**Financial Regulators (Complaint / Investigation)**
+The merchant submits verified agreements as part of a regulatory complaint about predatory lending terms. The regulator can confirm the exact terms agreed—the platform cannot claim "we never offered that rate."
 
 ## Verification Architecture
 
@@ -116,13 +96,36 @@ The **Merchant (Business Owner)** benefits from verification.
 - **Ghost Payoffs:** Creating a fake "Success" email from Shopify to hide an active $100,000 debt.
 - **Identity Mimicry:** Using a high-performing store's ID to cover for a failing store's loan application.
 
-**Issuer Types**
+**Issuer Types (First Party)**
 
-**Global E-commerce Platforms.**
-**Point-of-Sale (POS) Providers.**
-**B2B Buy-Now-Pay-Later (BNPL) Firms.**
+- Global E-commerce Platforms (Shopify, Amazon, eBay)
+- Point-of-Sale (POS) Providers (Square, Toast, Clover)
+- B2B Buy-Now-Pay-Later (BNPL) Firms
 
-**Privacy Salt:** Highly Critical. Merchant revenue and debt levels are sensitive trade secrets. The hash must be salted and access restricted to authorized financial institutions.
+**Privacy Salt:** Required. Unlike documents with many unpredictable variables, platform lending agreements contain enumerable values—round dollar amounts, standard percentage tiers (5%, 10%, 15%), and publicly known merchant storefronts. A competitor could feasibly enumerate combinations to reverse-engineer a rival's debt position and gain unfair market intelligence. Salt protects these trade secrets.
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require platforms offering merchant financing to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the platform, and any subsequent changes to the agreement as they happen—which may manifest as a new hash, a status change (satisfied, default), or even a 404 (record deleted)
+- Receives structured content/metadata (amounts, percentages, dates, UCC filing numbers)
+- Does **NOT** receive plaintext (merchant names, bank account details)
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to merchants/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Platform cannot deny issuing the financing terms
+- **Timestamp proof:** Agreement hash existed at a specific time (critical for UCC priority)
+- **Regulatory audit:** State banking commissions can inspect the witness ledger for predatory lending patterns
+- **Resilience:** Verification works even if platform's systems go down or the platform exits the market
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Platform domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
 
 ## Rationale
 

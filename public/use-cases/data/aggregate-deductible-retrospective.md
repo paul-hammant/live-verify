@@ -8,67 +8,34 @@ tags: ["aggregate", "deductible", "retrospective", "insurance", "risk", "managem
 furtherDerivations: 1
 ---
 
-<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #000; background: #fff; padding: 0;">
-  <div style="background: #000; color: #fff; padding: 15px; text-align: right;">
-    <h3 style="margin: 0;"><span verifiable-text="start" data-for="retro">[</span>PREMIUM ADJUSTMENT STATEMENT</h3>
-    <div style="font-size: 0.8em;">CONFIDENTIAL</div>
-  </div>
-<div style="padding: 30px;">
-    <div style="display: flex; justify-content: space-between; margin-bottom: 30px;">
-      <div>
-        <strong>Insurer:</strong><br>
-        ACE American Insurance Co.<br>
-        123 Market St, Philadelphia, PA
-      </div>
-      <div style="text-align: right;">
-        <strong>Insured:</strong><br>
-        MegaCorp Logistics, Inc.<br>
-        Policy No: WC-9922-88<br>
-        Adjustment Period: 3rd (36 Months)
-      </div>
-    </div>
-<table style="width: 100%; border-collapse: collapse; font-size: 0.9em;">
-      <tr style="border-bottom: 2px solid #000;">
-        <th style="text-align: left; padding: 5px;">Description</th>
-        <th style="text-align: right; padding: 5px;">Amount</th>
-      </tr>
-      <tr>
-        <td style="padding: 5px;">Standard Premium</td>
-        <td style="text-align: right; padding: 5px;">$2,500,000</td>
-      </tr>
-      <tr>
-        <td style="padding: 5px;">Incurred Losses (Paid + Reserved)</td>
-        <td style="text-align: right; padding: 5px;">$1,850,000</td>
-      </tr>
-      <tr>
-        <td style="padding: 5px;">Basic Premium Factor (0.25)</td>
-        <td style="text-align: right; padding: 5px;">$625,000</td>
-      </tr>
-      <tr>
-        <td style="padding: 5px;">Converted Losses (x 1.10)</td>
-        <td style="text-align: right; padding: 5px;">$2,035,000</td>
-      </tr>
-      <tr>
-        <td style="padding: 5px;"><strong>Retrospective Premium</strong></td>
-        <td style="text-align: right; padding: 5px;"><strong>$2,660,000</strong></td>
-      </tr>
-      <tr style="border-top: 1px solid #ccc;">
-        <td style="padding: 5px;">Previously Paid</td>
-        <td style="text-align: right; padding: 5px;">$2,500,000</td>
-      </tr>
-      <tr style="border-top: 2px solid #000; font-weight: bold;">
-        <td style="padding: 5px;">ADDITIONAL PREMIUM DUE</td>
-        <td style="text-align: right; padding: 5px;">$160,000</td>
-      </tr>
-    </table>
-<div style="margin-top: 20px; font-size: 0.8em; color: #555;">
-      * Subject to Aggregate Deductible Limit of $3,000,000.
-    </div>
-<div data-verify-line="retro" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
-      title="Demo only: Insurer doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:chubb.com/retro/v/z8x7c6 <span verifiable-text="end" data-for="retro">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <span verifiable-text="start" data-for="retro">[</span>
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;">PREMIUM ADJUSTMENT STATEMENT
+CONFIDENTIAL
+═══════════════════════════════════════════════════════════════════
+
+Insurer:  ACE American Insurance Co.     Insured:   MegaCorp Logistics, Inc.
+          123 Market St, Philadelphia    Policy No: WC-9922-88
+                                         Adjustment Period: 3rd (36 Months)
+
+RETROSPECTIVE CALCULATION
+───────────────────────────────────────────────────────────────────
+Description                                                 Amount
+───────────────────────────────────────────────────────────────────
+Standard Premium                                        $2,500,000
+Incurred Losses (Paid + Reserved)                       $1,850,000
+Basic Premium Factor (0.25)                               $625,000
+Converted Losses (x 1.10)                               $2,035,000
+───────────────────────────────────────────────────────────────────
+Retrospective Premium                                   $2,660,000
+Previously Paid                                         $2,500,000
+───────────────────────────────────────────────────────────────────
+ADDITIONAL PREMIUM DUE                                    $160,000
+
+* Subject to Aggregate Deductible Limit of $3,000,000.
+
+</pre>
+  <span data-verify-line="retro">verify:chubb.com/retro/v/z8x7c6</span> <span verifiable-text="end" data-for="retro">]</span>
 </div>
 
 ## Data Verified
@@ -91,22 +58,26 @@ Shows the issuer domain (the Insurance Carrier) and the document validity.
 
 ## Second-Party Use
 
-The **Insured** (corporate risk manager) benefits from verification.
+The **Insured** (second party) receives the premium adjustment statement from the insurance carrier (first party), **keeps it**, and may later hand it to third parties for various reasons, or never do so.
 
-**Internal Audit:** Proving to the CFO that the $160,000 additional premium bill is legitimate and matches the carrier's official record, justifying the wire transfer.
+**Personal Record:** The insured has their own verified copy of the retrospective premium calculation. Most of the time, the document sits in their risk management files—the verification value is latent, there *if needed*.
 
-**Collateral negotiation:** Proving to a bank (issuing a Letter of Credit) that the required collateral amount has decreased, allowing them to release tied-up capital.
+**Peace of Mind:** The insured can confirm at any time that the calculation matches what the carrier's system recorded and hasn't been altered since they received it.
+
+**Future Optionality:** If a dispute arises about premium amounts, or if they need to prove collateral requirements to a bank, the insured has cryptographic proof ready without needing to contact the carrier.
 
 ## Third-Party Use
 
+The insured (second party) may hand the verified document to various third parties:
+
 **New Insurers (Underwriters)**
-**Loss History Verification:** When a company switches insurers, the new underwriter demands "Loss Runs" (5-year history). Companies often manipulate these PDF reports to hide bad claims and get cheaper rates. Verified documents prevent this fraud.
+When a company switches insurers, the new underwriter demands "Loss Runs" (5-year history). Companies often manipulate these PDF reports to hide bad claims and get cheaper rates. Verified documents prevent this fraud.
 
 **Reinsurers**
-**Treaty Compliance:** Reinsurers need to verify that the primary carrier is calculating retro premiums correctly according to the treaty terms.
+Reinsurers need to verify that the primary carrier is calculating retro premiums correctly according to the treaty terms.
 
 **M&A Due Diligence**
-**Liability Assessment:** In a corporate acquisition, the buyer needs to know if the target company has a "ticking time bomb" of retrospective premium adjustments waiting to be billed. Verified adjustment statements reveal the true liability.
+In a corporate acquisition, the buyer needs to know if the target company has a "ticking time bomb" of retrospective premium adjustments waiting to be billed. Verified adjustment statements reveal the true liability.
 
 ## Verification Architecture
 
@@ -116,10 +87,35 @@ The **Insured** (corporate risk manager) benefits from verification.
 - **Omission:** Deleting pages of large claims from the report.
 - **Fake Paid status:** Forging a document saying "All retro premiums paid" to avoid disclosing a liability during M&A.
 
-**Issuer Types**
+**Issuer Types (First Party)**
 
-**Commercial Carriers:** (Chubb, Travelers, Zurich, AIG, etc.)
-**Third Party Administrators (TPAs):** (Sedgwick, Gallagher Bassett) who handle claims and issue loss runs.
+- Commercial Carriers (Chubb, Travelers, Zurich, AIG, etc.)
+- Third Party Administrators (TPAs) (Sedgwick, Gallagher Bassett) who handle claims and issue loss runs
+
+**Privacy Salt:** Required. Retrospective premium adjustments contain enumerable values—round dollar amounts for standard premiums, predictable loss conversion factors (1.10, 1.15), and common policy periods. A competitor could feasibly enumerate combinations to reverse-engineer a company's risk profile and undercut their renewal pricing. Salt protects these competitive insurance positions.
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require insurance carriers to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the carrier, and any subsequent changes to the payload as they happen—which may manifest as a new hash, a status change (void, disputed), or even a 404 (record deleted)
+- Receives structured content/metadata (policy numbers, adjustment periods, premium amounts, loss figures)
+- Does **NOT** receive plaintext (insured company names, specific claim details)
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to insureds/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Carrier cannot deny issuing the premium adjustment
+- **Timestamp proof:** Calculation existed at a specific time
+- **Regulatory audit:** State insurance commissioners can inspect the witness ledger for rate manipulation
+- **Resilience:** Verification works even if carrier's systems go down
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Carrier domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
 
 ## Competition vs. Broker Portals
 

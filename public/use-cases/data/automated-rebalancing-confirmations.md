@@ -16,49 +16,31 @@ This often involves "Tax-Loss Harvesting"—selling a losing stock just to captu
 
 These trades happen by the thousands every second. An **Automated Rebalancing Confirmation** is your receipt. It proves to the IRS that these trades were legitimate algorithmic moves and not a "wash sale" (an illegal tax dodge).
 
-<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ddd; background: #fff; padding: 0; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-  <div style="background: #1a237e; color: #fff; padding: 20px; text-align: center;">
-    <h3 style="margin: 0; letter-spacing: 1px;"><span verifiable-text="start" data-for="rebal">[</span>WEALTHFRONT REBALANCING NOTICE</h3>
-    <div style="font-size: 0.8em; margin-top: 5px;">AUTOMATED PORTFOLIO MANAGEMENT</div>
-  </div>
-<div style="padding: 30px;">
-    <div style="display: flex; justify-content: space-between; font-size: 0.9em; margin-bottom: 20px; color: #555;">
-      <div>
-        <strong>Account:</strong> XXXX-9988<br>
-        <strong>Type:</strong> Individual Taxable
-      </div>
-      <div style="text-align: right;">
-        <strong>Date:</strong> 15 SEP 2026<br>
-        <strong>Transaction:</strong> REB-998877
-      </div>
-    </div>
-<div style="font-size: 0.95em; line-height: 1.5; color: #333;">
-      <p>Hello <strong>Sarah Connor</strong>,</p>
-      <p>Your portfolio was automatically rebalanced today to maintain your 9.0/10 risk score and capture tax-loss harvesting opportunities.</p>
-<table style="width: 100%; border-collapse: collapse; margin-top: 15px;">
-        <tr style="border-bottom: 1px solid #eee; background: #f9f9f9;">
-          <th style="text-align: left; padding: 8px;">Security</th>
-          <th style="text-align: center; padding: 8px;">Action</th>
-          <th style="text-align: right; padding: 8px;">Net Gain/Loss</th>
-        </tr>
-        <tr>
-          <td style="padding: 8px;">VTI (Vanguard Total Stock)</td>
-          <td style="text-align: center; padding: 8px; color: #c62828;">SOLD</td>
-          <td style="text-align: right; padding: 8px;">-$ 1,250.00</td>
-        </tr>
-        <tr>
-          <td style="padding: 8px;">ITOT (iShares Core S&P)</td>
-          <td style="text-align: center; padding: 8px; color: #2e7d32;">BOUGHT</td>
-          <td style="text-align: right; padding: 8px;">$ 1,250.00</td>
-        </tr>
-      </table>
-<p style="margin-top: 20px; font-weight: bold; color: #2e7d32;">Estimated Tax Savings: $ 312.50</p>
-    </div>
-<div data-verify-line="rebal" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
-      title="Demo only: Wealthfront doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:wealthfront.com/confirms/v/x9y8z7 <span verifiable-text="end" data-for="rebal">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <span verifiable-text="start" data-for="rebal">[</span>
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;">WEALTHFRONT REBALANCING NOTICE
+Automated Portfolio Management
+═══════════════════════════════════════════════════════════════════
+
+Account:      XXXX-9988                     Date:        15 SEP 2026
+Type:         Individual Taxable            Transaction: REB-998877
+
+Hello Sarah Connor,
+
+Your portfolio was automatically rebalanced today to maintain your
+9.0/10 risk score and capture tax-loss harvesting opportunities.
+
+REBALANCING ACTIVITY
+───────────────────────────────────────────────────────────────────
+Security                              Action         Net Gain/Loss
+───────────────────────────────────────────────────────────────────
+VTI (Vanguard Total Stock)            SOLD           -$ 1,250.00
+ITOT (iShares Core S&P)               BOUGHT          $ 1,250.00
+
+Estimated Tax Savings: $ 312.50
+
+</pre>
+  <span data-verify-line="rebal">verify:wealthfront.com/confirms/v/x9y8z7</span> <span verifiable-text="end" data-for="rebal">]</span>
 </div>
 
 ## Data Verified
@@ -81,22 +63,26 @@ Shows the issuer domain (`wealthfront.com`, `betterment.com`) and the status of 
 
 ## Second-Party Use
 
-The **Investor** benefits from verification.
+The **Investor** (second party) receives the rebalancing confirmation from the robo-advisor (first party), **keeps it**, and may later hand it to third parties for various reasons, or never do so.
 
-**Tax Audit Protection:** Proving to the IRS that the $1,250 loss in VTI wasn't a "fake trade" to evade taxes, but was part of a verified, automated Tax-Loss Harvesting strategy. This helps defeat "Wash Sale" accusations.
+**Personal Record:** The investor has their own verified copy of automated trades. Most of the time, the document sits in their investment records—the verification value is latent, there *if needed*.
 
-**Dispute Resolution:** If the investor's risk level was supposed to be "Conservative" but the rebalancing confirmation shows a "9.0/10 High Risk" allocation, the verified document is proof of a software/algorithmic error.
+**Peace of Mind:** The investor can confirm at any time that the confirmation matches what the platform's system recorded and hasn't been altered since they received it.
+
+**Future Optionality:** If an IRS audit arises, a dispute about algorithm performance occurs, or a lender needs to verify asset movements, the investor has cryptographic proof ready without needing to contact the robo-advisor.
 
 ## Third-Party Use
 
+The investor (second party) may hand the verified document to various third parties:
+
 **The IRS / Tax Authorities**
-**Wash Sale Audit:** Verifying that the automated platform correctly identified "Substantially Identical" securities (e.g., switching from VTI to ITOT) and didn't trigger a wash sale violation.
+Verifying that the automated platform correctly identified "Substantially Identical" securities (e.g., switching from VTI to ITOT) and didn't trigger a wash sale violation.
 
 **Mortgage Lenders**
-**Asset Verification:** Lenders analyzing "Source of Downpayment" often see thousands of small trades in robo-advisor accounts. Verified confirmations simplify the review of capital gains/losses impacting the borrower's cash position.
+Lenders analyzing "Source of Downpayment" often see thousands of small trades in robo-advisor accounts. Verified confirmations simplify the review of capital gains/losses impacting the borrower's cash position.
 
 **FINRA / SEC Regulators**
-**Algorithm Audits:** Regulators can verify that the trades described in the investor's confirmation match the actual execution logs of the firm, ensuring the algorithm is operating as described in the prospectus.
+Regulators can verify that the trades described in the investor's confirmation match the actual execution logs of the firm, ensuring the algorithm is operating as described in the prospectus.
 
 ## Verification Architecture
 
@@ -106,10 +92,35 @@ The **Investor** benefits from verification.
 - **Hiding Gains:** Editing a confirmation to turn a $10,000 gain into a $10,000 loss before sending records to an accountant or the IRS.
 - **Wash-Sale Concealment:** Deleting the "Purchase" leg of a trade to hide that a loss was immediately disqualified by a repurchase.
 
-**Issuer Types**
+**Issuer Types (First Party)**
 
-**Robo-Advisors:** (Wealthfront, Betterment, Acorns).
-**Traditional Firms:** (Vanguard Personal Advisor, Schwab Intelligent Portfolios).
+- Robo-Advisors (Wealthfront, Betterment, Acorns)
+- Traditional Firms (Vanguard Personal Advisor, Schwab Intelligent Portfolios)
+
+**Privacy Salt:** Not required. Rebalancing confirmations contain highly unpredictable variables—unique account numbers, specific transaction IDs, precise dates and timestamps, investor names, exact security tickers, specific share quantities, and detailed gain/loss calculations with many decimal places. These elements combined provide sufficient entropy that enumeration attacks are infeasible. Adding salt would provide no additional security benefit.
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require robo-advisors to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the robo-advisor, and any subsequent changes to the payload as they happen—which may manifest as a new hash, a status change (cancelled, corrected), or even a 404 (record deleted)
+- Receives structured content/metadata (account IDs, transaction dates, securities traded, gain/loss amounts)
+- Does **NOT** receive plaintext (investor names, account balances, personal financial details)
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to investors/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Robo-advisor cannot deny executing the rebalancing trades
+- **Timestamp proof:** Trades occurred at a specific time (critical for tax-loss harvesting timing)
+- **Regulatory audit:** SEC/FINRA can inspect the witness ledger for algorithm compliance
+- **Resilience:** Verification works even if robo-advisor's systems go down
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Robo-advisor domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
 
 ## Competition vs. 1099-B Forms
 

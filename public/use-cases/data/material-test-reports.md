@@ -8,53 +8,33 @@ tags: ["mtr", "mill-certificate", "steel-testing", "material-science", "structur
 furtherDerivations: 1
 ---
 
-<div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 1px solid #000; background: #fff; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-  <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
-    <strong><span verifiable-text="start" data-for="mtr">[</span>SHEFFIELD STEEL FORGE, LTD.</strong><br>
-    CERTIFIED MATERIAL TEST REPORT (CMTR)<br>
-    ---------------------------------------
-  </div>
-<div style="font-size: 0.85em; line-height: 1.4;">
-    <div style="display: flex; justify-content: space-between;">
-      <div>
-        <strong>Customer:</strong> Apex Structural Engineering<br>
-        <strong>Heat Number:</strong> HEAT-992288-X
-      </div>
-      <div style="text-align: right;">
-        <strong>Report #:</strong> MTR-2026-042<br>
-        <strong>Date:</strong> 15 MAR 2026
-      </div>
-    </div>
-<div style="margin: 15px 0; border: 1px solid #000; padding: 10px; background: #f9f9f9;">
-      <strong>MATERIAL SPECIFICATION: ASTM A36 / ASME SA36</strong><br>
-      Product: Structural Steel I-Beam (12" x 24')<br>
-      Quantity: 120 Pieces
-    </div>
-<table style="width: 100%; border-collapse: collapse; margin-bottom: 10px; font-size: 0.9em;">
-      <tr style="border-bottom: 1px solid #000; font-weight: bold;">
-        <th style="text-align: left;">Element / Test</th>
-        <th style="text-align: right;">Result</th>
-        <th style="text-align: right;">Limit (Max)</th>
-      </tr>
-      <tr>
-        <td>Carbon (C)</td>
-        <td style="text-align: right;">0.24%</td>
-        <td style="text-align: right;">0.26%</td>
-      </tr>
-      <tr>
-        <td>Yield Strength</td>
-        <td style="text-align: right;">38,500 PSI</td>
-        <td style="text-align: right;">36,000 (Min)</td>
-      </tr>
-    </table>
-<div style="margin-top: 20px; font-size: 0.8em; font-style: italic; color: #555;">
-      We hereby certify that the material has been tested and found to be in compliance with the above listed specifications.
-    </div>
-<div data-verify-line="mtr" style="border-top: 1px dashed #999; margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #555; text-align: center;"
-      title="Demo only: Steel mill doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:sheffield-steel.co.uk/mtr/v/HEAT992288 <span verifiable-text="end" data-for="mtr">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <span verifiable-text="start" data-for="mtr">[</span>
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;">SHEFFIELD STEEL FORGE, LTD.
+═══════════════════════════════════════════════════════════════════
+
+              CERTIFIED MATERIAL TEST REPORT (CMTR)
+
+Customer:     Apex Structural Engineering   Report #: MTR-2026-042
+Heat Number:  HEAT-992288-X                 Date:     15 MAR 2026
+
+MATERIAL SPECIFICATION: ASTM A36 / ASME SA36
+───────────────────────────────────────────────────────────────────
+Product:  Structural Steel I-Beam (12" x 24')
+Quantity: 120 Pieces
+
+TEST RESULTS
+───────────────────────────────────────────────────────────────────
+Element / Test                         Result          Limit (Max)
+───────────────────────────────────────────────────────────────────
+Carbon (C)                              0.24%               0.26%
+Yield Strength                     38,500 PSI         36,000 (Min)
+
+We hereby certify that the material has been tested and found to
+be in compliance with the above listed specifications.
+
+</pre>
+<span data-verify-line="mtr">verify:sheffield-steel.co.uk/mtr/v/HEAT992288</span> <span verifiable-text="end" data-for="mtr">]</span>
 </div>
 
 ## Data Verified
@@ -79,13 +59,17 @@ Shows the issuer domain (the Mill or Testing Lab) and current batch standing.
 
 ## Second-Party Use
 
-The **Structural Engineer / Fabricator** benefits from verification.
+The **Structural Engineer / Fabricator** (second party) receives the material test report from the mill (first party), **keeps it**, and may later hand it to third parties for various reasons, or never do so.
 
-**Quality Control:** Proving to a project owner (e.g., a city bridge authority) that the steel being used isn't "Counterfeit" or "Sub-standard." A verified hash from the mill's domain prevents "Paperwork Gaps" that can shut down a multi-million dollar construction site for weeks.
+**Personal Record:** They have their own verified copy of what steel they purchased and its certified properties. Most of the time, the document sits in their project files—the verification value is latent, there *if needed*.
 
-**Legal Defense:** If a structure fails 20 years later, the fabricator has an immutable digital record proving they purchased and verified material that met all safety specs at the time of construction.
+**Peace of Mind:** They can confirm at any time that the MTR matches what the mill's system recorded and hasn't been altered since they received it.
+
+**Future Optionality:** If a structure fails 20 years later or a project inspection is challenged, they have cryptographic proof ready without needing to contact the mill.
 
 ## Third-Party Use
+
+The structural engineer / fabricator (second party) may hand the verified document to various third parties:
 
 **Building Inspectors / DOT Officers**
 **Field Audit:** Walking through a job-site trailer, the inspector scans the MTRs. "Verified by Sheffield-Steel" ensures the contractor isn't using "Ghost MTRs" to hide the use of cheap, un-vetted imported steel in a critical load-bearing bridge.
@@ -104,11 +88,36 @@ The **Structural Engineer / Fabricator** benefits from verification.
 - **Data Smoothing:** Editing a PDF to change a "0.28% Carbon" (Fail) to "0.24% Carbon" (Pass) to avoid scrapping a $50,000 batch of steel.
 - **Mill Impersonation:** Small distributors creating fake MTRs on the letterhead of famous mills like Nucor or ArcelorMittal to sell un-vetted inventory.
 
-**Issuer Types**
+**Issuer Types (First Party)**
 
-**Steel Mills / Foundries:** (e.g., Nucor, Nippon Steel, ArcelorMittal).
-**Independent Testing Labs:** (ISO 17025 accredited).
-**Material Aggregators:** (e.g., MetalTrace, Steelpoint - hosting the hashes).
+- Steel Mills / Foundries (e.g., Nucor, Nippon Steel, ArcelorMittal)
+- Independent Testing Labs (ISO 17025 accredited)
+- Material Aggregators (e.g., MetalTrace, Steelpoint - hosting the hashes)
+
+**Privacy Salt:** Required. Unlike documents with many unpredictable variables, material test reports often contain enumerable values—common alloy grades (A36, A572), round test numbers (yield strength in standard PSI increments), and publicly known heat number patterns. A competitor could feasibly enumerate combinations to reverse-engineer a mill's production batches and gain unfair market intelligence. Salt protects these trade secrets.
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require mills and testing labs to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the mill, and any subsequent changes to the payload as they happen—which may manifest as a new hash, a status change, or even a 404 (record deleted)
+- Receives structured content/metadata (heat numbers, material grades, test results, dates)
+- Does **NOT** receive plaintext (customer names, project details, proprietary alloy formulas)
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to fabricators/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Mill cannot deny issuing the certificate
+- **Timestamp proof:** Hash existed at a specific time
+- **Regulatory audit:** Building code authorities can inspect the witness ledger
+- **Resilience:** Verification works even if mill's systems go down
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Mill domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
 
 ## Competition vs. EDI / Blockchain (MetalBlock)
 

@@ -16,55 +16,32 @@ Every year, the bank sends you an **Annual Escrow Analysis**. It tells you if yo
 
 Because banks manage millions of these accounts, clerical errors are frequent. Verified statements allow homeowners to prove the bank's math is wrong if a "Shortage Notice" doesn't match the county's actual tax bill.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-  <div style="background: #003366; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="escrow">[</span>MR. COOPER MORTGAGE</div>
-      <div style="font-size: 0.8em;">Annual Escrow Account Disclosure Statement</div>
-    </div>
-    <div style="text-align: right;">
-      <div style="font-size: 0.8em;">Loan #: 9922887766</div>
-    </div>
-  </div>
-<div style="padding: 25px;">
-    <div style="display: flex; justify-content: space-between; font-size: 0.9em; margin-bottom: 20px; color: #555;">
-      <div>
-        <strong>Property Address:</strong><br>
-        123 Maple Street<br>
-        Anytown, USA 12345
-      </div>
-      <div style="text-align: right;">
-        <strong>Statement Date:</strong> March 15, 2026<br>
-        <strong>Period:</strong> 2025 Review
-      </div>
-    </div>
-<h3 style="border-bottom: 2px solid #003366; padding-bottom: 5px;">ESCROW ACCOUNT SUMMARY</h3>
-    <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px; font-size: 0.9em;">
-      <tr>
-        <td style="padding: 8px 0;">Beginning Balance (Jan 2025)</td>
-        <td style="text-align: right;">$ 2,450.00</td>
-      </tr>
-      <tr>
-        <td style="padding: 8px 0;">Total Deposits (Monthly Payments)</td>
-        <td style="text-align: right;">$ 4,800.00</td>
-      </tr>
-      <tr>
-        <td style="padding: 8px 0; color: #c62828;">Disbursements (Taxes & Insurance)</td>
-        <td style="text-align: right; color: #c62828;">-$ 6,250.42</td>
-      </tr>
-      <tr style="font-weight: bold; border-top: 1px solid #003366;">
-        <td style="padding: 8px 0;">ENDING ESCROW BALANCE</td>
-        <td style="text-align: right;">$ 999.58</td>
-      </tr>
-    </table>
-<div style="background: #fff9c4; padding: 10px; border: 1px solid #fbc02d; font-size: 0.85em; color: #333;">
-      <strong>Projected Payment Change:</strong> Your monthly mortgage payment will increase by <strong>$ 42.50</strong> starting May 1st due to a projected escrow deficiency.
-    </div>
-<div data-verify-line="escrow" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
-      title="Demo only: Mr. Cooper doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:mrcooper.com/escrow/v/99228877 <span verifiable-text="end" data-for="escrow">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <span verifiable-text="start" data-for="escrow">[</span>
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;">MR. COOPER MORTGAGE
+Annual Escrow Account Disclosure Statement
+═══════════════════════════════════════════════════════════════════
+
+Loan #: 9922887766
+
+Property Address:                         Statement Date: Mar 15, 2026
+123 Maple Street                          Period: 2025 Review
+Anytown, USA 12345
+
+ESCROW ACCOUNT SUMMARY
+───────────────────────────────────────────────────────────────────
+Beginning Balance (Jan 2025)                            $ 2,450.00
+Total Deposits (Monthly Payments)                       $ 4,800.00
+Disbursements (Taxes & Insurance)                      -$ 6,250.42
+───────────────────────────────────────────────────────────────────
+ENDING ESCROW BALANCE                                     $ 999.58
+
+PROJECTED PAYMENT CHANGE: Your monthly mortgage payment will
+increase by $ 42.50 starting May 1st due to a projected escrow
+deficiency.
+
+</pre>
+<span data-verify-line="escrow">verify:mrcooper.com/escrow/v/99228877</span> <span verifiable-text="end" data-for="escrow">]</span>
 </div>
 
 ## Data Verified
@@ -89,13 +66,17 @@ Shows the issuer domain (`mrcooper.com`, `wellsfargo.com`) and current account s
 
 ## Second-Party Use
 
-The **Homeowner (Borrower)** benefits from verification.
+The **Homeowner (Borrower)** (second party) receives the escrow statement from the mortgage servicer (first party), **keeps it**, and may later hand it to third parties for various reasons, or never do so.
 
-**Gaslighting Defense:** When a servicer claims "Your taxes went up $2,000," but the county record says they only went up $200, the homeowner can use verified statements from prior years to prove the math doesn't work. This stops the "Clerical Gaslighting" common in large-scale mortgage servicing.
+**Personal Record:** They have their own verified copy of the escrow analysis. Most of the time, the statement sits in their files—the verification value is latent, there *if needed*.
 
-**Refinancing:** Proving to a new lender exactly how much is held in the current escrow account to ensure a smooth transition of funds during a loan payoff.
+**Peace of Mind:** They can confirm at any time that the statement matches what the servicer's system recorded and hasn't been altered.
+
+**Future Optionality:** If a dispute arises about escrow calculations, payment increases, or shortages, they have cryptographic proof ready without needing to contact the servicer.
 
 ## Third-Party Use
+
+The homeowner (second party) may hand the verified document to various third parties:
 
 **Consumer Financial Protection Bureau (CFPB)**
 **Complaint Resolution:** When a homeowner files a complaint about escrow mismanagement, they can provide verified hashes of their statements. "Verified by Mr. Cooper" prevents the servicer from claiming "We have no record of that statement" during the investigation.
@@ -114,11 +95,36 @@ The **Homeowner (Borrower)** benefits from verification.
 - **Phantom Withdrawals:** Withdrawing money from the escrow for "Administrative Fees" that aren't disclosed on the paper statement.
 - **Backdating Notices:** Fabricating a "Shortage Notice" today but dating it 3 months ago to justify an immediate payment increase without the mandatory 30-day RESPA warning.
 
-**Issuer Types**
+**Issuer Types (First Party)**
 
-**Mortgage Servicers:** (Mr. Cooper, PennyMac, Rocket Mortgage).
-**Banks & Credit Unions.**
-**Sub-Servicers:** (Cenlar, LoanCare - hosting on behalf of lenders).
+- Mortgage Servicers (Mr. Cooper, PennyMac, Rocket Mortgage)
+- Banks & Credit Unions
+- Sub-Servicers (Cenlar, LoanCare - hosting on behalf of lenders)
+
+**Privacy Salt:** Required. Escrow statements contain a mix of enumerable and unique values—loan numbers that might follow predictable patterns, property addresses that are public records, and round dollar amounts for taxes and insurance. While some elements are unique, the hash must be salted to prevent unauthorized enumeration of homeowner financial data and to protect the privacy of escrow account details from being discovered through brute-force attempts.
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require mortgage servicers to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the servicer, and any subsequent changes to the escrow analysis as they happen—which may manifest as a new hash, a status change (amended, in-dispute), or even a 404 (record deleted)
+- Receives structured content/metadata (loan numbers, disbursement amounts, balance changes, payment adjustments)
+- Does **NOT** receive plaintext (homeowner names, property addresses, personal financial details)
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to homeowners/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Servicer cannot deny issuing the statement or the calculations
+- **Timestamp proof:** Statement hash existed at a specific time (critical for RESPA compliance disputes)
+- **Regulatory audit:** CFPB can inspect the witness ledger for systemic escrow mismanagement
+- **Resilience:** Verification works even if servicer's systems go down or the company exits servicing
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Servicer domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
 
 ## Competition vs. Servicer Portals
 
@@ -145,38 +151,35 @@ Hackers often "spoof" an escrow officer's email and send "Updated Wire Instructi
 
 **Verified Wire Instructions** provide a "Digital Shield." By scanning the hash on the PDF, the buyer gets 100% confirmation from the title company's domain that the bank details are real *before* they hit "Send" at the bank.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #000; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 25px;">
-    <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="escrow-wire">[</span>FIRST AMERICAN TITLE COMPANY</div>
-    <div style="font-size: 0.85em; color: #666;">Official Wire Instructions & Closing Package</div>
-  </div>
-<div style="font-size: 1em; line-height: 1.6; color: #333;">
-    <h3 style="text-align: center; text-transform: uppercase; margin-bottom: 20px;">Escrow Wire Instructions</h3>
-<div style="background: #fdf2f2; border: 2px solid #d32f2f; padding: 15px; margin: 20px 0;">
-      <p style="color: #d32f2f; font-weight: bold; margin-top: 0;">⚠️ MANDATORY VERIFICATION REQUIRED</p>
-      <p>Before wiring any funds, scan the hash below to verify these bank details directly against our secure server.</p>
-<strong>Beneficiary Bank:</strong> Wells Fargo, N.A.<br>
-      <strong>Account Name:</strong> First American Escrow Account<br>
-      <strong>Account #:</strong> ****-****-9988<br>
-      <strong>Routing #:</strong> 123456789<br>
-      <strong>Ref (Escrow #):</strong> 2026-992288
-    </div>
-<p style="font-size: 0.85em; font-style: italic;">
-      Verification protects against business email compromise (BEC) and fake instruction swaps.
-    </p>
-  </div>
-<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
-    <div style="width: 45%;">
-      <div style="border-top: 1px solid #000; padding-top: 5px; font-style: italic;">Elena Rossi, Escrow Officer</div>
-    </div>
-    <div style="text-align: right; width: 45%;">
-      <div style="width: 80px; height: 80px; border: 2px solid #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; text-align: center; margin-left: auto;">ESCROW<br>SEAL</div>
-    </div>
-  </div>
-<div data-verify-line="escrow-wire" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
-      title="Demo only: First American doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:firstam.com/escrow/v/2026-992288 <span verifiable-text="end" data-for="escrow-wire">]</span>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <span verifiable-text="start" data-for="escrow-wire">[</span>
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;">FIRST AMERICAN TITLE COMPANY
+Official Wire Instructions & Closing Package
+═══════════════════════════════════════════════════════════════════
+
+                    ESCROW WIRE INSTRUCTIONS
+
+!! MANDATORY VERIFICATION REQUIRED !!
+
+Before wiring any funds, scan the hash below to verify these
+bank details directly against our secure server.
+
+WIRE TRANSFER DETAILS
+───────────────────────────────────────────────────────────────────
+Beneficiary Bank:  Wells Fargo, N.A.
+Account Name:      First American Escrow Account
+Account #:         ****-****-9988
+Routing #:         123456789
+Ref (Escrow #):    2026-992288
+
+Verification protects against business email compromise (BEC)
+and fake instruction swaps.
+
+________________________
+Elena Rossi, Escrow Officer                            [ESCROW SEAL]
+
+</pre>
+<span data-verify-line="escrow-wire">verify:firstam.com/escrow/v/2026-992288</span> <span verifiable-text="end" data-for="escrow-wire">]</span>
 </div>
 
 ## Data Verified
@@ -201,13 +204,17 @@ Shows the issuer domain (`firstam.com`, `fnf.com`, `stewart.com`) and current st
 
 ## Second-Party Use
 
-The **Buyer / Seller** benefits from verification.
+The **Buyer / Seller** (second party) receives the wire instructions from the title company (first party), **keeps it**, and may later hand it to third parties for various reasons, or never do so.
 
-**Wire Fraud Prevention:** Proving to themselves that the email they just received isn't a "Spoof" from a hacker. By scanning the hash on the PDF, the buyer gets 100% confirmation from the escrow company's domain that the bank details are real *before* they wire $250,000 into the void.
+**Personal Record:** They have their own verified copy of the wire instructions. Most of the time, the instructions sit in their closing folder—the verification value is latent, there *if needed*.
 
-**Lender Coordination:** Proving to the bank's wire desk that the instructions provided by the borrower are verified authentic by the title company.
+**Peace of Mind:** They can confirm at any time that the wire instructions match what the title company's system recorded and haven't been altered by a hacker.
+
+**Future Optionality:** If a wire fraud incident occurs or a dispute arises about the closing, they have cryptographic proof of the authentic instructions ready without needing to contact the title company.
 
 ## Third-Party Use
+
+The buyer/seller (second party) may hand the verified document to various third parties:
 
 **The Buyer's Bank (Sending Bank)**
 **Fraud Vetting:** Before executing a high-value real estate wire, the bank's fraud team can scan the instructions. "Verified by First American" provides the green light needed to bypass additional "Confirm by Phone" delays.
@@ -226,13 +233,36 @@ The **Buyer / Seller** benefits from verification.
 - **PDF Scams:** Scammers sending fake "Closing Disclosures" to borrowers to steal the downpayment.
 - **Settlement Tampering:** Editing a PDF to change the "Seller Payout" to a fraudster's account.
 
-**Issuer Types**
+**Issuer Types (First Party)**
 
-**National Title Companies:** (First American, Fidelity, Old Republic).
-**Regional Escrow Firms.**
-**Attorney Closers:** (In "Attorney States").
+- National Title Companies (First American, Fidelity, Old Republic)
+- Regional Escrow Firms
+- Attorney Closers (in "Attorney States")
 
-**Privacy Salt:** Highly critical. Closings involve SSNs and large sums. The hash must be salted to prevent "Guessing" escrow numbers to see transaction values.
+**Privacy Salt:** Required. Wire instructions contain highly sensitive data—bank account numbers, routing numbers, and large transaction amounts. While some elements like escrow numbers are unique, the hash must be salted to prevent enumeration attacks that could reveal transaction patterns, amounts, or banking relationships. This is critical for preventing both fraud reconnaissance and privacy violations involving substantial financial transfers.
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require title companies to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the title company, and any subsequent changes to wire instructions as they happen—which may manifest as a new hash, a status change (changed, closed), or even a 404 (record deleted)
+- Receives structured content/metadata (escrow numbers, transaction amounts, wire dates, title company IDs)
+- Does **NOT** receive plaintext (buyer/seller names, property addresses, bank account details)
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to buyers/sellers/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Title company cannot deny issuing the wire instructions
+- **Timestamp proof:** Instructions hash existed at a specific time (critical for wire fraud investigations)
+- **Regulatory audit:** State insurance commissioners can inspect the witness ledger for fraud patterns
+- **Resilience:** Verification works even if title company's systems go down or are compromised
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Title company domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
 
 ## Competition vs. Secure Portals (Qualia)
 
@@ -262,36 +292,27 @@ It lists:
 
 In high-stakes deals, fraudsters (or disgruntled partners) often "Edit" the PDF statement to hide secret fees or to trick a bank into believing a deal was larger than it actually was. Verified hashes turn these private legal papers into an un-erasable proof of the deal's final math.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', serif; border: 1px solid #000; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
-    <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="ma">[</span>J.P. MORGAN ESCROW SERVICES</div>
-    <div style="font-size: 0.9em;">FINAL SETTLEMENT STATEMENT</div>
-  </div>
-<div style="font-size: 0.9em; line-height: 1.5; color: #333;">
-    <p><strong>Deal:</strong> Project Bluebird (Acquisition of Tech-Startup, Inc.)</p>
-<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
-      <tr>
-        <td style="padding: 5px 0;">Gross Purchase Price</td>
-        <td style="text-align: right; font-weight: bold;">$ 50,000,000.00</td>
-      </tr>
-      <tr>
-        <td style="padding: 5px 0; color: #c62828;">Indemnity Holdback (12 Months)</td>
-        <td style="text-align: right; color: #c62828;">-$ 5,000,000.00</td>
-      </tr>
-      <tr>
-        <td style="padding: 5px 0; color: #c62828;">Legal & Advisory Fees</td>
-        <td style="text-align: right; color: #c62828;">-$ 750,000.00</td>
-      </tr>
-      <tr style="border-top: 2px solid #000; font-weight: bold;">
-        <td style="padding: 5px 0;">NET CASH TO SELLERS</td>
-        <td style="text-align: right;">$ 44,250,000.00</td>
-      </tr>
-    </table>
-<p><strong>Closing Date:</strong> March 15, 2026</p>
-  </div>
-<div data-verify-line="ma" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;">
-    verify:jpmorgan.com/escrow/v/BLUEBIRD-2026 <span verifiable-text="end" data-for="ma">]</span>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <span verifiable-text="start" data-for="ma">[</span>
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;">J.P. MORGAN ESCROW SERVICES
+═══════════════════════════════════════════════════════════════════
+
+                   FINAL SETTLEMENT STATEMENT
+
+Deal: Project Bluebird (Acquisition of Tech-Startup, Inc.)
+
+SETTLEMENT SUMMARY
+───────────────────────────────────────────────────────────────────
+Gross Purchase Price                                $ 50,000,000.00
+Indemnity Holdback (12 Months)                      -$ 5,000,000.00
+Legal & Advisory Fees                                 -$ 750,000.00
+───────────────────────────────────────────────────────────────────
+NET CASH TO SELLERS                                 $ 44,250,000.00
+
+Closing Date: March 15, 2026
+
+</pre>
+<span data-verify-line="ma">verify:jpmorgan.com/escrow/v/BLUEBIRD-2026</span> <span verifiable-text="end" data-for="ma">]</span>
 </div>
 
 ## Data Verified
@@ -310,11 +331,17 @@ Shows the issuer domain (`jpmorgan.com`, `citibank.com`) and current fund status
 
 ## Second-Party Use
 
-The **Selling Shareholders** benefit from verification.
-- **Wealth Proof:** Proving to their personal bank that the $44M deposit was from a verified corporate acquisition, avoiding "Money Laundering" freezes.
-- **Tax Accuracy:** Ensuring the IRS sees the verified "Net Payout" vs "Gross Price" to avoid over-paying capital gains tax.
+The **Selling Shareholders** (second party) receive the settlement statement from the escrow agent (first party), **keep it**, and may later hand it to third parties for various reasons, or never do so.
+
+**Personal Record:** They have their own verified copy of the deal terms and payout breakdown. Most of the time, the statement sits in their financial records—the verification value is latent, there *if needed*.
+
+**Peace of Mind:** They can confirm at any time that the statement matches what the escrow agent's system recorded and hasn't been altered.
+
+**Future Optionality:** If a dispute arises about holdback releases, indemnity claims, or tax reporting, they have cryptographic proof of the settlement ready without needing to contact the escrow agent.
 
 ## Third-Party Use
+
+The selling shareholders (second party) may hand the verified document to various third parties:
 
 **Lenders (Acquisition Finance)**
 **Funding Verification:** Ensuring that the loan funds the bank provided were actually used for the acquisition and not diverted to secret offshore accounts.
@@ -351,29 +378,31 @@ These **Instructions** are the legal blueprints for the payout. They tell the of
 
 Fraud is rampant: scammers often send fake "Updated Instructions" to the escrow officer to divert the seller's money to a foreign bank account. Verified hashes allow the officer to verify the **authenticity of the signature and the bank details** on the paper instructions.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', serif; border: 1px solid #000; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
-    <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="escrow-inst">[</span>STEWART TITLE GUARANTY</div>
-    <div style="font-size: 0.9em;">DISBURSEMENT AUTHORIZATION</div>
-  </div>
-<div style="font-size: 1em; line-height: 1.6; color: #333;">
-    <p>The undersigned Seller hereby authorizes Stewart Title to disburse the proceeds of Escrow #992288 as follows:</p>
-<div style="background: #f9f9f9; padding: 15px; border: 1px solid #eee; margin: 20px 0;">
-      <strong>Wire Transfer to:</strong><br>
-      Bank: Chase Bank, N.A.<br>
-      Account Name: SARAH J. DOE<br>
-      Account #: ****-****-9922<br>
-      <strong>Amount: $ 442,500.42</strong>
-    </div>
-<p style="font-style: italic;">Note: Any changes to these instructions must be verified in person or via cryptographically verified hash.</p>
-  </div>
-<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
-    <div style="width: 45%; border-top: 1px solid #000; padding-top: 5px;">Seller Signature</div>
-    <div style="width: 45%; text-align: right;">Date: March 15, 2026</div>
-  </div>
-<div data-verify-line="escrow-inst" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;">
-    verify:stewart.com/escrow/v/992288-DA <span verifiable-text="end" data-for="escrow-inst">]</span>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <span verifiable-text="start" data-for="escrow-inst">[</span>
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;">STEWART TITLE GUARANTY
+═══════════════════════════════════════════════════════════════════
+
+                   DISBURSEMENT AUTHORIZATION
+
+The undersigned Seller hereby authorizes Stewart Title to disburse
+the proceeds of Escrow #992288 as follows:
+
+WIRE TRANSFER DETAILS
+───────────────────────────────────────────────────────────────────
+Bank:         Chase Bank, N.A.
+Account Name: SARAH J. DOE
+Account #:    ****-****-9922
+Amount:       $ 442,500.42
+
+Note: Any changes to these instructions must be verified in person
+or via cryptographically verified hash.
+
+________________________                     Date: March 15, 2026
+Seller Signature
+
+</pre>
+<span data-verify-line="escrow-inst">verify:stewart.com/escrow/v/992288-DA</span> <span verifiable-text="end" data-for="escrow-inst">]</span>
 </div>
 
 ## Data Verified
@@ -392,11 +421,17 @@ Shows the issuer domain (`stewart.com`, `firstam.com`) and current authorization
 
 ## Second-Party Use
 
-The **Seller** benefits from verification.
-- **Theft Prevention:** Knowing that a hacker cannot simply email the escrow officer a fake bank account. The escrow officer will scan the new paper and see that the "Hash" doesn't match the seller's verified record.
-- **Audit Trail:** Proving to their spouse or business partners exactly where the money was sent.
+The **Seller** (second party) receives the disbursement authorization from the title company (first party), **keeps it**, and may later hand it to third parties for various reasons, or never do so.
+
+**Personal Record:** They have their own verified copy of the disbursement instructions. Most of the time, the authorization sits in their closing records—the verification value is latent, there *if needed*.
+
+**Peace of Mind:** They can confirm at any time that the instructions match what the title company's system recorded and haven't been altered by a fraudster.
+
+**Future Optionality:** If a dispute arises about where funds were sent or wire fraud occurs, they have cryptographic proof of the authentic disbursement authorization ready without needing to contact the title company.
 
 ## Third-Party Use
+
+The seller (second party) may hand the verified document to various third parties:
 
 **Escrow Officers / Title Clerks**
 **Wire Validation:** Before hitting "Send" on a $500,000 wire, the clerk scans the paper instructions. "Verified by Seller" provides the legal protection needed to release funds.

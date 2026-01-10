@@ -19,45 +19,36 @@ Beyond the relationship between the two parties, a lease is used by third partie
 
 **"Lease Padding"** is a common financial fraud where a landlord "edits" a lease to show a higher rent (e.g., changing $1,500 to $2,500) to trick a bank into lending them more money. **"Fake Leases"** are also used by scammers to illegally occupy vacant homes or commit identity theft. OCR-to-hash binds the **Tenant names, Rent amount, and Term dates** to the property management firm's or the landlord's domain.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-  <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.2em; color: #2c3e50;"><span verifiable-text="start" data-for="lease">[</span>SKYLINE PROPERTY MGMT</div>
-    <div style="text-align: right; font-size: 0.8em; color: #666;">
-      Agreement ID: L-992288-26<br>
-      March 15, 2026
-    </div>
-  </div>
-<h3 style="text-align: center; text-transform: uppercase; margin-bottom: 25px; letter-spacing: 1px;">Residential Lease Summary</h3>
-<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
-    <p>This certifies a valid lease agreement exists between <strong>Landlord:</strong> Skyline Heights, LLC and <strong>Tenant:</strong> Sarah J. Connor.</p>
-<div style="background: #fdfdfd; padding: 15px; border: 1px solid #eee; margin: 20px 0;">
-      <p><strong>Premises:</strong> 4500 Skyline Blvd, Apt 402, Austin, TX 78701</p>
-      <table style="width: 100%; font-size: 0.95em;">
-        <tr>
-          <td>Monthly Rent:</td>
-          <td style="text-align: right; font-weight: bold;">$ 2,250.00</td>
-        </tr>
-        <tr>
-          <td>Security Deposit:</td>
-          <td style="text-align: right;">$ 2,250.00</td>
-        </tr>
-        <tr>
-          <td>Lease Term:</td>
-          <td style="text-align: right;">12 Months (Fixed)</td>
-        </tr>
-      </table>
-    </div>
-<p><strong>Start Date:</strong> April 1, 2026<br>
-    <strong>End Date:</strong> March 31, 2027</p>
-  </div>
-<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
-    <div style="border-top: 1px solid #000; width: 180px; padding-top: 5px; font-size: 0.8em;">Property Manager Signature</div>
-    <div style="border-top: 1px solid #000; width: 180px; padding-top: 5px; font-size: 0.8em;">Tenant Signature</div>
-  </div>
-<div data-verify-line="lease" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
-      title="Demo only: Management firm doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:skyline-mgmt.com/v/L992288 <span verifiable-text="end" data-for="lease">]</span>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <span verifiable-text="start" data-for="lease">[</span>
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;">SKYLINE PROPERTY MGMT
+═══════════════════════════════════════════════════════════════════
+
+                    RESIDENTIAL LEASE SUMMARY
+
+Agreement ID: L-992288-26                          Date: 15 MAR 2026
+
+This certifies a valid lease agreement exists between:
+Landlord: Skyline Heights, LLC
+Tenant:   Sarah J. Connor
+
+Premises: 4500 Skyline Blvd, Apt 402, Austin, TX 78701
+
+LEASE TERMS
+───────────────────────────────────────────────────────────────────
+Monthly Rent:                                            $ 2,250.00
+Security Deposit:                                        $ 2,250.00
+Lease Term:                                       12 Months (Fixed)
+
+Start Date:  April 1, 2026
+End Date:    March 31, 2027
+
+───────────────────────────────────────────────────────────────────
+
+_________________________              _________________________
+Property Manager Signature             Tenant Signature
+</pre>
+<span data-verify-line="lease">verify:skyline-mgmt.com/v/L992288</span> <span verifiable-text="end" data-for="lease">]</span>
 </div>
 
 ## Data Verified
@@ -82,13 +73,17 @@ Shows the issuer domain (the Property Manager or Landlord) and the lease status.
 
 ## Second-Party Use
 
-The **Tenant** benefits from verification.
+The **Tenant** (second party) receives the lease agreement from the landlord or property manager (first party), **keeps it**, and may later hand it to third parties for various reasons, or never do so.
 
-**School Enrollment:** Proving to a school district registrar that the "Lease Summary" is verified authentic. This stops the "Address Fraud" where parents use fake leases to get into better school districts, while ensuring legitimate tenants are approved instantly.
+**Personal Record:** They have their own verified copy of the rental terms and their legal residence. Most of the time, the document sits in their files—the verification value is latent, there *if needed*.
 
-**Utility Hookups:** Providing a verified lease to the electric or water company to bypass the "Manual Review" of a paper contract, speeding up move-in.
+**Peace of Mind:** They can confirm at any time that the lease matches what the property manager's system recorded and hasn't been altered.
+
+**Future Optionality:** If they need to prove residency for school enrollment, DMV registration, or dispute resolution, they have cryptographic proof ready without needing to contact the property manager.
 
 ## Third-Party Use
+
+The tenant (second party) may hand the verified document to various third parties:
 
 **Mortgage Underwriters**
 **Income Verification:** Before approving a loan for a landlord, the bank scans the leases for their other properties. "Verified by Mgmt-Co.com" ensure the rental income hasn't been "padded" to hide a high debt-to-income ratio.
@@ -107,11 +102,36 @@ The **Tenant** benefits from verification.
 - **Term Stretching:** Hiding that a lease is "Month-to-Month" and making it look like a "Fixed 2-Year" term to show income stability.
 - **Occupancy Faking:** Creating a "Ghost Lease" for a vacant unit to make a building look 100% occupied to a buyer.
 
-**Issuer Types**
+**Issuer Types (First Party)**
 
-**Property Management Firms:** (e.g., Greystar, Cushman & Wakefield).
-**Independent Landlord Portals:** (e.g., Avail, Zillow Rental Manager - hosting the hashes).
-**Legal Document Platforms:** (e.g., Rocket Lawyer, LegalZoom).
+- Property Management Firms (e.g., Greystar, Cushman & Wakefield)
+- Independent Landlord Portals (e.g., Avail, Zillow Rental Manager - hosting the hashes)
+- Legal Document Platforms (e.g., Rocket Lawyer, LegalZoom)
+
+**Privacy Salt:** Not required. Rental lease agreements contain many unpredictable variables that combine to create high entropy: unique agreement IDs, tenant names, specific property addresses including unit numbers, exact monthly rent amounts (including cents), security deposit amounts, and specific start/end dates. The combination of these unique identifiers makes brute-force enumeration infeasible without salt.
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require property managers and landlord platforms to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the property manager, and any subsequent changes to the payload as they happen—which may manifest as a new hash, a status change (terminated, eviction filing, renewed), or even a 404 (record deleted)
+- Receives structured content/metadata (agreement IDs, rent amounts, lease terms, property addresses)
+- Does **NOT** receive plaintext (tenant names, SSNs, employment details)
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to tenants/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Property manager cannot deny issuing the lease terms
+- **Timestamp proof:** Hash existed at a specific time
+- **Regulatory audit:** Housing authorities can inspect the witness ledger for rental fraud patterns
+- **Resilience:** Verification works even if property manager's systems go down
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Property manager domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
 
 ## Competition vs. Scanned PDFs
 

@@ -16,49 +16,33 @@ It is the "Insurance for Brainwork." If an architect's design causes a balcony t
 
 **"Retroactive Date Fraud"** is a critical risk in this sector. E&O policies are usually "Claims-Made," meaning they only cover work done after a specific **Retroactive Date**. A professional who missed a design error 5 years ago might "edit" their certificate's retroactive date from 2024 to 2015 to hide that they weren't actually insured at the time of the error. Verified hashes bind the **Policy Limits and the Retroactive Date** to the underwriter's domain.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: 'Helvetica', sans-serif; border: 2px solid #37474f; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-  <div style="background: #37474f; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="eo">[</span>HISCOX INSURANCE CO.</div>
-      <div style="font-size: 0.8em; opacity: 0.8;">Professional Liability Division</div>
-    </div>
-    <div style="text-align: right;">
-      <div style="font-size: 0.8em;">Policy #: EO-99228877-26</div>
-    </div>
-  </div>
-<div style="padding: 30px;">
-    <h2 style="text-align: center; color: #37474f; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Certificate of Professional Liability</h2>
-<div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Named Insured:</strong> Skyline Architecture & Design, P.C.<br>
-      <strong>Professional Category:</strong> Licensed Structural Engineering</p>
-<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
-        <tr style="background: #eceff1; border-bottom: 2px solid #37474f;">
-          <th style="text-align: left; padding: 8px;">Coverage Type</th>
-          <th style="text-align: right; padding: 8px;">Limit of Liability</th>
-        </tr>
-        <tr>
-          <td style="padding: 8px; border-bottom: 1px solid #eee;">Each Claim Limit</td>
-          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 2,000,000</td>
-        </tr>
-        <tr>
-          <td style="padding: 8px; border-bottom: 1px solid #eee;">Aggregate Policy Limit</td>
-          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 5,000,000</td>
-        </tr>
-        <tr>
-          <td style="padding: 8px; border-bottom: 1px solid #eee;">Deductible (Retention)</td>
-          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 25,000</td>
-        </tr>
-      </table>
-<div style="background: #fff9c4; padding: 10px; border: 1px solid #fbc02d; margin: 20px 0; font-weight: bold;">
-        RETROACTIVE DATE: January 01, 2015
-      </div>
-<p><strong>Policy Period:</strong> March 15, 2026 to March 15, 2027</p>
-    </div>
-<div data-verify-line="eo" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
-      title="Demo only: Hiscox doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:hiscox.com/certificates/v/EO992288 <span verifiable-text="end" data-for="eo">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <span verifiable-text="start" data-for="eo">[</span>
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;">HISCOX INSURANCE CO.
+Professional Liability Division
+═══════════════════════════════════════════════════════════════════
+
+            CERTIFICATE OF PROFESSIONAL LIABILITY
+
+Policy #: EO-99228877-26
+
+Named Insured:         Skyline Architecture & Design, P.C.
+Professional Category: Licensed Structural Engineering
+
+COVERAGE SUMMARY
+───────────────────────────────────────────────────────────────────
+Coverage Type                                    Limit of Liability
+───────────────────────────────────────────────────────────────────
+Each Claim Limit                                       $ 2,000,000
+Aggregate Policy Limit                                 $ 5,000,000
+Deductible (Retention)                                    $ 25,000
+
+*** RETROACTIVE DATE: January 01, 2015 ***
+
+Policy Period: March 15, 2026 to March 15, 2027
+
+</pre>
+<span data-verify-line="eo">verify:hiscox.com/certificates/v/EO992288</span> <span verifiable-text="end" data-for="eo">]</span>
 </div>
 
 ## Data Verified
@@ -83,13 +67,17 @@ Shows the issuer domain (`hiscox.com`, `travelers.com`, `aig.com`) and policy st
 
 ## Second-Party Use
 
-The **Professional Firm** benefits from verification.
+The **Professional Firm** (second party) receives the E&O certificate from the insurance carrier (first party), **keeps it**, and may later hand it to third parties for various reasons, or never do so.
 
-**Contract Winning:** Proving to a "Fortune 500" client that their $5M E&O policy is verified and has a "2015 Retroactive Date." High-end clients won't sign multi-million dollar service contracts with "Un-verified" consultants due to the risk of design or legal failure.
+**Personal Record:** They have their own verified copy of their coverage limits and retroactive date. Most of the time, the document sits in their business files—the verification value is latent, there *if needed*.
 
-**Sub-Contracting:** A small engineering firm providing a verified hash to a large General Contractor, allowing them to start work on a project immediately without waiting for a manual broker review.
+**Peace of Mind:** They can confirm at any time that the certificate matches what the carrier's system recorded and hasn't been altered.
+
+**Future Optionality:** If a claim arises or a contract is disputed, they have cryptographic proof of their coverage ready without needing to contact the broker or carrier.
 
 ## Third-Party Use
+
+The professional firm (second party) may hand the verified document to various third parties:
 
 **Corporate Procurement Officers**
 **Vendor Vetting:** Before engaging an IT consultant or an accountant, the company scans their COI. "Verified by Hiscox.com" ensure the consultant hasn't "Photoshopped" a $100k policy into a $5M one to meet the contract requirements.
@@ -108,11 +96,36 @@ The **Professional Firm** benefits from verification.
 - **Policy Padding:** Editing a $1M policy to read $10M to meet a client's "Master Service Agreement" requirement.
 - **Cancellation Hiding:** Keeping a paper certificate on file after the professional stopped paying the premium 6 months ago.
 
-**Issuer Types**
+**Issuer Types (First Party)**
 
-**Specialty Carriers:** (Hiscox, Beazley, Chubb, Lloyd's).
-**Professional MGAs.**
-**Risk Management Platforms:** (e.g., TrustLayer, CertFocus - hosting verified hashes).
+- Specialty Carriers (Hiscox, Beazley, Chubb, Lloyd's)
+- Professional MGAs
+- Risk Management Platforms (e.g., TrustLayer, CertFocus - hosting verified hashes)
+
+**Privacy Salt:** Required. Unlike documents with many unpredictable variables, E&O certificates often contain enumerable values—standard coverage limits ($1M, $2M, $5M per claim), common aggregate limits, round deductibles ($10k, $25k, $50k), and predictable retroactive dates (often January 1st of common years). A competitor could feasibly enumerate combinations to reverse-engineer a firm's insurance profile and client risk exposure. Salt protects this competitive intelligence.
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require insurance carriers to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the carrier, and any subsequent changes to the payload as they happen—which may manifest as a new hash, a status change (cancelled, limit eroded, tail only), or even a 404 (record deleted)
+- Receives structured content/metadata (policy numbers, coverage limits, retroactive dates, professional categories)
+- Does **NOT** receive plaintext (firm names, specific claim details, premium amounts)
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to professionals/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Carrier cannot deny issuing the coverage
+- **Timestamp proof:** Hash existed at a specific time (critical for claims-made retroactive date verification)
+- **Regulatory audit:** State insurance commissioners can inspect the witness ledger for coverage gaps
+- **Resilience:** Verification works even if carrier's systems go down
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Carrier domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
 
 ## Competition vs. ACORD 25 Forms
 

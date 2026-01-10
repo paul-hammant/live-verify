@@ -8,44 +8,32 @@ tags: ["metrology", "scientific-instruments", "laboratory-compliance", "calibrat
 furtherDerivations: 1
 ---
 
-<div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 1px solid #444; background: #fff; padding: 30px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-  <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
-    <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="sci-cal">[</span>QUANTUM ANALYTICS LABS</div>
-    <div style="font-size: 0.8em;">Metrology & Calibration Services</div>
-  </div>
-<div style="font-size: 0.9em; line-height: 1.4; color: #333;">
-    <p><strong>Instrument:</strong> Mass Spectrometer (Agilent 6470B)<br>
-    <strong>Serial #:</strong> AG-99228877-X<br>
-    <strong>Asset ID:</strong> QL-402</p>
-<div style="background: #f5f5f5; border: 1px solid #ccc; padding: 15px; margin: 15px 0;">
-      <table style="width: 100%; font-size: 0.9em;">
-        <tr>
-          <td><strong>Calibration Date:</strong></td>
-          <td>March 15, 2026</td>
-        </tr>
-        <tr>
-          <td><strong>Calibration Result:</strong></td>
-          <td><span style="color: #2e7d32; font-weight: bold;">PASS (In-Tolerance)</span></td>
-        </tr>
-        <tr>
-          <td><strong>Reference Standard:</strong></td>
-          <td>NIST SRM-2210</td>
-        </tr>
-      </table>
-    </div>
-<p><strong>Technician:</strong> Dr. Aris Vrettos, Ph.D.<br>
-    <strong>Environment:</strong> 21.2°C / 42% Humidity</p>
-  </div>
-<div style="margin-top: 30px; display: flex; justify-content: space-between; align-items: flex-end;">
-    <div style="width: 50%; border-top: 1px solid #000; padding-top: 5px; font-style: italic; font-size: 0.8em;">Certified Digital Signature</div>
-    <div style="text-align: right; font-size: 0.8em; color: #777;">
-      Log ID: CAL-9928-X
-    </div>
-  </div>
-<div data-verify-line="sci-cal" style="border-top: 1px dashed #999; margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
-    title="Demo only: Quantum Labs doesn't yet offer verification&#10;endpoints, so this is illustrative">
-    verify:quantum-labs.com/calibration/v/AG992288 <span verifiable-text="end" data-for="sci-cal">]</span>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <span verifiable-text="start" data-for="sci-cal">[</span>
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;">QUANTUM ANALYTICS LABS
+Metrology & Calibration Services
+═══════════════════════════════════════════════════════════════════
+
+INSTRUMENT IDENTIFICATION
+───────────────────────────────────────────────────────────────────
+Instrument:   Mass Spectrometer (Agilent 6470B)
+Serial #:     AG-99228877-X
+Asset ID:     QL-402
+
+CALIBRATION DATA
+───────────────────────────────────────────────────────────────────
+Calibration Date:    March 15, 2026
+Calibration Result:  PASS (In-Tolerance)
+Reference Standard:  NIST SRM-2210
+
+Technician:   Dr. Aris Vrettos, Ph.D.
+Environment:  21.2°C / 42% Humidity
+
+________________________                        Log ID: CAL-9928-X
+Certified Digital Signature
+
+</pre>
+<span data-verify-line="sci-cal">verify:quantum-labs.com/calibration/v/AG992288</span> <span verifiable-text="end" data-for="sci-cal">]</span>
 </div>
 
 ## Data Verified
@@ -70,13 +58,17 @@ Shows the issuer domain (the Calibration Lab or Manufacturer) and current record
 
 ## Second-Party Use
 
-The **Lab Manager / Researcher** benefits from verification.
+The **Lab Manager** (second party) receives the calibration record from the calibration lab (first party), **keeps it**, and may later hand it to third parties for various reasons, or never do so.
 
-**Publication Integrity:** Providing a verified link to the instrument calibration records in a peer-reviewed paper. This proves that the "Scientific Breakthrough" wasn't caused by a drifting sensor or uncalibrated mass spec, increasing the study's impact factor.
+**Personal Record:** They have their own verified copy of the instrument's calibration status. Most of the time, the record sits in their lab's quality files—the verification value is latent, there *if needed*.
 
-**Grant Compliance:** Proving to funding agencies (e.g., NIH or NSF) that all high-cost equipment is being maintained according to verified GLP (Good Laboratory Practice) standards.
+**Peace of Mind:** They can confirm at any time that the calibration matches what the lab's system recorded and meets NIST traceability requirements.
+
+**Future Optionality:** If a dispute arises—whether about data quality, regulatory audits, or publication challenges—they have cryptographic proof ready without needing to contact the calibration lab.
 
 ## Third-Party Use
+
+The lab manager (second party) may hand the verified document to various third parties:
 
 **Peer Reviewers / Journal Editors**
 **Integrity Vetting:** Instantly verifying the "Equipment Section" of a manuscript. OCR-to-hash ensures the authors didn't "Smooth" the calibration data to hide noise in their results.
@@ -95,11 +87,36 @@ The **Lab Manager / Researcher** benefits from verification.
 - **Date Alteration:** Editing a 2024 certificate to look like 2026 to avoid the $2,000 service fee.
 - **Traceability Fraud:** Claiming a link to NIST or ISO standards when the lab's own gear is unverified.
 
-**Issuer Types**
+**Issuer Types (First Party)**
 
-**OEM Service Depts:** (Agilent, Thermo Fisher, Shimadzu).
-**Independent Accredited Labs:** (ISO 17025 certified).
-**University Metrology Units.**
+- OEM Service Depts (Agilent, Thermo Fisher, Shimadzu)
+- Independent Accredited Labs (ISO 17025 certified)
+- University Metrology Units
+
+**Privacy Salt:** Not required. Calibration records contain many unpredictable variables that combine to create sufficient entropy—instrument serial number (unique alphanumeric), specific drift measurements (continuous values with multiple decimal places), environmental conditions (temperature/humidity to precise decimals), technician credentials (non-enumerable names and IDs), reference standard batch numbers, and precise calibration dates/times. The combination makes reverse-engineering a specific calibration record computationally infeasible without already knowing all the details.
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require calibration laboratories to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the calibration lab, and any subsequent changes to the payload as they happen—which may manifest as a new hash, a status change (certified to expired), or even a 404 (record deleted/retracted)
+- Receives structured content/metadata (instrument IDs, calibration dates, pass/fail results, reference standard IDs, technician credentials)
+- Does **NOT** receive plaintext (client names, laboratory addresses, proprietary measurement details)
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to labs/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Calibration lab cannot deny issuing the certificate or the results
+- **Timestamp proof:** Calibration existed at a specific time (critical for data integrity in research and regulatory submissions)
+- **Regulatory audit:** FDA, ISO accreditation bodies, or quality authorities can inspect the witness ledger for compliance patterns
+- **Resilience:** Verification works even if calibration lab's systems go down or the business closes
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Calibration lab domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
 
 ## Competition vs. LIMS (Lab Information Mgmt)
 

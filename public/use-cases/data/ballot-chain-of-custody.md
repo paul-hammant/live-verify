@@ -19,42 +19,31 @@ The **Chain-of-Custody Form** is the paper that follows the box. It lists:
 
 If a box arrives at the counting center with a different count or seal than what is on the verified form, the alarm is raised immediately.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <div style="background: #eee; padding: 15px; border-bottom: 2px solid #000; display: flex; justify-content: space-between; align-items: center;">
-    <div style="font-weight: bold; font-size: 1.1em;"><span verifiable-text="start" data-for="ballot">[</span>MARICOPA COUNTY ELECTIONS</div>
-    <div style="font-size: 0.9em; font-weight: bold;">TRANSFER FORM #99228</div>
-  </div>
-<div style="padding: 25px;">
-    <h3 style="margin-top: 0; text-align: center; text-transform: uppercase;">Ballot Container Transfer</h3>
-<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
-      <p><strong>Origin:</strong> Precinct 402 - North High School<br>
-      <strong>Destination:</strong> Central Tabulation Center</p>
-<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
-        <tr>
-          <td style="border: 1px solid #ccc; padding: 8px;"><strong>Container ID:</strong></td>
-          <td style="border: 1px solid #ccc; padding: 8px;">BOX-A-123</td>
-        </tr>
-        <tr>
-          <td style="border: 1px solid #ccc; padding: 8px;"><strong>Seal Number:</strong></td>
-          <td style="border: 1px solid #ccc; padding: 8px;">AZ-00998877</td>
-        </tr>
-        <tr>
-          <td style="border: 1px solid #ccc; padding: 8px;"><strong>Ballot Count:</strong></td>
-          <td style="border: 1px solid #ccc; padding: 8px;">1,242 Ballots</td>
-        </tr>
-      </table>
-<div style="margin-top: 20px; padding: 10px; border: 1px solid #000; background: #f9f9f9;">
-        <strong>CUSTODIAN HANDOFF:</strong><br>
-        Relinquished by: John Miller (Poll Worker)<br>
-        Received by: Sarah Connor (Transport Deputy)<br>
-        Timestamp: Nov 3, 2026 - 8:15 PM MST
-      </div>
-    </div>
-<div data-verify-line="ballot" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
-      title="Demo only: Elections dept doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:elections.maricopa.gov/custody/v/99228 <span verifiable-text="end" data-for="ballot">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <span verifiable-text="start" data-for="ballot">[</span>
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;">MARICOPA COUNTY ELECTIONS
+Transfer Form #99228
+═══════════════════════════════════════════════════════════════════
+
+                   BALLOT CONTAINER TRANSFER
+
+Origin:       Precinct 402 - North High School
+Destination:  Central Tabulation Center
+
+CONTAINER DETAILS
+───────────────────────────────────────────────────────────────────
+Container ID:                                           BOX-A-123
+Seal Number:                                          AZ-00998877
+Ballot Count:                                        1,242 Ballots
+
+CUSTODIAN HANDOFF
+───────────────────────────────────────────────────────────────────
+Relinquished by:  John Miller (Poll Worker)
+Received by:      Sarah Connor (Transport Deputy)
+Timestamp:        Nov 3, 2026 - 8:15 PM MST
+
+</pre>
+  <span data-verify-line="ballot">verify:elections.maricopa.gov/custody/v/99228</span> <span verifiable-text="end" data-for="ballot">]</span>
 </div>
 
 ## Data Verified
@@ -78,22 +67,26 @@ Shows the issuer domain (`maricopa.gov`, `miamidade.gov`) and the transfer statu
 
 ## Second-Party Use
 
-The **Election Official** or **Poll Worker** benefits from verification.
+The **Election Official/Poll Worker** (second party) receives the transfer form from the county election department (first party), **keeps it**, and may later hand it to third parties for various reasons, or never do so.
 
-**Anti-Tampering:** Proving that the container they sealed at the high school is the *exact* same container that arrived at central counting, with an unbroken digital trail of the seal numbers and counts.
+**Personal Record:** The poll worker has their own verified copy of the ballot transfer. Most of the time, the document sits in election records—the verification value is latent, there *if needed*.
 
-**Liability Protection:** Poll workers (often volunteers) can prove they handed off exactly 1,242 ballots to the transport deputy, preventing blame for lost ballots later.
+**Peace of Mind:** The poll worker can confirm at any time that the form matches what the county's system recorded and hasn't been altered since they completed it.
+
+**Future Optionality:** If a recount occurs, an election challenge arises, or a legal dispute emerges about chain-of-custody, the poll worker has cryptographic proof ready without needing to contact the county election office.
 
 ## Third-Party Use
 
+The election official/poll worker (second party) may hand the verified document to various third parties:
+
 **Election Observers / Challengers**
-**Real-Time Audit:** Political party observers can scan the transfer forms as containers arrive at the central facility. Verification ensures the forms weren't "swapped" or "re-written" during the drive.
+Political party observers can scan the transfer forms as containers arrive at the central facility. Verification ensures the forms weren't "swapped" or "re-written" during the drive.
 
 **Media / Journalists**
-**Transparency:** Fact-checking claims of "mysterious boxes appearing." Verified chain-of-custody proves where every box came from and when it was logged.
+Fact-checking claims of "mysterious boxes appearing." Verified chain-of-custody proves where every box came from and when it was logged.
 
 **The Courts**
-**Litigation Evidence:** In an election contest, verified custody forms provide a cryptographically solid audit trail that is harder to challenge than mere photocopies.
+In an election contest, verified custody forms provide a cryptographically solid audit trail that is harder to challenge than mere photocopies.
 
 ## Verification Architecture
 
@@ -103,12 +96,35 @@ The **Election Official** or **Poll Worker** benefits from verification.
 - **Count Inflation:** Changing the count on the paper form from 1,000 to 1,200 to hide extra ballots.
 - **Fabricated Transfers:** Creating a fake transfer form for a non-existent precinct.
 
-**Issuer Types**
+**Issuer Types (First Party)**
 
-**County Election Depts:** The primary authorities.
-**Secretary of State:** (Overseeing the state-wide standards).
+- County Election Departments — The primary authorities
+- Secretary of State — Overseeing the state-wide standards
 
-**Privacy Salt:** Essential. While the form doesn't name voters, it is sensitive civic data. Salting prevent enumeration of transfer IDs.
+**Privacy Salt:** Required. Ballot transfer forms contain enumerable values—predictable precinct numbers, sequential container IDs, standard seal number formats, and round ballot counts. A malicious actor could feasibly enumerate combinations to monitor or reverse-engineer ballot movement patterns across a jurisdiction. Salt protects the integrity and privacy of election logistics.
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require county election departments to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the county, and any subsequent changes to the payload as they happen—which may manifest as a new hash, a status change (in-transit, received, seal mismatch), or even a 404 (record deleted)
+- Receives structured content/metadata (precinct numbers, container IDs, seal numbers, ballot counts, timestamps)
+- Does **NOT** receive plaintext (poll worker names, specific addresses beyond public precinct locations)
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to poll workers/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** County cannot deny issuing the transfer form
+- **Timestamp proof:** Transfer occurred at a specific time
+- **Regulatory audit:** State election oversight can inspect the witness ledger for chain-of-custody violations
+- **Resilience:** Verification works even if county's election systems go down
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **County election domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
 
 ## Competition vs. Central Portals / GPS
 

@@ -8,50 +8,29 @@ tags: ["bnpl", "installment-loan", "klarna", "affirm", "finance", "ecommerce", "
 furtherDerivations: 1
 ---
 
-<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <div style="background: #000; color: #fff; padding: 20px; text-align: left;">
-    <div style="font-weight: bold; font-size: 1.4em;"><span verifiable-text="start" data-for="bnpl">[</span>Affirm</div>
-    <div style="font-size: 0.8em; opacity: 0.8;">LOAN AGREEMENT & TRUTH IN LENDING DISCLOSURE</div>
-  </div>
-<div style="padding: 25px;">
-    <div style="display: flex; justify-content: space-between; font-size: 0.9em; margin-bottom: 20px;">
-      <div>
-        <strong>Loan ID:</strong> AF-99887766<br>
-        <strong>Merchant:</strong> Peloton Interactive
-      </div>
-      <div style="text-align: right;">
-        <strong>Date:</strong> March 15, 2026
-      </div>
-    </div>
-<div style="font-size: 0.95em; line-height: 1.5; color: #333; border: 1px solid #000; padding: 15px; margin-bottom: 20px;">
-      <p><strong>Borrower:</strong> <strong>JOHN SMITH</strong></p>
-<table style="width: 100%; border-collapse: collapse;">
-        <tr>
-          <td>Amount Financed:</td>
-          <td style="text-align: right;">$ 1,445.00</td>
-        </tr>
-        <tr>
-          <td>APR:</td>
-          <td style="text-align: right;">0.00%</td>
-        </tr>
-        <tr>
-          <td>Total of Payments:</td>
-          <td style="text-align: right;">$ 1,445.00</td>
-        </tr>
-        <tr style="font-weight: bold; border-top: 1px solid #000;">
-          <td>Monthly Payment (12x):</td>
-          <td style="text-align: right;">$ 120.42</td>
-        </tr>
-      </table>
-    </div>
-<div style="font-size: 0.8em; color: #555;">
-      By signing below, you agree to the terms of this installment loan.
-    </div>
-<div data-verify-line="bnpl" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
-      title="Demo only: Affirm doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:affirm.com/loans/v/AF998877 <span verifiable-text="end" data-for="bnpl">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <span verifiable-text="start" data-for="bnpl">[</span>
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;">AFFIRM
+Loan Agreement & Truth In Lending Disclosure
+═══════════════════════════════════════════════════════════════════
+
+Loan ID:   AF-99887766                         Date: March 15, 2026
+Merchant:  Peloton Interactive
+
+Borrower:  JOHN SMITH
+
+LOAN TERMS
+───────────────────────────────────────────────────────────────────
+Amount Financed:                                        $ 1,445.00
+APR:                                                         0.00%
+Total of Payments:                                      $ 1,445.00
+───────────────────────────────────────────────────────────────────
+Monthly Payment (12x):                                    $ 120.42
+
+By signing below, you agree to the terms of this installment loan.
+
+</pre>
+<span data-verify-line="bnpl">verify:affirm.com/loans/v/AF998877</span> <span verifiable-text="end" data-for="bnpl">]</span>
 </div>
 
 ## Data Verified
@@ -75,13 +54,17 @@ Shows the issuer domain (`affirm.com`, `klarna.com`) and current loan status.
 
 ## Second-Party Use
 
-The **Borrower** (Consumer) benefits from verification.
+The **Borrower** (second party) receives the loan agreement from the BNPL provider (first party), **keeps it**, and may later hand it to third parties for various reasons, or never do so.
 
-**Dispute Resolution:** If the merchant (e.g., Peloton) claims the buyer owes $2,000, the buyer can point to the verified "Verified by Affirm" agreement showing the total was $1,445 at 0% APR.
+**Personal Record:** They have their own verified copy of the loan terms. Most of the time, the document sits in their email or financial records—the verification value is latent, there *if needed*.
 
-**Credit Health:** Proving to a future mortgage lender that a BNPL loan was "Paid in Full" even if it hasn't appeared on the credit bureau report yet.
+**Peace of Mind:** They can confirm at any time that the agreement matches what the BNPL provider's system recorded and hasn't been altered.
+
+**Future Optionality:** If a dispute arises—whether with the merchant about the purchase or with a future lender about debt obligations—they have cryptographic proof ready without needing to contact Affirm or Klarna.
 
 ## Third-Party Use
+
+The borrower (second party) may hand the verified document to various third parties:
 
 **Mortgage Lenders / Banks**
 **Debt-to-Income (DTI) Calculation:** Many BNPL loans do not appear on traditional credit reports. Lenders can scan the applicant's verified BNPL agreements to get a true picture of their monthly debt obligations.
@@ -100,10 +83,37 @@ The **Borrower** (Consumer) benefits from verification.
 - **Terms Manipulation:** Changing a "20% APR" agreement to read "0% APR" to qualify for a different financial product.
 - **Identity Theft:** Fraudsters taking out BNPL loans in a victim's name; verification allows the victim to see the "Official" data being used for the loan.
 
-**Issuer Types**
+**Issuer Types (First Party)**
 
-**BNPL Providers:** (Affirm, Klarna, PayPal Credit).
-**Fintech Banks:** (e.g., Cross River Bank, Celtic Bank who originate the loans).
+- BNPL Providers (Affirm, Klarna, PayPal Credit)
+- Fintech Banks (Cross River Bank, Celtic Bank who originate the loans)
+
+**Privacy Salt:** Not required. BNPL agreements contain many unpredictable variables that combine to create high entropy: unique loan IDs, borrower names, specific merchant names, exact financing amounts (down to the cent), precise dates, and unique APR calculations. The combination of these elements makes it computationally infeasible to reverse-engineer the hash through enumeration, even if some individual fields (like common APR tiers) are predictable.
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require BNPL providers to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the BNPL provider, and any subsequent changes to the loan as they happen—which may manifest as a new hash, a status change (paid, in-arrears, charged-off), or even a 404 (record deleted)
+- Receives structured content/metadata (loan amounts, APR, payment schedules, merchant names)
+- Does **NOT** receive plaintext (borrower SSN, full address, bank account details)
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to borrowers/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** BNPL provider cannot deny issuing the loan terms
+- **Timestamp proof:** Agreement hash existed at a specific time
+- **Regulatory audit:** CFPB or state consumer protection agencies can inspect the witness ledger
+- **Resilience:** Verification works even if BNPL provider's systems go down or the company exits the market
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **BNPL provider domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
+
+## Rationale
 
 ## Competition vs. Credit Reports (Experian/TransUnion)
 

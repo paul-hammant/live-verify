@@ -16,46 +16,31 @@ The **Declarations Page** is the 1-page summary showing the "Limits" (e.g., $2,0
 
 Business owners must show these verified limits to win contracts. Fraudsters often "Inflate" their limits on a PDF (changing $500k to $2M) to qualify for big jobs they aren't actually insured for.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #1a237e; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
-  <div style="background: #1a237e; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="cgl">[</span>THE TRAVELERS COMPANIES</div>
-      <div style="font-size: 0.8em;">Commercial General Liability</div>
-    </div>
-    <div style="text-align: right;">
-      <div style="font-size: 0.8em;">Policy #: CGL-99887766-26</div>
-    </div>
-  </div>
-<div style="padding: 30px;">
-    <h2 style="text-align: center; color: #1a237e; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Policy Declarations</h2>
-<div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Named Insured:</strong> Heavy Haulers Construction, Inc.<br>
-      <strong>Business Description:</strong> Structural Steel Erection</p>
-<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
-        <tr style="background: #f0f4f8; border-bottom: 2px solid #1a237e;">
-          <th style="text-align: left; padding: 8px;">Coverage Limits</th>
-          <th style="text-align: right; padding: 8px;">Amount</th>
-        </tr>
-        <tr>
-          <td style="padding: 8px; border-bottom: 1px solid #eee;">Each Occurrence</td>
-          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 2,000,000</td>
-        </tr>
-        <tr>
-          <td style="padding: 8px; border-bottom: 1px solid #eee;">General Aggregate</td>
-          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 4,000,000</td>
-        </tr>
-        <tr>
-          <td style="padding: 8px; border-bottom: 1px solid #eee;">Products-Completed Ops</td>
-          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 4,000,000</td>
-        </tr>
-      </table>
-<p style="margin-top: 20px;"><strong>Policy Period:</strong> March 01, 2026 to March 01, 2027</p>
-    </div>
-<div data-verify-line="cgl" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
-      title="Demo only: Travelers doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:travelers.com/policy/v/CGL99887766 <span verifiable-text="end" data-for="cgl">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <span verifiable-text="start" data-for="cgl">[</span>
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;">THE TRAVELERS COMPANIES
+Commercial General Liability
+═══════════════════════════════════════════════════════════════════
+
+                      POLICY DECLARATIONS
+
+Policy #: CGL-99887766-26
+
+Named Insured:        Heavy Haulers Construction, Inc.
+Business Description: Structural Steel Erection
+
+COVERAGE LIMITS
+───────────────────────────────────────────────────────────────────
+Coverage                                                    Amount
+───────────────────────────────────────────────────────────────────
+Each Occurrence                                        $ 2,000,000
+General Aggregate                                      $ 4,000,000
+Products-Completed Ops                                 $ 4,000,000
+
+Policy Period: March 01, 2026 to March 01, 2027
+
+</pre>
+<span data-verify-line="cgl">verify:travelers.com/policy/v/CGL99887766</span> <span verifiable-text="end" data-for="cgl">]</span>
 </div>
 
 ## Data Verified
@@ -79,13 +64,17 @@ Shows the issuer domain (`travelers.com`, `chubb.com`) and current policy status
 
 ## Second-Party Use
 
-The **Business Owner** (Contractor) benefits from verification.
+The **Business Owner** (second party) receives the policy declarations page from the carrier (first party), **keeps it**, and may later hand it to third parties for various reasons, or never do so.
 
-**Contract Awards:** Proving to a potential client that the company actually has the $2M/$4M limits required for a massive project. A verified "Dec Page" prevents the competitor from undercutting by using fake or cheaper, low-limit insurance.
+**Personal Record:** They have their own verified copy of the liability coverage. Most of the time, the document sits in their insurance files—the verification value is latent, there *if needed*.
 
-**Lease Negotiations:** Proving to a commercial landlord that the business meets the liability insurance requirements of the lease agreement.
+**Peace of Mind:** They can confirm at any time that the coverage matches what the carrier's system recorded and the policy hasn't been cancelled.
+
+**Future Optionality:** If questions arise—whether for contract awards, lease negotiations, or compliance checks—they have cryptographic proof of coverage ready without needing to contact the carrier.
 
 ## Third-Party Use
+
+The business owner (second party) may hand the verified document to various third parties:
 
 **General Contractors (GCs)**
 **Subcontractor Compliance:** Ensuring that every sub on the job-site is fully insured. Verification prevents the "Buy and Cancel" fraud where a sub buys a policy to get on-site and then cancels it immediately.
@@ -104,11 +93,36 @@ The **Business Owner** (Contractor) benefits from verification.
 - **Limit Inflation:** Editing a $500k policy to read $2M to win a contract.
 - **Class Code Fraud:** Claiming to be a "Florist" (low risk) to get a cheap rate, but showing a "Verified" looking paper to work as a "Steel Erector" (high risk).
 
-**Issuer Types**
+**Issuer Types (First Party)**
 
-**Commercial Carriers:** (Travelers, Chubb, Zurich, Hartford).
-**Managing General Agents (MGAs).**
-**Self-Insured Groups.**
+- Commercial Carriers (Travelers, Chubb, Zurich, Hartford)
+- Managing General Agents (MGAs)
+- Self-Insured Groups
+
+**Privacy Salt:** Not required. CGL policy declarations contain many unpredictable variables: business names, unique policy numbers, specific coverage limits (exact dollar amounts), business descriptions and class codes, effective/expiration dates, deductible amounts, and carrier identifiers. The combination of these policy-specific details creates sufficient entropy to prevent hash enumeration attacks.
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require commercial liability insurers to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the carrier, and any subsequent changes to the policy as they happen—which may manifest as a new hash, a status change (cancelled, lapsed, pending audit), or even a 404 (record deleted)
+- Receives structured content/metadata (policy numbers, coverage limits, business descriptions, policy dates)
+- Does **NOT** receive plaintext (business financial details, loss histories, underwriting notes)
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to business owners/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Carrier cannot deny issuing the policy
+- **Timestamp proof:** Policy hash existed at a specific time
+- **Regulatory audit:** State insurance departments can inspect the witness ledger
+- **Resilience:** Verification works even if carrier's systems go down
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Carrier domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
 
 ## Competition vs. Broker Confirmation Calls
 

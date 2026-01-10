@@ -8,38 +8,27 @@ tags: ["address-verification", "aml", "bank-onboarding", "customer-due-diligence
 furtherDerivations: 2
 ---
 
-<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1); overflow: hidden;">
-  <div style="background: #002d62; color: #fff; padding: 20px; display: flex; align-items: center; justify-content: space-between;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.1em;"><span verifiable-text="start" data-for="kyc-id">[</span>REVOLUT BANK</div>
-      <div style="font-size: 0.8em; opacity: 0.8;">Customer Onboarding & Identity Vetting</div>
-    </div>
-    <div style="font-size: 1.5em;">🏦</div>
-  </div>
-<div style="padding: 25px; display: flex;">
-    <div style="width: 120px; margin-right: 20px;">
-      <div style="width: 120px; height: 150px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #777;">[PHOTO]</div>
-    </div>
-    <div style="flex-grow: 1;">
-      <h3 style="margin: 0; color: #002d62;">VERIFIED CUSTOMER PROFILE</h3>
-      <div style="font-size: 1.1em; font-weight: bold; margin: 10px 0;">DOE, JOHN JACOB</div>
-<div style="font-size: 0.9em; color: #333; line-height: 1.5;">
-        <strong>Document:</strong> US Passport #*******1234<br>
-        <strong>DOB:</strong> May 15, 1985<br>
-        <strong>PEP Status:</strong> CLEAR (Non-Political)<br>
-        <strong>Sanctions:</strong> CLEAR (OFAC/HMT)
-      </div>
-    </div>
-  </div>
-<div style="padding: 0 25px 25px 25px;">
-    <div style="background: #f9f9f9; border: 1px solid #eee; padding: 10px; font-size: 0.85em; color: #555;">
-      <strong>Bank Attestation:</strong> This identity has been verified against government databases and biometric liveness checks. Profile ID: REV-99228877.
-    </div>
-    <div data-verify-line="kyc-id" style="border-top: 1px dashed #999; margin-top: 15px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
-      title="Demo only: Revolut doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:revolut.com/compliance/v/99228877 <span verifiable-text="end" data-for="kyc-id">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <span verifiable-text="start" data-for="kyc-id">[</span>
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;">REVOLUT BANK
+Customer Onboarding & Identity Vetting
+═══════════════════════════════════════════════════════════════════
+
+                    VERIFIED CUSTOMER PROFILE
+
+[PHOTO]     DOE, JOHN JACOB
+
+            Document:    US Passport #*******1234
+            DOB:         May 15, 1985
+            PEP Status:  CLEAR (Non-Political)
+            Sanctions:   CLEAR (OFAC/HMT)
+
+BANK ATTESTATION: This identity has been verified against
+government databases and biometric liveness checks.
+Profile ID: REV-99228877
+
+</pre>
+<span data-verify-line="kyc-id">verify:revolut.com/compliance/v/99228877</span> <span verifiable-text="end" data-for="kyc-id">]</span>
 </div>
 
 ## Data Verified
@@ -64,13 +53,17 @@ Shows the issuer domain (`revolut.com`, `chase.com`, `coinbase.com`) and current
 
 ## Second-Party Use
 
-The **Bank Customer** benefits from verification.
+The **Bank Customer** (second party) receives the KYC verification summary from the bank (first party), **keeps it**, and may later hand it to third parties for various reasons, or never do so.
 
-**Fast Onboarding:** Proving to a second financial institution (e.g., a mortgage lender or a crypto exchange) that they have already passed a rigorous "Bank-Grade" KYC check at a tier-1 institution. This prevents the "2-week wait" for redundant document processing.
+**Personal Record:** They have their own verified copy of their identity verification status. Most of the time, the record sits in their files—the verification value is latent, there *if needed*.
 
-**Identity Protection:** Proving their verified status to a third party (like a high-end landlord) without handing over a full copy of their private Passport or SSN card. The verified hash acts as a "Privacy Shield."
+**Peace of Mind:** They can confirm at any time that their identity verification matches what the bank's system recorded and their status remains in good standing.
+
+**Future Optionality:** If they need to open accounts elsewhere or prove their identity—whether for financial services, rentals, or visa applications—they have cryptographic proof ready without needing to contact the original bank.
 
 ## Third-Party Use
+
+The customer (second party) may hand the verified document to various third parties:
 
 **Mortgage Lenders / Neobanks**
 **Reciprocal KYC:** Instantly verifying the identity claims of an applicant by scanning the hash from their primary bank. This allows for "One-Click Onboarding" across the financial ecosystem.
@@ -89,13 +82,36 @@ The **Bank Customer** benefits from verification.
 - **Photo Substitution:** Using a stolen ID number but editing the photo on the PDF to match the fraudster.
 - **Revocation Hiding:** A user whose account was closed for money laundering yesterday using their old "Verified" paper summary to open a new account today.
 
-**Issuer Types**
+**Issuer Types (First Party)**
 
-**Retail Banks.**
-**Digital Wallets / Neobanks.**
-**KYC Service Providers:** (e.g., Onfido, Jumio, Persona - hosting the hashes).
+- Retail Banks
+- Digital Wallets / Neobanks
+- KYC Service Providers (e.g., Onfido, Jumio, Persona - hosting the hashes)
 
-**Privacy Salt:** ABSOLUTELY CRITICAL. Identity data is the ultimate target for hackers. The hash MUST be salted to prevent "Brute Force" searching of the entire bank population.
+**Privacy Salt:** Required. KYC documents contain highly sensitive personal information with enumerable values—common names, standard date of birth formats, publicly listed addresses, passport number patterns, and predictable status categories (verified, restricted, suspended). A malicious actor could feasibly enumerate combinations to reverse-engineer customer identities, map bank populations, or target specific demographics. Salt is absolutely critical to protect this ultimate target for identity theft and financial fraud.
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require banks and KYC providers to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the bank or KYC provider, and any subsequent changes to the payload as they happen—which may manifest as a new hash, a status change (verified to suspended/blacklisted), or even a 404 (record deleted)
+- Receives structured content/metadata (verification dates, document types, PEP status, sanctions check results)
+- Does **NOT** receive plaintext (customer names, addresses, passport numbers, biometric data)
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to customers/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Bank cannot deny performing KYC verification or the results
+- **Timestamp proof:** Verification existed at a specific time (critical for AML compliance and regulatory examinations)
+- **Regulatory audit:** FinCEN, banking regulators, or law enforcement can inspect the witness ledger for compliance patterns
+- **Resilience:** Verification works even if bank's systems go down or the institution is acquired
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Bank domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
 
 ## Competition vs. ID Verification APIs (Onfido)
 
@@ -114,49 +130,32 @@ The **Bank Customer** benefits from verification.
 _[Content merged from: kyc-proof-of-address]_
 
 
-<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <div style="background: #004a99; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="address">[</span>CON-EDISON</div>
-      <div style="font-size: 0.8em; opacity: 0.8;">Utility Bill & Proof of Service</div>
-    </div>
-    <div style="text-align: right;">
-      <div style="font-size: 0.8em;">Account #: 9922887766</div>
-    </div>
-  </div>
-<div style="padding: 30px;">
-    <div style="border-bottom: 2px solid #004a99; padding-bottom: 10px; margin-bottom: 20px;">
-      <h3 style="margin: 0; color: #333;">SERVICE ADDRESS</h3>
-      <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px; color: #004a99;">
-        123 Bleecker Street, Apt 4B<br>
-        New York, NY 10012
-      </div>
-    </div>
-<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
-      <p><strong>Customer:</strong> JOHN JACOB DOE</p>
-<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
-        <tr>
-          <td><strong>Billing Period:</strong></td>
-          <td style="text-align: right;">Feb 01 - Mar 01, 2026</td>
-        </tr>
-        <tr>
-          <td><strong>Total Amount Due:</strong></td>
-          <td style="text-align: right;">$ 142.50</td>
-        </tr>
-        <tr>
-          <td><strong>Service Status:</strong></td>
-          <td style="text-align: right; color: #2e7d32; font-weight: bold;">ACTIVE</td>
-        </tr>
-      </table>
-    </div>
-<div style="margin-top: 25px; padding: 10px; background: #f9f9f9; border: 1px solid #eee; font-size: 0.8em; color: #555; font-style: italic; text-align: center;">
-      Verification confirms the address and residency status match the utility company's official billing records.
-    </div>
-<div data-verify-line="address" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
-      title="Demo only: Con-Ed doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:coned.com/billing/v/9922887766 <span verifiable-text="end" data-for="address">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <span verifiable-text="start" data-for="address">[</span>
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;">CON-EDISON
+Utility Bill & Proof of Service
+═══════════════════════════════════════════════════════════════════
+
+Account #: 9922887766
+
+SERVICE ADDRESS
+───────────────────────────────────────────────────────────────────
+123 Bleecker Street, Apt 4B
+New York, NY 10012
+
+Customer: JOHN JACOB DOE
+
+BILLING SUMMARY
+───────────────────────────────────────────────────────────────────
+Billing Period:                               Feb 01 - Mar 01, 2026
+Total Amount Due:                                          $ 142.50
+Service Status:                                              ACTIVE
+
+Verification confirms the address and residency status match the
+utility company's official billing records.
+
+</pre>
+<span data-verify-line="address">verify:coned.com/billing/v/9922887766</span> <span verifiable-text="end" data-for="address">]</span>
 </div>
 
 ## Data Verified

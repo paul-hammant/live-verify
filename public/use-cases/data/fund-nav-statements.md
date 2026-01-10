@@ -25,48 +25,34 @@ The common thread: **someone other than you is calculating what your money is wo
 
 In the **Bernie Madoff** scandal, the fraud was possible because Madoff wrote his own statements. A **Verified NAV Statement** must be issued by an independent administrator, custodian, or recordkeeper. Verified hashes ensure the numbers haven't been fabricated or altered.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <div style="background: #002d62; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="nav">[</span>CITCO FUND SERVICES</div>
-      <div style="font-size: 0.8em; opacity: 0.8;">Independent Fund Administrator</div>
-    </div>
-    <div style="text-align: right;">
-      <div style="font-size: 0.8em;">Statement ID: NAV-992288-26</div>
-    </div>
-  </div>
-<div style="padding: 30px;">
-    <h3 style="margin-top: 0; color: #002d62; border-bottom: 2px solid #002d62; padding-bottom: 5px;">MONTHLY CAPITAL ACCOUNT STATEMENT</h3>
-<div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Fund:</strong> Titan Alpha Hedge Fund, LP<br>
-      <strong>Investor:</strong> Wayne Family Foundation</p>
-<div style="background: #f0f4f8; padding: 15px; border: 1px solid #d1d9e6; margin: 15px 0;">
-        <table style="width: 100%; font-size: 0.95em;">
-          <tr>
-            <td><strong>Period Ending:</strong></td>
-            <td style="text-align: right;">March 31, 2026</td>
-          </tr>
-          <tr>
-            <td><strong>NAV per Share:</strong></td>
-            <td style="text-align: right;">$ 1,242.50</td>
-          </tr>
-          <tr>
-            <td><strong>Ending Balance:</strong></td>
-            <td style="text-align: right; font-weight: bold;">$ 12,500,000.00</td>
-          </tr>
-        </table>
-      </div>
-<p style="font-size: 0.85em;"><strong>Performance (MTD):</strong> +4.2%<br>
-      <strong>Performance (YTD):</strong> +12.8%</p>
-    </div>
-<div style="margin-top: 30px; border: 1px solid #ccc; padding: 10px; font-size: 0.8em; color: #555; background: #fafafa; font-style: italic;">
-      This statement is issued by Citco as an independent third party. Verification confirms the NAV and performance match the administrator's official books and records.
-    </div>
-<div data-verify-line="nav" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
-      title="Demo only: Citco doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:citco.com/statements/v/NAV992288 <span verifiable-text="end" data-for="nav">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <span verifiable-text="start" data-for="nav">[</span>
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;">CITCO FUND SERVICES
+Independent Fund Administrator
+═══════════════════════════════════════════════════════════════════
+
+                MONTHLY CAPITAL ACCOUNT STATEMENT
+
+Statement ID: NAV-992288-26
+
+Fund:     Titan Alpha Hedge Fund, LP
+Investor: Wayne Family Foundation
+
+ACCOUNT SUMMARY
+───────────────────────────────────────────────────────────────────
+Period Ending:                                      March 31, 2026
+NAV per Share:                                          $ 1,242.50
+Ending Balance:                                    $ 12,500,000.00
+
+Performance (MTD): +4.2%
+Performance (YTD): +12.8%
+
+This statement is issued by Citco as an independent third party.
+Verification confirms the NAV and performance match the
+administrator's official books and records.
+
+</pre>
+<span data-verify-line="nav">verify:citco.com/statements/v/NAV992288</span> <span verifiable-text="end" data-for="nav">]</span>
 </div>
 
 ## Data Verified
@@ -91,13 +77,17 @@ Shows the issuer domain (`citco.com`, `ssctech.com`, `apexgroup.com`) and the st
 
 ## Second-Party Use
 
-The **Investor (Limited Partner)** benefits from verification.
+The **Investor** (second party) receives the NAV statement from the fund administrator (first party), **keeps it**, and may later hand it to third parties for various reasons, or never do so.
 
-**Madoff Prevention:** Ensuring that the "Statement" the investor receives isn't a fake PDF created by the Fund Manager. By verifying the hash against the **Independent Administrator's** domain (e.g., `citco.com`), the investor has cryptographic proof that a neutral third party is actually calculating the NAV.
+**Personal Record:** They have their own verified copy of their fund valuation and performance. Most of the time, the statement sits in their investment files—the verification value is latent, there *if needed*.
 
-**Collateralized Loans:** Proving to a bank (e.g., Goldman or Morgan Stanley) that the $12.5M fund holding is verified and liquid. This allows high-net-worth individuals to borrow against their private equity holdings with 100% bank trust.
+**Peace of Mind:** They can confirm at any time that it matches what the independent administrator's system recorded and hasn't been altered—the key Madoff prevention mechanism.
+
+**Future Optionality:** If a dispute arises—whether about performance calculations, fee deductions, or withdrawal rights—they have cryptographic proof ready without needing to contact the administrator.
 
 ## Third-Party Use
+
+The investor (second party) may hand the verified document to various third parties:
 
 **Prime Brokers / Lenders**
 **Margin Calculation:** Instantly verifying the NAV of a fund's shares when those shares are pledged as collateral for a margin loan. OCR-to-hash ensures the borrower hasn't "Edited" the PDF to show a 20% higher value.
@@ -116,11 +106,36 @@ The **Investor (Limited Partner)** benefits from verification.
 - **Valuation Padding:** Editing a PDF to change an "Estimated" value of a private company into a "Final" verified high value.
 - **Fee Hiding:** Removing the line item for "Performance Fees" to make the net return look higher to potential new investors.
 
-**Issuer Types**
+**Issuer Types (First Party)**
 
-**Third-Party Administrators (TPAs):** (Citco, SS&C, Northern Trust, Apex).
-**Custodian Banks:** (BNY Mellon, State Street).
-**Big 4 Auditors:** (For the annual "Audited NAV" hash).
+- Third-Party Administrators (TPAs) — Citco, SS&C, Northern Trust, Apex
+- Custodian Banks — BNY Mellon, State Street
+- Big 4 Auditors — For the annual "Audited NAV" hash
+
+**Privacy Salt:** Required. Unlike documents with many unpredictable variables, NAV statements often contain enumerable values—round dollar amounts, standard fund names, predictable quarterly reporting dates, and publicly known performance tiers. A competitor or malicious actor could feasibly enumerate combinations to reverse-engineer investor positions, fund sizes, or institutional allocations. Salt protects this sensitive financial intelligence from systematic discovery.
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require fund administrators to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the administrator, and any subsequent changes to the payload as they happen—which may manifest as a new hash, a status change (preliminary to final, or restated), or even a 404 (record deleted)
+- Receives structured content/metadata (NAV per share, total balance, performance percentages, fee amounts, period dates)
+- Does **NOT** receive plaintext (investor names, account numbers, detailed holdings)
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to investors/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Administrator cannot deny issuing the NAV or performance figures
+- **Timestamp proof:** NAV existed at a specific time (critical for tax reporting and audits)
+- **Regulatory audit:** SEC, state securities regulators, or foreign financial authorities can inspect the witness ledger for Madoff-style fraud detection
+- **Resilience:** Verification works even if administrator's systems go down or the fund is liquidated
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Administrator domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
 
 ## Competition vs. Investor Portals
 

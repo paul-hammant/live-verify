@@ -20,23 +20,23 @@ Without this letter:
 Charities often have to fax, email, or mail this letter dozens of times a year to prove their legitimacy.
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', serif; border: 1px solid #ccc; background: #fff; padding: 40px;">
+  <span verifiable-text="start" data-for="501c3">[</span>
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 20px; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="501c3">[</span>Internal Revenue Service</div>
+    <div style="font-weight: bold; font-size: 1.2em;">Internal Revenue Service</div>
     <div style="font-size: 0.9em;">Department of the Treasury</div>
     <div style="font-size: 0.9em;">P.O. Box 2508, Cincinnati, OH 45201</div>
   </div>
-<div style="display: flex; justify-content: space-between; margin-bottom: 30px; font-size: 0.9em;">
+<div style="margin-bottom: 30px; font-size: 0.9em;">
+    <div style="text-align: right; margin-bottom: 20px;">
+      Employer Identification Number:<br>
+      <span style="font-weight: bold;">12-3456789</span><br>
+      DLN: 17053221002025
+    </div>
     <div>
       Date: <span style="font-weight: bold;">OCT 24 2025</span><br><br>
       THE HUMAN FUND<br>
       123 CHARITY LANE<br>
       NEW YORK, NY 10001
-    </div>
-    <div style="text-align: right;">
-      Employer Identification Number:<br>
-      <span style="font-weight: bold;">12-3456789</span><br><br>
-      DLN:<br>
-      17053221002025
     </div>
   </div>
 <div style="font-size: 0.95em; line-height: 1.6; text-align: justify;">
@@ -46,8 +46,9 @@ Charities often have to fax, email, or mail this letter dozens of times a year t
   </div>
 <div data-verify-line="501c3" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: IRS doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:irs.gov/teos/v/9a8b7c <span verifiable-text="end" data-for="501c3">]</span>
+      verify:irs.gov/teos/v/9a8b7c
   </div>
+  <span verifiable-text="end" data-for="501c3">]</span>
 </div>
 
 ## Data Verified
@@ -69,27 +70,26 @@ Shows the issuer domain (e.g., `irs.gov`) and current status.
 
 ## Second-Party Use
 
-The **Non-Profit Organization** benefits from verification.
+The **Non-Profit Organization** (second party) receives the determination letter from the IRS (first party), **keeps it**, and may later hand it to third parties for various reasons, or never do so.
 
-**Grant Applications:** Foundations require proof of 501(c)(3) status before releasing funds. A verified letter speeds up due diligence.
+**Personal Record:** The organization has their own verified copy of tax-exempt status. Most of the time, the document sits in organizational files—the verification value is latent, there *if needed*.
 
-**State Registration:** Registering for charitable solicitation in other states (e.g., California Registry of Charitable Trusts) requires proof of IRS status.
+**Peace of Mind:** The organization can confirm at any time that the letter matches what the IRS's system recorded and hasn't been altered since they received it.
 
-**Donation Processing:** Payment processors (Stripe, PayPal) and donor advised funds (Fidelity Charitable, Schwab) require this proof to open accounts or disburse grants.
+**Future Optionality:** If a grant application arises, a state registration is needed, or a donor questions their tax-deductibility, the organization has cryptographic proof ready without needing to contact the IRS.
 
 ## Third-Party Use
 
-**Donors and Foundations**
+The non-profit organization (second party) may hand the verified document to various third parties:
 
-**Tax Deduction Confidence:** High-net-worth donors want absolute certainty that their large donation will be tax-deductible. Verifying the determination letter confirms the entity is legitimate and currently exempt.
+**Donors and Foundations**
+High-net-worth donors want absolute certainty that their large donation will be tax-deductible. Verifying the determination letter confirms the entity is legitimate and currently exempt.
 
 **Corporate Matching Platforms**
-
-**Fraud Prevention:** Platforms like Benevity or CyberGrants verify charities before allowing employees to donate. Automation via OCR verification reduces manual review time.
+Platforms like Benevity or CyberGrants verify charities before allowing employees to donate. Automation via OCR verification reduces manual review time.
 
 **State Regulators**
-
-**Charity Bureau Oversight:** State Attorneys General can verify the federal status of organizations soliciting funds in their jurisdiction.
+State Attorneys General can verify the federal status of organizations soliciting funds in their jurisdiction.
 
 ## Verification Architecture
 
@@ -99,12 +99,34 @@ The **Non-Profit Organization** benefits from verification.
 - **Status Misrepresentation:** Claiming to be tax-exempt when the status was actually revoked years ago for non-filing.
 - **Photoshop:** Altering an old determination letter to change the year or the address.
 
-**Issuer Types**
+**Issuer Types (First Party)**
 
-**Internal Revenue Service (IRS):** The sole authority for federal tax exemption.
+- Internal Revenue Service (IRS) — The sole authority for federal tax exemption
 
-**System Integration:**
-The IRS maintains the **Tax Exempt Organization Search (TEOS)** database. Verification endpoints would effectively be a high-speed, cryptographically secure API to this existing public data, bound to the physical letter.
+**Privacy Salt:** Not required. The determination letter contains highly unpredictable variables—unique EIN (Employer Identification Number), organization legal name variations, specific determination dates, and DLN (Document Locator Number). These elements combined provide sufficient entropy that enumeration attacks are infeasible. Adding salt would provide no additional security benefit.
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require the IRS (or state-level equivalents) to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the IRS, and any subsequent changes to the payload as they happen—which may manifest as a new hash, a status change (revoked, suspended), or even a 404 (record deleted)
+- Receives structured content/metadata (organization name, EIN, exemption date, public charity classification)
+- Does **NOT** receive plaintext (donor information, financial details)
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to organizations/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** IRS cannot deny issuing the determination letter
+- **Timestamp proof:** Exemption existed at a specific time
+- **Regulatory audit:** State charity bureaus can inspect the witness ledger for fraud detection
+- **Resilience:** Verification works even if IRS systems go down
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **IRS domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
 
 ## Competition vs. QR/NFC
 

@@ -14,53 +14,25 @@ In global agriculture, a **Seed Certification Tag** (often a blue, purple, or wh
 
 These tags are the "Intellectual Property" of the seed world. Fraud is common in high-value crops (e.g., GMO Soybeans or Hybrid Corn). Shady dealers often "edit" a tag to turn generic, low-quality grain into a "Certified High-Yield" variety to sell it at a 500% markup. Similarly, they might hide a poor germination test result. Verified hashes bind the **Lot Number, Variety Name, and Purity Metrics** to the state's or the breeder's domain (e.g., `aosca.org` or `monsanto.com`).
 
-<div style="max-width: 450px; margin: 24px auto; font-family: sans-serif; border: 2px solid #004a99; border-radius: 4px; background: #fff; padding: 0; box-shadow: 0 2px 8px rgba(0,0,0,0.1); overflow: hidden;">
-  <div style="background: #004a99; color: #fff; padding: 15px; text-align: center; border-bottom: 2px solid #000;">
-    <div style="font-weight: bold; font-size: 1.1em; letter-spacing: 1px;"><span verifiable-text="start" data-for="seed">[</span>OFFICIAL CERTIFIED SEED</div>
-    <div style="font-size: 0.7em; opacity: 0.9; text-transform: uppercase;">Member: Assoc. of Official Seed Certifying Agencies</div>
-  </div>
-<div style="padding: 20px; background: #e3f2fd;">
-    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px;">
-      <div style="font-size: 0.9em; line-height: 1.4;">
-        <strong>Crop:</strong> Winter Wheat<br>
-        <strong>Variety:</strong> GOLDEN-HARVEST 42<br>
-        <strong>Lot #:</strong> 9922-8877-XJ
-      </div>
-      <div style="text-align: right; font-size: 0.8em; color: #004a99;">
-        <strong>Tag ID:</strong> #NY-992288<br>
-        <strong>Class:</strong> CERTIFIED
-      </div>
-    </div>
-<div style="background: #fff; border: 1px solid #004a99; padding: 10px; border-radius: 2px;">
-      <table style="width: 100%; font-size: 0.85em; border-collapse: collapse;">
-        <tr>
-          <td><strong>Pure Seed:</strong></td>
-          <td style="text-align: right; font-weight: bold;">99.85%</td>
-        </tr>
-        <tr>
-          <td><strong>Germination:</strong></td>
-          <td style="text-align: right; font-weight: bold;">94.00%</td>
-        </tr>
-        <tr>
-          <td><strong>Inert Matter:</strong></td>
-          <td style="text-align: right;">0.15%</td>
-        </tr>
-        <tr style="color: #d32f2f;">
-          <td><strong>Noxious Weeds:</strong></td>
-          <td style="text-align: right; font-weight: bold;">NONE</td>
-        </tr>
-      </table>
-    </div>
-  </div>
-<div style="padding: 15px; background: #fff; text-align: center;">
-    <div data-verify-line="seed" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
-      title="Demo only: Seed certifying agencies don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:aosca.org/v/NY992288-GOLDEN <span verifiable-text="end" data-for="seed">]</span>
-    </div>
-    <div style="font-size: 0.65em; color: #666; margin-top: 8px; font-style: italic;">
-      Scan to verify genetic purity, germination test date, and IP licensing authority.
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <span verifiable-text="start" data-for="seed">[</span>
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;">OFFICIAL CERTIFIED SEED
+Member: Assoc. of Official Seed Certifying Agencies
+═══════════════════════════════════════════════════════════════════
+
+Crop:      Winter Wheat                         Tag ID: #NY-992288
+Variety:   GOLDEN-HARVEST 42                    Class:  CERTIFIED
+Lot #:     9922-8877-XJ
+
+QUALITY ANALYSIS
+───────────────────────────────────────────────────────────────────
+Pure Seed:                                                   99.85%
+Germination:                                                 94.00%
+Inert Matter:                                                 0.15%
+Noxious Weeds:                                                 NONE
+
+</pre>
+<span data-verify-line="seed">verify:aosca.org/v/NY992288-GOLDEN</span> <span verifiable-text="end" data-for="seed">]</span>
 </div>
 
 ## Data Verified
@@ -85,22 +57,29 @@ Shows the issuer domain (`aosca.org`, `state-crop-improvement.org`, `corteva.com
 
 ## Second-Party Use
 
-The **Farmer / Grower** benefits from verification.
+The **Farmer** (second party) receives the seed certification from the certifying agency (first party), **keeps it**, and may later hand it to third parties for various reasons, or never do so.
 
-**Yield Protection:** Before planting a $50,000 crop, the farmer scans the verified tag on the seed bags. "Verified by AOSCA" ensures the farmer that the seeds aren't "Cleaned Grain" from a previous harvest, but are the high-yield, disease-resistant variety they paid for, protecting their entire season's revenue.
+**Personal Record:** The farmer has their own verified copy of the seed quality metrics. Most of the time, the document sits in their farm records—the verification value is latent, there *if needed*.
 
-**IP Compliance:** A farmer can maintain a verified library of all seed tags used. During a "Plant Variety Protection" (PVP) audit by a seed company, the farmer can provide the verified hashes to prove they legally purchased the seeds and aren't "Brown-Bagging" (illegally replanting) protected varieties.
+**Peace of Mind:** The farmer can confirm at any time that the certification matches what the agency's system recorded and hasn't been altered, ensuring they're planting the high-yield, disease-resistant variety they paid for.
+
+**Future Optionality:** If a dispute arises—whether about crop failure, IP compliance audits, or loan defaults—the farmer has cryptographic proof ready without needing to contact the certifying agency.
 
 ## Third-Party Use
 
-**Seed Dealers / Wholesalers**
-**Inventory Integrity:** A dealer receiving 500 bags of seed can scan the hashes. Verification ensures the lot numbers match the shipping manifest and that no "un-certified" bags have been mixed into the high-value shipment.
+The farmer (second party) may hand the verified document to various third parties:
 
-**Agricultural Lenders**
-**Loan Collateral:** Banks providing "Input Loans" scan the verified seed hashes. This ensures the loan is being used for high-quality, insured-eligible inputs, reducing the risk of a crop failure.
+**Agricultural Lenders (Loan Collateral)**
+Banks providing "Input Loans" receive verified seed hashes from farmers. This ensures the loan is being used for high-quality, insured-eligible inputs, reducing the risk of a crop failure and protecting the lender's collateral.
 
-**Export Authorities**
-**Phytosanitary Vetting:** Verifying that seeds being exported match the "Clean" lab results required by the importing nation, stopping the spread of invasive weed species.
+**Seed Companies / IP Auditors (PVP Compliance)**
+During a "Plant Variety Protection" (PVP) audit, the farmer provides verified hashes to prove they legally purchased the seeds and aren't "brown-bagging" (illegally replanting) protected varieties.
+
+**Export Authorities (Phytosanitary Vetting)**
+Customs officials receive verified seed certifications to confirm that seeds being exported match the "clean" lab results required by the importing nation, stopping the spread of invasive weed species.
+
+**Seed Dealers / Wholesalers (Inventory Verification)**
+A dealer receiving 500 bags of seed scans the verified hashes to ensure the lot numbers match the shipping manifest and that no "uncertified" bags have been mixed into the high-value shipment.
 
 ## Verification Architecture
 
@@ -110,13 +89,36 @@ The **Farmer / Grower** benefits from verification.
 - **Germination Padding:** Editing a "75%" (Poor) germination result into a "95%" (Excellent) one on a PDF analysis report.
 - **Tag Re-Use:** Harvesting the blue tags from a real shipment and sewing them onto bags of low-quality grain.
 
-**Issuer Types**
+**Issuer Types (First Party)**
 
-**National Seed Certifying Agencies (AOSCA).**
-**State Crop Improvement Associations.**
-**Global Seed Companies (for internal IP tracking).**
+- National Seed Certifying Agencies (AOSCA)
+- State Crop Improvement Associations
+- Global Seed Companies (for internal IP tracking)
 
-**Privacy Salt:** Low to Medium. While variety names are public, specific grower field locations and total purchase volumes are sensitive business secrets. The hash should be salted to prevent "Market-Share Mapping" by competitors.
+**Privacy Salt:** Required. While variety names are public, specific grower field locations and total purchase volumes are sensitive business secrets. The combination of lot numbers, tag IDs, and precise quality metrics (99.85% purity, 94.00% germination) provides some entropy, but the risk that competitors could use enumeration for "market-share mapping"—tracking which farmers are buying which varieties and in what volumes—means salt is essential. Salt protects both farmer privacy and seed company competitive intelligence.
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require seed certifying agencies to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the certifying agency, and any subsequent changes to the certification as they happen—which may manifest as a new hash, a status change (test expired, banned lot), or even a 404 (record deleted)
+- Receives structured content/metadata (lot numbers, variety names, germination rates, purity percentages, test dates)
+- Does **NOT** receive plaintext (grower names, field locations, purchase volumes)
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to farmers/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Certifying agency cannot deny issuing the certification
+- **Timestamp proof:** Certification existed at a specific time (critical for PVP disputes and crop insurance claims)
+- **Regulatory audit:** Agricultural departments can inspect the witness ledger for seed quality compliance and IP protection
+- **Resilience:** Verification works even if certifying agency's systems go down or the agency dissolves
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Certifying agency domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
 
 ## Rationale
 

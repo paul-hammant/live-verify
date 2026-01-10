@@ -8,50 +8,34 @@ tags: ["auction", "price-history", "hammer-price", "provenance", "collectibles",
 furtherDerivations: 1
 ---
 
-<div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 2px 2px 10px rgba(0,0,0,0.05);">
-  <div style="text-align: right; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.4em; color: #000;"><span verifiable-text="start" data-for="auction">[</span>PHILLIPS</div>
-    <div style="font-size: 0.8em; color: #666;">NEW YORK • 432 PARK AVENUE</div>
-  </div>
-<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
-    <h3 style="text-align: center; text-transform: uppercase; margin-bottom: 20px;">Purchase Statement</h3>
-<p><strong>Sale:</strong> NY010126 - Modern Masterpieces<br>
-    <strong>Date:</strong> 15 March 2026<br>
-    <strong>Bidder #:</strong> 9988</p>
-<div style="margin: 20px 0; border-top: 2px solid #000; padding-top: 15px;">
-      <table style="width: 100%;">
-        <tr>
-          <td><strong>Lot 42:</strong> <em>The Electric Violin</em> (1962)</td>
-          <td style="text-align: right;">$ 1,200,000.00</td>
-        </tr>
-        <tr>
-          <td>Buyer's Premium:</td>
-          <td style="text-align: right;">$ 300,000.00</td>
-        </tr>
-        <tr>
-          <td>Sales Tax (8.875%):</td>
-          <td style="text-align: right;">$ 133,125.00</td>
-        </tr>
-        <tr style="border-top: 1px solid #000; font-weight: bold; font-size: 1.1em;">
-          <td>TOTAL AMOUNT DUE:</td>
-          <td style="text-align: right;">$ 1,633,125.00</td>
-        </tr>
-      </table>
-    </div>
-<p style="font-style: italic; font-size: 0.9em;">Payment received in full. Title transferred upon clearance of funds.</p>
-<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
-      <div>
-        <div style="border-top: 1px solid #000; width: 180px; padding-top: 5px;">Auction House Controller</div>
-      </div>
-      <div style="text-align: right; font-size: 0.8em; color: #777;">
-        Invoice #: INV-9982-X
-      </div>
-    </div>
-  </div>
-<div data-verify-line="auction" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
-      title="Demo only: Phillips doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:phillips.com/sales/v/NY010126-42 <span verifiable-text="end" data-for="auction">]</span>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <span verifiable-text="start" data-for="auction">[</span>
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;">PHILLIPS
+NEW YORK - 432 PARK AVENUE
+═══════════════════════════════════════════════════════════════════
+
+                      PURCHASE STATEMENT
+
+Sale:       NY010126 - Modern Masterpieces
+Date:       15 March 2026
+Bidder #:   9988
+
+PURCHASE DETAIL
+───────────────────────────────────────────────────────────────────
+Lot 42: "The Electric Violin" (1962)                $ 1,200,000.00
+Buyer's Premium:                                      $ 300,000.00
+Sales Tax (8.875%):                                   $ 133,125.00
+───────────────────────────────────────────────────────────────────
+TOTAL AMOUNT DUE:                                   $ 1,633,125.00
+
+Payment received in full. Title transferred upon clearance of funds.
+
+                    ________________________
+                    Auction House Controller
+                    Invoice #: INV-9982-X
+
+</pre>
+  <span data-verify-line="auction">verify:phillips.com/sales/v/NY010126-42</span> <span verifiable-text="end" data-for="auction">]</span>
 </div>
 
 ## Data Verified
@@ -74,24 +58,26 @@ Shows the issuer domain (`phillips.com`, `sothebys.com`) and the sale confirmati
 
 ## Second-Party Use
 
-The **Buyer** (Collector) benefits from verification.
+The **Buyer** (second party) receives the purchase statement from the auction house (first party), **keeps it**, and may later hand it to third parties for various reasons, or never do so.
 
-**Estate Valuation:** Proving the "Fair Market Value" to the IRS based on a verified auction hammer price (which is the gold standard for valuation).
+**Personal Record:** The buyer has their own verified copy of the purchase. Most of the time, the document sits in their art collection files—the verification value is latent, there *if needed*.
 
-**Collateralized Loans:** Proving to a bank exactly what was paid for a piece last week to secure a loan based on that cost basis.
+**Peace of Mind:** The buyer can confirm at any time that the statement matches what the auction house's system recorded and hasn't been altered since they received it.
 
-**Insurance Coverage:** Establishing the "Agreed Value" for a policy based on a verified purchase price.
+**Future Optionality:** If an estate valuation is needed, an insurance policy requires updating, or a loan is sought against the artwork, the buyer has cryptographic proof ready without needing to contact the auction house.
 
 ## Third-Party Use
 
+The buyer (second party) may hand the verified document to various third parties:
+
 **Insurance Underwriters**
-**Value Verification:** Preventing "over-insurance" where a buyer claims they paid $5M for a work they actually won for $1M. Verification of the hammer price ensures the policy limit is accurate.
+Preventing "over-insurance" where a buyer claims they paid $5M for a work they actually won for $1M. Verification of the hammer price ensures the policy limit is accurate.
 
 **Tax Authorities (Capital Gains)**
-**Cost Basis Audit:** When the collector sells the work 10 years later, the tax authority can verify the original "Purchase Statement" to confirm the starting cost basis for capital gains tax.
+When the collector sells the work 10 years later, the tax authority can verify the original "Purchase Statement" to confirm the starting cost basis for capital gains tax.
 
 **Art Market Researchers**
-**Price Transparency:** Verifying that "record-breaking prices" reported in the media are authentic and matched by actual paid invoices, preventing "shill bidding" or fabricated price reports.
+Verifying that "record-breaking prices" reported in the media are authentic and matched by actual paid invoices, preventing "shill bidding" or fabricated price reports.
 
 ## Verification Architecture
 
@@ -101,10 +87,35 @@ The **Buyer** (Collector) benefits from verification.
 - **Tax Evasion:** Fabricating an invoice with a *lower* price to reduce sales tax or import duties.
 - **Identity Theft:** Using a real auction invoice from a famous collector to "legitimize" a fake version of the same painting.
 
-**Issuer Types**
+**Issuer Types (First Party)**
 
-**Major Auction Houses:** (Phillips, Christie's, Sotheby's, Bonhams).
-**Online Platforms:** (Artsy, LiveAuctioneers, Heritage Auctions).
+- Major Auction Houses (Phillips, Christie's, Sotheby's, Bonhams)
+- Online Platforms (Artsy, LiveAuctioneers, Heritage Auctions)
+
+**Privacy Salt:** Not required. Auction purchase statements contain highly unpredictable variables—unique lot numbers, specific sale IDs with dates, buyer/bidder IDs, artwork titles and years, precise hammer prices, and calculated premiums with exact tax percentages. These elements combined provide sufficient entropy that enumeration attacks are infeasible. Adding salt would provide no additional security benefit.
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require auction houses to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the auction house, and any subsequent changes to the payload as they happen—which may manifest as a new hash, a status change (withdrawn, in-dispute), or even a 404 (record deleted)
+- Receives structured content/metadata (sale IDs, lot numbers, hammer prices, total amounts)
+- Does **NOT** receive plaintext (buyer names, bidder identities, payment details)
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to buyers/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Auction house cannot deny issuing the purchase statement
+- **Timestamp proof:** Sale occurred at a specific time with specific terms
+- **Regulatory audit:** Art market regulators can inspect the witness ledger for price manipulation
+- **Resilience:** Verification works even if auction house's systems go down
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Auction house domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
 
 ## Competition vs. Public Price Databases
 

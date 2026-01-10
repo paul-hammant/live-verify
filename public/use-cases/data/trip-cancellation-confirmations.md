@@ -14,53 +14,31 @@ In the travel industry, a **Trip Cancellation Confirmation** is the formal proof
 
 These documents are the primary evidence used for **Travel Insurance Claims**. A traveler claiming $5,000 for a missed vacation must prove the trip was actually cancelled and show exactly how much the airline *didn't* refund. Fraud is rampant: people "Photoshop" a standard cancellation email to hide a partial refund they already received, or they create fake "Cancellation Notices" for trips they never booked to scam their insurer. Verified hashes bind the **Refund Amounts, Cancellation Reason, and Booking Reference** to the provider's domain (e.g., `britishairways.com` or `booking.com`).
 
-<div style="max-width: 600px; margin: 24px auto; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <div style="background: #d32f2f; color: #fff; padding: 25px; display: flex; justify-content: space-between; align-items: center;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.4em;"><span verifiable-text="start" data-for="cancel">[</span>BRITISH AIRWAYS</div>
-      <div style="font-size: 0.8em; opacity: 0.9;">Official Cancellation Notice</div>
-    </div>
-    <div style="text-align: right;">
-      <div style="font-size: 0.8em;">Booking Ref: L7XK9B</div>
-    </div>
-  </div>
-<div style="padding: 25px;">
-    <h3 style="margin-top: 0; color: #333; border-bottom: 2px solid #d32f2f; padding-bottom: 5px;">CANCELLATION SUMMARY</h3>
-<div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Passenger:</strong> JOHN JACOB DOE<br>
-      <strong>Cancellation Date:</strong> MARCH 15, 2026<br>
-      <strong>Reason:</strong> Passenger Request (Non-Refundable Fare)</p>
-<div style="margin: 20px 0; border: 1px solid #eee; border-radius: 4px; overflow: hidden;">
-        <table style="width: 100%; border-collapse: collapse;">
-          <tr style="background: #f5f5f5; border-bottom: 1px solid #eee;">
-            <th style="text-align: left; padding: 10px;">Refund Type</th>
-            <th style="text-align: right; padding: 10px;">Amount</th>
-          </tr>
-          <tr>
-            <td style="padding: 10px;">Government Taxes & Fees (Refunded to Card)</td>
-            <td style="text-align: right; padding: 10px;">$ 142.50</td>
-          </tr>
-          <tr>
-            <td style="padding: 10px;">Base Fare (Non-Refundable / No Credit)</td>
-            <td style="text-align: right; padding: 10px;">$ 1,200.00</td>
-          </tr>
-          <tr style="font-weight: bold; border-top: 2px solid #eee; background: #fffbe6;">
-            <td style="padding: 10px;">TOTAL NON-REFUNDABLE LOSS:</td>
-            <td style="text-align: right; padding: 10px; color: #d32f2f;">$ 1,200.00</td>
-          </tr>
-        </table>
-      </div>
-    </div>
-  </div>
-<div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #bbb; text-align: center;">
-    <div data-verify-line="cancel" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #d32f2f; font-weight: bold;"
-      title="Demo only: Airlines don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:ba.com/cancel/v/L7XK9BDOE <span verifiable-text="end" data-for="cancel">]</span>
-    </div>
-    <div style="font-size: 0.7em; color: #999; margin-top: 10px; font-style: italic;">
-      Scan to verify cancellation status and non-refundable loss amounts for insurance purposes.
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <span verifiable-text="start" data-for="cancel">[</span>
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;">BRITISH AIRWAYS
+Official Cancellation Notice
+═══════════════════════════════════════════════════════════════════
+
+Booking Ref: L7XK9B
+
+CANCELLATION SUMMARY
+───────────────────────────────────────────────────────────────────
+Passenger:         JOHN JACOB DOE
+Cancellation Date: MARCH 15, 2026
+Reason:            Passenger Request (Non-Refundable Fare)
+
+REFUND BREAKDOWN
+───────────────────────────────────────────────────────────────────
+Refund Type                                                  Amount
+───────────────────────────────────────────────────────────────────
+Government Taxes & Fees (Refunded to Card)                 $ 142.50
+Base Fare (Non-Refundable / No Credit)                   $ 1,200.00
+───────────────────────────────────────────────────────────────────
+TOTAL NON-REFUNDABLE LOSS:                               $ 1,200.00
+
+</pre>
+<span data-verify-line="cancel">verify:ba.com/cancel/v/L7XK9BDOE</span> <span verifiable-text="end" data-for="cancel">]</span>
 </div>
 
 ## Data Verified
@@ -85,22 +63,32 @@ Shows the issuer domain (`ba.com`, `expedia.com`, `marriott.com`) and the bookin
 
 ## Second-Party Use
 
-The **Traveler (Claimant)** benefits from verification.
+The **Traveler** (second party) receives the cancellation confirmation from the airline or travel provider (first party), **keeps it**, and may later hand it to third parties for various reasons, or never do so.
 
-**Insurance Payout Speed:** When filing a $1,200 "Trip Interruption" claim, the traveler provides the verified hash of their BA cancellation notice. The insurer can instantly see **"VERIFIED LOSS - $1,200"** directly from the airline domain, bypassing the 3-week "Manual Verification" wait and getting the traveler paid in days.
+**Personal Record:** The traveler has their own verified copy of the cancellation details and refund breakdown. Most of the time, the document sits in their email or travel folder—the verification value is latent, there *if needed*.
 
-**Employer Credit Management:** Proving to an employer that a cancelled business trip resulted in a "Future Travel Credit" (which belongs to the company) and not a "Cash Refund" (which the employee might try to pocket).
+**Peace of Mind:** The traveler can confirm at any time that the confirmation matches what the airline's system recorded and hasn't been altered, ensuring they have accurate records of non-refundable losses.
+
+**Future Optionality:** If a dispute arises—whether about insurance claims, employer reimbursements, or tax deductions—the traveler has cryptographic proof ready without needing to contact the airline.
 
 ## Third-Party Use
 
-**Travel Insurance Underwriters (e.g., Allianz, AIG)**
-**Fraud Detection:** Cross-referencing "Loss Claims" with verified airline hashes. If a claimant submits a PDF showing a "$2,000 Non-Refundable Loss," but the verified hash returns **"FULLY REFUNDED TO VISA,"** the insurer can deny the claim and flag the user for fraud.
+The traveler (second party) may hand the verified document to various third parties:
 
-**Corporate Travel Management (TMCs)**
-**Credit Recovery:** Automatically tracking all verified "Future Travel Credits" across an entire workforce to ensure that $100,000+ in corporate travel value isn't lost when credits expire.
+**Travel Insurance Underwriters (Claims Processing)**
+When filing a $1,200 "Trip Interruption" claim, the traveler provides the verified hash of their BA cancellation notice. The insurer can instantly see **"VERIFIED LOSS - $1,200"** directly from the airline domain, bypassing the 3-week "Manual Verification" wait and getting the traveler paid in days.
 
-**Tax Authorities**
-**Business Loss Audit:** Verifying that "Cancelled Travel" deductions on a corporate tax return are backed by legitimate, verified non-refundable losses.
+**Travel Insurance Fraud Detection**
+Insurers cross-reference "Loss Claims" with verified airline hashes. If a claimant submits a PDF showing a "$2,000 Non-Refundable Loss," but the verified hash returns **"FULLY REFUNDED TO VISA,"** the insurer can deny the claim and flag the user for fraud.
+
+**Employers (Business Travel Reconciliation)**
+An employee provides verified cancellation confirmations to prove that a cancelled business trip resulted in a "Future Travel Credit" (which belongs to the company) and not a "Cash Refund" (which the employee might try to pocket).
+
+**Corporate Travel Management (Credit Recovery)**
+TMCs automatically track all verified "Future Travel Credits" across an entire workforce to ensure that $100,000+ in corporate travel value isn't lost when credits expire.
+
+**Tax Authorities (Business Loss Audit)**
+Auditors verify that "Cancelled Travel" deductions on a corporate tax return are backed by legitimate, verified non-refundable losses.
 
 ## Verification Architecture
 
@@ -110,13 +98,36 @@ The **Traveler (Claimant)** benefits from verification.
 - **Ghost Cancellations:** Creating fake cancellation emails for a flight that the passenger actually flew on.
 - **Date Tampering:** Changing the cancellation date to fall within the "Insurance Coverage Window."
 
-**Issuer Types**
+**Issuer Types (First Party)**
 
-**Airlines.**
-**Hotels & OTAs.**
-**Rail Operators.**
+- Airlines
+- Hotels & OTAs
+- Rail Operators
 
-**Privacy Salt:** Essential. Passenger names and booking codes are private. The hash must be salted to prevent "Cancellation Mining" (e.g., a rival trying to see how many people cancelled during a BA strike).
+**Privacy Salt:** Required. Passenger names and booking codes are private. While each cancellation contains unique combinations of booking references (PNRs), passenger names, cancellation timestamps, and specific refund amounts that provide significant entropy, the sensitivity of travel patterns—and the risk that competitors could use enumeration for "cancellation mining" to track operational disruptions (e.g., how many people cancelled during a BA strike)—means salt is essential. Salt protects both passenger privacy and carrier competitive intelligence.
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require travel providers to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the travel provider, and any subsequent changes to the cancellation as they happen—which may manifest as a new hash, a status change (modification pending), or even a 404 (record deleted)
+- Receives structured content/metadata (booking references, cancellation dates, refund amounts, credit values)
+- Does **NOT** receive plaintext (passenger names, payment card details, itinerary details)
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to travelers/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Travel provider cannot deny issuing the cancellation or alter refund amounts
+- **Timestamp proof:** Cancellation existed at a specific time (critical for insurance claim windows)
+- **Regulatory audit:** Consumer protection agencies can inspect the witness ledger for refund compliance
+- **Resilience:** Verification works even if travel provider's systems go down or the provider ceases operations
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Travel provider domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
 
 ## Rationale
 

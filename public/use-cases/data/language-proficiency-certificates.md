@@ -8,56 +8,31 @@ tags: ["toefl", "ielts", "english-proficiency", "higher-education", "immigration
 furtherDerivations: 1
 ---
 
-<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #004a99; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <div style="background: #004a99; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="lang-test">[</span>ETS - TOEFL iBT&reg;</div>
-      <div style="font-size: 0.8em; opacity: 0.8;">Test-Taker Score Report</div>
-    </div>
-    <div style="width: 50px; height: 50px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #004a99; font-weight: bold; font-size: 0.8em;">TOEFL</div>
-  </div>
-<div style="padding: 30px;">
-    <div style="display: flex; justify-content: space-between; margin-bottom: 25px;">
-      <div>
-        <div style="font-size: 1.1em; font-weight: bold; color: #333;"><strong>DOE, JOHN JACOB</strong></div>
-        <div style="font-size: 0.9em; color: #666;">Registration ID: 0000 0000 9922 8877</div>
-      </div>
-      <div style="text-align: right;">
-        <div style="font-size: 0.7em; color: #777;">Test Date: MAR 15, 2026</div>
-        <div style="font-size: 2.2em; font-weight: bold; color: #004a99;">114</div>
-        <div style="font-size: 0.7em; color: #004a99; font-weight: bold; text-transform: uppercase;">Total Score</div>
-      </div>
-    </div>
-<table style="width: 100%; border-collapse: collapse; font-size: 0.9em; color: #333;">
-      <tr style="border-bottom: 1px solid #eee; background: #f9f9f9;">
-        <th style="padding: 8px; text-align: left;">Section</th>
-        <th style="padding: 8px; text-align: right;">Score (0-30)</th>
-      </tr>
-      <tr>
-        <td style="padding: 8px;">Reading</td>
-        <td style="text-align: right;">29</td>
-      </tr>
-      <tr>
-        <td style="padding: 8px;">Listening</td>
-        <td style="text-align: right;">30</td>
-      </tr>
-      <tr>
-        <td style="padding: 8px;">Speaking</td>
-        <td style="text-align: right;">27</td>
-      </tr>
-      <tr>
-        <td style="padding: 8px;">Writing</td>
-        <td style="text-align: right;">28</td>
-      </tr>
-    </table>
-<div style="margin-top: 25px; padding: 10px; background: #f0f4f8; border: 1px solid #d1d9e6; font-size: 0.8em; color: #004a99; font-style: italic; text-align: center;">
-      This report is a verified record of the test-taker's English proficiency. Valid for 2 years from the test date.
-    </div>
-<div data-verify-line="lang-test" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
-      title="Demo only: ETS doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:ets.org/toefl/v/99228877 <span verifiable-text="end" data-for="lang-test">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <span verifiable-text="start" data-for="lang-test">[</span>
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;">ETS - TOEFL iBT
+Test-Taker Score Report
+═══════════════════════════════════════════════════════════════════
+
+DOE, JOHN JACOB                              Test Date: MAR 15, 2026
+Registration ID: 0000 0000 9922 8877
+
+                                               TOTAL SCORE: 114
+
+SECTION SCORES
+───────────────────────────────────────────────────────────────────
+Section                                              Score (0-30)
+───────────────────────────────────────────────────────────────────
+Reading                                                        29
+Listening                                                      30
+Speaking                                                       27
+Writing                                                        28
+
+This report is a verified record of the test-taker's English
+proficiency. Valid for 2 years from the test date.
+
+</pre>
+<span data-verify-line="lang-test">verify:ets.org/toefl/v/99228877</span> <span verifiable-text="end" data-for="lang-test">]</span>
 </div>
 
 ## Data Verified
@@ -82,13 +57,17 @@ Shows the issuer domain (`ets.org`, `ielts.org`, `britishcouncil.org`) and curre
 
 ## Second-Party Use
 
-The **Test Taker (Student / Immigrant)** benefits from verification.
+The **Test Taker** (second party) receives the score report from the testing organization (first party), **keeps it**, and may later hand it to third parties for various reasons, or never do so.
 
-**University Admissions:** Proving to a university registrar that their "114 Total Score" isn't a fake PDF. Verification prevents the 2-week delay of "Official Score Electronic Reports" (which cost $20 each), allowing the student to use a verified PDF for immediate "Conditional Admission."
+**Personal Record:** They have their own verified copy of their language proficiency scores. Most of the time, the report sits in their application files—the verification value is latent, there *if needed*.
 
-**Visa / Immigration:** Proving language competency to a foreign government (e.g., Canada Express Entry or UK Home Office). A verified hash from the testing body is the ultimate defense against "Fake Certificate" accusations.
+**Peace of Mind:** They can confirm at any time that the scores match what the testing organization's system recorded and haven't been altered.
+
+**Future Optionality:** If they apply to multiple universities, immigration programs, or employers—they have cryptographic proof ready without needing to pay for multiple official score reports or contact the testing organization.
 
 ## Third-Party Use
+
+The test taker (second party) may hand the verified document to various third parties:
 
 **University Registrars**
 **Instant Vetting:** Admissions officers can instantly verify the scores of 1,000+ international applicants. OCR-to-hash allows the university to skip the manual "Verification Code" login process for every single PDF, clearing the backlog in seconds.
@@ -107,13 +86,36 @@ The **Test Taker (Student / Immigrant)** benefits from verification.
 - **Date Stretching:** Altering a 2022 test date to 2026 to hide that the scores have already expired.
 - **Impersonation:** Using a high-scoring friend's report but editing the name and photo.
 
-**Issuer Types**
+**Issuer Types (First Party)**
 
-**Global Testing Giants:** (ETS, IELTS Partnership, Pearson).
-**National Ministries of Education.**
-**Language Institutes.**
+- Global Testing Giants (ETS, IELTS Partnership, Pearson)
+- National Ministries of Education
+- Language Institutes
 
-**Privacy Salt:** Critical. Test scores and names are sensitive. The hash must be salted to prevent "Mass Mapping" of student performance by predatory recruiters.
+**Privacy Salt:** Required. While test reports contain unique registration IDs, they also include enumerable values—score ranges (0-30, bands 1-9), standard test dates, common names, and predictable section breakdowns. A malicious actor, predatory recruiter, or competitor could feasibly enumerate combinations to reverse-engineer test taker performance, map student populations by institution, or target specific demographics. Salt protects this sensitive educational and personal information.
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require testing organizations to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the testing organization, and any subsequent changes to the payload as they happen—which may manifest as a new hash, a status change (certified to under review/expired), or even a 404 (record deleted)
+- Receives structured content/metadata (test dates, score ranges, section breakdowns, test center IDs)
+- Does **NOT** receive plaintext (test taker names, addresses, passport numbers)
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to test takers/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Testing organization cannot deny issuing the scores or the results
+- **Timestamp proof:** Scores existed at a specific time (critical for expiration verification and cheating investigations)
+- **Regulatory audit:** Educational authorities or immigration departments can inspect the witness ledger for testing irregularities
+- **Resilience:** Verification works even if testing organization's systems go down or scoring policies change
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Testing organization domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
 
 ## Competition vs. Official Score Reports (Electronic)
 

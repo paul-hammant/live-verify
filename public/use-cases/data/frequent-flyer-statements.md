@@ -16,49 +16,30 @@ The **Mileage Statement** is the "Bank Statement" for your travel points.
 
 You need this verified proof for a **"Status Match"**—where a rival airline gives you free upgrades to win your business) or to prove your net worth during a divorce or bank audit. Fraudsters often use "Inspect Element" to turn 1,000 miles into 1,000,000 to sell "fake accounts" to mileage brokers. Verified hashes stop this point-theft instantly.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <div style="background: #003366; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="loyalty">[</span>AMERICAN ADMIRALS CLUB</div>
-      <div style="font-size: 0.8em; opacity: 0.8;">AAdvantage&reg; Executive Statement</div>
-    </div>
-    <div style="text-align: right;">
-      <div style="font-size: 0.8em;">Member #: 99228877</div>
-    </div>
-  </div>
-<div style="padding: 25px;">
-    <div style="display: flex; justify-content: space-between; margin-bottom: 25px;">
-      <div>
-        <div style="font-size: 1.1em; font-weight: bold; color: #333;">SARAH JANE SMITH</div>
-        <div style="font-size: 0.9em; color: #666;">Status: EXECUTIVE PLATINUM</div>
-      </div>
-      <div style="text-align: right;">
-        <div style="font-size: 0.7em; color: #777;">Period: MAR 2026</div>
-        <div style="font-size: 1.8em; font-weight: bold; color: #003366;">1,242,500</div>
-        <div style="font-size: 0.7em; color: #003366; font-weight: bold;">TOTAL MILES</div>
-      </div>
-    </div>
-<div style="font-size: 0.9em; line-height: 1.5; color: #333; border-top: 1px solid #eee; padding-top: 15px;">
-      <p><strong>Recent Activity:</strong></p>
-      <table style="width: 100%; font-size: 0.85em;">
-        <tr>
-          <td>Mar 10 - LHR to JFK (First Class)</td>
-          <td style="text-align: right;">+12,500</td>
-        </tr>
-        <tr>
-          <td>Mar 12 - Hertz Rental Bonus</td>
-          <td style="text-align: right;">+1,000</td>
-        </tr>
-      </table>
-    </div>
-<div style="margin-top: 25px; padding: 10px; background: #f0f4f8; border: 1px solid #d1d9e6; font-size: 0.8em; color: #003366; font-style: italic; text-align: center;">
-      This statement is a verified record of your mileage balance and tier status. Valid for status-match applications.
-    </div>
-<div data-verify-line="loyalty" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
-      title="Demo only: Airline doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:aa.com/loyalty/v/99228877 <span verifiable-text="end" data-for="loyalty">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <span verifiable-text="start" data-for="loyalty">[</span>
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;">AMERICAN ADMIRALS CLUB
+AAdvantage Executive Statement
+═══════════════════════════════════════════════════════════════════
+
+Member #: 99228877                              Period: MAR 2026
+
+SARAH JANE SMITH
+Status: EXECUTIVE PLATINUM
+
+                                              TOTAL MILES
+                                                1,242,500
+
+RECENT ACTIVITY
+───────────────────────────────────────────────────────────────────
+Mar 10 - LHR to JFK (First Class)                          +12,500
+Mar 12 - Hertz Rental Bonus                                 +1,000
+
+This statement is a verified record of your mileage balance and
+tier status. Valid for status-match applications.
+
+</pre>
+<span data-verify-line="loyalty">verify:aa.com/loyalty/v/99228877</span> <span verifiable-text="end" data-for="loyalty">]</span>
 </div>
 
 ## Data Verified
@@ -83,13 +64,17 @@ Shows the issuer domain (`aa.com`, `delta.com`, `united.com`) and current accoun
 
 ## Second-Party Use
 
-The **AAdvantage Member (Traveler)** benefits from verification.
+The **AAdvantage Member** (second party) receives the mileage statement from the airline (first party), **keeps it**, and may later hand it to third parties for various reasons, or never do so.
 
-**Status Matching:** Proving to a rival airline (e.g., Delta or United) that they are actually an "Executive Platinum" member on American. A verified hash allows the second airline to grant immediate top-tier status without waiting for manual document review or fearing a "Photoshopped" tier claim.
+**Personal Record:** They have their own verified copy of their mileage balance and status tier. Most of the time, the statement sits in their email or travel folder—the verification value is latent, there *if needed*.
 
-**Mileage Redemptions (Off-Market):** Proving their balance to a luxury hotel or car rental partner to authorize a high-value redemption at the front desk.
+**Peace of Mind:** They can confirm at any time that it matches what the airline's system recorded and hasn't been altered.
+
+**Future Optionality:** If a dispute arises—whether about missing miles, tier qualification, or award availability—they have cryptographic proof ready without needing to contact the airline.
 
 ## Third-Party Use
+
+The member (second party) may hand the verified document to various third parties:
 
 **Rival Airlines (Loyalty Depts)**
 **Status Match Vetting:** Instantly verifying the "Status Statements" uploaded by customers during marketing campaigns. OCR-to-hash ensures that the "Elite" customers being lured away are actually who they claim to be.
@@ -108,11 +93,36 @@ The **AAdvantage Member (Traveler)** benefits from verification.
 - **Status Faking:** Changing "Gold" to "Diamond" on a PDF to get lounge access or free upgrades in foreign airports.
 - **Activity Scrubbing:** Removing a "Miles Redeemed" line to hide that the balance is actually zero.
 
-**Issuer Types**
+**Issuer Types (First Party)**
 
-**Airlines:** (American, Delta, United, BA, Emirates).
-**Hotel Groups:** (Marriott, Hilton, IHG).
-**Loyalty Platforms:** (e.g., AwardWallet, Points.com - aggregating verified data).
+- Airlines (American, Delta, United, BA, Emirates)
+- Hotel Groups (Marriott, Hilton, IHG)
+- Loyalty Platforms (e.g., AwardWallet, Points.com - aggregating verified data)
+
+**Privacy Salt:** Not required. Unlike documents with enumerable values, frequent flyer statements contain many unpredictable variables that combine to create sufficient entropy—member ID (unique), total mileage balance (varies continuously), recent transaction details (flight-specific with dates, routes, fare classes), and lifetime miles (cumulative, non-repeating). The combination of these variables makes reverse-engineering a specific member's statement computationally infeasible without already knowing all the details.
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require airlines to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the airline, and any subsequent changes to the payload as they happen—which may manifest as a new hash, a status change, or even a 404 (record deleted)
+- Receives structured content/metadata (mileage balances, tier status, transaction dates, award redemptions)
+- Does **NOT** receive plaintext (passenger names, contact details, travel itineraries)
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to members/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Airline cannot deny issuing the statement or the mileage balance
+- **Timestamp proof:** Hash existed at a specific time (critical for status match claims and asset valuations)
+- **Regulatory audit:** Aviation regulators or consumer protection agencies can inspect the witness ledger
+- **Resilience:** Verification works even if airline's systems go down or the loyalty program is sold/merged
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Airline domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
 
 ## Competition vs. Loyalty Apps
 

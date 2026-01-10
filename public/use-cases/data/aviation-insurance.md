@@ -16,50 +16,35 @@ The **Certificate of Insurance (COI)** is the high-stakes document that pilots m
 
 If a pilot presents a fake certificate to land in London or Dubai, they are flying "uninsured" for hundreds of millions of dollars. Because there is no global database of plane insurance, officials rely on these printed papers. OCR-to-Hash provides the digital bridge they need.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: 'Helvetica', Arial, sans-serif; border: 2px solid #002244; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
-  <div style="background: #002244; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="aviation">[</span>GLOBAL AEROSPACE, INC.</div>
-      <div style="font-size: 0.8em;">Specialist Aviation Underwriters</div>
-    </div>
-    <div style="text-align: right;">
-      <div style="font-size: 0.8em;">Policy #: AV-998877-26</div>
-    </div>
-  </div>
-<div style="padding: 30px;">
-    <h2 style="text-align: center; color: #002244; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Certificate of Insurance</h2>
-<div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Insured:</strong> Cyberdyne Systems Charter, LLC<br>
-      <strong>Aircraft:</strong> 2024 Gulfstream G650ER<br>
-      <strong>Registration (N-Number):</strong> N101CS</p>
-<table style="width: 100%; border-collapse: collapse; margin-top: 15px;">
-        <tr style="background: #f0f4f8; border-bottom: 2px solid #002244;">
-          <th style="text-align: left; padding: 8px;">Coverage Type</th>
-          <th style="text-align: right; padding: 8px;">Limit of Liability</th>
-        </tr>
-        <tr>
-          <td style="padding: 8px; border-bottom: 1px solid #eee;">Aircraft Hull (All Risks)</td>
-          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 75,000,000</td>
-        </tr>
-        <tr>
-          <td style="padding: 8px; border-bottom: 1px solid #eee;">Combined Single Limit (CSL)</td>
-          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 500,000,000</td>
-        </tr>
-        <tr>
-          <td style="padding: 8px; border-bottom: 1px solid #eee;">Passenger Liability</td>
-          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">Included in CSL</td>
-        </tr>
-      </table>
-<p style="margin-top: 20px;"><strong>Policy Period:</strong> January 1, 2026 to January 1, 2027</p>
-    </div>
-<div style="margin-top: 30px; border: 1px solid #ccc; padding: 10px; font-size: 0.8em; color: #555; background: #fafafa;">
-      <strong>Note:</strong> This certificate is issued as a matter of information only and confers no rights upon the holder.
-    </div>
-<div data-verify-line="aviation" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
-      title="Demo only: Global Aerospace doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:global-aerospace.com/v/N101CS-2026 <span verifiable-text="end" data-for="aviation">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <span verifiable-text="start" data-for="aviation">[</span>
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;">GLOBAL AEROSPACE, INC.
+Specialist Aviation Underwriters
+═══════════════════════════════════════════════════════════════════
+
+                    CERTIFICATE OF INSURANCE
+
+Policy #: AV-998877-26
+
+Insured:       Cyberdyne Systems Charter, LLC
+Aircraft:      2024 Gulfstream G650ER
+Registration:  N101CS
+
+COVERAGE LIMITS
+───────────────────────────────────────────────────────────────────
+Coverage Type                                   Limit of Liability
+───────────────────────────────────────────────────────────────────
+Aircraft Hull (All Risks)                           $ 75,000,000
+Combined Single Limit (CSL)                        $ 500,000,000
+Passenger Liability                                 Included in CSL
+
+Policy Period: January 1, 2026 to January 1, 2027
+
+NOTE: This certificate is issued as a matter of information only
+and confers no rights upon the holder.
+
+</pre>
+  <span data-verify-line="aviation">verify:global-aerospace.com/v/N101CS-2026</span> <span verifiable-text="end" data-for="aviation">]</span>
 </div>
 
 ## Data Verified
@@ -84,24 +69,26 @@ Shows the issuer domain (the Underwriter) and current policy status.
 
 ## Second-Party Use
 
-The **Aircraft Owner/Operator** benefits from verification.
+The **Aircraft Owner/Operator** (second party) receives the certificate of insurance from the underwriter (first party), **keeps it**, and may later hand it to third parties for various reasons, or never do so.
 
-**Landing Rights:** Proving to foreign airport authorities (e.g., in London or Dubai) that the aircraft has the mandatory $500M+ liability coverage to land. Verification prevents grounding at the gate.
+**Personal Record:** The owner has their own verified copy of insurance coverage. Most of the time, the document sits in the aircraft's documentation package—the verification value is latent, there *if needed*.
 
-**Fueling/FBOs:** FBOs require proof of insurance before allowing a jet to park in their hangar. Verification speeds up the "Ramp Access" process.
+**Peace of Mind:** The owner can confirm at any time that the certificate matches what the underwriter's system recorded and hasn't been altered since they received it.
 
-**Charter Customers:** Proving to high-net-worth clients that the charter company is fully insured to the highest industry standards.
+**Future Optionality:** If landing rights are needed at a foreign airport, an FBO requires proof of coverage, or a charter customer questions insurance adequacy, the owner has cryptographic proof ready without needing to contact the underwriter.
 
 ## Third-Party Use
 
+The aircraft owner/operator (second party) may hand the verified document to various third parties:
+
 **Airport Authorities (CAA / DGAC)**
-**Ramp Inspections:** Civil aviation inspectors can instantly verify the "War Risk" and "Liability" status of a foreign aircraft by scanning the COI, preventing unsafe or under-insured flight.
+Civil aviation inspectors can instantly verify the "War Risk" and "Liability" status of a foreign aircraft by scanning the COI, preventing unsafe or under-insured flight.
 
 **Lienholders (Banks)**
-**Asset Protection:** Private jet lenders (e.g., Credit Suisse, Citi) verify that the $75M hull value is accurately insured and that the bank is listed as "Loss Payee."
+Private jet lenders (e.g., Credit Suisse, Citi) verify that the $75M hull value is accurately insured and that the bank is listed as "Loss Payee."
 
 **Charter Brokers**
-**Safety Vetting:** Brokers like NetJets or Wheels Up can automatically verify the insurance status of "off-fleet" aircraft before booking them for a client.
+Brokers like NetJets or Wheels Up can automatically verify the insurance status of "off-fleet" aircraft before booking them for a client.
 
 ## Verification Architecture
 
@@ -111,10 +98,35 @@ The **Aircraft Owner/Operator** benefits from verification.
 - **Cancellation Concealment:** Keeping a printed certificate after the policy was cancelled for non-payment (common in the small-aircraft/single-pilot world).
 - **Hull Inflation:** Claiming a $5M hull value for a $1M aircraft to profit from an intentional crash (insurance fraud).
 
-**Issuer Types**
+**Issuer Types (First Party)**
 
-**Aviation Underwriters:** (Global Aerospace, Allianz, AXA XL, Starr).
-**Specialist Brokers:** (Marsh, Aon, JLT).
+- Aviation Underwriters (Global Aerospace, Allianz, AXA XL, Starr)
+- Specialist Brokers (Marsh, Aon, JLT)
+
+**Privacy Salt:** Required. Aviation insurance certificates contain enumerable values—round dollar hull values ($75M, $100M), standard liability limits ($500M, $1B), common policy periods (annual), and publicly registered aircraft tail numbers. A competitor could feasibly enumerate combinations to reverse-engineer an operator's fleet insurance portfolio and undercut their renewal pricing. Salt protects these competitive insurance positions.
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require aviation underwriters to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the underwriter, and any subsequent changes to the payload as they happen—which may manifest as a new hash, a status change (cancelled, grounded), or even a 404 (record deleted)
+- Receives structured content/metadata (aircraft registrations, policy numbers, coverage limits, effective dates)
+- Does **NOT** receive plaintext (owner names, pilot details, specific route information)
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to operators/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Underwriter cannot deny issuing the certificate
+- **Timestamp proof:** Coverage existed at a specific time (critical for incident claims)
+- **Regulatory audit:** Civil aviation authorities can inspect the witness ledger for uninsured operations
+- **Resilience:** Verification works even if underwriter's systems go down
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Underwriter domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
 
 ## Competition vs. FAA Registries
 

@@ -16,46 +16,34 @@ The most important step is **Retirement**. Once a credit is "retired," it is tak
 
 The **Retirement Certificate** is the only proof that the company actually did what it said. Without verification, a company could lie about retiring credits, leading to "Greenwashing" where the same tree is "sold" to 10 different companies.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #2e7d32; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-  <div style="background: #2e7d32; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="carbon">[</span>VERRA</div>
-      <div style="font-size: 0.8em;">Verified Carbon Standard (VCS)</div>
-    </div>
-    <div style="text-align: right;">
-      <div style="font-size: 0.8em;">Certificate ID: 9982-2026-VCS</div>
-    </div>
-  </div>
-<div style="padding: 30px;">
-    <h2 style="text-align: center; color: #2e7d32; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Retirement Certificate</h2>
-<div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p>This document certifies the permanent retirement of carbon units from the Verra Registry on behalf of:</p>
-<p style="text-align: center; font-size: 1.2em; font-weight: bold; margin: 15px 0;">
-        MICROSOFT CORPORATION
-      </p>
-<div style="background: #f1f8e9; border: 1px solid #c5e1a5; padding: 15px; margin: 15px 0;">
-        <table style="width: 100%; font-size: 0.95em;">
-          <tr>
-            <td><strong>Quantity:</strong></td>
-            <td>50,000 Tonnes CO2e</td>
-          </tr>
-          <tr>
-            <td><strong>Vintage:</strong></td>
-            <td>2024</td>
-          </tr>
-          <tr>
-            <td><strong>Project:</strong></td>
-            <td>Amazon Rainforest Protection (VCS-992)</td>
-          </tr>
-        </table>
-      </div>
-<p style="font-size: 0.8em; color: #555;">These credits have been retired from circulation and cannot be re-sold or re-used. <strong>Date of Retirement:</strong> March 15, 2026.</p>
-    </div>
-<div data-verify-line="carbon" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
-      title="Demo only: Verra doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:verra.org/registry/v/9982-2026 <span verifiable-text="end" data-for="carbon">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <span verifiable-text="start" data-for="carbon">[</span>
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;">VERRA
+Verified Carbon Standard (VCS)
+═══════════════════════════════════════════════════════════════════
+
+                     RETIREMENT CERTIFICATE
+
+Certificate ID: 9982-2026-VCS
+
+This document certifies the permanent retirement of carbon units
+from the Verra Registry on behalf of:
+
+                    MICROSOFT CORPORATION
+
+CREDIT DETAILS
+───────────────────────────────────────────────────────────────────
+Quantity:   50,000 Tonnes CO2e
+Vintage:    2024
+Project:    Amazon Rainforest Protection (VCS-992)
+
+These credits have been retired from circulation and cannot be
+re-sold or re-used.
+
+Date of Retirement: March 15, 2026
+
+</pre>
+<span data-verify-line="carbon">verify:verra.org/registry/v/9982-2026</span> <span verifiable-text="end" data-for="carbon">]</span>
 </div>
 
 ## Data Verified
@@ -79,13 +67,17 @@ Shows the issuer domain (`verra.org`, `goldstandard.org`) and current status.
 
 ## Second-Party Use
 
-The **Credit Buyer** (Corporation) benefits from verification.
+The **Credit Buyer** (second party) receives the retirement certificate from the carbon registry (first party), **keeps it**, and may later hand it to third parties for various reasons, or never do so.
 
-**Sustainability Reporting:** Proving to shareholders and the SEC that the "Net Zero" claims in the annual report are backed by verified, retired credits. A verified certificate from `verra.org` is the defense against "Greenwashing" accusations.
+**Personal Record:** They have their own verified copy of the retired credits. Most of the time, the document sits in their sustainability files—the verification value is latent, there *if needed*.
 
-**Supplier Requirements:** Proving to a major customer (e.g., Apple or Walmart) that the carbon footprint of the delivered parts has been verified offset.
+**Peace of Mind:** They can confirm at any time that the retirement matches what the registry's system recorded and hasn't been altered or double-counted.
+
+**Future Optionality:** If questions arise—whether from SEC reporting requirements, shareholder scrutiny, or regulatory audits—they have cryptographic proof of the retirement ready without needing to contact the registry.
 
 ## Third-Party Use
+
+The credit buyer (second party) may hand the verified document to various third parties:
 
 **ESG Rating Agencies (MSCI / Sustainalytics)**
 **Data Integrity:** Rating agencies verify corporate environmental claims. OCR-to-hash allows them to instantly ingest verified retirement data from PDF reports without manual registry searches.
@@ -104,11 +96,36 @@ The **Credit Buyer** (Corporation) benefits from verification.
 - **Ghost Credits:** Creating fake certificates for projects that were never registered or never actually reduced emissions.
 - **Vintage Tampering:** Editing a 2015 vintage (low value) to look like a 2025 vintage (high value).
 
-**Issuer Types**
+**Issuer Types (First Party)**
 
-**Carbon Registries:** (Verra, Gold Standard, American Carbon Registry).
-**National Registries:** (Under Paris Agreement Article 6).
-**Verification Bodies:** (3rd party auditors who sign the reports).
+- Carbon Registries (Verra, Gold Standard, American Carbon Registry)
+- National Registries (Under Paris Agreement Article 6)
+- Verification Bodies (3rd party auditors who sign the reports)
+
+**Privacy Salt:** Not required. Carbon retirement certificates contain many unpredictable variables: unique certificate IDs, beneficiary company names, specific project names and IDs, exact quantities (often large, precise numbers in tonnes), vintage years, retirement dates, and serial number ranges. The combination of these project-specific details creates sufficient entropy to prevent hash enumeration attacks.
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require carbon registries to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the registry, and any subsequent changes to the credit as they happen—which may manifest as a new hash, a status change (retired, cancelled, buffer pool), or even a 404 (record deleted)
+- Receives structured content/metadata (quantities, vintages, project IDs, retirement dates, beneficiary names)
+- Does **NOT** receive plaintext (proprietary project verification details, pricing information)
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to credit buyers/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Registry cannot deny issuing the retirement certificate
+- **Timestamp proof:** Retirement hash existed at a specific time
+- **Regulatory audit:** Environmental agencies can inspect the witness ledger for compliance patterns
+- **Resilience:** Verification works even if registry's systems go down
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Registry domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
 
 ## Competition vs. Blockchain (Climate Ledger)
 

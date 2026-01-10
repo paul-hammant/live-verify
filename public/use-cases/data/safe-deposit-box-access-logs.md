@@ -14,47 +14,31 @@ A **Safe Deposit Box Access Log** is the physical record of every time a high-se
 
 In the world of **Estate Law**, these logs are "The Smoking Gun." If a box holder dies and their $100,000 diamond ring is missing, the family scans the access log to see if a greedy relative "visited" the box before the executor was appointed. Fraud is high-stakes: dishonest bank employees or relatives may try to "backdate" or "delete" a log entry to hide an unauthorized entry. Verified hashes bind the **Access Timestamp, Box Number, and Officer ID** to the bank's domain (e.g., `wellsfargo.com` or `barclays.co.uk`).
 
-<div style="max-width: 500px; margin: 24px auto; font-family: 'Times New Roman', Times, serif; border: 2px solid #000; background: #fffbe6; padding: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <div style="text-align: center; border-bottom: 1px solid #000; padding-bottom: 15px; margin-bottom: 20px;">
-    <div style="font-weight: bold; font-size: 1.3em; text-transform: uppercase;"><span verifiable-text="start" data-for="vault">[</span>GOLIATH NATIONAL BANK</div>
-    <div style="font-size: 0.9em; letter-spacing: 1px;">SAFE DEPOSIT VAULT ACCESS RECORD</div>
-  </div>
-<div style="font-size: 0.9em; line-height: 1.6;">
-    <p><strong>Branch:</strong> 42ND STREET MAIN VAULT<br>
-    <strong>Box Number:</strong> SD-992288-Z</p>
-<table style="width: 100%; border-collapse: collapse; margin: 20px 0; border: 1px solid #000;">
-      <tr style="background: #eee; border-bottom: 1px solid #000;">
-        <th style="text-align: left; padding: 10px; border-right: 1px solid #000;">Access Date/Time</th>
-        <th style="text-align: left; padding: 10px;">Authorized Signer</th>
-      </tr>
-      <tr>
-        <td style="padding: 15px 10px; border-right: 1px solid #000;">
-          <strong>15 MAR 2026</strong><br>
-          14:32:01 EST
-        </td>
-        <td style="padding: 15px 10px;">
-          <div style="font-family: cursive; font-size: 1.2em;">Sarah J. Smith</div>
-          <div style="font-size: 0.8em; color: #666;">Verified via Driver's License</div>
-        </td>
-      </tr>
-    </table>
-<div style="margin-top: 20px; display: flex; justify-content: space-between; align-items: flex-end;">
-      <div>
-        <div style="border-top: 1px solid #000; width: 180px; padding-top: 5px; font-style: italic;">James Gordon, Bank Officer</div>
-        <div style="font-size: 0.7em; color: #777;">Employee ID: #992288</div>
-      </div>
-      <div style="width: 80px; height: 80px; border: 1px solid #000; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; text-align: center; transform: rotate(-5deg);">ENTRY<br>AUTHORIZED</div>
-    </div>
-  </div>
-<div style="margin-top: 30px; padding-top: 10px; border-top: 1px dashed #999; text-align: center;">
-    <div data-verify-line="vault" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
-      title="Demo only: Banks don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:goliathbank.com/v/SD992288Z <span verifiable-text="end" data-for="vault">]</span>
-    </div>
-    <div style="font-size: 0.7em; color: #666; margin-top: 10px; font-style: italic;">
-      Scan to verify access integrity and witness authority. This log is a permanent bank record.
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <span verifiable-text="start" data-for="vault">[</span>
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;">GOLIATH NATIONAL BANK
+Safe Deposit Vault Access Record
+═══════════════════════════════════════════════════════════════════
+
+Branch:      42ND STREET MAIN VAULT
+Box Number:  SD-992288-Z
+
+ACCESS LOG
+───────────────────────────────────────────────────────────────────
+Access Date/Time                         Authorized Signer
+───────────────────────────────────────────────────────────────────
+15 MAR 2026 14:32:01 EST                 Sarah J. Smith
+                                         (Verified via Driver's License)
+
+                                                     ┌─────────────┐
+                                                     │    ENTRY    │
+                                                     │  AUTHORIZED │
+________________________                             └─────────────┘
+James Gordon, Bank Officer
+Employee ID: #992288
+
+</pre>
+<span data-verify-line="vault">verify:goliathbank.com/v/SD992288Z</span> <span verifiable-text="end" data-for="vault">]</span>
 </div>
 
 ## Data Verified
@@ -79,22 +63,29 @@ Shows the issuer domain (`chase.com`, `hsbc.com`) and the log integrity.
 
 ## Second-Party Use
 
-The **Box Holder / Legal Heir** benefits from verification.
+The **Box Holder** (second party) receives the access log from the bank (first party), **keeps it**, and may later hand it to third parties for various reasons, or never do so.
 
-**Estate Protection:** If a family member suspects that "Aunt Mary's gold" was stolen after her death, they can scan the verified access log. If the hash returns **"VERIFIED ENTRY - 15 MAR,"** and the aunt died on 14 MAR, they have the cryptographic proof needed to file a police report against whoever signed that day.
+**Personal Record:** The box holder has their own verified copy of every vault access. Most of the time, the document sits in their personal files—the verification value is latent, there *if needed*.
 
-**Insurance Audits:** When insuring high-value jewelry kept in a box, the owner can provide verified access logs to the insurer to prove the items are rarely removed, potentially leading to lower "Safe Storage" premiums.
+**Peace of Mind:** The box holder can confirm at any time that the log matches what the bank's security system recorded and hasn't been altered.
+
+**Future Optionality:** If a dispute arises—whether about estate matters, insurance claims, or suspected theft—the box holder or their heirs have cryptographic proof ready without needing to contact the bank.
 
 ## Third-Party Use
 
-**Probate Courts / Executors**
-**Asset Reconciliation:** Verifying that the contents of the box match the "Inventory List" at the time of the last verified entry, ensuring no assets were siphoned off before the estate was settled.
+The box holder (second party) may hand the verified document to various third parties:
 
-**Internal Bank Auditors**
-**Vault Security Audit:** Randomly scanning access cards across 50 branches. OCR-to-hash ensures that officers aren't "Padding" the logs or failing to record visits, which is a major regulatory compliance requirement (KYC/AML).
+**Probate Courts / Executors (Asset Reconciliation)**
+When a box holder dies, the executor receives verified access logs from the estate. If the logs show **"VERIFIED ENTRY - 15 MAR,"** and the decedent died on 14 MAR, they have cryptographic proof to investigate whoever accessed the box, ensuring no assets were siphoned off before the estate was settled.
 
-**Law Enforcement**
-**Money Laundering Investigation:** Verifying the "Pattern of Access" for a suspect's safe deposit box without needing to wait for a 2-week subpoena response from the bank's legal department.
+**Insurance Companies (Claims Evidence)**
+When filing a claim for stolen jewelry, the box holder provides verified access logs to prove the items were kept in the bank vault and to establish a timeline of when theft could have occurred.
+
+**Internal Bank Auditors (Vault Security Audit)**
+Bank auditors randomly scan access cards across 50 branches. Verification ensures that officers aren't "padding" the logs or failing to record visits, which is a major regulatory compliance requirement (KYC/AML).
+
+**Law Enforcement (Investigation)**
+During a money laundering investigation, police receive verified access logs showing the "Pattern of Access" for a suspect's safe deposit box without needing to wait for a 2-week subpoena response from the bank's legal department.
 
 ## Verification Architecture
 
@@ -104,13 +95,36 @@ The **Box Holder / Legal Heir** benefits from verification.
 - **Backdating:** Adding an entry today but dating it "Last Month" to satisfy a legal requirement.
 - **Officer Impersonation:** Forging a bank officer's signature on a fake "Power of Attorney" access event.
 
-**Issuer Types**
+**Issuer Types (First Party)**
 
-**Retail Banks / Credit Unions.**
-**Private Vault Facilities.**
-**Government Seizure Units (e.g., IRS/FBI).**
+- Retail Banks / Credit Unions
+- Private Vault Facilities
+- Government Seizure Units (e.g., IRS/FBI)
 
-**Privacy Salt:** High. Vault access is extremely private. The hash must be salted to prevent "Box Number Harvesting" or tracking the frequency of visits by high-net-worth individuals.
+**Privacy Salt:** Required. Vault access is extremely private. While each log contains unique combinations of precise timestamps, box numbers, officer IDs, and customer names that provide significant entropy, the sensitive nature of this data—and the risk that bad actors could track high-net-worth individuals' vault visit patterns—means salt is essential. Salt prevents "box number harvesting" and protects customers from being targeted based on their vault access frequency.
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require banks offering safe deposit boxes to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the bank, and any subsequent changes to the access log as they happen—which may manifest as a new hash, a status change (amended, access blocked), or even a 404 (record deleted)
+- Receives structured content/metadata (box numbers, timestamps, branch IDs, officer IDs)
+- Does **NOT** receive plaintext (customer names, signer identities)
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to box holders/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Bank cannot deny an access event occurred
+- **Timestamp proof:** Access log existed at a specific time (critical for estate disputes)
+- **Regulatory audit:** Banking regulators can inspect the witness ledger for KYC/AML compliance
+- **Resilience:** Verification works even if bank's systems go down or the branch closes
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Bank domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
 
 ## Rationale
 

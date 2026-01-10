@@ -19,40 +19,40 @@ It is used for high-stakes financial decisions:
 
 **"Phantom Audits"** are a major corporate crime. Fraudulent companies create fake "Unqualified Opinions" on stolen accounting firm letterhead (like PwC or EY) to hide insolvency or to trick lenders into funding a failing business. In other cases, executives "Scrub" a real audit to remove a **"Going Concern"** warning—the paragraph where the auditor warns that the company might go bankrupt. OCR-to-hash binds the **Company name, Net Income, and Opinion Type** to the audit firm's domain.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 2px 2px 15px rgba(0,0,0,0.05);">
-  <div style="text-align: right; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.2em; color: #000;"><span verifiable-text="start" data-for="audit">[</span>PRICEWATERHOUSECOOPERS LLP</div>
-    <div style="font-size: 0.8em; color: #666;">300 Madison Avenue, New York, NY 10017</div>
-  </div>
-<h3 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px;">Report of Independent Registered Public Accounting Firm</h3>
-<div style="font-size: 0.95em; line-height: 1.6; text-align: justify; color: #333;">
-    <p>To the Board of Directors and Shareholders of <strong>WAYSTAR ROYCO CORP.</strong></p>
-<p><strong>Opinions on the Financial Statements</strong></p>
-    <p>We have audited the accompanying consolidated balance sheets of Waystar Royco Corp. as of <strong>December 31, 2025</strong>. In our opinion, the consolidated financial statements present fairly, in all material respects, the financial position of the Company.</p>
-<div style="background: #fdfdfd; padding: 15px; border: 1px solid #eee; margin: 20px 0;">
-      <p style="margin-top: 0;"><strong>CONSOLIDATED TOTALS:</strong></p>
-      <table style="width: 100%; font-size: 0.9em;">
-        <tr>
-          <td>Total Revenue:</td>
-          <td style="text-align: right;">$ 14,250,420,000</td>
-        </tr>
-        <tr>
-          <td>Net Income:</td>
-          <td style="text-align: right;">$ 1,200,500,000</td>
-        </tr>
-      </table>
-    </div>
-<p><strong>Basis for Opinion</strong></p>
-    <p>We are a public accounting firm registered with the PCAOB. Our responsibility is to express an opinion on the Company's financial statements based on our audits.</p>
-  </div>
-<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
-    <div style="border-top: 1px solid #000; width: 200px; padding-top: 5px;">PricewaterhouseCoopers LLP</div>
-    <div style="font-size: 0.8em; color: #777;">February 24, 2026</div>
-  </div>
-<div data-verify-line="audit" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
-      title="Demo only: PwC doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:pwc.com/audit/v/WAYSTAR-2025 <span verifiable-text="end" data-for="audit">]</span>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <span verifiable-text="start" data-for="audit">[</span>
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;">PRICEWATERHOUSECOOPERS LLP
+300 Madison Avenue, New York, NY 10017
+═══════════════════════════════════════════════════════════════════
+
+       REPORT OF INDEPENDENT REGISTERED PUBLIC ACCOUNTING FIRM
+
+To the Board of Directors and Shareholders of WAYSTAR ROYCO CORP.
+
+OPINIONS ON THE FINANCIAL STATEMENTS
+
+We have audited the accompanying consolidated balance sheets of
+Waystar Royco Corp. as of December 31, 2025. In our opinion, the
+consolidated financial statements present fairly, in all material
+respects, the financial position of the Company.
+
+CONSOLIDATED TOTALS
+───────────────────────────────────────────────────────────────────
+Total Revenue:                                    $ 14,250,420,000
+Net Income:                                        $ 1,200,500,000
+
+BASIS FOR OPINION
+
+We are a public accounting firm registered with the PCAOB. Our
+responsibility is to express an opinion on the Company's financial
+statements based on our audits.
+
+                    ________________________
+                    PricewaterhouseCoopers LLP
+                    February 24, 2026
+
+</pre>
+  <span data-verify-line="audit">verify:pwc.com/audit/v/WAYSTAR-2025</span> <span verifiable-text="end" data-for="audit">]</span>
 </div>
 
 ## Data Verified
@@ -77,22 +77,26 @@ Shows the issuer domain (the Audit Firm) and the current opinion status.
 
 ## Second-Party Use
 
-The **Audited Company** benefits from verification.
+The **Audited Company** (second party) receives the audit report from the CPA firm (first party), **keeps it**, and may later hand it to third parties for various reasons, or never do so.
 
-**Investor Relations:** Proving to institutional investors that the "Audit PDF" on the company website is the exact version signed by the Big 4 firm, with no "last minute" edits to the footnotes or balance sheet.
+**Personal Record:** The company has their own verified copy of the audit opinion. Most of the time, the document sits in their financial records—the verification value is latent, there *if needed*.
 
-**M&A Due Diligence:** Providing a buyer with a verified audit history in a virtual data room (VDR), allowing the buyer to bypass the 48-hour manual "Confirmation of Engagement" with the audit firm.
+**Peace of Mind:** The company can confirm at any time that the report matches what the auditor's system recorded and hasn't been altered since they received it.
+
+**Future Optionality:** If a loan application arises, an M&A transaction occurs, or regulatory filing is needed, the company has cryptographic proof ready without needing to contact the auditor.
 
 ## Third-Party Use
 
+The audited company (second party) may hand the verified document to various third parties:
+
 **Lenders / Banks**
-**Covenant Monitoring:** Banks require audited financials to ensure loan covenants (e.g., Debt-to-Equity ratios) are met. Verification prevents companies from "window dressing" the financials before sending them to the bank.
+Banks require audited financials to ensure loan covenants (e.g., Debt-to-Equity ratios) are met. Verification prevents companies from "window dressing" the financials before sending them to the bank.
 
 **Stock Exchanges (NYSE/NASDAQ)**
-**Listing Compliance:** Ensuring that filed reports match the auditor's official records, preventing "Wirecard-style" fabricated audit letters.
+Ensuring that filed reports match the auditor's official records, preventing "Wirecard-style" fabricated audit letters.
 
 **Government Grantors**
-**Compliance:** Agencies (e.g., USAID, NIH) verify that non-profits have passed their mandatory "Single Audit" before releasing grant funds.
+Agencies (e.g., USAID, NIH) verify that non-profits have passed their mandatory "Single Audit" before releasing grant funds.
 
 ## Verification Architecture
 
@@ -102,11 +106,36 @@ The **Audited Company** benefits from verification.
 - **Number Inflation:** Editing a $1M net income to read $10M to meet a loan requirement.
 - **Fabricated Opinion Letters:** Creating fake auditor letterhead to justify a "Vapor-Business."
 
-**Issuer Types**
+**Issuer Types (First Party)**
 
-**The Big Four:** (Deloitte, EY, KPMG, PwC).
-**Mid-Tier Firms:** (BDO, Grant Thornton, RSM).
-**CPA Firms:** (Small/Local auditors).
+- The Big Four (Deloitte, EY, KPMG, PwC)
+- Mid-Tier Firms (BDO, Grant Thornton, RSM)
+- CPA Firms (Small/Local auditors)
+
+**Privacy Salt:** Not required. Audit reports contain highly unpredictable variables—unique company names, specific fiscal year-end dates, precise revenue and net income figures with many digits, partner names, engagement numbers, and PCAOB registration details. These elements combined provide sufficient entropy that enumeration attacks are infeasible. Adding salt would provide no additional security benefit.
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require audit firms to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the audit firm, and any subsequent changes to the payload as they happen—which may manifest as a new hash, a status change (withdrawn, superseded), or even a 404 (record deleted)
+- Receives structured content/metadata (company name, fiscal year, opinion type, consolidated totals)
+- Does **NOT** receive plaintext (detailed financial footnotes, management discussions, proprietary business information)
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to companies/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Audit firm cannot deny issuing the opinion
+- **Timestamp proof:** Opinion existed at a specific time
+- **Regulatory audit:** PCAOB can inspect the witness ledger for audit quality issues
+- **Resilience:** Verification works even if audit firm's systems go down or the firm is dissolved
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Audit firm domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
 
 ## Competition vs. SEC EDGAR Database
 
