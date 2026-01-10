@@ -276,9 +276,80 @@ Directors are verified separately from the entity. Each director appointment get
   <span data-verify-line="aus">verify:acnc.gov.au/charity</span> <span verifiable-text="end" data-for="aus">]</span>
 </div>
 
+## Beneficial Ownership / PSC Disclosures
+
+Who actually owns a company? Beneficial ownership registers attempt to answer this—but the answer is often another company, sometimes offshore.
+
+<div style="font-family: 'Courier New', monospace; background: #f9f9f9; padding: 15px; border: 1px solid #999; font-size: 1em; color: #000; line-height: 1.6; max-width: 550px; margin: 24px auto;">
+  <span verifiable-text="start" data-for="psc1">[</span>PSC REGISTER EXTRACT<br>
+  Companies House (UK)<br>
+  Company: Dbl Glazing Hertford Ltd (#09876543)<br>
+  <br>
+  Persons with Significant Control:<br>
+  <br>
+  1. Happy Brothers (Cayman) Ltd<br>
+     Jurisdiction: Cayman Islands<br>
+     Ownership: 75% shares, 75% voting rights<br>
+     Registration: Cayman #MC-445521<br>
+     Nature: RLE (Relevant Legal Entity)<br>
+     Notified: 15 March 2022<br>
+     verify:companieshouse.gov.uk/psc/09876543-001<br>
+  <br>
+  2. James Morrison<br>
+     DOB: June 1978<br>
+     Nationality: British<br>
+     Ownership: 25% shares, 25% voting rights<br>
+     Notified: 15 March 2022<br>
+     verify:companieshouse.gov.uk/psc/09876543-002<br>
+  <span data-verify-line="psc1">verify:companieshouse.gov.uk/psc/09876543</span> <span verifiable-text="end" data-for="psc1">]</span>
+</div>
+
+<div style="font-family: 'Courier New', monospace; background: #f9f9f9; padding: 15px; border: 1px solid #999; font-size: 1em; color: #000; line-height: 1.6; max-width: 550px; margin: 24px auto;">
+  <span verifiable-text="start" data-for="boi1">[</span>BENEFICIAL OWNERSHIP INFORMATION<br>
+  FinCEN BOI Report<br>
+  Company: Sunrise Properties LLC<br>
+  EIN: 84-7723991<br>
+  Jurisdiction: Delaware<br>
+  <br>
+  Beneficial Owners:<br>
+  <br>
+  1. Coastal Holdings Inc (Parent Company)<br>
+     Jurisdiction: Nevada<br>
+     EIN: 88-1234567<br>
+     Ownership: 100%<br>
+     Filed: January 2, 2026<br>
+  <br>
+  Company Applicant: John Smith, Registered Agent<br>
+  <span data-verify-line="boi1">verify:fincen.gov/boi/84-7723991</span> <span verifiable-text="end" data-for="boi1">]</span>
+</div>
+
+**What Verification Proves (and Doesn't)**
+
+Verification confirms: "This disclosure was filed with and accepted by the registry." It proves the company made this declaration on record.
+
+Verification does NOT prove: The ultimate human beneficial owner. When the disclosed owner is "Happy Brothers (Cayman) Ltd," the chain continues offshore. The Cayman entity may be owned by a BVI trust, which is controlled by... the registry doesn't know.
+
+**The Opacity Chain**
+
+```
+Dbl Glazing Hertford Ltd (UK)
+    └── 75% owned by Happy Brothers (Cayman) Ltd
+            └── 100% owned by Sunset Trust (BVI)
+                    └── Beneficiaries: [not publicly disclosed]
+```
+
+Verification proves each link was officially filed. It doesn't pierce the veil of jurisdictions that don't require public disclosure.
+
+**Value Despite Limitations**
+
+- **Fraud Detection:** If someone claims "I own 50% of Dbl Glazing Hertford," the verified PSC shows otherwise
+- **Change Tracking:** PSC entries get SUPERSEDED when ownership changes—the historical record shows who owned what, when
+- **Compliance Proof:** Companies can prove they filed required disclosures
+- **Due Diligence Starting Point:** Investigators know where the chain leads next
+
 ## Data Verified
 
-Registry authority, entity name, file/registration number, entity type, formation/registration date, current status, registered agent, key dates (renewal, expiration). For directors: name, appointment date, role, resignation date (if applicable), current/superseded status.
+Registry authority, entity name, file/registration number, entity type, formation/registration date, current status, registered agent, key dates (renewal, expiration). For directors: name, appointment date, role, resignation date (if applicable), current/superseded status. For beneficial owners: name or entity, jurisdiction, ownership percentage, notification date.
 
 **Document Types:**
 - **Certificate of Incorporation:** Company formation proof, with director verification URLs.
@@ -286,7 +357,7 @@ Registry authority, entity name, file/registration number, entity type, formatio
 - **Certificate of Good Standing:** Current compliance status.
 - **UCC Financing Statement:** Secured transaction filing.
 - **Trademark Registration:** Intellectual property registration.
-- **Beneficial Ownership Report:** (FinCEN BOI) ownership disclosure.
+- **Beneficial Ownership Report:** (FinCEN BOI, UK PSC) ownership disclosure—may show corporate owners, not ultimate humans.
 - **Annual Report:** Periodic compliance filing.
 - **Charity Registration:** Non-profit charity registration.
 - **501(c)(3) Determination:** US tax-exempt status letter.
