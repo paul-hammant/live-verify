@@ -113,6 +113,63 @@
     styleEl.textContent = styles;
     document.head.appendChild(styleEl);
 
+    // Extract text nodes and BR elements with their visual positions
+    function getTextNodesWithPositions(container) {
+        const items = [];  // {type, text, rect, node}
+
+        function traverse(node) {
+            if (node.nodeType === Node.TEXT_NODE) {
+                const text = node.textContent;
+                if (text && text.trim().length > 0) {
+                    // Get bounding rect for text node
+                    const range = document.createRange();
+                    range.selectNodeContents(node);
+                    const rect = range.getBoundingClientRect();
+
+                    if (rect.width > 0 && rect.height > 0) {
+                        items.push({
+                            type: 'text',
+                            text: text,
+                            rect: rect,
+                            node: node
+                        });
+                    }
+                }
+            } else if (node.nodeType === Node.ELEMENT_NODE) {
+                if (node.nodeName === 'BR') {
+                    const rect = node.getBoundingClientRect();
+                    items.push({
+                        type: 'br',
+                        rect: rect,
+                        node: node
+                    });
+                } else {
+                    // Recursively process child nodes
+                    for (const child of node.childNodes) {
+                        traverse(child);
+                    }
+                }
+            }
+        }
+
+        traverse(container);
+
+        // Sort by visual position: top (Y) first, then left (X)
+        // Group by approximate line height to keep same-line items together
+        const lineHeight = 20; // Approximate default
+        items.sort((a, b) => {
+            const aLineIndex = Math.floor(a.rect.top / lineHeight);
+            const bLineIndex = Math.floor(b.rect.top / lineHeight);
+
+            if (aLineIndex !== bLineIndex) {
+                return aLineIndex - bLineIndex;
+            }
+            return a.rect.left - b.rect.left;
+        });
+
+        return items;
+    }
+
     // Find all verifiable regions on the page
     function findVerifiableRegions() {
         const regions = [];
@@ -140,15 +197,22 @@
             const tempDiv = document.createElement('div');
             tempDiv.appendChild(fragment);
 
-            // Get raw text, preserving line breaks
+            // Get text nodes with visual positions and sort by top-to-bottom, left-to-right
+            const items = getTextNodesWithPositions(tempDiv);
+
             let text = '';
-            const walk = document.createTreeWalker(tempDiv, NodeFilter.SHOW_TEXT | NodeFilter.SHOW_ELEMENT);
-            let node;
-            while (node = walk.nextNode()) {
-                if (node.nodeType === Node.TEXT_NODE) {
-                    text += node.textContent;
-                } else if (node.nodeName === 'BR') {
+            let lastLineIndex = -1;
+            for (const item of items) {
+                if (item.type === 'text') {
+                    const currentLineIndex = Math.floor(item.rect.top / 20);
+                    if (currentLineIndex !== lastLineIndex && lastLineIndex !== -1) {
+                        text += '\n';
+                    }
+                    text += item.text;
+                    lastLineIndex = currentLineIndex;
+                } else if (item.type === 'br') {
                     text += '\n';
+                    lastLineIndex = -1;
                 }
             }
 
