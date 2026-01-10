@@ -14,37 +14,27 @@ In the professional and industrial worlds, a **Training Completion Certificate**
 
 The problem is that "compliance fatigue" leads to massive fraud. Shady employers or workers often "pencil whip" certificates, creating fake PDFs for training that never happened to avoid the cost of downtime. In high-risk fields, a fake safety certificate can lead to fatal accidents. Verified hashes bind the **Trainee Name, Course ID, and Completion Date** to the training provider's or the company's domain (e.g., `nsc.org`, `osha.gov`, or `walmart-academy.com`).
 
-<div style="max-width: 650px; margin: 24px auto; font-family: 'Georgia', serif; border: 4px solid #1a237e; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-  <div style="padding: 40px; text-align: center; border: 1px solid #ccc; margin: 10px;">
-    <div style="margin-bottom: 25px;">
-      <div style="font-size: 1.6em; font-weight: bold; color: #1a237e; letter-spacing: 1px;"><span verifiable-text="start" data-for="train">[</span>CERTIFICATE OF COMPLETION</div>
-      <div style="font-size: 0.9em; font-style: italic; color: #666;">NATIONAL SAFETY COUNCIL ACADEMY</div>
-    </div>
-<div style="margin: 30px 0;">
-      <div style="font-size: 1.1em;">This is to certify that</div>
-      <div style="font-size: 1.8em; font-weight: bold; margin: 10px 0; color: #333;">ROBERT J. MILLER</div>
-      <div style="font-size: 1.1em;">has successfully completed the prescribed course of study in</div>
-      <div style="font-size: 1.4em; font-weight: bold; margin: 15px 0; color: #1a237e;">OSHA HAZARDOUS MATERIALS (HAZMAT) OPERATIONS</div>
-    </div>
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 30px 0; font-size: 0.9em; border-top: 1px solid #eee; border-bottom: 1px solid #eee; padding: 15px 0;">
-      <div style="text-align: left;">
-        <strong>Date:</strong> MARCH 15, 2026<br>
-        <strong>Units:</strong> 8.0 CEU / 40 Contact Hours
-      </div>
-      <div style="text-align: right;">
-        <strong>Course ID:</strong> #NSC-992288-XJ<br>
-        <strong>Instructor:</strong> Sarah J. Jenkins
-      </div>
-    </div>
-<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
-      <div style="width: 150px; border-top: 1px solid #000; padding-top: 5px; font-size: 0.8em;">Academy Director</div>
-      <div style="width: 80px; height: 80px; border: 2px solid #1a237e; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; color: #1a237e; transform: rotate(-10deg);">NSC<br>VERIFIED</div>
-    </div>
-<div data-verify-line="train" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
-      title="Demo only: Training providers don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:nsc.org/v/train/RM992288-HM <span verifiable-text="end" data-for="train">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="train">[</span>CERTIFICATE OF COMPLETION
+NATIONAL SAFETY COUNCIL ACADEMY
+═══════════════════════════════════════════════════════════════════
+
+                    This is to certify that
+
+                       ROBERT J. MILLER
+
+        has successfully completed the prescribed course of study in
+
+            OSHA HAZARDOUS MATERIALS (HAZMAT) OPERATIONS
+
+───────────────────────────────────────────────────────────────────
+Date:        MARCH 15, 2026              Course ID:   #NSC-992288-XJ
+Units:       8.0 CEU / 40 Contact Hours  Instructor:  Sarah J. Jenkins
+
+_________________________
+Academy Director                                         [NSC VERIFIED]
+
+<span data-verify-line="train">verify:nsc.org/v/train/RM992288-HM</span> <span verifiable-text="end" data-for="train">]</span></pre>
 </div>
 
 ## Data Verified

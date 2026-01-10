@@ -19,60 +19,30 @@ Customs officers use this invoice to decide:
 
 **"Under-valuation"** is a massive global trade crime. Shady importers often have the exporter send two invoices: a "Real" one for payment, and a "Fake" one with a 90% discount to show Customs. This allows them to evade millions in import duties. **"Tariff Engineering"** is another risk, where the HS code is edited on the paper to a low-duty category. Verified hashes bind the **Exporters' ledger value and the HS Code** to the manufacturer's or the trade platform's domain.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', monospace; border: 1px solid #000; background: #fff; padding: 20px; box-shadow: 2px 2px 5px rgba(0,0,0,0.1);">
-  <div style="display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
-    <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="invoice">[</span>COMMERCIAL INVOICE</div>
-    <div style="text-align: right;">
-      Invoice #: INV-998877-XK<br>
-      Date: March 15, 2026
-    </div>
-  </div>
-<div style="font-size: 0.85em; line-height: 1.4;">
-    <div style="display: flex; margin-bottom: 20px;">
-      <div style="width: 50%;">
-        <strong>EXPORTER (SELLER):</strong><br>
-        Shenzhen Tech Components, Ltd.<br>
-        Building 4, High-Tech Park<br>
-        Shenzhen, GD, China
-      </div>
-      <div style="width: 50%; padding-left: 20px;">
-        <strong>IMPORTER (BUYER):</strong><br>
-        EuroLink Distribution, AG<br>
-        Industriestrasse 42<br>
-        Zurich, CH-8001, Switzerland
-      </div>
-    </div>
-<table style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
-      <tr style="border-bottom: 1px solid #000; font-weight: bold;">
-        <th style="text-align: left;">Description of Goods</th>
-        <th style="text-align: center;">HS Code</th>
-        <th style="text-align: right;">Value (USD)</th>
-      </tr>
-      <tr>
-        <td style="padding: 5px 0;">Solid State Drives (512GB Enterprise)</td>
-        <td style="text-align: center;">8471.70</td>
-        <td style="text-align: right;">$ 45,000.00</td>
-      </tr>
-      <tr>
-        <td style="padding: 5px 0;">Microcontrollers (ARM Cortex-M4)</td>
-        <td style="text-align: center;">8542.31</td>
-        <td style="text-align: right;">$ 12,500.00</td>
-      </tr>
-      <tr style="border-top: 2px solid #000; font-weight: bold; font-size: 1.1em;">
-        <td colspan="2">TOTAL INVOICE VALUE:</td>
-        <td style="text-align: right;">$ 57,500.00</td>
-      </tr>
-    </table>
-<div style="font-size: 0.8em; font-style: italic;">
-      Incoterms: CIP Zurich (2020)<br>
-      Country of Origin: CHINA<br>
-      Container: MSKU-992288-0
-    </div>
-<div data-verify-line="invoice" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
-      title="Demo only: Exporter doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:sz-tech.com/invoices/v/INV998877 <span verifiable-text="end" data-for="invoice">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="invoice">[</span>COMMERCIAL INVOICE
+═══════════════════════════════════════════════════════════════════
+
+Invoice #:  INV-998877-XK
+Date:       March 15, 2026
+
+EXPORTER (SELLER):              IMPORTER (BUYER):
+Shenzhen Tech Components, Ltd.  EuroLink Distribution, AG
+Building 4, High-Tech Park      Industriestrasse 42
+Shenzhen, GD, China             Zurich, CH-8001, Switzerland
+
+Description of Goods                      HS Code     Value (USD)
+───────────────────────────────────────────────────────────────────
+Solid State Drives (512GB Enterprise)     8471.70    $ 45,000.00
+Microcontrollers (ARM Cortex-M4)          8542.31    $ 12,500.00
+───────────────────────────────────────────────────────────────────
+TOTAL INVOICE VALUE:                                 $ 57,500.00
+
+Incoterms:         CIP Zurich (2020)
+Country of Origin: CHINA
+Container:         MSKU-992288-0
+
+<span data-verify-line="invoice">verify:sz-tech.com/invoices/v/INV998877</span> <span verifiable-text="end" data-for="invoice">]</span></pre>
 </div>
 
 ## Data Verified

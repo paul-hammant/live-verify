@@ -16,39 +16,28 @@ The **Verified Gross Mass (VGM)** is the official weight certificate for a conta
 
 Shippers often "Guess" the weight to save the $50 fee for a certified scale. This "Guesswork" has led to several high-profile shipwrecks. Verified hashes ensure that the weight on the paper matches the official scale record at the port.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 1px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-  <div style="background: #002d62; color: #fff; padding: 10px; text-align: center;">
-    <h2 style="margin: 0; text-transform: uppercase; font-size: 1.2em;"><span verifiable-text="start" data-for="vgm">[</span>SOLAS VGM DECLARATION</h2>
-    <div style="font-size: 0.8em;">Verified Gross Mass Certificate</div>
-  </div>
-<div style="padding: 20px;">
-    <div style="display: flex; justify-content: space-between; font-size: 0.9em; margin-bottom: 20px;">
-      <div>
-        <strong>Container #:</strong> MSKU-123456-7<br>
-        <strong>Seal #:</strong> MAE-998877
-      </div>
-      <div style="text-align: right;">
-        <strong>Booking #:</strong> 99228877<br>
-        <strong>Date:</strong> 15 MAR 2026
-      </div>
-    </div>
-<div style="font-size: 0.95em; line-height: 1.6; color: #333; border: 1px solid #000; padding: 15px; margin-bottom: 20px;">
-      <p><strong>Verified Gross Mass (VGM):</strong></p>
-      <div style="text-align: center; font-size: 1.8em; font-weight: bold; color: #002d62;">24,550.00 KG</div>
-<p style="margin-top: 15px;"><strong>Shipper:</strong> Global Furniture Exports, Ltd.<br>
-      <strong>Method:</strong> Method 1 (Weighing the entire container)</p>
-    </div>
-<div style="font-size: 0.8em; color: #555; text-align: justify;">
-      This declaration is made in accordance with the IMO SOLAS Regulation VI/2. The signatory certifies that the mass has been verified using calibrated and certified equipment.
-    </div>
-<div style="margin-top: 30px; border-top: 1px solid #000; padding-top: 5px; font-size: 0.85em;">
-      <strong>Authorized Signatory:</strong> <em>Robert J. Miller</em>
-    </div>
-<div data-verify-line="vgm" style="border-top: 1px dashed #999; margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #555; text-align: center;"
-      title="Demo only: Shipper portal doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:global-furniture.com/vgm/v/MSKU123456 <span verifiable-text="end" data-for="vgm">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="vgm">[</span>SOLAS VGM DECLARATION
+Verified Gross Mass Certificate
+═══════════════════════════════════════════════════════════════════
+
+Container #:    MSKU-123456-7
+Seal #:         MAE-998877
+Booking #:      99228877
+Date:           15 MAR 2026
+
+VERIFIED GROSS MASS (VGM):                            24,550.00 KG
+
+Shipper:        Global Furniture Exports, Ltd.
+Method:         Method 1 (Weighing the entire container)
+
+This declaration is made in accordance with the IMO SOLAS
+Regulation VI/2. The signatory certifies that the mass has been
+verified using calibrated and certified equipment.
+
+Authorized Signatory: Robert J. Miller
+
+<span data-verify-line="vgm">verify:global-furniture.com/vgm/v/MSKU123456</span> <span verifiable-text="end" data-for="vgm">]</span></pre>
 </div>
 
 ## Data Verified

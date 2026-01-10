@@ -16,57 +16,24 @@ For business travelers, the "Folio" is a nightmare to expense. They must "Scrub"
 
 Fraud happens when employees edit their folio to hide personal spending or to inflate business costs. Verified hashes allow a company's finance department to see the **un-altered line items**, ensuring that the company only pays for the work-related parts of the trip.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <div style="background: #1a237e; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="cruise">[</span>ROYAL CARIBBEAN INTERNATIONAL</div>
-      <div style="font-size: 0.8em;">Final Guest Folio - <em>Wonder of the Seas</em></div>
-    </div>
-    <div style="text-align: right;">
-      <div style="font-size: 0.8em;">Folio #: 99228877-X</div>
-    </div>
-  </div>
-<div style="padding: 25px;">
-    <div style="display: flex; justify-content: space-between; font-size: 0.9em; margin-bottom: 20px; color: #555;">
-      <div>
-        <strong>Guest:</strong> SARAH J. DOE<br>
-        <strong>Stateroom:</strong> 12504 (Deck 12)
-      </div>
-      <div style="text-align: right;">
-        <strong>Voyage Dates:</strong> Mar 08 - Mar 15, 2026<br>
-        <strong>Reservation:</strong> L7XK9B
-      </div>
-    </div>
-<table style="width: 100%; border-collapse: collapse; font-size: 0.85em;">
-      <tr style="border-bottom: 2px solid #1a237e; background: #f5f5f5;">
-        <th style="padding: 5px; text-align: left;">Description</th>
-        <th style="padding: 5px; text-align: right;">Amount</th>
-      </tr>
-      <tr>
-        <td style="padding: 5px; border-bottom: 1px solid #eee;">Internet Package - VOOM (Unlimited)</td>
-        <td style="text-align: right; padding: 5px;">$ 142.50</td>
-      </tr>
-      <tr>
-        <td style="padding: 5px; border-bottom: 1px solid #eee;">Onboard Gratuities (Pre-paid)</td>
-        <td style="text-align: right; padding: 5px;">$ 112.00</td>
-      </tr>
-      <tr>
-        <td style="padding: 5px; border-bottom: 1px solid #eee;">Chops Grille (Specialty Dining)</td>
-        <td style="text-align: right; padding: 5px;">$ 55.00</td>
-      </tr>
-      <tr style="font-weight: bold; font-size: 1.1em;">
-        <td style="padding: 5px;">TOTAL ONBOARD CHARGES:</td>
-        <td style="text-align: right; padding: 5px;">$ 309.50</td>
-      </tr>
-    </table>
-<p style="margin-top: 20px; font-size: 0.8em; color: #555; font-style: italic;">
-      This statement reflects all settled charges as of the date of disembarkation.
-    </p>
-<div data-verify-line="cruise" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
-      title="Demo only: Royal Caribbean doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:royalcaribbean.com/folios/v/99228877 <span verifiable-text="end" data-for="cruise">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="cruise">[</span>ROYAL CARIBBEAN INTERNATIONAL              Folio #: 99228877-X
+Final Guest Folio - Wonder of the Seas
+
+Guest:        SARAH J. DOE              Voyage Dates: Mar 08 - Mar 15, 2026
+Stateroom:    12504 (Deck 12)           Reservation:  L7XK9B
+
+Description                                                  Amount
+───────────────────────────────────────────────────────────────────
+Internet Package - VOOM (Unlimited)                        $ 142.50
+Onboard Gratuities (Pre-paid)                              $ 112.00
+Chops Grille (Specialty Dining)                            $  55.00
+───────────────────────────────────────────────────────────────────
+TOTAL ONBOARD CHARGES:                                     $ 309.50
+
+This statement reflects all settled charges as of disembarkation.
+
+<span data-verify-line="cruise">verify:royalcaribbean.com/folios/v/99228877</span> <span verifiable-text="end" data-for="cruise">]</span></pre>
 </div>
 
 ## Data Verified

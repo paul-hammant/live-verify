@@ -14,59 +14,24 @@ In the short-term rental market (Airbnb, VRBO), the **Rental Agreement** or Book
 
 Fraud is rampant in the "Direct Booking" market. Scammers create "Phantom Listings" using photos of real homes and issue fake PDF agreements to steal security deposits. Similarly, guests might "edit" an agreement to remove a "No Pets" rule before showing it to a building manager. Verified hashes bind the **Property Address, Stay Dates, and Total Price** to the platform's or the property manager's domain (e.g., `airbnb.com` or `vacasa.com`).
 
-<div style="max-width: 550px; margin: 24px auto; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; border: 1px solid #ddd; border-radius: 12px; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1); overflow: hidden;">
-  <div style="background: #ff385c; color: #fff; padding: 20px; display: flex; align-items: center; justify-content: space-between;">
-    <div style="display: flex; align-items: center;">
-      <div style="font-size: 1.8em; margin-right: 10px;">🏠</div>
-      <div style="font-weight: bold; font-size: 1.2em; letter-spacing: -0.5px;">airbnb</div>
-    </div>
-    <div style="text-align: right;">
-      <div style="font-weight: bold; font-size: 0.9em;"><span verifiable-text="start" data-for="rental">[</span>RESERVATION CONFIRMED</div>
-      <div style="font-size: 0.7em; opacity: 0.9;">Ref: HM-99228877</div>
-    </div>
-  </div>
-<div style="padding: 25px;">
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; color: #333; margin-bottom: 20px;">
-      <div>
-        <strong>Property:</strong><br>
-        Modern Beach Loft<br>
-        123 Ocean Way, Malibu, CA
-      </div>
-      <div style="text-align: right;">
-        <strong>Dates:</strong><br>
-        MAR 15 - MAR 22, 2026<br>
-        (7 Nights)
-      </div>
-    </div>
-<div style="border-top: 1px solid #eee; border-bottom: 1px solid #eee; padding: 15px 0; margin-bottom: 20px;">
-      <table style="width: 100%; font-size: 0.9em; color: #444;">
-        <tr>
-          <td>Nightly Rate ($350 x 7)</td>
-          <td style="text-align: right;">$ 2,450.00</td>
-        </tr>
-        <tr>
-          <td>Cleaning Fee</td>
-          <td style="text-align: right;">$ 150.00</td>
-        </tr>
-        <tr style="font-weight: bold; color: #000; font-size: 1.1em;">
-          <td style="padding-top: 10px;">TOTAL PAID (USD):</td>
-          <td style="text-align: right; padding-top: 10px;">$ 2,600.00</td>
-        </tr>
-      </table>
-    </div>
-<div style="font-size: 0.8em; color: #666; font-style: italic;">
-      <strong>House Rules:</strong> Maximum 4 guests. No smoking. No unauthorized pets. Verification protects host and guest integrity.
-    </div>
-  </div>
-<div style="padding: 20px; background: #f7f7f7; border-top: 1px solid #eee; text-align: center;">
-    <div data-verify-line="rental" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #ff385c; font-weight: bold;"
-      title="Demo only: Airbnb doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:airbnb.com/v/HM99228877 <span verifiable-text="end" data-for="rental">]</span>
-    </div>
-    <div style="font-size: 0.7em; color: #999; margin-top: 10px;">
-      Scan to verify booking authenticity, price integrity, and compliance with local rental laws.
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="rental">[</span>airbnb
+RESERVATION CONFIRMED                              Ref: HM-99228877
+═══════════════════════════════════════════════════════════════════
+
+Property:  Modern Beach Loft               Dates:
+           123 Ocean Way, Malibu, CA       MAR 15 - MAR 22, 2026
+                                           (7 Nights)
+
+───────────────────────────────────────────────────────────────────
+Nightly Rate ($350 x 7)                                 $ 2,450.00
+Cleaning Fee                                            $   150.00
+───────────────────────────────────────────────────────────────────
+TOTAL PAID (USD):                                       $ 2,600.00
+
+House Rules: Maximum 4 guests. No smoking. No unauthorized pets.
+
+<span data-verify-line="rental">verify:airbnb.com/v/HM99228877</span> <span verifiable-text="end" data-for="rental">]</span></pre>
 </div>
 
 ## Data Verified

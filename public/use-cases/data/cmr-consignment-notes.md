@@ -19,48 +19,27 @@ It is the "Proof of Handoff." It records:
 
 Trucking is a fragmented industry. Verified CMRs prevent "Weight Fraud" (lying about how heavy the truck is to avoid tolls) and "Phantom Shipments" (faking deliveries to get paid for work never done).
 
-<div style="max-width: 600px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 1px solid #000; background: #fff; padding: 0;">
-  <div style="border-bottom: 2px solid #000; padding: 5px; display: flex; justify-content: space-between;">
-    <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="cmr">[</span>CMR</div>
-    <div style="font-weight: bold;">INTERNATIONAL CONSIGNMENT NOTE</div>
-    <div style="font-weight: bold; color: #d32f2f;">No. 99887766</div>
-  </div>
-<div style="padding: 10px; font-size: 0.8em;">
-    <div style="display: flex; border-bottom: 1px solid #000; padding-bottom: 10px;">
-      <div style="width: 50%; border-right: 1px solid #000; padding-right: 10px;">
-        <strong>1. Sender (name, address, country):</strong><br>
-        Deutsche Elektro GmbH<br>
-        Industriestr. 42, Berlin, DE
-      </div>
-      <div style="width: 50%; padding-left: 10px;">
-        <strong>2. Consignee (name, address, country):</strong><br>
-        Paris Retail Group, SA<br>
-        Rue de Rivoli, Paris, FR
-      </div>
-    </div>
-<div style="margin-top: 10px;">
-      <p><strong>3. Place of Delivery:</strong> Paris, FR<br>
-      <strong>4. Place of Taking Over:</strong> Berlin, DE (Date: 15.03.2026)</p>
-<p><strong>5. Description of Goods:</strong><br>
-      High-Value Consumer Electronics (12 Pallets)<br>
-      Total Weight: 4,500 KG</p>
-    </div>
-<div style="margin-top: 20px; display: flex; justify-content: space-between; border-top: 1px solid #000; padding-top: 10px;">
-      <div style="width: 30%; text-align: center; border: 1px solid #000; padding: 5px;">
-        Sender Signature
-      </div>
-      <div style="width: 30%; text-align: center; border: 1px solid #000; padding: 5px;">
-        Carrier Signature
-      </div>
-      <div style="width: 30%; text-align: center; border: 1px solid #000; padding: 5px;">
-        Consignee Signature
-      </div>
-    </div>
-<div data-verify-line="cmr" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #555; text-align: center;"
-      title="Demo only: Carrier doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:dhl-logistics.com/cmr/v/99887766 <span verifiable-text="end" data-for="cmr">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="cmr">[</span>CMR - INTERNATIONAL CONSIGNMENT NOTE              No. 99887766
+═══════════════════════════════════════════════════════════════════
+
+1. Sender:              Deutsche Elektro GmbH
+                        Industriestr. 42, Berlin, DE
+
+2. Consignee:           Paris Retail Group, SA
+                        Rue de Rivoli, Paris, FR
+
+3. Place of Delivery:   Paris, FR
+4. Place of Taking Over: Berlin, DE (Date: 15.03.2026)
+
+5. Description of Goods:
+   High-Value Consumer Electronics (12 Pallets)
+   Total Weight: 4,500 KG
+
+───────────────────────────────────────────────────────────────────
+Sender Signature       Carrier Signature       Consignee Signature
+
+<span data-verify-line="cmr">verify:dhl-logistics.com/cmr/v/99887766</span> <span verifiable-text="end" data-for="cmr">]</span></pre>
 </div>
 
 ## Data Verified

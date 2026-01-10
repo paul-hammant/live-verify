@@ -14,46 +14,20 @@ A **Voter Registration Card** (or Confirmation) is the official proof that a cit
 
 These cards are the "Ticket to the Ballot Box." Fraud is high-stakes: partisan actors or fraudsters might "edit" a registration card to show a fake address to illegally vote in a "swing" precinct, or they might create fake cards for non-citizens to bypass election security. Verified hashes bind the **Voter Name, Precinct ID, and Home Address** to the state's or the county's election domain (e.g., `sos.ca.gov` or `vote.county.org`).
 
-<div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; border-radius: 8px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
-  <div style="background: #002d62; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
-    <div style="font-size: 1.5em; margin-right: 15px;">🇺🇸</div>
-    <div style="text-align: right;">
-      <div style="font-weight: bold; font-size: 1.1em; letter-spacing: 1px;"><span verifiable-text="start" data-for="vote">[</span>VOTER REGISTRATION</div>
-      <div style="font-size: 0.75em; font-weight: bold; opacity: 0.9;">STATE OF ILLINOIS • BOARD OF ELECTIONS</div>
-    </div>
-  </div>
-<div style="padding: 20px; background: #fff;">
-    <div style="border-bottom: 1px solid #eee; padding-bottom: 10px; margin-bottom: 15px;">
-      <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Registered Voter</div>
-      <div style="font-size: 1.2em; font-weight: bold; color: #333;">SARAH JANE SMITH</div>
-<div style="font-size: 0.9em; color: #333; margin-top: 5px;">
-        123 MAPLE STREET, SPRINGFIELD, IL 62704
-      </div>
-    </div>
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; font-size: 0.85em; line-height: 1.4;">
-      <div>
-        <strong>Voter ID:</strong> 99228877<br>
-        <strong>Party:</strong> INDEPENDENT
-      </div>
-      <div style="text-align: right;">
-        <strong>Precinct:</strong> #42 (WARD 7)<br>
-        <strong>Reg Date:</strong> 15 MAR 2026
-      </div>
-    </div>
-<div style="margin-top: 15px; background: #f9f9f9; padding: 10px; border: 1px solid #ddd; font-size: 0.8em; text-align: center;">
-      <strong>POLLING PLACE:</strong><br>
-      Springfield Library, 1st Ave Entrance
-    </div>
-  </div>
-<div style="padding: 15px 20px 20px 20px; background: #fff; border-top: 1px dashed #999; text-align: center;">
-    <div data-verify-line="vote" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #002d62; font-weight: bold;"
-      title="Demo only: Election boards don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:elections.il.gov/v/99228877 <span verifiable-text="end" data-for="vote">]</span>
-    </div>
-    <div style="font-size: 0.65em; color: #999; margin-top: 8px; font-style: italic;">
-      Scan to verify registration status, active precinct, and citizenship vetting status.
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="vote">[</span>VOTER REGISTRATION
+STATE OF ILLINOIS - BOARD OF ELECTIONS
+═══════════════════════════════════════════════════════════════════
+
+Registered Voter:  SARAH JANE SMITH
+                   123 MAPLE STREET, SPRINGFIELD, IL 62704
+
+Voter ID:   99228877                     Precinct:   #42 (WARD 7)
+Party:      INDEPENDENT                  Reg Date:   15 MAR 2026
+
+POLLING PLACE: Springfield Library, 1st Ave Entrance
+
+<span data-verify-line="vote">verify:elections.il.gov/v/99228877</span> <span verifiable-text="end" data-for="vote">]</span></pre>
 </div>
 
 ## Data Verified

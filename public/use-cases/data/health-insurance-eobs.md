@@ -19,56 +19,23 @@ It tells you:
 
 Verified EOBs are essential for **HSA/FSA Reimbursement**. Fraudsters often edit these PDFs to inflate their "Patient Responsibility" to trick their tax-free savings account into releasing cash. Verified hashes ensure the $70 charge matches the insurer's actual adjudication.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <div style="background: #005fb8; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="eob-health">[</span>ANTHEM BLUE CROSS</div>
-      <div style="font-size: 0.8em;">Explanation of Benefits (EOB)</div>
-    </div>
-    <div style="text-align: right;">
-      <div style="font-size: 0.8em;">Claim #: 99228877-BC</div>
-    </div>
-  </div>
-<div style="padding: 25px;">
-    <div style="display: flex; justify-content: space-between; font-size: 0.9em; margin-bottom: 20px; color: #555;">
-      <div>
-        <strong>Patient:</strong> SARAH J. DOE<br>
-        <strong>Provider:</strong> Westside Medical Clinic
-      </div>
-      <div style="text-align: right;">
-        <strong>Service Date:</strong> Feb 10, 2026<br>
-        <strong>Statement Date:</strong> Mar 15, 2026
-      </div>
-    </div>
-<table style="width: 100%; border-collapse: collapse; font-size: 0.85em;">
-      <tr style="border-bottom: 2px solid #005fb8; background: #f5f5f5;">
-        <th style="padding: 5px; text-align: left;">Service Description</th>
-        <th style="padding: 5px; text-align: right;">Amount Billed</th>
-        <th style="padding: 5px; text-align: right;">Patient Owes</th>
-      </tr>
-      <tr>
-        <td style="padding: 5px; border-bottom: 1px solid #eee;">Office Visit (99213)</td>
-        <td style="text-align: right; padding: 5px;">$ 250.00</td>
-        <td style="text-align: right; padding: 5px;">$ 25.00</td>
-      </tr>
-      <tr>
-        <td style="padding: 5px; border-bottom: 1px solid #eee;">Lab Work (Panel A)</td>
-        <td style="text-align: right; padding: 5px;">$ 450.00</td>
-        <td style="text-align: right; padding: 5px;">$ 45.00</td>
-      </tr>
-      <tr style="font-weight: bold; font-size: 1.1em;">
-        <td colspan="2" style="padding: 5px;">TOTAL PATIENT RESPONSIBILITY:</td>
-        <td style="text-align: right; padding: 5px;">$ 70.00</td>
-      </tr>
-    </table>
-<p style="margin-top: 20px; font-size: 0.8em; color: #555; font-style: italic;">
-      This is NOT a bill. Use this verified record for HSA/FSA reimbursement.
-    </p>
-<div data-verify-line="eob-health" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
-      title="Demo only: Anthem doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:anthem.com/claims/v/99228877 <span verifiable-text="end" data-for="eob-health">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="eob-health">[</span>ANTHEM BLUE CROSS                       Claim #: 99228877-BC
+Explanation of Benefits (EOB)
+
+Patient: SARAH J. DOE                   Service Date:   Feb 10, 2026
+Provider: Westside Medical Clinic       Statement Date: Mar 15, 2026
+
+Service Description          Amount Billed    Patient Owes
+─────────────────────────────────────────────────────────────
+Office Visit (99213)              $ 250.00        $ 25.00
+Lab Work (Panel A)                $ 450.00        $ 45.00
+─────────────────────────────────────────────────────────────
+TOTAL PATIENT RESPONSIBILITY:                     $ 70.00
+
+This is NOT a bill. Use this verified record for HSA/FSA reimbursement.
+
+<span data-verify-line="eob-health">verify:anthem.com/claims/v/99228877</span> <span verifiable-text="end" data-for="eob-health">]</span></pre>
 </div>
 
 ## Data Verified

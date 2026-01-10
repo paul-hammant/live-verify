@@ -14,64 +14,26 @@ A **Non-Vessel Operating Common Carrier (NVOCC)** is a freight forwarder that bu
 
 The problem is that freight rates are volatile. To win business, some NVOCCs "edit" their tariff sheets to show a lower "filed" rate than they actually reported to the government, or they add "hidden surcharges" that aren't in the legal tariff. Verified hashes bind the **Route, Rate, and Surcharge Codes** to the carrier's official tariff domain (e.g., `expeditors.com` or `flexport.com`), ensuring that the price on the paper matches the price filed with the regulator.
 
-<div style="max-width: 650px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 1px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <div style="background: #333; color: #fff; padding: 15px; display: flex; justify-content: space-between; align-items: center;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.3em;"><span verifiable-text="start" data-for="tariff">[</span>GLOBAL FREIGHT LOGISTICS</div>
-      <div style="font-size: 0.75em; opacity: 0.8;">FMC OTI License: #0992288N • Public Tariff #042</div>
-    </div>
-    <div style="text-align: right;">
-      <div style="font-weight: bold; font-size: 1em;">RATE FILING</div>
-      <div style="font-size: 0.7em;">Ref: GFL-SHA-LAX-2026</div>
-    </div>
-  </div>
-<div style="padding: 25px;">
-    <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
-      <div>
-        <strong>Origin:</strong> Shanghai, China (CNSHA)<br>
-        <strong>Destination:</strong> Los Angeles, USA (USLAX)<br>
-        <strong>Commodity:</strong> General Cargo (NOS)
-      </div>
-      <div style="text-align: right;">
-        <strong>Effective Date:</strong> MARCH 15, 2026<br>
-        <strong>Expiration Date:</strong> APRIL 14, 2026<br>
-        <strong>Service:</strong> Port-to-Port
-      </div>
-    </div>
-<table style="width: 100%; border-collapse: collapse; font-size: 0.9em; margin-bottom: 25px;">
-      <tr style="border-top: 2px solid #000; border-bottom: 1px solid #000; background: #f5f5f5;">
-        <th style="text-align: left; padding: 10px;">Cost Component</th>
-        <th style="text-align: center; padding: 10px;">Basis</th>
-        <th style="text-align: right; padding: 10px;">Amount</th>
-      </tr>
-      <tr style="border-bottom: 1px solid #eee;">
-        <td style="padding: 10px;">Ocean Freight (All-In)</td>
-        <td style="text-align: center; padding: 10px;">Per 40' HC</td>
-        <td style="text-align: right; padding: 10px;">$ 3,250.00</td>
-      </tr>
-      <tr style="border-bottom: 1px solid #eee;">
-        <td style="padding: 10px;">Bunker Adjustment (BAF)</td>
-        <td style="text-align: center; padding: 10px;">Per 40' HC</td>
-        <td style="text-align: right; padding: 10px;">$ 420.00</td>
-      </tr>
-      <tr style="font-weight: bold; background: #ffffcc;">
-        <td colspan="2" style="text-align: right; padding: 10px;">TOTAL FILED RATE:</td>
-        <td style="text-align: right; padding: 10px;">$ 3,670.00</td>
-      </tr>
-    </table>
-<div style="font-size: 0.75em; color: #666; line-height: 1.4; border: 1px solid #ccc; padding: 10px; background: #fff;">
-      <strong>FMC Compliance:</strong> This rate has been filed with the Federal Maritime Commission. Any deviations or unauthorized surcharges are subject to civil penalties under the Shipping Act of 1984.
-    </div>
-  </div>
-<div style="padding: 20px; background: #f9f9f9; border-top: 1px solid #333; text-align: center;">
-    <div data-verify-line="tariff" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
-      title="Demo only: NVOCCs don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:gfreight.com/tariffs/v/SHA-LAX-2026 <span verifiable-text="end" data-for="tariff">]</span>
-    </div>
-    <div style="font-size: 0.7em; color: #777; margin-top: 10px; font-style: italic;">
-      Scan to verify the filed rate integrity, effective dates, and FMC regulatory compliance status.
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="tariff">[</span>GLOBAL FREIGHT LOGISTICS
+FMC OTI License: #0992288N                     Public Tariff #042
+═══════════════════════════════════════════════════════════════════
+RATE FILING                                    Ref: GFL-SHA-LAX-2026
+
+Origin:       Shanghai, China (CNSHA)     Effective:   MARCH 15, 2026
+Destination:  Los Angeles, USA (USLAX)    Expires:     APRIL 14, 2026
+Commodity:    General Cargo (NOS)         Service:     Port-to-Port
+
+Cost Component                           Basis           Amount
+───────────────────────────────────────────────────────────────────
+Ocean Freight (All-In)                   Per 40' HC    $ 3,250.00
+Bunker Adjustment (BAF)                  Per 40' HC    $   420.00
+───────────────────────────────────────────────────────────────────
+TOTAL FILED RATE:                                      $ 3,670.00
+
+FMC Compliance: Filed with Federal Maritime Commission.
+
+<span data-verify-line="tariff">verify:gfreight.com/tariffs/v/SHA-LAX-2026</span> <span verifiable-text="end" data-for="tariff">]</span></pre>
 </div>
 
 ## Data Verified

@@ -14,57 +14,25 @@ A **Workers' Compensation Certificate of Insurance (COI)** is the proof that a c
 
 Fraud is rampant in the construction industry. "Premium Evasion" is a multi-billion dollar problem: a contractor might "edit" a certificate to turn a 5-person policy into a 50-person policy to hide their true workforce size from the insurer. Similarly, they might use a fake certificate from a reputable carrier (like Liberty Mutual or Hartford) to bypass a general contractor's vetting process. Verified hashes bind the **FEIN Number, Employee Count, and Expiration Date** to the insurer's domain (e.g., `libertymutual.com`).
 
-<div style="max-width: 650px; margin: 24px auto; font-family: 'Helvetica Neue', Arial, sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-  <div style="background: #003366; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid #d32f2f;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.4em;"><span verifiable-text="start" data-for="comp">[</span>LIBERTY MUTUAL INSURANCE</div>
-      <div style="font-size: 0.8em; opacity: 0.9; text-transform: uppercase;">Workers' Compensation & Employers Liability</div>
-    </div>
-    <div style="font-size: 2em;">👷</div>
-  </div>
-<div style="padding: 25px;">
-    <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
-      <div>
-        <strong>Insured:</strong> TOP-NOTCH DRYWALL LLC<br>
-        <strong>FEIN:</strong> 99-2288776<br>
-        <strong>Address:</strong> 123 Builder Lane, Springfield
-      </div>
-      <div style="text-align: right;">
-        <strong>Policy #:</strong> WC-99228877-XJ<br>
-        <strong>Eff Date:</strong> 15 MAR 2026<br>
-        <strong>Exp Date:</strong> 15 MAR 2027
-      </div>
-    </div>
-<div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin-bottom: 20px; border-radius: 4px;">
-      <h4 style="margin-top: 0; color: #003366; font-size: 0.9em; border-bottom: 1px solid #ccc; padding-bottom: 5px;">VERIFIED COVERAGE LIMITS</h4>
-      <table style="width: 100%; font-size: 0.9em;">
-        <tr>
-          <td><strong>Part One:</strong> Workers' Compensation</td>
-          <td style="text-align: right; font-weight: bold;">STATUTORY</td>
-        </tr>
-        <tr>
-          <td><strong>Part Two:</strong> Employers Liability (Each Accident)</td>
-          <td style="text-align: right; font-weight: bold;">$ 1,000,000.00</td>
-        </tr>
-        <tr>
-          <td><strong>Verified Employee Count:</strong></td>
-          <td style="text-align: right;">12 (Class 5445)</td>
-        </tr>
-      </table>
-    </div>
-<div style="font-size: 0.75em; color: #666; font-style: italic; text-align: center;">
-      This certificate is a verified extract of the active policy on file. Any unauthorized alteration of class codes or employee counts renders this document void.
-    </div>
-  </div>
-<div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #999; text-align: center;">
-    <div data-verify-line="comp" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
-      title="Demo only: Commercial insurers don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:libertymutual.com/v/WC99228877 <span verifiable-text="end" data-for="comp">]</span>
-    </div>
-    <div style="font-size: 0.7em; color: #999; margin-top: 10px;">
-      Scan to verify policy validity, payroll audit status, and sub-contractor compliance.
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="comp">[</span>LIBERTY MUTUAL INSURANCE
+Workers' Compensation & Employers Liability
+═══════════════════════════════════════════════════════════════════
+
+Insured:   TOP-NOTCH DRYWALL LLC           Policy #:  WC-99228877-XJ
+FEIN:      99-2288776                      Eff Date:  15 MAR 2026
+Address:   123 Builder Lane, Springfield   Exp Date:  15 MAR 2027
+
+VERIFIED COVERAGE LIMITS
+───────────────────────────────────────────────────────────────────
+Part One:  Workers' Compensation                          STATUTORY
+Part Two:  Employers Liability (Each Accident)       $ 1,000,000.00
+Verified Employee Count:                             12 (Class 5445)
+
+Unauthorized alteration of class codes or employee counts
+renders this document void.
+
+<span data-verify-line="comp">verify:libertymutual.com/v/WC99228877</span> <span verifiable-text="end" data-for="comp">]</span></pre>
 </div>
 
 ## Data Verified

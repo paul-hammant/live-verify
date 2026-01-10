@@ -14,65 +14,32 @@ In modern agriculture, the **Soil Analysis Report** is the "Blood Test" for a fi
 
 These reports are high-value documents. Farmers use them to secure **Crop Loans**, land buyers use them to judge **Property Value**, and increasingly, companies use them to verify **Carbon Credits**. Fraud is common: people "edit" a poor soil report to hide contamination or to inflate organic carbon levels to fraudulently claim "Green Subsidies" or carbon payouts. Verified hashes bind the **Field ID, Lab Metrics, and Timestamp** to the testing lab's domain (e.g., `agrolabs.com` or `soil-science.edu`).
 
-<div style="max-width: 650px; margin: 24px auto; font-family: 'Georgia', serif; border: 2px solid #3e2723; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <div style="background: #3e2723; color: #fff; padding: 25px; display: flex; justify-content: space-between; align-items: center;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;"><span verifiable-text="start" data-for="soil">[</span>AGRO-METRICS LABS</div>
-      <div style="font-size: 0.8em; opacity: 0.9;">Precision Agronomy & Environmental Analysis</div>
-    </div>
-    <div style="text-align: right;">
-      <div style="font-weight: bold; font-size: 1.1em;">ANALYSIS REPORT</div>
-      <div style="font-size: 0.7em;">Batch #: QC-992288</div>
-    </div>
-  </div>
-<div style="padding: 25px;">
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9em; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
-      <div>
-        <strong>Client:</strong> GREEN ACRES FAMILY FARM<br>
-        <strong>Field ID:</strong> North-42 (APN: 998-776)<br>
-        <strong>Crop Type:</strong> Winter Wheat
-      </div>
-      <div style="text-align: right;">
-        <strong>Sample Date:</strong> MARCH 15, 2026<br>
-        <strong>Lab Technician:</strong> Dr. Sarah Jenkins<br>
-        <strong>Method:</strong> Mehlich-3 Extraction
-      </div>
-    </div>
-<table style="width: 100%; border-collapse: collapse; font-size: 0.9em; margin-bottom: 20px;">
-      <tr style="border-bottom: 2px solid #3e2723; background: #efebe9;">
-        <th style="text-align: left; padding: 10px;">Test Component</th>
-        <th style="text-align: center; padding: 10px;">Result</th>
-        <th style="text-align: right; padding: 10px;">Rating</th>
-      </tr>
-      <tr style="border-bottom: 1px solid #eee;">
-        <td style="padding: 10px;">Soil pH</td>
-        <td style="text-align: center; padding: 10px;">6.8</td>
-        <td style="text-align: right; padding: 10px; color: #2e7d32; font-weight: bold;">OPTIMAL</td>
-      </tr>
-      <tr style="border-bottom: 1px solid #eee;">
-        <td style="padding: 10px;">Organic Matter (%)</td>
-        <td style="text-align: center; padding: 10px;">4.2%</td>
-        <td style="text-align: right; padding: 10px; color: #2e7d32; font-weight: bold;">HIGH</td>
-      </tr>
-      <tr style="border-bottom: 1px solid #eee;">
-        <td style="padding: 10px;">Nitrogen (N) - ppm</td>
-        <td style="text-align: center; padding: 10px;">12</td>
-        <td style="text-align: right; padding: 10px; color: #d32f2f; font-weight: bold;">DEFICIENT</td>
-      </tr>
-    </table>
-<div style="padding: 15px; background: #fffde7; border: 1px solid #fff59d; font-size: 0.85em; border-radius: 4px;">
-      <strong>Recommendations:</strong> Apply 80 lbs/acre Urea (46-0-0). Monitor pH levels post-harvest. No lime required.
-    </div>
-  </div>
-<div style="padding: 20px; background: #fdfdfd; border-top: 1px solid #eee; text-align: center;">
-    <div style="font-size: 0.7em; color: #666; margin-bottom: 10px; font-style: italic;">
-      This report is a verified digital copy of the original lab analysis. Alteration of metrics renders this report void.
-    </div>
-    <div data-verify-line="soil" style="border-top: 1px dashed #999; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #3e2723; font-weight: bold;"
-      title="Demo only: Soil labs don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:agrolabs.com/v/N42-992288 <span verifiable-text="end" data-for="soil">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="soil">[</span>AGRO-METRICS LABS
+Precision Agronomy & Environmental Analysis
+═══════════════════════════════════════════════════════════════════
+
+ANALYSIS REPORT                                  Batch #: QC-992288
+
+Client:     GREEN ACRES FAMILY FARM       Sample Date:  MARCH 15, 2026
+Field ID:   North-42 (APN: 998-776)       Lab Tech:     Dr. Sarah Jenkins
+Crop Type:  Winter Wheat                  Method:       Mehlich-3 Extraction
+
+TEST RESULTS
+───────────────────────────────────────────────────────────────────
+Test Component                           Result              Rating
+───────────────────────────────────────────────────────────────────
+Soil pH                                     6.8             OPTIMAL
+Organic Matter (%)                         4.2%                HIGH
+Nitrogen (N) - ppm                           12           DEFICIENT
+
+RECOMMENDATIONS: Apply 80 lbs/acre Urea (46-0-0). Monitor pH
+levels post-harvest. No lime required.
+
+This report is a verified digital copy of the original lab
+analysis. Alteration of metrics renders this report void.
+
+<span data-verify-line="soil">verify:agrolabs.com/v/N42-992288</span> <span verifiable-text="end" data-for="soil">]</span></pre>
 </div>
 
 ## Data Verified

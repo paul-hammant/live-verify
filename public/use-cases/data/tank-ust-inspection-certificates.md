@@ -14,61 +14,30 @@ An **Underground Storage Tank (UST)** certificate is the "Environmental Passport
 
 These documents are high-stakes environmental proofs. Fraud is common: owners often "edit" a failed leak test into a "PASS" to avoid the $50,000 cost of a tank replacement. Similarly, shady inspectors might "pencil whip" a report for a site they never visited. Verified hashes bind the **Facility ID, Tank Serial Numbers, and Leak Test Results** to the state's or the inspector's domain (e.g., `epa.gov` or `state-environment.gov`).
 
-<div style="max-width: 650px; margin: 24px auto; font-family: sans-serif; border: 3px solid #2e7d32; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <div style="background: #2e7d32; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 1px;"><span verifiable-text="start" data-for="ust">[</span>ENVIRONMENTAL PROTECTION AGENCY</div>
-      <div style="font-size: 0.8em; opacity: 0.9;">UST COMPLIANCE & SAFETY DIVISION</div>
-    </div>
-    <div style="font-size: 2em;">💧</div>
-  </div>
-<div style="padding: 25px;">
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
-      <div>
-        <strong>Facility:</strong> MAIN STREET FUEL CENTER<br>
-        <strong>EPA Facility ID:</strong> 99228877-XJ<br>
-        <strong>Address:</strong> 123 Main St, Springfield, USA
-      </div>
-      <div style="text-align: right;">
-        <strong>Certificate #:</strong> UST-2026-8844<br>
-        <strong>Issue Date:</strong> 15 MAR 2026<br>
-        <strong>Expires:</strong> 15 MAR 2027
-      </div>
-    </div>
-<div style="background: #f9f9f9; padding: 15px; border: 1px solid #ddd; border-radius: 4px; margin-bottom: 20px;">
-      <h4 style="margin-top: 0; color: #2e7d32; font-size: 0.9em; border-bottom: 1px solid #ccc; padding-bottom: 5px;">VERIFIED TANK STATUS</h4>
-      <table style="width: 100%; font-size: 0.85em;">
-        <tr style="border-bottom: 1px solid #eee;">
-          <td style="padding: 5px;"><strong>Tank ID #1 (Premium):</strong></td>
-          <td style="text-align: right; color: #2e7d32; font-weight: bold;">PASS - LEAK FREE</td>
-        </tr>
-        <tr style="border-bottom: 1px solid #eee;">
-          <td style="padding: 5px;"><strong>Tank ID #2 (Regular):</strong></td>
-          <td style="text-align: right; color: #2e7d32; font-weight: bold;">PASS - LEAK FREE</td>
-        </tr>
-        <tr>
-          <td style="padding: 5px;"><strong>Cathodic Protection:</strong></td>
-          <td style="text-align: right; font-weight: bold;">ACTIVE / TESTED</td>
-        </tr>
-      </table>
-    </div>
-<div style="display: flex; justify-content: space-between; align-items: flex-end; font-size: 0.85em;">
-      <div>
-        <div style="border-top: 1px solid #000; width: 200px; padding-top: 5px; font-style: italic;">Sarah J. Jenkins, Certified Inspector</div>
-        <div>License: #UST-992288 • Phone: 555-0199</div>
-      </div>
-      <div style="width: 80px; height: 80px; border: 2px solid #2e7d32; color: #2e7d32; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; text-align: center; transform: rotate(-5deg);">EPA<br>COMPLIANT</div>
-    </div>
-  </div>
-<div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #2e7d32; text-align: center;">
-    <div data-verify-line="ust" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
-      title="Demo only: EPA doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:epa.gov/ust/v/99228877XJ <span verifiable-text="end" data-for="ust">]</span>
-    </div>
-    <div style="font-size: 0.7em; color: #666; margin-top: 10px; font-style: italic;">
-      Scan to verify leak detection logs, insurance coverage, and inspector authority.
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="ust">[</span>ENVIRONMENTAL PROTECTION AGENCY
+UST Compliance & Safety Division
+═══════════════════════════════════════════════════════════════════
+
+Facility:        MAIN STREET FUEL CENTER   Certificate #: UST-2026-8844
+EPA Facility ID: 99228877-XJ               Issue Date:    15 MAR 2026
+Address:         123 Main St               Expires:       15 MAR 2027
+                 Springfield, USA
+
+VERIFIED TANK STATUS
+───────────────────────────────────────────────────────────────────
+Tank ID #1 (Premium):                              PASS - LEAK FREE
+Tank ID #2 (Regular):                              PASS - LEAK FREE
+Cathodic Protection:                               ACTIVE / TESTED
+
+                    ________________________
+                    Sarah J. Jenkins
+                    Certified Inspector
+                    License: #UST-992288
+
+                        [EPA COMPLIANT]
+
+<span data-verify-line="ust">verify:epa.gov/ust/v/99228877XJ</span> <span verifiable-text="end" data-for="ust">]</span></pre>
 </div>
 
 ## Data Verified

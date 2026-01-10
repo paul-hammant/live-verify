@@ -14,61 +14,30 @@ In high-volume supply chains, **Reverse Factoring** (or Supply Chain Finance) al
 
 These documents are the "Trade Collateral." Fraud is high-stakes: a dishonest supplier might create "Phantom Invoices" using a buyer's branding to trick a bank into releasing multimillion-dollar early payments. Similarly, they might "double-factor" the same invoice at two different banks. Verified hashes bind the **Invoice ID, Approved Amount, and Payment Date** to the funding bank's or the buyer's domain (e.g., `citidirect.com` or `hsbc.com`).
 
-<div style="max-width: 650px; margin: 24px auto; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <div style="background: #004a99; color: #fff; padding: 25px; display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid #000;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;"><span verifiable-text="start" data-for="factor">[</span>CITI SUPPLY CHAIN FINANCE</div>
-      <div style="font-size: 0.8em; opacity: 0.9;">Trade & Working Capital Solutions</div>
-    </div>
-    <div style="text-align: right;">
-      <div style="font-weight: bold; font-size: 0.9em;">APPROVAL ADVICE</div>
-      <div style="font-size: 0.7em;">Batch: SCF-2026-992288</div>
-    </div>
-  </div>
-<div style="padding: 25px;">
-    <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
-      <div>
-        <strong>Buyer:</strong> GOLIATH AEROSPACE CORP.<br>
-        <strong>Supplier:</strong> PRECISION PARTS LTD.<br>
-        <strong>Supplier ID:</strong> #992288-XJ
-      </div>
-      <div style="text-align: right;">
-        <strong>Total Approved:</strong> $ 1,250,000.00<br>
-        <strong>Early Pay Date:</strong> 15 MAR 2026<br>
-        <strong>Maturity Date:</strong> 15 MAY 2026
-      </div>
-    </div>
-<div style="background: #f9f9f9; padding: 15px; border: 1px solid #ddd; border-radius: 4px; margin-bottom: 20px;">
-      <h4 style="margin-top: 0; color: #004a99; font-size: 0.9em; border-bottom: 1px solid #ccc; padding-bottom: 5px;">VERIFIED APPROVED INVOICES</h4>
-      <table style="width: 100%; font-size: 0.85em;">
-        <tr>
-          <td><strong>INV-9922-A (Turbine Parts)</strong></td>
-          <td style="text-align: right; font-weight: bold;">$ 750,000.00</td>
-        </tr>
-        <tr>
-          <td><strong>INV-9922-B (Control Systems)</strong></td>
-          <td style="text-align: right; font-weight: bold;">$ 500,000.00</td>
-        </tr>
-        <tr style="border-top: 1px solid #ddd;">
-          <td><strong>Total Early Payment (Verified):</strong></td>
-          <td style="text-align: right; font-weight: bold; color: #2e7d32;">$ 1,225,000.00</td>
-        </tr>
-      </table>
-      <div style="font-size: 0.75em; color: #666; margin-top: 10px; text-align: center;">(Total minus 2.0% Discounting Charge)</div>
-    </div>
-<div style="font-size: 0.8em; color: #666; font-style: italic; border-top: 1px solid #eee; padding-top: 10px;">
-      This approval advice is a verified extract of the CitiDirect SCF portal. Any alteration of invoice amounts or dates renders this financing void.
-    </div>
-  </div>
-<div style="padding: 20px; background: #f5f5f5; border-top: 1px solid #004a99; text-align: center;">
-    <div data-verify-line="factor" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
-      title="Demo only: Banks don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:citi.com/scf/v/SCF99228877 <span verifiable-text="end" data-for="factor">]</span>
-    </div>
-    <div style="font-size: 0.7em; color: #777; margin-top: 10px;">
-      Scan to verify invoice approval status, discount rates, and upcoming maturity dates.
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="factor">[</span>CITI SUPPLY CHAIN FINANCE
+Trade & Working Capital Solutions
+═══════════════════════════════════════════════════════════════════
+
+APPROVAL ADVICE                              Batch: SCF-2026-992288
+
+Buyer:        GOLIATH AEROSPACE CORP.   Total Approved: $ 1,250,000.00
+Supplier:     PRECISION PARTS LTD.      Early Pay Date: 15 MAR 2026
+Supplier ID:  #992288-XJ                Maturity Date:  15 MAY 2026
+
+VERIFIED APPROVED INVOICES
+───────────────────────────────────────────────────────────────────
+INV-9922-A (Turbine Parts)                             $ 750,000.00
+INV-9922-B (Control Systems)                           $ 500,000.00
+───────────────────────────────────────────────────────────────────
+Total Early Payment (Verified):                      $ 1,225,000.00
+                            (Total minus 2.0% Discounting Charge)
+
+This approval advice is a verified extract of the CitiDirect SCF
+portal. Any alteration of invoice amounts or dates renders this
+financing void.
+
+<span data-verify-line="factor">verify:citi.com/scf/v/SCF99228877</span> <span verifiable-text="end" data-for="factor">]</span></pre>
 </div>
 
 ## Data Verified

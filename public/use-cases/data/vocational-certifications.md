@@ -14,43 +14,28 @@ In the industrial world, a **Vocational Certificate** is the proof that a worker
 
 The problem is that "Trade School" certificates are easily forged. Shady contractors or workers might "edit" a certificate to turn a "Basic Welding" pass into a "Certified Nuclear Welder" to get onto a high-paying project. In high-risk fields (e.g., oil rigs or aircraft maintenance), a fake certification can lead to catastrophic structural failures. Verified hashes bind the **Trade Code, Completion Date, and Instructor ID** to the technical school's or the standard body's domain (e.g., `aws.org` or `lincolntec.edu`).
 
-<div style="max-width: 650px; margin: 24px auto; font-family: 'Helvetica Neue', Arial, sans-serif; border: 4px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-  <div style="background: #333; color: #fff; padding: 25px; display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid #d32f2f;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;"><span verifiable-text="start" data-for="vocation">[</span>LINCOLN TECH ACADEMY</div>
-      <div style="font-size: 0.8em; opacity: 0.9; text-transform: uppercase;">Institute of Skilled Trades & Applied Science</div>
-    </div>
-    <div style="width: 60px; height: 60px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-weight: bold; font-size: 0.7em; text-align: center; border: 2px solid #333;">LT<br>SEAL</div>
-  </div>
-<div style="padding: 25px;">
-    <div style="text-align: center; margin-bottom: 25px;">
-      <h2 style="margin: 0; color: #000; letter-spacing: 1px;">CERTIFICATE OF TECHNICAL COMPETENCY</h2>
-      <div style="font-size: 0.9em; color: #666; margin-top: 5px;">Credential ID: LT-2026-992288</div>
-    </div>
-<div style="font-size: 1.1em; line-height: 1.6; color: #333; text-align: center; margin-bottom: 25px;">
-      <p>This is to certify that <strong>JOHN JACOB DOE</strong> has successfully met the standards of training and assessment in the field of:</p>
-      <div style="font-size: 1.4em; font-weight: bold; color: #d32f2f; text-transform: uppercase;">Advanced Structural Welding (AWS D1.1)</div>
-    </div>
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9em; border-top: 1px solid #eee; border-bottom: 1px solid #eee; padding: 15px 0;">
-      <div style="text-align: left;">
-        <strong>Date Conferred:</strong> MARCH 15, 2026<br>
-        <strong>Hours Completed:</strong> 420 Shop Hours
-      </div>
-      <div style="text-align: right;">
-        <strong>Campus:</strong> Springfield East<br>
-        <strong>Lead Instructor:</strong> David R. Chen
-      </div>
-    </div>
-  </div>
-<div style="padding: 20px; background: #f9f9f9; border-top: 1px dashed #999; text-align: center;">
-    <div data-verify-line="vocation" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
-      title="Demo only: Technical schools don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:lincolntech.edu/v/LT992288 <span verifiable-text="end" data-for="vocation">]</span>
-    </div>
-    <div style="font-size: 0.7em; color: #999; margin-top: 10px; font-style: italic;">
-      Scan to verify skill endorsements, safety clearances, and school accreditation.
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="vocation">[</span>LINCOLN TECH ACADEMY
+Institute of Skilled Trades & Applied Science
+═══════════════════════════════════════════════════════════════════
+
+                CERTIFICATE OF TECHNICAL COMPETENCY
+                    Credential ID: LT-2026-992288
+
+                   This is to certify that
+
+                       JOHN JACOB DOE
+
+     has successfully met the standards of training and assessment
+                        in the field of:
+
+             ADVANCED STRUCTURAL WELDING (AWS D1.1)
+
+───────────────────────────────────────────────────────────────────
+Date Conferred:   MARCH 15, 2026          Campus:     Springfield East
+Hours Completed:  420 Shop Hours          Instructor: David R. Chen
+
+<span data-verify-line="vocation">verify:lincolntech.edu/v/LT992288</span> <span verifiable-text="end" data-for="vocation">]</span></pre>
 </div>
 
 ## Data Verified

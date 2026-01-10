@@ -14,50 +14,28 @@ A **Property Appraisal** is the professional "Opinion of Value" for a piece of r
 
 Because the appraisal determines how much money a bank will lend, it is a primary target for **Valuation Fraud**. Shady owners or "Fix-and-Flip" scammers often "edit" an appraisal to turn a $400,000 value into a $600,000 one to bypass equity requirements. Similarly, they might use a fake "Certified" letter from a non-existent appraiser. Verified hashes bind the **Final Opinion of Value, Property Condition, and Appraiser License** to the appraisal firm's or the state's domain (e.g., `corelogic.com` or `state-appraisal-board.gov`).
 
-<div style="max-width: 650px; margin: 24px auto; font-family: sans-serif; border: 1px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <div style="background: #002366; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #000;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="appraise">[</span>SUMMIT APPRAISAL GROUP</div>
-      <div style="font-size: 0.8em; opacity: 0.9;">USPAP Compliant Valuations • License: #TX-9922</div>
-    </div>
-    <div style="text-align: right;">
-      <div style="font-weight: bold; font-size: 0.9em;">APPRAISAL SUMMARY</div>
-      <div style="font-size: 0.7em;">Ref: SAP-2026-8844</div>
-    </div>
-  </div>
-<div style="padding: 25px;">
-    <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
-      <div>
-        <strong>Property Address:</strong><br>
-        123 MAPLE STREET, SPRINGFIELD, USA<br>
-        <strong>Property Type:</strong> Single Family Res
-      </div>
-      <div style="text-align: right;">
-        <strong>Effective Date:</strong> 15 MAR 2026<br>
-        <strong>Inspection Date:</strong> 12 MAR 2026<br>
-        <strong>Client:</strong> GOLIATH MORTGAGE
-      </div>
-    </div>
-<div style="background: #f0f4f8; border: 1px solid #002366; padding: 20px; text-align: center; margin-bottom: 20px;">
-      <div style="font-size: 0.8em; color: #002366; text-transform: uppercase; font-weight: bold; margin-bottom: 5px;">Indicated Opinion of Value:</div>
-      <div style="font-size: 2.2em; font-weight: bold; color: #000;">$ 545,000.00</div>
-      <div style="font-size: 0.8em; color: #666; margin-top: 5px;">Five Hundred Forty-Five Thousand Dollars</div>
-    </div>
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.85em;">
-      <div><strong>Overall Condition:</strong> C2 (Very Good)</div>
-      <div style="text-align: right;"><strong>Gross Living Area:</strong> 2,450 Sq Ft</div>
-    </div>
-  </div>
-<div style="padding: 20px; background: #f9f9f9; border-top: 1px solid #eee; display: flex; justify-content: space-between; align-items: flex-end;">
-    <div>
-      <div style="border-top: 1px solid #000; width: 180px; padding-top: 5px; font-style: italic;">Robert J. Miller, Certified Appraiser</div>
-      <div style="font-size: 0.7em; color: #777;">License: #TX-992288 • Exp: 2027</div>
-    </div>
-    <div data-verify-line="appraise" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #002366; font-weight: bold;"
-      title="Demo only: Appraisal firms don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:summit-eval.com/v/SAP20268844 <span verifiable-text="end" data-for="appraise">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="appraise">[</span>SUMMIT APPRAISAL GROUP
+USPAP Compliant Valuations                      License: #TX-9922
+═══════════════════════════════════════════════════════════════════
+APPRAISAL SUMMARY                                 Ref: SAP-2026-8844
+
+Property Address:                      Effective Date:  15 MAR 2026
+  123 MAPLE STREET                     Inspection Date: 12 MAR 2026
+  SPRINGFIELD, USA                     Client:          GOLIATH MORTGAGE
+Property Type: Single Family Res
+
+              INDICATED OPINION OF VALUE:
+                    $ 545,000.00
+         (Five Hundred Forty-Five Thousand Dollars)
+
+Overall Condition:   C2 (Very Good)    Gross Living Area: 2,450 Sq Ft
+
+_________________________
+Robert J. Miller, Certified Appraiser
+License: #TX-992288 - Exp: 2027
+
+<span data-verify-line="appraise">verify:summit-eval.com/v/SAP20268844</span> <span verifiable-text="end" data-for="appraise">]</span></pre>
 </div>
 
 ## Data Verified

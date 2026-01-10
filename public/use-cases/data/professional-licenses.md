@@ -14,36 +14,18 @@ A **Professional License** is the legal authorization to practice in a high-stak
 
 The problem is that physical licenses—especially the wallet-sized cards carried by practitioners—are easily forged. Even a real card can't show if a license was revoked yesterday for misconduct. OCR-to-hash allows a patient, client, or employer to scan the practitioner's ID card to verify: **"Is this person currently authorized to practice in this state, and are there any active restrictions on their license?"**
 
-<div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
-  <div style="background: #1a237e; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.1em; letter-spacing: 1px;"><span verifiable-text="start" data-for="prof">[</span>MEDICAL BOARD</div>
-      <div style="font-size: 0.75em; opacity: 0.9;">STATE OF NEW YORK</div>
-    </div>
-    <div style="font-size: 1.5em;">⚖️</div>
-  </div>
-<div style="padding: 20px; display: flex; background: #fff;">
-    <div style="width: 100px; margin-right: 15px;">
-      <div style="width: 100px; height: 125px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #999; font-size: 0.7em; text-align: center;">[PHOTO ID]</div>
-    </div>
-    <div style="flex-grow: 1;">
-      <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Practitioner Name</div>
-      <div style="font-size: 1.2em; font-weight: bold; margin: 0 0 10px 0; color: #1a237e;">DR. SARAH J. DOE</div>
-<div style="font-size: 0.75em; color: #777; text-transform: uppercase;">License #</div>
-      <div style="font-size: 1em; font-weight: bold; margin: 0 0 10px 0;">ID: NY-992288-X</div>
-<div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Profession</div>
-      <div style="font-size: 0.9em; font-weight: bold;">Physician & Surgeon</div>
-    </div>
-  </div>
-<div style="padding: 0 20px 20px 20px; background: #fff;">
-    <div style="font-size: 0.7em; color: #555; text-align: center; margin-bottom: 10px; line-height: 1.3;">
-      Authorized to practice medicine in the State of New York. Scan to verify current license status and disciplinary history.
-    </div>
-    <div data-verify-line="prof" style="border-top: 1px dashed #999; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #1a237e; text-align: center; font-weight: bold;"
-      title="Demo only: State boards don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:nysed.gov/v/med/NY992288X <span verifiable-text="end" data-for="prof">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="prof">[</span>MEDICAL BOARD
+STATE OF NEW YORK
+═══════════════════════════════════════════════════════════════════
+
+Practitioner Name:    DR. SARAH J. DOE
+License #:            NY-992288-X
+Profession:           Physician & Surgeon
+
+Authorized to practice medicine in the State of New York.
+
+<span data-verify-line="prof">verify:nysed.gov/v/med/NY992288X</span> <span verifiable-text="end" data-for="prof">]</span></pre>
 </div>
 
 ## Data Verified

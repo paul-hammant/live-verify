@@ -14,45 +14,23 @@ In the energy market, a **Renewable Energy Certificate (REC)** is the proof that
 
 The problem is that a REC can only be used once. "Double-Counting" is a massive fraud where a solar farm sells the same MWh of energy to two different companies. Similarly, shady firms create fake "Green Certificates" to greenwash their carbon footprint. Verified hashes bind the **Generator ID, MWh Amount, and Vintage Year** to the tracking registry's domain (e.g., `mirecs.org` or `wregis.org`).
 
-<div style="max-width: 650px; margin: 24px auto; font-family: 'Helvetica Neue', Arial, sans-serif; border: 2px solid #2e7d32; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <div style="background: #2e7d32; color: #fff; padding: 25px; display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid #1b5e20;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;"><span verifiable-text="start" data-for="rec">[</span>NORTH AMERICAN RENEWABLE REGISTRY</div>
-      <div style="font-size: 0.8em; opacity: 0.9; text-transform: uppercase;">Official Certificate of Generation</div>
-    </div>
-    <div style="font-size: 2em;">☀️</div>
-  </div>
-<div style="padding: 25px;">
-    <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
-      <div>
-        <strong>Generator:</strong> SUNNY-RIDGE SOLAR ARRAY<br>
-        <strong>Facility ID:</strong> #992288-XJ<br>
-        <strong>Location:</strong> Kern County, CA
-      </div>
-      <div style="text-align: right;">
-        <strong>Certificate ID:</strong> REC-2026-8844<br>
-        <strong>Vintage:</strong> 2026-Q1<br>
-        <strong>Status:</strong> <span style="color: #2e7d32; font-weight: bold;">ACTIVE</span>
-      </div>
-    </div>
-<div style="background: #f1f8e9; border: 1px solid #c5e1a5; padding: 20px; text-align: center; border-radius: 4px; margin-bottom: 20px;">
-      <div style="font-size: 0.8em; color: #558b2f; text-transform: uppercase; font-weight: bold;">Renewable Energy Quantity:</div>
-      <div style="font-size: 2.5em; font-weight: bold; color: #1b5e20;">1,000.00 MWh</div>
-      <div style="font-size: 0.8em; color: #666; margin-top: 5px;">One Thousand Megawatt-Hours</div>
-    </div>
-<div style="font-size: 0.8em; color: #666; line-height: 1.4; font-style: italic;">
-      <strong>Fuel Type:</strong> Solar Photovoltaic. This certificate represents the environmental attributes of energy produced and injected into the CAISO balancing authority area.
-    </div>
-  </div>
-<div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #999; text-align: center;">
-    <div data-verify-line="rec" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
-      title="Demo only: Energy registries don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:wregis.org/v/REC99228877 <span verifiable-text="end" data-for="rec">]</span>
-    </div>
-    <div style="font-size: 0.7em; color: #999; margin-top: 10px;">
-      Scan to verify generation timestamps, grid injection status, and retirement ownership.
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="rec">[</span>NORTH AMERICAN RENEWABLE REGISTRY
+Official Certificate of Generation
+═══════════════════════════════════════════════════════════════════
+
+Generator:    SUNNY-RIDGE SOLAR ARRAY     Certificate ID: REC-2026-8844
+Facility ID:  #992288-XJ                  Vintage:        2026-Q1
+Location:     Kern County, CA             Status:         ACTIVE
+
+              RENEWABLE ENERGY QUANTITY:
+                    1,000.00 MWh
+              (One Thousand Megawatt-Hours)
+
+Fuel Type: Solar Photovoltaic
+CAISO balancing authority area.
+
+<span data-verify-line="rec">verify:wregis.org/v/REC99228877</span> <span verifiable-text="end" data-for="rec">]</span></pre>
 </div>
 
 ## Data Verified

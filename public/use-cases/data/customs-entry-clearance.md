@@ -19,50 +19,27 @@ It proves:
 
 Verification is critical for lenders who use "Imported Inventory" as collateral. A verified 7501 proves that the goods were legally imported and that the government doesn't have a "Senior Lien" for unpaid duties.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <div style="background: #002d62; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.1em;"><span verifiable-text="start" data-for="customs">[</span>U.S. CUSTOMS AND BORDER PROTECTION</div>
-      <div style="font-size: 0.8em;">Entry Summary / Proof of Clearance</div>
-    </div>
-    <div style="width: 40px; height: 40px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #002d62; font-weight: bold; font-size: 0.7em; text-align: center;">CBP</div>
-  </div>
-<div style="padding: 25px;">
-    <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
-      <div style="border: 1px solid #000; padding: 5px 10px; font-weight: bold;">CBP 7501</div>
-      <div style="text-align: right; font-family: monospace;">Entry #: 998-8776655-4</div>
-    </div>
-<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
-      <p><strong>Importer of Record:</strong> GLOBAL LOGISTICS HUB, LLC<br>
-      <strong>Entry Port:</strong> 2704 (San Francisco, CA)<br>
-      <strong>Entry Date:</strong> March 15, 2026</p>
-<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
-        <tr style="background: #f0f4f8; border-bottom: 2px solid #002d62;">
-          <th style="text-align: left; padding: 8px;">Description</th>
-          <th style="text-align: right; padding: 8px;">Duty Paid</th>
-        </tr>
-        <tr>
-          <td style="padding: 8px; border-bottom: 1px solid #eee;">Machinery Parts (HS 8483)</td>
-          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 12,450.00</td>
-        </tr>
-        <tr>
-          <td style="padding: 8px; border-bottom: 1px solid #eee;">Electronic Integrated Circuits</td>
-          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 0.00 (Duty-Free)</td>
-        </tr>
-        <tr style="font-weight: bold; background: #e8eaf6;">
-          <td style="padding: 8px;">TOTAL REVENUE COLLECTED:</td>
-          <td style="text-align: right; padding: 8px;">$ 12,450.00</td>
-        </tr>
-      </table>
-    </div>
-<div style="margin-top: 25px; padding: 10px; background: #f9f9f9; border: 1px solid #eee; font-size: 0.8em; color: #555;">
-      <strong>Status:</strong> RELEASED & SETTLED. All duties and fees have been paid.
-    </div>
-<div data-verify-line="customs" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
-      title="Demo only: CBP doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:cbp.gov/entry/v/99887766554 <span verifiable-text="end" data-for="customs">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="customs">[</span>U.S. CUSTOMS AND BORDER PROTECTION
+Entry Summary / Proof of Clearance                        CBP 7501
+═══════════════════════════════════════════════════════════════════
+
+Entry #:            998-8776655-4
+Importer of Record: GLOBAL LOGISTICS HUB, LLC
+Entry Port:         2704 (San Francisco, CA)
+Entry Date:         March 15, 2026
+
+Description                                              Duty Paid
+───────────────────────────────────────────────────────────────────
+Machinery Parts (HS 8483)                              $ 12,450.00
+Electronic Integrated Circuits                    $ 0.00 (Duty-Free)
+───────────────────────────────────────────────────────────────────
+TOTAL REVENUE COLLECTED:                               $ 12,450.00
+
+Status: RELEASED & SETTLED
+All duties and fees have been paid.
+
+<span data-verify-line="customs">verify:cbp.gov/entry/v/99887766554</span> <span verifiable-text="end" data-for="customs">]</span></pre>
 </div>
 
 ## Data Verified

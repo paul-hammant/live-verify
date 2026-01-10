@@ -16,39 +16,28 @@ If you donate $1,000 to a charity, you can lower your income taxes by $1,000. Bu
 
 Verified hashes allow the IRS to scan a receipt and see "VERIFIED" on the charity's own domain. This stops "Photoshopped" receipts and ensures that only legitimate donors get the tax break.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
-  <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 25px;">
-    <div style="font-weight: bold; font-size: 1.4em;"><span verifiable-text="start" data-for="donate">[</span>AMERICAN RED CROSS</div>
-    <div style="font-size: 0.85em; color: #666;">OFFICIAL CHARITABLE CONTRIBUTION RECEIPT</div>
-  </div>
-<div style="font-size: 1em; line-height: 1.6; color: #333;">
-    <p>Dear <strong>JOHN JACOB DOE</strong>,</p>
-    <p>Thank you for your generous gift. This letter confirms that the American Red Cross received your contribution as described below:</p>
-<div style="background: #f9f9f9; padding: 15px; border: 1px solid #eee; margin: 20px 0;">
-      <table style="width: 100%; font-size: 0.95em;">
-        <tr>
-          <td><strong>Donation Amount:</strong></td>
-          <td style="text-align: right;">$ 1,000.00</td>
-        </tr>
-        <tr>
-          <td><strong>Date Received:</strong></td>
-          <td style="text-align: right;">December 15, 2025</td>
-        </tr>
-        <tr>
-          <td><strong>Donation Type:</strong></td>
-          <td style="text-align: right;">Cash / Credit Card</td>
-        </tr>
-      </table>
-    </div>
-<p style="font-size: 0.85em; font-style: italic;">No goods or services were provided in exchange for this contribution. The American Red Cross is a 501(c)(3) organization. Federal Tax ID: 12-3456789.</p>
-  </div>
-<div style="margin-top: 40px; text-align: right;">
-    <div style="border-top: 1px solid #000; width: 200px; display: inline-block; padding-top: 5px; font-size: 0.9em;">Treasurer, ARC</div>
-  </div>
-<div data-verify-line="donate" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
-      title="Demo only: Red Cross doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:redcross.org/receipts/v/ARC-2025-9922 <span verifiable-text="end" data-for="donate">]</span>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="donate">[</span>AMERICAN RED CROSS
+OFFICIAL CHARITABLE CONTRIBUTION RECEIPT
+
+Dear JOHN JACOB DOE,
+
+Thank you for your generous gift. This letter confirms that
+the American Red Cross received your contribution as
+described below:
+
+Donation Amount:    $ 1,000.00
+Date Received:      December 15, 2025
+Donation Type:      Cash / Credit Card
+
+No goods or services were provided in exchange for this
+contribution. The American Red Cross is a 501(c)(3)
+organization. Federal Tax ID: 12-3456789.
+
+                                    ───────────────────────
+                                    Treasurer, ARC
+
+<span data-verify-line="donate">verify:redcross.org/receipts/v/ARC-2025-9922</span> <span verifiable-text="end" data-for="donate">]</span></pre>
 </div>
 
 ## Data Verified

@@ -19,58 +19,29 @@ Whoever holds the original "negotiable" B/L effectively owns the cargo. This mak
 
 Losing the original B/L is a disaster (requires court bonds to fix), which is why verification of the paper is so critical.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 1px solid #000; background: #fff; padding: 0;">
-  <div style="background: #002d62; color: #fff; padding: 10px; display: flex; justify-content: space-between; align-items: center;">
-    <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="bol">[</span>MAERSK LINE</div>
-    <div style="font-size: 0.8em; text-align: right;">B/L No: MAE-9988776655</div>
-  </div>
-<div style="padding: 10px; font-size: 0.8em;">
-    <div style="display: flex; border-bottom: 1px solid #000;">
-      <div style="width: 50%; border-right: 1px solid #000; padding: 5px;">
-        <strong>Shipper:</strong><br>
-        Global Coffee Exporters<br>
-        Santos, Brazil
-      </div>
-      <div style="width: 50%; padding: 5px;">
-        <strong>Consignee:</strong><br>
-        Artisan Roasters Corp.<br>
-        Brooklyn, NY, USA
-      </div>
-    </div>
-<div style="display: flex; border-bottom: 1px solid #000; background: #f9f9f9;">
-      <div style="width: 33%; border-right: 1px solid #000; padding: 5px;">
-        <strong>Vessel:</strong><br>
-        MAERSK MC-KINNEY
-      </div>
-      <div style="width: 33%; border-right: 1px solid #000; padding: 5px;">
-        <strong>Port of Loading:</strong><br>
-        SANTOS, BRAZIL
-      </div>
-      <div style="width: 34%; padding: 5px;">
-        <strong>Port of Discharge:</strong><br>
-        NEW YORK, USA
-      </div>
-    </div>
-<table style="width: 100%; border-collapse: collapse; margin-top: 5px;">
-      <tr style="border-bottom: 1px solid #000;">
-        <th style="text-align: left; padding: 2px;">Container No.</th>
-        <th style="text-align: left; padding: 2px;">Description</th>
-        <th style="text-align: right; padding: 2px;">Weight (KG)</th>
-      </tr>
-      <tr>
-        <td style="padding: 2px;">MSKU 123456-7</td>
-        <td style="padding: 2px;">200 BAGS ARABICA COFFEE</td>
-        <td style="text-align: right; padding: 2px;">12,000.00</td>
-      </tr>
-    </table>
-<div style="margin-top: 15px; border-top: 1px solid #000; padding-top: 5px; font-style: italic;">
-      RECEIVED by the Carrier the Goods as specified above in apparent good order and condition.
-    </div>
-<div data-verify-line="bol" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #555; text-align: center;"
-      title="Demo only: Maersk doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:maersk.com/bl/v/9988776655 <span verifiable-text="end" data-for="bol">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="bol">[</span>MAERSK LINE                                   B/L No: MAE-9988776655
+BILL OF LADING
+═══════════════════════════════════════════════════════════════════
+
+Shipper:            Global Coffee Exporters
+                    Santos, Brazil
+
+Consignee:          Artisan Roasters Corp.
+                    Brooklyn, NY, USA
+
+Vessel:             MAERSK MC-KINNEY
+Port of Loading:    SANTOS, BRAZIL
+Port of Discharge:  NEW YORK, USA
+
+Container No.       Description                         Weight (KG)
+───────────────────────────────────────────────────────────────────
+MSKU 123456-7       200 BAGS ARABICA COFFEE              12,000.00
+
+RECEIVED by the Carrier the Goods as specified above in
+apparent good order and condition.
+
+<span data-verify-line="bol">verify:maersk.com/bl/v/9988776655</span> <span verifiable-text="end" data-for="bol">]</span></pre>
 </div>
 
 ## Data Verified
@@ -152,66 +123,37 @@ The **Ocean Bill of Lading (B/L)** is arguably the most critical document in glo
 
 This "Negotiable" status makes the B/L a prime target for high-stakes fraud. Criminals use "Phantom B/Ls" to steal entire shiploads of cargo, or "Double-Finance" the same B/L at two different banks to get two multimillion-dollar loans. Verified hashes bind the **Container IDs, Vessel Name, and Consignee** to the shipping line's domain (e.g., `maersk.com`).
 
-<div style="max-width: 700px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 1px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-  <div style="background: #002d62; color: #fff; padding: 15px; display: flex; justify-content: space-between; align-items: flex-end;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;"><span verifiable-text="start" data-for="bl">[</span>MAERSK LINE</div>
-      <div style="font-size: 0.7em; opacity: 0.8;">A.P. Moller-Maersk A/S • Esplanaden 50, Copenhagen</div>
-    </div>
-    <div style="text-align: right;">
-      <div style="font-weight: bold; font-size: 1.1em;">BILL OF LADING</div>
-      <div style="font-size: 0.8em; opacity: 0.9;">NEGOTIABLE ORIGINAL</div>
-    </div>
-  </div>
-<div style="display: grid; grid-template-columns: 1fr 1fr; border-bottom: 1px solid #000;">
-    <div style="padding: 10px; border-right: 1px solid #000; font-size: 0.75em; line-height: 1.3;">
-      <strong style="text-transform: uppercase; font-size: 0.8em; color: #666;">Shipper:</strong><br>
-      GLOBAL COFFEE EXPORTERS LTD.<br>
-      AVENIDA PAULISTA 1234<br>
-      SÃO PAULO, BRAZIL
-    </div>
-    <div style="padding: 10px; font-size: 0.75em; line-height: 1.3;">
-      <strong style="text-transform: uppercase; font-size: 0.8em; color: #666;">B/L Number:</strong><br>
-      <div style="font-size: 1.2em; font-weight: bold;">MAE-9988776655</div>
-    </div>
-  </div>
-<div style="padding: 10px; border-bottom: 1px solid #000; font-size: 0.75em; line-height: 1.3;">
-    <strong style="text-transform: uppercase; font-size: 0.8em; color: #666;">Consignee (to the order of):</strong><br>
-    JPMORGAN CHASE BANK, N.A.<br>
-    FOR THE ACCOUNT OF: NEW YORK ROASTERS LLC
-  </div>
-<div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; border-bottom: 1px solid #000; font-size: 0.7em; text-transform: uppercase; text-align: center;">
-    <div style="padding: 5px; border-right: 1px solid #000;"><strong>Vessel:</strong><br>Maersk Mc-Kinney</div>
-    <div style="padding: 5px; border-right: 1px solid #000;"><strong>Port of Loading:</strong><br>Santos, Brazil</div>
-    <div style="padding: 5px; border-right: 1px solid #000;"><strong>Port of Discharge:</strong><br>New York, USA</div>
-    <div style="padding: 5px;"><strong>Final Destination:</strong><br>Newark, NJ</div>
-  </div>
-<div style="padding: 15px;">
-    <table style="width: 100%; border-collapse: collapse; font-size: 0.8em;">
-      <tr style="border-bottom: 1px solid #eee;">
-        <th style="text-align: left; padding: 5px;">Container / Seal No.</th>
-        <th style="text-align: left; padding: 5px;">Description of Packages and Goods</th>
-        <th style="text-align: right; padding: 5px;">Gross Weight</th>
-      </tr>
-      <tr>
-        <td style="padding: 10px 5px;">MSKU-992288-7<br>ML-BR-442211</td>
-        <td style="padding: 10px 5px;">320 BAGS ARABICA COFFEE BEANS<br>(GRADE A / WASHED / 2026 CROP)</td>
-        <td style="padding: 10px 5px; text-align: right;">19,200 KG</td>
-      </tr>
-    </table>
-  </div>
-<div style="margin: 20px; padding: 15px; border: 2px solid #d00; border-radius: 4px; color: #d00; text-align: center; font-weight: bold; transform: rotate(-1deg); opacity: 0.8;">
-    RELEASE CARGO ONLY UPON PRESENTATION OF THIS ORIGINAL DOCUMENT
-  </div>
-<div style="padding: 20px; background: #f9f9f9; border-top: 1px solid #000;">
-    <div style="font-size: 0.7em; color: #555; text-align: center; margin-bottom: 10px; font-style: italic;">
-      Verification confirms the issuance of this title document by the carrier. Alteration of cargo details renders this B/L void.
-    </div>
-    <div data-verify-line="bl" style="border-top: 1px dashed #999; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #002d62; text-align: center; font-weight: bold;"
-      title="Demo only: Maersk doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:maersk.com/bl/v/MAE9988776655 <span verifiable-text="end" data-for="bl">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="bl">[</span>MAERSK LINE
+A.P. Moller-Maersk A/S - Esplanaden 50, Copenhagen
+BILL OF LADING - NEGOTIABLE ORIGINAL
+═══════════════════════════════════════════════════════════════════
+
+B/L Number:         MAE-9988776655
+
+Shipper:            GLOBAL COFFEE EXPORTERS LTD.
+                    AVENIDA PAULISTA 1234
+                    SAO PAULO, BRAZIL
+
+Consignee:          TO THE ORDER OF: JPMORGAN CHASE BANK, N.A.
+                    FOR THE ACCOUNT OF: NEW YORK ROASTERS LLC
+
+Vessel:             Maersk Mc-Kinney
+Port of Loading:    Santos, Brazil
+Port of Discharge:  New York, USA
+Final Destination:  Newark, NJ
+
+Container / Seal No.    Description                       Gross Weight
+───────────────────────────────────────────────────────────────────
+MSKU-992288-7           320 BAGS ARABICA COFFEE BEANS        19,200 KG
+ML-BR-442211            (GRADE A / WASHED / 2026 CROP)
+
+*** RELEASE CARGO ONLY UPON PRESENTATION OF THIS ORIGINAL DOCUMENT ***
+
+Verification confirms the issuance of this title document by the
+carrier. Alteration of cargo details renders this B/L void.
+
+<span data-verify-line="bl">verify:maersk.com/bl/v/MAE9988776655</span> <span verifiable-text="end" data-for="bl">]</span></pre>
 </div>
 
 ## Data Verified
@@ -284,64 +226,33 @@ A **Sea Waybill** is a non-negotiable receipt for cargo loaded onto an ocean ves
 
 While simpler than a B/L, it is still a high-stakes legal proof of shipment. Fraud is common in **Trade Finance**: an exporter might "edit" a Sea Waybill to show 1,000 pallets instead of 100 to get a higher payout from a buyer or a bank. Similarly, shady shippers might hide the presence of dangerous goods. Verified hashes bind the **Container IDs, Gross Weight, and Shipped-on-Board Date** to the carrier's domain (e.g., `maersk.com` or `msc.com`).
 
-<div style="max-width: 650px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 1px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <div style="background: #002d62; color: #fff; padding: 15px; display: flex; justify-content: space-between; align-items: flex-end;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;"><span verifiable-text="start" data-for="way">[</span>MAERSK LINE</div>
-      <div style="font-size: 0.7em; opacity: 0.8; text-transform: uppercase;">A.P. Moller-Maersk A/S • Copenhagen</div>
-    </div>
-    <div style="text-align: right;">
-      <div style="font-weight: bold; font-size: 1.1em;">SEA WAYBILL</div>
-      <div style="font-size: 0.7em; opacity: 0.9;">NON-NEGOTIABLE RECEIPT</div>
-    </div>
-  </div>
-<div style="display: grid; grid-template-columns: 1fr 1fr; border-bottom: 1px solid #000;">
-    <div style="padding: 10px; border-right: 1px solid #000; font-size: 0.75em; line-height: 1.3;">
-      <strong style="text-transform: uppercase; color: #666;">Shipper:</strong><br>
-      SHENZHEN ELECTRONICS MFG LTD.<br>
-      FUTIAN DISTRICT, SHENZHEN, CN
-    </div>
-    <div style="padding: 10px; font-size: 0.75em; line-height: 1.3;">
-      <strong style="text-transform: uppercase; color: #666;">Waybill Number:</strong><br>
-      <div style="font-size: 1.2em; font-weight: bold;">MAE-9988-7766-55</div>
-    </div>
-  </div>
-<div style="padding: 10px; border-bottom: 1px solid #000; font-size: 0.75em; line-height: 1.3;">
-    <strong style="text-transform: uppercase; color: #666;">Consignee:</strong><br>
-    GLOBAL RETAIL IMPORTS LLC, LOS ANGELES, CA, USA
-  </div>
-<div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; border-bottom: 1px solid #000; font-size: 0.7em; text-transform: uppercase; text-align: center;">
-    <div style="padding: 5px; border-right: 1px solid #000;"><strong>Vessel:</strong><br>Maersk Sealand</div>
-    <div style="padding: 5px; border-right: 1px solid #000;"><strong>Voyage:</strong><br>2604W</div>
-    <div style="padding: 5px; border-right: 1px solid #000;"><strong>Port of Loading:</strong><br>Yantian, CN</div>
-    <div style="padding: 5px;"><strong>Place of Delivery:</strong><br>Los Angeles, USA</div>
-  </div>
-<div style="padding: 15px;">
-    <table style="width: 100%; border-collapse: collapse; font-size: 0.8em;">
-      <tr style="border-bottom: 1px solid #eee;">
-        <th style="text-align: left; padding: 5px;">Container / Seal No.</th>
-        <th style="text-align: left; padding: 5px;">Description of Goods</th>
-        <th style="text-align: right; padding: 5px;">Gross Weight</th>
-      </tr>
-      <tr>
-        <td style="padding: 10px 5px;">MSKU-9876-543<br>SEAL: 884422</td>
-        <td style="padding: 10px 5px;">800 CARTONS CONSUMER ELECTRONICS<br>(SMARTPHONES / TABLETS)</td>
-        <td style="padding: 10px 5px; text-align: right;">12,450 KG</td>
-      </tr>
-    </table>
-  </div>
-<div style="margin: 10px 20px; border: 1px solid #000; padding: 10px; text-align: center; font-weight: bold; font-size: 0.9em; background: #f9f9f9;">
-    SHIPPED ON BOARD: MARCH 15, 2026
-  </div>
-<div style="padding: 20px; background: #fdfdfd; border-top: 1px solid #000; text-align: center;">
-    <div data-verify-line="way" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #002d62; font-weight: bold;"
-      title="Demo only: Maersk doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:maersk.com/v/MAE9988776655 <span verifiable-text="end" data-for="way">]</span>
-    </div>
-    <div style="font-size: 0.7em; color: #666; margin-top: 10px; font-style: italic;">
-      Scan to verify Shipped-on-Board status, container seal integrity, and consignee authorization.
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="way">[</span>MAERSK LINE
+A.P. Moller-Maersk A/S - Copenhagen
+SEA WAYBILL - NON-NEGOTIABLE RECEIPT
+═══════════════════════════════════════════════════════════════════
+
+Waybill Number:     MAE-9988-7766-55
+
+Shipper:            SHENZHEN ELECTRONICS MFG LTD.
+                    FUTIAN DISTRICT, SHENZHEN, CN
+
+Consignee:          GLOBAL RETAIL IMPORTS LLC
+                    LOS ANGELES, CA, USA
+
+Vessel:             Maersk Sealand
+Voyage:             2604W
+Port of Loading:    Yantian, CN
+Place of Delivery:  Los Angeles, USA
+
+Container / Seal No.    Description                       Gross Weight
+───────────────────────────────────────────────────────────────────
+MSKU-9876-543           800 CARTONS CONSUMER ELECTRONICS     12,450 KG
+SEAL: 884422            (SMARTPHONES / TABLETS)
+
+SHIPPED ON BOARD: MARCH 15, 2026
+
+<span data-verify-line="way">verify:maersk.com/v/MAE9988776655</span> <span verifiable-text="end" data-for="way">]</span></pre>
 </div>
 
 ## Data Verified

@@ -14,57 +14,25 @@ A **Rental Agreement** is the temporary contract of possession for a vehicle or 
 
 This sector is plagued by high-volume, low-trust disputes. **Damage Fraud** is the primary issue: a rental company might "edit" a condition report to charge a customer for a scratch that was already there, or a customer might "edit" an agreement to show they paid for "Full Coverage" when they actually declined it. Verified hashes bind the **Odometer Reading, Fuel Level, and Coverage Selections** to the rental company's domain (e.g., `hertz.com` or `unitedrentals.com`).
 
-<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1); overflow: hidden;">
-  <div style="background: #ffcc00; color: #000; padding: 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #000;">
-    <div style="font-weight: bold; font-size: 1.5em; letter-spacing: -1px;"><span verifiable-text="start" data-for="rental">[</span>Hertz</div>
-    <div style="text-align: right;">
-      <div style="font-weight: bold; font-size: 0.9em;">RENTAL RECORD</div>
-      <div style="font-size: 0.7em;">Ref: RA-99228877-XJ</div>
-    </div>
-  </div>
-<div style="padding: 25px;">
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; color: #333; margin-bottom: 20px;">
-      <div>
-        <strong>Renter:</strong> JOHN JACOB DOE<br>
-        <strong>Vehicle:</strong> 2025 Tesla Model Y<br>
-        <strong>VIN:</strong> 1ABC-9922-8877-Z
-      </div>
-      <div style="text-align: right;">
-        <strong>Pickup:</strong> 15 MAR 2026 (JFK)<br>
-        <strong>Return:</strong> 22 MAR 2026 (JFK)<br>
-        <strong>Unit #:</strong> 42-XJ (Verified)
-      </div>
-    </div>
-<div style="border: 1px solid #eee; padding: 15px; background: #f9f9f9; border-radius: 4px; margin-bottom: 20px;">
-      <h4 style="margin-top: 0; color: #000; font-size: 0.85em; border-bottom: 1px solid #ddd; padding-bottom: 5px;">VERIFIED RENTAL STATUS</h4>
-      <table style="width: 100%; font-size: 0.85em;">
-        <tr>
-          <td><strong>Odometer (Start):</strong></td>
-          <td style="text-align: right; font-weight: bold;">12,450 Miles</td>
-        </tr>
-        <tr>
-          <td><strong>Fuel / Charge:</strong></td>
-          <td style="text-align: right;">85% (Battery)</td>
-        </tr>
-        <tr>
-          <td><strong>Coverage (LDW):</strong></td>
-          <td style="text-align: right; color: #2e7d32; font-weight: bold;">ACCEPTED ($0 Ded)</td>
-        </tr>
-      </table>
-    </div>
-<div style="font-size: 0.75em; color: #666; font-style: italic; text-align: center;">
-      This record is a verified snapshot of the rental contract. Any unauthorized alteration of mileage or coverage status renders this document void.
-    </div>
-  </div>
-<div style="padding: 20px; background: #f7f7f7; border-top: 1px solid #eee; text-align: center;">
-    <div data-verify-line="rental" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
-      title="Demo only: Rental companies don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:hertz.com/v/RA99228877 <span verifiable-text="end" data-for="rental">]</span>
-    </div>
-    <div style="font-size: 0.7em; color: #999; margin-top: 10px;">
-      Scan to verify pre-rental damage photos, active insurance status, and final billing integrity.
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="rental">[</span>Hertz
+RENTAL RECORD                                     Ref: RA-99228877-XJ
+═══════════════════════════════════════════════════════════════════
+
+Renter:    JOHN JACOB DOE              Pickup:  15 MAR 2026 (JFK)
+Vehicle:   2025 Tesla Model Y          Return:  22 MAR 2026 (JFK)
+VIN:       1ABC-9922-8877-Z            Unit #:  42-XJ (Verified)
+
+VERIFIED RENTAL STATUS
+───────────────────────────────────────────────────────────────────
+Odometer (Start):                                      12,450 Miles
+Fuel / Charge:                                        85% (Battery)
+Coverage (LDW):                                   ACCEPTED ($0 Ded)
+
+Unauthorized alteration of mileage or coverage status
+renders this document void.
+
+<span data-verify-line="rental">verify:hertz.com/v/RA99228877</span> <span verifiable-text="end" data-for="rental">]</span></pre>
 </div>
 
 ## Data Verified

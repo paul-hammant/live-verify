@@ -14,46 +14,24 @@ When a person in the US on a temporary visa (e.g., H-1B, F-1, or B-2) wants to s
 
 These documents are the "Proof of Legal Presence." Fraud is rampant: people whose extensions were denied often "edit" a 2024 approval into a 2026 approval to hide their illegal overstay and trick employers or landlords into believing they are still in status. Verified hashes bind the **Receipt Number, New Expiration Date, and Visa Class** to the `uscis.gov` domain.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-  <div style="background: #f4f4f4; padding: 15px; border-bottom: 1px solid #ccc; display: flex; align-items: center; justify-content: space-between;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.1em; color: #333;"><span verifiable-text="start" data-for="extension">[</span>I-797A | NOTICE OF ACTION</div>
-      <div style="font-size: 0.7em; color: #666;">DEPARTMENT OF HOMELAND SECURITY • U.S. CITIZENSHIP AND IMMIGRATION SERVICES</div>
-    </div>
-    <div style="width: 45px; height: 45px; background: #999; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-weight: bold; font-size: 0.6em; text-align: center;">DHS</div>
-  </div>
-<div style="padding: 25px;">
-    <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
-      <div>
-        <strong>Receipt Number:</strong> WAC-26-992-28877<br>
-        <strong>Petitioner:</strong> GOLIATH TECH SOLUTIONS INC.<br>
-        <strong>Beneficiary:</strong> JOHN JACOB DOE
-      </div>
-      <div style="text-align: right;">
-        <strong>Notice Date:</strong> MARCH 15, 2026<br>
-        <strong>Class:</strong> H-1B1<br>
-        <strong>Case Type:</strong> I-129 Extension
-      </div>
-    </div>
-<div style="background: #e8f5e9; border: 1px solid #c8e6c9; padding: 15px; border-radius: 4px; margin-bottom: 20px;">
-      <h4 style="margin-top: 0; color: #2e7d32; font-size: 0.9em; border-bottom: 1px solid #c8e6c9; padding-bottom: 5px; text-transform: uppercase;">Approval Notice</h4>
-      <p style="font-size: 0.9em; color: #333;">
-        The above petition for an extension of stay has been approved. The beneficiary's status is extended from <strong>03/15/2026</strong> to <strong>03/14/2029</strong>.
-      </p>
-    </div>
-<div style="border: 2px dashed #ccc; padding: 10px; text-align: center; font-size: 0.8em; color: #666;">
-      [ NEW DETACHABLE I-94 RECORD ATTACHED BELOW ]
-    </div>
-  </div>
-<div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #999; text-align: center;">
-    <div data-verify-line="extension" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #002d62; font-weight: bold;"
-      title="Demo only: USCIS doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:uscis.gov/v/i797/WAC2699228877 <span verifiable-text="end" data-for="extension">]</span>
-    </div>
-    <div style="font-size: 0.7em; color: #999; margin-top: 10px; font-style: italic;">
-      Scan to verify case approval, new validity dates, and work authorization class.
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="extension">[</span>I-797A | NOTICE OF ACTION
+DEPARTMENT OF HOMELAND SECURITY
+U.S. CITIZENSHIP AND IMMIGRATION SERVICES
+═══════════════════════════════════════════════════════════════════
+
+Receipt Number:  WAC-26-992-28877         Notice Date: MARCH 15, 2026
+Petitioner:      GOLIATH TECH SOLUTIONS   Class:       H-1B1
+Beneficiary:     JOHN JACOB DOE           Case Type:   I-129 Extension
+
+APPROVAL NOTICE
+───────────────────────────────────────────────────────────────────
+The above petition for an extension of stay has been approved.
+The beneficiary's status is extended from 03/15/2026 to 03/14/2029.
+
+         [ NEW DETACHABLE I-94 RECORD ATTACHED BELOW ]
+
+<span data-verify-line="extension">verify:uscis.gov/v/i797/WAC2699228877</span> <span verifiable-text="end" data-for="extension">]</span></pre>
 </div>
 
 ## Data Verified

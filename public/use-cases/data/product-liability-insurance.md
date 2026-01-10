@@ -14,51 +14,26 @@ For manufacturers and distributors, **Product Liability Insurance** is the safet
 
 These documents are the "Proof of Solvency" for the supply chain. Large retailers (e.g., Target, Amazon) will not carry a product unless the manufacturer provides a verified **Certificate of Insurance (COI)**. Fraud is high-stakes: a manufacturer might "edit" a policy to add a dangerous product that the insurer actually excluded, or change a "Claims-Made" date to hide a gap in coverage. Verified hashes bind the **Covered Product List, Policy Limits, and Retroactive Dates** to the insurer's domain (e.g., `chubb.com` or `travelers.com`).
 
-<div style="max-width: 650px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-  <div style="background: #333; color: #fff; padding: 25px; display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid #d32f2f;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="liab">[</span>CHUBB SPECIALTY</div>
-      <div style="font-size: 0.8em; opacity: 0.8; text-transform: uppercase;">Commercial General & Product Liability</div>
-    </div>
-    <div style="text-align: right;">
-      <div style="font-weight: bold; font-size: 0.9em;">POLICY SUMMARY</div>
-      <div style="font-size: 0.7em;">Ref: PL-99228877</div>
-    </div>
-  </div>
-<div style="padding: 25px;">
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
-      <div>
-        <strong>Insured:</strong> PRECISION POWER TOOLS INC.<br>
-        <strong>Address:</strong> 123 Industrial Rd, Ohio, USA
-      </div>
-      <div style="text-align: right;">
-        <strong>Total Aggregate Limit:</strong> $ 5,000,000.00<br>
-        <strong>Per Occurrence:</strong> $ 1,000,000.00<br>
-        <strong>Retroactive Date:</strong> 01 JAN 2015
-      </div>
-    </div>
-<div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin-bottom: 20px; border-radius: 4px;">
-      <h4 style="margin-top: 0; color: #333; font-size: 0.9em; border-bottom: 1px solid #ccc; padding-bottom: 5px;">VERIFIED COVERED PRODUCTS</h4>
-      <ul style="margin: 5px 0; padding-left: 20px; font-size: 0.85em; line-height: 1.4;">
-        <li>Lithium-Ion Powered Hand Drills (All Models)</li>
-        <li>Electric Table Saws (v2.0 and later)</li>
-        <li>Industrial Grinding Attachments (Verified)</li>
-        <li style="color: #d32f2f; font-weight: bold;">EXCLUDED: Chainsaw Components</li>
-      </ul>
-    </div>
-<div style="font-size: 0.75em; color: #666; font-style: italic; text-align: center;">
-      This summary is a verified extract of Master Policy #PL-99228877. Coverage confirmed for the current policy term expiring 15 MAR 2027.
-    </div>
-  </div>
-<div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #bbb; text-align: center;">
-    <div data-verify-line="liab" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
-      title="Demo only: Commercial insurers don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:chubb.com/liab/v/PL99228877 <span verifiable-text="end" data-for="liab">]</span>
-    </div>
-    <div style="font-size: 0.7em; color: #999; margin-top: 10px;">
-      Scan to verify coverage limits, retroactive dates, and the specific list of insured products.
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="liab">[</span>CHUBB SPECIALTY
+Commercial General & Product Liability
+═══════════════════════════════════════════════════════════════════
+POLICY SUMMARY                                     Ref: PL-99228877
+
+Insured:  PRECISION POWER TOOLS INC.      Total Aggregate: $ 5,000,000
+Address:  123 Industrial Rd, Ohio, USA    Per Occurrence:  $ 1,000,000
+                                          Retroactive:     01 JAN 2015
+
+VERIFIED COVERED PRODUCTS
+───────────────────────────────────────────────────────────────────
+- Lithium-Ion Powered Hand Drills (All Models)
+- Electric Table Saws (v2.0 and later)
+- Industrial Grinding Attachments (Verified)
+- EXCLUDED: Chainsaw Components
+
+Coverage expires: 15 MAR 2027
+
+<span data-verify-line="liab">verify:chubb.com/liab/v/PL99228877</span> <span verifiable-text="end" data-for="liab">]</span></pre>
 </div>
 
 ## Data Verified

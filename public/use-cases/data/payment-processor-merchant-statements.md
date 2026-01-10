@@ -14,53 +14,23 @@ For any business that accepts credit cards (via **Stripe**, **PayPal**, or **Squ
 
 These statements are the "Income Proof" for the digital economy. Lenders use them to approve business loans, and buyers use them to judge the health of a company during an acquisition. Fraud is rampant: owners often "edit" a statement to turn a $10,000 month into a $100,000 month, or to delete a high chargeback rate that would indicate a failing or fraudulent business. Verified hashes bind the **Net Payout, Chargeback Volume, and Merchant ID** to the processor's domain (e.g., `stripe.com` or `paypal.com`).
 
-<div style="max-width: 650px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1); overflow: hidden;">
-  <div style="background: #635bff; color: #fff; padding: 25px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #000;">
-    <div style="font-weight: bold; font-size: 1.5em; letter-spacing: -0.5px;">stripe</div>
-    <div style="text-align: right;">
-      <div style="font-weight: bold; font-size: 0.9em;"><span verifiable-text="start" data-for="stripe">[</span>MONTHLY REVENUE SUMMARY</div>
-      <div style="font-size: 0.7em; opacity: 0.9;">Statement ID: ST-99228877-XJ</div>
-    </div>
-  </div>
-<div style="padding: 25px;">
-    <div style="display: flex; justify-content: space-between; margin-bottom: 25px;">
-      <div style="font-size: 0.9em; line-height: 1.5; color: #333;">
-        <strong>Merchant:</strong> THE SPICY TACO BAR LLC<br>
-        <strong>Account:</strong> acct_99228877-PRO<br>
-        <strong>Period:</strong> MARCH 2026
-      </div>
-      <div style="text-align: right;">
-        <div style="font-size: 0.8em; color: #888; text-transform: uppercase;">Total Net Payout:</div>
-        <div style="font-size: 1.8em; font-weight: bold; color: #635bff;">$ 42,250.00</div>
-      </div>
-    </div>
-<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px; margin-bottom: 25px;">
-      <div style="background: #f9f9f9; padding: 10px; border: 1px solid #eee; text-align: center; border-radius: 4px;">
-        <div style="font-size: 0.7em; color: #666;">GROSS SALES:</div>
-        <div style="font-weight: bold;">$ 45,500</div>
-      </div>
-      <div style="background: #f9f9f9; padding: 10px; border: 1px solid #eee; text-align: center; border-radius: 4px;">
-        <div style="font-size: 0.7em; color: #666;">PROCESSING FEES:</div>
-        <div style="font-weight: bold;">$ 1,250</div>
-      </div>
-      <div style="background: #fdf2f2; padding: 10px; border: 1px solid #f8d7da; text-align: center; border-radius: 4px;">
-        <div style="font-size: 0.7em; color: #721c24;">CHARGEBACKS:</div>
-        <div style="font-weight: bold; color: #d32f2f;">$ 0.00</div>
-      </div>
-    </div>
-<div style="font-size: 0.8em; color: #666; font-style: italic; border-top: 1px solid #eee; padding-top: 15px; text-align: center;">
-      "Verification confirms the financial integrity of this merchant account. Tampering with payout balances is a violation of processor terms."
-    </div>
-  </div>
-<div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #999; text-align: center;">
-    <div data-verify-line="stripe" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #635bff; font-weight: bold;"
-      title="Demo only: Stripe doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:stripe.com/v/ST99228877 <span verifiable-text="end" data-for="stripe">]</span>
-    </div>
-    <div style="font-size: 0.7em; color: #999; margin-top: 10px;">
-      Scan to verify net volume, dispute ratios, and bank settlement status.
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="stripe">[</span>stripe
+MONTHLY REVENUE SUMMARY                   Statement ID: ST-99228877-XJ
+═══════════════════════════════════════════════════════════════════
+
+Merchant:  THE SPICY TACO BAR LLC
+Account:   acct_99228877-PRO
+Period:    MARCH 2026
+
+───────────────────────────────────────────────────────────────────
+GROSS SALES:                                            $ 45,500.00
+PROCESSING FEES:                                        $  1,250.00
+CHARGEBACKS:                                            $      0.00
+───────────────────────────────────────────────────────────────────
+TOTAL NET PAYOUT:                                       $ 42,250.00
+
+<span data-verify-line="stripe">verify:stripe.com/v/ST99228877</span> <span verifiable-text="end" data-for="stripe">]</span></pre>
 </div>
 
 ## Data Verified

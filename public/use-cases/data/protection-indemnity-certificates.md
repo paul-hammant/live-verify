@@ -14,58 +14,26 @@ In the global shipping industry, **Protection & Indemnity (P&I)** is a specializ
 
 These documents are the "Entry Ticket" to global trade. Fraud is high-stakes: owners of "Substandard Ships" (which legitimate clubs won't insure) often create fake certificates from non-existent or "Shadow" P&I clubs to trick port authorities. If such a ship has an oil spill, there is no money for cleanup, leaving the host nation with billions in damage. Verified hashes bind the **Vessel IMO Number, Gross Tonnage, and Club Name** to the International Group of P&I Clubs' or the individual club's domain (e.g., `ukpandi.com` or `gard.no`).
 
-<div style="max-width: 650px; margin: 24px auto; font-family: 'Times New Roman', Times, serif; border: 2px solid #002d62; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-  <div style="background: #002d62; color: #fff; padding: 30px; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid #000;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.5em; letter-spacing: 1px;"><span verifiable-text="start" data-for="pi">[</span>THE UK P&I CLUB</div>
-      <div style="font-size: 0.8em; opacity: 0.9; text-transform: uppercase;">Member of the International Group of P&I Clubs</div>
-    </div>
-    <div style="font-size: 2em;">⚓</div>
-  </div>
-<div style="padding: 25px;">
-    <h2 style="text-align: center; color: #002d62; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px;">Certificate of Entry</h2>
-<div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; border-bottom: 1px solid #eee; padding-bottom: 15px; margin-bottom: 20px;">
-      <div>
-        <strong>Vessel Name:</strong> MV OCEAN TRADER<br>
-        <strong>IMO Number:</strong> 9922887<br>
-        <strong>Gross Tonnage:</strong> 42,500 GT
-      </div>
-      <div style="text-align: right;">
-        <strong>Certificate #:</strong> UK-2026-8844<br>
-        <strong>Policy Year:</strong> 2026/27<br>
-        <strong>Flag:</strong> Panama
-      </div>
-    </div>
-<div style="background: #f0f4f8; border: 1px solid #002d62; padding: 15px; margin-bottom: 20px; border-radius: 4px;">
-      <h4 style="margin-top: 0; color: #002d62; font-size: 0.9em; border-bottom: 1px solid #ccc; padding-bottom: 5px;">VERIFIED COVERAGE LIMITS</h4>
-      <table style="width: 100%; font-size: 0.85em;">
-        <tr>
-          <td><strong>Oil Pollution (CLC):</strong></td>
-          <td style="text-align: right; font-weight: bold;">$ 1,000,000,000.00</td>
-        </tr>
-        <tr>
-          <td><strong>Crew & Passenger Liability:</strong></td>
-          <td style="text-align: right; font-weight: bold;">AS PER RULES</td>
-        </tr>
-        <tr>
-          <td><strong>Wreck Removal:</strong></td>
-          <td style="text-align: right; font-weight: bold;">FULL COVER</td>
-        </tr>
-      </table>
-    </div>
-<div style="font-size: 0.75em; color: #666; font-style: italic; text-align: center;">
-      This certificate is evidence only of the contract of insurance. Subject to the Rules of the Association. Blue Cards for CLC and Bunker Convention are linked to this hash.
-    </div>
-  </div>
-<div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #bbb; text-align: center;">
-    <div data-verify-line="pi" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #002d62; font-weight: bold;"
-      title="Demo only: P&I Clubs don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:ukpandi.com/v/IMO9922887 <span verifiable-text="end" data-for="pi">]</span>
-    </div>
-    <div style="font-size: 0.7em; color: #999; margin-top: 10px;">
-      Scan to verify Blue Card status, war risk endorsements, and club membership validity.
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="pi">[</span>THE UK P&I CLUB
+Member of the International Group of P&I Clubs
+═══════════════════════════════════════════════════════════════════
+
+                      CERTIFICATE OF ENTRY
+
+Vessel Name:    MV OCEAN TRADER           Certificate #:  UK-2026-8844
+IMO Number:     9922887                   Policy Year:    2026/27
+Gross Tonnage:  42,500 GT                 Flag:           Panama
+
+VERIFIED COVERAGE LIMITS
+───────────────────────────────────────────────────────────────────
+Oil Pollution (CLC):                            $ 1,000,000,000.00
+Crew & Passenger Liability:                            AS PER RULES
+Wreck Removal:                                           FULL COVER
+
+Subject to the Rules of the Association.
+
+<span data-verify-line="pi">verify:ukpandi.com/v/IMO9922887</span> <span verifiable-text="end" data-for="pi">]</span></pre>
 </div>
 
 ## Data Verified

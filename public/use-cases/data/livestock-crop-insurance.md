@@ -8,50 +8,29 @@ tags: ["agriculture", "crop-insurance", "livestock-insurance", "rma", "usda", "r
 furtherDerivations: 1
 ---
 
-<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #388e3c; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-  <div style="background: #388e3c; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="ag-pol">[</span>NAU COUNTRY INSURANCE</div>
-      <div style="font-size: 0.8em; opacity: 0.9;">Multi-Peril Crop Insurance (MPCI)</div>
-    </div>
-    <div style="text-align: right;">
-      <div style="font-size: 0.8em;">Policy #: MPCI-99228877-26</div>
-    </div>
-  </div>
-<div style="padding: 25px;">
-    <h2 style="text-align: center; color: #388e3c; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Summary of Coverage</h2>
-<div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Insured:</strong> Miller Family Farms, Inc.<br>
-      <strong>State/County:</strong> Iowa / Story (FIPS 19169)</p>
-<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
-        <tr style="background: #f1f8e9; border-bottom: 2px solid #388e3c;">
-          <th style="text-align: left; padding: 8px;">Asset Class</th>
-          <th style="text-align: right; padding: 8px;">Liability</th>
-        </tr>
-        <tr>
-          <td style="padding: 8px; border-bottom: 1px solid #eee;">Corn (Yellow) - 1,200 Acres</td>
-          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 950,000.00</td>
-        </tr>
-        <tr>
-          <td style="padding: 8px; border-bottom: 1px solid #eee;">Swine (Breeding) - 500 Head</td>
-          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 250,000.00</td>
-        </tr>
-        <tr style="font-weight: bold; background: #e8f5e9;">
-          <td style="padding: 8px;">TOTAL POLICY LIABILITY:</td>
-          <td style="text-align: right; padding: 8px;">$ 1,200,000.00</td>
-        </tr>
-      </table>
-<p><strong>Covered Perils:</strong> Drought, Flood, Hail, Disease, Revenue Loss (85% Level).<br>
-      <strong>Period:</strong> March 01, 2026 to February 28, 2027</p>
-    </div>
-<div style="margin-top: 30px; border: 1px solid #ccc; padding: 10px; font-size: 0.8em; color: #555; background: #fafafa; font-style: italic;">
-      Verification confirms the policy is underwritten in accordance with USDA Risk Management Agency (RMA) guidelines.
-    </div>
-<div data-verify-line="ag-pol" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
-      title="Demo only: NAU Country doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:naucountry.com/policy/v/MPCI992288 <span verifiable-text="end" data-for="ag-pol">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="ag-pol">[</span>NAU COUNTRY INSURANCE
+Multi-Peril Crop Insurance (MPCI)             Policy #: MPCI-99228877-26
+═══════════════════════════════════════════════════════════════════
+
+                        SUMMARY OF COVERAGE
+
+Insured:       Miller Family Farms, Inc.
+State/County:  Iowa / Story (FIPS 19169)
+
+Asset Class                                                 Liability
+───────────────────────────────────────────────────────────────────
+Corn (Yellow) - 1,200 Acres                             $ 950,000.00
+Swine (Breeding) - 500 Head                             $ 250,000.00
+───────────────────────────────────────────────────────────────────
+TOTAL POLICY LIABILITY:                               $ 1,200,000.00
+
+Covered Perils:  Drought, Flood, Hail, Disease, Revenue Loss (85%)
+Period:          March 01, 2026 to February 28, 2027
+
+Underwritten in accordance with USDA Risk Management Agency (RMA).
+
+<span data-verify-line="ag-pol">verify:naucountry.com/policy/v/MPCI992288</span> <span verifiable-text="end" data-for="ag-pol">]</span></pre>
 </div>
 
 ## Data Verified

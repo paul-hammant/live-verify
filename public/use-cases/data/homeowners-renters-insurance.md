@@ -19,57 +19,29 @@ It proves to your bank that your house is protected against fire, wind, and thef
 
 Fraud happens when owners "edit" the PDF to show a higher limit to satisfy a bank's loan requirements while actually paying for a cheaper, low-limit policy. Verified hashes allow lenders to see the **live coverage status** on the insurer's domain instantly.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #007bff; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-  <div style="background: #007bff; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="ho-dec">[</span>STATE FARM 🔴</div>
-      <div style="font-size: 0.8em; opacity: 0.9;">Homeowners Policy Declarations</div>
-    </div>
-    <div style="text-align: right;">
-      <div style="font-size: 0.8em;">Policy #: 99-BC-9922-8</div>
-    </div>
-  </div>
-<div style="padding: 25px;">
-    <div style="display: flex; justify-content: space-between; margin-bottom: 25px;">
-      <div>
-        <strong>Insured:</strong><br>
-        <strong>JANE A. DOE</strong><br>
-        123 Maple Street<br>
-        Anytown, USA 12345
-      </div>
-      <div style="text-align: right;">
-        <strong>Policy Period:</strong><br>
-        Jan 01, 2026 - Jan 01, 2027<br>
-        <strong>Form:</strong> HO-3 (Special)
-      </div>
-    </div>
-<h3 style="border-bottom: 2px solid #007bff; padding-bottom: 5px; color: #007bff;">COVERAGES & LIMITS</h3>
-    <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px; font-size: 0.9em;">
-      <tr>
-        <td style="padding: 8px 0;"><strong>A. Dwelling</strong></td>
-        <td style="text-align: right;">$ 450,000.00</td>
-      </tr>
-      <tr>
-        <td style="padding: 8px 0;"><strong>C. Personal Property</strong></td>
-        <td style="text-align: right;">$ 225,000.00</td>
-      </tr>
-      <tr>
-        <td style="padding: 8px 0;"><strong>L. Personal Liability</strong></td>
-        <td style="text-align: right;">$ 300,000.00</td>
-      </tr>
-      <tr style="border-top: 1px solid #ddd;">
-        <td style="padding: 8px 0;">Deductible (All Perils)</td>
-        <td style="text-align: right;">$ 1,000.00</td>
-      </tr>
-    </table>
-<div style="font-size: 0.85em; color: #555;">
-      <strong>Mortgagee:</strong> Bank of America, N.A. (ISAOA/ATIMA) • Loan #88776655
-    </div>
-<div data-verify-line="ho-dec" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
-      title="Demo only: State Farm doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:statefarm.com/policy/v/99BC99228 <span verifiable-text="end" data-for="ho-dec">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="ho-dec">[</span>STATE FARM
+Homeowners Policy Declarations                  Policy #: 99-BC-9922-8
+═══════════════════════════════════════════════════════════════════
+
+Insured:        JANE A. DOE
+                123 Maple Street
+                Anytown, USA 12345
+
+Policy Period:  Jan 01, 2026 - Jan 01, 2027
+Form:           HO-3 (Special)
+
+COVERAGES & LIMITS
+───────────────────────────────────────────────────────────────────
+A. Dwelling                                          $ 450,000.00
+C. Personal Property                                 $ 225,000.00
+L. Personal Liability                                $ 300,000.00
+Deductible (All Perils)                              $   1,000.00
+
+Mortgagee: Bank of America, N.A. (ISAOA/ATIMA)
+           Loan #88776655
+
+<span data-verify-line="ho-dec">verify:statefarm.com/policy/v/99BC99228</span> <span verifiable-text="end" data-for="ho-dec">]</span></pre>
 </div>
 
 ## Data Verified
@@ -150,47 +122,26 @@ This estimate is the "Checkbook" for the repairs. It tells the contractor exactl
 
 Fraud is common: dishonest contractors sometimes "edit" the PDF to add $5,000 in non-existent damage to get more money from the insurer. Verified hashes protect the **adjuster's original math**, ensuring that the money goes toward real repairs and not into a scammer's pocket.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-  <div style="background: #d32f2f; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="prop-claim">[</span>ALLSTATE INSURANCE</div>
-      <div style="font-size: 0.8em;">Property Claims Services</div>
-    </div>
-    <div style="text-align: right;">
-      <div style="font-size: 0.8em;">Claim #: 99228877-PROP</div>
-    </div>
-  </div>
-<div style="padding: 25px;">
-    <h3 style="margin-top: 0; color: #d32f2f; border-bottom: 2px solid #d32f2f; padding-bottom: 5px;">REPAIR ESTIMATE & PROOF OF LOSS</h3>
-<div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Insured:</strong> SARAH J. DOE<br>
-      <strong>Property:</strong> 123 Maple St, Anytown, USA</p>
-<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
-        <tr style="background: #f5f5f5; border-bottom: 1px solid #d32f2f;">
-          <th style="text-align: left; padding: 8px;">Damage Category</th>
-          <th style="text-align: right; padding: 8px;">Estimated RCV</th>
-        </tr>
-        <tr>
-          <td style="padding: 8px; border-bottom: 1px solid #eee;">Dwelling (Water Damage - Kitchen)</td>
-          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 12,450.00</td>
-        </tr>
-        <tr>
-          <td style="padding: 8px; border-bottom: 1px solid #eee;">Personal Property (Electronics)</td>
-          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 2,100.00</td>
-        </tr>
-        <tr style="font-weight: bold; background: #ffebee;">
-          <td style="padding: 8px;">NET CLAIM TOTAL:</td>
-          <td style="text-align: right; padding: 8px;">$ 14,550.00</td>
-        </tr>
-      </table>
-<p style="margin-top: 20px;"><strong>Adjuster:</strong> Robert Miller (ID #992)<br>
-      <strong>Restoration Firm:</strong> ServePro of Anytown (Verified)</p>
-    </div>
-<div data-verify-line="prop-claim" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
-      title="Demo only: Allstate doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:allstate.com/claims/v/99228877 <span verifiable-text="end" data-for="prop-claim">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="prop-claim">[</span>ALLSTATE INSURANCE
+Property Claims Services
+REPAIR ESTIMATE & PROOF OF LOSS               Claim #: 99228877-PROP
+═══════════════════════════════════════════════════════════════════
+
+Insured:    SARAH J. DOE
+Property:   123 Maple St, Anytown, USA
+
+Damage Category                                       Estimated RCV
+───────────────────────────────────────────────────────────────────
+Dwelling (Water Damage - Kitchen)                      $ 12,450.00
+Personal Property (Electronics)                        $  2,100.00
+───────────────────────────────────────────────────────────────────
+NET CLAIM TOTAL:                                       $ 14,550.00
+
+Adjuster:         Robert Miller (ID #992)
+Restoration Firm: ServePro of Anytown (Verified)
+
+<span data-verify-line="prop-claim">verify:allstate.com/claims/v/99228877</span> <span verifiable-text="end" data-for="prop-claim">]</span></pre>
 </div>
 
 ## Data Verified
@@ -271,50 +222,28 @@ The **Declarations Page** is the "Proof of Safety." It shows the bank that the l
 
 Because these papers are required for every mortgage, "Ghost Policy" fraud is a major problem: people buy a policy to get the paper for the bank closing, then cancel it the next day for a refund. Verified hashes allow lenders to perform **automated annual audits** to ensure the policy is still active today.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: 'Helvetica', Arial, sans-serif; border: 2px solid #003366; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-  <div style="background: #003366; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="ho-pol">[</span>LIBERTY MUTUAL</div>
-      <div style="font-size: 0.8em; opacity: 0.9;">Home & Tenant Protection Policy</div>
-    </div>
-    <div style="text-align: right;">
-      <div style="font-size: 0.8em;">Policy #: HO-99228877-26</div>
-    </div>
-  </div>
-<div style="padding: 25px;">
-    <h2 style="text-align: center; color: #003366; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Insurance Declarations</h2>
-<div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Named Insured:</strong> Sarah Jane Smith<br>
-      <strong>Location:</strong> 4500 Skyline Blvd, Unit 12A, Austin, TX</p>
-<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
-        <tr style="background: #f0f4f8; border-bottom: 2px solid #003366;">
-          <th style="text-align: left; padding: 8px;">Coverage Description</th>
-          <th style="text-align: right; padding: 8px;">Limit</th>
-        </tr>
-        <tr>
-          <td style="padding: 8px; border-bottom: 1px solid #eee;">A. Dwelling</td>
-          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 350,000.00</td>
-        </tr>
-        <tr>
-          <td style="padding: 8px; border-bottom: 1px solid #eee;">C. Personal Property</td>
-          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 175,000.00</td>
-        </tr>
-        <tr>
-          <td style="padding: 8px; border-bottom: 1px solid #eee;">L. Personal Liability (Each Occurrence)</td>
-          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 500,000.00</td>
-        </tr>
-      </table>
-<p style="margin-top: 20px;"><strong>Policy Period:</strong> March 01, 2026 to March 01, 2027<br>
-      <strong>Annual Premium:</strong> $ 1,242.00</p>
-    </div>
-<div style="margin-top: 30px; border: 1px solid #ccc; padding: 10px; font-size: 0.8em; color: #555; background: #fafafa;">
-      <strong>Mortgagee:</strong> Wells Fargo Bank, N.A. (ISAOA/ATIMA) • Loan #99887766
-    </div>
-<div data-verify-line="ho-pol" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
-      title="Demo only: Liberty Mutual doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:libertymutual.com/policy/v/HO99228877 <span verifiable-text="end" data-for="ho-pol">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="ho-pol">[</span>LIBERTY MUTUAL
+Home & Tenant Protection Policy
+INSURANCE DECLARATIONS                       Policy #: HO-99228877-26
+═══════════════════════════════════════════════════════════════════
+
+Named Insured:  Sarah Jane Smith
+Location:       4500 Skyline Blvd, Unit 12A, Austin, TX
+
+Coverage Description                                         Limit
+───────────────────────────────────────────────────────────────────
+A. Dwelling                                            $ 350,000.00
+C. Personal Property                                   $ 175,000.00
+L. Personal Liability (Each Occurrence)                $ 500,000.00
+
+Policy Period:  March 01, 2026 to March 01, 2027
+Annual Premium: $ 1,242.00
+
+Mortgagee: Wells Fargo Bank, N.A. (ISAOA/ATIMA)
+           Loan #99887766
+
+<span data-verify-line="ho-pol">verify:libertymutual.com/policy/v/HO99228877</span> <span verifiable-text="end" data-for="ho-pol">]</span></pre>
 </div>
 
 ## Data Verified

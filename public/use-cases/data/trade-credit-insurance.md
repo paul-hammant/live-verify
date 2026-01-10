@@ -14,54 +14,30 @@ In the B2B world, most sales happen on "Net-30" or "Net-60" terms—meaning the 
 
 These documents are the "Green Light" for global trade. Fraud is high-stakes: a dishonest buyer might create a fake "Atradius" limit-approval letter for $1 million to trick a supplier into shipping a massive load of electronics on credit. Similarly, a seller might "edit" an old approval to hide that the insurer has recently revoked coverage for a failing customer. Verified hashes bind the **Approved Credit Limit, Buyer Tax ID, and Expiration Date** to the insurer's domain (e.g., `allianz-trade.com` or `coface.com`).
 
-<div style="max-width: 650px; margin: 24px auto; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <div style="background: #003366; color: #fff; padding: 25px; display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid #ce9e00;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;"><span verifiable-text="start" data-for="credit">[</span>ALLIANZ TRADE</div>
-      <div style="font-size: 0.8em; opacity: 0.9; text-transform: uppercase;">Credit Risk Management & TCI</div>
-    </div>
-    <div style="font-size: 2em;">📈</div>
-  </div>
-<div style="padding: 25px;">
-    <h3 style="margin-top: 0; color: #333; text-align: center; text-transform: uppercase; letter-spacing: 1px;">Credit Limit Approval Notice</h3>
-<div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
-      <div>
-        <strong>Insured Policyholder:</strong><br>
-        GLOBAL COMPONENTS LTD. (深圳)<br>
-        <strong>Policy #:</strong> 99228877-TCI
-      </div>
-      <div style="text-align: right;">
-        <strong>Notice ID:</strong> AZ-2026-8844<br>
-        <strong>Date:</strong> 15 MAR 2026
-      </div>
-    </div>
-<div style="background: #f9f9f9; border: 1px solid #ddd; padding: 20px; border-radius: 4px; margin-bottom: 20px;">
-      <p style="margin-top: 0;"><strong>Buyer Name:</strong> NORTH AMERICAN RETAIL CORP.</p>
-      <p><strong>Buyer ID (DUNS):</strong> 99-887-7665</p>
-<div style="border-top: 1px solid #ccc; padding-top: 15px; margin-top: 15px; display: flex; justify-content: space-between; align-items: center;">
-        <div>
-          <div style="font-size: 0.8em; color: #666; text-transform: uppercase;">Approved Credit Limit:</div>
-          <div style="font-size: 1.8em; font-weight: bold; color: #003366;">$ 1,250,000.00</div>
-        </div>
-        <div style="text-align: right;">
-          <div style="font-size: 0.8em; color: #666; text-transform: uppercase;">Payment Terms:</div>
-          <div style="font-weight: bold;">NET 60 DAYS</div>
-        </div>
-      </div>
-    </div>
-<div style="font-size: 0.75em; color: #666; font-style: italic; text-align: center;">
-      "Coverage is subject to the terms and conditions of the Master Policy. Verification confirms that this specific limit is currently authorized in the Allianz Trade system."
-    </div>
-  </div>
-<div style="padding: 20px; background: #f5f5f5; border-top: 1px solid #000; text-align: center;">
-    <div data-verify-line="credit" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
-      title="Demo only: Credit insurers don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:allianz-trade.com/v/AZ99228877 <span verifiable-text="end" data-for="credit">]</span>
-    </div>
-    <div style="font-size: 0.7em; color: #777; margin-top: 10px;">
-      Scan to verify real-time limit availability, payment term compliance, and insolvency protection status.
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="credit">[</span>ALLIANZ TRADE
+Credit Risk Management & TCI
+═══════════════════════════════════════════════════════════════════
+
+              CREDIT LIMIT APPROVAL NOTICE
+
+Insured Policyholder:                       Notice ID: AZ-2026-8844
+  GLOBAL COMPONENTS LTD.                    Date:      15 MAR 2026
+Policy #: 99228877-TCI
+
+BUYER INFORMATION
+───────────────────────────────────────────────────────────────────
+Buyer Name:      NORTH AMERICAN RETAIL CORP.
+Buyer ID (DUNS): 99-887-7665
+
+Approved Credit Limit:                             $ 1,250,000.00
+Payment Terms:                                          NET 60 DAYS
+
+Coverage is subject to the terms and conditions of the Master
+Policy. Verification confirms that this specific limit is
+currently authorized in the Allianz Trade system.
+
+<span data-verify-line="credit">verify:allianz-trade.com/v/AZ99228877</span> <span verifiable-text="end" data-for="credit">]</span></pre>
 </div>
 
 ## Data Verified

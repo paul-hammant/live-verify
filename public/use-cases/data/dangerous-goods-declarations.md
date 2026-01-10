@@ -16,49 +16,29 @@ This document tells the pilot and the ground crew: "This box is dangerous. If it
 
 Shady shippers often "Mis-declare" cargo—calling dangerous batteries "Toys" on the paper form to save money or bypass safety rules. This has caused multiple plane crashes. Verified hashes ensure the safety data on the paper pallet matches the certified packer's official record.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 2px solid #d32f2f; background: #fff; padding: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-  <div style="background: #d32f2f; color: #fff; padding: 10px; text-align: center;">
-    <h2 style="margin: 0; text-transform: uppercase; font-size: 1.2em;"><span verifiable-text="start" data-for="dgr">[</span>SHIPPER'S DECLARATION FOR DANGEROUS GOODS</h2>
-    <div style="font-size: 0.8em;">In Compliance with IATA Dangerous Goods Regulations (DGR)</div>
-  </div>
-<div style="padding: 15px; font-size: 0.8em;">
-    <div style="display: flex; border-bottom: 1px solid #d32f2f; padding-bottom: 10px; margin-bottom: 10px;">
-      <div style="width: 50%; border-right: 1px solid #d32f2f; padding-right: 10px;">
-        <strong>Shipper:</strong><br>
-        Lithium-Power Tech, Ltd.<br>
-        Shenzhen, China
-      </div>
-      <div style="width: 50%; padding-left: 10px;">
-        <strong>Air Waybill No:</strong> 016-99228877<br>
-        <strong>Page:</strong> 1 of 1
-      </div>
-    </div>
-<table style="width: 100%; border-collapse: collapse; margin-bottom: 15px;">
-      <tr style="background: #fdf2f2; border-bottom: 1px solid #d32f2f;">
-        <th style="text-align: left; padding: 5px;">UN Number</th>
-        <th style="text-align: left; padding: 5px;">Description</th>
-        <th style="text-align: center; padding: 5px;">Class</th>
-        <th style="text-align: center; padding: 5px;">Pkg Grp</th>
-      </tr>
-      <tr>
-        <td style="padding: 5px;">UN 3480</td>
-        <td style="padding: 5px;">Lithium Ion Batteries (Section IA)</td>
-        <td style="text-align: center; padding: 5px;">9</td>
-        <td style="text-align: center; padding: 5px;">II</td>
-      </tr>
-    </table>
-<div style="margin-top: 10px; border: 1px solid #000; padding: 10px; font-style: italic;">
-      I declare that all of the applicable air transport requirements have been met. The goods are in proper condition for carriage by air according to the applicable International and National Government Regulations.
-    </div>
-<div style="margin-top: 15px; display: flex; justify-content: space-between;">
-      <div><strong>Signatory:</strong> Wang Wei (Certified Packer)</div>
-      <div><strong>Date:</strong> 15 MAR 2026</div>
-    </div>
-<div data-verify-line="dgr" style="border-top: 1px dashed #d32f2f; margin-top: 20px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #555; text-align: center;"
-      title="Demo only: Airline doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:iata-dgr.org/v/016-99228877 <span verifiable-text="end" data-for="dgr">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="dgr">[</span>SHIPPER'S DECLARATION FOR DANGEROUS GOODS
+In Compliance with IATA Dangerous Goods Regulations (DGR)
+═══════════════════════════════════════════════════════════════════
+
+Shipper:            Lithium-Power Tech, Ltd.
+                    Shenzhen, China
+Air Waybill No:     016-99228877
+Page:               1 of 1
+
+UN Number    Description                          Class    Pkg Grp
+───────────────────────────────────────────────────────────────────
+UN 3480      Lithium Ion Batteries (Section IA)   9        II
+
+I declare that all of the applicable air transport requirements
+have been met. The goods are in proper condition for carriage by
+air according to the applicable International and National
+Government Regulations.
+
+Signatory:  Wang Wei (Certified Packer)
+Date:       15 MAR 2026
+
+<span data-verify-line="dgr">verify:iata-dgr.org/v/016-99228877</span> <span verifiable-text="end" data-for="dgr">]</span></pre>
 </div>
 
 ## Data Verified
@@ -139,52 +119,33 @@ The **IMO Dangerous Goods Declaration** is the "Safety Blueprint" for the contai
 
 Fraudsters often edit these PDFs to hide that a chemical is toxic, just to get it onto a faster ship or to save on port fees. Verified hashes allow the ship's captain and port firefighters to see the **un-altered hazard class** instantly, preventing catastrophic fires at sea.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 2px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-  <div style="background: #000; color: #fff; padding: 10px; text-align: center;">
-    <h2 style="margin: 0; text-transform: uppercase; font-size: 1.2em;"><span verifiable-text="start" data-for="imo-dgd">[</span>DANGEROUS GOODS DECLARATION (IMO)</h2>
-    <div style="font-size: 0.8em;">In accordance with the IMDG Code and SOLAS 74</div>
-  </div>
-<div style="padding: 15px; font-size: 0.85em;">
-    <div style="display: flex; border-bottom: 1px solid #000; padding-bottom: 10px; margin-bottom: 10px;">
-      <div style="width: 50%; border-right: 1px solid #000; padding-right: 10px;">
-        <strong>1. Shipper / Exporter:</strong><br>
-        Industrial Chemicals, Gmbh.<br>
-        Frankfurt, Germany
-      </div>
-      <div style="width: 50%; padding-left: 10px;">
-        <strong>2. Consignee:</strong><br>
-        Global Logistics Hub, LLC<br>
-        Houston, TX, USA
-      </div>
-    </div>
-<div style="display: flex; border-bottom: 1px solid #000; padding-bottom: 10px; margin-bottom: 10px; background: #fdf2f2;">
-      <div style="width: 33%; border-right: 1px solid #000; padding: 5px;">
-        <strong>UN Number:</strong><br>
-        UN 1090
-      </div>
-      <div style="width: 33%; border-right: 1px solid #000; padding: 5px;">
-        <strong>Class:</strong><br>
-        3 (Flammable)
-      </div>
-      <div style="width: 34%; padding: 5px;">
-        <strong>Packing Group:</strong><br>
-        II
-      </div>
-    </div>
-<p><strong>3. Proper Shipping Name:</strong> ACETONE</p>
-    <p><strong>4. Container ID:</strong> MSKU-998877-6</p>
-<div style="margin-top: 15px; border: 1px solid #000; padding: 10px; font-style: italic;">
-      I hereby declare that the contents of this consignment are fully and accurately described above and are classified, packaged, marked and labeled/placarded in accordance with the applicable international and national governmental regulations.
-    </div>
-<div style="margin-top: 15px; display: flex; justify-content: space-between;">
-      <div><strong>Signatory:</strong> Hans Muller</div>
-      <div><strong>Date:</strong> 15 MAR 2026</div>
-    </div>
-<div data-verify-line="imo-dgd" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #555; text-align: center;"
-      title="Demo only: Carrier doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:hapaq-lloyd.com/dgd/v/UN1090-MSKU <span verifiable-text="end" data-for="imo-dgd">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="imo-dgd">[</span>DANGEROUS GOODS DECLARATION (IMO)
+In accordance with the IMDG Code and SOLAS 74
+═══════════════════════════════════════════════════════════════════
+
+1. Shipper / Exporter:      Industrial Chemicals, Gmbh.
+                            Frankfurt, Germany
+
+2. Consignee:               Global Logistics Hub, LLC
+                            Houston, TX, USA
+
+UN Number:      UN 1090
+Class:          3 (Flammable)
+Packing Group:  II
+
+3. Proper Shipping Name:    ACETONE
+4. Container ID:            MSKU-998877-6
+
+I hereby declare that the contents of this consignment are fully
+and accurately described above and are classified, packaged,
+marked and labeled/placarded in accordance with the applicable
+international and national governmental regulations.
+
+Signatory:  Hans Muller
+Date:       15 MAR 2026
+
+<span data-verify-line="imo-dgd">verify:hapaq-lloyd.com/dgd/v/UN1090-MSKU</span> <span verifiable-text="end" data-for="imo-dgd">]</span></pre>
 </div>
 
 ## Data Verified
@@ -263,38 +224,28 @@ If the truck crashes, **First Responders** (Firefighters) look for this paper fi
 
 Fraudsters often "Downgrade" the hazard on the paper form to bypass tunnel restrictions or to save on insurance. Verified hashes allow firefighters to scan the paperwork at the crash site and see the **verified hazard class** from the shipper's domain instantly.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #ff9800; background: #fff; padding: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-  <div style="background: #ff9800; color: #fff; padding: 15px; text-align: center;">
-    <h2 style="margin: 0; text-transform: uppercase; font-size: 1.2em;"><span verifiable-text="start" data-for="road-dg">[</span>DANGEROUS GOODS TRANSPORT DOCUMENT</h2>
-    <div style="font-size: 0.8em;">In accordance with ADR 5.4.1 / DOT 172.200</div>
-  </div>
-<div style="padding: 20px; font-size: 0.85em;">
-    <div style="display: flex; border-bottom: 1px solid #ff9800; padding-bottom: 10px; margin-bottom: 10px;">
-      <div style="width: 50%; border-right: 1px solid #ff9800; padding-right: 10px;">
-        <strong>1. Consignor (Shipper):</strong><br>
-        EuroChem Industrial, SA<br>
-        Lyon, France
-      </div>
-      <div style="width: 50%; padding-left: 10px;">
-        <strong>2. Carrier:</strong><br>
-        Trans-Euro Freight, Ltd.<br>
-        Berlin, Germany
-      </div>
-    </div>
-<div style="margin: 15px 0; background: #fff3e0; padding: 10px; border: 1px solid #ffe0b2;">
-      <p style="font-weight: bold; margin: 0 0 5px 0;">HAZARDOUS MATERIALS DESCRIPTION:</p>
-      <p style="font-family: monospace; font-size: 1.1em; margin: 0;">UN 1203, GASOLINE, 3, PG II, (D/E)</p>
-      <p style="margin: 5px 0 0 0;">Quantity: 24,000 Liters (Bulk Tanker)</p>
-    </div>
-<p><strong>3. Emergency Contact:</strong> CHEMTREC +1 703-527-3887</p>
-<div style="margin-top: 15px; font-style: italic; font-size: 0.8em; color: #555;">
-      The driver confirms the vehicle is equipped with mandatory fire extinguishers and ADR/DOT placards.
-    </div>
-<div data-verify-line="road-dg" style="border-top: 1px dashed #ff9800; margin-top: 20px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #555; text-align: center;"
-      title="Demo only: Carrier doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:trans-euro.com/dg/v/UN1203-ABC <span verifiable-text="end" data-for="road-dg">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="road-dg">[</span>DANGEROUS GOODS TRANSPORT DOCUMENT
+In accordance with ADR 5.4.1 / DOT 172.200
+═══════════════════════════════════════════════════════════════════
+
+1. Consignor (Shipper):     EuroChem Industrial, SA
+                            Lyon, France
+
+2. Carrier:                 Trans-Euro Freight, Ltd.
+                            Berlin, Germany
+
+HAZARDOUS MATERIALS DESCRIPTION:
+───────────────────────────────────────────────────────────────────
+UN 1203, GASOLINE, 3, PG II, (D/E)
+Quantity: 24,000 Liters (Bulk Tanker)
+
+3. Emergency Contact:       CHEMTREC +1 703-527-3887
+
+The driver confirms the vehicle is equipped with mandatory
+fire extinguishers and ADR/DOT placards.
+
+<span data-verify-line="road-dg">verify:trans-euro.com/dg/v/UN1203-ABC</span> <span verifiable-text="end" data-for="road-dg">]</span></pre>
 </div>
 
 ## Data Verified

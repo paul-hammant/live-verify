@@ -14,68 +14,31 @@ In the construction industry, the **Geotechnical (Soil) Report** is the "Structu
 
 These reports are the foundation of all structural engineering. Fraud is high-stakes: a developer might "edit" a report to hide a landslide risk or to inflate the soil's bearing capacity to avoid the multi-million dollar cost of deep-foundation pylons. Verified hashes bind the **Borehole Data, Bearing Capacity, and Engineer's License** to the engineering firm's or the state's domain (e.g., `aecom.com` or `pe-registry.gov`).
 
-<div style="max-width: 650px; margin: 24px auto; font-family: 'Times New Roman', Times, serif; border: 2px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <div style="padding: 25px; border-bottom: 2px solid #000; background: #fdfdfd; display: flex; justify-content: space-between; align-items: flex-start;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.3em;"><span verifiable-text="start" data-for="geo">[</span>SUMMIT GEOTECHNICAL LTD.</div>
-      <div style="font-size: 0.8em; color: #666;">Licensed Professional Engineers • Lab ID: #9922</div>
-    </div>
-    <div style="text-align: right;">
-      <div style="font-weight: bold; font-size: 1.1em; color: #003366;">GEOTECHNICAL SUMMARY</div>
-      <div style="font-size: 0.8em; color: #888;">Project #: GEO-2026-8844</div>
-    </div>
-  </div>
-<div style="padding: 25px;">
-    <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
-      <div>
-        <strong>Project Site:</strong> 42 SKYLINE DRIVE, SPRINGFIELD<br>
-        <strong>Client:</strong> SKYLINE DEVELOPERS GROUP<br>
-        <strong>APN:</strong> 992-887-766
-      </div>
-      <div style="text-align: right;">
-        <strong>Report Date:</strong> 15 MAR 2026<br>
-        <strong>Boreholes:</strong> 12 Verified<br>
-        <strong>Max Depth:</strong> 50 FT
-      </div>
-    </div>
-<div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin-bottom: 20px; border-radius: 4px;">
-      <h4 style="margin-top: 0; color: #003366; font-size: 0.9em; border-bottom: 1px solid #ccc; padding-bottom: 5px;">CERTIFIED FOUNDATION PARAMETERS</h4>
-      <table style="width: 100%; font-size: 0.9em;">
-        <tr>
-          <td><strong>Allowable Bearing Pressure:</strong></td>
-          <td style="text-align: right; font-weight: bold;">3,500 PSF</td>
-        </tr>
-        <tr>
-          <td><strong>Seismic Site Class:</strong></td>
-          <td style="text-align: right; font-weight: bold;">D (Stiff Soil)</td>
-        </tr>
-        <tr>
-          <td><strong>Liquefaction Potential:</strong></td>
-          <td style="text-align: right; color: #2e7d32; font-weight: bold;">LOW</td>
-        </tr>
-        <tr>
-          <td><strong>Groundwater Table:</strong></td>
-          <td style="text-align: right;">-32 FT (Observed)</td>
-        </tr>
-      </table>
-    </div>
-<div style="display: flex; justify-content: space-between; align-items: flex-end;">
-      <div>
-        <div style="border-top: 1px solid #000; width: 200px; padding-top: 5px; font-style: italic;">Sarah J. Jenkins, P.E.</div>
-        <div style="font-size: 0.7em; color: #777;">License: #PE-992288 • SEAL VERIFIED</div>
-      </div>
-      <div style="width: 80px; height: 80px; border: 2px solid #003366; color: #003366; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; text-align: center; transform: rotate(-5deg);">STRUCTURAL<br>RELIANCE</div>
-    </div>
-  </div>
-<div style="padding: 20px; background: #fdfdfd; border-top: 1px solid #000; text-align: center;">
-    <div data-verify-line="geo" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
-      title="Demo only: Engineering firms don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:summit-geo.com/v/GEO99228877 <span verifiable-text="end" data-for="geo">]</span>
-    </div>
-    <div style="font-size: 0.7em; color: #666; margin-top: 10px; font-style: italic;">
-      Scan to verify soil bearing capacity, seismic site class, and licensed engineer authority.
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="geo">[</span>SUMMIT GEOTECHNICAL LTD.
+Licensed Professional Engineers - Lab ID: #9922
+═══════════════════════════════════════════════════════════════════
+
+GEOTECHNICAL SUMMARY                        Project #: GEO-2026-8844
+
+Project Site:  42 SKYLINE DRIVE, SPRINGFIELD
+Client:        SKYLINE DEVELOPERS GROUP     Report Date:  15 MAR 2026
+APN:           992-887-766                  Boreholes:    12 Verified
+                                            Max Depth:    50 FT
+
+CERTIFIED FOUNDATION PARAMETERS
+───────────────────────────────────────────────────────────────────
+Allowable Bearing Pressure:                               3,500 PSF
+Seismic Site Class:                                  D (Stiff Soil)
+Liquefaction Potential:                                         LOW
+Groundwater Table:                                 -32 FT (Observed)
+
+                    ________________________
+                    Sarah J. Jenkins, P.E.
+                    License: #PE-992288
+                    SEAL VERIFIED
+
+<span data-verify-line="geo">verify:summit-geo.com/v/GEO99228877</span> <span verifiable-text="end" data-for="geo">]</span></pre>
 </div>
 
 ## Data Verified

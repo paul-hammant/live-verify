@@ -14,61 +14,27 @@ Under **Section 404 of the Clean Water Act**, it is illegal to dump dirt (fill) 
 
 These permits are the "Final Barrier" to construction. Fraud is high-stakes: developers often "edit" a permit to turn a "0.1 Acre Fill" authorization into a "1.0 Acre" authorization, or they create fake "Mitigation Credit Receipts" to avoid paying hundreds of thousands of dollars into a conservation fund. Verified hashes bind the **Fill Acreage, Mitigation Ratio, and Permit Serial Number** to the USACE's or the state's domain (e.g., `usace.army.mil`).
 
-<div style="max-width: 650px; margin: 24px auto; font-family: sans-serif; border: 2px solid #002d62; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <div style="background: #002d62; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 1px;"><span verifiable-text="start" data-for="fill">[</span>U.S. ARMY CORPS OF ENGINEERS</div>
-      <div style="font-size: 0.8em; opacity: 0.9; text-transform: uppercase;">Section 404 Fill & Dredge Authorization</div>
-    </div>
-    <div style="font-size: 2em;">🦅</div>
-  </div>
-<div style="padding: 25px;">
-    <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
-      <div>
-        <strong>Permittee:</strong> SKYLINE DEVELOPERS LLC<br>
-        <strong>Project:</strong> Blue River Industrial Park<br>
-        <strong>Location:</strong> Parcel 9922 (Springfield)
-      </div>
-      <div style="text-align: right;">
-        <strong>Permit #:</strong> NWP-2026-8844<br>
-        <strong>Issue Date:</strong> 15 MAR 2026<br>
-        <strong>Expires:</strong> 14 MAR 2028
-      </div>
-    </div>
-<div style="background: #f0f4f8; border: 1px solid #ddd; padding: 15px; margin-bottom: 20px; border-radius: 4px;">
-      <h4 style="margin-top: 0; color: #002d62; font-size: 0.9em; border-bottom: 1px solid #ccc; padding-bottom: 5px; text-transform: uppercase;">Authorized Impact & Mitigation</h4>
-      <table style="width: 100%; font-size: 0.85em;">
-        <tr>
-          <td><strong>Total Permanent Fill:</strong></td>
-          <td style="text-align: right; font-weight: bold; color: #d32f2f;">0.42 Acres</td>
-        </tr>
-        <tr>
-          <td><strong>Mitigation Ratio:</strong></td>
-          <td style="text-align: right;">2.5 : 1</td>
-        </tr>
-        <tr>
-          <td><strong>Required Credits:</strong></td>
-          <td style="text-align: right; font-weight: bold;">1.05 Units (Verified)</td>
-        </tr>
-        <tr>
-          <td><strong>Credit Bank:</strong></td>
-          <td style="text-align: right;">Eco-Trust Wetland Bank #42</td>
-        </tr>
-      </table>
-    </div>
-<div style="font-size: 0.75em; color: #666; line-height: 1.4; font-style: italic; text-align: center;">
-      This permit authorizes the discharge of dredged or fill material into jurisdictional waters. Any expansion of fill beyond the verified acreage is a federal violation.
-    </div>
-  </div>
-<div style="padding: 20px; background: #fdfdfd; border-top: 1px solid #002d62; text-align: center;">
-    <div data-verify-line="fill" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
-      title="Demo only: USACE doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:usace.army.mil/v/NWP20268844 <span verifiable-text="end" data-for="fill">]</span>
-    </div>
-    <div style="font-size: 0.7em; color: #777; margin-top: 10px;">
-      Scan to verify fill boundaries, confirm mitigation credit retirement, and check for stop-work orders.
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="fill">[</span>U.S. ARMY CORPS OF ENGINEERS
+Section 404 Fill & Dredge Authorization
+═══════════════════════════════════════════════════════════════════
+
+Permittee:  SKYLINE DEVELOPERS LLC       Permit #:    NWP-2026-8844
+Project:    Blue River Industrial Park   Issue Date:  15 MAR 2026
+Location:   Parcel 9922 (Springfield)    Expires:     14 MAR 2028
+
+AUTHORIZED IMPACT & MITIGATION
+───────────────────────────────────────────────────────────────────
+Total Permanent Fill:                                    0.42 Acres
+Mitigation Ratio:                                           2.5 : 1
+Required Credits:                               1.05 Units (Verified)
+Credit Bank:                              Eco-Trust Wetland Bank #42
+
+This permit authorizes the discharge of dredged or fill material
+into jurisdictional waters. Any expansion of fill beyond the
+verified acreage is a federal violation.
+
+<span data-verify-line="fill">verify:usace.army.mil/v/NWP20268844</span> <span verifiable-text="end" data-for="fill">]</span></pre>
 </div>
 
 ## Data Verified

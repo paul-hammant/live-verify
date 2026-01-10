@@ -16,49 +16,25 @@ Because gig workers are "Self-Employed," they must show these receipts to landlo
 
 Fraud is common: drivers often edit a $400 payout to read $4,000 to trick a landlord into thinking they are high-earners. OCR-to-hash allows a landlord to scan the receipt and see the **verified, un-altered weekly income** directly from the platform's domain.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <div style="background: #000; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
-    <div style="font-weight: bold; font-size: 1.4em;"><span verifiable-text="start" data-for="gig">[</span>Uber</div>
-    <div style="font-size: 0.8em; opacity: 0.8;">Weekly Earnings Statement</div>
-  </div>
-<div style="padding: 30px;">
-    <div style="display: flex; justify-content: space-between; margin-bottom: 25px;">
-      <div>
-        <div style="font-size: 1.1em; font-weight: bold; color: #333;">SARAH JANE SMITH</div>
-        <div style="font-size: 0.9em; color: #666;">Partner ID: 99228877</div>
-      </div>
-      <div style="text-align: right;">
-        <div style="font-size: 0.7em; color: #777;">Period: Mar 08 - Mar 15, 2026</div>
-        <div style="font-size: 1.8em; font-weight: bold; color: #000;">$ 1,242.50</div>
-        <div style="font-size: 0.7em; font-weight: bold; text-transform: uppercase;">Net Payout</div>
-      </div>
-    </div>
-<table style="width: 100%; border-collapse: collapse; font-size: 0.9em; color: #333;">
-      <tr style="border-bottom: 1px solid #eee;">
-        <td style="padding: 8px 0;">Trip Earnings (42 Trips)</td>
-        <td style="text-align: right;">$ 950.00</td>
-      </tr>
-      <tr style="border-bottom: 1px solid #eee;">
-        <td style="padding: 8px 0;">Tips</td>
-        <td style="text-align: right;">$ 242.50</td>
-      </tr>
-      <tr style="border-bottom: 1px solid #eee;">
-        <td style="padding: 8px 0;">Promotions / Quests</td>
-        <td style="text-align: right;">$ 50.00</td>
-      </tr>
-      <tr>
-        <td style="padding: 8px 0; color: #666;">Uber Service Fee</td>
-        <td style="text-align: right; color: #666;">-$ 125.00</td>
-      </tr>
-    </table>
-<div style="margin-top: 25px; padding: 10px; background: #f9f9f9; border: 1px solid #eee; font-size: 0.8em; color: #555; font-style: italic; text-align: center;">
-      This statement is a verified record of earnings for tax and income verification purposes.
-    </div>
-<div data-verify-line="gig" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
-      title="Demo only: Uber doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:uber.com/payouts/v/99228877 <span verifiable-text="end" data-for="gig">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="gig">[</span>Uber                                  Weekly Earnings Statement
+
+Driver:     SARAH JANE SMITH            Period: Mar 08 - Mar 15, 2026
+Partner ID: 99228877
+
+Earnings Breakdown                                          Amount
+───────────────────────────────────────────────────────────────────
+Trip Earnings (42 Trips)                                  $ 950.00
+Tips                                                      $ 242.50
+Promotions / Quests                                       $  50.00
+Uber Service Fee                                         -$ 125.00
+───────────────────────────────────────────────────────────────────
+NET PAYOUT:                                             $ 1,242.50
+
+This statement is a verified record of earnings for tax
+and income verification purposes.
+
+<span data-verify-line="gig">verify:uber.com/payouts/v/99228877</span> <span verifiable-text="end" data-for="gig">]</span></pre>
 </div>
 
 ## Data Verified

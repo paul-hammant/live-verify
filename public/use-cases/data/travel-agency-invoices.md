@@ -14,57 +14,31 @@ For complex, multi-city trips or luxury vacations, travelers often use a **Trave
 
 These documents are high-stakes because they are used as proof of "Intent to Travel" for **Visa Applications** at embassies and for **Corporate Expense Reimbursement**. Fraud is common: people create "Ghost Itineraries" using fake travel agency templates to fraudulently obtain visas or to "double-expense" a trip to their employer. Verified hashes bind the **Full Itinerary Details and Payment Status** to the agency's domain (e.g., `amextravel.com` or `abercrombiekent.com`).
 
-<div style="max-width: 650px; margin: 24px auto; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; border: 1px solid #999; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-  <div style="background: #002366; color: #fff; padding: 30px; display: flex; justify-content: space-between; align-items: center;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.6em; letter-spacing: 1px;"><span verifiable-text="start" data-for="travel">[</span>ELITE TRAVEL PARTNERS</div>
-      <div style="font-size: 0.8em; opacity: 0.8; text-transform: uppercase;">Virtuoso&reg; Member • IATA #992288</div>
-    </div>
-    <div style="text-align: right;">
-      <h2 style="margin: 0; font-size: 1.2em;">INVOICE</h2>
-      <div style="font-size: 0.9em; font-weight: bold; margin-top: 5px;"># ETP-2026-8844</div>
-    </div>
-  </div>
-<div style="padding: 25px; border-bottom: 1px solid #eee; font-size: 0.9em; line-height: 1.5;">
-    <p><strong>Traveler:</strong> JOHN JACOB DOE<br>
-    <strong>Destination:</strong> Tokyo - Kyoto - Osaka, Japan<br>
-    <strong>Dates:</strong> 15-25 MAR 2026</p>
-  </div>
-<div style="padding: 25px;">
-    <h4 style="margin-top: 0; color: #002366; border-bottom: 1px solid #002366; padding-bottom: 5px;">ITINERARY SUMMARY</h4>
-    <div style="font-size: 0.85em; margin-bottom: 20px;">
-      <div style="margin-bottom: 10px;"><strong>15 MAR:</strong> JAL Flight JL005 (JFK-HND) - <em>Business Class</em></div>
-      <div style="margin-bottom: 10px;"><strong>16-20 MAR:</strong> Aman Tokyo (Deluxe Suite) - <em>Confirmed</em></div>
-      <div style="margin-bottom: 10px;"><strong>20 MAR:</strong> Shinkansen Nozomi (Green Car) - <em>Ticketed</em></div>
-    </div>
-<table style="width: 100%; border-collapse: collapse; font-size: 0.9em;">
-      <tr style="border-bottom: 2px solid #002366;">
-        <th style="text-align: left; padding: 10px;">Description</th>
-        <th style="text-align: right; padding: 10px;">Amount</th>
-      </tr>
-      <tr>
-        <td style="padding: 10px;">Package Total (Air/Hotel/Rail)</td>
-        <td style="text-align: right; padding: 10px;">$ 14,250.00</td>
-      </tr>
-      <tr>
-        <td style="padding: 10px;">Professional Planning Fee</td>
-        <td style="text-align: right; padding: 10px;">$ 500.00</td>
-      </tr>
-      <tr style="font-weight: bold; background: #f0f4f8;">
-        <td style="padding: 10px;">TOTAL PAID (USD):</td>
-        <td style="text-align: right; padding: 10px; color: #2e7d32;">$ 14,750.00</td>
-      </tr>
-    </table>
-  </div>
-<div style="padding: 20px; background: #fdfdfd; border-top: 1px solid #eee; text-align: center;">
-    <div data-verify-line="travel" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #002366; font-weight: bold;"
-      title="Demo only: Travel agencies don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:elitetravel.com/v/ETP20268844 <span verifiable-text="end" data-for="travel">]</span>
-    </div>
-    <div style="font-size: 0.7em; color: #777; margin-top: 10px; font-style: italic;">
-      Scan to verify itinerary authenticity, payment status, and Virtuoso&reg; protection.
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="travel">[</span>ELITE TRAVEL PARTNERS                       INVOICE # ETP-2026-8844
+Virtuoso Member - IATA #992288
+
+Traveler:    JOHN JACOB DOE
+Destination: Tokyo - Kyoto - Osaka, Japan
+Dates:       15-25 MAR 2026
+
+ITINERARY SUMMARY
+───────────────────────────────────────────────────────────────────
+15 MAR:     JAL Flight JL005 (JFK-HND) - Business Class
+16-20 MAR:  Aman Tokyo (Deluxe Suite) - Confirmed
+20 MAR:     Shinkansen Nozomi (Green Car) - Ticketed
+
+Description                                              Amount
+───────────────────────────────────────────────────────────────────
+Package Total (Air/Hotel/Rail)                      $ 14,250.00
+Professional Planning Fee                           $    500.00
+───────────────────────────────────────────────────────────────────
+TOTAL PAID (USD):                                   $ 14,750.00
+
+Scan to verify itinerary authenticity, payment status,
+and Virtuoso protection.
+
+<span data-verify-line="travel">verify:elitetravel.com/v/ETP20268844</span> <span verifiable-text="end" data-for="travel">]</span></pre>
 </div>
 
 ## Data Verified

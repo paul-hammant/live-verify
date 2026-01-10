@@ -14,65 +14,29 @@ In the land development industry, a **Wetlands Delineation Report** is the offic
 
 These reports are "Development Killers." If a property is 50% wetlands, it may be impossible to build on. Fraud is high-stakes: developers often "edit" a report to turn a "High-Quality Wetland" into "Dry Land" on a PDF, or they "shrink" the boundaries of a protected stream to fit a new building. Verified hashes bind the **Wetland Acreage, Delineation Date, and Scientist's License** to the environmental firm's or the US Army Corps of Engineers' (USACE) domain.
 
-<div style="max-width: 650px; margin: 24px auto; font-family: 'Helvetica Neue', Arial, sans-serif; border: 2px solid #2e7d32; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <div style="background: #2e7d32; color: #fff; padding: 25px; display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid #1b5e20;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;"><span verifiable-text="start" data-for="wetland">[</span>ECO-STREAM ENVIRONMENTAL</div>
-      <div style="font-size: 0.8em; opacity: 0.9; text-transform: uppercase;">Certified Wetlands & Natural Resource Consultants</div>
-    </div>
-    <div style="font-size: 2.2em;">🌿</div>
-  </div>
-<div style="padding: 25px;">
-    <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
-      <div>
-        <strong>Project Site:</strong> BLUE RIVER MEADOWS<br>
-        <strong>APN:</strong> 992-288-776<br>
-        <strong>Address:</strong> 123 Marsh Rd, Springfield
-      </div>
-      <div style="text-align: right;">
-        <strong>Report #:</strong> WET-2026-8844<br>
-        <strong>Survey Date:</strong> 15 MAR 2026<br>
-        <strong>Status:</strong> FINAL
-      </div>
-    </div>
-<div style="background: #f1f8e9; border: 1px solid #c5e1a5; padding: 20px; border-radius: 4px; margin-bottom: 20px;">
-      <h4 style="margin-top: 0; color: #1b5e20; font-size: 0.9em; border-bottom: 1px solid #c5e1a5; padding-bottom: 5px;">VERIFIED DELINEATION RESULTS</h4>
-      <table style="width: 100%; font-size: 0.9em;">
-        <tr>
-          <td><strong>Total Survey Area:</strong></td>
-          <td style="text-align: right;">42.50 Acres</td>
-        </tr>
-        <tr>
-          <td><strong>Verified Wetlands (Emergent):</strong></td>
-          <td style="text-align: right; font-weight: bold; color: #d32f2f;">12.42 Acres</td>
-        </tr>
-        <tr>
-          <td><strong>USACE Jurisdiction Status:</strong></td>
-          <td style="text-align: right; font-weight: bold;">JURISDICTIONAL</td>
-        </tr>
-        <tr>
-          <td><strong>Soil Type:</strong></td>
-          <td style="text-align: right;">Hydric (Gleyed)</td>
-        </tr>
-      </table>
-    </div>
-<div style="display: flex; justify-content: space-between; align-items: flex-end;">
-      <div>
-        <div style="border-top: 1px solid #000; width: 200px; padding-top: 5px; font-style: italic;">Sarah J. Jenkins, PWS</div>
-        <div style="font-size: 0.7em; color: #777;">Professional Wetland Scientist #9922</div>
-      </div>
-      <div style="width: 80px; height: 80px; border: 2px solid #2e7d32; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; text-align: center; color: #2e7d32; transform: rotate(-5deg);">ECO<br>VERIFIED</div>
-    </div>
-  </div>
-<div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #999; text-align: center;">
-    <div data-verify-line="wetland" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
-      title="Demo only: Environmental firms don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:eco-stream.com/v/WET99228877 <span verifiable-text="end" data-for="wetland">]</span>
-    </div>
-    <div style="font-size: 0.7em; color: #666; margin-top: 10px; font-style: italic;">
-      Scan to verify wetland boundaries, view high-res survey maps, and check for USACE 'Jurisdictional Determination' status.
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="wetland">[</span>ECO-STREAM ENVIRONMENTAL
+Certified Wetlands & Natural Resource Consultants
+═══════════════════════════════════════════════════════════════════
+
+Project Site:  BLUE RIVER MEADOWS         Report #:     WET-2026-8844
+APN:           992-288-776                Survey Date:  15 MAR 2026
+Address:       123 Marsh Rd, Springfield  Status:       FINAL
+
+VERIFIED DELINEATION RESULTS
+───────────────────────────────────────────────────────────────────
+Total Survey Area:                                       42.50 Acres
+Verified Wetlands (Emergent):                            12.42 Acres
+USACE Jurisdiction Status:                            JURISDICTIONAL
+Soil Type:                                            Hydric (Gleyed)
+
+                    ________________________
+                    Sarah J. Jenkins, PWS
+                    Professional Wetland Scientist #9922
+
+                        [ECO VERIFIED]
+
+<span data-verify-line="wetland">verify:eco-stream.com/v/WET99228877</span> <span verifiable-text="end" data-for="wetland">]</span></pre>
 </div>
 
 ## Data Verified

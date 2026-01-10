@@ -14,54 +14,26 @@ An **Umbrella Liability Policy** is the "Final Line of Defense" for a person's n
 
 These policies are critical for **Asset Protection**. Fraud is high-stakes: high-net-worth individuals or professionals (e.g., Doctors, CEOs) might "edit" a policy to show a $5M limit instead of a $1M limit to qualify for a business partnership or a high-value lease. Similarly, they might hide that their "Underlying Policy" (Auto) was cancelled, which legally voids the Umbrella coverage. Verified hashes bind the **Excess Limits, Underlying Policy IDs, and Effective Dates** to the insurer's domain (e.g., `libertymutual.com` or `chubb.com`).
 
-<div style="max-width: 650px; margin: 24px auto; font-family: sans-serif; border: 2px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-  <div style="background: #000; color: #fff; padding: 25px; display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid #ce9e00;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.4em;"><span verifiable-text="start" data-for="umbrella">[</span>CHUBB PERSONAL RISK</div>
-      <div style="font-size: 0.8em; opacity: 0.9; text-transform: uppercase;">Master Umbrella & Excess Liability</div>
-    </div>
-    <div style="font-size: 2em;">🛡️</div>
-  </div>
-<div style="padding: 25px;">
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
-      <div>
-        <strong>Policyholder:</strong> SARAH JANE SMITH<br>
-        <strong>Address:</strong> 42 Millionaire Row, Greenwich, CT
-      </div>
-      <div style="text-align: right;">
-        <strong>Policy #:</strong> <span style="font-family: monospace;">UMB-2026-9922</span><br>
-        <strong>Term:</strong> 15 MAR 2026 - 15 MAR 2027<br>
-        <strong>Status:</strong> ACTIVE
-      </div>
-    </div>
-<div style="background: #f9f9f9; border: 1px solid #ddd; padding: 20px; text-align: center; margin-bottom: 20px;">
-      <div style="font-size: 0.8em; color: #666; text-transform: uppercase; font-weight: bold;">Excess Liability Limit:</div>
-      <div style="font-size: 2.2em; font-weight: bold; color: #000;">$ 5,000,000.00</div>
-      <div style="font-size: 0.8em; color: #ce9e00; font-weight: bold; margin-top: 5px;">VERIFIED WORLDWIDE COVERAGE</div>
-    </div>
-<div style="font-size: 0.85em; color: #333;">
-      <h4 style="margin-top: 0; color: #000; border-bottom: 1px solid #ccc; padding-bottom: 5px;">VERIFIED UNDERLYING POLICIES</h4>
-      <table style="width: 100%; margin: 10px 0;">
-        <tr>
-          <td><strong>Automobile:</strong> (GEICO #9922)</td>
-          <td style="text-align: right; font-weight: bold;">$ 500,000 CSL</td>
-        </tr>
-        <tr>
-          <td><strong>Homeowners:</strong> (CHUBB #8844)</td>
-          <td style="text-align: right; font-weight: bold;">$ 1,000,000 Personal Liab</td>
-        </tr>
-      </table>
-    </div>
-  </div>
-<div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #999; text-align: center;">
-    <div data-verify-line="umbrella" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
-      title="Demo only: Personal insurers don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:chubb.com/umbrella/v/UMB20269922 <span verifiable-text="end" data-for="umbrella">]</span>
-    </div>
-    <div style="font-size: 0.7em; color: #999; margin-top: 10px;">
-      Scan to verify excess limits, active underlying policy requirements, and worldwide territorial status.
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="umbrella">[</span>CHUBB PERSONAL RISK
+Master Umbrella & Excess Liability
+═══════════════════════════════════════════════════════════════════
+
+Policyholder:  SARAH JANE SMITH           Policy #:  UMB-2026-9922
+Address:       42 Millionaire Row         Term:      15 MAR 2026 -
+               Greenwich, CT                         15 MAR 2027
+                                          Status:    ACTIVE
+
+                   EXCESS LIABILITY LIMIT:
+                      $ 5,000,000.00
+                 VERIFIED WORLDWIDE COVERAGE
+
+VERIFIED UNDERLYING POLICIES
+───────────────────────────────────────────────────────────────────
+Automobile:   (GEICO #9922)                        $ 500,000 CSL
+Homeowners:   (CHUBB #8844)                  $ 1,000,000 Personal
+
+<span data-verify-line="umbrella">verify:chubb.com/umbrella/v/UMB20269922</span> <span verifiable-text="end" data-for="umbrella">]</span></pre>
 </div>
 
 ## Data Verified

@@ -14,55 +14,25 @@ In the logistics industry, the **Proof of Delivery (POD)** is the legal evidence
 
 Fraud is rampant in high-value shipping (electronics, pharmaceuticals). Dishonest receivers may claim **"Goods Never Received"** despite signing for them, or dishonest drivers may forge a signature to hide a theft or a late delivery. Verified hashes bind the **Tracking Number, Timestamp, and Recipient Name** to the carrier's domain, creating an indisputable audit trail.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <div style="background: #ffcc00; color: #000; padding: 15px; display: flex; justify-content: space-between; align-items: center;">
-    <div style="font-weight: bold; font-size: 1.5em; letter-spacing: -1px;"><span verifiable-text="start" data-for="pod">[</span>DHL EXPRESS</div>
-    <div style="text-align: right;">
-      <div style="font-weight: bold; font-size: 0.9em;">DELIVERY RECEIPT</div>
-      <div style="font-size: 0.7em;">Official Record of Handoff</div>
-    </div>
-  </div>
-<div style="padding: 25px;">
-    <div style="display: flex; justify-content: space-between; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
-      <div>
-        <div style="font-size: 0.7em; color: #888; text-transform: uppercase;">Waybill Number</div>
-        <div style="font-size: 1.2em; font-weight: bold;">JD-9922-8877-66</div>
-      </div>
-      <div style="text-align: right;">
-        <div style="font-size: 0.7em; color: #888; text-transform: uppercase;">Delivery Date/Time</div>
-        <div style="font-size: 1.1em; font-weight: bold;">15 MAR 2026 • 14:22 GMT</div>
-      </div>
-    </div>
-<div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <div style="margin-bottom: 15px;">
-        <strong>Consignee:</strong> GLOBAL TECH SOLUTIONS, INC.<br>
-        <strong>Address:</strong> 42 Innovation Way, London, UK
-      </div>
-<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
-        <tr style="background: #f9f9f9; border-bottom: 1px solid #eee;">
-          <th style="text-align: left; padding: 8px; font-size: 0.8em;">Items</th>
-          <th style="text-align: center; padding: 8px; font-size: 0.8em;">Qty</th>
-          <th style="text-align: right; padding: 8px; font-size: 0.8em;">Status</th>
-        </tr>
-        <tr>
-          <td style="padding: 8px;">Network Server Rack - 4U</td>
-          <td style="text-align: center; padding: 8px;">3</td>
-          <td style="text-align: right; padding: 8px; color: #2e7d32; font-weight: bold;">INTACT</td>
-        </tr>
-      </table>
-<div style="margin-top: 20px; display: flex; align-items: center; border: 1px solid #eee; padding: 15px; background: #fffbe6;">
-        <div style="flex-grow: 1;">
-          <strong>Signed By:</strong> <span style="font-family: cursive; font-size: 1.2em;">Sarah Jenkins</span><br>
-          <span style="font-size: 0.8em; color: #666;">Security Supervisor (Emp #992)</span>
-        </div>
-        <div style="width: 60px; height: 60px; border: 1px solid #ccc; display: flex; align-items: center; justify-content: center; font-size: 0.5em; color: #999; text-align: center;">ID PHOTO<br>LOGGED</div>
-      </div>
-    </div>
-<div data-verify-line="pod" style="border-top: 1px dashed #bbb; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #d40511; text-align: center; font-weight: bold;"
-      title="Demo only: DHL doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:dhl.com/pod/v/JD9922887766 <span verifiable-text="end" data-for="pod">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="pod">[</span>DHL EXPRESS
+DELIVERY RECEIPT - Official Record of Handoff
+═══════════════════════════════════════════════════════════════════
+
+Waybill Number:     JD-9922-8877-66
+Delivery Date/Time: 15 MAR 2026 - 14:22 GMT
+
+Consignee:          GLOBAL TECH SOLUTIONS, INC.
+Address:            42 Innovation Way, London, UK
+
+Items                              Qty              Status
+───────────────────────────────────────────────────────────────────
+Network Server Rack - 4U           3                INTACT
+
+Signed By:          Sarah Jenkins
+                    Security Supervisor (Emp #992)
+
+<span data-verify-line="pod">verify:dhl.com/pod/v/JD9922887766</span> <span verifiable-text="end" data-for="pod">]</span></pre>
 </div>
 
 ## Data Verified

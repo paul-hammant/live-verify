@@ -14,61 +14,27 @@ In the commercial space industry, **Satellite Insurance** covers some of the hig
 
 These documents are the "Proof of Mission." Fraud is extremely rare but high-impact: a startup might create a fake "Allianz" or "Swiss Re" policy to trick a launch provider (like SpaceX) or a telecommunications partner into believing the mission is fully bonded. Similarly, an operator might "edit" a policy to hide a "Collision Exclusion" before a high-risk orbital maneuver. Verified hashes bind the **Satellite ID (COSPAR), Launch Window, and In-Orbit Value** to the specialist insurer's domain (e.g., `axaxl.com` or `beazley.com`).
 
-<div style="max-width: 650px; margin: 24px auto; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; border: 2px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-  <div style="background: #000; color: #fff; padding: 30px; display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid #ce9e00;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.5em; letter-spacing: 1px;"><span verifiable-text="start" data-for="space">[</span>AXA XL SPACE</div>
-      <div style="font-size: 0.8em; opacity: 0.9; text-transform: uppercase;">Aviation & Space Risk Division</div>
-    </div>
-    <div style="font-size: 2.2em;">🛰️</div>
-  </div>
-<div style="padding: 25px;">
-    <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
-      <div>
-        <strong>Operator:</strong> SKY-NET COMMUNICATIONS INC.<br>
-        <strong>Satellite ID:</strong> SN-2026-042 (Alpha-Sat)<br>
-        <strong>COSPAR ID:</strong> 2026-992A (Pending)
-      </div>
-      <div style="text-align: right;">
-        <strong>Total Insured Value:</strong> $ 325,000,000.00<br>
-        <strong>Phase:</strong> Launch & Initial Orbit<br>
-        <strong>Policy #:</strong> <span style="font-family: monospace;">SP-2026-8844</span>
-      </div>
-    </div>
-<div style="background: #fdfdfd; border: 1px solid #ddd; padding: 15px; margin-bottom: 20px; border-radius: 4px;">
-      <h4 style="margin-top: 0; color: #000; font-size: 0.9em; border-bottom: 1px solid #ccc; padding-bottom: 5px;">VERIFIED MISSION PARAMETERS</h4>
-      <table style="width: 100%; font-size: 0.85em;">
-        <tr>
-          <td><strong>Launch Vehicle:</strong></td>
-          <td style="text-align: right; font-weight: bold;">Falcon 9 (Block 5)</td>
-        </tr>
-        <tr>
-          <td><strong>Launch Site:</strong></td>
-          <td style="text-align: right; font-weight: bold;">KSC LC-39A</td>
-        </tr>
-        <tr>
-          <td><strong>TPL Limit (Third-Party Liability):</strong></td>
-          <td style="text-align: right;">$ 100,000,000.00</td>
-        </tr>
-        <tr>
-          <td><strong>In-Orbit Life:</strong></td>
-          <td style="text-align: right;">15 Years (Guaranteed)</td>
-        </tr>
-      </table>
-    </div>
-<div style="font-size: 0.75em; color: #666; font-style: italic; text-align: center;">
-      This summary is a verified extract of Policy #SP-2026-8844. Coverage confirmed for Launch Window opening 15 MAR 2026.
-    </div>
-  </div>
-<div style="padding: 20px; background: #f5f5f5; border-top: 1px solid #000; text-align: center;">
-    <div data-verify-line="space" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
-      title="Demo only: Space insurers don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:axaxl.com/space/v/SP99228877 <span verifiable-text="end" data-for="space">]</span>
-    </div>
-    <div style="font-size: 0.7em; color: #777; margin-top: 10px;">
-      Scan to verify launch failure coverage, in-orbit degradation sub-limits, and debris liability standing.
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="space">[</span>AXA XL SPACE
+Aviation & Space Risk Division
+═══════════════════════════════════════════════════════════════════
+
+Operator:      SKY-NET COMMUNICATIONS INC.
+Satellite ID:  SN-2026-042 (Alpha-Sat)    Total Insured: $ 325,000,000.00
+COSPAR ID:     2026-992A (Pending)        Phase:         Launch & Initial Orbit
+                                          Policy #:      SP-2026-8844
+
+VERIFIED MISSION PARAMETERS
+───────────────────────────────────────────────────────────────────
+Launch Vehicle:                                     Falcon 9 (Block 5)
+Launch Site:                                        KSC LC-39A
+TPL Limit (Third-Party Liability):                  $ 100,000,000.00
+In-Orbit Life:                                      15 Years (Guaranteed)
+
+This summary is a verified extract of Policy #SP-2026-8844.
+Coverage confirmed for Launch Window opening 15 MAR 2026.
+
+<span data-verify-line="space">verify:axaxl.com/space/v/SP99228877</span> <span verifiable-text="end" data-for="space">]</span></pre>
 </div>
 
 ## Data Verified

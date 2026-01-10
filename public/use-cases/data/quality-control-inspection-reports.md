@@ -14,73 +14,27 @@ In manufacturing, the **Quality Control (QC) Report** (or Certificate of Conform
 
 For critical components (e.g., bolts for an airplane wing, medical implants, or structural steel), a fake QC report can lead to catastrophic failure and loss of life. Shady suppliers often "edit" a failed test result into a "PASS," or use a real report from a high-quality batch to cover for a cheaper, low-quality one. Verified hashes bind the **Batch Number, Test Results, and Inspector's Name** to the manufacturer's or the lab's domain (e.g., `boeing.com` or `sgs.com`).
 
-<div style="max-width: 650px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 2px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <div style="padding: 25px; border-bottom: 2px solid #000; background: #fdfdfd; display: flex; justify-content: space-between; align-items: flex-start;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.3em;"><span verifiable-text="start" data-for="qc">[</span>PRECISION ALLOYS, INC.</div>
-      <div style="font-size: 0.8em; color: #666;">ISO 9001:2015 Certified Facility • Lab ID: 9922</div>
-    </div>
-    <div style="text-align: right;">
-      <div style="font-weight: bold; font-size: 1.1em; color: #2e7d32;">CERTIFICATE OF CONFORMANCE</div>
-      <div style="font-size: 0.8em; color: #888;">Report #: QC-2026-8844</div>
-    </div>
-  </div>
-<div style="padding: 25px;">
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9em; margin-bottom: 25px;">
-      <div>
-        <strong>Batch Number:</strong> LOT-9922-XJ<br>
-        <strong>Product:</strong> Grade 8 Hex Bolts (Zinc Plated)<br>
-        <strong>Customer:</strong> Global Aerospace Corp.
-      </div>
-      <div style="text-align: right;">
-        <strong>Inspection Date:</strong> MARCH 15, 2026<br>
-        <strong>Quantity Inspected:</strong> 5,000 Units<br>
-        <strong>AQL Level:</strong> 1.0 (Critical)
-      </div>
-    </div>
-<table style="width: 100%; border-collapse: collapse; font-size: 0.85em; margin-bottom: 25px;">
-      <tr style="background: #eee; border-top: 1px solid #000; border-bottom: 1px solid #000;">
-        <th style="text-align: left; padding: 10px;">Test Parameter</th>
-        <th style="text-align: center; padding: 10px;">Spec Min/Max</th>
-        <th style="text-align: center; padding: 10px;">Actual Result</th>
-        <th style="text-align: right; padding: 10px;">Status</th>
-      </tr>
-      <tr>
-        <td style="padding: 8px;">Tensile Strength (PSI)</td>
-        <td style="text-align: center; padding: 8px;">150,000 min</td>
-        <td style="text-align: center; padding: 8px;">152,450</td>
-        <td style="text-align: right; padding: 8px; color: #2e7d32; font-weight: bold;">PASS</td>
-      </tr>
-      <tr>
-        <td style="padding: 8px;">Thread Tolerance (Class 2A)</td>
-        <td style="text-align: center; padding: 8px;">GO/NO-GO</td>
-        <td style="text-align: center; padding: 8px;">Conforms</td>
-        <td style="text-align: right; padding: 8px; color: #2e7d32; font-weight: bold;">PASS</td>
-      </tr>
-      <tr style="border-bottom: 1px solid #000;">
-        <td style="padding: 8px;">Zinc Coating Thickness (µm)</td>
-        <td style="text-align: center; padding: 8px;">5.0 - 8.0</td>
-        <td style="text-align: center; padding: 8px;">6.2</td>
-        <td style="text-align: right; padding: 8px; color: #2e7d32; font-weight: bold;">PASS</td>
-      </tr>
-    </table>
-<div style="display: flex; justify-content: space-between; align-items: flex-end;">
-      <div>
-        <div style="border-top: 1px solid #000; width: 180px; padding-top: 5px; font-style: italic;">Robert Miller, QC Lead</div>
-        <div style="font-size: 0.7em; color: #777;">Digital Signature ID: RM-992288</div>
-      </div>
-      <div style="width: 100px; height: 100px; border: 2px solid #2e7d32; color: #2e7d32; display: flex; align-items: center; justify-content: center; font-size: 1.5em; font-weight: bold; transform: rotate(-5deg);">QC PASS</div>
-    </div>
-  </div>
-<div style="padding: 20px; background: #f9f9f9; border-top: 1px solid #eee; text-align: center;">
-    <div style="font-size: 0.75em; color: #555; margin-bottom: 10px; font-style: italic;">
-      This report is a verified extract of the official lab record. Scan to verify test integrity and batch authenticity.
-    </div>
-    <div data-verify-line="qc" style="border-top: 1px dashed #bbb; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
-      title="Demo only: Testing labs don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:precision-alloys.com/v/LOT9922XJ <span verifiable-text="end" data-for="qc">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="qc">[</span>PRECISION ALLOYS, INC.
+ISO 9001:2015 Certified Facility                       Lab ID: 9922
+═══════════════════════════════════════════════════════════════════
+CERTIFICATE OF CONFORMANCE                     Report #: QC-2026-8844
+
+Batch Number:  LOT-9922-XJ                 Inspection Date: MAR 15, 2026
+Product:       Grade 8 Hex Bolts (Zinc)    Qty Inspected:   5,000 Units
+Customer:      Global Aerospace Corp.      AQL Level:       1.0 (Critical)
+
+Test Parameter                  Spec Min/Max    Actual      Status
+───────────────────────────────────────────────────────────────────
+Tensile Strength (PSI)          150,000 min     152,450     PASS
+Thread Tolerance (Class 2A)     GO/NO-GO        Conforms    PASS
+Zinc Coating Thickness (um)     5.0 - 8.0       6.2         PASS
+
+_________________________
+Robert Miller, QC Lead                               [QC PASS]
+Digital Signature ID: RM-992288
+
+<span data-verify-line="qc">verify:precision-alloys.com/v/LOT9922XJ</span> <span verifiable-text="end" data-for="qc">]</span></pre>
 </div>
 
 ## Data Verified

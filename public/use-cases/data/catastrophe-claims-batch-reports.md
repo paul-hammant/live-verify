@@ -16,51 +16,28 @@ To get their money back from **Reinsurance** companies (the "insurers for insure
 
 If a carrier "sneaks" a normal kitchen fire into a "Hurricane" batch, they are committing reinsurance fraud. Verified hashes allow the reinsurer to audit these multimillion-dollar lists instantly against the carrier's core database.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #d32f2f; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-  <div style="background: #d32f2f; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="cat">[</span>STATE FARM FIRE & CASUALTY</div>
-      <div style="font-size: 0.8em;">Catastrophe Operations Unit</div>
-    </div>
-    <div style="text-align: right;">
-      <div style="font-size: 0.8em;">Batch ID: CAT-2026-FL-04</div>
-    </div>
-  </div>
-<div style="padding: 30px;">
-    <h3 style="margin-top: 0; color: #d32f2f; border-bottom: 2px solid #d32f2f; padding-bottom: 5px;">CAT BATCH LOSS SUMMARY</h3>
-<div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Event:</strong> Hurricane Helena (PCS Code: 42)<br>
-      <strong>Region:</strong> Florida Gulf Coast (Zip 337xx, 336xx)</p>
-<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
-        <tr style="background: #f5f5f5; border-bottom: 1px solid #d32f2f;">
-          <th style="text-align: left; padding: 8px;">Claim Metric</th>
-          <th style="text-align: right; padding: 8px;">Batch Total</th>
-        </tr>
-        <tr>
-          <td style="padding: 8px; border-bottom: 1px solid #eee;">Total Claims in Batch</td>
-          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">1,242</td>
-        </tr>
-        <tr>
-          <td style="padding: 8px; border-bottom: 1px solid #eee;">Paid Loss Total</td>
-          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 18,450,000.00</td>
-        </tr>
-        <tr>
-          <td style="padding: 8px; border-bottom: 1px solid #eee;">Outstanding Reserve</td>
-          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 4,200,000.00</td>
-        </tr>
-        <tr style="font-weight: bold; font-size: 1.1em; background: #ffebee;">
-          <td style="padding: 8px;">TOTAL INCURRED:</td>
-          <td style="text-align: right; padding: 8px;">$ 22,650,000.00</td>
-        </tr>
-      </table>
-<p style="margin-top: 20px;"><strong>Audit Date:</strong> March 15, 2026<br>
-      <strong>Note:</strong> All claims verified as occurring within CAT date window.</p>
-    </div>
-<div data-verify-line="cat" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
-      title="Demo only: State Farm doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:statefarm.com/claims/v/CAT2026FL04 <span verifiable-text="end" data-for="cat">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="cat">[</span>STATE FARM FIRE & CASUALTY
+Catastrophe Operations Unit                       Batch ID: CAT-2026-FL-04
+═══════════════════════════════════════════════════════════════════
+
+                      CAT BATCH LOSS SUMMARY
+
+Event:   Hurricane Helena (PCS Code: 42)
+Region:  Florida Gulf Coast (Zip 337xx, 336xx)
+
+Claim Metric                                            Batch Total
+───────────────────────────────────────────────────────────────────
+Total Claims in Batch                                         1,242
+Paid Loss Total                                      $ 18,450,000.00
+Outstanding Reserve                                  $  4,200,000.00
+───────────────────────────────────────────────────────────────────
+TOTAL INCURRED:                                      $ 22,650,000.00
+
+Audit Date: March 15, 2026
+Note: All claims verified as occurring within CAT date window.
+
+<span data-verify-line="cat">verify:statefarm.com/claims/v/CAT2026FL04</span> <span verifiable-text="end" data-for="cat">]</span></pre>
 </div>
 
 ## Data Verified

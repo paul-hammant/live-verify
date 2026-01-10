@@ -14,47 +14,24 @@ In the auto insurance industry, an **Additional Driver Endorsement** is the form
 
 These documents are the "Permission to Drive." Fraud is high-frequency: individuals whose own insurance was cancelled for accidents often "edit" a friend's insurance card or PDF to add their own name, making them look insured to police or rental agencies. Verified hashes bind the **Additional Driver Name, License Number, and Validity Dates** to the insurer's domain (e.g., `geico.com` or `progressive.com`).
 
-<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #0056b3; border-radius: 8px; background: #fff; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
-  <div style="background: #0056b3; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid #003d82;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="endorse">[</span>SAFEGUARD INSURANCE</div>
-      <div style="font-size: 0.75em; opacity: 0.9; text-transform: uppercase; letter-spacing: 1px;">Policy Amendment Certificate</div>
-    </div>
-    <div style="font-size: 2em;">🚗</div>
-  </div>
-<div style="padding: 25px;">
-    <div style="display: flex; justify-content: space-between; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
-      <div style="font-size: 0.9em; line-height: 1.5;">
-        <strong>Policyholder:</strong> ROBERT J. MILLER<br>
-        <strong>Policy #:</strong> AUT-99228877-26<br>
-        <strong>Vehicle:</strong> 2024 Tesla Model Y
-      </div>
-      <div style="text-align: right; font-size: 0.9em;">
-        <strong>Notice ID:</strong> END-2026-8844<br>
-        <strong>Issued:</strong> 15 MAR 2026
-      </div>
-    </div>
-<div style="background: #e7f3ff; border: 1px solid #b8daff; padding: 15px; border-radius: 4px; margin-bottom: 20px;">
-      <h4 style="margin-top: 0; color: #004085; font-size: 0.85em; text-transform: uppercase; border-bottom: 1px solid #b8daff; padding-bottom: 5px;">VERIFIED ADDITIONAL DRIVER</h4>
-      <p style="margin: 10px 0; font-size: 1.1em; font-weight: bold; color: #000;">MICHAEL CHEN</p>
-      <div style="display: grid; grid-template-columns: 1fr 1fr; font-size: 0.85em; color: #333;">
-        <div><strong>Starts:</strong> 15 MAR 2026</div>
-        <div style="text-align: right;"><strong>Ends:</strong> 22 MAR 2026</div>
-      </div>
-    </div>
-<div style="font-size: 0.75em; color: #666; font-style: italic; text-align: center;">
-      "Coverage is extended only to the named operator above while driving with the owner's permission. Verification protects against unauthorized policy alteration."
-    </div>
-  </div>
-<div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #999; text-align: center;">
-    <div data-verify-line="endorse" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #0056b3; font-weight: bold;"
-      title="Demo only: Insurers don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:safeguard-ins.com/v/END99228877 <span verifiable-text="end" data-for="endorse">]</span>
-    </div>
-    <div style="font-size: 0.7em; color: #999; margin-top: 10px;">
-      Scan to verify real-time coverage status, driver license eligibility, and policy expiration.
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="endorse">[</span>SAFEGUARD INSURANCE
+Policy Amendment Certificate
+═══════════════════════════════════════════════════════════════════
+
+Policyholder:  ROBERT J. MILLER           Notice ID:  END-2026-8844
+Policy #:      AUT-99228877-26            Issued:     15 MAR 2026
+Vehicle:       2024 Tesla Model Y
+
+VERIFIED ADDITIONAL DRIVER
+───────────────────────────────────────────────────────────────────
+MICHAEL CHEN
+Starts:  15 MAR 2026                      Ends:  22 MAR 2026
+
+Coverage extended only to the named operator while driving
+with owner's permission.
+
+<span data-verify-line="endorse">verify:safeguard-ins.com/v/END99228877</span> <span verifiable-text="end" data-for="endorse">]</span></pre>
 </div>
 
 ## Data Verified

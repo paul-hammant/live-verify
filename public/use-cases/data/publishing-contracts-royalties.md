@@ -14,65 +14,31 @@ In the media and publishing world, an author's or artist's income is typically a
 
 Because these statements determine the distribution of millions of dollars, they are a primary source of "Creative Accounting" and outright fraud. A publisher might "edit" a statement to show 10,000 sales instead of 100,000 to avoid paying the creator. Similarly, an author might "alter" a past statement to prove a higher historical income when negotiating a new "Advance" with a different publisher. Verified hashes bind the **Sales Quantities, Unit Prices, and Total Payout** to the publisher's domain (e.g., `penguinrandomhouse.com` or `universalmusic.com`).
 
-<div style="max-width: 650px; margin: 24px auto; font-family: 'Times New Roman', Times, serif; border: 1px solid #666; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-  <div style="padding: 30px; border-bottom: 2px solid #000; display: flex; justify-content: space-between; align-items: flex-end;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.4em; text-transform: uppercase; letter-spacing: 1px;"><span verifiable-text="start" data-for="royalty">[</span>Penguin Random House</div>
-      <div style="font-size: 0.8em; color: #555;">Global Royalty & Accounting Office</div>
-    </div>
-    <div style="text-align: right;">
-      <div style="font-weight: bold; font-size: 1.1em;">ROYALTY STATEMENT</div>
-      <div style="font-size: 0.8em; color: #777;">Period: JUL - DEC 2025</div>
-    </div>
-  </div>
-<div style="padding: 25px; border-bottom: 1px solid #eee;">
-    <div style="display: grid; grid-template-columns: 1fr 1fr; font-size: 0.9em; line-height: 1.5;">
-      <div>
-        <strong>Author:</strong> KILGORE TROUT<br>
-        <strong>Project ID:</strong> 99228877-KT<br>
-        <strong>Title:</strong> <em>Venus on the Half-Shell</em>
-      </div>
-      <div style="text-align: right;">
-        <strong>Statement ID:</strong> RS-2026-0042<br>
-        <strong>Issue Date:</strong> MARCH 15, 2026
-      </div>
-    </div>
-  </div>
-<div style="padding: 25px;">
-    <table style="width: 100%; border-collapse: collapse; font-size: 0.85em;">
-      <tr style="border-bottom: 1px solid #000; background: #f5f5f5;">
-        <th style="text-align: left; padding: 8px;">Format / Territory</th>
-        <th style="text-align: center; padding: 8px;">Units</th>
-        <th style="text-align: center; padding: 8px;">Rate</th>
-        <th style="text-align: right; padding: 8px;">Earnings</th>
-      </tr>
-      <tr style="border-bottom: 1px solid #eee;">
-        <td style="padding: 8px;">Hardcover - North America</td>
-        <td style="text-align: center; padding: 8px;">42,500</td>
-        <td style="text-align: center; padding: 8px;">15%</td>
-        <td style="text-align: right; padding: 8px;">$ 159,375.00</td>
-      </tr>
-      <tr style="border-bottom: 1px solid #eee;">
-        <td style="padding: 8px;">E-Book - International</td>
-        <td style="text-align: center; padding: 8px;">12,200</td>
-        <td style="text-align: center; padding: 8px;">25%</td>
-        <td style="text-align: right; padding: 8px;">$ 30,500.00</td>
-      </tr>
-      <tr style="font-weight: bold; font-size: 1.1em; background: #ffffcc;">
-        <td colspan="3" style="text-align: right; padding: 10px;">TOTAL NET EARNINGS (USD):</td>
-        <td style="text-align: right; padding: 10px; color: #2e7d32;">$ 189,875.00</td>
-      </tr>
-    </table>
-  </div>
-<div style="padding: 20px; background: #f9f9f9; border-top: 1px solid #eee; text-align: center;">
-    <div style="font-size: 0.7em; color: #666; margin-bottom: 10px; font-style: italic;">
-      Verification confirms the financial integrity of this statement against the publisher's general ledger.
-    </div>
-    <div data-verify-line="royalty" style="border-top: 1px dashed #999; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
-      title="Demo only: Publishers don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:prh.com/royalties/v/RS20260042 <span verifiable-text="end" data-for="royalty">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="royalty">[</span>PENGUIN RANDOM HOUSE
+Global Royalty & Accounting Office
+═══════════════════════════════════════════════════════════════════
+
+                      ROYALTY STATEMENT
+                    Period: JUL - DEC 2025
+
+Author:      KILGORE TROUT                Statement ID:  RS-2026-0042
+Project ID:  99228877-KT                  Issue Date:    MARCH 15, 2026
+Title:       Venus on the Half-Shell
+
+EARNINGS DETAIL
+───────────────────────────────────────────────────────────────────
+Format / Territory                   Units     Rate        Earnings
+───────────────────────────────────────────────────────────────────
+Hardcover - North America           42,500      15%    $ 159,375.00
+E-Book - International              12,200      25%    $  30,500.00
+───────────────────────────────────────────────────────────────────
+TOTAL NET EARNINGS (USD):                              $ 189,875.00
+
+Verification confirms financial integrity against publisher's
+general ledger.
+
+<span data-verify-line="royalty">verify:prh.com/royalties/v/RS20260042</span> <span verifiable-text="end" data-for="royalty">]</span></pre>
 </div>
 
 ## Data Verified

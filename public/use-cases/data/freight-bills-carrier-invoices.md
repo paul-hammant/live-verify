@@ -19,47 +19,26 @@ It isn't just about the price; it records:
 
 "Logistics Phishing" is a billion-dollar crime. Hackers take over a trucker's email and send "Updated Invoices" with a different bank account. Verified hashes prevent this by linking the invoice to the carrier's **official domain**, ensuring the money goes to the real driver.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 1px solid #000; background: #fff; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-  <div style="display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
-    <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="freight-inv">[</span>SCHNEIDER NATIONAL</div>
-    <div style="text-align: right;">
-      Invoice #: INV-998877-SN<br>
-      Date: 15 MAR 2026
-    </div>
-  </div>
-<div style="font-size: 0.85em; line-height: 1.4;">
-    <p><strong>Shipper:</strong> Acme Manufacturing<br>
-    <strong>Consignee:</strong> Global Distribution Center<br>
-    <strong>B/L Number:</strong> MAE-442211</p>
-<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
-      <tr style="border-bottom: 1px solid #000; font-weight: bold;">
-        <th style="text-align: left;">Charge Description</th>
-        <th style="text-align: right;">Amount</th>
-      </tr>
-      <tr>
-        <td style="padding: 5px 0;">Linehaul Freight (500 Miles)</td>
-        <td style="text-align: right;">$ 1,250.00</td>
-      </tr>
-      <tr>
-        <td style="padding: 5px 0;">Fuel Surcharge (FSC)</td>
-        <td style="text-align: right;">$ 312.50</td>
-      </tr>
-      <tr>
-        <td style="padding: 5px 0;">Detention Fee (2 Hours)</td>
-        <td style="text-align: right;">$ 150.00</td>
-      </tr>
-      <tr style="border-top: 2px solid #000; font-weight: bold;">
-        <td>TOTAL AMOUNT DUE:</td>
-        <td style="text-align: right;">$ 1,712.50</td>
-      </tr>
-    </table>
-<div style="background: #eee; padding: 10px; font-size: 0.8em;">
-      <strong>Payment Terms:</strong> Net 30 Days. Please remit to: Wells Fargo Lockbox #99228.
-    </div>
-<div data-verify-line="freight-inv" style="border-top: 1px dashed #999; margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
-      title="Demo only: Schneider doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:schneider.com/invoices/v/SN998877 <span verifiable-text="end" data-for="freight-inv">]</span>
-    </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #000; background: #fff; padding: 0; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+  <div style="padding: 20px; background: #fff;">
+    <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="freight-inv">[</span>SCHNEIDER NATIONAL                          Invoice #: INV-998877-SN
+                                             Date: 15 MAR 2026
+═══════════════════════════════════════════════════════════════════
+Shipper:    Acme Manufacturing
+Consignee:  Global Distribution Center
+B/L Number: MAE-442211
+
+Charge Description                                         Amount
+───────────────────────────────────────────────────────────────────
+Linehaul Freight (500 Miles)                           $ 1,250.00
+Fuel Surcharge (FSC)                                   $   312.50
+Detention Fee (2 Hours)                                $   150.00
+───────────────────────────────────────────────────────────────────
+TOTAL AMOUNT DUE:                                      $ 1,712.50
+
+Payment Terms: Net 30 Days. Remit to: Wells Fargo Lockbox #99228.
+
+<span data-verify-line="freight-inv">verify:schneider.com/invoices/v/SN998877</span> <span verifiable-text="end" data-for="freight-inv">]</span></pre>
   </div>
 </div>
 

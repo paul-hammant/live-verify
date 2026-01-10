@@ -17,49 +17,24 @@ An **Air Waybill (AWB)** is the legal contract between a shipper and an airline.
 
 Unlike a passenger ticket which is digital-first, AWBs are often physically attached to the freight pallets in a plastic pouch.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 1px solid #000; background: #fff; padding: 0;">
-  <div style="border-bottom: 2px solid #000; padding: 5px; display: flex; justify-content: space-between;">
-    <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="awb">[</span>016-12345678</div>
-    <div style="font-weight: bold;">UNITED AIRLINES</div>
-    <div style="font-weight: bold;">SFO</div>
-  </div>
-<div style="padding: 10px; font-size: 0.85em;">
-    <div style="display: flex; margin-bottom: 10px;">
-      <div style="width: 50%; border-right: 1px solid #000; padding-right: 5px;">
-        <strong>Shipper:</strong><br>
-        Global Tech Exports, Inc.<br>
-        400 Silicon Valley Blvd<br>
-        San Jose, CA 95134
-      </div>
-      <div style="width: 50%; padding-left: 5px;">
-        <strong>Consignee:</strong><br>
-        EuroGadget GmbH<br>
-        Flughafenstr. 1<br>
-        Frankfurt, DE 60549
-      </div>
-    </div>
-<table style="width: 100%; border: 1px solid #000; border-collapse: collapse; margin-top: 10px;">
-      <tr style="background: #eee;">
-        <th style="border: 1px solid #000;">Pcs</th>
-        <th style="border: 1px solid #000;">Gross Wt</th>
-        <th style="border: 1px solid #000;">Chargeable</th>
-        <th style="border: 1px solid #000;">Nature of Goods</th>
-      </tr>
-      <tr>
-        <td style="border: 1px solid #000; text-align: center;">10</td>
-        <td style="border: 1px solid #000; text-align: center;">500 kg</td>
-        <td style="border: 1px solid #000; text-align: center;">500 kg</td>
-        <td style="border: 1px solid #000;">Electronic Components<br>(Lithium Ion Batteries)</td>
-      </tr>
-    </table>
-<div style="margin-top: 10px;">
-      <strong>Flight/Date:</strong> UA926 / 15MAR26<br>
-      <strong>Executed on:</strong> 14MAR26 at SFO by Agent: Expeditors
-    </div>
-<div data-verify-line="awb" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
-      title="Demo only: Airline doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:unitedcargo.com/awb/v/x9y8z7 <span verifiable-text="end" data-for="awb">]</span>
-    </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #000; background: #fff; padding: 0;">
+  <div style="padding: 20px; background: #fff;">
+    <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="awb">[</span>016-12345678                    UNITED AIRLINES                    SFO
+═══════════════════════════════════════════════════════════════════════
+Shipper:                            Consignee:
+Global Tech Exports, Inc.           EuroGadget GmbH
+400 Silicon Valley Blvd             Flughafenstr. 1
+San Jose, CA 95134                  Frankfurt, DE 60549
+
+Pcs     Gross Wt    Chargeable    Nature of Goods
+───────────────────────────────────────────────────────────────────────
+10      500 kg      500 kg        Electronic Components
+                                  (Lithium Ion Batteries)
+
+Flight/Date:  UA926 / 15MAR26
+Executed on:  14MAR26 at SFO by Agent: Expeditors
+
+<span data-verify-line="awb">verify:unitedcargo.com/awb/v/x9y8z7</span> <span verifiable-text="end" data-for="awb">]</span></pre>
   </div>
 </div>
 
@@ -139,58 +114,24 @@ The forwarder gives them a **House Air Waybill (HAWB)**. It is the contract for 
 
 Fraud is common in the "Long Tail" of logistics: un-vetted forwarders sometimes create fake HAWBs to trick banks into releasing "Trade Financing" for goods that were never actually shipped. Verified hashes prove the forwarder's claim matches their official system.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 1px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-  <div style="background: #000; color: #fff; padding: 10px; display: flex; justify-content: space-between; align-items: center;">
-    <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="hawb">[</span>KUEHNE+NAGEL</div>
-    <div style="font-size: 0.8em; text-align: right;">HAWB No: KN-9988776655</div>
-  </div>
-<div style="padding: 10px; font-size: 0.8em;">
-    <div style="display: flex; border-bottom: 1px solid #000; padding-bottom: 10px; margin-bottom: 10px;">
-      <div style="width: 50%; border-right: 1px solid #000; padding-right: 10px;">
-        <strong>Shipper:</strong><br>
-        Precision Instruments, SA<br>
-        Geneva, Switzerland
-      </div>
-      <div style="width: 50%; padding-left: 10px;">
-        <strong>Consignee:</strong><br>
-        Apex Research Lab, LLC<br>
-        Cambridge, MA, USA
-      </div>
-    </div>
-<div style="display: flex; border-bottom: 1px solid #000; padding-bottom: 10px; margin-bottom: 10px; background: #f9f9f9;">
-      <div style="width: 33%; border-right: 1px solid #000; padding: 5px;">
-        <strong>Airport of Dept:</strong><br>
-        GVA (Geneva)
-      </div>
-      <div style="width: 33%; border-right: 1px solid #000; padding: 5px;">
-        <strong>Airport of Dest:</strong><br>
-        BOS (Boston)
-      </div>
-      <div style="width: 34%; padding: 5px;">
-        <strong>MAWB No:</strong><br>
-        085-99228877
-      </div>
-    </div>
-<table style="width: 100%; border-collapse: collapse; margin-top: 5px;">
-      <tr style="border-bottom: 1px solid #000;">
-        <th style="text-align: left; padding: 2px;">No. of Pieces</th>
-        <th style="text-align: left; padding: 2px;">Description</th>
-        <th style="text-align: right; padding: 2px;">Weight (KG)</th>
-      </tr>
-      <tr>
-        <td style="padding: 2px;">4 Cartons</td>
-        <td style="padding: 2px;">Scientific Optical Lenses</td>
-        <td style="text-align: right; padding: 2px;">120.50</td>
-      </tr>
-    </table>
-<div style="margin-top: 15px; border-top: 1px solid #000; padding-top: 5px; font-style: italic;">
-      The carrier certifies that the goods described above were received for carriage in apparent good order and condition.
-    </div>
-<div data-verify-line="hawb" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #555; text-align: center;"
-      title="Demo only: Forwarder doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:kuehne-nagel.com/hawb/v/9988776655 <span verifiable-text="end" data-for="hawb">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="hawb">[</span>KUEHNE+NAGEL                            HAWB No: KN-9988776655
+
+Shipper:                            Consignee:
+Precision Instruments, SA           Apex Research Lab, LLC
+Geneva, Switzerland                 Cambridge, MA, USA
+
+Airport of Dept:  GVA (Geneva)      MAWB No: 085-99228877
+Airport of Dest:  BOS (Boston)
+
+No. of Pieces    Description                      Weight (KG)
+───────────────────────────────────────────────────────────────────────
+4 Cartons        Scientific Optical Lenses            120.50
+
+The carrier certifies that the goods described above were
+received for carriage in apparent good order and condition.
+
+<span data-verify-line="hawb">verify:kuehne-nagel.com/hawb/v/9988776655</span> <span verifiable-text="end" data-for="hawb">]</span></pre>
 </div>
 
 ## Data Verified

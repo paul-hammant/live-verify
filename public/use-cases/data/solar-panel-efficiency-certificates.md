@@ -14,53 +14,25 @@ In the renewable energy industry, a **Solar Efficiency Certificate** (or Flash T
 
 These certificates are the foundation of **Solar Financing** and **Warranties**. Fraud is common in the "Budget Solar" market: shady distributors often "edit" a certificate to turn a low-efficiency generic panel into a high-performance "Tier-1" brand like SunPower or LG. Similarly, they might inflate the wattage to charge a homeowner more for a smaller system. Verified hashes bind the **Panel Serial Number, STC Wattage, and Testing Date** to the manufacturer's or the testing lab's domain (e.g., `trinasolar.com` or `tuv.com`).
 
-<div style="max-width: 650px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1); overflow: hidden;">
-  <div style="background: #004d40; color: #fff; padding: 25px; display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid #ce9e00;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;"><span verifiable-text="start" data-for="solar">[</span>TRINA SOLAR LABS</div>
-      <div style="font-size: 0.8em; opacity: 0.9; text-transform: uppercase;">IEC 61215 Certified • Flash Test Report</div>
-    </div>
-    <div style="font-size: 2.2em;">☀️</div>
-  </div>
-<div style="padding: 25px;">
-    <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
-      <div>
-        <strong>Model:</strong> Vertex S+ (Black)<br>
-        <strong>Serial #:</strong> SN-99228877-XJ<br>
-        <strong>Manufacturer:</strong> Trina Solar Co., Ltd.
-      </div>
-      <div style="text-align: right;">
-        <strong>Testing Date:</strong> 15 MAR 2026<br>
-        <strong>Flash ID:</strong> #FLASH-9922-A<br>
-        <strong>Class:</strong> TIER-1 (Elite)
-      </div>
-    </div>
-<div style="background: #f1f8e9; border: 1px solid #c5e1a5; padding: 20px; text-align: center; border-radius: 4px; margin-bottom: 20px;">
-      <h4 style="margin-top: 0; color: #2e7d32; font-size: 0.85em; text-transform: uppercase; border-bottom: 1px solid #c5e1a5; padding-bottom: 5px;">VERIFIED STC PERFORMANCE</h4>
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px;">
-        <div>
-          <div style="font-size: 0.75em; color: #666;">Max Power (Pmax):</div>
-          <div style="font-size: 1.8em; font-weight: bold; color: #000;">425.4 W</div>
-        </div>
-        <div>
-          <div style="font-size: 0.75em; color: #666;">Module Efficiency:</div>
-          <div style="font-size: 1.8em; font-weight: bold; color: #000;">21.8%</div>
-        </div>
-      </div>
-    </div>
-<div style="font-size: 0.75em; color: #666; line-height: 1.4; font-style: italic; text-align: center;">
-      "This panel has been individually tested at the point of manufacture. Performance data is guaranteed for 25 years under the Linear Power Warranty."
-    </div>
-  </div>
-<div style="padding: 20px; background: #fdfdfd; border-top: 1px solid #004d40; text-align: center;">
-    <div data-verify-line="solar" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
-      title="Demo only: Solar manufacturers don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:trinasolar.com/v/SN99228877 <span verifiable-text="end" data-for="solar">]</span>
-    </div>
-    <div style="font-size: 0.7em; color: #777; margin-top: 10px;">
-      Scan to verify individual flash-test results, warranty coverage, and panel provenance.
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="solar">[</span>TRINA SOLAR LABS
+IEC 61215 Certified - Flash Test Report
+═══════════════════════════════════════════════════════════════════
+
+Model:         Vertex S+ (Black)          Testing Date:  15 MAR 2026
+Serial #:      SN-99228877-XJ             Flash ID:      #FLASH-9922-A
+Manufacturer:  Trina Solar Co., Ltd.      Class:         TIER-1 (Elite)
+
+VERIFIED STC PERFORMANCE
+───────────────────────────────────────────────────────────────────
+Max Power (Pmax):                                           425.4 W
+Module Efficiency:                                            21.8%
+
+This panel has been individually tested at the point of
+manufacture. Performance data is guaranteed for 25 years under
+the Linear Power Warranty.
+
+<span data-verify-line="solar">verify:trinasolar.com/v/SN99228877</span> <span verifiable-text="end" data-for="solar">]</span></pre>
 </div>
 
 ## Data Verified

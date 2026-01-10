@@ -14,38 +14,26 @@ Volunteer service is a "Reputation Currency." Students need verified hours for *
 
 The problem is that "Volunteer Certificates" are among the easiest documents to forge. A student might turn 10 hours into 100 hours with a pen, or a defendant might create a fake letterhead from a local food bank to avoid jail time. Verified hashes bind the **Total Hours, Project Scope, and Supervisor Identity** to the charity's domain (e.g., `redcross.org` or `habitat.org`).
 
-<div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 5px double #2e7d32; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-  <div style="padding: 40px; text-align: center; border: 1px solid #eee; margin: 10px;">
-    <div style="margin-bottom: 25px;">
-      <div style="font-size: 1.6em; font-weight: bold; color: #2e7d32; letter-spacing: 1px;"><span verifiable-text="start" data-for="volunteer">[</span>CERTIFICATE OF SERVICE</div>
-      <div style="font-size: 0.9em; font-style: italic; color: #666;">AMERICA'S HARVEST FOOD BANK</div>
-    </div>
-<div style="margin: 30px 0;">
-      <div style="font-size: 1.1em;">This certifies that</div>
-      <div style="font-size: 1.8em; font-weight: bold; margin: 10px 0; color: #333;">SARAH J. JENKINS</div>
-      <div style="font-size: 1.1em;">has contributed their time and talent to the community.</div>
-    </div>
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 30px 0; background: #f9f9f9; padding: 20px; border-radius: 4px;">
-      <div style="text-align: left; font-size: 0.9em;">
-        <strong>Project:</strong> Warehouse Logistics<br>
-        <strong>Period:</strong> Summer 2026<br>
-        <strong>Supervisor:</strong> Robert Miller
-      </div>
-      <div style="text-align: right;">
-        <div style="font-size: 0.8em; color: #777;">TOTAL SERVICE:</div>
-        <div style="font-size: 2.2em; font-weight: bold; color: #2e7d32;">120.0</div>
-        <div style="font-size: 0.8em; font-weight: bold;">HOURS</div>
-      </div>
-    </div>
-<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
-      <div style="width: 150px; border-top: 1px solid #000; padding-top: 5px; font-size: 0.8em;">Executive Director</div>
-      <div style="width: 100px; height: 100px; border: 2px solid #2e7d32; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; color: #2e7d32; transform: rotate(-10deg);">VERIFIED<br>SERVICE</div>
-    </div>
-<div data-verify-line="volunteer" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
-      title="Demo only: Non-profits don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:americasharvest.org/v/992288-SJJ <span verifiable-text="end" data-for="volunteer">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="volunteer">[</span>CERTIFICATE OF SERVICE
+AMERICA'S HARVEST FOOD BANK
+═══════════════════════════════════════════════════════════════════
+
+                       This certifies that
+
+                       SARAH J. JENKINS
+
+         has contributed their time and talent to the community.
+
+───────────────────────────────────────────────────────────────────
+Project:      Warehouse Logistics         TOTAL SERVICE:
+Period:       Summer 2026
+Supervisor:   Robert Miller               120.0 HOURS
+
+_________________________
+Executive Director                               [VERIFIED SERVICE]
+
+<span data-verify-line="volunteer">verify:americasharvest.org/v/992288-SJJ</span> <span verifiable-text="end" data-for="volunteer">]</span></pre>
 </div>
 
 ## Data Verified

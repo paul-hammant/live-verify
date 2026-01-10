@@ -14,58 +14,29 @@ A **Structured Settlement** is a financial arrangement typically used in persona
 
 These documents are the "Financial Lifeline" for injured parties. Fraud is high-stakes: predatory "Cash-Now" factoring companies often trick claimants into signing over their future payments for pennies on the dollar. Similarly, a fraudster might "edit" a settlement agreement to hide an existing lien or a prior transfer of payments to another firm. Verified hashes bind the **Payment Schedule, Beneficiary Name, and Contract ID** to the annuity issuer's domain (e.g., `metlife.com` or `prudential.com`).
 
-<div style="max-width: 650px; margin: 24px auto; font-family: 'Times New Roman', Times, serif; border: 2px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-  <div style="background: #003366; color: #fff; padding: 30px; text-align: center; border-bottom: 2px solid #000;">
-    <div style="font-weight: bold; font-size: 1.5em; letter-spacing: 1px;"><span verifiable-text="start" data-for="settle">[</span>PACIFIC LIFE & ANNUITY</div>
-    <div style="font-size: 0.8em; opacity: 0.9; text-transform: uppercase; margin-top: 5px;">Structured Settlement Annuity Contract</div>
-  </div>
-<div style="padding: 25px;">
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
-      <div>
-        <strong>Annuitant (Claimant):</strong><br>
-        SARAH JANE DOE<br>
-        <strong>DOB:</strong> 05/15/1985
-      </div>
-      <div style="text-align: right;">
-        <strong>Contract Number:</strong><br>
-        PLA-99228877-XJ<br>
-        <strong>Effective Date:</strong> 15 MAR 2026
-      </div>
-    </div>
-<div style="background: #f9f9f9; padding: 20px; border: 1px solid #ccc; margin-bottom: 20px;">
-      <h4 style="margin-top: 0; color: #003366; border-bottom: 1px solid #ddd; padding-bottom: 5px;">VERIFIED PAYMENT SCHEDULE</h4>
-      <table style="width: 100%; font-size: 0.95em;">
-        <tr>
-          <td><strong>Monthly Payment:</strong></td>
-          <td style="text-align: right; font-weight: bold;">$ 4,250.00</td>
-        </tr>
-        <tr>
-          <td><strong>Guaranteed Period:</strong></td>
-          <td style="text-align: right;">30 Years (Fixed)</td>
-        </tr>
-        <tr>
-          <td><strong>Lump Sum (Year 10):</strong></td>
-          <td style="text-align: right; font-weight: bold;">$ 100,000.00</td>
-        </tr>
-        <tr style="border-top: 1px solid #ddd;">
-          <td><strong>Est. Total Value:</strong></td>
-          <td style="text-align: right; font-weight: bold;">$ 1,630,000.00</td>
-        </tr>
-      </table>
-    </div>
-<div style="font-size: 0.8em; line-height: 1.4; color: #555; font-style: italic;">
-      <strong>Transfer Restriction:</strong> This annuity is non-assignable and non-transferable without a verified Court Order pursuant to State Structured Settlement Protection Acts.
-    </div>
-  </div>
-<div style="padding: 20px; background: #fff; border-top: 1px dashed #999; text-align: center;">
-    <div data-verify-line="settle" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
-      title="Demo only: Life insurers don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:pacificlife.com/v/PLA99228877 <span verifiable-text="end" data-for="settle">]</span>
-    </div>
-    <div style="font-size: 0.7em; color: #999; margin-top: 10px;">
-      Scan to verify payment integrity, remaining term, and court-ordered assignment status.
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="settle">[</span>PACIFIC LIFE & ANNUITY
+Structured Settlement Annuity Contract
+═══════════════════════════════════════════════════════════════════
+
+Annuitant (Claimant):  SARAH JANE DOE
+Date of Birth:         05/15/1985
+Contract Number:       PLA-99228877-XJ
+Effective Date:        15 MAR 2026
+
+VERIFIED PAYMENT SCHEDULE
+───────────────────────────────────────────────────────────────────
+Monthly Payment:                                       $ 4,250.00
+Guaranteed Period:                                30 Years (Fixed)
+Lump Sum (Year 10):                                  $ 100,000.00
+───────────────────────────────────────────────────────────────────
+Est. Total Value:                                  $ 1,630,000.00
+
+Transfer Restriction: This annuity is non-assignable and
+non-transferable without a verified Court Order pursuant to
+State Structured Settlement Protection Acts.
+
+<span data-verify-line="settle">verify:pacificlife.com/v/PLA99228877</span> <span verifiable-text="end" data-for="settle">]</span></pre>
 </div>
 
 ## Data Verified

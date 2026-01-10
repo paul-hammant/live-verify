@@ -14,57 +14,26 @@ In global shipping, standard hull insurance often excludes "War Risks" (e.g., mi
 
 These documents are the "Combat Passport" for a ship. Fraud is high-stakes: a shipowner might create a fake "Lloyd's" binder to trick a bank or a charterer into believing the ship is covered for a Red Sea transit, when it actually is not. Similarly, they might "edit" a policy to remove a mandatory "Armed Guard" requirement to save on security costs. Verified hashes bind the **Vessel IMO, Transit Dates, and Specific High-Risk Zones** to the specialist insurer's domain (e.g., `beazley.com` or `dnv.com`).
 
-<div style="max-width: 650px; margin: 24px auto; font-family: 'Times New Roman', Times, serif; border: 2px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-  <div style="background: #1a1a1a; color: #fff; padding: 25px; display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid #d32f2f;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;"><span verifiable-text="start" data-for="war">[</span>BEAZLEY SPECIALTY MARINE</div>
-      <div style="font-size: 0.8em; opacity: 0.9; text-transform: uppercase;">War, Piracy & Terrorism Unit</div>
-    </div>
-    <div style="font-size: 2em;">⚔️</div>
-  </div>
-<div style="padding: 25px;">
-    <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
-      <div>
-        <strong>Vessel Name:</strong> MV OCEAN SENTINEL<br>
-        <strong>IMO Number:</strong> 9922887<br>
-        <strong>Flag:</strong> Marshall Islands
-      </div>
-      <div style="text-align: right;">
-        <strong>Certificate #:</strong> WR-2026-8844<br>
-        <strong>Voyage Start:</strong> 15 MAR 2026<br>
-        <strong>Voyage End:</strong> 15 APR 2026
-      </div>
-    </div>
-<div style="background: #fdf2f2; border: 1px solid #f8d7da; padding: 15px; margin-bottom: 20px; border-radius: 4px;">
-      <h4 style="margin-top: 0; color: #721c24; font-size: 0.9em; border-bottom: 1px solid #f5c6cb; padding-bottom: 5px;">VERIFIED HIGH-RISK ZONES</h4>
-      <table style="width: 100%; font-size: 0.85em;">
-        <tr>
-          <td><strong>Indian Ocean / HRA:</strong></td>
-          <td style="text-align: right; font-weight: bold; color: #2e7d32;">COVERED</td>
-        </tr>
-        <tr>
-          <td><strong>Red Sea / Southern Basin:</strong></td>
-          <td style="text-align: right; font-weight: bold; color: #2e7d32;">COVERED</td>
-        </tr>
-        <tr>
-          <td><strong>Gulf of Guinea:</strong></td>
-          <td style="text-align: right; font-weight: bold; color: #d32f2f;">EXCLUDED</td>
-        </tr>
-      </table>
-    </div>
-<div style="font-size: 0.8em; color: #333; border: 1px solid #ccc; padding: 10px; background: #fffbe6;">
-      <strong>Mandatory Warranties:</strong> Minimum 3-person Private Armed Security Team (PMSC) required during HRA transit. Continuous AIS monitoring required.
-    </div>
-  </div>
-<div style="padding: 20px; background: #f5f5f5; border-top: 1px solid #000; text-align: center;">
-    <div data-verify-line="war" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
-      title="Demo only: Specialty insurers don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:beazley.com/war/v/IMO9922887 <span verifiable-text="end" data-for="war">]</span>
-    </div>
-    <div style="font-size: 0.7em; color: #777; margin-top: 10px;">
-      Scan to verify real-time zone authorization, armed guard requirements, and P&I club coordination.
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="war">[</span>BEAZLEY SPECIALTY MARINE
+War, Piracy & Terrorism Unit
+═══════════════════════════════════════════════════════════════════
+
+Vessel Name:  MV OCEAN SENTINEL           Certificate #: WR-2026-8844
+IMO Number:   9922887                      Voyage Start:  15 MAR 2026
+Flag:         Marshall Islands             Voyage End:    15 APR 2026
+
+VERIFIED HIGH-RISK ZONES
+───────────────────────────────────────────────────────────────────
+Indian Ocean / HRA:                                         COVERED
+Red Sea / Southern Basin:                                   COVERED
+Gulf of Guinea:                                            EXCLUDED
+
+MANDATORY WARRANTIES: Minimum 3-person Private Armed Security Team
+(PMSC) required during HRA transit. Continuous AIS monitoring
+required.
+
+<span data-verify-line="war">verify:beazley.com/war/v/IMO9922887</span> <span verifiable-text="end" data-for="war">]</span></pre>
 </div>
 
 ## Data Verified

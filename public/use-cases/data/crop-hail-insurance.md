@@ -16,49 +16,27 @@ Unlike broader "Multi-Peril" insurance (which is subsidized by the government), 
 
 Farmers use these verified coverage schedules to secure "Operating Loans" from banks. If a farmer "Photoshops" their policy to show more insured acres, they are committing bank fraud. Verified hashes allow the bank to see the true, insurer-backed limits in the field.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 2px solid #2e7d32; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-  <div style="background: #2e7d32; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="crop">[</span>RAIN & HAIL, LLC</div>
-      <div style="font-size: 0.8em;">A Chubb Company</div>
-    </div>
-    <div style="text-align: right;">
-      <div style="font-size: 0.8em;">Policy #: CH-998877-26</div>
-    </div>
-  </div>
-<div style="padding: 30px;">
-    <h2 style="text-align: center; color: #2e7d32; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Crop-Hail Coverage Schedule</h2>
-<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
-      <p><strong>Insured:</strong> Miller Family Farms, Inc.<br>
-      <strong>Location:</strong> Story County, Iowa (Section 14, T84N, R24W)</p>
-<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
-        <tr style="background: #f1f8e9; border-bottom: 2px solid #2e7d32;">
-          <th style="text-align: left; padding: 8px;">Crop</th>
-          <th style="text-align: center; padding: 8px;">Acres</th>
-          <th style="text-align: right; padding: 8px;">Limit/Acre</th>
-        </tr>
-        <tr>
-          <td style="padding: 8px; border-bottom: 1px solid #eee;">Corn (Yellow)</td>
-          <td style="text-align: center; padding: 8px; border-bottom: 1px solid #eee;">500</td>
-          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 800.00</td>
-        </tr>
-        <tr>
-          <td style="padding: 8px; border-bottom: 1px solid #eee;">Soybeans</td>
-          <td style="text-align: center; padding: 8px; border-bottom: 1px solid #eee;">350</td>
-          <td style="text-align: right; padding: 8px; border-bottom: 1px solid #eee;">$ 600.00</td>
-        </tr>
-      </table>
-<p><strong>Total Liability:</strong> $ 610,000.00<br>
-      <strong>Effective Date:</strong> May 01, 2026 (or upon emergence)</p>
-    </div>
-<div style="margin-top: 30px; border: 1px solid #ccc; padding: 10px; font-size: 0.8em; color: #555; background: #fafafa;">
-      <strong>Note:</strong> Coverage applies only to direct physical loss from Hail or Fire.
-    </div>
-<div data-verify-line="crop" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
-      title="Demo only: Rain & Hail doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:rainhail.com/v/IA-998877-26 <span verifiable-text="end" data-for="crop">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="crop">[</span>RAIN & HAIL, LLC
+A Chubb Company                                   Policy #: CH-998877-26
+═══════════════════════════════════════════════════════════════════
+
+                     CROP-HAIL COVERAGE SCHEDULE
+
+Insured:   Miller Family Farms, Inc.
+Location:  Story County, Iowa (Section 14, T84N, R24W)
+
+Crop                                          Acres        Limit/Acre
+───────────────────────────────────────────────────────────────────
+Corn (Yellow)                                   500          $ 800.00
+Soybeans                                        350          $ 600.00
+
+Total Liability:   $ 610,000.00
+Effective Date:    May 01, 2026 (or upon emergence)
+
+Note: Coverage applies only to direct physical loss from Hail or Fire.
+
+<span data-verify-line="crop">verify:rainhail.com/v/IA-998877-26</span> <span verifiable-text="end" data-for="crop">]</span></pre>
 </div>
 
 ## Data Verified

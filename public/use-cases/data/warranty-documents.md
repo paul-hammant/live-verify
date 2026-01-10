@@ -14,51 +14,23 @@ A **Warranty Certificate** or Service Agreement is the manufacturer's promise to
 
 Fraud is high-volume: consumers often "edit" a purchase date on a PDF receipt to bring a broken product back into the "Warranty Window." Similarly, unauthorized "Gray Market" sellers often provide fake warranty papers to trick buyers into thinking they have manufacturer protection. Verified hashes bind the **Serial Number, Purchase Date, and Coverage Tier** to the manufacturer's domain (e.g., `apple.com`, `sony.com`, or `carrier.com`).
 
-<div style="max-width: 500px; margin: 24px auto; font-family: sans-serif; border: 2px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1); overflow: hidden;">
-  <div style="background: #000; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 1px;"><span verifiable-text="start" data-for="warranty">[</span>PRECISION CHRONO</div>
-      <div style="font-size: 0.75em; opacity: 0.8;">INTERNATIONAL WARRANTY CARD</div>
-    </div>
-    <div style="font-size: 1.5em;">⌚</div>
-  </div>
-<div style="padding: 25px;">
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; color: #333; margin-bottom: 20px;">
-      <div>
-        <strong>Model:</strong> Ocean-Master 300<br>
-        <strong>Serial:</strong> SN-992288-XJ
-      </div>
-      <div style="text-align: right;">
-        <strong>Purchase Date:</strong><br>
-        MARCH 15, 2026
-      </div>
-    </div>
-<div style="border: 1px solid #eee; padding: 15px; background: #f9f9f9; border-radius: 4px; margin-bottom: 20px;">
-      <h4 style="margin-top: 0; color: #000; font-size: 0.9em; border-bottom: 1px solid #ddd; padding-bottom: 5px;">COVERAGE STATUS</h4>
-      <table style="width: 100%; font-size: 0.85em;">
-        <tr>
-          <td><strong>Warranty Type:</strong></td>
-          <td style="text-align: right;">5-Year Manufacturer</td>
-        </tr>
-        <tr>
-          <td><strong>Expires:</strong></td>
-          <td style="text-align: right; font-weight: bold; color: #2e7d32;">MARCH 15, 2031</td>
-        </tr>
-      </table>
-    </div>
-<div style="font-size: 0.75em; color: #666; font-style: italic; text-align: center;">
-      Verified via Precision Chrono Global Registry. Authorized Service Centers only.
-    </div>
-  </div>
-<div style="padding: 20px; background: #f0f0f0; border-top: 1px solid #ddd; text-align: center;">
-    <div data-verify-line="warranty" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
-      title="Demo only: Manufacturers don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:precisionchrono.com/v/SN992288XJ <span verifiable-text="end" data-for="warranty">]</span>
-    </div>
-    <div style="font-size: 0.7em; color: #999; margin-top: 10px;">
-      Scan to verify repair eligibility, coverage dates, and original owner registration.
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="warranty">[</span>PRECISION CHRONO
+INTERNATIONAL WARRANTY CARD
+═══════════════════════════════════════════════════════════════════
+
+Model:          Ocean-Master 300         Purchase Date:
+Serial:         SN-992288-XJ             MARCH 15, 2026
+
+COVERAGE STATUS
+───────────────────────────────────────────────────────────────────
+Warranty Type:                                  5-Year Manufacturer
+Expires:                                            MARCH 15, 2031
+
+Verified via Precision Chrono Global Registry.
+Authorized Service Centers only.
+
+<span data-verify-line="warranty">verify:precisionchrono.com/v/SN992288XJ</span> <span verifiable-text="end" data-for="warranty">]</span></pre>
 </div>
 
 ## Data Verified

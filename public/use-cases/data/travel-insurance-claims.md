@@ -14,61 +14,26 @@ A **Travel Insurance Settlement Advice** is the formal document issued by an ins
 
 These documents are "Financial Recovery" records. Fraud is high-stakes: claimants often "edit" a settlement letter to inflate the amount paid to get a higher "Secondary Payout" from an employer or a second insurer (Double-Dipping). Similarly, scammers create fake "Settlement Notices" to trick overseas hospitals into releasing a medical lien. Verified hashes bind the **Settlement Amount, Loss Type, and Claim ID** to the insurer's domain (e.g., `allianz.com` or `aig.com`).
 
-<div style="max-width: 650px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-  <div style="background: #0033a0; color: #fff; padding: 25px; display: flex; justify-content: space-between; align-items: center;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;"><span verifiable-text="start" data-for="claim">[</span>ALLIANZ GLOBAL ASSISTANCE</div>
-      <div style="font-size: 0.8em; opacity: 0.9; text-transform: uppercase;">Official Settlement Advice</div>
-    </div>
-    <div style="font-size: 2em;">🏥</div>
-  </div>
-<div style="padding: 25px;">
-    <div style="display: flex; justify-content: space-between; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
-      <div style="font-size: 0.9em; line-height: 1.5;">
-        <strong>Claimant:</strong> SARAH JANE SMITH<br>
-        <strong>Policy #:</strong> AZ-99228877-XJ<br>
-        <strong>Loss Event:</strong> Emergency Medical (Thailand)
-      </div>
-      <div style="text-align: right; font-size: 0.9em;">
-        <strong>Claim ID:</strong> CL-2026-8844<br>
-        <strong>Paid Date:</strong> 15 MAR 2026<br>
-        <strong>Status:</strong> SETTLED
-      </div>
-    </div>
-<div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin-bottom: 20px; border-radius: 4px;">
-      <h4 style="margin-top: 0; color: #0033a0; font-size: 0.9em; border-bottom: 1px solid #ccc; padding-bottom: 5px;">VERIFIED PAYOUT SUMMARY</h4>
-      <table style="width: 100%; font-size: 0.9em;">
-        <tr>
-          <td>Hospital Room & Board (Bangkok)</td>
-          <td style="text-align: right;">$ 12,450.00</td>
-        </tr>
-        <tr>
-          <td>Medical Repatriation (Business Class)</td>
-          <td style="text-align: right;">$ 4,200.00</td>
-        </tr>
-        <tr>
-          <td>Less Deductible</td>
-          <td style="text-align: right;">($ 250.00)</td>
-        </tr>
-        <tr style="border-top: 1px solid #ddd; font-weight: bold; font-size: 1.1em;">
-          <td style="padding-top: 10px;">TOTAL NET SETTLEMENT (USD):</td>
-          <td style="padding-top: 10px; text-align: right; color: #2e7d32;">$ 16,400.00</td>
-        </tr>
-      </table>
-    </div>
-<div style="font-size: 0.75em; color: #666; font-style: italic; text-align: center;">
-      This advice is a verified digital record of the claim settlement. Payment has been issued via Wire Transfer to the account on file.
-    </div>
-  </div>
-<div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #bbb; text-align: center;">
-    <div data-verify-line="claim" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #0033a0; font-weight: bold;"
-      title="Demo only: Travel insurers don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:allianz.com/v/CL20268844 <span verifiable-text="end" data-for="claim">]</span>
-    </div>
-    <div style="font-size: 0.7em; color: #999; margin-top: 10px;">
-      Scan to verify payout amounts, loss categorization, and final settlement authority.
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="claim">[</span>ALLIANZ GLOBAL ASSISTANCE
+Official Settlement Advice
+═══════════════════════════════════════════════════════════════════
+
+Claimant:    SARAH JANE SMITH             Claim ID:   CL-2026-8844
+Policy #:    AZ-99228877-XJ               Paid Date:  15 MAR 2026
+Loss Event:  Emergency Medical (Thailand) Status:     SETTLED
+
+VERIFIED PAYOUT SUMMARY
+───────────────────────────────────────────────────────────────────
+Hospital Room & Board (Bangkok)                        $ 12,450.00
+Medical Repatriation (Business Class)                  $  4,200.00
+Less Deductible                                        ($   250.00)
+───────────────────────────────────────────────────────────────────
+TOTAL NET SETTLEMENT (USD):                            $ 16,400.00
+
+Payment issued via Wire Transfer to account on file.
+
+<span data-verify-line="claim">verify:allianz.com/v/CL20268844</span> <span verifiable-text="end" data-for="claim">]</span></pre>
 </div>
 
 ## Data Verified

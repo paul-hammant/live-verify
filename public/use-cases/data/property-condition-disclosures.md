@@ -14,60 +14,27 @@ When selling a home, the **Seller's Disclosure Statement** is the legally mandat
 
 These documents are the primary evidence in post-sale lawsuits. Fraud is high-frequency: sellers often "scrub" a disclosure form to remove mention of a $20,000 foundation issue before showing it to a potential buyer. Similarly, they might "edit" an old inspection report to look like a "Clean" disclosure. Verified hashes bind the **Defect Checklist, Property Address, and Seller Signature** to the real estate portal's or the title company's domain (e.g., `zillow.com` or `firstam.com`).
 
-<div style="max-width: 650px; margin: 24px auto; font-family: 'Helvetica Neue', Arial, sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <div style="background: #004d40; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 1px;"><span verifiable-text="start" data-for="disclose">[</span>RESIDENTIAL PROPERTY DISCLOSURE</div>
-      <div style="font-size: 0.75em; opacity: 0.9;">STATE MANDATED SELLER STATEMENT</div>
-    </div>
-    <div style="font-size: 1.5em;">🏡</div>
-  </div>
-<div style="padding: 25px;">
-    <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; border-bottom: 1px solid #eee; padding-bottom: 15px; margin-bottom: 20px;">
-      <div>
-        <strong>Property Address:</strong><br>
-        123 MAPLE STREET, SPRINGFIELD, USA<br>
-        <strong>Seller:</strong> ROBERT & MARY SMITH
-      </div>
-      <div style="text-align: right;">
-        <strong>Date of Disclosure:</strong> 15 MAR 2026<br>
-        <strong>Status:</strong> COMPLETED
-      </div>
-    </div>
-<div style="font-size: 0.85em; color: #333;">
-      <h4 style="margin-top: 0; color: #004d40; border-bottom: 1px solid #ccc; padding-bottom: 5px;">KNOWN MATERIAL DEFECTS</h4>
-      <table style="width: 100%; margin: 10px 0;">
-        <tr>
-          <td><strong>1. ROOF:</strong> (Age: 12 yrs) Any leaks?</td>
-          <td style="text-align: right; font-weight: bold;">NONE KNOWN</td>
-        </tr>
-        <tr>
-          <td><strong>2. BASEMENT:</strong> Any past flooding?</td>
-          <td style="text-align: right; font-weight: bold;">NONE KNOWN</td>
-        </tr>
-        <tr>
-          <td><strong>3. PLUMBING:</strong> Any known leaks/issues?</td>
-          <td style="text-align: right; font-weight: bold;">NONE KNOWN</td>
-        </tr>
-        <tr>
-          <td><strong>4. FOUNDATION:</strong> Any known cracks?</td>
-          <td style="text-align: right; font-weight: bold; color: #d32f2f;">MINOR SETTLING</td>
-        </tr>
-      </table>
-    </div>
-<div style="margin-top: 25px; padding: 15px; background: #f9f9f9; border: 1px solid #eee; font-size: 0.8em; font-style: italic; color: #666;">
-      "Seller certifies that the information herein is true and correct to the best of Seller's knowledge as of the date signed. Verification protects against unauthorized alteration of this disclosure."
-    </div>
-  </div>
-<div style="padding: 20px; background: #fff; border-top: 1px dashed #999; text-align: center;">
-    <div data-verify-line="disclose" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #004d40; font-weight: bold;"
-      title="Demo only: Real estate boards don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:springfield-realtors.org/v/SMITH992288 <span verifiable-text="end" data-for="disclose">]</span>
-    </div>
-    <div style="font-size: 0.7em; color: #999; margin-top: 10px;">
-      Scan to verify disclosure integrity, original defect list, and seller authorization.
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="disclose">[</span>RESIDENTIAL PROPERTY DISCLOSURE
+STATE MANDATED SELLER STATEMENT
+═══════════════════════════════════════════════════════════════════
+
+Property Address:                      Date of Disclosure: 15 MAR 2026
+  123 MAPLE STREET                     Status:             COMPLETED
+  SPRINGFIELD, USA
+Seller: ROBERT & MARY SMITH
+
+KNOWN MATERIAL DEFECTS
+───────────────────────────────────────────────────────────────────
+1. ROOF (Age: 12 yrs) Any leaks?                        NONE KNOWN
+2. BASEMENT Any past flooding?                          NONE KNOWN
+3. PLUMBING Any known leaks/issues?                     NONE KNOWN
+4. FOUNDATION Any known cracks?                      MINOR SETTLING
+
+Seller certifies information is true and correct to the
+best of Seller's knowledge as of the date signed.
+
+<span data-verify-line="disclose">verify:springfield-realtors.org/v/SMITH992288</span> <span verifiable-text="end" data-for="disclose">]</span></pre>
 </div>
 
 ## Data Verified

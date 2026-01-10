@@ -14,48 +14,26 @@ In the US and many other nations, the **W-2 Wage and Tax Statement** (or its equ
 
 Lenders use W-2s to approve mortgages, and tax authorities use them to verify your tax return. Fraud is rampant: criminals create "Synthetic W-2s" to claim fraudulent tax refunds, or they "edit" a real W-2 to inflate their income to qualify for a luxury home loan. Verified hashes bind the **Employee SSN, Total Wages, and Employer EIN** to the payroll provider's or the tax agency's domain (e.g., `adp.com`, `gusto.com`, or `irs.gov`).
 
-<div style="max-width: 650px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 1px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <div style="padding: 20px; border-bottom: 2px solid #000; background: #f9f9f9; display: flex; justify-content: space-between; align-items: center;">
-    <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="tax">[</span>Form W-2 Wage and Tax Statement</div>
-    <div style="font-weight: bold; font-size: 1.5em; border: 2px solid #000; padding: 5px 10px;">2025</div>
-  </div>
-<div style="padding: 20px;">
-    <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.85em; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
-      <div>
-        <strong>Employer Identification Number (EIN):</strong> 99-2288776<br>
-        <strong>Employer Name & Address:</strong><br>
-        ACME GLOBAL HUB, INC.<br>
-        123 FACTORY LANE, SPRINGFIELD, USA
-      </div>
-      <div style="text-align: right;">
-        <strong>Control Number:</strong> CN-992288-XJ<br>
-        <strong>Employee SSN:</strong> XXX-XX-1234
-      </div>
-    </div>
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9em; margin-bottom: 20px;">
-      <div style="border: 1px solid #999; padding: 10px; background: #fffbe6;">
-        <div style="font-size: 0.7em; color: #666;">1. WAGES, TIPS, OTHER COMPENSATION:</div>
-        <div style="font-size: 1.4em; font-weight: bold;">$ 145,000.00</div>
-      </div>
-      <div style="border: 1px solid #999; padding: 10px;">
-        <div style="font-size: 0.7em; color: #666;">2. FEDERAL INCOME TAX WITHHELD:</div>
-        <div style="font-size: 1.4em; font-weight: bold;">$ 28,450.42</div>
-      </div>
-    </div>
-<div style="font-size: 0.85em; line-height: 1.4; color: #333;">
-      <strong>Employee Name:</strong> JOHN D. SMITH<br>
-      <strong>Address:</strong> 42 WALL STREET, NEW YORK, NY 10005
-    </div>
-  </div>
-<div style="padding: 20px; background: #f5f5f5; border-top: 1px solid #000; text-align: center;">
-    <div style="font-size: 0.7em; color: #555; margin-bottom: 10px; font-style: italic;">
-      This statement is a verified extract of the official payroll and tax record. Access restricted to authorized financial institutions.
-    </div>
-    <div data-verify-line="tax" style="border-top: 1px dashed #999; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
-      title="Demo only: Payroll providers don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:adp.com/tax/v/W2-2025-SMITH1234 <span verifiable-text="end" data-for="tax">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="tax">[</span>Form W-2 Wage and Tax Statement                               2025
+═══════════════════════════════════════════════════════════════════
+
+Employer EIN:           99-2288776        Control Number: CN-992288-XJ
+Employer Name/Address:                    Employee SSN:   XXX-XX-1234
+  ACME GLOBAL HUB, INC.
+  123 FACTORY LANE, SPRINGFIELD, USA
+
+───────────────────────────────────────────────────────────────────
+1. WAGES, TIPS, OTHER COMPENSATION:                    $ 145,000.00
+2. FEDERAL INCOME TAX WITHHELD:                        $  28,450.42
+───────────────────────────────────────────────────────────────────
+
+Employee Name:   JOHN D. SMITH
+Address:         42 WALL STREET, NEW YORK, NY 10005
+
+Verified extract of official payroll and tax record.
+
+<span data-verify-line="tax">verify:adp.com/tax/v/W2-2025-SMITH1234</span> <span verifiable-text="end" data-for="tax">]</span></pre>
 </div>
 
 ## Data Verified

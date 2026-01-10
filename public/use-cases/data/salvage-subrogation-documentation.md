@@ -14,60 +14,29 @@ In the insurance industry, **Salvage** refers to the value recovered from a "Tot
 
 These documents are the "Recovery Ledger" of the insurance world. Fraud is common in the "Secondary Car Market." Dishonest flippers "Wash" a salvage title by creating a fake PDF that shows the vehicle was "Repaired and Inspected" by a famous carrier like Allstate, when it actually should have been crushed. Similarly, a third party might "edit" a subrogation letter to hide that they owe $50,000 to an insurance pool. Verified hashes bind the **VIN, Salvage Value, and At-Fault Party ID** to the carrier's or the salvage yard's domain (e.g., `copart.com` or `geico.com`).
 
-<div style="max-width: 650px; margin: 24px auto; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; border: 2px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <div style="background: #000; color: #fff; padding: 25px; display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid #ce9e00;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;"><span verifiable-text="start" data-for="salvage">[</span>COPART SALVAGE SERVICES</div>
-      <div style="font-size: 0.8em; opacity: 0.9;">Total Loss Asset Management</div>
-    </div>
-    <div style="text-align: right;">
-      <div style="font-weight: bold; font-size: 0.9em;">SALVAGE CERTIFICATE</div>
-      <div style="font-size: 0.7em;">Lot: 9922-8877-XJ</div>
-    </div>
-  </div>
-<div style="padding: 25px;">
-    <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
-      <div>
-        <strong>Insurer:</strong> GEICO GENERAL INSURANCE<br>
-        <strong>Claim #:</strong> 99228877-PROP<br>
-        <strong>Vehicle:</strong> 2024 Tesla Model 3
-      </div>
-      <div style="text-align: right;">
-        <strong>VIN:</strong> <span style="font-family: monospace;">1ABC-9922-8877-Z</span><br>
-        <strong>Status:</strong> TOTAL LOSS (SALVAGE)<br>
-        <strong>Date:</strong> 15 MAR 2026
-      </div>
-    </div>
-<div style="background: #fdfdfd; border: 1px solid #ddd; padding: 15px; margin-bottom: 20px; border-radius: 4px;">
-      <h4 style="margin-top: 0; color: #ce9e00; font-size: 0.9em; border-bottom: 1px solid #ccc; padding-bottom: 5px;">VERIFIED SALVAGE DATA</h4>
-      <table style="width: 100%; font-size: 0.9em;">
-        <tr>
-          <td><strong>Estimated ACV (Before Loss):</strong></td>
-          <td style="text-align: right;">$ 42,500.00</td>
-        </tr>
-        <tr>
-          <td><strong>Repair Estimate:</strong></td>
-          <td style="text-align: right; color: #d32f2f;">$ 38,400.00</td>
-        </tr>
-        <tr style="border-top: 1px solid #ddd;">
-          <td><strong>High-Bid Salvage Value:</strong></td>
-          <td style="text-align: right; font-weight: bold;">$ 8,250.00</td>
-        </tr>
-      </table>
-    </div>
-<div style="font-size: 0.75em; color: #666; font-style: italic; text-align: center;">
-      This certificate proves the asset has been legally declared a Total Loss. Verification protects against "Title Washing" and fraudulent re-sale as a "Clean" vehicle.
-    </div>
-  </div>
-<div style="padding: 20px; background: #f5f5f5; border-top: 1px solid #000; text-align: center;">
-    <div data-verify-line="salvage" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
-      title="Demo only: Salvage yards don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:copart.com/v/VIN1ABC992288 <span verifiable-text="end" data-for="salvage">]</span>
-    </div>
-    <div style="font-size: 0.7em; color: #777; margin-top: 10px;">
-      Scan to verify total-loss history, subrogation liens, and the integrity of the repair-vs-salvage math.
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="salvage">[</span>COPART SALVAGE SERVICES
+Total Loss Asset Management
+═══════════════════════════════════════════════════════════════════
+
+SALVAGE CERTIFICATE                             Lot: 9922-8877-XJ
+
+Insurer:   GEICO GENERAL INSURANCE      VIN:     1ABC-9922-8877-Z
+Claim #:   99228877-PROP                Status:  TOTAL LOSS (SALVAGE)
+Vehicle:   2024 Tesla Model 3           Date:    15 MAR 2026
+
+VERIFIED SALVAGE DATA
+───────────────────────────────────────────────────────────────────
+Estimated ACV (Before Loss):                           $ 42,500.00
+Repair Estimate:                                       $ 38,400.00
+───────────────────────────────────────────────────────────────────
+High-Bid Salvage Value:                                $  8,250.00
+
+This certificate proves the asset has been legally declared a
+Total Loss. Verification protects against "Title Washing" and
+fraudulent re-sale as a "Clean" vehicle.
+
+<span data-verify-line="salvage">verify:copart.com/v/VIN1ABC992288</span> <span verifiable-text="end" data-for="salvage">]</span></pre>
 </div>
 
 ## Data Verified

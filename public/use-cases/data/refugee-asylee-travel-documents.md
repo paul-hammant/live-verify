@@ -14,43 +14,24 @@ A **Refugee Travel Document (Form I-571)** is a passport-style booklet issued to
 
 For a refugee, this document is a fragile lifeline. If an airline agent in a foreign airport (e.g., in Turkey or Jordan) doesn't recognize the blue booklet or think it looks "fake," the traveler can be stranded in a dangerous location. Verified hashes bind the **Document ID, Validity Dates, and Holder's Photo** to the `uscis.gov` domain, providing global authorities with an instant way to trust the document.
 
-<div style="max-width: 450px; margin: 24px auto; font-family: 'Times New Roman', serif; border: 2px solid #002d62; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
-  <div style="background: #002d62; color: #fff; padding: 20px; text-align: center; border-bottom: 2px solid #ce9e00;">
-    <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 1px;"><span verifiable-text="start" data-for="refugee">[</span>UNITED STATES OF AMERICA</div>
-    <div style="font-size: 0.8em; opacity: 0.9; text-transform: uppercase;">Refugee Travel Document</div>
-  </div>
-<div style="padding: 25px; background: #fdfdfd;">
-    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px;">
-      <div style="width: 110px; height: 140px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #777; font-size: 0.7em; text-align: center;">[HOLDER PHOTO]</div>
-      <div style="flex-grow: 1; margin-left: 20px; font-size: 0.9em; line-height: 1.4;">
-        <div style="font-size: 0.75em; color: #888; text-transform: uppercase;">Document No.</div>
-        <div style="font-size: 1.2em; font-weight: bold; color: #002d62;">RT-9922-8877-XJ</div>
-<div style="margin-top: 10px;">
-          <strong>Name:</strong> JUAN VALDEZ<br>
-          <strong>DOB:</strong> 05 MAY 1980<br>
-          <strong>Sex:</strong> M • <strong>Birthplace:</strong> COL
-        </div>
-      </div>
-    </div>
-<div style="border-top: 1px solid #eee; padding-top: 15px; font-size: 0.85em; color: #333;">
-      <div style="display: grid; grid-template-columns: 1fr 1fr;">
-        <div><strong>Issued:</strong> 15 MAR 2026</div>
-        <div style="text-align: right;"><strong>Expires:</strong> 14 MAR 2027</div>
-      </div>
-      <p style="margin-top: 10px; font-style: italic; color: #666;">
-        "This document is issued under the 1951 Convention relating to the Status of Refugees."
-      </p>
-    </div>
-  </div>
-<div style="padding: 20px; background: #fff; border-top: 1px dashed #999; text-align: center;">
-    <div data-verify-line="refugee" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
-      title="Demo only: USCIS doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:uscis.gov/v/i571/RT99228877 <span verifiable-text="end" data-for="refugee">]</span>
-    </div>
-    <div style="font-size: 0.65em; color: #999; margin-top: 8px;">
-      Scan to verify travel eligibility and status. This document is the property of the US Government.
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="refugee">[</span>UNITED STATES OF AMERICA
+Refugee Travel Document
+═══════════════════════════════════════════════════════════════════
+
+Document No.:   RT-9922-8877-XJ
+
+Name:           JUAN VALDEZ
+DOB:            05 MAY 1980
+Sex:            M
+Birthplace:     COL
+
+Issued:         15 MAR 2026              Expires:  14 MAR 2027
+
+"This document is issued under the 1951 Convention
+relating to the Status of Refugees."
+
+<span data-verify-line="refugee">verify:uscis.gov/v/i571/RT99228877</span> <span verifiable-text="end" data-for="refugee">]</span></pre>
 </div>
 
 ## Data Verified

@@ -128,55 +128,27 @@ In the logistics and retail industries, a **Warehouse Receipt** is the proof tha
 
 Because they represent high-value physical assets, these receipts are a primary target for "Phantom Inventory" fraud. A dishonest business owner might "edit" a receipt to show they have 1,000 units instead of 100 to get a bigger loan. Similarly, they might use a fake receipt from a non-existent warehouse to create "paper wealth." Verified hashes bind the **SKU Quantities, Storage Location, and Total Value** to the warehouse operator's domain (e.g., `prologis.com` or `ironmountain.com`).
 
-<div style="max-width: 650px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 4px double #333; background: #fffbe6; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <div style="padding: 25px; border-bottom: 2px solid #000; text-align: center; background: #fffbe6;">
-    <div style="font-weight: bold; font-size: 1.4em;"><span verifiable-text="start" data-for="warehouse">[</span>METRO STORAGE & LOGISTICS</div>
-    <div style="font-size: 0.8em; opacity: 0.9;">Global Bonded Warehousing • Facility ID: ROT-42</div>
-  </div>
-<div style="padding: 20px;">
-    <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.85em; margin-bottom: 20px;">
-      <div>
-        <strong>Depositor:</strong> GLOBAL TECH IMPORTS LLC<br>
-        <strong>Account #:</strong> ACCT-9922-88<br>
-        <strong>Address:</strong> London, UK
-      </div>
-      <div style="text-align: right;">
-        <strong>Receipt Number:</strong> WR-2026-8844<br>
-        <strong>Date Issued:</strong> 15 MAR 2026<br>
-        <strong>Location:</strong> AISLE 4, BIN 12-B
-      </div>
-    </div>
-<table style="width: 100%; border-collapse: collapse; font-size: 0.85em; margin-bottom: 20px;">
-      <tr style="border-top: 2px solid #000; border-bottom: 1px solid #000; background: #eee;">
-        <th style="text-align: left; padding: 8px;">SKU / Description</th>
-        <th style="text-align: center; padding: 8px;">Units</th>
-        <th style="text-align: center; padding: 8px;">Weight</th>
-        <th style="text-align: right; padding: 8px;">Estimated Value</th>
-      </tr>
-      <tr style="border-bottom: 1px solid #ddd;">
-        <td style="padding: 10px 8px;">XJ-900 Processor Units (Tray)</td>
-        <td style="text-align: center; padding: 8px;">500</td>
-        <td style="text-align: center; padding: 8px;">1,200 KG</td>
-        <td style="text-align: right; padding: 8px;">$ 250,000.00</td>
-      </tr>
-      <tr style="font-weight: bold; font-size: 1em; background: #fdfdfd;">
-        <td colspan="3" style="text-align: right; padding: 10px;">TOTAL VERIFIED ASSET VALUE (USD):</td>
-        <td style="text-align: right; padding: 10px;">$ 250,000.00</td>
-      </tr>
-    </table>
-<div style="font-size: 0.75em; color: #555; line-height: 1.4; border: 1px solid #999; padding: 10px; background: #fff;">
-      <strong>Terms:</strong> Goods are stored subject to the Standard Warehouse Contract. Negotiable only if endorsed. Lien active for unpaid storage fees.
-    </div>
-  </div>
-<div style="padding: 20px; background: #fdfdfd; border-top: 1px solid #000; text-align: center;">
-    <div data-verify-line="warehouse" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
-      title="Demo only: Warehouses don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:metro-logistics.com/v/WR20268844 <span verifiable-text="end" data-for="warehouse">]</span>
-    </div>
-    <div style="font-size: 0.7em; color: #666; margin-top: 10px; font-style: italic;">
-      Scan to verify inventory presence, lien status, and owner authenticity.
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="warehouse">[</span>METRO STORAGE & LOGISTICS
+Global Bonded Warehousing - Facility ID: ROT-42
+═══════════════════════════════════════════════════════════════════
+
+Depositor:  GLOBAL TECH IMPORTS LLC      Receipt Number: WR-2026-8844
+Account #:  ACCT-9922-88                 Date Issued:    15 MAR 2026
+Address:    London, UK                   Location:       AISLE 4, BIN 12-B
+
+INVENTORY DETAIL
+───────────────────────────────────────────────────────────────────
+SKU / Description                  Units    Weight    Estimated Value
+───────────────────────────────────────────────────────────────────
+XJ-900 Processor Units (Tray)        500  1,200 KG     $ 250,000.00
+───────────────────────────────────────────────────────────────────
+TOTAL VERIFIED ASSET VALUE (USD):                      $ 250,000.00
+
+TERMS: Goods are stored subject to the Standard Warehouse Contract.
+Negotiable only if endorsed. Lien active for unpaid storage fees.
+
+<span data-verify-line="warehouse">verify:metro-logistics.com/v/WR20268844</span> <span verifiable-text="end" data-for="warehouse">]</span></pre>
 </div>
 
 ## Data Verified

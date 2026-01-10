@@ -14,48 +14,24 @@ For any manufactured product—especially electronics, toys, and building materi
 
 These documents are the "Entry Permit" for global commerce. US Customs, Amazon, and Walmart will not sell or import a product unless it has a verified **Certificate of Compliance (CoC)**. Fraud is a massive global issue: factories in unregulated regions often place fake "UL" or "CE" labels on un-tested, dangerous products to save on testing costs. Verified hashes bind the **Product Model, Testing Standard, and Lab ID** to the certifying body's domain (e.g., `ul.com` or `intertek.com`).
 
-<div style="max-width: 650px; margin: 24px auto; font-family: 'Helvetica Neue', Arial, sans-serif; border: 2px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-  <div style="background: #000; color: #fff; padding: 25px; display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid #d32f2f;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;"><span verifiable-text="start" data-for="safety">[</span>UL SOLUTIONS</div>
-      <div style="font-size: 0.75em; opacity: 0.8; text-transform: uppercase;">Certificate of Compliance</div>
-    </div>
-    <div style="width: 60px; height: 60px; background: #fff; color: #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.5em; border: 2px solid #d32f2f;">UL</div>
-  </div>
-<div style="padding: 30px;">
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
-      <div>
-        <strong>Manufacturer:</strong> GLOBAL POWER TECH LLC<br>
-        <strong>Model:</strong> XJ-9922 High-Output Charger<br>
-        <strong>Batch #:</strong> LOT-2026-8844
-      </div>
-      <div style="text-align: right;">
-        <strong>Certificate #:</strong> UL-2026-992288<br>
-        <strong>Issue Date:</strong> 15 MAR 2026<br>
-        <strong>Lab ID:</strong> #9922-CH
-      </div>
-    </div>
-<div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin-bottom: 20px; border-radius: 4px;">
-      <h4 style="margin-top: 0; color: #333; font-size: 0.9em; border-bottom: 1px solid #ccc; padding-bottom: 5px;">VERIFIED SAFETY STANDARDS</h4>
-      <ul style="margin: 5px 0; padding-left: 20px; font-size: 0.85em; line-height: 1.4;">
-        <li><strong>UL 62368-1:</strong> Audio/Video, IT and Communication Tech.</li>
-        <li><strong>CAN/CSA C22.2:</strong> Canadian Electrical Code Compliance.</li>
-        <li><strong>IEC 60950-1:</strong> International IT Safety Standard.</li>
-      </ul>
-    </div>
-<div style="font-size: 0.75em; color: #666; font-style: italic; text-align: center;">
-      This certificate confirms that representative samples of this product have been tested and found to meet the requirements of the standards above.
-    </div>
-  </div>
-<div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #bbb; text-align: center;">
-    <div data-verify-line="safety" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
-      title="Demo only: Standards bodies don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:ul.com/v/CERT992288-XJ <span verifiable-text="end" data-for="safety">]</span>
-    </div>
-    <div style="font-size: 0.7em; color: #999; margin-top: 10px;">
-      Scan to verify testing integrity, current listing status, and manufacturer factory-audit compliance.
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="safety">[</span>UL SOLUTIONS
+Certificate of Compliance
+═══════════════════════════════════════════════════════════════════
+
+Manufacturer:  GLOBAL POWER TECH LLC      Certificate #: UL-2026-992288
+Model:         XJ-9922 High-Output Charger Issue Date:   15 MAR 2026
+Batch #:       LOT-2026-8844              Lab ID:        #9922-CH
+
+VERIFIED SAFETY STANDARDS
+───────────────────────────────────────────────────────────────────
+- UL 62368-1: Audio/Video, IT and Communication Tech
+- CAN/CSA C22.2: Canadian Electrical Code Compliance
+- IEC 60950-1: International IT Safety Standard
+
+Representative samples tested and found to meet requirements.
+
+<span data-verify-line="safety">verify:ul.com/v/CERT992288-XJ</span> <span verifiable-text="end" data-for="safety">]</span></pre>
 </div>
 
 ## Data Verified

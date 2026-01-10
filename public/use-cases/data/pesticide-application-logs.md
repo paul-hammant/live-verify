@@ -14,67 +14,27 @@ In the agriculture industry, the **Pesticide Application Log** is the mandatory 
 
 These logs are the "Safety Map" of our food supply. Large retailers (e.g., Whole Foods, Tesco) and export authorities use them to ensure that crops don't contain illegal residues. Fraud is a major concern: a farm might "scrub" its log to hide the use of a banned chemical or to hide that they sprayed too close to a harvest date. Verified hashes bind the **Chemical EPA #, Application Date, and Field ID** to the farm's or the certified applicator's domain (e.g., `sunnyacres.farm` or `ag-applicators.com`).
 
-<div style="max-width: 650px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 2px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <div style="padding: 20px; border-bottom: 2px solid #000; background: #f9f9f9; display: flex; justify-content: space-between; align-items: center;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="pest">[</span>PESTICIDE APPLICATION RECORD</div>
-      <div style="font-size: 0.8em; color: #666;">In accordance with EPA 40 CFR Part 170</div>
-    </div>
-    <div style="text-align: right;">
-      <div style="font-weight: bold; font-size: 1em;">LOG #: 2026-NY-42</div>
-    </div>
-  </div>
-<div style="padding: 20px;">
-    <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 20px; font-size: 0.85em; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
-      <div>
-        <strong>Farm / Operation:</strong> SUNNY ACRES FAMILY FARM<br>
-        <strong>Field ID:</strong> NORTH-SIDE (PARCEL 9922)<br>
-        <strong>Crop:</strong> Braeburn Apples
-      </div>
-      <div style="text-align: right;">
-        <strong>Date of Application:</strong> 15 MAR 2026<br>
-        <strong>Start Time:</strong> 06:15 AM<br>
-        <strong>Applicator:</strong> David R. Chen
-      </div>
-    </div>
-<div style="background: #fffbe6; padding: 15px; border: 1px solid #ffe58f; border-radius: 4px; margin-bottom: 20px;">
-      <h4 style="margin-top: 0; font-size: 0.9em; border-bottom: 1px solid #ffe58f; padding-bottom: 5px; color: #856404;">CHEMICAL DETAILS</h4>
-      <table style="width: 100%; font-size: 0.9em;">
-        <tr>
-          <td><strong>Product Name:</strong></td>
-          <td style="text-align: right;">Roundup UltraMax</td>
-        </tr>
-        <tr>
-          <td><strong>EPA Reg Number:</strong></td>
-          <td style="text-align: right; font-weight: bold;">524-549</td>
-        </tr>
-        <tr>
-          <td><strong>Active Ingredient:</strong></td>
-          <td style="text-align: right;">Glyphosate (50.2%)</td>
-        </tr>
-        <tr>
-          <td><strong>Total Amount Applied:</strong></td>
-          <td style="text-align: right; font-weight: bold;">42.5 Gallons</td>
-        </tr>
-      </table>
-    </div>
-<div style="display: flex; justify-content: space-between; align-items: flex-end; font-size: 0.8em;">
-      <div>
-        <div style="border-top: 1px solid #000; width: 180px; padding-top: 5px; font-style: italic;">David Chen, Certified Applicator</div>
-        <div>License: #NY-PEST-992288 • Exp: 2027</div>
-      </div>
-      <div style="border: 2px solid #000; padding: 8px; font-weight: bold; text-align: center; text-transform: uppercase;">ENTRY RESTRICTED<br>UNTIL 17 MAR</div>
-    </div>
-  </div>
-<div style="padding: 20px; background: #eee; border-top: 1px solid #ddd; text-align: center;">
-    <div data-verify-line="pest" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
-      title="Demo only: Farms don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:sunnyacres.farm/v/NY42-2026 <span verifiable-text="end" data-for="pest">]</span>
-    </div>
-    <div style="font-size: 0.7em; color: #777; margin-top: 10px; font-style: italic;">
-      Scan to verify chemical concentration, weather conditions, and mandatory REI (Restricted Entry Interval) status.
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="pest">[</span>PESTICIDE APPLICATION RECORD
+In accordance with EPA 40 CFR Part 170                LOG #: 2026-NY-42
+═══════════════════════════════════════════════════════════════════
+
+Farm/Operation:  SUNNY ACRES FAMILY FARM  Date:       15 MAR 2026
+Field ID:        NORTH-SIDE (PARCEL 9922) Start Time: 06:15 AM
+Crop:            Braeburn Apples          Applicator: David R. Chen
+
+CHEMICAL DETAILS
+───────────────────────────────────────────────────────────────────
+Product Name:                                     Roundup UltraMax
+EPA Reg Number:                                            524-549
+Active Ingredient:                             Glyphosate (50.2%)
+Total Amount Applied:                                  42.5 Gallons
+
+_________________________
+David Chen, Certified Applicator              [ENTRY RESTRICTED
+License: #NY-PEST-992288 - Exp: 2027          UNTIL 17 MAR]
+
+<span data-verify-line="pest">verify:sunnyacres.farm/v/NY42-2026</span> <span verifiable-text="end" data-for="pest">]</span></pre>
 </div>
 
 ## Data Verified

@@ -16,29 +16,25 @@ For business travelers, this receipt is critical for **Expense Audits**. It prov
 
 "Double-Dipping" fraud happens when an employee gets a refund for a room but still tries to claim the original cost from their employer. Verified hashes allow corporate finance departments to automatically flag "Ghost Refunds" where an employee provides a fake PDF to hide a credit.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 2px solid #a3b18a; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
-  <div style="text-align: center; border-bottom: 1px solid #a3b18a; padding-bottom: 10px; margin-bottom: 25px;">
-    <div style="font-weight: bold; font-size: 1.4em; color: #3a5a40;"><span verifiable-text="start" data-for="hotel-cancel">[</span>THE GRAND HOTEL - PARIS</div>
-    <div style="font-size: 0.85em; color: #588157; margin-top: 5px;">OFFICIAL CANCELLATION NOTICE</div>
-  </div>
-<div style="font-size: 1em; line-height: 1.6; color: #333; text-align: justify;">
-    <p>This document confirms the cancellation of your reservation. A refund has been processed to your original payment method.</p>
-<div style="margin: 20px 0; background: #f9f9f9; padding: 15px; border: 1px solid #eee; font-size: 0.95em;">
-      <strong>Guest:</strong> Madame E. Dubois<br>
-      <strong>Booking Ref:</strong> GHP-47291-ED<br>
-      <strong>Refund Amount:</strong> € 1,200.00
-    </div>
-<p><strong>Cancellation Date:</strong> June 28, 2025<br>
-    <strong>Policy:</strong> Free cancellation (48h prior to arrival).<br>
-    <strong>Status:</strong> REFUNDED & CLOSED</p>
-  </div>
-<div style="margin-top: 40px; text-align: right;">
-    <div style="border-top: 1px solid #000; width: 200px; display: inline-block; padding-top: 5px; font-size: 0.9em; color: #777;">Reservations Manager</div>
-  </div>
-<div data-verify-line="hotel-cancel" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
-      title="Demo only: The Grand Hotel doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:grandhotelparis.com/v/GHP-47291 <span verifiable-text="end" data-for="hotel-cancel">]</span>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="hotel-cancel">[</span>THE GRAND HOTEL - PARIS
+OFFICIAL CANCELLATION NOTICE
+
+This document confirms the cancellation of your reservation.
+A refund has been processed to your original payment method.
+
+Guest:             Madame E. Dubois
+Booking Ref:       GHP-47291-ED
+Refund Amount:     € 1,200.00
+
+Cancellation Date: June 28, 2025
+Policy:            Free cancellation (48h prior to arrival)
+Status:            REFUNDED & CLOSED
+
+                                        ─────────────────────────
+                                        Reservations Manager
+
+<span data-verify-line="hotel-cancel">verify:grandhotelparis.com/v/GHP-47291</span> <span verifiable-text="end" data-for="hotel-cancel">]</span></pre>
 </div>
 
 ## Data Verified
@@ -119,49 +115,26 @@ At the front desk, clerks often claim "the system is down" or "we have no record
 
 A **Verified Confirmation** from the hotel's domain ends the argument instantly. More importantly, it helps corporate travelers prove to their employer that the "Presidential Suite" they stayed in was a **Verified Free Perk** and not an unapproved personal splurge on the company card.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #d4af37; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
-  <div style="background: #1a1a1a; color: #d4af37; padding: 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #d4af37;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 1px;"><span verifiable-text="start" data-for="upgrade">[</span>THE RITZ-CARLTON</div>
-      <div style="font-size: 0.8em; color: #fff;">Official Suite Upgrade Confirmation</div>
-    </div>
-    <div style="font-size: 1.5em;">✨</div>
-  </div>
-<div style="padding: 30px;">
-    <div style="text-align: center; margin-bottom: 25px;">
-      <h3 style="margin: 0; color: #1a1a1a;">UPGRADE SUCCESSFUL</h3>
-      <div style="font-size: 0.9em; color: #666; margin-top: 5px;">Reservation ID: RC-99228877</div>
-    </div>
-<div style="font-size: 1em; line-height: 1.6; color: #333;">
-      <p>Dear <strong>Sarah Jane Smith</strong>,</p>
-      <p>We are pleased to confirm your room upgrade for your upcoming stay at <strong>The Ritz-Carlton, Maui</strong>.</p>
-<div style="background: #fdfcf0; border: 1px solid #d4af37; padding: 15px; margin: 20px 0; border-radius: 4px;">
-        <table style="width: 100%; font-size: 0.95em;">
-          <tr>
-            <td>Original Room:</td>
-            <td>Deluxe Ocean View</td>
-          </tr>
-          <tr>
-            <td><strong>Upgraded To:</strong></td>
-            <td><strong>Residential Garden View Suite</strong></td>
-          </tr>
-          <tr>
-            <td>Upgrade Method:</td>
-            <td>Loyalty Perk (Ambassador Elite)</td>
-          </tr>
-          <tr>
-            <td>Upgrade Value:</td>
-            <td>$ 450.00 / Night (Complimentary)</td>
-          </tr>
-        </table>
-      </div>
-<p style="font-size: 0.85em; font-style: italic;">Please present this verified confirmation at the front desk upon arrival.</p>
-    </div>
-<div data-verify-line="upgrade" style="border-top: 1px dashed #d4af37; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
-      title="Demo only: Ritz-Carlton doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:ritzcarlton.com/upgrades/v/RC99228877 <span verifiable-text="end" data-for="upgrade">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="upgrade">[</span>THE RITZ-CARLTON
+Official Suite Upgrade Confirmation
+
+UPGRADE SUCCESSFUL                    Reservation ID: RC-99228877
+
+Dear Sarah Jane Smith,
+
+We are pleased to confirm your room upgrade for your upcoming
+stay at The Ritz-Carlton, Maui.
+
+Original Room:   Deluxe Ocean View
+Upgraded To:     Residential Garden View Suite
+Upgrade Method:  Loyalty Perk (Ambassador Elite)
+Upgrade Value:   $ 450.00 / Night (Complimentary)
+
+Please present this verified confirmation at the front desk
+upon arrival.
+
+<span data-verify-line="upgrade">verify:ritzcarlton.com/upgrades/v/RC99228877</span> <span verifiable-text="end" data-for="upgrade">]</span></pre>
 </div>
 
 ## Data Verified
@@ -242,43 +215,23 @@ The **Member Statement** is the proof of your "Hotel Wealth" and your Elite Stat
 
 You need this verified proof for a **"Status Match"**—where a rival hotel gives you free suites and breakfast just to win your business. Fraudsters often "Photoshop" their status to get free perks they didn't earn. Verified hashes allow hotel groups to see the **un-altered point balance** directly from the brand's domain.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <div style="background: #002d62; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="hotel-loy">[</span>MARRIOTT BONVOY™</div>
-      <div style="font-size: 0.8em; opacity: 0.8;">Official Member Statement</div>
-    </div>
-    <div style="text-align: right;">
-      <div style="font-size: 0.8em;">Member #: 99228877</div>
-    </div>
-  </div>
-<div style="padding: 25px;">
-    <div style="display: flex; justify-content: space-between; margin-bottom: 25px;">
-      <div>
-        <div style="font-size: 1.1em; font-weight: bold; color: #333;">SARAH JANE SMITH</div>
-        <div style="font-size: 0.9em; color: #666;">Status: AMBASSADOR ELITE</div>
-      </div>
-      <div style="text-align: right;">
-        <div style="font-size: 0.7em; color: #777;">Period: MAR 2026</div>
-        <div style="font-size: 1.8em; font-weight: bold; color: #002d62;">2,450,000</div>
-        <div style="font-size: 0.7em; color: #002d62; font-weight: bold;">TOTAL POINTS</div>
-      </div>
-    </div>
-<div style="font-size: 0.9em; line-height: 1.5; color: #333; border-top: 1px solid #eee; padding-top: 15px;">
-      <p><strong>2026 Progress:</strong></p>
-      <div style="width: 100%; height: 10px; background: #eee; border-radius: 5px; margin-bottom: 5px;">
-        <div style="width: 85%; height: 10px; background: #002d62; border-radius: 5px;"></div>
-      </div>
-      <p style="font-size: 0.8em; color: #666;">85 of 100 Nights for Lifetime Platinum</p>
-    </div>
-<div style="margin-top: 25px; padding: 10px; background: #f0f4f8; border: 1px solid #d1d9e6; font-size: 0.8em; color: #002d62; font-style: italic; text-align: center;">
-      This statement is a verified record of your point balance and elite status. Valid for corporate housing and status-match requests.
-    </div>
-<div data-verify-line="hotel-loy" style="border-top: 1px dashed #999; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
-      title="Demo only: Marriott doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:marriott.com/loyalty/v/99228877 <span verifiable-text="end" data-for="hotel-loy">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="hotel-loy">[</span>MARRIOTT BONVOY                          Member #: 99228877
+Official Member Statement
+
+Member:        SARAH JANE SMITH          Period: MAR 2026
+Status:        AMBASSADOR ELITE
+
+TOTAL POINTS:                               2,450,000
+
+2026 Progress: ████████████████████░░░░ 85%
+               85 of 100 Nights for Lifetime Platinum
+
+This statement is a verified record of your point balance
+and elite status. Valid for corporate housing and
+status-match requests.
+
+<span data-verify-line="hotel-loy">verify:marriott.com/loyalty/v/99228877</span> <span verifiable-text="end" data-for="hotel-loy">]</span></pre>
 </div>
 
 ## Data Verified

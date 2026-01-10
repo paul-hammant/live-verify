@@ -8,52 +8,28 @@ tags: ["auto", "bill-of-lading", "body-shop", "car-shipping", "card", "claim", "
 furtherDerivations: 4
 ---
 
-<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0;">
-  <div style="background: #0d47a1; color: #fff; padding: 15px; display: flex; justify-content: space-between; align-items: center;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.1em;"><span verifiable-text="start" data-for="claim">[</span>ALLSTATE INSURANCE</div>
-      <div style="font-size: 0.8em;">Claims Processing Center</div>
-    </div>
-    <div style="text-align: right;">
-      <div style="font-size: 0.8em;">Claim #: 99228877-X</div>
-      <div style="font-size: 0.8em;">March 15, 2026</div>
-    </div>
-  </div>
-<div style="padding: 25px;">
-    <h3 style="margin-top: 0; color: #0d47a1; border-bottom: 2px solid #0d47a1; padding-bottom: 5px;">REPAIR ESTIMATE SUMMARY</h3>
-<div style="font-size: 0.9em; line-height: 1.5; color: #333;">
-      <p><strong>Insured:</strong> MAX POWER<br>
-      <strong>Vehicle:</strong> 2024 Tesla Model 3 (VIN: ...5544)<br>
-      <strong>Body Shop:</strong> Joe's Auto Body, Springfield</p>
-<table style="width: 100%; margin-top: 15px; border-collapse: collapse;">
-        <tr style="background: #f5f5f5; border-bottom: 1px solid #ddd;">
-          <th style="text-align: left; padding: 5px;">Category</th>
-          <th style="text-align: right; padding: 5px;">Total</th>
-        </tr>
-        <tr>
-          <td style="padding: 5px;">Parts (OEM)</td>
-          <td style="text-align: right; padding: 5px;">$ 4,250.00</td>
-        </tr>
-        <tr>
-          <td style="padding: 5px;">Labor (Paint/Body)</td>
-          <td style="text-align: right; padding: 5px;">$ 2,100.00</td>
-        </tr>
-        <tr>
-          <td style="padding: 5px;">Sublet / Fees</td>
-          <td style="text-align: right; padding: 5px;">$ 450.00</td>
-        </tr>
-        <tr style="border-top: 1px solid #000; font-weight: bold;">
-          <td style="padding: 5px;">ESTIMATED REPAIR TOTAL:</td>
-          <td style="text-align: right; padding: 5px;">$ 6,800.00</td>
-        </tr>
-      </table>
-<p style="margin-top: 20px;"><strong>Adjuster:</strong> Sarah Miller (ID #992)</p>
-    </div>
-<div data-verify-line="claim" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
-      title="Demo only: Insurer doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:allstate.com/claims/v/99228877 <span verifiable-text="end" data-for="claim">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="claim">[</span>ALLSTATE INSURANCE
+Claims Processing Center
+REPAIR ESTIMATE SUMMARY                         Claim #: 99228877-X
+═══════════════════════════════════════════════════════════════════
+
+Date:       March 15, 2026
+Insured:    MAX POWER
+Vehicle:    2024 Tesla Model 3 (VIN: ...5544)
+Body Shop:  Joe's Auto Body, Springfield
+
+Category                                                     Total
+───────────────────────────────────────────────────────────────────
+Parts (OEM)                                              $ 4,250.00
+Labor (Paint/Body)                                       $ 2,100.00
+Sublet / Fees                                            $   450.00
+───────────────────────────────────────────────────────────────────
+ESTIMATED REPAIR TOTAL:                                  $ 6,800.00
+
+Adjuster:   Sarah Miller (ID #992)
+
+<span data-verify-line="claim">verify:allstate.com/claims/v/99228877</span> <span verifiable-text="end" data-for="claim">]</span></pre>
 </div>
 
 ## Data Verified
@@ -136,37 +112,24 @@ The card proves three things:
 
 Because people often cancel their insurance right after printing the card, police and DMV agents need a way to verify that the policy is **live** and hasn't been terminated for non-payment.
 
-<div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 1px solid #000; background: #fff; padding: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
-  <div style="background: #000; color: #fff; padding: 10px; display: flex; justify-content: space-between; align-items: center;">
-    <div style="font-weight: bold;"><span verifiable-text="start" data-for="ins">[</span>GEICO</div>
-    <div style="font-size: 0.8em;">AUTO INSURANCE ID CARD</div>
-  </div>
-<div style="padding: 15px;">
-    <div style="display: flex; justify-content: space-between; font-size: 0.8em; margin-bottom: 10px;">
-      <div>
-        <strong>Policy Number:</strong><br>
-        9988-77-66
-      </div>
-      <div style="text-align: right;">
-        <strong>NAIC Code:</strong><br>
-        22063
-      </div>
-    </div>
-<div style="font-size: 0.9em; line-height: 1.4; color: #333;">
-      <p><strong>Insured:</strong> RICHARD "DICK" GRAYSON<br>
-      <strong>Vehicle:</strong> 2025 Gotham Motors Bat-Sedan<br>
-      <strong>VIN:</strong> 1G6AX57L9RJ123456</p>
-<p><strong>Effective Date:</strong> JAN 01, 2026<br>
-      <strong>Expiration Date:</strong> JUL 01, 2026</p>
-    </div>
-<div style="font-size: 0.7em; color: #777; margin-top: 10px; border-top: 1px solid #eee; padding-top: 5px;">
-      This card is for information only. Refer to your policy for actual coverage.
-    </div>
-<div data-verify-line="ins" style="border-top: 1px dashed #999; margin-top: 15px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.7em; color: #555; text-align: center;"
-      title="Demo only: Geico doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:geico.com/v/99887766 <span verifiable-text="end" data-for="ins">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="ins">[</span>GEICO                                        AUTO INSURANCE ID CARD
+═══════════════════════════════════════════════════════════════════
+
+Policy Number:    9988-77-66
+NAIC Code:        22063
+
+Insured:          RICHARD "DICK" GRAYSON
+Vehicle:          2025 Gotham Motors Bat-Sedan
+VIN:              1G6AX57L9RJ123456
+
+Effective Date:   JAN 01, 2026
+Expiration Date:  JUL 01, 2026
+
+This card is for information only.
+Refer to your policy for actual coverage.
+
+<span data-verify-line="ins">verify:geico.com/v/99887766</span> <span verifiable-text="end" data-for="ins">]</span></pre>
 </div>
 
 ## Data Verified
@@ -245,37 +208,23 @@ An insurance policy can be 50 pages of legal jargon. The **Declarations Page** (
 
 Lenders (for car loans) and landlords often require a copy of the Dec Page. Fraudsters often "Photoshopping" these pages to show higher coverage limits than they actually have to win contracts or satisfy loan requirements.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: Arial, sans-serif; border: 1px solid #333; background: #fff; padding: 30px;">
-  <div style="display: flex; justify-content: space-between; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px;">
-    <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="autodec">[</span>PROGRESSIVE</div>
-    <div style="text-align: right; font-size: 0.8em;">POLICY DECLARATIONS<br>Renewal: Mar 15, 2026</div>
-  </div>
-<div style="font-size: 0.9em; line-height: 1.4;">
-    <p><strong>Named Insured:</strong> John Doe<br>
-    456 Oak Lane, Austin, TX 78701</p>
-<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
-      <tr style="background: #eee;">
-        <th style="text-align: left; padding: 5px;">Coverage</th>
-        <th style="text-align: right; padding: 5px;">Limits</th>
-      </tr>
-      <tr>
-        <td style="padding: 5px;">Bodily Injury Liability</td>
-        <td style="text-align: right; padding: 5px;">$ 250,000 / $ 500,000</td>
-      </tr>
-      <tr>
-        <td style="padding: 5px;">Property Damage</td>
-        <td style="text-align: right; padding: 5px;">$ 100,000</td>
-      </tr>
-      <tr>
-        <td style="padding: 5px;">Collision Deductible</td>
-        <td style="text-align: right; padding: 5px;">$ 500</td>
-      </tr>
-    </table>
-<p><strong>Vehicle:</strong> 2024 Ford F-150 (VIN ...9922)</p>
-  </div>
-<div data-verify-line="autodec" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;">
-    verify:progressive.com/v/dec/998877 <span verifiable-text="end" data-for="autodec">]</span>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="autodec">[</span>PROGRESSIVE
+POLICY DECLARATIONS                              Renewal: Mar 15, 2026
+═══════════════════════════════════════════════════════════════════
+
+Named Insured:  John Doe
+                456 Oak Lane, Austin, TX 78701
+
+Coverage                                                    Limits
+───────────────────────────────────────────────────────────────────
+Bodily Injury Liability                      $ 250,000 / $ 500,000
+Property Damage                                          $ 100,000
+Collision Deductible                                         $ 500
+
+Vehicle:        2024 Ford F-150 (VIN ...9922)
+
+<span data-verify-line="autodec">verify:progressive.com/v/dec/998877</span> <span verifiable-text="end" data-for="autodec">]</span></pre>
 </div>
 
 ## Data Verified
@@ -331,45 +280,26 @@ This document is the only thing protecting you if the car arrives at the destina
 
 Fraud is common: drivers sometimes "edit" the digital report *after* they damage the car, adding a scratch to the "Origin" report so it looks like it was already there. Verified snapshots prevent this "after-the-fact" tampering.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-  <div style="background: #333; color: #fff; padding: 15px; display: flex; justify-content: space-between; align-items: center;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.1em;"><span verifiable-text="start" data-for="damage">[</span>RELIABLE CAR CARRIERS, INC.</div>
-      <div style="font-size: 0.8em;">MC #123456 | DOT #998877</div>
-    </div>
-    <div style="text-align: right;">
-      <div style="font-size: 0.8em;">Order #: RCC-2026-992</div>
-    </div>
-  </div>
-<div style="padding: 25px;">
-    <h3 style="margin-top: 0; color: #333; border-bottom: 2px solid #333; padding-bottom: 5px;">VEHICLE INSPECTION REPORT (BOL)</h3>
-<div style="font-size: 0.9em; line-height: 1.5; color: #333;">
-      <p><strong>Vehicle:</strong> 2025 Porsche 911 GT3<br>
-      <strong>VIN:</strong> WP0AC2A9...5544<br>
-      <strong>Condition:</strong> Pre-Transport</p>
-<div style="display: flex; justify-content: space-between; align-items: center; margin: 20px 0;">
-        <div style="width: 45%; border: 1px solid #ccc; padding: 10px; text-align: center;">
-          <div style="font-weight: bold; margin-bottom: 5px;">ORIGIN</div>
-          Los Angeles, CA<br>
-          MAR 15, 2026<br>
-          <span style="color: #2e7d32; font-weight: bold;">[NO DAMAGE]</span>
-        </div>
-        <div style="font-size: 1.5em; color: #999;">&rarr;</div>
-        <div style="width: 45%; border: 1px solid #ccc; padding: 10px; text-align: center;">
-          <div style="font-weight: bold; margin-bottom: 5px;">DESTINATION</div>
-          Miami, FL<br>
-          MAR 20, 2026<br>
-          <span style="color: #c62828; font-weight: bold;">[PENDING]</span>
-        </div>
-      </div>
-<p><strong>Damage Notations (Origin):</strong><br>
-      Clean - no scratches, chips, or dents noted at time of pickup.</p>
-    </div>
-<div data-verify-line="damage" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
-      title="Demo only: Carrier doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:reliable-carriers.com/bol/v/RCC992 <span verifiable-text="end" data-for="damage">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="damage">[</span>RELIABLE CAR CARRIERS, INC.
+MC #123456 | DOT #998877
+VEHICLE INSPECTION REPORT (BOL)                 Order #: RCC-2026-992
+═══════════════════════════════════════════════════════════════════
+
+Vehicle:    2025 Porsche 911 GT3
+VIN:        WP0AC2A9...5544
+Condition:  Pre-Transport
+
+ORIGIN                              DESTINATION
+───────────────────────────────────────────────────────────────────
+Los Angeles, CA                     Miami, FL
+MAR 15, 2026                        MAR 20, 2026
+[NO DAMAGE]                         [PENDING]
+
+Damage Notations (Origin):
+Clean - no scratches, chips, or dents noted at time of pickup.
+
+<span data-verify-line="damage">verify:reliable-carriers.com/bol/v/RCC992</span> <span verifiable-text="end" data-for="damage">]</span></pre>
 </div>
 
 ## Data Verified

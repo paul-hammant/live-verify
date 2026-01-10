@@ -19,48 +19,24 @@ It is the primary document used by:
 
 **"Substitution Fraud"** is a major logistics risk. Criminals or dishonest shippers "edit" the packing list to hide high-value or illegal items (like lithium batteries or un-declared electronics) under a description of low-risk goods (like "Plastic Toys") to save on tariffs or bypass safety rules. Verified hashes bind the **line-by-line inventory and container seal numbers** to the shipper's warehouse domain.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', monospace; border: 1px solid #333; background: #fff; padding: 30px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-  <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
-    <h1 style="margin: 0; font-size: 1.5em; text-transform: uppercase;"><span verifiable-text="start" data-for="pack">[</span>Cargo Shipping Manifest</h1>
-    <div style="font-size: 0.8em; opacity: 0.7;">GLOBAL LOGISTICS SOLUTIONS, INC.</div>
-  </div>
-<div style="font-size: 0.85em; line-height: 1.4; color: #000;">
-    <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
-      <div>
-        <strong>Shipper:</strong> Shenzhen Tech Components, Ltd.<br>
-        <strong>Consignee:</strong> Apex Robotics, LLC (Chicago, IL)
-      </div>
-      <div style="text-align: right;">
-        <strong>Manifest #:</strong> M-992288-XK<br>
-        <strong>Container:</strong> TGHU-442288-0
-      </div>
-    </div>
-<table style="width: 100%; border-collapse: collapse; margin: 15px 0; font-size: 0.9em;">
-      <tr style="border-bottom: 2px solid #000;">
-        <th style="text-align: left; padding: 5px;">SKU / Description</th>
-        <th style="text-align: center; padding: 5px;">Qty</th>
-        <th style="text-align: right; padding: 5px;">Weight (kg)</th>
-      </tr>
-      <tr>
-        <td style="padding: 5px;">TC-992: Servo Controllers</td>
-        <td style="text-align: center; padding: 5px;">420</td>
-        <td style="text-align: right; padding: 5px;">840.00</td>
-      </tr>
-      <tr>
-        <td style="padding: 5px;">TC-101: Precision Bearings</td>
-        <td style="text-align: center; padding: 5px;">1,200</td>
-        <td style="text-align: right; padding: 5px;">1,450.00</td>
-      </tr>
-      <tr style="border-top: 1px solid #000; font-weight: bold;">
-        <td style="padding: 5px;">TOTAL CARGO WEIGHT:</td>
-        <td colspan="2" style="text-align: right; padding: 5px;">2,290.00 kg</td>
-      </tr>
-    </table>
-<p><strong>Seal Number:</strong> 000992288 (Verified Intact at Origin)</p>
-  </div>
-<div data-verify-line="pack" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
-    title="Demo only: Shipper doesn't yet offer verification&#10;endpoints, so this is illustrative">
-    verify:sz-tech.com/cargo/v/M992288 <span verifiable-text="end" data-for="pack">]</span>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <div style="padding: 20px; background: #fff;">
+    <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="pack">[</span>CARGO SHIPPING MANIFEST
+GLOBAL LOGISTICS SOLUTIONS, INC.
+═══════════════════════════════════════════════════════════════════════
+Shipper:   Shenzhen Tech Components, Ltd.    Manifest #: M-992288-XK
+Consignee: Apex Robotics, LLC (Chicago, IL)  Container:  TGHU-442288-0
+
+SKU / Description                              Qty        Weight (kg)
+───────────────────────────────────────────────────────────────────────
+TC-992: Servo Controllers                      420            840.00
+TC-101: Precision Bearings                   1,200          1,450.00
+───────────────────────────────────────────────────────────────────────
+TOTAL CARGO WEIGHT:                                        2,290.00 kg
+
+Seal Number: 000992288 (Verified Intact at Origin)
+
+<span data-verify-line="pack">verify:sz-tech.com/cargo/v/M992288</span> <span verifiable-text="end" data-for="pack">]</span></pre>
   </div>
 </div>
 

@@ -8,56 +8,29 @@ tags: ["life-insurance", "whole-life", "term-life", "beneficiary-designation", "
 furtherDerivations: 1
 ---
 
-<div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 2px solid #000; background: #fff; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); position: relative;">
-  <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 25px;">
-    <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 2px; color: #003366;"><span verifiable-text="start" data-for="life-pol">[</span>NEW YORK LIFE</div>
-    <div style="font-size: 0.85em; color: #666; margin-top: 5px; text-transform: uppercase;">Custom Whole Life Insurance Policy</div>
-  </div>
-<h3 style="text-align: center; text-transform: uppercase; margin-bottom: 25px;">Policy Schedule</h3>
-<div style="font-size: 1em; line-height: 1.6; color: #333; text-align: justify;">
-    <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
-      <div>
-        <strong>Policy Number:</strong> 99228877-WL<br>
-        <strong>Insured:</strong> <strong>JOHN JACOB DOE</strong>
-      </div>
-      <div style="text-align: right;">
-        <strong>Date of Issue:</strong><br>
-        March 15, 2026
-      </div>
-    </div>
-<table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
-      <tr style="border-bottom: 1px solid #000; background: #f9f9f9;">
-        <th style="text-align: left; padding: 8px;">Description</th>
-        <th style="text-align: right; padding: 8px;">Initial Amount</th>
-      </tr>
-      <tr>
-        <td style="padding: 8px;">Face Amount (Death Benefit)</td>
-        <td style="text-align: right;">$ 1,000,000.00</td>
-      </tr>
-      <tr>
-        <td style="padding: 8px;">Cash Value (Year 10 Projection)</td>
-        <td style="text-align: right;">$ 142,500.00</td>
-      </tr>
-      <tr>
-        <td style="padding: 8px;">Base Annual Premium</td>
-        <td style="text-align: right;">$ 4,200.00</td>
-      </tr>
-    </table>
-<p><strong>Primary Beneficiary:</strong> Mary Alice Jacob (Spouse)<br>
-    <strong>Riders:</strong> Waiver of Premium, Accidental Death (Double Indemnity).</p>
-  </div>
-<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
-    <div style="width: 45%;">
-      <div style="border-top: 1px solid #000; padding-top: 5px; font-style: italic;">Sarah Miller, Secretary</div>
-    </div>
-    <div style="text-align: right; width: 45%;">
-      <div style="width: 80px; height: 80px; border: 2px solid #003366; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; color: #003366; font-weight: bold; text-align: center; margin-left: auto;">ESTABLISHED<br>1845</div>
-    </div>
-  </div>
-<div data-verify-line="life-pol" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
-      title="Demo only: New York Life doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:newyorklife.com/policy/v/99228877 <span verifiable-text="end" data-for="life-pol">]</span>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="life-pol">[</span>NEW YORK LIFE
+Custom Whole Life Insurance Policy
+═══════════════════════════════════════════════════════════════════
+
+                         POLICY SCHEDULE
+
+Policy Number:  99228877-WL                    Date of Issue:
+Insured:        JOHN JACOB DOE                 March 15, 2026
+
+Description                                           Initial Amount
+───────────────────────────────────────────────────────────────────
+Face Amount (Death Benefit)                          $ 1,000,000.00
+Cash Value (Year 10 Projection)                      $   142,500.00
+Base Annual Premium                                  $     4,200.00
+
+Primary Beneficiary:  Mary Alice Jacob (Spouse)
+Riders:               Waiver of Premium, Accidental Death (2x)
+
+_________________________
+Sarah Miller, Secretary                              Est. 1845
+
+<span data-verify-line="life-pol">verify:newyorklife.com/policy/v/99228877</span> <span verifiable-text="end" data-for="life-pol">]</span></pre>
 </div>
 
 ## Data Verified

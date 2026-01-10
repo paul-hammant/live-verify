@@ -16,57 +16,27 @@ Lenders use them to approve mortgages. Governments use them to approve Visas. Fr
 
 Verifying a bank statement directly against the bank's domain ensures that the balance on the page is the **truth**, without forcing the user to give their bank password to a risky "data scraping" app.
 
-<div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-  <div style="background: #004a99; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="bank">[</span>CHASE 🟦</div>
-      <div style="font-size: 0.8em;">JPMorgan Chase Bank, N.A.</div>
-    </div>
-    <div style="text-align: right;">
-      <div style="font-size: 0.9em;">Page 1 of 4</div>
-    </div>
-  </div>
-<div style="padding: 30px;">
-    <div style="display: flex; justify-content: space-between; margin-bottom: 30px;">
-      <div>
-        <strong>Account Holder:</strong><br>
-        <strong>WAYNE ENTERPRISES, INC.</strong><br>
-        1007 Mountain Drive<br>
-        Gotham City, NY 10001
-      </div>
-      <div style="text-align: right;">
-        <strong>Account Number:</strong><br>
-        ****-****-9982<br>
-        <strong>Period:</strong> Mar 01 - Mar 31, 2026
-      </div>
-    </div>
-<h3 style="border-bottom: 2px solid #004a99; padding-bottom: 5px;">ACCOUNT SUMMARY</h3>
-    <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
-      <tr>
-        <td style="padding: 8px 0;">Beginning Balance</td>
-        <td style="text-align: right;">$ 1,250,000.42</td>
-      </tr>
-      <tr>
-        <td style="padding: 8px 0;">Deposits and Additions</td>
-        <td style="text-align: right;">$ 450,000.00</td>
-      </tr>
-      <tr>
-        <td style="padding: 8px 0;">Withdrawals and Debits</td>
-        <td style="text-align: right;">-$ 200,000.00</td>
-      </tr>
-      <tr style="font-weight: bold; border-top: 1px solid #004a99;">
-        <td style="padding: 8px 0;">ENDING BALANCE</td>
-        <td style="text-align: right;">$ 1,500,000.42</td>
-      </tr>
-    </table>
-<div style="font-size: 0.8em; color: #555; font-style: italic;">
-      Verification protects every line of this statement. Alteration of balances is a federal crime.
-    </div>
-<div data-verify-line="bank" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
-      title="Demo only: Chase doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:chase.com/statements/v/x9y8z7 <span verifiable-text="end" data-for="bank">]</span>
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="bank">[</span>CHASE                                              Page 1 of 4
+JPMorgan Chase Bank, N.A.
+
+Account Holder:                         Account Number:
+WAYNE ENTERPRISES, INC.                 ****-****-9982
+1007 Mountain Drive                     Period: Mar 01 - Mar 31, 2026
+Gotham City, NY 10001
+
+ACCOUNT SUMMARY
+───────────────────────────────────────────────────────────
+Beginning Balance                            $ 1,250,000.42
+Deposits and Additions                       $   450,000.00
+Withdrawals and Debits                      -$   200,000.00
+───────────────────────────────────────────────────────────
+ENDING BALANCE                               $ 1,500,000.42
+
+Verification protects every line of this statement.
+Alteration of balances is a federal crime.
+
+<span data-verify-line="bank">verify:chase.com/statements/v/x9y8z7</span> <span verifiable-text="end" data-for="bank">]</span></pre>
 </div>
 
 ## Data Verified

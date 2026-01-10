@@ -14,63 +14,27 @@ In the commercial trucking industry, the **Annual Vehicle Inspection Report (AVI
 
 These documents are critical for highway safety. Fraud is rampant: shady carriers often "edit" a failed inspection report into a "PASS" to keep a dangerous truck on the road, or they use a fake certificate from a non-existent "Mobile Inspector." Verified hashes bind the **VIN, Inspector License, and Safety Results** to the inspection station's or the state's domain (e.g., `dot.gov` or `jiffy-lube-fleet.com`).
 
-<div style="max-width: 650px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 2px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <div style="background: #000; color: #fff; padding: 15px; text-align: center; border-bottom: 2px solid #000;">
-    <h2 style="margin: 0; font-size: 1.3em; letter-spacing: 1px;"><span verifiable-text="start" data-for="dot">[</span>ANNUAL VEHICLE INSPECTION REPORT</h2>
-    <div style="font-size: 0.8em; opacity: 0.9;">IN ACCORDANCE WITH 49 CFR PART 396.17</div>
-  </div>
-<div style="padding: 20px;">
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.85em; margin-bottom: 20px;">
-      <div>
-        <strong>Carrier:</strong> GLOBAL LOGISTICS CORP.<br>
-        <strong>USDOT #:</strong> 99228877<br>
-        <strong>Address:</strong> Springfield, USA
-      </div>
-      <div style="text-align: right;">
-        <strong>Vehicle VIN:</strong> 1ABC-9922-8877-Z<br>
-        <strong>Unit #:</strong> TRUCK-42<br>
-        <strong>Plate:</strong> ABC-1234 (NY)
-      </div>
-    </div>
-<table style="width: 100%; border-collapse: collapse; font-size: 0.8em; margin-bottom: 20px;">
-      <tr style="background: #eee; border-top: 1px solid #000; border-bottom: 1px solid #000;">
-        <th style="text-align: left; padding: 8px;">Inspection Category</th>
-        <th style="text-align: center; padding: 8px;">Condition</th>
-        <th style="text-align: right; padding: 8px;">Finding</th>
-      </tr>
-      <tr>
-        <td style="padding: 6px;">Brake System (Service & Parking)</td>
-        <td style="text-align: center; padding: 6px;">OK</td>
-        <td style="text-align: right; padding: 6px;">Passed</td>
-      </tr>
-      <tr>
-        <td style="padding: 6px;">Steering Mechanism</td>
-        <td style="text-align: center; padding: 6px;">OK</td>
-        <td style="text-align: right; padding: 6px;">Passed</td>
-      </tr>
-      <tr style="border-bottom: 1px solid #000;">
-        <td style="padding: 6px;">Tires & Wheels (Tread Depth > 4/32)</td>
-        <td style="text-align: center; padding: 6px;">OK</td>
-        <td style="text-align: right; padding: 6px;">Passed</td>
-      </tr>
-    </table>
-<div style="display: flex; justify-content: space-between; align-items: flex-end; font-size: 0.85em;">
-      <div>
-        <div style="border-top: 1px solid #000; width: 200px; padding-top: 5px; font-style: italic;">Robert J. Miller, Certified Inspector</div>
-        <div>Inspector ID: #9922-NY • Date: 15 MAR 2026</div>
-      </div>
-      <div style="border: 2px solid #000; padding: 10px; font-weight: bold; transform: rotate(-3deg);">CERTIFIED PASS</div>
-    </div>
-  </div>
-<div style="padding: 20px; background: #f9f9f9; border-top: 1px solid #eee; text-align: center;">
-    <div data-verify-line="dot" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
-      title="Demo only: Inspection stations don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:dot-inspect.com/v/VIN1ABC9922 <span verifiable-text="end" data-for="dot">]</span>
-    </div>
-    <div style="font-size: 0.7em; color: #666; margin-top: 10px; font-style: italic;">
-      Scan to verify vehicle safety compliance, inspector credentials, and real-time status.
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="dot">[</span>ANNUAL VEHICLE INSPECTION REPORT
+IN ACCORDANCE WITH 49 CFR PART 396.17
+═══════════════════════════════════════════════════════════════════
+
+Carrier:    GLOBAL LOGISTICS CORP.       Vehicle VIN:  1ABC-9922-8877-Z
+USDOT #:    99228877                     Unit #:       TRUCK-42
+Address:    Springfield, USA             Plate:        ABC-1234 (NY)
+
+Inspection Category                            Condition     Finding
+───────────────────────────────────────────────────────────────────
+Brake System (Service & Parking)                  OK         Passed
+Steering Mechanism                                OK         Passed
+Tires & Wheels (Tread Depth > 4/32)               OK         Passed
+
+_________________________
+Robert J. Miller, Certified Inspector             [CERTIFIED PASS]
+Inspector ID: #9922-NY
+Date: 15 MAR 2026
+
+<span data-verify-line="dot">verify:dot-inspect.com/v/VIN1ABC9922</span> <span verifiable-text="end" data-for="dot">]</span></pre>
 </div>
 
 ## Data Verified

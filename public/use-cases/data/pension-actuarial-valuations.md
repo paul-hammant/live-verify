@@ -14,57 +14,34 @@ For a defined-benefit pension plan (e.g., for teachers, police, or corporate emp
 
 These documents are the "Proof of Retirement Security." Fraud is high-stakes: corrupt trustees or managers might "edit" a valuation report to turn a 60% (dangerously underfunded) plan into a 90% (healthy) plan to avoid making mandatory "Catch-up Payments" or to hide a deficit during labor negotiations. Verified hashes bind the **Total Liabilities, Net Assets, and Funded Ratio** to the actuarial firm's domain (e.g., `mercer.com` or `wtwco.com`).
 
-<div style="max-width: 650px; margin: 24px auto; font-family: 'Times New Roman', Times, serif; border: 2px solid #333; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.4em; color: #002366;"><span verifiable-text="start" data-for="pension">[</span>WILLIS TOWERS WATSON</div>
-    <div style="font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">Actuarial Valuation & Solvency Certification</div>
-  </div>
-<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
-    <div style="display: flex; justify-content: space-between; margin-bottom: 25px;">
-      <div>
-        <strong>Plan:</strong> METRO TEACHERS RETIREMENT FUND<br>
-        <strong>Plan ID:</strong> #992288-XJ
-      </div>
-      <div style="text-align: right;">
-        <strong>Valuation ID:</strong> VAL-2026-8844<br>
-        <strong>Date:</strong> MARCH 15, 2026
-      </div>
-    </div>
-<p>This document certifies the actuarial status of the Plan as of the measurement date of <strong>January 1, 2026</strong>.</p>
-<div style="background: #f0f4f8; border: 1px solid #ccc; padding: 20px; margin: 20px 0;">
-      <table style="width: 100%; font-size: 0.9em; border-collapse: collapse;">
-        <tr>
-          <td>Total Actuarial Accrued Liability (AAL):</td>
-          <td style="text-align: right; font-weight: bold;">$ 1,250,000,000.00</td>
-        </tr>
-        <tr>
-          <td>Actuarial Value of Assets (AVA):</td>
-          <td style="text-align: right; font-weight: bold;">$ 1,031,250,000.00</td>
-        </tr>
-        <tr style="border-top: 2px solid #002366; font-size: 1.2em;">
-          <td><strong>CERTIFIED FUNDED STATUS:</strong></td>
-          <td style="text-align: right; font-weight: bold; color: #2e7d32;">82.5 %</td>
-        </tr>
-      </table>
-    </div>
-<p style="font-size: 0.85em; font-style: italic;">"Based on the assumptions stated in the full report, the Plan's current funding level meets the requirements of ERISA and the PBGC."</p>
-  </div>
-<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
-    <div>
-      <div style="border-top: 1px solid #000; width: 200px; padding-top: 5px; font-style: italic;">Robert J. Miller, FSA, MAAA</div>
-      <div style="font-size: 0.7em; color: #777;">Enrolled Actuary #992288</div>
-    </div>
-    <div style="width: 80px; height: 80px; border: 2px solid #002366; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; text-align: center; color: #002366;">ACTUARIAL<br>VERIFIED</div>
-  </div>
-<div style="padding: 20px; background: #fffbe6; border: 1px dashed #999; margin-top: 40px; text-align: center;">
-    <div data-verify-line="pension" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
-      title="Demo only: Actuarial firms don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:wtwco.com/v/VAL99228877 <span verifiable-text="end" data-for="pension">]</span>
-    </div>
-    <div style="font-size: 0.7em; color: #666; margin-top: 10px;">
-      Scan to verify funded ratio, discount rate assumptions, and view the full 50-page actuarial audit.
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="pension">[</span>WILLIS TOWERS WATSON
+Actuarial Valuation & Solvency Certification
+═══════════════════════════════════════════════════════════════════
+
+Plan:          METRO TEACHERS RETIREMENT FUND
+Plan ID:       #992288-XJ
+Valuation ID:  VAL-2026-8844
+Date:          MARCH 15, 2026
+
+This document certifies the actuarial status of the Plan
+as of the measurement date of January 1, 2026.
+
+FUNDING SUMMARY
+───────────────────────────────────────────────────────────────────
+Total Actuarial Accrued Liability (AAL):    $ 1,250,000,000.00
+Actuarial Value of Assets (AVA):            $ 1,031,250,000.00
+───────────────────────────────────────────────────────────────────
+CERTIFIED FUNDED STATUS:                                   82.5 %
+
+"Based on the assumptions stated in the full report, the Plan's
+current funding level meets the requirements of ERISA and the PBGC."
+
+                                    ───────────────────────────────
+                                    Robert J. Miller, FSA, MAAA
+                                    Enrolled Actuary #992288
+
+<span data-verify-line="pension">verify:wtwco.com/v/VAL99228877</span> <span verifiable-text="end" data-for="pension">]</span></pre>
 </div>
 
 ## Data Verified

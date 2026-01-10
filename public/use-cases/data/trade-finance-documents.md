@@ -14,62 +14,34 @@ In the world of international banking, the **Negotiable Bill of Lading (B/L)** i
 
 These documents are the primary target for **Trade Finance Fraud**. Scammers use "Ghost B/Ls" to get banks to pay for cargo that doesn't exist, or they "Double-Finance" the same shipment at two different banks. Verified hashes bind the **Consignee (Bank Name), Cargo Value, and On-Board Date** to the shipping line's or the port's domain (e.g., `msc.com` or `hapag-lloyd.com`).
 
-<div style="max-width: 700px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 1px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-  <div style="background: #ef6c00; color: #fff; padding: 15px; display: flex; justify-content: space-between; align-items: flex-end;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;"><span verifiable-text="start" data-for="trade">[</span>MSC MEDITERRANEAN SHIPPING</div>
-      <div style="font-size: 0.7em; opacity: 0.8; text-transform: uppercase;">Avenue Eugène-Pittard 40, Geneva</div>
-    </div>
-    <div style="text-align: right;">
-      <div style="font-weight: bold; font-size: 1.1em;">BILL OF LADING</div>
-      <div style="font-size: 0.7em; opacity: 0.9;">NEGOTIABLE ORIGINAL (1/3)</div>
-    </div>
-  </div>
-<div style="display: grid; grid-template-columns: 1fr 1fr; border-bottom: 1px solid #000;">
-    <div style="padding: 10px; border-right: 1px solid #000; font-size: 0.75em; line-height: 1.3;">
-      <strong style="text-transform: uppercase; color: #666;">Shipper:</strong><br>
-      GLOBAL COTTON TRADERS LTD.<br>
-      CENTRAL PLAZA, MUMBAI, IN
-    </div>
-    <div style="padding: 10px; font-size: 0.75em; line-height: 1.3;">
-      <strong style="text-transform: uppercase; color: #666;">B/L Number:</strong><br>
-      <div style="font-size: 1.2em; font-weight: bold;">MSC-9922887766</div>
-    </div>
-  </div>
-<div style="padding: 10px; border-bottom: 1px solid #000; font-size: 0.75em; line-height: 1.3; background: #fffbe6;">
-    <strong style="text-transform: uppercase; color: #666;">Consignee (to the order of):</strong><br>
-    <span style="font-weight: bold; color: #000;">STANDARD CHARTERED BANK, N.A.</span><br>
-    FOR THE ACCOUNT OF: SPRINGFIELD TEXTILES LLC
-  </div>
-<div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; border-bottom: 1px solid #000; font-size: 0.7em; text-transform: uppercase; text-align: center;">
-    <div style="padding: 5px; border-right: 1px solid #000;"><strong>Vessel:</strong><br>MSC TESSA</div>
-    <div style="padding: 5px; border-right: 1px solid #000;"><strong>Port of Loading:</strong><br>NHAVA SHEVA, IN</div>
-    <div style="padding: 5px; border-right: 1px solid #000;"><strong>On-Board Date:</strong><br>15 MAR 2026</div>
-    <div style="padding: 5px;"><strong>Freight:</strong><br>PREPAID</div>
-  </div>
-<div style="padding: 15px;">
-    <table style="width: 100%; border-collapse: collapse; font-size: 0.8em;">
-      <tr style="border-bottom: 1px solid #eee;">
-        <th style="text-align: left; padding: 5px;">Marks & Numbers</th>
-        <th style="text-align: left; padding: 5px;">Description of Goods</th>
-        <th style="text-align: right; padding: 5px;">Measurement</th>
-      </tr>
-      <tr>
-        <td style="padding: 10px 5px;">MSCU-992288-7<br>SEAL: 884422</td>
-        <td style="padding: 10px 5px;">420 BALES RAW COTTON<br>(GRADE-A / 100% ORGANIC)</td>
-        <td style="padding: 10px 5px; text-align: right;">68.42 CBM</td>
-      </tr>
-    </table>
-  </div>
-<div style="padding: 20px; background: #f9f9f9; border-top: 1px solid #000; text-align: center;">
-    <div data-verify-line="trade" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #ef6c00; font-weight: bold;"
-      title="Demo only: MSC doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:msc.com/bl/v/9922887766 <span verifiable-text="end" data-for="trade">]</span>
-    </div>
-    <div style="font-size: 0.7em; color: #777; margin-top: 10px; font-style: italic;">
-      Scan to verify Bank Endorsement status, On-Board timestamps, and Cargo Integrity. This is a Document of Title.
-    </div>
-  </div>
+<div style="max-width: 700px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="trade">[</span>MSC MEDITERRANEAN SHIPPING
+Avenue Eugene-Pittard 40, Geneva
+═══════════════════════════════════════════════════════════════════
+
+BILL OF LADING                           NEGOTIABLE ORIGINAL (1/3)
+
+Shipper:                                 B/L Number:
+  GLOBAL COTTON TRADERS LTD.               MSC-9922887766
+  CENTRAL PLAZA, MUMBAI, IN
+
+Consignee (to the order of):
+  STANDARD CHARTERED BANK, N.A.
+  FOR THE ACCOUNT OF: SPRINGFIELD TEXTILES LLC
+
+───────────────────────────────────────────────────────────────────
+Vessel         Port of Loading    On-Board Date       Freight
+MSC TESSA      NHAVA SHEVA, IN    15 MAR 2026         PREPAID
+───────────────────────────────────────────────────────────────────
+
+Marks & Numbers      Description of Goods              Measurement
+───────────────────────────────────────────────────────────────────
+MSCU-992288-7        420 BALES RAW COTTON                68.42 CBM
+SEAL: 884422         (GRADE-A / 100% ORGANIC)
+
+This is a Document of Title.
+
+<span data-verify-line="trade">verify:msc.com/bl/v/9922887766</span> <span verifiable-text="end" data-for="trade">]</span></pre>
 </div>
 
 ## Data Verified
@@ -142,48 +114,33 @@ In global trade, the **Certificate of Origin (C/O)** is the "Nationality Passpor
 
 These papers are the primary tools for **Tariff Evasion**. Fraud is high-stakes: exporters often "edit" a C/O to change the origin from a high-tax country (e.g., China) to a low-tax one (e.g., Vietnam) to save millions in duties. This is known as "Transshipment" or "Origin Laundering." Verified hashes bind the **Exporter Name, Goods Description, and Country of Origin** to the issuing Chamber's domain (e.g., `londonchamber.com` or `vietnamchamber.gov`).
 
-<div style="max-width: 650px; margin: 24px auto; font-family: 'Times New Roman', Times, serif; border: 1px solid #333; background: #fff; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-  <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.4em; color: #003366; letter-spacing: 1px;"><span verifiable-text="start" data-for="origin">[</span>LONDON CHAMBER OF COMMERCE</div>
-    <div style="font-size: 0.85em; text-transform: uppercase;">Official Certificate of Origin</div>
-  </div>
-<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 25px;">
-      <div>
-        <strong>Exporter:</strong> BRITISH PRECISION LTD.<br>
-        123 Thames Way, London, UK
-      </div>
-      <div style="text-align: right;">
-        <strong>Certificate #:</strong> UK-2026-992288<br>
-        <strong>Issue Date:</strong> 15 MAR 2026
-      </div>
-    </div>
-<p><strong>Consignee:</strong> GOLIATH MANUFACTURING INC., CHICAGO, USA</p>
-<div style="margin: 20px 0; padding: 15px; border: 1px solid #ccc; background: #f9f9f9;">
-      <p><strong>Description of Goods:</strong><br>
-      High-Precision Titanium Aerospace Fasteners (HS Code: 8108.90)</p>
-<p style="border-top: 1px solid #ddd; padding-top: 10px; font-weight: bold; text-align: center;">
-        COUNTRY OF ORIGIN: <span style="font-size: 1.3em; color: #003366;">UNITED KINGDOM</span>
-      </p>
-    </div>
-<p style="font-size: 0.85em; font-style: italic;">"The undersigned Chamber of Commerce hereby certifies that the goods described above were produced or manufactured in the country stated."</p>
-  </div>
-<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
-    <div>
-      <div style="border-top: 1px solid #000; width: 200px; padding-top: 5px; font-style: italic;">Authorized Signature</div>
-      <div style="font-size: 0.7em; color: #777;">Chamber ID: #LCC-9922</div>
-    </div>
-    <div style="width: 80px; height: 80px; border: 2px solid #003366; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6em; font-weight: bold; text-align: center; color: #003366; transform: rotate(-10deg);">CHAMBER<br>OFFICIAL<br>STAMP</div>
-  </div>
-<div style="padding: 20px; background: #fdfdfd; border: 1px dashed #999; margin-top: 40px; text-align: center;">
-    <div data-verify-line="origin" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
-      title="Demo only: Chambers of Commerce don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:londonchamber.com/v/CO992288UK <span verifiable-text="end" data-for="origin">]</span>
-    </div>
-    <div style="font-size: 0.7em; color: #666; margin-top: 10px;">
-      Scan to verify origin authenticity, HS Code classification, and Chamber authority.
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="origin">[</span>LONDON CHAMBER OF COMMERCE
+Official Certificate of Origin
+═══════════════════════════════════════════════════════════════════
+
+Exporter:      BRITISH PRECISION LTD.     Certificate #: UK-2026-992288
+               123 Thames Way, London, UK  Issue Date:    15 MAR 2026
+
+Consignee:     GOLIATH MANUFACTURING INC., CHICAGO, USA
+
+DESCRIPTION OF GOODS
+───────────────────────────────────────────────────────────────────
+High-Precision Titanium Aerospace Fasteners (HS Code: 8108.90)
+
+              COUNTRY OF ORIGIN: UNITED KINGDOM
+
+"The undersigned Chamber of Commerce hereby certifies that the
+goods described above were produced or manufactured in the
+country stated."
+
+                    ________________________
+                    Authorized Signature
+                    Chamber ID: #LCC-9922
+
+                      [CHAMBER OFFICIAL STAMP]
+
+<span data-verify-line="origin">verify:londonchamber.com/v/CO992288UK</span> <span verifiable-text="end" data-for="origin">]</span></pre>
 </div>
 
 ## Data Verified
@@ -256,58 +213,29 @@ In global commerce, the **Commercial Invoice** is the ultimate bill. It defines 
 
 This document is the primary engine for **Trade-Based Money Laundering (TBML)** and **Tax Evasion**. Scammers use "Under-Invoicing" (editing a $1M invoice to show $100k) to evade import duties, or "Over-Invoicing" (editing a $10k invoice to show $1M) to illegally move large sums of cash across borders. Verified hashes bind the **Total Value, Unit Prices, and Buyer/Seller IDs** to the exporter's or the platform's domain (e.g., `samsung.com` or `tradelens.com`).
 
-<div style="max-width: 700px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 1px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <div style="padding: 25px; border-bottom: 2px solid #000; background: #f9f9f9; display: flex; justify-content: space-between; align-items: flex-start;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.4em;"><span verifiable-text="start" data-for="invoice">[</span>GLOBAL TEXTILES EXPORT LTD.</div>
-      <div style="font-size: 0.8em; color: #666;">VAT ID: AE-99228877 • Dubai, UAE</div>
-    </div>
-    <div style="text-align: right;">
-      <h2 style="margin: 0; font-size: 1.2em; letter-spacing: 1px;">COMMERCIAL INVOICE</h2>
-      <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;"># INV-2026-8844</div>
-    </div>
-  </div>
-<div style="padding: 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.85em; line-height: 1.4; border-bottom: 1px solid #eee;">
-    <div>
-      <strong style="text-transform: uppercase; color: #888;">Consignee / Buyer:</strong><br>
-      NEW YORK FASHION HUBS LLC<br>
-      42 WALL STREET, NEW YORK, USA
-    </div>
-    <div style="text-align: right;">
-      <strong>Date:</strong> 15 MAR 2026<br>
-      <strong>Incoterms:</strong> CIF NEW YORK<br>
-      <strong>Payment:</strong> L/C #992288
-    </div>
-  </div>
-<div style="padding: 0;">
-    <table style="width: 100%; border-collapse: collapse; font-size: 0.9em;">
-      <tr style="background: #eee; border-bottom: 2px solid #000;">
-        <th style="text-align: left; padding: 10px;">Item / HS Code</th>
-        <th style="text-align: center; padding: 10px;">Qty</th>
-        <th style="text-align: right; padding: 10px;">Unit Price</th>
-        <th style="text-align: right; padding: 10px;">Total</th>
-      </tr>
-      <tr style="border-bottom: 1px solid #eee;">
-        <td style="padding: 10px;">100% Cotton Yarn (HS: 5205.11)</td>
-        <td style="text-align: center; padding: 10px;">5,000 KG</td>
-        <td style="text-align: right; padding: 10px;">$ 8.50</td>
-        <td style="text-align: right; padding: 10px;">$ 42,500.00</td>
-      </tr>
-      <tr style="font-weight: bold; font-size: 1.1em; background: #fffbe6;">
-        <td colspan="3" style="text-align: right; padding: 15px;">TOTAL INVOICE VALUE (USD):</td>
-        <td style="text-align: right; padding: 15px;">$ 42,500.00</td>
-      </tr>
-    </table>
-  </div>
-<div style="padding: 25px; background: #fdfdfd; border-top: 1px solid #000; text-align: center;">
-    <div style="font-size: 0.7em; color: #555; margin-bottom: 10px; font-style: italic;">
-      Verification confirms the financial integrity of this billing record against the exporter's ledger.
-    </div>
-    <div data-verify-line="invoice" style="border-top: 1px dashed #999; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
-      title="Demo only: Exporters don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:globaltextiles.ae/v/INV20268844 <span verifiable-text="end" data-for="invoice">]</span>
-    </div>
-  </div>
+<div style="max-width: 700px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="invoice">[</span>GLOBAL TEXTILES EXPORT LTD.
+VAT ID: AE-99228877 - Dubai, UAE
+═══════════════════════════════════════════════════════════════════
+
+COMMERCIAL INVOICE                                   # INV-2026-8844
+
+Consignee / Buyer:                        Date:      15 MAR 2026
+  NEW YORK FASHION HUBS LLC               Incoterms: CIF NEW YORK
+  42 WALL STREET, NEW YORK, USA           Payment:   L/C #992288
+
+ITEMS
+───────────────────────────────────────────────────────────────────
+Item / HS Code                     Qty      Unit Price        Total
+───────────────────────────────────────────────────────────────────
+100% Cotton Yarn (HS: 5205.11)  5,000 KG       $ 8.50   $ 42,500.00
+───────────────────────────────────────────────────────────────────
+TOTAL INVOICE VALUE (USD):                              $ 42,500.00
+
+Verification confirms the financial integrity of this billing
+record against the exporter's ledger.
+
+<span data-verify-line="invoice">verify:globaltextiles.ae/v/INV20268844</span> <span verifiable-text="end" data-for="invoice">]</span></pre>
 </div>
 
 ## Data Verified

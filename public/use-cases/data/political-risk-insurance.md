@@ -14,64 +14,24 @@ In international finance, **Political Risk Insurance (PRI)** is the "Shield of S
 
 These documents are the "Proof of Protection." Fraud is high-stakes: a developer might create a fake "Zurich" or "Chubb" policy to trick a bank into releasing a $100M loan for a power plant. Similarly, a government might demand to see "Verified Coverage" before granting a land lease. Verified hashes bind the **Host Country, Coverage Limits, and Exclusion Clauses** to the specialist insurer's domain (e.g., `zurich.com` or `chubb.com`).
 
-<div style="max-width: 650px; margin: 24px auto; font-family: 'Times New Roman', Times, serif; border: 2px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-  <div style="background: #003366; color: #fff; padding: 30px; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid #000;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.5em; letter-spacing: 1px;"><span verifiable-text="start" data-for="pri">[</span>ZURICH SPECIALTY</div>
-      <div style="font-size: 0.8em; opacity: 0.9; text-transform: uppercase;">Political Risk & Structured Credit Unit</div>
-    </div>
-    <div style="text-align: right;">
-      <div style="font-weight: bold; font-size: 1.1em;">POLICY SUMMARY</div>
-      <div style="font-size: 0.7em;">Ref: PRI-2026-992288</div>
-    </div>
-  </div>
-<div style="padding: 25px;">
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
-      <div>
-        <strong>Insured:</strong> GLOBAL ENERGY PARTNERS LLC<br>
-        <strong>Host Country:</strong> Republic of Nordia<br>
-        <strong>Project:</strong> Nordia Solar Array II
-      </div>
-      <div style="text-align: right;">
-        <strong>Total Limit:</strong> $ 150,000,000.00<br>
-        <strong>Policy Term:</strong> 15 Years<br>
-        <strong>Currency:</strong> USD (Verified)
-      </div>
-    </div>
-<div style="background: #fdfdfd; border: 1px solid #ddd; padding: 15px; margin-bottom: 20px;">
-      <h4 style="margin-top: 0; color: #003366; font-size: 0.9em; border-bottom: 1px solid #ccc; padding-bottom: 5px;">VERIFIED COVERAGE SCOPE</h4>
-      <table style="width: 100%; font-size: 0.85em;">
-        <tr>
-          <td><strong>Expropriation & Confiscation:</strong></td>
-          <td style="text-align: right; font-weight: bold; color: #2e7d32;">INCLUDED</td>
-        </tr>
-        <tr>
-          <td><strong>Currency Inconvertibility:</strong></td>
-          <td style="text-align: right; font-weight: bold; color: #2e7d32;">INCLUDED</td>
-        </tr>
-        <tr>
-          <td><strong>Political Violence (War/Terrorism):</strong></td>
-          <td style="text-align: right; font-weight: bold; color: #2e7d32;">INCLUDED</td>
-        </tr>
-        <tr>
-          <td><strong>Breach of Contract (Sovereign):</strong></td>
-          <td style="text-align: right; font-weight: bold; color: #d32f2f;">EXCLUDED</td>
-        </tr>
-      </table>
-    </div>
-<div style="font-size: 0.8em; color: #666; font-style: italic; border-top: 1px solid #eee; padding-top: 10px;">
-      This summary is a verified extract of Policy #PRI-992288. Verification confirms coverage availability at the time of query.
-    </div>
-  </div>
-<div style="padding: 20px; background: #f5f5f5; border-top: 1px solid #000; text-align: center;">
-    <div data-verify-line="pri" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
-      title="Demo only: Specialist insurers don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:zurich.com/pri/v/992288-NORDIA <span verifiable-text="end" data-for="pri">]</span>
-    </div>
-    <div style="font-size: 0.7em; color: #777; margin-top: 10px;">
-      Scan to verify coverage limits, sovereign risk status, and claims eligibility.
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="pri">[</span>ZURICH SPECIALTY
+Political Risk & Structured Credit Unit
+═══════════════════════════════════════════════════════════════════
+POLICY SUMMARY                                  Ref: PRI-2026-992288
+
+Insured:      GLOBAL ENERGY PARTNERS LLC  Total Limit:  $ 150,000,000
+Host Country: Republic of Nordia          Policy Term:  15 Years
+Project:      Nordia Solar Array II       Currency:     USD (Verified)
+
+VERIFIED COVERAGE SCOPE
+───────────────────────────────────────────────────────────────────
+Expropriation & Confiscation:                              INCLUDED
+Currency Inconvertibility:                                 INCLUDED
+Political Violence (War/Terrorism):                        INCLUDED
+Breach of Contract (Sovereign):                            EXCLUDED
+
+<span data-verify-line="pri">verify:zurich.com/pri/v/992288-NORDIA</span> <span verifiable-text="end" data-for="pri">]</span></pre>
 </div>
 
 ## Data Verified

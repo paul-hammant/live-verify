@@ -14,52 +14,32 @@ In competitive sports and eSports, the **Tournament Bracket** is the official ma
 
 These documents are the "Career Proof" for athletes and teams. They are used to secure **Sponsorships**, **College Recruitment**, and **Pro Draft** slots. Fraud is common in junior and amateur levels: players or coaches often "edit" a bracket to show they finished in the "Top 4" instead of the "Top 32," or to hide a loss against a weak opponent. Verified hashes bind the **Match Results, Player/Team Names, and Final Rankings** to the league's domain (e.g., `ncaa.com`, `fifa.com`, or `challengermode.com`).
 
-<div style="max-width: 650px; margin: 24px auto; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; border: 2px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <div style="background: #1a237e; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;"><span verifiable-text="start" data-for="bracket">[</span>ELITE CHAMPIONSHIP SERIES</div>
-      <div style="font-size: 0.8em; opacity: 0.9;">Official Results & Final Standings</div>
-    </div>
-    <div style="text-align: right;">
-      <div style="font-weight: bold; font-size: 1.1em;">DIVISION: TIER-1</div>
-      <div style="font-size: 0.7em;">SEASON: 2026-Q1</div>
-    </div>
-  </div>
-<div style="padding: 25px;">
-    <h4 style="margin-top: 0; border-bottom: 2px solid #1a237e; padding-bottom: 5px; color: #1a237e;">SEMIFINALS & FINALS SUMMARY</h4>
-<div style="display: grid; grid-template-columns: 1fr auto 1fr; gap: 10px; align-items: center; margin: 20px 0; font-size: 0.9em;">
-      <!-- Semifinal 1 -->
-      <div style="border: 1px solid #ccc; padding: 10px; background: #f9f9f9;">
-        <div style="display: flex; justify-content: space-between;"><span>(1) Unseen Univ.</span> <strong>2</strong></div>
-        <div style="display: flex; justify-content: space-between; opacity: 0.5;"><span>(4) High Peak Acad.</span> 1</div>
-      </div>
-      <div style="font-size: 1.5em; color: #ccc;">&rarr;</div>
-      <div rowspan="2" style="border: 2px solid #1a237e; padding: 15px; background: #e8eaf6; text-align: center;">
-        <div style="font-size: 0.7em; color: #1a237e; font-weight: bold;">CHAMPIONSHIP WINNER</div>
-        <div style="font-size: 1.1em; font-weight: bold;">UNSEEN UNIVERSITY ACADEMY</div>
-        <div style="font-size: 0.8em; margin-top: 5px; color: #2e7d32; font-weight: bold;">FINAL SCORE: 3 - 1</div>
-      </div>
-      <!-- Semifinal 2 -->
-      <div style="border: 1px solid #ccc; padding: 10px; background: #f9f9f9;">
-        <div style="display: flex; justify-content: space-between;"><span>(2) Blue River FC</span> <strong>1</strong></div>
-        <div style="display: flex; justify-content: space-between; opacity: 0.5;"><span>(3) Desert Coyotes</span> 0</div>
-      </div>
-      <div style="font-size: 1.5em; color: #ccc;">&rarr;</div>
-      <div></div>
-    </div>
-<div style="font-size: 0.8em; line-height: 1.4; color: #555; font-style: italic; background: #fffbe6; padding: 10px; border: 1px solid #ffe58f;">
-      <strong>Official Note:</strong> Match #42 (Finals) verified by Lead Official Sarah Jenkins. No protests pending.
-    </div>
-  </div>
-<div style="padding: 20px; background: #fff; border-top: 1px dashed #bbb; text-align: center;">
-    <div data-verify-line="bracket" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #1a237e; font-weight: bold;"
-      title="Demo only: Sports leagues don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:elite-champs.com/v/TIER1-2026-FIN <span verifiable-text="end" data-for="bracket">]</span>
-    </div>
-    <div style="font-size: 0.7em; color: #999; margin-top: 10px;">
-      Scan to verify match results, final seeding, and official trophy status.
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="bracket">[</span>ELITE CHAMPIONSHIP SERIES
+Official Results & Final Standings
+═══════════════════════════════════════════════════════════════════
+
+Division: TIER-1                                    Season: 2026-Q1
+
+SEMIFINALS & FINALS SUMMARY
+───────────────────────────────────────────────────────────────────
+
+SEMIFINAL 1                          CHAMPIONSHIP
+┌─────────────────────────┐          ┌─────────────────────────┐
+│ (1) Unseen Univ.      2 │────┐     │     CHAMPIONSHIP WINNER │
+│ (4) High Peak Acad.   1 │    │     │                         │
+└─────────────────────────┘    ├────>│  UNSEEN UNIVERSITY      │
+                               │     │       ACADEMY           │
+SEMIFINAL 2                    │     │                         │
+┌─────────────────────────┐    │     │    FINAL SCORE: 3 - 1   │
+│ (2) Blue River FC     1 │────┘     └─────────────────────────┘
+│ (3) Desert Coyotes    0 │
+└─────────────────────────┘
+
+OFFICIAL NOTE: Match #42 (Finals) verified by Lead Official
+Sarah Jenkins. No protests pending.
+
+<span data-verify-line="bracket">verify:elite-champs.com/v/TIER1-2026-FIN</span> <span verifiable-text="end" data-for="bracket">]</span></pre>
 </div>
 
 ## Data Verified

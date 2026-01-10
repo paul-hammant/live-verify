@@ -14,49 +14,29 @@ In global finance and trade, every transaction must be checked against **Sanctio
 
 These documents are the "Legal Safe Harbor" for high-value trade. Fraud is high-stakes: a company might "edit" a screening report to hide that their customer is actually a sanctioned oligarch or a prohibited defense entity. Similarly, a bank might use an outdated "Snapshot" from 2023 to hide a sanction designated in 2025. Verified hashes bind the **Subject Name, Lists Searched, and Dataset Timestamp** to the screening provider's domain (e.g., `dowjones.com` or `refinitiv.com`).
 
-<div style="max-width: 650px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <div style="background: #000; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid #d32f2f;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="sanc">[</span>DOW JONES RISK & COMPLIANCE</div>
-      <div style="font-size: 0.8em; opacity: 0.9; text-transform: uppercase;">Official Screening Attestation</div>
-    </div>
-    <div style="font-size: 2em;">🌐</div>
-  </div>
-<div style="padding: 25px;">
-    <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
-      <div>
-        <strong>Subject:</strong> GLOBAL PETROLEUM TRADING LTD.<br>
-        <strong>Jurisdiction:</strong> Dubai, UAE<br>
-        <strong>Entity ID:</strong> AE-99228877
-      </div>
-      <div style="text-align: right;">
-        <strong>Screening ID:</strong> DJ-2026-8844-XJ<br>
-        <strong>Date/Time:</strong> 15 MAR 2026 14:32:01<br>
-        <strong>Result:</strong> <span style="color: #2e7d32; font-weight: bold;">NO MATCH FOUND</span>
-      </div>
-    </div>
-<div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin-bottom: 20px; border-radius: 4px;">
-      <h4 style="margin-top: 0; color: #000; font-size: 0.9em; border-bottom: 1px solid #ccc; padding-bottom: 5px;">DATASETS VERIFIED</h4>
-      <ul style="margin: 5px 0; padding-left: 20px; font-size: 0.85em; line-height: 1.4;">
-        <li><strong>US OFAC:</strong> Specially Designated Nationals (SDN) - <em>Verified 15-MAR</em></li>
-        <li><strong>UN Security Council:</strong> Consolidated Sanctions List - <em>Verified 15-MAR</em></li>
-        <li><strong>EU FS:</strong> Consolidated List of Persons & Entities - <em>Verified 15-MAR</em></li>
-        <li><strong>UK HMT:</strong> Consolidated List of Financial Sanctions - <em>Verified 15-MAR</em></li>
-      </ul>
-    </div>
-<div style="font-size: 0.75em; color: #666; font-style: italic; text-align: center;">
-      This attestation confirms that the subject was screened against the datasets above with 100% fuzzy-match threshold. Verification confirms report integrity at the timestamp of issuance.
-    </div>
-  </div>
-<div style="padding: 20px; background: #f5f5f5; border-top: 1px dashed #999; text-align: center;">
-    <div data-verify-line="sanc" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
-      title="Demo only: Screening providers don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:dowjones.com/v/DJ99228877 <span verifiable-text="end" data-for="sanc">]</span>
-    </div>
-    <div style="font-size: 0.7em; color: #777; margin-top: 10px;">
-      Scan to verify screening status, view the specific lists checked, and confirm dataset freshness.
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="sanc">[</span>DOW JONES RISK & COMPLIANCE
+Official Screening Attestation
+═══════════════════════════════════════════════════════════════════
+
+Subject:       GLOBAL PETROLEUM TRADING LTD.
+Jurisdiction:  Dubai, UAE               Screening ID: DJ-2026-8844-XJ
+Entity ID:     AE-99228877              Date/Time:    15 MAR 2026 14:32:01
+
+                      Result: NO MATCH FOUND
+
+DATASETS VERIFIED
+───────────────────────────────────────────────────────────────────
+- US OFAC: Specially Designated Nationals (SDN) - Verified 15-MAR
+- UN Security Council: Consolidated Sanctions List - Verified 15-MAR
+- EU FS: Consolidated List of Persons & Entities - Verified 15-MAR
+- UK HMT: Consolidated List of Financial Sanctions - Verified 15-MAR
+
+This attestation confirms that the subject was screened against
+the datasets above with 100% fuzzy-match threshold. Verification
+confirms report integrity at the timestamp of issuance.
+
+<span data-verify-line="sanc">verify:dowjones.com/v/DJ99228877</span> <span verifiable-text="end" data-for="sanc">]</span></pre>
 </div>
 
 ## Data Verified

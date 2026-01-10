@@ -14,61 +14,25 @@ In the media and advertising industries, a **Photo License** is the legal contra
 
 These documents are the "Proof of Permission." Fraud is rampant in the "Copyright Trolling" and "Stock Photo" sectors. Dishonest sites often use stolen images and then create a fake "License PDF" to trick the creator's lawyers into stopping a lawsuit. Similarly, a publisher might "edit" a 1-year license to read "Perpetual" to avoid paying a renewal fee. Verified hashes bind the **Image ID, Licensee Name, and Rights Tier** to the agency's or the photographer's domain (e.g., `gettyimages.com` or `shutterstock.com`).
 
-<div style="max-width: 600px; margin: 24px auto; font-family: 'Helvetica Neue', Arial, sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-  <div style="background: #000; color: #fff; padding: 25px; display: flex; justify-content: space-between; align-items: center;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.5em; letter-spacing: 1px;"><span verifiable-text="start" data-for="photo">[</span>GETTY IMAGES</div>
-      <div style="font-size: 0.75em; opacity: 0.8; text-transform: uppercase;">License Verification Certificate</div>
-    </div>
-    <div style="font-size: 2em;">📸</div>
-  </div>
-<div style="padding: 30px;">
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; color: #333; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
-      <div>
-        <strong>Licensee:</strong> THE DAILY PLANET CORP.<br>
-        <strong>Image ID:</strong> 99228877-XJ<br>
-        <strong>Title:</strong> <em>Skyline at Dawn</em>
-      </div>
-      <div style="text-align: right;">
-        <strong>License #:</strong> LIC-2026-8844<br>
-        <strong>Issued:</strong> 15 MAR 2026<br>
-        <strong>Format:</strong> High-Res TIFF
-      </div>
-    </div>
-<div style="background: #f9f9f9; padding: 20px; border: 1px solid #ddd; border-radius: 4px; margin-bottom: 20px;">
-      <h4 style="margin-top: 0; color: #000; font-size: 0.9em; border-bottom: 1px solid #ccc; padding-bottom: 5px;">VERIFIED USAGE RIGHTS</h4>
-      <table style="width: 100%; font-size: 0.9em;">
-        <tr>
-          <td><strong>Type:</strong></td>
-          <td style="text-align: right; font-weight: bold;">Commercial / Editorial</td>
-        </tr>
-        <tr>
-          <td><strong>Territory:</strong></td>
-          <td style="text-align: right; font-weight: bold;">Worldwide</td>
-        </tr>
-        <tr>
-          <td><strong>Duration:</strong></td>
-          <td style="text-align: right;">24 Months (Exp: 15 MAR 2028)</td>
-        </tr>
-        <tr>
-          <td><strong>Exclusivity:</strong></td>
-          <td style="text-align: right; color: #d32f2f;">Non-Exclusive</td>
-        </tr>
-      </table>
-    </div>
-<div style="font-size: 0.75em; color: #666; font-style: italic; text-align: center;">
-      This license is non-transferable. Image metadata contains a matching cryptographic watermark.
-    </div>
-  </div>
-<div style="padding: 20px; background: #fdfdfd; border-top: 1px dashed #bbb; text-align: center;">
-    <div data-verify-line="photo" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
-      title="Demo only: Photo agencies don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:gettyimages.com/v/LIC20268844 <span verifiable-text="end" data-for="photo">]</span>
-    </div>
-    <div style="font-size: 0.7em; color: #999; margin-top: 10px;">
-      Scan to verify license validity, photographer credits, and allowed distribution channels.
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="photo">[</span>GETTY IMAGES
+License Verification Certificate
+═══════════════════════════════════════════════════════════════════
+
+Licensee:   THE DAILY PLANET CORP.        License #:  LIC-2026-8844
+Image ID:   99228877-XJ                   Issued:     15 MAR 2026
+Title:      Skyline at Dawn               Format:     High-Res TIFF
+
+VERIFIED USAGE RIGHTS
+───────────────────────────────────────────────────────────────────
+Type:                                         Commercial / Editorial
+Territory:                                                 Worldwide
+Duration:                               24 Months (Exp: 15 MAR 2028)
+Exclusivity:                                           Non-Exclusive
+
+License is non-transferable.
+
+<span data-verify-line="photo">verify:gettyimages.com/v/LIC20268844</span> <span verifiable-text="end" data-for="photo">]</span></pre>
 </div>
 
 ## Data Verified

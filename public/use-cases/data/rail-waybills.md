@@ -14,56 +14,30 @@ In the freight industry, the **Rail Waybill** is the primary contract of carriag
 
 Fraud is high-stakes in bulk commodities (e.g., grain, coal, chemicals). Shady shippers often "edit" a waybill to misrepresent the weight of the cargo to under-pay the railroad, or to hide the presence of **Hazardous Materials** to bypass safety fees. Verified hashes bind the **Railcar ID, Cargo Weight, and Consignee** to the railroad's domain (e.g., `up.com` or `bnsf.com`).
 
-<div style="max-width: 650px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 1px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <div style="background: #efcc00; color: #000; padding: 15px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #000;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: -1px;"><span verifiable-text="start" data-for="rail">[</span>UNION PACIFIC</div>
-      <div style="font-size: 0.75em; opacity: 0.8;">OFFICIAL INTERMODAL WAYBILL</div>
-    </div>
-    <div style="font-size: 2em;">🚂</div>
-  </div>
-<div style="padding: 20px;">
-    <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.85em; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
-      <div>
-        <strong>Shipper:</strong> GLOBAL AGRI-TRADE LLC<br>
-        <strong>Consignee:</strong> PACIFIC TERMINALS INC.<br>
-        <strong>Destination:</strong> PORT OF TACOMA, WA
-      </div>
-      <div style="text-align: right;">
-        <strong>Waybill #:</strong> UP-2026-992288<br>
-        <strong>Date:</strong> 15 MAR 2026<br>
-        <strong>Railcar:</strong> UPP-884422 (Verified)
-      </div>
-    </div>
-<table style="width: 100%; border-collapse: collapse; font-size: 0.8em; margin-bottom: 20px;">
-      <tr style="border-top: 2px solid #000; border-bottom: 1px solid #000; background: #f5f5f5;">
-        <th style="text-align: left; padding: 8px;">Commodity / STCC Code</th>
-        <th style="text-align: center; padding: 8px;">Units</th>
-        <th style="text-align: right; padding: 8px;">Gross Weight</th>
-      </tr>
-      <tr>
-        <td style="padding: 10px 8px;">01-137-10 (Hard Red Winter Wheat)</td>
-        <td style="text-align: center; padding: 8px;">1 Hopper</td>
-        <td style="text-align: right; padding: 8px; font-weight: bold;">192,450 LB</td>
-      </tr>
-      <tr style="border-bottom: 1px solid #000;">
-        <td colspan="2" style="text-align: right; padding: 8px;"><strong>Total Net Cargo Weight (Verified):</strong></td>
-        <td style="text-align: right; padding: 8px; font-weight: bold; color: #2e7d32;">142,500 LB</td>
-      </tr>
-    </table>
-<div style="font-size: 0.75em; color: #666; line-height: 1.4; border: 1px solid #ccc; padding: 10px; background: #fff;">
-      <strong>Hazmat Status:</strong> NON-HAZARDOUS. Any deviation from the declared STCC code is a violation of Federal Rail Safety Standards.
-    </div>
-  </div>
-<div style="padding: 20px; background: #fdfdfd; border-top: 1px solid #000; text-align: center;">
-    <div data-verify-line="rail" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
-      title="Demo only: Railroads don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:up.com/waybill/v/UP2026992288 <span verifiable-text="end" data-for="rail">]</span>
-    </div>
-    <div style="font-size: 0.7em; color: #777; margin-top: 10px; font-style: italic;">
-      Scan to verify weight integrity, railcar ownership, and interchange status.
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="rail">[</span>UNION PACIFIC
+OFFICIAL INTERMODAL WAYBILL
+═══════════════════════════════════════════════════════════════════
+
+Waybill #:      UP-2026-992288
+Date:           15 MAR 2026
+Railcar:        UPP-884422 (Verified)
+
+Shipper:        GLOBAL AGRI-TRADE LLC
+Consignee:      PACIFIC TERMINALS INC.
+Destination:    PORT OF TACOMA, WA
+
+Commodity / STCC Code              Units           Gross Weight
+───────────────────────────────────────────────────────────────────
+01-137-10 (Hard Red Winter Wheat)  1 Hopper          192,450 LB
+───────────────────────────────────────────────────────────────────
+Total Net Cargo Weight (Verified):                    142,500 LB
+
+Hazmat Status: NON-HAZARDOUS
+Any deviation from the declared STCC code is a violation of
+Federal Rail Safety Standards.
+
+<span data-verify-line="rail">verify:up.com/waybill/v/UP2026992288</span> <span verifiable-text="end" data-for="rail">]</span></pre>
 </div>
 
 ## Data Verified

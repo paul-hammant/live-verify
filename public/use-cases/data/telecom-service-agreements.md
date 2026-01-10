@@ -14,61 +14,29 @@ In the business world, connectivity is oxygen. A **Service Level Agreement (SLA)
 
 The problem is that these agreements are often buried in 50-page PDFs. During a dispute, a provider might point to a "Standard SLA" on their website that is much weaker than the "Premium SLA" the customer actually signed. Similarly, a customer might "edit" their SLA to claim a higher credit for a minor outage. Verified hashes bind the **Uptime Percentages, Credit Formulas, and Contract Terms** to the provider's domain (e.g., `verizon.com` or `aws.amazon.com`).
 
-<div style="max-width: 650px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <div style="background: #fdfdfd; padding: 25px; border-bottom: 3px solid #d32f2f; display: flex; justify-content: space-between; align-items: center;">
-    <div style="font-weight: bold; font-size: 1.5em; color: #000; letter-spacing: -1px;"><span verifiable-text="start" data-for="telecom">[</span>VERIZON <span style="font-weight: normal; color: #d32f2f;">BUSINESS</span></div>
-    <div style="text-align: right;">
-      <div style="font-weight: bold; font-size: 0.9em;">SERVICE LEVEL AGREEMENT</div>
-      <div style="font-size: 0.7em; color: #666;">Contract Ref: VZ-992288-X</div>
-    </div>
-  </div>
-<div style="padding: 25px;">
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9em; margin-bottom: 25px;">
-      <div>
-        <strong>Customer:</strong> GLOBAL LOGISTICS CORP.<br>
-        <strong>Account #:</strong> 8877-6655-44<br>
-        <strong>Service:</strong> Dedicated Fiber (10Gbps)
-      </div>
-      <div style="text-align: right;">
-        <strong>Effective Date:</strong> MARCH 15, 2026<br>
-        <strong>Term:</strong> 36 Months<br>
-        <strong>Location:</strong> CHICAGO HUB-1
-      </div>
-    </div>
-<div style="border: 1px solid #eee; padding: 20px; background: #f9f9f9; margin-bottom: 20px;">
-      <h4 style="margin-top: 0; border-bottom: 1px solid #ddd; padding-bottom: 5px; color: #d32f2f;">CORE PERFORMANCE GUARANTEES</h4>
-      <table style="width: 100%; font-size: 0.9em;">
-        <tr>
-          <td><strong>Network Availability:</strong></td>
-          <td style="text-align: right; font-weight: bold;">99.995%</td>
-        </tr>
-        <tr>
-          <td><strong>Latency (Round Trip):</strong></td>
-          <td style="text-align: right; font-weight: bold;">&lt; 35ms</td>
-        </tr>
-        <tr>
-          <td><strong>Packet Delivery:</strong></td>
-          <td style="text-align: right; font-weight: bold;">&gt; 99.9%</td>
-        </tr>
-        <tr>
-          <td><strong>Mean Time to Repair (MTTR):</strong></td>
-          <td style="text-align: right; font-weight: bold;">4 Hours</td>
-        </tr>
-      </table>
-    </div>
-<div style="font-size: 0.8em; color: #555; line-height: 1.4;">
-      <strong>SLA Credits:</strong> Failures to meet Availability targets result in a 10% credit of the monthly recurring charge (MRC) for each hour of downtime, capped at 50% MRC per month.
-    </div>
-  </div>
-<div style="padding: 20px; background: #eee; border-top: 1px solid #ddd; text-align: center;">
-    <div data-verify-line="telecom" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
-      title="Demo only: Telecoms don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:verizon.com/sla/v/VZ992288X <span verifiable-text="end" data-for="telecom">]</span>
-    </div>
-    <div style="font-size: 0.7em; color: #777; margin-top: 10px; font-style: italic;">
-      Scan to verify contract terms, performance tiers, and SLA credit eligibility.
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="telecom">[</span>VERIZON BUSINESS
+Service Level Agreement
+═══════════════════════════════════════════════════════════════════
+
+Contract Ref: VZ-992288-X
+
+Customer:    GLOBAL LOGISTICS CORP.       Effective Date: MARCH 15, 2026
+Account #:   8877-6655-44                 Term:           36 Months
+Service:     Dedicated Fiber (10Gbps)     Location:       CHICAGO HUB-1
+
+CORE PERFORMANCE GUARANTEES
+───────────────────────────────────────────────────────────────────
+Network Availability:                                       99.995%
+Latency (Round Trip):                                        < 35ms
+Packet Delivery:                                            > 99.9%
+Mean Time to Repair (MTTR):                                 4 Hours
+
+SLA CREDITS: Failures to meet Availability targets result in a
+10% credit of the monthly recurring charge (MRC) for each hour
+of downtime, capped at 50% MRC per month.
+
+<span data-verify-line="telecom">verify:verizon.com/sla/v/VZ992288X</span> <span verifiable-text="end" data-for="telecom">]</span></pre>
 </div>
 
 ## Data Verified

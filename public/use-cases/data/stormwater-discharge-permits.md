@@ -14,61 +14,28 @@ In the industrial and construction sectors, a **Stormwater Discharge Permit** (u
 
 These permits are the "Permission to Pollute" within legal bounds. Fraud is common in high-impact industries (e.g., Mining, Manufacturing): operators might "edit" a permit to hide a "Toxicity Limit" or to change the "Authorized Outfall" location to a less-monitored area. Verified hashes bind the **Facility ID, Pollutant Limits, and Discharge Points** to the state's or the EPA's domain (e.g., `epa.gov` or `water-quality.gov`).
 
-<div style="max-width: 650px; margin: 24px auto; font-family: sans-serif; border: 3px solid #002d62; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  <div style="background: #002d62; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 1px;"><span verifiable-text="start" data-for="water">[</span>STATE ENVIRONMENTAL BOARD</div>
-      <div style="font-size: 0.8em; opacity: 0.9; text-transform: uppercase;">Stormwater General Permit (NPDES)</div>
-    </div>
-    <div style="font-size: 2em;">💧</div>
-  </div>
-<div style="padding: 25px;">
-    <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
-      <div>
-        <strong>Permittee:</strong> GOLIATH MANUFACTURING INC.<br>
-        <strong>Facility ID:</strong> #NY-992288-Z<br>
-        <strong>Address:</strong> 123 Factory Lane, Springfield
-      </div>
-      <div style="text-align: right;">
-        <strong>Permit #:</strong> NYR-2026-8844<br>
-        <strong>Effective Date:</strong> 15 MAR 2026<br>
-        <strong>Expires:</strong> 14 MAR 2031
-      </div>
-    </div>
-<div style="background: #f0f4f8; border: 1px solid #ddd; padding: 15px; margin-bottom: 20px; border-radius: 4px;">
-      <h4 style="margin-top: 0; color: #002d62; font-size: 0.9em; border-bottom: 1px solid #ccc; padding-bottom: 5px;">VERIFIED DISCHARGE LIMITS</h4>
-      <table style="width: 100%; font-size: 0.85em;">
-        <tr>
-          <td><strong>Total Suspended Solids (TSS):</strong></td>
-          <td style="text-align: right; font-weight: bold;">&lt; 100 mg/L</td>
-        </tr>
-        <tr>
-          <td><strong>pH Range:</strong></td>
-          <td style="text-align: right; font-weight: bold;">6.0 - 9.0 S.U.</td>
-        </tr>
-        <tr>
-          <td><strong>Oil & Grease:</strong></td>
-          <td style="text-align: right; font-weight: bold;">&lt; 15 mg/L</td>
-        </tr>
-        <tr>
-          <td><strong>Outfall Location:</strong></td>
-          <td style="text-align: right;">OUTFALL-001 (Main Creek)</td>
-        </tr>
-      </table>
-    </div>
-<div style="font-size: 0.75em; color: #666; line-height: 1.4; font-style: italic; text-align: center;">
-      This permit authorizes discharge only during storm events. Any un-verified discharge or limit violation is subject to federal penalties of up to $50,000 per day.
-    </div>
-  </div>
-<div style="padding: 20px; background: #fdfdfd; border-top: 1px solid #002d62; text-align: center;">
-    <div data-verify-line="water" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
-      title="Demo only: State boards don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:state-water.gov/npdes/v/NY992288Z <span verifiable-text="end" data-for="water">]</span>
-    </div>
-    <div style="font-size: 0.7em; color: #777; margin-top: 10px;">
-      Scan to verify discharge outfall maps, recent lab monitoring results, and storm-event log compliance.
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="water">[</span>STATE ENVIRONMENTAL BOARD
+Stormwater General Permit (NPDES)
+═══════════════════════════════════════════════════════════════════
+
+Permittee:    GOLIATH MANUFACTURING INC.  Permit #:       NYR-2026-8844
+Facility ID:  #NY-992288-Z                Effective Date: 15 MAR 2026
+Address:      123 Factory Lane            Expires:        14 MAR 2031
+              Springfield
+
+VERIFIED DISCHARGE LIMITS
+───────────────────────────────────────────────────────────────────
+Total Suspended Solids (TSS):                            < 100 mg/L
+pH Range:                                              6.0 - 9.0 S.U.
+Oil & Grease:                                             < 15 mg/L
+Outfall Location:                           OUTFALL-001 (Main Creek)
+
+This permit authorizes discharge only during storm events.
+Any un-verified discharge or limit violation is subject to
+federal penalties of up to $50,000 per day.
+
+<span data-verify-line="water">verify:state-water.gov/npdes/v/NY992288Z</span> <span verifiable-text="end" data-for="water">]</span></pre>
 </div>
 
 ## Data Verified

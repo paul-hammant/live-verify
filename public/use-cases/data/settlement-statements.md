@@ -14,58 +14,27 @@ A **Settlement Statement** (typically the **ALTA** or **HUD-1**) is the "Final S
 
 Because this document governs the distribution of hundreds of thousands of dollars, it is a primary target for **Mortgage and Wire Fraud**. Criminals use fake settlement statements to trick banks into releasing loan funds to "Phantom Payees," or they "edit" a statement to hide illegal "Kickbacks" to unlicensed parties. Verified hashes bind the **Net Payouts, Loan Amounts, and Settlement Agent ID** to the title company's or the lender's domain (e.g., `firstam.com` or `stewart.com`).
 
-<div style="max-width: 700px; margin: 24px auto; font-family: 'Helvetica Neue', Arial, sans-serif; border: 1px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-  <div style="background: #eee; padding: 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #000;">
-    <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="settle">[</span>ALTA SETTLEMENT STATEMENT</div>
-    <div style="text-align: right;">
-      <div style="font-size: 0.8em; color: #666;">File #: ESC-99228877-XJ</div>
-      <div style="font-size: 0.8em; color: #666;">Date: 15 MAR 2026</div>
-    </div>
-  </div>
-<div style="padding: 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.8em; line-height: 1.4; border-bottom: 1px solid #000;">
-    <div>
-      <strong>Settlement Agent:</strong> SPRINGFIELD TITLE & ESCROW<br>
-      <strong>Buyer:</strong> SARAH JANE DOE<br>
-      <strong>Seller:</strong> ROBERT & MARY SMITH TRUST
-    </div>
-    <div style="text-align: right;">
-      <strong>Property:</strong> 123 MAPLE ST, SPRINGFIELD, USA<br>
-      <strong>Lender:</strong> GOLIATH NATIONAL BANK
-    </div>
-  </div>
-<div style="padding: 0;">
-    <table style="width: 100%; border-collapse: collapse; font-size: 0.85em;">
-      <tr style="background: #f5f5f5; border-bottom: 1px solid #000;">
-        <th style="text-align: left; padding: 10px;">Description</th>
-        <th style="text-align: right; padding: 10px;">Buyer Debit</th>
-        <th style="text-align: right; padding: 10px;">Seller Credit</th>
-      </tr>
-      <tr>
-        <td style="padding: 10px;">Sale Price of Property</td>
-        <td style="text-align: right; padding: 10px;">$ 545,000.00</td>
-        <td style="text-align: right; padding: 10px;">$ 545,000.00</td>
-      </tr>
-      <tr>
-        <td style="padding: 10px;">Loan Amount (Goliath Bank)</td>
-        <td style="text-align: right; padding: 10px; color: #2e7d32;">($ 436,000.00)</td>
-        <td style="text-align: right; padding: 10px;">-</td>
-      </tr>
-      <tr style="border-top: 2px solid #000; font-weight: bold; background: #fffbe6;">
-        <td style="padding: 10px;">CASH TO CLOSE / FROM SELLER:</td>
-        <td style="text-align: right; padding: 10px;">$ 114,250.00</td>
-        <td style="text-align: right; padding: 10px;">$ 482,450.00</td>
-      </tr>
-    </table>
-  </div>
-<div style="padding: 25px; background: #fdfdfd; border-top: 1px solid #000; text-align: center;">
-    <div style="font-size: 0.7em; color: #555; margin-bottom: 10px; font-style: italic;">
-      Verification confirms the financial integrity of this closing. Any unauthorized payoff or fee alteration renders this statement void.
-    </div>
-    <div data-verify-line="settle" style="border-top: 1px dashed #999; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
-      title="Demo only: Title companies don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:springfield-title.com/v/ESC99228877 <span verifiable-text="end" data-for="settle">]</span>
-    </div>
-  </div>
+<div style="max-width: 700px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="settle">[</span>ALTA SETTLEMENT STATEMENT                    File #: ESC-99228877-XJ
+                                             Date: 15 MAR 2026
+
+Settlement Agent: SPRINGFIELD TITLE & ESCROW
+Buyer:            SARAH JANE DOE
+Seller:           ROBERT & MARY SMITH TRUST
+Property:         123 MAPLE ST, SPRINGFIELD, USA
+Lender:           GOLIATH NATIONAL BANK
+
+Description                       Buyer Debit      Seller Credit
+────────────────────────────────────────────────────────────────────
+Sale Price of Property            $ 545,000.00     $ 545,000.00
+Loan Amount (Goliath Bank)       ($ 436,000.00)            -
+────────────────────────────────────────────────────────────────────
+CASH TO CLOSE / FROM SELLER:      $ 114,250.00     $ 482,450.00
+
+Verification confirms the financial integrity of this closing.
+Any unauthorized payoff or fee alteration renders this statement void.
+
+<span data-verify-line="settle">verify:springfield-title.com/v/ESC99228877</span> <span verifiable-text="end" data-for="settle">]</span></pre>
 </div>
 
 ## Data Verified

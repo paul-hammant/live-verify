@@ -14,44 +14,23 @@ In the modern "Sharing Economy," **Temporary Insurance** (or On-Demand Insurance
 
 These documents are "High-Velocity" proofs. Fraud is rampant in "Post-Accident" scenarios: a person crashes a car, then instantly buys a 1-hour policy on their phone and tries to "edit" the start-time on the PDF to 10 minutes *before* the crash. Verified hashes bind the **Precise Activation Timestamp (hh:mm:ss), Vehicle VIN, and Driver ID** to the insurer's domain (e.g., `cuvva.com` or `geico.com`).
 
-<div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #007bff; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
-  <div style="background: #007bff; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
-    <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 1px;"><span verifiable-text="start" data-for="temp">[</span>CUVVA \/</div>
-    <div style="font-size: 0.7em; opacity: 0.9; text-align: right;">TEMPORARY AUTO<br>INSURANCE BINDER</div>
-  </div>
-<div style="padding: 20px; background: #fff;">
-    <div style="display: flex; justify-content: space-between; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 10px;">
-      <div>
-        <div style="font-size: 0.7em; color: #888; text-transform: uppercase;">Covered Driver</div>
-        <div style="font-size: 1.1em; font-weight: bold; color: #333;">SARAH JANE SMITH</div>
-      </div>
-      <div style="text-align: right;">
-        <div style="font-size: 0.7em; color: #888; text-transform: uppercase;">License #</div>
-        <div style="font-size: 1em; font-weight: bold;">NY-99228877</div>
-      </div>
-    </div>
-<div style="background: #e7f3ff; border: 1px solid #b8daff; padding: 15px; border-radius: 4px; margin-bottom: 20px;">
-      <h4 style="margin-top: 0; color: #004085; font-size: 0.85em; text-transform: uppercase; border-bottom: 1px solid #b8daff; padding-bottom: 5px;">VERIFIED COVERAGE WINDOW</h4>
-      <div style="display: grid; grid-template-columns: 1fr 1fr; margin-top: 10px; font-size: 0.9em;">
-        <div><strong>Starts:</strong><br>15 MAR 2026<br><strong>14:32:01 EST</strong></div>
-        <div style="text-align: right;"><strong>Ends:</strong><br>15 MAR 2026<br><strong>17:32:01 EST</strong></div>
-      </div>
-    </div>
-<div style="font-size: 0.85em; line-height: 1.4; color: #333;">
-      <p><strong>Vehicle:</strong> 2024 Honda Accord (NY-ABC1234)<br>
-      <strong>VIN:</strong> <span style="font-family: monospace;">1ABC-9922-8877-Z</span></p>
-      <p><strong>Liability Limit:</strong> $ 100,000 / $ 300,000</p>
-    </div>
-  </div>
-<div style="padding: 15px 20px 20px 20px; background: #f8f9fa; border-top: 1px solid #dee2e6; text-align: center;">
-    <div data-verify-line="temp" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #007bff; font-weight: bold;"
-      title="Demo only: Insurtech firms don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:cuvva.com/v/BIND99228877 <span verifiable-text="end" data-for="temp">]</span>
-    </div>
-    <div style="font-size: 0.65em; color: #6c757d; margin-top: 8px;">
-      Scan to verify real-time policy activation and driver eligibility. Coverage is time-sensitive.
-    </div>
-  </div>
+<div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="temp">[</span>CUVVA
+TEMPORARY AUTO INSURANCE BINDER
+═══════════════════════════════════════════════════════════════════
+
+Covered Driver:   SARAH JANE SMITH          License #: NY-99228877
+
+VERIFIED COVERAGE WINDOW
+───────────────────────────────────────────────────────────────────
+Starts:   15 MAR 2026  14:32:01 EST
+Ends:     15 MAR 2026  17:32:01 EST
+
+Vehicle:         2024 Honda Accord (NY-ABC1234)
+VIN:             1ABC-9922-8877-Z
+Liability Limit: $ 100,000 / $ 300,000
+
+<span data-verify-line="temp">verify:cuvva.com/v/BIND99228877</span> <span verifiable-text="end" data-for="temp">]</span></pre>
 </div>
 
 ## Data Verified
