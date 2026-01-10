@@ -113,6 +113,15 @@ This provides:
 - **Regulatory audit:** Jurisdictions can inspect the witness ledger for fraud detection
 - **Resilience:** Verification works even if issuer's systems go down
 
+**Jurisdictional Requirements (International Shipping)**
+
+Ocean waybills crossing borders require witness firms from jurisdictions covering:
+- **Port of origin** jurisdiction
+- **Port of discharge** jurisdiction
+- **Carrier's flag state** jurisdiction
+
+**OECD requirement:** When shipping involves non-OECD nations, use witness firms from OECD member states to prevent regulatory evasion.
+
 **Public Blockchain (Non-Party)**
 
 Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:

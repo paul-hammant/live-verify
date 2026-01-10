@@ -222,6 +222,24 @@ This provides:
 - **Regulatory audit:** Jurisdictions can inspect the witness ledger for fraud detection
 - **Resilience:** Verification works even if issuer's systems go down
 
+**Jurisdictional Requirements (United States)**
+
+The IRS does not mandate or recognize third-party witnessing firms for federal tax documents. The IRS maintains authoritative records within its own systems, and verification occurs via direct query to IRS endpoints.
+
+However:
+- **State tax authorities** may have different requirements (e.g., state-level charity registration requires independent witness firms)
+- **International stakeholders** (foreign tax authorities, treaty partners) may demand independent verification from witness firms not located in the US
+- **FATCA compliance** (Foreign Account Tax Compliance Act) may require US documents to be witnessed by non-US firms when shared across borders
+
+**Jurisdictional Requirements (Insurance)**
+
+**US Domestic Insurance:** State insurance commissioners do not mandate witness firms for policy issuance. However:
+- **Claims litigation:** Once insurance moves to litigation, court-appointed independent witnesses become mandatory
+- **Cross-border coverage:** International policies may require witness firms from multiple jurisdictions
+- **Lloyd's & International Market:** Non-US policies may require witness firms from OECD nations
+
+**Reinsurance/Captive Insurance:** International reinsurance treaties demand witness firms when policies involve non-US insureds or cross-border claims.
+
 **Public Blockchain (Non-Party)**
 
 Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
@@ -316,6 +334,24 @@ This provides:
 - **Timestamp proof:** Document existed at a specific time
 - **Regulatory audit:** Jurisdictions can inspect the witness ledger for fraud detection
 - **Resilience:** Verification works even if issuer's systems go down
+
+**Jurisdictional Requirements (United States)**
+
+The IRS does not mandate or recognize third-party witnessing firms for federal tax documents. The IRS maintains authoritative records within its own systems, and verification occurs via direct query to IRS endpoints.
+
+However:
+- **State tax authorities** may have different requirements (e.g., state-level charity registration requires independent witness firms)
+- **International stakeholders** (foreign tax authorities, treaty partners) may demand independent verification from witness firms not located in the US
+- **FATCA compliance** (Foreign Account Tax Compliance Act) may require US documents to be witnessed by non-US firms when shared across borders
+
+**Jurisdictional Requirements (Insurance)**
+
+**US Domestic Insurance:** State insurance commissioners do not mandate witness firms for policy issuance. However:
+- **Claims litigation:** Once insurance moves to litigation, court-appointed independent witnesses become mandatory
+- **Cross-border coverage:** International policies may require witness firms from multiple jurisdictions
+- **Lloyd's & International Market:** Non-US policies may require witness firms from OECD nations
+
+**Reinsurance/Captive Insurance:** International reinsurance treaties demand witness firms when policies involve non-US insureds or cross-border claims.
 
 **Public Blockchain (Non-Party)**
 
@@ -440,6 +476,24 @@ This provides:
 - **Timestamp proof:** Document existed at a specific time
 - **Regulatory audit:** Jurisdictions can inspect the witness ledger for fraud detection
 - **Resilience:** Verification works even if issuer's systems go down
+
+**Jurisdictional Requirements (United States)**
+
+The IRS does not mandate or recognize third-party witnessing firms for federal tax documents. The IRS maintains authoritative records within its own systems, and verification occurs via direct query to IRS endpoints.
+
+However:
+- **State tax authorities** may have different requirements (e.g., state-level charity registration requires independent witness firms)
+- **International stakeholders** (foreign tax authorities, treaty partners) may demand independent verification from witness firms not located in the US
+- **FATCA compliance** (Foreign Account Tax Compliance Act) may require US documents to be witnessed by non-US firms when shared across borders
+
+**Jurisdictional Requirements (Insurance)**
+
+**US Domestic Insurance:** State insurance commissioners do not mandate witness firms for policy issuance. However:
+- **Claims litigation:** Once insurance moves to litigation, court-appointed independent witnesses become mandatory
+- **Cross-border coverage:** International policies may require witness firms from multiple jurisdictions
+- **Lloyd's & International Market:** Non-US policies may require witness firms from OECD nations
+
+**Reinsurance/Captive Insurance:** International reinsurance treaties demand witness firms when policies involve non-US insureds or cross-border claims.
 
 **Public Blockchain (Non-Party)**
 

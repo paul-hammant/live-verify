@@ -109,6 +109,15 @@ This provides:
 - **Regulatory audit:** State insurance commissioners can inspect the witness ledger for rate manipulation
 - **Resilience:** Verification works even if carrier's systems go down
 
+**Jurisdictional Requirements (Insurance/Reinsurance)**
+
+Retrospective premium calculations in international reinsurance require:
+- **Geographic separation:** Witness firms not in the primary carrier's jurisdiction
+- **Lloyd's compliance:** High-value policies ($50M+) expect independent verification from London Market witnesses
+- **Bermuda Captive Insurance:** Non-US witness firms required for policies involving US insureds to satisfy double-trigger documentation rules
+
+**Cross-border reinsurance:** EU Solvency II requires witness firms for cross-border policy documents.
+
 **Public Blockchain (Non-Party)**
 
 Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:

@@ -118,6 +118,15 @@ This provides:
 - **Regulatory audit:** Jurisdictions can inspect the witness ledger for fraud detection
 - **Resilience:** Verification works even if issuer's systems go down
 
+**Jurisdictional Requirements (PSD2/Open Banking)**
+
+PSD2 (Payment Services Directive 2) in the EU explicitly requires:
+- Independent witness firms for consent form verification
+- Geographic separation from the bank to prevent collusion
+- Immutable audit trails of all consent modifications
+
+**US vs EU:** US banks may voluntarily use witness firms for international customers; EU banks must use them for cross-border transactions.
+
 **Public Blockchain (Non-Party)**
 
 Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:

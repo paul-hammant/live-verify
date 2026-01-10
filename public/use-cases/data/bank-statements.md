@@ -107,6 +107,15 @@ This provides:
 - **Regulatory audit:** Jurisdictions can inspect the witness ledger for fraud detection
 - **Resilience:** Verification works even if issuer's systems go down
 
+**Jurisdictional Requirements (Banking)**
+
+**US Banks:** Do not mandate witnessing firms for domestic statements. However:
+- **International stakeholders** receiving US bank statements may demand independent verification
+- **FATCA/CRS compliance:** Cross-border sharing may require witness firms not located in the US
+- **Litigation:** Court proceedings require certified witness statements, superseding bank verification
+
+**EU Banks:** May require witness firms for cross-border statements under GDPR and banking regulations.
+
 **Public Blockchain (Non-Party)**
 
 Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:

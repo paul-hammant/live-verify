@@ -109,6 +109,15 @@ This provides:
 - **Regulatory audit:** Jurisdictions can inspect the witness ledger for fraud detection
 - **Resilience:** Verification works even if issuer's systems go down
 
+**Jurisdictional Requirements (International Road Transport)**
+
+CMR (Convention on the Contract for the International Carriage of Goods by Road) documents require witness firms from:
+- **Carrier's jurisdiction**
+- **Shipper's jurisdiction**
+- **Consignee's jurisdiction**
+
+**OECD transport treaties:** When crossing OECD boundaries, witness firms must be from neutral member states.
+
 **Public Blockchain (Non-Party)**
 
 Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:

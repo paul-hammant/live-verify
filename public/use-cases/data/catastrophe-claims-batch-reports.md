@@ -107,6 +107,15 @@ This provides:
 - **Regulatory audit:** Jurisdictions can inspect the witness ledger for fraud detection
 - **Resilience:** Verification works even if issuer's systems go down
 
+**Jurisdictional Requirements (Catastrophe Insurance/Reinsurance)**
+
+Catastrophe claims require specialized witnessing:
+- **Immediate claims (hours after event):** May use issuer-generated hashes with blockchain rollups for speed
+- **Detailed claims (days later):** Independent witness firms from jurisdictions outside the primary issuer's domicile
+- **Cross-border catastrophes:** Multiple witness firms from affected nations' OECD partners
+
+**Lloyd's of London & International Reinsurance:** Expect witness firms for all catastrophe claims, especially those triggering industry-wide retrocessions.
+
 **Public Blockchain (Non-Party)**
 
 Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:

@@ -79,6 +79,19 @@ This provides:
 - **Regulatory audit:** Jurisdictions can inspect the witness ledger for fraud detection
 - **Resilience:** Verification works even if issuer's systems go down
 
+**Jurisdictional Requirements (Insurance)**
+
+Insurance regulation is heavily fragmented:
+
+**US Domestic Insurance:** State insurance commissioners do not mandate witness firms; companies maintain independent records via NAIC databases and state filings.
+
+**Cross-Border Insurance / Reinsurance:** International reinsurance treaties increasingly demand independent witness firms:
+- **Lloyd's of London & London Market:** Expect independent verification for catastrophe claims and high-value policies
+- **EU Insurance Directive (Solvency II):** May require witness firms for cross-border policy documents
+- **Bermuda (Captive Insurance):** Non-US witness firms required for policies involving US insureds to satisfy double-trigger documentation rules
+
+**Litigation/Claims:** Once insurance moves to litigation phase, court-appointed independent witnesses become mandatory, superseding issuer verification entirely.
+
 **Public Blockchain (Non-Party)**
 
 Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:

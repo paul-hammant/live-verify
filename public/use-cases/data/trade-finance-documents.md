@@ -312,6 +312,17 @@ This provides:
 - **Regulatory audit:** Jurisdictions can inspect the witness ledger for fraud detection
 - **Resilience:** Verification works even if issuer's systems go down
 
+**Jurisdictional Requirements (International Trade)**
+
+Trade finance documents crossing national borders require multi-jurisdictional witnessing:
+
+**Treaty Partners:** When documents are shared between treaty partners (US-EU, USMCA), witness firms must:
+- Be located in neutral jurisdictions
+- Comply with both nations' export/import regulations
+- Maintain audit trails accessible to both customs/tax authorities
+
+**Non-Treaty Jurisdictions:** Use witnesses from OECD member states; consider blockchain rollups for emerging market trade.
+
 **Public Blockchain (Non-Party)**
 
 Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:

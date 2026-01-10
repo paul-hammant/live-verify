@@ -115,6 +115,19 @@ This provides:
 - **Regulatory audit:** Jurisdictions can inspect the witness ledger for fraud detection
 - **Resilience:** Verification works even if issuer's systems go down
 
+**Jurisdictional Requirements (Banking)**
+
+Banking regulators vary widely:
+
+**US Banks (OCC, FDIC, Federal Reserve):** Do not mandate external witnessing for domestic use; verification via bank's own systems is sufficient.
+
+**International/EU Banks (PSD2, Banking Regulation):** Require independent witness firms for:
+- Open Banking consent records (PSD2 compliance)
+- Large cross-border transfers (suspicious activity reporting)
+- Cryptocurrency/stablecoin gateway documents
+
+**Cross-border use:** When documents are shared internationally, witness firms from neutral OECD jurisdictions prevent regulatory arbitrage.
+
 **Public Blockchain (Non-Party)**
 
 Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:

@@ -120,6 +120,23 @@ This provides:
 - **Regulatory audit:** State charity bureaus can inspect the witness ledger for fraud detection
 - **Resilience:** Verification works even if IRS systems go down
 
+**Jurisdictional Requirements (United States / IRS)**
+
+The IRS does not mandate or recognize third-party witnessing firms for federal tax documents. The IRS maintains authoritative records within its own systems, and verification occurs via direct query to IRS endpoints.
+
+However:
+- **State tax authorities** may have different requirements (e.g., state-level charity registration requires independent witness firms)
+- **International stakeholders** (foreign tax authorities, treaty partners) may demand independent verification from witness firms not located in the US
+- **FATCA compliance** (Foreign Account Tax Compliance Act) may require US documents to be witnessed by non-US firms when shared across borders
+
+**Verification Framework Differences**
+
+The FATCA/CRS frameworks require geographic separation (independent witness firms outside the issuer's jurisdiction) for cross-border documents originating from certain financial centers. This reflects a principle of independent external verification for documents crossing regulatory jurisdictions.
+
+The IRS maintains its own verification infrastructure for federal tax documents (501(c)(3) determination letters, EIN assignments, tax rulings). These documents are verified through direct IRS system queries rather than through independent witness firms. This represents a different verification model—issuer-maintained records for domestic purposes, with the expectation that treaty partners will conduct direct verification with the IRS.
+
+Both models serve distinct purposes: FATCA/CRS-style geographic separation prevents collusion when documents enter non-issuing jurisdictions; issuer-maintained systems provide efficient verification for routine domestic transactions. As international document verification evolves, blockchain-based rollups and decentralized architectures may converge these models into infrastructure-neutral standards applicable across jurisdictions.
+
 **Public Blockchain (Non-Party)**
 
 Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:

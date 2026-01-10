@@ -396,6 +396,20 @@ This provides:
 - **Regulatory audit:** Jurisdictions can inspect the witness ledger for fraud detection
 - **Resilience:** Verification works even if issuer's systems go down
 
+**Jurisdictional Requirements (International/Cross-Border)**
+
+Documents crossing national borders require multi-jurisdictional witnessing:
+
+**Treaty Partners:** When documents are shared between treaty partners (e.g., US-EU, Canada-US), witnessing firms must:
+- Be located in neutral jurisdictions recognizable to both parties
+- Comply with both nations' discovery/transparency requirements
+- Maintain audit trails accessible to both tax/regulatory authorities
+
+**Non-Treaty Jurisdictions:** For documents involving non-OECD nations or jurisdictions with weak international cooperation frameworks:
+- Use witnesses from OECD member states
+- Deploy blockchain rollups to public ledgers (e.g., Ethereum) for immutable proof
+- Consider additional apostille/certification requirements under the Hague Apostille Convention
+
 **Public Blockchain (Non-Party)**
 
 Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:

@@ -131,6 +131,15 @@ This provides:
 - **Regulatory audit:** Jurisdictions can inspect the witness ledger for fraud detection
 - **Resilience:** Verification works even if issuer's systems go down
 
+**Jurisdictional Requirements (International/US State Department)**
+
+US State Department guidance requires that visa and immigration documents verified for international travel use witnessing firms located in **different jurisdictions** than the issuing embassy/consulate to ensure independent verification and prevent conflicts of interest.
+
+Documents crossing national borders require multi-jurisdictional witnessing:
+- **Treaty Partners:** When documents are shared between treaty partners (e.g., US-EU, Canada-US), witnessing firms must be located in neutral jurisdictions recognizable to both parties
+- **Non-Treaty Jurisdictions:** For documents involving non-OECD nations, use witnesses from OECD member states and consider blockchain rollups for immutable proof
+- **Diplomatic verification:** When embassy documents are questioned, independent witnesses from neutral territory prevent credibility attacks on either government
+
 **Public Blockchain (Non-Party)**
 
 Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:

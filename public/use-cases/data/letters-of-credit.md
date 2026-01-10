@@ -113,6 +113,15 @@ This provides:
 - **Regulatory audit:** Jurisdictions can inspect the witness ledger for fraud detection
 - **Resilience:** Verification works even if issuer's systems go down
 
+**Jurisdictional Requirements (International Trade/Finance)**
+
+Letters of credit crossing borders require:
+- **Issuing bank's jurisdiction:** Bank verification endpoint acceptable
+- **Non-OECD beneficiary jurisdictions:** Independent witness firms from OECD nations required
+- **Compliance with UCP 600:** Article 7(c) allows independent verification via blockchain or third-party witnesses
+
+**Treaty-based trade:** US-EU, USMCA, and other trade agreements increasingly mandate witness firms from neutral jurisdictions for high-value L/Cs.
+
 **Public Blockchain (Non-Party)**
 
 Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:

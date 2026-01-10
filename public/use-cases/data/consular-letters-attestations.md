@@ -113,6 +113,13 @@ This provides:
 - **Regulatory audit:** Jurisdictions can inspect the witness ledger for fraud detection
 - **Resilience:** Verification works even if issuer's systems go down
 
+**Jurisdictional Requirements (International/State Department)**
+
+Consular documents issued abroad require witnessing firms located **outside** the issuing consulate's jurisdiction. US foreign policy strongly recommends:
+- Independent witness firms in OECD member states
+- Geographic separation from the consulate to prevent corruption or favoritism claims
+- Multilayered verification for documents crossing borders into high-risk jurisdictions
+
 **Public Blockchain (Non-Party)**
 
 Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:

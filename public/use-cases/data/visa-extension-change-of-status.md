@@ -107,6 +107,15 @@ This provides:
 - **Regulatory audit:** Jurisdictions can inspect the witness ledger for fraud detection
 - **Resilience:** Verification works even if issuer's systems go down
 
+**Jurisdictional Requirements (International/USCIS)**
+
+USCIS documents require independent witnessing firms located outside the US for cross-border verification, particularly when:
+- The applicant is in a non-treaty jurisdiction
+- The application involves multiple countries
+- The document is shared with foreign governments or international organizations
+
+**Geographic Separation Rule:** Witnessing firms must not be located in the applicant's destination country, preventing local collusion while ensuring neutral verification.
+
 **Public Blockchain (Non-Party)**
 
 Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
