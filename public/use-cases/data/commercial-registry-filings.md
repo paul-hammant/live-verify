@@ -347,6 +347,33 @@ Verification proves each link was officially filed. It doesn't pierce the veil o
 - **Compliance Proof:** Companies can prove they filed required disclosures
 - **Due Diligence Starting Point:** Investigators know where the chain leads next
 
+**Recursive Ownership Verification**
+
+A customer about to pay for goods or services could start with the business's verified certificate and click through all beneficial owners—or have software do the recursion automatically.
+
+```
+Customer scans: "Dbl Glazing Hertford Ltd"
+    → Verified: Companies House UK ✓
+    → PSC shows: Happy Brothers (Cayman) Ltd owns 75%
+        → Click to verify Cayman entity...
+            → Verified: Cayman Registry ✓
+            → Shows: Sunset Trust (BVI) owns 100%
+                → Click to verify BVI entity...
+                    → [No public registry / verification unavailable]
+                    → ⚠️ Ownership chain ends here
+```
+
+Software could automate this traversal, presenting users with:
+- Complete ownership trees where registries participate
+- Clear indicators where chains become opaque
+- Risk scoring based on how far verification reaches
+
+**Regulatory Evolution**
+
+Jurisdictions could legislate that offshore beneficial owners must also provide verifiable registrations. The UK could require that any RLE (Relevant Legal Entity) listed on a PSC must itself be verifiable through a recognized registry—or be flagged as non-compliant.
+
+This creates regulatory pressure: if Cayman entities want to own UK companies, the Cayman registry must participate in cross-border verification. The alternative is UK companies being marked with "unverifiable offshore ownership" warnings.
+
 ## Data Verified
 
 Registry authority, entity name, file/registration number, entity type, formation/registration date, current status, registered agent, key dates (renewal, expiration). For directors: name, appointment date, role, resignation date (if applicable), current/superseded status. For beneficial owners: name or entity, jurisdiction, ownership percentage, notification date.
