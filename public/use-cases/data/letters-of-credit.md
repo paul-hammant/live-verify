@@ -10,12 +10,12 @@ furtherDerivations: 1
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 1px solid #000; background: #fff; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
-    <strong verifiable-text="start" data-for="lc">HSBC BANK PLC - TRADE SERVICES</strong><br>
+    <strong>HSBC BANK PLC - TRADE SERVICES</strong><br>
     IRREVOCABLE DOCUMENTARY CREDIT<br>
     --------------------------------
   </div>
 <div style="font-size: 0.85em; line-height: 1.4;">
-    <p><strong>L/C Number:</strong> <span>[</span>HSBC-LC-99228877<br>
+    <p><strong>L/C Number:</strong> <span verifiable-text="start" data-for="lc">[</span>HSBC-LC-99228877<br>
     <strong>Date of Issue:</strong> 15 MAR 2026<br>
     <strong>Expiry Date:</strong> 15 SEP 2026</p>
 <div style="display: flex; margin-bottom: 15px;">

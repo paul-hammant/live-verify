@@ -17,7 +17,7 @@ For critical components (e.g., bolts for an airplane wing, medical implants, or 
 <div style="max-width: 650px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 2px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="padding: 25px; border-bottom: 2px solid #000; background: #fdfdfd; display: flex; justify-content: space-between; align-items: flex-start;">
     <div>
-      <div style="font-weight: bold; font-size: 1.3em;" verifiable-text="start" data-for="qc">PRECISION ALLOYS, INC.</div>
+      <div style="font-weight: bold; font-size: 1.3em;">PRECISION ALLOYS, INC.</div>
       <div style="font-size: 0.8em; color: #666;">ISO 9001:2015 Certified Facility • Lab ID: 9922</div>
     </div>
     <div style="text-align: right;">
@@ -28,7 +28,7 @@ For critical components (e.g., bolts for an airplane wing, medical implants, or 
 <div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9em; margin-bottom: 25px;">
       <div>
-        <strong>Batch Number:</strong> <span>[</span>LOT-9922-XJ<br>
+        <strong>Batch Number:</strong> <span verifiable-text="start" data-for="qc">[</span>LOT-9922-XJ<br>
         <strong>Product:</strong> Grade 8 Hex Bolts (Zinc Plated)<br>
         <strong>Customer:</strong> Global Aerospace Corp.
       </div>

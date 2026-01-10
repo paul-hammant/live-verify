@@ -18,14 +18,14 @@ Foreign governments (like Thailand or Spain) require these letters for visas. Be
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); position: relative;">
   <div style="text-align: center; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="consul">EMBASSY OF THE UNITED STATES OF AMERICA</div>
+    <div style="font-weight: bold; font-size: 1.2em;">EMBASSY OF THE UNITED STATES OF AMERICA</div>
     <div style="font-size: 0.9em; margin-top: 5px;">Consular Section • London, United Kingdom</div>
   </div>
 <div style="font-size: 1em; line-height: 1.6; color: #000; text-align: justify;">
     <p><strong>Date:</strong> March 15, 2026<br>
     <strong>Ref:</strong> LON-2026-992288</p>
 <h3 style="text-align: center; text-transform: uppercase; margin: 20px 0;">Consular Attestation</h3>
-<p>The Consular Section of the Embassy of the United States of America in London hereby attests that <span>[</span><strong>SARAH JANE SMITH</strong> (Passport No: *******1234) has appeared before me and presented evidence of her residency and financial standing for the purpose of a retirement visa application.</p>
+<p>The Consular Section of the Embassy of the United States of America in London hereby attests that <span verifiable-text="start" data-for="consul">[</span><strong>SARAH JANE SMITH</strong> (Passport No: *******1234) has appeared before me and presented evidence of her residency and financial standing for the purpose of a retirement visa application.</p>
 <p>This attestation is issued at the request of the named individual for submission to the Ministry of Interior, Kingdom of Thailand.</p>
   </div>
 <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">

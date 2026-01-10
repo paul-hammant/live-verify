@@ -16,14 +16,14 @@ These documents are "Financial Anchors." Lenders use them to calculate "Escrow R
 
 <div style="max-width: 650px; margin: 24px auto; font-family: 'Times New Roman', Times, serif; border: 1px solid #000; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.3em; text-transform: uppercase;" verifiable-text="start" data-for="tax-assess">Office of the County Assessor</div>
+    <div style="font-weight: bold; font-size: 1.3em; text-transform: uppercase;">Office of the County Assessor</div>
     <div style="font-size: 1em; letter-spacing: 1px;">NOTICE OF AD VALOREM TAX ASSESSMENT</div>
   </div>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px;">
       <div>
         <strong>Property Index Number (PIN):</strong><br>
-        <span>[</span>14-42-992-288-0000
+        <span verifiable-text="start" data-for="tax-assess">[</span>14-42-992-288-0000
       </div>
       <div style="text-align: right;">
         <strong>Tax Year:</strong> 2025<br>

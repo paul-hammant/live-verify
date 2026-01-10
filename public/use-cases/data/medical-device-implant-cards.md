@@ -10,14 +10,14 @@ furtherDerivations: 1
 
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
   <div style="background: #004a99; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
-    <div style="font-weight: bold; font-size: 1.1em;" verifiable-text="start" data-for="implant">MEDTRONIC</div>
+    <div style="font-weight: bold; font-size: 1.1em;">MEDTRONIC</div>
     <div style="font-size: 0.8em; font-weight: bold; text-transform: uppercase;">Medical Device ID Card</div>
   </div>
 <div style="padding: 20px;">
     <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px;">
       <div style="font-size: 0.9em; line-height: 1.4; color: #333;">
         <strong>Patient Name:</strong><br>
-        <span>[</span><strong>JOHN JACOB DOE</strong><br>
+        <span verifiable-text="start" data-for="implant">[</span><strong>JOHN JACOB DOE</strong><br>
         <strong>DOB:</strong> 05/15/1985
       </div>
       <div style="text-align: center; border: 2px solid #004a99; padding: 5px 10px; border-radius: 8px;">

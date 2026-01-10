@@ -16,11 +16,11 @@ Without it, they're committing computer crimes. With it, they're performing a le
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #8B0000; background: #fff; padding: 0;">
   <div style="background: #8B0000; color: #fff; padding: 15px;">
-    <div style="font-weight: bold; font-size: 1.1em;" verifiable-text="start" data-for="securitytestingautho">PENETRATION TEST AUTHORIZATION</div>
+    <div style="font-weight: bold; font-size: 1.1em;">PENETRATION TEST AUTHORIZATION</div>
     <div style="font-size: 0.8em;">Security Testing Scope & Permission</div>
   </div>
   <div style="padding: 20px; font-size: 0.9em; line-height: 1.6;">
-    <p><strong>Client:</strong> <span>[</span>Meridian Financial Services Ltd<br>
+    <p><strong>Client:</strong> <span verifiable-text="start" data-for="securitytestingautho">[</span>Meridian Financial Services Ltd<br>
     <strong>Tester:</strong> SecureProbe Ltd (Claire Watson, Lead Tester)<br>
     <strong>Engagement ID:</strong> PT-2026-0042<br>
     <strong>Authorization Date:</strong> February 1, 2026</p>

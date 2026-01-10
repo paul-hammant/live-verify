@@ -16,14 +16,14 @@ These documents are "High-Velocity" proofs. Fraud is rampant in "Post-Accident" 
 
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #007bff; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
   <div style="background: #007bff; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
-    <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 1px;" verifiable-text="start" data-for="temp">CUVVA \/</div>
+    <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 1px;">CUVVA \/</div>
     <div style="font-size: 0.7em; opacity: 0.9; text-align: right;">TEMPORARY AUTO<br>INSURANCE BINDER</div>
   </div>
 <div style="padding: 20px; background: #fff;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 10px;">
       <div>
         <div style="font-size: 0.7em; color: #888; text-transform: uppercase;">Covered Driver</div>
-        <div style="font-size: 1.1em; font-weight: bold; color: #333;"><span>[</span>SARAH JANE SMITH</div>
+        <div style="font-size: 1.1em; font-weight: bold; color: #333;"><span verifiable-text="start" data-for="temp">[</span>SARAH JANE SMITH</div>
       </div>
       <div style="text-align: right;">
         <div style="font-size: 0.7em; color: #888; text-transform: uppercase;">License #</div>

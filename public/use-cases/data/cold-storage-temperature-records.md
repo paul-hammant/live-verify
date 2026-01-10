@@ -18,12 +18,12 @@ If a shipment hits a "Temperature Spike" (Excursion), the product might be ruine
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 2px solid #0277bd; background: #fff; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #0277bd; padding-bottom: 10px; margin-bottom: 20px;">
-    <strong verifiable-text="start" data-for="cold">ARCTIC LOGISTICS SOLUTIONS</strong><br>
+    <strong>ARCTIC LOGISTICS SOLUTIONS</strong><br>
     CERTIFIED COLD CHAIN COMPLIANCE REPORT<br>
     ---------------------------------------
   </div>
 <div style="font-size: 0.85em; line-height: 1.4;">
-    <p><strong>Shipment ID:</strong> <span>[</span>COLD-2026-992288<br>
+    <p><strong>Shipment ID:</strong> <span verifiable-text="start" data-for="cold">[</span>COLD-2026-992288<br>
     <strong>Consignor:</strong> BioMed Pharma, AG<br>
     <strong>Commodity:</strong> Insul-Safe Insulin (12 Pallets)</p>
 <div style="border: 1px solid #0277bd; padding: 10px; margin: 15px 0; background: #e1f5fe;">

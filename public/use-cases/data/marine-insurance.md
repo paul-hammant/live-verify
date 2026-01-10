@@ -10,8 +10,8 @@ furtherDerivations: 3
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 2px solid #002d62; background: #fff; padding: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <div style="background: #002d62; color: #fff; padding: 10px; display: flex; justify-content: space-between; align-items: center;">
-    <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="cargo-ins">ALLIANZ MARINE & TRANSIT</div>
-    <div style="font-size: 0.8em; text-align: right;">Certificate #: <span>[</span>AZ-998877-MAR</div>
+    <div style="font-weight: bold; font-size: 1.2em;">ALLIANZ MARINE & TRANSIT</div>
+    <div style="font-size: 0.8em; text-align: right;">Certificate #: <span verifiable-text="start" data-for="cargo-ins">[</span>AZ-998877-MAR</div>
   </div>
 <div style="padding: 15px; font-size: 0.85em;">
     <h2 style="text-align: center; margin: 0 0 15px 0; font-size: 1.3em; text-decoration: underline;">CERTIFICATE OF CARGO INSURANCE</h2>
@@ -120,7 +120,7 @@ _[Content merged from: marine-hull-machinery]_
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 2px solid #002366; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="background: #002366; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="hull-ins">GARD MARINE & ENERGY</div>
+      <div style="font-weight: bold; font-size: 1.2em;">GARD MARINE & ENERGY</div>
       <div style="font-size: 0.8em; opacity: 0.8;">Specialist Hull & Machinery Underwriters</div>
     </div>
     <div style="text-align: right;">
@@ -132,7 +132,7 @@ _[Content merged from: marine-hull-machinery]_
 <div style="font-size: 1em; line-height: 1.6; color: #333;">
       <p>This document confirms that the following vessel is insured for Hull & Machinery risks:</p>
 <div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin: 20px 0;">
-        <strong>Vessel Name:</strong> <span>[</span>MV OCEAN VOYAGER<br>
+        <strong>Vessel Name:</strong> <span verifiable-text="start" data-for="hull-ins">[</span>MV OCEAN VOYAGER<br>
         <strong>IMO Number:</strong> 9988776<br>
         <strong>Flag State:</strong> Marshall Islands
       </div>
@@ -232,10 +232,10 @@ Thieves use "Fake P&I Papers" to sneak dangerous or uninsured ships into ports. 
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 2px solid #002366; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #002366; padding-bottom: 10px; margin-bottom: 20px;">
-    <h2 style="margin: 0; text-transform: uppercase;" verifiable-text="start" data-for="pi">THE LONDON P&I CLUB</h2>
+    <h2 style="margin: 0; text-transform: uppercase;">THE LONDON P&I CLUB</h2>
   </div>
   <div style="font-size: 1.1em; line-height: 1.6;">
-    <p><strong>Vessel:</strong> <span>[</span>MV OCEAN VOYAGER (IMO #9988776)<br>
+    <p><strong>Vessel:</strong> <span verifiable-text="start" data-for="pi">[</span>MV OCEAN VOYAGER (IMO #9988776)<br>
     <strong>Member:</strong> Global Maritime Holdings, Ltd.</p>
     <p>This certifies the above vessel is entered for Protection & Indemnity risks.</p>
     <div data-verify-line="pi" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;">

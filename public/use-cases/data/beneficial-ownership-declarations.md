@@ -18,12 +18,12 @@ Verifying these declarations ensures that a company opening a bank account isn't
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #002d62; color: #fff; padding: 20px; text-align: center;">
-    <h2 style="margin: 0; font-size: 1.3em;" verifiable-text="start" data-for="ubo">BENEFICIAL OWNERSHIP DECLARATION</h2>
+    <h2 style="margin: 0; font-size: 1.3em;">BENEFICIAL OWNERSHIP DECLARATION</h2>
     <div style="font-size: 0.8em; margin-top: 5px;">FINANCIAL CRIMES ENFORCEMENT NETWORK (FinCEN)</div>
   </div>
 <div style="padding: 30px;">
     <div style="border-bottom: 2px solid #002d62; padding-bottom: 10px; margin-bottom: 20px;">
-      <strong>Reporting Company:</strong> <span>[</span>Global Shell Holdings, LLC<br>
+      <strong>Reporting Company:</strong> <span verifiable-text="start" data-for="ubo">[</span>Global Shell Holdings, LLC<br>
       <strong>Tax ID:</strong> 12-3456789<br>
       <strong>Jurisdiction:</strong> Delaware, USA
     </div>

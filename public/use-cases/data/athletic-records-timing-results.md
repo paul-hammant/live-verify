@@ -10,12 +10,12 @@ furtherDerivations: 1
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 5px solid #003366; background: #fff; padding: 0; position: relative;">
   <div style="background: #003366; color: #fff; padding: 20px; text-align: center;">
-    <h2 style="margin: 0; letter-spacing: 2px;" verifiable-text="start" data-for="record">WORLD ATHLETICS</h2>
+    <h2 style="margin: 0; letter-spacing: 2px;">WORLD ATHLETICS</h2>
     <div style="font-size: 0.9em; margin-top: 5px;">OFFICIAL RECORD RATIFICATION</div>
   </div>
 <div style="padding: 40px; text-align: center;">
     <div style="font-size: 1.1em; color: #666; margin-bottom: 10px;">This is to certify that</div>
-    <div style="font-size: 2em; font-weight: bold; color: #003366; margin-bottom: 20px;"><span>[</span>USAIN BOLT</div>
+    <div style="font-size: 2em; font-weight: bold; color: #003366; margin-bottom: 20px;"><span verifiable-text="start" data-for="record">[</span>USAIN BOLT</div>
     <div style="font-size: 1.1em; color: #666; margin-bottom: 10px;">achieved a new World Record in the</div>
     <div style="font-size: 1.5em; font-weight: bold; margin-bottom: 20px;">MEN'S 100 METRES</div>
 <div style="background: #f0f4f8; padding: 20px; border-radius: 8px; margin: 20px 0;">

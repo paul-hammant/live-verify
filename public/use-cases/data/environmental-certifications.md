@@ -18,13 +18,13 @@ Fraud happens when a developer uses a "Fake Plaque" or an outdated certificate t
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 5px solid #004d40; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="background: #004d40; color: #fff; padding: 20px; text-align: center;">
-    <h2 style="margin: 0; letter-spacing: 2px;" verifiable-text="start" data-for="leed">U.S. GREEN BUILDING COUNCIL</h2>
+    <h2 style="margin: 0; letter-spacing: 2px;">U.S. GREEN BUILDING COUNCIL</h2>
     <div style="font-size: 0.9em; opacity: 0.8;">LEED&reg; LEADERSHIP IN ENERGY AND ENVIRONMENTAL DESIGN</div>
   </div>
 <div style="padding: 40px; text-align: center;">
     <div style="font-size: 1.1em; color: #666; margin-bottom: 10px;">This is to certify that</div>
     <div style="font-size: 1.8em; font-weight: bold; color: #004d40; margin-bottom: 20px;">
-      <span>[</span>THE SUSTAINABILITY CENTER, AUSTIN
+      <span verifiable-text="start" data-for="leed">[</span>THE SUSTAINABILITY CENTER, AUSTIN
     </div>
 <div style="margin: 25px 0;">
       <div style="font-size: 3em; font-weight: bold; color: #d4af37;">GOLD</div>

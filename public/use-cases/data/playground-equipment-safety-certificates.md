@@ -18,14 +18,14 @@ These documents are the "Shield of Public Trust." Fraud is high-stakes: un-certi
   <div style="background: #ff9800; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
     <div style="font-size: 1.8em; margin-right: 15px;">🧒</div>
     <div style="text-align: right;">
-      <div style="font-weight: bold; font-size: 1.1em; letter-spacing: 1px;" verifiable-text="start" data-for="play">PLAYGROUND SAFETY PASS</div>
+      <div style="font-weight: bold; font-size: 1.1em; letter-spacing: 1px;">PLAYGROUND SAFETY PASS</div>
       <div style="font-size: 0.75em; font-weight: bold; opacity: 0.9;">CITY OF SPRINGFIELD • PARKS & REC</div>
     </div>
   </div>
 <div style="padding: 25px; background: #fff;">
     <div style="border-bottom: 1px solid #eee; padding-bottom: 10px; margin-bottom: 15px;">
       <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Location / Site</div>
-      <div style="font-size: 1.2em; font-weight: bold; color: #333;"><span>[</span>ZILKER PARK (SOUTH AREA)</div>
+      <div style="font-size: 1.2em; font-weight: bold; color: #333;"><span verifiable-text="start" data-for="play">[</span>ZILKER PARK (SOUTH AREA)</div>
 <div style="font-size: 0.9em; color: #333; margin-top: 5px;">
         Structure ID: #992288-CLIMB ("The Castle")
       </div>

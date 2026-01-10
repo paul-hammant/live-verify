@@ -17,7 +17,7 @@ The problem is that SBOMs are massive JSON/XML files that humans can't read. Ven
 <div style="max-width: 650px; margin: 24px auto; font-family: 'Segoe UI', Tahoma, Geneva, sans-serif; border: 1px solid #0078d4; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="background: #0078d4; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="sbom">CYBER-SHIELD SOLUTIONS</div>
+      <div style="font-weight: bold; font-size: 1.2em;">CYBER-SHIELD SOLUTIONS</div>
       <div style="font-size: 0.8em; opacity: 0.9;">Software Supply Chain Transparency</div>
     </div>
     <div style="text-align: right;">
@@ -28,7 +28,7 @@ The problem is that SBOMs are massive JSON/XML files that humans can't read. Ven
 <div style="padding: 25px;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div style="font-size: 0.9em;">
-        <strong>Product:</strong> <span>[</span>Enterprise Gateway 5000<br>
+        <strong>Product:</strong> <span verifiable-text="start" data-for="sbom">[</span>Enterprise Gateway 5000<br>
         <strong>Release Date:</strong> MARCH 15, 2026
       </div>
       <div style="text-align: right; font-size: 0.9em;">

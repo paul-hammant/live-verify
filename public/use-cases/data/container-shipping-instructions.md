@@ -21,13 +21,13 @@ Fraudsters often "mis-declare" cargo in the instructions (e.g., calling high-tax
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 1px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <div style="background: #002d62; color: #fff; padding: 10px; display: flex; justify-content: space-between; align-items: center;">
-    <div style="font-weight: bold; font-size: 1.1em;" verifiable-text="start" data-for="ship">MAERSK LINE</div>
+    <div style="font-weight: bold; font-size: 1.1em;">MAERSK LINE</div>
     <div style="font-size: 0.8em;">SHIPPING INSTRUCTIONS (DRAFT)</div>
   </div>
 <div style="padding: 20px;">
     <div style="display: flex; justify-content: space-between; font-size: 0.9em; margin-bottom: 20px;">
       <div>
-        <strong>Shipper:</strong> <span>[</span>Global Tech Exports, Inc.<br>
+        <strong>Shipper:</strong> <span verifiable-text="start" data-for="ship">[</span>Global Tech Exports, Inc.<br>
         <strong>Booking #:</strong> 99228877
       </div>
       <div style="text-align: right;">

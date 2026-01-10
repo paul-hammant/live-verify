@@ -19,7 +19,7 @@ If a carrier "sneaks" a normal kitchen fire into a "Hurricane" batch, they are c
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #d32f2f; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="background: #d32f2f; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="cat">STATE FARM FIRE & CASUALTY</div>
+      <div style="font-weight: bold; font-size: 1.2em;">STATE FARM FIRE & CASUALTY</div>
       <div style="font-size: 0.8em;">Catastrophe Operations Unit</div>
     </div>
     <div style="text-align: right;">
@@ -29,7 +29,7 @@ If a carrier "sneaks" a normal kitchen fire into a "Hurricane" batch, they are c
 <div style="padding: 30px;">
     <h3 style="margin-top: 0; color: #d32f2f; border-bottom: 2px solid #d32f2f; padding-bottom: 5px;">CAT BATCH LOSS SUMMARY</h3>
 <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Event:</strong> <span>[</span>Hurricane Helena (PCS Code: 42)<br>
+      <p><strong>Event:</strong> <span verifiable-text="start" data-for="cat">[</span>Hurricane Helena (PCS Code: 42)<br>
       <strong>Region:</strong> Florida Gulf Coast (Zip 337xx, 336xx)</p>
 <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
         <tr style="background: #f5f5f5; border-bottom: 1px solid #d32f2f;">

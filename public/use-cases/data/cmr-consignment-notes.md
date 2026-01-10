@@ -21,7 +21,7 @@ Trucking is a fragmented industry. Verified CMRs prevent "Weight Fraud" (lying a
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 1px solid #000; background: #fff; padding: 0;">
   <div style="border-bottom: 2px solid #000; padding: 5px; display: flex; justify-content: space-between;">
-    <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="cmr">CMR</div>
+    <div style="font-weight: bold; font-size: 1.2em;">CMR</div>
     <div style="font-weight: bold;">INTERNATIONAL CONSIGNMENT NOTE</div>
     <div style="font-weight: bold; color: #d32f2f;">No. 99887766</div>
   </div>
@@ -29,7 +29,7 @@ Trucking is a fragmented industry. Verified CMRs prevent "Weight Fraud" (lying a
     <div style="display: flex; border-bottom: 1px solid #000; padding-bottom: 10px;">
       <div style="width: 50%; border-right: 1px solid #000; padding-right: 10px;">
         <strong>1. Sender (name, address, country):</strong><br>
-        <span>[</span>Deutsche Elektro GmbH<br>
+        <span verifiable-text="start" data-for="cmr">[</span>Deutsche Elektro GmbH<br>
         Industriestr. 42, Berlin, DE
       </div>
       <div style="width: 50%; padding-left: 10px;">

@@ -21,7 +21,7 @@ OCR-to-hash binds the **Guard's name, License Number, and Firearms Qualification
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #263238; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
   <div style="background: #263238; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
     <div>
-      <div style="font-weight: bold; font-size: 1.1em;" verifiable-text="start" data-for="guard">STATE REGULATORY BOARD</div>
+      <div style="font-weight: bold; font-size: 1.1em;">STATE REGULATORY BOARD</div>
       <div style="font-size: 0.8em;">PRIVATE SECURITY SERVICES</div>
     </div>
     <div style="font-size: 1.2em;">🛡️</div>
@@ -31,7 +31,7 @@ OCR-to-hash binds the **Guard's name, License Number, and Firearms Qualification
       <div style="width: 100px; height: 125px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #777; font-size: 0.7em; text-align: center;">[VERIFIED<br>PHOTO]</div>
     </div>
     <div style="flex-grow: 1;">
-      <div style="font-size: 1.1em; font-weight: bold; margin: 0 0 5px 0;"><span>[</span>MILLER, ROBERT J.</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin: 0 0 5px 0;"><span verifiable-text="start" data-for="guard">[</span>MILLER, ROBERT J.</div>
       <div style="font-size: 0.85em; color: #333; line-height: 1.4;">
         <strong>License:</strong> SG-992288-A<br>
         <strong>Status:</strong> ARMED GUARD<br>

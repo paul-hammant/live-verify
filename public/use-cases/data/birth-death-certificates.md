@@ -18,13 +18,13 @@ Verified vital records allow banks and agencies to check the **Live Status** of 
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 3px double #1a365d; background: #fdfcf0; padding: 40px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); position: relative; border-radius: 4px;">
   <div style="text-align: center; border-bottom: 2px solid #1a365d; padding-bottom: 15px; margin-bottom: 25px;">
-    <div style="font-weight: bold; font-size: 1.3em; letter-spacing: 2px; color: #1a365d;" verifiable-text="start" data-for="birth">COMMONWEALTH OF PENNSYLVANIA</div>
+    <div style="font-weight: bold; font-size: 1.3em; letter-spacing: 2px; color: #1a365d;">COMMONWEALTH OF PENNSYLVANIA</div>
     <div style="font-size: 0.9em; text-transform: uppercase; color: #2c5282;">Department of Health • Vital Statistics</div>
   </div>
 <h2 style="text-align: center; font-size: 1.5em; color: #1a365d; margin-bottom: 25px;">CERTIFICATION OF BIRTH</h2>
 <div style="font-size: 1em; line-height: 1.8; color: #333;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 15px;">
-      <div><strong>Name:</strong> <span>[</span><strong>JOHN JACOB DOE</strong></div>
+      <div><strong>Name:</strong> <span verifiable-text="start" data-for="birth">[</span><strong>JOHN JACOB DOE</strong></div>
       <div style="text-align: right;"><strong>File No:</strong> 137-2026-9922</div>
     </div>
 <div style="margin-bottom: 10px;"><strong>Date of Birth:</strong> May 15, 2026</div>

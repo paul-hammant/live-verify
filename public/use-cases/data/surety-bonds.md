@@ -18,7 +18,7 @@ It is the "Lifeblood of Public Works." If a contractor goes bankrupt halfway thr
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #333; background: #fff; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.2em; color: #b71c1c;" verifiable-text="start" data-for="surety">THE TRAVELERS COMPANIES</div>
+    <div style="font-weight: bold; font-size: 1.2em; color: #b71c1c;">THE TRAVELERS COMPANIES</div>
     <div style="text-align: right; font-size: 0.85em; color: #666;">
       Bond No: TR-99228877-B1<br>
       March 15, 2026
@@ -26,7 +26,7 @@ It is the "Lifeblood of Public Works." If a contractor goes bankrupt halfway thr
   </div>
 <h2 style="text-align: center; font-size: 1.4em; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 30px;">Performance and Payment Bond</h2>
 <div style="font-size: 1em; line-height: 1.6; color: #000; text-align: justify;">
-    <p>KNOW ALL MEN BY THESE PRESENTS, that <span>[</span><strong>SKYLINE BUILDERS GROUP, LLC</strong> (the "Principal") and <strong>TRAVELERS CASUALTY AND SURETY COMPANY</strong> (the "Surety") are held and firmly bound unto the <strong>CITY OF AUSTIN</strong> (the "Obligee") in the sum of:</p>
+    <p>KNOW ALL MEN BY THESE PRESENTS, that <span verifiable-text="start" data-for="surety">[</span><strong>SKYLINE BUILDERS GROUP, LLC</strong> (the "Principal") and <strong>TRAVELERS CASUALTY AND SURETY COMPANY</strong> (the "Surety") are held and firmly bound unto the <strong>CITY OF AUSTIN</strong> (the "Obligee") in the sum of:</p>
 <div style="margin: 20px auto; width: 90%; border: 2px solid #000; padding: 15px; text-align: center; background: #f9f9f9; font-weight: bold; font-size: 1.1em;">
       TEN MILLION FIVE HUNDRED THOUSAND DOLLARS ($10,500,000.00)
     </div>

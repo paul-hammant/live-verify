@@ -18,7 +18,7 @@ A **Data Authorization Certificate** is a receipt for that digital handshake. It
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); overflow: hidden; background: #fff;">
   <div style="background: #004d40; color: #fff; padding: 20px; text-align: center;">
-    <h2 style="margin: 0; font-size: 1.4em; letter-spacing: 1px;" verifiable-text="start" data-for="agg">DATA ACCESS AUTHORIZATION</h2>
+    <h2 style="margin: 0; font-size: 1.4em; letter-spacing: 1px;">DATA ACCESS AUTHORIZATION</h2>
     <div style="font-size: 0.8em; margin-top: 5px; opacity: 0.8;">FIRST NATIONAL BANK OF OMAHA</div>
   </div>
 <div style="padding: 30px;">
@@ -27,7 +27,7 @@ A **Data Authorization Certificate** is a receipt for that digital handshake. It
       <strong>Issued:</strong> March 15, 2025 14:30 UTC
     </div>
 <div style="font-size: 1.1em; line-height: 1.5; color: #333; margin-bottom: 20px;">
-      <p>This certifies that <span>[</span><strong>Customer:</strong> Jane Doe (Ending in ...4421)</p>
+      <p>This certifies that <span verifiable-text="start" data-for="agg">[</span><strong>Customer:</strong> Jane Doe (Ending in ...4421)</p>
 <p>Has explicitly authorized:</p>
       <p><strong>Third Party:</strong> BudgetPlanner App (via Plaid)<br>
       <strong>Scope:</strong> Read-Only Transaction History, Balance Details<br>

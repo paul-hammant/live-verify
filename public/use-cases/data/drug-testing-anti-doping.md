@@ -18,7 +18,7 @@ Because a "Positive Test" can end a multimillion-dollar career, fraud is a high 
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #000; color: #fff; padding: 20px; text-align: center; display: flex; align-items: center; justify-content: center;">
-    <div style="width: 40px; height: 40px; background: #fff; color: #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-right: 15px;" verifiable-text="start" data-for="doping">WADA</div>
+    <div style="width: 40px; height: 40px; background: #fff; color: #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-right: 15px;">WADA</div>
     <div>
       <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">DOPING CONTROL RECORD</h2>
       <div style="font-size: 0.8em; opacity: 0.8;">OFFICIAL SAMPLE COLLECTION SUMMARY</div>
@@ -27,7 +27,7 @@ Because a "Positive Test" can end a multimillion-dollar career, fraud is a high 
 <div style="padding: 25px;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px; font-size: 0.9em; color: #555;">
       <div>
-        <strong>Sample ID:</strong> <span>[</span>998877-A (Urine)<br>
+        <strong>Sample ID:</strong> <span verifiable-text="start" data-for="doping">[</span>998877-A (Urine)<br>
         <strong>Event:</strong> 2026 World Championships
       </div>
       <div style="text-align: right;">

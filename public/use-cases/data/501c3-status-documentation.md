@@ -21,14 +21,14 @@ Charities often have to fax, email, or mail this letter dozens of times a year t
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', serif; border: 1px solid #ccc; background: #fff; padding: 40px;">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 20px; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="501c3">Internal Revenue Service</div>
+    <div style="font-weight: bold; font-size: 1.2em;">Internal Revenue Service</div>
     <div style="font-size: 0.9em;">Department of the Treasury</div>
     <div style="font-size: 0.9em;">P.O. Box 2508, Cincinnati, OH 45201</div>
   </div>
 <div style="display: flex; justify-content: space-between; margin-bottom: 30px; font-size: 0.9em;">
     <div>
       Date: <span style="font-weight: bold;">OCT 24 2025</span><br><br>
-      <span>[</span>THE HUMAN FUND<br>
+      <span verifiable-text="start" data-for="501c3">[</span>THE HUMAN FUND<br>
       123 CHARITY LANE<br>
       NEW YORK, NY 10001
     </div>

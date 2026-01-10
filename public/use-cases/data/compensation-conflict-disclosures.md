@@ -29,7 +29,7 @@ Currently, these claims are unverifiable. Disclosures exist in fine print or reg
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Helvetica Neue', sans-serif; border: 1px solid #2c5aa0; background: #fff; padding: 0;">
   <div style="background: #2c5aa0; color: white; padding: 15px;">
-    <div style="font-size: 1.1em; font-weight: bold;" verifiable-text="start" data-for="compensationconflict">COMPENSATION DISCLOSURE</div>
+    <div style="font-size: 1.1em; font-weight: bold;">COMPENSATION DISCLOSURE</div>
     <div style="font-size: 0.85em; margin-top: 5px;">As required under Form CRS / Regulation Best Interest</div>
   </div>
   <div style="padding: 20px; font-size: 0.9em; line-height: 1.6;">
@@ -128,7 +128,7 @@ You can't just take someone's word for it. But you can ask the entities that *wo
     THIRD-PARTY PAYMENT CONFIRMATIONS
   </div>
   <div style="font-size: 0.85em; line-height: 1.8;">
-    <p><strong>Re:</strong> <span>[</span>Dr. Sarah Chen, MD (NPI: 1234567890)</p>
+    <p><strong>Re:</strong> <span verifiable-text="start" data-for="compensationconflict">[</span>Dr. Sarah Chen, MD (NPI: 1234567890)</p>
     <p><strong>Period:</strong> Calendar Year 2025</p>
 <div style="margin: 15px 0; padding: 10px; background: #fff; border: 1px dashed #666;">
       <p style="margin: 0;"><strong>Pfizer Inc.</strong> — $0.00 paid</p>

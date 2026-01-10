@@ -21,12 +21,12 @@ High-end art is a target for money laundering. Verified appraisals ensure that a
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #ccc; background: #fffef5; padding: 40px; box-shadow: 2px 2px 15px rgba(0,0,0,0.05);">
   <div style="text-align: center; border-bottom: 1px solid #000; padding-bottom: 20px; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;" verifiable-text="start" data-for="appraisal">SOTHEBY'S ADVISORY</div>
+    <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;">SOTHEBY'S ADVISORY</div>
     <div style="font-size: 0.8em; color: #666; margin-top: 5px;">APPRAISAL & VALUATION SERVICES</div>
   </div>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <p><strong>Date:</strong> March 15, 2026<br>
-    <strong>Client:</strong> <span>[</span>The Sterling Cooper Foundation</p>
+    <strong>Client:</strong> <span verifiable-text="start" data-for="appraisal">[</span>The Sterling Cooper Foundation</p>
 <h3 style="text-align: center; margin: 20px 0;">SUMMARY VALUATION REPORT</h3>
 <div style="background: #fdfdfd; border: 1px solid #eee; padding: 15px; margin-bottom: 20px;">
       <p><strong>Artist:</strong> Mark Rothko (1903-1970)<br>
@@ -127,12 +127,12 @@ Forgeries are common. Fraudsters often forge the "paperwork" (the COA) using fak
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 3px double #000; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="text-align: center; margin-bottom: 30px;">
-    <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 2px;" verifiable-text="start" data-for="art">CERTIFICATE OF AUTHENTICITY</h2>
+    <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 2px;">CERTIFICATE OF AUTHENTICITY</h2>
   </div>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <p>This document certifies that the following work of art is an original work by the artist named herein.</p>
 <div style="margin: 20px 0; border-left: 4px solid #000; padding-left: 20px;">
-      <p><strong>Artist:</strong> <span>[</span>Jean-Michel Basquiat<br>
+      <p><strong>Artist:</strong> <span verifiable-text="start" data-for="art">[</span>Jean-Michel Basquiat<br>
       <strong>Title:</strong> <em>Untitled (Skull)</em><br>
       <strong>Year:</strong> 1981<br>
       <strong>Medium:</strong> Acrylic and mixed media on canvas<br>
@@ -234,7 +234,7 @@ OCR-to-Hash allows a collector to verify that their "14 / 50" is an officially r
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 2px solid #444; background: #fff; padding: 40px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <div style="text-align: center; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 2px;" verifiable-text="start" data-for="edition">PACE EDITIONS</div>
+    <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 2px;">PACE EDITIONS</div>
     <div style="font-size: 0.8em; color: #666; margin-top: 5px;">NEW YORK • LONDON • HONG KONG</div>
   </div>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
@@ -246,7 +246,7 @@ OCR-to-Hash allows a collector to verify that their "14 / 50" is an officially r
       <strong>Medium:</strong> Soft ground etching<br>
       <strong>Year:</strong> 2025</p>
 <p style="border-top: 1px solid #ddd; padding-top: 10px; font-size: 1.1em; font-weight: bold;">
-        <span>[</span>Edition Number: 14 / 50
+        <span verifiable-text="start" data-for="edition">[</span>Edition Number: 14 / 50
       </p>
     </div>
 <p>Signed and numbered by the artist in pencil, lower right. Published by Pace Editions, Inc.</p>
@@ -344,13 +344,13 @@ These letters are high-value targets for forgery—criminals create fake "expert
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 1px solid #000; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="text-align: center; margin-bottom: 30px;">
-    <h3 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;" verifiable-text="start" data-for="sig">Signature Authentication Letter</h3>
+    <h3 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">Signature Authentication Letter</h3>
     <div style="font-size: 0.8em; color: #666; margin-top: 5px;">THE INTERNATIONAL FOUNDATION FOR ART RESEARCH (IFAR)</div>
   </div>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <p><strong>Ref:</strong> SIG-2026-042-PC</p>
     <p>To Whom It May Concern,</p>
-<p>We have examined the signature and estate stamp appearing on the reverse of the work titled <em>Guernica Sketch IV</em>, attributed to <span>[</span><strong>PABLO PICASSO</strong>.</p>
+<p>We have examined the signature and estate stamp appearing on the reverse of the work titled <em>Guernica Sketch IV</em>, attributed to <span verifiable-text="start" data-for="sig">[</span><strong>PABLO PICASSO</strong>.</p>
 <div style="margin: 20px 0; border: 1px solid #eee; padding: 15px; background: #f9f9f9; text-align: center;">
       <div style="font-style: italic; font-size: 1.2em; border-bottom: 1px solid #ccc; display: inline-block; padding: 0 20px;">Picasso</div>
       <div style="font-size: 0.8em; color: #777; margin-top: 5px;">Analysis of hand-written signature (Black Ink)</div>
@@ -450,7 +450,7 @@ Verified provenance documentation is the "History of Truth" that allows million-
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #999; background: #fff; padding: 40px; box-shadow: 2px 2px 10px rgba(0,0,0,0.05);">
   <div style="text-align: center; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.3em; letter-spacing: 1px;" verifiable-text="start" data-for="prov">CHRISTIE'S PROVENANCE RESEARCH</div>
+    <div style="font-weight: bold; font-size: 1.3em; letter-spacing: 1px;">CHRISTIE'S PROVENANCE RESEARCH</div>
     <div style="font-size: 0.8em; color: #666; margin-top: 5px;">ARCHIVAL DEPARTMENT • LONDON</div>
   </div>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
@@ -460,7 +460,7 @@ Verified provenance documentation is the "History of Truth" that allows million-
 <div style="margin: 20px 0; border-top: 1px solid #ccc; padding-top: 15px;">
       <strong>PROVENANCE:</strong><br>
       <ul style="margin-left: 20px; list-style-type: circle;">
-        <li><span>[</span><strong>1906:</strong> Purchased from the artist by Paul Durand-Ruel, Paris.</li>
+        <li><span verifiable-text="start" data-for="prov">[</span><strong>1906:</strong> Purchased from the artist by Paul Durand-Ruel, Paris.</li>
         <li><strong>1922:</strong> Collection of Dr. Albert Barnes, Philadelphia.</li>
         <li><strong>1955:</strong> Inherited by the current estate.</li>
         <li><strong>2026:</strong> Consigned to Christie's for public auction.</li>

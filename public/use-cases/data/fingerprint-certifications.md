@@ -18,10 +18,10 @@ The **Certificate of Fingerprinting** is the paper signed by a Notary Public or 
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); position: relative;">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 25px;">
-    <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;" verifiable-text="start" data-for="finger">CERTIFICATE OF FINGERPRINTING</h2>
+    <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">CERTIFICATE OF FINGERPRINTING</h2>
   </div>
 <div style="font-size: 1em; line-height: 1.6; color: #333; text-align: justify;">
-    <p>I, the undersigned Notary Public, hereby certify that <span>[</span><strong>JOHN JACOB DOE</strong> (DOB: 05/15/1985) appeared before me this day and was fingerprinted using the standard FBI FD-258 card format.</p>
+    <p>I, the undersigned Notary Public, hereby certify that <span verifiable-text="start" data-for="finger">[</span><strong>JOHN JACOB DOE</strong> (DOB: 05/15/1985) appeared before me this day and was fingerprinted using the standard FBI FD-258 card format.</p>
 <div style="display: flex; justify-content: space-around; margin: 20px 0;">
       <div style="width: 80px; height: 100px; border: 1px solid #999; background: #eee; display: flex; align-items: center; justify-content: center; font-size: 0.6em; color: #777;">[R THUMB]</div>
       <div style="width: 80px; height: 100px; border: 1px solid #999; background: #eee; display: flex; align-items: center; justify-content: center; font-size: 0.6em; color: #777;">[L THUMB]</div>

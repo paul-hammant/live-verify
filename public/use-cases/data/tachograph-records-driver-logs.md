@@ -17,7 +17,7 @@ Fraud is common and lethal: drivers or carrier managers often "edit" logbooks to
 <div style="max-width: 650px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 2px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="padding: 20px; border-bottom: 2px solid #000; background: #fdfdfd; display: flex; justify-content: space-between; align-items: flex-start;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="tacho">DRIVER'S DAILY LOG</div>
+      <div style="font-weight: bold; font-size: 1.2em;">DRIVER'S DAILY LOG</div>
       <div style="font-size: 0.8em; color: #666;">In accordance with 49 CFR Part 395</div>
     </div>
     <div style="text-align: right;">
@@ -28,7 +28,7 @@ Fraud is common and lethal: drivers or carrier managers often "edit" logbooks to
 <div style="padding: 20px;">
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.85em; margin-bottom: 20px;">
       <div>
-        <strong>Driver:</strong> <span>[</span>JAMES W. GORDON<br>
+        <strong>Driver:</strong> <span verifiable-text="start" data-for="tacho">[</span>JAMES W. GORDON<br>
         <strong>Carrier:</strong> GLOBAL LOGISTICS CORP.<br>
         <strong>USDOT #:</strong> 99228877
       </div>

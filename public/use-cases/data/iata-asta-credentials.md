@@ -10,13 +10,13 @@ furtherDerivations: 1
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 4px solid #002d62; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #002d62; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
-    <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="iata">IATA ACCREDITED AGENCY</div>
+    <div style="font-weight: bold; font-size: 1.2em;">IATA ACCREDITED AGENCY</div>
     <div style="width: 50px; height: 50px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #002d62; font-weight: bold; font-size: 0.8em;">IATA</div>
   </div>
 <div style="padding: 30px;">
     <div style="text-align: center; border-bottom: 2px solid #002d62; padding-bottom: 10px; margin-bottom: 20px;">
       <h3 style="margin: 0; color: #002d62;">CERTIFICATE OF ACCREDITATION</h3>
-      <div style="font-size: 1.2em; font-weight: bold; margin-top: 5px;">Numeric Code: <span>[</span>99-8-2288 7</div>
+      <div style="font-size: 1.2em; font-weight: bold; margin-top: 5px;">Numeric Code: <span verifiable-text="start" data-for="iata">[</span>99-8-2288 7</div>
     </div>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
       <p>This certifies that <strong>Apex Global Travel, LLC</strong> is a Passenger Sales Agent in good standing, authorized to issue tickets on behalf of IATA member airlines.</p>

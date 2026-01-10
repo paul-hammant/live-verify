@@ -18,7 +18,7 @@ This number is the lifeblood of the insurance market. Reinsurers use it to decid
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Helvetica Neue', Helvetica, sans-serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.2em; color: #000;" verifiable-text="start" data-for="pml">RMS (Risk Management Solutions)</div>
+    <div style="font-weight: bold; font-size: 1.2em; color: #000;">RMS (Risk Management Solutions)</div>
     <div style="text-align: right; font-size: 0.8em; color: #666;">
       Model Version: 21.0 (RiskLink)<br>
       March 15, 2026
@@ -26,7 +26,7 @@ This number is the lifeblood of the insurance market. Reinsurers use it to decid
   </div>
 <h3 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; color: #000; border-bottom: 2px solid #000; padding-bottom: 10px;">Probable Maximum Loss (PML) Report</h3>
 <div style="font-size: 0.9em; line-height: 1.6; color: #333; margin-top: 20px;">
-    <p><strong>Insured:</strong> <span>[</span>Global Real Estate Trust, REIT<br>
+    <p><strong>Insured:</strong> <span verifiable-text="start" data-for="pml">[</span>Global Real Estate Trust, REIT<br>
     <strong>Portfolio:</strong> US Coastal Tier 1 (142 Properties)</p>
 <div style="background: #f9f9f9; padding: 15px; border: 1px solid #eee; margin: 20px 0;">
       <table style="width: 100%; font-size: 0.95em;">

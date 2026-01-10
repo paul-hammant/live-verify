@@ -18,11 +18,11 @@ Fraud happens when a seller "Deletes" the page of the report that mentions a bur
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Helvetica', Arial, sans-serif; border: 2px solid #2e7d32; background: #f1f8e9; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #2e7d32; padding-bottom: 15px; margin-bottom: 25px;">
-    <div style="font-weight: bold; font-size: 1.3em;" verifiable-text="start" data-for="esa">ENVIRO-CONSULT GROUP, LLC</div>
+    <div style="font-weight: bold; font-size: 1.3em;">ENVIRO-CONSULT GROUP, LLC</div>
     <div style="font-size: 0.85em; color: #33691e;">PHASE I ENVIRONMENTAL SITE ASSESSMENT</div>
   </div>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
-    <p><strong>Property:</strong> <span>[</span>789 Industrial Way, Metropolis, State 90210<br>
+    <p><strong>Property:</strong> <span verifiable-text="start" data-for="esa">[</span>789 Industrial Way, Metropolis, State 90210<br>
     <strong>Client:</strong> Metropolis Property Developers, LLC</p>
 <div style="background: #fff; border: 1px solid #c5e1a5; padding: 15px; margin: 20px 0;">
       <p><strong>Assessment Standard:</strong> ASTM E1527-21</p>

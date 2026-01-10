@@ -223,8 +223,9 @@ The **Delivery Driver** benefits from verification.
 Static cards can be photographed and reprinted. An **e-ink courier badge** with a rotating salt prevents cloning and protects driver privacy.
 
 <div style="max-width: 320px; margin: 24px auto; font-family: 'Courier New', monospace; border: 3px solid #232f3e; border-radius: 8px; background: #f5f5f0; padding: 20px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
-  <div style="font-size: 1em; color: #232f3e; font-weight: bold; margin-bottom: 8px;"><span>[</span>AMAZON LOGISTICS</div>
-  <div style="font-size: 1em; font-weight: bold; <div style="font-size: 1em; font-weight: bold; color: #000; margin-bottom: 8px;" verifiable-text="start" data-for="eink-driver">em; color: #333; margin-bottom: 8px;">San Francisco Metro</div>
+  <div style="font-size: 1em; color: #232f3e; font-weight: bold; margin-bottom: 8px;"><span verifiable-text="start" data-for="eink-driver">[</span>AMAZON LOGISTICS</div>
+  <div style="font-size: 1em; font-weight: bold; color: #000; margin-bottom: 8px;">Carlos R 42882</div>
+  <div style="font-size: 1em; color: #333; margin-bottom: 8px;">San Francisco Metro</div>
   <div style="font-size: 1em; color: #232f3e; margin-bottom: 12px;">
     Salt: 9m2k7x3p
   </div>

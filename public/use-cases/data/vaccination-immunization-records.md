@@ -17,14 +17,14 @@ The problem is that physical cards are easy to fake. During the COVID-19 pandemi
 <div style="max-width: 450px; margin: 24px auto; font-family: sans-serif; border: 2px solid #ccc; border-radius: 8px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #f4f4f4; padding: 15px; border-bottom: 1px solid #ccc; display: flex; align-items: center; justify-content: space-between;">
     <div>
-      <div style="font-weight: bold; font-size: 1.1em; color: #333;" verifiable-text="start" data-for="vax">COVID-19 Vaccination Record Card</div>
+      <div style="font-weight: bold; font-size: 1.1em; color: #333;">COVID-19 Vaccination Record Card</div>
       <div style="font-size: 0.7em; color: #666;">Please keep this record card, which includes medical information about the vaccines you have received.</div>
     </div>
     <div style="width: 40px; height: 40px; background: #999; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-weight: bold; font-size: 0.6em; text-align: center;">CDC</div>
   </div>
 <div style="padding: 20px;">
     <div style="border-bottom: 1px solid #000; padding-bottom: 10px; margin-bottom: 15px;">
-      <div style="font-size: 0.9em;"><strong>Patient Name:</strong> <span>[</span>SMITH, SARAH JANE</div>
+      <div style="font-size: 0.9em;"><strong>Patient Name:</strong> <span verifiable-text="start" data-for="vax">[</span>SMITH, SARAH JANE</div>
       <div style="font-size: 0.9em;"><strong>Date of Birth:</strong> 05/15/1985</div>
     </div>
 <table style="width: 100%; border-collapse: collapse; font-size: 0.8em; text-align: left;">

@@ -16,11 +16,11 @@ Filing the wrong information, or filing without authority, can result in penalti
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #003366; background: #fff; padding: 0;">
   <div style="background: #003366; color: #fff; padding: 15px;">
-    <div style="font-weight: bold; font-size: 1.1em;" verifiable-text="start" data-for="regulatoryfilingauth">REGULATORY FILING AUTHORITY</div>
+    <div style="font-weight: bold; font-size: 1.1em;">REGULATORY FILING AUTHORITY</div>
     <div style="font-size: 0.8em;">Statutory Submissions Delegation</div>
   </div>
   <div style="padding: 20px; font-size: 0.9em; line-height: 1.6;">
-    <p><strong>Company:</strong> <span>[</span>Ashford Holdings Ltd<br>
+    <p><strong>Company:</strong> <span verifiable-text="start" data-for="regulatoryfilingauth">[</span>Ashford Holdings Ltd<br>
     <strong>Authorized Person:</strong> Elizabeth Park<br>
     <strong>Role:</strong> Company Secretary<br>
     <strong>Issued:</strong> January 1, 2026</p>

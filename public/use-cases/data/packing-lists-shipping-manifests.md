@@ -21,13 +21,13 @@ It is the primary document used by:
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', monospace; border: 1px solid #333; background: #fff; padding: 30px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
-    <h1 style="margin: 0; font-size: 1.5em; text-transform: uppercase;" verifiable-text="start" data-for="pack">Cargo Shipping Manifest</h1>
+    <h1 style="margin: 0; font-size: 1.5em; text-transform: uppercase;">Cargo Shipping Manifest</h1>
     <div style="font-size: 0.8em; opacity: 0.7;">GLOBAL LOGISTICS SOLUTIONS, INC.</div>
   </div>
 <div style="font-size: 0.85em; line-height: 1.4; color: #000;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
       <div>
-        <strong>Shipper:</strong> <span>[</span>Shenzhen Tech Components, Ltd.<br>
+        <strong>Shipper:</strong> <span verifiable-text="start" data-for="pack">[</span>Shenzhen Tech Components, Ltd.<br>
         <strong>Consignee:</strong> Apex Robotics, LLC (Chicago, IL)
       </div>
       <div style="text-align: right;">

@@ -18,7 +18,7 @@ OCR-to-hash allows a client to scan the trainer's digital badge or physical ID t
 
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
   <div style="background: #000; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
-    <div style="font-weight: bold; font-size: 1.1em; letter-spacing: 1px;" verifiable-text="start" data-for="fit">NASM CERTIFIED</div>
+    <div style="font-weight: bold; font-size: 1.1em; letter-spacing: 1px;">NASM CERTIFIED</div>
     <div style="font-size: 0.7em; opacity: 0.8; text-align: right;">NATIONAL ACADEMY OF<br>SPORTS MEDICINE</div>
   </div>
 <div style="padding: 20px; display: flex; background: #fff;">
@@ -27,7 +27,7 @@ OCR-to-hash allows a client to scan the trainer's digital badge or physical ID t
     </div>
     <div style="flex-grow: 1;">
       <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Professional Name</div>
-      <div style="font-size: 1.2em; font-weight: bold; margin: 0 0 10px 0; color: #333;"><span>[</span>SARAH J. MILLER</div>
+      <div style="font-size: 1.2em; font-weight: bold; margin: 0 0 10px 0; color: #333;"><span verifiable-text="start" data-for="fit">[</span>SARAH J. MILLER</div>
 <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Credential</div>
       <div style="font-size: 1em; font-weight: bold; margin: 0 0 10px 0;">Certified Personal Trainer</div>
 <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">License #</div>

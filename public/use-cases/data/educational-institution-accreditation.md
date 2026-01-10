@@ -21,12 +21,12 @@ In most countries, the government doesn't "Grade" universities. Instead, private
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 5px double #1a365d; background: #fdfcf0; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); position: relative;">
   <div style="text-align: center; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 2px; color: #1a365d;" verifiable-text="start" data-for="accred">MIDDLE STATES COMMISSION ON HIGHER EDUCATION</div>
+    <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 2px; color: #1a365d;">MIDDLE STATES COMMISSION ON HIGHER EDUCATION</div>
     <div style="font-size: 0.85em; color: #666; margin-top: 5px;">CERTIFICATE OF ACCREDITATION</div>
   </div>
 <div style="font-size: 1.1em; line-height: 1.8; color: #333; text-align: center;">
     <p>This is to certify that</p>
-    <p style="font-size: 1.5em; font-weight: bold; color: #1a365d; margin: 15px 0;"><span>[</span>UNIVERSITY OF EXCELLENCE</p>
+    <p style="font-size: 1.5em; font-weight: bold; color: #1a365d; margin: 15px 0;"><span verifiable-text="start" data-for="accred">[</span>UNIVERSITY OF EXCELLENCE</p>
     <p>is accredited by the Middle States Commission on Higher Education, an institutional accrediting agency recognized by the U.S. Secretary of Education and the Council for Higher Education Accreditation.</p>
 <div style="background: #f9f9f9; padding: 15px; border: 1px solid #eee; margin: 25px 0; font-size: 0.9em; text-align: left;">
       <strong>Status:</strong> ACCREDITED (In Good Standing)<br>

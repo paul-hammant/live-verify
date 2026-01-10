@@ -18,7 +18,7 @@ The Carnet is a physical booklet of colored papers that customs officers stamp a
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #005a9c; background: #fff; padding: 0;">
   <div style="background: #005a9c; color: #fff; padding: 15px; text-align: center;">
-    <h3 style="margin: 0; text-transform: uppercase;" verifiable-text="start" data-for="carnet">ATA CARNET</h3>
+    <h3 style="margin: 0; text-transform: uppercase;">ATA CARNET</h3>
     <div style="font-size: 0.8em;">UNITED STATES COUNCIL FOR INTERNATIONAL BUSINESS</div>
   </div>
 <div style="padding: 25px;">
@@ -32,7 +32,7 @@ The Carnet is a physical booklet of colored papers that customs officers stamp a
       </div>
     </div>
 <div style="font-size: 0.9em; line-height: 1.5; color: #333;">
-      <p><strong>Holder:</strong> <span>[</span>RockBand Tours, LLC<br>
+      <p><strong>Holder:</strong> <span verifiable-text="start" data-for="carnet">[</span>RockBand Tours, LLC<br>
       123 Soundstage Way, Nashville, TN</p>
 <p><strong>General Description of Goods:</strong><br>
       Musical Instruments, Amplifiers, and Audio Recording Equipment for Professional Use (Total Items: 42)</p>

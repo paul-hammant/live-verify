@@ -11,7 +11,7 @@ furtherDerivations: 1
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #37474f; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="ia-report">CRAWFORD & COMPANY</div>
+      <div style="font-weight: bold; font-size: 1.2em;">CRAWFORD & COMPANY</div>
       <div style="font-size: 0.8em; opacity: 0.8;">Independent Claims Solutions</div>
     </div>
     <div style="text-align: right;">
@@ -23,7 +23,7 @@ furtherDerivations: 1
 <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
       <p><strong>Carrier:</strong> Liberty Mutual Insurance<br>
       <strong>Claim #:</strong> 99228877-WC<br>
-      <strong>Property:</strong> <span>[</span>123 Industrial Way, Chicago, IL</p>
+      <strong>Property:</strong> <span verifiable-text="start" data-for="ia-report">[</span>123 Industrial Way, Chicago, IL</p>
 <div style="background: #fdfdfd; border: 1px solid #eee; padding: 15px; margin: 15px 0; border-radius: 4px;">
         <p><strong>Adjuster:</strong> Robert Miller (License #TX-9982)<br>
         <strong>Inspection Date:</strong> March 15, 2026</p>

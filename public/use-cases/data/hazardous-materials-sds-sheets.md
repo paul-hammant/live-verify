@@ -19,7 +19,7 @@ Fraud is dangerous here: some managers use a 10-year-old SDS to hide that a chem
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #333; color: #fff; padding: 15px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.1em;" verifiable-text="start" data-for="sds">SAFETY DATA SHEET (SDS)</div>
+      <div style="font-weight: bold; font-size: 1.1em;">SAFETY DATA SHEET (SDS)</div>
       <div style="font-size: 0.8em; opacity: 0.8;">GHS / OSHA HCS 2012</div>
     </div>
     <div style="text-align: right;">
@@ -28,7 +28,7 @@ Fraud is dangerous here: some managers use a 10-year-old SDS to hide that a chem
   </div>
 <div style="padding: 25px;">
     <div style="border-bottom: 2px solid #333; padding-bottom: 10px; margin-bottom: 20px;">
-      <h2 style="margin: 0; font-size: 1.3em;"><span>[</span>ACETONE (Technical Grade)</h2>
+      <h2 style="margin: 0; font-size: 1.3em;"><span verifiable-text="start" data-for="sds">[</span>ACETONE (Technical Grade)</h2>
       <div style="font-size: 0.9em; color: #666;">Manufacturer: Global Chemicals, Corp.</div>
     </div>
 <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">

@@ -18,14 +18,14 @@ These cards are the "Ticket to the Ballot Box." Fraud is high-stakes: partisan a
   <div style="background: #002d62; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
     <div style="font-size: 1.5em; margin-right: 15px;">🇺🇸</div>
     <div style="text-align: right;">
-      <div style="font-weight: bold; font-size: 1.1em; letter-spacing: 1px;" verifiable-text="start" data-for="vote">VOTER REGISTRATION</div>
+      <div style="font-weight: bold; font-size: 1.1em; letter-spacing: 1px;">VOTER REGISTRATION</div>
       <div style="font-size: 0.75em; font-weight: bold; opacity: 0.9;">STATE OF ILLINOIS • BOARD OF ELECTIONS</div>
     </div>
   </div>
 <div style="padding: 20px; background: #fff;">
     <div style="border-bottom: 1px solid #eee; padding-bottom: 10px; margin-bottom: 15px;">
       <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Registered Voter</div>
-      <div style="font-size: 1.2em; font-weight: bold; color: #333;"><span>[</span>SARAH JANE SMITH</div>
+      <div style="font-size: 1.2em; font-weight: bold; color: #333;"><span verifiable-text="start" data-for="vote">[</span>SARAH JANE SMITH</div>
 <div style="font-size: 0.9em; color: #333; margin-top: 5px;">
         123 MAPLE STREET, SPRINGFIELD, IL 62704
       </div>

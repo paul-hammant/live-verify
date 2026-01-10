@@ -21,8 +21,8 @@ Cargo theft via "Fictitious Pickup" is a huge problem. Thieves use forged paper 
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 1px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <div style="background: #002d62; color: #fff; padding: 10px; display: flex; justify-content: space-between; align-items: center;">
-    <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="cargo">EXPEDITORS INTERNATIONAL</div>
-    <div style="font-size: 0.8em; text-align: right;">Ref #: <span>[</span>DO-2026-992288</div>
+    <div style="font-weight: bold; font-size: 1.2em;">EXPEDITORS INTERNATIONAL</div>
+    <div style="font-size: 0.8em; text-align: right;">Ref #: <span verifiable-text="start" data-for="cargo">[</span>DO-2026-992288</div>
   </div>
 <div style="padding: 15px; font-size: 0.85em;">
     <h2 style="text-align: center; margin: 0 0 15px 0; font-size: 1.3em; text-decoration: underline;">DELIVERY ORDER</h2>

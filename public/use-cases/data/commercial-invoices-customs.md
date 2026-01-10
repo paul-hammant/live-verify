@@ -21,7 +21,7 @@ Customs officers use this invoice to decide:
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', monospace; border: 1px solid #000; background: #fff; padding: 20px; box-shadow: 2px 2px 5px rgba(0,0,0,0.1);">
   <div style="display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
-    <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="invoice">COMMERCIAL INVOICE</div>
+    <div style="font-weight: bold; font-size: 1.2em;">COMMERCIAL INVOICE</div>
     <div style="text-align: right;">
       Invoice #: INV-998877-XK<br>
       Date: March 15, 2026
@@ -31,7 +31,7 @@ Customs officers use this invoice to decide:
     <div style="display: flex; margin-bottom: 20px;">
       <div style="width: 50%;">
         <strong>EXPORTER (SELLER):</strong><br>
-        <span>[</span>Shenzhen Tech Components, Ltd.<br>
+        <span verifiable-text="start" data-for="invoice">[</span>Shenzhen Tech Components, Ltd.<br>
         Building 4, High-Tech Park<br>
         Shenzhen, GD, China
       </div>

@@ -17,7 +17,7 @@ These documents are "Financial Recovery" records. Fraud is high-stakes: claimant
 <div style="max-width: 650px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="background: #0033a0; color: #fff; padding: 25px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;" verifiable-text="start" data-for="claim">ALLIANZ GLOBAL ASSISTANCE</div>
+      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;">ALLIANZ GLOBAL ASSISTANCE</div>
       <div style="font-size: 0.8em; opacity: 0.9; text-transform: uppercase;">Official Settlement Advice</div>
     </div>
     <div style="font-size: 2em;">🏥</div>
@@ -25,7 +25,7 @@ These documents are "Financial Recovery" records. Fraud is high-stakes: claimant
 <div style="padding: 25px;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div style="font-size: 0.9em; line-height: 1.5;">
-        <strong>Claimant:</strong> <span>[</span>SARAH JANE SMITH<br>
+        <strong>Claimant:</strong> <span verifiable-text="start" data-for="claim">[</span>SARAH JANE SMITH<br>
         <strong>Policy #:</strong> AZ-99228877-XJ<br>
         <strong>Loss Event:</strong> Emergency Medical (Thailand)
       </div>

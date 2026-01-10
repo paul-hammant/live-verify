@@ -22,7 +22,7 @@ The **Consent Form** is the legal receipt for this digital handshake. It proves:
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ddd; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1); overflow: hidden;">
   <div style="background: #004d40; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="ob-consent">HSBC OPEN BANKING</div>
+      <div style="font-weight: bold; font-size: 1.2em;">HSBC OPEN BANKING</div>
       <div style="font-size: 0.8em; opacity: 0.8;">Secure Data Sharing Receipt</div>
     </div>
     <div style="font-size: 1.2em;">🔓</div>
@@ -30,7 +30,7 @@ The **Consent Form** is the legal receipt for this digital handshake. It proves:
 <div style="padding: 30px;">
     <h3 style="margin-top: 0; color: #004d40; border-bottom: 2px solid #004d40; padding-bottom: 5px;">AUTHORIZATION RECORD</h3>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
-      <p>This certifies that <span>[</span><strong>Customer:</strong> JANE M. SMITH (Ending in ...4421) has granted permission to:</p>
+      <p>This certifies that <span verifiable-text="start" data-for="ob-consent">[</span><strong>Customer:</strong> JANE M. SMITH (Ending in ...4421) has granted permission to:</p>
 <div style="background: #f1f8e9; padding: 15px; border: 1px solid #c5e1a5; margin: 20px 0;">
         <p><strong>Third-Party Provider:</strong> ClearScore (via Plaid)<br>
         <strong>Access Scope:</strong> AIS (Account Information Service)<br>

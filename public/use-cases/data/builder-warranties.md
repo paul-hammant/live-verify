@@ -19,14 +19,14 @@ This warranty is a valuable financial asset that stays with the house for 10 yea
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 4px solid #1a365d; background: #fff; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #1a365d; padding-bottom: 20px; margin-bottom: 25px;">
-    <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 2px; color: #1a365d;" verifiable-text="start" data-for="warranty">2-10 HOME BUYERS WARRANTY</div>
+    <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 2px; color: #1a365d;">2-10 HOME BUYERS WARRANTY</div>
     <div style="font-size: 0.85em; color: #666; margin-top: 5px;">THE NATION'S LEADING STRUCTURAL WARRANTY</div>
   </div>
 <h3 style="text-align: center; text-transform: uppercase; margin-bottom: 20px; color: #1a365d;">Certificate of Warranty Coverage</h3>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <p>This certifies that the property located at:</p>
     <p style="text-align: center; font-size: 1.1em; font-weight: bold;">
-      <span>[</span>123 NEW HOUSE LANE, AUSTIN, TX 78701
+      <span verifiable-text="start" data-for="warranty">[</span>123 NEW HOUSE LANE, AUSTIN, TX 78701
     </p>
 <div style="margin: 20px 0; border: 1px solid #ccc; padding: 15px; background: #f9f9f9;">
       <p><strong>Builder:</strong> Toll Brothers, Inc. (Reg #9922)<br>

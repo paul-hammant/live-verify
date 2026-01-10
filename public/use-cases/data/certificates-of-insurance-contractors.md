@@ -18,7 +18,7 @@ COI fraud is rampant. Contractors often buy a policy for one day, print the COI,
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #999; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #eee; padding: 10px; border-bottom: 1px solid #000; display: flex; justify-content: space-between; align-items: center;">
-    <div style="font-weight: bold; font-size: 1.1em;" verifiable-text="start" data-for="coi">ACORD<sub>&reg;</sub> 25</div>
+    <div style="font-weight: bold; font-size: 1.1em;">ACORD<sub>&reg;</sub> 25</div>
     <div style="font-size: 0.8em; font-weight: bold;">CERTIFICATE OF LIABILITY INSURANCE</div>
   </div>
 <div style="padding: 20px;">
@@ -30,7 +30,7 @@ COI fraud is rampant. Contractors often buy a policy for one day, print the COI,
       </div>
       <div style="width: 50%; border: 1px solid #000; border-left: none; padding: 5px; font-size: 0.8em;">
         <strong>INSURED:</strong><br>
-        <span>[</span>Apex Construction Services, LLC<br>
+        <span verifiable-text="start" data-for="coi">[</span>Apex Construction Services, LLC<br>
         400 Industrial Way<br>
         Oakland, CA 94621
       </div>

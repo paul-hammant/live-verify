@@ -16,13 +16,13 @@ Because these papers are essentially vouchers for cash, they are high-stakes tar
 
 <div style="max-width: 400px; margin: 24px auto; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1); overflow: hidden;">
   <div style="background: #ffcc00; color: #000; padding: 20px; text-align: center; border-bottom: 2px solid #000;">
-    <div style="font-weight: bold; font-size: 1.4em; letter-spacing: -1px;" verifiable-text="start" data-for="remit">WesternUnion \/</div>
+    <div style="font-weight: bold; font-size: 1.4em; letter-spacing: -1px;">WesternUnion \/</div>
     <div style="font-size: 0.7em; font-weight: bold; text-transform: uppercase; margin-top: 5px;">Money Transfer Receipt</div>
   </div>
 <div style="padding: 20px; background: #fffbe6;">
     <div style="text-align: center; margin-bottom: 20px;">
       <div style="font-size: 0.7em; color: #666; text-transform: uppercase;">Tracking Number (MTCN)</div>
-      <div style="font-size: 1.8em; font-weight: bold; color: #000; letter-spacing: 2px;"><span>[</span>992-288-7766</div>
+      <div style="font-size: 1.8em; font-weight: bold; color: #000; letter-spacing: 2px;"><span verifiable-text="start" data-for="remit">[</span>992-288-7766</div>
     </div>
 <div style="font-size: 0.9em; line-height: 1.5; color: #333;">
       <p><strong>Sender:</strong> JOHN JACOB DOE (USA)<br>

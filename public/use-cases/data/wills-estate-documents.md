@@ -21,9 +21,9 @@ It defines:
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #333; background: #fff; padding: 50px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); position: relative;">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 40px;">
-    <h1 style="margin: 0; font-size: 1.8em; text-transform: uppercase; letter-spacing: 2px;" verifiable-text="start" data-for="will">Last Will and Testament</h1>
+    <h1 style="margin: 0; font-size: 1.8em; text-transform: uppercase; letter-spacing: 2px;">Last Will and Testament</h1>
     <div style="font-size: 1.1em; font-style: italic; margin-top: 5px;">of</div>
-    <div style="font-size: 1.5em; font-weight: bold; margin-top: 5px;"><span>[</span>MARGARET A. WILLOWS</div>
+    <div style="font-size: 1.5em; font-weight: bold; margin-top: 5px;"><span verifiable-text="start" data-for="will">[</span>MARGARET A. WILLOWS</div>
   </div>
 <div style="font-size: 1.1em; line-height: 1.8; color: #000; text-align: justify;">
     <p>I, <strong>MARGARET A. WILLOWS</strong>, a resident of the City of Chicago, County of Cook, State of Illinois, being of sound mind and memory, do hereby make, publish, and declare this to be my Last Will and Testament, hereby revoking all wills and codicils heretofore made by me.</p>

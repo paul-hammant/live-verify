@@ -18,11 +18,11 @@ OCR-to-hash allows a patron, neighbor, or police officer to scan the posting to 
 
 <div style="max-width: 500px; margin: 24px auto; font-family: 'Times New Roman', serif; border: 4px double #333; background: #fff; padding: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); position: relative;">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 15px; margin-bottom: 20px;">
-    <div style="font-weight: bold; font-size: 1.2em; text-transform: uppercase;" verifiable-text="start" data-for="liquor">State of California</div>
+    <div style="font-weight: bold; font-size: 1.2em; text-transform: uppercase;">State of California</div>
     <div style="font-size: 1em; letter-spacing: 1px;">DEPARTMENT OF ALCOHOLIC BEVERAGE CONTROL</div>
   </div>
 <div style="font-size: 0.9em; line-height: 1.6;">
-    <p><strong>License Number:</strong> <span>[</span>42-992288 (Type 47)<br>
+    <p><strong>License Number:</strong> <span verifiable-text="start" data-for="liquor">[</span>42-992288 (Type 47)<br>
     <strong>Primary Owner:</strong> SUNSET HOSPITALITY GROUP LLC<br>
     <strong>DBA:</strong> THE NEON LOUNGE</p>
 <div style="margin: 15px 0; padding: 15px; border: 1px solid #ccc; background: #f9f9f9; text-align: center;">

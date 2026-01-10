@@ -17,7 +17,7 @@ These documents are the "Entry Ticket" to global trade. Fraud is high-stakes: ow
 <div style="max-width: 650px; margin: 24px auto; font-family: 'Times New Roman', Times, serif; border: 2px solid #002d62; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="background: #002d62; color: #fff; padding: 30px; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid #000;">
     <div>
-      <div style="font-weight: bold; font-size: 1.5em; letter-spacing: 1px;" verifiable-text="start" data-for="pi">THE UK P&I CLUB</div>
+      <div style="font-weight: bold; font-size: 1.5em; letter-spacing: 1px;">THE UK P&I CLUB</div>
       <div style="font-size: 0.8em; opacity: 0.9; text-transform: uppercase;">Member of the International Group of P&I Clubs</div>
     </div>
     <div style="font-size: 2em;">⚓</div>
@@ -26,7 +26,7 @@ These documents are the "Entry Ticket" to global trade. Fraud is high-stakes: ow
     <h2 style="text-align: center; color: #002d62; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px;">Certificate of Entry</h2>
 <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; border-bottom: 1px solid #eee; padding-bottom: 15px; margin-bottom: 20px;">
       <div>
-        <strong>Vessel Name:</strong> <span>[</span>MV OCEAN TRADER<br>
+        <strong>Vessel Name:</strong> <span verifiable-text="start" data-for="pi">[</span>MV OCEAN TRADER<br>
         <strong>IMO Number:</strong> 9922887<br>
         <strong>Gross Tonnage:</strong> 42,500 GT
       </div>

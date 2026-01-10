@@ -19,7 +19,7 @@ Farmers use these verified coverage schedules to secure "Operating Loans" from b
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 2px solid #2e7d32; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="background: #2e7d32; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="crop">RAIN & HAIL, LLC</div>
+      <div style="font-weight: bold; font-size: 1.2em;">RAIN & HAIL, LLC</div>
       <div style="font-size: 0.8em;">A Chubb Company</div>
     </div>
     <div style="text-align: right;">
@@ -29,7 +29,7 @@ Farmers use these verified coverage schedules to secure "Operating Loans" from b
 <div style="padding: 30px;">
     <h2 style="text-align: center; color: #2e7d32; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Crop-Hail Coverage Schedule</h2>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
-      <p><strong>Insured:</strong> <span>[</span>Miller Family Farms, Inc.<br>
+      <p><strong>Insured:</strong> <span verifiable-text="start" data-for="crop">[</span>Miller Family Farms, Inc.<br>
       <strong>Location:</strong> Story County, Iowa (Section 14, T84N, R24W)</p>
 <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
         <tr style="background: #f1f8e9; border-bottom: 2px solid #2e7d32;">

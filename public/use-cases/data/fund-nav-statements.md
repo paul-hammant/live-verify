@@ -28,7 +28,7 @@ In the **Bernie Madoff** scandal, the fraud was possible because Madoff wrote hi
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #002d62; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="nav">CITCO FUND SERVICES</div>
+      <div style="font-weight: bold; font-size: 1.2em;">CITCO FUND SERVICES</div>
       <div style="font-size: 0.8em; opacity: 0.8;">Independent Fund Administrator</div>
     </div>
     <div style="text-align: right;">
@@ -38,7 +38,7 @@ In the **Bernie Madoff** scandal, the fraud was possible because Madoff wrote hi
 <div style="padding: 30px;">
     <h3 style="margin-top: 0; color: #002d62; border-bottom: 2px solid #002d62; padding-bottom: 5px;">MONTHLY CAPITAL ACCOUNT STATEMENT</h3>
 <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Fund:</strong> <span>[</span>Titan Alpha Hedge Fund, LP<br>
+      <p><strong>Fund:</strong> <span verifiable-text="start" data-for="nav">[</span>Titan Alpha Hedge Fund, LP<br>
       <strong>Investor:</strong> Wayne Family Foundation</p>
 <div style="background: #f0f4f8; padding: 15px; border: 1px solid #d1d9e6; margin: 15px 0;">
         <table style="width: 100%; font-size: 0.95em;">

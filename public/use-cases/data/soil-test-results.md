@@ -17,7 +17,7 @@ These reports are high-value documents. Farmers use them to secure **Crop Loans*
 <div style="max-width: 650px; margin: 24px auto; font-family: 'Georgia', serif; border: 2px solid #3e2723; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #3e2723; color: #fff; padding: 25px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;" verifiable-text="start" data-for="soil">AGRO-METRICS LABS</div>
+      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;">AGRO-METRICS LABS</div>
       <div style="font-size: 0.8em; opacity: 0.9;">Precision Agronomy & Environmental Analysis</div>
     </div>
     <div style="text-align: right;">
@@ -28,7 +28,7 @@ These reports are high-value documents. Farmers use them to secure **Crop Loans*
 <div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9em; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
-        <strong>Client:</strong> <span>[</span>GREEN ACRES FAMILY FARM<br>
+        <strong>Client:</strong> <span verifiable-text="start" data-for="soil">[</span>GREEN ACRES FAMILY FARM<br>
         <strong>Field ID:</strong> North-42 (APN: 998-776)<br>
         <strong>Crop Type:</strong> Winter Wheat
       </div>

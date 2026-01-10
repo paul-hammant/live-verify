@@ -20,14 +20,14 @@ This permit is a "Contract with the Earth." It says: "You are allowed to harm 15
   <div style="background: #2e7d32; color: #fff; padding: 15px; text-align: center; display: flex; align-items: center; justify-content: center;">
     <div style="font-size: 2em; margin-right: 15px;">🦅</div>
     <div>
-      <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;" verifiable-text="start" data-for="species">FEDERAL FISH & WILDLIFE PERMIT</h2>
+      <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">FEDERAL FISH & WILDLIFE PERMIT</h2>
       <div style="font-size: 0.85em; opacity: 0.9;">U.S. FISH AND WILDLIFE SERVICE</div>
     </div>
   </div>
 <div style="padding: 25px;">
     <div style="text-align: center; border-bottom: 2px solid #2e7d32; padding-bottom: 10px; margin-bottom: 20px;">
       <h3 style="margin: 0; color: #1b5e20;">INCIDENTAL TAKE PERMIT</h3>
-      <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;">Permit #: <span>[</span>PER-99228877</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;">Permit #: <span verifiable-text="start" data-for="species">[</span>PER-99228877</div>
     </div>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
       <p><strong>Permittee:</strong> Desert Sun Solar, LLC<br>

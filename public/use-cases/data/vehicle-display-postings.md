@@ -18,7 +18,7 @@ These postings are the primary defense against "Ghost Taxis"—unlicensed cars t
   <div style="background: #ffcc00; color: #000; padding: 15px; display: flex; align-items: center; border-bottom: 2px solid #000;">
     <div style="font-size: 1.8em; margin-right: 15px;">🚕</div>
     <div>
-      <div style="font-weight: bold; font-size: 1.1em; letter-spacing: 1px;" verifiable-text="start" data-for="taxi">TAXI & LIMOUSINE COMM.</div>
+      <div style="font-weight: bold; font-size: 1.1em; letter-spacing: 1px;">TAXI & LIMOUSINE COMM.</div>
       <div style="font-size: 0.75em; font-weight: bold; opacity: 0.8;">OFFICIAL FOR-HIRE PERMIT</div>
     </div>
   </div>
@@ -28,7 +28,7 @@ These postings are the primary defense against "Ghost Taxis"—unlicensed cars t
     </div>
     <div style="flex-grow: 1;">
       <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Driver Name</div>
-      <div style="font-size: 1.1em; font-weight: bold; margin: 0 0 10px 0; color: #333;"><span>[</span>SARAH J. SMITH</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin: 0 0 10px 0; color: #333;"><span verifiable-text="start" data-for="taxi">[</span>SARAH J. SMITH</div>
 <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">License #</div>
       <div style="font-size: 1.3em; font-weight: bold; margin: 0 0 10px 0; letter-spacing: 1px;">TLC-992288</div>
 <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Vehicle Plate</div>

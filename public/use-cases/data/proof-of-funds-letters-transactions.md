@@ -17,11 +17,11 @@ Because a POF is the difference between an offer being accepted or rejected, it 
 <div style="max-width: 650px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #004a99; padding-bottom: 15px; margin-bottom: 30px;">
     <div>
-      <div style="font-weight: bold; font-size: 1.4em; color: #004a99;" verifiable-text="start" data-for="pof">CHASE 🟦</div>
+      <div style="font-weight: bold; font-size: 1.4em; color: #004a99;">CHASE 🟦</div>
       <div style="font-size: 0.8em; color: #666; text-transform: uppercase;">Private Client Services</div>
     </div>
     <div style="text-align: right; font-size: 0.85em; color: #666;">
-      Ref: <span>[</span>POF-99228877-XJ<br>
+      Ref: <span verifiable-text="start" data-for="pof">[</span>POF-99228877-XJ<br>
       March 15, 2026
     </div>
   </div>

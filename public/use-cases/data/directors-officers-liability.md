@@ -19,7 +19,7 @@ High-profile executives won't join a board unless they see verified proof of thi
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Helvetica', Arial, sans-serif; border: 2px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
   <div style="background: #000; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="do-pol">CHUBB SPECIALTY INSURANCE</div>
+      <div style="font-weight: bold; font-size: 1.2em;">CHUBB SPECIALTY INSURANCE</div>
       <div style="font-size: 0.8em; opacity: 0.8;">Executive Protection Portfolio&reg;</div>
     </div>
     <div style="text-align: right;">
@@ -29,7 +29,7 @@ High-profile executives won't join a board unless they see verified proof of thi
 <div style="padding: 30px;">
     <h2 style="text-align: center; color: #000; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">D&O Policy Declarations</h2>
 <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Insured Organization:</strong> <span>[</span>Globochem Worldwide, Inc.<br>
+      <p><strong>Insured Organization:</strong> <span verifiable-text="start" data-for="do-pol">[</span>Globochem Worldwide, Inc.<br>
       <strong>Jurisdiction:</strong> Delaware, USA</p>
 <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
         <tr style="background: #f5f5f5; border-bottom: 2px solid #000;">

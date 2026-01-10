@@ -10,14 +10,14 @@ furtherDerivations: 1
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #ccc; background: #fffdf8; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); position: relative;">
   <div style="text-align: left; margin-bottom: 30px; border-bottom: 2px solid #333; padding-bottom: 10px;">
-    <div style="font-weight: bold; font-size: 1.2em; color: #1a1a1a;" verifiable-text="start" data-for="manu">PENGUIN RANDOM HOUSE</div>
+    <div style="font-weight: bold; font-size: 1.2em; color: #1a1a1a;">PENGUIN RANDOM HOUSE</div>
     <div style="font-size: 0.85em; color: #666;">Editorial Operations • New York</div>
   </div>
 <h3 style="text-align: center; text-transform: uppercase; margin-bottom: 25px; letter-spacing: 1px;">Manuscript Attestation</h3>
 <div style="font-size: 1em; line-height: 1.6; color: #333; text-align: justify;">
     <p>This document serves as a verified record of the following manuscript version as received by the publisher:</p>
 <div style="margin: 20px 0; border-left: 4px solid #333; padding-left: 20px; background: #f9f9f9; padding-top: 10px; padding-bottom: 10px;">
-      <p><strong>Title:</strong> <span>[</span>"THE VERIFICATION CHRONICLES" (v.2.4)<br>
+      <p><strong>Title:</strong> <span verifiable-text="start" data-for="manu">[</span>"THE VERIFICATION CHRONICLES" (v.2.4)<br>
       <strong>Author:</strong> J.K. Row-Verify<br>
       <strong>Editor:</strong> Marcus J. Miller</p>
 <p><strong>File Hash (SHA-256):</strong><br>

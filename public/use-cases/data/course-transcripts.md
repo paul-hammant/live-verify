@@ -18,14 +18,14 @@ You need this "Official" paper to apply for Grad School or to prove to an employ
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 25px;">
-    <div style="font-weight: bold; font-size: 1.3em;" verifiable-text="start" data-for="transcript">UNIVERSITY OF OXFORD</div>
+    <div style="font-weight: bold; font-size: 1.3em;">UNIVERSITY OF OXFORD</div>
     <div style="font-size: 0.85em; color: #666;">Office of the University Registrar</div>
   </div>
 <h3 style="text-align: center; text-transform: uppercase; margin-bottom: 20px;">Official Academic Transcript Extract</h3>
 <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
       <div>
-        <strong>Student:</strong> <span>[</span><strong>PONDER STIBBONS</strong><br>
+        <strong>Student:</strong> <span verifiable-text="start" data-for="transcript">[</span><strong>PONDER STIBBONS</strong><br>
         <strong>Student ID:</strong> OX-992288
       </div>
       <div style="text-align: right;">

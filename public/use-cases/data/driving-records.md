@@ -16,11 +16,11 @@ Unlike a self-declaration ("I have no points"), an authority-issued record is **
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #003366; background: #fff; padding: 0;">
   <div style="background: #003366; color: #fff; padding: 15px;">
-    <div style="font-weight: bold; font-size: 1.1em;" verifiable-text="start" data-for="drivingrecords">DRIVING RECORD SUMMARY</div>
+    <div style="font-weight: bold; font-size: 1.1em;">DRIVING RECORD SUMMARY</div>
     <div style="font-size: 0.8em;">Driver and Vehicle Licensing Agency</div>
   </div>
   <div style="padding: 20px; font-size: 0.9em; line-height: 1.6;">
-    <p><strong>Licence Holder:</strong> <span>[</span>James Michael Smith<br>
+    <p><strong>Licence Holder:</strong> <span verifiable-text="start" data-for="drivingrecords">[</span>James Michael Smith<br>
     <strong>Licence Number:</strong> SMITH890123JS9AB<br>
     <strong>Date of Birth:</strong> [Verified but not displayed]<br>
     <strong>Record Date:</strong> 15 February 2026, 09:42 GMT</p>

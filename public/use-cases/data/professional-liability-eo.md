@@ -19,7 +19,7 @@ It is the "Insurance for Brainwork." If an architect's design causes a balcony t
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Helvetica', sans-serif; border: 2px solid #37474f; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="background: #37474f; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="eo">HISCOX INSURANCE CO.</div>
+      <div style="font-weight: bold; font-size: 1.2em;">HISCOX INSURANCE CO.</div>
       <div style="font-size: 0.8em; opacity: 0.8;">Professional Liability Division</div>
     </div>
     <div style="text-align: right;">
@@ -29,7 +29,7 @@ It is the "Insurance for Brainwork." If an architect's design causes a balcony t
 <div style="padding: 30px;">
     <h2 style="text-align: center; color: #37474f; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Certificate of Professional Liability</h2>
 <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Named Insured:</strong> <span>[</span>Skyline Architecture & Design, P.C.<br>
+      <p><strong>Named Insured:</strong> <span verifiable-text="start" data-for="eo">[</span>Skyline Architecture & Design, P.C.<br>
       <strong>Professional Category:</strong> Licensed Structural Engineering</p>
 <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
         <tr style="background: #eceff1; border-bottom: 2px solid #37474f;">

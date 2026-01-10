@@ -11,7 +11,7 @@ furtherDerivations: 1
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="background: #333; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="ins-pol">MARSH McLENNAN</div>
+      <div style="font-weight: bold; font-size: 1.2em;">MARSH McLENNAN</div>
       <div style="font-size: 0.8em; opacity: 0.8;">Commercial Lines Placement Summary</div>
     </div>
     <div style="text-align: right;">
@@ -21,7 +21,7 @@ furtherDerivations: 1
 <div style="padding: 30px;">
     <h2 style="text-align: center; color: #333; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Policy Evidence Portfolio</h2>
 <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Insured:</strong> <span>[</span>Global Logistics Solutions, Corp.<br>
+      <p><strong>Insured:</strong> <span verifiable-text="start" data-for="ins-pol">[</span>Global Logistics Solutions, Corp.<br>
       <strong>Period:</strong> March 01, 2026 to March 01, 2027</p>
 <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
         <tr style="background: #f5f5f5; border-bottom: 2px solid #333;">

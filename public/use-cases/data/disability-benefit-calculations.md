@@ -18,7 +18,7 @@ Claimants use these verified worksheets to prove their income to banks for mortg
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 1px solid #333; background: #fff; padding: 40px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.1em; color: #1565c0;" verifiable-text="start" data-for="disability">METLIFE INDEMNITY</div>
+    <div style="font-weight: bold; font-size: 1.1em; color: #1565c0;">METLIFE INDEMNITY</div>
     <div style="text-align: right; font-size: 0.8em; color: #666;">
       Claim ID: DI-992288-26<br>
       March 15, 2026
@@ -26,7 +26,7 @@ Claimants use these verified worksheets to prove their income to banks for mortg
   </div>
 <h3 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; color: #1565c0; border-bottom: 2px solid #1565c0; padding-bottom: 10px;">Long-Term Disability Benefit Calculation</h3>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333; margin-top: 20px;">
-    <p><strong>Insured:</strong> <span>[</span><strong>JOHN JACOB DOE</strong><br>
+    <p><strong>Insured:</strong> <span verifiable-text="start" data-for="disability">[</span><strong>JOHN JACOB DOE</strong><br>
     <strong>Policy Type:</strong> Individual Disability Income (Own-Occupation)</p>
 <div style="background: #f1f8ff; padding: 15px; border: 1px solid #bbdefb; margin: 20px 0;">
       <table style="width: 100%; font-size: 0.95em;">

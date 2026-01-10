@@ -18,7 +18,7 @@ These digital-first documents are the "Proof of Wealth" for a new generation of 
   <div style="background: #00bcd4; color: #fff; padding: 25px; display: flex; align-items: center; justify-content: space-between;">
     <div style="display: flex; align-items: center;">
       <div style="font-size: 1.8em; margin-right: 10px;">📉</div>
-      <div style="font-weight: bold; font-size: 1.3em; letter-spacing: -0.5px;" verifiable-text="start" data-for="robo">Betterment</div>
+      <div style="font-weight: bold; font-size: 1.3em; letter-spacing: -0.5px;">Betterment</div>
     </div>
     <div style="text-align: right;">
       <div style="font-weight: bold; font-size: 0.9em;">INVESTMENT STATEMENT</div>
@@ -28,7 +28,7 @@ These digital-first documents are the "Proof of Wealth" for a new generation of 
 <div style="padding: 25px;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 30px;">
       <div style="font-size: 0.9em; line-height: 1.5; color: #333;">
-        <strong>Client:</strong> <span>[</span>SARAH JANE SMITH<br>
+        <strong>Client:</strong> <span verifiable-text="start" data-for="robo">[</span>SARAH JANE SMITH<br>
         <strong>Account:</strong> Individual Taxable (...9922)<br>
         <strong>Advisor:</strong> Betterment LLC (CRD #149117)
       </div>

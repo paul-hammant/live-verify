@@ -10,14 +10,14 @@ furtherDerivations: 1
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 1px solid #000; background: #fff; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
-    <strong verifiable-text="start" data-for="inventory">GLOBAL COLD STORAGE & LOGISTICS</strong><br>
+    <strong>GLOBAL COLD STORAGE & LOGISTICS</strong><br>
     OFFICIAL INVENTORY SUMMARY REPORT<br>
     -----------------------------------
   </div>
 <div style="font-size: 0.85em; line-height: 1.4;">
     <div style="display: flex; justify-content: space-between;">
       <div>
-        <strong>Depositor:</strong> <span>[</span>Premium Seafood Imports, Inc.<br>
+        <strong>Depositor:</strong> <span verifiable-text="start" data-for="inventory">[</span>Premium Seafood Imports, Inc.<br>
         <strong>Warehouse:</strong> Pier 42 Cold Hub, Seattle, WA
       </div>
       <div style="text-align: right;">

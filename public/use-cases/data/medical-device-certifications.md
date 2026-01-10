@@ -10,11 +10,11 @@ furtherDerivations: 1
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #0056b3; background: #e0f2f7; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #0056b3; padding-bottom: 15px; margin-bottom: 25px;">
-    <h2 style="margin: 0; color: #0056b3; letter-spacing: 1px;" verifiable-text="start" data-for="med-cert">EU CE CERTIFICATE OF CONFORMITY</h2>
+    <h2 style="margin: 0; color: #0056b3; letter-spacing: 1px;">EU CE CERTIFICATE OF CONFORMITY</h2>
     <div style="font-size: 0.85em; color: #555; margin-top: 5px;">Medical Device Regulation (EU) 2017/745</div>
   </div>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
-    <p><strong>Certificate No:</strong> <span>[</span>BSI-MDR-987654</p>
+    <p><strong>Certificate No:</strong> <span verifiable-text="start" data-for="med-cert">[</span>BSI-MDR-987654</p>
     <p><strong>Manufacturer:</strong> OmniHealth Corp, Dublin, Ireland</p>
 <div style="background: #fff; border: 1px solid #b2ebf2; padding: 15px; margin: 20px 0;">
       <strong>Device:</strong> Advanced Surgical Sutures (Class IIa)<br>

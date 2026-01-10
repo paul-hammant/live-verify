@@ -18,7 +18,7 @@ These trades happen by the thousands every second. An **Automated Rebalancing Co
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ddd; background: #fff; padding: 0; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
   <div style="background: #1a237e; color: #fff; padding: 20px; text-align: center;">
-    <h3 style="margin: 0; letter-spacing: 1px;" verifiable-text="start" data-for="rebal">WEALTHFRONT REBALANCING NOTICE</h3>
+    <h3 style="margin: 0; letter-spacing: 1px;">WEALTHFRONT REBALANCING NOTICE</h3>
     <div style="font-size: 0.8em; margin-top: 5px;">AUTOMATED PORTFOLIO MANAGEMENT</div>
   </div>
 <div style="padding: 30px;">
@@ -33,7 +33,7 @@ These trades happen by the thousands every second. An **Automated Rebalancing Co
       </div>
     </div>
 <div style="font-size: 0.95em; line-height: 1.5; color: #333;">
-      <p>Hello <span>[</span><strong>Sarah Connor</strong>,</p>
+      <p>Hello <span verifiable-text="start" data-for="rebal">[</span><strong>Sarah Connor</strong>,</p>
       <p>Your portfolio was automatically rebalanced today to maintain your 9.0/10 risk score and capture tax-loss harvesting opportunities.</p>
 <table style="width: 100%; border-collapse: collapse; margin-top: 15px;">
         <tr style="border-bottom: 1px solid #eee; background: #f9f9f9;">

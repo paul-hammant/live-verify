@@ -19,7 +19,7 @@ The **Retirement Certificate** is the only proof that the company actually did w
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #2e7d32; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="background: #2e7d32; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="carbon">VERRA</div>
+      <div style="font-weight: bold; font-size: 1.2em;">VERRA</div>
       <div style="font-size: 0.8em;">Verified Carbon Standard (VCS)</div>
     </div>
     <div style="text-align: right;">
@@ -31,7 +31,7 @@ The **Retirement Certificate** is the only proof that the company actually did w
 <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
       <p>This document certifies the permanent retirement of carbon units from the Verra Registry on behalf of:</p>
 <p style="text-align: center; font-size: 1.2em; font-weight: bold; margin: 15px 0;">
-        <span>[</span>MICROSOFT CORPORATION
+        <span verifiable-text="start" data-for="carbon">[</span>MICROSOFT CORPORATION
       </p>
 <div style="background: #f1f8e9; border: 1px solid #c5e1a5; padding: 15px; margin: 15px 0;">
         <table style="width: 100%; font-size: 0.95em;">

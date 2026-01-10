@@ -17,7 +17,7 @@ The problem is that "Trade School" certificates are easily forged. Shady contrac
 <div style="max-width: 650px; margin: 24px auto; font-family: 'Helvetica Neue', Arial, sans-serif; border: 4px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="background: #333; color: #fff; padding: 25px; display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid #d32f2f;">
     <div>
-      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;" verifiable-text="start" data-for="vocation">LINCOLN TECH ACADEMY</div>
+      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;">LINCOLN TECH ACADEMY</div>
       <div style="font-size: 0.8em; opacity: 0.9; text-transform: uppercase;">Institute of Skilled Trades & Applied Science</div>
     </div>
     <div style="width: 60px; height: 60px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-weight: bold; font-size: 0.7em; text-align: center; border: 2px solid #333;">LT<br>SEAL</div>
@@ -25,7 +25,7 @@ The problem is that "Trade School" certificates are easily forged. Shady contrac
 <div style="padding: 25px;">
     <div style="text-align: center; margin-bottom: 25px;">
       <h2 style="margin: 0; color: #000; letter-spacing: 1px;">CERTIFICATE OF TECHNICAL COMPETENCY</h2>
-      <div style="font-size: 0.9em; color: #666; margin-top: 5px;">Credential ID: <span>[</span>LT-2026-992288</div>
+      <div style="font-size: 0.9em; color: #666; margin-top: 5px;">Credential ID: <span verifiable-text="start" data-for="vocation">[</span>LT-2026-992288</div>
     </div>
 <div style="font-size: 1.1em; line-height: 1.6; color: #333; text-align: center; margin-bottom: 25px;">
       <p>This is to certify that <strong>JOHN JACOB DOE</strong> has successfully met the standards of training and assessment in the field of:</p>

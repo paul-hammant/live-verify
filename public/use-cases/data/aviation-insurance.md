@@ -19,7 +19,7 @@ If a pilot presents a fake certificate to land in London or Dubai, they are flyi
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Helvetica', Arial, sans-serif; border: 2px solid #002244; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
   <div style="background: #002244; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="aviation">GLOBAL AEROSPACE, INC.</div>
+      <div style="font-weight: bold; font-size: 1.2em;">GLOBAL AEROSPACE, INC.</div>
       <div style="font-size: 0.8em;">Specialist Aviation Underwriters</div>
     </div>
     <div style="text-align: right;">
@@ -29,7 +29,7 @@ If a pilot presents a fake certificate to land in London or Dubai, they are flyi
 <div style="padding: 30px;">
     <h2 style="text-align: center; color: #002244; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Certificate of Insurance</h2>
 <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Insured:</strong> <span>[</span>Cyberdyne Systems Charter, LLC<br>
+      <p><strong>Insured:</strong> <span verifiable-text="start" data-for="aviation">[</span>Cyberdyne Systems Charter, LLC<br>
       <strong>Aircraft:</strong> 2024 Gulfstream G650ER<br>
       <strong>Registration (N-Number):</strong> N101CS</p>
 <table style="width: 100%; border-collapse: collapse; margin-top: 15px;">

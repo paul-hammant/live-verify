@@ -18,14 +18,14 @@ These letters are the "Benefit Unlockers" of the student world. They are used to
 
 <div style="max-width: 650px; margin: 24px auto; font-family: 'Times New Roman', Times, serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #003366; padding-bottom: 20px; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.4em; color: #003366; letter-spacing: 1px;" verifiable-text="start" data-for="registrar">UNIVERSITY OF CALIFORNIA, BERKELEY</div>
+    <div style="font-weight: bold; font-size: 1.4em; color: #003366; letter-spacing: 1px;">UNIVERSITY OF CALIFORNIA, BERKELEY</div>
     <div style="font-size: 0.9em; text-transform: uppercase;">Office of the Registrar • Enrollment Verification</div>
   </div>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <p>Date: March 15, 2026</p>
     <p>This document serves as official verification of student status for:</p>
 <div style="background: #f9f9f9; padding: 20px; border: 1px solid #ddd; margin: 20px 0;">
-      <p><strong>Student:</strong> <span>[</span><strong>SARAH JANE SMITH</strong><br>
+      <p><strong>Student:</strong> <span verifiable-text="start" data-for="registrar">[</span><strong>SARAH JANE SMITH</strong><br>
       <strong>Student ID:</strong> 99228877<br>
       <strong>Academic Level:</strong> Undergraduate Junior</p>
 <p><strong>Enrollment Status:</strong> FULL-TIME (15 Units)<br>

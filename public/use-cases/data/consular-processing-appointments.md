@@ -19,7 +19,7 @@ Fraudsters often create fake notices to get people into high-security zones or t
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #002d62; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
     <div>
-      <div style="font-weight: bold; font-size: 1.1em;" verifiable-text="start" data-for="consul-app">U.S. DEPARTMENT OF STATE</div>
+      <div style="font-weight: bold; font-size: 1.1em;">U.S. DEPARTMENT OF STATE</div>
       <div style="font-size: 0.8em;">National Visa Center (NVC)</div>
     </div>
     <div style="width: 40px; height: 40px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #002d62; font-weight: bold; font-size: 0.7em; text-align: center;">DOS</div>
@@ -31,7 +31,7 @@ Fraudsters often create fake notices to get people into high-security zones or t
     </div>
 <h2 style="text-align: center; font-size: 1.2em; margin-bottom: 20px; text-transform: uppercase;">Visa Interview Appointment Notice</h2>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
-      <p><strong>Principal Applicant:</strong> <span>[</span>SARAH JANE SMITH</p>
+      <p><strong>Principal Applicant:</strong> <span verifiable-text="start" data-for="consul-app">[</span>SARAH JANE SMITH</p>
 <div style="background: #f0f4f8; border: 1px solid #d1d9e6; padding: 15px; margin: 15px 0;">
         <p><strong>Interview Date:</strong> March 15, 2026<br>
         <strong>Interview Time:</strong> 08:30 AM</p>

@@ -18,13 +18,13 @@ Fraud is common: drivers often edit a $400 payout to read $4,000 to trick a land
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #000; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
-    <div style="font-weight: bold; font-size: 1.4em;" verifiable-text="start" data-for="gig">Uber</div>
+    <div style="font-weight: bold; font-size: 1.4em;">Uber</div>
     <div style="font-size: 0.8em; opacity: 0.8;">Weekly Earnings Statement</div>
   </div>
 <div style="padding: 30px;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px;">
       <div>
-        <div style="font-size: 1.1em; font-weight: bold; color: #333;"><span>[</span>SARAH JANE SMITH</div>
+        <div style="font-size: 1.1em; font-weight: bold; color: #333;"><span verifiable-text="start" data-for="gig">[</span>SARAH JANE SMITH</div>
         <div style="font-size: 0.9em; color: #666;">Partner ID: 99228877</div>
       </div>
       <div style="text-align: right;">

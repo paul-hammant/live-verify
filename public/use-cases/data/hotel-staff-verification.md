@@ -72,8 +72,9 @@ The **Staff ID Badge** is the worker's proof that they are authorized to be in t
 Static cards can be photographed and reprinted. An **e-ink staff badge** with a rotating salt prevents cloning and protects staff privacy.
 
 <div style="max-width: 320px; margin: 24px auto; font-family: 'Courier New', monospace; border: 3px solid #000; border-radius: 8px; background: #f5f5f0; padding: 20px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
-  <div style="font-size: 1em; color: #000; font-weight: bold; margin-bottom: 8px;"><span>[</span>HILTON HOTELS</div>
-  <div style="font-size: 1em; font-weight: bold;<div style="font-size: 1em; font-weight: bold; color: #000; margin-bottom: 8px;" verifiable-text="start" data-for="eink-hotel">color: #333; margin-bottom: 8px;">Room Service</div>
+  <div style="font-size: 1em; color: #000; font-weight: bold; margin-bottom: 8px;"><span verifiable-text="start" data-for="eink-hotel">[</span>HILTON HOTELS</div>
+  <div style="font-size: 1em; font-weight: bold; color: #000; margin-bottom: 8px;">Mildred M</div>
+  <div style="font-size: 1em; color: #333; margin-bottom: 8px;">Room Service</div>
   <div style="font-size: 1em; color: #000; margin-bottom: 12px;">
     Salt: 9k2m4x8p
   </div>

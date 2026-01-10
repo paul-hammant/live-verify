@@ -10,7 +10,7 @@ furtherDerivations: 2
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 25px;">
-    <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="mort-voe">ACME GLOBAL HUB, INC.</div>
+    <div style="font-weight: bold; font-size: 1.2em;">ACME GLOBAL HUB, INC.</div>
     <div style="font-size: 0.85em; color: #666;">Human Resources • Employment Verification Office</div>
   </div>
 <h3 style="text-align: center; text-transform: uppercase; margin-bottom: 20px;">Verification of Employment (VOE)</h3>
@@ -18,7 +18,7 @@ furtherDerivations: 2
     <p>To Whom It May Concern,</p>
     <p>This letter confirms the employment and salary details for the individual named below, as requested for mortgage underwriting purposes:</p>
 <div style="margin: 20px 0; border-left: 4px solid #000; padding-left: 20px; background: #f9f9f9; padding-top: 10px; padding-bottom: 10px;">
-      <p><strong>Employee:</strong> <span>[</span><strong>John D. Smith</strong><br>
+      <p><strong>Employee:</strong> <span verifiable-text="start" data-for="mort-voe">[</span><strong>John D. Smith</strong><br>
       <strong>Job Title:</strong> Senior Systems Architect<br>
       <strong>Start Date:</strong> March 1, 2020 (Current/Active)<br>
       <strong>Base Salary:</strong> $ 145,000.00 / Annual</p>
@@ -114,7 +114,7 @@ _[Content merged from: mortgage-income-verification]_
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 1px solid #ccc; background: #fdfdfd; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
   <div style="display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
-    <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="income">ACME GLOBAL HUB, INC.</div>
+    <div style="font-weight: bold; font-size: 1.2em;">ACME GLOBAL HUB, INC.</div>
     <div style="text-align: right;">
       Earnings Statement<br>
       Period: 03/01/26 - 03/15/26
@@ -123,7 +123,7 @@ _[Content merged from: mortgage-income-verification]_
 <div style="font-size: 0.9em; line-height: 1.4;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
       <div>
-        <strong>Employee:</strong> <span>[</span><strong>JOHN JACOB DOE</strong><br>
+        <strong>Employee:</strong> <span verifiable-text="start" data-for="income">[</span><strong>JOHN JACOB DOE</strong><br>
         <strong>Address:</strong> 123 Maple St, Anytown, USA
       </div>
       <div style="text-align: right;">

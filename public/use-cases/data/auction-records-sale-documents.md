@@ -10,14 +10,14 @@ furtherDerivations: 1
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 2px 2px 10px rgba(0,0,0,0.05);">
   <div style="text-align: right; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.4em; color: #000;" verifiable-text="start" data-for="auction">PHILLIPS</div>
+    <div style="font-weight: bold; font-size: 1.4em; color: #000;">PHILLIPS</div>
     <div style="font-size: 0.8em; color: #666;">NEW YORK • 432 PARK AVENUE</div>
   </div>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <h3 style="text-align: center; text-transform: uppercase; margin-bottom: 20px;">Purchase Statement</h3>
 <p><strong>Sale:</strong> NY010126 - Modern Masterpieces<br>
     <strong>Date:</strong> 15 March 2026<br>
-    <strong>Bidder #:</strong> <span>[</span>9988</p>
+    <strong>Bidder #:</strong> <span verifiable-text="start" data-for="auction">[</span>9988</p>
 <div style="margin: 20px 0; border-top: 2px solid #000; padding-top: 15px;">
       <table style="width: 100%;">
         <tr>
