@@ -189,32 +189,3 @@ Browser extension allows verification of digital contracts page-by-page with aut
 **Amendment Handling**
 
 Amendments reference the original contract and modify specific terms. Each amendment is verified separately, with the amendment hash chain linked to the original contract hash.
-
-## Witness Services as Infrastructure
-
-A new class of **"witness" SaaS companies** could emerge to provide verification endpoints for parties who lack their own web infrastructure:
-
-**For Individuals:**
-- Freelancers verifying client contracts
-- Landlords/tenants verifying lease agreements
-- Individuals in private sales (vehicles, equipment)
-- Family agreements (loans between relatives, estate arrangements)
-
-**For Small Businesses:**
-- SMBs without IT resources to run verification endpoints
-- Sole proprietors, partnerships, micro-businesses
-- Contractors verifying work orders and change orders
-
-**For Civic/Community Use:**
-- Homeowner associations verifying meeting minutes
-- Community groups, clubs, societies
-- Local government bodies (town councils, school boards)
-- Religious organizations verifying governance documents
-
-**Business Model:**
-- Subscription-based hash hosting and verification
-- Per-document fees for occasional users
-- White-label verification for law firms, accountants
-- API access for integration with contract management systems
-
-These witness services democratize verification - a sole proprietor can offer the same cryptographic trust as a Fortune 500 company. The `verify:` line points to the witness service's domain (e.g., `verify:witnessco.com/contracts/abc123`) rather than requiring each party to operate their own infrastructure.

@@ -1,6 +1,6 @@
 {
-  "generated": "2026-01-10T08:02:26.699Z",
-  "totalUseCases": 392,
+  "generated": "2026-01-10T08:06:34.522Z",
+  "totalUseCases": 393,
   "totalFurtherDerivations": 396,
   "categories": {
     "Real Estate & Property": 30,
@@ -8,7 +8,7 @@
     "Banking & Payments": 15,
     "Actuarial & Insurance Mathematics": 10,
     "Personal Lines Insurance": 12,
-    "Government & Civic Documents": 13,
+    "Government & Civic Documents": 14,
     "Notary Services": 7,
     "Immigration & Visa Documents": 17,
     "Financial & Legal Documents": 8,
@@ -2297,6 +2297,24 @@
         "diploma-mill-prevention",
         "academic-standards",
         "institutional-integrity"
+      ]
+    },
+    {
+      "slug": "election-results-certifications",
+      "title": "Election Results & Certifications",
+      "category": "Government & Civic Documents",
+      "volume": "Medium",
+      "retention": "Permanent (historical record)",
+      "furtherDerivations": 0,
+      "snippet": "Election date and type, jurisdiction, office/contest, candidate names, vote counts, total ballots, turnout percentage, certification date, certifying officials, any recount/audit notes.",
+      "tags": [
+        "election",
+        "voting",
+        "results",
+        "certification",
+        "canvass",
+        "democracy",
+        "tally"
       ]
     },
     {
@@ -7447,12 +7465,12 @@
       "count": 15
     },
     {
-      "name": "Professional & Educational Qualifications",
+      "name": "Government & Civic Documents",
       "count": 14
     },
     {
-      "name": "Government & Civic Documents",
-      "count": 13
+      "name": "Professional & Educational Qualifications",
+      "count": 14
     },
     {
       "name": "Personal Lines Insurance",
