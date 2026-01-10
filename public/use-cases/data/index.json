@@ -1,6 +1,6 @@
 {
-  "generated": "2026-01-10T09:18:08.018Z",
-  "totalUseCases": 402,
+  "generated": "2026-01-10T09:22:24.302Z",
+  "totalUseCases": 403,
   "totalFurtherDerivations": 396,
   "categories": {
     "Real Estate & Property": 30,
@@ -45,7 +45,7 @@
     "Environmental Permits & Compliance": 4,
     "Agriculture & Food": 7,
     "Bonds & Sureties": 3,
-    "Safety & Compliance": 1,
+    "Safety & Compliance": 2,
     "Insurance & Bonds": 1,
     "Consumer & Commercial Transactions": 1,
     "Vehicle & Transportation": 2
@@ -4300,6 +4300,29 @@
       ]
     },
     {
+      "slug": "mandatory-disclosures",
+      "title": "Mandatory Disclosures (Breaches, Recalls, Material Events)",
+      "category": "Safety & Compliance",
+      "volume": "Large",
+      "retention": "Permanent (legal records)",
+      "furtherDerivations": 0,
+      "snippet": "Disclosing organization, disclosure type, regulatory authority, discovery date, notification date, deadline compliance, scope/impact, affected parties, remediation status.",
+      "tags": [
+        "disclosure",
+        "breach",
+        "recall",
+        "material-event",
+        "SEC",
+        "FDA",
+        "FTC",
+        "GDPR",
+        "privacy",
+        "cybersecurity",
+        "consumer-protection",
+        "novel"
+      ]
+    },
+    {
       "slug": "manufacturer-declarations-of-conformity",
       "title": "Manufacturer Declarations of Conformity (DoC)",
       "category": "Product Certifications & Compliance",
@@ -7780,12 +7803,12 @@
       "count": 2
     },
     {
-      "name": "Vehicle & Transportation",
+      "name": "Safety & Compliance",
       "count": 2
     },
     {
-      "name": "Safety & Compliance",
-      "count": 1
+      "name": "Vehicle & Transportation",
+      "count": 2
     },
     {
       "name": "Insurance & Bonds",
