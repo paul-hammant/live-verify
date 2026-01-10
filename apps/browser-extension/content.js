@@ -197,8 +197,20 @@
             const tempDiv = document.createElement('div');
             tempDiv.appendChild(fragment);
 
+            // Temporarily insert into DOM to get valid bounding rects
+            // (detached fragments return zero rects)
+            tempDiv.style.visibility = 'hidden';
+            tempDiv.style.position = 'absolute';
+            tempDiv.style.left = '0';
+            tempDiv.style.top = '0';
+            tempDiv.style.pointerEvents = 'none';
+            document.body.appendChild(tempDiv);
+
             // Get text nodes with visual positions and sort by top-to-bottom, left-to-right
             const items = getTextNodesWithPositions(tempDiv);
+
+            // Remove from DOM
+            document.body.removeChild(tempDiv);
 
             let text = '';
             let lastLineIndex = -1;
