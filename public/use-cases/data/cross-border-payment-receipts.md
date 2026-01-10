@@ -18,7 +18,7 @@ Fraudsters often use "Fake Screenshots" to trick sellers into shipping goods bef
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #00b9ff; border-radius: 8px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #00b9ff; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
-    <div style="font-weight: bold; font-size: 1.4em;" verifiable-text="start" data-for="remit"><span>[</span>Wise</div>
+    <div style="font-weight: bold; font-size: 1.4em;"><span verifiable-text="start" data-for="remit">[</span>Wise</div>
     <div style="font-size: 0.8em; font-weight: bold; text-transform: uppercase;">Transfer Confirmation</div>
   </div>
 <div style="padding: 30px;">

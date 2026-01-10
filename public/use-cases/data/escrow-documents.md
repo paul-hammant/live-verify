@@ -19,7 +19,7 @@ Because banks manage millions of these accounts, clerical errors are frequent. V
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <div style="background: #003366; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="escrow"><span>[</span>MR. COOPER MORTGAGE</div>
+      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="escrow">[</span>MR. COOPER MORTGAGE</div>
       <div style="font-size: 0.8em;">Annual Escrow Account Disclosure Statement</div>
     </div>
     <div style="text-align: right;">
@@ -147,7 +147,7 @@ Hackers often "spoof" an escrow officer's email and send "Updated Wire Instructi
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #000; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 25px;">
-    <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="escrow-wire"><span>[</span>FIRST AMERICAN TITLE COMPANY</div>
+    <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="escrow-wire">[</span>FIRST AMERICAN TITLE COMPANY</div>
     <div style="font-size: 0.85em; color: #666;">Official Wire Instructions & Closing Package</div>
   </div>
 <div style="font-size: 1em; line-height: 1.6; color: #333;">
@@ -264,7 +264,7 @@ In high-stakes deals, fraudsters (or disgruntled partners) often "Edit" the PDF 
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', serif; border: 1px solid #000; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
-    <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="ma"><span>[</span>J.P. MORGAN ESCROW SERVICES</div>
+    <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="ma">[</span>J.P. MORGAN ESCROW SERVICES</div>
     <div style="font-size: 0.9em;">FINAL SETTLEMENT STATEMENT</div>
   </div>
 <div style="font-size: 0.9em; line-height: 1.5; color: #333;">
@@ -353,7 +353,7 @@ Fraud is rampant: scammers often send fake "Updated Instructions" to the escrow 
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', serif; border: 1px solid #000; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
-    <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="escrow-inst"><span>[</span>STEWART TITLE GUARANTY</div>
+    <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="escrow-inst">[</span>STEWART TITLE GUARANTY</div>
     <div style="font-size: 0.9em;">DISBURSEMENT AUTHORIZATION</div>
   </div>
 <div style="font-size: 1em; line-height: 1.6; color: #333;">

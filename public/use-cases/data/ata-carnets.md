@@ -18,7 +18,7 @@ The Carnet is a physical booklet of colored papers that customs officers stamp a
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #005a9c; background: #fff; padding: 0;">
   <div style="background: #005a9c; color: #fff; padding: 15px; text-align: center;">
-    <h3 style="margin: 0; text-transform: uppercase;" verifiable-text="start" data-for="carnet"><span>[</span>ATA CARNET</h3>
+    <h3 style="margin: 0; text-transform: uppercase;"><span verifiable-text="start" data-for="carnet">[</span>ATA CARNET</h3>
     <div style="font-size: 0.8em;">UNITED STATES COUNCIL FOR INTERNATIONAL BUSINESS</div>
   </div>
 <div style="padding: 25px;">

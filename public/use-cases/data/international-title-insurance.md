@@ -10,7 +10,7 @@ furtherDerivations: 1
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 2px solid #333; background: #fff; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); position: relative;">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 15px; margin-bottom: 25px;">
-    <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 2px; color: #000;" verifiable-text="start" data-for="intl-title"><span>[</span>FIRST AMERICAN TITLE</div>
+    <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 2px; color: #000;"><span verifiable-text="start" data-for="intl-title">[</span>FIRST AMERICAN TITLE</div>
     <div style="font-size: 0.85em; color: #666; margin-top: 5px; text-transform: uppercase;">International Division • European Operations</div>
   </div>
 <h3 style="text-align: center; text-transform: uppercase; margin-bottom: 25px;">Policy of Title Insurance</h3>

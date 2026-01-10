@@ -16,7 +16,7 @@ These documents are "High-Velocity" proofs. Fraud is rampant in "Post-Accident" 
 
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #007bff; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
   <div style="background: #007bff; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
-    <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 1px;" verifiable-text="start" data-for="temp"><span>[</span>CUVVA \/</div>
+    <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 1px;"><span verifiable-text="start" data-for="temp">[</span>CUVVA \/</div>
     <div style="font-size: 0.7em; opacity: 0.9; text-align: right;">TEMPORARY AUTO<br>INSURANCE BINDER</div>
   </div>
 <div style="padding: 20px; background: #fff;">

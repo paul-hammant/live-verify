@@ -17,7 +17,7 @@ The problem is that "compliance fatigue" leads to massive fraud. Shady employers
 <div style="max-width: 650px; margin: 24px auto; font-family: 'Georgia', serif; border: 4px solid #1a237e; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="padding: 40px; text-align: center; border: 1px solid #ccc; margin: 10px;">
     <div style="margin-bottom: 25px;">
-      <div style="font-size: 1.6em; font-weight: bold; color: #1a237e; letter-spacing: 1px;" verifiable-text="start" data-for="train"><span>[</span>CERTIFICATE OF COMPLETION</div>
+      <div style="font-size: 1.6em; font-weight: bold; color: #1a237e; letter-spacing: 1px;"><span verifiable-text="start" data-for="train">[</span>CERTIFICATE OF COMPLETION</div>
       <div style="font-size: 0.9em; font-style: italic; color: #666;">NATIONAL SAFETY COUNCIL ACADEMY</div>
     </div>
 <div style="margin: 30px 0;">

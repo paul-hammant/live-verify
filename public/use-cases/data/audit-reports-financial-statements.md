@@ -21,7 +21,7 @@ It is used for high-stakes financial decisions:
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 2px 2px 15px rgba(0,0,0,0.05);">
   <div style="text-align: right; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.2em; color: #000;" verifiable-text="start" data-for="audit"><span>[</span>PRICEWATERHOUSECOOPERS LLP</div>
+    <div style="font-weight: bold; font-size: 1.2em; color: #000;"><span verifiable-text="start" data-for="audit">[</span>PRICEWATERHOUSECOOPERS LLP</div>
     <div style="font-size: 0.8em; color: #666;">300 Madison Avenue, New York, NY 10017</div>
   </div>
 <h3 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px;">Report of Independent Registered Public Accounting Firm</h3>

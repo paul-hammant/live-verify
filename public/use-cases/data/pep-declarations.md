@@ -17,7 +17,7 @@ These declarations are the "Compliance Shield" for a bank. Fraud is common in th
 <div style="max-width: 650px; margin: 24px auto; font-family: sans-serif; border: 2px solid #8B0000; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1); overflow: hidden;">
   <div style="background: #8B0000; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="pep"><span>[</span>PEP / EDD DECLARATION</div>
+      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="pep">[</span>PEP / EDD DECLARATION</div>
       <div style="font-size: 0.8em; opacity: 0.9; text-transform: uppercase; letter-spacing: 1px;">Compliance Risk Management</div>
     </div>
     <div style="font-size: 2em;">🏦</div>

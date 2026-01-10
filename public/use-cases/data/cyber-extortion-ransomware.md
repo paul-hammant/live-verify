@@ -19,7 +19,7 @@ Because these authorizations trigger multimillion-dollar crypto-payments, they a
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Helvetica', Arial, sans-serif; border: 2px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
   <div style="background: #1a1a1a; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="cyber"><span>[</span>BEAZLEY BREACH RESPONSE</div>
+      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="cyber">[</span>BEAZLEY BREACH RESPONSE</div>
       <div style="font-size: 0.8em; opacity: 0.8;">Specialist Cyber Underwriters</div>
     </div>
     <div style="text-align: right;">

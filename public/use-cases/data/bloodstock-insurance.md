@@ -19,7 +19,7 @@ If an owner "Photoshops" a $100k policy to look like a $10M policy, they can com
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 2px solid #002366; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="background: #002366; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="horse"><span>[</span>LLOYD'S OF LONDON</div>
+      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="horse">[</span>LLOYD'S OF LONDON</div>
       <div style="font-size: 0.8em;">Specialist Bloodstock Syndicate 1967</div>
     </div>
     <div style="text-align: right;">

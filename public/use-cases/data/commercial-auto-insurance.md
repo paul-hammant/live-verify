@@ -19,7 +19,7 @@ Fraud is common: fleet owners often "delete" expensive-to-insure trucks from the
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #004d40; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="background: #004d40; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="com-auto"><span>[</span>PROGRESSIVE COMMERCIAL</div>
+      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="com-auto">[</span>PROGRESSIVE COMMERCIAL</div>
       <div style="font-size: 0.8em;">Fleet & Logistics Division</div>
     </div>
     <div style="text-align: right;">

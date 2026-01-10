@@ -52,7 +52,7 @@ Static cards can be lost or stolen by former employees. An **e-ink maintenance b
 
 <div style="max-width: 320px; margin: 24px auto; font-family: 'Courier New', monospace; border: 3px solid #2e7d32; border-radius: 8px; background: #f5f5f0; padding: 20px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
   <div style="font-size: 1em; color: #2e7d32; font-weight: bold; margin-bottom: 8px;">EQUITY RESIDENTIAL</div>
-  <div style="font-size: 1em; font-weight: bold; color: #000; margin-bottom: 8px;" verifiable-text="start" data-for="eink-maint"><span>[</span>Robert M.</div>
+  <div style="font-size: 1em; font-weight: bold; color: #000; margin-bottom: 8px;"><span verifiable-text="start" data-for="eink-maint">[</span>Robert M.</div>
   <div style="font-size: 1em; color: #333; margin-bottom: 8px;">Maintenance Lead</div>
   <div style="font-size: 1em; color: #333; margin-bottom: 8px;">
     Salt: 7x2p9k4m

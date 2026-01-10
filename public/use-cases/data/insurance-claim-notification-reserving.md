@@ -18,7 +18,7 @@ OCR-to-hash with **Independent Witnessing** solves the "Completeness Problem." T
 
 <div style="max-width: 500px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 2px solid #002244; background: #fff; padding: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #002244; padding-bottom: 10px; margin-bottom: 20px;">
-    <div style="font-weight: bold; font-size: 1.2em; color: #002244;" verifiable-text="start" data-for="claim"><span>[</span>GLOBAL LIABILITY INSURERS</div>
+    <div style="font-weight: bold; font-size: 1.2em; color: #002244;"><span verifiable-text="start" data-for="claim">[</span>GLOBAL LIABILITY INSURERS</div>
     <div style="font-size: 0.8em;">FIRST NOTICE OF LOSS (FNOL) RECEIPT</div>
   </div>
 <div style="font-size: 0.95em; line-height: 1.4;">

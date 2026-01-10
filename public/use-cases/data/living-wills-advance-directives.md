@@ -10,7 +10,7 @@ furtherDerivations: 1
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #000; background: #fffdf5; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); position: relative;">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 25px;">
-    <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;" verifiable-text="start" data-for="will"><span>[</span>ADVANCE HEALTH CARE DIRECTIVE</h2>
+    <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;"><span verifiable-text="start" data-for="will">[</span>ADVANCE HEALTH CARE DIRECTIVE</h2>
   </div>
 <div style="font-size: 1em; line-height: 1.6; color: #000; text-align: justify;">
     <p>I, <strong>JOHN JACOB DOE</strong>, being of sound mind, willfully and voluntarily make this declaration to be followed if I become incapacitated and am unable to participate in decisions regarding my medical care.</p>

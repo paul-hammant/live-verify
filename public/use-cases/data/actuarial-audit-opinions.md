@@ -18,7 +18,7 @@ If this document is faked or altered, regulators might let a bankrupt insurance 
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 2px 2px 15px rgba(0,0,0,0.05);">
   <div style="text-align: right; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.2em; color: #2c3e50;" verifiable-text="start" data-for="actuarial"><span>[</span>MILLIMAN & ROBERTSON, LLC</div>
+    <div style="font-weight: bold; font-size: 1.2em; color: #2c3e50;"><span verifiable-text="start" data-for="actuarial">[</span>MILLIMAN & ROBERTSON, LLC</div>
     <div style="font-size: 0.9em; color: #7f8c8d;">Actuaries and Consultants</div>
   </div>
 <h3 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 30px;">Statement of Actuarial Opinion</h3>

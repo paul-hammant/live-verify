@@ -17,7 +17,7 @@ Fraud is common in the "Port Market." Unlicensed tour operators create fake "Off
 <div style="max-width: 450px; margin: 24px auto; font-family: 'Trebuchet MS', sans-serif; border: 2px solid #0072b2; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
   <div style="background: #0072b2; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
     <div>
-      <div style="font-weight: bold; font-size: 1.1em; letter-spacing: 1px;" verifiable-text="start" data-for="shore"><span>[</span>CARNIVAL VOYAGER</div>
+      <div style="font-weight: bold; font-size: 1.1em; letter-spacing: 1px;"><span verifiable-text="start" data-for="shore">[</span>CARNIVAL VOYAGER</div>
       <div style="font-size: 0.7em; opacity: 0.9;">OFFICIAL SHORE EXCURSION TICKET</div>
     </div>
     <div style="font-size: 1.5em;">🚢</div>

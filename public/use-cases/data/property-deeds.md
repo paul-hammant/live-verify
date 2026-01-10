@@ -21,7 +21,7 @@ OCR-to-hash binds the **Grantor/Grantee names and the Legal Description** to the
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #000; background: #fff; padding: 0; box-shadow: 5px 5px 15px rgba(0,0,0,0.1);">
   <div style="padding: 40px;">
     <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 30px;">
-      <h1 style="margin: 0; font-size: 1.8em; text-transform: uppercase; letter-spacing: 2px;" verifiable-text="start" data-for="deed"><span>[</span>Statutory Warranty Deed</h1>
+      <h1 style="margin: 0; font-size: 1.8em; text-transform: uppercase; letter-spacing: 2px;"><span verifiable-text="start" data-for="deed">[</span>Statutory Warranty Deed</h1>
     </div>
 <div style="font-size: 1.1em; line-height: 1.6; color: #000;">
       <p>THE GRANTOR, <strong>MARIA G. RODRIGUEZ</strong>, a single person, for and in consideration of Ten Dollars ($10.00) and other good and valuable consideration in hand paid, conveys and warrants to <strong>ROBERT J. MILLER</strong>, the following described real estate:</p>

@@ -17,7 +17,7 @@ The problem is that physical licenses—especially the wallet-sized cards carrie
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
   <div style="background: #1a237e; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
     <div>
-      <div style="font-weight: bold; font-size: 1.1em; letter-spacing: 1px;" verifiable-text="start" data-for="prof"><span>[</span>MEDICAL BOARD</div>
+      <div style="font-weight: bold; font-size: 1.1em; letter-spacing: 1px;"><span verifiable-text="start" data-for="prof">[</span>MEDICAL BOARD</div>
       <div style="font-size: 0.75em; opacity: 0.9;">STATE OF NEW YORK</div>
     </div>
     <div style="font-size: 1.5em;">⚖️</div>

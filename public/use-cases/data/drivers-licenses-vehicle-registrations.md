@@ -19,7 +19,7 @@ OCR-to-hash turns the **Physical Card** into a live link to the DMV's database. 
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 1px solid #333; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
   <div style="background: #1565c0; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
     <div>
-      <div style="font-weight: bold; font-size: 1.1em;" verifiable-text="start" data-for="dmv"><span>[</span>STATE OF CALIFORNIA</div>
+      <div style="font-weight: bold; font-size: 1.1em;"><span verifiable-text="start" data-for="dmv">[</span>STATE OF CALIFORNIA</div>
       <div style="font-size: 0.8em;">DRIVER LICENSE</div>
     </div>
     <div style="font-size: 1.5em;">⭐</div>

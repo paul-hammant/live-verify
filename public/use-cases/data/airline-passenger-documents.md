@@ -10,7 +10,7 @@ furtherDerivations: 5
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', monospace; border: 1px dashed #999; background: #fff; padding: 20px;">
   <div style="text-align: center; margin-bottom: 20px;">
-    <strong verifiable-text="start" data-for="receipt"><span>[</span>DELTA AIR LINES</strong><br>
+    <strong><span verifiable-text="start" data-for="receipt">[</span>DELTA AIR LINES</strong><br>
     ELECTRONIC RECEIPT<br>
     ---------------------------------
   </div>
@@ -129,7 +129,7 @@ Verifying these letters prevents passengers from faking denials to defraud insur
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; border: 1px solid #ccc; background: #fff; padding: 40px;">
   <div style="text-align: right; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.2em; color: #002244;" verifiable-text="start" data-for="comp"><span>[</span>BRITISH AIRWAYS</div>
+    <div style="font-weight: bold; font-size: 1.2em; color: #002244;"><span verifiable-text="start" data-for="comp">[</span>BRITISH AIRWAYS</div>
     <div style="font-size: 0.8em; color: #555;">Customer Relations</div>
   </div>
 <div style="margin-bottom: 30px;">
@@ -221,7 +221,7 @@ _[Content merged from: airline-refund-confirmations]_
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 30px;">
   <div style="border-bottom: 2px solid #d32f2f; padding-bottom: 10px; margin-bottom: 20px;">
-    <div style="font-weight: bold; font-size: 1.2em; color: #d32f2f;" verifiable-text="start" data-for="refund"><span>[</span>LUFTHANSA</div>
+    <div style="font-weight: bold; font-size: 1.2em; color: #d32f2f;"><span verifiable-text="start" data-for="refund">[</span>LUFTHANSA</div>
     <div style="font-size: 0.9em;">Passenger Receipt - REFUND</div>
   </div>
 <div style="font-size: 0.9em; line-height: 1.5; color: #333;">
@@ -324,7 +324,7 @@ _[Content merged from: airline-upgrade-confirmations]_
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0;">
   <div style="background: #000040; color: #fff; padding: 20px; text-align: center;">
-    <h3 style="margin: 0;" verifiable-text="start" data-for="upgrade"><span>[</span>UNITED AIRLINES</h3>
+    <h3 style="margin: 0;"><span verifiable-text="start" data-for="upgrade">[</span>UNITED AIRLINES</h3>
     <div style="font-size: 0.9em; margin-top: 5px;">UPGRADE CONFIRMATION</div>
   </div>
 <div style="padding: 30px;">
@@ -431,7 +431,7 @@ _[Content merged from: airport-lounge-access-confirmations]_
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #222; color: #fff; padding: 0;">
   <div style="background: #d4af37; color: #000; padding: 15px; text-align: center;">
-    <h3 style="margin: 0;" verifiable-text="start" data-for="lounge"><span>[</span>PRIORITY PASS</h3>
+    <h3 style="margin: 0;"><span verifiable-text="start" data-for="lounge">[</span>PRIORITY PASS</h3>
     <div style="font-size: 0.9em;">VISIT CONFIRMATION</div>
   </div>
 <div style="padding: 30px;">

@@ -17,7 +17,7 @@ These documents are high-stakes because they are used as proof of "Intent to Tra
 <div style="max-width: 650px; margin: 24px auto; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; border: 1px solid #999; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="background: #002366; color: #fff; padding: 30px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.6em; letter-spacing: 1px;" verifiable-text="start" data-for="travel"><span>[</span>ELITE TRAVEL PARTNERS</div>
+      <div style="font-weight: bold; font-size: 1.6em; letter-spacing: 1px;"><span verifiable-text="start" data-for="travel">[</span>ELITE TRAVEL PARTNERS</div>
       <div style="font-size: 0.8em; opacity: 0.8; text-transform: uppercase;">Virtuoso&reg; Member • IATA #992288</div>
     </div>
     <div style="text-align: right;">

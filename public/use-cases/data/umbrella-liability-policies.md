@@ -17,7 +17,7 @@ These policies are critical for **Asset Protection**. Fraud is high-stakes: high
 <div style="max-width: 650px; margin: 24px auto; font-family: sans-serif; border: 2px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="background: #000; color: #fff; padding: 25px; display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid #ce9e00;">
     <div>
-      <div style="font-weight: bold; font-size: 1.4em;" verifiable-text="start" data-for="umbrella"><span>[</span>CHUBB PERSONAL RISK</div>
+      <div style="font-weight: bold; font-size: 1.4em;"><span verifiable-text="start" data-for="umbrella">[</span>CHUBB PERSONAL RISK</div>
       <div style="font-size: 0.8em; opacity: 0.9; text-transform: uppercase;">Master Umbrella & Excess Liability</div>
     </div>
     <div style="font-size: 2em;">🛡️</div>

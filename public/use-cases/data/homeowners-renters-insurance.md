@@ -22,7 +22,7 @@ Fraud happens when owners "edit" the PDF to show a higher limit to satisfy a ban
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #007bff; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="background: #007bff; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="ho-dec"><span>[</span>STATE FARM 🔴</div>
+      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="ho-dec">[</span>STATE FARM 🔴</div>
       <div style="font-size: 0.8em; opacity: 0.9;">Homeowners Policy Declarations</div>
     </div>
     <div style="text-align: right;">
@@ -153,7 +153,7 @@ Fraud is common: dishonest contractors sometimes "edit" the PDF to add $5,000 in
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="background: #d32f2f; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="prop-claim"><span>[</span>ALLSTATE INSURANCE</div>
+      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="prop-claim">[</span>ALLSTATE INSURANCE</div>
       <div style="font-size: 0.8em;">Property Claims Services</div>
     </div>
     <div style="text-align: right;">
@@ -274,7 +274,7 @@ Because these papers are required for every mortgage, "Ghost Policy" fraud is a 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Helvetica', Arial, sans-serif; border: 2px solid #003366; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="background: #003366; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="ho-pol"><span>[</span>LIBERTY MUTUAL</div>
+      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="ho-pol">[</span>LIBERTY MUTUAL</div>
       <div style="font-size: 0.8em; opacity: 0.9;">Home & Tenant Protection Policy</div>
     </div>
     <div style="text-align: right;">

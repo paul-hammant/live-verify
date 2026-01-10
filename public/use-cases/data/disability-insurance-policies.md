@@ -19,7 +19,7 @@ Fraud is high-stakes here: scammers often edit a cheap "Any Occupation" policy t
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Helvetica', Arial, sans-serif; border: 2px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
   <div style="background: #000; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="dis-pol"><span>[</span>UNUM PROVIDENT</div>
+      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="dis-pol">[</span>UNUM PROVIDENT</div>
       <div style="font-size: 0.8em; opacity: 0.8;">Individual Income Protection</div>
     </div>
     <div style="text-align: right;">

@@ -17,7 +17,7 @@ These documents are the "Career Proof" for athletes and teams. They are used to 
 <div style="max-width: 650px; margin: 24px auto; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; border: 2px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #1a237e; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;" verifiable-text="start" data-for="bracket"><span>[</span>ELITE CHAMPIONSHIP SERIES</div>
+      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;"><span verifiable-text="start" data-for="bracket">[</span>ELITE CHAMPIONSHIP SERIES</div>
       <div style="font-size: 0.8em; opacity: 0.9;">Official Results & Final Standings</div>
     </div>
     <div style="text-align: right;">

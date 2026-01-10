@@ -11,7 +11,7 @@ furtherDerivations: 2
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1); overflow: hidden;">
   <div style="background: #002d62; color: #fff; padding: 20px; display: flex; align-items: center; justify-content: space-between;">
     <div>
-      <div style="font-weight: bold; font-size: 1.1em;" verifiable-text="start" data-for="kyc-id"><span>[</span>REVOLUT BANK</div>
+      <div style="font-weight: bold; font-size: 1.1em;"><span verifiable-text="start" data-for="kyc-id">[</span>REVOLUT BANK</div>
       <div style="font-size: 0.8em; opacity: 0.8;">Customer Onboarding & Identity Vetting</div>
     </div>
     <div style="font-size: 1.5em;">🏦</div>
@@ -117,7 +117,7 @@ _[Content merged from: kyc-proof-of-address]_
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #004a99; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="address"><span>[</span>CON-EDISON</div>
+      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="address">[</span>CON-EDISON</div>
       <div style="font-size: 0.8em; opacity: 0.8;">Utility Bill & Proof of Service</div>
     </div>
     <div style="text-align: right;">

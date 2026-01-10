@@ -18,7 +18,7 @@ No bank will lend money to a film set without seeing a verified bond. Fraudsters
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 4px solid #000; background: #fff; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 25px;">
-    <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 2px;" verifiable-text="start" data-for="film"><span>[</span>FILM FINANCES, INC.</div>
+    <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 2px;"><span verifiable-text="start" data-for="film">[</span>FILM FINANCES, INC.</div>
     <div style="font-size: 0.9em; margin-top: 5px;">A Completion Guaranty Company</div>
   </div>
 <h3 style="text-align: center; text-transform: uppercase; margin-bottom: 20px;">Completion Guaranty Certificate</h3>

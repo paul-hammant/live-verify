@@ -16,7 +16,7 @@ Without it, they're committing computer crimes. With it, they're performing a le
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #8B0000; background: #fff; padding: 0;">
   <div style="background: #8B0000; color: #fff; padding: 15px;">
-    <div style="font-weight: bold; font-size: 1.1em;" verifiable-text="start" data-for="securitytestingautho"><span>[</span>PENETRATION TEST AUTHORIZATION</div>
+    <div style="font-weight: bold; font-size: 1.1em;"><span verifiable-text="start" data-for="securitytestingautho">[</span>PENETRATION TEST AUTHORIZATION</div>
     <div style="font-size: 0.8em;">Security Testing Scope & Permission</div>
   </div>
   <div style="padding: 20px; font-size: 0.9em; line-height: 1.6;">

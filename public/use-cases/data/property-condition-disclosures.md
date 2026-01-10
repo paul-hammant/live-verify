@@ -17,7 +17,7 @@ These documents are the primary evidence in post-sale lawsuits. Fraud is high-fr
 <div style="max-width: 650px; margin: 24px auto; font-family: 'Helvetica Neue', Arial, sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #004d40; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 1px;" verifiable-text="start" data-for="disclose"><span>[</span>RESIDENTIAL PROPERTY DISCLOSURE</div>
+      <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 1px;"><span verifiable-text="start" data-for="disclose">[</span>RESIDENTIAL PROPERTY DISCLOSURE</div>
       <div style="font-size: 0.75em; opacity: 0.9;">STATE MANDATED SELLER STATEMENT</div>
     </div>
     <div style="font-size: 1.5em;">🏡</div>

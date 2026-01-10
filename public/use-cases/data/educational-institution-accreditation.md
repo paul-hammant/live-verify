@@ -21,7 +21,7 @@ In most countries, the government doesn't "Grade" universities. Instead, private
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 5px double #1a365d; background: #fdfcf0; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); position: relative;">
   <div style="text-align: center; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 2px; color: #1a365d;" verifiable-text="start" data-for="accred"><span>[</span>MIDDLE STATES COMMISSION ON HIGHER EDUCATION</div>
+    <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 2px; color: #1a365d;"><span verifiable-text="start" data-for="accred">[</span>MIDDLE STATES COMMISSION ON HIGHER EDUCATION</div>
     <div style="font-size: 0.85em; color: #666; margin-top: 5px;">CERTIFICATE OF ACCREDITATION</div>
   </div>
 <div style="font-size: 1.1em; line-height: 1.8; color: #333; text-align: center;">

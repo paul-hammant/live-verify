@@ -17,7 +17,7 @@ These documents are high-stakes environmental proofs. Fraud is common: owners of
 <div style="max-width: 650px; margin: 24px auto; font-family: sans-serif; border: 3px solid #2e7d32; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #2e7d32; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 1px;" verifiable-text="start" data-for="ust"><span>[</span>ENVIRONMENTAL PROTECTION AGENCY</div>
+      <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 1px;"><span verifiable-text="start" data-for="ust">[</span>ENVIRONMENTAL PROTECTION AGENCY</div>
       <div style="font-size: 0.8em; opacity: 0.9;">UST COMPLIANCE & SAFETY DIVISION</div>
     </div>
     <div style="font-size: 2em;">💧</div>

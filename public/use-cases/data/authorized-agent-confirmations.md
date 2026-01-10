@@ -44,7 +44,7 @@ When challenged by police, property owners, or bystanders, these agents need pro
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #8B0000; background: #fff; padding: 0;">
   <div style="background: #8B0000; color: #fff; padding: 15px;">
-    <div style="font-weight: bold; font-size: 1.1em;" verifiable-text="start" data-for="authorizedagentconfi"><span>[</span>VEHICLE RECOVERY AUTHORIZATION</div>
+    <div style="font-weight: bold; font-size: 1.1em;"><span verifiable-text="start" data-for="authorizedagentconfi">[</span>VEHICLE RECOVERY AUTHORIZATION</div>
     <div style="font-size: 0.8em;">Asset Recovery Order</div>
   </div>
   <div style="padding: 20px; font-size: 0.9em; line-height: 1.6;">

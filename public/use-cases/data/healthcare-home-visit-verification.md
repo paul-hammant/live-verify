@@ -23,7 +23,7 @@ The **Care Professional Badge** is their "Security Token." It proves:
   <div style="background: #0277bd; color: #fff; padding: 15px; text-align: center; display: flex; align-items: center; justify-content: center;">
     <div style="font-size: 1.5em; margin-right: 10px;">🩺</div>
     <div>
-      <h3 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;" verifiable-text="start" data-for="nurse"><span>[</span>BAYADA HOME HEALTH</h3>
+      <h3 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;"><span verifiable-text="start" data-for="nurse">[</span>BAYADA HOME HEALTH</h3>
       <div style="font-size: 0.8em; opacity: 0.8;">OFFICIAL CARE PROFESSIONAL</div>
     </div>
   </div>

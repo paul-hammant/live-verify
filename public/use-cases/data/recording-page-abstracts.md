@@ -18,7 +18,7 @@ These pages are the "Lifeblood of Title." Fraud is high-stakes: criminals create
   <div style="padding: 20px; border-bottom: 2px solid #000; display: flex; justify-content: space-between; align-items: flex-start; background: #fdfdfd;">
     <div style="width: 150px; border: 2px solid #000; padding: 10px; text-align: center; font-weight: bold; font-size: 0.8em; transform: rotate(-2deg);">
       RECORDED IN<br>OFFICIAL RECORDS<br>COUNTY OF COOK<br>
-      <div style="font-size: 1.2em; margin-top: 5px;" verifiable-text="start" data-for="record"><span>[</span>15 MAR 2026</div>
+      <div style="font-size: 1.2em; margin-top: 5px;"><span verifiable-text="start" data-for="record">[</span>15 MAR 2026</div>
     </div>
     <div style="text-align: right; font-size: 0.8em; line-height: 1.4;">
       <strong>INSTRUMENT #:</strong> 2026-R-992288<br>

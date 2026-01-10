@@ -18,7 +18,7 @@ Foreign governments (like Thailand or Spain) require these letters for visas. Be
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); position: relative;">
   <div style="text-align: center; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="consul"><span>[</span>EMBASSY OF THE UNITED STATES OF AMERICA</div>
+    <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="consul">[</span>EMBASSY OF THE UNITED STATES OF AMERICA</div>
     <div style="font-size: 0.9em; margin-top: 5px;">Consular Section • London, United Kingdom</div>
   </div>
 <div style="font-size: 1em; line-height: 1.6; color: #000; text-align: justify;">

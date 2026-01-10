@@ -17,7 +17,7 @@ These documents are the "Proof of Permission." Fraud is rampant in the "Copyrigh
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Helvetica Neue', Arial, sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="background: #000; color: #fff; padding: 25px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.5em; letter-spacing: 1px;" verifiable-text="start" data-for="photo"><span>[</span>GETTY IMAGES</div>
+      <div style="font-weight: bold; font-size: 1.5em; letter-spacing: 1px;"><span verifiable-text="start" data-for="photo">[</span>GETTY IMAGES</div>
       <div style="font-size: 0.75em; opacity: 0.8; text-transform: uppercase;">License Verification Certificate</div>
     </div>
     <div style="font-size: 2em;">📸</div>

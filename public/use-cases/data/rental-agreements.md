@@ -16,7 +16,7 @@ This sector is plagued by high-volume, low-trust disputes. **Damage Fraud** is t
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1); overflow: hidden;">
   <div style="background: #ffcc00; color: #000; padding: 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #000;">
-    <div style="font-weight: bold; font-size: 1.5em; letter-spacing: -1px;" verifiable-text="start" data-for="rental"><span>[</span>Hertz</div>
+    <div style="font-weight: bold; font-size: 1.5em; letter-spacing: -1px;"><span verifiable-text="start" data-for="rental">[</span>Hertz</div>
     <div style="text-align: right;">
       <div style="font-weight: bold; font-size: 0.9em;">RENTAL RECORD</div>
       <div style="font-size: 0.7em;">Ref: RA-99228877-XJ</div>

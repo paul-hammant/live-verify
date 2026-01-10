@@ -16,7 +16,7 @@ These labels are the "Seal of Survival." Fraud is common in the "Budget Market":
 
 <div style="max-width: 450px; margin: 24px auto; font-family: 'Helvetica Neue', Arial, sans-serif; border: 2px solid #333; border-radius: 8px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #000; color: #fff; padding: 15px; text-align: center; border-bottom: 2px solid #d32f2f;">
-    <h3 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;" verifiable-text="start" data-for="safety"><span>[</span>SAFETY CERTIFICATION</h3>
+    <h3 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;"><span verifiable-text="start" data-for="safety">[</span>SAFETY CERTIFICATION</h3>
     <div style="font-size: 0.7em; opacity: 0.8; margin-top: 5px;">NATIONAL OPERATING COMMITTEE ON STANDARDS FOR ATHLETIC EQUIPMENT</div>
   </div>
 <div style="padding: 20px;">

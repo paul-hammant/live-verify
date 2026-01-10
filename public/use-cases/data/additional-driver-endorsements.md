@@ -17,7 +17,7 @@ These documents are the "Permission to Drive." Fraud is high-frequency: individu
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #0056b3; border-radius: 8px; background: #fff; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
   <div style="background: #0056b3; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid #003d82;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="endorse"><span>[</span>SAFEGUARD INSURANCE</div>
+      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="endorse">[</span>SAFEGUARD INSURANCE</div>
       <div style="font-size: 0.75em; opacity: 0.9; text-transform: uppercase; letter-spacing: 1px;">Policy Amendment Certificate</div>
     </div>
     <div style="font-size: 2em;">🚗</div>

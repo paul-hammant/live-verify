@@ -18,7 +18,7 @@ Banks won't release construction loans without these papers. Fraud is common: co
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Helvetica', sans-serif; border: 2px solid #333; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #333; padding-bottom: 10px; margin-bottom: 20px;">
-    <h2 style="margin: 0; text-transform: uppercase; font-size: 1.2em;" verifiable-text="start" data-for="waiver"><span>[</span>Unconditional Waiver and Release on Progress Payment</h2>
+    <h2 style="margin: 0; text-transform: uppercase; font-size: 1.2em;"><span verifiable-text="start" data-for="waiver">[</span>Unconditional Waiver and Release on Progress Payment</h2>
   </div>
   <div style="font-size: 0.9em; line-height: 1.5; color: #333;">
     <p><strong>Project:</strong> Skyline Tower (Job #4921)<br>

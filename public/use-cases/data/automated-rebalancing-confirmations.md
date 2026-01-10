@@ -18,7 +18,7 @@ These trades happen by the thousands every second. An **Automated Rebalancing Co
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ddd; background: #fff; padding: 0; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
   <div style="background: #1a237e; color: #fff; padding: 20px; text-align: center;">
-    <h3 style="margin: 0; letter-spacing: 1px;" verifiable-text="start" data-for="rebal"><span>[</span>WEALTHFRONT REBALANCING NOTICE</h3>
+    <h3 style="margin: 0; letter-spacing: 1px;"><span verifiable-text="start" data-for="rebal">[</span>WEALTHFRONT REBALANCING NOTICE</h3>
     <div style="font-size: 0.8em; margin-top: 5px;">AUTOMATED PORTFOLIO MANAGEMENT</div>
   </div>
 <div style="padding: 30px;">

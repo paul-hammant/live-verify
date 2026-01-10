@@ -20,7 +20,7 @@ OCR-to-hash allows a family to scan the worker's ID card to verify: **"Is this a
   <div style="background: #2e7d32; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
     <div style="font-size: 1.8em; margin-right: 15px;">🏛️</div>
     <div style="text-align: right;">
-      <div style="font-weight: bold; font-size: 1.1em; letter-spacing: 1px;" verifiable-text="start" data-for="social"><span>[</span>STATE OF ILLINOIS</div>
+      <div style="font-weight: bold; font-size: 1.1em; letter-spacing: 1px;"><span verifiable-text="start" data-for="social">[</span>STATE OF ILLINOIS</div>
       <div style="font-size: 0.75em; font-weight: bold; opacity: 0.9;">DEPT. OF CHILDREN & FAMILY SERVICES</div>
     </div>
   </div>

@@ -18,7 +18,7 @@ Shippers often "Guess" the weight to save the $50 fee for a certified scale. Thi
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 1px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <div style="background: #002d62; color: #fff; padding: 10px; text-align: center;">
-    <h2 style="margin: 0; text-transform: uppercase; font-size: 1.2em;" verifiable-text="start" data-for="vgm"><span>[</span>SOLAS VGM DECLARATION</h2>
+    <h2 style="margin: 0; text-transform: uppercase; font-size: 1.2em;"><span verifiable-text="start" data-for="vgm">[</span>SOLAS VGM DECLARATION</h2>
     <div style="font-size: 0.8em;">Verified Gross Mass Certificate</div>
   </div>
 <div style="padding: 20px;">

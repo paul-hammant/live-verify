@@ -18,9 +18,9 @@ If a traveler loses this paper, or if an airline agent in Paris thinks it looks 
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fdfdfd; padding: 0;">
   <div style="background: #eef; padding: 15px; border-bottom: 1px solid #ccc; display: flex; align-items: center;">
-    <div style="width: 50px; height: 50px; background: #ccc; border-radius: 50%; margin-right: 15px; display: flex; align-items: center; justify-content: center; font-size: 0.8em; text-align: center;" verifiable-text="start" data-for="parole"><span>[</span>[Seal]</div>
+    <div style="width: 50px; height: 50px; background: #ccc; border-radius: 50%; margin-right: 15px; display: flex; align-items: center; justify-content: center; font-size: 0.8em; text-align: center;">[Seal]</div>
     <div>
-      <div style="font-weight: bold; font-size: 1.1em;">Department of Homeland Security</div>
+      <div style="font-weight: bold; font-size: 1.1em;"><span verifiable-text="start" data-for="parole">[</span>Department of Homeland Security</div>
       <div style="font-size: 0.9em;">U.S. Citizenship and Immigration Services</div>
     </div>
   </div>

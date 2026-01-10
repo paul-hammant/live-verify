@@ -17,7 +17,7 @@ These documents are the "Entry Ticket" to global trade. Fraud is high-stakes: ow
 <div style="max-width: 650px; margin: 24px auto; font-family: 'Times New Roman', Times, serif; border: 2px solid #002d62; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="background: #002d62; color: #fff; padding: 30px; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid #000;">
     <div>
-      <div style="font-weight: bold; font-size: 1.5em; letter-spacing: 1px;" verifiable-text="start" data-for="pi"><span>[</span>THE UK P&I CLUB</div>
+      <div style="font-weight: bold; font-size: 1.5em; letter-spacing: 1px;"><span verifiable-text="start" data-for="pi">[</span>THE UK P&I CLUB</div>
       <div style="font-size: 0.8em; opacity: 0.9; text-transform: uppercase;">Member of the International Group of P&I Clubs</div>
     </div>
     <div style="font-size: 2em;">⚓</div>

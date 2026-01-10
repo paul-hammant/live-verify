@@ -16,7 +16,7 @@ These documents are the "Keys to the Cap Table." Fraud is high-stakes: a founder
 
 <div style="max-width: 650px; margin: 24px auto; font-family: 'Times New Roman', Times, serif; border: 1px solid #999; background: #fff; padding: 50px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.4em; text-transform: uppercase; letter-spacing: 1px;" verifiable-text="start" data-for="safe"><span>[</span>Simple Agreement for Future Equity</div>
+    <div style="font-weight: bold; font-size: 1.4em; text-transform: uppercase; letter-spacing: 1px;"><span verifiable-text="start" data-for="safe">[</span>Simple Agreement for Future Equity</div>
     <div style="font-size: 1em; font-style: italic;">(Post-Money Valuation Cap)</div>
   </div>
 <div style="font-size: 1.1em; line-height: 1.6; color: #000; text-align: justify;">

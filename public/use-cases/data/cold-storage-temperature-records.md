@@ -18,7 +18,7 @@ If a shipment hits a "Temperature Spike" (Excursion), the product might be ruine
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 2px solid #0277bd; background: #fff; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #0277bd; padding-bottom: 10px; margin-bottom: 20px;">
-    <strong verifiable-text="start" data-for="cold"><span>[</span>ARCTIC LOGISTICS SOLUTIONS</strong><br>
+    <strong><span verifiable-text="start" data-for="cold">[</span>ARCTIC LOGISTICS SOLUTIONS</strong><br>
     CERTIFIED COLD CHAIN COMPLIANCE REPORT<br>
     ---------------------------------------
   </div>

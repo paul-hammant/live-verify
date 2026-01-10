@@ -20,7 +20,7 @@ Doctors in the ER need to see this *immediately* to know whether to resuscitate.
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Arial', sans-serif; border: 2px solid #000; background: #fff; padding: 30px;">
   <div style="text-align: center; border-bottom: 2px solid #000; margin-bottom: 20px;">
-    <h2 style="margin: 0;" verifiable-text="start" data-for="directive"><span>[</span>ADVANCE HEALTH CARE DIRECTIVE</h2>
+    <h2 style="margin: 0;"><span verifiable-text="start" data-for="directive">[</span>ADVANCE HEALTH CARE DIRECTIVE</h2>
     <div style="font-size: 0.9em; margin-bottom: 10px;">(California Probate Code §4701)</div>
   </div>
 <div style="font-size: 0.95em; line-height: 1.5; color: #333;">

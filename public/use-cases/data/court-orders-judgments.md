@@ -24,7 +24,7 @@ OCR-to-hash binds the **Judge's name, the Case ID, and the exact verdict text** 
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 1px solid #333; background: #fff; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="text-align: center; margin-bottom: 30px;">
-    <div style="font-size: 1.4em; font-weight: bold; text-transform: uppercase;" verifiable-text="start" data-for="court"><span>[</span>In the Superior Court of the State of Delaware</div>
+    <div style="font-size: 1.4em; font-weight: bold; text-transform: uppercase;"><span verifiable-text="start" data-for="court">[</span>In the Superior Court of the State of Delaware</div>
     <div style="font-size: 0.9em; letter-spacing: 1px;">IN AND FOR NEW CASTLE COUNTY</div>
   </div>
 <div style="display: flex; justify-content: space-between; margin-bottom: 20px; font-size: 0.95em;">

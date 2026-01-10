@@ -18,7 +18,7 @@ Because these shares aren't traded on the stock market (like Apple or Tesla), th
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 4px double #1a237e; background: #fff; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); position: relative;">
   <div style="text-align: center; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 2px;" verifiable-text="start" data-for="equity"><span>[</span>CERTIFICATE OF STOCK</div>
+    <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 2px;"><span verifiable-text="start" data-for="equity">[</span>CERTIFICATE OF STOCK</div>
     <div style="font-size: 0.9em; margin-top: 5px;">INCORPORATED UNDER THE LAWS OF DELAWARE</div>
   </div>
 <div style="font-size: 1em; line-height: 1.6; color: #333; text-align: center;">

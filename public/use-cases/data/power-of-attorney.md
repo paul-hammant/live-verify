@@ -21,7 +21,7 @@ It is one of the most powerful—and dangerous—documents in law. It allows an 
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 1px solid #333; background: #fff; padding: 40px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 30px;">
-    <h1 style="margin: 0; font-size: 1.6em; text-transform: uppercase; letter-spacing: 1px;" verifiable-text="start" data-for="poa"><span>[</span>Durable Power of Attorney</h1>
+    <h1 style="margin: 0; font-size: 1.6em; text-transform: uppercase; letter-spacing: 1px;"><span verifiable-text="start" data-for="poa">[</span>Durable Power of Attorney</h1>
   </div>
 <div style="font-size: 1em; line-height: 1.6; color: #000;">
     <p>I, <strong>MARGARET A. WILLOWS</strong>, a resident of Cook County, IL, hereby appoint <strong>STEVEN J. WILLOWS</strong> as my true and lawful attorney-in-fact.</p>

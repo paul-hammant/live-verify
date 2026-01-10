@@ -128,8 +128,8 @@ You can't just take someone's word for it. But you can ask the entities that *wo
     THIRD-PARTY PAYMENT CONFIRMATIONS
   </div>
   <div style="font-size: 0.85em; line-height: 1.8;">
-    <p><strong>Re:</strong> Dr. Sarah Chen, MD (NPI: 1234567890)</p>
-    <p verifiable-text="start" data-for="compensationconflict"><span>[</span><strong>Period:</strong> Calendar Year 2025</p>
+    <p><strong><span verifiable-text="start" data-for="compensationconflict">[</span>Re:</strong> Dr. Sarah Chen, MD (NPI: 1234567890)</p>
+    <p><strong>Period:</strong> Calendar Year 2025</p>
 <div style="margin: 15px 0; padding: 10px; background: #fff; border: 1px dashed #666;">
       <p style="margin: 0;"><strong>Pfizer Inc.</strong> — $0.00 paid</p>
       <p style="margin: 5px 0;"><strong>Merck & Co.</strong> — $0.00 paid</p>

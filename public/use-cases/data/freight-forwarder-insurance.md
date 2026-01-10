@@ -19,7 +19,7 @@ Big shippers (like Apple or Samsung) will not hire a forwarder without verified 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #0d47a1; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="background: #0d47a1; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="forward"><span>[</span>TT CLUB</div>
+      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="forward">[</span>TT CLUB</div>
       <div style="font-size: 0.8em; opacity: 0.8;">Specialist Logistics Underwriters</div>
     </div>
     <div style="text-align: right;">

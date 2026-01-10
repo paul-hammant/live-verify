@@ -18,7 +18,7 @@ For business travelers, this receipt is critical for **Expense Audits**. It prov
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 2px solid #a3b18a; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
   <div style="text-align: center; border-bottom: 1px solid #a3b18a; padding-bottom: 10px; margin-bottom: 25px;">
-    <div style="font-weight: bold; font-size: 1.4em; color: #3a5a40;" verifiable-text="start" data-for="hotel-cancel"><span>[</span>THE GRAND HOTEL - PARIS</div>
+    <div style="font-weight: bold; font-size: 1.4em; color: #3a5a40;"><span verifiable-text="start" data-for="hotel-cancel">[</span>THE GRAND HOTEL - PARIS</div>
     <div style="font-size: 0.85em; color: #588157; margin-top: 5px;">OFFICIAL CANCELLATION NOTICE</div>
   </div>
 <div style="font-size: 1em; line-height: 1.6; color: #333; text-align: justify;">
@@ -122,7 +122,7 @@ A **Verified Confirmation** from the hotel's domain ends the argument instantly.
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #d4af37; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
   <div style="background: #1a1a1a; color: #d4af37; padding: 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #d4af37;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 1px;" verifiable-text="start" data-for="upgrade"><span>[</span>THE RITZ-CARLTON</div>
+      <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 1px;"><span verifiable-text="start" data-for="upgrade">[</span>THE RITZ-CARLTON</div>
       <div style="font-size: 0.8em; color: #fff;">Official Suite Upgrade Confirmation</div>
     </div>
     <div style="font-size: 1.5em;">✨</div>
@@ -245,7 +245,7 @@ You need this verified proof for a **"Status Match"**—where a rival hotel give
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #002d62; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="hotel-loy"><span>[</span>MARRIOTT BONVOY™</div>
+      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="hotel-loy">[</span>MARRIOTT BONVOY™</div>
       <div style="font-size: 0.8em; opacity: 0.8;">Official Member Statement</div>
     </div>
     <div style="text-align: right;">

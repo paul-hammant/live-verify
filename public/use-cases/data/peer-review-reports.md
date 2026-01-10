@@ -16,7 +16,7 @@ These reports are the "Gold Standard" of credibility. Researchers use them to se
 
 <div style="max-width: 650px; margin: 24px auto; font-family: 'Times New Roman', Times, serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 20px; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.4em; color: #003366; letter-spacing: 1px;" verifiable-text="start" data-for="peer"><span>[</span>JOURNAL OF QUANTUM PHYSICS</div>
+    <div style="font-weight: bold; font-size: 1.4em; color: #003366; letter-spacing: 1px;"><span verifiable-text="start" data-for="peer">[</span>JOURNAL OF QUANTUM PHYSICS</div>
     <div style="font-size: 0.85em; text-transform: uppercase;">Official Editorial Decision Letter</div>
   </div>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">

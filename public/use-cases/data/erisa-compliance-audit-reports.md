@@ -18,7 +18,7 @@ If a company is in financial trouble, they might "Edit" this report to hide a fu
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #333; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="text-align: right; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="erisa"><span>[</span>MILLIMAN ACTUARIAL CONSULTING</div>
+    <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="erisa">[</span>MILLIMAN ACTUARIAL CONSULTING</div>
     <div style="font-size: 0.85em; color: #666;">Certified ERISA Audit Group</div>
   </div>
 <h3 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; color: #000; border-bottom: 2px solid #000; padding-bottom: 10px;">ERISA Compliance Audit Report</h3>

@@ -18,7 +18,7 @@ This number is the lifeblood of the insurance market. Reinsurers use it to decid
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Helvetica Neue', Helvetica, sans-serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.2em; color: #000;" verifiable-text="start" data-for="pml"><span>[</span>RMS (Risk Management Solutions)</div>
+    <div style="font-weight: bold; font-size: 1.2em; color: #000;"><span verifiable-text="start" data-for="pml">[</span>RMS (Risk Management Solutions)</div>
     <div style="text-align: right; font-size: 0.8em; color: #666;">
       Model Version: 21.0 (RiskLink)<br>
       March 15, 2026

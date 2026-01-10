@@ -19,7 +19,7 @@ Because these claims can hit 20 years after a person retires, the paperwork must
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 2px solid #2c3e50; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="background: #2c3e50; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="pension"><span>[</span>AXA XL INSURANCE</div>
+      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="pension">[</span>AXA XL INSURANCE</div>
       <div style="font-size: 0.8em; opacity: 0.8;">Fiduciary & Pension Trustee Liability</div>
     </div>
     <div style="text-align: right;">

@@ -10,7 +10,7 @@ furtherDerivations: 1
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 2px 2px 10px rgba(0,0,0,0.05);">
   <div style="text-align: right; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.4em; color: #000;" verifiable-text="start" data-for="auction"><span>[</span>PHILLIPS</div>
+    <div style="font-weight: bold; font-size: 1.4em; color: #000;"><span verifiable-text="start" data-for="auction">[</span>PHILLIPS</div>
     <div style="font-size: 0.8em; color: #666;">NEW YORK • 432 PARK AVENUE</div>
   </div>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">

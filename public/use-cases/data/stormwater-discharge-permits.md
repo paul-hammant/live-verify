@@ -17,7 +17,7 @@ These permits are the "Permission to Pollute" within legal bounds. Fraud is comm
 <div style="max-width: 650px; margin: 24px auto; font-family: sans-serif; border: 3px solid #002d62; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #002d62; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 1px;" verifiable-text="start" data-for="water"><span>[</span>STATE ENVIRONMENTAL BOARD</div>
+      <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 1px;"><span verifiable-text="start" data-for="water">[</span>STATE ENVIRONMENTAL BOARD</div>
       <div style="font-size: 0.8em; opacity: 0.9; text-transform: uppercase;">Stormwater General Permit (NPDES)</div>
     </div>
     <div style="font-size: 2em;">💧</div>

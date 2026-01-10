@@ -20,7 +20,7 @@ An **Elevation Certificate** is the official paper from a licensed surveyor that
   <div style="background: #000; color: #fff; padding: 15px; text-align: center; display: flex; align-items: center; justify-content: center;">
     <div style="font-size: 1.5em; margin-right: 15px;">🌊</div>
     <div>
-      <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;" verifiable-text="start" data-for="flood"><span>[</span>ELEVATION CERTIFICATE</h2>
+      <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;"><span verifiable-text="start" data-for="flood">[</span>ELEVATION CERTIFICATE</h2>
       <div style="font-size: 0.8em; opacity: 0.8;">FEDERAL EMERGENCY MANAGEMENT AGENCY (FEMA)</div>
     </div>
   </div>

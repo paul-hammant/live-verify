@@ -10,7 +10,7 @@ furtherDerivations: 1
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 1px solid #000; background: #fff; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
-    <strong verifiable-text="start" data-for="eir"><span>[</span>GLOBAL TERMINAL OPERATORS</strong><br>
+    <strong><span verifiable-text="start" data-for="eir">[</span>GLOBAL TERMINAL OPERATORS</strong><br>
     EQUIPMENT INTERCHANGE RECEIPT (EIR)<br>
     -------------------------------------
   </div>

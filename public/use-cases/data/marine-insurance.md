@@ -10,7 +10,7 @@ furtherDerivations: 3
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 2px solid #002d62; background: #fff; padding: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <div style="background: #002d62; color: #fff; padding: 10px; display: flex; justify-content: space-between; align-items: center;">
-    <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="cargo-ins"><span>[</span>ALLIANZ MARINE & TRANSIT</div>
+    <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="cargo-ins">[</span>ALLIANZ MARINE & TRANSIT</div>
     <div style="font-size: 0.8em; text-align: right;">Certificate #: AZ-998877-MAR</div>
   </div>
 <div style="padding: 15px; font-size: 0.85em;">
@@ -120,7 +120,7 @@ _[Content merged from: marine-hull-machinery]_
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 2px solid #002366; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="background: #002366; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="hull-ins"><span>[</span>GARD MARINE & ENERGY</div>
+      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="hull-ins">[</span>GARD MARINE & ENERGY</div>
       <div style="font-size: 0.8em; opacity: 0.8;">Specialist Hull & Machinery Underwriters</div>
     </div>
     <div style="text-align: right;">
@@ -232,7 +232,7 @@ Thieves use "Fake P&I Papers" to sneak dangerous or uninsured ships into ports. 
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 2px solid #002366; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #002366; padding-bottom: 10px; margin-bottom: 20px;">
-    <h2 style="margin: 0; text-transform: uppercase;" verifiable-text="start" data-for="pi"><span>[</span>THE LONDON P&I CLUB</h2>
+    <h2 style="margin: 0; text-transform: uppercase;"><span verifiable-text="start" data-for="pi">[</span>THE LONDON P&I CLUB</h2>
   </div>
   <div style="font-size: 1.1em; line-height: 1.6;">
     <p><strong>Vessel:</strong> MV OCEAN VOYAGER (IMO #9988776)<br>

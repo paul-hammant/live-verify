@@ -18,7 +18,7 @@ Because the stakes are so high, every crane must be professionally inspected eve
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 4px solid #fbc02d; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #fbc02d; color: #000; padding: 15px; text-align: center;">
-    <h2 style="margin: 0; text-transform: uppercase;" verifiable-text="start" data-for="crane"><span>[</span>HEAVY LIFT INSPECTION SERVICES</h2>
+    <h2 style="margin: 0; text-transform: uppercase;"><span verifiable-text="start" data-for="crane">[</span>HEAVY LIFT INSPECTION SERVICES</h2>
     <div style="font-size: 0.8em; font-weight: bold;">CERTIFIED ACCREDITED CRANE INSPECTOR</div>
   </div>
 <div style="padding: 25px;">

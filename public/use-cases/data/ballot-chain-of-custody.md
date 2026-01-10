@@ -21,7 +21,7 @@ If a box arrives at the counting center with a different count or seal than what
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #eee; padding: 15px; border-bottom: 2px solid #000; display: flex; justify-content: space-between; align-items: center;">
-    <div style="font-weight: bold; font-size: 1.1em;" verifiable-text="start" data-for="ballot"><span>[</span>MARICOPA COUNTY ELECTIONS</div>
+    <div style="font-weight: bold; font-size: 1.1em;"><span verifiable-text="start" data-for="ballot">[</span>MARICOPA COUNTY ELECTIONS</div>
     <div style="font-size: 0.9em; font-weight: bold;">TRANSFER FORM #99228</div>
   </div>
 <div style="padding: 25px;">

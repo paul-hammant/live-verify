@@ -20,7 +20,7 @@ OCR-to-hash allows a driver to scan an officer's ID badge or the verification li
   <div style="background: #efcc00; color: #000; padding: 15px; display: flex; align-items: center; border-bottom: 2px solid #444;">
     <div style="font-size: 1.8em; margin-right: 15px;">🏙️</div>
     <div>
-      <div style="font-weight: bold; font-size: 1.1em; letter-spacing: 1px;" verifiable-text="start" data-for="park-off"><span>[</span>CITY OF SAN FRANCISCO</div>
+      <div style="font-weight: bold; font-size: 1.1em; letter-spacing: 1px;"><span verifiable-text="start" data-for="park-off">[</span>CITY OF SAN FRANCISCO</div>
       <div style="font-size: 0.75em; font-weight: bold; opacity: 0.8;">MUNICIPAL TRANSPORTATION AGENCY</div>
     </div>
   </div>

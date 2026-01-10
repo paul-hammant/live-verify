@@ -10,7 +10,7 @@ furtherDerivations: 1
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #000; color: #fff; padding: 20px; text-align: left;">
-    <div style="font-weight: bold; font-size: 1.4em;" verifiable-text="start" data-for="bnpl"><span>[</span>Affirm</div>
+    <div style="font-weight: bold; font-size: 1.4em;"><span verifiable-text="start" data-for="bnpl">[</span>Affirm</div>
     <div style="font-size: 0.8em; opacity: 0.8;">LOAN AGREEMENT & TRUTH IN LENDING DISCLOSURE</div>
   </div>
 <div style="padding: 25px;">

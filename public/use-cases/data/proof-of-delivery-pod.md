@@ -16,7 +16,7 @@ Fraud is rampant in high-value shipping (electronics, pharmaceuticals). Dishones
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #ffcc00; color: #000; padding: 15px; display: flex; justify-content: space-between; align-items: center;">
-    <div style="font-weight: bold; font-size: 1.5em; letter-spacing: -1px;" verifiable-text="start" data-for="pod"><span>[</span>DHL EXPRESS</div>
+    <div style="font-weight: bold; font-size: 1.5em; letter-spacing: -1px;"><span verifiable-text="start" data-for="pod">[</span>DHL EXPRESS</div>
     <div style="text-align: right;">
       <div style="font-weight: bold; font-size: 0.9em;">DELIVERY RECEIPT</div>
       <div style="font-size: 0.7em;">Official Record of Handoff</div>

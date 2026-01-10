@@ -18,7 +18,7 @@ If there is a gap in the log (a "Broken Chain"), the evidence might be thrown ou
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 2px solid #555; background: #fdfdfd; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px dashed #555; padding-bottom: 10px; margin-bottom: 20px;">
-    <strong verifiable-text="start" data-for="custody"><span>[</span>EVIDENCE TRANSFER RECORD</strong><br>
+    <strong><span verifiable-text="start" data-for="custody">[</span>EVIDENCE TRANSFER RECORD</strong><br>
     STATE FORENSIC LABORATORY
   </div>
 <div style="font-size: 0.85em; line-height: 1.6;">

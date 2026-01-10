@@ -20,7 +20,7 @@ OCR-to-Hash allows a homeowner to scan the badge at the door and see a green "AC
   <div style="background: #1a237e; color: #fff; padding: 15px; text-align: center; display: flex; align-items: center; justify-content: center;">
     <div style="font-size: 1.5em; margin-right: 10px;">🏛</div>
     <div>
-      <h3 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;" verifiable-text="start" data-for="inspect"><span>[</span>CITY OF CHICAGO</h3>
+      <h3 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;"><span verifiable-text="start" data-for="inspect">[</span>CITY OF CHICAGO</h3>
       <div style="font-size: 0.8em;">DEPARTMENT OF BUILDINGS</div>
     </div>
   </div>

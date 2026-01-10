@@ -18,7 +18,7 @@ In high-stakes trials, lawyers sometimes "Edit" the expert's findings in the fin
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
   <div style="text-align: right; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="expert"><span>[</span>ROUX FORENSIC ENGINEERING</div>
+    <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="expert">[</span>ROUX FORENSIC ENGINEERING</div>
     <div style="font-size: 0.8em; color: #666;">Structural Failures • Accident Reconstruction</div>
   </div>
 <h3 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px;">Rule 26 Expert Report</h3>

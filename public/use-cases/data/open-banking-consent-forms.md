@@ -22,7 +22,7 @@ The **Consent Form** is the legal receipt for this digital handshake. It proves:
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ddd; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1); overflow: hidden;">
   <div style="background: #004d40; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="ob-consent"><span>[</span>HSBC OPEN BANKING</div>
+      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="ob-consent">[</span>HSBC OPEN BANKING</div>
       <div style="font-size: 0.8em; opacity: 0.8;">Secure Data Sharing Receipt</div>
     </div>
     <div style="font-size: 1.2em;">🔓</div>

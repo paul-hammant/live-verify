@@ -17,7 +17,7 @@ These documents are the "Green Light" for global trade. Fraud is high-stakes: a 
 <div style="max-width: 650px; margin: 24px auto; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #003366; color: #fff; padding: 25px; display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid #ce9e00;">
     <div>
-      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;" verifiable-text="start" data-for="credit"><span>[</span>ALLIANZ TRADE</div>
+      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;"><span verifiable-text="start" data-for="credit">[</span>ALLIANZ TRADE</div>
       <div style="font-size: 0.8em; opacity: 0.9; text-transform: uppercase;">Credit Risk Management & TCI</div>
     </div>
     <div style="font-size: 2em;">📈</div>

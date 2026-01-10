@@ -18,7 +18,7 @@ These postings are the primary defense against "Ghost Taxis"—unlicensed cars t
   <div style="background: #ffcc00; color: #000; padding: 15px; display: flex; align-items: center; border-bottom: 2px solid #000;">
     <div style="font-size: 1.8em; margin-right: 15px;">🚕</div>
     <div>
-      <div style="font-weight: bold; font-size: 1.1em; letter-spacing: 1px;" verifiable-text="start" data-for="taxi"><span>[</span>TAXI & LIMOUSINE COMM.</div>
+      <div style="font-weight: bold; font-size: 1.1em; letter-spacing: 1px;"><span verifiable-text="start" data-for="taxi">[</span>TAXI & LIMOUSINE COMM.</div>
       <div style="font-size: 0.75em; font-weight: bold; opacity: 0.8;">OFFICIAL FOR-HIRE PERMIT</div>
     </div>
   </div>

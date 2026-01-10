@@ -130,7 +130,7 @@ Because they represent high-value physical assets, these receipts are a primary 
 
 <div style="max-width: 650px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 4px double #333; background: #fffbe6; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="padding: 25px; border-bottom: 2px solid #000; text-align: center; background: #fffbe6;">
-    <div style="font-weight: bold; font-size: 1.4em;" verifiable-text="start" data-for="warehouse"><span>[</span>METRO STORAGE & LOGISTICS</div>
+    <div style="font-weight: bold; font-size: 1.4em;"><span verifiable-text="start" data-for="warehouse">[</span>METRO STORAGE & LOGISTICS</div>
     <div style="font-size: 0.8em; opacity: 0.9;">Global Bonded Warehousing • Facility ID: ROT-42</div>
   </div>
 <div style="padding: 20px;">

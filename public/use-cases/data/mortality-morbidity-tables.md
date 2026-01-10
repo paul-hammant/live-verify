@@ -10,7 +10,7 @@ furtherDerivations: 1
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 1px solid #333; background: #fff; padding: 40px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.1em; color: #1a237e;" verifiable-text="start" data-for="mortality"><span>[</span>SOCIETY OF ACTUARIES (SOA)</div>
+    <div style="font-weight: bold; font-size: 1.1em; color: #1a237e;"><span verifiable-text="start" data-for="mortality">[</span>SOCIETY OF ACTUARIES (SOA)</div>
     <div style="text-align: right; font-size: 0.8em; color: #666;">
       Standard ID: MORT-2026-V1<br>
       March 15, 2026

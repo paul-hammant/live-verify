@@ -16,7 +16,7 @@ A **Verified Coverage Guarantee** is a specific, timestamped attestation by the 
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Arial', sans-serif; border: 2px solid #000; background: #fff; padding: 20px;">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
-    <h2 style="margin: 0;" verifiable-text="start" data-for="net"><span>[</span>VERIZONIA WIRELESS</h2>
+    <h2 style="margin: 0;"><span verifiable-text="start" data-for="net">[</span>VERIZONIA WIRELESS</h2>
     <div style="font-size: 0.9em; color: #555;">Coverage Certification</div>
   </div>
 <div style="font-family: 'Courier New', monospace; font-size: 0.95em;">

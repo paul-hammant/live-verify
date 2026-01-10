@@ -17,7 +17,7 @@ These reports are the "Final Settlement" for a vehicle. Fraud is high-volume: cl
 <div style="max-width: 650px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #333; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid #ce9e00;">
     <div>
-      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;" verifiable-text="start" data-for="total-loss"><span>[</span>CCC ONE&reg; VALUATION</div>
+      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;"><span verifiable-text="start" data-for="total-loss">[</span>CCC ONE&reg; VALUATION</div>
       <div style="font-size: 0.8em; opacity: 0.9; text-transform: uppercase;">Official Market Valuation Report</div>
     </div>
     <div style="width: 50px; height: 50px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #333; font-weight: bold; font-size: 0.7em;">CCC</div>

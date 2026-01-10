@@ -19,7 +19,7 @@ Fraudsters often create fake notices to get people into high-security zones or t
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #002d62; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
     <div>
-      <div style="font-weight: bold; font-size: 1.1em;" verifiable-text="start" data-for="consul-app"><span>[</span>U.S. DEPARTMENT OF STATE</div>
+      <div style="font-weight: bold; font-size: 1.1em;"><span verifiable-text="start" data-for="consul-app">[</span>U.S. DEPARTMENT OF STATE</div>
       <div style="font-size: 0.8em;">National Visa Center (NVC)</div>
     </div>
     <div style="width: 40px; height: 40px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #002d62; font-weight: bold; font-size: 0.7em; text-align: center;">DOS</div>

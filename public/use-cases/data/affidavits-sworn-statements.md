@@ -18,7 +18,7 @@ In the "Robo-Signing" scandal of 2008, banks forged millions of affidavits to fo
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 2px 2px 8px rgba(0,0,0,0.1);">
   <div style="text-align: center; margin-bottom: 20px;">
-    <h3 style="text-decoration: underline; text-transform: uppercase;" verifiable-text="start" data-for="affidavit"><span>[</span>AFFIDAVIT OF IDENTITY</h3>
+    <h3 style="text-decoration: underline; text-transform: uppercase;"><span verifiable-text="start" data-for="affidavit">[</span>AFFIDAVIT OF IDENTITY</h3>
   </div>
 <div style="font-size: 0.95em; line-height: 1.6; text-align: justify;">
     <p>STATE OF NEW YORK )<br>

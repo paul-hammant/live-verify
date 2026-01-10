@@ -18,7 +18,7 @@ Verified hashes allow the IRS to scan a receipt and see "VERIFIED" on the charit
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 25px;">
-    <div style="font-weight: bold; font-size: 1.4em;" verifiable-text="start" data-for="donate"><span>[</span>AMERICAN RED CROSS</div>
+    <div style="font-weight: bold; font-size: 1.4em;"><span verifiable-text="start" data-for="donate">[</span>AMERICAN RED CROSS</div>
     <div style="font-size: 0.85em; color: #666;">OFFICIAL CHARITABLE CONTRIBUTION RECEIPT</div>
   </div>
 <div style="font-size: 1em; line-height: 1.6; color: #333;">

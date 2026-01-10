@@ -19,7 +19,7 @@ Because these credits are mandatory, some busy professionals "Fake" the certific
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 4px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="padding: 40px; text-align: center; border: 1px solid #ccc; margin: 10px;">
     <div style="margin-bottom: 20px;">
-      <div style="font-size: 1.4em; font-weight: bold; letter-spacing: 1px;" verifiable-text="start" data-for="cle"><span>[</span>CERTIFICATE OF ATTENDANCE</div>
+      <div style="font-size: 1.4em; font-weight: bold; letter-spacing: 1px;"><span verifiable-text="start" data-for="cle">[</span>CERTIFICATE OF ATTENDANCE</div>
       <div style="font-size: 0.9em; font-style: italic;">Continuing Legal Education (CLE)</div>
     </div>
 <div style="margin: 30px 0;">

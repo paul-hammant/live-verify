@@ -17,7 +17,7 @@ Because these statements determine the distribution of millions of dollars, they
 <div style="max-width: 650px; margin: 24px auto; font-family: 'Times New Roman', Times, serif; border: 1px solid #666; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="padding: 30px; border-bottom: 2px solid #000; display: flex; justify-content: space-between; align-items: flex-end;">
     <div>
-      <div style="font-weight: bold; font-size: 1.4em; text-transform: uppercase; letter-spacing: 1px;" verifiable-text="start" data-for="royalty"><span>[</span>Penguin Random House</div>
+      <div style="font-weight: bold; font-size: 1.4em; text-transform: uppercase; letter-spacing: 1px;"><span verifiable-text="start" data-for="royalty">[</span>Penguin Random House</div>
       <div style="font-size: 0.8em; color: #555;">Global Royalty & Accounting Office</div>
     </div>
     <div style="text-align: right;">

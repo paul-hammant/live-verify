@@ -10,7 +10,7 @@ furtherDerivations: 1
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="text-align: right; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.2em; color: #003366;" verifiable-text="start" data-for="life-claim"><span>[</span>NORTHWESTERN MUTUAL</div>
+    <div style="font-weight: bold; font-size: 1.2em; color: #003366;"><span verifiable-text="start" data-for="life-claim">[</span>NORTHWESTERN MUTUAL</div>
     <div style="font-size: 0.85em; color: #666;">Life Claims Adjudication Office</div>
   </div>
 <h3 style="text-align: center; text-transform: uppercase; margin-bottom: 25px; letter-spacing: 1px;">Notice of Claim Approval</h3>

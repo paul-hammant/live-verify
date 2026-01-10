@@ -19,7 +19,7 @@ These documents are presented to schools, police, doctors, and passport agents. 
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 2px 2px 10px rgba(0,0,0,0.1);">
   <div style="text-align: center; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.2em; text-transform: uppercase;" verifiable-text="start" data-for="custody"><span>[</span>In the Circuit Court of Cook County, Illinois</div>
+    <div style="font-weight: bold; font-size: 1.2em; text-transform: uppercase;"><span verifiable-text="start" data-for="custody">[</span>In the Circuit Court of Cook County, Illinois</div>
     <div style="font-size: 1em; margin-top: 5px;">County Department, Domestic Relations Division</div>
   </div>
 <div style="display: flex; justify-content: space-between; margin-bottom: 30px;">

@@ -10,7 +10,7 @@ furtherDerivations: 1
 
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #b71c1c; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
   <div style="background: #b71c1c; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
-    <div style="font-weight: bold; font-size: 1.1em;" verifiable-text="start" data-for="blood"><span>[</span>AMERICAN RED CROSS</div>
+    <div style="font-weight: bold; font-size: 1.1em;"><span verifiable-text="start" data-for="blood">[</span>AMERICAN RED CROSS</div>
     <div style="font-size: 1.5em;">🩸</div>
   </div>
 <div style="padding: 20px;">

@@ -21,7 +21,7 @@ Fraud is rampant in the "Direct Booking" market. Scammers create "Phantom Listin
       <div style="font-weight: bold; font-size: 1.2em; letter-spacing: -0.5px;">airbnb</div>
     </div>
     <div style="text-align: right;">
-      <div style="font-weight: bold; font-size: 0.9em;" verifiable-text="start" data-for="rental"><span>[</span>RESERVATION CONFIRMED</div>
+      <div style="font-weight: bold; font-size: 0.9em;"><span verifiable-text="start" data-for="rental">[</span>RESERVATION CONFIRMED</div>
       <div style="font-size: 0.7em; opacity: 0.9;">Ref: HM-99228877</div>
     </div>
   </div>

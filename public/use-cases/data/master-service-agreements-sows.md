@@ -10,7 +10,7 @@ furtherDerivations: 1
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 25px;">
-    <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="msa"><span>[</span>MASTER SERVICE AGREEMENT</div>
+    <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="msa">[</span>MASTER SERVICE AGREEMENT</div>
     <div style="font-size: 0.9em; margin-top: 5px;">BETWEEN THE PARTIES NAMED HEREIN</div>
   </div>
 <div style="font-size: 1em; line-height: 1.6; color: #333; text-align: justify;">

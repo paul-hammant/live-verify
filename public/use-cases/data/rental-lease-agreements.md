@@ -21,7 +21,7 @@ Beyond the relationship between the two parties, a lease is used by third partie
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.2em; color: #2c3e50;" verifiable-text="start" data-for="lease"><span>[</span>SKYLINE PROPERTY MGMT</div>
+    <div style="font-weight: bold; font-size: 1.2em; color: #2c3e50;"><span verifiable-text="start" data-for="lease">[</span>SKYLINE PROPERTY MGMT</div>
     <div style="text-align: right; font-size: 0.8em; color: #666;">
       Agreement ID: L-992288-26<br>
       March 15, 2026

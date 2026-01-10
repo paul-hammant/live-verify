@@ -28,7 +28,7 @@ The current system relies on self-declaration and trust. Criminals exploit this 
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #003366; background: #fff; padding: 0;">
   <div style="background: #003366; color: #fff; padding: 15px;">
-    <div style="font-weight: bold; font-size: 1.1em;" verifiable-text="start" data-for="estateclearanceautho"><span>[</span>AUTHORIZED PROPERTY CLEARANCE IN PROGRESS</div>
+    <div style="font-weight: bold; font-size: 1.1em;"><span verifiable-text="start" data-for="estateclearanceautho">[</span>AUTHORIZED PROPERTY CLEARANCE IN PROGRESS</div>
     <div style="font-size: 0.8em;">Mandatory Site Notice — Scan to Verify</div>
   </div>
   <div style="padding: 20px; font-size: 0.9em; line-height: 1.6;">

@@ -17,7 +17,7 @@ These documents are the "Combat Passport" for a ship. Fraud is high-stakes: a sh
 <div style="max-width: 650px; margin: 24px auto; font-family: 'Times New Roman', Times, serif; border: 2px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="background: #1a1a1a; color: #fff; padding: 25px; display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid #d32f2f;">
     <div>
-      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;" verifiable-text="start" data-for="war"><span>[</span>BEAZLEY SPECIALTY MARINE</div>
+      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;"><span verifiable-text="start" data-for="war">[</span>BEAZLEY SPECIALTY MARINE</div>
       <div style="font-size: 0.8em; opacity: 0.9; text-transform: uppercase;">War, Piracy & Terrorism Unit</div>
     </div>
     <div style="font-size: 2em;">⚔️</div>

@@ -59,7 +59,7 @@ Static cards display full names and license numbers permanently, which can lead 
 
 <div style="max-width: 320px; margin: 24px auto; font-family: 'Courier New', monospace; border: 3px solid #005eb8; border-radius: 8px; background: #f5f5f0; padding: 20px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
   <div style="font-size: 1em; color: #005eb8; font-weight: bold; margin-bottom: 8px;">MAYO CLINIC</div>
-  <div style="font-size: 1em; font-weight: bold; color: #000; margin-bottom: 8px;" verifiable-text="start" data-for="eink-nurse"><span>[</span>Sarah J.</div>
+  <div style="font-size: 1em; font-weight: bold; color: #000; margin-bottom: 8px;"><span verifiable-text="start" data-for="eink-nurse">[</span>Sarah J.</div>
   <div style="font-size: 1em; color: #333; margin-bottom: 8px;">Registered Nurse - ICU</div>
   <div style="font-size: 1em; color: #005eb8; margin-bottom: 12px;">
     Salt: 3p9x2m5k

@@ -11,7 +11,7 @@ furtherDerivations: 1
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Helvetica', Arial, sans-serif; border: 2px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
   <div style="background: #1a1a1a; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="knr"><span>[</span>HISCOX CRISIS MANAGEMENT</div>
+      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="knr">[</span>HISCOX CRISIS MANAGEMENT</div>
       <div style="font-size: 0.8em; opacity: 0.8;">Specialist K&R Underwriters</div>
     </div>
     <div style="text-align: right;">

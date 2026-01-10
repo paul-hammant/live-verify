@@ -22,7 +22,7 @@ It is your "Central Itinerary." It proves:
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #003580; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1); overflow: hidden;">
   <div style="background: #003580; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.4em;" verifiable-text="start" data-for="ota"><span>[</span>Booking.com</div>
+      <div style="font-weight: bold; font-size: 1.4em;"><span verifiable-text="start" data-for="ota">[</span>Booking.com</div>
       <div style="font-size: 0.8em; opacity: 0.8;">Official Confirmation Receipt</div>
     </div>
     <div style="font-size: 1.2em;">🏨</div>

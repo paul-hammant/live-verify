@@ -16,7 +16,7 @@ These documents are the "Proof of Retirement Security." Fraud is high-stakes: co
 
 <div style="max-width: 650px; margin: 24px auto; font-family: 'Times New Roman', Times, serif; border: 2px solid #333; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.4em; color: #002366;" verifiable-text="start" data-for="pension"><span>[</span>WILLIS TOWERS WATSON</div>
+    <div style="font-weight: bold; font-size: 1.4em; color: #002366;"><span verifiable-text="start" data-for="pension">[</span>WILLIS TOWERS WATSON</div>
     <div style="font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">Actuarial Valuation & Solvency Certification</div>
   </div>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">

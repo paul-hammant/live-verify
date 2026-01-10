@@ -20,7 +20,7 @@ Do you let them in?
   <div style="background: #0066cc; color: #fff; padding: 12px; display: flex; align-items: center; gap: 10px;">
     <div style="font-size: 1.5em;">💧</div>
     <div>
-      <div style="font-weight: bold;" verifiable-text="start" data-for="badge"><span>[</span>THAMES WATER</div>
+      <div style="font-weight: bold;"><span verifiable-text="start" data-for="badge">[</span>THAMES WATER</div>
       <div style="font-size: 0.8em;">Authorized Field Representative</div>
     </div>
   </div>
@@ -83,7 +83,7 @@ Delivery agents carry a weatherproof lanyard ID — large print, few lines, mini
 
 <div style="max-width: 280px; margin: 24px auto; font-family: sans-serif; border: 3px solid #DC0032; background: #fff; padding: 20px; border-radius: 8px; text-align: center;">
   <div style="font-size: 1.4em; font-weight: bold; color: #DC0032; margin-bottom: 8px;">DPD Delivery Agent</div>
-  <div style="font-size: 1.6em; font-weight: bold; color: #000; margin-bottom: 12px;" verifiable-text="start" data-for="dpd"><span>[</span>Henry M 2621</div>
+  <div style="font-size: 1.6em; font-weight: bold; color: #000; margin-bottom: 12px;"><span verifiable-text="start" data-for="dpd">[</span>Henry M 2621</div>
   <div data-verify-line="dpd" style="font-family: 'Courier New', monospace; font-size: 1.1em; color: #555;"
     title="Demo only: DPD doesn't yet offer verification endpoints, so this is illustrative">
     vfy:associates.dpd.co.uk <span verifiable-text="end" data-for="dpd">]</span>

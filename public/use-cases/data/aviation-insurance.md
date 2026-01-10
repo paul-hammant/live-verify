@@ -19,7 +19,7 @@ If a pilot presents a fake certificate to land in London or Dubai, they are flyi
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Helvetica', Arial, sans-serif; border: 2px solid #002244; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
   <div style="background: #002244; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="aviation"><span>[</span>GLOBAL AEROSPACE, INC.</div>
+      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="aviation">[</span>GLOBAL AEROSPACE, INC.</div>
       <div style="font-size: 0.8em;">Specialist Aviation Underwriters</div>
     </div>
     <div style="text-align: right;">

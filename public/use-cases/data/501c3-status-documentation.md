@@ -21,7 +21,7 @@ Charities often have to fax, email, or mail this letter dozens of times a year t
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', serif; border: 1px solid #ccc; background: #fff; padding: 40px;">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 20px; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="501c3"><span>[</span>Internal Revenue Service</div>
+    <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="501c3">[</span>Internal Revenue Service</div>
     <div style="font-size: 0.9em;">Department of the Treasury</div>
     <div style="font-size: 0.9em;">P.O. Box 2508, Cincinnati, OH 45201</div>
   </div>

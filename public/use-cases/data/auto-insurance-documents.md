@@ -11,7 +11,7 @@ furtherDerivations: 4
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0;">
   <div style="background: #0d47a1; color: #fff; padding: 15px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.1em;" verifiable-text="start" data-for="claim"><span>[</span>ALLSTATE INSURANCE</div>
+      <div style="font-weight: bold; font-size: 1.1em;"><span verifiable-text="start" data-for="claim">[</span>ALLSTATE INSURANCE</div>
       <div style="font-size: 0.8em;">Claims Processing Center</div>
     </div>
     <div style="text-align: right;">
@@ -138,7 +138,7 @@ Because people often cancel their insurance right after printing the card, polic
 
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 1px solid #000; background: #fff; padding: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
   <div style="background: #000; color: #fff; padding: 10px; display: flex; justify-content: space-between; align-items: center;">
-    <div style="font-weight: bold;" verifiable-text="start" data-for="ins"><span>[</span>GEICO</div>
+    <div style="font-weight: bold;"><span verifiable-text="start" data-for="ins">[</span>GEICO</div>
     <div style="font-size: 0.8em;">AUTO INSURANCE ID CARD</div>
   </div>
 <div style="padding: 15px;">
@@ -247,7 +247,7 @@ Lenders (for car loans) and landlords often require a copy of the Dec Page. Frau
 
 <div style="max-width: 600px; margin: 24px auto; font-family: Arial, sans-serif; border: 1px solid #333; background: #fff; padding: 30px;">
   <div style="display: flex; justify-content: space-between; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px;">
-    <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="autodec"><span>[</span>PROGRESSIVE</div>
+    <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="autodec">[</span>PROGRESSIVE</div>
     <div style="text-align: right; font-size: 0.8em;">POLICY DECLARATIONS<br>Renewal: Mar 15, 2026</div>
   </div>
 <div style="font-size: 0.9em; line-height: 1.4;">
@@ -334,7 +334,7 @@ Fraud is common: drivers sometimes "edit" the digital report *after* they damage
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <div style="background: #333; color: #fff; padding: 15px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.1em;" verifiable-text="start" data-for="damage"><span>[</span>RELIABLE CAR CARRIERS, INC.</div>
+      <div style="font-weight: bold; font-size: 1.1em;"><span verifiable-text="start" data-for="damage">[</span>RELIABLE CAR CARRIERS, INC.</div>
       <div style="font-size: 0.8em;">MC #123456 | DOT #998877</div>
     </div>
     <div style="text-align: right;">

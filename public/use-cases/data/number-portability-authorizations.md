@@ -16,7 +16,7 @@ When you switch your phone number from one carrier to another (e.g., AT&T to T-M
 
 <div style="max-width: 500px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.15); overflow: hidden;">
   <div style="background: #000; color: #fff; padding: 20px; text-align: center; border-bottom: 3px solid #000;">
-    <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 1px;" verifiable-text="start" data-for="port"><span>[</span>LETTER OF AGENCY (LOA)</div>
+    <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 1px;"><span verifiable-text="start" data-for="port">[</span>LETTER OF AGENCY (LOA)</div>
     <div style="font-size: 0.75em; opacity: 0.8; text-transform: uppercase; margin-top: 5px;">Authorization for Number Portability</div>
   </div>
 <div style="padding: 30px; font-size: 0.95em; line-height: 1.6; color: #333;">

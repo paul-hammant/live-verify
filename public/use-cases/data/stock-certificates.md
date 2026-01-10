@@ -23,7 +23,7 @@ If you are buying a small business or investing in a private startup, you need t
   <div style="position: absolute; bottom: 10px; left: 10px; width: 40px; height: 40px; border-bottom: 2px solid #003366; border-left: 2px solid #003366;"></div>
   <div style="position: absolute; bottom: 10px; right: 10px; width: 40px; height: 40px; border-bottom: 2px solid #003366; border-right: 2px solid #003366;"></div>
 <div style="text-align: center;">
-    <div style="font-size: 0.9em; letter-spacing: 2px; margin-bottom: 10px;" verifiable-text="start" data-for="stock"><span>[</span>NUMBER <span style="font-weight: bold; font-size: 1.2em;">CS-1024</span></div>
+    <div style="font-size: 0.9em; letter-spacing: 2px; margin-bottom: 10px;"><span verifiable-text="start" data-for="stock">[</span>NUMBER <span style="font-weight: bold; font-size: 1.2em;">CS-1024</span></div>
     <div style="font-size: 2.5em; font-weight: bold; color: #003366; margin: 10px 0; font-family: 'Playfair Display', serif;">Acme Corp, Inc.</div>
     <div style="font-size: 0.9em; font-style: italic;">Incorporated under the laws of the State of Delaware</div>
 <div style="margin: 30px 0; font-size: 1.1em; line-height: 1.8;">

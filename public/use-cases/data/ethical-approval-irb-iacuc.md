@@ -18,7 +18,7 @@ The committee reviews the plan to ensure people aren't being exploited and anima
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
   <div style="text-align: left; margin-bottom: 30px; border-bottom: 2px solid #1a237e; padding-bottom: 10px;">
-    <div style="font-weight: bold; font-size: 1.2em; color: #1a237e;" verifiable-text="start" data-for="ethics"><span>[</span>STANFORD UNIVERSITY - RESEARCH COMPLIANCE</div>
+    <div style="font-weight: bold; font-size: 1.2em; color: #1a237e;"><span verifiable-text="start" data-for="ethics">[</span>STANFORD UNIVERSITY - RESEARCH COMPLIANCE</div>
     <div style="font-size: 0.85em; color: #666;">Institutional Review Board (IRB)</div>
   </div>
 <h2 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; color: #1a237e;">Notice of Ethical Approval</h2>

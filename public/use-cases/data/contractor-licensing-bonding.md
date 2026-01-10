@@ -19,7 +19,7 @@ Homeowners use these "Pocket Cards" to verify who they are letting onto their ro
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 4px solid #004d40; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #004d40; color: #fff; padding: 15px; text-align: center;">
-    <h2 style="margin: 0; text-transform: uppercase;" verifiable-text="start" data-for="contractor"><span>[</span>STATE CONTRACTORS BOARD</h2>
+    <h2 style="margin: 0; text-transform: uppercase;"><span verifiable-text="start" data-for="contractor">[</span>STATE CONTRACTORS BOARD</h2>
     <div style="font-size: 0.9em;">OFFICIAL LICENSE CERTIFICATE</div>
   </div>
 <div style="padding: 30px;">

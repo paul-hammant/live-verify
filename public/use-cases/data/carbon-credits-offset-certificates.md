@@ -19,7 +19,7 @@ The **Retirement Certificate** is the only proof that the company actually did w
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #2e7d32; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="background: #2e7d32; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="carbon"><span>[</span>VERRA</div>
+      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="carbon">[</span>VERRA</div>
       <div style="font-size: 0.8em;">Verified Carbon Standard (VCS)</div>
     </div>
     <div style="text-align: right;">

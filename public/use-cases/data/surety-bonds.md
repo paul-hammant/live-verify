@@ -18,7 +18,7 @@ It is the "Lifeblood of Public Works." If a contractor goes bankrupt halfway thr
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #333; background: #fff; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.2em; color: #b71c1c;" verifiable-text="start" data-for="surety"><span>[</span>THE TRAVELERS COMPANIES</div>
+    <div style="font-weight: bold; font-size: 1.2em; color: #b71c1c;"><span verifiable-text="start" data-for="surety">[</span>THE TRAVELERS COMPANIES</div>
     <div style="text-align: right; font-size: 0.85em; color: #666;">
       Bond No: TR-99228877-B1<br>
       March 15, 2026

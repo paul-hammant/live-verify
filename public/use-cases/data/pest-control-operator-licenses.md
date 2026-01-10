@@ -18,7 +18,7 @@ The problem is that "Pest Control" is a high-trust, high-risk profession. Crimin
   <div style="background: #004d40; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
     <div style="font-size: 1.8em; margin-right: 15px;">🛡️</div>
     <div style="text-align: right;">
-      <div style="font-weight: bold; font-size: 1em; letter-spacing: 1px;" verifiable-text="start" data-for="pest"><span>[</span>STATE DEPT OF AGRICULTURE</div>
+      <div style="font-weight: bold; font-size: 1em; letter-spacing: 1px;"><span verifiable-text="start" data-for="pest">[</span>STATE DEPT OF AGRICULTURE</div>
       <div style="font-size: 0.75em; font-weight: bold; opacity: 0.9;">PEST CONTROL BOARD</div>
     </div>
   </div>

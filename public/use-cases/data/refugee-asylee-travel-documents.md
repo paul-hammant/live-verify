@@ -16,7 +16,7 @@ For a refugee, this document is a fragile lifeline. If an airline agent in a for
 
 <div style="max-width: 450px; margin: 24px auto; font-family: 'Times New Roman', serif; border: 2px solid #002d62; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
   <div style="background: #002d62; color: #fff; padding: 20px; text-align: center; border-bottom: 2px solid #ce9e00;">
-    <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 1px;" verifiable-text="start" data-for="refugee"><span>[</span>UNITED STATES OF AMERICA</div>
+    <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 1px;"><span verifiable-text="start" data-for="refugee">[</span>UNITED STATES OF AMERICA</div>
     <div style="font-size: 0.8em; opacity: 0.9; text-transform: uppercase;">Refugee Travel Document</div>
   </div>
 <div style="padding: 25px; background: #fdfdfd;">

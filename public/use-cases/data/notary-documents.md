@@ -21,7 +21,7 @@ Because it is an "Authentic Act," it has enormous legal weight:
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', serif; border: 1px solid #999; background: #fff; padding: 50px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); position: relative;">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 15px; margin-bottom: 40px;">
-    <div style="font-weight: bold; font-size: 1.3em; letter-spacing: 2px;" verifiable-text="start" data-for="not-will"><span>[</span>NOTARY OFFICE</div>
+    <div style="font-weight: bold; font-size: 1.3em; letter-spacing: 2px;"><span verifiable-text="start" data-for="not-will">[</span>NOTARY OFFICE</div>
     <div style="font-size: 0.9em; text-transform: uppercase;">ACTE DE DERNIÈRE VOLONTÉ</div>
   </div>
 <div style="font-size: 1.1em; line-height: 1.8; color: #000; text-align: justify;">
@@ -127,7 +127,7 @@ OCR-to-hash binds the **Notary's commission number, the signer's name, and the s
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', serif; border: 1px solid #999; background: #fff; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="font-size: 1.1em; line-height: 1.6; color: #000;">
-    <p style="text-align: right; font-size: 0.9em;" verifiable-text="start" data-for="notary"><span>[</span>STATE OF FLORIDA<br>COUNTY OF MIAMI-DADE</p>
+    <p style="text-align: right; font-size: 0.9em;"><span verifiable-text="start" data-for="notary">[</span>STATE OF FLORIDA<br>COUNTY OF MIAMI-DADE</p>
 <p>The foregoing instrument was acknowledged before me this 15th day of March, 2026, by <strong>ROBERT J. MILLER</strong>, who is personally known to me or who has produced a Driver License as identification.</p>
   </div>
 <div style="margin-top: 40px; display: flex; align-items: flex-start; justify-content: space-between;">
@@ -326,7 +326,7 @@ The problem is that a "Digital Seal" is often just a pretty image on a PDF. Frau
 
 <div style="max-width: 500px; margin: 24px auto; font-family: 'Times New Roman', serif; border: 2px solid #333; background: #fff; padding: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); position: relative;">
   <div style="text-align: center; border-bottom: 1px solid #000; padding-bottom: 15px; margin-bottom: 20px;">
-    <div style="font-weight: bold; font-size: 1.3em; text-transform: uppercase;" verifiable-text="start" data-for="ron"><span>[</span>Remote Online Notary Certificate</div>
+    <div style="font-weight: bold; font-size: 1.3em; text-transform: uppercase;"><span verifiable-text="start" data-for="ron">[</span>Remote Online Notary Certificate</div>
     <div style="font-size: 0.9em; letter-spacing: 1px;">AUTHENTICATED VIA SECURE VIDEO SESSION</div>
   </div>
 <div style="font-size: 0.95em; line-height: 1.6;">

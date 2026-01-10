@@ -17,7 +17,7 @@ Fraud is common in the "Secondary Market." Scammers sell fake "Discounted Packag
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Segoe UI', Tahoma, sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="background: #00bcd4; color: #fff; padding: 25px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.5em; letter-spacing: 1px;" verifiable-text="start" data-for="package"><span>[</span>ISLAND ESCAPES</div>
+      <div style="font-weight: bold; font-size: 1.5em; letter-spacing: 1px;"><span verifiable-text="start" data-for="package">[</span>ISLAND ESCAPES</div>
       <div style="font-size: 0.8em; opacity: 0.9;">Official All-Inclusive Confirmation</div>
     </div>
     <div style="font-size: 2em;">🏝️</div>

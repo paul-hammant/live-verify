@@ -19,7 +19,7 @@ The policy is "Parametric"—meaning it pays out automatically if a specific wea
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #002366; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="background: #002366; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="event-cancel"><span>[</span>HISCOX SPECIALTY</div>
+      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="event-cancel">[</span>HISCOX SPECIALTY</div>
       <div style="font-size: 0.8em;">Event Cancellation & Abandonment</div>
     </div>
     <div style="text-align: right;">

@@ -22,7 +22,7 @@ Verified EOBs are critical for stopping "Balance Billing"—when a hospital trie
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #005fb8; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="eob"><span>[</span>UNITEDHEALTHCARE</div>
+      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="eob">[</span>UNITEDHEALTHCARE</div>
       <div style="font-size: 0.8em;">Explanation of Benefits (EOB)</div>
     </div>
     <div style="text-align: right;">
@@ -154,7 +154,7 @@ In lawsuits, these diaries are "Evidence Item #1." If an insurance company is ac
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', monospace; border: 1px solid #555; background: #fff; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
-    <strong verifiable-text="start" data-for="diary"><span>[</span>ACE INDEMNITY GROUP</strong><br>
+    <strong><span verifiable-text="start" data-for="diary">[</span>ACE INDEMNITY GROUP</strong><br>
     INTERNAL CLAIMS DIARY & RESERVE LOG<br>
     -----------------------------------
   </div>
@@ -258,7 +258,7 @@ Because they trigger large payments, they are targets for "PDF alteration." A di
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #999; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
   <div style="text-align: center; margin-bottom: 30px;">
-    <h3 style="text-decoration: underline; text-transform: uppercase; margin: 0;" verifiable-text="start" data-for="settle"><span>[</span>SETTLEMENT AGREEMENT AND RELEASE</h3>
+    <h3 style="text-decoration: underline; text-transform: uppercase; margin: 0;"><span verifiable-text="start" data-for="settle">[</span>SETTLEMENT AGREEMENT AND RELEASE</h3>
   </div>
 <div style="font-size: 1em; line-height: 1.6; color: #000; text-align: justify;">
     <p>This Settlement Agreement and Release (the "Agreement") is entered into as of March 15, 2026, by and between:</p>

@@ -18,7 +18,7 @@ These documents are the "Shield of Public Trust." Fraud is high-stakes: un-certi
   <div style="background: #ff9800; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
     <div style="font-size: 1.8em; margin-right: 15px;">🧒</div>
     <div style="text-align: right;">
-      <div style="font-weight: bold; font-size: 1.1em; letter-spacing: 1px;" verifiable-text="start" data-for="play"><span>[</span>PLAYGROUND SAFETY PASS</div>
+      <div style="font-weight: bold; font-size: 1.1em; letter-spacing: 1px;"><span verifiable-text="start" data-for="play">[</span>PLAYGROUND SAFETY PASS</div>
       <div style="font-size: 0.75em; font-weight: bold; opacity: 0.9;">CITY OF SPRINGFIELD • PARKS & REC</div>
     </div>
   </div>

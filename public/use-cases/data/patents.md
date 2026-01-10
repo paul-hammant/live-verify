@@ -11,7 +11,7 @@ furtherDerivations: 1
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 3px double #1a365d; background: #fffef5; padding: 0;">
   <div style="background: linear-gradient(to bottom, #1a365d, #2c5282); color: #d4af37; padding: 16px 20px; text-align: center;">
-    <div style="font-size: 1.4em; font-weight: bold; letter-spacing: 4px; text-transform: uppercase;" verifiable-text="start" data-for="patent"><span>[</span>Mesopotamian Patent Office</div>
+    <div style="font-size: 1.4em; font-weight: bold; letter-spacing: 4px; text-transform: uppercase;"><span verifiable-text="start" data-for="patent">[</span>Mesopotamian Patent Office</div>
     <div style="font-size: 0.85em; margin-top: 4px; color: #e2e8f0;">Uruk • Protecting Innovation Since 4500 BC</div>
   </div>
   <div style="padding: 24px 28px; text-align: center;">

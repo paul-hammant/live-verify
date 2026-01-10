@@ -19,7 +19,7 @@ Fraudsters often hide "Over-Restoration"—where so much new paint has been adde
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #546e7a; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #546e7a; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="conserve"><span>[</span>GETTY CONSERVATION INSTITUTE</div>
+      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="conserve">[</span>GETTY CONSERVATION INSTITUTE</div>
       <div style="font-size: 0.8em;">Science & Analysis Department</div>
     </div>
     <div style="text-align: right;">

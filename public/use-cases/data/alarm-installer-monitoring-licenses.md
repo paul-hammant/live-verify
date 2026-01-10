@@ -21,7 +21,7 @@ Always scan the badge before letting a "technician" into your home to learn your
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 4px solid #b71c1c; background: #fff; padding: 0;">
   <div style="background: #b71c1c; color: #fff; padding: 15px; text-align: center;">
-    <h3 style="margin: 0;" verifiable-text="start" data-for="alarm"><span>[</span>TEXAS DEPARTMENT OF PUBLIC SAFETY</h3>
+    <h3 style="margin: 0;"><span verifiable-text="start" data-for="alarm">[</span>TEXAS DEPARTMENT OF PUBLIC SAFETY</h3>
     <div style="font-size: 0.9em;">PRIVATE SECURITY BUREAU</div>
   </div>
 <div style="padding: 25px; display: flex;">

@@ -16,7 +16,7 @@ The problem is that these agreements are often buried in 50-page PDFs. During a 
 
 <div style="max-width: 650px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #fdfdfd; padding: 25px; border-bottom: 3px solid #d32f2f; display: flex; justify-content: space-between; align-items: center;">
-    <div style="font-weight: bold; font-size: 1.5em; color: #000; letter-spacing: -1px;" verifiable-text="start" data-for="telecom"><span>[</span>VERIZON <span style="font-weight: normal; color: #d32f2f;">BUSINESS</span></div>
+    <div style="font-weight: bold; font-size: 1.5em; color: #000; letter-spacing: -1px;"><span verifiable-text="start" data-for="telecom">[</span>VERIZON <span style="font-weight: normal; color: #d32f2f;">BUSINESS</span></div>
     <div style="text-align: right;">
       <div style="font-weight: bold; font-size: 0.9em;">SERVICE LEVEL AGREEMENT</div>
       <div style="font-size: 0.7em; color: #666;">Contract Ref: VZ-992288-X</div>

@@ -19,7 +19,7 @@ The result is an **Adjustment Summary**. Because these documents often trigger m
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #1a237e; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
   <div style="background: #1a237e; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="bi-claim"><span>[</span>LIBERTY MUTUAL</div>
+      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="bi-claim">[</span>LIBERTY MUTUAL</div>
       <div style="font-size: 0.8em;">Commercial Property Claims</div>
     </div>
     <div style="text-align: right;">

@@ -22,7 +22,7 @@ This document is the **Identification Form**. It acts as a timestamped "snapshot
   <div style="padding: 30px 40px; text-align: left;">
     <div style="border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: flex-end;">
       <div>
-        <div style="font-size: 1.2em; font-weight: bold; text-transform: uppercase;" verifiable-text="start" data-for="1031"><span>[</span>Equitable Exchange Services, Inc.</div>
+        <div style="font-size: 1.2em; font-weight: bold; text-transform: uppercase;"><span verifiable-text="start" data-for="1031">[</span>Equitable Exchange Services, Inc.</div>
         <div style="font-size: 0.8em; color: #555;">A Qualified Intermediary</div>
       </div>
       <div style="font-size: 0.8em;">QI License: #99-2342-CA</div>

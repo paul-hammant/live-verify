@@ -10,7 +10,7 @@ furtherDerivations: 1
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 5px solid #003366; background: #fff; padding: 0; position: relative;">
   <div style="background: #003366; color: #fff; padding: 20px; text-align: center;">
-    <h2 style="margin: 0; letter-spacing: 2px;" verifiable-text="start" data-for="record"><span>[</span>WORLD ATHLETICS</h2>
+    <h2 style="margin: 0; letter-spacing: 2px;"><span verifiable-text="start" data-for="record">[</span>WORLD ATHLETICS</h2>
     <div style="font-size: 0.9em; margin-top: 5px;">OFFICIAL RECORD RATIFICATION</div>
   </div>
 <div style="padding: 40px; text-align: center;">

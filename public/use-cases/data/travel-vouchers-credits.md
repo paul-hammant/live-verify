@@ -16,7 +16,7 @@ Because vouchers are essentially "Digital Cash," they are a primary target for *
 
 <div style="max-width: 450px; margin: 24px auto; font-family: sans-serif; border: 2px solid #ccc; border-radius: 8px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #333; color: #fff; padding: 15px; text-align: center;">
-    <div style="font-weight: bold; font-size: 1.1em; letter-spacing: 1px;" verifiable-text="start" data-for="voucher"><span>[</span>AMTRAK &reg;</div>
+    <div style="font-weight: bold; font-size: 1.1em; letter-spacing: 1px;"><span verifiable-text="start" data-for="voucher">[</span>AMTRAK &reg;</div>
     <div style="font-size: 0.7em; opacity: 0.8; text-transform: uppercase;">Future Travel Credit Voucher</div>
   </div>
 <div style="padding: 25px; background: #fdfdfd; border-bottom: 1px solid #eee;">

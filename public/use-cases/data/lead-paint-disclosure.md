@@ -10,7 +10,7 @@ furtherDerivations: 1
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #1a1a1a; color: #fff; padding: 15px; text-align: center;">
-    <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;" verifiable-text="start" data-for="lead"><span>[</span>LEAD PAINT DISCLOSURE</h2>
+    <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;"><span verifiable-text="start" data-for="lead">[</span>LEAD PAINT DISCLOSURE</h2>
     <div style="font-size: 0.8em; opacity: 0.8;">In compliance with U.S. EPA / HUD Regulations</div>
   </div>
 <div style="padding: 25px;">

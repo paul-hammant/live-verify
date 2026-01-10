@@ -18,7 +18,7 @@ In the US, you also sign a **HIPAA Authorization**, which tells the hospital exa
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #007bff; background: #fff; padding: 25px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #007bff; padding-bottom: 10px; margin-bottom: 20px;">
-    <h2 style="margin: 0; font-size: 1.2em;" verifiable-text="start" data-for="consent"><span>[</span>INFORMED CONSENT FOR SURGERY</h2>
+    <h2 style="margin: 0; font-size: 1.2em;"><span verifiable-text="start" data-for="consent">[</span>INFORMED CONSENT FOR SURGERY</h2>
   </div>
   <div style="font-size: 0.95em; line-height: 1.6;">
     <p>I, <strong>JANE A. DOE</strong>, authorize Dr. Alex Smith to perform a Laparoscopic Appendectomy.</p>

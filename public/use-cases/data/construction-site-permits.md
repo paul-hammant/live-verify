@@ -18,7 +18,7 @@ OCR-to-hash allows a neighbor or building inspector to scan the permit from the 
 
 <div style="max-width: 500px; margin: 24px auto; font-family: sans-serif; border: 3px solid #d32f2f; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
   <div style="background: #d32f2f; color: #fff; padding: 15px; text-align: center;">
-    <h2 style="margin: 0; text-transform: uppercase; font-size: 1.3em; letter-spacing: 1px;" verifiable-text="start" data-for="permit"><span>[</span>Building Permit</h2>
+    <h2 style="margin: 0; text-transform: uppercase; font-size: 1.3em; letter-spacing: 1px;"><span verifiable-text="start" data-for="permit">[</span>Building Permit</h2>
     <div style="font-size: 0.8em; font-weight: bold; opacity: 0.9;">POST IN A CONSPICUOUS PLACE</div>
   </div>
 <div style="padding: 25px;">

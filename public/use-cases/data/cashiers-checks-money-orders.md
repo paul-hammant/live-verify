@@ -18,7 +18,7 @@ The seller thinks the check is real, hands over the car keys, and then discovers
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 1px solid #999; background: #fdfdfd; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
   <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px;">
-    <div style="font-weight: bold; font-size: 1.2em; color: #003366;" verifiable-text="start" data-for="check"><span>[</span>WELLS FARGO BANK, N.A.</div>
+    <div style="font-weight: bold; font-size: 1.2em; color: #003366;"><span verifiable-text="start" data-for="check">[</span>WELLS FARGO BANK, N.A.</div>
     <div style="text-align: right;">
       <div style="font-size: 0.9em;">Official Check</div>
       <div style="font-size: 1.1em; font-weight: bold;">No. 998877665</div>

@@ -18,7 +18,7 @@ Shady shippers often "Mis-declare" cargo—calling dangerous batteries "Toys" on
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 2px solid #d32f2f; background: #fff; padding: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <div style="background: #d32f2f; color: #fff; padding: 10px; text-align: center;">
-    <h2 style="margin: 0; text-transform: uppercase; font-size: 1.2em;" verifiable-text="start" data-for="dgr"><span>[</span>SHIPPER'S DECLARATION FOR DANGEROUS GOODS</h2>
+    <h2 style="margin: 0; text-transform: uppercase; font-size: 1.2em;"><span verifiable-text="start" data-for="dgr">[</span>SHIPPER'S DECLARATION FOR DANGEROUS GOODS</h2>
     <div style="font-size: 0.8em;">In Compliance with IATA Dangerous Goods Regulations (DGR)</div>
   </div>
 <div style="padding: 15px; font-size: 0.8em;">
@@ -141,7 +141,7 @@ Fraudsters often edit these PDFs to hide that a chemical is toxic, just to get i
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 2px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <div style="background: #000; color: #fff; padding: 10px; text-align: center;">
-    <h2 style="margin: 0; text-transform: uppercase; font-size: 1.2em;" verifiable-text="start" data-for="imo-dgd"><span>[</span>DANGEROUS GOODS DECLARATION (IMO)</h2>
+    <h2 style="margin: 0; text-transform: uppercase; font-size: 1.2em;"><span verifiable-text="start" data-for="imo-dgd">[</span>DANGEROUS GOODS DECLARATION (IMO)</h2>
     <div style="font-size: 0.8em;">In accordance with the IMDG Code and SOLAS 74</div>
   </div>
 <div style="padding: 15px; font-size: 0.85em;">
@@ -265,7 +265,7 @@ Fraudsters often "Downgrade" the hazard on the paper form to bypass tunnel restr
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #ff9800; background: #fff; padding: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <div style="background: #ff9800; color: #fff; padding: 15px; text-align: center;">
-    <h2 style="margin: 0; text-transform: uppercase; font-size: 1.2em;" verifiable-text="start" data-for="road-dg"><span>[</span>DANGEROUS GOODS TRANSPORT DOCUMENT</h2>
+    <h2 style="margin: 0; text-transform: uppercase; font-size: 1.2em;"><span verifiable-text="start" data-for="road-dg">[</span>DANGEROUS GOODS TRANSPORT DOCUMENT</h2>
     <div style="font-size: 0.8em;">In accordance with ADR 5.4.1 / DOT 172.200</div>
   </div>
 <div style="padding: 20px; font-size: 0.85em;">

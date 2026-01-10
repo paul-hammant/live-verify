@@ -18,7 +18,7 @@ Stylists are required by law to post their license at their station. Some people
 
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 4px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
   <div style="background: #333; color: #fff; padding: 15px; text-align: center;">
-    <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;" verifiable-text="start" data-for="beauty"><span>[</span>STATE BOARD OF COSMETOLOGY</h2>
+    <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;"><span verifiable-text="start" data-for="beauty">[</span>STATE BOARD OF COSMETOLOGY</h2>
     <div style="font-size: 0.8em; opacity: 0.8;">OFFICIAL PRACTITIONER LICENSE</div>
   </div>
 <div style="padding: 25px; display: flex;">

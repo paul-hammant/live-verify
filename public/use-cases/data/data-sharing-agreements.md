@@ -18,7 +18,7 @@ Ethics violations are common: researchers sometimes use data for a different pur
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
   <div style="text-align: center; margin-bottom: 30px; border-bottom: 2px solid #000; padding-bottom: 10px;">
-    <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="dsa"><span>[</span>DATA SHARING & USE AGREEMENT</div>
+    <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="dsa">[</span>DATA SHARING & USE AGREEMENT</div>
     <div style="font-size: 0.9em; margin-top: 5px;">OXFORD UNIVERSITY - RESEARCH SERVICES</div>
   </div>
 <div style="font-size: 1em; line-height: 1.6; color: #333; text-align: justify;">

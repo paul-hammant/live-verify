@@ -17,7 +17,7 @@ Because the appraisal determines how much money a bank will lend, it is a primar
 <div style="max-width: 650px; margin: 24px auto; font-family: sans-serif; border: 1px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #002366; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #000;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="appraise"><span>[</span>SUMMIT APPRAISAL GROUP</div>
+      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="appraise">[</span>SUMMIT APPRAISAL GROUP</div>
       <div style="font-size: 0.8em; opacity: 0.9;">USPAP Compliant Valuations • License: #TX-9922</div>
     </div>
     <div style="text-align: right;">

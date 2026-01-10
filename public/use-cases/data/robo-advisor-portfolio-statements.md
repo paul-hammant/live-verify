@@ -18,7 +18,7 @@ These digital-first documents are the "Proof of Wealth" for a new generation of 
   <div style="background: #00bcd4; color: #fff; padding: 25px; display: flex; align-items: center; justify-content: space-between;">
     <div style="display: flex; align-items: center;">
       <div style="font-size: 1.8em; margin-right: 10px;">📉</div>
-      <div style="font-weight: bold; font-size: 1.3em; letter-spacing: -0.5px;" verifiable-text="start" data-for="robo"><span>[</span>Betterment</div>
+      <div style="font-weight: bold; font-size: 1.3em; letter-spacing: -0.5px;"><span verifiable-text="start" data-for="robo">[</span>Betterment</div>
     </div>
     <div style="text-align: right;">
       <div style="font-weight: bold; font-size: 0.9em;">INVESTMENT STATEMENT</div>

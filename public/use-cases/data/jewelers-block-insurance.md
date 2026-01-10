@@ -11,7 +11,7 @@ furtherDerivations: 1
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 2px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="background: #1a1a1a; color: #d4af37; padding: 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #d4af37;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 1px;" verifiable-text="start" data-for="jewel"><span>[</span>BERKLEY ASSET PROTECTION</div>
+      <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 1px;"><span verifiable-text="start" data-for="jewel">[</span>BERKLEY ASSET PROTECTION</div>
       <div style="font-size: 0.8em; color: #fff;">Specialist Jewelers Block Underwriters</div>
     </div>
     <div style="font-size: 1.5em;">💎</div>

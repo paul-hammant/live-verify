@@ -17,7 +17,7 @@ These certificates are the foundation of **Solar Financing** and **Warranties**.
 <div style="max-width: 650px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1); overflow: hidden;">
   <div style="background: #004d40; color: #fff; padding: 25px; display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid #ce9e00;">
     <div>
-      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;" verifiable-text="start" data-for="solar"><span>[</span>TRINA SOLAR LABS</div>
+      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;"><span verifiable-text="start" data-for="solar">[</span>TRINA SOLAR LABS</div>
       <div style="font-size: 0.8em; opacity: 0.9; text-transform: uppercase;">IEC 61215 Certified • Flash Test Report</div>
     </div>
     <div style="font-size: 2.2em;">☀️</div>

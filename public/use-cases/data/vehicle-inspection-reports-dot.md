@@ -16,7 +16,7 @@ These documents are critical for highway safety. Fraud is rampant: shady carrier
 
 <div style="max-width: 650px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 2px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #000; color: #fff; padding: 15px; text-align: center; border-bottom: 2px solid #000;">
-    <h2 style="margin: 0; font-size: 1.3em; letter-spacing: 1px;" verifiable-text="start" data-for="dot"><span>[</span>ANNUAL VEHICLE INSPECTION REPORT</h2>
+    <h2 style="margin: 0; font-size: 1.3em; letter-spacing: 1px;"><span verifiable-text="start" data-for="dot">[</span>ANNUAL VEHICLE INSPECTION REPORT</h2>
     <div style="font-size: 0.8em; opacity: 0.9;">IN ACCORDANCE WITH 49 CFR PART 396.17</div>
   </div>
 <div style="padding: 20px;">

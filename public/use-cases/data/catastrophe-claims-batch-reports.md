@@ -19,7 +19,7 @@ If a carrier "sneaks" a normal kitchen fire into a "Hurricane" batch, they are c
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #d32f2f; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="background: #d32f2f; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="cat"><span>[</span>STATE FARM FIRE & CASUALTY</div>
+      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="cat">[</span>STATE FARM FIRE & CASUALTY</div>
       <div style="font-size: 0.8em;">Catastrophe Operations Unit</div>
     </div>
     <div style="text-align: right;">

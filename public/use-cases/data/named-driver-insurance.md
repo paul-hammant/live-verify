@@ -10,7 +10,7 @@ furtherDerivations: 1
 
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #000; background: #fff; padding: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
   <div style="background: #000; color: #fff; padding: 10px; display: flex; justify-content: space-between; align-items: center;">
-    <div style="font-weight: bold;" verifiable-text="start" data-for="driver"><span>[</span>ADMIRAL</div>
+    <div style="font-weight: bold;"><span verifiable-text="start" data-for="driver">[</span>ADMIRAL</div>
     <div style="font-size: 0.8em;">CERTIFICATE OF MOTOR INSURANCE</div>
   </div>
 <div style="padding: 15px;">

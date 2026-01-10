@@ -22,7 +22,7 @@ OCR-to-hash allows a citizen to scan the officer's ID card to get a real-time "A
   <div style="background: #002d62; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
     <img src="met.png" alt="Metropolitan Police" style="width: 45px; height: 45px; object-fit: contain;">
     <div style="text-align: right;">
-      <div style="font-weight: bold; font-size: 1.1em; letter-spacing: 1px;" verifiable-text="start" data-for="police"><span>[</span>WARRANT CARD</div>
+      <div style="font-weight: bold; font-size: 1.1em; letter-spacing: 1px;"><span verifiable-text="start" data-for="police">[</span>WARRANT CARD</div>
       <div style="font-size: 0.7em; opacity: 0.8;">METROPOLITAN POLICE</div>
     </div>
   </div>
@@ -51,7 +51,7 @@ Static cards can be photographed and reprinted. An **e-ink warrant card** with a
 
 <div style="max-width: 320px; margin: 24px auto; font-family: 'Courier New', monospace; border: 3px solid #002d62; border-radius: 8px; background: #f5f5f0; padding: 20px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
   <div style="font-size: 1em; color: #000; font-weight: bold; margin-bottom: 8px;">METROPOLITAN POLICE</div>
-  <div style="font-size: 1em; color: #000; margin-bottom: 8px;" verifiable-text="start" data-for="eink"><span>[</span>DIGITAL WARRANT CARD</div>
+  <div style="font-size: 1em; color: #000; margin-bottom: 8px;"><span verifiable-text="start" data-for="eink">[</span>DIGITAL WARRANT CARD</div>
   <div style="font-size: 1em; font-weight: bold; color: #000; margin-bottom: 8px;">PC Alex D 1332</div>
   <div style="font-size: 1em; color: #000; margin-bottom: 8px;">London MET</div>
   <div style="font-size: 1em; color: #000; margin-bottom: 8px;">
@@ -72,7 +72,7 @@ Officers also carry a secure mobile app that generates the same verifiable displ
 <div style="max-width: 570px; margin: 24px auto; border: 12px solid #333; border-radius: 30px; background: #fff; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.3); display: flex; flex-direction: row;">
   <!-- Left side: Photo/Identity (Simulated) -->
   <div style="width: 150px; background: #f9f9f9; padding: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-right: 2px solid #000;">
-    <div style="width: 100px; height: 120px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #777; font-size: 0.8em; text-align: center; font-family: sans-serif;" verifiable-text="start" data-for="app-police"><span>[</span>[PHOTO]</div>
+    <div style="width: 100px; height: 120px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #777; font-size: 0.8em; text-align: center; font-family: sans-serif;">[PHOTO]</div>
     <div style="margin-top: 15px;">
       <img src="data/met.png" style="width: 50px; height: 50px; object-fit: contain;">
     </div>
@@ -80,7 +80,7 @@ Officers also carry a secure mobile app that generates the same verifiable displ
   <!-- Right side: Verification Text -->
   <div style="flex-grow: 1; padding: 20px; font-family: sans-serif; text-align: left; background: #fff;">
     <div style="font-size: 1.2em; color: #000; font-weight: bold; margin-bottom: 5px;">METROPOLITAN POLICE</div>
-    <div style="font-size: 1.2em; color: #000; margin-bottom: 15px; letter-spacing: 1px;">DIGITAL WARRANT CARD</div>
+    <div style="font-size: 1.2em; color: #000; margin-bottom: 15px; letter-spacing: 1px;"><span verifiable-text="start" data-for="app-police">[</span>DIGITAL WARRANT CARD</div>
     <div style="font-size: 1.2em; font-weight: bold; color: #000; margin-bottom: 5px;">PC Alex D 1332</div>
     <div style="font-size: 1.2em; color: #000; margin-bottom: 10px;">London MET</div>
     <div style="font-size: 1.2em; color: #000; font-weight: bold; margin-bottom: 10px;">

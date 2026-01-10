@@ -19,7 +19,7 @@ Farmers use these verified coverage schedules to secure "Operating Loans" from b
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 2px solid #2e7d32; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="background: #2e7d32; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="crop"><span>[</span>RAIN & HAIL, LLC</div>
+      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="crop">[</span>RAIN & HAIL, LLC</div>
       <div style="font-size: 0.8em;">A Chubb Company</div>
     </div>
     <div style="text-align: right;">

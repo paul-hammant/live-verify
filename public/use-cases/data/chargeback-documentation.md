@@ -18,7 +18,7 @@ Merchants need these verified letters to prove to lenders and business partners 
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #003087; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
-    <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="chargeback"><span>[</span>PAYPAL MERCHANT SERVICES</div>
+    <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="chargeback">[</span>PAYPAL MERCHANT SERVICES</div>
     <div style="font-size: 0.8em;">Dispute Case: PP-D-99887766</div>
   </div>
 <div style="padding: 25px;">

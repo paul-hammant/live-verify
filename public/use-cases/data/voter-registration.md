@@ -18,7 +18,7 @@ These cards are the "Ticket to the Ballot Box." Fraud is high-stakes: partisan a
   <div style="background: #002d62; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
     <div style="font-size: 1.5em; margin-right: 15px;">🇺🇸</div>
     <div style="text-align: right;">
-      <div style="font-weight: bold; font-size: 1.1em; letter-spacing: 1px;" verifiable-text="start" data-for="vote"><span>[</span>VOTER REGISTRATION</div>
+      <div style="font-weight: bold; font-size: 1.1em; letter-spacing: 1px;"><span verifiable-text="start" data-for="vote">[</span>VOTER REGISTRATION</div>
       <div style="font-size: 0.75em; font-weight: bold; opacity: 0.9;">STATE OF ILLINOIS • BOARD OF ELECTIONS</div>
     </div>
   </div>

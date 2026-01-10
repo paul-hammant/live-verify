@@ -22,7 +22,7 @@ Police officers at a traffic stop need to verify these permits in seconds. If a 
   <div style="background: #1a237e; color: #fff; padding: 15px; text-align: center; display: flex; align-items: center; justify-content: center;">
     <div style="font-size: 1.5em; margin-right: 10px;">⭐</div>
     <div>
-      <h3 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;" verifiable-text="start" data-for="ccw"><span>[</span>STATE OF NEVADA</h3>
+      <h3 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;"><span verifiable-text="start" data-for="ccw">[</span>STATE OF NEVADA</h3>
       <div style="font-size: 0.8em;">CONCEALED FIREARMS PERMIT</div>
     </div>
   </div>

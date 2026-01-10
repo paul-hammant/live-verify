@@ -16,7 +16,7 @@ Unlike a self-declaration ("I have no points"), an authority-issued record is **
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #003366; background: #fff; padding: 0;">
   <div style="background: #003366; color: #fff; padding: 15px;">
-    <div style="font-weight: bold; font-size: 1.1em;" verifiable-text="start" data-for="drivingrecords"><span>[</span>DRIVING RECORD SUMMARY</div>
+    <div style="font-weight: bold; font-size: 1.1em;"><span verifiable-text="start" data-for="drivingrecords">[</span>DRIVING RECORD SUMMARY</div>
     <div style="font-size: 0.8em;">Driver and Vehicle Licensing Agency</div>
   </div>
   <div style="padding: 20px; font-size: 0.9em; line-height: 1.6;">

@@ -19,7 +19,7 @@ Because these lead directly to high-paying jobs, "internship fraud" (faking a ce
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 10px solid #eee; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="padding: 40px; text-align: center; border: 1px solid #ccc; margin: 10px;">
     <div style="margin-bottom: 20px;">
-      <div style="font-size: 1.5em; font-weight: bold; letter-spacing: 2px;" verifiable-text="start" data-for="intern"><span>[</span>CERTIFICATE OF COMPLETION</div>
+      <div style="font-size: 1.5em; font-weight: bold; letter-spacing: 2px;"><span verifiable-text="start" data-for="intern">[</span>CERTIFICATE OF COMPLETION</div>
       <div style="font-size: 0.9em; font-style: italic;">Professional Development Program</div>
     </div>
 <div style="margin: 30px 0;">

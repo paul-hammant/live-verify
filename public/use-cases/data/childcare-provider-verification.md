@@ -23,7 +23,7 @@ Tragically, some people use "ID Swapping"—using a sibling's clear background c
   <div style="background: #e91e63; color: #fff; padding: 15px; text-align: center; display: flex; align-items: center; justify-content: center;">
     <div style="font-size: 1.5em; margin-right: 10px;">🧸</div>
     <div>
-      <h3 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;" verifiable-text="start" data-for="child"><span>[</span>VERIFIED CHILDCARE</h3>
+      <h3 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;"><span verifiable-text="start" data-for="child">[</span>VERIFIED CHILDCARE</h3>
       <div style="font-size: 0.8em;">TRUSTED PROVIDER NETWORK</div>
     </div>
   </div>

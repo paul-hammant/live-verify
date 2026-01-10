@@ -19,7 +19,7 @@ Rental agents often try to force you to buy their expensive $30/day insurance by
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; border-radius: 12px; background: linear-gradient(135deg, #1a1a1a 0%, #4a4a4a 100%); color: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.3); overflow: hidden;">
   <div style="padding: 25px; display: flex; justify-content: space-between; align-items: flex-start;">
     <div>
-      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;" verifiable-text="start" data-for="card"><span>[</span>CHASE SAPPHIRE PREFERRED</div>
+      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;"><span verifiable-text="start" data-for="card">[</span>CHASE SAPPHIRE PREFERRED</div>
       <div style="font-size: 0.8em; opacity: 0.8; margin-top: 5px;">VISA SIGNATURE®</div>
     </div>
     <div style="font-size: 1.2em;">💳</div>

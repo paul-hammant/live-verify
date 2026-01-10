@@ -10,7 +10,7 @@ furtherDerivations: 1
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #000; background: #fff; padding: 0;">
   <div style="background: #000; color: #fff; padding: 15px; text-align: right;">
-    <h3 style="margin: 0;" verifiable-text="start" data-for="retro"><span>[</span>PREMIUM ADJUSTMENT STATEMENT</h3>
+    <h3 style="margin: 0;"><span verifiable-text="start" data-for="retro">[</span>PREMIUM ADJUSTMENT STATEMENT</h3>
     <div style="font-size: 0.8em;">CONFIDENTIAL</div>
   </div>
 <div style="padding: 30px;">

@@ -10,7 +10,7 @@ furtherDerivations: 3
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 1px solid #333; background: #fff; padding: 40px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.1em; color: #1a237e;" verifiable-text="start" data-for="life-res"><span>[</span>PRUDENTIAL FINANCIAL SERVICES</div>
+    <div style="font-weight: bold; font-size: 1.1em; color: #1a237e;"><span verifiable-text="start" data-for="life-res">[</span>PRUDENTIAL FINANCIAL SERVICES</div>
     <div style="text-align: right; font-size: 0.8em; color: #666;">
       Statutory Filing: RES-2026-09<br>
       March 15, 2026
@@ -110,7 +110,7 @@ _[Content merged from: ltc-insurance-reserve-certifications]_
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 1px solid #333; background: #fff; padding: 40px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.1em; color: #1a237e;" verifiable-text="start" data-for="ltc-res"><span>[</span>GENWORTH FINANCIAL</div>
+    <div style="font-weight: bold; font-size: 1.1em; color: #1a237e;"><span verifiable-text="start" data-for="ltc-res">[</span>GENWORTH FINANCIAL</div>
     <div style="text-align: right; font-size: 0.8em; color: #666;">
       Compliance Filing: LTC-RES-2026<br>
       March 15, 2026
@@ -216,7 +216,7 @@ These documents are the "Proof of Solvency." Fraud is high-stakes in **M&A (Merg
 
 <div style="max-width: 650px; margin: 24px auto; font-family: 'Times New Roman', Times, serif; border: 2px solid #000; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 15px; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.4em; color: #003366;" verifiable-text="start" data-for="reserve"><span>[</span>HARTFORD LOSS CONTROL SERVICES</div>
+    <div style="font-weight: bold; font-size: 1.4em; color: #003366;"><span verifiable-text="start" data-for="reserve">[</span>HARTFORD LOSS CONTROL SERVICES</div>
     <div style="font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">Official Loss Reserve Attestation</div>
   </div>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">

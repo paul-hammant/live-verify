@@ -10,7 +10,7 @@ furtherDerivations: 1
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', monospace; border: 2px solid #000; background: #fff; padding: 20px; box-shadow: 2px 2px 5px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
-    <strong verifiable-text="start" data-for="bonded"><span>[</span>GLOBAL LOGISTICS BONDED HUB</strong><br>
+    <strong><span verifiable-text="start" data-for="bonded">[</span>GLOBAL LOGISTICS BONDED HUB</strong><br>
     U.S. CUSTOMS CLASS 3 WAREHOUSE (#998877)<br>
     -------------------------------------------
   </div>

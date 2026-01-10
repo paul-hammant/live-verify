@@ -19,7 +19,7 @@ Unlike a passenger ticket which is digital-first, AWBs are often physically atta
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 1px solid #000; background: #fff; padding: 0;">
   <div style="border-bottom: 2px solid #000; padding: 5px; display: flex; justify-content: space-between;">
-    <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="awb"><span>[</span>016-12345678</div>
+    <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="awb">[</span>016-12345678</div>
     <div style="font-weight: bold;">UNITED AIRLINES</div>
     <div style="font-weight: bold;">SFO</div>
   </div>
@@ -141,7 +141,7 @@ Fraud is common in the "Long Tail" of logistics: un-vetted forwarders sometimes 
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 1px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <div style="background: #000; color: #fff; padding: 10px; display: flex; justify-content: space-between; align-items: center;">
-    <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="hawb"><span>[</span>KUEHNE+NAGEL</div>
+    <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="hawb">[</span>KUEHNE+NAGEL</div>
     <div style="font-size: 0.8em; text-align: right;">HAWB No: KN-9988776655</div>
   </div>
 <div style="padding: 10px; font-size: 0.8em;">

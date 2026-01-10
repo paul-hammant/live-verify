@@ -17,7 +17,7 @@ The problem is that a REC can only be used once. "Double-Counting" is a massive 
 <div style="max-width: 650px; margin: 24px auto; font-family: 'Helvetica Neue', Arial, sans-serif; border: 2px solid #2e7d32; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #2e7d32; color: #fff; padding: 25px; display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid #1b5e20;">
     <div>
-      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;" verifiable-text="start" data-for="rec"><span>[</span>NORTH AMERICAN RENEWABLE REGISTRY</div>
+      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;"><span verifiable-text="start" data-for="rec">[</span>NORTH AMERICAN RENEWABLE REGISTRY</div>
       <div style="font-size: 0.8em; opacity: 0.9; text-transform: uppercase;">Official Certificate of Generation</div>
     </div>
     <div style="font-size: 2em;">☀️</div>

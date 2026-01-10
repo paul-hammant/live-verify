@@ -30,7 +30,7 @@ The annuity certification can arrive through different channels. Verification of
 <div id="format-showcase-annuity" class="content" data-format-showcase="[]" data-doc-content="" data-verify-line="verify:prudential.com/actuarial/v/x9y8z7">
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 1px solid #333; background: #fff; padding: 40px; box-shadow: 2px 2px 12px rgba(0,0,0,0.1);">
   <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.1em; color: #1a237e;" verifiable-text="start" data-for="annuity"><span>[</span>PRUDENTIAL FINANCIAL SERVICES</div>
+    <div style="font-weight: bold; font-size: 1.1em; color: #1a237e;"><span verifiable-text="start" data-for="annuity">[</span>PRUDENTIAL FINANCIAL SERVICES</div>
     <div style="text-align: right; font-size: 0.8em; color: #666;">
       Compliance Filing: ANN-2026-09<br>
       March 15, 2026

@@ -10,7 +10,7 @@ furtherDerivations: 1
 
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #002d62; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
   <div style="background: #002d62; color: #fff; padding: 15px; text-align: center; display: flex; align-items: center; justify-content: center;">
-    <div style="width: 40px; height: 40px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #002d62; font-weight: bold; font-size: 0.7em; margin-right: 15px;" verifiable-text="start" data-for="im-officer"><span>[</span>DHS</div>
+    <div style="width: 40px; height: 40px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #002d62; font-weight: bold; font-size: 0.7em; margin-right: 15px;"><span verifiable-text="start" data-for="im-officer">[</span>DHS</div>
     <div>
       <h3 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">U.S. IMMIGRATION</h3>
       <div style="font-size: 0.8em; opacity: 0.8;">OFFICIAL ENFORCEMENT CREDENTIAL</div>

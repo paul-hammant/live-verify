@@ -18,7 +18,7 @@ It's a huge target for fraud—fake apostilles are often used to "legalize" fake
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 3px solid #000; background: #fff; padding: 40px; position: relative;">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
-    <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 2px;" verifiable-text="start" data-for="apostille"><span>[</span>APOSTILLE</h2>
+    <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 2px;"><span verifiable-text="start" data-for="apostille">[</span>APOSTILLE</h2>
     <div style="font-size: 0.9em;">(Convention de La Haye du 5 octobre 1961)</div>
   </div>
 <div style="font-size: 0.9em; line-height: 1.8;">

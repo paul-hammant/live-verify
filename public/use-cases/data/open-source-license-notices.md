@@ -15,7 +15,7 @@ When you buy a Smart TV, a car, or a router, it usually comes with a dense bookl
 A **Verified Compliance Notice** takes this static text and binds it to the manufacturer's domain. It proves that the manufacturer *knows* what code is in the box and stands behind the license offer (e.g., "Written Offer" to provide source code).
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', monospace; border: 1px solid #333; background: #f4f4f4; padding: 20px;">
-  <div style="text-align: center; font-weight: bold; margin-bottom: 15px;" verifiable-text="start" data-for="oss"><span>[</span>OPEN SOURCE SOFTWARE NOTICE</div>
+  <div style="text-align: center; font-weight: bold; margin-bottom: 15px;"><span verifiable-text="start" data-for="oss">[</span>OPEN SOURCE SOFTWARE NOTICE</div>
 <p>Product: SmartRouter X1000<br>
   Firmware: v2.4.1-stable<br>
   Manufacturer: NetGearLink Corp</p>

@@ -18,7 +18,7 @@ This is an official document—usually a **Secretary's Certificate**—where the
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
   <div style="text-align: center; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="corp"><span>[</span>SECRETARY'S CERTIFICATE OF RESOLUTION</div>
+    <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="corp">[</span>SECRETARY'S CERTIFICATE OF RESOLUTION</div>
     <div style="font-size: 0.9em; margin-top: 5px;">OF THE BOARD OF DIRECTORS OF</div>
     <div style="font-weight: bold; font-size: 1.1em; margin-top: 5px;">WAYSTAR ROYCO CORP.</div>
   </div>

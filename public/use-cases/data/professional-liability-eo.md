@@ -19,7 +19,7 @@ It is the "Insurance for Brainwork." If an architect's design causes a balcony t
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Helvetica', sans-serif; border: 2px solid #37474f; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="background: #37474f; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="eo"><span>[</span>HISCOX INSURANCE CO.</div>
+      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="eo">[</span>HISCOX INSURANCE CO.</div>
       <div style="font-size: 0.8em; opacity: 0.8;">Professional Liability Division</div>
     </div>
     <div style="text-align: right;">

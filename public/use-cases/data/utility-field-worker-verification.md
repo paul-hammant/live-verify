@@ -18,7 +18,7 @@ OCR-to-hash allows a homeowner to scan the worker's ID badge to verify: **"Is th
 
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #0066cc; border-radius: 10px; background: #fff; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
   <div style="background: #0066cc; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
-    <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 1px;" verifiable-text="start" data-for="utility"><span>[</span>CONSOLIDATED EDISON</div>
+    <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 1px;"><span verifiable-text="start" data-for="utility">[</span>CONSOLIDATED EDISON</div>
     <div style="font-size: 0.7em; text-align: right; opacity: 0.9;">AUTHORIZED<br>FIELD SERVICE</div>
   </div>
 <div style="padding: 20px; display: flex; border-bottom: 1px solid #eee;">
@@ -112,7 +112,7 @@ _[Content merged from: meter-reader-surveyor-verification]_
   <div style="background: #004a99; color: #fff; padding: 15px; text-align: center; display: flex; align-items: center; justify-content: center;">
     <div style="font-size: 1.5em; margin-right: 10px;">⚡</div>
     <div>
-      <h3 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;" verifiable-text="start" data-for="meter"><span>[</span>CON-EDISON</h3>
+      <h3 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;"><span verifiable-text="start" data-for="meter">[</span>CON-EDISON</h3>
       <div style="font-size: 0.8em; opacity: 0.8;">OFFICIAL UTILITY SERVICE</div>
     </div>
   </div>

@@ -17,7 +17,7 @@ These documents are the primary target for **Trade Finance Fraud**. Scammers use
 <div style="max-width: 700px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 1px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="background: #ef6c00; color: #fff; padding: 15px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div>
-      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;" verifiable-text="start" data-for="trade"><span>[</span>MSC MEDITERRANEAN SHIPPING</div>
+      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;"><span verifiable-text="start" data-for="trade">[</span>MSC MEDITERRANEAN SHIPPING</div>
       <div style="font-size: 0.7em; opacity: 0.8; text-transform: uppercase;">Avenue Eugène-Pittard 40, Geneva</div>
     </div>
     <div style="text-align: right;">
@@ -144,7 +144,7 @@ These papers are the primary tools for **Tariff Evasion**. Fraud is high-stakes:
 
 <div style="max-width: 650px; margin: 24px auto; font-family: 'Times New Roman', Times, serif; border: 1px solid #333; background: #fff; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.4em; color: #003366; letter-spacing: 1px;" verifiable-text="start" data-for="origin"><span>[</span>LONDON CHAMBER OF COMMERCE</div>
+    <div style="font-weight: bold; font-size: 1.4em; color: #003366; letter-spacing: 1px;"><span verifiable-text="start" data-for="origin">[</span>LONDON CHAMBER OF COMMERCE</div>
     <div style="font-size: 0.85em; text-transform: uppercase;">Official Certificate of Origin</div>
   </div>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
@@ -259,7 +259,7 @@ This document is the primary engine for **Trade-Based Money Laundering (TBML)** 
 <div style="max-width: 700px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 1px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="padding: 25px; border-bottom: 2px solid #000; background: #f9f9f9; display: flex; justify-content: space-between; align-items: flex-start;">
     <div>
-      <div style="font-weight: bold; font-size: 1.4em;" verifiable-text="start" data-for="invoice"><span>[</span>GLOBAL TEXTILES EXPORT LTD.</div>
+      <div style="font-weight: bold; font-size: 1.4em;"><span verifiable-text="start" data-for="invoice">[</span>GLOBAL TEXTILES EXPORT LTD.</div>
       <div style="font-size: 0.8em; color: #666;">VAT ID: AE-99228877 • Dubai, UAE</div>
     </div>
     <div style="text-align: right;">

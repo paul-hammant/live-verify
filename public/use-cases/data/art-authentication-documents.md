@@ -21,7 +21,7 @@ High-end art is a target for money laundering. Verified appraisals ensure that a
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #ccc; background: #fffef5; padding: 40px; box-shadow: 2px 2px 15px rgba(0,0,0,0.05);">
   <div style="text-align: center; border-bottom: 1px solid #000; padding-bottom: 20px; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;" verifiable-text="start" data-for="appraisal"><span>[</span>SOTHEBY'S ADVISORY</div>
+    <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;"><span verifiable-text="start" data-for="appraisal">[</span>SOTHEBY'S ADVISORY</div>
     <div style="font-size: 0.8em; color: #666; margin-top: 5px;">APPRAISAL & VALUATION SERVICES</div>
   </div>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
@@ -127,7 +127,7 @@ Forgeries are common. Fraudsters often forge the "paperwork" (the COA) using fak
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 3px double #000; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="text-align: center; margin-bottom: 30px;">
-    <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 2px;" verifiable-text="start" data-for="art"><span>[</span>CERTIFICATE OF AUTHENTICITY</h2>
+    <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 2px;"><span verifiable-text="start" data-for="art">[</span>CERTIFICATE OF AUTHENTICITY</h2>
   </div>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <p>This document certifies that the following work of art is an original work by the artist named herein.</p>
@@ -234,7 +234,7 @@ OCR-to-Hash allows a collector to verify that their "14 / 50" is an officially r
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 2px solid #444; background: #fff; padding: 40px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <div style="text-align: center; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 2px;" verifiable-text="start" data-for="edition"><span>[</span>PACE EDITIONS</div>
+    <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 2px;"><span verifiable-text="start" data-for="edition">[</span>PACE EDITIONS</div>
     <div style="font-size: 0.8em; color: #666; margin-top: 5px;">NEW YORK • LONDON • HONG KONG</div>
   </div>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
@@ -344,7 +344,7 @@ These letters are high-value targets for forgery—criminals create fake "expert
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 1px solid #000; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="text-align: center; margin-bottom: 30px;">
-    <h3 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;" verifiable-text="start" data-for="sig"><span>[</span>Signature Authentication Letter</h3>
+    <h3 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;"><span verifiable-text="start" data-for="sig">[</span>Signature Authentication Letter</h3>
     <div style="font-size: 0.8em; color: #666; margin-top: 5px;">THE INTERNATIONAL FOUNDATION FOR ART RESEARCH (IFAR)</div>
   </div>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
@@ -450,7 +450,7 @@ Verified provenance documentation is the "History of Truth" that allows million-
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #999; background: #fff; padding: 40px; box-shadow: 2px 2px 10px rgba(0,0,0,0.05);">
   <div style="text-align: center; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.3em; letter-spacing: 1px;" verifiable-text="start" data-for="prov"><span>[</span>CHRISTIE'S PROVENANCE RESEARCH</div>
+    <div style="font-weight: bold; font-size: 1.3em; letter-spacing: 1px;"><span verifiable-text="start" data-for="prov">[</span>CHRISTIE'S PROVENANCE RESEARCH</div>
     <div style="font-size: 0.8em; color: #666; margin-top: 5px;">ARCHIVAL DEPARTMENT • LONDON</div>
   </div>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">

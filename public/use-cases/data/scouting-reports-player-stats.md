@@ -17,7 +17,7 @@ These documents are the "Resumes" of the sports world. They determine who gets a
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Arial Black', Arial, sans-serif; border: 4px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="background: #d32f2f; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;" verifiable-text="start" data-for="scout"><span>[</span>NATIONAL SCOUTING BUREAU</div>
+      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;"><span verifiable-text="start" data-for="scout">[</span>NATIONAL SCOUTING BUREAU</div>
       <div style="font-size: 0.8em; opacity: 0.9;">Official Prospect Evaluation</div>
     </div>
     <div style="text-align: right;">

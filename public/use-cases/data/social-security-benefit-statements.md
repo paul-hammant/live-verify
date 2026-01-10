@@ -22,7 +22,7 @@ It is the primary document used for **Income Verification**:
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #000; padding-bottom: 15px; margin-bottom: 30px;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="ssa"><span>[</span>Social Security Administration</div>
+      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="ssa">[</span>Social Security Administration</div>
       <div style="font-size: 0.85em;">Important Information</div>
     </div>
     <div style="width: 50px; height: 50px; background: #eee; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.7em; text-align: center;">SSA<br>SEAL</div>

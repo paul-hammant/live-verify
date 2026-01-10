@@ -16,7 +16,7 @@ Government regulators (like the FTC) now require these fees to be clearly disclo
 
 <div style="max-width: 500px; margin: 24px auto; font-family: 'Georgia', serif; border: 1px solid #999; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="background: #1a237e; color: #fff; padding: 20px; text-align: center;">
-    <div style="font-size: 1.4em; font-weight: bold; letter-spacing: 2px;" verifiable-text="start" data-for="resort"><span>[</span>THE GRAND AZURE RESORT</div>
+    <div style="font-size: 1.4em; font-weight: bold; letter-spacing: 2px;"><span verifiable-text="start" data-for="resort">[</span>THE GRAND AZURE RESORT</div>
     <div style="font-size: 0.7em; opacity: 0.8; text-transform: uppercase; margin-top: 5px;">MANDATORY FEE DISCLOSURE & RECEIPT</div>
   </div>
 <div style="padding: 25px; font-size: 0.9em; line-height: 1.5; color: #333;">

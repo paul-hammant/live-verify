@@ -21,7 +21,7 @@ The most critical document in this process is **Letters Testamentary** (or Lette
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 1px solid #333; background: #fff; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="text-align: center; margin-bottom: 30px;">
-    <div style="font-size: 1.3em; font-weight: bold; text-transform: uppercase;" verifiable-text="start" data-for="probate"><span>[</span>Superior Court of California</div>
+    <div style="font-size: 1.3em; font-weight: bold; text-transform: uppercase;"><span verifiable-text="start" data-for="probate">[</span>Superior Court of California</div>
     <div style="font-size: 0.9em; letter-spacing: 1px;">COUNTY OF LOS ANGELES</div>
   </div>
 <h2 style="text-align: center; font-size: 1.4em; text-decoration: underline; margin-bottom: 25px;">LETTERS TESTAMENTARY</h2>

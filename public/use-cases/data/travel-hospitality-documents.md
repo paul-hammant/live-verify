@@ -17,7 +17,7 @@ This sector faces massive high-volume fraud. From **Expense Reimbursement Fraud*
 <div style="max-width: 650px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="background: #002d62; color: #fff; padding: 25px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;" verifiable-text="start" data-for="travel"><span>[</span>SAP CONCUR</div>
+      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;"><span verifiable-text="start" data-for="travel">[</span>SAP CONCUR</div>
       <div style="font-size: 0.8em; opacity: 0.9; text-transform: uppercase;">Corporate Itinerary & Booking Summary</div>
     </div>
     <div style="font-size: 2em;">✈️</div>

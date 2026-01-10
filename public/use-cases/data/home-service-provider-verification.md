@@ -23,7 +23,7 @@ The **Verified Badge** is the worker's digital or physical ID. It proves:
   <div style="background: #1a237e; color: #fff; padding: 15px; text-align: center; display: flex; align-items: center; justify-content: center;">
     <div style="font-size: 1.5em; margin-right: 10px;">🛠️</div>
     <div>
-      <h3 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;" verifiable-text="start" data-for="home-serv"><span>[</span>VERIFIED TRADESPERSON</h3>
+      <h3 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;"><span verifiable-text="start" data-for="home-serv">[</span>VERIFIED TRADESPERSON</h3>
       <div style="font-size: 0.8em; opacity: 0.8;">OFFICIAL LICENSE & SAFETY CLEARANCE</div>
     </div>
   </div>

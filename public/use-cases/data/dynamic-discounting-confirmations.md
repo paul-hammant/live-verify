@@ -19,7 +19,7 @@ Suppliers use these **Early Payment Confirmations** to prove their cash flow to 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #002d62; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="discount"><span>[</span>C2FO DYNAMIC DISCOUNTING</div>
+      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="discount">[</span>C2FO DYNAMIC DISCOUNTING</div>
       <div style="font-size: 0.8em; opacity: 0.8;">Working Capital Verification</div>
     </div>
     <div style="text-align: right;">

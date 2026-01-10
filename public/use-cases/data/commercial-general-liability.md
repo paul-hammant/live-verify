@@ -19,7 +19,7 @@ Business owners must show these verified limits to win contracts. Fraudsters oft
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #1a237e; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
   <div style="background: #1a237e; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="cgl"><span>[</span>THE TRAVELERS COMPANIES</div>
+      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="cgl">[</span>THE TRAVELERS COMPANIES</div>
       <div style="font-size: 0.8em;">Commercial General Liability</div>
     </div>
     <div style="text-align: right;">

@@ -11,7 +11,7 @@ furtherDerivations: 1
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1); overflow: hidden;">
   <div style="background: #002d62; color: #fff; padding: 20px; display: flex; align-items: center; justify-content: space-between;">
     <div>
-      <div style="font-weight: bold; font-size: 1.1em;" verifiable-text="start" data-for="im-status"><span>[</span>U.S. CITIZENSHIP & IMMIGRATION</div>
+      <div style="font-weight: bold; font-size: 1.1em;"><span verifiable-text="start" data-for="im-status">[</span>U.S. CITIZENSHIP & IMMIGRATION</div>
       <div style="font-size: 0.8em;">Permanent Resident Card (I-551)</div>
     </div>
     <div style="font-size: 1.5em;">🦅</div>
