@@ -20,8 +20,8 @@ In industrial settings, machinery must be kept in a safe operating condition. Re
   </div>
   <div style="padding: 20px;">
     <div style="font-size: 0.9em; margin-bottom: 10px;">
-      <strong>Asset ID:</strong> <span verifiable-text="start" data-for="machinery">[</span>CNC-LATHE-9922<br>
-      <strong>Location:</strong> Machine Shop Floor B
+      <strong>Asset ID:</strong> CNC-LATHE-9922<br>
+      <strong verifiable-text="start" data-for="machinery"><span>[</span>Location:</strong> Machine Shop Floor B
     </div>
     <div style="background: #f9f9f9; border: 1px solid #ddd; padding: 10px; margin-bottom: 15px;">
       <strong>Last Inspected:</strong> 15 MAR 2026<br>

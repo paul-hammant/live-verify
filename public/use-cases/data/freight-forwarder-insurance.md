@@ -19,7 +19,7 @@ Big shippers (like Apple or Samsung) will not hire a forwarder without verified 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #0d47a1; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="background: #0d47a1; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;">TT CLUB</div>
+      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="forward"><span>[</span>TT CLUB</div>
       <div style="font-size: 0.8em; opacity: 0.8;">Specialist Logistics Underwriters</div>
     </div>
     <div style="text-align: right;">
@@ -31,7 +31,7 @@ Big shippers (like Apple or Samsung) will not hire a forwarder without verified 
 <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
       <p>This document confirms that the following Member is entered for Freight Forwarder Liability:</p>
 <div style="background: #f0f4f8; border: 1px solid #d1d9e6; padding: 15px; margin: 15px 0;">
-        <strong>Member Name:</strong> <span verifiable-text="start" data-for="forward">[</span>Global Logistics Solutions, Ltd.<br>
+        <strong>Member Name:</strong> Global Logistics Solutions, Ltd.<br>
         <strong>Region:</strong> Hong Kong / South East Asia
       </div>
 <p><strong>Cargo Liability:</strong> USD 500,000 per occurrence.<br>

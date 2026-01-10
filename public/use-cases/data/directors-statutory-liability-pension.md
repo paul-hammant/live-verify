@@ -19,7 +19,7 @@ Because these claims can hit 20 years after a person retires, the paperwork must
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 2px solid #2c3e50; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="background: #2c3e50; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;">AXA XL INSURANCE</div>
+      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="pension"><span>[</span>AXA XL INSURANCE</div>
       <div style="font-size: 0.8em; opacity: 0.8;">Fiduciary & Pension Trustee Liability</div>
     </div>
     <div style="text-align: right;">
@@ -31,7 +31,7 @@ Because these claims can hit 20 years after a person retires, the paperwork must
 <div style="font-size: 1em; line-height: 1.6; color: #333;">
       <p>This document confirms that the following individuals are insured for their fiduciary responsibilities under ERISA Section 409:</p>
 <div style="background: #fdfdfd; border: 1px solid #ddd; padding: 15px; margin: 20px 0;">
-        <p><strong>Pension Scheme:</strong> <span verifiable-text="start" data-for="pension">[</span>Globochem Retirement Master Trust<br>
+        <p><strong>Pension Scheme:</strong> Globochem Retirement Master Trust<br>
         <strong>Named Trustees:</strong> Peter Gibbons, Michael Bolton, Samir Nagheenanajar</p>
 <p><strong>Limit of Indemnity:</strong> $ 10,000,000.00<br>
         <strong>Self-Insured Retention:</strong> $ 100,000.00</p>

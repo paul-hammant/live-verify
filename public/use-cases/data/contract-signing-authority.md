@@ -16,11 +16,11 @@ When you're about to sign a major deal, you need to know: does the person across
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #003366; background: #fff; padding: 0;">
   <div style="background: #003366; color: #fff; padding: 15px;">
-    <div style="font-weight: bold; font-size: 1.1em;">CONTRACT SIGNING AUTHORITY</div>
+    <div style="font-weight: bold; font-size: 1.1em;" verifiable-text="start" data-for="contractsigningautho"><span>[</span>CONTRACT SIGNING AUTHORITY</div>
     <div style="font-size: 0.8em;">Delegation of Authority Confirmation</div>
   </div>
   <div style="padding: 20px; font-size: 0.9em; line-height: 1.6;">
-    <p><strong>Company:</strong> <span verifiable-text="start" data-for="contractsigningautho">[</span>Vertex Solutions Ltd<br>
+    <p><strong>Company:</strong> Vertex Solutions Ltd<br>
     <strong>Authorized Person:</strong> Michael Torres<br>
     <strong>Role:</strong> Commercial Director<br>
     <strong>Issued:</strong> January 1, 2026</p>

@@ -17,11 +17,11 @@ These documents are the primary evidence used for **Travel Insurance Claims**. A
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #d32f2f; color: #fff; padding: 25px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.4em;">BRITISH AIRWAYS</div>
+      <div style="font-weight: bold; font-size: 1.4em;" verifiable-text="start" data-for="cancel"><span>[</span>BRITISH AIRWAYS</div>
       <div style="font-size: 0.8em; opacity: 0.9;">Official Cancellation Notice</div>
     </div>
     <div style="text-align: right;">
-      <div style="font-size: 0.8em;">Booking Ref: <span verifiable-text="start" data-for="cancel">[</span>L7XK9B</div>
+      <div style="font-size: 0.8em;">Booking Ref: L7XK9B</div>
     </div>
   </div>
 <div style="padding: 25px;">

@@ -19,7 +19,7 @@ Fraud is common: fleet owners often "delete" expensive-to-insure trucks from the
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #004d40; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="background: #004d40; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;">PROGRESSIVE COMMERCIAL</div>
+      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="com-auto"><span>[</span>PROGRESSIVE COMMERCIAL</div>
       <div style="font-size: 0.8em;">Fleet & Logistics Division</div>
     </div>
     <div style="text-align: right;">
@@ -29,7 +29,7 @@ Fraud is common: fleet owners often "delete" expensive-to-insure trucks from the
 <div style="padding: 25px;">
     <h2 style="text-align: center; color: #004d40; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Proof of Commercial Insurance</h2>
 <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Insured:</strong> <span verifiable-text="start" data-for="com-auto">[</span>Lightning Logistics, LLC<br>
+      <p><strong>Insured:</strong> Lightning Logistics, LLC<br>
       <strong>DOT Number:</strong> 1234567</p>
 <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
         <tr style="background: #e8f5e9; border-bottom: 2px solid #004d40;">

@@ -17,12 +17,12 @@ These documents are the "Proof of Payout." Fraud is rampant in "Small-Town Conte
 <div style="max-width: 650px; margin: 24px auto; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; border: 2px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="background: #000; color: #fff; padding: 25px; display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid #d32f2f;">
     <div>
-      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;">HISCOX SPECIALTY</div>
+      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;" verifiable-text="start" data-for="prize"><span>[</span>HISCOX SPECIALTY</div>
       <div style="font-size: 0.8em; opacity: 0.9; text-transform: uppercase;">Prize Indemnity & Contingency Unit</div>
     </div>
     <div style="text-align: right;">
       <div style="font-weight: bold; font-size: 1.1em;">CERTIFICATE OF COVERAGE</div>
-      <div style="font-size: 0.7em;">Policy: <span verifiable-text="start" data-for="prize">[</span>PI-992288-XJ</div>
+      <div style="font-size: 0.7em;">Policy: PI-992288-XJ</div>
     </div>
   </div>
 <div style="padding: 25px;">

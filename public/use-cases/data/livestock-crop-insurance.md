@@ -11,7 +11,7 @@ furtherDerivations: 1
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #388e3c; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="background: #388e3c; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;">NAU COUNTRY INSURANCE</div>
+      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="ag-pol"><span>[</span>NAU COUNTRY INSURANCE</div>
       <div style="font-size: 0.8em; opacity: 0.9;">Multi-Peril Crop Insurance (MPCI)</div>
     </div>
     <div style="text-align: right;">
@@ -21,7 +21,7 @@ furtherDerivations: 1
 <div style="padding: 25px;">
     <h2 style="text-align: center; color: #388e3c; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Summary of Coverage</h2>
 <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Insured:</strong> <span verifiable-text="start" data-for="ag-pol">[</span>Miller Family Farms, Inc.<br>
+      <p><strong>Insured:</strong> Miller Family Farms, Inc.<br>
       <strong>State/County:</strong> Iowa / Story (FIPS 19169)</p>
 <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
         <tr style="background: #f1f8e9; border-bottom: 2px solid #388e3c;">

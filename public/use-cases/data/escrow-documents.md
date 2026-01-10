@@ -19,7 +19,7 @@ Because banks manage millions of these accounts, clerical errors are frequent. V
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <div style="background: #003366; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;">MR. COOPER MORTGAGE</div>
+      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="escrow"><span>[</span>MR. COOPER MORTGAGE</div>
       <div style="font-size: 0.8em;">Annual Escrow Account Disclosure Statement</div>
     </div>
     <div style="text-align: right;">
@@ -30,7 +30,7 @@ Because banks manage millions of these accounts, clerical errors are frequent. V
     <div style="display: flex; justify-content: space-between; font-size: 0.9em; margin-bottom: 20px; color: #555;">
       <div>
         <strong>Property Address:</strong><br>
-        <span verifiable-text="start" data-for="escrow">[</span>123 Maple Street<br>
+        123 Maple Street<br>
         Anytown, USA 12345
       </div>
       <div style="text-align: right;">
@@ -147,7 +147,7 @@ Hackers often "spoof" an escrow officer's email and send "Updated Wire Instructi
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #000; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 25px;">
-    <div style="font-weight: bold; font-size: 1.2em;">FIRST AMERICAN TITLE COMPANY</div>
+    <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="escrow-wire"><span>[</span>FIRST AMERICAN TITLE COMPANY</div>
     <div style="font-size: 0.85em; color: #666;">Official Wire Instructions & Closing Package</div>
   </div>
 <div style="font-size: 1em; line-height: 1.6; color: #333;">
@@ -155,7 +155,7 @@ Hackers often "spoof" an escrow officer's email and send "Updated Wire Instructi
 <div style="background: #fdf2f2; border: 2px solid #d32f2f; padding: 15px; margin: 20px 0;">
       <p style="color: #d32f2f; font-weight: bold; margin-top: 0;">⚠️ MANDATORY VERIFICATION REQUIRED</p>
       <p>Before wiring any funds, scan the hash below to verify these bank details directly against our secure server.</p>
-<strong>Beneficiary Bank:</strong> <span verifiable-text="start" data-for="escrow-wire">[</span>Wells Fargo, N.A.<br>
+<strong>Beneficiary Bank:</strong> Wells Fargo, N.A.<br>
       <strong>Account Name:</strong> First American Escrow Account<br>
       <strong>Account #:</strong> ****-****-9988<br>
       <strong>Routing #:</strong> 123456789<br>
@@ -264,7 +264,7 @@ In high-stakes deals, fraudsters (or disgruntled partners) often "Edit" the PDF 
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', serif; border: 1px solid #000; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
-    <div style="font-weight: bold; font-size: 1.2em;">J.P. MORGAN ESCROW SERVICES</div>
+    <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="ma"><span>[</span>J.P. MORGAN ESCROW SERVICES</div>
     <div style="font-size: 0.9em;">FINAL SETTLEMENT STATEMENT</div>
   </div>
 <div style="font-size: 0.9em; line-height: 1.5; color: #333;">
@@ -272,7 +272,7 @@ In high-stakes deals, fraudsters (or disgruntled partners) often "Edit" the PDF 
 <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
       <tr>
         <td style="padding: 5px 0;">Gross Purchase Price</td>
-        <td style="text-align: right; font-weight: bold;"><span verifiable-text="start" data-for="ma">[</span>$ 50,000,000.00</td>
+        <td style="text-align: right; font-weight: bold;">$ 50,000,000.00</td>
       </tr>
       <tr>
         <td style="padding: 5px 0; color: #c62828;">Indemnity Holdback (12 Months)</td>
@@ -353,14 +353,14 @@ Fraud is rampant: scammers often send fake "Updated Instructions" to the escrow 
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', serif; border: 1px solid #000; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
-    <div style="font-weight: bold; font-size: 1.2em;">STEWART TITLE GUARANTY</div>
+    <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="escrow-inst"><span>[</span>STEWART TITLE GUARANTY</div>
     <div style="font-size: 0.9em;">DISBURSEMENT AUTHORIZATION</div>
   </div>
 <div style="font-size: 1em; line-height: 1.6; color: #333;">
     <p>The undersigned Seller hereby authorizes Stewart Title to disburse the proceeds of Escrow #992288 as follows:</p>
 <div style="background: #f9f9f9; padding: 15px; border: 1px solid #eee; margin: 20px 0;">
       <strong>Wire Transfer to:</strong><br>
-      Bank: <span verifiable-text="start" data-for="escrow-inst">[</span>Chase Bank, N.A.<br>
+      Bank: Chase Bank, N.A.<br>
       Account Name: SARAH J. DOE<br>
       Account #: ****-****-9922<br>
       <strong>Amount: $ 442,500.42</strong>

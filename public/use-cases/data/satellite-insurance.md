@@ -17,7 +17,7 @@ These documents are the "Proof of Mission." Fraud is extremely rare but high-imp
 <div style="max-width: 650px; margin: 24px auto; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; border: 2px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="background: #000; color: #fff; padding: 30px; display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid #ce9e00;">
     <div>
-      <div style="font-weight: bold; font-size: 1.5em; letter-spacing: 1px;">AXA XL SPACE</div>
+      <div style="font-weight: bold; font-size: 1.5em; letter-spacing: 1px;" verifiable-text="start" data-for="space"><span>[</span>AXA XL SPACE</div>
       <div style="font-size: 0.8em; opacity: 0.9; text-transform: uppercase;">Aviation & Space Risk Division</div>
     </div>
     <div style="font-size: 2.2em;">🛰️</div>
@@ -25,7 +25,7 @@ These documents are the "Proof of Mission." Fraud is extremely rare but high-imp
 <div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
-        <strong>Operator:</strong> <span verifiable-text="start" data-for="space">[</span>SKY-NET COMMUNICATIONS INC.<br>
+        <strong>Operator:</strong> SKY-NET COMMUNICATIONS INC.<br>
         <strong>Satellite ID:</strong> SN-2026-042 (Alpha-Sat)<br>
         <strong>COSPAR ID:</strong> 2026-992A (Pending)
       </div>

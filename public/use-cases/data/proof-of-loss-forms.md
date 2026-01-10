@@ -16,13 +16,13 @@ This document is the "Trigger for Payout." Fraud is high-stakes: claimants often
 
 <div style="max-width: 650px; margin: 24px auto; font-family: 'Times New Roman', Times, serif; border: 1px solid #333; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 30px;">
-    <h2 style="margin: 0; font-size: 1.4em; text-transform: uppercase; letter-spacing: 1px;">SWORN STATEMENT IN PROOF OF LOSS</h2>
+    <h2 style="margin: 0; font-size: 1.4em; text-transform: uppercase; letter-spacing: 1px;" verifiable-text="start" data-for="loss"><span>[</span>SWORN STATEMENT IN PROOF OF LOSS</h2>
     <div style="font-size: 0.9em; font-style: italic;">Official Claim Document</div>
   </div>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333; text-align: justify;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px; font-weight: bold;">
       <div>POLICY #: 99228877-XJ</div>
-      <div>CLAIM #: <span verifiable-text="start" data-for="loss">[</span>CL-2026-8844</div>
+      <div>CLAIM #: CL-2026-8844</div>
     </div>
 <p>To the <strong>GOLIATH INSURANCE COMPANY</strong> of Springfield, USA.</p>
 <p>At time of loss, the total amount of insurance upon the property described was <strong>$ 250,000.00</strong>. The said loss occurred on the 15th day of March, 2026 about the hour of 02:15 PM.</p>

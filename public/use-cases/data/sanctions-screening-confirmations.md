@@ -16,11 +16,11 @@ If you do business with a sanctioned party, even accidentally, the penalties are
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #8B0000; background: #fff; padding: 0;">
   <div style="background: #8B0000; color: #fff; padding: 15px;">
-    <div style="font-weight: bold; font-size: 1.1em;">SANCTIONS SCREENING CONFIRMATION</div>
+    <div style="font-weight: bold; font-size: 1.1em;" verifiable-text="start" data-for="sanctionsscreeningco"><span>[</span>SANCTIONS SCREENING CONFIRMATION</div>
     <div style="font-size: 0.8em;">Financial Crime Compliance</div>
   </div>
   <div style="padding: 20px; font-size: 0.9em; line-height: 1.6;">
-    <p><strong>Screened Party:</strong> <span verifiable-text="start" data-for="sanctionsscreeningco">[</span>Meridian Trading GmbH<br>
+    <p><strong>Screened Party:</strong> Meridian Trading GmbH<br>
     <strong>Screening Date:</strong> February 15, 2026 14:32:01 UTC<br>
     <strong>Reference:</strong> SCR-2026-00442871</p>
 <div style="background: #f5fff5; padding: 15px; margin: 15px 0; border: 1px solid #228B22;">

@@ -18,7 +18,7 @@ The problem is that "Agent ID Cards" are not standardized and are easy to fake. 
   <div style="background: #d32f2f; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
     <div style="display: flex; align-items: center;">
       <div style="font-size: 1.5em; margin-right: 10px;">🏠</div>
-      <div style="font-weight: bold; font-size: 1.1em; letter-spacing: 1px;">REALTOR&reg; VERIFIED</div>
+      <div style="font-weight: bold; font-size: 1.1em; letter-spacing: 1px;" verifiable-text="start" data-for="agent"><span>[</span>REALTOR&reg; VERIFIED</div>
     </div>
     <div style="text-align: right;">
       <div style="font-size: 0.7em; font-weight: bold; opacity: 0.9;">STATE LICENSED PRO</div>
@@ -30,7 +30,7 @@ The problem is that "Agent ID Cards" are not standardized and are easy to fake. 
     </div>
     <div style="flex-grow: 1;">
       <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Professional Name</div>
-      <div style="font-size: 1.2em; font-weight: bold; margin: 0 0 10px 0; color: #333;"><span verifiable-text="start" data-for="agent">[</span>SARAH J. SMITH</div>
+      <div style="font-size: 1.2em; font-weight: bold; margin: 0 0 10px 0; color: #333;">SARAH J. SMITH</div>
 <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">License #</div>
       <div style="font-size: 1em; font-weight: bold; margin: 0 0 10px 0;">ID: RE-992288-Z</div>
 <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Brokerage</div>

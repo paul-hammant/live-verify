@@ -19,7 +19,7 @@ This certificate is the "License to Sell" to big retailers. Shady factories that
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #000; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;">SQF INSTITUTE</div>
+      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="food-safe"><span>[</span>SQF INSTITUTE</div>
       <div style="font-size: 0.8em; opacity: 0.8;">Food Safety Code for Manufacturing</div>
     </div>
     <div style="text-align: right;">
@@ -30,7 +30,7 @@ This certificate is the "License to Sell" to big retailers. Shady factories that
     <h2 style="margin: 0; color: #333; font-size: 1.4em;">CERTIFICATE OF REGISTRATION</h2>
 <div style="font-size: 1.1em; line-height: 1.6; color: #333; margin: 25px 0;">
       This is to certify that<br>
-      <span verifiable-text="start" data-for="food-safe">[</span><strong>APEX FOOD PROCESSING, LLC</strong><br>
+      <strong>APEX FOOD PROCESSING, LLC</strong><br>
       123 Industrial Way, Chicago, IL 60601
     </div>
 <div style="background: #f9f9f9; padding: 15px; border: 1px solid #eee; margin-bottom: 25px; text-align: left; font-size: 0.9em;">

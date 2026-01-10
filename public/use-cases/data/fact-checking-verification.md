@@ -18,11 +18,11 @@ It allows a reader to scan the text and see a green "VERIFIED" status from an in
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #ccc; background: #fffef8; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #1a1a2e; color: white; padding: 15px 20px; text-align: center;">
-    <div style="font-size: 2.2em; font-weight: bold; letter-spacing: 3px;">THE DAILY PLANET</div>
+    <div style="font-size: 2.2em; font-weight: bold; letter-spacing: 3px;" verifiable-text="start" data-for="fact"><span>[</span>THE DAILY PLANET</div>
     <div style="font-size: 0.85em; margin-top: 4px; opacity: 0.8;">METROPOLIS • TRUTH, JUSTICE, AND VERIFIED FACTS</div>
   </div>
   <div style="padding: 25px;">
-    <h2 style="font-size: 1.6em; margin: 0 0 10px 0; line-height: 1.2; color: #1a1a2e;"><span verifiable-text="start" data-for="fact">[</span>LexCorp Tower Fire: 47 Rescued, No Casualties</h2>
+    <h2 style="font-size: 1.6em; margin: 0 0 10px 0; line-height: 1.2; color: #1a1a2e;">LexCorp Tower Fire: 47 Rescued, No Casualties</h2>
     <div style="font-size: 0.9em; color: #666; margin-bottom: 16px;">
       By <strong>Lois Lane</strong> | Metro Desk | March 15, 2026
     </div>

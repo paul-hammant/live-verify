@@ -18,7 +18,7 @@ OCR-to-hash allows a diner to scan the window sticker to verify: **"Is this the 
 
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 4px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #333333; color: #fff; padding: 15px; text-align: center;">
-    <h3 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">Food Hygiene Rating</h3>
+    <h3 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;" verifiable-text="start" data-for="food"><span>[</span>Food Hygiene Rating</h3>
   </div>
 <div style="padding: 25px; text-align: center; background: #ffffcc;">
     <div style="font-size: 0.8em; color: #666; margin-bottom: 5px;">FOOD STANDARDS AGENCY</div>
@@ -32,7 +32,7 @@ OCR-to-hash allows a diner to scan the window sticker to verify: **"Is this the 
     </div>
 <div style="font-size: 1.2em; font-weight: bold; color: #2e7d32; margin-bottom: 15px;">VERY GOOD</div>
 <div style="font-size: 0.9em; line-height: 1.4; color: #333; border-top: 1px solid #ccc; padding-top: 15px;">
-      <strong>Establishment:</strong> <span verifiable-text="start" data-for="food">[</span>THE SPICY TACO BAR<br>
+      <strong>Establishment:</strong> THE SPICY TACO BAR<br>
       <strong>Last Inspected:</strong> MARCH 15, 2026<br>
       <strong>Address:</strong> 42 HIGH STREET, LONDON
     </div>

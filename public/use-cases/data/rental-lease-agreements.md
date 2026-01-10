@@ -21,7 +21,7 @@ Beyond the relationship between the two parties, a lease is used by third partie
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.2em; color: #2c3e50;">SKYLINE PROPERTY MGMT</div>
+    <div style="font-weight: bold; font-size: 1.2em; color: #2c3e50;" verifiable-text="start" data-for="lease"><span>[</span>SKYLINE PROPERTY MGMT</div>
     <div style="text-align: right; font-size: 0.8em; color: #666;">
       Agreement ID: L-992288-26<br>
       March 15, 2026
@@ -29,7 +29,7 @@ Beyond the relationship between the two parties, a lease is used by third partie
   </div>
 <h3 style="text-align: center; text-transform: uppercase; margin-bottom: 25px; letter-spacing: 1px;">Residential Lease Summary</h3>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
-    <p>This certifies a valid lease agreement exists between <span verifiable-text="start" data-for="lease">[</span><strong>Landlord:</strong> Skyline Heights, LLC and <strong>Tenant:</strong> Sarah J. Connor.</p>
+    <p>This certifies a valid lease agreement exists between <strong>Landlord:</strong> Skyline Heights, LLC and <strong>Tenant:</strong> Sarah J. Connor.</p>
 <div style="background: #fdfdfd; padding: 15px; border: 1px solid #eee; margin: 20px 0;">
       <p><strong>Premises:</strong> 4500 Skyline Blvd, Apt 402, Austin, TX 78701</p>
       <table style="width: 100%; font-size: 0.95em;">

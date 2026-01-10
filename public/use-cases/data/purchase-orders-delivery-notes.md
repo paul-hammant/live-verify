@@ -17,12 +17,12 @@ These documents are high-value targets for **Invoice Factoring Fraud**. A dishon
 <div style="max-width: 650px; margin: 24px auto; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="padding: 25px; border-bottom: 2px solid #000; display: flex; justify-content: space-between; align-items: flex-start;">
     <div>
-      <div style="font-weight: bold; font-size: 1.4em; color: #333;">ACME MANUFACTURING CORP.</div>
+      <div style="font-weight: bold; font-size: 1.4em; color: #333;" verifiable-text="start" data-for="po"><span>[</span>ACME MANUFACTURING CORP.</div>
       <div style="font-size: 0.8em; color: #666; margin-top: 5px;">Procurement Office • 123 Factory Lane</div>
     </div>
     <div style="text-align: right;">
       <h2 style="margin: 0; color: #000; font-size: 1.5em; letter-spacing: 1px;">PURCHASE ORDER</h2>
-      <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px; color: #d32f2f;"># <span verifiable-text="start" data-for="po">[</span>PO-2026-992288</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px; color: #d32f2f;"># PO-2026-992288</div>
     </div>
   </div>
 <div style="padding: 25px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.85em;">

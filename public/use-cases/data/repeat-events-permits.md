@@ -18,7 +18,7 @@ The problem is that these permits are often valid for 6 to 12 months. Shady vend
   <div style="background: #2e7d32; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
     <div style="font-size: 1.8em; margin-right: 15px;">🥬</div>
     <div style="text-align: right;">
-      <div style="font-weight: bold; font-size: 1.1em; letter-spacing: 1px;">CERTIFIED PRODUCER</div>
+      <div style="font-weight: bold; font-size: 1.1em; letter-spacing: 1px;" verifiable-text="start" data-for="market"><span>[</span>CERTIFIED PRODUCER</div>
       <div style="font-size: 0.75em; font-weight: bold; opacity: 0.9;">SPRINGFIELD FARMERS MARKET</div>
     </div>
   </div>
@@ -26,7 +26,7 @@ The problem is that these permits are often valid for 6 to 12 months. Shady vend
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px; border-bottom: 2px solid #eee; padding-bottom: 10px;">
       <div>
         <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Vendor Name</div>
-        <div style="font-size: 1.2em; font-weight: bold; color: #2e7d32;"><span verifiable-text="start" data-for="market">[</span>GREEN ACRES FAMILY FARM</div>
+        <div style="font-size: 1.2em; font-weight: bold; color: #2e7d32;">GREEN ACRES FAMILY FARM</div>
       </div>
       <div style="text-align: right;">
         <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Stall Assignment</div>

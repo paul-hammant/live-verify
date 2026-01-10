@@ -11,7 +11,7 @@ furtherDerivations: 2
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1); overflow: hidden;">
   <div style="background: #002d62; color: #fff; padding: 20px; display: flex; align-items: center; justify-content: space-between;">
     <div>
-      <div style="font-weight: bold; font-size: 1.1em;">REVOLUT BANK</div>
+      <div style="font-weight: bold; font-size: 1.1em;" verifiable-text="start" data-for="kyc-id"><span>[</span>REVOLUT BANK</div>
       <div style="font-size: 0.8em; opacity: 0.8;">Customer Onboarding & Identity Vetting</div>
     </div>
     <div style="font-size: 1.5em;">🏦</div>
@@ -22,7 +22,7 @@ furtherDerivations: 2
     </div>
     <div style="flex-grow: 1;">
       <h3 style="margin: 0; color: #002d62;">VERIFIED CUSTOMER PROFILE</h3>
-      <div style="font-size: 1.1em; font-weight: bold; margin: 10px 0;"><span verifiable-text="start" data-for="kyc-id">[</span>DOE, JOHN JACOB</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin: 10px 0;">DOE, JOHN JACOB</div>
 <div style="font-size: 0.9em; color: #333; line-height: 1.5;">
         <strong>Document:</strong> US Passport #*******1234<br>
         <strong>DOB:</strong> May 15, 1985<br>
@@ -117,7 +117,7 @@ _[Content merged from: kyc-proof-of-address]_
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #004a99; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;">CON-EDISON</div>
+      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="address"><span>[</span>CON-EDISON</div>
       <div style="font-size: 0.8em; opacity: 0.8;">Utility Bill & Proof of Service</div>
     </div>
     <div style="text-align: right;">
@@ -128,7 +128,7 @@ _[Content merged from: kyc-proof-of-address]_
     <div style="border-bottom: 2px solid #004a99; padding-bottom: 10px; margin-bottom: 20px;">
       <h3 style="margin: 0; color: #333;">SERVICE ADDRESS</h3>
       <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px; color: #004a99;">
-        <span verifiable-text="start" data-for="address">[</span>123 Bleecker Street, Apt 4B<br>
+        123 Bleecker Street, Apt 4B<br>
         New York, NY 10012
       </div>
     </div>

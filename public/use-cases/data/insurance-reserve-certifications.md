@@ -10,7 +10,7 @@ furtherDerivations: 3
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 1px solid #333; background: #fff; padding: 40px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.1em; color: #1a237e;">PRUDENTIAL FINANCIAL SERVICES</div>
+    <div style="font-weight: bold; font-size: 1.1em; color: #1a237e;" verifiable-text="start" data-for="life-res"><span>[</span>PRUDENTIAL FINANCIAL SERVICES</div>
     <div style="text-align: right; font-size: 0.8em; color: #666;">
       Statutory Filing: RES-2026-09<br>
       March 15, 2026
@@ -18,7 +18,7 @@ furtherDerivations: 3
   </div>
 <h3 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; color: #1a237e; border-bottom: 2px solid #1a237e; padding-bottom: 10px;">Statement of Actuarial Opinion (SAO)</h3>
 <div style="font-size: 0.95em; line-height: 1.6; text-align: justify; color: #333; margin-top: 20px;">
-    <p>I, <span verifiable-text="start" data-for="life-res">[</span><strong>Robert Miller, FSA, MAAA</strong>, Appointed Actuary for Prudential, do hereby certify that the aggregate reserves for the <strong>Individual Life Insurance Portfolio</strong> as of Dec 31, 2025:</p>
+    <p>I, <strong>Robert Miller, FSA, MAAA</strong>, Appointed Actuary for Prudential, do hereby certify that the aggregate reserves for the <strong>Individual Life Insurance Portfolio</strong> as of Dec 31, 2025:</p>
 <ul>
       <li>Are calculated in accordance with the Valuation Manual (VM-20).</li>
       <li>Meet the requirements of the insurance laws of the State of New Jersey.</li>
@@ -110,7 +110,7 @@ _[Content merged from: ltc-insurance-reserve-certifications]_
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 1px solid #333; background: #fff; padding: 40px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.1em; color: #1a237e;">GENWORTH FINANCIAL</div>
+    <div style="font-weight: bold; font-size: 1.1em; color: #1a237e;" verifiable-text="start" data-for="ltc-res"><span>[</span>GENWORTH FINANCIAL</div>
     <div style="text-align: right; font-size: 0.8em; color: #666;">
       Compliance Filing: LTC-RES-2026<br>
       March 15, 2026
@@ -118,7 +118,7 @@ _[Content merged from: ltc-insurance-reserve-certifications]_
   </div>
 <h3 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; color: #1a237e; border-bottom: 2px solid #1a237e; padding-bottom: 10px;">Statement of Actuarial Opinion (LTC)</h3>
 <div style="font-size: 0.95em; line-height: 1.6; text-align: justify; color: #333; margin-top: 20px;">
-    <p>I, <span verifiable-text="start" data-for="ltc-res">[</span><strong>Robert Miller, FSA, MAAA</strong>, do hereby certify that the statutory reserves for the <strong>LTC Block IV Portfolio</strong> as of Dec 31, 2025:</p>
+    <p>I, <strong>Robert Miller, FSA, MAAA</strong>, do hereby certify that the statutory reserves for the <strong>LTC Block IV Portfolio</strong> as of Dec 31, 2025:</p>
 <ul>
       <li>Are adequate based on current morbidity and lapse rate assumptions.</li>
       <li>Incorporate margin for adverse deviation in interest rates.</li>
@@ -216,13 +216,13 @@ These documents are the "Proof of Solvency." Fraud is high-stakes in **M&A (Merg
 
 <div style="max-width: 650px; margin: 24px auto; font-family: 'Times New Roman', Times, serif; border: 2px solid #000; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 15px; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.4em; color: #003366;">HARTFORD LOSS CONTROL SERVICES</div>
+    <div style="font-weight: bold; font-size: 1.4em; color: #003366;" verifiable-text="start" data-for="reserve"><span>[</span>HARTFORD LOSS CONTROL SERVICES</div>
     <div style="font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">Official Loss Reserve Attestation</div>
   </div>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px;">
       <div>
-        <strong>Insured:</strong> <span verifiable-text="start" data-for="reserve">[</span>GOLIATH LOGISTICS CORP.<br>
+        <strong>Insured:</strong> GOLIATH LOGISTICS CORP.<br>
         <strong>Policy #:</strong> WC-99228877-Z
       </div>
       <div style="text-align: right;">

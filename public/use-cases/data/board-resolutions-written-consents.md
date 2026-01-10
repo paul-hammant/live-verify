@@ -10,13 +10,13 @@ furtherDerivations: 1
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
   <div style="text-align: center; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.2em;">ACTION BY UNANIMOUS WRITTEN CONSENT</div>
+    <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="board"><span>[</span>ACTION BY UNANIMOUS WRITTEN CONSENT</div>
     <div style="font-size: 0.9em; margin-top: 5px;">OF THE BOARD OF DIRECTORS OF</div>
     <div style="font-weight: bold; font-size: 1.1em; margin-top: 5px;">INITECH HOLDINGS, INC.</div>
   </div>
 <div style="font-size: 1em; line-height: 1.6; color: #333; text-align: justify;">
     <p>The undersigned, being all the members of the Board of Directors of Initech Holdings, Inc., a Delaware corporation (the "Company"), hereby take the following actions by written consent:</p>
-<p><strong><span verifiable-text="start" data-for="board">[</span>RESOLVED:</strong> That the Company is hereby authorized to enter into the Merger Agreement with Globochem Corp. dated as of March 15, 2026.</p>
+<p><strong>RESOLVED:</strong> That the Company is hereby authorized to enter into the Merger Agreement with Globochem Corp. dated as of March 15, 2026.</p>
 <p><strong>RESOLVED FURTHER:</strong> That the Officers of the Company are authorized to execute all such documents as are necessary to effectuate the foregoing resolution.</p>
   </div>
 <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">

@@ -16,9 +16,9 @@ Because this document governs the distribution of hundreds of thousands of dolla
 
 <div style="max-width: 700px; margin: 24px auto; font-family: 'Helvetica Neue', Arial, sans-serif; border: 1px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="background: #eee; padding: 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #000;">
-    <div style="font-weight: bold; font-size: 1.2em;">ALTA SETTLEMENT STATEMENT</div>
+    <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="settle"><span>[</span>ALTA SETTLEMENT STATEMENT</div>
     <div style="text-align: right;">
-      <div style="font-size: 0.8em; color: #666;">File #: <span verifiable-text="start" data-for="settle">[</span>ESC-99228877-XJ</div>
+      <div style="font-size: 0.8em; color: #666;">File #: ESC-99228877-XJ</div>
       <div style="font-size: 0.8em; color: #666;">Date: 15 MAR 2026</div>
     </div>
   </div>

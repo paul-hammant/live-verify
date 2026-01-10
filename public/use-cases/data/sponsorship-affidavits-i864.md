@@ -17,7 +17,7 @@ These documents are high-stakes legal instruments. Fraud is common: people often
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #000; padding-bottom: 15px; margin-bottom: 30px;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;">U.S. Citizenship and Immigration Services</div>
+      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="i864"><span>[</span>U.S. Citizenship and Immigration Services</div>
       <div style="font-size: 0.85em;">Department of Homeland Security</div>
     </div>
     <div style="width: 50px; height: 50px; background: #eee; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.7em; text-align: center;">DHS<br>SEAL</div>
@@ -26,7 +26,7 @@ These documents are high-stakes legal instruments. Fraud is common: people often
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <p><strong>Part 1. Basis for Filing:</strong> I am the petitioning sponsor.</p>
 <div style="background: #f9f9f9; padding: 15px; border: 1px solid #ddd; margin: 20px 0;">
-      <p><strong>Sponsor:</strong> <span verifiable-text="start" data-for="i864">[</span><strong>ROBERT J. MILLER</strong><br>
+      <p><strong>Sponsor:</strong> <strong>ROBERT J. MILLER</strong><br>
       <strong>Beneficiary:</strong> SARAH JANE DOE<br>
       <strong>Household Size:</strong> 3</p>
 <p><strong>Most Recent Year Income:</strong> $ 78,450.00<br>

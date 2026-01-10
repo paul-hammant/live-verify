@@ -17,7 +17,7 @@ These reports are "Development Killers." If a property is 50% wetlands, it may b
 <div style="max-width: 650px; margin: 24px auto; font-family: 'Helvetica Neue', Arial, sans-serif; border: 2px solid #2e7d32; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #2e7d32; color: #fff; padding: 25px; display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid #1b5e20;">
     <div>
-      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;">ECO-STREAM ENVIRONMENTAL</div>
+      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;" verifiable-text="start" data-for="wetland"><span>[</span>ECO-STREAM ENVIRONMENTAL</div>
       <div style="font-size: 0.8em; opacity: 0.9; text-transform: uppercase;">Certified Wetlands & Natural Resource Consultants</div>
     </div>
     <div style="font-size: 2.2em;">🌿</div>
@@ -25,7 +25,7 @@ These reports are "Development Killers." If a property is 50% wetlands, it may b
 <div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
-        <strong>Project Site:</strong> <span verifiable-text="start" data-for="wetland">[</span>BLUE RIVER MEADOWS<br>
+        <strong>Project Site:</strong> BLUE RIVER MEADOWS<br>
         <strong>APN:</strong> 992-288-776<br>
         <strong>Address:</strong> 123 Marsh Rd, Springfield
       </div>

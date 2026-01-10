@@ -16,12 +16,12 @@ Fraud is high-volume and low-detection: employees use "Toll Receipt Generator" a
 
 <div style="max-width: 400px; margin: 24px auto; font-family: 'Courier New', monospace; border: 1px solid #999; background: #fff; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 1px dashed #333; padding-bottom: 15px; margin-bottom: 15px;">
-    <strong>E-ZPASS NEW YORK</strong><br>
+    <strong verifiable-text="start" data-for="toll"><span>[</span>E-ZPASS NEW YORK</strong><br>
     TRANSACTION RECEIPT<br>
     ---------------------------------
   </div>
 <div style="font-size: 0.9em; line-height: 1.4;">
-    <p><strong>Account:</strong> <span verifiable-text="start" data-for="toll">[</span>****-****-9922<br>
+    <p><strong>Account:</strong> ****-****-9922<br>
     <strong>Transponder:</strong> 004-88776655<br>
     <strong>Plate:</strong> ABC-1234 (NY)</p>
 <p><strong>Location:</strong> GEORGE WASHINGTON BRIDGE<br>

@@ -16,7 +16,7 @@ Fraud is rampant in high-value shipping (electronics, pharmaceuticals). Dishones
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #ffcc00; color: #000; padding: 15px; display: flex; justify-content: space-between; align-items: center;">
-    <div style="font-weight: bold; font-size: 1.5em; letter-spacing: -1px;">DHL EXPRESS</div>
+    <div style="font-weight: bold; font-size: 1.5em; letter-spacing: -1px;" verifiable-text="start" data-for="pod"><span>[</span>DHL EXPRESS</div>
     <div style="text-align: right;">
       <div style="font-weight: bold; font-size: 0.9em;">DELIVERY RECEIPT</div>
       <div style="font-size: 0.7em;">Official Record of Handoff</div>
@@ -26,7 +26,7 @@ Fraud is rampant in high-value shipping (electronics, pharmaceuticals). Dishones
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
         <div style="font-size: 0.7em; color: #888; text-transform: uppercase;">Waybill Number</div>
-        <div style="font-size: 1.2em; font-weight: bold;"><span verifiable-text="start" data-for="pod">[</span>JD-9922-8877-66</div>
+        <div style="font-size: 1.2em; font-weight: bold;">JD-9922-8877-66</div>
       </div>
       <div style="text-align: right;">
         <div style="font-size: 0.7em; color: #888; text-transform: uppercase;">Delivery Date/Time</div>

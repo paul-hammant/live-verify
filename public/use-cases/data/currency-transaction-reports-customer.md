@@ -18,7 +18,7 @@ Lenders and tax auditors use these verified receipts to prove that a large "Gift
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #002d62; color: #fff; padding: 20px; text-align: center;">
-    <h2 style="margin: 0; font-size: 1.3em;">CURRENCY TRANSACTION REPORT</h2>
+    <h2 style="margin: 0; font-size: 1.3em;" verifiable-text="start" data-for="ctr"><span>[</span>CURRENCY TRANSACTION REPORT</h2>
     <div style="font-size: 0.8em; margin-top: 5px;">FinCEN Form 112 • Official Customer Receipt</div>
   </div>
 <div style="padding: 25px;">
@@ -30,7 +30,7 @@ Lenders and tax auditors use these verified receipts to prove that a large "Gift
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
       <p><strong>Part I: Person Conducting Transaction</strong></p>
       <p style="background: #f9f9f9; padding: 10px; border-left: 4px solid #002d62;">
-        <span verifiable-text="start" data-for="ctr">[</span><strong>Name:</strong> JOHN JACOB DOE<br>
+        <strong>Name:</strong> JOHN JACOB DOE<br>
         <strong>SSN/ITIN:</strong> ***-**-1234<br>
         <strong>ID:</strong> CA Driver License #*******
       </p>

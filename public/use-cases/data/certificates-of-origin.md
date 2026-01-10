@@ -18,14 +18,14 @@ It's not just for geography—it's for **Tariffs**. If a company ships microproc
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; background: #fff; padding: 0;">
   <div style="background: #333; color: #fff; padding: 10px; text-align: center;">
-    <h3 style="margin: 0; text-transform: uppercase;">CERTIFICATE OF ORIGIN</h3>
+    <h3 style="margin: 0; text-transform: uppercase;" verifiable-text="start" data-for="origin-us"><span>[</span>CERTIFICATE OF ORIGIN</h3>
     <div style="font-size: 0.8em;">U.S. CHAMBER OF COMMERCE • WASHINGTON D.C.</div>
   </div>
 <div style="padding: 20px; font-size: 0.8em;">
     <div style="display: flex; border-bottom: 1px solid #333; padding-bottom: 10px; margin-bottom: 10px;">
       <div style="width: 50%; border-right: 1px solid #333; padding-right: 10px;">
         <strong>1. Exporter:</strong><br>
-        <span verifiable-text="start" data-for="origin-us">[</span>Texas Instruments, Inc.<br>
+        Texas Instruments, Inc.<br>
         12500 TI Blvd, Dallas, TX 75243
       </div>
       <div style="width: 50%; padding-left: 10px;">

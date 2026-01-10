@@ -19,7 +19,7 @@ OCR-to-hash turns the **Physical Card** into a live link to the USCIS database. 
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
   <div style="background: #002d62; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
     <div>
-      <div style="font-weight: bold; font-size: 1.1em;">U.S. CITIZENSHIP & IMMIGRATION</div>
+      <div style="font-weight: bold; font-size: 1.1em;" verifiable-text="start" data-for="ead"><span>[</span>U.S. CITIZENSHIP & IMMIGRATION</div>
       <div style="font-size: 0.8em;">Employment Authorization Card</div>
     </div>
     <div style="width: 40px; height: 40px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #002d62; font-weight: bold; font-size: 0.7em; text-align: center;">DHS</div>
@@ -29,7 +29,7 @@ OCR-to-hash turns the **Physical Card** into a live link to the USCIS database. 
       <div style="width: 100px; height: 125px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #777;">[PHOTO]</div>
     </div>
     <div style="flex-grow: 1;">
-      <div style="font-size: 1.1em; font-weight: bold; margin: 0 0 5px 0;"><span verifiable-text="start" data-for="ead">[</span>DOE, JOHN JACOB</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin: 0 0 5px 0;">DOE, JOHN JACOB</div>
       <div style="font-size: 0.85em; color: #333; line-height: 1.4;">
         <strong>USCIS #:</strong> 992-288-776<br>
         <strong>Category:</strong> C08 (Asylum)<br>

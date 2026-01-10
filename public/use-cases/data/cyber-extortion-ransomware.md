@@ -19,7 +19,7 @@ Because these authorizations trigger multimillion-dollar crypto-payments, they a
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Helvetica', Arial, sans-serif; border: 2px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
   <div style="background: #1a1a1a; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;">BEAZLEY BREACH RESPONSE</div>
+      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="cyber"><span>[</span>BEAZLEY BREACH RESPONSE</div>
       <div style="font-size: 0.8em; opacity: 0.8;">Specialist Cyber Underwriters</div>
     </div>
     <div style="text-align: right;">
@@ -29,7 +29,7 @@ Because these authorizations trigger multimillion-dollar crypto-payments, they a
 <div style="padding: 30px;">
     <h2 style="text-align: center; color: #333; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Extortion Payment Authorization</h2>
 <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Insured:</strong> <span verifiable-text="start" data-for="cyber">[</span>Apex Healthcare Systems, Inc.<br>
+      <p><strong>Insured:</strong> Apex Healthcare Systems, Inc.<br>
       <strong>Attacking Group:</strong> [REDACTED - Threat Actor 42]</p>
 <div style="background: #fdfdfd; border: 1px solid #ddd; padding: 15px; margin: 15px 0;">
         <p><strong>Approved Ransom Limit:</strong> $ 2,500,000.00 (in BTC/XMR)</p>

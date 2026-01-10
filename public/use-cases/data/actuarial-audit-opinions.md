@@ -18,13 +18,13 @@ If this document is faked or altered, regulators might let a bankrupt insurance 
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 2px 2px 15px rgba(0,0,0,0.05);">
   <div style="text-align: right; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.2em; color: #2c3e50;">MILLIMAN & ROBERTSON, LLC</div>
+    <div style="font-weight: bold; font-size: 1.2em; color: #2c3e50;" verifiable-text="start" data-for="actuarial"><span>[</span>MILLIMAN & ROBERTSON, LLC</div>
     <div style="font-size: 0.9em; color: #7f8c8d;">Actuaries and Consultants</div>
   </div>
 <h3 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 30px;">Statement of Actuarial Opinion</h3>
 <div style="font-size: 0.95em; line-height: 1.6; text-align: justify; color: #2c3e50;">
     <p><strong>To the Board of Directors of Apex Indemnity Corp:</strong></p>
-<p>I, <span verifiable-text="start" data-for="actuarial">[</span><strong>John Smith, FCAS, MAAA</strong>, am a member of the American Academy of Actuaries and meet its Qualification Standards to render the actuarial opinion contained herein.</p>
+<p>I, <strong>John Smith, FCAS, MAAA</strong>, am a member of the American Academy of Actuaries and meet its Qualification Standards to render the actuarial opinion contained herein.</p>
 <p>I have examined the actuarial assumptions and methods used in determining loss reserves as of <strong>December 31, 2025</strong>.</p>
 <p>In my opinion, the amounts carried in the balance sheet on account of the items identified:</p>
     <ol>

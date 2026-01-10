@@ -17,12 +17,12 @@ The problem is that "Volunteer Certificates" are among the easiest documents to 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 5px double #2e7d32; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="padding: 40px; text-align: center; border: 1px solid #eee; margin: 10px;">
     <div style="margin-bottom: 25px;">
-      <div style="font-size: 1.6em; font-weight: bold; color: #2e7d32; letter-spacing: 1px;">CERTIFICATE OF SERVICE</div>
+      <div style="font-size: 1.6em; font-weight: bold; color: #2e7d32; letter-spacing: 1px;" verifiable-text="start" data-for="volunteer"><span>[</span>CERTIFICATE OF SERVICE</div>
       <div style="font-size: 0.9em; font-style: italic; color: #666;">AMERICA'S HARVEST FOOD BANK</div>
     </div>
 <div style="margin: 30px 0;">
       <div style="font-size: 1.1em;">This certifies that</div>
-      <div style="font-size: 1.8em; font-weight: bold; margin: 10px 0; color: #333;"><span verifiable-text="start" data-for="volunteer">[</span>SARAH J. JENKINS</div>
+      <div style="font-size: 1.8em; font-weight: bold; margin: 10px 0; color: #333;">SARAH J. JENKINS</div>
       <div style="font-size: 1.1em;">has contributed their time and talent to the community.</div>
     </div>
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 30px 0; background: #f9f9f9; padding: 20px; border-radius: 4px;">

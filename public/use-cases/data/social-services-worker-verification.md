@@ -20,7 +20,7 @@ OCR-to-hash allows a family to scan the worker's ID card to verify: **"Is this a
   <div style="background: #2e7d32; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
     <div style="font-size: 1.8em; margin-right: 15px;">🏛️</div>
     <div style="text-align: right;">
-      <div style="font-weight: bold; font-size: 1.1em; letter-spacing: 1px;">STATE OF ILLINOIS</div>
+      <div style="font-weight: bold; font-size: 1.1em; letter-spacing: 1px;" verifiable-text="start" data-for="social"><span>[</span>STATE OF ILLINOIS</div>
       <div style="font-size: 0.75em; font-weight: bold; opacity: 0.9;">DEPT. OF CHILDREN & FAMILY SERVICES</div>
     </div>
   </div>
@@ -30,7 +30,7 @@ OCR-to-hash allows a family to scan the worker's ID card to verify: **"Is this a
     </div>
     <div style="flex-grow: 1;">
       <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Worker Name</div>
-      <div style="font-size: 1.1em; font-weight: bold; margin: 0 0 10px 0; color: #2e7d32;"><span verifiable-text="start" data-for="social">[</span>SARAH J. JENKINS</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin: 0 0 10px 0; color: #2e7d32;">SARAH J. JENKINS</div>
 <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Employee ID</div>
       <div style="font-size: 1.1em; font-weight: bold; margin: 0 0 10px 0; letter-spacing: 1px;">ID: DCFS-992288</div>
 <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Role</div>

@@ -23,7 +23,7 @@ Tragically, some people use "ID Swapping"—using a sibling's clear background c
   <div style="background: #e91e63; color: #fff; padding: 15px; text-align: center; display: flex; align-items: center; justify-content: center;">
     <div style="font-size: 1.5em; margin-right: 10px;">🧸</div>
     <div>
-      <h3 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">VERIFIED CHILDCARE</h3>
+      <h3 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;" verifiable-text="start" data-for="child"><span>[</span>VERIFIED CHILDCARE</h3>
       <div style="font-size: 0.8em;">TRUSTED PROVIDER NETWORK</div>
     </div>
   </div>
@@ -33,7 +33,7 @@ Tragically, some people use "ID Swapping"—using a sibling's clear background c
     </div>
     <div style="flex-grow: 1;">
       <h4 style="margin: 0; color: #e91e63;">CERTIFIED NANNY</h4>
-      <div style="font-size: 1.1em; font-weight: bold; margin: 5px 0;"><span verifiable-text="start" data-for="child">[</span>MARY POPPINS</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin: 5px 0;">MARY POPPINS</div>
       <div style="font-size: 0.9em; color: #333; line-height: 1.4;">
         <strong>Background:</strong> CLEAR (Mar 2026)<br>
         <strong>First Aid:</strong> ACTIVE (Exp 2028)<br>

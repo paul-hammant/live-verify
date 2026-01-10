@@ -17,7 +17,7 @@ These documents are the "Entry Permit" for global commerce. US Customs, Amazon, 
 <div style="max-width: 650px; margin: 24px auto; font-family: 'Helvetica Neue', Arial, sans-serif; border: 2px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="background: #000; color: #fff; padding: 25px; display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid #d32f2f;">
     <div>
-      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;">UL SOLUTIONS</div>
+      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;" verifiable-text="start" data-for="safety"><span>[</span>UL SOLUTIONS</div>
       <div style="font-size: 0.75em; opacity: 0.8; text-transform: uppercase;">Certificate of Compliance</div>
     </div>
     <div style="width: 60px; height: 60px; background: #fff; color: #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.5em; border: 2px solid #d32f2f;">UL</div>
@@ -25,7 +25,7 @@ These documents are the "Entry Permit" for global commerce. US Customs, Amazon, 
 <div style="padding: 30px;">
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
-        <strong>Manufacturer:</strong> <span verifiable-text="start" data-for="safety">[</span>GLOBAL POWER TECH LLC<br>
+        <strong>Manufacturer:</strong> GLOBAL POWER TECH LLC<br>
         <strong>Model:</strong> XJ-9922 High-Output Charger<br>
         <strong>Batch #:</strong> LOT-2026-8844
       </div>

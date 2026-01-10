@@ -16,11 +16,11 @@ Under regimes like SM&CR (UK) or FINRA (US), firms must annually attest that sta
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #003366; background: #fff; padding: 0;">
   <div style="background: #003366; color: #fff; padding: 15px;">
-    <div style="font-weight: bold; font-size: 1.1em;">ANNUAL FIT AND PROPER ATTESTATION</div>
+    <div style="font-weight: bold; font-size: 1.1em;" verifiable-text="start" data-for="fitandproperattestat"><span>[</span>ANNUAL FIT AND PROPER ATTESTATION</div>
     <div style="font-size: 0.8em;">SM&CR Certification Regime</div>
   </div>
   <div style="padding: 20px; font-size: 0.9em; line-height: 1.6;">
-    <p><strong>Employee:</strong> <span verifiable-text="start" data-for="fitandproperattestat">[</span>Sarah Mitchell<br>
+    <p><strong>Employee:</strong> Sarah Mitchell<br>
     <strong>Role:</strong> Portfolio Manager (Certification Function CF30)<br>
     <strong>Firm:</strong> Albion Asset Management<br>
     <strong>Assessment Date:</strong> March 1, 2026</p>

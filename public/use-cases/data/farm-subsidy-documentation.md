@@ -19,7 +19,7 @@ Farmers use these verified eligibility letters to get "Operating Loans" from ban
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #1b5e20; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.1em;">U.S. DEPARTMENT OF AGRICULTURE</div>
+      <div style="font-weight: bold; font-size: 1.1em;" verifiable-text="start" data-for="subsidy"><span>[</span>U.S. DEPARTMENT OF AGRICULTURE</div>
       <div style="font-size: 0.8em;">Farm Service Agency (FSA)</div>
     </div>
     <div style="width: 40px; height: 40px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #1b5e20; font-weight: bold; font-size: 0.7em;">USDA</div>
@@ -27,7 +27,7 @@ Farmers use these verified eligibility letters to get "Operating Loans" from ban
 <div style="padding: 25px;">
     <h3 style="margin-top: 0; color: #1b5e20; border-bottom: 2px solid #1b5e20; padding-bottom: 5px;">NOTICE OF PAYMENT ELIGIBILITY</h3>
 <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Producer:</strong> <span verifiable-text="start" data-for="subsidy">[</span>Miller Family Farms, Inc.<br>
+      <p><strong>Producer:</strong> Miller Family Farms, Inc.<br>
       <strong>Business Type:</strong> Corporation (EIN: **-***5544)</p>
 <div style="background: #f1f8e9; padding: 15px; border: 1px solid #c5e1a5; margin: 15px 0;">
         <p><strong>Program:</strong> Agriculture Risk Coverage (ARC-CO)<br>

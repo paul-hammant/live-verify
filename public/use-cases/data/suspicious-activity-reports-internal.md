@@ -17,12 +17,12 @@ These internal records are "Compliance Insurance." During a regulatory exam (e.g
 <div style="max-width: 650px; margin: 24px auto; font-family: sans-serif; border: 2px solid #d32f2f; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #d32f2f; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;">INTERNAL COMPLIANCE RECORD</div>
+      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="sar"><span>[</span>INTERNAL COMPLIANCE RECORD</div>
       <div style="font-size: 0.8em; opacity: 0.9;">BSA/AML Monitoring Unit</div>
     </div>
     <div style="text-align: right;">
       <div style="font-weight: bold; font-size: 0.9em;">CONFIDENTIAL</div>
-      <div style="font-size: 0.7em;">SAR-Ref: <span verifiable-text="start" data-for="sar">[</span>9922-8877-XJ</div>
+      <div style="font-size: 0.7em;">SAR-Ref: 9922-8877-XJ</div>
     </div>
   </div>
 <div style="padding: 25px; font-size: 0.9em; line-height: 1.6; color: #333;">

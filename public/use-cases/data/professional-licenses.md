@@ -17,7 +17,7 @@ The problem is that physical licenses—especially the wallet-sized cards carrie
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
   <div style="background: #1a237e; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
     <div>
-      <div style="font-weight: bold; font-size: 1.1em; letter-spacing: 1px;">MEDICAL BOARD</div>
+      <div style="font-weight: bold; font-size: 1.1em; letter-spacing: 1px;" verifiable-text="start" data-for="prof"><span>[</span>MEDICAL BOARD</div>
       <div style="font-size: 0.75em; opacity: 0.9;">STATE OF NEW YORK</div>
     </div>
     <div style="font-size: 1.5em;">⚖️</div>
@@ -28,7 +28,7 @@ The problem is that physical licenses—especially the wallet-sized cards carrie
     </div>
     <div style="flex-grow: 1;">
       <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Practitioner Name</div>
-      <div style="font-size: 1.2em; font-weight: bold; margin: 0 0 10px 0; color: #1a237e;"><span verifiable-text="start" data-for="prof">[</span>DR. SARAH J. DOE</div>
+      <div style="font-size: 1.2em; font-weight: bold; margin: 0 0 10px 0; color: #1a237e;">DR. SARAH J. DOE</div>
 <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">License #</div>
       <div style="font-size: 1em; font-weight: bold; margin: 0 0 10px 0;">ID: NY-992288-X</div>
 <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Profession</div>

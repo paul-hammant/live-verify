@@ -18,13 +18,13 @@ Small tour operators often don't have real-time computers in the field. They rel
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
-    <div style="font-weight: bold; font-size: 1.2em;">SAHARA EXPEDITIONS, LTD.</div>
+    <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="tour"><span>[</span>SAHARA EXPEDITIONS, LTD.</div>
     <div style="font-size: 0.8em;">Official Booking Confirmation</div>
   </div>
 <div style="font-size: 0.9em; line-height: 1.4;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
       <div>
-        <strong>Participant:</strong> <span verifiable-text="start" data-for="tour">[</span><strong>SARAH JANE SMITH</strong><br>
+        <strong>Participant:</strong> <strong>SARAH JANE SMITH</strong><br>
         <strong>Booking #:</strong> SE-99228877
       </div>
       <div style="text-align: right;">

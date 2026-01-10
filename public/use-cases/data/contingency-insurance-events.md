@@ -19,7 +19,7 @@ Promoters must show this verified proof of insurance to stadium owners and lende
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 2px solid #002366; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="background: #002366; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;">BEAZLEY SPECIALTY LTD</div>
+      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="event"><span>[</span>BEAZLEY SPECIALTY LTD</div>
       <div style="font-size: 0.8em;">Lloyd's Syndicate 2623/623</div>
     </div>
     <div style="text-align: right;">
@@ -29,7 +29,7 @@ Promoters must show this verified proof of insurance to stadium owners and lende
 <div style="padding: 35px;">
     <h2 style="text-align: center; color: #002366; font-size: 1.4em; margin-bottom: 25px; text-transform: uppercase; letter-spacing: 1px;">Evidence of Contingency Insurance</h2>
 <div style="font-size: 1em; line-height: 1.6; color: #333;">
-      <p><strong>Insured:</strong> <span verifiable-text="start" data-for="event">[</span>Glastonbury Festival Events, Ltd.<br>
+      <p><strong>Insured:</strong> Glastonbury Festival Events, Ltd.<br>
       <strong>Event:</strong> 2026 Summer Music Festival</p>
 <div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin: 20px 0;">
         <p><strong>Section 1: Event Cancellation / Abandonment</strong><br>

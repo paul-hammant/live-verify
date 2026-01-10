@@ -20,8 +20,8 @@ Fixed electrical installations (wiring, fuse boxes, panels) are a primary source
   </div>
   <div style="padding: 20px;">
     <div style="font-size: 0.9em; margin-bottom: 10px;">
-      <strong>Panel ID:</strong> <span verifiable-text="start" data-for="electric">[</span>MAIN-DB-04<br>
-      <strong>Location:</strong> Warehouse North Wall
+      <strong>Panel ID:</strong> MAIN-DB-04<br>
+      <strong verifiable-text="start" data-for="electric"><span>[</span>Location:</strong> Warehouse North Wall
     </div>
     <div style="background: #fff8e1; border: 1px solid #ffe082; padding: 10px; margin: 15px 0;">
       <strong>Tested:</strong> 15 MAR 2026<br>

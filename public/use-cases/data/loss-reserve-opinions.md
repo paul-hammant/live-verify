@@ -10,7 +10,7 @@ furtherDerivations: 1
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 1px solid #333; background: #fff; padding: 40px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.1em; color: #d32f2f;">STATE FARM FIRE & CASUALTY</div>
+    <div style="font-weight: bold; font-size: 1.1em; color: #d32f2f;" verifiable-text="start" data-for="loss-res"><span>[</span>STATE FARM FIRE & CASUALTY</div>
     <div style="text-align: right; font-size: 0.8em; color: #666;">
       Statutory Filing: LOSS-2026-FL<br>
       March 15, 2026
@@ -18,7 +18,7 @@ furtherDerivations: 1
   </div>
 <h3 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; color: #d32f2f; border-bottom: 2px solid #d32f2f; padding-bottom: 10px;">Statement of Actuarial Opinion (SAO)</h3>
 <div style="font-size: 0.95em; line-height: 1.6; text-align: justify; color: #333; margin-top: 20px;">
-    <p>I, <span verifiable-text="start" data-for="loss-res">[</span><strong>Robert Miller, FCAS, MAAA</strong>, Appointed Actuary, do hereby certify that the loss and loss adjustment expense reserves for the <strong>Florida Homeowners Portfolio</strong> as of Dec 31, 2025:</p>
+    <p>I, <strong>Robert Miller, FCAS, MAAA</strong>, Appointed Actuary, do hereby certify that the loss and loss adjustment expense reserves for the <strong>Florida Homeowners Portfolio</strong> as of Dec 31, 2025:</p>
 <ul>
       <li>Are developed using standard actuarial methodologies (Chain Ladder, Bornhuetter-Ferguson).</li>
       <li>Meet the requirements of the National Association of Insurance Commissioners (NAIC).</li>

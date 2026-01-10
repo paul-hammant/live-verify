@@ -30,7 +30,7 @@ The annuity certification can arrive through different channels. Verification of
 <div id="format-showcase-annuity" class="content" data-format-showcase="[]" data-doc-content="" data-verify-line="verify:prudential.com/actuarial/v/x9y8z7">
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 1px solid #333; background: #fff; padding: 40px; box-shadow: 2px 2px 12px rgba(0,0,0,0.1);">
   <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.1em; color: #1a237e;">PRUDENTIAL FINANCIAL SERVICES</div>
+    <div style="font-weight: bold; font-size: 1.1em; color: #1a237e;" verifiable-text="start" data-for="annuity"><span>[</span>PRUDENTIAL FINANCIAL SERVICES</div>
     <div style="text-align: right; font-size: 0.8em; color: #666;">
       Compliance Filing: ANN-2026-09<br>
       March 15, 2026
@@ -38,7 +38,7 @@ The annuity certification can arrive through different channels. Verification of
   </div>
   <h3 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; color: #1a237e; border-bottom: 2px solid #1a237e; padding-bottom: 10px;">Actuarial Certification of Pricing</h3>
   <div style="font-size: 0.95em; line-height: 1.6; text-align: justify; color: #333; margin-top: 20px;">
-    <p>I, <span verifiable-text="start" data-for="annuity">[</span><strong>Robert Miller, FSA, MAAA</strong>, Appointed Actuary for Prudential, hereby certify that the pricing and interest rate assumptions for the <strong>SecureIncome Plus Fixed Index Annuity (Series 2026)</strong>:</p>
+    <p>I, <strong>Robert Miller, FSA, MAAA</strong>, Appointed Actuary for Prudential, hereby certify that the pricing and interest rate assumptions for the <strong>SecureIncome Plus Fixed Index Annuity (Series 2026)</strong>:</p>
     <ul style="margin-left: 20px; margin-top: 10px; margin-bottom: 0;">
       <li style="margin-bottom: 6px;">Are consistent with current mortality tables (2012 IAM).</li>
       <li style="margin-bottom: 6px;">Incorporate interest rate crediting strategies that meet state solvency requirements.</li>

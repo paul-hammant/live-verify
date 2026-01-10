@@ -19,11 +19,11 @@ You need this verified proof for a **"Status Match"**—where a rival airline gi
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #003366; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;">AMERICAN ADMIRALS CLUB</div>
+      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="loyalty"><span>[</span>AMERICAN ADMIRALS CLUB</div>
       <div style="font-size: 0.8em; opacity: 0.8;">AAdvantage&reg; Executive Statement</div>
     </div>
     <div style="text-align: right;">
-      <div style="font-size: 0.8em;">Member #: <span verifiable-text="start" data-for="loyalty">[</span>99228877</div>
+      <div style="font-size: 0.8em;">Member #: 99228877</div>
     </div>
   </div>
 <div style="padding: 25px;">

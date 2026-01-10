@@ -17,7 +17,7 @@ Fraud is high-volume: consumers often "edit" a purchase date on a PDF receipt to
 <div style="max-width: 500px; margin: 24px auto; font-family: sans-serif; border: 2px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1); overflow: hidden;">
   <div style="background: #000; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 1px;">PRECISION CHRONO</div>
+      <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 1px;" verifiable-text="start" data-for="warranty"><span>[</span>PRECISION CHRONO</div>
       <div style="font-size: 0.75em; opacity: 0.8;">INTERNATIONAL WARRANTY CARD</div>
     </div>
     <div style="font-size: 1.5em;">⌚</div>
@@ -26,7 +26,7 @@ Fraud is high-volume: consumers often "edit" a purchase date on a PDF receipt to
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; color: #333; margin-bottom: 20px;">
       <div>
         <strong>Model:</strong> Ocean-Master 300<br>
-        <strong>Serial:</strong> <span verifiable-text="start" data-for="warranty">[</span>SN-992288-XJ
+        <strong>Serial:</strong> SN-992288-XJ
       </div>
       <div style="text-align: right;">
         <strong>Purchase Date:</strong><br>

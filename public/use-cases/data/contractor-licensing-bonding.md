@@ -19,13 +19,13 @@ Homeowners use these "Pocket Cards" to verify who they are letting onto their ro
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 4px solid #004d40; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #004d40; color: #fff; padding: 15px; text-align: center;">
-    <h2 style="margin: 0; text-transform: uppercase;">STATE CONTRACTORS BOARD</h2>
+    <h2 style="margin: 0; text-transform: uppercase;" verifiable-text="start" data-for="contractor"><span>[</span>STATE CONTRACTORS BOARD</h2>
     <div style="font-size: 0.9em;">OFFICIAL LICENSE CERTIFICATE</div>
   </div>
 <div style="padding: 30px;">
     <div style="text-align: center; border-bottom: 2px solid #004d40; padding-bottom: 10px; margin-bottom: 20px;">
       <h3 style="margin: 0; color: #004d40;">ACTIVE LICENSE</h3>
-      <div style="font-size: 1.2em; font-weight: bold; margin-top: 5px;">License #: <span verifiable-text="start" data-for="contractor">[</span>998877</div>
+      <div style="font-size: 1.2em; font-weight: bold; margin-top: 5px;">License #: 998877</div>
     </div>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
       <p><strong>Business Name:</strong> Apex Building Group, LLC<br>

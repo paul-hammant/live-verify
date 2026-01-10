@@ -18,8 +18,8 @@ Local Exhaust Ventilation (LEV) systems are critical for removing toxic fumes, d
   </div>
   <div style="padding: 20px;">
     <div style="font-size: 0.9em; margin-bottom: 10px;">
-      <strong>System ID:</strong> <span verifiable-text="start" data-for="hvac">[</span>EXH-LAB-42<br>
-      <strong>Location:</strong> Chemical Lab Room 4
+      <strong>System ID:</strong> EXH-LAB-42<br>
+      <strong verifiable-text="start" data-for="hvac"><span>[</span>Location:</strong> Chemical Lab Room 4
     </div>
     <div style="background: #e1f5fe; border: 1px solid #b3e5fc; padding: 10px; margin: 15px 0;">
       <strong>Avg Face Velocity:</strong> 105 fpm (PASS)<br>

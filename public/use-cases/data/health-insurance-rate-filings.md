@@ -18,7 +18,7 @@ Verification ensures that the "4.2% Average Increase" the company announces to t
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 1px solid #333; background: #fff; padding: 40px; box-shadow: 2px 2px 12px rgba(0,0,0,0.1);">
   <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.1em; color: #1a237e;">BLUE SHIELD OF CALIFORNIA</div>
+    <div style="font-weight: bold; font-size: 1.1em; color: #1a237e;" verifiable-text="start" data-for="rate-filing"><span>[</span>BLUE SHIELD OF CALIFORNIA</div>
     <div style="text-align: right; font-size: 0.8em; color: #666;">
       Compliance Filing: RATE-2026-042<br>
       March 15, 2026
@@ -26,7 +26,7 @@ Verification ensures that the "4.2% Average Increase" the company announces to t
   </div>
 <h3 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; color: #1a237e; border-bottom: 2px solid #1a237e; padding-bottom: 10px;">Actuarial Certification of Rates</h3>
 <div style="font-size: 0.95em; line-height: 1.6; text-align: justify; color: #333; margin-top: 20px;">
-    <p>I, <span verifiable-text="start" data-for="rate-filing">[</span><strong>Robert Miller, FSA, MAAA</strong>, do hereby certify that the proposed rates for the <strong>2027 Individual PPO Portfolio</strong>:</p>
+    <p>I, <strong>Robert Miller, FSA, MAAA</strong>, do hereby certify that the proposed rates for the <strong>2027 Individual PPO Portfolio</strong>:</p>
 <ul>
       <li>Are developed in accordance with generally accepted actuarial principles.</li>
       <li>Are not excessive, inadequate, or unfairly discriminatory.</li>

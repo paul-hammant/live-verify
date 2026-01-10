@@ -16,12 +16,12 @@ These notices are critical for future travel. Fraud is high-stakes: applicants o
 
 <div style="max-width: 500px; margin: 24px auto; font-family: 'Times New Roman', Times, serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 15px; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.2em; color: #002d62;">EMBASSY OF THE UNITED STATES</div>
+    <div style="font-weight: bold; font-size: 1.2em; color: #002d62;" verifiable-text="start" data-for="visa"><span>[</span>EMBASSY OF THE UNITED STATES</div>
     <div style="font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">Consular Section • Visa Unit</div>
   </div>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <p>Date: March 15, 2026</p>
-    <p><strong>Applicant:</strong> <span verifiable-text="start" data-for="visa">[</span>JOHN JACOB DOE<br>
+    <p><strong>Applicant:</strong> JOHN JACOB DOE<br>
     <strong>Case Number:</strong> 202607442211</p>
 <p>Dear Mr. Doe,</p>
     <p>This is to inform you that you have been found ineligible for a nonimmigrant visa under the following section of the U.S. Immigration and Nationality Act (INA):</p>

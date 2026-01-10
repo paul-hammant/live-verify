@@ -28,11 +28,11 @@ The current system relies on self-declaration and trust. Criminals exploit this 
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #003366; background: #fff; padding: 0;">
   <div style="background: #003366; color: #fff; padding: 15px;">
-    <div style="font-weight: bold; font-size: 1.1em;">AUTHORIZED PROPERTY CLEARANCE IN PROGRESS</div>
+    <div style="font-weight: bold; font-size: 1.1em;" verifiable-text="start" data-for="estateclearanceautho"><span>[</span>AUTHORIZED PROPERTY CLEARANCE IN PROGRESS</div>
     <div style="font-size: 0.8em;">Mandatory Site Notice — Scan to Verify</div>
   </div>
   <div style="padding: 20px; font-size: 0.9em; line-height: 1.6;">
-    <p><strong>Property:</strong> <span verifiable-text="start" data-for="estateclearanceautho">[</span>42 Wimbledon Park Road, London SW19 5NE<br>
+    <p><strong>Property:</strong> 42 Wimbledon Park Road, London SW19 5NE<br>
     <strong>Deceased:</strong> Christine Harverson<br>
     <strong>Probate Reference:</strong> PR-2024-887432<br>
     <strong>Executor:</strong> John Smith (ID verified by court)</p>

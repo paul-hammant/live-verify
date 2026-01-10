@@ -21,8 +21,8 @@ Losing the original B/L is a disaster (requires court bonds to fix), which is wh
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 1px solid #000; background: #fff; padding: 0;">
   <div style="background: #002d62; color: #fff; padding: 10px; display: flex; justify-content: space-between; align-items: center;">
-    <div style="font-weight: bold; font-size: 1.2em;">MAERSK LINE</div>
-    <div style="font-size: 0.8em; text-align: right;">B/L No: <span verifiable-text="start" data-for="bol">[</span>MAE-9988776655</div>
+    <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="bol"><span>[</span>MAERSK LINE</div>
+    <div style="font-size: 0.8em; text-align: right;">B/L No: MAE-9988776655</div>
   </div>
 <div style="padding: 10px; font-size: 0.8em;">
     <div style="display: flex; border-bottom: 1px solid #000;">
@@ -155,7 +155,7 @@ This "Negotiable" status makes the B/L a prime target for high-stakes fraud. Cri
 <div style="max-width: 700px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 1px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="background: #002d62; color: #fff; padding: 15px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div>
-      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;">MAERSK LINE</div>
+      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;" verifiable-text="start" data-for="bl"><span>[</span>MAERSK LINE</div>
       <div style="font-size: 0.7em; opacity: 0.8;">A.P. Moller-Maersk A/S • Esplanaden 50, Copenhagen</div>
     </div>
     <div style="text-align: right;">
@@ -172,7 +172,7 @@ This "Negotiable" status makes the B/L a prime target for high-stakes fraud. Cri
     </div>
     <div style="padding: 10px; font-size: 0.75em; line-height: 1.3;">
       <strong style="text-transform: uppercase; font-size: 0.8em; color: #666;">B/L Number:</strong><br>
-      <div style="font-size: 1.2em; font-weight: bold;"><span verifiable-text="start" data-for="bl">[</span>MAE-9988776655</div>
+      <div style="font-size: 1.2em; font-weight: bold;">MAE-9988776655</div>
     </div>
   </div>
 <div style="padding: 10px; border-bottom: 1px solid #000; font-size: 0.75em; line-height: 1.3;">
@@ -287,7 +287,7 @@ While simpler than a B/L, it is still a high-stakes legal proof of shipment. Fra
 <div style="max-width: 650px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 1px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #002d62; color: #fff; padding: 15px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div>
-      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;">MAERSK LINE</div>
+      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;" verifiable-text="start" data-for="way"><span>[</span>MAERSK LINE</div>
       <div style="font-size: 0.7em; opacity: 0.8; text-transform: uppercase;">A.P. Moller-Maersk A/S • Copenhagen</div>
     </div>
     <div style="text-align: right;">
@@ -303,7 +303,7 @@ While simpler than a B/L, it is still a high-stakes legal proof of shipment. Fra
     </div>
     <div style="padding: 10px; font-size: 0.75em; line-height: 1.3;">
       <strong style="text-transform: uppercase; color: #666;">Waybill Number:</strong><br>
-      <div style="font-size: 1.2em; font-weight: bold;"><span verifiable-text="start" data-for="way">[</span>MAE-9988-7766-55</div>
+      <div style="font-size: 1.2em; font-weight: bold;">MAE-9988-7766-55</div>
     </div>
   </div>
 <div style="padding: 10px; border-bottom: 1px solid #000; font-size: 0.75em; line-height: 1.3;">

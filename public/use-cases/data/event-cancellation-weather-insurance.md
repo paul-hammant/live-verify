@@ -19,7 +19,7 @@ The policy is "Parametric"—meaning it pays out automatically if a specific wea
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #002366; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="background: #002366; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;">HISCOX SPECIALTY</div>
+      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="event-cancel"><span>[</span>HISCOX SPECIALTY</div>
       <div style="font-size: 0.8em;">Event Cancellation & Abandonment</div>
     </div>
     <div style="text-align: right;">
@@ -31,7 +31,7 @@ The policy is "Parametric"—meaning it pays out automatically if a specific wea
 <div style="font-size: 1em; line-height: 1.6; color: #333;">
       <p>This document confirms that coverage is in effect for the following event:</p>
 <div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin: 20px 0;">
-        <strong>Event:</strong> <span verifiable-text="start" data-for="event-cancel">[</span>Austin City Limits - Weekend 1<br>
+        <strong>Event:</strong> Austin City Limits - Weekend 1<br>
         <strong>Location:</strong> Zilker Park, Austin, TX
       </div>
 <p><strong>Primary Trigger:</strong> Adverse Weather (Rainfall exceeding 0.5" during 12:00-22:00 window).<br>

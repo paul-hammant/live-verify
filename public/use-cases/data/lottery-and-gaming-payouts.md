@@ -26,7 +26,7 @@ Witnessed hashes provide the immutable, third-party proof required to turn a "de
 
 <div style="max-width: 400px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 2px solid #000; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
-    <div style="font-weight: bold; font-size: 1.4em;">STATE LOTTERY</div>
+    <div style="font-weight: bold; font-size: 1.4em;" verifiable-text="start" data-for="lottery"><span>[</span>STATE LOTTERY</div>
     <div style="font-size: 0.8em;">OFFICIAL WIN NOTIFICATION</div>
   </div>
 <div style="font-size: 1em; line-height: 1.4; text-align: center;">
@@ -35,7 +35,7 @@ Witnessed hashes provide the immutable, third-party proof required to turn a "de
 <div style="text-align: left; margin-top: 20px; font-size: 0.9em;">
       <strong>Draw:</strong> MEGA MILLIONS<br>
       <strong>Date:</strong> JAN 02, 2026<br>
-      <strong>Ticket ID:</strong> <span verifiable-text="start" data-for="lottery">[</span>MM-2026-X9Y8Z7<br>
+      <strong>Ticket ID:</strong> MM-2026-X9Y8Z7<br>
       <strong>Terminal:</strong> #8472-A
     </div>
 <p style="margin-top: 20px; font-size: 0.8em; font-style: italic;">Please present this receipt at a regional claims center to begin the verification process.</p>

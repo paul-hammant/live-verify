@@ -19,7 +19,7 @@ If an owner "Photoshops" a $100k policy to look like a $10M policy, they can com
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 2px solid #002366; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="background: #002366; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;">LLOYD'S OF LONDON</div>
+      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="horse"><span>[</span>LLOYD'S OF LONDON</div>
       <div style="font-size: 0.8em;">Specialist Bloodstock Syndicate 1967</div>
     </div>
     <div style="text-align: right;">
@@ -31,7 +31,7 @@ If an owner "Photoshops" a $100k policy to look like a $10M policy, they can com
 <div style="font-size: 1em; line-height: 1.6; color: #333;">
       <p>This is to certify that insurance has been effected on the following animal:</p>
 <div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin: 20px 0;">
-        <strong>Animal Name:</strong> <span verifiable-text="start" data-for="horse">[</span>"MIDNIGHT RUNNER" (2022 Colt)<br>
+        <strong>Animal Name:</strong> "MIDNIGHT RUNNER" (2022 Colt)<br>
         <strong>Sire/Dam:</strong> Galileo / Urban Sea<br>
         <strong>Registration:</strong> Weatherbys ID #992288
       </div>

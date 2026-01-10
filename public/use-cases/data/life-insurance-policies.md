@@ -10,7 +10,7 @@ furtherDerivations: 1
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 2px solid #000; background: #fff; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); position: relative;">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 25px;">
-    <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 2px; color: #003366;">NEW YORK LIFE</div>
+    <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 2px; color: #003366;" verifiable-text="start" data-for="life-pol"><span>[</span>NEW YORK LIFE</div>
     <div style="font-size: 0.85em; color: #666; margin-top: 5px; text-transform: uppercase;">Custom Whole Life Insurance Policy</div>
   </div>
 <h3 style="text-align: center; text-transform: uppercase; margin-bottom: 25px;">Policy Schedule</h3>
@@ -18,7 +18,7 @@ furtherDerivations: 1
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
       <div>
         <strong>Policy Number:</strong> 99228877-WL<br>
-        <strong>Insured:</strong> <span verifiable-text="start" data-for="life-pol">[</span><strong>JOHN JACOB DOE</strong>
+        <strong>Insured:</strong> <strong>JOHN JACOB DOE</strong>
       </div>
       <div style="text-align: right;">
         <strong>Date of Issue:</strong><br>

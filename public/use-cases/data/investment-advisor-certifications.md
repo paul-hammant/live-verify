@@ -12,7 +12,7 @@ furtherDerivations: 1
   <div style="background: #002d62; color: #fff; padding: 20px; text-align: center; display: flex; align-items: center; justify-content: center;">
     <div style="font-size: 1.5em; margin-right: 15px;">🏛️</div>
     <div>
-      <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">REGISTERED INVESTMENT ADVISER</h2>
+      <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;" verifiable-text="start" data-for="advisor"><span>[</span>REGISTERED INVESTMENT ADVISER</h2>
       <div style="font-size: 0.8em; opacity: 0.8;">U.S. SECURITIES AND EXCHANGE COMMISSION</div>
     </div>
   </div>
@@ -22,7 +22,7 @@ furtherDerivations: 1
     </div>
     <div style="flex-grow: 1;">
       <h3 style="margin: 0; color: #002d62;">REPRESENTATIVE CREDENTIAL</h3>
-      <div style="font-size: 1.1em; font-weight: bold; margin: 5px 0;"><span verifiable-text="start" data-for="advisor">[</span>SARAH J. MILLER</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin: 5px 0;">SARAH J. MILLER</div>
 <div style="font-size: 0.9em; color: #333; line-height: 1.4;">
         <strong>Individual CRD #:</strong> 9922887<br>
         <strong>Firm:</strong> Miller Wealth Management, LLC<br>

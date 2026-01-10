@@ -16,14 +16,14 @@ These documents are the "Trigger for Action" in high-value commerce. A title com
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 1px solid #333; background: #fff; padding: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="border-bottom: 1px dashed #333; padding-bottom: 15px; margin-bottom: 20px; text-align: center;">
-    <div style="font-weight: bold; font-size: 1.3em;">GOLIATH NATIONAL BANK</div>
+    <div style="font-weight: bold; font-size: 1.3em;" verifiable-text="start" data-for="wire"><span>[</span>GOLIATH NATIONAL BANK</div>
     <div style="font-size: 0.8em; opacity: 0.9;">OUTGOING WIRE TRANSFER NOTIFICATION</div>
   </div>
 <div style="font-size: 0.9em; line-height: 1.4; color: #000;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
       <div>
         <strong>Reference (IMAD):</strong><br>
-        <span verifiable-text="start" data-for="wire">[</span>20260315A88442211
+        20260315A88442211
       </div>
       <div style="text-align: right;">
         <strong>Value Date:</strong><br>
