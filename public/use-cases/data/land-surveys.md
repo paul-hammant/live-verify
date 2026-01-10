@@ -97,11 +97,35 @@ The **Homeowner / Seller** benefits from verification.
 - **Odometer Fraud (Lot Size):** Changing "100.0 feet" to "105.0 feet" to make a lot look buildable when it isn't.
 - **Stale Surveys:** Leaving a 1995 survey in a closing packet to hide that a neighbor built a massive garage on the property line in 2015.
 
-**Issuer Types**
+**Issuer Types** (First Party)
 
 **Private Surveying Firms:** (The primary issuers).
 **Municipal GIS Departments:** (In some jurisdictions).
 **State Boards of Professional Land Surveying.**
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require the issuer to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the issuer, and any subsequent changes to the payload as they happen—which may manifest as a new hash, a status change, or even a 404 (record deleted)
+- Receives structured content/metadata (key identifiers and dates)
+- Does **NOT** receive plaintext or sensitive personal information
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to document holders/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Issuer cannot deny issuing the document
+- **Timestamp proof:** Document existed at a specific time
+- **Regulatory audit:** Jurisdictions can inspect the witness ledger for fraud detection
+- **Resilience:** Verification works even if issuer's systems go down
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Issuer domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
+
 
 ## Competition vs. Digital Plat Portals
 
@@ -198,11 +222,35 @@ The **Property Owner / Developer** benefits from verification.
 - **Encroachment Erasure:** Deleting the surveyor's note that mentions "Neighbor's shed is 3 feet over the line" before selling the house.
 - **Surveyor Impersonation:** Creating a fake survey using the name and seal of a local surveyor who never actually visited the site.
 
-**Issuer Types**
+**Issuer Types** (First Party)
 
 **Registered Professional Land Surveyors (RPLS).**
 **Civil Engineering & Surveying Firms.**
 **County Surveyors / Recorders.**
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require the issuer to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the issuer, and any subsequent changes to the payload as they happen—which may manifest as a new hash, a status change, or even a 404 (record deleted)
+- Receives structured content/metadata (key identifiers and dates)
+- Does **NOT** receive plaintext or sensitive personal information
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to document holders/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Issuer cannot deny issuing the document
+- **Timestamp proof:** Document existed at a specific time
+- **Regulatory audit:** Jurisdictions can inspect the witness ledger for fraud detection
+- **Resilience:** Verification works even if issuer's systems go down
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Issuer domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
+
 
 ## Competition vs. Physical Iron Pins
 
