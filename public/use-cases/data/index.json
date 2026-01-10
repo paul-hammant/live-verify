@@ -1,5 +1,5 @@
 {
-  "generated": "2026-01-10T08:22:13.257Z",
+  "generated": "2026-01-10T08:24:27.438Z",
   "totalUseCases": 394,
   "totalFurtherDerivations": 396,
   "categories": {
@@ -1383,7 +1383,7 @@
       "volume": "Very Large",
       "retention": "Permanent (entity records)",
       "furtherDerivations": 0,
-      "snippet": "Registry authority, entity name, file/registration number, entity type, formation/registration date, current status, registered agent, key dates (renewal, expiration).",
+      "snippet": "Registry authority, entity name, file/registration number, entity type, formation/registration date, current status, registered agent, key dates (renewal, expiration). For directors: name, appointment",
       "tags": [
         "commercial-registry",
         "company-house",

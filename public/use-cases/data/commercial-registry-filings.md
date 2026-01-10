@@ -22,8 +22,44 @@ Commercial registry fraud is widespread: fake incorporation documents, forged go
   Formation Date: January 5, 2026<br>
   Registered Agent: CT Corporation<br>
   Status: Active / Good Standing<br>
+  <br>
+  Directors:<br>
+  - Sarah Chen (Chair) verify:corp.delaware.gov/d/7741892-001<br>
+  - Michael Torres verify:corp.delaware.gov/d/7741892-002<br>
+  - James Wilson verify:corp.delaware.gov/d/7741892-003<br>
   <span data-verify-line="corp">verify:corp.delaware.gov/entity</span> <span verifiable-text="end" data-for="corp">]</span>
 </div>
+
+## Director Appointments
+
+Directors are verified separately from the entity. Each director appointment gets its own verification URL. When a director resigns or is removed, their appointment is marked **SUPERSEDED**—the hash remains valid (proving they *were* a director) but verification returns the superseded status.
+
+<div style="font-family: 'Courier New', monospace; background: #f9f9f9; padding: 15px; border: 1px solid #999; font-size: 1em; color: #000; line-height: 1.6; max-width: 550px; margin: 24px auto;">
+  <span verifiable-text="start" data-for="dir1">[</span>DIRECTOR APPOINTMENT<br>
+  Delaware Secretary of State<br>
+  Entity: TechVentures Inc (File #7741892)<br>
+  <br>
+  Director: Sarah Chen<br>
+  Role: Chair of the Board<br>
+  Appointed: January 5, 2026<br>
+  Status: CURRENT<br>
+  <span data-verify-line="dir1">verify:corp.delaware.gov/d/7741892-001</span> <span verifiable-text="end" data-for="dir1">]</span>
+</div>
+
+<div style="font-family: 'Courier New', monospace; background: #f9f9f9; padding: 15px; border: 1px solid #999; font-size: 1em; color: #000; line-height: 1.6; max-width: 550px; margin: 24px auto;">
+  <span verifiable-text="start" data-for="dir2">[</span>DIRECTOR APPOINTMENT<br>
+  Companies House (UK)<br>
+  Company: British Tech Solutions Ltd (#12345678)<br>
+  <br>
+  Director: Robert Thompson<br>
+  DOB: March 1975<br>
+  Appointed: 15 March 2020<br>
+  Resigned: 22 November 2025<br>
+  Status: SUPERSEDED<br>
+  <span data-verify-line="dir2">verify:companieshouse.gov.uk/d/12345678-004</span> <span verifiable-text="end" data-for="dir2">]</span>
+</div>
+
+**Why No Linking:** When a director is superseded, we don't link to their replacement. The company registry maintains the full historical record of director changes. Verification answers a simpler question: "Was this person a director, and are they still?" This avoids encoding complex succession graphs into hashes and respects that a former director's record stands on its own.
 
 <div style="font-family: 'Courier New', monospace; background: #f9f9f9; padding: 15px; border: 1px solid #999; font-size: 1em; color: #000; line-height: 1.6; max-width: 550px; margin: 24px auto;">
   <span verifiable-text="start" data-for="ucc">[</span>UCC FINANCING STATEMENT<br>
@@ -242,10 +278,11 @@ Commercial registry fraud is widespread: fake incorporation documents, forged go
 
 ## Data Verified
 
-Registry authority, entity name, file/registration number, entity type, formation/registration date, current status, registered agent, key dates (renewal, expiration).
+Registry authority, entity name, file/registration number, entity type, formation/registration date, current status, registered agent, key dates (renewal, expiration). For directors: name, appointment date, role, resignation date (if applicable), current/superseded status.
 
 **Document Types:**
-- **Certificate of Incorporation:** Company formation proof.
+- **Certificate of Incorporation:** Company formation proof, with director verification URLs.
+- **Director Appointment:** Individual director's appointment record.
 - **Certificate of Good Standing:** Current compliance status.
 - **UCC Financing Statement:** Secured transaction filing.
 - **Trademark Registration:** Intellectual property registration.
@@ -260,13 +297,18 @@ Registry authority, entity name, file/registration number, entity type, formatio
 
 Shows the issuer domain (`corp.delaware.gov`, `companieshouse.gov.uk`) and entity status.
 
-**Status Indications:**
+**Status Indications (Entities):**
 - **Active / Good Standing** — Entity current with all filings.
 - **Delinquent** — Filings or fees overdue.
 - **Dissolved** — Entity formally terminated.
 - **Forfeited** — Charter revoked for non-compliance.
 - **Merged** — Entity merged into another.
 - **Converted** — Entity converted to different type.
+
+**Status Indications (Directors):**
+- **Current** — Director actively serving.
+- **Superseded** — Director has resigned or been removed; appointment record remains valid as historical proof.
+- **Disqualified** — Director barred from serving (e.g., court order, regulatory action).
 
 ## Second-Party Use
 
@@ -330,6 +372,16 @@ The **Entity / Business Owner** benefits from verification.
 
 **Charity/Non-Profit Registries:** Charity Commission (UK), IRS (US 501c3), ACNC (Australia), OSCR (Scotland), state charity registrations.
 **Private Registries:** (ICANN for domains) private registration authorities.
+
+**Director Verification Model**
+
+Directors are public record. Each director appointment is separately verifiable:
+- The entity certificate lists directors with individual verification URLs
+- Each director's appointment is a distinct hash
+- When a director leaves, their hash verification returns SUPERSEDED, not removed
+- Historical queries ("Was X a director in 2020?") remain answerable
+
+No succession linking is needed. The registry maintains the complete history. Verification confirms "this person held this role at this entity" without encoding replacement relationships.
 
 **Multi-Jurisdiction Entities**
 
