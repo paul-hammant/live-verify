@@ -1,6 +1,6 @@
 {
-  "generated": "2026-01-10T08:06:34.522Z",
-  "totalUseCases": 393,
+  "generated": "2026-01-10T08:22:13.257Z",
+  "totalUseCases": 394,
   "totalFurtherDerivations": 396,
   "categories": {
     "Real Estate & Property": 30,
@@ -45,6 +45,7 @@
     "Agriculture & Food": 7,
     "Bonds & Sureties": 3,
     "Insurance & Bonds": 1,
+    "Consumer & Commercial Transactions": 1,
     "Vehicle & Transportation": 2
   },
   "useCases": [
@@ -6825,6 +6826,27 @@
       ]
     },
     {
+      "slug": "trade-services-receipts",
+      "title": "Trade Services Receipts",
+      "category": "Consumer & Commercial Transactions",
+      "volume": "Very Large",
+      "retention": "7 years (tax records)",
+      "furtherDerivations": 0,
+      "snippet": "Tradesperson name/business, tax registration number (UTR, ABN, EIN), trade license number, insurance reference, customer address (hashed for privacy), service description, itemized costs, tax amounts,",
+      "tags": [
+        "trades",
+        "plumber",
+        "electrician",
+        "builder",
+        "contractor",
+        "receipt",
+        "tax-compliance",
+        "cash-economy",
+        "consumer-protection",
+        "B2C"
+      ]
+    },
+    {
       "slug": "trademarks",
       "title": "Trademark Registrations",
       "category": "Intellectual Property Law",
@@ -7607,7 +7629,11 @@
     {
       "name": "Insurance & Bonds",
       "count": 1
+    },
+    {
+      "name": "Consumer & Commercial Transactions",
+      "count": 1
     }
   ],
-  "totalCategories": 43
+  "totalCategories": 44
 }
