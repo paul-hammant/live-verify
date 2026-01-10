@@ -18,7 +18,7 @@ OCR-to-hash allows a neighbor, tenant, or regulator to scan the posting to verif
 
 <div style="max-width: 500px; margin: 24px auto; font-family: sans-serif; border: 2px solid #2e7d32; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1); overflow: hidden;">
   <div style="background: #2e7d32; color: #fff; padding: 20px; text-align: center;">
-    <h3 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">Energy Performance Certificate</h3>
+    <h3 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;" verifiable-text="start" data-for="env">Energy Performance Certificate</h3>
     <div style="font-size: 0.8em; opacity: 0.9; margin-top: 5px;">OFFICIAL BUILDING RATING</div>
   </div>
 <div style="padding: 25px;">
@@ -26,7 +26,7 @@ OCR-to-hash allows a neighbor, tenant, or regulator to scan the posting to verif
       <div style="font-size: 0.9em; line-height: 1.4;">
         <strong>Property:</strong><br>
         42 INDUSTRIAL WAY, SPRINGFIELD<br>
-        <strong>RRN:</strong> <span verifiable-text="start" data-for="env">[</span>9922-8877-6655-4422
+        <strong>RRN:</strong> <span>[</span>9922-8877-6655-4422
       </div>
       <div style="text-align: right; font-size: 0.9em;">
         <strong>Date:</strong> 15 MAR 2026<br>

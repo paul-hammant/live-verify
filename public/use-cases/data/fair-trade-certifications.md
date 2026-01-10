@@ -20,14 +20,14 @@ This "Ethical Premium" is worth billions of dollars. Large retailers (like Starb
   <div style="background: #388e3c; color: #fff; padding: 20px; display: flex; align-items: center; justify-content: center;">
     <div style="font-size: 2em; margin-right: 15px;">⚖️</div>
     <div>
-      <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">FAIRTRADE CERTIFIED</h2>
+      <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;" verifiable-text="start" data-for="fairtrade">FAIRTRADE CERTIFIED</h2>
       <div style="font-size: 0.8em; opacity: 0.9;">Empowering Farmers and Workers Worldwide</div>
     </div>
   </div>
 <div style="padding: 30px; text-align: center;">
     <div style="font-size: 1.1em; line-height: 1.6; color: #333; margin-bottom: 25px;">
       This is to certify that<br>
-      <span verifiable-text="start" data-for="fairtrade">[</span><strong>COOPERATIVA CAFETERA DEL SUR</strong><br>
+      <span>[</span><strong>COOPERATIVA CAFETERA DEL SUR</strong><br>
       (Producer ID: FLO-992288)
     </div>
 <div style="background: #f1f8e9; padding: 15px; border: 1px solid #c5e1a5; border-radius: 6px; margin-bottom: 25px; text-align: left; font-size: 0.9em;">

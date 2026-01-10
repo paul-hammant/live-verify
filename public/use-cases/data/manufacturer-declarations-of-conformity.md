@@ -11,7 +11,7 @@ furtherDerivations: 1
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #333; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;">EU DECLARATION OF CONFORMITY</div>
+      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="doc">EU DECLARATION OF CONFORMITY</div>
       <div style="font-size: 0.8em; opacity: 0.8;">In accordance with EN ISO/IEC 17050-1</div>
     </div>
     <div style="font-size: 1.5em; font-weight: bold;">CE</div>
@@ -19,7 +19,7 @@ furtherDerivations: 1
 <div style="padding: 30px;">
     <div style="border-bottom: 2px solid #333; padding-bottom: 10px; margin-bottom: 20px;">
       <h3 style="margin: 0; color: #333;">PRODUCT IDENTIFICATION</h3>
-      <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;">Model: <span verifiable-text="start" data-for="doc">[</span>S-SERIES ROBOTIC HUB (V4.2)</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;">Model: <span>[</span>S-SERIES ROBOTIC HUB (V4.2)</div>
     </div>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
       <p><strong>Manufacturer:</strong> Cyberdyne Systems, SA<br>

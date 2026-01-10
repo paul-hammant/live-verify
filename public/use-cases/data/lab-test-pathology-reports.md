@@ -11,7 +11,7 @@ furtherDerivations: 1
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #004a99; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;">QUEST DIAGNOSTICS</div>
+      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="lab-res">QUEST DIAGNOSTICS</div>
       <div style="font-size: 0.8em; opacity: 0.8;">CAP Accredited Laboratory #998877</div>
     </div>
     <div style="text-align: right;">
@@ -21,7 +21,7 @@ furtherDerivations: 1
 <div style="padding: 25px;">
     <div style="border-bottom: 2px solid #004a99; padding-bottom: 10px; margin-bottom: 20px;">
       <h3 style="margin: 0; color: #333;">SURGICAL PATHOLOGY REPORT</h3>
-      <div style="font-size: 0.9em; color: #666;">Patient: <span verifiable-text="start" data-for="lab-res">[</span><strong>DOE, JOHN JACOB</strong> (DOB: 05/15/1985)</div>
+      <div style="font-size: 0.9em; color: #666;">Patient: <span>[</span><strong>DOE, JOHN JACOB</strong> (DOB: 05/15/1985)</div>
     </div>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
       <p><strong>Specimen:</strong> Biopsy, Right Upper Lobe (Lung)</p>

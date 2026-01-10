@@ -19,7 +19,7 @@ Fraud is high-stakes here: scammers often edit a cheap "Any Occupation" policy t
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Helvetica', Arial, sans-serif; border: 2px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
   <div style="background: #000; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;">UNUM PROVIDENT</div>
+      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="dis-pol">UNUM PROVIDENT</div>
       <div style="font-size: 0.8em; opacity: 0.8;">Individual Income Protection</div>
     </div>
     <div style="text-align: right;">
@@ -29,7 +29,7 @@ Fraud is high-stakes here: scammers often edit a cheap "Any Occupation" policy t
 <div style="padding: 30px;">
     <h2 style="text-align: center; color: #000; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Policy Schedule</h2>
 <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Insured:</strong> <span verifiable-text="start" data-for="dis-pol">[</span><strong>DR. STEPHEN STRANGE</strong><br>
+      <p><strong>Insured:</strong> <span>[</span><strong>DR. STEPHEN STRANGE</strong><br>
       <strong>Occupation Class:</strong> 6M (Neurosurgeon - Own Occupation)</p>
 <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
         <tr style="background: #f5f5f5; border-bottom: 2px solid #000;">

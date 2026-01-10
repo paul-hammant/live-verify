@@ -19,7 +19,7 @@ Business owners must show these verified limits to win contracts. Fraudsters oft
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #1a237e; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
   <div style="background: #1a237e; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;">THE TRAVELERS COMPANIES</div>
+      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="cgl">THE TRAVELERS COMPANIES</div>
       <div style="font-size: 0.8em;">Commercial General Liability</div>
     </div>
     <div style="text-align: right;">
@@ -29,7 +29,7 @@ Business owners must show these verified limits to win contracts. Fraudsters oft
 <div style="padding: 30px;">
     <h2 style="text-align: center; color: #1a237e; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Policy Declarations</h2>
 <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Named Insured:</strong> <span verifiable-text="start" data-for="cgl">[</span>Heavy Haulers Construction, Inc.<br>
+      <p><strong>Named Insured:</strong> <span>[</span>Heavy Haulers Construction, Inc.<br>
       <strong>Business Description:</strong> Structural Steel Erection</p>
 <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
         <tr style="background: #f0f4f8; border-bottom: 2px solid #1a237e;">

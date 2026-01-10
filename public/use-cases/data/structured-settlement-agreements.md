@@ -16,14 +16,14 @@ These documents are the "Financial Lifeline" for injured parties. Fraud is high-
 
 <div style="max-width: 650px; margin: 24px auto; font-family: 'Times New Roman', Times, serif; border: 2px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="background: #003366; color: #fff; padding: 30px; text-align: center; border-bottom: 2px solid #000;">
-    <div style="font-weight: bold; font-size: 1.5em; letter-spacing: 1px;">PACIFIC LIFE & ANNUITY</div>
+    <div style="font-weight: bold; font-size: 1.5em; letter-spacing: 1px;" verifiable-text="start" data-for="settle">PACIFIC LIFE & ANNUITY</div>
     <div style="font-size: 0.8em; opacity: 0.9; text-transform: uppercase; margin-top: 5px;">Structured Settlement Annuity Contract</div>
   </div>
 <div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
         <strong>Annuitant (Claimant):</strong><br>
-        <span verifiable-text="start" data-for="settle">[</span>SARAH JANE DOE<br>
+        <span>[</span>SARAH JANE DOE<br>
         <strong>DOB:</strong> 05/15/1985
       </div>
       <div style="text-align: right;">

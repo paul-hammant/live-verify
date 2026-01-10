@@ -16,13 +16,13 @@ These receipts are "Digital Currency." Fraud is high-stakes in the "Visa Consult
 
 <div style="max-width: 400px; margin: 24px auto; font-family: 'Courier New', monospace; border: 1px solid #999; background: #fff; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 1px dashed #333; padding-bottom: 15px; margin-bottom: 15px;">
-    <strong>CGI FEDERAL / MRV FEE</strong><br>
+    <strong verifiable-text="start" data-for="fee">CGI FEDERAL / MRV FEE</strong><br>
     OFFICIAL PAYMENT RECEIPT<br>
     ---------------------------------
   </div>
 <div style="font-size: 0.9em; line-height: 1.4;">
     <p><strong>Merchant:</strong> U.S. DEPARTMENT OF STATE<br>
-    <strong>Ref #:</strong> <span verifiable-text="start" data-for="fee">[</span>CGI-9922-8877-XJ<br>
+    <strong>Ref #:</strong> <span>[</span>CGI-9922-8877-XJ<br>
     <strong>Date:</strong> 15 MAR 2026 10:42:01</p>
 <div style="margin: 15px 0; border-top: 1px solid #000; border-bottom: 1px solid #000; padding: 5px 0; display: flex; justify-content: space-between; font-weight: bold;">
       <span>FEE AMOUNT (USD):</span>

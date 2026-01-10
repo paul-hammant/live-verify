@@ -17,7 +17,7 @@ These documents are the "Legal Safe Harbor" for high-value trade. Fraud is high-
 <div style="max-width: 650px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #000; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid #d32f2f;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;">DOW JONES RISK & COMPLIANCE</div>
+      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="sanc">DOW JONES RISK & COMPLIANCE</div>
       <div style="font-size: 0.8em; opacity: 0.9; text-transform: uppercase;">Official Screening Attestation</div>
     </div>
     <div style="font-size: 2em;">🌐</div>
@@ -25,7 +25,7 @@ These documents are the "Legal Safe Harbor" for high-value trade. Fraud is high-
 <div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
-        <strong>Subject:</strong> <span verifiable-text="start" data-for="sanc">[</span>GLOBAL PETROLEUM TRADING LTD.<br>
+        <strong>Subject:</strong> <span>[</span>GLOBAL PETROLEUM TRADING LTD.<br>
         <strong>Jurisdiction:</strong> Dubai, UAE<br>
         <strong>Entity ID:</strong> AE-99228877
       </div>

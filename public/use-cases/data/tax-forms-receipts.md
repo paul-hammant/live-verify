@@ -16,7 +16,7 @@ Lenders use W-2s to approve mortgages, and tax authorities use them to verify yo
 
 <div style="max-width: 650px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 1px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="padding: 20px; border-bottom: 2px solid #000; background: #f9f9f9; display: flex; justify-content: space-between; align-items: center;">
-    <div style="font-weight: bold; font-size: 1.2em;">Form W-2 Wage and Tax Statement</div>
+    <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="tax">Form W-2 Wage and Tax Statement</div>
     <div style="font-weight: bold; font-size: 1.5em; border: 2px solid #000; padding: 5px 10px;">2025</div>
   </div>
 <div style="padding: 20px;">
@@ -28,7 +28,7 @@ Lenders use W-2s to approve mortgages, and tax authorities use them to verify yo
         123 FACTORY LANE, SPRINGFIELD, USA
       </div>
       <div style="text-align: right;">
-        <strong>Control Number:</strong> <span verifiable-text="start" data-for="tax">[</span>CN-992288-XJ<br>
+        <strong>Control Number:</strong> <span>[</span>CN-992288-XJ<br>
         <strong>Employee SSN:</strong> XXX-XX-1234
       </div>
     </div>

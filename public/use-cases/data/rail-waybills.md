@@ -17,7 +17,7 @@ Fraud is high-stakes in bulk commodities (e.g., grain, coal, chemicals). Shady s
 <div style="max-width: 650px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 1px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #efcc00; color: #000; padding: 15px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #000;">
     <div>
-      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: -1px;">UNION PACIFIC</div>
+      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: -1px;" verifiable-text="start" data-for="rail">UNION PACIFIC</div>
       <div style="font-size: 0.75em; opacity: 0.8;">OFFICIAL INTERMODAL WAYBILL</div>
     </div>
     <div style="font-size: 2em;">🚂</div>
@@ -25,7 +25,7 @@ Fraud is high-stakes in bulk commodities (e.g., grain, coal, chemicals). Shady s
 <div style="padding: 20px;">
     <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.85em; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
-        <strong>Shipper:</strong> <span verifiable-text="start" data-for="rail">[</span>GLOBAL AGRI-TRADE LLC<br>
+        <strong>Shipper:</strong> <span>[</span>GLOBAL AGRI-TRADE LLC<br>
         <strong>Consignee:</strong> PACIFIC TERMINALS INC.<br>
         <strong>Destination:</strong> PORT OF TACOMA, WA
       </div>

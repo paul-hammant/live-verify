@@ -19,7 +19,7 @@ OCR-to-hash turns the **Physical Card** into a live link to the DMV's database. 
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 1px solid #333; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
   <div style="background: #1565c0; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
     <div>
-      <div style="font-weight: bold; font-size: 1.1em;">STATE OF CALIFORNIA</div>
+      <div style="font-weight: bold; font-size: 1.1em;" verifiable-text="start" data-for="dmv">STATE OF CALIFORNIA</div>
       <div style="font-size: 0.8em;">DRIVER LICENSE</div>
     </div>
     <div style="font-size: 1.5em;">⭐</div>
@@ -29,7 +29,7 @@ OCR-to-hash turns the **Physical Card** into a live link to the DMV's database. 
       <div style="width: 100px; height: 125px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #777;">[PHOTO]</div>
     </div>
     <div style="flex-grow: 1;">
-      <div style="font-size: 1.1em; font-weight: bold; margin: 0 0 5px 0;"><span verifiable-text="start" data-for="dmv">[</span>DOE, JOHN JACOB</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin: 0 0 5px 0;"><span>[</span>DOE, JOHN JACOB</div>
       <div style="font-size: 0.85em; color: #333; line-height: 1.4;">
         <strong>DL:</strong> 99228877<br>
         <strong>DOB:</strong> 05/15/1985<br>

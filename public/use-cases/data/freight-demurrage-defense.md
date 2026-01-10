@@ -19,7 +19,7 @@ Shipowners must prove they have this verified "Defense Cover" before they can hi
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 2px solid #002366; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="background: #002366; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;">THE LONDON P&I CLUB</div>
+      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="fdd">THE LONDON P&I CLUB</div>
       <div style="font-size: 0.8em; opacity: 0.8;">Class 2: Freight, Demurrage & Defense</div>
     </div>
     <div style="text-align: right;">
@@ -31,7 +31,7 @@ Shipowners must prove they have this verified "Defense Cover" before they can hi
 <div style="font-size: 1em; line-height: 1.6; color: #333;">
       <p>This document certifies that the following vessel is entered for FD&D coverage:</p>
 <div style="background: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin: 20px 0;">
-        <strong>Vessel Name:</strong> <span verifiable-text="start" data-for="fdd">[</span>MV OCEAN VOYAGER<br>
+        <strong>Vessel Name:</strong> <span>[</span>MV OCEAN VOYAGER<br>
         <strong>IMO Number:</strong> 9988776<br>
         <strong>Member:</strong> Global Maritime Holdings, Ltd.
       </div>

@@ -16,7 +16,7 @@ For a refugee, this document is a fragile lifeline. If an airline agent in a for
 
 <div style="max-width: 450px; margin: 24px auto; font-family: 'Times New Roman', serif; border: 2px solid #002d62; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
   <div style="background: #002d62; color: #fff; padding: 20px; text-align: center; border-bottom: 2px solid #ce9e00;">
-    <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 1px;">UNITED STATES OF AMERICA</div>
+    <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 1px;" verifiable-text="start" data-for="refugee">UNITED STATES OF AMERICA</div>
     <div style="font-size: 0.8em; opacity: 0.9; text-transform: uppercase;">Refugee Travel Document</div>
   </div>
 <div style="padding: 25px; background: #fdfdfd;">
@@ -24,7 +24,7 @@ For a refugee, this document is a fragile lifeline. If an airline agent in a for
       <div style="width: 110px; height: 140px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #777; font-size: 0.7em; text-align: center;">[HOLDER PHOTO]</div>
       <div style="flex-grow: 1; margin-left: 20px; font-size: 0.9em; line-height: 1.4;">
         <div style="font-size: 0.75em; color: #888; text-transform: uppercase;">Document No.</div>
-        <div style="font-size: 1.2em; font-weight: bold; color: #002d62;"><span verifiable-text="start" data-for="refugee">[</span>RT-9922-8877-XJ</div>
+        <div style="font-size: 1.2em; font-weight: bold; color: #002d62;"><span>[</span>RT-9922-8877-XJ</div>
 <div style="margin-top: 10px;">
           <strong>Name:</strong> JUAN VALDEZ<br>
           <strong>DOB:</strong> 05 MAY 1980<br>

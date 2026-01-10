@@ -20,7 +20,7 @@ An **Elevation Certificate** is the official paper from a licensed surveyor that
   <div style="background: #000; color: #fff; padding: 15px; text-align: center; display: flex; align-items: center; justify-content: center;">
     <div style="font-size: 1.5em; margin-right: 15px;">🌊</div>
     <div>
-      <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">ELEVATION CERTIFICATE</h2>
+      <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;" verifiable-text="start" data-for="flood">ELEVATION CERTIFICATE</h2>
       <div style="font-size: 0.8em; opacity: 0.8;">FEDERAL EMERGENCY MANAGEMENT AGENCY (FEMA)</div>
     </div>
   </div>
@@ -30,7 +30,7 @@ An **Elevation Certificate** is the official paper from a licensed surveyor that
       <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;">OMB Control #: 1660-0008</div>
     </div>
 <div style="font-size: 0.95em; line-height: 1.5; color: #333;">
-      <p><strong>Property:</strong> <span verifiable-text="start" data-for="flood">[</span>123 Ocean Blvd, Miami Beach, FL 33139<br>
+      <p><strong>Property:</strong> <span>[</span>123 Ocean Blvd, Miami Beach, FL 33139<br>
       <strong>Building Type:</strong> Single-Family Residential</p>
 <div style="background: #f0f4f8; padding: 15px; border: 1px solid #d1d9e6; margin: 15px 0;">
         <p><strong>FEMA Flood Zone:</strong> AE (EL 9')<br>

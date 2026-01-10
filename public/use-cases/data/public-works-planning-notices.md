@@ -18,11 +18,11 @@ OCR-to-hash allows a citizen or neighbor to scan the notice from the sidewalk to
 
 <div style="max-width: 500px; margin: 24px auto; font-family: 'Helvetica Neue', Arial, sans-serif; border: 4px solid #ffcc00; background: #fffbe6; padding: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 15px; margin-bottom: 20px;">
-    <div style="font-weight: bold; font-size: 1.3em; text-transform: uppercase;">City Planning Commission</div>
+    <div style="font-weight: bold; font-size: 1.3em; text-transform: uppercase;" verifiable-text="start" data-for="plan">City Planning Commission</div>
     <div style="font-size: 1em; letter-spacing: 1px;">PUBLIC NOTICE OF PROPOSED DEVELOPMENT</div>
   </div>
 <div style="font-size: 0.9em; line-height: 1.6; color: #000;">
-    <p><strong>Application #:</strong> <span verifiable-text="start" data-for="plan">[</span>PLN-2026-992288<br>
+    <p><strong>Application #:</strong> <span>[</span>PLN-2026-992288<br>
     <strong>Address:</strong> 42 SKYLINE DRIVE, SPRINGFIELD, USA</p>
 <div style="margin: 15px 0; padding: 15px; border: 1px solid #000; background: #fff;">
       <strong>Proposed Action:</strong><br>

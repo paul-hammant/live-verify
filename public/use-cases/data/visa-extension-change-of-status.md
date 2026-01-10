@@ -17,7 +17,7 @@ These documents are the "Proof of Legal Presence." Fraud is rampant: people whos
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="background: #f4f4f4; padding: 15px; border-bottom: 1px solid #ccc; display: flex; align-items: center; justify-content: space-between;">
     <div>
-      <div style="font-weight: bold; font-size: 1.1em; color: #333;">I-797A | NOTICE OF ACTION</div>
+      <div style="font-weight: bold; font-size: 1.1em; color: #333;" verifiable-text="start" data-for="extension">I-797A | NOTICE OF ACTION</div>
       <div style="font-size: 0.7em; color: #666;">DEPARTMENT OF HOMELAND SECURITY • U.S. CITIZENSHIP AND IMMIGRATION SERVICES</div>
     </div>
     <div style="width: 45px; height: 45px; background: #999; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-weight: bold; font-size: 0.6em; text-align: center;">DHS</div>
@@ -25,7 +25,7 @@ These documents are the "Proof of Legal Presence." Fraud is rampant: people whos
 <div style="padding: 25px;">
     <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; font-size: 0.9em; line-height: 1.5; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
       <div>
-        <strong>Receipt Number:</strong> <span verifiable-text="start" data-for="extension">[</span>WAC-26-992-28877<br>
+        <strong>Receipt Number:</strong> <span>[</span>WAC-26-992-28877<br>
         <strong>Petitioner:</strong> GOLIATH TECH SOLUTIONS INC.<br>
         <strong>Beneficiary:</strong> JOHN JACOB DOE
       </div>

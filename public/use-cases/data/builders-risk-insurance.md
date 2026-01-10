@@ -11,7 +11,7 @@ furtherDerivations: 1
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Helvetica', sans-serif; border: 2px solid #1565c0; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="background: #1565c0; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;">ZURICH NORTH AMERICA</div>
+      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="build">ZURICH NORTH AMERICA</div>
       <div style="font-size: 0.8em;">Construction Specialty Underwriters</div>
     </div>
     <div style="text-align: right;">
@@ -21,7 +21,7 @@ furtherDerivations: 1
 <div style="padding: 30px;">
     <h2 style="text-align: center; color: #1565c0; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Builders Risk Certificate</h2>
 <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Project Name:</strong> <span verifiable-text="start" data-for="build">[</span>Liberty High School Addition<br>
+      <p><strong>Project Name:</strong> <span>[</span>Liberty High School Addition<br>
       <strong>Location:</strong> 4500 Skyline Blvd, Austin, TX</p>
 <p><strong>Project Owner:</strong> Austin Independent School District<br>
       <strong>General Contractor:</strong> Skyline Builders Group, LLC</p>

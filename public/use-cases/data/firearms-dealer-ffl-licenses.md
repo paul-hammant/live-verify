@@ -20,13 +20,13 @@ Scammers often create fake FFL PDF papers to trick online sellers into shipping 
   <div style="background: #000; color: #fff; padding: 15px; text-align: center; display: flex; align-items: center; justify-content: center;">
     <div style="font-size: 1.5em; margin-right: 15px;">⚖️</div>
     <div>
-      <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">FEDERAL FIREARMS LICENSE</h2>
+      <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;" verifiable-text="start" data-for="ffl">FEDERAL FIREARMS LICENSE</h2>
       <div style="font-size: 0.8em; opacity: 0.8;">U.S. DEPT OF JUSTICE • BUREAU OF ALCOHOL, TOBACCO, FIREARMS AND EXPLOSIVES</div>
     </div>
   </div>
 <div style="padding: 25px;">
     <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
-      <h3 style="margin: 0; color: #333;">LICENSE NUMBER: <span verifiable-text="start" data-for="ffl">[</span>9-99-887-01-2C-99228</h3>
+      <h3 style="margin: 0; color: #333;">LICENSE NUMBER: <span>[</span>9-99-887-01-2C-99228</h3>
     </div>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
       <p><strong>Licensee Name:</strong> MILLER ARMS & SPORTING GOODS, LLC<br>

@@ -18,13 +18,13 @@ Because the stakes are so high, every crane must be professionally inspected eve
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 4px solid #fbc02d; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #fbc02d; color: #000; padding: 15px; text-align: center;">
-    <h2 style="margin: 0; text-transform: uppercase;">HEAVY LIFT INSPECTION SERVICES</h2>
+    <h2 style="margin: 0; text-transform: uppercase;" verifiable-text="start" data-for="crane">HEAVY LIFT INSPECTION SERVICES</h2>
     <div style="font-size: 0.8em; font-weight: bold;">CERTIFIED ACCREDITED CRANE INSPECTOR</div>
   </div>
 <div style="padding: 25px;">
     <div style="text-align: center; border-bottom: 2px solid #fbc02d; padding-bottom: 10px; margin-bottom: 20px;">
       <h3 style="margin: 0; color: #333;">ANNUAL INSPECTION CERTIFICATE</h3>
-      <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;">Certificate #: <span verifiable-text="start" data-for="crane">[</span>C-992288-26</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;">Certificate #: <span>[</span>C-992288-26</div>
     </div>
 <div style="font-size: 0.9em; line-height: 1.5; color: #333;">
       <p><strong>Equipment:</strong> Liebherr LTM 11200-9.1 (Mobile Crane)<br>

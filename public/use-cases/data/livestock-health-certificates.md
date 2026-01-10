@@ -11,7 +11,7 @@ furtherDerivations: 1
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #1b5e20; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.1em;">VETERINARY HEALTH CERTIFICATE</div>
+      <div style="font-weight: bold; font-size: 1.1em;" verifiable-text="start" data-for="animal">VETERINARY HEALTH CERTIFICATE</div>
       <div style="font-size: 0.8em;">Certificate of Veterinary Inspection (CVI)</div>
     </div>
     <div style="width: 40px; height: 40px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #1b5e20; font-weight: bold; font-size: 0.7em;">USDA</div>
@@ -19,7 +19,7 @@ furtherDerivations: 1
 <div style="padding: 25px;">
     <div style="text-align: center; border-bottom: 2px solid #1b5e20; padding-bottom: 10px; margin-bottom: 20px;">
       <h3 style="margin: 0; color: #1b5e20;">OFFICIAL SHIPMENT AUTHORIZATION</h3>
-      <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;">Serial #: <span verifiable-text="start" data-for="animal">[</span>CVI-2026-992288</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;">Serial #: <span>[</span>CVI-2026-992288</div>
     </div>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
       <p><strong>Consignor:</strong> Miller Quarter Horses, LLC (Texas)<br>

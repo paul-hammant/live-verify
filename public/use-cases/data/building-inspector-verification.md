@@ -20,7 +20,7 @@ OCR-to-Hash allows a homeowner to scan the badge at the door and see a green "AC
   <div style="background: #1a237e; color: #fff; padding: 15px; text-align: center; display: flex; align-items: center; justify-content: center;">
     <div style="font-size: 1.5em; margin-right: 10px;">🏛</div>
     <div>
-      <h3 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">CITY OF CHICAGO</h3>
+      <h3 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;" verifiable-text="start" data-for="inspect">CITY OF CHICAGO</h3>
       <div style="font-size: 0.8em;">DEPARTMENT OF BUILDINGS</div>
     </div>
   </div>
@@ -30,7 +30,7 @@ OCR-to-Hash allows a homeowner to scan the badge at the door and see a green "AC
     </div>
     <div style="flex-grow: 1;">
       <h4 style="margin: 0; color: #1a237e;">OFFICIAL INSPECTOR</h4>
-      <div style="font-size: 1.1em; font-weight: bold; margin: 5px 0;"><span verifiable-text="start" data-for="inspect">[</span>RAYMOND STANTZ</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin: 5px 0;"><span>[</span>RAYMOND STANTZ</div>
       <div style="font-size: 0.9em; color: #333; line-height: 1.4;">
         <strong>Badge #:</strong> 992288<br>
         <strong>Division:</strong> Electrical Safety<br>

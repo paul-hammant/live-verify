@@ -11,7 +11,7 @@ furtherDerivations: 1
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #002d62; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;">BLUE-VINE CAPITAL</div>
+      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="factor">BLUE-VINE CAPITAL</div>
       <div style="font-size: 0.8em; opacity: 0.8;">Commercial Factoring & Liquidity</div>
     </div>
     <div style="text-align: right;">
@@ -23,7 +23,7 @@ furtherDerivations: 1
 <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
       <p>This document confirms that the following accounts receivable have been purchased by the Factor:</p>
 <div style="background: #fdfdfd; border: 1px solid #eee; padding: 15px; margin: 15px 0; border-radius: 4px;">
-        <p><strong>Seller:</strong> <span verifiable-text="start" data-for="factor">[</span>Apex Manufacturing, Ltd.<br>
+        <p><strong>Seller:</strong> <span>[</span>Apex Manufacturing, Ltd.<br>
         <strong>Buyer (Debtor):</strong> Global Retail Hub, Corp.</p>
 <strong>Invoice Total:</strong> $ 100,000.00<br>
         <strong>Advance Rate:</strong> 85.00% ($ 85,000.00 Paid)<br>

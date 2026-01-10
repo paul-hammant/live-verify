@@ -18,12 +18,12 @@ Because attorneys often move between states for specific cases, they must show t
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #999; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
   <div style="text-align: center; margin-bottom: 30px; border-bottom: 2px solid #000; padding-bottom: 20px;">
-    <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;">SUPREME COURT OF THE STATE OF NEW YORK</div>
+    <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;" verifiable-text="start" data-for="bar">SUPREME COURT OF THE STATE OF NEW YORK</div>
     <div style="font-size: 0.9em; margin-top: 5px;">APPELLATE DIVISION, FIRST JUDICIAL DEPARTMENT</div>
   </div>
 <div style="font-size: 1em; line-height: 1.8; color: #000; text-align: justify;">
     <p>I, Susanna Rojas, Clerk of the Appellate Division of the Supreme Court of the State of New York, First Judicial Department, do hereby certify that</p>
-<p style="text-align: center; font-size: 1.3em; font-weight: bold; margin: 20px 0;"><span verifiable-text="start" data-for="bar">[</span>SAUL GOODMAN</p>
+<p style="text-align: center; font-size: 1.3em; font-weight: bold; margin: 20px 0;"><span>[</span>SAUL GOODMAN</p>
 <p>was duly licensed and admitted to practice as an Attorney and Counselor-at-Law in all the courts of this State on <strong>May 15, 2010</strong>, has duly taken and subscribed the statutory oath of office, and has been enrolled in the Roll of Attorneys and Counselors-at-Law on file in my office, is currently in <strong>GOOD STANDING</strong>, and is registered with the Office of Court Administration.</p>
   </div>
 <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">

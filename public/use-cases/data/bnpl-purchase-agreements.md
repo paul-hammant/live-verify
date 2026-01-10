@@ -10,7 +10,7 @@ furtherDerivations: 1
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #000; color: #fff; padding: 20px; text-align: left;">
-    <div style="font-weight: bold; font-size: 1.4em;">Affirm</div>
+    <div style="font-weight: bold; font-size: 1.4em;" verifiable-text="start" data-for="bnpl">Affirm</div>
     <div style="font-size: 0.8em; opacity: 0.8;">LOAN AGREEMENT & TRUTH IN LENDING DISCLOSURE</div>
   </div>
 <div style="padding: 25px;">
@@ -24,7 +24,7 @@ furtherDerivations: 1
       </div>
     </div>
 <div style="font-size: 0.95em; line-height: 1.5; color: #333; border: 1px solid #000; padding: 15px; margin-bottom: 20px;">
-      <p><strong>Borrower:</strong> <span verifiable-text="start" data-for="bnpl">[</span><strong>JOHN SMITH</strong></p>
+      <p><strong>Borrower:</strong> <span>[</span><strong>JOHN SMITH</strong></p>
 <table style="width: 100%; border-collapse: collapse;">
         <tr>
           <td>Amount Financed:</td>

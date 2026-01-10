@@ -18,12 +18,12 @@ Banks won't release construction loans without these papers. Fraud is common: co
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Helvetica', sans-serif; border: 2px solid #333; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #333; padding-bottom: 10px; margin-bottom: 20px;">
-    <h2 style="margin: 0; text-transform: uppercase; font-size: 1.2em;">Unconditional Waiver and Release on Progress Payment</h2>
+    <h2 style="margin: 0; text-transform: uppercase; font-size: 1.2em;" verifiable-text="start" data-for="waiver">Unconditional Waiver and Release on Progress Payment</h2>
   </div>
   <div style="font-size: 0.9em; line-height: 1.5; color: #333;">
     <p><strong>Project:</strong> Skyline Tower (Job #4921)<br>
     <strong>Property:</strong> 500 W 5th St, Austin, TX<br>
-    <strong>Claimant:</strong> <span verifiable-text="start" data-for="waiver">[</span><strong>Drywall Dynamics LLC</strong><br>
+    <strong>Claimant:</strong> <span>[</span><strong>Drywall Dynamics LLC</strong><br>
     <strong>Customer:</strong> Turner Construction</p>
 <p style="background: #f9f9f9; padding: 10px; border: 1px solid #eee;">
       The undersigned has been paid and has received a progress payment in the sum of <strong>$ 42,500.00</strong> for labor, services, equipment, or material furnished to the jobsite through <strong>April 30, 2026</strong>.

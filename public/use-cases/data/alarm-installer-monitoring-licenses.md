@@ -21,7 +21,7 @@ Always scan the badge before letting a "technician" into your home to learn your
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 4px solid #b71c1c; background: #fff; padding: 0;">
   <div style="background: #b71c1c; color: #fff; padding: 15px; text-align: center;">
-    <h3 style="margin: 0;">TEXAS DEPARTMENT OF PUBLIC SAFETY</h3>
+    <h3 style="margin: 0;" verifiable-text="start" data-for="alarm">TEXAS DEPARTMENT OF PUBLIC SAFETY</h3>
     <div style="font-size: 0.9em;">PRIVATE SECURITY BUREAU</div>
   </div>
 <div style="padding: 25px; display: flex;">
@@ -31,7 +31,7 @@ Always scan the badge before letting a "technician" into your home to learn your
     <div style="flex-grow: 1;">
       <h2 style="margin-top: 0; color: #333; font-size: 1.2em;">ALARM SYSTEMS INSTALLER</h2>
 <div style="font-size: 0.95em; line-height: 1.5; color: #333;">
-        <p><strong>Licensee:</strong> <span verifiable-text="start" data-for="alarm">[</span>ROBERT PAULSON<br>
+        <p><strong>Licensee:</strong> <span>[</span>ROBERT PAULSON<br>
         <strong>License #:</strong> B-1234567<br>
         <strong>Company:</strong> Fight Club Security, LLC</p>
 <p><strong>Expires:</strong> 12/31/2026<br>

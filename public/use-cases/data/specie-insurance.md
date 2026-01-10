@@ -17,7 +17,7 @@ These documents are the "Proof of Protection" for the most valuable items on Ear
 <div style="max-width: 650px; margin: 24px auto; font-family: 'Georgia', serif; border: 2px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="background: #1a1a1a; color: #fff; padding: 30px; display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid #d4af37;">
     <div>
-      <div style="font-weight: bold; font-size: 1.5em; letter-spacing: 1px;">AXA ART SPECIALTY</div>
+      <div style="font-weight: bold; font-size: 1.5em; letter-spacing: 1px;" verifiable-text="start" data-for="specie">AXA ART SPECIALTY</div>
       <div style="font-size: 0.8em; opacity: 0.9; text-transform: uppercase;">Global Specie & High-Value Assets Unit</div>
     </div>
     <div style="font-size: 2.2em; color: #d4af37;">💎</div>

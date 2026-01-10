@@ -10,7 +10,7 @@ furtherDerivations: 1
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 4px solid #002d62; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #002d62; color: #fff; padding: 20px; text-align: center;">
-    <h2 style="margin: 0; font-size: 1.3em; letter-spacing: 1px;">CERTIFICATE OF REGISTRATION</h2>
+    <h2 style="margin: 0; font-size: 1.3em; letter-spacing: 1px;" verifiable-text="start" data-for="broker">CERTIFICATE OF REGISTRATION</h2>
     <div style="font-size: 0.8em; margin-top: 5px;">FINANCIAL INDUSTRY REGULATORY AUTHORITY (FINRA)</div>
   </div>
 <div style="padding: 25px; display: flex;">
@@ -20,7 +20,7 @@ furtherDerivations: 1
     <div style="flex-grow: 1;">
       <h3 style="margin-top: 0; color: #002d62; font-size: 1.2em;">REGISTERED REPRESENTATIVE</h3>
 <div style="font-size: 0.95em; line-height: 1.5; color: #333;">
-        <p><strong>Individual:</strong> <span verifiable-text="start" data-for="broker">[</span>JORDAN BELFORT<br>
+        <p><strong>Individual:</strong> <span>[</span>JORDAN BELFORT<br>
         <strong>CRD Number:</strong> 9988776<br>
         <strong>Firm:</strong> Stratton Oakmont, Inc.</p>
 <p><strong>Status:</strong> REGISTERED<br>

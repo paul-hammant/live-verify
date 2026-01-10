@@ -16,11 +16,11 @@ If things go wrong, this report is critical evidence. Did the advisor understand
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #4a4a4a; background: #fff; padding: 0;">
   <div style="background: #4a4a4a; color: #fff; padding: 15px;">
-    <div style="font-weight: bold; font-size: 1.1em;">SUITABILITY REPORT</div>
+    <div style="font-weight: bold; font-size: 1.1em;" verifiable-text="start" data-for="investmentsuitabilit">SUITABILITY REPORT</div>
     <div style="font-size: 0.8em;">Investment Recommendation Assessment</div>
   </div>
   <div style="padding: 20px; font-size: 0.9em; line-height: 1.6;">
-    <p><strong>Client:</strong> <span verifiable-text="start" data-for="investmentsuitabilit">[</span>Margaret Chen<br>
+    <p><strong>Client:</strong> <span>[</span>Margaret Chen<br>
     <strong>Advisor:</strong> James Wilson, CFA (FCA Approved CF30)<br>
     <strong>Firm:</strong> Hartley Wealth Management<br>
     <strong>Date:</strong> February 15, 2026</p>

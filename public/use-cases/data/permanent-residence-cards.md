@@ -17,7 +17,7 @@ Because it grants broad rights, Green Cards are the #1 target for **High-End For
 <div style="max-width: 450px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; border-radius: 15px; background: linear-gradient(135deg, #e8f5e9 0%, #fff 100%); overflow: hidden; box-shadow: 0 6px 20px rgba(0,0,0,0.2); position: relative;">
   <div style="background: #002d62; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between; border-bottom: 3px solid #ce9e00;">
     <div>
-      <div style="font-weight: bold; font-size: 1em; letter-spacing: 1px;">UNITED STATES OF AMERICA</div>
+      <div style="font-weight: bold; font-size: 1em; letter-spacing: 1px;" verifiable-text="start" data-for="pr">UNITED STATES OF AMERICA</div>
       <div style="font-size: 0.7em; opacity: 0.9;">PERMANENT RESIDENT</div>
     </div>
     <div style="width: 40px; height: 40px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #002d62; font-weight: bold; font-size: 0.6em; text-align: center;">DHS</div>
@@ -27,7 +27,7 @@ Because it grants broad rights, Green Cards are the #1 target for **High-End For
       <div style="width: 110px; height: 140px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #777; font-size: 0.7em; text-align: center;">[HOLDER PHOTO]</div>
     </div>
     <div style="flex-grow: 1; font-size: 0.85em; line-height: 1.4;">
-      <div style="font-weight: bold; font-size: 1.1em; margin-bottom: 5px; color: #333;"><span verifiable-text="start" data-for="pr">[</span>DOE, JOHN JACOB</div>
+      <div style="font-weight: bold; font-size: 1.1em; margin-bottom: 5px; color: #333;"><span>[</span>DOE, JOHN JACOB</div>
       <div style="color: #555;">
         <strong>USCIS #:</strong> 992-288-776<br>
         <strong>Category:</strong> RE8 (Refugee)<br>

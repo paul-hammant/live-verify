@@ -22,14 +22,14 @@ This document is the **Identification Form**. It acts as a timestamped "snapshot
   <div style="padding: 30px 40px; text-align: left;">
     <div style="border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: flex-end;">
       <div>
-        <div style="font-size: 1.2em; font-weight: bold; text-transform: uppercase;">Equitable Exchange Services, Inc.</div>
+        <div style="font-size: 1.2em; font-weight: bold; text-transform: uppercase;" verifiable-text="start" data-for="1031">Equitable Exchange Services, Inc.</div>
         <div style="font-size: 0.8em; color: #555;">A Qualified Intermediary</div>
       </div>
       <div style="font-size: 0.8em;">QI License: #99-2342-CA</div>
     </div>
 <h2 style="font-size: 1.4em; text-align: center; margin: 20px 0; text-decoration: underline;">IDENTIFICATION OF REPLACEMENT PROPERTY</h2>
 <div style="font-size: 0.95em; line-height: 1.5; color: #333;">
-      <p><strong>Exchanger:</strong> <span verifiable-text="start" data-for="1031">[</span>Robert & Mary Smith Trust<br>
+      <p><strong>Exchanger:</strong> <span>[</span>Robert & Mary Smith Trust<br>
       <strong>Relinquished Property:</strong> 123 Oak Street, Springfield, IL<br>
       <strong>Date of Transfer:</strong> January 15, 2026</p>
 <p>Pursuant to Section 1031 of the Internal Revenue Code, the Exchanger hereby identifies the following replacement properties:</p>

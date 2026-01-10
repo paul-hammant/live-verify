@@ -20,14 +20,14 @@ Do you let them in?
   <div style="background: #0066cc; color: #fff; padding: 12px; display: flex; align-items: center; gap: 10px;">
     <div style="font-size: 1.5em;">💧</div>
     <div>
-      <div style="font-weight: bold;">THAMES WATER</div>
+      <div style="font-weight: bold;" verifiable-text="start" data-for="badge">THAMES WATER</div>
       <div style="font-size: 0.8em;">Authorized Field Representative</div>
     </div>
   </div>
 <div style="padding: 15px; display: flex; gap: 15px;">
     <div style="width: 80px; height: 100px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #777; font-size: 0.7em;">[PHOTO]</div>
     <div style="flex-grow: 1;">
-      <div style="font-size: 1.1em; font-weight: bold;"><span verifiable-text="start" data-for="badge">[</span>SARAH JENKINS</div>
+      <div style="font-size: 1.1em; font-weight: bold;"><span>[</span>SARAH JENKINS</div>
       <div style="font-size: 0.85em; color: #333; line-height: 1.5;">
         <strong>Employee ID:</strong> TW-44821<br>
         <strong>Role:</strong> Meter Reader<br>
@@ -82,9 +82,8 @@ Delivery drivers (Evri, DPD, Deliveroo, JustEat) present a different case: most 
 Delivery agents carry a weatherproof lanyard ID — large print, few lines, minimal characters for OCR through a doorbell camera:
 
 <div style="max-width: 280px; margin: 24px auto; font-family: sans-serif; border: 3px solid #DC0032; background: #fff; padding: 20px; border-radius: 8px; text-align: center;">
-  <div style="font-size: 1.4em; font-weight: bold; color: #DC0032; margin-bottom: 8px;"><span verifiable-text="start" data-for="dpd">[</span>DPD Delivery Agent</div>
-  <div style="font-size: 1.6em; font-weight: bold; color: #000; margin-bottom: 12px;">Henry M 2621</div>
-  <div data-verify-line="dpd" style="font-family: 'Courier New', monospace; font-size: 1.1em; color: #555;"
+  <div style="font-size: 1.4em; font-weight: bold; color: #DC0032; margin-bottom: 8px;"><span>[</span>DPD Delivery Agent</div>
+  <div style="font-size: 1.6em; font-weig<div style="font-size: 1.6em; font-weight: bold; color: #000; margin-bottom: 12px;" verifiable-text="start" data-for="dpd">ine="dpd" style="font-family: 'Courier New', monospace; font-size: 1.1em; color: #555;"
     title="Demo only: DPD doesn't yet offer verification endpoints, so this is illustrative">
     vfy:associates.dpd.co.uk <span verifiable-text="end" data-for="dpd">]</span>
   </div>

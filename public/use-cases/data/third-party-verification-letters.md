@@ -17,14 +17,14 @@ These letters are the "Seal of Solvency." Fraud is rampant: people create fake "
 <div style="max-width: 650px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #000; padding-bottom: 15px; margin-bottom: 30px;">
     <div>
-      <div style="font-weight: bold; font-size: 1.4em; color: #003366;">EQUIFAX WORKFORCE SOLUTIONS</div>
+      <div style="font-weight: bold; font-size: 1.4em; color: #003366;" verifiable-text="start" data-for="verify">EQUIFAX WORKFORCE SOLUTIONS</div>
       <div style="font-size: 0.8em; opacity: 0.8; text-transform: uppercase; letter-spacing: 1px;">The Work Number&reg; Verification Service</div>
     </div>
     <div style="width: 60px; height: 60px; background: #eee; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.6em; text-align: center;">EFX<br>LOGGED</div>
   </div>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <p>Date: March 15, 2026</p>
-    <p><strong>Subject:</strong> <span verifiable-text="start" data-for="verify">[</span><strong>JOHN JACOB DOE</strong><br>
+    <p><strong>Subject:</strong> <span>[</span><strong>JOHN JACOB DOE</strong><br>
     <strong>SSN (Last 4):</strong> XXX-XX-9922</p>
 <div style="background: #f9f9f9; padding: 20px; border: 1px solid #ddd; margin: 20px 0;">
       <h4 style="margin-top: 0; color: #003366; border-bottom: 1px solid #ccc; padding-bottom: 5px;">VERIFIED EMPLOYMENT DATA</h4>

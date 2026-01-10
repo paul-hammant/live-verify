@@ -19,7 +19,7 @@ Suppliers use these **Early Payment Confirmations** to prove their cash flow to 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #002d62; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;">C2FO DYNAMIC DISCOUNTING</div>
+      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="discount">C2FO DYNAMIC DISCOUNTING</div>
       <div style="font-size: 0.8em; opacity: 0.8;">Working Capital Verification</div>
     </div>
     <div style="text-align: right;">
@@ -29,7 +29,7 @@ Suppliers use these **Early Payment Confirmations** to prove their cash flow to 
 <div style="padding: 25px;">
     <h3 style="margin-top: 0; color: #002d62; border-bottom: 2px solid #002d62; padding-bottom: 5px;">EARLY PAYMENT CONFIRMATION</h3>
 <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Supplier:</strong> <span verifiable-text="start" data-for="discount">[</span>Apex Manufacturing, Ltd.<br>
+      <p><strong>Supplier:</strong> <span>[</span>Apex Manufacturing, Ltd.<br>
       <strong>Buyer:</strong> Global Retail Hub, Corp.</p>
 <div style="background: #f0f4f8; padding: 15px; border: 1px solid #d1d9e6; margin: 15px 0;">
         <table style="width: 100%; font-size: 0.95em;">

@@ -21,11 +21,11 @@ A gym membership card only needs to work at the gym—they have your photo on fi
 
 <div style="max-width: 500px; margin: 24px auto; font-family: Arial, sans-serif; border: 2px solid #003366; border-radius: 8px; background: linear-gradient(to bottom, #003366, #004080); color: white; padding: 20px;">
   <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
-    <div style="font-size: 1.8em; font-weight: bold;">AAA</div>
+    <div style="font-size: 1.8em; font-weight: bold;" verifiable-text="start" data-for="membershipcardsexter">AAA</div>
     <div style="background: gold; color: #003366; padding: 4px 12px; border-radius: 4px; font-weight: bold;">PREMIER</div>
   </div>
   <div style="font-size: 0.9em; line-height: 1.5;">
-    <p style="margin: 5px 0;"><strong>Member:</strong> <span verifiable-text="start" data-for="membershipcardsexter">[</span>Jennifer M. Kowalski</p>
+    <p style="margin: 5px 0;"><strong>Member:</strong> <span>[</span>Jennifer M. Kowalski</p>
     <p style="margin: 5px 0;"><strong>Member #:</strong> 438 722 991 847 3</p>
     <p style="margin: 5px 0;"><strong>Since:</strong> 2018</p>
     <p style="margin: 5px 0;"><strong>Valid Thru:</strong> 12/2026</p>

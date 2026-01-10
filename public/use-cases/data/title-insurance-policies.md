@@ -18,7 +18,7 @@ Unlike other insurance that covers *future* events (like fire), title insurance 
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.2em; color: #1a365d;">FIRST AMERICAN TITLE</div>
+    <div style="font-weight: bold; font-size: 1.2em; color: #1a365d;" verifiable-text="start" data-for="title-ins">FIRST AMERICAN TITLE</div>
     <div style="text-align: right; font-size: 0.85em; color: #666;">
       Policy No: FA-99228877-TX<br>
       March 15, 2026
@@ -26,7 +26,7 @@ Unlike other insurance that covers *future* events (like fire), title insurance 
   </div>
 <h2 style="text-align: center; font-size: 1.4em; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 30px;">Owner's Policy of Title Insurance</h2>
 <div style="font-size: 1em; line-height: 1.6; color: #000; text-align: justify;">
-    <p><strong>SUBJECT TO THE EXCLUSIONS FROM COVERAGE</strong>, FIRST AMERICAN TITLE INSURANCE COMPANY (the "Company") insures <span verifiable-text="start" data-for="title-ins">[</span><strong>ROBERT J. MILLER</strong> (the "Insured") against loss or damage sustained by reason of any defect in title.</p>
+    <p><strong>SUBJECT TO THE EXCLUSIONS FROM COVERAGE</strong>, FIRST AMERICAN TITLE INSURANCE COMPANY (the "Company") insures <span>[</span><strong>ROBERT J. MILLER</strong> (the "Insured") against loss or damage sustained by reason of any defect in title.</p>
 <div style="background: #f9f9f9; padding: 15px; border: 1px solid #eee; margin: 20px 0;">
       <p><strong>Amount of Insurance:</strong> $ 525,000.00</p>
       <p><strong>Property:</strong> Lot 42, Block 7, Skyline Heights Addition, Austin, TX</p>

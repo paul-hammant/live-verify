@@ -19,7 +19,7 @@ Fraud happens during the sales process: some brokers edit the SBC PDF to show a 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="background: #005fb8; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;">AETNA HEALTH</div>
+      <div style="font-weight: bold; font-size: 1.2em;" verifiable-text="start" data-for="health-sbc">AETNA HEALTH</div>
       <div style="font-size: 0.8em; opacity: 0.8;">Summary of Benefits and Coverage (SBC)</div>
     </div>
     <div style="text-align: right;">
@@ -32,7 +32,7 @@ Fraud happens during the sales process: some brokers edit the SBC PDF to show a 
       <div style="font-size: 0.9em; color: #666;">Coverage for: Individual & Family | Plan Period: 01/01/26 - 12/31/26</div>
     </div>
 <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p>This is only a summary. For more information, see <span verifiable-text="start" data-for="health-sbc">[</span><strong>www.aetna.com</strong>.</p>
+      <p>This is only a summary. For more information, see <span>[</span><strong>www.aetna.com</strong>.</p>
 <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
         <tr style="background: #f5f5f5; border-bottom: 1px solid #005fb8;">
           <th style="text-align: left; padding: 8px;">Important Questions</th>
