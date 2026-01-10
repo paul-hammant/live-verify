@@ -86,11 +86,35 @@ The **Hiring Insurance Carrier** benefits from verification.
 - **Cause of Loss Forgery:** Changing "Flood" (uninsured) to "Pipe Burst" (insured) on the paper report to trigger a payout.
 - **License Fraud:** An unlicensed trainee performing the inspection but using a master adjuster's verified signature on the final PDF.
 
-**Issuer Types**
+**Issuer Types** (First Party)
 
 **IA Firms:** (Crawford & Co, Eberl, Sedgwick, Alacrity).
 **Independent Adjusters:** (Solo practitioners).
 **Inspection Platforms:** (e.g., Xactimate/Verisk - hosting the underlying data hashes).
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require the issuer to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the issuer, and any subsequent changes to the payload as they happen—which may manifest as a new hash, a status change, or even a 404 (record deleted)
+- Receives structured content/metadata (key identifiers and dates)
+- Does **NOT** receive plaintext or sensitive personal information
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to document holders/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Issuer cannot deny issuing the document
+- **Timestamp proof:** Document existed at a specific time
+- **Regulatory audit:** Jurisdictions can inspect the witness ledger for fraud detection
+- **Resilience:** Verification works even if issuer's systems go down
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Issuer domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
+
 
 ## Competition vs. Claims Management Portals
 

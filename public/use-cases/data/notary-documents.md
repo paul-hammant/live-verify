@@ -90,11 +90,35 @@ The **Liquidator (Executor)** benefits from verification.
 - **Copy Tampering:** Editing a "True Copy" of the Will to change the names of heirs.
 - **Notary Impersonation:** Forging the seal of a retired or deceased Notary on a fake Succession Certificate.
 
-**Issuer Types**
+**Issuer Types** (First Party)
 
 **National Notary Chambers:** (e.g., *Chambre des Notaires du Québec*, *Conseil Supérieur du Notariat*).
 **Regional Notary Councils.**
 **Central Successions Registries:** (e.g., *Registre des Dispositions de Dernières Volontés*).
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require the issuer to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the issuer, and any subsequent changes to the payload as they happen—which may manifest as a new hash, a status change, or even a 404 (record deleted)
+- Receives structured content/metadata (key identifiers and dates)
+- Does **NOT** receive plaintext or sensitive personal information
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to document holders/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Issuer cannot deny issuing the document
+- **Timestamp proof:** Document existed at a specific time
+- **Regulatory audit:** Jurisdictions can inspect the witness ledger for fraud detection
+- **Resilience:** Verification works even if issuer's systems go down
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Issuer domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
+
 
 ## Competition vs. Apostilles
 
@@ -195,11 +219,44 @@ Shows the issuer domain (the Secretary of State or a Remote Online Notary platfo
 - **Post-Dated Notarization:** Notaries signing a document months *after* the signer has left (illegal in all jurisdictions).
 - **Template Forgery:** Creating a completely fake "Seal of the State" to trick people into trusting a contract.
 
-**Issuer Types**
+**Issuer Types** (First Party)
 
 **Secretaries of State:** (The primary regulating authority in the USA).
 **Remote Online Notary (RON) Platforms:** (e.g., Proof, Notarize - hosting the cryptographically secure session hashes).
 **National Notary Associations.**
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require the issuer to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the issuer, and any subsequent changes to the payload as they happen—which may manifest as a new hash, a status change, or even a 404 (record deleted)
+- Receives structured content/metadata (key identifiers and dates)
+- Does **NOT** receive plaintext or sensitive personal information
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to document holders/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Issuer cannot deny issuing the document
+- **Timestamp proof:** Document existed at a specific time
+- **Regulatory audit:** Jurisdictions can inspect the witness ledger for fraud detection
+- **Resilience:** Verification works even if issuer's systems go down
+
+**Jurisdictional Requirements (United States)**
+
+The IRS does not mandate or recognize third-party witnessing firms for federal tax documents. The IRS maintains authoritative records within its own systems, and verification occurs via direct query to IRS endpoints.
+
+However:
+- **State tax authorities** may have different requirements (e.g., state-level charity registration requires independent witness firms)
+- **International stakeholders** (foreign tax authorities, treaty partners) may demand independent verification from witness firms not located in the US
+- **FATCA compliance** (Foreign Account Tax Compliance Act) may require US documents to be witnessed by non-US firms when shared across borders
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Issuer domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
+
 
 ## Competition vs. Embossed Seals
 
@@ -301,7 +358,7 @@ The **Signer (Consumer)** benefits from verification.
 - **Commission Masking:** Continuing to notarize using a physical "Valid" stamp after the state revoked the commission for fraud.
 - **Journal Erasure:** Signing a document today but refusing to record it in the mandatory journal to hide the signer's identity.
 
-**Issuer Types**
+**Issuer Types** (First Party)
 
 **Individual Notaries (Professional Portals).**
 **Large Law Firms / Banks (Internal Notaries).**
@@ -400,7 +457,7 @@ The **Signer (Consumer)** benefits from verification.
 - **Credential Spoofing:** Using a deepfake video or a stolen ID to trick a remote notary.
 - **Session Fabricating:** Creating a fake "Certificate of Completion" for a session that never occurred.
 
-**Issuer Types**
+**Issuer Types** (First Party)
 
 **Authorized RON Platforms.**
 **State Secretary of State (SOS) Portals.**

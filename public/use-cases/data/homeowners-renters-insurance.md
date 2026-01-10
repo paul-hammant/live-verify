@@ -91,11 +91,35 @@ The **Homeowner (Insured)** benefits from verification.
 - **Limit Inflation:** Editing a $250k policy to read $500k to meet a lender's loan-to-value (LTV) requirements.
 - **Mortgagee Erasure:** Removing the bank's name from the "Mortgagee Clause" to prevent the bank from receiving a claim check.
 
-**Issuer Types**
+**Issuer Types** (First Party)
 
 **Direct Carriers:** (State Farm, Allstate, Geico).
 **Agency Networks:** (Hosting verified hashes for local agents).
 **Insurtech Platforms:** (Lemonade, Hippo).
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require the issuer to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the issuer, and any subsequent changes to the payload as they happen—which may manifest as a new hash, a status change, or even a 404 (record deleted)
+- Receives structured content/metadata (key identifiers and dates)
+- Does **NOT** receive plaintext or sensitive personal information
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to document holders/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Issuer cannot deny issuing the document
+- **Timestamp proof:** Document existed at a specific time
+- **Regulatory audit:** Jurisdictions can inspect the witness ledger for fraud detection
+- **Resilience:** Verification works even if issuer's systems go down
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Issuer domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
+
 
 ## Competition vs. Broker Portals
 
@@ -191,11 +215,44 @@ The **Homeowner / Renter** benefits from verification.
 - **Supplement Forgery:** Creating a fake "Supplement #1" PDF to get extra cash for "Hidden Damage" that doesn't exist.
 - **Photo Recycling:** Using photos of a fire from a different house to claim a loss on an insured property.
 
-**Issuer Types**
+**Issuer Types** (First Party)
 
 **Primary Insurers:** (Allstate, State Farm, USAA).
 **Independent Adjusting Firms:** (e.g., Crawford & Co, Eberl).
 **Estimating Software:** (e.g., Xactimate/Verisk - hosting the underlying data hashes).
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require the issuer to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the issuer, and any subsequent changes to the payload as they happen—which may manifest as a new hash, a status change, or even a 404 (record deleted)
+- Receives structured content/metadata (key identifiers and dates)
+- Does **NOT** receive plaintext or sensitive personal information
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to document holders/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Issuer cannot deny issuing the document
+- **Timestamp proof:** Document existed at a specific time
+- **Regulatory audit:** Jurisdictions can inspect the witness ledger for fraud detection
+- **Resilience:** Verification works even if issuer's systems go down
+
+**Jurisdictional Requirements (United States)**
+
+The IRS does not mandate or recognize third-party witnessing firms for federal tax documents. The IRS maintains authoritative records within its own systems, and verification occurs via direct query to IRS endpoints.
+
+However:
+- **State tax authorities** may have different requirements (e.g., state-level charity registration requires independent witness firms)
+- **International stakeholders** (foreign tax authorities, treaty partners) may demand independent verification from witness firms not located in the US
+- **FATCA compliance** (Foreign Account Tax Compliance Act) may require US documents to be witnessed by non-US firms when shared across borders
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Issuer domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
+
 
 ## Competition vs. CLUE Reports (LexisNexis)
 
@@ -293,11 +350,44 @@ The **Homeowner / Renter** benefits from verification.
 - **Limit Inflation:** Editing a $100k policy PDF to read $400k to meet a lender's loan-to-value (LTV) rules.
 - **Lienholder Erasure:** Removing the bank's name from the policy to prevent the bank from receiving a payout check after a fire.
 
-**Issuer Types**
+**Issuer Types** (First Party)
 
 **National Carriers:** (State Farm, Allstate, Liberty Mutual).
 **Direct-to-Consumer Insurtechs:** (Lemonade, Hippo, Kin).
 **State Insurance Pools:** (e.g., California FAIR Plan).
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require the issuer to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the issuer, and any subsequent changes to the payload as they happen—which may manifest as a new hash, a status change, or even a 404 (record deleted)
+- Receives structured content/metadata (key identifiers and dates)
+- Does **NOT** receive plaintext or sensitive personal information
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to document holders/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Issuer cannot deny issuing the document
+- **Timestamp proof:** Document existed at a specific time
+- **Regulatory audit:** Jurisdictions can inspect the witness ledger for fraud detection
+- **Resilience:** Verification works even if issuer's systems go down
+
+**Jurisdictional Requirements (United States)**
+
+The IRS does not mandate or recognize third-party witnessing firms for federal tax documents. The IRS maintains authoritative records within its own systems, and verification occurs via direct query to IRS endpoints.
+
+However:
+- **State tax authorities** may have different requirements (e.g., state-level charity registration requires independent witness firms)
+- **International stakeholders** (foreign tax authorities, treaty partners) may demand independent verification from witness firms not located in the US
+- **FATCA compliance** (Foreign Account Tax Compliance Act) may require US documents to be witnessed by non-US firms when shared across borders
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Issuer domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
+
 
 ## Competition vs. ACORD Data Feeds
 

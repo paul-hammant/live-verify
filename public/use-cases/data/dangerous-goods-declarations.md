@@ -87,12 +87,36 @@ The **Shipper (Manufacturer)** benefits from verification.
 - **Quantity Inflation:** Shipping 500kg of chemicals but only declaring 50kg on the paper to meet "Passenger Plane" limits.
 - **Signature Forgery:** Forging the signature of a certified "Dangerous Goods Professional" who never actually saw the cargo.
 
-**Issuer Types**
+**Issuer Types** (First Party)
 
 **Certified Shippers.**
 **Specialist Packing Firms.**
 **Airlines / Carriers.**
 **IATA:** (Providing the global validation framework).
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require the issuer to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the issuer, and any subsequent changes to the payload as they happen—which may manifest as a new hash, a status change, or even a 404 (record deleted)
+- Receives structured content/metadata (key identifiers and dates)
+- Does **NOT** receive plaintext or sensitive personal information
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to document holders/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Issuer cannot deny issuing the document
+- **Timestamp proof:** Document existed at a specific time
+- **Regulatory audit:** Jurisdictions can inspect the witness ledger for fraud detection
+- **Resilience:** Verification works even if issuer's systems go down
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Issuer domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
+
 
 ## Competition vs. e-DGD (Electronic Data)
 
@@ -194,11 +218,44 @@ The **Shipper (Manufacturer)** benefits from verification.
 - **Flash-point Tampering:** Editing the "Flash Point" on the PDF to make a flammable liquid look safer than it is to bypass "Below Deck" storage restrictions.
 - **Container Swapping:** Using a valid DGD for a safe container to hide an illegal or leaking one.
 
-**Issuer Types**
+**Issuer Types** (First Party)
 
 **Chemical Manufacturers.**
 **Certified DG Packers.**
 **Ocean Carriers / Ship Lines.**
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require the issuer to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the issuer, and any subsequent changes to the payload as they happen—which may manifest as a new hash, a status change, or even a 404 (record deleted)
+- Receives structured content/metadata (key identifiers and dates)
+- Does **NOT** receive plaintext or sensitive personal information
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to document holders/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Issuer cannot deny issuing the document
+- **Timestamp proof:** Document existed at a specific time
+- **Regulatory audit:** Jurisdictions can inspect the witness ledger for fraud detection
+- **Resilience:** Verification works even if issuer's systems go down
+
+**Jurisdictional Requirements (United States)**
+
+The IRS does not mandate or recognize third-party witnessing firms for federal tax documents. The IRS maintains authoritative records within its own systems, and verification occurs via direct query to IRS endpoints.
+
+However:
+- **State tax authorities** may have different requirements (e.g., state-level charity registration requires independent witness firms)
+- **International stakeholders** (foreign tax authorities, treaty partners) may demand independent verification from witness firms not located in the US
+- **FATCA compliance** (Foreign Account Tax Compliance Act) may require US documents to be witnessed by non-US firms when shared across borders
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Issuer domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
+
 
 ## Competition vs. Port Community Systems (PCS)
 
@@ -295,11 +352,44 @@ The **Truck Driver / Carrier** benefits from verification.
 - **Driver Impersonation:** An un-endorsed driver using a fake "Hazmat Certificate" to drive a tanker.
 - **Phantom Manifests:** Creating fake DG papers to hide the illegal transport of chemical waste.
 
-**Issuer Types**
+**Issuer Types** (First Party)
 
 **Chemical Shippers / Manufacturers.**
 **Transport Carriers.**
 **Hazmat Compliance Platforms:** (e.g., Labelmaster, DGOffice).
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require the issuer to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the issuer, and any subsequent changes to the payload as they happen—which may manifest as a new hash, a status change, or even a 404 (record deleted)
+- Receives structured content/metadata (key identifiers and dates)
+- Does **NOT** receive plaintext or sensitive personal information
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to document holders/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Issuer cannot deny issuing the document
+- **Timestamp proof:** Document existed at a specific time
+- **Regulatory audit:** Jurisdictions can inspect the witness ledger for fraud detection
+- **Resilience:** Verification works even if issuer's systems go down
+
+**Jurisdictional Requirements (United States)**
+
+The IRS does not mandate or recognize third-party witnessing firms for federal tax documents. The IRS maintains authoritative records within its own systems, and verification occurs via direct query to IRS endpoints.
+
+However:
+- **State tax authorities** may have different requirements (e.g., state-level charity registration requires independent witness firms)
+- **International stakeholders** (foreign tax authorities, treaty partners) may demand independent verification from witness firms not located in the US
+- **FATCA compliance** (Foreign Account Tax Compliance Act) may require US documents to be witnessed by non-US firms when shared across borders
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Issuer domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
+
 
 ## Competition vs. Central Portals (ERMA)
 

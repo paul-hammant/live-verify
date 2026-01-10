@@ -90,13 +90,44 @@ The **Citizen abroad** benefits from verification.
 - **Signature Swapping:** Taking a real letter from a low-income person and editing the name and amount to match a high-value fraudster.
 - **Unauthorized Issuance:** Local staff at a consulate issuing "under-the-table" letters that aren't in the official system. Verification only shows hashes from the official ledger.
 
-**Issuer Types**
+**Issuer Types** (First Party)
 
 **National Ministries of Foreign Affairs:** (e.g., U.S. State Dept, UK FCDO).
 **Embassies & Consulates.**
 **Consular Sections of Representative Offices:** (e.g., for Taiwan/AIT).
 
 **Privacy Salt:** Critical. Consular records involve citizenship and financial data. The hash must be salted to prevent "Guessing" the names of citizens living in a specific foreign city.
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require the issuer to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the issuer, and any subsequent changes to the payload as they happen—which may manifest as a new hash, a status change, or even a 404 (record deleted)
+- Receives structured content/metadata (key identifiers and dates)
+- Does **NOT** receive plaintext or sensitive personal information
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to document holders/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Issuer cannot deny issuing the document
+- **Timestamp proof:** Document existed at a specific time
+- **Regulatory audit:** Jurisdictions can inspect the witness ledger for fraud detection
+- **Resilience:** Verification works even if issuer's systems go down
+
+**Jurisdictional Requirements (International/State Department)**
+
+Consular documents issued abroad require witnessing firms located **outside** the issuing consulate's jurisdiction. US foreign policy strongly recommends:
+- Independent witness firms in OECD member states
+- Geographic separation from the consulate to prevent corruption or favoritism claims
+- Multilayered verification for documents crossing borders into high-risk jurisdictions
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Issuer domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
+
 
 ## Competition vs. Legalization (Apostille)
 

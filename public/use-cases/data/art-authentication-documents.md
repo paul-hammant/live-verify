@@ -95,11 +95,35 @@ The **Art Collector** benefits from verification.
 - **Fictitious Appraisers:** Creating a fake appraisal from a non-existent firm with a real-looking website.
 - **Old Appraisals:** Presenting a 2010 valuation as a 2026 valuation to hide a market crash for that specific artist.
 
-**Issuer Types**
+**Issuer Types** (First Party)
 
 **Auction Houses:** (Sotheby's, Christie's, Phillips).
 **Independent Firms:** (Appraisers Association of America members).
 **Art Research Firms:** (Artnet, Artprice).
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require the issuer to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the issuer, and any subsequent changes to the payload as they happen—which may manifest as a new hash, a status change, or even a 404 (record deleted)
+- Receives structured content/metadata (key identifiers and dates)
+- Does **NOT** receive plaintext or sensitive personal information
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to document holders/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Issuer cannot deny issuing the document
+- **Timestamp proof:** Document existed at a specific time
+- **Regulatory audit:** Jurisdictions can inspect the witness ledger for fraud detection
+- **Resilience:** Verification works even if issuer's systems go down
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Issuer domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
+
 
 ## Competition vs. Appraisal Databases
 
@@ -202,11 +226,44 @@ The **Art Owner** benefits from verification.
 - **Provenance Laundering:** Creating a fake chain of ownership (COAs from defunct galleries) to hide that a painting was created in a basement last week.
 - **Double-Issue:** Selling the same painting multiple times to different buyers using duplicate forged certificates.
 
-**Issuer Types**
+**Issuer Types** (First Party)
 
 **Artist Estates:** (e.g., Warhol Foundation, Basquiat Estate).
 **Major Galleries:** (Gagosian, Pace, Hauser & Wirth).
 **Scholarly Committees:** Dedicated authentication boards.
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require the issuer to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the issuer, and any subsequent changes to the payload as they happen—which may manifest as a new hash, a status change, or even a 404 (record deleted)
+- Receives structured content/metadata (key identifiers and dates)
+- Does **NOT** receive plaintext or sensitive personal information
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to document holders/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Issuer cannot deny issuing the document
+- **Timestamp proof:** Document existed at a specific time
+- **Regulatory audit:** Jurisdictions can inspect the witness ledger for fraud detection
+- **Resilience:** Verification works even if issuer's systems go down
+
+**Jurisdictional Requirements (United States)**
+
+The IRS does not mandate or recognize third-party witnessing firms for federal tax documents. The IRS maintains authoritative records within its own systems, and verification occurs via direct query to IRS endpoints.
+
+However:
+- **State tax authorities** may have different requirements (e.g., state-level charity registration requires independent witness firms)
+- **International stakeholders** (foreign tax authorities, treaty partners) may demand independent verification from witness firms not located in the US
+- **FATCA compliance** (Foreign Account Tax Compliance Act) may require US documents to be witnessed by non-US firms when shared across borders
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Issuer domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
+
 
 ## Competition vs. NFTs / Blockchain
 
@@ -312,11 +369,44 @@ The **Collector** benefits from verification.
 - **Number Tampering:** Changing a high number (48/50) to a more desirable low number (1/50) using a pencil and eraser.
 - **Color Photocopies:** Selling high-quality scans of an original print as if they were part of the numbered edition.
 
-**Issuer Types**
+**Issuer Types** (First Party)
 
 **Galleries/Publishers:** (Pace Editions, Gemini G.E.L., Crown Point Press).
 **Foundries:** (For bronze sculptures).
 **Artist Estates:** (Managing posthumous editions).
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require the issuer to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the issuer, and any subsequent changes to the payload as they happen—which may manifest as a new hash, a status change, or even a 404 (record deleted)
+- Receives structured content/metadata (key identifiers and dates)
+- Does **NOT** receive plaintext or sensitive personal information
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to document holders/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Issuer cannot deny issuing the document
+- **Timestamp proof:** Document existed at a specific time
+- **Regulatory audit:** Jurisdictions can inspect the witness ledger for fraud detection
+- **Resilience:** Verification works even if issuer's systems go down
+
+**Jurisdictional Requirements (United States)**
+
+The IRS does not mandate or recognize third-party witnessing firms for federal tax documents. The IRS maintains authoritative records within its own systems, and verification occurs via direct query to IRS endpoints.
+
+However:
+- **State tax authorities** may have different requirements (e.g., state-level charity registration requires independent witness firms)
+- **International stakeholders** (foreign tax authorities, treaty partners) may demand independent verification from witness firms not located in the US
+- **FATCA compliance** (Foreign Account Tax Compliance Act) may require US documents to be witnessed by non-US firms when shared across borders
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Issuer domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
+
 
 ## Competition vs. Physical Holograms
 
@@ -416,11 +506,44 @@ The **Collector** or **Gallerist** benefits from verification.
 - **Rubber Stamp Forgery:** Re-creating an artist's estate stamp (Chop mark) to "authenticate" sketches that the artist actually discarded.
 - **Ink Matching:** Fraudsters using 19th-century ink from old bottles to sign new forgeries. Verification links the signature to a specific forensic report that checks for these tricks.
 
-**Issuer Types**
+**Issuer Types** (First Party)
 
 **Forensic Experts:** (Graphologists specializing in art).
 **Artist Foundations:** (e.g., Picasso Administration).
 **Art Research Foundations:** (IFAR, Appraisers Association).
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require the issuer to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the issuer, and any subsequent changes to the payload as they happen—which may manifest as a new hash, a status change, or even a 404 (record deleted)
+- Receives structured content/metadata (key identifiers and dates)
+- Does **NOT** receive plaintext or sensitive personal information
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to document holders/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Issuer cannot deny issuing the document
+- **Timestamp proof:** Document existed at a specific time
+- **Regulatory audit:** Jurisdictions can inspect the witness ledger for fraud detection
+- **Resilience:** Verification works even if issuer's systems go down
+
+**Jurisdictional Requirements (United States)**
+
+The IRS does not mandate or recognize third-party witnessing firms for federal tax documents. The IRS maintains authoritative records within its own systems, and verification occurs via direct query to IRS endpoints.
+
+However:
+- **State tax authorities** may have different requirements (e.g., state-level charity registration requires independent witness firms)
+- **International stakeholders** (foreign tax authorities, treaty partners) may demand independent verification from witness firms not located in the US
+- **FATCA compliance** (Foreign Account Tax Compliance Act) may require US documents to be witnessed by non-US firms when shared across borders
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Issuer domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
+
 
 ## Competition vs. Visual Connoisseurship
 
@@ -524,11 +647,44 @@ The **Current Owner** (Seller) benefits from verification.
 - **Restitution Laundering:** Hiding the 1933-1945 ownership history to mask that a work was seized from a Jewish family.
 - **Signature Forgery:** Forging the signature of a famous scholar or archivist on a provenance summary.
 
-**Issuer Types**
+**Issuer Types** (First Party)
 
 **Auction Houses:** (Archival departments of major houses).
 **Artist Foundations:** (Managing the official archive of the artist).
 **Galleries:** (Primary dealers who handle the "first sale").
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require the issuer to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the issuer, and any subsequent changes to the payload as they happen—which may manifest as a new hash, a status change, or even a 404 (record deleted)
+- Receives structured content/metadata (key identifiers and dates)
+- Does **NOT** receive plaintext or sensitive personal information
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to document holders/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Issuer cannot deny issuing the document
+- **Timestamp proof:** Document existed at a specific time
+- **Regulatory audit:** Jurisdictions can inspect the witness ledger for fraud detection
+- **Resilience:** Verification works even if issuer's systems go down
+
+**Jurisdictional Requirements (United States)**
+
+The IRS does not mandate or recognize third-party witnessing firms for federal tax documents. The IRS maintains authoritative records within its own systems, and verification occurs via direct query to IRS endpoints.
+
+However:
+- **State tax authorities** may have different requirements (e.g., state-level charity registration requires independent witness firms)
+- **International stakeholders** (foreign tax authorities, treaty partners) may demand independent verification from witness firms not located in the US
+- **FATCA compliance** (Foreign Account Tax Compliance Act) may require US documents to be witnessed by non-US firms when shared across borders
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Issuer domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
+
 
 ## Competition vs. Physical Labels / Archival Photos
 

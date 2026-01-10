@@ -106,7 +106,7 @@ The **Named Individual** benefits from verification.
 - **Suspension Hiding:** A driver who lost their license keeping the physical card to fool employers or police.
 - **VIN / Plate Swapping:** Using a valid registration card from a "Clean" car on a stolen or uninsured vehicle.
 
-**Issuer Types**
+**Issuer Types** (First Party)
 
 **State DMVs:** (The primary authority in the USA).
 **National Ministries of Transport:** (In unified-system countries).
@@ -141,6 +141,30 @@ DMVs can monitor verification request patterns:
 - License verified repeatedly in a state the holder doesn't live in? Flagged.
 
 Geo-checking won't stop a single clone use, but it detects systematic abuse — a cloned license being used by a fraud ring across multiple venues triggers investigation before the victim even knows their identity was stolen.
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require the issuer to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the issuer, and any subsequent changes to the payload as they happen—which may manifest as a new hash, a status change, or even a 404 (record deleted)
+- Receives structured content/metadata (key identifiers and dates)
+- Does **NOT** receive plaintext or sensitive personal information
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to document holders/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Issuer cannot deny issuing the document
+- **Timestamp proof:** Document existed at a specific time
+- **Regulatory audit:** Jurisdictions can inspect the witness ledger for fraud detection
+- **Resilience:** Verification works even if issuer's systems go down
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Issuer domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
+
 
 ## Competition vs. Barcode Scanners (PDF417)
 

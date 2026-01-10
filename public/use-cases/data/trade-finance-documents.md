@@ -91,7 +91,7 @@ The **Trade Finance Bank (Lender)** benefits from verification.
 - **Date Back-Dating:** Persuading a clerk to date a 15 MAR shipment as 10 MAR to meet an L/C deadline.
 - **Phantom Cargo:** Creating a fake B/L for a container filled with "Painted Rocks" or "Empty Boxes" to steal a bank's payment.
 
-**Issuer Types**
+**Issuer Types** (First Party)
 
 **Global Shipping Lines (Vessel Operators).**
 **Digital Trade Platforms (e.g., TradeLens, Bolero).**
@@ -190,7 +190,7 @@ The **Exporter (Seller)** benefits from verification.
 - **Stamp Forgery:** Using a high-end digital rubber stamp to create a fake Chamber certification.
 - **HS Code Masking:** Describing "Furniture" as "Lumber" to take advantage of a specific trade treaty.
 
-**Issuer Types**
+**Issuer Types** (First Party)
 
 **National Chambers of Commerce.**
 **International Chamber of Commerce (ICC - World Chambers Federation).**
@@ -285,7 +285,7 @@ The **Exporter (Seller)** benefits from verification.
 - **Over-Invoicing:** Editing a $10,000 PDF to read $100,000 to "justify" a large outgoing wire to a shell company abroad.
 - **Duplicate Financing:** Presenting the same physical invoice to three different banks for three different loans.
 
-**Issuer Types**
+**Issuer Types** (First Party)
 
 **Global Corporate ERPs (SAP, Oracle).**
 **EDI Hubs (e.g., OpenText, GXS).**
@@ -296,3 +296,37 @@ The **Exporter (Seller)** benefits from verification.
 ## Rationale
 
 The commercial invoice is the "DNA of Global Wealth." By turning static bills into verifiable digital bridges, we protect the global tax base and the banking system from the multi-billion dollar cost of trade-based fraud.
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require the issuer to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the issuer, and any subsequent changes to the payload as they happen—which may manifest as a new hash, a status change, or even a 404 (record deleted)
+- Receives structured content/metadata (key identifiers and dates)
+- Does **NOT** receive plaintext or sensitive personal information
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to document holders/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Issuer cannot deny issuing the document
+- **Timestamp proof:** Document existed at a specific time
+- **Regulatory audit:** Jurisdictions can inspect the witness ledger for fraud detection
+- **Resilience:** Verification works even if issuer's systems go down
+
+**Jurisdictional Requirements (International Trade)**
+
+Trade finance documents crossing national borders require multi-jurisdictional witnessing:
+
+**Treaty Partners:** When documents are shared between treaty partners (US-EU, USMCA), witness firms must:
+- Be located in neutral jurisdictions
+- Comply with both nations' export/import regulations
+- Maintain audit trails accessible to both customs/tax authorities
+
+**Non-Treaty Jurisdictions:** Use witnesses from OECD member states; consider blockchain rollups for emerging market trade.
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Issuer domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion

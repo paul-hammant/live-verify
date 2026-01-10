@@ -190,3 +190,54 @@ Aggregated absence certificates across multiple registries: "Clear across all 50
 
 **Absence Escrow**
 Transactions that complete only if absence status remains clear through closing date.
+
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require the issuer to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the issuer, and any subsequent changes to the payload as they happen—which may manifest as a new hash, a status change, or even a 404 (record deleted)
+- Receives structured content/metadata (key identifiers and dates)
+- Does **NOT** receive plaintext or sensitive personal information
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to document holders/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Issuer cannot deny issuing the document
+- **Timestamp proof:** Document existed at a specific time
+- **Regulatory audit:** Jurisdictions can inspect the witness ledger for fraud detection
+- **Resilience:** Verification works even if issuer's systems go down
+
+**Jurisdictional Requirements (Banking & Financial Services)**
+
+Banking regulators vary widely:
+
+**US Banks (OCC, FDIC, Federal Reserve):** Do not mandate external witnessing; verification via bank's own systems is sufficient for domestic use.
+
+**International Banks / EU Banks (PSD2, Banking Regulation):** May require independent witness firms for cross-border transactions, especially for:
+- Open Banking consent records (PSD2 compliance)
+- Large cross-border transfers (suspicious activity reporting)
+- Cryptocurrency/stablecoin gateway documents
+
+**Non-Bank Financial Institutions (Credit Unions, FinTechs):** May voluntarily use witness firms to satisfy enterprise customers' audit requirements, even where not mandated by regulators.
+
+**Jurisdictional Requirements (International/Cross-Border)**
+
+Documents crossing national borders require multi-jurisdictional witnessing:
+
+**Treaty Partners:** When documents are shared between treaty partners (e.g., US-EU, Canada-US), witnessing firms must:
+- Be located in neutral jurisdictions recognizable to both parties
+- Comply with both nations' discovery/transparency requirements
+- Maintain audit trails accessible to both tax/regulatory authorities
+
+**Non-Treaty Jurisdictions:** For documents involving non-OECD nations or jurisdictions with weak international cooperation frameworks:
+- Use witnesses from OECD member states
+- Deploy blockchain rollups to public ledgers (e.g., Ethereum) for immutable proof
+- Consider additional apostille/certification requirements under the Hague Apostille Convention
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Issuer domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion

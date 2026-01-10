@@ -94,11 +94,35 @@ The **Exporter / Importer (Assured)** benefits from verification.
 - **Limit Inflation:** Editing a $10,000 policy to read $1,000,000 to use as collateral for a fraudulent loan.
 - **Exclusion Concealment:** Deleting the clause that excludes "War Risks" or "Strikes" before sending the policy to a bank during a global conflict.
 
-**Issuer Types**
+**Issuer Types** (First Party)
 
 **Global Marine Carriers:** (Allianz, Zurich, Chubb, AXA XL).
 **Specialist Brokers:** (Marsh, Aon, Gallagher).
 **Lloyd's Syndicates.**
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require the issuer to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the issuer, and any subsequent changes to the payload as they happen—which may manifest as a new hash, a status change, or even a 404 (record deleted)
+- Receives structured content/metadata (key identifiers and dates)
+- Does **NOT** receive plaintext or sensitive personal information
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to document holders/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Issuer cannot deny issuing the document
+- **Timestamp proof:** Document existed at a specific time
+- **Regulatory audit:** Jurisdictions can inspect the witness ledger for fraud detection
+- **Resilience:** Verification works even if issuer's systems go down
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Issuer domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
+
 
 ## Competition vs. Blockchain (TradeLens)
 
@@ -198,11 +222,44 @@ The **Shipowner / Operator** benefits from verification.
 - **Exclusion Erasure:** Deleting the line that excludes "War Risk Zones" before sailing into a conflict area.
 - **Classification Fraud:** Claiming the ship is "In Class" with Lloyd's Register on the paper form when their class has actually been suspended for safety failures.
 
-**Issuer Types**
+**Issuer Types** (First Party)
 
 **Marine Mutuals (Clubs):** (e.g., Gard, Skuld).
 **Commercial Marine Carriers:** (Chubb, Swiss Re, Munich Re).
 **Lloyd's Syndicates.**
+
+## Jurisdictional Witnessing
+
+A jurisdiction may require the issuer to retain a **witnessing firm** for regulatory compliance. The witnessing firm:
+
+- Receives all hashes from the issuer, and any subsequent changes to the payload as they happen—which may manifest as a new hash, a status change, or even a 404 (record deleted)
+- Receives structured content/metadata (key identifiers and dates)
+- Does **NOT** receive plaintext or sensitive personal information
+- Provides an immutable, timestamped audit trail—available to the jurisdiction on demand, to document holders/third parties during disputes, or as expert witness testimony in legal proceedings
+
+This provides:
+- **Non-repudiation:** Issuer cannot deny issuing the document
+- **Timestamp proof:** Document existed at a specific time
+- **Regulatory audit:** Jurisdictions can inspect the witness ledger for fraud detection
+- **Resilience:** Verification works even if issuer's systems go down
+
+**Jurisdictional Requirements (United States)**
+
+The IRS does not mandate or recognize third-party witnessing firms for federal tax documents. The IRS maintains authoritative records within its own systems, and verification occurs via direct query to IRS endpoints.
+
+However:
+- **State tax authorities** may have different requirements (e.g., state-level charity registration requires independent witness firms)
+- **International stakeholders** (foreign tax authorities, treaty partners) may demand independent verification from witness firms not located in the US
+- **FATCA compliance** (Foreign Account Tax Compliance Act) may require US documents to be witnessed by non-US firms when shared across borders
+
+**Public Blockchain (Non-Party)**
+
+Witnessing firms may periodically commit rollups to an inexpensive public blockchain, providing an ultimate immutability guarantee. The blockchain is a "non-party"—infrastructure, not a participant in the transaction. This creates multiple verification paths:
+
+1. **Issuer domain** — Direct check against the issuer
+2. **Witnessing firm** — Independent confirmation with timestamp
+3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
+
 
 ## Competition vs. Equasis / Vessel Databases
 
@@ -330,7 +387,7 @@ Document fraud creates significant risks:
 
 OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
 
-**Issuer Types**
+**Issuer Types** (First Party)
 
 Who issues these documents and operates verification endpoints?
 
