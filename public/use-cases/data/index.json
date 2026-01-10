@@ -1,6 +1,6 @@
 {
-  "generated": "2026-01-10T09:00:32.209Z",
-  "totalUseCases": 401,
+  "generated": "2026-01-10T09:18:08.018Z",
+  "totalUseCases": 402,
   "totalFurtherDerivations": 396,
   "categories": {
     "Real Estate & Property": 30,
@@ -36,7 +36,7 @@
     "Legal & Court Documents": 4,
     "Scientific & Research": 7,
     "Warehousing & Inventory": 4,
-    "Government & Regulatory": 4,
+    "Government & Regulatory": 5,
     "Permits & Approvals": 4,
     "Delegated Authority": 5,
     "Corporate & Legal Documents": 2,
@@ -3826,6 +3826,26 @@
         "eir",
         "liability-transfer",
         "port-logistics"
+      ]
+    },
+    {
+      "slug": "international-tax-treaties",
+      "title": "International Tax Treaties & Social Security Totalization",
+      "category": "Government & Regulatory",
+      "volume": "Large",
+      "retention": "Permanent (benefit entitlement)",
+      "furtherDerivations": 0,
+      "snippet": "Taxpayer/worker identity, issuing authority, treaty/agreement referenced, coverage period, applicable country, exemption type, certificate number, issue date, expiration.",
+      "tags": [
+        "tax-treaty",
+        "totalization",
+        "social-security",
+        "expat",
+        "foreign-tax-credit",
+        "double-taxation",
+        "pension",
+        "cross-border",
+        "residency"
       ]
     },
     {
@@ -7716,6 +7736,10 @@
       "count": 6
     },
     {
+      "name": "Government & Regulatory",
+      "count": 5
+    },
+    {
       "name": "Delegated Authority",
       "count": 5
     },
@@ -7729,10 +7753,6 @@
     },
     {
       "name": "Warehousing & Inventory",
-      "count": 4
-    },
-    {
-      "name": "Government & Regulatory",
       "count": 4
     },
     {
