@@ -1,6 +1,6 @@
 {
-  "generated": "2026-01-10T08:58:36.739Z",
-  "totalUseCases": 402,
+  "generated": "2026-01-10T09:00:32.209Z",
+  "totalUseCases": 401,
   "totalFurtherDerivations": 396,
   "categories": {
     "Real Estate & Property": 30,
@@ -45,7 +45,6 @@
     "Environmental Permits & Compliance": 4,
     "Agriculture & Food": 7,
     "Bonds & Sureties": 3,
-    "Healthcare & Medical": 1,
     "Safety & Compliance": 1,
     "Insurance & Bonds": 1,
     "Consumer & Commercial Transactions": 1,
@@ -3597,6 +3596,30 @@
       ]
     },
     {
+      "slug": "incident-reporting",
+      "title": "Incident Reporting (All Industries)",
+      "category": "Safety & Compliance",
+      "volume": "Very Large",
+      "retention": "Permanent (safety records)",
+      "furtherDerivations": 0,
+      "snippet": "Reporting organization, incident category, date/time, severity classification, immediate cause, contributing factors, injuries/damage/releases, corrective actions, regulatory notification timestamps, ",
+      "tags": [
+        "incidents",
+        "safety",
+        "near-miss",
+        "blameless",
+        "healthcare",
+        "aviation",
+        "nuclear",
+        "construction",
+        "maritime",
+        "rail",
+        "OSHA",
+        "disclosure",
+        "novel"
+      ]
+    },
+    {
       "slug": "independent-adjuster-reports",
       "title": "Independent Adjuster Field Inspection Reports",
       "category": "Insurance Claims & Operations",
@@ -5048,26 +5071,6 @@
       ]
     },
     {
-      "slug": "patient-safety-incident-reports",
-      "title": "Patient Safety Incident Reports",
-      "category": "Healthcare & Medical",
-      "volume": "Large",
-      "retention": "Permanent (safety records)",
-      "furtherDerivations": 0,
-      "snippet": "Reporting facility, incident category, severity level, patient notification status, report timestamp, anonymized reporter hash, contributing factors, corrective actions, RCA completion status.",
-      "tags": [
-        "patient-safety",
-        "medical-errors",
-        "incident-reports",
-        "near-miss",
-        "never-events",
-        "blameless",
-        "disclosure",
-        "healthcare",
-        "novel"
-      ]
-    },
-    {
       "slug": "payment-processor-merchant-statements",
       "title": "Payment Processor Merchant Statements",
       "category": "Banking & Payments",
@@ -6172,28 +6175,6 @@
         "safety-fraud",
         "customs-vetting",
         "consumer-protection"
-      ]
-    },
-    {
-      "slug": "safety-incident-reporting",
-      "title": "Safety Incident Reporting (Cross-Industry)",
-      "category": "Safety & Compliance",
-      "volume": "Very Large",
-      "retention": "Permanent (safety records)",
-      "furtherDerivations": 0,
-      "snippet": "Reporting organization, incident category, date/time, severity, immediate cause, contributing factors, injuries/damage, corrective actions, regulatory notification timestamps.",
-      "tags": [
-        "safety",
-        "incidents",
-        "near-miss",
-        "blameless",
-        "aviation",
-        "nuclear",
-        "construction",
-        "maritime",
-        "rail",
-        "OSHA",
-        "novel"
       ]
     },
     {
@@ -7783,10 +7764,6 @@
       "count": 2
     },
     {
-      "name": "Healthcare & Medical",
-      "count": 1
-    },
-    {
       "name": "Safety & Compliance",
       "count": 1
     },
@@ -7799,5 +7776,5 @@
       "count": 1
     }
   ],
-  "totalCategories": 47
+  "totalCategories": 46
 }
