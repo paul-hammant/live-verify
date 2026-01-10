@@ -2,40 +2,73 @@
 
 Cross-platform test cases ensuring all implementations produce identical hashes.
 
+## Fixture Types
+
+### Text Fixtures
+Test text normalization: `normalizeText(text) → hash`
+
+### Image Fixtures
+Test full OCR pipeline: `image → OCR → cleanOcrArtifacts → normalizeText → hash`
+
 ## File Format
 
-**Filename:** `{expected-sha256-hash}.md`
+**Filename:** `{expected-sha256-hash}.md` (or `PLACEHOLDER-*.md` for new fixtures)
 
-**Contents:**
+### Text Fixture
 ```markdown
 ---
 description: Brief description of what this tests
 charNormalization: "éè→e" (optional)
-ocrNormalizationRules: (optional)
-  - pattern: "CHF\\s+(\\d)"
-    replacement: "CHF$1"
 ---
 The actual text to normalize goes here.
 ```
 
+### Image Fixture
+```markdown
+---
+description: Brief description of what this tests
+---
+![](pics/image-filename.png)
+```
+
+Image files are stored in the `pics/` subdirectory.
+
 ## How Tests Work
 
-1. Read all `.md` files (skip README.md)
-2. Parse optional YAML frontmatter as metadata
-3. Extract body text (after frontmatter)
-4. Call `normalizeText(body, metadata)`
-5. Compute SHA-256 hash
-6. Assert hash equals filename (minus `.md`)
+### Text Fixtures
+1. Parse body text from markdown
+2. Call `normalizeText(body, metadata)`
+3. Compute SHA-256 hash
+4. Assert hash equals filename
 
-## Adding New Test Cases
+### Image Fixtures
+1. Detect `![](pics/path.png)` in body
+2. Load image and run OCR (ML Kit on Android, Vision on iOS, Tesseract.js on web)
+3. Apply `cleanOcrArtifacts()` then `normalizeText()`
+4. Compute SHA-256 hash
+5. Assert hash equals filename
 
-1. Create input text
-2. Run through JS normalizer: `node -e "const {normalizeText,sha256}=require('./public/normalize.js'); console.log(sha256(normalizeText('your text')))"`
-3. Save as `{hash}.md`
+## Platform Support
 
-## Platforms
+| Platform | Text Fixtures | Image Fixtures |
+|----------|--------------|----------------|
+| JS/Web | Unit tests | Informational only (Tesseract.js inferior) |
+| Android | Unit tests | Instrumented tests (ML Kit) |
+| iOS | Unit tests | Instrumented tests (Vision) |
 
-- JS web app: `__tests__/cross-platform-hashes.test.js`
-- Android: `TextNormalizerTest.kt`
-- iOS: Uses JSBridge (runs JS directly)
-- Browser extension: Shares web app tests
+## Adding New Image Fixtures
+
+1. Add image file to the `pics/` subdirectory
+2. Create `PLACEHOLDER-{name}.md` pointing to `pics/{image}.png`
+3. Run Android instrumented tests: `adb push normalization-hashes /sdcard/ && ./gradlew connectedAndroidTest`
+4. Tests will log the ML Kit hash - rename the `.md` file to `{hash}.md`
+
+## Running Android Instrumented Tests
+
+```bash
+# Push fixtures to device/emulator
+adb push normalization-hashes /sdcard/
+
+# Run instrumented tests
+./gradlew connectedAndroidTest
+```

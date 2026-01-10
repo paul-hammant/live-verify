@@ -24,9 +24,12 @@ import org.junit.runners.Parameterized
 import java.io.File
 
 /**
- * Cross-platform hash consistency tests.
+ * Cross-platform hash consistency tests (TEXT FIXTURES ONLY).
  * Reads test fixtures from /normalization-hashes/ directory.
  * These tests ensure Kotlin implementation matches JavaScript.
+ *
+ * Note: Image fixtures require ML Kit and run as instrumented tests.
+ * See CrossPlatformImageHashTest in androidTest/ for OCR-based tests.
  */
 @RunWith(Parameterized::class)
 class CrossPlatformHashTest(
@@ -115,6 +118,13 @@ class CrossPlatformHashTest(
             }
         }
 
+        /**
+         * Check if body contains an image reference ![](path.png)
+         */
+        private fun isImageFixture(body: String): Boolean {
+            return body.trim().matches(Regex("^!\\[]\\(.+\\)$"))
+        }
+
         @JvmStatic
         @Parameterized.Parameters(name = "{0}")
         fun loadFixtures(): Collection<Array<Any?>> {
@@ -123,10 +133,17 @@ class CrossPlatformHashTest(
                 file.name.endsWith(".md") && file.name != "README.md"
             } ?: emptyArray()
 
-            return files.map { file ->
+            // Filter to text fixtures only - image fixtures run as instrumented tests
+            return files.mapNotNull { file ->
                 val expectedHash = file.nameWithoutExtension
                 val content = file.readText()
                 val (frontmatter, body) = parseFrontmatter(content)
+
+                // Skip image fixtures
+                if (isImageFixture(body)) {
+                    return@mapNotNull null
+                }
+
                 val description = (frontmatter?.get("description") as? String) ?: file.name
                 val metadata = toMetadata(frontmatter)
 

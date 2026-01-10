@@ -15,6 +15,12 @@ SwiftUI iOS app for OCR-to-hash document verification using iOS Live Text (Visio
 - Xcode 15.0+
 - Camera access (physical device required for camera testing)
 
+## Simulator Limitations
+
+The app uses `DataScanner` (from VisionKit) which is Apple's Live Text API. This API checks for Neural Engine hardware which simulators don't properly report having - even when simulating devices that have it (e.g., iPhone 16 Pro).
+
+**Key point:** This doesn't affect the tests. The tests use `VNRecognizeTextRequest` (Vision framework) directly, which *does* work in simulators. The app's DataScanner UI just won't function in simulators - you'll see "Not Supported" even on simulated devices that would support it on real hardware.
+
 ## Project Structure
 
 ```
