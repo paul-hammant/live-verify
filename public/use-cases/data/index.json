@@ -1,14 +1,15 @@
 {
-  "generated": "2026-01-03T12:48:06.207Z",
-  "totalUseCases": 374,
+  "generated": "2026-01-10T09:22:24.302Z",
+  "totalUseCases": 403,
   "totalFurtherDerivations": 396,
   "categories": {
     "Real Estate & Property": 30,
     "Charitable & Non-Profit": 6,
+    "Novel Document Types": 6,
     "Banking & Payments": 15,
     "Actuarial & Insurance Mathematics": 10,
-    "Personal Lines Insurance": 11,
-    "Government & Civic Documents": 13,
+    "Personal Lines Insurance": 12,
+    "Government & Civic Documents": 14,
     "Notary Services": 7,
     "Immigration & Visa Documents": 17,
     "Financial & Legal Documents": 8,
@@ -19,6 +20,7 @@
     "Healthcare & Medical Records": 9,
     "Professional & Educational Qualifications": 14,
     "Art, Media & Publishing": 7,
+    "Banking & Financial Services": 6,
     "Customs & Trade Compliance": 6,
     "Sports & Athletics": 6,
     "Identity & Authority Verification": 20,
@@ -31,15 +33,21 @@
     "Product Certifications & Compliance": 11,
     "Professional Ethics & Compliance": 9,
     "Energy & Utilities": 3,
+    "Legal & Court Documents": 4,
     "Scientific & Research": 7,
     "Warehousing & Inventory": 4,
+    "Government & Regulatory": 5,
     "Permits & Approvals": 4,
     "Delegated Authority": 5,
+    "Corporate & Legal Documents": 2,
     "Intellectual Property Law": 3,
     "Trade Finance": 5,
     "Environmental Permits & Compliance": 4,
     "Agriculture & Food": 7,
     "Bonds & Sureties": 3,
+    "Safety & Compliance": 2,
+    "Insurance & Bonds": 1,
+    "Consumer & Commercial Transactions": 1,
     "Vehicle & Transportation": 2
   },
   "useCases": [
@@ -76,6 +84,23 @@
         "charitable",
         "non-profit",
         "IRS"
+      ]
+    },
+    {
+      "slug": "absence-certificates",
+      "title": "Absence Certificates / Negative Proofs",
+      "category": "Novel Document Types",
+      "volume": "Large (emerging)",
+      "retention": "Varies by type",
+      "furtherDerivations": 0,
+      "snippet": "Registry authority, subject identifier (person, property, entity, product), search period, categories searched, negative result confirmation, certificate timestamp.",
+      "tags": [
+        "negative-proof",
+        "absence",
+        "no-claims",
+        "clear-record",
+        "due-diligence",
+        "novel"
       ]
     },
     {
@@ -334,6 +359,24 @@
       ]
     },
     {
+      "slug": "anti-coercion-canaries",
+      "title": "Anti-Coercion Canaries / Duress Signals",
+      "category": "Novel Document Types",
+      "volume": "Small (specialized)",
+      "retention": "Permanent (safety records)",
+      "furtherDerivations": 0,
+      "snippet": "Issuing entity/person, canary statement (what is being attested), timestamp, expected update schedule, any variations from normal pattern.",
+      "tags": [
+        "duress",
+        "coercion",
+        "safety",
+        "canary",
+        "warrant-canary",
+        "dead-man-switch",
+        "novel"
+      ]
+    },
+    {
       "slug": "apostille-certifications",
       "title": "Apostille Certifications (Hague Convention)",
       "category": "Notary Services",
@@ -399,6 +442,23 @@
         "title",
         "uspap",
         "valuation"
+      ]
+    },
+    {
+      "slug": "asset-unfreeze-notices",
+      "title": "Asset Unfreeze & Account Release Notices",
+      "category": "Banking & Financial Services",
+      "volume": "Medium",
+      "retention": "7 years (regulatory compliance)",
+      "furtherDerivations": 0,
+      "snippet": "Institution name, account/asset identifier, account holder name, type of hold/freeze, original freeze date, release date, reason for release, any continuing restrictions.",
+      "tags": [
+        "freeze",
+        "unfreeze",
+        "sanctions",
+        "account-hold",
+        "garnishment",
+        "release"
       ]
     },
     {
@@ -1179,6 +1239,23 @@
       ]
     },
     {
+      "slug": "citation-dismissal-notices",
+      "title": "Citation & Ticket Dismissal Notices",
+      "category": "Legal & Court Documents",
+      "volume": "Very Large",
+      "retention": "3-7 years (DMV/court records)",
+      "furtherDerivations": 0,
+      "snippet": "Issuing authority, citation/ticket number, defendant/violator name, violation type and code, citation date, dismissal date, reason for dismissal, any residual obligations.",
+      "tags": [
+        "citation",
+        "ticket",
+        "dismissal",
+        "traffic",
+        "violation",
+        "fine"
+      ]
+    },
+    {
       "slug": "client-money-segregation-confirmations",
       "title": "Client Money Segregation Confirmations",
       "category": "Professional Ethics & Compliance",
@@ -1337,6 +1414,23 @@
       ]
     },
     {
+      "slug": "commercial-registry-filings",
+      "title": "Commercial Registry Filings",
+      "category": "Government & Regulatory",
+      "volume": "Very Large",
+      "retention": "Permanent (entity records)",
+      "furtherDerivations": 0,
+      "snippet": "Registry authority, entity name, file/registration number, entity type, formation/registration date, current status, registered agent, key dates (renewal, expiration). For directors: name, appointment",
+      "tags": [
+        "commercial-registry",
+        "company-house",
+        "secretary-of-state",
+        "incorporation",
+        "UCC",
+        "trademark"
+      ]
+    },
+    {
       "slug": "compensation-conflict-disclosures",
       "title": "Compensation & Conflict-of-Interest Disclosures",
       "category": "Professional Ethics & Compliance",
@@ -1389,6 +1483,24 @@
         "resale-certificate",
         "property-management",
         "special-assessment"
+      ]
+    },
+    {
+      "slug": "consent-records",
+      "title": "Consent Records",
+      "category": "Novel Document Types",
+      "volume": "Very Large (emerging)",
+      "retention": "Permanent (legal protection)",
+      "furtherDerivations": 0,
+      "snippet": "Consenting party (or hash), receiving party, scope of consent (what's being consented to), version of terms/disclosures, timestamp, method of consent, witness (if applicable).",
+      "tags": [
+        "consent",
+        "gdpr",
+        "hipaa",
+        "privacy",
+        "medical",
+        "data-rights",
+        "novel"
       ]
     },
     {
@@ -1586,6 +1698,41 @@
       ]
     },
     {
+      "slug": "contracts-agreements-multipage",
+      "title": "Contracts & Agreements (Multi-Page)",
+      "category": "Corporate & Legal Documents",
+      "volume": "Very Large",
+      "retention": "Contract term + 6-10 years",
+      "furtherDerivations": 0,
+      "snippet": "Parties, effective date, key terms (compensation, term, obligations), signatures, page sequence integrity, exhibit references.",
+      "tags": [
+        "contract",
+        "agreement",
+        "multi-page",
+        "signature",
+        "terms",
+        "legal",
+        "page-substitution"
+      ]
+    },
+    {
+      "slug": "conviction-expungement-certificates",
+      "title": "Conviction Expungement & Record Sealing Certificates",
+      "category": "Legal & Court Documents",
+      "volume": "Medium",
+      "retention": "Permanent (legal status)",
+      "furtherDerivations": 0,
+      "snippet": "Court/issuing authority, case number, petitioner/defendant name, original offense(s), conviction date, type of relief (expungement/sealing/pardon), grant date, scope of relief, any exceptions or limit",
+      "tags": [
+        "expungement",
+        "sealing",
+        "conviction",
+        "criminal-record",
+        "court-order",
+        "clean-slate"
+      ]
+    },
+    {
       "slug": "copyrights",
       "title": "Copyright Registrations",
       "category": "Intellectual Property Law",
@@ -1707,6 +1854,23 @@
         "trip-delay",
         "rental-car-coverage",
         "travel-perks"
+      ]
+    },
+    {
+      "slug": "criminal-background-check-results",
+      "title": "Criminal Background Check Results",
+      "category": "Legal & Court Documents",
+      "volume": "Very Large",
+      "retention": "1-7 years (varies by use)",
+      "furtherDerivations": 0,
+      "snippet": "Issuing agency, request/reference number, subject name, date of birth (or other identifiers), search scope, result (no record/records found), search date, validity period.",
+      "tags": [
+        "background-check",
+        "criminal-history",
+        "clearance",
+        "NCIC",
+        "fingerprint",
+        "police-check"
       ]
     },
     {
@@ -1897,6 +2061,24 @@
         "privacy-policy",
         "academic-collaboration",
         "legal-contract"
+      ]
+    },
+    {
+      "slug": "debt-payoff-satisfaction-letters",
+      "title": "Debt Payoff & Satisfaction Letters",
+      "category": "Banking & Financial Services",
+      "volume": "Very Large",
+      "retention": "7-10 years (credit reporting cycle)",
+      "furtherDerivations": 0,
+      "snippet": "Lender name, loan/account number, borrower name, original loan amount, property/collateral description (if secured), payoff date, final payment amount, lien release status, any remaining obligations.",
+      "tags": [
+        "debt",
+        "payoff",
+        "satisfaction",
+        "mortgage",
+        "loan",
+        "credit",
+        "lien-release"
       ]
     },
     {
@@ -2174,6 +2356,24 @@
       ]
     },
     {
+      "slug": "election-results-certifications",
+      "title": "Election Results & Certifications",
+      "category": "Government & Civic Documents",
+      "volume": "Medium",
+      "retention": "Permanent (historical record)",
+      "furtherDerivations": 0,
+      "snippet": "Election date and type, jurisdiction, office/contest, candidate names, vote counts, total ballots, turnout percentage, certification date, certifying officials, any recount/audit notes.",
+      "tags": [
+        "election",
+        "voting",
+        "results",
+        "certification",
+        "canvass",
+        "democracy",
+        "tally"
+      ]
+    },
+    {
       "slug": "electrical-safety-inspections",
       "title": "Electrical System Inspections",
       "category": "Site & Equipment Safety",
@@ -2227,8 +2427,8 @@
       ]
     },
     {
-      "slug": "employment-reference-letters",
-      "title": "Employment Reference Letters & VOE",
+      "slug": "employment-references",
+      "title": "Employment References",
       "category": "Professional & Educational Qualifications",
       "volume": "Very Large",
       "retention": "1-7 years (hiring cycle)",
@@ -2403,6 +2603,23 @@
         "trid-compliance",
         "wire-fraud",
         "wire-fraud-prevention"
+      ]
+    },
+    {
+      "slug": "escrow-releases",
+      "title": "Escrow Releases",
+      "category": "Banking & Financial Services",
+      "volume": "Large",
+      "retention": "7 years (transaction records)",
+      "furtherDerivations": 0,
+      "snippet": "Escrow agent name, file/agreement number, parties (buyer/seller, depositor/beneficiary), property or materials description, escrow amount, release conditions, release date, recipient of disbursement.",
+      "tags": [
+        "escrow",
+        "release",
+        "real-estate",
+        "closing",
+        "holdback",
+        "disbursement"
       ]
     },
     {
@@ -2600,6 +2817,24 @@
         "commercial-surety",
         "fiduciary-responsibility",
         "theft-protection"
+      ]
+    },
+    {
+      "slug": "filing-completion-receipts",
+      "title": "Filing Completion Receipts",
+      "category": "Government & Regulatory",
+      "volume": "Very Large",
+      "retention": "Varies by filing type (1 year - permanent)",
+      "furtherDerivations": 0,
+      "snippet": "Receiving authority, filing type, filer name/entity, filing date and time, confirmation number, acceptance status, any fees paid.",
+      "tags": [
+        "filing",
+        "receipt",
+        "submission",
+        "deadline",
+        "compliance",
+        "registration",
+        "government"
       ]
     },
     {
@@ -2883,6 +3118,23 @@
       ]
     },
     {
+      "slug": "gift-card-redemption-receipts",
+      "title": "Gift Card & Stored Value Redemption Receipts",
+      "category": "Banking & Financial Services",
+      "volume": "Very Large",
+      "retention": "1-3 years (consumer protection)",
+      "furtherDerivations": 0,
+      "snippet": "Issuer name, card/voucher number (masked), original value, transaction details, amount used, remaining balance, redemption date, card status.",
+      "tags": [
+        "gift-card",
+        "stored-value",
+        "redemption",
+        "balance",
+        "prepaid",
+        "voucher"
+      ]
+    },
+    {
       "slug": "gig-economy-payout-receipts",
       "title": "Gig Economy Payout Receipts",
       "category": "Banking & Payments",
@@ -2935,6 +3187,23 @@
         "third-party-liability",
         "border-control",
         "car-insurance"
+      ]
+    },
+    {
+      "slug": "guarantor-releases",
+      "title": "Guarantor & Co-Signer Releases",
+      "category": "Banking & Financial Services",
+      "volume": "Medium",
+      "retention": "7-10 years (credit reporting cycle)",
+      "furtherDerivations": 0,
+      "snippet": "Creditor/landlord name, loan/lease identifier, primary obligor name, guarantor name, original guarantee amount or terms, release date, release reason, any continuing obligations.",
+      "tags": [
+        "guarantor",
+        "co-signer",
+        "release",
+        "loan",
+        "lease",
+        "personal-guarantee"
       ]
     },
     {
@@ -3051,14 +3320,16 @@
       "volume": "Large",
       "retention": "2-7 years (security & incident records)",
       "furtherDerivations": 0,
-      "snippet": "Staff name, photo (hash), employee ID, job role (e.g., RN, LPN, Nurse Aide, Dietary Technician, Housekeeping), department/unit affiliation, shift status (On-Duty/Off-Duty), credentials clearance (back",
+      "snippet": "For all staff:",
       "tags": [
         "hospital-safety",
         "patient-safety",
         "healthcare-security",
         "staff-verification",
-        "nurse-aide-verification",
-        "medical-facility-security"
+        "credential-verification",
+        "medical-facility-security",
+        "doctor-verification",
+        "nurse-verification"
       ]
     },
     {
@@ -3325,6 +3596,30 @@
       ]
     },
     {
+      "slug": "incident-reporting",
+      "title": "Incident Reporting (All Industries)",
+      "category": "Safety & Compliance",
+      "volume": "Very Large",
+      "retention": "Permanent (safety records)",
+      "furtherDerivations": 0,
+      "snippet": "Reporting organization, incident category, date/time, severity classification, immediate cause, contributing factors, injuries/damage/releases, corrective actions, regulatory notification timestamps, ",
+      "tags": [
+        "incidents",
+        "safety",
+        "near-miss",
+        "blameless",
+        "healthcare",
+        "aviation",
+        "nuclear",
+        "construction",
+        "maritime",
+        "rail",
+        "OSHA",
+        "disclosure",
+        "novel"
+      ]
+    },
+    {
       "slug": "independent-adjuster-reports",
       "title": "Independent Adjuster Field Inspection Reports",
       "category": "Insurance Claims & Operations",
@@ -3446,6 +3741,26 @@
       ]
     },
     {
+      "slug": "insurance-no-claims-certificates",
+      "title": "Insurance No Claims Certificates",
+      "category": "Personal Lines Insurance",
+      "volume": "Large",
+      "retention": "5-7 years (claims history)",
+      "furtherDerivations": 0,
+      "snippet": "Insurer name, policy number, policyholder name, coverage type, claims-free years earned, last claim date (if any), policy period, protection status, certificate issue date.",
+      "tags": [
+        "no-claims",
+        "NCB",
+        "NCD",
+        "bonus",
+        "discount",
+        "claims-free",
+        "insurance",
+        "auto",
+        "motor"
+      ]
+    },
+    {
       "slug": "insurance-policy-documents",
       "title": "Commercial Insurance Policy Documents",
       "category": "Insurance Claims & Operations",
@@ -3511,6 +3826,26 @@
         "eir",
         "liability-transfer",
         "port-logistics"
+      ]
+    },
+    {
+      "slug": "international-tax-treaties",
+      "title": "International Tax Treaties & Social Security Totalization",
+      "category": "Government & Regulatory",
+      "volume": "Large",
+      "retention": "Permanent (benefit entitlement)",
+      "furtherDerivations": 0,
+      "snippet": "Taxpayer/worker identity, issuing authority, treaty/agreement referenced, coverage period, applicable country, exemption type, certificate number, issue date, expiration.",
+      "tags": [
+        "tax-treaty",
+        "totalization",
+        "social-security",
+        "expat",
+        "foreign-tax-credit",
+        "double-taxation",
+        "pension",
+        "cross-border",
+        "residency"
       ]
     },
     {
@@ -3946,6 +4281,48 @@
       ]
     },
     {
+      "slug": "machine-attestations",
+      "title": "Machine Attestations / IoT Sensor Records",
+      "category": "Novel Document Types",
+      "volume": "Very Large (emerging)",
+      "retention": "Varies by application",
+      "furtherDerivations": 0,
+      "snippet": "Sensor/device ID, reading timestamp, measurement values, units, acceptable ranges, excursion flags, chain of custody identifiers.",
+      "tags": [
+        "iot",
+        "sensors",
+        "telemetry",
+        "cold-chain",
+        "smart-meter",
+        "vehicle",
+        "novel",
+        "machine-generated"
+      ]
+    },
+    {
+      "slug": "mandatory-disclosures",
+      "title": "Mandatory Disclosures (Breaches, Recalls, Material Events)",
+      "category": "Safety & Compliance",
+      "volume": "Large",
+      "retention": "Permanent (legal records)",
+      "furtherDerivations": 0,
+      "snippet": "Disclosing organization, disclosure type, regulatory authority, discovery date, notification date, deadline compliance, scope/impact, affected parties, remediation status.",
+      "tags": [
+        "disclosure",
+        "breach",
+        "recall",
+        "material-event",
+        "SEC",
+        "FDA",
+        "FTC",
+        "GDPR",
+        "privacy",
+        "cybersecurity",
+        "consumer-protection",
+        "novel"
+      ]
+    },
+    {
       "slug": "manufacturer-declarations-of-conformity",
       "title": "Manufacturer Declarations of Conformity (DoC)",
       "category": "Product Certifications & Compliance",
@@ -4144,6 +4521,24 @@
       ]
     },
     {
+      "slug": "meeting-minutes-resolutions",
+      "title": "Meeting Minutes & Resolutions",
+      "category": "Corporate & Legal Documents",
+      "volume": "Very Large",
+      "retention": "Permanent (corporate records)",
+      "furtherDerivations": 0,
+      "snippet": "Meeting date/time/location, attendees (present/absent), quorum status, agenda items, motions and seconds, resolutions passed, vote counts, signatures, page sequence integrity.",
+      "tags": [
+        "minutes",
+        "resolutions",
+        "board",
+        "shareholders",
+        "AGM",
+        "corporate-governance",
+        "multi-page"
+      ]
+    },
+    {
       "slug": "membership-cards-external-benefits",
       "title": "Membership Cards with External Benefits",
       "category": "Charitable & Non-Profit",
@@ -4162,6 +4557,24 @@
         "professional-society",
         "union",
         "alumni"
+      ]
+    },
+    {
+      "slug": "micro-credentials",
+      "title": "Micro-Credentials / Skill Attestations",
+      "category": "Novel Document Types",
+      "volume": "Very Large (emerging)",
+      "retention": "Permanent (career records)",
+      "furtherDerivations": 0,
+      "snippet": "Issuing organization, holder identifier, credential name/code, level, assessment method, score/result, completion date, assessor (if applicable), expiration (if applicable).",
+      "tags": [
+        "skills",
+        "credentials",
+        "training",
+        "competency",
+        "badges",
+        "peer-attestation",
+        "novel"
       ]
     },
     {
@@ -4260,6 +4673,24 @@
       ]
     },
     {
+      "slug": "municipal-registration-confirmations",
+      "title": "Municipal & Local Registration Confirmations",
+      "category": "Government & Regulatory",
+      "volume": "Very Large",
+      "retention": "1-5 years (renewal cycles)",
+      "furtherDerivations": 0,
+      "snippet": "Issuing municipality, registration type, registrant name, registration number, validity period, any conditions or restrictions, fees paid.",
+      "tags": [
+        "municipal",
+        "local",
+        "registration",
+        "business-license",
+        "permit",
+        "city",
+        "county"
+      ]
+    },
+    {
       "slug": "named-driver-insurance",
       "title": "Named Driver Insurance Certificates",
       "category": "Personal Lines Insurance",
@@ -4331,6 +4762,22 @@
         "telecommunications",
         "SLA",
         "5G"
+      ]
+    },
+    {
+      "slug": "no-convictions-declarations",
+      "title": "No Convictions Declarations & Good Standing Certificates",
+      "category": "Legal & Court Documents",
+      "volume": "Large",
+      "retention": "1-3 years (application cycles)",
+      "furtherDerivations": 0,
+      "snippet": "Issuing authority, applicant/holder name, certificate/license number, scope of certification, specific disqualifying categories checked, certification date, validity period.",
+      "tags": [
+        "no-convictions",
+        "good-standing",
+        "character-certificate",
+        "police-check",
+        "clearance"
       ]
     },
     {
@@ -4903,7 +5350,7 @@
       "volume": "Very Large",
       "retention": "Encounter + 1-3 years (accountability)",
       "furtherDerivations": 2,
-      "snippet": "Officer name, rank, badge number, photograph (via hash), department/precinct, current assignment, date of last background clearance, expiration date of ID.",
+      "snippet": "",
       "tags": [
         "police",
         "officer",
@@ -4968,6 +5415,23 @@
         "estate-planning",
         "legal-authority",
         "medical-directive"
+      ]
+    },
+    {
+      "slug": "prediction-commitments",
+      "title": "Prediction Commitments",
+      "category": "Novel Document Types",
+      "volume": "Medium (emerging)",
+      "retention": "Permanent (reputation records)",
+      "furtherDerivations": 0,
+      "snippet": "Forecaster identity, prediction question/scope, predicted value or probability, commitment timestamp, resolution criteria, resolution date, outcome (when resolved), accuracy metrics.",
+      "tags": [
+        "predictions",
+        "forecasting",
+        "commitments",
+        "accountability",
+        "track-record",
+        "novel"
       ]
     },
     {
@@ -5422,6 +5886,23 @@
       ]
     },
     {
+      "slug": "refund-confirmations",
+      "title": "Refund & Reimbursement Confirmations",
+      "category": "Banking & Financial Services",
+      "volume": "Very Large",
+      "retention": "3-7 years (tax and warranty)",
+      "furtherDerivations": 0,
+      "snippet": "Issuer name, transaction/claim number, recipient name, original purchase or claim details, refund amount, refund method, processing date, receiving account (masked).",
+      "tags": [
+        "refund",
+        "reimbursement",
+        "return",
+        "chargeback",
+        "credit",
+        "warranty"
+      ]
+    },
+    {
       "slug": "registrar-residency-status-letters",
       "title": "Registrar Residency and Enrollment Letters",
       "category": "Professional & Educational Qualifications",
@@ -5438,6 +5919,23 @@
         "student-benefits",
         "academic-integrity",
         "insurance-eligibility"
+      ]
+    },
+    {
+      "slug": "regulatory-compliance-attestations",
+      "title": "Regulatory Compliance Attestations",
+      "category": "Government & Regulatory",
+      "volume": "Large",
+      "retention": "5-10 years (regulatory cycles)",
+      "furtherDerivations": 0,
+      "snippet": "Regulatory authority, entity name, site/facility identifier, inspection/audit date, result (pass/fail/conditional), scope of compliance, validity period, inspector/auditor identification.",
+      "tags": [
+        "compliance",
+        "attestation",
+        "audit",
+        "regulation",
+        "certification",
+        "inspection"
       ]
     },
     {
@@ -6129,6 +6627,23 @@
       ]
     },
     {
+      "slug": "surety-bond-releases",
+      "title": "Surety Bond Releases",
+      "category": "Insurance & Bonds",
+      "volume": "Medium",
+      "retention": "7 years (project completion + warranty)",
+      "furtherDerivations": 0,
+      "snippet": "Surety company name, bond number, principal (contractor/licensee), obligee (protected party), bond type, bond amount, project or license description, release date, reason for release, any continuing o",
+      "tags": [
+        "surety",
+        "bond",
+        "release",
+        "construction",
+        "performance",
+        "collateral"
+      ]
+    },
+    {
       "slug": "surety-bonds",
       "title": "Surety Bonds and Performance Guarantees",
       "category": "Bonds & Sureties",
@@ -6484,6 +6999,27 @@
         "trade-compliance",
         "trade-finance",
         "ucc-article-7"
+      ]
+    },
+    {
+      "slug": "trade-services-receipts",
+      "title": "Trade Services Receipts",
+      "category": "Consumer & Commercial Transactions",
+      "volume": "Very Large",
+      "retention": "7 years (tax records)",
+      "furtherDerivations": 0,
+      "snippet": "Tradesperson name/business, tax registration number (UTR, ABN, EIN), trade license number, insurance reference, customer address (hashed for privacy), service description, itemized costs, tax amounts,",
+      "tags": [
+        "trades",
+        "plumber",
+        "electrician",
+        "builder",
+        "contractor",
+        "receipt",
+        "tax-compliance",
+        "cash-economy",
+        "consumer-protection",
+        "B2C"
       ]
     },
     {
@@ -7127,12 +7663,16 @@
       "count": 15
     },
     {
+      "name": "Government & Civic Documents",
+      "count": 14
+    },
+    {
       "name": "Professional & Educational Qualifications",
       "count": 14
     },
     {
-      "name": "Government & Civic Documents",
-      "count": 13
+      "name": "Personal Lines Insurance",
+      "count": 12
     },
     {
       "name": "Insurance Claims & Operations",
@@ -7145,10 +7685,6 @@
     {
       "name": "Investment & Fintech",
       "count": 12
-    },
-    {
-      "name": "Personal Lines Insurance",
-      "count": 11
     },
     {
       "name": "Commercial Lines Insurance",
@@ -7203,6 +7739,14 @@
       "count": 6
     },
     {
+      "name": "Novel Document Types",
+      "count": 6
+    },
+    {
+      "name": "Banking & Financial Services",
+      "count": 6
+    },
+    {
       "name": "Customs & Trade Compliance",
       "count": 6
     },
@@ -7215,12 +7759,20 @@
       "count": 6
     },
     {
+      "name": "Government & Regulatory",
+      "count": 5
+    },
+    {
       "name": "Delegated Authority",
       "count": 5
     },
     {
       "name": "Trade Finance",
       "count": 5
+    },
+    {
+      "name": "Legal & Court Documents",
+      "count": 4
     },
     {
       "name": "Warehousing & Inventory",
@@ -7247,9 +7799,25 @@
       "count": 3
     },
     {
+      "name": "Corporate & Legal Documents",
+      "count": 2
+    },
+    {
+      "name": "Safety & Compliance",
+      "count": 2
+    },
+    {
       "name": "Vehicle & Transportation",
       "count": 2
+    },
+    {
+      "name": "Insurance & Bonds",
+      "count": 1
+    },
+    {
+      "name": "Consumer & Commercial Transactions",
+      "count": 1
     }
   ],
-  "totalCategories": 38
+  "totalCategories": 46
 }
