@@ -38,6 +38,42 @@ QR codes are popular but introduce a "double-checking" burden.
 
 OCR-to-hash binds the **visible text itself** to the verification. If you change the name on the degree, the hash changes, and verification fails. The human reads the domain *before* scanning, establishing trust anchors early.
 
+## Cryptographic Foundations
+
+This technology doesn't invent new cryptography—it applies well-established computer science that predates blockchain by decades.
+
+**Hash Functions (1970s-1990s)**
+
+Cryptographic hash functions convert arbitrary data into fixed-size fingerprints. The same input always produces the same output; any change produces a completely different output. SHA-256, used here, was published by NIST in 2001 and is a federal standard.
+
+- [FIPS 180-4: Secure Hash Standard (SHA)](https://csrc.nist.gov/publications/detail/fips/180/4/final) (NIST, 2015)
+- [RFC 6234: SHA-256 and SHA-512](https://datatracker.ietf.org/doc/html/rfc6234) (IETF, 2011)
+
+**Merkle Trees (1979)**
+
+Ralph Merkle's 1979 invention allows efficient verification of data integrity by organizing hashes in a tree structure. Each leaf is a hash of data; each parent is a hash of its children. You can verify any piece of data by checking its path to the root—without downloading everything.
+
+- [Merkle, R.C. "A Certified Digital Signature"](https://link.springer.com/chapter/10.1007/0-387-34805-0_21) (Crypto '89, but concept from 1979 thesis)
+- [Wikipedia: Merkle tree](https://en.wikipedia.org/wiki/Merkle_tree)
+
+**Blockchain Relationship**
+
+Blockchain (Bitcoin, 2008) uses Merkle trees and hash functions as building blocks. But these primitives are useful far beyond blockchain—and often simpler applied directly:
+
+| Approach | What It Does | Complexity |
+|----------|--------------|------------|
+| **OCR-to-hash** | Hash text → HTTP lookup → OK/404 | Simple: static files or serverless |
+| **Merkle tree** | Organize many hashes for efficient proof | Medium: tree construction, proof paths |
+| **Blockchain** | Distributed consensus + Merkle trees + incentives | Complex: nodes, consensus, fees |
+
+OCR-to-hash uses the same cryptographic primitives (SHA-256) without requiring distributed consensus, cryptocurrency, or transaction fees. The trust anchor is the organization's domain (backed by DNS/TLS), not a blockchain.
+
+**Why This Matters**
+
+This is infrastructure applying **40+ years of peer-reviewed cryptography**, not novel technology requiring new trust assumptions. Organizations already have trusted domains; hash verification is computationally trivial; the protocol is simple enough to implement in an afternoon.
+
+The science is settled. The innovation is applying it to physical documents via OCR.
+
 ## The Problem
 
 **Claims to the authenticity of printed things (or pictures of them) are hard to verify or resolve during disputes:** One example that has a billion+ incidents a day is 
