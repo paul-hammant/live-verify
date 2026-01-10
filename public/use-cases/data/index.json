@@ -1,10 +1,11 @@
 {
-  "generated": "2026-01-10T08:35:15.753Z",
-  "totalUseCases": 394,
+  "generated": "2026-01-10T08:44:25.455Z",
+  "totalUseCases": 400,
   "totalFurtherDerivations": 396,
   "categories": {
     "Real Estate & Property": 30,
     "Charitable & Non-Profit": 6,
+    "Novel Document Types": 6,
     "Banking & Payments": 15,
     "Actuarial & Insurance Mathematics": 10,
     "Personal Lines Insurance": 12,
@@ -82,6 +83,23 @@
         "charitable",
         "non-profit",
         "IRS"
+      ]
+    },
+    {
+      "slug": "absence-certificates",
+      "title": "Absence Certificates / Negative Proofs",
+      "category": "Novel Document Types",
+      "volume": "Large (emerging)",
+      "retention": "Varies by type",
+      "furtherDerivations": 0,
+      "snippet": "Registry authority, subject identifier (person, property, entity, product), search period, categories searched, negative result confirmation, certificate timestamp.",
+      "tags": [
+        "negative-proof",
+        "absence",
+        "no-claims",
+        "clear-record",
+        "due-diligence",
+        "novel"
       ]
     },
     {
@@ -337,6 +355,24 @@
         "insurance",
         "solvency",
         "compliance"
+      ]
+    },
+    {
+      "slug": "anti-coercion-canaries",
+      "title": "Anti-Coercion Canaries / Duress Signals",
+      "category": "Novel Document Types",
+      "volume": "Small (specialized)",
+      "retention": "Permanent (safety records)",
+      "furtherDerivations": 0,
+      "snippet": "Issuing entity/person, canary statement (what is being attested), timestamp, expected update schedule, any variations from normal pattern.",
+      "tags": [
+        "duress",
+        "coercion",
+        "safety",
+        "canary",
+        "warrant-canary",
+        "dead-man-switch",
+        "novel"
       ]
     },
     {
@@ -1446,6 +1482,24 @@
         "resale-certificate",
         "property-management",
         "special-assessment"
+      ]
+    },
+    {
+      "slug": "consent-records",
+      "title": "Consent Records",
+      "category": "Novel Document Types",
+      "volume": "Very Large (emerging)",
+      "retention": "Permanent (legal protection)",
+      "furtherDerivations": 0,
+      "snippet": "Consenting party (or hash), receiving party, scope of consent (what's being consented to), version of terms/disclosures, timestamp, method of consent, witness (if applicable).",
+      "tags": [
+        "consent",
+        "gdpr",
+        "hipaa",
+        "privacy",
+        "medical",
+        "data-rights",
+        "novel"
       ]
     },
     {
@@ -4182,6 +4236,25 @@
       ]
     },
     {
+      "slug": "machine-attestations",
+      "title": "Machine Attestations / IoT Sensor Records",
+      "category": "Novel Document Types",
+      "volume": "Very Large (emerging)",
+      "retention": "Varies by application",
+      "furtherDerivations": 0,
+      "snippet": "Sensor/device ID, reading timestamp, measurement values, units, acceptable ranges, excursion flags, chain of custody identifiers.",
+      "tags": [
+        "iot",
+        "sensors",
+        "telemetry",
+        "cold-chain",
+        "smart-meter",
+        "vehicle",
+        "novel",
+        "machine-generated"
+      ]
+    },
+    {
       "slug": "manufacturer-declarations-of-conformity",
       "title": "Manufacturer Declarations of Conformity (DoC)",
       "category": "Product Certifications & Compliance",
@@ -4416,6 +4489,24 @@
         "professional-society",
         "union",
         "alumni"
+      ]
+    },
+    {
+      "slug": "micro-credentials",
+      "title": "Micro-Credentials / Skill Attestations",
+      "category": "Novel Document Types",
+      "volume": "Very Large (emerging)",
+      "retention": "Permanent (career records)",
+      "furtherDerivations": 0,
+      "snippet": "Issuing organization, holder identifier, credential name/code, level, assessment method, score/result, completion date, assessor (if applicable), expiration (if applicable).",
+      "tags": [
+        "skills",
+        "credentials",
+        "training",
+        "competency",
+        "badges",
+        "peer-attestation",
+        "novel"
       ]
     },
     {
@@ -5256,6 +5347,23 @@
         "estate-planning",
         "legal-authority",
         "medical-directive"
+      ]
+    },
+    {
+      "slug": "prediction-commitments",
+      "title": "Prediction Commitments",
+      "category": "Novel Document Types",
+      "volume": "Medium (emerging)",
+      "retention": "Permanent (reputation records)",
+      "furtherDerivations": 0,
+      "snippet": "Forecaster identity, prediction question/scope, predicted value or probability, commitment timestamp, resolution criteria, resolution date, outcome (when resolved), accuracy metrics.",
+      "tags": [
+        "predictions",
+        "forecasting",
+        "commitments",
+        "accountability",
+        "track-record",
+        "novel"
       ]
     },
     {
@@ -7563,6 +7671,10 @@
       "count": 6
     },
     {
+      "name": "Novel Document Types",
+      "count": 6
+    },
+    {
       "name": "Banking & Financial Services",
       "count": 6
     },
@@ -7635,5 +7747,5 @@
       "count": 1
     }
   ],
-  "totalCategories": 44
+  "totalCategories": 45
 }
