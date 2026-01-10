@@ -1,13 +1,13 @@
 {
-  "generated": "2026-01-03T12:48:06.207Z",
-  "totalUseCases": 374,
+  "generated": "2026-01-10T07:59:49.207Z",
+  "totalUseCases": 390,
   "totalFurtherDerivations": 396,
   "categories": {
     "Real Estate & Property": 30,
     "Charitable & Non-Profit": 6,
     "Banking & Payments": 15,
     "Actuarial & Insurance Mathematics": 10,
-    "Personal Lines Insurance": 11,
+    "Personal Lines Insurance": 12,
     "Government & Civic Documents": 13,
     "Notary Services": 7,
     "Immigration & Visa Documents": 17,
@@ -19,6 +19,7 @@
     "Healthcare & Medical Records": 9,
     "Professional & Educational Qualifications": 14,
     "Art, Media & Publishing": 7,
+    "Banking & Financial Services": 6,
     "Customs & Trade Compliance": 6,
     "Sports & Athletics": 6,
     "Identity & Authority Verification": 20,
@@ -31,8 +32,10 @@
     "Product Certifications & Compliance": 11,
     "Professional Ethics & Compliance": 9,
     "Energy & Utilities": 3,
+    "Legal & Court Documents": 4,
     "Scientific & Research": 7,
     "Warehousing & Inventory": 4,
+    "Government & Regulatory": 4,
     "Permits & Approvals": 4,
     "Delegated Authority": 5,
     "Intellectual Property Law": 3,
@@ -40,6 +43,7 @@
     "Environmental Permits & Compliance": 4,
     "Agriculture & Food": 7,
     "Bonds & Sureties": 3,
+    "Insurance & Bonds": 1,
     "Vehicle & Transportation": 2
   },
   "useCases": [
@@ -399,6 +403,23 @@
         "title",
         "uspap",
         "valuation"
+      ]
+    },
+    {
+      "slug": "asset-unfreeze-notices",
+      "title": "Asset Unfreeze & Account Release Notices",
+      "category": "Banking & Financial Services",
+      "volume": "Medium",
+      "retention": "7 years (regulatory compliance)",
+      "furtherDerivations": 0,
+      "snippet": "Institution name, account/asset identifier, account holder name, type of hold/freeze, original freeze date, release date, reason for release, any continuing restrictions.",
+      "tags": [
+        "freeze",
+        "unfreeze",
+        "sanctions",
+        "account-hold",
+        "garnishment",
+        "release"
       ]
     },
     {
@@ -1179,6 +1200,23 @@
       ]
     },
     {
+      "slug": "citation-dismissal-notices",
+      "title": "Citation & Ticket Dismissal Notices",
+      "category": "Legal & Court Documents",
+      "volume": "Very Large",
+      "retention": "3-7 years (DMV/court records)",
+      "furtherDerivations": 0,
+      "snippet": "Issuing authority, citation/ticket number, defendant/violator name, violation type and code, citation date, dismissal date, reason for dismissal, any residual obligations.",
+      "tags": [
+        "citation",
+        "ticket",
+        "dismissal",
+        "traffic",
+        "violation",
+        "fine"
+      ]
+    },
+    {
       "slug": "client-money-segregation-confirmations",
       "title": "Client Money Segregation Confirmations",
       "category": "Professional Ethics & Compliance",
@@ -1334,6 +1372,23 @@
         "hs-codes",
         "tariff-valuation",
         "duty-evasion-prevention"
+      ]
+    },
+    {
+      "slug": "commercial-registry-filings",
+      "title": "Commercial Registry Filings",
+      "category": "Government & Regulatory",
+      "volume": "Very Large",
+      "retention": "Permanent (entity records)",
+      "furtherDerivations": 0,
+      "snippet": "Registry authority, entity name, file/registration number, entity type, formation/registration date, current status, registered agent, key dates (renewal, expiration).",
+      "tags": [
+        "commercial-registry",
+        "company-house",
+        "secretary-of-state",
+        "incorporation",
+        "UCC",
+        "trademark"
       ]
     },
     {
@@ -1586,6 +1641,23 @@
       ]
     },
     {
+      "slug": "conviction-expungement-certificates",
+      "title": "Conviction Expungement & Record Sealing Certificates",
+      "category": "Legal & Court Documents",
+      "volume": "Medium",
+      "retention": "Permanent (legal status)",
+      "furtherDerivations": 0,
+      "snippet": "Court/issuing authority, case number, petitioner/defendant name, original offense(s), conviction date, type of relief (expungement/sealing/pardon), grant date, scope of relief, any exceptions or limit",
+      "tags": [
+        "expungement",
+        "sealing",
+        "conviction",
+        "criminal-record",
+        "court-order",
+        "clean-slate"
+      ]
+    },
+    {
       "slug": "copyrights",
       "title": "Copyright Registrations",
       "category": "Intellectual Property Law",
@@ -1707,6 +1779,23 @@
         "trip-delay",
         "rental-car-coverage",
         "travel-perks"
+      ]
+    },
+    {
+      "slug": "criminal-background-check-results",
+      "title": "Criminal Background Check Results",
+      "category": "Legal & Court Documents",
+      "volume": "Very Large",
+      "retention": "1-7 years (varies by use)",
+      "furtherDerivations": 0,
+      "snippet": "Issuing agency, request/reference number, subject name, date of birth (or other identifiers), search scope, result (no record/records found), search date, validity period.",
+      "tags": [
+        "background-check",
+        "criminal-history",
+        "clearance",
+        "NCIC",
+        "fingerprint",
+        "police-check"
       ]
     },
     {
@@ -1897,6 +1986,24 @@
         "privacy-policy",
         "academic-collaboration",
         "legal-contract"
+      ]
+    },
+    {
+      "slug": "debt-payoff-satisfaction-letters",
+      "title": "Debt Payoff & Satisfaction Letters",
+      "category": "Banking & Financial Services",
+      "volume": "Very Large",
+      "retention": "7-10 years (credit reporting cycle)",
+      "furtherDerivations": 0,
+      "snippet": "Lender name, loan/account number, borrower name, original loan amount, property/collateral description (if secured), payoff date, final payment amount, lien release status, any remaining obligations.",
+      "tags": [
+        "debt",
+        "payoff",
+        "satisfaction",
+        "mortgage",
+        "loan",
+        "credit",
+        "lien-release"
       ]
     },
     {
@@ -2227,8 +2334,8 @@
       ]
     },
     {
-      "slug": "employment-reference-letters",
-      "title": "Employment Reference Letters & VOE",
+      "slug": "employment-references",
+      "title": "Employment References",
       "category": "Professional & Educational Qualifications",
       "volume": "Very Large",
       "retention": "1-7 years (hiring cycle)",
@@ -2403,6 +2510,23 @@
         "trid-compliance",
         "wire-fraud",
         "wire-fraud-prevention"
+      ]
+    },
+    {
+      "slug": "escrow-releases",
+      "title": "Escrow Releases",
+      "category": "Banking & Financial Services",
+      "volume": "Large",
+      "retention": "7 years (transaction records)",
+      "furtherDerivations": 0,
+      "snippet": "Escrow agent name, file/agreement number, parties (buyer/seller, depositor/beneficiary), property or materials description, escrow amount, release conditions, release date, recipient of disbursement.",
+      "tags": [
+        "escrow",
+        "release",
+        "real-estate",
+        "closing",
+        "holdback",
+        "disbursement"
       ]
     },
     {
@@ -2600,6 +2724,24 @@
         "commercial-surety",
         "fiduciary-responsibility",
         "theft-protection"
+      ]
+    },
+    {
+      "slug": "filing-completion-receipts",
+      "title": "Filing Completion Receipts",
+      "category": "Government & Regulatory",
+      "volume": "Very Large",
+      "retention": "Varies by filing type (1 year - permanent)",
+      "furtherDerivations": 0,
+      "snippet": "Receiving authority, filing type, filer name/entity, filing date and time, confirmation number, acceptance status, any fees paid.",
+      "tags": [
+        "filing",
+        "receipt",
+        "submission",
+        "deadline",
+        "compliance",
+        "registration",
+        "government"
       ]
     },
     {
@@ -2883,6 +3025,23 @@
       ]
     },
     {
+      "slug": "gift-card-redemption-receipts",
+      "title": "Gift Card & Stored Value Redemption Receipts",
+      "category": "Banking & Financial Services",
+      "volume": "Very Large",
+      "retention": "1-3 years (consumer protection)",
+      "furtherDerivations": 0,
+      "snippet": "Issuer name, card/voucher number (masked), original value, transaction details, amount used, remaining balance, redemption date, card status.",
+      "tags": [
+        "gift-card",
+        "stored-value",
+        "redemption",
+        "balance",
+        "prepaid",
+        "voucher"
+      ]
+    },
+    {
       "slug": "gig-economy-payout-receipts",
       "title": "Gig Economy Payout Receipts",
       "category": "Banking & Payments",
@@ -2935,6 +3094,23 @@
         "third-party-liability",
         "border-control",
         "car-insurance"
+      ]
+    },
+    {
+      "slug": "guarantor-releases",
+      "title": "Guarantor & Co-Signer Releases",
+      "category": "Banking & Financial Services",
+      "volume": "Medium",
+      "retention": "7-10 years (credit reporting cycle)",
+      "furtherDerivations": 0,
+      "snippet": "Creditor/landlord name, loan/lease identifier, primary obligor name, guarantor name, original guarantee amount or terms, release date, release reason, any continuing obligations.",
+      "tags": [
+        "guarantor",
+        "co-signer",
+        "release",
+        "loan",
+        "lease",
+        "personal-guarantee"
       ]
     },
     {
@@ -3051,14 +3227,16 @@
       "volume": "Large",
       "retention": "2-7 years (security & incident records)",
       "furtherDerivations": 0,
-      "snippet": "Staff name, photo (hash), employee ID, job role (e.g., RN, LPN, Nurse Aide, Dietary Technician, Housekeeping), department/unit affiliation, shift status (On-Duty/Off-Duty), credentials clearance (back",
+      "snippet": "For all staff:",
       "tags": [
         "hospital-safety",
         "patient-safety",
         "healthcare-security",
         "staff-verification",
-        "nurse-aide-verification",
-        "medical-facility-security"
+        "credential-verification",
+        "medical-facility-security",
+        "doctor-verification",
+        "nurse-verification"
       ]
     },
     {
@@ -3443,6 +3621,26 @@
         "reinsurance-audit",
         "release",
         "settlement"
+      ]
+    },
+    {
+      "slug": "insurance-no-claims-certificates",
+      "title": "Insurance No Claims Certificates",
+      "category": "Personal Lines Insurance",
+      "volume": "Large",
+      "retention": "5-7 years (claims history)",
+      "furtherDerivations": 0,
+      "snippet": "Insurer name, policy number, policyholder name, coverage type, claims-free years earned, last claim date (if any), policy period, protection status, certificate issue date.",
+      "tags": [
+        "no-claims",
+        "NCB",
+        "NCD",
+        "bonus",
+        "discount",
+        "claims-free",
+        "insurance",
+        "auto",
+        "motor"
       ]
     },
     {
@@ -4260,6 +4458,24 @@
       ]
     },
     {
+      "slug": "municipal-registration-confirmations",
+      "title": "Municipal & Local Registration Confirmations",
+      "category": "Government & Regulatory",
+      "volume": "Very Large",
+      "retention": "1-5 years (renewal cycles)",
+      "furtherDerivations": 0,
+      "snippet": "Issuing municipality, registration type, registrant name, registration number, validity period, any conditions or restrictions, fees paid.",
+      "tags": [
+        "municipal",
+        "local",
+        "registration",
+        "business-license",
+        "permit",
+        "city",
+        "county"
+      ]
+    },
+    {
       "slug": "named-driver-insurance",
       "title": "Named Driver Insurance Certificates",
       "category": "Personal Lines Insurance",
@@ -4331,6 +4547,22 @@
         "telecommunications",
         "SLA",
         "5G"
+      ]
+    },
+    {
+      "slug": "no-convictions-declarations",
+      "title": "No Convictions Declarations & Good Standing Certificates",
+      "category": "Legal & Court Documents",
+      "volume": "Large",
+      "retention": "1-3 years (application cycles)",
+      "furtherDerivations": 0,
+      "snippet": "Issuing authority, applicant/holder name, certificate/license number, scope of certification, specific disqualifying categories checked, certification date, validity period.",
+      "tags": [
+        "no-convictions",
+        "good-standing",
+        "character-certificate",
+        "police-check",
+        "clearance"
       ]
     },
     {
@@ -4903,7 +5135,7 @@
       "volume": "Very Large",
       "retention": "Encounter + 1-3 years (accountability)",
       "furtherDerivations": 2,
-      "snippet": "Officer name, rank, badge number, photograph (via hash), department/precinct, current assignment, date of last background clearance, expiration date of ID.",
+      "snippet": "",
       "tags": [
         "police",
         "officer",
@@ -5422,6 +5654,23 @@
       ]
     },
     {
+      "slug": "refund-confirmations",
+      "title": "Refund & Reimbursement Confirmations",
+      "category": "Banking & Financial Services",
+      "volume": "Very Large",
+      "retention": "3-7 years (tax and warranty)",
+      "furtherDerivations": 0,
+      "snippet": "Issuer name, transaction/claim number, recipient name, original purchase or claim details, refund amount, refund method, processing date, receiving account (masked).",
+      "tags": [
+        "refund",
+        "reimbursement",
+        "return",
+        "chargeback",
+        "credit",
+        "warranty"
+      ]
+    },
+    {
       "slug": "registrar-residency-status-letters",
       "title": "Registrar Residency and Enrollment Letters",
       "category": "Professional & Educational Qualifications",
@@ -5438,6 +5687,23 @@
         "student-benefits",
         "academic-integrity",
         "insurance-eligibility"
+      ]
+    },
+    {
+      "slug": "regulatory-compliance-attestations",
+      "title": "Regulatory Compliance Attestations",
+      "category": "Government & Regulatory",
+      "volume": "Large",
+      "retention": "5-10 years (regulatory cycles)",
+      "furtherDerivations": 0,
+      "snippet": "Regulatory authority, entity name, site/facility identifier, inspection/audit date, result (pass/fail/conditional), scope of compliance, validity period, inspector/auditor identification.",
+      "tags": [
+        "compliance",
+        "attestation",
+        "audit",
+        "regulation",
+        "certification",
+        "inspection"
       ]
     },
     {
@@ -6126,6 +6392,23 @@
         "financial-planning",
         "legal-judgment",
         "long-term-care"
+      ]
+    },
+    {
+      "slug": "surety-bond-releases",
+      "title": "Surety Bond Releases",
+      "category": "Insurance & Bonds",
+      "volume": "Medium",
+      "retention": "7 years (project completion + warranty)",
+      "furtherDerivations": 0,
+      "snippet": "Surety company name, bond number, principal (contractor/licensee), obligee (protected party), bond type, bond amount, project or license description, release date, reason for release, any continuing o",
+      "tags": [
+        "surety",
+        "bond",
+        "release",
+        "construction",
+        "performance",
+        "collateral"
       ]
     },
     {
@@ -7135,6 +7418,10 @@
       "count": 13
     },
     {
+      "name": "Personal Lines Insurance",
+      "count": 12
+    },
+    {
       "name": "Insurance Claims & Operations",
       "count": 12
     },
@@ -7145,10 +7432,6 @@
     {
       "name": "Investment & Fintech",
       "count": 12
-    },
-    {
-      "name": "Personal Lines Insurance",
-      "count": 11
     },
     {
       "name": "Commercial Lines Insurance",
@@ -7203,6 +7486,10 @@
       "count": 6
     },
     {
+      "name": "Banking & Financial Services",
+      "count": 6
+    },
+    {
       "name": "Customs & Trade Compliance",
       "count": 6
     },
@@ -7223,7 +7510,15 @@
       "count": 5
     },
     {
+      "name": "Legal & Court Documents",
+      "count": 4
+    },
+    {
       "name": "Warehousing & Inventory",
+      "count": 4
+    },
+    {
+      "name": "Government & Regulatory",
       "count": 4
     },
     {
@@ -7249,7 +7544,11 @@
     {
       "name": "Vehicle & Transportation",
       "count": 2
+    },
+    {
+      "name": "Insurance & Bonds",
+      "count": 1
     }
   ],
-  "totalCategories": 38
+  "totalCategories": 42
 }
