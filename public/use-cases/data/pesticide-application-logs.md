@@ -17,11 +17,11 @@ These logs are the "Safety Map" of our food supply. Large retailers (e.g., Whole
 <div style="max-width: 650px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 2px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="padding: 20px; border-bottom: 2px solid #000; background: #f9f9f9; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;">PESTICIDE APPLICATION RECORD</div>
+      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="pest">[</span>PESTICIDE APPLICATION RECORD</div>
       <div style="font-size: 0.8em; color: #666;">In accordance with EPA 40 CFR Part 170</div>
     </div>
     <div style="text-align: right;">
-      <div style="font-weight: bold; font-size: 1em;">LOG #: <span verifiable-text="start" data-for="pest">[</span>2026-NY-42</div>
+      <div style="font-weight: bold; font-size: 1em;">LOG #: 2026-NY-42</div>
     </div>
   </div>
 <div style="padding: 20px;">

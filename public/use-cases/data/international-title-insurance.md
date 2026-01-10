@@ -10,12 +10,12 @@ furtherDerivations: 1
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 2px solid #333; background: #fff; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); position: relative;">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 15px; margin-bottom: 25px;">
-    <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 2px; color: #000;">FIRST AMERICAN TITLE</div>
+    <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 2px; color: #000;"><span verifiable-text="start" data-for="intl-title">[</span>FIRST AMERICAN TITLE</div>
     <div style="font-size: 0.85em; color: #666; margin-top: 5px; text-transform: uppercase;">International Division • European Operations</div>
   </div>
 <h3 style="text-align: center; text-transform: uppercase; margin-bottom: 25px;">Policy of Title Insurance</h3>
 <div style="font-size: 1em; line-height: 1.6; color: #333; text-align: justify;">
-    <p>This policy insures against loss or damage sustained by the <strong>Insured:</strong> <span verifiable-text="start" data-for="intl-title">[</span>Globochem Real Estate Holding, SA</p>
+    <p>This policy insures against loss or damage sustained by the <strong>Insured:</strong> Globochem Real Estate Holding, SA</p>
 <p>By reason of any defect in or lien or encumbrance on the title to the <strong>Estate or Interest:</strong> Fee Simple in the following property:</p>
 <div style="background: #f9f9f9; padding: 15px; border: 1px solid #eee; margin: 20px 0; font-family: monospace; font-size: 0.9em;">
       Address: Rue de Rivoli 42, 75001 Paris, France<br>

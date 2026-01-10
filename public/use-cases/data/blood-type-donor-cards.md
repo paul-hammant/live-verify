@@ -10,14 +10,14 @@ furtherDerivations: 1
 
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #b71c1c; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
   <div style="background: #b71c1c; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
-    <div style="font-weight: bold; font-size: 1.1em;">AMERICAN RED CROSS</div>
+    <div style="font-weight: bold; font-size: 1.1em;"><span verifiable-text="start" data-for="blood">[</span>AMERICAN RED CROSS</div>
     <div style="font-size: 1.5em;">🩸</div>
   </div>
 <div style="padding: 20px;">
     <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px;">
       <div style="font-size: 0.9em; line-height: 1.4; color: #333;">
         <strong>Donor Name:</strong><br>
-        <span verifiable-text="start" data-for="blood">[</span><strong>BRUCE WAYNE</strong><br>
+        <strong>BRUCE WAYNE</strong><br>
         <strong>DOB:</strong> 02/19/1972
       </div>
       <div style="text-align: center; border: 3px solid #b71c1c; padding: 5px 10px; border-radius: 8px;">

@@ -18,7 +18,7 @@ In pharmaceutical research, "Consent Fraud" is a serious crime. Sites sometimes 
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Helvetica', Arial, sans-serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="text-align: left; margin-bottom: 30px; border-bottom: 2px solid #004d40; padding-bottom: 10px;">
-    <div style="font-weight: bold; font-size: 1.2em; color: #004d40;">MAYO CLINIC - DEPARTMENT OF ONCOLOGY</div>
+    <div style="font-weight: bold; font-size: 1.2em; color: #004d40;"><span verifiable-text="start" data-for="clinic">[</span>MAYO CLINIC - DEPARTMENT OF ONCOLOGY</div>
     <div style="font-size: 0.85em; color: #666;">Institutional Review Board Approved (v.4.2)</div>
   </div>
 <h2 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; color: #004d40;">Informed Consent Form</h2>
@@ -26,7 +26,7 @@ In pharmaceutical research, "Consent Fraud" is a serious crime. Sites sometimes 
     <p><strong>Trial Title:</strong> Phase III Study of Compound X in Metastatic Melanoma<br>
     <strong>NCT Number:</strong> NCT09988776<br>
     <strong>Protocol ID:</strong> MC-2026-0492</p>
-<p>I, <span verifiable-text="start" data-for="clinic">[</span><strong>PARTICIPANT ID: 9988-SJ</strong>, have been informed of the risks and benefits of this study. I voluntarily agree to participate and understand that I may withdraw at any time.</p>
+<p>I, <strong>PARTICIPANT ID: 9988-SJ</strong>, have been informed of the risks and benefits of this study. I voluntarily agree to participate and understand that I may withdraw at any time.</p>
 <div style="margin: 20px 0; border: 1px solid #004d40; padding: 15px; background: #f1f8e9;">
       <strong>CONSENT SIGNATURE:</strong><br>
       Date: March 15, 2026<br>

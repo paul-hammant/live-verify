@@ -10,10 +10,10 @@ furtherDerivations: 1
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #000; background: #fff; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); position: relative;">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 25px;">
-    <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">SATISFACTION OF MORTGAGE</h2>
+    <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;"><span verifiable-text="start" data-for="mort-rel">[</span>SATISFACTION OF MORTGAGE</h2>
   </div>
 <div style="font-size: 1em; line-height: 1.6; color: #000; text-align: justify;">
-    <p>Know all men by these presents, that <strong>Lender:</strong> Wells Fargo Bank, N.A. (the "Mortgagee") does hereby certify that a certain mortgage made and executed by <span verifiable-text="start" data-for="mort-rel">[</span><strong>John Jacob Doe</strong> (the "Mortgagor") on <strong>January 1, 2010</strong>, is fully <strong>PAID, SATISFIED, AND DISCHARGED</strong>.</p>
+    <p>Know all men by these presents, that <strong>Lender:</strong> Wells Fargo Bank, N.A. (the "Mortgagee") does hereby certify that a certain mortgage made and executed by <strong>John Jacob Doe</strong> (the "Mortgagor") on <strong>January 1, 2010</strong>, is fully <strong>PAID, SATISFIED, AND DISCHARGED</strong>.</p>
 <div style="background: #f9f9f9; padding: 15px; border: 1px solid #eee; margin: 20px 0; font-family: monospace; font-size: 0.9em;">
       Property: 123 Maple St, Anytown, USA<br>
       Recording Info: Liber 9988, Page 776<br>

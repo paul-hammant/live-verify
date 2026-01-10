@@ -22,7 +22,7 @@ A **Calibration Certificate** is proof that a measuring device or tool is accura
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 1px solid #000; background: #fff; padding: 40px; box-shadow: 2px 2px 10px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
-    <div style="font-weight: bold; font-size: 1.2em;">NATIONAL METROLOGY SERVICES, LLC</div>
+    <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="cal-long">[</span>NATIONAL METROLOGY SERVICES, LLC</div>
     <div style="font-size: 0.8em;">Accredited to ISO/IEC 17025:2017</div>
   </div>
 <div style="font-size: 0.9em; line-height: 1.4;">
@@ -32,7 +32,7 @@ A **Calibration Certificate** is proof that a measuring device or tool is accura
       Description: Analytical Balance<br>
       Manufacturer: Mettler Toledo<br>
       Model: XPR205<br>
-      Serial Number: <span verifiable-text="start" data-for="cal-long">[</span>MT-9988776655
+      Serial Number: MT-9988776655
     </div>
 <div style="display: flex; justify-content: space-between;">
       <div>

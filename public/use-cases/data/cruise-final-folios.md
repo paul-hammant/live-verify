@@ -19,7 +19,7 @@ Fraud happens when employees edit their folio to hide personal spending or to in
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #1a237e; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;">ROYAL CARIBBEAN INTERNATIONAL</div>
+      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="cruise">[</span>ROYAL CARIBBEAN INTERNATIONAL</div>
       <div style="font-size: 0.8em;">Final Guest Folio - <em>Wonder of the Seas</em></div>
     </div>
     <div style="text-align: right;">
@@ -29,7 +29,7 @@ Fraud happens when employees edit their folio to hide personal spending or to in
 <div style="padding: 25px;">
     <div style="display: flex; justify-content: space-between; font-size: 0.9em; margin-bottom: 20px; color: #555;">
       <div>
-        <strong>Guest:</strong> <span verifiable-text="start" data-for="cruise">[</span>SARAH J. DOE<br>
+        <strong>Guest:</strong> SARAH J. DOE<br>
         <strong>Stateroom:</strong> 12504 (Deck 12)
       </div>
       <div style="text-align: right;">

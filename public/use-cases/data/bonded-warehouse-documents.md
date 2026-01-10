@@ -10,12 +10,12 @@ furtherDerivations: 1
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', monospace; border: 2px solid #000; background: #fff; padding: 20px; box-shadow: 2px 2px 5px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
-    <strong>GLOBAL LOGISTICS BONDED HUB</strong><br>
+    <strong><span verifiable-text="start" data-for="bonded">[</span>GLOBAL LOGISTICS BONDED HUB</strong><br>
     U.S. CUSTOMS CLASS 3 WAREHOUSE (#998877)<br>
     -------------------------------------------
   </div>
 <div style="font-size: 0.9em; line-height: 1.4;">
-    <p><strong>Importer of Record:</strong> <span verifiable-text="start" data-for="bonded">[</span>Swiss Watch Imports, Inc.<br>
+    <p><strong>Importer of Record:</strong> Swiss Watch Imports, Inc.<br>
     <strong>Customs Entry #:</strong> 110-9988776-5<br>
     <strong>Warehouse Receipt:</strong> WR-2026-402</p>
 <p><strong>Cargo Description:</strong><br>

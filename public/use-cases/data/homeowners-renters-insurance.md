@@ -22,7 +22,7 @@ Fraud happens when owners "edit" the PDF to show a higher limit to satisfy a ban
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #007bff; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="background: #007bff; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;">STATE FARM 🔴</div>
+      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="ho-dec">[</span>STATE FARM 🔴</div>
       <div style="font-size: 0.8em; opacity: 0.9;">Homeowners Policy Declarations</div>
     </div>
     <div style="text-align: right;">
@@ -33,7 +33,7 @@ Fraud happens when owners "edit" the PDF to show a higher limit to satisfy a ban
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px;">
       <div>
         <strong>Insured:</strong><br>
-        <span verifiable-text="start" data-for="ho-dec">[</span><strong>JANE A. DOE</strong><br>
+        <strong>JANE A. DOE</strong><br>
         123 Maple Street<br>
         Anytown, USA 12345
       </div>
@@ -153,7 +153,7 @@ Fraud is common: dishonest contractors sometimes "edit" the PDF to add $5,000 in
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="background: #d32f2f; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;">ALLSTATE INSURANCE</div>
+      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="prop-claim">[</span>ALLSTATE INSURANCE</div>
       <div style="font-size: 0.8em;">Property Claims Services</div>
     </div>
     <div style="text-align: right;">
@@ -163,7 +163,7 @@ Fraud is common: dishonest contractors sometimes "edit" the PDF to add $5,000 in
 <div style="padding: 25px;">
     <h3 style="margin-top: 0; color: #d32f2f; border-bottom: 2px solid #d32f2f; padding-bottom: 5px;">REPAIR ESTIMATE & PROOF OF LOSS</h3>
 <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Insured:</strong> <span verifiable-text="start" data-for="prop-claim">[</span>SARAH J. DOE<br>
+      <p><strong>Insured:</strong> SARAH J. DOE<br>
       <strong>Property:</strong> 123 Maple St, Anytown, USA</p>
 <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
         <tr style="background: #f5f5f5; border-bottom: 1px solid #d32f2f;">
@@ -274,7 +274,7 @@ Because these papers are required for every mortgage, "Ghost Policy" fraud is a 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Helvetica', Arial, sans-serif; border: 2px solid #003366; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="background: #003366; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;">LIBERTY MUTUAL</div>
+      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="ho-pol">[</span>LIBERTY MUTUAL</div>
       <div style="font-size: 0.8em; opacity: 0.9;">Home & Tenant Protection Policy</div>
     </div>
     <div style="text-align: right;">
@@ -284,7 +284,7 @@ Because these papers are required for every mortgage, "Ghost Policy" fraud is a 
 <div style="padding: 25px;">
     <h2 style="text-align: center; color: #003366; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Insurance Declarations</h2>
 <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Named Insured:</strong> <span verifiable-text="start" data-for="ho-pol">[</span>Sarah Jane Smith<br>
+      <p><strong>Named Insured:</strong> Sarah Jane Smith<br>
       <strong>Location:</strong> 4500 Skyline Blvd, Unit 12A, Austin, TX</p>
 <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
         <tr style="background: #f0f4f8; border-bottom: 2px solid #003366;">

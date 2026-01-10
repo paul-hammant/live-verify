@@ -17,7 +17,7 @@ These documents are the primary target for **Trade Finance Fraud**. Scammers use
 <div style="max-width: 700px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 1px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="background: #ef6c00; color: #fff; padding: 15px; display: flex; justify-content: space-between; align-items: flex-end;">
     <div>
-      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;">MSC MEDITERRANEAN SHIPPING</div>
+      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;"><span verifiable-text="start" data-for="trade">[</span>MSC MEDITERRANEAN SHIPPING</div>
       <div style="font-size: 0.7em; opacity: 0.8; text-transform: uppercase;">Avenue Eugène-Pittard 40, Geneva</div>
     </div>
     <div style="text-align: right;">
@@ -33,7 +33,7 @@ These documents are the primary target for **Trade Finance Fraud**. Scammers use
     </div>
     <div style="padding: 10px; font-size: 0.75em; line-height: 1.3;">
       <strong style="text-transform: uppercase; color: #666;">B/L Number:</strong><br>
-      <div style="font-size: 1.2em; font-weight: bold;"><span verifiable-text="start" data-for="trade">[</span>MSC-9922887766</div>
+      <div style="font-size: 1.2em; font-weight: bold;">MSC-9922887766</div>
     </div>
   </div>
 <div style="padding: 10px; border-bottom: 1px solid #000; font-size: 0.75em; line-height: 1.3; background: #fffbe6;">
@@ -144,13 +144,13 @@ These papers are the primary tools for **Tariff Evasion**. Fraud is high-stakes:
 
 <div style="max-width: 650px; margin: 24px auto; font-family: 'Times New Roman', Times, serif; border: 1px solid #333; background: #fff; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.4em; color: #003366; letter-spacing: 1px;">LONDON CHAMBER OF COMMERCE</div>
+    <div style="font-weight: bold; font-size: 1.4em; color: #003366; letter-spacing: 1px;"><span verifiable-text="start" data-for="origin">[</span>LONDON CHAMBER OF COMMERCE</div>
     <div style="font-size: 0.85em; text-transform: uppercase;">Official Certificate of Origin</div>
   </div>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 25px;">
       <div>
-        <strong>Exporter:</strong> <span verifiable-text="start" data-for="origin">[</span>BRITISH PRECISION LTD.<br>
+        <strong>Exporter:</strong> BRITISH PRECISION LTD.<br>
         123 Thames Way, London, UK
       </div>
       <div style="text-align: right;">
@@ -259,12 +259,12 @@ This document is the primary engine for **Trade-Based Money Laundering (TBML)** 
 <div style="max-width: 700px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 1px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="padding: 25px; border-bottom: 2px solid #000; background: #f9f9f9; display: flex; justify-content: space-between; align-items: flex-start;">
     <div>
-      <div style="font-weight: bold; font-size: 1.4em;">GLOBAL TEXTILES EXPORT LTD.</div>
+      <div style="font-weight: bold; font-size: 1.4em;"><span verifiable-text="start" data-for="invoice">[</span>GLOBAL TEXTILES EXPORT LTD.</div>
       <div style="font-size: 0.8em; color: #666;">VAT ID: AE-99228877 • Dubai, UAE</div>
     </div>
     <div style="text-align: right;">
       <h2 style="margin: 0; font-size: 1.2em; letter-spacing: 1px;">COMMERCIAL INVOICE</h2>
-      <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;"># <span verifiable-text="start" data-for="invoice">[</span>INV-2026-8844</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin-top: 5px;"># INV-2026-8844</div>
     </div>
   </div>
 <div style="padding: 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.85em; line-height: 1.4; border-bottom: 1px solid #eee;">

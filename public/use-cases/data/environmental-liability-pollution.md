@@ -19,7 +19,7 @@ Fraud is high-stakes here: sellers often edit the "Retroactive Date" on their po
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Helvetica', sans-serif; border: 2px solid #2e7d32; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="background: #2e7d32; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;">ACE AMERICAN INSURANCE CO.</div>
+      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="pollution">[</span>ACE AMERICAN INSURANCE CO.</div>
       <div style="font-size: 0.8em; opacity: 0.8;">Pollution Legal Liability&reg;</div>
     </div>
     <div style="text-align: right;">
@@ -29,7 +29,7 @@ Fraud is high-stakes here: sellers often edit the "Retroactive Date" on their po
 <div style="padding: 30px;">
     <h2 style="text-align: center; color: #2e7d32; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">Insurance Declarations</h2>
 <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>First Named Insured:</strong> <span verifiable-text="start" data-for="pollution">[</span>Industrial Reclamation Group, LLC</p>
+      <p><strong>First Named Insured:</strong> Industrial Reclamation Group, LLC</p>
       <p><strong>Covered Location:</strong> 4500 Industrial Way, Newark, NJ (Former Lead Smelter)</p>
 <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
         <tr style="background: #f1f8e9; border-bottom: 2px solid #2e7d32;">

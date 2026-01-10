@@ -25,11 +25,11 @@ Unlike NAV statements, verification here confirms **existence and status**, not 
 
 <div style="max-width: 550px; margin: 24px auto; font-family: sans-serif; border: 1px solid #666; background: #fff; padding: 0;">
   <div style="background: #4a4a4a; color: #fff; padding: 15px;">
-    <div style="font-weight: bold;">GREYSTAR PROPERTY MANAGEMENT</div>
+    <div style="font-weight: bold;"><span verifiable-text="start" data-for="depositsheldbythirdp">[</span>GREYSTAR PROPERTY MANAGEMENT</div>
     <div style="font-size: 0.8em;">Security Deposit Acknowledgment</div>
   </div>
   <div style="padding: 20px; font-size: 0.9em; line-height: 1.6;">
-    <p><strong>Tenant:</strong> <span verifiable-text="start" data-for="depositsheldbythirdp">[</span>Maria Santos<br>
+    <p><strong>Tenant:</strong> Maria Santos<br>
     <strong>Property:</strong> 2847 Riverside Dr, Apt 4B, Chicago IL<br>
     <strong>Deposit Amount:</strong> $2,400.00<br>
     <strong>Date Received:</strong> March 1, 2025<br>

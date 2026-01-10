@@ -18,13 +18,13 @@ In high-stakes trials, lawyers sometimes "Edit" the expert's findings in the fin
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
   <div style="text-align: right; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.2em;">ROUX FORENSIC ENGINEERING</div>
+    <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="expert">[</span>ROUX FORENSIC ENGINEERING</div>
     <div style="font-size: 0.8em; color: #666;">Structural Failures • Accident Reconstruction</div>
   </div>
 <h3 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px;">Rule 26 Expert Report</h3>
 <div style="font-size: 1em; line-height: 1.6; color: #000; text-align: justify;">
     <p><strong>Case:</strong> <em>Acme v. Globochem</em> (Case #: 26-CIV-9922)<br>
-    <strong>Subject:</strong> <span verifiable-text="start" data-for="expert">[</span>Structural Analysis of SkyTower Crane Collapse</p>
+    <strong>Subject:</strong> Structural Analysis of SkyTower Crane Collapse</p>
 <p>I, Dr. David Miller, PE, have been retained by Counsel for the Plaintiff to provide an independent engineering opinion. Based on my review of the metallurgical data and the site photos, it is my professional opinion that the weld failure in the primary jib was the proximate cause of the collapse.</p>
 <p><strong>Total Estimated Damages:</strong> $ 12,500,000.00</p>
   </div>

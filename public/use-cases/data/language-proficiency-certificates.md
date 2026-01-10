@@ -11,7 +11,7 @@ furtherDerivations: 1
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #004a99; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #004a99; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;">ETS - TOEFL iBT&reg;</div>
+      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="lang-test">[</span>ETS - TOEFL iBT&reg;</div>
       <div style="font-size: 0.8em; opacity: 0.8;">Test-Taker Score Report</div>
     </div>
     <div style="width: 50px; height: 50px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #004a99; font-weight: bold; font-size: 0.8em;">TOEFL</div>
@@ -19,7 +19,7 @@ furtherDerivations: 1
 <div style="padding: 30px;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 25px;">
       <div>
-        <div style="font-size: 1.1em; font-weight: bold; color: #333;"><span verifiable-text="start" data-for="lang-test">[</span><strong>DOE, JOHN JACOB</strong></div>
+        <div style="font-size: 1.1em; font-weight: bold; color: #333;"><strong>DOE, JOHN JACOB</strong></div>
         <div style="font-size: 0.9em; color: #666;">Registration ID: 0000 0000 9922 8877</div>
       </div>
       <div style="text-align: right;">

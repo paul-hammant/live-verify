@@ -17,12 +17,12 @@ These documents are high-stakes because they are used as proof of "Intent to Tra
 <div style="max-width: 650px; margin: 24px auto; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; border: 1px solid #999; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="background: #002366; color: #fff; padding: 30px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.6em; letter-spacing: 1px;">ELITE TRAVEL PARTNERS</div>
+      <div style="font-weight: bold; font-size: 1.6em; letter-spacing: 1px;"><span verifiable-text="start" data-for="travel">[</span>ELITE TRAVEL PARTNERS</div>
       <div style="font-size: 0.8em; opacity: 0.8; text-transform: uppercase;">Virtuoso&reg; Member • IATA #992288</div>
     </div>
     <div style="text-align: right;">
       <h2 style="margin: 0; font-size: 1.2em;">INVOICE</h2>
-      <div style="font-size: 0.9em; font-weight: bold; margin-top: 5px;"># <span verifiable-text="start" data-for="travel">[</span>ETP-2026-8844</div>
+      <div style="font-size: 0.9em; font-weight: bold; margin-top: 5px;"># ETP-2026-8844</div>
     </div>
   </div>
 <div style="padding: 25px; border-bottom: 1px solid #eee; font-size: 0.9em; line-height: 1.5;">

@@ -17,7 +17,7 @@ Because these statements determine the distribution of millions of dollars, they
 <div style="max-width: 650px; margin: 24px auto; font-family: 'Times New Roman', Times, serif; border: 1px solid #666; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="padding: 30px; border-bottom: 2px solid #000; display: flex; justify-content: space-between; align-items: flex-end;">
     <div>
-      <div style="font-weight: bold; font-size: 1.4em; text-transform: uppercase; letter-spacing: 1px;">Penguin Random House</div>
+      <div style="font-weight: bold; font-size: 1.4em; text-transform: uppercase; letter-spacing: 1px;"><span verifiable-text="start" data-for="royalty">[</span>Penguin Random House</div>
       <div style="font-size: 0.8em; color: #555;">Global Royalty & Accounting Office</div>
     </div>
     <div style="text-align: right;">
@@ -28,7 +28,7 @@ Because these statements determine the distribution of millions of dollars, they
 <div style="padding: 25px; border-bottom: 1px solid #eee;">
     <div style="display: grid; grid-template-columns: 1fr 1fr; font-size: 0.9em; line-height: 1.5;">
       <div>
-        <strong>Author:</strong> <span verifiable-text="start" data-for="royalty">[</span>KILGORE TROUT<br>
+        <strong>Author:</strong> KILGORE TROUT<br>
         <strong>Project ID:</strong> 99228877-KT<br>
         <strong>Title:</strong> <em>Venus on the Half-Shell</em>
       </div>

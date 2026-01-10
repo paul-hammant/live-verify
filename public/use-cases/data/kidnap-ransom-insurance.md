@@ -11,7 +11,7 @@ furtherDerivations: 1
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Helvetica', Arial, sans-serif; border: 2px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
   <div style="background: #1a1a1a; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;">HISCOX CRISIS MANAGEMENT</div>
+      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="knr">[</span>HISCOX CRISIS MANAGEMENT</div>
       <div style="font-size: 0.8em; opacity: 0.8;">Specialist K&R Underwriters</div>
     </div>
     <div style="text-align: right;">
@@ -23,7 +23,7 @@ furtherDerivations: 1
 <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
       <p>This document confirms that the following entity has active Crisis Management and Extortion insurance:</p>
 <div style="background: #fdfdfd; border: 1px solid #ddd; padding: 15px; margin: 15px 0; border-radius: 4px;">
-        <p><strong>Insured:</strong> <span verifiable-text="start" data-for="knr">[</span>Waystar Royco Global, Corp.<br>
+        <p><strong>Insured:</strong> Waystar Royco Global, Corp.<br>
         <strong>Covered Class:</strong> Directors, Officers, and Key Executives</p>
 <strong>Aggregate Ransom Limit:</strong> $ 10,000,000.00<br>
         <strong>Response Team:</strong> Control Risks Group (CRG)

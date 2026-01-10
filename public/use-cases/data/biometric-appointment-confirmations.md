@@ -18,7 +18,7 @@ Fraudsters often create fake notices to get into secure government facilities or
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0;">
   <div style="background: #f4f4f4; padding: 15px; border-bottom: 1px solid #ccc; display: flex; align-items: center;">
-    <div style="width: 40px; height: 40px; background: #999; border-radius: 50%; margin-right: 15px; display: flex; align-items: center; justify-content: center; font-size: 0.7em; color: #fff;">USCIS</div>
+    <div style="width: 40px; height: 40px; background: #999; border-radius: 50%; margin-right: 15px; display: flex; align-items: center; justify-content: center; font-size: 0.7em; color: #fff;"><span verifiable-text="start" data-for="bio">[</span>USCIS</div>
     <div>
       <div style="font-weight: bold; font-size: 1.1em;">Department of Homeland Security</div>
       <div style="font-size: 0.8em;">U.S. Citizenship and Immigration Services</div>
@@ -31,7 +31,7 @@ Fraudsters often create fake notices to get into secure government facilities or
     </div>
 <h2 style="text-align: center; font-size: 1.2em; margin-bottom: 20px; text-transform: uppercase;">ASC APPOINTMENT NOTICE</h2>
 <div style="font-size: 0.95em; line-height: 1.5; color: #333;">
-      <p><strong>Applicant:</strong> <span verifiable-text="start" data-for="bio">[</span>SARAH JANE SMITH</p>
+      <p><strong>Applicant:</strong> SARAH JANE SMITH</p>
 <div style="background: #f9f9f9; border: 1px solid #eee; padding: 15px; margin: 15px 0;">
         <p><strong>Date of Appointment:</strong> March 15, 2026<br>
         <strong>Time of Appointment:</strong> 10:00 AM</p>

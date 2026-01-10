@@ -19,7 +19,7 @@ Fraud is high-stakes here: sellers or dishonest agents sometimes "Delete" the sc
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #2c3e50; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;">PREMIER HOME INSPECTIONS, LLC</div>
+      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="inspect">[</span>PREMIER HOME INSPECTIONS, LLC</div>
       <div style="font-size: 0.8em;">ASHI Certified Inspector #992288</div>
     </div>
     <div style="text-align: right;">
@@ -29,7 +29,7 @@ Fraud is high-stakes here: sellers or dishonest agents sometimes "Delete" the sc
 <div style="padding: 25px;">
     <h3 style="margin-top: 0; color: #2c3e50; border-bottom: 2px solid #2c3e50; padding-bottom: 5px;">PROPERTY CONDITION SUMMARY</h3>
 <div style="font-size: 0.9em; line-height: 1.5; color: #333;">
-      <p><strong>Property:</strong> <span verifiable-text="start" data-for="inspect">[</span>123 Desert Lane, Phoenix, AZ 85001<br>
+      <p><strong>Property:</strong> 123 Desert Lane, Phoenix, AZ 85001<br>
       <strong>Client:</strong> Sarah Jane Smith</p>
 <div style="background: #fdfdfd; border: 1px solid #eee; padding: 15px; margin: 15px 0; border-radius: 4px;">
         <strong>MAJOR FINDINGS:</strong><br>

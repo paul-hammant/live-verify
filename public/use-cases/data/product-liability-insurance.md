@@ -17,12 +17,12 @@ These documents are the "Proof of Solvency" for the supply chain. Large retailer
 <div style="max-width: 650px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="background: #333; color: #fff; padding: 25px; display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid #d32f2f;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;">CHUBB SPECIALTY</div>
+      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="liab">[</span>CHUBB SPECIALTY</div>
       <div style="font-size: 0.8em; opacity: 0.8; text-transform: uppercase;">Commercial General & Product Liability</div>
     </div>
     <div style="text-align: right;">
       <div style="font-weight: bold; font-size: 0.9em;">POLICY SUMMARY</div>
-      <div style="font-size: 0.7em;">Ref: <span verifiable-text="start" data-for="liab">[</span>PL-99228877</div>
+      <div style="font-size: 0.7em;">Ref: PL-99228877</div>
     </div>
   </div>
 <div style="padding: 25px;">

@@ -18,7 +18,7 @@ The problem is that "Pest Control" is a high-trust, high-risk profession. Crimin
   <div style="background: #004d40; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
     <div style="font-size: 1.8em; margin-right: 15px;">🛡️</div>
     <div style="text-align: right;">
-      <div style="font-weight: bold; font-size: 1em; letter-spacing: 1px;">STATE DEPT OF AGRICULTURE</div>
+      <div style="font-weight: bold; font-size: 1em; letter-spacing: 1px;"><span verifiable-text="start" data-for="pest">[</span>STATE DEPT OF AGRICULTURE</div>
       <div style="font-size: 0.75em; font-weight: bold; opacity: 0.9;">PEST CONTROL BOARD</div>
     </div>
   </div>
@@ -28,7 +28,7 @@ The problem is that "Pest Control" is a high-trust, high-risk profession. Crimin
     </div>
     <div style="flex-grow: 1;">
       <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Licensee Name</div>
-      <div style="font-size: 1.2em; font-weight: bold; margin: 0 0 10px 0; color: #004d40;"><span verifiable-text="start" data-for="pest">[</span>ROBERT J. MILLER</div>
+      <div style="font-size: 1.2em; font-weight: bold; margin: 0 0 10px 0; color: #004d40;">ROBERT J. MILLER</div>
 <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">License #</div>
       <div style="font-size: 1em; font-weight: bold; margin: 0 0 10px 0;">ID: PCO-992288-TX</div>
 <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Employer</div>

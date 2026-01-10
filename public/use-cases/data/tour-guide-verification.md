@@ -16,7 +16,7 @@ The problem is that "Tour Guide" is a low-barrier profession. Anyone can buy a g
 
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #0072b2; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
   <div style="background: #0072b2; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
-    <div style="font-weight: bold; font-size: 1.1em; letter-spacing: 1px;">OFFICIAL TOUR GUIDE</div>
+    <div style="font-weight: bold; font-size: 1.1em; letter-spacing: 1px;"><span verifiable-text="start" data-for="guide">[</span>OFFICIAL TOUR GUIDE</div>
     <div style="font-size: 1.5em;">🏛️</div>
   </div>
 <div style="padding: 20px; display: flex; background: linear-gradient(to bottom, #fff, #f0f7ff);">
@@ -25,7 +25,7 @@ The problem is that "Tour Guide" is a low-barrier profession. Anyone can buy a g
     </div>
     <div style="flex-grow: 1;">
       <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Guide Name</div>
-      <div style="font-size: 1.2em; font-weight: bold; margin: 0 0 10px 0; color: #003366;"><span verifiable-text="start" data-for="guide">[</span>MARCO R. SILVA</div>
+      <div style="font-size: 1.2em; font-weight: bold; margin: 0 0 10px 0; color: #003366;">MARCO R. SILVA</div>
 <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">License #</div>
       <div style="font-size: 1em; font-weight: bold; margin: 0 0 10px 0;">ID: PT-992288</div>
 <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Languages</div>

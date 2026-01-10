@@ -18,7 +18,7 @@ OCR-to-hash allows a homeowner to scan the worker's ID badge to verify: **"Is th
 
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #0066cc; border-radius: 10px; background: #fff; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
   <div style="background: #0066cc; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
-    <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 1px;">CONSOLIDATED EDISON</div>
+    <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 1px;"><span verifiable-text="start" data-for="utility">[</span>CONSOLIDATED EDISON</div>
     <div style="font-size: 0.7em; text-align: right; opacity: 0.9;">AUTHORIZED<br>FIELD SERVICE</div>
   </div>
 <div style="padding: 20px; display: flex; border-bottom: 1px solid #eee;">
@@ -27,7 +27,7 @@ OCR-to-hash allows a homeowner to scan the worker's ID badge to verify: **"Is th
     </div>
     <div style="flex-grow: 1;">
       <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Employee Name</div>
-      <div style="font-size: 1.1em; font-weight: bold; margin: 0 0 10px 0; color: #333;"><span verifiable-text="start" data-for="utility">[</span>DAVID R. CHEN</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin: 0 0 10px 0; color: #333;">DAVID R. CHEN</div>
 <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Employee ID</div>
       <div style="font-size: 1em; font-weight: bold; margin: 0 0 10px 0;">ID: NY-992288</div>
 <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Specialization</div>
@@ -112,7 +112,7 @@ _[Content merged from: meter-reader-surveyor-verification]_
   <div style="background: #004a99; color: #fff; padding: 15px; text-align: center; display: flex; align-items: center; justify-content: center;">
     <div style="font-size: 1.5em; margin-right: 10px;">⚡</div>
     <div>
-      <h3 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">CON-EDISON</h3>
+      <h3 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;"><span verifiable-text="start" data-for="meter">[</span>CON-EDISON</h3>
       <div style="font-size: 0.8em; opacity: 0.8;">OFFICIAL UTILITY SERVICE</div>
     </div>
   </div>
@@ -122,7 +122,7 @@ _[Content merged from: meter-reader-surveyor-verification]_
     </div>
     <div style="flex-grow: 1;">
       <h4 style="margin: 0; color: #004a99;">FIELD TECHNICIAN</h4>
-      <div style="font-size: 1.3em; font-weight: bold; margin: 5px 0;"><span verifiable-text="start" data-for="meter">[</span>Marcus M 1847</div>
+      <div style="font-size: 1.3em; font-weight: bold; margin: 5px 0;">Marcus M 1847</div>
       <div style="font-size: 0.9em; color: #333; line-height: 1.4;">
         <strong>Unit:</strong> Smart-Meter Install<br>
         <strong>Status:</strong> ON-DUTY

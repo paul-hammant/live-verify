@@ -17,12 +17,12 @@ These documents are the "Proof of Protection." Fraud is high-stakes: a developer
 <div style="max-width: 650px; margin: 24px auto; font-family: 'Times New Roman', Times, serif; border: 2px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="background: #003366; color: #fff; padding: 30px; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid #000;">
     <div>
-      <div style="font-weight: bold; font-size: 1.5em; letter-spacing: 1px;">ZURICH SPECIALTY</div>
+      <div style="font-weight: bold; font-size: 1.5em; letter-spacing: 1px;"><span verifiable-text="start" data-for="pri">[</span>ZURICH SPECIALTY</div>
       <div style="font-size: 0.8em; opacity: 0.9; text-transform: uppercase;">Political Risk & Structured Credit Unit</div>
     </div>
     <div style="text-align: right;">
       <div style="font-weight: bold; font-size: 1.1em;">POLICY SUMMARY</div>
-      <div style="font-size: 0.7em;">Ref: <span verifiable-text="start" data-for="pri">[</span>PRI-2026-992288</div>
+      <div style="font-size: 0.7em;">Ref: PRI-2026-992288</div>
     </div>
   </div>
 <div style="padding: 25px;">

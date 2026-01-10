@@ -11,7 +11,7 @@ furtherDerivations: 1
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #0d47a1; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;">RADIOLOGY PARTNERS, N.A.</div>
+      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="imaging">[</span>RADIOLOGY PARTNERS, N.A.</div>
       <div style="font-size: 0.8em; opacity: 0.8;">Diagnostic Imaging Center of Excellence</div>
     </div>
     <div style="text-align: right;">
@@ -21,7 +21,7 @@ furtherDerivations: 1
 <div style="padding: 25px;">
     <div style="border-bottom: 2px solid #0d47a1; padding-bottom: 10px; margin-bottom: 20px;">
       <h3 style="margin: 0; color: #333;">MRI BRAIN W/O CONTRAST</h3>
-      <div style="font-size: 0.9em; color: #666;">Patient: <span verifiable-text="start" data-for="imaging">[</span><strong>WAYNE, BRUCE</strong> (DOB: 02/19/1972)</div>
+      <div style="font-size: 0.9em; color: #666;">Patient: <strong>WAYNE, BRUCE</strong> (DOB: 02/19/1972)</div>
     </div>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
       <p><strong>Clinical Indication:</strong> Persistent headache, post-trauma evaluation.</p>

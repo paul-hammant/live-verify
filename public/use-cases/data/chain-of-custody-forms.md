@@ -18,12 +18,12 @@ If there is a gap in the log (a "Broken Chain"), the evidence might be thrown ou
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 2px solid #555; background: #fdfdfd; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px dashed #555; padding-bottom: 10px; margin-bottom: 20px;">
-    <strong>EVIDENCE TRANSFER RECORD</strong><br>
+    <strong><span verifiable-text="start" data-for="custody">[</span>EVIDENCE TRANSFER RECORD</strong><br>
     STATE FORENSIC LABORATORY
   </div>
 <div style="font-size: 0.85em; line-height: 1.6;">
     <p><strong>Case Number:</strong> CR-2025-84921<br>
-    <strong>Item ID:</strong> <span verifiable-text="start" data-for="custody">[</span>EV-004 (Blood Sample)<br>
+    <strong>Item ID:</strong> EV-004 (Blood Sample)<br>
     <strong>Seal Number:</strong> 99482-A</p>
 <div style="background: #eee; padding: 10px; margin: 10px 0; border: 1px solid #999;">
       <strong>TRANSFER #3</strong><br>

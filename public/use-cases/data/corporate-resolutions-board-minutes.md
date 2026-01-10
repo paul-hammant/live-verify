@@ -18,14 +18,14 @@ This is an official document—usually a **Secretary's Certificate**—where the
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
   <div style="text-align: center; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.2em;">SECRETARY'S CERTIFICATE OF RESOLUTION</div>
+    <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="corp">[</span>SECRETARY'S CERTIFICATE OF RESOLUTION</div>
     <div style="font-size: 0.9em; margin-top: 5px;">OF THE BOARD OF DIRECTORS OF</div>
     <div style="font-weight: bold; font-size: 1.1em; margin-top: 5px;">WAYSTAR ROYCO CORP.</div>
   </div>
 <div style="font-size: 1em; line-height: 1.6; color: #333; text-align: justify;">
     <p>I, the undersigned, Secretary of Waystar Royco Corp. (the "Corporation"), hereby certify that the following is a true and correct copy of a resolution adopted by the Board of Directors on <strong>March 15, 2026</strong>:</p>
 <div style="background: #fdfdfd; border-left: 4px solid #000; padding: 15px; margin: 20px 0;">
-      <p style="margin-top: 0;"><strong><span verifiable-text="start" data-for="corp">[</span>RESOLVED:</strong> That the Corporation is authorized to open a commercial credit facility with JPMorgan Chase Bank, N.A. in the amount of <strong>$500,000,000.00</strong> and that the CEO is authorized to execute all loan documents.</p>
+      <p style="margin-top: 0;"><strong>RESOLVED:</strong> That the Corporation is authorized to open a commercial credit facility with JPMorgan Chase Bank, N.A. in the amount of <strong>$500,000,000.00</strong> and that the CEO is authorized to execute all loan documents.</p>
     </div>
 <p>I further certify that the said resolution has not been amended or rescinded and is in full force and effect as of the date hereof.</p>
   </div>

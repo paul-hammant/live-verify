@@ -18,12 +18,12 @@ If a company is in financial trouble, they might "Edit" this report to hide a fu
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #333; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="text-align: right; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.2em;">MILLIMAN ACTUARIAL CONSULTING</div>
+    <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="erisa">[</span>MILLIMAN ACTUARIAL CONSULTING</div>
     <div style="font-size: 0.85em; color: #666;">Certified ERISA Audit Group</div>
   </div>
 <h3 style="text-align: center; text-transform: uppercase; letter-spacing: 1px; color: #000; border-bottom: 2px solid #000; padding-bottom: 10px;">ERISA Compliance Audit Report</h3>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333; margin-top: 20px;">
-    <p><strong>Plan Sponsor:</strong> <span verifiable-text="start" data-for="erisa">[</span>Initech Employees' 401(k) Plan<br>
+    <p><strong>Plan Sponsor:</strong> Initech Employees' 401(k) Plan<br>
     <strong>Plan Year Ending:</strong> December 31, 2025</p>
 <div style="background: #fdfdfd; padding: 15px; border: 1px solid #eee; margin: 20px 0;">
       <p><strong>Compliance Result:</strong> <span style="color: #2e7d32; font-weight: bold;">UNQUALIFIED OPINION</span></p>

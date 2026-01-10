@@ -22,7 +22,7 @@ Police officers at a traffic stop need to verify these permits in seconds. If a 
   <div style="background: #1a237e; color: #fff; padding: 15px; text-align: center; display: flex; align-items: center; justify-content: center;">
     <div style="font-size: 1.5em; margin-right: 10px;">⭐</div>
     <div>
-      <h3 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">STATE OF NEVADA</h3>
+      <h3 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;"><span verifiable-text="start" data-for="ccw">[</span>STATE OF NEVADA</h3>
       <div style="font-size: 0.8em;">CONCEALED FIREARMS PERMIT</div>
     </div>
   </div>
@@ -31,7 +31,7 @@ Police officers at a traffic stop need to verify these permits in seconds. If a 
       <div style="width: 100px; height: 125px; background: #eee; display: flex; align-items: center; justify-content: center; color: #777; border: 1px solid #ccc; border-radius: 4px;">[PHOTO ID]</div>
     </div>
     <div style="flex-grow: 1;">
-      <div style="font-size: 1.1em; font-weight: bold; margin: 0 0 5px 0;"><span verifiable-text="start" data-for="ccw">[</span>DOE, JOHN JACOB</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin: 0 0 5px 0;">DOE, JOHN JACOB</div>
       <div style="font-size: 0.85em; color: #333; line-height: 1.4;">
         <strong>Permit #:</strong> NV-99228877<br>
         <strong>DOB:</strong> 05/15/1985<br>

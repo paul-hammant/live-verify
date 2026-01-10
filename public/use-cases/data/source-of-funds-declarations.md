@@ -19,11 +19,11 @@ This is core AML (anti-money laundering) compliance. If you can't explain where 
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #2e5090; background: #fff; padding: 0;">
   <div style="background: #2e5090; color: #fff; padding: 15px;">
-    <div style="font-weight: bold; font-size: 1.1em;">SOURCE OF FUNDS DECLARATION</div>
+    <div style="font-weight: bold; font-size: 1.1em;"><span verifiable-text="start" data-for="sourceoffundsdeclara">[</span>SOURCE OF FUNDS DECLARATION</div>
     <div style="font-size: 0.8em;">Anti-Money Laundering Compliance</div>
   </div>
   <div style="padding: 20px; font-size: 0.9em; line-height: 1.6;">
-    <p><strong>Client:</strong> <span verifiable-text="start" data-for="sourceoffundsdeclara">[</span>Richard Thornton<br>
+    <p><strong>Client:</strong> Richard Thornton<br>
     <strong>Account/Transaction:</strong> Initial Investment - £500,000<br>
     <strong>Declaration Date:</strong> February 1, 2026</p>
 <div style="background: #f0f4f8; padding: 15px; margin: 15px 0; border-left: 3px solid #2e5090;">

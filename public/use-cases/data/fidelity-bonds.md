@@ -19,7 +19,7 @@ Companies that provide in-home services (like cleaning or IT repair) use these b
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #1a237e; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="background: #1a237e; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;">TRAVELERS CASUALTY & SURETY</div>
+      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="fidelity">[</span>TRAVELERS CASUALTY & SURETY</div>
       <div style="font-size: 0.8em; opacity: 0.8;">Commercial Crime & Fidelity Bond</div>
     </div>
     <div style="text-align: right;">
@@ -31,7 +31,7 @@ Companies that provide in-home services (like cleaning or IT repair) use these b
 <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
       <p>This certifies that the following entity is bonded against acts of Employee Dishonesty:</p>
 <p style="background: #f5f5f5; padding: 10px; border-left: 4px solid #1a237e;">
-        <strong>Principal:</strong> <span verifiable-text="start" data-for="fidelity">[</span>Initech Financial Services, LLC<br>
+        <strong>Principal:</strong> Initech Financial Services, LLC<br>
         <strong>Bond Amount:</strong> $ 1,000,000.00<br>
         <strong>Covered Class:</strong> All Employees (Blanket Bond)
       </p>

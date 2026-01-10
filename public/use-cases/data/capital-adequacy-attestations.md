@@ -16,13 +16,13 @@ These documents are the "Proof of Solvency" needed for high-stakes business. Cou
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #003366; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
   <div style="background: #003366; color: #fff; padding: 20px; text-align: center;">
-    <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 1px;">CAPITAL ADEQUACY ATTESTATION</div>
+    <div style="font-weight: bold; font-size: 1.2em; letter-spacing: 1px;"><span verifiable-text="start" data-for="capital">[</span>CAPITAL ADEQUACY ATTESTATION</div>
     <div style="font-size: 0.8em; opacity: 0.8; text-transform: uppercase; margin-top: 5px;">Prudential Regulatory Confirmation</div>
   </div>
 <div style="padding: 30px; font-size: 0.95em; line-height: 1.6; color: #333;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 10px;">
       <div>
-        <strong>Firm:</strong> <span verifiable-text="start" data-for="capital">[</span>MERIDIAN CAPITAL PARTNERS<br>
+        <strong>Firm:</strong> MERIDIAN CAPITAL PARTNERS<br>
         <strong>FRN:</strong> 123456 (FCA Authorized)
       </div>
       <div style="text-align: right;">

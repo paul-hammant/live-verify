@@ -11,7 +11,7 @@ furtherDerivations: 1
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #1a1a1a; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;">PROJECT MANAGEMENT INSTITUTE</div>
+      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="ind-cert">[</span>PROJECT MANAGEMENT INSTITUTE</div>
       <div style="font-size: 0.8em; opacity: 0.8;">PMP&reg; Project Management Professional</div>
     </div>
     <div style="width: 50px; height: 50px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-weight: bold; font-size: 0.8em;">PMI</div>
@@ -19,7 +19,7 @@ furtherDerivations: 1
 <div style="padding: 40px; text-align: center;">
     <div style="font-size: 1.1em; color: #666; margin-bottom: 10px;">This is to certify that</div>
     <div style="font-size: 2em; font-weight: bold; color: #1a1a1a; margin-bottom: 20px;">
-      <span verifiable-text="start" data-for="ind-cert">[</span>SARAH JANE SMITH
+      SARAH JANE SMITH
     </div>
     <div style="font-size: 1.1em; color: #666; margin-bottom: 25px;">has fulfilled the requirements for the designation of</div>
     <div style="font-size: 1.5em; font-weight: bold; color: #d32f2f; letter-spacing: 1px; margin-bottom: 30px;">PROJECT MANAGEMENT PROFESSIONAL</div>

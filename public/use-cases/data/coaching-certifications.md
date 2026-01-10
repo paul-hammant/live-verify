@@ -21,7 +21,7 @@ Parents and clubs use these badges to ensure that the adult on the sideline is a
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 5px solid #004a99; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #004a99; color: #fff; padding: 20px; text-align: center;">
-    <h2 style="margin: 0; letter-spacing: 1px;">U.S. SOCCER FEDERATION</h2>
+    <h2 style="margin: 0; letter-spacing: 1px;"><span verifiable-text="start" data-for="coach">[</span>U.S. SOCCER FEDERATION</h2>
     <div style="font-size: 0.9em; opacity: 0.8;">OFFICIAL COACHING LICENSE</div>
   </div>
 <div style="padding: 30px; display: flex;">
@@ -30,7 +30,7 @@ Parents and clubs use these badges to ensure that the adult on the sideline is a
     </div>
     <div style="flex-grow: 1;">
       <h3 style="margin: 0; color: #004a99;">NATIONAL "C" LICENSE</h3>
-      <div style="font-size: 1.2em; font-weight: bold; margin: 10px 0;"><span verifiable-text="start" data-for="coach">[</span>TED LASSO</div>
+      <div style="font-size: 1.2em; font-weight: bold; margin: 10px 0;">TED LASSO</div>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
         <strong>License #:</strong> 992288-USSF<br>
         <strong>Status:</strong> ACTIVE / ELIGIBLE<br>

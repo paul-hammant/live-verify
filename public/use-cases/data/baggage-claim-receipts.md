@@ -18,12 +18,12 @@ Because these receipts are easy to forge with a basic printer, "baggage fraud" i
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', monospace; border: 1px solid #999; background: #fff; padding: 20px; box-shadow: 2px 2px 5px rgba(0,0,0,0.1);">
   <div style="text-align: center; margin-bottom: 15px; border-bottom: 1px solid #000; padding-bottom: 10px;">
-    <strong>AIR FRANCE - BAGGAGE SERVICES</strong><br>
+    <strong><span verifiable-text="start" data-for="bag">[</span>AIR FRANCE - BAGGAGE SERVICES</strong><br>
     PROPERTY IRREGULARITY REPORT (PIR)<br>
     -----------------------------------
   </div>
 <div style="font-size: 0.9em; line-height: 1.4;">
-    <p><strong>Ref:</strong> <span verifiable-text="start" data-for="bag">[</span>CDG-AF-998877<br>
+    <p><strong>Ref:</strong> CDG-AF-998877<br>
     <strong>Passenger:</strong> AMELIE POULAIN<br>
     <strong>Flight:</strong> AF1234 / 15MAR26</p>
 <p><strong>Item Description:</strong><br>

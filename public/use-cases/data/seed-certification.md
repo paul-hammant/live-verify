@@ -16,14 +16,14 @@ These tags are the "Intellectual Property" of the seed world. Fraud is common in
 
 <div style="max-width: 450px; margin: 24px auto; font-family: sans-serif; border: 2px solid #004a99; border-radius: 4px; background: #fff; padding: 0; box-shadow: 0 2px 8px rgba(0,0,0,0.1); overflow: hidden;">
   <div style="background: #004a99; color: #fff; padding: 15px; text-align: center; border-bottom: 2px solid #000;">
-    <div style="font-weight: bold; font-size: 1.1em; letter-spacing: 1px;">OFFICIAL CERTIFIED SEED</div>
+    <div style="font-weight: bold; font-size: 1.1em; letter-spacing: 1px;"><span verifiable-text="start" data-for="seed">[</span>OFFICIAL CERTIFIED SEED</div>
     <div style="font-size: 0.7em; opacity: 0.9; text-transform: uppercase;">Member: Assoc. of Official Seed Certifying Agencies</div>
   </div>
 <div style="padding: 20px; background: #e3f2fd;">
     <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px;">
       <div style="font-size: 0.9em; line-height: 1.4;">
         <strong>Crop:</strong> Winter Wheat<br>
-        <strong>Variety:</strong> <span verifiable-text="start" data-for="seed">[</span>GOLDEN-HARVEST 42<br>
+        <strong>Variety:</strong> GOLDEN-HARVEST 42<br>
         <strong>Lot #:</strong> 9922-8877-XJ
       </div>
       <div style="text-align: right; font-size: 0.8em; color: #004a99;">

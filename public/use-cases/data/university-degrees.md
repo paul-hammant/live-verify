@@ -18,11 +18,11 @@ Beyond the diploma on the wall, the **Academic Transcript** is the granular reco
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Old English Text MT', serif; border: 10px solid #d4af37; padding: 50px; text-align: center; background: #fff; box-shadow: 0 4px 20px rgba(0,0,0,0.1); position: relative;">
   <div style="margin-bottom: 40px;">
-    <h1 style="margin: 0; font-size: 2.2em; color: #000;">University of Cambridge</h1>
+    <h1 style="margin: 0; font-size: 2.2em; color: #000;"><span verifiable-text="start" data-for="degree">[</span>University of Cambridge</h1>
     <div style="font-family: 'Times New Roman'; font-size: 1.1em; margin-top: 10px;">The Chancellor, Masters, and Scholars of the University</div>
   </div>
 <p style="font-family: 'Times New Roman'; font-size: 1.3em; font-style: italic;">This is to certify that</p>
-<h2 style="font-family: 'Arial'; margin: 25px 0; font-size: 1.8em;"><span verifiable-text="start" data-for="degree">[</span>SARAH JANE CONNOR</h2>
+<h2 style="font-family: 'Arial'; margin: 25px 0; font-size: 1.8em;">SARAH JANE CONNOR</h2>
 <p style="font-family: 'Times New Roman'; font-size: 1.3em;">having satisfied the Examiners in the required course of study was on the 15th day of July, 2026 admitted to the degree of</p>
 <h3 style="margin: 30px 0; font-size: 1.6em; color: #003366;">Master of Science in Artificial Intelligence</h3>
 <p style="font-family: 'Arial'; font-weight: bold; font-size: 1.1em;">CLASS I (DISTINCTION)</p>

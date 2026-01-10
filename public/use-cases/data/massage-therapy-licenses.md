@@ -12,7 +12,7 @@ furtherDerivations: 1
   <div style="background: #002d62; color: #fff; padding: 15px; text-align: center; display: flex; align-items: center; justify-content: center;">
     <div style="font-size: 1.5em; margin-right: 10px;">👐</div>
     <div>
-      <h3 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">STATE OF FLORIDA</h3>
+      <h3 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;"><span verifiable-text="start" data-for="massage">[</span>STATE OF FLORIDA</h3>
       <div style="font-size: 0.8em; opacity: 0.8;">BOARD OF MASSAGE THERAPY</div>
     </div>
   </div>
@@ -22,7 +22,7 @@ furtherDerivations: 1
     </div>
     <div style="flex-grow: 1;">
       <h4 style="margin: 0; color: #002d62;">LICENSED MASSAGE THERAPIST</h4>
-      <div style="font-size: 1.1em; font-weight: bold; margin: 5px 0;"><span verifiable-text="start" data-for="massage">[</span>SARAH J. DOE</div>
+      <div style="font-size: 1.1em; font-weight: bold; margin: 5px 0;">SARAH J. DOE</div>
       <div style="font-size: 0.9em; color: #333; line-height: 1.4;">
         <strong>License #:</strong> MA-992288<br>
         <strong>Status:</strong> ACTIVE / CLEAR<br>

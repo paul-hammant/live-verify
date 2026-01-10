@@ -16,12 +16,12 @@ In the world of **Estate Law**, these logs are "The Smoking Gun." If a box holde
 
 <div style="max-width: 500px; margin: 24px auto; font-family: 'Times New Roman', Times, serif; border: 2px solid #000; background: #fffbe6; padding: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 1px solid #000; padding-bottom: 15px; margin-bottom: 20px;">
-    <div style="font-weight: bold; font-size: 1.3em; text-transform: uppercase;">GOLIATH NATIONAL BANK</div>
+    <div style="font-weight: bold; font-size: 1.3em; text-transform: uppercase;"><span verifiable-text="start" data-for="vault">[</span>GOLIATH NATIONAL BANK</div>
     <div style="font-size: 0.9em; letter-spacing: 1px;">SAFE DEPOSIT VAULT ACCESS RECORD</div>
   </div>
 <div style="font-size: 0.9em; line-height: 1.6;">
     <p><strong>Branch:</strong> 42ND STREET MAIN VAULT<br>
-    <strong>Box Number:</strong> <span verifiable-text="start" data-for="vault">[</span>SD-992288-Z</p>
+    <strong>Box Number:</strong> SD-992288-Z</p>
 <table style="width: 100%; border-collapse: collapse; margin: 20px 0; border: 1px solid #000;">
       <tr style="background: #eee; border-bottom: 1px solid #000;">
         <th style="text-align: left; padding: 10px; border-right: 1px solid #000;">Access Date/Time</th>

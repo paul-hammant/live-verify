@@ -10,11 +10,11 @@ furtherDerivations: 1
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 1px solid #444; background: #fff; padding: 30px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
-    <div style="font-weight: bold; font-size: 1.2em;">QUANTUM ANALYTICS LABS</div>
+    <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="sci-cal">[</span>QUANTUM ANALYTICS LABS</div>
     <div style="font-size: 0.8em;">Metrology & Calibration Services</div>
   </div>
 <div style="font-size: 0.9em; line-height: 1.4; color: #333;">
-    <p><strong>Instrument:</strong> <span verifiable-text="start" data-for="sci-cal">[</span>Mass Spectrometer (Agilent 6470B)<br>
+    <p><strong>Instrument:</strong> Mass Spectrometer (Agilent 6470B)<br>
     <strong>Serial #:</strong> AG-99228877-X<br>
     <strong>Asset ID:</strong> QL-402</p>
 <div style="background: #f5f5f5; border: 1px solid #ccc; padding: 15px; margin: 15px 0;">

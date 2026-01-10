@@ -35,11 +35,11 @@ Property access rights verification provides **on-demand proof** that a person h
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #003366; background: #fff; padding: 0;">
   <div style="background: #003366; color: #fff; padding: 15px;">
-    <div style="font-weight: bold; font-size: 1.1em;">OFFICIAL COPY OF REGISTER OF TITLE</div>
+    <div style="font-weight: bold; font-size: 1.1em;"><span verifiable-text="start" data-for="propertyaccessrights">[</span>OFFICIAL COPY OF REGISTER OF TITLE</div>
     <div style="font-size: 0.8em;">HM Land Registry</div>
   </div>
   <div style="padding: 20px; font-size: 0.9em; line-height: 1.6;">
-    <p><strong>Title Number:</strong> <span verifiable-text="start" data-for="propertyaccessrights">[</span>BS123456<br>
+    <p><strong>Title Number:</strong> BS123456<br>
     <strong>Edition Date:</strong> 15 March 2022<br>
     <strong>This copy issued:</strong> 15 February 2026</p>
 <div style="background: #f0f4f8; padding: 15px; margin: 15px 0; border-left: 3px solid #003366;">

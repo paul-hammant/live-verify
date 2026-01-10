@@ -19,7 +19,7 @@ Rental agents often try to force you to buy their expensive $30/day insurance by
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; border-radius: 12px; background: linear-gradient(135deg, #1a1a1a 0%, #4a4a4a 100%); color: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.3); overflow: hidden;">
   <div style="padding: 25px; display: flex; justify-content: space-between; align-items: flex-start;">
     <div>
-      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;">CHASE SAPPHIRE PREFERRED</div>
+      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;"><span verifiable-text="start" data-for="card">[</span>CHASE SAPPHIRE PREFERRED</div>
       <div style="font-size: 0.8em; opacity: 0.8; margin-top: 5px;">VISA SIGNATURE®</div>
     </div>
     <div style="font-size: 1.2em;">💳</div>
@@ -27,7 +27,7 @@ Rental agents often try to force you to buy their expensive $30/day insurance by
 <div style="background: rgba(255,255,255,0.1); padding: 25px;">
     <h3 style="margin: 0 0 15px 0; color: #fff; font-size: 1.1em; text-transform: uppercase;">Benefit Confirmation: Auto Rental CDW</h3>
 <div style="font-size: 0.9em; line-height: 1.6; color: #eee;">
-      <p>This document confirms that <span verifiable-text="start" data-for="card">[</span><strong>JOHN JACOB DOE</strong> (Account ...1234) is eligible for Primary Collision Damage Waiver (CDW) coverage when the rental is charged to this account.</p>
+      <p>This document confirms that <strong>JOHN JACOB DOE</strong> (Account ...1234) is eligible for Primary Collision Damage Waiver (CDW) coverage when the rental is charged to this account.</p>
 <p><strong>Maximum Coverage:</strong> Actual Cash Value of most vehicles.<br>
       <strong>Region:</strong> Worldwide (including Ireland, Israel, Jamaica).<br>
       <strong>Benefit Status:</strong> ACTIVE</p>

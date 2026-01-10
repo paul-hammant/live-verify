@@ -18,7 +18,7 @@ This is a critical security frontier. Fraudsters or partisan actors might attemp
   <div style="background: #b71c1c; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
     <div style="font-size: 1.8em; margin-right: 15px;">🗳️</div>
     <div style="text-align: right;">
-      <div style="font-weight: bold; font-size: 1.1em; letter-spacing: 1px;">BOARD OF ELECTIONS</div>
+      <div style="font-weight: bold; font-size: 1.1em; letter-spacing: 1px;"><span verifiable-text="start" data-for="poll">[</span>BOARD OF ELECTIONS</div>
       <div style="font-size: 0.75em; font-weight: bold; opacity: 0.9;">COUNTY OF SPRINGFIELD</div>
     </div>
   </div>
@@ -28,7 +28,7 @@ This is a critical security frontier. Fraudsters or partisan actors might attemp
     </div>
     <div style="flex-grow: 1;">
       <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Official Name</div>
-      <div style="font-size: 1.2em; font-weight: bold; margin: 0 0 10px 0; color: #b71c1c;"><span verifiable-text="start" data-for="poll">[</span>SARAH JANE SMITH</div>
+      <div style="font-size: 1.2em; font-weight: bold; margin: 0 0 10px 0; color: #b71c1c;">SARAH JANE SMITH</div>
 <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Assignment</div>
       <div style="font-size: 1em; font-weight: bold; margin: 0 0 10px 0;">Precinct #42 (Ward 7)</div>
 <div style="font-size: 0.75em; color: #777; text-transform: uppercase;">Role</div>

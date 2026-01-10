@@ -18,14 +18,14 @@ Because these cards are required for legal entry, scammers often sell "Fake Gree
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Helvetica', Arial, sans-serif; border: 2px solid #388e3c; background: #e8f5e9; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #388e3c; color: #fff; padding: 15px; text-align: center;">
-    <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;">INTERNATIONAL MOTOR INSURANCE CARD</h2>
+    <h2 style="margin: 0; text-transform: uppercase; letter-spacing: 1px;"><span verifiable-text="start" data-for="green-card">[</span>INTERNATIONAL MOTOR INSURANCE CARD</h2>
     <div style="font-size: 0.8em; font-weight: bold;">CARTE INTERNATIONALE D'ASSURANCE AUTOMOBILE</div>
   </div>
 <div style="padding: 25px; color: #1b5e20;">
     <div style="display: flex; justify-content: space-between; font-size: 0.9em; margin-bottom: 20px;">
       <div>
         <strong>1. Valid:</strong> From 15/03/2026 To 14/04/2026<br>
-        <strong>2. Country Code:</strong> <span verifiable-text="start" data-for="green-card">[</span>UK / 992288
+        <strong>2. Country Code:</strong> UK / 992288
       </div>
       <div style="text-align: right;">
         <strong>3. Registration No:</strong><br>

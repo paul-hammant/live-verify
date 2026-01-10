@@ -19,8 +19,8 @@ Fraud is high-stakes in the digital economy. Scammers create "Phantom Registrati
   <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 20em; color: #f0f0f0; z-index: 0; opacity: 0.5;">®</div>
 <div style="position: relative; z-index: 1;">
     <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 20px; margin-bottom: 30px;">
-      <div style="font-weight: bold; font-size: 1.4em; text-transform: uppercase; letter-spacing: 2px;">United States Patent and Trademark Office</div>
-      <div style="font-size: 0.9em; margin-top: 5px;">Reg. No. <span verifiable-text="start" data-for="tm">[</span>9,922,887</div>
+      <div style="font-weight: bold; font-size: 1.4em; text-transform: uppercase; letter-spacing: 2px;"><span verifiable-text="start" data-for="tm">[</span>United States Patent and Trademark Office</div>
+      <div style="font-size: 0.9em; margin-top: 5px;">Reg. No. 9,922,887</div>
     </div>
 <div style="text-align: center; margin-bottom: 40px;">
       <div style="font-size: 3em; font-weight: bold; color: #000; letter-spacing: -1px; text-transform: uppercase;">ACME-TECH</div>

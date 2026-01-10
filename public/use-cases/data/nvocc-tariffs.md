@@ -17,12 +17,12 @@ The problem is that freight rates are volatile. To win business, some NVOCCs "ed
 <div style="max-width: 650px; margin: 24px auto; font-family: 'Arial Narrow', sans-serif; border: 1px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #333; color: #fff; padding: 15px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.3em;">GLOBAL FREIGHT LOGISTICS</div>
+      <div style="font-weight: bold; font-size: 1.3em;"><span verifiable-text="start" data-for="tariff">[</span>GLOBAL FREIGHT LOGISTICS</div>
       <div style="font-size: 0.75em; opacity: 0.8;">FMC OTI License: #0992288N • Public Tariff #042</div>
     </div>
     <div style="text-align: right;">
       <div style="font-weight: bold; font-size: 1em;">RATE FILING</div>
-      <div style="font-size: 0.7em;">Ref: <span verifiable-text="start" data-for="tariff">[</span>GFL-SHA-LAX-2026</div>
+      <div style="font-size: 0.7em;">Ref: GFL-SHA-LAX-2026</div>
     </div>
   </div>
 <div style="padding: 25px;">

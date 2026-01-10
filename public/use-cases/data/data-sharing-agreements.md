@@ -18,11 +18,11 @@ Ethics violations are common: researchers sometimes use data for a different pur
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
   <div style="text-align: center; margin-bottom: 30px; border-bottom: 2px solid #000; padding-bottom: 10px;">
-    <div style="font-weight: bold; font-size: 1.2em;">DATA SHARING & USE AGREEMENT</div>
+    <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="dsa">[</span>DATA SHARING & USE AGREEMENT</div>
     <div style="font-size: 0.9em; margin-top: 5px;">OXFORD UNIVERSITY - RESEARCH SERVICES</div>
   </div>
 <div style="font-size: 1em; line-height: 1.6; color: #333; text-align: justify;">
-    <p>This Agreement governs the transfer of Data from the <strong>Provider:</strong> Oxford University to the <strong>Recipient:</strong> <span verifiable-text="start" data-for="dsa">[</span>Stanford Medical Research Center.</p>
+    <p>This Agreement governs the transfer of Data from the <strong>Provider:</strong> Oxford University to the <strong>Recipient:</strong> Stanford Medical Research Center.</p>
 <p><strong>Dataset ID:</strong> OX-BIO-2026-992 (Genomic Sequences)<br>
     <strong>Authorized Use:</strong> Cancer Research Initiative only.<br>
     <strong>Restrictions:</strong> No re-identification; No third-party transfer.</p>

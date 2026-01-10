@@ -21,12 +21,12 @@ The most critical document in this process is **Letters Testamentary** (or Lette
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 1px solid #333; background: #fff; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="text-align: center; margin-bottom: 30px;">
-    <div style="font-size: 1.3em; font-weight: bold; text-transform: uppercase;">Superior Court of California</div>
+    <div style="font-size: 1.3em; font-weight: bold; text-transform: uppercase;"><span verifiable-text="start" data-for="probate">[</span>Superior Court of California</div>
     <div style="font-size: 0.9em; letter-spacing: 1px;">COUNTY OF LOS ANGELES</div>
   </div>
 <h2 style="text-align: center; font-size: 1.4em; text-decoration: underline; margin-bottom: 25px;">LETTERS TESTAMENTARY</h2>
 <div style="font-size: 1em; line-height: 1.6; color: #000; text-align: justify;">
-    <p>The Will of <span verifiable-text="start" data-for="probate">[</span><strong>JOHN JACOB DOE</strong>, Deceased, having been admitted to probate in Case No. <strong>26PR992288</strong>, the Court hereby appoints:</p>
+    <p>The Will of <strong>JOHN JACOB DOE</strong>, Deceased, having been admitted to probate in Case No. <strong>26PR992288</strong>, the Court hereby appoints:</p>
 <div style="margin: 20px auto; width: 80%; border: 2px solid #000; padding: 15px; text-align: center; background: #f9f9f9;">
       <strong>MARY ALICE JACOB</strong><br>
       as Executor of the Estate.

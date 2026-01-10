@@ -18,12 +18,12 @@ Because these shares aren't traded on the stock market (like Apple or Tesla), th
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 4px double #1a237e; background: #fff; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); position: relative;">
   <div style="text-align: center; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 2px;">CERTIFICATE OF STOCK</div>
+    <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 2px;"><span verifiable-text="start" data-for="equity">[</span>CERTIFICATE OF STOCK</div>
     <div style="font-size: 0.9em; margin-top: 5px;">INCORPORATED UNDER THE LAWS OF DELAWARE</div>
   </div>
 <div style="font-size: 1em; line-height: 1.6; color: #333; text-align: center;">
     <p>This certifies that</p>
-    <p style="font-size: 1.5em; font-weight: bold; color: #1a237e; margin: 15px 0;"><span verifiable-text="start" data-for="equity">[</span>SARAH J. SMITH</p>
+    <p style="font-size: 1.5em; font-weight: bold; color: #1a237e; margin: 15px 0;">SARAH J. SMITH</p>
     <p>is the registered holder of</p>
     <p style="font-size: 1.2em; font-weight: bold;">1,000 SHARES OF COMMON STOCK</p>
     <p>of</p>

@@ -23,13 +23,13 @@ OCR-to-Hash allows a simple wallet card to link to a detailed, verified medical 
   <div style="background: #d32f2f; color: #fff; padding: 15px; text-align: center; display: flex; align-items: center; justify-content: center;">
     <div style="font-size: 2em; margin-right: 10px;">⚠</div>
     <div>
-      <h3 style="margin: 0;">MEDICAL ALERT</h3>
+      <h3 style="margin: 0;"><span verifiable-text="start" data-for="alert">[</span>MEDICAL ALERT</h3>
       <div style="font-size: 0.8em;">EMERGENCY INFORMATION</div>
     </div>
   </div>
 <div style="padding: 20px;">
     <div style="font-size: 0.95em; line-height: 1.5; color: #333;">
-      <p><strong>Name:</strong> <span verifiable-text="start" data-for="alert">[</span>TIMOTHY DRAKE<br>
+      <p><strong>Name:</strong> TIMOTHY DRAKE<br>
       <strong>DOB:</strong> 07/19/2018</p>
 <div style="background: #ffebee; border: 1px solid #ffcdd2; padding: 10px; border-radius: 4px; margin: 15px 0;">
         <strong style="color: #d32f2f;">SEVERE ALLERGIES:</strong>

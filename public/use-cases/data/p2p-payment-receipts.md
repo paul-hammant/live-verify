@@ -16,9 +16,9 @@ Because these apps move money instantly, they are the #1 target for **"Screensho
 
 <div style="max-width: 400px; margin: 24px auto; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; border: 1px solid #eee; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="background: #008CFF; color: #fff; padding: 25px; text-align: center;">
-    <div style="font-size: 1.1em; font-weight: bold;">Payment Sent</div>
+    <div style="font-size: 1.1em; font-weight: bold;"><span verifiable-text="start" data-for="p2p">[</span>Payment Sent</div>
     <div style="font-size: 3em; font-weight: bold; margin: 10px 0;">$ 450.00</div>
-    <div style="font-size: 0.9em; opacity: 0.9;">to <span verifiable-text="start" data-for="p2p">[</span>Sarah Jane Smith</div>
+    <div style="font-size: 0.9em; opacity: 0.9;">to Sarah Jane Smith</div>
   </div>
 <div style="padding: 25px; text-align: center;">
     <div style="font-size: 1.1em; color: #333; margin-bottom: 5px;"><strong>@Sarah-Smith-42</strong></div>

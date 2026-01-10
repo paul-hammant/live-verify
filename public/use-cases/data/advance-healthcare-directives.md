@@ -20,12 +20,12 @@ Doctors in the ER need to see this *immediately* to know whether to resuscitate.
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Arial', sans-serif; border: 2px solid #000; background: #fff; padding: 30px;">
   <div style="text-align: center; border-bottom: 2px solid #000; margin-bottom: 20px;">
-    <h2 style="margin: 0;">ADVANCE HEALTH CARE DIRECTIVE</h2>
+    <h2 style="margin: 0;"><span verifiable-text="start" data-for="directive">[</span>ADVANCE HEALTH CARE DIRECTIVE</h2>
     <div style="font-size: 0.9em; margin-bottom: 10px;">(California Probate Code §4701)</div>
   </div>
 <div style="font-size: 0.95em; line-height: 1.5; color: #333;">
     <p><strong>1. POWER OF ATTORNEY FOR HEALTH CARE</strong></p>
-    <p>I, <span verifiable-text="start" data-for="directive">[</span><strong>ELEANOR RIGBY</strong> (DOB: 02/14/1950), designate the following individual as my agent to make health care decisions for me:</p>
+    <p>I, <strong>ELEANOR RIGBY</strong> (DOB: 02/14/1950), designate the following individual as my agent to make health care decisions for me:</p>
 <p style="margin-left: 20px;"><strong>Agent:</strong> FATHER MCKENZIE<br>
     <strong>Phone:</strong> (555) 867-5309<br>
     <strong>Authority:</strong> Effective immediately upon my incapacity.</p>

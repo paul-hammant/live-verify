@@ -17,7 +17,7 @@ These documents are the "Resumes" of the sports world. They determine who gets a
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Arial Black', Arial, sans-serif; border: 4px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="background: #d32f2f; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;">NATIONAL SCOUTING BUREAU</div>
+      <div style="font-weight: bold; font-size: 1.4em; letter-spacing: 1px;"><span verifiable-text="start" data-for="scout">[</span>NATIONAL SCOUTING BUREAU</div>
       <div style="font-size: 0.8em; opacity: 0.9;">Official Prospect Evaluation</div>
     </div>
     <div style="text-align: right;">
@@ -30,7 +30,7 @@ These documents are the "Resumes" of the sports world. They determine who gets a
       <div style="width: 100px; height: 120px; background: #eee; border: 1px solid #ccc; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #999; font-size: 0.7em; text-align: center; margin-right: 20px;">[PLAYER PHOTO]</div>
       <div style="flex-grow: 1;">
         <div style="font-size: 0.8em; color: #888; text-transform: uppercase;">Athlete Name</div>
-        <div style="font-size: 1.4em; font-weight: bold; color: #000;"><span verifiable-text="start" data-for="scout">[</span>SARAH "THE JET" SMITH</div>
+        <div style="font-size: 1.4em; font-weight: bold; color: #000;">SARAH "THE JET" SMITH</div>
         <div style="font-size: 0.9em; margin-top: 5px;"><strong>Pos:</strong> Striker (Soccer) • <strong>Class:</strong> 2026</div>
         <div style="font-size: 0.9em;"><strong>Org:</strong> Unseen University Academy</div>
       </div>

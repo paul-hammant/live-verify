@@ -11,12 +11,12 @@ furtherDerivations: 1
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 3px double #1a365d; background: #fffef5; padding: 0;">
   <div style="background: linear-gradient(to bottom, #1a365d, #2c5282); color: #d4af37; padding: 16px 20px; text-align: center;">
-    <div style="font-size: 1.4em; font-weight: bold; letter-spacing: 4px; text-transform: uppercase;">Mesopotamian Patent Office</div>
+    <div style="font-size: 1.4em; font-weight: bold; letter-spacing: 4px; text-transform: uppercase;"><span verifiable-text="start" data-for="patent">[</span>Mesopotamian Patent Office</div>
     <div style="font-size: 0.85em; margin-top: 4px; color: #e2e8f0;">Uruk • Protecting Innovation Since 4500 BC</div>
   </div>
   <div style="padding: 24px 28px; text-align: center;">
     <div style="font-size: 1.1em; color: #666; margin-bottom: 8px;">LETTERS PATENT</div>
-    <h2 style="font-size: 1.5em; margin: 0 0 16px 0; line-height: 1.3; color: #1a365d;"><span verifiable-text="start" data-for="patent">[</span>Mechanism for Facilitating Rotational Ground Transport</h2>
+    <h2 style="font-size: 1.5em; margin: 0 0 16px 0; line-height: 1.3; color: #1a365d;">Mechanism for Facilitating Rotational Ground Transport</h2>
     <div style="font-size: 0.95em; color: #333; margin-bottom: 20px; text-align: left; line-height: 1.6;">
       <strong>Patent No:</strong> MES-4200-0001<br>
       <strong>Inventor:</strong> Gilgamesh of Uruk<br>

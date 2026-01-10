@@ -16,7 +16,7 @@ Fraud is common: "Reference Mills" sell fake employment letters. OCR-to-hash con
 
 <div style="max-width: 550px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 20px;">
   <div style="font-size: 0.85em; color: #555; border-bottom: 1px solid #ddd; padding-bottom: 10px; margin-bottom: 15px;">
-    <strong>From:</strong> john.smith@gmail.com<br>
+    <strong><span verifiable-text="start" data-for="voe">[</span>From:</strong> john.smith@gmail.com<br>
     <strong>To:</strong> miggins@newco.com<br>
     <strong>Subject:</strong> Re: References for Senior Engineer role
   </div>
@@ -25,7 +25,7 @@ Fraud is common: "Reference Mills" sell fake employment letters. OCR-to-hash con
     As requested, here are the references I mentioned:
   </div>
   <div style="font-family: 'Courier New', monospace; background: #f9f9f9; padding: 15px; border: 1px solid #999; font-size: 1em; color: #000; line-height: 1.6;">
-    <span verifiable-text="start" data-for="voe">[</span>Acme Corporation<br>
+    Acme Corporation<br>
     John D. Smith<br>
     Senior Software Engineer<br>
     March 2020 – October 2025<br>
@@ -39,7 +39,7 @@ Fraud is common: "Reference Mills" sell fake employment letters. OCR-to-hash con
 </div>
 
 <div style="max-width: 550px; margin: 24px auto; font-family: 'Times New Roman', serif; border: 1px solid #999; background: #fff; padding: 40px 40px 20px 40px; position: relative;">
-  <h3 style="margin: 0 0 20px 0; font-size: 1.1em; text-transform: uppercase; letter-spacing: 1px;">References</h3>
+  <h3 style="margin: 0 0 20px 0; font-size: 1.1em; text-transform: uppercase; letter-spacing: 1px;"><span verifiable-text="start" data-for="voe2">[</span>References</h3>
   <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <div style="font-family: 'Courier New', monospace; background: #f0f0f0; padding: 12px; border: 1px solid #ccc; font-size: 0.95em; color: #999; line-height: 1.5; margin-bottom: 15px;">
       StartupCo<br>
@@ -56,7 +56,7 @@ Fraud is common: "Reference Mills" sell fake employment letters. OCR-to-hash con
       <span style="color: #bbb;">no verification available</span>
     </div>
     <div style="font-family: 'Courier New', monospace; background: #f9f9f9; padding: 12px; border: 1px solid #999; font-size: 0.95em; color: #000; line-height: 1.5; margin-bottom: 15px;">
-      <span verifiable-text="start" data-for="voe2">[</span>Acme Corporation<br>
+      Acme Corporation<br>
       John D. Smith<br>
       Senior Software Engineer<br>
       March 2020 – October 2025<br>

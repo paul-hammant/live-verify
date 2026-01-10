@@ -19,7 +19,7 @@ Fraudsters often hide "Over-Restoration"—where so much new paint has been adde
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #546e7a; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #546e7a; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;">GETTY CONSERVATION INSTITUTE</div>
+      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="conserve">[</span>GETTY CONSERVATION INSTITUTE</div>
       <div style="font-size: 0.8em;">Science & Analysis Department</div>
     </div>
     <div style="text-align: right;">
@@ -29,7 +29,7 @@ Fraudsters often hide "Over-Restoration"—where so much new paint has been adde
 <div style="padding: 30px;">
     <h3 style="margin-top: 0; color: #546e7a; border-bottom: 2px solid #546e7a; padding-bottom: 5px;">CONSERVATION TREATMENT SUMMARY</h3>
 <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Object:</strong> <span verifiable-text="start" data-for="conserve">[</span>Rembrandt van Rijn, <em>The Night Watch</em> (1642)<br>
+      <p><strong>Object:</strong> Rembrandt van Rijn, <em>The Night Watch</em> (1642)<br>
       <strong>Owner:</strong> Rijksmuseum, Amsterdam</p>
 <div style="background: #fdfdfd; border: 1px solid #eee; padding: 15px; margin: 15px 0;">
         <p><strong>Treatment Performed:</strong> Selective varnish removal and structural consolidation of the lower left quadrant.</p>

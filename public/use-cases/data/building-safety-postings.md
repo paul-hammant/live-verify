@@ -18,12 +18,12 @@ OCR-to-hash allows a tenant, visitor, or fire marshal to scan the posting to ver
 
 <div style="max-width: 500px; margin: 24px auto; font-family: 'Times New Roman', serif; border: 4px solid #000; background: #fff; padding: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); position: relative;">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 15px; margin-bottom: 20px;">
-    <div style="font-weight: bold; font-size: 1.3em; text-transform: uppercase;">Department of Buildings</div>
+    <div style="font-weight: bold; font-size: 1.3em; text-transform: uppercase;"><span verifiable-text="start" data-for="elevator">[</span>Department of Buildings</div>
     <div style="font-size: 1em; letter-spacing: 1px;">ELEVATOR INSPECTION CERTIFICATE</div>
   </div>
 <div style="font-size: 0.9em; line-height: 1.6;">
     <p><strong>Building Address:</strong> 42 SKYSCRAPER PLAZA, NEW YORK, NY<br>
-    <strong>Device ID:</strong> <span verifiable-text="start" data-for="elevator">[</span>ELV-992288-B (Car #2)<br>
+    <strong>Device ID:</strong> ELV-992288-B (Car #2)<br>
     <strong>Capacity:</strong> 3,500 LBS / 22 PERSONS</p>
 <div style="margin: 20px 0; padding: 15px; border: 1px solid #ccc; background: #f9f9f9;">
       <div style="text-align: center; font-weight: bold; text-decoration: underline; margin-bottom: 10px;">CERTIFICATION OF SAFETY</div>

@@ -11,7 +11,7 @@ furtherDerivations: 1
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #002d62; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="background: #002d62; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <div style="font-weight: bold; font-size: 1.2em;">ARCH MORTGAGE INSURANCE</div>
+      <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="mort-ins">[</span>ARCH MORTGAGE INSURANCE</div>
       <div style="font-size: 0.8em; opacity: 0.9;">Certificate of Private Mortgage Insurance</div>
     </div>
     <div style="text-align: right;">
@@ -21,7 +21,7 @@ furtherDerivations: 1
 <div style="padding: 25px;">
     <h2 style="text-align: center; color: #002d62; font-size: 1.4em; margin-bottom: 20px; text-transform: uppercase;">PMI Coverage Confirmation</h2>
 <div style="font-size: 0.9em; line-height: 1.6; color: #333;">
-      <p><strong>Insured Lender:</strong> <span verifiable-text="start" data-for="mort-ins">[</span>Wells Fargo Bank, N.A.<br>
+      <p><strong>Insured Lender:</strong> Wells Fargo Bank, N.A.<br>
       <strong>Borrower:</strong> Sarah Jane Smith</p>
 <div style="background: #f0f4f8; border: 1px solid #d1d9e6; padding: 15px; margin: 15px 0; border-radius: 4px;">
         <p><strong>Loan Amount:</strong> $ 450,000.00<br>

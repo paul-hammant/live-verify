@@ -18,7 +18,7 @@ The **Lending Agreement** (or Promissory Note) is the legal contract that says: 
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 30px;">
-    <div style="font-weight: bold; font-size: 1.2em; color: #002d62;">LENDINGCLUB</div>
+    <div style="font-weight: bold; font-size: 1.2em; color: #002d62;"><span verifiable-text="start" data-for="p2p">[</span>LENDINGCLUB</div>
     <div style="text-align: right; font-size: 0.8em; color: #666;">
       Loan ID: LC-99228877-XK<br>
       March 15, 2026
@@ -26,7 +26,7 @@ The **Lending Agreement** (or Promissory Note) is the legal contract that says: 
   </div>
 <h3 style="text-align: center; text-transform: uppercase; margin-bottom: 25px; letter-spacing: 1px; color: #002d62;">Borrower Promissory Note</h3>
 <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
-    <p>This certifies a valid lending agreement exists for <span verifiable-text="start" data-for="p2p">[</span><strong>Borrower:</strong> John Jacob Doe.</p>
+    <p>This certifies a valid lending agreement exists for <strong>Borrower:</strong> John Jacob Doe.</p>
 <div style="background: #f0f4f8; padding: 15px; border: 1px solid #d1d9e6; margin: 20px 0;">
       <table style="width: 100%; font-size: 0.95em;">
         <tr>

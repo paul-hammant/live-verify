@@ -17,12 +17,12 @@ The problem is that "compliance fatigue" leads to massive fraud. Shady employers
 <div style="max-width: 650px; margin: 24px auto; font-family: 'Georgia', serif; border: 4px solid #1a237e; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="padding: 40px; text-align: center; border: 1px solid #ccc; margin: 10px;">
     <div style="margin-bottom: 25px;">
-      <div style="font-size: 1.6em; font-weight: bold; color: #1a237e; letter-spacing: 1px;">CERTIFICATE OF COMPLETION</div>
+      <div style="font-size: 1.6em; font-weight: bold; color: #1a237e; letter-spacing: 1px;"><span verifiable-text="start" data-for="train">[</span>CERTIFICATE OF COMPLETION</div>
       <div style="font-size: 0.9em; font-style: italic; color: #666;">NATIONAL SAFETY COUNCIL ACADEMY</div>
     </div>
 <div style="margin: 30px 0;">
       <div style="font-size: 1.1em;">This is to certify that</div>
-      <div style="font-size: 1.8em; font-weight: bold; margin: 10px 0; color: #333;"><span verifiable-text="start" data-for="train">[</span>ROBERT J. MILLER</div>
+      <div style="font-size: 1.8em; font-weight: bold; margin: 10px 0; color: #333;">ROBERT J. MILLER</div>
       <div style="font-size: 1.1em;">has successfully completed the prescribed course of study in</div>
       <div style="font-size: 1.4em; font-weight: bold; margin: 15px 0; color: #1a237e;">OSHA HAZARDOUS MATERIALS (HAZMAT) OPERATIONS</div>
     </div>

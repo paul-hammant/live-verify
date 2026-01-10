@@ -10,12 +10,12 @@ furtherDerivations: 1
 
 <div style="max-width: 400px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 1px solid #000; padding-bottom: 10px; margin-bottom: 15px;">
-    <strong>M-PESA SAFARICOM</strong><br>
+    <strong><span verifiable-text="start" data-for="m-pesa">[</span>M-PESA SAFARICOM</strong><br>
     Transaction Confirmation Receipt<br>
     --------------------------------
   </div>
 <div style="font-size: 0.9em; line-height: 1.4;">
-    <p><strong>Transaction ID:</strong> <span verifiable-text="start" data-for="m-pesa">[</span>RKJ42BC992</p>
+    <p><strong>Transaction ID:</strong> RKJ42BC992</p>
     <p><strong>Confirmed:</strong> March 15, 2026 at 14:22:01</p>
 <div style="background: #eee; padding: 10px; margin: 10px 0;">
       <strong>SENT TO:</strong> SAMUEL OKORO<br>

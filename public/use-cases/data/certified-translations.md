@@ -18,12 +18,12 @@ Fraud is common: people often "edit" their translated grades or court records to
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #999; background: #fff; padding: 40px; box-shadow: 0 4px 10 rgba(0,0,0,0.05);">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 25px;">
-    <div style="font-weight: bold; font-size: 1.2em;">LINGUISTIC ACCURACY, INC.</div>
+    <div style="font-weight: bold; font-size: 1.2em;"><span verifiable-text="start" data-for="trans">[</span>LINGUISTIC ACCURACY, INC.</div>
     <div style="font-size: 0.85em; color: #666;">CERTIFIED TRANSLATION SERVICES • ATA MEMBER #998877</div>
   </div>
 <h3 style="text-align: center; text-transform: uppercase; margin-bottom: 20px;">Certificate of Translation</h3>
 <div style="font-size: 1em; line-height: 1.6; color: #000; text-align: justify;">
-    <p>I, <span verifiable-text="start" data-for="trans">[</span><strong>MARIA GARCIA</strong>, hereby certify that I am competent to translate from <strong>SPANISH</strong> into <strong>ENGLISH</strong> and that the attached document titled <em>Acta de Nacimiento (Birth Certificate)</em> is a true and accurate translation of the original.</p>
+    <p>I, <strong>MARIA GARCIA</strong>, hereby certify that I am competent to translate from <strong>SPANISH</strong> into <strong>ENGLISH</strong> and that the attached document titled <em>Acta de Nacimiento (Birth Certificate)</em> is a true and accurate translation of the original.</p>
 <div style="margin: 20px 0; border: 1px solid #eee; padding: 10px; background: #f9f9f9; font-size: 0.9em;">
       <strong>Subject:</strong> Juan Valdez<br>
       <strong>Document ID:</strong> MEX-998877-BC<br>
