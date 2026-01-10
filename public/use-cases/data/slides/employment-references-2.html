@@ -175,8 +175,10 @@
                     <pre>Acme Corporation
 John D. Smith
 Senior Software Engineer
-March 2020 <span class="diff">–</span> October 2025
+March 2020 <span class="diff">&nbsp;&nbsp;–&nbsp;&nbsp;</span> October 2025
+<span class="diff">&nbsp;</span>
 Eligible for Rehire
+<span class="diff">&nbsp;</span>
 verify:acme-corp.com/staff</pre>
                 </div>
                 <div class="text-box after">
@@ -196,8 +198,9 @@ verify:acme-corp.com/staff</pre>
                 <strong>Normalization rules applied:</strong>
                 <ul>
                     <li><strong>Unicode dashes:</strong> En-dash (–) and em-dash (—) → hyphen (-)</li>
-                    <li><strong>Smart quotes:</strong> "curly" → "straight"</li>
-                    <li><strong>Whitespace:</strong> Trim lines, collapse multiple spaces</li>
+                    <li><strong>multiple concurrent spaces:</strong> swapped for just one</li>
+                    <li><strong>Smart quotes:</strong> curly (&#8220; &#8221;)→ straight (")</li>
+                    <li><strong>Whitespace:</strong> Trim whitespace from start and end of lines</li>
                     <li><strong>Empty lines:</strong> Removed</li>
                     <li><strong>Non-breaking spaces:</strong> Converted to regular spaces</li>
                 </ul>

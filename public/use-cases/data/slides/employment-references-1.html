@@ -145,16 +145,16 @@
             <h2>The user highlights the claim region...</h2>
 
             <div class="selection-demo">
-                <span class="selected">Acme Corporation
-John D. Smith
-Senior Software Engineer
-March 2020 – October 2025
-Eligible for Rehire
+                <span class="selected">Acme Corporation<br>
+John D. Smith<br>
+Senior Software Engineer<br>
+March 2020 – October 2025<br><br>
+Eligible for Rehire<br><br>
 verify:acme-corp.com/staff</span><span class="cursor"></span>
             </div>
 
             <div class="explanation">
-                <strong>What's happening:</strong> The user sees a reference in an email or document and selects the text from the company name through the <code>verify:</code> line. The brackets <span class="highlight">[</span> and <span class="highlight">]</span> visually indicate the verifiable region but aren't included in the selection.
+                <strong>What's happening:</strong> The user sees a reference in an email or document and selects the text from the company name through the <code>verify:</code> line. The brackets <span class="highlight">[</span> and <span class="highlight">]</span> visually indicate the verifiable region in our case-studies doc but aren't included in the selection. More importantly the actual implementation in Chrome, Safari, Edge or Firefox might differ in how they communicate the bounds of the verifiable claim - red flashing border might be a choice.
             </div>
 
             <div class="explanation" style="background: #fef3c7; border-color: #f59e0b;">

@@ -16,25 +16,27 @@ Fraud is common: "Reference Mills" sell fake employment letters. OCR-to-hash con
 
 <div style="max-width: 550px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 20px;">
   <div style="font-size: 0.85em; color: #555; border-bottom: 1px solid #ddd; padding-bottom: 10px; margin-bottom: 15px;">
-    <strong><span verifiable-text="start" data-for="voe">[</span>From:</strong> john.smith@gmail.com<br>
+    <strong>From:</strong> john.smith@gmail.com<br>
     <strong>To:</strong> miggins@newco.com<br>
     <strong>Subject:</strong> Re: References for Senior Engineer role
   </div>
   <div style="font-size: 0.95em; color: #333; margin-bottom: 15px;">
     Dear Ms Miggins,<br><br>
-    As requested, here are the references I mentioned:
+    As requested, here is ACME's reference for me:
   </div>
   <div style="font-family: 'Courier New', monospace; background: #f9f9f9; padding: 15px; border: 1px solid #999; font-size: 1em; color: #000; line-height: 1.6;">
+    <span verifiable-text="start" data-for="voe">[</span>
     Acme Corporation<br>
     John D. Smith<br>
     Senior Software Engineer<br>
-    March 2020 – October 2025<br>
-    Eligible for Rehire<br>
+    March 2020 &nbsp;&nbsp;–&nbsp;&nbsp; October 2025<br><br>
+    Eligible for Rehire<br><br>
     <span data-verify-line="voe">verify:acme-corp.com/staff</span> <span verifiable-text="end" data-for="voe">]</span>
   </div>
   <div style="font-size: 0.95em; color: #333; margin-top: 15px;">
     Let me know if you need anything else.<br><br>
-    Best regards
+    Best regards,
+    John
   </div>
 </div>
 

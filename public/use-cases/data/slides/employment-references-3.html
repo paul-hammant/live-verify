@@ -186,21 +186,20 @@
             <h2>SHA-256 creates a cryptographic fingerprint...</h2>
 
             <div class="hash-demo">
-                <div class="input-text">
-Acme Corporation
+                    <pre>Acme Corporation
 John D. Smith
 Senior Software Engineer
 March 2020 - October 2025
 Eligible for Rehire
-verify:acme-corp.com/staff
-                </div>
+</pre>
 
                 <div class="sha-arrow">↓</div>
-                <div class="sha-label">SHA-256</div>
+                <button onclick="doSha256ForReal()" style="padding: 10px 20px; font-size: 14px; background: #22c55e; color: white; border: none; border-radius: 8px; cursor: pointer; margin: 10px 0;">Click to compute hash live</button>
                 <div class="sha-arrow">↓</div>
 
-                <div class="hash-output">
-                    <span class="prefix">0x</span>8a3e4ef468e3b65897e14382205bffe45661cbe62cc9725f182dc1e7135a5381
+                <div class="hash-output" id="hash-output">
+                    <span class="prefix" title="Optional prefix meaning 'hexadecimal'">0x</span><span id="hash-value">????????????????????????????????????????????????????????????????????????</span>
+                    <div style="font-size: 10px; color: #64748b; margin-top: 8px; font-family: sans-serif;">(0x is sometimes shown to indicate hexadecimal or hex notation)</div>
                 </div>
             </div>
 
@@ -232,5 +231,27 @@ verify:acme-corp.com/staff
             <a href="employment-references-4.html" class="next">Next: Verification →</a>
         </nav>
     </div>
+
+    <script>
+        async function sha256(text) {
+            const encoder = new TextEncoder();
+            const data = encoder.encode(text);
+            const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+            const hashArray = Array.from(new Uint8Array(hashBuffer));
+            return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+        }
+
+        async function doSha256ForReal() {
+            const preElement = document.querySelector('.hash-demo pre');
+            const text = preElement.textContent.trim();
+            const hash = await sha256(text);
+            document.getElementById('hash-value').textContent = hash;
+
+            // Animate the button to show it worked
+            const button = document.querySelector('.hash-demo button');
+            button.textContent = '✓ Hash computed!';
+            button.style.background = '#16a34a';
+        }
+    </script>
 </body>
 </html>

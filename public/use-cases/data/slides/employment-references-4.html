@@ -202,7 +202,7 @@
             <div class="request-flow">
                 <div class="endpoint">
                     <div class="icon">💻</div>
-                    <div class="label">Your Browser</div>
+                    <div class="label">Your Browser or Phone App</div>
                 </div>
                 <div class="arrow-flow">
                     <span class="arrow">→</span>
@@ -210,7 +210,7 @@
                 </div>
                 <div class="endpoint">
                     <div class="icon">🏢</div>
-                    <div class="label">acme-corp.com</div>
+                    <div class="label">acme-corp.com/staff/</div>
                 </div>
             </div>
 
@@ -228,7 +228,7 @@
             </div>
 
             <div class="explanation">
-                <strong>Domain-bound trust:</strong> The verification URL in the claim (<code>verify:acme-corp.com/staff</code>) tells the browser exactly which domain to check. The response comes from Acme Corporation's own servers—not a third party. If the hash matches, it proves Acme issued this exact text.
+                <strong>Domain-bound trust:</strong> The verification URL in the claim (<code>verify:acme-corp.com/staff</code>) tells the browser exactly which domain to check. The response comes from Acme Corporation's own servers or a third party vendor they explicitly trust. If the hash matches, it proves Acme issued this exact text and verifies the claim. Well, subject to the detail in the contents returned from the GET (dynamic or static)
             </div>
 
             <div class="trust-chain">
