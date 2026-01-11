@@ -144,26 +144,32 @@
         </div>
 
         <h1>Step 1: Selection</h1>
-        <p class="subtitle">User selects the verifiable claim text</p>
+        <p class="subtitle">Desktop or laptop: User selects the verifiable claim text</p><button change-to-phone-camera-for-printed></button>
 
         <div class="card">
             <h2>The user highlights the claim region...</h2>
 
+            <p style="color: grey">As requested, here is ACME's reference for me:</p>
             <div class="selection-demo">
                 <span class="selected">Acme Corporation<br>
 John D. Smith<br>
 Senior Software Engineer<br>
-March 2020 – October 2025<br><br>
+March 2020 &#8212; October 2025<br><br>
 Eligible for Rehire<br><br>
 verify:acme-corp.com/staff</span><span class="cursor"></span>
             </div>
+            <p style="color: grey">Let me know if you need anything else.</p>
 
             <div class="explanation">
-                <strong>What's happening:</strong> The user sees a reference in an email or document and selects the text from the company name through the <code>verify:</code> line. The brackets we have in these "use case" pages <span class="highlight">[</span> and <span class="highlight">]</span> visually indicate the verifiable region in our are not included in the selection. More importantly the actual implementation in Chrome, Safari, Edge, Firefox, Outlook or Acrobat might differ in how they communicate the bounds of the verifiable claim - red flashing border might be a choice, but there are hundreds of alternates.
+                <strong>What's happening:</strong> The user sees a reference in an email or document and selects the text from the company name through the <code>verify:</code> line. <strong>Importantly</strong>, the user quickly reading the claim and who would want to verify it decides they would like to know if it was verified and whether they would trust the issuer. In this case, is acme-corp.com and authority on who worked there previously. In time this decision becomes quick and second nature to people.
             </div>
 
             <div class="explanation" style="background: #fef3c7; border-color: #f59e0b;">
-                <strong>Notice:</strong> The date contains an en-dash (–) not a regular hyphen (-). This is common in formatted documents. The normalization step will handle this.
+                <strong>Notice:</strong> The brackets we have in these "use case" pages <span class="highlight">[</span> and <span class="highlight">]</span> visually indicate the verifiable region in our are not included in the selection. More importantly the actual implementation in Chrome, Safari, Edge, Firefox, Outlook or Acrobat might differ in how they communicate the bounds of the verifiable claim - red flashing border might be a choice, but there are hundreds of alternates.
+            </div>
+
+            <div class="explanation" style="background: #fef3c7; border-color: #f59e0b;">
+                <strong>Notice:</strong> The date contains an en-dash (&#8212;) not a regular hyphen (-). This is common in formatted documents. The normalization step will handle this.
             </div>
         </div>
 

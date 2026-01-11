@@ -96,18 +96,21 @@
             margin-bottom: 20px;
         }
         .result-icon {
-            font-size: 64px;
-            margin-bottom: 7px;
+            font-size: 28px;
+            margin: 0 8px;
+            vertical-align: middle;
         }
         .result-text {
             font-size: 24px;
             font-weight: bold;
             color: #166534;
-            margin-bottom: 10px;
+            vertical-align: middle;
         }
         .result-domain {
             color: #15803d;
-            font-size: 16px;
+            font-size: 18px;
+            margin-left: 8px;
+            vertical-align: middle;
         }
         .document-overlay {
             position: relative;
@@ -197,9 +200,10 @@
 
         <div class="card">
             <div class="result-display">
-                <div class="result-icon">✓</div>
-                <div class="result-text">Verified</div>
-                <div class="result-domain">Issued by acme-corp.com</div>
+                <span class="result-text">Claim</span>
+                <span class="result-icon">✓</span>
+                <span class="result-text">Verified</span>
+                <span class="result-domain">by acme-corp.com</span>
             </div>
 
             <div class="document-overlay">
@@ -209,7 +213,7 @@ John D. Smith
 Senior Software Engineer
 March 2020 - October 2025
 Eligible for Rehire</span>
-verify:acme-corp.com/staff
+<strong>verify by acme-corp.com</strong>
             </div>
 
             <div class="what-this-means">
