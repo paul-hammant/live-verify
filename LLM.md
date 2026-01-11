@@ -876,6 +876,8 @@ The app verifies:
 2. ✅ URL endpoint exists (HTTP 200)
 3. ✅ Endpoint confirms validity (body contains "OK")
 
+**Verification endpoints NEVER echo claim content.** The verifier already has the document—they just scanned/selected it. The endpoint confirms authenticity (status: OK, REVOKED, EXPIRED, etc.), not content. Echoing back "Driver: MICHAEL CHEN, Vehicle: Tesla Model Y" would be redundant; that's already in the document being verified. Endpoints may offer post-verification actions (save to wallet, report problem, initiate claim) but not content the verifier already possesses.
+
 **Trust assumption:** The domain owner (e.g., `intertek.com`) won't host fake verification endpoints.
 
 **Attack resistance:**
