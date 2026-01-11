@@ -129,6 +129,43 @@
             color: #dc2626;
             font-weight: bold;
         }
+        .mode-toggle {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+        .mode-btn {
+            padding: 8px 16px;
+            border: 2px solid #e2e8f0;
+            background: white;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 13px;
+            transition: all 0.2s;
+        }
+        .mode-btn.active {
+            background: #3b82f6;
+            color: white;
+            border-color: #3b82f6;
+        }
+        .mode-btn:hover:not(.active) {
+            border-color: #3b82f6;
+        }
+        .view-panel {
+            display: none;
+        }
+        .view-panel.active {
+            display: block;
+        }
+        .phone-demo {
+            text-align: center;
+        }
+        .phone-demo img {
+            max-width: 280px;
+            border-radius: 24px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+        }
     </style>
 </head>
 <body>
@@ -144,34 +181,76 @@
         </div>
 
         <h1>Step 1: Selection</h1>
-        <p class="subtitle">Desktop or laptop: User selects the verifiable claim text</p><button change-to-phone-camera-for-printed></button>
+        <p class="subtitle" id="subtitle-text">Desktop/laptop: User selects the verifiable claim text</p>
 
         <div class="card">
-            <h2>The user highlights the claim region...</h2>
+            <div class="mode-toggle">
+                <button class="mode-btn active" onclick="showDesktop()">💻 Laptop or Desktop</button>
+                <button class="mode-btn" onclick="showPhone()">📱 Phone Camera</button>
+            </div>
 
-            <p style="color: grey">As requested, here is ACME's reference for me:</p>
-            <div class="selection-demo">
-                <span class="selected">Acme Corporation<br>
+            <!-- Desktop View -->
+            <div id="desktop-view" class="view-panel active">
+                <h2>The user highlights the claim region...</h2>
+
+                <p style="color: grey">As requested, here is ACME's reference for me:</p>
+                <div class="selection-demo">
+                    <span class="selected">Acme Corporation<br>
 John D. Smith<br>
 Senior Software Engineer<br>
 March 2020 &#8212; October 2025<br><br>
 Eligible for Rehire<br><br>
 verify:acme-corp.com/staff</span><span class="cursor"></span>
-            </div>
-            <p style="color: grey">Let me know if you need anything else.</p>
+                </div>
+                <p style="color: grey">Let me know if you need anything else.</p>
 
-            <div class="explanation">
-                <strong>What's happening:</strong> The user sees a reference in an email or document and selects the text from the company name through the <code>verify:</code> line. <strong>Importantly</strong>, the user quickly reading the claim and who would want to verify it decides they would like to know if it was verified and whether they would trust the issuer. In this case, is acme-corp.com and authority on who worked there previously. In time this decision becomes quick and second nature to people.
+                <div class="explanation">
+                    <strong>What's happening:</strong> The user sees a reference in an email or document and selects the text from the company name through the <code>verify:</code> line. The DOM provides the exact text. Word wrap doesn't matter—the browser knows the actual characters.
+                </div>
+
+                <div class="explanation" style="background: #fef3c7; border-color: #f59e0b;">
+                    <strong>Notice:</strong> The brackets <span class="highlight">[</span> and <span class="highlight">]</span> in our use case pages visually indicate the verifiable region but are not included in the selection. Browser implementations may differ in how they show bounds.
+                </div>
+
+                <div class="explanation" style="background: #fef3c7; border-color: #f59e0b;">
+                    <strong>Notice:</strong> The date contains an em-dash (—) not a hyphen (-). The normalization step handles this.
+                </div>
             </div>
 
-            <div class="explanation" style="background: #fef3c7; border-color: #f59e0b;">
-                <strong>Notice:</strong> The brackets we have in these "use case" pages <span class="highlight">[</span> and <span class="highlight">]</span> visually indicate the verifiable region in our are not included in the selection. More importantly the actual implementation in Chrome, Safari, Edge, Firefox, Outlook or Acrobat might differ in how they communicate the bounds of the verifiable claim - red flashing border might be a choice, but there are hundreds of alternates.
-            </div>
+            <!-- Phone Camera View -->
+            <div id="phone-view" class="view-panel">
+                <h2>User photographs a printed document...</h2>
 
-            <div class="explanation" style="background: #fef3c7; border-color: #f59e0b;">
-                <strong>Notice:</strong> The date contains an en-dash (&#8212;) not a regular hyphen (-). This is common in formatted documents. The normalization step will handle this.
+                <div class="phone-demo">
+                    <img src="employment-references-phone.png" alt="Phone camera capturing printed employment reference">
+                </div>
+
+                <div class="explanation" style="margin-top: 20px;">
+                    <strong>What's happening:</strong> The user points their phone camera at a printed reference letter. OCR extracts the text from the image, including the <code>verify:</code> line. The camera viewfinder may highlight the detected verifiable region.
+                </div>
+
+                <div class="explanation" style="background: #fef3c7; border-color: #f59e0b;">
+                    <strong>Notice:</strong> OCR must handle real-world challenges: lighting, skew, paper texture, and font variations. The normalization step cleans up any OCR artifacts.
+                </div>
             </div>
         </div>
+
+    <script>
+        function showDesktop() {
+            document.getElementById('desktop-view').classList.add('active');
+            document.getElementById('phone-view').classList.remove('active');
+            document.querySelectorAll('.mode-btn')[0].classList.add('active');
+            document.querySelectorAll('.mode-btn')[1].classList.remove('active');
+            document.getElementById('subtitle-text').textContent = 'Desktop/laptop: User selects the verifiable claim text';
+        }
+        function showPhone() {
+            document.getElementById('desktop-view').classList.remove('active');
+            document.getElementById('phone-view').classList.add('active');
+            document.querySelectorAll('.mode-btn')[0].classList.remove('active');
+            document.querySelectorAll('.mode-btn')[1].classList.add('active');
+            document.getElementById('subtitle-text').textContent = 'Phone: User photographs printed document';
+        }
+    </script>
 
     </div>
 </body>
