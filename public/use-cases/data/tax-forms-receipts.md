@@ -42,8 +42,21 @@ Employer EIN, employer name, employee SSN (masked), employee name, tax year, tot
 
 **Document Types:**
 - **W-2 Wage Statement:** The primary employee record.
+- **W-2G Gambling Winnings:** Casino payouts, lottery wins, horse racing.
 - **1099-NEC / 1099-MISC:** For independent contractors and freelancers.
-- **1098 Mortgage Interest Statement:** (Linked hash) for tax deductions.
+- **1099-INT Interest Income:** Bank interest, CD interest, bond interest.
+- **1099-DIV Dividends:** Stock dividends, mutual fund distributions, capital gains distributions.
+- **1099-B Broker Proceeds:** Stock sales, crypto sales, barter exchanges.
+- **1099-R Retirement Distributions:** Pensions, 401(k), IRA withdrawals, annuities.
+- **1099-G Government Payments:** Unemployment compensation, state tax refunds.
+- **1099-S Real Estate Proceeds:** Home sales, land sales, property transfers.
+- **1099-C Cancellation of Debt:** Forgiven debt (taxable income event).
+- **1099-K Payment Networks:** PayPal, Stripe, Venmo, credit card merchant receipts.
+- **1099-SA HSA Distributions:** Health Savings Account withdrawals.
+- **1099-Q Education Distributions:** 529 plan withdrawals, Coverdell ESA.
+- **1098 Mortgage Interest Statement:** For tax deductions.
+- **1098-E Student Loan Interest:** For tax deductions.
+- **1098-T Tuition Statement:** For education credits (AOTC, LLC).
 - **Tax Return Transcript:** The official IRS summary of a filed return.
 
 ## Data Visible After Verification
