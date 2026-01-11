@@ -20,8 +20,33 @@
         .step-indicator {
             display: flex;
             justify-content: center;
+            align-items: center;
             gap: 12px;
             margin-bottom: 30px;
+        }
+        .nav-arrow {
+            padding: 8px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            transition: all 0.2s;
+        }
+        .nav-arrow.prev {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            margin-right: 20px;
+        }
+        .nav-arrow.prev:hover {
+            background: rgba(255,255,255,0.3);
+        }
+        .nav-arrow.next {
+            background: #3b82f6;
+            color: white;
+            margin-left: 20px;
+        }
+        .nav-arrow.next:hover {
+            background: #2563eb;
         }
         .step {
             width: 40px;
@@ -140,43 +165,18 @@
             font-size: 11px;
             color: #64748b;
         }
-        .nav {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 30px;
-        }
-        .nav a {
-            padding: 12px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 500;
-            transition: all 0.2s;
-        }
-        .nav .prev {
-            background: rgba(255,255,255,0.2);
-            color: white;
-        }
-        .nav .prev:hover {
-            background: rgba(255,255,255,0.3);
-        }
-        .nav .next {
-            background: #3b82f6;
-            color: white;
-        }
-        .nav .next:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="step-indicator">
+            <a href="employment-references-2.html" class="nav-arrow prev">←</a>
             <div class="step completed">1</div>
             <div class="step completed">2</div>
             <div class="step active">3</div>
             <div class="step">4</div>
             <div class="step">5</div>
+            <a href="employment-references-4.html" class="nav-arrow next">→</a>
         </div>
 
         <h1>Step 3: Hashing</h1>
@@ -226,10 +226,6 @@ Eligible for Rehire
             </div>
         </div>
 
-        <nav class="nav">
-            <a href="employment-references-2.html" class="prev">← Previous</a>
-            <a href="employment-references-4.html" class="next">Next: Verification →</a>
-        </nav>
     </div>
 
     <script>
