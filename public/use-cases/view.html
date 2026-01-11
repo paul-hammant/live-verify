@@ -169,7 +169,23 @@
             color: #c00 !important;
         }
         [data-verify-line].has-demo {
-            cursor: help;
+            cursor: pointer;
+        }
+        .show-me-btn {
+            display: inline-block;
+            margin-left: 8px;
+            padding: 2px 8px;
+            background: #6b46c1;
+            color: white;
+            font-size: 11px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            vertical-align: middle;
+        }
+        .show-me-btn:hover {
+            background: #553c9a;
         }
 
         /* Slides overlay */
@@ -279,10 +295,19 @@
                     });
                 }
 
-                // Add click handler for slides demo (if available)
+                // Add [show me] button for slides demo (if available)
                 if (slidesAvailable) {
                     verifyLine.classList.add('has-demo');
-                    verifyLine.addEventListener('click', openSlidesOverlay);
+
+                    // Create and insert the [show me] button
+                    const showMeBtn = document.createElement('span');
+                    showMeBtn.className = 'show-me-btn';
+                    showMeBtn.textContent = 'show me';
+                    showMeBtn.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        openSlidesOverlay();
+                    });
+                    verifyLine.parentNode.insertBefore(showMeBtn, verifyLine.nextSibling);
                 }
             });
         }
