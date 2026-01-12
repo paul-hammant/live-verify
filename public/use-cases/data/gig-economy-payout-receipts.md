@@ -34,7 +34,7 @@ NET PAYOUT:                                             $ 1,242.50
 This statement is a verified record of earnings for tax
 and income verification purposes.
 
-<span data-verify-line="gig">verify:uber.com/payouts/v/99228877</span> <span verifiable-text="end" data-for="gig">]</span></pre>
+<span data-verify-line="gig">verify:uber.com/payouts/v</span> <span verifiable-text="end" data-for="gig">]</span></pre>
 </div>
 
 ## Data Verified

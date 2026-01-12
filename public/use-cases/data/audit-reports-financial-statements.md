@@ -52,7 +52,7 @@ statements based on our audits.
                     February 24, 2026
 
 </pre>
-  <span data-verify-line="audit">verify:pwc.com/audit/v/WAYSTAR-2025</span> <span verifiable-text="end" data-for="audit">]</span>
+  <span data-verify-line="audit">verify:pwc.com/audit/v</span> <span verifiable-text="end" data-for="audit">]</span>
 </div>
 
 ## Data Verified

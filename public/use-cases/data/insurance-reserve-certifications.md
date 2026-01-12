@@ -33,7 +33,7 @@ ________________________                         [FILED & VERIFIED]
 Robert Miller, FSA
 
 </pre>
-<span data-verify-line="life-res">verify:prudential.com/actuarial/v/RES202609</span> <span verifiable-text="end" data-for="life-res">]</span>
+<span data-verify-line="life-res">verify:prudential.com/actuarial/v</span> <span verifiable-text="end" data-for="life-res">]</span>
 </div>
 
 ## Data Verified
@@ -129,7 +129,7 @@ ________________________                         [FILED & VERIFIED]
 Robert Miller, FSA
 
 </pre>
-<span data-verify-line="ltc-res">verify:genworth.com/actuarial/v/LTCRES2026</span> <span verifiable-text="end" data-for="ltc-res">]</span>
+<span data-verify-line="ltc-res">verify:genworth.com/actuarial/v</span> <span verifiable-text="end" data-for="ltc-res">]</span>
 </div>
 
 ## Data Verified
@@ -241,7 +241,7 @@ Sarah Jenkins, Lead Actuary
 Credential: #ACAS-992288
 
 </pre>
-<span data-verify-line="reserve">verify:thehartford.com/v/RES99228877</span> <span verifiable-text="end" data-for="reserve">]</span>
+<span data-verify-line="reserve">verify:thehartford.com/v</span> <span verifiable-text="end" data-for="reserve">]</span>
 </div>
 
 ## Data Verified

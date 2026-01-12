@@ -43,7 +43,7 @@ Fraud is high-stakes: some "Salesmen" edit the FDD to hide lawsuits or to inflat
   </div>
 <div data-verify-line="franchise" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: 7-Eleven doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:7-eleven.com/franchise/v/TX-992288 <span verifiable-text="end" data-for="franchise">]</span>
+      verify:7-eleven.com/franchise/v <span verifiable-text="end" data-for="franchise">]</span>
     </div>
 </div>
 

@@ -30,7 +30,7 @@ CHARGEBACKS:                                            $      0.00
 ───────────────────────────────────────────────────────────────────
 TOTAL NET PAYOUT:                                       $ 42,250.00
 
-<span data-verify-line="stripe">verify:stripe.com/v/ST99228877</span> <span verifiable-text="end" data-for="stripe">]</span></pre>
+<span data-verify-line="stripe">verify:stripe.com/v</span> <span verifiable-text="end" data-for="stripe">]</span></pre>
 </div>
 
 ## Data Verified

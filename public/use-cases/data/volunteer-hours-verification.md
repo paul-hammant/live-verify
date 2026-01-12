@@ -33,7 +33,7 @@ Supervisor:   Robert Miller               120.0 HOURS
 _________________________
 Executive Director                               [VERIFIED SERVICE]
 
-<span data-verify-line="volunteer">verify:americasharvest.org/v/992288-SJJ</span> <span verifiable-text="end" data-for="volunteer">]</span></pre>
+<span data-verify-line="volunteer">verify:americasharvest.org/v</span> <span verifiable-text="end" data-for="volunteer">]</span></pre>
 </div>
 
 ## Data Verified

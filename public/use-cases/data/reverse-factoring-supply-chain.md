@@ -37,7 +37,7 @@ This approval advice is a verified extract of the CitiDirect SCF
 portal. Any alteration of invoice amounts or dates renders this
 financing void.
 
-<span data-verify-line="factor">verify:citi.com/scf/v/SCF99228877</span> <span verifiable-text="end" data-for="factor">]</span></pre>
+<span data-verify-line="factor">verify:citi.com/scf/v</span> <span verifiable-text="end" data-for="factor">]</span></pre>
 </div>
 
 ## Data Verified

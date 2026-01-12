@@ -41,7 +41,7 @@ OCR-to-hash binds the **Grantor/Grantee names and the Legal Description** to the
     </div>
 <div data-verify-line="deed" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: King County doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:kingcounty.gov/recorder/v/20260316000442 <span verifiable-text="end" data-for="deed">]</span>
+      verify:kingcounty.gov/recorder/v <span verifiable-text="end" data-for="deed">]</span>
     </div>
   </div>
 </div>

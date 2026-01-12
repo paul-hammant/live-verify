@@ -42,7 +42,7 @@ When you buy a house, you need the **Verified Current Version** of these rules. 
   </div>
 <div data-verify-line="hoa-docs" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: HOA doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:skylinetowers-hoa.com/archive/v/BYLAWS-2026-V1 <span verifiable-text="end" data-for="hoa-docs">]</span>
+      verify:skylinetowers-hoa.com/archive/v <span verifiable-text="end" data-for="hoa-docs">]</span>
   </div>
 </div>
 
@@ -173,7 +173,7 @@ Fraud happens when "Rogue Board Members" fabricate a rule change to target a spe
   </div>
 <div data-verify-line="hoa-rule" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: HOA doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:skylinetowers-hoa.com/rules/v/2026-04A <span verifiable-text="end" data-for="hoa-rule">]</span>
+      verify:skylinetowers-hoa.com/rules/v <span verifiable-text="end" data-for="hoa-rule">]</span>
   </div>
 </div>
 

@@ -38,7 +38,7 @@ The City of Oakland
 1 Frank Ogawa Plaza, Oakland, CA
 
 </pre>
-<span data-verify-line="coi">verify:marsh.com/coi/v/99887766</span> <span verifiable-text="end" data-for="coi">]</span>
+<span data-verify-line="coi">verify:marsh.com/coi/v</span> <span verifiable-text="end" data-for="coi">]</span>
 </div>
 
 ## Data Verified

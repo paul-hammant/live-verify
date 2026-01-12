@@ -48,7 +48,7 @@ It's not just for geography—it's for **Tariffs**. If a company ships microproc
     </div>
 <div data-verify-line="origin-us" style="border-top: 1px dashed #999; margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.85em; color: #555; text-align: center;"
       title="Demo only: US Chamber doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:uschamber.com/v/TXTI-2026-09 <span verifiable-text="end" data-for="origin-us">]</span>
+      verify:uschamber.com/v <span verifiable-text="end" data-for="origin-us">]</span>
     </div>
   </div>
 </div>

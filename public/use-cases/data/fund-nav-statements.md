@@ -52,7 +52,7 @@ Verification confirms the NAV and performance match the
 administrator's official books and records.
 
 </pre>
-<span data-verify-line="nav">verify:citco.com/statements/v/NAV992288</span> <span verifiable-text="end" data-for="nav">]</span>
+<span data-verify-line="nav">verify:citco.com/statements/v</span> <span verifiable-text="end" data-for="nav">]</span>
 </div>
 
 ## Data Verified
@@ -166,7 +166,7 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
     <strong>Total Value:</strong> $629,850.00<br>
     <strong>As of:</strong> December 31, 2025</p>
     <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
-      verify:breit.com/nav/TFT-2025Q4
+      verify:breit.com/nav
     </div>
   </div>
 </div>
@@ -191,7 +191,7 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
     <strong>Actuarial Value of Assets:</strong> $4.2B<br>
     <strong>Valuation Date:</strong> June 30, 2025</p>
     <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
-      verify:calpers.ca.gov/valuations/SAC-MISC2-2025
+      verify:calpers.ca.gov/valuations
     </div>
   </div>
 </div>
@@ -217,7 +217,7 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
     <strong>Annual Return:</strong> +9.6%<br>
     <strong>Distribution to University:</strong> $2.1 billion</p>
     <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
-      verify:hmc.harvard.edu/annual/FY2025
+      verify:hmc.harvard.edu/annual
     </div>
   </div>
 </div>
@@ -245,7 +245,7 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
     <strong>Death Benefit:</strong> $425,000.00<br>
     <strong>As of:</strong> March 31, 2026</p>
     <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
-      verify:prudential.com/annuity/VA8827744-Q1
+      verify:prudential.com/annuity
     </div>
   </div>
 </div>
@@ -272,7 +272,7 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
     <strong>Total Value:</strong> $291,300.00<br>
     <strong>Repurchase Offer:</strong> 5% at NAV, Q2 2026</p>
     <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
-      verify:arescapitalcorp.com/nav/RWA-2026Q1
+      verify:arescapitalcorp.com/nav
     </div>
   </div>
 </div>
@@ -298,7 +298,7 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
     <strong>YTD Contributions:</strong> $15,500.00<br>
     <strong>As of:</strong> March 31, 2026</p>
     <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
-      verify:netbenefits.fidelity.com/stmt/JR-ACME-Q1
+      verify:netbenefits.fidelity.com/stmt
     </div>
   </div>
 </div>
@@ -327,7 +327,7 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
     <strong>Net IRR:</strong> 28.4%<br>
     <strong>As of:</strong> December 31, 2025</p>
     <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
-      verify:sequoiacap.com/lp/YALE-XVII-Q4
+      verify:sequoiacap.com/lp
     </div>
   </div>
 </div>
@@ -355,7 +355,7 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
     <strong>YTD Return:</strong> +11.4%<br>
     <strong>Period:</strong> March 2026</p>
     <div style="margin-top: 15px; font-size: 0.8em; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
-      verify:winton.com/statements/MFO-MAR26
+      verify:winton.com/statements
     </div>
   </div>
 </div>

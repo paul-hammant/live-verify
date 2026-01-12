@@ -31,7 +31,7 @@ TOTAL PAID (USD):                                       $ 2,600.00
 
 House Rules: Maximum 4 guests. No smoking. No unauthorized pets.
 
-<span data-verify-line="rental">verify:airbnb.com/v/HM99228877</span> <span verifiable-text="end" data-for="rental">]</span></pre>
+<span data-verify-line="rental">verify:airbnb.com/v</span> <span verifiable-text="end" data-for="rental">]</span></pre>
 </div>
 
 ## Data Verified

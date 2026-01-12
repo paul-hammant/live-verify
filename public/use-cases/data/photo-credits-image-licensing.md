@@ -32,7 +32,7 @@ Exclusivity:                                           Non-Exclusive
 
 License is non-transferable.
 
-<span data-verify-line="photo">verify:gettyimages.com/v/LIC20268844</span> <span verifiable-text="end" data-for="photo">]</span></pre>
+<span data-verify-line="photo">verify:gettyimages.com/v</span> <span verifiable-text="end" data-for="photo">]</span></pre>
 </div>
 
 ## Data Verified

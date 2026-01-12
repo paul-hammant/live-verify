@@ -46,7 +46,7 @@ Because these cards are required for legal entry, scammers often sell "Fake Gree
     </div>
 <div data-verify-line="green-card" style="border-top: 1px dashed #388e3c; margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #333; text-align: center;"
       title="Demo only: Allianz doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:allianz.co.uk/greencard/v/992288ABC <span verifiable-text="end" data-for="green-card">]</span>
+      verify:allianz.co.uk/greencard/v <span verifiable-text="end" data-for="green-card">]</span>
     </div>
   </div>
 </div>

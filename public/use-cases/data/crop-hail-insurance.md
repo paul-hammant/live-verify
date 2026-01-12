@@ -36,7 +36,7 @@ Effective Date:    May 01, 2026 (or upon emergence)
 
 Note: Coverage applies only to direct physical loss from Hail or Fire.
 
-<span data-verify-line="crop">verify:rainhail.com/v/IA-998877-26</span> <span verifiable-text="end" data-for="crop">]</span></pre>
+<span data-verify-line="crop">verify:rainhail.com/v</span> <span verifiable-text="end" data-for="crop">]</span></pre>
 </div>
 
 ## Data Verified

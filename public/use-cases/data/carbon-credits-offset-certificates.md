@@ -43,7 +43,7 @@ re-sold or re-used.
 Date of Retirement: March 15, 2026
 
 </pre>
-<span data-verify-line="carbon">verify:verra.org/registry/v/9982-2026</span> <span verifiable-text="end" data-for="carbon">]</span>
+<span data-verify-line="carbon">verify:verra.org/registry/v</span> <span verifiable-text="end" data-for="carbon">]</span>
 </div>
 
 ## Data Verified

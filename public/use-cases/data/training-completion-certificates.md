@@ -34,7 +34,7 @@ Units:       8.0 CEU / 40 Contact Hours  Instructor:  Sarah J. Jenkins
 _________________________
 Academy Director                                         [NSC VERIFIED]
 
-<span data-verify-line="train">verify:nsc.org/v/train/RM992288-HM</span> <span verifiable-text="end" data-for="train">]</span></pre>
+<span data-verify-line="train">verify:nsc.org/v/train</span> <span verifiable-text="end" data-for="train">]</span></pre>
 </div>
 
 ## Data Verified

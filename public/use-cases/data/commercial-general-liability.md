@@ -40,7 +40,7 @@ Products-Completed Ops                                 $ 4,000,000
 Policy Period: March 01, 2026 to March 01, 2027
 
 </pre>
-<span data-verify-line="cgl">verify:travelers.com/policy/v/CGL99887766</span> <span verifiable-text="end" data-for="cgl">]</span>
+<span data-verify-line="cgl">verify:travelers.com/policy/v</span> <span verifiable-text="end" data-for="cgl">]</span>
 </div>
 
 ## Data Verified

@@ -35,7 +35,7 @@ Payment received in full. Title transferred upon clearance of funds.
                     Invoice #: INV-9982-X
 
 </pre>
-  <span data-verify-line="auction">verify:phillips.com/sales/v/NY010126-42</span> <span verifiable-text="end" data-for="auction">]</span>
+  <span data-verify-line="auction">verify:phillips.com/sales/v</span> <span verifiable-text="end" data-for="auction">]</span>
 </div>
 
 ## Data Verified

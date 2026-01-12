@@ -30,7 +30,7 @@ Expires:                                            MARCH 15, 2031
 Verified via Precision Chrono Global Registry.
 Authorized Service Centers only.
 
-<span data-verify-line="warranty">verify:precisionchrono.com/v/SN992288XJ</span> <span verifiable-text="end" data-for="warranty">]</span></pre>
+<span data-verify-line="warranty">verify:precisionchrono.com/v</span> <span verifiable-text="end" data-for="warranty">]</span></pre>
 </div>
 
 ## Data Verified

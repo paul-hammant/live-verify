@@ -33,7 +33,7 @@ ________________________                        Log ID: CAL-9928-X
 Certified Digital Signature
 
 </pre>
-<span data-verify-line="sci-cal">verify:quantum-labs.com/calibration/v/AG992288</span> <span verifiable-text="end" data-for="sci-cal">]</span>
+<span data-verify-line="sci-cal">verify:quantum-labs.com/calibration/v</span> <span verifiable-text="end" data-for="sci-cal">]</span>
 </div>
 
 ## Data Verified

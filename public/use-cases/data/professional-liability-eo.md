@@ -42,7 +42,7 @@ Deductible (Retention)                                    $ 25,000
 Policy Period: March 15, 2026 to March 15, 2027
 
 </pre>
-<span data-verify-line="eo">verify:hiscox.com/certificates/v/EO992288</span> <span verifiable-text="end" data-for="eo">]</span>
+<span data-verify-line="eo">verify:hiscox.com/certificates/v</span> <span verifiable-text="end" data-for="eo">]</span>
 </div>
 
 ## Data Verified

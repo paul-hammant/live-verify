@@ -36,7 +36,7 @@ Soil Type:                                            Hydric (Gleyed)
 
                         [ECO VERIFIED]
 
-<span data-verify-line="wetland">verify:eco-stream.com/v/WET99228877</span> <span verifiable-text="end" data-for="wetland">]</span></pre>
+<span data-verify-line="wetland">verify:eco-stream.com/v</span> <span verifiable-text="end" data-for="wetland">]</span></pre>
 </div>
 
 ## Data Verified

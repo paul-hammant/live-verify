@@ -42,7 +42,7 @@ Incoterms:         CIP Zurich (2020)
 Country of Origin: CHINA
 Container:         MSKU-992288-0
 
-<span data-verify-line="invoice">verify:sz-tech.com/invoices/v/INV998877</span> <span verifiable-text="end" data-for="invoice">]</span></pre>
+<span data-verify-line="invoice">verify:sz-tech.com/invoices/v</span> <span verifiable-text="end" data-for="invoice">]</span></pre>
 </div>
 
 ## Data Verified

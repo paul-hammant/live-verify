@@ -30,7 +30,7 @@ Riders:               Waiver of Premium, Accidental Death (2x)
 _________________________
 Sarah Miller, Secretary                              Est. 1845
 
-<span data-verify-line="life-pol">verify:newyorklife.com/policy/v/99228877</span> <span verifiable-text="end" data-for="life-pol">]</span></pre>
+<span data-verify-line="life-pol">verify:newyorklife.com/policy/v</span> <span verifiable-text="end" data-for="life-pol">]</span></pre>
 </div>
 
 ## Data Verified

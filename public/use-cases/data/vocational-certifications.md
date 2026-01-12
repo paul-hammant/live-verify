@@ -35,7 +35,7 @@ Institute of Skilled Trades & Applied Science
 Date Conferred:   MARCH 15, 2026          Campus:     Springfield East
 Hours Completed:  420 Shop Hours          Instructor: David R. Chen
 
-<span data-verify-line="vocation">verify:lincolntech.edu/v/LT992288</span> <span verifiable-text="end" data-for="vocation">]</span></pre>
+<span data-verify-line="vocation">verify:lincolntech.edu/v</span> <span verifiable-text="end" data-for="vocation">]</span></pre>
 </div>
 
 ## Data Verified

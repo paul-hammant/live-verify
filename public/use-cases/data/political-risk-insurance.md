@@ -31,7 +31,7 @@ Currency Inconvertibility:                                 INCLUDED
 Political Violence (War/Terrorism):                        INCLUDED
 Breach of Contract (Sovereign):                            EXCLUDED
 
-<span data-verify-line="pri">verify:zurich.com/pri/v/992288-NORDIA</span> <span verifiable-text="end" data-for="pri">]</span></pre>
+<span data-verify-line="pri">verify:zurich.com/pri/v</span> <span verifiable-text="end" data-for="pri">]</span></pre>
 </div>
 
 ## Data Verified

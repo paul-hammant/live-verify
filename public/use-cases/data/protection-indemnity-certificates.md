@@ -33,7 +33,7 @@ Wreck Removal:                                           FULL COVER
 
 Subject to the Rules of the Association.
 
-<span data-verify-line="pi">verify:ukpandi.com/v/IMO9922887</span> <span verifiable-text="end" data-for="pi">]</span></pre>
+<span data-verify-line="pi">verify:ukpandi.com/v</span> <span verifiable-text="end" data-for="pi">]</span></pre>
 </div>
 
 ## Data Verified

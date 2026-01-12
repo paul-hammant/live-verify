@@ -46,7 +46,7 @@ The problem is that these permits are often temporary pieces of paper taped to a
     </div>
 <div data-verify-line="event" style="margin-top: 20px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #1a237e; text-align: center; font-weight: bold; border-top: 1px dashed #bbb;"
       title="Demo only: Municipalities don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:springfield.gov/events/v/EVT992288X <span verifiable-text="end" data-for="event">]</span>
+      verify:springfield.gov/events/v <span verifiable-text="end" data-for="event">]</span>
     </div>
   </div>
 </div>

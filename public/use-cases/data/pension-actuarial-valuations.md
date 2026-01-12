@@ -41,7 +41,7 @@ current funding level meets the requirements of ERISA and the PBGC."
                                     Robert J. Miller, FSA, MAAA
                                     Enrolled Actuary #992288
 
-<span data-verify-line="pension">verify:wtwco.com/v/VAL99228877</span> <span verifiable-text="end" data-for="pension">]</span></pre>
+<span data-verify-line="pension">verify:wtwco.com/v</span> <span verifiable-text="end" data-for="pension">]</span></pre>
 </div>
 
 ## Data Verified

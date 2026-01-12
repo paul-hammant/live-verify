@@ -37,7 +37,7 @@ YOU OWE (Patient Responsibility):                    $   160.00
 This is NOT a bill. This is your record of how the claim
 was processed.
 
-<span data-verify-line="eob">verify:uhc.com/claims/v/99228877</span> <span verifiable-text="end" data-for="eob">]</span></pre>
+<span data-verify-line="eob">verify:uhc.com/claims/v</span> <span verifiable-text="end" data-for="eob">]</span></pre>
 </div>
 
 ## Data Verified
@@ -165,7 +165,7 @@ significantly more severe than initially reported. Case now
 exceeds $100k threshold; escalated to supervisor for Large
 Loss Review.
 
-<span data-verify-line="diary">verify:ace-insurance.com/claims/v/99228877-R4</span> <span verifiable-text="end" data-for="diary">]</span></pre>
+<span data-verify-line="diary">verify:ace-insurance.com/claims/v</span> <span verifiable-text="end" data-for="diary">]</span></pre>
   </div>
 </div>
 
@@ -305,7 +305,7 @@ the Releasee.
 Sarah J. Doe                     Michael Miller, Adjuster
 Releasor                         For Acme Indemnity
 
-<span data-verify-line="settle">verify:acme-insurance.com/legal/v/DOE-9922</span> <span verifiable-text="end" data-for="settle">]</span></pre>
+<span data-verify-line="settle">verify:acme-insurance.com/legal/v</span> <span verifiable-text="end" data-for="settle">]</span></pre>
   </div>
 </div>
 

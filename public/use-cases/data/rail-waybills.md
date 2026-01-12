@@ -37,7 +37,7 @@ Hazmat Status: NON-HAZARDOUS
 Any deviation from the declared STCC code is a violation of
 Federal Rail Safety Standards.
 
-<span data-verify-line="rail">verify:up.com/waybill/v/UP2026992288</span> <span verifiable-text="end" data-for="rail">]</span></pre>
+<span data-verify-line="rail">verify:up.com/waybill/v</span> <span verifiable-text="end" data-for="rail">]</span></pre>
 </div>
 
 ## Data Verified

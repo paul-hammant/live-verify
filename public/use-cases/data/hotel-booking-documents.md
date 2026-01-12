@@ -34,7 +34,7 @@ Status:            REFUNDED & CLOSED
                                         ─────────────────────────
                                         Reservations Manager
 
-<span data-verify-line="hotel-cancel">verify:grandhotelparis.com/v/GHP-47291</span> <span verifiable-text="end" data-for="hotel-cancel">]</span></pre>
+<span data-verify-line="hotel-cancel">verify:grandhotelparis.com/v</span> <span verifiable-text="end" data-for="hotel-cancel">]</span></pre>
 </div>
 
 ## Data Verified
@@ -158,7 +158,7 @@ Upgrade Value:   $ 450.00 / Night (Complimentary)
 Please present this verified confirmation at the front desk
 upon arrival.
 
-<span data-verify-line="upgrade">verify:ritzcarlton.com/upgrades/v/RC99228877</span> <span verifiable-text="end" data-for="upgrade">]</span></pre>
+<span data-verify-line="upgrade">verify:ritzcarlton.com/upgrades/v</span> <span verifiable-text="end" data-for="upgrade">]</span></pre>
 </div>
 
 ## Data Verified
@@ -288,7 +288,7 @@ This statement is a verified record of your point balance
 and elite status. Valid for corporate housing and
 status-match requests.
 
-<span data-verify-line="hotel-loy">verify:marriott.com/loyalty/v/99228877</span> <span verifiable-text="end" data-for="hotel-loy">]</span></pre>
+<span data-verify-line="hotel-loy">verify:marriott.com/loyalty/v</span> <span verifiable-text="end" data-for="hotel-loy">]</span></pre>
 </div>
 
 ## Data Verified

@@ -34,7 +34,7 @@ KNOWN MATERIAL DEFECTS
 Seller certifies information is true and correct to the
 best of Seller's knowledge as of the date signed.
 
-<span data-verify-line="disclose">verify:springfield-realtors.org/v/SMITH992288</span> <span verifiable-text="end" data-for="disclose">]</span></pre>
+<span data-verify-line="disclose">verify:springfield-realtors.org/v</span> <span verifiable-text="end" data-for="disclose">]</span></pre>
 </div>
 
 ## Data Verified

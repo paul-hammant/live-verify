@@ -35,7 +35,7 @@ furtherDerivations: 1
     </div>
 <div data-verify-line="blood" style="border-top: 1px dashed #999; margin-top: 15px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Red Cross doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:redcross.org/donors/v/99887766 <span verifiable-text="end" data-for="blood">]</span>
+      verify:redcross.org/donors/v <span verifiable-text="end" data-for="blood">]</span>
     </div>
   </div>
 </div>

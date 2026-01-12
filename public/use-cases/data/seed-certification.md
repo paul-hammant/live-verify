@@ -32,7 +32,7 @@ Inert Matter:                                                 0.15%
 Noxious Weeds:                                                 NONE
 
 </pre>
-<span data-verify-line="seed">verify:aosca.org/v/NY992288-GOLDEN</span> <span verifiable-text="end" data-for="seed">]</span>
+<span data-verify-line="seed">verify:aosca.org/v</span> <span verifiable-text="end" data-for="seed">]</span>
 </div>
 
 ## Data Verified

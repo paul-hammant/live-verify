@@ -32,7 +32,7 @@ This report is a verified record of the test-taker's English
 proficiency. Valid for 2 years from the test date.
 
 </pre>
-<span data-verify-line="lang-test">verify:ets.org/toefl/v/99228877</span> <span verifiable-text="end" data-for="lang-test">]</span>
+<span data-verify-line="lang-test">verify:ets.org/toefl/v</span> <span verifiable-text="end" data-for="lang-test">]</span>
 </div>
 
 ## Data Verified

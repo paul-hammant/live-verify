@@ -33,7 +33,7 @@ furtherDerivations: 1
   </div>
 <div data-verify-line="msa" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Legal department doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:apexcloud.com/legal/v/GC-MSA-2026 <span verifiable-text="end" data-for="msa">]</span>
+      verify:apexcloud.com/legal/v <span verifiable-text="end" data-for="msa">]</span>
   </div>
 </div>
 

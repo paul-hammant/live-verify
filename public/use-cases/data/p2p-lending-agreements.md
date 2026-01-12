@@ -43,7 +43,7 @@ This electronic record is cryptographically bound to the LendingClub
 private ledger. Alteration is a violation of federal lending laws.
 
 </pre>
-<span data-verify-line="p2p">verify:lendingclub.com/v/99228877</span> <span verifiable-text="end" data-for="p2p">]</span>
+<span data-verify-line="p2p">verify:lendingclub.com/v</span> <span verifiable-text="end" data-for="p2p">]</span>
 </div>
 
 ## Data Verified

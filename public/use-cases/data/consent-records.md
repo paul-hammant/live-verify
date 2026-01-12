@@ -34,7 +34,7 @@ Consent is given, withdrawn, modified—but rarely documented with verifiable pr
   <br>
   Witness: RN Jennifer Walsh<br>
   Date/Time: 2026-01-08 06:42 EST<br>
-  <span data-verify-line="cons1">verify:partners.org/consent/a7f3-2026-0108</span> <span verifiable-text="end" data-for="cons1">]</span>
+  <span data-verify-line="cons1">verify:partners.org/consent</span> <span verifiable-text="end" data-for="cons1">]</span>
 </div>
 
 <div style="font-family: 'Courier New', monospace; background: #f9f9f9; padding: 15px; border: 1px solid #999; font-size: 1em; color: #000; line-height: 1.6; max-width: 550px; margin: 24px auto;">
@@ -56,7 +56,7 @@ Consent is given, withdrawn, modified—but rarely documented with verifiable pr
   Consent Date: 2026-01-05 14:32 UTC<br>
   Method: Double opt-in email confirmed<br>
   IP: 203.0.113.42<br>
-  <span data-verify-line="cons2">verify:acme.com/consent/447821-20260105</span> <span verifiable-text="end" data-for="cons2">]</span>
+  <span data-verify-line="cons2">verify:acme.com/consent</span> <span verifiable-text="end" data-for="cons2">]</span>
 </div>
 
 <div style="font-family: 'Courier New', monospace; background: #f9f9f9; padding: 15px; border: 1px solid #999; font-size: 1em; color: #000; line-height: 1.6; max-width: 550px; margin: 24px auto;">
@@ -67,7 +67,7 @@ Consent is given, withdrawn, modified—but rarely documented with verifiable pr
   Data Controller: Acme Marketing Ltd<br>
   <br>
   Original Consent: 2026-01-05<br>
-  verify:acme.com/consent/447821-20260105<br>
+  verify:acme.com/consent<br>
   <br>
   Withdrawal Scope: ALL PROCESSING<br>
   Withdrawal Date: 2026-01-09 09:15 UTC<br>
@@ -75,7 +75,7 @@ Consent is given, withdrawn, modified—but rarely documented with verifiable pr
   <br>
   Data Deletion Requested: YES<br>
   Deletion Deadline: 2026-02-08<br>
-  <span data-verify-line="cons3">verify:acme.com/consent/447821-withdraw</span> <span verifiable-text="end" data-for="cons3">]</span>
+  <span data-verify-line="cons3">verify:acme.com/consent</span> <span verifiable-text="end" data-for="cons3">]</span>
 </div>
 
 <div style="font-family: 'Courier New', monospace; background: #f9f9f9; padding: 15px; border: 1px solid #999; font-size: 1em; color: #000; line-height: 1.6; max-width: 550px; margin: 24px auto;">
@@ -97,7 +97,7 @@ Consent is given, withdrawn, modified—but rarely documented with verifiable pr
   Consent Version: 2.1 (Dec 2025)<br>
   Consenter: Principal Investigator<br>
   Date: January 7, 2026<br>
-  <span data-verify-line="cons4">verify:stanford.edu/irb/consent/57842-4421</span> <span verifiable-text="end" data-for="cons4">]</span>
+  <span data-verify-line="cons4">verify:stanford.edu/irb/consent</span> <span verifiable-text="end" data-for="cons4">]</span>
 </div>
 
 <div style="font-family: 'Courier New', monospace; background: #f9f9f9; padding: 15px; border: 1px solid #999; font-size: 1em; color: #000; line-height: 1.6; max-width: 550px; margin: 24px auto;">
@@ -121,7 +121,7 @@ Consent is given, withdrawn, modified—but rarely documented with verifiable pr
   - Swimming activities: NO<br>
   <br>
   Signed: January 8, 2026<br>
-  <span data-verify-line="cons5">verify:lausd.net/consent/78421-yosemite</span> <span verifiable-text="end" data-for="cons5">]</span>
+  <span data-verify-line="cons5">verify:lausd.net/consent</span> <span verifiable-text="end" data-for="cons5">]</span>
 </div>
 
 <div style="font-family: 'Courier New', monospace; background: #f9f9f9; padding: 15px; border: 1px solid #999; font-size: 1em; color: #000; line-height: 1.6; max-width: 550px; margin: 24px auto;">
@@ -142,7 +142,7 @@ Consent is given, withdrawn, modified—but rarely documented with verifiable pr
   - Arbitration clause: Displayed<br>
   - Data collection: Displayed<br>
   - Auto-renewal: Displayed<br>
-  <span data-verify-line="cons6">verify:vendor.com/consent/7894561-eula</span> <span verifiable-text="end" data-for="cons6">]</span>
+  <span data-verify-line="cons6">verify:vendor.com/consent</span> <span verifiable-text="end" data-for="cons6">]</span>
 </div>
 
 ## Why Consent Records Matter

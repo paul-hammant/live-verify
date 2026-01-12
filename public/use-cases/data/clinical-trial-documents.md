@@ -35,7 +35,7 @@ In pharmaceutical research, "Consent Fraud" is a serious crime. Sites sometimes 
   </div>
 <div data-verify-line="clinic" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Mayo Clinic doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:mayoclinic.org/research/v/NCT09988776 <span verifiable-text="end" data-for="clinic">]</span>
+      verify:mayoclinic.org/research/v <span verifiable-text="end" data-for="clinic">]</span>
   </div>
 </div>
 

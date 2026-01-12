@@ -33,7 +33,7 @@ TOTAL ONBOARD CHARGES:                                     $ 309.50
 
 This statement reflects all settled charges as of disembarkation.
 
-<span data-verify-line="cruise">verify:royalcaribbean.com/folios/v/99228877</span> <span verifiable-text="end" data-for="cruise">]</span></pre>
+<span data-verify-line="cruise">verify:royalcaribbean.com/folios/v</span> <span verifiable-text="end" data-for="cruise">]</span></pre>
 </div>
 
 ## Data Verified

@@ -52,7 +52,7 @@ These digital-first documents are the "Proof of Wealth" for a new generation of 
 <div style="padding: 20px; background: #fff; border-top: 1px dashed #999; text-align: center;">
     <div data-verify-line="robo" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Robo-advisors don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:betterment.com/v/ACCT9922-SJS <span verifiable-text="end" data-for="robo">]</span>
+      verify:betterment.com/v <span verifiable-text="end" data-for="robo">]</span>
     </div>
     <div style="font-size: 0.7em; color: #999; margin-top: 10px;">
       Scan to verify net account value, risk-score settings, and tax-loss harvesting status.

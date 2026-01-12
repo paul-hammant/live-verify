@@ -32,7 +32,7 @@ A **Verified Trade Service Receipt** is pre-registered with tax authorities *bef
   <br>
   Payment: Card (ending 4421)<br>
   Job Ref: JWP-2026-0847<br>
-  <span data-verify-line="trade1">verify:hmrc.gov.uk/receipts/v/JWP-2026-0847</span> <span verifiable-text="end" data-for="trade1">]</span>
+  <span data-verify-line="trade1">verify:hmrc.gov.uk/receipts/v</span> <span verifiable-text="end" data-for="trade1">]</span>
 </div>
 
 <div style="font-family: 'Courier New', monospace; background: #f9f9f9; padding: 15px; border: 1px solid #999; font-size: 1em; color: #000; line-height: 1.6; max-width: 550px; margin: 24px auto;">
@@ -53,7 +53,7 @@ A **Verified Trade Service Receipt** is pre-registered with tax authorities *bef
   <br>
   Payment: Bank transfer<br>
   Job Ref: MES-26-1847<br>
-  <span data-verify-line="trade2">verify:ato.gov.au/verify/MES-26-1847</span> <span verifiable-text="end" data-for="trade2">]</span>
+  <span data-verify-line="trade2">verify:ato.gov.au/verify</span> <span verifiable-text="end" data-for="trade2">]</span>
 </div>
 
 <div style="font-family: 'Courier New', monospace; background: #f9f9f9; padding: 15px; border: 1px solid #999; font-size: 1em; color: #000; line-height: 1.6; max-width: 550px; margin: 24px auto;">
@@ -75,7 +75,7 @@ A **Verified Trade Service Receipt** is pre-registered with tax authorities *bef
   <br>
   Payment: Check #1847<br>
   Job Ref: GHR-2026-0223<br>
-  <span data-verify-line="trade3">verify:ftb.ca.gov/verify/GHR-2026-0223</span> <span verifiable-text="end" data-for="trade3">]</span>
+  <span data-verify-line="trade3">verify:ftb.ca.gov/verify</span> <span verifiable-text="end" data-for="trade3">]</span>
 </div>
 
 ## The Pre-Registration Model

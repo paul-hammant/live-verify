@@ -41,7 +41,7 @@ Fraud is common: people often "edit" their translated grades or court records to
   </div>
 <div data-verify-line="trans" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Translation firm doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:linguisticaccuracy.com/v/MEX998877 <span verifiable-text="end" data-for="trans">]</span>
+      verify:linguisticaccuracy.com/v <span verifiable-text="end" data-for="trans">]</span>
   </div>
 </div>
 

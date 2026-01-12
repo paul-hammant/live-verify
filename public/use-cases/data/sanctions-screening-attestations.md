@@ -36,7 +36,7 @@ This attestation confirms that the subject was screened against
 the datasets above with 100% fuzzy-match threshold. Verification
 confirms report integrity at the timestamp of issuance.
 
-<span data-verify-line="sanc">verify:dowjones.com/v/DJ99228877</span> <span verifiable-text="end" data-for="sanc">]</span></pre>
+<span data-verify-line="sanc">verify:dowjones.com/v</span> <span verifiable-text="end" data-for="sanc">]</span></pre>
 </div>
 
 ## Data Verified

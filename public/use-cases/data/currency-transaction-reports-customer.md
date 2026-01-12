@@ -39,7 +39,7 @@ Account Number:                                     ****-****-9982
 This report is filed in accordance with the Bank Secrecy Act.
 Submission ID: 9988776655
 
-<span data-verify-line="ctr">verify:bankofamerica.com/compliance/v/99887766</span> <span verifiable-text="end" data-for="ctr">]</span></pre>
+<span data-verify-line="ctr">verify:bankofamerica.com/compliance/v</span> <span verifiable-text="end" data-for="ctr">]</span></pre>
 </div>
 
 ## Data Verified

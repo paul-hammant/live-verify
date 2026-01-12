@@ -38,7 +38,7 @@ TOTAL NET EARNINGS (USD):                              $ 189,875.00
 Verification confirms financial integrity against publisher's
 general ledger.
 
-<span data-verify-line="royalty">verify:prh.com/royalties/v/RS20260042</span> <span verifiable-text="end" data-for="royalty">]</span></pre>
+<span data-verify-line="royalty">verify:prh.com/royalties/v</span> <span verifiable-text="end" data-for="royalty">]</span></pre>
 </div>
 
 ## Data Verified

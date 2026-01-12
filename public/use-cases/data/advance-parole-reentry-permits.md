@@ -43,7 +43,7 @@ If a traveler loses this paper, or if an airline agent in Paris thinks it looks 
 <p style="font-size: 0.9em; text-align: justify;">Presentation of this authorization will permit the above named alien to seek parole at a port of entry. Officer at POE: Please endorse below.</p>
 <div data-verify-line="parole" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: USCIS doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:uscis.gov/v/i512/x9y8z7 <span verifiable-text="end" data-for="parole">]</span>
+      verify:uscis.gov/v/i512 <span verifiable-text="end" data-for="parole">]</span>
     </div>
   </div>
 </div>

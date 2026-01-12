@@ -43,7 +43,7 @@ Received by:      Sarah Connor (Transport Deputy)
 Timestamp:        Nov 3, 2026 - 8:15 PM MST
 
 </pre>
-  <span data-verify-line="ballot">verify:elections.maricopa.gov/custody/v/99228</span> <span verifiable-text="end" data-for="ballot">]</span>
+  <span data-verify-line="ballot">verify:elections.maricopa.gov/custody/v</span> <span verifiable-text="end" data-for="ballot">]</span>
 </div>
 
 ## Data Verified

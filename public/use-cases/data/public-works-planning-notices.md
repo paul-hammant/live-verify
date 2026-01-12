@@ -39,7 +39,7 @@ OCR-to-hash allows a citizen or neighbor to scan the notice from the sidewalk to
 <div style="padding: 20px; background: #fff; border: 1px dashed #000; margin-top: 20px; text-align: center;">
     <div data-verify-line="plan" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: Municipalities don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:springfield.gov/plan/v/PLN992288 <span verifiable-text="end" data-for="plan">]</span>
+      verify:springfield.gov/plan/v <span verifiable-text="end" data-for="plan">]</span>
     </div>
     <div style="font-size: 0.7em; color: #666; margin-top: 10px;">
       Scan to verify appeal deadlines, view high-res project renderings, and read the full environmental impact report.

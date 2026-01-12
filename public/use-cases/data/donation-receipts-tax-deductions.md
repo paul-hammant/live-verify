@@ -37,7 +37,7 @@ organization. Federal Tax ID: 12-3456789.
                                     ───────────────────────
                                     Treasurer, ARC
 
-<span data-verify-line="donate">verify:redcross.org/receipts/v/ARC-2025-9922</span> <span verifiable-text="end" data-for="donate">]</span></pre>
+<span data-verify-line="donate">verify:redcross.org/receipts/v</span> <span verifiable-text="end" data-for="donate">]</span></pre>
 </div>
 
 ## Data Verified

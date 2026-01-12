@@ -46,7 +46,7 @@ OCR-to-hash binds the **Guard's name, License Number, and Firearms Qualification
     </div>
     <div data-verify-line="guard" style="border-top: 1px dashed #999; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: State Bureau doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:securityboard.gov/v/SG992288 <span verifiable-text="end" data-for="guard">]</span>
+      verify:securityboard.gov/v <span verifiable-text="end" data-for="guard">]</span>
     </div>
   </div>
 </div>

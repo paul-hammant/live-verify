@@ -53,7 +53,7 @@ ________________________
 David Chen, Metrologist                                      [SEAL]
 
 </pre>
-<span data-verify-line="cal-long">verify:metrologyservices.com/v/CERT9988</span> <span verifiable-text="end" data-for="cal-long">]</span>
+<span data-verify-line="cal-long">verify:metrologyservices.com/v</span> <span verifiable-text="end" data-for="cal-long">]</span>
 </div>
 
 ## Data Verified

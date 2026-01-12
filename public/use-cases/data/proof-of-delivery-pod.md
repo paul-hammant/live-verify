@@ -32,7 +32,7 @@ Network Server Rack - 4U           3                INTACT
 Signed By:          Sarah Jenkins
                     Security Supervisor (Emp #992)
 
-<span data-verify-line="pod">verify:dhl.com/pod/v/JD9922887766</span> <span verifiable-text="end" data-for="pod">]</span></pre>
+<span data-verify-line="pod">verify:dhl.com/pod/v</span> <span verifiable-text="end" data-for="pod">]</span></pre>
 </div>
 
 ## Data Verified

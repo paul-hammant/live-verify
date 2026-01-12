@@ -42,7 +42,7 @@ This SBC is a verified extract of the Aetna Bronze PPO policy
 filed with the NY Dept of Financial Services.
 
 </pre>
-<span data-verify-line="health-sbc">verify:aetna.com/sbc/v/BRONZE-1000-NY</span> <span verifiable-text="end" data-for="health-sbc">]</span>
+<span data-verify-line="health-sbc">verify:aetna.com/sbc/v</span> <span verifiable-text="end" data-for="health-sbc">]</span>
 </div>
 
 ## Data Verified

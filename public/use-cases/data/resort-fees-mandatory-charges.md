@@ -40,7 +40,7 @@ TOTAL MANDATORY DAILY FEES:                                 $ 57.50
 Total mandatory fees for 3 nights:                         $ 172.50
 
 </pre>
-<span data-verify-line="resort">verify:grandazure.com/fees/v/AZ99228877</span> <span verifiable-text="end" data-for="resort">]</span>
+<span data-verify-line="resort">verify:grandazure.com/fees/v</span> <span verifiable-text="end" data-for="resort">]</span>
 </div>
 
 ## Data Verified

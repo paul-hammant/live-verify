@@ -26,7 +26,7 @@ Traditional credentials are coarse: degrees, certifications, licenses. **Micro-c
   Time: 4.2 hours<br>
   <br>
   Expires: Never (knowledge may become outdated)<br>
-  <span data-verify-line="micro1">verify:aws.training/cred/jc-lambda-2026</span> <span verifiable-text="end" data-for="micro1">]</span>
+  <span data-verify-line="micro1">verify:aws.training/cred</span> <span verifiable-text="end" data-for="micro1">]</span>
 </div>
 
 <div style="font-family: 'Courier New', monospace; background: #f9f9f9; padding: 15px; border: 1px solid #999; font-size: 1em; color: #000; line-height: 1.6; max-width: 550px; margin: 24px auto;">
@@ -44,7 +44,7 @@ Traditional credentials are coarse: degrees, certifications, licenses. **Micro-c
   Result: COMPETENT<br>
   Date: 12 January 2026<br>
   Assessor: R. Williams (Reg: CG-44521)<br>
-  <span data-verify-line="micro2">verify:cityandguilds.com/v/7891234-308</span> <span verifiable-text="end" data-for="micro2">]</span>
+  <span data-verify-line="micro2">verify:cityandguilds.com/v</span> <span verifiable-text="end" data-for="micro2">]</span>
 </div>
 
 <div style="font-family: 'Courier New', monospace; background: #f9f9f9; padding: 15px; border: 1px solid #999; font-size: 1em; color: #000; line-height: 1.6; max-width: 550px; margin: 24px auto;">
@@ -80,7 +80,7 @@ Traditional credentials are coarse: degrees, certifications, licenses. **Micro-c
   Completed: January 6, 2026<br>
   Format: Live Webinar<br>
   Provider: UCSF Medical Center<br>
-  <span data-verify-line="micro4">verify:ama-assn.org/cme/v/1234567890-2026-01</span> <span verifiable-text="end" data-for="micro4">]</span>
+  <span data-verify-line="micro4">verify:ama-assn.org/cme/v</span> <span verifiable-text="end" data-for="micro4">]</span>
 </div>
 
 <div style="font-family: 'Courier New', monospace; background: #f9f9f9; padding: 15px; border: 1px solid #999; font-size: 1em; color: #000; line-height: 1.6; max-width: 550px; margin: 24px auto;">
@@ -101,7 +101,7 @@ Traditional credentials are coarse: degrees, certifications, licenses. **Micro-c
   CEFR Estimate: B2-C1<br>
   Test Date: January 4, 2026<br>
   Valid Until: January 4, 2028<br>
-  <span data-verify-line="micro5">verify:englishtest.duolingo.com/v/DET-2026-4478921</span> <span verifiable-text="end" data-for="micro5">]</span>
+  <span data-verify-line="micro5">verify:englishtest.duolingo.com/v</span> <span verifiable-text="end" data-for="micro5">]</span>
 </div>
 
 <div style="font-family: 'Courier New', monospace; background: #f9f9f9; padding: 15px; border: 1px solid #999; font-size: 1em; color: #000; line-height: 1.6; max-width: 550px; margin: 24px auto;">
@@ -120,7 +120,7 @@ Traditional credentials are coarse: degrees, certifications, licenses. **Micro-c
   - Peer Review: Approved<br>
   <br>
   Issued: January 8, 2026<br>
-  <span data-verify-line="micro6">verify:openbadges.org/v/w3c-a11y-at-2026</span> <span verifiable-text="end" data-for="micro6">]</span>
+  <span data-verify-line="micro6">verify:openbadges.org/v</span> <span verifiable-text="end" data-for="micro6">]</span>
 </div>
 
 ## Why Micro-Credentials Matter

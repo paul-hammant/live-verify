@@ -41,7 +41,7 @@ MSKU 123456-7       200 BAGS ARABICA COFFEE              12,000.00
 RECEIVED by the Carrier the Goods as specified above in
 apparent good order and condition.
 
-<span data-verify-line="bol">verify:maersk.com/bl/v/9988776655</span> <span verifiable-text="end" data-for="bol">]</span></pre>
+<span data-verify-line="bol">verify:maersk.com/bl/v</span> <span verifiable-text="end" data-for="bol">]</span></pre>
 </div>
 
 ## Data Verified
@@ -186,7 +186,7 @@ ML-BR-442211            (GRADE A / WASHED / 2026 CROP)
 Verification confirms the issuance of this title document by the
 carrier. Alteration of cargo details renders this B/L void.
 
-<span data-verify-line="bl">verify:maersk.com/bl/v/MAE9988776655</span> <span verifiable-text="end" data-for="bl">]</span></pre>
+<span data-verify-line="bl">verify:maersk.com/bl/v</span> <span verifiable-text="end" data-for="bl">]</span></pre>
 </div>
 
 ## Data Verified
@@ -285,7 +285,7 @@ SEAL: 884422            (SMARTPHONES / TABLETS)
 
 SHIPPED ON BOARD: MARCH 15, 2026
 
-<span data-verify-line="way">verify:maersk.com/v/MAE9988776655</span> <span verifiable-text="end" data-for="way">]</span></pre>
+<span data-verify-line="way">verify:maersk.com/v</span> <span verifiable-text="end" data-for="way">]</span></pre>
 </div>
 
 ## Data Verified

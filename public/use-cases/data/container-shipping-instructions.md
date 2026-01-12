@@ -43,7 +43,7 @@ Fraudsters often "mis-declare" cargo in the instructions (e.g., calling high-tax
     </div>
 <div data-verify-line="ship" style="border-top: 1px dashed #999; margin-top: 25px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Maersk doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:maersk.com/si/v/99228877 <span verifiable-text="end" data-for="ship">]</span>
+      verify:maersk.com/si/v <span verifiable-text="end" data-for="ship">]</span>
     </div>
   </div>
 </div>

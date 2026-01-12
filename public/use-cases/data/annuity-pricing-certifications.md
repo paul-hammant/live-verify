@@ -27,7 +27,7 @@ Verification ensures that the "High Interest Rate" an agent promises you on thei
 
 The annuity certification can arrive through different channels. Verification of them can happen from many of those starting points of claims made in a document/page: Email, WhatsApp, Windows or File explorer, PDF viewers. Forum apps like Discord or Slack, printed paper too, via a Camera app.
 
-<div id="format-showcase-annuity" class="content" data-format-showcase="[]" data-doc-content="" data-verify-line="verify:prudential.com/actuarial/v/x9y8z7">
+<div id="format-showcase-annuity" class="content" data-format-showcase="[]" data-doc-content="" data-verify-line="verify:prudential.com/actuarial/v">
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 1px solid #333; background: #fff; padding: 40px; box-shadow: 2px 2px 12px rgba(0,0,0,0.1);">
   <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 30px;">
     <div style="font-weight: bold; font-size: 1.1em; color: #1a237e;"><span verifiable-text="start" data-for="annuity">[</span>PRUDENTIAL FINANCIAL SERVICES</div>
@@ -54,7 +54,7 @@ The annuity certification can arrive through different channels. Verification of
   </div>
   <div data-verify-line="annuity" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Prudential doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:prudential.com/actuarial/rates/2026 <span verifiable-text="end" data-for="annuity">]</span>
+      verify:prudential.com/actuarial/rates <span verifiable-text="end" data-for="annuity">]</span>
   </div>
 </div>
 </div>

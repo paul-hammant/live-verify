@@ -40,7 +40,7 @@ A **Data Authorization Certificate** is a receipt for that digital handshake. It
     </div>
 <div data-verify-line="agg" style="border-top: 1px dashed #ccc; margin-top: 30px; padding-top: 15px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #444; text-align: center;"
       title="Demo only: Bank doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:fnbo.com/auth/v/x9y8z7 <span verifiable-text="end" data-for="agg">]</span>
+      verify:fnbo.com/auth/v <span verifiable-text="end" data-for="agg">]</span>
     </div>
   </div>
 </div>

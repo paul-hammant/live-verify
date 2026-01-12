@@ -29,7 +29,7 @@ ESTIMATED REPAIR TOTAL:                                  $ 6,800.00
 
 Adjuster:   Sarah Miller (ID #992)
 
-<span data-verify-line="claim">verify:allstate.com/claims/v/99228877</span> <span verifiable-text="end" data-for="claim">]</span></pre>
+<span data-verify-line="claim">verify:allstate.com/claims/v</span> <span verifiable-text="end" data-for="claim">]</span></pre>
 </div>
 
 ## Data Verified
@@ -153,7 +153,7 @@ Expiration Date:  JUL 01, 2026
 This card is for information only.
 Refer to your policy for actual coverage.
 
-<span data-verify-line="ins">verify:geico.com/v/99887766</span> <span verifiable-text="end" data-for="ins">]</span></pre>
+<span data-verify-line="ins">verify:geico.com/v</span> <span verifiable-text="end" data-for="ins">]</span></pre>
 </div>
 
 ## Data Verified
@@ -290,7 +290,7 @@ Collision Deductible                                         $ 500
 
 Vehicle:        2024 Ford F-150 (VIN ...9922)
 
-<span data-verify-line="autodec">verify:progressive.com/v/dec/998877</span> <span verifiable-text="end" data-for="autodec">]</span></pre>
+<span data-verify-line="autodec">verify:progressive.com/v/dec</span> <span verifiable-text="end" data-for="autodec">]</span></pre>
 </div>
 
 ## Data Verified
@@ -407,7 +407,7 @@ MAR 15, 2026                        MAR 20, 2026
 Damage Notations (Origin):
 Clean - no scratches, chips, or dents noted at time of pickup.
 
-<span data-verify-line="damage">verify:reliable-carriers.com/bol/v/RCC992</span> <span verifiable-text="end" data-for="damage">]</span></pre>
+<span data-verify-line="damage">verify:reliable-carriers.com/bol/v</span> <span verifiable-text="end" data-for="damage">]</span></pre>
 </div>
 
 ## Data Verified

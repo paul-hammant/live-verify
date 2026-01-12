@@ -41,7 +41,7 @@ Deductible (All Perils)                              $   1,000.00
 Mortgagee: Bank of America, N.A. (ISAOA/ATIMA)
            Loan #88776655
 
-<span data-verify-line="ho-dec">verify:statefarm.com/policy/v/99BC99228</span> <span verifiable-text="end" data-for="ho-dec">]</span></pre>
+<span data-verify-line="ho-dec">verify:statefarm.com/policy/v</span> <span verifiable-text="end" data-for="ho-dec">]</span></pre>
 </div>
 
 ## Data Verified
@@ -165,7 +165,7 @@ NET CLAIM TOTAL:                                       $ 14,550.00
 Adjuster:         Robert Miller (ID #992)
 Restoration Firm: ServePro of Anytown (Verified)
 
-<span data-verify-line="prop-claim">verify:allstate.com/claims/v/99228877</span> <span verifiable-text="end" data-for="prop-claim">]</span></pre>
+<span data-verify-line="prop-claim">verify:allstate.com/claims/v</span> <span verifiable-text="end" data-for="prop-claim">]</span></pre>
 </div>
 
 ## Data Verified
@@ -300,7 +300,7 @@ Annual Premium: $ 1,242.00
 Mortgagee: Wells Fargo Bank, N.A. (ISAOA/ATIMA)
            Loan #99887766
 
-<span data-verify-line="ho-pol">verify:libertymutual.com/policy/v/HO99228877</span> <span verifiable-text="end" data-for="ho-pol">]</span></pre>
+<span data-verify-line="ho-pol">verify:libertymutual.com/policy/v</span> <span verifiable-text="end" data-for="ho-pol">]</span></pre>
 </div>
 
 ## Data Verified

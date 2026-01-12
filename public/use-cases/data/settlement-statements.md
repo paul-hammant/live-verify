@@ -34,7 +34,7 @@ CASH TO CLOSE / FROM SELLER:      $ 114,250.00     $ 482,450.00
 Verification confirms the financial integrity of this closing.
 Any unauthorized payoff or fee alteration renders this statement void.
 
-<span data-verify-line="settle">verify:springfield-title.com/v/ESC99228877</span> <span verifiable-text="end" data-for="settle">]</span></pre>
+<span data-verify-line="settle">verify:springfield-title.com/v</span> <span verifiable-text="end" data-for="settle">]</span></pre>
 </div>
 
 ## Data Verified

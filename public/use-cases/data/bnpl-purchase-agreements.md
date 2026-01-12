@@ -30,7 +30,7 @@ Monthly Payment (12x):                                    $ 120.42
 By signing below, you agree to the terms of this installment loan.
 
 </pre>
-<span data-verify-line="bnpl">verify:affirm.com/loans/v/AF998877</span> <span verifiable-text="end" data-for="bnpl">]</span>
+<span data-verify-line="bnpl">verify:affirm.com/loans/v</span> <span verifiable-text="end" data-for="bnpl">]</span>
 </div>
 
 ## Data Verified

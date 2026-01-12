@@ -38,7 +38,7 @@ Base Fare (Non-Refundable / No Credit)                   $ 1,200.00
 TOTAL NON-REFUNDABLE LOSS:                               $ 1,200.00
 
 </pre>
-<span data-verify-line="cancel">verify:ba.com/cancel/v/L7XK9BDOE</span> <span verifiable-text="end" data-for="cancel">]</span>
+<span data-verify-line="cancel">verify:ba.com/cancel/v</span> <span verifiable-text="end" data-for="cancel">]</span>
 </div>
 
 ## Data Verified

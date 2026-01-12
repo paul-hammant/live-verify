@@ -42,7 +42,7 @@ _________________________              _________________________
 Founder Signature                      Investor Signature
 
 </pre>
-<span data-verify-line="safe">verify:verific.io/safe/v/SEQ2026-9922</span> <span verifiable-text="end" data-for="safe">]</span>
+<span data-verify-line="safe">verify:verific.io/safe/v</span> <span verifiable-text="end" data-for="safe">]</span>
 </div>
 
 ## Data Verified

@@ -46,7 +46,7 @@ Sellers often "Delete" the scary pages of these reports to trick buyers. Verifie
   </div>
 <div data-verify-line="condo" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Property manager doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:premier-mgmt.com/hoas/v/SKYLINE-12A <span verifiable-text="end" data-for="condo">]</span>
+      verify:premier-mgmt.com/hoas/v <span verifiable-text="end" data-for="condo">]</span>
   </div>
 </div>
 

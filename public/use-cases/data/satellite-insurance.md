@@ -34,7 +34,7 @@ In-Orbit Life:                                      15 Years (Guaranteed)
 This summary is a verified extract of Policy #SP-2026-8844.
 Coverage confirmed for Launch Window opening 15 MAR 2026.
 
-<span data-verify-line="space">verify:axaxl.com/space/v/SP99228877</span> <span verifiable-text="end" data-for="space">]</span></pre>
+<span data-verify-line="space">verify:axaxl.com/space/v</span> <span verifiable-text="end" data-for="space">]</span></pre>
 </div>
 
 ## Data Verified

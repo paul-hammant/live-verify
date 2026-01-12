@@ -36,7 +36,7 @@ ENDING BALANCE                               $ 1,500,000.42
 Verification protects every line of this statement.
 Alteration of balances is a federal crime.
 
-<span data-verify-line="bank">verify:chase.com/statements/v/x9y8z7</span> <span verifiable-text="end" data-for="bank">]</span></pre>
+<span data-verify-line="bank">verify:chase.com/statements/v</span> <span verifiable-text="end" data-for="bank">]</span></pre>
 </div>
 
 ## Data Verified

@@ -34,7 +34,7 @@ _________________________
 Robert Miller, QC Lead                               [QC PASS]
 Digital Signature ID: RM-992288
 
-<span data-verify-line="qc">verify:precision-alloys.com/v/LOT9922XJ</span> <span verifiable-text="end" data-for="qc">]</span></pre>
+<span data-verify-line="qc">verify:precision-alloys.com/v</span> <span verifiable-text="end" data-for="qc">]</span></pre>
 </div>
 
 ## Data Verified

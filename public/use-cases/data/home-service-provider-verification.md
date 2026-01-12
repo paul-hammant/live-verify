@@ -47,7 +47,7 @@ The **Verified Badge** is the worker's digital or physical ID. It proves:
     </p>
     <div data-verify-line="home-serv" style="border-top: 1px dashed #999; margin-top: 10px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Licensing board doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:tx-license.gov/v/ELEC992288 <span verifiable-text="end" data-for="home-serv">]</span>
+      verify:tx-license.gov/v <span verifiable-text="end" data-for="home-serv">]</span>
     </div>
   </div>
 </div>

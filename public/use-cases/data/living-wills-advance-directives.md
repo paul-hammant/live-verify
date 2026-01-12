@@ -33,7 +33,7 @@ furtherDerivations: 1
   </div>
 <div data-verify-line="will" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Healthcare system doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:cedars-sinai.org/legal/v/DOE-992288 <span verifiable-text="end" data-for="will">]</span>
+      verify:cedars-sinai.org/legal/v <span verifiable-text="end" data-for="will">]</span>
   </div>
 </div>
 

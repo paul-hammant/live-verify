@@ -36,7 +36,7 @@ This certificate proves the asset has been legally declared a
 Total Loss. Verification protects against "Title Washing" and
 fraudulent re-sale as a "Clean" vehicle.
 
-<span data-verify-line="salvage">verify:copart.com/v/VIN1ABC992288</span> <span verifiable-text="end" data-for="salvage">]</span></pre>
+<span data-verify-line="salvage">verify:copart.com/v</span> <span verifiable-text="end" data-for="salvage">]</span></pre>
 </div>
 
 ## Data Verified

@@ -38,7 +38,7 @@ Groundwater Table:                                 -32 FT (Observed)
                     License: #PE-992288
                     SEAL VERIFIED
 
-<span data-verify-line="geo">verify:summit-geo.com/v/GEO99228877</span> <span verifiable-text="end" data-for="geo">]</span></pre>
+<span data-verify-line="geo">verify:summit-geo.com/v</span> <span verifiable-text="end" data-for="geo">]</span></pre>
 </div>
 
 ## Data Verified

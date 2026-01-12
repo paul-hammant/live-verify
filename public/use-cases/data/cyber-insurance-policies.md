@@ -43,7 +43,7 @@ SECURITY ATTESTATION: Insured warrants that Multi-Factor
 Authentication (MFA) is active on all remote access points.
 
 </pre>
-<span data-verify-line="cyber-pol">verify:aig.com/cyber/v/CE99228877</span> <span verifiable-text="end" data-for="cyber-pol">]</span>
+<span data-verify-line="cyber-pol">verify:aig.com/cyber/v</span> <span verifiable-text="end" data-for="cyber-pol">]</span>
 </div>
 
 ## Data Verified

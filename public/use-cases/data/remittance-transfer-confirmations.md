@@ -46,7 +46,7 @@ Because these papers are essentially vouchers for cash, they are high-stakes tar
 <div style="padding: 20px; background: #fff; text-align: center;">
     <div data-verify-line="remit" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
       title="Demo only: Remittance firms don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:wu.com/v/MTCN9922887766 <span verifiable-text="end" data-for="remit">]</span>
+      verify:wu.com/v <span verifiable-text="end" data-for="remit">]</span>
     </div>
     <div style="font-size: 0.65em; color: #999; margin-top: 10px; font-style: italic;">
       Scan to verify transfer status and payment integrity. Protect your MTCN like cash.

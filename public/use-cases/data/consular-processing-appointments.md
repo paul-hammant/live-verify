@@ -43,7 +43,7 @@ Fraudsters often create fake notices to get people into high-security zones or t
     </div>
 <div data-verify-line="consul-app" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: NVC doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:nvc.state.gov/appointments/v/MTL2026998877 <span verifiable-text="end" data-for="consul-app">]</span>
+      verify:nvc.state.gov/appointments/v <span verifiable-text="end" data-for="consul-app">]</span>
     </div>
   </div>
 </div>

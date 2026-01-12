@@ -35,7 +35,7 @@ This permit authorizes discharge only during storm events.
 Any un-verified discharge or limit violation is subject to
 federal penalties of up to $50,000 per day.
 
-<span data-verify-line="water">verify:state-water.gov/npdes/v/NY992288Z</span> <span verifiable-text="end" data-for="water">]</span></pre>
+<span data-verify-line="water">verify:state-water.gov/npdes/v</span> <span verifiable-text="end" data-for="water">]</span></pre>
 </div>
 
 ## Data Verified

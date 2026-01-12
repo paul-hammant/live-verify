@@ -45,7 +45,7 @@ This document is the **Identification Form**. It acts as a timestamped "snapshot
     </div>
 <div data-verify-line="1031" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: This is an illustrative example of the verification line">
-      verify:equitable-exchange.com/v/8d7s9f
+      verify:equitable-exchange.com/v
     </div>
     <span verifiable-text="end" data-for="1031">]</span>
   </div>

@@ -35,7 +35,7 @@ This certificate is a verified extract of the Master Specie Policy.
 Coverage is contingent upon strict adherence to the transit
 protocols stated above.
 
-<span data-verify-line="specie">verify:axa-art.com/v/SP99228877</span> <span verifiable-text="end" data-for="specie">]</span></pre>
+<span data-verify-line="specie">verify:axa-art.com/v</span> <span verifiable-text="end" data-for="specie">]</span></pre>
 </div>
 
 ## Data Verified

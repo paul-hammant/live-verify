@@ -40,7 +40,7 @@ This is an official document—usually a **Secretary's Certificate**—where the
   </div>
 <div data-verify-line="corp" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Corporation doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:waystar-royco.com/legal/v/998877 <span verifiable-text="end" data-for="corp">]</span>
+      verify:waystar-royco.com/legal/v <span verifiable-text="end" data-for="corp">]</span>
   </div>
 </div>
 

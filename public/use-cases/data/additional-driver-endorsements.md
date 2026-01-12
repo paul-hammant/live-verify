@@ -31,7 +31,7 @@ Starts:  15 MAR 2026 15:30                Ends:    22 MAR 2026 23:59
 Coverage extended only to the named operator while driving
 with owner's permission.
 
-<span data-verify-line="endorse">verify:safeguard-ins.com/v/END99228877</span> <span verifiable-text="end" data-for="endorse">]</span></pre>
+<span data-verify-line="endorse">verify:safeguard-ins.com/v</span> <span verifiable-text="end" data-for="endorse">]</span></pre>
 </div>
 
 ## Data Verified
@@ -69,7 +69,7 @@ The person being added shouldn't just take the policyholder's word for it. Consi
    You are now covered to drive the 2024 Tesla Model Y
    from 15 Mar 2026 to 22 Mar 2026.
 
-   verify:safeguard-ins.com/v/END99228877
+   verify:safeguard-ins.com/v
    ```
 
 2. **Show the App** — Policyholder shows their phone screen to the temp driver. A quick camera snap of the endorsement screen (with verify line visible) is sufficient proof—the temp driver can verify it themselves later.

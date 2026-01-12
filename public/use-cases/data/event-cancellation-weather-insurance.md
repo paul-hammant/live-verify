@@ -43,7 +43,7 @@ The policy is "Parametric"—meaning it pays out automatically if a specific wea
     </div>
 <div data-verify-line="event-cancel" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Hiscox doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:hiscox.com/specialty/v/ACL-2026-W1 <span verifiable-text="end" data-for="event-cancel">]</span>
+      verify:hiscox.com/specialty/v <span verifiable-text="end" data-for="event-cancel">]</span>
     </div>
   </div>
 </div>

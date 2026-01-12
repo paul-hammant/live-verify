@@ -39,7 +39,7 @@ certified acts of terrorism is $42,500.00."
                                                   └────────────────┘
 
 </pre>
-<span data-verify-line="tripra">verify:zurich.com/v/TR99228877</span> <span verifiable-text="end" data-for="tripra">]</span>
+<span data-verify-line="tripra">verify:zurich.com/v</span> <span verifiable-text="end" data-for="tripra">]</span>
 </div>
 
 ## Data Verified

@@ -43,7 +43,7 @@ Fraud happens when a seller "Deletes" the page of the report that mentions a bur
   </div>
 <div data-verify-line="esa" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Enviro-Consult doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:enviroconsult.com/reports/v/EC-P1-402 <span verifiable-text="end" data-for="esa">]</span>
+      verify:enviroconsult.com/reports/v <span verifiable-text="end" data-for="esa">]</span>
   </div>
 </div>
 

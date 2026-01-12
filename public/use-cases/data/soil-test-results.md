@@ -39,7 +39,7 @@ levels post-harvest. No lime required.
 This report is a verified digital copy of the original lab
 analysis. Alteration of metrics renders this report void.
 
-<span data-verify-line="soil">verify:agrolabs.com/v/N42-992288</span> <span verifiable-text="end" data-for="soil">]</span></pre>
+<span data-verify-line="soil">verify:agrolabs.com/v</span> <span verifiable-text="end" data-for="soil">]</span></pre>
 </div>
 
 ## Data Verified

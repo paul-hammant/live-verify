@@ -37,7 +37,7 @@ Cathodic Protection:                               ACTIVE / TESTED
 
                         [EPA COMPLIANT]
 
-<span data-verify-line="ust">verify:epa.gov/ust/v/99228877XJ</span> <span verifiable-text="end" data-for="ust">]</span></pre>
+<span data-verify-line="ust">verify:epa.gov/ust/v</span> <span verifiable-text="end" data-for="ust">]</span></pre>
 </div>
 
 ## Data Verified

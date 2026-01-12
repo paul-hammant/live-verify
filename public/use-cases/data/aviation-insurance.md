@@ -44,7 +44,7 @@ NOTE: This certificate is issued as a matter of information only
 and confers no rights upon the holder.
 
 </pre>
-  <span data-verify-line="aviation">verify:global-aerospace.com/v/N101CS-2026</span> <span verifiable-text="end" data-for="aviation">]</span>
+  <span data-verify-line="aviation">verify:global-aerospace.com/v</span> <span verifiable-text="end" data-for="aviation">]</span>
 </div>
 
 ## Data Verified

@@ -25,7 +25,7 @@ Profession:           Physician & Surgeon
 
 Authorized to practice medicine in the State of New York.
 
-<span data-verify-line="prof">verify:nysed.gov/v/med/NY992288X</span> <span verifiable-text="end" data-for="prof">]</span></pre>
+<span data-verify-line="prof">verify:nysed.gov/v/med</span> <span verifiable-text="end" data-for="prof">]</span></pre>
 </div>
 
 ## Data Verified

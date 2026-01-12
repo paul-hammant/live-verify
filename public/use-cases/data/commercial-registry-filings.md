@@ -24,9 +24,9 @@ Commercial registry fraud is widespread: fake incorporation documents, forged go
   Status: Active / Good Standing<br>
   <br>
   Directors:<br>
-  - Sarah Chen (Chair) verify:corp.delaware.gov/d/7741892-001<br>
-  - Michael Torres verify:corp.delaware.gov/d/7741892-002<br>
-  - James Wilson verify:corp.delaware.gov/d/7741892-003<br>
+  - Sarah Chen (Chair) verify:corp.delaware.gov/d<br>
+  - Michael Torres verify:corp.delaware.gov/d<br>
+  - James Wilson verify:corp.delaware.gov/d<br>
   <span data-verify-line="corp">verify:corp.delaware.gov/entity</span> <span verifiable-text="end" data-for="corp">]</span>
 </div>
 
@@ -43,7 +43,7 @@ Directors are verified separately from the entity. Each director appointment get
   Role: Chair of the Board<br>
   Appointed: January 5, 2026<br>
   Status: CURRENT<br>
-  <span data-verify-line="dir1">verify:corp.delaware.gov/d/7741892-001</span> <span verifiable-text="end" data-for="dir1">]</span>
+  <span data-verify-line="dir1">verify:corp.delaware.gov/d</span> <span verifiable-text="end" data-for="dir1">]</span>
 </div>
 
 <div style="font-family: 'Courier New', monospace; background: #f9f9f9; padding: 15px; border: 1px solid #999; font-size: 1em; color: #000; line-height: 1.6; max-width: 550px; margin: 24px auto;">
@@ -56,7 +56,7 @@ Directors are verified separately from the entity. Each director appointment get
   Appointed: 15 March 2020<br>
   Resigned: 22 November 2025<br>
   Status: SUPERSEDED<br>
-  <span data-verify-line="dir2">verify:companieshouse.gov.uk/d/12345678-004</span> <span verifiable-text="end" data-for="dir2">]</span>
+  <span data-verify-line="dir2">verify:companieshouse.gov.uk/d</span> <span verifiable-text="end" data-for="dir2">]</span>
 </div>
 
 **Why No Linking:** When a director is superseded, we don't link to their replacement. The company registry maintains the full historical record of director changes. Verification answers a simpler question: "Was this person a director, and are they still?" This avoids encoding complex succession graphs into hashes and respects that a former director's record stands on its own.
@@ -293,15 +293,15 @@ Who actually owns a company? Beneficial ownership registers attempt to answer th
      Registration: Cayman #MC-445521<br>
      Nature: RLE (Relevant Legal Entity)<br>
      Notified: 15 March 2022<br>
-     verify:companieshouse.gov.uk/psc/09876543-001<br>
+     verify:companieshouse.gov.uk/psc<br>
   <br>
   2. James Morrison<br>
      DOB: June 1978<br>
      Nationality: British<br>
      Ownership: 25% shares, 25% voting rights<br>
      Notified: 15 March 2022<br>
-     verify:companieshouse.gov.uk/psc/09876543-002<br>
-  <span data-verify-line="psc1">verify:companieshouse.gov.uk/psc/09876543</span> <span verifiable-text="end" data-for="psc1">]</span>
+     verify:companieshouse.gov.uk/psc<br>
+  <span data-verify-line="psc1">verify:companieshouse.gov.uk/psc</span> <span verifiable-text="end" data-for="psc1">]</span>
 </div>
 
 <div style="font-family: 'Courier New', monospace; background: #f9f9f9; padding: 15px; border: 1px solid #999; font-size: 1em; color: #000; line-height: 1.6; max-width: 550px; margin: 24px auto;">
@@ -320,7 +320,7 @@ Who actually owns a company? Beneficial ownership registers attempt to answer th
      Filed: January 2, 2026<br>
   <br>
   Company Applicant: John Smith, Registered Agent<br>
-  <span data-verify-line="boi1">verify:fincen.gov/boi/84-7723991</span> <span verifiable-text="end" data-for="boi1">]</span>
+  <span data-verify-line="boi1">verify:fincen.gov/boi</span> <span verifiable-text="end" data-for="boi1">]</span>
 </div>
 
 **What Verification Proves (and Doesn't)**

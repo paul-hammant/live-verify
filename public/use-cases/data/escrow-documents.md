@@ -41,7 +41,7 @@ increase by $ 42.50 starting May 1st due to a projected escrow
 deficiency.
 
 </pre>
-<span data-verify-line="escrow">verify:mrcooper.com/escrow/v/99228877</span> <span verifiable-text="end" data-for="escrow">]</span>
+<span data-verify-line="escrow">verify:mrcooper.com/escrow/v</span> <span verifiable-text="end" data-for="escrow">]</span>
 </div>
 
 ## Data Verified
@@ -179,7 +179,7 @@ ________________________
 Elena Rossi, Escrow Officer                            [ESCROW SEAL]
 
 </pre>
-<span data-verify-line="escrow-wire">verify:firstam.com/escrow/v/2026-992288</span> <span verifiable-text="end" data-for="escrow-wire">]</span>
+<span data-verify-line="escrow-wire">verify:firstam.com/escrow/v</span> <span verifiable-text="end" data-for="escrow-wire">]</span>
 </div>
 
 ## Data Verified
@@ -321,7 +321,7 @@ NET CASH TO SELLERS                                 $ 44,250,000.00
 Closing Date: March 15, 2026
 
 </pre>
-<span data-verify-line="ma">verify:jpmorgan.com/escrow/v/BLUEBIRD-2026</span> <span verifiable-text="end" data-for="ma">]</span>
+<span data-verify-line="ma">verify:jpmorgan.com/escrow/v</span> <span verifiable-text="end" data-for="ma">]</span>
 </div>
 
 ## Data Verified
@@ -411,7 +411,7 @@ ________________________                     Date: March 15, 2026
 Seller Signature
 
 </pre>
-<span data-verify-line="escrow-inst">verify:stewart.com/escrow/v/992288-DA</span> <span verifiable-text="end" data-for="escrow-inst">]</span>
+<span data-verify-line="escrow-inst">verify:stewart.com/escrow/v</span> <span verifiable-text="end" data-for="escrow-inst">]</span>
 </div>
 
 ## Data Verified

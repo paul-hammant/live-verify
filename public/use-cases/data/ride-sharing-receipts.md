@@ -36,7 +36,7 @@ Tip                                                          $ 5.00
 TOTAL (USD)                                                 $ 42.50
 
 </pre>
-<span data-verify-line="ride">verify:uber.com/receipts/v/99228877XJ</span> <span verifiable-text="end" data-for="ride">]</span>
+<span data-verify-line="ride">verify:uber.com/receipts/v</span> <span verifiable-text="end" data-for="ride">]</span>
 </div>
 
 ## Data Verified

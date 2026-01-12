@@ -32,7 +32,7 @@ Verified Employee Count:                             12 (Class 5445)
 Unauthorized alteration of class codes or employee counts
 renders this document void.
 
-<span data-verify-line="comp">verify:libertymutual.com/v/WC99228877</span> <span verifiable-text="end" data-for="comp">]</span></pre>
+<span data-verify-line="comp">verify:libertymutual.com/v</span> <span verifiable-text="end" data-for="comp">]</span></pre>
 </div>
 
 ## Data Verified

@@ -39,7 +39,7 @@ Trucking is a fragmented industry. Verified CMRs prevent "Weight Fraud" (lying a
 ───────────────────────────────────────────────────────────────────
 Sender Signature       Carrier Signature       Consignee Signature
 
-<span data-verify-line="cmr">verify:dhl-logistics.com/cmr/v/99887766</span> <span verifiable-text="end" data-for="cmr">]</span></pre>
+<span data-verify-line="cmr">verify:dhl-logistics.com/cmr/v</span> <span verifiable-text="end" data-for="cmr">]</span></pre>
 </div>
 
 ## Data Verified

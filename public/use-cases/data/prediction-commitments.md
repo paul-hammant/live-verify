@@ -28,7 +28,7 @@ Anyone can claim "I predicted that" after the fact. A **Prediction Commitment** 
   Resolution Date: 2027-01-01<br>
   <br>
   Status: PENDING<br>
-  <span data-verify-line="pred1">verify:metaculus.com/pred/2847-gpt5-2026</span> <span verifiable-text="end" data-for="pred1">]</span>
+  <span data-verify-line="pred1">verify:metaculus.com/pred</span> <span verifiable-text="end" data-for="pred1">]</span>
 </div>
 
 <div style="font-family: 'Courier New', monospace; background: #f9f9f9; padding: 15px; border: 1px solid #999; font-size: 1em; color: #000; line-height: 1.6; max-width: 550px; margin: 24px auto;">
@@ -45,7 +45,7 @@ Anyone can claim "I predicted that" after the fact. A **Prediction Commitment** 
   Reporting Date: April 15, 2026<br>
   <br>
   Status: PENDING<br>
-  <span data-verify-line="pred2">verify:sec.gov/guidance/TECH-Q1-2026</span> <span verifiable-text="end" data-for="pred2">]</span>
+  <span data-verify-line="pred2">verify:sec.gov/guidance</span> <span verifiable-text="end" data-for="pred2">]</span>
 </div>
 
 <div style="font-family: 'Courier New', monospace; background: #f9f9f9; padding: 15px; border: 1px solid #999; font-size: 1em; color: #000; line-height: 1.6; max-width: 550px; margin: 24px auto;">
@@ -65,7 +65,7 @@ Anyone can claim "I predicted that" after the fact. A **Prediction Commitment** 
   Brier Score: 0.12 (excellent)<br>
   <br>
   Resolved: 2026-01-10<br>
-  <span data-verify-line="pred3">verify:metaculus.com/pred/2847-inflation-2025</span> <span verifiable-text="end" data-for="pred3">]</span>
+  <span data-verify-line="pred3">verify:metaculus.com/pred</span> <span verifiable-text="end" data-for="pred3">]</span>
 </div>
 
 <div style="font-family: 'Courier New', monospace; background: #f9f9f9; padding: 15px; border: 1px solid #999; font-size: 1em; color: #000; line-height: 1.6; max-width: 550px; margin: 24px auto;">
@@ -84,7 +84,7 @@ Anyone can claim "I predicted that" after the fact. A **Prediction Commitment** 
   Deadline: December 31, 2026<br>
   <br>
   Status: PENDING<br>
-  <span data-verify-line="pred4">verify:beeminder.com/goal/jd42-marathon-2026</span> <span verifiable-text="end" data-for="pred4">]</span>
+  <span data-verify-line="pred4">verify:beeminder.com/goal</span> <span verifiable-text="end" data-for="pred4">]</span>
 </div>
 
 <div style="font-family: 'Courier New', monospace; background: #f9f9f9; padding: 15px; border: 1px solid #999; font-size: 1em; color: #000; line-height: 1.6; max-width: 550px; margin: 24px auto;">
@@ -102,7 +102,7 @@ Anyone can claim "I predicted that" after the fact. A **Prediction Commitment** 
   Model Version: EPI-MACRO-v3.2<br>
   <br>
   Published: January 7, 2026<br>
-  <span data-verify-line="pred5">verify:epi.org/forecast/unemployment-q2-2026</span> <span verifiable-text="end" data-for="pred5">]</span>
+  <span data-verify-line="pred5">verify:epi.org/forecast</span> <span verifiable-text="end" data-for="pred5">]</span>
 </div>
 
 <div style="font-family: 'Courier New', monospace; background: #f9f9f9; padding: 15px; border: 1px solid #999; font-size: 1em; color: #000; line-height: 1.6; max-width: 550px; margin: 24px auto;">
@@ -120,7 +120,7 @@ Anyone can claim "I predicted that" after the fact. A **Prediction Commitment** 
   Target Completion: April 15, 2026<br>
   <br>
   Status: IN PROGRESS<br>
-  <span data-verify-line="pred6">verify:devshop.com/est/acme-portal-2026</span> <span verifiable-text="end" data-for="pred6">]</span>
+  <span data-verify-line="pred6">verify:devshop.com/est</span> <span verifiable-text="end" data-for="pred6">]</span>
 </div>
 
 ## Why Prediction Commitments Matter

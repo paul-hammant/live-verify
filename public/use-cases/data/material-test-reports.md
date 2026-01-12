@@ -34,7 +34,7 @@ We hereby certify that the material has been tested and found to
 be in compliance with the above listed specifications.
 
 </pre>
-<span data-verify-line="mtr">verify:sheffield-steel.co.uk/mtr/v/HEAT992288</span> <span verifiable-text="end" data-for="mtr">]</span>
+<span data-verify-line="mtr">verify:sheffield-steel.co.uk/mtr/v</span> <span verifiable-text="end" data-for="mtr">]</span>
 </div>
 
 ## Data Verified

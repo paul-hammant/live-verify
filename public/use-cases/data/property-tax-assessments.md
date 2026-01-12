@@ -39,7 +39,7 @@ applicable exemptions. This assessment is used to calculate your
 final tax bill."
 
 </pre>
-<span data-verify-line="tax-assess">verify:springfieldassessor.gov/v/PIN1442992288</span> <span verifiable-text="end" data-for="tax-assess">]</span>
+<span data-verify-line="tax-assess">verify:springfieldassessor.gov/v</span> <span verifiable-text="end" data-for="tax-assess">]</span>
 </div>
 
 ## Data Verified

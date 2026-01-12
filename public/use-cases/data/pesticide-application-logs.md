@@ -34,7 +34,7 @@ _________________________
 David Chen, Certified Applicator              [ENTRY RESTRICTED
 License: #NY-PEST-992288 - Exp: 2027          UNTIL 17 MAR]
 
-<span data-verify-line="pest">verify:sunnyacres.farm/v/NY42-2026</span> <span verifiable-text="end" data-for="pest">]</span></pre>
+<span data-verify-line="pest">verify:sunnyacres.farm/v</span> <span verifiable-text="end" data-for="pest">]</span></pre>
 </div>
 
 ## Data Verified

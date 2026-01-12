@@ -40,7 +40,7 @@ Maximum Benefit Period:   To Age 65
 _________________________
 Robert Miller, Actuary                  Certified by MetLife Claims Group
 
-<span data-verify-line="disability">verify:metlife.com/benefits/v/DI992288</span> <span verifiable-text="end" data-for="disability">]</span></pre>
+<span data-verify-line="disability">verify:metlife.com/benefits/v</span> <span verifiable-text="end" data-for="disability">]</span></pre>
 </div>
 
 ## Data Verified

@@ -35,7 +35,7 @@ TOTAL PATIENT RESPONSIBILITY:                     $ 70.00
 
 This is NOT a bill. Use this verified record for HSA/FSA reimbursement.
 
-<span data-verify-line="eob-health">verify:anthem.com/claims/v/99228877</span> <span verifiable-text="end" data-for="eob-health">]</span></pre>
+<span data-verify-line="eob-health">verify:anthem.com/claims/v</span> <span verifiable-text="end" data-for="eob-health">]</span></pre>
 </div>
 
 ## Data Verified

@@ -31,7 +31,7 @@ Issued:         15 MAR 2026              Expires:  14 MAR 2027
 "This document is issued under the 1951 Convention
 relating to the Status of Refugees."
 
-<span data-verify-line="refugee">verify:uscis.gov/v/i571/RT99228877</span> <span verifiable-text="end" data-for="refugee">]</span></pre>
+<span data-verify-line="refugee">verify:uscis.gov/v/i571</span> <span verifiable-text="end" data-for="refugee">]</span></pre>
 </div>
 
 ## Data Verified

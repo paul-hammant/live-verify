@@ -24,7 +24,7 @@ Most documents prove something happened. An **Absence Certificate** proves somet
   Enforcement Actions: NONE<br>
   <br>
   Certificate Date: 5 January 2026<br>
-  <span data-verify-line="abs1">verify:tradingstandards.gov.uk/clear/08876543</span> <span verifiable-text="end" data-for="abs1">]</span>
+  <span data-verify-line="abs1">verify:tradingstandards.gov.uk/clear</span> <span verifiable-text="end" data-for="abs1">]</span>
 </div>
 
 <div style="font-family: 'Courier New', monospace; background: #f9f9f9; padding: 15px; border: 1px solid #999; font-size: 1em; color: #000; line-height: 1.6; max-width: 550px; margin: 24px auto;">
@@ -41,7 +41,7 @@ Most documents prove something happened. An **Absence Certificate** proves somet
   Lis Pendens: NONE<br>
   <br>
   Certificate Date: January 8, 2026<br>
-  <span data-verify-line="abs2">verify:lavote.gov/recorder/clear/5523-017-044</span> <span verifiable-text="end" data-for="abs2">]</span>
+  <span data-verify-line="abs2">verify:lavote.gov/recorder/clear</span> <span verifiable-text="end" data-for="abs2">]</span>
 </div>
 
 <div style="font-family: 'Courier New', monospace; background: #f9f9f9; padding: 15px; border: 1px solid #999; font-size: 1em; color: #000; line-height: 1.6; max-width: 550px; margin: 24px auto;">
@@ -58,7 +58,7 @@ Most documents prove something happened. An **Absence Certificate** proves somet
   Safety Alerts: NONE<br>
   <br>
   Certificate Date: January 6, 2026<br>
-  <span data-verify-line="abs3">verify:fda.gov/medwatch/clear/K223456</span> <span verifiable-text="end" data-for="abs3">]</span>
+  <span data-verify-line="abs3">verify:fda.gov/medwatch/clear</span> <span verifiable-text="end" data-for="abs3">]</span>
 </div>
 
 <div style="font-family: 'Courier New', monospace; background: #f9f9f9; padding: 15px; border: 1px solid #999; font-size: 1em; color: #000; line-height: 1.6; max-width: 550px; margin: 24px auto;">
@@ -75,7 +75,7 @@ Most documents prove something happened. An **Absence Certificate** proves somet
   <br>
   Check Date: January 9, 2026 14:32 UTC<br>
   Valid For: 24 hours<br>
-  <span data-verify-line="abs4">verify:treasury.gov/ofac/clear/84-7234561</span> <span verifiable-text="end" data-for="abs4">]</span>
+  <span data-verify-line="abs4">verify:treasury.gov/ofac/clear</span> <span verifiable-text="end" data-for="abs4">]</span>
 </div>
 
 <div style="font-family: 'Courier New', monospace; background: #f9f9f9; padding: 15px; border: 1px solid #999; font-size: 1em; color: #000; line-height: 1.6; max-width: 550px; margin: 24px auto;">
@@ -92,7 +92,7 @@ Most documents prove something happened. An **Absence Certificate** proves somet
   License Restrictions: NONE<br>
   <br>
   Certificate Date: January 7, 2026<br>
-  <span data-verify-line="abs5">verify:med.ohio.gov/clear/35-087234</span> <span verifiable-text="end" data-for="abs5">]</span>
+  <span data-verify-line="abs5">verify:med.ohio.gov/clear</span> <span verifiable-text="end" data-for="abs5">]</span>
 </div>
 
 ## Why Absence is Hard to Prove

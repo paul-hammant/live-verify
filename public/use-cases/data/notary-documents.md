@@ -39,7 +39,7 @@ Because it is an "Authentic Act," it has enormous legal weight:
   </div>
 <div data-verify-line="not-will" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Notary Chamber doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:notaires.qc.ca/v/2026-992288 <span verifiable-text="end" data-for="not-will">]</span>
+      verify:notaires.qc.ca/v <span verifiable-text="end" data-for="not-will">]</span>
   </div>
 </div>
 
@@ -168,7 +168,7 @@ OCR-to-hash binds the **Notary's commission number, the signer's name, and the s
   </div>
 <div data-verify-line="notary" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
     title="Demo only: Florida Secretary of State doesn't yet offer verification&#10;endpoints, so this is illustrative">
-    verify:flsos.gov/notary/v/HH992288 <span verifiable-text="end" data-for="notary">]</span>
+    verify:flsos.gov/notary/v <span verifiable-text="end" data-for="notary">]</span>
   </div>
 </div>
 
@@ -303,7 +303,7 @@ The problem is that the "Notary Seal" (the ink stamp or embossed circle) is a ph
 <div style="padding: 20px; background: #f9f9f9; border: 1px dashed #999; margin-top: 40px; text-align: center;">
     <div data-verify-line="notary" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: Individual notaries don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:sarahnotary.com/v/ACT2026-9922 <span verifiable-text="end" data-for="notary">]</span>
+      verify:sarahnotary.com/v <span verifiable-text="end" data-for="notary">]</span>
     </div>
     <div style="font-size: 0.7em; color: #666; margin-top: 10px;">
       Scan to verify notary commission standing, witness authority, and journal entry integrity.
@@ -406,7 +406,7 @@ The problem is that a "Digital Seal" is often just a pretty image on a PDF. Frau
     </div>
     <div data-verify-line="ron" style="font-family: 'Courier New', monospace; font-size: 0.85em; color: #000; font-weight: bold;"
       title="Demo only: RON platforms don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:notarize.com/v/RON8844X92 <span verifiable-text="end" data-for="ron">]</span>
+      verify:notarize.com/v <span verifiable-text="end" data-for="ron">]</span>
     </div>
   </div>
 </div>

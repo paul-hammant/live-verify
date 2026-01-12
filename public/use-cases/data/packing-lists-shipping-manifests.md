@@ -36,7 +36,7 @@ TOTAL CARGO WEIGHT:                                        2,290.00 kg
 
 Seal Number: 000992288 (Verified Intact at Origin)
 
-<span data-verify-line="pack">verify:sz-tech.com/cargo/v/M992288</span> <span verifiable-text="end" data-for="pack">]</span></pre>
+<span data-verify-line="pack">verify:sz-tech.com/cargo/v</span> <span verifiable-text="end" data-for="pack">]</span></pre>
   </div>
 </div>
 

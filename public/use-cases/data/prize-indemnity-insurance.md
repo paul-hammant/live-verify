@@ -33,7 +33,7 @@ MANDATORY WIN CONDITIONS
 
 Premium paid and coverage in force for the stated event.
 
-<span data-verify-line="prize">verify:hiscox.com/prize/v/PI992288XJ</span> <span verifiable-text="end" data-for="prize">]</span></pre>
+<span data-verify-line="prize">verify:hiscox.com/prize/v</span> <span verifiable-text="end" data-for="prize">]</span></pre>
 </div>
 
 ## Data Verified

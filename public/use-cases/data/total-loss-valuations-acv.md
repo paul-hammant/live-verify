@@ -30,7 +30,7 @@ Vehicle:   2024 Honda Accord EX        Mileage:   12,450 (Verified)
 Comparables:   3 matching vehicles in 50-mile radius (Avg: $28,600)
 Adjustments:   - $150 (Tire Wear), + $0 (Equipment)
 
-<span data-verify-line="total-loss">verify:cccis.com/v/VAL99228877</span> <span verifiable-text="end" data-for="total-loss">]</span></pre>
+<span data-verify-line="total-loss">verify:cccis.com/v</span> <span verifiable-text="end" data-for="total-loss">]</span></pre>
 </div>
 
 ## Data Verified

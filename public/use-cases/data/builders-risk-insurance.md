@@ -38,7 +38,7 @@ NOTICE: Coverage automatically terminates upon substantial
 completion or occupancy.
 
 </pre>
-<span data-verify-line="build">verify:zurichna.com/construction/v/BRI992288</span> <span verifiable-text="end" data-for="build">]</span>
+<span data-verify-line="build">verify:zurichna.com/construction/v</span> <span verifiable-text="end" data-for="build">]</span>
 </div>
 
 ## Data Verified

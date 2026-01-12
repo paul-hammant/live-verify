@@ -43,7 +43,7 @@ If a company is in financial trouble, they might "Edit" this report to hide a fu
   </div>
 <div data-verify-line="erisa" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Milliman doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:milliman.com/erisa/v/INITECH-2025 <span verifiable-text="end" data-for="erisa">]</span>
+      verify:milliman.com/erisa/v <span verifiable-text="end" data-for="erisa">]</span>
   </div>
 </div>
 

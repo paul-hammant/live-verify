@@ -33,7 +33,7 @@ TOTAL FILED RATE:                                      $ 3,670.00
 
 FMC Compliance: Filed with Federal Maritime Commission.
 
-<span data-verify-line="tariff">verify:gfreight.com/tariffs/v/SHA-LAX-2026</span> <span verifiable-text="end" data-for="tariff">]</span></pre>
+<span data-verify-line="tariff">verify:gfreight.com/tariffs/v</span> <span verifiable-text="end" data-for="tariff">]</span></pre>
 </div>
 
 ## Data Verified

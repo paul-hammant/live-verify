@@ -38,7 +38,7 @@ Government Regulations.
 Signatory:  Wang Wei (Certified Packer)
 Date:       15 MAR 2026
 
-<span data-verify-line="dgr">verify:iata-dgr.org/v/016-99228877</span> <span verifiable-text="end" data-for="dgr">]</span></pre>
+<span data-verify-line="dgr">verify:iata-dgr.org/v</span> <span verifiable-text="end" data-for="dgr">]</span></pre>
 </div>
 
 ## Data Verified
@@ -169,7 +169,7 @@ international and national governmental regulations.
 Signatory:  Hans Muller
 Date:       15 MAR 2026
 
-<span data-verify-line="imo-dgd">verify:hapaq-lloyd.com/dgd/v/UN1090-MSKU</span> <span verifiable-text="end" data-for="imo-dgd">]</span></pre>
+<span data-verify-line="imo-dgd">verify:hapaq-lloyd.com/dgd/v</span> <span verifiable-text="end" data-for="imo-dgd">]</span></pre>
 </div>
 
 ## Data Verified
@@ -302,7 +302,7 @@ Quantity: 24,000 Liters (Bulk Tanker)
 The driver confirms the vehicle is equipped with mandatory
 fire extinguishers and ADR/DOT placards.
 
-<span data-verify-line="road-dg">verify:trans-euro.com/dg/v/UN1203-ABC</span> <span verifiable-text="end" data-for="road-dg">]</span></pre>
+<span data-verify-line="road-dg">verify:trans-euro.com/dg/v</span> <span verifiable-text="end" data-for="road-dg">]</span></pre>
 </div>
 
 ## Data Verified

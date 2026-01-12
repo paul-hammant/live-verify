@@ -41,7 +41,7 @@ Verification confirms the grades and credits match the student's
 official record.
 
 </pre>
-<span data-verify-line="transcript">verify:ox.ac.uk/registrar/v/992288-PS</span> <span verifiable-text="end" data-for="transcript">]</span>
+<span data-verify-line="transcript">verify:ox.ac.uk/registrar/v</span> <span verifiable-text="end" data-for="transcript">]</span>
 </div>
 
 ## Data Verified

@@ -44,7 +44,7 @@ This certificate is the "License to Sell" to big retailers. Shady factories that
     </div>
 <div data-verify-line="food-safe" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: SQF doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:sqfi.com/v/SQF99228877 <span verifiable-text="end" data-for="food-safe">]</span>
+      verify:sqfi.com/v <span verifiable-text="end" data-for="food-safe">]</span>
     </div>
   </div>
 </div>

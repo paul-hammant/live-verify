@@ -39,7 +39,7 @@ This statement is a verified record of your mileage balance and
 tier status. Valid for status-match applications.
 
 </pre>
-<span data-verify-line="loyalty">verify:aa.com/loyalty/v/99228877</span> <span verifiable-text="end" data-for="loyalty">]</span>
+<span data-verify-line="loyalty">verify:aa.com/loyalty/v</span> <span verifiable-text="end" data-for="loyalty">]</span>
 </div>
 
 ## Data Verified

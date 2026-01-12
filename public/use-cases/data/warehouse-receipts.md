@@ -148,7 +148,7 @@ TOTAL VERIFIED ASSET VALUE (USD):                      $ 250,000.00
 TERMS: Goods are stored subject to the Standard Warehouse Contract.
 Negotiable only if endorsed. Lien active for unpaid storage fees.
 
-<span data-verify-line="warehouse">verify:metro-logistics.com/v/WR20268844</span> <span verifiable-text="end" data-for="warehouse">]</span></pre>
+<span data-verify-line="warehouse">verify:metro-logistics.com/v</span> <span verifiable-text="end" data-for="warehouse">]</span></pre>
 </div>
 
 ## Data Verified

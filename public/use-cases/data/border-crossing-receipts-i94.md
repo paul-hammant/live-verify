@@ -37,7 +37,7 @@ furtherDerivations: 1
     </div>
 <div data-verify-line="i94" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: CBP doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:cbp.gov/i94/v/99887766542 <span verifiable-text="end" data-for="i94">]</span>
+      verify:cbp.gov/i94/v <span verifiable-text="end" data-for="i94">]</span>
     </div>
   </div>
 </div>

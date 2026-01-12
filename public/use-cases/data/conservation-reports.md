@@ -46,7 +46,7 @@ Fraudsters often hide "Over-Restoration"—where so much new paint has been adde
     </div>
 <div data-verify-line="conserve" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Getty Institute doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:getty.edu/conservation/v/GCI992 <span verifiable-text="end" data-for="conserve">]</span>
+      verify:getty.edu/conservation/v <span verifiable-text="end" data-for="conserve">]</span>
     </div>
   </div>
 </div>

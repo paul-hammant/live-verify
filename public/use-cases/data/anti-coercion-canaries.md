@@ -30,7 +30,7 @@ A **canary** is a signal whose *absence* indicates a problem. Coal miners used c
   This canary is updated weekly.<br>
   Last update: 2026-01-10 00:00 UTC<br>
   Next expected: 2026-01-17<br>
-  <span data-verify-line="can1">verify:securecloud.com/canary/2026-w02</span> <span verifiable-text="end" data-for="can1">]</span>
+  <span data-verify-line="can1">verify:securecloud.com/canary</span> <span verifiable-text="end" data-for="can1">]</span>
 </div>
 
 <div style="font-family: 'Courier New', monospace; background: #f9f9f9; padding: 15px; border: 1px solid #999; font-size: 1em; color: #000; line-height: 1.6; max-width: 550px; margin: 24px auto;">
@@ -50,7 +50,7 @@ A **canary** is a signal whose *absence* indicates a problem. Coal miners used c
   Next expected: 2026-01-10 18:00 UTC<br>
   <br>
   Emergency contact notified if missed.<br>
-  <span data-verify-line="can2">verify:safetraveler.org/checkin/44782-0109</span> <span verifiable-text="end" data-for="can2">]</span>
+  <span data-verify-line="can2">verify:safetraveler.org/checkin</span> <span verifiable-text="end" data-for="can2">]</span>
 </div>
 
 <div style="font-family: 'Courier New', monospace; background: #f9f9f9; padding: 15px; border: 1px solid #999; font-size: 1em; color: #000; line-height: 1.6; max-width: 550px; margin: 24px auto;">
@@ -72,7 +72,7 @@ A **canary** is a signal whose *absence* indicates a problem. Coal miners used c
   <br>
   Signed: Board Audit Committee<br>
   Date: January 8, 2026<br>
-  <span data-verify-line="can3">verify:indanalytics.com/canary/q4-2025</span> <span verifiable-text="end" data-for="can3">]</span>
+  <span data-verify-line="can3">verify:indanalytics.com/canary</span> <span verifiable-text="end" data-for="can3">]</span>
 </div>
 
 <div style="font-family: 'Courier New', monospace; background: #f9f9f9; padding: 15px; border: 1px solid #999; font-size: 1em; color: #000; line-height: 1.6; max-width: 550px; margin: 24px auto;">
@@ -94,7 +94,7 @@ A **canary** is a signal whose *absence* indicates a problem. Coal miners used c
   <br>
   Signed: January 9, 2026 14:30 UTC<br>
   Witness: Notary M. Williams<br>
-  <span data-verify-line="can4">verify:docusign.com/vol/jm-apa-20260109</span> <span verifiable-text="end" data-for="can4">]</span>
+  <span data-verify-line="can4">verify:docusign.com/vol</span> <span verifiable-text="end" data-for="can4">]</span>
 </div>
 
 <div style="font-family: 'Courier New', monospace; background: #f9f9f9; padding: 15px; border: 1px solid #999; font-size: 1em; color: #000; line-height: 1.6; max-width: 550px; margin: 24px auto;">
@@ -114,7 +114,7 @@ A **canary** is a signal whose *absence* indicates a problem. Coal miners used c
   <br>
   Date: 2026-01-09<br>
   Next check-in due: 2026-01-11<br>
-  <span data-verify-line="can5">verify:cpj.org/safety/7842-20260109</span> <span verifiable-text="end" data-for="can5">]</span>
+  <span data-verify-line="can5">verify:cpj.org/safety</span> <span verifiable-text="end" data-for="can5">]</span>
 </div>
 
 <div style="font-family: 'Courier New', monospace; background: #f9f9f9; padding: 15px; border: 1px solid #999; font-size: 1em; color: #000; line-height: 1.6; max-width: 550px; margin: 24px auto;">
@@ -133,7 +133,7 @@ A **canary** is a signal whose *absence* indicates a problem. Coal miners used c
   Status: ACTIVE (18 days remaining)<br>
   <br>
   Designated actions: [Encrypted]<br>
-  <span data-verify-line="can6">verify:digitalestate.com/switch/884721</span> <span verifiable-text="end" data-for="can6">]</span>
+  <span data-verify-line="can6">verify:digitalestate.com/switch</span> <span verifiable-text="end" data-for="can6">]</span>
 </div>
 
 ## Why Canaries Matter

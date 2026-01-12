@@ -32,7 +32,7 @@ Payment:     Visa ending in 1234
 Auth:        998877
 
 </pre>
-  <span data-verify-line="receipt">verify:delta.com/receipts/v/x9y8z7</span> <span verifiable-text="end" data-for="receipt">]</span>
+  <span data-verify-line="receipt">verify:delta.com/receipts/v</span> <span verifiable-text="end" data-for="receipt">]</span>
 </div>
 
 ## Data Verified
@@ -165,7 +165,7 @@ Verifying these letters prevents passengers from faking denials to defraud insur
   </div>
 <div data-verify-line="comp" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Airline doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:ba.com/claims/v/x9y8z7 <span verifiable-text="end" data-for="comp">]</span>
+      verify:ba.com/claims/v <span verifiable-text="end" data-for="comp">]</span>
   </div>
 </div>
 
@@ -254,7 +254,7 @@ TOTAL REFUND:                                           EUR 2,750.00
 Form of Payment:  Credited to Mastercard ending 5544
 Date:             20 March 2026
 
-<span data-verify-line="refund">verify:lufthansa.com/refunds/v/x9y8z7</span> <span verifiable-text="end" data-for="refund">]</span></pre>
+<span data-verify-line="refund">verify:lufthansa.com/refunds/v</span> <span verifiable-text="end" data-for="refund">]</span></pre>
 </div>
 
 ## Data Verified
@@ -343,7 +343,7 @@ Miles Redeemed:                                        20,000 Miles
 Upgrade Status:  CONFIRMED
 Seat:            12A
 
-<span data-verify-line="upgrade">verify:united.com/receipts/v/x9y8z7</span> <span verifiable-text="end" data-for="upgrade">]</span></pre>
+<span data-verify-line="upgrade">verify:united.com/receipts/v</span> <span verifiable-text="end" data-for="upgrade">]</span></pre>
 </div>
 
 ## Data Verified
@@ -434,7 +434,7 @@ Guest Fee (x2):                                            $ 64.00
 ───────────────────────────────────────────────────────────────────
 TOTAL CHARGED:                                             $ 64.00
 
-<span data-verify-line="lounge">verify:prioritypass.com/visits/v/x9y8z7</span> <span verifiable-text="end" data-for="lounge">]</span></pre>
+<span data-verify-line="lounge">verify:prioritypass.com/visits/v</span> <span verifiable-text="end" data-for="lounge">]</span></pre>
 </div>
 
 ## Data Verified

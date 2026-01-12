@@ -40,7 +40,7 @@ furtherDerivations: 1
     </div>
 <div data-verify-line="driver" style="border-top: 1px dashed #999; margin-top: 15px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.7em; color: #555; text-align: center;"
       title="Demo only: Admiral doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:admiral.com/check/v/99887766 <span verifiable-text="end" data-for="driver">]</span>
+      verify:admiral.com/check/v <span verifiable-text="end" data-for="driver">]</span>
     </div>
   </div>
 </div>

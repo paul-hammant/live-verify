@@ -31,7 +31,7 @@ VERIFIED SAFETY STANDARDS
 
 Representative samples tested and found to meet requirements.
 
-<span data-verify-line="safety">verify:ul.com/v/CERT992288-XJ</span> <span verifiable-text="end" data-for="safety">]</span></pre>
+<span data-verify-line="safety">verify:ul.com/v</span> <span verifiable-text="end" data-for="safety">]</span></pre>
 </div>
 
 ## Data Verified

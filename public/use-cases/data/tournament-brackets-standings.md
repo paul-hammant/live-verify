@@ -39,7 +39,7 @@ SEMIFINAL 2                    │     │                         │
 OFFICIAL NOTE: Match #42 (Finals) verified by Lead Official
 Sarah Jenkins. No protests pending.
 
-<span data-verify-line="bracket">verify:elite-champs.com/v/TIER1-2026-FIN</span> <span verifiable-text="end" data-for="bracket">]</span></pre>
+<span data-verify-line="bracket">verify:elite-champs.com/v</span> <span verifiable-text="end" data-for="bracket">]</span></pre>
 </div>
 
 ## Data Verified

@@ -42,7 +42,7 @@ Unlike a self-declaration ("I have no points"), an authority-issued record is **
 <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="drivingrecords" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
-        verify:gov.uk/dvla/records/SMITH890123JS9AB-2026-0215 <span verifiable-text="end" data-for="drivingrecords">]</span>
+        verify:gov.uk/dvla/records <span verifiable-text="end" data-for="drivingrecords">]</span>
       </div>
     </div>
   </div>
@@ -74,7 +74,7 @@ Unlike a self-declaration ("I have no points"), an authority-issued record is **
 <div style="margin-top: 15px; font-size: 0.8em; font-family: monospace; text-align: center; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;">
       <div data-verify-line="drivingrecords" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
         title="Demo only: This is an illustrative example of the verification line">
-        verify:gov.uk/dvla/records/WILSO901234SJ9CD-2026-0215 <span verifiable-text="end" data-for="drivingrecords">]</span>
+        verify:gov.uk/dvla/records <span verifiable-text="end" data-for="drivingrecords">]</span>
       </div>
     </div>
   </div>

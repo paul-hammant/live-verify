@@ -35,7 +35,7 @@ Beyond the diploma on the wall, the **Academic Transcript** is the granular reco
   </div>
 <div data-verify-line="degree" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: University doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:degrees.cam.ac.uk/v/CONNOR-AI-2026 <span verifiable-text="end" data-for="degree">]</span>
+      verify:degrees.cam.ac.uk/v <span verifiable-text="end" data-for="degree">]</span>
   </div>
 </div>
 

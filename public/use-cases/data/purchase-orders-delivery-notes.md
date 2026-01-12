@@ -35,7 +35,7 @@ TOTAL ORDER VALUE (USD):                              $ 15,100.00
 
 This PO is a legally binding offer once accepted.
 
-<span data-verify-line="po">verify:acme-mfg.com/procure/v/PO2026992288</span> <span verifiable-text="end" data-for="po">]</span></pre>
+<span data-verify-line="po">verify:acme-mfg.com/procure/v</span> <span verifiable-text="end" data-for="po">]</span></pre>
 </div>
 
 ## Data Verified

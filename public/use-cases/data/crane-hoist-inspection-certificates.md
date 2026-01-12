@@ -44,7 +44,7 @@ NEXT DUE DATE:   March 15, 2027
                 [NCCCO] "SAFETY FIRST - LIFTING EXCELLENCE"
 
 </pre>
-<span data-verify-line="crane">verify:heavylift-inspections.com/v/C992288</span> <span verifiable-text="end" data-for="crane">]</span>
+<span data-verify-line="crane">verify:heavylift-inspections.com/v</span> <span verifiable-text="end" data-for="crane">]</span>
 </div>
 
 ## Data Verified

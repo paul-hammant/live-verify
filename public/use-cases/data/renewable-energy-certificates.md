@@ -30,7 +30,7 @@ Location:     Kern County, CA             Status:         ACTIVE
 Fuel Type: Solar Photovoltaic
 CAISO balancing authority area.
 
-<span data-verify-line="rec">verify:wregis.org/v/REC99228877</span> <span verifiable-text="end" data-for="rec">]</span></pre>
+<span data-verify-line="rec">verify:wregis.org/v</span> <span verifiable-text="end" data-for="rec">]</span></pre>
 </div>
 
 ## Data Verified

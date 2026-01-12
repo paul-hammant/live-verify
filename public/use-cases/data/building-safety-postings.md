@@ -35,7 +35,7 @@ OCR-to-hash allows a tenant, visitor, or fire marshal to scan the posting to ver
   </div>
 <div data-verify-line="elevator" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Municipalities don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:dob.city.gov/v/ELV992288B <span verifiable-text="end" data-for="elevator">]</span>
+      verify:dob.city.gov/v <span verifiable-text="end" data-for="elevator">]</span>
   </div>
 </div>
 

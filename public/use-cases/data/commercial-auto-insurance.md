@@ -43,7 +43,7 @@ Coverage Includes: MCS-90 Endorsement, Hired & Non-Owned Auto
 Policy Period: Jan 01, 2026 to Jan 01, 2027
 
 </pre>
-<span data-verify-line="com-auto">verify:progressive.com/commercial/v/CA992288</span> <span verifiable-text="end" data-for="com-auto">]</span>
+<span data-verify-line="com-auto">verify:progressive.com/commercial/v</span> <span verifiable-text="end" data-for="com-auto">]</span>
 </div>
 
 ## Data Verified

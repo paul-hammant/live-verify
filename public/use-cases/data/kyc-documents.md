@@ -28,7 +28,7 @@ government databases and biometric liveness checks.
 Profile ID: REV-99228877
 
 </pre>
-<span data-verify-line="kyc-id">verify:revolut.com/compliance/v/99228877</span> <span verifiable-text="end" data-for="kyc-id">]</span>
+<span data-verify-line="kyc-id">verify:revolut.com/compliance/v</span> <span verifiable-text="end" data-for="kyc-id">]</span>
 </div>
 
 ## Data Verified
@@ -155,7 +155,7 @@ Verification confirms the address and residency status match the
 utility company's official billing records.
 
 </pre>
-<span data-verify-line="address">verify:coned.com/billing/v/9922887766</span> <span verifiable-text="end" data-for="address">]</span>
+<span data-verify-line="address">verify:coned.com/billing/v</span> <span verifiable-text="end" data-for="address">]</span>
 </div>
 
 ## Data Verified

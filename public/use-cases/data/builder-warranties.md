@@ -48,7 +48,7 @@ This warranty is a valuable financial asset that stays with the house for 10 yea
   </div>
 <div data-verify-line="warranty" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: 2-10 HBW doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:2-10.com/warranty/v/998877 <span verifiable-text="end" data-for="warranty">]</span>
+      verify:2-10.com/warranty/v <span verifiable-text="end" data-for="warranty">]</span>
   </div>
 </div>
 

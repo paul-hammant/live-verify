@@ -30,7 +30,7 @@ Vehicle:         2024 Honda Accord (NY-ABC1234)
 VIN:             1ABC-9922-8877-Z
 Liability Limit: $ 100,000 / $ 300,000
 
-<span data-verify-line="temp">verify:cuvva.com/v/BIND99228877</span> <span verifiable-text="end" data-for="temp">]</span></pre>
+<span data-verify-line="temp">verify:cuvva.com/v</span> <span verifiable-text="end" data-for="temp">]</span></pre>
 </div>
 
 ## Data Verified

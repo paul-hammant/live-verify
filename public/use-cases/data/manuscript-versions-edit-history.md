@@ -36,7 +36,7 @@ furtherDerivations: 1
   </div>
 <div data-verify-line="manu" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Publisher doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:penguinrandomhouse.com/mss/v/992288 <span verifiable-text="end" data-for="manu">]</span>
+      verify:penguinrandomhouse.com/mss/v <span verifiable-text="end" data-for="manu">]</span>
   </div>
 </div>
 

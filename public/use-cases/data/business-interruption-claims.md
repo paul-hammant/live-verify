@@ -44,7 +44,7 @@ Forensic Accountant: Baker Tilly US, LLP
 Status: FINAL ADJUDICATION
 
 </pre>
-<span data-verify-line="bi-claim">verify:libertymutual.com/claims/v/BI992288</span> <span verifiable-text="end" data-for="bi-claim">]</span>
+<span data-verify-line="bi-claim">verify:libertymutual.com/claims/v</span> <span verifiable-text="end" data-for="bi-claim">]</span>
 </div>
 
 ## Data Verified

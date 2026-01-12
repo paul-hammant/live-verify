@@ -44,7 +44,7 @@ OCR-to-Hash allows a homeowner to scan the badge at the door and see a green "AC
     </p>
     <div data-verify-line="inspect" style="border-top: 1px dashed #999; margin-top: 10px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: City of Chicago doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:cityofchicago.org/inspect/v/992288 <span verifiable-text="end" data-for="inspect">]</span>
+      verify:cityofchicago.org/inspect/v <span verifiable-text="end" data-for="inspect">]</span>
     </div>
   </div>
 </div>
@@ -58,15 +58,16 @@ Inspector name, photo (hash), badge number, department/division (Electrical, Plu
 - **Entry Authorization Letter:** For large-scale site audits.
 - **Notice of Inspection:** Left at the door if owner is away.
 
-## Data Visible After Verification
+## Verification Response
 
-Shows the issuer domain (`cityofchicago.org`, `nyc.gov`) and current employee status.
+The endpoint returns a simple status code:
 
-**Status Indications:**
-- **Active** — Bearer is a current city employee authorized to inspect.
-- **Suspended** — Employee is on leave or under disciplinary review; not authorized.
-- **Retired** — No longer has inspection authority.
-- **Alert** — Badge reported lost/stolen.
+- **OK** — Badge is valid, bearer is authorized to inspect
+- **SUSPENDED** — Employee is on leave or under disciplinary review; not authorized
+- **ALERT** — Badge reported lost/stolen; do not admit, consider calling police
+- **404** — Badge not found (retired, terminated, or never issued)
+
+The issuer domain is visible from the `verify:` line on the badge itself (e.g., `cityofchicago.org`).
 
 ## Second-Party Use
 
@@ -129,9 +130,9 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 | Feature | OCR-to-Hash | Holographic Badge | Calling the Office |
 | :--- | :--- | :--- | :--- |
-| **Trust Anchor** | **Domain-Bound.** Bound to `chicago.gov`. | **Mechanical.** Hard to forge, but non-verifiable. | **Human.** Relies on someone answering the phone. |
-| **Photo ID** | **Strong.** Can display the official photo on the owner's phone. | **Static.** Photo is on the physical badge. | **None.** Voice only. |
+| **Trust Anchor** | **Domain-Bound.** Bound to `cityofchicago.org`. | **Mechanical.** Hard to forge, but non-verifiable. | **Human.** Relies on someone answering the phone. |
+| **Photo Verification** | **Confirms authenticity.** Badge photo is real; homeowner compares face. | **Static.** Photo is on the badge, but is the badge real? | **None.** Voice only. |
 | **Speed** | **Instant.** 5-second scan. | **N/A.** Just looking. | **Slow.** Often takes 5-10 minutes on hold. |
-| **Integrity** | **Cryptographic.** Every detail is protected. | **Physical.** Prone to tampering. | **Variable.** |
+| **Revocation** | **Real-time.** Suspended/stolen badges fail immediately. | **None.** Physical badge still looks valid. | **Maybe.** If office knows and tells you. |
 
-**Why OCR wins here:** The "Doorstep Workflow." Homeowners are often intimidated by officials. They don't want to engage in a long conversation or a phone call. OCR-to-hash allows for a **non-confrontational verification**—the owner can simply ask to see the badge, scan it with their own phone, and see the green "Active" status from the city domain before opening the door.
+**Why OCR wins here:** The "Doorstep Workflow." Homeowners are often intimidated by officials. They don't want to engage in a long conversation or a phone call. OCR-to-hash allows for a **non-confrontational verification**—the owner can simply ask to see the badge, scan it with their own phone, and see `OK` from the city domain before opening the door.

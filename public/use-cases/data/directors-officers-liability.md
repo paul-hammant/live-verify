@@ -45,7 +45,7 @@ applies to claims first made against the insured during the
 policy period.
 
 </pre>
-<span data-verify-line="do-pol">verify:chubb.com/do/v/DO998877</span> <span verifiable-text="end" data-for="do-pol">]</span>
+<span data-verify-line="do-pol">verify:chubb.com/do/v</span> <span verifiable-text="end" data-for="do-pol">]</span>
 </div>
 
 ## Data Verified

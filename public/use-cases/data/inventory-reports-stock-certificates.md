@@ -31,7 +31,7 @@ NOTE: This report is a verified record of inventory physically
 present in the warehouse as of the audit date.
 
 </pre>
-<span data-verify-line="inventory">verify:global-coldstorage.com/inventory/v/INV992288</span> <span verifiable-text="end" data-for="inventory">]</span>
+<span data-verify-line="inventory">verify:global-coldstorage.com/inventory/v</span> <span verifiable-text="end" data-for="inventory">]</span>
 </div>
 
 ## Data Verified

@@ -36,7 +36,7 @@ SLA CREDITS: Failures to meet Availability targets result in a
 10% credit of the monthly recurring charge (MRC) for each hour
 of downtime, capped at 50% MRC per month.
 
-<span data-verify-line="telecom">verify:verizon.com/sla/v/VZ992288X</span> <span verifiable-text="end" data-for="telecom">]</span></pre>
+<span data-verify-line="telecom">verify:verizon.com/sla/v</span> <span verifiable-text="end" data-for="telecom">]</span></pre>
 </div>
 
 ## Data Verified

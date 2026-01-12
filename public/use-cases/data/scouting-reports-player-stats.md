@@ -39,7 +39,7 @@ Scout Notes: Elite explosive power. Exceptional field vision.
 Character Grade: A. Recommended for Tier-1 recruitment.
 
 </pre>
-<span data-verify-line="scout">verify:nationscout.com/v/SMITH-992288</span> <span verifiable-text="end" data-for="scout">]</span>
+<span data-verify-line="scout">verify:nationscout.com/v</span> <span verifiable-text="end" data-for="scout">]</span>
 </div>
 
 ## Data Verified

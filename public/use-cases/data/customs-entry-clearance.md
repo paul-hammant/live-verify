@@ -39,7 +39,7 @@ TOTAL REVENUE COLLECTED:                               $ 12,450.00
 Status: RELEASED & SETTLED
 All duties and fees have been paid.
 
-<span data-verify-line="customs">verify:cbp.gov/entry/v/99887766554</span> <span verifiable-text="end" data-for="customs">]</span></pre>
+<span data-verify-line="customs">verify:cbp.gov/entry/v</span> <span verifiable-text="end" data-for="customs">]</span></pre>
 </div>
 
 ## Data Verified

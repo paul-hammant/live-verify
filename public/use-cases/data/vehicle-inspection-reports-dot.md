@@ -34,7 +34,7 @@ Robert J. Miller, Certified Inspector             [CERTIFIED PASS]
 Inspector ID: #9922-NY
 Date: 15 MAR 2026
 
-<span data-verify-line="dot">verify:dot-inspect.com/v/VIN1ABC9922</span> <span verifiable-text="end" data-for="dot">]</span></pre>
+<span data-verify-line="dot">verify:dot-inspect.com/v</span> <span verifiable-text="end" data-for="dot">]</span></pre>
 </div>
 
 ## Data Verified

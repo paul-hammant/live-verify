@@ -41,7 +41,7 @@ These postings are the primary defense against "Ghost Taxis"—unlicensed cars t
     </div>
     <div data-verify-line="taxi" style="border-top: 1px dashed #999; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; text-align: center; font-weight: bold;"
       title="Demo only: Municipalities don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:nyctlc.gov/v/TLC992288 <span verifiable-text="end" data-for="taxi">]</span>
+      verify:nyctlc.gov/v <span verifiable-text="end" data-for="taxi">]</span>
     </div>
   </div>
 </div>

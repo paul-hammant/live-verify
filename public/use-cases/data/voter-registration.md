@@ -27,7 +27,7 @@ Party:      INDEPENDENT                  Reg Date:   15 MAR 2026
 
 POLLING PLACE: Springfield Library, 1st Ave Entrance
 
-<span data-verify-line="vote">verify:elections.il.gov/v/99228877</span> <span verifiable-text="end" data-for="vote">]</span></pre>
+<span data-verify-line="vote">verify:elections.il.gov/v</span> <span verifiable-text="end" data-for="vote">]</span></pre>
 </div>
 
 ## Data Verified

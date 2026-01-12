@@ -40,7 +40,7 @@ OCR-to-hash allows a homeowner to scan the worker's ID badge to verify: **"Is th
     </div>
     <div data-verify-line="utility" style="border-top: 1px dashed #999; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #0066cc; text-align: center; font-weight: bold;"
       title="Demo only: Utility companies don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:coned.com/v/NY992288-DRC <span verifiable-text="end" data-for="utility">]</span>
+      verify:coned.com/v <span verifiable-text="end" data-for="utility">]</span>
     </div>
   </div>
 </div>

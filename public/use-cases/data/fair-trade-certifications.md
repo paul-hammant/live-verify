@@ -41,7 +41,7 @@ This "Ethical Premium" is worth billions of dollars. Large retailers (like Starb
     </div>
 <div data-verify-line="fairtrade" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Fairtrade doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:fairtrade.net/v/FLO992288 <span verifiable-text="end" data-for="fairtrade">]</span>
+      verify:fairtrade.net/v <span verifiable-text="end" data-for="fairtrade">]</span>
     </div>
   </div>
 </div>

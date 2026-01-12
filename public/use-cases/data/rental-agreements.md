@@ -32,7 +32,7 @@ Coverage (LDW):                                   ACCEPTED ($0 Ded)
 Unauthorized alteration of mileage or coverage status
 renders this document void.
 
-<span data-verify-line="rental">verify:hertz.com/v/RA99228877</span> <span verifiable-text="end" data-for="rental">]</span></pre>
+<span data-verify-line="rental">verify:hertz.com/v</span> <span verifiable-text="end" data-for="rental">]</span></pre>
 </div>
 
 ## Data Verified

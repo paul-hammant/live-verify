@@ -30,7 +30,7 @@ These documents are crucial for expats, remote workers, multinational employees,
   Tax Year: 2025<br>
   Issued: January 8, 2026<br>
   Certificate #: 6166-2026-0847221<br>
-  <span data-verify-line="treaty1">verify:irs.gov/treaty/6166-2026-0847221</span> <span verifiable-text="end" data-for="treaty1">]</span>
+  <span data-verify-line="treaty1">verify:irs.gov/treaty</span> <span verifiable-text="end" data-for="treaty1">]</span>
 </div>
 
 <div style="font-family: 'Courier New', monospace; background: #f9f9f9; padding: 15px; border: 1px solid #999; font-size: 1em; color: #000; line-height: 1.6; max-width: 550px; margin: 24px auto;">
@@ -49,7 +49,7 @@ These documents are crucial for expats, remote workers, multinational employees,
   For treaty purposes with: Germany<br>
   Issued: 12 January 2026<br>
   Ref: HMRC-RES-2026-44871<br>
-  <span data-verify-line="treaty2">verify:hmrc.gov.uk/residence/HMRC-RES-2026-44871</span> <span verifiable-text="end" data-for="treaty2">]</span>
+  <span data-verify-line="treaty2">verify:hmrc.gov.uk/residence</span> <span verifiable-text="end" data-for="treaty2">]</span>
 </div>
 
 <div style="font-family: 'Courier New', monospace; background: #f9f9f9; padding: 15px; border: 1px solid #999; font-size: 1em; color: #000; line-height: 1.6; max-width: 550px; margin: 24px auto;">
@@ -69,7 +69,7 @@ These documents are crucial for expats, remote workers, multinational employees,
   Employer: TechCorp Inc<br>
   Period: 01/01/2026 - 12/31/2030<br>
   Certificate #: USA/DE-2026-4478821<br>
-  <span data-verify-line="total1">verify:ssa.gov/totalization/USA-DE-2026-4478821</span> <span verifiable-text="end" data-for="total1">]</span>
+  <span data-verify-line="total1">verify:ssa.gov/totalization</span> <span verifiable-text="end" data-for="total1">]</span>
 </div>
 
 <div style="font-family: 'Courier New', monospace; background: #f9f9f9; padding: 15px; border: 1px solid #999; font-size: 1em; color: #000; line-height: 1.6; max-width: 550px; margin: 24px auto;">
@@ -89,7 +89,7 @@ These documents are crucial for expats, remote workers, multinational employees,
   Valid: 01/03/2026 - 28/02/2028<br>
   Issued by: URSSAF (FR)<br>
   Document #: FR-A1-2026-7784521<br>
-  <span data-verify-line="total2">verify:cleiss.fr/a1/FR-A1-2026-7784521</span> <span verifiable-text="end" data-for="total2">]</span>
+  <span data-verify-line="total2">verify:cleiss.fr/a1</span> <span verifiable-text="end" data-for="total2">]</span>
 </div>
 
 <div style="font-family: 'Courier New', monospace; background: #f9f9f9; padding: 15px; border: 1px solid #999; font-size: 1em; color: #000; line-height: 1.6; max-width: 550px; margin: 24px auto;">
@@ -109,7 +109,7 @@ These documents are crucial for expats, remote workers, multinational employees,
   for foreign tax credit purposes.<br>
   <br>
   Issued: 15 January 2026<br>
-  <span data-verify-line="credit1">verify:finanzamt.de/credit/MUC-2026-78901</span> <span verifiable-text="end" data-for="credit1">]</span>
+  <span data-verify-line="credit1">verify:finanzamt.de/credit</span> <span verifiable-text="end" data-for="credit1">]</span>
 </div>
 
 <div style="font-family: 'Courier New', monospace; background: #f9f9f9; padding: 15px; border: 1px solid #999; font-size: 1em; color: #000; line-height: 1.6; max-width: 550px; margin: 24px auto;">
@@ -130,7 +130,7 @@ These documents are crucial for expats, remote workers, multinational employees,
   Payable From: 6 April 2026<br>
   <br>
   Agreement Ref: UK/US-TOT-2026-44721<br>
-  <span data-verify-line="pension1">verify:dwp.gov.uk/pension/UK-US-TOT-2026-44721</span> <span verifiable-text="end" data-for="pension1">]</span>
+  <span data-verify-line="pension1">verify:dwp.gov.uk/pension</span> <span verifiable-text="end" data-for="pension1">]</span>
 </div>
 
 <div style="font-family: 'Courier New', monospace; background: #f9f9f9; padding: 15px; border: 1px solid #999; font-size: 1em; color: #000; line-height: 1.6; max-width: 550px; margin: 24px auto;">
@@ -152,7 +152,7 @@ These documents are crucial for expats, remote workers, multinational employees,
   <br>
   Valid: Tax Year 2026<br>
   Certificate #: NTA-WHT-2026-884721<br>
-  <span data-verify-line="treaty3">verify:nta.go.jp/treaty/NTA-WHT-2026-884721</span> <span verifiable-text="end" data-for="treaty3">]</span>
+  <span data-verify-line="treaty3">verify:nta.go.jp/treaty</span> <span verifiable-text="end" data-for="treaty3">]</span>
 </div>
 
 ## Why This Matters
@@ -264,7 +264,7 @@ The real power comes when authorities verify each other's certificates:
 UK employer hires US worker
 → Worker provides SSA-1199 (Certificate of Coverage)
 → UK payroll scans certificate
-→ verify:ssa.gov/totalization/USA-UK-2026-xxxx
+→ verify:ssa.gov/totalization
 → Confirmed: US Social Security applies
 → No UK National Insurance deducted
 ```

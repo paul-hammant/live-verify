@@ -32,7 +32,7 @@ This panel has been individually tested at the point of
 manufacture. Performance data is guaranteed for 25 years under
 the Linear Power Warranty.
 
-<span data-verify-line="solar">verify:trinasolar.com/v/SN99228877</span> <span verifiable-text="end" data-for="solar">]</span></pre>
+<span data-verify-line="solar">verify:trinasolar.com/v</span> <span verifiable-text="end" data-for="solar">]</span></pre>
 </div>
 
 ## Data Verified

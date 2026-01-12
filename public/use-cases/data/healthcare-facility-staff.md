@@ -295,7 +295,7 @@ Dr. John Smith
 Arizona Medical License #3342
 Cardiologist
 Banner Health, Phoenix
-verify:azmedicalboard.gov/lic/3342
+verify:azmedicalboard.gov/lic
 ```
 Problem: License number uniquely identifies the person and is easily cross-referenceable.
 

@@ -42,7 +42,7 @@ Original Due Date: April 30, 2026 (Net 45 Days)
 This confirmation is a verified extract of the C2FO market clearing.
 
 </pre>
-<span data-verify-line="discount">verify:c2fo.com/confirm/v/C2-998877</span> <span verifiable-text="end" data-for="discount">]</span>
+<span data-verify-line="discount">verify:c2fo.com/confirm/v</span> <span verifiable-text="end" data-for="discount">]</span>
 </div>
 
 ## Data Verified

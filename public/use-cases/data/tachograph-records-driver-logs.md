@@ -37,7 +37,7 @@ Violations:    NONE DETECTED
 
 I certify that these entries are true and correct.
 
-<span data-verify-line="tacho">verify:samsara.com/logs/v/992288GORDON</span> <span verifiable-text="end" data-for="tacho">]</span></pre>
+<span data-verify-line="tacho">verify:samsara.com/logs/v</span> <span verifiable-text="end" data-for="tacho">]</span></pre>
 </div>
 
 ## Data Verified

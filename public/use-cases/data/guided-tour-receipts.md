@@ -42,7 +42,7 @@ Please present this verified voucher to the lead guide at the
 meeting point.
 
 </pre>
-<span data-verify-line="tour">verify:sahara-expeditions.com/v/SE99228877</span> <span verifiable-text="end" data-for="tour">]</span>
+<span data-verify-line="tour">verify:sahara-expeditions.com/v</span> <span verifiable-text="end" data-for="tour">]</span>
 </div>
 
 ## Data Verified

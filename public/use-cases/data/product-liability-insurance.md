@@ -33,7 +33,7 @@ VERIFIED COVERED PRODUCTS
 
 Coverage expires: 15 MAR 2027
 
-<span data-verify-line="liab">verify:chubb.com/liab/v/PL99228877</span> <span verifiable-text="end" data-for="liab">]</span></pre>
+<span data-verify-line="liab">verify:chubb.com/liab/v</span> <span verifiable-text="end" data-for="liab">]</span></pre>
 </div>
 
 ## Data Verified

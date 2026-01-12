@@ -38,7 +38,7 @@ James Gordon, Bank Officer
 Employee ID: #992288
 
 </pre>
-<span data-verify-line="vault">verify:goliathbank.com/v/SD992288Z</span> <span verifiable-text="end" data-for="vault">]</span>
+<span data-verify-line="vault">verify:goliathbank.com/v</span> <span verifiable-text="end" data-for="vault">]</span>
 </div>
 
 ## Data Verified

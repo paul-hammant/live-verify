@@ -37,7 +37,7 @@ TOTAL INCURRED:                                      $ 22,650,000.00
 Audit Date: March 15, 2026
 Note: All claims verified as occurring within CAT date window.
 
-<span data-verify-line="cat">verify:statefarm.com/claims/v/CAT2026FL04</span> <span verifiable-text="end" data-for="cat">]</span></pre>
+<span data-verify-line="cat">verify:statefarm.com/claims/v</span> <span verifiable-text="end" data-for="cat">]</span></pre>
 </div>
 
 ## Data Verified

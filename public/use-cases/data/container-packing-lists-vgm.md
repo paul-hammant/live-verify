@@ -37,7 +37,7 @@ verified using calibrated and certified equipment.
 
 Authorized Signatory: Robert J. Miller
 
-<span data-verify-line="vgm">verify:global-furniture.com/vgm/v/MSKU123456</span> <span verifiable-text="end" data-for="vgm">]</span></pre>
+<span data-verify-line="vgm">verify:global-furniture.com/vgm/v</span> <span verifiable-text="end" data-for="vgm">]</span></pre>
 </div>
 
 ## Data Verified

@@ -37,7 +37,7 @@ Sarah Miller, HR Director
 March 15, 2026
 
 </pre>
-<span data-verify-line="mort-voe">verify:acme-global.com/hr/v/992288-JDS</span> <span verifiable-text="end" data-for="mort-voe">]</span>
+<span data-verify-line="mort-voe">verify:acme-global.com/hr/v</span> <span verifiable-text="end" data-for="mort-voe">]</span>
 </div>
 
 ## Data Verified
@@ -164,7 +164,7 @@ Verification confirms the earnings and withholdings match the
 employer's certified payroll ledger.
 
 </pre>
-<span data-verify-line="income">verify:acme-global.com/payroll/v/992288-2026-05</span> <span verifiable-text="end" data-for="income">]</span>
+<span data-verify-line="income">verify:acme-global.com/payroll/v</span> <span verifiable-text="end" data-for="income">]</span>
 </div>
 
 ## Data Verified

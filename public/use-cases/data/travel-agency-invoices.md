@@ -38,7 +38,7 @@ TOTAL PAID (USD):                                   $ 14,750.00
 Scan to verify itinerary authenticity, payment status,
 and Virtuoso protection.
 
-<span data-verify-line="travel">verify:elitetravel.com/v/ETP20268844</span> <span verifiable-text="end" data-for="travel">]</span></pre>
+<span data-verify-line="travel">verify:elitetravel.com/v</span> <span verifiable-text="end" data-for="travel">]</span></pre>
 </div>
 
 ## Data Verified

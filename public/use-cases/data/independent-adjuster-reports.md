@@ -34,7 +34,7 @@ furtherDerivations: 1
     </div>
 <div data-verify-line="ia-report" style="border-top: 1px dashed #999; margin-top: 30px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; color: #555; text-align: center;"
       title="Demo only: Crawford & Co doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:crawco.com/reports/v/992288 <span verifiable-text="end" data-for="ia-report">]</span>
+      verify:crawco.com/reports/v <span verifiable-text="end" data-for="ia-report">]</span>
     </div>
   </div>
 </div>

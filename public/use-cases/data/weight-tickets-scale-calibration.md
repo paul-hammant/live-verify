@@ -35,7 +35,7 @@ This weight is certified accurate by a licensed Weighmaster.
 Verification protects trade integrity.
 
 </pre>
-<span data-verify-line="weight">verify:midwest-scales.com/v/WT20268844</span> <span verifiable-text="end" data-for="weight">]</span>
+<span data-verify-line="weight">verify:midwest-scales.com/v</span> <span verifiable-text="end" data-for="weight">]</span>
 </div>
 
 ## Data Verified

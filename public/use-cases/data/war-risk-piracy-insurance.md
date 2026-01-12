@@ -33,7 +33,7 @@ MANDATORY WARRANTIES: Minimum 3-person Private Armed Security Team
 (PMSC) required during HRA transit. Continuous AIS monitoring
 required.
 
-<span data-verify-line="war">verify:beazley.com/war/v/IMO9922887</span> <span verifiable-text="end" data-for="war">]</span></pre>
+<span data-verify-line="war">verify:beazley.com/war/v</span> <span verifiable-text="end" data-for="war">]</span></pre>
 </div>
 
 ## Data Verified

@@ -34,7 +34,7 @@ Pcs     Gross Wt    Chargeable    Nature of Goods
 Flight/Date:  UA926 / 15MAR26
 Executed on:  14MAR26 at SFO by Agent: Expeditors
 
-<span data-verify-line="awb">verify:unitedcargo.com/awb/v/x9y8z7</span> <span verifiable-text="end" data-for="awb">]</span></pre>
+<span data-verify-line="awb">verify:unitedcargo.com/awb/v</span> <span verifiable-text="end" data-for="awb">]</span></pre>
   </div>
 </div>
 
@@ -155,7 +155,7 @@ No. of Pieces    Description                      Weight (KG)
 The carrier certifies that the goods described above were
 received for carriage in apparent good order and condition.
 
-<span data-verify-line="hawb">verify:kuehne-nagel.com/hawb/v/9988776655</span> <span verifiable-text="end" data-for="hawb">]</span></pre>
+<span data-verify-line="hawb">verify:kuehne-nagel.com/hawb/v</span> <span verifiable-text="end" data-for="hawb">]</span></pre>
 </div>
 
 ## Data Verified

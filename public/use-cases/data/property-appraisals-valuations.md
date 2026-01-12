@@ -35,7 +35,7 @@ _________________________
 Robert J. Miller, Certified Appraiser
 License: #TX-992288 - Exp: 2027
 
-<span data-verify-line="appraise">verify:summit-eval.com/v/SAP20268844</span> <span verifiable-text="end" data-for="appraise">]</span></pre>
+<span data-verify-line="appraise">verify:summit-eval.com/v</span> <span verifiable-text="end" data-for="appraise">]</span></pre>
 </div>
 
 ## Data Verified

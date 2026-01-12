@@ -31,7 +31,7 @@ The beneficiary's status is extended from 03/15/2026 to 03/14/2029.
 
          [ NEW DETACHABLE I-94 RECORD ATTACHED BELOW ]
 
-<span data-verify-line="extension">verify:uscis.gov/v/i797/WAC2699228877</span> <span verifiable-text="end" data-for="extension">]</span></pre>
+<span data-verify-line="extension">verify:uscis.gov/v/i797</span> <span verifiable-text="end" data-for="extension">]</span></pre>
 </div>
 
 ## Data Verified

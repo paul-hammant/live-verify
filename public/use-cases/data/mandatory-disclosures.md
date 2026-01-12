@@ -48,7 +48,7 @@ Verified disclosure records create **immutable timestamps** proving exactly when
   <br>
   Risk Assessment: High<br>
   Data Subject Notification: Required<br>
-  <span data-verify-line="breach1">verify:ico.org.uk/breach/COM-2026-00847</span> <span verifiable-text="end" data-for="breach1">]</span>
+  <span data-verify-line="breach1">verify:ico.org.uk/breach</span> <span verifiable-text="end" data-for="breach1">]</span>
 </div>
 
 <div style="font-family: 'Courier New', monospace; background: #f9f9f9; padding: 15px; border: 1px solid #999; font-size: 1em; color: #000; line-height: 1.6; max-width: 550px; margin: 24px auto;">
@@ -68,7 +68,7 @@ Verified disclosure records create **immutable timestamps** proving exactly when
   Cause: Ransomware attack<br>
   Remediation: In progress<br>
   Credit Monitoring: Offered (24 months)<br>
-  <span data-verify-line="breach2">verify:oag.ca.gov/breach/DC-2026-0108</span> <span verifiable-text="end" data-for="breach2">]</span>
+  <span data-verify-line="breach2">verify:oag.ca.gov/breach</span> <span verifiable-text="end" data-for="breach2">]</span>
 </div>
 
 **Key Frameworks:**
@@ -97,7 +97,7 @@ Verified disclosure records create **immutable timestamps** proving exactly when
   <br>
   Filed: January 9, 2026 16:05 EST<br>
   Accession: 0001234567-26-000003<br>
-  <span data-verify-line="sec1">verify:sec.gov/edgar/8k/0001234567-26-000003</span> <span verifiable-text="end" data-for="sec1">]</span>
+  <span data-verify-line="sec1">verify:sec.gov/edgar/8k</span> <span verifiable-text="end" data-for="sec1">]</span>
 </div>
 
 <div style="font-family: 'Courier New', monospace; background: #f9f9f9; padding: 15px; border: 1px solid #999; font-size: 1em; color: #000; line-height: 1.6; max-width: 550px; margin: 24px auto;">
@@ -117,7 +117,7 @@ Verified disclosure records create **immutable timestamps** proving exactly when
   Released: 2026-01-08 07:00 GMT<br>
   (Before market open)<br>
   RNS #: 4478821<br>
-  <span data-verify-line="fin1">verify:londonstockexchange.com/rns/4478821</span> <span verifiable-text="end" data-for="fin1">]</span>
+  <span data-verify-line="fin1">verify:londonstockexchange.com/rns</span> <span verifiable-text="end" data-for="fin1">]</span>
 </div>
 
 **Key Frameworks:**
@@ -146,7 +146,7 @@ Verified disclosure records create **immutable timestamps** proving exactly when
   Date Initiated: January 7, 2026<br>
   FDA Notified: January 7, 2026<br>
   Public Notification: January 8, 2026<br>
-  <span data-verify-line="fda1">verify:fda.gov/recall/PC-2026-0107</span> <span verifiable-text="end" data-for="fda1">]</span>
+  <span data-verify-line="fda1">verify:fda.gov/recall</span> <span verifiable-text="end" data-for="fda1">]</span>
 </div>
 
 <div style="font-family: 'Courier New', monospace; background: #f9f9f9; padding: 15px; border: 1px solid #999; font-size: 1em; color: #000; line-height: 1.6; max-width: 550px; margin: 24px auto;">
@@ -167,7 +167,7 @@ Verified disclosure records create **immutable timestamps** proving exactly when
   <br>
   Recall #: 26-047<br>
   Announced: January 9, 2026<br>
-  <span data-verify-line="cpsc1">verify:cpsc.gov/recall/26-047</span> <span verifiable-text="end" data-for="cpsc1">]</span>
+  <span data-verify-line="cpsc1">verify:cpsc.gov/recall</span> <span verifiable-text="end" data-for="cpsc1">]</span>
 </div>
 
 <div style="font-family: 'Courier New', monospace; background: #f9f9f9; padding: 15px; border: 1px solid #999; font-size: 1em; color: #000; line-height: 1.6; max-width: 550px; margin: 24px auto;">
@@ -188,7 +188,7 @@ Verified disclosure records create **immutable timestamps** proving exactly when
   Mfr First Notified NHTSA: Jan 3, 2026<br>
   Public Notice: January 8, 2026<br>
   Owner Notification: By March 8, 2026<br>
-  <span data-verify-line="nhtsa1">verify:nhtsa.gov/recall/26V-001</span> <span verifiable-text="end" data-for="nhtsa1">]</span>
+  <span data-verify-line="nhtsa1">verify:nhtsa.gov/recall</span> <span verifiable-text="end" data-for="nhtsa1">]</span>
 </div>
 
 **Key Frameworks:**
@@ -217,7 +217,7 @@ Verified disclosure records create **immutable timestamps** proving exactly when
   Pattern Identified: January 5, 2026<br>
   CDC Notified: January 6, 2026<br>
   Public Advisory: January 8, 2026<br>
-  <span data-verify-line="cdc1">verify:cdc.gov/outbreak/SAL-2026-TX-001</span> <span verifiable-text="end" data-for="cdc1">]</span>
+  <span data-verify-line="cdc1">verify:cdc.gov/outbreak</span> <span verifiable-text="end" data-for="cdc1">]</span>
 </div>
 
 <div style="font-family: 'Courier New', monospace; background: #f9f9f9; padding: 15px; border: 1px solid #999; font-size: 1em; color: #000; line-height: 1.6; max-width: 550px; margin: 24px auto;">
@@ -239,7 +239,7 @@ Verified disclosure records create **immutable timestamps** proving exactly when
   Rating: WORSE THAN EXPECTED<br>
   <br>
   Reported: January 10, 2026<br>
-  <span data-verify-line="health1">verify:medicare.gov/hai/123456-2025Q4</span> <span verifiable-text="end" data-for="health1">]</span>
+  <span data-verify-line="health1">verify:medicare.gov/hai</span> <span verifiable-text="end" data-for="health1">]</span>
 </div>
 
 **Key Frameworks:**
@@ -268,7 +268,7 @@ Verified disclosure records create **immutable timestamps** proving exactly when
   Notice Sent To: 847,000 customers<br>
   Date Sent: January 8, 2026<br>
   Deadline Met: YES<br>
-  <span data-verify-line="ftc1">verify:ftc.gov/consent/C-4789-compliance</span> <span verifiable-text="end" data-for="ftc1">]</span>
+  <span data-verify-line="ftc1">verify:ftc.gov/consent</span> <span verifiable-text="end" data-for="ftc1">]</span>
 </div>
 
 <div style="font-family: 'Courier New', monospace; background: #f9f9f9; padding: 15px; border: 1px solid #999; font-size: 1em; color: #000; line-height: 1.6; max-width: 550px; margin: 24px auto;">
@@ -288,7 +288,7 @@ Verified disclosure records create **immutable timestamps** proving exactly when
   <br>
   Published: January 9, 2026<br>
   Channels: Website, social media, email<br>
-  <span data-verify-line="ad1">verify:asa.org.uk/ruling/A25-447821-correction</span> <span verifiable-text="end" data-for="ad1">]</span>
+  <span data-verify-line="ad1">verify:asa.org.uk/ruling</span> <span verifiable-text="end" data-for="ad1">]</span>
 </div>
 
 **Key Frameworks:**
@@ -318,7 +318,7 @@ Verified disclosure records create **immutable timestamps** proving exactly when
   <br>
   Initial Report: 2026-01-07 04:12 EST<br>
   (within 120 minutes: COMPLIANT)<br>
-  <span data-verify-line="fcc1">verify:fcc.gov/nors/NW-2026-0107-001</span> <span verifiable-text="end" data-for="fcc1">]</span>
+  <span data-verify-line="fcc1">verify:fcc.gov/nors</span> <span verifiable-text="end" data-for="fcc1">]</span>
 </div>
 
 **Key Frameworks:**

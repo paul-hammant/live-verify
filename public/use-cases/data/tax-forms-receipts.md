@@ -33,7 +33,7 @@ Address:         42 WALL STREET, NEW YORK, NY 10005
 
 Verified extract of official payroll and tax record.
 
-<span data-verify-line="tax">verify:adp.com/tax/v/W2-2025-SMITH1234</span> <span verifiable-text="end" data-for="tax">]</span></pre>
+<span data-verify-line="tax">verify:adp.com/tax/v</span> <span verifiable-text="end" data-for="tax">]</span></pre>
 </div>
 
 ## Data Verified

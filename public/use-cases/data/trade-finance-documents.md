@@ -41,7 +41,7 @@ SEAL: 884422         (GRADE-A / 100% ORGANIC)
 
 This is a Document of Title.
 
-<span data-verify-line="trade">verify:msc.com/bl/v/9922887766</span> <span verifiable-text="end" data-for="trade">]</span></pre>
+<span data-verify-line="trade">verify:msc.com/bl/v</span> <span verifiable-text="end" data-for="trade">]</span></pre>
 </div>
 
 ## Data Verified
@@ -140,7 +140,7 @@ country stated."
 
                       [CHAMBER OFFICIAL STAMP]
 
-<span data-verify-line="origin">verify:londonchamber.com/v/CO992288UK</span> <span verifiable-text="end" data-for="origin">]</span></pre>
+<span data-verify-line="origin">verify:londonchamber.com/v</span> <span verifiable-text="end" data-for="origin">]</span></pre>
 </div>
 
 ## Data Verified
@@ -235,7 +235,7 @@ TOTAL INVOICE VALUE (USD):                              $ 42,500.00
 Verification confirms the financial integrity of this billing
 record against the exporter's ledger.
 
-<span data-verify-line="invoice">verify:globaltextiles.ae/v/INV20268844</span> <span verifiable-text="end" data-for="invoice">]</span></pre>
+<span data-verify-line="invoice">verify:globaltextiles.ae/v</span> <span verifiable-text="end" data-for="invoice">]</span></pre>
 </div>
 
 ## Data Verified

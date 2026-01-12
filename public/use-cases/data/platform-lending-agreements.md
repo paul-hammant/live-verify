@@ -39,7 +39,7 @@ Shopify Capital. This agreement creates a legal security interest
 under UCC Article 9."
 
 </pre>
-<span data-verify-line="platform">verify:shopify.com/v/SC99228877</span> <span verifiable-text="end" data-for="platform">]</span>
+<span data-verify-line="platform">verify:shopify.com/v</span> <span verifiable-text="end" data-for="platform">]</span>
 </div>
 
 ## Data Verified

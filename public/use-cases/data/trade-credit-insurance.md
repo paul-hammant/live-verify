@@ -37,7 +37,7 @@ Coverage is subject to the terms and conditions of the Master
 Policy. Verification confirms that this specific limit is
 currently authorized in the Allianz Trade system.
 
-<span data-verify-line="credit">verify:allianz-trade.com/v/AZ99228877</span> <span verifiable-text="end" data-for="credit">]</span></pre>
+<span data-verify-line="credit">verify:allianz-trade.com/v</span> <span verifiable-text="end" data-for="credit">]</span></pre>
 </div>
 
 ## Data Verified

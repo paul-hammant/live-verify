@@ -33,7 +33,7 @@ TOTAL NET SETTLEMENT (USD):                            $ 16,400.00
 
 Payment issued via Wire Transfer to account on file.
 
-<span data-verify-line="claim">verify:allianz.com/v/CL20268844</span> <span verifiable-text="end" data-for="claim">]</span></pre>
+<span data-verify-line="claim">verify:allianz.com/v</span> <span verifiable-text="end" data-for="claim">]</span></pre>
 </div>
 
 ## Data Verified

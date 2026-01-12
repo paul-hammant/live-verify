@@ -40,7 +40,7 @@ ITOT (iShares Core S&P)               BOUGHT          $ 1,250.00
 Estimated Tax Savings: $ 312.50
 
 </pre>
-  <span data-verify-line="rebal">verify:wealthfront.com/confirms/v/x9y8z7</span> <span verifiable-text="end" data-for="rebal">]</span>
+  <span data-verify-line="rebal">verify:wealthfront.com/confirms/v</span> <span verifiable-text="end" data-for="rebal">]</span>
 </div>
 
 ## Data Verified

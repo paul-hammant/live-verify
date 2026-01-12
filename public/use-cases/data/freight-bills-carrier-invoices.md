@@ -38,7 +38,7 @@ TOTAL AMOUNT DUE:                                      $ 1,712.50
 
 Payment Terms: Net 30 Days. Remit to: Wells Fargo Lockbox #99228.
 
-<span data-verify-line="freight-inv">verify:schneider.com/invoices/v/SN998877</span> <span verifiable-text="end" data-for="freight-inv">]</span></pre>
+<span data-verify-line="freight-inv">verify:schneider.com/invoices/v</span> <span verifiable-text="end" data-for="freight-inv">]</span></pre>
   </div>
 </div>
 

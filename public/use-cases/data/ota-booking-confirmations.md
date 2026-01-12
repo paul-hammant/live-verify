@@ -40,7 +40,7 @@ Room Type:  Executive Suite (Non-Smoking)
 Total Price (including VAT):                          CHF 1,450.00
 
 </pre>
-<span data-verify-line="ota">verify:booking.com/v/9988776655</span> <span verifiable-text="end" data-for="ota">]</span>
+<span data-verify-line="ota">verify:booking.com/v</span> <span verifiable-text="end" data-for="ota">]</span>
 </div>
 
 ## Data Verified

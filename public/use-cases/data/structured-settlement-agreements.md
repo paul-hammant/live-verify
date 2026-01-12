@@ -36,7 +36,7 @@ Transfer Restriction: This annuity is non-assignable and
 non-transferable without a verified Court Order pursuant to
 State Structured Settlement Protection Acts.
 
-<span data-verify-line="settle">verify:pacificlife.com/v/PLA99228877</span> <span verifiable-text="end" data-for="settle">]</span></pre>
+<span data-verify-line="settle">verify:pacificlife.com/v</span> <span verifiable-text="end" data-for="settle">]</span></pre>
 </div>
 
 ## Data Verified

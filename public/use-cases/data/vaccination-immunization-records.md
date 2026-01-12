@@ -33,7 +33,7 @@ Please keep this record card, which includes medical information
 about the vaccines you have received.
 
 </pre>
-<span data-verify-line="vax">verify:cvs.com/vax/v/SMITH992288</span> <span verifiable-text="end" data-for="vax">]</span>
+<span data-verify-line="vax">verify:cvs.com/vax/v</span> <span verifiable-text="end" data-for="vax">]</span>
 </div>
 
 ## Data Verified

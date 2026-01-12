@@ -44,7 +44,7 @@ These documents are the "Proof of Prestige." Researchers use them to secure tenu
   </div>
 <div data-verify-line="grant" style="border-top: 1px dashed #999; margin-top: 40px; padding-top: 10px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
       title="Demo only: Funding agencies don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:nsf.gov/awards/v/2026992288 <span verifiable-text="end" data-for="grant">]</span>
+      verify:nsf.gov/awards/v <span verifiable-text="end" data-for="grant">]</span>
   </div>
 </div>
 
