@@ -733,3 +733,23 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 | **Updateability** | **Yes.** Can note "New claim surfaced" instantly. | **Static.** Once it's on the frame, it stays there. | **Fixed.** |
 
 **Why OCR wins here:** Provenance is a "Living History." New information surfaces, claims are filed, and research progresses. OCR-to-hash turns a static piece of paper (the research summary) into a dynamic window into the institution's latest knowledge about that work.
+
+## Text-to-Hash Suitability
+
+**Primary scenario: Text-to-hash is the natural fit.**
+
+Art documentation circulates digitally far more often than physically:
+- **Data rooms:** Due diligence for acquisitions happens in virtual deal rooms. Buyers receive PDFs of COAs, appraisals, and provenance summaries.
+- **Email attachments:** Galleries, collectors, and insurers share documents as attachments and inline images.
+- **Consignment portals:** Auction houses receive digital submissions before physical inspection.
+- **Lending platforms:** Art-backed loan applications include digital documentation.
+
+**Browser-based text selection works well because:**
+- Documents are typically clean, typed text (not handwritten)
+- High-value transactions justify the 5 seconds to select text and verify
+- Recipients are already viewing documents on screens
+- PDF readers support text selection natively
+
+**Physical OCR is secondary:** Useful when examining original paper certificates during in-person inspections, but the digital workflow is primary for art market participants.
+
+This is an ideal text-to-hash use case.

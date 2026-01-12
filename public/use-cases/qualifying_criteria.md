@@ -104,6 +104,21 @@ is not for, and which design choices make it safe.
   status doesn't affect others), multiple issuers (each authoritative for their domain), and cleaner failure
   modes (one system's outage doesn't block everything).
 
+## 11) Ongoing verification value (not just point-in-time)
+
+- Strong use cases have **verification value that persists over time**. The document holder (2nd party) may keep
+  the document and later hand it—as text, photo, scan, or paper—to someone who wants to verify it well after the
+  original transaction.
+- Examples of ongoing value: a receipt verified years later by an estate executor; a cancelled booking
+  confirmation verified by an insurance adjuster processing a claim; employment references verified by multiple
+  prospective employers over months.
+- **Terminal status doesn't mean no ongoing value.** A document with status `REFUNDED`, `CLOSED`, or `COMPLETED`
+  can still be verified to prove the transaction happened as claimed. The status answers "what is the current
+  standing?" not "is verification worthwhile?".
+- Weak ongoing value: documents that are purely operational/ephemeral where no third party would ever want to
+  verify after the immediate moment. If the only verifier is the immediate recipient and no one else would ever
+  care, question whether verification infrastructure is justified.
+
 ## Quick yes/no checklist
 
 - Is there a human-readable claim (paper/screenshot) that must remain readable first?
@@ -118,6 +133,7 @@ is not for, and which design choices make it safe.
 - Is there a meaningful fraud incentive? (If not, self-attestation may suffice)
 - Does it benefit all three parties (issuer, holder, verifiers)?
 - Are there multiple distinct 3rd party types who would verify it?
+- Would someone want to verify this document days, months, or years later? (Ongoing value)
 
 ## Common reflex objections (and the short answer)
 

@@ -118,6 +118,20 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
 
 
+## Scope and Limitations
+
+**Where OCR-to-hash adds value:**
+- **Legacy meets** without digital infrastructure — small schools, rural areas, developing countries
+- **Paper certificates** issued by federations that don't have searchable online databases
+- **Cross-border verification** where a foreign federation's results aren't accessible to domestic recruiters
+
+**Where digital platforms already solve this:**
+- **Athletic.net, RunSignUp, MileSplit** — Major platforms already provide verified results with direct API access
+- **World Athletics, USATF** — Governing bodies maintain authoritative databases for elite/ratified performances
+- **Chip timing companies (Omega, Swiss Timing)** — Results are digitally signed and database-accessible
+
+**Realistic scope:** OCR-to-hash is a bridge technology for the long tail of athletic events that haven't digitized. For elite sports and well-funded programs, digital-native verification is already dominant. This use case targets the gap — the rural high school meet timed by a volunteer with a stopwatch and a printed certificate.
+
 ## Competition vs. Result Databases
 
 | Feature | OCR-to-Hash | Online Results (Athletic.net) | Photo-Finish (Visual) |
@@ -126,4 +140,4 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 | **Integrity** | **Binds Performance.** Proves the *result* matches the *athlete*. | **Database.** Prone to data entry errors or "Ghost Results." | **Static.** Just an image of the finish line. |
 | **Speed** | **Instant.** Scan the bib or certificate. | **Variable.** Meet results can take days to appear online. | **Slow.** Requires access to specialized software. |
 
-**Why OCR wins here:** Athletic results are decentralized. Thousands of local meets happen every weekend. OCR-to-hash allows a kid in a rural high school to carry a "Token of Proof" from their local timing company that is as trustworthy as an Olympic final result, bridging the gap between the field and the recruiters.
+**Why OCR fits the gap:** Athletic results are decentralized. Thousands of local meets happen every weekend without digital integration. OCR-to-hash allows a kid in a rural high school to carry a "Token of Proof" from their local timing company that is as trustworthy as an Olympic final result, bridging the gap between the field and the recruiters.

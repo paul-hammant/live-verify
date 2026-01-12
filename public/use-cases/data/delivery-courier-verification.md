@@ -141,6 +141,19 @@ Courier drivers complete 100-300 stops per day. Each delivery is a 10-30 second 
 
 This pattern applies across the gig economy: anyone doing 50+ brief interactions daily deserves privacy-preserving credentials rather than full name exposure.
 
+## Text-to-Hash Suitability
+
+**Primary scenario: Physical OCR, not text-to-hash.**
+
+This use case is fundamentally **doorstep-based**. The verification happens in person: a resident looks through a peephole, a doorman stands at a lobby desk, a security guard checks credentials at a gate. The badge is physical (lanyard, card, e-ink display), and the verification happens via camera/OCR on the spot.
+
+**Text-to-hash applicability is limited to:**
+- **Insurance claims / HR disputes:** An employee emails a photo of their badge to HR or an insurer. The recipient selects the text (employee ID, salt, verify line) from the digital image and verifies.
+- **After-incident verification:** Police or investigators reviewing doorbell camera footage that captured the badge details.
+- **Contractor onboarding records:** Property managers archiving digital copies of badges for compliance files.
+
+**Why this matters:** Don't build a text-to-hash-first solution for courier verification. The primary value is real-time physical authentication. Text-to-hash is a secondary use case for after-the-fact verification.
+
 ## Rationale
 
 Courier verification bridges the "Uniform Trust Gap." By binding the physical presence of a delivery person to the company's digital HR/Dispatch record, it protects both the public from crime and the courier companies from brand damage.

@@ -1,33 +1,32 @@
 {
-  "generated": "2026-01-11T19:11:59.199Z",
-  "totalUseCases": 403,
-  "totalFurtherDerivations": 396,
+  "generated": "2026-01-12T15:05:08.677Z",
+  "totalUseCases": 399,
+  "totalFurtherDerivations": 394,
   "categories": {
     "Real Estate & Property": 30,
     "Charitable & Non-Profit": 6,
-    "Novel Document Types": 6,
-    "Banking & Payments": 15,
+    "Novel Document Types": 5,
     "Actuarial & Insurance Mathematics": 10,
     "Personal Lines Insurance": 12,
     "Government & Civic Documents": 14,
     "Notary Services": 7,
-    "Immigration & Visa Documents": 17,
+    "Immigration & Visa Documents": 16,
     "Financial & Legal Documents": 8,
     "Insurance Claims & Operations": 12,
     "Chain of Custody & Logistics": 15,
     "Travel & Hospitality": 21,
     "Professional & Occupational Licenses": 12,
-    "Healthcare & Medical Records": 9,
     "Professional & Educational Qualifications": 14,
     "Art, Media & Publishing": 7,
-    "Banking & Financial Services": 6,
     "Customs & Trade Compliance": 6,
     "Sports & Athletics": 6,
-    "Identity & Authority Verification": 20,
-    "Investment & Fintech": 12,
+    "Identity & Authority Verification": 21,
     "Specialty Insurance": 22,
     "Business & Commerce": 10,
+    "Banking & Payments": 14,
     "Financial Compliance": 6,
+    "Identity & Civil Records": 2,
+    "Investment & Fintech": 11,
     "Site & Equipment Safety": 7,
     "Commercial Lines Insurance": 11,
     "Product Certifications & Compliance": 11,
@@ -41,6 +40,8 @@
     "Delegated Authority": 5,
     "Corporate & Legal Documents": 2,
     "Intellectual Property Law": 3,
+    "Banking & Financial Services": 5,
+    "Healthcare & Medical Records": 7,
     "Trade Finance": 5,
     "Environmental Permits & Compliance": 4,
     "Agriculture & Food": 7,
@@ -104,23 +105,6 @@
       ]
     },
     {
-      "slug": "account-aggregation-authorization",
-      "title": "Account Aggregation Authorization Certificates",
-      "category": "Banking & Payments",
-      "volume": "Medium",
-      "retention": "1-3 years (service duration)",
-      "furtherDerivations": 1,
-      "snippet": "Customer identity (partial/redacted), authorized third party, specific accounts included, scope of access (read-only, payments, etc.), timestamp of consent, expiration date.",
-      "tags": [
-        "account",
-        "aggregation",
-        "authorization",
-        "banking",
-        "open-banking",
-        "compliance"
-      ]
-    },
-    {
       "slug": "actuarial-audit-opinions",
       "title": "Actuarial Audit Opinions",
       "category": "Actuarial & Insurance Mathematics",
@@ -144,7 +128,7 @@
       "volume": "Medium",
       "retention": "Endorsement validity period + 7 years (claims lifecycle)",
       "furtherDerivations": 1,
-      "snippet": "Policy number, policyholder name, additional driver full name, driver's license number (masked), vehicle VIN, vehicle license plate, effective start date/time, expiration date/time, liability limits (",
+      "snippet": "Policy number, policyholder name, additional driver full name, driver's license number (masked), vehicle license plate, effective start date/time, expiration date/time",
       "tags": [
         "insurance",
         "driver",
@@ -324,24 +308,6 @@
       ]
     },
     {
-      "slug": "allergy-medical-alert-cards",
-      "title": "Allergy and Medical Alert Cards",
-      "category": "Healthcare & Medical Records",
-      "volume": "Small",
-      "retention": "Lifetime (emergency care)",
-      "furtherDerivations": 1,
-      "snippet": "Patient name, date of birth, specific allergies (severity), medical conditions, emergency contacts, physician contact, blood type.",
-      "tags": [
-        "allergy",
-        "medical",
-        "alert",
-        "card",
-        "emergency",
-        "anaphylaxis",
-        "diabetes"
-      ]
-    },
-    {
       "slug": "annuity-pricing-certifications",
       "title": "Annuity Pricing and Rate Certifications",
       "category": "Actuarial & Insurance Mathematics",
@@ -356,24 +322,6 @@
         "insurance",
         "solvency",
         "compliance"
-      ]
-    },
-    {
-      "slug": "anti-coercion-canaries",
-      "title": "Anti-Coercion Canaries / Duress Signals",
-      "category": "Novel Document Types",
-      "volume": "Small (specialized)",
-      "retention": "Permanent (safety records)",
-      "furtherDerivations": 0,
-      "snippet": "Issuing entity/person, canary statement (what is being attested), timestamp, expected update schedule, any variations from normal pattern.",
-      "tags": [
-        "duress",
-        "coercion",
-        "safety",
-        "canary",
-        "warrant-canary",
-        "dead-man-switch",
-        "novel"
       ]
     },
     {
@@ -442,23 +390,6 @@
         "title",
         "uspap",
         "valuation"
-      ]
-    },
-    {
-      "slug": "asset-unfreeze-notices",
-      "title": "Asset Unfreeze & Account Release Notices",
-      "category": "Banking & Financial Services",
-      "volume": "Medium",
-      "retention": "7 years (regulatory compliance)",
-      "furtherDerivations": 0,
-      "snippet": "Institution name, account/asset identifier, account holder name, type of hold/freeze, original freeze date, release date, reason for release, any continuing restrictions.",
-      "tags": [
-        "freeze",
-        "unfreeze",
-        "sanctions",
-        "account-hold",
-        "garnishment",
-        "release"
       ]
     },
     {
@@ -584,23 +515,6 @@
       ]
     },
     {
-      "slug": "automated-rebalancing-confirmations",
-      "title": "Automated Rebalancing Confirmations",
-      "category": "Investment & Fintech",
-      "volume": "Small",
-      "retention": "7-10 years (audit trail)",
-      "furtherDerivations": 1,
-      "snippet": "Account holder name, transaction date, securities sold/bought, tax-lot identification, net gain/loss realized, tax-loss harvesting (TLH) status, risk score at time of trade.",
-      "tags": [
-        "investing",
-        "rebalancing",
-        "fintech",
-        "robo-advisor",
-        "tax-loss-harvesting",
-        "compliance"
-      ]
-    },
-    {
       "slug": "aviation-insurance",
       "title": "Aviation Insurance Policies and Certificates",
       "category": "Specialty Insurance",
@@ -722,20 +636,22 @@
       ]
     },
     {
-      "slug": "biometric-appointment-confirmations",
-      "title": "Biometric Appointment Confirmations",
-      "category": "Immigration & Visa Documents",
-      "volume": "Medium",
-      "retention": "Appointment + 5 years",
+      "slug": "biometric-likeness-claims",
+      "title": "Biometric Likeness Claims",
+      "category": "Identity & Civil Records",
+      "volume": "High (potentially every identity verification interaction)",
+      "retention": "Ephemeral (salt expires in minutes); photo validity 1 year",
       "furtherDerivations": 1,
-      "snippet": "Applicant name, Case Receipt Number, Appointment Date/Time, ASC (Application Support Center) location ID, form type (e.g., I-485, I-765), date of issuance.",
+      "snippet": "The claim itself contains: name, date of birth, photo, photo date, verification URL with single-use salt.",
       "tags": [
-        "immigration",
-        "visa",
-        "uscis",
-        "biometrics",
-        "appointment",
-        "asc"
+        "identity",
+        "biometric",
+        "photo",
+        "kyc",
+        "face-verification",
+        "state-issued",
+        "ephemeral",
+        "anti-fraud"
       ]
     },
     {
@@ -753,23 +669,6 @@
         "identity",
         "probate",
         "ancestry"
-      ]
-    },
-    {
-      "slug": "blood-type-donor-cards",
-      "title": "Blood Type and Donor Cards",
-      "category": "Healthcare & Medical Records",
-      "volume": "Small",
-      "retention": "Lifetime (transfusion safety)",
-      "furtherDerivations": 1,
-      "snippet": "Donor name, date of birth, ABO blood group, Rh factor (Positive/Negative), Donor ID number, specific phenotypes/antibodies (if relevant), last donation date, screening status (e.g., CMV negative).",
-      "tags": [
-        "blood-type",
-        "blood-donor",
-        "transfusion",
-        "emergency",
-        "red-cross",
-        "hematology"
       ]
     },
     {
@@ -1393,6 +1292,24 @@
         "contractor-insurance",
         "risk-management",
         "commercial-insurance"
+      ]
+    },
+    {
+      "slug": "commercial-insurance-policy-documents",
+      "title": "Commercial Insurance Policy Documents",
+      "category": "Insurance Claims & Operations",
+      "volume": "Medium-Large",
+      "retention": "Policy term + 7-10 years",
+      "furtherDerivations": 1,
+      "snippet": "Insured name, policy numbers across multiple lines (GL, WC, Auto, Cyber), individual coverage limits, effective/expiration dates per line, deductible structures, endorsement presence (e.g., Additional",
+      "tags": [
+        "commercial-insurance",
+        "policy-declarations",
+        "endorsements",
+        "certificate-of-insurance",
+        "coi-verification",
+        "risk-management",
+        "compliance-audit"
       ]
     },
     {
@@ -3761,24 +3678,6 @@
       ]
     },
     {
-      "slug": "insurance-policy-documents",
-      "title": "Commercial Insurance Policy Documents",
-      "category": "Insurance Claims & Operations",
-      "volume": "Medium-Large",
-      "retention": "Policy term + 7-10 years",
-      "furtherDerivations": 1,
-      "snippet": "Insured name, policy numbers across multiple lines (GL, WC, Auto, Cyber), individual coverage limits, effective/expiration dates per line, deductible structures, endorsement presence (e.g., Additional",
-      "tags": [
-        "commercial-insurance",
-        "policy-declarations",
-        "endorsements",
-        "certificate-of-insurance",
-        "coi-verification",
-        "risk-management",
-        "compliance-audit"
-      ]
-    },
-    {
       "slug": "insurance-reserve-certifications",
       "title": "Life Insurance Reserve Certifications",
       "category": "Actuarial & Insurance Mathematics",
@@ -4092,6 +3991,24 @@
         "environmental-compliance",
         "public-health",
         "property-management"
+      ]
+    },
+    {
+      "slug": "legal-name-change-documents",
+      "title": "Legal Name Change Documents",
+      "category": "Identity & Civil Records",
+      "volume": "Medium",
+      "retention": "Permanent (lifetime identity document)",
+      "furtherDerivations": 2,
+      "snippet": "Previous full name, new full name, date of name change, date of enrolment/registration, enrolment/certificate number, issuing authority, jurisdiction.",
+      "tags": [
+        "identity",
+        "name-change",
+        "deed-poll",
+        "court-order",
+        "civil-records",
+        "fraud-prevention",
+        "kyc"
       ]
     },
     {
@@ -6313,6 +6230,25 @@
       ]
     },
     {
+      "slug": "school-pickup-authorization",
+      "title": "School Pickup Authorization",
+      "category": "Identity & Authority Verification",
+      "volume": "Very Large",
+      "retention": "School year + 1 year",
+      "furtherDerivations": 0,
+      "snippet": "Authorized person's name, photo (hash), relationship to child, child's name/grade, designating parent's name, authorization date, expiration date, any restrictions (e.g., \"Fridays only,\" \"after 3pm on",
+      "tags": [
+        "school",
+        "pickup",
+        "child-safety",
+        "custody",
+        "authorization",
+        "guardianship",
+        "parental-consent",
+        "education"
+      ]
+    },
+    {
       "slug": "scouting-reports-player-stats",
       "title": "Scouting Reports and Player Statistics",
       "category": "Sports & Athletics",
@@ -7291,7 +7227,7 @@
     },
     {
       "slug": "vehicle-inspection-reports-dot",
-      "title": "Vehicle Inspection Reports (DOT, Annual Safety)",
+      "title": "Vehicle Inspection Reports (DOT, MOT, TÜV)",
       "category": "Vehicle & Transportation",
       "volume": "Large",
       "retention": "5-10 years (regulatory compliance / liability)",
@@ -7305,7 +7241,13 @@
         "commercial-vehicle",
         "logistics",
         "trucking-audit",
-        "roadside-enforcement"
+        "roadside-enforcement",
+        "mot",
+        "tuv",
+        "roadworthy",
+        "emissions",
+        "personal-vehicle",
+        "used-car"
       ]
     },
     {
@@ -7648,15 +7590,11 @@
     },
     {
       "name": "Identity & Authority Verification",
-      "count": 20
+      "count": 21
     },
     {
       "name": "Immigration & Visa Documents",
-      "count": 17
-    },
-    {
-      "name": "Banking & Payments",
-      "count": 15
+      "count": 16
     },
     {
       "name": "Chain of Custody & Logistics",
@@ -7668,6 +7606,10 @@
     },
     {
       "name": "Professional & Educational Qualifications",
+      "count": 14
+    },
+    {
+      "name": "Banking & Payments",
       "count": 14
     },
     {
@@ -7684,7 +7626,7 @@
     },
     {
       "name": "Investment & Fintech",
-      "count": 12
+      "count": 11
     },
     {
       "name": "Commercial Lines Insurance",
@@ -7701,10 +7643,6 @@
     {
       "name": "Business & Commerce",
       "count": 10
-    },
-    {
-      "name": "Healthcare & Medical Records",
-      "count": 9
     },
     {
       "name": "Professional Ethics & Compliance",
@@ -7731,19 +7669,15 @@
       "count": 7
     },
     {
+      "name": "Healthcare & Medical Records",
+      "count": 7
+    },
+    {
       "name": "Agriculture & Food",
       "count": 7
     },
     {
       "name": "Charitable & Non-Profit",
-      "count": 6
-    },
-    {
-      "name": "Novel Document Types",
-      "count": 6
-    },
-    {
-      "name": "Banking & Financial Services",
       "count": 6
     },
     {
@@ -7759,11 +7693,19 @@
       "count": 6
     },
     {
+      "name": "Novel Document Types",
+      "count": 5
+    },
+    {
       "name": "Government & Regulatory",
       "count": 5
     },
     {
       "name": "Delegated Authority",
+      "count": 5
+    },
+    {
+      "name": "Banking & Financial Services",
       "count": 5
     },
     {
@@ -7799,6 +7741,10 @@
       "count": 3
     },
     {
+      "name": "Identity & Civil Records",
+      "count": 2
+    },
+    {
       "name": "Corporate & Legal Documents",
       "count": 2
     },
@@ -7819,5 +7765,5 @@
       "count": 1
     }
   ],
-  "totalCategories": 46
+  "totalCategories": 47
 }

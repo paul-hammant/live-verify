@@ -106,6 +106,16 @@ The **Building Owner / Property Manager** benefits from verification.
 **Insurance Underwriters**
 **Risk Pricing:** Insurers can verify that a building's life-safety systems are actually current before renewing a commercial liability policy.
 
+## Scope and Limitations
+
+**What OCR-to-hash verifies:** The *certificate* is genuine — the building department actually issued it for this equipment.
+
+**What OCR-to-hash does NOT verify:** That the *inspection* was legitimate. A corrupt or lazy inspector can still "pass" equipment without visiting the site, and OCR-to-hash will faithfully verify their fraudulent certificate.
+
+This is a limitation, not a flaw — the system is explicit about proving *issuer attestation*, not *underlying truth*. But verifiers (tenants, fire marshals) should understand that "certificate verified" means "the department stands behind this," not "the inspector did their job."
+
+**Who benefits most:** This use case works best when the building department (first party) has its own integrity controls. If the inspection system is corrupt, verification infrastructure just adds trust theater on top of garbage data.
+
 ## Verification Architecture
 
 **The "Ghost Certificate" Fraud Problem**
@@ -114,7 +124,7 @@ The **Building Owner / Property Manager** benefits from verification.
 - **Pencil Whipping:** An inspector signing a fire tag today but dating it "Yesterday" to meet a quota, or signing without visiting the site.
 - **Serial Swapping:** Using one "Pass" certificate for multiple identical machines across different floors.
 
-**Inspector Authentication (Out of Scope)**
+**Inspector Authentication (Separate Problem)**
 
 OCR-to-hash verifies that a certificate is genuine — it answers "did the building department really issue this?" But it doesn't solve the problem of inspectors faking inspections remotely.
 

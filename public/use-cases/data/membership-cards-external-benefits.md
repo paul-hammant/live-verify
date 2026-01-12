@@ -339,6 +339,34 @@ For professional bodies, verification status carries weight beyond "can they use
 
 ---
 
+## Text-to-Hash Suitability
+
+This use case has **two distinct verification modes** with different tooling needs:
+
+**1. In-Person / Point-of-Service (OCR-primary)**
+- Tow truck driver verifying AAA card at roadside
+- Conference desk checking IEEE membership
+- Union hiring hall dispatching members
+- Golf club front desk checking reciprocal credentials
+
+These are **physical card + camera/OCR** scenarios. The verifier has the card in hand (or can see it through a window). Text-to-hash isn't practical here — the member doesn't have a laptop open, and the verifier needs instant confirmation.
+
+**2. Remote / Administrative (Text-to-hash primary)**
+- HR verifying IEEE Senior Member claim on a resume (candidate emails membership PDF)
+- Insurance underwriter confirming AAA membership for discount eligibility
+- Conference pre-registration team processing early-bird applications (member emails proof)
+- Union pension fund verifying eligibility from submitted documentation
+- Hotel booking system accepting membership proof for pre-applied discounts
+
+These are **digital document** scenarios. The verifier receives a PDF, email, or screenshot and can select text with a browser extension.
+
+**Guidance for implementers:**
+- For organizations with strong in-person verification needs (AAA, unions, club front desks), invest in OCR/camera tooling
+- For organizations where remote/administrative verification dominates (professional societies, alumni associations), text-to-hash browser extensions are sufficient
+- Most organizations need both — build for the dominant use case, support the secondary
+
+---
+
 ## The Fake Membership Card Problem
 
 Membership fraud is low-tech and widespread:

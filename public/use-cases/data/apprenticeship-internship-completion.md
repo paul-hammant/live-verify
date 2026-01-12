@@ -124,12 +124,27 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
 
 
+## Scope and Limitations
+
+**Where verification adds the most value:**
+
+- **Major employers with brand reputation** (Google, Goldman Sachs, Fortune 500) — These companies have reputational stakes; their attestation carries weight.
+- **Trade unions with licensing authority** (IBEW, UA, Teamsters) — Journeyman cards are prerequisites for state licenses; verification prevents "ghost hours."
+- **Government-registered apprenticeship programs** — Department of Labor oversight provides institutional backing.
+
+**Where verification adds less value:**
+
+- **Unknown SMEs** — If a verifier has never heard of "Techno-Dynamic Systems, LLC," the company's domain attestation doesn't tell them whether the program was legitimate or just an owner's nephew fetching coffee.
+- **Informal internships** — "Helping out at a friend's startup" isn't made more credible by a hash.
+
+**The trust hierarchy:** Verification proves "this domain attests to this claim." For major employers, that attestation is valuable because their reputation is on the line. For unknown companies, the verifier still needs to assess whether the *issuer* is credible — and verification doesn't help with that step.
+
 ## Competition vs. LinkedIn / Background Checks
 
 | Feature | OCR-to-Hash | LinkedIn | Background Check (Checkr/Hireright) |
 | :--- | :--- | :--- | :--- |
 | **Trust** | **Cryptographic.** Bound to company domain. | **Social.** Self-reported; zero verification for internships. | **High.** But slow and expensive. |
-| **Speed** | **Instant.** Scan and see "Verified by tech-dynamic.com." | **N/A.** Just looking at a profile. | **Slow.** Takes 3-7 days to call the company. |
+| **Speed** | **Instant.** Scan and see "Verified by techno-dynamic.com." | **N/A.** Just looking at a profile. | **Slow.** Takes 3-7 days to call the company. |
 | **Portability** | **High.** Certificate works in any country/language. | **High.** Global platform. | **Low.** Tied to a specific employer request. |
 
-**Why OCR wins here:** Recruitment is about speed and trust. A recruiter can verify a candidate's "Unicorn Startup" internship *during* the initial phone screen by scanning their PDF/paper certificate, bypassing the 5-day delay and $50 cost of a formal background check.
+**Why OCR fits major employers:** Recruitment is about speed and trust. A recruiter can verify a candidate's "Fortune 500" internship *during* the initial phone screen by scanning their PDF/paper certificate, bypassing the 5-day delay and $50 cost of a formal background check. For unknown companies, the recruiter still needs to assess the issuer's credibility separately.

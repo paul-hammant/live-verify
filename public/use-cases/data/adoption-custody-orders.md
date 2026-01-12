@@ -143,6 +143,22 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
 
 
+## Critical Freshness Warning
+
+**⚠️ Custody orders change frequently.** Unlike most verified documents, custody orders can be modified, superseded, or vacated by subsequent court rulings — sometimes within days of the original order.
+
+**The freshness problem:**
+- A "VALID" status means the hash matches *and* the order hasn't been superseded
+- Courts must update verification status in real-time when new orders are entered
+- Stale data is dangerous — a parent could present a verified order that was modified yesterday
+
+**OCR-to-hash is a bridge technology here.** The ideal solution is live court integration where police, schools, and hospitals can query the case number directly for the *current* order. Until courts build those APIs, OCR-to-hash provides a partial solution — but only if:
+1. Courts commit to updating verification status immediately when orders change
+2. Verifiers understand "VALID" means "as of this moment" — not "forever"
+3. The `MODIFIED` status is treated as "do not enforce; obtain current order"
+
+**If a court cannot guarantee real-time status updates, this use case may create false confidence.**
+
 ## Competition vs. Certified Copies
 
 | Feature | OCR-to-Hash | Certified Copy (Raised Seal) |
@@ -152,4 +168,4 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 | **Cost** | **Low.** Self-service. | **High.** Certified copies cost money and require trips to the courthouse. |
 | **Tamper Proofing** | **Cryptographic.** Hash breaks if text changes. | **Physical.** Raised seals are hard to forge but not impossible; colored paper can be photocopied. |
 
-**Why OCR wins here:** The "freshness" problem is massive in family law. A paper "Certified Copy" from 6 months ago is dangerous because it doesn't show that the judge stripped custody last week. A live verification link to the court record prevents the enforcement of stale/dangerous orders.
+**Why OCR is a bridge solution:** The "freshness" problem is massive in family law. A paper "Certified Copy" from 6 months ago is dangerous because it doesn't show that the judge stripped custody last week. A live verification link to the court record prevents the enforcement of stale/dangerous orders — *but only if the court maintains real-time status updates*. Long-term, direct court API integration is the better answer.
