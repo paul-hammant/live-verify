@@ -41,11 +41,31 @@ These capabilities are designed for building into camera apps, browsers (mobile/
 
 Target SDK: 35 (Android 15), Min SDK: 26 (Android 8.0). Uses native Kotlin implementation for normalization (no JS engine) for performance and minimal APK size.
 
-**CRITICAL - Keep normalization in sync:** Text normalization is implemented in FOUR places that must match:
+### Thunderbird Extension (Email Client)
+`apps/thunderbird-extension/` — Thunderbird MailExtension for verifying claims in emails. Key files:
+- `background.js` — Background script handling verification, context menu, notifications
+- `popup/` — Verification history UI
+- `settings/` — Notification level settings
+- `shared/normalize.js`, `shared/verify.js` — Shared verification logic (adapted from browser extension)
+
+Minimum version: Thunderbird 102. Uses `messenger.*` APIs for email-specific functionality.
+
+### Mailspring Plugin (Email Client)
+`apps/mailspring-plugin/` — Mailspring plugin for verifying claims in emails. Key files:
+- `lib/main.js` — Plugin entry point, component registration
+- `lib/verify-button.jsx` — React toolbar button component
+- `lib/verify.js` — Verification logic (Node.js crypto for SHA-256)
+- `stylesheets/liveverify.less` — Plugin styles
+
+Minimum version: Mailspring 1.10.0. Uses Mailspring's ComponentRegistry for UI integration.
+
+**CRITICAL - Keep normalization in sync:** Text normalization is implemented in SIX places that must match:
 1. `public/normalize.js` (JavaScript, web app)
 2. `apps/browser-extension/shared/normalize.js` (JavaScript ES modules, browser extension)
 3. `apps/ios/LiveVerify/` uses JSBridge to run normalize.js directly
 4. `apps/android/app/src/main/java/com/liveverify/app/TextNormalizer.kt` (Kotlin, Android app)
+5. `apps/thunderbird-extension/shared/normalize.js` (JavaScript, Thunderbird extension)
+6. `apps/mailspring-plugin/lib/verify.js` (JavaScript/Node.js, Mailspring plugin)
 
 If you change normalization logic, update ALL implementations. The web app version also has `public/ocr-cleanup.js` for OCR-specific artifact removal (not needed by Clip mode).
 
@@ -112,18 +132,34 @@ live-verify/
 │   │   ├── icons/                   # Extension icons
 │   │   └── __tests__/               # Jest tests
 │   │
-│   └── android/                     # Native Android app (Kotlin)
-│       ├── app/
-│       │   ├── build.gradle.kts     # App dependencies
-│       │   └── src/main/
-│       │       ├── java/com/liveverify/app/
-│       │       │   ├── MainActivity.kt      # Camera + verification UI
-│       │       │   ├── TextNormalizer.kt    # Text normalization
-│       │       │   └── VerificationLogic.kt # URL extraction, HTTP
-│       │       ├── res/layout/              # XML layouts
-│       │       └── AndroidManifest.xml
-│       ├── build.gradle.kts         # Project config
-│       └── settings.gradle.kts
+│   ├── android/                     # Native Android app (Kotlin)
+│   │   ├── app/
+│   │   │   ├── build.gradle.kts     # App dependencies
+│   │   │   └── src/main/
+│   │   │       ├── java/com/liveverify/app/
+│   │   │       │   ├── MainActivity.kt      # Camera + verification UI
+│   │   │       │   ├── TextNormalizer.kt    # Text normalization
+│   │   │       │   └── VerificationLogic.kt # URL extraction, HTTP
+│   │   │       ├── res/layout/              # XML layouts
+│   │   │       └── AndroidManifest.xml
+│   │   ├── build.gradle.kts         # Project config
+│   │   └── settings.gradle.kts
+│   │
+│   ├── thunderbird-extension/       # Thunderbird MailExtension
+│   │   ├── manifest.json            # MailExtension manifest
+│   │   ├── background.js            # Background script
+│   │   ├── popup/                   # History UI
+│   │   ├── settings/                # Options page
+│   │   ├── shared/                  # normalize.js, verify.js
+│   │   └── icons/                   # Extension icons
+│   │
+│   └── mailspring-plugin/           # Mailspring plugin
+│       ├── package.json             # Plugin manifest
+│       ├── lib/
+│       │   ├── main.js              # Plugin entry point
+│       │   ├── verify-button.jsx    # React UI component
+│       │   └── verify.js            # Verification logic
+│       └── stylesheets/             # Plugin styles
 │
 ├── normalization-hashes/            # Cross-platform test fixtures
 │   ├── README.md                    # Format documentation
