@@ -56,15 +56,29 @@ Full name, USCIS number (A-Number), Category code (e.g., C03, C08, C09), Card se
 - **Extension Notice (I-797):** Proving the 180/540-day automatic extension.
 - **Grant of Asylum / Withholding:** (Linked document hash).
 
-## Data Visible After Verification
+## Verification Response
 
-Shows the issuer domain (`uscis.gov`) and real-time work eligibility status.
+The endpoint returns a simple status code:
 
-**Status Indications:**
-- **Authorized** — Bearer is legally eligible to work in the U.S.
-- **Pending Renewal** — Application filed; automatic extension active.
-- **Revoked** — Authorization terminated (e.g., underlying case denied).
-- **Expired** — No longer eligible; renewal required.
+- **OK** — Bearer is legally eligible to work in the U.S.
+- **PENDING_RENEWAL** — Application filed; automatic extension active; eligible to work
+- **REVOKED** — Authorization terminated (e.g., underlying case denied); do not hire
+- **EXPIRED** — No longer eligible; renewal required; do not hire until renewed
+- **404** — Card not found (forged document, wrong number, or OCR error)
+
+The issuer domain is visible from the `verify:` line on the card itself (e.g., `uscis.gov`).
+
+## Post-Verification Actions
+
+None typically. The verification confirms work authorization status; that's the decision point for hiring.
+
+**Why No Further Action:**
+
+- **Employers** just need status to complete I-9 and proceed with hiring
+- **Banks** just need confirmation for KYC compliance
+- **DMVs** just need to confirm legal presence for Real ID
+
+The status code is the value. If it's OK or PENDING_RENEWAL, proceed. If it's REVOKED, EXPIRED, or 404, don't. No POST form needed.
 
 ## Second-Party Use
 

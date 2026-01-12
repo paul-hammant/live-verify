@@ -105,15 +105,51 @@ Staff name, photo (hash), employee ID, job role (e.g., Housekeeping, Maintenance
 - **Airbnb Host ID:** (Digital) for vacation rental check-ins.
 - **Contractor Permit:** For outside vendors (e.g., plumbers) working in the hotel.
 
-## Data Visible After Verification
+## Verification Response
 
-Shows the issuer domain (`hilton.com`, `marriott.com`, `airbnb.com`) and current status.
+The endpoint returns a simple status code:
 
-**Status Indications:**
-- **On-Duty** — Staff member is currently working and authorized to enter guest areas.
-- **Off-Duty** — Shift ended; staff should not be in guest corridors.
-- **Suspended** — **ALERT:** Access revoked due to safety or disciplinary review.
-- **Invalid** — Badge reported lost or serial mismatch.
+- **OK** — Staff member is currently working and authorized to enter guest areas
+- **OFF_DUTY** — Shift ended; staff should not be in guest corridors
+- **SUSPENDED** — Access revoked due to safety or disciplinary review; do not admit
+- **INVALID** — Badge reported lost or serial mismatch
+- **404** — Badge not found (forged, terminated employee, or OCR error)
+
+The issuer domain is visible from the `verify:` line on the badge itself (e.g., `ids.hilton.com`).
+
+## Post-Verification Actions
+
+After successful verification, guests may record the interaction:
+
+```
+HTTP 200 OK
+Status: OK
+
+--- Optional Follow-Up ---
+
+You may record details of this staff interaction.
+You will NEVER be told not to do this or that it is not needed.
+
+POST to: https://hilton.com/guest-feedback/staff/9k2m4x8p
+
+Fields:
+- Room number (optional)
+- Service type: [Room Service / Housekeeping / Maintenance / Other]
+- Service quality: [Excellent / Good / Concerns]
+- Any concerns or issues?
+- Request manager callback? [Y/N]
+```
+
+**Why This Matters:**
+
+- **Pattern detection:** Staff receiving frequent "concerns" across multiple guests triggers review
+- **Incident correlation:** If something goes missing from a room, there's a record of who entered
+- **Quality improvement:** Management sees which staff consistently get positive feedback
+- **Guest empowerment:** Recording is always welcomed, never discouraged
+
+**The "Never Discouraged" Principle:**
+
+Staff should never tell guests "don't bother" or "that's not necessary." Every report is logged. The hotel can triage later—but the guest is never made to feel their input isn't wanted.
 
 ## Second-Party Use
 

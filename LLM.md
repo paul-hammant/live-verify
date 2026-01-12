@@ -876,7 +876,54 @@ The app verifies:
 2. ✅ URL endpoint exists (HTTP 200)
 3. ✅ Endpoint confirms validity (body contains "OK")
 
-**Verification endpoints NEVER echo claim content.** The verifier already has the document—they just scanned/selected it. The endpoint confirms authenticity (status: OK, REVOKED, EXPIRED, etc.), not content. Echoing back "Driver: MICHAEL CHEN, Vehicle: Tesla Model Y" would be redundant; that's already in the document being verified. Endpoints may offer post-verification actions (save to wallet, report problem, initiate claim) but not content the verifier already possesses.
+**Verification endpoints NEVER echo claim content.** The verifier already has the document—they just scanned/selected it. The endpoint confirms authenticity (status: OK, REVOKED, EXPIRED, etc.), not content. Echoing back "Driver: MICHAEL CHEN, Vehicle: Tesla Model Y" would be redundant; that's already in the document being verified.
+
+## Post-Verification Actions
+
+Endpoints may return optional actions after successful verification. These vary by use case:
+
+**Pattern 1: POST form for reporting (strong action)**
+Used when there's a power dynamic and accountability matters. The "never discouraged" principle applies—verifiers are explicitly told reporting is always welcomed.
+
+```
+HTTP 200 OK
+Status: OK
+
+--- Optional Follow-Up ---
+Are you a homeowner/patient/family member?
+You may record details of this interaction.
+You will NEVER be told not to do this or that it is not needed.
+
+POST to: https://issuer.com/report/{id}
+Fields: [context-specific]
+```
+
+**Use cases with POST reporting:**
+- **Building inspectors** — Homeowner records visit details; bribery deterrent; pattern detection
+- **Healthcare workers** — Patient/family records interaction; abuse deterrent; staffing evidence
+- **Clinical trials** — Report encounter, medications given, adverse events
+
+**Pattern 2: Link to existing infrastructure (light action)**
+Used when robust complaint/information channels already exist.
+
+```
+HTTP 200 OK
+Status: OK
+More: https://issuer.com/public-profile/{id}
+```
+
+**Use cases with link only:**
+- **Bar admission** — Link to bar association profile (disciplinary history, complaint channel)
+- **Professional licenses** — Link to licensing board's public registry
+
+**Key principles:**
+- Endpoints never echo claim content (verifier already has it)
+- POST forms are write-only from verifier's POV
+- "Never discouraged" principle for accountability-focused use cases
+- Strong actions where power dynamics exist (inspector at door, healthcare worker with vulnerable patient)
+- Light actions where existing infrastructure suffices (bar associations, licensing boards)
+
+**CSV reference:** `public/use-cases/data/post-verification-actions.csv` tracks which use cases have post-verification actions and their descriptions.
 
 **Trust assumption:** The domain owner (e.g., `intertek.com`) won't host fake verification endpoints.
 

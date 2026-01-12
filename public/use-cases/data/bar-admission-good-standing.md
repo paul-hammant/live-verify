@@ -50,15 +50,29 @@ Attorney name, bar registration number, admission date, current status (Good Sta
 - **Attorney Registration Card:** Pocket ID.
 - **Disciplinary History Extract:** For judicial appointments.
 
-## Data Visible After Verification
+## Verification Response
 
-Shows the issuer domain (`nycourts.gov`, `calbar.ca.gov`) and real-time status.
+The endpoint returns a simple status code:
 
-**Status Indications:**
-- **Good Standing** — Active and compliant with all fees/CLE.
-- **Suspended** — Temporarily barred (e.g., for non-payment or ethics).
-- **Disbarred** — Permanently removed from practice.
-- **Deceased** — Record closed.
+- **OK** — Attorney is in good standing
+- **SUSPENDED** — Temporarily barred (non-payment, ethics investigation)
+- **DISBARRED** — Permanently removed from practice
+- **404** — Not found (deceased, never admitted, or OCR error)
+
+The issuer domain is visible from the `verify:` line on the document itself (e.g., `nycourts.gov`).
+
+**More Information:**
+
+The response includes a link to the bar association's public profile:
+
+```
+HTTP 200 OK
+
+Status: OK
+More: https://nycourts.gov/attorneys/profile/saul-goodman
+```
+
+This page shows admission date, disciplinary history, CLE compliance, and contact details for the bar association if you have concerns. The existing complaint infrastructure handles reporting—no need to duplicate it here.
 
 ## Second-Party Use
 

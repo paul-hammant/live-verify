@@ -62,15 +62,52 @@ Provider name, photo (hash), background check status (Clear/Fail), background ch
 - **First Aid Certification:** Red Cross or AHA card.
 - **State License:** For licensed home-daycare operators.
 
-## Data Visible After Verification
+## Verification Response
 
-Shows the issuer domain (`care.com`, `ofsted.gov.uk`) and current eligibility.
+The endpoint returns a simple status code:
 
-**Status Indications:**
-- **Eligible** — Background check is clear and certifications are active.
-- **Expired** — Background check or first aid has lapsed.
-- **Alert** — Disciplinary action or safety report found.
-- **Revoked** — Barred from the platform/profession.
+- **OK** — Background check is clear and certifications are active
+- **EXPIRED** — Background check or first aid certification has lapsed; request updated credentials
+- **ALERT** — Disciplinary action or safety report found; proceed with extreme caution
+- **REVOKED** — Barred from the platform/profession; do not hire
+- **404** — Provider not found (forged badge, terminated account, or OCR error)
+
+The issuer domain is visible from the `verify:` line on the badge itself (e.g., `care.com`, `ofsted.gov.uk`).
+
+## Post-Verification Actions
+
+After successful verification, parents may record the care session:
+
+```
+HTTP 200 OK
+Status: OK
+
+--- Optional Follow-Up ---
+
+You may record details of this care session.
+You will NEVER be told not to do this or that it is not needed.
+
+POST to: https://care.com/parent-feedback/session
+
+Fields:
+- Care type: [Babysitting / Nanny shift / Date night / Backup care / Other]
+- Duration: [Less than 4 hours / 4-8 hours / Full day / Overnight]
+- Children's ages: [Infant / Toddler / Preschool / School-age]
+- Care quality: [Excellent / Good / Concerns]
+- Any concerns or issues?
+- Would you hire again? [Y/N]
+```
+
+**Why This Matters:**
+
+- **Pattern detection:** Provider receiving frequent "concerns" across multiple families triggers platform review
+- **Child safety:** Creates contemporaneous record if issues emerge later
+- **Quality signal:** Good providers benefit from consistent positive feedback
+- **Trust ecosystem:** Parents can see aggregate feedback patterns (not individual reports)
+
+**The "Never Discouraged" Principle:**
+
+Providers should never tell parents "don't bother" or "that's not necessary." Every report is logged. The platform can triage later—but the parent is never made to feel their input isn't wanted. Given the vulnerability of children, parental instincts should always be respected.
 
 ## Second-Party Use
 

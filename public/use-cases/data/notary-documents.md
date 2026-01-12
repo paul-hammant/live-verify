@@ -53,15 +53,17 @@ Testator name, Notary name, Commission Number, Date of Act, Witness names, Archi
 - **Succession Certificate:** Proof issued by the Notary after death.
 - **Revocation Act:** Proving a prior Will has been voided.
 
-## Data Visible After Verification
+## Verification Response (Notarial Wills)
 
-Shows the issuer domain (the National or Regional Chamber of Notaries) and the current archive status.
+The endpoint returns a simple status code:
 
-**Status Indications:**
-- **Authentic/Active** — The Will is verified and is the latest act in the registry.
-- **Superseded** — **ALERT:** A more recent Notarial Will exists (linked hash).
-- **Revoked** — The testator has formally cancelled this act.
-- **Liquidated** — The succession is complete and assets distributed.
+- **OK** — The Will is verified and is the latest act in the registry
+- **SUPERSEDED** — A more recent Notarial Will exists; do not rely on this version
+- **REVOKED** — The testator has formally cancelled this act
+- **LIQUIDATED** — The succession is complete and assets distributed
+- **404** — Will not found (never executed, wrong reference, or OCR error)
+
+The issuer domain is visible from the `verify:` line on the document itself (e.g., `notaires.qc.ca`).
 
 ## Second-Party Use
 
@@ -182,15 +184,16 @@ Signer name, Notary name, Commission Number, Jurisdiction (State/County), Type o
 - **Copy Certification:** Notary verifies a copy is a true reproduction.
 - **Apostille:** (Linked hash) for international recognition.
 
-## Data Visible After Verification
+## Verification Response (Notarization)
 
-Shows the issuer domain (the Secretary of State or a Remote Online Notary platform) and the commission status.
+The endpoint returns a simple status code:
 
-**Status Indications:**
-- **Verified** — The notary session is authentic and recorded in the journal.
-- **Revoked** — **ALERT:** The notary's commission has been suspended for misconduct.
-- **Expired** — The notary performed the act after their commission lapsed.
-- **Journal Mismatch** — **ALERT:** Notary is active, but this specific document ID isn't in their log.
+- **OK** — The notary session is authentic and recorded in the journal
+- **COMMISSION_REVOKED** — The notary's commission has been suspended for misconduct; do not rely on this act
+- **COMMISSION_EXPIRED** — The notary performed the act after their commission lapsed; invalid
+- **404** — Act not found (never recorded, wrong commission number, or forged seal)
+
+The issuer domain is visible from the `verify:` line on the document itself (e.g., `flsos.gov`).
 
 ## Second-Party Use
 
@@ -258,16 +261,45 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
 
 
-## Competition vs. Embossed Seals
+## The End of the Notary Seal
 
-| Feature | OCR-to-Hash | Physical Embosser | Hologram Sticker |
-| :--- | :--- | :--- | :--- |
-| **Integrity** | **High.** Binds to the Signer Name. | **Zero.** Doesn't protect the text. | **Zero.** |
-| **Audit-ability** | **Instant.** Links to the Journal. | **Manual.** Requires calling the Notary. | **Manual.** |
-| **Global Use** | **Seamless.** Scannable anywhere. | **Hard.** Hard to see on a scanned PDF. | **Hard.** |
-| **Cost** | **Free.** (Software based). | **High.** Physical tool required. | **High.** per-use cost. |
+Traditional notary seals — rubber stamps, embossers, digital images — are visual trust signals. They say "this looks official." But they're trivially forged: a $20 custom stamp, a Photoshopped image, or a stolen embosser.
 
-**Why OCR wins here:** The "Scanned PDF" reality. Most notarized documents today are shared as emails and PDFs, where physical "Indentations" from an embosser are invisible. OCR-to-hash turns the **Digital Image** of the stamp into a live, verifiable trust anchor, bringing the office of the Notary into the 21st century.
+With verification text embedded in the document, the seal becomes vestigial:
+
+| Feature | Verification Text | Physical Seal |
+| :--- | :--- | :--- |
+| **Trust anchor** | Cryptographic hash verified against issuer domain | Visual inspection ("does this look right?") |
+| **Forgery resistance** | High — hash must match issuer's records | Zero — stamps are trivially copied |
+| **Audit trail** | Instant link to notary journal | Manual — call the notary, check the journal |
+
+**The seal doesn't disappear overnight.** It remains for ceremony and legacy recognition. But the verification line is now the trust mechanism; the seal is decoration.
+
+## Document Format Considerations
+
+Notarized documents are often multi-page legal contracts where the notary acknowledgment is a small section.
+
+**One verification per page:**
+
+A 20-page contract has 20 verification lines — one per page. This ensures:
+- Page 3 can't be swapped for a different page 3
+- Page order is locked (page number is part of the hashed content)
+- Individual pages can be verified independently
+- The notary acknowledgment is just one page among many
+
+**Camera OCR limitations:**
+
+Camera-app OCR-to-hash works well for simple documents: a badge, an ID card, a certificate with a handful of lines. But a dense legal page with small fonts, justified text, and complex formatting? OCR errors accumulate quickly. A single misread character breaks the hash.
+
+For multi-page legal documents, camera OCR is not a realistic verification path.
+
+**Practical verification paths:**
+
+- **PDF with embedded text** — Browser extensions extract verification text reliably from digital PDFs, even across 50 pages. This is the primary path for notarized documents.
+- **HTML with verification markup** — Native support; the `[` and `]` delimiters define exactly what to hash
+- **Physical paper** — Requires digitization first (scan to PDF), then browser extension verification
+
+The browser extension is the long-term path for notarized document verification. Camera OCR remains useful for simple credentials (badges, cards, certificates) but not for complex legal documents.
 
 ---
 
@@ -321,15 +353,16 @@ Notary name, commission number, state of jurisdiction, expiration date, signer n
 - **Certified Copy:** Proving a copy matches the original.
 - **Apostille:** (Linked hash) for international recognition.
 
-## Data Visible After Verification
+## Verification Response (Notary Services)
 
-Shows the issuer domain (the Notary or a Platform like Notarize) and the act's standing.
+The endpoint returns a simple status code:
 
-**Status Indications:**
-- **Verified / Authenticated** — The act is recorded in the official notary journal.
-- **Commission Expired** — **ALERT:** The notary's commission has lapsed since the act.
-- **Revoked** — **CRITICAL:** The notary's commission was voided for misconduct.
-- **Not Found** — **CRITICAL:** This specific act was never recorded (indicates seal forgery).
+- **OK** — The act is recorded in the official notary journal
+- **COMMISSION_EXPIRED** — The notary's commission has lapsed since the act; may be invalid
+- **COMMISSION_REVOKED** — The notary's commission was voided for misconduct
+- **404** — Act not found (never recorded, wrong commission number, or forged seal)
+
+The issuer domain is visible from the `verify:` line on the document itself.
 
 ## Second-Party Use
 
@@ -420,15 +453,17 @@ Notary name, commission number, state of jurisdiction, session ID, signer name, 
 - **Electronic Journal Extract:** Proof of the act for court/audit.
 - **Credential Analysis Report:** (Linked hash) proving the ID was scanned and passed.
 
-## Data Visible After Verification
+## Verification Response (RON)
 
-Shows the issuer domain (`notarize.com`, `docuverify.com`) and the act's standing.
+The endpoint returns a simple status code:
 
-**Status Indications:**
-- **Authenticated** — The session is valid and recorded in the official journal.
-- **Video Archived** — Confirmation that the required video record is retained.
-- **Revoked** — **ALERT:** The notary act has been disavowed (e.g., due to reported fraud).
-- **Notary Suspended** — **ALERT:** The notary's commission was inactive at the time of the act.
+- **OK** — The session is valid and recorded in the official journal
+- **VIDEO_ARCHIVED** — Session valid; video record retained as required
+- **DISAVOWED** — The notary act has been revoked due to reported fraud
+- **NOTARY_SUSPENDED** — The notary's commission was inactive at the time of the act; invalid
+- **404** — Session not found (never occurred, wrong session ID, or OCR error)
+
+The issuer domain is visible from the `verify:` line on the certificate itself (e.g., `notarize.com`).
 
 ## Second-Party Use
 

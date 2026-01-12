@@ -62,15 +62,64 @@ Worker name, photo (hash), professional license type (RN, LPN, CNA), state licen
 - **Proof of Clearance:** Background check summary for domestic staff.
 - **Skill Certification:** Specialization proof (e.g., wound care or pediatric).
 
-## Data Visible After Verification
+## Verification Response
 
-Shows the issuer domain (`bayada.com`, `kaiser.org`, `nhs.uk`) and current employee status.
+The endpoint returns a simple status code:
 
-**Status Indications:**
-- **Active On-Duty** — Worker is currently authorized to be at a patient's home.
-- **Suspended** — **ALERT:** Professional license or agency status has been retracted.
-- **Off-Duty** — Shift ended; worker should not be entering private homes.
-- **Invalid** — Badge reported lost or serial mismatch.
+- **OK** — Worker is on-duty, licensed, and authorized
+- **SUSPENDED** — Professional license or agency status has been retracted; do not admit
+- **OFF_DUTY** — Shift ended; worker should not be entering private homes
+- **ALERT** — Badge reported lost/stolen
+- **404** — Badge not found (terminated, never issued, or OCR error)
+
+The issuer domain is visible from the `verify:` line on the badge itself (e.g., `bayada.com`).
+
+## Post-Verification Actions
+
+After successful verification, the endpoint can return optional actions for the patient or family:
+
+```
+HTTP 200 OK
+
+Status: OK
+
+--- Optional Follow-Up ---
+
+Are you a patient or family member?
+You may record details of this health-care-worker interaction.
+You will NEVER be told not to do this or that it is not needed.
+
+POST to: https://bayada.com/verify/visit-report/VIS-2026-402
+
+Fields:
+- Your relationship: [Patient / Family member / Next of kin / Other]
+- Setting: [Home visit / Hospital ward / Clinic / Care home / Other]
+- Date/time of interaction
+- Was identification shown?
+- Quality of care: [Excellent / Good / Concerns]
+- Any concerns or issues?
+- Request callback from patient services? [Y/N]
+```
+
+This applies whether the interaction is a home visit, on a hospital ward, in a care home, or any other medical setting. The patient or next of kin can record their perspective regardless of location.
+
+**Why This Matters:**
+
+- **Write-only patient record:** Patient or family creates their own contemporaneous record of the interaction—independent of the provider's notes
+- **Pattern detection:** Worker receiving frequent "concerns" across multiple patients triggers review
+- **Abuse deterrent:** Workers know patients and families can easily report; reduces opportunity for mistreatment
+- **Remote family visibility:** Next of kin can verify caregivers and log observations even when not physically present
+- **Documentation for disputes:** "I recorded every interaction" is powerful evidence if something goes wrong later
+- **Staffing evidence:** Healthcare workers benefit too—if units are understaffed, a high volume of logged patient interactions provides evidence for increasing staffing levels. Workers should *want* every interaction recorded.
+
+**The "Never Discouraged" Principle:**
+
+The message explicitly states recording is *always* appropriate. This prevents:
+- Workers pressuring patients ("don't bother, it's just routine")
+- Patients feeling they're being difficult or ungrateful
+- Family members feeling they're overstepping
+
+Every report is logged. The agency can triage later—but the patient/family is never told their input isn't wanted.
 
 ## Second-Party Use
 

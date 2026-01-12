@@ -59,15 +59,36 @@ Facility name, premises address, certification standard (e.g., SQF, BRCGS, HACCP
 - **Kosher / Halal Certification:** Proving religious dietary compliance.
 - **Pesticide-Free Attestation:** (Linked hash) from a 3rd party lab.
 
-## Data Visible After Verification
+## Verification Response
 
-Shows the issuer domain (`sqfi.com`, `brcgs.com`, `scsglobalservices.com`) and current standing.
+The endpoint returns a simple status code:
 
-**Status Indications:**
-- **Certified** — Facility passed audit and is in good standing.
-- **Suspended** — **ALERT:** Critical safety failure detected; certification paused.
-- **Recalled** — Certificate voided due to fraud or systemic contamination.
-- **Expiring Soon** — Re-audit window is open.
+- **OK** — Facility passed audit and is in good standing
+- **SUSPENDED** — Critical safety failure detected; certification paused; do not source from this facility
+- **REVOKED** — Certificate voided due to fraud or systemic contamination
+- **EXPIRED** — Re-audit overdue; certification no longer valid
+- **404** — Certificate not found (never issued, wrong facility, or OCR error)
+
+The issuer domain is visible from the `verify:` line on the certificate itself (e.g., `sqfi.com`).
+
+## Post-Verification Actions
+
+None typically. The verification confirms the facility's certification status; that's the value for procurement teams and supply chain audits.
+
+**Why No Further Action:**
+
+- **Retail procurement** just needs the status code to approve or flag a supplier
+- **Insurance underwriters** just need to confirm the audit rating for pricing
+- **Supply chain platforms** just need pass/fail for automated compliance checks
+
+If there's a problem (SUSPENDED, REVOKED), the action is clear: don't source from the facility, find an alternative supplier. No POST form needed.
+
+**For Food Safety Incidents:**
+
+If a verifier discovers contamination or suspects certificate fraud, the report goes to:
+- The certification body (SQF, BRCGS)
+- FDA or local health authority
+- Not through a verification endpoint — these are regulatory enforcement matters
 
 ## Second-Party Use
 

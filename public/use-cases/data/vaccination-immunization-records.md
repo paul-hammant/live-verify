@@ -46,15 +46,29 @@ Patient full name, date of birth, vaccine type/manufacturer (e.g., Pfizer/Modern
 - **Yellow Card (International):** For WHO-regulated diseases.
 - **Digital Health Pass:** (Linked hash) SMART Health Card equivalent.
 
-## Data Visible After Verification
+## Verification Response
 
-Shows the issuer domain (`cvs.com`, `cdc.gov`, `doh.state.gov`) and the health standing.
+The endpoint returns a simple status code:
 
-**Status Indications:**
-- **Verified / Recorded** — The dose matches the original provider's digital record.
-- **Lot Recalled** — **ALERT:** The specific vaccine lot has been flagged for a safety issue.
-- **Invalid Lot** — **CRITICAL:** The lot number on the card does not exist or was never sent to this provider.
-- **Series Incomplete** — **ALERT:** Additional doses are required for "Fully Vaccinated" status.
+- **OK** — The dose matches the original provider's digital record
+- **LOT_RECALLED** — The specific vaccine lot has been flagged for a safety issue; may need revaccination
+- **INVALID_LOT** — The lot number on the card does not exist or was never sent to this provider; likely forged
+- **SERIES_INCOMPLETE** — Additional doses are required for "fully vaccinated" status
+- **404** — Record not found (forged card, wrong provider, or OCR error)
+
+The issuer domain is visible from the `verify:` line on the card itself (e.g., `cvs.com`).
+
+## Post-Verification Actions
+
+None typically. The verification confirms vaccination status; that's the decision point for access.
+
+**Why No Further Action:**
+
+- **Schools** just need status to complete enrollment
+- **Border agents** just need confirmation for entry requirements
+- **Employers** just need verification for workplace health compliance
+
+The status code is the value. If it's OK, grant access. If it's INVALID_LOT or 404, reject the card. No POST form needed.
 
 ## Second-Party Use
 
@@ -121,6 +135,17 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 2. **Witnessing firm** — Independent confirmation with timestamp
 3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
 
+## Jurisdictional Variation
+
+Vaccination requirements for school enrollment, employment, and travel vary significantly by jurisdiction and change with political administrations:
+
+- **United States:** Requirements are set at the state level and are currently being rolled back in some states; federal mandates have been challenged and withdrawn
+- **European Union:** Member states maintain childhood vaccination schedules; school requirements vary by country
+- **Australia:** "No Jab, No Pay" and "No Jab, No Play" policies tie vaccination to childcare benefits and school enrollment
+- **International travel:** Yellow Fever vaccination remains mandatory for entry to endemic zones regardless of domestic politics
+
+The verification system is agnostic to policy — it answers "did this person receive this vaccine?" not "should this person be required to have it?" Policy changes don't affect the technical verification; they affect what third parties choose to do with the result.
+
 ## Rationale
 
-Immunization records are the "Physical Firewall" of public health. By turning static cards into verifiable digital bridges, we protect the community from the return of preventable diseases and ensure that "Public Safety" is backed by the cryptographic truth of the clinic.
+Immunization records are proof of medical history. By turning static cards into verifiable digital bridges, we ensure that records are authentic regardless of how jurisdictions choose to use them — whether for school enrollment, travel requirements, employment compliance, or simply personal health records.

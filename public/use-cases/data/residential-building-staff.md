@@ -97,16 +97,55 @@ Staff or contractor name, photo (hash), license/credential number (for licensed 
 - **Emergency Service Credential:** Fire, police, paramedics, or utility company responders
 - **Third-Party Service License Verification:** Licensed trades (electricians, plumbers) verified against state licensing boards
 
-## Data Visible After Verification
+## Verification Response
 
-Shows the building management company domain (e.g., `equity-residential.com`, `building-mgmt-corp.com`) or contractor company domain, and current authorization status.
+The endpoint returns a simple status code:
 
-**Status Indications:**
-- **Authorized Today** — Contractor is currently authorized for work at this property/unit within the scheduled time window
-- **Not Scheduled** — Work order not in system or outside scheduled window (should not be entering)
-- **Suspended** — **ALERT:** Contractor access revoked due to safety issue, license suspension, or background check failure
-- **Expired License** — Contractor's trade license or bonding has lapsed
-- **Invalid Unit** — Badge issued for different unit; contractor attempting to access wrong apartment
+- **OK** — Contractor is currently authorized for work at this property/unit within the scheduled time window
+- **NOT_SCHEDULED** — Work order not in system or outside scheduled window; do not admit
+- **SUSPENDED** — Access revoked due to safety issue, license suspension, or background check failure
+- **EXPIRED_LICENSE** — Contractor's trade license or bonding has lapsed
+- **INVALID_UNIT** — Badge issued for different unit; contractor attempting to access wrong apartment
+- **404** — Badge not found (forged, terminated, or OCR error)
+
+The issuer domain is visible from the `verify:` line on the badge itself (e.g., `id.equityapartments.com`).
+
+## Post-Verification Actions
+
+After successful verification, residents may record the visit:
+
+```
+HTTP 200 OK
+Status: OK
+
+--- Optional Follow-Up ---
+
+You may record details of this service visit.
+You will NEVER be told not to do this or that it is not needed.
+
+POST to: https://equityapartments.com/resident-feedback/visit/7x2p9k4m
+
+Fields:
+- Unit number
+- Service type: [Plumbing / Electrical / HVAC / Maintenance / Other]
+- Work completed: [Yes / Partially / No]
+- Quality: [Excellent / Good / Concerns]
+- Areas accessed: [Kitchen / Bathroom / Bedroom / Living area / Utility]
+- Any concerns or issues?
+- Request management callback? [Y/N]
+```
+
+**Why This Matters:**
+
+- **Theft deterrent:** Contractors know residents can record which areas were accessed; creates accountability
+- **Pattern detection:** Contractor receiving frequent "concerns" across multiple units triggers review
+- **Dispute resolution:** If something goes missing, there's a contemporaneous record of who entered and what areas
+- **Work quality tracking:** Management sees which contractors consistently deliver quality work
+- **Hours verification:** Residents can note arrival/departure times; prevents contractors billing inflated hours
+
+**The "Never Discouraged" Principle:**
+
+Contractors should never tell residents "don't bother" or "that's not necessary." Every report is logged. Management can triage later—but the resident is never made to feel their input isn't wanted.
 
 ## Second-Party Use
 

@@ -59,15 +59,29 @@ Business name, qualifying individual, license number, classification (e.g., Gene
 - **Verification of Licensure:** Official extract for large project bids.
 - **Bond Rider:** Proving specific project bonding.
 
-## Data Visible After Verification
+## Verification Response
 
-Shows the issuer domain (`cslb.ca.gov`, `dpor.virginia.gov`) and current status.
+The endpoint returns a simple status code:
 
-**Status Indications:**
-- **Active** — License is valid and bond is in force.
-- **Suspended** — Temporary restriction (e.g., due to lapsed insurance).
-- **Revoked** — Permanently barred from contracting.
-- **Inactive** — Contractor is not currently authorized to perform work.
+- **OK** — License is valid and bond is in force
+- **SUSPENDED** — Temporary restriction (e.g., due to lapsed insurance); do not hire
+- **REVOKED** — Permanently barred from contracting; do not hire
+- **INACTIVE** — Contractor is not currently authorized to perform work
+- **404** — License not found (fake number, wrong state, or OCR error)
+
+The issuer domain is visible from the `verify:` line on the certificate itself (e.g., `cslb.ca.gov`).
+
+## Post-Verification Actions
+
+None typically. The verification confirms license and bond status; that's the decision point for hiring.
+
+**Why No Further Action:**
+
+- **Homeowners** just need status before signing a contract
+- **Building departments** just need confirmation before issuing permits
+- **Supply houses** just need verification for trade pricing access
+
+The status code is the value. If it's OK, proceed. If it's SUSPENDED, REVOKED, INACTIVE, or 404, find another contractor. No POST form needed.
 
 ## Second-Party Use
 

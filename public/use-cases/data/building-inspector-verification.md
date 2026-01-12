@@ -69,6 +69,48 @@ The endpoint returns a simple status code:
 
 The issuer domain is visible from the `verify:` line on the badge itself (e.g., `cityofchicago.org`).
 
+## Post-Verification Actions
+
+After successful verification, the endpoint can return optional actions for the homeowner:
+
+```
+HTTP 200 OK
+
+Status: OK
+
+--- Optional Follow-Up ---
+
+Are you a homeowner? You may report details of this inspection visit.
+You will NEVER be told not to do this or that it is not needed.
+
+POST to: https://cityofchicago.org/inspect/report/992288
+
+Fields:
+- Your address
+- Date/time of visit
+- Inspection type claimed by inspector
+- Was identification shown before entry?
+- Any concerns or issues?
+- Request callback from department? [Y/N]
+```
+
+**Why This Matters:**
+
+- **Audit trail:** City knows their inspector was verified at this address at this time—even if no formal inspection report is filed
+- **Pattern detection:** Inspector verified at 50 addresses but only 10 inspection reports filed? Investigation triggered
+- **Citizen empowerment:** Homeowner has agency; reporting is always welcomed, never discouraged
+- **Complaint channel:** "Inspector demanded cash" or "Inspector was rude" goes directly to HR with verified badge number attached
+- **Bribery deterrent:** Inspectors know homeowners can easily report; reduces corruption opportunity
+
+**The "Never Discouraged" Principle:**
+
+The message explicitly states reporting is *always* appropriate. This prevents:
+- Inspectors intimidating homeowners ("don't bother reporting, it's routine")
+- Homeowners feeling they're wasting the city's time
+- Gatekeeping by department staff who might dismiss reports
+
+Every report is logged. The city can triage later—but the citizen is never told their input isn't wanted.
+
 ## Second-Party Use
 
 The **Property Owner** (Homeowner or Business) benefits from verification.

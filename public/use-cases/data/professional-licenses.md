@@ -38,16 +38,42 @@ Licensee name, license number, profession (e.g., Physician, Attorney, PE), prima
 - **Letter of Good Standing:** For reciprocity in other states.
 - **Temporary Permit:** For locum tenens or emergency practice.
 
-## Data Visible After Verification
+## Verification Response
 
-Shows the issuer domain (`nysed.gov`, `isb.net`, `fsmb.org`) and the professional standing.
+The endpoint returns a simple status code:
 
-**Status Indications:**
-- **Active / Clear** — License is valid and the practitioner is in good standing.
-- **Probationary** — **ALERT:** License is valid but under board supervision.
-- **Suspended** — **CRITICAL:** Practice authority is temporarily revoked.
-- **Revoked** — **CRITICAL:** Permanent termination of practice authority.
-- **Expired** — Mandatory renewal or fees are overdue.
+- **OK** — License is valid and the practitioner is in good standing
+- **PROBATIONARY** — License valid but under board supervision; verifier should inquire further
+- **SUSPENDED** — Practice authority temporarily revoked; do not engage
+- **REVOKED** — Permanent termination of practice authority; do not engage
+- **EXPIRED** — Mandatory renewal or fees overdue; practitioner may not legally practice
+- **404** — License not found (never issued, OCR error, or practitioner deceased)
+
+The issuer domain is visible from the `verify:` line on the credential itself (e.g., `nysed.gov`).
+
+## Post-Verification Actions
+
+After successful verification, the response includes a link to the licensing board's public profile:
+
+```
+HTTP 200 OK
+Status: OK
+
+More: https://nysed.gov/professions/lookup/992288
+```
+
+**What the Public Profile Provides:**
+
+- **Disciplinary history** — Past actions, settlements, or complaints
+- **Specialty certifications** — Board certifications beyond basic licensure
+- **Practice restrictions** — Any limitations on scope of practice
+- **Complaint channel** — How to report concerns to the board
+
+**Why a Link, Not a POST Form:**
+
+Professional licensing boards already have robust complaint mechanisms—adding duplicate infrastructure would be wasteful. The verification confirms current status; the board's existing public profile and complaint system handles everything else.
+
+This mirrors the bar-admission pattern: verification proves standing, existing infrastructure handles deeper inquiries.
 
 ## Second-Party Use
 

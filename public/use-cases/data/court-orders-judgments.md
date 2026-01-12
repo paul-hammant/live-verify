@@ -67,15 +67,29 @@ Case Number, Court Jurisdiction, Judge Name, Names of Parties, Verdict/Amount (n
 - **Probate Order:** Authorizing the executor of an estate.
 - **Restraining Order:** Law enforcement directive for protection.
 
-## Data Visible After Verification
+## Verification Response
 
-Shows the issuer domain (the State or Federal Court System) and the current legal standing.
+The endpoint returns a simple status code:
 
-**Status Indications:**
-- **Final & Effective** — The order is authentic and in full force.
-- **Under Appeal** — **ALERT:** The order may be stayed or subject to change.
-- **Vacated/Void** — **ALERT:** A later court action has cancelled this order.
-- **Superseded** — An amended order has been issued (linked hash).
+- **OK** — The order is authentic and in full force
+- **UNDER_APPEAL** — The order may be stayed or subject to change; proceed with caution
+- **VACATED** — A later court action has cancelled this order; do not enforce
+- **SUPERSEDED** — An amended order has been issued; this version is outdated
+- **404** — Order not found (wrong case number, forged document, or OCR error)
+
+The issuer domain is visible from the `verify:` line on the order itself (e.g., `courts.delaware.gov`).
+
+## Post-Verification Actions
+
+None typically. The verification confirms the order's status; that's the decision point for enforcement.
+
+**Why No Further Action:**
+
+- **Sheriffs/marshals** just need status to decide whether to proceed with enforcement
+- **Banks** just need confirmation before obeying a garnishment order
+- **Police officers** just need to know if a restraining order is active before making an arrest
+
+The status code is the value. If it's OK, enforce. If it's VACATED or 404, don't. No POST form or additional workflow needed.
 
 ## Second-Party Use
 

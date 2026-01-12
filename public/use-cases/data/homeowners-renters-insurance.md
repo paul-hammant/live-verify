@@ -54,15 +54,29 @@ Named insured, property address, dwelling limit (Coverage A), personal property 
 - **Evidence of Property Insurance:** Specifically for lenders.
 - **Endorsement Schedule:** Listing specific riders (e.g., jewelry/flood).
 
-## Data Visible After Verification
+## Verification Response
 
-Shows the issuer domain (`statefarm.com`, `geico.com`) and current policy standing.
+The endpoint returns a simple status code:
 
-**Status Indications:**
-- **In Force** — Premium paid; policy active.
-- **Pending Cancellation** — **ALERT:** Notice sent for non-payment.
-- **Expired** — Coverage ended; no renewal found.
-- **Amended** — A revised Dec Page exists (e.g., due to a limit increase).
+- **OK** — Premium paid; policy active
+- **PENDING_CANCELLATION** — Notice sent for non-payment; do not rely on coverage
+- **EXPIRED** — Coverage ended; no renewal found
+- **SUPERSEDED** — A revised Dec Page exists (e.g., due to limit increase); request current version
+- **404** — Policy not found (never issued, cancelled, or OCR error)
+
+The issuer domain is visible from the `verify:` line on the document itself (e.g., `statefarm.com`).
+
+## Post-Verification Actions
+
+None typically. The verification confirms current status; that's all the verifier needs.
+
+**Why No Further Action:**
+
+- **Lenders/servicers** performing automated audits only need the status code—coverage is active or it isn't
+- **Closing agents** need confirmation before funding, not a follow-up workflow
+- **Policyholders** already know how to contact their carrier for claims or service
+
+The verifier has the document in hand (that's how they got the hash). If they need carrier contact info, it's on the document itself.
 
 ## Second-Party Use
 
@@ -178,15 +192,17 @@ Insured name, property address, Claim ID, estimated Replacement Cost Value (RCV)
 - **Certificate of Completion:** Signed by the owner post-repair.
 - **Contents Inventory:** Verified list of destroyed items.
 
-## Data Visible After Verification
+## Verification Response (Claims)
 
-Shows the issuer domain (`allstate.com`, `libertymutual.com`) and current claim standing.
+The endpoint returns a simple status code:
 
-**Status Indications:**
-- **Approved** — Estimate matches the carrier's system; funds authorized.
-- **Supplemented** — **ALERT:** A newer estimate #2 exists; this version is void.
-- **Paid** — Funds have been issued to the insured/contractor.
-- **Closed** — Claim file completed and liability discharged.
+- **OK** — Estimate matches the carrier's system; funds authorized
+- **SUPERSEDED** — A newer estimate exists; this version is void
+- **PAID** — Funds have been issued to the insured/contractor
+- **CLOSED** — Claim file completed and liability discharged
+- **404** — Claim not found (never filed, or OCR error)
+
+The issuer domain is visible from the `verify:` line on the estimate itself (e.g., `allstate.com`).
 
 ## Second-Party Use
 
@@ -313,15 +329,17 @@ Named insured, property address, dwelling limit (Cov A), personal property limit
 - **HO-6 Unit-Owner Policy:** Specifically for condominiums.
 - **Evidence of Property Insurance:** Formal proof for bank files.
 
-## Data Visible After Verification
+## Verification Response
 
-Shows the issuer domain (`libertymutual.com`, `statefarm.com`, `lemonade.com`) and current policy standing.
+The endpoint returns a simple status code:
 
-**Status Indications:**
-- **In Force** — Premium paid; policy is active.
-- **Pending Cancellation** — **ALERT:** Notice sent due to non-payment or high risk.
-- **Expired** — Term ended; no active coverage found.
-- **Amended** — A newer version of the Dec Page exists.
+- **OK** — Premium paid; policy is active
+- **PENDING_CANCELLATION** — Notice sent due to non-payment or high risk; do not rely on coverage
+- **EXPIRED** — Term ended; no active coverage found
+- **SUPERSEDED** — A newer version of the Dec Page exists; request current version
+- **404** — Policy not found (never issued, cancelled, or OCR error)
+
+The issuer domain is visible from the `verify:` line on the document itself (e.g., `libertymutual.com`).
 
 ## Second-Party Use
 

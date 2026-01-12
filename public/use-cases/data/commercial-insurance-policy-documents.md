@@ -3,7 +3,7 @@ title: "Commercial Insurance Policy Documents"
 category: "Insurance Claims & Operations"
 volume: "Medium-Large"
 retention: "Policy term + 7-10 years"
-slug: "insurance-policy-documents"
+slug: "commercial-insurance-policy-documents"
 tags: ["commercial-insurance", "policy-declarations", "endorsements", "certificate-of-insurance", "coi-verification", "risk-management", "compliance-audit"]
 furtherDerivations: 1
 ---
@@ -40,15 +40,49 @@ Insured name, policy numbers across multiple lines (GL, WC, Auto, Cyber), indivi
 - **Schedule of Forms:** (Linked hash) listing all 50+ endorsements in the file.
 - **Premium Audit Report:** Proving the final adjusted cost.
 
-## Data Visible After Verification
+## Verification Response
 
-Shows the issuer domain (`marsh.com`, `aon.com`, `chubb.com`) and the status of the entire portfolio.
+The endpoint returns a simple status code:
 
-**Status Indications:**
-- **All Active** — Every policy in the summary is current and premium-paid.
-- **Segment Cancelled** — **ALERT:** One specific line (e.g., Cyber) has lapsed.
-- **Superseded** — Mid-term changes occurred; download new evidence.
-- **Audit Pending** — Policy active but final payroll figures unverified.
+- **OK** — Every policy in the summary is current and premium-paid
+- **SEGMENT_LAPSED** — One specific line (e.g., Cyber) has lapsed; do not proceed without updated certificate
+- **SUPERSEDED** — Mid-term changes occurred; request new evidence from insured
+- **AUDIT_PENDING** — Policy active but final payroll figures unverified
+- **EXPIRED** — Policy period has ended; do not rely on this certificate
+- **404** — Certificate not found (never issued, revoked, or OCR error)
+
+The issuer domain is visible from the `verify:` line on the certificate itself (e.g., `marsh.com`).
+
+## Post-Verification Actions
+
+After successful verification, the response includes broker contact for follow-up:
+
+```
+HTTP 200 OK
+Status: OK
+
+--- Certificate Information ---
+Broker: Marsh McLennan
+Contact: certificates@marsh.com
+Request updated COI: https://marsh.com/coi-request/99228877
+```
+
+**Why This Pattern:**
+
+Commercial insurance operates in a B2B context with established broker relationships. The verification confirms current status; any follow-up (endorsement requests, coverage questions, claims) flows through existing broker channels.
+
+**For Segment Lapsed or Superseded:**
+
+```
+HTTP 200 OK
+Status: SEGMENT_LAPSED
+Affected: Cyber Liability (AIG)
+
+Action required: Request updated certificate from insured.
+Broker contact: certificates@marsh.com
+```
+
+The verifier (GC, procurement team, lender) knows immediately which line has an issue and who to contact—without needing to make phone calls to figure out which carrier in a multi-line portfolio has the problem.
 
 ## Second-Party Use
 

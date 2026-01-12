@@ -53,16 +53,58 @@ Guide name, license ID, issuing tourism board, photograph (via hash), languages 
 - **Booking Voucher:** (Linked hash) proving the guide was hired for this session.
 - **Liability Insurance Card:** Proof of coverage for accidents.
 
-## Data Visible After Verification
+## Verification Response
 
-Shows the issuer domain (`tourism-board.gov`, `viator.com`, `getyourguide.com`) and the guide's standing.
+The endpoint returns a simple status code:
 
-**Status Indications:**
-- **Active / Verified** — Guide is currently licensed and in good standing.
-- **On Duty** — (Optional) Guide is currently assigned to an active booking.
-- **Suspended** — **CRITICAL:** Credentials temporarily revoked (e.g., due to harassment report).
-- **Revoked** — **CRITICAL:** Permanent termination of guide authority.
-- **Unauthorized** — **ALERT:** Hash not found; high risk of impersonation.
+- **OK** — Guide is currently licensed and in good standing
+- **ON_DUTY** — (Optional) Guide is currently assigned to an active booking
+- **SUSPENDED** — Credentials temporarily revoked (e.g., due to harassment report); do not proceed
+- **REVOKED** — Permanent termination of guide authority; do not hire
+- **404** — Badge not found (forged, terminated, or OCR error)
+
+The issuer domain is visible from the `verify:` line on the badge itself (e.g., `visitportugal.gov`, `viator.com`).
+
+## Post-Verification Actions
+
+After successful verification, travelers may record the tour experience:
+
+```
+HTTP 200 OK
+Status: OK
+
+--- Optional Follow-Up ---
+
+You may record details of this guided experience.
+You will NEVER be told not to do this or that it is not needed.
+
+POST to: https://visitportugal.gov/tourist-feedback/tour
+
+Fields:
+- Tour type: [Walking tour / Museum / Historical site / Food & wine / Adventure / Other]
+- Duration: [Less than 2 hours / 2-4 hours / Full day / Multi-day]
+- Traveling: [Solo / Couple / Family / Group]
+- Guide quality: [Excellent / Good / Concerns]
+- Safety concerns? [None / Minor / Serious]
+- Any concerns or issues?
+- Would you recommend? [Y/N]
+
+--- Tip Your Guide ---
+
+Tip: https://visitportugal.gov/tip/PT-992288
+```
+
+**Why This Matters:**
+
+- **Pattern detection:** Guide receiving frequent "concerns" across multiple travelers triggers board review
+- **Traveler safety:** Creates contemporaneous record if incidents emerge later
+- **Quality signal:** Good guides benefit from consistent positive feedback
+- **Destination reputation:** Tourism boards can identify and address problematic guides before bad reviews spread
+- **Direct tipping:** Travelers can tip guides digitally without cash exchange; especially valuable when local currency is unfamiliar or ATMs are scarce
+
+**The "Never Discouraged" Principle:**
+
+Guides should never tell travelers "don't bother" or "that's not necessary." Every report is logged. The tourism board can triage later—but the traveler is never made to feel their input isn't wanted. Given the vulnerability of solo travelers (especially in unfamiliar environments), safety concerns should always be respected.
 
 ## Second-Party Use
 

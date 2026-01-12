@@ -54,15 +54,51 @@ Worker name, employee ID, company name, service specialization (Gas/Electric/Ste
 - **Service Order / Job Ticket:** Printed or on-tablet proof of work.
 - **Notice of Entry:** Left on the door for scheduled maintenance.
 
-## Data Visible After Verification
+## Verification Response
 
-Shows the issuer domain (`coned.com`, `pge.com`, `nationalgrid.com`) and the worker's status.
+The endpoint returns a simple status code:
 
-**Status Indications:**
-- **Active Duty** — Worker is currently on shift and assigned to field tasks.
-- **Verified Dispatch** — (If linked to order) A service order exists for this zip code/street today.
-- **Terminated** — **ALERT:** Person is no longer an employee.
-- **Fraud Alert** — **ALERT:** This ID has been flagged for misuse.
+- **OK** — Worker is currently on shift and assigned to field tasks
+- **VERIFIED_DISPATCH** — (If linked to order) A service order exists for this address today
+- **TERMINATED** — Person is no longer an employee; do not admit
+- **FRAUD_ALERT** — This ID has been flagged for misuse
+- **404** — Badge not found (forged, expired, or OCR error)
+
+The issuer domain is visible from the `verify:` line on the badge itself (e.g., `coned.com`).
+
+## Post-Verification Actions
+
+After successful verification, homeowners may record the visit:
+
+```
+HTTP 200 OK
+Status: OK
+
+--- Optional Follow-Up ---
+
+You may record details of this utility visit.
+You will NEVER be told not to do this or that it is not needed.
+
+POST to: https://coned.com/customer-feedback/visit
+
+Fields:
+- Service type: [Meter read / Gas inspection / Electric repair / Other]
+- Areas accessed: [Exterior only / Basement / Interior / Backyard]
+- Duration: [Less than 10 min / 10-30 min / Over 30 min]
+- Any concerns or issues?
+- Request callback from customer service? [Y/N]
+```
+
+**Why This Matters:**
+
+- **Scam deterrent:** Workers know homeowners can record the visit; reduces opportunity for theft or extortion
+- **Pattern detection:** Worker receiving frequent "concerns" across multiple addresses triggers HR review
+- **Dispute resolution:** If damage or theft occurs, there's a contemporaneous record of who accessed what areas
+- **Access log:** Creates homeowner-controlled record independent of utility's internal logs
+
+**The "Never Discouraged" Principle:**
+
+Workers should never tell homeowners "don't bother" or "that's not necessary." Every report is logged. The utility can triage later—but the homeowner is never made to feel their input isn't wanted.
 
 ## Second-Party Use
 
@@ -150,15 +186,17 @@ Worker name, photo (hash), employee ID, company name (Utility/Surveying firm), s
 - **Land Surveyor License:** (Linked hash) for professional boundary setters.
 - **Easement Entry Letter:** Proving the legal right to access a backyard.
 
-## Data Visible After Verification
+## Verification Response (Meter Readers/Surveyors)
 
-Shows the issuer domain (`coned.com`, `pge.com`, `att.com`) and current status.
+The endpoint returns a simple status code:
 
-**Status Indications:**
-- **On-Duty** — Worker is currently working and authorized to be at a customer's home.
-- **Suspended** — **ALERT:** Access revoked due to safety or disciplinary review.
-- **Off-Duty** — Shift ended; worker should not be entering private properties.
-- **Invalid** — Badge reported lost or serial mismatch.
+- **OK** — Worker is currently working and authorized to be at a customer's home
+- **SUSPENDED** — Access revoked due to safety or disciplinary review; do not admit
+- **OFF_DUTY** — Shift ended; worker should not be entering private properties
+- **INVALID** — Badge reported lost or serial mismatch
+- **404** — Badge not found (forged, terminated, or OCR error)
+
+The issuer domain is visible from the `verify:` line on the badge itself (e.g., `field.coned.com`).
 
 ## Second-Party Use
 

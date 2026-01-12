@@ -124,7 +124,8 @@ See that "verify:" line ... we'll come back to that.
 - ✅ **Accessible** - Works with paper, screenshots, and low-end printers; no QR/NFC/special ink required
 - ✅ **No cloud OCR** - No Google/AWS/Azure seeing your personal documents
 - ✅ **Dispute Resolution** - Provides undeniable digital proof for chargebacks, insurance claims, and contract disagreements
-- ✅ **Safe to challenge** - Empowers neighbors, bystanders, and police to challenge suspicious activity because verification gives them a clear answer on the spot.
+- ✅ **Safe to challenge** - Empowers neighbors, bystanders, and police to challenge suspicious activity because verification gives them a clear answer on the spot
+- ✅ **Post-verification actions** - Beyond "verified/denied", endpoints can offer context-appropriate follow-up actions (report an interaction, link to more info, initiate a claim)
 
 ## Commercialization (SaaS)
 
@@ -706,6 +707,56 @@ Portal: Shares the full CV. With or without verification proof - the client coul
 - The issuing organizations (Edinburgh University, Microsoft) confirmed authenticity via HTTP 200 + "OK" and that gets noted "claims made in CV all verified"
 
 **Key insight:** The retention laws govern **the underlying text** (the CV, the degree claim, the employment history, the financial services contract/transaction), not the hash. The hash is merely a cryptographic proof that helps verify authenticity, but the legal obligations attach to the personal data being stored and shared.
+
+## Post-Verification Actions
+
+Verification doesn't end at "OK" or "REVOKED". Endpoints can return optional follow-up actions appropriate to the context:
+
+### Accountability-Focused Actions (Strong)
+
+For use cases with power dynamics—where someone with authority enters private spaces or interacts with vulnerable people—the verification response can include a POST form for reporting:
+
+```
+HTTP 200 OK
+Status: OK
+
+--- Optional Follow-Up ---
+Are you a homeowner? You may record details of this inspection visit.
+You will NEVER be told not to do this or that it is not needed.
+
+POST to: https://cityofchicago.org/inspect/report/992288
+Fields: address, date/time, inspection type, concerns
+```
+
+**The "Never Discouraged" Principle:** The message explicitly states reporting is *always* appropriate. This prevents officials from intimidating people ("don't bother, it's routine") and empowers verifiers to document interactions without feeling like they're wasting anyone's time.
+
+**Use cases:**
+- **Building inspectors** — Homeowner records visit; creates audit trail; bribery deterrent
+- **Healthcare workers** — Patient/family records interaction; abuse deterrent; also provides staffing evidence (workers benefit from logged interactions when advocating for more staff)
+- **Clinical trial participants** — Emergency room can report encounter, medications given, adverse events
+
+### Information-Focused Actions (Light)
+
+For use cases where robust infrastructure already exists, a simple link suffices:
+
+```
+HTTP 200 OK
+Status: OK
+More: https://nycourts.gov/attorneys/profile/saul-goodman
+```
+
+**Use cases:**
+- **Bar admission** — Link to bar association's public profile (disciplinary history, CLE status, existing complaint channels)
+- **Professional licenses** — Link to licensing board registry
+
+### Why This Matters
+
+Post-verification actions transform verification from a yes/no check into an accountability and transparency tool:
+
+- **Pattern detection:** Inspector verified at 50 addresses but only 10 reports filed? Investigation triggered
+- **Citizen empowerment:** Reporting is never discouraged; every report is logged
+- **Deterrent effect:** Officials know interactions can be easily documented
+- **Evidence creation:** "I recorded every visit" is powerful in disputes
 
 ## Verification Charges: Free vs Paid
 

@@ -59,14 +59,30 @@ Appraiser name/credentials (AAA/ISA), client name, artwork details (Artist, Titl
 - **Valuation Summary:** 1-page extract for insurance brokers.
 - **Fairness Opinion:** For corporate art acquisitions.
 
-## Data Visible After Verification
+## Verification Response
 
-Shows the issuer domain (`sothebys.com`, `christies.com`) and report status.
+The endpoint returns a simple status code:
 
-**Status Indications:**
-- **Active** — Report is current and matches the issuer's file.
-- **Superseded** — A more recent valuation exists (values fluctuate yearly).
-- **Invalid** — Report was retracted (e.g., due to discovery of forgery).
+- **OK** — Report is current and matches the issuer's file
+- **SUPERSEDED** — A more recent valuation exists; request updated report
+- **RETRACTED** — Report was withdrawn (e.g., due to discovery of forgery)
+- **404** — Report not found (never issued, or OCR error)
+
+The issuer domain is visible from the `verify:` line on the document itself (e.g., `sothebys.com`).
+
+## Post-Verification Actions
+
+None typically. The verification confirms the appraisal is genuine and current; that's the value.
+
+**Why No Further Action:**
+
+Art collectors are intensely private. They don't want inquiries about pieces that aren't for sale, and their agents (galleries, family offices) have no incentive to respond to verification-related contact. The verification system respects this by:
+
+- **No owner contact information** in the response
+- **No "inquiry" forms** that would generate unwanted solicitation
+- **Issuer is the trust anchor** — Sotheby's or Christie's stands behind the document; the owner doesn't need to be involved
+
+If someone needs to contact the owner (for acquisition, loan, or exhibition), that happens through existing art market channels — not through a verification endpoint.
 
 ## Second-Party Use
 
@@ -189,15 +205,17 @@ Artist name, artwork title, creation year, medium, dimensions, edition number (i
 - **Gallery COA:** Issued by the primary representing gallery.
 - **Catalogue Raisonné Extract:** Official scholarly entry.
 
-## Data Visible After Verification
+## Verification Response (COA)
 
-Shows the issuer domain (`basquiat-estate.org`, `gagosian.com`) and the status of the work.
+The endpoint returns a simple status code:
 
-**Status Indications:**
-- **Verified** — The work is recognized as authentic by the authority.
-- **Disputed** — The work is currently under scholarly review or litigation.
-- **Invalid** — The certificate is a known forgery or the work has been de-authenticated.
-- **Stolen** — The work is registered on the Art Loss Register.
+- **OK** — The work is recognized as authentic by the authority
+- **DISPUTED** — The work is currently under scholarly review or litigation
+- **DE_AUTHENTICATED** — The certificate is a known forgery or the work has been rejected
+- **STOLEN** — The work is registered on the Art Loss Register; do not transact
+- **404** — Certificate not found (never issued, or OCR error)
+
+The issuer domain is visible from the `verify:` line on the certificate itself (e.g., `basquiat-estate.org`).
 
 ## Second-Party Use
 
@@ -332,15 +350,17 @@ Artist name, title of work, year, medium, total edition size (e.g., 50), specifi
 - **Inventory Receipt:** For gallery internal tracking.
 - **Sculpture Casting Certificate:** Proving the foundry used an authorized mold.
 
-## Data Visible After Verification
+## Verification Response (Editions)
 
-Shows the issuer domain (`pacegallery.com`, `tate.org.uk`) and the status of that specific number.
+The endpoint returns a simple status code:
 
-**Status Indications:**
-- **Authorized** — Number matches the publisher's official record.
-- **Sold Out** — Edition complete; no more numbers will be issued.
-- **Destroyed/Withdrawn** — The specific numbered piece was reported destroyed (important for insurance).
-- **Duplicate Alert** — Another party has already verified/claimed this specific number (fraud detection).
+- **OK** — Number matches the publisher's official record
+- **SOLD_OUT** — Edition complete; no more numbers will be issued
+- **DESTROYED** — The specific numbered piece was reported destroyed (important for insurance)
+- **DUPLICATE_ALERT** — Another party has already verified this specific number; possible fraud
+- **404** — Edition number not found (never issued, exceeds edition size, or OCR error)
+
+The issuer domain is visible from the `verify:` line on the certificate itself (e.g., `pacegallery.com`).
 
 ## Second-Party Use
 
@@ -469,15 +489,17 @@ Artist name, signature type (Wet Ink, Pencil, Crayon), location of signature (Fr
 - **Estate Stamp Certification:** Verifying the "chop mark" or rubber stamp used by an estate.
 - **Graphology Report:** Forensic analysis of ink and pressure.
 
-## Data Visible After Verification
+## Verification Response (Signatures)
 
-Shows the issuer domain (`ifar.org`, `artexpertswebsite.com`) and the authenticity status.
+The endpoint returns a simple status code:
 
-**Status Indications:**
-- **Consistent** — Signature matches the artist's known hand.
-- **Ascribed** — Signature is from the "circle of" or "studio of" the artist.
-- **Forgery Alert** — The signature is a known "apocryphal" mark.
-- **Retracted** — Expert has withdrawn their opinion.
+- **OK** — Signature matches the artist's known hand
+- **ASCRIBED** — Signature is from the "circle of" or "studio of" the artist; not the master
+- **FORGERY_ALERT** — The signature is a known apocryphal mark; do not transact
+- **RETRACTED** — Expert has withdrawn their opinion; seek fresh authentication
+- **404** — Report not found (never issued, or OCR error)
+
+The issuer domain is visible from the `verify:` line on the letter itself (e.g., `ifar.org`).
 
 ## Second-Party Use
 
@@ -610,15 +632,31 @@ Full ownership chain (dates and names), dealer/gallery references, exhibition hi
 - **Restitution Clearance Letter:** Confirming the work isn't on the Art Loss Register.
 - **Consignment Record Extract:** Proving the work was legally transferred to an auction house.
 
-## Data Visible After Verification
+## Verification Response (Provenance)
 
-Shows the issuer domain (`christies.com`, `artloss.com`) and the provenance status.
+The endpoint returns a simple status code:
 
-**Status Indications:**
-- **Verified** — The ownership chain matches the issuer's archival research.
-- **Gaps Identified** — History is incomplete (common in historical art).
-- **Claim Pending** — There is an active ownership claim against this piece.
-- **Seized/Alert** — The item is reported stolen or looted.
+- **OK** — The ownership chain matches the issuer's archival research
+- **GAPS_IDENTIFIED** — History is incomplete (common in historical art); proceed with caution
+- **CLAIM_PENDING** — There is an active ownership claim against this piece; do not transact
+- **SEIZED** — The item is reported stolen or looted; do not transact
+- **404** — Provenance record not found (never issued, or OCR error)
+
+The issuer domain is visible from the `verify:` line on the document itself (e.g., `christies.com`).
+
+## Post-Verification Actions (Provenance)
+
+None typically. Provenance verification confirms the research is genuine; contacting current owners is neither expected nor welcomed.
+
+**Owner Privacy:**
+
+Art collectors — whether private individuals, family trusts, or institutions — guard their holdings carefully. Verification of a provenance document does not imply consent to contact. The verification system respects this:
+
+- **No owner contact details** in the response (even if known to the issuer)
+- **No acquisition inquiry forms** — if a work isn't consigned for sale, the owner doesn't want to hear from you
+- **Agents (galleries, family offices) are gatekeepers** — and they're paid to say "not for sale" unless there's a compelling offer through proper channels
+
+The verification proves the document is real. It doesn't open a door to the owner.
 
 ## Second-Party Use
 

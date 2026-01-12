@@ -55,15 +55,56 @@ Officer name, badge ID, department/agency, photograph (via hash), current duty s
 - **Physical Citation (Ticket):** Left on the vehicle.
 - **Tow Authorization:** Form presented to the vehicle owner at the impound lot.
 
-## Data Visible After Verification
+## Verification Response
 
-Shows the issuer domain (`sfmta.com`, `nyc.gov`, `london.gov.uk`) and the status.
+The endpoint returns a simple status code:
 
-**Status Indications:**
-- **Active Duty** — Officer is currently on shift and authorized to enforce.
-- **Verified Citation** — (For tickets) citation exists in the system.
-- **Inactive** — Person is not currently authorized.
-- **Fraud Alert** — **ALERT:** This ID or ticket number is part of a known scam.
+- **OK** — Officer is currently on shift and authorized to enforce
+- **VERIFIED_CITATION** — (For tickets) citation exists in the official system
+- **INACTIVE** — Person is not currently authorized; do not pay any fines to them
+- **FRAUD_ALERT** — This ID or ticket number is part of a known scam
+- **404** — Badge or citation not found (forged, expired, or OCR error)
+
+The issuer domain is visible from the `verify:` line on the badge itself (e.g., `enforcement.sfmta.com`).
+
+## Post-Verification Actions
+
+After successful verification, the response includes a verification ID with complaint path:
+
+```
+HTTP 200 OK
+Status: OK
+
+--- For Your Records ---
+You verified an active SFMTA Parking Enforcement Officer.
+Verification ID: VRF-2026-01-12-09:15:22-5523
+This verification has been logged by the department.
+
+If you have concerns about this encounter:
+https://sfmta.com/complaints?ref=VRF-2026-01-12-09:15:22-5523
+```
+
+**Why This Pattern (Not a POST Form):**
+
+Parking enforcement — like police verification — has weaponization risk. "Auditors" could abuse a POST form to file frivolous complaints against every officer they encounter. The Verification ID approach:
+
+- **Citizen gets:** One-click complaint path with context pre-filled
+- **Department gets:** Pattern detection for harassment (same person verifying multiple officers, complaints immediately after every verification)
+- **No free-form POST:** The verification event itself is the record
+
+**Officer Protection:**
+
+Management can identify problematic patterns:
+- Person verifying every officer in a district systematically
+- Complaints filed within minutes of every verification
+- Coordinated campaigns against specific officers or zones
+
+**Driver Protection:**
+
+If an officer demands cash or behaves inappropriately, the driver has:
+- Timestamp proof they verified the officer
+- Pre-filled complaint form
+- Context preserved for the complaint
 
 ## Second-Party Use
 

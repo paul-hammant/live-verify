@@ -49,15 +49,43 @@ Equipment ID (Serial Number), building address, capacity/rating, inspector name/
 - **Pool/Spa Sanitation Rating:** Posted at the facility entrance.
 - **Boiler/Pressure Vessel Permit:** In the mechanical room.
 
-## Data Visible After Verification
+## Verification Response
 
-Shows the issuer domain (`dob.city.gov`, `fire-marshal.gov`) and the real-time status.
+The endpoint returns a simple status code:
 
-**Status Indications:**
-- **Certified Safe** — Equipment is current and passed all tests.
-- **Red Tagged** — **CRITICAL:** Equipment failed inspection and is unsafe for use.
-- **Expired** — Inspection is overdue; use at own risk.
-- **Inactive** — Equipment has been decommissioned.
+- **OK** — Equipment/facility is current and passed all tests
+- **RED_TAGGED** — Equipment failed inspection and is unsafe for use; do not use
+- **EXPIRED** — Inspection is overdue; use at own risk
+- **INACTIVE** — Equipment has been decommissioned
+- **404** — Certificate not found (forged document, wrong ID, or OCR error)
+
+The issuer domain is visible from the `verify:` line on the certificate itself (e.g., `dob.city.gov`).
+
+## Post-Verification Actions
+
+For public-facing inspections, the response includes a link to inspection history:
+
+```
+HTTP 200 OK
+Status: OK
+
+History: https://dob.city.gov/inspections/ELV-992288-B
+```
+
+**Why Inspection History Matters:**
+
+The current status tells you "it's safe now" — but history provides context:
+- **Elevator** passed today but failed brake tests twice last year
+- **Restaurant** has an A rating but had three B ratings in the past 12 months
+- **Pool** is OK now but was red-tagged for contamination last month
+
+For informed decisions, patterns matter as much as current status.
+
+**URL Variations by Context:**
+
+- **Public facilities** (elevators, restaurants, pools) — Public URL to city/county inspection database
+- **Office restrooms/facilities** — Intranet URL for employees/tenants (not publicly accessible)
+- **Private equipment** (boilers, pressure vessels) — May not have public history; status code only
 
 ## Second-Party Use
 
@@ -85,6 +113,24 @@ The **Building Owner / Property Manager** benefits from verification.
 - **Expired Stays:** Keeping an old certificate in the elevator frame but using a PDF editor to change "2024" to "2026."
 - **Pencil Whipping:** An inspector signing a fire tag today but dating it "Yesterday" to meet a quota, or signing without visiting the site.
 - **Serial Swapping:** Using one "Pass" certificate for multiple identical machines across different floors.
+
+**Inspector Authentication (Out of Scope)**
+
+OCR-to-hash verifies that a certificate is genuine — it answers "did the building department really issue this?" But it doesn't solve the problem of inspectors faking inspections remotely.
+
+Without physical presence proof, someone could script fake inspections:
+```bash
+curl -X POST https://dob.city.gov/api/inspect \
+  -d "device=ELV-992288-B&status=PASS&inspector=BOB"
+```
+
+The inspection *recording* system (first party) needs separate authentication that proves physical presence:
+- **NFC tag** on the equipment — inspector's app taps to prove they're standing there
+- **iButton/1-Wire** — ruggedized for industrial environments (boilers, elevators)
+- **GPS + time window** — weaker, but adds friction to remote fraud
+- **Photo with metadata** — timestamped photo of equipment captured by inspector's app
+
+This is infrastructure the building department must implement; OCR-to-hash assumes the inspection record is legitimate and focuses on verifying the certificate presented to the public.
 
 **Issuer Types** (First Party)
 

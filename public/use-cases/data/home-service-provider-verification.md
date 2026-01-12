@@ -62,15 +62,53 @@ Tradesperson name, photo (hash), professional license type (Master/Journeyman), 
 - **Certificate of Insurance:** Proving the specific worker is covered.
 - **Background Clearance Summary:** For high-trust in-home services.
 
-## Data Visible After Verification
+## Verification Response
 
-Shows the issuer domain (`tx-license.gov`, `checkatrade.com`) and current status.
+The endpoint returns a simple status code:
 
-**Status Indications:**
-- **Active** — License is valid and insurance is in force.
-- **Suspended** — **ALERT:** License removed due to disciplinary action.
-- **Expired** — Renewal or updated insurance required.
-- **Alert** — Unresolved consumer safety reports found.
+- **OK** — License is valid and insurance is in force
+- **SUSPENDED** — License removed due to disciplinary action; do not hire
+- **EXPIRED** — Renewal or updated insurance required; do not proceed
+- **ALERT** — Unresolved consumer safety reports found; proceed with caution
+- **404** — License not found (forged badge, wrong state, or OCR error)
+
+The issuer domain is visible from the `verify:` line on the badge itself (e.g., `tx-license.gov`).
+
+## Post-Verification Actions
+
+After successful verification, homeowners may record the service visit:
+
+```
+HTTP 200 OK
+Status: OK
+
+--- Optional Follow-Up ---
+
+You may record details of this service visit.
+You will NEVER be told not to do this or that it is not needed.
+
+POST to: https://tx-license.gov/consumer-feedback/visit
+
+Fields:
+- Service type: [Plumbing / Electrical / HVAC / Roofing / Other]
+- Work completed: [Yes / Partially / No]
+- Quality: [Excellent / Good / Concerns]
+- Was estimate accurate? [Yes / Higher / Lower]
+- Any concerns or issues?
+- Would you hire again? [Y/N]
+```
+
+**Why This Matters:**
+
+- **Pattern detection:** Tradesperson receiving frequent "concerns" across multiple jobs triggers board review
+- **Consumer protection:** Creates contemporaneous record if dispute arises later
+- **Quality accountability:** Licensing boards see which contractors deliver quality work
+- **Scam deterrent:** Contractors know homeowners can easily report; reduces bait-and-switch pricing
+- **Market signal:** Good contractors benefit from positive feedback patterns
+
+**The "Never Discouraged" Principle:**
+
+Tradespeople should never tell homeowners "don't bother" or "that's not necessary." Every report is logged. The licensing board can triage later—but the homeowner is never made to feel their input isn't wanted.
 
 ## Second-Party Use
 

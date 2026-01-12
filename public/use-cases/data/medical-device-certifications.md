@@ -48,15 +48,33 @@ Manufacturer legal name, facility location, Notified Body ID (e.g., 0086), Certi
 - **ISO 13485 QMS Certificate:** Proving the factory meets quality laws.
 - **Biocompatibility Test Report:** (Linked hash) proving the material is safe.
 
-## Data Visible After Verification
+## Verification Response
 
-Shows the issuer domain (`bsigroup.com`, `tuvsud.com`, `fda.gov`) and current certification status.
+The endpoint returns a simple status code:
 
-**Status Indications:**
-- **Certified/Valid** — Device meets all regulatory safety standards.
-- **Recalled** — **ALERT:** Safety defect found; product must be removed from use.
-- **Suspended** — Certificate paused (e.g., due to audit failure).
-- **Withdrawn** — Permanently revoked due to severe non-compliance (The "MedPro" pattern).
+- **OK** — Device meets all regulatory safety standards
+- **RECALLED** — Safety defect found; do not implant/use; remove from inventory
+- **SUSPENDED** — Certificate paused (e.g., due to audit failure); do not use until resolved
+- **WITHDRAWN** — Permanently revoked due to severe non-compliance; do not use
+- **404** — Certificate not found (forged document, wrong certificate number, or OCR error)
+
+The issuer domain is visible from the `verify:` line on the certificate itself (e.g., `certs.bsigroup.com`).
+
+## Post-Verification Actions
+
+None typically. The verification confirms the device certification status; that's the decision point for use.
+
+**Why No Further Action:**
+
+- **Hospital procurement** just needs status to accept or quarantine a shipment
+- **Surgeons** just need confirmation before proceeding with implant
+- **Customs agents** just need pass/fail for import clearance
+
+The status code is the value. If it's OK, proceed. If it's RECALLED, SUSPENDED, WITHDRAWN, or 404, quarantine the device.
+
+**Device Registration for Recalls:**
+
+Implant registries (linking device serial numbers to patients for recall notification) are valuable but are typically managed by hospitals or manufacturer-run registries — not through a verification endpoint. The verification answers "is this device certified?" not "track this device to this patient."
 
 ## Second-Party Use
 

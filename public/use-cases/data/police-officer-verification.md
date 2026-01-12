@@ -191,6 +191,58 @@ The "Mobile Service Staff in Ungated Facilities" pattern is also used to protect
 
 ---
 
+## Post-Verification Actions
+
+After successful verification, the response includes a verification ID that serves both citizen accountability and officer protection:
+
+```
+HTTP 200 OK
+Status: OK
+
+--- For Your Records ---
+You verified an active Metropolitan Police officer.
+Verification ID: VRF-2026-01-12-14:32:07-7k3m9x2p
+This verification has been logged by the department.
+
+If you have concerns about this encounter:
+https://met.police.uk/complaints?ref=VRF-2026-01-12-14:32:07-7k3m9x2p
+```
+
+**What This Enables:**
+
+**For Citizens:**
+- **One-click complaint path** — Verification ID pre-filled; no need to remember badge numbers
+- **Timestamp proof** — Proves verification happened at the time, not fabricated later
+- **Context preserved** — Department can look up which officer's salt was active at that moment
+
+**For Officers:**
+- **Harassment pattern detection** — Management can identify "auditor" behaviour: same person verifying multiple officers repeatedly, verification attempts immediately followed by complaints, coordinated verification campaigns
+- **Frivolous complaint filtering** — Complaints linked to verifications can be cross-referenced; patterns emerge ("this complainant filed 47 complaints this month, all immediately after verification")
+- **Exoneration evidence** — Officer can prove they were verified (and thus displayed valid credentials) at a specific time and place
+
+**For the Department:**
+- **Correlation analytics** — "Officer X had 200 verifications this month, 2 complaints" vs "Officer Y had 50 verifications, 15 complaints"
+- **Abuse detection** — Identify individuals using verification as a harassment tool rather than legitimate safety check
+- **Accountability audit trail** — Every verification logged; no POST form required from citizen
+
+**Why No POST Form:**
+
+Unlike building inspectors or healthcare workers, police verification doesn't use a "record this interaction" POST form:
+
+| Use Case | POST Form? | Why |
+|----------|------------|-----|
+| Building inspector | Yes | Low risk of weaponization; homeowner rarely sees same inspector twice |
+| Healthcare worker | Yes | Patient/family relationship is ongoing; staffing evidence benefits workers |
+| Police officer | No | High risk of weaponization by "auditors"; verification itself is sufficient record |
+
+The verification event IS the record. The department already has it. A POST form would invite frivolous reports without adding accountability value.
+
+**The Verification ID Balances Power:**
+
+- Citizen has proof and a complaint path → accountability
+- Department has verification logs and pattern detection → officer protection
+- Neither side can abuse the system without leaving a trail
+
 ## Rationale
 
 Citizen safety is the primary driver. Domain binding verifies the department (police.gov, sheriff.gov). It bridges the gap between the physical presence of an officer and the digital record of their authority, enhancing public trust and police accountability while respecting officer safety needs.

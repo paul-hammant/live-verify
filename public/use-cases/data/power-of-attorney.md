@@ -57,15 +57,29 @@ Principal name, Agent name, Specific Granted Powers (e.g., "Real Estate Only"), 
 - **Medical POA (Healthcare Proxy):** Specifically for medical decisions.
 - **Revocation of POA:** (Linked hash) proving the agent's power has been terminated.
 
-## Data Visible After Verification
+## Verification Response
 
-Shows the issuer domain (the Law Firm or Notary Platform) and the current status.
+The endpoint returns a simple status code:
 
-**Status Indications:**
-- **Active** — Agent is currently authorized to act.
-- **Revoked** — **ALERT:** The principal has legally terminated this power.
-- **Superseded** — A newer POA has been issued (linked hash).
-- **Void (Deceased)** — Principal has passed; POA is legally void (probate begins).
+- **OK** — Agent is currently authorized to act
+- **REVOKED** — The principal has legally terminated this power; do not allow transactions
+- **SUPERSEDED** — A newer POA has been issued; this version is outdated
+- **VOID_DECEASED** — Principal has passed; POA is legally void; probate required
+- **404** — POA not found (forged document, wrong reference, or OCR error)
+
+The issuer domain is visible from the `verify:` line on the document itself (e.g., `willows-law.com`).
+
+## Post-Verification Actions
+
+None typically. The verification confirms the POA's status; that's the decision point.
+
+**Why No Further Action:**
+
+- **Banks** just need status to allow or refuse transactions
+- **Hospitals** just need confirmation the agent can make medical decisions
+- **Escrow officers** just need to know the agent has authority to sign
+
+The status code is the value. If it's OK, proceed. If it's REVOKED, SUPERSEDED, VOID_DECEASED, or 404, don't. No POST form needed.
 
 ## Second-Party Use
 

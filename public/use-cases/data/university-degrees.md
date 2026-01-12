@@ -49,15 +49,33 @@ Student name, University name, Degree title (e.g., MSc, PhD), Major/Major field 
 - **Letter of Completion:** Temporary proof before the graduation ceremony.
 - **Enrollment Verification:** Proving current student status.
 
-## Data Visible After Verification
+## Verification Response
 
-Shows the issuer domain (`cam.ac.uk`, `harvard.edu`, `nus.edu.sg`) and the award status.
+The endpoint returns a simple status code:
 
-**Status Indications:**
-- **Awarded** — Degree is authentic and verified in the registrar's ledger.
-- **Revoked** — **ALERT:** Degree was withdrawn (e.g., due to plagiarism or ethical failure).
-- **Withheld** — **ALERT:** Graduation requirements met, but degree not released (e.g., unpaid fees).
-- **In-Progress** — Student is currently enrolled and in good standing.
+- **OK** — Degree is authentic and verified in the registrar's ledger
+- **REVOKED** — Degree was withdrawn (e.g., due to plagiarism or ethical violation); do not proceed with hiring
+- **WITHHELD** — Graduation requirements met, but degree not released (e.g., unpaid fees)
+- **IN_PROGRESS** — Student is currently enrolled and in good standing; not yet graduated
+- **404** — Degree not found (never awarded, wrong name, or OCR error)
+
+The issuer domain is visible from the `verify:` line on the diploma itself (e.g., `cam.ac.uk`).
+
+## Post-Verification Actions
+
+None typically. The verification confirms the degree is genuine; that's the value for hiring decisions.
+
+**Why No Further Action:**
+
+- **Hiring managers** just need confirmation the degree is real before extending an offer
+- **Immigration authorities** just need status for visa points calculations
+- **Licensing boards** just need proof of graduation before allowing exam registration
+
+The status code is the decision point. No POST form or additional workflow needed.
+
+**For Transcript Details:**
+
+If an employer needs the full transcript (GPA, specific courses), that's a separate request to the registrar — not a post-verification action. The diploma verification answers "did they graduate?" not "what grades did they get?"
 
 ## Second-Party Use
 
