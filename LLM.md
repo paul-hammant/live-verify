@@ -1,20 +1,20 @@
-# LLM Context: OCR-to-Hash Verification System
+# LLM Context: Live Verify System
 
 ## Project Overview
 
-Proof-of-concept implementations demonstrating **Text-to-Hash** verification (often called **OCR-to-hash**) for resolving fraud or disputes. The pipeline is `Input -> normalization -> hash -> GET`.
+Proof-of-concept implementations demonstrating **Live Verify** verification for resolving fraud or disputes. The pipeline is `Input -> normalization -> hash -> GET`.
 
-### Permutations:
-- **OCR Path:** Camera or image clip -> OCR -> normalized-text -> hash -> GET.
-- **Selection Path:** Selected digital text -> normalization -> hash -> GET.
+### Two Verification Modes:
+- **Live Verify - Camera:** Point phone at physical document -> OCR -> normalized-text -> hash -> GET. Best for in-person verification (doorstep, front desk, roadside).
+- **Live Verify - Clip:** Select text from digital document (browser, email client, PDF reader) -> normalization -> hash -> GET. Best for administrative/remote verification.
 
 ### Integration Vision
 These capabilities are designed for building into camera apps, browsers (mobile/desktop), email clients, PDF viewers, messaging systems (SMS, WhatsApp, iMessage), and collaboration tools (Slack, Discord).
 
-### POC 1: Camera-Based Document Verification
+### POC 1: Live Verify - Camera
 `public/camera-app/index.html` — Point camera at physical document, OCR extracts text, normalizes, hashes, verifies against issuer's endpoint.
 
-### POC 2: In-Page Text Selection Verification
+### POC 2: Live Verify - Clip (Browser Extension)
 `public/text-selection-verify.js` — Select text on webpage, right-click "Verify?", computes hash, checks issuer endpoint.
 
 ### iOS App
@@ -47,7 +47,7 @@ Target SDK: 35 (Android 15), Min SDK: 26 (Android 8.0). Uses native Kotlin imple
 3. `apps/ios/LiveVerify/` uses JSBridge to run normalize.js directly
 4. `apps/android/app/src/main/java/com/liveverify/app/TextNormalizer.kt` (Kotlin, Android app)
 
-If you change normalization logic, update ALL implementations. The web app version also has `public/ocr-cleanup.js` for OCR-specific artifact removal (not needed by browser extension or text selection paths).
+If you change normalization logic, update ALL implementations. The web app version also has `public/ocr-cleanup.js` for OCR-specific artifact removal (not needed by Clip mode).
 
 **Extension features:**
 - Right-click "Verify this claim" on selected text

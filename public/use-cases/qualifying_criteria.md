@@ -1,7 +1,7 @@
 # Qualifying criteria for Live Verify use cases
 
-Use this as a yes/no test for whether a document/claim is a good candidate for issuer-attested OCR-to-hash
-verification (Live Verify style).
+Use this as a yes/no test for whether a document/claim is a good candidate for issuer-attested
+Live Verify verification (Camera mode for physical documents, Clip mode for digital).
 
 These criteria exist to pre-empt FUD and reflex dismissal by being explicit about what the tech is for, what it
 is not for, and which design choices make it safe.
@@ -67,7 +67,27 @@ is not for, and which design choices make it safe.
   OCR-friendly representation (e.g., a short-form claim on a letter, wallet card, or transcript extract).
 - Screens can introduce moiré; platform-grade OCR (native camera stacks) improves reliability over browser demos.
 
-## 8) Fraud incentive must exist
+## 8) Verification mode: Camera vs. Clip
+
+Two verification modes exist; strong use cases work well with at least one:
+
+- **Live Verify - Clip:** Verifier selects text from a digital document (PDF, email,
+  webpage) and verifies. Best for: documents that circulate digitally (contracts, certificates
+  emailed or in data rooms), administrative/remote verification, audit trails. Works in browsers
+  today; future integrations include email clients (Outlook, Thunderbird), PDF readers (Acrobat),
+  and eventually auto-detection of `verify:` claims on page load.
+- **Live Verify - Camera:** Verifier photographs a physical document or screen. Best for:
+  in-person verification (doorstep, front desk, roadside), physical credentials (badges, cards,
+  posted certificates), situations where the verifier doesn't have a computer.
+
+Some use cases support both modes (membership cards: Camera at the conference desk, Clip
+for HR verification). Others are mode-specific (courier badges are fundamentally doorstep/Camera;
+art provenance is fundamentally digital/Clip).
+
+When evaluating a use case, ask: **where does verification happen?** If it's always in-person
+and fast-paced, prioritize Camera tooling. If it's remote/administrative, Clip may suffice.
+
+## 9) Fraud incentive must exist
 
 - Ask: **who benefits from faking this document, and how?** If there's no meaningful fraud incentive, verification
   is solving a problem that doesn't exist.
@@ -78,7 +98,7 @@ is not for, and which design choices make it safe.
 - If a document type has no fraud incentive, a simple bracelet/card/statement works fine. Don't add verification
   infrastructure for problems that don't exist.
 
-## 9) Multi-party utility
+## 10) Multi-party utility
 
 - A strong use case benefits **all three parties**: the issuer (1st party), the document holder (2nd party), and
   external verifiers (3rd parties).
@@ -94,7 +114,7 @@ is not for, and which design choices make it safe.
 - If a proposed claim only benefits one party, or has only one 3rd party type, question whether it's worth the
   implementation effort.
 
-## 10) Claims are composable primitives
+## 11) Claims are composable primitives
 
 - A claim should answer **one question** well (e.g., "is this person employed here?", "is this the person in the
   photo?", "does this driver have coverage?").
@@ -104,7 +124,7 @@ is not for, and which design choices make it safe.
   status doesn't affect others), multiple issuers (each authoritative for their domain), and cleaner failure
   modes (one system's outage doesn't block everything).
 
-## 11) Ongoing verification value (not just point-in-time)
+## 12) Ongoing verification value (not just point-in-time)
 
 - Strong use cases have **verification value that persists over time**. The document holder (2nd party) may keep
   the document and later hand it—as text, photo, scan, or paper—to someone who wants to verify it well after the
@@ -127,6 +147,7 @@ is not for, and which design choices make it safe.
 - Can outcomes legitimately change over time (revocation/expiry/recall/suspension)?
 - Is the hashed text high-entropy, or can you add an issuer-generated random line?
 - Can the claim be OCR'd reliably in the field (or via an OCR-friendly representation)?
+- Does verification happen digitally (Clip) or in-person (Camera), or both?
 - Can the issuer respond with generic statuses (not echoing claim content)?
 - Can the verification endpoint be served cheaply/reliably (even static hosting)?
 - Does the claim answer one question well, or is it trying to bundle too much?

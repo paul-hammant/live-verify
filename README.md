@@ -1,12 +1,12 @@
-# OCR-to-Hash Claim Verification System
+# Live Verify
 
 ![Jest and Playwright tests, then deploy to GitHub Pages](https://github.com/paul-hammant/live-verify/actions/workflows/deploy.yml/badge.svg)
 ![License](https://img.shields.io/badge/license-AGPL--3.0-blue)
 
-A **proof of concept** for issuer-attested verification of printed/on-screen claims:
-**OCR locally → normalize → SHA-256 → GET issuer endpoint → show "Verified / Denied".** - all using a camera-phone.
+A **proof of concept** for issuer-attested verification of printed/on-screen claims.
+Two modes: **Camera** (phone app: OCR → normalize → hash → verify) and **Clip** (browser/email/PDF: select text → normalize → hash → verify).
 
-**Anyone with a camera phone can verify any document presented to them** — no special equipment, no credentials, no calling during business hours, no issuer relationship required.
+**Anyone can verify any document presented to them** — no special equipment, no credentials, no calling during business hours, no issuer relationship required.
 
 "Verified" means the issuer's domain currently stands behind this exact text (and it's revocable). It is not "ground truth".
 The verifier chooses whether the issuer domain is an authority for the claim.
@@ -20,14 +20,14 @@ This prototype uses Tesseract.js (OCR) and OpenCV.js (registration marker detect
 **Project status:** Prototype. Works well for OCR-friendly layouts (receipts, plain-text credentials). Ornate typography and scanning from screens can reduce reliability (including moiré patterns).
 Known issue: Tesseract.js (via WASM) bug not present in newer native versions: [issue #1](https://github.com/paul-hammant/live-verify/issues/1). Production deployments would likely use native on-device OCR (or self-hosted assets) with the same protocol.
 
-## Why OCR-to-Hash?
+## Why Live Verify?
 
 This technology is built for **human trust first**, enhanced by cryptography.
 
 1.  **Low-Tech:** The human reads the claim (e.g., "First Class Honours") and mentally questions it.
 2.  **Domain Trust:** The human reads the `verify:degrees.ed.ac.uk` line. They recognize `ed.ac.uk` as a trustworthy domain (Edinburgh University) and decide that *if* this domain confirms the claim, it is authentic. (This requires basic digital literacy/training).
-3.  **Tool Trust:** The human already trusts their iPhone/Android Camera app (or a dedicated verifier app). They use it to scan the text.
-4.  **Verification:** The app performs the OCR-to-hash lookup and displays "Verified by degrees.ed.ac.uk". The human moves from "questioning" to "no longer questioning."
+3.  **Tool Trust:** The human already trusts their iPhone/Android Camera app (Camera mode) or browser extension (Clip mode). They use it to scan or select the text.
+4.  **Verification:** The app performs the hash lookup and displays "Verified by degrees.ed.ac.uk". The human moves from "questioning" to "no longer questioning."
 
 **The QR Code Challenge:**
 QR codes are popular but introduce a "double-checking" burden.
@@ -36,7 +36,7 @@ QR codes are popular but introduce a "double-checking" burden.
 -   **Authenticity Gap:** After scanning, the user arrives at a webpage. They must then *manually* check the browser's address bar to ensure they are on the real `ed.ac.uk` site and not a spoof.
 -   **Context Mismatch:** QR codes are rarely presented alone; they accompany text. A fake document could have a valid QR code pointing to a real (but unrelated) verification page, or a fake text with a fake QR code.
 
-OCR-to-hash binds the **visible text itself** to the verification. If you change the name on the degree, the hash changes, and verification fails. The human reads the domain *before* scanning, establishing trust anchors early.
+Live Verify binds the **visible text itself** to the verification. If you change the name on the degree, the hash changes, and verification fails. The human reads the domain *before* scanning, establishing trust anchors early.
 
 ## Cryptographic Foundations
 
@@ -62,11 +62,11 @@ Blockchain (Bitcoin, 2008) uses Merkle trees and hash functions as building bloc
 
 | Approach | What It Does | Complexity |
 |----------|--------------|------------|
-| **OCR-to-hash** | Hash text → HTTP lookup → OK/404 | Simple: static files or serverless |
+| **Live Verify** | Hash text → HTTP lookup → OK/404 | Simple: static files or serverless |
 | **Merkle tree** | Organize many hashes for efficient proof | Medium: tree construction, proof paths |
 | **Blockchain** | Distributed consensus + Merkle trees + incentives | Complex: nodes, consensus, fees |
 
-OCR-to-hash uses the same cryptographic primitives (SHA-256) without requiring distributed consensus, cryptocurrency, or transaction fees. The trust anchor is the organization's domain (backed by DNS/TLS), not a blockchain.
+Live Verify uses the same cryptographic primitives (SHA-256) without requiring distributed consensus, cryptocurrency, or transaction fees. The trust anchor is the organization's domain (backed by DNS/TLS), not a blockchain.
 
 **Why This Matters**
 
@@ -106,12 +106,11 @@ So expense fraud and transaction disputes are a real thing, and verifying printe
 
 See that "verify:" line ... we'll come back to that.
 
-**This is Text-to-Hash verification (commonly called OCR-to-hash):** A protocol that bridges physical and digital claims by normalizing and hashing text for GET-based verification.
+**This is Live Verify:** A protocol that bridges physical and digital claims by normalizing and hashing text for GET-based verification.
 
-**Multiple paths to verification:**
-- **Camera OCR:** Point at physical documents (degrees, receipts, permits).
-- **Image Clips:** Selecting text from screenshots or photos.
-- **Direct Selection:** Highlighting digital text in browsers, PDF viewers, or messaging apps.
+**Two verification modes:**
+- **Live Verify - Camera:** Point phone at physical documents (degrees, receipts, permits). OCR extracts text on-device.
+- **Live Verify - Clip:** Select text from digital documents in browsers, email clients (Outlook, Thunderbird), or PDF viewers (Acrobat). Future: auto-detection of `verify:` claims on page load.
 
 **Key benefits:**
 - ✅ **Instant verification** - Seconds, not phone calls or portal uploads
@@ -280,7 +279,7 @@ The system allows anyone to verify these printed claims without requiring access
 
 Read about one way hash functions on [Wikipedia](https://en.wikipedia.org/wiki/Cryptographic_hash_function)
 
-## OCR Limitations: What Works Today vs Future Needs
+## Camera Mode: OCR Limitations
 
 ## Rationale
 
@@ -332,11 +331,11 @@ Traditional university degrees, professional certifications, and art certificate
 - Integration with handwriting recognition
 - Template-based extraction (if certificate format is known)
 
-**Bottom line:** OCR-to-hash works **extremely well** for business documents, receipts, and plain-text credentials TODAY. For ornate certificates to work, either (a) issuers must design for OCR, or (b) OCR technology must quantum-leap forward.
+**Bottom line:** Camera mode works **extremely well** for business documents, receipts, and plain-text credentials TODAY. For ornate certificates to work, either (a) issuers must design for OCR, or (b) OCR technology must quantum-leap forward. Clip mode sidesteps OCR entirely for digital documents.
 
-## Privacy-First Architecture: Why Client-Side OCR Matters
+## Privacy-First Architecture: Why Client-Side Processing Matters
 
-**The privacy requirement:** OCR-to-hash verification **must** use client-side OCR. Sending document images to cloud OCR services (Google Cloud Vision, AWS Textract, Azure Computer Vision) would defeat the entire privacy model.
+**The privacy requirement:** Live Verify **must** use client-side processing. Camera mode must use on-device OCR (not cloud). Clip mode processes selected text locally. Sending document images or text to cloud services would defeat the entire privacy model.
 
 **What gets exposed to cloud services if using traditional OCR APIs:**
 - ❌ Your degree certificate image (name, DOB, honors, university)
@@ -346,7 +345,7 @@ Traditional university degrees, professional certifications, and art certificate
 - ❌ Employment verification letters (job title, dates, salary, manager names)
 - ❌ All that PII flowing across networks, stored in cloud API logs, subject to subpoenas
 
-**OCR-to-hash preserves privacy:**
+**Live Verify preserves privacy:**
 - ✅ Image **never leaves your phone** - processed entirely on-device
 - ✅ OCR happens locally using Tesseract.js (current) or on-device AI (future)
 - ✅ Only the **SHA-256 hash** is computed and sent (one-way, can't reconstruct original text)
@@ -363,7 +362,7 @@ Modern phones already have neural processing units (NPUs) running sophisticated 
 - **Samsung Galaxy AI** (S24+, Snapdragon 8 Gen 3) - on-device vision processing
 - **Qualcomm AI Engine** - NPUs in most modern Android phones
 
-**iOS Live Text is already 90% there:** iPhone users (iOS 15+, released 2021) already have **Live Text** built into the Camera app - point your camera at any text and iOS extracts it instantly, on-device. For OCR-to-hash verification, we just need a few enhancements:
+**iOS Live Text is already 90% there:** iPhone users (iOS 15+, released 2021) already have **Live Text** built into the Camera app - point your camera at any text and iOS extracts it instantly, on-device. For Live Verify Camera mode, we just need a few enhancements:
 - Recognize `verify:` URLs in extracted text and trigger verification flow
 - Apply text normalization rules (not just raw extraction)
 - Compute SHA-256 hash on-device (Web Crypto API already available)
@@ -408,14 +407,14 @@ async function extractTextForVerification(imageData) {
 5. Only hash sent to verification endpoint
 6. **No PII ever leaves the device**
 
-**Why this matters for OCR-to-hash:**
+**Why this matters for Live Verify:**
 
 Traditional verification systems require either:
 - Calling the issuing organization (slow, manual, privacy-invasive)
 - Uploading documents to verification portals (cloud storage, data breaches)
 - Using cloud OCR APIs (third-party PII exposure)
 
-OCR-to-hash verification offers a **fundamentally different privacy model:**
+Live Verify offers a **fundamentally different privacy model:**
 - No one sees your document except you
 - No cloud service processes your PII
 - Verification happens via cryptographic proof (hash lookup)
@@ -431,17 +430,17 @@ OCR-to-hash verification offers a **fundamentally different privacy model:**
 
 **The same privacy guarantees, just better OCR accuracy.**
 
-**Analogy:** Apple's Face ID processes your face scan **entirely on-device** using the Secure Enclave. It never sends your face to Apple's servers. On-device AI for OCR-to-hash works the same way - sophisticated processing, zero cloud exposure.
+**Analogy:** Apple's Face ID processes your face scan **entirely on-device** using the Secure Enclave. It never sends your face to Apple's servers. On-device AI for Live Verify Camera mode works the same way - sophisticated processing, zero cloud exposure.
 
 **This is why client-side architecture is non-negotiable.** The entire security and privacy model depends on it. On-device AI simply makes the client-side approach practical for more document types.
 
-## When OCR-to-Hash Verification Excels (vs QR Codes)
+## When Live Verify Excels (vs QR Codes)
 
-In short, if the claim is aimed at humans reading it and is printed on paper (or could be), it might be a candidate for this **non-blockchain** tech.
+In short, if the claim is aimed at humans reading it and is printed on paper (or shown digitally), it might be a candidate for this **non-blockchain** tech.
 
 **Full use case catalog:** https://paul-hammant.github.io/live-verify/use-cases/ (searchable, issuer/verifier framing).
 
-**Deep-dive essays (GitHub docs):** The following six scenarios demonstrate specific advantages of OCR-to-hash verification in real-world applications:
+**Deep-dive essays (GitHub docs):** The following six scenarios demonstrate specific advantages of Live Verify in real-world applications:
 
 1. **[Education Credentials](deep-dives/Educational_Degrees.md)** - degree/etc verification with privacy-preserving public registries
    <img src="https://paul-hammant.github.io/live-verify/screenshots/bachelor-thaumatology.png" width="200"> <img src="https://paul-hammant.github.io/live-verify/screenshots/master-applied-anthropics.png" width="200"> <img src="https://paul-hammant.github.io/live-verify/screenshots/doctorate-high-energy-magic.png" width="200">
@@ -461,9 +460,9 @@ In short, if the claim is aimed at humans reading it and is printed on paper (or
 
 QR and bar codes are much better for machine reading and might suit routing situations where authenticity does not need to be double checked by humans at every step.  An example would be a package already in the Fedex global distribution system. Where it is and needs to go next is the key piece aided by the QR/bar codes. It does not need to be validated over by humans. The printed destination is still on the label, but isn't used again until the last 100 meters or yards when the delivery associate has it in hand, and the recipient glances at it too for routing to individuals hopefully nearby.
 
-## Decision Criteria: OCR-to-Hash vs QR Code
+## Decision Criteria: Live Verify vs QR Code
 
-**OCR-to-Hash is BEST when:**
+**Live Verify is BEST when:**
 
 | Criterion                    | Why It Matters                                                       | CV Example                                                      |
 |------------------------------|----------------------------------------------------------------------|-----------------------------------------------------------------|
@@ -490,10 +489,10 @@ QR and bar codes are much better for machine reading and might suit routing situ
 
 **Ask yourself:** *"Would a human need to read and understand this text for the document to serve its primary purpose?"*
 
-- **YES** → OCR-to-hash (CV, certificate, legal document, driver's license, printed receipts for store purchases)
+- **YES** → Live Verify (CV, certificate, legal document, driver's license, printed receipts for store purchases)
 - **NO** → QR code (shipping label, inventory tag, boarding pass)
 
-## Strong Use Cases for OCR-to-Hash
+## Strong Use Cases for Live Verify
 
 - ✅ Academic degrees/certificates
 - ✅ Professional licenses (wallet cards - medical, legal, engineering)
@@ -670,8 +669,8 @@ Companies storing aspects of the data behind verifications.
 
 **Scenario:** A candidate submits their CV/resume to a recruitment portal, which includes:
 
-- Degree certificate from Edinburgh University (First-class honours) - verified via OCR-to-hash
-- Employment letter from Microsoft - verified via OCR-to-hash
+- Degree certificate from Edinburgh University (First-class honours) - verified via Live Verify
+- Employment letter from Microsoft - verified via Live Verify
 
 **What the recruitment portal stores:**
 
@@ -703,7 +702,7 @@ Portal: Shares the full CV. With or without verification proof - the client coul
 **What "verified ✓" means:**
 
 - The candidate submitted physical documents (degree certificate, employment letter), OR scans there of OR the already-extracted and normalized text from the same.
-- If physical scans, the portal scanned them using OCR-to-hash verification "OK" vs 404 response, etc
+- If physical scans, the portal scanned them using Live Verify "OK" vs 404 response, etc
 - The issuing organizations (Edinburgh University, Microsoft) confirmed authenticity via HTTP 200 + "OK" and that gets noted "claims made in CV all verified"
 
 **Key insight:** The retention laws govern **the underlying text** (the CV, the degree claim, the employment history, the financial services contract/transaction), not the hash. The hash is merely a cryptographic proof that helps verify authenticity, but the legal obligations attach to the personal data being stored and shared.
@@ -825,21 +824,21 @@ See TESTING.md for details.
 
 ### What makes this better than QR codes?
 
-**Human readability** - QR codes hide information; OCR-to-hash keeps text readable for humans. An interviewer can read "Edinburgh University First Class Honours" on your CV, then verify it cryptographically if needed. QR codes make you choose between machine-readable OR human-readable. OCR-to-hash gives you both.
+**Human readability** - QR codes hide information; Live Verify keeps text readable for humans. An interviewer can read "Edinburgh University First Class Honours" on your CV, then verify it cryptographically if needed. QR codes make you choose between machine-readable OR human-readable. Live Verify gives you both.
 
-**Privacy** - QR codes either (a) encode all data publicly, or (b) link to databases anyone can scrape. OCR-to-hash only reveals the hash when someone physically scans the document.
+**Privacy** - QR codes either (a) encode all data publicly, or (b) link to databases anyone can scrape. Live Verify only reveals the hash when someone scans or selects the document text.
 
-**Professional appearance** - A CV with 5-10 verifiable claims would need 5-10 QR codes (visual clutter). OCR-to-hash adds just one small `verify:` URL per claim.
+**Professional appearance** - A CV with 5-10 verifiable claims would need 5-10 QR codes (visual clutter). Live Verify adds just one small `verify:` URL per claim.
 
-See the full [QR Code comparison](#decision-criteria-ocr-to-hash-vs-qr-code) for details.
+See the full [QR Code comparison](#decision-criteria-live-verify-vs-qr-code) for details.
 
 ### Why client-side? Why not use cloud OCR APIs?
 
-**Privacy.** Cloud OCR services expose your sensitive documents to third-party servers. See [Privacy-First Architecture](#privacy-first-architecture-why-client-side-ocr-matters) for complete details on why images never leave your phone.
+**Privacy.** Cloud OCR services expose your sensitive documents to third-party servers. See [Privacy-First Architecture](#privacy-first-architecture-why-client-side-processing-matters) for complete details on why images never leave your phone.
 
 ### Will this work with ornate degree certificates?
 
-**Not yet.** Current OCR struggles with decorative fonts, seals, and embossing on traditional university diplomas. See [OCR Limitations](#ocr-limitations-what-works-today-vs-future-needs) for complete details on current limitations and future solutions including short-form claims, on-device AI (2026+), and manual text entry options.
+**Not yet with Camera mode.** Current OCR struggles with decorative fonts, seals, and embossing on traditional university diplomas. See [Camera Mode: OCR Limitations](#camera-mode-ocr-limitations) for complete details on current limitations and future solutions including short-form claims, on-device AI (2026+), and manual text entry options. Alternatively, use Clip mode on digital representations.
 
 ### How does this prevent fake receipts/degrees/licenses?
 
@@ -857,7 +856,7 @@ Future enhancement: Organizations could publish signed hash databases that you d
 
 ### What about blockchain? Is this using blockchain?
 
-**No.** OCR-to-hash uses simple HTTPS verification endpoints - just static files or serverless functions. No blockchain, no cryptocurrency, no distributed consensus.
+**No.** Live Verify uses simple HTTPS verification endpoints - just static files or serverless functions. No blockchain, no cryptocurrency, no distributed consensus.
 
 **Why not blockchain?**
 - Universities/organizations already have trusted domains (e.g., `degrees.ed.ac.uk`)
@@ -871,27 +870,27 @@ Blockchain adds complexity without solving a real problem here. The trust anchor
 
 **Prior art comparison:**
 
-While various technologies verify documents, OCR-to-hash combines elements in a novel way:
+While various technologies verify documents, Live Verify combines elements in a novel way:
 
 - **Estonia's KSI blockchain** - Verifies digital documents in databases, not OCR from printed physical documents. Documents are born-digital in government systems.
 - **QR codes** - Encode data (opaque to humans), don't use human-readable text as the verification input. Can't read/audit what you're verifying.
 - **Blockchain timestamping** - Documents are digital files, not OCR'd from paper. Requires on-chain transactions and fees.
-- **Standard document hashing** - Hashes digital PDFs/files, doesn't include the physical-to-digital OCR bridge or the `verify:` scheme.
+- **Standard document hashing** - Hashes digital PDFs/files, doesn't include the physical-to-digital bridge or the `verify:` scheme.
 - **Cloud OCR verification services** - Require uploading sensitive documents to third parties (privacy violation). Vendor lock-in.
 
-**What makes OCR-to-hash different:**
+**What makes Live Verify different:**
 
 The complete system integration is novel:
-1. **Registration marks** → Computer vision detects document boundaries on printed paper
-2. **OCR** → Extract human-readable text from physical documents (Tesseract.js client-side)
+1. **Camera mode:** Registration marks + OCR → Extract text from physical documents on-device
+2. **Clip mode:** Text selection → Works with digital documents in browsers, email, PDFs
 3. **Normalization** → Apply consistent text cleanup rules (space removal, etc.)
 4. **Hash** → Compute SHA-256 from normalized text
 5. **`verify:domain.com/path` scheme** → Human-readable pseudo-URL that indicates verification authority
 6. **HTTP verification** → Simple 200/404 response (no blockchain, no fees)
 
-This bridges the physical-to-digital gap while maintaining human readability and privacy. The `verify:` scheme is particularly important - it's visible on the printed document, readable by humans ("verified by edinburgh.ac.uk"), and parsable by software.
+This bridges both physical-to-digital (Camera) and digital-native (Clip) verification while maintaining human readability and privacy. The `verify:` scheme is particularly important - it's visible on the document, readable by humans ("verified by edinburgh.ac.uk"), and parsable by software.
 
-**No single prior art system does all of this** - especially the OCR bridge from printed physical documents with human-readable verification paths.
+**No single prior art system does all of this** - especially the dual-mode approach with human-readable verification paths.
 
 ### Is this free to use?
 
@@ -984,27 +983,27 @@ Emerging/Scaling
 - Sigstore/cosign: https://www.sigstore.dev/
 - in-toto: https://in-toto.io/
 - SLSA: https://slsa.dev/
-- On-device AI OCR + doc understanding: Phone NPUs enabling robust, private OCR for ornate documents; enables OCR-to-hash on harder layouts.
+- On-device AI OCR + doc understanding: Phone NPUs enabling robust, private OCR for ornate documents; enables Live Verify Camera mode on harder layouts.
 - Apple ML/Apple Intelligence (overview): https://machinelearning.apple.com/
 - Google on-device Gemini (overview): https://blog.google/technology/ai/google-gemini-update/
 - NFC-secured labels: Tamper-detect and cryptographically signed NFC tags (NXP NTAG, EAL-certified chips). Strong anti-clone; requires NFC readers and key infrastructure.
 - NXP NTAG secure offerings: https://www.nxp.com/products/rfid-nfc/nfc-hf/ntag-for-tags-labels-and-papers:MC_53451
 
-### Versus OCR-to-hash
+### Versus Live Verify
 
-Where OCR-to-hash fits
-- Human-readable, issuer-controlled, zero PII leakage (hash only), web-native, low-cost (static hosting), works with print flows, no keys for end users.
+Where Live Verify fits
+- Human-readable, issuer-controlled, zero PII leakage (hash only), web-native, low-cost (static hosting), works with print flows and digital documents, no keys for end users.
 
 Best-of-both hybrids
-- OCR-to-hash + timestamp anchoring (RFC 3161 or blockchain Merkle roots) for independent time/immutability.
-- OCR-to-hash + verifiable credentials for cryptographic signatures alongside human-friendly print.
-- OCR-to-hash + QR/NFC for speed while retaining a human-verifiable pathway.
+- Live Verify + timestamp anchoring (RFC 3161 or blockchain Merkle roots) for independent time/immutability.
+- Live Verify + verifiable credentials for cryptographic signatures alongside human-friendly print.
+- Live Verify + QR/NFC for speed while retaining a human-verifiable pathway.
 
 When to choose what
-- High legal weight/non-repudiation: Use digital signatures (PAdES) and/or VCs; add OCR-to-hash for human inspection and offline fallback.
-- High-volume scanning/operations: Use QR/barcodes; add OCR-to-hash to keep a human-verifiable pathway and reduce redirect spoofing.
-- Field verification with privacy: OCR-to-hash shines—no PII transmission, works with phone camera, issuer hosts a simple “OK/REVOKED” endpoint.
-- Anti-clone physical goods: NFC-secured labels or serialized barcodes; optionally pair with printed OCR-to-hash declarations for paperwork.
+- High legal weight/non-repudiation: Use digital signatures (PAdES) and/or VCs; add Live Verify for human inspection and offline fallback.
+- High-volume scanning/operations: Use QR/barcodes; add Live Verify to keep a human-verifiable pathway and reduce redirect spoofing.
+- Field verification with privacy: Live Verify shines—no PII transmission, works with phone camera (Camera mode) or browser (Clip mode), issuer hosts a simple "OK/REVOKED" endpoint.
+- Anti-clone physical goods: NFC-secured labels or serialized barcodes; optionally pair with printed Live Verify declarations for paperwork.
 
 ## Get Started
 
