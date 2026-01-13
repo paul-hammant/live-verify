@@ -2,6 +2,21 @@
 
 Verify selected text against issuer endpoints using SHA-256 hashing. Select text containing a `verify:` URL, right-click, and instantly verify authenticity.
 
+## Why This Extension Exists (For Now)
+
+This extension is a **proof-of-concept** demonstrating text verification in browsers. We expect browser makers (Chrome, Firefox, Safari, Edge) to eventually integrate this functionality natively—providing far more prominent verification UI than any extension can achieve.
+
+**Native browser integration could offer:**
+- Inline highlighting of verified claims as you read (see mockup below)
+- URL bar indicators (like HTTPS padlock) for pages with verified content
+- Automatic scanning without user action
+- First-party trust signals that users recognize
+
+![Browser UI mockup](browser-ui-change.png)
+*Mockup: Native browsers could highlight verified text inline (gold background) rather than requiring manual selection and right-click.*
+
+Until browsers adopt this pattern, the extension demonstrates the verification flow and proves the concept works.
+
 ## Installation (Development)
 
 ### Chrome / Edge
