@@ -121,11 +121,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Employment Verification (The Work Number)
 
-| Feature | OCR-to-Hash | Equifax (The Work Number) | Scanned PDF |
+| Feature | Live Verify | Equifax (The Work Number) | Scanned PDF |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Carrier. | **Data-Bound.** Trust the aggregator. | **Zero.** Easily forged. |
 | **Completeness** | **High.** Shows specific policy triggers. | **Low.** Often only shows "Salary" or "Active/Inactive." | **Full.** |
 | **User Privacy** | **High.** Only this specific claim is verified. | **Low.** Lenders see full employment history. | **High.** |
 | **Speed** | **Instant.** Scan the worksheet. | **Slow.** Requires specific lender credentials and fees. | **Instant.** |
 
-**Why OCR wins here:** Specificity. Employment verification services are built for workers, not claimants. They often miss the nuanced "Own-Occ" vs "Any-Occ" triggers that determine if a disability benefit will continue. OCR-to-hash turns the **Actuarial Worksheet** into a live, trusted link to the specific contract terms.
+**Why Live Verify wins here:** Specificity. Employment verification services are built for workers, not claimants. They often miss the nuanced "Own-Occ" vs "Any-Occ" triggers that determine if a disability benefit will continue. Live Verify turns the **Actuarial Worksheet** into a live, trusted link to the specific contract terms.

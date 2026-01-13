@@ -75,7 +75,7 @@ The **Massage Therapist (Practitioner)** benefits from verification.
 **Assault Prevention:** Before entering a private room for a treatment, a customer can scan the therapist's badge. "Verified by State Board" ensures the person has passed the mandatory criminal and sex-offender background checks, reducing the risk of misconduct.
 
 **Law Enforcement / Human Trafficking Units**
-**Field Enforcement:** Officers inspecting massage establishments can instantly verify the credentials of all staff. OCR-to-hash allows for the rapid identification of illicit operations or "Phantom Licenses" used to hide human trafficking.
+**Field Enforcement:** Officers inspecting massage establishments can instantly verify the credentials of all staff. Live Verify allows for the rapid identification of illicit operations or "Phantom Licenses" used to hide human trafficking.
 
 **Insurance Companies**
 **Malpractice Vetting:** Verifying that a therapist has an active, non-disciplined license before issuing or renewing professional liability coverage.
@@ -122,11 +122,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Window Posters / Public Lookup
 
-| Feature | OCR-to-Hash | Laminated Wall Poster | State Website Search |
+| Feature | Live Verify | Laminated Wall Poster | State Website Search |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Board. | **Visual.** Trusted via logo only. | **High.** Direct DB access. |
 | **Speed** | **Instant.** 5-second scan at the door. | **N/A.** Just looking. | **Slow.** Requires typing names and navigating portals. |
 | **Integrity** | **Cryptographic.** Binds face to status. | **Zero.** Easily swapped. | **None.** |
 | **Safety Data** | **High.** Shows background check status. | **None.** | **Passive.** |
 
-**Why OCR wins here:** The "Service Point" reality. Clients decide to trust a therapist in seconds. They won't log into a state government portal while standing in a quiet spa hallway. OCR-to-hash turns the **Station License** into a live "Safety Badge," ensuring that trust is verified at the moment of highest risk.
+**Why Live Verify wins here:** The "Service Point" reality. Clients decide to trust a therapist in seconds. They won't log into a state government portal while standing in a quiet spa hallway. Live Verify turns the **Station License** into a live "Safety Badge," ensuring that trust is verified at the moment of highest risk.

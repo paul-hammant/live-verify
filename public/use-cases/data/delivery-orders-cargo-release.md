@@ -92,7 +92,7 @@ Shows the issuer domain (the Customs Broker or Carrier) and the release standing
 ## Third-Party Use
 
 **Terminal Operators (Stevedores)**
-**Anti-Theft:** Cargo theft via "Fictitious Pickup" is a billion-dollar problem. Thieves use forged paper DOs to trick gate clerks into releasing containers. OCR-to-hash allows the clerk to verify the order against the broker's domain, stopping the theft at the gate.
+**Anti-Theft:** Cargo theft via "Fictitious Pickup" is a billion-dollar problem. Thieves use forged paper DOs to trick gate clerks into releasing containers. Live Verify allows the clerk to verify the order against the broker's domain, stopping the theft at the gate.
 
 **Customs Brokers**
 **Supply Chain Visibility:** Remotely monitoring the "Verified Status" of their issued DOs to see exactly when the cargo was picked up by the trucker.
@@ -140,11 +140,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Port Community Systems (PCS)
 
-| Feature | OCR-to-Hash | Port Portal / PCS | Paper Delivery Order |
+| Feature | Live Verify | Port Portal / PCS | Paper Delivery Order |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Broker. | **System-Bound.** Trust the Port's IT. | **Zero.** Easily forged. |
 | **User Access** | **Universal.** Any trucker with a phone. | **Restricted.** Requires complex EDI/Portal logins. | **Instant.** |
 | **Integrity** | **Binds Content.** Proves the *Container #*. | **Data-Only.** Doesn't protect the paper. | **Vulnerable.** |
 | **Offline Proof** | **Strong.** The paper is the anchor. | **None.** Requires server access. | **Medium.** |
 
-**Why OCR wins here:** The "Gate Clerk" reality. Gate operations are high-pressure and fast. Clerks often handle hundreds of trucks an hour. They don't have time to cross-reference multiple slow portals. OCR-to-hash turns the **Trucker's Document** into a live, high-speed trust token that provides "Port-Grade" security in seconds.
+**Why Live Verify wins here:** The "Gate Clerk" reality. Gate operations are high-pressure and fast. Clerks often handle hundreds of trucks an hour. They don't have time to cross-reference multiple slow portals. Live Verify turns the **Trucker's Document** into a live, high-speed trust token that provides "Port-Grade" security in seconds.

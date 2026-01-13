@@ -77,7 +77,7 @@ The **Trusted Traveler** benefits from verification.
 ## Third-Party Use
 
 **Airline Counter Agents**
-**KTN Validation:** Instantly verifying a passenger's KTN status if it's missing from the boarding pass. OCR-to-hash connects the agent directly to the CBP record, bypassing the need for the traveler to log into their private TTP portal.
+**KTN Validation:** Instantly verifying a passenger's KTN status if it's missing from the boarding pass. Live Verify connects the agent directly to the CBP record, bypassing the need for the traveler to log into their private TTP portal.
 
 **TSA Officers (Security Checkpoint)**
 **Access Control:** Verifying that a "Priority Access" or "TSA Pre" claim on a printed itinerary matches the verified TTP status of the passenger.
@@ -127,11 +127,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. TTP Online Portal
 
-| Feature | OCR-to-Hash | TTP Official Portal | Physical TTP Card |
+| Feature | Live Verify | TTP Official Portal | Physical TTP Card |
 | :--- | :--- | :--- | :--- |
 | **Integrity** | **Binds Passport to Status.** | **High.** Direct DB access. | **Mechanical.** Prone to forgery. |
 | **Speed** | **Instant.** 5-second scan. | **Slow.** Requires 2FA, login, and navigation. | **Instant.** |
 | **Field Access** | **High.** Works for airlines/employers. | **Zero.** Third parties never get TTP logins. | **Visual.** Trusted only via logo. |
 | **Trust Anchor** | **Domain-Bound.** Bound to `cbp.dhs.gov`. | **High.** | **Medium.** |
 
-**Why OCR wins here:** The "Counter Reality." Travelers encounter airlines, employers, and foreign authorities in the physical world. They don't want to log into a federal portal with 2FA while standing at a check-in desk. OCR-to-hash turns the **Physical Confirmation Letter** into a high-speed digital dashboard that provides definitive proof of status in seconds.
+**Why Live Verify wins here:** The "Counter Reality." Travelers encounter airlines, employers, and foreign authorities in the physical world. They don't want to log into a federal portal with 2FA while standing at a check-in desk. Live Verify turns the **Physical Confirmation Letter** into a high-speed digital dashboard that provides definitive proof of status in seconds.

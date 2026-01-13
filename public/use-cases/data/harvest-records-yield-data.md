@@ -80,7 +80,7 @@ The **Farmer (Producer)** benefits from verification.
 ## Third-Party Use
 
 **Crop Insurance Companies (AIPs)**
-**Claim Adjudication:** Instantly verifying the "Acreage and Production" (APH) history of a farm. OCR-to-hash ensures the farmer hasn't "Photoshopped" a better yield history to get a higher insurance guarantee.
+**Claim Adjudication:** Instantly verifying the "Acreage and Production" (APH) history of a farm. Live Verify ensures the farmer hasn't "Photoshopped" a better yield history to get a higher insurance guarantee.
 
 **Grain Buyers (ADM / Cargill)**
 **Supply Chain Traceability:** Verifying the "Field of Origin" for high-premium crops (e.g., identity-preserved non-GMO soy).
@@ -128,11 +128,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Ag-Tech APIs
 
-| Feature | OCR-to-Hash | Ag-Tech API (FieldView) | Paper Scale Ticket |
+| Feature | Live Verify | Ag-Tech API (FieldView) | Paper Scale Ticket |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the OEM. | **System-Bound.** | **Zero.** Easily forged. |
 | **User Privacy** | **High.** Share only the *Yield Summary*. | **Low.** API access often reveals *full* farm maps. | **High.** |
 | **Interoperability** | **Universal.** Works across all combine brands. | **Low.** Hard to link a JD combine to a Case IH app. | **Universal.** |
 | **Speed** | **Instant.** 5-second scan. | **Slow.** Requires account linking and permissions. | **N/A.** |
 
-**Why OCR wins here:** The "Field Handoff." Insurance adjusters and bank officers meet farmers in trucks or barns. They work with PDFs and paper printouts. They don't have the technical expertise or time to "Link API Accounts" across 5 different ag-tech platforms. OCR-to-hash turns the **Static Yield Report** into a live, trusted clinical link.
+**Why Live Verify wins here:** The "Field Handoff." Insurance adjusters and bank officers meet farmers in trucks or barns. They work with PDFs and paper printouts. They don't have the technical expertise or time to "Link API Accounts" across 5 different ag-tech platforms. Live Verify turns the **Static Yield Report** into a live, trusted clinical link.

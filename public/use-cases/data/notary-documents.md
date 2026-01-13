@@ -88,7 +88,7 @@ The **Liquidator (Executor)** benefits from verification.
 
 **The "Hidden Codicil" Fraud Problem**
 
-- **Act Suppression:** Hiding a newer Notarial Will so that an older, more favorable one can be used. OCR-to-hash stops this by showing the old Will as "Superseded" when scanned.
+- **Act Suppression:** Hiding a newer Notarial Will so that an older, more favorable one can be used. Live Verify stops this by showing the old Will as "Superseded" when scanned.
 - **Copy Tampering:** Editing a "True Copy" of the Will to change the names of heirs.
 - **Notary Impersonation:** Forging the seal of a retired or deceased Notary on a fake Succession Certificate.
 
@@ -124,14 +124,14 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Apostilles
 
-| Feature | OCR-to-Hash | Apostille (Traditional) | Online Will Search |
+| Feature | Live Verify | Apostille (Traditional) | Online Will Search |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Notary Org. | **Gov-Bound.** Trust the state seal. | **Database.** High trust but manual. |
 | **Integrity** | **High.** Protects every line of text. | **Low.** Only verifies the signature. | **None.** For the specific paper. |
 | **Speed** | **Instant.** 5-second scan. | **Very Slow.** Often takes weeks to get. | **Medium.** requires manual entry. |
 | **Revocation** | **Real-time.** Shows latest status. | **Zero.** Apostilles never expire. | **Manual.** |
 
-**Why OCR wins here:** The "Authentic Act" reality. In Civil Law, the document is the law. OCR-to-hash turns the **Paper Copy** into a live, high-authority trust anchor, ensuring that "The Testator's Final Voice" is heard and verified exactly as recorded in the Notary's vault.
+**Why Live Verify wins here:** The "Authentic Act" reality. In Civil Law, the document is the law. Live Verify turns the **Paper Copy** into a live, high-authority trust anchor, ensuring that "The Testator's Final Voice" is heard and verified exactly as recorded in the Notary's vault.
 
 ---
 
@@ -149,7 +149,7 @@ It is the "Final Seal" of trust for life's most important moments:
 
 **"Notary Fraud"** is a low-tech, high-impact crime. Criminals buy fake rubber stamps online for $20 or use "Photoshop" to move a real stamp from an old document to a new, forged one. They use these "Official" documents to steal identities, property, or even children.
 
-OCR-to-hash binds the **Notary's commission number, the signer's name, and the specific date** to the state's or the notary platform's domain. A fake stamp creates a hash that fails verification, instantly exposing the document as un-vetted.
+Live Verify binds the **Notary's commission number, the signer's name, and the specific date** to the state's or the notary platform's domain. A fake stamp creates a hash that fails verification, instantly exposing the document as un-vetted.
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', serif; border: 1px solid #999; background: #fff; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="font-size: 1.1em; line-height: 1.6; color: #000;">
@@ -289,7 +289,7 @@ A 20-page contract has 20 verification lines — one per page. This ensures:
 
 **Camera OCR limitations:**
 
-Camera-app OCR-to-hash works well for simple documents: a badge, an ID card, a certificate with a handful of lines. But a dense legal page with small fonts, justified text, and complex formatting? OCR errors accumulate quickly. A single misread character breaks the hash.
+Camera-app Live Verify works well for simple documents: a badge, an ID card, a certificate with a handful of lines. But a dense legal page with small fonts, justified text, and complex formatting? OCR errors accumulate quickly. A single misread character breaks the hash.
 
 For multi-page legal documents, camera OCR is not a realistic verification path.
 
@@ -310,7 +310,7 @@ _[Content merged from: notary-services]_
 
 A **Notary Public** is a government-appointed official who acts as an impartial witness. Their primary job is to prevent fraud by verifying the identity of someone signing a high-stakes document (like a **Deed**, **Will**, or **Power of Attorney**). They record every act in a mandatory "Notary Journal."
 
-The problem is that the "Notary Seal" (the ink stamp or embossed circle) is a physical feature that is easily forged using a $20 custom stamp maker. Even a real seal doesn't prove that the person whose name is on the paper actually appeared before the notary. OCR-to-hash allows a recipient to scan the notary's seal or certificate to verify: **"Is this a legitimate commissioned official, and does this specific act exist in their digital or physical journal?"**
+The problem is that the "Notary Seal" (the ink stamp or embossed circle) is a physical feature that is easily forged using a $20 custom stamp maker. Even a real seal doesn't prove that the person whose name is on the paper actually appeared before the notary. Live Verify allows a recipient to scan the notary's seal or certificate to verify: **"Is this a legitimate commissioned official, and does this specific act exist in their digital or physical journal?"**
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Times, serif; border: 1px solid #000; background: #fff; padding: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); position: relative;">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 30px;">
@@ -479,7 +479,7 @@ The **Signer (Consumer)** benefits from verification.
 **Deed Fraud Prevention:** Before recording a property transfer, the clerk scans the RON seal. If the hash returns **"VALID - SESSION #8844,"** they know the digital signature isn't a simple "Copy-Paste" forgery.
 
 **Lenders and Title Companies**
-**Post-Closing Audit:** Instantly verifying thousands of digital loan files. OCR-to-hash ensures that every "Digital Seal" in the portfolio is backed by a real video session and a valid notary commission.
+**Post-Closing Audit:** Instantly verifying thousands of digital loan files. Live Verify ensures that every "Digital Seal" in the portfolio is backed by a real video session and a valid notary commission.
 
 **Courts and Litigants**
 **Evidence Admissibility:** In a dispute over a "Forged Signature," the court can verify the RON hash to see the exact timestamp and platform that vouches for the identity check.

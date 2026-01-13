@@ -112,11 +112,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. USDA Portals
 
-| Feature | OCR-to-Hash | USDA / RMA Public Search | Scanned PDF Summary |
+| Feature | Live Verify | USDA / RMA Public Search | Scanned PDF Summary |
 | :--- | :--- | :--- | :--- |
 | **User Access** | **Open.** Any bank or landlord can verify. | **Restricted.** Requires secure eAuth Level 2 logins. | **Instant.** |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Carrier. | **Gov-Bound.** | **Zero.** Easily forged. |
 | **Detail** | **High.** Shows specific fields and head count. | **Low.** Often only shows aggregated county data. | **Full.** |
 | **Speed** | **Instant.** Scan at the farm gate. | **Slow.** Requires multiple Gov-ID hoops. | **Instant.** |
 
-**Why OCR wins here:** The "Ag-Banking" reality. Local bank officers and farmers often work via paper folders and email. They don't have the technical "Federal Vetting" or time to log into the USDA's internal systems for every $50,000 loan. OCR-to-hash turns the **Insurance Summary** into a live, high-speed trust bridge, allowing rural finance to move at the speed of the web.
+**Why Live Verify wins here:** The "Ag-Banking" reality. Local bank officers and farmers often work via paper folders and email. They don't have the technical "Federal Vetting" or time to log into the USDA's internal systems for every $50,000 loan. Live Verify turns the **Insurance Summary** into a live, high-speed trust bridge, allowing rural finance to move at the speed of the web.

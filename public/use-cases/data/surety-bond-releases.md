@@ -92,7 +92,7 @@ The **Principal (Contractor/Licensee)** benefits from verification.
 **Underwriting:** When a contractor seeks bonds from a new surety, the new company verifies that prior bonds were released cleanly.
 
 **Banks Holding Collateral**
-**Collateral Return:** Banks won't release collateral without valid release letters. OCR-to-hash prevents fraudulent recovery of collateral before obligations are satisfied.
+**Collateral Return:** Banks won't release collateral without valid release letters. Live Verify prevents fraudulent recovery of collateral before obligations are satisfied.
 
 **Licensing Authorities**
 **License Renewal:** State licensing boards may require proof that prior license bonds were released without claims before issuing new licenses.

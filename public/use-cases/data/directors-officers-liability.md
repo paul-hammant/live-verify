@@ -83,7 +83,7 @@ The **Board Director** or **Corporate Officer** (second party) receives the D&O 
 The director/officer (second party) may hand the verified document to various third parties:
 
 **M&A Buyers / Acquirers**
-**Legacy Liability:** In a corporate acquisition, the buyer needs to verify the "Retroactive Date" and "Limits" of the seller's historical D&O policies. OCR-to-hash ensures the seller isn't "Editing" their history to hide past litigation risks.
+**Legacy Liability:** In a corporate acquisition, the buyer needs to verify the "Retroactive Date" and "Limits" of the seller's historical D&O policies. Live Verify ensures the seller isn't "Editing" their history to hide past litigation risks.
 
 **Investment Banks / Underwriters**
 **IPO Due Diligence:** Ensuring that the "Executive Liability" claims made in the S-1 filing are backed by verified insurance policies.
@@ -132,11 +132,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Broker Confirmation
 
-| Feature | OCR-to-Hash | Manual Broker Letter | Data Room PDF |
+| Feature | Live Verify | Manual Broker Letter | Data Room PDF |
 | :--- | :--- | :--- | :--- |
 | **Integrity** | **Cryptographic.** Binds every limit and date. | **Subjective.** Relies on the broker's clerk. | **Zero.** Easily forged. |
 | **Speed** | **Instant.** Scan the paper in the boardroom. | **Slow.** Takes 3-5 days to get a "Confirmation Letter." | **Instant.** |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Carrier. | **Human.** Prone to social engineering. | **Vulnerable.** |
 | **Archival** | **Permanent.** Durable for 20-year tail. | **Ephemeral.** Brokers go out of business. | **Vulnerable.** |
 
-**Why OCR wins here:** The "Claims-Made" Reality. D&O claims often hit 10 years after the policy was written. By then, the original broker may be gone and the IT systems migrated. OCR-to-hash turns the **Static Paper Record** into an immutable link to the carrier's ledger, protecting directors long after they've left the company.
+**Why Live Verify wins here:** The "Claims-Made" Reality. D&O claims often hit 10 years after the policy was written. By then, the original broker may be gone and the IT systems migrated. Live Verify turns the **Static Paper Record** into an immutable link to the carrier's ledger, protecting directors long after they've left the company.

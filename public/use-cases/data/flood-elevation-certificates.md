@@ -80,7 +80,7 @@ The **Property Owner** benefits from verification.
 ## Third-Party Use
 
 **Flood Insurance Underwriters**
-**Risk Rating:** Insurers see thousands of PDFs. Verification ensures the elevation data hasn't been "Nudged" higher by a dishonest owner to lower their premium. OCR-to-hash connects the underwriter directly to the surveyor's domain.
+**Risk Rating:** Insurers see thousands of PDFs. Verification ensures the elevation data hasn't been "Nudged" higher by a dishonest owner to lower their premium. Live Verify connects the underwriter directly to the surveyor's domain.
 
 **Mortgage Lenders**
 **Loan Compliance:** Verifying that a property in a high-risk zone has the mandatory, non-altered elevation certificate required for a federally-backed loan.
@@ -128,11 +128,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. FEMA Map Service Center
 
-| Feature | OCR-to-Hash | FEMA MSC (Public Map) | Scanned PDF |
+| Feature | Live Verify | FEMA MSC (Public Map) | Scanned PDF |
 | :--- | :--- | :--- | :--- |
 | **Integrity** | **Binds Property Data.** Protects the *Floor Elevation*. | **Binds Geography.** Only shows the *Zone*. | **Zero.** Easily forged. |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Surveyor. | **Gov-Bound.** Bound to FEMA. | **Visual.** |
 | **Specificity** | **Exact.** Verifies *this specific building*. | **General.** Shows the whole neighborhood. | **Full.** But untrusted. |
 | **Speed** | **Instant.** 5-second scan. | **Slow.** Requires address search and map reading. | **Instant.** |
 
-**Why OCR wins here:** The "Floor Gap." FEMA maps tell you where the water *might* go. But only an Elevation Certificate tells you where the **Building Floor** actually is. OCR-to-hash turns that building-specific data into a verifiable digital anchor, ensuring that flood risk is calculated on facts, not Photoshop.
+**Why Live Verify wins here:** The "Floor Gap." FEMA maps tell you where the water *might* go. But only an Elevation Certificate tells you where the **Building Floor** actually is. Live Verify turns that building-specific data into a verifiable digital anchor, ensuring that flood risk is calculated on facts, not Photoshop.

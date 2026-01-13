@@ -75,7 +75,7 @@ The **Property Developer / Owner** benefits from verification.
 **Design Integrity:** The engineer designing the building's steel skeleton scans the soil report hash. Verification ensures they aren't basing their life-safety calculations on a "Doctor'ed" report that hides soft clay or a high water table.
 
 **Building Inspectors**
-**Field Audit:** During a foundation-pour inspection, the city inspector scans the report hash. OCR-to-hash ensures the contractor is digging to the "Verified Depth" required by the original engineer.
+**Field Audit:** During a foundation-pour inspection, the city inspector scans the report hash. Live Verify ensures the contractor is digging to the "Verified Depth" required by the original engineer.
 
 **Prospective Land Buyers**
 **Due Diligence:** A buyer looking at a vacant hillside lot scans the verified reports from the past 10 years. This ensures they aren't buying a "Landslide Risk" that the seller is trying to hide with a clean-looking PDF.

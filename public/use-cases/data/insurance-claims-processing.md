@@ -121,14 +121,14 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Patient Portals
 
-| Feature | OCR-to-Hash | Insurance Portal (Login) | Paper EOB |
+| Feature | Live Verify | Insurance Portal (Login) | Paper EOB |
 | :--- | :--- | :--- | :--- |
 | **User Control** | **High.** Share one specific EOB. | **Low.** Giving portal access reveals *full* medical history. | **Medium.** |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Insurer. | **System-Bound.** | **Zero.** Easily forged. |
 | **Interoperability** | **Universal.** Works across all carriers. | **Siloed.** | **Universal.** |
 | **Speed** | **Instant.** 5-second scan. | **Slow.** Requires 2FA, login, navigation. | **N/A.** |
 
-**Why OCR wins here:** Selective Privacy. A patient needs to prove a $160 debt to a hospital or lender without exposing that they also had a psychiatric visit or a high-cost medication listed elsewhere in their portal history. OCR-to-hash turns the **Static Statement** into a portable, private "Proof of Payment."
+**Why Live Verify wins here:** Selective Privacy. A patient needs to prove a $160 debt to a hospital or lender without exposing that they also had a psychiatric visit or a high-cost medication listed elsewhere in their portal history. Live Verify turns the **Static Statement** into a portable, private "Proof of Payment."
 
 
 ---
@@ -199,7 +199,7 @@ The **Claims Adjuster** benefits from verification.
 ## Third-Party Use
 
 **Reinsurers**
-**Reserve Audit:** Reinsurers conduct periodic "Reserve Reviews" to ensure the primary carrier isn't hiding losses by keeping reserves artificially low. OCR-to-hash allows the auditor to instantly verify the history of every reserve change without trusting a manually compiled Excel file.
+**Reserve Audit:** Reinsurers conduct periodic "Reserve Reviews" to ensure the primary carrier isn't hiding losses by keeping reserves artificially low. Live Verify allows the auditor to instantly verify the history of every reserve change without trusting a manually compiled Excel file.
 
 **State Market Conduct Examiners**
 **Claims Handling Integrity:** Verifying that the carrier isn't "Backdating" diary notes to make it look like they contacted claimants within the 14-day statutory limit when they actually waited 30 days.
@@ -258,14 +258,14 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Guidewire Audit Logs
 
-| Feature | OCR-to-Hash | System Audit Log (Guidewire) | PDF Export |
+| Feature | Live Verify | System Audit Log (Guidewire) | PDF Export |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Carrier. | **Admin-Bound.** Can be edited by DB admins. | **Zero.** Easily forged. |
 | **Auditor Access** | **Universal.** Reinsurer can verify any PDF. | **Restricted.** Requires expensive licenses/login. | **Manual.** |
 | **Tamper Proof** | **Cryptographic.** Proves the *Text* of the note. | **Vulnerable.** Internal logs can be "cleaned up." | **Vulnerable.** |
 | **Immutability** | **High.** Once hashed, the note is fixed. | **Medium.** Database changes can be hidden. | **Zero.** |
 
-**Why OCR wins here:** The "External Audit." Reinsurers and state regulators are external to the carrier's IT system. They don't have (and often don't want) direct access to the "Live" claims system. OCR-to-hash provides them with an **immutable proof-of-work** for the documents sent to them, ensuring the PDF they are auditing is the "Unfiltered Truth."
+**Why Live Verify wins here:** The "External Audit." Reinsurers and state regulators are external to the carrier's IT system. They don't have (and often don't want) direct access to the "Live" claims system. Live Verify provides them with an **immutable proof-of-work** for the documents sent to them, ensuring the PDF they are auditing is the "Unfiltered Truth."
 
 
 ---
@@ -397,11 +397,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Court Dockets (PACER)
 
-| Feature | OCR-to-Hash | Court Docket (PACER) | Scanned PDF Release |
+| Feature | Live Verify | Court Docket (PACER) | Scanned PDF Release |
 | :--- | :--- | :--- | :--- |
 | **Privacy** | **High.** Private settlements stay private. | **Low.** Everything is public record (if filed). | **Medium.** |
 | **Granularity** | **High.** Shows exact dollar amounts. | **Low.** Many settlements are "Confidential" in court. | **Vulnerable.** |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Payer. | **Gov-Bound.** | **Zero.** Easily forged. |
 | **Interoperability** | **Universal.** PDFs stay verifiable. | **Siloed.** Requires PACER login/fees. | **Manual.** |
 
-**Why OCR wins here:** Privacy. Most insurance settlements are **confidential** and never appearing on a public court docket. OCR-to-hash allows the parties to have "Court-Grade" trust in the private agreement without exposing the settlement terms to the general public.
+**Why Live Verify wins here:** Privacy. Most insurance settlements are **confidential** and never appearing on a public court docket. Live Verify allows the parties to have "Court-Grade" trust in the private agreement without exposing the settlement terms to the general public.

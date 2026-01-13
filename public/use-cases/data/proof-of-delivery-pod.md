@@ -91,7 +91,7 @@ The **Consignee (Receiver)** benefits from verification.
 
 ## Rationale
 
-Proof of Delivery is the "Closing Link" in the global supply chain. OCR-to-hash turns a fleeting physical event (the handoff) into a permanent, verifiable digital fact, reducing billions in "Loss and Dispute" costs annually.
+Proof of Delivery is the "Closing Link" in the global supply chain. Live Verify turns a fleeting physical event (the handoff) into a permanent, verifiable digital fact, reducing billions in "Loss and Dispute" costs annually.
 
 ## Jurisdictional Witnessing
 

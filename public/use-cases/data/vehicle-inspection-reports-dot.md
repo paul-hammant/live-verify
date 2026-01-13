@@ -170,7 +170,7 @@ Station ID:             MAN-9922
 <span data-verify-line="mot">verify:gov.uk/mot/v</span> <span verifiable-text="end" data-for="mot">]</span></pre>
 </div>
 
-**Note:** DVSA already provides a free MOT history lookup at gov.uk. OCR-to-hash adds value by verifying the physical certificate itself — useful when the paper is presented but internet access is limited (e.g., roadside purchase).
+**Note:** DVSA already provides a free MOT history lookup at gov.uk. Live Verify adds value by verifying the physical certificate itself — useful when the paper is presented but internet access is limited (e.g., roadside purchase).
 
 ## Data Verified (MOT)
 

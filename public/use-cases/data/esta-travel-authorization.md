@@ -79,7 +79,7 @@ The **Traveler (Citizen of VWP Country)** benefits from verification.
 ## Third-Party Use
 
 **Airlines (International Carriers)**
-**Liability Mitigation:** Instantly confirming the ESTA status of a passenger during check-in. OCR-to-hash connects the airline directly to the CBP record, bypassing the need for manual data entry into the APIS system.
+**Liability Mitigation:** Instantly confirming the ESTA status of a passenger during check-in. Live Verify connects the airline directly to the CBP record, bypassing the need for manual data entry into the APIS system.
 
 **Embassies / Consulates**
 **Secondary Vetting:** Verifying the prior travel history of a visa applicant who previously traveled under the Visa Waiver Program (ESTA).
@@ -128,11 +128,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. CBP Online Status Check
 
-| Feature | OCR-to-Hash | ESTA Official Website | Scanned PDF / Printout |
+| Feature | Live Verify | ESTA Official Website | Scanned PDF / Printout |
 | :--- | :--- | :--- | :--- |
 | **Integrity** | **Binds Identity.** Binds Passport to Status. | **High.** Direct DB access. | **Zero.** Easily forged. |
 | **Speed** | **Instant.** 5-second scan at check-in. | **Slow.** Requires typing Application # or Passport # + DOB. | **Instant.** |
 | **Trust** | **Cryptographic.** Bound to `cbp.dhs.gov`. | **High.** But prone to phishing sites. | **Low.** Easily faked. |
 | **Hardware** | **Universal.** Any smartphone camera. | **Technical.** Requires laptop/stable 5G. | **Visual.** |
 
-**Why OCR wins here:** The "Airport Counter" reality. Check-in agents are under extreme time pressure. They don't have time to type 10-digit application numbers and 9-digit passport numbers into a website for every passenger. OCR-to-hash turns the **Physical Printout** into a live, high-speed digital key, ensuring safety and efficiency in global travel.
+**Why Live Verify wins here:** The "Airport Counter" reality. Check-in agents are under extreme time pressure. They don't have time to type 10-digit application numbers and 9-digit passport numbers into a website for every passenger. Live Verify turns the **Physical Printout** into a live, high-speed digital key, ensuring safety and efficiency in global travel.

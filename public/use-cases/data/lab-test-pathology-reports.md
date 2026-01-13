@@ -76,7 +76,7 @@ The **Patient** benefits from verification.
 **Treatment Decisions:** Before starting chemotherapy or scheduling surgery, the doctor scans the pathology hash. "Verified by Quest" ensure the diagnosis hasn't been "Edited" by a patient in denial or a confused relative.
 
 **Life & Disability Insurers**
-**Risk Underwriting:** Verifying high-stakes health markers (like cancer staging) before issuing multimillion-dollar policies. OCR-to-hash connects the underwriter directly to the performing lab.
+**Risk Underwriting:** Verifying high-stakes health markers (like cancer staging) before issuing multimillion-dollar policies. Live Verify connects the underwriter directly to the performing lab.
 
 **Clinical Trial Monitors**
 **Eligibility Vetting:** Ensuring that participants in a lung cancer trial actually have the "Verified Grade 2" diagnosis required by the protocol.
@@ -123,11 +123,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Patient Portals / HIEs
 
-| Feature | OCR-to-Hash | Patient Portal (MyQuest) | Health Info Exchange (HIE) |
+| Feature | Live Verify | Patient Portal (MyQuest) | Health Info Exchange (HIE) |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Lab. | **System-Bound.** Requires login. | **Network-Bound.** |
 | **User Access** | **Instant.** Scan the paper in the clinic. | **Slow.** Requires patient to log in and find PDF. | **Difficult.** Requires clinical integration. |
 | **Integrity** | **Cryptographic.** Binds the *Diagnosis*. | **High.** Direct DB access. | **High.** |
 | **Cross-System** | **Universal.** Works across any health system. | **Siloed.** Hard to share with non-network doctors. | **Limited.** Regional only. |
 
-**Why OCR wins here:** The "Clinical Handoff." Surgeons and Oncologists often meet patients who bring paper reports from outside labs. They don't have time to log into the patient's private Quest account. OCR-to-hash turns the **Physical Pathology Report** into a live, trusted clinical link that provides "Oncology-Grade" trust in seconds.
+**Why Live Verify wins here:** The "Clinical Handoff." Surgeons and Oncologists often meet patients who bring paper reports from outside labs. They don't have time to log into the patient's private Quest account. Live Verify turns the **Physical Pathology Report** into a live, trusted clinical link that provides "Oncology-Grade" trust in seconds.

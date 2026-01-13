@@ -14,7 +14,7 @@ A **Charity Rating** is a "Grade" for a non-profit organization. Watchdog groups
 
 A **4-Star Rating** is the "Gold Standard" that charities display in their lobbies and on their websites to win over big donors.
 
-Because a higher rating leads directly to more donations, some charities "Inflate" their stars on their marketing materials or hide that their rating was recently revoked. OCR-to-hash turns the wall certificate into a real-time link to the watchdog's database.
+Because a higher rating leads directly to more donations, some charities "Inflate" their stars on their marketing materials or hide that their rating was recently revoked. Live Verify turns the wall certificate into a real-time link to the watchdog's database.
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 2px solid #004d40; border-radius: 8px; background: #fff; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="background: #004d40; color: #fff; padding: 20px; text-align: center;">
@@ -133,11 +133,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Guidestar Search
 
-| Feature | OCR-to-Hash | GuideStar / Candid Search | Scanned JPEG Badge |
+| Feature | Live Verify | GuideStar / Candid Search | Scanned JPEG Badge |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Rater. | **Database.** High trust but requires manual navigation. | **Zero.** Easily copied. |
 | **Integrity** | **Binds Numbers.** Protects the % Efficiency. | **Live.** Shows latest data. | **Vulnerable.** |
 | **User Experience** | **Instant.** Scan the paper/PDF. | **Slow.** Requires typing EIN and finding the record. | **N/A.** |
 | **B2B Integration** | **High.** Can be automated into grant software. | **Medium.** Requires expensive API access. | **Low.** |
 
-**Why OCR wins here:** The "Front Lobby" moment. Charities display their ratings prominently to build trust. OCR-to-hash turns that **Visual Trophy** into a **Digital Truth**, ensuring that the trust a donor feels when seeing the certificate is backed by cryptographic reality.
+**Why Live Verify wins here:** The "Front Lobby" moment. Charities display their ratings prominently to build trust. Live Verify turns that **Visual Trophy** into a **Digital Truth**, ensuring that the trust a donor feels when seeing the certificate is backed by cryptographic reality.

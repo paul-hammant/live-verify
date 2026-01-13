@@ -117,14 +117,14 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Corporate Cards
 
-| Feature | OCR-to-Hash | Corporate Card Feed |
+| Feature | Live Verify | Corporate Card Feed |
 | :--- | :--- | :--- |
 | **Granularity** | **High.** Shows exactly *what* was bought (Wifi vs Alcohol). | **Low.** Often just shows "DELTA AIR LINES $15.00". |
 | **Coverage** | **Universal.** Works for personal cards used for business. | **Limited.** Only works if the employee uses the mandatory corporate card. |
 | **Immediacy** | **Instant.** Scan receipt immediately. | **Laggy.** Card feeds can take days to sync. |
 | **Cash/Kiosk** | **Yes.** Covers kiosk prints. | **No.** Misses cash or non-integrated payments. |
 
-**Why OCR wins here:** While Level 3 credit card data tries to provide line-item detail, it is notoriously unreliable for travel ancillary fees. A verified receipt provides the definitive "Itemized" proof required by strict expense policies.
+**Why Live Verify wins here:** While Level 3 credit card data tries to provide line-item detail, it is notoriously unreliable for travel ancillary fees. A verified receipt provides the definitive "Itemized" proof required by strict expense policies.
 
 
 ---
@@ -220,13 +220,13 @@ The **Passenger** benefits from verification.
 
 ## Competition vs. Email / Portals
 
-| Feature | OCR-to-Hash | Forwarded Email | Airline Portal |
+| Feature | Live Verify | Forwarded Email | Airline Portal |
 | :--- | :--- | :--- | :--- |
 | **Authenticity** | **Cryptographic.** Sender verified by domain. | **Weak.** Emails are easily edited/spoofed. | **High.** But requires login credentials. |
 | **Sharing** | **Easy.** Send the link or paper to insurer. | **Messy.** Forwarding chains, PDF attachments. | **Hard.** Can't give insurer your airline password. |
 | **Privacy** | **Selective.** Share only the specific letter. | **Low.** Email headers expose metadata. | **Low.** Portal access exposes full history. |
 
-**Why OCR wins here:** It creates a portable, verifiable "Token of Truth" about a specific claim that can be handed to insurers, lawyers, or employers without sharing login credentials or relying on easily forged emails.
+**Why Live Verify wins here:** It creates a portable, verifiable "Token of Truth" about a specific claim that can be handed to insurers, lawyers, or employers without sharing login credentials or relying on easily forged emails.
 
 
 ---
@@ -309,13 +309,13 @@ The **Passenger** or **Travel Agent** benefits from verification.
 
 ## Competition vs. Credit Card Statements
 
-| Feature | OCR-to-Hash | Credit Card Statement |
+| Feature | Live Verify | Credit Card Statement |
 | :--- | :--- | :--- |
 | **Detail** | **High.** Shows breakdown of tax vs fare vs penalty. | **Low.** Just shows "LUFTHANSA CR EUR 2750". |
 | **Privacy** | **High.** Reveals only this transaction. | **Low.** Employee must share full bank statement (revealing personal spending) to prove the refund. |
 | **Timeliness** | **Instant.** Available as soon as airline processes. | **Slow.** Refunds can take 3-10 days to appear on statements. |
 
-**Why OCR wins here:** Privacy. Employees hate sharing their personal bank statements with Finance to prove a negative (or a positive). A verified document from the airline allows them to prove the refund details without exposing their entire financial life.
+**Why Live Verify wins here:** Privacy. Employees hate sharing their personal bank statements with Finance to prove a negative (or a positive). A verified document from the airline allows them to prove the refund details without exposing their entire financial life.
 
 
 ---
@@ -397,13 +397,13 @@ The **Business Traveler** benefits from verification.
 
 ## Competition vs. Credit Card Statements
 
-| Feature | OCR-to-Hash | Credit Card Statement |
+| Feature | Live Verify | Credit Card Statement |
 | :--- | :--- | :--- |
 | **Granularity** | **High.** Shows "Upgrade SFO-LHR" distinct from "Baggage". | **Low.** Just shows "UNITED AIRLINES $550". |
 | **Context** | **Full.** Shows Class of Service (Economy -> Business). | **None.** No flight details or class info. |
 | **Mileage Info** | **Yes.** Shows miles burned (crucial for value calculations). | **No.** Only shows cash. |
 
-**Why OCR wins here:** Credit card statements are too vague for strict corporate travel policies. They prove *payment* but not *product*. A verified receipt proves exactly *what* was purchased, preventing policy violations disguised as generic airline charges.
+**Why Live Verify wins here:** Credit card statements are too vague for strict corporate travel policies. They prove *payment* but not *product*. A verified receipt proves exactly *what* was purchased, preventing policy violations disguised as generic airline charges.
 
 
 ---
@@ -489,10 +489,10 @@ The **Business Traveler** benefits from verification.
 
 ## Competition vs. Credit Card Statements
 
-| Feature | OCR-to-Hash | Credit Card Statement |
+| Feature | Live Verify | Credit Card Statement |
 | :--- | :--- | :--- |
 | **Guest Detail** | **High.** Shows "Guests: 2". | **None.** Just shows "$64.00". |
 | **Location** | **Exact.** "The Club at SJC". | **Vague.** "PRIORITY PASS HONG KONG". |
 | **Time** | **Exact.** Proves you were there during the delay. | **Date Only.** |
 
-**Why OCR wins here:** Context. A credit card charge is just a number. A verified lounge receipt proves *who* was with you and *where* you were, turning a generic charge into a justifiable business expense.
+**Why Live Verify wins here:** Context. A credit card charge is just a number. A verified lounge receipt proves *who* was with you and *where* you were, turning a generic charge into a justifiable business expense.

@@ -70,7 +70,7 @@ The **Named Individual** benefits from verification.
 ## Third-Party Use
 
 **Employers (I-9 Compliance)**
-**Zero-Trust Onboarding:** Instantly verifying that a candidate's Green Card isn't a "High-Quality Forgery." Black-market cards look perfect to the eye; OCR-to-hash connects the manager directly to the USCIS record in seconds.
+**Zero-Trust Onboarding:** Instantly verifying that a candidate's Green Card isn't a "High-Quality Forgery." Black-market cards look perfect to the eye; Live Verify connects the manager directly to the USCIS record in seconds.
 
 **Mortgage Lenders**
 **Loan Eligibility:** Verifying that a borrower is a "Lawful Permanent Resident," which is a mandatory requirement for most Fannie Mae/Freddie Mac conforming loans.
@@ -120,11 +120,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. E-Verify / SAVE
 
-| Feature | OCR-to-Hash | E-Verify (Employer System) | Physical Card |
+| Feature | Live Verify | E-Verify (Employer System) | Physical Card |
 | :--- | :--- | :--- | :--- |
 | **User Access** | **Open.** Small businesses/landlords can verify. | **Restricted.** Only for registered federal contractors/employers. | **Manual.** |
 | **Trust Anchor** | **Domain-Bound.** Bound to `uscis.gov`. | **Direct DB Access.** High trust. | **Mechanical.** Prone to forgery. |
 | **Speed** | **Instant.** 5-second scan. | **Slow.** Often flags for "Manual Review" taking 3-10 days. | **Instant.** |
 | **Interoperability** | **High.** Verified PDF works for banks/lawyers. | **Zero.** Data is trapped in the gov portal. | **Universal.** |
 
-**Why OCR wins here:** Reach and Portability. Most people who need to see a Green Card (Bankers, Landlords, DMV clerks) do not have access to the E-Verify system. They are forced to "Trust their eyes." OCR-to-hash allows **every citizen and business** to have "Federal-Level" trust in an immigration document using only their phone.
+**Why Live Verify wins here:** Reach and Portability. Most people who need to see a Green Card (Bankers, Landlords, DMV clerks) do not have access to the E-Verify system. They are forced to "Trust their eyes." Live Verify allows **every citizen and business** to have "Federal-Level" trust in an immigration document using only their phone.

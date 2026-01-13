@@ -68,7 +68,7 @@ The **Guest (Traveler)** benefits from verification.
 ## Third-Party Use
 
 **Corporate Finance Teams**
-**Audit Integrity:** Instantly verifying thousands of cancellation receipts. OCR-to-hash allows systems like SAP Concur to automatically flag "Ghost Refunds" where an employee provides a fake PDF to hide a personal credit.
+**Audit Integrity:** Instantly verifying thousands of cancellation receipts. Live Verify allows systems like SAP Concur to automatically flag "Ghost Refunds" where an employee provides a fake PDF to hide a personal credit.
 
 **Travel Insurers**
 **Claim Adjudication:** Verifying the "Non-Refundable" status of a booking before paying out a trip interruption claim. If the hotel already issued a verified refund, the insurer avoids an overpayment.
@@ -116,14 +116,14 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. In-App Notifications
 
-| Feature | OCR-to-Hash | App Notification | Scanned PDF / Email |
+| Feature | Live Verify | App Notification | Scanned PDF / Email |
 | :--- | :--- | :--- | :--- |
 | **User Privacy** | **High.** Share only the *Cancellation*. | **Low.** App access reveals *full* stay history. | **Vulnerable.** |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Hotel. | **System-Bound.** | **Zero.** Easily forged. |
 | **Interoperability** | **Universal.** Works for any insurer/employer. | **Zero.** Insurers don't have logins to your Hilton app. | **Universal.** |
 | **Audit-ability** | **High.** Creates a digital audit trail. | **None.** For external parties. | **Low.** |
 
-**Why OCR wins here:** The "External Audit." Hotels and travelers exist in different financial ecosystems than their employers and insurers. They don't all share the same API. OCR-to-hash turns the **Static Confirmation** into a portable, trusted artifact that bridges the gap between the hospitality industry and the world of corporate finance.
+**Why Live Verify wins here:** The "External Audit." Hotels and travelers exist in different financial ecosystems than their employers and insurers. They don't all share the same API. Live Verify turns the **Static Confirmation** into a portable, trusted artifact that bridges the gap between the hospitality industry and the world of corporate finance.
 
 
 ---
@@ -249,14 +249,14 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Mobile Apps
 
-| Feature | OCR-to-Hash | Hotel Mobile App | Scanned PDF / Email |
+| Feature | Live Verify | Hotel Mobile App | Scanned PDF / Email |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Brand. | **System-Bound.** | **Zero.** Easily forged. |
 | **User Privacy** | **High.** Share only the *Upgrade* status. | **Low.** App access reveals *full* travel history. | **Vulnerable.** |
 | **Persistence** | **High.** Remains verifiable after stay. | **Low.** Past stay data is often hard to find in-app. | **Vulnerable.** |
 | **Front Desk Speed** | **Instant.** 5-second scan. | **Slow.** Requires finding phone and loading app. | **N/A.** |
 
-**Why OCR wins here:** The "Front Desk Conflict." Travelers are at their most stressed when checking in. Apps fail, batteries die, and Wi-Fi is spotty. OCR-to-hash turns the **Printed Confirmation** (or a simple PDF) into a live, high-authority digital artifact that ends the "Room Type" argument instantly.
+**Why Live Verify wins here:** The "Front Desk Conflict." Travelers are at their most stressed when checking in. Apps fail, batteries die, and Wi-Fi is spotty. Live Verify turns the **Printed Confirmation** (or a simple PDF) into a live, high-authority digital artifact that ends the "Room Type" argument instantly.
 
 
 ---
@@ -379,11 +379,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Mobile Apps
 
-| Feature | OCR-to-Hash | Hotel Mobile App | Scanned PDF Statement |
+| Feature | Live Verify | Hotel Mobile App | Scanned PDF Statement |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Hotel. | **System-Bound.** | **Zero.** Easily forged. |
 | **User Privacy** | **High.** Share only the *Balance/Status*. | **Low.** Showing the app reveals *all* past/future stays. | **Vulnerable.** |
 | **Interoperability** | **High.** Verified PDF works for status-matching. | **Zero.** Hard to "link" a Marriott app to a Hilton desk. | **Universal.** |
 | **Hardware** | **Universal.** Any smartphone camera. | **Technical.** Requires app install/login. | **Visual.** |
 
-**Why OCR wins here:** The "Front Desk" Reality. Travelers check in at hotels they *don't* currently have an account with. They aren't going to download a new app and link accounts just to prove status. OCR-to-hash turns the **Static Statement** into a portable, high-speed digital credential that works across the entire hospitality industry.
+**Why Live Verify wins here:** The "Front Desk" Reality. Travelers check in at hotels they *don't* currently have an account with. They aren't going to download a new app and link accounts just to prove status. Live Verify turns the **Static Statement** into a portable, high-speed digital credential that works across the entire hospitality industry.

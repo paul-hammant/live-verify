@@ -121,11 +121,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. EDI / Blockchain (MetalBlock)
 
-| Feature | OCR-to-Hash | Metal-Specific Blockchain | Paper Mill Cert |
+| Feature | Live Verify | Metal-Specific Blockchain | Paper Mill Cert |
 | :--- | :--- | :--- | :--- |
 | **Field Access** | **Instant.** Scan the paper at the yard. | **Difficult.** Requires yard workers to have private node access. | **Instant.** |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Mill. | **Consensus-Bound.** Trust the network. | **Zero.** Easily forged. |
 | **Interoperability** | **Universal.** PDFs work across all fabricators. | **Low.** Requires every link in the chain to use the same blockchain. | **Universal.** |
 | **Integrity** | **Binds Content.** Protects the chemical list. | **Data-Only.** | **Vulnerable.** |
 
-**Why OCR wins here:** The "Construction Yard" reality. Steel is heavy, dirty, and moves through a complex web of small fabricators and job-sites. They all work with paper and PDFs. OCR-to-hash turns the **Mandatory Paper Certificate** into a live digital anchor, bringing "Blockchain-level" integrity to the world of heavy metal without the massive IT overhead.
+**Why Live Verify wins here:** The "Construction Yard" reality. Steel is heavy, dirty, and moves through a complex web of small fabricators and job-sites. They all work with paper and PDFs. Live Verify turns the **Mandatory Paper Certificate** into a live digital anchor, bringing "Blockchain-level" integrity to the world of heavy metal without the massive IT overhead.

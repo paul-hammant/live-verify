@@ -133,11 +133,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. SWIFT (Electronic)
 
-| Feature | OCR-to-Hash | SWIFT MT700 (Electronic) | Scanned PDF L/C |
+| Feature | Live Verify | SWIFT MT700 (Electronic) | Scanned PDF L/C |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Bank. | **Network-Bound.** Trust the SWIFT keys. | **Zero.** Easily forged. |
 | **Accessibility** | **Universal.** Any local agent/broker can verify. | **Restricted.** Only banks have SWIFT terminals. | **Universal.** |
 | **Integrity** | **Binds Content.** Protects the text. | **Data-Only.** No "Human" document link. | **Vulnerable.** |
 | **Interoperability** | **High.** Works across non-SWIFT fintechs. | **Limited.** Only for legacy banks. | **Universal.** |
 
-**Why OCR wins here:** The "Non-Bank" reality. Trade finance involves non-banks (freight forwarders, insurance agents, small suppliers) who **do not have SWIFT access**. They are forced to trust a piece of paper or a PDF. OCR-to-hash turns that **Human-Readable PDF** into a cryptographically trusted artifact that anyone can verify without a $50,000/year SWIFT terminal.
+**Why Live Verify wins here:** The "Non-Bank" reality. Trade finance involves non-banks (freight forwarders, insurance agents, small suppliers) who **do not have SWIFT access**. They are forced to trust a piece of paper or a PDF. Live Verify turns that **Human-Readable PDF** into a cryptographically trusted artifact that anyone can verify without a $50,000/year SWIFT terminal.

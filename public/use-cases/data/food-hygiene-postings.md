@@ -14,7 +14,7 @@ When you walk into a restaurant, the **Food Hygiene Rating** (often an "A" card 
 
 The problem is that these stickers are incredibly easy to fake or simply leave on the window for years. A restaurant that was "5-Star" in 2023 but dropped to "1-Star" in 2025 because of a rat infestation will almost certainly leave the old "5-Star" sticker on the door to avoid losing customers.
 
-OCR-to-hash allows a diner to scan the window sticker to verify: **"Is this the official rating from the most recent inspection, and is it still valid?"**
+Live Verify allows a diner to scan the window sticker to verify: **"Is this the official rating from the most recent inspection, and is it still valid?"**
 
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 4px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #333333; color: #fff; padding: 15px; text-align: center;">

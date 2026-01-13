@@ -76,7 +76,7 @@ The **Importer (Buyer)** benefits from verification.
 ## Third-Party Use
 
 **Customs Authorities (CBP / HMRC / Zoll)**
-**Enforcement:** Customs sees millions of invoices daily. OCR-to-hash allows an officer to verify the invoice against the exporter's domain in 5 seconds, catching "Double Invoicing" where high-tariff goods are mislabeled or under-valued on the paper document.
+**Enforcement:** Customs sees millions of invoices daily. Live Verify allows an officer to verify the invoice against the exporter's domain in 5 seconds, catching "Double Invoicing" where high-tariff goods are mislabeled or under-valued on the paper document.
 
 **Lenders and Factoring Firms**
 **Asset Verification:** Verifying the "Account Receivable" value of an invoice before lending against it, stopping "Invoicing Fraud" in trade finance.
@@ -124,11 +124,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Customs Single Windows (ACE)
 
-| Feature | OCR-to-Hash | ACE Portal (Gov) | Private EDI |
+| Feature | Live Verify | ACE Portal (Gov) | Private EDI |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Trust the Exporter. | **Gov-Bound.** Trust the filing. | **Network-Bound.** |
 | **Integrity** | **Binds line items.** Protects prices. | **Data-Only.** Doesn't protect paper. | **High.** |
 | **User Access** | **Universal.** Any trucker/bank can verify. | **Restricted.** Requires Gov credentials. | **Siloed.** |
 | **Freshness** | **Real-time.** Shows "Cancelled" status. | **Laggy.** Updates take 24-48 hours. | **Live.** |
 
-**Why OCR wins here:** The "Source of Truth." Government databases only know what was *filed*. If the importer files a fake document, the government database reflects the fake. OCR-to-hash links the verifier back to the **Exporter's accounting ledger**, ensuring the data matches the actual financial transaction.
+**Why Live Verify wins here:** The "Source of Truth." Government databases only know what was *filed*. If the importer files a fake document, the government database reflects the fake. Live Verify links the verifier back to the **Exporter's accounting ledger**, ensuring the data matches the actual financial transaction.

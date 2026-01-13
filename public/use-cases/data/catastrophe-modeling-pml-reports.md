@@ -124,11 +124,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. API Data Feeds
 
-| Feature | OCR-to-Hash | API Integration | Scanned PDF Report |
+| Feature | Live Verify | API Integration | Scanned PDF Report |
 | :--- | :--- | :--- | :--- |
 | **User Experience** | **Universal.** Scan the report in the "Submission Pack." | **Hard.** Requires complex software integration between Broker and Reinsurer. | **Instant.** |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Modeler. | **System-Bound.** Trust the data feed. | **Zero.** Easily forged. |
 | **Interoperability** | **High.** Works across 50+ different reinsurers. | **Low.** Every firm has a different platform (Touchstone vs RiskLink). | **Universal.** |
 | **Cost** | **Low.** Standard web infra. | **Very High.** Seven-figure software licenses. | **None.** |
 
-**Why OCR wins here:** The "Market Cycle." In the high-speed "Renewal Season" (e.g., Jan 1), thousands of "Submission Packs" (PDFs) are emailed across the globe. Reinsurers don't have the time or tech to link APIs with every single broker. OCR-to-hash provides **API-level trust** for the existing PDF-based workflow.
+**Why Live Verify wins here:** The "Market Cycle." In the high-speed "Renewal Season" (e.g., Jan 1), thousands of "Submission Packs" (PDFs) are emailed across the globe. Reinsurers don't have the time or tech to link APIs with every single broker. Live Verify provides **API-level trust** for the existing PDF-based workflow.

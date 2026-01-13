@@ -131,11 +131,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Forensic Audits
 
-| Feature | OCR-to-Hash | Manual Forensic Audit | Scanned PDF |
+| Feature | Live Verify | Manual Forensic Audit | Scanned PDF |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Insurer. | **Credential-Bound.** Trust the CPA. | **Zero.** Easily forged. |
 | **Speed** | **Instant.** Scan the summary. | **Slow.** Takes weeks/months to audit books. | **Instant.** |
 | **Cost** | **Low.** Standard web infra. | **High.** CPA fees can be $500+/hour. | **None.** |
 | **Integrity** | **Binds Result.** Proves the final number. | **Binds Process.** Verifies the data. | **Vulnerable.** |
 
-**Why OCR wins here:** The "Post-Audit Gap." A forensic accountant spends 3 months auditing a business to arrive at a $199,500 figure. OCR-to-hash **protects that final result**. It ensures that the massive effort put into the audit isn't wasted by a fraudster changing a single digit in the final PDF before sending it to a bank or the government.
+**Why Live Verify wins here:** The "Post-Audit Gap." A forensic accountant spends 3 months auditing a business to arrive at a $199,500 figure. Live Verify **protects that final result**. It ensures that the massive effort put into the audit isn't wasted by a fraudster changing a single digit in the final PDF before sending it to a bank or the government.

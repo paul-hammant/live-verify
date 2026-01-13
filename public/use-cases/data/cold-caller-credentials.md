@@ -71,7 +71,7 @@ Criminals impersonating council workers, TV licensing inspectors, or utility emp
 
 ## Delivery Drivers: Privacy-Preserving Verification
 
-Delivery drivers (Evri, DPD, Deliveroo, JustEat) present a different case: most recipients have apps with real-time tracking. But OCR-to-hash still adds value for:
+Delivery drivers (Evri, DPD, Deliveroo, JustEat) present a different case: most recipients have apps with real-time tracking. But Live Verify still adds value for:
 
 - **Non-app recipients** (neighbor collection, elderly, shared buildings)
 - **Suspicious timing** (unexpected delivery, no tracking notification)
@@ -256,7 +256,7 @@ Unlike a static ID card, verification checks current employment status. An emplo
 **Password Schemes:**
 Some utilities offer password schemes where a pre-agreed password is shared with vulnerable customers. The worker must state the password to gain entry.
 
-*Limitation:* Passwords can be overheard, guessed, or socially engineered. OCR-to-hash verification is cryptographically bound to the employer's domain — cannot be faked or transferred.
+*Limitation:* Passwords can be overheard, guessed, or socially engineered. Live Verify verification is cryptographically bound to the employer's domain — cannot be faked or transferred.
 
 **Nominated Neighbour:**
 Some schemes allow a trusted neighbour to verify visitors.
@@ -329,7 +329,7 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Current Methods
 
-| Feature | OCR-to-Hash | Password Scheme | Visual Inspection |
+| Feature | Live Verify | Password Scheme | Visual Inspection |
 |---------|-------------|-----------------|-------------------|
 | **Fakeable?** | No — domain-bound | Yes — overheard/shared | Yes — trivial |
 | **Real-time status** | Yes — current employment | No — password unchanged | No — static badge |

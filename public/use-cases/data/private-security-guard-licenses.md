@@ -16,7 +16,7 @@ It proves that the holder has passed a criminal background check (usually via th
 
 **"Credential Swapping"** is a major safety risk: an unlicensed individual might use a friend's physical card to gain access to a high-security facility or sensitive event. **Armed Guards** present even higher risks; a guard whose firearms qualification has expired may still be carrying a weapon illegally.
 
-OCR-to-hash binds the **Guard's name, License Number, and Firearms Qualifications** to the state regulatory board's domain. A client or police officer can instantly verify that the guard standing before them is **Active, Vetted, and Qualified** to carry the weapons they are currently using.
+Live Verify binds the **Guard's name, License Number, and Firearms Qualifications** to the state regulatory board's domain. A client or police officer can instantly verify that the guard standing before them is **Active, Vetted, and Qualified** to carry the weapons they are currently using.
 
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #263238; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
   <div style="background: #263238; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
@@ -130,11 +130,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Physical ID Cards
 
-| Feature | OCR-to-Hash | Holographic Card | Central Registry Lookup |
+| Feature | Live Verify | Holographic Card | Central Registry Lookup |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the State Gov. | **Physical.** Trust the printer. | **Database.** High trust but manual. |
 | **Integrity** | **Binds Quals.** Protects the Armed status. | **Zero.** Doesn't protect the text. | **Data-Only.** |
 | **Speed** | **Instant.** 5-second scan at the door. | **N/A.** Just looking. | **Slow.** Requires typing 10-digit ID. |
 | **Hardware** | **Universal.** Any smartphone camera. | **Human Eye.** | **Technical.** Requires laptop/stable 5G. |
 
-**Why OCR wins here:** The "Night-Shift" reality. Bouncers and site managers often work in dark, high-pressure environments when government offices are closed. OCR-to-hash turns the **Physical Guard Card** into a live, trusted safety link, ensuring that the person "Protecting the Building" is verified safe at the exact point of risk.
+**Why Live Verify wins here:** The "Night-Shift" reality. Bouncers and site managers often work in dark, high-pressure environments when government offices are closed. Live Verify turns the **Physical Guard Card** into a live, trusted safety link, ensuring that the person "Protecting the Building" is verified safe at the exact point of risk.

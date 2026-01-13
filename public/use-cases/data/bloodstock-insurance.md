@@ -131,11 +131,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Registry Databases
 
-| Feature | OCR-to-Hash | Jockey Club Registry | Paper Certificate |
+| Feature | Live Verify | Jockey Club Registry | Paper Certificate |
 | :--- | :--- | :--- | :--- |
 | **Integrity** | **Binds Value.** Proves the *insured amount*. | **Binds Identity.** Proves *who* the horse is. | **Zero.** Easily faked. |
 | **Confidentiality** | **High.** Only the specific policy is verified. | **Low.** Many registries are public or easily queried. | **Medium.** |
 | **Speed** | **Instant.** Scan the paper at the stable. | **Slow.** Requires login/subscription. | **Instant.** |
 | **Financial Link** | **Yes.** Directly links the horse to the money. | **No.** Registries don't track insurance data. | **Vulnerable.** |
 
-**Why OCR wins here:** Context. A registry knows the horse's name and parents. But only the Underwriter knows the **Insured Value**. OCR-to-hash turns the "Mortality Certificate" into a real-time financial link that proves exactly how much the horse is worth in the eyes of the market's professional risk-takers.
+**Why Live Verify wins here:** Context. A registry knows the horse's name and parents. But only the Underwriter knows the **Insured Value**. Live Verify turns the "Mortality Certificate" into a real-time financial link that proves exactly how much the horse is worth in the eyes of the market's professional risk-takers.

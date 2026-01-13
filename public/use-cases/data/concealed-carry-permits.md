@@ -16,7 +16,7 @@ It proves the person has:
 1.  **Passed a Background Check:** No felony convictions or domestic violence history.
 2.  **Completed Training:** Knowledge of safety laws and marksmanship.
 
-Police officers at a traffic stop need to verify these permits in seconds. If a permit has been "Revoked" (e.g., after a recent arrest), but the person still has the physical card, it is a major public safety risk. OCR-to-hash provides the "Live Status" check that saves lives.
+Police officers at a traffic stop need to verify these permits in seconds. If a permit has been "Revoked" (e.g., after a recent arrest), but the person still has the physical card, it is a major public safety risk. Live Verify provides the "Live Status" check that saves lives.
 
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
   <div style="background: #1a237e; color: #fff; padding: 15px; text-align: center; display: flex; align-items: center; justify-content: center;">
@@ -129,11 +129,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Police Database (NCIC)
 
-| Feature | OCR-to-Hash | NCIC / NLETS (Police DB) | Physical Card |
+| Feature | Live Verify | NCIC / NLETS (Police DB) | Physical Card |
 | :--- | :--- | :--- | :--- |
 | **User Access** | **Open.** Citizens and businesses can verify. | **Zero.** Only police have access. | **Manual.** Just looking. |
 | **Integrity** | **Cryptographic.** Binds photo to status. | **High.** Direct DB access. | **Low.** Easily faked. |
 | **Speed** | **Instant.** 5-second scan. | **Slow.** Requires dispatcher or laptop query. | **Instant.** |
 | **Cross-State** | **Seamless.** Works via URL. | **Complex.** State-to-state data sharing is often laggy. | **Hard.** Officers can't recognize 50 different state cards. |
 
-**Why OCR wins here:** The "Reciprocity Gap." An officer in Utah may not know what a Vermont CCW card looks like or how to query the Vermont state database. OCR-to-hash turns the **Physical Card** into a universal digital bridge that works across any state line, providing "Police-Level" trust to everyone from a patrol officer to a gun shop owner.
+**Why Live Verify wins here:** The "Reciprocity Gap." An officer in Utah may not know what a Vermont CCW card looks like or how to query the Vermont state database. Live Verify turns the **Physical Card** into a universal digital bridge that works across any state line, providing "Police-Level" trust to everyone from a patrol officer to a gun shop owner.

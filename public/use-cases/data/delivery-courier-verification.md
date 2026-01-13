@@ -14,7 +14,7 @@ As e-commerce delivery volumes explode, "Delivery Driver" has become the most co
 
 Fraudsters often wear high-visibility vests or fake corporate shirts to walk up to porches and steal packages, or knock on doors claiming a "Signature Required" or "Address Correction" to gain entry to a home.
 
-OCR-to-hash allows a resident or security guard to scan the driver's ID badge or a printed delivery manifest to verify: **"Is this person an authorized employee of this company, and are they assigned to this route today?"**
+Live Verify allows a resident or security guard to scan the driver's ID badge or a printed delivery manifest to verify: **"Is this person an authorized employee of this company, and are they assigned to this route today?"**
 
 ### ID Card (dynaamic e-ink)
 
@@ -170,7 +170,7 @@ With the rise of "Gig Work" (like Amazon Flex), the person delivering your packa
 
 The **Driver Badge** is their "Security Key." It proves they are an authorized worker currently on an active route.
 
-Scammers often wear fake high-visibility vests to get inside apartment buildings or gated communities to "case" homes or steal packages. OCR-to-hash allows a doorman or resident to scan the badge and see a green "ON-DUTY" status from the company's domain, stopping "Fake Courier" home invasions.
+Scammers often wear fake high-visibility vests to get inside apartment buildings or gated communities to "case" homes or steal packages. Live Verify allows a doorman or resident to scan the badge and see a green "ON-DUTY" status from the company's domain, stopping "Fake Courier" home invasions.
 
 ### ID Card (dynaamic e-ink)
 
@@ -291,14 +291,14 @@ Static cards can be photographed and reprinted. An **e-ink courier badge** with 
 
 ## Competition vs. In-App Notifications
 
-| Feature | OCR-to-Hash | App Notification (Amazon App) | Uniform / Physical Badge |
+| Feature | Live Verify | App Notification (Amazon App) | Uniform / Physical Badge |
 | :--- | :--- | :--- | :--- |
 | **Integrity** | **Cryptographic.** Binds face to duty status. | **High.** Direct from server. | **Low.** Easily bought online. |
 | **Accessibility** | **Universal.** Doormen can verify without an app. | **Closed Loop.** Only the *recipient* sees the alert. | **Visual.** Trusted only via logo. |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Company. | **System-Bound.** | **Zero.** Easily faked. |
 | **Field Access** | **Instant.** 5-second scan. | **Zero.** Doorman cannot see the customer's phone. | **Instant.** |
 
-**Why OCR wins here:** The "Doorman Dilemma." In a large apartment building, the doorman doesn't know which of the 500 residents ordered an Amazon package. They cannot see the resident's private app notification. OCR-to-hash turns the **Driver's Badge** into a public-facing trust bridge, allowing the doorman to verify the driver independently.
+**Why Live Verify wins here:** The "Doorman Dilemma." In a large apartment building, the doorman doesn't know which of the 500 residents ordered an Amazon package. They cannot see the resident's private app notification. Live Verify turns the **Driver's Badge** into a public-facing trust bridge, allowing the doorman to verify the driver independently.
 
 ## Related E-Ink Scenarios
 

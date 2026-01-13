@@ -85,7 +85,7 @@ The **Firm's Treasury / Compliance Dept** benefits from verification.
 **Credit Limit Setting:** Automatically monitoring the verified capital hashes of all 50 partner banks in a trading network. If a partner's hash returns **"BREACH ALERT,"** the system can instantly freeze their credit lines to prevent systemic contagion.
 
 **Regulatory Auditors**
-**Integrity Audit:** During a routine exam, the regulator scans the attestations provided to clients. OCR-to-hash ensures the bank isn't "Providing higher ratios to clients" than they are "Reporting to the Regulator."
+**Integrity Audit:** During a routine exam, the regulator scans the attestations provided to clients. Live Verify ensures the bank isn't "Providing higher ratios to clients" than they are "Reporting to the Regulator."
 
 **Corporate Clients**
 **Custody Vetting:** Before depositing $500M in a custody account, a corporate treasurer verifies the bank's capital adequacy hash to ensure the funds are being held by a stable, well-capitalized institution.

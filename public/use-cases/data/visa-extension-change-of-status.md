@@ -65,7 +65,7 @@ The **Employee (Beneficiary)** benefits from verification.
 ## Third-Party Use
 
 **Employers / HR Managers**
-**Zero-Trust Vetting:** Thousands of fake I-797s are sold globally every year. OCR-to-hash connects the manager directly to the USCIS record in seconds, stopping "Status Hiding" where a terminated employee tries to get a new job using an edited notice.
+**Zero-Trust Vetting:** Thousands of fake I-797s are sold globally every year. Live Verify connects the manager directly to the USCIS record in seconds, stopping "Status Hiding" where a terminated employee tries to get a new job using an edited notice.
 
 **Landlords / Leasing Agents**
 **Eligibility Check:** Verifying that a non-citizen applicant has the verified legal status to remain in the US for the duration of a 12-month lease.

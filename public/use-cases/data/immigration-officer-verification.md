@@ -121,11 +121,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Calling the Field Office
 
-| Feature | OCR-to-Hash | Calling the Field Office | Visual Inspection (Logo) |
+| Feature | Live Verify | Calling the Field Office | Visual Inspection (Logo) |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to `dhs.gov`. | **Human.** Relies on a dispatcher answering honestly. | **Zero.** Uniforms are easily faked. |
 | **Integrity** | **Cryptographic.** Binds face to status. | **Vague.** "Yes, we have an Agent Miller." | **None.** |
 | **Speed** | **Instant.** 5-second scan. | **Slow.** Often takes 10-20 minutes to reach duty officer. | **Instant.** |
 | **Freshness** | **Real-time.** Shows if suspended *today*. | **N/A.** Dispatchers may not see HR records. | **N/A.** |
 
-**Why OCR wins here:** The "Threshold Moment." Decisions about admitting officers happen at the door under extreme stress. Residents don't want to engage in a long conversation or a phone call while an "Official" is pounding on the door. OCR-to-hash turn the **ID Badge** into a live, non-confrontational safety tool that provides instant, high-authority trust.
+**Why Live Verify wins here:** The "Threshold Moment." Decisions about admitting officers happen at the door under extreme stress. Residents don't want to engage in a long conversation or a phone call while an "Official" is pounding on the door. Live Verify turn the **ID Badge** into a live, non-confrontational safety tool that provides instant, high-authority trust.

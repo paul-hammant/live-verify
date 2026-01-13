@@ -69,7 +69,7 @@ The **Patient** benefits from verification.
 ## Third-Party Use
 
 **HSA / FSA Administrators**
-**Automated Approval:** Instantly verifying the "Patient Responsibility" amount from a PDF upload. OCR-to-hash allows the administrator to skip the manual "Document Review" queue, releasing funds to the worker in seconds.
+**Automated Approval:** Instantly verifying the "Patient Responsibility" amount from a PDF upload. Live Verify allows the administrator to skip the manual "Document Review" queue, releasing funds to the worker in seconds.
 
 **Secondary Insurers (COB)**
 **Coordination of Benefits:** Verifying exactly how much the primary insurer paid before calculating the secondary payment, stopping "Double-Dipping" fraud.
@@ -119,11 +119,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Insurance Portals
 
-| Feature | OCR-to-Hash | Insurer Mobile App | Scanned PDF / Paper |
+| Feature | Live Verify | Insurer Mobile App | Scanned PDF / Paper |
 | :--- | :--- | :--- | :--- |
 | **User Control** | **High.** Patient shares only the *Single Claim*. | **Low.** App access often reveals *full* medical history. | **Vulnerable.** |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Insurer. | **System-Bound.** | **Zero.** Easily forged. |
 | **Interoperability** | **Universal.** Works for any HSA provider. | **Siloed.** | **Universal.** |
 | **Speed** | **Instant.** 5-second scan. | **Slow.** Requires 2FA, login, and navigation. | **N/A.** |
 
-**Why OCR wins here:** Selective Privacy. A patient needs to prove a $70 debt to their HSA provider without exposing that the visit was for a sensitive condition or a high-cost medication. OCR-to-hash turns the **Static Statement** into a portable, private "Proof of Expense."
+**Why Live Verify wins here:** Selective Privacy. A patient needs to prove a $70 debt to their HSA provider without exposing that the visit was for a sensitive condition or a high-cost medication. Live Verify turns the **Static Statement** into a portable, private "Proof of Expense."

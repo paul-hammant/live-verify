@@ -126,11 +126,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. USDA Portals (Farmers.gov)
 
-| Feature | OCR-to-Hash | Farmers.gov Portal | Paper Eligibility Notice |
+| Feature | Live Verify | Farmers.gov Portal | Paper Eligibility Notice |
 | :--- | :--- | :--- | :--- |
 | **User Access** | **Open.** Any bank or landlord can verify. | **Restricted.** Requires secure USDA eAuthentication Level 2. | **Instant.** |
 | **Trust Anchor** | **Domain-Bound.** Bound to the USDA. | **Gov-Bound.** | **Zero.** Easily forged. |
 | **Integrity** | **Binds Content.** Protects the $ limit. | **Data-Only.** Doesn't protect the paper. | **Vulnerable.** |
 | **Hardware** | **Universal.** Any phone camera. | **Technical.** Requires laptop/dedicated app. | **Visual.** |
 
-**Why OCR wins here:** The "Ag-Hometown" reality. Local bank officers and farmers often work via paper and email. They don't have the time or technical "Federal Vetting" needed to log into the USDA's internal systems. OCR-to-hash turn the **Government Notice** into a live, high-speed trust bridge, allowing rural finance to move at the speed of the web.
+**Why Live Verify wins here:** The "Ag-Hometown" reality. Local bank officers and farmers often work via paper and email. They don't have the time or technical "Federal Vetting" needed to log into the USDA's internal systems. Live Verify turn the **Government Notice** into a live, high-speed trust bridge, allowing rural finance to move at the speed of the web.

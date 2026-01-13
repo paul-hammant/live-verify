@@ -116,11 +116,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Corporate Registries (Delaware SOS)
 
-| Feature | OCR-to-Hash | Secretary of State (SOS) | Virtual Data Room (VDR) |
+| Feature | Live Verify | Secretary of State (SOS) | Virtual Data Room (VDR) |
 | :--- | :--- | :--- | :--- |
 | **Granularity** | **High.** Verifies specific *resolutions*. | **Low.** SOS only tracks broad status (e.g., Good Standing). | **Full.** But requires gated access. |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Law Firm/Corp. | **Gov-Bound.** | **System-Bound.** Trust the VDR vendor. |
 | **Cost** | **Low.** Standard web infra. | **High.** SOS filings/searches cost fees. | **High.** VDRs cost thousands/month. |
 | **Interoperability** | **Universal.** PDFs stay verifiable anywhere. | **Siloed.** | **Restricted.** Access usually revoked post-deal. |
 
-**Why OCR wins here:** Specificity. A "Certificate of Good Standing" from Delaware only says the company exists. It doesn't say "The Board authorized the sale of the factory." OCR-to-hash turns the **Private Resolution** into a verifiable artifact that can be shared with banks and buyers without exposing the entire secret minute book.
+**Why Live Verify wins here:** Specificity. A "Certificate of Good Standing" from Delaware only says the company exists. It doesn't say "The Board authorized the sale of the factory." Live Verify turns the **Private Resolution** into a verifiable artifact that can be shared with banks and buyers without exposing the entire secret minute book.

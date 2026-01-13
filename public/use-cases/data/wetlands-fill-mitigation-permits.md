@@ -68,7 +68,7 @@ The **Developer / Construction Firm** benefits from verification.
 ## Third-Party Use
 
 **Environmental Regulators (EPA / USACE)**
-**Field Audit:** During a surprise site visit, the agent scans the placard. OCR-to-hash ensures the "Mitigation Receipt" in the file isn't a "Photoshopped" duplicate used for three different projects, stopping "Double-Counting" of conservation.
+**Field Audit:** During a surprise site visit, the agent scans the placard. Live Verify ensures the "Mitigation Receipt" in the file isn't a "Photoshopped" duplicate used for three different projects, stopping "Double-Counting" of conservation.
 
 **Municipal Building Inspectors**
 **Zoning Vetting:** Verifying that the building footprint approved by the city perfectly matches the "Fill Authorization" granted by the federal government, preventing "Jurisdictional Gaps."

@@ -70,7 +70,7 @@ The **Carrier Management** benefits from verification.
 ## Third-Party Use
 
 **Reinsurers**
-**Claims Verification:** Reinsurers often take weeks to audit "Bordereau" files manually. OCR-to-hash allows them to instantly verify the high-level totals against the carrier's domain, reducing the audit friction.
+**Claims Verification:** Reinsurers often take weeks to audit "Bordereau" files manually. Live Verify allows them to instantly verify the high-level totals against the carrier's domain, reducing the audit friction.
 
 **State Insurance Commissioners**
 **Market Stability:** Regulators can verify the "CAT Exposure" claims made by insurers in their state to ensure the companies remain solvent and have adequate reserves post-disaster.
@@ -127,11 +127,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Blockchain (RiskStream)
 
-| Feature | OCR-to-Hash | RiskStream / Corda | Scanned PDF Report |
+| Feature | Live Verify | RiskStream / Corda | Scanned PDF Report |
 | :--- | :--- | :--- | :--- |
 | **Interoperability** | **Universal.** Any reinsurer can verify. | **Siloed.** Both parties must be on the specific blockchain. | **Manual.** |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Carrier. | **Consensus-Bound.** Trust the network. | **Zero.** Easily forged. |
 | **Cost** | **Low.** Standard web infra. | **High.** Requires heavy enterprise blockchain nodes. | **None.** |
 | **Privacy** | **High.** Only the specific batch is shared. | **Medium.** Shared ledger metadata. | **Vulnerable.** |
 
-**Why OCR wins here:** The "Legacy Bridge." The insurance industry is moving toward blockchain (RiskStream), but 90% of the world still operates on PDF reports sent via email. OCR-to-hash provides **ledger-level integrity** for the existing PDF-based workflow, allowing carriers to modernize without replacing their entire tech stack.
+**Why Live Verify wins here:** The "Legacy Bridge." The insurance industry is moving toward blockchain (RiskStream), but 90% of the world still operates on PDF reports sent via email. Live Verify provides **ledger-level integrity** for the existing PDF-based workflow, allowing carriers to modernize without replacing their entire tech stack.

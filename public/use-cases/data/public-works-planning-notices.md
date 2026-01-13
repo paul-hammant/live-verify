@@ -14,7 +14,7 @@ Public works and planning notices are the "Community Alert System" for changes t
 
 The problem is that these notices are the most "Hackable" part of city government. A developer might "backdate" a notice to shorten the legal window for neighbors to file an appeal (a massive issue in jurisdictions like France). Similarly, people often use fake "No Parking - Utility Work" signs to illegally clear a street for personal use.
 
-OCR-to-hash allows a citizen or neighbor to scan the notice from the sidewalk to verify: **"Is this notice authentic, what are the exact legal deadlines for appeal, and is this work actually authorized by the city?"**
+Live Verify allows a citizen or neighbor to scan the notice from the sidewalk to verify: **"Is this notice authentic, what are the exact legal deadlines for appeal, and is this work actually authorized by the city?"**
 
 <div style="max-width: 500px; margin: 24px auto; font-family: 'Helvetica Neue', Arial, sans-serif; border: 4px solid #ffcc00; background: #fffbe6; padding: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 15px; margin-bottom: 20px;">
@@ -81,7 +81,7 @@ The **Developer / Applicant** benefits from verification.
 **Rights Enforcement:** A neighbor can scan the notice to ensure the "End Date" on the paper hasn't been "scrubbed" to hide a hearing. Verification ensures they have the full legal time to organize their community and hire a lawyer.
 
 **City Planners / Auditors**
-**Field Integrity:** Instead of relying on a developer's word, a city auditor can drive through a neighborhood and scan notices. OCR-to-hash ensures that the "Public Notice" isn't being hidden in a bush or placed in an un-readable location.
+**Field Integrity:** Instead of relying on a developer's word, a city auditor can drive through a neighborhood and scan notices. Live Verify ensures that the "Public Notice" isn't being hidden in a bush or placed in an un-readable location.
 
 **Real Estate Agents**
 **Disclosure Intelligence:** A buyer's agent can scan the notices in a neighborhood they are showing to identify upcoming construction projects that might impact the views or noise levels of a target property.

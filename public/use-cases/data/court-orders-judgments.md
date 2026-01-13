@@ -20,7 +20,7 @@ It is used for life-altering events:
 
 **"Judgment Fraud"** is a high-stakes crime. Fraudsters edit "Final Judgments" to change dollar amounts from $5,000 to $50,000, or they create fake "Eviction Orders" to illegally remove tenants. In some cases, criminals forge "Name Change" orders to steal identities.
 
-OCR-to-hash binds the **Judge's name, the Case ID, and the exact verdict text** to the court's official domain. A bank or a police officer can instantly verify that the paper order they are holding matches the **final, un-altered ruling** in the clerk's database.
+Live Verify binds the **Judge's name, the Case ID, and the exact verdict text** to the court's official domain. A bank or a police officer can instantly verify that the paper order they are holding matches the **final, un-altered ruling** in the clerk's database.
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 1px solid #333; background: #fff; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="text-align: center; margin-bottom: 30px;">
@@ -150,11 +150,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. PACER / Online Dockets
 
-| Feature | OCR-to-Hash | PACER (Federal) | Paper with Seal |
+| Feature | Live Verify | PACER (Federal) | Paper with Seal |
 | :--- | :--- | :--- | :--- |
 | **Field Speed** | **Instant.** 5-second scan. | **Slow.** Requires login, case search, and per-page fees ($). | **Instant.** |
 | **Integrity** | **High.** Binds text to status. | **High.** Direct DB access. | **Zero.** Easily forged. |
 | **Accessibility** | **Open.** Scannable by anyone with the paper. | **Closed.** Requires account and professional knowledge. | **Open.** |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Court. | **System-Bound.** | **The Paper.** |
 
-**Why OCR wins here:** The "Front Line" reality. Police officers, bank tellers, and landlords don't have time to log into complex court dockets and pay $0.10 per page to check a case. OCR-to-hash turns the **Judge's Order** into a live digital checkpoint, ensuring that "The Voice of the Court" is heard and verified at the exact point of enforcement.
+**Why Live Verify wins here:** The "Front Line" reality. Police officers, bank tellers, and landlords don't have time to log into complex court dockets and pay $0.10 per page to check a case. Live Verify turns the **Judge's Order** into a live digital checkpoint, ensuring that "The Voice of the Court" is heard and verified at the exact point of enforcement.

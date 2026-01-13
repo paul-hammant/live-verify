@@ -133,10 +133,10 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Public Search (Attorney Search)
 
-| Feature | OCR-to-Hash | Public Attorney Search | Paper Certificate |
+| Feature | Live Verify | Public Attorney Search | Paper Certificate |
 | :--- | :--- | :--- | :--- |
 | **Integrity** | **Binds Date.** Proves standing *as of the letter date*. | **Live.** Shows standing *today*. | **Static.** Easily faked. |
 | **Efficiency** | **Instant.** Scan the paper in the courtroom. | **Slow.** Type in name, navigate results, find the right "John Smith." | **Manual.** Compare seals. |
 | **Trust** | **Domain-Bound.** Bound to `nycourts.gov`. | **High.** But prone to "Similar Name" errors. | **Medium.** |
 
-**Why OCR wins here:** Specificity. Public searches for common names (e.g., "Robert Smith") can return 50 results. OCR-to-hash binds the verification to the **specific physical document** the lawyer is holding, eliminating the "wrong person" risk and the need for manual data entry in busy courtrooms.
+**Why Live Verify wins here:** Specificity. Public searches for common names (e.g., "Robert Smith") can return 50 results. Live Verify binds the verification to the **specific physical document** the lawyer is holding, eliminating the "wrong person" risk and the need for manual data entry in busy courtrooms.

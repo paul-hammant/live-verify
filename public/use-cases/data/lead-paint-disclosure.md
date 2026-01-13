@@ -119,11 +119,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Disclosure Portals
 
-| Feature | OCR-to-Hash | Disclosure Portal | Scanned PDF / Paper |
+| Feature | Live Verify | Disclosure Portal | Scanned PDF / Paper |
 | :--- | :--- | :--- | :--- |
 | **Integrity** | **Cryptographic.** Protects the check-boxes. | **Data-Only.** | **Zero.** Easily forged. |
 | **Persistence** | **High.** Remains verifiable for decades. | **Low.** Portals often purge data after 3 years. | **Vulnerable.** |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Gov/Title Co. | **System-Bound.** Trust the vendor. | **Visual.** |
 | **Speed** | **Instant.** 5-second scan. | **Slow.** Requires paying a fee or finding a login. | **Instant.** |
 
-**Why OCR wins here:** The "Permanent Liability" problem. Lead paint liability lasts for decades. A tenant might sue in 2035 for a disclosure made in 2025. OCR-to-hash turns the **Static Paper Disclosure** into an immutable digital anchor that survives the death of property management portals and the loss of physical filing cabinets.
+**Why Live Verify wins here:** The "Permanent Liability" problem. Lead paint liability lasts for decades. A tenant might sue in 2035 for a disclosure made in 2025. Live Verify turns the **Static Paper Disclosure** into an immutable digital anchor that survives the death of property management portals and the loss of physical filing cabinets.

@@ -78,7 +78,7 @@ The **Plan Trustees / CFO** benefits from verification.
 **Security Audit:** A union representative scans the valuation summary posted in the breakroom. Verification ensures the version they were given is the *exact* same text the professional actuary signed, protecting the workers' future retirement.
 
 **Pension Benefit Guaranty Corp (PBGC / Regulators)**
-**Compliance Audit:** Verifying that thousands of private-sector plans are accurately reporting their liabilities. OCR-to-hash ensures that the "Paper Filings" in the PBGC office haven't been "Edited" to hide a funding gap.
+**Compliance Audit:** Verifying that thousands of private-sector plans are accurately reporting their liabilities. Live Verify ensures that the "Paper Filings" in the PBGC office haven't been "Edited" to hide a funding gap.
 
 **Municipal Bond Investors**
 **Risk Due Diligence:** Before buying a city's bonds, an investor scans the verified pension hashes. This ensure the "Off-Balance-Sheet Liability" of the pension fund is an authentic fact, protecting the investor from a "Hidden Default."

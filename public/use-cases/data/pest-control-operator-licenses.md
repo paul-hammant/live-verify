@@ -12,7 +12,7 @@ furtherDerivations: 1
 
 If you hire someone to spray chemicals in your kitchen or drill into your foundation for termites, they must be a **Licensed Pest Control Operator (PCO)**. This license is the proof that the technician has been trained in the safe use of toxic pesticides, is background-checked to enter private homes, and is covered by mandatory liability insurance.
 
-The problem is that "Pest Control" is a high-trust, high-risk profession. Criminals pose as "inspectors" to gain entry for burglary, or unlicensed workers use "homemade" poisons that can kill pets or sicken families. Physical badges are easily forged with a home printer. OCR-to-hash allows a resident or restaurant manager to scan the technician's ID to verify: **"Is this person currently licensed by the state, and are they authorized for the specific chemicals they are using?"**
+The problem is that "Pest Control" is a high-trust, high-risk profession. Criminals pose as "inspectors" to gain entry for burglary, or unlicensed workers use "homemade" poisons that can kill pets or sicken families. Physical badges are easily forged with a home printer. Live Verify allows a resident or restaurant manager to scan the technician's ID to verify: **"Is this person currently licensed by the state, and are they authorized for the specific chemicals they are using?"**
 
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #004d40; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
   <div style="background: #004d40; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">

@@ -111,13 +111,13 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Central Databases (CARFAX)
 
-| Feature | OCR-to-Hash | CARFAX / Autocheck | Paper Estimate |
+| Feature | Live Verify | CARFAX / Autocheck | Paper Estimate |
 | :--- | :--- | :--- | :--- |
 | **Granularity** | **High.** Shows line-item parts/labor. | **Low.** Often just says "Accident Reported - Damage to Front." | **High.** But untrusted. |
 | **Speed** | **Real-time.** Available as soon as the adjuster hits "save." | **Laggy.** Can take weeks or months for claims to appear in CARFAX. | **Instant.** |
 | **Trust** | **Cryptographic.** Bound to the Insurer's domain. | **Reporting-Based.** Relies on data feeds which can be incomplete. | **Zero.** Easily forged. |
 
-**Why OCR wins here:** Detail. CARFAX is great for "Did it have a crash?" but terrible for "What exactly was fixed?" OCR-to-hash allows a buyer or bank to see the **exact scope** of the repair, verified by the source of truth (the insurer who paid for it).
+**Why Live Verify wins here:** Detail. CARFAX is great for "Did it have a crash?" but terrible for "What exactly was fixed?" Live Verify allows a buyer or bank to see the **exact scope** of the repair, verified by the source of truth (the insurer who paid for it).
 
 
 ---
@@ -251,13 +251,13 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. DMV Databases (ALIR/IIVS)
 
-| Feature | OCR-to-Hash | DMV Central DB (IIVS) | Paper Card |
+| Feature | Live Verify | DMV Central DB (IIVS) | Paper Card |
 | :--- | :--- | :--- | :--- |
 | **Freshness** | **Real-time.** Queries the insurer directly. | **Laggy.** Often 24-72 hours behind. | **Static.** |
 | **Availability** | **Universal.** Works across state lines. | **Siloed.** CA police can't easily check NY DMV database. | **Manual.** |
 | **Accessibility** | **Open.** Dealers and Rental agents can verify. | **Restricted.** Only Police/DMV have access. | **Zero.** |
 
-**Why OCR wins here:** Portability. If a New York driver is pulled over in Florida, the Florida officer might not have access to the NY DMV's internal database. But they can *always* verify `geico.com` via the web. OCR-to-hash turns the ID card into a cross-border, real-time "Coverage Token."
+**Why Live Verify wins here:** Portability. If a New York driver is pulled over in Florida, the Florida officer might not have access to the NY DMV's internal database. But they can *always* verify `geico.com` via the web. Live Verify turns the ID card into a cross-border, real-time "Coverage Token."
 
 
 ---
@@ -364,14 +364,14 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. ACORD Certificates
 
-| Feature | OCR-to-Hash | ACORD 25 (Standard) |
+| Feature | Live Verify | ACORD 25 (Standard) |
 | :--- | :--- | :--- |
 | **Trust** | **Cryptographic.** Bound to insurer. | **Visual.** Prone to easy editing. |
 | **Speed** | **Instant.** Scan and verify. | **Slow.** Requires calling the broker. |
 | **Integrity** | **Binds Content.** | **Binds Nothing.** Just a template. |
 
-**Why OCR wins here:**
-The Dec Page is the source of truth. ACORD forms are just summaries written by brokers. OCR-to-hash allows the **Source Document** to be verified directly against the **Carrier**, cutting out the middleman and the potential for "Summary Errors."
+**Why Live Verify wins here:**
+The Dec Page is the source of truth. ACORD forms are just summaries written by brokers. Live Verify allows the **Source Document** to be verified directly against the **Carrier**, cutting out the middleman and the potential for "Summary Errors."
 
 
 
@@ -506,10 +506,10 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Central Portals
 
-| Feature | OCR-to-Hash | SuperDispatch / Carrier Portal | Paper Carbon Copy |
+| Feature | Live Verify | SuperDispatch / Carrier Portal | Paper Carbon Copy |
 | :--- | :--- | :--- | :--- |
 | **Field Access** | **Universal.** Scan the paper/tablet. | **Restricted.** Requires app login usually for drivers only. | **Instant.** |
 | **Integrity** | **Cryptographic.** Binds the origin state. | **Database-Bound.** Relies on the portal not being "corrected" later. | **Zero.** Easily forged. |
 | **Sharing** | **Easy.** Share the PDF/Link with any insurer. | **Hard.** Requires "Exporting" reports or giving portal access. | **Manual.** |
 
-**Why OCR wins here:** The "Handoff Moment." Inspections happen in driveways and parking lots. The customer needs a trusted snapshot of the car's state *right now*. OCR-to-hash turns that paper/digital sign-off into an immutable anchor that prevents "After-the-fact" editing of damage records.
+**Why Live Verify wins here:** The "Handoff Moment." Inspections happen in driveways and parking lots. The customer needs a trusted snapshot of the car's state *right now*. Live Verify turns that paper/digital sign-off into an immutable anchor that prevents "After-the-fact" editing of damage records.

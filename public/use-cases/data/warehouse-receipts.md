@@ -77,7 +77,7 @@ Commodity traders benefit from instant credibility.
 **Trade Finance Banks**
 *The $100 Million Risk*
 Banks lend massive sums against commodities inventory.
-*   **Preventing Double Financing:** A fraudster might take one receipt for 100 tonnes of coffee and show it to Bank A and Bank B to get two loans. With OCR-to-hash, if Bank A registers a "Pledge" on the hash, Bank B scans the document and sees **"Status: PLEDGED to [Bank A]"**.
+*   **Preventing Double Financing:** A fraudster might take one receipt for 100 tonnes of coffee and show it to Bank A and Bank B to get two loans. With Live Verify, if Bank A registers a "Pledge" on the hash, Bank B scans the document and sees **"Status: PLEDGED to [Bank A]"**.
 *   **The "Fresh Air" Scam:** Fraudsters create PDF receipts for metal that doesn't exist. Verification checks the hash against the *Warehouse's* database. If the warehouse didn't issue it, the hash returns 404.
 
 **Warehouse Operators**
@@ -96,7 +96,7 @@ Banks lend massive sums against commodities inventory.
 
 **The "Painted Rocks" Fraud Problem**
 Recent high-profile frauds (e.g., the Trafigura nickel case) involved receipts for containers that held painted stones instead of nickel.
-*   **Limitations:** OCR-to-hash verifies the *document* is authentic to the warehouse. It does not verify the *warehouse* isn't lying or incompetent.
+*   **Limitations:** Live Verify verifies the *document* is authentic to the warehouse. It does not verify the *warehouse* isn't lying or incompetent.
 *   **The Fix:** However, it *does* prevent **Documentary Fraud** (altering a genuine receipt to show higher weights) and **Impersonation** (creating a receipt from a fake warehouse).
 *   **Domain Binding:** The `verify:` URL binds the receipt to `metro-logistics.com`. A fraudster cannot generate a valid hash for that domain without hacking the warehouse's database.
 
@@ -115,7 +115,7 @@ Commodities change (shrinkage, humidity loss).
     *   *Verification says:* "Valid. Current Weight: 998kg (evaporation loss recorded 12-Nov)."
 
 **UCC-7 and Electronic Documents**
-In the US, UCC Article 7 governs warehouse receipts. An OCR-to-hash system helps satisfy the requirement for "control" of an electronic document of title by providing a singular, verifiable authoritative record hosted by the issuer.
+In the US, UCC Article 7 governs warehouse receipts. An Live Verify system helps satisfy the requirement for "control" of an electronic document of title by providing a singular, verifiable authoritative record hosted by the issuer.
 
 ---
 
@@ -185,7 +185,7 @@ The **Inventory Owner (Depositor)** benefits from verification.
 **Double-Financing Prevention:** Before lending against a warehouse receipt, the bank scans the hash. If it returns **"PLEDGED TO JPMORGAN,"** the second bank knows the asset is already used as collateral and can deny the fraudulent loan application.
 
 **External Audit Firms**
-**Physical Verification:** During a year-end audit, the accountant scans a random sample of warehouse receipts. OCR-to-hash ensures the company isn't "Padding" its balance sheet with phantom inventory that doesn't exist in the warehouse's digital system.
+**Physical Verification:** During a year-end audit, the accountant scans a random sample of warehouse receipts. Live Verify ensures the company isn't "Padding" its balance sheet with phantom inventory that doesn't exist in the warehouse's digital system.
 
 **Customs and Tax Authorities**
 **Bonded Inventory Audit:** Verifying that "Duty-Unpaid" goods in a bonded warehouse haven't been illegally moved into the local market.

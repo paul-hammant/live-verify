@@ -140,11 +140,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. QR/Holograms
 
-| Feature | OCR-to-Hash | Holographic Seal | QR Code |
+| Feature | Live Verify | Holographic Seal | QR Code |
 | :--- | :--- | :--- | :--- |
 | **Revocation** | **Instant.** Shows "REVOKED" today. | **Zero.** The seal is permanent. | **Variable.** Just a link. |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Lawyer. | **Physical.** Trust the sticker. | **Low.** Easily phished. |
 | **Readability** | **High.** Full text is protected. | **None.** Seals don't protect text. | **None.** |
 | **Privacy** | **High.** Hash protects details. | **Low.** Anyone can see the seal. | **Variable.** |
 
-**Why OCR wins here:** The "Saturday Morning" reality. Banks are open when law offices are closed. A teller needs to know *right now* if a document is authentic. OCR-to-hash turns the **Lawyer's Letterhead** into a live, high-authority trust anchor, stopping elder abuse and fraud at the teller window.
+**Why Live Verify wins here:** The "Saturday Morning" reality. Banks are open when law offices are closed. A teller needs to know *right now* if a document is authentic. Live Verify turns the **Lawyer's Letterhead** into a live, high-authority trust anchor, stopping elder abuse and fraud at the teller window.

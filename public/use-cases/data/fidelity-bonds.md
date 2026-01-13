@@ -129,11 +129,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Broker Letters
 
-| Feature | OCR-to-Hash | Manual Broker Letter | Scanned PDF |
+| Feature | Live Verify | Manual Broker Letter | Scanned PDF |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Carrier. | **Human.** Prone to social engineering or typos. | **Zero.** Easily forged. |
 | **Speed** | **Instant.** 5-second scan. | **Slow.** Takes 2-3 business days. | **Instant.** |
 | **Availability** | **24/7.** Works during after-hours bidding. | **Business Hours Only.** | **Universal.** |
 | **Integrity** | **Cryptographic.** Binds the $ limit. | **Vague.** "They are bonded." | **Vulnerable.** |
 
-**Why OCR wins here:** The "RFP Deadline" reality. Bids for big contracts are often submitted at midnight. A procurement officer needs to verify 50 vendors at once. OCR-to-hash turns the **Physical Bond Certificate** into a live digital anchor, ensuring that only legitimately protected firms are allowed into high-security supply chains.
+**Why Live Verify wins here:** The "RFP Deadline" reality. Bids for big contracts are often submitted at midnight. A procurement officer needs to verify 50 vendors at once. Live Verify turns the **Physical Bond Certificate** into a live digital anchor, ensuring that only legitimately protected firms are allowed into high-security supply chains.

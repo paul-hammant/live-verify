@@ -78,7 +78,7 @@ The **Plan Sponsor (Employer)** benefits from verification.
 ## Third-Party Use
 
 **Department of Labor (EBSA)**
-**Enforcement:** Regulators can verify the authenticity of Form 5500 attachments across millions of plans. OCR-to-hash prevents "Opinion Shopping" where a company hides a "Qualified" audit and submits a "Fake Unqualified" one.
+**Enforcement:** Regulators can verify the authenticity of Form 5500 attachments across millions of plans. Live Verify prevents "Opinion Shopping" where a company hides a "Qualified" audit and submits a "Fake Unqualified" one.
 
 **Investment Fiduciaries**
 **Risk Monitoring:** Verifying the funding status of pension plans before making large-scale investment or acquisition decisions.
@@ -126,11 +126,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Form 5500 Public Search (EFAST2)
 
-| Feature | OCR-to-Hash | EFAST2 Search (DOL) | Scanned PDF |
+| Feature | Live Verify | EFAST2 Search (DOL) | Scanned PDF |
 | :--- | :--- | :--- | :--- |
 | **Integrity** | **Binds the Text.** Protects the numbers. | **Data-Only.** Doesn't verify the actual paper doc. | **Zero.** Easily forged. |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Auditor. | **Gov-Bound.** | **Visual.** |
 | **Speed** | **Instant.** Scan the paper at the board meeting. | **Slow.** Requires finding the EIN and downloading 50MB PDFs. | **Instant.** |
 | **Freshness** | **Real-time.** Shows if firm retracted opinion. | **Laggy.** Depends on annual filing cycles. | **Static.** |
 
-**Why OCR wins here:** The "Audit Gap." Federal databases only know what was *filed*. If a company files a fake document, the database is wrong. OCR-to-hash links the verifier back to the **Auditor's Record**, ensuring the data matches the professional's actual findings, not just the company's filing.
+**Why Live Verify wins here:** The "Audit Gap." Federal databases only know what was *filed*. If a company files a fake document, the database is wrong. Live Verify links the verifier back to the **Auditor's Record**, ensuring the data matches the professional's actual findings, not just the company's filing.

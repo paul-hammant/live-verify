@@ -12,7 +12,7 @@ furtherDerivations: 1
 
 On Election Day, the integrity of the vote depends on thousands of temporary workers. A **Poll Worker Appointment Card** is the document that authorizes a citizen to handle ballots, verify voter IDs, and manage the voting machines. In many jurisdictions, workers must also complete mandatory **Election Law Training** before they are allowed on-site.
 
-This is a critical security frontier. Fraudsters or partisan actors might attempt to "impersonate" a poll worker to gain access to voting machines or to intimidate voters. Similarly, a person who failed their training might try to "edit" their certificate to get assigned to a high-stakes precinct. OCR-to-hash allows an election supervisor or observer to scan the worker's badge to verify: **"Is this person a vetted, trained, and authorized official for this specific precinct today?"**
+This is a critical security frontier. Fraudsters or partisan actors might attempt to "impersonate" a poll worker to gain access to voting machines or to intimidate voters. Similarly, a person who failed their training might try to "edit" their certificate to get assigned to a high-stakes precinct. Live Verify allows an election supervisor or observer to scan the worker's badge to verify: **"Is this person a vetted, trained, and authorized official for this specific precinct today?"**
 
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 3px solid #000; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
   <div style="background: #b71c1c; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">

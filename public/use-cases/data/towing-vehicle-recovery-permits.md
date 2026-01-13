@@ -12,7 +12,7 @@ furtherDerivations: 1
 
 In the urban environment, **Towing Permits** are the "Authorization to Seize" private property. From the **Tow Truck Operator Badge** to the **Municipal Rotation Card**, these documents prove that a driver is legally licensed, insured, and background-checked to tow vehicles on behalf of the city or a private property owner.
 
-This industry is a primary target for "Bandit Towers"—unlicensed operators who roam streets to illegally tow cars and then demand hundreds of dollars in "Cash-Only" recovery fees. Fraud is high-stakes: criminals often use fake city badges to trick drivers into thinking their car was legally "impounded" for a violation. OCR-to-hash allows a vehicle owner or police officer to scan the operator's ID or the truck's permit to verify: **"Is this company currently authorized to tow in this city, and are they on the official police rotation list?"**
+This industry is a primary target for "Bandit Towers"—unlicensed operators who roam streets to illegally tow cars and then demand hundreds of dollars in "Cash-Only" recovery fees. Fraud is high-stakes: criminals often use fake city badges to trick drivers into thinking their car was legally "impounded" for a violation. Live Verify allows a vehicle owner or police officer to scan the operator's ID or the truck's permit to verify: **"Is this company currently authorized to tow in this city, and are they on the official police rotation list?"**
 
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 3px solid #333; border-radius: 10px; background: #fff; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
   <div style="background: #333; color: #fff; padding: 15px; display: flex; align-items: center; border-bottom: 2px solid #000;">

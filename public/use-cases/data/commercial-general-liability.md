@@ -126,11 +126,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Broker Confirmation Calls
 
-| Feature | OCR-to-Hash | Manual Broker Call | Scanned PDF |
+| Feature | Live Verify | Manual Broker Call | Scanned PDF |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Carrier. | **Human.** Relies on the broker's assistant answering honestly. | **Zero.** Easily forged. |
 | **Speed** | **Instant.** 5-second scan. | **Slow.** Often takes 24-48 hours for a return call. | **Instant.** |
 | **Availability** | **24/7.** Works on weekends/holidays. | **Business Hours Only.** | **Universal.** |
 | **Integrity** | **Cryptographic.** Binds every digit. | **Vague.** "Yes, they have a policy." | **Vulnerable.** |
 
-**Why OCR wins here:** The "Site Entrance" reality. A subcontractor arrives at a job-site on a Saturday morning. The GC's office is closed. The Sub's broker is closed. OCR-to-hash allows the site foreman to verify the Sub's insurance **on the spot**, allowing work to proceed safely and legally without delays.
+**Why Live Verify wins here:** The "Site Entrance" reality. A subcontractor arrives at a job-site on a Saturday morning. The GC's office is closed. The Sub's broker is closed. Live Verify allows the site foreman to verify the Sub's insurance **on the spot**, allowing work to proceed safely and legally without delays.

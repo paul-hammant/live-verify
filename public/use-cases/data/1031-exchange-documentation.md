@@ -150,11 +150,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. QR/NFC
 
-| Feature | OCR-to-Hash | QR Code |
+| Feature | Live Verify | QR Code |
 | :--- | :--- | :--- |
 | **Audit Trail** | **Superior.** The paper document itself is the artifact. The hash proves the *content* of the paper existed at the timestamp. | **Weak.** QR codes are often just links. They don't inherently prove the *text* surrounding them hasn't changed unless the QR contains the full text (too large). |
 | **Professionalism** | **High.** A discreet `verify:` line at the bottom of a legal letter looks standard. | **Low.** A giant QR code on a formal legal designation letter looks out of place. |
 | **Longevity** | **High.** Text is durable. | **Medium.** QR codes can be damaged by folding, stapling, or scanning/copying degradation. |
 | **Privacy** | **High.** No data leaked until the specific hash is queried. | **Variable.** If the QR encodes the data, anyone with a camera can read it instantly without an audit trail. |
 
-**Why OCR wins here:** 1031 documents are heavily scrutinized legal instruments. They need to look like contracts, not shipping labels. The primary "user" is often an IRS auditor years later, working from a scanned PDF or photocopy where a QR code might be illegible, but text is readable and re-typable if needed.
+**Why Live Verify wins here:** 1031 documents are heavily scrutinized legal instruments. They need to look like contracts, not shipping labels. The primary "user" is often an IRS auditor years later, working from a scanned PDF or photocopy where a QR code might be illegible, but text is readable and re-typable if needed.

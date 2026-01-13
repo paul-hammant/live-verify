@@ -70,7 +70,7 @@ The **Test Taker** (second party) receives the score report from the testing org
 The test taker (second party) may hand the verified document to various third parties:
 
 **University Registrars**
-**Instant Vetting:** Admissions officers can instantly verify the scores of 1,000+ international applicants. OCR-to-hash allows the university to skip the manual "Verification Code" login process for every single PDF, clearing the backlog in seconds.
+**Instant Vetting:** Admissions officers can instantly verify the scores of 1,000+ international applicants. Live Verify allows the university to skip the manual "Verification Code" login process for every single PDF, clearing the backlog in seconds.
 
 **Employers (Global Teams)**
 **Capability Proof:** Verifying the language claims of remote workers or expats before issuing contracts for client-facing roles.
@@ -119,11 +119,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Official Score Reports (Electronic)
 
-| Feature | OCR-to-Hash | Official Electronic Report | Scanned PDF / Paper |
+| Feature | Live Verify | Official Electronic Report | Scanned PDF / Paper |
 | :--- | :--- | :--- | :--- |
 | **User Control** | **High.** Student shares only the *Verified PDF*. | **Low.** Testing body sends data directly to the school. | **High.** |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Test Body (ETS). | **System-Bound.** | **Zero.** Easily forged. |
 | **Speed** | **Instant.** 5-second scan. | **Slow.** Takes 3-7 days to "Send" and "Receive." | **Instant.** |
 | **Cost** | **Low.** Standard web infra. | **Medium.** Fees of $20+ per report are standard. | **None.** |
 
-**Why OCR wins here:** The "Application Window" reality. Students are often applying to 10+ schools at once. Paying $200 in "Score Reporting Fees" is a massive burden. OCR-to-hash turns the **One-Time Score Report** into a "Portable Trust Asset" that can be verified by any university for free, saving students money and schools time.
+**Why Live Verify wins here:** The "Application Window" reality. Students are often applying to 10+ schools at once. Paying $200 in "Score Reporting Fees" is a massive burden. Live Verify turns the **One-Time Score Report** into a "Portable Trust Asset" that can be verified by any university for free, saving students money and schools time.

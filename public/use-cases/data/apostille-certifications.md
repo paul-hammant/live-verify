@@ -129,10 +129,10 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. e-Apostille (Registry)
 
-| Feature | OCR-to-Hash | e-Apostille Registry | Wet Ink / Embossed |
+| Feature | Live Verify | e-Apostille Registry | Wet Ink / Embossed |
 | :--- | :--- | :--- | :--- |
 | **User Experience** | **Seamless.** Scan the paper you are holding. | **Difficult.** Must find the state website, type in the 12-digit ID, solve CAPTCHAs. | **Manual.** Compare seals to pictures in a book. |
 | **Trust Anchor** | **Domain-Bound.** `dos.ny.gov` is the source of truth. | **Centralized.** Only works if the specific registry is known. | **Visual.** Easily fooled by high-quality copies. |
 | **Offline Check** | **Medium.** Hash protects the printed text integrity. | **None.** Requires live DB access. | **Strong.** Physical security features (ribbons, grommets). |
 
-**Why OCR wins here:** International law is slow. The "Hague Convention" relies on paper certificates attached with ribbons or staples. OCR-to-hash bridges this ancient physical process to the modern web, allowing a clerk in a small village in Italy to verify a document from California in seconds, using only their phone.
+**Why Live Verify wins here:** International law is slow. The "Hague Convention" relies on paper certificates attached with ribbons or staples. Live Verify bridges this ancient physical process to the modern web, allowing a clerk in a small village in Italy to verify a document from California in seconds, using only their phone.

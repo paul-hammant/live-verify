@@ -71,7 +71,7 @@ The **Animal Owner / Shipper** benefits from verification.
 ## Third-Party Use
 
 **Roadside Ag-Inspectors (CBP / State Troopers)**
-**Disease Control:** Instantly verifying the health status of animals at the border. OCR-to-hash allows the officer to focus on trucks with unverified or "Forged" paper, stopping outbreaks of Foot-and-Mouth or Avian Flu before they spread.
+**Disease Control:** Instantly verifying the health status of animals at the border. Live Verify allows the officer to focus on trucks with unverified or "Forged" paper, stopping outbreaks of Foot-and-Mouth or Avian Flu before they spread.
 
 **Equine / Bovine Buyers**
 **Due Diligence:** Verifying the "Soundness" and "Lineage" of an animal before wiring $100,000+.
@@ -122,11 +122,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Electronic CVI (GlobalVetLink)
 
-| Feature | OCR-to-Hash | eCVI Platforms (GVL) | Paper CVI Form |
+| Feature | Live Verify | eCVI Platforms (GVL) | Paper CVI Form |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the State Vet. | **System-Bound.** Trust the vendor. | **Zero.** Easily forged. |
 | **Field Access** | **Instant.** Scan the paper at the border. | **Difficult.** Requires inspectors to have specific app logins. | **Instant.** |
 | **Adoption** | **High.** Works with existing paper workflows. | **Medium.** Requires all vets to use the same software. | **Universal.** |
 | **Integrity** | **Binds Microchip.** Protects the data. | **Data-Only.** | **Vulnerable.** |
 
-**Why OCR wins here:** The "Roadside Realities." Border inspectors work in booths with limited time. They don't have logins to 15 different private veterinary platforms. OCR-to-hash turn the **Mandatory Paper Certificate** into a universal digital bridge, bringing "Blockchain-level" biosecurity to the physical checkpoint.
+**Why Live Verify wins here:** The "Roadside Realities." Border inspectors work in booths with limited time. They don't have logins to 15 different private veterinary platforms. Live Verify turn the **Mandatory Paper Certificate** into a universal digital bridge, bringing "Blockchain-level" biosecurity to the physical checkpoint.

@@ -115,14 +115,14 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. ID Verification APIs (Onfido)
 
-| Feature | OCR-to-Hash | KYC API (Jumio/Onfido) | Scanned PDF ID |
+| Feature | Live Verify | KYC API (Jumio/Onfido) | Scanned PDF ID |
 | :--- | :--- | :--- | :--- |
 | **User Privacy** | **High.** User shares only the *Vetted Profile*. | **Low.** Requires uploading raw ID photos to the cloud. | **High.** |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Bank. | **System-Bound.** Trust the vendor. | **Zero.** Easily forged. |
 | **Interoperability** | **High.** Works across all banks. | **Low.** Every bank uses a different API vendor. | **Universal.** |
 | **Speed** | **Instant.** 5-second scan. | **Slow.** Requires 30-120 seconds for AI processing. | **N/A.** |
 
-**Why OCR wins here:** The "Privacy Paradox." Banks don't want to store raw ID photos forever because of liability. Users don't want to upload them to 10 different sites. OCR-to-hash turns the **Vetted Result** into a portable, cryptographically trusted asset that carries the bank's "Authority" without the bank's "Data Liability."
+**Why Live Verify wins here:** The "Privacy Paradox." Banks don't want to store raw ID photos forever because of liability. Users don't want to upload them to 10 different sites. Live Verify turns the **Vetted Result** into a portable, cryptographically trusted asset that carries the bank's "Authority" without the bank's "Data Liability."
 
 
 ---
@@ -189,7 +189,7 @@ The **Bank Customer / Tenant** benefits from verification.
 ## Third-Party Use
 
 **Neobanks / Crypto Exchanges**
-**Instant Address Match:** Automatically verifying the "Address String" provided in the signup form against the verified utility hash. OCR-to-hash allows for **Zero-Human-Review** onboarding of customers, even those with thin credit files.
+**Instant Address Match:** Automatically verifying the "Address String" provided in the signup form against the verified utility hash. Live Verify allows for **Zero-Human-Review** onboarding of customers, even those with thin credit files.
 
 **Mortgage Lenders**
 **Residency Audit:** Verifying that a borrower is actually living in their primary residence (and not using it as an undisclosed rental) by checking the verified utility status.
@@ -216,11 +216,11 @@ The **Bank Customer / Tenant** benefits from verification.
 
 ## Competition vs. Address Verification APIs (Experian)
 
-| Feature | OCR-to-Hash | Address API (Experian/Loqate) | Scanned PDF / Paper |
+| Feature | Live Verify | Address API (Experian/Loqate) | Scanned PDF / Paper |
 | :--- | :--- | :--- | :--- |
 | **Integrity** | **Cryptographic.** Binds the *Name* to the *Address*. | **Vague.** Only proves the address *exists*. | **Zero.** Easily forged. |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Utility. | **Data-Bound.** Trust the aggregator. | **Visual.** |
 | **Privacy** | **High.** User shares only the *Bill Summary*. | **Low.** Lenders see full credit history. | **High.** |
 | **Coverage** | **Universal.** Works for any small utility with a URL. | **Limited.** Only for people with credit records. | **Universal.** |
 
-**Why OCR wins here:** The "Thin File" problem. Millions of people (young people, expats, immigrants) don't have enough credit history for Experian to verify their address. But they **all** have a utility or mobile bill. OCR-to-hash allows them to use their **Service Reality** as a verified trust signal, bypassing the need for a legacy credit score.
+**Why Live Verify wins here:** The "Thin File" problem. Millions of people (young people, expats, immigrants) don't have enough credit history for Experian to verify their address. But they **all** have a utility or mobile bill. Live Verify allows them to use their **Service Reality** as a verified trust signal, bypassing the need for a legacy credit score.

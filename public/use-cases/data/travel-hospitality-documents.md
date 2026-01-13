@@ -90,7 +90,7 @@ The **Business Traveler** benefits from verification.
 ## Third-Party Use
 
 **Corporate Finance / Auditors**
-**Zero-Trust Auditing:** Thousands of "Edited" hotel folios are submitted every month. OCR-to-hash connects the auditor directly to the source (e.g., Hilton's record), stopping "Meal Inflation" or "Ghost Stay" fraud at the source.
+**Zero-Trust Auditing:** Thousands of "Edited" hotel folios are submitted every month. Live Verify connects the auditor directly to the source (e.g., Hilton's record), stopping "Meal Inflation" or "Ghost Stay" fraud at the source.
 
 **Travel Insurers**
 **Claims Adjudication:** If a trip is cancelled, the insurer scans the verified itinerary. "Verified by United" ensures that the "Non-Refundable Loss" claimed by the traveler is an accurate fact, preventing over-payment of claims.

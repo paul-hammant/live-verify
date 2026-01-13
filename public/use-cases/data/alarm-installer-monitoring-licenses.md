@@ -123,10 +123,10 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Online Lookups
 
-| Feature | OCR-to-Hash | State Website Lookup |
+| Feature | Live Verify | State Website Lookup |
 | :--- | :--- | :--- |
 | **Speed** | **Instant.** Scan the badge at the door. | **Slow.** Ask for name, type it in, scroll results. |
 | **Photo ID** | **Strong.** Verification can display the official photo to compare with the person standing there. | **Weak.** Text-only lookups don't show the face, allowing ID theft (using a real name but wrong person). |
 | **Privacy** | **Targeted.** Checks *this* person. | **Open.** Anyone can scrape the whole database. |
 
-**Why OCR wins here:** The "Doorstep Scenario." A homeowner opening the door to a technician needs to verify them *now*, in seconds. They are not going to go to a computer, find the state DPS website, and navigate a search form while the person waits on the porch. Scanning the badge is the only viable workflow.
+**Why Live Verify wins here:** The "Doorstep Scenario." A homeowner opening the door to a technician needs to verify them *now*, in seconds. They are not going to go to a computer, find the state DPS website, and navigate a search form while the person waits on the porch. Scanning the badge is the only viable workflow.

@@ -66,7 +66,7 @@ The **Employer / Contractor** benefits from verification.
 ## Third-Party Use
 
 **General Contractors (GCs)**
-**Liability Shield:** Thousands of fake COIs are used to hide un-insured labor on job sites. OCR-to-hash connects the GC directly to the insurer's record, ensuring they won't be hit with a "Surprise Premium" audit for their sub-contractors' un-insured payroll.
+**Liability Shield:** Thousands of fake COIs are used to hide un-insured labor on job sites. Live Verify connects the GC directly to the insurer's record, ensuring they won't be hit with a "Surprise Premium" audit for their sub-contractors' un-insured payroll.
 
 **Injured Workers**
 **Safety Verification:** A worker can scan the placard in the job trailer. Verification ensures that if they are hurt, there is a real, funded policy available to pay for their surgery and recovery, preventing "medical bankruptcy" caused by a fraudulent boss.

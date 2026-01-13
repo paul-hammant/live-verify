@@ -135,11 +135,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. EUDAMED / FDA Databases
 
-| Feature | OCR-to-Hash | EUDAMED / FDA Database | Scanned PDF |
+| Feature | Live Verify | EUDAMED / FDA Database | Scanned PDF |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Notified Body. | **Gov-Bound.** | **Zero.** Easily forged. |
 | **Speed** | **Instant.** 5-second scan at procurement. | **Slow.** Requires searching by school name and state. | **Instant.** |
 | **Integrity** | **Binds Models.** Protects the specific part #s. | **Data-Only.** Doesn't protect the paper. | **Vulnerable.** |
 | **Immediacy** | **Real-time.** Shows "RECALLED" status in red. | **Laggy.** Database updates can take days. | **Hidden.** |
 
-**Why OCR wins here:** The "Point of Care" reality. Doctors and hospital clerks work with paper and PDF boxes. They don't have the time to navigate complex federal government databases for every shipment. OCR-to-hash turns the **Static Certificate** into a live "Safety Beacon," ensuring that "Medical Integrity" is verified at the moment of highest risk.
+**Why Live Verify wins here:** The "Point of Care" reality. Doctors and hospital clerks work with paper and PDF boxes. They don't have the time to navigate complex federal government databases for every shipment. Live Verify turns the **Static Certificate** into a live "Safety Beacon," ensuring that "Medical Integrity" is verified at the moment of highest risk.

@@ -69,7 +69,7 @@ The **Depositor** (second party) receives the inventory report from the warehous
 The depositor (second party) may hand the verified document to various third parties:
 
 **Lenders / Banks**
-**Collateral Monitoring:** Banks currently send physical "Auditors" to warehouses twice a year. OCR-to-hash allows for **automated weekly verification**. If the inventory total drops or the hash status changes to "Released," the bank's loan system can trigger an immediate alert.
+**Collateral Monitoring:** Banks currently send physical "Auditors" to warehouses twice a year. Live Verify allows for **automated weekly verification**. If the inventory total drops or the hash status changes to "Released," the bank's loan system can trigger an immediate alert.
 
 **Supply Chain Insurers**
 **Risk Management:** Verifying the "Stock-on-Hand" before binding high-value cargo or spoilage insurance.
@@ -82,7 +82,7 @@ The depositor (second party) may hand the verified document to various third par
 **The "Phantom Inventory" Fraud Problem**
 
 - **Inventory Inflation:** A business owner editing the warehouse's PDF report to change "10 Pallets" to "100 Pallets" to trick a bank into giving a larger loan.
-- **Double-Pledging:** Using the same 85 pallets of crab to secure loans from two different banks. OCR-to-hash allows the status to be flagged as "Pledged," stopping the second loan.
+- **Double-Pledging:** Using the same 85 pallets of crab to secure loans from two different banks. Live Verify allows the status to be flagged as "Pledged," stopping the second loan.
 - **Ghost Warehouses:** Creating fake "Warehouse Certificates" from non-existent facilities to hide the theft of company assets.
 
 **Issuer Types (First Party)**
@@ -118,11 +118,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. WMS Portals (Warehouse Management)
 
-| Feature | OCR-to-Hash | WMS Portal Access | Scanned PDF / Excel |
+| Feature | Live Verify | WMS Portal Access | Scanned PDF / Excel |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Custodian. | **System-Bound.** | **Zero.** Easily forged. |
 | **User Access** | **Universal.** Share with any bank/auditor. | **Restricted.** Third parties never get WMS logins. | **Universal.** |
 | **Integrity** | **Binds Content.** Protects the Lot counts. | **Data-Only.** Doesn't protect the paper doc. | **Vulnerable.** |
 | **Persistence** | **High.** Remains verifiable post-release. | **Low.** Records often archived/hidden in-app. | **Vulnerable.** |
 
-**Why OCR wins here:** The "External Auditor" reality. Banks and auditors are external to the supply chain. They work with "Static Artifacts" (PDF reports) sent via email. OCR-to-hash turns those **Static Artifacts** into live digital anchors, providing the same trust as a live WMS login without the security risks.
+**Why Live Verify wins here:** The "External Auditor" reality. Banks and auditors are external to the supply chain. They work with "Static Artifacts" (PDF reports) sent via email. Live Verify turns those **Static Artifacts** into live digital anchors, providing the same trust as a live WMS login without the security risks.

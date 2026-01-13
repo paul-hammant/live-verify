@@ -106,7 +106,7 @@ Patient consent fraud has severe ethical, legal, and medical consequences:
 -   **Version Misrepresentation:** Using an outdated consent form version that doesn't reflect current risks or patient rights.
 -   **Unauthorized Disclosure:** Releasing PHI without valid patient authorization.
 
-OCR-to-hash addresses **fabrication, alteration, and version misrepresentation**. Domain binding ensures that a consent form claiming to be from Acme Medical Center verifies against `consent.acmemedical.com`.
+Live Verify addresses **fabrication, alteration, and version misrepresentation**. Domain binding ensures that a consent form claiming to be from Acme Medical Center verifies against `consent.acmemedical.com`.
 
 **Healthcare Providers & Research Institutions as Issuers**
 The healthcare entity where consent is obtained is the natural issuer:
@@ -120,10 +120,10 @@ The healthcare entity where consent is obtained is the natural issuer:
 
 **Integration with EHR/EMR Systems**
 -   **EHR/EMR Integration:** Electronic Health Record systems generate and store consent forms. The EHR system would publish the hash for verification.
--   **Digital Signatures:** Many systems use electronic signatures. OCR-to-hash complements these by verifying the *printed output* or *viewable PDF* matches the digitally signed record.
+-   **Digital Signatures:** Many systems use electronic signatures. Live Verify complements these by verifying the *printed output* or *viewable PDF* matches the digitally signed record.
 
 **Regulatory Compliance (HIPAA, 21 CFR Part 11, GCP)**
--   **HIPAA (Health Insurance Portability and Accountability Act):** Strict privacy rules for PHI. OCR-to-hash minimizes data transfer.
+-   **HIPAA (Health Insurance Portability and Accountability Act):** Strict privacy rules for PHI. Live Verify minimizes data transfer.
 -   **FDA (21 CFR Part 11):** Requirements for electronic records and electronic signatures in clinical trials. Verifiable paper outputs (e.g., from e-Consent systems) can meet some requirements.
 -   **GCP (Good Clinical Practice):** International ethical and scientific quality standard for clinical trials. Valid informed consent is foundational to GCP.
 

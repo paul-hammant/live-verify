@@ -79,7 +79,7 @@ The **Applicant (Borrower / Tenant)** benefits from verification.
 ## Third-Party Use
 
 **Mortgage Underwriters / Banks**
-**Zero-Trust Vetting:** Thousands of fake "CPA Letters" are submitted to banks every month. OCR-to-hash connects the underwriter directly to the verifier's domain, stopping "Income Padding" fraud and protecting the bank's loan portfolio.
+**Zero-Trust Vetting:** Thousands of fake "CPA Letters" are submitted to banks every month. Live Verify connects the underwriter directly to the verifier's domain, stopping "Income Padding" fraud and protecting the bank's loan portfolio.
 
 **Property Managers**
 **Applicant Filtering:** Instantly filtering for only verified, employment-stable candidates, reducing the risk of "Non-Payment" evictions.

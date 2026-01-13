@@ -143,13 +143,13 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Appraisal Databases
 
-| Feature | OCR-to-Hash | Private Portal (Sotheby's) | Blockchain Art Registry |
+| Feature | Live Verify | Private Portal (Sotheby's) | Blockchain Art Registry |
 | :--- | :--- | :--- | :--- |
 | **Privacy** | **High.** Only the specific report is shared. | **Low.** Accessing a portal might reveal the collector's entire portfolio. | **Low.** Public ledgers can reveal transaction history. |
 | **User Experience** | **Instant.** Scan the PDF/Paper in the data room. | **Hard.** Requires logins, passwords, and permissions. | **Medium.** Requires crypto-wallets/explorers. |
 | **Authority** | **Domain-Bound.** Trust the brand you know. | **Portal-Bound.** | **Ambiguous.** Who controls the registry? |
 
-**Why OCR wins here:** The high-end art market is obsessed with **discretion**. Collectors do not want their entire portfolio in a searchable database. OCR-to-hash allows them to share a **single, verified document** with a single lender or insurer without exposing their identity or other assets to a platform.
+**Why Live Verify wins here:** The high-end art market is obsessed with **discretion**. Collectors do not want their entire portfolio in a searchable database. Live Verify allows them to share a **single, verified document** with a single lender or insurer without exposing their identity or other assets to a platform.
 
 
 ---
@@ -285,13 +285,13 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. NFTs / Blockchain
 
-| Feature | OCR-to-Hash | NFT (Digital Twin) | Physical Seal (Microchip) |
+| Feature | Live Verify | NFT (Digital Twin) | Physical Seal (Microchip) |
 | :--- | :--- | :--- | :--- |
 | **Physical Link** | **Textual.** Binds the *claim* to the art. | **None.** The token is on-chain; the art is off-chain. Easy to "de-couple." | **Mechanical.** A chip is glued/embedded in the frame. |
 | **Market Standard** | **High.** Matches the traditional "Paper COA" culture of high-end art. | **Low.** High-end collectors are skeptical of crypto-volatility and tech-debt. | **Medium.** Seen as invasive by some conservators. |
 | **Durability** | **Durable.** Text is archival. | **Fragile.** Requires the blockchain/IPFS to exist in 100 years. | **Fragile.** Chips can break or be removed. |
 
-**Why OCR wins here:** The high-end art world is traditional. It relies on scholarly provenance and paper records. OCR-to-hash respects this tradition while adding a modern "Digital Seal." It doesn't require collectors to understand crypto-wallets; it just requires them to trust the **Domain Name** of the estate, which is the most stable form of digital identity.
+**Why Live Verify wins here:** The high-end art world is traditional. It relies on scholarly provenance and paper records. Live Verify respects this tradition while adding a modern "Digital Seal." It doesn't require collectors to understand crypto-wallets; it just requires them to trust the **Domain Name** of the estate, which is the most stable form of digital identity.
 
 
 ---
@@ -305,7 +305,7 @@ When an artist makes a print or a sculpture, they often make a limited number (e
 
 This creates "Scarcity." Number 14 is valuable because there are only 49 others like it. If the artist (or the printer) secretly makes 500 copies instead of 50, the value of everyone's art collapses.
 
-OCR-to-Hash allows a collector to verify that their "14 / 50" is an officially recognized number in the publisher's ledger and not a "backdoor" extra copy.
+Live Verify allows a collector to verify that their "14 / 50" is an officially recognized number in the publisher's ledger and not a "backdoor" extra copy.
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 2px solid #444; background: #fff; padding: 40px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <div style="text-align: center; margin-bottom: 30px;">
@@ -430,13 +430,13 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Physical Holograms
 
-| Feature | OCR-to-Hash | Hologram Sticker | Blind Stamp (Embossing) |
+| Feature | Live Verify | Hologram Sticker | Blind Stamp (Embossing) |
 | :--- | :--- | :--- | :--- |
 | **Integrity** | **Binds Content.** Hash protects the *Number* and *Artist Name*. | **Binds Paper.** Proves the paper is real, but not what is written on it. | **Physical.** Hard to forge, but can be faked with a custom die. |
 | **Registry Link** | **Direct.** Links instantly to the publisher's database. | **Manual.** Requires looking up a serial number on a website. | **None.** Just a mark on the paper. |
 | **Durability** | **Archival.** Ink/pencil text lasts centuries. | **Fragile.** Stickers peel off or degrade over time. | **Durable.** But can be flattened. |
 
-**Why OCR wins here:** Limited editions are all about **Math**. Is the denominator (total size) real? Is the numerator (my number) unique? OCR-to-hash connects the physical number written in pencil to the publisher's official spreadsheet, ensuring the math stays honest.
+**Why Live Verify wins here:** Limited editions are all about **Math**. Is the denominator (total size) real? Is the numerator (my number) unique? Live Verify connects the physical number written in pencil to the publisher's official spreadsheet, ensuring the math stays honest.
 
 
 ---
@@ -569,13 +569,13 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Visual Connoisseurship
 
-| Feature | OCR-to-Hash | Visual Inspection (The Eye) | Carbon Dating / Chemical |
+| Feature | Live Verify | Visual Inspection (The Eye) | Carbon Dating / Chemical |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Cryptographic.** Bound to the expert's domain. | **Subjective.** Relies on the reputation of the person standing there. | **Scientific.** Analysis of physical matter. |
 | **Durability** | **High.** The report is permanent. | **Low.** The expert dies or changes their mind. | **High.** But invasive (requires taking a sample). |
 | **Speed** | **Instant.** Scan the report. | **Slow.** Requires scheduling a viewing with an expert. | **Very Slow.** Takes weeks/months in a lab. |
 
-**Why OCR wins here:** Connoisseurship is a "Black Box." An expert says "It feels right," but that opinion is hard to trade or insure. OCR-to-hash turns that subjective "feeling" into a **documented, verifiable event** that can travel with the painting across the global market.
+**Why Live Verify wins here:** Connoisseurship is a "Black Box." An expert says "It feels right," but that opinion is hard to trade or insure. Live Verify turns that subjective "feeling" into a **documented, verifiable event** that can travel with the painting across the global market.
 
 
 ---
@@ -726,13 +726,13 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Physical Labels / Archival Photos
 
-| Feature | OCR-to-Hash | Gallery Labels (Reverse of Frame) | Archival Photo (Black & White) |
+| Feature | Live Verify | Gallery Labels (Reverse of Frame) | Archival Photo (Black & White) |
 | :--- | :--- | :--- | :--- |
 | **Trust** | **Cryptographic.** Bound to the institution's domain. | **Visual.** Very easy to forge using tea-stained paper. | **Subjective.** Is that the *exact* same painting in the grainy 1920s photo? |
 | **Searchability** | **Instant.** Links to the full digital archive entry. | **None.** Just a physical sticker. | **Hard.** Requires visual comparison experts. |
 | **Updateability** | **Yes.** Can note "New claim surfaced" instantly. | **Static.** Once it's on the frame, it stays there. | **Fixed.** |
 
-**Why OCR wins here:** Provenance is a "Living History." New information surfaces, claims are filed, and research progresses. OCR-to-hash turns a static piece of paper (the research summary) into a dynamic window into the institution's latest knowledge about that work.
+**Why Live Verify wins here:** Provenance is a "Living History." New information surfaces, claims are filed, and research progresses. Live Verify turns a static piece of paper (the research summary) into a dynamic window into the institution's latest knowledge about that work.
 
 ## Text-to-Hash Suitability
 

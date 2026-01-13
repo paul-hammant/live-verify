@@ -123,14 +123,14 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. National Databases (MID)
 
-| Feature | OCR-to-Hash | MID / National DB (UK) | Paper Certificate |
+| Feature | Live Verify | MID / National DB (UK) | Paper Certificate |
 | :--- | :--- | :--- | :--- |
 | **Driver Specificity** | **High.** Verifies *who* is covered. | **Low.** Often only shows if the *car* is insured. | **Vulnerable.** |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Carrier. | **Gov-Bound.** | **Zero.** Easily forged. |
 | **Speed** | **Instant.** 5-second scan. | **Slow.** Requires specialized police terminal access. | **Instant.** |
 | **User Access** | **Open.** Any citizen or car owner can verify. | **Restricted.** Usually only for Police/DVLA. | **Universal.** |
 
-**Why OCR wins here:** The "Driver Specificity" gap. Many national databases only track the *vehicle*. They don't list the 4 different named drivers. OCR-to-hash allows a car owner to prove that a **specific person** is covered, which is the most common point of failure in car-accident liability disputes.
+**Why Live Verify wins here:** The "Driver Specificity" gap. Many national databases only track the *vehicle*. They don't list the 4 different named drivers. Live Verify allows a car owner to prove that a **specific person** is covered, which is the most common point of failure in car-accident liability disputes.
 
 ## See Also
 

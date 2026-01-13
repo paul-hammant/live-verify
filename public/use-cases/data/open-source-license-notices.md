@@ -103,13 +103,13 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Digital SBOMs (SPDX/CycloneDX)
 
-| Feature | OCR-to-Hash | Digital SBOM (JSON/XML) |
+| Feature | Live Verify | Digital SBOM (JSON/XML) |
 | :--- | :--- | :--- |
 | **Human Readable** | **Yes.** It's text on paper/screen. | **No.** It's a machine-readable data file. |
 | **Accessibility** | **Universal.** Any camera can read it. | **Specialized.** Needs SBOM analysis tools. |
 | **Physical Link** | **Strong.** Ties the physical box to the digital record. | **Weak.** Usually a file sitting on a server somewhere. |
 | **Completeness** | **Summary.** Lists key licenses/packages. | **Exhaustive.** Lists every dependency of a dependency. |
 
-**Why OCR wins here:**
-Digital SBOMs are the gold standard for *automated* security, but they are invisible to the human inspector at a customs checkpoint or a sysadmin unboxing a device. OCR-to-Hash acts as the **human-readable cover sheet** for the complex digital SBOM.
+**Why Live Verify wins here:**
+Digital SBOMs are the gold standard for *automated* security, but they are invisible to the human inspector at a customs checkpoint or a sysadmin unboxing a device. Live Verify acts as the **human-readable cover sheet** for the complex digital SBOM.
 

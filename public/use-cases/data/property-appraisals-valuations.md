@@ -69,10 +69,10 @@ The **Homeowner / Seller** benefits from verification.
 ## Third-Party Use
 
 **Mortgage Lenders / Underwriters**
-**Zero-Trust Collateral Vetting:** Thousands of "Edited" appraisals are submitted to banks every year. OCR-to-hash connects the underwriter directly to the appraisal firm's domain, stopping "Equity Siphoning" fraud at the source and protecting the bank's loan-to-value (LTV) ratios.
+**Zero-Trust Collateral Vetting:** Thousands of "Edited" appraisals are submitted to banks every year. Live Verify connects the underwriter directly to the appraisal firm's domain, stopping "Equity Siphoning" fraud at the source and protecting the bank's loan-to-value (LTV) ratios.
 
 **Real Estate Secondary Markets (Fannie/Freddie)**
-**Quality Control Audit:** Instantly verifying thousands of appraisal files in a mortgage-backed security (MBS). OCR-to-hash ensures the underlying valuations are authentic and haven't been "Padded" to increase the bond's value.
+**Quality Control Audit:** Instantly verifying thousands of appraisal files in a mortgage-backed security (MBS). Live Verify ensures the underlying valuations are authentic and haven't been "Padded" to increase the bond's value.
 
 **State Appraisal Boards**
 **Disciplinary Audit:** Verifying that a specific "Opinion of Value" was actually signed by the licensed appraiser claimed on the paper, stopping the "Clone License" fraud used by unlicensed workers.

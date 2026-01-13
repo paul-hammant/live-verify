@@ -12,7 +12,7 @@ furtherDerivations: 1
 
 In the real estate industry, the "Showing" is a high-risk event. A buyer (often alone) meets a stranger at a vacant property, or a seller allows a stranger into their home to "preview" it. Criminals often pose as **Real Estate Agents** to gain entry for burglary, assault, or to steal high-value assets during an open house.
 
-The problem is that "Agent ID Cards" are not standardized and are easy to fake. Even a real agent may have had their license suspended for unethical behavior. OCR-to-hash allows a buyer or seller to scan the agent's digital badge or physical ID to verify: **"Is this person a licensed professional in good standing, and are they actually affiliated with the brokerage they claim?"**
+The problem is that "Agent ID Cards" are not standardized and are easy to fake. Even a real agent may have had their license suspended for unethical behavior. Live Verify allows a buyer or seller to scan the agent's digital badge or physical ID to verify: **"Is this person a licensed professional in good standing, and are they actually affiliated with the brokerage they claim?"**
 
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #d32f2f; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
   <div style="background: #d32f2f; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
@@ -82,7 +82,7 @@ The **Real Estate Professional (Agent)** benefits from verification.
 **Showing Vetting:** Before allowing an agent to bring a group of strangers into their home, the seller can scan the agent's badge. Verification ensures the visitor is a tracked professional who can be held accountable if items go missing.
 
 **Property Management Firms**
-**Access Control:** Managing thousands of vacant units. OCR-to-hash allows the management system to maintain a cryptographically verified log of every agent who accessed a unit, protecting the firm from "Un-authorized Entry" liability.
+**Access Control:** Managing thousands of vacant units. Live Verify allows the management system to maintain a cryptographically verified log of every agent who accessed a unit, protecting the firm from "Un-authorized Entry" liability.
 
 **Title and Escrow Companies**
 **Commission Verification:** Ensuring that the agent being paid on the settlement statement is the same verified professional who initiated the contract.

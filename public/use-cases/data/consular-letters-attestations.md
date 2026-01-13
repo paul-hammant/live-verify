@@ -131,11 +131,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Legalization (Apostille)
 
-| Feature | OCR-to-Hash | Apostille / Legalization | Scanned PDF |
+| Feature | Live Verify | Apostille / Legalization | Scanned PDF |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Mission. | **Seal-Bound.** Trust the physical stamp. | **Zero.** Easily forged. |
 | **Speed** | **Instant.** 5-second scan. | **Slow.** Often requires weeks of multi-step processing. | **Instant.** |
 | **Integrity** | **Binds Content.** Proves the *Income* amount. | **Binds Signature.** Doesn't protect the data on the page. | **Vulnerable.** |
 | **Cost** | **Low.** Standard web infra. | **High.** Fees can be $50-$200 per document. | **None.** |
 
-**Why OCR wins here:** The "Expat Life" reality. Consular letters are often "Fast-Track" alternatives to the heavy, expensive Apostille process. OCR-to-hash provides **Apostille-level integrity** with the speed and low cost of a simple letter, making international life much more efficient for citizens and governments alike.
+**Why Live Verify wins here:** The "Expat Life" reality. Consular letters are often "Fast-Track" alternatives to the heavy, expensive Apostille process. Live Verify provides **Apostille-level integrity** with the speed and low cost of a simple letter, making international life much more efficient for citizens and governments alike.

@@ -67,7 +67,7 @@ The **Shipper (Exporters / Importers)** benefits from verification.
 ## Third-Party Use
 
 **Federal Maritime Commission (FMC) Inspectors**
-**Rapid Vetting:** During an audit of an NVOCC's records, the inspector can scan random invoices. OCR-to-hash ensures the invoice prices match the public tariff filings, stopping "Secret Rebates" or "Off-Book Deals" that distort market competition.
+**Rapid Vetting:** During an audit of an NVOCC's records, the inspector can scan random invoices. Live Verify ensures the invoice prices match the public tariff filings, stopping "Secret Rebates" or "Off-Book Deals" that distort market competition.
 
 **Trade Finance Banks**
 **Valuation Integrity:** Banks lending against "Goods in Transit" scan the verified tariffs to ensure that the "Shipping Costs" (which impact the collateral value) are accurate and legally defensible.

@@ -14,7 +14,7 @@ When you send money to another country (e.g., via Wise or Western Union), you ge
 
 This receipt is the only proof that the money is en route. Recipient freelancers or family members need to know the money is real and the "Exchange Rate" is fair.
 
-Fraudsters often use "Fake Screenshots" to trick sellers into shipping goods before the money actually arrives (or when it was never sent). OCR-to-hash turns the static PDF confirmation into a live, verifiable proof-of-payment that the recipient can trust instantly.
+Fraudsters often use "Fake Screenshots" to trick sellers into shipping goods before the money actually arrives (or when it was never sent). Live Verify turns the static PDF confirmation into a live, verifiable proof-of-payment that the recipient can trust instantly.
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #00b9ff; border-radius: 8px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #00b9ff; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
@@ -78,7 +78,7 @@ The **Sender** (Remitter) benefits from verification.
 **Source of Funds:** Verifying large incoming international payments to comply with anti-money laundering (AML) laws. A verified receipt from `wise.com` is more authoritative than a plain paper printout.
 
 **Mortgage Lenders**
-**Downpayment Vetting:** When a homebuyer receives a "Gift" from a relative overseas, the lender must verify the source. OCR-to-hash allows the lender to trust the international transfer receipt instantly.
+**Downpayment Vetting:** When a homebuyer receives a "Gift" from a relative overseas, the lender must verify the source. Live Verify allows the lender to trust the international transfer receipt instantly.
 
 **Regulators (CFPB / FCA)**
 **Transparency Compliance:** Ensuring that money transmitters are correctly disclosing their "Total Cost" (Rate + Fees) as required by consumer protection laws (e.g., Dodd-Frank Section 1073).
@@ -125,11 +125,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. SWIFT gpi (Tracking)
 
-| Feature | OCR-to-Hash | SWIFT gpi (Bank Tracking) | Scanned PDF / Image |
+| Feature | Live Verify | SWIFT gpi (Bank Tracking) | Scanned PDF / Image |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Payer. | **Bank-Bound.** Trust the technical message. | **Zero.** Easily forged. |
 | **User Access** | **Universal.** Any recipient can verify. | **Restricted.** Usually only the sending/receiving banks see the log. | **Instant.** |
 | **Integrity** | **Binds FX Rates.** Protects the numbers. | **Data-Only.** | **Vulnerable.** |
 | **Interoperability** | **High.** Works for non-SWIFT fintechs. | **Limited.** Only for SWIFT-member banks. | **Universal.** |
 
-**Why OCR wins here:** The "End-to-End" Reality. SWIFT gpi is great for banks, but the actual **human recipient** often just gets a PDF in their email. OCR-to-hash turns that **Static PDF** into a live, verifiable proof-of-payment that bridges the gap between the bank's technical ledger and the human's inbox.
+**Why Live Verify wins here:** The "End-to-End" Reality. SWIFT gpi is great for banks, but the actual **human recipient** often just gets a PDF in their email. Live Verify turns that **Static PDF** into a live, verifiable proof-of-payment that bridges the gap between the bank's technical ledger and the human's inbox.

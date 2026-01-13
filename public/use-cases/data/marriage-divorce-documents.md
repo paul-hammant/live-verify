@@ -81,7 +81,7 @@ The **Named Spouse(s)** benefit from verification.
 ## Third-Party Use
 
 **Government Agencies (SSA / USCIS)**
-**Identity Integrity:** Instantly verifying the foundational civil status of an applicant. OCR-to-hash connects the agency directly to the county registrar, stopping "Paperwork Scams" where people use fake certificates to steal survivor benefits.
+**Identity Integrity:** Instantly verifying the foundational civil status of an applicant. Live Verify connects the agency directly to the county registrar, stopping "Paperwork Scams" where people use fake certificates to steal survivor benefits.
 
 **Mortgage Lenders**
 **Title Vetting:** Verifying marital status during a property purchase to ensure "Spousal Consent" or "Homestead Rights" are properly addressed in the deed.
@@ -131,12 +131,12 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Certified Copies (Raised Seals)
 
-| Feature | OCR-to-Hash | Certified Copy (Physical Seal) | Public Portal (Online Search) |
+| Feature | Live Verify | Certified Copy (Physical Seal) | Public Portal (Online Search) |
 | :--- | :--- | :--- | :--- |
 | **Integrity** | **Cryptographic.** Protects every name/date. | **Binds Paper.** Doesn't prevent "Name Edits." | **Data-Only.** |
 | **Speed** | **Instant.** 5-second scan. | **Manual.** Requires physical inspection. | **Slow.** Requires search & CAPTCHAs. |
 | **Trust Anchor** | **Domain-Bound.** Bound to the County. | **Signature-Bound.** | **Gov-Bound.** |
 | **Cost** | **Low.** Standard web infra. | **High.** Fees of $20-$50 per copy are common. | **Medium.** Per-search fees. |
 
-**Why OCR wins here:** Reach. Many counties do not have public-facing "Search Portals" for marriage records due to privacy laws. OCR-to-hash allows the **Individual** to carry a portable, verifiable proof of their status that only reveals data when the physical document is presented, respecting privacy while providing absolute trust.
+**Why Live Verify wins here:** Reach. Many counties do not have public-facing "Search Portals" for marriage records due to privacy laws. Live Verify allows the **Individual** to carry a portable, verifiable proof of their status that only reveals data when the physical document is presented, respecting privacy while providing absolute trust.
 

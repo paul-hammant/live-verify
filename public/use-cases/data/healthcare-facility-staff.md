@@ -244,7 +244,7 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Uniforms / Caller Systems
 
-| Feature | OCR-to-Hash | Uniform & Badge | Calling Nurse Station | Patient Recognition | Manual License Lookup |
+| Feature | Live Verify | Uniform & Badge | Calling Nurse Station | Patient Recognition | Manual License Lookup |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Verified by facility or state board. | **Visual.** Uniforms easily faked. | **Human.** Assumes phone is answered; prone to social engineering. | **Personal.** Only works if patient knows staff; fails for new staff or medicated patients. | **Manual.** Requires searching state board websites; slow and error-prone. |
 | **Integrity** | **Cryptographic.** Binds identity and license status. | **Zero.** Impostors in scrubs are indistinguishable. | **Variable.** Phone system can be spoofed. | **None.** Visual recognition is unreliable. | **Good but manual.** License info available but requires patient effort. |
@@ -253,9 +253,9 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 | **Verifies License Status** | **Yes.** Shows if active, suspended, or expired. | **No.** Badge is silent on license status. | **Maybe.** Staff may confirm verbally but unverified. | **No.** Patient can't see license status. | **Yes but manual.** Patient can lookup but time-consuming. |
 | **Works When Patient is Alone** | **Yes.** Patient can verify without involving others. | **No.** Patient must judge visually. | **No.** Patient must call or use button; risky during medical procedures. | **No.** Patient must recognize person. | **No.** Requires internet access, privacy to lookup. |
 
-**Why OCR wins here:** Healthcare has **two critical workflows:**
+**Why Live Verify wins here:** Healthcare has **two critical workflows:**
 
-1. **"Private Room Workflow"** (support staff): A patient cannot easily reach a phone, call a nurse station, or safely leave their room to verify a stranger's identity. OCR-to-hash gives patients a non-invasive way to verify support staff at the moment of entry—from bed, through a doorway camera, or by viewing the badge through a partially open door.
+1. **"Private Room Workflow"** (support staff): A patient cannot easily reach a phone, call a nurse station, or safely leave their room to verify a stranger's identity. Live Verify gives patients a non-invasive way to verify support staff at the moment of entry—from bed, through a doorway camera, or by viewing the badge through a partially open door.
 
 2. **"Bedside Credential Verification"** (clinical staff): Before allowing a physician to order medications, perform procedures, or access your medical record, a patient can instantly verify their license status—no manual state board lookup, no awkward conversation, just a quick scan. This is particularly important for patients about to undergo treatment, high-acuity patients unable to advocate for themselves, or family members protecting vulnerable relatives.
 
@@ -272,7 +272,7 @@ Hospitals are antagonistic workplaces. Abusive patients, hostile families, and w
 3. Finds full name, disciplinary history, addresses, background info
 4. Hostile patient now has personal doxing material for harassment, stalking, targeting
 
-**The OCR-to-Hash Solution: Decouple Identification from Verification**
+**The Live Verify Solution: Decouple Identification from Verification**
 
 E-Ink badges can serve **two separate purposes**:
 
@@ -281,7 +281,7 @@ E-Ink badges can serve **two separate purposes**:
 - Allows patient to see who they're dealing with
 - No additional PII exposed
 
-**OCR-to-Hash Verification (for authorization, privacy-protected):**
+**Live Verify Verification (for authorization, privacy-protected):**
 - Verifies: "Licensed in Arizona, credentialed at Banner Health, authorized for cardiology duties"
 - NO unique identifiers (no name, no license number)
 - Claims are anonymized/role-based, not person-specific
@@ -306,7 +306,7 @@ Badge ID: [anonymized sequence]
 verify:bannerhealth.com/provider
 ```
 - Badge displays: "Cardiologist" role (visible on physical badge)
-- OCR-to-hash verifies: "Arizona-licensed cardiologist, credentialed at Banner Health, on-duty in cardiac unit"
+- Live Verify verifies: "Arizona-licensed cardiologist, credentialed at Banner Health, on-duty in cardiac unit"
 - Claim is issued by Banner Health (or Arizona Medical Board)
 - Hash is computed from credential claim WITHOUT PII
 - Result: Patient knows the person is verified without gaining doxing information

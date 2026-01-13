@@ -81,7 +81,7 @@ The **Home Buyer (Client)** benefits from verification.
 ## Third-Party Use
 
 **Property Sellers**
-**Counter-Offer Integrity:** Instantly verifying the "Major Defects" list provided by the buyer. OCR-to-hash ensures the buyer hasn't "Inserted" new defects into the summary that the inspector never actually found.
+**Counter-Offer Integrity:** Instantly verifying the "Major Defects" list provided by the buyer. Live Verify ensures the buyer hasn't "Inserted" new defects into the summary that the inspector never actually found.
 
 **Mortgage Lenders**
 **Collateral Protection:** Verifying the "Structural Status" of a high-value property before funding. Lenders can verify the summary hash to ensure the asset isn't a "Teardown" being misrepresented as "Move-in Ready."
@@ -129,12 +129,12 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Home Inspection Software Portals
 
-| Feature | OCR-to-Hash | Reporting Portal (Spectora) | Scanned PDF |
+| Feature | Live Verify | Reporting Portal (Spectora) | Scanned PDF |
 | :--- | :--- | :--- | :--- |
 | **User Control** | **High.** Buyer shares only the *Summary*. | **Low.** Portal access often reveals the full 80-page file. | **High.** |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Inspector. | **System-Bound.** Trust the portal vendor. | **Zero.** Easily forged. |
 | **Persistence** | **High.** Text remains verifiable for 10 years. | **Low.** Access often expires after 12 months. | **Vulnerable.** |
 | **Speed** | **Instant.** 5-second scan. | **Slow.** Requires login and navigation. | **N/A.** |
 
-**Why OCR wins here:** The "Data Room" reality. In a fast-moving real estate deal, lawyers and banks work with "Static Artifacts" (PDFs). They don't want to log into 5 different portals for 5 different inspectors. OCR-to-hash turns the **Static PDF** into a portable, cryptographically trusted asset that carries its own proof of truth into the closing file.
+**Why Live Verify wins here:** The "Data Room" reality. In a fast-moving real estate deal, lawyers and banks work with "Static Artifacts" (PDFs). They don't want to log into 5 different portals for 5 different inspectors. Live Verify turns the **Static PDF** into a portable, cryptographically trusted asset that carries its own proof of truth into the closing file.
 

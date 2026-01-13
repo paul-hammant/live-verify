@@ -119,11 +119,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. IRS Public Search (TEOS)
 
-| Feature | OCR-to-Hash | IRS TEOS Search | Paper Receipt |
+| Feature | Live Verify | IRS TEOS Search | Paper Receipt |
 | :--- | :--- | :--- | :--- |
 | **Integrity** | **Binds Amount.** Protects the $ value. | **Zero.** Only verifies the *Charity*, not the *Gift*. | **Zero.** Easily forged. |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Charity. | **Gov-Bound.** | **Visual.** |
 | **User Experience** | **Instant.** Scan the paper. | **Slow.** Requires typing EIN and finding the record. | **N/A.** |
 | **Audit-ability** | **High.** Creates a digital audit trail. | **None.** For individual receipts. | **Low.** |
 
-**Why OCR wins here:** The "Gift Specificity." The IRS TEOS database can tell you if the Red Cross is a real charity. It **cannot** tell you if John Doe actually gave them $1,000 on Tuesday. OCR-to-hash turns the **Static Receipt** into a live, verifiable financial link that bridges the gap between the donor's claim and the charity's ledger.
+**Why Live Verify wins here:** The "Gift Specificity." The IRS TEOS database can tell you if the Red Cross is a real charity. It **cannot** tell you if John Doe actually gave them $1,000 on Tuesday. Live Verify turns the **Static Receipt** into a live, verifiable financial link that bridges the gap between the donor's claim and the charity's ledger.

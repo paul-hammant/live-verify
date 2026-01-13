@@ -71,7 +71,7 @@ The **Lab Manager** (second party) receives the calibration record from the cali
 The lab manager (second party) may hand the verified document to various third parties:
 
 **Peer Reviewers / Journal Editors**
-**Integrity Vetting:** Instantly verifying the "Equipment Section" of a manuscript. OCR-to-hash ensures the authors didn't "Smooth" the calibration data to hide noise in their results.
+**Integrity Vetting:** Instantly verifying the "Equipment Section" of a manuscript. Live Verify ensures the authors didn't "Smooth" the calibration data to hide noise in their results.
 
 **FDA / Regulatory Auditors**
 **GXP Audits:** During a clinical trial audit, inspectors can scan the stickers on the lab gear. "Verified by Agilent" or "Verified by Quantum Labs" ensures the instruments were in-tolerance on the date the patient samples were run.
@@ -120,11 +120,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. LIMS (Lab Information Mgmt)
 
-| Feature | OCR-to-Hash | LIMS Software (LabWare) | Scanned PDF Record |
+| Feature | Live Verify | LIMS Software (LabWare) | Scanned PDF Record |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Lab. | **System-Bound.** Trust the DB admin. | **Zero.** Easily forged. |
 | **User Access** | **Universal.** Share with any journal/auditor. | **Zero.** External parties never get LIMS logins. | **Universal.** |
 | **Integrity** | **Cryptographic.** Binds the Serial #. | **High.** | **Vulnerable.** |
 | **Permanence** | **Archival.** Text is permanent. | **Ephemeral.** Databases get migrated/lost. | **Vulnerable.** |
 
-**Why OCR wins here:** The "External Trust" problem. A lab's internal LIMS is great for them, but useless for the **Scientific Community**. When a result is published or a drug is filed for approval, the trust must move with the data. OCR-to-hash turns the **Static Calibration PDF** into a portable, cryptographically trusted asset.
+**Why Live Verify wins here:** The "External Trust" problem. A lab's internal LIMS is great for them, but useless for the **Scientific Community**. When a result is published or a drug is filed for approval, the trust must move with the data. Live Verify turns the **Static Calibration PDF** into a portable, cryptographically trusted asset.

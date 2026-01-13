@@ -119,13 +119,13 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Open Banking / APIs
 
-| Feature | OCR-to-Hash | Open Banking (Plaid/Yodlee) | App-to-App |
+| Feature | Live Verify | Open Banking (Plaid/Yodlee) | App-to-App |
 | :--- | :--- | :--- | :--- |
 | **User Privacy** | **High.** Verifier sees only what is printed. No login credential sharing. | **Low.** Requires sharing banking login/password with third party. | **Medium.** Requires specific app integrations. |
 | **Friction** | **Low.** Scan the paper. No app install needed for verifier. | **High.** Requires user to log in and authorize data sharing. | **High.** Both sides need the app. |
 | **Physical World** | **Native.** Works on the printed page at an embassy desk. | **Non-existent.** Cannot "click" a link on paper. | **Low.** Requires digital handshake. |
 | **Cost** | **Zero/Low.** Static web hosting. | **High.** Aggregators charge per connection. | **High.** Development cost. |
 
-**Why OCR wins here:**
-For **ad-hoc, low-tech interactions** (like handing a paper to a landlord or a visa officer), Open Banking is overkill and technically difficult. OCR-to-hash bridges the gap: it makes the *paper* smart without forcing the landlord to integrate with Plaid.
+**Why Live Verify wins here:**
+For **ad-hoc, low-tech interactions** (like handing a paper to a landlord or a visa officer), Open Banking is overkill and technically difficult. Live Verify bridges the gap: it makes the *paper* smart without forcing the landlord to integrate with Plaid.
 

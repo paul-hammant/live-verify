@@ -119,11 +119,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. EDI (Electronic Data Interchange)
 
-| Feature | OCR-to-Hash | EDI (AS2/SFTP) | Scanned PDF Manifest |
+| Feature | Live Verify | EDI (AS2/SFTP) | Scanned PDF Manifest |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Shipper. | **System-Bound.** Trust the network. | **Zero.** Easily forged. |
 | **Field Access** | **Instant.** Scan the paper at the dock. | **Hard.** Requires access to secure portals. | **Instant.** |
 | **Integrity** | **Binds Details.** Protects weights/SKUs. | **High.** Direct DB-to-DB. | **Vulnerable.** |
 | **Cost** | **Free.** (Marginal implementation). | **High.** Requires complex integration. | **Free.** |
 
-**Why OCR wins here:** The "Loading Dock" reality. Logistics is a world of paper. Trucks arrive at warehouses where drivers hand over clipboards. Dock workers don't have access to the multi-million dollar EDI systems used by headquarters. OCR-to-hash turns the **Driver's Clipboard** into a live digital portal, ensuring that "Cargo Integrity" is a verified fact at the point of physical handoff.
+**Why Live Verify wins here:** The "Loading Dock" reality. Logistics is a world of paper. Trucks arrive at warehouses where drivers hand over clipboards. Dock workers don't have access to the multi-million dollar EDI systems used by headquarters. Live Verify turns the **Driver's Clipboard** into a live digital portal, ensuring that "Cargo Integrity" is a verified fact at the point of physical handoff.

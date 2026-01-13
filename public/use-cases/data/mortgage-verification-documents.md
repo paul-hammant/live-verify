@@ -75,10 +75,10 @@ The **Borrower / Employee** (second party) receives the verification of employme
 The borrower / employee (second party) may hand the verified document to various third parties:
 
 **Mortgage Underwriters (Lenders)**
-**Zero-Trust Vetting:** Employment fraud is the most common cause of mortgage failure. Scammers create fake "HR" companies with fake phone numbers to verify fake salaries. OCR-to-hash connects the underwriter directly to the real employer's domain, stopping "Fake Salary" fraud at the source.
+**Zero-Trust Vetting:** Employment fraud is the most common cause of mortgage failure. Scammers create fake "HR" companies with fake phone numbers to verify fake salaries. Live Verify connects the underwriter directly to the real employer's domain, stopping "Fake Salary" fraud at the source.
 
 **Fannie Mae / Freddie Mac Auditors**
-**Portfolio Audit:** Instantly verifying thousands of loan files. OCR-to-hash ensures that the VOE letters in the files weren't "Photoshopped" by a dishonest loan officer to meet a quota.
+**Portfolio Audit:** Instantly verifying thousands of loan files. Live Verify ensures that the VOE letters in the files weren't "Photoshopped" by a dishonest loan officer to meet a quota.
 
 **Government Housing Agencies (FHA/VA)**
 **Compliance:** Ensuring that loans meet federal "Ability-to-Repay" (ATR) laws based on verified, non-falsified income data.
@@ -124,14 +124,14 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. The Work Number (Equifax)
 
-| Feature | OCR-to-Hash | The Work Number | Manual Phone Check |
+| Feature | Live Verify | The Work Number | Manual Phone Check |
 | :--- | :--- | :--- | :--- |
 | **User Privacy** | **High.** Employee shares only the *Single VOE*. | **Low.** Lenders see full historical data pool. | **Medium.** |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Employer. | **Data-Bound.** Trust the aggregator. | **Human.** Prone to social engineering. |
 | **Interoperability** | **Universal.** Works for any small firm with a URL. | **Limited.** Only for large firms who pay for TWN. | **Universal.** |
 | **Cost** | **Low.** Standard web infra. | **Very High.** Lenders pay $50-$100 per check. | **High.** Costs in human time. |
 
-**Why OCR wins here:** The "Local SMB" reality. Millions of people work for small law firms, dental offices, or local construction companies that aren't on "The Work Number." They rely on "Persistent Paper" letters. OCR-to-hash turns those **Manual Letters** into a "Fortune 500" level trust artifact, bringing modern security to the entire housing economy.
+**Why Live Verify wins here:** The "Local SMB" reality. Millions of people work for small law firms, dental offices, or local construction companies that aren't on "The Work Number." They rely on "Persistent Paper" letters. Live Verify turns those **Manual Letters** into a "Fortune 500" level trust artifact, bringing modern security to the entire housing economy.
 
 
 ---
@@ -202,7 +202,7 @@ The **Borrower / Employee** (second party) receives the paystub from the employe
 The borrower / employee (second party) may hand the verified document to various third parties:
 
 **Mortgage Underwriters**
-**Zero-Trust Vetting:** Income fraud is the most common cause of mortgage failure. OCR-to-hash ensures the applicant hasn't "Photoshopped" a $4,000 net pay into a $14,000 net pay. Underwriters can scan the hash to see the real number from the payroll provider's domain.
+**Zero-Trust Vetting:** Income fraud is the most common cause of mortgage failure. Live Verify ensures the applicant hasn't "Photoshopped" a $4,000 net pay into a $14,000 net pay. Underwriters can scan the hash to see the real number from the payroll provider's domain.
 
 **Fannie Mae / Freddie Mac Auditors**
 **Portfolio Audit:** Instantly verifying the "Quality of Income" in a pool of 10,000 loans by scanning the original pay stub hashes.
@@ -260,11 +260,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. The Work Number (Equifax)
 
-| Feature | OCR-to-Hash | The Work Number | Scanned PDF / Paper |
+| Feature | Live Verify | The Work Number | Scanned PDF / Paper |
 | :--- | :--- | :--- | :--- |
 | **User Privacy** | **High.** Employee shares only the *Single Paystub*. | **Low.** Lenders see full historical data pool. | **High.** |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Employer. | **Data-Bound.** Trust the aggregator. | **Zero.** Easily forged. |
 | **Interoperability** | **Universal.** Works for any small firm with a URL. | **Limited.** Only for large firms who pay for TWN. | **Universal.** |
 | **Cost** | **Low.** Standard web infra. | **Very High.** Lenders pay $50-$100 per check. | **None.** |
 
-**Why OCR wins here:** The "Local Business" reality. Millions of people work for small firms that aren't on "The Work Number." They rely on "Persistent Paper" paystubs. OCR-to-hash turns those **Manual Artifacts** into "Fortune 500" level trust artifacts, bringing modern security to the entire housing economy.
+**Why Live Verify wins here:** The "Local Business" reality. Millions of people work for small firms that aren't on "The Work Number." They rely on "Persistent Paper" paystubs. Live Verify turns those **Manual Artifacts** into "Fortune 500" level trust artifacts, bringing modern security to the entire housing economy.

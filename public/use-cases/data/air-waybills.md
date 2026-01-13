@@ -115,14 +115,14 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. e-AWB (Electronic Air Waybill)
 
-| Feature | OCR-to-Hash | e-AWB (IATA) |
+| Feature | Live Verify | e-AWB (IATA) |
 | :--- | :--- | :--- |
 | **Adoption** | **Universal.** Works even for small forwarders/airlines not fully integrated. | **High but not 100%.** Many lanes/countries still require paper. |
 | **Physical Handoff** | **Strong.** Verifies the paper accompanying the freight in the truck. | **Weak.** Truckers often don't have access to the e-AWB system; they carry paper. |
 | **Interoperability** | **Web-based.** Anyone (bank, insurer, customs) can verify. | **Siloed.** Cargo Community Systems (CCS) require membership/login. |
 | **Data Integrity** | **Snapshot.** Proves what was printed at origin. | **Dynamic.** System data updates; audit trail of changes can be complex. |
 
-**Why OCR wins here:** Despite the push for e-AWB, paper persists in the "Last Mile" (trucking to/from airport) and in customs procedures of developing nations. OCR-to-hash turns that persistent paper into a trusted digital pointer, bridging the gap until 100% global digitization is achieved (which is decades away).
+**Why Live Verify wins here:** Despite the push for e-AWB, paper persists in the "Last Mile" (trucking to/from airport) and in customs procedures of developing nations. Live Verify turns that persistent paper into a trusted digital pointer, bridging the gap until 100% global digitization is achieved (which is decades away).
 
 
 ---
@@ -255,11 +255,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. IATA e-AWB
 
-| Feature | OCR-to-Hash | IATA e-AWB (Cargo-XML) | Paper HAWB |
+| Feature | Live Verify | IATA e-AWB (Cargo-XML) | Paper HAWB |
 | :--- | :--- | :--- | :--- |
 | **User Access** | **Universal.** Any small shipper/bank can verify. | **Restricted.** Requires complex IATA Cargo-XML messaging setup. | **Instant.** |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Forwarder. | **System-Bound.** | **Zero.** Easily forged. |
 | **Interoperability** | **High.** PDFs stay verifiable across systems. | **Medium.** Requires both parties to be on the e-AWB network. | **Universal.** |
 | **Integrity** | **Binds Content.** Protects the weight/count. | **Data-Only.** | **Vulnerable.** |
 
-**Why OCR wins here:** The "Forwarder Tail." While the top 50 forwarders use e-AWB, there are 50,000 small forwarders globally who still issue PDF/Paper HAWBs. OCR-to-hash turn those **Manual Documents** into cryptographically trusted digital artifacts, bringing "Digital Logistics" trust to the entire global SME market.
+**Why Live Verify wins here:** The "Forwarder Tail." While the top 50 forwarders use e-AWB, there are 50,000 small forwarders globally who still issue PDF/Paper HAWBs. Live Verify turn those **Manual Documents** into cryptographically trusted digital artifacts, bringing "Digital Logistics" trust to the entire global SME market.

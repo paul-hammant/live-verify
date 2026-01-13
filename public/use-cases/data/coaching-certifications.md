@@ -131,11 +131,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Learning Portals (USSF Learning Center)
 
-| Feature | OCR-to-Hash | Learning Portal (Login) | Physical License / ID |
+| Feature | Live Verify | Learning Portal (Login) | Physical License / ID |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Federation. | **System-Bound.** Requires login. | **Visual.** Trusted only via stamp. |
 | **Sideline Access** | **Instant.** Scan the coach's lanyard. | **Hard.** No one logs into a portal on a muddy field. | **Instant.** |
 | **Integrity** | **Cryptographic.** Binds photo to status. | **High.** Direct DB access. | **Low.** Easily faked. |
 | **User Control** | **High.** Coach shares only the Badge. | **Low.** Portal exposes full academic history. | **High.** |
 
-**Why OCR wins here:** The "Sideline Audit." Soccer tournaments happen on remote fields with 50 teams at once. Officials need a high-speed, mobile-first way to verify that every adult on the sideline is a "Verified Safe" professional. OCR-to-hash turns the **Coach's Lanyard** into a live, trusted security token.
+**Why Live Verify wins here:** The "Sideline Audit." Soccer tournaments happen on remote fields with 50 teams at once. Officials need a high-speed, mobile-first way to verify that every adult on the sideline is a "Verified Safe" professional. Live Verify turns the **Coach's Lanyard** into a live, trusted security token.

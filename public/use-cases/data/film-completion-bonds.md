@@ -128,11 +128,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Legal "Opinion Letters"
 
-| Feature | OCR-to-Hash | Attorney Opinion Letter | Scanned PDF |
+| Feature | Live Verify | Attorney Opinion Letter | Scanned PDF |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Guarantor. | **Credential-Bound.** Trust the lawyer. | **Zero.** Easily forged. |
 | **Speed** | **Instant.** 5-second scan. | **Slow.** Requires 3-5 days of billable legal review. | **Instant.** |
 | **Cost** | **Low.** Standard web infra. | **Very High.** Lawyers charge $1,000+ per letter. | **None.** |
 | **Freshness** | **Real-time.** Shows "Takeover" status today. | **Snapshot.** Only valid for the day it was written. | **Static.** |
 
-**Why OCR wins here:** The "Fast-Paced Set" reality. Film finance is chaotic. Decisions to release "Day-of-Shoot" funds happen at 4 AM. OCR-to-hash turns the **Bond Certificate** into a live digital checkpoint, ensuring that the multimillion-dollar "Safety Net" is actually under the tightrope before the cameras roll.
+**Why Live Verify wins here:** The "Fast-Paced Set" reality. Film finance is chaotic. Decisions to release "Day-of-Shoot" funds happen at 4 AM. Live Verify turns the **Bond Certificate** into a live digital checkpoint, ensuring that the multimillion-dollar "Safety Net" is actually under the tightrope before the cameras roll.

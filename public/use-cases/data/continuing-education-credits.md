@@ -73,7 +73,7 @@ The **Professional** (Attorney/Doctor/CPA) benefits from verification.
 ## Third-Party Use
 
 **State Licensing Boards (The Bar / Medical Board)**
-**Audit Efficiency:** Boards conduct random audits of 5-10% of all professionals. OCR-to-hash allows board staff to instantly verify a pile of certificates without calling 50 different education providers to confirm "Did John Smith really attend this webinar?"
+**Audit Efficiency:** Boards conduct random audits of 5-10% of all professionals. Live Verify allows board staff to instantly verify a pile of certificates without calling 50 different education providers to confirm "Did John Smith really attend this webinar?"
 
 **Insurance Carriers (Professional Liability)**
 **Risk Assessment:** Verifying that a professional is staying current with latest safety/ethics training, which can lead to lower E&O (Errors & Omissions) premiums.
@@ -121,11 +121,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Central Learning Registries
 
-| Feature | OCR-to-Hash | Learning Management System (LMS) | Physical Certificate |
+| Feature | Live Verify | Learning Management System (LMS) | Physical Certificate |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Provider. | **System-Bound.** Trust the LMS vendor. | **Visual.** Trusted only via stamp. |
 | **User Control** | **High.** Professional keeps the anchor. | **Low.** Data resides in a 3rd party silo. | **High.** |
 | **Interoperability** | **Universal.** PDFs work across all state boards. | **Low.** Different boards use different software. | **Universal.** |
 | **Speed** | **Instant.** 5-second scan. | **Slow.** Requires login, data export, and manual upload. | **N/A.** |
 
-**Why OCR wins here:** The "Compliance Binder" reality. Most professionals store their certificates in a physical or digital folder throughout the year. At renewal time, they need to submit them to a board that doesn't have access to their private learning portal. OCR-to-hash turns the **Static Certificate** into a portable, cryptographically trusted artifact that bridges the gap between the Learner and the Regulator.
+**Why Live Verify wins here:** The "Compliance Binder" reality. Most professionals store their certificates in a physical or digital folder throughout the year. At renewal time, they need to submit them to a board that doesn't have access to their private learning portal. Live Verify turns the **Static Certificate** into a portable, cryptographically trusted artifact that bridges the gap between the Learner and the Regulator.

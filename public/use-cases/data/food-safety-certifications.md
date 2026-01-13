@@ -101,7 +101,7 @@ The **Manufacturer / Processor** benefits from verification.
 ## Third-Party Use
 
 **Retail Procurement Teams**
-**Supply Chain Integrity:** Instantly verifying the safety certificates of 500+ suppliers. OCR-to-hash allows procurement platforms to automatically flag suppliers with "Suspended" or "Expired" certificates, preventing contaminated food from reaching store shelves.
+**Supply Chain Integrity:** Instantly verifying the safety certificates of 500+ suppliers. Live Verify allows procurement platforms to automatically flag suppliers with "Suspended" or "Expired" certificates, preventing contaminated food from reaching store shelves.
 
 **Consumers (Labels)**
 **Trust Check:** Scanning a QR code on a pack of "Verified Halal" or "Verified Organic" food. "Verified by OU Kosher" provides instant, cryptographic assurance that the label isn't just a marketing fabrication.
@@ -149,11 +149,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Private Portals (ReposiTrak)
 
-| Feature | OCR-to-Hash | Supplier Portals (ReposiTrak) | Scanned PDF |
+| Feature | Live Verify | Supplier Portals (ReposiTrak) | Scanned PDF |
 | :--- | :--- | :--- | :--- |
 | **User Access** | **Universal.** Any retailer/buyer can verify. | **Restricted.** Requires all parties to pay for the portal. | **Instant.** |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Auditor. | **System-Bound.** Trust the portal vendor. | **Zero.** Easily forged. |
 | **Interoperability** | **High.** Works across 100+ different cert bodies. | **Low.** Hard to export "Trust" to other systems. | **Universal.** |
 | **Integrity** | **Binds Content.** Protects the audit score. | **Data-Only.** | **Vulnerable.** |
 
-**Why OCR wins here:** The "Supply Chain Web." A manufacturer might have 10 different customers, each using a different compliance portal. OCR-to-hash turns the **Standard PDF Certificate** into a "Universal Trust Link" that works across every portal, every app, and every border without redundant manual entry.
+**Why Live Verify wins here:** The "Supply Chain Web." A manufacturer might have 10 different customers, each using a different compliance portal. Live Verify turns the **Standard PDF Certificate** into a "Universal Trust Link" that works across every portal, every app, and every border without redundant manual entry.

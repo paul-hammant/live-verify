@@ -93,7 +93,7 @@ The **Software Buyer / CISO** benefits from verification.
 ## Third-Party Use
 
 **Government Regulators (CISA / NIST)**
-**Supply Chain Oversight:** Under Executive Order 14028, US government vendors must provide SBOMs. OCR-to-hash allows federal auditors to instantly verify that the paper summaries in their files match the technical records in the vendor's secure portal.
+**Supply Chain Oversight:** Under Executive Order 14028, US government vendors must provide SBOMs. Live Verify allows federal auditors to instantly verify that the paper summaries in their files match the technical records in the vendor's secure portal.
 
 **Cyber-Insurance Underwriters**
 **Risk Assessment:** Verifying the "Security Posture" of a policyholder by scanning their critical software SBOMs. Higher transparency and fewer CVEs lead to lower premiums.

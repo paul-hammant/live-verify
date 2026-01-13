@@ -129,11 +129,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. QR Codes (Offline)
 
-| Feature | OCR-to-Hash | Standard QR Code | Scanned PDF |
+| Feature | Live Verify | Standard QR Code | Scanned PDF |
 | :--- | :--- | :--- | :--- |
 | **Integrity** | **Cryptographic.** Binds the *Participant Name*. | **Data-Only.** Often just a raw URL or ID string. | **Zero.** Easily forged. |
 | **Interoperability** | **Universal.** Any smartphone browser. | **App-Locked.** Often requires the specific "Viator" app to decode. | **Universal.** |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Operator. | **Platform-Bound.** | **Visual.** |
 | **Offline Check** | **Strong.** Protects the printed text integrity. | **None.** Requires live DB access to mean anything. | **Vulnerable.** |
 
-**Why OCR wins here:** The "Remote Meeting" reality. Many tours start in places with terrible Wi-Fi (deserts, mountains, boat docks). A guide often has to trust the paper voucher. OCR-to-hash turns the **Printed Text** into an immutable anchor that proves the voucher's data hasn't been altered since issuance, even before the guide syncs with the home office.
+**Why Live Verify wins here:** The "Remote Meeting" reality. Many tours start in places with terrible Wi-Fi (deserts, mountains, boat docks). A guide often has to trust the paper voucher. Live Verify turns the **Printed Text** into an immutable anchor that proves the voucher's data hasn't been altered since issuance, even before the guide syncs with the home office.

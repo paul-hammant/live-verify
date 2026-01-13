@@ -14,7 +14,7 @@ A **Driver License** is the world's most common ID. It proves you are allowed to
 
 The problem? "High-Quality Fakes" are now so good that even expert bouncers and police can be fooled.
 
-OCR-to-hash turns the **Physical Card** into a live link to the DMV's database. This allows a bouncer or an officer to see if the license has been "Revoked" or "Suspended" *today*, something a static barcode on the back of the card can never do.
+Live Verify turns the **Physical Card** into a live link to the DMV's database. This allows a bouncer or an officer to see if the license has been "Revoked" or "Suspended" *today*, something a static barcode on the back of the card can never do.
 
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 1px solid #333; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
   <div style="background: #1565c0; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
@@ -90,7 +90,7 @@ The **Named Individual** benefits from verification.
 ## Third-Party Use
 
 **Police Officers (Roadside)**
-**Identity Integrity:** Instantly confirming that the person handed them a real, non-suspended license. Fraudsters often use high-quality "Novice" fakes; OCR-to-hash connects the officer directly to the DMV record in seconds.
+**Identity Integrity:** Instantly confirming that the person handed them a real, non-suspended license. Fraudsters often use high-quality "Novice" fakes; Live Verify connects the officer directly to the DMV record in seconds.
 
 **Employers (HR Departments)**
 **Driving Jobs:** Verifying the "Commercial Endorsements" of a truck driver before they operate a multi-million dollar fleet vehicle.
@@ -168,11 +168,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Barcode Scanners (PDF417)
 
-| Feature | OCR-to-Hash | Barcode Scanner (Handheld) | Visual Inspection |
+| Feature | Live Verify | Barcode Scanner (Handheld) | Visual Inspection |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the DMV. | **Self-Contained.** Trust the data *on* the card. | **Human.** Prone to error. |
 | **Freshness** | **Real-time.** Shows if suspended *today*. | **Static.** Only shows what was printed years ago. | **Static.** |
 | **Integrity** | **Cryptographic.** Binds photo to status. | **Medium.** Easy to "Clone" a real barcode onto a fake ID. | **Zero.** |
 | **Hardware** | **Universal.** Any smartphone browser. | **Specialized.** Requires expensive scanners or apps. | **Human Eye.** |
 
-**Why OCR wins here:** Freshness and Universality. A minor can buy a fake ID with a "Perfectly Scalable Barcode" that scans as 21+. But that minor **cannot** create a record on `dmv.ca.gov`. OCR-to-hash allows a bouncer or a police officer to check the **Live Status** of the person, bypassing the "Static Data" flaws of barcodes.
+**Why Live Verify wins here:** Freshness and Universality. A minor can buy a fake ID with a "Perfectly Scalable Barcode" that scans as 21+. But that minor **cannot** create a record on `dmv.ca.gov`. Live Verify allows a bouncer or a police officer to check the **Live Status** of the person, bypassing the "Static Data" flaws of barcodes.

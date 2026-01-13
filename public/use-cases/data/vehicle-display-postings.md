@@ -12,7 +12,7 @@ furtherDerivations: 1
 
 In the urban transport economy, **Vehicle Postings** are the "ID Cards" for cars. From the **Taxi Medallion** on the hood to the **For-Hire Vehicle (FHV) Permit** on the dashboard, these documents prove the vehicle is legally licensed, insured, and safe for passengers.
 
-These postings are the primary defense against "Ghost Taxis"—unlicensed cars that roam city streets to prey on tourists or late-night travelers. Fraud is high-stakes: criminals often use fake dashboard cards to bypass airport security or to trick passengers into entering an un-insured vehicle. OCR-to-hash allows a passenger or police officer to scan the displayed card through the window to verify: **"Is this vehicle currently authorized for hire, and does the driver's ID match the city's official record?"**
+These postings are the primary defense against "Ghost Taxis"—unlicensed cars that roam city streets to prey on tourists or late-night travelers. Fraud is high-stakes: criminals often use fake dashboard cards to bypass airport security or to trick passengers into entering an un-insured vehicle. Live Verify allows a passenger or police officer to scan the displayed card through the window to verify: **"Is this vehicle currently authorized for hire, and does the driver's ID match the city's official record?"**
 
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 3px solid #ffcc00; border-radius: 10px; background: #fff; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
   <div style="background: #ffcc00; color: #000; padding: 15px; display: flex; align-items: center; border-bottom: 2px solid #000;">

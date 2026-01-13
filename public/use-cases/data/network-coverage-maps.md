@@ -108,13 +108,13 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Speedtest Apps
 
-| Feature | OCR-to-Hash | Speedtest App (Ookla/Fast) |
+| Feature | Live Verify | Speedtest App (Ookla/Fast) |
 | :--- | :--- | :--- |
 | **Time** | **Past.** Proves what was promised *at contract signing*. | **Present.** Measures what is happening *now*. |
 | **Legal Weight** | **High.** It's a contract document. | **Low.** "Your phone might be broken." |
 | **Granularity** | **Site Specific.** Can cover a whole warehouse campus. | **Point Specific.** Measures one device's location. |
 | **Integration** | **Paper/PDF Contract.** Lives with the legal docs. | **App.** Requires active testing. |
 
-**Why OCR wins here:**
+**Why Live Verify wins here:**
 You can't "Speedtest" the past. When a dispute arises 2 years into a contract, you need to prove what the carrier *promised* back in 2026. The verified SLA document provides that immutable snapshot.
 

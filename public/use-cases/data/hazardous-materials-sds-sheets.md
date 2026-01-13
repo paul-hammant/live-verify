@@ -133,11 +133,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. QR Codes / Digital Binders
 
-| Feature | OCR-to-Hash | Standard QR Code | Digital SDS Portal |
+| Feature | Live Verify | Standard QR Code | Digital SDS Portal |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Manufacturer. | **Data-Only.** Often just a raw URL link. | **System-Bound.** |
 | **Integrity** | **Cryptographic.** Protects the *Text*. | **Vulnerable.** QR can link to a fake page. | **High.** |
 | **Offline Proof** | **Strong.** The paper/binder is the anchor. | **None.** Requires live internet to mean anything. | **Zero.** |
 | **Field Use** | **Universal.** Works for printed "Cheat Sheets." | **Fragile.** Codes get torn/dirty. | **N/A.** |
 
-**Why OCR wins here:** The "Binder Reality." OSHA requires that SDSs be "Readily Accessible" to workers. In high-risk areas (factories, ships, mines), this means a physical paper binder because tech fails. OCR-to-hash turns that **Mandatory Paper Binder** into a live digital checkpoint, ensuring that "Life Safety" data is as accurate as the cloud but as reliable as paper.
+**Why Live Verify wins here:** The "Binder Reality." OSHA requires that SDSs be "Readily Accessible" to workers. In high-risk areas (factories, ships, mines), this means a physical paper binder because tech fails. Live Verify turns that **Mandatory Paper Binder** into a live digital checkpoint, ensuring that "Life Safety" data is as accurate as the cloud but as reliable as paper.

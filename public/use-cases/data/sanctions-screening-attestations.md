@@ -73,7 +73,7 @@ The **Compliance Department / Exporter** benefits from verification.
 **Transaction Clearing:** When a $10M wire moves through a bank, they scan the verified sanctions hashes attached to the payment. Verification ensures that the "Director Check" was actually performed by a reputable provider and hasn't been "Faked" to hide a money-laundering source.
 
 **Government Regulators (OFAC / Treasury)**
-**Thematic Review:** During a compliance audit, the regulator can scan random attestation hashes. OCR-to-hash ensures the institution isn't "Cherry-Picking" lists or using older, "Cleaner" datasets to hide problematic customers.
+**Thematic Review:** During a compliance audit, the regulator can scan random attestation hashes. Live Verify ensures the institution isn't "Cherry-Picking" lists or using older, "Cleaner" datasets to hide problematic customers.
 
 **Venture Capital Investors**
 **Investment Vetting:** Verifying the "Sanctions Health" of a target startup's cap table before making a major equity investment.

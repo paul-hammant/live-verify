@@ -115,11 +115,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Customs ACE Portal
 
-| Feature | OCR-to-Hash | ACE Portal (Gov) | Paper Receipt |
+| Feature | Live Verify | ACE Portal (Gov) | Paper Receipt |
 | :--- | :--- | :--- | :--- |
 | **User Access** | **Universal.** Any trucker/bank/auditor. | **Restricted.** Requires expensive "ACE Portal" credentials. | **Instant.** |
 | **Trust** | **Cryptographic.** Bound to the Warehouse Operator. | **High.** Gov database. | **Zero.** Easily forged. |
 | **Offline Proof** | **Strong.** The paper is the audit anchor. | **None.** Requires live gov system access. | **Medium.** |
 | **Efficiency** | **Instant.** Scan the pallet tag. | **Slow.** Login, search entry #, find line item. | **Manual.** |
 
-**Why OCR wins here:** The "Warehouse Floor" workflow. Customs inspectors and warehouse managers don't want to carry laptops and log into slow government portals while walking between rows of cargo. A self-verifying pallet tag provides the **immediate confirmation** needed for high-speed logistics and enforcement.
+**Why Live Verify wins here:** The "Warehouse Floor" workflow. Customs inspectors and warehouse managers don't want to carry laptops and log into slow government portals while walking between rows of cargo. A self-verifying pallet tag provides the **immediate confirmation** needed for high-speed logistics and enforcement.

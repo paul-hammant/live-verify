@@ -68,7 +68,7 @@ The **Manufacturer / Importer** benefits from verification.
 **Anti-Counterfeit Vetting:** In a busy port, an officer scans the label on a crate of lithium batteries. If the hash returns **"NOT FOUND"** or **"DOMAIN MISMATCH,"** they can seize the shipment immediately, stopping dangerous un-tested electronics from entering the market.
 
 **Fire Marshals / Safety Inspectors**
-**Field Integrity:** During a building inspection, the marshal scans the "Verified" stickers on the electrical panels or commercial kitchen equipment. OCR-to-hash ensures the equipment hasn't been "Fake Labeled" to hide a lack of certification.
+**Field Integrity:** During a building inspection, the marshal scans the "Verified" stickers on the electrical panels or commercial kitchen equipment. Live Verify ensures the equipment hasn't been "Fake Labeled" to hide a lack of certification.
 
 **Amazon / E-commerce Platforms**
 **Merchant Accountability:** Automatically de-listing any seller whose verified safety hash returns a **"RECALLED"** or **"WITHDRAWN"** status, protecting customers from exploding chargers or toxic toys.

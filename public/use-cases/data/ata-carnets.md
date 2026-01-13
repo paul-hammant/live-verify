@@ -127,10 +127,10 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. e-ATA (Digital Carnet)
 
-| Feature | OCR-to-Hash | e-ATA (ICC Project) | Paper Carnet (Traditional) |
+| Feature | Live Verify | e-ATA (ICC Project) | Paper Carnet (Traditional) |
 | :--- | :--- | :--- | :--- |
 | **Connectivity** | **Offline-Ready.** Paper works when port Wi-Fi fails. | **Fragile.** Requires live app + cloud connectivity at the border. | **Manual.** Relies on physical stamps. |
 | **Trust** | **Domain-Bound.** Trust the National Chamber. | **Platform-Bound.** Requires all countries to join the same IT system. | **Visual.** Prone to stamp forgery. |
 | **Audit Trail** | **Hybrid.** Physical stamps + digital snapshots. | **Digital Only.** Hard to reconcile with physical boxes in a truck. | **Physical.** Hard to audit centrally. |
 
-**Why OCR wins here:** Customs borders are "Disconnected Edges." An officer in a remote port may not have the right app or credentials for the ICC's global e-ATA system. But they *always* have a phone with a browser. OCR-to-hash turns the persistent paper carnet into a universal digital bridge that works across any border, app-free.
+**Why Live Verify wins here:** Customs borders are "Disconnected Edges." An officer in a remote port may not have the right app or credentials for the ICC's global e-ATA system. But they *always* have a phone with a browser. Live Verify turns the persistent paper carnet into a universal digital bridge that works across any border, app-free.

@@ -124,11 +124,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Platform Dashboards
 
-| Feature | OCR-to-Hash | Platform Dashboard | Scanned PDF / Email |
+| Feature | Live Verify | Platform Dashboard | Scanned PDF / Email |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Platform. | **System-Bound.** | **Zero.** Easily forged. |
 | **Interoperability** | **Universal.** Works for secondary sales. | **Siloed.** Hard to prove status to a 3rd party buyer. | **Universal.** |
 | **Integrity** | **Binds Tier.** Protects the "Reward Level." | **Data-Only.** | **Vulnerable.** |
 | **Speed** | **Instant.** 5-second scan. | **Slow.** Requires 2FA and navigation. | **N/A.** |
 
-**Why OCR wins here:** The "Handoff Economy." People trade crowdfunding spots on Reddit and eBay. A static email screenshot is worthless for trust. OCR-to-hash turns the **Pledge Receipt** into a transferable "Proof of Ownership" that can be verified by anyone, anywhere, without needing the original owner's password.
+**Why Live Verify wins here:** The "Handoff Economy." People trade crowdfunding spots on Reddit and eBay. A static email screenshot is worthless for trust. Live Verify turns the **Pledge Receipt** into a transferable "Proof of Ownership" that can be verified by anyone, anywhere, without needing the original owner's password.

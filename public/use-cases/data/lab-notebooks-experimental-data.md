@@ -72,7 +72,7 @@ The **Lead Researcher / PI** benefits from verification.
 ## Third-Party Use
 
 **University Compliance Officers**
-**Integrity Audit:** Instantly verifying that all data in a high-profile study has a verified digital chain of custody. OCR-to-hash prevents "Data Fabrication" where a researcher invents results in their bedroom without real lab work.
+**Integrity Audit:** Instantly verifying that all data in a high-profile study has a verified digital chain of custody. Live Verify prevents "Data Fabrication" where a researcher invents results in their bedroom without real lab work.
 
 **Patent Attorneys**
 **Prior Art Search:** Verifying the "First Publication Date" of a competitor's experimental data to determine if a patent is valid.
@@ -122,11 +122,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Blockchain (Ocean Protocol)
 
-| Feature | OCR-to-Hash | Science Blockchain (Ocean/DeSci) | ELN Audit Log |
+| Feature | Live Verify | Science Blockchain (Ocean/DeSci) | ELN Audit Log |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the University. | **Consensus-Bound.** Trust the network. | **System-Bound.** |
 | **Interoperability** | **High.** PDFs stay verifiable across institutions. | **Low.** Requires all partners to use the same chain. | **Zero.** |
 | **Content Link** | **Binds Summary.** Protects the *Message*. | **Binds Files.** | **Vulnerable.** |
 | **Cost** | **Low.** Standard web infra. | **Medium.** Gas fees and storage costs. | **High.** Enterprise license fees. |
 
-**Why OCR wins here:** The "Handoff Gap." Science is collaborative. A researcher at Stanford shares a PDF summary with a partner at MIT. The partner doesn't have access to Stanford's private LabArchives server. OCR-to-hash turns that **PDF Summary** into a live digital anchor, providing "Blockchain Integrity" without the "Blockchain Complexity."
+**Why Live Verify wins here:** The "Handoff Gap." Science is collaborative. A researcher at Stanford shares a PDF summary with a partner at MIT. The partner doesn't have access to Stanford's private LabArchives server. Live Verify turns that **PDF Summary** into a live digital anchor, providing "Blockchain Integrity" without the "Blockchain Complexity."

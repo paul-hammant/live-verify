@@ -67,7 +67,7 @@ The **Homeowner (Ex-Borrower)** benefits from verification.
 ## Third-Party Use
 
 **Real Estate Attorneys / Title Companies**
-**Title Clearance:** Ensuring that the "Satisfaction Letter" provided by the seller isn't a fake PDF created to hide an active $500,000 debt. OCR-to-hash connects the attorney directly to the lender's domain, stopping the most common form of "Title Fraud."
+**Title Clearance:** Ensuring that the "Satisfaction Letter" provided by the seller isn't a fake PDF created to hide an active $500,000 debt. Live Verify connects the attorney directly to the lender's domain, stopping the most common form of "Title Fraud."
 
 **County Recorders / Registrars**
 **Fraud Prevention:** Verifying the authenticity of a satisfaction document *before* it is permanently recorded in the public land records.
@@ -115,11 +115,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. County Land Records (GIS)
 
-| Feature | OCR-to-Hash | County GIS / Online Search | Scanned PDF Release |
+| Feature | Live Verify | County GIS / Online Search | Scanned PDF Release |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Lender. | **Database.** High trust but manual. | **Zero.** Easily forged. |
 | **Integrity** | **Binds Content.** Protects the account #. | **Data-Only.** Doesn't verify the paper. | **Vulnerable.** |
 | **Speed** | **Instant.** 5-second scan. | **Slow.** Requires finding the parcel # and navigating old UIs. | **Instant.** |
 | **Audit-ability** | **High.** Proves the bank's intent. | **Medium.** Only shows what was *filed*. | **None.** |
 
-**Why OCR wins here:** The "Lender Intent." County records only show what was *successfully filed*. If a bank issues a release but the courier loses it, the county record is "Dirty." OCR-to-hash turns the **Physical Satisfaction Letter** into a live link back to the bank's system, proving the debt is dead even before the county's database catches up.
+**Why Live Verify wins here:** The "Lender Intent." County records only show what was *successfully filed*. If a bank issues a release but the courier loses it, the county record is "Dirty." Live Verify turns the **Physical Satisfaction Letter** into a live link back to the bank's system, proving the debt is dead even before the county's database catches up.

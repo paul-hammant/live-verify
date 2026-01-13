@@ -77,7 +77,7 @@ The **Homeowner (Member)** benefits from verification.
 ## Third-Party Use
 
 **Real Estate Attorneys / Title Companies**
-**Title Clearance:** Ensuring that the buyer is receiving the **absolute latest version** of the CC&Rs. Title companies currently spend thousands of hours manually checking county records; OCR-to-hash allows for instant, document-level verification.
+**Title Clearance:** Ensuring that the buyer is receiving the **absolute latest version** of the CC&Rs. Title companies currently spend thousands of hours manually checking county records; Live Verify allows for instant, document-level verification.
 
 **Mortgage Underwriters**
 **Risk Management:** Verifying the "Rental Restrictions" or "Assessment Triggers" in the bylaws before approving a high-value condo loan.
@@ -125,14 +125,14 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Private Portals
 
-| Feature | OCR-to-Hash | Resident Portal (Associa) | Scanned PDF / Email |
+| Feature | Live Verify | Resident Portal (Associa) | Scanned PDF / Email |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the HOA. | **System-Bound.** Trust the portal vendor. | **Zero.** Easily forged. |
 | **User Access** | **Universal.** Share with any buyer/lawyer. | **Restricted.** Third parties never get logins. | **Universal.** |
 | **Integrity** | **Binds Content.** Protects the fine-print. | **Vulnerable.** Portal can be "Cleaned up" by admins. | **Zero.** |
 | **Persistence** | **High.** Remains verifiable after sale. | **Low.** Access cut off after move-out. | **Vulnerable.** |
 
-**Why OCR wins here:** The "External Trust" problem. HOA portals are private silos for current residents. But most verification happens for **Non-Residents** (Buyers, Banks, Title Co). OCR-to-hash turns the **Private Governing Document** into a portable, cryptographically trusted artifact that bridges the gap between the building and the market.
+**Why Live Verify wins here:** The "External Trust" problem. HOA portals are private silos for current residents. But most verification happens for **Non-Residents** (Buyers, Banks, Title Co). Live Verify turns the **Private Governing Document** into a portable, cryptographically trusted artifact that bridges the gap between the building and the market.
 
 ---
 
@@ -201,7 +201,7 @@ Shows the issuer domain (`skylinetowers-hoa.com`, `associa.com`) and current rul
 
 The **Homeowner (Member)** benefits from verification.
 
-**Compliance Defense:** If a homeowner is fined $500 for "Short-term Rental," they can verify the exact rule text on the date of the alleged violation. OCR-to-hash prevents a Board from "Silently Editing" the bylaws to increase fines or add restrictions after a dispute has already started.
+**Compliance Defense:** If a homeowner is fined $500 for "Short-term Rental," they can verify the exact rule text on the date of the alleged violation. Live Verify prevents a Board from "Silently Editing" the bylaws to increase fines or add restrictions after a dispute has already started.
 
 **Resale Due Diligence:** Proving to a potential buyer that the "Pet Policy" or "Parking Rules" they are seeing in the sales packet are the **Verified Current Versions** from the Association.
 
@@ -265,11 +265,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. HOA Web Portals
 
-| Feature | OCR-to-Hash | Private Resident Portal | Scanned PDF / Email |
+| Feature | Live Verify | Private Resident Portal | Scanned PDF / Email |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the HOA. | **System-Bound.** | **Zero.** Easily forged. |
 | **User Access** | **Universal.** Share with any buyer/lawyer. | **Restricted.** Third parties never get resident logins. | **Universal.** |
 | **Integrity** | **Binds Text.** Protects the fine-print. | **Vulnerable.** Portal can be "Cleaned up" by admins. | **Zero.** |
 | **Persistence** | **High.** Text remains verifiable post-sale. | **Low.** Access revoked after moving out. | **Vulnerable.** |
 
-**Why OCR wins here:** The "Handoff Gap." HOA portals are private silos. When a home is sold, the "Trust" must cross from the Seller (Member) to the Buyer (Non-Member). OCR-to-hash turns the **Paper Rules** into a portable, cryptographically trusted link that bridges the gap between residents and the outside world.
+**Why Live Verify wins here:** The "Handoff Gap." HOA portals are private silos. When a home is sold, the "Trust" must cross from the Seller (Member) to the Buyer (Non-Member). Live Verify turns the **Paper Rules** into a portable, cryptographically trusted link that bridges the gap between residents and the outside world.

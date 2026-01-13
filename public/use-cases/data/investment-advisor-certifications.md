@@ -75,7 +75,7 @@ The **Investment Advisor (IAR)** benefits from verification.
 **Fraud Prevention:** Before handing over life savings, an investor can verify the advisor's credentials. This stops "Affinity Fraud" where scammers pose as legitimate advisors to target specific religious or professional communities.
 
 **Compliance Departments (CCOs)**
-**Oversight:** Ensuring that every advisor in a large firm is actually keeping their filings current. OCR-to-hash allows for **automated credential auditing** across thousands of employees.
+**Oversight:** Ensuring that every advisor in a large firm is actually keeping their filings current. Live Verify allows for **automated credential auditing** across thousands of employees.
 
 **Referral Platforms**
 **Merchant Vetting:** Ensuring that only verified, non-barred advisors are being recommended to users on financial lead-gen platforms.
@@ -122,11 +122,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. SEC Advisor Search (IAPD)
 
-| Feature | OCR-to-Hash | IAPD / BrokerCheck (Web) | Scanned PDF Brochure |
+| Feature | Live Verify | IAPD / BrokerCheck (Web) | Scanned PDF Brochure |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to `sec.gov`. | **Database.** Direct from source. | **Zero.** Easily forged. |
 | **Integrity** | **Binds Identity.** Proves *Who* is at the desk. | **Vague.** Hard to prove the person in front of you is the person in the DB. | **None.** |
 | **Speed** | **Instant.** 5-second scan. | **Slow.** Requires typing names/CRDs and navigating Gov UI. | **N/A.** |
 | **Hardware** | **Universal.** Any smartphone camera. | **Technical.** Requires laptop/dedicated search. | **Visual.** |
 
-**Why OCR wins here:** The "Meeting Moment." Trust is established in the first 5 minutes of a meeting. Clients are often too polite to type a person's ID into a government website while they are sitting there. OCR-to-hash turns the **Advisor's Business Card** or **Wall Certificate** into a live, high-speed trust anchor, making "Fiduciary Duty" a verified fact in seconds.
+**Why Live Verify wins here:** The "Meeting Moment." Trust is established in the first 5 minutes of a meeting. Clients are often too polite to type a person's ID into a government website while they are sitting there. Live Verify turns the **Advisor's Business Card** or **Wall Certificate** into a live, high-speed trust anchor, making "Fiduciary Duty" a verified fact in seconds.

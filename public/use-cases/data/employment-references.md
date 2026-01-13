@@ -12,7 +12,7 @@ furtherDerivations: 1
 
 A verified employment reference proves you actually worked somewhere. It can appear as an addendum to a CV/resume, in an email after a job offer, or as a standalone VOE letter.
 
-Fraud is common: "Reference Mills" sell fake employment letters. OCR-to-hash connects the verifier directly to the real employer's domain.
+Fraud is common: "Reference Mills" sell fake employment letters. Live Verify connects the verifier directly to the real employer's domain.
 
 <div style="max-width: 550px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 20px;">
   <div style="font-size: 0.85em; color: #555; border-bottom: 1px solid #ddd; padding-bottom: 10px; margin-bottom: 15px;">
@@ -103,7 +103,7 @@ The **Employee (Applicant)** benefits from verification.
 ## Third-Party Use
 
 **Hiring Managers / Recruiters**
-**Fraud Prevention:** Nanny/Reference mills sell fake employment letters for a fee. OCR-to-hash connects the recruiter directly to the real employer's domain, stopping "Fake Resume" fraud at the source.
+**Fraud Prevention:** Nanny/Reference mills sell fake employment letters for a fee. Live Verify connects the recruiter directly to the real employer's domain, stopping "Fake Resume" fraud at the source.
 
 **Background Check Firms (Checkr / Sterling)**
 **Automation:** Firms can use the verification hash to automatically clear employment history checks, significantly lowering their manual labor costs.
@@ -171,11 +171,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. The Work Number (Equifax)
 
-| Feature | OCR-to-Hash | The Work Number | Manual Phone Check |
+| Feature | Live Verify | The Work Number | Manual Phone Check |
 | :--- | :--- | :--- | :--- |
 | **User Privacy** | **High.** Employee controls the document share. | **Low.** Lenders see full historical data pool. | **Medium.** |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Employer. | **Data-Bound.** Trust the aggregator. | **Human.** Prone to social engineering. |
 | **Interoperability** | **Universal.** Works for any company with a URL. | **Limited.** Only for large firms who pay for TWN. | **Universal.** |
 | **Cost** | **Low.** Standard web infra. | **Very High.** Lenders pay $50-$100 per check. | **High.** Costs in human time. |
 
-**Why OCR wins here:** Reach. Small and medium businesses (SMBs) aren't on The Work Number. They rely on "Persistent Paper" reference letters. OCR-to-hash allows a small 5-person law firm or a local bakery to provide the same level of cryptographic trust as a Fortune 500 company.
+**Why Live Verify wins here:** Reach. Small and medium businesses (SMBs) aren't on The Work Number. They rely on "Persistent Paper" reference letters. Live Verify allows a small 5-person law firm or a local bakery to provide the same level of cryptographic trust as a Fortune 500 company.

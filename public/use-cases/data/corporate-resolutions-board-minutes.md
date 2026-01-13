@@ -68,14 +68,14 @@ Shows the issuer domain (`waystar-royco.com`, `wsgr.com`) and current authority 
 
 The **Corporation** benefits from verification.
 
-**Risk Management:** Ensuring that a disgruntled executive doesn't fabricate a "Resolution to Sell Intellectual Property" to liquidate assets behind the board's back. OCR-to-hash provides an immutable audit trail of who was authorized to sign what.
+**Risk Management:** Ensuring that a disgruntled executive doesn't fabricate a "Resolution to Sell Intellectual Property" to liquidate assets behind the board's back. Live Verify provides an immutable audit trail of who was authorized to sign what.
 
 **Banking / KYB:** Proving to a lender that the $500M loan authorization is verified. This speeds up "Know Your Business" (KYB) checks and reduces the risk of document rejection by bank compliance teams.
 
 ## Third-Party Use
 
 **Commercial Lenders (Banks)**
-**Authority Vetting:** Before releasing $500M, the bank's legal team must be 100% certain the person signing the loan has the board's authority. OCR-to-hash turns the Secretary's Certificate into a live, trusted link to the company's official minute book.
+**Authority Vetting:** Before releasing $500M, the bank's legal team must be 100% certain the person signing the loan has the board's authority. Live Verify turns the Secretary's Certificate into a live, trusted link to the company's official minute book.
 
 **M&A Buyers**
 **Due Diligence:** A buyer needs to verify that all major milestones (funding rounds, stock grants, mergers) were properly authorized. A "Verified Minute Book" reduces thousands of hours of legal review in a virtual data room (VDR).
@@ -123,11 +123,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Secretary of State (SOS)
 
-| Feature | OCR-to-Hash | Secretary of State (SOS) | Private Virtual Data Room |
+| Feature | Live Verify | Secretary of State (SOS) | Private Virtual Data Room |
 | :--- | :--- | :--- | :--- |
 | **Granularity** | **High.** Verifies specific *Board Actions*. | **Low.** Only shows the company exists (Good Standing). | **Full.** But requires gated access. |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Corp/Law Firm. | **Gov-Bound.** | **System-Bound.** |
 | **Cost** | **Low.** Standard web infra. | **High.** Filing/Search fees per document. | **Very High.** Monthly VDR costs. |
 | **User Access** | **Instant.** Scan the paper at the bank. | **Slow.** Requires filing search and payment. | **Restricted.** Access often revoked post-deal. |
 
-**Why OCR wins here:** Specificity. A government "Certificate of Good Standing" doesn't tell a bank who is authorized to sign a loan. Only a Corporate Resolution does. OCR-to-hash turns that **Private Internal Document** into a verifiable artifact that can be safely shared with third parties without exposing the entire secret minute book.
+**Why Live Verify wins here:** Specificity. A government "Certificate of Good Standing" doesn't tell a bank who is authorized to sign a loan. Only a Corporate Resolution does. Live Verify turns that **Private Internal Document** into a verifiable artifact that can be safely shared with third parties without exposing the entire secret minute book.

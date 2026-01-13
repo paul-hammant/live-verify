@@ -12,7 +12,7 @@ furtherDerivations: 1
 
 Events permits are the "Permission to Gather" issued by a city for activities that impact the public—such as **Music Festivals**, **Parades**, or **Street Closures**. These documents prove that the organizer has coordinated with police, fire, and EMS, and has the mandatory insurance to cover a crowd.
 
-The problem is that these permits are often temporary pieces of paper taped to a barricade. Shady organizers might "edit" an old permit to change the date or to expand a 1-block closure into 3 blocks illegally. Similarly, they might hide a "Noise Curfew" to keep the music playing past midnight. OCR-to-hash allows a neighbor or police officer to scan the permit from the sidewalk to verify: **"Is this event actually authorized for today, and what are the exact legal boundaries and hours?"**
+The problem is that these permits are often temporary pieces of paper taped to a barricade. Shady organizers might "edit" an old permit to change the date or to expand a 1-block closure into 3 blocks illegally. Similarly, they might hide a "Noise Curfew" to keep the music playing past midnight. Live Verify allows a neighbor or police officer to scan the permit from the sidewalk to verify: **"Is this event actually authorized for today, and what are the exact legal boundaries and hours?"**
 
 <div style="max-width: 500px; margin: 24px auto; font-family: sans-serif; border: 3px solid #1a237e; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
   <div style="background: #1a237e; color: #fff; padding: 15px; text-align: center;">

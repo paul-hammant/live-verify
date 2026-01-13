@@ -14,7 +14,7 @@ furtherDerivations: 1
 
 For a real estate owner, a LEED plaque in the lobby is worth **millions of dollars**. Large corporations (like Google or Salesforce) often refuse to lease any office that isn't verified green.
 
-Fraud happens when a developer uses a "Fake Plaque" or an outdated certificate to hide that the building's green systems (like solar or high-tech glass) were never actually installed. OCR-to-hash ensures the plaque on the wall is a live link to the USGBC's official record.
+Fraud happens when a developer uses a "Fake Plaque" or an outdated certificate to hide that the building's green systems (like solar or high-tech glass) were never actually installed. Live Verify ensures the plaque on the wall is a live link to the USGBC's official record.
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 5px solid #004d40; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="background: #004d40; color: #fff; padding: 20px; text-align: center;">
@@ -123,11 +123,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Project Directories
 
-| Feature | OCR-to-Hash | USGBC Project Directory | Scanned PDF |
+| Feature | Live Verify | USGBC Project Directory | Scanned PDF |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Standard Body. | **Database.** Direct from source. | **Zero.** Easily forged. |
 | **User Experience** | **Instant.** Scan the plaque on the wall. | **Difficult.** Requires searching by address/name on a phone. | **Instant.** |
 | **Field Access** | **High.** Mobile-optimized for lobby visits. | **Low.** Maps and lists are hard to navigate on small screens. | **Universal.** |
 | **Integrity** | **Binds Points.** Protects the data. | **Data-Only.** | **Vulnerable.** |
 
-**Why OCR wins here:** The "Lobby Moment." Trust is built when someone walks into a building and sees the certification. OCR-to-hash turns that **Visual Trophy** into a **Live Security Token**, ensuring that the prestige of the plaque is backed by the current cryptographic reality of the standard body.
+**Why Live Verify wins here:** The "Lobby Moment." Trust is built when someone walks into a building and sees the certification. Live Verify turns that **Visual Trophy** into a **Live Security Token**, ensuring that the prestige of the plaque is backed by the current cryptographic reality of the standard body.

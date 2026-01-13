@@ -14,7 +14,7 @@ When a lottery player scans a ticket at a terminal or via an app and is informed
 
 The **Conflict of Interest**: In most jurisdictions, the entity that issues the ticket and verifies the win (the Lottery Commission) is also the one that has to pay out the prize. If a system glitch or a dishonest official attempts to "delete" the win record before it is publicly announced, the player may have no way to prove they were ever informed of the win.
 
-OCR-to-hash with **Independent Witnessing** solves this. The moment the player sees the "WINNER" screen, they scan it. The hash is sent to an independent third-party witness (e.g., an audit firm or a public ledger). The Lottery Commission can no longer claim "no one won the draw" because a neutral record of the win notification exists.
+Live Verify with **Independent Witnessing** solves this. The moment the player sees the "WINNER" screen, they scan it. The hash is sent to an independent third-party witness (e.g., an audit firm or a public ledger). The Lottery Commission can no longer claim "no one won the draw" because a neutral record of the win notification exists.
 
 ## Fun Fact: The Essential Difference (Gambling vs. Insurance)
 

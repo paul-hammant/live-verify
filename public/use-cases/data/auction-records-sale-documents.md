@@ -119,10 +119,10 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Public Price Databases
 
-| Feature | OCR-to-Hash | Public Database (Artnet/Artprice) | Private PDF / Invoice |
+| Feature | Live Verify | Public Database (Artnet/Artprice) | Private PDF / Invoice |
 | :--- | :--- | :--- | :--- |
 | **Privacy** | **High.** Only the specific buyer/lot is verified. | **Low.** Everyone sees the price (but not who bought it). | **None.** Easily forged with Photoshop. |
 | **Authority** | **Direct.** Binds the paper to the house's domain. | **Indirect.** Relies on third-party scrapers/reporters. | **Subjective.** "Is this signature real?" |
 | **Detail** | **Full.** Includes premium, tax, and bidder ID. | **Partial.** Often just hammer price + premium. | **Full.** But untrusted. |
 
-**Why OCR wins here:** An auction invoice is a private financial document. While the *price* might be public, the *fact that you paid it* is private. OCR-to-hash allows a collector to prove their cost basis to a bank or tax office without the house needing to publish private bidder data to a public database.
+**Why Live Verify wins here:** An auction invoice is a private financial document. While the *price* might be public, the *fact that you paid it* is private. Live Verify allows a collector to prove their cost basis to a bank or tax office without the house needing to publish private bidder data to a public database.

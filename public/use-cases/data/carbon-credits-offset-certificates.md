@@ -80,7 +80,7 @@ The **Credit Buyer** (second party) receives the retirement certificate from the
 The credit buyer (second party) may hand the verified document to various third parties:
 
 **ESG Rating Agencies (MSCI / Sustainalytics)**
-**Data Integrity:** Rating agencies verify corporate environmental claims. OCR-to-hash allows them to instantly ingest verified retirement data from PDF reports without manual registry searches.
+**Data Integrity:** Rating agencies verify corporate environmental claims. Live Verify allows them to instantly ingest verified retirement data from PDF reports without manual registry searches.
 
 **Environmental Regulators**
 **Cap-and-Trade Compliance:** Ensuring that industrial emitters are using valid, non-cancelled credits to meet their regulatory obligations.
@@ -129,11 +129,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Blockchain (Climate Ledger)
 
-| Feature | OCR-to-Hash | Tokenized Carbon (On-Chain) | Public Registry PDF |
+| Feature | Live Verify | Tokenized Carbon (On-Chain) | Public Registry PDF |
 | :--- | :--- | :--- | :--- |
 | **User Control** | **High.** Share only the *Retirement* proof. | **Low.** Wallet history is often public. | **Zero.** Easily forged. |
 | **Trust Anchor** | **Domain-Bound.** Trust the Registry (Verra). | **Byzantine.** Trust the consensus/protocol. | **Visual.** |
 | **Interoperability** | **Universal.** Works with existing PDF reports. | **Siloed.** Different chains (Polygon, Toucan) don't talk. | **Manual.** |
 | **Persistence** | **Archival.** Text lasts decades. | **Fragile.** Requires the chain to exist in 2050. | **Vulnerable.** |
 
-**Why OCR wins here:** Legacy Integration. Most corporate carbon accounting is still done via PDF reports and Excel. Blockchain requires a massive tech shift. OCR-to-hash provides **Blockchain-level integrity** for the existing world of PDF certificates, bridging the gap to the future of climate finance without the "Crypto-Stigma."
+**Why Live Verify wins here:** Legacy Integration. Most corporate carbon accounting is still done via PDF reports and Excel. Blockchain requires a massive tech shift. Live Verify provides **Blockchain-level integrity** for the existing world of PDF certificates, bridging the gap to the future of climate finance without the "Crypto-Stigma."

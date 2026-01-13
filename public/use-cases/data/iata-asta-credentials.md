@@ -117,11 +117,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. IATA Check-a-Code
 
-| Feature | OCR-to-Hash | IATA Check-a-Code (Web) | Scanned PDF |
+| Feature | Live Verify | IATA Check-a-Code (Web) | Scanned PDF |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to IATA. | **Database.** Direct from source. | **Zero.** Easily forged. |
 | **Speed** | **Instant.** 5-second scan. | **Slow.** Requires typing 8 digits and solving CAPTCHAs. | **Instant.** |
 | **Integrity** | **Binds Details.** Protects the Financial Tier. | **Data-Only.** Doesn't verify the paper. | **Vulnerable.** |
 | **User Access** | **Universal.** Any airline/buyer can verify. | **Public.** But often limited to 1 query at a time. | **Universal.** |
 
-**Why OCR wins here:** The "Agency Handoff." Travel agents work via PDFs and paper certificates when talking to airlines and hotels. OCR-to-hash turns the **Physical Credential** into a live, high-speed digital dashboard, providing the same level of trust as a manual IATA database search in a fraction of the time.
+**Why Live Verify wins here:** The "Agency Handoff." Travel agents work via PDFs and paper certificates when talking to airlines and hotels. Live Verify turns the **Physical Credential** into a live, high-speed digital dashboard, providing the same level of trust as a manual IATA database search in a fraction of the time.

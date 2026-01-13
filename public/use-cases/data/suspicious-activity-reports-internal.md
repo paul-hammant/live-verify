@@ -86,7 +86,7 @@ The **Internal Compliance Department** benefits from verification.
 ## Third-Party Use
 
 **Federal Regulators (Fed, OCC, FDIC)**
-**Systemic Audit:** Verifying the "Integrity of the Log." Examiners scan random internal SAR records. OCR-to-hash ensures that the bank's internal "Proof of Filing" isn't a fabrication designed to hide a lack of monitoring.
+**Systemic Audit:** Verifying the "Integrity of the Log." Examiners scan random internal SAR records. Live Verify ensures that the bank's internal "Proof of Filing" isn't a fabrication designed to hide a lack of monitoring.
 
 **FinCEN Investigators**
 **Cross-Reference:** If FinCEN is missing a specific report, they can scan the bank's internal verified hash to find the missing E-Filing ID and reconcile their own database.

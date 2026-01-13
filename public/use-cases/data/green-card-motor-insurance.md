@@ -129,11 +129,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Central Databases (MID)
 
-| Feature | OCR-to-Hash | MID / National DB (UK) | Paper Green Card |
+| Feature | Live Verify | MID / National DB (UK) | Paper Green Card |
 | :--- | :--- | :--- | :--- |
 | **Cross-Border** | **Universal.** Works via URL across all countries. | **Siloed.** French police can't easily check UK MID. | **Universal.** The global standard. |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Carrier. | **Gov-Bound.** | **Visual.** Trusted via stamp. |
 | **Speed** | **Instant.** 5-second scan at the checkpoint. | **Slow.** Requires specialized terminal access. | **Instant.** |
 | **Freshness** | **Real-time.** Shows if premium was paid today. | **Laggy.** Often 24-48 hours behind. | **Static.** |
 
-**Why OCR wins here:** The "Checkpoint" reality. A border officer in a booth has about 30 seconds per car. They cannot navigate 20 different national insurance databases in 20 different languages. OCR-to-hash turns the **Existing Global Paper Standard** into a live, high-speed digital dashboard that works across every border, app-free.
+**Why Live Verify wins here:** The "Checkpoint" reality. A border officer in a booth has about 30 seconds per car. They cannot navigate 20 different national insurance databases in 20 different languages. Live Verify turns the **Existing Global Paper Standard** into a live, high-speed digital dashboard that works across every border, app-free.

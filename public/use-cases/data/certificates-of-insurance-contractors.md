@@ -14,7 +14,7 @@ If you hire a plumber to fix a leak or a massive construction crew to build a sk
 
 This one-page paper (usually an ACORD 25 form) is the "Proof of Protection." It says: "If this contractor breaks your house or if a worker gets hurt, the insurance company will pay, not you."
 
-COI fraud is rampant. Contractors often buy a policy for one day, print the COI, and then cancel the policy immediately. They show the "valid" paper to get hired, but they are actually uninsured. OCR-to-hash provides a "Live Status" check to see if the policy was cancelled yesterday.
+COI fraud is rampant. Contractors often buy a policy for one day, print the COI, and then cancel the policy immediately. They show the "valid" paper to get hired, but they are actually uninsured. Live Verify provides a "Live Status" check to see if the policy was cancelled yesterday.
 
 <div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <span verifiable-text="start" data-for="coi">[</span>
@@ -126,11 +126,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Central Databases (ACORD)
 
-| Feature | OCR-to-Hash | ACORD Data Pool | Paper COI |
+| Feature | Live Verify | ACORD Data Pool | Paper COI |
 | :--- | :--- | :--- | :--- |
 | **User Access** | **Universal.** Any site foreman/owner can verify. | **Restricted.** Requires expensive industry membership. | **Instant.** |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Broker/Insurer. | **Centralized.** Trust the ACORD database. | **Zero.** Easily forged. |
 | **Integrity** | **Binds Content.** Proves the *Limits* match. | **Data-Only.** Doesn't verify the actual paper document. | **Vulnerable.** |
 | **Freshness** | **Real-time.** Queries the broker's live file. | **Laggy.** Depends on batch uploads. | **Static.** |
 
-**Why OCR wins here:** The "Handoff Gap." ACORD data pools are for insurance companies talking to each other. But in the real world, a property owner needs to trust the piece of paper they are holding from a contractor. OCR-to-hash turns that paper into a **Live Link** to the source of truth, closing the gap between industry databases and the physical world.
+**Why Live Verify wins here:** The "Handoff Gap." ACORD data pools are for insurance companies talking to each other. But in the real world, a property owner needs to trust the piece of paper they are holding from a contractor. Live Verify turns that paper into a **Live Link** to the source of truth, closing the gap between industry databases and the physical world.

@@ -79,7 +79,7 @@ The **Researcher (Principal Investigator)** benefits from verification.
 ## Third-Party Use
 
 **University Research Offices (OSP)**
-**Financial Audit:** Managing 1,000+ separate grants. OCR-to-hash ensures that the "Award Letter" in the file isn't a draft or a fabricated version, protecting the university from "Single Audit" failures and federal clawbacks.
+**Financial Audit:** Managing 1,000+ separate grants. Live Verify ensures that the "Award Letter" in the file isn't a draft or a fabricated version, protecting the university from "Single Audit" failures and federal clawbacks.
 
 **Scientific Journals / Peer Reviewers**
 **Integrity Filter:** Verifying that a study was actually funded by the agencies claimed in the "Conflict of Interest" disclosure, preventing hidden industry bias.

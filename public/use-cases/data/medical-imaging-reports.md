@@ -75,7 +75,7 @@ The **Patient** benefits from verification.
 ## Third-Party Use
 
 **Referring Physicians (PCPs)**
-**Diagnostic Trust:** PCPs often receive paper or PDF reports from outside imaging centers. OCR-to-hash ensures the patient hasn't "Self-Edited" the report to remove a mention of cancer or to hide an embarrassing finding before showing it to their family doctor.
+**Diagnostic Trust:** PCPs often receive paper or PDF reports from outside imaging centers. Live Verify ensures the patient hasn't "Self-Edited" the report to remove a mention of cancer or to hide an embarrassing finding before showing it to their family doctor.
 
 **Life & Long-Term Care Insurers**
 **Risk Underwriting:** Verifying the "Impression" section of a brain MRI or heart CT before issuing high-value policies. Verification stops the most common "Medical Fraud": removing a single sentence about a pre-existing condition.
@@ -125,11 +125,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Patient Portals / CD-ROMs
 
-| Feature | OCR-to-Hash | Patient Portal (MyChart) | CD-ROM / PACS Link |
+| Feature | Live Verify | Patient Portal (MyChart) | CD-ROM / PACS Link |
 | :--- | :--- | :--- | :--- |
 | **User Control** | **High.** Patient shares only the *Summary*. | **Low.** App access often reveals *full* clinical history. | **Vulnerable.** |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Lab. | **System-Bound.** | **Zero.** Easily forged files. |
 | **Interoperability** | **Universal.** Works for any specialist. | **Siloed.** Hard to share across systems. | **Hardware-Locked.** |
 | **Speed** | **Instant.** 5-second scan. | **Slow.** Requires 2FA and login. | **Very Slow.** |
 
-**Why OCR wins here:** The "Clinical Handoff." Specialists often work in offices separate from where the scan was taken. They meet patients who bring paper reports. They don't have time to log into 10 different hospital portals. OCR-to-hash turns the **Physical Radiology Report** into a live, trusted clinical link that provides "Radiology-Grade" trust in seconds.
+**Why Live Verify wins here:** The "Clinical Handoff." Specialists often work in offices separate from where the scan was taken. They meet patients who bring paper reports. They don't have time to log into 10 different hospital portals. Live Verify turns the **Physical Radiology Report** into a live, trusted clinical link that provides "Radiology-Grade" trust in seconds.

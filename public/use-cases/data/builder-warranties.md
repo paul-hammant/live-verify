@@ -130,10 +130,10 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Home Inspection Reports
 
-| Feature | OCR-to-Hash | Home Inspection (Visual) | Builder Website Portal |
+| Feature | Live Verify | Home Inspection (Visual) | Builder Website Portal |
 | :--- | :--- | :--- | :--- |
 | **Integrity** | **Cryptographic.** Binds the *Legal Promise*. | **Subjective.** Relies on what the inspector can *see*. | **Hard.** Requires login/password. |
 | **Duration** | **10-20 Years.** Matches the legal statute. | **Snapshot.** Only valid for the day of inspection. | **Ephemeral.** Portals change. |
 | **Transfer** | **Easy.** Proves transferability to next owner. | **N/A.** | **Hard.** New owner has no login. |
 
-**Why OCR wins here:** Persistence. A builder warranty is a "Long-Tail" financial asset. The person who needs to verify it in year 9 (the second owner) is almost never the person who received it in year 1. OCR-to-hash turns the persistent piece of paper in the "Homeowner's Binder" into a real-time link to the insurer, regardless of who currently owns the house.
+**Why Live Verify wins here:** Persistence. A builder warranty is a "Long-Tail" financial asset. The person who needs to verify it in year 9 (the second owner) is almost never the person who received it in year 1. Live Verify turns the persistent piece of paper in the "Homeowner's Binder" into a real-time link to the insurer, regardless of who currently owns the house.

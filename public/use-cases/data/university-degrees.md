@@ -14,7 +14,7 @@ A **University Degree** (Diploma) is the official credential proving that an ind
 
 Beyond the diploma on the wall, the **Academic Transcript** is the granular record of every class, grade, and credit hour earned.
 
-**"Diploma Mill"** fraud is a multi-billion dollar industry. Criminals create fake universities with real-sounding names or buy high-quality forged diplomas from prestigious schools like Harvard or Oxford for a few hundred dollars. Even more common is **"GPA Inflation,"** where applicants edit their PDF transcripts to turn a "C" in a critical math class into an "A." OCR-to-hash binds the **Student name, Degree classification, and major** to the university registrar's domain (e.g., `.edu` or `.ac.uk`).
+**"Diploma Mill"** fraud is a multi-billion dollar industry. Criminals create fake universities with real-sounding names or buy high-quality forged diplomas from prestigious schools like Harvard or Oxford for a few hundred dollars. Even more common is **"GPA Inflation,"** where applicants edit their PDF transcripts to turn a "C" in a critical math class into an "A." Live Verify binds the **Student name, Degree classification, and major** to the university registrar's domain (e.g., `.edu` or `.ac.uk`).
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Old English Text MT', serif; border: 10px solid #d4af37; padding: 50px; text-align: center; background: #fff; box-shadow: 0 4px 20px rgba(0,0,0,0.1); position: relative;">
   <div style="margin-bottom: 40px;">
@@ -88,7 +88,7 @@ The **Graduate (Alumnus)** benefits from verification.
 ## Third-Party Use
 
 **Hiring Managers / HR Teams**
-**Fraud Prevention:** Diploma mills sell realistic-looking degrees for any subject. OCR-to-hash connects the recruiter directly to the real university's domain, stopping "Fake Ivy League" fraud at the source.
+**Fraud Prevention:** Diploma mills sell realistic-looking degrees for any subject. Live Verify connects the recruiter directly to the real university's domain, stopping "Fake Ivy League" fraud at the source.
 
 **Immigration Authorities (UK Home Office / US USCIS)**
 **Visa Vetting:** Verifying the points-based qualifications of high-skilled migrants by confirming their degrees match the university's official records.
@@ -136,11 +136,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Education Clearinghouses (NSC)
 
-| Feature | OCR-to-Hash | National Student Clearinghouse | Physical Diploma |
+| Feature | Live Verify | National Student Clearinghouse | Physical Diploma |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the University. | **Data-Bound.** Trust the aggregator. | **Visual.** |
 | **Speed** | **Instant.** 5-second scan. | **Slow.** Often takes 3-10 days for a response. | **Instant.** |
 | **Cost** | **Low.** Standard web infra. | **High.** Employers pay $15-$50 per check. | **Zero.** |
 | **Integrity** | **Cryptographic.** Binds GPA and Honors. | **Data-Only.** | **Vulnerable.** |
 
-**Why OCR wins here:** The "Speed of Hiring." In a competitive labor market, high-quality candidates don't want to wait 10 days for a "Background Check Firm" to call a university registrar. OCR-to-hash allows for **Instant Trust**, turning the diploma on the wall into a live, cryptographic bridge to the university's source of truth.
+**Why Live Verify wins here:** The "Speed of Hiring." In a competitive labor market, high-quality candidates don't want to wait 10 days for a "Background Check Firm" to call a university registrar. Live Verify allows for **Instant Trust**, turning the diploma on the wall into a live, cryptographic bridge to the university's source of truth.

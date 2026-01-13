@@ -129,11 +129,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. ACORD 25 Forms
 
-| Feature | OCR-to-Hash | Standard ACORD 25 (PDF) | Broker Portal |
+| Feature | Live Verify | Standard ACORD 25 (PDF) | Broker Portal |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Carrier. | **None.** Easily edited in Acrobat. | **System-Bound.** |
 | **Integrity** | **Binds Retro Date.** Protects the history. | **Zero.** Text can be deleted. | **High.** |
 | **Speed** | **Instant.** 5-second scan. | **N/A.** Requires reading. | **Slow.** Requires login. |
 | **Availability** | **Universal.** Any smartphone. | **Visual.** | **Restricted.** |
 
-**Why OCR wins here:** The "Claims-Made" Reality. In professional services, the *integrity of the dates* is more important than the paper itself. OCR-to-hash turns the **Static Certificate** into a live link to the carrier's ledger, ensuring that the "Professional Safety Net" is a cryptographically verified and active fact.
+**Why Live Verify wins here:** The "Claims-Made" Reality. In professional services, the *integrity of the dates* is more important than the paper itself. Live Verify turns the **Static Certificate** into a live link to the carrier's ledger, ensuring that the "Professional Safety Net" is a cryptographically verified and active fact.

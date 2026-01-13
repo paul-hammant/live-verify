@@ -128,11 +128,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Broker Confirmation
 
-| Feature | OCR-to-Hash | Manual Broker Call | Scanned PDF |
+| Feature | Live Verify | Manual Broker Call | Scanned PDF |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Carrier. | **Human.** Prone to social engineering or typos. | **Zero.** Easily forged. |
 | **Integrity** | **Binds Limits.** Protects every digit. | **Vague.** "Yes, they are insured." | **Vulnerable.** |
 | **Speed** | **Instant.** 5-second scan. | **Slow.** Often takes 24-48 hours. | **Instant.** |
 | **Availability** | **24/7.** Works across all time zones. | **Restricted.** Business hours only. | **Universal.** |
 
-**Why OCR wins here:** The "Time Zone" Reality. Logistics is a 24/7 global business. A shipper in Singapore needs to verify a forwarder in Germany at 2 AM Berlin time. They can't wait for a broker's office to open. OCR-to-hash turns the **Physical COI** into a live, global trust bridge that works at the speed of the supply chain.
+**Why Live Verify wins here:** The "Time Zone" Reality. Logistics is a 24/7 global business. A shipper in Singapore needs to verify a forwarder in Germany at 2 AM Berlin time. They can't wait for a broker's office to open. Live Verify turns the **Physical COI** into a live, global trust bridge that works at the speed of the supply chain.

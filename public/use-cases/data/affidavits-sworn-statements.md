@@ -127,10 +127,10 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. e-Notary / Digital Signatures
 
-| Feature | OCR-to-Hash | e-Notary (Digital Sig) | Wet Ink (Traditional) |
+| Feature | Live Verify | e-Notary (Digital Sig) | Wet Ink (Traditional) |
 | :--- | :--- | :--- | :--- |
 | **Physicality** | **Bridges Gap.** Verifies the *printed* version of an e-notarized doc. | **Purely Digital.** Verification breaks if you print it out (signature invalid). | **Purely Physical.** Relies on looking at a rubber stamp. |
 | **Court Filing** | **Easy.** Courts often require paper or flattened PDFs. OCR works on both. | **Hard.** Flattening a PDF removes the crypto-signature. | **Standard.** But prone to forgery. |
 | **Long-Term** | **Durable.** Text is readable in 50 years. | **Fragile.** Root certificates expire; proprietary formats become obsolete. | **Durable.** |
 
-**Why OCR wins here:** The legal world is "Paper-Persistent." Even if a document starts digital, it often ends up printed for a judge, scanned into a case file, or mailed to a defendant. OCR-to-hash ensures the chain of verification survives these format shifts.
+**Why Live Verify wins here:** The legal world is "Paper-Persistent." Even if a document starts digital, it often ends up printed for a judge, scanned into a case file, or mailed to a defendant. Live Verify ensures the chain of verification survives these format shifts.

@@ -121,11 +121,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Version Control (GitHub / Word Track Changes)
 
-| Feature | OCR-to-Hash | Track Changes (Word) | GitHub (Version Control) |
+| Feature | Live Verify | Track Changes (Word) | GitHub (Version Control) |
 | :--- | :--- | :--- | :--- |
 | **Legal Weight** | **High.** Binds to the Publisher domain. | **Low.** Easily scrubbed or edited. | **Medium.** Proves the *Tech*. |
 | **Trust Anchor** | **Domain-Bound.** Trust the House. | **Self-Reported.** | **Protocol-Bound.** |
 | **Integrity** | **Cryptographic.** Binds the whole file. | **Vulnerable.** Metadata can be deleted. | **High.** |
 | **Adoption** | **High.** Works for traditional non-tech authors. | **Universal.** | **Low.** Only for tech-savvy authors. |
 
-**Why OCR wins here:** The "Traditional Industry" reality. Most authors use Microsoft Word or Scrivener, not GitHub. Most agents work with PDFs. OCR-to-hash turn the **Static PDF Manuscript** into a live digital anchor, providing "Software-Grade" integrity to the world of literature.
+**Why Live Verify wins here:** The "Traditional Industry" reality. Most authors use Microsoft Word or Scrivener, not GitHub. Most agents work with PDFs. Live Verify turn the **Static PDF Manuscript** into a live digital anchor, providing "Software-Grade" integrity to the world of literature.

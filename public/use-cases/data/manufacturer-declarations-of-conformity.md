@@ -119,11 +119,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. QR Redirects
 
-| Feature | OCR-to-Hash | Standard QR Code Redirect | Scanned PDF DoC |
+| Feature | Live Verify | Standard QR Code Redirect | Scanned PDF DoC |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Manufacturer. | **Data-Only.** QR can redirect to any fake URL. | **Zero.** Easily forged. |
 | **Integrity** | **Cryptographic.** Binds the *Directives*. | **Vulnerable.** The landing page can be edited. | **Vulnerable.** |
 | **Persistence** | **High.** Text remains verifiable for 15 years. | **Low.** QR stickers get scratched or fade. | **Vulnerable.** |
 | **User Control** | **Targeted.** Verifies the *Exact Version*. | **General.** Often links to a generic "Help" page. | **Full.** But untrusted. |
 
-**Why OCR wins here:** The "Product Manual" reality. DoCs are usually buried at the back of a printed manual. QR codes on stickers often don't last the 10-year life of a product. OCR-to-hash turns the **Printed Text of the Manual** into a live, high-authority digital anchor, ensuring that safety trust is as durable as the product itself.
+**Why Live Verify wins here:** The "Product Manual" reality. DoCs are usually buried at the back of a printed manual. QR codes on stickers often don't last the 10-year life of a product. Live Verify turns the **Printed Text of the Manual** into a live, high-authority digital anchor, ensuring that safety trust is as durable as the product itself.

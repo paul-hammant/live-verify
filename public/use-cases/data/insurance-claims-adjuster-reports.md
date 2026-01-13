@@ -120,11 +120,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Claims Dashboards
 
-| Feature | OCR-to-Hash | Carrier Mobile App | Scanned PDF Report |
+| Feature | Live Verify | Carrier Mobile App | Scanned PDF Report |
 | :--- | :--- | :--- | :--- |
 | **User Control** | **High.** Share only the *Assessment*. | **Low.** App access reveals *full* account history. | **High.** |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Carrier. | **System-Bound.** | **Zero.** Easily forged. |
 | **Interoperability** | **High.** Verified PDF works for any body shop. | **Siloed.** | **Universal.** |
 | **Persistence** | **High.** Remains verifiable after claim closes. | **Low.** Past claims often hidden in old menus. | **Vulnerable.** |
 
-**Why OCR wins here:** The "Counter Reality." Decisions about repairs happen at the body shop or kitchen table. Vendors and buyers don't have logins to the carrier's private claims system. OCR-to-hash turns the **Static PDF Report** into a live digital checkpoint, ensuring the "Source of Truth" moves with the document.
+**Why Live Verify wins here:** The "Counter Reality." Decisions about repairs happen at the body shop or kitchen table. Vendors and buyers don't have logins to the carrier's private claims system. Live Verify turns the **Static PDF Report** into a live digital checkpoint, ensuring the "Source of Truth" moves with the document.

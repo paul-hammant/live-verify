@@ -86,7 +86,7 @@ The **Student (Subject)** benefits from verification.
 **Eligibility Vetting:** Instead of manually reviewing 50,000 "Enrollment Letters" every September, the carrier's system scans the hashes. Verification ensures the students aren't "Padding" their status to keep coverage illegally.
 
 **Government Agencies (DHS / ICE)**
-**Visa Compliance:** Verifying that an international student is maintaining the "Full-Time" enrollment required by their F-1 visa status. OCR-to-hash connects the officer directly to the registrar's data, stopping "Ghost Enrollment" scams.
+**Visa Compliance:** Verifying that an international student is maintaining the "Full-Time" enrollment required by their F-1 visa status. Live Verify connects the officer directly to the registrar's data, stopping "Ghost Enrollment" scams.
 
 **Student Discount Platforms (UNiDAYS / ID.me)**
 **Identity Verification:** Instantly verifying student status for high-value discounts (e.g., 50% off laptops or software).

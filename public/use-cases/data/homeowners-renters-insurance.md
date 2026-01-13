@@ -89,7 +89,7 @@ The **Homeowner (Insured)** benefits from verification.
 ## Third-Party Use
 
 **Mortgage Lenders / Servicers**
-**Force-Placed Insurance Prevention:** Lenders currently spend millions manually calling brokers to verify that a policy hasn't lapsed. OCR-to-hash allows for **automated continuous monitoring**. If a policy is cancelled, the hash status updates instantly, allowing the lender to notify the borrower *before* force-placing expensive insurance.
+**Force-Placed Insurance Prevention:** Lenders currently spend millions manually calling brokers to verify that a policy hasn't lapsed. Live Verify allows for **automated continuous monitoring**. If a policy is cancelled, the hash status updates instantly, allowing the lender to notify the borrower *before* force-placing expensive insurance.
 
 **Real Estate Closing Agents**
 **Clear to Close:** Instantly verifying that the buyer's new policy meets the lender's "Replacement Cost" requirements during the high-pressure 24 hours before a closing.
@@ -137,14 +137,14 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Broker Portals
 
-| Feature | OCR-to-Hash | Broker Portal | Scanned PDF / Paper |
+| Feature | Live Verify | Broker Portal | Scanned PDF / Paper |
 | :--- | :--- | :--- | :--- |
 | **Integrity** | **Cryptographic.** Binds the *Address* to the *Limit*. | **System-Bound.** | **Zero.** Easily forged. |
 | **Interoperability** | **Universal.** Works across all carriers. | **Siloed.** Hard to aggregate 50 different logins. | **Universal.** |
 | **Freshness** | **Real-time.** Shows if cancelled *today*. | **Laggy.** Often 24-48 hours behind. | **Static.** |
 | **Audit-ability** | **High.** Digital trail for regulators. | **Low.** Internal only. | **Manual.** |
 
-**Why OCR wins here:** The "Handoff Gap." Insurance is a private contract, but it's a **Public Requirement** for the mortgage industry. OCR-to-hash turns the **Private Policy** into a portable, cryptographically trusted asset that can be safely shared with banks and lawyers without exposing the homeowner's full medical or financial history.
+**Why Live Verify wins here:** The "Handoff Gap." Insurance is a private contract, but it's a **Public Requirement** for the mortgage industry. Live Verify turns the **Private Policy** into a portable, cryptographically trusted asset that can be safely shared with banks and lawyers without exposing the homeowner's full medical or financial history.
 
 
 ---
@@ -218,7 +218,7 @@ The **Homeowner / Renter** benefits from verification.
 **Payment Assurance:** Before starting a $14,000 kitchen tear-down, the contractor scans the adjuster's estimate. "Verified by Allstate" gives them the confidence that the funds are actually authorized and they won't be left with an unpaid bill.
 
 **Secondary Buyers (Real Estate)**
-**CLUE Report Integrity:** A buyer can verify the history of past claims on a house. OCR-to-hash ensures the seller isn't "Hiding" a $50,000 mold claim by providing a fake, low-value repair receipt.
+**CLUE Report Integrity:** A buyer can verify the history of past claims on a house. Live Verify ensures the seller isn't "Hiding" a $50,000 mold claim by providing a fake, low-value repair receipt.
 
 **Special Investigative Units (SIU)**
 **Fraud Detection:** Instantly identifying "Estimate Padding" where a dishonest contractor or policyholder edits the PDF to add $5,000 in non-existent damage.
@@ -272,14 +272,14 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. CLUE Reports (LexisNexis)
 
-| Feature | OCR-to-Hash | CLUE Report (LexisNexis) | Scanned PDF Estimate |
+| Feature | Live Verify | CLUE Report (LexisNexis) | Scanned PDF Estimate |
 | :--- | :--- | :--- | :--- |
 | **Granularity** | **High.** Shows line-item repairs. | **Low.** Often just says "Water Loss - $14k." | **High.** But untrusted. |
 | **Speed** | **Real-time.** Available as soon as approved. | **Laggy.** Updates take 30-90 days. | **Instant.** |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Insurer. | **Data-Bound.** Trust the aggregator. | **Zero.** Easily forged. |
 | **Interoperability** | **Universal.** Works for any contractor. | **Restricted.** Requires expensive data access. | **Universal.** |
 
-**Why OCR wins here:** Detail and Immediacy. A CLUE report is a historical summary. But a **Restoration Contractor** needs the specific, verified details of *this* claim *today* to start work. OCR-to-hash turns the **Static Estimate** into a live, trusted clinical link that bridges the gap between the insurer and the construction crew.
+**Why Live Verify wins here:** Detail and Immediacy. A CLUE report is a historical summary. But a **Restoration Contractor** needs the specific, verified details of *this* claim *today* to start work. Live Verify turns the **Static Estimate** into a live, trusted clinical link that bridges the gap between the insurer and the construction crew.
 
 
 ---
@@ -352,7 +352,7 @@ The **Homeowner / Renter** benefits from verification.
 ## Third-Party Use
 
 **Mortgage Lenders / Servicers**
-**Collateral Protection:** Verifying that the $350k dwelling coverage is verified active and that the bank is correctly listed as "Mortgagee." OCR-to-hash allows for **automated annual audits** of thousands of borrower policies without manual data entry.
+**Collateral Protection:** Verifying that the $350k dwelling coverage is verified active and that the bank is correctly listed as "Mortgagee." Live Verify allows for **automated annual audits** of thousands of borrower policies without manual data entry.
 
 **Real Estate Closing Agents**
 **Clear-to-Close:** Instantly verifying the insurance status of a new homebuyer in the final 24 hours before a closing, ensuring the lender's funding requirements are met.
@@ -409,11 +409,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. ACORD Data Feeds
 
-| Feature | OCR-to-Hash | ACORD Data Pool (IVANS) | Scanned PDF |
+| Feature | Live Verify | ACORD Data Pool (IVANS) | Scanned PDF |
 | :--- | :--- | :--- | :--- |
 | **Integrity** | **Cryptographic.** Binds the *Address* to the *Limit*. | **Data-Only.** Doesn't verify the actual paper doc. | **Zero.** Easily forged. |
 | **Interoperability** | **Universal.** Works across all carriers. | **Limited.** Only for agencies on the IVANS network. | **Universal.** |
 | **Freshness** | **Real-time.** Shows if cancelled *today*. | **Laggy.** Often 24-48 hours behind. | **Static.** |
 | **User Control** | **High.** Homeowner shares only what is needed. | **Low.** Lenders see the full data stream. | **High.** |
 
-**Why OCR wins here:** The "Closing Table" reality. In a real estate deal, trust must move between a Buyer, a Seller, a Bank, and a Title Co. They don't all share the same API. OCR-to-hash turns the **Paper Document** into a portable, cryptographically trusted link that bridges the gap between the insurer and the closing table.
+**Why Live Verify wins here:** The "Closing Table" reality. In a real estate deal, trust must move between a Buyer, a Seller, a Bank, and a Title Co. They don't all share the same API. Live Verify turns the **Paper Document** into a portable, cryptographically trusted link that bridges the gap between the insurer and the closing table.

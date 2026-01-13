@@ -14,7 +14,7 @@ Getting a US Green Card requires a face-to-face interview at a US Embassy (like 
 
 The **Appointment Notice** is your "Admission Ticket." Security guards at the embassy perimeter will not even let you into the queue without this specific piece of paper.
 
-Fraudsters often create fake notices to get people into high-security zones or to trick employers into thinking their visa is "in progress." OCR-to-hash allows guards to verify the **authenticity of the paper** at the gate, ensuring that only scheduled, verified applicants enter the secure zone.
+Fraudsters often create fake notices to get people into high-security zones or to trick employers into thinking their visa is "in progress." Live Verify allows guards to verify the **authenticity of the paper** at the gate, ensuring that only scheduled, verified applicants enter the secure zone.
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #002d62; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
@@ -130,11 +130,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. CEAC Status Search
 
-| Feature | OCR-to-Hash | CEAC Search (Public) | Paper Notice |
+| Feature | Live Verify | CEAC Search (Public) | Paper Notice |
 | :--- | :--- | :--- | :--- |
 | **Integrity** | **Binds Identity.** Proves *Who* is scheduled. | **General.** Often just says "Ready" or "At NVC." | **Low.** Easily faked. |
 | **Speed** | **Instant.** Scan the paper at the gate. | **Slow.** Requires typing case # and solving difficult CAPTCHAs. | **Instant.** |
 | **Trust** | **Cryptographic.** Bound to `state.gov`. | **High.** Direct DB access. | **Medium.** |
 | **User Access** | **Restricted.** Only people with the paper can verify. | **Public.** Anyone with a case # can search. | **N/A.** |
 
-**Why OCR wins here:** The "Perimeter" reality. Security guards standing in the rain outside a consulate don't have the time or tools to solve CAPTCHAs on the CEAC website for every person in line. OCR-to-hash turns the **Physical Appointment Letter** into a high-speed "Access Token" that provides definitive proof of scheduling in seconds.
+**Why Live Verify wins here:** The "Perimeter" reality. Security guards standing in the rain outside a consulate don't have the time or tools to solve CAPTCHAs on the CEAC website for every person in line. Live Verify turns the **Physical Appointment Letter** into a high-speed "Access Token" that provides definitive proof of scheduling in seconds.

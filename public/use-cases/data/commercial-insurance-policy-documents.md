@@ -143,12 +143,12 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. ACORD Data Feeds
 
-| Feature | OCR-to-Hash | ACORD IVANS (Carrier Feed) | Scanned PDF Summary |
+| Feature | Live Verify | ACORD IVANS (Carrier Feed) | Scanned PDF Summary |
 | :--- | :--- | :--- | :--- |
 | **Interoperability** | **Universal.** Works across all brokers/carriers. | **Limited.** Only for agencies on the IVANS network. | **Universal.** |
 | **Integrity** | **Cryptographic.** Binds the *Endorsements*. | **Data-Only.** Doesn't protect the actual doc. | **Zero.** Easily forged. |
 | **Freshness** | **Real-time.** Shows if cancelled *today*. | **Laggy.** Often 24-48 hours behind. | **Static.** |
 | **User Control** | **High.** Business shares only the *Summary*. | **Low.** Lenders see full raw data. | **High.** |
 
-**Why OCR wins here:** The "Contractual Reality." Large businesses don't buy insurance from a single app; they buy through brokers who assemble a "Portfolio" from 5 different carriers. OCR-to-hash turns that **Broker Summary** into a live digital anchor that provides "Single Source of Truth" trust for a complex, multi-carrier risk strategy.
+**Why Live Verify wins here:** The "Contractual Reality." Large businesses don't buy insurance from a single app; they buy through brokers who assemble a "Portfolio" from 5 different carriers. Live Verify turns that **Broker Summary** into a live digital anchor that provides "Single Source of Truth" trust for a complex, multi-carrier risk strategy.
 

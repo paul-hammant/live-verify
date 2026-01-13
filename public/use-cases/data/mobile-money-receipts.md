@@ -115,11 +115,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. SMS Confirmation
 
-| Feature | OCR-to-Hash | SMS Confirmation | Scanned Image / PDF |
+| Feature | Live Verify | SMS Confirmation | Scanned Image / PDF |
 | :--- | :--- | :--- | :--- |
 | **Integrity** | **Cryptographic.** Binds the *Transaction ID*. | **Low.** Easily spoofed with PC software. | **Zero.** Easily forged. |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Operator. | **Network-Bound.** Prone to SIM-swapping. | **Visual.** |
 | **Availability** | **Instant.** Verified via QR/Hash. | **Laggy.** SMS delivery often fails in congested areas. | **Instant.** |
 | **Hardware** | **Universal.** Any smartphone camera. | **Basic.** Works on dumb-phones. | **Visual.** |
 
-**Why OCR wins here:** The "Merchant's Defend." Small shop owners in Africa and Asia lose millions to "Fake SMS" scams. They need a **High-Trust, Offline-capable** way to verify that the numbers on the screen match the ledger. OCR-to-hash turns the **Mobile Screen** into a live, trusted clinical link, ensuring the "Digital Cash" is actually in the bank.
+**Why Live Verify wins here:** The "Merchant's Defend." Small shop owners in Africa and Asia lose millions to "Fake SMS" scams. They need a **High-Trust, Offline-capable** way to verify that the numbers on the screen match the ledger. Live Verify turns the **Mobile Screen** into a live, trusted clinical link, ensuring the "Digital Cash" is actually in the bank.

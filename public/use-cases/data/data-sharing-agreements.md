@@ -75,7 +75,7 @@ The **Data Recipient** (Researcher) benefits from verification.
 ## Third-Party Use
 
 **University Compliance Officers**
-**Portfolio Audit:** Instantly verifying that all outgoing datasets are covered by active, non-expired agreements. OCR-to-hash allows for a "Digital Census" of physical/PDF legal files.
+**Portfolio Audit:** Instantly verifying that all outgoing datasets are covered by active, non-expired agreements. Live Verify allows for a "Digital Census" of physical/PDF legal files.
 
 **GDPR / Privacy Regulators**
 **Chain of Custody:** If a data breach occurs, regulators can verify the "Authorized Use" and "Restrictions" of the original agreement to determine which party is liable.
@@ -125,11 +125,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. CLM Systems (Ironclad)
 
-| Feature | OCR-to-Hash | CLM (Contract Lifecycle Mgmt) | Scanned PDF |
+| Feature | Live Verify | CLM (Contract Lifecycle Mgmt) | Scanned PDF |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the University. | **System-Bound.** Trust the CLM vendor. | **Zero.** Easily forged. |
 | **Interoperability** | **Universal.** PDFs work across institutions. | **Low.** Hard to verify if you don't use the same CLM. | **Universal.** |
 | **Integrity** | **Binds Scope.** Protects the "Authorized Use" text. | **Data-Only.** | **Vulnerable.** |
 | **Cost** | **Low.** Standard web infra. | **Very High.** Enterprise software fees. | **None.** |
 
-**Why OCR wins here:** The "Institutional Handoff." Oxford uses one system, Stanford uses another. They don't want to grant each other access to their private legal systems. OCR-to-hash turns the **Final Signed PDF** into a portable, verifiable artifact that works across the "Institutional Divide" without any software integration.
+**Why Live Verify wins here:** The "Institutional Handoff." Oxford uses one system, Stanford uses another. They don't want to grant each other access to their private legal systems. Live Verify turns the **Final Signed PDF** into a portable, verifiable artifact that works across the "Institutional Divide" without any software integration.

@@ -86,7 +86,7 @@ The **Teacher / Educator** benefits from verification.
 ## Third-Party Use
 
 **School District HR Managers**
-**Hiring Integrity:** Thousands of resumes are received for every opening. OCR-to-hash allows the HR manager to instantly filter for only verified, state-licensed candidates, protecting the school from the liability of hiring an un-certified teacher.
+**Hiring Integrity:** Thousands of resumes are received for every opening. Live Verify allows the HR manager to instantly filter for only verified, state-licensed candidates, protecting the school from the liability of hiring an un-certified teacher.
 
 **National Clearinghouses (NASDTEC)**
 **Disciplinary Tracking:** When a teacher is flagged for misconduct, the state updates the hash status. Every other state where that teacher applied can instantly see the **"FLAGGED"** status, stopping "State-Hopping" by bad actors.

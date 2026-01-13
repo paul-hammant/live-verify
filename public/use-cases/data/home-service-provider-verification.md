@@ -17,7 +17,7 @@ The **Verified Badge** is the worker's digital or physical ID. It proves:
 2.  **Insurance:** The company has active liability insurance if they break your house.
 3.  **Safety:** They have passed a recent criminal background check.
 
-"Fake Repairman" scams are a common way for burglars to case a house. OCR-to-hash allows a homeowner to scan the badge at the door and see a green "ACTIVE" status from the state board, ensuring only legitimate professionals enter the home.
+"Fake Repairman" scams are a common way for burglars to case a house. Live Verify allows a homeowner to scan the badge at the door and see a green "ACTIVE" status from the state board, ensuring only legitimate professionals enter the home.
 
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
   <div style="background: #1a237e; color: #fff; padding: 15px; text-align: center; display: flex; align-items: center; justify-content: center;">
@@ -171,11 +171,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Review Sites (Yelp)
 
-| Feature | OCR-to-Hash | Review Sites (Yelp/Google) | Physical ID Card |
+| Feature | Live Verify | Review Sites (Yelp/Google) | Physical ID Card |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Gov/Board. | **Social-Bound.** Trusted only via crowd opinion. | **Zero.** Easily forged. |
 | **Integrity** | **Cryptographic.** Binds face to license. | **Vulnerable.** Reviews can be faked/bought. | **None.** |
 | **Speed** | **Instant.** 5-second scan. | **Slow.** Requires reading multiple reviews. | **Instant.** |
 | **Safety Data** | **High.** Shows background/insurance status. | **None.** Only shows quality of work. | **N/A.** |
 
-**Why OCR wins here:** The "Threshold Moment." Homeowners make the decision to open the door in seconds. They don't want to read 50 Yelp reviews while a stranger stands on their porch. OCR-to-hash turns the **ID Badge** into a live, non-confrontational safety tool that provides instant, high-authority trust.
+**Why Live Verify wins here:** The "Threshold Moment." Homeowners make the decision to open the door in seconds. They don't want to read 50 Yelp reviews while a stranger stands on their porch. Live Verify turns the **ID Badge** into a live, non-confrontational safety tool that provides instant, high-authority trust.

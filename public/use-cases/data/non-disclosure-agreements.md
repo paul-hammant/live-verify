@@ -17,7 +17,7 @@ A **Verified NDA** adds a cryptographic hash to the signature page. This proves:
 2.  **Integrity:** The "Scope of Confidentiality" terms haven't been altered since signing.
 3.  **Identity:** The issuer (the law firm or the Disclosing Party) attests to the signature.
 
-**"Page Swapping"** is a major risk in physical contracts. Disgruntled employees or rogue partners might swap a middle page of a physical NDA to remove a high-value technology from the "Confidential" list. OCR-to-hash provides **Per-Page Verification**, ensuring that every paragraph of the contract remains exactly as it was when the digital hash was anchored to the legal domain.
+**"Page Swapping"** is a major risk in physical contracts. Disgruntled employees or rogue partners might swap a middle page of a physical NDA to remove a high-value technology from the "Confidential" list. Live Verify provides **Per-Page Verification**, ensuring that every paragraph of the contract remains exactly as it was when the digital hash was anchored to the legal domain.
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <div style="text-align: center; font-weight: bold; margin-bottom: 30px; font-size: 1.2em; text-transform: uppercase; letter-spacing: 1px;"><span verifiable-text="start" data-for="nda">[</span>Mutual Non-Disclosure Agreement</div>
@@ -81,7 +81,7 @@ The **Receiving Party (Vendor/Contractor)** benefits from verification.
 ## Third-Party Use
 
 **M&A Due Diligence Teams**
-**IP Vetting:** When "Acquiring Corp" buys "Acme Corp," they need to verify that Acme actually has NDAs in place with all 500 of its former contractors. OCR-to-hash allows for **Automated Due Diligence**, where an AI can scan thousands of NDAs and verify their status instantly against the legal domain.
+**IP Vetting:** When "Acquiring Corp" buys "Acme Corp," they need to verify that Acme actually has NDAs in place with all 500 of its former contractors. Live Verify allows for **Automated Due Diligence**, where an AI can scan thousands of NDAs and verify their status instantly against the legal domain.
 
 **Courts and Arbitrators**
 **Evidence Admissibility:** Proving that the NDA presented in a "Trade Secret Theft" case is the exact, un-altered original signed 3 years ago, reducing the "He-said-she-said" arguments over PDF versions.
@@ -126,11 +126,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. E-Signature (DocuSign)
 
-| Feature | OCR-to-Hash | E-Signature (Digital PKI) | Physical Paper |
+| Feature | Live Verify | E-Signature (Digital PKI) | Physical Paper |
 | :--- | :--- | :--- | :--- |
 | **Persistence** | **High.** Survives being printed and scanned. | **Low.** Crypto signature is lost when printed. | **Manual.** |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Law Firm. | **System-Bound.** Trust the SaaS vendor. | **The Ink.** |
 | **Self-Sovereign** | **High.** The paper is the proof. | **Low.** Requires the SaaS account to stay active. | **Total.** |
 | **Integrity** | **Binds Content.** Protects the *text*. | **High.** | **Zero.** |
 
-**Why OCR wins here:** The "File Cabinet" reality. NDAs are often signed and then sit in a drawer or a shared drive for 10 years. SaaS vendors like DocuSign may go out of business or accounts may lapse. OCR-to-hash ensures the contract remains **verifiable for its entire legal life**, regardless of whether the original software account is still active.
+**Why Live Verify wins here:** The "File Cabinet" reality. NDAs are often signed and then sit in a drawer or a shared drive for 10 years. SaaS vendors like DocuSign may go out of business or accounts may lapse. Live Verify ensures the contract remains **verifiable for its entire legal life**, regardless of whether the original software account is still active.

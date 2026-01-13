@@ -128,12 +128,12 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Central Databases (CBP)
 
-| Feature | OCR-to-Hash | CBP Systems (TECS) |
+| Feature | Live Verify | CBP Systems (TECS) |
 | :--- | :--- | :--- |
 | **User Access** | **Public/Restricted.** Can be opened to Airlines/DMVs via URL. | **Internal Only.** Only CBP officers at the border have access. |
 | **Airline Check-in** | **Feasible.** Check-in agent can scan the paper. | **Impossible.** Agent in Frankfurt cannot query US DHS databases directly. |
 | **Physical Security** | **Tamper-Evident.** Hash protects the printed dates/names. | **None.** The paper itself has weak security features compared to a passport. |
 | **Cost** | **Low.** Standard web infrastructure. | **High.** Secure leased lines/VPNs required for database access. |
 
-**Why OCR wins here:** It extends the "Edge of the Network" to the airline check-in desk in a foreign country. It bridges the gap between the secure US database and the insecure physical world where the traveler actually encounters checkpoints.
+**Why Live Verify wins here:** It extends the "Edge of the Network" to the airline check-in desk in a foreign country. It bridges the gap between the secure US database and the insecure physical world where the traveler actually encounters checkpoints.
 

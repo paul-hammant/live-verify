@@ -192,7 +192,7 @@ Certificate fraud enables significant theft:
 - **Duplicate Claims:** Same shares claimed by multiple parties
 - **Restrictive Legend Removal:** Removing transfer restrictions
 
-OCR-to-hash addresses forgery and alteration. Transfer agent records confirm current ownership status.
+Live Verify addresses forgery and alteration. Transfer agent records confirm current ownership status.
 
 **Companies and Transfer Agents as Issuers**
 
@@ -266,7 +266,7 @@ The dematerialization trend:
 
 **Uncertificated Shares:** Some jurisdictions allow shares without certificates.
 
-OCR-to-hash applies to physical certificates; book-entry has separate verification mechanisms.
+Live Verify applies to physical certificates; book-entry has separate verification mechanisms.
 
 **Transfer Documentation**
 

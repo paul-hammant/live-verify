@@ -118,11 +118,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. State Registries
 
-| Feature | OCR-to-Hash | State Registry (Online) | The "Fridge" Magnet |
+| Feature | Live Verify | State Registry (Online) | The "Fridge" Magnet |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Hospital/Firm. | **Gov-Bound.** Bound to the State. | **None.** Trust the paper. |
 | **Integrity** | **Cryptographic.** Protects every wish. | **Data-Only.** Doesn't protect the paper. | **Zero.** Easily forged. |
 | **Speed** | **Instant.** 5-second scan. | **Slow.** Requires login/fees and manual search. | **Instant.** |
 | **Freshness** | **Real-time.** Shows if superseded. | **Laggy.** Updates take weeks. | **Static.** |
 
-**Why OCR wins here:** The "ICU Reality." Decisions in the ICU are made in minutes. Doctors don't have time to navigate a state government website or pay a $10 fee to see a directive. OCR-to-hash turns the **Paper on the Clipboard** into a live, trusted clinical link, ensuring the patient's dignity is protected by the latest technology.
+**Why Live Verify wins here:** The "ICU Reality." Decisions in the ICU are made in minutes. Doctors don't have time to navigate a state government website or pay a $10 fee to see a directive. Live Verify turns the **Paper on the Clipboard** into a live, trusted clinical link, ensuring the patient's dignity is protected by the latest technology.

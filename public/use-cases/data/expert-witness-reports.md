@@ -123,11 +123,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. E-Discovery Platforms (Relativity)
 
-| Feature | OCR-to-Hash | E-Discovery (Relativity) | Scanned PDF Report |
+| Feature | Live Verify | E-Discovery (Relativity) | Scanned PDF Report |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Expert. | **System-Bound.** Trust the DB admin. | **Zero.** Easily forged. |
 | **User Access** | **Universal.** PDFs stay verifiable post-discovery. | **Restricted.** Access usually cut off after the trial ends. | **Universal.** |
 | **Integrity** | **Binds Opinion.** Protects every word. | **Data-Only.** Doesn't verify physical printouts. | **Vulnerable.** |
 | **Cost** | **Low.** Standard web infra. | **Very High.** Monthly "Seat Fees" and hosting. | **None.** |
 
-**Why OCR wins here:** The "Room Moment." Expert reports are read by judges and juries on paper or flattened tablets. They are used in depositions far from the IT office. OCR-to-hash turns the **Physical Page** into an immutable digital anchor, ensuring that the expert's *actual* opinion is what the jury sees, not a lawyer's "Edited Version."
+**Why Live Verify wins here:** The "Room Moment." Expert reports are read by judges and juries on paper or flattened tablets. They are used in depositions far from the IT office. Live Verify turns the **Physical Page** into an immutable digital anchor, ensuring that the expert's *actual* opinion is what the jury sees, not a lawyer's "Edited Version."

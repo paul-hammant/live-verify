@@ -14,7 +14,7 @@ The people who manage a company's pension fund (the **Trustees**) are legally re
 
 **Pension Trustee Liability (PTL)** insurance protects these individuals.
 
-Because these claims can hit 20 years after a person retires, the paperwork must be permanent. OCR-to-hash turns the static certificate in a trustee's home safe into a live, cryptographically trusted link back to the insurance carrier, ensuring they stay protected even decades later.
+Because these claims can hit 20 years after a person retires, the paperwork must be permanent. Live Verify turns the static certificate in a trustee's home safe into a live, cryptographically trusted link back to the insurance carrier, ensuring they stay protected even decades later.
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 2px solid #2c3e50; background: #fff; padding: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="background: #2c3e50; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
@@ -128,11 +128,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Annual Reports
 
-| Feature | OCR-to-Hash | Pension Annual Report | PDF Scan of Policy |
+| Feature | Live Verify | Pension Annual Report | PDF Scan of Policy |
 | :--- | :--- | :--- | :--- |
 | **Integrity** | **Cryptographic.** Binds every trustee name. | **Vague.** Often just says "Insurance is in place." | **Zero.** Easily forged. |
 | **Freshness** | **Real-time.** Shows if cancelled *today*. | **Historical.** Usually 6-12 months out of date. | **Static.** |
 | **Detail** | **High.** Shows specific ERISA triggers. | **Low.** Minimal insurance detail. | **Full.** But untrusted. |
 | **Archival** | **Permanent.** Durable for 20-year tail. | **Low.** Often discarded after 5 years. | **Vulnerable.** |
 
-**Why OCR wins here:** The "Tail of Liability." Pension claims often arise decades after the trustee has retired. By then, the company might be gone. OCR-to-hash turns the **Static Certificate** in the trustee's home safe into a permanent, cryptographically trusted link back to the carrier, ensuring protection even in the "Long Tail" of retirement.
+**Why Live Verify wins here:** The "Tail of Liability." Pension claims often arise decades after the trustee has retired. By then, the company might be gone. Live Verify turns the **Static Certificate** in the trustee's home safe into a permanent, cryptographically trusted link back to the carrier, ensuring protection even in the "Long Tail" of retirement.

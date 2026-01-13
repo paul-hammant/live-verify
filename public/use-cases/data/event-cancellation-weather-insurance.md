@@ -127,11 +127,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Automated Payouts (Parametric)
 
-| Feature | OCR-to-Hash | Parametric Insurance (API) | Scanned PDF |
+| Feature | Live Verify | Parametric Insurance (API) | Scanned PDF |
 | :--- | :--- | :--- | :--- |
 | **User Access** | **Universal.** Fans/Sponsors can verify. | **Zero.** The trigger happens in a private API loop between bank and insurer. | **Instant.** |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Carrier. | **Algorithm-Bound.** | **Zero.** Easily forged. |
 | **Integrity** | **Binds Content.** Protects the "Fine Print" triggers. | **Data-Only.** | **Vulnerable.** |
 | **Speed** | **Instant.** 5-second scan. | **Fast.** Automated payout. | **N/A.** |
 
-**Why OCR wins here:** The "Transparency" gap. Parametric insurance is the gold standard for speed, but it is a "Black Box" to the fans and sponsors. OCR-to-hash turns the **Paper Evidence of Insurance** into a live "Truth Portal," allowing everyone involved in the event to see the exact same verified data as the insurance company's computer.
+**Why Live Verify wins here:** The "Transparency" gap. Parametric insurance is the gold standard for speed, but it is a "Black Box" to the fans and sponsors. Live Verify turns the **Paper Evidence of Insurance** into a live "Truth Portal," allowing everyone involved in the event to see the exact same verified data as the insurance company's computer.

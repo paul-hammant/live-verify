@@ -73,7 +73,7 @@ The **Shipper (Customer)** benefits from verification.
 ## Third-Party Use
 
 **Freight Audit & Payment (FAP) Firms**
-**Automated Vetting:** FAP firms (e.g., Cass Information Systems, U.S. Bank) process millions of invoices. OCR-to-hash allows them to instantly verify carrier authenticity without manual "Carrier Onboarding" or phone verification for every new small trucker.
+**Automated Vetting:** FAP firms (e.g., Cass Information Systems, U.S. Bank) process millions of invoices. Live Verify allows them to instantly verify carrier authenticity without manual "Carrier Onboarding" or phone verification for every new small trucker.
 
 **Factoring Companies**
 **Invoice Financing:** Banks that buy carrier invoices (factoring) verify the freight bill hash to ensure the shipment is legitimate and the amount hasn't been "Padded" before they advance cash to the trucker.
@@ -85,7 +85,7 @@ The **Shipper (Customer)** benefits from verification.
 
 **The "Logistics Phishing" Fraud Problem**
 
-- **Business Email Compromise (BEC):** Hackers taking over a trucking company's email and sending "Updated Invoices" with a different bank account. OCR-to-hash prevents this by linking the paper to the carrier's *domain*, not an email account.
+- **Business Email Compromise (BEC):** Hackers taking over a trucking company's email and sending "Updated Invoices" with a different bank account. Live Verify prevents this by linking the paper to the carrier's *domain*, not an email account.
 - **Detention Fee Padding:** Shady drivers adding a "2-hour wait" fee ($150) to the paper invoice that wasn't authorized in the central system.
 - **Ghost Invoices:** Creating a fake invoice for a shipment that was never actually picked up or delivered.
 
@@ -121,11 +121,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. EDI (Electronic Data Interchange)
 
-| Feature | OCR-to-Hash | EDI 210 (Invoicing) | Scanned PDF Invoice |
+| Feature | Live Verify | EDI 210 (Invoicing) | Scanned PDF Invoice |
 | :--- | :--- | :--- | :--- |
 | **User Access** | **Universal.** Any small shipper/auditor. | **Restricted.** Requires heavy IT setup and VAN fees. | **Instant.** |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Carrier. | **System-Bound.** | **Zero.** Easily forged. |
 | **Interoperability** | **High.** Works for any trucker with a URL. | **Low.** Small truckers don't use EDI. | **Universal.** |
 | **Integrity** | **Binds Line Items.** Protects the FSC. | **Data-Only.** | **Vulnerable.** |
 
-**Why OCR wins here:** The "Long Tail" of Trucking. While the top 100 carriers use EDI, there are 500,000 small trucking companies in the USA who only use PDF invoices. OCR-to-hash turns those **PDFs and Paper Bills** into cryptographically trusted digital artifacts, bringing "EDI-level" trust to the entire industry without the "EDI-level" cost.
+**Why Live Verify wins here:** The "Long Tail" of Trucking. While the top 100 carriers use EDI, there are 500,000 small trucking companies in the USA who only use PDF invoices. Live Verify turns those **PDFs and Paper Bills** into cryptographically trusted digital artifacts, bringing "EDI-level" trust to the entire industry without the "EDI-level" cost.

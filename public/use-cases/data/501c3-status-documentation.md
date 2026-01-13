@@ -147,12 +147,12 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. QR/NFC
 
-| Feature | OCR-to-Hash | QR Code | Public Database Search |
+| Feature | Live Verify | QR Code | Public Database Search |
 | :--- | :--- | :--- | :--- |
 | **Trust Model** | **Strong.** Links directly to `irs.gov`. | **Weak.** QR codes can point to `irs-gov-verify.com` (phishing site). | **Strong.** But requires manual data entry. |
 | **User Experience** | **Fast.** Scan the letter -> verified. | **Fast.** Scan the code. | **Slow.** Type in EIN, solve CAPTCHA, find record. |
 | **Offline Proof** | **Medium.** Hash proves integrity of the paper text. | **Low.** Just a link. | **None.** Requires internet to search DB. |
 | **Phishing Resistance** | **High.** `verify:` line is human-readable. | **Low.** URL often hidden or truncated. | **N/A.** |
 
-**Why OCR wins here:** The "Determination Letter" is a totem of legitimacy in the non-profit world. It is framed on walls, attached to grant PDFs, and mailed to donors. Preserving its visual dignity while adding verification is superior to plastering a QR code on a formal government letter. Furthermore, database searches are prone to user error (typos in EINs), whereas scanning the document itself eliminates entry errors.
+**Why Live Verify wins here:** The "Determination Letter" is a totem of legitimacy in the non-profit world. It is framed on walls, attached to grant PDFs, and mailed to donors. Preserving its visual dignity while adding verification is superior to plastering a QR code on a formal government letter. Furthermore, database searches are prone to user error (typos in EINs), whereas scanning the document itself eliminates entry errors.
 

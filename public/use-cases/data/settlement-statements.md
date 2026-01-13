@@ -68,7 +68,7 @@ The **Buyer / Seller** benefits from verification.
 ## Third-Party Use
 
 **Mortgage Lenders / Underwriters**
-**Post-Closing Audit:** Instantly verifying thousands of loan files. OCR-to-hash ensures the "Sale Price" and "Down Payment" in the bank's file match the digital truth at the title company, stopping "Equity Skimming" or "Hidden Second Mortgage" fraud.
+**Post-Closing Audit:** Instantly verifying thousands of loan files. Live Verify ensures the "Sale Price" and "Down Payment" in the bank's file match the digital truth at the title company, stopping "Equity Skimming" or "Hidden Second Mortgage" fraud.
 
 **Secondary Market Investors**
 **Portfolio Due Diligence:** Before buying a pool of mortgages, the investor scans the hashes of the settlement statements. Verification ensures that the "LTV" (Loan-to-Value) ratios are based on authentic purchase prices.

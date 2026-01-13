@@ -104,6 +104,15 @@ Providers serve many issuers from shared infrastructure:
 - Professional: Higher volume, API access, analytics
 - Enterprise: Unlimited, SLA, dedicated support
 
+**Free Tier Economics:**
+
+Many small issuers (HOAs, solo practitioners, landlords) may only need a few dozen hashes and receive a handful of verifications per month. At ~$0.000005 per verification, the infrastructure cost is negligible. Providers can offer genuinely free tiers for low-volume users:
+- Goodwill and ecosystem growth
+- Upsell path when volumes increase
+- Network effects (more issuers = more verifier awareness)
+
+The threshold for "free" can be generous—even 1,000 verifications/month costs under $0.01.
+
 **Per-Document:**
 - Pay-per-hash for occasional users
 - Bulk pricing for high-volume periods
@@ -120,6 +129,59 @@ Providers serve many issuers from shared infrastructure:
 - HRIS systems
 - Document management systems
 - Legal practice software
+
+## Post-Verification Actions (Value-Add)
+
+Beyond simple OK/REVOKED responses, SaaS providers can offer **post-verification actions** - follow-up workflows triggered after successful verification. This differentiates providers and creates additional revenue streams.
+
+**Action Types:**
+
+| Action Type | Description | Example Use Cases |
+|-------------|-------------|-------------------|
+| POST form | Verifier submits structured feedback | Building inspectors, healthcare workers, tour guides |
+| Link to profile | Response includes URL to public registry | Attorneys (bar profile), professional licenses |
+| Complaint pathway | One-click link to file concerns | Police credentials, licensed professionals |
+| Contact info | Broker/agent contact for follow-up | Insurance certificates, B2B contracts |
+| Tip/payment link | Digital gratuity without cash | Tour guides, service workers |
+
+**Concrete Examples:**
+
+- **Building Inspector Badges** — Homeowner records visit details (address, time, concerns); creates audit trail; bribery deterrent. "Never discouraged" principle: every report logged.
+- **Healthcare Worker Credentials** — Patient/family records interaction; write-only from their POV; workers benefit from logged interactions as staffing evidence.
+- **Tour Guide Verification** — POST feedback form plus tip link for digital gratuity; valuable when local currency unfamiliar or ATMs scarce.
+- **Attorney Good Standing** — Link to bar association profile with disciplinary history, CLE status, and existing complaint channels.
+- **Commercial Insurance Certificates** — Broker contact and link to request updated certificate; identifies specific lapsed coverage segments.
+- **Building Safety Postings** — Link to inspection history (elevator, restaurant health grades, pool certifications). Patterns matter as much as current status—seeing 10 consecutive on-time inspections tells a different story than a single OK.
+
+**External Redirects:**
+
+Post-verification actions don't need to stay within the issuer's infrastructure. The response can include a redirect (or link) to an **external site with context**:
+
+```
+HTTP 200 OK
+Status: OK
+More: https://cityofchicago.gov/elevator-inspections?building=1234&unit=5
+```
+
+The issuer provides the context parameters; the external site (city portal, regulatory database, professional registry) handles the display. This avoids duplicating public infrastructure while still giving verifiers a seamless path to deeper information.
+
+**Provider Infrastructure:**
+
+To support post-verification actions, providers need:
+- Form builder for issuer-defined POST schemas
+- Secure submission storage with issuer-only access
+- Optional webhook delivery of submissions
+- Rate limiting and abuse detection
+- GDPR/privacy compliance for submitted data
+
+**Revenue Opportunity:**
+
+Post-verification actions justify premium pricing:
+- Basic tier: OK/REVOKED only
+- Professional tier: Link-based actions
+- Enterprise tier: POST forms with analytics dashboard
+
+See `public/use-cases/data/post-verification-actions.csv` for the full catalog of use cases with defined actions.
 
 ## Trust Considerations
 

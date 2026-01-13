@@ -120,14 +120,14 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. e-DGD (Electronic Data)
 
-| Feature | OCR-to-Hash | e-DGD (IATA Digital) | Paper DGD Form |
+| Feature | Live Verify | e-DGD (IATA Digital) | Paper DGD Form |
 | :--- | :--- | :--- | :--- |
 | **Field Access** | **Instant.** Scan the paper on the pallet. | **Hard.** Requires warehouse staff to have tablet access to IATA's private cloud. | **Instant.** |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Shipper/Packer. | **Platform-Bound.** Trust the IATA central hub. | **Zero.** Easily forged. |
 | **Connectivity** | **Strong.** Paper works inside lead-shielded warehouses. | **Fragile.** Requires 100% 5G/Wi-Fi coverage on the tarmac. | **Offline.** |
 | **Integrity** | **Binds Content.** Proves the *UN Number* matches. | **Data-Only.** | **Vulnerable.** |
 
-**Why OCR wins here:** The "Warehouse reality." Air cargo hubs are massive, metal-clad buildings where Wi-Fi is spotty and staff move fast. They rely on the "Persistent Paper" attached to the boxes. OCR-to-hash turns that paper into a **Live Safety Link**, ensuring the person loading the plane has the same verified data as the person who packed the box.
+**Why Live Verify wins here:** The "Warehouse reality." Air cargo hubs are massive, metal-clad buildings where Wi-Fi is spotty and staff move fast. They rely on the "Persistent Paper" attached to the boxes. Live Verify turns that paper into a **Live Safety Link**, ensuring the person loading the plane has the same verified data as the person who packed the box.
 
 
 ---
@@ -259,14 +259,14 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Port Community Systems (PCS)
 
-| Feature | OCR-to-Hash | PCS / Central Hub | Paper DGD |
+| Feature | Live Verify | PCS / Central Hub | Paper DGD |
 | :--- | :--- | :--- | :--- |
 | **Field Access** | **Instant.** Scan the paper at the gate. | **Difficult.** Requires truckers/clerks to have complex portal logins. | **Instant.** |
 | **Trust Anchor** | **Domain-Bound.** Trust the Shipper. | **System-Bound.** Trust the Port's IT vendor. | **Zero.** Easily forged. |
 | **Connectivity** | **Strong.** Paper works at remote berths. | **Fragile.** Port IT systems often experience downtime. | **Offline.** |
 | **Interoperability** | **Universal.** Works across any port/carrier. | **Siloed.** Hamburg's PCS doesn't talk to Singapore's. | **Universal.** |
 
-**Why OCR wins here:** The "Intermodal Handoff." A chemical container moves from Factory (Truck) -> Port Gate -> Vessel -> Destination Port. At every step, a different entity takes responsibility. OCR-to-hash turns the **Existing Paper Standard** into a universal digital bridge that moves *with the cargo*, providing "Single Source of Truth" trust without needing a global IT integration.
+**Why Live Verify wins here:** The "Intermodal Handoff." A chemical container moves from Factory (Truck) -> Port Gate -> Vessel -> Destination Port. At every step, a different entity takes responsibility. Live Verify turns the **Existing Paper Standard** into a universal digital bridge that moves *with the cargo*, providing "Single Source of Truth" trust without needing a global IT integration.
 
 ---
 
@@ -393,11 +393,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Central Portals (ERMA)
 
-| Feature | OCR-to-Hash | Gov Hazmat Portal | Paper Manifest |
+| Feature | Live Verify | Gov Hazmat Portal | Paper Manifest |
 | :--- | :--- | :--- | :--- |
 | **Field Access** | **Instant.** Scan the paper at the crash site. | **Difficult.** Requires responders to have specific portal logins and stable internet. | **Instant.** |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Shipper. | **Gov-Bound.** | **Zero.** Easily forged. |
 | **Connectivity** | **Strong.** Works in rural areas/dead zones. | **Fragile.** Portals often lag during emergencies. | **Offline.** |
 | **Integrity** | **Binds Data.** Protects the UN Number. | **Data-Only.** | **Vulnerable.** |
 
-**Why OCR wins here:** The "Emergency Response" reality. In a highway accident, seconds matter. First responders don't have time to navigate a government portal. OCR-to-hash turns the **Paper Manifest** into a live, trusted safety link that works anywhere there is a phone, ensuring that responders know exactly what they are dealing with before they approach the flames.
+**Why Live Verify wins here:** The "Emergency Response" reality. In a highway accident, seconds matter. First responders don't have time to navigate a government portal. Live Verify turns the **Paper Manifest** into a live, trusted safety link that works anywhere there is a phone, ensuring that responders know exactly what they are dealing with before they approach the flames.

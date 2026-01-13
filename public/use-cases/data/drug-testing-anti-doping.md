@@ -136,11 +136,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. ADAMS Database
 
-| Feature | OCR-to-Hash | ADAMS Portal (WADA) | Scanned PDF / Image |
+| Feature | Live Verify | ADAMS Portal (WADA) | Scanned PDF / Image |
 | :--- | :--- | :--- | :--- |
 | **Integrity** | **Cryptographic.** Binds Sample to Result. | **High.** Direct DB access. | **Zero.** Easily forged. |
 | **Accessibility** | **Open.** Any sponsor or journalist can verify. | **Restricted.** Requires private credentials. | **Instant.** |
 | **Speed** | **Instant.** 5-second scan. | **Slow.** Requires login and manual ID search. | **Instant.** |
 | **Hardware** | **Universal.** Any smartphone. | **Technical.** Requires laptop/dedicated app. | **Manual.** |
 
-**Why OCR wins here:** The "Transparency Bridge." WADA's ADAMS database is a "Fortress"—only officials can see it. But the **Athlete** needs to prove their clean status to the **Public** and **Sponsors**. OCR-to-hash turns the "Private Record" into a "Publicly Verifiable Truth" without exposing the entire secret database.
+**Why Live Verify wins here:** The "Transparency Bridge." WADA's ADAMS database is a "Fortress"—only officials can see it. But the **Athlete** needs to prove their clean status to the **Public** and **Sponsors**. Live Verify turns the "Private Record" into a "Publicly Verifiable Truth" without exposing the entire secret database.

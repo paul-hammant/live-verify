@@ -14,7 +14,7 @@ Every 10 years, the government counts every person in the country. Participating
 
 A **Census Household Receipt** is your proof that you filled out the form. It confirms that "Household #9988 participated on April 1."
 
-In some areas, you need this verified receipt to get local benefits, register for school, or to prove to a "knock-on-the-door" enumerator that you already completed your duty. OCR-to-hash allows you to prove you participated without having to reveal your private family data to a stranger at the door.
+In some areas, you need this verified receipt to get local benefits, register for school, or to prove to a "knock-on-the-door" enumerator that you already completed your duty. Live Verify allows you to prove you participated without having to reveal your private family data to a stranger at the door.
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #000; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="background: #000; color: #fff; padding: 15px; text-align: center;">
@@ -79,7 +79,7 @@ The **Resident / Head of Household** benefits from verification.
 ## Third-Party Use
 
 **The National Archives (NARA)**
-**Data Preservation:** Ensuring that the digital archives of census data match the original physical submissions. OCR-to-hash creates a permanent link between the "Persistent Paper" and the "Digital Archive."
+**Data Preservation:** Ensuring that the digital archives of census data match the original physical submissions. Live Verify creates a permanent link between the "Persistent Paper" and the "Digital Archive."
 
 **Local School Districts**
 **Planning:** Using verified household count aggregates to plan for future classroom and bus route requirements.
@@ -128,10 +128,10 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Direct Database (Title 13)
 
-| Feature | OCR-to-Hash | Census Internal DB | Scanned Image (Ancestry) |
+| Feature | Live Verify | Census Internal DB | Scanned Image (Ancestry) |
 | :--- | :--- | :--- | :--- |
 | **Privacy** | **High.** Hash proves *participation* without revealing *PII*. | **Restricted.** Access prohibited by federal law for 72 years. | **Zero.** Everything is visible once the 72-year rule passes. |
 | **Trust** | **Cryptographic.** Bound to `census.gov`. | **High.** Direct from the source. | **Medium.** Prone to digital "Cleanup" errors. |
 | **Integrity** | **Binds Content.** Proves the *Count* hasn't changed. | **High.** | **Vulnerable.** |
 
-**Why OCR wins here:** The "Participation Proof" without "Content Leakage." Citizens need to prove they participated without necessarily showing the government their income or family details to a third party (like a landlord). OCR-to-hash allows for a "Verified Participation" token that respects the constitutional privacy of the census.
+**Why Live Verify wins here:** The "Participation Proof" without "Content Leakage." Citizens need to prove they participated without necessarily showing the government their income or family details to a third party (like a landlord). Live Verify allows for a "Verified Participation" token that respects the constitutional privacy of the census.

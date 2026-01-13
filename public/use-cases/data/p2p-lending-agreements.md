@@ -14,7 +14,7 @@ furtherDerivations: 1
 
 The **Lending Agreement** (or Promissory Note) is the legal contract that says: "Investor Group A lent Person B $10,000 at 8% interest."
 
-**"Loan Padding"** is a common financial fraud where a borrower "edits" a P2P agreement to show a smaller debt than they actually have, or a higher "verified income" stream, to trick a traditional bank into giving them a mortgage. **"Duplicate Financing"** occurs when a borrower uses the same set of un-verified paper documents to take out three different loans from three different platforms at once. OCR-to-hash binds the **Loan ID, Amount, and APR** to the fintech platform's domain.
+**"Loan Padding"** is a common financial fraud where a borrower "edits" a P2P agreement to show a smaller debt than they actually have, or a higher "verified income" stream, to trick a traditional bank into giving them a mortgage. **"Duplicate Financing"** occurs when a borrower uses the same set of un-verified paper documents to take out three different loans from three different platforms at once. Live Verify binds the **Loan ID, Amount, and APR** to the fintech platform's domain.
 
 <div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <span verifiable-text="start" data-for="p2p">[</span>
@@ -130,11 +130,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. API (Aggregators)
 
-| Feature | OCR-to-Hash | Plaid / Yodlee (API) | Scanned PDF |
+| Feature | Live Verify | Plaid / Yodlee (API) | Scanned PDF |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Platform. | **System-Bound.** Trust the aggregator. | **Zero.** Easily forged. |
 | **Privacy** | **High.** Share only the *Summary*. | **Low.** Aggregators often scrape full history. | **High.** |
 | **Connectivity** | **Offline-Ready.** Proves the paper. | **None.** Requires live API sync. | **Static.** |
 | **Speed** | **Instant.** 5-second scan. | **Slow.** Requires login/MFA. | **Manual.** |
 
-**Why OCR wins here:** The "Loan File" reality. In a mortgage closing, "Paper Artifacts" (PDFs) are still the standard. Lenders don't want to maintain 50 different "Fintech Logins" for every applicant. OCR-to-hash turns the **Static PDF Note** into a live, trusted digital link that carries its own proof of truth into the lender's file.
+**Why Live Verify wins here:** The "Loan File" reality. In a mortgage closing, "Paper Artifacts" (PDFs) are still the standard. Lenders don't want to maintain 50 different "Fintech Logins" for every applicant. Live Verify turns the **Static PDF Note** into a live, trusted digital link that carries its own proof of truth into the lender's file.

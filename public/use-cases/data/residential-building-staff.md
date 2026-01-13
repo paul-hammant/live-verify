@@ -220,7 +220,7 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Uniforms / Management Call-Back
 
-| Feature | OCR-to-Hash | Uniform & Visible Badge | Calling Building Management | Asking for ID |
+| Feature | Live Verify | Uniform & Visible Badge | Calling Building Management | Asking for ID |
 | :--- | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Verified by building mgmt or state licensing board. | **Visual.** Uniforms and vests easily faked. | **Human.** Assumes someone answers; risky to leave door open while calling. | **Document-Based.** Resident must visually inspect ID; forged credentials look realistic. |
 | **Integrity** | **Cryptographic.** Binds contractor to work order and unit. | **Zero.** Impostors in contractor clothing indistinguishable. | **Variable.** Management system may have lag or outdated info. | **Low.** Fake IDs are readily available online. |
@@ -228,7 +228,7 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 | **Freshness** | **Real-time.** Shows if work order is active *today*, if license is current. | **Static.** Badge never updates. | **Variable.** Management may not know latest updates. | **Static.** ID doesn't update if license expired overnight. |
 | **Works Alone** | **Yes.** Resident can verify without needing to call anyone. | **Questionable.** Resident must judge appearance and make a call. | **No.** Resident must open door or leave it open to call. | **Somewhat.** Resident can examine ID but can't verify authenticity. |
 
-**Why OCR wins here:** The **"Home Entry Workflow."** A resident must decide—alone, in seconds, at their front door—whether to allow a stranger entry to their private home. They can't easily call building management, can't safely leave their door open while verifying, and can't visually distinguish a legitimate contractor from an impostor. OCR-to-hash gives residents a cryptographic proof of authorization they can verify in 3 seconds at the peephole.
+**Why Live Verify wins here:** The **"Home Entry Workflow."** A resident must decide—alone, in seconds, at their front door—whether to allow a stranger entry to their private home. They can't easily call building management, can't safely leave their door open while verifying, and can't visually distinguish a legitimate contractor from an impostor. Live Verify gives residents a cryptographic proof of authorization they can verify in 3 seconds at the peephole.
 
 ---
 

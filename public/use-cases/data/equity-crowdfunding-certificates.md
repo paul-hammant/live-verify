@@ -79,7 +79,7 @@ The **Investor (Shareholder)** benefits from verification.
 ## Third-Party Use
 
 **Secondary Market Platforms**
-**Cap Table Integrity:** Before listing a company's shares for trade, the platform verifies the individual certificates of the sellers. OCR-to-hash ensures the seller actually owns the 1,000 shares they claim.
+**Cap Table Integrity:** Before listing a company's shares for trade, the platform verifies the individual certificates of the sellers. Live Verify ensures the seller actually owns the 1,000 shares they claim.
 
 **Startup CEOs / Founders**
 **Governance:** Instantly verifying the identity and holding of a shareholder who is requesting access to a private company meeting or voting on a board resolution.
@@ -127,11 +127,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Cap Table Software (Carta)
 
-| Feature | OCR-to-Hash | Carta / Pulley (Platform) | Scanned PDF |
+| Feature | Live Verify | Carta / Pulley (Platform) | Scanned PDF |
 | :--- | :--- | :--- | :--- |
 | **User Access** | **Universal.** Share with any buyer/bank. | **Siloed.** Requires buyer to be invited to the portal. | **Instant.** |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Transfer Agent. | **System-Bound.** | **Zero.** Easily forged. |
 | **Interoperability** | **High.** Works across all 50+ startup platforms. | **Low.** Hard to prove status to a non-user. | **Universal.** |
 | **Integrity** | **Binds Content.** Protects the share count. | **Data-Only.** | **Vulnerable.** |
 
-**Why OCR wins here:** The "Exit" reality. Startups often change transfer agents or go out of business. OCR-to-hash turns the **Static Certificate** in the investor's "Digital Vault" into a permanent, verifiable link to the official record, ensuring the equity remains a trade-able asset even if the original portal changes software.
+**Why Live Verify wins here:** The "Exit" reality. Startups often change transfer agents or go out of business. Live Verify turns the **Static Certificate** in the investor's "Digital Vault" into a permanent, verifiable link to the official record, ensuring the equity remains a trade-able asset even if the original portal changes software.

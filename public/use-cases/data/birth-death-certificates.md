@@ -133,11 +133,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Physical Security (Paper)
 
-| Feature | OCR-to-Hash | Security Paper (Intaglio/Void) | EVVE (Gov-to-Gov) |
+| Feature | Live Verify | Security Paper (Intaglio/Void) | EVVE (Gov-to-Gov) |
 | :--- | :--- | :--- | :--- |
 | **Integrity** | **Cryptographic.** Protects the *text*. | **Mechanical.** Protects the *paper*. | **Database.** Direct server check. |
 | **Public Access** | **Restricted.** Only person with the cert can verify. | **Visual.** Anyone can look at it. | **Zero.** Only Gov agencies have access. |
 | **Interoperability** | **High.** Any employer/bank can verify. | **Low.** Requires expert knowledge of 50 different state paper types. | **None.** Private Gov-only network. |
 | **Cost** | **Low.** Standard web infra. | **High.** Specialty printing and chemical paper. | **High.** Per-query fees are common. |
 
-**Why OCR wins here:** Reach. EVVE is great but only works for government agencies. Banks, employers, and foreign governments are locked out. OCR-to-hash allows **private-sector verifiers** to have "Passport Agency Level" trust in a piece of paper, without compromising the central government database.
+**Why Live Verify wins here:** Reach. EVVE is great but only works for government agencies. Banks, employers, and foreign governments are locked out. Live Verify allows **private-sector verifiers** to have "Passport Agency Level" trust in a piece of paper, without compromising the central government database.

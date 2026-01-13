@@ -78,7 +78,7 @@ The **Borrower (Maker)** benefits from verification.
 **Due Diligence:** Before buying a portfolio of 1,000 notes, an investor scans the hashes. Verification ensures the "Principal Balances" and "Maturity Dates" haven't been inflated by the seller to make the portfolio look more valuable than it is.
 
 **Civil Courts / Judges**
-**Standing Verification:** In a foreclosure case, the "Plaintiff" must prove they actually own the note. OCR-to-hash allows the court to verify the "Chain of Assignment" directly from the original lender's domain, stopping the common "Lost Note" fraud.
+**Standing Verification:** In a foreclosure case, the "Plaintiff" must prove they actually own the note. Live Verify allows the court to verify the "Chain of Assignment" directly from the original lender's domain, stopping the common "Lost Note" fraud.
 
 **Attorneys / Estate Executors**
 **Asset Reconciliation:** Verifying the true value and terms of notes held by a deceased person to ensure the estate is accurately valued for tax and distribution.

@@ -170,11 +170,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Physical References
 
-| Feature | OCR-to-Hash | Phone References | Background Check PDF |
+| Feature | Live Verify | Phone References | Background Check PDF |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Trust the Platform. | **Personal.** Easy to have a friend "pretend" to be a prior boss. | **Zero.** Easily forged with a PDF editor. |
 | **Integrity** | **Binds Identity.** Links face to status. | **Subjective.** | **None.** |
 | **Speed** | **Instant.** 5-second scan. | **Slow.** Requires multiple phone calls. | **Instant.** |
 | **Freshness** | **Real-time.** Shows if banned *today*. | **N/A.** | **Static.** |
 
-**Why OCR wins here:** The "Front Door" workflow. Parents often interview 3-4 sitters in a week. They don't have time to call 12 references or run 4 background checks. OCR-to-hash allows them to **pre-verify** every candidate at the door, ensuring only legitimate professionals ever enter the home.
+**Why Live Verify wins here:** The "Front Door" workflow. Parents often interview 3-4 sitters in a week. They don't have time to call 12 references or run 4 background checks. Live Verify allows them to **pre-verify** every candidate at the door, ensuring only legitimate professionals ever enter the home.

@@ -17,7 +17,7 @@ It is used for high-stakes financial decisions:
 2.  **M&A Deals:** Buyers verify the target's revenue before purchasing.
 3.  **Public Trust:** Investors rely on audits to buy stocks.
 
-**"Phantom Audits"** are a major corporate crime. Fraudulent companies create fake "Unqualified Opinions" on stolen accounting firm letterhead (like PwC or EY) to hide insolvency or to trick lenders into funding a failing business. In other cases, executives "Scrub" a real audit to remove a **"Going Concern"** warning—the paragraph where the auditor warns that the company might go bankrupt. OCR-to-hash binds the **Company name, Net Income, and Opinion Type** to the audit firm's domain.
+**"Phantom Audits"** are a major corporate crime. Fraudulent companies create fake "Unqualified Opinions" on stolen accounting firm letterhead (like PwC or EY) to hide insolvency or to trick lenders into funding a failing business. In other cases, executives "Scrub" a real audit to remove a **"Going Concern"** warning—the paragraph where the auditor warns that the company might go bankrupt. Live Verify binds the **Company name, Net Income, and Opinion Type** to the audit firm's domain.
 
 <div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <span verifiable-text="start" data-for="audit">[</span>
@@ -139,11 +139,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. SEC EDGAR Database
 
-| Feature | OCR-to-Hash | SEC EDGAR (Public) | Private PDF |
+| Feature | Live Verify | SEC EDGAR (Public) | Private PDF |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Auditor. | **Gov-Bound.** Bound to the filing. | **Zero.** Easily forged. |
 | **Coverage** | **Universal.** Works for private company audits. | **Limited.** Only for public companies. | **Full.** |
 | **Integrity** | **Binds Content.** Proves every word matches. | **Data-Only.** Doesn't protect the paper. | **Vulnerable.** |
 | **Freshness** | **Real-time.** Shows "Withdrawn" status. | **Laggy.** Re-filings take time. | **Static.** |
 
-**Why OCR wins here:** Reach. Private companies and non-profits do not file with the SEC. Their audits are "Private Documents" shared with specific lenders and donors. OCR-to-hash allows these private documents to be cryptographically verified without making them public on a government database.
+**Why Live Verify wins here:** Reach. Private companies and non-profits do not file with the SEC. Their audits are "Private Documents" shared with specific lenders and donors. Live Verify allows these private documents to be cryptographically verified without making them public on a government database.

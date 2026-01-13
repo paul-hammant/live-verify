@@ -14,7 +14,7 @@ When you hire a **Personal Trainer** or **Yoga Instructor**, you are often alone
 
 The problem is that "Fitness Certification" is an unregulated industry in many regions. Anyone can print a realistic-looking "Certified Trainer" certificate at home. Even legitimate trainers may have had their certifications revoked for safety violations or failed their background checks.
 
-OCR-to-hash allows a client to scan the trainer's digital badge or physical ID to verify: **"Is this person currently certified by a recognized national body, and have they passed a professional background check?"**
+Live Verify allows a client to scan the trainer's digital badge or physical ID to verify: **"Is this person currently certified by a recognized national body, and have they passed a professional background check?"**
 
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
   <div style="background: #000; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
@@ -76,7 +76,7 @@ The **Client / Gym Member** benefits from verification.
 ## Third-Party Use
 
 **Luxury Gyms / Health Clubs**
-**Sub-contractor Vetting:** High-end gyms (e.g., Equinox) allow independent trainers to bring clients to their facilities. OCR-to-hash allows the gym's front desk to instantly verify that every guest trainer is currently certified and insured, protecting the gym from liability.
+**Sub-contractor Vetting:** High-end gyms (e.g., Equinox) allow independent trainers to bring clients to their facilities. Live Verify allows the gym's front desk to instantly verify that every guest trainer is currently certified and insured, protecting the gym from liability.
 
 **Marketplaces (e.g., Thumbtack, Bark)**
 **Merchant Integrity:** Service platforms can require trainers to provide a verified hash. This allows the platform to automatically "De-list" trainers whose certifications expire, ensuring that users only see verified pros.

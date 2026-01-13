@@ -69,7 +69,7 @@ The **Seller (Small Business)** benefits from verification.
 ## Third-Party Use
 
 **The Debtor (Buyer's Accounts Payable)**
-**Remit-to Integrity:** When a buyer receives a "Notice of Assignment" telling them to pay a different bank, they are often terrified of wire fraud. OCR-to-hash allows the AP clerk to verify the NOA against the Factor's domain. "Verified by BlueVine" ensures the buyer isn't paying a hacker.
+**Remit-to Integrity:** When a buyer receives a "Notice of Assignment" telling them to pay a different bank, they are often terrified of wire fraud. Live Verify allows the AP clerk to verify the NOA against the Factor's domain. "Verified by BlueVine" ensures the buyer isn't paying a hacker.
 
 **Alternative Lenders**
 **Lien Vetting:** Ensuring that an invoice isn't being "Double Factored" (sold to two different firms). A verified hash proves who currently owns the legal right to the cash.
@@ -81,7 +81,7 @@ The **Seller (Small Business)** benefits from verification.
 
 **The "Double Factoring" Fraud Problem**
 
-- **Double-Financing:** A dishonest seller selling the same $100,000 invoice to two different factoring companies. OCR-to-hash allows factors to check the hash status of an invoice ID across a shared (or individual) domain index.
+- **Double-Financing:** A dishonest seller selling the same $100,000 invoice to two different factoring companies. Live Verify allows factors to check the hash status of an invoice ID across a shared (or individual) domain index.
 - **Amount Inflation:** Editing a $10,000 invoice PDF to read $100,000 to get a larger cash advance.
 - **Fake NOAs:** Hackers creating fake assignment letters to redirect payments from a legitimate factor to a private criminal wallet.
 
@@ -117,11 +117,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Manual VOD Calls
 
-| Feature | OCR-to-Hash | Manual VOD (Phone/Email) | Scanned PDF NOA |
+| Feature | Live Verify | Manual VOD (Phone/Email) | Scanned PDF NOA |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Factor. | **Human.** Prone to social engineering or "fake buyers." | **Zero.** Easily forged. |
 | **Speed** | **Instant.** 5-second scan. | **Slow.** Often takes 3-5 days to reach the buyer's AP manager. | **Instant.** |
 | **Integrity** | **Cryptographic.** Binds the *Bank Details*. | **Vague.** "Yes, we will pay that invoice." | **Vulnerable.** |
 | **Privacy** | **High.** Share only the *NOA*. | **Low.** Calls reveal the seller's cash situation. | **Vulnerable.** |
 
-**Why OCR wins here:** The "Wire Fraud" reality. Accounts Payable clerks are being trained to **ignore** email-based bank detail changes. They demand "Independent Verification." OCR-to-hash turns the **Assignment Letter** into a live, high-authority digital proof that allows the buyer to pay the factor with 100% confidence.
+**Why Live Verify wins here:** The "Wire Fraud" reality. Accounts Payable clerks are being trained to **ignore** email-based bank detail changes. They demand "Independent Verification." Live Verify turns the **Assignment Letter** into a live, high-authority digital proof that allows the buyer to pay the factor with 100% confidence.

@@ -121,11 +121,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Secure Portals
 
-| Feature | OCR-to-Hash | Secure Underwriter Portal | Scanned PDF |
+| Feature | Live Verify | Secure Underwriter Portal | Scanned PDF |
 | :--- | :--- | :--- | :--- |
 | **Integrity** | **Cryptographic.** Binds the *Ransom Limit*. | **System-Bound.** | **Zero.** Easily forged. |
 | **Privacy** | **High.** Verification happens without a login. | **Low.** Portal access often reveals full policy/history. | **Medium.** |
 | **Field Access** | **Instant.** Scan the paper in the safe. | **Difficult.** Requires laptop/stable 5G. | **Instant.** |
 | **Freshness** | **Real-time.** Shows if cancelled *today*. | **Live.** | **Static.** |
 
-**Why OCR wins here:** The "Hostage Moment." K&R decisions happen in 15 minutes in dark rooms. People are terrified. They don't want to struggle with a complex portal login or a forgotten password. OCR-to-hash turns the **Physical Confirmation Letter** (kept in the company safe) into a live, high-authority digital artifact that triggers the response team instantly.
+**Why Live Verify wins here:** The "Hostage Moment." K&R decisions happen in 15 minutes in dark rooms. People are terrified. They don't want to struggle with a complex portal login or a forgotten password. Live Verify turns the **Physical Confirmation Letter** (kept in the company safe) into a live, high-authority digital artifact that triggers the response team instantly.

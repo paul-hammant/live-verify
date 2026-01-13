@@ -67,7 +67,7 @@ The **Insurer's Chief Risk Officer (CRO)** benefits from verification.
 ## Third-Party Use
 
 **State Insurance Regulators (DOI)**
-**Solvency Monitoring:** Regulators can verify the authenticity of the actuarial signature and the specific reserve amounts in the "Yellow Book" filing. OCR-to-hash prevents a carrier from submitting a "Healthy" version to the regulator and a "Troubled" version to their internal risk team.
+**Solvency Monitoring:** Regulators can verify the authenticity of the actuarial signature and the specific reserve amounts in the "Yellow Book" filing. Live Verify prevents a carrier from submitting a "Healthy" version to the regulator and a "Troubled" version to their internal risk team.
 
 **Rating Agencies (A.M. Best / S&P)**
 **Credit Rating:** Verifying that the actuarial opinion underlying the company's financial strength rating is authentic and hasn't been altered.
@@ -91,14 +91,14 @@ The **Insurer's Chief Risk Officer (CRO)** benefits from verification.
 
 ## Competition vs. SERFF Public Search
 
-| Feature | OCR-to-Hash | SERFF / State Public Search | Scanned PDF Memo |
+| Feature | Live Verify | SERFF / State Public Search | Scanned PDF Memo |
 | :--- | :--- | :--- | :--- |
 | **Integrity** | **Binds Content.** Protects the $ amounts. | **Data-Only.** Doesn't verify the paper doc. | **Zero.** Easily forged. |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Actuary/Insurer. | **Gov-Bound.** | **Visual.** |
 | **Speed** | **Instant.** Scan the paper in the boardroom. | **Slow.** Requires finding the EIN and navigating Gov UI. | **Instant.** |
 | **Immediacy** | **Real-time.** Shows if firm retracted opinion. | **Laggy.** Depends on annual gov filing cycles. | **Static.** |
 
-**Why OCR wins here:** The "Room Moment." Reserve decisions involve hundreds of millions of dollars and happen in boardroom meetings or high-stakes negotiations. Executives don't have time to navigate gov portals. OCR-to-hash turns the **Actuarial Certificate** into a live digital checkpoint, ensuring the multi-billion dollar safety of the company is a verified fact.
+**Why Live Verify wins here:** The "Room Moment." Reserve decisions involve hundreds of millions of dollars and happen in boardroom meetings or high-stakes negotiations. Executives don't have time to navigate gov portals. Live Verify turns the **Actuarial Certificate** into a live digital checkpoint, ensuring the multi-billion dollar safety of the company is a verified fact.
 
 
 ---
@@ -163,7 +163,7 @@ The **Insurer's Chief Actuary** benefits from verification.
 ## Third-Party Use
 
 **State Insurance Regulators (DOI)**
-**Risk Monitoring:** Regulators can verify the authenticity of the morbidity assumptions. OCR-to-hash prevents a carrier from submitting a "Realistic" version to the regulator and an "Optimistic" version to their investors.
+**Risk Monitoring:** Regulators can verify the authenticity of the morbidity assumptions. Live Verify prevents a carrier from submitting a "Realistic" version to the regulator and an "Optimistic" version to their investors.
 
 **Policyholders (Aging Seniors)**
 **Transparency:** Allowing seniors to verify that the company they have paid premiums to for 30 years is actually solvent and maintains verified reserves to pay their future nursing home bills.
@@ -187,14 +187,14 @@ The **Insurer's Chief Actuary** benefits from verification.
 
 ## Competition vs. SERFF Public Search
 
-| Feature | OCR-to-Hash | SERFF / State Public Search | Scanned PDF Memo |
+| Feature | Live Verify | SERFF / State Public Search | Scanned PDF Memo |
 | :--- | :--- | :--- | :--- |
 | **Integrity** | **Binds Content.** Protects the $ amounts. | **Data-Only.** Doesn't verify the paper doc. | **Zero.** Easily forged. |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Actuary/Insurer. | **Gov-Bound.** | **Visual.** |
 | **Speed** | **Instant.** Scan the paper in the boardroom. | **Slow.** Requires finding the NAIC # and navigating Gov UI. | **Instant.** |
 | **Retention** | **50+ Years.** Durable for policy life. | **Variable.** State systems get purged/migrated. | **Vulnerable.** |
 
-**Why OCR wins here:** The "Legacy Block" reality. LTC policies last for half a century. Companies go bankrupt or get acquired multiple times. OCR-to-hash turns the **Actuarial Certificate** into a permanent, verifiable digital anchor that survives the death of IT systems, protecting the long-term safety of the policyholders.
+**Why Live Verify wins here:** The "Legacy Block" reality. LTC policies last for half a century. Companies go bankrupt or get acquired multiple times. Live Verify turns the **Actuarial Certificate** into a permanent, verifiable digital anchor that survives the death of IT systems, protecting the long-term safety of the policyholders.
 
 
 ---
@@ -279,7 +279,7 @@ The **Insured Company** (second party) receives the reserve certification from t
 The insured company (second party) may hand the verified document to various third parties:
 
 **State Workers' Comp Boards (Regulators)**
-**Solvency Audit:** Verifying that self-insured employers are maintaining the "Mandatory Reserves" required by state law. OCR-to-hash ensures the employer isn't providing a "Fake Actuarial Letter" to hide a lack of funding.
+**Solvency Audit:** Verifying that self-insured employers are maintaining the "Mandatory Reserves" required by state law. Live Verify ensures the employer isn't providing a "Fake Actuarial Letter" to hide a lack of funding.
 
 **Re-Insurers (Excess Carriers)**
 **Trigger Verification:** Before an excess carrier pays for a claim that exceeds $1M, they scan the primary insurer's verified reserve history. This ensures that the primary carrier hasn't "artificially inflated" the reserve to trigger the excess coverage prematurely.

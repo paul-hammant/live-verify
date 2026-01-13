@@ -11,7 +11,7 @@ furtherDerivations: 0
 
 Membership credentials where the primary verification need is **outside** the issuing organization's own premises. These aren't about getting through the club's front door—they're about proving membership to third parties who provide benefits, discounts, or services based on that status.
 
-## Why OCR-to-Hash Matters Here
+## Why Live Verify Matters Here
 
 A gym membership card only needs to work at the gym—they have your photo on file. But an **AAA card** needs to convince a tow truck driver at 2am on a highway that you're entitled to free roadside assistance. The driver can't call AAA's membership database. A **professional society ID** needs to convince a conference registration desk that you qualify for the $400 member discount. These are high-trust, low-verification situations ripe for fraud.
 
@@ -388,7 +388,7 @@ Membership fraud is low-tech and widespread:
 
 ## Rationale
 
-Unlike venue-admission credentials (where the issuer controls the door), these memberships create value through **distributed third-party recognition**. The AAA tow truck driver, the IEEE conference, the partner yacht club, and the union hiring hall all need to trust the card—but none of them control the membership database. OCR-to-hash bridges this trust gap, turning a paper or plastic card into a cryptographically verifiable credential that works anywhere, anytime, without a phone call.
+Unlike venue-admission credentials (where the issuer controls the door), these memberships create value through **distributed third-party recognition**. The AAA tow truck driver, the IEEE conference, the partner yacht club, and the union hiring hall all need to trust the card—but none of them control the membership database. Live Verify bridges this trust gap, turning a paper or plastic card into a cryptographically verifiable credential that works anywhere, anytime, without a phone call.
 
 
 ## Jurisdictional Witnessing

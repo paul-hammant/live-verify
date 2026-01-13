@@ -123,10 +123,10 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Project Management Software (Procore)
 
-| Feature | OCR-to-Hash | Procore / Autodesk Build | Scanned PDF |
+| Feature | Live Verify | Procore / Autodesk Build | Scanned PDF |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Insurer. | **System-Bound.** Relies on the GC uploading correctly. | **Zero.** Easily forged. |
 | **Freshness** | **Real-time.** Queries the carrier's live file. | **Static.** Relies on the last manual update. | **Manual.** |
 | **Interoperability** | **Universal.** Works for any bank/owner. | **Siloed.** Only works for people on that specific project. | **Universal.** |
 
-**Why OCR wins here:** The "Independent Truth." Project management software like Procore is a "Self-Reporting" system—it only shows what the GC uploads. OCR-to-hash provides an **independent digital verification** from the Insurer's domain, ensuring the GC's claims match the Underwriter's reality.
+**Why Live Verify wins here:** The "Independent Truth." Project management software like Procore is a "Self-Reporting" system—it only shows what the GC uploads. Live Verify provides an **independent digital verification** from the Insurer's domain, ensuring the GC's claims match the Underwriter's reality.

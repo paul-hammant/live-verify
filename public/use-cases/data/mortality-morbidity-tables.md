@@ -69,7 +69,7 @@ The **Appointed Actuary (at an Insurer)** benefits from verification.
 ## Third-Party Use
 
 **State Insurance Regulators (DOI)**
-**Compliance Audit:** Instantly verifying that the tables used in a carrier's annual statement match the official SOA/NAIC ledger. OCR-to-hash prevents "Table Gaming" where a company tweaks mortality rates by 0.1% to hide financial distress.
+**Compliance Audit:** Instantly verifying that the tables used in a carrier's annual statement match the official SOA/NAIC ledger. Live Verify prevents "Table Gaming" where a company tweaks mortality rates by 0.1% to hide financial distress.
 
 **Rating Agencies (A.M. Best)**
 **Capital Modeling:** Ensuring the risk models used to assign a "Financial Strength Rating" are built on verified, non-altered actuarial standards.
@@ -117,11 +117,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Actuarial Portals (Mort.SOA.org)
 
-| Feature | OCR-to-Hash | SOA Mortality Table Portal | Scanned PDF Memo |
+| Feature | Live Verify | SOA Mortality Table Portal | Scanned PDF Memo |
 | :--- | :--- | :--- | :--- |
 | **Integrity** | **Cryptographic.** Binds every digit. | **Data-Only.** Doesn't protect the specific paper doc. | **Zero.** Easily forged. |
 | **Trust Anchor** | **Domain-Bound.** Bound to the SOA. | **Database.** Direct from source. | **Visual.** |
 | **User Access** | **Universal.** Any regulator or auditor. | **Difficult.** Requires navigating complex XLS/XML downloads. | **Instant.** |
 | **Freshness** | **Real-time.** Shows if table was restated. | **Live.** | **Static.** |
 
-**Why OCR wins here:** The "Audit Artifact" reality. Actuaries work with "Static Reports" (PDFs) that are signed and archived for decades. They don't have the time to download fresh XML data for every audit check. OCR-to-hash turns the **Signed Actuarial Opinion** into a live digital anchor, ensuring the "Risk DNA" of the insurance industry is verified at every handoff.
+**Why Live Verify wins here:** The "Audit Artifact" reality. Actuaries work with "Static Reports" (PDFs) that are signed and archived for decades. They don't have the time to download fresh XML data for every audit check. Live Verify turns the **Signed Actuarial Opinion** into a live digital anchor, ensuring the "Risk DNA" of the insurance industry is verified at every handoff.

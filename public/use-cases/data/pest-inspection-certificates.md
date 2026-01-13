@@ -89,7 +89,7 @@ The **Home Seller / Real Estate Agent** benefits from verification.
 ## Third-Party Use
 
 **Mortgage Lenders / Underwriters**
-**Collateral Risk Audit:** Thousands of "Edited" PDF reports are submitted to banks every month. OCR-to-hash connects the underwriter directly to the inspection firm's domain, stopping "Termite Fraud" at the source and protecting the bank's property lien.
+**Collateral Risk Audit:** Thousands of "Edited" PDF reports are submitted to banks every month. Live Verify connects the underwriter directly to the inspection firm's domain, stopping "Termite Fraud" at the source and protecting the bank's property lien.
 
 **Home Buyers (The Public)**
 **Due Diligence:** A potential buyer can scan the WDI hash provided in the "Listing Packet" before they even make an offer. This ensures the "Clean" report isn't a fabrication, protecting them from buying a "Money Pit" with structural rot.

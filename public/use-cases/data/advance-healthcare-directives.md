@@ -136,11 +136,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. HIEs and EHRs
 
-| Feature | OCR-to-Hash | Health Info Exchange (HIE) | Wallet Card / USB |
+| Feature | Live Verify | Health Info Exchange (HIE) | Wallet Card / USB |
 | :--- | :--- | :--- | :--- |
 | **Interoperability** | **Universal.** Works on any device with a browser. No integration needed. | **Limited.** Requires hospitals to be on the same network (e.g., Epic to Epic). Often fails across state lines. | **Medium.** USBs may be blocked by hospital security; physical cards can be lost. |
 | **Speed** | **Instant.** Scan and view. | **Variable.** Can take time to query external records; may require patient consent (impossible if unconscious). | **Fast.** But relies on physical possession. |
 | **Authority** | **High.** Shows issuer domain (Registry/Notary). | **High.** Trusted clinical data. | **Low.** Could be an old/fake card. |
 | **Revocation** | **Real-time.** Status changes to REVOKED instantly. | **Good.** Updates eventually propagate. | **None.** Physical card still looks valid after revocation. |
 
-**Why OCR wins here:** The "Last Mile" problem in healthcare. Even with billion-dollar EHRs, doctors often rely on paper delivered by family. OCR-to-hash bridges the gap: it turns that paper (or a wallet card) into a real-time link to the source of truth, bypassing the complex and often broken HIE networks.
+**Why Live Verify wins here:** The "Last Mile" problem in healthcare. Even with billion-dollar EHRs, doctors often rely on paper delivered by family. Live Verify bridges the gap: it turns that paper (or a wallet card) into a real-time link to the source of truth, bypassing the complex and often broken HIE networks.

@@ -121,11 +121,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. ACE Portal / Single Window
 
-| Feature | OCR-to-Hash | ACE Portal (Gov) | Scanned PDF |
+| Feature | Live Verify | ACE Portal (Gov) | Scanned PDF |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Gov. | **Database.** Direct access. | **Zero.** Easily forged. |
 | **Accessibility** | **Open.** Any bank or buyer can verify. | **Restricted.** Requires Gov credentials and Vetting. | **Instant.** |
 | **Speed** | **Instant.** Scan the paper. | **Slow.** Requires login and manual entry search. | **Instant.** |
 | **Integrity** | **Binds Content.** Proves the *Duty Paid* matches. | **Data-Only.** | **Vulnerable.** |
 
-**Why OCR wins here:** The "Downstream Trust" gap. Government "Single Window" portals (like ACE) are for the government and brokers. Lenders, auditors, and domestic buyers are locked out. OCR-to-hash turns the **Official Paper Filling** into a public-facing trust bridge, allowing the private sector to leverage government data without needing a government login.
+**Why Live Verify wins here:** The "Downstream Trust" gap. Government "Single Window" portals (like ACE) are for the government and brokers. Lenders, auditors, and domestic buyers are locked out. Live Verify turns the **Official Paper Filling** into a public-facing trust bridge, allowing the private sector to leverage government data without needing a government login.

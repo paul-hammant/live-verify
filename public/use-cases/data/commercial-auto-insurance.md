@@ -14,7 +14,7 @@ When a company owns 100 trucks or vans, they don't buy 100 individual car insura
 
 Every driver carries a **Proof of Insurance** card. Unlike personal insurance, these cards must list the company's **DOT Number** and often include a federal **MCS-90** filing which guarantees the public is protected if a heavy truck causes an accident.
 
-Fraud is common: fleet owners often "delete" expensive-to-insure trucks from their policy to save money, but keep the old paper cards in the glovebox to fool DOT inspectors. OCR-to-hash allows an inspector to verify that **this specific VIN** is still covered today.
+Fraud is common: fleet owners often "delete" expensive-to-insure trucks from their policy to save money, but keep the old paper cards in the glovebox to fool DOT inspectors. Live Verify allows an inspector to verify that **this specific VIN** is still covered today.
 
 <div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <span verifiable-text="start" data-for="com-auto">[</span>
@@ -81,7 +81,7 @@ The **Fleet Owner** (second party) receives the commercial auto insurance card f
 The fleet owner (second party) may hand the verified document to various third parties:
 
 **Roadside DOT Inspectors**
-**Enforcement:** Instantly confirming that a heavy truck hasn't been "dropped" from the policy. Fleet owners often keep 100 trucks on the road while only paying for 50. OCR-to-hash verification of the VIN-specific card stops this "Ghost Fleet" fraud.
+**Enforcement:** Instantly confirming that a heavy truck hasn't been "dropped" from the policy. Fleet owners often keep 100 trucks on the road while only paying for 50. Live Verify verification of the VIN-specific card stops this "Ghost Fleet" fraud.
 
 **Logistics Brokers**
 **Risk Management:** Verifying the cargo and liability insurance of a carrier before dispatching a $500,000 load.
@@ -130,10 +130,10 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. FMCSA SAFER Database
 
-| Feature | OCR-to-Hash | FMCSA SAFER (Public) | Paper Fleet List |
+| Feature | Live Verify | FMCSA SAFER (Public) | Paper Fleet List |
 | :--- | :--- | :--- | :--- |
 | **VIN Detail** | **High.** Verifies *this specific truck*. | **Low.** Often only shows "Policy Active" for the whole company. | **High.** But untrusted. |
 | **Freshness** | **Real-time.** Queries the insurer's live fleet file. | **Laggy.** Federal records can lag by weeks. | **Static.** |
 | **Accessibility** | **Open.** Any warehouse or broker can verify. | **Public.** But limited data. | **Manual.** |
 
-**Why OCR wins here:** The "VIN Specificity" problem. Government databases like SAFER prove a company *has* insurance, but they rarely list the 500 individual VINs. OCR-to-hash allows a verifier to prove that **this specific VIN** is covered *today*, closing the gap between corporate-level filings and vehicle-level reality.
+**Why Live Verify wins here:** The "VIN Specificity" problem. Government databases like SAFER prove a company *has* insurance, but they rarely list the 500 individual VINs. Live Verify allows a verifier to prove that **this specific VIN** is covered *today*, closing the gap between corporate-level filings and vehicle-level reality.

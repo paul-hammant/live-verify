@@ -85,7 +85,7 @@ The crane owner (second party) may hand the verified document to various third p
 **Liability Shield:** Scanning the sticker on every crane arriving at the project. "Verified by Independent Inspector" ensures the GC isn't taking on the liability of an uninspected, potentially deadly piece of heavy machinery.
 
 **OSHA Inspectors**
-**Field Enforcement:** During a surprise job-site visit, the OSHA officer can scan the certificate in the crane cab. OCR-to-hash prevents "Pencil Whipping" where operators forge inspection dates.
+**Field Enforcement:** During a surprise job-site visit, the OSHA officer can scan the certificate in the crane cab. Live Verify prevents "Pencil Whipping" where operators forge inspection dates.
 
 **Public Safety Officials**
 **Event Monitoring:** Verifying the safety of cranes used near crowds (e.g., during parades or in dense urban areas).
@@ -131,11 +131,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. QR Stickers
 
-| Feature | OCR-to-Hash | Standard QR Sticker | Paper Inspection Log |
+| Feature | Live Verify | Standard QR Sticker | Paper Inspection Log |
 | :--- | :--- | :--- | :--- |
 | **Tamper Proofing** | **High.** Binds the *Serial Number* to the *Status*. | **Low.** Easily peeled off a good crane and put on a bad one. | **Zero.** Easily faked. |
 | **Durability** | **High.** Text lasts longer than fragile barcodes. | **Low.** Scratches/dirt make QRs unreadable. | **Fragile.** |
 | **Field Access** | **Instant.** Scan the paper/badge. | **Instant.** | **Slow.** Find the binder. |
 | **Trust Anchor** | **Domain-Bound.** Trust the Inspector. | **Platform-Bound.** | **Visual.** |
 
-**Why OCR wins here:** The "Site Trailer" reality. Construction sites are dirty, wet, and harsh. QR codes on stickers often degrade within weeks. OCR-to-hash allows for **redundant verification**—even if the paper is crumpled or the sticker is scratched, the machine-readable text (backed by the hash) remains a durable link to the source of safety data.
+**Why Live Verify wins here:** The "Site Trailer" reality. Construction sites are dirty, wet, and harsh. QR codes on stickers often degrade within weeks. Live Verify allows for **redundant verification**—even if the paper is crumpled or the sticker is scratched, the machine-readable text (backed by the hash) remains a durable link to the source of safety data.

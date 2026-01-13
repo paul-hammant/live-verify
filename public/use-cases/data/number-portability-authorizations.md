@@ -73,7 +73,7 @@ The **Account Holder (Consumer)** benefits from verification.
 ## Third-Party Use
 
 **Winning Carriers (The Receiving Provider)**
-**Compliance Vetting:** FCC rules require the winning carrier to obtain a valid LOA. OCR-to-hash allows them to bulk-verify that thousands of incoming porting requests are authentic and haven't been "Faked" by aggressive sales agents trying to meet quotas.
+**Compliance Vetting:** FCC rules require the winning carrier to obtain a valid LOA. Live Verify allows them to bulk-verify that thousands of incoming porting requests are authentic and haven't been "Faked" by aggressive sales agents trying to meet quotas.
 
 **Banks and Financial Institutions**
 **Identity Vetting:** Before sending a high-value wire, a bank can scan the verified hash of the customer's "Porting History." If the number was ported in the last 24 hours (a major SIM-Swap red flag), the bank can block the wire and require in-person ID.

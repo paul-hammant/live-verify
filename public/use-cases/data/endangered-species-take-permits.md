@@ -131,11 +131,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. ECOS Database
 
-| Feature | OCR-to-Hash | ECOS / FWS Public Portal | Paper Permit |
+| Feature | Live Verify | ECOS / FWS Public Portal | Paper Permit |
 | :--- | :--- | :--- | :--- |
 | **Field Access** | **Instant.** Scan the paper at the job-site. | **Difficult.** Requires navigating complex gov search forms on mobile in remote areas. | **Instant.** |
 | **Trust Anchor** | **Domain-Bound.** Bound to `fws.gov`. | **Database.** High trust but manual. | **Zero.** Easily forged. |
 | **Integrity** | **Binds Mitigation.** Protects the text. | **Data-Only.** Doesn't verify the paper. | **Vulnerable.** |
 | **Offline Proof** | **Strong.** The paper is the anchor. | **None.** Requires high-speed data. | **Medium.** |
 
-**Why OCR wins here:** The "Remote Site" reality. Endangered species habitat is often in "Dead Zones" without reliable 5G. OCR-to-hash turns the **Physical Permit** into a live, trusted safety link that works anywhere there is a phone camera, protecting the most vulnerable parts of our ecosystem.
+**Why Live Verify wins here:** The "Remote Site" reality. Endangered species habitat is often in "Dead Zones" without reliable 5G. Live Verify turns the **Physical Permit** into a live, trusted safety link that works anywhere there is a phone camera, protecting the most vulnerable parts of our ecosystem.

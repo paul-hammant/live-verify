@@ -74,7 +74,7 @@ The **Researcher (Author)** benefits from verification.
 ## Third-Party Use
 
 **University Hiring Committees**
-**Integrity Filter:** Verifying that a candidate's "Accepted Papers" aren't just "Submissions" or fabricated titles. OCR-to-hash connects the committee directly to the journal's editorial record in seconds.
+**Integrity Filter:** Verifying that a candidate's "Accepted Papers" aren't just "Submissions" or fabricated titles. Live Verify connects the committee directly to the journal's editorial record in seconds.
 
 **Scientific Funding Agencies (NSF / NIH)**
 **Progress Tracking:** Verifying that a funded project is meeting its "Publication Milestones" by scanning the verified hashes of the resulting peer-review verdicts.

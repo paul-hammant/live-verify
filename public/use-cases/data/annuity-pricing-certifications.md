@@ -135,10 +135,10 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. DOI SERFF Database
 
-| Feature | OCR-to-Hash | SERFF / State Website |
+| Feature | Live Verify | SERFF / State Website |
 | :--- | :--- | :--- |
 | **Consumer Access** | **Universal.** Scan the brochure. | **Very Hard.** Public access to filing databases is notoriously difficult for non-experts. |
 | **Linking** | **Direct.** Binds the physical paper to the filing. | **Disconnected.** Finding the filing for "SecureIncome Plus v3" among 5,000 filings is hard. |
 | **Trust** | **Brand-bound.** `prudential.com` vouches for it. | **Gov-bound.** High trust, but low usability. |
 
-**Why OCR wins here:** Annuities are complex, high-stakes products. The "Last Mile" of the sales process happens at a kitchen table with a printed illustration. OCR-to-hash brings the weight of the company's actuarial department to that table, ensuring the salesperson isn't making promises the actuary didn't sign off on.
+**Why Live Verify wins here:** Annuities are complex, high-stakes products. The "Last Mile" of the sales process happens at a kitchen table with a printed illustration. Live Verify brings the weight of the company's actuarial department to that table, ensuring the salesperson isn't making promises the actuary didn't sign off on.

@@ -118,11 +118,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Manual Broker Letters
 
-| Feature | OCR-to-Hash | Manual Broker Letter | Scanned PDF |
+| Feature | Live Verify | Manual Broker Letter | Scanned PDF |
 | :--- | :--- | :--- | :--- |
 | **Integrity** | **Cryptographic.** Binds the *Vault Class*. | **Subjective.** Relies on the broker's memory. | **Zero.** Easily forged. |
 | **Speed** | **Instant.** 5-second scan at the vault. | **Slow.** Takes 2-3 business days to get a "Confirmation." | **Instant.** |
 | **Availability** | **24/7.** Works during after-hours trades. | **Restricted.** Business hours only. | **Universal.** |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Carrier. | **Human.** Prone to social engineering. | **Vulnerable.** |
 
-**Why OCR wins here:** The "Memo Moment." High-stakes gem trades often happen at 10 PM in hotel rooms or private clubs. Suppliers need to trust the insurance *right now* before handing over the stones. OCR-to-hash turns the **Standard Insurance Folder** into a live digital checkpoint that provides "Bank-Vault" level trust anywhere in the world.
+**Why Live Verify wins here:** The "Memo Moment." High-stakes gem trades often happen at 10 PM in hotel rooms or private clubs. Suppliers need to trust the insurance *right now* before handing over the stones. Live Verify turns the **Standard Insurance Folder** into a live digital checkpoint that provides "Bank-Vault" level trust anywhere in the world.

@@ -81,7 +81,7 @@ The **Bank Customer** benefits from verification.
 ## Third-Party Use
 
 **Regulators (FCA / CFPB)**
-**Consumer Protection Audit:** Verifying that banks are correctly implementing the "Right to Revoke" and "90-day Renewal" rules. OCR-to-hash allows a regulator to audit 1,000 consumer consent records in minutes by scanning hashes.
+**Consumer Protection Audit:** Verifying that banks are correctly implementing the "Right to Revoke" and "90-day Renewal" rules. Live Verify allows a regulator to audit 1,000 consumer consent records in minutes by scanning hashes.
 
 **Mortgage Lenders**
 **Data Source Vetting:** Ensuring that the transaction data they received via an aggregator (like Plaid) was indeed authorized by the verified customer, satisfying "Source of Funds" due diligence.
@@ -138,11 +138,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. OAuth Tokens
 
-| Feature | OCR-to-Hash | OAuth Token (JWT) | Dashboard (Online Banking) |
+| Feature | Live Verify | OAuth Token (JWT) | Dashboard (Online Banking) |
 | :--- | :--- | :--- | :--- |
 | **Human Readable** | **Yes.** "I authorized X to see Y." | **No.** Just an opaque string of code. | **Yes.** |
 | **Durability** | **High.** Survives as a PDF/Paper audit trail. | **None.** Tokens are short-lived. | **System-Locked.** |
 | **Transparency** | **High.** Proof is in the user's hand. | **Low.** Only the systems see the token. | **Medium.** requires login. |
 | **Offline Proof** | **Strong.** Protects the agreement text. | **Zero.** | **None.** |
 
-**Why OCR wins here:** The "Transparency Gap." OAuth tokens move the data, but humans don't understand them. OCR-to-hash turns the **Invisible Digital Agreement** into a human-readable "Data Receipt," bringing the security of the API to the world of consumer rights and legal audits.
+**Why Live Verify wins here:** The "Transparency Gap." OAuth tokens move the data, but humans don't understand them. Live Verify turns the **Invisible Digital Agreement** into a human-readable "Data Receipt," bringing the security of the API to the world of consumer rights and legal audits.

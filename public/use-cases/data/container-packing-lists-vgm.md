@@ -118,11 +118,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. EDI Messaging (VERMAS)
 
-| Feature | OCR-to-Hash | EDI VERMAS Message | Paper VGM Form |
+| Feature | Live Verify | EDI VERMAS Message | Paper VGM Form |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Shipper. | **System-Bound.** Relies on the message not being corrupted. | **Zero.** Easily forged. |
 | **Visibility** | **Visual.** The trucker can see it's verified. | **Invisible.** Happens between back-end systems. | **Visual.** |
 | **Field Access** | **Instant.** Scan the paper at the gate. | **None.** Driver has no access to EDI logs. | **Manual.** |
 | **Connectivity** | **Strong.** Works via simple web URL. | **Fragile.** Requires heavy B2B EDI infrastructure. | **Offline.** |
 
-**Why OCR wins here:** The "Trucker Reality." While the big carriers use EDI, the individual trucker arriving at the terminal gate often carries a **Paper Folder** of documents. OCR-to-hash turns that paper folder into a trusted digital portal, ensuring the gate clerk and the driver are seeing the same verified weight as the carrier's stability officer.
+**Why Live Verify wins here:** The "Trucker Reality." While the big carriers use EDI, the individual trucker arriving at the terminal gate often carries a **Paper Folder** of documents. Live Verify turns that paper folder into a trusted digital portal, ensuring the gate clerk and the driver are seeing the same verified weight as the carrier's stability officer.

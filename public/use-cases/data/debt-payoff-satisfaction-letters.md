@@ -11,7 +11,7 @@ tags: ["debt", "payoff", "satisfaction", "mortgage", "loan", "credit", "lien-rel
 
 A satisfaction letter (also called a payoff letter, release letter, or lien release) proves that a debt has been fully paid and the lender's claim has been extinguished. These documents are critical for credit reporting, property transfers, and financial planning.
 
-Fraud is common: altered payoff amounts, fake lien releases, and fraudulent "paid in full" letters are used in real estate fraud and identity theft schemes. OCR-to-hash connects the verifier directly to the lender's domain.
+Fraud is common: altered payoff amounts, fake lien releases, and fraudulent "paid in full" letters are used in real estate fraud and identity theft schemes. Live Verify connects the verifier directly to the lender's domain.
 
 <div style="font-family: 'Courier New', monospace; background: #f9f9f9; padding: 15px; border: 1px solid #999; font-size: 1em; color: #000; line-height: 1.6; max-width: 550px; margin: 24px auto;">
   <span verifiable-text="start" data-for="mortgage">[</span>MORTGAGE SATISFACTION<br>
@@ -83,7 +83,7 @@ The **Borrower** benefits from verification.
 ## Third-Party Use
 
 **Title Companies / Escrow Officers**
-**Fraud Prevention:** Fake lien releases are a significant real estate fraud vector. A forged satisfaction letter lets criminals sell property they don't own or take out second mortgages. OCR-to-hash connects the title company directly to the lender's domain.
+**Fraud Prevention:** Fake lien releases are a significant real estate fraud vector. A forged satisfaction letter lets criminals sell property they don't own or take out second mortgages. Live Verify connects the title company directly to the lender's domain.
 
 **Credit Bureaus (Equifax / Experian / TransUnion)**
 **Dispute Resolution:** When borrowers dispute account status, bureaus can instantly verify payoff letters rather than waiting 30 days for lender response.

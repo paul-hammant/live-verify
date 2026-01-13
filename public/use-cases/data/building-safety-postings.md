@@ -14,7 +14,7 @@ In every modern building, safety is governed by a layer of "Compliance Paper." F
 
 The problem is that these papers are easy to fake, "Pencil Whip" (signing without inspecting), or simply leave expired for years. A landlord might keep a 2023 certificate on the wall to hide the fact that the elevator failed its 2025 brake test.
 
-OCR-to-hash allows a tenant, visitor, or fire marshal to scan the posting to verify: **"Is this equipment currently certified safe by the city or an authorized inspector?"**
+Live Verify allows a tenant, visitor, or fire marshal to scan the posting to verify: **"Is this equipment currently certified safe by the city or an authorized inspector?"**
 
 <div style="max-width: 500px; margin: 24px auto; font-family: 'Times New Roman', serif; border: 4px solid #000; background: #fff; padding: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); position: relative;">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 15px; margin-bottom: 20px;">
@@ -101,16 +101,16 @@ The **Building Owner / Property Manager** benefits from verification.
 **Personal Safety:** A parent entering an elevator with their child can scan the certificate. If it returns **"RED TAGGED - FAILED BRAKE TEST,"** they can choose to exit the car immediately and report the landlord.
 
 **Fire Marshals / Inspectors**
-**Rapid Compliance Check:** During a surprise walkthrough, an inspector can scan 50 fire extinguishers in minutes. OCR-to-hash prevents "Tag Swapping" (moving a good tag from a new unit to an old one).
+**Rapid Compliance Check:** During a surprise walkthrough, an inspector can scan 50 fire extinguishers in minutes. Live Verify prevents "Tag Swapping" (moving a good tag from a new unit to an old one).
 
 **Insurance Underwriters**
 **Risk Pricing:** Insurers can verify that a building's life-safety systems are actually current before renewing a commercial liability policy.
 
 ## Scope and Limitations
 
-**What OCR-to-hash verifies:** The *certificate* is genuine — the building department actually issued it for this equipment.
+**What Live Verify verifies:** The *certificate* is genuine — the building department actually issued it for this equipment.
 
-**What OCR-to-hash does NOT verify:** That the *inspection* was legitimate. A corrupt or lazy inspector can still "pass" equipment without visiting the site, and OCR-to-hash will faithfully verify their fraudulent certificate.
+**What Live Verify does NOT verify:** That the *inspection* was legitimate. A corrupt or lazy inspector can still "pass" equipment without visiting the site, and Live Verify will faithfully verify their fraudulent certificate.
 
 This is a limitation, not a flaw — the system is explicit about proving *issuer attestation*, not *underlying truth*. But verifiers (tenants, fire marshals) should understand that "certificate verified" means "the department stands behind this," not "the inspector did their job."
 
@@ -126,7 +126,7 @@ This is a limitation, not a flaw — the system is explicit about proving *issue
 
 **Inspector Authentication (Separate Problem)**
 
-OCR-to-hash verifies that a certificate is genuine — it answers "did the building department really issue this?" But it doesn't solve the problem of inspectors faking inspections remotely.
+Live Verify verifies that a certificate is genuine — it answers "did the building department really issue this?" But it doesn't solve the problem of inspectors faking inspections remotely.
 
 Without physical presence proof, someone could script fake inspections:
 ```bash
@@ -140,7 +140,7 @@ The inspection *recording* system (first party) needs separate authentication th
 - **GPS + time window** — weaker, but adds friction to remote fraud
 - **Photo with metadata** — timestamped photo of equipment captured by inspector's app
 
-This is infrastructure the building department must implement; OCR-to-hash assumes the inspection record is legitimate and focuses on verifying the certificate presented to the public.
+This is infrastructure the building department must implement; Live Verify assumes the inspection record is legitimate and focuses on verifying the certificate presented to the public.
 
 **Issuer Types** (First Party)
 

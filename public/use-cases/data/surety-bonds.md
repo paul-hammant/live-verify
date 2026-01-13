@@ -77,7 +77,7 @@ The **Contractor (Principal)** benefits from verification.
 ## Third-Party Use
 
 **Government Procurement Officers**
-**Bid Integrity:** Instantly verifying 50 different bid bonds during a high-speed public auction. OCR-to-hash connects the officer directly to the surety's domain, stopping "Fake Bond" bid rigging.
+**Bid Integrity:** Instantly verifying 50 different bid bonds during a high-speed public auction. Live Verify connects the officer directly to the surety's domain, stopping "Fake Bond" bid rigging.
 
 **Sub-Contractors and Suppliers**
 **Payment Security:** Before starting work on a site, a sub-contractor scans the "Payment Bond" posted in the job trailer. "Verified by Travelers.com" ensures they have a high-authority safety net if the general contractor fails to pay.
@@ -125,11 +125,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Corporate Seals (Gold Foil)
 
-| Feature | OCR-to-Hash | Gold Foil Seal | Power of Attorney (POA) Paper |
+| Feature | Live Verify | Gold Foil Seal | Power of Attorney (POA) Paper |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Carrier. | **Physical.** Trust the sticker. | **Signature-Bound.** |
 | **Integrity** | **Binds Penal Sum.** Protects the amount. | **Zero.** Doesn't protect the text. | **Vulnerable.** |
 | **Freshness** | **Real-time.** Shows "Claim" status. | **Zero.** Paper is static. | **Static.** |
 | **Speed** | **Instant.** 5-second scan. | **N/A.** | **Slow.** Requires reading 5 pages. |
 
-**Why OCR wins here:** The "Bid Clock" reality. Government bids are often decided in minutes. There is no time to call a surety agent in another time zone to verify a signature. OCR-to-hash turns the **Bond Face-Page** into a live digital portal, making "Financial Assurance" a transparent fact at the moment of award.
+**Why Live Verify wins here:** The "Bid Clock" reality. Government bids are often decided in minutes. There is no time to call a surety agent in another time zone to verify a signature. Live Verify turns the **Bond Face-Page** into a live digital portal, making "Financial Assurance" a transparent fact at the moment of award.

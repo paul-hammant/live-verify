@@ -129,11 +129,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Broker Letters
 
-| Feature | OCR-to-Hash | Manual Broker Letter | Scanned PDF |
+| Feature | Live Verify | Manual Broker Letter | Scanned PDF |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Carrier. | **Human.** Prone to errors or social engineering. | **Zero.** Easily forged. |
 | **Durability** | **30+ Years.** Archival text. | **Low.** Brokers often lose files after 7 years. | **Vulnerable.** |
 | **Integrity** | **Binds Retro Date.** Protects the history. | **Vague.** "Yes, they are insured." | **None.** |
 | **Speed** | **Instant.** 5-second scan. | **Slow.** Takes days to retrieve archival files. | **Instant.** |
 
-**Why OCR wins here:** The "Long Tail" of Pollution. Contamination is often discovered 20 years after a policy was written. The original broker may be retired and the carrier's IT system migrated twice. OCR-to-hash turns the **Static Paper Declaration** into an immutable link to the carrier's permanent ledger, ensuring the "Financial Safety Net" works when it's needed decades later.
+**Why Live Verify wins here:** The "Long Tail" of Pollution. Contamination is often discovered 20 years after a policy was written. The original broker may be retired and the carrier's IT system migrated twice. Live Verify turns the **Static Paper Declaration** into an immutable link to the carrier's permanent ledger, ensuring the "Financial Safety Net" works when it's needed decades later.

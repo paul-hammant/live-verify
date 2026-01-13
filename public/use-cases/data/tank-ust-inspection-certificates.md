@@ -71,7 +71,7 @@ The **Gas Station Owner / Operator** benefits from verification.
 ## Third-Party Use
 
 **Environmental Inspectors / Field Agents**
-**Surprise Audit:** Instead of digging through a binder of un-ordered papers, the agent scans the placard in the office. OCR-to-hash ensures the papers in the file match the digital record, stopping "Log Doctoring" where owners hide failed test results.
+**Surprise Audit:** Instead of digging through a binder of un-ordered papers, the agent scans the placard in the office. Live Verify ensures the papers in the file match the digital record, stopping "Log Doctoring" where owners hide failed test results.
 
 **Environmental Insurers**
 **Claims Adjudication:** If a leak is discovered, the insurer verifies the history of verified certificates. If the hash returns **"EXPIRED"** or **"NOT FOUND"** for the last 3 cycles, the insurer may deny the claim for failure to maintain safety equipment.

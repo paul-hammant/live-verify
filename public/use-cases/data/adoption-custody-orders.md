@@ -152,7 +152,7 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 - Courts must update verification status in real-time when new orders are entered
 - Stale data is dangerous — a parent could present a verified order that was modified yesterday
 
-**OCR-to-hash is a bridge technology here.** The ideal solution is live court integration where police, schools, and hospitals can query the case number directly for the *current* order. Until courts build those APIs, OCR-to-hash provides a partial solution — but only if:
+**Live Verify is a bridge technology here.** The ideal solution is live court integration where police, schools, and hospitals can query the case number directly for the *current* order. Until courts build those APIs, Live Verify provides a partial solution — but only if:
 1. Courts commit to updating verification status immediately when orders change
 2. Verifiers understand "VALID" means "as of this moment" — not "forever"
 3. The `MODIFIED` status is treated as "do not enforce; obtain current order"
@@ -161,7 +161,7 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Certified Copies
 
-| Feature | OCR-to-Hash | Certified Copy (Raised Seal) |
+| Feature | Live Verify | Certified Copy (Raised Seal) |
 | :--- | :--- | :--- |
 | **Freshness** | **Real-time.** Can indicate if the order was modified yesterday. | **Static.** Only proves the order existed *on the day the copy was printed*. |
 | **Accessibility** | **Instant.** Police/Schools can verify on the spot. | **Slow.** Requires calling the court clerk (often impossible) to check validity. |

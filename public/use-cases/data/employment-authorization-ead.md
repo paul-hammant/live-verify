@@ -14,7 +14,7 @@ An **Employment Authorization Document (EAD)** is the ID card issued by the US g
 
 For a business owner, this card is high-stakes. If they hire someone with a fake card, they can be fined thousands of dollars. The problem? High-quality fakes are everywhere.
 
-OCR-to-hash turns the **Physical Card** into a live link to the USCIS database. This allows a small business owner to see if the card has been "Revoked" (e.g., if the person's visa was cancelled) in seconds, without needing expensive government software.
+Live Verify turns the **Physical Card** into a live link to the USCIS database. This allows a small business owner to see if the card has been "Revoked" (e.g., if the person's visa was cancelled) in seconds, without needing expensive government software.
 
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
   <div style="background: #002d62; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
@@ -91,7 +91,7 @@ The **Employee (Authorized Worker)** benefits from verification.
 ## Third-Party Use
 
 **Employers (HR Managers)**
-**I-9 Compliance:** Instantly confirming that the EAD isn't a "High-Quality Forgery." Standard cards are easily bought on the black market; OCR-to-hash connects the manager directly to the USCIS record in seconds.
+**I-9 Compliance:** Instantly confirming that the EAD isn't a "High-Quality Forgery." Standard cards are easily bought on the black market; Live Verify connects the manager directly to the USCIS record in seconds.
 
 **Social Security Administration**
 **SSN Issuance:** Verifying the work authorization before assigning an SSN.
@@ -140,11 +140,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. E-Verify / SAVE
 
-| Feature | OCR-to-Hash | E-Verify (Employer System) | Physical EAD Card |
+| Feature | Live Verify | E-Verify (Employer System) | Physical EAD Card |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to `uscis.gov`. | **Direct DB Access.** High trust. | **Mechanical.** Prone to forgery. |
 | **User Access** | **Open.** Small businesses can verify. | **Restricted.** Requires federal registration and training. | **Manual.** |
 | **Speed** | **Instant.** 5-second scan. | **Slow.** Often flags for "Manual Review" taking days. | **Instant.** |
 | **Privacy** | **High.** Verified at the point of use. | **Low.** Data resides in a federal monitoring system. | **N/A.** |
 
-**Why OCR wins here:** The "Small Employer" reality. Millions of small businesses (landscapers, restaurants, households) do not use E-Verify because it is complex and invasive. They rely on "Looking at the card." OCR-to-hash allows **every employer** to have "E-Verify Level" trust using only their phone camera, stopping EAD fraud at the scale of the entire economy.
+**Why Live Verify wins here:** The "Small Employer" reality. Millions of small businesses (landscapers, restaurants, households) do not use E-Verify because it is complex and invasive. They rely on "Looking at the card." Live Verify allows **every employer** to have "E-Verify Level" trust using only their phone camera, stopping EAD fraud at the scale of the entire economy.

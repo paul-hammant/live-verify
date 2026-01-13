@@ -181,7 +181,7 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Printed Badges / Radio Check-In
 
-| Feature | OCR-to-Hash | Printed/Laminated Badge | Radio Check-In | Visual Assessment |
+| Feature | Live Verify | Printed/Laminated Badge | Radio Check-In | Visual Assessment |
 | :--- | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Verified by event organizer or contractor. | **Visual.** Badge design only; easily counterfeited. | **Human.** Radio operator may not have latest info. | **Visual.** Uniform and appearance-based. |
 | **Integrity** | **Cryptographic.** Binds person to role and time window. | **Zero.** Printed badges can be faked, duplicated, or stolen. | **Low.** Subject to social engineering; radio lag. | **None.** Appearance is unreliable. |
@@ -189,7 +189,7 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 | **Freshness** | **Real-time.** Shows revoked status, time window expiry, area restrictions. | **Static.** Badge never changes; can't reflect post-issuance revocations. | **Variable.** Depends on radio operator updates. | **Static.** Can't capture real-time suspensions. |
 | **Handles Revocation** | **Yes.** Instant if someone is removed mid-event. | **No.** Revoked staff can still use old badge. | **Maybe.** Requires radio discipline; chaos during events. | **No.** Appearance doesn't change if status changes. |
 
-**Why OCR wins here:** The **"Checkpoint Workflow."** Event venues have multiple access checkpoints, multiple security teams, and constant flow of hundreds of people. Security cannot memorize who's authorized; they can't radio check every person; and they need instant, cryptographic proof. OCR-to-hash provides verifiable, real-time access control at the point of entry.
+**Why Live Verify wins here:** The **"Checkpoint Workflow."** Event venues have multiple access checkpoints, multiple security teams, and constant flow of hundreds of people. Security cannot memorize who's authorized; they can't radio check every person; and they need instant, cryptographic proof. Live Verify provides verifiable, real-time access control at the point of entry.
 
 ---
 

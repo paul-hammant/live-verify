@@ -12,7 +12,7 @@ furtherDerivations: 1
 
 Unlike a one-off parade, **Repeat Events Permits** cover recurring activities—such as a **Farmers Market** that happens every Saturday, or a **Seasonal Parklet** for outdoor dining. These permits prove that a vendor is authorized to use public space and, in the case of food markets, that they are a "Certified Producer" who actually grows what they sell.
 
-The problem is that these permits are often valid for 6 to 12 months. Shady vendors might "edit" an expired 2024 permit to work for 2026, or a "reseller" might create a fake certificate to sell warehouse produce as "local organic." Similarly, a restaurant might expand a sidewalk café beyond its legal 2-table limit. OCR-to-hash allows a shopper, neighbor, or market manager to scan the placard to verify: **"Is this vendor currently authorized, and are the products they are selling today on their approved list?"**
+The problem is that these permits are often valid for 6 to 12 months. Shady vendors might "edit" an expired 2024 permit to work for 2026, or a "reseller" might create a fake certificate to sell warehouse produce as "local organic." Similarly, a restaurant might expand a sidewalk café beyond its legal 2-table limit. Live Verify allows a shopper, neighbor, or market manager to scan the placard to verify: **"Is this vendor currently authorized, and are the products they are selling today on their approved list?"**
 
 <div style="max-width: 500px; margin: 24px auto; font-family: sans-serif; border: 3px solid #2e7d32; border-radius: 10px; background: #fff; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
   <div style="background: #2e7d32; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
@@ -92,7 +92,7 @@ The **Vendor / Farmer** benefits from verification.
 **Integrity Auditing:** Instead of arguing with a vendor about their "Product List," the manager scans the hash. If it returns **"EXCLUDED: PROCESSED GOODS,"** they have the proof needed to order the removal of the items, maintaining the market's "Producer-Only" brand.
 
 **Health Inspectors**
-**Rapid Vetting:** During a busy Saturday market, the inspector scans placards. OCR-to-hash ensures that every food vendor has a verified, active health permit on file, protecting the public from "Pop-Up" food poisoning risks.
+**Rapid Vetting:** During a busy Saturday market, the inspector scans placards. Live Verify ensures that every food vendor has a verified, active health permit on file, protecting the public from "Pop-Up" food poisoning risks.
 
 **Nearby Brick-and-Mortar Businesses**
 **Compliance Monitoring:** A restaurant owner can scan a rival's "Parklet Permit" to ensure they aren't illegally expanding into additional parking spots that are reserved for customers.

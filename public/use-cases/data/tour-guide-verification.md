@@ -12,7 +12,7 @@ furtherDerivations: 1
 
 For travelers—especially solo travelers and women—hiring a **Tour Guide** or a local host is an act of extreme trust. You are often alone with a stranger in an unfamiliar city, relying on them for navigation and safety.
 
-The problem is that "Tour Guide" is a low-barrier profession. Anyone can buy a generic "Official Guide" badge online or print a fake certificate from a famous travel site (like TripAdvisor or Viator). Even legitimate guides may have had their licenses revoked for safety violations. OCR-to-hash allows a traveler to scan the guide's ID badge to verify: **"Is this person currently licensed by the national tourism board, and have they passed a professional background check?"**
+The problem is that "Tour Guide" is a low-barrier profession. Anyone can buy a generic "Official Guide" badge online or print a fake certificate from a famous travel site (like TripAdvisor or Viator). Even legitimate guides may have had their licenses revoked for safety violations. Live Verify allows a traveler to scan the guide's ID badge to verify: **"Is this person currently licensed by the national tourism board, and have they passed a professional background check?"**
 
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #0072b2; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
   <div style="background: #0072b2; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">

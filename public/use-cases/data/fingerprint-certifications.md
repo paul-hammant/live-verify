@@ -124,11 +124,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. FBI Portal (CJIS)
 
-| Feature | OCR-to-Hash | FBI CJIS Portal | Scanned PDF Receipt |
+| Feature | Live Verify | FBI CJIS Portal | Scanned PDF Receipt |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Notary/Firm. | **Gov-Bound.** | **Zero.** Easily forged. |
 | **Speed** | **Instant.** 5-second scan. | **Slow.** Takes 3-7 days for "Background Result." | **Instant.** |
 | **Accessibility** | **Open.** Any employer can verify the *event*. | **Restricted.** Only authorized entities can see results. | **Universal.** |
 | **Integrity** | **Binds Identity.** Protects the Card ID. | **Data-Only.** | **Vulnerable.** |
 
-**Why OCR wins here:** The "Handoff Gap." The FBI takes weeks to return a background check result. But an employer needs to know **today** if the candidate actually went to the appointment. OCR-to-hash turns the **Fingerprint Receipt** into a live, trusted "Proof of Action" that bridges the gap during the long federal waiting period.
+**Why Live Verify wins here:** The "Handoff Gap." The FBI takes weeks to return a background check result. But an employer needs to know **today** if the candidate actually went to the appointment. Live Verify turns the **Fingerprint Receipt** into a live, trusted "Proof of Action" that bridges the gap during the long federal waiting period.

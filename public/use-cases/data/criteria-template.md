@@ -1,10 +1,10 @@
 # Use Case Criteria and Template
 
-This document defines the criteria for OCR-to-hash verification use cases and the standard template for documenting them.
+This document defines the criteria for Live Verify verification use cases and the standard template for documenting them.
 
 ## What Makes a Good Use Case
 
-A document type is a good candidate for OCR-to-hash verification when:
+A document type is a good candidate for Live Verify verification when:
 
 1. **Paper or printable origin** - The document exists as a physical artifact or is routinely printed from digital systems. Pure-digital documents with native cryptographic verification (blockchain records, digitally-signed PDFs with intact signatures) don't need this bridge.
 
@@ -448,7 +448,7 @@ Organize Third-Party stakeholders based on **document domain**:
 
 ## Common Objections
 
-**"Why not QR codes?"** — QR is great when machine reading is primary. OCR-to-hash is for documents that must stay human-readable first, without adding visual clutter or requiring proprietary apps.
+**"Why not QR codes?"** — QR is great when machine reading is primary. Live Verify is for documents that must stay human-readable first, without adding visual clutter or requiring proprietary apps.
 
 **"Isn't this just a hash in public?"** — Yes: a one-way fingerprint. Safe when the input has enough entropy or includes an issuer-generated random line.
 

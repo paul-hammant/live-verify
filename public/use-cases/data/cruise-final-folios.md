@@ -115,11 +115,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Credit Card Statements
 
-| Feature | OCR-to-Hash | Credit Card Statement | Scanned PDF Folio |
+| Feature | Live Verify | Credit Card Statement | Scanned PDF Folio |
 | :--- | :--- | :--- | :--- |
 | **Granularity** | **High.** Shows specific items (Wifi vs Alcohol). | **Zero.** Just shows "CARNIVAL CRUISES $1,200". | **High.** But untrusted. |
 | **Integrity** | **Cryptographic.** Binds every line item. | **High.** But lacks detail. | **Zero.** Easily edited. |
 | **Privacy** | **Selective.** Share only the verified extract. | **Low.** Exposes all other personal spending on the card. | **Vulnerable.** |
 | **Freshness** | **Instant.** Verified at disembarkation. | **Laggy.** Charges often aggregate at the end. | **Static.** |
 
-**Why OCR wins here:** The "Scrubbing" problem. Corporate finance departments hate cruise folios because they are 10 pages long and full of personal "fun" spending. OCR-to-hash allows an employee to provide a **Verified Extract** of just the business items, giving the company 100% trust without the employee needing to share their "Bar Tab" with their boss.
+**Why Live Verify wins here:** The "Scrubbing" problem. Corporate finance departments hate cruise folios because they are 10 pages long and full of personal "fun" spending. Live Verify allows an employee to provide a **Verified Extract** of just the business items, giving the company 100% trust without the employee needing to share their "Bar Tab" with their boss.

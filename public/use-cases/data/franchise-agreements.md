@@ -78,7 +78,7 @@ The **Franchisee (Investor)** benefits from verification.
 ## Third-Party Use
 
 **The Federal Trade Commission (FTC)**
-**Enforcement:** Regulators can verify that the FDD version being handed to candidates matches the latest version filed with the government. OCR-to-hash prevents "Selective Disclosure" where a franchisor hides a negative lawsuit from a prospect.
+**Enforcement:** Regulators can verify that the FDD version being handed to candidates matches the latest version filed with the government. Live Verify prevents "Selective Disclosure" where a franchisor hides a negative lawsuit from a prospect.
 
 **Lenders / Banks**
 **Risk Management:** Verifying the "Termination Provisions" and "Royalties" before lending $500,000 for a store build-out.
@@ -126,11 +126,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. State Registry Search
 
-| Feature | OCR-to-Hash | State Registry (Online) | Scanned PDF |
+| Feature | Live Verify | State Registry (Online) | Scanned PDF |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Brand. | **Gov-Bound.** | **Zero.** Easily forged. |
 | **Integrity** | **Binds "Item 19".** Protects the numbers. | **Data-Only.** Doesn't verify the paper doc. | **Vulnerable.** |
 | **User Access** | **Instant.** Scan the paper at the meeting. | **Difficult.** Requires searching by state and paying fees. | **Instant.** |
 | **Completeness** | **High.** Verifies the *specific* candidate's copy. | **Low.** Only shows the generic filing. | **Vulnerable.** |
 
-**Why OCR wins here:** The "Sales Meeting" reality. Prospects decide to buy a franchise in a meeting with a development officer. They aren't going to search 50 different state databases. OCR-to-hash turns the **Physical FDD** into a live digital checkpoint, ensuring the multi-million dollar investment decision is based on verified facts.
+**Why Live Verify wins here:** The "Sales Meeting" reality. Prospects decide to buy a franchise in a meeting with a development officer. They aren't going to search 50 different state databases. Live Verify turns the **Physical FDD** into a live digital checkpoint, ensuring the multi-million dollar investment decision is based on verified facts.

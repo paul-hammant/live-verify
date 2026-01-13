@@ -129,11 +129,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. e-CMR (Digital Convention)
 
-| Feature | OCR-to-Hash | e-CMR (Standard) | Paper Carbon Copy |
+| Feature | Live Verify | e-CMR (Standard) | Paper Carbon Copy |
 | :--- | :--- | :--- | :--- |
 | **Connectivity** | **Strong.** Paper works in the mountains/tunnels. | **Fragile.** Requires app + 5G at every handoff. | **Offline.** |
 | **Trust Anchor** | **Domain-Bound.** Trust the Carrier. | **Protocol-Bound.** Trust the UN convention system. | **Visual.** Trusted only via stamp. |
 | **Interoperability** | **Universal.** Works for any trucker with a URL. | **Low.** Requires all countries to ratify the e-Protocol. | **Universal.** |
 | **Integrity** | **Binds Data.** Protects the Weight/Count. | **Digital Only.** | **Zero.** |
 
-**Why OCR wins here:** The "Front Line" reality. Trucking is a rugged, fragmented industry with millions of independent drivers. Getting every driver in Europe on a single e-CMR app is a 20-year project. OCR-to-hash turns the **Existing Paper Standard** into a digital artifact *today*, providing 90% of the benefits of e-CMR with 0% of the friction.
+**Why Live Verify wins here:** The "Front Line" reality. Trucking is a rugged, fragmented industry with millions of independent drivers. Getting every driver in Europe on a single e-CMR app is a 20-year project. Live Verify turns the **Existing Paper Standard** into a digital artifact *today*, providing 90% of the benefits of e-CMR with 0% of the friction.

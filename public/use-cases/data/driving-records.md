@@ -101,7 +101,7 @@ Unlike a self-declaration ("I have no points"), an authority-issued record is **
 | **Driver signs declaration form** | Proves they signed, not that it's true |
 | **Insurance asks "any points?"** | Incentive to under-report; fraud |
 
-**OCR-to-hash solves:** Authority issues verifiable record → driver presents to employer/insurer → recipient scans → confirms genuine and current.
+**Live Verify solves:** Authority issues verifiable record → driver presents to employer/insurer → recipient scans → confirms genuine and current.
 
 ## Data Verified
 
@@ -127,7 +127,7 @@ Unlike a self-declaration ("I have no points"), an authority-issued record is **
 3. If driver lies, company only finds out at next annual check
 4. Insurance claim denied if undisclosed points
 
-**With OCR-to-hash:**
+**With Live Verify:**
 1. Monthly: Drivers obtain fresh driving record from DVLA
 2. Driver presents to fleet manager (paper or screen)
 3. Fleet manager scans → verified → record logged
@@ -145,7 +145,7 @@ Unlike a self-declaration ("I have no points"), an authority-issued record is **
 4. UK: Can use DVLA check code (customer generates online)
 5. Foreign licences: Often no way to verify
 
-**With OCR-to-hash:**
+**With Live Verify:**
 1. Customer obtains driving record before rental
 2. Presents at counter (paper or phone)
 3. Staff scans → sees points, categories, validity
@@ -162,7 +162,7 @@ Unlike a self-declaration ("I have no points"), an authority-issued record is **
 3. Insurer relies on declaration + random DVLA checks
 4. At claim time: If undisclosed points, policy may be void
 
-**With OCR-to-hash:**
+**With Live Verify:**
 1. Application requires verified driving record
 2. Customer obtains from DVLA, submits with application
 3. Underwriter scans → verified → accurate risk assessment
@@ -171,7 +171,7 @@ Unlike a self-declaration ("I have no points"), an authority-issued record is **
 
 ## Jurisdiction Differences
 
-| Jurisdiction | Authority | Current Access | OCR-to-Hash Opportunity |
+| Jurisdiction | Authority | Current Access | Live Verify Opportunity |
 |--------------|-----------|----------------|------------------------|
 | **UK** | DVLA | Share Driving Licence (code, 21 days) | Replace code with scannable document |
 | **US** | State DMVs | Varies; MVR requests (fee, delay) | Standardize with verifiable record |

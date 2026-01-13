@@ -272,7 +272,7 @@ The **Exporter (Seller)** benefits from verification.
 **Valuation Vetting:** Officers scan the invoice hash at the port. Verification ensures the importer hasn't "Shrunk" the value to evade 25% import tariffs, protecting the national tax revenue.
 
 **Trade Finance Banks**
-**TBML Prevention:** Banks can't manually check the market price of every item. OCR-to-hash allows their system to bulk-verify that thousands of invoices match the digital records of reputable exporters, stopping "Over-Invoicing" scams used to move criminal cash.
+**TBML Prevention:** Banks can't manually check the market price of every item. Live Verify allows their system to bulk-verify that thousands of invoices match the digital records of reputable exporters, stopping "Over-Invoicing" scams used to move criminal cash.
 
 **Tax Authorities (VAT / GST)**
 **Refund Audit:** Verifying that a company's "Input Tax Credit" claims are backed by authentic, verified invoices from legitimate suppliers.

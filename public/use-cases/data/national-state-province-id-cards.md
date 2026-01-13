@@ -70,7 +70,7 @@ The **Named Individual** benefits from verification.
 ## Third-Party Use
 
 **Hospitality / Alcohol Retailers**
-**Bouncer Efficiency:** Instantly confirming that a "Novice Fake" ID isn't authentic. Standard fakes look perfect to the eye; OCR-to-hash connects the bouncer directly to the government source in seconds.
+**Bouncer Efficiency:** Instantly confirming that a "Novice Fake" ID isn't authentic. Standard fakes look perfect to the eye; Live Verify connects the bouncer directly to the government source in seconds.
 
 **Landlords / Property Managers**
 **Identity Vetting:** Ensuring that a rental applicant is exactly who they claim to be, reducing "Synthetic Identity" fraud in the housing market.
@@ -148,11 +148,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. NFC Chip Readers
 
-| Feature | OCR-to-Hash | NFC (eID / Chip) | Scanned PDF / Image |
+| Feature | Live Verify | NFC (eID / Chip) | Scanned PDF / Image |
 | :--- | :--- | :--- | :--- |
 | **Integrity** | **Cryptographic.** Binds photo to status. | **High.** Binds digital keys. | **Zero.** Easily forged. |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Gov. | **Key-Bound.** Trust the PKI. | **Visual.** |
 | **Hardware** | **Universal.** Any smartphone camera. | **Restricted.** Requires NFC-enabled phones. |
 | **Adoption** | **High.** Works for cards without chips. | **Low.** Many US/Canada IDs lack chips. |
 
-**Why OCR wins here:** The "Technology Gap." While high-end EU IDs have NFC chips, many state and provincial IDs in North America are still just "Smart Paper." OCR-to-hash turn these **Low-Tech Cards** into live digital credentials, providing "Chip-Level" trust to billions of people without the cost of a hardware upgrade.
+**Why Live Verify wins here:** The "Technology Gap." While high-end EU IDs have NFC chips, many state and provincial IDs in North America are still just "Smart Paper." Live Verify turn these **Low-Tech Cards** into live digital credentials, providing "Chip-Level" trust to billions of people without the cost of a hardware upgrade.

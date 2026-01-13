@@ -17,7 +17,7 @@ It defines:
 2.  **Guardianship:** Who will raise any surviving minor children.
 3.  **The Executor:** The trusted person who will manage the "Probate" process.
 
-**"Will Tampering"** is a common and high-stakes fraud. Because wills are often multi-page documents held together by a simple staple, criminals (or disgruntled family members) use **"Page Substitution"**—they remove a single middle page and replace it with a forged one that changes a $10,000 bequest into a $100,000 one. OCR-to-hash provides **Per-Page Verification**, binding the specific text of every page to the law firm's or the state will registry's domain.
+**"Will Tampering"** is a common and high-stakes fraud. Because wills are often multi-page documents held together by a simple staple, criminals (or disgruntled family members) use **"Page Substitution"**—they remove a single middle page and replace it with a forged one that changes a $10,000 bequest into a $100,000 one. Live Verify provides **Per-Page Verification**, binding the specific text of every page to the law firm's or the state will registry's domain.
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #333; background: #fff; padding: 50px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); position: relative;">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 40px;">
@@ -83,7 +83,7 @@ The **Testator (Principal)** benefits from verification.
 **The "Staple and Swap" Fraud Problem**
 
 - **Page Substitution:** Removing a page that gives a house to "Charity A" and replacing it with a fake page that gives the house to "Son B."
-- **Will Suppression:** Hiding a new Will to ensure an older, more favorable Will is used. OCR-to-hash stops this by showing the old Will as "Superseded" when scanned.
+- **Will Suppression:** Hiding a new Will to ensure an older, more favorable Will is used. Live Verify stops this by showing the old Will as "Superseded" when scanned.
 - **Codicil Forgery:** Creating a fake 1-page "Amendment" that changes the Executor to a fraudster.
 
 **Issuer Types** (First Party)
@@ -118,11 +118,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Physical Security (Watermarks)
 
-| Feature | OCR-to-Hash | Watermarked Paper | Online Court Docket |
+| Feature | Live Verify | Watermarked Paper | Online Court Docket |
 | :--- | :--- | :--- | :--- |
 | **Tamper Detection** | **High.** Protects the actual text. | **Low.** Only protects the paper. | **High.** |
 | **Versioning** | **Real-time.** Shows "Superseded." | **Zero.** Paper doesn't change. | **Manual.** |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Lawyer. | **Printer-Bound.** | **System-Bound.** |
 | **Cost** | **Free.** (Standard web hosting). | **High.** Specialized paper/ink. | **Medium.** Access fees. |
 
-**Why OCR wins here:** The "Privacy Gap." Most people do not want to file their Will with a public court while they are still alive. OCR-to-hash allows for **"Private Integrity"**—the Will stays in a private safe, but its cryptographic integrity is anchored to the lawyer's domain, ensuring it remains "Un-altered and Current" until the day it is needed.
+**Why Live Verify wins here:** The "Privacy Gap." Most people do not want to file their Will with a public court while they are still alive. Live Verify allows for **"Private Integrity"**—the Will stays in a private safe, but its cryptographic integrity is anchored to the lawyer's domain, ensuring it remains "Un-altered and Current" until the day it is needed.

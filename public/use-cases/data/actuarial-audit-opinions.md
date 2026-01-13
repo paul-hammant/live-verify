@@ -128,12 +128,12 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Digital Signatures (PKI)
 
-| Feature | OCR-to-Hash | Digital Signature (PKI) |
+| Feature | Live Verify | Digital Signature (PKI) |
 | :--- | :--- | :--- |
 | **Workflow Integration** | **Seamless.** Works on printed copies in board books or scanned PDFs in data rooms. | **Fragile.** Breaks if the PDF is printed, scanned, or flattened. |
 | **Verifier Access** | **Universal.** Anyone with a browser. | **Restricted.** Often requires specific software or trust anchors to validate the signature chain. |
 | **Revocation** | **Instant.** Issuer removes hash or changes status to WITHDRAWN. | **Complex.** Requires CRL (Certificate Revocation List) or OCSP checking, which often fails in long-term archives. |
 | **Firm vs. Individual** | **Firm-Centric.** Binds to the firm's domain. | **Individual-Centric.** Binds to the signer's personal token (unless using expensive corp seals). |
 
-**Why OCR wins here:** Actuarial opinions travel through many hands: drafted in Word, PDF'd, emailed to client, printed for Board meeting, scanned for regulator, uploaded to data room. PKI signatures rarely survive this journey intact. OCR-to-hash survives printing and scanning, ensuring the *content* remains verifiable at every step.
+**Why Live Verify wins here:** Actuarial opinions travel through many hands: drafted in Word, PDF'd, emailed to client, printed for Board meeting, scanned for regulator, uploaded to data room. PKI signatures rarely survive this journey intact. Live Verify survives printing and scanning, ensuring the *content* remains verifiable at every step.
 

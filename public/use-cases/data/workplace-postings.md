@@ -14,7 +14,7 @@ Mandatory workplace postings are government-required notices that inform workers
 
 The problem is that these posters are often outdated or even fraudulent. Employers may fail to update posters when laws change (e.g., minimum wage increases), or shady managers might "edit" a poster to hide certain rights (e.g., changing "12 weeks" of FMLA leave to "4 weeks"). Additionally, private vendors often scam businesses into buying expensive poster bundles that are actually free from the government.
 
-OCR-to-hash allows an employee to scan the poster to verify: **"Is this the current, un-altered official version directly from the issuing authority (e.g., DOL, OSHA, EEOC)?"**
+Live Verify allows an employee to scan the poster to verify: **"Is this the current, un-altered official version directly from the issuing authority (e.g., DOL, OSHA, EEOC)?"**
 
 <div style="max-width: 500px; margin: 24px auto; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; border: 2px solid #003366; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1); overflow: hidden;">
   <div style="background: #003366; color: #fff; padding: 15px; text-align: center;">

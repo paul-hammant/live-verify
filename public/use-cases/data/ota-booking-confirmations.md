@@ -127,11 +127,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. API Sync (Direct)
 
-| Feature | OCR-to-Hash | API Sync (Direct) | Scanned PDF / Image |
+| Feature | Live Verify | API Sync (Direct) | Scanned PDF / Image |
 | :--- | :--- | :--- | :--- |
 | **User Privacy** | **High.** Share only the *one* trip. | **Low.** API access often sees the *full* history. | **High.** |
 | **Trust Anchor** | **Domain-Bound.** Bound to the OTA. | **System-Bound.** Trust the app. | **Zero.** Easily forged. |
 | **Connectivity** | **Offline-Ready.** Proves the paper. | **None.** Requires live sync. | **Static.** |
 | **Cost** | **Low.** Marginal implementation. | **High.** Requires complex API keys. | **Free.** |
 
-**Why OCR wins here:** The "Hiring/Audit" reality. When a new employee joins a company, they bring their "Paper/PDF" past with them. The company doesn't want to "Sync" with the employee's private Expedia account. OCR-to-hash allows for **discrete, high-trust verification** of a single document without invading the traveler's digital life.
+**Why Live Verify wins here:** The "Hiring/Audit" reality. When a new employee joins a company, they bring their "Paper/PDF" past with them. The company doesn't want to "Sync" with the employee's private Expedia account. Live Verify allows for **discrete, high-trust verification** of a single document without invading the traveler's digital life.

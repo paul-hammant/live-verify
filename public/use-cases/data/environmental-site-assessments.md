@@ -78,7 +78,7 @@ The **Property Seller / Owner** benefits from verification.
 ## Third-Party Use
 
 **Commercial Lenders (Banks)**
-**Collateral Vetting:** Environmental cleanup costs (CERCLA) can exceed the value of the land. Lenders verify the "No RECs" claim to protect their collateral. OCR-to-hash ensures the borrower hasn't "Deleted" the page mentioning a buried oil tank.
+**Collateral Vetting:** Environmental cleanup costs (CERCLA) can exceed the value of the land. Lenders verify the "No RECs" claim to protect their collateral. Live Verify ensures the borrower hasn't "Deleted" the page mentioning a buried oil tank.
 
 **Environmental Regulators**
 **Enforcement:** Verifying the authenticity of site assessments submitted during brownfield redevelopment grant applications.
@@ -126,11 +126,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Environmental Data Portals
 
-| Feature | OCR-to-Hash | EDR / Environmental Data Portals | Scanned PDF Report |
+| Feature | Live Verify | EDR / Environmental Data Portals | Scanned PDF Report |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Consultant. | **Data-Bound.** Trust the database aggregator. | **Zero.** Easily forged. |
 | **Integrity** | **Binds Findings.** Protects the text. | **Vague.** Doesn't verify the *Expert Opinion* text. | **Vulnerable.** |
 | **Legal Weight** | **High.** Proves the expert's attestation. | **Low.** Just a search of public records. | **High.** But untrusted. |
 | **Speed** | **Instant.** Scan the report. | **Slow.** Requires subscription and manual search. | **Instant.** |
 
-**Why OCR wins here:** The "Expert Opinion" gap. EDR portals can tell you where the nearby gas stations are. But only an ESA Report tells you what the **Expert thinks** about the risk. OCR-to-hash turns that high-stakes expert opinion into a verifiable digital anchor that cannot be tampered with during a property flip.
+**Why Live Verify wins here:** The "Expert Opinion" gap. EDR portals can tell you where the nearby gas stations are. But only an ESA Report tells you what the **Expert thinks** about the risk. Live Verify turns that high-stakes expert opinion into a verifiable digital anchor that cannot be tampered with during a property flip.

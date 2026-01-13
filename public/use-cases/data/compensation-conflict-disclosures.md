@@ -21,7 +21,7 @@ Trust professionals routinely claim to be "independent," "unbiased," or "working
 - **The insurance broker** who says "I shop all carriers" but gets triple commission from the one he always recommends
 - **The procurement officer** who selects vendors while undisclosed family members own those vendors
 
-Currently, these claims are unverifiable. Disclosures exist in fine print or regulatory filings that nobody reads. OCR-to-hash changes this by making conflict disclosures **instant-verifiable** at the point of decision.
+Currently, these claims are unverifiable. Disclosures exist in fine print or regulatory filings that nobody reads. Live Verify changes this by making conflict disclosures **instant-verifiable** at the point of decision.
 
 ---
 
@@ -345,7 +345,7 @@ Insurance products backing attestations—similar to surety bonds, but for confl
 **Verification Aggregators**
 Services that pull from multiple sources (CMS, FINRA, carrier records) and issue unified attestations.
 
-The demand exists: clients want conflict-free advice, professionals want to prove they're clean, and regulators want enforceable disclosures. OCR-to-hash provides the verification layer; the payer-as-fact-checker model provides the truth anchor; the warranty provides the teeth.
+The demand exists: clients want conflict-free advice, professionals want to prove they're clean, and regulators want enforceable disclosures. Live Verify provides the verification layer; the payer-as-fact-checker model provides the truth anchor; the warranty provides the teeth.
 
 
 ## Jurisdictional Witnessing

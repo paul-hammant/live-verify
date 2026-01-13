@@ -129,11 +129,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Positive Pay / Call-In
 
-| Feature | OCR-to-Hash | Positive Pay (Corporate) | Calling the Bank |
+| Feature | Live Verify | Positive Pay (Corporate) | Calling the Bank |
 | :--- | :--- | :--- | :--- |
 | **User Access** | **Universal.** Any private seller/landlord. | **Restricted.** Only for big businesses. | **Slow.** Often takes 20+ mins on hold. |
 | **Trust** | **Cryptographic.** Bound to the bank domain. | **High.** Direct DB link. | **Human.** Prone to social engineering. |
 | **Integrity** | **Binds All Fields.** Payee + Amount + Date. | **High.** | **Vague.** "Yes, check #123 is valid." |
 | **Speed** | **Instant.** 5-second scan. | **Fast.** | **Very Slow.** |
 
-**Why OCR wins here:** The "Kitchen Table" transaction. Most cashier's check fraud happens in private transactions where the seller doesn't have access to "Corporate Positive Pay" systems and the bank's fraud department is closed (weekends/evenings). OCR-to-hash provides **24/7, expert-level verification** to anyone with a smartphone.
+**Why Live Verify wins here:** The "Kitchen Table" transaction. Most cashier's check fraud happens in private transactions where the seller doesn't have access to "Corporate Positive Pay" systems and the bank's fraud department is closed (weekends/evenings). Live Verify provides **24/7, expert-level verification** to anyone with a smartphone.

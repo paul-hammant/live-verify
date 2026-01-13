@@ -14,7 +14,7 @@ When a citizen is pulled over in a traffic stop (especially by an unmarked vehic
 
 Criminals frequently use fake badges, uniforms, and dashboard lights to impersonate officers. Even legitimate officers may sometimes be under suspension or have had their authority revoked.
 
-OCR-to-hash allows a citizen to scan the officer's ID card to get a real-time "Authenticated" status directly from the department's official domain (e.g., `nypd.gov` or `met.police.uk`), without requiring the officer to divulge personal home addresses or private details.
+Live Verify allows a citizen to scan the officer's ID card to get a real-time "Authenticated" status directly from the department's official domain (e.g., `nypd.gov` or `met.police.uk`), without requiring the officer to divulge personal home addresses or private details.
 
 ### Static Card (Traditional)
 
@@ -63,7 +63,7 @@ Static cards can be photographed and reprinted. An **e-ink warrant card** with a
   </div>
 </div>
 
-*Salt rotates every 10 mins and after each OCR-to-hash verification*
+*Salt rotates every 10 mins and after each Live Verify verification*
 
 ### Digital Warrant Card (Mobile Phone - Backup)
 

@@ -82,7 +82,7 @@ The **Policyholder (Professional)** (second party) receives the policy from the 
 The policyholder (second party) may hand the verified document to various third parties:
 
 **Mortgage Underwriters**
-**Risk De-risking:** Lenders often ignore disability insurance because it's too hard to verify the "Fine Print" (e.g., Own-Occ vs. Any-Occ). OCR-to-hash turns the policy schedule into a verified digital artifact that proves the quality of the insurance.
+**Risk De-risking:** Lenders often ignore disability insurance because it's too hard to verify the "Fine Print" (e.g., Own-Occ vs. Any-Occ). Live Verify turns the policy schedule into a verified digital artifact that proves the quality of the insurance.
 
 **Divorce / Legal Settlements**
 **Asset Integrity:** Verifying the existence and value of disability policies during asset division to ensure future income potential is accurately accounted for.
@@ -130,11 +130,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Broker Confirmation
 
-| Feature | OCR-to-Hash | Manual Broker Call | Scanned PDF |
+| Feature | Live Verify | Manual Broker Call | Scanned PDF |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Carrier. | **Human.** Prone to errors or social engineering. | **Zero.** Easily forged. |
 | **Speed** | **Instant.** 5-second scan. | **Slow.** Takes 2-3 business days. | **Instant.** |
 | **Availability** | **24/7.** Works when offices are closed. | **Restricted.** | **Universal.** |
 | **Integrity** | **Cryptographic.** Binds the "Occupation Class." | **Vague.** "Yes, they have a policy." | **Vulnerable.** |
 
-**Why OCR wins here:** The "Wealth Preservation" Reality. Disability insurance is a foundational asset for doctors and lawyers. They often hold these policies for 30+ years. OCR-to-hash turns the **Physical Policy Folder** into a permanent, verifiable financial link that survives multiple broker changes and office closures.
+**Why Live Verify wins here:** The "Wealth Preservation" Reality. Disability insurance is a foundational asset for doctors and lawyers. They often hold these policies for 30+ years. Live Verify turns the **Physical Policy Folder** into a permanent, verifiable financial link that survives multiple broker changes and office closures.

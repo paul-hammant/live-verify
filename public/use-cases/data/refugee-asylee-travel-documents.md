@@ -65,7 +65,7 @@ The **Refugee / Asylee (Traveler)** benefits from verification.
 ## Third-Party Use
 
 **Airlines / Carrier Security**
-**Sanction Prevention:** Airlines are fined $5,000+ for every "Inadmissible" passenger they fly to the US. OCR-to-hash allows them to instantly verify the booklet's authenticity, protecting the airline's revenue and the traveler's journey.
+**Sanction Prevention:** Airlines are fined $5,000+ for every "Inadmissible" passenger they fly to the US. Live Verify allows them to instantly verify the booklet's authenticity, protecting the airline's revenue and the traveler's journey.
 
 **Foreign Border Police**
 **Identity Vetting:** Verifying that the photo on the physical booklet matches the digital record in the US database, stopping the common "Photo-Swap" fraud used for illegal border crossings.

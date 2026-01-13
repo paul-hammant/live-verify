@@ -80,7 +80,7 @@ The **Employee / Taxpayer** benefits from verification.
 ## Third-Party Use
 
 **Mortgage Lenders / Banks**
-**Zero-Trust Underwriting:** Thousands of fake W-2s are submitted to banks every month. OCR-to-hash connects the underwriter directly to the payroll provider's domain, stopping "Income Inflation" fraud at the source and reducing loan default rates.
+**Zero-Trust Underwriting:** Thousands of fake W-2s are submitted to banks every month. Live Verify connects the underwriter directly to the payroll provider's domain, stopping "Income Inflation" fraud at the source and reducing loan default rates.
 
 **Tax Authorities (IRS / State)**
 **Refund Fraud Prevention:** Before issuing a $5,000 refund, the IRS scans the verified hash of the W-2 provided by the taxpayer. If it returns **"NOT FOUND"** or **"WAGES: $0,"** the refund is blocked, stopping "Identity Theft Refund Fraud" (ITRF).

@@ -77,7 +77,7 @@ The **Homeowner / Taxpayer** (second party) receives the assessment notice from 
 The homeowner / taxpayer (second party) may hand the verified document to various third parties:
 
 **Mortgage Servicers / Lenders**
-**Escrow Reconciliation:** Large banks manage millions of tax payments. OCR-to-hash allows them to bulk-verify assessment notices across 3,000 counties. This ensures they are paying the *correct* tax amount and haven't been sent a "fake bill" by a fraudster.
+**Escrow Reconciliation:** Large banks manage millions of tax payments. Live Verify allows them to bulk-verify assessment notices across 3,000 counties. This ensures they are paying the *correct* tax amount and haven't been sent a "fake bill" by a fraudster.
 
 **Real Estate Data Aggregators (Zillow, Redfin)**
 **Data Integrity:** Verifying the "Tax History" data displayed on their websites. Verified hashes ensure the public information is accurate and hasn't been corrupted by legacy data scrapers.

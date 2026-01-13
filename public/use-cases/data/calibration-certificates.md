@@ -154,22 +154,22 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Physical Tamper Seals
 
-| Feature | OCR-to-Hash | Lead/Plastic Wire Seal | Sticker (Hologram) |
+| Feature | Live Verify | Lead/Plastic Wire Seal | Sticker (Hologram) |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Lab. | **Mechanical.** Binds the *box*. | **Visual.** Binds the *surface*. |
 | **Data Protection** | **High.** Protects the numbers *inside* the doc. | **Zero.** Doesn't protect data. | **Zero.** |
 | **Auditability** | **Digital.** Can be automated. | **Manual.** Requires physical eyes. | **Manual.** |
 | **Persistence** | **High.** Archival for 10+ years. | **Fragile.** Cut during maintenance. | **Fragile.** Peeled/Scratched. |
 
-**Why OCR wins here:** Persistence of Data. A wire seal only proves the device wasn't opened. It doesn't prove the device is *accurate*. OCR-to-hash turns the data *results* into a verifiable artifact, ensuring that the metrologist's actual work remains trustworthy even after the physical seal is broken for the next service cycle.
+**Why Live Verify wins here:** Persistence of Data. A wire seal only proves the device wasn't opened. It doesn't prove the device is *accurate*. Live Verify turns the data *results* into a verifiable artifact, ensuring that the metrologist's actual work remains trustworthy even after the physical seal is broken for the next service cycle.
 
 ## Competition vs. Asset Management Software
 
-| Feature | OCR-to-Hash | Asset Management SW | Paper / Excel Log |
+| Feature | Live Verify | Asset Management SW | Paper / Excel Log |
 | :--- | :--- | :--- | :--- |
 | **Field Access** | **Instant.** Scan the sticker on the tool. | **Difficult.** Requires laptop/tablet and login to complex ERP. | **Slow.** Find the binder. |
 | **Integrity** | **Cryptographic.** Binds data to the Lab domain. | **Database-Bound.** Can be edited by IT/Admins (audit trail weak). | **Zero.** Easily faked. |
 | **Vendor Neutral** | **Yes.** Works across 10 different accredited labs. | **No.** Often requires all labs to use the same software platform. | **Yes.** |
 | **Offline Proof** | **Strong.** The sticker is the anchor; no network needed to verify. | **None.** Requires server/database access. | **Manual.** |
 
-**Why OCR wins here:** The "Factory Floor" reality. Quality inspectors don't want to log into an SAP or Fluke database every time they see a wrench. OCR-to-hash turns the **Sticker on the Tool** into a live, trusted data-point, bringing "Metrology-Grade" trust to the point of use.
+**Why Live Verify wins here:** The "Factory Floor" reality. Quality inspectors don't want to log into an SAP or Fluke database every time they see a wrench. Live Verify turns the **Sticker on the Tool** into a live, trusted data-point, bringing "Metrology-Grade" trust to the point of use.

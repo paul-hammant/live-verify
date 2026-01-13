@@ -148,14 +148,14 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Blockchain (TradeLens)
 
-| Feature | OCR-to-Hash | TradeLens / GSBN | Paper COI |
+| Feature | Live Verify | TradeLens / GSBN | Paper COI |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the local Chamber. | **Consensus-Bound.** Trust the network. | **Zero.** Easily forged. |
 | **Adoption** | **High.** Works with existing paper/PDF docs. | **Low.** Requires every party to join the blockchain. | **Universal.** |
 | **Integrity** | **Binds Content.** Proves the *Country* matches. | **Data-Only.** | **Vulnerable.** |
 | **Cost** | **Low.** Standard web infra. | **Very High.** Seven-figure implementation costs. | **None.** |
 
-**Why OCR wins here:** Ease of Entry. While "Global Trade Blockchains" are the future, most of the world's trade still runs on paper. OCR-to-hash provides **Blockchain-level security** for today's paper-based reality, allowing any small-town Chamber of Commerce to offer cryptographic verification for just a few dollars a month in hosting costs.
+**Why Live Verify wins here:** Ease of Entry. While "Global Trade Blockchains" are the future, most of the world's trade still runs on paper. Live Verify provides **Blockchain-level security** for today's paper-based reality, allowing any small-town Chamber of Commerce to offer cryptographic verification for just a few dollars a month in hosting costs.
 
 ## Jurisdictional Witnessing
 
@@ -192,11 +192,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. eCO (Electronic Registry)
 
-| Feature | OCR-to-Hash | eCO Registry (ICC) | Paper Certificate |
+| Feature | Live Verify | eCO Registry (ICC) | Paper Certificate |
 | :--- | :--- | :--- | :--- |
 | **Field Access** | **Instant.** Scan the paper at the border gate. | **Difficult.** Requires customs officers to have specific registry logins. | **Instant.** |
 | **Trust Anchor** | **Domain-Bound.** Trust the local Chamber domain. | **Centralized.** Trust the ICC global platform. | **Visual.** Very easy to forge stamps. |
 | **Connectivity** | **Strong.** Works even if the global ICC hub is down. | **Fragile.** Single point of failure if the ICC system is offline. | **Offline.** |
 | **Integrity** | **Binds Content.** Proves the *Country* matches the chamber record. | **Data-Only.** Doesn't verify the actual paper. | **Zero.** |
 
-**Why OCR wins here:** Decentralization. International trade is built on thousands of independent local Chambers of Commerce. It is impossible to get every small chamber in the world on a single "Global IT Platform." OCR-to-hash allows every chamber to remain independent while providing a **universal digital overlay** for their paper certificates, providing the best of both worlds—local autonomy and global verification.
+**Why Live Verify wins here:** Decentralization. International trade is built on thousands of independent local Chambers of Commerce. It is impossible to get every small chamber in the world on a single "Global IT Platform." Live Verify allows every chamber to remain independent while providing a **universal digital overlay** for their paper certificates, providing the best of both worlds—local autonomy and global verification.

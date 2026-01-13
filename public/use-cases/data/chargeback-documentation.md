@@ -76,7 +76,7 @@ The **Merchant** (Business Owner) benefits from verification.
 **Risk Monitoring:** Processors can verify the outcome of disputes across different platforms to build a "Merchant Reputation" profile. Verified wins reduce the merchant's risk score.
 
 **Business Buyers (M&A)**
-**Due Diligence:** A buyer of an e-commerce brand needs to verify the "Chargeback Rate" claims. OCR-to-hash allows them to scan random dispute letters to ensure they haven't been "Photoshopped" to hide a 5% fraud rate.
+**Due Diligence:** A buyer of an e-commerce brand needs to verify the "Chargeback Rate" claims. Live Verify allows them to scan random dispute letters to ensure they haven't been "Photoshopped" to hide a 5% fraud rate.
 
 **Credit Card Networks (Visa / Mastercard)**
 **Audit Compliance:** Verifying that the evidence submitted by the merchant matches the summary provided to the issuing bank.
@@ -121,11 +121,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Processor Portals
 
-| Feature | OCR-to-Hash | Processor Dashboard | Scanned PDF |
+| Feature | Live Verify | Processor Dashboard | Scanned PDF |
 | :--- | :--- | :--- | :--- |
 | **User Control** | **High.** Share one specific case proof. | **Low.** Giving portal access reveals *all* financial data. | **Medium.** |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Processor. | **System-Bound.** | **Zero.** Easily forged. |
 | **Interoperability** | **Universal.** Works for any bank with a domain. | **Siloed.** Hard to aggregate across multiple processors. | **Universal.** |
 | **Permanence** | **Snapshot.** Proves the state at resolution. | **Dynamic.** Data can shift or be archived. | **Vulnerable.** |
 
-**Why OCR wins here:** Selective Disclosure. A merchant needs to prove they "Won the Big Dispute" to a lender without giving that lender a password to their entire Stripe account. OCR-to-hash turns the **Adjudication Letter** into a portable, cryptographically trusted "Victory Token."
+**Why Live Verify wins here:** Selective Disclosure. A merchant needs to prove they "Won the Big Dispute" to a lender without giving that lender a password to their entire Stripe account. Live Verify turns the **Adjudication Letter** into a portable, cryptographically trusted "Victory Token."

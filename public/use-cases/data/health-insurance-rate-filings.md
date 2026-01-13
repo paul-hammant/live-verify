@@ -77,7 +77,7 @@ The **Insurer's Compliance Officer** benefits from verification.
 ## Third-Party Use
 
 **State Insurance Regulators (DOI)**
-**Audit Integrity:** Regulators can verify the authenticity of the actuarial signature and the specific data points (MLR, Trends) in the filing. OCR-to-hash prevents a carrier from submitting a "Optimistic" version to the regulator and a "Pessimistic" version to the rating agencies.
+**Audit Integrity:** Regulators can verify the authenticity of the actuarial signature and the specific data points (MLR, Trends) in the filing. Live Verify prevents a carrier from submitting a "Optimistic" version to the regulator and a "Pessimistic" version to the rating agencies.
 
 **Healthcare Advocacy Groups**
 **Transparency:** Allowing public interest groups to verify the *actual* approved rate increases, stopping "Messaging Fraud" where a company announces a 4% increase but the verified filing shows 14% for certain segments.
@@ -125,11 +125,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. SERFF Database
 
-| Feature | OCR-to-Hash | SERFF / State Public Search | Scanned PDF Memo |
+| Feature | Live Verify | SERFF / State Public Search | Scanned PDF Memo |
 | :--- | :--- | :--- | :--- |
 | **User Experience** | **Universal.** Scan the memo at the hearing. | **Hard.** Requires navigating complex gov search forms. | **Instant.** |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Actuary/Insurer. | **Gov-Bound.** | **Zero.** Easily forged. |
 | **Integrity** | **Binds Content.** Protects the % increase. | **Data-Only.** | **Vulnerable.** |
 | **Immediacy** | **Real-time.** Shows if firm retracted opinion. | **Laggy.** Depends on gov indexing. | **Static.** |
 
-**Why OCR wins here:** The "Hearing Reality." Rate hearings are public and contentious. Advocacy groups and the press need to trust the numbers *in the room*. OCR-to-hash turns the **Paper Actuarial Memo** into a live digital checkpoint, ensuring the public debate is based on verified, non-altered facts.
+**Why Live Verify wins here:** The "Hearing Reality." Rate hearings are public and contentious. Advocacy groups and the press need to trust the numbers *in the room*. Live Verify turns the **Paper Actuarial Memo** into a live digital checkpoint, ensuring the public debate is based on verified, non-altered facts.

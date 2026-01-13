@@ -350,7 +350,7 @@ Each worker has their own scannable poster. Neighbor approaches worker → worke
 
 ## Verification Architecture
 
-**The core insight:** OCR-to-hash only works if the attestation comes from an authority that:
+**The core insight:** Live Verify only works if the attestation comes from an authority that:
 1. Cannot be created by criminals
 2. Has access to ground truth (Land Registry, death records, tax)
 3. Actually verified something before issuing

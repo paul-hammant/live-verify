@@ -70,7 +70,7 @@ The **Property Owner / Developer** benefits from verification.
 ## Third-Party Use
 
 **US Army Corps of Engineers (USACE)**
-**Field Audit:** During a random check of a development site, the agent scans the report placard. OCR-to-hash ensures the contractor hasn't "Shrunk" the protected zone on the paper plans to allow for illegal filling of a stream.
+**Field Audit:** During a random check of a development site, the agent scans the report placard. Live Verify ensures the contractor hasn't "Shrunk" the protected zone on the paper plans to allow for illegal filling of a stream.
 
 **Lenders and Real Estate Appraisers**
 **Collateral Risk Audit:** Before a bank lends $50M against a land parcel, they scan the verified environmental hashes. This ensures the "Developable Acreage" isn't a fabrication, protecting the bank from a future default caused by an un-buildable property.

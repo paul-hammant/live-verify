@@ -129,11 +129,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. HOA Search Portals
 
-| Feature | OCR-to-Hash | HomeWiseDocs / CondoCerts | Scanned PDF |
+| Feature | Live Verify | HomeWiseDocs / CondoCerts | Scanned PDF |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Mgmt firm. | **System-Bound.** Trust the vendor platform. | **Zero.** Easily forged. |
 | **Cost** | **Free.** (Marginal hosting). | **Very High.** Disclosure packs cost $300-$600 each. | **None.** |
 | **User Access** | **Instant.** Scan the paper in the lobby. | **Slow.** Requires paying a fee and waiting 3-5 days. | **Instant.** |
 | **Integrity** | **Binds Content.** Proves the *Dues* match. | **Data-Only.** | **Vulnerable.** |
 
-**Why OCR wins here:** Cost and Immediacy. HOA disclosure portals are notoriously expensive and slow. OCR-to-hash allows a buyer to verify the **authenticity of the specific document** they already received, without needing to pay a third-party platform another $400 for a fresh copy of the same data.
+**Why Live Verify wins here:** Cost and Immediacy. HOA disclosure portals are notoriously expensive and slow. Live Verify allows a buyer to verify the **authenticity of the specific document** they already received, without needing to pay a third-party platform another $400 for a fresh copy of the same data.

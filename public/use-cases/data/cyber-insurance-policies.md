@@ -14,7 +14,7 @@ If a company is hacked and customer data is stolen, they can be sued for million
 
 Large corporations (like Apple or Walmart) require all their vendors to have verified cyber insurance policies.
 
-Fraudsters often "Photoshop" a low-limit policy ($100k) to look like a $10M policy to win big contracts. OCR-to-hash allows a procurement officer to scan the vendor's policy and see the **true limits** on the insurer's domain instantly.
+Fraudsters often "Photoshop" a low-limit policy ($100k) to look like a $10M policy to win big contracts. Live Verify allows a procurement officer to scan the vendor's policy and see the **true limits** on the insurer's domain instantly.
 
 <div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <span verifiable-text="start" data-for="cyber-pol">[</span>
@@ -129,11 +129,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Automated Security Scans (Bitsight)
 
-| Feature | OCR-to-Hash | Security Rating (Bitsight/SecurityScorecard) | Scanned PDF |
+| Feature | Live Verify | Security Rating (Bitsight/SecurityScorecard) | Scanned PDF |
 | :--- | :--- | :--- | :--- |
 | **Integrity** | **Binds the Financials.** Proves the *Money* exists. | **Binds the Tech.** Measures the *Security Score*. | **Zero.** Easily forged. |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Insurer. | **Platform-Bound.** Trust the scanner algorithm. | **Visual.** |
 | **Context** | **Legal.** Shows the actual contract limits. | **Predictive.** Guesses the risk from the outside. | **Full.** |
 | **Freshness** | **Real-time.** Queries the carrier's live file. | **Weekly/Monthly.** Scans take time to refresh. | **Static.** |
 
-**Why OCR wins here:** The "Contractual Reality." A Bitsight score says a company *looks* safe. A verified insurance policy says the company *is backed by $10M in cash* if they aren't safe. OCR-to-hash turns the **Financial Contract** into a verifiable digital artifact that is much more important for legal liability than a technical "Security Score."
+**Why Live Verify wins here:** The "Contractual Reality." A Bitsight score says a company *looks* safe. A verified insurance policy says the company *is backed by $10M in cash* if they aren't safe. Live Verify turns the **Financial Contract** into a verifiable digital artifact that is much more important for legal liability than a technical "Security Score."

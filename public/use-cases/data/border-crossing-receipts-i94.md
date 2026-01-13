@@ -123,11 +123,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. DHS SAVE System
 
-| Feature | OCR-to-Hash | DHS SAVE System | Paper Printout |
+| Feature | Live Verify | DHS SAVE System | Paper Printout |
 | :--- | :--- | :--- | :--- |
 | **Accessibility** | **Open.** Any employer or bank can verify. | **Restricted.** Only Gov agencies and some employers have access. | **Manual.** |
 | **Speed** | **Instant.** Scan the paper. | **Slow.** Often takes 3-10 days for "Manual Verification" step. | **Instant.** |
 | **Trust** | **Cryptographic.** Bound to `cbp.gov`. | **High.** Direct DB access. | **Low.** Easily faked. |
 | **Integration** | **Web-Native.** Easy to add to onboarding apps. | **Heavy.** Requires complex API integration and federal vetting. | **None.** |
 
-**Why OCR wins here:** The "Employer Gap." Most small businesses do not have access to the DHS SAVE system. They are forced to trust a piece of paper provided by the employee. OCR-to-hash allows **every employer** to have "Government-Grade" trust in the I-94 record without needing a federal contract.
+**Why Live Verify wins here:** The "Employer Gap." Most small businesses do not have access to the DHS SAVE system. They are forced to trust a piece of paper provided by the employee. Live Verify allows **every employer** to have "Government-Grade" trust in the I-94 record without needing a federal contract.

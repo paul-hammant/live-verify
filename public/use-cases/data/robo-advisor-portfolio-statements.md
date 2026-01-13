@@ -91,7 +91,7 @@ The **Investor (Client)** benefits from verification.
 ## Third-Party Use
 
 **Mortgage Lenders / Underwriters**
-**Zero-Trust Wealth Vetting:** Thousands of "Edited" digital statements are submitted to banks every month. OCR-to-hash connects the underwriter directly to the advisor's domain, stopping "Asset Padding" fraud at the source and protecting the bank's credit risk.
+**Zero-Trust Wealth Vetting:** Thousands of "Edited" digital statements are submitted to banks every month. Live Verify connects the underwriter directly to the advisor's domain, stopping "Asset Padding" fraud at the source and protecting the bank's credit risk.
 
 **Tax Authorities (IRS)**
 **Automated Dividend Audit:** Verifying that the "Investment Income" reported on a tax return matches the verified payouts from the robo-advisor, reducing the need for manual audit flags.

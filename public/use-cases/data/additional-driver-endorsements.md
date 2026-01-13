@@ -108,17 +108,17 @@ A QR code seems faster to scan at a roadside stop, but consider the real-world s
 | URL to Safeguard's agent portal | Nothing—no login credentials, access denied |
 | Static embedded data (policy #, name) | Read it, but cannot verify it's authentic |
 | Cryptographically signed token | Nothing—no shared PKI between insurers and police |
-| Public verification URL | Works—but this is just OCR-to-hash with different encoding |
+| Public verification URL | Works—but this is just Live Verify with different encoding |
 
 **The uncomfortable truth:** QR codes assume system integration that doesn't exist. There's no federation between 50 state DMVs, hundreds of insurers, and thousands of police departments. A QR pointing to Safeguard's internal system is useless to an officer with no Safeguard account.
 
-OCR-to-hash with a **public verification endpoint** handles this correctly:
+Live Verify with a **public verification endpoint** handles this correctly:
 - No integration required between insurers and police
 - The domain (`safeguard-ins.com`) is the trust anchor
 - Anyone with internet access can verify
 - Works across state lines, insurer boundaries, and app ecosystems
 
-QR could encode that same public URL—but then it's just OCR-to-hash with a different barcode. The verification model is identical; only the scanning speed differs.
+QR could encode that same public URL—but then it's just Live Verify with a different barcode. The verification model is identical; only the scanning speed differs.
 
 ## Post-Verification Actions
 

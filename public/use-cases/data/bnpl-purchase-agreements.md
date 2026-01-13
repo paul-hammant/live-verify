@@ -117,11 +117,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Credit Reports (Experian/TransUnion)
 
-| Feature | OCR-to-Hash | Credit Bureau Report | Paper Disclosure |
+| Feature | Live Verify | Credit Bureau Report | Paper Disclosure |
 | :--- | :--- | :--- | :--- |
 | **Completeness** | **High.** Catches "Off-Bureau" debt. | **Low.** Many BNPL providers don't report all loans. | **High.** But untrusted. |
 | **Timeliness** | **Real-time.** Proves the loan status *today*. | **Laggy.** Updates take 30-60 days. | **Static.** |
 | **Trust** | **Cryptographic.** Bound to the Lender. | **Reporting-Bound.** Relies on data file uploads. | **Zero.** |
 
-**Why OCR wins here:** The "Shadow Credit" problem. BNPL is a multi-billion dollar industry that operates largely outside the view of traditional credit bureaus. OCR-to-hash brings this "Shadow Debt" into the light, allowing for responsible lending while preserving the consumer's ability to prove their own repayment history.
+**Why Live Verify wins here:** The "Shadow Credit" problem. BNPL is a multi-billion dollar industry that operates largely outside the view of traditional credit bureaus. Live Verify brings this "Shadow Debt" into the light, allowing for responsible lending while preserving the consumer's ability to prove their own repayment history.
 

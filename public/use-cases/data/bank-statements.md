@@ -70,7 +70,7 @@ The **Bank Customer** benefits from verification.
 ## Third-Party Use
 
 **Mortgage Lenders / Underwriters**
-**Asset Verification:** Lenders currently use manual "bank login" scrapers (like Plaid) which many users find invasive. OCR-to-hash allows the user to simply send a PDF/Paper statement that the lender can trust without needing the user's password.
+**Asset Verification:** Lenders currently use manual "bank login" scrapers (like Plaid) which many users find invasive. Live Verify allows the user to simply send a PDF/Paper statement that the lender can trust without needing the user's password.
 
 **Regulators (The Fed / FDIC)**
 **Systemic Audit:** Regulators receiving a feed of statement hashes can verify that the bank isn't "running two sets of books" (i.e., telling the customer they have $1M but telling the regulator they only have $100k).
@@ -127,11 +127,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Open Banking (Plaid/Finicity)
 
-| Feature | OCR-to-Hash | Open Banking (Plaid) | Paper / Scanned PDF |
+| Feature | Live Verify | Open Banking (Plaid) | Paper / Scanned PDF |
 | :--- | :--- | :--- | :--- |
 | **Privacy** | **High.** No passwords shared. No data scraping. | **Low.** Requires bank password; scrapes full history. | **Medium.** But untrusted. |
 | **Integrity** | **Cryptographic.** Every line is protected. | **High.** Direct API access. | **Zero.** Easily edited. |
 | **User Control** | **High.** User chooses which statement to share. | **Low.** Once linked, the app has continuous access. | **High.** |
 | **Interoperability** | **Universal.** Works for any bank with a domain. | **Limited.** Only works for banks on the Plaid network. | **Manual.** |
 
-**Why OCR wins here:** Trust without Intrusion. Many high-net-worth individuals and privacy-conscious users refuse to give their bank passwords to third-party "scrapers." OCR-to-hash provides the **same level of trust** as an API, but preserves the user's security and privacy.
+**Why Live Verify wins here:** Trust without Intrusion. Many high-net-worth individuals and privacy-conscious users refuse to give their bank passwords to third-party "scrapers." Live Verify provides the **same level of trust** as an API, but preserves the user's security and privacy.

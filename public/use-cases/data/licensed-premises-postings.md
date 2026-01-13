@@ -14,7 +14,7 @@ Bars, nightclubs, and liquor stores operate under strict "Permission to Exist" d
 
 The problem is that these papers are static, but the law is dynamic. A bar may have its license suspended for serving minors, but the owner will leave the "Valid" physical card on the wall to trick the public and patrol officers. Similarly, shady owners often "Photoshop" their occupancy limit from 50 to 150 to host dangerous, over-crowded parties.
 
-OCR-to-hash allows a patron, neighbor, or police officer to scan the posting to verify: **"Is this establishment currently authorized to operate, and are they adhering to their legal capacity and hours?"**
+Live Verify allows a patron, neighbor, or police officer to scan the posting to verify: **"Is this establishment currently authorized to operate, and are they adhering to their legal capacity and hours?"**
 
 <div style="max-width: 500px; margin: 24px auto; font-family: 'Times New Roman', serif; border: 4px double #333; background: #fff; padding: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); position: relative;">
   <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 15px; margin-bottom: 20px;">

@@ -72,7 +72,7 @@ The **Vendor (Seller)** benefits from verification.
 **Financing Security:** A vendor asks for a loan against a $1M Purchase Order. The bank scans the PO. If the hash returns **"OPEN - ISSUED BY FORTUNE 500 CO,"** they can release the funds immediately. This eliminates "Fake Invoice" fraud, which costs the industry billions.
 
 **External Auditors**
-**Inventory Audit:** During a year-end audit, the accountant scans a random sample of "Goods Received Notes." OCR-to-hash ensures the company isn't "Padding" its inventory with fake delivery paperwork.
+**Inventory Audit:** During a year-end audit, the accountant scans a random sample of "Goods Received Notes." Live Verify ensures the company isn't "Padding" its inventory with fake delivery paperwork.
 
 **Customs and Tax Authorities (VAT/GST)**
 **Trade Integrity:** Verifying that the value stated on the "Delivery Note" matches the price authorized on the "Purchase Order," preventing "Under-Invoicing" to evade import duties.

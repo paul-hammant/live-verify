@@ -90,7 +90,7 @@ The **Investor** (second party) receives the NAV statement from the fund adminis
 The investor (second party) may hand the verified document to various third parties:
 
 **Prime Brokers / Lenders**
-**Margin Calculation:** Instantly verifying the NAV of a fund's shares when those shares are pledged as collateral for a margin loan. OCR-to-hash ensures the borrower hasn't "Edited" the PDF to show a 20% higher value.
+**Margin Calculation:** Instantly verifying the NAV of a fund's shares when those shares are pledged as collateral for a margin loan. Live Verify ensures the borrower hasn't "Edited" the PDF to show a 20% higher value.
 
 **External Auditors**
 **Portfolio Confirmation:** During a multi-family office audit, scanning the hashes of 50 different fund investments to ensure the consolidated wealth statement is accurate.
@@ -139,14 +139,14 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Investor Portals
 
-| Feature | OCR-to-Hash | Investor Portal (CitcoOne) | Scanned PDF Statement |
+| Feature | Live Verify | Investor Portal (CitcoOne) | Scanned PDF Statement |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Administrator. | **System-Bound.** Trust the portal vendor. | **Zero.** Easily forged. |
 | **Integrity** | **Cryptographic.** Binds every digit. | **High.** Direct DB access. | **Vulnerable.** |
 | **User Access** | **Universal.** Share with any bank/auditor. | **Restricted.** Lenders never get portal access. | **Universal.** |
 | **Madoff Protection** | **High.** Separates Manager from Admin. | **Medium.** Manager might control the portal. | **Zero.** |
 
-**Why OCR wins here:** The "External Leverage" reality. High-end investors move their money based on paper/PDF statements shared with banks and lawyers. These third parties **do not have logins** to the fund's private administrator portal. OCR-to-hash turns the **Private Statement** into a portable, cryptographically trusted asset that carries its own proof of truth.
+**Why Live Verify wins here:** The "External Leverage" reality. High-end investors move their money based on paper/PDF statements shared with banks and lawyers. These third parties **do not have logins** to the fund's private administrator portal. Live Verify turns the **Private Statement** into a portable, cryptographically trusted asset that carries its own proof of truth.
 
 ---
 

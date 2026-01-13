@@ -1,5 +1,7 @@
 # Live Verify
 
+**Verify printed and digital claims**
+
 ![Jest and Playwright tests, then deploy to GitHub Pages](https://github.com/paul-hammant/live-verify/actions/workflows/deploy.yml/badge.svg)
 ![License](https://img.shields.io/badge/license-AGPL--3.0-blue)
 

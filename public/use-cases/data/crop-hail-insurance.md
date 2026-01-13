@@ -117,11 +117,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. USDA Portals (MPCI)
 
-| Feature | OCR-to-Hash | USDA / RMA Portal | Paper Schedule |
+| Feature | Live Verify | USDA / RMA Portal | Paper Schedule |
 | :--- | :--- | :--- | :--- |
 | **Integrity** | **Binds specific fields.** Protects the $/Acre limit. | **High.** Direct Gov DB. | **Zero.** Easily forged. |
 | **Accessibility** | **Open.** Any local ag-bank can verify. | **Restricted.** Requires secure USDA ID and complex logins. | **Instant.** |
 | **Speed** | **Instant.** Scan at the farm gate. | **Slow.** Requires navigating a complex Gov GIS system. | **Instant.** |
 | **Private Market** | **Universal.** Works for non-gov "Hail-Only" policies. | **Zero.** USDA doesn't track private hail-only data. | **Manual.** |
 
-**Why OCR wins here:** The "Ag-Banking" reality. Many farmers use private "Crop-Hail" policies *on top* of federal MPCI. The USDA database doesn't see these private contracts. OCR-to-hash allows the **Private Insurer** to provide the same level of cryptographic trust as the government, ensuring the farmer's total risk strategy is verifiable.
+**Why Live Verify wins here:** The "Ag-Banking" reality. Many farmers use private "Crop-Hail" policies *on top* of federal MPCI. The USDA database doesn't see these private contracts. Live Verify allows the **Private Insurer** to provide the same level of cryptographic trust as the government, ensuring the farmer's total risk strategy is verifiable.

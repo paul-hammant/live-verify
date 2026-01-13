@@ -128,11 +128,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Official Electronic Delivery (Parchment)
 
-| Feature | OCR-to-Hash | Electronic Delivery (Parchment) | Scanned PDF / Paper |
+| Feature | Live Verify | Electronic Delivery (Parchment) | Scanned PDF / Paper |
 | :--- | :--- | :--- | :--- |
 | **User Control** | **High.** Student chooses what to share and how. | **Low.** Locked into the vendor's secure portal. | **High.** |
 | **Trust Anchor** | **Domain-Bound.** Bound to the University. | **System-Bound.** Trust the vendor platform. | **Zero.** Easily forged. |
 | **Speed** | **Instant.** Scan the paper/PDF. | **Slow.** Often takes 24-48 hours to "Process." | **Instant.** |
 | **Cost** | **Low.** Standard web infra. | **Medium.** Fees of $10-$20 per transcript are common. | **None.** |
 
-**Why OCR wins here:** The "Hiring Manager" reality. Recruiters want to verify a candidate *now*, during the interview. They don't want to wait 2 days for an "Official Parchment Link" to be emailed to them. OCR-to-hash turns the **Candidate's PDF** into a live, trusted record that can be verified in seconds.
+**Why Live Verify wins here:** The "Hiring Manager" reality. Recruiters want to verify a candidate *now*, during the interview. They don't want to wait 2 days for an "Official Parchment Link" to be emailed to them. Live Verify turns the **Candidate's PDF** into a live, trusted record that can be verified in seconds.

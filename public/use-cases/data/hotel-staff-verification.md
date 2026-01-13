@@ -29,7 +29,7 @@ In a large hotel, a "Maintenance" or "Room Service" worker might knock on your d
 
 The **Staff ID Badge** is the worker's proof that they are authorized to be in the guest hallways.
 
-"Fake Uniform" home-invasions happen when burglars buy high-visibility vests or fake Hilton/Marriott shirts to gain entry to rooms. OCR-to-hash allows a guest to scan the worker's badge through the peephole or doorbell camera. Seeing a green "ON-DUTY" status from the hotel's domain ensures the person at the door is a **Verified Employee**.
+"Fake Uniform" home-invasions happen when burglars buy high-visibility vests or fake Hilton/Marriott shirts to gain entry to rooms. Live Verify allows a guest to scan the worker's badge through the peephole or doorbell camera. Seeing a green "ON-DUTY" status from the hotel's domain ensures the person at the door is a **Verified Employee**.
 
 **This pattern also applies** to hospitals, apartment buildings, and event venues—anywhere mobile service staff enter private spaces in ungated, high-turnover environments.
 
@@ -214,14 +214,14 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Uniforms / Peepholes
 
-| Feature | OCR-to-Hash | Uniform & Name Tag | Calling the Front Desk |
+| Feature | Live Verify | Uniform & Name Tag | Calling the Front Desk |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Brand. | **Visual.** Trusted via logo only. | **Human.** Prone to social engineering. |
 | **Integrity** | **Cryptographic.** Binds face to status. | **Zero.** Uniforms are easily faked. | **Variable.** |
 | **Speed** | **Instant.** 5-second scan through peephole. | **N/A.** Just looking. | **Slow.** Often takes 5+ minutes to reach a rep. |
 | **Freshness** | **Real-time.** Shows if banned *today*. | **Static.** | **N/A.** |
 
-**Why OCR wins here:** The "Doorstep Workflow." Guests make the decision to open the door in seconds. They don't want to engage in a long phone conversation while a stranger stands in the hallway. OCR-to-hash turns the **ID Badge** into a live, non-confrontational safety tool that provides instant, high-authority trust.
+**Why Live Verify wins here:** The "Doorstep Workflow." Guests make the decision to open the door in seconds. They don't want to engage in a long phone conversation while a stranger stands in the hallway. Live Verify turns the **ID Badge** into a live, non-confrontational safety tool that provides instant, high-authority trust.
 
 ---
 

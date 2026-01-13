@@ -78,7 +78,7 @@ The **Immigrant (Beneficiary)** benefits from verification.
 ## Third-Party Use
 
 **Consular Officers / Consulates**
-**Fraud Detection:** Thousands of fake I-864s are submitted globally every year. OCR-to-hash connects the officer directly to the US-based record in seconds, stopping "Immigration Consultant" scams where fake sponsors are sold to applicants.
+**Fraud Detection:** Thousands of fake I-864s are submitted globally every year. Live Verify connects the officer directly to the US-based record in seconds, stopping "Immigration Consultant" scams where fake sponsors are sold to applicants.
 
 **State Welfare Agencies**
 **Asset Recovery:** If an immigrant applies for Medicaid or SNAP, the state agency scans the I-864 hash. They can identify the sponsor and initiate a reimbursement claim against them for the cost of the benefits provided.

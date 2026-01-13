@@ -14,7 +14,7 @@ To cut hair or perform skin treatments (like chemical peels), a person must be l
 
 This license isn't just about fashion; it's about **Health**. It proves the stylist knows how to properly disinfect tools to prevent the spread of infections, lice, or diseases like Hepatitis.
 
-Stylists are required by law to post their license at their station. Some people use "License Swapping"—using a friend's physical card—to hide that they never passed the health exam. OCR-to-hash allows a customer to scan the badge and see the verified photo and status from the state board instantly.
+Stylists are required by law to post their license at their station. Some people use "License Swapping"—using a friend's physical card—to hide that they never passed the health exam. Live Verify allows a customer to scan the badge and see the verified photo and status from the state board instantly.
 
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 4px solid #333; background: #fff; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
   <div style="background: #333; color: #fff; padding: 15px; text-align: center;">
@@ -123,11 +123,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Window Stickers / Public Lookup
 
-| Feature | OCR-to-Hash | Window/Wall Sticker | State Website Lookup |
+| Feature | Live Verify | Window/Wall Sticker | State Website Lookup |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Board. | **Mechanical.** Hard to forge, but non-verifiable. | **High.** Direct DB access. |
 | **Speed** | **Instant.** 5-second scan at the chair. | **N/A.** Just looking. | **Slow.** Type in license #, navigate mobile results. |
 | **Integrity** | **Binds Identity.** Links face to status. | **Zero.** Easily swapped. | **None.** |
 | **User Privacy** | **Targeted.** Verifies *this* person. | **Open.** | **Open.** Scrape-able by data brokers. |
 
-**Why OCR wins here:** The "Service Point" reality. Customers are already sitting in the chair when they decide to trust a stylist. They won't type license numbers into a state portal while wearing a salon cape. OCR-to-hash turns the **Station License** into a live "Safety Beacon," ensuring trust is verified at the moment of highest risk.
+**Why Live Verify wins here:** The "Service Point" reality. Customers are already sitting in the chair when they decide to trust a stylist. They won't type license numbers into a state portal while wearing a salon cape. Live Verify turns the **Station License** into a live "Safety Beacon," ensuring trust is verified at the moment of highest risk.

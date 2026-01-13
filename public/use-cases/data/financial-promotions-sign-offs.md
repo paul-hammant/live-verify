@@ -97,7 +97,7 @@ The **Marketing Team / Unauthorized Firm** benefits from verification.
 **Ad-Integrity Vetting:** Automatically scanning the hashes provided in every financial ad submission. Verified hashes eliminate the risk of "Regulatory Fines" for the platform by ensuring every financial ad is backed by a legitimate, authorized firm.
 
 **National Regulators (FCA / FINRA)**
-**Market Surveillance:** Instead of searching for ads manually, the regulator can use a crawler to scan hashes on live websites. OCR-to-hash ensures the ads on the screen match the "Approved Copy" in the firm's compliance files, stopping "Bait and Switch" marketing.
+**Market Surveillance:** Instead of searching for ads manually, the regulator can use a crawler to scan hashes on live websites. Live Verify ensures the ads on the screen match the "Approved Copy" in the firm's compliance files, stopping "Bait and Switch" marketing.
 
 **Consumers / Retail Investors**
 **Scam Prevention:** A person sees an "Amazing Crypto Deal" on social media. They scan the verified hash on the ad. If it returns **"NOT FOUND"** or **"DOMAIN MISMATCH,"** they know the ad is a scam and can avoid a total loss of funds.

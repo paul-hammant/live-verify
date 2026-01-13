@@ -14,7 +14,7 @@ In many cities, **Parking Enforcement Officers (PEOs)** have the power to issue 
 
 This authority is a magnet for fraudsters. Scammers pose as officers to extort "instant cash fines" from tourists, or they place **Fake Parking Tickets** on windshields that lead to phishing websites or fraudulent payment portals.
 
-OCR-to-hash allows a driver to scan an officer's ID badge or the verification line on a physical ticket to confirm: **"Is this a legitimate municipal official, and is this ticket recorded in the city's official ledger?"**
+Live Verify allows a driver to scan an officer's ID badge or the verification line on a physical ticket to confirm: **"Is this a legitimate municipal official, and is this ticket recorded in the city's official ledger?"**
 
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #444; border-radius: 10px; background: #fff; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
   <div style="background: #efcc00; color: #000; padding: 15px; display: flex; align-items: center; border-bottom: 2px solid #444;">

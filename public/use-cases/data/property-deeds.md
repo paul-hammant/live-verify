@@ -16,7 +16,7 @@ In most jurisdictions, a deed is not fully effective against third parties until
 
 **"Title Theft"** is a rapidly growing fraud where criminals forge a homeowner's signature on a "Quitclaim Deed," notarize it with a fake stamp, and record it at the county office. They then use this "Verified" (but fraudulent) record to take out massive home equity loans or even "sell" the house to an unsuspecting buyer.
 
-OCR-to-hash binds the **Grantor/Grantee names and the Legal Description** to the County Recorder's domain. A fraudulent deed would generate a hash that doesn't exist in the county's "Verified Index," instantly alerting title companies and banks to the scam.
+Live Verify binds the **Grantor/Grantee names and the Legal Description** to the County Recorder's domain. A fraudulent deed would generate a hash that doesn't exist in the county's "Verified Index," instantly alerting title companies and banks to the scam.
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #000; background: #fff; padding: 0; box-shadow: 5px 5px 15px rgba(0,0,0,0.1);">
   <div style="padding: 40px;">
@@ -124,11 +124,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Blockchain (NFTs)
 
-| Feature | OCR-to-Hash | Blockchain (NFT) | Traditional Paper |
+| Feature | Live Verify | Blockchain (NFT) | Traditional Paper |
 | :--- | :--- | :--- | :--- |
 | **Legal Standing** | **High.** Binds to existing laws. | **Low.** Courts don't yet recognize NFTs as deeds. | **Standard.** |
 | **Accessibility** | **Universal.** Any smartphone. | **Technical.** Requires crypto-wallets. | **Visual.** |
 | **Implementation** | **Cheap.** API over existing DB. | **Expensive.** Requires new legal framework. | **Manual.** |
 | **Trust Anchor** | **The County.** (Elected Official). | **The Network.** (Decentralized). | **The Paper.** |
 
-**Why OCR wins here:** The "Recorder's Counter" reality. Real estate law is 500 years old. It moves slowly. OCR-to-hash provides **"Digital Integrity for Paper Reality"**—it gives the benefits of a blockchain (immutability and verification) without requiring the world to rewrite its property laws or abandon the physical deed.
+**Why Live Verify wins here:** The "Recorder's Counter" reality. Real estate law is 500 years old. It moves slowly. Live Verify provides **"Digital Integrity for Paper Reality"**—it gives the benefits of a blockchain (immutability and verification) without requiring the world to rewrite its property laws or abandon the physical deed.

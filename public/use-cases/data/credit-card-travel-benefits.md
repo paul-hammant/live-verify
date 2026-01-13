@@ -77,7 +77,7 @@ The **Cardholder (Traveler)** benefits from verification.
 **Liability Transfer:** Instantly verifying the "Primary" vs "Secondary" status of the card insurance. If the card provides primary coverage, the rental agency knows they won't have to chase the customer's personal auto insurer.
 
 **Travel Insurance Adjusters**
-**COB (Coordination of Benefits):** When a traveler files a claim with their private insurer, the adjuster verifies the "Credit Card Benefits" first. OCR-to-hash ensures the credit card payout isn't being "double-claimed."
+**COB (Coordination of Benefits):** When a traveler files a claim with their private insurer, the adjuster verifies the "Credit Card Benefits" first. Live Verify ensures the credit card payout isn't being "double-claimed."
 
 **Hotels / Airlines**
 **Service Recovery:** Verifying that a passenger's "Travel Protection" will cover the bill before providing premium services during a disruption.
@@ -122,11 +122,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Calling the Number
 
-| Feature | OCR-to-Hash | Calling the 800 Number | In-App Dashboard |
+| Feature | Live Verify | Calling the 800 Number | In-App Dashboard |
 | :--- | :--- | :--- | :--- |
 | **User Experience** | **Instant.** 5-second scan at the counter. | **Slow.** Often takes 10-15 mins on hold. | **Hard.** Hard to share your screen with an agent. |
 | **Trust Anchor** | **Domain-Bound.** Trust the Bank. | **Voice.** Prone to social engineering. | **System-Bound.** |
 | **Availability** | **24/7.** Works even if phone lines are busy. | **Restricted.** Some benefit desks are M-F. | **N/A.** |
 | **Integrity** | **Cryptographic.** Binds every limit and term. | **Human.** Errors in reading the file. | **Vulnerable.** |
 
-**Why OCR wins here:** The "Front Desk Conflict." Rental agents are trained to sell insurance. They are aggressive. A customer trying to "Find the PDF in my email" or "Call the bank" while 10 people wait behind them will usually give up and pay. OCR-to-hash turns the **Coverage Letter** into a high-speed "Authority Token" that ends the argument instantly.
+**Why Live Verify wins here:** The "Front Desk Conflict." Rental agents are trained to sell insurance. They are aggressive. A customer trying to "Find the PDF in my email" or "Call the bank" while 10 people wait behind them will usually give up and pay. Live Verify turns the **Coverage Letter** into a high-speed "Authority Token" that ends the argument instantly.

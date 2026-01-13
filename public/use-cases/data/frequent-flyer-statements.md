@@ -77,7 +77,7 @@ The **AAdvantage Member** (second party) receives the mileage statement from the
 The member (second party) may hand the verified document to various third parties:
 
 **Rival Airlines (Loyalty Depts)**
-**Status Match Vetting:** Instantly verifying the "Status Statements" uploaded by customers during marketing campaigns. OCR-to-hash ensures that the "Elite" customers being lured away are actually who they claim to be.
+**Status Match Vetting:** Instantly verifying the "Status Statements" uploaded by customers during marketing campaigns. Live Verify ensures that the "Elite" customers being lured away are actually who they claim to be.
 
 **Tax Authorities / Divorce Lawyers**
 **Asset Valuation:** Frequent flyer miles for a "Million Miler" can be worth $50,000+. Verification ensures that mileage assets are accurately reported during asset division or business expense audits.
@@ -126,11 +126,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Loyalty Apps
 
-| Feature | OCR-to-Hash | Airline Mobile App | Scanned PDF Statement |
+| Feature | Live Verify | Airline Mobile App | Scanned PDF Statement |
 | :--- | :--- | :--- | :--- |
 | **User Privacy** | **High.** Share only the status/balance. | **Low.** Showing the app reveals full travel history. | **Vulnerable.** |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Airline. | **System-Bound.** | **Zero.** Easily forged. |
 | **Interoperability** | **High.** Verified PDF works for status-matching. | **Zero.** Hard to "share" app data with a rival. | **Universal.** |
 | **Freshness** | **Real-time.** Shows if account is suspended. | **Live.** | **Static.** |
 
-**Why OCR wins here:** The "Switching Cost." Airlines want to make it hard for you to leave. Their apps are designed to keep your data in *their* walled garden. OCR-to-hash turns the **Static Statement** into a portable, trusted "Reputation Token" that the traveler owns and can use to prove their value to any competitor or partner.
+**Why Live Verify wins here:** The "Switching Cost." Airlines want to make it hard for you to leave. Their apps are designed to keep your data in *their* walled garden. Live Verify turns the **Static Statement** into a portable, trusted "Reputation Token" that the traveler owns and can use to prove their value to any competitor or partner.

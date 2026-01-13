@@ -118,11 +118,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. MIB Group (Medical Information Bureau)
 
-| Feature | OCR-to-Hash | MIB Group (Industry DB) | Scanned PDF Notice |
+| Feature | Live Verify | MIB Group (Industry DB) | Scanned PDF Notice |
 | :--- | :--- | :--- | :--- |
 | **User Access** | **Universal.** Beneficiaries and funeral homes. | **Restricted.** Only for insurance companies. | **Instant.** |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Carrier. | **Data-Bound.** Trust the aggregator. | **Zero.** Easily forged. |
 | **Timeliness** | **Real-time.** Shows approval *today*. | **Laggy.** Depends on batch uploads. | **Static.** |
 | **Integrity** | **Binds Content.** Protects the $ amount. | **None.** For the specific notice. | **Vulnerable.** |
 
-**Why OCR wins here:** The "Time of Need" gap. Life insurance data is notoriously siloed. When a person dies, the family needs to move fast. They don't have access to the carrier's internal DB. OCR-to-hash turn the **Static Approval Letter** into a live digital anchor, ensuring that "Peace of Mind" is a cryptographically verified fact.
+**Why Live Verify wins here:** The "Time of Need" gap. Life insurance data is notoriously siloed. When a person dies, the family needs to move fast. They don't have access to the carrier's internal DB. Live Verify turn the **Static Approval Letter** into a live digital anchor, ensuring that "Peace of Mind" is a cryptographically verified fact.

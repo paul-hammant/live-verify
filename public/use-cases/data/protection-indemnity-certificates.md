@@ -67,7 +67,7 @@ The **Shipowner / Manager** benefits from verification.
 ## Third-Party Use
 
 **Port State Control (PSC) Inspectors**
-**Substandard Ship Detection:** Thousands of ships use fake "non-IG" club certificates to hide poor maintenance. OCR-to-hash connects the inspector directly to the legitimate P&I club's domain, allowing them to instantly identify and "Arrest" ships with fraudulent insurance.
+**Substandard Ship Detection:** Thousands of ships use fake "non-IG" club certificates to hide poor maintenance. Live Verify connects the inspector directly to the legitimate P&I club's domain, allowing them to instantly identify and "Arrest" ships with fraudulent insurance.
 
 **Maritime Lawyers (Admiralty)**
 **Arrest Prevention:** If a ship is involved in a collision, the P&I club issues a verified "Letter of Undertaking" (LOU). The victim's lawyer scans the hash to ensure the LOU is an authentic commitment from a solvent club, preventing the need to physically seize (arrest) the ship.

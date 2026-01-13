@@ -121,10 +121,10 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Airline Apps
 
-| Feature | OCR-to-Hash | Airline Mobile App | Paper PIR |
+| Feature | Live Verify | Airline Mobile App | Paper PIR |
 | :--- | :--- | :--- | :--- |
 | **Shareability** | **High.** Can be sent to any insurance company. | **Low.** Cannot share "App access" with an insurer. | **High.** But untrusted. |
 | **Integrity** | **Cryptographic.** Binds the claim details. | **Dynamic.** Status changes in-app. | **Zero.** Easily forged. |
 | **Offline Proof** | **Strong.** The paper/PDF is the anchor. | **None.** No app access = no proof. | **Medium.** |
 
-**Why OCR wins here:** The Insurance Bridge. Airline apps are "Walled Gardens." While they are great for the passenger, they are useless for the **Travel Insurer** who needs a trusted artifact to justify a payout. OCR-to-hash turns the airline's internal record into a portable, verifiable document that bridges the gap between the airline and the insurance industry.
+**Why Live Verify wins here:** The Insurance Bridge. Airline apps are "Walled Gardens." While they are great for the passenger, they are useless for the **Travel Insurer** who needs a trusted artifact to justify a payout. Live Verify turns the airline's internal record into a portable, verifiable document that bridges the gap between the airline and the insurance industry.

@@ -14,7 +14,7 @@ In child welfare and adult protective services, the "Home Visit" is a critical a
 
 This high-stakes authority is a primary weapon for criminals. Scammers pose as "Social Workers" to gain entry for home invasion, robbery, or in extreme cases, **Child Abduction.** Families are often too scared or intimidated to challenge the person's authority.
 
-OCR-to-hash allows a family to scan the worker's ID card to verify: **"Is this a legitimate government employee, and are they currently authorized to conduct field investigations?"**
+Live Verify allows a family to scan the worker's ID card to verify: **"Is this a legitimate government employee, and are they currently authorized to conduct field investigations?"**
 
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #2e7d32; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
   <div style="background: #2e7d32; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">

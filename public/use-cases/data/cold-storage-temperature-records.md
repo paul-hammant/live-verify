@@ -80,7 +80,7 @@ The **Freight Forwarder** or **Consignee** benefits from verification.
 **GDP Audits:** During a "Good Distribution Practice" (GDP) inspection, regulators can scan random archived reports. "Verified by Arctic Logistics" proves the data hasn't been "smoothed" or edited to hide temperature failures.
 
 **Cargo Insurers**
-**Claim Settlement:** If a shipment is rejected for "Excursion," the insurer verifies the original sensor data. OCR-to-hash prevents the carrier from deleting the 2-hour window where the refrigerator failed.
+**Claim Settlement:** If a shipment is rejected for "Excursion," the insurer verifies the original sensor data. Live Verify prevents the carrier from deleting the 2-hour window where the refrigerator failed.
 
 ## Verification Architecture
 
@@ -122,11 +122,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. IoT Dashboards
 
-| Feature | OCR-to-Hash | IoT Cloud (Live Tracking) | Paper Strip Chart |
+| Feature | Live Verify | IoT Cloud (Live Tracking) | Paper Strip Chart |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the sensor data. | **Platform-Bound.** Trust the IoT vendor. | **Visual.** Trusted only via stamp. |
 | **Integrity** | **Cryptographic.** Protects the numbers. | **High.** Direct DB access. | **Zero.** Easily forged. |
 | **Interoperability** | **Universal.** PDFs work across all systems. | **Low.** Requires "Integrating" 10 different IoT platforms. | **Universal.** |
 | **Retention** | **7-10 Years.** Archival text. | **Ephemeral.** Data often deleted after 12 months. | **Durable.** |
 
-**Why OCR wins here:** The "Audit Gap." While live IoT tracking is great during the trip, 90% of verification happens **after the fact** during audits or claims. OCR-to-hash turns the **Static Report PDF** into an immutable digital anchor that is much more durable and shareable than a "Live Link" to a temporary IoT dashboard.
+**Why Live Verify wins here:** The "Audit Gap." While live IoT tracking is great during the trip, 90% of verification happens **after the fact** during audits or claims. Live Verify turns the **Static Report PDF** into an immutable digital anchor that is much more durable and shareable than a "Live Link" to a temporary IoT dashboard.

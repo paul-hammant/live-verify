@@ -12,7 +12,7 @@ furtherDerivations: 1
 
 A **Professional License** is the legal authorization to practice in a high-stakes field like medicine, law, engineering, or teaching. These licenses are the primary defense against "Unlicensed Practice," which can lead to medical malpractice, legal incompetence, or structural failures.
 
-The problem is that physical licenses—especially the wallet-sized cards carried by practitioners—are easily forged. Even a real card can't show if a license was revoked yesterday for misconduct. OCR-to-hash allows a patient, client, or employer to scan the practitioner's ID card to verify: **"Is this person currently authorized to practice in this state, and are there any active restrictions on their license?"**
+The problem is that physical licenses—especially the wallet-sized cards carried by practitioners—are easily forged. Even a real card can't show if a license was revoked yesterday for misconduct. Live Verify allows a patient, client, or employer to scan the practitioner's ID card to verify: **"Is this person currently authorized to practice in this state, and are there any active restrictions on their license?"**
 
 <div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="prof">[</span>MEDICAL BOARD

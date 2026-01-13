@@ -64,7 +64,7 @@ The **Policyholder (Insured)** benefits from verification.
 ## Third-Party Use
 
 **Mortgage Lenders / Private Banks**
-**Asset Integrity:** Verifying the existence and value of permanent life insurance. OCR-to-hash ensures the borrower hasn't "Edited" a $10,000 term policy to look like a $1M whole-life asset to inflate their net worth.
+**Asset Integrity:** Verifying the existence and value of permanent life insurance. Live Verify ensures the borrower hasn't "Edited" a $10,000 term policy to look like a $1M whole-life asset to inflate their net worth.
 
 **Divorce / Settlement Attorneys**
 **Valuation Proof:** Instantly verifying the "Cash Surrender Value" of a policy during asset division in a marital dissolution.
@@ -114,11 +114,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. MIB Group (Industry DB)
 
-| Feature | OCR-to-Hash | MIB Group (Industry Exchange) | Scanned PDF |
+| Feature | Live Verify | MIB Group (Industry Exchange) | Scanned PDF |
 | :--- | :--- | :--- | :--- |
 | **User Access** | **Universal.** Policyholders and banks. | **Restricted.** Only for insurance companies. | **Instant.** |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Carrier. | **Data-Bound.** Trust the aggregator. | **Zero.** Easily forged. |
 | **Retention** | **50+ Years.** Archival text. | **Ephemeral.** Records often age out. | **Durable.** |
 | **Integrity** | **Cryptographic.** Binds the *Beneficiary*. | **Vague.** Often only shows "Coverage exists." | **Vulnerable.** |
 
-**Why OCR wins here:** The "Lifetime" reality. Life insurance is a 50-year asset. Digital portals change every 5 years. OCR-to-hash turns the **Static Paper Policy** (which the owner keeps in a safe) into a permanent, verifiable financial link that survives the death of IT systems and the changing of brokers.
+**Why Live Verify wins here:** The "Lifetime" reality. Life insurance is a 50-year asset. Digital portals change every 5 years. Live Verify turns the **Static Paper Policy** (which the owner keeps in a safe) into a permanent, verifiable financial link that survives the death of IT systems and the changing of brokers.

@@ -70,7 +70,7 @@ The **Real Estate Investor (Insured)** benefits from verification.
 ## Third-Party Use
 
 **Mortgage Lenders (Cross-Border)**
-**Risk Mitigation:** Instantly verifying that the "Title Policy" in the closing package isn't a fake PDF created by a shell company. OCR-to-hash connects the bank's compliance team directly to the underwriter's domain, stopping "Phantom Collateral" fraud.
+**Risk Mitigation:** Instantly verifying that the "Title Policy" in the closing package isn't a fake PDF created by a shell company. Live Verify connects the bank's compliance team directly to the underwriter's domain, stopping "Phantom Collateral" fraud.
 
 **Foreign Notaries / Lawyers**
 **Legalization:** Confirming the authenticity of an international insurance policy before performing a local land-registry transfer.
@@ -118,11 +118,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Local Land Registries
 
-| Feature | OCR-to-Hash | Local Land Registry (e.g., France) | Scanned PDF Policy |
+| Feature | Live Verify | Local Land Registry (e.g., France) | Scanned PDF Policy |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Underwriter. | **Gov-Bound.** (In local language). | **Zero.** Easily forged. |
 | **Interoperability** | **High.** Verified PDF works for a US Bank. | **Low.** US banks can't easily parse French registries. | **Universal.** |
 | **Financial Backing** | **Direct.** Proves the $25M promise. | **None.** A registry only proves *who* owns it. | **Vulnerable.** |
 | **Speed** | **Instant.** 5-second scan. | **Very Slow.** Often takes weeks for a "Title Search." | **Instant.** |
 
-**Why OCR wins here:** The "Translation of Trust." A US bank doesn't trust a paper from a small town in rural Italy. But they **do trust** `firstam.com`. OCR-to-hash turns the **Local Property Data** into a verified, US-backed financial artifact that can be instantly audited by anyone, anywhere in the world.
+**Why Live Verify wins here:** The "Translation of Trust." A US bank doesn't trust a paper from a small town in rural Italy. But they **do trust** `firstam.com`. Live Verify turns the **Local Property Data** into a verified, US-backed financial artifact that can be instantly audited by anyone, anywhere in the world.

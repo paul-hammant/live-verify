@@ -1,5 +1,5 @@
 /*
-    Copyright (C) 2025, Paul Hammant
+    Copyright (C) 2025-2026, Paul Hammant
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU Affero General Public License as
@@ -14,6 +14,12 @@
     You should have received a copy of the GNU Affero General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
+
+// This browser extension is a proof-of-concept / stopgap until browser vendors
+// (Chrome, Safari, Firefox) build verify: URL recognition natively into their
+// browsers alongside Live Text / Camera Text features. Once that happens, this
+// extension becomes obsolete. The native implementations will make their own
+// decisions about storage, history, and UX.
 
 import { normalizeText, sha256 } from './shared/normalize.js';
 import {

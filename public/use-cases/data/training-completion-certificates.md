@@ -71,7 +71,7 @@ The **Employee (Trainee)** benefits from verification.
 **On-Site Vetting:** Before allowing a sub-contractor to operate a crane or enter a confined space, the foreman scans their verified hash. This ensures the worker is actually trained for that specific risk, protecting the company from multi-million dollar liability.
 
 **Regulatory Inspectors (OSHA / HSE)**
-**Audit Integrity:** During a surprise factory inspection, the agent scans random certificates on the breakroom wall. OCR-to-hash ensures the company isn't "Fabricating" records to hide a lack of training, stopping "Paper Compliance" fraud.
+**Audit Integrity:** During a surprise factory inspection, the agent scans random certificates on the breakroom wall. Live Verify ensures the company isn't "Fabricating" records to hide a lack of training, stopping "Paper Compliance" fraud.
 
 **Insurance Risk Managers**
 **Premium Auditing:** Verifying that 100% of a workforce has verified, active "Safety Training" before renewing a workers' compensation policy.

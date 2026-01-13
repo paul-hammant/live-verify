@@ -14,7 +14,7 @@ A **Title Insurance Policy** is a specialized contract that protects a property 
 
 Unlike other insurance that covers *future* events (like fire), title insurance covers *past* errors. It is the "Warranty of Ownership."
 
-**"Policy Scrubbing"** is a sophisticated fraud where a seller or shady developer "edits" a title policy PDF to remove **Schedule B Exceptions**. For example, they might delete a line showing a $50,000 IRS tax lien or a "Shared Driveway" easement. They then present this "Clean" policy to a buyer or a bank to close a sale illegally. OCR-to-hash binds the **Policy Number and the specific list of Exceptions** to the underwriter's domain.
+**"Policy Scrubbing"** is a sophisticated fraud where a seller or shady developer "edits" a title policy PDF to remove **Schedule B Exceptions**. For example, they might delete a line showing a $50,000 IRS tax lien or a "Shared Driveway" easement. They then present this "Clean" policy to a buyer or a bank to close a sale illegally. Live Verify binds the **Policy Number and the specific list of Exceptions** to the underwriter's domain.
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Times New Roman', Georgia, serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 30px;">
@@ -121,11 +121,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Physical Policy Jackets
 
-| Feature | OCR-to-Hash | Physical Jacket (Folder) | Online Public Records |
+| Feature | Live Verify | Physical Jacket (Folder) | Online Public Records |
 | :--- | :--- | :--- | :--- |
 | **Tamper Detection** | **High.** Protects the "Exceptions" text. | **Zero.** The paper inside the folder is easily swapped. | **Data-Only.** |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Underwriter. | **Brand-Bound.** Trust the logo. | **Gov-Bound.** |
 | **Speed** | **Instant.** 5-second scan. | **Manual.** requires deep reading. | **Slow.** requires search. |
 | **Freshness** | **Real-time.** Shows "Claim" status. | **Zero.** Paper is a snapshot. | **N/A.** |
 
-**Why OCR wins here:** The "Schedule B" reality. Title policies are 30-page documents filled with fine print. No one reads them all. OCR-to-hash turns the **Schedule A/B Summary** into a live, trusted digital proof, ensuring that "Clear Title" is a cryptographically verified fact at every real estate closing.
+**Why Live Verify wins here:** The "Schedule B" reality. Title policies are 30-page documents filled with fine print. No one reads them all. Live Verify turns the **Schedule A/B Summary** into a live, trusted digital proof, ensuring that "Clear Title" is a cryptographically verified fact at every real estate closing.

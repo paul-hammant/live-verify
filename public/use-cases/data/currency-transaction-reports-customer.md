@@ -84,7 +84,7 @@ The **Bank Customer** benefits from verification.
 
 **The "Structuring" Fraud Problem**
 
-- **Report Deletion:** A corrupt bank employee taking a bribe to "Delete" a CTR from the federal system after the customer leaves the branch. OCR-to-hash prevents this by making the customer's paper receipt a verified link to the bank's domain record.
+- **Report Deletion:** A corrupt bank employee taking a bribe to "Delete" a CTR from the federal system after the customer leaves the branch. Live Verify prevents this by making the customer's paper receipt a verified link to the bank's domain record.
 - **Amount Tampering:** A customer editing their $50,000 CTR receipt to read $5,000 to hide the true scale of a cash transaction from their spouse or an auditor.
 - **Fake Receipts:** Fraudsters creating fake "CTR Filed" papers to trick a landlord or lender into thinking their illegal cash has been "cleansed" by government reporting.
 
@@ -122,11 +122,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Internal Bank Logs
 
-| Feature | OCR-to-Hash | Bank Internal Log | Paper Receipt |
+| Feature | Live Verify | Bank Internal Log | Paper Receipt |
 | :--- | :--- | :--- | :--- |
 | **User Access** | **Universal.** Customer can show anyone. | **Zero.** Customers can't see the bank's AML logs. | **Instant.** |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Bank. | **System-Bound.** | **Zero.** Easily forged. |
 | **Integrity** | **Cryptographic.** Binds Name + Amount. | **High.** Direct DB. | **Vulnerable.** |
 | **Portability** | **High.** Verified PDF works for any 3rd party. | **None.** Requires bank intervention. | **High.** |
 
-**Why OCR wins here:** The "External Proof." A bank's internal log is useless to a customer who needs to prove their legitimacy to a third party (like an IRS auditor or a lawyer). OCR-to-hash turns the **Bank's Internal Truth** into a **Portable Legal Artifact** that the customer can use for their own protection.
+**Why Live Verify wins here:** The "External Proof." A bank's internal log is useless to a customer who needs to prove their legitimacy to a third party (like an IRS auditor or a lawyer). Live Verify turns the **Bank's Internal Truth** into a **Portable Legal Artifact** that the customer can use for their own protection.

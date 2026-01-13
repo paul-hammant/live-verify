@@ -71,7 +71,7 @@ The **Farmer / Farm Manager** benefits from verification.
 **Automatic Rejection:** Retailer systems can automatically scan the hashes of incoming shipments. If a log returns **"REI ACTIVE"** (meaning the crop was harvested too soon after spraying), the system rejects the shipment instantly to protect consumer health.
 
 **Environmental Regulators**
-**Remote Audit:** Instead of driving to 500 farms, an inspector can request verified hashes of all "Atrazine" applications in a watershed. OCR-to-hash ensures the paper records in the farm office match the digital truth reported to the state.
+**Remote Audit:** Instead of driving to 500 farms, an inspector can request verified hashes of all "Atrazine" applications in a watershed. Live Verify ensures the paper records in the farm office match the digital truth reported to the state.
 
 **Workers' Rights Groups**
 **Safety Verification:** Farmworkers can scan the placard at the edge of a field. Verification ensures they aren't being forced to enter a "Red Zone" before the chemical has safely dissipated.

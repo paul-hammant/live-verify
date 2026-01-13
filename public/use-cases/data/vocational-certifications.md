@@ -72,7 +72,7 @@ The **Skilled Worker (Graduate)** benefits from verification.
 **Liability Control:** Before allowing a sub-contractor's crew into a high-pressure pipe zone, the manager scans their hashes. Verification ensures every worker is actually trained for that specific risk, protecting the GC from multi-million dollar "un-skilled labor" lawsuits.
 
 **Safety Regulators (OSHA / HSE)**
-**Audit Integrity:** During a surprise site inspection, the agent scans random certificates in the job trailer. OCR-to-hash ensures the company isn't "Fabricating" training to hide a lack of qualified staff.
+**Audit Integrity:** During a surprise site inspection, the agent scans random certificates in the job trailer. Live Verify ensures the company isn't "Fabricating" training to hide a lack of qualified staff.
 
 **Labor Unions**
 **Pension & Dues Vetting:** Verifying that a worker's "Hours Completed" matches the digital record before assigning them to a higher pay-tier.

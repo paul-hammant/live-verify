@@ -71,7 +71,7 @@ The **Supplier (The Payee)** benefits from verification.
 ## Third-Party Use
 
 **Bank Auditors / Regulators**
-**Systemic Risk Audit:** Verifying that the bank's "Trade Finance" portfolio is backed by authentic, buyer-verified assets. OCR-to-hash ensures the bank isn't funding "Phantom Invoices" created by a collusive supplier and employee.
+**Systemic Risk Audit:** Verifying that the bank's "Trade Finance" portfolio is backed by authentic, buyer-verified assets. Live Verify ensures the bank isn't funding "Phantom Invoices" created by a collusive supplier and employee.
 
 **Credit Rating Agencies (Moody's / S&P)**
 **Liquidity Analysis:** Verifying the "Financing Pipeline" of a corporate buyer to ensure their "Accounts Payable" are accurately reported and haven't been hidden using off-balance-sheet factoring.

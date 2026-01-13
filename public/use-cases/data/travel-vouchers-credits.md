@@ -85,7 +85,7 @@ The **Voucher Holder (Traveler)** benefits from verification.
 **Merchant Vetting:** Marketplaces can require sellers to provide a verified hash. This allows the platform to automatically delist vouchers that reach **"REDEEMED"** status, protecting buyers from "Double-Spend" fraud.
 
 **Corporate Travel Desks**
-**Asset Recovery:** Large companies often have thousands of "Unused Credits" from cancelled employee trips. OCR-to-hash allows them to bulk-verify the value of their "Voucher Portfolio" for tax and accounting purposes.
+**Asset Recovery:** Large companies often have thousands of "Unused Credits" from cancelled employee trips. Live Verify allows them to bulk-verify the value of their "Voucher Portfolio" for tax and accounting purposes.
 
 **Consular Officers**
 **Financial Means Proof:** Travelers applying for a visa can use verified "Future Credits" as part of their proof of financial ability to travel.

@@ -141,7 +141,7 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. LinkedIn / Background Checks
 
-| Feature | OCR-to-Hash | LinkedIn | Background Check (Checkr/Hireright) |
+| Feature | Live Verify | LinkedIn | Background Check (Checkr/Hireright) |
 | :--- | :--- | :--- | :--- |
 | **Trust** | **Cryptographic.** Bound to company domain. | **Social.** Self-reported; zero verification for internships. | **High.** But slow and expensive. |
 | **Speed** | **Instant.** Scan and see "Verified by techno-dynamic.com." | **N/A.** Just looking at a profile. | **Slow.** Takes 3-7 days to call the company. |

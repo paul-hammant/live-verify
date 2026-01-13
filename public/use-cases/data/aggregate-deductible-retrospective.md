@@ -128,10 +128,10 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Broker Portals
 
-| Feature | OCR-to-Hash | Broker Portal (Marsh/Aon) |
+| Feature | Live Verify | Broker Portal (Marsh/Aon) |
 | :--- | :--- | :--- |
 | **Cross-Carrier** | **Universal.** Works for any carrier document. | **Siloed.** Portals usually only show data for *current* placements. Hard to get historical data from 5 years ago/different broker. |
 | **M&A Access** | **Easy.** Seller sends verified PDFs to Data Room. Buyer verifies. | **Hard.** Buyer cannot access Seller's private broker portal without complex permissioning. |
 | **Immutability** | **High.** Hash proves the document hasn't changed. | **Medium.** Portal data changes dynamically; hard to prove "what was the loss number on Dec 31?" |
 
-**Why OCR wins here:** M&A transactions and underwriting submissions rely on **static documents** (snapshots in time) exchanged between parties who don't share system access. "Here is our loss run as of Jan 1." OCR-to-hash makes that static snapshot trustworthy without requiring the recipient to log in to the sender's insurance portal.
+**Why Live Verify wins here:** M&A transactions and underwriting submissions rely on **static documents** (snapshots in time) exchanged between parties who don't share system access. "Here is our loss run as of Jan 1." Live Verify makes that static snapshot trustworthy without requiring the recipient to log in to the sender's insurance portal.

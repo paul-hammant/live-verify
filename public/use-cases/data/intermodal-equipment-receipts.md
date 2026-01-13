@@ -75,7 +75,7 @@ The **Trucking Company / Driver** benefits from verification.
 ## Third-Party Use
 
 **Ocean Carriers (Steamship Lines)**
-**Maintenance Audit:** Instantly verifying the condition reports from 100+ different global terminals. OCR-to-hash allows the carrier to build a digital history of every asset's damage, identifying "Repeat Offender" truckers who consistently damage containers.
+**Maintenance Audit:** Instantly verifying the condition reports from 100+ different global terminals. Live Verify allows the carrier to build a digital history of every asset's damage, identifying "Repeat Offender" truckers who consistently damage containers.
 
 **Marine Insurers**
 **Claim Adjudication:** Verifying the "Point of Damage." If a container is reported damaged at the warehouse, the insurer checks the verified EIR from the port. If the EIR was "Clean," the liability falls on the trucker.
@@ -123,11 +123,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. EDI Messaging (322)
 
-| Feature | OCR-to-Hash | EDI 322 (Gate Event) | Paper EIR |
+| Feature | Live Verify | EDI 322 (Gate Event) | Paper EIR |
 | :--- | :--- | :--- | :--- |
 | **User Access** | **Universal.** Any driver or local shop. | **Restricted.** Requires complex B2B IT setup. | **Instant.** |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Terminal. | **System-Bound.** | **Zero.** Easily forged. |
 | **Integrity** | **Binds Damage Codes.** Protects the text. | **Data-Only.** | **Vulnerable.** |
 | **Offline Proof** | **Strong.** The paper is the anchor. | **None.** Requires server access. | **Medium.** |
 
-**Why OCR wins here:** The "Gate Moment." Terminals are high-pressure bottlenecks. When a driver disputes a damage code with a gate clerk, they are looking at a piece of paper or a handheld screen. They don't have access to the back-end EDI logs. OCR-to-hash turns the **Trucker's Receipt** into a live, trusted safety link that provides "Port-Grade" security in seconds.
+**Why Live Verify wins here:** The "Gate Moment." Terminals are high-pressure bottlenecks. When a driver disputes a damage code with a gate clerk, they are looking at a piece of paper or a handheld screen. They don't have access to the back-end EDI logs. Live Verify turns the **Trucker's Receipt** into a live, trusted safety link that provides "Port-Grade" security in seconds.

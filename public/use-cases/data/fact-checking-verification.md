@@ -121,11 +121,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Community Notes (X)
 
-| Feature | OCR-to-Hash | Community Notes (Social) | Blockchains (Numbers Protocol) |
+| Feature | Live Verify | Community Notes (Social) | Blockchains (Numbers Protocol) |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Fact-Checker. | **Social-Bound.** Trust the "Crowd" consensus. | **Byzantine.** Trust the decentralized ledger. |
 | **Authority** | **Expert.** Relies on professional ethics. | **Democratic.** Prone to mob-rule/bias. | **Technological.** |
 | **Integrity** | **Binds Text.** Protects every comma. | **Vague.** Only annotates the link. | **High.** But requires technical wallet. |
 | **Speed** | **Instant.** Verified at publication. | **Slow.** Takes hours/days for a note to appear. | **Variable.** |
 
-**Why OCR wins here:** Expert Accountability. Community Notes are great for context, but they are often biased by the loudest voices. OCR-to-hash turns the **Professional Fact-Checker's Opinion** into a cryptographically anchored fact that survives long after the social media "Outrage Cycle" has moved on.
+**Why Live Verify wins here:** Expert Accountability. Community Notes are great for context, but they are often biased by the loudest voices. Live Verify turns the **Professional Fact-Checker's Opinion** into a cryptographically anchored fact that survives long after the social media "Outrage Cycle" has moved on.

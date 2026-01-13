@@ -108,12 +108,12 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Email / Portals
 
-| Feature | OCR-to-Hash | Grant Portals (Fluxx/SmartSimple) | Email |
+| Feature | Live Verify | Grant Portals (Fluxx/SmartSimple) | Email |
 | :--- | :--- | :--- | :--- |
 | **Shareability** | **High.** Send the PDF to anyone (bank, donor). | **Low.** Login required. Hard to share access with a bank. | **Medium.** Can forward, but easy to fake. |
 | **Permanence** | **High.** Independent of portal access. | **Medium.** What if you lose your login? | **Medium.** Buried in inboxes. |
 | **Trust** | **Cryptographic.** Mathematical certainty. | **Siloed.** Trust depends on portal security. | **Zero.** Easily spoofed. |
 
-**Why OCR wins here:**
+**Why Live Verify wins here:**
 Grant portals are great for *managing* the application, but terrible for *sharing* the success. You can't give your banker a login to your Fluxx portal. You *can* give them a verified PDF Award Letter.
 

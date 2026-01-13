@@ -125,11 +125,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Public Databases (FLOCERT)
 
-| Feature | OCR-to-Hash | FLOCERT Public Search | Static Logo |
+| Feature | Live Verify | FLOCERT Public Search | Static Logo |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Standard Body. | **Database.** Direct from source. | **Zero.** Just a JPEG. |
 | **Integrity** | **Binds Audit.** Protects the status. | **Data-Only.** Doesn't verify the paper. | **Vulnerable.** |
 | **Speed** | **Instant.** Scan at the point of sale. | **Slow.** Requires typing FLO ID and finding record. | **N/A.** |
 | **Hardware** | **Universal.** Any smartphone camera. | **Technical.** Requires laptop/dedicated search. | **Visual.** |
 
-**Why OCR wins here:** The "Supermarket Aisle" reality. Consumers decide to buy ethical products in seconds. They won't navigate a complex B2B database like FLOCERT. OCR-to-hash turns the **Product Package** into a live, trusted bridge to the farmer's reality, making ethical shopping a "Verified Fact."
+**Why Live Verify wins here:** The "Supermarket Aisle" reality. Consumers decide to buy ethical products in seconds. They won't navigate a complex B2B database like FLOCERT. Live Verify turns the **Product Package** into a live, trusted bridge to the farmer's reality, making ethical shopping a "Verified Fact."

@@ -91,7 +91,7 @@ The **Patient / Caregiver** benefits from verification.
 **Intake Integrity:** When a patient arrives from the hospital, the SNF nurse scans the discharge summary. "Verified by Cedars-Sinai" ensures the instructions weren't "Modified" by a family member to hide a contagious condition or a complex wound care requirement.
 
 **Primary Care Physicians (PCPs)**
-**Continuity of Care:** PCP offices often wait days for hospital faxes. OCR-to-hash allows them to instantly trust the paper instructions brought in by the patient at the 7-day follow-up visit.
+**Continuity of Care:** PCP offices often wait days for hospital faxes. Live Verify allows them to instantly trust the paper instructions brought in by the patient at the 7-day follow-up visit.
 
 **Health Insurers**
 **Outcome Audits:** Verifying that the care plan was actually followed to determine if a re-admission was "Preventable" or not.
@@ -138,11 +138,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Patient Portals / HIEs
 
-| Feature | OCR-to-Hash | Patient Portal (Epic) | Health Info Exchange (HIE) |
+| Feature | Live Verify | Patient Portal (Epic) | Health Info Exchange (HIE) |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Hospital. | **System-Bound.** Requires login. | **Network-Bound.** |
 | **User Access** | **Instant.** Scan the paper in the clinic. | **Slow.** Requires patient to log in and share screen. | **Difficult.** Requires clinical integration. |
 | **Integrity** | **Cryptographic.** Binds the *Text*. | **High.** Direct DB access. | **High.** |
 | **Cross-System** | **Universal.** Works across any health system. | **Siloed.** Hard to share across different vendors. | **Limited.** Regional only. |
 
-**Why OCR wins here:** The "Front Line" reality. Doctors in outpatient clinics don't have time to log into 10 different patient portals or wait for a regional HIE to sync. OCR-to-hash turns the **Physical Discharge Packet** (which the patient always has) into a live, trusted clinical link.
+**Why Live Verify wins here:** The "Front Line" reality. Doctors in outpatient clinics don't have time to log into 10 different patient portals or wait for a regional HIE to sync. Live Verify turns the **Physical Discharge Packet** (which the patient always has) into a live, trusted clinical link.

@@ -121,11 +121,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. USCIS Case Status Online
 
-| Feature | OCR-to-Hash | Case Status Online (Web) | Paper Notice |
+| Feature | Live Verify | Case Status Online (Web) | Paper Notice |
 | :--- | :--- | :--- | :--- |
 | **Integrity** | **Binds Identity.** Proves *Who* is scheduled. | **General.** Often just says "Interview Scheduled." | **Low.** Easily faked. |
 | **Speed** | **Instant.** 5-second scan at the door. | **Slow.** Requires typing 13-char receipt # and solving CAPTCHAs. | **Instant.** |
 | **Field Access** | **High.** Built for security guards. | **Low.** Gov websites are hard to use on handheld devices. | **Universal.** |
 | **Trust Anchor** | **Domain-Bound.** Bound to `uscis.gov`. | **High.** Direct DB access. | **Medium.** |
 
-**Why OCR wins here:** The "Front Door" reality. Security guards standing at a metal detector have 10 seconds to vet a person. They cannot type 13-character receipt numbers into a website for every visitor. OCR-to-hash turns the **Physical Appointment Letter** into a high-speed "Security Badge," ensuring safety and efficiency at federal facilities.
+**Why Live Verify wins here:** The "Front Door" reality. Security guards standing at a metal detector have 10 seconds to vet a person. They cannot type 13-character receipt numbers into a website for every visitor. Live Verify turns the **Physical Appointment Letter** into a high-speed "Security Badge," ensuring safety and efficiency at federal facilities.

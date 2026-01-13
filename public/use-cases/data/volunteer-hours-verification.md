@@ -67,7 +67,7 @@ The **Volunteer (Student/Employee)** benefits from verification.
 ## Third-Party Use
 
 **University Admissions Offices**
-**Integrity Filter:** Thousands of students claim "100+ hours" of service. OCR-to-hash allows the university to instantly verify the truth, protecting the "Fairness" of the admissions process from fraudulent claims.
+**Integrity Filter:** Thousands of students claim "100+ hours" of service. Live Verify allows the university to instantly verify the truth, protecting the "Fairness" of the admissions process from fraudulent claims.
 
 **Criminal Courts / Probation Officers**
 **Mandate Verification:** Verifying that a defendant actually performed the 50 hours of community service required by their plea deal. Verification stops the common "Fake Letterhead" fraud used to bypass sentencing requirements.

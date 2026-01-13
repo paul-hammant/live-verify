@@ -126,11 +126,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Official Letter by Mail
 
-| Feature | OCR-to-Hash | Paper Letter (Standard Mail) | mySocialSecurity Login |
+| Feature | Live Verify | Paper Letter (Standard Mail) | mySocialSecurity Login |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the SSA. | **Physical.** Trust the envelope. | **System-Bound.** |
 | **Integrity** | **Cryptographic.** Binds the $ amount. | **Zero.** Easily forged once opened. | **High.** |
 | **Speed** | **Instant.** 5-second scan. | **Very Slow.** Takes 7-10 days to arrive. | **Slow.** requires user password. |
 | **Availability** | **Universal.** Works for any bank/landlord. | **Low.** People lose their letters. | **Low.** Users hate sharing passwords. |
 
-**Why OCR wins here:** The "Saturday Morning" reality. Most car and home shopping happens when the SSA phone lines are closed. OCR-to-hash turns the **Permanent Paper Record** (or the PDF on the phone) into a live, trusted digital link, ensuring that "Retirement Security" is a cryptographically verified fact at the exact point of sale.
+**Why Live Verify wins here:** The "Saturday Morning" reality. Most car and home shopping happens when the SSA phone lines are closed. Live Verify turns the **Permanent Paper Record** (or the PDF on the phone) into a live, trusted digital link, ensuring that "Retirement Security" is a cryptographically verified fact at the exact point of sale.

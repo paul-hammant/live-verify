@@ -113,11 +113,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. FINRA BrokerCheck (Search)
 
-| Feature | OCR-to-Hash | BrokerCheck Website | Paper Certificate |
+| Feature | Live Verify | BrokerCheck Website | Paper Certificate |
 | :--- | :--- | :--- |
 | **Integrity** | **Binds Identity.** Proves *this* person is the one. | **Live.** Shows status *today*. | **Static.** Easily forged. |
 | **User Experience** | **Seamless.** Scan the badge/paper. | **Hard.** Ask for CRD #, type it, find the right name. | **Manual.** |
 | **Trust** | **Domain-Bound.** Bound to `finra.org`. | **High.** Direct DB access. | **Medium.** |
 | **Disclosures** | **Active Alert.** Can highlight a BARRED status in red. | **Deep.** Requires reading long PDF reports. | **Hidden.** |
 
-**Why OCR wins here:** The "Meeting Moment." Investors are often too polite or embarrassed to ask for a broker's CRD number and look them up on a laptop during a meeting. OCR-to-hash turns the broker's business card or wall certificate into a **low-friction trust anchor** that the client can scan discreetly.
+**Why Live Verify wins here:** The "Meeting Moment." Investors are often too polite or embarrassed to ask for a broker's CRD number and look them up on a laptop during a meeting. Live Verify turns the broker's business card or wall certificate into a **low-friction trust anchor** that the client can scan discreetly.

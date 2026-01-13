@@ -61,7 +61,7 @@ Shows the issuer domain (e.g., the Provider's or Client's Legal Dept) and curren
 
 The **Procurement / Legal Team** benefits from verification.
 
-**Anti-Tampering:** Ensuring that a "Last Minute Change" wasn't snuck into the PDF by a negotiator after the final version was agreed upon. OCR-to-hash turn every page of the 50-page MSA into an immutable digital anchor, protecting the "Liability Caps" and "IP Rights" from silent editing.
+**Anti-Tampering:** Ensuring that a "Last Minute Change" wasn't snuck into the PDF by a negotiator after the final version was agreed upon. Live Verify turn every page of the 50-page MSA into an immutable digital anchor, protecting the "Liability Caps" and "IP Rights" from silent editing.
 
 **Internal Audit:** Proving to the CFO that the contract being paid against is the **Verified Official Version** approved by General Counsel.
 
@@ -116,11 +116,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. CLM Systems (Ironclad)
 
-| Feature | OCR-to-Hash | CLM (Contract Lifecycle Mgmt) | Scanned PDF / Email |
+| Feature | Live Verify | CLM (Contract Lifecycle Mgmt) | Scanned PDF / Email |
 | :--- | :--- | :--- | :--- |
 | **Interoperability** | **Universal.** PDFs work across all companies. | **Low.** Hard to verify if you don't use the same CLM. | **Universal.** |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Party. | **System-Bound.** Trust the vendor. | **Zero.** Easily forged. |
 | **Integrity** | **Binds Content.** Protects the "Fine Print." | **Data-Only.** | **Vulnerable.** |
 | **Cost** | **Low.** Standard web infra. | **Very High.** Enterprise license fees. | **None.** |
 
-**Why OCR wins here:** The "External Audit" reality. Contracts move between organizations. You can't give every potential buyer or insurer a login to your private Ironclad portal. OCR-to-hash turns the **Static Signed PDF** into a portable, cryptographically trusted asset that carries its own proof of truth across organizational borders.
+**Why Live Verify wins here:** The "External Audit" reality. Contracts move between organizations. You can't give every potential buyer or insurer a login to your private Ironclad portal. Live Verify turns the **Static Signed PDF** into a portable, cryptographically trusted asset that carries its own proof of truth across organizational borders.

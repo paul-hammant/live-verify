@@ -73,7 +73,7 @@ The **Mortgage Lender (Insured)** benefits from verification.
 ## Third-Party Use
 
 **Government Sponsored Enterprises (Fannie/Freddie)**
-**Quality Control:** Automatically verifying the LMI status of thousands of loans being delivered for securitization. OCR-to-hash allows the GSEs to skip the manual "Evidence Review" for every single loan file.
+**Quality Control:** Automatically verifying the LMI status of thousands of loans being delivered for securitization. Live Verify allows the GSEs to skip the manual "Evidence Review" for every single loan file.
 
 **Mortgage Servicers**
 **Escrow Reconciliation:** Verifying the "Monthly Premium" amount before paying the insurer, ensuring the borrower isn't being over-charged.
@@ -121,11 +121,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. MERS / Industry Databases
 
-| Feature | OCR-to-Hash | MERS / Industry Portal | Scanned PDF Certificate |
+| Feature | Live Verify | MERS / Industry Portal | Scanned PDF Certificate |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Insurer. | **Data-Bound.** Trust the aggregator. | **Zero.** Easily forged. |
 | **User Access** | **Universal.** Any buyer or auditor can verify. | **Restricted.** Requires paid membership. | **Instant.** |
 | **Timeliness** | **Real-time.** Shows if premium paid *today*. | **Laggy.** Updates take weeks. | **Static.** |
 | **Integrity** | **Cryptographic.** Binds the *LTV Ratio*. | **Data-Only.** | **Vulnerable.** |
 
-**Why OCR wins here:** The "Loan File" reality. Mortgages are traded as "Static Files" (PDFs). Investors and GSEs audit the *content of the file*, not just a line in a database. OCR-to-hash turn the **Static PMI Certificate** into a live, high-authority digital anchor, ensuring the "Credit Safety Net" is as strong as it looks on paper.
+**Why Live Verify wins here:** The "Loan File" reality. Mortgages are traded as "Static Files" (PDFs). Investors and GSEs audit the *content of the file*, not just a line in a database. Live Verify turn the **Static PMI Certificate** into a live, high-authority digital anchor, ensuring the "Credit Safety Net" is as strong as it looks on paper.

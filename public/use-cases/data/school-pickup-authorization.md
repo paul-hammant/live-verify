@@ -104,7 +104,7 @@ In these cases, the custody order (see [Adoption Papers and Custody Orders](view
 
 ## Scope and Limitations
 
-**Where OCR-to-hash fits:**
+**Where Live Verify fits:**
 - **Paper-based schools** without digital systems — rural areas, developing countries, under-resourced districts
 - **Cross-system portability** — credential works even if the verifier doesn't have the school's app
 - **Archival/dispute resolution** — proving after the fact that authorization existed on a specific date
@@ -120,7 +120,7 @@ Many schools already use pickup management apps (Pikmykid, SchoolPass, Brightwhe
 - **Photo matching** — Staff sees the mugshot on their tablet, matches to person in front of them
 - **Instant revocation** — Parent can cancel authorization while the person is en route
 
-**Honest assessment:** For schools with functioning digital infrastructure, a well-implemented app with QR codes is often faster and safer than OCR-to-hash. The QR workflow is:
+**Honest assessment:** For schools with functioning digital infrastructure, a well-implemented app with QR codes is often faster and safer than Live Verify. The QR workflow is:
 
 1. Authorized person opens app, shows QR
 2. Staff scans QR
@@ -129,7 +129,7 @@ Many schools already use pickup management apps (Pikmykid, SchoolPass, Brightwhe
 
 This is faster than text selection and provides the critical photo-matching step in-line.
 
-**OCR-to-hash value proposition:**
+**Live Verify value proposition:**
 - Schools that can't or won't adopt apps
 - Interoperability across districts/systems
 - Offline-capable verification
@@ -177,7 +177,7 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Existing Solutions
 
-| Feature | OCR-to-Hash | School Pickup App (QR) | Paper Binder | Phone Call to Parent |
+| Feature | Live Verify | School Pickup App (QR) | Paper Binder | Phone Call to Parent |
 | :--- | :--- | :--- | :--- | :--- |
 | **Speed** | Medium (text selection) | **Fast** (scan QR, see photo) | Slow (flip pages) | Very slow (parent may not answer) |
 | **Photo Matching** | Separate step | **Inline** (photo appears on scan) | Manual lookup | N/A |
@@ -186,7 +186,7 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 | **Cross-System** | **Yes** (any school's domain) | No (app-specific) | N/A | N/A |
 | **Parent Friction** | Medium (school issues) | **Low** (self-service app) | High (paper forms) | N/A |
 
-**Why QR often wins here:** The pickup moment is fast-paced and high-volume (50+ kids in 15 minutes at dismissal). QR scan → photo → release is the optimal UX. OCR-to-hash is a fallback for schools without apps, or for edge cases where app-based verification fails.
+**Why QR often wins here:** The pickup moment is fast-paced and high-volume (50+ kids in 15 minutes at dismissal). QR scan → photo → release is the optimal UX. Live Verify is a fallback for schools without apps, or for edge cases where app-based verification fails.
 
 ## Related Use Cases
 

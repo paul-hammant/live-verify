@@ -81,18 +81,18 @@ A QR code seems faster to scan, but consider the real-world scenario: a trial ru
 | URL to UC's internal system | Nothing—no login credentials, access denied |
 | Static embedded data (NCT#, drug name) | Read it, but cannot verify authenticity |
 | Cryptographically signed token | Nothing—no shared PKI, can't verify signature |
-| Public verification URL | Works—but this is just OCR-to-hash with a different barcode |
+| Public verification URL | Works—but this is just Live Verify with a different barcode |
 | Phone number | Call someone and wait on hold |
 
 **The uncomfortable truth:** QR codes assume system integration that doesn't exist in the fragmented US healthcare landscape. A QR pointing to UC's clinical trial management system is useless to a South Carolina hospital with no federation agreement.
 
-OCR-to-hash with a **public verification endpoint** (`verify:ucsf.edu/trials/v`) handles this correctly:
+Live Verify with a **public verification endpoint** (`verify:ucsf.edu/trials/v`) handles this correctly:
 - No integration required between health systems
 - The domain (ucsf.edu) is the trust anchor
 - Anyone with internet access can verify
 - Works across state lines, EHR vendors, and health system boundaries
 
-QR could encode that same public URL—but then it's just OCR-to-hash with a different encoding. The verification model is identical; only the scanning speed differs.
+QR could encode that same public URL—but then it's just Live Verify with a different encoding. The verification model is identical; only the scanning speed differs.
 
 ## Second-Party Use
 
@@ -272,7 +272,7 @@ This extends the witnessing model from *consent documents* to *the entire intera
 
 ## Competition vs. eConsent Platforms (Medidata)
 
-| Feature | OCR-to-Hash | eConsent Platform | Paper ICF | QR Code |
+| Feature | Live Verify | eConsent Platform | Paper ICF | QR Code |
 | :--- | :--- | :--- | :--- | :--- |
 | **User Privacy** | **High.** Participant keeps the anchor. | **Low.** Data resides in a 3rd party cloud. | **High.** | **High.** |
 | **Trust Anchor** | **Domain-Bound.** Trust the Hospital. | **System-Bound.** Trust the Vendor. | **Zero.** | Depends on what's encoded. |
@@ -281,6 +281,6 @@ This extends the witnessing model from *consent documents* to *the entire intera
 | **Cross-System Verification** | **Strong.** Public URL, no integration needed. | **None.** Requires vendor access. | **None.** | **Weak.** URL to issuer's system requires credentials. |
 | **Human Readable** | **Yes.** Text is the source of truth. | **No.** Data in vendor system. | **Yes.** | **No.** Opaque encoding. |
 
-**Why OCR wins here:** The Hybrid Reality. While eConsent is growing, many global sites still rely on paper due to local laws or tech barriers. OCR-to-hash provides **Digital Audit-ability** for physical paper, ensuring that even "Low-Tech" sites meet "High-Tech" integrity standards.
+**Why Live Verify wins here:** The Hybrid Reality. While eConsent is growing, many global sites still rely on paper due to local laws or tech barriers. Live Verify provides **Digital Audit-ability** for physical paper, ensuring that even "Low-Tech" sites meet "High-Tech" integrity standards.
 
-**The No-Integration Reality:** US healthcare is fragmented. A QR code pointing to UC San Francisco's clinical trial system is useless to a South Carolina ER with no federation agreement, no login credentials, and no shared PKI. OCR-to-hash with a *public* verification endpoint works across health system boundaries because the trust anchor is the domain itself, not a shared backend.
+**The No-Integration Reality:** US healthcare is fragmented. A QR code pointing to UC San Francisco's clinical trial system is useless to a South Carolina ER with no federation agreement, no login credentials, and no shared PKI. Live Verify with a *public* verification endpoint works across health system boundaries because the trust anchor is the domain itself, not a shared backend.

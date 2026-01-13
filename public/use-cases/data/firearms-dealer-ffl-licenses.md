@@ -132,11 +132,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. ATF FFL EzCheck
 
-| Feature | OCR-to-Hash | FFL EzCheck (Web) | Paper License |
+| Feature | Live Verify | FFL EzCheck (Web) | Paper License |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to `atf.gov`. | **Database.** Direct from source. | **Zero.** Easily forged. |
 | **Speed** | **Instant.** 5-second scan. | **Slow.** Requires typing 15 digits into a web form. | **Instant.** |
 | **Integrity** | **Binds Photo/Signer.** Protects every word. | **Data-Only.** Doesn't verify the paper. | **Vulnerable.** |
 | **Mobile Use** | **High.** Built for phones. | **Low.** Web form is hard to use on mobile. | **High.** |
 
-**Why OCR wins here:** The "Shipping Counter" reality. Gun owners and dealers are often at shipping docks or gun shows where they need to verify credentials *now*. OCR-to-hash turns the **Physical License** into a live, high-speed digital credential, bringing federal-level security to the point of transfer.
+**Why Live Verify wins here:** The "Shipping Counter" reality. Gun owners and dealers are often at shipping docks or gun shows where they need to verify credentials *now*. Live Verify turns the **Physical License** into a live, high-speed digital credential, bringing federal-level security to the point of transfer.

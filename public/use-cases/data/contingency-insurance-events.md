@@ -132,11 +132,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Central Registries (Lloyd's)
 
-| Feature | OCR-to-Hash | Lloyd's Market Database | Paper Evidence |
+| Feature | Live Verify | Lloyd's Market Database | Paper Evidence |
 | :--- | :--- | :--- | :--- |
 | **Integrity** | **Binds Endorsements.** Protects the "Fine Print" triggers. | **General.** Often only shows the broad policy existence. | **Zero.** Easily forged. |
 | **Accessibility** | **Universal.** Any venue manager can verify. | **Restricted.** Requires Lloyd's broker access. | **Manual.** |
 | **Speed** | **Instant.** Scan the paper at the loading dock. | **Slow.** Requires calling a London broker. | **Instant.** |
 | **Confidentiality** | **High.** Only the specific event is verified. | **Low.** Central lists can reveal entire portfolios. | **Medium.** |
 
-**Why OCR wins here:** The "Loading Dock" reality. In the 48 hours before a massive festival, logistics are chaotic. A site manager doesn't have time to call London to verify a broker's email. OCR-to-hash turns the **Physical Evidence of Insurance** into a live digital portal, ensuring that the show goes on (or is safely insured if it doesn't).
+**Why Live Verify wins here:** The "Loading Dock" reality. In the 48 hours before a massive festival, logistics are chaotic. A site manager doesn't have time to call London to verify a broker's email. Live Verify turns the **Physical Evidence of Insurance** into a live digital portal, ensuring that the show goes on (or is safely insured if it doesn't).

@@ -129,14 +129,14 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Digital Plat Portals
 
-| Feature | OCR-to-Hash | County GIS Viewer | Paper Plat |
+| Feature | Live Verify | County GIS Viewer | Paper Plat |
 | :--- | :--- | :--- | :--- |
 | **Precision** | **High.** Binds to the specific PE seal. | **Low.** GIS maps are often "General" and not legally binding. | **Instant.** |
 | **Integrity** | **Binds Text.** Protects measurements. | **Data-Only.** Doesn't protect the paper. | **Zero.** Easily edited. |
 | **Trust Anchor** | **The Surveyor.** (Professional Liability). | **The County.** (Assessor data). | **The Ink.** |
 | **Field Access** | **Instant.** Scan the paper at the property corner. | **Difficult.** Hard to align GIS pins with physical dirt. | **Instant.** |
 
-**Why OCR wins here:** The "Fence Line" reality. Neighbors and surveyors argue in backyards and driveways. They need a **zero-friction trust anchor** that works on the paper they are holding. OCR-to-hash turns the **Static Map** into a live safety dashboard, making "Boundary Truth" a transparent fact at the exact point of the property line.
+**Why Live Verify wins here:** The "Fence Line" reality. Neighbors and surveyors argue in backyards and driveways. They need a **zero-friction trust anchor** that works on the paper they are holding. Live Verify turns the **Static Map** into a live safety dashboard, making "Boundary Truth" a transparent fact at the exact point of the property line.
 
 ---
 
@@ -263,11 +263,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Physical Iron Pins
 
-| Feature | OCR-to-Hash | Iron Pins (In the Ground) | Scanned PDF / Paper |
+| Feature | Live Verify | Iron Pins (In the Ground) | Scanned PDF / Paper |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Surveyor. | **Physical.** Trust the iron. | **Zero.** Easily forged. |
 | **Reliability** | **High.** Digital record can't be moved. | **Low.** Pins are often pulled out or moved by neighbors. | **Vulnerable.** |
 | **Integrity** | **Cryptographic.** Binds every word. | **None.** No data on the pin. | **None.** |
 | **Speed** | **Instant.** 5-second scan. | **Very Slow.** Requires digging/metal detector. | **Instant.** |
 
-**Why OCR wins here:** The "Pulled Pin" reality. Survey markers in the ground are notoriously unreliable—they are moved by construction, kids, or dishonest neighbors. OCR-to-hash turns the **Paper Survey** into an immutable digital anchor, ensuring that the legal intent of the boundary remains clear even when the physical markers are gone.
+**Why Live Verify wins here:** The "Pulled Pin" reality. Survey markers in the ground are notoriously unreliable—they are moved by construction, kids, or dishonest neighbors. Live Verify turns the **Paper Survey** into an immutable digital anchor, ensuring that the legal intent of the boundary remains clear even when the physical markers are gone.

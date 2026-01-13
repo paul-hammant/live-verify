@@ -14,7 +14,7 @@ For millions of Uber, Lyft, and DoorDash drivers, their "Paycheck" is a weekly *
 
 Because gig workers are "Self-Employed," they must show these receipts to landlords to rent an apartment or to banks to get a car loan. They are the only verified proof of income.
 
-Fraud is common: drivers often edit a $400 payout to read $4,000 to trick a landlord into thinking they are high-earners. OCR-to-hash allows a landlord to scan the receipt and see the **verified, un-altered weekly income** directly from the platform's domain.
+Fraud is common: drivers often edit a $400 payout to read $4,000 to trick a landlord into thinking they are high-earners. Live Verify allows a landlord to scan the receipt and see the **verified, un-altered weekly income** directly from the platform's domain.
 
 <div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.85em; white-space: pre; color: #000; line-height: 1.6;"><span verifiable-text="start" data-for="gig">[</span>Uber                                  Weekly Earnings Statement
@@ -68,7 +68,7 @@ The **Gig Worker (Driver/Courier)** benefits from verification.
 ## Third-Party Use
 
 **Mortgage Lenders / Banks**
-**Income Verification:** Lenders verify the stability and amount of "Gig Income." OCR-to-hash ensures the applicant hasn't "Photoshopped" their earnings higher to qualify for a larger loan.
+**Income Verification:** Lenders verify the stability and amount of "Gig Income." Live Verify ensures the applicant hasn't "Photoshopped" their earnings higher to qualify for a larger loan.
 
 **Tax Preparers / IRS**
 **Audit Defense:** Ensuring the "Gross Income" reported on the tax return matches the verified payouts from the platform, reducing audit friction.
@@ -116,11 +116,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Employment Verifiers (Argyle)
 
-| Feature | OCR-to-Hash | Argyle / Pinwheel (API) | Scanned PDF |
+| Feature | Live Verify | Argyle / Pinwheel (API) | Scanned PDF |
 | :--- | :--- | :--- | :--- |
 | **User Privacy** | **High.** Worker shares only the *Statement*. | **Low.** API access often reveals *full* account history. | **High.** |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Platform. | **System-Bound.** Trust the aggregator. | **Zero.** Easily forged. |
 | **Interoperability** | **Universal.** Works for any platform with a URL. | **Limited.** Only for platforms on the API network. | **Universal.** |
 | **Speed** | **Instant.** 5-second scan. | **Slow.** Requires worker to find login/pass and link accounts. | **N/A.** |
 
-**Why OCR wins here:** The "Consent Gap." Many gig workers are hesitant to give their Uber password to a third-party "Aggregator" app. OCR-to-hash provides **API-level trust** for a single document, preserving the worker's privacy and security while giving the lender the verification they need.
+**Why Live Verify wins here:** The "Consent Gap." Many gig workers are hesitant to give their Uber password to a third-party "Aggregator" app. Live Verify provides **API-level trust** for a single document, preserving the worker's privacy and security while giving the lender the verification they need.

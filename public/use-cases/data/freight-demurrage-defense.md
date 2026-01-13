@@ -82,7 +82,7 @@ The **Shipowner / Member** benefits from verification.
 **Fee Assurance:** Before taking on a complex international charterparty dispute, the law firm scans the FD&D certificate. "Verified by The London Club" gives them the confidence that the P&I Club's "Cover for Legal Costs" is real and active.
 
 **Admiralty Courts**
-**Vessel Release:** Verifying the "Letter of Undertaking" hash before releasing a ship from arrest. OCR-to-hash prevents thieves from using a "Fake LOU" to flee a jurisdiction.
+**Vessel Release:** Verifying the "Letter of Undertaking" hash before releasing a ship from arrest. Live Verify prevents thieves from using a "Fake LOU" to flee a jurisdiction.
 
 **Bunker Suppliers / Vendors**
 **Credit Vetting:** Verifying the insurance quality of a counterparty before allowing a "Paid on Terms" supply of fuel.
@@ -127,11 +127,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Club Member Search
 
-| Feature | OCR-to-Hash | Club Website Search | Scanned PDF |
+| Feature | Live Verify | Club Website Search | Scanned PDF |
 | :--- | :--- | :--- | :--- |
 | **Integrity** | **Cryptographic.** Binds the *Legal Limit*. | **Vague.** Often only shows "Entered" without the limit details. | **Zero.** Easily forged. |
 | **User Access** | **Universal.** Any attorney or port can verify. | **Restricted.** Some Clubs require private logins for detailed data. | **Instant.** |
 | **Speed** | **Instant.** 5-second scan. | **Slow.** Requires IMO # search and UI navigation. | **N/A.** |
 | **Authority** | **Domain-Bound.** Bound to the Club. | **High.** Direct DB. | **Medium.** |
 
-**Why OCR wins here:** The "Bridge Moment." Maritime disputes happen at sea or in busy port offices. People don't want to struggle with a desktop-optimized P&I Club website. OCR-to-hash turns the **Physical Certificate** into a live, high-speed digital dashboard, providing the "Rule 26" level of trust needed for international legal proceedings.
+**Why Live Verify wins here:** The "Bridge Moment." Maritime disputes happen at sea or in busy port offices. People don't want to struggle with a desktop-optimized P&I Club website. Live Verify turns the **Physical Certificate** into a live, high-speed digital dashboard, providing the "Rule 26" level of trust needed for international legal proceedings.

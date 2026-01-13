@@ -69,7 +69,7 @@ The **Applicant** benefits from verification.
 ## Third-Party Use
 
 **USCIS Officers**
-**Intake Integrity:** When an officer receives a "Sealed I-693 Envelope," they currently have to trust the physical seal hasn't been tampered with. OCR-to-hash allows the officer to scan the hash on the form *before* opening. "Verified by Gotham Health" ensures the contents match the surgeon's original digital filing, stopping "Envelope Tampering" fraud.
+**Intake Integrity:** When an officer receives a "Sealed I-693 Envelope," they currently have to trust the physical seal hasn't been tampered with. Live Verify allows the officer to scan the hash on the form *before* opening. "Verified by Gotham Health" ensures the contents match the surgeon's original digital filing, stopping "Envelope Tampering" fraud.
 
 **Immigration Attorneys**
 **Quality Control:** Verifying that the Civil Surgeon is actually on the USCIS-approved list and that their license was active on the date of the signature.
@@ -119,11 +119,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. e-Medical (State Dept)
 
-| Feature | OCR-to-Hash | e-Medical (Electronic Filing) | Paper I-693 (Standard) |
+| Feature | Live Verify | e-Medical (Electronic Filing) | Paper I-693 (Standard) |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Doctor. | **Gov-Bound.** Direct to server. | **Zero.** Trusted only via seal. |
 | **User Access** | **High.** Applicant can see "Certified" status. | **Zero.** Black-box system; applicant sees nothing. | **Manual.** |
 | **Interoperability** | **Universal.** Works for any clinic with a URL. | **Restricted.** Requires expensive e-Medical software. | **Universal.** |
 | **Freshness** | **Real-time.** Shows if results retracted. | **High.** | **Static.** |
 
-**Why OCR wins here:** The "Local Clinic" reality. Most USCIS civil surgeons are small private clinics who do not have the IT budget for complex federal "e-Filing" integrations. They still use paper. OCR-to-hash turns that **Mandatory Paper Form** into a live digital checkpoint, bringing "Government-Level" integrity to local medical offices.
+**Why Live Verify wins here:** The "Local Clinic" reality. Most USCIS civil surgeons are small private clinics who do not have the IT budget for complex federal "e-Filing" integrations. They still use paper. Live Verify turns that **Mandatory Paper Form** into a live digital checkpoint, bringing "Government-Level" integrity to local medical offices.

@@ -17,7 +17,7 @@ Beyond the airport, passports are used as the "Primary ID" for:
 2.  **Renting High-Value Assets:** Cars, apartments, or luxury equipment.
 3.  **Cross-Border Business:** Signing contracts as a foreign entity.
 
-**"High-Grade Clones"** are a major security threat. Sophisticated forgers can replicate holograms, security paper, and even RFID chips. However, they **cannot forge what the issuing government's server sends back**. OCR-to-hash turns the **Physical Data Page** into a live link to the government's secure database, allowing anyone from a bouncer to a bank teller to see if the passport was **Revoked or Reported Stolen** today.
+**"High-Grade Clones"** are a major security threat. Sophisticated forgers can replicate holograms, security paper, and even RFID chips. However, they **cannot forge what the issuing government's server sends back**. Live Verify turns the **Physical Data Page** into a live link to the government's secure database, allowing anyone from a bouncer to a bank teller to see if the passport was **Revoked or Reported Stolen** today.
 
 <div style="max-width: 600px; margin: 24px auto; font-family: sans-serif; border: 1px solid #333; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
   <div style="background: #002d62; color: #fff; padding: 20px; display: flex; align-items: center; justify-content: space-between;">
@@ -88,10 +88,10 @@ The **Passport Holder (Traveler)** benefits from verification.
 **Check-in Integrity:** Before boarding a flight, the gate agent scans the data page. Verification ensures the passport hasn't been "reported stolen" in the last hour, reducing the carrier's liability for "Inadmissible Passenger" fines.
 
 **Hospitality / Bouncers**
-**Age & Identity:** Instantly confirming that a "Novice Fake" ID isn't authentic. Standard fakes look perfect to the eye; OCR-to-hash connects the bouncer directly to the government source in seconds.
+**Age & Identity:** Instantly confirming that a "Novice Fake" ID isn't authentic. Standard fakes look perfect to the eye; Live Verify connects the bouncer directly to the government source in seconds.
 
 **Border Control (Land/Sea)**
-**Visual Augmentation:** Complementing chip-reading technology. If a passport's NFC chip is damaged or non-existent (as in many older or non-biometric passports), OCR-to-hash provides a "Chip-Level" trust anchor for the visual zone.
+**Visual Augmentation:** Complementing chip-reading technology. If a passport's NFC chip is damaged or non-existent (as in many older or non-biometric passports), Live Verify provides a "Chip-Level" trust anchor for the visual zone.
 
 ## Verification Architecture
 
@@ -99,7 +99,7 @@ The **Passport Holder (Traveler)** benefits from verification.
 
 - **Identity Theft:** Using a real person's data on a cloned book with a different photo.
 - **Status Hiding:** Presenting a physically "Valid" passport that has been revoked by the government for legal or security reasons.
-- **The Doppelganger Attack:** Using a valid passport belonging to a similar-looking person. OCR-to-hash with **Photo Return** (returning the official face on file) stops this instantly.
+- **The Doppelganger Attack:** Using a valid passport belonging to a similar-looking person. Live Verify with **Photo Return** (returning the official face on file) stops this instantly.
 
 **Issuer Types** (First Party)
 
@@ -151,11 +151,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. NFC (Electronic Passports)
 
-| Feature | OCR-to-Hash | NFC / e-Passport | Scanned PDF / Image |
+| Feature | Live Verify | NFC / e-Passport | Scanned PDF / Image |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Gov. | **Key-Bound.** Trust the PKI. | **Zero.** Easily forged. |
 | **Hardware** | **Universal.** Any smartphone camera. | **Restricted.** Requires NFC chips. | **Universal.** |
 | **Adoption** | **High.** Works for older/damaged books. | **Medium.** Many books have dead chips. | **High.** |
 | **Integrity** | **Cryptographic.** Binds photo to status. | **High.** | **Vulnerable.** |
 
-**Why OCR wins here:** The "Damaged Chip" reality. Thousands of passports have broken or non-functioning NFC chips due to wear and tear. OCR-to-hash turns the **Durable Printed Page** into a live digital credential, providing "Chip-Level" trust to even the oldest or most battered passport books.
+**Why Live Verify wins here:** The "Damaged Chip" reality. Thousands of passports have broken or non-functioning NFC chips due to wear and tear. Live Verify turns the **Durable Printed Page** into a live digital credential, providing "Chip-Level" trust to even the oldest or most battered passport books.

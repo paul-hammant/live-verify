@@ -64,7 +64,7 @@ The **Energy Buyer (Corporation)** benefits from verification.
 ## Third-Party Use
 
 **Carbon and ESG Auditors**
-**Inventory Audit:** During a "Net Zero" audit, the accountant scans a random sample of the client's RECs. OCR-to-hash ensures the company isn't "Double-Counting" RECs or using "Phantom Credits" from a non-existent solar farm.
+**Inventory Audit:** During a "Net Zero" audit, the accountant scans a random sample of the client's RECs. Live Verify ensures the company isn't "Double-Counting" RECs or using "Phantom Credits" from a non-existent solar farm.
 
 **Energy Traders / Banks**
 **Transaction Security:** Before buying 50,000 RECs from a broker, the trader scans the hash. Verification ensures the seller actually owns the RECs and that they haven't already been "Retired" by someone else.

@@ -122,11 +122,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. County Records Search
 
-| Feature | OCR-to-Hash | County Search (Online) | Physical Deed Room |
+| Feature | Live Verify | County Search (Online) | Physical Deed Room |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the County. | **Database-Bound.** High trust but manual. | **Physical.** Trust the paper. |
 | **Speed** | **Instant.** 5-second scan at the fence line. | **Slow.** Requires finding the parcel # and navigating old UIs. | **Very Slow.** Hours of travel/search. |
 | **Integrity** | **Binds Content.** Protects the legal text. | **Data-Only.** Doesn't verify the paper in your hand. | **Vulnerable.** |
 | **User Access** | **Universal.** Anyone with the document. | **Difficult.** Many counties charge fees or require logins. | **Restricted.** |
 
-**Why OCR wins here:** The "Field Reality." Disputes about property rights happen in backyards and at construction sites. People don't have Libers and Pages memorized. OCR-to-hash turns the **Physical Agreement** into a live digital portal, ending trespassing disputes and title confusion in seconds.
+**Why Live Verify wins here:** The "Field Reality." Disputes about property rights happen in backyards and at construction sites. People don't have Libers and Pages memorized. Live Verify turns the **Physical Agreement** into a live digital portal, ending trespassing disputes and title confusion in seconds.

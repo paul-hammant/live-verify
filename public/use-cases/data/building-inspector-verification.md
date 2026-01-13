@@ -14,7 +14,7 @@ A **Building Inspector Badge** is the identification carried by city officials w
 
 Because these officials have the legal right to walk into your kitchen or basement, criminals often pose as "Inspectors" to gain entry for burglary or to extort fake fines.
 
-OCR-to-Hash allows a homeowner to scan the badge at the door and see a green "ACTIVE" status from the city's own domain, proving the person is a real employee and not a scammer.
+Live Verify allows a homeowner to scan the badge at the door and see a green "ACTIVE" status from the city's own domain, proving the person is a real employee and not a scammer.
 
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
   <div style="background: #1a237e; color: #fff; padding: 15px; text-align: center; display: flex; align-items: center; justify-content: center;">
@@ -170,11 +170,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. ID Badges / Phone Calls
 
-| Feature | OCR-to-Hash | Holographic Badge | Calling the Office |
+| Feature | Live Verify | Holographic Badge | Calling the Office |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to `cityofchicago.org`. | **Mechanical.** Hard to forge, but non-verifiable. | **Human.** Relies on someone answering the phone. |
 | **Photo Verification** | **Confirms authenticity.** Badge photo is real; homeowner compares face. | **Static.** Photo is on the badge, but is the badge real? | **None.** Voice only. |
 | **Speed** | **Instant.** 5-second scan. | **N/A.** Just looking. | **Slow.** Often takes 5-10 minutes on hold. |
 | **Revocation** | **Real-time.** Suspended/stolen badges fail immediately. | **None.** Physical badge still looks valid. | **Maybe.** If office knows and tells you. |
 
-**Why OCR wins here:** The "Doorstep Workflow." Homeowners are often intimidated by officials. They don't want to engage in a long conversation or a phone call. OCR-to-hash allows for a **non-confrontational verification**—the owner can simply ask to see the badge, scan it with their own phone, and see `OK` from the city domain before opening the door.
+**Why Live Verify wins here:** The "Doorstep Workflow." Homeowners are often intimidated by officials. They don't want to engage in a long conversation or a phone call. Live Verify allows for a **non-confrontational verification**—the owner can simply ask to see the badge, scan it with their own phone, and see `OK` from the city domain before opening the door.

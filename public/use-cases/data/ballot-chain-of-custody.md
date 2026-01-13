@@ -128,10 +128,10 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Central Portals / GPS
 
-| Feature | OCR-to-Hash | Internal Election Portal | GPS Tracking on Trucks |
+| Feature | Live Verify | Internal Election Portal | GPS Tracking on Trucks |
 | :--- | :--- | :--- | :--- |
 | **Observer Access** | **High.** External parties can verify without system access. | **Zero.** Observers are never given logins to sensitive gov systems. | **None.** Proves where the truck went, not what's in the box. |
 | **Integrity** | **Binds Content.** Proves the *count* and *seal* numbers. | **Vulnerable.** Internal DB can be edited by admins. | **N/A.** |
 | **Offline Proof** | **Strong.** Paper form works if the counting center Wi-Fi is jammed. | **None.** | **Weak.** Requires cell signal. |
 
-**Why OCR wins here:** Trust through Decentralization. In a polarized election, the "Opposition" does not trust the government's internal database. OCR-to-hash allows the opposition to verify the paper records against a public-facing domain without needing "Super-User" access to the voting system, creating a bipartisan trust bridge.
+**Why Live Verify wins here:** Trust through Decentralization. In a polarized election, the "Opposition" does not trust the government's internal database. Live Verify allows the opposition to verify the paper records against a public-facing domain without needing "Super-User" access to the voting system, creating a bipartisan trust bridge.

@@ -14,7 +14,7 @@ In the insurance industry, the greatest risk to solvency isn't a lack of assets,
 
 The **Independent Insurance (UK, 2001)** collapse is the classic example: management failed to book £62 million in claims, and auditors were unable to detect the missing liabilities because management controlled the "ground truth" data.
 
-OCR-to-hash with **Independent Witnessing** solves the "Completeness Problem." The moment a claim is first notified (the "First Notice of Loss"), a digital or printed receipt is generated and hashed. This hash is sent to an independent third-party witness (the Regulator, an Audit Firm, or a Public Ledger).
+Live Verify with **Independent Witnessing** solves the "Completeness Problem." The moment a claim is first notified (the "First Notice of Loss"), a digital or printed receipt is generated and hashed. This hash is sent to an independent third-party witness (the Regulator, an Audit Firm, or a Public Ledger).
 
 <div style="max-width: 500px; margin: 24px auto; font-family: 'Courier New', Courier, monospace; border: 2px solid #002244; background: #fff; padding: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <div style="text-align: center; border-bottom: 2px solid #002244; padding-bottom: 10px; margin-bottom: 20px;">
@@ -124,5 +124,5 @@ Insurance is a "Business of Promises." The value of an insurance policy is entir
 
 **Historical Context:** I worked for Independent Insurance in the UK during the mid-90s and witnessed firsthand the actions of the too-charismatic CEO Michael Bright and his management team. 
 Although leaving ten years before the final 2001 collapse, the experience informed the understanding that "management-curated reality" is a primary failure mode of regulated 
-financial entities. OCR-to-hash with independent witnessing is designed to neutralize the charismatic "distortion field" by anchoring ground-truth data in a neutral, 
+financial entities. Live Verify with independent witnessing is designed to neutralize the charismatic "distortion field" by anchoring ground-truth data in a neutral, 
 external service. [Some hansard minutes on Indi](https://hansard.parliament.uk/commons/2001-07-04/debates/b705a9b5-5bfc-44df-b0c8-65a6827b9e63/IndependentInsuranceCompany).

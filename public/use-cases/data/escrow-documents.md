@@ -128,14 +128,14 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Servicer Portals
 
-| Feature | OCR-to-Hash | Servicer Mobile App | Scanned PDF / Printout |
+| Feature | Live Verify | Servicer Mobile App | Scanned PDF / Printout |
 | :--- | :--- | :--- | :--- |
 | **Integrity** | **Cryptographic.** Protects every line item. | **Dynamic.** Data can change without audit trail. | **Zero.** Easily forged. |
 | **Dispute Power** | **High.** Proves the servicer's *past* attestation. | **Low.** Servicer controls the app view. | **Vulnerable.** |
 | **Audit-ability** | **High.** Creates an external digital trail. | **None.** For external regulators. | **Manual.** |
 | **Transparency** | **High.** Shows exact RESPA math. | **Medium.** Often hides complex calculations. | **Full.** But untrusted. |
 
-**Why OCR wins here:** The "Audit Gap." Mortgage servicers often have terrible record-keeping systems. When a homeowner disputes a bill, the servicer often says "The app is showing the latest data; your old paper is wrong." OCR-to-hash turns that **Old Paper Statement** into an un-erasable digital proof of what the servicer claimed on that date, empowering the homeowner in disputes.
+**Why Live Verify wins here:** The "Audit Gap." Mortgage servicers often have terrible record-keeping systems. When a homeowner disputes a bill, the servicer often says "The app is showing the latest data; your old paper is wrong." Live Verify turns that **Old Paper Statement** into an un-erasable digital proof of what the servicer claimed on that date, empowering the homeowner in disputes.
 
 
 ---
@@ -275,14 +275,14 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Secure Portals (Qualia)
 
-| Feature | OCR-to-Hash | Secure Portal (Qualia/CertifID) | Scanned PDF / Email |
+| Feature | Live Verify | Secure Portal (Qualia/CertifID) | Scanned PDF / Email |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Firm. | **System-Bound.** Trust the vendor. | **Zero.** Easily forged. |
 | **Accessibility** | **Universal.** No login needed to verify. | **Difficult.** Requires buyer to create an account/password. | **Instant.** |
 | **Integrity** | **Binds Content.** Protects the account #. | **Data-Only.** | **Vulnerable.** |
 | **Hardware** | **Universal.** Any smartphone. | **Technical.** Often requires desktop browser. | **Manual.** |
 
-**Why OCR wins here:** The "Moment of Action." A buyer is standing at their bank's wire desk. They are nervous. They don't want to struggle with a "Secure Portal" login or a forgotten password. OCR-to-hash turns the **Printed Wire Instructions** into a live, high-speed trust bridge, providing "Bank-Grade" security with "Paper-Grade" simplicity.
+**Why Live Verify wins here:** The "Moment of Action." A buyer is standing at their bank's wire desk. They are nervous. They don't want to struggle with a "Secure Portal" login or a forgotten password. Live Verify turns the **Printed Wire Instructions** into a live, high-speed trust bridge, providing "Bank-Grade" security with "Paper-Grade" simplicity.
 
 
 ---
@@ -360,14 +360,14 @@ The selling shareholders (second party) may hand the verified document to variou
 
 ## Competition vs. Virtual Data Rooms (VDR)
 
-| Feature | OCR-to-Hash | VDR (Intralinks / Merrill) | Scanned PDF |
+| Feature | Live Verify | VDR (Intralinks / Merrill) | Scanned PDF |
 | :--- | :--- | :--- | :--- |
 | **User Access** | **Universal.** Share with any tax auditor. | **Restricted.** Access usually revoked after 90 days. | **Instant.** |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Bank. | **System-Bound.** | **Zero.** Easily forged. |
 | **Permanence** | **Permanent.** Binds the *text* forever. | **Temporary.** Portals are deal-specific. | **Durable.** |
 
-**Why OCR wins here:**
-The "Post-Deal Gap." Three years after a deal closes, the VDR is gone and the lawyers have moved on. When an IRS auditor or a new buyer asks for proof, the **Static PDF** is all that's left. OCR-to-hash turns that PDF into a permanent, verifiable "Source of Truth."
+**Why Live Verify wins here:**
+The "Post-Deal Gap." Three years after a deal closes, the VDR is gone and the lawyers have moved on. When an IRS auditor or a new buyer asks for proof, the **Static PDF** is all that's left. Live Verify turns that PDF into a permanent, verifiable "Source of Truth."
 
 
 
@@ -450,13 +450,13 @@ The seller (second party) may hand the verified document to various third partie
 
 ## Competition vs. Secure Portals (CertifID)
 
-| Feature | OCR-to-Hash | CertifID / Secure Portal | Scanned PDF / Email |
+| Feature | Live Verify | CertifID / Secure Portal | Scanned PDF / Email |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Title Co. | **System-Bound.** Trust the vendor. | **Zero.** Easily forged. |
 | **Ease of Use** | **High.** Scan the paper at the desk. | **Medium.** Requires setting up a portal login. | **Instant.** |
 | **Integrity** | **Binds All Data.** Protects every digit. | **Data-Only.** | **Vulnerable.** |
 | **Legal Status** | **Cryptographic Artifact.** | **Platform Service.** | **Vulnerable PDF.** |
 
-**Why OCR wins here:**
-The "Closing Room" reality. Closings often happen at a conference table with physical papers. Sellers and Buyers are often older and not tech-savvy. They don't want to "Login to a Portal." They want to sign a piece of paper. OCR-to-hash turns that **Signed Paper** into a high-security digital key that even a hacker in a different country cannot spoof.
+**Why Live Verify wins here:**
+The "Closing Room" reality. Closings often happen at a conference table with physical papers. Sellers and Buyers are often older and not tech-savvy. They don't want to "Login to a Portal." They want to sign a piece of paper. Live Verify turns that **Signed Paper** into a high-security digital key that even a hacker in a different country cannot spoof.
 

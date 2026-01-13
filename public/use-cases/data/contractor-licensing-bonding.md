@@ -142,11 +142,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. State Search Portals
 
-| Feature | OCR-to-Hash | State Website Search | Scanned PDF |
+| Feature | Live Verify | State Website Search | Scanned PDF |
 | :--- | :--- | :--- | :--- |
 | **Integrity** | **Binds Identity.** Proves *Who* is licensed. | **Vague.** Hard to prove the person in front of you is the person in the DB. | **Zero.** Easily forged. |
 | **Speed** | **Instant.** 5-second scan. | **Slow.** Type in license #, navigate mobile-unfriendly site. | **Instant.** |
 | **Trust** | **Domain-Bound.** Bound to the Board. | **High.** But prone to "typo" errors. | **Medium.** |
 | **Field Use** | **High.** Mobile-optimized workflow. | **Low.** Hard to use on a construction site. | **Universal.** |
 
-**Why OCR wins here:** The "Kitchen Table" workflow. Homeowners are notoriously bad at verifying contractors. OCR-to-hash turns the **Physical Pocket Card** into a live, high-speed trust tool that works in the driveway or kitchen, where the hiring decision is actually made.
+**Why Live Verify wins here:** The "Kitchen Table" workflow. Homeowners are notoriously bad at verifying contractors. Live Verify turns the **Physical Pocket Card** into a live, high-speed trust tool that works in the driveway or kitchen, where the hiring decision is actually made.

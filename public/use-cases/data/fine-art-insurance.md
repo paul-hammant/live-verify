@@ -127,11 +127,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Physical Provenance Logs
 
-| Feature | OCR-to-Hash | Provenance Log (Paper) | Art Registry (Blockchain) |
+| Feature | Live Verify | Provenance Log (Paper) | Art Registry (Blockchain) |
 | :--- | :--- | :--- | :--- |
 | **Integrity** | **Binds Value.** Protects the $85M claim. | **Subjective.** Relies on old stickers/notes. | **High.** But art is off-chain. |
 | **Trust Anchor** | **Domain-Bound.** Trust the Payer. | **Signature-Bound.** | **Consensus-Bound.** |
 | **Hardware** | **Universal.** Any smartphone. | **Expert.** Requires magnifying glass/knowledge. | **Technical.** Requires crypto-wallet. |
 | **Speed** | **Instant.** 5-second scan. | **Slow.** Hours of expert review. | **Fast.** |
 
-**Why OCR wins here:** The "Handoff Momentum." High-end art moves in a small circle of trusted registrars and handlers. They don't have time for "Crypto-Onboarding." OCR-to-hash turns the **Standard Insurance Folder** into a live digital anchor that matches the speed and prestige of the global art market.
+**Why Live Verify wins here:** The "Handoff Momentum." High-end art moves in a small circle of trusted registrars and handlers. They don't have time for "Crypto-Onboarding." Live Verify turns the **Standard Insurance Folder** into a live digital anchor that matches the speed and prestige of the global art market.

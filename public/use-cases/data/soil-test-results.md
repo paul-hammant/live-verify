@@ -73,7 +73,7 @@ The **Farmer / Landowner** benefits from verification.
 ## Third-Party Use
 
 **Real Estate Appraisers / Buyers**
-**Valuation Integrity:** A buyer looking at a $10M farm scans the verified soil reports. OCR-to-hash ensures the seller isn't hiding a "pH imbalance" or "Nitrogen depletion" that would cost thousands to fix.
+**Valuation Integrity:** A buyer looking at a $10M farm scans the verified soil reports. Live Verify ensures the seller isn't hiding a "pH imbalance" or "Nitrogen depletion" that would cost thousands to fix.
 
 **Carbon Credit Registries**
 **Greenwashing Prevention:** Companies buying carbon credits (to offset emissions) scan the verified organic matter reports. Verification ensures the farmer actually increased soil carbon and isn't "Fabricating" environmental progress.

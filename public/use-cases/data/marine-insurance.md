@@ -126,14 +126,14 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Blockchain (TradeLens)
 
-| Feature | OCR-to-Hash | Trade Finance Blockchain | Paper / PDF Certificate |
+| Feature | Live Verify | Trade Finance Blockchain | Paper / PDF Certificate |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Carrier. | **Consensus-Bound.** Trust the network. | **Zero.** Easily forged. |
 | **Adoption** | **High.** Works with existing paper/PDF docs. | **Low.** Requires every party to join the same chain. | **Universal.** |
 | **Interoperability** | **High.** Verified PDF works for any local bank. | **Siloed.** Hard to verify if you aren't on the chain. | **Universal.** |
 | **Integrity** | **Binds Content.** Protects the $ amounts. | **Data-Only.** | **Vulnerable.** |
 
-**Why OCR wins here:** The "Local Bank" reality. A small exporter in Vietnam might use a local bank that has no idea what "TradeLens" or "Corda" is. But the bank **does trust** `allianz.com`. OCR-to-hash turns the **Standard PDF Certificate** into a "Universal Trust Link" that works across every border and every tech-tier.
+**Why Live Verify wins here:** The "Local Bank" reality. A small exporter in Vietnam might use a local bank that has no idea what "TradeLens" or "Corda" is. But the bank **does trust** `allianz.com`. Live Verify turns the **Standard PDF Certificate** into a "Universal Trust Link" that works across every border and every tech-tier.
 
 
 ---
@@ -263,14 +263,14 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Equasis / Vessel Databases
 
-| Feature | OCR-to-Hash | Equasis / IHS Markit (Database) | Scanned PDF Policy |
+| Feature | Live Verify | Equasis / IHS Markit (Database) | Scanned PDF Policy |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Underwriter. | **Data-Bound.** Trust the 3rd party database. | **Zero.** Easily forged. |
 | **Integrity** | **Cryptographic.** Binds the *Hull Value*. | **Vague.** Often only shows "Insurer Name." | **None.** |
 | **Freshness** | **Real-time.** Shows if premium was paid today. | **Laggy.** Database updates can take 1-2 weeks. | **Static.** |
 | **User Access** | **Universal.** Any port or lawyer can verify. | **Restricted.** Some high-tier data is pay-walled. | **Universal.** |
 
-**Why OCR wins here:** The "Bridge" Reality. Decisions about vessel safety and finance happen in busy offices far from the ship. People work with "Closing Folders" (PDFs). OCR-to-hash turns the **Static Policy Declaration** into a live, high-authority digital anchor that is much more important for legal liability than a generic database entry.
+**Why Live Verify wins here:** The "Bridge" Reality. Decisions about vessel safety and finance happen in busy offices far from the ship. People work with "Closing Folders" (PDFs). Live Verify turns the **Static Policy Declaration** into a live, high-authority digital anchor that is much more important for legal liability than a generic database entry.
 
 
 
@@ -385,7 +385,7 @@ Document fraud creates significant risks:
 - **Impersonation:** Documents falsely claiming to be from legitimate issuers
 - **Expired/Revoked Documents:** Presenting invalid documents as current
 
-OCR-to-hash verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
+Live Verify verification addresses fake and altered documents. Domain binding confirms the claimed issuer actually issued the document.
 
 **Issuer Types** (First Party)
 

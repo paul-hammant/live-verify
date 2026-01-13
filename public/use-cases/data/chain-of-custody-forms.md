@@ -73,7 +73,7 @@ The **Receiver** (e.g., Lab Tech or Court Clerk) benefits from verification.
 ## Third-Party Use
 
 **Defense Attorneys / Prosecutors**
-**Admissibility Audit:** In criminal law, a "Broken Chain" makes evidence inadmissible (Fruit of the Poisonous Tree). Attorneys scan custody logs to find gaps. OCR-to-hash prevents "Gap Filling" where officers backdate paperwork weeks later to cover up negligence.
+**Admissibility Audit:** In criminal law, a "Broken Chain" makes evidence inadmissible (Fruit of the Poisonous Tree). Attorneys scan custody logs to find gaps. Live Verify prevents "Gap Filling" where officers backdate paperwork weeks later to cover up negligence.
 
 **FDA / Pharma Auditors**
 **Batch Integrity:** Verifying that a biological drug component was handed off between approved, temperature-controlled couriers at the exact times claimed.
@@ -123,11 +123,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Blockchain (Vechain / Hyperledger)
 
-| Feature | OCR-to-Hash | Enterprise Blockchain | Paper Logbook |
+| Feature | Live Verify | Enterprise Blockchain | Paper Logbook |
 | :--- | :--- | :--- | :--- |
 | **Field Access** | **Universal.** Any lawyer or clerk with a phone. | **Restricted.** Requires expensive "Node" access and memberships. | **Instant.** |
 | **Trust Anchor** | **Domain-Bound.** Trust the Lab domain. | **Consensus-Bound.** Trust the network protocol. | **Visual.** Trusted only via signatures. |
 | **Connectivity** | **Strong.** Works even if the global chain is down. | **Fragile.** Requires high-speed data at the crime scene. | **Offline.** |
 | **Auditability** | **High.** Creates a digital audit trail of scans. | **Very High.** Immutable ledger. | **Low.** Prone to "lost" books. |
 
-**Why OCR wins here:** The "Disconnected Edge." Police and couriers often operate in basements, warehouses, or rural areas without reliable 5G. OCR-to-hash turns the **Paper Log** (which is always there) into an immutable digital anchor that can be verified as soon as signal returns, providing "Blockchain Integrity" without the "Blockchain Infrastructure."
+**Why Live Verify wins here:** The "Disconnected Edge." Police and couriers often operate in basements, warehouses, or rural areas without reliable 5G. Live Verify turns the **Paper Log** (which is always there) into an immutable digital anchor that can be verified as soon as signal returns, providing "Blockchain Integrity" without the "Blockchain Infrastructure."

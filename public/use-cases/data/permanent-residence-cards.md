@@ -12,7 +12,7 @@ furtherDerivations: 1
 
 The **Permanent Resident Card (Form I-551)**, commonly known as a **Green Card**, is the most high-value identity document in the United States. It proves that a non-citizen is authorized to live and work in the country indefinitely. It is the "Master Key" to employment, social security benefits, and international travel.
 
-Because it grants broad rights, Green Cards are the #1 target for **High-End Forgery**. Black-market "Super-Clones" can look pixel-perfect even to trained eyes. OCR-to-hash turns the **Physical Card** into a live digital bridge to the USCIS vault. This allows an employer or a bank to see if the card has been **Revoked, Expired, or Reported Stolen** in real-time. Verified hashes bind the **USCIS Number, Category Code, and Resident Name** to the `uscis.gov` domain.
+Because it grants broad rights, Green Cards are the #1 target for **High-End Forgery**. Black-market "Super-Clones" can look pixel-perfect even to trained eyes. Live Verify turns the **Physical Card** into a live digital bridge to the USCIS vault. This allows an employer or a bank to see if the card has been **Revoked, Expired, or Reported Stolen** in real-time. Verified hashes bind the **USCIS Number, Category Code, and Resident Name** to the `uscis.gov` domain.
 
 <div style="max-width: 450px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; border-radius: 15px; background: linear-gradient(135deg, #e8f5e9 0%, #fff 100%); overflow: hidden; box-shadow: 0 6px 20px rgba(0,0,0,0.2); position: relative;">
   <div style="background: #002d62; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between; border-bottom: 3px solid #ce9e00;">
@@ -79,7 +79,7 @@ The **Permanent Resident (Holder)** benefits from verification.
 ## Third-Party Use
 
 **Employers / Federal Contractors**
-**Zero-Trust Compliance:** Verifying that a worker's "RE8" category is authentic. OCR-to-hash connects the company directly to the DHS record, stopping "Social Security Card" fraud where stolen IDs are used to hide illegal hiring.
+**Zero-Trust Compliance:** Verifying that a worker's "RE8" category is authentic. Live Verify connects the company directly to the DHS record, stopping "Social Security Card" fraud where stolen IDs are used to hide illegal hiring.
 
 **Mortgage Lenders / Banks**
 **Status Vetting:** Verifying that a borrower is a "Permanent Resident" before granting a 30-year mortgage, as non-resident loans carry significantly higher risk and different interest rates.

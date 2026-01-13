@@ -71,7 +71,7 @@ The **Manufacturer (The Shop)** benefits from verification.
 **Safety Audit:** A mechanic installing a part can scan the QC report. If the hash returns **"RECALLED - EMBRITTLEMENT RISK,"** they can stop the installation immediately, potentially preventing a crash.
 
 **Government Safety Agencies (FAA, FDA)**
-**Regulatory Oversight:** During a routine audit, the agency can scan random QC reports from the company's files. OCR-to-hash ensures the company isn't "Fabricating" tests to hide production errors.
+**Regulatory Oversight:** During a routine audit, the agency can scan random QC reports from the company's files. Live Verify ensures the company isn't "Fabricating" tests to hide production errors.
 
 **Insurance Loss Adjusters**
 **Root Cause Analysis:** After an industrial accident, the insurer verifies the QC reports of all critical components to determine if the failure was due to a faulty part or improper maintenance.

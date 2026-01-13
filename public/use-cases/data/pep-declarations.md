@@ -90,7 +90,7 @@ The **Client / Declarant** benefits from verification.
 **Transaction Monitoring:** When a $5M wire moves through a correspondent bank, the bank scans the verified PEP hashes attached to the file. Verification ensures that the "EDD Check" was actually performed by a reputable institution and hasn't been "Faked" to bypass sanctions.
 
 **Regulatory Auditors (e.g., FCA / FinCEN)**
-**Thematic Review:** During a surprise audit, the regulator can scan random PEP declarations. OCR-to-hash ensures the bank isn't "Providing higher-quality declarations to the regulator" than they are "Actually collecting from clients," stopping "Backdated Disclosure" fraud.
+**Thematic Review:** During a surprise audit, the regulator can scan random PEP declarations. Live Verify ensures the bank isn't "Providing higher-quality declarations to the regulator" than they are "Actually collecting from clients," stopping "Backdated Disclosure" fraud.
 
 **Venture Capital / M&A**
 **Board Vetting:** Verifying the "Political Risk" of a target company's founders or board members before a major acquisition.

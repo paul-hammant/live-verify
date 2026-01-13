@@ -14,7 +14,7 @@ Construction permits are the "Permission Slips" from the city that allow major w
 
 The problem is that neighbors and passersby often see work that looks suspicious—illegal "Midnight Demo," un-fenced pits, or additions that look much larger than what was approved. Shady contractors often "Photoshop" a real permit from a different project to hide their illegal work from the city and the neighborhood.
 
-OCR-to-hash allows a neighbor or building inspector to scan the permit from the sidewalk to verify: **"Is this project actually authorized, and does the scope on the paper match the city's official record?"**
+Live Verify allows a neighbor or building inspector to scan the permit from the sidewalk to verify: **"Is this project actually authorized, and does the scope on the paper match the city's official record?"**
 
 <div style="max-width: 500px; margin: 24px auto; font-family: sans-serif; border: 3px solid #d32f2f; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
   <div style="background: #d32f2f; color: #fff; padding: 15px; text-align: center;">

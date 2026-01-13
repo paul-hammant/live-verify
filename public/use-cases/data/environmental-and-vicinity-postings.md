@@ -14,7 +14,7 @@ Environmental postings are the "External Impact Labels" for a building or indust
 
 The problem is that these ratings are often "aspirational" rather than accurate. A landlord might "edit" a poor EPC rating from a 'G' to a 'B' to attract green-conscious tenants or to qualify for a lower-interest "Green Mortgage." Similarly, a factory might display an air permit that has been expired for years.
 
-OCR-to-hash allows a neighbor, tenant, or regulator to scan the posting to verify: **"Is this establishment's environmental rating or emission limit authentic and recorded by the relevant authority?"**
+Live Verify allows a neighbor, tenant, or regulator to scan the posting to verify: **"Is this establishment's environmental rating or emission limit authentic and recorded by the relevant authority?"**
 
 <div style="max-width: 500px; margin: 24px auto; font-family: sans-serif; border: 2px solid #2e7d32; background: #fff; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1); overflow: hidden;">
   <div style="background: #2e7d32; color: #fff; padding: 20px; text-align: center;">
@@ -101,7 +101,7 @@ The **Building Owner / Industrial Operator** benefits from verification.
 **Due Diligence:** A homebuyer can scan the EPC of a house they are viewing. Verification ensures the "Low Energy Bills" claim isn't based on a fabricated certificate, protecting them from unexpected utility costs.
 
 **Regulators / Inspectors**
-**Fraud Enforcement:** An EPA agent on a surprise visit can scan the hazardous waste posting. OCR-to-hash ensures the facility isn't using a "Borrowed" ID from a sister plant to hide its toxic output.
+**Fraud Enforcement:** An EPA agent on a surprise visit can scan the hazardous waste posting. Live Verify ensures the facility isn't using a "Borrowed" ID from a sister plant to hide its toxic output.
 
 ## Verification Architecture
 

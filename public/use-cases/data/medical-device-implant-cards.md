@@ -72,7 +72,7 @@ The **Patient (Implant Recipient)** benefits from verification.
 ## Third-Party Use
 
 **Radiology Departments (MRI/CT)**
-**Safety Triage:** Instantly verifying the "MRI Conditionality" of a patient's implant. OCR-to-hash connects the tech directly to the manufacturer's safety database, bypassing the "Manual Model Lookup" bottleneck.
+**Safety Triage:** Instantly verifying the "MRI Conditionality" of a patient's implant. Live Verify connects the tech directly to the manufacturer's safety database, bypassing the "Manual Model Lookup" bottleneck.
 
 **Airport Security (TSA)**
 **Expedited Screening:** Verifying the "Implant Status" of a traveler who cannot go through a standard metal detector, reducing the friction of a manual pat-down.
@@ -122,11 +122,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. UDI Barcodes
 
-| Feature | OCR-to-Hash | GS1 / UDI Barcode | Physical Implant Card |
+| Feature | Live Verify | GS1 / UDI Barcode | Physical Implant Card |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Manufacturer. | **Self-Contained.** Trust the data *on* the sticker. | **Zero.** Easily forged. |
 | **Freshness** | **Real-time.** Shows if recalled *today*. | **Static.** Only shows what was printed years ago. | **Static.** |
 | **Integrity** | **Cryptographic.** Binds the *Serial #*. | **Medium.** Easy to clone a barcode. | **Vulnerable.** |
 | **Hardware** | **Universal.** Any smartphone camera. | **Specialized.** Requires 2D barcode scanners. | **Visual.** |
 
-**Why OCR wins here:** The "Wallet Reality." Patients carry a card, not a barcode scanner. While the *box* has a UDI barcode, the *patient* only has the paper card. OCR-to-hash turn that **Wallet Card** into a live safety portal, bringing "UDI-level" security to the patient's everyday life.
+**Why Live Verify wins here:** The "Wallet Reality." Patients carry a card, not a barcode scanner. While the *box* has a UDI barcode, the *patient* only has the paper card. Live Verify turn that **Wallet Card** into a live safety portal, bringing "UDI-level" security to the patient's everyday life.

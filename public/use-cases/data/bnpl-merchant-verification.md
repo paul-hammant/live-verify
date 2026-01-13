@@ -40,7 +40,7 @@ furtherDerivations: 1
 Merchant legal name, business URL, BNPL provider (Klarna/Affirm/Afterpay), partnership tier, authorization date, last vetting date, allowed products (Pay-in-4, monthly financing).
 
 **Document Types:**
-- **Digital Merchant Badge:** (With OCR-to-hash back-link).
+- **Digital Merchant Badge:** (With Live Verify back-link).
 - **Certificate of Partnership:** For display in physical stores.
 - **Compliance Audit Report:** For BNPL internal records.
 
@@ -112,10 +112,10 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Static Badges
 
-| Feature | OCR-to-Hash | Static "Trust" Badge | Verified by Visa (3DS) |
+| Feature | Live Verify | Static "Trust" Badge | Verified by Visa (3DS) |
 | :--- | :--- | :--- | :--- |
 | **Trust** | **Cryptographic.** Bound to the Bank's domain. | **Zero.** Just a JPEG image that anyone can copy. | **High.** But only at the *payment* step. |
 | **Verification** | **Pre-Payment.** User verifies *before* giving data. | **None.** | **Late.** Happens after user submits info. |
 | **Integrity** | **Binds Merchant.** Hash protects the URL/Name. | **None.** | **High.** |
 
-**Why OCR wins here:** Early Trust. Static "Trust Badges" are the most common tool used by scammers because they are easy to copy. OCR-to-hash turns the badge into a **live cryptographic proof**. It allows the consumer to verify the merchant's legitimacy *before* they start the checkout process, stopping phishing at the source.
+**Why Live Verify wins here:** Early Trust. Static "Trust Badges" are the most common tool used by scammers because they are easy to copy. Live Verify turns the badge into a **live cryptographic proof**. It allows the consumer to verify the merchant's legitimacy *before* they start the checkout process, stopping phishing at the source.

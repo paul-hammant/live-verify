@@ -14,7 +14,7 @@ Criminals posing as **Utility Workers** (Gas, Electric, Water) is one of the mos
 
 Legitimate utility workers often have badges that are easily forged with a home printer. Even if the badge is real, the resident has no way of knowing if the worker is actually on a scheduled shift or if their employment was terminated yesterday.
 
-OCR-to-hash allows a homeowner to scan the worker's ID badge to verify: **"Is this person an active employee of this specific utility, and is there a valid service order for this address today?"**
+Live Verify allows a homeowner to scan the worker's ID badge to verify: **"Is this person an active employee of this specific utility, and is there a valid service order for this address today?"**
 
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #0066cc; border-radius: 10px; background: #fff; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
   <div style="background: #0066cc; color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
@@ -275,11 +275,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Uniforms / Phone Calls
 
-| Feature | OCR-to-Hash | Uniform & Clipboard | Calling Dispatch |
+| Feature | Live Verify | Uniform & Clipboard | Calling Dispatch |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Company. | **Visual.** Trusted only via logo. | **Human.** Prone to social engineering. |
 | **Integrity** | **Cryptographic.** Binds face to status. | **Zero.** Uniforms are easily bought. | **Variable.** |
 | **Speed** | **Instant.** 5-second scan. | **N/A.** Just looking. | **Slow.** Often takes 10-20 minutes on hold. |
 | **Freshness** | **Real-time.** Shows if banned *today*. | **Static.** | **N/A.** |
 
-**Why OCR wins here:** The "Threshold Moment." Residents decide to open their gate or door in seconds. They don't want to engage in a long conversation or a phone call while a stranger stands on their porch. OCR-to-hash turn the **ID Badge** into a live, non-confrontational safety tool that provides instant, high-authority trust.
+**Why Live Verify wins here:** The "Threshold Moment." Residents decide to open their gate or door in seconds. They don't want to engage in a long conversation or a phone call while a stranger stands on their porch. Live Verify turn the **ID Badge** into a live, non-confrontational safety tool that provides instant, high-authority trust.

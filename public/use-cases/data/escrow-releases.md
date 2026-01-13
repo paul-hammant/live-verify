@@ -118,7 +118,7 @@ The **Seller/Depositor** benefits from verification.
 
 **Wire Fraud Prevention**
 
-OCR-to-hash doesn't prevent wire fraud directly, but it provides an independent verification path. Before wiring funds, parties can verify that closing instructions match the escrow agent's verified hash.
+Live Verify doesn't prevent wire fraud directly, but it provides an independent verification path. Before wiring funds, parties can verify that closing instructions match the escrow agent's verified hash.
 
 **Multi-Party Verification**
 

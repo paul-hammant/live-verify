@@ -118,11 +118,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Claims Management Portals
 
-| Feature | OCR-to-Hash | Claims Portal (Guidewire) | Scanned PDF Report |
+| Feature | Live Verify | Claims Portal (Guidewire) | Scanned PDF Report |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the IA Firm. | **System-Bound.** Trust the Carrier's IT. | **Zero.** Easily forged. |
 | **User Access** | **Universal.** Share with any contractor/bank. | **Zero.** External parties never get portal access. | **Universal.** |
 | **Integrity** | **Binds Details.** Protects the RCV amount. | **High.** | **Vulnerable.** |
 | **Interoperability** | **High.** Works across 100+ different IA firms. | **Low.** Every carrier uses a different system. | **Universal.** |
 
-**Why OCR wins here:** The "External Vetting" gap. Carriers and IA firms operate in private silos. Contractors and banks are locked out. OCR-to-hash turns the **Field Inspection PDF** into a portable, cryptographically trusted link that bridges the gap between the field expert and the people paying the bills.
+**Why Live Verify wins here:** The "External Vetting" gap. Carriers and IA firms operate in private silos. Contractors and banks are locked out. Live Verify turns the **Field Inspection PDF** into a portable, cryptographically trusted link that bridges the gap between the field expert and the people paying the bills.

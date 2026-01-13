@@ -69,7 +69,7 @@ The **Insurer's Board of Directors** benefits from verification.
 ## Third-Party Use
 
 **State Insurance Commissioners (DOI)**
-**Market Oversight:** Regulators can verify the authenticity of the actuarial signature and the specific reserve figures. OCR-to-hash prevents a carrier from submitting a "Realistic" version to their reinsurer and a "Rosy" version to the state.
+**Market Oversight:** Regulators can verify the authenticity of the actuarial signature and the specific reserve figures. Live Verify prevents a carrier from submitting a "Realistic" version to their reinsurer and a "Rosy" version to the state.
 
 **Rating Agencies (A.M. Best / Moody's)**
 **Capital Adequacy:** Verifying the actuarial opinion underlying the carrier's credit rating. A verified "Reasonable Range" check allows for more accurate rating actions.
@@ -117,12 +117,12 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. SERFF Public Search
 
-| Feature | OCR-to-Hash | SERFF / State Public Search | Scanned PDF Memo |
+| Feature | Live Verify | SERFF / State Public Search | Scanned PDF Memo |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Actuary/Insurer. | **Gov-Bound.** | **Zero.** Easily forged. |
 | **Speed** | **Instant.** Scan the paper in the boardroom. | **Slow.** Requires finding the NAIC # and navigating Gov UI. | **Instant.** |
 | **Immediacy** | **Real-time.** Shows if firm retracted opinion. | **Laggy.** Depends on annual filing cycles. | **Static.** |
 | **Detail** | **High.** Shows specific line-of-business limits. | **Low.** Often only shows aggregated totals. | **Vulnerable.** |
 
-**Why OCR wins here:** The "Negotiation" reality. Reserve audits involve thousands of pages of "Loss Triangles" and Actuarial Memos. Negotiators don't have time to cross-reference every page with a slow government portal. OCR-to-hash turn the **Physical Report** into a live, trusted clinical link, ensuring the "Financial Safety Net" is as strong as it looks on paper.
+**Why Live Verify wins here:** The "Negotiation" reality. Reserve audits involve thousands of pages of "Loss Triangles" and Actuarial Memos. Negotiators don't have time to cross-reference every page with a slow government portal. Live Verify turn the **Physical Report** into a live, trusted clinical link, ensuring the "Financial Safety Net" is as strong as it looks on paper.
 

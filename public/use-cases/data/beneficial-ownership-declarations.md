@@ -130,10 +130,10 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Registry Portals
 
-| Feature | OCR-to-Hash | Public Registry Portal | Private KYC Utility (Swift) |
+| Feature | Live Verify | Public Registry Portal | Private KYC Utility (Swift) |
 | :--- | :--- | :--- | :--- |
 | **User Privacy** | **High.** Only the specific company is verified. | **Low.** Many registries are public/searchable (privacy risk). | **Very Low.** Centralized data pool. |
 | **Trust** | **Cryptographic.** Bound to the Gov domain. | **Medium.** Prone to UI spoofing/phishing. | **High.** But requires expensive membership. |
 | **Immediacy** | **Instant.** Scan the document during onboarding. | **Slow.** Login, search, pay fee, download PDF. | **Fast.** But siloed. |
 
-**Why OCR wins here:** It bridges the gap between the **Private Corporate File** and the **Public Government Record**. It allows a company to prove its status to a partner *without* the partner needing to independently navigate a foreign, complex, and potentially expensive government registry website.
+**Why Live Verify wins here:** It bridges the gap between the **Private Corporate File** and the **Public Government Record**. It allows a company to prove its status to a partner *without* the partner needing to independently navigate a foreign, complex, and potentially expensive government registry website.

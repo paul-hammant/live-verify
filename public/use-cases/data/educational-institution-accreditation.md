@@ -128,11 +128,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. CHEA Database
 
-| Feature | OCR-to-Hash | CHEA / DAPIP Database | Scanned PDF |
+| Feature | Live Verify | CHEA / DAPIP Database | Scanned PDF |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Board. | **Gov-Bound.** Bound to the US Gov. | **Zero.** Easily forged. |
 | **Speed** | **Instant.** Scan the paper on the wall. | **Slow.** Requires property search and navigation. | **Instant.** |
 | **Integrity** | **Binds Certificate.** Proves the *paper* matches. | **Data-Only.** Doesn't protect against forged certificates. | **Vulnerable.** |
 | **Alerting** | **Active.** Can show "PROBATION" in red. | **Passive.** | **Hidden.** |
 
-**Why OCR wins here:** The "Lobby Entrance" reality. Parents and students decide to trust a school while standing in the lobby. They aren't going to search the federal DAPIP database on their phones. OCR-to-hash turns the **Institutional Trophy** into a **Digital Truth**, ensuring that the prestige of the certificate matches the reality of its accreditation.
+**Why Live Verify wins here:** The "Lobby Entrance" reality. Parents and students decide to trust a school while standing in the lobby. They aren't going to search the federal DAPIP database on their phones. Live Verify turns the **Institutional Trophy** into a **Digital Truth**, ensuring that the prestige of the certificate matches the reality of its accreditation.

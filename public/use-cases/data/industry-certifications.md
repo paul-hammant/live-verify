@@ -43,7 +43,7 @@ Certified individual name, certification title (e.g., PMP, CISSP, AWS Architect)
 - **Professional Certificate:** The formal "Wall Diploma."
 - **Wallet Card:** For field-access requirements (e.g., OSHA 30).
 - **Exam Score Report:** (Linked hash) for recent test results.
-- **Badge Metadata:** For digital badges (with OCR-to-hash back-link).
+- **Badge Metadata:** For digital badges (with Live Verify back-link).
 
 ## Data Visible After Verification
 
@@ -68,7 +68,7 @@ The **Certified Professional** benefits from verification.
 ## Third-Party Use
 
 **Hiring Managers / Recruiters**
-**Instant Vetting:** Scanning the certificates of 50+ candidates in minutes. OCR-to-hash allows an applicant tracking system (ATS) to automatically validate credentials against the issuing organization's domain, stopping "Credential Forgery" at the scale of the entire hiring pipeline.
+**Instant Vetting:** Scanning the certificates of 50+ candidates in minutes. Live Verify allows an applicant tracking system (ATS) to automatically validate credentials against the issuing organization's domain, stopping "Credential Forgery" at the scale of the entire hiring pipeline.
 
 **State / Federal Regulators**
 **Contract Compliance:** Verifying that the lead engineer on a public works project actually holds the mandatory "PE" or "OSHA 30" verified certifications required by the contract.
@@ -116,11 +116,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Digital Badges (Credly)
 
-| Feature | OCR-to-Hash | Digital Badges (Credly/Acclaim) | Scanned PDF |
+| Feature | Live Verify | Digital Badges (Credly/Acclaim) | Scanned PDF |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Org (PMI). | **System-Bound.** Trust the badge vendor. | **Zero.** Easily forged. |
 | **Interoperability** | **Universal.** Works across any cert body. | **Low.** Only for bodies who pay for Credly. | **Universal.** |
 | **Integrity** | **Binds Content.** Protects the ID #. | **High.** Direct digital link. | **Vulnerable.** |
 | **Hardware** | **Universal.** Any smartphone camera. | **Technical.** Requires app/portal access. | **Visual.** |
 
-**Why OCR wins here:** The "Paper Wall." Most high-end certifications are still issued as high-quality paper diplomas or PDFs. While digital badges are growing, they don't help in a face-to-face interview or a project bid binder. OCR-to-hash turn the **Static Certificate** into a live digital dashboard, bringing "Digital Badge" integrity to the world of paper.
+**Why Live Verify wins here:** The "Paper Wall." Most high-end certifications are still issued as high-quality paper diplomas or PDFs. While digital badges are growing, they don't help in a face-to-face interview or a project bid binder. Live Verify turn the **Static Certificate** into a live digital dashboard, bringing "Digital Badge" integrity to the world of paper.

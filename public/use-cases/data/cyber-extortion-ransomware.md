@@ -79,7 +79,7 @@ The **Insured Company** (Victim) benefits from verification.
 ## Third-Party Use
 
 **Federal Regulators (FBI / CISA)**
-**Breach Monitoring:** Regulators can verify the "Official Data" of a breach report without seeing the victim's private emails. OCR-to-hash ensures the victim isn't under-reporting the scale of data exfiltration.
+**Breach Monitoring:** Regulators can verify the "Official Data" of a breach report without seeing the victim's private emails. Live Verify ensures the victim isn't under-reporting the scale of data exfiltration.
 
 **External Audit (Big 4)**
 **Financial Reporting:** Auditors verify that the multimillion-dollar "Special Expense" on the balance sheet is backed by a verified insurance claim and isn't a cover-up for internal embezzlement.
@@ -129,11 +129,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Secure Portals
 
-| Feature | OCR-to-Hash | Secure Underwriter Portal | Scanned PDF Report |
+| Feature | Live Verify | Secure Underwriter Portal | Scanned PDF Report |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Insurer. | **System-Bound.** | **Zero.** Easily forged. |
 | **Privacy** | **High.** Share only the *Authorization*. | **Low.** Portal access often reveals full policy/history. | **Medium.** |
 | **Immutability** | **High.** Once hashed, the record is fixed. | **Dynamic.** System records can be edited. | **Vulnerable.** |
 | **User Control** | **High.** Victim chooses when to share. | **Low.** Data controlled by the Insurer. | **High.** |
 
-**Why OCR wins here:** The "Fog of War." During a ransomware attack, the victim's internal systems are often **down**. They are communicating via personal phones and printed papers. OCR-to-hash allows them to have **cryptographic trust** in the emergency papers they are receiving from their insurer, even when their own network is encrypted.
+**Why Live Verify wins here:** The "Fog of War." During a ransomware attack, the victim's internal systems are often **down**. They are communicating via personal phones and printed papers. Live Verify allows them to have **cryptographic trust** in the emergency papers they are receiving from their insurer, even when their own network is encrypted.

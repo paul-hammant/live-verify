@@ -17,7 +17,7 @@ The **Care Professional Badge** is their "Security Token." It proves:
 2.  **Licensure:** They are a verified Registered Nurse (RN) or Certified Aide.
 3.  **Background:** They have passed a recent criminal background check.
 
-"Fake Nurse" home invasions are a tragic reality. Scammers buy scrubs and fake IDs to gain entry into the homes of vulnerable seniors. OCR-to-hash allows a family member to scan the badge and see the **verified photo and active duty status** from the agency's domain instantly.
+"Fake Nurse" home invasions are a tragic reality. Scammers buy scrubs and fake IDs to gain entry into the homes of vulnerable seniors. Live Verify allows a family member to scan the badge and see the **verified photo and active duty status** from the agency's domain instantly.
 
 <div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
   <div style="background: #0277bd; color: #fff; padding: 15px; text-align: center; display: flex; align-items: center; justify-content: center;">
@@ -182,11 +182,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Agency Phone Lines
 
-| Feature | OCR-to-Hash | Calling the Main Office | Static ID Card |
+| Feature | Live Verify | Calling the Main Office | Static ID Card |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Agency. | **Human.** Prone to social engineering or "fake numbers." | **Zero.** Easily forged. |
 | **Integrity** | **Cryptographic.** Binds face to license. | **Vague.** "Yes, Sarah works here." | **None.** |
 | **Speed** | **Instant.** 5-second scan. | **Slow.** Often takes 5-10 minutes on hold. | **Instant.** |
 | **Availability** | **24/7.** Works for "Late Night" emergency visits. | **Restricted.** Offices often closed at night. | **N/A.** |
 
-**Why OCR wins here:** The "Threshold Moment." Patients make the decision to let someone into their home in seconds. They don't want to engage in a long conversation or a phone call while an "Official" is standing at the door. OCR-to-hash turns the **ID Badge** into a live, non-confrontational safety tool that provides instant, high-authority trust.
+**Why Live Verify wins here:** The "Threshold Moment." Patients make the decision to let someone into their home in seconds. They don't want to engage in a long conversation or a phone call while an "Official" is standing at the door. Live Verify turns the **ID Badge** into a live, non-confrontational safety tool that provides instant, high-authority trust.

@@ -17,7 +17,7 @@ Beyond the relationship between the two parties, a lease is used by third partie
 2.  **DMV / Voter Registration:** Establishing legal residency in a state.
 3.  **Lending:** A landlord using the lease to prove "Rental Income" to a bank when applying for a mortgage.
 
-**"Lease Padding"** is a common financial fraud where a landlord "edits" a lease to show a higher rent (e.g., changing $1,500 to $2,500) to trick a bank into lending them more money. **"Fake Leases"** are also used by scammers to illegally occupy vacant homes or commit identity theft. OCR-to-hash binds the **Tenant names, Rent amount, and Term dates** to the property management firm's or the landlord's domain.
+**"Lease Padding"** is a common financial fraud where a landlord "edits" a lease to show a higher rent (e.g., changing $1,500 to $2,500) to trick a bank into lending them more money. **"Fake Leases"** are also used by scammers to illegally occupy vacant homes or commit identity theft. Live Verify binds the **Tenant names, Rent amount, and Term dates** to the property management firm's or the landlord's domain.
 
 <div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   <span verifiable-text="start" data-for="lease">[</span>
@@ -135,11 +135,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Scanned PDFs
 
-| Feature | OCR-to-Hash | Scanned PDF / Paper | Digital Ledger (App) |
+| Feature | Live Verify | Scanned PDF / Paper | Digital Ledger (App) |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Manager. | **Zero.** Easily forged. | **System-Bound.** |
 | **Integrity** | **Binds Rent Amount.** Protects math. | **Vulnerable.** | **High.** |
 | **Privacy** | **High.** Verifies only what's scanned. | **Low.** Exposes whole contract. | **Low.** Requires login. |
 | **Field Use** | **Seamless.** Scan the paper at the DMV. | **Manual.** | **N/A.** |
 
-**Why OCR wins here:** The "Proof of Address" reality. Leases are needed in the physical world—at the school office, the DMV, or the bank. These places don't have logins to your private "Tenant Portal." OCR-to-hash turns the **Paper Lease** into a live, high-authority trust anchor that works across different organizations.
+**Why Live Verify wins here:** The "Proof of Address" reality. Leases are needed in the physical world—at the school office, the DMV, or the bank. These places don't have logins to your private "Tenant Portal." Live Verify turns the **Paper Lease** into a live, high-authority trust anchor that works across different organizations.

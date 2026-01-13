@@ -122,11 +122,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Physical Seals / Notarization
 
-| Feature | OCR-to-Hash | Notary Seal (Embossed) | Scanned PDF |
+| Feature | Live Verify | Notary Seal (Embossed) | Scanned PDF |
 | :--- | :--- | :--- | :--- |
 | **Integrity** | **Binds Content.** Protects every word. | **Binds Paper.** Doesn't prevent editing the text. | **Zero.** Easily forged. |
 | **Trust Anchor** | **Domain-Bound.** Trust the Firm. | **License-Bound.** Trust the Notary. | **Visual.** |
 | **User Control** | **High.** Share only the verified doc. | **Medium.** Prone to loss. | **Low.** |
 | **Speed** | **Instant.** 5-second scan. | **Manual.** Requires visual expert. | **N/A.** |
 
-**Why OCR wins here:** Content Protection. A Notary only proves that "John Smith signed this paper." They do not read the translation or verify its accuracy. OCR-to-hash binds the **actual translated text** to the Translation Firm's domain, ensuring the *message* hasn't been tampered with.
+**Why Live Verify wins here:** Content Protection. A Notary only proves that "John Smith signed this paper." They do not read the translation or verify its accuracy. Live Verify binds the **actual translated text** to the Translation Firm's domain, ensuring the *message* hasn't been tampered with.

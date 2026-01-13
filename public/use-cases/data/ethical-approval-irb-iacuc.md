@@ -131,11 +131,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. IRB Management Systems (Click/InfoEd)
 
-| Feature | OCR-to-Hash | IRB Portal (Click/InfoEd) | Scanned PDF Letter |
+| Feature | Live Verify | IRB Portal (Click/InfoEd) | Scanned PDF Letter |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the University. | **System-Bound.** Trust the DB admin. | **Zero.** Easily forged. |
 | **Interoperability** | **Universal.** Works across any institution. | **Low.** Journal editors don't have Click logins. | **Universal.** |
 | **Integrity** | **Binds Scope.** Protects the study title. | **Data-Only.** | **Vulnerable.** |
 | **Speed** | **Instant.** 5-second scan. | **Slow.** Requires manual search by ID. | **N/A.** |
 
-**Why OCR wins here:** The "External Review" gap. Ethics committees operate in private silos. Journals, funders, and the public are locked out. OCR-to-hash turns the **Internal Ethical Approval** into a portable, cryptographically trusted artifact that bridges the gap between institutional oversight and the global scientific community.
+**Why Live Verify wins here:** The "External Review" gap. Ethics committees operate in private silos. Journals, funders, and the public are locked out. Live Verify turns the **Internal Ethical Approval** into a portable, cryptographically trusted artifact that bridges the gap between institutional oversight and the global scientific community.

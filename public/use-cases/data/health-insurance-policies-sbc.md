@@ -80,7 +80,7 @@ The **Policyholder** (second party) receives the Summary of Benefits and Coverag
 The policyholder (second party) may hand the verified document to various third parties:
 
 **Healthcare Providers (Hospitals)**
-**Revenue Cycle Management:** Instantly verifying the "Deductible" and "Out-of-Pocket" limits before scheduling a $20,000 procedure. OCR-to-hash connects the hospital's billing system directly to the insurer's verified plan definitions.
+**Revenue Cycle Management:** Instantly verifying the "Deductible" and "Out-of-Pocket" limits before scheduling a $20,000 procedure. Live Verify connects the hospital's billing system directly to the insurer's verified plan definitions.
 
 **HR / Benefit Platforms**
 **Automated Onboarding:** Using the SBC hash to automatically populate the benefit details into a new employee's portal, ensuring zero data-entry errors.
@@ -129,11 +129,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Healthcare.gov (Federal Registry)
 
-| Feature | OCR-to-Hash | Healthcare.gov / CMS Search | Scanned PDF SBC |
+| Feature | Live Verify | Healthcare.gov / CMS Search | Scanned PDF SBC |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Insurer. | **Gov-Bound.** Bound to the US Gov. | **Zero.** Easily forged. |
 | **Integrity** | **Binds Details.** Protects the copay $ amounts. | **Data-Only.** Doesn't verify the paper doc. | **Vulnerable.** |
 | **Speed** | **Instant.** Scan the paper in the lobby. | **Slow.** Requires finding the Plan ID and navigating Gov UI. | **Instant.** |
 | **Coverage** | **Universal.** Works for private "Off-Market" plans. | **Limited.** Only for Exchange-based plans. | **Full.** |
 
-**Why OCR wins here:** The "Lobby Moment." Patients decide to see a doctor while standing at the front desk. They aren't going to log into a federal government database to check a copay. OCR-to-hash turns the **Mandatory SBC Printout** into a live, trusted clinical link, ensuring the patient and the doctor are on the same page regarding costs.
+**Why Live Verify wins here:** The "Lobby Moment." Patients decide to see a doctor while standing at the front desk. They aren't going to log into a federal government database to check a copay. Live Verify turns the **Mandatory SBC Printout** into a live, trusted clinical link, ensuring the patient and the doctor are on the same page regarding costs.

@@ -75,7 +75,7 @@ The **Locksmith (Practitioner)** benefits from verification.
 **Burglary Prevention:** Criminals often pose as "Mobile Locksmiths" to gain entry to high-value properties or to duplicate keys for later use. Scanning the badge hash confirms the person is a "Verified On-Duty" professional, protecting the owner from "Fake Locksmith" scams.
 
 **Service Marketplaces (Google / Yelp)**
-**Merchant Vetting:** Google currently "Local Services Verified" for locksmiths. OCR-to-hash turns that one-time check into a **Continuous Audit Link**, ensuring that a merchant who is suspended by the state is instantly removed from the search results.
+**Merchant Vetting:** Google currently "Local Services Verified" for locksmiths. Live Verify turns that one-time check into a **Continuous Audit Link**, ensuring that a merchant who is suspended by the state is instantly removed from the search results.
 
 **Commercial Property Managers**
 **Liability Control:** Ensuring that only licensed and bonded professionals are performing "Master Keying" on a large office complex.
@@ -122,11 +122,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Review Sites (Yelp)
 
-| Feature | OCR-to-Hash | Yelp / Google Reviews | Physical ID Card |
+| Feature | Live Verify | Yelp / Google Reviews | Physical ID Card |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the State Gov. | **Social-Bound.** Trusted via crowd opinion. | **Zero.** Easily forged. |
 | **Integrity** | **Cryptographic.** Binds face to license. | **Vulnerable.** Reviews can be faked/bought. | **None.** |
 | **Speed** | **Instant.** 5-second scan. | **Slow.** Requires reading multiple reviews. | **Instant.** |
 | **Freshness** | **Real-time.** Shows if banned *today*. | **N/A.** | **Static.** |
 
-**Why OCR wins here:** The "Emergency Moment." Most people call a locksmith when they are locked out and stressed. They don't want to engage in a long conversation or a deep-dive on Yelp. OCR-to-hash turns the **ID Badge** into a live, non-confrontational safety tool that provides instant, high-authority trust at the door.
+**Why Live Verify wins here:** The "Emergency Moment." Most people call a locksmith when they are locked out and stressed. They don't want to engage in a long conversation or a deep-dive on Yelp. Live Verify turns the **ID Badge** into a live, non-confrontational safety tool that provides instant, high-authority trust at the door.

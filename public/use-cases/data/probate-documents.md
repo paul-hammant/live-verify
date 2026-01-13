@@ -17,7 +17,7 @@ The most critical document in this process is **Letters Testamentary** (or Lette
 2.  **Sell Property:** Sign deeds for the deceased's home.
 3.  **Access Data:** Take control of email and social media accounts.
 
-**"Estate Hijacking"** is a high-value fraud. Criminals monitor obituaries, create a fake Will, and forge a "Letters Testamentary" document with a fake court seal. They then take this paper to a bank and drain the estate before the real heirs even know probate has started. OCR-to-hash binds the **Executor's name and Case ID** to the Superior Court's domain, allowing banks to instantly verify the legal authority of the person standing at the counter.
+**"Estate Hijacking"** is a high-value fraud. Criminals monitor obituaries, create a fake Will, and forge a "Letters Testamentary" document with a fake court seal. They then take this paper to a bank and drain the estate before the real heirs even know probate has started. Live Verify binds the **Executor's name and Case ID** to the Superior Court's domain, allowing banks to instantly verify the legal authority of the person standing at the counter.
 
 <div style="max-width: 600px; margin: 24px auto; font-family: 'Georgia', serif; border: 1px solid #333; background: #fff; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
   <div style="text-align: center; margin-bottom: 30px;">
@@ -126,11 +126,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Certified Copies (Purple Ink)
 
-| Feature | OCR-to-Hash | Certified Copy (Ink/Seal) | Online Docket (Public) |
+| Feature | Live Verify | Certified Copy (Ink/Seal) | Online Docket (Public) |
 | :--- | :--- | :--- | :--- |
 | **Tamper Proof** | **High.** Binds text to status. | **Low.** Seals are easy to forge. | **High.** |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Court. | **Physical.** Trust the paper. | **System-Bound.** |
 | **Speed** | **Instant.** 5-second scan. | **Manual.** requires visual audit. | **Slow.** Requires Case # and search. |
 | **Revocation** | **Real-time.** Shows "REVOKED." | **Zero.** The paper stays the same. | **Manual.** |
 
-**Why OCR wins here:** The "Saturday Morning" reality. Executors often try to handle estate business on weekends when court clerks are unreachable. OCR-to-hash turns the **Judge's Order** into a live digital checkpoint, ensuring that "Legal Authority" is a cryptographically verified fact at the exact moment the money moves.
+**Why Live Verify wins here:** The "Saturday Morning" reality. Executors often try to handle estate business on weekends when court clerks are unreachable. Live Verify turns the **Judge's Order** into a live digital checkpoint, ensuring that "Legal Authority" is a cryptographically verified fact at the exact moment the money moves.

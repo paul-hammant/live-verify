@@ -133,13 +133,13 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Electronic B/L (eBL)
 
-| Feature | OCR-to-Hash | eBL Platform (Bolero/WAVE) | Paper BOL |
+| Feature | Live Verify | eBL Platform (Bolero/WAVE) | Paper BOL |
 | :--- | :--- | :--- | :--- |
 | **Connectivity** | **Offline-Ready.** Proves the paper at the gate. | **Fragile.** Requires all parties to be on the same platform. | **Manual.** Relies on watermarks. |
 | **Trust** | **Domain-Bound.** Trust the Carrier directly. | **Closed Loop.** Trust the platform provider. | **Visual.** Very easy to forge. |
 | **Interoperability** | **Universal.** Works for any carrier with a domain. | **Siloed.** Bolero users can't easily talk to WAVE users. | **Universal.** |
 
-**Why OCR wins here:** The "Platform War." The shipping industry is currently fighting over 5 different eBL standards. OCR-to-hash bypasses the war by providing a **universal digital overlay** for the one thing everyone already uses: the paper (or PDF) Bill of Lading.
+**Why Live Verify wins here:** The "Platform War." The shipping industry is currently fighting over 5 different eBL standards. Live Verify bypasses the war by providing a **universal digital overlay** for the one thing everyone already uses: the paper (or PDF) Bill of Lading.
 
 
 ---

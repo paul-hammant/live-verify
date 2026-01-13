@@ -101,12 +101,12 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. EDI / Blockchain
 
-| Feature | OCR-to-Hash | EDI (Shipping Standard) | GSBN Blockchain |
+| Feature | Live Verify | EDI (Shipping Standard) | GSBN Blockchain |
 | :--- | :--- | :--- | :--- |
 | **Trust** | **Cryptographic.** | **System-Bound.** | **Consensus-Bound.** |
 | **Accessibility** | **Universal.** Any clerk can scan. | **Zero.** Requires heavy IT setup. | **Low.** Requires membership. |
 | **Adoption** | **High.** Works with PDFs. | **Universal.** (For big ships). | **Low.** (Emerging). |
 
-**Why OCR wins here:**
-The "Silo" Problem. While big carriers use EDI, they don't share those logs with the exporter's local bank or a foreign customs agent. OCR-to-hash turns the **Draft PDF** into a portable "Token of Intent" that anyone can trust.
+**Why Live Verify wins here:**
+The "Silo" Problem. While big carriers use EDI, they don't share those logs with the exporter's local bank or a foreign customs agent. Live Verify turns the **Draft PDF** into a portable "Token of Intent" that anyone can trust.
 

@@ -63,7 +63,7 @@ Shows the issuer domain (the Subcontractor or their Payment Platform) and status
 
 The **General Contractor (GC)** benefits from verification.
 
-**Draw Management:** GCs manage hundreds of waivers per month. OCR-to-hash allows them to verify the *content* of the waivers (amounts/dates) against the digital record provided by the sub, preventing the "Photoshop Date Slide" where a sub re-uses an old waiver to get a new check.
+**Draw Management:** GCs manage hundreds of waivers per month. Live Verify allows them to verify the *content* of the waivers (amounts/dates) against the digital record provided by the sub, preventing the "Photoshop Date Slide" where a sub re-uses an old waiver to get a new check.
 
 **Risk Mitigation:** Ensuring that Tier-2 suppliers (who the GC doesn't know) have actually been paid by the sub-contractors, preventing a "Surprise Lien" from a supplier later.
 
@@ -118,11 +118,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Payment Portals (Textura)
 
-| Feature | OCR-to-Hash | Textura / Procore Pay | Paper / Email PDF |
+| Feature | Live Verify | Textura / Procore Pay | Paper / Email PDF |
 | :--- | :--- | :--- | :--- |
 | **User Access** | **Universal.** Any bank or buyer can verify. | **Siloed.** Requires all parties to pay for the same platform. | **Instant.** |
 | **Trust Anchor** | **Domain-Bound.** Trust the Payee. | **Platform-Bound.** Trust the vendor. | **Zero.** Easily forged. |
 | **Interoperability** | **High.** PDFs stay verifiable across systems. | **Low.** Hard to export "Trust" to a different system. | **Manual.** |
 | **Cost** | **Low.** Minimal infrastructure. | **High.** Fees often 0.2% of contract value. | **None.** |
 
-**Why OCR wins here:** The "Data Room" problem. In a property sale, the buyer's lawyer needs to verify the last 3 years of construction waivers. They don't have access to the seller's private Procore portal. OCR-to-hash provides **Portable Trust** that travels with the PDF into the data room and survives long after the project software has been deactivated.
+**Why Live Verify wins here:** The "Data Room" problem. In a property sale, the buyer's lawyer needs to verify the last 3 years of construction waivers. They don't have access to the seller's private Procore portal. Live Verify provides **Portable Trust** that travels with the PDF into the data room and survives long after the project software has been deactivated.

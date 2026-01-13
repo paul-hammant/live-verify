@@ -14,7 +14,7 @@ Insuring a jet is not like insuring a car. A single Gulfstream can be worth $75 
 
 The **Certificate of Insurance (COI)** is the high-stakes document that pilots must show to airport towers and customs agents around the world.
 
-If a pilot presents a fake certificate to land in London or Dubai, they are flying "uninsured" for hundreds of millions of dollars. Because there is no global database of plane insurance, officials rely on these printed papers. OCR-to-Hash provides the digital bridge they need.
+If a pilot presents a fake certificate to land in London or Dubai, they are flying "uninsured" for hundreds of millions of dollars. Because there is no global database of plane insurance, officials rely on these printed papers. Live Verify provides the digital bridge they need.
 
 <div style="max-width: 650px; margin: 24px auto; border: 1px solid #ccc; background: #fff; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <span verifiable-text="start" data-for="aviation">[</span>
@@ -130,10 +130,10 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. FAA Registries
 
-| Feature | OCR-to-Hash | FAA Civil Aviation Registry | Paper COI |
+| Feature | Live Verify | FAA Civil Aviation Registry | Paper COI |
 | :--- | :--- | :--- | :--- |
 | **Granularity** | **High.** Shows insurance limits and dates. | **Zero.** FAA registry shows ownership but *not* insurance. | **High.** But untrusted. |
 | **Cross-Border** | **Universal.** Works for any N-number or G-registration. | **Siloed.** National registries don't talk. | **Manual.** |
 | **Freshness** | **Real-time.** Checks if the premium was paid today. | **Laggy.** Changes take weeks to update. | **Static.** |
 
-**Why OCR wins here:** Aviation is a highly fragmented global industry. There is **no global database** of aircraft insurance. Every country requires proof of insurance, but they all rely on the "Persistent Paper" Certificate of Insurance. OCR-to-hash turns that global paper standard into a cryptographically trusted digital bridge.
+**Why Live Verify wins here:** Aviation is a highly fragmented global industry. There is **no global database** of aircraft insurance. Every country requires proof of insurance, but they all rely on the "Persistent Paper" Certificate of Insurance. Live Verify turns that global paper standard into a cryptographically trusted digital bridge.

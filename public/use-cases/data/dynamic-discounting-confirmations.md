@@ -79,7 +79,7 @@ The **Supplier (Vendor)** (second party) receives the early payment confirmation
 The supplier (second party) may hand the verified document to various third parties:
 
 **Lenders (Asset-Based Lenders)**
-**Collateral Vetting:** Verifying that the AR (Accounts Receivable) listed on the balance sheet hasn't already been "Discounted" or "Factored." OCR-to-hash ensures the lender isn't lending against 100% of an invoice that the supplier already agreed to take 98% for.
+**Collateral Vetting:** Verifying that the AR (Accounts Receivable) listed on the balance sheet hasn't already been "Discounted" or "Factored." Live Verify ensures the lender isn't lending against 100% of an invoice that the supplier already agreed to take 98% for.
 
 **Tax Authorities**
 **Revenue Verification:** Ensuring the "Gross Revenue" and "Financing Costs" are properly categorized for corporate tax purposes.
@@ -128,11 +128,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. ERP Logins
 
-| Feature | OCR-to-Hash | ERP Dashboard (SAP) | Scanned PDF Confirmation |
+| Feature | Live Verify | ERP Dashboard (SAP) | Scanned PDF Confirmation |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Bound to the Platform. | **System-Bound.** | **Zero.** Easily forged. |
 | **User Access** | **Universal.** Any local lender can verify. | **Restricted.** Lenders never get access to a supplier's internal SAP. | **Instant.** |
 | **Integrity** | **Binds FX/Rates.** Protects the % discount. | **High.** | **Vulnerable.** |
 | **Speed** | **Instant.** 5-second scan. | **Slow.** Requires manual data export and upload. | **Instant.** |
 
-**Why OCR wins here:** The "Small Bank" Problem. A small parts manufacturer in Ohio uses C2FO to get early payments from Boeing. Their local hometown bank wants to lend them money based on those Boeing receivables. The local bank doesn't have an integration with C2FO or Boeing's SAP. OCR-to-hash turns the **Confirmation PDF** into a trusted digital artifact the local bank can rely on.
+**Why Live Verify wins here:** The "Small Bank" Problem. A small parts manufacturer in Ohio uses C2FO to get early payments from Boeing. Their local hometown bank wants to lend them money based on those Boeing receivables. The local bank doesn't have an integration with C2FO or Boeing's SAP. Live Verify turns the **Confirmation PDF** into a trusted digital artifact the local bank can rely on.

@@ -82,7 +82,7 @@ The **Museum Curator** or **Art Collector** benefits from verification.
 ## Third-Party Use
 
 **Fine Art Insurers**
-**Liability Underwriting:** Insurers verify the "Restoration History" before covering high-value works. A painting with "Hidden Structural Cracks" is a massive risk. OCR-to-hash ensures the report provided by the owner matches the conservator's true findings.
+**Liability Underwriting:** Insurers verify the "Restoration History" before covering high-value works. A painting with "Hidden Structural Cracks" is a massive risk. Live Verify ensures the report provided by the owner matches the conservator's true findings.
 
 **Art Historians / Scholars**
 **Archival Research:** Instantly verifying that a digitized conservation report from 1950 is an authentic record of what was done to the painting, aiding in the study of artist techniques.
@@ -130,11 +130,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Museum Management Systems (TMS)
 
-| Feature | OCR-to-Hash | TMS (The Museum System) | Scanned PDF |
+| Feature | Live Verify | TMS (The Museum System) | Scanned PDF |
 | :--- | :--- | :--- | :--- |
 | **Trust Anchor** | **Domain-Bound.** Trust the Institution. | **System-Bound.** Trust the DB admin. | **Zero.** Easily forged. |
 | **User Access** | **Universal.** Share with any insurer/buyer. | **Zero.** External parties never get TMS logins. | **Universal.** |
 | **Integrity** | **Cryptographic.** Binds every detail. | **High.** Internal only. | **Vulnerable.** |
 | **Permanence** | **Archival.** Text is permanent. | **Ephemeral.** Databases get migrated/lost. | **Vulnerable.** |
 
-**Why OCR wins here:** The "External Trust" problem. A museum's internal database (TMS) is great for them, but useless for the **Rest of the World**. When a painting travels or is sold, the trust must move with it. OCR-to-hash turns the **Static PDF Report** into a cryptographically trusted artifact that anyone can verify without a TMS password.
+**Why Live Verify wins here:** The "External Trust" problem. A museum's internal database (TMS) is great for them, but useless for the **Rest of the World**. When a painting travels or is sold, the trust must move with it. Live Verify turns the **Static PDF Report** into a cryptographically trusted artifact that anyone can verify without a TMS password.

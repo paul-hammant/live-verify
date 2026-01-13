@@ -133,11 +133,11 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 
 ## Competition vs. Blockchain Registries
 
-| Feature | OCR-to-Hash | Art On-Chain (NFT) | Public Copyright DB |
+| Feature | Live Verify | Art On-Chain (NFT) | Public Copyright DB |
 | :--- | :--- | :--- | :--- |
 | **Legal Weight** | **High.** Binds to the federal government record. | **Low.** Most courts don't yet recognize on-chain "Minting" as legal title. | **High.** But manual. |
 | **Content Link** | **Strong.** Binds the *SHA-256* of the work. | **Medium.** Often just links to a URL (IPFS). | **Weak.** DB doesn't usually show the deposit hash. |
 | **Trust Anchor** | **Domain-Bound.** Trust the Gov. | **Consensus-Bound.** Trust the protocol. | **Gov-Bound.** |
 | **Durability** | **Archival.** Text lasts centuries. | **Fragile.** Requires the chain to exist in 2100. | **Durable.** |
 
-**Why OCR wins here:** Standing. Copyright is a state-granted legal monopoly. While "Blockchain Timestamping" proves *you had it first*, only a **Government Registration** gives you the right to sue for statutory damages ($150k per infringement). OCR-to-hash turns that powerful legal document into a high-speed digital weapon for protecting creators.
+**Why Live Verify wins here:** Standing. Copyright is a state-granted legal monopoly. While "Blockchain Timestamping" proves *you had it first*, only a **Government Registration** gives you the right to sue for statutory damages ($150k per infringement). Live Verify turns that powerful legal document into a high-speed digital weapon for protecting creators.

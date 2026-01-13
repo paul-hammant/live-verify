@@ -73,7 +73,7 @@ The **Annuitant (Claimant)** benefits from verification.
 **Lien Verification:** Before buying a stream of payments from a claimant, the factoring firm scans the verified hash. If it returns **"LIEN ACTIVE - IRS,"** they can adjust their offer or deny the purchase, preventing a loss where they buy payments they can't actually collect.
 
 **Civil Courts / Judges**
-**Transfer Approval:** Under "Protection Acts," a judge must approve the sale of settlement payments. OCR-to-hash allows the judge's clerk to instantly verify that the "Annuity Contract" presented in court matches the insurer's records, stopping the common fraud of "double-selling" the same payments to two different firms.
+**Transfer Approval:** Under "Protection Acts," a judge must approve the sale of settlement payments. Live Verify allows the judge's clerk to instantly verify that the "Annuity Contract" presented in court matches the insurer's records, stopping the common fraud of "double-selling" the same payments to two different firms.
 
 **Divorce & Estate Attorneys**
 **Asset Valuation:** Verifying the "Present Value" of a lifetime income stream during asset division to ensure a fair settlement between spouses.
