@@ -1,7 +1,7 @@
 {
-  "generated": "2026-01-12T15:05:08.677Z",
-  "totalUseCases": 399,
-  "totalFurtherDerivations": 394,
+  "generated": "2026-01-14T16:21:09.404Z",
+  "totalUseCases": 417,
+  "totalFurtherDerivations": 470,
   "categories": {
     "Real Estate & Property": 30,
     "Charitable & Non-Profit": 6,
@@ -16,11 +16,11 @@
     "Chain of Custody & Logistics": 15,
     "Travel & Hospitality": 21,
     "Professional & Occupational Licenses": 12,
-    "Professional & Educational Qualifications": 14,
+    "Identity & Authority Verification": 27,
+    "Professional & Educational Qualifications": 15,
     "Art, Media & Publishing": 7,
     "Customs & Trade Compliance": 6,
     "Sports & Athletics": 6,
-    "Identity & Authority Verification": 21,
     "Specialty Insurance": 22,
     "Business & Commerce": 10,
     "Banking & Payments": 14,
@@ -33,10 +33,12 @@
     "Professional Ethics & Compliance": 9,
     "Energy & Utilities": 3,
     "Legal & Court Documents": 4,
+    "Civic & Public Safety": 1,
     "Scientific & Research": 7,
     "Warehousing & Inventory": 4,
     "Government & Regulatory": 5,
     "Permits & Approvals": 4,
+    "Construction & Building": 1,
     "Delegated Authority": 5,
     "Corporate & Legal Documents": 2,
     "Intellectual Property Law": 3,
@@ -44,9 +46,17 @@
     "Healthcare & Medical Records": 7,
     "Trade Finance": 5,
     "Environmental Permits & Compliance": 4,
+    "Environmental & Safety": 2,
     "Agriculture & Food": 7,
     "Bonds & Sureties": 3,
+    "Occupational Health & Safety": 1,
     "Safety & Compliance": 2,
+    "Infrastructure & Engineering": 1,
+    "Manufacturing & Production": 1,
+    "Commerce & Consumer": 1,
+    "Healthcare & Medical": 1,
+    "Consumer & Personal": 1,
+    "Governance & Voting": 1,
     "Insurance & Bonds": 1,
     "Consumer & Commercial Transactions": 1,
     "Vehicle & Transportation": 2
@@ -322,6 +332,42 @@
         "insurance",
         "solvency",
         "compliance"
+      ]
+    },
+    {
+      "slug": "anonymous-accountable-communications",
+      "title": "Anonymous but Accountable Communications",
+      "category": "Identity & Authority Verification",
+      "volume": "Medium",
+      "retention": "Varies by type (1-10 years)",
+      "furtherDerivations": 4,
+      "snippet": "",
+      "tags": [
+        "identity-escrow",
+        "whistleblowing",
+        "anonymous-tips",
+        "source-protection",
+        "journalism",
+        "reviews",
+        "accountability"
+      ]
+    },
+    {
+      "slug": "anonymous-group-participation",
+      "title": "Anonymous Group Participation",
+      "category": "Identity & Authority Verification",
+      "volume": "Medium",
+      "retention": "Duration of participation + 1 year",
+      "furtherDerivations": 4,
+      "snippet": "",
+      "tags": [
+        "identity-escrow",
+        "support-groups",
+        "aa",
+        "therapy",
+        "anonymous",
+        "safe-space",
+        "group-accountability"
       ]
     },
     {
@@ -1155,6 +1201,25 @@
       ]
     },
     {
+      "slug": "citizen-evidence-submission",
+      "title": "Citizen Evidence Submission",
+      "category": "Civic & Public Safety",
+      "volume": "High",
+      "retention": "Varies by jurisdiction (1-7 years)",
+      "furtherDerivations": 4,
+      "snippet": "",
+      "tags": [
+        "evidence",
+        "citizen-reporting",
+        "dashcam",
+        "police",
+        "tip",
+        "witness",
+        "public-safety",
+        "accountability"
+      ]
+    },
+    {
       "slug": "client-money-segregation-confirmations",
       "title": "Client Money Segregation Confirmations",
       "category": "Professional Ethics & Compliance",
@@ -1368,6 +1433,28 @@
       ]
     },
     {
+      "slug": "compliance-training-attestations",
+      "title": "Compliance Training Attestations",
+      "category": "Professional & Educational Qualifications",
+      "volume": "Very High",
+      "retention": "Employment duration + statute of limitations",
+      "furtherDerivations": 5,
+      "snippet": "",
+      "tags": [
+        "compliance-training",
+        "anti-harassment",
+        "data-privacy",
+        "GDPR",
+        "security-awareness",
+        "anti-bribery",
+        "FCPA",
+        "employee-training",
+        "contractor-onboarding",
+        "LMS",
+        "portable-credentials"
+      ]
+    },
+    {
       "slug": "concealed-carry-permits",
       "title": "Concealed Carry Permits (CCW)",
       "category": "Professional & Occupational Licenses",
@@ -1383,6 +1470,24 @@
         "law-enforcement",
         "concealed-carry",
         "identity-verification"
+      ]
+    },
+    {
+      "slug": "conditional-identity-disclosure",
+      "title": "Conditional Identity Disclosure",
+      "category": "Identity & Authority Verification",
+      "volume": "Low-Medium",
+      "retention": "Decades (lifetime records)",
+      "furtherDerivations": 3,
+      "snippet": "",
+      "tags": [
+        "identity-escrow",
+        "donor-identity",
+        "adoption",
+        "reunion-registry",
+        "conditional-release",
+        "right-to-know",
+        "genetic-identity"
       ]
     },
     {
@@ -1471,6 +1576,26 @@
         "plumbing",
         "grading",
         "public-safety"
+      ]
+    },
+    {
+      "slug": "construction-trade-witnessing",
+      "title": "Construction Trade Witnessing",
+      "category": "Construction & Building",
+      "volume": "High",
+      "retention": "Life of structure + liability period (10-15 years typical)",
+      "furtherDerivations": 7,
+      "snippet": "",
+      "tags": [
+        "construction",
+        "building",
+        "trades",
+        "inspection",
+        "concealment",
+        "defects",
+        "attestation",
+        "new-build",
+        "housing"
       ]
     },
     {
@@ -2433,6 +2558,25 @@
       ]
     },
     {
+      "slug": "environmental-remediation-witnessing",
+      "title": "Environmental Remediation Concealed Work Witnessing",
+      "category": "Environmental & Safety",
+      "volume": "Medium",
+      "retention": "Perpetuity (some contamination)",
+      "furtherDerivations": 4,
+      "snippet": "",
+      "tags": [
+        "environmental",
+        "asbestos",
+        "contamination",
+        "remediation",
+        "buried-waste",
+        "tank-lining",
+        "groundwater",
+        "concealment"
+      ]
+    },
+    {
       "slug": "environmental-site-assessments",
       "title": "Environmental Site Assessments (Phase I & II)",
       "category": "Real Estate & Property",
@@ -3268,6 +3412,27 @@
       ]
     },
     {
+      "slug": "hierarchy-of-controls-witnessing",
+      "title": "Hierarchy of Controls - Inspection & Witnessing Framework",
+      "category": "Occupational Health & Safety",
+      "volume": "Very High",
+      "retention": "Variable by control type",
+      "furtherDerivations": 5,
+      "snippet": "",
+      "tags": [
+        "safety",
+        "hierarchy-of-controls",
+        "elimination",
+        "substitution",
+        "engineering-controls",
+        "administrative-controls",
+        "PPE",
+        "inspection",
+        "OSHA",
+        "HSE"
+      ]
+    },
+    {
       "slug": "hoa-documents",
       "title": "HOA Governing Documents and Bylaws",
       "category": "Real Estate & Property",
@@ -3439,6 +3604,24 @@
       ]
     },
     {
+      "slug": "identity-escrow-personal-safety",
+      "title": "Identity Escrow for Personal Safety",
+      "category": "Identity & Authority Verification",
+      "volume": "High",
+      "retention": "1-5 years",
+      "furtherDerivations": 4,
+      "snippet": "",
+      "tags": [
+        "identity-escrow",
+        "personal-safety",
+        "dating-safety",
+        "roommate-verification",
+        "custody-exchange",
+        "stranger-meetups",
+        "notary"
+      ]
+    },
+    {
       "slug": "immigration-interview-notices",
       "title": "Immigration Interview Appointment Notices",
       "category": "Immigration & Visa Documents",
@@ -3556,6 +3739,25 @@
       ]
     },
     {
+      "slug": "indoor-air-quality-witnessing",
+      "title": "Indoor Air Quality Monitoring & Witnessing",
+      "category": "Environmental & Safety",
+      "volume": "Very High",
+      "retention": "Building lifetime + liability period",
+      "furtherDerivations": 5,
+      "snippet": "",
+      "tags": [
+        "air-quality",
+        "ventilation",
+        "HVAC",
+        "COVID-19",
+        "airborne",
+        "public-health",
+        "ongoing-monitoring",
+        "compliance"
+      ]
+    },
+    {
       "slug": "industry-certifications",
       "title": "Industry Certifications (IT, Finance, Construction)",
       "category": "Professional & Educational Qualifications",
@@ -3572,6 +3774,26 @@
         "professional-development",
         "credential-verification",
         "resume-integrity"
+      ]
+    },
+    {
+      "slug": "infrastructure-concealed-work-witnessing",
+      "title": "Infrastructure Concealed Work Witnessing",
+      "category": "Infrastructure & Engineering",
+      "volume": "Medium",
+      "retention": "Design life of structure (50-100+ years)",
+      "furtherDerivations": 5,
+      "snippet": "",
+      "tags": [
+        "infrastructure",
+        "bridges",
+        "tunnels",
+        "dams",
+        "pipelines",
+        "wind-turbines",
+        "concealment",
+        "delayed-discovery",
+        "engineering"
       ]
     },
     {
@@ -4258,6 +4480,25 @@
       ]
     },
     {
+      "slug": "manufacturing-assembly-witnessing",
+      "title": "Manufacturing & Assembly Concealed Work Witnessing",
+      "category": "Manufacturing & Production",
+      "volume": "High",
+      "retention": "Product lifetime + liability period",
+      "furtherDerivations": 4,
+      "snippet": "",
+      "tags": [
+        "manufacturing",
+        "aircraft",
+        "automotive",
+        "shipbuilding",
+        "assembly",
+        "quality",
+        "concealment",
+        "product-liability"
+      ]
+    },
+    {
       "slug": "manuscript-versions-edit-history",
       "title": "Manuscript Versions and Edit History",
       "category": "Art, Media & Publishing",
@@ -4303,6 +4544,25 @@
         "ship-finance",
         "transportation",
         "vessel-valuation"
+      ]
+    },
+    {
+      "slug": "marketplace-pseudonymous-reputation",
+      "title": "Marketplace Pseudonymous Reputation",
+      "category": "Commerce & Consumer",
+      "volume": "High",
+      "retention": "Account lifetime + regulatory requirements",
+      "furtherDerivations": 4,
+      "snippet": "",
+      "tags": [
+        "identity-escrow",
+        "marketplace",
+        "reputation",
+        "pseudonymous",
+        "seller",
+        "freelancer",
+        "content-creator",
+        "portable-reputation"
       ]
     },
     {
@@ -4435,6 +4695,25 @@
         "medical-verification",
         "patient-safety",
         "radiologist-attestation"
+      ]
+    },
+    {
+      "slug": "medical-implant-procedure-witnessing",
+      "title": "Medical Implant & Procedure Witnessing",
+      "category": "Healthcare & Medical",
+      "volume": "High",
+      "retention": "Patient lifetime + statute of limitations",
+      "furtherDerivations": 4,
+      "snippet": "",
+      "tags": [
+        "medical",
+        "implant",
+        "surgery",
+        "dental",
+        "concealment",
+        "delayed-discovery",
+        "malpractice",
+        "product-liability"
       ]
     },
     {
@@ -5069,6 +5348,25 @@
       ]
     },
     {
+      "slug": "peer-to-peer-sale-witnessing",
+      "title": "Peer-to-Peer Sale Witnessing",
+      "category": "Consumer & Personal",
+      "volume": "High",
+      "retention": "2-5 years",
+      "furtherDerivations": 1,
+      "snippet": "Transaction ID, date/time, location, seller identity reference, buyer identity reference, item description, serial number, condition, sale price.",
+      "tags": [
+        "p2p",
+        "private-sale",
+        "used-goods",
+        "identity-escrow",
+        "stolen-property",
+        "craigslist",
+        "facebook-marketplace",
+        "notary"
+      ]
+    },
+    {
       "slug": "pension-actuarial-valuations",
       "title": "Pension Actuarial Valuations",
       "category": "Financial Compliance",
@@ -5652,6 +5950,25 @@
       ]
     },
     {
+      "slug": "pseudonymous-professional-relationships",
+      "title": "Pseudonymous Professional Relationships",
+      "category": "Identity & Authority Verification",
+      "volume": "Medium",
+      "retention": "Duration of relationship + professional retention requirements",
+      "furtherDerivations": 4,
+      "snippet": "",
+      "tags": [
+        "identity-escrow",
+        "therapy",
+        "legal",
+        "medical",
+        "financial",
+        "privacy",
+        "professional-services",
+        "pseudonymous"
+      ]
+    },
+    {
       "slug": "public-works-planning-notices",
       "title": "Public Works and Planning Notices",
       "category": "Permits & Approvals",
@@ -5780,6 +6097,44 @@
         "land-registry",
         "abstract-of-title",
         "e-recording"
+      ]
+    },
+    {
+      "slug": "recurring-home-access-escrow",
+      "title": "Recurring Home Access Identity Escrow",
+      "category": "Identity & Authority Verification",
+      "volume": "High",
+      "retention": "Duration of relationship + 2 years",
+      "furtherDerivations": 5,
+      "snippet": "",
+      "tags": [
+        "identity-escrow",
+        "home-access",
+        "recurring-service",
+        "cleaner",
+        "dog-walker",
+        "babysitter",
+        "elder-care",
+        "informal-employment"
+      ]
+    },
+    {
+      "slug": "recurring-organizational-votes",
+      "title": "Recurring Organizational Votes",
+      "category": "Governance & Voting",
+      "volume": "High",
+      "retention": "Vote records: 3-7 years; Eligibility: ongoing",
+      "furtherDerivations": 4,
+      "snippet": "",
+      "tags": [
+        "identity-escrow",
+        "voting",
+        "union",
+        "hoa",
+        "employee-surveys",
+        "secret-ballot",
+        "eligibility-verification",
+        "anonymous-voting"
       ]
     },
     {
@@ -7581,15 +7936,15 @@
       "count": 30
     },
     {
+      "name": "Identity & Authority Verification",
+      "count": 27
+    },
+    {
       "name": "Specialty Insurance",
       "count": 22
     },
     {
       "name": "Travel & Hospitality",
-      "count": 21
-    },
-    {
-      "name": "Identity & Authority Verification",
       "count": 21
     },
     {
@@ -7601,11 +7956,11 @@
       "count": 15
     },
     {
-      "name": "Government & Civic Documents",
-      "count": 14
+      "name": "Professional & Educational Qualifications",
+      "count": 15
     },
     {
-      "name": "Professional & Educational Qualifications",
+      "name": "Government & Civic Documents",
       "count": 14
     },
     {
@@ -7749,12 +8104,52 @@
       "count": 2
     },
     {
+      "name": "Environmental & Safety",
+      "count": 2
+    },
+    {
       "name": "Safety & Compliance",
       "count": 2
     },
     {
       "name": "Vehicle & Transportation",
       "count": 2
+    },
+    {
+      "name": "Civic & Public Safety",
+      "count": 1
+    },
+    {
+      "name": "Construction & Building",
+      "count": 1
+    },
+    {
+      "name": "Occupational Health & Safety",
+      "count": 1
+    },
+    {
+      "name": "Infrastructure & Engineering",
+      "count": 1
+    },
+    {
+      "name": "Manufacturing & Production",
+      "count": 1
+    },
+    {
+      "name": "Commerce & Consumer",
+      "count": 1
+    },
+    {
+      "name": "Healthcare & Medical",
+      "count": 1
+    },
+    {
+      "name": "Consumer & Personal",
+      "count": 1
+    },
+    {
+      "name": "Governance & Voting",
+      "count": 1
     },
     {
       "name": "Insurance & Bonds",
@@ -7765,5 +8160,5 @@
       "count": 1
     }
   ],
-  "totalCategories": 47
+  "totalCategories": 57
 }
