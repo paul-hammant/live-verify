@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Step 4: Verification - Home Service Provider Verification</title>
+    <title>Step 4: Verification - Proof of Funds Verification</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            background: linear-gradient(135deg, #1a237e 0%, #3949ab 100%);
+            background: linear-gradient(135deg, #003366 0%, #004a99 100%);
             min-height: 100vh;
             padding: 40px 20px;
             color: white;
@@ -41,12 +41,12 @@
             background: rgba(255,255,255,0.3);
         }
         .nav-arrow.next {
-            background: #ffd579;
-            color: #1a237e;
+            background: #ffd700;
+            color: #003366;
             margin-left: 20px;
         }
         .nav-arrow.next:hover {
-            background: #ffe0a0;
+            background: #ffec80;
         }
         .step {
             width: 40px;
@@ -60,9 +60,9 @@
             font-size: 16px;
         }
         .step.active {
-            background: #ffd579;
-            color: #1a237e;
-            box-shadow: 0 0 20px rgba(255,213,121,0.5);
+            background: #ffd700;
+            color: #003366;
+            box-shadow: 0 0 20px rgba(255,215,0,0.5);
         }
         .step.completed {
             background: #22c55e;
@@ -85,7 +85,7 @@
             box-shadow: 0 10px 40px rgba(0,0,0,0.3);
         }
         .card h2 {
-            color: #1a237e;
+            color: #004a99;
             margin-bottom: 20px;
             font-size: 1.3em;
         }
@@ -106,16 +106,17 @@
         }
         .endpoint .label {
             font-weight: bold;
-            color: #1a237e;
+            color: #004a99;
         }
         .arrow-flow {
             display: flex;
             flex-direction: column;
             align-items: center;
-            color: #ffd579;
+            color: #ffd700;
         }
         .arrow-flow .arrow {
             font-size: 24px;
+            color: #004a99;
         }
         .arrow-flow .label {
             font-size: 11px;
@@ -161,8 +162,8 @@
         .explanation {
             margin-top: 20px;
             padding: 7px;
-            background: #f0f9ff;
-            border-left: 4px solid #ffd579;
+            background: #e6f0ff;
+            border-left: 4px solid #004a99;
             border-radius: 0 8px 8px 0;
         }
         .trust-chain {
@@ -185,38 +186,38 @@
 <body>
     <div class="container">
         <div class="step-indicator">
-            <a href="home-service-provider-verification-3.html" class="nav-arrow prev">&larr;</a>
+            <a href="proof-of-funds-letters-transactions-3.html" class="nav-arrow prev">&larr;</a>
             <div class="step completed">1</div>
             <div class="step completed">2</div>
             <div class="step completed">3</div>
             <div class="step active">4</div>
             <div class="step">5</div>
-            <a href="home-service-provider-verification-5.html" class="nav-arrow next">&rarr;</a>
+            <a href="proof-of-funds-letters-transactions-5.html" class="nav-arrow next">&rarr;</a>
         </div>
 
         <h1>Step 4: Verification</h1>
-        <p class="subtitle">Check the hash against the state licensing board</p>
+        <p class="subtitle">Check the hash against the bank's domain</p>
 
         <div class="card">
-            <h2>The hash is sent to the licensing board's endpoint...</h2>
+            <h2>The hash is sent to the bank's verification endpoint...</h2>
 
             <div class="request-flow">
                 <div class="endpoint">
-                    <div class="icon">&#x1F4F1;</div>
-                    <div class="label">Your Phone</div>
+                    <div class="icon">&#x1F4BB;</div>
+                    <div class="label">Your Browser or Phone App</div>
                 </div>
                 <div class="arrow-flow">
                     <span class="arrow">&rarr;</span>
-                    <span class="label">Hash only (not the photo)</span>
+                    <span class="label">Hash only (not the balance)</span>
                 </div>
                 <div class="endpoint">
-                    <div class="icon">&#x1F3DB;</div>
-                    <div class="label">tx-license.gov/v/</div>
+                    <div class="icon">&#x1F3E6;</div>
+                    <div class="label">chase.com/v/</div>
                 </div>
             </div>
 
             <div class="url-box">
-                <span class="method">GET</span> https://<span class="domain">tx-license.gov</span><span class="path">/v/</span><span class="hash">7f3a8e2b4c1d9f6e5a0b3c7d8e9f1a2b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f</span>
+                <span class="method">GET</span> https://<span class="domain">chase.com</span><span class="path">/v/</span><span class="hash" id="hash-in-url">...</span>
             </div>
 
             <div class="response-box">
@@ -225,21 +226,43 @@
             </div>
 
             <div class="explanation">
-                <strong>Domain-bound trust:</strong> The verification URL on the badge (<code>verify:tx-license.gov/v</code>) tells your phone exactly which domain to check. The response comes from the Texas state licensing board's own servers. If the hash matches, it proves this license is genuine.
+                <strong>Domain-bound trust:</strong> The verification URL in the POF (<code>verify:chase.com/v</code>) tells your browser exactly which domain to check. The response comes from Chase's own servers. If the hash matches, it proves Chase issued this exact POF with this exact balance.
             </div>
 
             <div class="trust-chain">
                 <div class="trust-item">&#10003; HTTPS encrypted</div>
-                <div class="trust-item">&#10003; Government domain</div>
+                <div class="trust-item">&#10003; Bank domain verified</div>
                 <div class="trust-item">&#10003; Hash matched</div>
-                <div class="trust-item">&#10003; License ACTIVE</div>
             </div>
 
             <div style="margin-top: 20px; padding: 12px; background: #fef3c7; border-left: 4px solid #f59e0b; border-radius: 0 8px 8px 0; font-size: 12px; color: #92400e;">
-                <strong>Note:</strong> tx-license.gov is not a real domain used by the Texas licensing board. This is an illustrative example of how verification could work if licensing boards adopted this approach.
+                <strong>Note:</strong> chase.com/v is an illustrative example. This demonstrates how verification could work if banks adopted this approach for their Proof of Funds letters.
             </div>
         </div>
-
     </div>
+
+    <script>
+        async function computeHash() {
+            const text = `PROOF OF FUNDS STATEMENT
+Ref: POF-99228877-XJ
+Account Holder: SARAH JANE SMITH
+Account Type: Private Client Money Market
+Available Balance: $1,250,000.00 USD
+Funds are unencumbered and available for
+immediate withdrawal or wire transfer.
+James W. Gordon, Vice President
+verify:chase.com/v`;
+
+            const encoder = new TextEncoder();
+            const data = encoder.encode(text);
+            const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+            const hashArray = Array.from(new Uint8Array(hashBuffer));
+            const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+
+            document.getElementById('hash-in-url').textContent = hashHex;
+        }
+
+        computeHash();
+    </script>
 </body>
 </html>

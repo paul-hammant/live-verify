@@ -14,46 +14,31 @@ A **Proof of Funds (POF)** letter is a document issued by a bank or financial in
 
 Because a POF is the difference between an offer being accepted or rejected, it is a primary target for fraud. Scammers use "Inspect Element" on their online banking to turn a $1,000 balance into $1,000,000, or they buy fake "Bank Letters" from illegal dark-web services. Verified hashes bind the **Available Balance, Account Holder Name, and Issuing Officer** to the bank's domain (e.g., `chase.com` or `goldmansachs.com`).
 
-<div style="max-width: 650px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-  <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #004a99; padding-bottom: 15px; margin-bottom: 30px;">
+<div style="max-width: 650px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); position: relative;">
+  <a href="data/slides/proof-of-funds-letters-transactions-1.html" style="position: absolute; right: -50px; top: 50%; transform: translateY(-50%); background: #e0e0e0; border: 1px solid #999; border-radius: 4px; padding: 6px 8px; font-size: 0.75em; line-height: 1.2; cursor: pointer; color: #333; text-decoration: none;">show<br>me</a>
+  <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #004a99; padding-bottom: 15px; margin-bottom: 20px;">
     <div>
-      <div style="font-weight: bold; font-size: 1.4em; color: #004a99;"><span verifiable-text="start" data-for="pof">[</span>CHASE 🟦</div>
+      <div style="font-weight: bold; font-size: 1.4em; color: #004a99;">CHASE</div>
       <div style="font-size: 0.8em; color: #666; text-transform: uppercase;">Private Client Services</div>
     </div>
     <div style="text-align: right; font-size: 0.85em; color: #666;">
-      Ref: POF-99228877-XJ<br>
       March 15, 2026
     </div>
   </div>
-<h3 style="margin-top: 0; text-align: center; text-transform: uppercase; letter-spacing: 1px;">Proof of Funds Statement</h3>
-<div style="font-size: 0.95em; line-height: 1.6; color: #333;">
-    <p>To Whom It May Concern,</p>
-    <p>At the request of our client, we are pleased to confirm that the following funds are currently held in a liquid account at this institution:</p>
-<div style="background: #f9f9f9; padding: 20px; border: 1px solid #ddd; margin: 20px 0;">
-      <p><strong>Account Holder:</strong> SARAH JANE SMITH<br>
-      <strong>Account Type:</strong> Private Client Money Market</p>
-<p><strong>Available Balance:</strong> <span style="font-size: 1.4em; font-weight: bold; color: #000;">$ 1,250,000.00</span><br>
-      <strong>Currency:</strong> United States Dollars (USD)</p>
-    </div>
-<p style="font-size: 0.85em; font-style: italic; color: #666;">
-      These funds are unencumbered and available for immediate withdrawal or wire transfer for the purpose of real estate acquisition.
-    </p>
+  <div style="background: #f9f9f9; border: 1px solid #999; padding: 15px; font-size: 0.85em; color: #000; line-height: 1.5;">
+    PROOF OF FUNDS STATEMENT<br>
+    Ref: POF-99228877-XJ<br>
+    Account Holder: SARAH JANE SMITH<br>
+    Account Type: Private Client Money Market<br>
+    Available Balance: $1,250,000.00 USD<br>
+    Funds are unencumbered and available for<br>
+    immediate withdrawal or wire transfer.<br>
+    James W. Gordon, Vice President<br>
+    <span style="font-family: 'Courier New', monospace;"
+      title="Demo only: Banks don't yet offer verification&#10;endpoints, so this is illustrative">verify:chase.com/v</span>
   </div>
-<div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;">
-    <div>
-      <div style="border-top: 1px solid #000; width: 200px; padding-top: 5px; font-style: italic;">James W. Gordon, Vice President</div>
-      <div style="font-size: 0.8em; color: #777;">Employee ID: #992288</div>
-    </div>
-    <div style="text-align: right; color: #004a99; font-weight: bold; font-size: 0.8em;">BANK VERIFIED</div>
-  </div>
-<div style="padding: 20px; background: #eee; border-radius: 4px; margin-top: 30px; text-align: center;">
-    <div data-verify-line="pof" style="font-family: 'Courier New', monospace; font-size: 0.8em; color: #000; font-weight: bold;"
-      title="Demo only: Banks don't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:chase.com/v <span verifiable-text="end" data-for="pof">]</span>
-    </div>
-    <div style="font-size: 0.7em; color: #777; margin-top: 10px; font-style: italic;">
-      Scan to verify liquid balance authenticity and account holder standing. Point-in-time record only.
-    </div>
+  <div style="font-size: 0.7em; color: #777; margin-top: 15px; font-style: italic; text-align: center;">
+    Scan or select to verify balance authenticity. Point-in-time record only.
   </div>
 </div>
 

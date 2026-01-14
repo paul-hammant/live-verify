@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step 1: Selection - Proof of Funds Verification</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: linear-gradient(135deg, #003366 0%, #004a99 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: white;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .step-indicator {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 30px;
+        }
+        .nav-arrow {
+            padding: 8px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            transition: all 0.2s;
+        }
+        .nav-arrow.prev {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            margin-right: 20px;
+            visibility: hidden;
+        }
+        .nav-arrow.next {
+            background: #ffd700;
+            color: #003366;
+            margin-left: 20px;
+        }
+        .nav-arrow.next:hover {
+            background: #ffec80;
+        }
+        .step {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .step.active {
+            background: #ffd700;
+            color: #003366;
+            box-shadow: 0 0 20px rgba(255,215,0,0.5);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 1.8em;
+        }
+        .subtitle {
+            text-align: center;
+            opacity: 0.8;
+            margin-bottom: 30px;
+        }
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            color: #333;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+        .mode-toggle {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .mode-btn {
+            padding: 8px 20px;
+            border: 2px solid #004a99;
+            background: white;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.2s;
+        }
+        .mode-btn.active {
+            background: #004a99;
+            color: white;
+        }
+        .mode-btn:hover:not(.active) {
+            background: #e6f0ff;
+        }
+        .scene {
+            display: none;
+        }
+        .scene.active {
+            display: block;
+        }
+        .desktop-scene {
+            position: relative;
+            background: #f0f0f0;
+            border-radius: 8px;
+            padding: 20px;
+            min-height: 300px;
+        }
+        .browser-bar {
+            background: #e0e0e0;
+            border-radius: 6px 6px 0 0;
+            padding: 8px 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin: -20px -20px 15px -20px;
+        }
+        .browser-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #ccc;
+        }
+        .browser-dot.red { background: #ff5f57; }
+        .browser-dot.yellow { background: #febc2e; }
+        .browser-dot.green { background: #28c840; }
+        .url-bar {
+            flex: 1;
+            background: white;
+            border-radius: 4px;
+            padding: 4px 10px;
+            font-size: 12px;
+            color: #666;
+            margin-left: 10px;
+        }
+        .document-view {
+            background: white;
+            border: 1px solid #ccc;
+            padding: 20px;
+            font-family: sans-serif;
+            position: relative;
+        }
+        .doc-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #004a99;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        .doc-header .logo {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #004a99;
+        }
+        .doc-header .date {
+            font-size: 0.85em;
+            color: #666;
+        }
+        .pof-content {
+            background: #f9f9f9;
+            border: 1px solid #999;
+            padding: 12px;
+            font-size: 0.85em;
+            color: #000;
+            line-height: 1.5;
+        }
+        .selection-highlight {
+            background: rgba(0, 74, 153, 0.2);
+            border: 2px dashed #004a99;
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { border-color: #004a99; }
+            50% { border-color: #ffd700; }
+        }
+        .context-menu {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            background: #333;
+            border-radius: 6px;
+            padding: 8px 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            z-index: 10;
+        }
+        .context-menu-item {
+            padding: 8px 16px;
+            color: white;
+            font-size: 13px;
+            cursor: pointer;
+        }
+        .context-menu-item:hover {
+            background: #004a99;
+        }
+        .context-menu-item.verify {
+            color: #ffd700;
+            font-weight: bold;
+        }
+        .camera-scene {
+            position: relative;
+            background: #1a1a1a;
+            border-radius: 8px;
+            padding: 20px;
+            min-height: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .phone-frame {
+            position: relative;
+            width: 280px;
+            height: 400px;
+            background: #000;
+            border-radius: 30px;
+            padding: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        .phone-screen {
+            width: 100%;
+            height: 100%;
+            background: #222;
+            border-radius: 22px;
+            overflow: hidden;
+            position: relative;
+        }
+        .camera-view {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .paper-doc {
+            width: 85%;
+            background: white;
+            border-radius: 4px;
+            padding: 12px;
+            font-family: sans-serif;
+            transform: translate(-1cm, -1cm) rotate(-3deg);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+        .paper-doc .header {
+            font-weight: bold;
+            color: #004a99;
+            font-size: 10px;
+            border-bottom: 1px solid #004a99;
+            padding-bottom: 4px;
+            margin-bottom: 6px;
+        }
+        .paper-doc .content {
+            font-size: 7px;
+            line-height: 1.4;
+            color: #000;
+        }
+        .camera-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+        .camera-hint {
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0,0,0,0.7);
+            color: white;
+            padding: 6px 12px;
+            border-radius: 15px;
+            font-size: 10px;
+        }
+        .explanation {
+            margin-top: 20px;
+            padding: 15px;
+            background: #e6f0ff;
+            border-left: 4px solid #004a99;
+            border-radius: 0 8px 8px 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="step-indicator">
+            <a href="#" class="nav-arrow prev">&larr;</a>
+            <div class="step active">1</div>
+            <div class="step">2</div>
+            <div class="step">3</div>
+            <div class="step">4</div>
+            <div class="step">5</div>
+            <a href="proof-of-funds-letters-transactions-2.html" class="nav-arrow next">&rarr;</a>
+        </div>
+
+        <h1>Step 1: Selection</h1>
+        <p class="subtitle">Select or scan the verifiable content</p>
+
+        <div class="card">
+            <div class="mode-toggle">
+                <button class="mode-btn active" onclick="showScene('desktop')">Laptop or Desktop</button>
+                <button class="mode-btn" onclick="showScene('camera')">Phone Camera</button>
+            </div>
+
+            <div id="desktop-scene" class="scene active">
+                <div class="desktop-scene">
+                    <div class="browser-bar">
+                        <div class="browser-dot red"></div>
+                        <div class="browser-dot yellow"></div>
+                        <div class="browser-dot green"></div>
+                        <div class="url-bar">chase.com/documents/pof-99228877</div>
+                    </div>
+                    <div class="document-view">
+                        <div class="doc-header">
+                            <div class="logo">CHASE</div>
+                            <div class="date">March 15, 2026</div>
+                        </div>
+                        <div class="pof-content selection-highlight">
+                            PROOF OF FUNDS STATEMENT<br>
+                            Ref: POF-99228877-XJ<br>
+                            Account Holder: SARAH JANE SMITH<br>
+                            Account Type: Private Client Money Market<br>
+                            Available Balance: $1,250,000.00 USD<br>
+                            Funds are unencumbered and available for<br>
+                            immediate withdrawal or wire transfer.<br>
+                            James W. Gordon, Vice President<br>
+                            <span style="font-family: 'Courier New', monospace;">verify:chase.com/v</span>
+                        </div>
+                        <div class="context-menu">
+                            <div class="context-menu-item">Copy</div>
+                            <div class="context-menu-item">Select All</div>
+                            <div class="context-menu-item verify">Verify Selection</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="camera-scene" class="scene">
+                <div class="camera-scene">
+                    <div class="phone-frame">
+                        <div class="phone-screen">
+                            <div class="camera-view">
+                                <div class="paper-doc">
+                                    <div class="header">CHASE - Private Client Services</div>
+                                    <div class="content">
+                                        PROOF OF FUNDS STATEMENT<br>
+                                        Ref: POF-99228877-XJ<br>
+                                        Account Holder: SARAH JANE SMITH<br>
+                                        Account Type: Private Client Money Market<br>
+                                        Available Balance: $1,250,000.00 USD<br>
+                                        Funds are unencumbered and available for<br>
+                                        immediate withdrawal or wire transfer.<br>
+                                        James W. Gordon, Vice President<br>
+                                        verify:chase.com/v
+                                    </div>
+                                </div>
+                                <img src="../camera_overlay.svg" class="camera-overlay" alt="Camera overlay">
+                                <div class="camera-hint">Point at verifiable content</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="explanation">
+                <strong>How it works:</strong> The verifiable text contains a verification URL (<code>verify:chase.com/v</code>).
+                When you select and verify this text, or scan it with the Live Verify camera, the system extracts and validates it against the bank's domain.
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showScene(mode) {
+            document.querySelectorAll('.scene').forEach(s => s.classList.remove('active'));
+            document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+            document.getElementById(mode + '-scene').classList.add('active');
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
