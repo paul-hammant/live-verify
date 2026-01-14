@@ -6,6 +6,7 @@
     <string name="status_recognizing">Recognizing text…</string>
     <string name="status_verifying">Verifying…</string>
     <string name="capture_verify">Capture &amp; Verify</string>
+    <string name="capture_selected">Verify Selected</string>
     <string name="scan_another">Scan Another</string>
     <string name="instructions">Point camera at a document with registration marks and verify: URL</string>
     <string name="result_verified">Verified</string>
@@ -13,4 +14,7 @@
     <string name="result_error">Error</string>
     <string name="permission_camera_required">Camera permission is required to scan documents</string>
     <string name="permission_denied">Permission denied</string>
+    <string name="tab_captured">Captured</string>
+    <string name="tab_extracted">Extracted</string>
+    <string name="tab_normalized">Normalized</string>
 </resources>

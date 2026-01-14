@@ -22,12 +22,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Overlay for detection feedback -->
-    <View
-        android:id="@+id/detectionOverlay"
+    <!-- Text detection overlay - shows bounding boxes and handles taps -->
+    <com.liveverify.app.TextOverlayView
+        android:id="@+id/textOverlay"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@android:color/transparent"
         app:layout_constraintTop_toTopOf="@id/cameraPreview"
         app:layout_constraintBottom_toBottomOf="@id/cameraPreview"
         app:layout_constraintStart_toStartOf="@id/cameraPreview"
@@ -54,7 +53,6 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:orientation="vertical"
-        android:gravity="center"
         android:background="#CC000000"
         android:visibility="gone"
         app:layout_constraintTop_toTopOf="@id/cameraPreview"
@@ -62,37 +60,72 @@
         app:layout_constraintStart_toStartOf="@id/cameraPreview"
         app:layout_constraintEnd_toEndOf="@id/cameraPreview">
 
-        <TextView
-            android:id="@+id/resultIcon"
-            android:layout_width="wrap_content"
+        <!-- Result header section -->
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="72sp"
-            android:textColor="@color/white" />
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="16dp">
 
-        <TextView
-            android:id="@+id/resultText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:textSize="24sp"
-            android:textColor="@color/white"
-            android:textStyle="bold" />
+            <TextView
+                android:id="@+id/resultIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="48sp"
+                android:textColor="@color/white" />
 
-        <TextView
-            android:id="@+id/resultDomain"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:textSize="16sp"
-            android:textColor="@color/white"
-            android:alpha="0.8" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp">
 
-        <Button
-            android:id="@+id/dismissResultBtn"
-            android:layout_width="wrap_content"
+                <TextView
+                    android:id="@+id/resultText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/resultDomain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:alpha="0.8" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/dismissResultBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="@string/scan_another" />
+
+        </LinearLayout>
+
+        <!-- Diagnostic tabs -->
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/diagnosticTabs"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:text="@string/scan_another" />
+            android:background="@color/surface"
+            app:tabTextColor="@color/text_secondary"
+            app:tabSelectedTextColor="@color/white"
+            app:tabIndicatorColor="@color/white" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/diagnosticPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/surface" />
 
     </LinearLayout>
 
