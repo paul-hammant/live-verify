@@ -14,31 +14,44 @@ A **Proof of Funds (POF)** letter is a document issued by a bank or financial in
 
 Because a POF is the difference between an offer being accepted or rejected, it is a primary target for fraud. Scammers use "Inspect Element" on their online banking to turn a $1,000 balance into $1,000,000, or they buy fake "Bank Letters" from illegal dark-web services. Verified hashes bind the **Available Balance, Account Holder Name, and Issuing Officer** to the bank's domain (e.g., `chase.com` or `goldmansachs.com`).
 
-<div style="max-width: 650px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 40px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); position: relative;">
-  <a href="data/slides/proof-of-funds-letters-transactions-1.html" style="position: absolute; right: -50px; top: 50%; transform: translateY(-50%); background: #e0e0e0; border: 1px solid #999; border-radius: 4px; padding: 6px 8px; font-size: 0.75em; line-height: 1.2; cursor: pointer; color: #333; text-decoration: none;">show<br>me</a>
-  <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #004a99; padding-bottom: 15px; margin-bottom: 20px;">
-    <div>
-      <div style="font-weight: bold; font-size: 1.4em; color: #004a99;">CHASE</div>
-      <div style="font-size: 0.8em; color: #666; text-transform: uppercase;">Private Client Services</div>
-    </div>
-    <div style="text-align: right; font-size: 0.85em; color: #666;">
-      March 15, 2026
-    </div>
+<div style="max-width: 650px; margin: 24px auto; font-family: 'Times New Roman', serif; border: 1px solid #ccc; background: #fff; padding: 50px 60px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); position: relative;">
+  <a href="data/slides/proof-of-funds-letters-transactions-1.html" style="position: absolute; right: -50px; top: 50%; transform: translateY(-50%); background: #e0e0e0; border: 1px solid #999; border-radius: 4px; padding: 6px 8px; font-size: 0.75em; line-height: 1.2; cursor: pointer; color: #333; text-decoration: none; font-family: sans-serif;">show<br>me</a>
+
+  <!-- Bank Logo -->
+  <div style="text-align: center; margin-bottom: 5px;">
+    <div style="font-weight: bold; font-size: 1.8em; color: #004a99; font-family: sans-serif; letter-spacing: 2px;">CHASE</div>
   </div>
-  <div style="background: #f9f9f9; border: 1px solid #999; padding: 15px; font-size: 0.85em; color: #000; line-height: 1.5;">
-    PROOF OF FUNDS STATEMENT<br>
-    Ref: POF-99228877-XJ<br>
-    Account Holder: SARAH JANE SMITH<br>
-    Account Type: Private Client Money Market<br>
-    Available Balance: $1,250,000.00 USD<br>
-    Funds are unencumbered and available for<br>
-    immediate withdrawal or wire transfer.<br>
-    James W. Gordon, Vice President<br>
+  <div style="border-bottom: 2px solid #004a99; margin-bottom: 25px;"></div>
+
+  <div style="background: #f9f9f9; border: 1px solid #999; padding: 20px; font-size: 0.85em; color: #000; line-height: 1.6;">
+    SARAH JANE SMITH<br>
+    4521 PARKVIEW DRIVE<br>
+    GREENWICH, CT 06830<br>
+    <br>
+    <div style="text-align: center; font-weight: bold; text-decoration: underline;">AVAILABLE BALANCE CONFIRMATION</div>
+    <br>
+    DATE: <strong>MARCH 15, 2026</strong><br>
+    ACCOUNT NO: <strong>7892456310000</strong><br>
+    SWIFT NO: <strong>CHASUS33XXX</strong><br>
+    ACCOUNT TYPE: <strong>PRIVATE CLIENT MONEY MARKET</strong><br>
+    BALANCE: <strong>USD 1,250,000.00</strong><br>
+    DESCRIPTION: <strong>VERIFICATION OF FUNDS</strong><br>
+    <br>
+    <div style="text-align: justify;">We, JPMorgan Chase Bank, N.A., confirm that our client, <strong>SARAH JANE SMITH</strong>, currently has available on deposit USD 1,250,000.00. The funds are available for immediate use. This letter puts no financial obligation on said funds. These funds are clear of any holds, liens, or encumbrances.</div>
+    <br>
+    <em>James W. Gordon</em><br>
+    <strong>Vice President, Private Client Banking</strong><br>
+    270 Park Avenue, 12th Floor<br>
+    New York, NY 10017<br>
+    Ph (212) 270-6000<br>
+    Fx (212) 270-6001<br>
+    <br>
     <span style="font-family: 'Courier New', monospace;"
-      title="Demo only: Banks don't yet offer verification&#10;endpoints, so this is illustrative">verify:chase.com/v</span>
+      title="Demo only: Banks don't yet offer verification endpoints, so this is illustrative">verify:chase.com/v</span>
   </div>
-  <div style="font-size: 0.7em; color: #777; margin-top: 15px; font-style: italic; text-align: center;">
-    Scan or select to verify balance authenticity. Point-in-time record only.
+
+  <div style="font-size: 0.7em; color: #777; margin-top: 15px; font-style: italic; text-align: center; font-family: sans-serif;">
+    Select verifiable content and use browser extension to verify. Point-in-time record only.
   </div>
 </div>
 
@@ -123,3 +136,7 @@ Witnessing firms may periodically commit rollups to an inexpensive public blockc
 1. **Issuer domain** — Direct check against the issuer
 2. **Witnessing firm** — Independent confirmation with timestamp
 3. **Public blockchain** — Decentralized trust anchor via rollup inclusion
+
+## Sample Document
+
+See a [sample Proof of Funds letter](https://i.pinimg.com/736x/8a/31/1c/8a311c69055f184ef92410fc05157beb.jpg) for reference.

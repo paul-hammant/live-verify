@@ -14,7 +14,7 @@
             color: white;
         }
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
         }
         .step-indicator {
@@ -92,7 +92,7 @@
         .transform-visual {
             display: flex;
             align-items: center;
-            gap: 20px;
+            gap: 15px;
             margin: 20px 0;
         }
         .text-box {
@@ -100,10 +100,11 @@
             background: #f8fafc;
             border: 2px solid #e2e8f0;
             border-radius: 8px;
-            padding: 15px;
+            padding: 12px;
             font-family: 'Courier New', monospace;
-            font-size: 12px;
-            line-height: 1.6;
+            font-size: 9px;
+            line-height: 1.5;
+            white-space: pre-wrap;
         }
         .text-box.before {
             border-color: #fbbf24;
@@ -112,12 +113,13 @@
             border-color: #22c55e;
         }
         .arrow {
-            font-size: 32px;
+            font-size: 28px;
             color: #004a99;
+            flex-shrink: 0;
         }
         .label {
             text-align: center;
-            font-size: 12px;
+            font-size: 11px;
             color: #64748b;
             margin-top: 8px;
         }
@@ -143,6 +145,7 @@
             justify-content: center;
             color: white;
             font-size: 14px;
+            flex-shrink: 0;
         }
         .rule-text {
             font-size: 13px;
@@ -175,32 +178,56 @@
 
             <div class="transform-visual">
                 <div style="flex: 1;">
-                    <div class="text-box before">
-PROOF OF FUNDS STATEMENT
-Ref: POF-99228877-XJ
-Account Holder: SARAH JANE SMITH
-Account Type: Private Client Money Market
-Available Balance: $1,250,000.00 USD
-Funds are unencumbered and available for
-immediate withdrawal or wire transfer.
-James W. Gordon, Vice President
-verify:chase.com/v
-                    </div>
+                    <div class="text-box before">SARAH JANE SMITH
+4521 PARKVIEW DRIVE
+GREENWICH, CT 06830
+
+AVAILABLE BALANCE CONFIRMATION
+
+DATE:           MARCH 15, 2026
+ACCOUNT NO:     7892456310000
+SWIFT NO:       CHASUS33XXX
+ACCOUNT TYPE:   PRIVATE CLIENT MONEY MARKET
+BALANCE:        USD 1,250,000.00
+DESCRIPTION:    VERIFICATION OF FUNDS
+
+We, JPMorgan Chase Bank, N.A., confirm that our client, SARAH JANE SMITH, currently has available on deposit USD 1,250,000.00. The funds are available for immediate use. This letter puts no financial obligation on said funds. These funds are clear of any holds, liens, or encumbrances.
+
+James W. Gordon
+Vice President, Private Client Banking
+270 Park Avenue, 12th Floor
+New York, NY 10017
+Ph (212) 270-6000
+Fx (212) 270-6001
+
+verify:chase.com/v</div>
                     <div class="label">Raw selected text</div>
                 </div>
                 <div class="arrow">&rarr;</div>
                 <div style="flex: 1;">
-                    <div class="text-box after">
-PROOF OF FUNDS STATEMENT
-Ref: POF-99228877-XJ
-Account Holder: SARAH JANE SMITH
-Account Type: Private Client Money Market
-Available Balance: $1,250,000.00 USD
-Funds are unencumbered and available for
-immediate withdrawal or wire transfer.
-James W. Gordon, Vice President
-verify:chase.com/v
-                    </div>
+                    <div class="text-box after">SARAH JANE SMITH
+4521 PARKVIEW DRIVE
+GREENWICH, CT 06830
+
+AVAILABLE BALANCE CONFIRMATION
+
+DATE:           MARCH 15, 2026
+ACCOUNT NO:     7892456310000
+SWIFT NO:       CHASUS33XXX
+ACCOUNT TYPE:   PRIVATE CLIENT MONEY MARKET
+BALANCE:        USD 1,250,000.00
+DESCRIPTION:    VERIFICATION OF FUNDS
+
+We, JPMorgan Chase Bank, N.A., confirm that our client, SARAH JANE SMITH, currently has available on deposit USD 1,250,000.00. The funds are available for immediate use. This letter puts no financial obligation on said funds. These funds are clear of any holds, liens, or encumbrances.
+
+James W. Gordon
+Vice President, Private Client Banking
+270 Park Avenue, 12th Floor
+New York, NY 10017
+Ph (212) 270-6000
+Fx (212) 270-6001
+
+verify:chase.com/v</div>
                     <div class="label">Normalized text</div>
                 </div>
             </div>

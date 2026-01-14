@@ -204,7 +204,7 @@
             <div class="request-flow">
                 <div class="endpoint">
                     <div class="icon">&#x1F4BB;</div>
-                    <div class="label">Your Browser or Phone App</div>
+                    <div class="label">Your Browser</div>
                 </div>
                 <div class="arrow-flow">
                     <span class="arrow">&rarr;</span>
@@ -243,14 +243,28 @@
 
     <script>
         async function computeHash() {
-            const text = `PROOF OF FUNDS STATEMENT
-Ref: POF-99228877-XJ
-Account Holder: SARAH JANE SMITH
-Account Type: Private Client Money Market
-Available Balance: $1,250,000.00 USD
-Funds are unencumbered and available for
-immediate withdrawal or wire transfer.
-James W. Gordon, Vice President
+            const text = `SARAH JANE SMITH
+4521 PARKVIEW DRIVE
+GREENWICH, CT 06830
+
+AVAILABLE BALANCE CONFIRMATION
+
+DATE:           MARCH 15, 2026
+ACCOUNT NO:     7892456310000
+SWIFT NO:       CHASUS33XXX
+ACCOUNT TYPE:   PRIVATE CLIENT MONEY MARKET
+BALANCE:        USD 1,250,000.00
+DESCRIPTION:    VERIFICATION OF FUNDS
+
+We, JPMorgan Chase Bank, N.A., confirm that our client, SARAH JANE SMITH, currently has available on deposit USD 1,250,000.00. The funds are available for immediate use. This letter puts no financial obligation on said funds. These funds are clear of any holds, liens, or encumbrances.
+
+James W. Gordon
+Vice President, Private Client Banking
+270 Park Avenue, 12th Floor
+New York, NY 10017
+Ph (212) 270-6000
+Fx (212) 270-6001
+
 verify:chase.com/v`;
 
             const encoder = new TextEncoder();

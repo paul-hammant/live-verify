@@ -14,7 +14,7 @@
             color: white;
         }
         .container {
-            max-width: 800px;
+            max-width: 850px;
             margin: 0 auto;
         }
         .step-indicator {
@@ -99,11 +99,13 @@
             background: #f8fafc;
             border: 2px solid #e2e8f0;
             border-radius: 8px;
-            padding: 15px;
+            padding: 12px;
             margin: 0;
             font-family: 'Courier New', monospace;
-            font-size: 12px;
-            line-height: 1.6;
+            font-size: 9px;
+            line-height: 1.4;
+            white-space: pre-wrap;
+            max-width: 100%;
         }
         .arrow-down {
             font-size: 32px;
@@ -180,14 +182,28 @@
             <h2>SHA-256 hash computed in your browser <span class="live-indicator"><span class="live-dot"></span>Live</span></h2>
 
             <div class="hash-demo">
-                <pre>PROOF OF FUNDS STATEMENT
-Ref: POF-99228877-XJ
-Account Holder: SARAH JANE SMITH
-Account Type: Private Client Money Market
-Available Balance: $1,250,000.00 USD
-Funds are unencumbered and available for
-immediate withdrawal or wire transfer.
-James W. Gordon, Vice President
+                <pre>SARAH JANE SMITH
+4521 PARKVIEW DRIVE
+GREENWICH, CT 06830
+
+AVAILABLE BALANCE CONFIRMATION
+
+DATE:           MARCH 15, 2026
+ACCOUNT NO:     7892456310000
+SWIFT NO:       CHASUS33XXX
+ACCOUNT TYPE:   PRIVATE CLIENT MONEY MARKET
+BALANCE:        USD 1,250,000.00
+DESCRIPTION:    VERIFICATION OF FUNDS
+
+We, JPMorgan Chase Bank, N.A., confirm that our client, SARAH JANE SMITH, currently has available on deposit USD 1,250,000.00. The funds are available for immediate use. This letter puts no financial obligation on said funds. These funds are clear of any holds, liens, or encumbrances.
+
+James W. Gordon
+Vice President, Private Client Banking
+270 Park Avenue, 12th Floor
+New York, NY 10017
+Ph (212) 270-6000
+Fx (212) 270-6001
+
 verify:chase.com/v</pre>
                 <div class="arrow-down">&darr;</div>
             </div>
@@ -199,7 +215,7 @@ verify:chase.com/v</pre>
 
             <div class="info-box">
                 <strong>Why this matters:</strong> The hash is computed entirely in your browser.
-                The actual POF text (with sensitive balance information) is never sent anywhere.
+                The actual POF text (with sensitive balance and account information) is never sent anywhere.
                 Only this 64-character fingerprint will be sent to Chase's verification server.
             </div>
         </div>
@@ -207,14 +223,28 @@ verify:chase.com/v</pre>
 
     <script>
         async function computeHash() {
-            const text = `PROOF OF FUNDS STATEMENT
-Ref: POF-99228877-XJ
-Account Holder: SARAH JANE SMITH
-Account Type: Private Client Money Market
-Available Balance: $1,250,000.00 USD
-Funds are unencumbered and available for
-immediate withdrawal or wire transfer.
-James W. Gordon, Vice President
+            const text = `SARAH JANE SMITH
+4521 PARKVIEW DRIVE
+GREENWICH, CT 06830
+
+AVAILABLE BALANCE CONFIRMATION
+
+DATE:           MARCH 15, 2026
+ACCOUNT NO:     7892456310000
+SWIFT NO:       CHASUS33XXX
+ACCOUNT TYPE:   PRIVATE CLIENT MONEY MARKET
+BALANCE:        USD 1,250,000.00
+DESCRIPTION:    VERIFICATION OF FUNDS
+
+We, JPMorgan Chase Bank, N.A., confirm that our client, SARAH JANE SMITH, currently has available on deposit USD 1,250,000.00. The funds are available for immediate use. This letter puts no financial obligation on said funds. These funds are clear of any holds, liens, or encumbrances.
+
+James W. Gordon
+Vice President, Private Client Banking
+270 Park Avenue, 12th Floor
+New York, NY 10017
+Ph (212) 270-6000
+Fx (212) 270-6001
+
 verify:chase.com/v`;
 
             const encoder = new TextEncoder();

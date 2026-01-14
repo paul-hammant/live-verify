@@ -14,7 +14,7 @@
             color: white;
         }
         .container {
-            max-width: 800px;
+            max-width: 850px;
             margin: 0 auto;
         }
         .step-indicator {
@@ -79,40 +79,21 @@
             color: #333;
             box-shadow: 0 10px 40px rgba(0,0,0,0.3);
         }
-        .mode-toggle {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin-bottom: 20px;
-        }
-        .mode-btn {
-            padding: 8px 20px;
-            border: 2px solid #004a99;
-            background: white;
-            border-radius: 20px;
-            cursor: pointer;
-            font-size: 14px;
-            transition: all 0.2s;
-        }
-        .mode-btn.active {
-            background: #004a99;
-            color: white;
-        }
-        .mode-btn:hover:not(.active) {
+        .mode-note {
+            text-align: center;
             background: #e6f0ff;
-        }
-        .scene {
-            display: none;
-        }
-        .scene.active {
-            display: block;
+            padding: 10px 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 13px;
+            color: #004a99;
         }
         .desktop-scene {
             position: relative;
             background: #f0f0f0;
             border-radius: 8px;
             padding: 20px;
-            min-height: 300px;
+            min-height: 400px;
         }
         .browser-bar {
             background: #e0e0e0;
@@ -144,48 +125,53 @@
         .document-view {
             background: white;
             border: 1px solid #ccc;
-            padding: 20px;
-            font-family: sans-serif;
+            padding: 30px 40px;
+            font-family: 'Times New Roman', serif;
             position: relative;
         }
-        .doc-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        .doc-logo {
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.4em;
+            color: #004a99;
+            font-family: sans-serif;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+        }
+        .doc-line {
             border-bottom: 2px solid #004a99;
-            padding-bottom: 10px;
             margin-bottom: 15px;
         }
-        .doc-header .logo {
-            font-weight: bold;
-            font-size: 1.2em;
-            color: #004a99;
+        .selection-demo {
+            position: relative;
+            background: #f8fafc;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 20px;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            line-height: 1.6;
         }
-        .doc-header .date {
-            font-size: 0.85em;
-            color: #666;
+        .selection-demo .selected {
+            background: #bfdbfe;
+            border-radius: 2px;
         }
-        .pof-content {
-            background: #f9f9f9;
-            border: 1px solid #999;
-            padding: 12px;
-            font-size: 0.85em;
-            color: #000;
-            line-height: 1.5;
+        .cursor {
+            display: inline-block;
+            width: 2px;
+            height: 1.2em;
+            background: #3b82f6;
+            animation: blink 1s infinite;
+            vertical-align: text-bottom;
         }
-        .selection-highlight {
-            background: rgba(0, 74, 153, 0.2);
-            border: 2px dashed #004a99;
-            animation: pulse 1.5s infinite;
-        }
-        @keyframes pulse {
-            0%, 100% { border-color: #004a99; }
-            50% { border-color: #ffd700; }
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
         }
         .context-menu {
             position: absolute;
-            top: 50%;
-            right: 20px;
+            top: 40%;
+            right: 30px;
             background: #333;
             border-radius: 6px;
             padding: 8px 0;
@@ -197,6 +183,7 @@
             color: white;
             font-size: 13px;
             cursor: pointer;
+            font-family: sans-serif;
         }
         .context-menu-item:hover {
             background: #004a99;
@@ -204,82 +191,6 @@
         .context-menu-item.verify {
             color: #ffd700;
             font-weight: bold;
-        }
-        .camera-scene {
-            position: relative;
-            background: #1a1a1a;
-            border-radius: 8px;
-            padding: 20px;
-            min-height: 350px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .phone-frame {
-            position: relative;
-            width: 280px;
-            height: 400px;
-            background: #000;
-            border-radius: 30px;
-            padding: 10px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-        }
-        .phone-screen {
-            width: 100%;
-            height: 100%;
-            background: #222;
-            border-radius: 22px;
-            overflow: hidden;
-            position: relative;
-        }
-        .camera-view {
-            width: 100%;
-            height: 100%;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .paper-doc {
-            width: 85%;
-            background: white;
-            border-radius: 4px;
-            padding: 12px;
-            font-family: sans-serif;
-            transform: translate(-1cm, -1cm) rotate(-3deg);
-            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-        }
-        .paper-doc .header {
-            font-weight: bold;
-            color: #004a99;
-            font-size: 10px;
-            border-bottom: 1px solid #004a99;
-            padding-bottom: 4px;
-            margin-bottom: 6px;
-        }
-        .paper-doc .content {
-            font-size: 7px;
-            line-height: 1.4;
-            color: #000;
-        }
-        .camera-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-        }
-        .camera-hint {
-            position: absolute;
-            bottom: 15px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: rgba(0,0,0,0.7);
-            color: white;
-            padding: 6px 12px;
-            border-radius: 15px;
-            font-size: 10px;
         }
         .explanation {
             margin-top: 20px;
@@ -304,88 +215,64 @@
         </div>
 
         <h1>Step 1: Selection</h1>
-        <p class="subtitle">Select or scan the verifiable content</p>
+        <p class="subtitle">Select the verifiable content in your browser</p>
 
         <div class="card">
-            <div class="mode-toggle">
-                <button class="mode-btn active" onclick="showScene('desktop')">Laptop or Desktop</button>
-                <button class="mode-btn" onclick="showScene('camera')">Phone Camera</button>
+            <div class="mode-note">
+                <strong>Browser Extension Only:</strong> POF letters are too large for camera scanning. Use the browser extension to select and verify.
             </div>
 
-            <div id="desktop-scene" class="scene active">
-                <div class="desktop-scene">
-                    <div class="browser-bar">
-                        <div class="browser-dot red"></div>
-                        <div class="browser-dot yellow"></div>
-                        <div class="browser-dot green"></div>
-                        <div class="url-bar">chase.com/documents/pof-99228877</div>
-                    </div>
-                    <div class="document-view">
-                        <div class="doc-header">
-                            <div class="logo">CHASE</div>
-                            <div class="date">March 15, 2026</div>
-                        </div>
-                        <div class="pof-content selection-highlight">
-                            PROOF OF FUNDS STATEMENT<br>
-                            Ref: POF-99228877-XJ<br>
-                            Account Holder: SARAH JANE SMITH<br>
-                            Account Type: Private Client Money Market<br>
-                            Available Balance: $1,250,000.00 USD<br>
-                            Funds are unencumbered and available for<br>
-                            immediate withdrawal or wire transfer.<br>
-                            James W. Gordon, Vice President<br>
-                            <span style="font-family: 'Courier New', monospace;">verify:chase.com/v</span>
-                        </div>
-                        <div class="context-menu">
-                            <div class="context-menu-item">Copy</div>
-                            <div class="context-menu-item">Select All</div>
-                            <div class="context-menu-item verify">Verify Selection</div>
-                        </div>
-                    </div>
+            <div class="desktop-scene">
+                <div class="browser-bar">
+                    <div class="browser-dot red"></div>
+                    <div class="browser-dot yellow"></div>
+                    <div class="browser-dot green"></div>
+                    <div class="url-bar">london-wall-hedgefund.co.uk/intranet/mail-attachments/112233212344.pdf</div>
                 </div>
-            </div>
-
-            <div id="camera-scene" class="scene">
-                <div class="camera-scene">
-                    <div class="phone-frame">
-                        <div class="phone-screen">
-                            <div class="camera-view">
-                                <div class="paper-doc">
-                                    <div class="header">CHASE - Private Client Services</div>
-                                    <div class="content">
-                                        PROOF OF FUNDS STATEMENT<br>
-                                        Ref: POF-99228877-XJ<br>
-                                        Account Holder: SARAH JANE SMITH<br>
-                                        Account Type: Private Client Money Market<br>
-                                        Available Balance: $1,250,000.00 USD<br>
-                                        Funds are unencumbered and available for<br>
-                                        immediate withdrawal or wire transfer.<br>
-                                        James W. Gordon, Vice President<br>
-                                        verify:chase.com/v
-                                    </div>
-                                </div>
-                                <img src="../camera_overlay.svg" class="camera-overlay" alt="Camera overlay">
-                                <div class="camera-hint">Point at verifiable content</div>
-                            </div>
-                        </div>
+                <div class="document-view">
+                    <div class="doc-logo">CHASE</div>
+                    <div class="doc-line"></div>
+                    <div class="selection-demo">
+                        <span class="selected">SARAH JANE SMITH<br>
+4521 PARKVIEW DRIVE<br>
+GREENWICH, CT 06830<br>
+<br>
+AVAILABLE BALANCE CONFIRMATION<br>
+<br>
+DATE: MARCH 15, 2026<br>
+ACCOUNT NO: 7892456310000<br>
+SWIFT NO: CHASUS33XXX<br>
+ACCOUNT TYPE: PRIVATE CLIENT MONEY MARKET<br>
+BALANCE: USD 1,250,000.00<br>
+DESCRIPTION: VERIFICATION OF FUNDS<br>
+<br>
+We, JPMorgan Chase Bank, N.A., confirm that our client, SARAH JANE SMITH,<br>
+currently has available on deposit USD 1,250,000.00. The funds are available for<br>
+immediate use. This letter puts no financial obligation on said funds. These funds are<br>
+clear of any holds, liens, or encumbrances.<br>
+<br>
+James W. Gordon<br>
+Vice President, Private Client Banking<br>
+270 Park Avenue, 12th Floor<br>
+New York, NY 10017<br>
+Ph (212) 270-6000<br>
+Fx (212) 270-6001<br>
+<br>
+verify:chase.com/v</span><span class="cursor"></span>
+                    </div>
+                    <div class="context-menu">
+                        <div class="context-menu-item">Copy</div>
+                        <div class="context-menu-item">Select All</div>
+                        <div class="context-menu-item verify">Verify Selection</div>
                     </div>
                 </div>
             </div>
 
             <div class="explanation">
-                <strong>How it works:</strong> The verifiable text contains a verification URL (<code>verify:chase.com/v</code>).
-                When you select and verify this text, or scan it with the Live Verify camera, the system extracts and validates it against the bank's domain.
+                <strong>How it works:</strong> The user selects the verifiable content (shown with blue highlight). The selection includes the verification URL (<code>verify:chase.com/v</code>).
+                Right-click to verify, or use the browser extension. The system extracts and validates it against Chase's domain.
             </div>
         </div>
     </div>
-
-    <script>
-        function showScene(mode) {
-            document.querySelectorAll('.scene').forEach(s => s.classList.remove('active'));
-            document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
-            document.getElementById(mode + '-scene').classList.add('active');
-            event.target.classList.add('active');
-        }
-    </script>
 </body>
 </html>
