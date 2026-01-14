@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" viewBox="175 81 479 756.72725" width="479" height="756.72725">
+  <defs>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="127.1" y="5.327275">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308"/>
+      <feOffset in="blur" result="offset" dx="0" dy="2"/>
+      <feFlood flood-color="black" flood-opacity=".5" result="flood"/>
+      <feComposite in="flood" in2="offset" operator="in" result="color"/>
+      <feMerge>
+        <feMergeNode in="color"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.25.1\n2026-01-14 16:16:51 +0000</metadata>
+  <g id="Canvas_1" stroke="none" fill="none" fill-opacity="1" stroke-opacity="1" stroke-dasharray="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_5" filter="url(#Shadow)">
+        <path d="M 245.48522 600.2573 L 335.22522 600.2573 C 346.8232 600.2573 356.22522 609.65934 356.22522 621.2573 L 356.22522 628.1813 C 356.22522 639.7793 346.8232 649.1813 335.22522 649.1813 L 245.48522 649.1813 C 233.88724 649.1813 224.48522 639.7793 224.48522 628.1813 L 224.48522 621.2573 C 224.48522 609.65934 233.88724 600.2573 245.48522 600.2573 Z" fill="white"/>
+        <path d="M 245.48522 600.2573 L 335.22522 600.2573 C 346.8232 600.2573 356.22522 609.65934 356.22522 621.2573 L 356.22522 628.1813 C 356.22522 639.7793 346.8232 649.1813 335.22522 649.1813 L 245.48522 649.1813 C 233.88724 649.1813 224.48522 639.7793 224.48522 628.1813 L 224.48522 621.2573 C 224.48522 609.65934 233.88724 600.2573 245.48522 600.2573 Z" stroke="#ffd579" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+        <text transform="translate(229.48522 605.2573)" fill="#ffd579">
+          <tspan font-family="Helvetica Neue" font-size="33" fill="#ffd579" x="60.87" y="31" xml:space="preserve">          </tspan>
+        </text>
+      </g>
+      <g id="Line_7" filter="url(#Shadow)">
+        <path d="M 305.85788 213.34084 L 215.73666 213.34084 C 210.7661 213.34084 206.73666 217.37027 206.73666 222.34084 L 206.73666 299.04243" stroke="#ffd579" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Line_8" filter="url(#Shadow)">
+        <path d="M 620.5802 512.99774 L 620.5802 591.11475 C 620.5802 596.0853 616.55076 600.11475 611.5802 600.11475 C 611.53305 600.11475 611.4859 600.1144 611.43876 600.11364 L 521.459 598.69934" stroke="#ffd579" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Graphic_9" filter="url(#Shadow)">
+        <text transform="translate(241.95322 601.4224)" fill="#ffd579">
+          <tspan font-family="Helvetica Neue" font-size="33" fill="#ffd579" x="42632564e-21" y="31" xml:space="preserve">verify</tspan>
+        </text>
+      </g>
+      <g id="Line_10">
+        <path d="M 182 88 L 182 749 L 647 749 L 645 88" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="14"/>
+      </g>
+      <g id="Graphic_14">
+        <path d="M 176.33435 749 L 176.33435 749.22725 C 176.33435 797.8283 215.7333 837.2272 264.33435 837.2272 L 563.33435 837.2272 C 611.9354 837.2272 651.33435 797.8283 651.33435 749.22725 L 651.33435 749 Z" fill="black"/>
+        <path d="M 176.33435 749 L 176.33435 749.22725 C 176.33435 797.8283 215.7333 837.2272 264.33435 837.2272 L 563.33435 837.2272 C 611.9354 837.2272 651.33435 797.8283 651.33435 749.22725 L 651.33435 749 Z" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Group_17">
+        <g id="Graphic_16">
+          <ellipse cx="413.83435" cy="661.8649" rx="39.4872425838185" ry="40.0000639160758" fill="black"/>
+          <ellipse cx="413.83435" cy="661.8649" rx="39.4872425838185" ry="40.0000639160758" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_15">
+          <ellipse cx="413.84717" cy="661.8649" rx="34.5000551276155" ry="35.5000567255173" fill="red"/>
+          <ellipse cx="413.84717" cy="661.8649" rx="34.5000551276155" ry="35.5000567255173" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -15,7 +15,7 @@ A verified employment reference proves you actually worked somewhere. It can app
 Fraud is common: "Reference Mills" sell fake employment letters. Live Verify connects the verifier directly to the real employer's domain.
 
 <div style="max-width: 550px; margin: 24px auto; font-family: sans-serif; border: 1px solid #ccc; background: #fff; padding: 20px; position: relative;">
-  <button onclick="window.showMeVerifiable && showMeVerifiable('voe')" style="position: absolute; right: -50px; top: 50%; transform: translateY(-50%); background: #e0e0e0; border: 1px solid #999; border-radius: 4px; padding: 6px 8px; font-size: 0.75em; line-height: 1.2; cursor: pointer; color: #333;">show<br>me</button>
+  <a href="slides/employment-references-1.html" style="position: absolute; right: -50px; top: 50%; transform: translateY(-50%); background: #e0e0e0; border: 1px solid #999; border-radius: 4px; padding: 6px 8px; font-size: 0.75em; line-height: 1.2; cursor: pointer; color: #333; text-decoration: none;">show<br>me</a>
   <div style="font-size: 0.85em; color: #555; border-bottom: 1px solid #ddd; padding-bottom: 10px; margin-bottom: 15px;">
     <strong>From:</strong> john.smith@gmail.com<br>
     <strong>To:</strong> miggins@newco.com<br>
@@ -26,13 +26,12 @@ Fraud is common: "Reference Mills" sell fake employment letters. Live Verify con
     As requested, here is ACME's reference for me:
   </div>
   <div style="font-family: 'Courier New', monospace; background: #f9f9f9; padding: 15px; border: 1px solid #999; font-size: 1em; color: #000; line-height: 1.6;">
-    <span verifiable-text="start" data-for="voe">[</span>
     Acme Corporation<br>
     John D. Smith<br>
     Senior Software Engineer<br>
     March 2020 &nbsp;&nbsp;–&nbsp;&nbsp; October 2025<br><br>
     Eligible for Rehire<br><br>
-    <span data-verify-line="voe">verify:acme-corp.com/staff</span> <span verifiable-text="end" data-for="voe">]</span>
+    verify:acme-corp.com/staff
   </div>
   <div style="font-size: 0.95em; color: #333; margin-top: 15px;">
     Let me know if you need anything else.<br><br>
@@ -42,8 +41,8 @@ Fraud is common: "Reference Mills" sell fake employment letters. Live Verify con
 </div>
 
 <div style="max-width: 550px; margin: 24px auto; font-family: 'Times New Roman', serif; border: 1px solid #999; background: #fff; padding: 40px 40px 20px 40px; position: relative;">
-  <button onclick="window.showMeVerifiable && showMeVerifiable('voe2')" style="position: absolute; right: -50px; top: 50%; transform: translateY(-50%); background: #e0e0e0; border: 1px solid #999; border-radius: 4px; padding: 6px 8px; font-size: 0.75em; line-height: 1.2; cursor: pointer; color: #333;">show<br>me</button>
-  <h3 style="margin: 0 0 20px 0; font-size: 1.1em; text-transform: uppercase; letter-spacing: 1px;"><span verifiable-text="start" data-for="voe2">[</span>References</h3>
+  <a href="slides/employment-references-1.html" style="position: absolute; right: -50px; top: 50%; transform: translateY(-50%); background: #e0e0e0; border: 1px solid #999; border-radius: 4px; padding: 6px 8px; font-size: 0.75em; line-height: 1.2; cursor: pointer; color: #333; text-decoration: none;">show<br>me</a>
+  <h3 style="margin: 0 0 20px 0; font-size: 1.1em; text-transform: uppercase; letter-spacing: 1px;">References</h3>
   <div style="font-size: 0.95em; line-height: 1.6; color: #333;">
     <div style="font-family: 'Courier New', monospace; background: #f0f0f0; padding: 12px; border: 1px solid #ccc; font-size: 0.95em; color: #999; line-height: 1.5; margin-bottom: 15px;">
       StartupCo<br>
@@ -65,7 +64,7 @@ Fraud is common: "Reference Mills" sell fake employment letters. Live Verify con
       Senior Software Engineer<br>
       March 2020 – October 2025<br>
       Eligible for Rehire<br>
-      <span data-verify-line="voe2">verify:acme-corp.com/staff</span> <span verifiable-text="end" data-for="voe2">]</span>
+      verify:acme-corp.com/staff
     </div>
   </div>
   <div style="position: absolute; bottom: 10px; left: 40px; right: 40px; font-size: 0.75em; color: #777; display: flex; justify-content: space-between;">
@@ -120,11 +119,11 @@ Unlike formal VOE letters from HR departments, **peer references** are colleague
 The verify URL points to the *referee's* domain, not the employer's. This reflects that the claim is personal ("I worked with this person") rather than institutional ("This person was employed here").
 
 <div style="max-width: 550px; margin: 24px auto; font-family: 'Courier New', monospace; background: #f9f9f9; padding: 15px; border: 1px solid #999; font-size: 1em; color: #000; line-height: 1.6; position: relative;">
-  <button onclick="window.showMeVerifiable && showMeVerifiable('peer')" style="position: absolute; right: -50px; top: 50%; transform: translateY(-50%); background: #e0e0e0; border: 1px solid #999; border-radius: 4px; padding: 6px 8px; font-size: 0.75em; line-height: 1.2; cursor: pointer; color: #333;">show<br>me</button>
-  <span verifiable-text="start" data-for="peer">[</span>I, Paul Hammant, worked for Kevin Behr in<br>
+  <a href="slides/employment-references-1.html" style="position: absolute; right: -50px; top: 50%; transform: translateY(-50%); background: #e0e0e0; border: 1px solid #999; border-radius: 4px; padding: 6px 8px; font-size: 0.75em; line-height: 1.2; cursor: pointer; color: #333; text-decoration: none;">show<br>me</a>
+  I, Paul Hammant, worked for Kevin Behr in<br>
   his role as CIO of HedgeServ in New York City<br>
   in 2015 and 2016<br>
-  <span data-verify-line="peer">verify:paulhammant.com/refs</span> <span verifiable-text="end" data-for="peer">]</span>
+  verify:paulhammant.com/refs
 </div>
 
 **Use Cases:**
