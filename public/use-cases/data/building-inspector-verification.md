@@ -16,27 +16,26 @@ Because these officials have the legal right to walk into your kitchen or baseme
 
 Live Verify allows a homeowner to scan the badge at the door and see a green "ACTIVE" status from the city's own domain, proving the person is a real employee and not a scammer.
 
-<div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2); display: flex;">
-  <div style="background: #1a237e; padding: 15px; display: flex; flex-direction: column; align-items: center;">
+<div style="max-width: 480px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; border-radius: 12px; background: #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.2); display: flex; position: relative;">
+  <a href="data/slides/building-inspector-verification-1.html" style="position: absolute; right: -50px; top: 50%; transform: translateY(-50%); background: #e0e0e0; border: 1px solid #999; border-radius: 4px; padding: 6px 8px; font-size: 0.75em; line-height: 1.2; cursor: pointer; color: #333; text-decoration: none;">show<br>me</a>
+  <div style="background: #1a237e; padding: 15px; display: flex; flex-direction: column; align-items: center; border-radius: 10px 0 0 10px;">
     <div style="font-size: 2em; color: #fff; margin-bottom: 10px;">🏛</div>
     <div style="width: 100px; height: 125px; background: #eee; display: flex; align-items: center; justify-content: center; color: #000; border: 1px solid #ccc; border-radius: 4px;">[PHOTO ID]</div>
   </div>
-  <div style="padding: 20px; flex-grow: 1;">
-    <div style="color: #000;"><span verifiable-text="start" data-for="inspect">[</span>CITY OF CHICAGO</div>
-    <div style="font-size: 0.8em; color: #000;">DEPARTMENT OF BUILDINGS</div>
-    <div style="margin: 0; color: #000;">ELECTRICAL SAFETY INSPECTOR</div>
-    <div style="font-size: 1.1em; color: #000; font-weight: bold; margin: 5px 0;">RAYMOND STANTZ</div>
-    <div style="font-size: 0.9em; color: #000; line-height: 1.4;">
-      <strong>Badge #:</strong> 992288<br>
+  <div style="padding: 15px; flex-grow: 1; display: flex; flex-direction: column;">
+    <div style="flex-grow: 1;">
+      <div style="color: #1a237e; font-weight: bold;">CITY OF CHICAGO</div>
+      <div style="font-size: 0.8em; color: #666;">DEPARTMENT OF BUILDINGS</div>
     </div>
-    <div style="font-size: 0.75em; color: #000; font-style: italic; line-height: 1.5; margin-top: 10px;">
+    <div style="background: #f9f9f9; border: 1px solid #999; padding: 10px; font-size: 0.85em; color: #000; line-height: 1.4;">
+      ELECTRICAL SAFETY INSPECTOR<br>
+      RAYMOND STANTZ<br>
+      Badge #: 992288<br>
       The bearer is authorized to enter premises<br>
-      for the purpose of official safety inspections.<br>
-      Chicago Municipal Code 13-8.
-    </div>
-    <div data-verify-line="inspect" style="font-family: 'Courier New', monospace; font-size: 0.75em; color: #000; margin-top: 8px;"
-      title="Demo only: City of Chicago doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      vfy:cityofchicago.org/inspectors <span verifiable-text="end" data-for="inspect">]</span>
+      for official safety inspections.<br>
+      Chicago Municipal Code 13-8.<br>
+      <span style="font-family: 'Courier New', monospace;"
+        title="Demo only: City of Chicago doesn't yet offer verification&#10;endpoints, so this is illustrative">vfy:cityofchicago.org/inspectors</span>
     </div>
   </div>
 </div>
