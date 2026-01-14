@@ -115,7 +115,7 @@
             background: #fff;
             overflow: hidden;
             box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-            transform: rotate(-3deg);
+            transform: rotate(-3deg) translate(-1cm, -1cm);
         }
         .badge-header {
             background: #1a237e;
@@ -157,38 +157,14 @@
             font-size: 0.7em;
             margin-right: 12px;
         }
-        .badge-info h4 {
-            margin: 0;
-            color: #1a237e;
-            font-size: 0.85em;
-        }
-        .badge-info .name {
-            font-size: 0.95em;
-            font-weight: bold;
-            margin: 4px 0;
-        }
-        .badge-info .details {
-            font-size: 0.75em;
-            color: #333;
+        .badge-scannable {
+            flex-grow: 1;
+            background: #f9f9f9;
+            border: 1px solid #999;
+            padding: 10px;
+            font-size: 0.7em;
+            color: #000;
             line-height: 1.4;
-        }
-        .badge-footer {
-            padding: 0 15px 15px 15px;
-        }
-        .badge-footer p {
-            font-size: 0.6em;
-            color: #555;
-            font-style: italic;
-            text-align: center;
-            margin-bottom: 8px;
-        }
-        .badge-verify {
-            border-top: 1px dashed #999;
-            padding-top: 5px;
-            font-family: 'Courier New', monospace;
-            font-size: 0.65em;
-            color: #555;
-            text-align: center;
         }
         .camera-overlay {
             position: absolute;
@@ -242,19 +218,17 @@
                     </div>
                     <div class="badge-body">
                         <div class="badge-photo">[PHOTO ID]</div>
-                        <div class="badge-info">
-                            <h4>MASTER ELECTRICIAN</h4>
-                            <div class="name">MIKE J. MILLER</div>
-                            <div class="details">
-                                <strong>License #:</strong> ELEC-992288 (TX)<br>
-                                <strong>Company:</strong> Sparky's Power, LLC<br>
-                                <strong>Status:</strong> ACTIVE / INSURED
-                            </div>
+                        <div class="badge-scannable">
+                            MASTER ELECTRICIAN<br>
+                            MIKE J. MILLER<br>
+                            License #: ELEC-992288 (TX)<br>
+                            Company: Sparky's Power, LLC<br>
+                            Status: ACTIVE / INSURED<br>
+                            Verified via the State Licensing Board.<br>
+                            Includes current general liability insurance<br>
+                            and criminal background clearance.<br>
+                            <span style="font-family: 'Courier New', monospace;">verify:tx-license.gov/v</span>
                         </div>
-                    </div>
-                    <div class="badge-footer">
-                        <p>Verified via the State Licensing Board. Includes current general liability insurance and criminal background clearance.</p>
-                        <div class="badge-verify">verify:tx-license.gov/v</div>
                     </div>
                 </div>
 

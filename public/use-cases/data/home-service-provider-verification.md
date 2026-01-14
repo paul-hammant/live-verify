@@ -19,8 +19,8 @@ The **Verified Badge** is the worker's digital or physical ID. It proves:
 
 "Fake Repairman" scams are a common way for burglars to case a house. Live Verify allows a homeowner to scan the badge at the door and see a green "ACTIVE" status from the state board, ensuring only legitimate professionals enter the home.
 
-<div style="max-width: 400px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2); position: relative;">
-  <a href="slides/home-service-provider-verification-1.html" style="position: absolute; right: -50px; top: 50%; transform: translateY(-50%); background: #e0e0e0; border: 1px solid #999; border-radius: 4px; padding: 6px 8px; font-size: 0.75em; line-height: 1.2; cursor: pointer; color: #333; text-decoration: none;">show<br>me</a>
+<div style="max-width: 480px; margin: 24px auto; font-family: sans-serif; border: 2px solid #333; border-radius: 12px; background: #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.2); position: relative;">
+  <a href="data/slides/home-service-provider-verification-1.html" style="position: absolute; right: -50px; top: 50%; transform: translateY(-50%); background: #e0e0e0; border: 1px solid #999; border-radius: 4px; padding: 6px 8px; font-size: 0.75em; line-height: 1.2; cursor: pointer; color: #333; text-decoration: none;">show<br>me</a>
   <div style="background: #1a237e; color: #fff; padding: 15px; text-align: center; display: flex; align-items: center; justify-content: center;">
     <div style="font-size: 1.5em; margin-right: 10px;">🛠️</div>
     <div>
@@ -28,27 +28,21 @@ The **Verified Badge** is the worker's digital or physical ID. It proves:
       <div style="font-size: 0.8em; opacity: 0.8;">OFFICIAL LICENSE & SAFETY CLEARANCE</div>
     </div>
   </div>
-<div style="padding: 20px; display: flex;">
+  <div style="padding: 20px; display: flex;">
     <div style="width: 100px; margin-right: 15px;">
       <div style="width: 100px; height: 125px; background: #eee; display: flex; align-items: center; justify-content: center; color: #777; border: 1px solid #ccc; border-radius: 4px;">[PHOTO ID]</div>
     </div>
-    <div style="flex-grow: 1;">
-      <h4 style="margin: 0; color: #1a237e;">MASTER ELECTRICIAN</h4>
-      <div style="font-size: 1.1em; font-weight: bold; margin: 5px 0;">MIKE J. MILLER</div>
-      <div style="font-size: 0.9em; color: #333; line-height: 1.4;">
-        <strong>License #:</strong> ELEC-992288 (TX)<br>
-        <strong>Company:</strong> Sparky's Power, LLC<br>
-        <strong>Status:</strong> ACTIVE / INSURED
-      </div>
-    </div>
-  </div>
-<div style="padding: 0 20px 20px 20px;">
-    <p style="font-size: 0.75em; color: #555; font-style: italic; text-align: center;">
-      Verified via the State Licensing Board. Includes current general liability insurance and criminal background clearance.
-    </p>
-    <div style="border-top: 1px dashed #999; margin-top: 10px; padding-top: 5px; font-family: 'Courier New', monospace; font-size: 0.75em; color: #555; text-align: center;"
-      title="Demo only: Licensing board doesn't yet offer verification&#10;endpoints, so this is illustrative">
-      verify:tx-license.gov/v
+    <div style="flex-grow: 1; background: #f9f9f9; border: 1px solid #999; padding: 12px; font-size: 0.9em; color: #000; line-height: 1.5;">
+      MASTER ELECTRICIAN<br>
+      MIKE J. MILLER<br>
+      License #: ELEC-992288 (TX)<br>
+      Company: Sparky's Power, LLC<br>
+      Status: ACTIVE / INSURED<br>
+      Verified via the State Licensing Board.<br>
+      Includes current general liability insurance<br>
+      and criminal background clearance.<br>
+      <span style="font-family: 'Courier New', monospace;"
+        title="Demo only: Licensing board doesn't yet offer verification&#10;endpoints, so this is illustrative">verify:tx-license.gov/v</span>
     </div>
   </div>
 </div>
