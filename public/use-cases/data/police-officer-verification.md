@@ -8,6 +8,8 @@ tags: ["police", "officer", "verification", "personal", "safety", "service", "pu
 furtherDerivations: 2
 ---
 
+> **See also:** [E-Ink ID Cards](../e-ink-id-cards.md) — comprehensive guide to rotating-salt badges, security properties, and high-risk interactions.
+
 ## What is Police Officer Verification?
 
 When a citizen is pulled over in a traffic stop (especially by an unmarked vehicle) or is visited at home by someone claiming to be a police officer, they have a critical need to know: **"Is this person actually a law enforcement officer?"**
@@ -47,8 +49,6 @@ When presented with a physical warrant card, a citizen must rely on visual inspe
 
 ### E-Ink Live Card (Next Generation)
 
-Static cards can be photographed and reprinted. An **e-ink warrant card** with a rotating salt prevents cloning and protects officer movements.
-
 <div style="max-width: 320px; margin: 24px auto; font-family: 'Courier New', monospace; border: 3px solid #002d62; border-radius: 8px; background: #f5f5f0; padding: 20px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
   <div style="font-size: 1em; color: #000; font-weight: bold; margin-bottom: 8px;">METROPOLITAN POLICE</div>
   <div style="font-size: 1em; color: #000; margin-bottom: 8px;"><span verifiable-text="start" data-for="eink">[</span>DIGITAL WARRANT CARD</div>
@@ -63,7 +63,7 @@ Static cards can be photographed and reprinted. An **e-ink warrant card** with a
   </div>
 </div>
 
-*Salt rotates every 10 mins and after each Live Verify verification*
+*Salt rotates every 10 mins and after each verification. See [E-Ink ID Cards](../e-ink-id-cards.md) for how rotating salts prevent cloning and the "photograph and dox" attack.*
 
 ### Digital Warrant Card (Mobile Phone - Backup)
 

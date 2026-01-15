@@ -8,20 +8,7 @@ tags: ["hotel-safety", "staff-verification", "personal-safety", "airbnb-host-ver
 furtherDerivations: 3
 ---
 
-## The Core Pattern: Why E-Ink Badges Matter
-
-**E-Ink ID badges are essential in facilities where:**
-1. **Mobile staff enter private/guest spaces with little or no advance notice** — You open the door in seconds, not minutes
-2. **Facilities are ungated and high-turnover** — Public access means staff rosters change daily or hourly; you can't know if someone should be there just by building familiarity
-3. **Staff lack fixed, visible locations** — Unlike a receptionist at a desk, service staff are mobile and could be anyone in a uniform
-4. **Status matters in real-time** — The badge must show current duty status (on-duty vs. off-duty vs. suspended) because it changes frequently
-
-**E-Ink badges are NOT necessary in:**
-- **Gated facilities** (e.g., schools, corporate offices) — Unauthorized people stand out; staff rosters are known; you'd notice a stranger walking hallways
-- **Fixed-position staff** (e.g., receptionists, concierges) — You can see them stationed at their location
-- **Daily-roster facilities** (e.g., offices) — You know roughly who should be there
-
----
+> **See also:** [E-Ink ID Cards](../e-ink-id-cards.md) — comprehensive guide to rotating-salt badges, security properties, and when they're needed.
 
 ## What is a Hotel Staff Badge?
 
@@ -69,8 +56,6 @@ The **Staff ID Badge** is the worker's proof that they are authorized to be in t
 
 ### E-Ink Live Card (Next Generation)
 
-Static cards can be photographed and reprinted. An **e-ink staff badge** with a rotating salt prevents cloning and protects staff privacy.
-
 <div style="max-width: 320px; margin: 24px auto; font-family: 'Courier New', monospace; border: 3px solid #000; border-radius: 8px; background: #f5f5f0; padding: 20px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
   <div style="font-size: 1em; color: #000; font-weight: bold; margin-bottom: 8px;">HILTON HOTELS</div>
   <div style="font-size: 1em; font-weight: bold; color: #000; margin-bottom: 8px;"><span verifiable-text="start" data-for="eink-hotel">[</span>Mildred M</div>
@@ -84,16 +69,7 @@ Static cards can be photographed and reprinted. An **e-ink staff badge** with a 
   </div>
 </div>
 
-*Salt rotates every 10 mins or per-room entry*
-
-**Security Features:**
-- **Cloning Protection:** Because the salt rotates, a photographed copy becomes invalid almost immediately.
-- **Location Verification:** Verification can confirm if the staff member is assigned to the specific floor/wing where the guest is.
-- **Real-time Status:** Suspended staff show immediately as invalid.
-
-**Staff Privacy & Safety:**
-- **No Stalking:** Rotating salts prevent guests from tracking a specific employee's movement through the hotel by logging static hashes.
-- **Ephemeral ID:** The verification proves "Authorized Staff Member" without needing to permanently log the staff's personal ID in the guest's phone.
+*Salt rotates every 10 mins or per-room entry. See [E-Ink ID Cards](../e-ink-id-cards.md) for how rotating salts prevent cloning and tracking.*
 
 ## Data Verified
 

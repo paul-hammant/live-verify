@@ -8,6 +8,8 @@ tags: ["hospital-safety", "patient-safety", "healthcare-security", "staff-verifi
 furtherDerivations: 0
 ---
 
+> **See also:** [E-Ink ID Cards](../e-ink-id-cards.md) — comprehensive guide to rotating-salt badges, security properties, and when they're needed.
+
 ## What is a Healthcare Staff Badge?
 
 In a hospital or clinic, staff members at all levels—from nurse aides and dietary workers to registered nurses and physicians—must prove their authorization and current credentials.
@@ -55,8 +57,6 @@ The **Healthcare Staff ID Badge** serves two purposes:
 
 ### E-Ink Live Card (Next Generation)
 
-Static cards display full names and license numbers permanently, which can lead to doxing or stalking by hostile patients. An **e-ink healthcare badge** with a rotating salt protects staff privacy while ensuring patient safety.
-
 <div style="max-width: 320px; margin: 24px auto; font-family: 'Courier New', monospace; border: 3px solid #005eb8; border-radius: 8px; background: #f5f5f0; padding: 20px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
   <div style="font-size: 1em; color: #005eb8; font-weight: bold; margin-bottom: 8px;">MAYO CLINIC</div>
   <div style="font-size: 1em; font-weight: bold; color: #000; margin-bottom: 8px;"><span verifiable-text="start" data-for="eink-nurse">[</span>Sarah J.</div>
@@ -70,28 +70,7 @@ Static cards display full names and license numbers permanently, which can lead 
   </div>
 </div>
 
-*Salt rotates every 30 mins*
-
-**Security Features:**
-- **Cloning Protection:** Because the salt rotates, a photographed copy becomes invalid shortly after.
-- **Credential Verification:** Verifies the nurse is *currently* licensed and credentialed (not suspended).
-- **Unit Authorization:** Can confirm if the staff member is authorized for the specific unit (e.g., ICU) where the patient is located.
-
-**Staff Privacy & Safety:**
-- **Anti-Doxing:** The verification proves "Authorized RN" without exposing the permanent license number or full legal name to every patient, preventing license lookup harassment.
-- **No Stalking:** Rotating salts prevent hostile individuals from tracking a specific nurse's shift patterns by logging static hashes.
-
-## Why Healthcare Needs This Pattern
-
-**Healthcare facilities match the "Mobile Service Staff in Ungated Facilities" pattern precisely:**
-
-- **Unscheduled entry:** Nurse aides, dietary staff, phlebotomists, and housekeeping enter rooms without advance notice
-- **High staff turnover:** Hospitals employ large numbers of contractors, temporary agency staff, and shift workers
-- **Vulnerable verification points:** Patients cannot quickly verify identity by appearance alone; they're isolated in private rooms
-- **Status matters in real-time:** Employment changes daily (shift work, suspensions, terminations); a badge that was valid yesterday might not be today
-- **Ungated facility:** Hospitals are open to the public; anyone in scrubs and a lanyard could theoretically be an employee
-
-**Contrast with gated facilities:** A school janitor works in a gated, publicly-closed building where unauthorized strangers stand out immediately. Patients in hospitals cannot make that distinction.
+*Salt rotates every 30 mins. See [E-Ink ID Cards](../e-ink-id-cards.md) for how rotating salts prevent cloning, tracking, and protect staff from hostile patients.*
 
 ## Data Verified
 

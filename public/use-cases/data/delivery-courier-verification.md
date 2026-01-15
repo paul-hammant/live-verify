@@ -8,6 +8,8 @@ tags: ["logistics", "courier", "personal-safety", "amazon-delivery", "ups", "fed
 furtherDerivations: 2
 ---
 
+> **See also:** [E-Ink ID Cards](../e-ink-id-cards.md) — comprehensive guide to rotating-salt badges, security properties, and privacy protection for high-volume workers.
+
 ## What is Courier Verification?
 
 As e-commerce delivery volumes explode, "Delivery Driver" has become the most common uniform seen in residential neighborhoods. This provides a perfect cover for criminals: **"Package Theft"** (porch piracy) and **"Home Entry Scams."**
@@ -263,8 +265,6 @@ The delivery driver (second party) may hand the verified credential to various t
 
 ### E-Ink Live Card (Next Generation)
 
-Static cards can be photographed and reprinted. An **e-ink courier badge** with a rotating salt prevents cloning and protects driver privacy.
-
 <div style="max-width: 320px; margin: 24px auto; font-family: 'Courier New', monospace; border: 3px solid #232f3e; border-radius: 8px; background: #f5f5f0; padding: 20px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
   <div style="font-size: 1em; color: #232f3e; font-weight: bold; margin-bottom: 8px;">AMAZON LOGISTICS</div>
   <div style="font-size: 1em; font-weight: bold; color: #000; margin-bottom: 8px;"><span verifiable-text="start" data-for="eink-driver">[</span>Carlos R 42882</div>
@@ -278,16 +278,7 @@ Static cards can be photographed and reprinted. An **e-ink courier badge** with 
   </div>
 </div>
 
-*Salt rotates every 10 mins or per-delivery*
-
-**Security Features:**
-- **Cloning Protection:** Because the salt rotates, a photographed copy becomes invalid almost immediately.
-- **Route Verification:** Verification can confirm if the driver is currently assigned to the delivery zone where the scan happens.
-- **Real-time Status:** Drivers who are off-duty or suspended show immediately as invalid.
-
-**Driver Privacy & Safety:**
-- **No Stalking:** Rotating salts prevent criminals from building route maps of specific drivers by logging static hashes.
-- **Partial Anonymity:** The verification proves "Authorized Driver" without broadcasting the driver's full legal name to every doorbell camera.
+*Salt rotates every 10 mins or per-delivery. See [E-Ink ID Cards](../e-ink-id-cards.md) for how rotating salts prevent cloning and protect driver privacy.*
 
 ## Competition vs. In-App Notifications
 
@@ -302,10 +293,4 @@ Static cards can be photographed and reprinted. An **e-ink courier badge** with 
 
 ## Related E-Ink Scenarios
 
-The pattern of using e-ink badges for real-time authority verification applies to several high-volume mobile service roles:
-
-- [Police Officer Verification](view.html?doc=police-officer-verification) — Citizens verify law enforcement authority.
-- [Mobile Service Staff (Hotels)](view.html?doc=hotel-staff-verification) — Guests verify hotel staff before entry.
-- [Healthcare Facility Staff](view.html?doc=healthcare-facility-staff) — Patients verify hospital support workers.
-- [Residential Building Staff](view.html?doc=residential-building-staff) — Residents verify maintenance contractors.
-- [Event Venue & Contractor Staff](view.html?doc=event-venue-staff) — Security verify event setup crews.
+See [E-Ink ID Cards](../e-ink-id-cards.md) for the full list of use cases sharing this pattern, including police officers, healthcare staff, hotel staff, residential building maintenance, and event venue crews.

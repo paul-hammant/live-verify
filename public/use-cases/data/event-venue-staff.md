@@ -8,6 +8,8 @@ tags: ["event-security", "contractor-verification", "venue-security", "temporary
 furtherDerivations: 0
 ---
 
+> **See also:** [E-Ink ID Cards](../e-ink-id-cards.md) — comprehensive guide to rotating-salt badges, security properties, and when they're needed.
+
 ## What is an Event Venue Staff Badge?
 
 At a concert, conference, sporting event, or festival, hundreds of temporary staff, contractors, and vendors move through backstage areas, VIP sections, and equipment zones. A security manager cannot possibly know every person working the event.
@@ -49,8 +51,6 @@ Impostors pose multiple threats: they can steal high-value equipment (lighting r
 
 ### E-Ink Live Card (Next Generation)
 
-Printed laminates are easily forged or stolen. An **e-ink event credential** with a rotating salt secures the perimeter and protects high-value zones.
-
 <div style="max-width: 320px; margin: 24px auto; font-family: 'Courier New', monospace; border: 4px solid #000; border-radius: 4px; background: #f0f0f0; padding: 20px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
   <div style="font-size: 1.2em; color: #000; font-weight: 900; margin-bottom: 8px;">COACHELLA</div>
   <div style="font-size: 1em; font-weight: bold; color: #000; margin-bottom: 8px;"><span verifiable-text="start" data-for="eink-crew">[</span>Mike D.</div>
@@ -64,30 +64,7 @@ Printed laminates are easily forged or stolen. An **e-ink event credential** wit
   </div>
 </div>
 
-*Salt rotates every 10 mins*
-
-**Security Features:**
-- **Cloning Protection:** A photo of a pass cannot be used to sneak into VIP areas 20 minutes later.
-- **Zone Enforcement:** Verification instantly confirms if the holder is authorized for *this specific checkpoint* (e.g., Backstage vs. General Admission).
-- **Instant Revocation:** If a staff member is fired or ejected, their badge stops verifying immediately.
-
-**Staff Safety:**
-- **Privacy:** Prevents fans or stalkers from tracking crew members' movements or personal details via static QR codes.
-- **Validity:** Protects legitimate crew from being accused of having fake passes during security sweeps.
-
-## Why Event Venues Need This Pattern
-
-**Event venues match the "Mobile Service Staff in Ungated Facilities" pattern in extreme form:**
-
-- **Unscheduled, fluid access:** Setup crews, talent handlers, security contractors, catering, AV technicians, and vendors move constantly during setup, event, and breakdown phases
-- **High staff turnover:** Events employ 50–500+ temporary workers, subcontractors, and outside vendors with minimal overlap between shifts
-- **Multiple organizations:** Staff from different companies (security firm A, catering company B, sound company C, talent agency D) work side-by-side with no central oversight
-- **Vulnerable to impostors:** Temporary chaos during setup/breakdown makes it easy for impostors to blend in; badges are quickly glanced at and forgotten
-- **Status matters in real-time:** Access levels change within hours (pre-event, during event, post-event phases); a credential valid at 8 PM is invalid at 11 PM
-- **Ungated facility:** Venues are public spaces with multiple entry points; contractors move through areas with high-value equipment and VIP areas
-- **High-value targets:** Lighting rigs, sound equipment, cameras, merchandise, and cash are at extreme theft risk
-
-**Contrast with fixed workplaces:** A corporate office has a smaller, permanent staff; security knows most people by sight. An event has a different cast of hundreds daily, all wearing similar clothing and credentials.
+*Salt rotates every 10 mins. See [E-Ink ID Cards](../e-ink-id-cards.md) for how rotating salts prevent cloning and zone-hopping.*
 
 ## Data Verified
 

@@ -8,6 +8,8 @@ tags: ["apartment-safety", "home-security", "maintenance-verification", "contrac
 furtherDerivations: 0
 ---
 
+> **See also:** [E-Ink ID Cards](../e-ink-id-cards.md) — comprehensive guide to rotating-salt badges, security properties, and when they're needed.
+
 ## What is a Residential Building Staff Badge?
 
 In an apartment building or residential complex, a plumber, electrician, HVAC technician, or maintenance worker may arrive at your door to provide service. As a resident—especially if alone, elderly, or unfamiliar with the building—you face a critical decision: **is this person actually authorized to be here?**
@@ -48,8 +50,6 @@ Impostors posing as maintenance workers use this as a pretense to gain entry: th
 
 ### E-Ink Live Card (Next Generation)
 
-Static cards can be lost or stolen by former employees. An **e-ink maintenance badge** with a rotating salt ensures only currently authorized staff can enter.
-
 <div style="max-width: 320px; margin: 24px auto; font-family: 'Courier New', monospace; border: 3px solid #2e7d32; border-radius: 8px; background: #f5f5f0; padding: 20px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
   <div style="font-size: 1em; color: #2e7d32; font-weight: bold; margin-bottom: 8px;">EQUITY RESIDENTIAL</div>
   <div style="font-size: 1em; font-weight: bold; color: #000; margin-bottom: 8px;"><span verifiable-text="start" data-for="eink-maint">[</span>Robert M.</div>
@@ -63,29 +63,7 @@ Static cards can be lost or stolen by former employees. An **e-ink maintenance b
   </div>
 </div>
 
-*Salt rotates every 15 mins*
-
-**Security Features:**
-- **Cloning Protection:** A photo of the badge cannot be reused to gain entry later.
-- **Work Order Verification:** Can confirm if the staff member has an active work order for *your specific unit* right now.
-- **Revocation:** Terminated staff lose access immediately; the badge stops verifying.
-
-**Resident Safety:**
-- **No Impostors:** Prevents criminals from using stolen uniforms or old badges to bluff their way into apartments.
-- **Privacy:** Staff tracking is anonymized; residents can verify authority without needing the worker's full legal history.
-
-## Why Residential Buildings Need This Pattern
-
-**Residential buildings match the "Mobile Service Staff in Ungated Facilities" pattern:**
-
-- **Unscheduled entry:** Maintenance, plumbing, electrical, and HVAC contractors arrive with minimal notice
-- **High staff turnover & contractors:** Buildings employ building staff, subcontractors, emergency services, and temporary workers
-- **Vulnerable verification points:** Residents don't know all building staff by sight; they can't easily verify a contractor's legitimacy
-- **Status matters in real-time:** Service orders change; contractors are authorized for specific units and timeframes; a work order expires today
-- **Ungated facility:** Apartment buildings are accessible to the public; lobby doors are propped open; anyone in work boots and a vest appears legitimate
-- **One-on-one entry:** Residents make entry decisions alone, in seconds, with no backup verification
-
-**Contrast with gated facilities:** A corporate office is gated, with controlled lobby access and badge readers. Unauthorized people stand out. A residential building is semi-public, with constant deliveries, guests, and service calls; distinguishing legitimate contractors from impostors is difficult.
+*Salt rotates every 15 mins. See [E-Ink ID Cards](../e-ink-id-cards.md) for how rotating salts prevent cloning and tracking.*
 
 ## Data Verified
 
