@@ -2,6 +2,8 @@
 
 Native Android app for camera-based document verification using OCR-to-hash verification.
 
+![Live Verify Android Screenshot](screencap.jpg)
+
 ## Requirements
 
 - Android Studio Hedgehog (2023.1.1) or later
