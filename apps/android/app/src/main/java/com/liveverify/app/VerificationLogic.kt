@@ -61,11 +61,8 @@ object VerificationLogic {
                 // Extract everything after the pattern
                 var urlPart = line.substring(match.range.last + 1).trim()
 
-                // Strip trailing garbage (anything after a space)
-                val spaceIndex = urlPart.indexOf(' ')
-                if (spaceIndex != -1) {
-                    urlPart = urlPart.substring(0, spaceIndex)
-                }
+                // Remove ALL spaces - URLs don't have spaces, so any space is OCR artifact
+                urlPart = urlPart.replace(" ", "")
 
                 if (urlPart.isNotEmpty()) {
                     // Determine the correct prefix

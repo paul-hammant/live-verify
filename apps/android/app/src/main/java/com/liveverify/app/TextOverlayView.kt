@@ -47,7 +47,12 @@ class TextOverlayView @JvmOverloads constructor(
     )
 
     private val textBlocks = mutableListOf<TextBlock>()
-    private var selectedBlock: TextBlock? = null
+    private val selectedBlocks = mutableListOf<TextBlock>()
+
+    companion object {
+        // Maximum vertical gap between blocks to consider them part of the same region
+        private const val VERTICAL_GAP_THRESHOLD = 50f // pixels in image coordinates
+    }
 
     // Image dimensions for coordinate transformation
     private var imageWidth: Int = 0
@@ -76,7 +81,27 @@ class TextOverlayView @JvmOverloads constructor(
         style = Paint.Style.FILL
     }
 
-    var onBlockSelected: ((TextBlock?) -> Unit)? = null
+    private val captureButtonPaint = Paint().apply {
+        color = Color.WHITE
+        style = Paint.Style.FILL
+        isAntiAlias = true
+    }
+
+    private val captureButtonStrokePaint = Paint().apply {
+        color = Color.argb(200, 0, 200, 100) // Green border
+        style = Paint.Style.STROKE
+        strokeWidth = 6f
+        isAntiAlias = true
+    }
+
+    private var captureButtonCenter: Pair<Float, Float>? = null
+    private val captureButtonRadius = 40f
+
+    // Callback receives the combined bounds of all selected blocks (in image coordinates)
+    var onBlocksSelected: ((List<TextBlock>) -> Unit)? = null
+
+    // Callback when capture button is tapped
+    var onCaptureRequested: (() -> Unit)? = null
 
     /**
      * Update the detected text blocks from ML Kit.
@@ -120,7 +145,7 @@ class TextOverlayView @JvmOverloads constructor(
      */
     fun clearBlocks() {
         textBlocks.clear()
-        selectedBlock = null
+        selectedBlocks.clear()
         invalidate()
     }
 
@@ -197,7 +222,7 @@ class TextOverlayView @JvmOverloads constructor(
         super.onDraw(canvas)
 
         for (block in textBlocks) {
-            val isSelected = block == selectedBlock
+            val isSelected = block in selectedBlocks
 
             // Draw fill
             canvas.drawRect(block.bounds, if (isSelected) selectedFillPaint else fillPaint)
@@ -205,17 +230,140 @@ class TextOverlayView @JvmOverloads constructor(
             // Draw border
             canvas.drawRect(block.bounds, if (isSelected) selectedPaint else boxPaint)
         }
+
+        // Draw capture button if blocks are selected
+        if (selectedBlocks.isNotEmpty()) {
+            // Position button at center-right of the combined selection bounds
+            val combinedBounds = getSelectedViewBounds()
+            if (combinedBounds != null) {
+                val cx = combinedBounds.right + captureButtonRadius + 20f
+                val cy = combinedBounds.centerY()
+
+                // Keep button on screen
+                val adjustedCx = cx.coerceIn(captureButtonRadius + 10f, width - captureButtonRadius - 10f)
+                val adjustedCy = cy.coerceIn(captureButtonRadius + 10f, height - captureButtonRadius - 10f)
+
+                captureButtonCenter = Pair(adjustedCx, adjustedCy)
+
+                // Draw white circle with green border
+                canvas.drawCircle(adjustedCx, adjustedCy, captureButtonRadius, captureButtonPaint)
+                canvas.drawCircle(adjustedCx, adjustedCy, captureButtonRadius, captureButtonStrokePaint)
+
+                // Draw inner circle (shutter style)
+                canvas.drawCircle(adjustedCx, adjustedCy, captureButtonRadius - 8f, captureButtonStrokePaint)
+            }
+        } else {
+            captureButtonCenter = null
+        }
+    }
+
+    /**
+     * Get combined bounds of selected blocks in VIEW coordinates.
+     */
+    private fun getSelectedViewBounds(): RectF? {
+        if (selectedBlocks.isEmpty()) return null
+
+        var left = Float.MAX_VALUE
+        var top = Float.MAX_VALUE
+        var right = Float.MIN_VALUE
+        var bottom = Float.MIN_VALUE
+
+        for (block in selectedBlocks) {
+            left = minOf(left, block.bounds.left)
+            top = minOf(top, block.bounds.top)
+            right = maxOf(right, block.bounds.right)
+            bottom = maxOf(bottom, block.bounds.bottom)
+        }
+
+        return RectF(left, top, right, bottom)
     }
 
     override fun onTouchEvent(event: MotionEvent): Boolean {
         if (event.action == MotionEvent.ACTION_UP) {
+            // Check if capture button was tapped
+            val buttonCenter = captureButtonCenter
+            if (buttonCenter != null) {
+                val dx = event.x - buttonCenter.first
+                val dy = event.y - buttonCenter.second
+                val distance = kotlin.math.sqrt(dx * dx + dy * dy)
+                if (distance <= captureButtonRadius + 10f) {
+                    // Capture button tapped
+                    onCaptureRequested?.invoke()
+                    return true
+                }
+            }
+
+            // Otherwise handle block selection
             val tappedBlock = findBlockAt(event.x, event.y)
-            selectedBlock = tappedBlock
-            onBlockSelected?.invoke(tappedBlock)
+            if (tappedBlock != null) {
+                selectBlockAndExtendToVerifyLine(tappedBlock)
+            } else {
+                selectedBlocks.clear()
+            }
+            onBlocksSelected?.invoke(selectedBlocks.toList())
             invalidate()
             return true
         }
         return true
+    }
+
+    /**
+     * Select a block and find the nearest verify: block.
+     * Simply finds the closest verify: block regardless of direction,
+     * since phone orientation can make "below" mean different things.
+     */
+    private fun selectBlockAndExtendToVerifyLine(startBlock: TextBlock) {
+        selectedBlocks.clear()
+        selectedBlocks.add(startBlock)
+
+        android.util.Log.d("TextOverlay", "=== AUTO-EXTEND START ===")
+        android.util.Log.d("TextOverlay", "Start block: '${startBlock.text.take(50)}...' bounds=${startBlock.originalBounds}")
+
+        // Check if the tapped block itself contains verify:
+        if (containsVerifyUrl(startBlock.text)) {
+            android.util.Log.d("TextOverlay", "Start block contains verify:, done")
+            return
+        }
+
+        // Find the nearest verify: block (any direction)
+        var nearestVerifyBlock: TextBlock? = null
+        var nearestDistance = Float.MAX_VALUE
+
+        val startCenterX = startBlock.originalBounds.centerX()
+        val startCenterY = startBlock.originalBounds.centerY()
+
+        for (block in textBlocks) {
+            if (block == startBlock) continue
+            if (!containsVerifyUrl(block.text)) continue
+
+            val dx = block.originalBounds.centerX() - startCenterX
+            val dy = block.originalBounds.centerY() - startCenterY
+            val distance = kotlin.math.sqrt(dx * dx + dy * dy)
+
+            android.util.Log.d("TextOverlay", "Verify block distance=$distance: '${block.text.take(40)}...'")
+
+            if (distance < nearestDistance) {
+                nearestDistance = distance
+                nearestVerifyBlock = block
+            }
+        }
+
+        if (nearestVerifyBlock != null) {
+            android.util.Log.d("TextOverlay", "Adding nearest verify block (distance=$nearestDistance)")
+            selectedBlocks.add(nearestVerifyBlock)
+        } else {
+            android.util.Log.d("TextOverlay", "No verify block found")
+        }
+
+        android.util.Log.d("TextOverlay", "=== AUTO-EXTEND END: ${selectedBlocks.size} blocks selected ===")
+    }
+
+    /**
+     * Check if text contains a verification URL marker.
+     */
+    private fun containsVerifyUrl(text: String): Boolean {
+        val lower = text.lowercase()
+        return lower.contains("verify:") || lower.contains("vfy:")
     }
 
     /**
@@ -230,9 +378,30 @@ class TextOverlayView @JvmOverloads constructor(
     }
 
     /**
-     * Get the currently selected block.
+     * Get combined bounds of all selected blocks in image coordinates.
      */
-    fun getSelectedBlock(): TextBlock? = selectedBlock
+    fun getSelectedBounds(): RectF? {
+        if (selectedBlocks.isEmpty()) return null
+
+        var left = Float.MAX_VALUE
+        var top = Float.MAX_VALUE
+        var right = Float.MIN_VALUE
+        var bottom = Float.MIN_VALUE
+
+        for (block in selectedBlocks) {
+            left = minOf(left, block.originalBounds.left)
+            top = minOf(top, block.originalBounds.top)
+            right = maxOf(right, block.originalBounds.right)
+            bottom = maxOf(bottom, block.originalBounds.bottom)
+        }
+
+        return RectF(left, top, right, bottom)
+    }
+
+    /**
+     * Get the currently selected blocks.
+     */
+    fun getSelectedBlocks(): List<TextBlock> = selectedBlocks.toList()
 
     /**
      * Get all detected blocks.

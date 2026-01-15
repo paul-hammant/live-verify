@@ -78,7 +78,14 @@ class DiagnosticAdapter : RecyclerView.Adapter<DiagnosticAdapter.DiagnosticViewH
     override fun onBindViewHolder(holder: DiagnosticViewHolder, position: Int) {
         when (holder) {
             is ImageViewHolder -> {
-                holder.imageView.setImageBitmap(capturedImage)
+                if (capturedImage != null) {
+                    holder.imageView.setImageBitmap(capturedImage)
+                    holder.imageView.visibility = android.view.View.VISIBLE
+                    holder.noImageText?.visibility = android.view.View.GONE
+                } else {
+                    holder.imageView.visibility = android.view.View.GONE
+                    holder.noImageText?.visibility = android.view.View.VISIBLE
+                }
             }
             is TextViewHolder -> {
                 when (position) {
@@ -104,6 +111,7 @@ class DiagnosticAdapter : RecyclerView.Adapter<DiagnosticAdapter.DiagnosticViewH
 
     class ImageViewHolder(view: View) : DiagnosticViewHolder(view) {
         val imageView: ImageView = view.findViewById(R.id.diagnosticImage)
+        val noImageText: TextView? = view.findViewById(R.id.noImageText)
     }
 
     class TextViewHolder(view: View) : DiagnosticViewHolder(view) {

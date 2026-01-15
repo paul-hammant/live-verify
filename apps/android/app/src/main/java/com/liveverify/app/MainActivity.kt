@@ -65,8 +65,15 @@ class MainActivity : AppCompatActivity() {
     private var normalizedText: String = ""
     private var computedHash: String = ""
 
-    // Selected text block from tap
-    private var selectedBlock: TextOverlayView.TextBlock? = null
+    // Whether blocks are currently selected
+    private var hasSelection: Boolean = false
+
+    // Saved selection bounds (in image coordinates) - captured before clearing overlay
+    private var savedSelectionBounds: RectF? = null
+
+    // Analysis image dimensions (stored but not currently used for scaling)
+    private var analysisWidth: Int = 0
+    private var analysisHeight: Int = 0
 
     // Diagnostic adapter for ViewPager2
     private lateinit var diagnosticAdapter: DiagnosticAdapter
@@ -102,15 +109,28 @@ class MainActivity : AppCompatActivity() {
         }
 
         // Handle tap selection on text overlay
-        binding.textOverlay.onBlockSelected = { block ->
-            selectedBlock = block
-            if (block != null) {
-                updateStatus("Tap capture to verify selected text")
-                binding.captureBtn.text = getString(R.string.capture_selected)
+        binding.textOverlay.onBlocksSelected = { blocks ->
+            hasSelection = blocks.isNotEmpty()
+            if (hasSelection) {
+                val blockCount = blocks.size
+                val hasVerifyUrl = blocks.any {
+                    it.text.lowercase().contains("verify:") ||
+                    it.text.lowercase().contains("vfy:")
+                }
+                val status = if (hasVerifyUrl) {
+                    "Tap shutter to verify $blockCount block(s)"
+                } else {
+                    "Selected $blockCount block(s) - no verify URL"
+                }
+                updateStatus(status)
             } else {
                 updateStatus(getString(R.string.status_ready))
-                binding.captureBtn.text = getString(R.string.capture_verify)
             }
+        }
+
+        // Handle capture button tap on the overlay
+        binding.textOverlay.onCaptureRequested = {
+            captureFromAnalysisFrame()
         }
 
         // Set up diagnostic ViewPager2 with tabs
@@ -210,6 +230,10 @@ class MainActivity : AppCompatActivity() {
             .addOnSuccessListener { visionText ->
                 // Update overlay on main thread
                 runOnUiThread {
+                    // Store analysis dimensions for later scaling to capture resolution
+                    this.analysisWidth = analysisWidth
+                    this.analysisHeight = analysisHeight
+
                     binding.textOverlay.setDetectedText(
                         visionText,
                         analysisWidth,
@@ -226,12 +250,48 @@ class MainActivity : AppCompatActivity() {
             }
     }
 
+    /**
+     * Capture from selected blocks - uses the text already detected by ML Kit.
+     * No need to re-run OCR since we already have the text.
+     */
+    private fun captureFromAnalysisFrame() {
+        val selectedBlocks = binding.textOverlay.getSelectedBlocks()
+        if (selectedBlocks.isEmpty()) {
+            showError("No blocks selected")
+            return
+        }
+
+        showProcessing(true)
+        updateStatus(getString(R.string.status_processing))
+
+        // Combine text from selected blocks (sorted by vertical position)
+        val sortedBlocks = selectedBlocks.sortedBy { it.originalBounds.top }
+        val combinedText = sortedBlocks.joinToString("\n") { it.text }
+
+        Log.d(TAG, "Using text from ${sortedBlocks.size} selected blocks:")
+        Log.d(TAG, combinedText)
+
+        // Clear the overlay
+        binding.textOverlay.clearBlocks()
+
+        // Store for diagnostics (no image in this mode)
+        capturedBitmap = null
+        rawOcrText = combinedText
+
+        // Process the combined text
+        processRecognizedText(combinedText)
+    }
+
     private fun captureAndVerify() {
         val imageCapture = imageCapture ?: return
 
         binding.captureBtn.isEnabled = false
         showProcessing(true)
         updateStatus(getString(R.string.status_processing))
+
+        // Save selection bounds BEFORE clearing the overlay
+        savedSelectionBounds = binding.textOverlay.getSelectedBounds()
+        Log.d(TAG, "Saved selection bounds: $savedSelectionBounds")
 
         // Clear overlay during capture
         binding.textOverlay.clearBlocks()
@@ -277,11 +337,30 @@ class MainActivity : AppCompatActivity() {
             bitmap = Bitmap.createBitmap(bitmap, 0, 0, bitmap.width, bitmap.height, matrix, true)
         }
 
-        // Crop to selected region if one was selected
-        val block = selectedBlock
-        if (block != null) {
-            val paddedBounds = binding.textOverlay.addPadding(block.originalBounds)
+        // Crop to selected region if blocks were selected (using saved bounds)
+        val selectionBounds = savedSelectionBounds
+        if (selectionBounds != null) {
+            Log.d(TAG, "Selection bounds (analysis coords): $selectionBounds")
+
+            // Scale from analysis resolution to capture resolution
+            val scaledBounds = scaleBoundsToCapture(selectionBounds, bitmap.width, bitmap.height)
+            Log.d(TAG, "Scaled bounds (capture coords): $scaledBounds")
+
+            // Add padding in capture coordinates
+            val padX = scaledBounds.width() * 0.2f
+            val padY = scaledBounds.height() * 0.2f
+            val paddedBounds = RectF(
+                (scaledBounds.left - padX).coerceAtLeast(0f),
+                (scaledBounds.top - padY).coerceAtLeast(0f),
+                (scaledBounds.right + padX).coerceAtMost(bitmap.width.toFloat()),
+                (scaledBounds.bottom + padY).coerceAtMost(bitmap.height.toFloat())
+            )
+            Log.d(TAG, "Padded bounds: $paddedBounds, bitmap size: ${bitmap.width}x${bitmap.height}")
+
             bitmap = cropBitmap(bitmap, paddedBounds)
+            Log.d(TAG, "Cropped bitmap size: ${bitmap.width}x${bitmap.height}")
+        } else {
+            Log.d(TAG, "No selection - using full frame")
         }
 
         // Store for diagnostic display
@@ -292,8 +371,8 @@ class MainActivity : AppCompatActivity() {
             imageProxy.imageInfo.rotationDegrees
         )
 
-        // If we have a selected block, OCR the cropped bitmap instead
-        val imageToProcess = if (block != null && capturedBitmap != null) {
+        // If we have selected blocks, OCR the cropped bitmap instead
+        val imageToProcess = if (selectionBounds != null && capturedBitmap != null) {
             InputImage.fromBitmap(capturedBitmap!!, 0)
         } else {
             inputImage
@@ -309,6 +388,27 @@ class MainActivity : AppCompatActivity() {
                 Log.e(TAG, "Text recognition failed", e)
                 showError("Text recognition failed: ${e.message}")
             }
+    }
+
+    /**
+     * Scale bounds from analysis resolution to capture resolution.
+     */
+    private fun scaleBoundsToCapture(bounds: RectF, captureWidth: Int, captureHeight: Int): RectF {
+        if (analysisWidth == 0 || analysisHeight == 0) {
+            return bounds
+        }
+
+        val scaleX = captureWidth.toFloat() / analysisWidth
+        val scaleY = captureHeight.toFloat() / analysisHeight
+
+        Log.d(TAG, "Scaling: analysis=${analysisWidth}x${analysisHeight}, capture=${captureWidth}x${captureHeight}, scale=${scaleX}x${scaleY}")
+
+        return RectF(
+            bounds.left * scaleX,
+            bounds.top * scaleY,
+            bounds.right * scaleX,
+            bounds.bottom * scaleY
+        )
     }
 
     private fun cropBitmap(bitmap: Bitmap, bounds: RectF): Bitmap {
@@ -420,7 +520,8 @@ class MainActivity : AppCompatActivity() {
         binding.resultOverlay.visibility = View.GONE
         binding.captureBtn.isEnabled = true
         binding.captureBtn.text = getString(R.string.capture_verify)
-        selectedBlock = null
+        hasSelection = false
+        savedSelectionBounds = null
         updateStatus(getString(R.string.status_ready))
 
         // Clear diagnostic data
