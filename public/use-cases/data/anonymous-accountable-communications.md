@@ -140,6 +140,43 @@ The acknowledgement explicitly states no commitment to investigate. This is impo
 - The ability to identify the claimant (sealed)
 - Any way to leak the substance of the allegations
 
+**Air-Gapped Evidence Preservation:**
+
+For whistleblowers facing sophisticated adversaries (corporate legal teams, forensic investigators), the safest approach is **physical-only storage**:
+
+1. Write detailed claims document
+2. Hash it → commit hash to witness/blockchain
+3. **Print** the document on plain paper
+4. Store paper physically (safe deposit box, lawyer's office, trusted person)
+5. **Delete all electronic copies** — drafts, emails, files, backups
+
+**Why this works:**
+
+| Threat | Protection |
+| :--- | :--- |
+| Corporate forensics | No electronic trail exists to find |
+| Device seizure | Nothing on laptop, phone, or cloud |
+| Coerced disclosure | "I don't have any files" (truthfully) |
+| Network monitoring | Document never transmitted electronically |
+| Subpoena of cloud providers | Nothing stored there |
+
+**Later, when safe to reveal:**
+
+1. Retrieve paper from physical storage
+2. Scan, OCR, or retype the document
+3. Normalize and hash
+4. Hash matches the original commitment → proves paper is authentic and unaltered
+
+The paper document is the only copy that exists. The digital proof (committed hash) validates it without ever having possessed it electronically.
+
+**Operational Security Notes:**
+
+- Print from a device you control, then delete the file immediately
+- Consider printing at a public library (no forensic trail on your devices)
+- Store paper somewhere the organization cannot subpoena (attorney's office has privilege)
+- Tell no one where the paper is stored
+- The witness firm holds only the hash — they cannot be compelled to produce what they don't have
+
 **Why Public/Witnessed Matters:**
 
 A hash on the claimant's own computer proves nothing—they could have backdated it. The hash must be:
@@ -194,6 +231,8 @@ This is distinct from bystanders submitting evidence (dashcam footage, photos of
 | Timeline protection | Critical (two-part process) | Less critical (one-part acknowledgement) |
 | Pre-commitment needed | Yes (proves when they knew) | Usually no (evidence speaks for itself) |
 | Anonymity from | Organization/colleagues | Subject of report |
+
+**Implementation Note:** Whistleblower reporting systems already exist — SEC portals, OSHA complaint forms, corporate ethics hotlines, regulatory tip lines. Each system independently decides whether to add Live Verify hash commitments to their existing upload and registration flows. This is opt-in enhancement of existing infrastructure, not new parallel systems. Volume is low compared to other Live Verify use cases (identity badges, document verification); most organizations process dozens to hundreds of whistleblower submissions annually, not thousands daily.
 
 ---
 
