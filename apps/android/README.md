@@ -4,6 +4,8 @@ Native Android app for camera-based document verification using OCR-to-hash veri
 
 ![Live Verify Android Screenshot](screencap.jpg)
 
+^ Still under development but the app works for a printed test case. This is a screencap from 2022 Pixel 6a running Android 16. As it happens, this is a real-life peer reference.
+
 ## Requirements
 
 - Android Studio Hedgehog (2023.1.1) or later
