@@ -1,7 +1,7 @@
 {
-  "generated": "2026-01-14T16:21:09.404Z",
-  "totalUseCases": 417,
-  "totalFurtherDerivations": 470,
+  "generated": "2026-01-15T21:24:10.666Z",
+  "totalUseCases": 418,
+  "totalFurtherDerivations": 480,
   "categories": {
     "Real Estate & Property": 30,
     "Charitable & Non-Profit": 6,
@@ -16,7 +16,7 @@
     "Chain of Custody & Logistics": 15,
     "Travel & Hospitality": 21,
     "Professional & Occupational Licenses": 12,
-    "Identity & Authority Verification": 27,
+    "Identity & Authority Verification": 28,
     "Professional & Educational Qualifications": 15,
     "Art, Media & Publishing": 7,
     "Customs & Trade Compliance": 6,
@@ -2751,6 +2751,26 @@
         "risk-management",
         "specialty-insurance",
         "festival-insurance"
+      ]
+    },
+    {
+      "slug": "event-ticketing",
+      "title": "Event Ticketing (Concerts, Sports, Theater)",
+      "category": "Identity & Authority Verification",
+      "volume": "Very Large",
+      "retention": "Event + 30 days (chargebacks/disputes)",
+      "furtherDerivations": 10,
+      "snippet": "Event name, venue, date/time, section/row/seat, ticket holder name, photo hash (if bound), transfer status, resale policy, price paid, purchase timestamp.",
+      "tags": [
+        "tickets",
+        "concerts",
+        "sports",
+        "theater",
+        "festivals",
+        "scalping",
+        "counterfeit",
+        "admission",
+        "entertainment"
       ]
     },
     {
@@ -7937,7 +7957,7 @@
     },
     {
       "name": "Identity & Authority Verification",
-      "count": 27
+      "count": 28
     },
     {
       "name": "Specialty Insurance",
