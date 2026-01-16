@@ -38,13 +38,28 @@ class TextOverlayView @JvmOverloads constructor(
 ) : View(context, attrs, defStyleAttr) {
 
     /**
+     * Represents a single line of text with its vertical position.
+     * Used for proper line ordering when text has varying horizontal alignment.
+     */
+    data class TextLine(
+        val text: String,
+        val top: Float  // Y position (top of bounding box) in image coordinates
+    )
+
+    /**
      * Represents a detected text block with its bounds in view coordinates.
+     * Stores individual lines to allow proper vertical sorting regardless of
+     * ML Kit's reading order detection.
      */
     data class TextBlock(
         val bounds: RectF,
-        val text: String,
+        val lines: List<TextLine>,
         val originalBounds: RectF // Bounds in image coordinates
-    )
+    ) {
+        // Convenience property to get text sorted by vertical position
+        val text: String
+            get() = lines.sortedBy { it.top }.joinToString("\n") { it.text }
+    }
 
     private val textBlocks = mutableListOf<TextBlock>()
     private val selectedBlocks = mutableListOf<TextBlock>()
@@ -129,9 +144,20 @@ class TextOverlayView @JvmOverloads constructor(
                 // Transform to view coordinates
                 val viewBounds = transformToViewCoordinates(originalBounds)
 
+                // Extract individual lines with their Y positions for proper ordering
+                val blockLines = mutableListOf<TextLine>()
+                for (line in block.lines) {
+                    line.boundingBox?.let { lineBox ->
+                        blockLines.add(TextLine(
+                            text = line.text,
+                            top = lineBox.top.toFloat()
+                        ))
+                    }
+                }
+
                 textBlocks.add(TextBlock(
                     bounds = viewBounds,
-                    text = block.text,
+                    lines = blockLines,
                     originalBounds = originalBounds
                 ))
             }
@@ -316,12 +342,8 @@ class TextOverlayView @JvmOverloads constructor(
         selectedBlocks.clear()
         selectedBlocks.add(startBlock)
 
-        android.util.Log.d("TextOverlay", "=== AUTO-EXTEND START ===")
-        android.util.Log.d("TextOverlay", "Start block: '${startBlock.text.take(50)}...' bounds=${startBlock.originalBounds}")
-
         // Check if the tapped block itself contains verify:
         if (containsVerifyUrl(startBlock.text)) {
-            android.util.Log.d("TextOverlay", "Start block contains verify:, done")
             return
         }
 
@@ -340,8 +362,6 @@ class TextOverlayView @JvmOverloads constructor(
             val dy = block.originalBounds.centerY() - startCenterY
             val distance = kotlin.math.sqrt(dx * dx + dy * dy)
 
-            android.util.Log.d("TextOverlay", "Verify block distance=$distance: '${block.text.take(40)}...'")
-
             if (distance < nearestDistance) {
                 nearestDistance = distance
                 nearestVerifyBlock = block
@@ -349,13 +369,8 @@ class TextOverlayView @JvmOverloads constructor(
         }
 
         if (nearestVerifyBlock != null) {
-            android.util.Log.d("TextOverlay", "Adding nearest verify block (distance=$nearestDistance)")
             selectedBlocks.add(nearestVerifyBlock)
-        } else {
-            android.util.Log.d("TextOverlay", "No verify block found")
         }
-
-        android.util.Log.d("TextOverlay", "=== AUTO-EXTEND END: ${selectedBlocks.size} blocks selected ===")
     }
 
     /**

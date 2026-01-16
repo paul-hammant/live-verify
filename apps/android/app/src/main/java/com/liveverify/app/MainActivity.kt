@@ -264,11 +264,14 @@ class MainActivity : AppCompatActivity() {
         showProcessing(true)
         updateStatus(getString(R.string.status_processing))
 
-        // Combine text from selected blocks (sorted by vertical position)
-        val sortedBlocks = selectedBlocks.sortedBy { it.originalBounds.top }
-        val combinedText = sortedBlocks.joinToString("\n") { it.text }
+        // Collect all lines from selected blocks and sort by Y position
+        // This ensures correct ordering even when text has varying horizontal alignment
+        // (e.g., centered content above left-aligned verify: URL)
+        val allLines = selectedBlocks.flatMap { it.lines }
+        val sortedLines = allLines.sortedBy { it.top }
+        val combinedText = sortedLines.joinToString("\n") { it.text }
 
-        Log.d(TAG, "Using text from ${sortedBlocks.size} selected blocks:")
+        Log.d(TAG, "Using ${sortedLines.size} lines from ${selectedBlocks.size} selected blocks:")
         Log.d(TAG, combinedText)
 
         // Clear the overlay
@@ -291,7 +294,6 @@ class MainActivity : AppCompatActivity() {
 
         // Save selection bounds BEFORE clearing the overlay
         savedSelectionBounds = binding.textOverlay.getSelectedBounds()
-        Log.d(TAG, "Saved selection bounds: $savedSelectionBounds")
 
         // Clear overlay during capture
         binding.textOverlay.clearBlocks()
@@ -340,11 +342,8 @@ class MainActivity : AppCompatActivity() {
         // Crop to selected region if blocks were selected (using saved bounds)
         val selectionBounds = savedSelectionBounds
         if (selectionBounds != null) {
-            Log.d(TAG, "Selection bounds (analysis coords): $selectionBounds")
-
             // Scale from analysis resolution to capture resolution
             val scaledBounds = scaleBoundsToCapture(selectionBounds, bitmap.width, bitmap.height)
-            Log.d(TAG, "Scaled bounds (capture coords): $scaledBounds")
 
             // Add padding in capture coordinates
             val padX = scaledBounds.width() * 0.2f
@@ -355,12 +354,8 @@ class MainActivity : AppCompatActivity() {
                 (scaledBounds.right + padX).coerceAtMost(bitmap.width.toFloat()),
                 (scaledBounds.bottom + padY).coerceAtMost(bitmap.height.toFloat())
             )
-            Log.d(TAG, "Padded bounds: $paddedBounds, bitmap size: ${bitmap.width}x${bitmap.height}")
 
             bitmap = cropBitmap(bitmap, paddedBounds)
-            Log.d(TAG, "Cropped bitmap size: ${bitmap.width}x${bitmap.height}")
-        } else {
-            Log.d(TAG, "No selection - using full frame")
         }
 
         // Store for diagnostic display
@@ -400,8 +395,6 @@ class MainActivity : AppCompatActivity() {
 
         val scaleX = captureWidth.toFloat() / analysisWidth
         val scaleY = captureHeight.toFloat() / analysisHeight
-
-        Log.d(TAG, "Scaling: analysis=${analysisWidth}x${analysisHeight}, capture=${captureWidth}x${captureHeight}, scale=${scaleX}x${scaleY}")
 
         return RectF(
             bounds.left * scaleX,
